@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import './globals.css'
+import { createClient } from '@/utils/supabase/server'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -11,15 +12,21 @@ export const metadata: Metadata = {
   description: 'A Vedic Library with word-for-word breakdown',
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+  const supabase = await createClient()
+
+  const {
+    data: { user },
+  } = await supabase.auth.getUser()
+
   return (
     <html lang="en">
       <body className={`${inter.className} min-h-screen flex flex-col bg-gray-50 text-gray-900`}>
-        <Navbar />
+        <Navbar user={user} />
         <main className="flex-grow">
           {children}
         </main>

@@ -3,8 +3,10 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
+import { User } from '@supabase/supabase-js'
+import { logout } from '@/app/login/actions'
 
-export default function Navbar() {
+export default function Navbar({ user }: { user: User | null }) {
     const pathname = usePathname()
     const [isOpen, setIsOpen] = useState(false)
 
@@ -41,6 +43,34 @@ export default function Navbar() {
                                 )
                             })}
                         </div>
+                    </div>
+
+                    <div className="hidden sm:flex sm:items-center sm:ml-6 space-x-4">
+                        {user ? (
+                            <>
+                                <Link
+                                    href="/profile"
+                                    className="text-sm font-medium text-gray-500 hover:text-gray-900"
+                                >
+                                    Profile
+                                </Link>
+                                <form action={logout}>
+                                    <button
+                                        type="submit"
+                                        className="text-sm font-medium text-orange-600 hover:text-orange-500"
+                                    >
+                                        Logout
+                                    </button>
+                                </form>
+                            </>
+                        ) : (
+                            <Link
+                                href="/login"
+                                className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-full shadow-sm text-white bg-orange-600 hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
+                            >
+                                Sign In
+                            </Link>
+                        )}
                     </div>
 
                     {/* Mobile menu button */}
@@ -84,6 +114,37 @@ export default function Navbar() {
                                 </Link>
                             )
                         })}
+
+                        <div className="border-t border-gray-100 pt-2 mt-2">
+                             {user ? (
+                                <>
+                                    <Link
+                                        href="/profile"
+                                        onClick={() => setIsOpen(false)}
+                                        className="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700"
+                                    >
+                                        Profile
+                                    </Link>
+                                    <form action={logout} className="block w-full">
+                                        <button
+                                            type="submit"
+                                            onClick={() => setIsOpen(false)}
+                                            className="block w-full text-left pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700"
+                                        >
+                                            Logout
+                                        </button>
+                                    </form>
+                                </>
+                             ) : (
+                                <Link
+                                    href="/login"
+                                    onClick={() => setIsOpen(false)}
+                                    className="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-orange-600 hover:bg-orange-50 hover:border-orange-300 hover:text-orange-700"
+                                >
+                                    Sign In
+                                </Link>
+                             )}
+                        </div>
                     </div>
                 </div>
             )}
