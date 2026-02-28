@@ -1,10 +1,11 @@
-import { supabase } from '@/utils/supabase/client'
+import { createClient } from '@/utils/supabase/server'
 import { Database } from '@/types/supabase'
 
 export type Shloka = Database['public']['Tables']['shlokas']['Row']
 export type DictionaryEntry = Database['public']['Tables']['dictionary']['Row']
 
 export async function getShlokas(): Promise<Shloka[]> {
+    const supabase = await createClient()
     const { data, error } = await supabase
         .from('shlokas')
         .select('*')
@@ -18,6 +19,7 @@ export async function getShlokas(): Promise<Shloka[]> {
 }
 
 export async function getShlokaById(id: string): Promise<Shloka | null> {
+    const supabase = await createClient()
     const { data, error } = await supabase
         .from('shlokas')
         .select('*')
@@ -32,6 +34,7 @@ export async function getShlokaById(id: string): Promise<Shloka | null> {
 }
 
 export async function getWordDefinition(wordId: string): Promise<DictionaryEntry | null> {
+    const supabase = await createClient()
     const { data, error } = await supabase
         .from('dictionary')
         .select('*')

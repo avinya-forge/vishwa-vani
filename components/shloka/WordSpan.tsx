@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { getWordDefinition, DictionaryEntry } from '@/utils/services/shloka'
+import { getWordDefinitionClient, DictionaryEntry } from '@/utils/services/client-shloka'
 
 interface WordSpanProps {
     originalWord: string
@@ -25,7 +25,7 @@ export default function WordSpan({ originalWord, wordId }: WordSpanProps) {
 
         if (!definition && !loading) {
             setLoading(true)
-            const data = await getWordDefinition(wordId)
+            const data = await getWordDefinitionClient(wordId)
             setDefinition(data)
             setLoading(false)
         }
