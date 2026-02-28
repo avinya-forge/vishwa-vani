@@ -6,7 +6,7 @@
 
 ## 🟢 PHASE 1: Authentication & Identity [EPIC-100] (10 WU)
 *Objective: Solidify secure user authentication and personalized profiles.*
-- [ ] TASK-101: Create Supabase OAuth integration (Google/Apple) in `utils/supabase/server.ts` (1 WU)
+- [x] TASK-101: Create Supabase OAuth integration (Google/Apple) in `utils/supabase/server.ts` (1 WU)
 - [x] TASK-102: Implement Email/Password magic link flow for passwordless login (1 WU)
 - [x] TASK-103: Scaffold `/profile` route with protected Server Components (1 WU)
 - [x] TASK-104: Add client-side user session synchronization (`'use client'` boundary) (1 WU)

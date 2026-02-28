@@ -22,6 +22,44 @@ export async function login(formData: FormData) {
   redirect('/profile')
 }
 
+export async function signInWithGoogle() {
+  const supabase = await createClient()
+
+  const { data, error } = await supabase.auth.signInWithOAuth({
+    provider: 'google',
+    options: {
+      redirectTo: `${process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000'}/auth/callback`,
+    },
+  })
+
+  if (error) {
+    redirect('/login?message=Could not authenticate with Google')
+  }
+
+  if (data.url) {
+    redirect(data.url)
+  }
+}
+
+export async function signInWithApple() {
+  const supabase = await createClient()
+
+  const { data, error } = await supabase.auth.signInWithOAuth({
+    provider: 'apple',
+    options: {
+      redirectTo: `${process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000'}/auth/callback`,
+    },
+  })
+
+  if (error) {
+    redirect('/login?message=Could not authenticate with Apple')
+  }
+
+  if (data.url) {
+    redirect(data.url)
+  }
+}
+
 export async function signup(formData: FormData) {
   const supabase = await createClient()
 
