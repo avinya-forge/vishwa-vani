@@ -1,10 +1,12 @@
-import { supabase } from '@/utils/supabase/client'
+import { createClient } from '@/utils/supabase/server'
 import { Database } from '@/types/supabase'
 
 export type DictionaryEntry = Database['public']['Tables']['dictionary']['Row']
 
 export async function searchWords(query: string): Promise<DictionaryEntry[]> {
     if (!query) return []
+
+    const supabase = await createClient()
 
     const { data, error } = await supabase
         .from('dictionary')
@@ -21,6 +23,8 @@ export async function searchWords(query: string): Promise<DictionaryEntry[]> {
 }
 
 export async function getWordById(id: string): Promise<DictionaryEntry | null> {
+    const supabase = await createClient()
+
     const { data, error } = await supabase
         .from('dictionary')
         .select('*')
