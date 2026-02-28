@@ -1,6 +1,25 @@
 import { createServerClient, type CookieOptions } from '@supabase/ssr'
 import { cookies } from 'next/headers'
 
+import { Provider } from '@supabase/supabase-js'
+
+export async function getOAuthUrl(provider: Provider, redirectTo: string) {
+  const supabase = await createClient()
+
+  const { data, error } = await supabase.auth.signInWithOAuth({
+    provider,
+    options: {
+      redirectTo,
+    },
+  })
+
+  if (error) {
+    throw error
+  }
+
+  return data.url
+}
+
 export async function createClient() {
   const cookieStore = await cookies()
 
