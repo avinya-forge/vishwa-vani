@@ -2,6 +2,7 @@
 
 import { Shloka } from '@/utils/services/shloka'
 import WordSpan from './WordSpan'
+import SaveToCollectionMenu from './SaveToCollectionMenu'
 
 interface ShlokaCardProps {
     shloka: Shloka
@@ -17,10 +18,13 @@ export default function ShlokaCard({ shloka }: ShlokaCardProps) {
     const words = (shloka.word_mapping as unknown as WordMapping[]) || []
 
     return (
-        <div className="max-w-3xl mx-auto my-8 p-8 bg-orange-50 rounded-xl shadow-sm border border-orange-100">
+        <div className="max-w-3xl mx-auto my-8 p-8 bg-orange-50 rounded-xl shadow-sm border border-orange-100 relative">
             <div className="flex justify-between items-center mb-6 text-orange-800/60 text-sm uppercase tracking-wider font-semibold">
                 <span>{shloka.deity}</span>
-                <span>{shloka.source_text} • Verse {shloka.verse_index}</span>
+                <div className="flex items-center gap-4">
+                    <span>{shloka.source_text} • Verse {shloka.verse_index}</span>
+                    <SaveToCollectionMenu shlokaId={shloka.id} />
+                </div>
             </div>
 
             <div className="text-2xl md:text-3xl font-serif text-gray-800 leading-relaxed text-center mb-8">
