@@ -13,11 +13,11 @@
 
 ## 🟡 PHASE 2: Personalized Bookmarks & Collections [EPIC-200] (10 WU)
 *Objective: Allow authenticated users to save Shlokas and dictionary entries to custom collections.*
-- [ ] TASK-201: Define DB schema (Supabase) for `collections` and `saved_items` (1 WU)
-- [ ] TASK-202: Create "Save to Collection" interactive UI button for `ShlokaCard` (1 WU)
-- [ ] TASK-203: Implement Server Action to insert/remove bookmarked Shlokas (1 WU)
-- [ ] TASK-204: Build `/collections` index page to list user-created folders (1 WU)
-- [ ] TASK-205: Add a dynamic route `/collections/[id]` to view saved items within a folder (1 WU)
+- [x] TASK-201: Define DB schema (Supabase) for `collections` and `saved_items` (1 WU)
+- [x] TASK-202: Create "Save to Collection" interactive UI button for `ShlokaCard` (1 WU)
+- [x] TASK-203: Implement Server Action to insert/remove bookmarked Shlokas (1 WU)
+- [x] TASK-204: Build `/collections` index page to list user-created folders (1 WU)
+- [x] TASK-205: Add a dynamic route `/collections/[id]` to view saved items within a folder (1 WU)
 
 ## 🔴 PHASE 3: Community & Social Engagement [EPIC-300] (10 WU)
 *Objective: Enable basic user interaction around sacred texts.*

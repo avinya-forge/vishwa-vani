@@ -25,14 +25,17 @@ export default async function Header() {
           <Link href="/" className="text-xl font-bold tracking-tight text-orange-900 hover:text-orange-700 transition-colors">
             Vishwa-Vani
           </Link>
-          <div className="flex items-center gap-2 text-orange-800">
+          <div className="flex items-center gap-4 text-orange-800 ml-4">
             <Link href="/dictionary" className="hover:text-orange-600 transition-colors">Dictionary</Link>
+            {user && (
+              <Link href="/collections" className="hover:text-orange-600 transition-colors">Collections</Link>
+            )}
           </div>
         </div>
         <div className="flex items-center gap-4">
           {user ? (
             <div className="flex items-center gap-4">
-              <span className="text-gray-600 truncate max-w-[150px] sm:max-w-none">Hey, {user.email}!</span>
+              <span className="text-gray-600 truncate max-w-[150px] sm:max-w-none hidden md:inline-block">Hey, {user.email}!</span>
               <Link
                 href="/profile"
                 className="py-2 px-4 rounded-md no-underline bg-btn-background hover:bg-btn-background-hover border text-sm"
