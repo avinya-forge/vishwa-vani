@@ -1,5 +1,19 @@
 # Vishwa-Vani Release Archive
 
+## [v0.3.0] - Identity & Collections Vaulted
+*   **Epic Archived**: Authentication & Identity, Personalized Bookmarks & Collections.
+*   **Notes**: Completed Phase 1 and Phase 2 backlog items to integrate Supabase OAuth, passwordless login, and custom collection management.
+*   **Completed Work**:
+    *   [x] TASK-101: Create Supabase OAuth integration (Google/Apple) in `utils/supabase/server.ts`
+    *   [x] TASK-102: Implement Email/Password magic link flow for passwordless login
+    *   [x] TASK-103: Scaffold `/profile` route with protected Server Components
+    *   [x] TASK-104: Add client-side user session synchronization (`'use client'` boundary)
+    *   [x] TASK-201: Define DB schema (Supabase) for `collections` and `saved_items`
+    *   [x] TASK-202: Create "Save to Collection" interactive UI button for `ShlokaCard`
+    *   [x] TASK-203: Implement Server Action to insert/remove bookmarked Shlokas
+    *   [x] TASK-204: Build `/collections` index page to list user-created folders
+    *   [x] TASK-205: Add a dynamic route `/collections/[id]` to view saved items within a folder
+
 ## [v0.2.0] - Foundation Validated
 *   **Epic Archived**: Foundation & Authentication Setup, Core Content Features (partial).
 *   **Notes**: Transitioned initial concept code to a structured architecture ready for distributed development. Backlog and Vision successfully synchronized.
