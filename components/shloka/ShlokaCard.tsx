@@ -2,6 +2,7 @@
 
 import { Shloka } from '@/utils/services/shloka'
 import WordSpan from './WordSpan'
+import SaveToCollectionButton from './SaveToCollectionButton'
 
 interface ShlokaCardProps {
     shloka: Shloka
@@ -42,6 +43,7 @@ export default function ShlokaCard({ shloka }: ShlokaCardProps) {
 
             <div className="text-center">
                 {/* Placeholder for English Translation of the whole verse if we add that column later */}
+                {shloka.id && <SaveToCollectionButton shlokaId={shloka.id} />}
             </div>
         </div>
     )
