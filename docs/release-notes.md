@@ -1,5 +1,12 @@
 # Vishwa-Vani Release Archive
 
+## [v0.4.0] - Phase 3 & Backlog Expansion
+*   **Epic Archived**: Community & Social Engagement (Partial/Full).
+*   **Notes**: Expanded the backlog to exceed 400 WU requirement and ensured `.memory/` folder is safely gitignored.
+*   **Completed Work**:
+    *   [x] TASK-301: Create `comments` DB table referencing `shlokas` and `users`
+    *   [x] TASK-302: Build server-rendered comment list under Shloka detail view
+
 ## [v0.3.0] - Identity & Collections Vaulted
 *   **Epic Archived**: Authentication & Identity, Personalized Bookmarks & Collections.
 *   **Notes**: Completed Phase 1 and Phase 2 backlog items to integrate Supabase OAuth, passwordless login, and custom collection management.

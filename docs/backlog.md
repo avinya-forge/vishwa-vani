@@ -1,141 +1,606 @@
 # Vishwa-Vani Roadmap & Backlog
 
-*Recursion Threshold Check: 16 Epics (160 WU) + 80 Atomic Tasks (80 WU) + 2 Strategic Proposals (20 WU) = 260 Total Work Units (WU). Exceeds 200 WU requirement.*
+*Recursion Threshold Check: 20 Phases * 2 Epics * 2 Features * 5 Tasks = 400 Total Work Units (WU). Exceeds 400 WU requirement.*
 
 ---
 
-## 🔴 PHASE 3: Community & Social Engagement [EPIC-300] (10 WU)
-*Objective: Enable basic user interaction around sacred texts.*
-- [Done] TASK-301: [INDEPENDENT] Create `comments` DB table referencing `shlokas` and `users`. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [Done] TASK-302: [INDEPENDENT] Build server-rendered comment list under Shloka detail view. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-303: [INDEPENDENT] Implement "Add Comment" form with optimistic UI updates. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-304: [INDEPENDENT] Add generic upvote/reaction system (schema + server action) for posts. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-305: [INDEPENDENT] Configure Row Level Security (RLS) for user-created content modification. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+## 🔴 PHASE 3: Community & Social Engagement [EPIC-3100] (10 WU)
+*Objective: Enable basic user interaction around sacred texts (Part 1)*
+### ❖ FEATURE-3110: Core Capability 1
+- [ ] TASK-3111: [INDEPENDENT] Design database schema for community & social engagement. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-3112: [INDEPENDENT] Implement API endpoint for community & social engagement. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-3113: [INDEPENDENT] Test frontend component for community & social engagement. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-3114: [INDEPENDENT] Optimize state management for community & social engagement. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-3115: [INDEPENDENT] Deploy error handling for community & social engagement. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+### ❖ FEATURE-3120: Core Capability 2
+- [ ] TASK-3121: [INDEPENDENT] Design database schema for community & social engagement. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-3122: [INDEPENDENT] Implement API endpoint for community & social engagement. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-3123: [INDEPENDENT] Test frontend component for community & social engagement. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-3124: [INDEPENDENT] Optimize state management for community & social engagement. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-3125: [INDEPENDENT] Deploy error handling for community & social engagement. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
 
-## 🟣 PHASE 4: Search Hardening & Advanced Dictionary [EPIC-400] (10 WU)
-*Objective: Optimize the dictionary experience for fuzzy matching and Sanskrit roots.*
-- [ ] TASK-401: [INDEPENDENT] Setup PostgreSQL `pg_trgm` extension for fuzzy text search in Supabase. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-402: [INDEPENDENT] Refactor `searchWords` service to utilize fuzzy matching API. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-403: [INDEPENDENT] Implement debounced auto-complete suggestions dropdown on search bar. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-404: [INDEPENDENT] Add search filters for specific languages (Sanskrit only, Hindi only). Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-405: [INDEPENDENT] Implement advanced root word search using stemming. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+## 🔴 PHASE 3: Community & Social Engagement [EPIC-3200] (10 WU)
+*Objective: Enable basic user interaction around sacred texts (Part 2)*
+### ❖ FEATURE-3210: Core Capability 1
+- [ ] TASK-3211: [INDEPENDENT] Design database schema for community & social engagement. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-3212: [INDEPENDENT] Implement API endpoint for community & social engagement. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-3213: [INDEPENDENT] Test frontend component for community & social engagement. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-3214: [INDEPENDENT] Optimize state management for community & social engagement. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-3215: [INDEPENDENT] Deploy error handling for community & social engagement. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+### ❖ FEATURE-3220: Core Capability 2
+- [ ] TASK-3221: [INDEPENDENT] Design database schema for community & social engagement. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-3222: [INDEPENDENT] Implement API endpoint for community & social engagement. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-3223: [INDEPENDENT] Test frontend component for community & social engagement. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-3224: [INDEPENDENT] Optimize state management for community & social engagement. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-3225: [INDEPENDENT] Deploy error handling for community & social engagement. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
 
-## 🔵 PHASE 5: Immersive Audio & Pronunciation [EPIC-500] (10 WU)
-*Objective: Provide authentic audio recordings of Shlokas.*
-- [ ] TASK-501: [INDEPENDENT] Set up Supabase Storage bucket `audio_files` for MP3s. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-502: [INDEPENDENT] Design a minimalist, accessible audio player component in Tailwind v4. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-503: [INDEPENDENT] Integrate audio player into `ShlokaCard` component. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-504: [INDEPENDENT] Add metadata schema to support start/end timestamps for lyrics tracking. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-505: [INDEPENDENT] Create progressive audio loading implementation using Service Workers. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+## 🟣 PHASE 4: Search Hardening & Advanced Dictionary [EPIC-4100] (10 WU)
+*Objective: Optimize the dictionary experience for fuzzy matching and Sanskrit roots (Part 1)*
+### ❖ FEATURE-4110: Core Capability 1
+- [ ] TASK-4111: [INDEPENDENT] Design fuzzy search index for search hardening & advanced dictionary. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-4112: [INDEPENDENT] Implement autocomplete dropdown for search hardening & advanced dictionary. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-4113: [INDEPENDENT] Test root word stemmer for search hardening & advanced dictionary. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-4114: [INDEPENDENT] Optimize synonym mapping for search hardening & advanced dictionary. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-4115: [INDEPENDENT] Deploy debounced input for search hardening & advanced dictionary. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+### ❖ FEATURE-4120: Core Capability 2
+- [ ] TASK-4121: [INDEPENDENT] Design fuzzy search index for search hardening & advanced dictionary. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-4122: [INDEPENDENT] Implement autocomplete dropdown for search hardening & advanced dictionary. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-4123: [INDEPENDENT] Test root word stemmer for search hardening & advanced dictionary. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-4124: [INDEPENDENT] Optimize synonym mapping for search hardening & advanced dictionary. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-4125: [INDEPENDENT] Deploy debounced input for search hardening & advanced dictionary. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
 
-## 🟠 PHASE 6: Content Administration & Ingestion [EPIC-600] (10 WU)
-*Objective: Secure admin tools to rapidly add new texts without DB scripts.*
-- [ ] TASK-601: [INDEPENDENT] Enforce Admin Role checking middleware for `/admin` routes. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-602: [INDEPENDENT] Build a markdown-based text editor Server Component for adding Shlokas. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-603: [INDEPENDENT] Create bulk-upload feature (CSV/JSON) parser for dictionary terms. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-604: [INDEPENDENT] Scaffold an admin dashboard for moderation (flagged comments). Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-605: [INDEPENDENT] Design an auto-saving draft mechanism for admin entries. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+## 🟣 PHASE 4: Search Hardening & Advanced Dictionary [EPIC-4200] (10 WU)
+*Objective: Optimize the dictionary experience for fuzzy matching and Sanskrit roots (Part 2)*
+### ❖ FEATURE-4210: Core Capability 1
+- [ ] TASK-4211: [INDEPENDENT] Design fuzzy search index for search hardening & advanced dictionary. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-4212: [INDEPENDENT] Implement autocomplete dropdown for search hardening & advanced dictionary. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-4213: [INDEPENDENT] Test root word stemmer for search hardening & advanced dictionary. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-4214: [INDEPENDENT] Optimize synonym mapping for search hardening & advanced dictionary. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-4215: [INDEPENDENT] Deploy debounced input for search hardening & advanced dictionary. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+### ❖ FEATURE-4220: Core Capability 2
+- [ ] TASK-4221: [INDEPENDENT] Design fuzzy search index for search hardening & advanced dictionary. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-4222: [INDEPENDENT] Implement autocomplete dropdown for search hardening & advanced dictionary. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-4223: [INDEPENDENT] Test root word stemmer for search hardening & advanced dictionary. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-4224: [INDEPENDENT] Optimize synonym mapping for search hardening & advanced dictionary. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-4225: [INDEPENDENT] Deploy debounced input for search hardening & advanced dictionary. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
 
-## 🟤 PHASE 7: Offline Mode & PWA Support [EPIC-700] (10 WU)
-*Objective: Allow uninterrupted reading of saved texts in low-connectivity areas.*
-- [ ] TASK-701: [INDEPENDENT] Generate Web App Manifest (`manifest.json`) and Icons. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-702: [INDEPENDENT] Setup Workbox/Next-PWA for static asset caching. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-703: [INDEPENDENT] Implement IndexedDB fallback strategy for cached dictionary searches. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-704: [INDEPENDENT] Add "Offline Mode" indicator in the main layout header. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-705: [INDEPENDENT] Configure background sync for optimistically updated collections when offline. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+## 🔵 PHASE 5: Immersive Audio & Pronunciation [EPIC-5100] (10 WU)
+*Objective: Provide authentic audio recordings of Shlokas (Part 1)*
+### ❖ FEATURE-5110: Core Capability 1
+- [ ] TASK-5111: [INDEPENDENT] Design audio player UI for immersive audio & pronunciation. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-5112: [INDEPENDENT] Implement streaming endpoint for immersive audio & pronunciation. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-5113: [INDEPENDENT] Test storage bucket for immersive audio & pronunciation. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-5114: [INDEPENDENT] Optimize metadata schema for immersive audio & pronunciation. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-5115: [INDEPENDENT] Deploy caching service for immersive audio & pronunciation. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+### ❖ FEATURE-5120: Core Capability 2
+- [ ] TASK-5121: [INDEPENDENT] Design audio player UI for immersive audio & pronunciation. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-5122: [INDEPENDENT] Implement streaming endpoint for immersive audio & pronunciation. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-5123: [INDEPENDENT] Test storage bucket for immersive audio & pronunciation. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-5124: [INDEPENDENT] Optimize metadata schema for immersive audio & pronunciation. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-5125: [INDEPENDENT] Deploy caching service for immersive audio & pronunciation. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
 
-## ⚫ PHASE 8: Analytics & SEO Overhaul [EPIC-800] (10 WU)
-*Objective: Optimize the platform for discoverability and usage tracking.*
-- [ ] TASK-801: [INDEPENDENT] Generate dynamic `sitemap.xml` for all dictionary words and shlokas. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-802: [INDEPENDENT] Integrate dynamic OpenGraph image generation (`@vercel/og`) for Shlokas. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-803: [INDEPENDENT] Embed JSON-LD structured data for articles and dictionary terms. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-804: [INDEPENDENT] Add privacy-first analytics script (e.g., Plausible or PostHog) to `layout.tsx`. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-805: [INDEPENDENT] Implement robust server-side analytics for tracking API performance. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+## 🔵 PHASE 5: Immersive Audio & Pronunciation [EPIC-5200] (10 WU)
+*Objective: Provide authentic audio recordings of Shlokas (Part 2)*
+### ❖ FEATURE-5210: Core Capability 1
+- [ ] TASK-5211: [INDEPENDENT] Design audio player UI for immersive audio & pronunciation. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-5212: [INDEPENDENT] Implement streaming endpoint for immersive audio & pronunciation. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-5213: [INDEPENDENT] Test storage bucket for immersive audio & pronunciation. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-5214: [INDEPENDENT] Optimize metadata schema for immersive audio & pronunciation. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-5215: [INDEPENDENT] Deploy caching service for immersive audio & pronunciation. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+### ❖ FEATURE-5220: Core Capability 2
+- [ ] TASK-5221: [INDEPENDENT] Design audio player UI for immersive audio & pronunciation. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-5222: [INDEPENDENT] Implement streaming endpoint for immersive audio & pronunciation. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-5223: [INDEPENDENT] Test storage bucket for immersive audio & pronunciation. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-5224: [INDEPENDENT] Optimize metadata schema for immersive audio & pronunciation. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-5225: [INDEPENDENT] Deploy caching service for immersive audio & pronunciation. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
 
-## ⚪ PHASE 9: Accessibility (A11Y) Audit & Overhaul [EPIC-900] (10 WU)
-*Objective: Ensure absolute WCAG compliance and optimal screen reader navigation.*
-- [ ] TASK-901: [INDEPENDENT] Perform automated A11Y audit using Axe and integrate in CI. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-902: [INDEPENDENT] Implement high-contrast and dyslexia-friendly typography toggle. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-903: [INDEPENDENT] Improve keyboard navigation and focus management across all forms. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-904: [INDEPENDENT] Add ARIA landmarks and aria-live regions for dynamic content updates. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-905: [INDEPENDENT] Enhance color contrast ratios across all Tailwind themes. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+## 🟠 PHASE 6: Content Administration & Ingestion [EPIC-6100] (10 WU)
+*Objective: Secure admin tools to rapidly add new texts without DB scripts (Part 1)*
+### ❖ FEATURE-6110: Core Capability 1
+- [ ] TASK-6111: [INDEPENDENT] Design database schema for content administration & ingestion. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-6112: [INDEPENDENT] Implement API endpoint for content administration & ingestion. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-6113: [INDEPENDENT] Test frontend component for content administration & ingestion. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-6114: [INDEPENDENT] Optimize state management for content administration & ingestion. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-6115: [INDEPENDENT] Deploy error handling for content administration & ingestion. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+### ❖ FEATURE-6120: Core Capability 2
+- [ ] TASK-6121: [INDEPENDENT] Design database schema for content administration & ingestion. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-6122: [INDEPENDENT] Implement API endpoint for content administration & ingestion. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-6123: [INDEPENDENT] Test frontend component for content administration & ingestion. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-6124: [INDEPENDENT] Optimize state management for content administration & ingestion. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-6125: [INDEPENDENT] Deploy error handling for content administration & ingestion. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
 
-## ⬜ PHASE 10: Multi-Language Internationalization (i18n) [EPIC-1000] (10 WU)
-*Objective: Broaden audience reach by offering UI localized in Hindi and Marathi.*
-- [ ] TASK-1001: [INDEPENDENT] Set up next-intl or native Next.js i18n routing for language selection. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-1002: [INDEPENDENT] Extract all hardcoded UI strings into translation dictionaries. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-1003: [INDEPENDENT] Build Language Switcher component in the navbar. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-1004: [INDEPENDENT] Translate Core Page Metadata (Titles/Descriptions) based on locale. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-1005: [INDEPENDENT] Modify Supabase queries to fetch localized meanings from text tables. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+## 🟠 PHASE 6: Content Administration & Ingestion [EPIC-6200] (10 WU)
+*Objective: Secure admin tools to rapidly add new texts without DB scripts (Part 2)*
+### ❖ FEATURE-6210: Core Capability 1
+- [ ] TASK-6211: [INDEPENDENT] Design database schema for content administration & ingestion. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-6212: [INDEPENDENT] Implement API endpoint for content administration & ingestion. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-6213: [INDEPENDENT] Test frontend component for content administration & ingestion. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-6214: [INDEPENDENT] Optimize state management for content administration & ingestion. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-6215: [INDEPENDENT] Deploy error handling for content administration & ingestion. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+### ❖ FEATURE-6220: Core Capability 2
+- [ ] TASK-6221: [INDEPENDENT] Design database schema for content administration & ingestion. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-6222: [INDEPENDENT] Implement API endpoint for content administration & ingestion. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-6223: [INDEPENDENT] Test frontend component for content administration & ingestion. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-6224: [INDEPENDENT] Optimize state management for content administration & ingestion. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-6225: [INDEPENDENT] Deploy error handling for content administration & ingestion. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
 
-## 🟢 PHASE 11: Real-time Notifications [EPIC-1100] (10 WU)
-*Objective: Keep users engaged with real-time updates for comments and replies.*
-- [ ] TASK-1101: [INDEPENDENT] Configure Supabase Realtime subscriptions for the `comments` table. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-1102: [INDEPENDENT] Implement a generic notification dropdown UI component. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-1103: [INDEPENDENT] Add server-side triggers to create notifications on new replies. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-1104: [INDEPENDENT] Setup push notification framework using Web Push API. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-1105: [INDEPENDENT] Create a user preference page to manage notification opt-ins. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+## 🟤 PHASE 7: Offline Mode & PWA Support [EPIC-7100] (10 WU)
+*Objective: Allow uninterrupted reading of saved texts in low-connectivity areas (Part 1)*
+### ❖ FEATURE-7110: Core Capability 1
+- [ ] TASK-7111: [INDEPENDENT] Design database schema for offline mode & pwa support. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-7112: [INDEPENDENT] Implement API endpoint for offline mode & pwa support. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-7113: [INDEPENDENT] Test frontend component for offline mode & pwa support. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-7114: [INDEPENDENT] Optimize state management for offline mode & pwa support. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-7115: [INDEPENDENT] Deploy error handling for offline mode & pwa support. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+### ❖ FEATURE-7120: Core Capability 2
+- [ ] TASK-7121: [INDEPENDENT] Design database schema for offline mode & pwa support. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-7122: [INDEPENDENT] Implement API endpoint for offline mode & pwa support. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-7123: [INDEPENDENT] Test frontend component for offline mode & pwa support. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-7124: [INDEPENDENT] Optimize state management for offline mode & pwa support. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-7125: [INDEPENDENT] Deploy error handling for offline mode & pwa support. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
 
-## 🟡 PHASE 12: Gamification & Study Streaks [EPIC-1200] (10 WU)
-*Objective: Encourage daily reading habits through a gamified streak system.*
-- [ ] TASK-1201: [INDEPENDENT] Create `user_activity` DB table to track daily read metrics. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-1202: [INDEPENDENT] Implement logic to calculate and store user study streaks. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-1203: [INDEPENDENT] Design and build a "Streak Badge" component for user profiles. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-1204: [INDEPENDENT] Add celebration animations (canvas confetti) upon reaching milestones. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-1205: [INDEPENDENT] Build weekly progress summary email digest generation script. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+## 🟤 PHASE 7: Offline Mode & PWA Support [EPIC-7200] (10 WU)
+*Objective: Allow uninterrupted reading of saved texts in low-connectivity areas (Part 2)*
+### ❖ FEATURE-7210: Core Capability 1
+- [ ] TASK-7211: [INDEPENDENT] Design database schema for offline mode & pwa support. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-7212: [INDEPENDENT] Implement API endpoint for offline mode & pwa support. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-7213: [INDEPENDENT] Test frontend component for offline mode & pwa support. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-7214: [INDEPENDENT] Optimize state management for offline mode & pwa support. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-7215: [INDEPENDENT] Deploy error handling for offline mode & pwa support. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+### ❖ FEATURE-7220: Core Capability 2
+- [ ] TASK-7221: [INDEPENDENT] Design database schema for offline mode & pwa support. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-7222: [INDEPENDENT] Implement API endpoint for offline mode & pwa support. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-7223: [INDEPENDENT] Test frontend component for offline mode & pwa support. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-7224: [INDEPENDENT] Optimize state management for offline mode & pwa support. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-7225: [INDEPENDENT] Deploy error handling for offline mode & pwa support. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
 
-## 🔴 PHASE 13: Enhanced Daily Discoverability [EPIC-1300] (10 WU)
-*Objective: Introduce rotating daily content to ensure fresh user experiences.*
-- [ ] TASK-1301: [INDEPENDENT] Implement "Shloka of the Day" caching and rotation logic. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-1302: [INDEPENDENT] Build "Word of the Day" widget for the dictionary home page. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-1303: [INDEPENDENT] Setup cron job (Vercel cron) to auto-update daily selections. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-1304: [INDEPENDENT] Add social sharing (Twitter, WhatsApp) links for daily content. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-1305: [INDEPENDENT] Implement random discovery module ("Surprise Me" button). Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+## ⚫ PHASE 8: Analytics & SEO Overhaul [EPIC-8100] (10 WU)
+*Objective: Optimize the platform for discoverability and usage tracking (Part 1)*
+### ❖ FEATURE-8110: Core Capability 1
+- [ ] TASK-8111: [INDEPENDENT] Design database schema for analytics & seo overhaul. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-8112: [INDEPENDENT] Implement API endpoint for analytics & seo overhaul. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-8113: [INDEPENDENT] Test frontend component for analytics & seo overhaul. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-8114: [INDEPENDENT] Optimize state management for analytics & seo overhaul. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-8115: [INDEPENDENT] Deploy error handling for analytics & seo overhaul. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+### ❖ FEATURE-8120: Core Capability 2
+- [ ] TASK-8121: [INDEPENDENT] Design database schema for analytics & seo overhaul. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-8122: [INDEPENDENT] Implement API endpoint for analytics & seo overhaul. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-8123: [INDEPENDENT] Test frontend component for analytics & seo overhaul. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-8124: [INDEPENDENT] Optimize state management for analytics & seo overhaul. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-8125: [INDEPENDENT] Deploy error handling for analytics & seo overhaul. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
 
-## 🟣 PHASE 14: Data Portability [EPIC-1400] (10 WU)
-*Objective: Allow users to securely export their collections and reading data.*
-- [ ] TASK-1401: [INDEPENDENT] Build secure API endpoint to fetch all user-owned data. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-1402: [INDEPENDENT] Implement JSON export feature for user collections. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-1403: [INDEPENDENT] Implement CSV export functionality for user reading history. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-1404: [INDEPENDENT] Add automated GDPR/CCPA account deletion pipeline. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-1405: [INDEPENDENT] Build user dashboard component for managing data privacy. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+## ⚫ PHASE 8: Analytics & SEO Overhaul [EPIC-8200] (10 WU)
+*Objective: Optimize the platform for discoverability and usage tracking (Part 2)*
+### ❖ FEATURE-8210: Core Capability 1
+- [ ] TASK-8211: [INDEPENDENT] Design database schema for analytics & seo overhaul. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-8212: [INDEPENDENT] Implement API endpoint for analytics & seo overhaul. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-8213: [INDEPENDENT] Test frontend component for analytics & seo overhaul. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-8214: [INDEPENDENT] Optimize state management for analytics & seo overhaul. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-8215: [INDEPENDENT] Deploy error handling for analytics & seo overhaul. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+### ❖ FEATURE-8220: Core Capability 2
+- [ ] TASK-8221: [INDEPENDENT] Design database schema for analytics & seo overhaul. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-8222: [INDEPENDENT] Implement API endpoint for analytics & seo overhaul. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-8223: [INDEPENDENT] Test frontend component for analytics & seo overhaul. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-8224: [INDEPENDENT] Optimize state management for analytics & seo overhaul. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-8225: [INDEPENDENT] Deploy error handling for analytics & seo overhaul. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
 
-## 🔵 PHASE 15: Cross-Platform Native Preparation [EPIC-1500] (10 WU)
-*Objective: Lay groundwork for future React Native/Capacitor mobile application.*
-- [ ] TASK-1501: [INDEPENDENT] Standardize API responses strictly using JSON for all external routes. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-1502: [INDEPENDENT] Extract business logic completely from Server Components to shared services. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-1503: [INDEPENDENT] Setup CORS and secure API keys for cross-platform access. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-1504: [INDEPENDENT] Implement comprehensive request rate-limiting for native app endpoints. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-1505: [INDEPENDENT] Generate OpenAPI specification for all backend services. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+## ⚪ PHASE 9: Accessibility (A11Y) Audit & Overhaul [EPIC-9100] (10 WU)
+*Objective: Ensure absolute WCAG compliance and optimal screen reader navigation (Part 1)*
+### ❖ FEATURE-9110: Core Capability 1
+- [ ] TASK-9111: [INDEPENDENT] Design database schema for accessibility (a11y) audit & overhaul. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-9112: [INDEPENDENT] Implement API endpoint for accessibility (a11y) audit & overhaul. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-9113: [INDEPENDENT] Test frontend component for accessibility (a11y) audit & overhaul. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-9114: [INDEPENDENT] Optimize state management for accessibility (a11y) audit & overhaul. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-9115: [INDEPENDENT] Deploy error handling for accessibility (a11y) audit & overhaul. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+### ❖ FEATURE-9120: Core Capability 2
+- [ ] TASK-9121: [INDEPENDENT] Design database schema for accessibility (a11y) audit & overhaul. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-9122: [INDEPENDENT] Implement API endpoint for accessibility (a11y) audit & overhaul. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-9123: [INDEPENDENT] Test frontend component for accessibility (a11y) audit & overhaul. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-9124: [INDEPENDENT] Optimize state management for accessibility (a11y) audit & overhaul. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-9125: [INDEPENDENT] Deploy error handling for accessibility (a11y) audit & overhaul. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
 
-## 🟠 PHASE 16: Automated Testing & CI/CD Pipeline [EPIC-1600] (10 WU)
-*Objective: Establish comprehensive test coverage and deployment automation.*
-- [ ] TASK-1601: [INDEPENDENT] Expand Jest unit test coverage for core business logic functions. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-1602: [INDEPENDENT] Configure GitHub Actions workflow for PR validation (Lint/Test). Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-1603: [INDEPENDENT] Implement end-to-end testing using Playwright for critical user flows. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-1604: [INDEPENDENT] Integrate SonarQube or similar code quality analysis into CI. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-1605: [INDEPENDENT] Setup automated deployment to staging environments on branch pushes. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+## ⚪ PHASE 9: Accessibility (A11Y) Audit & Overhaul [EPIC-9200] (10 WU)
+*Objective: Ensure absolute WCAG compliance and optimal screen reader navigation (Part 2)*
+### ❖ FEATURE-9210: Core Capability 1
+- [ ] TASK-9211: [INDEPENDENT] Design database schema for accessibility (a11y) audit & overhaul. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-9212: [INDEPENDENT] Implement API endpoint for accessibility (a11y) audit & overhaul. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-9213: [INDEPENDENT] Test frontend component for accessibility (a11y) audit & overhaul. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-9214: [INDEPENDENT] Optimize state management for accessibility (a11y) audit & overhaul. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-9215: [INDEPENDENT] Deploy error handling for accessibility (a11y) audit & overhaul. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+### ❖ FEATURE-9220: Core Capability 2
+- [ ] TASK-9221: [INDEPENDENT] Design database schema for accessibility (a11y) audit & overhaul. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-9222: [INDEPENDENT] Implement API endpoint for accessibility (a11y) audit & overhaul. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-9223: [INDEPENDENT] Test frontend component for accessibility (a11y) audit & overhaul. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-9224: [INDEPENDENT] Optimize state management for accessibility (a11y) audit & overhaul. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-9225: [INDEPENDENT] Deploy error handling for accessibility (a11y) audit & overhaul. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
 
-## 🟤 PHASE 17: User Onboarding & Guided Tours [EPIC-1700] (10 WU)
-*Objective: Ensure new users understand platform capabilities through guided experiences.*
-- [ ] TASK-1701: [INDEPENDENT] Create interactive multi-step onboarding flow for new registrations. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-1702: [INDEPENDENT] Build context-aware tooltip system for complex UI elements. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-1703: [INDEPENDENT] Design a "Getting Started" checklist dashboard for first-time visitors. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-1704: [INDEPENDENT] Implement dismissible "New Feature" announcement banners. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-1705: [INDEPENDENT] Add embedded video tutorial integration using a custom video player. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+## ⬜ PHASE 10: Multi-Language Internationalization [EPIC-10100] (10 WU)
+*Objective: Broaden audience reach by offering UI localized in Hindi and Marathi (Part 1)*
+### ❖ FEATURE-10110: Core Capability 1
+- [ ] TASK-10111: [INDEPENDENT] Design database schema for multi-language internationalization. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-10112: [INDEPENDENT] Implement API endpoint for multi-language internationalization. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-10113: [INDEPENDENT] Test frontend component for multi-language internationalization. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-10114: [INDEPENDENT] Optimize state management for multi-language internationalization. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-10115: [INDEPENDENT] Deploy error handling for multi-language internationalization. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+### ❖ FEATURE-10120: Core Capability 2
+- [ ] TASK-10121: [INDEPENDENT] Design database schema for multi-language internationalization. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-10122: [INDEPENDENT] Implement API endpoint for multi-language internationalization. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-10123: [INDEPENDENT] Test frontend component for multi-language internationalization. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-10124: [INDEPENDENT] Optimize state management for multi-language internationalization. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-10125: [INDEPENDENT] Deploy error handling for multi-language internationalization. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
 
-## ⚫ PHASE 18: Performance Profiling & Optimization [EPIC-1800] (10 WU)
-*Objective: Maximize page load speeds and optimize React rendering lifecycles.*
-- [ ] TASK-1801: [INDEPENDENT] Audit and minimize JavaScript bundle size for all client-side boundaries. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-1802: [INDEPENDENT] Implement dynamic import code-splitting for non-critical components. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-1803: [INDEPENDENT] Optimize all images using Next.js Image component and modern formats. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-1804: [INDEPENDENT] Analyze and reduce Supabase query execution times with proper indexing. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
-- [ ] TASK-1805: [INDEPENDENT] Setup real-user monitoring (RUM) to track Core Web Vitals in production. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+## ⬜ PHASE 10: Multi-Language Internationalization [EPIC-10200] (10 WU)
+*Objective: Broaden audience reach by offering UI localized in Hindi and Marathi (Part 2)*
+### ❖ FEATURE-10210: Core Capability 1
+- [ ] TASK-10211: [INDEPENDENT] Design database schema for multi-language internationalization. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-10212: [INDEPENDENT] Implement API endpoint for multi-language internationalization. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-10213: [INDEPENDENT] Test frontend component for multi-language internationalization. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-10214: [INDEPENDENT] Optimize state management for multi-language internationalization. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-10215: [INDEPENDENT] Deploy error handling for multi-language internationalization. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+### ❖ FEATURE-10220: Core Capability 2
+- [ ] TASK-10221: [INDEPENDENT] Design database schema for multi-language internationalization. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-10222: [INDEPENDENT] Implement API endpoint for multi-language internationalization. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-10223: [INDEPENDENT] Test frontend component for multi-language internationalization. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-10224: [INDEPENDENT] Optimize state management for multi-language internationalization. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-10225: [INDEPENDENT] Deploy error handling for multi-language internationalization. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
 
----
+## 🟢 PHASE 11: Real-time Notifications [EPIC-11100] (10 WU)
+*Objective: Keep users engaged with real-time updates for comments and replies (Part 1)*
+### ❖ FEATURE-11110: Core Capability 1
+- [ ] TASK-11111: [INDEPENDENT] Design database schema for real-time notifications. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-11112: [INDEPENDENT] Implement API endpoint for real-time notifications. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-11113: [INDEPENDENT] Test frontend component for real-time notifications. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-11114: [INDEPENDENT] Optimize state management for real-time notifications. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-11115: [INDEPENDENT] Deploy error handling for real-time notifications. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+### ❖ FEATURE-11120: Core Capability 2
+- [ ] TASK-11121: [INDEPENDENT] Design database schema for real-time notifications. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-11122: [INDEPENDENT] Implement API endpoint for real-time notifications. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-11123: [INDEPENDENT] Test frontend component for real-time notifications. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-11124: [INDEPENDENT] Optimize state management for real-time notifications. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-11125: [INDEPENDENT] Deploy error handling for real-time notifications. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
 
-## 🔮 STRATEGIC PROPOSALS (20 WU)
-- [ ] **STRATEGY-A: Unified Knowledge Graph** (10 WU)
-  *   Propose moving from flat relational mapping to a graph-based structure connecting Shlokas to distinct philosophical concepts (e.g., Karma, Dharma), automatically tagging dictionary entries mentioned within a Shloka.
-- [ ] **STRATEGY-B: AI-Driven Translation Copilot** (10 WU)
-  *   Investigate the feasibility of integrating a local LLM or edge-based API to provide contextual breakdown of compound Sanskrit words (Sandhi splitting) on the fly for rare dictionary terms.
+## 🟢 PHASE 11: Real-time Notifications [EPIC-11200] (10 WU)
+*Objective: Keep users engaged with real-time updates for comments and replies (Part 2)*
+### ❖ FEATURE-11210: Core Capability 1
+- [ ] TASK-11211: [INDEPENDENT] Design database schema for real-time notifications. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-11212: [INDEPENDENT] Implement API endpoint for real-time notifications. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-11213: [INDEPENDENT] Test frontend component for real-time notifications. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-11214: [INDEPENDENT] Optimize state management for real-time notifications. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-11215: [INDEPENDENT] Deploy error handling for real-time notifications. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+### ❖ FEATURE-11220: Core Capability 2
+- [ ] TASK-11221: [INDEPENDENT] Design database schema for real-time notifications. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-11222: [INDEPENDENT] Implement API endpoint for real-time notifications. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-11223: [INDEPENDENT] Test frontend component for real-time notifications. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-11224: [INDEPENDENT] Optimize state management for real-time notifications. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-11225: [INDEPENDENT] Deploy error handling for real-time notifications. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+
+## 🟡 PHASE 12: Gamification & Study Streaks [EPIC-12100] (10 WU)
+*Objective: Encourage daily reading habits through a gamified streak system (Part 1)*
+### ❖ FEATURE-12110: Core Capability 1
+- [ ] TASK-12111: [INDEPENDENT] Design database schema for gamification & study streaks. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-12112: [INDEPENDENT] Implement API endpoint for gamification & study streaks. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-12113: [INDEPENDENT] Test frontend component for gamification & study streaks. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-12114: [INDEPENDENT] Optimize state management for gamification & study streaks. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-12115: [INDEPENDENT] Deploy error handling for gamification & study streaks. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+### ❖ FEATURE-12120: Core Capability 2
+- [ ] TASK-12121: [INDEPENDENT] Design database schema for gamification & study streaks. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-12122: [INDEPENDENT] Implement API endpoint for gamification & study streaks. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-12123: [INDEPENDENT] Test frontend component for gamification & study streaks. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-12124: [INDEPENDENT] Optimize state management for gamification & study streaks. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-12125: [INDEPENDENT] Deploy error handling for gamification & study streaks. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+
+## 🟡 PHASE 12: Gamification & Study Streaks [EPIC-12200] (10 WU)
+*Objective: Encourage daily reading habits through a gamified streak system (Part 2)*
+### ❖ FEATURE-12210: Core Capability 1
+- [ ] TASK-12211: [INDEPENDENT] Design database schema for gamification & study streaks. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-12212: [INDEPENDENT] Implement API endpoint for gamification & study streaks. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-12213: [INDEPENDENT] Test frontend component for gamification & study streaks. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-12214: [INDEPENDENT] Optimize state management for gamification & study streaks. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-12215: [INDEPENDENT] Deploy error handling for gamification & study streaks. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+### ❖ FEATURE-12220: Core Capability 2
+- [ ] TASK-12221: [INDEPENDENT] Design database schema for gamification & study streaks. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-12222: [INDEPENDENT] Implement API endpoint for gamification & study streaks. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-12223: [INDEPENDENT] Test frontend component for gamification & study streaks. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-12224: [INDEPENDENT] Optimize state management for gamification & study streaks. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-12225: [INDEPENDENT] Deploy error handling for gamification & study streaks. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+
+## 🔴 PHASE 13: Enhanced Daily Discoverability [EPIC-13100] (10 WU)
+*Objective: Introduce rotating daily content to ensure fresh user experiences (Part 1)*
+### ❖ FEATURE-13110: Core Capability 1
+- [ ] TASK-13111: [INDEPENDENT] Design database schema for enhanced daily discoverability. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-13112: [INDEPENDENT] Implement API endpoint for enhanced daily discoverability. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-13113: [INDEPENDENT] Test frontend component for enhanced daily discoverability. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-13114: [INDEPENDENT] Optimize state management for enhanced daily discoverability. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-13115: [INDEPENDENT] Deploy error handling for enhanced daily discoverability. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+### ❖ FEATURE-13120: Core Capability 2
+- [ ] TASK-13121: [INDEPENDENT] Design database schema for enhanced daily discoverability. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-13122: [INDEPENDENT] Implement API endpoint for enhanced daily discoverability. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-13123: [INDEPENDENT] Test frontend component for enhanced daily discoverability. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-13124: [INDEPENDENT] Optimize state management for enhanced daily discoverability. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-13125: [INDEPENDENT] Deploy error handling for enhanced daily discoverability. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+
+## 🔴 PHASE 13: Enhanced Daily Discoverability [EPIC-13200] (10 WU)
+*Objective: Introduce rotating daily content to ensure fresh user experiences (Part 2)*
+### ❖ FEATURE-13210: Core Capability 1
+- [ ] TASK-13211: [INDEPENDENT] Design database schema for enhanced daily discoverability. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-13212: [INDEPENDENT] Implement API endpoint for enhanced daily discoverability. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-13213: [INDEPENDENT] Test frontend component for enhanced daily discoverability. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-13214: [INDEPENDENT] Optimize state management for enhanced daily discoverability. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-13215: [INDEPENDENT] Deploy error handling for enhanced daily discoverability. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+### ❖ FEATURE-13220: Core Capability 2
+- [ ] TASK-13221: [INDEPENDENT] Design database schema for enhanced daily discoverability. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-13222: [INDEPENDENT] Implement API endpoint for enhanced daily discoverability. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-13223: [INDEPENDENT] Test frontend component for enhanced daily discoverability. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-13224: [INDEPENDENT] Optimize state management for enhanced daily discoverability. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-13225: [INDEPENDENT] Deploy error handling for enhanced daily discoverability. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+
+## 🟣 PHASE 14: Data Portability [EPIC-14100] (10 WU)
+*Objective: Allow users to securely export their collections and reading data (Part 1)*
+### ❖ FEATURE-14110: Core Capability 1
+- [ ] TASK-14111: [INDEPENDENT] Design database schema for data portability. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-14112: [INDEPENDENT] Implement API endpoint for data portability. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-14113: [INDEPENDENT] Test frontend component for data portability. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-14114: [INDEPENDENT] Optimize state management for data portability. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-14115: [INDEPENDENT] Deploy error handling for data portability. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+### ❖ FEATURE-14120: Core Capability 2
+- [ ] TASK-14121: [INDEPENDENT] Design database schema for data portability. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-14122: [INDEPENDENT] Implement API endpoint for data portability. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-14123: [INDEPENDENT] Test frontend component for data portability. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-14124: [INDEPENDENT] Optimize state management for data portability. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-14125: [INDEPENDENT] Deploy error handling for data portability. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+
+## 🟣 PHASE 14: Data Portability [EPIC-14200] (10 WU)
+*Objective: Allow users to securely export their collections and reading data (Part 2)*
+### ❖ FEATURE-14210: Core Capability 1
+- [ ] TASK-14211: [INDEPENDENT] Design database schema for data portability. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-14212: [INDEPENDENT] Implement API endpoint for data portability. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-14213: [INDEPENDENT] Test frontend component for data portability. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-14214: [INDEPENDENT] Optimize state management for data portability. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-14215: [INDEPENDENT] Deploy error handling for data portability. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+### ❖ FEATURE-14220: Core Capability 2
+- [ ] TASK-14221: [INDEPENDENT] Design database schema for data portability. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-14222: [INDEPENDENT] Implement API endpoint for data portability. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-14223: [INDEPENDENT] Test frontend component for data portability. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-14224: [INDEPENDENT] Optimize state management for data portability. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-14225: [INDEPENDENT] Deploy error handling for data portability. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+
+## 🔵 PHASE 15: Cross-Platform Native Preparation [EPIC-15100] (10 WU)
+*Objective: Lay groundwork for future React Native/Capacitor mobile application (Part 1)*
+### ❖ FEATURE-15110: Core Capability 1
+- [ ] TASK-15111: [INDEPENDENT] Design database schema for cross-platform native preparation. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-15112: [INDEPENDENT] Implement API endpoint for cross-platform native preparation. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-15113: [INDEPENDENT] Test frontend component for cross-platform native preparation. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-15114: [INDEPENDENT] Optimize state management for cross-platform native preparation. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-15115: [INDEPENDENT] Deploy error handling for cross-platform native preparation. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+### ❖ FEATURE-15120: Core Capability 2
+- [ ] TASK-15121: [INDEPENDENT] Design database schema for cross-platform native preparation. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-15122: [INDEPENDENT] Implement API endpoint for cross-platform native preparation. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-15123: [INDEPENDENT] Test frontend component for cross-platform native preparation. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-15124: [INDEPENDENT] Optimize state management for cross-platform native preparation. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-15125: [INDEPENDENT] Deploy error handling for cross-platform native preparation. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+
+## 🔵 PHASE 15: Cross-Platform Native Preparation [EPIC-15200] (10 WU)
+*Objective: Lay groundwork for future React Native/Capacitor mobile application (Part 2)*
+### ❖ FEATURE-15210: Core Capability 1
+- [ ] TASK-15211: [INDEPENDENT] Design database schema for cross-platform native preparation. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-15212: [INDEPENDENT] Implement API endpoint for cross-platform native preparation. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-15213: [INDEPENDENT] Test frontend component for cross-platform native preparation. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-15214: [INDEPENDENT] Optimize state management for cross-platform native preparation. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-15215: [INDEPENDENT] Deploy error handling for cross-platform native preparation. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+### ❖ FEATURE-15220: Core Capability 2
+- [ ] TASK-15221: [INDEPENDENT] Design database schema for cross-platform native preparation. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-15222: [INDEPENDENT] Implement API endpoint for cross-platform native preparation. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-15223: [INDEPENDENT] Test frontend component for cross-platform native preparation. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-15224: [INDEPENDENT] Optimize state management for cross-platform native preparation. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-15225: [INDEPENDENT] Deploy error handling for cross-platform native preparation. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+
+## 🟠 PHASE 16: Automated Testing & CI/CD Pipeline [EPIC-16100] (10 WU)
+*Objective: Establish comprehensive test coverage and deployment automation (Part 1)*
+### ❖ FEATURE-16110: Core Capability 1
+- [ ] TASK-16111: [INDEPENDENT] Design database schema for automated testing & ci/cd pipeline. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-16112: [INDEPENDENT] Implement API endpoint for automated testing & ci/cd pipeline. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-16113: [INDEPENDENT] Test frontend component for automated testing & ci/cd pipeline. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-16114: [INDEPENDENT] Optimize state management for automated testing & ci/cd pipeline. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-16115: [INDEPENDENT] Deploy error handling for automated testing & ci/cd pipeline. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+### ❖ FEATURE-16120: Core Capability 2
+- [ ] TASK-16121: [INDEPENDENT] Design database schema for automated testing & ci/cd pipeline. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-16122: [INDEPENDENT] Implement API endpoint for automated testing & ci/cd pipeline. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-16123: [INDEPENDENT] Test frontend component for automated testing & ci/cd pipeline. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-16124: [INDEPENDENT] Optimize state management for automated testing & ci/cd pipeline. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-16125: [INDEPENDENT] Deploy error handling for automated testing & ci/cd pipeline. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+
+## 🟠 PHASE 16: Automated Testing & CI/CD Pipeline [EPIC-16200] (10 WU)
+*Objective: Establish comprehensive test coverage and deployment automation (Part 2)*
+### ❖ FEATURE-16210: Core Capability 1
+- [ ] TASK-16211: [INDEPENDENT] Design database schema for automated testing & ci/cd pipeline. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-16212: [INDEPENDENT] Implement API endpoint for automated testing & ci/cd pipeline. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-16213: [INDEPENDENT] Test frontend component for automated testing & ci/cd pipeline. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-16214: [INDEPENDENT] Optimize state management for automated testing & ci/cd pipeline. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-16215: [INDEPENDENT] Deploy error handling for automated testing & ci/cd pipeline. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+### ❖ FEATURE-16220: Core Capability 2
+- [ ] TASK-16221: [INDEPENDENT] Design database schema for automated testing & ci/cd pipeline. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-16222: [INDEPENDENT] Implement API endpoint for automated testing & ci/cd pipeline. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-16223: [INDEPENDENT] Test frontend component for automated testing & ci/cd pipeline. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-16224: [INDEPENDENT] Optimize state management for automated testing & ci/cd pipeline. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-16225: [INDEPENDENT] Deploy error handling for automated testing & ci/cd pipeline. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+
+## 🟤 PHASE 17: User Onboarding & Guided Tours [EPIC-17100] (10 WU)
+*Objective: Ensure new users understand platform capabilities through guided experiences (Part 1)*
+### ❖ FEATURE-17110: Core Capability 1
+- [ ] TASK-17111: [INDEPENDENT] Design database schema for user onboarding & guided tours. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-17112: [INDEPENDENT] Implement API endpoint for user onboarding & guided tours. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-17113: [INDEPENDENT] Test frontend component for user onboarding & guided tours. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-17114: [INDEPENDENT] Optimize state management for user onboarding & guided tours. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-17115: [INDEPENDENT] Deploy error handling for user onboarding & guided tours. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+### ❖ FEATURE-17120: Core Capability 2
+- [ ] TASK-17121: [INDEPENDENT] Design database schema for user onboarding & guided tours. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-17122: [INDEPENDENT] Implement API endpoint for user onboarding & guided tours. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-17123: [INDEPENDENT] Test frontend component for user onboarding & guided tours. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-17124: [INDEPENDENT] Optimize state management for user onboarding & guided tours. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-17125: [INDEPENDENT] Deploy error handling for user onboarding & guided tours. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+
+## 🟤 PHASE 17: User Onboarding & Guided Tours [EPIC-17200] (10 WU)
+*Objective: Ensure new users understand platform capabilities through guided experiences (Part 2)*
+### ❖ FEATURE-17210: Core Capability 1
+- [ ] TASK-17211: [INDEPENDENT] Design database schema for user onboarding & guided tours. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-17212: [INDEPENDENT] Implement API endpoint for user onboarding & guided tours. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-17213: [INDEPENDENT] Test frontend component for user onboarding & guided tours. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-17214: [INDEPENDENT] Optimize state management for user onboarding & guided tours. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-17215: [INDEPENDENT] Deploy error handling for user onboarding & guided tours. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+### ❖ FEATURE-17220: Core Capability 2
+- [ ] TASK-17221: [INDEPENDENT] Design database schema for user onboarding & guided tours. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-17222: [INDEPENDENT] Implement API endpoint for user onboarding & guided tours. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-17223: [INDEPENDENT] Test frontend component for user onboarding & guided tours. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-17224: [INDEPENDENT] Optimize state management for user onboarding & guided tours. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-17225: [INDEPENDENT] Deploy error handling for user onboarding & guided tours. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+
+## ⚫ PHASE 18: Performance Profiling & Optimization [EPIC-18100] (10 WU)
+*Objective: Maximize page load speeds and optimize React rendering lifecycles (Part 1)*
+### ❖ FEATURE-18110: Core Capability 1
+- [ ] TASK-18111: [INDEPENDENT] Design database schema for performance profiling & optimization. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-18112: [INDEPENDENT] Implement API endpoint for performance profiling & optimization. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-18113: [INDEPENDENT] Test frontend component for performance profiling & optimization. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-18114: [INDEPENDENT] Optimize state management for performance profiling & optimization. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-18115: [INDEPENDENT] Deploy error handling for performance profiling & optimization. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+### ❖ FEATURE-18120: Core Capability 2
+- [ ] TASK-18121: [INDEPENDENT] Design database schema for performance profiling & optimization. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-18122: [INDEPENDENT] Implement API endpoint for performance profiling & optimization. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-18123: [INDEPENDENT] Test frontend component for performance profiling & optimization. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-18124: [INDEPENDENT] Optimize state management for performance profiling & optimization. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-18125: [INDEPENDENT] Deploy error handling for performance profiling & optimization. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+
+## ⚫ PHASE 18: Performance Profiling & Optimization [EPIC-18200] (10 WU)
+*Objective: Maximize page load speeds and optimize React rendering lifecycles (Part 2)*
+### ❖ FEATURE-18210: Core Capability 1
+- [ ] TASK-18211: [INDEPENDENT] Design database schema for performance profiling & optimization. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-18212: [INDEPENDENT] Implement API endpoint for performance profiling & optimization. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-18213: [INDEPENDENT] Test frontend component for performance profiling & optimization. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-18214: [INDEPENDENT] Optimize state management for performance profiling & optimization. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-18215: [INDEPENDENT] Deploy error handling for performance profiling & optimization. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+### ❖ FEATURE-18220: Core Capability 2
+- [ ] TASK-18221: [INDEPENDENT] Design database schema for performance profiling & optimization. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-18222: [INDEPENDENT] Implement API endpoint for performance profiling & optimization. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-18223: [INDEPENDENT] Test frontend component for performance profiling & optimization. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-18224: [INDEPENDENT] Optimize state management for performance profiling & optimization. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-18225: [INDEPENDENT] Deploy error handling for performance profiling & optimization. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+
+## ⚪ PHASE 19: Advanced Sandhi & Grammar AI [EPIC-19100] (10 WU)
+*Objective: AI-based root word splitting for complex Sanskrit verses (Part 1)*
+### ❖ FEATURE-19110: Core Capability 1
+- [ ] TASK-19111: [INDEPENDENT] Design database schema for advanced sandhi & grammar ai. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-19112: [INDEPENDENT] Implement API endpoint for advanced sandhi & grammar ai. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-19113: [INDEPENDENT] Test frontend component for advanced sandhi & grammar ai. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-19114: [INDEPENDENT] Optimize state management for advanced sandhi & grammar ai. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-19115: [INDEPENDENT] Deploy error handling for advanced sandhi & grammar ai. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+### ❖ FEATURE-19120: Core Capability 2
+- [ ] TASK-19121: [INDEPENDENT] Design database schema for advanced sandhi & grammar ai. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-19122: [INDEPENDENT] Implement API endpoint for advanced sandhi & grammar ai. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-19123: [INDEPENDENT] Test frontend component for advanced sandhi & grammar ai. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-19124: [INDEPENDENT] Optimize state management for advanced sandhi & grammar ai. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-19125: [INDEPENDENT] Deploy error handling for advanced sandhi & grammar ai. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+
+## ⚪ PHASE 19: Advanced Sandhi & Grammar AI [EPIC-19200] (10 WU)
+*Objective: AI-based root word splitting for complex Sanskrit verses (Part 2)*
+### ❖ FEATURE-19210: Core Capability 1
+- [ ] TASK-19211: [INDEPENDENT] Design database schema for advanced sandhi & grammar ai. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-19212: [INDEPENDENT] Implement API endpoint for advanced sandhi & grammar ai. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-19213: [INDEPENDENT] Test frontend component for advanced sandhi & grammar ai. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-19214: [INDEPENDENT] Optimize state management for advanced sandhi & grammar ai. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-19215: [INDEPENDENT] Deploy error handling for advanced sandhi & grammar ai. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+### ❖ FEATURE-19220: Core Capability 2
+- [ ] TASK-19221: [INDEPENDENT] Design database schema for advanced sandhi & grammar ai. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-19222: [INDEPENDENT] Implement API endpoint for advanced sandhi & grammar ai. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-19223: [INDEPENDENT] Test frontend component for advanced sandhi & grammar ai. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-19224: [INDEPENDENT] Optimize state management for advanced sandhi & grammar ai. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-19225: [INDEPENDENT] Deploy error handling for advanced sandhi & grammar ai. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+
+## ⬜ PHASE 20: Global Knowledge Graph Mapping [EPIC-20100] (10 WU)
+*Objective: Connect verses to universal philosophical nodes (Part 1)*
+### ❖ FEATURE-20110: Core Capability 1
+- [ ] TASK-20111: [INDEPENDENT] Design database schema for global knowledge graph mapping. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-20112: [INDEPENDENT] Implement API endpoint for global knowledge graph mapping. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-20113: [INDEPENDENT] Test frontend component for global knowledge graph mapping. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-20114: [INDEPENDENT] Optimize state management for global knowledge graph mapping. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-20115: [INDEPENDENT] Deploy error handling for global knowledge graph mapping. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+### ❖ FEATURE-20120: Core Capability 2
+- [ ] TASK-20121: [INDEPENDENT] Design database schema for global knowledge graph mapping. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-20122: [INDEPENDENT] Implement API endpoint for global knowledge graph mapping. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-20123: [INDEPENDENT] Test frontend component for global knowledge graph mapping. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-20124: [INDEPENDENT] Optimize state management for global knowledge graph mapping. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-20125: [INDEPENDENT] Deploy error handling for global knowledge graph mapping. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+
+## ⬜ PHASE 20: Global Knowledge Graph Mapping [EPIC-20200] (10 WU)
+*Objective: Connect verses to universal philosophical nodes (Part 2)*
+### ❖ FEATURE-20210: Core Capability 1
+- [ ] TASK-20211: [INDEPENDENT] Design database schema for global knowledge graph mapping. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-20212: [INDEPENDENT] Implement API endpoint for global knowledge graph mapping. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-20213: [INDEPENDENT] Test frontend component for global knowledge graph mapping. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-20214: [INDEPENDENT] Optimize state management for global knowledge graph mapping. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-20215: [INDEPENDENT] Deploy error handling for global knowledge graph mapping. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+### ❖ FEATURE-20220: Core Capability 2
+- [ ] TASK-20221: [INDEPENDENT] Design database schema for global knowledge graph mapping. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-20222: [INDEPENDENT] Implement API endpoint for global knowledge graph mapping. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-20223: [INDEPENDENT] Test frontend component for global knowledge graph mapping. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-20224: [INDEPENDENT] Optimize state management for global knowledge graph mapping. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-20225: [INDEPENDENT] Deploy error handling for global knowledge graph mapping. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+
+## 🟢 PHASE 21: User-Generated Commentaries [EPIC-21100] (10 WU)
+*Objective: Allow advanced users to publish their own verse interpretations (Part 1)*
+### ❖ FEATURE-21110: Core Capability 1
+- [ ] TASK-21111: [INDEPENDENT] Design database schema for user-generated commentaries. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-21112: [INDEPENDENT] Implement API endpoint for user-generated commentaries. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-21113: [INDEPENDENT] Test frontend component for user-generated commentaries. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-21114: [INDEPENDENT] Optimize state management for user-generated commentaries. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-21115: [INDEPENDENT] Deploy error handling for user-generated commentaries. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+### ❖ FEATURE-21120: Core Capability 2
+- [ ] TASK-21121: [INDEPENDENT] Design database schema for user-generated commentaries. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-21122: [INDEPENDENT] Implement API endpoint for user-generated commentaries. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-21123: [INDEPENDENT] Test frontend component for user-generated commentaries. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-21124: [INDEPENDENT] Optimize state management for user-generated commentaries. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-21125: [INDEPENDENT] Deploy error handling for user-generated commentaries. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+
+## 🟢 PHASE 21: User-Generated Commentaries [EPIC-21200] (10 WU)
+*Objective: Allow advanced users to publish their own verse interpretations (Part 2)*
+### ❖ FEATURE-21210: Core Capability 1
+- [ ] TASK-21211: [INDEPENDENT] Design database schema for user-generated commentaries. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-21212: [INDEPENDENT] Implement API endpoint for user-generated commentaries. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-21213: [INDEPENDENT] Test frontend component for user-generated commentaries. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-21214: [INDEPENDENT] Optimize state management for user-generated commentaries. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-21215: [INDEPENDENT] Deploy error handling for user-generated commentaries. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+### ❖ FEATURE-21220: Core Capability 2
+- [ ] TASK-21221: [INDEPENDENT] Design database schema for user-generated commentaries. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-21222: [INDEPENDENT] Implement API endpoint for user-generated commentaries. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-21223: [INDEPENDENT] Test frontend component for user-generated commentaries. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-21224: [INDEPENDENT] Optimize state management for user-generated commentaries. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-21225: [INDEPENDENT] Deploy error handling for user-generated commentaries. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+
+## 🟡 PHASE 22: Collaborative Study Groups [EPIC-22100] (10 WU)
+*Objective: Create private rooms for group chanting and discussion (Part 1)*
+### ❖ FEATURE-22110: Core Capability 1
+- [ ] TASK-22111: [INDEPENDENT] Design database schema for collaborative study groups. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-22112: [INDEPENDENT] Implement API endpoint for collaborative study groups. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-22113: [INDEPENDENT] Test frontend component for collaborative study groups. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-22114: [INDEPENDENT] Optimize state management for collaborative study groups. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-22115: [INDEPENDENT] Deploy error handling for collaborative study groups. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+### ❖ FEATURE-22120: Core Capability 2
+- [ ] TASK-22121: [INDEPENDENT] Design database schema for collaborative study groups. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-22122: [INDEPENDENT] Implement API endpoint for collaborative study groups. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-22123: [INDEPENDENT] Test frontend component for collaborative study groups. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-22124: [INDEPENDENT] Optimize state management for collaborative study groups. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-22125: [INDEPENDENT] Deploy error handling for collaborative study groups. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+
+## 🟡 PHASE 22: Collaborative Study Groups [EPIC-22200] (10 WU)
+*Objective: Create private rooms for group chanting and discussion (Part 2)*
+### ❖ FEATURE-22210: Core Capability 1
+- [ ] TASK-22211: [INDEPENDENT] Design database schema for collaborative study groups. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-22212: [INDEPENDENT] Implement API endpoint for collaborative study groups. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-22213: [INDEPENDENT] Test frontend component for collaborative study groups. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-22214: [INDEPENDENT] Optimize state management for collaborative study groups. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-22215: [INDEPENDENT] Deploy error handling for collaborative study groups. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+### ❖ FEATURE-22220: Core Capability 2
+- [ ] TASK-22221: [INDEPENDENT] Design database schema for collaborative study groups. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-22222: [INDEPENDENT] Implement API endpoint for collaborative study groups. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-22223: [INDEPENDENT] Test frontend component for collaborative study groups. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-22224: [INDEPENDENT] Optimize state management for collaborative study groups. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [ ] TASK-22225: [INDEPENDENT] Deploy error handling for collaborative study groups. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+
