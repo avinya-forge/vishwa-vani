@@ -81,3 +81,36 @@ with check (
     where id = saved_items.collection_id and user_id = auth.uid()
   )
 );
+
+-- Comments Table: User comments on shlokas
+create table public.comments (
+  id uuid default uuid_generate_v4() primary key,
+  shloka_id uuid references public.shlokas on delete cascade not null,
+  user_id uuid references auth.users not null,
+  content text not null,
+  created_at timestamp with time zone default timezone('utc'::text, now()) not null,
+  updated_at timestamp with time zone default timezone('utc'::text, now()) not null
+);
+
+-- Enable Row Level Security (RLS) for comments
+alter table public.comments enable row level security;
+
+-- Create Policies for Comments
+create policy "Allow public read access on comments"
+on public.comments for select
+to anon
+using (true);
+
+create policy "Authenticated users can create comments"
+on public.comments for insert
+to authenticated
+with check (auth.uid() = user_id);
+
+create policy "Users can update their own comments"
+on public.comments for update
+using (auth.uid() = user_id)
+with check (auth.uid() = user_id);
+
+create policy "Users can delete their own comments"
+on public.comments for delete
+using (auth.uid() = user_id);
