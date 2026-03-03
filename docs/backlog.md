@@ -6,7 +6,7 @@
 
 ## 🔴 PHASE 3: Community & Social Engagement [EPIC-300] (10 WU)
 *Objective: Enable basic user interaction around sacred texts.*
-- [ ] TASK-301: [INDEPENDENT] Create `comments` DB table referencing `shlokas` and `users`. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
+- [Done] TASK-301: [INDEPENDENT] Create `comments` DB table referencing `shlokas` and `users`. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
 - [ ] TASK-302: [INDEPENDENT] Build server-rendered comment list under Shloka detail view. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
 - [ ] TASK-303: [INDEPENDENT] Implement "Add Comment" form with optimistic UI updates. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
 - [ ] TASK-304: [INDEPENDENT] Add generic upvote/reaction system (schema + server action) for posts. Atoms: Test (95%), Lint (0-err), Opt (Big O), Sec (Sanitize) (1 WU)
