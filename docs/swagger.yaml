@@ -1,0 +1,94 @@
+openapi: 3.0.3
+info:
+  title: Vishwa-Vani API Contract
+  version: 0.4.0
+  description: Mandatory Schema-First API Contracts for Vishwa-Vani.
+servers:
+  - url: http://localhost:3000/api
+    description: Local development server
+paths:
+  /admin/import:
+    post:
+      summary: Bulk Import Dictionary and Shlokas
+      description: Imports an array of dictionary entries and shlokas. Requires Service Role Key and Admin Key.
+      security:
+        - AdminKeyAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                dictionary:
+                  type: array
+                  items:
+                    $ref: '#/components/schemas/DictionaryEntry'
+                shlokas:
+                  type: array
+                  items:
+                    $ref: '#/components/schemas/Shloka'
+      responses:
+        '200':
+          description: Import successful
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: Imported 1 words and 1 shlokas.
+        '401':
+          description: Unauthorized
+        '500':
+          description: Server Misconfiguration or Import Error
+components:
+  securitySchemes:
+    AdminKeyAuth:
+      type: apiKey
+      in: header
+      name: x-admin-key
+  schemas:
+    DictionaryEntry:
+      type: object
+      required:
+        - root_word
+        - hindi_meaning
+      properties:
+        id:
+          type: string
+          format: uuid
+        root_word:
+          type: string
+          example: Dharma
+        hindi_meaning:
+          type: string
+          example: धर्म
+        english_meaning:
+          type: string
+          example: Righteousness, Duty
+        marathi_meaning:
+          type: string
+          example: धर्म
+    Shloka:
+      type: object
+      required:
+        - text_sanskrit
+        - reference
+      properties:
+        id:
+          type: string
+          format: uuid
+        text_sanskrit:
+          type: string
+          example: यदा यदा हि धर्मस्य ग्लानिर्भवति भारत
+        reference:
+          type: string
+          example: BG 4.7
+        text_english:
+          type: string
+          example: Whenever and wherever there is a decline in religious practice, O descendant of Bharata
+        translation:
+          type: string
+          example: Whenever there is a decline of righteousness, O Bharata...

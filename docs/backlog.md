@@ -6,12 +6,13 @@
 - **Breadth-then-Depth Applied:** All tasks have been formatted into granular, AI-ready tables.
 - **Workflow Integrity:** "Done" items (301, 302) have been vaulted.
 
-## PHASE 3: Community & Social Engagement [EPIC-300] (10 WU)
+## PHASE 3: Community & Social Engagement [EPIC-300] (12 WU)
 *Objective: Execute tasks systematically maintaining Definition of Done atoms.*
 
 | ID | User Story (As a... I want... So that...) | Technical Scope | Acceptance Criteria | Priority | Effort | Est. LOC | Implementation Logic | Index | Next Task |
 |----|------------|-----------------|---------------------|----------|--------|----------|----------------------|-------|-----------|
 | TASK-303 | As a user/admin, I want implement "add comment" form with optimistic ui updates so that the platform capabilities expand. | App Router, Supabase | Pass Tests (95%), 0-Lint, Secure | MUST | 1 WU | ~150 | Implement Server Action/Component | 1/148 | 304 |
+| TASK-306 | As a system architect, I want to remove `client-shloka.ts` so that code redundancy is eliminated and server-first logic is enforced. | App Router, Refactoring | Code removed, TDR < 5% | MUST | 2 WU | -50 | Delete unused client service file | 149/150 | None |
 | TASK-304 | As a user/admin, I want add generic upvote/reaction system (schema + server action) for posts so that the platform capabilities expand. | App Router, Supabase | Pass Tests (95%), 0-Lint, Secure | MUST | 1 WU | ~150 | Implement Server Action/Component | 2/148 | 305 |
 | TASK-305 | As a user/admin, I want configure row level security (rls) for user-created content modification so that the platform capabilities expand. | App Router, Supabase | Pass Tests (95%), 0-Lint, Secure | MUST | 1 WU | ~150 | Implement Server Action/Component | 3/148 | 401 |
 
