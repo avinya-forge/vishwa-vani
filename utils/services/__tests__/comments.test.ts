@@ -1,4 +1,4 @@
-import { getCommentsByShlokaId } from './comments';
+import { getCommentsByShlokaId } from '../comments';
 import { createClient } from '@/utils/supabase/server';
 
 jest.mock('@/utils/supabase/server', () => ({
@@ -52,6 +52,14 @@ describe('Comment Service', () => {
       expect(consoleErrorSpy).toHaveBeenCalledWith('Error fetching comments for shloka shloka-1:', mockError);
 
       consoleErrorSpy.mockRestore();
+    });
+
+    it('returns empty array when data is null but no error', async () => {
+      mockSupabase.order.mockResolvedValue({ data: null, error: null });
+
+      const result = await getCommentsByShlokaId('shloka-1');
+
+      expect(result).toEqual([]);
     });
   });
 });

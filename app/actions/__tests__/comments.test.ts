@@ -1,4 +1,4 @@
-import { addComment } from './comments'
+import { addComment } from '../comments'
 import { createClient } from '@/utils/supabase/server'
 import { revalidatePath } from 'next/cache'
 

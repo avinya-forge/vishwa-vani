@@ -1,4 +1,4 @@
-import { getUserCollections, createCollection, saveItemToCollection, removeItemFromCollection } from './collections';
+import { getUserCollections, createCollection, saveItemToCollection, removeItemFromCollection } from '../collections';
 import { createClient } from '@/utils/supabase/server';
 import { revalidatePath } from 'next/cache';
 
@@ -59,6 +59,14 @@ describe('Collection Server Actions', () => {
 
       expect(result).toEqual({ data: null, error: 'Not authenticated' });
     });
+
+    it('returns an error if fetching collections fails', async () => {
+      mockSupabase.order.mockResolvedValue({ data: null, error: { message: 'DB Error' } });
+
+      const result = await getUserCollections();
+
+      expect(result).toEqual({ data: null, error: 'DB Error' });
+    });
   });
 
   describe('createCollection', () => {
@@ -72,6 +80,25 @@ describe('Collection Server Actions', () => {
       expect(mockSupabase.insert).toHaveBeenCalledWith([{ name: 'New Col', description: 'Desc', user_id: 'user-123' }]);
       expect(revalidatePath).toHaveBeenCalledWith('/collections');
       expect(result).toEqual({ data: newCollection, error: null });
+    });
+
+    it('returns an error if user is not authenticated', async () => {
+      mockSupabase.auth.getUser.mockResolvedValue({
+        data: { user: null },
+        error: { message: 'Not authenticated' },
+      });
+
+      const result = await createCollection('New Col', 'Desc');
+
+      expect(result).toEqual({ data: null, error: 'Not authenticated' });
+    });
+
+    it('returns an error if creating collection fails', async () => {
+      mockSupabase.single.mockResolvedValue({ data: null, error: { message: 'Insert Error' } });
+
+      const result = await createCollection('New Col', 'Desc');
+
+      expect(result).toEqual({ data: null, error: 'Insert Error' });
     });
   });
 
@@ -100,6 +127,28 @@ describe('Collection Server Actions', () => {
 
       expect(result).toEqual({ data: null, error: 'Collection not found or access denied' });
     });
+
+    it('returns an error if user is not authenticated', async () => {
+      mockSupabase.auth.getUser.mockResolvedValue({
+        data: { user: null },
+        error: { message: 'Not authenticated' },
+      });
+
+      const result = await saveItemToCollection('col-1', 'shloka', 'shloka-1');
+
+      expect(result).toEqual({ data: null, error: 'Not authenticated' });
+    });
+
+    it('returns an error if insert fails', async () => {
+      // Mock collection check
+      mockSupabase.single.mockResolvedValueOnce({ data: { id: 'col-1' }, error: null });
+      // Mock insert failure
+      mockSupabase.single.mockResolvedValueOnce({ data: null, error: { message: 'Insert failed' } });
+
+      const result = await saveItemToCollection('col-1', 'shloka', 'shloka-1');
+
+      expect(result).toEqual({ data: null, error: 'Insert failed' });
+    });
   });
 
   describe('removeItemFromCollection', () => {
@@ -113,6 +162,25 @@ describe('Collection Server Actions', () => {
       expect(mockSupabase.eq).toHaveBeenCalledWith('id', 'item-1');
       expect(revalidatePath).toHaveBeenCalledWith('/collections/col-1');
       expect(result).toEqual({ data: null, error: null });
+    });
+
+    it('returns an error if user is not authenticated', async () => {
+      mockSupabase.auth.getUser.mockResolvedValue({
+        data: { user: null },
+        error: { message: 'Not authenticated' },
+      });
+
+      const result = await removeItemFromCollection('item-1', 'col-1');
+
+      expect(result).toEqual({ data: null, error: 'Not authenticated' });
+    });
+
+    it('returns an error if delete fails', async () => {
+      mockSupabase.eq.mockResolvedValue({ error: { message: 'Delete Error' } });
+
+      const result = await removeItemFromCollection('item-1', 'col-1');
+
+      expect(result).toEqual({ data: null, error: 'Delete Error' });
     });
   });
 });
