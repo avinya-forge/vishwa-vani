@@ -1,5 +1,6 @@
 import { getCommentsByShlokaId } from '@/utils/services/comments'
-import CommentItem from './CommentItem'
+import { createClient } from '@/utils/supabase/server'
+import CommentSection from './CommentSection'
 
 interface CommentListProps {
   shlokaId: string
@@ -7,6 +8,9 @@ interface CommentListProps {
 
 export default async function CommentList({ shlokaId }: CommentListProps) {
   const comments = await getCommentsByShlokaId(shlokaId)
+
+  const supabase = await createClient()
+  const { data: { user } } = await supabase.auth.getUser()
 
   return (
     <div className="max-w-3xl mx-auto my-12 p-8 bg-white rounded-xl shadow-sm border border-gray-100">
@@ -17,17 +21,11 @@ export default async function CommentList({ shlokaId }: CommentListProps) {
         </span>
       </h3>
 
-      {comments.length === 0 ? (
-        <div className="text-center py-8 text-gray-500 italic bg-gray-50 rounded-lg">
-          No comments yet. Be the first to share your thoughts!
-        </div>
-      ) : (
-        <div className="space-y-6">
-          {comments.map((comment) => (
-            <CommentItem key={comment.id} comment={comment} />
-          ))}
-        </div>
-      )}
+      <CommentSection
+        initialComments={comments}
+        shlokaId={shlokaId}
+        currentUserId={user?.id || null}
+      />
     </div>
   )
 }

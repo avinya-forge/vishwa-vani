@@ -5,8 +5,9 @@ import CommentList from '@/components/comments/CommentList'
 
 export const dynamic = 'force-dynamic'
 
-export default async function ShlokaPage({ params }: { params: { id: string } }) {
-  const shloka = await getShlokaById(params.id)
+export default async function ShlokaPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params
+  const shloka = await getShlokaById(id)
 
   if (!shloka) {
     notFound()
