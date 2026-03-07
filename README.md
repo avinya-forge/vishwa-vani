@@ -8,18 +8,18 @@
 
 | Milestone | Version | Phase | Status | Tech Debt | Backlog Density |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| Foundation & Community | v0.4.0 | Phase 3 | In Progress | 0% | 148 / 60 |
+| M1 | v0.4.0 | 3 | In Progress | 0% | 60 |
 
 ## Documentation Map
 
-- 📜 [Vision (Constitution)](./docs/vision.md)
-- 🗺️ [Roadmap & Backlog](./docs/backlog.md)
-- 📦 [Release Notes](./docs/release-notes.md)
-- 📏 [Ultra-Lean Standards](./docs/standards/ultra-lean.md)
-- 🧠 [AI Habits](./docs/rules/habits.md)
-- 🧹 [Hygiene Rules](./docs/rules/hygiene.md)
-- 🩺 [System Health](./docs/system-health.md)
-- 📑 [Swagger / API Schema](./docs/swagger.yaml)
+- 📜 [docs/vision.md](./docs/vision.md)
+- 🗺️ [docs/backlog.md](./docs/backlog.md)
+- 📦 [docs/release-notes.md](./docs/release-notes.md)
+- 📏 [docs/standards/ultra-lean.md](./docs/standards/ultra-lean.md)
+- 🧠 [docs/rules/habits.md](./docs/rules/habits.md)
+- 🧹 [docs/rules/hygiene.md](./docs/rules/hygiene.md)
+- 🩺 [docs/system-health.md](./docs/system-health.md)
+- 📑 [docs/swagger.yaml](./docs/swagger.yaml)
 
 ## Quick Start
 
