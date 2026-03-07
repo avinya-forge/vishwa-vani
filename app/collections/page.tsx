@@ -38,7 +38,7 @@ export default async function CollectionsPage() {
         <>
           {collections?.length === 0 ? (
             <div className="text-center py-12 bg-white rounded-lg border border-dashed border-gray-300 mt-6">
-              <p className="text-gray-500 mb-2">You don't have any collections yet.</p>
+              <p className="text-gray-500 mb-2">You don&apos;t have any collections yet.</p>
               <p className="text-sm text-gray-400">Create one above to start saving shlokas!</p>
             </div>
           ) : (
