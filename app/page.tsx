@@ -1,5 +1,6 @@
 import { getShlokas } from '@/utils/services/shloka'
 import ShlokaCard from '@/components/shloka/ShlokaCard'
+import Link from 'next/link'
 
 // Force dynamic rendering so we always get fresh data on refresh (for now)
 export const dynamic = 'force-dynamic'
@@ -18,9 +19,9 @@ export default async function Home() {
             Explore the depths of Vedic wisdom, word by word.
           </p>
           <div className="flex justify-center gap-4">
-            <a href="/dictionary" className="px-6 py-2 bg-orange-600 text-white rounded-full hover:bg-orange-700 transition-colors font-semibold shadow-sm">
+            <Link href="/dictionary" className="px-6 py-2 bg-orange-600 text-white rounded-full hover:bg-orange-700 transition-colors font-semibold shadow-sm">
               Open Dictionary
-            </a>
+            </Link>
           </div>
         </header>
 

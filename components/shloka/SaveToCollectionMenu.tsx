@@ -20,7 +20,7 @@ export default function SaveToCollectionMenu({ shlokaId }: SaveToCollectionMenuP
     if (isOpen && collections.length === 0) {
       loadCollections()
     }
-  }, [isOpen])
+  }, [isOpen, collections.length])
 
   const loadCollections = async () => {
     setLoading(true)

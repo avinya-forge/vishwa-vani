@@ -31,7 +31,7 @@ export default async function DictionaryPage({ searchParams }: DictionaryPagePro
                 <div>
                     {query && (
                         <p className="mb-6 text-gray-500 text-sm">
-                            Found {words.length} result(s) for <span className="font-bold text-gray-800">"{query}"</span>
+                            Found {words.length} result(s) for <span className="font-bold text-gray-800">&quot;{query}&quot;</span>
                         </p>
                     )}
 
@@ -43,7 +43,7 @@ export default async function DictionaryPage({ searchParams }: DictionaryPagePro
                         </div>
                     ) : query ? (
                         <div className="text-center py-20 bg-white rounded-lg border border-dashed border-gray-300">
-                            <p className="text-gray-500">No definitions found for "{query}".</p>
+                            <p className="text-gray-500">No definitions found for &quot;{query}&quot;.</p>
                             <p className="text-sm text-gray-400 mt-1">Try using the Sanskrit root word.</p>
                         </div>
                     ) : (
