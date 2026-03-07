@@ -6,6 +6,31 @@
 - **Breadth-then-Depth Applied:** All tasks have been formatted into granular, AI-ready tables.
 - **Workflow Integrity:** "Done" items (301, 302) have been vaulted.
 
+## PHASE 1: Foundation & Authentication (High Priority)
+| ID | User Story (As a... I want... So that...) | Technical Scope | Acceptance Criteria | Priority | Effort | Est. LOC | Implementation Logic | Index | Next Task |
+|----|------------|-----------------|---------------------|----------|--------|----------|----------------------|-------|-----------|
+| TASK-101 | As a developer, I want to initialize Supabase project and connect env variables so that database is available. | App Router, Supabase | Pass Tests (95%), 0-Lint, Secure | MUST | 1 WU | ~150 | Implement connection | 1 | 102 |
+| TASK-102 | As a user, I want implement Email/Password login and signup using Supabase Auth so that I can authenticate. | App Router, Supabase | Pass Tests (95%), 0-Lint, Secure | MUST | 1 WU | ~150 | Implement Auth | 2 | 103 |
+| TASK-103 | As a user, I want create a simple profile page to view account details so that I can manage my info. | App Router, Supabase | Pass Tests (95%), 0-Lint, Secure | MUST | 1 WU | ~150 | Implement UI | 3 | 104 |
+| TASK-104 | As a user, I want establish the main layout with a responsive Header and Footer so that I can navigate. | App Router, UI | Pass Tests (95%), 0-Lint, Secure | MUST | 1 WU | ~150 | Implement UI | 4 | 201 |
+
+## PHASE 2: Core Content Features (Medium Priority)
+| ID | User Story (As a... I want... So that...) | Technical Scope | Acceptance Criteria | Priority | Effort | Est. LOC | Implementation Logic | Index | Next Task |
+|----|------------|-----------------|---------------------|----------|--------|----------|----------------------|-------|-----------|
+| TASK-201 | As a developer, I want define Database Schema for Posts so that content is structured. | App Router, Supabase | Pass Tests (95%), 0-Lint, Secure | MUST | 1 WU | ~150 | Implement Schema | 5 | 202 |
+| TASK-202 | As a user, I want develop a form to create new blog posts so that I can write content. | App Router, Supabase | Pass Tests (95%), 0-Lint, Secure | MUST | 1 WU | ~150 | Implement Form | 6 | 203 |
+| TASK-203 | As a user, I want create a homepage feed displaying latest posts so that I can discover content. | App Router, Supabase | Pass Tests (95%), 0-Lint, Secure | MUST | 1 WU | ~150 | Implement Feed | 7 | 204 |
+| TASK-204 | As a user, I want a dynamic route `[slug]` to view individual articles so that I can read posts. | App Router, Supabase | Pass Tests (95%), 0-Lint, Secure | MUST | 1 WU | ~150 | Implement Route | 8 | 205 |
+
+## PHASE 2.5: Interaction & Polish (Low Priority)
+| ID | User Story (As a... I want... So that...) | Technical Scope | Acceptance Criteria | Priority | Effort | Est. LOC | Implementation Logic | Index | Next Task |
+|----|------------|-----------------|---------------------|----------|--------|----------|----------------------|-------|-----------|
+| TASK-205 | As a user, I want to allow users to comment on posts so that discussion is possible. | App Router, Supabase | Pass Tests (95%), 0-Lint, Secure | MUST | 1 WU | ~150 | Implement Comments | 9 | 206 |
+| TASK-206 | As a user, I want a simple like button for posts so that I can react to content. | App Router, Supabase | Pass Tests (95%), 0-Lint, Secure | MUST | 1 WU | ~150 | Implement Likes | 10 | 207 |
+| TASK-207 | As a user, I want implement Tailwind dark mode switcher so that I can use dark mode. | App Router, UI | Pass Tests (95%), 0-Lint, Secure | MUST | 1 WU | ~150 | Implement Dark Mode | 11 | 208 |
+| TASK-208 | As a user, I want add metadata and OpenGraph tags so that SEO is optimized. | App Router, SEO | Pass Tests (95%), 0-Lint, Secure | MUST | 1 WU | ~150 | Implement SEO | 12 | 303 |
+
+
 ## PHASE 3: Community & Social Engagement [EPIC-300] (12 WU)
 *Objective: Execute tasks systematically maintaining Definition of Done atoms.*
 
