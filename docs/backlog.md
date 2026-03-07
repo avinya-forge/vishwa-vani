@@ -15,7 +15,7 @@
 ---
 
 **MILESTONE [1]** | **PHASE [3]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [306]: remove redundant client-shloka.ts service** | [TODO] | [Refactoring]
+**TASK [306]: remove redundant client-shloka.ts service** | [DONE] | [Refactoring]
 **SPEC:** delete `client-shloka.ts` from filesystem. audit entire codebase (using ripgrep/IDE) for broken imports. replace any remaining references with calls to standard app router server actions.
 
 ---
@@ -367,3 +367,9 @@
 **SPEC:** author raw standard active server action exporting generic distinct active user explicitly mapped generic collections natively translated into strictly formatted json downloadable distinct raw blob strings.
 
 ---
+
+---
+
+**MILESTONE [1]** | **PHASE [3]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
+**TASK [307]: fix eslint circular dependency bug** | [TODO] | [Configuration]
+**SPEC:** The Next.js 16.1.6 and ESLint 9 configuration causes a circular structure serialization error with `@eslint/eslintrc`. Investigate and patch `eslint.config.mjs` or dependencies to restore working lint checks.
