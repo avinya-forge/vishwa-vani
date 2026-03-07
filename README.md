@@ -8,7 +8,7 @@
 
 | Milestone | Version | Phase | Status | Tech Debt | Backlog Density |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| Foundation & Community | v0.4.0 | Phase 3 | In Progress | 0% | 148 / 60 |
+| Foundation & Community | v0.4.0 | Phase 3 | In Progress | 0% | 60 / 60 |
 
 ## Documentation Map
 
