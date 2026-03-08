@@ -1,7 +1,13 @@
 # Vishwa-Vani Release Archive
 
 *Current Session ID*: VANI-5
-*Last Action*: Vaulted Phase 1 and 2 tasks and replenished backlog to maintain exact 60-task density.
+*Last Action*: Fixed ESLint circular dependency.
+
+## [v0.4.1] - Maintenance Update
+*   **Epic Archived**: Configuration Fixes.
+*   **Notes**: Resolved Next.js 16.1.6 & ESLint 9 Flat Config bug.
+*   **Completed Work**:
+    *   [x] TASK-307: fix eslint circular dependency bug
 
 ## [v0.4.0] - Community Core Initiated
 *   **Epic Archived**: Community & Social Engagement (partial) + Blog Foundation.
