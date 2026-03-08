@@ -1,7 +1,13 @@
 # Vishwa-Vani Release Archive
 
 *Current Session ID*: VANI-5
-*Last Action*: Vaulted Phase 1 and 2 tasks and replenished backlog to maintain exact 60-task density.
+*Last Action*: Vaulted completed Phase 3 tasks.
+
+## [v0.4.1] - Refactoring Vaulted
+*   **Epic Archived**: Refactoring (partial).
+*   **Notes**: Completed Phase 3 backlog items for code hygiene and redundant service cleanup.
+*   **Completed Work**:
+    *   [x] TASK-306: remove redundant client-shloka.ts service
 
 ## [v0.4.0] - Community Core Initiated
 *   **Epic Archived**: Community & Social Engagement (partial) + Blog Foundation.
