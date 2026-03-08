@@ -8,6 +8,7 @@
 *   **Notes**: Completed Phase 3 backlog items for code hygiene and redundant service cleanup.
 *   **Completed Work**:
     *   [x] TASK-306: remove redundant client-shloka.ts service
+    *   [x] TASK-307: fix eslint circular dependency bug
 
 ## [v0.4.0] - Community Core Initiated
 *   **Epic Archived**: Community & Social Engagement (partial) + Blog Foundation.

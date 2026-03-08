@@ -363,7 +363,3 @@
 ---
 
 ---
-
-**MILESTONE [1]** | **PHASE [3]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [307]: fix eslint circular dependency bug** | [WIP] | [Configuration]
-**SPEC:** The Next.js 16.1.6 and ESLint 9 configuration causes a circular structure serialization error with `@eslint/eslintrc`. Investigate and patch `eslint.config.mjs` or dependencies to restore working lint checks.
