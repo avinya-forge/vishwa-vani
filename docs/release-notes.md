@@ -1,8 +1,14 @@
 # Vishwa-Vani Release Archive
 
 *Current Session ID*: VANI-6
-*Last Action*: Processed TASK-304
+*Last Action*: Processed TASK-303
 
+
+## [v0.4.3] - Comment Form with Optimistic UI
+*   **Epic Archived**: UI/UX (partial).
+*   **Notes**: Completed Phase 3 backlog item TASK-303. Flagged as [RISKY_REFACTOR].
+*   **Completed Work**:
+    *   [x] TASK-303: add comment form with optimistic ui
 
 ## [v0.4.2] - Reactions Schema
 *   **Epic Archived**: Community & Social Engagement (partial).
