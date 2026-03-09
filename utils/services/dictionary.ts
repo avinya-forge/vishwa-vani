@@ -3,17 +3,16 @@ import { Database } from '@/types/supabase'
 
 export type DictionaryEntry = Database['public']['Tables']['dictionary']['Row']
 
-export async function searchWords(query: string): Promise<DictionaryEntry[]> {
+export async function searchWords(query: string, language?: string): Promise<DictionaryEntry[]> {
     if (!query) return []
 
     const supabase = await createClient()
 
     const { data, error } = await supabase
-        .from('dictionary')
-        .select('*')
-        .ilike('root_word', `%${query}%`)
-        .order('root_word', { ascending: true })
-        .limit(20)
+        .rpc('search_words_fuzzy', {
+            query_text: query,
+            language_code: language || null
+        })
 
     if (error) {
         console.error('Error searching words:', error)

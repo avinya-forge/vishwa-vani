@@ -7,12 +7,15 @@ export const dynamic = 'force-dynamic'
 interface DictionaryPageProps {
     searchParams: {
         q?: string
+        lang?: string
     }
 }
 
 export default async function DictionaryPage({ searchParams }: DictionaryPageProps) {
     const query = searchParams?.q || ''
-    const words = await searchWords(query)
+    const lang = searchParams?.lang && searchParams.lang !== 'all' ? searchParams.lang : undefined
+
+    const words = await searchWords(query, lang)
 
     return (
         <main className="min-h-screen bg-amber-50/30 py-12 px-4">
@@ -32,6 +35,7 @@ export default async function DictionaryPage({ searchParams }: DictionaryPagePro
                     {query && (
                         <p className="mb-6 text-gray-500 text-sm">
                             Found {words.length} result(s) for <span className="font-bold text-gray-800">&quot;{query}&quot;</span>
+                            {lang && <span className="text-gray-400"> (Filtered by {lang})</span>}
                         </p>
                     )}
 
@@ -44,7 +48,7 @@ export default async function DictionaryPage({ searchParams }: DictionaryPagePro
                     ) : query ? (
                         <div className="text-center py-20 bg-white rounded-lg border border-dashed border-gray-300">
                             <p className="text-gray-500">No definitions found for &quot;{query}&quot;.</p>
-                            <p className="text-sm text-gray-400 mt-1">Try using the Sanskrit root word.</p>
+                            <p className="text-sm text-gray-400 mt-1">Try using the Sanskrit root word or changing the language filter.</p>
                         </div>
                     ) : (
                         <div className="text-center py-10 text-gray-400 italic">

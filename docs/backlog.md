@@ -23,31 +23,6 @@
 ---
 
 **MILESTONE [1]** | **PHASE [4]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [401]: setup pg_trgm extension for fuzzy search** | [TODO] | [Database]
-**SPEC:** execute sql: `CREATE EXTENSION IF NOT EXISTS pg_trgm;`. build gist index on primary text columns (e.g., `title`, `content`) for ultra-fast `ILIKE` pattern matching.
-
----
-
-**MILESTONE [1]** | **PHASE [4]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [402]: refactor searchwords service to fuzzy matching** | [TODO] | [Backend]
-**SPEC:** update the `searchWords` database function to leverage the similarity (`%`) operator or explicit trigram matching. return sorted result set ordered by similarity score.
-
----
-
-**MILESTONE [1]** | **PHASE [4]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [403]: implement debounced auto-complete dropdown** | [TODO] | [UI/UX]
-**SPEC:** implement custom hook `useDebounce(val, 300)`. build client component wrapping search input. on debounce trigger, fetch fuzzy results via server action and render dropdown absolute menu below input.
-
----
-
-**MILESTONE [1]** | **PHASE [4]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [404]: search filters for specific languages** | [TODO] | [Backend]
-**SPEC:** add `language_code` enum param to `searchWords`. modify the where clause to optionally filter by `language = 'hi' | 'en' | 'mr'` based on frontend state dropdown.
-
----
-
-**MILESTONE [1]** | **PHASE [4]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [405]: advanced root word search using stemming** | [TODO] | [Database]
 **SPEC:** setup postgres full text search (fts) dictionary using generic stemming. build `tsvector` generated column derived from parsed content. expose search function querying against `tsquery`.
 
 ---
