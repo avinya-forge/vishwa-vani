@@ -15,10 +15,6 @@
 ---
 
 **MILESTONE [1]** | **PHASE [3]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [304]: upvote/reaction schema and server action** | [TODO] | [Database]
-**SPEC:** establish `reactions` table mapping `entity_id`, `reaction_type` (e.g., UPVOTE), and `user_id`. build server action `toggleReaction` to upsert/delete row based on current state.
-
----
 
 **MILESTONE [1]** | **PHASE [3]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
 **TASK [305]: configure row level security for user edits** | [TODO] | [Security]

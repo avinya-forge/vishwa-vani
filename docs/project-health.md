@@ -1,4 +1,4 @@
-buffer-status: green
+buffer-status: yellow
 resource-bottlenecks: none
 tech-debt-ratio: 2-percent
 test-coverage: 95-percent
