@@ -114,3 +114,30 @@ with check (auth.uid() = user_id);
 create policy "Users can delete their own comments"
 on public.comments for delete
 using (auth.uid() = user_id);
+
+-- Reactions Table: Upvotes/Reactions on entities
+create table public.reactions (
+  id uuid default uuid_generate_v4() primary key,
+  entity_id uuid not null,
+  user_id uuid references auth.users on delete cascade not null,
+  reaction_type text not null,
+  created_at timestamp with time zone default timezone('utc'::text, now()) not null,
+  unique (entity_id, user_id, reaction_type)
+);
+
+-- Enable Row Level Security (RLS) for reactions
+alter table public.reactions enable row level security;
+
+-- Create Policies for Reactions
+create policy "Allow public read access on reactions"
+on public.reactions for select
+using (true);
+
+create policy "Authenticated users can create reactions"
+on public.reactions for insert
+to authenticated
+with check (auth.uid() = user_id);
+
+create policy "Users can delete their own reactions"
+on public.reactions for delete
+using (auth.uid() = user_id);
