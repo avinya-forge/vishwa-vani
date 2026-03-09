@@ -9,14 +9,6 @@
 ---
 
 **MILESTONE [1]** | **PHASE [3]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [303]: add comment form with optimistic ui** | [TODO] | [UI/UX]
-**SPEC:** build client component `<CommentForm>`. utilize React 19 `useOptimistic` hook to immediately push the submitted string into the list visually before calling the `insertComment` server action.
-
----
-
-**MILESTONE [1]** | **PHASE [3]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-
-**MILESTONE [1]** | **PHASE [3]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
 **TASK [305]: configure row level security for user edits** | [TODO] | [Security]
 **SPEC:** write raw sql migration to apply `CREATE POLICY` statements on `posts` and `comments`. enforce `auth.uid() = user_id` for `UPDATE` and `DELETE` commands. apply schema changes via supabase dashboard/cli.
 
