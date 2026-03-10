@@ -17,3 +17,14 @@ The Next.js 16.1.6 setup with ESLint 9 using `@eslint/eslintrc` `FlatCompat` res
 The current `eslint-config-next@16.1.6` legacy config object does not correctly map to ESLint 9's Flat Config expectations when using the `FlatCompat` adapter, or without it. We need architectural clarification on whether to drop `eslint-config-next` and build a manual flat config for Next.js/React/TypeScript, or if there's a specific undocumented setup for Next.js 16 with ESLint 9.
 
 Following the Stall Protocol, we are pausing further arbitrary modifications to `eslint.config.mjs` to avoid regressions and waiting for explicit instruction. Other minor linting errors within the codebase have been fixed successfully.
+## Missing `posts` table for TASK [305]
+
+**Date:** 2026-03-07
+**Task:** [305]: configure row level security for user edits
+
+**Context:**
+The specification for TASK 305 says "write raw sql migration to apply CREATE POLICY statements on posts and comments. enforce auth.uid() = user_id for UPDATE and DELETE commands."
+However, there is no `posts` table anywhere in the application's database schema (`sql/schema.sql` or `sql/setup_all.sql`), and there is no trace of it in the application code. It seems `posts` may have been a planned feature (TASK-201 to 206) but the table wasn't created or it was removed, or the terminology might refer to `shlokas` (which do not have a `user_id` and are not user-editable).
+
+**Action Taken:**
+Following the Stall Protocol, I have documented this upstream dependency issue. I have proceeded to create the SQL migration specifically for the `comments` table as requested in the task spec, but skipped `posts` since the table does not exist.
