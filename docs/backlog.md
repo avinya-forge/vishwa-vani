@@ -15,6 +15,7 @@
 ---
 
 **MILESTONE [1]** | **PHASE [4]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
+**TASK [401]: setup postgres fts for dictionary** | [DONE] | [Database]
 **SPEC:** setup postgres full text search (fts) dictionary using generic stemming. build `tsvector` generated column derived from parsed content. expose search function querying against `tsquery`.
 
 ---
