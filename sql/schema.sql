@@ -141,3 +141,12 @@ with check (auth.uid() = user_id);
 create policy "Users can delete their own reactions"
 on public.reactions for delete
 using (auth.uid() = user_id);
+
+-- FTS tsvector generated column for dictionary
+ALTER TABLE public.dictionary
+ADD COLUMN IF NOT EXISTS fts_vector tsvector
+GENERATED ALWAYS AS (
+  to_tsvector('english', coalesce(root_word, '') || ' ' || coalesce(meaning_en, '') || ' ' || coalesce(meaning_hi, '') || ' ' || coalesce(meaning_mr, ''))
+) STORED;
+
+CREATE INDEX IF NOT EXISTS fts_idx_dictionary ON public.dictionary USING GIN (fts_vector);
