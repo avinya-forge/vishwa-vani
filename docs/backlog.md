@@ -1,22 +1,16 @@
 # vishwa-vani backlog
 
-*metrics: 12 epics (120 wu) + 60 atomic tasks (60 wu) = 180 total work units (wu). exactly 60 tasks execution density.*
+*metrics: 12 epics (120 wu) + 59 atomic tasks (59 wu) = 179 total work units (wu). exactly 59 tasks execution density.*
 
 ## summary of refinement
 - **breadth-then-depth applied:** tasks have been formatted into granular, ai-ready schemas.
-- **delta cap enforced:** refined exactly 60 top-priority tasks, dropping extraneous items to adhere to max 60-task density.
+- **delta cap enforced:** refined exactly 59 top-priority tasks.
 
 ---
 
 **MILESTONE [1]** | **PHASE [3]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
 **TASK [305]: configure row level security for user edits** | [TODO] | [Security]
 **SPEC:** write raw sql migration to apply `CREATE POLICY` statements on `posts` and `comments`. enforce `auth.uid() = user_id` for `UPDATE` and `DELETE` commands. apply schema changes via supabase dashboard/cli.
-
----
-
-**MILESTONE [1]** | **PHASE [4]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [401]: setup postgres fts for dictionary** | [DONE] | [Database]
-**SPEC:** setup postgres full text search (fts) dictionary using generic stemming. build `tsvector` generated column derived from parsed content. expose search function querying against `tsquery`.
 
 ---
 
