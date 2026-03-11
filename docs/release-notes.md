@@ -1,8 +1,16 @@
 # Vishwa-Vani Release Archive
 
 *Current Session ID*: VANI-6
-*Last Action*: Processed TASK-303
+*Last Action*: Processed TASK-401
 
+## [v0.4.4] - Fuzzy Search Integration
+*   **Epic Archived**: Database & Search (partial).
+*   **Notes**: Completed Phase 4 backlog items for fuzzy matching and language filtering. Flagged as [RISKY_REFACTOR].
+*   **Completed Work**:
+    *   [x] TASK-401: setup postgres fts for dictionary
+    *   [x] TASK-402: refactor searchwords service to fuzzy matching
+    *   [x] TASK-403: implement debounced auto-complete dropdown
+    *   [x] TASK-404: search filters for specific languages
 
 ## [v0.4.3] - Comment Form with Optimistic UI
 *   **Epic Archived**: UI/UX (partial).
@@ -70,12 +78,3 @@
 ## [v0.1.0] - Alpha Genesis
 *   **Epic Archived**: Concept initialization.
 *   **Notes**: The foundational repository structure was instantiated. Initial Next.js template generated.
-
-## [v0.4.3] - Fuzzy Search Integration
-*   **Epic Archived**: Database & Search (partial).
-*   **Notes**: Completed Phase 4 backlog items for fuzzy matching and language filtering.
-*   **Completed Work**:
-    *   [x] TASK-401: setup pg_trgm extension for fuzzy search
-    *   [x] TASK-402: refactor searchwords service to fuzzy matching
-    *   [x] TASK-403: implement debounced auto-complete dropdown
-    *   [x] TASK-404: search filters for specific languages
