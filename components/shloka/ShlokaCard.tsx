@@ -3,9 +3,11 @@
 import { Shloka } from '@/utils/services/shloka'
 import WordSpan from './WordSpan'
 import SaveToCollectionMenu from './SaveToCollectionMenu'
+import AudioPlayer from './AudioPlayer'
 
 interface ShlokaCardProps {
     shloka: Shloka
+    audioUrl?: string
 }
 
 interface WordMapping {
@@ -13,7 +15,7 @@ interface WordMapping {
     word_id_ref?: string
 }
 
-export default function ShlokaCard({ shloka }: ShlokaCardProps) {
+export default function ShlokaCard({ shloka, audioUrl }: ShlokaCardProps) {
     // Parse the JSONB safely
     const words = (shloka.word_mapping as unknown as WordMapping[]) || []
 
@@ -43,6 +45,8 @@ export default function ShlokaCard({ shloka }: ShlokaCardProps) {
                     <p>{shloka.sanskrit_text}</p>
                 )}
             </div>
+
+            {audioUrl && <AudioPlayer src={audioUrl} />}
 
             <div className="text-center">
                 {/* Placeholder for English Translation of the whole verse if we add that column later */}

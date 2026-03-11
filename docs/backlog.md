@@ -21,13 +21,13 @@
 ---
 
 **MILESTONE [1]** | **PHASE [5]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [502]: design minimalist audio player component** | [TODO] | [UI/UX]
+**TASK [502]: design minimalist audio player component** | [DONE] | [UI/UX]
 **SPEC:** build custom react component wrapping html5 `<audio>`. implement play, pause, progress bar, and volume controls utilizing standard tailwind icons. ensure aria labels for a11y.
 
 ---
 
 **MILESTONE [1]** | **PHASE [5]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [503]: integrate audio player into shlokacard** | [TODO] | [UI/UX]
+**TASK [503]: integrate audio player into shlokacard** | [DONE] | [UI/UX]
 **SPEC:** update `<ShlokaCard>` component to accept optional `audioUrl` prop. render audio player conditionally directly beneath the transliteration text block.
 
 ---
