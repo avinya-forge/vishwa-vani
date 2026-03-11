@@ -15,7 +15,7 @@
 ---
 
 **MILESTONE [1]** | **PHASE [5]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [501]: setup supabase storage bucket audio_files** | [TODO] | [Database]
+**TASK [501]: setup supabase storage bucket audio_files** | [DONE] | [Database]
 **SPEC:** create public storage bucket named `audio_files`. define rls policies allowing public read access, but restricting insert/update/delete to authenticated admins.
 
 ---
