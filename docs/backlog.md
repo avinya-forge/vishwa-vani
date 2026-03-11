@@ -1,34 +1,16 @@
 # vishwa-vani backlog
 
-*metrics: 12 epics (120 wu) + 59 atomic tasks (59 wu) = 179 total work units (wu). exactly 59 tasks execution density.*
+*metrics: 12 epics (120 wu) + 56 atomic tasks (56 wu) = 176 total work units (wu). exactly 56 tasks execution density.*
 
 ## summary of refinement
 - **breadth-then-depth applied:** tasks have been formatted into granular, ai-ready schemas.
-- **delta cap enforced:** refined exactly 59 top-priority tasks.
+- **delta cap enforced:** refined exactly 56 top-priority tasks.
 
 ---
 
 **MILESTONE [1]** | **PHASE [3]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
 **TASK [305]: configure row level security for user edits** | [TODO] | [Security]
 **SPEC:** write raw sql migration to apply `CREATE POLICY` statements on `posts` and `comments`. enforce `auth.uid() = user_id` for `UPDATE` and `DELETE` commands. apply schema changes via supabase dashboard/cli.
-
----
-
-**MILESTONE [1]** | **PHASE [5]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [501]: setup supabase storage bucket audio_files** | [DONE] | [Database]
-**SPEC:** create public storage bucket named `audio_files`. define rls policies allowing public read access, but restricting insert/update/delete to authenticated admins.
-
----
-
-**MILESTONE [1]** | **PHASE [5]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [502]: design minimalist audio player component** | [DONE] | [UI/UX]
-**SPEC:** build custom react component wrapping html5 `<audio>`. implement play, pause, progress bar, and volume controls utilizing standard tailwind icons. ensure aria labels for a11y.
-
----
-
-**MILESTONE [1]** | **PHASE [5]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [503]: integrate audio player into shlokacard** | [DONE] | [UI/UX]
-**SPEC:** update `<ShlokaCard>` component to accept optional `audioUrl` prop. render audio player conditionally directly beneath the transliteration text block.
 
 ---
 

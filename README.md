@@ -2,13 +2,13 @@
 
 > **North Star:** To orchestrate a transcendent and friction-free digital sanctuary for exploring Vedic wisdom. Vishwa-Vani must provide an immersive, highly performant, and deeply interconnected experience of Shlokas, Mantras, and Sanskrit definitions across languages (English, Hindi, Marathi).
 
-[![Version](https://img.shields.io/badge/version-v0.4.1-blue.svg)](./docs/release-notes.md)
+[![Version](https://img.shields.io/badge/version-v0.4.5-blue.svg)](./docs/release-notes.md)
 
 ## Pulse
 
 | Milestone | Version | Phase | Status | Tech Debt | Backlog Density |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| M1 | v0.4.1 | 3 | In Progress | 0% | 59 |
+| M1 | v0.4.5 | 5 | In Progress | 5-percent | 56 |
 
 ## Documentation Map
 
@@ -18,12 +18,12 @@
 - 📏 [docs/standards/ultra-lean.md](./docs/standards/ultra-lean.md)
 - 🧠 [docs/rules/habits.md](./docs/rules/habits.md)
 - 🧹 [docs/rules/hygiene.md](./docs/rules/hygiene.md)
-- 🩺 [docs/system-health.md](./docs/system-health.md)
+- 🩺 [docs/project-health.md](./docs/project-health.md)
 - 📑 [docs/swagger.yaml](./docs/swagger.yaml)
 
 ## Quick Start
 
-**Active Milestone:** We are currently in Phase 3 (Community & Social Engagement). We have established Next.js 16 Foundation, setup the database, built basic feed/dictionary logic, and are moving onto adding robust community features.
+**Active Milestone:** We are currently in Phase 5 (Audio Features). We have established Next.js 16 Foundation, setup the database, built basic feed/dictionary logic, and are moving onto adding robust community features.
 
 To run the application locally:
 ```bash

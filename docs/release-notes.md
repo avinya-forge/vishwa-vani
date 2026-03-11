@@ -1,7 +1,15 @@
 # Vishwa-Vani Release Archive
 
 *Current Session ID*: VANI-6
-*Last Action*: Processed TASK-401
+*Last Action*: Processed TASK-503
+
+## [v0.4.5] - Audio Player Integration
+*   **Epic Archived**: Audio Features (partial).
+*   **Notes**: Completed Phase 5 backlog items for basic audio playback and UI components.
+*   **Completed Work**:
+    *   [x] TASK-501: setup supabase storage bucket audio_files
+    *   [x] TASK-502: design minimalist audio player component
+    *   [x] TASK-503: integrate audio player into shlokacard
 
 ## [v0.4.4] - Fuzzy Search Integration
 *   **Epic Archived**: Database & Search (partial).
