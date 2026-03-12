@@ -321,3 +321,8 @@
 ---
 
 ---
+
+**TASK [TEST-101-EXPANDED]: automated granular task** | [TODO] | [Expanded]
+**SPEC:** expanded task for TEST-101.
+- [RESOLVE] Updated user endpoint logic
+- [HIGH-RISK] Added DB migration for new user fields
