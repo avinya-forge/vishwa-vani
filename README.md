@@ -1,16 +1,16 @@
 # Vishwa-Vani
 
-> **North Star:** To orchestrate a transcendent and friction-free digital sanctuary for exploring Vedic wisdom. Vishwa-Vani must provide an immersive, highly performant, and deeply interconnected experience of Shlokas, Mantras, and Sanskrit definitions across languages (English, Hindi, Marathi).
+> **Hook:** To orchestrate a transcendent and friction-free digital sanctuary for exploring Vedic wisdom. Vishwa-Vani must provide an immersive, highly performant, and deeply interconnected experience of Shlokas, Mantras, and Sanskrit definitions across languages (English, Hindi, Marathi).
 
 [![Version](https://img.shields.io/badge/version-v0.4.1-blue.svg)](./docs/release/release-notes.md)
 
 ## Pulse
 
-| Milestone | Version | Phase | Status | Debt% | Backlog Density |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| M1 | v0.4.1 | 3 | In Progress | 0% | 59 |
+| Milestone | Ver | Phase | Status | Debt% |
+| :--- | :--- | :--- | :--- | :--- |
+| M1 | v0.4.1 | 3 | In Progress | 0% |
 
-## Documentation Map
+## Visual-Index
 
 - 📜 [docs/architecture/vision.md](./docs/architecture/vision.md)
 - 🗺️ [docs/planning/backlog.md](./docs/planning/backlog.md)
