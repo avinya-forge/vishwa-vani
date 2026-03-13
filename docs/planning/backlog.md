@@ -330,3 +330,8 @@
 **SPEC:** expanded task for TEST-101.
 - [RESOLVE] Updated user endpoint logic
 - [HIGH-RISK] Added DB migration for new user fields
+
+---
+
+**EPIC [NEW]: Resolve ESLint 9 Circular JSON Bug** | [TODO] | [RESOLVE]
+**SPEC:** Address Next.js 16.1.6 ESLint 9 FlatCompat bug.
