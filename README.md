@@ -13,7 +13,9 @@
 ## Visual-Index
 
 - 📜 [docs/architecture/vision.md](./docs/architecture/vision.md)
+- 📜 [docs/architecture/system-design.md](./docs/architecture/system-design.md)
 - 🗺️ [docs/planning/backlog.md](./docs/planning/backlog.md)
+- 🗺️ [docs/planning/roadmap.md](./docs/planning/roadmap.md)
 - 🗺️ [docs/planning/map.md](./docs/planning/map.md)
 - 🗺️ [docs/planning/doubts.md](./docs/planning/doubts.md)
 - 📦 [docs/release/release-notes.md](./docs/release/release-notes.md)
@@ -23,6 +25,7 @@
 - 🧠 [docs/rules/habits.md](./docs/rules/habits.md)
 - 🧹 [docs/rules/hygiene.md](./docs/rules/hygiene.md)
 - 📑 [docs/architecture/arch.yaml](./docs/architecture/arch.yaml)
+- 🛠️ [docs/engineering/conventions.md](./docs/engineering/conventions.md)
 
 ## Quick Start
 
