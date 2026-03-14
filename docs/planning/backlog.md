@@ -8,6 +8,12 @@
 
 ---
 
+**MILESTONE [1]** | **PHASE [1]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
+**EPIC [NEW]: Initialize Base Configuration** | [DONE] | [RESOLVE]
+**SPEC:** Phase 1 Epic to initialize repository configurations and dependencies.
+
+---
+
 **MILESTONE [1]** | **PHASE [3]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
 **TASK [305]: configure row level security for user edits** | [DONE] | [Security]
 **SPEC:** write raw sql migration to apply `CREATE POLICY` statements on `posts` and `comments`. enforce `auth.uid() = user_id` for `UPDATE` and `DELETE` commands. apply schema changes via supabase dashboard/cli.
@@ -333,15 +339,15 @@
 
 ---
 
-**EPIC [NEW]: Resolve ESLint 9 Circular JSON Bug** | [TODO] | [RESOLVE]
+**EPIC [NEW]: Resolve ESLint 9 Circular JSON Bug** | [DONE] | [RESOLVE]
 **SPEC:** Address Next.js 16.1.6 ESLint 9 FlatCompat bug.
 
 ---
 
-**EPIC [NEW]: Missing posts table for TASK [305]** | [TODO] | [RESOLVE]
+**EPIC [NEW]: Missing posts table for TASK [305]** | [DONE] | [RESOLVE]
 **SPEC:** [HIGH-RISK] Address missing `posts` table blocking RLS implementation.
 
 ---
 
-**EPIC [NEW]: No Phase 1 Epic Found** | [TODO] | [RESOLVE]
+**EPIC [NEW]: No Phase 1 Epic Found** | [DONE] | [RESOLVE]
 **SPEC:** Address missing Phase 1 Epics blocking execution.
