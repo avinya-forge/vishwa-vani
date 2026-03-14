@@ -335,3 +335,13 @@
 
 **EPIC [NEW]: Resolve ESLint 9 Circular JSON Bug** | [TODO] | [RESOLVE]
 **SPEC:** Address Next.js 16.1.6 ESLint 9 FlatCompat bug.
+
+---
+
+**EPIC [NEW]: Missing posts table for TASK [305]** | [TODO] | [RESOLVE]
+**SPEC:** [HIGH-RISK] Address missing `posts` table blocking RLS implementation.
+
+---
+
+**EPIC [NEW]: No Phase 1 Epic Found** | [TODO] | [RESOLVE]
+**SPEC:** Address missing Phase 1 Epics blocking execution.
