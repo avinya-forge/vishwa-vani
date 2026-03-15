@@ -82,6 +82,38 @@ with check (
   )
 );
 
+-- Posts Table: User posts
+create table public.posts (
+  id uuid default uuid_generate_v4() primary key,
+  user_id uuid references auth.users not null,
+  created_at timestamp with time zone default timezone('utc'::text, now()) not null,
+  updated_at timestamp with time zone default timezone('utc'::text, now()) not null
+);
+
+-- Enable Row Level Security (RLS) for posts
+alter table public.posts enable row level security;
+
+-- Create Policies for Posts
+create policy "Allow public read access on posts"
+on public.posts for select
+to anon
+using (true);
+
+create policy "Authenticated users can create posts"
+on public.posts for insert
+to authenticated
+with check (auth.uid() = user_id);
+
+create policy "Users can update their own posts"
+on public.posts for update
+using (auth.uid() = user_id)
+with check (auth.uid() = user_id);
+
+create policy "Users can delete their own posts"
+on public.posts for delete
+using (auth.uid() = user_id);
+
+
 -- Comments Table: User comments on shlokas
 create table public.comments (
   id uuid default uuid_generate_v4() primary key,

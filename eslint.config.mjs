@@ -1,7 +1,18 @@
-import eslintConfigNextCoreWebVitals from "eslint-config-next/core-web-vitals";
+import nextPlugin from "@next/eslint-plugin-next";
 
 const eslintConfig = [
-  ...eslintConfigNextCoreWebVitals,
+  {
+    ignores: [".next/**", "out/**", "build/**", "node_modules/**"],
+  },
+  {
+    plugins: {
+      "@next/next": nextPlugin,
+    },
+    rules: {
+      ...nextPlugin.configs.recommended.rules,
+      ...nextPlugin.configs["core-web-vitals"].rules,
+    },
+  },
 ];
 
 export default eslintConfig;
