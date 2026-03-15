@@ -72,6 +72,7 @@ export interface Database {
                     verse_index: number
                     sanskrit_text: string
                     word_mapping: Json // Array of { original_word: string, word_id_ref?: string }
+                    lyric_timestamps: Json
                     created_at: string
                 }
                 Insert: {
@@ -81,6 +82,7 @@ export interface Database {
                     verse_index: number
                     sanskrit_text: string
                     word_mapping?: Json
+                    lyric_timestamps?: Json
                     created_at?: string
                 }
                 Update: {
@@ -90,6 +92,7 @@ export interface Database {
                     verse_index?: number
                     sanskrit_text?: string
                     word_mapping?: Json
+                    lyric_timestamps?: Json
                     created_at?: string
                 }
             }

@@ -39,7 +39,7 @@
 ---
 
 **MILESTONE [1]** | **PHASE [5]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [504]: metadata schema for lyric timestamps** | [TODO] | [Database]
+**TASK [504]: metadata schema for lyric timestamps** | [DONE] | [Database]
 **SPEC:** add JSONB column `lyric_timestamps` to `shlokas` table mapping `{ timestamp_ms: number, word_index: number }`. return payload in standard shloka query.
 
 ---
