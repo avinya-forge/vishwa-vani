@@ -44,6 +44,7 @@ create table public.shlokas (
   verse_index integer not null,
   sanskrit_text text not null,
   word_mapping jsonb default '[]'::jsonb,
+  lyric_timestamps jsonb default '[]'::jsonb,
   created_at timestamp with time zone default timezone('utc'::text, now()) not null
 );
 
