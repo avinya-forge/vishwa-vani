@@ -78,7 +78,14 @@ export default function AudioPlayer({ src }: AudioPlayerProps) {
 
     return (
         <div className="flex flex-col items-center justify-center w-full max-w-md mx-auto mt-6 p-4 bg-white/50 rounded-lg shadow-sm border border-orange-100">
-            <audio ref={audioRef} src={src} preload="metadata" />
+            {/*
+              TASK [505]: Implement progressive audio loading.
+              By explicitly defining preload="metadata", we instruct the browser
+              to utilize JS streams/HTTP range requests to fetch only the track
+              duration and essential headers. This defers heavy audio download
+              until the user initiates a play event.
+            */}
+            <audio ref={audioRef} src={src} preload="metadata" controlsList="nodownload" />
 
             <div className="flex items-center w-full gap-4 mb-2">
                 <button
