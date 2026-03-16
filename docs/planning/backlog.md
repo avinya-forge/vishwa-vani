@@ -51,7 +51,7 @@
 ---
 
 **MILESTONE [1]** | **PHASE [6]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [601]: enforce admin role middleware** | [TODO] | [Security]
+**TASK [601]: enforce admin role middleware** | [DONE] | [Security]
 **SPEC:** update `middleware.ts`. intercept requests to `/admin/*`. check supabase auth session for custom claim or user role mapping. redirect unauthorized traffic to `/`.
 
 ---
