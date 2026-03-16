@@ -46,6 +46,19 @@ export async function updateSession(request: NextRequest) {
     // return NextResponse.redirect(url)
   }
 
+  // Intercept requests to /admin/*
+  if (request.nextUrl.pathname.startsWith('/admin')) {
+    const isAdmin =
+      user?.app_metadata?.role === 'admin' ||
+      user?.user_metadata?.role === 'admin'
+
+    if (!isAdmin) {
+      const url = request.nextUrl.clone()
+      url.pathname = '/'
+      return NextResponse.redirect(url)
+    }
+  }
+
   // IMPORTANT: You *must* return the supabaseResponse object as it is. If you're
   // creating a new response object with NextResponse.next() make sure to:
   // 1. Pass the request in it, like so:
