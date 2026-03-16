@@ -45,7 +45,7 @@
 ---
 
 **MILESTONE [1]** | **PHASE [5]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [505]: progressive audio loading implementation** | [TODO] | [Performance]
+**TASK [505]: progressive audio loading implementation** | [DONE] | [Performance]
 **SPEC:** implement standard `preload="metadata"` on audio elements. utilize js streams/range requests where applicable to defer heavy audio download until user initiates play event.
 
 ---
