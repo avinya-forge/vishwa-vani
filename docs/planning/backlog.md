@@ -57,11 +57,11 @@
 ---
 
 **MILESTONE [1]** | **PHASE [6]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [602]: [NEEDS-SPLIT] build markdown-based text editor** | [TODO] | [UI/UX]
-**SPEC:** [NEEDS-SPLIT]
-  - **[ ] TASK:** build react-markdown core layout (< 50 LOC)
-  - **[ ] TASK:** bind split-pane synchronization state (< 50 LOC)
-  - **[ ] TASK:** implement raw html rendered output block (< 50 LOC)
+**TASK [602]: build markdown-based text editor** | [DONE] | [UI/UX]
+**SPEC:** [SPLIT-RESOLVED]
+  - **[x] TASK:** build react-markdown core layout (< 50 LOC)
+  - **[x] TASK:** bind split-pane synchronization state (< 50 LOC)
+  - **[x] TASK:** implement raw html rendered output block (< 50 LOC)
 **SPEC:** integrate lightweight react-markdown library. implement split-pane layout: raw text area on left, real-time rendered html output on right. hook up state binding.
 
 ---
