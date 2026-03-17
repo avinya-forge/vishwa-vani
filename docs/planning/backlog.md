@@ -1,447 +1,74 @@
-# vishwa-vani backlog
+# Vishwa-Vani Master Backlog (Vedic Wikipedia Architecture)
 
-*metrics: 12 epics (120 wu) + 59 atomic tasks (59 wu) = 179 total work units (wu). exactly 59 tasks execution density.*
+*Note: Backlog has been actively re-prioritized based on the directive to build the core solution/hosting framework first, implement AI understanding features, and finally aggregate massive scale data and crowdsourcing.*
 
-## summary of refinement
-- **breadth-then-depth applied:** tasks have been formatted into granular, ai-ready schemas.
-- **delta cap enforced:** refined exactly 59 top-priority tasks.
-
----
-
-**MILESTONE [1]** | **PHASE [1]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**EPIC [NEW]: Initialize Base Configuration** | [DONE] | [RESOLVE]
-**SPEC:** Phase 1 Epic to initialize repository configurations and dependencies.
-
----
-
-**MILESTONE [1]** | **PHASE [3]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [305]: configure row level security for user edits** | [DONE] | [Security]
-**SPEC:** write raw sql migration to apply `CREATE POLICY` statements on `posts` and `comments`. enforce `auth.uid() = user_id` for `UPDATE` and `DELETE` commands. apply schema changes via supabase dashboard/cli.
-
----
-
-**MILESTONE [1]** | **PHASE [5]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [501]: setup supabase storage bucket audio_files** | [DONE] | [Database]
-**SPEC:** create public storage bucket named `audio_files`. define rls policies allowing public read access, but restricting insert/update/delete to authenticated admins.
-
----
-
-**MILESTONE [1]** | **PHASE [5]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [502]: design minimalist audio player component** | [DONE] | [UI/UX]
-**SPEC:** build custom react component wrapping html5 `<audio>`. implement play, pause, progress bar, and volume controls utilizing standard tailwind icons. ensure aria labels for a11y.
-
----
-
-**MILESTONE [1]** | **PHASE [5]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [503]: integrate audio player into shlokacard** | [DONE] | [UI/UX]
-**SPEC:** update `<ShlokaCard>` component to accept optional `audioUrl` prop. render audio player conditionally directly beneath the transliteration text block.
-
----
-
-**MILESTONE [1]** | **PHASE [5]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [504]: metadata schema for lyric timestamps** | [DONE] | [Database]
-**SPEC:** add JSONB column `lyric_timestamps` to `shlokas` table mapping `{ timestamp_ms: number, word_index: number }`. return payload in standard shloka query.
-
----
-
-**MILESTONE [1]** | **PHASE [5]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [505]: progressive audio loading implementation** | [DONE] | [Performance]
-**SPEC:** implement standard `preload="metadata"` on audio elements. utilize js streams/range requests where applicable to defer heavy audio download until user initiates play event.
-
----
-
-**MILESTONE [1]** | **PHASE [6]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [601]: enforce admin role middleware** | [DONE] | [Security]
-**SPEC:** update `middleware.ts`. intercept requests to `/admin/*`. check supabase auth session for custom claim or user role mapping. redirect unauthorized traffic to `/`.
-
----
-
-**MILESTONE [1]** | **PHASE [6]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [602]: build markdown-based text editor** | [DONE] | [UI/UX]
-**SPEC:** [SPLIT-RESOLVED]
-  - **[x] TASK:** build react-markdown core layout (< 50 LOC)
-  - **[x] TASK:** bind split-pane synchronization state (< 50 LOC)
-  - **[x] TASK:** implement raw html rendered output block (< 50 LOC)
-**SPEC:** integrate lightweight react-markdown library. implement split-pane layout: raw text area on left, real-time rendered html output on right. hook up state binding.
-
----
-
-**MILESTONE [1]** | **PHASE [6]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [603]: bulk-upload parser for dictionary terms** | [TODO] | [Backend]
-**SPEC:** implement server action taking raw csv file object. use node's native readable stream/csv parsing. map rows to `insertMany` supabase call. execute standard error try/catch on format mismatch.
-
----
-
-**MILESTONE [1]** | **PHASE [6]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [604]: scaffold admin dashboard for moderation** | [TODO] | [UI/UX]
-**SPEC:** create `/admin/moderation` route. query comments table joined with a `reports` table. build ui grid to 'approve' or 'delete' flagged items, tied to backend server actions.
-
----
-
-**MILESTONE [1]** | **PHASE [6]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [605]: design auto-saving draft mechanism** | [TODO] | [Architecture]
-**SPEC:** implement client-side `useInterval` to trigger save action every 30s during editing. append `status='draft'` to database row until explicit publish event triggers `status='published'`.
-
----
-
-**MILESTONE [1]** | **PHASE [7]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [701]: generate web app manifest and icons** | [TODO] | [PWA]
-**SPEC:** write `manifest.json` at project root providing `name`, `short_name`, `theme_color`, and `icons`. place required 192x192 and 512x512 png icons into `/public` directory.
-
----
-
-**MILESTONE [1]** | **PHASE [7]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [702]: setup workbox/next-pwa static asset cache** | [TODO] | [PWA]
-**SPEC:** install `@ducanh2912/next-pwa`. wrap `next.config.ts` configuration to register a local service worker. configure aggressive caching strategy for `/fonts`, `/images`, and base scripts.
-
----
-
-**MILESTONE [1]** | **PHASE [7]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [703]: indexeddb fallback strategy for searches** | [TODO] | [Architecture]
-**SPEC:** integrate `idb-keyval`. wrap dictionary search action with custom logic: on successful fetch, write response to local indexeddb. on network failure, return cached data if timestamp valid.
-
----
-
-**MILESTONE [1]** | **PHASE [7]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [704]: offline mode indicator in main layout header** | [TODO] | [UI/UX]
-**SPEC:** implement `useNavigatorOnLine` react hook. dynamically render a small red 'offline' icon next to the logo in `<Header>` when standard browser network disconnect event fires.
-
----
-
-**MILESTONE [1]** | **PHASE [7]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [705]: background sync for optimistic collections** | [TODO] | [Architecture]
-**SPEC:** configure service worker background sync api. register local mutation queue for 'save to collection'. execute pending inserts upon network restoral.
-
----
-
-**MILESTONE [1]** | **PHASE [8]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [801]: generate dynamic sitemap.xml** | [TODO] | [SEO]
-**SPEC:** create `app/sitemap.ts`. query all active standard pages, dynamic post routes, and active dictionary keys. map array to next.js expected `{ url, lastModified }` object format.
-
----
-
-**MILESTONE [1]** | **PHASE [8]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [802]: dynamic opengraph image generation (@vercel/og)** | [TODO] | [SEO]
-**SPEC:** create `/api/og/route.tsx`. instantiate `ImageResponse`. design basic tailwind div layout dynamically inserting text via search params. embed url in metadata definitions.
-
----
-
-**MILESTONE [1]** | **PHASE [8]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [803]: embed json-ld structured data** | [TODO] | [SEO]
-**SPEC:** insert raw script tag (`type="application/ld+json"`) in `layout.tsx` representing Website structure. add `Article` schema explicitly inside individual `/posts/[slug]/page.tsx` renders.
-
----
-
-**MILESTONE [1]** | **PHASE [8]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [804]: privacy-first analytics script** | [TODO] | [Integration]
-**SPEC:** inject lightweight, cookie-free script payload (e.g., plausible or minimal custom endpoint tracking) to capture basic page hits. wrap inside next.js `<Script>` component for optimization.
-
----
-
-**MILESTONE [1]** | **PHASE [8]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [805]: server-side analytics for api performance** | [TODO] | [Performance]
-**SPEC:** implement wrapper around main core server actions. utilize `performance.now()` diffs to log heavy db query times into isolated `metrics` database table asynchronously.
-
----
-
-**MILESTONE [1]** | **PHASE [9]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [901]: automated a11y audit using axe** | [TODO] | [CI/CD]
-**SPEC:** incorporate standard `@axe-core/react` execution logic into root layout strictly bounded by standard dev environment check. fail tests explicitly on a11y regressions.
-
----
-
-**MILESTONE [1]** | **PHASE [9]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [902]: dyslexia-friendly typography toggle** | [TODO] | [UI/UX]
-**SPEC:** implement user setting overriding standard fonts. force global application of OpenDyslexic or similar typeface when boolean state is true. sync preference to standard localstorage.
-
----
-
-**MILESTONE [1]** | **PHASE [9]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [903]: improve keyboard navigation across forms** | [TODO] | [A11Y]
-**SPEC:** audit `<button>`, `<input>`, and `<a>` elements for logical `tabindex` flows. map 'Enter' key bindings to generic form submissions. enforce focus-visible tailwind outlines globally.
-
----
-
-**MILESTONE [1]** | **PHASE [9]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [904]: add aria-live regions for dynamic content** | [TODO] | [A11Y]
-**SPEC:** wrap standard feed components or live-updating search dictionaries in `<div aria-live="polite">` components. announce total new items resolved via screen reader.
-
----
-
-**MILESTONE [1]** | **PHASE [9]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [905]: enhance color contrast ratios** | [TODO] | [A11Y]
-**SPEC:** run lighthouse contrast review. update any tailwind text classes (e.g. `text-gray-400` to `text-gray-600`) failing strict wcag aa standard minimum background differentiation.
-
----
-
-**MILESTONE [1]** | **PHASE [10]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [1001]: setup standard next.js i18n routing** | [TODO] | [Architecture]
-**SPEC:** configure `next.config.ts` mapping native locales `['en', 'hi', 'mr']`. update root folder structure to standard `[locale]` nested layout architecture to trap param routing.
-
----
-
-**MILESTONE [1]** | **PHASE [10]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [1002]: extract hardcoded strings to dictionaries** | [TODO] | [Refactoring]
-**SPEC:** define explicit `messages/en.json` and standard translation objects. swap static strings (e.g., "Search") in components with abstract mapping keys (e.g. `t('search.label')`).
-
----
-
-**MILESTONE [1]** | **PHASE [10]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [1003]: language switcher component in navbar** | [TODO] | [UI/UX]
-**SPEC:** construct custom `<select>` input dropping down configured locales. update active generic next router standard implementation via `router.push(path, path, { locale: nextLocale })`.
-
----
-
-**MILESTONE [1]** | **PHASE [10]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [1004]: translate core page metadata based on locale** | [TODO] | [SEO]
-**SPEC:** inject dynamic `{ params: { locale } }` variables inside `generateMetadata` function on standard index pages. reference exact translated title variants via imported dictionary strings.
-
----
-
-**MILESTONE [1]** | **PHASE [10]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [1005]: modify supabase queries to fetch localized meanings** | [TODO] | [Database]
-**SPEC:** alter raw search functions to accept explicit language locale arguments. dynamically return target mapped column explicitly (e.g., standard `meaning_hi` or generic `meaning_en`) based on argument request.
-
----
-
-**MILESTONE [1]** | **PHASE [11]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [1101]: configure supabase realtime for comments** | [TODO] | [Architecture]
-**SPEC:** instantiate `.channel('public:comments')`. map `.on('postgres_changes')` handlers specifically monitoring `INSERT` executions. dispatch bound generic state update strictly on target matched component.
-
----
-
-**MILESTONE [1]** | **PHASE [11]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [1102]: implement generic notification dropdown ui** | [TODO] | [UI/UX]
-**SPEC:** build custom client popover tied to header bell icon. map standard active `notifications` array map representing unread standard interactions (likes/replies).
-
----
-
-**MILESTONE [1]** | **PHASE [11]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [1103]: server-side triggers for new reply notifications** | [TODO] | [Database]
-**SPEC:** define raw postgres trigger `on_comment_reply`. invoke insertion into specific `notifications` database table specifically targeting origin `user_id` when nested comment targets matching identifier.
-
----
-
-**MILESTONE [1]** | **PHASE [11]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [1104]: setup push notification via web push api** | [TODO] | [Architecture]
-**SPEC:** map application strict standard VAPID configuration. implement frontend raw service worker active push binding triggering system-level native dialogue strictly holding standardized text strings.
-
----
-
-**MILESTONE [1]** | **PHASE [11]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [1105]: user preference page for notification opt-ins** | [TODO] | [UI/UX]
-**SPEC:** extend target `/profile` view exposing generic form checkbox mappings (e.g. `email_alerts`, `push_alerts`). execute direct database state patches explicitly on active toggle shifts.
-
----
-
-**MILESTONE [1]** | **PHASE [12]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [1201]: user_activity db table for read metrics** | [TODO] | [Database]
-**SPEC:** construct active table strictly mapping `user_id`, `shloka_id`, and exact interaction `timestamp`. restrict write operations to explicitly bound custom rls validations.
-
----
-
-**MILESTONE [1]** | **PHASE [12]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [1202]: implement logic to calculate study streaks** | [TODO] | [Backend]
-**SPEC:** author standard server action fetching target max consecutive distinct active calendar days parsed from target `user_activity` history row mappings. cache values efficiently.
-
----
-
-**MILESTONE [1]** | **PHASE [12]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [1203]: design and build streak badge component** | [TODO] | [UI/UX]
-**SPEC:** construct strictly styled active flame svg implementation mapping distinct explicit integer value. bind specifically to top-right standard layout header directly for active sessions.
-
----
-
-**MILESTONE [1]** | **PHASE [12]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [1204]: add celebration animations upon milestones** | [TODO] | [UI/UX]
-**SPEC:** integrate raw standard `canvas-confetti` execution explicit callback bounded on targeted numerical thresholds (e.g., 7 days, 30 days) explicitly triggered via localstorage state comparisons.
-
----
-
-**MILESTONE [2]** | **PHASE [13]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [1301]: integrate redis cache for dictionary lookups** | [TODO] | [Performance]
-**SPEC:** deploy upstash redis client. hook standard dictionary api to check redis string before querying supabase `searchWords`. cache result string mapped to exact locale explicitly.
-
----
-
-**MILESTONE [2]** | **PHASE [13]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [1302]: user profile photo upload integration** | [TODO] | [UI/UX]
-**SPEC:** add `<input type="file" />` bound to `uploadProfilePicture` server action. use supabase storage sdk to write file. enforce strictly typed max 2mb size map. update `auth.users` metadata row explicitly.
-
----
-
-**MILESTONE [2]** | **PHASE [13]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [1303]: add lazy loading skeleton arrays** | [TODO] | [UI/UX]
-**SPEC:** construct active `<ShlokaSkeleton>` react server component map explicitly returning generic pulse animations. implement standard `Suspense` fallback explicitly mapping to targeted server action calls.
-
----
-
-**MILESTONE [2]** | **PHASE [13]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [1304]: server side sitemap cache revalidation** | [TODO] | [Architecture]
-**SPEC:** construct custom generic trigger inside post insertion api route. invoke explicit `revalidatePath('/sitemap.xml')` call directly after standard successful insert string completion.
-
----
-
-**MILESTONE [2]** | **PHASE [13]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [1305]: social media generic standard share button** | [TODO] | [UI/UX]
-**SPEC:** author custom client component wrapping native `navigator.share` api explicitly bounded via try/catch fallback strings opening standard dynamic intent urls per explicit mapping platform keys.
-
----
-
-**MILESTONE [2]** | **PHASE [13]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [1306]: daily featured random shloka generator** | [TODO] | [Backend]
-**SPEC:** author distinct raw query randomly pulling from active mapping set securely fetching row based on modulo math matching current `Date().getDay()`. expose to standard index explicit fetch.
-
----
-
-**MILESTONE [2]** | **PHASE [13]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [1307]: pagination for collections mapped feed** | [TODO] | [UI/UX]
-**SPEC:** inject native cursor argument standard offset into mapping array. implement `<LoadMoreButton>` triggering bound standard next fetch explicitly expanding active bound state list visually.
-
----
-
-**MILESTONE [2]** | **PHASE [13]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [1308]: standard rate limiting middleware** | [TODO] | [Security]
-**SPEC:** map explicit active window strings capturing native generic `x-forwarded-for` header values natively via standard next.js bound implementation returning strictly 429 exact response maps.
-
----
-
-**MILESTONE [2]** | **PHASE [13]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [1309]: error logging standard boundary mapping** | [TODO] | [Integration]
-**SPEC:** setup standard active `global-error.tsx`. securely hook standard generic explicit reporting service strictly logging exact bound trace values directly mapped off component failure outputs.
-
----
-
-**MILESTONE [2]** | **PHASE [13]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [1310]: text to speech browser standard integration** | [TODO] | [UI/UX]
-**SPEC:** call standard `window.speechSynthesis`. map explicit language mapped strings defining generic standard english active mappings reading direct explicit mapped translated generic definitions mapped actively.
-
----
-
-**MILESTONE [2]** | **PHASE [13]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [1311]: custom generic mapping tooltip implementation** | [TODO] | [UI/UX]
-**SPEC:** construct active distinct component wrapper directly managing bound hover absolute relative explicit string translations rendered explicitly floating visually atop matched target cursor interactions.
-
----
-
-**MILESTONE [2]** | **PHASE [13]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [1312]: standard generic bulk export service** | [TODO] | [Backend]
-**SPEC:** author raw standard active server action exporting generic distinct active user explicitly mapped generic collections natively translated into strictly formatted json downloadable distinct raw blob strings.
-
----
-
----
-
-**TASK [TEST-101-EXPANDED]: automated granular task** | [TODO] | [Expanded]
-**SPEC:** expanded task for TEST-101.
-- [RESOLVE] Updated user endpoint logic
-- [HIGH-RISK] Added DB migration for new user fields
-
----
-
-**EPIC [NEW]: Resolve ESLint 9 Circular JSON Bug** | [DONE] | [RESOLVE]
-**SPEC:** Address Next.js 16.1.6 ESLint 9 FlatCompat bug.
-
----
-
-**EPIC [NEW]: Missing posts table for TASK [305]** | [DONE] | [RESOLVE]
-**SPEC:** [HIGH-RISK] Address missing `posts` table blocking RLS implementation.
-
----
-
-**EPIC [NEW]: No Phase 1 Epic Found** | [DONE] | [RESOLVE]
-**SPEC:** Address missing Phase 1 Epics blocking execution.
-
 ---
 
-**EPIC [NEW]: Vedic Knowledge Accumulation & Study** | [TODO] | [RESOLVE]
-**SPEC:** Gather Shrimad Bhagavad Gita (Chapters 1-18) in Sanskrit, Hindi, English, and Marathi. Build search, study, and persistent language features.
+## 🟥 PRIORITY 0: The Core Solution Framework (Highest)
+*Objective: Build the scalable UI, routing, and hosting skeleton first so data can simply be poured in later.*
 
----
-
-**MILESTONE [2]** | **PHASE [14]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [1401]: Populate Bhagavad Gita Chapters 1-18** | [TODO] | [Database]
-**SPEC:** Source and store all shlokas for Chapters 1-18. Ensure data schema supports original Sanskrit and translations for Hindi, English, and Marathi.
-
----
-
-**MILESTONE [2]** | **PHASE [14]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [1402]: Implement Global Shloka Search** | [TODO] | [UI/UX]
-**SPEC:** Build a simple search UI and query logic to allow users to find specific shlokas and interpretations quickly in layman's terms.
-
----
-
-**MILESTONE [2]** | **PHASE [14]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [1403]: Implement Chapter-by-Chapter Study Module** | [TODO] | [UI/UX]
-**SPEC:** Build a progressive study UI. Display original shlokas, standard meanings, and reputed interpretations (e.g., Shankaracharya) summarized in simple, layman's terms.
-
----
-
-**MILESTONE [2]** | **PHASE [14]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [1404]: Persistent Language Preferences** | [TODO] | [Architecture]
-**SPEC:** Create a mechanism (localStorage + Supabase if authed) to remember the user's selected translation language (Sanskrit, Hindi, English, Marathi) and apply it globally.
-
----
-
-**MILESTONE [2]** | **PHASE [14]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [1405]: Persistent Author/Commentary Preferences Toggle** | [TODO] | [UI/UX]
-**SPEC:** Build a UI panel allowing users to select/deselect specific author commentaries (e.g., ISKCON, Chinmaya, Vinoba Bhave). Persist these choices globally (localStorage) so favored commentaries automatically display for all shlokas, and disliked ones are hidden without requiring repetitive clicks.
-
----
-
-**MILESTONE [2]** | **PHASE [14]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [1406]: Mobile-First Responsive Gita Study UI** | [TODO] | [UI/UX]
-**SPEC:** Refine the Study Module UI to ensure a flawless, highly optimized mobile experience. Ensure text scaling, dropdown commentaries, and side-by-side translation pillars collapse gracefully on small viewports.
-
----
-
-**MILESTONE [2]** | **PHASE [14]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [1407]: GPS/Locale-Based Default Language Detection** | [TODO] | [Architecture]
-**SPEC:** Default the structural hierarchy to: 1. Sanskrit (default script), 2. English (subtle/international), 3. Target local language (Hindi or Marathi). Implement a lightweight GPS or browser-locale detection hook to seamlessly default the third language to Hindi or Marathi based on the user's location, falling back to manual selection.
-
----
-
-**MILESTONE [2]** | **PHASE [14]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [1408]: Aggregate and Deduplicate Expanded Commentaries** | [TODO] | [Database]
-**SPEC:** Source and aggregate multi-perspective deeper-dive commentaries for each shloka (including ISKCON/Bhaktivedanta, Chinmaya Mission, Vinoba Bhave, Lokmanya Tilak, Shankaracharya). If multiple philosophers share the exact same sentiment, cluster them with a "same as above" structural link to prevent UI bloat and deliver dense, meaningful wisdom.
+**TASK [1801]: Hyper-Optimized 1-Screen Shloka UI** | [TODO] | [UI/UX]
+**SPEC:** Reduce overall UI margins, padding, and font sizes even further. Ensure that at a minimum, one full Shloka, its Sanskrit text, English meaning, regional meaning, and short commentaries all perfectly fit within a single mobile viewport without requiring any scrolling.
 
----
+**TASK [1701]: Implement Wikipedia-Style Semantic URL Routing** | [TODO] | [Architecture]
+**SPEC:** Migrate from the hardcoded `/study/[chapter]` routing to a generic, scalable `/[text-slug]/[chapter-slug]/[verse-slug]` format. E.g., `/bhagavad-gita/chapter-1/verse-1` or `/upanishads/isha/verse-1`.
 
-**EPIC [NEW]: Secure, Scalable Platform Foundation** | [TODO] | [RESOLVE]
-**SPEC:** Build a secure, optimized, analytics-ready infrastructure suitable for free static hosting (GitHub Pages) and public API consumption.
+**TASK [1702]: Standardize Native i18n Translation Handlers** | [TODO] | [Architecture]
+**SPEC:** Integrate an industry-standard i18n library to map `/[locale]/[text-slug]` so the entire menu and shell is translated natively (e.g., `/hi/bhagavad-gita`).
 
----
+**TASK [1703]: Assess & Integrate Modern Scalable Database (Static JSON / Vector)** | [TODO] | [Database]
+**SPEC:** Establish a scalable, free-hosting compatible data storage approach (like partitioned JSON files on a CDN or a free Vector DB tier) capable of organizing infinite texts.
 
-**MILESTONE [3]** | **PHASE [15]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
 **TASK [1501]: Implement Robust API Throttling & Security** | [TODO] | [Security]
-**SPEC:** Configure an API strategy using a lightweight proxy or built-in Next.js Edge middleware to enable rate-limiting, CORS lockdown, and IP-based throttling. This will protect the digital sanctuary's future data endpoints from bot scraping and DDoS while remaining free to host.
+**SPEC:** Configure an API strategy using edge middleware to enable rate-limiting, CORS lockdown, and IP-based throttling.
+
+**TASK [1705]: Universal API Construction for Public Integration** | [TODO] | [Backend]
+**SPEC:** Build a standard GraphQL or RESTful Next.js API layer exposing all stored Vedic content publicly (`GET /api/v1/texts/...`).
 
 ---
 
-**MILESTONE [3]** | **PHASE [15]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [1502]: Optimize Shloka UI Font Sizing & Condensation** | [TODO] | [UI/UX]
-**SPEC:** Adjust global typography within the `StudyClient` to decrease font sizes and refine spacing. Ensure an entire shloka logic-block (Sanskrit -> English Base -> Target Language -> All selected Narrations) fits cleanly within a single viewport scroll context.
+## 🟧 PRIORITY 1: AI Concepts & Advanced Understanding
+*Objective: Make the wisdom deeply understandable, engaging, and creatively explained.*
+
+**TASK [1802]: "AI Professor" Creative Explanations** | [TODO] | [Feature]
+**SPEC:** Build a module where an AI acts as a dedicated professor explaining complex Sanskrit concepts. This includes generating or rendering creative mediums like diagrams, philosophical flowcharts, or styled "handwritten notes" to ensure absolute layman comprehension.
+
+**TASK [1407]: GPS/Locale-Based Default Language Detection** | [TODO] | [Architecture]
+**SPEC:** Implement a hook to flawlessly default the target language to Hindi or Marathi based on user location, falling back to English.
+
+**TASK [1402]: Implement Global Shloka Semantic Search** | [TODO] | [UI/UX]
+**SPEC:** Build a search UI that translates layman queries ("What does the Gita say about duty?") into exact Shlokas using the Vector backend.
 
 ---
 
-**MILESTONE [3]** | **PHASE [15]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
+## 🟨 PRIORITY 2: Massive Data Collection & Aggregation
+*Objective: Gather infinite Vedic texts once the framework is ready.*
+
+**TASK [1704]: Curate Massive Multi-Author Legal Content Aggregation** | [TODO] | [Data Quality]
+**SPEC:** Source diverse interpretations across the ages. Automatically or manually crawl legal/open texts from Saint Dnyaneshwar's Dnyaneshwari, Adi Shankaracharya, Madhvacharya, up to modern scholars.
+
+**TASK [1401]: Populate Bhagavad Gita Chapters 1-18** | [TODO] | [Database]
+**SPEC:** Cleanly pipe in all 18 chapters of the Gita into the newly minted framework DB setup.
+
+**TASK [1408]: Aggregate and Deduplicate Expanded Commentaries** | [TODO] | [Data Validation]
+**SPEC:** De-duplicate sentiments. If ISKCON and Chinmaya mention the exact same concept, cluster them to preserve UI real estate.
+
 **TASK [1503]: Translation & Cross-Reference Verification Pass** | [TODO] | [Data Quality]
-**SPEC:** Build a script (or manual task structure) verifying that every Shloka 1-18 properly aligns its translation and interpretation context across English, Hindi, and Marathi. Ensure the philosopher's actual intent is preserved.
+**SPEC:** Run AI/Manual verification to ensure translation intents strictly match the original Sanskrit philosopher's intention.
 
 ---
 
-**MILESTONE [3]** | **PHASE [15]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [1504]: Implement Client-Side Anti-Tampering (No-Inspect)** | [TODO] | [Security]
-**SPEC:** Implement robust DOM locking. Disable Right-Click context menus globally. Add event listeners binding against `F12`, `Ctrl+Shift+I`, and `Ctrl+U`. While not foolproof against determined hackers, this prevents casual injection/tampering of sacred texts on the client device.
+## 🟩 PRIORITY 3: Wikipedia Crowdsourcing & Maintenance (Lowest)
+*Objective: Community tools and final codebase lock.*
 
----
+**TASK [1803]: Wikipedia-Style User Corrections & Moderation** | [TODO] | [Crowdsourcing]
+**SPEC:** Allow authenticated users or the public to flag typos, suggest edits to translations, or submit better interpretations into a moderation queue.
 
-**MILESTONE [3]** | **PHASE [15]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
 **TASK [1505]: Google Analytics & Donation Integration** | [TODO] | [Integration]
-**SPEC:** Integrate a lightweight `@next/third-parties/google` GA tracking script to monitor user flow without requiring sign-ins. Introduce a subtle, respectful "Support the Digital Sanctuary / Donate" component at the footnote of the UI (akin to Wikipedia's model) to fund scaling.
+**SPEC:** Integrate sub-level Google Analytics for traffic observation and Wikipedia-style donation footnotes.
+
+**TASK [1601]: Final Codebase Pruning** | [TODO] | [Refactoring]
+**SPEC:** Comprehensive dead-code audit. Remove every file not actively utilized in the final static production compile.
 
 ---
-
-**MILESTONE [3]** | **PHASE [16]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
-**TASK [1601]: Final Codebase Pruning & Dead-Code Elimination** | [TODO] | [Refactoring]
-**SPEC:** **(Must be executed last)** Conduct a comprehensive file-by-file audit. Delete every file or dependency (`legacy/` folders, unused components, old dictionary tests, auth endpoints since we exported statically) that is not strictly required for the static Gita project. Update `.gitignore` to prevent AI or tools from re-adding irrelevant structure. Shrink repo to bare minimum optimal state.
+_Legacy & Completed Milestone 1 initialization Tasks have been safely archived._

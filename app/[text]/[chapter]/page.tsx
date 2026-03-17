@@ -4,8 +4,9 @@ import Link from 'next/link'
 import StudyClient from '@/components/shloka/StudyClient'
 
 export async function generateStaticParams() {
-  // Pre-render pages for chapters 1 through 18
+  // Pre-render pages for chapters 1 through 18 of bhagavad-gita initially
   return Array.from({ length: 18 }, (_, i) => ({
+    text: 'bhagavad-gita',
     chapter: String(i + 1),
   }))
 }
@@ -32,18 +33,22 @@ interface GitaVerse {
   sankar?: VerseAuthor
 }
 
-export default async function StudyChapterPage({ params }: { params: Promise<{ chapter: string }> }) {
-  const chapterNumber = (await params).chapter
+export default async function StudyChapterPage({ params }: { params: Promise<{ text: string, chapter: string }> }) {
+  const { text, chapter: chapterNumber } = await params
   
-  // Load data server-side
-  const dataPath = path.join(process.cwd(), 'data', `bhagavad_gita_chapter_${chapterNumber}.json`)
+  // Later we can implement logic to fetch the specific text (e.g., upanishads vs bhagavad-gita)
+  // For now, mapping directly to bhagavad-gita JSON files
+  let safeTextName = 'bhagavad_gita'
+  if (text !== 'bhagavad-gita') { safeTextName = text }
+
+  const dataPath = path.join(process.cwd(), 'data', `${safeTextName}_chapter_${chapterNumber}.json`)
   let verses: GitaVerse[] = []
   
   try {
     const rawData = fs.readFileSync(dataPath, 'utf8')
     verses = JSON.parse(rawData)
   } catch (e) {
-    console.error(`Failed to load chapter ${chapterNumber} data`, e)
+    console.error(`Failed to load text ${text} chapter ${chapterNumber} data`, e)
   }
 
   if (verses.length === 0) {
