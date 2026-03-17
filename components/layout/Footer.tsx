@@ -16,7 +16,13 @@ export default function Footer() {
                         </a>
                     </div>
                 </div>
-                <div className="mt-8 border-t border-gray-100 pt-8 text-center">
+                <div className="mt-8 border-t border-gray-100 pt-8 text-center flex flex-col items-center gap-4">
+                    <p className="max-w-xl text-sm text-stone-600 bg-stone-50 p-4 rounded-xl border border-stone-100">
+                        Vishwa-Vani is a non-profit open-source initiative. We rely on readers like you to keep the servers running and the Vedic library expanding. 
+                        <a href="https://github.com/vishwa-vani" target="_blank" rel="noopener noreferrer" className="block mt-2 font-bold text-orange-600 hover:text-orange-700 transition-colors">
+                            Support the Digital Sanctuary ☕
+                        </a>
+                    </p>
                     <p className="text-base text-gray-400">
                         &copy; {new Date().getFullYear()} Vishwa-Vani. Open Source Project.
                     </p>

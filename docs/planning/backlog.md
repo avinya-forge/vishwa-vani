@@ -351,3 +351,97 @@
 
 **EPIC [NEW]: No Phase 1 Epic Found** | [DONE] | [RESOLVE]
 **SPEC:** Address missing Phase 1 Epics blocking execution.
+
+---
+
+**EPIC [NEW]: Vedic Knowledge Accumulation & Study** | [TODO] | [RESOLVE]
+**SPEC:** Gather Shrimad Bhagavad Gita (Chapters 1-18) in Sanskrit, Hindi, English, and Marathi. Build search, study, and persistent language features.
+
+---
+
+**MILESTONE [2]** | **PHASE [14]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
+**TASK [1401]: Populate Bhagavad Gita Chapters 1-18** | [TODO] | [Database]
+**SPEC:** Source and store all shlokas for Chapters 1-18. Ensure data schema supports original Sanskrit and translations for Hindi, English, and Marathi.
+
+---
+
+**MILESTONE [2]** | **PHASE [14]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
+**TASK [1402]: Implement Global Shloka Search** | [TODO] | [UI/UX]
+**SPEC:** Build a simple search UI and query logic to allow users to find specific shlokas and interpretations quickly in layman's terms.
+
+---
+
+**MILESTONE [2]** | **PHASE [14]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
+**TASK [1403]: Implement Chapter-by-Chapter Study Module** | [TODO] | [UI/UX]
+**SPEC:** Build a progressive study UI. Display original shlokas, standard meanings, and reputed interpretations (e.g., Shankaracharya) summarized in simple, layman's terms.
+
+---
+
+**MILESTONE [2]** | **PHASE [14]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
+**TASK [1404]: Persistent Language Preferences** | [TODO] | [Architecture]
+**SPEC:** Create a mechanism (localStorage + Supabase if authed) to remember the user's selected translation language (Sanskrit, Hindi, English, Marathi) and apply it globally.
+
+---
+
+**MILESTONE [2]** | **PHASE [14]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
+**TASK [1405]: Persistent Author/Commentary Preferences Toggle** | [TODO] | [UI/UX]
+**SPEC:** Build a UI panel allowing users to select/deselect specific author commentaries (e.g., ISKCON, Chinmaya, Vinoba Bhave). Persist these choices globally (localStorage) so favored commentaries automatically display for all shlokas, and disliked ones are hidden without requiring repetitive clicks.
+
+---
+
+**MILESTONE [2]** | **PHASE [14]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
+**TASK [1406]: Mobile-First Responsive Gita Study UI** | [TODO] | [UI/UX]
+**SPEC:** Refine the Study Module UI to ensure a flawless, highly optimized mobile experience. Ensure text scaling, dropdown commentaries, and side-by-side translation pillars collapse gracefully on small viewports.
+
+---
+
+**MILESTONE [2]** | **PHASE [14]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
+**TASK [1407]: GPS/Locale-Based Default Language Detection** | [TODO] | [Architecture]
+**SPEC:** Default the structural hierarchy to: 1. Sanskrit (default script), 2. English (subtle/international), 3. Target local language (Hindi or Marathi). Implement a lightweight GPS or browser-locale detection hook to seamlessly default the third language to Hindi or Marathi based on the user's location, falling back to manual selection.
+
+---
+
+**MILESTONE [2]** | **PHASE [14]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
+**TASK [1408]: Aggregate and Deduplicate Expanded Commentaries** | [TODO] | [Database]
+**SPEC:** Source and aggregate multi-perspective deeper-dive commentaries for each shloka (including ISKCON/Bhaktivedanta, Chinmaya Mission, Vinoba Bhave, Lokmanya Tilak, Shankaracharya). If multiple philosophers share the exact same sentiment, cluster them with a "same as above" structural link to prevent UI bloat and deliver dense, meaningful wisdom.
+
+---
+
+**EPIC [NEW]: Secure, Scalable Platform Foundation** | [TODO] | [RESOLVE]
+**SPEC:** Build a secure, optimized, analytics-ready infrastructure suitable for free static hosting (GitHub Pages) and public API consumption.
+
+---
+
+**MILESTONE [3]** | **PHASE [15]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
+**TASK [1501]: Implement Robust API Throttling & Security** | [TODO] | [Security]
+**SPEC:** Configure an API strategy using a lightweight proxy or built-in Next.js Edge middleware to enable rate-limiting, CORS lockdown, and IP-based throttling. This will protect the digital sanctuary's future data endpoints from bot scraping and DDoS while remaining free to host.
+
+---
+
+**MILESTONE [3]** | **PHASE [15]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
+**TASK [1502]: Optimize Shloka UI Font Sizing & Condensation** | [TODO] | [UI/UX]
+**SPEC:** Adjust global typography within the `StudyClient` to decrease font sizes and refine spacing. Ensure an entire shloka logic-block (Sanskrit -> English Base -> Target Language -> All selected Narrations) fits cleanly within a single viewport scroll context.
+
+---
+
+**MILESTONE [3]** | **PHASE [15]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
+**TASK [1503]: Translation & Cross-Reference Verification Pass** | [TODO] | [Data Quality]
+**SPEC:** Build a script (or manual task structure) verifying that every Shloka 1-18 properly aligns its translation and interpretation context across English, Hindi, and Marathi. Ensure the philosopher's actual intent is preserved.
+
+---
+
+**MILESTONE [3]** | **PHASE [15]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
+**TASK [1504]: Implement Client-Side Anti-Tampering (No-Inspect)** | [TODO] | [Security]
+**SPEC:** Implement robust DOM locking. Disable Right-Click context menus globally. Add event listeners binding against `F12`, `Ctrl+Shift+I`, and `Ctrl+U`. While not foolproof against determined hackers, this prevents casual injection/tampering of sacred texts on the client device.
+
+---
+
+**MILESTONE [3]** | **PHASE [15]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
+**TASK [1505]: Google Analytics & Donation Integration** | [TODO] | [Integration]
+**SPEC:** Integrate a lightweight `@next/third-parties/google` GA tracking script to monitor user flow without requiring sign-ins. Introduce a subtle, respectful "Support the Digital Sanctuary / Donate" component at the footnote of the UI (akin to Wikipedia's model) to fund scaling.
+
+---
+
+**MILESTONE [3]** | **PHASE [16]** | **GATEKEEPER** [0-Hygiene-Error | 95% Test | Build-Pass]
+**TASK [1601]: Final Codebase Pruning & Dead-Code Elimination** | [TODO] | [Refactoring]
+**SPEC:** **(Must be executed last)** Conduct a comprehensive file-by-file audit. Delete every file or dependency (`legacy/` folders, unused components, old dictionary tests, auth endpoints since we exported statically) that is not strictly required for the static Gita project. Update `.gitignore` to prevent AI or tools from re-adding irrelevant structure. Shrink repo to bare minimum optimal state.
