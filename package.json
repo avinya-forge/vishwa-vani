@@ -1,6 +1,6 @@
 {
   "name": "vishwa-vani",
-  "version": "0.4.0",
+  "version": "0.4.5",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -12,9 +12,11 @@
   "dependencies": {
     "@supabase/ssr": "^0.8.0",
     "@supabase/supabase-js": "^2.95.3",
+    "@tailwindcss/typography": "^0.5.19",
     "next": "16.1.6",
     "react": "19.2.3",
     "react-dom": "19.2.3",
+    "react-markdown": "^10.1.0",
     "use-debounce": "^10.1.0"
   },
   "devDependencies": {
@@ -29,6 +31,7 @@
     "eslint": "^9",
     "eslint-config-next": "^16.1.6",
     "jest": "^30.3.0",
+    "jest-environment-jsdom": "^30.3.0",
     "tailwindcss": "^4",
     "ts-jest": "^29.4.6",
     "ts-node": "^10.9.2",
