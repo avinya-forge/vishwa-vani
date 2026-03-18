@@ -1,5 +1,5 @@
 
-> vishwa-vani@0.4.0 dev
+> vishwa-vani@0.4.5 dev
 > next dev
 
 ▲ Next.js 16.1.6 (Turbopack)
@@ -7,5 +7,35 @@
 - Network:       http://192.168.0.2:3000
 
 ✓ Starting...
-⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
-✓ Ready in 1646ms
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+✓ Ready in 993ms
+○ Compiling /[text]/[chapter] ...
+⨯ Error: Page "/[text]/[chapter]/page" is missing param "/[text]/[chapter]" in "generateStaticParams()", which is required with "output: export" config.
+    at ignore-listed frames {
+  page: '/study/1'
+}
+ GET /study/1 500 in 8.5s (compile: 8.2s, render: 308ms)
+⨯ Error: Page "/[text]/[chapter]/page" is missing param "/[text]/[chapter]" in "generateStaticParams()", which is required with "output: export" config.
+    at ignore-listed frames {
+  page: '/study/1'
+}
+ GET /study/1 500 in 593ms (compile: 580ms, render: 13ms)
+⨯ Error: Page "/[text]/[chapter]/page" is missing param "/[text]/[chapter]" in "generateStaticParams()", which is required with "output: export" config.
+    at ignore-listed frames {
+  page: '/study/1'
+}
+ GET /study/1 500 in 781ms (compile: 760ms, render: 21ms)
+⨯ Error: Page "/[text]/[chapter]/page" is missing param "/[text]/[chapter]" in "generateStaticParams()", which is required with "output: export" config.
+    at ignore-listed frames {
+  page: '/study/1'
+}
+ GET /study/1 500 in 548ms (compile: 538ms, render: 10ms)
+ GET /bhagavad-gita/1 200 in 1047ms (compile: 559ms, generate-params: 554ms, render: 488ms)
+ GET /bhagavad-gita/1 200 in 276ms (compile: 26ms, generate-params: 21ms, render: 250ms)
+ GET /bhagavad-gita/1 200 in 680ms (compile: 36ms, generate-params: 32ms, render: 644ms)
+ GET /bhagavad-gita/1 200 in 598ms (compile: 25ms, generate-params: 21ms, render: 574ms)
+ GET /bhagavad-gita/1 200 in 581ms (compile: 31ms, generate-params: 26ms, render: 550ms)

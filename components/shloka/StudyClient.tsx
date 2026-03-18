@@ -121,27 +121,27 @@ export default function StudyClient({ verses, chapterTitle }: StudyClientProps) 
     })
 
     return (
-      <div className="mt-4 pt-4 border-t border-stone-200">
+      <div className="mt-3 pt-3 border-t border-stone-200">
         <details className="group/details">
-          <summary className="cursor-pointer font-medium text-orange-600 hover:text-orange-700 flex items-center justify-center gap-2 list-none transition-colors text-xs">
+          <summary className="cursor-pointer font-medium text-orange-600 hover:text-orange-700 flex items-center justify-center gap-1 list-none transition-colors text-[10px]">
             Read Deeper Commentary
             <svg className="w-3 h-3 transition-transform duration-300 group-open/details:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
             </svg>
           </summary>
           
-          <div className="mt-4 space-y-3 sm:space-y-4 animate-in slide-in-from-top-4 fade-in duration-500">
+          <div className="mt-2 space-y-2 sm:space-y-3 animate-in slide-in-from-top-4 fade-in duration-500">
             {Array.from(uniqueMap.entries()).map(([keyText, authors], idx) => {
               const langFlag = keyText.startsWith('[en]') ? 'English' : 'Hindi'
               const actualText = keyText.substring(5) // Remove the [en] prefix
               
               return (
-                <div key={idx} className="bg-stone-50 p-3 sm:p-4 rounded-xl shadow-sm border border-stone-100/50">
-                  <h4 className="text-[9px] sm:text-[10px] font-bold text-stone-500 mb-1.5 uppercase tracking-wider">
+                <div key={idx} className="bg-stone-50 p-2 sm:p-3 rounded-lg shadow-sm border border-stone-100/50">
+                  <h4 className="text-[8px] sm:text-[9px] font-bold text-stone-500 mb-1 uppercase tracking-wider">
                     Commentary ({langFlag}) <span className="text-stone-300 mx-1">|</span> 
                     <span className="text-orange-800/80">{authors.join(', ')}</span>
                   </h4>
-                  <p className="text-stone-600 leading-[1.5] text-[12px] sm:text-[13px] whitespace-pre-wrap">{actualText}</p>
+                  <p className="text-stone-600 leading-[1.4] text-[10px] sm:text-[11px] whitespace-pre-wrap">{actualText}</p>
                 </div>
               )
             })}
@@ -242,28 +242,28 @@ export default function StudyClient({ verses, chapterTitle }: StudyClientProps) 
         </div>
       </div>
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 space-y-12 sm:space-y-16 mt-4 relative z-10">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 space-y-4 sm:space-y-6 mt-2 relative z-10">
         {verses.map((verse) => (
           <article 
             key={verse._id} 
-            className="group relative bg-white/90 backdrop-blur-md rounded-2xl p-4 sm:p-6 md:p-8 shadow-[0_4px_20px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-500 border border-stone-100"
+            className="group relative bg-white/90 backdrop-blur-md rounded-xl p-3 sm:p-4 md:p-5 shadow-[0_4px_20px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-500 border border-stone-100"
           >
-            <div className="absolute -top-3 sm:-top-4 left-1/2 -translate-x-1/2 bg-gradient-to-tr from-orange-600 to-orange-400 text-white w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center font-bold shadow-md shadow-orange-500/30 ring-2 ring-white text-sm sm:text-base">
+            <div className="absolute -top-2 sm:-top-3 left-1/2 -translate-x-1/2 bg-gradient-to-tr from-orange-600 to-orange-400 text-white w-6 h-6 sm:w-8 sm:h-8 rounded-full flex items-center justify-center font-bold shadow-md shadow-orange-500/30 ring-2 ring-white text-xs sm:text-sm">
               {verse.verse}
             </div>
 
-            <div className="text-center mt-4 sm:mt-5 mb-4 sm:mb-5">
-              <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-stone-800 leading-[1.5] sm:leading-[1.6] whitespace-pre-wrap font-serif">
+            <div className="text-center mt-3 sm:mt-4 mb-3 sm:mb-4">
+              <h2 className="text-base sm:text-lg md:text-xl font-semibold text-stone-800 leading-[1.4] sm:leading-[1.5] whitespace-pre-wrap font-serif">
                 {verse.slok}
               </h2>
-              <p className="mt-2 sm:mt-3 text-stone-400/80 italic text-xs sm:text-sm whitespace-pre-wrap leading-relaxed tracking-wide">
+              <p className="mt-1 sm:mt-2 text-stone-400/80 italic text-[10px] sm:text-xs whitespace-pre-wrap leading-relaxed tracking-wide">
                 {verse.transliteration}
               </p>
             </div>
 
-            <div className="h-px w-full bg-gradient-to-r from-transparent via-stone-200 to-transparent my-4 sm:my-6" />
+            <div className="h-px w-full bg-gradient-to-r from-transparent via-stone-200 to-transparent my-3 sm:my-4" />
 
-            <div className={`grid gap-8 sm:gap-10 ${targetLang !== 'en' ? 'md:grid-cols-2' : ''}`}>
+            <div className={`grid gap-4 sm:gap-6 ${targetLang !== 'en' ? 'md:grid-cols-2' : ''}`}>
               
               {/* International Base Language (English) -> Typically sourced via Shiva or generic */}
               <div className="space-y-1 sm:space-y-2">
@@ -272,11 +272,11 @@ export default function StudyClient({ verses, chapterTitle }: StudyClientProps) 
                   <h3 className="text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-stone-400">Translation (English)</h3>
                 </div>
                 {verse.siva?.et ? (
-                  <p className="text-stone-700 leading-[1.6] text-[13px] sm:text-[14px] font-serif">
+                  <p className="text-stone-700 leading-[1.4] text-[11px] sm:text-[12px] font-serif">
                     {verse.siva.et}
                   </p>
                 ) : verse.prabhu?.et ? (
-                   <p className="text-stone-700 leading-[1.6] text-[13px] sm:text-[14px] font-serif">
+                   <p className="text-stone-700 leading-[1.4] text-[11px] sm:text-[12px] font-serif">
                     {verse.prabhu.et}
                    </p>
                 ) : (
@@ -295,7 +295,7 @@ export default function StudyClient({ verses, chapterTitle }: StudyClientProps) 
                   </div>
                   
                   {targetLang === 'hi' && (verse.rams?.ht || verse.tej?.ht) ? (
-                    <p className="text-stone-700 leading-[1.6] text-[14px] sm:text-[15px]" style={{ fontFamily: 'sans-serif' }}>
+                    <p className="text-stone-700 leading-[1.4] text-[12px] sm:text-[13px]" style={{ fontFamily: 'sans-serif' }}>
                       {verse.rams?.ht || verse.tej?.ht}
                     </p>
                   ) : targetLang === 'mr' ? (
