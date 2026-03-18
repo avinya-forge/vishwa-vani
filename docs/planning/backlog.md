@@ -1,12 +1,13 @@
-# Vishwa-Vani Master Backlog (Vedic Wikipedia Architecture)
+# 🗺️ Vishwa-Vani: The Vedic Wikipedia Master Backlog
 
-*Note: Backlog has been actively re-prioritized based on the directive to build the core solution/hosting framework first, implement AI understanding features, and finally aggregate massive scale data and crowdsourcing.*
+> **Vision**: Building the central, multilingual "Wikipedia for Vedic Wisdom" with AI-assisted creative explanations, hosted for free on GitHub Pages. We prioritize a rock-solid, secure, and performant framework before massive data aggregation.
 
 ---
 
-## 🟥 PRIORITY 0: The Core Solution Framework (Highest)
+## 🏗️ Phase 1: Core Framework & Scalable Architecture (High Priority)
 *Objective: Build the scalable UI, routing, and hosting skeleton first so data can simply be poured in later.*
 
+<<<<<<< HEAD
 **TASK [1801]: Hyper-Optimized 1-Screen Shloka UI** | [x] | [UI/UX]
 **SPEC:** Reduce overall UI margins, padding, and font sizes even further. Ensure that at a minimum, one full Shloka, its Sanskrit text, English meaning, regional meaning, and short commentaries all perfectly fit within a single mobile viewport without requiring any scrolling.
 
@@ -24,51 +25,63 @@
 
 **TASK [1705]: Universal API Construction for Public Integration** | [TODO] | [Backend]
 **SPEC:** Build a standard GraphQL or RESTful Next.js API layer exposing all stored Vedic content publicly (`GET /api/v1/texts/...`).
+=======
+| Task ID | Level | Task Description | Status |
+| :--- | :--- | :--- | :--- |
+| **1701** | P0 | **Bootstrap i18n Support**: next-intl integration (EN, HI, MR). | ✅ **DONE** |
+| **1702** | P0 | **Semantic URI Structure**: Restructure routes to `/[locale]/[text]/[chapter]`. | ✅ **DONE** |
+| **1706** | P0 | **Vedic Library Registry**: Central source of truth for scriptures (`lib/texts.ts`). | ✅ **DONE** |
+| **1801** | P0 | **Hyper-Optimized 1-Screen UI**: Shloka/Commentary fit on 1 mobile screen. | ✅ **DONE** |
+| **1703** | P0 | **Optimized JSON Storage Layer**: Standardize schema and chapter-based sharding. | ✅ **DONE** |
+| **1709** | P0 | **Vedic Lake PoC (SQLite WASM)**: Hybrid storage (Binary + JSON) engine. | ✅ **DONE** |
+| **1502** | P0 | **Security Hardening (CSP & Obfuscation)**: Root-level security rules. | ✅ **DONE** |
+| **1705** | P0 | **GitHub Pages Deployment Strategy**: Static export & redirect logic validation. | ✅ **DONE** |
+| **1710** | P1 | **Catalog of Vedic Sources**: (Mahabharata: bhavykhatri, Puranas: Akhilesh-Gogikar). | ✅ **DONE** |
+| **1707** | P1 | **Static Search Index (Lunr/FlexSearch)**: Build-time index for Wikipedia searching. | 📅 BACKLOG |
+| **1501** | P1 | **API Throttling & Security Integration**: Throttling/rate-limit for future API layer. | 📅 BACKLOG |
+| **1708** | P1 | **Client-side JSON Prefetching**: Speed up cross-chapter navigation. | 📅 BACKLOG |
+| **1601** | P3 | **Root Codebase Cleanup**: Pruning redundant files and legacy scripts. | ✅ **DONE** |
+>>>>>>> 2f5409a (feat: implement Vedic Lake (SQLite) storage, Security Shield, and UI density optimizations. Cleanup legacy scripts and docs.)
 
 ---
 
-## 🟧 PRIORITY 1: AI Concepts & Advanced Understanding
+## 🤖 Phase 2: AI Professor & Creative Explanations
 *Objective: Make the wisdom deeply understandable, engaging, and creatively explained.*
 
-**TASK [1802]: "AI Professor" Creative Explanations** | [TODO] | [Feature]
-**SPEC:** Build a module where an AI acts as a dedicated professor explaining complex Sanskrit concepts. This includes generating or rendering creative mediums like diagrams, philosophical flowcharts, or styled "handwritten notes" to ensure absolute layman comprehension.
-
-**TASK [1407]: GPS/Locale-Based Default Language Detection** | [TODO] | [Architecture]
-**SPEC:** Implement a hook to flawlessly default the target language to Hindi or Marathi based on user location, falling back to English.
-
-**TASK [1402]: Implement Global Shloka Semantic Search** | [TODO] | [UI/UX]
-**SPEC:** Build a search UI that translates layman queries ("What does the Gita say about duty?") into exact Shlokas using the Vector backend.
+| Task ID | Level | Task Description | Status |
+| :--- | :--- | :--- | :--- |
+| **1802** | P1 | **"AI Professor" Creative Explanations**: Local LLM (WebLLM) conceptual breakdowns. | 📅 BACKLOG |
+| **1804** | P1 | **Visual "Handwritten Notes" UI**: Styled diagrams and flowcharts for AI logic. | 📅 BACKLOG |
+| **1805** | P1 | **WebLLM Proof of Concept**: Browser-side summarization on author subset. | 📅 BACKLOG |
+| **1407** | P2 | **GPS/Locale Language Detection**: Auto-default to local language (HI/MR). | 📅 BACKLOG |
 
 ---
 
-## 🟨 PRIORITY 2: Massive Data Collection & Aggregation
+## 🟨 Phase 3: Massive Data Collection & Aggregation
 *Objective: Gather infinite Vedic texts once the framework is ready.*
 
-**TASK [1704]: Curate Massive Multi-Author Legal Content Aggregation** | [TODO] | [Data Quality]
-**SPEC:** Source diverse interpretations across the ages. Automatically or manually crawl legal/open texts from Saint Dnyaneshwar's Dnyaneshwari, Adi Shankaracharya, Madhvacharya, up to modern scholars.
-
-**TASK [1401]: Populate Bhagavad Gita Chapters 1-18** | [TODO] | [Database]
-**SPEC:** Cleanly pipe in all 18 chapters of the Gita into the newly minted framework DB setup.
-
-**TASK [1408]: Aggregate and Deduplicate Expanded Commentaries** | [TODO] | [Data Validation]
-**SPEC:** De-duplicate sentiments. If ISKCON and Chinmaya mention the exact same concept, cluster them to preserve UI real estate.
-
-**TASK [1503]: Translation & Cross-Reference Verification Pass** | [TODO] | [Data Quality]
-**SPEC:** Run AI/Manual verification to ensure translation intents strictly match the original Sanskrit philosopher's intention.
-
----
-
-## 🟩 PRIORITY 3: Wikipedia Crowdsourcing & Maintenance (Lowest)
-*Objective: Community tools and final codebase lock.*
-
-**TASK [1803]: Wikipedia-Style User Corrections & Moderation** | [TODO] | [Crowdsourcing]
-**SPEC:** Allow authenticated users or the public to flag typos, suggest edits to translations, or submit better interpretations into a moderation queue.
-
-**TASK [1505]: Google Analytics & Donation Integration** | [TODO] | [Integration]
-**SPEC:** Integrate sub-level Google Analytics for traffic observation and Wikipedia-style donation footnotes.
-
-**TASK [1601]: Final Codebase Pruning** | [TODO] | [Refactoring]
-**SPEC:** Comprehensive dead-code audit. Remove every file not actively utilized in the final static production compile.
+| Task ID | Level | Task Description | Status |
+| :--- | :--- | :--- | :--- |
+| **1704** | P2 | **Multi-Author Legal Content Aggregation**: Curation of diverse interpretations. | 📅 BACKLOG |
+| **1401** | P2 | **Populate Complete Bhagavad Gita Chapters**: Chapters 1-18 with all translations. | 📅 BACKLOG |
+| **1402** | P2 | **Mahabharata Integration (18 Parvas)**: Use `bhavykhatri/DharmicData` source. | 📅 BACKLOG |
+| **1403** | P2 | **Rigveda Samhita Integration**: Mandela-wise import from `DharmicData`. | 📅 BACKLOG |
+| **1404** | P2 | **18 Mukhya Puranas Consolidation**: Aggregation from `Akhilesh-Gogikar/English-Puranas`. | 📅 BACKLOG |
+| **1405** | P3 | **Stotra & Stuti Library**: Curated Ganesha, Shiva, Vishnu collections. | 📅 BACKLOG |
+| **1406** | P3 | **Major Upanishads Expansion**: Sourcing from `atmabodha/Vedanta_Datasets`. | 📅 BACKLOG |
+| **1408** | P2 | **Commentary Clustering/Deduplication**: Aggregate sentiments from sages. | 📅 BACKLOG |
+| **1503** | P2 | **Sanskrit-to-Selection Verification**: Ensure translation strictly hits intent. | 📅 BACKLOG |
 
 ---
-_Legacy & Completed Milestone 1 initialization Tasks have been safely archived._
+
+## 🟩 Phase 4: Wikipedia Crowdsourcing & Maintenance
+*Objective: User corrections and long-term sustainability.*
+
+| Task ID | Level | Task Description | Status |
+| :--- | :--- | :--- | :--- |
+| **1803** | P3 | **Wikipedia-Style User Corrections**: Flagging and suggesting edits. | 📅 BACKLOG |
+| **1505** | P3 | **Donation Footnotes & Analytics**: Sustainability infrastructure. | ✅ **DONE** |
+| **1601** | P3 | **Root Codebase Cleanup**: Constant pruning of redundant files. | ⏳ IN PROGRESS |
+
+---
+_Last Updated: March 2026_

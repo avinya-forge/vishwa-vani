@@ -29,6 +29,15 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
+*.log
+*.log.*
+build_*.txt
+npm_output.log
+dev.log
+metric_summary.txt
+output.txt
+*.tmp
+*.bak
 
 # env files (can opt-in for committing if needed)
 .env*
@@ -40,3 +49,13 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 .memory/
+
+# Lock files - usually kept, but can be ignored if only using one
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# System files
+.DS_Store
+Thumbs.db
+*.pem

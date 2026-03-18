@@ -1,0 +1,44 @@
+{
+  "nav": {
+    "home": "Home",
+    "library": "Library",
+    "search": "Search",
+    "about": "About"
+  },
+  "home": {
+    "title": "Vishwa-Vani",
+    "subtitle": "The Digital Sanctuary of Vedic Wisdom",
+    "description": "Explore the depths of Vedic wisdom, word by word. The profound knowledge of the Shrimad Bhagavad Gita, accessible to all.",
+    "beginReading": "Begin Reading",
+    "chaptersTitle": "The 18 Chapters",
+    "chapter": "Chapter"
+  },
+  "study": {
+    "scripture": "Shrimad Bhagavad Gita",
+    "tagline": "Immerse yourself in timeless wisdom. Match language preferences and favored philosophical insights.",
+    "translationEn": "Translation (English)",
+    "meaningHi": "Meaning (Hindi)",
+    "meaningMr": "Meaning (Marathi)",
+    "readDeepCommentary": "Read Deeper Commentary",
+    "commentary": "Commentary",
+    "backToDashboard": "← Back to Library",
+    "prevChapter": "Previous Chapter",
+    "nextChapter": "Next Chapter",
+    "noTranslation": "No English translation found for this verse.",
+    "compilingDB": "Translation being compiled..."
+  },
+  "prefs": {
+    "title": "Preferences",
+    "language": "Preferred Language",
+    "commentarySets": "Commentary Sets",
+    "saveApply": "Save & Apply",
+    "en": "English",
+    "hi": "Hindi",
+    "mr": "Marathi"
+  },
+  "footer": {
+    "donate": "Vishwa-Vani is a non-profit open-source initiative. We rely on readers like you to keep the digital sanctuary alive.",
+    "donateLink": "Support the Digital Sanctuary ☕",
+    "copyright": "Vishwa-Vani. Open Source Project."
+  }
+}

@@ -12,10 +12,13 @@
   "dependencies": {
     "@next/third-parties": "^16.1.7",
     "@tailwindcss/typography": "^0.5.19",
+    "@types/sql.js": "^1.4.9",
     "next": "16.1.6",
+    "next-intl": "^4.8.3",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "react-markdown": "^10.1.0",
+    "sql.js": "^1.14.1",
     "use-debounce": "^10.1.0"
   },
   "devDependencies": {
@@ -31,6 +34,7 @@
     "eslint-config-next": "^16.1.6",
     "jest": "^30.3.0",
     "jest-environment-jsdom": "^30.3.0",
+    "sqlite3": "^6.0.1",
     "tailwindcss": "^4",
     "ts-jest": "^29.4.6",
     "ts-node": "^10.9.2",
