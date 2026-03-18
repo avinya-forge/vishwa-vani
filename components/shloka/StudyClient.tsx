@@ -2,6 +2,8 @@
 
 import React, { useState, useEffect } from 'react'
 import { useTranslations, useLocale } from 'next-intl'
+import AstroExplorer from '@/components/lab/AstroExplorer'
+import { getDailyWisdom } from '@/lib/wisdom'
 
 interface VerseAuthor {
   author: string
@@ -21,17 +23,16 @@ interface GitaVerse {
   [key: string]: any // To pick dynamic authors
 }
 
-const AUTHOR_MAP: Record<string, string> = {
-  siva: 'Swami Sivananda',
-  rams: 'Swami Ramsukhdas',
-  chinmay: 'Chinmaya Mission',
-  sankar: 'Shankaracharya',
-  prabhu: 'A.C. Bhaktivedanta Swami Prabhupada',
-  tej: 'Swami Tejomayananda',
-  adi: 'Adi Shankaracharya',
-  gambir: 'Swami Gambhirananda',
-  san: 'Sanjaya',
-  raman: 'Ramanuja',
+export const AUTHOR_METADATA: Record<string, { name: string, langs: ('en' | 'hi' | 'mr')[] }> = {
+  siva: { name: 'Swami Sivananda', langs: ['en', 'hi'] },
+  rams: { name: 'Swami Ramsukhdas', langs: ['hi'] },
+  chinmay: { name: 'Chinmaya Mission', langs: ['en'] },
+  sankar: { name: 'Adi Shankaracharya', langs: ['hi', 'en'] },
+  prabhu: { name: 'Srila Prabhupada', langs: ['en', 'hi', 'mr'] },
+  tej: { name: 'Swami Tejomayananda', langs: ['hi'] },
+  gambir: { name: 'Swami Gambhirananda', langs: ['en'] },
+  raman: { name: 'Ramanuja', langs: ['hi', 'en'] },
+  abhyankar: { name: 'Dr. Shankar Abhyankar', langs: ['mr', 'hi'] },
 }
 
 interface StudyClientProps {
@@ -92,8 +93,9 @@ export default function StudyClient({ verses, chapterTitle, scriptureName, tagli
     enabledAuthors.forEach(key => {
       if (verse[key]) {
         const item = verse[key] as VerseAuthor
-        if (item.ec) chunks.push({ authorName: AUTHOR_MAP[key] || key, text: item.ec.trim(), lang: 'en' })
-        if (item.hc) chunks.push({ authorName: AUTHOR_MAP[key] || key, text: item.hc.trim(), lang: 'hi' })
+        const authorName = AUTHOR_METADATA[key]?.name || key
+        if (item.ec) chunks.push({ authorName, text: item.ec.trim(), lang: 'en' })
+        if (item.hc) chunks.push({ authorName, text: item.hc.trim(), lang: 'hi' })
       }
     })
 
@@ -141,7 +143,7 @@ export default function StudyClient({ verses, chapterTitle, scriptureName, tagli
 
   // Dynamic authors found in the current scripture data
   const scriptureAuthors = Array.from(new Set(
-    verses.flatMap(v => Object.keys(v).filter(k => AUTHOR_MAP[k]))
+    verses.flatMap(v => Object.keys(v).filter(k => AUTHOR_METADATA[k]))
   ))
 
   return (
@@ -175,11 +177,13 @@ export default function StudyClient({ verses, chapterTitle, scriptureName, tagli
               <div>
                 <h3 className="text-sm font-bold uppercase tracking-wider text-stone-500 mb-3">{pt('commentarySets')}</h3>
                 <div className="space-y-2 max-h-[40vh] overflow-y-auto pr-2 custom-scrollbar">
-                  {scriptureAuthors.map((key) => {
-                    const name = AUTHOR_MAP[key]
-                    const isEnabled = enabledAuthors.includes(key)
-                    return (
-                      <label key={key} className="flex items-center p-3 sm:p-4 rounded-xl border border-stone-100 hover:bg-stone-50 cursor-pointer transition-colors group">
+                  {scriptureAuthors
+                    .filter(key => AUTHOR_METADATA[key]?.langs.includes(targetLang))
+                    .map((key) => {
+                      const name = AUTHOR_METADATA[key]?.name || key
+                      const isEnabled = enabledAuthors.includes(key)
+                      return (
+                        <label key={key} className="flex items-center p-3 sm:p-4 rounded-xl border border-stone-100 hover:bg-stone-50 cursor-pointer transition-colors group">
                         <input 
                           type="checkbox" 
                           checked={isEnabled}
@@ -311,41 +315,31 @@ export default function StudyClient({ verses, chapterTitle, scriptureName, tagli
           </article>
         ))}
           </div>
-
-          {/* Sidebar / Knowledge Lab Area */}
+          
           <aside className="hidden lg:block space-y-6 sticky top-24 self-start">
-            <section className="bg-white/80 backdrop-blur-md rounded-3xl p-6 border border-stone-100 shadow-sm">
-              <div className="flex items-center gap-2 mb-4">
-                <span className="p-1.5 bg-orange-100 text-orange-600 rounded-lg">✨</span>
-                <h3 className="font-bold text-stone-800 text-sm">{t('interactiveLab')}</h3>
-              </div>
-              
-              <div className="space-y-4">
-                <div className="p-4 bg-orange-50/50 rounded-2xl border border-orange-100/50">
-                  <h4 className="font-serif font-bold text-orange-950 text-base mb-1">Astro Insights</h4>
-                  <p className="text-xs text-stone-600 leading-relaxed">
-                    Based on the astrological concepts in this chapter, generate your Vedic chart.
+            <AstroExplorer />
+
+            <section className="bg-white/80 backdrop-blur-md rounded-3xl p-8 border border-stone-100 shadow-sm">
+                <h3 className="text-xs font-bold text-stone-400 uppercase tracking-[0.2em] mb-4 flex items-center gap-2">
+                  <span className="w-2 h-2 bg-orange-500 rounded-full" />
+                  {t('didYouKnow')}
+                </h3>
+                <div className="space-y-4">
+                  <p className="text-stone-600 font-serif leading-relaxed italic text-sm">
+                    {getDailyWisdom().text}
                   </p>
-                  <button className="mt-4 w-full py-2 bg-orange-600 text-white rounded-xl text-xs font-bold shadow-md hover:bg-orange-700 transition-colors">
-                    {t('comingSoon')}
-                  </button>
-                </div>
-                
-                <div className="p-4 bg-stone-50 rounded-2xl border border-stone-100">
-                  <h4 className="font-bold text-stone-800 text-sm mb-1">{t('didYouKnow')}</h4>
-                  <p className="text-[11px] text-stone-500 italic leading-relaxed">
-                    The Sanskrit roots in these verses are the foundation for several modern Indo-European languages.
+                  <p className="text-[10px] text-stone-400 leading-relaxed uppercase tracking-widest text-right">
+                    — {getDailyWisdom().source}
                   </p>
                 </div>
-              </div>
             </section>
 
-            <section className="bg-stone-900 rounded-3xl p-6 text-white shadow-xl shadow-stone-200">
-              <h3 className="font-bold text-stone-200 text-xs uppercase tracking-widest mb-4">{t('contribution')}</h3>
-              <p className="text-xs text-stone-400 leading-relaxed mb-6">
+            <section className="bg-stone-50 rounded-3xl p-6 border border-stone-100 shadow-sm shadow-stone-200/50">
+              <h3 className="font-bold text-stone-400 text-[10px] uppercase tracking-widest mb-4">{t('contribution')}</h3>
+              <p className="text-[11px] text-stone-500 leading-relaxed mb-6">
                 Vishwa-Vani is a community effort to preserve Vedic wisdom. Report inaccuracies or suggest new authors.
               </p>
-              <button className="w-full py-2 bg-white/10 hover:bg-white/20 text-white rounded-xl text-[10px] font-bold transition-colors">
+              <button className="w-full py-2 bg-stone-900 hover:bg-stone-800 text-white rounded-xl text-[10px] font-bold transition-colors">
                 {t('reachOut')}
               </button>
             </section>

@@ -102,8 +102,29 @@ export default async function StudyChapterPage({ params }: { params: Promise<{ l
   const nextChapter = parseInt(chapterNumber) < textMetadata.totalChapters ? parseInt(chapterNumber) + 1 : null
   const localePrefix = locale === 'en' ? '' : `/${locale}`
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'ScholarlyArticle',
+    name: title,
+    headline: `${scriptureName} - ${title}`,
+    description: tagline,
+    author: {
+        '@type': 'Organization',
+        name: 'Vishwa-Vani Open Wisdom Project'
+    },
+    about: {
+        '@type': 'Thing',
+        name: scriptureName
+    },
+    inLanguage: locale
+  }
+
   return (
     <main className="min-h-screen bg-[#FDFBF7] selection:bg-orange-100/60 pb-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <StudyClient 
         verses={verses} 
         chapterTitle={title} 

@@ -1,5 +1,7 @@
 'use client'
 
+import { VEDIC_LIBRARY } from './texts'
+
 /**
  * Vishwa-Vani: Multi-Lake Worker-Bound Interface 🪷
  * 
@@ -47,11 +49,26 @@ export async function getVersesFromLake(textSlug: string, chapter: number, lakeF
 }
 
 /**
- * Global Search across the shard.
+ * Global Discovery search across all sharded lakes.
  */
-export async function searchLake(query: string, lakeFile: string = 'vedic-lake.db') {
+export async function searchLake(query: string) {
   if (!query || query.length < 2) return [];
-  return sendRequest('SEARCH_LAKE', { query, lakeFile });
+  
+  // Find all unique lake shards mentioned in registry
+  const shards = Array.from(new Set(
+    VEDIC_LIBRARY
+      .filter(t => t.storage === 'lake' && t.lakeFile)
+      .map(t => t.lakeFile as string)
+  ));
+
+  if (shards.length === 0) return sendRequest('SEARCH_LAKE', { query, lakeFile: 'vedic-lake.db' });
+
+  // Parallel search across all shards
+  const shardPromises = shards.map(shard => sendRequest('SEARCH_LAKE', { query, lakeFile: shard }));
+  const resultsArr = await Promise.all(shardPromises);
+  
+  // Flatten and deduplicate
+  return resultsArr.flat();
 }
 
 /**
