@@ -25,7 +25,14 @@
     "prevChapter": "पिछला अध्याय",
     "nextChapter": "अगला अध्याय",
     "noTranslation": "इस श्लोक का कोई हिंदी अनुवाद नहीं मिला।",
-    "compilingDB": "अनुवाद संकलित हो रहा है..."
+    "compilingDB": "अनुवाद संकलित हो रहा है...",
+    "interactiveLab": "इंटरएक्टिव वैदिक लैब",
+    "didYouKnow": "क्या आप जानते हैं?",
+    "contribution": "सामूहिक योगदान",
+    "reachOut": "संपर्क करें / योगदान दें",
+    "comingSoon": "जल्द आ रहा है... ✨",
+    "verses": "श्लोक",
+    "interactive": "इंटरएक्टिव"
   },
   "prefs": {
     "title": "प्राथमिकताएं",

@@ -7,8 +7,8 @@ import path from 'path';
  * Used during CI/CD and 'next build' to extract scripture metadata 
  * from binary SQLite stores into static static props.
  */
-export async function getVersesFromLakeServer(textSlug: string, chapter: number): Promise<any[]> {
-  const dbPath = path.join(process.cwd(), 'public', 'vedic-lake.db');
+export async function getVersesFromLakeServer(textSlug: string, chapter: number, lakeFile: string = 'vedic-lake.db'): Promise<any[]> {
+  const dbPath = path.join(process.cwd(), 'public', lakeFile);
   
   return new Promise((resolve, reject) => {
     const db = new sqlite3.Database(dbPath, sqlite3.OPEN_READONLY, (err) => {

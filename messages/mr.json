@@ -25,7 +25,14 @@
     "prevChapter": "मागील अध्याय",
     "nextChapter": "पुढील अध्याय",
     "noTranslation": "या श्लोकाचे भाषांतर सापडले नाही.",
-    "compilingDB": "भाषांतर संकलित होत आहे..."
+    "compilingDB": "भाषांतर संकलित होत आहे...",
+    "interactiveLab": "इंटरएक्टिव्ह वैदिक लॅब",
+    "didYouKnow": "तुम्हाला माहिती आहे का?",
+    "contribution": "सामूहिक योगदान",
+    "reachOut": "संपर्क साधा / योगदान द्या",
+    "comingSoon": "लवकरच येत आहे... ✨",
+    "verses": "श्लोक",
+    "interactive": "इंटरएक्टिव्ह"
   },
   "prefs": {
     "title": "प्राधान्यक्रम",

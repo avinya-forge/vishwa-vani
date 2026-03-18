@@ -66,7 +66,7 @@ export default async function StudyChapterPage({ params }: { params: Promise<{ l
   const chapterInt = parseInt(chapterNumber)
 
   if (textMetadata.storage === 'lake') {
-    verses = await getVersesFromLakeServer(textSlug, chapterInt)
+    verses = await getVersesFromLakeServer(textSlug, chapterInt, textMetadata.lakeFile || undefined)
   } else {
     try {
       const dataPath = path.join(process.cwd(), 'data', `${textMetadata.dataPrefix}_chapter_${chapterNumber}.json`)

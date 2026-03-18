@@ -25,7 +25,14 @@
     "prevChapter": "Previous Chapter",
     "nextChapter": "Next Chapter",
     "noTranslation": "No English translation found for this verse.",
-    "compilingDB": "Translation being compiled..."
+    "compilingDB": "Translation being compiled...",
+    "interactiveLab": "Interactive Vedic Lab",
+    "didYouKnow": "Did You Know?",
+    "contribution": "Preserve the Wisdom",
+    "reachOut": "Get In Touch / Contribute",
+    "comingSoon": "Coming Soon... ✨",
+    "verses": "Verses",
+    "interactive": "Interactive"
   },
   "prefs": {
     "title": "Preferences",

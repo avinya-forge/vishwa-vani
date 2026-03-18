@@ -216,22 +216,40 @@ export default function StudyClient({ verses, chapterTitle, scriptureName, tagli
         </svg>
       </button>
 
-      <div className="relative overflow-hidden bg-gradient-to-b from-orange-100/50 to-[#FDFBF7] pt-12 pb-10 px-4">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] sm:w-[800px] sm:h-[400px] bg-orange-200/30 blur-[120px] rounded-full pointer-events-none" />
-        <div className="max-w-6xl mx-auto relative z-10 text-center">
-          <span className="inline-block py-1 px-3 rounded-full bg-orange-100 text-orange-800 text-[10px] sm:text-xs font-semibold tracking-widest uppercase mb-3 sm:mb-4 shadow-sm border border-orange-200/50">
-            {scriptureName}
-          </span>
-          <h1 className="text-2xl sm:text-3xl md:text-5xl font-serif font-bold text-stone-900 mb-2 sm:mb-4 leading-tight">
-            {chapterTitle}
-          </h1>
-          <p className="text-sm sm:text-base md:text-lg text-stone-600 max-w-2xl mx-auto leading-relaxed">
-            {tagline}
-          </p>
+      <div className="relative overflow-hidden bg-gradient-to-b from-orange-100/30 to-[#FDFBF7] pt-10 pb-8 px-4">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] sm:w-[1200px] sm:h-[400px] bg-orange-200/20 blur-[130px] rounded-full pointer-events-none" />
+        <div className="max-w-[1600px] mx-auto relative z-10 text-center lg:text-left lg:px-12 flex flex-col lg:flex-row items-center justify-between gap-6">
+          <div className="max-w-3xl">
+            <span className="inline-block py-1 px-3 rounded-full bg-orange-100/70 text-orange-800 text-[10px] sm:text-xs font-semibold tracking-widest uppercase mb-3 sm:mb-4 shadow-sm border border-orange-200/30">
+              {scriptureName}
+            </span>
+            <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-serif font-bold text-stone-900 mb-2 sm:mb-4 leading-tight">
+              {chapterTitle}
+            </h1>
+            <p className="text-sm sm:text-base md:text-lg text-stone-600 max-w-2xl leading-relaxed">
+              {tagline}
+            </p>
+          </div>
+          
+          <div className="hidden lg:flex items-center gap-6 bg-white/40 backdrop-blur-sm p-6 rounded-3xl border border-white/60 shadow-sm">
+            <div className="text-center px-4 border-r border-stone-200/50">
+              <p className="text-[10px] font-bold text-stone-400 uppercase tracking-tighter mb-1">{t('verses')}</p>
+              <p className="text-2xl font-serif font-bold text-orange-900">{verses.length}</p>
+            </div>
+            <div className="text-center px-4">
+              <p className="text-[10px] font-bold text-stone-400 uppercase tracking-tighter mb-1">{t('interactive')}</p>
+              <div className="flex -space-x-2">
+                <div className="w-8 h-8 rounded-full bg-orange-100 border-2 border-white flex items-center justify-center text-[10px]">✨</div>
+                <div className="w-8 h-8 rounded-full bg-orange-200 border-2 border-white flex items-center justify-center text-[10px] scale-110">🕉️</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-6 sm:space-y-8 mt-2 relative z-10">
+      <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-12 mt-4 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_350px] gap-8">
+          <div className="space-y-6 sm:space-y-8">
         {verses.map((verse) => (
           <article 
             key={verse._id} 
@@ -292,9 +310,51 @@ export default function StudyClient({ verses, chapterTitle, scriptureName, tagli
             {renderAggregatedCommentaries(verse)}
           </article>
         ))}
+          </div>
+
+          {/* Sidebar / Knowledge Lab Area */}
+          <aside className="hidden lg:block space-y-6 sticky top-24 self-start">
+            <section className="bg-white/80 backdrop-blur-md rounded-3xl p-6 border border-stone-100 shadow-sm">
+              <div className="flex items-center gap-2 mb-4">
+                <span className="p-1.5 bg-orange-100 text-orange-600 rounded-lg">✨</span>
+                <h3 className="font-bold text-stone-800 text-sm">{t('interactiveLab')}</h3>
+              </div>
+              
+              <div className="space-y-4">
+                <div className="p-4 bg-orange-50/50 rounded-2xl border border-orange-100/50">
+                  <h4 className="font-serif font-bold text-orange-950 text-base mb-1">Astro Insights</h4>
+                  <p className="text-xs text-stone-600 leading-relaxed">
+                    Based on the astrological concepts in this chapter, generate your Vedic chart.
+                  </p>
+                  <button className="mt-4 w-full py-2 bg-orange-600 text-white rounded-xl text-xs font-bold shadow-md hover:bg-orange-700 transition-colors">
+                    {t('comingSoon')}
+                  </button>
+                </div>
+                
+                <div className="p-4 bg-stone-50 rounded-2xl border border-stone-100">
+                  <h4 className="font-bold text-stone-800 text-sm mb-1">{t('didYouKnow')}</h4>
+                  <p className="text-[11px] text-stone-500 italic leading-relaxed">
+                    The Sanskrit roots in these verses are the foundation for several modern Indo-European languages.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <section className="bg-stone-900 rounded-3xl p-6 text-white shadow-xl shadow-stone-200">
+              <h3 className="font-bold text-stone-200 text-xs uppercase tracking-widest mb-4">{t('contribution')}</h3>
+              <p className="text-xs text-stone-400 leading-relaxed mb-6">
+                Vishwa-Vani is a community effort to preserve Vedic wisdom. Report inaccuracies or suggest new authors.
+              </p>
+              <button className="w-full py-2 bg-white/10 hover:bg-white/20 text-white rounded-xl text-[10px] font-bold transition-colors">
+                {t('reachOut')}
+              </button>
+            </section>
+          </aside>
+        </div>
       </div>
     </>
   )
 }
+
 
 

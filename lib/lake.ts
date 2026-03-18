@@ -1,40 +1,40 @@
 import initSqlJs from 'sql.js';
 
-let DB: any = null;
+let LAKES: Record<string, any> = {};
 
 /**
- * Vishwa-Vani: Vedic Lake Interface 🪷
+ * Vishwa-Vani: Multi-Lake Database Interface 🪷
  * 
- * Provides high-performance, indexed access to the centralized scripture database.
- * This is the foundation for scaling to millions of verses on a static site.
+ * Provides high-performance, indexed access to specific binary scripture lakes.
+ * This sharding architecture allows us to host thousands of texts across
+ * separate shards to bypass static file limits.
  */
-export async function initLake() {
-  if (DB) return DB;
+export async function initLake(lakeFile: string = 'vedic-lake.db') {
+  if (LAKES[lakeFile]) return LAKES[lakeFile];
 
   try {
     const SQL = await initSqlJs({
       locateFile: (file: string) => `/${file}` // Pointing to public/sql-wasm.wasm
     });
 
-    // Fetch the Vedic Lake binary
-    const response = await fetch('/vedic-lake.db');
+    // Fetch the specific shard binary
+    const response = await fetch(`/${lakeFile}`);
     const bytes = await response.arrayBuffer();
     
-    DB = new SQL.Database(new Uint8Array(bytes));
-    console.log('ॐ Vedic Lake initialized successfully.');
-    return DB;
+    LAKES[lakeFile] = new SQL.Database(new Uint8Array(bytes));
+    console.log(`ॐ ${lakeFile} initialized successfully.`);
+    return LAKES[lakeFile];
   } catch (err) {
-    console.error('Failed to initialize Vedic Lake:', err);
+    console.error(`Failed to initialize ${lakeFile}:`, err);
     return null;
   }
 }
 
 /**
- * Query the lake for verses from a specific scripture and chapter.
- * Uses SQL indexing for O(1) retrieval speed even at scale.
+ * Query the specific lake for verses from a scripture and chapter.
  */
-export async function getVersesFromLake(textSlug: string, chapter: number) {
-  const db = await initLake();
+export async function getVersesFromLake(textSlug: string, chapter: number, lakeFile?: string) {
+  const db = await initLake(lakeFile);
   if (!db) return [];
 
   const stmt = db.prepare('SELECT content FROM verses WHERE text_slug = :slug AND chapter = :ch ORDER BY verse ASC');
