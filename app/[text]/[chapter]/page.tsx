@@ -7,7 +7,7 @@ export async function generateStaticParams() {
   // Pre-render pages for chapters 1 through 18 of bhagavad-gita initially
   return Array.from({ length: 18 }, (_, i) => ({
     text: 'bhagavad-gita',
-    chapter: String(i + 1),
+    chapter: `chapter-${i + 1}`,
   }))
 }
 
@@ -34,7 +34,9 @@ interface GitaVerse {
 }
 
 export default async function StudyChapterPage({ params }: { params: Promise<{ text: string, chapter: string }> }) {
-  const { text, chapter: chapterNumber } = await params
+  const { text, chapter: chapterSlug } = await params
+
+  const chapterNumber = chapterSlug.replace('chapter-', '')
   
   // Later we can implement logic to fetch the specific text (e.g., upanishads vs bhagavad-gita)
   // For now, mapping directly to bhagavad-gita JSON files

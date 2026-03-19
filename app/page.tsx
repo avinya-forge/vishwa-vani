@@ -37,7 +37,7 @@ export default function Home() {
               Explore the depths of Vedic wisdom, word by word. The profound knowledge of the Shrimad Bhagavad Gita, accessible to all.
             </p>
             <div className="flex justify-center gap-4">
-              <Link href="/bhagavad-gita/1" className="px-8 py-3 bg-gradient-to-r from-orange-600 to-amber-600 text-white rounded-full hover:from-orange-700 hover:to-amber-700 transition-all font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+              <Link href="/bhagavad-gita/chapter-1" className="px-8 py-3 bg-gradient-to-r from-orange-600 to-amber-600 text-white rounded-full hover:from-orange-700 hover:to-amber-700 transition-all font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
                 Begin Reading
               </Link>
             </div>
@@ -56,7 +56,7 @@ export default function Home() {
               const chapterNum = String(i + 1);
               return (
                 <Link 
-                  href={`/bhagavad-gita/${chapterNum}`} 
+                  href={`/bhagavad-gita/chapter-${chapterNum}`}
                   key={chapterNum}
                   className="group block p-6 bg-white rounded-2xl shadow-sm hover:shadow-xl hover:shadow-orange-900/5 border border-stone-100/80 transition-all duration-300 transform hover:-translate-y-1"
                 >

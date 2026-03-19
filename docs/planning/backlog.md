@@ -71,4 +71,21 @@
 **SPEC:** Comprehensive dead-code audit. Remove every file not actively utilized in the final static production compile.
 
 ---
+
+## 🟦 PRIORITY 4: UI & Navigation Polish (Audited Gaps)
+*Objective: Improve user navigation flows based on system audit.*
+
+**TASK [1901]: Header Navigation State & Breadcrumbs** | [TODO] | [UI/UX]
+**SPEC:** The Header currently has hardcoded links ("Knowledge Base", "Start Reading" pointing to `/`). Add dynamic breadcrumbs (e.g., `Home > Bhagavad Gita > Chapter 1 > Verse 1`) and ensure active state highlighting for better deep-link navigation.
+
+**TASK [1902]: Next/Previous Verse Navigation** | [TODO] | [UI/UX]
+**SPEC:** In the single Verse view (`/[text]/[chapter]/[verse]`), there is no way to jump to the next or previous verse without returning to the chapter view. Add horizontal floating navigation arrows.
+
+**TASK [1903]: Mobile Navigation Menu** | [TODO] | [UI/UX]
+**SPEC:** The Header's "Knowledge Base" link is explicitly hidden on mobile (`hidden md:flex`). Implement a mobile hamburger menu to ensure all links are accessible on smaller devices.
+
+**TASK [1904]: Replace Placeholder GA ID** | [TODO] | [Integration]
+**SPEC:** `app/layout.tsx` contains a placeholder `<GoogleAnalytics gaId="G-XXXXXX" />`. Update this with a valid environment variable or proper production GA ID.
+
+---
 _Legacy & Completed Milestone 1 initialization Tasks have been safely archived._

@@ -7,35 +7,38 @@
 - Network:       http://192.168.0.2:3000
 
 ✓ Starting...
-Attention: Next.js now collects completely anonymous telemetry regarding usage.
-This information is used to shape Next.js' roadmap and prioritize features.
-You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
-https://nextjs.org/telemetry
-
-✓ Ready in 993ms
-○ Compiling /[text]/[chapter] ...
+✓ Ready in 1227ms
+ GET /bhagavad-gita/chapter-1 200 in 2.6s (compile: 1668ms, generate-params: 926ms, render: 949ms)
+ GET / 200 in 289ms (compile: 38ms, render: 251ms)
+ GET /bhagavad-gita/1 200 in 475ms (compile: 33ms, generate-params: 27ms, render: 442ms)
+⨯ Failed to generate static paths for /[text]/[chapter]:
+Error: Page "/[text]/[chapter]/page" is missing param "/[text]/[chapter]" in "generateStaticParams()", which is required with "output: export" config.
+    at ignore-listed frames
+ GET /bhagavad-gita/1/verse-1 404 in 187ms (compile: 83ms, render: 104ms)
+ GET /bhagavad-gita/1/verse-1 404 in 93ms (compile: 7ms, render: 85ms)
+ GET / 200 in 289ms (compile: 15ms, render: 273ms)
 ⨯ Error: Page "/[text]/[chapter]/page" is missing param "/[text]/[chapter]" in "generateStaticParams()", which is required with "output: export" config.
     at ignore-listed frames {
-  page: '/study/1'
+  page: '/bhagavad-gita/1'
 }
- GET /study/1 500 in 8.5s (compile: 8.2s, render: 308ms)
+ GET /bhagavad-gita/1 500 in 1055ms (compile: 871ms, render: 184ms)
 ⨯ Error: Page "/[text]/[chapter]/page" is missing param "/[text]/[chapter]" in "generateStaticParams()", which is required with "output: export" config.
     at ignore-listed frames {
-  page: '/study/1'
+  page: '/bhagavad-gita/1'
 }
- GET /study/1 500 in 593ms (compile: 580ms, render: 13ms)
+ GET /bhagavad-gita/1 500 in 658ms (compile: 642ms, render: 16ms)
+ GET / 200 in 178ms (compile: 7ms, render: 171ms)
 ⨯ Error: Page "/[text]/[chapter]/page" is missing param "/[text]/[chapter]" in "generateStaticParams()", which is required with "output: export" config.
     at ignore-listed frames {
-  page: '/study/1'
+  page: '/bhagavad-gita/1'
 }
- GET /study/1 500 in 781ms (compile: 760ms, render: 21ms)
+ GET /bhagavad-gita/1 500 in 676ms (compile: 656ms, render: 20ms)
 ⨯ Error: Page "/[text]/[chapter]/page" is missing param "/[text]/[chapter]" in "generateStaticParams()", which is required with "output: export" config.
     at ignore-listed frames {
-  page: '/study/1'
+  page: '/bhagavad-gita/1'
 }
- GET /study/1 500 in 548ms (compile: 538ms, render: 10ms)
- GET /bhagavad-gita/1 200 in 1047ms (compile: 559ms, generate-params: 554ms, render: 488ms)
- GET /bhagavad-gita/1 200 in 276ms (compile: 26ms, generate-params: 21ms, render: 250ms)
- GET /bhagavad-gita/1 200 in 680ms (compile: 36ms, generate-params: 32ms, render: 644ms)
- GET /bhagavad-gita/1 200 in 598ms (compile: 25ms, generate-params: 21ms, render: 574ms)
- GET /bhagavad-gita/1 200 in 581ms (compile: 31ms, generate-params: 26ms, render: 550ms)
+ GET /bhagavad-gita/1 500 in 671ms (compile: 653ms, render: 18ms)
+✓ Compiled in 78ms
+ GET / 200 in 392ms (compile: 127ms, render: 264ms)
+ GET /bhagavad-gita/chapter-1 200 in 890ms (compile: 591ms, generate-params: 587ms, render: 299ms)
+ GET /bhagavad-gita/chapter-1/verse-1 200 in 2.1s (compile: 2.0s, generate-params: 1086ms, render: 67ms)

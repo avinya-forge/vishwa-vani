@@ -1,6 +1,8 @@
 'use client'
 
 import React, { useState, useEffect } from 'react'
+import { useParams } from 'next/navigation'
+import Link from 'next/link'
 
 interface VerseAuthor {
   author: string
@@ -39,6 +41,10 @@ interface StudyClientProps {
 }
 
 export default function StudyClient({ verses, chapterTitle }: StudyClientProps) {
+  const params = useParams()
+  const textSlug = params?.text || 'bhagavad-gita'
+  const chapterSlug = params?.chapter || 'chapter-1'
+
   const [mounted, setMounted] = useState(false)
   const [targetLang, setTargetLang] = useState<'hi' | 'en' | 'mr'>('en')
   
@@ -248,9 +254,11 @@ export default function StudyClient({ verses, chapterTitle }: StudyClientProps) 
             key={verse._id} 
             className="group relative bg-white/90 backdrop-blur-md rounded-xl p-3 sm:p-4 md:p-5 shadow-[0_4px_20px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-500 border border-stone-100"
           >
-            <div className="absolute -top-2 sm:-top-3 left-1/2 -translate-x-1/2 bg-gradient-to-tr from-orange-600 to-orange-400 text-white w-6 h-6 sm:w-8 sm:h-8 rounded-full flex items-center justify-center font-bold shadow-md shadow-orange-500/30 ring-2 ring-white text-xs sm:text-sm">
-              {verse.verse}
-            </div>
+            <Link href={`/${textSlug}/${chapterSlug}/verse-${verse.verse}`}>
+              <div className="absolute -top-2 sm:-top-3 left-1/2 -translate-x-1/2 bg-gradient-to-tr from-orange-600 to-orange-400 text-white w-6 h-6 sm:w-8 sm:h-8 rounded-full flex items-center justify-center font-bold shadow-md shadow-orange-500/30 ring-2 ring-white text-xs sm:text-sm hover:scale-110 transition-transform cursor-pointer">
+                {verse.verse}
+              </div>
+            </Link>
 
             <div className="text-center mt-3 sm:mt-4 mb-3 sm:mb-4">
               <h2 className="text-base sm:text-lg md:text-xl font-semibold text-stone-800 leading-[1.4] sm:leading-[1.5] whitespace-pre-wrap font-serif">
