@@ -12,6 +12,8 @@ import { useEffect } from 'react';
  */
 export default function SecurityShield() {
   useEffect(() => {
+    if (typeof window === 'undefined') return;
+    
     // 1. Disable Right-Click
     const handleContextMenu = (e: MouseEvent) => {
       e.preventDefault();

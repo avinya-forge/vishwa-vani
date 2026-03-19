@@ -1,29 +1,15 @@
 'use client'
 
 import React, { useState, useEffect } from 'react'
+import Link from 'next/link'
 import { useTranslations, useLocale } from 'next-intl'
 import AstroExplorer from '@/components/lab/AstroExplorer'
 import { getDailyWisdom } from '@/lib/wisdom'
+import ShlokaMask from './ShlokaMask'
 
-interface VerseAuthor {
-  author: string
-  ht?: string // Hindi Translation
-  hc?: string // Hindi Commentary
-  et?: string // English Translation
-  ec?: string // English Commentary
-  sc?: string // Sanskrit Commentary
-}
+import { NVFFragment, FragmentLayer } from '@/lib/nvf'
 
-interface GitaVerse {
-  _id: string
-  chapter: number
-  verse: number
-  slok: string
-  transliteration: string
-  [key: string]: any // To pick dynamic authors
-}
-
-export const AUTHOR_METADATA: Record<string, { name: string, langs: ('en' | 'hi' | 'mr')[] }> = {
+export const AUTHOR_METADATA: Record<string, { name: string, langs: ('en' | 'hi' | 'mr' | 'sa')[] }> = {
   siva: { name: 'Swami Sivananda', langs: ['en', 'hi'] },
   rams: { name: 'Swami Ramsukhdas', langs: ['hi'] },
   chinmay: { name: 'Chinmaya Mission', langs: ['en'] },
@@ -36,7 +22,7 @@ export const AUTHOR_METADATA: Record<string, { name: string, langs: ('en' | 'hi'
 }
 
 interface StudyClientProps {
-  verses: GitaVerse[]
+  verses: NVFFragment[]
   chapterTitle: string
   scriptureName: string
   tagline: string
@@ -51,15 +37,14 @@ export default function StudyClient({ verses, chapterTitle, scriptureName, tagli
   const [targetLang, setTargetLang] = useState<'hi' | 'en' | 'mr'>(locale)
   
   // By default enable some well-known authors globally so it's not empty initially.
-  const defaultAuthors = ['siva', 'rams', 'prabhu', 'chinmay', 'sankar']
+  const defaultAuthors = ['siva', 'rams', 'sankar']
   const [enabledAuthors, setEnabledAuthors] = useState<string[]>(defaultAuthors)
   const [showSettings, setShowSettings] = useState(false)
 
   useEffect(() => {
-    // Priority 1: Current URL Locale (ensures /hi route shows Hindi)
+    // Sync with global locale from provider
     setTargetLang(locale)
     
-    // Priority 2: Stored Authors
     const storedAuthors = localStorage.getItem('vishwa_authors')
     if (storedAuthors) {
       try {
@@ -70,32 +55,31 @@ export default function StudyClient({ verses, chapterTitle, scriptureName, tagli
     setMounted(true)
   }, [locale])
 
-  // Persist Changes
-  const updateLang = (lang: 'hi' | 'en' | 'mr') => {
-    setTargetLang(lang)
-    localStorage.setItem('vishwa_lang', lang)
-    // Optional: We could also navigate to the localized URL here if we want deep linking
-    // For now keeping it as a content-level toggle
-  }
-
   const toggleAuthor = (authorKey: string) => {
-    const nextArr = enabledAuthors.includes(authorKey)
-      ? enabledAuthors.filter(a => a !== authorKey)
-      : [...enabledAuthors, authorKey]
+    let nextArr = [...enabledAuthors]
+    
+    if (nextArr.includes(authorKey)) {
+      nextArr = nextArr.filter(a => a !== authorKey)
+    } else {
+      if (nextArr.length >= 3) {
+        // Enforce practical limit to prevent UI clutter
+        alert('Universal Study Mode: Please limit to 3 authors to maintain reading Clarity.')
+        return
+      }
+      nextArr.push(authorKey)
+    }
     
     setEnabledAuthors(nextArr)
     localStorage.setItem('vishwa_authors', JSON.stringify(nextArr))
   }
 
-  const renderAggregatedCommentaries = (verse: GitaVerse) => {
-    const chunks: { authorName: string, text: string, lang: 'en' | 'hi' }[] = []
+  const renderAggregatedCommentaries = (verse: NVFFragment) => {
+    const chunks: { authorName: string, text: string, lang: 'en' | 'hi' | 'mr' | 'sa' }[] = []
     
-    enabledAuthors.forEach(key => {
-      if (verse[key]) {
-        const item = verse[key] as VerseAuthor
-        const authorName = AUTHOR_METADATA[key]?.name || key
-        if (item.ec) chunks.push({ authorName, text: item.ec.trim(), lang: 'en' })
-        if (item.hc) chunks.push({ authorName, text: item.hc.trim(), lang: 'hi' })
+    verse.layers.forEach(layer => {
+      if (enabledAuthors.includes(layer.author) && layer.type === 'commentary') {
+        const authorName = AUTHOR_METADATA[layer.author]?.name || layer.author
+        chunks.push({ authorName, text: layer.content.trim(), lang: layer.lang })
       }
     })
 
@@ -109,27 +93,29 @@ export default function StudyClient({ verses, chapterTitle, scriptureName, tagli
     })
 
     return (
-      <div className="mt-3 pt-3 border-t border-stone-200">
+      <div className="mt-4 pt-4 border-t border-stone-100">
         <details className="group/details">
-          <summary className="cursor-pointer font-medium text-orange-600 hover:text-orange-700 flex items-center justify-center gap-2 list-none transition-colors text-xs">
+          <summary className="cursor-pointer font-bold text-orange-600 hover:text-orange-700 flex items-center justify-center gap-2 list-none transition-colors text-[10px] uppercase tracking-widest">
             {t('readDeepCommentary')}
             <svg className="w-3 h-3 transition-transform duration-300 group-open/details:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M19 9l-7 7-7-7" />
             </svg>
           </summary>
           
-          <div className="mt-2 space-y-2 sm:space-y-3 animate-in slide-in-from-top-4 fade-in duration-500">
+          <div className="mt-4 space-y-3 animate-in fade-in slide-in-from-top-2 duration-300">
             {Array.from(uniqueMap.entries()).map(([keyText, authors], idx) => {
-              const langFlag = keyText.startsWith('[en]') ? pt('en') : pt('hi')
+              const langCode = keyText.substring(1, 3) as 'en' | 'hi' | 'mr'
+              const langFlag = pt(langCode)
               const actualText = keyText.substring(5)
               
               return (
-                <div key={idx} className="bg-stone-50 p-3 sm:p-4 rounded-xl shadow-sm border border-stone-100/50">
-                  <h4 className="text-[9px] sm:text-[10px] font-bold text-stone-500 mb-1.5 uppercase tracking-wider">
+                <div key={idx} className="bg-stone-50/50 p-4 rounded-2xl border border-stone-100/50">
+                  <h4 className="text-[10px] font-bold text-stone-400 mb-2 uppercase tracking-widest flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 bg-orange-200 rounded-full" />
                     {t('commentary')} ({langFlag}) <span className="text-stone-300 mx-1">|</span> 
-                    <span className="text-orange-800/80">{authors.join(', ')}</span>
+                    <span className="text-orange-800/70">{authors.join(', ')}</span>
                   </h4>
-                  <p className="text-stone-600 leading-[1.4] text-[12px] sm:text-[13px] whitespace-pre-wrap">{actualText}</p>
+                  <p className="text-stone-600 leading-relaxed text-[13px] sm:text-[14px] whitespace-pre-wrap">{actualText}</p>
                 </div>
               )
             })}
@@ -141,41 +127,25 @@ export default function StudyClient({ verses, chapterTitle, scriptureName, tagli
 
   if (!mounted) return <div className="min-h-screen bg-[#FDFBF7] animate-pulse" />
 
-  // Dynamic authors found in the current scripture data
   const scriptureAuthors = Array.from(new Set(
-    verses.flatMap(v => Object.keys(v).filter(k => AUTHOR_METADATA[k]))
+    verses.flatMap(v => v.layers.map(l => l.author).filter(a => AUTHOR_METADATA[a]))
   ))
 
   return (
     <>
       {showSettings && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-stone-900/40 backdrop-blur-sm transition-opacity">
-          <div className="bg-white rounded-3xl w-full max-w-md shadow-2xl p-6 md:p-8 animate-in zoom-in-95 duration-200">
-            <div className="flex justify-between items-center mb-6 border-b border-stone-100 pb-4">
-              <h2 className="text-xl font-bold text-stone-800 font-serif">{pt('title')}</h2>
-              <button onClick={() => setShowSettings(false)} className="text-stone-400 hover:text-stone-600 bg-stone-100 p-2 rounded-full">
-                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
+        <div className="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-stone-900/60 backdrop-blur-md transition-opacity">
+          <div className="bg-white rounded-[2.5rem] w-full max-w-md shadow-2xl p-8 animate-in zoom-in-95 duration-300 border border-white/20">
+            <div className="flex justify-between items-center mb-8 border-b border-stone-100 pb-5">
+              <h2 className="text-xl font-serif font-black text-stone-800">{pt('title')}</h2>
+              <button onClick={() => setShowSettings(false)} className="text-stone-400 hover:text-stone-600 bg-stone-50 p-2.5 rounded-full transition-colors">
+                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12" /></svg>
               </button>
             </div>
             
-            <div className="space-y-6">
+            <div className="space-y-8">
               <div>
-                <h3 className="text-sm font-bold uppercase tracking-wider text-stone-500 mb-3">{pt('language')}</h3>
-                <div className="flex gap-2">
-                  {(['en', 'hi', 'mr'] as const).map(l => (
-                    <button 
-                      key={l}
-                      onClick={() => updateLang(l)}
-                      className={`flex-1 py-2 px-4 rounded-xl font-semibold transition-all border ${targetLang === l ? 'bg-orange-600 text-white border-orange-600' : 'bg-white text-stone-600 border-stone-200 hover:border-orange-300'}`}
-                    >
-                      {pt(l)}
-                    </button>
-                  ))}
-                </div>
-              </div>
-
-              <div>
-                <h3 className="text-sm font-bold uppercase tracking-wider text-stone-500 mb-3">{pt('commentarySets')}</h3>
+                <h3 className="text-[10px] font-bold uppercase tracking-[0.2em] text-stone-400 mb-4">{pt('commentarySets')}</h3>
                 <div className="space-y-2 max-h-[40vh] overflow-y-auto pr-2 custom-scrollbar">
                   {scriptureAuthors
                     .filter(key => AUTHOR_METADATA[key]?.langs.includes(targetLang))
@@ -183,25 +153,26 @@ export default function StudyClient({ verses, chapterTitle, scriptureName, tagli
                       const name = AUTHOR_METADATA[key]?.name || key
                       const isEnabled = enabledAuthors.includes(key)
                       return (
-                        <label key={key} className="flex items-center p-3 sm:p-4 rounded-xl border border-stone-100 hover:bg-stone-50 cursor-pointer transition-colors group">
-                        <input 
-                          type="checkbox" 
-                          checked={isEnabled}
-                          onChange={() => toggleAuthor(key)}
-                          className="w-5 h-5 text-orange-600 rounded border-stone-300 focus:ring-orange-500"
-                        />
-                        <span className={`ml-3 text-[15px] sm:text-[16px] font-medium transition-colors ${isEnabled ? 'text-stone-800' : 'text-stone-400'}`}>{name}</span>
-                      </label>
-                    )
-                  })}
+                        <label key={key} className={`flex items-center p-4 rounded-2xl border transition-all cursor-pointer group ${isEnabled ? 'bg-orange-50/50 border-orange-100' : 'bg-white border-stone-100 hover:border-orange-200'}`}>
+                          <input 
+                            type="checkbox" 
+                            checked={isEnabled}
+                            onChange={() => toggleAuthor(key)}
+                            className="w-5 h-5 text-orange-600 rounded-lg border-stone-300 focus:ring-orange-500"
+                          />
+                          <span className={`ml-4 text-[14px] font-semibold tracking-tight transition-colors ${isEnabled ? 'text-orange-900' : 'text-stone-400'}`}>{name}</span>
+                        </label>
+                      )
+                    })
+                  }
                 </div>
               </div>
             </div>
 
-            <div className="mt-8">
+            <div className="mt-10">
               <button 
                 onClick={() => setShowSettings(false)}
-                className="w-full py-3 bg-stone-900 text-white rounded-xl font-bold shadow-md hover:bg-stone-800 transition-colors"
+                className="w-full py-4 bg-stone-900 text-white rounded-2xl font-black text-xs uppercase tracking-[0.2em] shadow-xl hover:bg-orange-600 transition-all active:scale-95"
               >
                 {pt('saveApply')}
               </button>
@@ -210,136 +181,153 @@ export default function StudyClient({ verses, chapterTitle, scriptureName, tagli
         </div>
       )}
 
+      {/* Modern Floating Action Button */}
       <button 
         onClick={() => setShowSettings(true)}
-        className="fixed bottom-6 right-6 md:bottom-8 md:right-8 z-40 bg-white p-4 rounded-full shadow-2xl border border-stone-200 text-orange-600 hover:scale-105 active:scale-95 transition-transform"
+        className="fixed bottom-8 right-8 z-[55] bg-stone-900 p-5 rounded-full shadow-2xl text-white hover:bg-orange-600 hover:scale-110 active:scale-90 transition-all duration-300 group"
       >
-        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <svg className="w-6 h-6 group-hover:rotate-90 transition-transform duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
         </svg>
       </button>
 
-      <div className="relative overflow-hidden bg-gradient-to-b from-orange-100/30 to-[#FDFBF7] pt-10 pb-8 px-4">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] sm:w-[1200px] sm:h-[400px] bg-orange-200/20 blur-[130px] rounded-full pointer-events-none" />
-        <div className="max-w-[1600px] mx-auto relative z-10 text-center lg:text-left lg:px-12 flex flex-col lg:flex-row items-center justify-between gap-6">
-          <div className="max-w-3xl">
-            <span className="inline-block py-1 px-3 rounded-full bg-orange-100/70 text-orange-800 text-[10px] sm:text-xs font-semibold tracking-widest uppercase mb-3 sm:mb-4 shadow-sm border border-orange-200/30">
+      {/* Hero Section with Reduced Header Sizes */}
+      <div className="relative overflow-hidden bg-gradient-to-b from-orange-50/50 to-[#FDFBF7] pt-12 pb-10 px-4 sm:px-8">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-from)_0%,_transparent_70%)] from-orange-100/20 pointer-events-none" />
+        <div className="max-wide relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8 lg:px-4">
+          <div className="max-w-4xl text-center lg:text-left">
+            <span className="inline-block py-1 px-4 rounded-full bg-orange-600/5 text-orange-700 text-[10px] font-black tracking-[0.2em] uppercase mb-4 border border-orange-100/50">
               {scriptureName}
             </span>
-            <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-serif font-bold text-stone-900 mb-2 sm:mb-4 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif font-black text-stone-900 mb-4 leading-[1.1] tracking-tight">
               {chapterTitle}
             </h1>
-            <p className="text-sm sm:text-base md:text-lg text-stone-600 max-w-2xl leading-relaxed">
+            <p className="text-base sm:text-lg text-stone-500 max-w-2xl leading-relaxed font-medium">
               {tagline}
             </p>
           </div>
           
-          <div className="hidden lg:flex items-center gap-6 bg-white/40 backdrop-blur-sm p-6 rounded-3xl border border-white/60 shadow-sm">
+          <div className="hidden lg:flex items-center gap-8 bg-white/50 backdrop-blur-sm p-8 rounded-[2rem] border border-white shadow-sm ring-1 ring-stone-100">
             <div className="text-center px-4 border-r border-stone-200/50">
-              <p className="text-[10px] font-bold text-stone-400 uppercase tracking-tighter mb-1">{t('verses')}</p>
-              <p className="text-2xl font-serif font-bold text-orange-900">{verses.length}</p>
+              <p className="text-[10px] font-black text-stone-300 uppercase tracking-widest mb-2">{t('verses')}</p>
+              <p className="text-3xl font-serif font-black text-orange-950">{verses.length}</p>
             </div>
             <div className="text-center px-4">
-              <p className="text-[10px] font-bold text-stone-400 uppercase tracking-tighter mb-1">{t('interactive')}</p>
-              <div className="flex -space-x-2">
-                <div className="w-8 h-8 rounded-full bg-orange-100 border-2 border-white flex items-center justify-center text-[10px]">✨</div>
-                <div className="w-8 h-8 rounded-full bg-orange-200 border-2 border-white flex items-center justify-center text-[10px] scale-110">🕉️</div>
+              <p className="text-[10px] font-black text-stone-300 uppercase tracking-widest mb-2">{t('interactive')}</p>
+              <div className="flex -space-x-3">
+                <div className="w-10 h-10 rounded-full bg-orange-100 border-4 border-white flex items-center justify-center text-sm shadow-sm">✨</div>
+                <div className="w-10 h-10 rounded-full bg-orange-200 border-4 border-white flex items-center justify-center text-sm shadow-sm scale-110 z-10">🕉️</div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-12 mt-4 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_350px] gap-8">
-          <div className="space-y-6 sm:space-y-8">
-        {verses.map((verse) => (
-          <article 
-            key={verse._id} 
-            className="group relative bg-white/95 backdrop-blur-md rounded-2xl p-4 sm:p-6 md:p-8 shadow-[0_4px_20px_rgb(0,0,0,0.02)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.05)] transition-all duration-500 border border-stone-100"
-          >
-            <div className="absolute -top-3 sm:-top-4 left-6 bg-gradient-to-tr from-orange-600 to-orange-400 text-white w-7 h-7 sm:w-8 sm:h-8 rounded-full flex items-center justify-center font-bold shadow-md shadow-orange-500/20 ring-2 ring-white text-[11px] sm:text-xs">
-              {verse.verse}
-            </div>
-
-            <div className="text-center mt-2 sm:mt-3 mb-3 sm:mb-4">
-              <h2 className="text-base sm:text-lg md:text-xl font-semibold text-stone-800 leading-[1.6] whitespace-pre-wrap font-serif">
-                {verse.slok}
-              </h2>
-              <p className="mt-1 sm:mt-2 text-stone-400 italic text-[10px] sm:text-[11px] whitespace-pre-wrap leading-relaxed tracking-tight">
-                {verse.transliteration}
-              </p>
-            </div>
-
-            <div className="h-px w-full bg-gradient-to-r from-transparent via-stone-100 to-transparent my-3 sm:my-4" />
-
-            <div className={`grid gap-4 sm:gap-6 ${targetLang !== 'en' ? 'md:grid-cols-2' : ''}`}>
-              <div className="space-y-1 sm:space-y-2">
-                <div className="flex items-center gap-2 mb-1 opacity-80">
-                  <span className="w-5 h-[1px] bg-stone-300" />
-                  <h3 className="text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-stone-400">{t('translationEn')}</h3>
-                </div>
-                {verse.siva?.et ? (
-                  <p className="text-stone-700 leading-[1.6] text-[13px] sm:text-[14px] font-serif">{verse.siva.et}</p>
-                ) : verse.prabhu?.et ? (
-                   <p className="text-stone-700 leading-[1.6] text-[13px] sm:text-[14px] font-serif">{verse.prabhu.et}</p>
-                ) : (
-                  <p className="text-stone-400 italic text-[11px] sm:text-xs">{t('noTranslation')}</p>
-                )}
-              </div>
-
-              {targetLang !== 'en' && (
-                <div className="space-y-1 sm:space-y-2">
-                  <div className="flex items-center gap-2 mb-1 opacity-80">
-                    <span className="w-5 h-[1px] bg-stone-300" />
-                    <h3 className="text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-stone-400">
-                      {targetLang === 'hi' ? t('meaningHi') : t('meaningMr')}
-                    </h3>
+      {/* Main Content Area - Wide Canvas */}
+      <div className="max-wide px-4 sm:px-8 mt-10 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-10">
+          <div className="space-y-8 sm:space-y-12">
+            {verses.map((verse) => (
+              <article 
+                key={verse.id} 
+                className="group relative bg-white rounded-[2rem] p-6 sm:p-10 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_60px_-20px_rgba(0,0,0,0.08)] transition-all duration-500 border border-stone-100 hover:border-orange-100/50"
+              >
+                <div className="absolute -top-4 left-10 flex items-center gap-3">
+                  <div className="bg-stone-900 text-white w-9 h-9 rounded-2xl flex items-center justify-center font-black shadow-xl ring-4 ring-white text-[11px] group-hover:bg-orange-600 transition-colors">
+                    {verse.verse}
                   </div>
-                  
-                  {targetLang === 'hi' && (verse.rams?.ht || verse.tej?.ht) ? (
-                    <p className="text-stone-700 leading-[1.6] text-[14px] sm:text-[15px]" style={{ fontFamily: 'sans-serif' }}>
-                      {verse.rams?.ht || verse.tej?.ht}
-                    </p>
-                  ) : targetLang === 'mr' ? (
-                     <p className="text-stone-400 italic text-[11px] sm:text-xs">{t('compilingDB')}</p>
-                  ) : (
-                    <p className="text-stone-400 italic text-[11px] sm:text-xs">{t('noTranslation')}</p>
+                  <Link 
+                    href="/docs/compliance/legal_audit"
+                    className="opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1.5 px-3 py-1 bg-stone-50 text-[9px] font-bold text-stone-400 rounded-full border border-stone-100 uppercase tracking-tighter"
+                    title="Source Credit: SRC-001 (MIT)"
+                  >
+                    <span className="w-1.5 h-1.5 bg-orange-400 rounded-full animate-pulse" />
+                    Library Source
+                  </Link>
+                </div>
+
+                <div className="text-center mb-8">
+                  <ShlokaMask 
+                    text={verse.original} 
+                    className="mb-8"
+                  />
+                  <p className="mt-4 text-stone-400 font-medium italic text-[11px] sm:text-xs whitespace-pre-wrap leading-relaxed tracking-wide opacity-80">
+                    {verse.transliteration}
+                  </p>
+                </div>
+
+                <div className="h-px w-full bg-stone-100 my-8" />
+
+                <div className={`grid gap-8 ${targetLang !== 'en' ? 'md:grid-cols-2' : ''}`}>
+                  <div className="space-y-3">
+                    <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-stone-300 flex items-center gap-2">
+                      <span className="w-4 h-px bg-stone-200" />
+                      {t('translationEn')}
+                    </h3>
+                    {(() => {
+                      const enTrans = verse.layers.find(l => l.lang === 'en' && l.type === 'translation')
+                      return enTrans ? (
+                        <p className="text-stone-700 leading-relaxed text-[15px] font-medium">{enTrans.content}</p>
+                      ) : (
+                        <p className="text-stone-400 italic text-xs">{t('noTranslation')}</p>
+                      )
+                    })()}
+                  </div>
+
+                  {targetLang !== 'en' && (
+                    <div className="space-y-3">
+                      <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-stone-300 flex items-center gap-2">
+                        <span className="w-4 h-px bg-stone-200" />
+                        {targetLang === 'hi' ? t('meaningHi') : t('meaningMr')}
+                      </h3>
+                      
+                      {(() => {
+                        const localTrans = verse.layers.find(l => l.lang === targetLang && l.type === 'translation')
+                        return localTrans ? (
+                          <p className="text-stone-800 leading-relaxed text-[16px] font-bold">
+                            {localTrans.content}
+                          </p>
+                        ) : (
+                          <div className="p-4 bg-orange-50/30 rounded-2xl border border-orange-100/20">
+                            <p className="text-orange-900/60 italic text-xs font-semibold">{t('compilingDB')}</p>
+                          </div>
+                        )
+                      })()}
+                    </div>
                   )}
                 </div>
-              )}
-            </div>
 
-            {renderAggregatedCommentaries(verse)}
-          </article>
-        ))}
+                {renderAggregatedCommentaries(verse)}
+              </article>
+            ))}
           </div>
           
-          <aside className="hidden lg:block space-y-6 sticky top-24 self-start">
+          <aside className="hidden lg:block space-y-8 sticky top-24 self-start">
             <AstroExplorer />
 
-            <section className="bg-white/80 backdrop-blur-md rounded-3xl p-8 border border-stone-100 shadow-sm">
-                <h3 className="text-xs font-bold text-stone-400 uppercase tracking-[0.2em] mb-4 flex items-center gap-2">
-                  <span className="w-2 h-2 bg-orange-500 rounded-full" />
+            <section className="bg-white rounded-[2.5rem] p-8 border border-stone-100 shadow-sm transition-all hover:shadow-xl hover:border-orange-100/50 group">
+                <h3 className="text-[10px] font-black text-stone-400 uppercase tracking-[0.2em] mb-6 flex items-center gap-3">
+                  <span className="w-2 h-2 bg-orange-500 rounded-full animate-pulse" />
                   {t('didYouKnow')}
                 </h3>
-                <div className="space-y-4">
-                  <p className="text-stone-600 font-serif leading-relaxed italic text-sm">
+                <div className="space-y-6">
+                  <p className="text-stone-600 font-serif leading-relaxed italic text-[15px] group-hover:text-stone-900 transition-colors">
                     {getDailyWisdom().text}
                   </p>
-                  <p className="text-[10px] text-stone-400 leading-relaxed uppercase tracking-widest text-right">
+                  <p className="text-[9px] text-orange-600/60 font-black uppercase tracking-widest text-right">
                     — {getDailyWisdom().source}
                   </p>
                 </div>
             </section>
 
-            <section className="bg-stone-50 rounded-3xl p-6 border border-stone-100 shadow-sm shadow-stone-200/50">
-              <h3 className="font-bold text-stone-400 text-[10px] uppercase tracking-widest mb-4">{t('contribution')}</h3>
-              <p className="text-[11px] text-stone-500 leading-relaxed mb-6">
-                Vishwa-Vani is a community effort to preserve Vedic wisdom. Report inaccuracies or suggest new authors.
+            <section className="bg-stone-900 rounded-[2.5rem] p-8 text-white shadow-2xl overflow-hidden relative group">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-orange-600 blur-[80px] opacity-20 group-hover:opacity-40 transition-opacity" />
+              <h3 className="font-black text-[10px] uppercase tracking-widest mb-4 opacity-50">{t('contribution')}</h3>
+              <p className="text-xs text-stone-400 leading-relaxed mb-8 font-medium">
+                Vishwa-Vani is a globally sourced digital sanctuary. Help us transcribe, translate, and verify the wisdom of ages.
               </p>
-              <button className="w-full py-2 bg-stone-900 hover:bg-stone-800 text-white rounded-xl text-[10px] font-bold transition-colors">
+              <button className="w-full py-3.5 bg-white text-stone-900 rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-orange-600 hover:text-white transition-all shadow-lg active:scale-95">
                 {t('reachOut')}
               </button>
             </section>

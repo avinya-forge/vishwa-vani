@@ -6,7 +6,9 @@ Building the **Vedic Wikipedia**: A transcendent, multilingual, and friction-fre
 ## 🏔 Ideal State
 - **Performance**: Sub-100ms LCP on all text-heavy routes, leveraging Next.js Static Export (SSG).
 - **Aesthetic**: Minimalist, culturally resonant design focused on absolute readability (Sans-based Devanagari) and accessibility.
-- **Data Integrity**: Absolute SSoT mapping between English transliterations, Devanagari script, and localized meanings via standardized JSON schemas.
+- **Vedic Lake Storage**: Hybrid binary storage (SQLite WASM) for massive scriptures with encrypted blobs to prevent scraping.
+- **Normalized Vedic Fragment (NVF)**: An agile schema that allows infinite authors and translations per verse without changing the UI.
+- **Security Shield (Vedic Shield Architecture)**: Multi-layered protection including AES-256-GCM data encryption and ShlokaMask Canvas rendering to prevent DOM crawling.
 - **Zero-Cost Infrastructure**: Optimized for free hosting providers without sacrificing structural integrity or security.
 
 ## ⚖️ Pipeline Laws
@@ -17,7 +19,8 @@ Building the **Vedic Wikipedia**: A transcendent, multilingual, and friction-fre
     *   **Optimizer**: "Is this JSON sharded? Did we bloat the initial client bundle?"
     *   **Hardener**: "Is the fallback UI graceful for missing translations?"
     *   **Pragmatist**: "Is this overkill for a static site? Can we do this at build time?"
-5. **Universal Security**: Even for static sites, implement client-side encryption or obfuscation where essential to protect proprietary aggregation.
+5. **Universal Security (Vedic Shield)**: Even for static sites, implement client-side encryption (WASM/AES) and Canvas-masking to protect proprietary aggregation and prevent bot-crawling.
+6. **NVF Agile Fragmenting**: All data must follow the Normalized Vedic Fragment (NVF) schema to allow for infinite multi-author commentary and future AI interpretation.
 
 ## 🎯 Definition of Done (DoD)
 - Code compiles locally without TS or ESLint errors (`npm run build`).
