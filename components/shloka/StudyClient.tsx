@@ -247,17 +247,17 @@ export default function StudyClient({ verses, chapterTitle, scriptureName, tagli
                   </Link>
                 </div>
 
-                <div className="text-center mb-8">
+                <div className="text-center mb-6">
                   <ShlokaMask 
                     text={verse.original} 
-                    className="mb-8"
+                    className="mb-6 font-bold"
                   />
-                  <p className="mt-4 text-stone-400 font-medium italic text-[11px] sm:text-xs whitespace-pre-wrap leading-relaxed tracking-wide opacity-80">
+                  <p className="mt-4 text-stone-500 font-semibold italic text-[13px] sm:text-[14px] whitespace-pre-wrap leading-relaxed tracking-wide opacity-90">
                     {verse.transliteration}
                   </p>
                 </div>
 
-                <div className="h-px w-full bg-stone-100 my-8" />
+                <div className="h-px w-full bg-stone-100 my-6" />
 
                 <div className={`grid gap-8 ${targetLang !== 'en' ? 'md:grid-cols-2' : ''}`}>
                   <div className="space-y-3">
