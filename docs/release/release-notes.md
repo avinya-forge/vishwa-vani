@@ -1,7 +1,14 @@
 # Vishwa-Vani Release Archive
 
-*Current Session ID*: VANI-7
-*Last Action*: Processed TASK-602
+*Current Session ID*: VANI-8
+*Last Action*: Processed UX-101 and UX-102
+
+## [v0.5.1] - UI Density & Space Management
+*   **Epic Archived**: UI Density & Space Management (partial).
+*   **Notes**: Completed Phase UX-101 and UX-102 backlog items.
+*   **Completed Work**:
+    *   [x] UX-101: **Hero Refactor**: Reduce Landing Hero size (8xl -> 6xl) and tighten vertical margins for above-the-fold CTA visibility.
+    *   [x] UX-102: **Shloka Visual Prominence**: Fix 'weird smallness' by increasing font weight/style and reducing `ShlokaCard` padding (p-10 -> p-6).
 
 ## [v0.4.5] - Markdown Editor Component
 *   **Epic Archived**: UI/UX (partial).

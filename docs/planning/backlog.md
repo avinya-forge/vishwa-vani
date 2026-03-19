@@ -9,8 +9,6 @@
 
 | Task ID | Level | Task Description | Status |
 | :--- | :--- | :--- | :--- |
-| **UX-101** | P0 | **Hero Refactor**: Reduce Landing Hero size (8xl -> 6xl) and tighten vertical margins for above-the-fold CTA visibility. | ⏳ IN PROGRESS |
-| **UX-102** | P0 | **Shloka Visual Prominence**: Fix 'weird smallness' by increasing font weight/style and reducing `ShlokaCard` padding (p-10 -> p-6). | ⏳ IN PROGRESS |
 | **UX-201** | P0 | **Vedic ExplainShell Interaction**: Implement SVG-based connectors between Sanskrit tokens and English/Hindi word-meanings (Hover-mapping). | 📅 BACKLOG |
 | **UX-103** | P0 | **Intl Cleanup**: Resolve missing keys (`nav.readNow`, `prefs.sa`) to eliminate console hydration errors. | ✅ **DONE** |
 | **UX-202** | P1 | **Anvaya Tokenization Engine**: Refactor NVF schema to support word-by-word mapping (Token-level metadata). | 📅 BACKLOG |

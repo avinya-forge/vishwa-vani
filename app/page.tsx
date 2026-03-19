@@ -18,17 +18,17 @@ export default function Home() {
   if (!mounted) return <div className="min-h-screen bg-[#FDFBF7]" />
 
   return (
-    <main className="min-h-screen bg-[#FDFBF7] selection:bg-orange-100 py-16 px-4">
+    <main className="min-h-screen bg-[#FDFBF7] selection:bg-orange-100 py-12 px-4">
       <div className="max-wide mx-auto">
         
         {/* Hero Section */}
-        <header className="mb-24 text-center relative px-4">
+        <header className="mb-16 text-center relative px-4">
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[800px] h-[400px] bg-orange-200/20 blur-[130px] rounded-full pointer-events-none" />
           <div className="relative z-10 space-y-8">
             <span className="inline-block py-1.5 px-6 rounded-full bg-orange-600/5 text-orange-600 text-[10px] font-black tracking-[0.3em] uppercase border border-orange-100 shadow-sm animate-in fade-in slide-in-from-top-4 duration-1000">
                Exploring the Eternal Wisdom
             </span>
-            <h1 className="text-4xl md:text-6xl font-serif font-black text-stone-900 leading-[1] tracking-tighter">
+            <h1 className="text-3xl md:text-5xl font-serif font-black text-stone-900 leading-[1] tracking-tighter">
               {t('title')}
             </h1>
             <p className="text-lg md:text-xl text-stone-500 max-w-3xl mx-auto leading-relaxed font-medium">
@@ -50,7 +50,7 @@ export default function Home() {
           {VEDIC_LIBRARY.map((text) => (
             <div 
               key={text.slug} 
-              className={`group relative p-10 rounded-[2.5rem] border transition-all duration-700 flex flex-col h-full bg-white ${text.available ? 'border-stone-100 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.03)] hover:shadow-[0_25px_80px_-25px_rgba(0,0,0,0.1)] hover:-translate-y-2' : 'border-stone-50 opacity-60 bg-stone-50/50 grayscale'}`}
+              className={`group relative p-6 rounded-[2.5rem] border transition-all duration-700 flex flex-col h-full bg-white ${text.available ? 'border-stone-100 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.03)] hover:shadow-[0_25px_80px_-25px_rgba(0,0,0,0.1)] hover:-translate-y-2' : 'border-stone-50 opacity-60 bg-stone-50/50 grayscale'}`}
             >
               <div className="flex justify-between items-center mb-8">
                 <span className={`px-4 py-1.5 rounded-full text-[9px] font-black uppercase tracking-widest border ${text.available ? 'bg-orange-50/50 text-orange-600 border-orange-100/50' : 'bg-stone-200/50 text-stone-400 border-stone-200/30'}`}>
