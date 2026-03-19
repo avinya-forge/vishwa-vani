@@ -19,8 +19,8 @@ export default function ShlokaMask({ text, className }: { text: string, classNam
         if (!ctx) return
 
         // Set dimensions based on parent/font
-        const fontSize = 32
-        const padding = 40
+        const fontSize = 56
+        const padding = 20
         const lines = text.split('\n')
         
         // Measure text for auto-sizing

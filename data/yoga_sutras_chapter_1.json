@@ -1,0 +1,28 @@
+[
+  {
+    "verse": 1,
+    "original": "अथ योगानुशासनम्॥",
+    "transliteration": "atha yogānuśāsanam ||",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "en",
+        "author": "siva",
+        "content": "Now, the instruction of Yoga."
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "original": "योगश्चित्तवृत्तिनिरोधः॥",
+    "transliteration": "yogaś-citta-vṛtti-nirodhaḥ ||",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "en",
+        "author": "siva",
+        "content": "Yoga is the control (nirodhah, regulation, channeling, mastery, integration, coordination, stilling, quieting, setting aside) of the modifications (gross and subtle thought patterns) of the mind field."
+      }
+    ]
+  }
+]

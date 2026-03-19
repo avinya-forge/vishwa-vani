@@ -35,7 +35,9 @@ function getDb(shardName) {
         slok TEXT,
         transliteration TEXT,
         content JSON
-      )
+      );
+      CREATE INDEX IF NOT EXISTS idx_verses_slok ON verses(slok COLLATE NOCASE);
+      CREATE INDEX IF NOT EXISTS idx_verses_translit ON verses(transliteration COLLATE NOCASE);
     `);
   });
   

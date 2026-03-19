@@ -28,10 +28,10 @@ export default async function RootLayout({
         <meta name="theme-color" content="#EA580C" />
         <meta
           httpEquiv="Content-Security-Policy"
-          content="default-src 'self' https://*.googletagmanager.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com;"
+          content="default-src 'self' https://*.googletagmanager.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; worker-src 'self' blob:;"
         />
       </head>
-      <body className={`${inter.className} min-h-screen flex flex-col bg-[#FDFBF7] text-stone-900 overflow-x-hidden`}>
+      <body suppressHydrationWarning className={`${inter.className} min-h-screen flex flex-col bg-[#FDFBF7] text-stone-900 overflow-x-hidden`}>
         <LocaleProvider>
           <SecurityShield />
           <Header />

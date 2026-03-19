@@ -184,7 +184,7 @@ export default function StudyClient({ verses, chapterTitle, scriptureName, tagli
       {/* Modern Floating Action Button */}
       <button 
         onClick={() => setShowSettings(true)}
-        className="fixed bottom-8 right-8 z-[55] bg-stone-900 p-5 rounded-full shadow-2xl text-white hover:bg-orange-600 hover:scale-110 active:scale-90 transition-all duration-300 group"
+        className="fixed bottom-4 right-4 sm:bottom-8 sm:right-8 z-[55] bg-stone-900 p-4 sm:p-5 rounded-full shadow-2xl text-white hover:bg-orange-600 hover:scale-110 active:scale-90 transition-all duration-300 group"
       >
         <svg className="w-6 h-6 group-hover:rotate-90 transition-transform duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
@@ -231,9 +231,9 @@ export default function StudyClient({ verses, chapterTitle, scriptureName, tagli
             {verses.map((verse) => (
               <article 
                 key={verse.id} 
-                className="group relative bg-white rounded-[2rem] p-6 sm:p-10 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_60px_-20px_rgba(0,0,0,0.08)] transition-all duration-500 border border-stone-100 hover:border-orange-100/50"
+                className="group relative bg-white rounded-[2rem] p-4 sm:p-6 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_60px_-20px_rgba(0,0,0,0.08)] transition-all duration-500 border border-stone-100 hover:border-orange-100/50"
               >
-                <div className="absolute -top-4 left-10 flex items-center gap-3">
+                <div className="absolute -top-4 left-6 sm:left-10 flex items-center gap-3">
                   <div className="bg-stone-900 text-white w-9 h-9 rounded-2xl flex items-center justify-center font-black shadow-xl ring-4 ring-white text-[11px] group-hover:bg-orange-600 transition-colors">
                     {verse.verse}
                   </div>
@@ -303,7 +303,7 @@ export default function StudyClient({ verses, chapterTitle, scriptureName, tagli
             ))}
           </div>
           
-          <aside className="hidden lg:block space-y-8 sticky top-24 self-start">
+          <aside className="space-y-8 lg:sticky lg:top-24 lg:self-start mt-12 lg:mt-0">
             <AstroExplorer />
 
             <section className="bg-white rounded-[2.5rem] p-8 border border-stone-100 shadow-sm transition-all hover:shadow-xl hover:border-orange-100/50 group">

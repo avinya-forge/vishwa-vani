@@ -3,7 +3,8 @@
     "home": "Home",
     "library": "Library",
     "search": "Search",
-    "about": "About"
+    "about": "About",
+    "readNow": "Read Now"
   },
   "home": {
     "title": "Vishwa-Vani",
@@ -41,7 +42,8 @@
     "saveApply": "Save & Apply",
     "en": "English",
     "hi": "Hindi",
-    "mr": "Marathi"
+    "mr": "Marathi",
+    "sa": "Sanskrit"
   },
   "footer": {
     "donate": "Vishwa-Vani is a non-profit open-source initiative. We rely on readers like you to keep the digital sanctuary alive.",

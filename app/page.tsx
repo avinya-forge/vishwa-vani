@@ -28,7 +28,7 @@ export default function Home() {
             <span className="inline-block py-1.5 px-6 rounded-full bg-orange-600/5 text-orange-600 text-[10px] font-black tracking-[0.3em] uppercase border border-orange-100 shadow-sm animate-in fade-in slide-in-from-top-4 duration-1000">
                Exploring the Eternal Wisdom
             </span>
-            <h1 className="text-5xl md:text-8xl font-serif font-black text-stone-900 leading-[1] tracking-tighter">
+            <h1 className="text-4xl md:text-6xl font-serif font-black text-stone-900 leading-[1] tracking-tighter">
               {t('title')}
             </h1>
             <p className="text-lg md:text-xl text-stone-500 max-w-3xl mx-auto leading-relaxed font-medium">
