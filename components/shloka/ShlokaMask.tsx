@@ -19,12 +19,12 @@ export default function ShlokaMask({ text, className }: { text: string, classNam
         if (!ctx) return
 
         // Set dimensions based on parent/font
-        const fontSize = 56
+        const fontSize = 64
         const padding = 20
         const lines = text.split('\n')
         
         // Measure text for auto-sizing
-        ctx.font = `black ${fontSize}px serif`
+        ctx.font = `900 ${fontSize}px serif`
         const maxWidth = Math.max(...lines.map(l => ctx.measureText(l).width)) + padding * 2
         
         const dpr = window.devicePixelRatio || 1
@@ -34,7 +34,7 @@ export default function ShlokaMask({ text, className }: { text: string, classNam
         // canvas.style.height set by flex/aspect-ratio
         
         ctx.scale(dpr, dpr)
-        ctx.font = `black ${fontSize}px "Noto Serif Devanagari", serif`
+        ctx.font = `900 ${fontSize}px "Noto Serif Devanagari", serif`
         ctx.textAlign = 'center'
         ctx.textBaseline = 'middle'
         ctx.fillStyle = '#1c1917' // charcoal-900
