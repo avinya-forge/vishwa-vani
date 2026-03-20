@@ -14,7 +14,7 @@ Vishwa-Vani strictly ingests data only from **Public Domain** or **MIT/GPL/CC-BY
 | Source ID | Text | Origin / Path | License | Verified | Attribution Line |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **SRC-001** | Bhagavad Gita | [vedicscriptures.github.io](https://vedicscriptures.github.io) | MIT | ✅ YES | "Sanskrit texts and translations provided by the Vedic Scriptures Open-Source Project (MIT)." |
-| **SRC-002** | Mahabharata | [bhavykhatri/DharmicData](https://github.com/bhavykhatri/DharmicData) | Public Domain / CC | ⏳ PENDING | "Epics aggregated from bhavykhatri's DharmicData project." |
+| **SRC-002** | Mahabharata | [bhavykhatri/DharmicData](https://github.com/bhavykhatri/DharmicData) | ODbL | ✅ YES | "Epics aggregated from bhavykhatri's DharmicData project." |
 | **SRC-003** | Puranas | [Akhilesh-Gogikar/Puranas](https://github.com/Akhilesh-Gogikar/Puranas) | Public Domain | ⏳ PENDING | "Puranic corpus digitized by Akhilesh Gogikar." |
 
 ---
@@ -28,8 +28,8 @@ To prevent 100s of footer links, Vishwa-Vani uses a **Multi-Tier Attribution Sys
 ---
 
 ## 🏗️ Action Items
-- [ ] **1902.1**: Add "Source Context" button to `StudyClient` to show attribution per book.
-- [ ] **1902.2**: Audit `bhavykhatri` Mahabharata license headers.
+- [x] **1902.1**: Add "Source Context" button to `StudyClient` to show attribution per book.
+- [x] **1902.2**: Audit `bhavykhatri` Mahabharata license headers.
 - [ ] **1902.3**: Contact `Akhilesh Gogikar` for explicit "Digitization Credit" preference.
 
 _Last Updated: March 2026_

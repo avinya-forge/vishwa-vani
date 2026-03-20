@@ -30,7 +30,7 @@
 | **3002** | P0 | **Web Worker SQL Offloading**: Move all SQLite WASM queries to background worker to ensure 100% UI responsiveness during deep searches. | 📅 BACKLOG |
 | **3004** | P0 | **Schema Versioning & Validation**: Implement strict metadata checksums and auto-version detection for sharded Lake integrity. | 📅 BACKLOG |
 | **3001** | P0 | **Multi-Lake Data Ingestion**: Complete mass ingestion for Gita (1-18) and initial Mahbharata shards using the sharding strategy. | ⏳ IN PROGRESS |
-| **1902** | P0 | **Legal & Compliance Audit Tracking**: Continuous verification of upcoming Puranic data sources (SRC-002, SRC-003). | ⏳ IN PROGRESS |
+| **1902** | P0 | **Legal & Compliance Audit Tracking**: Continuous verification of upcoming Puranic data sources (SRC-002, SRC-003). | [TECH_DEBT] ⏳ IN PROGRESS |
 
 ---
 
