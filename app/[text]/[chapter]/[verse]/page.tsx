@@ -2,6 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import Link from 'next/link'
 import StudyClient from '@/components/shloka/StudyClient'
+import { migrateToNVF } from '@/lib/nvf'
 
 export async function generateStaticParams() {
   // Pre-render pages for chapters 1 through 18 of bhagavad-gita initially
@@ -29,6 +30,8 @@ export async function generateStaticParams() {
 
   return params
 }
+
+export const dynamicParams = true;
 
 interface VerseAuthor {
   author: string
@@ -71,9 +74,9 @@ export default async function StudyVersePage({ params }: { params: Promise<{ tex
     console.error(`Failed to load text ${text} chapter ${chapterNumber} data`, e)
   }
 
-  const verseData = verses.find(v => String(v.verse) === verseNumber)
+  const rawVerseData = verses.find(v => String(v.verse) === verseNumber)
 
-  if (!verseData) {
+  if (!rawVerseData) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-stone-50">
         <div className="text-center p-8 bg-white rounded-2xl shadow-sm border border-orange-100">
@@ -92,9 +95,11 @@ export default async function StudyVersePage({ params }: { params: Promise<{ tex
   }
   const title = chapterTitles[chapterNumber] || `Chapter ${chapterNumber}`
 
+  const verseData = migrateToNVF(rawVerseData, text)
+
   return (
     <main className="min-h-screen bg-[#FDFBF7] selection:bg-orange-100/60 pb-20">
-      <StudyClient verses={[verseData]} chapterTitle={`${title} - Verse ${verseNumber}`} />
+      <StudyClient verses={[verseData]} chapterTitle={`${title} - Verse ${verseNumber}`} scriptureName={safeTextName} tagline="" />
 
       {/* Footer Navigation */}
       <div className="max-w-4xl mx-auto px-4 mt-16 text-center relative z-10 flex flex-col sm:flex-row items-center justify-center gap-4">

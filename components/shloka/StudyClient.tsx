@@ -237,14 +237,14 @@ export default function StudyClient({ verses, chapterTitle, scriptureName, tagli
                   <div className="bg-stone-900 text-white w-9 h-9 rounded-2xl flex items-center justify-center font-black shadow-xl ring-4 ring-white text-[11px] group-hover:bg-orange-600 transition-colors">
                     {verse.verse}
                   </div>
-                  <Link 
-                    href="/docs/compliance/legal_audit"
+                  <button
+                    onClick={() => alert(`Source Context: ${scriptureName}`)}
                     className="opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1.5 px-3 py-1 bg-stone-50 text-[9px] font-bold text-stone-400 rounded-full border border-stone-100 uppercase tracking-tighter"
-                    title="Source Credit: SRC-001 (MIT)"
+                    title={`Source Credit: ${scriptureName}`}
                   >
                     <span className="w-1.5 h-1.5 bg-orange-400 rounded-full animate-pulse" />
                     Library Source
-                  </Link>
+                  </button>
                 </div>
 
                 <div className="text-center mb-6">
