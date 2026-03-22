@@ -56,10 +56,10 @@ export default function SearchClient() {
   }, [results, activeTab])
 
   return (
-    <div className="max-w-5xl mx-auto px-4 py-8">
-      <div className="mb-8">
-        <h1 className="text-3xl font-serif font-bold text-stone-900 mb-6 flex items-center gap-3">
-          <span className="p-2 bg-orange-100 text-orange-600 rounded-xl">🔍</span>
+    <div className="max-w-5xl mx-auto px-4 py-6">
+      <div className="mb-5">
+        <h1 className="text-2xl font-serif font-black text-stone-900 mb-4 flex items-center gap-2">
+          <span className="p-1.5 bg-orange-100 text-orange-600 rounded-lg text-lg">🔍</span>
           {nt('search')}
         </h1>
         
@@ -69,7 +69,7 @@ export default function SearchClient() {
             placeholder="Search verses (e.g., 'Dharma', 'Karma', 'कर्म')..."
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            className="w-full px-6 py-4 bg-white border-2 border-stone-100 rounded-2xl shadow-sm focus:border-orange-500 focus:outline-none transition-all text-lg font-serif"
+            className="w-full px-4 py-3 bg-white border-2 border-stone-100 rounded-xl shadow-sm focus:border-orange-500 focus:outline-none transition-all text-base font-serif"
             autoFocus
           />
           {isSearching && (
@@ -78,12 +78,12 @@ export default function SearchClient() {
         </div>
       </div>
 
-      <div className="flex gap-2 mb-8 overflow-x-auto pb-2">
+      <div className="flex gap-2 mb-5 overflow-x-auto pb-1.5">
         {['all', 'itihas', 'upanishad', 'purana'].map((tab) => (
           <button
             key={tab}
             onClick={() => setActiveTab(tab as any)}
-            className={`px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition-all ${
+            className={`px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-wider transition-all ${
               activeTab === tab 
               ? 'bg-orange-600 text-white shadow-md' 
               : 'bg-white text-stone-500 hover:bg-stone-50 border border-stone-100'
@@ -104,13 +104,13 @@ export default function SearchClient() {
                 href={`${localePrefix}/${result.textSlug}/${result.chapter}`}
                 className="block group"
               >
-                <div className="bg-white p-6 rounded-2xl border border-stone-100 shadow-sm hover:shadow-md hover:border-orange-200 transition-all">
-                  <div className="flex justify-between items-start mb-3">
-                    <span className="text-[10px] font-bold text-orange-600 uppercase tracking-widest bg-orange-50 px-2 py-1 rounded">
-                      {meta?.name || result.textSlug} • Chapter {result.chapter} • Verse {result.verse}
+                <div className="bg-white p-4 rounded-xl border border-stone-100 shadow-sm hover:shadow-md hover:border-orange-200 transition-all">
+                  <div className="flex justify-between items-start mb-2">
+                    <span className="text-[9px] font-bold text-orange-600 uppercase tracking-widest bg-orange-50 px-2 py-0.5 rounded">
+                      {meta?.name || result.textSlug} • Ch {result.chapter} • Vs {result.verse}
                     </span>
                   </div>
-                  <p className="text-stone-800 font-serif text-base mb-2 leading-relaxed">
+                  <p className="text-stone-800 font-serif text-[15px] mb-1.5 leading-relaxed">
                     {result.slok}
                   </p>
                   <p className="text-stone-400 italic text-[11px] line-clamp-2">

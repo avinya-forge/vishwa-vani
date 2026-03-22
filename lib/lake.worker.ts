@@ -44,18 +44,25 @@ self.onmessage = async (event: MessageEvent) => {
         const db = await getOrInitLake(lakeFile);
         if (!db) throw new Error(`Lake not found: ${lakeFile}`);
 
-        // Optimized Query leveraging B-Tree Indices for Prefix Matches
-        // While FTS5 is superior, this standard index approach provides major O(log N) speedups 
-        // over the previous full table scan for anchored searches.
-        const results = db.exec(`
-          SELECT text_slug, chapter, verse, slok, transliteration 
-          FROM verses 
-          WHERE slok LIKE :prefixQ OR transliteration LIKE :prefixQ OR slok LIKE :fallbackQ OR transliteration LIKE :fallbackQ
-          LIMIT 30
-        `, { 
-          ':prefixQ': `${query}%`, 
-          ':fallbackQ': `%${query}%` 
-        });
+        let results;
+        try {
+          results = db.exec(`
+            SELECT text_slug, chapter, verse, slok, transliteration, 1 as relevance
+            FROM verses_fts 
+            WHERE verses_fts MATCH :q
+            LIMIT 40
+          `, { ':q': query });
+        } catch (e) {
+          results = db.exec(`
+            SELECT text_slug, chapter, verse, slok, transliteration, 0 as relevance
+            FROM verses 
+            WHERE slok LIKE :prefixQ OR transliteration LIKE :prefixQ OR slok LIKE :fallbackQ
+            LIMIT 30
+          `, { 
+            ':prefixQ': `${query}%`, 
+            ':fallbackQ': `%${query}%` 
+          });
+        }
 
         const searchResults = (results && results[0]) 
           ? results[0].values.map((v: any) => ({
@@ -63,7 +70,8 @@ self.onmessage = async (event: MessageEvent) => {
               chapter: v[1],
               verse: v[2],
               slok: v[3],
-              transliteration: v[4]
+              transliteration: v[4],
+              relevance: v[5]
             }))
           : [];
 
@@ -91,7 +99,18 @@ async function getOrInitLake(lakeFile: string = 'vedic-lake.db') {
   if (!response.ok) throw new Error(`Could not fetch lake file: ${lakeFile}`);
   
   const bytes = await response.arrayBuffer();
-  LAKES[lakeFile] = new SQL.Database(new Uint8Array(bytes));
-  console.log(`ॐ Background Lake [${lakeFile}] ready.`);
-  return LAKES[lakeFile];
+  const db = new SQL.Database(new Uint8Array(bytes));
+  
+  try {
+    const res = db.exec("SELECT value FROM _vishwa_metadata WHERE key = 'version'");
+    if (!res || !res[0] || !res[0].values || res[0].values[0][0] !== '1.0') {
+      throw new Error(`Incompatible Lake Version. Hard reload required (Ctrl+Shift+R).`);
+    }
+  } catch (e: any) {
+    throw new Error(`Corrupted or Outdated Lake detected [${lakeFile}]: ${e.message}`);
+  }
+
+  LAKES[lakeFile] = db;
+  console.log(`ॐ Background Lake [${lakeFile}] ready (v1.0)`);
+  return db;
 }

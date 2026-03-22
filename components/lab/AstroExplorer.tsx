@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
+import VedicAppTemplate from './VedicAppTemplate'
 
 const ELEMENTS = [
   { name: 'Prithvi (Earth)', icon: '🌱', color: 'from-emerald-600 to-green-800', desc: 'Stability, groundedness, and structural strength.' },
@@ -29,63 +30,54 @@ export default function AstroExplorer() {
   }
 
   return (
-    <div className="bg-stone-900 rounded-[2.5rem] p-8 text-white shadow-2xl relative overflow-hidden">
-      <div className="absolute top-0 right-0 w-64 h-64 bg-orange-500/10 rounded-full -mr-32 -mt-32 blur-[80px]" />
-      
-      <div className="relative z-10">
-        <h3 className="text-xl font-serif font-bold mb-2 flex items-center gap-2">
-          <span className="text-2xl animate-pulse">🌌</span> Vedic Astro Explorer
-        </h3>
-        <p className="text-xs text-stone-400 mb-8 uppercase tracking-widest font-bold">
-          Pancha-Tattva Diagnostics
-        </p>
-
-        {!result ? (
-          <div className="space-y-6">
-            <div className="space-y-2">
-              <label className="text-[10px] font-bold text-stone-500 uppercase tracking-widest ml-1">Identity Reflection</label>
-              <input 
-                type="text" 
-                placeholder="Enter your name..."
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                className="w-full bg-white/5 border border-white/10 p-4 rounded-2xl focus:border-orange-500 outline-none transition-all placeholder:text-stone-700"
-              />
-            </div>
-            
-            <button 
-                onClick={calculateElement}
-                disabled={!name || isCalculating}
-                className="w-full py-4 bg-orange-600 hover:bg-orange-700 disabled:bg-stone-800 text-white rounded-2xl font-bold uppercase tracking-[0.2em] text-xs transition-all shadow-lg active:scale-95"
-            >
-              {isCalculating ? 'Consulting Akasha...' : 'Discover Tattva'}
-            </button>
+    <VedicAppTemplate
+      title="Astro Explorer"
+      subtitle="Pancha-Tattva Elements"
+      icon="🌌"
+      footerNote="This module uses an experimental Guna-Shastra algorithm. Accurate readings requiring Janma-Kundali are in the Phase 4 roadmap."
+    >
+      {!result ? (
+        <div className="space-y-6">
+          <div className="space-y-2">
+            <label className="text-[10px] font-bold text-stone-400 uppercase tracking-widest ml-1">Identity Reflection</label>
+            <input 
+              type="text" 
+              placeholder="Enter your name..."
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              className="w-full bg-stone-50 border border-stone-200 p-4 rounded-xl focus:border-orange-400 outline-none transition-all placeholder:text-stone-300 text-[13px] text-stone-800 shadow-inner"
+            />
           </div>
-        ) : (
-          <div className="animate-in fade-in zoom-in-95 duration-500 text-center">
-            <div className={`w-24 h-24 mx-auto rounded-full bg-gradient-to-br ${result.color} flex items-center justify-center text-4xl shadow-2xl shadow-black mb-6 border-2 border-white/20`}>
-              {result.icon}
-            </div>
-            <h4 className="text-2xl font-serif font-bold mb-2">{result.name}</h4>
-            <p className="text-stone-400 text-xs leading-relaxed mb-6 px-4">
+          
+          <button 
+              onClick={calculateElement}
+              disabled={!name || isCalculating}
+              className="w-full py-3 bg-stone-900 hover:bg-orange-600 disabled:bg-stone-200 disabled:text-stone-400 text-white rounded-xl font-black uppercase tracking-widest text-[11px] transition-all shadow-md active:scale-[0.98]"
+          >
+            {isCalculating ? 'Consulting Akasha...' : 'Discover Tattva'}
+          </button>
+        </div>
+      ) : (
+        <div className="animate-in fade-in slide-in-from-bottom-2 duration-500 bg-orange-50/50 p-6 rounded-2xl border border-orange-100 text-center">
+          <div className={`w-16 h-16 mx-auto rounded-full bg-gradient-to-br ${result.color} flex items-center justify-center text-3xl shadow-lg border border-white/40 mb-5`}>
+            {result.icon}
+          </div>
+          
+          <div className="bg-white rounded-xl p-4 border border-stone-100 shadow-sm text-center">
+            <h4 className="font-serif font-black text-stone-800 text-lg mb-2">{result.name}</h4>
+            <p className="text-[11px] text-stone-500 leading-relaxed px-2">
               {result.desc}
             </p>
-            
-            <button 
-                onClick={() => { setResult(null); setName(''); }}
-                className="text-[10px] font-bold uppercase tracking-widest text-orange-500 hover:text-orange-400 transition-colors"
-            >
-              ← Search Another
-            </button>
           </div>
-        )}
-      </div>
 
-      <div className="mt-8 pt-6 border-t border-white/5">
-        <p className="text-[9px] text-stone-600 leading-tight">
-          * This module uses Guna-Shastra algorithm (Experimental PoC). Accurate Horoscope requiring Janma-Kundali is coming in Phase 4.
-        </p>
-      </div>
-    </div>
+          <button 
+              onClick={() => { setResult(null); setName(''); }}
+              className="w-full mt-6 py-2.5 bg-white border border-stone-200 hover:border-orange-300 hover:text-orange-600 text-stone-500 rounded-xl font-bold uppercase tracking-widest text-[10px] transition-all"
+          >
+            Search Another Element
+          </button>
+        </div>
+      )}
+    </VedicAppTemplate>
   )
 }

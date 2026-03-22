@@ -37,6 +37,15 @@ export interface VedicText {
   storage?: 'json' | 'lake'
   /** The specific binary lake file to query (e.g., 'vedic-lake.db') */
   lakeFile?: string
+  /** High-level metadata for mind maps and diagrams */
+  contextualInfo?: {
+    speaker?: string
+    listener?: string
+    lineage?: string
+    historicalContext?: string
+    keyThemes?: string[]
+    availableEditions?: string[]
+  }
 }
 
 export const VEDIC_LIBRARY: VedicText[] = [
@@ -72,6 +81,14 @@ export const VEDIC_LIBRARY: VedicText[] = [
       '16': 'Daivasura Sampad Vibhaga Yoga — Divine & Demoniac Endowments',
       '17': 'Sraddhatraya Vibhaga Yoga — The Threefold Faith',
       '18': 'Moksha Sanyasa Yoga — Liberation & Renunciation',
+    },
+    contextualInfo: {
+      speaker: 'Krishna (Bhagavan)',
+      listener: 'Arjuna',
+      lineage: 'Kurukshetra Battlefield / Vyasa parampara',
+      historicalContext: 'Just before the start of the Kurukshetra War',
+      keyThemes: ['Dharma (Duty)', 'Karma (Action)', 'Bhakti (Devotion)', 'Jnana (Knowledge)', 'Yoga (Union)'],
+      availableEditions: ['Swami Sivananda', 'Swami Ramsukhdas', 'Adi Shankaracharya', 'Srila Prabhupada']
     },
     chapterNamesHi: {
       '1': 'अर्जुनविषादयोग — अर्जुन का विषाद',
@@ -165,6 +182,14 @@ export const VEDIC_LIBRARY: VedicText[] = [
       '3': 'Vibhuti Pada',
       '4': 'Kaivalya Pada',
     },
+    contextualInfo: {
+      speaker: 'Sage Patanjali',
+      listener: 'Universal disciples',
+      lineage: 'Yoga Darshana',
+      historicalContext: 'Classical period of Indian philosophy',
+      keyThemes: ['Ashtanga Yoga', 'Samadhi', 'Vairagya (Detachment)', 'Sadhana (Practice)'],
+      availableEditions: ['Patanjali Original', 'Modern Commentaries']
+    },
     chapterNamesHi: {
       '1': 'समाधिपाद',
       '2': 'साधनापाद',
@@ -188,8 +213,9 @@ export const VEDIC_LIBRARY: VedicText[] = [
     totalChapters: 18,
     description: 'The longest epic poem in the world, chronicling the Kurukshetra War and the fates of the Kaurava and Pandava princes.',
     category: 'itihas',
-    available: false,
+    available: true,
     storage: 'lake',
+    lakeFile: 'itihasa-lake.db',
     chapterNames: {
       '1': 'Adi Parva', '2': 'Sabha Parva', '3': 'Vana Parva', '4': 'Virata Parva', '5': 'Udyoga Parva',
       '6': 'Bhishma Parva', '7': 'Drona Parva', '8': 'Karna Parva', '9': 'Shalya Parva', '10': 'Sauptika Parva',
@@ -219,7 +245,7 @@ export const VEDIC_LIBRARY: VedicText[] = [
     totalChapters: 6,
     description: 'Primarily a dialogue between Parashara and his disciple Maitreya, focusing on Vishnu as the ultimate source of the universe.',
     category: 'purana',
-    available: false,
+    available: true,
     chapterNames: { '1': 'Ansh 1', '2': 'Ansh 2', '3': 'Ansh 3', '4': 'Ansh 4', '5': 'Ansh 5', '6': 'Ansh 6' },
     chapterNamesHi: { '1': 'प्रथम अंश', '2': 'द्वितीय अंश', '3': 'तृतीय अंश', '4': 'चतुर्थ अंश', '5': 'पञ्चम अंश', '6': 'षष्ठ अंश' },
     chapterNamesMr: { '1': 'प्रथम अंश', '2': 'द्वितीय अंश', '3': 'तृतीय अंश', '4': 'चतुर्थ अंश', '5': 'पञ्चम अंश', '6': 'षष्ठ अंश' },
@@ -267,7 +293,7 @@ export const VEDIC_LIBRARY: VedicText[] = [
     totalChapters: 1,
     description: 'Practical guide to the 16 life-cycle rites from conception to last rites, including Mantras and procedures.',
     category: 'other',
-    available: false,
+    available: true,
     storage: 'lake',
     chapterNames: { '1': 'Complete Ritual List' },
     chapterNamesHi: { '1': 'संपूर्ण संस्कार सूची' },
@@ -284,7 +310,7 @@ export const VEDIC_LIBRARY: VedicText[] = [
     totalChapters: 12,
     description: 'A poetic masterpiece focusing on Bhakti (devotion) towards Krishna, covering cosmos, evolution, and divine play.',
     category: 'purana',
-    available: false,
+    available: true,
     storage: 'lake',
     chapterNames: { '1': 'Canto 1', '2': 'Canto 2', '3': 'Canto 3', '4': 'Canto 4', '5': 'Canto 5' },
     chapterNamesHi: { '1': 'प्रथम स्कन्ध', '2': 'द्वितीय स्कन्ध', '3': 'तृतीय स्कन्ध', '4': 'चतुर्थ स्कन्ध', '5': 'पञ्चम स्कन्ध' },
@@ -301,7 +327,7 @@ export const VEDIC_LIBRARY: VedicText[] = [
     totalChapters: 2,
     description: 'Dialogues between Vishnu and Garuda on life after death, cosmology, and the path to liberation.',
     category: 'purana',
-    available: false,
+    available: true,
     storage: 'lake',
     chapterNames: { '1': 'Achara Khanda', '2': 'Preta Khanda' },
     chapterNamesHi: { '1': 'आचार काण्ड', '2': 'प्रेत काण्ड' },

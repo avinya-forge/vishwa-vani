@@ -5,6 +5,8 @@ import StudyClient from '@/components/shloka/StudyClient'
 import { getTextBySlug, getAllTextChapterPaths, VEDIC_LIBRARY } from '@/lib/texts'
 import { getVersesFromLakeServer } from '@/lib/serverLake'
 import { setRequestLocale } from 'next-intl/server'
+import { migrateToNVF } from '@/lib/nvf'
+import VedicMindMap from '@/components/shloka/VedicMindMap'
 
 export async function generateStaticParams() {
   const paths = getAllTextChapterPaths()
@@ -49,12 +51,21 @@ export default async function StudyChapterPage({ params }: { params: Promise<{ t
     }
   }
 
+  // Ensure ALL data is in NVF format before passing to Client components
+  const nvfVerses = verses.map((v: any) => migrateToNVF(v, textSlug, chapterInt))
+
   // Pass raw data to Client. Client will handle language switching.
   return (
     <main className="min-h-screen bg-[#FDFBF7]">
       <div className="max-w-none">
+        {textMetadata.contextualInfo && (
+          <VedicMindMap 
+            context={textMetadata.contextualInfo} 
+            scriptureName={textMetadata.name} 
+          />
+        )}
         <StudyWrapper 
-          verses={verses} 
+          verses={nvfVerses} 
           textMetadata={textMetadata} 
           chapterNumber={chapterNumber} 
         />
@@ -86,12 +97,12 @@ function StudyWrapper({ verses, textMetadata, chapterNumber }: any) {
       />
       
       {/* Footer Navigation */}
-      <div className="max-wide px-4 sm:px-8 mt-12 pb-24 flex flex-col sm:flex-row items-center justify-between gap-6 relative z-10">
-        <div className="flex gap-4 w-full sm:w-auto">
+      <div className="max-wide px-4 sm:px-6 mt-8 pb-12 flex flex-col sm:flex-row items-center justify-between gap-4 relative z-10">
+        <div className="flex gap-3 w-full sm:w-auto">
           {prevChapter && (
             <Link 
               href={`/${textMetadata.slug}/${prevChapter}`}
-              className="flex-1 sm:flex-none inline-flex items-center justify-center gap-3 px-8 py-4 bg-white border border-stone-200 text-stone-700 rounded-2xl hover:bg-stone-50 transition-all font-bold text-xs uppercase tracking-widest shadow-sm hover:shadow-md"
+              className="flex-1 sm:flex-none inline-flex items-center justify-center gap-2 px-6 py-3 bg-white border border-stone-200 text-stone-700 rounded-xl hover:bg-stone-50 transition-all font-bold text-[10px] uppercase tracking-widest shadow-sm hover:shadow-md"
             >
               &larr; Previous
             </Link>
@@ -99,14 +110,14 @@ function StudyWrapper({ verses, textMetadata, chapterNumber }: any) {
           {nextChapter && (
             <Link 
               href={`/${textMetadata.slug}/${nextChapter}`}
-              className="flex-1 sm:flex-none inline-flex items-center justify-center gap-3 px-8 py-4 bg-orange-600 text-white rounded-2xl hover:bg-orange-700 transition-all font-bold text-xs uppercase tracking-widest shadow-xl shadow-orange-200"
+              className="flex-1 sm:flex-none inline-flex items-center justify-center gap-2 px-6 py-3 bg-orange-600 text-white rounded-xl hover:bg-orange-700 transition-all font-bold text-[10px] uppercase tracking-widest shadow-xl shadow-orange-200"
             >
               Next &rarr;
             </Link>
           )}
         </div>
         
-        <Link href="/" className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-stone-900 text-white rounded-2xl hover:bg-orange-600 transition-all font-black text-xs uppercase tracking-widest shadow-2xl active:scale-95">
+        <Link href="/" className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-stone-900 text-white rounded-xl font-black text-[10px] uppercase tracking-widest shadow-2xl active:scale-95">
           Back to Hub
         </Link>
       </div>

@@ -1,29 +1,21 @@
-import fs from 'fs'
-import path from 'path'
 import Link from 'next/link'
 import StudyClient from '@/components/shloka/StudyClient'
 import { migrateToNVF } from '@/lib/nvf'
+import { getVersesFromLakeServer } from '@/lib/serverLake'
+import { getTextBySlug, getAllTextChapterPaths } from '@/lib/texts'
+import { setRequestLocale } from 'next-intl/server'
+import fs from 'fs'
+import path from 'path'
 
 export async function generateStaticParams() {
-  // Pre-render pages for chapters 1 through 18 of bhagavad-gita initially
-  // Realistically we would read all JSONs, but for build time we can just pre-generate known
+  const paths = getAllTextChapterPaths()
   const params: { text: string, chapter: string, verse: string }[] = []
 
-  for (let c = 1; c <= 18; c++) {
-    const dataPath = path.join(process.cwd(), 'data', `bhagavad_gita_chapter_${c}.json`)
-    if (fs.existsSync(dataPath)) {
-      try {
-        const rawData = fs.readFileSync(dataPath, 'utf8')
-        const verses = JSON.parse(rawData)
-        verses.forEach((v: any) => {
-          params.push({
-            text: 'bhagavad-gita',
-            chapter: `chapter-${c}`,
-            verse: `verse-${v.verse}`
-          })
-        })
-      } catch (e) {
-        console.error(`Failed to parse chapter ${c} for static params`)
+  // Pre-generate a conservative number of pages to keep build fast
+  for (const p of paths) {
+    if (p.text === 'bhagavad-gita') {
+      for (let v = 1; v <= 3; v++) {
+        params.push({ text: p.text, chapter: p.chapter, verse: String(v) })
       }
     }
   }
@@ -31,7 +23,7 @@ export async function generateStaticParams() {
   return params
 }
 
-export const dynamicParams = true;
+export const dynamicParams = false;
 
 interface VerseAuthor {
   author: string
@@ -56,22 +48,36 @@ interface GitaVerse {
 }
 
 export default async function StudyVersePage({ params }: { params: Promise<{ text: string, chapter: string, verse: string }> }) {
-  const { text, chapter: chapterSlug, verse: verseSlug } = await params
+  const { text: textSlug, chapter: chapterNumber, verse: verseNumber } = await params
+  setRequestLocale('en')
+  
+  const textMetadata = getTextBySlug(textSlug)
+  if (!textMetadata) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-stone-50">
+        <div className="text-center p-8 bg-white rounded-2xl shadow-sm border border-orange-100">
+          <h2 className="text-2xl text-orange-900 mb-2">Text Not Found</h2>
+          <Link href={`/`} className="mt-6 inline-block text-orange-600 hover:text-orange-800 font-medium">
+            &larr; Return Hub
+          </Link>
+        </div>
+      </div>
+    )
+  }
 
-  const chapterNumber = chapterSlug.replace('chapter-', '')
-  const verseNumber = verseSlug.replace('verse-', '')
+  let verses: any[] = []
+  const chapterInt = parseInt(chapterNumber)
 
-  let safeTextName = 'bhagavad_gita'
-  if (text !== 'bhagavad-gita') { safeTextName = text }
-
-  const dataPath = path.join(process.cwd(), 'data', `${safeTextName}_chapter_${chapterNumber}.json`)
-  let verses: GitaVerse[] = []
-
-  try {
-    const rawData = fs.readFileSync(dataPath, 'utf8')
-    verses = JSON.parse(rawData)
-  } catch (e) {
-    console.error(`Failed to load text ${text} chapter ${chapterNumber} data`, e)
+  if (textMetadata.storage === 'lake') {
+    verses = await getVersesFromLakeServer(textSlug, chapterInt, textMetadata.lakeFile || undefined)
+  } else {
+    try {
+      const dataPath = path.join(process.cwd(), 'data', `${textMetadata.dataPrefix}_chapter_${chapterNumber}.json`)
+      const rawData = fs.readFileSync(dataPath, 'utf8')
+      verses = JSON.parse(rawData)
+    } catch (e) {
+      console.error(`Failed to load text ${textSlug} chapter ${chapterNumber} data`, e)
+    }
   }
 
   const rawVerseData = verses.find(v => String(v.verse) === verseNumber)
@@ -82,7 +88,7 @@ export default async function StudyVersePage({ params }: { params: Promise<{ tex
         <div className="text-center p-8 bg-white rounded-2xl shadow-sm border border-orange-100">
           <h2 className="text-2xl text-orange-900 mb-2">Verse Not Found</h2>
           <p className="text-stone-500">We don't have the data for this verse yet.</p>
-          <Link href={`/${text}/${chapterSlug}`} className="mt-6 inline-block text-orange-600 hover:text-orange-800 font-medium">
+          <Link href={`/${textSlug}/${chapterNumber}`} className="mt-6 inline-block text-orange-600 hover:text-orange-800 font-medium">
             &larr; Return to Chapter
           </Link>
         </div>
@@ -90,20 +96,24 @@ export default async function StudyVersePage({ params }: { params: Promise<{ tex
     )
   }
 
-  const chapterTitles: Record<string, string> = {
-    '1': 'Arjuna Visada Yoga - The Despondency of Arjuna'
-  }
-  const title = chapterTitles[chapterNumber] || `Chapter ${chapterNumber}`
+  const title = textMetadata.chapterNames[chapterNumber] || `${textMetadata.name} - Chapter ${chapterNumber}`
+  const scriptureName = textMetadata.name
+  const tagline = textMetadata.description
 
-  const verseData = migrateToNVF(rawVerseData, text)
+  const verseData = migrateToNVF(rawVerseData, scriptureName)
 
   return (
     <main className="min-h-screen bg-[#FDFBF7] selection:bg-orange-100/60 pb-20">
-      <StudyClient verses={[verseData]} chapterTitle={`${title} - Verse ${verseNumber}`} scriptureName={safeTextName} tagline="" />
+      <StudyClient 
+        verses={[verseData]} 
+        chapterTitle={`${title} - Verse ${verseNumber}`} 
+        scriptureName={scriptureName}
+        tagline={tagline}
+      />
 
       {/* Footer Navigation */}
       <div className="max-w-4xl mx-auto px-4 mt-16 text-center relative z-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-        <Link href={`/${text}/${chapterSlug}`} className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-stone-900 text-white rounded-full hover:bg-stone-800 transition-all font-medium sm:font-bold shadow-lg hover:shadow-xl hover:-translate-y-0.5 text-sm sm:text-base">
+        <Link href={`/${textSlug}/${chapterNumber}`} className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-stone-900 text-white rounded-full hover:bg-stone-800 transition-all font-medium sm:font-bold shadow-lg hover:shadow-xl hover:-translate-y-0.5 text-sm sm:text-base">
           &uarr; Back to Chapter
         </Link>
         <Link href="/" className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-white text-stone-900 border border-stone-200 rounded-full hover:bg-stone-50 transition-all font-medium sm:font-bold shadow-sm hover:shadow-md hover:-translate-y-0.5 text-sm sm:text-base">

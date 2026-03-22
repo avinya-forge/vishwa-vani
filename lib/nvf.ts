@@ -19,6 +19,19 @@ export interface FragmentLayer {
   content: string
 }
 
+export interface AnvayaToken {
+  /** The Sanskrit word in Devanagari */
+  san: string
+  /** Transliteration */
+  trn: string
+  /** Meaning in English */
+  en?: string
+  /** Meaning in Hindi */
+  hi?: string
+  /** Grammatical metadata (optional) */
+  pos?: string
+}
+
 export interface NVFFragment {
   /** Unique ID, e.g., 'bg_1_1' */
   id: string
@@ -31,6 +44,8 @@ export interface NVFFragment {
   original: string
   /** Romanized Sanskrit */
   transliteration: string
+  /** Anvaya (word-by-word) mapping for ExplainShell interaction */
+  anvaya?: AnvayaToken[]
   /** Array of localized layers (Translations/Commentaries) */
   layers: FragmentLayer[]
   /** Optional metadata for AI and UI visualization */
@@ -46,9 +61,14 @@ export interface NVFFragment {
  * Migration Helper: Converts legacy GitaVerse format to NVF.
  * Ensures the system remains operational during the schema transition.
  */
-export function migrateToNVF(legacy: any, textSlug: string): NVFFragment {
+export function migrateToNVF(legacy: any, textSlug: string, fallbackChapter?: number): NVFFragment {
   const AUTHOR_KEYS = ['siva', 'rams', 'chinmay', 'sankar', 'prabhu', 'tej', 'gambir', 'raman', 'abhyankar']
   const layers: FragmentLayer[] = []
+
+  const chapter = legacy.chapter || fallbackChapter || 0
+  const verse = legacy.verse || 0
+  const original = legacy.original || legacy.slok || ""
+  const transliteration = legacy.transliteration || ""
 
   AUTHOR_KEYS.forEach(key => {
     if (legacy[key]) {
@@ -61,16 +81,26 @@ export function migrateToNVF(legacy: any, textSlug: string): NVFFragment {
     }
   })
 
+  // Handle cases where layers are already in the new format
+  if (legacy.layers && Array.isArray(legacy.layers)) {
+    legacy.layers.forEach((l: any) => {
+      if (l.author && l.content) {
+        layers.push(l as FragmentLayer)
+      }
+    })
+  }
+
   return {
-    id: `${textSlug}_${legacy.chapter}_${legacy.verse}`,
+    id: legacy.id || `${textSlug}_${chapter}_${verse}`,
     text_slug: textSlug,
-    chapter: legacy.chapter,
-    verse: legacy.verse,
-    original: legacy.slok,
-    transliteration: legacy.transliteration,
+    chapter,
+    verse,
+    original,
+    transliteration,
+    anvaya: legacy.anvaya || legacy.word_meanings || undefined,
     layers,
-    ai_metadata: {
-        topics: [] // To be populated by AI Tagger later
+    ai_metadata: legacy.ai_metadata || {
+        topics: []
     }
   }
 }
