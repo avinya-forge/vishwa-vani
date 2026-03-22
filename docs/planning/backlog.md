@@ -1,81 +1,123 @@
-# 🗺️ Vishwa-Vani: Prioritized Master Backlog (v0.6)
+# 🗺️ Vishwa-Vani: Global Master Backlog & Roadmap
 
-> **Core Focus**: Transitioning from a framework-complete "Library" to a data-rich "Wikipedia of Wisdom" with AI-assisted creative explanations.
-
----
-
-## 🚨 UI Density & Space Management (New Priority)
-*Objective: Fix 'Oversized' elements and 'Micro-text' to utilize viewport efficiently.*
-
-| Task ID | Level | Task Description | Status |
-| :--- | :--- | :--- | :--- |
-| **UX-101** | P0 | **Hero Refactor**: Reduce Landing Hero size (8xl -> 6xl) and tighten vertical margins for above-the-fold CTA visibility. | ✅ **DONE** |
-| **UX-102** | P0 | **Shloka Visual Prominence**: Fix 'weird smallness' by increasing font weight/style and reducing `ShlokaCard` padding (p-10 -> p-6). | ✅ **DONE** |
-| **UX-201** | P0 | **Vedic ExplainShell Interaction**: Implement SVG-based connectors between Sanskrit tokens and English/Hindi word-meanings (Hover-mapping). | 📅 BACKLOG |
-| **UX-103** | P0 | **Intl Cleanup**: Resolve missing keys (`nav.readNow`, `prefs.sa`) to eliminate console hydration errors. | ✅ **DONE** |
-| **UX-202** | P1 | **Anvaya Tokenization Engine**: Refactor NVF schema to support word-by-word mapping (Token-level metadata). | 📅 BACKLOG |
-| **UX-104** | P1 | **Sidebar Visual Softening**: Update 'Astro Explorer' and sidebars to light/muted themes to match the 'Parchment' aesthetic. | 📅 BACKLOG |
-| **UX-105** | P1 | **Grid Compression**: Reduce `ShlokaCard` internal padding and gap distance to fit 20% more verses per screen. | 📅 BACKLOG |
-
-## 🔥 P0: Foundation & System Robustness (Critical)
-*Objective: Ensure the massive data ingestion doesn't break the user experience.*
-
-| Task ID | Level | Task Description | Status |
-| :--- | :--- | :--- | :--- |
-| **BUG-001**| P0 | **Fix Search CSP**: Resolve CSP blocker preventing Web Worker start for search. | ✅ **DONE** |
-| **BUG-002**| P0 | **Fix SSR Hydration**: Resolve `<body>` className mismatch on root layout. | ✅ **DONE** |
-| **UX-301** | P0 | **Mobile Navigation**: Implement Hamburger Menu for Library/Search. | ✅ **DONE** |
-| **UX-302** | P0 | **Mobile Shloka Optimization**: Scale text and reduce padding for mobile viewports. | ✅ **DONE** |
-| **3006** | P0 | **Search Indexed Optimization**: Upgraded DB generation and Worker to use SQLite B-Tree indices for instant, indexed prefix-match queries. | ✅ **DONE** |
-| **3002** | P0 | **Web Worker SQL Offloading**: Move all SQLite WASM queries to background worker to ensure 100% UI responsiveness during deep searches. | 📅 BACKLOG |
-| **3004** | P0 | **Schema Versioning & Validation**: Implement strict metadata checksums and auto-version detection for sharded Lake integrity. | 📅 BACKLOG |
-| **3001** | P0 | **Multi-Lake Data Ingestion**: Complete mass ingestion for Gita (1-18) and initial Mahbharata shards using the sharding strategy. | ⏳ IN PROGRESS |
-| **1902** | P0 | **Legal & Compliance Audit Tracking**: Continuous verification of upcoming Puranic data sources (SRC-002, SRC-003). | [TECH_DEBT] ⏳ IN PROGRESS |
+> **Vision**: Transform Vishwa-Vani into a production-ready, globally scaled "Wikipedia of Wisdom" capable of handling millions of concurrent users with sub-50ms latency, zero-downtime CI/CD, and robust AI data pipelines.
 
 ---
 
-## 🦾 P1: AI & Enrichment Pipeline (Medium)
-*Objective: Transform raw text into "Wise" content through AI interpretation.*
+## 🪣 Bucket 1: Data Ingestion & Source Collation (The Core Foundation)
+*Objective: Achieve 100% comprehensive data coverage for all existing books in detail.*
 
 | Task ID | Level | Task Description | Status |
 | :--- | :--- | :--- | :--- |
-| **AI-301** | P1 | **NLP Vector Pipeline**: Generate and store 384d semantic embeddings for all verses during the build phase (`vedic-vectors.db`). | 📅 BACKLOG |
-| **AI-302** | P1 | **WASM Semantic Search Engine**: Run `Transformers.js` locally to convert user queries into vectors and retrieve top 5 relevant verses using cosine similarity. | 📅 BACKLOG |
-| **AI-303** | P1 | **Vedic RAG Guide (API Integration)**: Build a secure Edge Proxy to connect the UI to Hugging Face's Free API, ensuring fast, mobile-friendly RAG generation without local downloads. | 📅 BACKLOG |
-| **1903** | P1 | **AI Tagger Pipeline**: Build-time LLM process for generating visual & concept metadata (AI Interpretation) for every shloka. | 📅 BACKLOG |
-| **1904** | P1 | 🚫 **REJECTED**: Scraping unsecured API keys from third-party sites violates ethical and legal compliance. We will strictly use official Free Tier endpoints (like Hugging Face). | 🛑 WON'T DO |
-| **1802** | P1 | **AI Professor PoC**: Browser-side summarization on author subsets to provide creative explanations. | 📅 BACKLOG |
-| **1503** | P1 | **Middleware Layer B (Proxy)**: Template for rate-limiting, edge-caching, and future API monetization. | 📅 BACKLOG |
-| **1901** | P1 | **Interactive Vedic Lab**: PoC for Astro-calculators and Tithi-math modules integrated into study pages. | 📅 BACKLOG |
-| **1707** | P1 | **Static Search Index (Lunr/FlexSearch)**: Build-time index for local Wikipedia searching (fallback for SQLite FTS5). | 📅 BACKLOG |
+| DATA-101 | P0 | **Bhagavad Gita Data Audit**: Ensure all 700 verses have Sanskrit + Translit + EN Meaning + (Sankar/Siva & Sw. Ramsukhdas). | ✅ **DONE** |
+| DATA-102 | P0 | **Isha Upanishad Refinement**: Add 2nd Indian Commentary (e.g., Adi Shankara or Chinmaya Mission). | 🔥 **HIGH PRIORITY** |
+| DATA-103 | P0 | **Kena Upanishad Mock-Replacement**: Replace mock JSON with full Sanskrit text + 2 Indian Commentaries. | 🔥 **HIGH PRIORITY** |
+| DATA-104 | P0 | **Srimad Bhagavatam (Cantos 2-12)**: Replace mock data; Ingest Sanskrit + 2 Indian Commentaries (e.g., Prabhupada/Sridhara). | 🔥 **HIGH PRIORITY** |
+| DATA-105 | P1 | **Vishnu Purana Mock-Replacement**: Ingest all 6 Anshas with Sanskrit + 2 Indian sources. | 📅 BACKLOG |
+| DATA-106 | P1 | **Garuda Purana Mock-Replacement**: Ingest Achara/Preta Khandas with Sanskrit + 2 Indian sources. | 📅 BACKLOG |
+| DATA-107 | P1 | **Mahabharata (18 Parvas)**: Audit KMG English text; Add 2 Indian regional commentaries as secondary layers. | 📅 BACKLOG |
+| DATA-301 | P2 | **Digitalization: Rigveda**: Audit and source manuscripts for 10 Mandalas (Sanskrit + EN Translation). | 📅 BACKLOG |
+| DATA-302 | P2 | **Digitalization: Brahma Sutras**: Secure 555 Sutras with primary translations and Shankara Bhashya. | 📅 BACKLOG |
+| DATA-303 | P2 | **Digitalization: Valmiki Ramayana**: Source Kanda-wise manuscripts for primary Sanskrit text. | 📅 BACKLOG |
 
 ---
 
-## 🗃️ P2: Librarian's Roadmap (Massive Aggregation)
-*Objective: Populate the library with the primary Hindu canon.*
+## 🪣 Bucket 2: UI/UX Audit & Consistency Focus
+*Objective: Everything that exists must be 100% functional with zero errors before adding more.*
 
 | Task ID | Level | Task Description | Status |
 | :--- | :--- | :--- | :--- |
-| **DATA-001**| P1| **Ingest Listed Upanishads**: Scrape and parse Isha and Kena Upanishads into NVF schema to replace placeholders. | ✅ **DONE** |
-| **DATA-002**| P1| **Ingest Yoga Sutras**: Crawl legally compliant sources for Patanjali's Sutras and ingest them. | ✅ **DONE** |
-| **2006** | P2 | **16 Samskaras Implementation**: Life-cycle rites registry (Garbhadhana to Antyeshti). | ⏳ IN PROGRESS |
-| **2001** | P2 | **11 Principal Upanishads (Mukhya)**: Full ingestion and normalization (NVF). | 📅 BACKLOG |
-| **2004** | P2 | **18 Maha Puranas (Primary)**: Focus on Garuda, Bhagavata, Vishnu (Adhyaya-level sharding). | 📅 BACKLOG |
-| **3005** | P2 | **Vedic Calculation Hub**: Modular utility for Tithis, Muhurta, and Astro-math. | 📅 BACKLOG |
-| **2007** | P2 | **Dr. Shankar Abhyankar's Works**: Digitalizing "Bhakti-Kosh" & "Geeta-Sagar". | 📅 BACKLOG |
-| **1402** | P2 | **Mahabharata Integration (18 Parvas)**: Using `bhavykhatri` project shards. | 📅 BACKLOG |
+| **UI-001** | P0 | **Navbar Link Audit**: Fix all broken navigation links (Home, Library, Search) across all page depths. Make absolutely sure nothing is broken. | 🔥 **TOP PRIORITY** |
+| **UI-002** | P0 | **Chapter-by-Chapter Audit**: Visually audit every chapter of every book to ensure data is displayed correctly, with no layout breaks or hydration errors. | ⏳ IN PROGRESS |
+| **UI-003** | P0 | **Interface Consistency Framework**: Implement a strict "2-Author Limit" in the primary view with an "Advanced" drawer to hide additional noise. | ✅ **DONE** |
+| **UI-004** | P0 | **Text Differentiation**: Maintain clear visual separation between Verse, Translation, and Commentary (weights, styles, subtle backdrops). | ✅ **DONE** |
+| UI-101 | P1 | **Squelch React Warnings**: Resolve any remaining `ResizeObserver loop completed` and SSR hydration mismatches across the site. | ✅ **DONE** |
+| UI-201 | P1 | **Book Audit: Bhagavad Gita**: Verify all 700 verses display Sanskrit, English, and 2 authors correctly. | ✅ **DONE** |
+| UI-202 | P1 | **Book Audit: Upanishads**: Verify Isha/Kena data integrity and layout consistency. | 📅 BACKLOG |
+| UI-203 | P1 | **Book Audit: Mahabharata**: Ensure 18 Parvas navigation and heavy-text rendering performance. | 📅 BACKLOG |
+| UI-204 | P1 | **Book Audit: Yoga Sutras**: Visual audit of Sutra-wise breakdown and commentary slots. | 📅 BACKLOG |
+| UI-205 | P1 | **Book Audit: Puranas**: Verify Vishnu Purana and Bhagavatam Canto-wise navigation links. | 📅 BACKLOG |
 
 ---
 
-## 🧩 P3: Wikipedia Growth & Refinement (Low)
-*Objective: Long-term sustainability and user-driven corrections.*
+## 🪣 Bucket 3: AI Interpretation & Analytics
+*Objective: Link concepts and provide high-level tracking.*
 
 | Task ID | Level | Task Description | Status |
 | :--- | :--- | :--- | :--- |
-| **1803** | P3 | **Wikipedia-Style User Corrections**: Flagging and suggesting edits to AI translations. | 📅 BACKLOG |
-| **1407** | P3 | **GPS/Locale Language Detection**: Auto-default to regional language (HI/MR) based on coordinates. | 📅 BACKLOG |
-| **1408** | P3 | **Commentary Clustering**: Deduplication and sentiment clustering for infinite commentators. | 📅 BACKLOG |
+| **ANA-001** | P0 | **Simple Usage Analytics**: Implement basic analytics to track read verses, most popular books, and interaction times for UI improvement. | 📅 BACKLOG |
+| **AI-001** | P0 | **AI Professor Multi-Author Synthesis**: Synthesizer must reason over EN/HI/MR commentators verse-by-verse to generate one unified 'Universal Summary'. | ✅ **DONE** |
+| **AI-002** | P1 | **Philosophical Correlation Engine**: With AI, interpret and link philosophical concepts deeply across various books (e.g. Gita's karma vs Mahabharata's karma). | 📅 BACKLOG |
+| **AI-003** | P1 | **High-Level Mind-Map Visualization**: Generate visual maps of scriptures, tracking interpretations and origins dynamically. | ✅ **DONE** |
 
 ---
 
-_Last Updated: March 19, 2026 (v0.6.0 Revision)_
+## 🪣 Bucket 4: Knowledge Labs & Mini-Apps
+*Objective: Justify learned data with standardized, short, template-driven tools.*
+
+| Task ID | Level | Task Description | Status |
+| :--- | :--- | :--- | :--- |
+| **LAB-001** | P0 | **Standardized App Template**: Create a reusable template (UI/UX) so all new knowledge apps feel cohesive and short. | ✅ **DONE** |
+| **LAB-002** | P1 | **Tattva App Refinement**: Ensure the existing Tattva explorer uses the new standardized template. | ✅ **DONE** |
+| **LAB-003** | P1 | **Sanskrit Grammar Tokenizer App**: A new short app using the template to break down grammar for a given shloka. | ✅ **DONE** |
+| **LAB-004** | P1 | **Chhanda / Meter Analyzer App**: A new short app to visualize poetic meter algorithms for Vedic verses. | ✅ **DONE** |
+
+---
+
+## 🪣 Bucket 5: Core Technical Debt & Dev Ops
+*Objective: Unseen infrastructure that enables the scale.*
+
+| Task ID | Level | Task Description | Status |
+| :--- | :--- | :--- | :--- |
+| **OPS-001** | P0 | **FTS5 Edge Search**: Fast text search index for all fetched and collated data using SQLite WASM. | ✅ **DONE** |
+| **OPS-002** | P0 | **OPFS Persistent Shards**: Implement Origin Private File System for persistent binary lake storage to handle the massive influx of multiauthor data. | 🔥 **HIGH PRIORITY** |
+| OPS-003 | P1 | **Special Character Fonts Audit**: Ensure MacOS/Windows glyph fallbacks are 100% working across Sanskrit/Marathi/Hindi. | ✅ **DONE** |
+
+---
+
+## 🪣 Bucket 6: Guided Learning Journeys (Tiered Paths)
+*Objective: Transform a visitor into a scholar through structured curriculum.*
+
+| Task ID | Level | Task Description | Status |
+| :--- | :--- | :--- | :--- |
+| **PATH-101** | P1 | **Journey 1: The Seeker's Introduction (Novice)**:<br>• Study Gita Ch 2: 1-30 (Nature of Soul)<br>• Study Isha Upanishad (Universal Presence)<br>• Tattva Explorer Intro (Five Elements breakdown)<br>• **Quiz**: Core philosophical concepts. | 📅 BACKLOG |
+| **PATH-102** | P1 | **Journey 2: The Deep Dive (Intermediate)**:<br>• Full Gita with AI Synthesis per Chapter<br>• Yoga Sutras Samadhi Pada (Mental Discipline)<br>• Kena Upanishad Study (The Who behind the What)<br>• **Lab**: Sanskrit Shloka Tokenizer usage. | 📅 BACKLOG |
+| **PATH-103** | P2 | **Journey 3: The Scholar's Mastery (Expert)**:<br>• Mahabharata Shanti Parva (Political/Ethical Science)<br>• Brahma Sutras Adhyaya 1 (Vedanta Logic)<br>• Bhagavata Purana Canto 2 (Cosmology)<br>• **Final Project**: Write a synthesis of 3 schools of Vedanta. | 📅 BACKLOG |
+| **PATH-UI** | P1 | **Progression Dashboard**: Design interface to track progress through the 3 journeys with badges. | 📅 BACKLOG |
+
+---
+
+## 🪣 Bucket 7: Infrastructure & CI/CD Excellence
+*Objective: Unbreakable distribution and developer agility.*
+
+| Task ID | Level | Task Description | Status |
+| :--- | :--- | :--- | :--- |
+| **OPS-101** | P0 | **GitHub Pages CI/CD Fix**: Resolve `middleware.ts` incompatibility with `output: export` by splitting edge logic. | 🔥 **HIGH PRIORITY** |
+| **OPS-102** | P1 | **Automated Lake Ingestion**: Move `scripts/lakeIngest.js` into a GitHub Action that runs when new CSV/JSON data is pushed. | 📅 BACKLOG |
+| **OPS-103** | P1 | **Local Model Orchestration**: Containerize the build environment to ensure reproducible static exports across developer machines. | 📅 BACKLOG |
+
+---
+
+## 🪣 Bucket 8: Social, Wiki & Community Collaboration
+*Objective: Transform from a "Library" to a "Living Sanctuary".*
+
+| Task ID | Level | Task Description | Status |
+| :--- | :--- | :--- | :--- |
+| **SOC-101** | P1 | **Community Edit Protocol**: Standardized YAML/JSON edit contribution guide for scholars to fix typos and translation errors. | 📅 BACKLOG |
+| **SOC-102** | P2 | **Scholar Dashboards**: Allow users to save notes, highlight favorite shlokas, and generate "Wisdom Collections". | 📅 BACKLOG |
+| **SOC-103** | P2 | **API Public Surface**: Document and expose the "Vedic Lake" API for third-party devotional or research apps. | 📅 BACKLOG |
+
+---
+
+## 🪣 Bucket 9: Immersive Media & Multimodal Wisdom
+*Objective: Engagement through more than just text.*
+
+| Task ID | Level | Task Description | Status |
+| :--- | :--- | :--- | :--- |
+| **MED-101** | P0 | **1600px UI Refinement**: Ensure the "Wide Canvas" layout used for Gita-18 is consistently applied to Upanishads and Puranas. | 🔥 **HIGH PRIORITY** |
+| **MED-102** | P1 | **Audio Shloka Integration**: Link Sanskrit audio files (.mp3) to verse IDs with a persistent sticky player. | 📅 BACKLOG |
+| **MED-103** | P2 | **Visual Lineage Maps**: Use the `viz_type` metadata to render 3D-like lineage graphs of philosophers and gurus. | 📅 BACKLOG |
+
+---
+
+_This backlog acts as our strict SDLC/PDLC map. All finished items migrate into `docs/release/release-notes.md` per release cycle._

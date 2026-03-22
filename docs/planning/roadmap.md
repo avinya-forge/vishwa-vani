@@ -45,4 +45,22 @@
 4.  **Donation Integration**: Wikipedia-style sustainable infrastructure.
 
 ---
-_Vishwa-Vani: Preserving Vedic wisdom for the digital age._
+
+## 🏛️ Milestone 5: Infrastructure & Automation
+*Target: Seamless CI/CD and large-scale data ingestion.*
+
+1.  **GitHub Pages Fixed Logic**: Decouple edge-middleware for full static export.
+2.  **Automated Ingestion Pipeline**: Source-to-Lake automated GitHub actions.
+3.  **Local Model Support**: WebLLM/WASM support for in-browser summarization.
+
+---
+
+## 🏛️ Milestone 6: The Collaborative Sanctuary (The Scholar's Wiki)
+*Target: Global contribution and verified scholarly layers.*
+
+1.  **Scholar Dashboards**: Personal notes and collections.
+2.  **Multimodal Wisdom**: Audio shlokas and visual lineage maps.
+3.  **Public API Access**: Enabling the ecosystem.
+
+---
+_Vishwa-Vani: Wisdom for the digital age._
