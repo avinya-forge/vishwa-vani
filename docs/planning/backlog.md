@@ -120,4 +120,30 @@
 
 ---
 
+## 🪣 Bucket 10: NVF Standard Enforcement & Book-wise Audits
+*Objective: Ensure 100% compliance with the mandatory data format: Sanskrit + Eng. Verse + Eng. Meaning + 2 Commentaries.*
+
+| Task ID | Level | Task Description | Status |
+| :--- | :--- | :--- | :--- |
+| **NVF-101** | P0 | **Isha Upanishad (NVF Audit)**: Complete missing verses (9-17); Add 2nd commentary (Adi Shankara/Chinmaya). | 🔥 **HIGH PRIORITY** |
+| **NVF-102** | P0 | **Yoga Sutras (NVF Audit)**: Ingest all 196 sutras with Sanskrit, literal meaning, and 2 commentaries (Vyasa, Vivekananda). | 🔥 **HIGH PRIORITY** |
+| **NVF-103** | P1 | **Bhagavata Purana (NVF Audit)**: Systematic ingestion of Cantos 1-12. Each verse must have Sanskrit + Meaning + 2 Indian sources. | ⏳ IN PROGRESS |
+| **NVF-104** | P1 | **Vishnu Purana (NVF Audit)**: Full replacement of mock shards. Align with NVF standard. | 📅 BACKLOG |
+| **NVF-105** | P1 | **Garuda Purana (NVF Audit)**: Full replacement of mock shards. Focus on Pretakhanda rituals correctly formatted. | 📅 BACKLOG |
+| **NVF-106** | P2 | **Mahabharata (NVF Integration)**: Start with Shanti Parva; link KMG English text with Devanagari Sanskrit fragments. | 📅 BACKLOG |
+
+---
+
+## 🪣 Bucket 11: Meaningful AI & Wisdom Synthesis
+*Objective: Use AI to bridge the gap between ancient text and modern understanding.*
+
+| Task ID | Level | Task Description | Status |
+| :--- | :--- | :--- | :--- |
+| **AI-401** | P0 | **AI Semantic Cross-Referencer**: Automate build-time tagging of verses across books that share identical concepts (e.g. 'Sthitaprajna' in Gita vs 'Atman' in Upanishads). | 🔥 **HIGH PRIORITY** |
+| **AI-402** | P1 | **AI Translation Validator**: Deploy an LLM to audit 'English Meaning' vs 'Sanskrit Original' for accuracy and potential bias or transcription errors. | 📅 BACKLOG |
+| **AI-403** | P1 | **AI Universal Summary**: Refine the 'AI Professor' to generate 3 layers of summaries: 1. Scholar (Deep), 2. Student (Medium), 3. Child (Simple). | 📅 BACKLOG |
+| **AI-404** | P2 | **Contextual Sentiment Map**: Visualize the emotional/philosophical "tone" of chapters using AI analysis for a more immersive reading experience. | 📅 BACKLOG |
+
+---
+
 _This backlog acts as our strict SDLC/PDLC map. All finished items migrate into `docs/release/release-notes.md` per release cycle._
