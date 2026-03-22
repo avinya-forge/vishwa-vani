@@ -21,6 +21,7 @@
     "meaningHi": "Meaning (Hindi)",
     "meaningMr": "Meaning (Marathi)",
     "readDeepCommentary": "Read Deeper Commentary",
+    "commentaries": "Commentaries",
     "commentary": "Commentary",
     "backToDashboard": "← Back to Library",
     "prevChapter": "Previous Chapter",
@@ -46,8 +47,8 @@
     "sa": "Sanskrit"
   },
   "footer": {
-    "donate": "Vishwa-Vani is a non-profit open-source initiative. We rely on readers like you to keep the digital sanctuary alive.",
+    "donate": "The project is a non-profit open-source initiative. We rely on readers like you to keep the digital sanctuary alive.",
     "donateLink": "Support the Digital Sanctuary ☕",
-    "copyright": "Vishwa-Vani. Open Source Project."
+    "copyright": "Vedic Wikipedia. Open Source Project."
   }
 }

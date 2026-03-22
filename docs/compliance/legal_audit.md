@@ -30,6 +30,6 @@ To prevent 100s of footer links, Vishwa-Vani uses a **Multi-Tier Attribution Sys
 ## 🏗️ Action Items
 - [x] **1902.1**: Add "Source Context" button to `StudyClient` to show attribution per book.
 - [x] **1902.2**: Audit `bhavykhatri` Mahabharata license headers.
-- [ ] **1902.3**: Contact `Akhilesh Gogikar` for explicit "Digitization Credit" preference.
+- [x] **1902.3**: Contact `Akhilesh Gogikar` for explicit "Digitization Credit" preference.
 
 _Last Updated: March 2026_

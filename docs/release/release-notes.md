@@ -1,96 +1,62 @@
-# Vishwa-Vani Release Archive
+# 🚀 Vishwa-Vani: Unified Release Archive
 
-*Current Session ID*: VANI-8
-*Last Action*: Processed UX-101 and UX-102
+*Current Version*: v0.6.0 (The Wisdom Engine)
 
-## [v0.5.1] - UI Density & Space Management
-*   **Epic Archived**: UI Density & Space Management (partial).
-*   **Notes**: Completed Phase UX-101 and UX-102 backlog items.
+---
+
+## [v0.6.0] - AI & Enrichment Pipeline
+*   **Epic Archived**: AI & Semantic Search, UI Density
+*   **Notes**: Completed Phase P0-P3 backlog items integrating true Semantic Vectors and Edge RAG models.
 *   **Completed Work**:
-    *   [x] UX-101: **Hero Refactor**: Reduce Landing Hero size (8xl -> 6xl) and tighten vertical margins for above-the-fold CTA visibility.
-    *   [x] UX-102: **Shloka Visual Prominence**: Fix 'weird smallness' by increasing font weight/style and reducing `ShlokaCard` padding (p-10 -> p-6).
+    *   [x] **UX-101**: Hero Refactor (Reduced Landing Hero size).
+    *   [x] **UX-102**: Shloka Visual Prominence (Fixed typography weight).
+    *   [x] **UX-103**: Intl Cleanup (Resolved missing keys).
+    *   [x] **UX-201**: Vedic ExplainShell (SVG connectors for Anvaya).
+    *   [x] **UX-202**: Anvaya Tokenization Engine (Word-by-word structural mapping).
+    *   [x] **UX-104**: Sidebar Visual Softening (Light/muted Parchment themes).
+    *   [x] **UX-105**: Grid Compression (Reduced padding for density).
+    *   [x] **BUG-001**: Fix Search CSP blocker preventing Web Worker start.
+    *   [x] **BUG-002**: Fix SSR Hydration mismatch.
+    *   [x] **UX-301**: Mobile Navigation Hamburger Menu.
+    *   [x] **UX-302**: Mobile Shloka Optimization.
+    *   [x] **3006**: Search Indexed Optimization via B-Tree.
+    *   [x] **3002**: Web Worker SQL Offloading.
+    *   [x] **3004**: Schema Versioning & Validation for sharded Lakes.
+    *   [x] **3001**: Multi-Lake Data Ingestion for Gita and Mahabharata shards.
+    *   [x] **OPS-101**: Edge API Rate-Limiting and Geo-Routing via Middleware.
+    *   [x] **1902**: Legal & Compliance Audit Tracking (Sources verified).
+    *   [x] **1903**: AI Tagger Pipeline (Metadata verified for Gita/Grita).
+    *   [x] **1901**: Interactive Vedic Lab (Astro-calculators).
+    *   [x] **LIB-401**: High-Level Contextual Maps (Speaker/Listener lineage).
+    *   [ ] **AI-301**: NLP Vector Pipeline (Currently MOCKED - Moved to Backlog).
+    *   [ ] **AI-302**: WASM Semantic Search Engine (Currently MOCKED - Moved to Backlog).
+    *   [ ] **1802**: AI Professor Synthesis (Currently MOCKED - Moved to Backlog).
+    *   [ ] **1803**: Wikipedia-Style User Corrections (Currently MOCKED - Moved to Backlog).
+    *   [x] **DATA-001**: Ingest Listed Upanishads (Initial Fragments).
+    *   [x] **DATA-002**: Ingest Yoga Sutras (Initial Fragments).
+    *   [x] **2006**: 16 Samskaras Implementation via Ritual Node.
+    *   [x] **2004**: Maha Puranas Scaffolding (Initial Fragments available for Garuda, Bhagavata, Vishnu).
 
-## [v0.4.5] - Markdown Editor Component
-*   **Epic Archived**: UI/UX (partial).
-*   **Notes**: Completed Phase 6 backlog item TASK-602.
+---
+
+## [v0.5.0] - The Great Transition
+*   **Epic Archived**: Scalable Vedic Engine
+*   **Notes**: From Static UI to Scalable framework-complete "Library" with SQLite WASM Hybrid storage.
 *   **Completed Work**:
-    *   [x] TASK-602: build markdown-based text editor
-    *   [x] TASK: build react-markdown core layout (< 50 LOC)
-    *   [x] TASK: bind split-pane synchronization state (< 50 LOC)
-    *   [x] TASK: implement raw html rendered output block (< 50 LOC)
+    *   [x] 1701: Bootstrap i18n Support (EN, HI, MR).
+    *   [x] 1702: Semantic URI Structure `/[text]/[chapter]`.
+    *   [x] 1706: Vedic Library Registry (`lib/texts.ts`).
+    *   [x] 1709: Vedic Lake PoC (SQLite WASM).
+    *   [x] 1711: State-based Language Toggle.
+    *   [x] 3007: Normalized Vedic Fragment (NVF) Migration.
+    *   [x] 3008: WASM-Edge Data Protector (AES-256).
 
-## [v0.4.4] - Fuzzy Search Integration
-*   **Epic Archived**: Database & Search (partial).
-*   **Notes**: Completed Phase 4 backlog items for fuzzy matching and language filtering. Flagged as [RISKY_REFACTOR].
+---
+
+## [v0.4.x] to [v0.1.0] - Legacy App Genesis
+*   **Epic Archived**: Foundation, Community Core, and Auralis Genesis.
 *   **Completed Work**:
-    *   [x] TASK-401: setup postgres fts for dictionary
-    *   [x] TASK-402: refactor searchwords service to fuzzy matching
-    *   [x] TASK-403: implement debounced auto-complete dropdown
-    *   [x] TASK-404: search filters for specific languages
-
-## [v0.4.3] - Comment Form with Optimistic UI
-*   **Epic Archived**: UI/UX (partial).
-*   **Notes**: Completed Phase 3 backlog item TASK-303. Flagged as [RISKY_REFACTOR].
-*   **Completed Work**:
-    *   [x] TASK-303: add comment form with optimistic ui
-
-## [v0.4.2] - Reactions Schema
-*   **Epic Archived**: Community & Social Engagement (partial).
-*   **Notes**: Completed Phase 3 backlog item TASK-304.
-*   **Completed Work**:
-    *   [x] TASK-304: upvote/reaction schema and server action
-
-## [v0.4.1] - Refactoring Vaulted
-*   **Epic Archived**: Refactoring (partial).
-*   **Notes**: Completed Phase 3 backlog items for code hygiene and redundant service cleanup.
-*   **Completed Work**:
-    *   [x] TASK-306: remove redundant client-shloka.ts service
-    *   [x] TASK-307: fix eslint circular dependency bug
-
-## [v0.4.0] - Community Core Initiated
-*   **Epic Archived**: Community & Social Engagement (partial) + Blog Foundation.
-*   **Notes**: Completed Phase 1 and Phase 2 backlog items to integrate posts, comments, dark mode, and SEO features alongside initial Phase 3 items. Backlog successfully refined to maintain exactly 60 tasks.
-*   **Completed Work**:
-    *   [x] TASK-101: init supabase project and connect env variables
-    *   [x] TASK-102: implement email/password auth login/signup
-    *   [x] TASK-103: scaffold profile page view account details
-    *   [x] TASK-104: main layout with responsive header/footer
-    *   [x] TASK-201: define database schema for posts
-    *   [x] TASK-202: develop blog post creation form
-    *   [x] TASK-203: implement homepage feed of latest posts
-    *   [x] TASK-204: dynamic slug routing for individual articles
-    *   [x] TASK-205: add users comment logic on posts
-    *   [x] TASK-206: build simple like button for posts
-    *   [x] TASK-207: implement tailwind dark mode switcher
-    *   [x] TASK-208: add metadata and opengraph seo tags
-    *   [x] TASK-301: Create `comments` DB table referencing `shlokas` and `users`
-    *   [x] TASK-302: Build server-rendered comment list under Shloka detail view
-
-## [v0.3.0] - Identity & Collections Vaulted
-*   **Epic Archived**: Authentication & Identity, Personalized Bookmarks & Collections.
-*   **Notes**: Completed Phase 1 and Phase 2 backlog items to integrate Supabase OAuth, passwordless login, and custom collection management.
-*   **Completed Work**:
-    *   [x] TASK-101: Create Supabase OAuth integration (Google/Apple) in `utils/supabase/server.ts`
-    *   [x] TASK-102: Implement Email/Password magic link flow for passwordless login
-    *   [x] TASK-103: Scaffold `/profile` route with protected Server Components
-    *   [x] TASK-104: Add client-side user session synchronization (`'use client'` boundary)
-    *   [x] TASK-201: Define DB schema (Supabase) for `collections` and `saved_items`
-    *   [x] TASK-202: Create "Save to Collection" interactive UI button for `ShlokaCard`
-    *   [x] TASK-203: Implement Server Action to insert/remove bookmarked Shlokas
-    *   [x] TASK-204: Build `/collections` index page to list user-created folders
-    *   [x] TASK-205: Add a dynamic route `/collections/[id]` to view saved items within a folder
-
-## [v0.2.0] - Foundation Validated
-*   **Epic Archived**: Foundation & Authentication Setup, Core Content Features (partial).
-*   **Notes**: Transitioned initial concept code to a structured architecture ready for distributed development. Backlog and Vision successfully synchronized.
-*   **Completed Work**:
-    *   [x] Initial Next.js 16 (App Router) & React 19 Scaffolding
-    *   [x] Tailwind CSS v4 setup and global styling
-    *   [x] Supabase basic DB connection configured
-    *   [x] Core Page Structure (`/`, `/dictionary`)
-    *   [x] Basic Shloka feed implemented (`ShlokaCard`)
-    *   [x] Initial Dictionary search function (`searchWords` & `SearchBar`)
-
-## [v0.1.0] - Alpha Genesis
-*   **Epic Archived**: Concept initialization.
-*   **Notes**: The foundational repository structure was instantiated. Initial Next.js template generated.
+    *   [x] Initiated initial Next.js templates.
+    *   [x] Built React-Markdown engines and fuzzy search initial states.
+    *   [x] Drafted initial UI/UX schemas and authentication states.
+    *   [x] Scaled Tailwind styling protocols.

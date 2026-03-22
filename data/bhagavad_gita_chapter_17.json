@@ -1,0 +1,881 @@
+[
+  {
+    "id": "bhagavad-gita_17_1",
+    "text_slug": "bhagavad-gita",
+    "chapter": 17,
+    "verse": 1,
+    "original": "अर्जुन उवाच |\nये शास्त्रविधिमुत्सृज्य यजन्ते श्रद्धयान्विताः |\nतेषां निष्ठा तु का कृष्ण सत्त्वमाहो रजस्तमः ||१७-१||",
+    "transliteration": "arjuna uvāca .\nye śāstravidhimutsṛjya yajante śraddhayānvitāḥ .\nteṣāṃ niṣṭhā tu kā kṛṣṇa sattvamāho rajastamaḥ ||17-1||",
+    "meaning": "17.1 Arjuna said  Those who, setting aside the ordinances of the scriptures, perform sacrifice with faith, what is their condition, O Krishna? Is is Sattva, Rajas or Tamas?",
+    "layers": [
+      {
+        "author": "sankar",
+        "lang": "sa",
+        "type": "commentary",
+        "content": "।।17.1।। --,ये केचित् अविशेषिताः शास्त्रविधिं शास्त्रविधानं श्रुतिस्मृतिशास्त्रचोदनाम् उत्सृज्य परित्यज्य यजन्ते देवादीन् पूजयन्ति श्रद्धया अन्विताः श्रद्धया आस्तिक्यबुद्ध्या अन्विताः संयुक्ताः सन्तः -- श्रुतिलक्षणं स्मृतिलक्षणं वा कञ्चित् शास्त्रविधिम् अपश्यन्तः वृद्धव्यवहारदर्शनादेव श्रद्दधानतया ये देवादीन् पूजयन्ति: ते इह ये शास्त्रविधिमुत्सृज्य यजन्ते श्रद्धयान्विताः इत्येवं गृह्यन्ते। ये पुनः कञ्चित् शास्त्रविधिं उपलभमाना एव तम् उत्सृज्य अयथाविधि देवादीन् पूजयन्ति: ते इह ये शास्त्रविधिमुत्सृज्य यजन्ते इति न परिगृह्यन्ते। कस्मात् श्रद्धया अन्वितत्वविशेषणात्। देवादिपूजाविधिपरं किञ्चित् शास्त्रं पश्यन्त एव तत् उत्सृज्य अश्रद्दधानतया तद्विहितायां देवादिपूजायां श्रद्धया अन्विताः प्रवर्तन्ते इति न शक्यं कल्पयितुं यस्मात्: तस्मात् पूर्वोक्ता एव ये शास्त्रविधिमुत्सृज्य यजन्ते श्रद्धयान्विताः इत्यत्र गृह्यन्ते। तेषाम् एवंभूतानां निष्ठा तु का कृष्ण सत्त्वम् आहो रजः तमः: किं सत्त्वं निष्ठा अवस्थानम्: आहोस्वित् रजः: अथवा तमः इति। एतत् उक्तं भवति -- या तेषां देवादिविषया पूजा: सा किं सात्त्विकी: आहोस्वित् राजसी: उत तामसी इति।।सामान्यविषयः अयं प्रश्नः न अप्रविभज्य प्रतिवचनम् अर्हतीति श्रीभगवानुवाच --,श्रीभगवानुवाच --,"
+      },
+      {
+        "author": "rams",
+        "lang": "hi",
+        "type": "translation",
+        "content": "।।17.1।। अर्जुन बोले -- हे कृष्ण ! जो मनुष्य शास्त्र-विधिका त्याग करके श्रद्धापूर्वक देवता आदिका पूजन करते हैं, उनकी निष्ठा फिर कौन-सी है: सात्त्विकी है अथवा राजसी-तामसी?"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "yoga",
+        "bhakti",
+        "jnana",
+        "liberation",
+        "battle"
+      ]
+    }
+  },
+  {
+    "id": "bhagavad-gita_17_2",
+    "text_slug": "bhagavad-gita",
+    "chapter": 17,
+    "verse": 2,
+    "original": "श्रीभगवानुवाच |\nत्रिविधा भवति श्रद्धा देहिनां सा स्वभावजा |\nसात्त्विकी राजसी चैव तामसी चेति तां शृणु ||१७-२||",
+    "transliteration": "śrībhagavānuvāca .\ntrividhā bhavati śraddhā dehināṃ sā svabhāvajā .\nsāttvikī rājasī caiva tāmasī ceti tāṃ śṛṇu ||17-2||",
+    "meaning": "17.2 The Blessed Lord said  Threefold is the faith of the embodied, which is inherent in their nature  the Sattvic (pure), the Rajasic (passionate) and the Tamasic (dark). Do thou hear of it.",
+    "layers": [
+      {
+        "author": "sankar",
+        "lang": "sa",
+        "type": "commentary",
+        "content": "।।17.2।। --,त्रिविधा त्रिप्रकारा भवति श्रद्धा: यस्यां निष्ठायां त्वं पृच्छसि: देहिनां शरीरिणां सा स्वभावजा जन्मान्तरकृतः धर्मादिसंस्कारः मरणकाले अभिव्यक्तः स्वभावः उच्यते: ततो जाता स्वभावजा। सात्त्विकी सत्त्वनिर्वृत्ता देवपूजादिविषया राजसी रजोनिर्वृत्ता यक्षरक्षःपूजादिविषया तामसी तमोनिर्वृत्ता प्रेतपिशाचादिपूजाविषया एवं त्रिविधां ताम् उच्यमानां श्रद्धां शृणु अवधारय।।सा इयं त्रिविधा भवति --,"
+      },
+      {
+        "author": "rams",
+        "lang": "hi",
+        "type": "translation",
+        "content": "।।17.2।।श्रीभगवान् बोले -- मनुष्योंकी वह स्वभावसे उत्पन्न हुई श्रद्धा सात्त्विकी तथा राजसी और तामसी -- ऐसे तीन तरहकी ही होती है, उसको तुम मेरेसे सुनो।"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "bhakti",
+        "karma",
+        "jnana",
+        "maya",
+        "liberation"
+      ]
+    }
+  },
+  {
+    "id": "bhagavad-gita_17_3",
+    "text_slug": "bhagavad-gita",
+    "chapter": 17,
+    "verse": 3,
+    "original": "सत्त्वानुरूपा सर्वस्य श्रद्धा भवति भारत |\nश्रद्धामयोऽयं पुरुषो यो यच्छ्रद्धः स एव सः ||१७-३||",
+    "transliteration": "sattvānurūpā sarvasya śraddhā bhavati bhārata .\nśraddhāmayo.ayaṃ puruṣo yo yacchraddhaḥ sa eva saḥ ||17-3||",
+    "meaning": "17.3 The faith of each is in accordance with his nature, O Arjuna. The man consists of his faith; as a man's faith is, so is he.",
+    "layers": [
+      {
+        "author": "sankar",
+        "lang": "sa",
+        "type": "commentary",
+        "content": "।।17.3।। --,सत्त्वानुरूपा विशिष्टसंस्कारोपेतान्तःकरणानुरूपा सर्वस्य प्राणिजातस्य श्रद्धा भवति भारत। यदि एवं ततः किं स्यादिति: उच्यते -- श्रद्धामयः अयं श्रद्धाप्रायः पुरुषः संसारी जीवः। कथम् यः यच्छ्रद्धः या श्रद्धा यस्य जीवस्य सः यच्छ्रद्धः स एव तच्छ्रद्धानुरूप एव सः जीवः।।ततश्च कार्येण लिङ्गेन देवादिपूजया सत्त्वादिनिष्ठा अनुमेया इत्याह --,"
+      },
+      {
+        "author": "rams",
+        "lang": "hi",
+        "type": "translation",
+        "content": "।।17.3।।हे भारत ! सभी मनुष्योंकी श्रद्धा अन्तःकरणके अनुरूप होती है। यह मनुष्य श्रद्धामय है। इसलिये जो जैसी श्रद्धावाला है, वही उसका स्वरूप है अर्थात् वही उसकी निष्ठा -- स्थिति है।"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "yoga",
+        "bhakti",
+        "karma",
+        "jnana",
+        "maya"
+      ]
+    }
+  },
+  {
+    "id": "bhagavad-gita_17_4",
+    "text_slug": "bhagavad-gita",
+    "chapter": 17,
+    "verse": 4,
+    "original": "यजन्ते सात्त्विका देवान्यक्षरक्षांसि राजसाः |\nप्रेतान्भूतगणांश्चान्ये यजन्ते तामसा जनाः ||१७-४||",
+    "transliteration": "yajante sāttvikā devānyakṣarakṣāṃsi rājasāḥ .\npretānbhūtagaṇāṃścānye yajante tāmasā janāḥ ||17-4||",
+    "meaning": "17.4 The Sattvic or the pure men worship the gods; the Rajasic or the passionate worship the Yakshas and the Rakshasas; the others (the Tamasic or the deluded people) worship the ghosts and the hosts of the nature-spirits.",
+    "layers": [
+      {
+        "author": "sankar",
+        "lang": "sa",
+        "type": "commentary",
+        "content": "।।17.4।। --,यजन्ते पूजयन्ति सात्त्विकाः सत्त्वनिष्ठाः देवान्: यक्षरक्षांसि राजसाः: प्रेतान् भूतगणांश्च सप्तमातृकादींश्च अन्ये यजन्ते तामसाः जनाः।।एवं कार्यतो निर्णीताः सत्त्वादिनिष्ठाः शास्त्रविध्युत्सर्गे। तत्र कश्चिदेव सहस्रेषु देवपूजादिपरः सत्त्वनिष्ठो भवति: बाहुल्येन तु रजोनिष्ठाः तमोनिष्ठाश्चैव प्राणिनो भवन्ति। कथम् --,"
+      },
+      {
+        "author": "rams",
+        "lang": "hi",
+        "type": "translation",
+        "content": "।।17.4।।सात्त्विक मनुष्य देवताओंका पूजन करते हैं, राजस मनुष्य यक्षों और राक्षसोंका और दूसरे जो तामस मनुष्य हैं, वे प्रेतों और भूतगणोंका पूजन करते हैं।"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "bhakti",
+        "karma",
+        "jnana",
+        "maya",
+        "battle"
+      ]
+    }
+  },
+  {
+    "id": "bhagavad-gita_17_5",
+    "text_slug": "bhagavad-gita",
+    "chapter": 17,
+    "verse": 5,
+    "original": "अशास्त्रविहितं घोरं तप्यन्ते ये तपो जनाः |\nदम्भाहंकारसंयुक्ताः कामरागबलान्विताः ||१७-५||",
+    "transliteration": "aśāstravihitaṃ ghoraṃ tapyante ye tapo janāḥ .\ndambhāhaṃkārasaṃyuktāḥ kāmarāgabalānvitāḥ ||17-5||",
+    "meaning": "17.5 Those men who practise terrific austerities not enjoined by the scriptures, given to hypocrisy and egoism, impelled by the force of lust and attachment.",
+    "layers": [
+      {
+        "author": "sankar",
+        "lang": "sa",
+        "type": "commentary",
+        "content": "।।17.5।। --,अशास्त्रविहितं न शास्त्रविहितम् अशास्त्रविहितं घोरं पीडाकरं प्राणिनाम् आत्मनश्च तपः तप्यन्ते निर्वर्तयन्ति ये तपो जनाः ते च दम्भाहंकारसंयुक्ताः: दम्भश्च अहंकारश्च दम्भाहंकारौ: ताभ्यां संयुक्ताः दम्भाहंकारसंयुक्ताः: कामरागबलान्विताः कामश्च रागश्च कामरागौ तत्कृतं बलं कामरागबलं तेन अन्विताः कामरागबलान्विताः।।"
+      },
+      {
+        "author": "rams",
+        "lang": "hi",
+        "type": "translation",
+        "content": "।।17.5।।जो मनुष्य शास्त्रविधिसे रहित घोर तप करते हैं; जो दम्भ और अहङ्कारसे अच्छी तरह युक्त हैं; जो भोग-पदार्थ, आसक्ति और हठसे युक्त हैं; जो शरीरमें स्थित पाँच भूतोंको अर्थात् पाञ्चभौतिक शरीरको तथा अन्तःकरणमें स्थित मुझ परमात्माको भी कृश करनेवाले हैं उन अज्ञानियोंको तू आसुर निश्चयवाले (आसुरी सम्पदावाले) समझ।"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "yoga",
+        "bhakti",
+        "jnana",
+        "maya"
+      ]
+    }
+  },
+  {
+    "id": "bhagavad-gita_17_6",
+    "text_slug": "bhagavad-gita",
+    "chapter": 17,
+    "verse": 6,
+    "original": "कर्षयन्तः शरीरस्थं भूतग्राममचेतसः |\nमां चैवान्तःशरीरस्थं तान्विद्ध्यासुरनिश्चयान् ||१७-६||",
+    "transliteration": "karṣayantaḥ śarīrasthaṃ bhūtagrāmamacetasaḥ .\nmāṃ caivāntaḥśarīrasthaṃ tānviddhyāsuraniścayān ||17-6||",
+    "meaning": "17.6 Senseless, torturing all the elements in the body and Me also, Who dwell in the body,  know thou these to be of demonical resolves.",
+    "layers": [
+      {
+        "author": "sankar",
+        "lang": "sa",
+        "type": "commentary",
+        "content": "।।17.6।। --,कर्शयन्तः कृशीकुर्वन्तः शरीरस्थं भूतग्रामं करणसमुदायम् अचेतसः अविवेकिनः मां चैव तत्कर्मबुद्धिसाक्षिभूतम्,अन्तःशरीरस्थं नारायणं कर्शयन्तः: मदनुशासनाकरणमेव मत्कर्शनम्: तान् विद्धि आसुरनिश्चयान् आसुरो निश्चयो येषां ते आसुरनिश्चयाः तान् परिहरणार्थं विद्धि इति उपदेशः।।आहाराणां च रस्यस्निग्धादिवर्गत्रयरूपेण भिन्नानां यथाक्रमं सात्त्विकराजसतामसपुरुषप्रियत्वदर्शनम् इह क्रियते रस्यस्निग्धादिषु आहारविशेषेषु आत्मनः प्रीत्यतिरेकेण लिङ्गेन सात्त्विकत्वं राजसत्वं तामसत्वं च बुद्ध्वा रजस्तमोलिङ्गानाम् आहाराणां परिवर्जनार्थं सत्त्वलिङ्गानां च उपादानार्थम्। तथा यज्ञादीनामपि सत्त्वादिगुणभेदेन त्रिविधत्वप्रतिपादनम् इह राजसतामसान् बुद्ध्वा कथं नु नाम परित्यजेत्: सात्त्विकानेव अनुतिष्ठेत् इत्येवमर्थम्। आह --,"
+      },
+      {
+        "author": "rams",
+        "lang": "hi",
+        "type": "translation",
+        "content": "।।17.6।।जो मनुष्य शास्त्रविधिसे रहित घोर तप करते हैं; जो दम्भ और अहङ्कारसे अच्छी तरह युक्त हैं; जो भोग-पदार्थ, आसक्ति और हठसे युक्त हैं; जो शरीरमें स्थित पाँच भूतोंको अर्थात् पाञ्चभौतिक शरीरको तथा अन्तःकरणमें स्थित मुझ परमात्माको भी कृश करनेवाले हैं उन अज्ञानियोंको तू आसुर निश्चयवाले (आसुरी सम्पदावाले) समझ।"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "yoga",
+        "bhakti",
+        "karma",
+        "jnana"
+      ]
+    }
+  },
+  {
+    "id": "bhagavad-gita_17_7",
+    "text_slug": "bhagavad-gita",
+    "chapter": 17,
+    "verse": 7,
+    "original": "आहारस्त्वपि सर्वस्य त्रिविधो भवति प्रियः |\nयज्ञस्तपस्तथा दानं तेषां भेदमिमं शृणु ||१७-७||",
+    "transliteration": "āhārastvapi sarvasya trividho bhavati priyaḥ .\nyajñastapastathā dānaṃ teṣāṃ bhedamimaṃ śṛṇu ||17-7||",
+    "meaning": "17.7 The food also which is dear to each is threefold, as also sacrifice, austerity and almsgiving. Hear thou the distinction of these.",
+    "layers": [
+      {
+        "author": "sankar",
+        "lang": "sa",
+        "type": "commentary",
+        "content": "।।17.7।। --,आहारस्त्वपि सर्वस्य भोक्तुः प्राणिनः त्रिविधो भवति प्रियः इष्टः: तथा यज्ञः तथा तपः: तथा दानम्। तेषाम् आहारादीनां भेदम् इमं वक्ष्यमाणं श्रृणु।।"
+      },
+      {
+        "author": "rams",
+        "lang": "hi",
+        "type": "translation",
+        "content": "।।17.7।।आहार भी सबको तीन प्रकारका प्रिय होता है और वैसे ही यज्ञ, दान और तप भी तीन प्रकारके होते हैं अर्थात् शास्त्रीय कर्मोंमें भी तीन प्रकारकी रुचि होती है, तू उनके इस भेदको सुन।"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "yoga",
+        "karma",
+        "maya",
+        "liberation"
+      ]
+    }
+  },
+  {
+    "id": "bhagavad-gita_17_8",
+    "text_slug": "bhagavad-gita",
+    "chapter": 17,
+    "verse": 8,
+    "original": "आयुःसत्त्वबलारोग्यसुखप्रीतिविवर्धनाः |\nरस्याः स्निग्धाः स्थिरा हृद्या आहाराः सात्त्विकप्रियाः ||१७-८||",
+    "transliteration": "āyuḥsattvabalārogyasukhaprītivivardhanāḥ .\nrasyāḥ snigdhāḥ sthirā hṛdyā āhārāḥ sāttvikapriyāḥ ||17-8||",
+    "meaning": "17.8 The foods which increase life, purity, strength, health, joy and cheerfulness (good appetite), which are savoury and oleaginous, substantial and agreeable, are dear to the Sattvic (pure) people.",
+    "layers": [
+      {
+        "author": "sankar",
+        "lang": "sa",
+        "type": "commentary",
+        "content": "।।17.8।। --,आयुश्च सत्त्वं च बलं च आरोग्यं च सुखं च प्रीतिश्च आयुःसत्त्वबलारोग्यसुखप्रीतयः तासां विवर्धनाः आयुःसत्त्वबलारोग्यसुखप्रीतिविवर्धनाः: ते च रस्याः रसोपेताः: स्निग्धाः स्नेहवन्तः: स्थिराः चिरकालस्थायिनः देहे: हृद्याः हृदयप्रियाः आहाराः सात्त्विकप्रियाः सात्त्विकस्य इष्टाः।।"
+      },
+      {
+        "author": "rams",
+        "lang": "hi",
+        "type": "translation",
+        "content": "।।17.8।।आयु, सत्त्वगुण, बल, आरोग्य, सुख और प्रसन्नता बढ़ानेवाले, स्थिर रहनेवाले, हृदयको शक्ति देनेवाले, रसयुक्त तथा चिकने -- ऐसे आहार अर्थात् भोजन करनेके पदार्थ सात्त्विक मनुष्यको प्रिय होते हैं।"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "yoga",
+        "karma",
+        "jnana"
+      ]
+    }
+  },
+  {
+    "id": "bhagavad-gita_17_9",
+    "text_slug": "bhagavad-gita",
+    "chapter": 17,
+    "verse": 9,
+    "original": "कट्वम्ललवणात्युष्णतीक्ष्णरूक्षविदाहिनः |\nआहारा राजसस्येष्टा दुःखशोकामयप्रदाः ||१७-९||",
+    "transliteration": "kaṭvamlalavaṇātyuṣṇatīkṣṇarūkṣavidāhinaḥ .\nāhārā rājasasyeṣṭā duḥkhaśokāmayapradāḥ ||17-9||",
+    "meaning": "17.9 The foods that are bitter, sour, saline, excessively hot, pungent, dry and burning, are liked by the Rajasic and are productive of pain, grief and disease.",
+    "layers": [
+      {
+        "author": "sankar",
+        "lang": "sa",
+        "type": "commentary",
+        "content": "।।17.9।। --,कट्वम्ललवणात्युष्णतीक्ष्णरूक्षविदाहिनः इत्यत्र अतिशब्दः कट्वादिषु सर्वत्र योज्यः: अतिकटुः अतितीक्ष्णः इत्येवम्। कटुश्च अम्लश्च लवणश्च अत्युष्णश्च तीक्ष्णश्च रूक्षश्च विदाही च ते आहाराः राजसस्य इष्टाः: दुःखशोकामयप्रदाः दुःखं च शोकं च आमयं च प्रयच्छन्तीति दुःखशोकामयप्रदाः।।"
+      },
+      {
+        "author": "rams",
+        "lang": "hi",
+        "type": "translation",
+        "content": "।।17.9।।अति कड़वे, अति खट्टे, अति नमकीन, अति गरम, अति तीखे, अति रूखे और अति दाहकारक आहार अर्थात् भोजनके पदार्थ राजस मनुष्यको प्रिय होते हैं, जो कि दुःख, शोक और रोगोंको देनेवाले हैं।"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "bhakti",
+        "maya"
+      ]
+    }
+  },
+  {
+    "id": "bhagavad-gita_17_10",
+    "text_slug": "bhagavad-gita",
+    "chapter": 17,
+    "verse": 10,
+    "original": "यातयामं गतरसं पूति पर्युषितं च यत् |\nउच्छिष्टमपि चामेध्यं भोजनं तामसप्रियम् ||१७-१०||",
+    "transliteration": "yātayāmaṃ gatarasaṃ pūti paryuṣitaṃ ca yat .\nucchiṣṭamapi cāmedhyaṃ bhojanaṃ tāmasapriyam ||17-10||",
+    "meaning": "17.10 That which is state, tasteless, putrid, rotten, refuse and impure, is the food liked by the Tamasic.",
+    "layers": [
+      {
+        "author": "sankar",
+        "lang": "sa",
+        "type": "commentary",
+        "content": "।।17.10।। --,यातयामं मन्दपक्वम्: निर्वीर्यस्य गतरसशब्देन उक्तत्वात्। गतरसं रसवियुक्तम्: पूति दुर्गन्धि: पर्युषितं च पक्वं सत् रात्र्यन्तरितं च यत्: उच्छिष्टमपि च भुक्तशिष्टम् उच्छिष्टम्: अमेध्यम् अयज्ञार्हम्: भोजनम् ईदृशं तामसप्रियम्।।अथ इदानीं यज्ञः त्रिविधः उच्यते --,"
+      },
+      {
+        "author": "rams",
+        "lang": "hi",
+        "type": "translation",
+        "content": "।।17.10।।जो भोजन अधपका, रसरहित, दुर्गन्धित, बासी और उच्छिष्ट है तथा जो महान् अपवित्र भी है, वह तामस मनुष्यको प्रिय होता है।"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "bhakti",
+        "karma"
+      ]
+    }
+  },
+  {
+    "id": "bhagavad-gita_17_11",
+    "text_slug": "bhagavad-gita",
+    "chapter": 17,
+    "verse": 11,
+    "original": "अफलाङ्क्षिभिर्यज्ञो विधिदृष्टो य इज्यते |\nयष्टव्यमेवेति मनः समाधाय स सात्त्विकः ||१७-११||",
+    "transliteration": "aphalāṅkṣibhiryajño vidhidṛṣṭo ya ijyate .\nyaṣṭavyameveti manaḥ samādhāya sa sāttvikaḥ ||17-11||",
+    "meaning": "17.11 That sacrifice which is offered by men without desire for reward as enjoined by the ordinance (scripture), with a firm faith that to do so is a duty, is Sattvic or pure.",
+    "layers": [
+      {
+        "author": "sankar",
+        "lang": "sa",
+        "type": "commentary",
+        "content": "।।17.11।। --,अफलाकाङ्क्षिभिः अफलार्थिभिः यज्ञः विधिदृष्टः शास्त्रचोदनादृष्टो यः यज्ञः इज्यते निर्वर्त्यते: यष्टव्यमेवेति यज्ञस्वरूपनिर्वर्तनमेव कार्यम् इति मनः समाधाय: न अनेन पुरुषार्थो मम कर्तव्यः इत्येवं निश्चित्य: सः सात्त्विकः यज्ञः उच्यते।।"
+      },
+      {
+        "author": "rams",
+        "lang": "hi",
+        "type": "translation",
+        "content": "।।17.11।।यज्ञ करना कर्तव्य है -- इस तरह मनको समाधान करके फलेच्छारहित मनुष्योंद्वारा जो शास्त्रविधिसे नियत यज्ञ किया जाता है, वह सात्त्विक है।"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "dharma",
+        "bhakti",
+        "karma",
+        "jnana",
+        "battle"
+      ]
+    }
+  },
+  {
+    "id": "bhagavad-gita_17_12",
+    "text_slug": "bhagavad-gita",
+    "chapter": 17,
+    "verse": 12,
+    "original": "अभिसन्धाय तु फलं दम्भार्थमपि चैव यत् |\nइज्यते भरतश्रेष्ठ तं यज्ञं विद्धि राजसम् ||१७-१२||",
+    "transliteration": "abhisandhāya tu phalaṃ dambhārthamapi caiva yat .\nijyate bharataśreṣṭha taṃ yajñaṃ viddhi rājasam ||17-12||",
+    "meaning": "17.12 The sacrifice which is offered, O Arjuna, seeking a reward and for ostentation, know thou that to be a Rajasic Yajna.",
+    "layers": [
+      {
+        "author": "sankar",
+        "lang": "sa",
+        "type": "commentary",
+        "content": "।।17.12।। --,अभिसंधाय तु उद्दिश्य फलं दम्भार्थमपि चैव यत् इज्यते भरतश्रेष्ठ तं यज्ञं विद्धि राजसम्।।"
+      },
+      {
+        "author": "rams",
+        "lang": "hi",
+        "type": "translation",
+        "content": "।।17.12।।परन्तु हे भरतश्रेष्ठ अर्जुन ! जो यज्ञ फलकी इच्छाको लेकर अथवा दम्भ-(दिखावटीपन-) के लिये भी किया जाता है, उसको तुम राजस समझो।"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "karma",
+        "jnana",
+        "maya",
+        "battle"
+      ]
+    }
+  },
+  {
+    "id": "bhagavad-gita_17_13",
+    "text_slug": "bhagavad-gita",
+    "chapter": 17,
+    "verse": 13,
+    "original": "विधिहीनमसृष्टान्नं मन्त्रहीनमदक्षिणम् |\nश्रद्धाविरहितं यज्ञं तामसं परिचक्षते ||१७-१३||",
+    "transliteration": "vidhihīnamasṛṣṭānnaṃ mantrahīnamadakṣiṇam .\nśraddhāvirahitaṃ yajñaṃ tāmasaṃ paricakṣate ||17-13||",
+    "meaning": "17.13 They declare that sacrifice to be Tamasic which is contrary to the ordinances of the scriptures, in which no food is distributed, which is devoid of Mantras, gifts and faith.",
+    "layers": [
+      {
+        "author": "sankar",
+        "lang": "sa",
+        "type": "commentary",
+        "content": "।।17.13।। --,विधिहीनं यथाचोदितविपरीतम्: असृष्टान्नं ब्राह्मणेभ्यो न सृष्टं न दत्तम् अन्नं यस्मिन् यज्ञे सः असृष्टान्नः तम् असृष्टान्नम्: मन्त्रहीनं मन्त्रतः स्वरतो वर्णतो वा वियुक्तं मन्त्रहीनम्: अदक्षिणम् उक्तदक्षिणारहितम्: श्रद्धाविरहितं यज्ञं तामसं परिचक्षते तमोनिर्वृत्तं कथयन्ति।।अथ इदानीं तपः त्रिविधम् उच्यते --,"
+      },
+      {
+        "author": "rams",
+        "lang": "hi",
+        "type": "translation",
+        "content": "।।17.13।।शास्त्रविधिसे हीन, अन्न-दानसे रहित, बिना मन्त्रोंके, बिना दक्षिणाके और बिना श्रद्धाके किये जानेवाले यज्ञको तामस यज्ञ कहते हैं।"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "bhakti",
+        "jnana"
+      ]
+    }
+  },
+  {
+    "id": "bhagavad-gita_17_14",
+    "text_slug": "bhagavad-gita",
+    "chapter": 17,
+    "verse": 14,
+    "original": "देवद्विजगुरुप्राज्ञपूजनं शौचमार्जवम् |\nब्रह्मचर्यमहिंसा च शारीरं तप उच्यते ||१७-१४||",
+    "transliteration": "devadvijaguruprājñapūjanaṃ śaucamārjavam .\nbrahmacaryamahiṃsā ca śārīraṃ tapa ucyate ||17-14||",
+    "meaning": "17.14 Worship of the gods, the twice-born, the teachers and the wise, purity, straightforwardness, celibacy and non-injury are called the austerities of the body.",
+    "layers": [
+      {
+        "author": "sankar",
+        "lang": "sa",
+        "type": "commentary",
+        "content": "।।17.14।। --,देवाश्च द्विजाश्च गुरवश्च प्राज्ञाश्च देवद्विजगुरुप्राज्ञाः तेषां पूजनं देवद्विजगुरुप्राज्ञपूजनम्: शौचम्: आर्जवम् ऋजुत्वम्: ब्रह्मचर्यम् अहिंसा च शरीरनिर्वर्त्यं शारीरं शरीरप्रधानैः सर्वैरेव कार्यकरणैः कर्त्रादिभिः साध्यं शारीरं तपः उच्यते। पञ्चैते तस्य हेतवः (गीता 18।15) इति हि वक्ष्यति।।"
+      },
+      {
+        "author": "rams",
+        "lang": "hi",
+        "type": "translation",
+        "content": "।।17.14।।देवता, ब्राह्मण, गुरुजन और जीवन्मुक्त महापुरुषका पूजन करना, शुद्धि रखना, सरलता, ब्रह्मचर्यका पालन करना और हिंसा न करना -- यह शरीरसम्बन्धी तप कहा जाता है।"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "yoga",
+        "bhakti",
+        "karma",
+        "jnana",
+        "maya",
+        "liberation",
+        "battle"
+      ]
+    }
+  },
+  {
+    "id": "bhagavad-gita_17_15",
+    "text_slug": "bhagavad-gita",
+    "chapter": 17,
+    "verse": 15,
+    "original": "अनुद्वेगकरं वाक्यं सत्यं प्रियहितं च यत् |\nस्वाध्यायाभ्यसनं चैव वाङ्मयं तप उच्यते ||१७-१५||",
+    "transliteration": "anudvegakaraṃ vākyaṃ satyaṃ priyahitaṃ ca yat .\nsvādhyāyābhyasanaṃ caiva vāṅmayaṃ tapa ucyate ||17-15||",
+    "meaning": "17.15 Speech which causes no excitement, truthful, pleasant and beneficial, the practice of the study of the Vedas, are called austerity of speech.",
+    "layers": [
+      {
+        "author": "sankar",
+        "lang": "sa",
+        "type": "commentary",
+        "content": "।।17.15।। --,अनुद्वेगकरं प्राणिनाम् अदुःखकरं वाक्यं सत्यं प्रियहितं च यत् प्रियहिते दृष्टादृष्टार्थे। अनुद्वेगकरत्वादिभिः धर्मैः वाक्यं विशेष्यते। विशेषणधर्मसमुच्चयार्थः चशब्दः। परप्रत्ययार्थं प्रयुक्तस्य वाक्यस्य सत्यप्रियहितानुद्वेगकरत्वानाम् अन्यतमेन द्वाभ्यां त्रिभिर्वा हीनता स्याद्यदि: न तद्वाङ्मयं तपः। तथा सत्यवाक्यस्य इतरेषाम् अन्यतमेन द्वाभ्यां त्रिभिर्वा विहीनतायां न वाङ्मयतपस्त्वम्। तथा प्रियवाक्यस्यापि इतरेषाम् अन्यतमेन द्वाभ्यां त्रिभिर्वा विहीनस्य न वाङ्मयतपस्त्वम्। तथा हितवाक्यस्यापि इतरेषाम् अन्यतमेन द्वाभ्यां त्रिभिर्वा विहीनस्य न वाङ्मयतपस्त्वम्। किं पुनः तत् तपः यत् सत्यं वाक्यम् अनुद्वेगकरं प्रियं हितं च: तत् तपः वाङ्मयम् यथा शान्तो भव वत्स: स्वाध्यायं योगं च अनुतिष्ठ: तथा ते श्रेयो भविष्यति इति। स्वाध्यायाभ्यसनं चैव यथाविधि वाङ्मयं तपः उच्यते।।"
+      },
+      {
+        "author": "rams",
+        "lang": "hi",
+        "type": "translation",
+        "content": "।।17.15।।उद्वेग न करनेवाला, सत्य, प्रिय, हितकारक भाषण तथा स्वाध्याय और अभ्यास करना -- यह वाणी-सम्बन्धी तप कहा जाता है।"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "dharma",
+        "yoga",
+        "karma",
+        "jnana",
+        "maya",
+        "liberation"
+      ]
+    }
+  },
+  {
+    "id": "bhagavad-gita_17_16",
+    "text_slug": "bhagavad-gita",
+    "chapter": 17,
+    "verse": 16,
+    "original": "मनः प्रसादः सौम्यत्वं मौनमात्मविनिग्रहः |\nभावसंशुद्धिरित्येतत्तपो मानसमुच्यते ||१७-१६||",
+    "transliteration": "manaḥ prasādaḥ saumyatvaṃ maunamātmavinigrahaḥ .\nbhāvasaṃśuddhirityetattapo mānasamucyate ||17-16||",
+    "meaning": "17.16 Serenity of mind, good-heartedness, self-control, purity of nature  this is called mental austerity.",
+    "layers": [
+      {
+        "author": "sankar",
+        "lang": "sa",
+        "type": "commentary",
+        "content": "।।17.16।। --,मनःप्रसादः मनसः प्रशान्तिः: स्वच्छतापादनं मनसः प्रसादः: सौम्यत्वं यत् सौमनस्यम् आहुः -- मुखादिप्रसादादिकार्योन्नेया अन्तःकरणस्य वृत्तिः। मौनं वाङ्नियमोऽपि मनःसंयमपूर्वको भवति इति कार्येण कारणम् उच्यते मनःसंयमो मौनमिति। आत्मविनिग्रहः मनोनिरोधः सर्वतः सामान्यरूपः आत्मविनिग्रहः: वाग्विषयस्यैव मनसः संयमः मौनम् इति विशेषः। भावसंशुद्धिः परैः व्यवहारकाले अमायावित्वं भावसंशुद्धिः। इत्येतत् तपः मानसम् उच्यते।।यथोक्तं कायिकं वाचिकं मानसं च तपः तप्तं नरैः सत्त्वादिगुणभेदेन कथं त्रिविधं भवतीति: उच्यते --,"
+      },
+      {
+        "author": "rams",
+        "lang": "hi",
+        "type": "translation",
+        "content": "।।17.16।।मनकी प्रसन्नता, सौम्य भाव, मननशीलता, मनका निग्रह और भावोंकी शुद्धि -- इस तरह यह मन-सम्बन्धी तप कहा जाता है।"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "yoga",
+        "karma",
+        "jnana",
+        "liberation",
+        "battle"
+      ]
+    }
+  },
+  {
+    "id": "bhagavad-gita_17_17",
+    "text_slug": "bhagavad-gita",
+    "chapter": 17,
+    "verse": 17,
+    "original": "श्रद्धया परया तप्तं तपस्तत्त्रिविधं नरैः |\nअफलाकाङ्क्षिभिर्युक्तैः सात्त्विकं परिचक्षते ||१७-१७||",
+    "transliteration": "śraddhayā parayā taptaṃ tapastattrividhaṃ naraiḥ .\naphalākāṅkṣibhiryuktaiḥ sāttvikaṃ paricakṣate ||17-17||",
+    "meaning": "17.17 This threefold austerity, practised by steadfast men, with the utmost faith, desiring no reward, they call Sattvic.",
+    "layers": [
+      {
+        "author": "sankar",
+        "lang": "sa",
+        "type": "commentary",
+        "content": "।।17.17।। --,श्रद्धया आस्तिक्यबुद्ध्या परया प्रकृष्टया तप्तम् अनुष्ठितं तपः तत् प्रकृतं त्रिविधं त्रिप्रकारं त्र्यधिष्ठानं नरैः अनुष्ठातृभिः अफलाकाङ्क्षिभिः फलाकाङ्क्षारहितैः युक्तैः समाहितैः यत् ईदृशं तपः: तत् सात्त्विकं सत्त्वनिर्वृत्तं परिचक्षते कथयन्ति शिष्टाः।।"
+      },
+      {
+        "author": "rams",
+        "lang": "hi",
+        "type": "translation",
+        "content": "।।17.17।।परम श्रद्धासे युक्त फलेच्छारहित मनुष्योंके द्वारा तीन प्रकार-(शरीर, वाणी और मन-) का तप किया जाता है, उसको सात्त्विक कहते हैं।"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "bhakti",
+        "karma",
+        "jnana",
+        "maya",
+        "battle"
+      ]
+    }
+  },
+  {
+    "id": "bhagavad-gita_17_18",
+    "text_slug": "bhagavad-gita",
+    "chapter": 17,
+    "verse": 18,
+    "original": "सत्कारमानपूजार्थं तपो दम्भेन चैव यत् |\nक्रियते तदिह प्रोक्तं राजसं चलमध्रुवम् ||१७-१८||",
+    "transliteration": "satkāramānapūjārthaṃ tapo dambhena caiva yat .\nkriyate tadiha proktaṃ rājasaṃ calamadhruvam ||17-18||",
+    "meaning": "17.18 The austerity which is practised with the object of gaining good reception, honour and worship, and with hypocrisy, is here said to be Rajasic, unstable and transitory.",
+    "layers": [
+      {
+        "author": "sankar",
+        "lang": "sa",
+        "type": "commentary",
+        "content": "।।17.18।। --,सत्कारः साधुकारः साधुः अयं तपस्वी ब्राह्मणः इत्येवमर्थम्: मानो माननं प्रत्युत्थानाभिवादनादिः तदर्थम्: पूजा पादप्रक्षालनार्चनाशयितृत्वादिः तदर्थं च पः सत्कारमानपूजार्थम्: दम्भेन चैव यत् क्रियते तपः तत् इह प्रोक्तं कथितं राजसं चलं कादाचित्कफलत्वेन अध्रुवम्।।"
+      },
+      {
+        "author": "rams",
+        "lang": "hi",
+        "type": "translation",
+        "content": "।।17.18।।जो तप सत्कार, मान और पूजाके लिये तथा दिखानेके भावसे किया जाता है, वह इस लोकमें अनिश्चित और नाशवान् फल देनेवाला तप राजस कहा गया है।"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "karma",
+        "jnana",
+        "maya",
+        "battle"
+      ]
+    }
+  },
+  {
+    "id": "bhagavad-gita_17_19",
+    "text_slug": "bhagavad-gita",
+    "chapter": 17,
+    "verse": 19,
+    "original": "मूढग्राहेणात्मनो यत्पीडया क्रियते तपः |\nपरस्योत्सादनार्थं वा तत्तामसमुदाहृतम् ||१७-१९||",
+    "transliteration": "mūḍhagrāheṇātmano yatpīḍayā kriyate tapaḥ .\nparasyotsādanārthaṃ vā tattāmasamudāhṛtam ||17-19||",
+    "meaning": "17.19 That austerity which is practised out of a foolish notion, with self-torture, or for the purpose of destroying another, is declared to be Tamasic.",
+    "layers": [
+      {
+        "author": "sankar",
+        "lang": "sa",
+        "type": "commentary",
+        "content": "।।17.19।। --,मूढग्राहेण अविवेकनिश्चयेन आत्मनः पीडया यत् क्रियते तपः परस्य उत्सादनार्थं विनाशार्थं वा: तत् तामसं तपः उदाहृतम्।।इदानीं दानत्रैविध्यम् उच्यते --,"
+      },
+      {
+        "author": "rams",
+        "lang": "hi",
+        "type": "translation",
+        "content": "।।17.19।।जो तप मूढ़तापूर्वक हठसे अपनेको पीड़ा देकर अथवा दूसरोंको कष्ट देनेके लिये किया जाता है, वह तप तामस कहा गया है।"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "bhakti",
+        "jnana",
+        "battle"
+      ]
+    }
+  },
+  {
+    "id": "bhagavad-gita_17_20",
+    "text_slug": "bhagavad-gita",
+    "chapter": 17,
+    "verse": 20,
+    "original": "दातव्यमिति यद्दानं दीयतेऽनुपकारिणे |\nदेशे काले च पात्रे च तद्दानं सात्त्विकं स्मृतम् ||१७-२०||",
+    "transliteration": "dātavyamiti yaddānaṃ dīyate.anupakāriṇe .\ndeśe kāle ca pātre ca taddānaṃ sāttvikaṃ smṛtam ||17-20||",
+    "meaning": "17.20 That gift which is given to one who does nothing in return, knowing it to be a duty to give in a fit place and time to a worthy person, that gift is held to be Sattvic.",
+    "layers": [
+      {
+        "author": "sankar",
+        "lang": "sa",
+        "type": "commentary",
+        "content": "।।17.20।। --,दातव्यमिति एवं मनः कृत्वा यत् दानं दीयते अनुपकारिणे प्रत्युपकारासमर्थाय: समर्थायापि निरपेक्षं दीयते: देशे पुण्ये कुरुक्षेत्रादौ: काले संक्रान्त्यादौ: पात्रे च षडङ्गविद्वेदपारग इत्यादौ: तत् दानं सा्त्विकं स्मृतम्।।"
+      },
+      {
+        "author": "rams",
+        "lang": "hi",
+        "type": "translation",
+        "content": "।।17.20।।दान देना कर्तव्य है -- ऐसे भावसे जो दान देश, काल और पात्रके प्राप्त होनेपर अनुपकारीको दिया जाता है, वह दान सात्त्विक कहा गया है।"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "dharma",
+        "karma",
+        "jnana",
+        "maya",
+        "battle"
+      ]
+    }
+  },
+  {
+    "id": "bhagavad-gita_17_21",
+    "text_slug": "bhagavad-gita",
+    "chapter": 17,
+    "verse": 21,
+    "original": "यत्तु प्रत्युपकारार्थं फलमुद्दिश्य वा पुनः |\nदीयते च परिक्लिष्टं तद्दानं राजसं स्मृतम् ||१७-२१||",
+    "transliteration": "yattu pratyupakārārthaṃ phalamuddiśya vā punaḥ .\ndīyate ca parikliṣṭaṃ taddānaṃ rājasaṃ smṛtam ||17-21||",
+    "meaning": "17.21 And, that gift which is given with a view to receive something in return, or looking for a reward, or reluctantly, is held to be Rajasic.",
+    "layers": [
+      {
+        "author": "sankar",
+        "lang": "sa",
+        "type": "commentary",
+        "content": "।।17.21।। --,यत्तु दानं प्रत्युपकारार्थं काले तु अयं मां प्रत्युपकरिष्यति इत्येवमर्थम्: फलं वा अस्य दानस्य मे भविष्यति अदृष्टम् इति: तत् उद्दिश्य पुनः दीयते च परिक्लिष्टं खेदसंयुक्तम्: तत् दानं राजसं स्मृतम्।।"
+      },
+      {
+        "author": "rams",
+        "lang": "hi",
+        "type": "translation",
+        "content": "।।17.21।।किन्तु जो दान प्रत्युपकारके लिये अथवा फलप्राप्तिका उद्देश्य बनाकर फिर क्लेशपूर्वक दिया जाता है, वह दान राजस कहा जाता है।"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "karma",
+        "jnana",
+        "battle"
+      ]
+    }
+  },
+  {
+    "id": "bhagavad-gita_17_22",
+    "text_slug": "bhagavad-gita",
+    "chapter": 17,
+    "verse": 22,
+    "original": "अदेशकाले यद्दानमपात्रेभ्यश्च दीयते |\nअसत्कृतमवज्ञातं तत्तामसमुदाहृतम् ||१७-२२||",
+    "transliteration": "adeśakāle yaddānamapātrebhyaśca dīyate .\nasatkṛtamavajñātaṃ tattāmasamudāhṛtam ||17-22||",
+    "meaning": "17.22 The gift that is given at a wrong place and time, to unworthy persons, without respect or with insult is declared to be Tamasic.",
+    "layers": [
+      {
+        "author": "sankar",
+        "lang": "sa",
+        "type": "commentary",
+        "content": "।।17.22।। --,अदेशकाले अदेशे अपुण्यदेशे म्लेच्छाशुच्यादिसंकीर्णे अकाले पुण्यहेतुत्वेन अप्रख्याते संक्रान्त्यादिविशेषरहिते अपात्रेभ्यश्च मूर्खतस्करादिभ्यः: देशादिसंपत्तौ वा असत्कृतं च प्रियवचनपादप्रक्षालनपूजादिरहितम् अवज्ञातं पात्रपरिभवयुक्तं च यत् दानम्: तत् तामसम् उदाहृतम्।।यज्ञदानतपःप्रभृतीनां साद्गुण्यकरणाय अयम् उपदेशः उच्यते --,"
+      },
+      {
+        "author": "rams",
+        "lang": "hi",
+        "type": "translation",
+        "content": "।।17.22।।जो दान बिना सत्कारके तथा अवज्ञापूर्वक अयोग्य देश और कालमें कुपात्रको दिया जाता है, वह दान तामस कहा गया है।"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "bhakti",
+        "liberation"
+      ]
+    }
+  },
+  {
+    "id": "bhagavad-gita_17_23",
+    "text_slug": "bhagavad-gita",
+    "chapter": 17,
+    "verse": 23,
+    "original": "ॐतत्सदिति निर्देशो ब्रह्मणस्त्रिविधः स्मृतः |\nब्राह्मणास्तेन वेदाश्च यज्ञाश्च विहिताः पुरा ||१७-२३||",
+    "transliteration": "OMtatsaditi nirdeśo brahmaṇastrividhaḥ smṛtaḥ .\nbrāhmaṇāstena vedāśca yajñāśca vihitāḥ purā ||17-23||",
+    "meaning": "17.23 \"Om Tat Sat\": This has been declared to be the triple designation of Brahman. By that were created formerly, the Brahmanas, the Vedas and the sacrifices.",
+    "layers": [
+      {
+        "author": "sankar",
+        "lang": "sa",
+        "type": "commentary",
+        "content": "।।17.23।। --, तत् सत् इति एवं निर्देशः: निर्दिश्यते अनेनेति निर्देशः: त्रिविधो नामनिर्देशः ब्रह्मणः स्मृतः चिन्तितः वेदान्तेषु ब्रह्मविद्भिः। ब्राह्मणाः तेन निर्देशेन त्रिविधेन वेदाश्च यज्ञाश्च विहिताः निर्मिताः पुरा पूर्वम् इति निर्देशस्तुत्यर्थम् उच्यते।।"
+      },
+      {
+        "author": "rams",
+        "lang": "hi",
+        "type": "translation",
+        "content": "।।17.23।। ऊँ, तत् और सत् -- इन तीनों नामोंसे जिस परमात्माका निर्देश किया गया है, उसी परमात्माने सृष्टिके आदिमें वेदों, ब्राह्मणों और यज्ञोंकी रचना की है।"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "yoga",
+        "bhakti",
+        "karma",
+        "jnana",
+        "maya",
+        "liberation",
+        "battle"
+      ]
+    }
+  },
+  {
+    "id": "bhagavad-gita_17_24",
+    "text_slug": "bhagavad-gita",
+    "chapter": 17,
+    "verse": 24,
+    "original": "तस्मादोमित्युदाहृत्य यज्ञदानतपःक्रियाः |\nप्रवर्तन्ते विधानोक्ताः सततं ब्रह्मवादिनाम् ||१७-२४||",
+    "transliteration": "tasmādomityudāhṛtya yajñadānatapaḥkriyāḥ .\npravartante vidhānoktāḥ satataṃ brahmavādinām ||17-24||",
+    "meaning": "17.24 Therefore, with the utterance of \"Om\" are the acts of sacrifice, gift and austerity as enjoined in the scriptures, always begun by the students of Brahman.",
+    "layers": [
+      {
+        "author": "sankar",
+        "lang": "sa",
+        "type": "commentary",
+        "content": "।।17.24।। --,तस्मात् ओम्  इति उदाहृत्य उच्चार्य यज्ञदानतपःक्रियाः यज्ञादिस्वरूपाः क्रियाः प्रवर्तन्ते विधानोक्ताः शास्त्रचोदिताः सततं सर्वदा ब्रह्मवादिनां ब्रह्मवदनशीलानाम्।।"
+      },
+      {
+        "author": "rams",
+        "lang": "hi",
+        "type": "translation",
+        "content": "।।17.24।।इसलिये वैदिक सिद्धान्तोंको माननेवाले पुरुषोंकी शास्त्रविधिसे नियत यज्ञ, दान और तपरूप क्रियाएँ सदा 'ऊँ' इस परमात्माके नामका उच्चारण करके ही आरम्भ होती हैं।"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "yoga",
+        "bhakti",
+        "karma",
+        "jnana",
+        "liberation"
+      ]
+    }
+  },
+  {
+    "id": "bhagavad-gita_17_25",
+    "text_slug": "bhagavad-gita",
+    "chapter": 17,
+    "verse": 25,
+    "original": "तदित्यनभिसन्धाय फलं यज्ञतपःक्रियाः |\nदानक्रियाश्च विविधाः क्रियन्ते मोक्षकाङ्क्षिभिः ||१७-२५||",
+    "transliteration": "tadityanabhisandhāya phalaṃ yajñatapaḥkriyāḥ .\ndānakriyāśca vividhāḥ kriyante mokṣakāṅkṣibhiḥ ||17-25||",
+    "meaning": "17.25 Uttering ï1Tatï1, without aiming at the fruits, are the acts of sacrifice and austerity and the various acts of gifts performed by the seekers of liberation.",
+    "layers": [
+      {
+        "author": "sankar",
+        "lang": "sa",
+        "type": "commentary",
+        "content": "।।17.25।। --,तम् इति अनभिसंधाय: तत्  इति ब्रह्माभिधानम् उच्चार्य अनभिसंधाय च यज्ञादिकर्मणः फलं यज्ञतपःक्रियाः यज्ञक्रियाश्च तपःक्रियाश्च यज्ञतपःक्रियाः दानक्रियाश्च विविधाः क्षेत्रहिरण्यप्रदानादिलक्षणाः क्रियन्ते निर्वर्त्यन्ते मोक्षकाङ्क्षिभिः मोक्षार्थिभिः मुमुक्षुभिः।।ओंतच्छब्दयोः विनियोगः उक्तः। अथ इदानीं सच्छब्दस्य विनियोगः कथ्यते --,"
+      },
+      {
+        "author": "rams",
+        "lang": "hi",
+        "type": "translation",
+        "content": "।।17.25।। 'तत्' नामसे कहे जानेवाले परमात्माके लिये ही सब कुछ है -- ऐसा मानकर मुक्ति चाहनेवाले मनुष्योंद्वारा फलकी इच्छासे रहित होकर अनेक प्रकारकी यज्ञ और तपरूप क्रियाएँ तथा दानरूप क्रियाएँ की जाती हैं।"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "bhakti",
+        "karma",
+        "jnana",
+        "maya",
+        "liberation"
+      ]
+    }
+  },
+  {
+    "id": "bhagavad-gita_17_26",
+    "text_slug": "bhagavad-gita",
+    "chapter": 17,
+    "verse": 26,
+    "original": "सद्भावे साधुभावे च सदित्येतत्प्रयुज्यते |\nप्रशस्ते कर्मणि तथा सच्छब्दः पार्थ युज्यते ||१७-२६||",
+    "transliteration": "sadbhāve sādhubhāve ca sadityetatprayujyate .\npraśaste karmaṇi tathā sacchabdaḥ pārtha yujyate ||17-26||",
+    "meaning": "17.26 The word ï1Satï1 is used in the sense of reality and of goodness; and so also, O Arjuna, the word ï1Satï1 is used in the sense of an auspicious act.",
+    "layers": [
+      {
+        "author": "sankar",
+        "lang": "sa",
+        "type": "commentary",
+        "content": "।।17.26।। --,सद्भावे: असतः सद्भावे यथा अविद्यमानस्य पुत्रस्य जन्मनि: तथा साधुभावे च असद्वृत्तस्य असाधोः सद्वृत्तता साधुभावः तस्मिन् साधुभावे च सत् इत्येतत् अभिधानं ब्रह्मणः प्रयुज्यते अभिधीयते। प्रशस्ते कर्मणि विवाहादौ च तथा सच्छब्दः पार्थ: युज्यते प्रयुज्यते इत्येतत्।।"
+      },
+      {
+        "author": "rams",
+        "lang": "hi",
+        "type": "translation",
+        "content": "।।17.26।।हे पार्थ ! परमात्माके 'सत्'--इस  नामका सत्तामात्रमें और श्रेष्ठ भावमें प्रयोग किया जाता है तथा प्रशंसनीय कर्मके साथ 'सत्' शब्द जोड़ा जाता है।"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "bhakti",
+        "karma",
+        "jnana",
+        "maya",
+        "liberation"
+      ]
+    }
+  },
+  {
+    "id": "bhagavad-gita_17_27",
+    "text_slug": "bhagavad-gita",
+    "chapter": 17,
+    "verse": 27,
+    "original": "यज्ञे तपसि दाने च स्थितिः सदिति चोच्यते |\nकर्म चैव तदर्थीयं सदित्येवाभिधीयते ||१७-२७||",
+    "transliteration": "yajñe tapasi dāne ca sthitiḥ saditi cocyate .\nkarma caiva tadarthīyaṃ sadityevābhidhīyate ||17-27||",
+    "meaning": "17.27 Steadfastness in sacrifice, austerity and gift, is also called 'Sat' and also action in connection with these (or for the sake of the Supreme) is called 'Sat'.",
+    "layers": [
+      {
+        "author": "sankar",
+        "lang": "sa",
+        "type": "commentary",
+        "content": "।।17.27।। --,यज्ञे यज्ञकर्मणि या स्थितिः: तपसि च या स्थितिः: दाने च या स्थितिः: सा सत् इति च उच्यते विद्वद्भिः। कर्म च एव तदर्थीयं यज्ञदानतपोऽर्थीयम् अथवा: यस्य अभिधानत्रयं प्रकृतं तदर्थीयं यज्ञदानतपोऽर्थीयम् ईश्वरार्थीयम् इत्येतत् सत् इत्येव अभिधीयते। तत् एतत् यज्ञदानतपआदि कर्म असात्त्विकं विगुणमपि श्रद्धापूर्वकं ब्रह्मणः अभिधानत्रयप्रयोगेण सगुणं सात्त्विकं संपादितं भवति।।तत्र च सर्वत्र श्रद्धाप्रधानतया सर्वं संपाद्यते यस्मात्: तस्मात् --,"
+      },
+      {
+        "author": "rams",
+        "lang": "hi",
+        "type": "translation",
+        "content": "।।17.27।।यज्ञ, तप और दानरूप क्रियामें जो स्थिति (निष्ठा) है, वह भी 'सत्' -- ऐसे कही जाती है और उस परमात्माके निमित्त किया जानेवाला कर्म भी 'सत्' -- ऐसा ही कहा जाता है।"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "bhakti",
+        "karma",
+        "jnana",
+        "liberation",
+        "battle"
+      ]
+    }
+  },
+  {
+    "id": "bhagavad-gita_17_28",
+    "text_slug": "bhagavad-gita",
+    "chapter": 17,
+    "verse": 28,
+    "original": "अश्रद्धया हुतं दत्तं तपस्तप्तं कृतं च यत् |\nअसदित्युच्यते पार्थ न च तत्प्रेत्य नो इह ||१७-२८||",
+    "transliteration": "aśraddhayā hutaṃ dattaṃ tapastaptaṃ kṛtaṃ ca yat .\nasadityucyate pārtha na ca tatprepya no iha ||17-28||",
+    "meaning": "17.28 Whatever is sacrificed, given or performed, and whatever austerity is practised without faith, it is called 'Asat', O Arjuna; it is naught here or hereafter (after death).",
+    "layers": [
+      {
+        "author": "sankar",
+        "lang": "sa",
+        "type": "commentary",
+        "content": "।।17.28।। --,अश्रद्धया हुतं हवनं कृतम्: अश्रद्धया दत्तं ब्राह्मणेभ्यः: अश्रद्धया तपः तप्तम् अनुष्ठितम्: तथा अश्रद्धयैव कृतं यत् स्तुतिनमस्कारादि: तत् सर्वम् असत् इति उच्यते: मत्प्राप्तिसाधनमार्गबाह्यत्वात् पार्थ। न च तत् बहुलायासमपि प्रेत्य फलाय नो अपि इहार्थम्: साधुभिः निन्दितत्वात् इति।।इति श्रीमत्परमहंसपरिव्राजकाचार्यस्य श्रीगोविन्दभगवत्पूज्यपादशिष्यस्य,श्रीमच्छंकरभगवतः कृतौ श्रीमद्भगवद्गीताभाष्येसप्तदशोऽध्यायः।।"
+      },
+      {
+        "author": "rams",
+        "lang": "hi",
+        "type": "translation",
+        "content": "।।17.28।।हे पार्थ ! अश्रद्धासे किया हुआ हवन, दिया हुआ दान और तपा हुआ तप तथा और भी जो,कुछ किया जाय, वह सब 'असत्' -- ऐसा कहा जाता है। उसका फल न यहाँ होता है, न मरनेके बाद ही होता है अर्थात् उसका कहीं भी सत् फल नहीं होता।"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "yoga",
+        "bhakti",
+        "karma",
+        "jnana",
+        "maya",
+        "liberation"
+      ]
+    }
+  }
+]
