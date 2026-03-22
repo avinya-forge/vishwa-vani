@@ -37,6 +37,9 @@
 | UI-203 | P1 | **Book Audit: Mahabharata**: Ensure 18 Parvas navigation and heavy-text rendering performance. | 📅 BACKLOG |
 | UI-204 | P1 | **Book Audit: Yoga Sutras**: Visual audit of Sutra-wise breakdown and commentary slots. | 📅 BACKLOG |
 | UI-205 | P1 | **Book Audit: Puranas**: Verify Vishnu Purana and Bhagavatam Canto-wise navigation links. | 📅 BACKLOG |
+| **UI-206** | P0 | **Double-Commentary Collision Audit**: Test layout behavior when two commentators have massive content blocks. Implement dynamic heights. | 🔥 **HIGH PRIORITY** |
+| **UI-207** | P1 | **The 16:9 Immersive Grid**: Refine the 'Wide Canvas' grid for Sanskrit text centered, with sidebars for translation/meaning. | 📅 BACKLOG |
+| **UI-208** | P2 | **Contextual Shimmer Effect**: Add a subtle 'shimmer' to the currently reading verse to guide user focus in long chapters. | 📅 BACKLOG |
 
 ---
 
