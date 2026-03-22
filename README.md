@@ -67,9 +67,10 @@ This generates an `out/` folder ready for static hosting.
 
 ## 🗺️ Documentation
 
-- 🗺️ [Master Backlog](./docs/planning/backlog.md)
-- 🏗️ [System Design](./docs/architecture/system-design.md)
+- 🏗️ [Architecture Overview](./docs/architecture/arch.md)
+- 🏗️ [Architecture Blueprint](./docs/architecture/blueprint.md)
 - 🏗️ [Project Vision](./docs/architecture/vision.md)
+- 🗺️ [Master Backlog](./docs/planning/backlog.md)
 - 🧭 [Roadmap](./docs/planning/roadmap.md)
 
 ---

@@ -60,16 +60,4 @@ Data should not just be read; it should be *interpreted*.
 3. **Data-as-a-Service**: Verified, OCR-corrected Devanagari datasets for NLP training.
 
 ---
-
-## ✅ 5. Design Decisions (ADRs)
-
-| ADR ID | Decision | Rationale |
-| :--- | :--- | :--- |
-| **ADR-001** | **Hybrid SQLite WASM** | Allows GBs of data to stay "Static" while providing SQL query power in-browser. |
-| **ADR-002** | **WASM Decryption** | Prevents easy crawling and protects proprietary data organization. |
-| **ADR-003** | **Normalized Fragment Schema** | Ensures a single UI component can render *any* scripture (Gita or Veda) without code changes. |
-| **ADR-004** | **State-based i18n** | Better UX than URL-prefixes; avoids search engine duplication of content versions. |
-| **ADR-005** | **Middleware Proxy** | Essential for future monetization and advanced security that GitHub Pages cannot provide. |
-
----
 _Blueprint v1.1 | March 2026_
