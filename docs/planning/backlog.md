@@ -149,4 +149,29 @@
 
 ---
 
+## 🪣 Bucket 12: Extensive Digitalization Library (Phase 1: Maharashtra Focus)
+*Objective: Scale the library to 100+ titles with a priority on Maharashtrian scholars and NVF standard.*
+
+| Task ID | Level | Task Description | Status |
+| :--- | :--- | :--- | :--- |
+| **LIB-101** | P0 | **Manusmriti (Full Ingestion)**: 12 Chapters, 2694 verses. Sanskrit + Eng. Meaning + 2 Commentaries (Kulluka Bhatta preference). | 🔥 **HIGH PRIORITY** |
+| **LIB-102** | P0 | **Dnyaneshwari (Gita Layer)**: Add Sant Dnyaneshwar's Marathi commentary as a primary layer for all 700 Gita verses. | 🔥 **HIGH PRIORITY** |
+| **LIB-103** | P0 | **Eknathi Bhagavata (Purana Layer)**: Integrate Sant Eknath's insights into the 11th Canto of Srimad Bhagavatam. | 🔥 **HIGH PRIORITY** |
+| **LIB-104** | P1 | **Samhita Library: Rigveda**: Fetch all 10,552 verses across 10 Mandalas. Sanskrit + English (Griffith/Wilson) + 1 Indian interpretation. | 📅 BACKLOG |
+| **LIB-105** | P1 | **Samhita Library: Sama/Yajur/Atharva**: Sequential ingestion of remaining 3 Vedas in NVF format. | 📅 BACKLOG |
+| **LIB-106** | P1 | **Stotra & Stuti Collection**: Create a dedicated section for popular hymns:<br>• Vishnu Sahasranama (with Shankara Bhashya)<br>• Lalita Sahasranama<br>• Shiva Tandava Stotra<br>• Ganesha Pancharatnam | 📅 BACKLOG |
+| **LIB-107** | P1 | **Dasbodh (Samarth Ramdas)**: Full digitalization of all 20 Dashakas. Essential for Maharashtrian philosophical grounding. | 📅 BACKLOG |
+| **LIB-108** | P2 | **Gita Rahasya (Lokmanya Tilak)**: Add Tilak's Activist-Karma-Yoga interpretation as a secondary layer for the Gita. | 📅 BACKLOG |
+
+---
+
+## 🏆 Long-Term Multi-Samhita Strategy
+*Objective: Move from individual books to a unified "Vedic Knowledge Graph".*
+
+1.  **Cross-Samhita Linkage**: AI mapping of identical mantras found in Rigveda and Yajurveda.
+2.  **Dialect Support**: Support for 'Old Marathi' (Modi script equivalents) in commentaries like Dnyaneshwari.
+3.  **The "Stuti" Engine**: A UI mode specifically for chanting (Large text, Bouncing-ball cursor for Chhanda).
+
+---
+
 _This backlog acts as our strict SDLC/PDLC map. All finished items migrate into `docs/release/release-notes.md` per release cycle._
