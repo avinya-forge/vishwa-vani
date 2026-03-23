@@ -18,7 +18,8 @@ export default function SearchClient() {
   const t = useTranslations('study')
   const nt = useTranslations('nav')
   const locale = useLocale()
-  const localePrefix = locale === 'en' ? '' : `/${locale}`
+  // App Router in this project handles translation at the component level without route prefixes
+  const localePrefix = ''
 
   const [query, setQuery] = useState('')
   const [results, setResults] = useState<SearchResult[]>([])
@@ -101,7 +102,7 @@ export default function SearchClient() {
             return (
               <Link 
                 key={idx}
-                href={`${localePrefix}/${result.textSlug}/${result.chapter}`}
+                href={`/${result.textSlug}/${result.chapter}`}
                 className="block group"
               >
                 <div className="bg-white p-4 rounded-xl border border-stone-100 shadow-sm hover:shadow-md hover:border-orange-200 transition-all">
