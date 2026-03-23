@@ -1,4 +1,4 @@
-import SearchClient from '@/components/search/SearchClient'
+import search-client from '@/components/search/search-client'
 
 export async function generateMetadata() {
   return {
@@ -10,7 +10,7 @@ export async function generateMetadata() {
 export default async function SearchPage() {
   return (
     <main className="min-h-screen bg-[#FDFBF7] selection:bg-orange-100/60 pb-20">
-      <SearchClient />
+      <search-client />
     </main>
   )
 }

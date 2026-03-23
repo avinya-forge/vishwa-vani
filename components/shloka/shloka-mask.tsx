@@ -3,12 +3,12 @@
 import React, { useEffect, useRef } from 'react'
 
 /**
- * 🎨 ShlokaMask: The Visual Data Protector
+ * 🎨 shloka-mask: The Visual Data Protector
  * 
  * Renders the Sanskrit shloka on a Canvas to thwart DOM-crawlers 
  * while maintaining the premium, elegant typography for humans.
  */
-export default function ShlokaMask({ text, className }: { text: string, className?: string }) {
+export default function shloka-mask({ text, className }: { text: string, className?: string }) {
     const canvasRef = useRef<HTMLCanvasElement>(null)
 
     useEffect(() => {

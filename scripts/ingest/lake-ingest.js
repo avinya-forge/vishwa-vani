@@ -7,7 +7,7 @@ const PUBLIC_DIR = path.join(__dirname, '../public');
 
 // Map prefixes to specific shards to maintain 100MB static limits
 const SHARD_MAP = {
-  'bhagavad_gita': 'vedic-lake.db',
+  'bhagavad-gita': 'vedic-lake.db',
   'mahabharata': 'itihasa-lake.db',
   'ramayana': 'itihasa-lake.db',
   'vishnu_purana': 'purana-lake.db',

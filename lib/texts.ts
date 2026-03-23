@@ -9,7 +9,7 @@
 export interface VedicText {
   /** URL slug used in routing, e.g. "bhagavad-gita" -> /bhagavad-gita/1 */
   slug: string
-  /** Internal data file prefix, e.g. "bhagavad_gita" -> data/bhagavad_gita_chapter_1.json */
+  /** Internal data file prefix, e.g. "bhagavad-gita" -> data/bhagavad-gita_chapter_1.json */
   dataPrefix: string
   /** Display name in English */
   name: string
@@ -51,7 +51,7 @@ export interface VedicText {
 export const VEDIC_LIBRARY: VedicText[] = [
   {
     slug: 'bhagavad-gita',
-    dataPrefix: 'bhagavad_gita',
+    dataPrefix: 'bhagavad-gita',
     lakeFile: 'vedic-lake.db',
     name: 'Bhagavad Gita',
     nameHi: 'श्रीमद भगवद गीता',

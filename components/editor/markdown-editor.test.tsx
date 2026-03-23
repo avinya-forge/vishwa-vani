@@ -1,10 +1,10 @@
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
-import { MarkdownEditor } from "./MarkdownEditor";
+import { markdown-editor } from "./markdown-editor";
 
-describe("MarkdownEditor Component", () => {
+describe("markdown-editor Component", () => {
   it("renders correctly with both panes", () => {
-    render(<MarkdownEditor />);
+    render(<markdown-editor />);
 
     // Verify raw text area exists
     expect(screen.getByTestId("markdown-textarea")).toBeInTheDocument();
@@ -14,7 +14,7 @@ describe("MarkdownEditor Component", () => {
   });
 
   it("updates markdown preview when text is typed", () => {
-    render(<MarkdownEditor />);
+    render(<markdown-editor />);
 
     const textarea = screen.getByTestId("markdown-textarea");
     const preview = screen.getByTestId("mock-react-markdown");
@@ -30,7 +30,7 @@ describe("MarkdownEditor Component", () => {
   });
 
   it("handles empty input correctly", () => {
-    render(<MarkdownEditor />);
+    render(<markdown-editor />);
 
     const preview = screen.getByTestId("mock-react-markdown");
 

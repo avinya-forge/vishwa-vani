@@ -1,9 +1,9 @@
 import { Inter, Noto_Serif_Devanagari, Outfit } from 'next/font/google'
-import Header from '@/components/layout/Header'
-import Footer from '@/components/layout/Footer'
+import header from '@/components/layout/header'
+import footer from '@/components/layout/footer'
 import { GoogleAnalytics } from '@next/third-parties/google'
-import LocaleProvider from '@/components/layout/LocaleProvider'
-import SecurityShield from '@/components/layout/SecurityShield'
+import locale-provider from '@/components/layout/locale-provider'
+import security-shield from '@/components/layout/security-shield'
 import { setRequestLocale } from 'next-intl/server'
 import './globals.css'
 
@@ -29,7 +29,7 @@ export default async function RootLayout({
   children: React.ReactNode
 }) {
   // Hardcode 'en' as the default server-side baseline for static export.
-  // The client side LocaleProvider will handle actual user preferences.
+  // The client side locale-provider will handle actual user preferences.
   setRequestLocale('en')
   return (
     <html lang="en" suppressHydrationWarning>
@@ -41,14 +41,14 @@ export default async function RootLayout({
         />
       </head>
       <body suppressHydrationWarning className={`${inter.variable} ${notoSerifDevanagari.variable} ${outfit.variable} font-sans min-h-screen flex flex-col bg-[#FDFBF7] text-stone-900 overflow-x-hidden`}>
-        <LocaleProvider>
-          <SecurityShield />
-          <Header />
+        <locale-provider>
+          <security-shield />
+          <header />
           <main className="flex-grow">
             {children}
           </main>
-          <Footer />
-        </LocaleProvider>
+          <footer />
+        </locale-provider>
         {/* Mute benign ResizeObserver error for cleaner showcase */}
         <script
           dangerouslySetInnerHTML={{

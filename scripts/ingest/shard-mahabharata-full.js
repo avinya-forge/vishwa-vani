@@ -88,7 +88,7 @@ data.forEach((text, i) => {
 });
 
 Object.keys(chapters).forEach(bookId => {
-  const outputPath = path.join(outputDir, `mahabharata_chapter_${bookId}.json`);
+  const outputPath = path.join(outputDir, `mahabharata-chapter_${bookId}.json`);
   fs.writeFileSync(outputPath, JSON.stringify(chapters[bookId], null, 2));
   console.log(`Wrote ${chapters[bookId].length} chunks to Chapter ${bookId}`);
 });

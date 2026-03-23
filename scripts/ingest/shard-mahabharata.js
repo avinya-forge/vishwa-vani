@@ -57,7 +57,7 @@ Object.entries(parvas).forEach(([book, chapters]) => {
         });
     });
 
-    const outFile = path.join(OUTPUT_DIR, `mahabharata_chapter_${book}.json`);
+    const outFile = path.join(OUTPUT_DIR, `mahabharata-chapter_${book}.json`);
     fs.writeFileSync(outFile, JSON.stringify(parvaVerses, null, 2));
     console.log(`Wrote Parva ${book} with ${parvaVerses.length} segments.`);
 });

@@ -3,7 +3,7 @@
 import React, { ReactNode } from 'react'
 import Link from 'next/link'
 
-interface VedicAppTemplateProps {
+interface vedic-app-templateProps {
   title: string
   subtitle: string
   icon: string
@@ -11,7 +11,7 @@ interface VedicAppTemplateProps {
   footerNote?: string
 }
 
-export default function VedicAppTemplate({ title, subtitle, icon, children, footerNote }: VedicAppTemplateProps) {
+export default function vedic-app-template({ title, subtitle, icon, children, footerNote }: vedic-app-templateProps) {
   return (
     <div className="bg-white rounded-2xl p-4 md:p-5 text-stone-900 border border-stone-100 shadow-sm transition-all hover:shadow-xl hover:border-orange-100/50 relative overflow-hidden group w-full">
       <div className="absolute top-0 right-0 w-48 h-48 bg-orange-100/40 rounded-full -mr-24 -mt-24 blur-[80px] group-hover:bg-orange-200/50 transition-colors pointer-events-none" />

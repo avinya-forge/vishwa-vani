@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import ReactMarkdown from "react-markdown";
 
-export const MarkdownEditor = () => {
+export const markdown-editor = () => {
   const [markdown, setMarkdown] = useState("");
 
   const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {

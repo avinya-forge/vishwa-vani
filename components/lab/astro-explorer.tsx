@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
-import VedicAppTemplate from './VedicAppTemplate'
+import vedic-app-template from './vedic-app-template'
 
 const ELEMENTS = [
   { name: 'Prithvi (Earth)', icon: '🌱', color: 'from-emerald-600 to-green-800', desc: 'Stability, groundedness, and structural strength.' },
@@ -11,7 +11,7 @@ const ELEMENTS = [
   { name: 'Akasha (Ether)', icon: '✨', color: 'from-purple-600 to-indigo-900', desc: 'Space, consciousness, and eternal connectivity.' },
 ]
 
-export default function AstroExplorer() {
+export default function astro-explorer() {
   const [name, setName] = useState('')
   const [result, setResult] = useState<typeof ELEMENTS[0] | null>(null)
   const [isCalculating, setIsCalculating] = useState(false)
@@ -30,7 +30,7 @@ export default function AstroExplorer() {
   }
 
   return (
-    <VedicAppTemplate
+    <vedic-app-template
       title="Astro Explorer"
       subtitle="Pancha-Tattva Elements"
       icon="🌌"
@@ -78,6 +78,6 @@ export default function AstroExplorer() {
           </button>
         </div>
       )}
-    </VedicAppTemplate>
+    </vedic-app-template>
   )
 }

@@ -14,7 +14,7 @@ interface SearchResult {
   transliteration: string
 }
 
-export default function SearchClient() {
+export default function search-client() {
   const t = useTranslations('study')
   const nt = useTranslations('nav')
   const locale = useLocale()

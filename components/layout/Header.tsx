@@ -3,10 +3,10 @@
 import Link from 'next/link'
 import { useTranslations, useLocale } from 'next-intl'
 import { VEDIC_LIBRARY } from '@/lib/texts'
-import { changeVishwaLocale } from './LocaleProvider'
+import { changeVishwaLocale } from './locale-provider'
 import { useState } from 'react'
 
-export default function Header() {
+export default function header() {
   const t = useTranslations('nav')
   const pt = useTranslations('prefs')
   const locale = useLocale()

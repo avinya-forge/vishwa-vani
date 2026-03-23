@@ -40,7 +40,7 @@ async function enhanceExistingGitaFiles() {
   console.log('Initiating Regional Authors Ingestion Pipeline for Gita...');
 
   for (let c = 1; c <= 18; c++) {
-    const filePath = path.join(DATA_DIR, `bhagavad_gita_chapter_${c}.json`);
+    const filePath = path.join(DATA_DIR, `bhagavad-gita_chapter_${c}.json`);
     
     if (!fs.existsSync(filePath)) {
       console.warn(`File not found: ${filePath}. Skipping Chapter ${c}.`);

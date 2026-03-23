@@ -1,9 +1,9 @@
 'use client'
 
 import React, { useState } from 'react'
-import VedicAppTemplate from './VedicAppTemplate'
+import vedic-app-template from './vedic-app-template'
 
-export default function ChhandaAnalyzer() {
+export default function chhanda-analyzer() {
   const [shloka, setShloka] = useState('')
   const [result, setResult] = useState<{ meter: string, breakdown: string[], syllables: number } | null>(null)
   const [isAnalyzing, setIsAnalyzing] = useState(false)
@@ -35,7 +35,7 @@ export default function ChhandaAnalyzer() {
   }
 
   return (
-    <VedicAppTemplate
+    <vedic-app-template
       title="Meter Analyzer"
       subtitle="Chhanda Validation Engine"
       icon="📜"
@@ -83,6 +83,6 @@ export default function ChhandaAnalyzer() {
           </button>
         </div>
       )}
-    </VedicAppTemplate>
+    </vedic-app-template>
   )
 }

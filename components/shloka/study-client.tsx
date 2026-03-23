@@ -3,14 +3,14 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { useTranslations, useLocale } from 'next-intl'
-import AstroExplorer from '@/components/lab/AstroExplorer'
-import ChhandaAnalyzer from '@/components/lab/ChhandaAnalyzer'
-import GrammarTokenizer from '@/components/lab/GrammarTokenizer'
+import astro-explorer from '@/components/lab/astro-explorer'
+import chhanda-analyzer from '@/components/lab/chhanda-analyzer'
+import grammar-tokenizer from '@/components/lab/grammar-tokenizer'
 import { getDailyWisdom } from '@/lib/wisdom'
-import ShlokaMask from './ShlokaMask'
-import PhilosophicalCorrelation from './PhilosophicalCorrelation'
-import VedicExplainShell from './VedicExplainShell'
-import SuggestEditModal from './SuggestEditModal'
+import shloka-mask from './shloka-mask'
+import philosophical-correlation from './philosophical-correlation'
+import vedic-explain-shell from './vedic-explain-shell'
+import suggest-edit-modal from './suggest-edit-modal'
 
 import { NVFFragment, FragmentLayer } from '@/lib/nvf'
 
@@ -29,14 +29,14 @@ export const AUTHOR_METADATA: Record<string, { name: string, langs: ('en' | 'hi'
   kmg: { name: 'Kisari Mohan Ganguli', langs: ['en'] },
 }
 
-interface StudyClientProps {
+interface study-clientProps {
   verses: NVFFragment[]
   chapterTitle: string
   scriptureName: string
   tagline: string
 }
 
-export default function StudyClient({ verses, chapterTitle, scriptureName, tagline }: StudyClientProps) {
+export default function study-client({ verses, chapterTitle, scriptureName, tagline }: study-clientProps) {
   const t = useTranslations('study')
   const pt = useTranslations('prefs')
   const locale = useLocale() as 'en' | 'hi' | 'mr'
@@ -247,7 +247,7 @@ export default function StudyClient({ verses, chapterTitle, scriptureName, tagli
       )}
 
       {suggestionTarget && (
-        <SuggestEditModal 
+        <suggest-edit-modal 
             isOpen={!!suggestionTarget}
             onClose={() => setSuggestionTarget(null)}
             verseId={suggestionTarget.id}
@@ -307,7 +307,7 @@ export default function StudyClient({ verses, chapterTitle, scriptureName, tagli
                 key={verse.id} 
                 className="group relative bg-[#FBFBF8] rounded-3xl p-4 sm:p-5 shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-stone-200/60 hover:border-orange-200/40 hover:shadow-[0_8px_30px_rgba(0,0,0,0.06)] transition-all duration-700 overflow-hidden"
               >
-                {/* Visual Header / Verse Metatag */}
+                {/* Visual header / Verse Metatag */}
                 <div className="absolute top-2.5 right-4 flex items-center gap-1.5 opacity-40 group-hover:opacity-100 transition-opacity">
                    <div className="w-1.5 h-1.5 rounded-full bg-orange-200 group-hover:bg-orange-600 animate-pulse" />
                    <span className="text-[9px] font-black tracking-widest text-stone-300 uppercase">Verse {verse.verse}</span>
@@ -315,7 +315,7 @@ export default function StudyClient({ verses, chapterTitle, scriptureName, tagli
 
                 <div className="mb-1 text-center">
                   <div className="bg-stone-50/30 rounded-xl p-2.5 sm:p-3.5 mb-1 border border-stone-100/50 transition-colors group-hover:bg-white">
-                    <ShlokaMask 
+                    <shloka-mask 
                         text={verse.original} 
                         className="shloka-glow brightness-[1.01]"
                     />
@@ -446,12 +446,12 @@ export default function StudyClient({ verses, chapterTitle, scriptureName, tagli
                                               .join(' ').toLowerCase()
                 
                 if (combinedContext.includes('chhanda') || combinedContext.includes('meter') || combinedContext.includes('syllables')) {
-                    return <ChhandaAnalyzer />
+                    return <chhanda-analyzer />
                 } else if (combinedContext.includes(' grammar ') || combinedContext.includes(' vyakarana ') || combinedContext.includes('noun')) {
-                    return <GrammarTokenizer />
+                    return <grammar-tokenizer />
                 } else {
                     // Default baseline
-                    return <AstroExplorer />
+                    return <astro-explorer />
                 }
             })()}
 

@@ -1,9 +1,9 @@
 'use client'
 
 import React, { useState } from 'react'
-import VedicAppTemplate from './VedicAppTemplate'
+import vedic-app-template from './vedic-app-template'
 
-export default function GrammarTokenizer() {
+export default function grammar-tokenizer() {
   const [shloka, setShloka] = useState('')
   const [result, setResult] = useState<{ word: string, pos: string, meaning: string }[] | null>(null)
   const [isAnalyzing, setIsAnalyzing] = useState(false)
@@ -28,7 +28,7 @@ export default function GrammarTokenizer() {
   }
 
   return (
-    <VedicAppTemplate
+    <vedic-app-template
       title="Sanskrit Tokenizer"
       subtitle="Grammar & Morphology"
       icon="🧩"
@@ -79,6 +79,6 @@ export default function GrammarTokenizer() {
           </button>
         </div>
       )}
-    </VedicAppTemplate>
+    </vedic-app-template>
   )
 }

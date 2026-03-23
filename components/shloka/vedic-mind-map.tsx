@@ -14,7 +14,7 @@ interface MindMapProps {
     scriptureName: string
 }
 
-export default function VedicMindMap({ context, scriptureName }: MindMapProps) {
+export default function vedic-mind-map({ context, scriptureName }: MindMapProps) {
     if (!context) return null
 
     return (

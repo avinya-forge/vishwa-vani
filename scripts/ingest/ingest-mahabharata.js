@@ -23,7 +23,7 @@ async function ingest() {
   });
 
   for (let chapterId = 1; chapterId <= 18; chapterId++) {
-    const filePath = path.join(DATA_DIR, `mahabharata_chapter_${chapterId}.json`);
+    const filePath = path.join(DATA_DIR, `mahabharata-chapter_${chapterId}.json`);
     if (!fs.existsSync(filePath)) {
       console.log(`Skipping Chapter ${chapterId} - not found`);
       continue;

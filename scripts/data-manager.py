@@ -8,20 +8,20 @@ from pathlib import Path
 BASE_DIR = Path(os.path.dirname(os.path.abspath(__file__))).parent
 DATA_DIR = BASE_DIR / "data"
 
-def run_audit(book="bhagavad_gita", authors=["sankar", "rams", "siva"]):
+def run_audit(book="bhagavad-gita", authors=["sankar", "rams", "siva"]):
     """Audits the given book for missing or placeholder data for key authors."""
     print(f"Auditing {book} for authors: {authors}...")
     
     report = []
     # Identify files for this book
-    # For Gita, it's bhagavad_gita_chapter_*.json
+    # For Gita, it's bhagavad-gita_chapter_*.json
     # Assume 18 chapters for Gita
-    if book == "bhagavad_gita":
+    if book == "bhagavad-gita":
         chapters = range(1, 19)
-        file_pattern = "bhagavad_gita_chapter_{}.json"
+        file_pattern = "bhagavad-gita_chapter_{}.json"
     else:
         # Generic book audit (TBD)
-        print("Generic audit not yet implemented. Use bhagavad_gita.")
+        print("Generic audit not yet implemented. Use bhagavad-gita.")
         return
 
     for ch in chapters:
@@ -60,7 +60,7 @@ def run_audit(book="bhagavad_gita", authors=["sankar", "rams", "siva"]):
         f.write("\n".join(report))
     print(f"Audit complete. Report saved to {report_path}")
 
-def run_refine(book="bhagavad_gita", primary_authors=["sankar", "rams", "siva"]):
+def run_refine(book="bhagavad-gita", primary_authors=["sankar", "rams", "siva"]):
     """Refines the book data: cleans placeholders, filters to primary authors, and standardizes structure."""
     print(f"Refining {book} data to target primary authors: {primary_authors}...")
     
@@ -68,9 +68,9 @@ def run_refine(book="bhagavad_gita", primary_authors=["sankar", "rams", "siva"])
     if not output_temp_dir.exists():
         os.makedirs(output_temp_dir)
 
-    if book == "bhagavad_gita":
+    if book == "bhagavad-gita":
         chapters = range(1, 19)
-        file_pattern = "bhagavad_gita_chapter_{}.json"
+        file_pattern = "bhagavad-gita_chapter_{}.json"
     else:
         print("Generic refinement not yet implemented.")
         return
@@ -141,7 +141,7 @@ def run_refine(book="bhagavad_gita", primary_authors=["sankar", "rams", "siva"])
 def main():
     parser = argparse.ArgumentParser(description="Vishwa-Vani Data Management Tool")
     parser.add_argument("command", choices=["audit", "refine"], help="Action to perform")
-    parser.add_argument("--book", default="bhagavad_gita", help="Book to target (e.g. bhagavad_gita)")
+    parser.add_argument("--book", default="bhagavad-gita", help="Book to target (e.g. bhagavad-gita)")
     parser.add_argument("--apply", action="store_true", help="Apply refined data to production directory")
     
     args = parser.parse_args()

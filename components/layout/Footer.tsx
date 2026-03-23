@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl'
 
-export default function Footer() {
+export default function footer() {
   const footerT = useTranslations('footer')
   const homeT = useTranslations('home')
 

@@ -30,7 +30,7 @@ async function fetchAllChapters() {
   }
 
   for (let c = 1; c <= 18; c++) {
-    const outPath = path.join(outDir, `bhagavad_gita_chapter_${c}.json`);
+    const outPath = path.join(outDir, `bhagavad-gita_chapter_${c}.json`);
     if (fs.existsSync(outPath)) {
       console.log(`Chapter ${c} already exists, skipping.`);
       continue;
