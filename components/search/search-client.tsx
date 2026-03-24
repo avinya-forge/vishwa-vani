@@ -80,6 +80,20 @@ export default function SearchClient() {
             </div>
           )}
         </div>
+
+        {/* 🏷️ SEARCH BY CONCEPT (ADF-110) */}
+        <div className="flex flex-wrap gap-3 mt-8 animate-in fade-in slide-in-from-bottom-2 duration-700">
+           <span className="text-[10px] font-black uppercase tracking-[0.3em] text-stone-400 py-2 mr-2 leading-8">Top Concepts:</span>
+           {['Bhakti', 'Karma', 'Jnana', 'Dharma', 'Yoga', 'Atman', 'Brahman'].map(concept => (
+             <button 
+               key={concept}
+               onClick={() => setQuery(concept.toLowerCase())}
+               className="text-[10px] font-black uppercase tracking-widest text-stone-900 border border-stone-200 px-4 py-2 rounded-full hover:bg-orange-600 hover:text-white hover:border-orange-600 transition-all hover:scale-105 shadow-sm bg-white"
+             >
+               {concept}
+             </button>
+           ))}
+        </div>
       </div>
 
       <div className="max-w-4xl mx-auto">

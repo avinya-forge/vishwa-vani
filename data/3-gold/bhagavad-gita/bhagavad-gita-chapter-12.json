@@ -31,16 +31,28 @@
         "lang": "hi",
         "type": "commentary",
         "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_ISKCON]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]"
       }
     ],
     "ai_metadata": {
       "topics": [
-        "yoga",
-        "bhakti",
-        "karma",
-        "jnana",
         "maya",
+        "bhakti",
+        "jnana",
         "liberation",
+        "karma",
+        "yoga",
         "battle"
       ],
       "correlations": {},
@@ -49,7 +61,13 @@
         "translit_words": 15,
         "layers_count": 6
       },
-      "fingerprint": "e87a783a48561a7d7c52725eb5d39224"
+      "fingerprint": "e87a783a48561a7d7c52725eb5d39224",
+      "specialty": {
+        "focus": [
+          "Dharma"
+        ],
+        "description": "Scholarly scriptural exploration."
+      }
     }
   },
   {
@@ -84,13 +102,25 @@
         "lang": "hi",
         "type": "commentary",
         "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_ISKCON]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]"
       }
     ],
     "ai_metadata": {
       "topics": [
+        "karma",
         "yoga",
         "bhakti",
-        "karma",
         "jnana"
       ],
       "correlations": {},
@@ -134,14 +164,26 @@
         "lang": "hi",
         "type": "commentary",
         "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_ISKCON]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]"
       }
     ],
     "ai_metadata": {
       "topics": [
-        "bhakti",
         "karma",
-        "jnana",
-        "maya"
+        "maya",
+        "bhakti",
+        "jnana"
       ],
       "correlations": {},
       "stats": {
@@ -184,16 +226,28 @@
         "lang": "hi",
         "type": "commentary",
         "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_ISKCON]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]"
       }
     ],
     "ai_metadata": {
       "topics": [
-        "yoga",
-        "bhakti",
-        "karma",
-        "jnana",
         "maya",
-        "liberation"
+        "bhakti",
+        "jnana",
+        "liberation",
+        "karma",
+        "yoga"
       ],
       "correlations": {},
       "stats": {
@@ -236,16 +290,28 @@
         "lang": "hi",
         "type": "commentary",
         "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_ISKCON]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]"
       }
     ],
     "ai_metadata": {
       "topics": [
-        "yoga",
-        "bhakti",
-        "karma",
-        "jnana",
         "maya",
-        "liberation"
+        "bhakti",
+        "jnana",
+        "liberation",
+        "karma",
+        "yoga"
       ],
       "correlations": {},
       "stats": {
@@ -288,16 +354,28 @@
         "lang": "hi",
         "type": "commentary",
         "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_ISKCON]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]"
       }
     ],
     "ai_metadata": {
       "topics": [
-        "dharma",
-        "yoga",
-        "bhakti",
-        "karma",
-        "jnana",
         "maya",
+        "bhakti",
+        "dharma",
+        "jnana",
+        "karma",
+        "yoga",
         "battle"
       ],
       "correlations": {},
@@ -341,17 +419,29 @@
         "lang": "hi",
         "type": "commentary",
         "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_ISKCON]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]"
       }
     ],
     "ai_metadata": {
       "topics": [
-        "dharma",
-        "yoga",
-        "bhakti",
-        "karma",
-        "jnana",
         "maya",
+        "bhakti",
+        "dharma",
+        "jnana",
         "liberation",
+        "karma",
+        "yoga",
         "battle"
       ],
       "correlations": {},
@@ -395,13 +485,25 @@
         "lang": "hi",
         "type": "commentary",
         "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_ISKCON]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]"
       }
     ],
     "ai_metadata": {
       "topics": [
+        "karma",
         "yoga",
         "bhakti",
-        "karma",
         "jnana"
       ],
       "correlations": {},
@@ -445,15 +547,27 @@
         "lang": "hi",
         "type": "commentary",
         "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_ISKCON]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]"
       }
     ],
     "ai_metadata": {
       "topics": [
-        "yoga",
         "bhakti",
-        "karma",
         "jnana",
-        "liberation"
+        "liberation",
+        "karma",
+        "yoga"
       ],
       "correlations": {},
       "stats": {
@@ -496,16 +610,28 @@
         "lang": "hi",
         "type": "commentary",
         "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_ISKCON]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]"
       }
     ],
     "ai_metadata": {
       "topics": [
-        "dharma",
-        "yoga",
         "bhakti",
-        "karma",
+        "dharma",
         "jnana",
-        "liberation"
+        "liberation",
+        "karma",
+        "yoga"
       ],
       "correlations": {},
       "stats": {
@@ -548,15 +674,27 @@
         "lang": "hi",
         "type": "commentary",
         "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_ISKCON]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]"
       }
     ],
     "ai_metadata": {
       "topics": [
-        "dharma",
-        "yoga",
         "bhakti",
+        "dharma",
+        "jnana",
         "karma",
-        "jnana"
+        "yoga"
       ],
       "correlations": {},
       "stats": {
@@ -599,15 +737,27 @@
         "lang": "hi",
         "type": "commentary",
         "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_ISKCON]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]"
       }
     ],
     "ai_metadata": {
       "topics": [
-        "yoga",
         "bhakti",
-        "karma",
         "jnana",
         "liberation",
+        "karma",
+        "yoga",
         "battle"
       ],
       "correlations": {},
@@ -651,15 +801,27 @@
         "lang": "hi",
         "type": "commentary",
         "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_ISKCON]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]"
       }
     ],
     "ai_metadata": {
       "topics": [
-        "yoga",
         "bhakti",
-        "karma",
         "jnana",
         "liberation",
+        "karma",
+        "yoga",
         "battle"
       ],
       "correlations": {},
@@ -703,15 +865,27 @@
         "lang": "hi",
         "type": "commentary",
         "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_ISKCON]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]"
       }
     ],
     "ai_metadata": {
       "topics": [
-        "yoga",
         "bhakti",
-        "karma",
         "jnana",
         "liberation",
+        "karma",
+        "yoga",
         "battle"
       ],
       "correlations": {},
@@ -755,15 +929,27 @@
         "lang": "hi",
         "type": "commentary",
         "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_ISKCON]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]"
       }
     ],
     "ai_metadata": {
       "topics": [
-        "yoga",
-        "bhakti",
-        "karma",
-        "jnana",
         "maya",
+        "bhakti",
+        "jnana",
+        "karma",
+        "yoga",
         "battle"
       ],
       "correlations": {},
@@ -807,14 +993,26 @@
         "lang": "hi",
         "type": "commentary",
         "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_ISKCON]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]"
       }
     ],
     "ai_metadata": {
       "topics": [
-        "bhakti",
-        "karma",
-        "jnana",
         "maya",
+        "bhakti",
+        "jnana",
+        "karma",
         "battle"
       ],
       "correlations": {},
@@ -858,12 +1056,24 @@
         "lang": "hi",
         "type": "commentary",
         "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_ISKCON]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]"
       }
     ],
     "ai_metadata": {
       "topics": [
-        "bhakti",
         "karma",
+        "bhakti",
         "jnana"
       ],
       "correlations": {},
@@ -907,14 +1117,26 @@
         "lang": "hi",
         "type": "commentary",
         "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_ISKCON]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]"
       }
     ],
     "ai_metadata": {
       "topics": [
-        "bhakti",
         "karma",
-        "jnana",
-        "maya"
+        "maya",
+        "bhakti",
+        "jnana"
       ],
       "correlations": {},
       "stats": {
@@ -957,16 +1179,28 @@
         "lang": "hi",
         "type": "commentary",
         "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_ISKCON]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]"
       }
     ],
     "ai_metadata": {
       "topics": [
-        "dharma",
-        "bhakti",
-        "karma",
-        "jnana",
         "maya",
+        "bhakti",
+        "dharma",
+        "jnana",
         "liberation",
+        "karma",
         "battle"
       ],
       "correlations": {},
@@ -1010,16 +1244,28 @@
         "lang": "hi",
         "type": "commentary",
         "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_ISKCON]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]"
       }
     ],
     "ai_metadata": {
       "topics": [
-        "dharma",
-        "yoga",
         "bhakti",
-        "karma",
+        "dharma",
         "jnana",
         "liberation",
+        "karma",
+        "yoga",
         "battle"
       ],
       "correlations": {},

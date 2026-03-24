@@ -52,6 +52,10 @@ This is the consolidated roadmap and task list for Vishwa-Vani's journey from a 
 - [ ] **UI-ENG-103 (Card Sync)**: Consistent card heights on Home/Lab.
 - [x] **UI-ENG-104 (Redundancy Cleanup)**: Remove redundant author labels.
 
+### EPIC 5: Developer Ecosystem & APIs (VANI-API)
+- [ ] **AP-101 (Public API Spec)**: Design a secure, rate-limited GraphQL/REST API for scriptural retrieval (Read-only).
+- [ ] **AP-102 (Developer SDK)**: Client library for integrating Vedic data into 3rd party apps.
+
 ---
 
 ## 📊 Book-Wise Ingestion Progress (NVF 1.0)
@@ -81,5 +85,14 @@ Every book must pass through 5 phases (P1: Ingest, P2: Harden, P3: Enrich, P4: T
 - **Mahabharata First**: Prioritize parvas with linked essential sections (like Gitas).
 - **Zero-Touch Ops**: Static auto-registration of books via directory scanning in Next.js.
 - **NVF Compliance**: Sanskrit -> Translit -> Meaning -> HI/MR Layers.
+- **NVF 1.3 Transition**: 🆕 Support for **Prose Narratives & Historical Prefaces** (Essential for Mahabharata transition narrative).
+
+### 6. ⚔️ Mahabharata (Full 18 Parvas)
+- **Status**: 🔥 **PHASE 1 (Ingest & Sourcing)**
+- **Tasks**: 
+  - [ ] **Sanskrit Sourcing**: Aggressively fetch BORI Critical Edition Sanskrit for all 18 Parvas (Reference: [Sourcing Roadmap](file:///d:/Code/avinya-forge/vishwa-vani/docs/mahabharata-sourcing-roadmap.md)).
+  - [ ] **Dual-Language Ingest**: Ingest using **NVF 1.3 (Prose Support)** to preserve narrative flow.
+  - [ ] **Link Gitas**: Cross-reference Bhishma Parva with Bhagavad Gita.
+  - [x] **Prose Consolidation**: Initial consolidation of fragmented KMG narratives completed.
 
 _This backlog acts as our Roadmap for the Autonomous Evolution of Vishwa-Vani._
