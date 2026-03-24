@@ -1,0 +1,790 @@
+[
+  {
+    "id": "bhagavad-gita_15_1",
+    "text_slug": "bhagavad-gita",
+    "chapter": 15,
+    "verse": 1,
+    "original": "श्रीभगवानुवाच |\nऊर्ध्वमूलमधःशाखमश्वत्थं प्राहुरव्ययम् |\nछन्दांसि यस्य पर्णानि यस्तं वेद स वेदवित् ||१५-१||",
+    "transliteration": "śrībhagavānuvāca .\nūrdhvamūlamadhaḥśākhamaśvatthaṃ prāhuravyayam .\nchandāṃsi yasya parṇāni yastaṃ veda sa vedavit ||15-1||",
+    "meaning": "15.1 The Blessed Lord said  They (the wise) speak of the indestructible peepul tree having its root above and branches below, whose leaves are the metres or hymns: he who knows it is a knower of the Vedas.",
+    "layers": [
+      {
+        "author": "iskcon-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER: ISKCON Commentary]"
+      },
+      {
+        "author": "dnyaneshwari-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "dharma",
+        "yoga",
+        "bhakti",
+        "karma",
+        "jnana",
+        "maya",
+        "liberation",
+        "battle"
+      ],
+      "correlations": {},
+      "stats": {
+        "original_words": 13,
+        "translit_words": 13,
+        "layers_count": 2
+      },
+      "fingerprint": "96c2253ea2901b8d3b3975ea11f50685"
+    }
+  },
+  {
+    "id": "bhagavad-gita_15_2",
+    "text_slug": "bhagavad-gita",
+    "chapter": 15,
+    "verse": 2,
+    "original": "अधश्चोर्ध्वं प्रसृतास्तस्य शाखा\nगुणप्रवृद्धा विषयप्रवालाः |\nअधश्च मूलान्यनुसन्ततानि\nकर्मानुबन्धीनि मनुष्यलोके ||१५-२||",
+    "transliteration": "adhaścordhvaṃ prasṛtāstasya śākhā guṇapravṛddhā viṣayapravālāḥ .\nadhaśca mūlānyanusantatāni karmānubandhīni manuṣyaloke ||15-2||",
+    "meaning": "15.2 Below and above spread its branches, nourished by the Gunas; sense-objects are its buds; and below, in the world of men, stretch forth the roots, originating action.",
+    "layers": [
+      {
+        "author": "iskcon-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER: ISKCON Commentary]"
+      },
+      {
+        "author": "dnyaneshwari-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "dharma",
+        "bhakti",
+        "karma",
+        "jnana",
+        "maya",
+        "battle"
+      ],
+      "correlations": {},
+      "stats": {
+        "original_words": 11,
+        "translit_words": 11,
+        "layers_count": 2
+      },
+      "fingerprint": "0f25a44b153f0a85d50f857f74141f1d"
+    }
+  },
+  {
+    "id": "bhagavad-gita_15_3",
+    "text_slug": "bhagavad-gita",
+    "chapter": 15,
+    "verse": 3,
+    "original": "न रूपमस्येह तथोपलभ्यते\nनान्तो न चादिर्न च सम्प्रतिष्ठा |\nअश्वत्थमेनं सुविरूढमूलं\nअसङ्गशस्त्रेण दृढेन छित्त्वा ||१५-३||",
+    "transliteration": "na rūpamasyeha tathopalabhyate nānto na cādirna ca sampratiṣṭhā .\naśvatthamenaṃ suvirūḍhamūlaṃ asaṅgaśastreṇa dṛḍhena chittvā ||15-3||",
+    "meaning": "15.3 Its form is not perceived here as such, neither its end nor its origin, nor its foundation nor resting place: having cut asunder this firmly rooted peepul tree with the strong axe of non-attachment.",
+    "layers": [
+      {
+        "author": "iskcon-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER: ISKCON Commentary]"
+      },
+      {
+        "author": "dnyaneshwari-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "bhakti",
+        "karma",
+        "jnana",
+        "maya",
+        "liberation",
+        "battle"
+      ],
+      "correlations": {},
+      "stats": {
+        "original_words": 15,
+        "translit_words": 15,
+        "layers_count": 2
+      },
+      "fingerprint": "3a1374e3386ea8199a4d31e4ce966604"
+    }
+  },
+  {
+    "id": "bhagavad-gita_15_4",
+    "text_slug": "bhagavad-gita",
+    "chapter": 15,
+    "verse": 4,
+    "original": "ततः पदं तत्परिमार्गितव्यं\nयस्मिन्गता न निवर्तन्ति भूयः |\nतमेव चाद्यं पुरुषं प्रपद्ये |\nयतः प्रवृत्तिः प्रसृता पुराणी ||१५-४||",
+    "transliteration": "tataḥ padaṃ tatparimārgitavyaṃ yasmingatā na nivartanti bhūyaḥ .\ntameva cādyaṃ puruṣaṃ prapadye .\nyataḥ pravṛttiḥ prasṛtā purāṇī ||15-4||",
+    "meaning": "15.4 Then That goal should be sought for, whither having gone none returns again. I seek refuge in that Primeval Purusha Whence streamed forth the ancient activity or energy.",
+    "layers": [
+      {
+        "author": "iskcon-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER: ISKCON Commentary]"
+      },
+      {
+        "author": "dnyaneshwari-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "bhakti",
+        "karma",
+        "jnana",
+        "maya",
+        "liberation",
+        "battle"
+      ],
+      "correlations": {},
+      "stats": {
+        "original_words": 18,
+        "translit_words": 18,
+        "layers_count": 2
+      },
+      "fingerprint": "5d28361faa6205556a7b58316b723695"
+    }
+  },
+  {
+    "id": "bhagavad-gita_15_5",
+    "text_slug": "bhagavad-gita",
+    "chapter": 15,
+    "verse": 5,
+    "original": "निर्मानमोहा जितसङ्गदोषा\nअध्यात्मनित्या विनिवृत्तकामाः |\nद्वन्द्वैर्विमुक्ताः सुखदुःखसंज्ञैर्-\nगच्छन्त्यमूढाः पदमव्ययं तत् ||१५-५||",
+    "transliteration": "nirmānamohā jitasaṅgadoṣā adhyātmanityā vinivṛttakāmāḥ .\ndvandvairvimuktāḥ sukhaduḥkhasaṃjñaira- gacchantyamūḍhāḥ padamavyayaṃ tat ||15-5||",
+    "meaning": "15.5 Free from pride and delusion, victorious over the evil of attachment, dwelling constantly in the Self, their desires having completely turned away, freed from the pairs of opposites known as pleasure and pain, the undeluded reach the eternal goal.",
+    "layers": [
+      {
+        "author": "iskcon-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER: ISKCON Commentary]"
+      },
+      {
+        "author": "dnyaneshwari-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "bhakti",
+        "karma",
+        "jnana",
+        "maya",
+        "liberation"
+      ],
+      "correlations": {},
+      "stats": {
+        "original_words": 11,
+        "translit_words": 11,
+        "layers_count": 2
+      },
+      "fingerprint": "87981ba90b67ccc8e181c2f816b83ec7"
+    }
+  },
+  {
+    "id": "bhagavad-gita_15_6",
+    "text_slug": "bhagavad-gita",
+    "chapter": 15,
+    "verse": 6,
+    "original": "न तद्भासयते सूर्यो न शशाङ्को न पावकः |\nयद्गत्वा न निवर्तन्ते तद्धाम परमं मम ||१५-६||",
+    "transliteration": "na tadbhāsayate sūryo na śaśāṅko na pāvakaḥ .\nyadgatvā na nivartante taddhāma paramaṃ mama ||15-6||",
+    "meaning": "15.6 Neither doth the sun illumine there nor the moon, nor the fire; having gone thither they return not; that is My supreme abode.",
+    "layers": [
+      {
+        "author": "iskcon-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER: ISKCON Commentary]"
+      },
+      {
+        "author": "dnyaneshwari-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "yoga",
+        "bhakti",
+        "karma",
+        "jnana",
+        "maya",
+        "liberation"
+      ],
+      "correlations": {},
+      "stats": {
+        "original_words": 15,
+        "translit_words": 15,
+        "layers_count": 2
+      },
+      "fingerprint": "4d7ffd60d02d5db3e4198eb9995fe514"
+    }
+  },
+  {
+    "id": "bhagavad-gita_15_7",
+    "text_slug": "bhagavad-gita",
+    "chapter": 15,
+    "verse": 7,
+    "original": "ममैवांशो जीवलोके जीवभूतः सनातनः |\nमनःषष्ठानीन्द्रियाणि प्रकृतिस्थानि कर्षति ||१५-७||",
+    "transliteration": "mamaivāṃśo jīvaloke jīvabhūtaḥ sanātanaḥ .\nmanaḥṣaṣṭhānīndriyāṇi prakṛtisthāni karṣati ||15-7||",
+    "meaning": "15.7 An eternal portion of Myself having become a living soul in the world of life, draws to (itself) the (five) senses with the mind for the sixth, abiding in Nature.",
+    "layers": [
+      {
+        "author": "iskcon-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER: ISKCON Commentary]"
+      },
+      {
+        "author": "dnyaneshwari-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "bhakti",
+        "karma",
+        "jnana",
+        "maya",
+        "liberation"
+      ],
+      "correlations": {},
+      "stats": {
+        "original_words": 9,
+        "translit_words": 9,
+        "layers_count": 2
+      },
+      "fingerprint": "108e62fca1bf204bd395b05aece6da3f"
+    }
+  },
+  {
+    "id": "bhagavad-gita_15_8",
+    "text_slug": "bhagavad-gita",
+    "chapter": 15,
+    "verse": 8,
+    "original": "शरीरं यदवाप्नोति यच्चाप्युत्क्रामतीश्वरः |\nगृहीत्वैतानि संयाति वायुर्गन्धानिवाशयात् ||१५-८||",
+    "transliteration": "śarīraṃ yadavāpnoti yaccāpyutkrāmatīśvaraḥ .\ngṛhitvaitāni saṃyāti vāyurgandhānivāśayāt ||15-8||",
+    "meaning": "15.8 When the Lord (as the individual soul) obtains a body and when He leaves it, He takes these and goes (with them) as the wind takes the scents from their seats (flowers, etc.).",
+    "layers": [
+      {
+        "author": "iskcon-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER: ISKCON Commentary]"
+      },
+      {
+        "author": "dnyaneshwari-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "bhakti",
+        "karma",
+        "jnana",
+        "maya"
+      ],
+      "correlations": {},
+      "stats": {
+        "original_words": 8,
+        "translit_words": 8,
+        "layers_count": 2
+      },
+      "fingerprint": "6cf60991260f498ef3ab6613dc3c003a"
+    }
+  },
+  {
+    "id": "bhagavad-gita_15_9",
+    "text_slug": "bhagavad-gita",
+    "chapter": 15,
+    "verse": 9,
+    "original": "श्रोत्रं चक्षुः स्पर्शनं च रसनं घ्राणमेव च |\nअधिष्ठाय मनश्चायं विषयानुपसेवते ||१५-९||",
+    "transliteration": "śrotraṃ cakṣuḥ sparśanaṃ ca rasanaṃ ghrāṇameva ca .\nadhiṣṭhāya manaścāyaṃ viṣayānupasevate ||15-9||",
+    "meaning": "15.9 Presiding over the ear, the eye, touch, taste and smell, as well as the mind, it enjoys the objects of the senses.",
+    "layers": [
+      {
+        "author": "iskcon-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER: ISKCON Commentary]"
+      },
+      {
+        "author": "dnyaneshwari-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "bhakti",
+        "karma",
+        "jnana",
+        "maya",
+        "battle"
+      ],
+      "correlations": {},
+      "stats": {
+        "original_words": 12,
+        "translit_words": 12,
+        "layers_count": 2
+      },
+      "fingerprint": "2ba5186ca62c1c759c52d067f4a9ec62"
+    }
+  },
+  {
+    "id": "bhagavad-gita_15_10",
+    "text_slug": "bhagavad-gita",
+    "chapter": 15,
+    "verse": 10,
+    "original": "उत्क्रामन्तं स्थितं वापि भुञ्जानं वा गुणान्वितम् |\nविमूढा नानुपश्यन्ति पश्यन्ति ज्ञानचक्षुषः ||१५-१०||",
+    "transliteration": "utkrāmantaṃ sthitaṃ vāpi bhuñjānaṃ vā guṇānvitam .\nvimūḍhā nānupaśyanti paśyanti jñānacakṣuṣaḥ ||15-10||",
+    "meaning": "15.10 The deluded do not see Him Who departs, stays and enjoys; but they who possess the eye of knowledge behold Him.",
+    "layers": [
+      {
+        "author": "iskcon-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER: ISKCON Commentary]"
+      },
+      {
+        "author": "dnyaneshwari-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "bhakti",
+        "karma",
+        "jnana",
+        "maya",
+        "battle"
+      ],
+      "correlations": {},
+      "stats": {
+        "original_words": 12,
+        "translit_words": 12,
+        "layers_count": 2
+      },
+      "fingerprint": "07e1c4eeb62d14349e0752005fcfd1b4"
+    }
+  },
+  {
+    "id": "bhagavad-gita_15_11",
+    "text_slug": "bhagavad-gita",
+    "chapter": 15,
+    "verse": 11,
+    "original": "यतन्तो योगिनश्चैनं पश्यन्त्यात्मन्यवस्थितम् |\nयतन्तोऽप्यकृतात्मानो नैनं पश्यन्त्यचेतसः ||१५-११||",
+    "transliteration": "yatanto yoginaścainaṃ paśyantyātmanyavasthitam .\nyatanto.apyakṛtātmāno nainaṃ paśyantyacetasaḥ ||15-11||",
+    "meaning": "15.11 The Yogins striving (for perfection) behold Him dwelling in the Self; but, the unrefined and unintelligent, even though striving, see Him not.",
+    "layers": [
+      {
+        "author": "iskcon-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER: ISKCON Commentary]"
+      },
+      {
+        "author": "dnyaneshwari-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "yoga",
+        "bhakti",
+        "karma",
+        "jnana",
+        "maya",
+        "liberation",
+        "battle"
+      ],
+      "correlations": {},
+      "stats": {
+        "original_words": 8,
+        "translit_words": 8,
+        "layers_count": 2
+      },
+      "fingerprint": "8775e969e12376c4f8b3e9e365bce108"
+    }
+  },
+  {
+    "id": "bhagavad-gita_15_12",
+    "text_slug": "bhagavad-gita",
+    "chapter": 15,
+    "verse": 12,
+    "original": "यदादित्यगतं तेजो जगद्भासयतेऽखिलम् |\nयच्चन्द्रमसि यच्चाग्नौ तत्तेजो विद्धि मामकम् ||१५-१२||",
+    "transliteration": "yadādityagataṃ tejo jagadbhāsayate.akhilam .\nyaccandramasi yaccāgnau tattejo viddhi māmakam ||15-12||",
+    "meaning": "15.12 That light which residing in the sun illumines the whole world, that which is in the moon and in the fire  know that light to be Mine.",
+    "layers": [
+      {
+        "author": "iskcon-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER: ISKCON Commentary]"
+      },
+      {
+        "author": "dnyaneshwari-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "bhakti",
+        "jnana",
+        "maya"
+      ],
+      "correlations": {},
+      "stats": {
+        "original_words": 10,
+        "translit_words": 10,
+        "layers_count": 2
+      },
+      "fingerprint": "85b780f20dcbf12f198a256fc025d9d8"
+    }
+  },
+  {
+    "id": "bhagavad-gita_15_13",
+    "text_slug": "bhagavad-gita",
+    "chapter": 15,
+    "verse": 13,
+    "original": "गामाविश्य च भूतानि धारयाम्यहमोजसा |\nपुष्णामि चौषधीः सर्वाः सोमो भूत्वा रसात्मकः ||१५-१३||",
+    "transliteration": "gāmāviśya ca bhūtāni dhārayāmyahamojasā .\npuṣṇāmi cauṣadhīḥ sarvāḥ somo bhūtvā rasātmakaḥ ||15-13||",
+    "meaning": "15.13 Permeating the earth I support all beings by (My) energy; and having become the watery moon I nourish all herbs.",
+    "layers": [
+      {
+        "author": "iskcon-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER: ISKCON Commentary]"
+      },
+      {
+        "author": "dnyaneshwari-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "bhakti",
+        "karma",
+        "jnana",
+        "maya"
+      ],
+      "correlations": {},
+      "stats": {
+        "original_words": 12,
+        "translit_words": 12,
+        "layers_count": 2
+      },
+      "fingerprint": "76b6b8014be26489cd87f7cee01100b4"
+    }
+  },
+  {
+    "id": "bhagavad-gita_15_14",
+    "text_slug": "bhagavad-gita",
+    "chapter": 15,
+    "verse": 14,
+    "original": "अहं वैश्वानरो भूत्वा प्राणिनां देहमाश्रितः |\nप्राणापानसमायुक्तः पचाम्यन्नं चतुर्विधम् ||१५-१४||",
+    "transliteration": "ahaṃ vaiśvānaro bhūtvā prāṇināṃ dehamāśritaḥ .\nprāṇāpānasamāyuktaḥ pacāmyannaṃ caturvidham ||15-14||",
+    "meaning": "15.14 Having become the fire Vaisvanara, I abide in the body of living beings and, associated with the Prana and the Apana, digest the fourfold food.",
+    "layers": [
+      {
+        "author": "iskcon-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER: ISKCON Commentary]"
+      },
+      {
+        "author": "dnyaneshwari-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "yoga",
+        "bhakti",
+        "jnana",
+        "maya",
+        "battle"
+      ],
+      "correlations": {},
+      "stats": {
+        "original_words": 10,
+        "translit_words": 10,
+        "layers_count": 2
+      },
+      "fingerprint": "2ce12b87aa5449f1807995dff3c6a99a"
+    }
+  },
+  {
+    "id": "bhagavad-gita_15_15",
+    "text_slug": "bhagavad-gita",
+    "chapter": 15,
+    "verse": 15,
+    "original": "सर्वस्य चाहं हृदि सन्निविष्टो\nमत्तः स्मृतिर्ज्ञानमपोहनञ्च |\nवेदैश्च सर्वैरहमेव वेद्यो\nवेदान्तकृद्वेदविदेव चाहम् ||१५-१५||",
+    "transliteration": "sarvasya cāhaṃ hṛdi sanniviṣṭo mattaḥ smṛtirjñānamapohanañca .\nvedaiśca sarvairahameva vedyo vedāntakṛdvedavideva cāham ||15-15||",
+    "meaning": "15.15 And I am seated in the hearts of all; from Me are memory and knowledge, as well as their absence. I am verily That which has to be known by all the Vedas; I am indeed the author of the Vedanta and the knower of the Vedas am I.",
+    "layers": [
+      {
+        "author": "iskcon-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER: ISKCON Commentary]"
+      },
+      {
+        "author": "dnyaneshwari-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "yoga",
+        "bhakti",
+        "karma",
+        "jnana",
+        "maya",
+        "liberation",
+        "battle"
+      ],
+      "correlations": {},
+      "stats": {
+        "original_words": 13,
+        "translit_words": 13,
+        "layers_count": 2
+      },
+      "fingerprint": "8b10fffe58105342f51bd7c3c8181db2"
+    }
+  },
+  {
+    "id": "bhagavad-gita_15_16",
+    "text_slug": "bhagavad-gita",
+    "chapter": 15,
+    "verse": 16,
+    "original": "द्वाविमौ पुरुषौ लोके क्षरश्चाक्षर एव च |\nक्षरः सर्वाणि भूतानि कूटस्थोऽक्षर उच्यते ||१५-१६||",
+    "transliteration": "dvāvimau puruṣau loke kṣaraścākṣara eva ca .\nkṣaraḥ sarvāṇi bhūtāni kūṭastho.akṣara ucyate ||15-16||",
+    "meaning": "15.16 Two Purushas there are in this world, the perishable and the imperishable. All beings are \nthe perishable and the Kutastha  the unchanging  is called the imperishable.",
+    "layers": [
+      {
+        "author": "iskcon-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER: ISKCON Commentary]"
+      },
+      {
+        "author": "dnyaneshwari-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "bhakti",
+        "karma",
+        "jnana",
+        "maya",
+        "liberation"
+      ],
+      "correlations": {},
+      "stats": {
+        "original_words": 13,
+        "translit_words": 13,
+        "layers_count": 2
+      },
+      "fingerprint": "e8a48f20b83dc748457c8d3d3c7af703"
+    }
+  },
+  {
+    "id": "bhagavad-gita_15_17",
+    "text_slug": "bhagavad-gita",
+    "chapter": 15,
+    "verse": 17,
+    "original": "उत्तमः पुरुषस्त्वन्यः परमात्मेत्युधाहृतः |\nयो लोकत्रयमाविश्य बिभर्त्यव्यय ईश्वरः ||१५-१७||",
+    "transliteration": "uttamaḥ puruṣastvanyaḥ paramātmetyudhāhṛtaḥ .\nyo lokatrayamāviśya bibhartyavyaya īśvaraḥ ||15-17||",
+    "meaning": "15.17 But distinct is the Supreme Purusha called the highest Self, the indestructible Lord Who, pervading the three worlds, sustains them.",
+    "layers": [
+      {
+        "author": "iskcon-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER: ISKCON Commentary]"
+      },
+      {
+        "author": "dnyaneshwari-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "dharma",
+        "bhakti",
+        "karma",
+        "jnana",
+        "maya",
+        "liberation"
+      ],
+      "correlations": {},
+      "stats": {
+        "original_words": 9,
+        "translit_words": 9,
+        "layers_count": 2
+      },
+      "fingerprint": "4efea52e670926ac53c0c0bbb323e15c"
+    }
+  },
+  {
+    "id": "bhagavad-gita_15_18",
+    "text_slug": "bhagavad-gita",
+    "chapter": 15,
+    "verse": 18,
+    "original": "यस्मात्क्षरमतीतोऽहमक्षरादपि चोत्तमः |\nअतोऽस्मि लोके वेदे च प्रथितः पुरुषोत्तमः ||१५-१८||",
+    "transliteration": "yasmātkṣaramatīto.ahamakṣarādapi cottamaḥ .\nato.asmi loke vedeca prathitaḥ puruṣottamaḥ ||15-18||",
+    "meaning": "15.18 As I transcend the perishable and am even higher than the imperishable, I am declared to be the highest Purusha in the world and in the Vedas.",
+    "layers": [
+      {
+        "author": "iskcon-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER: ISKCON Commentary]"
+      },
+      {
+        "author": "dnyaneshwari-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "bhakti",
+        "jnana",
+        "maya"
+      ],
+      "correlations": {},
+      "stats": {
+        "original_words": 10,
+        "translit_words": 9,
+        "layers_count": 2
+      },
+      "fingerprint": "f3078465fe06de118c293b836cf6fe2f"
+    }
+  },
+  {
+    "id": "bhagavad-gita_15_19",
+    "text_slug": "bhagavad-gita",
+    "chapter": 15,
+    "verse": 19,
+    "original": "यो मामेवमसम्मूढो जानाति पुरुषोत्तमम् |\nस सर्वविद्भजति मां सर्वभावेन भारत ||१५-१९||",
+    "transliteration": "yo māmevamasammūḍho jānāti puruṣottamam .\nsa sarvavidbhajati māṃ sarvabhāvena bhārata ||15-19||",
+    "meaning": "15.19 He who, undeluded, knows Me thus as the highest Purusha, he, knowing all, worships Me with his whole being (heart), O Arjuna.",
+    "layers": [
+      {
+        "author": "iskcon-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER: ISKCON Commentary]"
+      },
+      {
+        "author": "dnyaneshwari-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "bhakti",
+        "karma",
+        "jnana",
+        "liberation",
+        "battle"
+      ],
+      "correlations": {},
+      "stats": {
+        "original_words": 11,
+        "translit_words": 11,
+        "layers_count": 2
+      },
+      "fingerprint": "28ca3f8e6bda538d4cc9f5d45ece5319"
+    }
+  },
+  {
+    "id": "bhagavad-gita_15_20",
+    "text_slug": "bhagavad-gita",
+    "chapter": 15,
+    "verse": 20,
+    "original": "इति गुह्यतमं शास्त्रमिदमुक्तं मयानघ |\nएतद्बुद्ध्वा बुद्धिमान्स्यात्कृतकृत्यश्च भारत ||१५-२०||",
+    "transliteration": "iti guhyatamaṃ śāstramidamuktaṃ mayānagha .\netadbuddhvā buddhimānsyātkṛtakṛtyaśca bhārata ||15-20||",
+    "meaning": "15.20 Thus, this most secret science has been taught by Me, O sinless one; on knowing this, a man becomes wise, and all his duties are accomplished, O Arjuna.",
+    "layers": [
+      {
+        "author": "iskcon-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER: ISKCON Commentary]"
+      },
+      {
+        "author": "dnyaneshwari-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "dharma",
+        "yoga",
+        "bhakti",
+        "karma",
+        "jnana",
+        "maya",
+        "liberation"
+      ],
+      "correlations": {},
+      "stats": {
+        "original_words": 9,
+        "translit_words": 9,
+        "layers_count": 2
+      },
+      "fingerprint": "2627d5a1e8b25e959b1919f9a5344a72"
+    }
+  }
+]
