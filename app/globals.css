@@ -1,115 +1,162 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+/* 🕉️ VISHWA-VANI DESIGN SYSTEM v2.1 (Architectural Stability Fix) */
 :root {
-  --background: #F5F4F1; /* Slightly cooler/darker base for card pop */
-  --foreground: #1c1917;
+  /* BACKGROUNDS & SURFACES */
+  --shanti-white: #FDFBF7;
+  --card-bg: #FFFFFF;
+  --surface-alt: #F7F5F0;
   
-  /* Harmonized Color Palette */
-  --orange-primary: #ea580c;
-  --orange-secondary: #fde68a;
-  --stone-soft: #fbfaf8; /* Card background */
-  --stone-border: #e7e5e4;
+  /* COLORS */
+  --saffron-600: #EA580C;
+  --saffron-500: #F97316;
+  --saffron-soft: rgba(234, 88, 12, 0.08);
   
-  /* Premium Glass Variables */
-  --glass-bg: rgba(255, 255, 255, 0.7);
-  --glass-border: rgba(255, 255, 255, 0.2);
+  --dharma-black: #1C1917;
+  --ashram-stone: #57534E;
+  --stone-border: #E7E5E4;
+  --stone-light: #F5F5f4;
+  
+  /* ACCENTS */
+  --bhakti-rose: #FB7185;
+  --jnana-sky: #0EA5E9;
+  --karma-emerald: #10B981;
+
+  /* TYPOGRAPHY SCALE */
+  --font-serif: var(--font-devanagari), "Georgia", serif;
+  --font-sans: var(--font-outfit), var(--font-inter), sans-serif;
+  
+  /* RADIUS & SPACING */
+  --radius-xl: 1.5rem;
+  --radius-lg: 1rem;
+  --radius-pill: 9999px;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-serif: var(--font-devanagari), "Georgia", serif;
-  --font-sans: var(--font-outfit), var(--font-inter), sans-serif;
+  --color-background: var(--shanti-white);
+  --color-foreground: var(--dharma-black);
+  --font-serif: var(--font-serif);
+  --font-sans: var(--font-sans);
 }
 
+/* 🧱 ARCHITECTURAL BASE STYLES */
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background-color: var(--shanti-white);
+  color: var(--dharma-black);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
-/* Typography Refinements for Reading Comfort */
+/* 📜 TYPOGRAPHY ENGINE */
 h1, h2, h3, h4 {
   font-family: var(--font-serif);
-  letter-spacing: -0.02em;
-  line-height: 1.25;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
 }
 
-p {
-  line-height: 1.6; /* Professional density */
+.heading-hero {
+  font-size: clamp(2rem, 8vw, 4rem);
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  line-height: 0.95;
+  color: #1C1917;
+}
+
+.label-bold {
+  font-size: 13px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #78716c;
+  white-space: nowrap;
+}
+
+/* 🖼️ CARD ARCHITECTURE (Manual CSS to avoid Tailwind v4 apply errors) */
+.card-premium {
+  background-color: #ffffff;
+  border: 1px solid #f5f5f4;
+  border-radius: var(--radius-xl);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-premium:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 25px 50px -12px rgba(234, 88, 12, 0.15);
+  border-color: rgba(234, 88, 12, 0.1);
+}
+
+/* ⚡ INTERACTION DESIGN */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.875rem 1.5rem;
+  background-color: #1c1917;
+  color: #ffffff;
+  border-radius: 1rem;
+  font-weight: 900;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+}
+
+.btn-primary:hover {
+  background-color: #ea580c;
+  transform: translateY(-2px);
+  box-shadow: 0 20px 25px -5px rgba(234, 88, 12, 0.2);
+}
+
+.btn-primary:active {
+  transform: scale(0.95);
+}
+
+.input-standard {
+  width: 100%;
+  background-color: #f5f5f4;
+  border: 1px solid #e7e5e4;
+  padding: 1rem 1.5rem;
+  border-radius: 1.25rem;
   font-size: 1rem;
+  transition: all 0.2s ease;
+  outline: none;
 }
 
-/* Universal Density & Space Optimization */
+.input-standard:focus {
+  border-color: #f97316;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 4px rgba(249, 115, 22, 0.1);
+}
+
+/* 🎇 PREMIUM VISUAL UTILITIES */
 .max-wide {
-  max-width: 1100px;
+  width: 100%;
+  max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-::-webkit-scrollbar-thumb {
-  background: #E7E5E4;
-  border-radius: 10px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #D6D3D1;
-}
-
-/* Micro-animations */
-.hover-lift {
-  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-.hover-lift:hover {
-  transform: translateY(-4px);
-}
-
-/* Premium Visual Utilities */
 .glass {
-  background: var(--glass-bg);
-  backdrop-filter: blur(12px) saturate(180%);
-  -webkit-backdrop-filter: blur(12px) saturate(180%);
-  border: 1px solid var(--glass-border);
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.parchment {
-  background-color: #fdfbf7;
-  background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+.vedic-glow {
+  filter: drop-shadow(0 0 25px rgba(234, 88, 12, 0.12));
 }
 
-.shimmer {
-  background: linear-gradient(90deg, transparent, rgba(234, 88, 12, 0.1), transparent);
-  background-size: 200% 100%;
-  animation: shimmer 2s infinite linear;
+.vedic-bg-shimmer {
+  background: radial-gradient(circle at top right, rgba(234, 88, 12, 0.05), transparent 70%);
 }
 
-@keyframes shimmer {
-  0% { background-position: -200% 0; }
-  100% { background-position: 200% 0; }
-}
-
-.vedic-gradient {
-  background: radial-gradient(circle at center, rgba(234, 88, 12, 0.05) 0%, transparent 70%);
-}
-
-.text-glow {
-  text-shadow: 0 0 20px rgba(234, 88, 12, 0.3);
-}
-
-.shloka-glow {
-  filter: drop-shadow(0 0 25px rgba(234, 88, 12, 0.1));
-}
-
-/* Custom Scrollbar for Premium Feel */
+/* 📏 CUSTOM SCROLLBARS */
 .custom-scrollbar::-webkit-scrollbar {
   width: 6px;
 }
@@ -117,9 +164,19 @@ p {
   background: rgba(0,0,0,0.02);
 }
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background: #E7E5E4;
+  background: #d6d3d1;
   border-radius: 10px;
 }
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #EA580C;
+  background: #ea580c;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
 }

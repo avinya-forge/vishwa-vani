@@ -8,7 +8,7 @@ interface CorrelationProps {
     currentVerse: NVFFragment
 }
 
-export default function philosophical-correlation({ currentVerse }: CorrelationProps) {
+export default function PhilosophicalCorrelation({ currentVerse }: CorrelationProps) {
     const [related, setRelated] = useState<any[]>([])
     const [loading, setLoading] = useState(false)
 

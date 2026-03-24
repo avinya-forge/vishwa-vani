@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react'
 
-interface suggest-edit-modalProps {
+interface SuggestEditModalProps {
     isOpen: boolean
     onClose: () => void
     verseId: string
@@ -10,7 +10,7 @@ interface suggest-edit-modalProps {
     lang: string
 }
 
-export default function suggest-edit-modal({ isOpen, onClose, verseId, originalContent, lang }: suggest-edit-modalProps) {
+export default function SuggestEditModal({ isOpen, onClose, verseId, originalContent, lang }: SuggestEditModalProps) {
     const [suggestion, setSuggestion] = useState(originalContent)
     const [submitting, setSubmitting] = useState(false)
     const [success, setSuccess] = useState(false)

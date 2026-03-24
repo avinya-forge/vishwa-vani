@@ -1,9 +1,9 @@
 'use client'
 
 import React, { useState } from 'react'
-import vedic-app-template from './vedic-app-template'
+import VedicAppTemplate from './vedic-app-template'
 
-export default function chhanda-analyzer() {
+export default function ChhandaAnalyzer() {
   const [shloka, setShloka] = useState('')
   const [result, setResult] = useState<{ meter: string, breakdown: string[], syllables: number } | null>(null)
   const [isAnalyzing, setIsAnalyzing] = useState(false)
@@ -35,7 +35,7 @@ export default function chhanda-analyzer() {
   }
 
   return (
-    <vedic-app-template
+    <VedicAppTemplate
       title="Meter Analyzer"
       subtitle="Chhanda Validation Engine"
       icon="📜"
@@ -44,7 +44,7 @@ export default function chhanda-analyzer() {
       {!result ? (
         <div className="space-y-6">
           <div className="space-y-2">
-            <label className="text-[10px] font-bold text-stone-400 uppercase tracking-widest ml-1">Sanskrit Line</label>
+            <label className="text-xs font-bold text-stone-500 uppercase tracking-widest ml-1">Sanskrit Line</label>
             <textarea
               placeholder="Paste a Sanskrit Shloka here (Devanagari or Transliteration)..."
               value={shloka}
@@ -56,7 +56,7 @@ export default function chhanda-analyzer() {
           <button
             onClick={analyzeMeter}
             disabled={!shloka || isAnalyzing}
-            className="w-full py-3 bg-stone-900 hover:bg-orange-600 disabled:bg-stone-200 disabled:text-stone-400 text-white rounded-xl font-black uppercase tracking-widest text-[11px] transition-all shadow-md active:scale-[0.98]"
+            className="btn-primary w-full shadow-saffron-100"
           >
             {isAnalyzing ? 'Tracing Syllables...' : 'Analyze Chhanda'}
           </button>
@@ -65,24 +65,24 @@ export default function chhanda-analyzer() {
         <div className="animate-in fade-in slide-in-from-bottom-2 duration-500 bg-orange-50/50 p-6 rounded-2xl border border-orange-100">
           <div className="text-center mb-6">
             <div className="text-orange-500 font-black text-3xl mb-1">{result.syllables}</div>
-            <div className="text-[10px] uppercase tracking-widest text-stone-400 font-bold">Estimated Syllables</div>
+            <div className="text-[11px] uppercase tracking-widest text-stone-500 font-black">Estimated Syllables</div>
           </div>
           
           <div className="bg-white rounded-xl p-4 border border-stone-100 shadow-sm text-center">
             <h4 className="font-serif font-black text-stone-800 text-lg">{result.meter}</h4>
-            <p className="text-[11px] text-stone-500 mt-2">
+            <p className="text-xs text-stone-500 mt-2 font-medium">
               The Chhanda (meter) governs the rhythm, tone, and recitation duration of the verse.
             </p>
           </div>
 
           <button
             onClick={() => { setResult(null); setShloka(''); }}
-            className="w-full mt-6 py-2.5 bg-white border border-stone-200 hover:border-orange-300 hover:text-orange-600 text-stone-500 rounded-xl font-bold uppercase tracking-widest text-[10px] transition-all"
+            className="btn-secondary w-full mt-6"
           >
             Analyze Another Verse
           </button>
         </div>
       )}
-    </vedic-app-template>
+    </VedicAppTemplate>
   )
 }

@@ -8,7 +8,7 @@ import React, { useEffect, useRef } from 'react'
  * Renders the Sanskrit shloka on a Canvas to thwart DOM-crawlers 
  * while maintaining the premium, elegant typography for humans.
  */
-export default function shloka-mask({ text, className }: { text: string, className?: string }) {
+export default function ShlokaMask({ text, className, fontSize = 28 }: { text: string, className?: string, fontSize?: number }) {
     const canvasRef = useRef<HTMLCanvasElement>(null)
 
     useEffect(() => {
@@ -19,26 +19,31 @@ export default function shloka-mask({ text, className }: { text: string, classNa
         if (!ctx) return
 
         // Set dimensions based on parent/font
-        const fontSize = 32
-        const padding = 6
+        const currentFontSize = fontSize
+        const lineHeight = currentFontSize * 1.5
+        const paddingX = 12
+        const paddingY = 16
         const lines = text.split('\n')
         
-        ctx.font = `700 ${fontSize}px "Noto Serif Devanagari", serif`
-        const maxWidth = Math.max(...lines.map(l => ctx.measureText(l).width)) + padding * 2
+        ctx.font = `700 ${currentFontSize}px "Noto Serif Devanagari", serif`
+        const metrics = lines.map(l => ctx.measureText(l))
+        const maxWidth = Math.max(...metrics.map(m => m.width)) + paddingX * 2
         
         const dpr = window.devicePixelRatio || 1
         canvas.width = maxWidth * dpr
-        canvas.height = (lines.length * fontSize * 1.4 + padding * 2) * dpr
+        canvas.height = (lines.length * lineHeight + paddingY * 2) * dpr
         canvas.style.width = `${maxWidth}px`
         
         ctx.scale(dpr, dpr)
-        ctx.font = `700 ${fontSize}px "Noto Serif Devanagari", serif`
+        ctx.font = `700 ${currentFontSize}px "Noto Serif Devanagari", serif`
         ctx.textAlign = 'center'
-        ctx.textBaseline = 'middle'
+        ctx.textBaseline = 'alphabetic'
         ctx.fillStyle = '#1c1917' 
-
+        
         lines.forEach((line, i) => {
-            ctx.fillText(line, maxWidth / 2, padding + i * fontSize * 1.3 + fontSize / 2)
+            // Adjusting Y-coordinate to give more headroom for top-matras
+            const y = paddingY + (i * lineHeight) + currentFontSize * 1.1
+            ctx.fillText(line, maxWidth / 2, y)
         })
     }, [text])
 

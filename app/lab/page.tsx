@@ -1,6 +1,6 @@
-import astro-explorer from '@/components/lab/astro-explorer'
-import chhanda-analyzer from '@/components/lab/chhanda-analyzer'
-import grammar-tokenizer from '@/components/lab/grammar-tokenizer'
+import AstroExplorer from '@/components/lab/astro-explorer'
+import ChhandaAnalyzer from '@/components/lab/chhanda-analyzer'
+import GrammarTokenizer from '@/components/lab/grammar-tokenizer'
 
 export default function VedicLabPage() {
   return (
@@ -14,9 +14,9 @@ export default function VedicLabPage() {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <astro-explorer />
-            <chhanda-analyzer />
-            <grammar-tokenizer />
+            <AstroExplorer />
+            <ChhandaAnalyzer />
+            <GrammarTokenizer />
         </div>
       </div>
     </main>

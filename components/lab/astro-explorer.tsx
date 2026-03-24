@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
-import vedic-app-template from './vedic-app-template'
+import VedicAppTemplate from './vedic-app-template'
 
 const ELEMENTS = [
   { name: 'Prithvi (Earth)', icon: '🌱', color: 'from-emerald-600 to-green-800', desc: 'Stability, groundedness, and structural strength.' },
@@ -11,7 +11,7 @@ const ELEMENTS = [
   { name: 'Akasha (Ether)', icon: '✨', color: 'from-purple-600 to-indigo-900', desc: 'Space, consciousness, and eternal connectivity.' },
 ]
 
-export default function astro-explorer() {
+export default function AstroExplorer() {
   const [name, setName] = useState('')
   const [result, setResult] = useState<typeof ELEMENTS[0] | null>(null)
   const [isCalculating, setIsCalculating] = useState(false)
@@ -30,7 +30,7 @@ export default function astro-explorer() {
   }
 
   return (
-    <vedic-app-template
+    <VedicAppTemplate
       title="Astro Explorer"
       subtitle="Pancha-Tattva Elements"
       icon="🌌"
@@ -39,7 +39,7 @@ export default function astro-explorer() {
       {!result ? (
         <div className="space-y-6">
           <div className="space-y-2">
-            <label className="text-[10px] font-bold text-stone-400 uppercase tracking-widest ml-1">Identity Reflection</label>
+            <label className="text-xs font-bold text-stone-500 uppercase tracking-widest ml-1">Identity Reflection</label>
             <input 
               type="text" 
               placeholder="Enter your name..."
@@ -49,11 +49,11 @@ export default function astro-explorer() {
             />
           </div>
           
-          <button 
-              onClick={calculateElement}
-              disabled={!name || isCalculating}
-              className="w-full py-3 bg-stone-900 hover:bg-orange-600 disabled:bg-stone-200 disabled:text-stone-400 text-white rounded-xl font-black uppercase tracking-widest text-[11px] transition-all shadow-md active:scale-[0.98]"
-          >
+              <button 
+                  onClick={calculateElement}
+                  disabled={!name || isCalculating}
+                  className="btn-primary w-full shadow-saffron-100"
+              >
             {isCalculating ? 'Consulting Akasha...' : 'Discover Tattva'}
           </button>
         </div>
@@ -65,19 +65,19 @@ export default function astro-explorer() {
           
           <div className="bg-white rounded-xl p-4 border border-stone-100 shadow-sm text-center">
             <h4 className="font-serif font-black text-stone-800 text-lg mb-2">{result.name}</h4>
-            <p className="text-[11px] text-stone-500 leading-relaxed px-2">
+            <p className="text-xs text-stone-500 leading-relaxed px-2 font-medium">
               {result.desc}
             </p>
           </div>
 
           <button 
               onClick={() => { setResult(null); setName(''); }}
-              className="w-full mt-6 py-2.5 bg-white border border-stone-200 hover:border-orange-300 hover:text-orange-600 text-stone-500 rounded-xl font-bold uppercase tracking-widest text-[10px] transition-all"
+              className="btn-secondary w-full mt-6"
           >
             Search Another Element
           </button>
         </div>
       )}
-    </vedic-app-template>
+    </VedicAppTemplate>
   )
 }

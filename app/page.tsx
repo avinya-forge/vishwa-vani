@@ -15,73 +15,71 @@ export default function Home() {
     setMounted(true)
   }, [])
 
-  if (!mounted) return <div className="min-h-screen bg-[#FDFBF7]" />
+  if (!mounted) return <div className="min-h-screen bg-background" />
 
   return (
-    <main className="min-h-screen bg-[#FDFBF7] selection:bg-orange-100 py-12 px-4">
+    <main className="min-h-screen bg-background selection:bg-orange-100 py-12 md:py-24 px-6">
       <div className="max-wide mx-auto">
         
-        {/* Hero Section */}
-        <header className="mb-10 text-center relative px-4">
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[1000px] h-[400px] bg-orange-200/15 blur-[150px] rounded-full pointer-events-none vedic-gradient" />
-          <div className="relative z-10 space-y-4">
-            <span className="inline-block py-1 px-5 rounded-full glass text-orange-600 text-[8px] font-bold tracking-widest uppercase shadow-sm animate-in fade-in slide-in-from-top-4 duration-1000">
-               Exploring the Eternal Wisdom
+        {/* 🏛️ VEDIC PORTAL HERO */}
+        <header className="mb-20 text-center relative max-w-4xl mx-auto">
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-orange-100/20 blur-[120px] rounded-full pointer-events-none vedic-bg-shimmer" />
+          <div className="relative z-10 space-y-8">
+            <span className="inline-block py-2 px-6 rounded-full glass border border-orange-100 text-orange-600 text-[11px] font-black tracking-[0.3em] uppercase shadow-sm">
+               Exploring Eternal Wisdom
             </span>
-            <h1 className="text-3xl md:text-5xl font-serif font-black text-stone-900 leading-[0.95] tracking-tight text-glow">
+            <h1 className="heading-hero">
               {t('title')}
             </h1>
-            <p className="text-base md:text-lg text-stone-500 max-w-2xl mx-auto leading-relaxed font-medium opacity-90">
-              {t('description')}
+            <p className="text-xl md:text-2xl text-stone-500 max-w-2xl mx-auto leading-relaxed font-serif italic">
+              &ldquo;{t('description')}&rdquo;
             </p>
-            <div className="flex justify-center gap-4 pt-2">
+            <div className="flex justify-center gap-4 pt-4">
               <Link 
                 href="/bhagavad-gita/1" 
-                className="px-8 py-4 bg-stone-900 text-white rounded-2xl hover:bg-orange-600 transition-all font-bold text-[10px] uppercase tracking-widest shadow-lg hover:shadow-orange-100 active:scale-95"
+                className="btn-primary flex items-center gap-3 px-10 shadow-orange-100"
               >
-                {t('beginReading')}
+                <span>📖</span> {t('beginReading')}
               </Link>
             </div>
           </div>
         </header>
 
-        {/* Global Library Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:px-4">
+        {/* 📚 THE UNIVERSAL COLLECTION */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {VEDIC_LIBRARY.map((text) => (
-            <div 
+            <Link 
               key={text.slug} 
-              className={`group relative p-6 rounded-3xl transition-all duration-700 flex flex-col h-full bg-white/40 glass ${text.available ? 'hover:shadow-[0_45px_100px_-25px_rgba(234,88,12,0.15)] hover:-translate-y-2' : 'opacity-50 grayscale pointer-events-none'}`}
+              href={text.available ? `/${text.slug}/1` : '#'}
+              className={`group card-premium p-8 flex flex-col h-full min-h-[380px] bg-white/60 relative overflow-hidden ${!text.available && 'opacity-40 grayscale pointer-events-none'}`}
             >
-              <div className="flex justify-between items-center mb-4">
-                <span className={`px-2.5 py-0.5 rounded-full text-[8px] font-bold uppercase tracking-widest border ${text.available ? 'bg-orange-50/50 text-orange-600 border-orange-100/50' : 'bg-stone-200/50 text-stone-400 border-stone-200/30'}`}>
-                  {text.available ? 'Available' : 'Archive'}
+              <div className="absolute top-0 right-0 w-32 h-32 bg-orange-50 blur-3xl rounded-full -mr-16 -mt-16 group-hover:bg-orange-100 transition-colors duration-700" />
+              
+              <div className="flex justify-between items-center mb-6 relative z-10">
+                <span className={`px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest border transition-colors ${text.available ? 'bg-orange-50 text-orange-700 border-orange-200' : 'bg-stone-100 text-stone-400 border-stone-200'}`}>
+                  {text.available ? 'Available' : 'Coming Soon'}
                 </span>
-                <span className="text-[9px] font-bold text-stone-300 uppercase tracking-tighter">{text.category}</span>
+                <span className="label-bold !text-[11px] !text-stone-300 group-hover:!text-orange-400 transition-colors">{text.category}</span>
               </div>
               
-              <h3 className="text-xl md:text-2xl font-serif font-black text-stone-900 mb-2 leading-tight group-hover:text-orange-600 transition-colors">
+              <h3 className="text-2xl md:text-3xl font-serif font-black text-stone-900 mb-4 leading-[1.1] group-hover:text-orange-600 transition-colors relative z-10">
                 {locale === 'hi' ? text.nameHi : locale === 'mr' ? text.nameMr : text.name}
               </h3>
-              <p className="text-stone-500 text-[13px] mb-6 leading-relaxed font-medium line-clamp-3">
+              
+              <p className="text-stone-500 text-sm mb-8 leading-relaxed font-medium line-clamp-4 font-serif relative z-10">
                 {text.description}
               </p>
 
-              <div className="mt-auto border-t border-stone-50 pt-5">
-                {text.available ? (
-                   <div className="flex items-center justify-between">
-                     <span className="text-[9px] font-black text-stone-300 uppercase tracking-widest">{text.totalChapters} Chapters</span>
-                     <Link 
-                       href={`/${text.slug}/1`}
-                       className="p-2.5 bg-stone-50 rounded-xl group-hover:bg-orange-600 group-hover:text-white transition-all shadow-sm"
-                     >
-                       <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
-                     </Link>
-                   </div>
-                ) : (
-                  <p className="text-[9px] font-black text-stone-300 uppercase tracking-widest">Digitalization Pending</p>
-                )}
+              <div className="mt-auto pt-6 border-t border-stone-100 flex items-center justify-between relative z-10">
+                <div>
+                   <span className="label-bold !text-stone-300 block mb-0.5">Chapters</span>
+                   <span className="text-2xl font-serif font-black text-stone-900 group-hover:text-orange-600 transition-colors">{text.totalChapters}</span>
+                </div>
+                <div className="w-12 h-12 bg-stone-900 text-white rounded-2xl flex items-center justify-center transition-all group-hover:bg-orange-600 group-hover:scale-110 shadow-lg">
+                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}><path d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

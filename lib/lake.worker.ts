@@ -92,7 +92,7 @@ async function getOrInitLake(lakeFile: string = 'vedic-lake.db') {
 
   // Pointing to absolute public path for WASM
   const SQL = await initSqlJs({
-    locateFile: (file: string) => `/${file}`
+    locateFile: (file: string) => `${self.location.origin}/${file}`
   });
 
   const response = await fetch(`/${lakeFile}`);

@@ -1,9 +1,9 @@
 'use client'
 
 import React, { useState } from 'react'
-import vedic-app-template from './vedic-app-template'
+import VedicAppTemplate from './vedic-app-template'
 
-export default function grammar-tokenizer() {
+export default function GrammarTokenizer() {
   const [shloka, setShloka] = useState('')
   const [result, setResult] = useState<{ word: string, pos: string, meaning: string }[] | null>(null)
   const [isAnalyzing, setIsAnalyzing] = useState(false)
@@ -28,7 +28,7 @@ export default function grammar-tokenizer() {
   }
 
   return (
-    <vedic-app-template
+    <VedicAppTemplate
       title="Sanskrit Tokenizer"
       subtitle="Grammar & Morphology"
       icon="🧩"
@@ -37,7 +37,7 @@ export default function grammar-tokenizer() {
       {!result ? (
         <div className="space-y-6">
           <div className="space-y-2">
-            <label className="text-[10px] font-bold text-stone-400 uppercase tracking-widest ml-1">Sanskrit Line</label>
+            <label className="text-xs font-bold text-stone-500 uppercase tracking-widest ml-1">Sanskrit Line</label>
             <textarea
               placeholder="Paste a Sanskrit Shloka here (Devanagari or Transliteration)..."
               value={shloka}
@@ -49,7 +49,7 @@ export default function grammar-tokenizer() {
           <button
             onClick={analyzeGrammar}
             disabled={!shloka || isAnalyzing}
-            className="w-full py-3 bg-stone-900 hover:bg-orange-600 disabled:bg-stone-200 disabled:text-stone-400 text-white rounded-xl font-black uppercase tracking-widest text-[11px] transition-all shadow-md active:scale-[0.98]"
+            className="btn-primary w-full shadow-saffron-100"
           >
             {isAnalyzing ? 'Parsing Morphology...' : 'Tokenize Shloka'}
           </button>
@@ -64,8 +64,8 @@ export default function grammar-tokenizer() {
                   <span className="font-serif font-black text-stone-800">{item.word}</span>
                 </div>
                 <div className="flex-1">
-                  <div className="text-[9px] uppercase tracking-widest text-orange-500 font-bold mb-1">{item.pos}</div>
-                  <div className="text-[11px] text-stone-600 font-medium">{item.meaning}</div>
+                  <div className="text-[10px] uppercase tracking-widest text-orange-600 font-black mb-1">{item.pos}</div>
+                  <div className="text-xs text-stone-600 font-semibold">{item.meaning}</div>
                 </div>
               </div>
             ))}
@@ -73,12 +73,12 @@ export default function grammar-tokenizer() {
 
           <button
             onClick={() => { setResult(null); setShloka(''); }}
-            className="w-full py-2.5 bg-white border border-stone-200 hover:border-orange-300 hover:text-orange-600 text-stone-500 rounded-xl font-bold uppercase tracking-widest text-[10px] transition-all"
+            className="btn-secondary w-full"
           >
             Tokenize Another Verse
           </button>
         </div>
       )}
-    </vedic-app-template>
+    </VedicAppTemplate>
   )
 }

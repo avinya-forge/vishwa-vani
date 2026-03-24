@@ -1,9 +1,9 @@
 import { Inter, Noto_Serif_Devanagari, Outfit } from 'next/font/google'
-import header from '@/components/layout/header'
-import footer from '@/components/layout/footer'
+import Header from '@/components/layout/Header'
+import Footer from '@/components/layout/Footer'
 import { GoogleAnalytics } from '@next/third-parties/google'
-import locale-provider from '@/components/layout/locale-provider'
-import security-shield from '@/components/layout/security-shield'
+import LocaleProvider from '@/components/layout/locale-provider'
+import SecurityShield from '@/components/layout/security-shield'
 import { setRequestLocale } from 'next-intl/server'
 import './globals.css'
 
@@ -41,14 +41,14 @@ export default async function RootLayout({
         />
       </head>
       <body suppressHydrationWarning className={`${inter.variable} ${notoSerifDevanagari.variable} ${outfit.variable} font-sans min-h-screen flex flex-col bg-[#FDFBF7] text-stone-900 overflow-x-hidden`}>
-        <locale-provider>
-          <security-shield />
-          <header />
+        <LocaleProvider>
+          <SecurityShield />
+          <Header />
           <main className="flex-grow">
             {children}
           </main>
-          <footer />
-        </locale-provider>
+          <Footer />
+        </LocaleProvider>
         {/* Mute benign ResizeObserver error for cleaner showcase */}
         <script
           dangerouslySetInnerHTML={{

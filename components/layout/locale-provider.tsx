@@ -8,7 +8,7 @@ import mr from '@/messages/mr.json'
 
 const messagesMap = { en, hi, mr }
 
-export default function locale-provider({ children }: { children: ReactNode }) {
+export default function LocaleProvider({ children }: { children: ReactNode }) {
   const [locale, setLocale] = useState('en')
   const [mounted, setMounted] = useState(false)
 

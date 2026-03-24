@@ -1,12 +1,11 @@
 import fs from 'fs'
 import path from 'path'
 import Link from 'next/link'
-import StudyClient from '@/components/shloka/StudyClient'
+import StudyClient from '@/components/shloka/study-client'
 import { getTextBySlug, getAllTextChapterPaths, VEDIC_LIBRARY } from '@/lib/texts'
-import { getVersesFromLakeServer } from '@/lib/serverLake'
+import { getVersesFromLakeServer } from '@/lib/server-lake'
 import { setRequestLocale } from 'next-intl/server'
 import { migrateToNVF } from '@/lib/nvf'
-import VedicMindMap from '@/components/shloka/VedicMindMap'
 
 export async function generateStaticParams() {
   const paths = getAllTextChapterPaths()
@@ -43,7 +42,7 @@ export default async function StudyChapterPage({ params }: { params: Promise<{ t
     verses = await getVersesFromLakeServer(textSlug, chapterInt, textMetadata.lakeFile || undefined)
   } else {
     try {
-      const dataPath = path.join(process.cwd(), 'data', `${textMetadata.dataPrefix}_chapter_${chapterNumber}.json`)
+      const dataPath = path.join(process.cwd(), 'data', '3-gold', textMetadata.dataPrefix, `${textMetadata.dataPrefix}-chapter-${chapterNumber}.json`)
       const rawData = fs.readFileSync(dataPath, 'utf8')
       verses = JSON.parse(rawData)
     } catch (e) {
@@ -54,20 +53,23 @@ export default async function StudyChapterPage({ params }: { params: Promise<{ t
   // Ensure ALL data is in NVF format before passing to Client components
   const nvfVerses = verses.map((v: any) => migrateToNVF(v, textSlug, chapterInt))
 
-  // Pass raw data to Client. Client will handle language switching.
+  // Build chapter list for navigation
+  const chapterList: { num: number; name: string }[] = []
+  for (let i = 1; i <= textMetadata.totalChapters; i++) {
+    chapterList.push({
+      num: i,
+      name: textMetadata.chapterNames?.[String(i)] || `Chapter ${i}`,
+    })
+  }
+
   return (
     <main className="min-h-screen bg-[#FDFBF7]">
       <div className="max-w-none">
-        {textMetadata.contextualInfo && (
-          <VedicMindMap 
-            context={textMetadata.contextualInfo} 
-            scriptureName={textMetadata.name} 
-          />
-        )}
         <StudyWrapper 
           verses={nvfVerses} 
           textMetadata={textMetadata} 
-          chapterNumber={chapterNumber} 
+          chapterNumber={chapterNumber}
+          chapterList={chapterList}
         />
       </div>
     </main>
@@ -78,8 +80,7 @@ export default async function StudyChapterPage({ params }: { params: Promise<{ t
  * Intermediate wrapper to determine localized titles server-side (for SEO)
  * while still letting the client handle the main interactive state.
  */
-function StudyWrapper({ verses, textMetadata, chapterNumber }: any) {
-  // We'll use English as the default server-side title for SEO
+function StudyWrapper({ verses, textMetadata, chapterNumber, chapterList }: any) {
   const title = textMetadata.chapterNames[chapterNumber] || `${textMetadata.name} - Chapter ${chapterNumber}`
   const scriptureName = textMetadata.name
   const tagline = textMetadata.description
@@ -91,13 +92,12 @@ function StudyWrapper({ verses, textMetadata, chapterNumber }: any) {
     <>
       <StudyClient 
         verses={verses} 
-        chapterTitle={title} 
-        scriptureName={scriptureName}
-        tagline={tagline}
+        textSlug={textMetadata.slug}
+        chapter={parseInt(chapterNumber)}
       />
       
       {/* Footer Navigation */}
-      <div className="max-wide px-4 sm:px-6 mt-8 pb-12 flex flex-col sm:flex-row items-center justify-between gap-4 relative z-10">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 mt-8 pb-12 flex flex-col sm:flex-row items-center justify-between gap-4 relative z-10">
         <div className="flex gap-3 w-full sm:w-auto">
           {prevChapter && (
             <Link 

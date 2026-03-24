@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import { AnvayaToken } from '@/lib/nvf'
 import { useTranslations } from 'next-intl'
 
-export default function vedic-explain-shell({ tokens, lang = 'en' }: { tokens: AnvayaToken[], lang?: 'en'|'hi'|'mr' }) {
+export default function VedicExplainShell({ tokens, lang = 'en' }: { tokens: AnvayaToken[], lang?: 'en'|'hi'|'mr' }) {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
   
   // As a fallback for translation keys if needed.

@@ -14,12 +14,10 @@ interface SearchResult {
   transliteration: string
 }
 
-export default function search-client() {
+export default function SearchClient() {
   const t = useTranslations('study')
   const nt = useTranslations('nav')
   const locale = useLocale()
-  // App Router in this project handles translation at the component level without route prefixes
-  const localePrefix = ''
 
   const [query, setQuery] = useState('')
   const [results, setResults] = useState<SearchResult[]>([])
@@ -31,8 +29,6 @@ export default function search-client() {
       if (query.trim().length > 2) {
         setIsSearching(true)
         try {
-          // In Milestone 1, we search the primary vedic-lake.db. 
-          // Future milestones will search itihasa-lake and purana-lake shards.
           const res = await searchLake(query)
           setResults(res)
         } catch (error) {
@@ -57,79 +53,92 @@ export default function search-client() {
   }, [results, activeTab])
 
   return (
-    <div className="max-w-5xl mx-auto px-4 py-6">
-      <div className="mb-5">
-        <h1 className="text-2xl font-serif font-black text-stone-900 mb-4 flex items-center gap-2">
-          <span className="p-1.5 bg-orange-100 text-orange-600 rounded-lg text-lg">🔍</span>
-          {nt('search')}
-        </h1>
+    <div className="max-wide px-6 py-12 md:py-20">
+      <div className="max-w-4xl mx-auto mb-12">
+        <header className="mb-10">
+          <span className="label-bold text-orange-600 mb-4 block">Universal Search</span>
+          <h1 className="text-4xl md:text-5xl font-serif font-black text-stone-900 mb-6 flex items-center gap-4">
+             Explore the Vedic Wikipedia
+          </h1>
+        </header>
         
         <div className="relative group">
+          <div className="absolute inset-y-0 left-6 flex items-center pointer-events-none">
+             <span className="text-2xl grayscale group-focus-within:grayscale-0 transition-all">🔍</span>
+          </div>
           <input
             type="text"
-            placeholder="Search verses (e.g., 'Dharma', 'Karma', 'कर्म')..."
+            placeholder="Search verses (e.g., 'Dharma', 'Karma', 'कर्तव्य')..."
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            className="w-full px-4 py-3 bg-white border-2 border-stone-100 rounded-xl shadow-sm focus:border-orange-500 focus:outline-none transition-all text-base font-serif"
+            className="w-full pl-16 pr-8 py-6 bg-white border border-stone-200 rounded-[2rem] shadow-xl focus:border-orange-400 focus:ring-8 focus:ring-orange-50 focus:outline-none transition-all text-xl font-serif placeholder:text-stone-300"
             autoFocus
           />
           {isSearching && (
-            <div className="absolute right-6 top-5 animate-spin rounded-full h-5 w-5 border-b-2 border-orange-600" />
+            <div className="absolute right-8 top-1/2 -translate-y-1/2">
+               <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-orange-600" />
+            </div>
           )}
         </div>
       </div>
 
-      <div className="flex gap-2 mb-5 overflow-x-auto pb-1.5">
-        {['all', 'itihas', 'upanishad', 'purana'].map((tab) => (
-          <button
-            key={tab}
-            onClick={() => setActiveTab(tab as any)}
-            className={`px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-wider transition-all ${
-              activeTab === tab 
-              ? 'bg-orange-600 text-white shadow-md' 
-              : 'bg-white text-stone-500 hover:bg-stone-50 border border-stone-100'
-            }`}
-          >
-            {tab}
-          </button>
-        ))}
-      </div>
+      <div className="max-w-4xl mx-auto">
+        <div className="flex gap-2 mb-10 overflow-x-auto pb-4 scrollbar-hide">
+          {['all', 'itihas', 'upanishad', 'purana'].map((tab) => (
+            <button
+              key={tab}
+              onClick={() => setActiveTab(tab as any)}
+              className={`px-6 py-3 rounded-2xl text-[11px] font-black uppercase tracking-[0.2em] transition-all whitespace-nowrap border ${
+                activeTab === tab 
+                ? 'bg-stone-900 text-white border-stone-900 shadow-xl' 
+                : 'bg-white text-stone-400 border-stone-100 hover:border-orange-200 hover:text-stone-700'
+              }`}
+            >
+              {tab === 'all' ? 'All Scriptures' : tab.charAt(0).toUpperCase() + tab.slice(1)}
+            </button>
+          ))}
+        </div>
 
-      <div className="space-y-4">
-        {filteredResults.length > 0 ? (
-          filteredResults.map((result, idx) => {
-            const meta = VEDIC_LIBRARY.find(l => l.slug === result.textSlug)
-            return (
-              <Link 
-                key={idx}
-                href={`/${result.textSlug}/${result.chapter}`}
-                className="block group"
-              >
-                <div className="bg-white p-4 rounded-xl border border-stone-100 shadow-sm hover:shadow-md hover:border-orange-200 transition-all">
-                  <div className="flex justify-between items-start mb-2">
-                    <span className="text-[9px] font-bold text-orange-600 uppercase tracking-widest bg-orange-50 px-2 py-0.5 rounded">
-                      {meta?.name || result.textSlug} • Ch {result.chapter} • Vs {result.verse}
-                    </span>
+        <div className="grid grid-cols-1 gap-6">
+          {filteredResults.length > 0 ? (
+            filteredResults.map((result, idx) => {
+              const meta = VEDIC_LIBRARY.find(l => l.slug === result.textSlug)
+              return (
+                <Link 
+                  key={idx}
+                  href={`/${result.textSlug}/${result.chapter}`}
+                  className="block group"
+                >
+                  <div className="card-premium p-8 bg-white/60">
+                    <div className="flex justify-between items-start mb-4">
+                      <span className="label-bold !text-[11px] text-orange-600 bg-orange-50 px-3 py-1 rounded-lg border border-orange-100">
+                        {meta?.name || result.textSlug} · Chapter {result.chapter} · Verse {result.verse}
+                      </span>
+                    </div>
+                    <p className="text-stone-900 font-serif text-xl md:text-2xl font-black mb-3 leading-snug group-hover:text-orange-600 transition-colors">
+                      {result.slok}
+                    </p>
+                    <p className="text-stone-500 italic text-sm leading-relaxed line-clamp-2 font-serif opacity-70 group-hover:opacity-100 transition-opacity">
+                      {result.transliteration}
+                    </p>
                   </div>
-                  <p className="text-stone-800 font-serif text-[15px] mb-1.5 leading-relaxed">
-                    {result.slok}
-                  </p>
-                  <p className="text-stone-400 italic text-[11px] line-clamp-2">
-                    {result.transliteration}
-                  </p>
-                </div>
-              </Link>
-            )
-          })
-        ) : query.length > 2 && !isSearching ? (
-          <div className="text-center py-20 bg-stone-50 rounded-3xl border border-dashed border-stone-200">
-             <p className="text-stone-400 font-serif">No matches found in the current sharded library.</p>
-          </div>
-        ) : (
-          <div className="text-center py-20">
-             <p className="text-stone-300 font-serif italic">Type keywords to explore the Vedic Wikipedia...</p>
-          </div>
-        )}
+                </Link>
+              )
+            })
+          ) : query.length > 2 && !isSearching ? (
+            <div className="text-center py-32 bg-stone-50 rounded-[3rem] border border-dashed border-stone-200">
+               <p className="text-stone-400 font-serif italic text-xl">No fragments found matching your intent.</p>
+               <button onClick={() => setQuery('')} className="mt-4 text-orange-600 font-black uppercase text-xs tracking-widest hover:underline">Clear Search</button>
+            </div>
+          ) : (
+            <div className="text-center py-32">
+               <div className="w-20 h-20 bg-stone-50 rounded-full flex items-center justify-center mx-auto mb-6 text-3xl opacity-50">🧭</div>
+               <p className="text-stone-400 font-serif italic text-lg leading-relaxed max-w-sm mx-auto">
+                 Begin your journey across the Sanskrit shards by typing a concept or keyword.
+               </p>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   )

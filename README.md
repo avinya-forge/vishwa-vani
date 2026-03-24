@@ -55,8 +55,11 @@ npm install
 
 ### Build & Ingest
 ```bash
-# Ingest data into the Vedic Lake
-node scripts/lakeIngest.js
+# Ingest data into the Vedic Lake (SQLite shards)
+python scripts/vishwa.py lake ingest
+
+# Build Search Index
+python scripts/vishwa.py lake index
 
 # Build for Production
 npm run build
@@ -67,11 +70,11 @@ This generates an `out/` folder ready for static hosting.
 
 ## 🗺️ Documentation
 
-- 🏗️ [Architecture Overview](./docs/architecture/arch.md)
-- 🏗️ [Architecture Blueprint](./docs/architecture/blueprint.md)
-- 🏗️ [Project Vision](./docs/architecture/vision.md)
-- 🗺️ [Master Backlog](./docs/planning/backlog.md)
-- 🧭 [Roadmap](./docs/planning/roadmap.md)
+- 🏛️ [Vishwa-Vani Vision](./docs/vision.md)
+- 🚀 [Master Backlog](./docs/backlog.md)
+- 📦 [Release Notes](./docs/release-notes.md)
+- 🏗️ [Architecture Blueprint](./docs/architecture.md)
+- 🛠️ [Engineering & Operations](./docs/engineering.md)
 
 ---
 _Vishwa-Vani: Turning Vedic Knowledge into an Interactive Journey._

@@ -10,7 +10,7 @@ import { useEffect } from 'react';
  * 2. Blocks common 'Developer Tools' keyboard shortcuts (F12, Ctrl+Shift+I).
  * 3. Monitors for console-opening attempts.
  */
-export default function security-shield() {
+export default function SecurityShield() {
   useEffect(() => {
     if (typeof window === 'undefined') return;
     
