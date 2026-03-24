@@ -1,0 +1,29 @@
+[
+  {
+    "id": "vishnu-purana_5_1",
+    "text_slug": "vishnu-purana",
+    "chapter": 5,
+    "verse": 1,
+    "original": "ॐ पूर्णमदः पूर्णमिदं पूर्णात्पूर्णमुदच्यते (Mock Vishnu Purana 5.1)",
+    "transliteration": "Om purnamadah purnamidam (Mock Vishnu Purana 5.1)",
+    "layers": [
+      {
+        "author": "iskcon-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_ISKCON_EN]"
+      },
+      {
+        "author": "dnyaneshwari-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_DNYAN_EN]"
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "bhakti"
+      ]
+    }
+  }
+]
