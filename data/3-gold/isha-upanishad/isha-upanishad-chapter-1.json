@@ -1,0 +1,422 @@
+[
+  {
+    "id": "isha-upanishad_1_0",
+    "chapter": 1,
+    "verse": 0,
+    "original": "ॐ पूर्णमदः पूर्णमिदं पूर्णात् पूर्णमुदच्यते ।\nपूर्णस्य पूर्णमादाय पूर्णमेवावशिष्यते ॥\nॐ शान्तिः शान्तिः शान्तिः ॥",
+    "transliteration": "oṃ pūrṇamadaḥ pūrṇamidaṃ pūrṇāt pūrṇamudacyate |\npūrṇasya pūrṇamādāya pūrṇamevāvaśiष्यte ||\noṃ śāntiḥ śāntiḥ śāntiḥ ||",
+    "ai_metadata": {
+      "topics": [
+        "wholeness",
+        "peace",
+        "brahman"
+      ],
+      "correlations": {},
+      "stats": {
+        "original_words": 15,
+        "translit_words": 15,
+        "layers_count": 3
+      },
+      "fingerprint": "9816dc0aab96bbe376230d1b2a7fa6f6"
+    },
+    "layers": [
+      {
+        "author": "isa",
+        "lang": "en",
+        "type": "translation",
+        "content": "Om. That is whole, this is whole; from the whole, the whole becomes manifest. Taking the whole from the whole, the whole remains."
+      },
+      {
+        "author": "iskcon-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_ISKCON_EN]"
+      },
+      {
+        "author": "dnyaneshwari-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_DNYAN_EN]"
+      }
+    ],
+    "text_slug": "isha-upanishad"
+  },
+  {
+    "id": "isha-upanishad_1_1",
+    "chapter": 1,
+    "verse": 1,
+    "original": "ईशावास्यमिदं सर्वं यत्किञ्च जगत्यां जगत् ।\nतेन त्यक्तेन भुञ्जीथा मा गृधः कस्यस्विद्धनम् ॥ १ ॥",
+    "transliteration": "īśāvāsyamidaṃ sarvaṃ yatkiñca jagatyāṃ jagat |\ntena tyaktena bhuñjīthā mā gṛdhaḥ kasyasviddhanam || 1 ||",
+    "ai_metadata": {
+      "topics": [
+        "renunciation",
+        "god",
+        "universe"
+      ],
+      "correlations": {},
+      "stats": {
+        "original_words": 15,
+        "translit_words": 15,
+        "layers_count": 3
+      },
+      "fingerprint": "a61f22c2f28483fc9aa6ba0c2f99acb3"
+    },
+    "layers": [
+      {
+        "author": "isa",
+        "lang": "en",
+        "type": "translation",
+        "content": "All this, whatever moves in the world, should be enveloped by God. Enjoy by renunciation. Covet not any more wealth."
+      },
+      {
+        "author": "iskcon-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_ISKCON_EN]"
+      },
+      {
+        "author": "dnyaneshwari-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_DNYAN_EN]"
+      }
+    ],
+    "text_slug": "isha-upanishad"
+  },
+  {
+    "id": "isha-upanishad_1_2",
+    "chapter": 1,
+    "verse": 2,
+    "original": "कुर्वन्नेवेह कर्माणि जिजीविषेच्छतं समाः ।\nएवं त्वयि नान्यथेतोऽस्ति न कर्म लिप्यते नरे ॥ २ ॥",
+    "transliteration": "kurvanneveha karmāṇi jijīviṣecchataṃ samāḥ |\nevaṃ tvayi nānyatheto'sti na karma lipyate nare || 2 ||",
+    "ai_metadata": {
+      "topics": [
+        "karma",
+        "life",
+        "action"
+      ],
+      "correlations": {},
+      "stats": {
+        "original_words": 15,
+        "translit_words": 15,
+        "layers_count": 3
+      },
+      "fingerprint": "eaa54a16a981789a95300527a8647aac"
+    },
+    "layers": [
+      {
+        "author": "isa",
+        "lang": "en",
+        "type": "translation",
+        "content": "Performing karma in this world, one should wish to live a hundred years. Thus it is right for you and not otherwise; karma does not cling to man."
+      },
+      {
+        "author": "iskcon-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_ISKCON_EN]"
+      },
+      {
+        "author": "dnyaneshwari-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_DNYAN_EN]"
+      }
+    ],
+    "text_slug": "isha-upanishad"
+  },
+  {
+    "id": "isha-upanishad_1_3",
+    "chapter": 1,
+    "verse": 3,
+    "original": "असुर्या नाम ते लोका अन्धेन तमसावृताः ।\nतांस्ते प्रेत्याभिगच्छन्ति ये के चात्महनो जनाः ॥ ३ ॥",
+    "transliteration": "asuryā nāma te lokā andhena tamasāvṛtāḥ |\ntāṃste pretyābhigacchanti ye ke cātmahano janāḥ || 3 ||",
+    "ai_metadata": {
+      "topics": [
+        "ignorance",
+        "soul",
+        "darkness"
+      ],
+      "correlations": {},
+      "stats": {
+        "original_words": 16,
+        "translit_words": 16,
+        "layers_count": 3
+      },
+      "fingerprint": "ea20fc8c1b9eeb0eef3d282ed2e184c9"
+    },
+    "layers": [
+      {
+        "author": "isa",
+        "lang": "en",
+        "type": "translation",
+        "content": "Those worlds of the asuras are enveloped in blind darkness. Those people who kill their Atman go to them after death."
+      },
+      {
+        "author": "iskcon-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_ISKCON_EN]"
+      },
+      {
+        "author": "dnyaneshwari-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_DNYAN_EN]"
+      }
+    ],
+    "text_slug": "isha-upanishad"
+  },
+  {
+    "id": "isha-upanishad_1_4",
+    "chapter": 1,
+    "verse": 4,
+    "original": "अनेजदेकं मनसो जवीयो नैनद्देवा आप्नुवन् पूर्वमर्षत् ।\nतद्धावतोऽन्यानत्येति तिष्ठत्तस्मिन्नपो मातरिश्वा दधाति ॥ ४ ॥",
+    "transliteration": "anejadekaṃ manaso javīyo nainaddevā āpnuvan pūrvamarṣat |\ntaddhāvato'nyānatyeti tiṣṭhattasminnapo mātariśvā dadhāti || 4 ||",
+    "ai_metadata": {
+      "topics": [
+        "atman",
+        "mind",
+        "swiftness"
+      ],
+      "correlations": {},
+      "stats": {
+        "original_words": 14,
+        "translit_words": 14,
+        "layers_count": 3
+      },
+      "fingerprint": "ee4532d29ddf42134dc67ee63f0bee94"
+    },
+    "layers": [
+      {
+        "author": "isa",
+        "lang": "en",
+        "type": "translation",
+        "content": "The Atman is motionless, one, and swifter than the mind. The devas could not overtake it as it ran before them. Sitting, it passes others who run. In it, Matarisvan (the wind) bestows the actions of beings."
+      },
+      {
+        "author": "iskcon-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_ISKCON_EN]"
+      },
+      {
+        "author": "dnyaneshwari-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_DNYAN_EN]"
+      }
+    ],
+    "text_slug": "isha-upanishad"
+  },
+  {
+    "id": "isha-upanishad_1_5",
+    "chapter": 1,
+    "verse": 5,
+    "original": "तदेजति तन्नैजति तद्दूरे तद्वन्तिके ।\nतदन्तरस्य सर्वस्य तदु सर्वस्यास्य बाह्यतः ॥ ५ ॥",
+    "transliteration": "tadejati tannaijati taddūre tadvantike |\ntadantarasya sarvasya tadu sarvasyāsya bāhyataḥ || 5 ||",
+    "ai_metadata": {
+      "topics": [
+        "paradox",
+        "brahman",
+        "omnipresence"
+      ],
+      "correlations": {},
+      "stats": {
+        "original_words": 13,
+        "translit_words": 13,
+        "layers_count": 3
+      },
+      "fingerprint": "a71d301555a25be08466f61d51369cba"
+    },
+    "layers": [
+      {
+        "author": "isa",
+        "lang": "en",
+        "type": "translation",
+        "content": "It moves, and it moves not. It is far, and it is near. It is within all this, and it is outside all this."
+      },
+      {
+        "author": "iskcon-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_ISKCON_EN]"
+      },
+      {
+        "author": "dnyaneshwari-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_DNYAN_EN]"
+      }
+    ],
+    "text_slug": "isha-upanishad"
+  },
+  {
+    "id": "isha-upanishad_1_6",
+    "chapter": 1,
+    "verse": 6,
+    "original": "यस्तु सर्वाणि भूतान्यात्मन्येवानुपश्यति ।\nसर्वभूतेषु चात्मानं ततो न विजुगुप्सते ॥ ६ ॥",
+    "transliteration": "yastu sarvāṇi bhūtānyātmanyevānupaśyati |\nsarvabhūteṣu cātmānaṃ tato na vijugupsate || 6 ||",
+    "ai_metadata": {
+      "topics": [
+        "unity",
+        "vision",
+        "fearlessness"
+      ],
+      "correlations": {},
+      "stats": {
+        "original_words": 12,
+        "translit_words": 12,
+        "layers_count": 3
+      },
+      "fingerprint": "ecaff07061a96192a9d694915ef8f49d"
+    },
+    "layers": [
+      {
+        "author": "isa",
+        "lang": "en",
+        "type": "translation",
+        "content": "He who sees all beings in the Atman, and the Atman in all beings, does not feel any revulsion by reason of such a view."
+      },
+      {
+        "author": "iskcon-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_ISKCON_EN]"
+      },
+      {
+        "author": "dnyaneshwari-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_DNYAN_EN]"
+      }
+    ],
+    "text_slug": "isha-upanishad"
+  },
+  {
+    "id": "isha-upanishad_1_7",
+    "chapter": 1,
+    "verse": 7,
+    "original": "यस्मिन्सर्वाणि भूतान्यात्मैवाभूद्विजानतः ।\nतत्र को मोहः कः शोक एकत्वमनुपश्यतः ॥ ७ ॥",
+    "transliteration": "yasminsarvāṇi bhūtānyātmaivābhūdvijānataḥ |\ntatra ko mohaḥ kaḥ śoka ekatvamanupaśyataḥ || 7 ||",
+    "ai_metadata": {
+      "topics": [
+        "unity",
+        "wisdom",
+        "joy"
+      ],
+      "correlations": {},
+      "stats": {
+        "original_words": 12,
+        "translit_words": 12,
+        "layers_count": 3
+      },
+      "fingerprint": "e7943c1ee27265a14bdca6a9ca2416a1"
+    },
+    "layers": [
+      {
+        "author": "isa",
+        "lang": "en",
+        "type": "translation",
+        "content": "When, to the knower, all beings have become one with his own self (Atman), what delusion and what sorrow can there be for him who has once seen that unity?"
+      },
+      {
+        "author": "iskcon-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_ISKCON_EN]"
+      },
+      {
+        "author": "dnyaneshwari-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_DNYAN_EN]"
+      }
+    ],
+    "text_slug": "isha-upanishad"
+  },
+  {
+    "id": "isha-upanishad_1_8",
+    "chapter": 1,
+    "verse": 8,
+    "original": "स पर्यगाच्छुक्रमकायमव्रणमस्नाविरं शुद्धमपापविद्धम् ।\nकविर्मनीषी परिभूः स्वयम्भूर्याथातथ्यतोऽर्थान्व्यदधाच्छाश्वतीभ्यः समाभ्यः ॥ ८ ॥",
+    "transliteration": "sa paryagācchukramakāyamavraṇamasnāviraṃ śuddhamapāpaviddham |\nkavirmanīṣī paribhūḥ svayambhūryāthātathyato'rthānvyadadhācchāśvatībhyaḥ samābhyaḥ || 8 ||",
+    "ai_metadata": {
+      "topics": [
+        "purity",
+        "creator",
+        "brahman"
+      ],
+      "correlations": {},
+      "stats": {
+        "original_words": 11,
+        "translit_words": 11,
+        "layers_count": 3
+      },
+      "fingerprint": "f917f846a670990cece40bc7a30871bc"
+    },
+    "layers": [
+      {
+        "author": "isa",
+        "lang": "en",
+        "type": "translation",
+        "content": "He has filled all; he is radiant, bodiless, invulnerable, devoid of sinews, pure, untouched by evil. He, the Seer, the Thinker, the All-pervading, the Self-existent, has assigned to each its respective duties for eternal years."
+      },
+      {
+        "author": "iskcon-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_ISKCON_EN]"
+      },
+      {
+        "author": "dnyaneshwari-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_DNYAN_EN]"
+      }
+    ],
+    "text_slug": "isha-upanishad"
+  },
+  {
+    "id": "isha-upanishad_1_18",
+    "chapter": 1,
+    "verse": 18,
+    "original": "अग्ने नय सुपथा राये अस्मान् विश्वानि देव वयुनानि विद्वान् ।\nयुयोध्यस्मज्जुहुराणमेनो भूयिष्ठां ते नमौक्तिं विधेम ॥ १८ ॥",
+    "transliteration": "agne naya supathā rāye asmān viśvāni deva vayunāni vidvān |\nyuyodhyasmajjuhurāṇameno bhūyiṣṭhāṃ te namauktiṃ vidhema || 18 ||",
+    "ai_metadata": {
+      "topics": [
+        "fire",
+        "prayer",
+        "liberation"
+      ],
+      "correlations": {},
+      "stats": {
+        "original_words": 18,
+        "translit_words": 18,
+        "layers_count": 3
+      },
+      "fingerprint": "22bb712fb97dabae68ce00caca01fca1"
+    },
+    "layers": [
+      {
+        "author": "isa",
+        "lang": "en",
+        "type": "translation",
+        "content": "O Agni, lead us by the good path to wealth (liberation), O God who knowest all our deeds. Remove from us the deceitful sin. We offer thee the best salutations."
+      },
+      {
+        "author": "iskcon-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_ISKCON_EN]"
+      },
+      {
+        "author": "dnyaneshwari-en",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_DNYAN_EN]"
+      }
+    ],
+    "text_slug": "isha-upanishad"
+  }
+]
