@@ -9,16 +9,28 @@
     "meaning": "3.1 Arjuna said  If Thou thinkest that knowledge is superior to action, O Krishna, why then, O Kesava, dost Thou ask me to engage in this terrible action?",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -34,7 +46,7 @@
       "stats": {
         "original_words": 15,
         "translit_words": 15,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "93925e070015d517fbe2b2164d6ca343"
     }
@@ -49,16 +61,28 @@
     "meaning": "3.2 With this apparently perplexing speech, Thou confusest, as it were, my understanding; therefore tell me that one way for certain by which I may attain bliss.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -73,7 +97,7 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "34b54c6afa24fef1c27ed90ebb2ebe63"
     }
@@ -88,16 +112,28 @@
     "meaning": "3.3 The Blessed Lord said  In this world there is a twofold path, as I said before, O sinless one; the path of knowledge of the Sankhyas and the path of action of the Yogins.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -114,7 +150,7 @@
       "stats": {
         "original_words": 14,
         "translit_words": 14,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "c10a3b35aa9fdedb5947e65d48284a80"
     }
@@ -129,16 +165,28 @@
     "meaning": "3.4 Not by non-performance of actions does man reach actionlessness; nor by mere renunciation does he attain to perfection.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -156,7 +204,7 @@
       "stats": {
         "original_words": 10,
         "translit_words": 10,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "7d3e7d3915c94fc650faa8353dba4d56"
     }
@@ -171,16 +219,28 @@
     "meaning": "3.5 Verily none can ever remain for even a moment without performing action; for everyone is made to act helplessly indeed by the alities born of Nature.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -197,7 +257,7 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "781e052ba7320ef9c468ffb1ce7f8adf"
     }
@@ -212,16 +272,28 @@
     "meaning": "3.6 He who, restraining the organs of action, sits thinking of the sense-objects in mind, he of deluded understanding is called a hypocrite.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -235,7 +307,7 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "71c8bacf144ade73e5ac192d5863bbe3"
     }
@@ -250,16 +322,28 @@
     "meaning": "3.7 But whosoever, controlling the senses by the mind, O Arjuna, engages himself in Karma Yoga with the organs of action, without attachment, he excels.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -273,7 +357,7 @@
       "stats": {
         "original_words": 9,
         "translit_words": 9,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "7d03d9766bc95a53e31ee265318f7bad"
     }
@@ -288,16 +372,28 @@
     "meaning": "3.8 Do thou perform (thy) bounden duty, for action is superior to inaction and even the maintenance of the body would not be possible for thee by inaction.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -314,7 +410,7 @@
       "stats": {
         "original_words": 14,
         "translit_words": 14,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "14071012fd3d48beb57575a59e597f73"
     }
@@ -329,16 +425,28 @@
     "meaning": "3.9 The world is bound by actions other than those performed for the sake of sacrifice; do thou, therefore, O son of Kunti (Arjuna), perform action for that sake (for sacrifice alone), free from attachment.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -352,7 +460,7 @@
       "stats": {
         "original_words": 10,
         "translit_words": 10,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "c4cb1faefb5a3a31f9ffc32dde08fd16"
     }
@@ -367,16 +475,28 @@
     "meaning": "3.10 The Creator, having in the beginning (of creation) created mankind together with sacrifice, said, \"By this shall ye propagate; let this be the milch cow of your desires (the cow which yields all the desired objects).\"",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -391,7 +511,7 @@
       "stats": {
         "original_words": 10,
         "translit_words": 10,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "3c4b4ee30ae1f7ac03fb51d0ca277fb4"
     }
@@ -406,16 +526,28 @@
     "meaning": "3.11 With this do ye nourish the gods and may those gods nourish you; thus nourishing one another, ye shall attain to the highest good.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -430,7 +562,7 @@
       "stats": {
         "original_words": 11,
         "translit_words": 11,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "80c870ef7dbc277a127ce02501eac7cb"
     }
@@ -445,16 +577,28 @@
     "meaning": "3.12 The gods, nourished by the sacrifice, will give you the desired objects. So, he who enjoys the objects given by the gods without offering (in return) to them, is verily a thief.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -471,7 +615,7 @@
       "stats": {
         "original_words": 13,
         "translit_words": 13,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "ae71ed64d27e8ed473270b898c426d01"
     }
@@ -486,16 +630,28 @@
     "meaning": "3.13 The righteous who eat the remnants of the sacrifice are freed from all sins; but those sinful ones who cook food (only) for their own sake verily eat sin.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -510,7 +666,7 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "94e38a9bb1bb954f1b8979bf675fc687"
     }
@@ -525,16 +681,28 @@
     "meaning": "3.14 From food come forth beings; from rain food is produced; from sacrifice arises rain and sacrifice is born of action.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -549,7 +717,7 @@
       "stats": {
         "original_words": 9,
         "translit_words": 9,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "17cbb3270733ae33072029357ec3cd12"
     }
@@ -564,16 +732,28 @@
     "meaning": "3.15 Know thou that action comes from Brahma and Brahma comes from the Imperishable. Therefore, the all-pervading (Brahma) ever rests in sacrifice.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -587,7 +767,7 @@
       "stats": {
         "original_words": 11,
         "translit_words": 11,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "e3294b515d10e962b0ef52452042d167"
     }
@@ -602,16 +782,28 @@
     "meaning": "3.16 He who does not follow here the wheel thus set revolving, who is of sinful life, rejoicing in the senses, he lives in vain, O Arjuna.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -628,7 +820,7 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "1dcf51641a91bd3796c9e44b11f7b691"
     }
@@ -643,16 +835,28 @@
     "meaning": "3.17 But for that man who rejoices only in the Self, who is satisfied with the Self and who is content in the Self alone, verily there is nothing to do.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -668,7 +872,7 @@
       "stats": {
         "original_words": 11,
         "translit_words": 11,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "32ea9293f501e9ec4a4869e4e8cb4a3a"
     }
@@ -683,16 +887,28 @@
     "meaning": "3.18 For him there is no interest whatever in what is done or what is not done; nor does he depend on any being for any object.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -708,7 +924,7 @@
       "stats": {
         "original_words": 11,
         "translit_words": 11,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "3b90c702536b1b563bdd4d4236ad346a"
     }
@@ -723,16 +939,28 @@
     "meaning": "3.19 Therefore without attachment, do thou always perform action which should be done; for by performing action without attachment man reaches the Supreme.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -749,7 +977,7 @@
       "stats": {
         "original_words": 11,
         "translit_words": 11,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "35cd4b0bf97b90baa75bd73e225b0df8"
     }
@@ -764,16 +992,28 @@
     "meaning": "3.20 Janaka and others attained perfection verily by action only; even with a view to the protection of the masses thou shouldst perform action.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -791,7 +1031,7 @@
       "stats": {
         "original_words": 8,
         "translit_words": 8,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "8139f43770e022d5abd0f6f036888f42"
     }
@@ -806,16 +1046,28 @@
     "meaning": "3.21 Whatsoever a great man does, that the other men also do; whatever he sets up as the standard, that the world (mankind) follows.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -831,7 +1083,7 @@
       "stats": {
         "original_words": 9,
         "translit_words": 9,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "b10db42830bce3e7c522f310a766cb97"
     }
@@ -846,16 +1098,28 @@
     "meaning": "3.22 There is nothing in the three worlds, O Arjuna, that should be done by Me, nor is there anything unattained that should be attained; yet I engage Myself in action.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -872,7 +1136,7 @@
       "stats": {
         "original_words": 14,
         "translit_words": 14,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "5edf3e2a8ae946aabef016d8373f5c3b"
     }
@@ -887,16 +1151,28 @@
     "meaning": "3.23 For, should I not ever engage Myself in action, unwearied, men would in every way follow My path, O Arjuna.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -912,7 +1188,7 @@
       "stats": {
         "original_words": 13,
         "translit_words": 13,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "ac225650824c58dffe40a5f92aa8335b"
     }
@@ -927,16 +1203,28 @@
     "meaning": "3.24 These worlds would perish if I did not perform action; I should be the author of confusion of castes and destruction of these beings.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -953,7 +1241,7 @@
       "stats": {
         "original_words": 13,
         "translit_words": 13,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "31e039f064ec27cc16066466050ee494"
     }
@@ -968,16 +1256,28 @@
     "meaning": "3.25 As the ignorant men act from attachment to action, O Bharata (Arjuna), so should the wise act without attachment, wishing the welfare of the world.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -994,7 +1294,7 @@
       "stats": {
         "original_words": 8,
         "translit_words": 8,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "5faa86f05af074f02c1f358a5c7e684a"
     }
@@ -1009,16 +1309,28 @@
     "meaning": "3.26 Let no wise man unsettle the mind of ignorant people who are attached to action; he should engage them in all actions, himself fulfilling them with devotion.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -1032,7 +1344,7 @@
       "stats": {
         "original_words": 9,
         "translit_words": 9,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "5aafc092a7e765b69673b588dbad9563"
     }
@@ -1047,16 +1359,28 @@
     "meaning": "3.27 All actions are wrought in all cases by the alities of Nature only. He whose mind is deluded by egoism thinks, \"I am the doer.\"",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -1071,7 +1395,7 @@
       "stats": {
         "original_words": 10,
         "translit_words": 10,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "c57b5bcf12db54e491bed1a09bd074a1"
     }
@@ -1086,16 +1410,28 @@
     "meaning": "3.28 But he who knows the Truth, O mighty-armed (Arjuna), about the divisions of the alities and (their) functions, knowing that the Gunas as senses move amidst the Gunas as the sense-objects, is not attached.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -1110,7 +1446,7 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "83af74571243e07e09a008b68221321d"
     }
@@ -1125,16 +1461,28 @@
     "meaning": "3.29 Those deluded by the alities of Nature are attached to the functions of the alities. The man of perfect knowledge should not unsettle the foolish one who is of imperfect knowledge.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -1150,7 +1498,7 @@
       "stats": {
         "original_words": 8,
         "translit_words": 8,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "c2c997fa4d66c2bd9348fcec539cd480"
     }
@@ -1165,16 +1513,28 @@
     "meaning": "3.30 Renouncing all actions in Me, with the mind centred in the Self, free from hope and egoism, and from (mental) fever, do thou fight.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -1192,7 +1552,7 @@
       "stats": {
         "original_words": 10,
         "translit_words": 10,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "76984d44823dc24a2664d082f97f4233"
     }
@@ -1207,16 +1567,28 @@
     "meaning": "3.31 Those men who constantly practise this teaching of Mine with faith and without cavilling, they too are freed from actions.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -1231,7 +1603,7 @@
       "stats": {
         "original_words": 11,
         "translit_words": 11,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "ab861890849388ce0858615a38336cd1"
     }
@@ -1246,16 +1618,28 @@
     "meaning": "3.32 But those who carp at My teaching and do not practise it, deluded of all knowledge, and devoid of discrimination, know them to be doomed to destruction.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -1270,7 +1654,7 @@
       "stats": {
         "original_words": 9,
         "translit_words": 9,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "a6cf775cc26738e557feaf101e796821"
     }
@@ -1285,16 +1669,28 @@
     "meaning": "3.33 Even a wise man acts in accordance with his own nature; beings will follow Nature; what can \nrestraint do?",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -1308,7 +1704,7 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "632f9bfb9affc050fe89a4a6bbe17629"
     }
@@ -1323,16 +1719,28 @@
     "meaning": "3.34 Attachment and aversion for the objects of the senses abide in the senses; let none come under their sway; for, they are his foes.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -1350,7 +1758,7 @@
       "stats": {
         "original_words": 9,
         "translit_words": 9,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "f373c44c1b768930429f1c691db6f8d8"
     }
@@ -1365,16 +1773,28 @@
     "meaning": "3.35 Better is one's own duty, though devoid of merit than the duty of another well discharged. Better is death in one's own duty; the duty of another is fraught with fear (is productive of danger).",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -1389,7 +1809,7 @@
       "stats": {
         "original_words": 10,
         "translit_words": 10,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "028775b3187f3d8acbd43fae712aff53"
     }
@@ -1404,16 +1824,28 @@
     "meaning": "3.36 Arjuna said  But impelled by what does man commit sin, though against his wishes, O Varshneya (Krishna), constrained as it were, by force?",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -1430,7 +1862,7 @@
       "stats": {
         "original_words": 15,
         "translit_words": 15,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "8a7c52564d6759bef9bb8ec42eea40e9"
     }
@@ -1445,16 +1877,28 @@
     "meaning": "3.37 The Blessed Lord said  It is desire, it is anger both of the ality of Rajas, all-devouring, all-sinful; know this as the foe here (in this world).",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -1471,7 +1915,7 @@
       "stats": {
         "original_words": 13,
         "translit_words": 13,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "e24bb5c5d29db752d2fba33d12ff7d67"
     }
@@ -1486,16 +1930,28 @@
     "meaning": "3.38 As fire is enveloped by smoke, as a mirror by dust, and as an embryo by the amnion, so is this enveloped by that.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -1507,7 +1963,7 @@
       "stats": {
         "original_words": 9,
         "translit_words": 9,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "281f6074b2122091dccf1d693afa1908"
     }
@@ -1522,16 +1978,28 @@
     "meaning": "3.39 O Arjuna, wisdom is enveloped by this constant enemy of the wise in the form of desire, which is unappeasable as fire.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -1547,7 +2015,7 @@
       "stats": {
         "original_words": 10,
         "translit_words": 10,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "71c56ecd0328adece7bdeaa5344237a5"
     }
@@ -1562,16 +2030,28 @@
     "meaning": "3.40 The senses, the mind and the intellect are said to be its seat; through these it deludes the embodied by veiling his wisdom.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -1585,7 +2065,7 @@
       "stats": {
         "original_words": 8,
         "translit_words": 8,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "86d6b79a955584fd6c8a38f9d5c0ad8b"
     }
@@ -1600,16 +2080,28 @@
     "meaning": "3.41 Therefore, O best of the Bharatas (Arjuna), controlling the senses first, do thou kill this sinful thing, the destroyer of knowledge and realisation.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -1624,7 +2116,7 @@
       "stats": {
         "original_words": 9,
         "translit_words": 9,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "8d38882d85511fa212c36beb4199fd88"
     }
@@ -1639,16 +2131,28 @@
     "meaning": "3.42 They say that the senses are superior (to the body); superior to the senses is the mind; superior to the mind is the intellect; one who is superior even to the intellect is He (the Self).",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -1662,7 +2166,7 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "826ee8007281cb801e21cdd8012f1cc9"
     }
@@ -1677,16 +2181,28 @@
     "meaning": "3.43 Thus knowing Him Who is superior to the intellect and restraining the self by the Self, slay thou, O mighty-armed Arjuna, the enemy in the form of desire, hard to coner.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -1703,7 +2219,7 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "ea9a54995f9cec219ada16ba155b780a"
     }

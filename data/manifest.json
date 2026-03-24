@@ -1,12 +1,20 @@
 {
-  "version": "1.1",
+  "version": "1.2",
   "last_audit": "2026-03-24",
   "books": [
     {
       "slug": "bhagavad-gita",
       "total_chapters": 18,
       "total_verses": 701,
-      "topics_count": 0,
+      "languages": [
+        "en",
+        "hi",
+        "mr"
+      ],
+      "authors": [
+        "dnyaneshwari",
+        "iskcon"
+      ],
       "completeness": 100.0,
       "shards": [
         {
@@ -87,7 +95,14 @@
       "slug": "bhagavata-purana",
       "total_chapters": 12,
       "total_verses": 14,
-      "topics_count": 0,
+      "languages": [
+        "en"
+      ],
+      "authors": [
+        "dnyaneshwari-en",
+        "iskcon-en",
+        "vyasa"
+      ],
       "completeness": 21.43,
       "shards": [
         {
@@ -144,7 +159,13 @@
       "slug": "garuda-purana",
       "total_chapters": 2,
       "total_verses": 2,
-      "topics_count": 0,
+      "languages": [
+        "en"
+      ],
+      "authors": [
+        "dnyaneshwari-en",
+        "iskcon-en"
+      ],
       "completeness": 0.0,
       "shards": [
         {
@@ -161,7 +182,14 @@
       "slug": "isha-upanishad",
       "total_chapters": 1,
       "total_verses": 10,
-      "topics_count": 0,
+      "languages": [
+        "en"
+      ],
+      "authors": [
+        "dnyaneshwari-en",
+        "isa",
+        "iskcon-en"
+      ],
       "completeness": 100.0,
       "shards": [
         {
@@ -174,7 +202,13 @@
       "slug": "kena-upanishad",
       "total_chapters": 1,
       "total_verses": 1,
-      "topics_count": 0,
+      "languages": [
+        "en"
+      ],
+      "authors": [
+        "dnyaneshwari-en",
+        "iskcon-en"
+      ],
       "completeness": 0.0,
       "shards": [
         {
@@ -187,7 +221,14 @@
       "slug": "mahabharata",
       "total_chapters": 19,
       "total_verses": 38430,
-      "topics_count": 0,
+      "languages": [
+        "en"
+      ],
+      "authors": [
+        "dnyaneshwari-en",
+        "iskcon-en",
+        "kmg"
+      ],
       "completeness": 0.0,
       "shards": [
         {
@@ -272,7 +313,13 @@
       "slug": "samskaras",
       "total_chapters": 1,
       "total_verses": 3,
-      "topics_count": 0,
+      "languages": [
+        "en"
+      ],
+      "authors": [
+        "dnyaneshwari-en",
+        "iskcon-en"
+      ],
       "completeness": 66.67,
       "shards": [
         {
@@ -285,7 +332,13 @@
       "slug": "vishnu-purana",
       "total_chapters": 6,
       "total_verses": 6,
-      "topics_count": 0,
+      "languages": [
+        "en"
+      ],
+      "authors": [
+        "dnyaneshwari-en",
+        "iskcon-en"
+      ],
       "completeness": 100.0,
       "shards": [
         {
@@ -318,7 +371,14 @@
       "slug": "yoga-sutras",
       "total_chapters": 1,
       "total_verses": 9,
-      "topics_count": 0,
+      "languages": [
+        "en"
+      ],
+      "authors": [
+        "dnyaneshwari-en",
+        "iskcon-en",
+        "patanjali"
+      ],
       "completeness": 100.0,
       "shards": [
         {

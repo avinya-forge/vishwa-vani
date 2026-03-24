@@ -9,16 +9,28 @@
     "meaning": "17.1 Arjuna said  Those who, setting aside the ordinances of the scriptures, perform sacrifice with faith, what is their condition, O Krishna? Is is Sattva, Rajas or Tamas?",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -33,7 +45,7 @@
       "stats": {
         "original_words": 16,
         "translit_words": 16,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "78d389e9f53a37570437988b8c61b88d"
     }
@@ -48,16 +60,28 @@
     "meaning": "17.2 The Blessed Lord said  Threefold is the faith of the embodied, which is inherent in their nature  the Sattvic (pure), the Rajasic (passionate) and the Tamasic (dark). Do thou hear of it.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -72,7 +96,7 @@
       "stats": {
         "original_words": 17,
         "translit_words": 17,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "3c740b902d98051e2840cb200561285f"
     }
@@ -87,16 +111,28 @@
     "meaning": "17.3 The faith of each is in accordance with his nature, O Arjuna. The man consists of his faith; as a man's faith is, so is he.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -111,7 +147,7 @@
       "stats": {
         "original_words": 14,
         "translit_words": 14,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "ac5b867284a237deee138463d9b5d541"
     }
@@ -126,16 +162,28 @@
     "meaning": "17.4 The Sattvic or the pure men worship the gods; the Rajasic or the passionate worship the Yakshas and the Rakshasas; the others (the Tamasic or the deluded people) worship the ghosts and the hosts of the nature-spirits.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -150,7 +198,7 @@
       "stats": {
         "original_words": 10,
         "translit_words": 10,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "a13aa51f11ce49f31e2bdd54116127ed"
     }
@@ -165,16 +213,28 @@
     "meaning": "17.5 Those men who practise terrific austerities not enjoined by the scriptures, given to hypocrisy and egoism, impelled by the force of lust and attachment.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -188,7 +248,7 @@
       "stats": {
         "original_words": 10,
         "translit_words": 10,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "e07b4f5866a0a41fa78d4ee9a5523fdf"
     }
@@ -203,16 +263,28 @@
     "meaning": "17.6 Senseless, torturing all the elements in the body and Me also, Who dwell in the body,  know thou these to be of demonical resolves.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -226,7 +298,7 @@
       "stats": {
         "original_words": 8,
         "translit_words": 8,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "52c8789e989e29ea18b8d466db8bfc6e"
     }
@@ -241,16 +313,28 @@
     "meaning": "17.7 The food also which is dear to each is threefold, as also sacrifice, austerity and almsgiving. Hear thou the distinction of these.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -264,7 +348,7 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "6e627a873661cef06ae5522f40a8244b"
     }
@@ -279,16 +363,28 @@
     "meaning": "17.8 The foods which increase life, purity, strength, health, joy and cheerfulness (good appetite), which are savoury and oleaginous, substantial and agreeable, are dear to the Sattvic (pure) people.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -301,7 +397,7 @@
       "stats": {
         "original_words": 9,
         "translit_words": 9,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "f1fba2bc5efd5f51d28520ffe7c374cc"
     }
@@ -316,16 +412,28 @@
     "meaning": "17.9 The foods that are bitter, sour, saline, excessively hot, pungent, dry and burning, are liked by the Rajasic and are productive of pain, grief and disease.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -337,7 +445,7 @@
       "stats": {
         "original_words": 6,
         "translit_words": 6,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "69dddf9ce553869cb3a1e9e2c3ef7442"
     }
@@ -352,16 +460,28 @@
     "meaning": "17.10 That which is state, tasteless, putrid, rotten, refuse and impure, is the food liked by the Tamasic.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -373,7 +493,7 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "a5bbf21ad96dd31aaa2ba348d6a96fe9"
     }
@@ -388,16 +508,28 @@
     "meaning": "17.11 That sacrifice which is offered by men without desire for reward as enjoined by the ordinance (scripture), with a firm faith that to do so is a duty, is Sattvic or pure.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -412,7 +544,7 @@
       "stats": {
         "original_words": 11,
         "translit_words": 11,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "5a5b56276a311d517dd2b0ca928f0a5b"
     }
@@ -427,16 +559,28 @@
     "meaning": "17.12 The sacrifice which is offered, O Arjuna, seeking a reward and for ostentation, know thou that to be a Rajasic Yajna.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -450,7 +594,7 @@
       "stats": {
         "original_words": 14,
         "translit_words": 14,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "58806443654693ed48c68d4cc45e18e8"
     }
@@ -465,16 +609,28 @@
     "meaning": "17.13 They declare that sacrifice to be Tamasic which is contrary to the ordinances of the scriptures, in which no food is distributed, which is devoid of Mantras, gifts and faith.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -486,7 +642,7 @@
       "stats": {
         "original_words": 8,
         "translit_words": 8,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "407e29e828c6882b318870f68c53961a"
     }
@@ -501,16 +657,28 @@
     "meaning": "17.14 Worship of the gods, the twice-born, the teachers and the wise, purity, straightforwardness, celibacy and non-injury are called the austerities of the body.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -527,7 +695,7 @@
       "stats": {
         "original_words": 9,
         "translit_words": 9,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "cd65985905c82ee1990a13ac8d9ba203"
     }
@@ -542,16 +710,28 @@
     "meaning": "17.15 Speech which causes no excitement, truthful, pleasant and beneficial, the practice of the study of the Vedas, are called austerity of speech.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -567,7 +747,7 @@
       "stats": {
         "original_words": 13,
         "translit_words": 13,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "f5c618899cc97b2e95bd12d295b33692"
     }
@@ -582,16 +762,28 @@
     "meaning": "17.16 Serenity of mind, good-heartedness, self-control, purity of nature  this is called mental austerity.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -606,7 +798,7 @@
       "stats": {
         "original_words": 8,
         "translit_words": 8,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "df1cf0dde67cdbf82b6b7a433dc5941d"
     }
@@ -621,16 +813,28 @@
     "meaning": "17.17 This threefold austerity, practised by steadfast men, with the utmost faith, desiring no reward, they call Sattvic.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -645,7 +849,7 @@
       "stats": {
         "original_words": 10,
         "translit_words": 10,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "912beb8179e5b5f19cb85d75a38502e4"
     }
@@ -660,16 +864,28 @@
     "meaning": "17.18 The austerity which is practised with the object of gaining good reception, honour and worship, and with hypocrisy, is here said to be Rajasic, unstable and transitory.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -683,7 +899,7 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "a0111da423bad9559bfb5c23596adfdd"
     }
@@ -698,16 +914,28 @@
     "meaning": "17.19 That austerity which is practised out of a foolish notion, with self-torture, or for the purpose of destroying another, is declared to be Tamasic.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -720,7 +948,7 @@
       "stats": {
         "original_words": 9,
         "translit_words": 9,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "6006175ba486f7788c1ced625d22377c"
     }
@@ -735,16 +963,28 @@
     "meaning": "17.20 That gift which is given to one who does nothing in return, knowing it to be a duty to give in a fit place and time to a worthy person, that gift is held to be Sattvic.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -759,7 +999,7 @@
       "stats": {
         "original_words": 13,
         "translit_words": 13,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "01cb14b98296fa43d045b19bb7f7543b"
     }
@@ -774,16 +1014,28 @@
     "meaning": "17.21 And, that gift which is given with a view to receive something in return, or looking for a reward, or reluctantly, is held to be Rajasic.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -796,7 +1048,7 @@
       "stats": {
         "original_words": 13,
         "translit_words": 13,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "9445c8051fae9908ed5f00b73c94ec06"
     }
@@ -811,16 +1063,28 @@
     "meaning": "17.22 The gift that is given at a wrong place and time, to unworthy persons, without respect or with insult is declared to be Tamasic.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -832,7 +1096,7 @@
       "stats": {
         "original_words": 7,
         "translit_words": 7,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "8c8da7bee853ba753d0c89ae64e7ca0e"
     }
@@ -847,16 +1111,28 @@
     "meaning": "17.23 \"Om Tat Sat\": This has been declared to be the triple designation of Brahman. By that were created formerly, the Brahmanas, the Vedas and the sacrifices.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -873,7 +1149,7 @@
       "stats": {
         "original_words": 11,
         "translit_words": 11,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "fa84065e7fdcb76762832940a9ee1434"
     }
@@ -888,16 +1164,28 @@
     "meaning": "17.24 Therefore, with the utterance of \"Om\" are the acts of sacrifice, gift and austerity as enjoined in the scriptures, always begun by the students of Brahman.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -912,7 +1200,7 @@
       "stats": {
         "original_words": 8,
         "translit_words": 8,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "176e800c5cf9aef680991a282c18bf01"
     }
@@ -927,16 +1215,28 @@
     "meaning": "17.25 Uttering ï1Tatï1, without aiming at the fruits, are the acts of sacrifice and austerity and the various acts of gifts performed by the seekers of liberation.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -951,7 +1251,7 @@
       "stats": {
         "original_words": 9,
         "translit_words": 9,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "23645e5c0602202c3c6fed5b8155aade"
     }
@@ -966,16 +1266,28 @@
     "meaning": "17.26 The word ï1Satï1 is used in the sense of reality and of goodness; and so also, O Arjuna, the word ï1Satï1 is used in the sense of an auspicious act.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -990,7 +1302,7 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "94954eff9d997279f121967d875ada44"
     }
@@ -1005,16 +1317,28 @@
     "meaning": "17.27 Steadfastness in sacrifice, austerity and gift, is also called 'Sat' and also action in connection with these (or for the sake of the Supreme) is called 'Sat'.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -1029,7 +1353,7 @@
       "stats": {
         "original_words": 13,
         "translit_words": 13,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "a371061c62f5260cbbfc0c99f9ff72ae"
     }
@@ -1044,16 +1368,28 @@
     "meaning": "17.28 Whatever is sacrificed, given or performed, and whatever austerity is practised without faith, it is called 'Asat', O Arjuna; it is naught here or hereafter (after death).",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -1069,7 +1405,7 @@
       "stats": {
         "original_words": 16,
         "translit_words": 16,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "63751adfa7ed1c1a0b8feaeab1816901"
     }

@@ -9,16 +9,28 @@
     "meaning": "14.1 The Blessed Lord said  I will again declare (to thee) that supreme knowledge, the best of all knowledge, having known which all the sages have gone to the supreme perfection after this life.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -34,7 +46,7 @@
       "stats": {
         "original_words": 15,
         "translit_words": 15,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "e312df1ccc2b42889a9c36b635d937c7"
     }
@@ -49,16 +61,28 @@
     "meaning": "14.2 They who, having taken refuge in this knowledge, have attained to unity with Me, are neither born at the time of creation nor are they disturbed at the time of dissolution.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -74,7 +98,7 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "c52f21a8c5d7cd7148d1f7d754608495"
     }
@@ -89,16 +113,28 @@
     "meaning": "14.3 My womb is the great Brahma; in that I place the germ; thence, O Arjuna, is the birth of all beings.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -113,7 +149,7 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "af1697dadd9121cb0d8172f95d1053c5"
     }
@@ -128,16 +164,28 @@
     "meaning": "14.4 Whatever forms are produced, O Arjuna, in any womb whatsoever, the great Brahma is their womb and I am the seed-giving father.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -151,7 +199,7 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "da9b0b543a44eb5080fed5f7ff299ec5"
     }
@@ -166,16 +214,28 @@
     "meaning": "14.5 Purity, passion and inertia  these alities, O Arjuna, born of Nature, bind fast in the body, the embodied, the indestructible.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -189,7 +249,7 @@
       "stats": {
         "original_words": 11,
         "translit_words": 11,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "90585acabc862b4c34c4ed8217d70fbf"
     }
@@ -204,16 +264,28 @@
     "meaning": "14.6 Of these, Sattva, which from its stainlessness is luminous and healthy, binds by attachment to happiness and by attachment to knowledge, O sinless one.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -230,7 +302,7 @@
       "stats": {
         "original_words": 9,
         "translit_words": 9,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "8d9ae134c13e0facb79b84fbfcfb608f"
     }
@@ -245,16 +317,28 @@
     "meaning": "14.7 Know thou Rajas to be of the nature of passion, the source of thirst (for sensual enjoyment) and attachment; it binds fast, O Arjuna, the embodied one by attachment to action.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -270,7 +354,7 @@
       "stats": {
         "original_words": 10,
         "translit_words": 10,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "72c539525ee6c0efa5376a2235a078de"
     }
@@ -285,16 +369,28 @@
     "meaning": "14.8 But know thou Tamas to be born of ignorance, deluding all embodied beings; it binds fast, O Arjuna, by heedlessness, indolence and sleep.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -309,7 +405,7 @@
       "stats": {
         "original_words": 8,
         "translit_words": 8,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "dce81653ab9387d8945c5fc3e0d64703"
     }
@@ -324,16 +420,28 @@
     "meaning": "14.9 Sattva attaches to happiness, Rajas to action, O Arjuna, while Tamas verily shrouding knowledge attaches to heedlessness.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -346,7 +454,7 @@
       "stats": {
         "original_words": 13,
         "translit_words": 13,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "538cd63c65560a3b281b64a42c54e83a"
     }
@@ -361,16 +469,28 @@
     "meaning": "14.10 Now Sattva arises (prevails), O Arjuna, having overpowered Rajas and Tamas; nor Rajas, having overpowered Sattva and Tamas; and now Tamas, having overpowered Sattva and Rajas.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -385,7 +505,7 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "568fbe9dac46c400360901ca20b45876"
     }
@@ -400,16 +520,28 @@
     "meaning": "14.11 When through every gate (sense) in this body, the wisdom-light shines, then it may be known that Sattva is predominant.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -423,7 +555,7 @@
       "stats": {
         "original_words": 10,
         "translit_words": 10,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "35690177e5ca1d72c44b750be57da47a"
     }
@@ -438,16 +570,28 @@
     "meaning": "14.12 Greed, activity, the undertaking of actions, restlessness, longing  these arise when Rajas is predominant, O Arjuna.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -463,7 +607,7 @@
       "stats": {
         "original_words": 10,
         "translit_words": 10,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "4b529704a0e680ad56a1bdc8e23fc053"
     }
@@ -478,16 +622,28 @@
     "meaning": "14.13 Darkness, inertness, heedlessness and delusion  these arise when Tamas is predominant, O Arjuna.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -502,7 +658,7 @@
       "stats": {
         "original_words": 11,
         "translit_words": 11,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "a71b3694b4d4354140089a6a4442af99"
     }
@@ -517,16 +673,28 @@
     "meaning": "14.14 If the embodied one meets with death when Sattva is predominant, then he attains to the spotless worlds of the knowers of the Highest.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -539,7 +707,7 @@
       "stats": {
         "original_words": 11,
         "translit_words": 11,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "e43a2852ca3096280a27b0f9835cbc48"
     }
@@ -554,16 +722,28 @@
     "meaning": "14.15 Meeting death in Rajas, he is born among those who are attached to action; and dying in Tamas, he is born in the womb of the senseless.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -575,7 +755,7 @@
       "stats": {
         "original_words": 11,
         "translit_words": 11,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "826de0d1791b71c24f00a87902d2e631"
     }
@@ -590,16 +770,28 @@
     "meaning": "14.16 The fruit of good action, they say, is Sattvic and pure, verily the fruit of Rajas is pain, and ignorance is the fruit of Tamas.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -616,7 +808,7 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "346cab5051d2776f0d410c893fd430d8"
     }
@@ -631,16 +823,28 @@
     "meaning": "14.17 From Sattva arises knowledge, and greed from Rajas; heedlessness and delusion arise from Tamas, and also ignorance.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -654,7 +858,7 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "8c121eb31b5f4630b439b29c34d80481"
     }
@@ -669,16 +873,28 @@
     "meaning": "14.18 Those who are seated in Sattva go upwards; the Rajasic dwell in the middle; and the Tamasic, abiding in the function of the lowest Guna, go downwards.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -694,7 +910,7 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "493e1fa897ffd1f4b01808af89370601"
     }
@@ -709,16 +925,28 @@
     "meaning": "14.19 When the seer beholds no agent other than the Gunas and knows That which is higher than they, he attains to My Being.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -732,7 +960,7 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "1489d7cf3cd160d563c614f27cf7cd79"
     }
@@ -747,16 +975,28 @@
     "meaning": "14.20 The embodied one having crossed beyond these three Gunas out of which the body is evolved, is freed from birth, death, decay and pain, and attains to immortality.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -771,7 +1011,7 @@
       "stats": {
         "original_words": 6,
         "translit_words": 6,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "35865eac00429ff9b03ebaefcae4b04a"
     }
@@ -786,16 +1026,28 @@
     "meaning": "14.21 Arjuna said  What are the marks of him who has transcended the three alities, O Lord? What is his conduct and how does he go beyond these three alities?",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -807,7 +1059,7 @@
       "stats": {
         "original_words": 11,
         "translit_words": 11,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "f4c2cb4e8f2057f8e546b18ae5f19c39"
     }
@@ -822,16 +1074,28 @@
     "meaning": "14.22 The Blessed Lord said  When light, activity and delusion are present, he hates them not, nor does he long for them when they are absent.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -846,7 +1110,7 @@
       "stats": {
         "original_words": 17,
         "translit_words": 17,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "faa87e84a8ddbb740752a91abcf4c30d"
     }
@@ -861,16 +1125,28 @@
     "meaning": "14.23 He who, seated like one unconcerned, is not moved by the alities, and who, knowing that the alities are active, is self-centred and moves not.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -886,7 +1162,7 @@
       "stats": {
         "original_words": 11,
         "translit_words": 11,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "e8292e79a28615f8583c986eaee030c1"
     }
@@ -901,16 +1177,28 @@
     "meaning": "14.24 Who is the same in pleasure and pain, who dwells in the Self, to whom a clod of earth, stone and gold are alike, who is the same to the dear and the unfriendly, who is firm, and to whom censure and praise are as one.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -927,7 +1215,7 @@
       "stats": {
         "original_words": 7,
         "translit_words": 7,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "dc3886680cde724b450d93dfc11d05d6"
     }
@@ -942,16 +1230,28 @@
     "meaning": "14.25 Who is the same in honour and dishonour, the same to friend and foe, abandoning all undertakings  he is said to have transcended the alities.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -968,7 +1268,7 @@
       "stats": {
         "original_words": 8,
         "translit_words": 8,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "0824afdbddf202a486ae549320ada61d"
     }
@@ -983,16 +1283,28 @@
     "meaning": "14.26 And he who serves Me with unswerving devotion, he, crossing beyond the alities, is fit for becoming Brahman.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -1009,7 +1321,7 @@
       "stats": {
         "original_words": 10,
         "translit_words": 10,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "15ea0d64659eb07b45fa4b2df81bed40"
     }
@@ -1024,16 +1336,28 @@
     "meaning": "14.27 For I am the abode of Brahman, the immortal and the immutable, of everlasting Dharma and of absolute bliss.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -1050,7 +1374,7 @@
       "stats": {
         "original_words": 11,
         "translit_words": 11,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "cb1b3f0fb38eff0ee771510f67b4dec6"
     }

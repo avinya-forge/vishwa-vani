@@ -9,16 +9,28 @@
     "meaning": "12.1 Arjuna said  Those devotees who, ever steadfast, thus worship Thee and those also who worship the imperishable and the unmanifested  which of them are better versed in Yoga?",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -35,7 +47,7 @@
       "stats": {
         "original_words": 15,
         "translit_words": 15,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "e87a783a48561a7d7c52725eb5d39224"
     }
@@ -50,16 +62,28 @@
     "meaning": "12.2 The Blessed Lord said  Those who, fixing their mind on Me, worship Me, ever steadfast and endowed with supreme faith, are the best in Yoga in My opinion.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -73,7 +97,7 @@
       "stats": {
         "original_words": 16,
         "translit_words": 16,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "1507c26632bb91ed6ed34cf213837275"
     }
@@ -88,16 +112,28 @@
     "meaning": "Swami Sivananda did not comment on this sloka",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -111,7 +147,7 @@
       "stats": {
         "original_words": 7,
         "translit_words": 7,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "b78f70d5e99cb362d01521a893a89aef"
     }
@@ -126,16 +162,28 @@
     "meaning": "12.4 Having restrained all the senses, even-minded everywhere, intent on the welfare of all beings  verily they also come unto Me.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -151,7 +199,7 @@
       "stats": {
         "original_words": 10,
         "translit_words": 10,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "3d0ae31f5a6f2a8b5a897ac3c79dcf01"
     }
@@ -166,16 +214,28 @@
     "meaning": "12.5 Greater is their trouble whose minds are set on the unmanifested; for the goal; the unmanifested, is very hard for the embodied to reach.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -191,7 +251,7 @@
       "stats": {
         "original_words": 7,
         "translit_words": 7,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "1a8b44a020a7c786aa095434cd285234"
     }
@@ -206,16 +266,28 @@
     "meaning": "12.6 But to those who worship Me, renouncing all actions in Me, regarding Me as the supreme gaol, meditating on Me with single-minded Yoga.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -232,7 +304,7 @@
       "stats": {
         "original_words": 14,
         "translit_words": 14,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "faec6d1076103e2cfaccb5ad11090831"
     }
@@ -247,16 +319,28 @@
     "meaning": "12.7 To those whose minds are set on Me, O Arjuna, verily I become ere long the saviour out of the ocean of Samsara.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -274,7 +358,7 @@
       "stats": {
         "original_words": 8,
         "translit_words": 8,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "06e4418bc139abe3be08580d558f2607"
     }
@@ -289,16 +373,28 @@
     "meaning": "12.8 Fix thy mind in Me only, thy intellect in Me, (then) thou shalt no doubt live in Me alone hereafter.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -312,7 +408,7 @@
       "stats": {
         "original_words": 14,
         "translit_words": 14,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "657f5da620fa41c10fdbaaab7d3d8c66"
     }
@@ -327,16 +423,28 @@
     "meaning": "12.9 If thou art unable to fix thy mind steadily on Me, then by the Yoga of constant practice do thou seek to reach Me, O Arjuna.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -351,7 +459,7 @@
       "stats": {
         "original_words": 13,
         "translit_words": 13,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "8b996db1d176fb399763cfdfbae46508"
     }
@@ -366,16 +474,28 @@
     "meaning": "12.10 If thou art unable to practise even this Abhyasa Yoga, be thou intent on doing actions for My sake; even by doing actions for My sake, thou shalt attain perfection.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -391,7 +511,7 @@
       "stats": {
         "original_words": 8,
         "translit_words": 8,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "ecff85c069c1d3c250fb9305d5cfca0e"
     }
@@ -406,16 +526,28 @@
     "meaning": "12.11 If thou art unable to do even this, then, resorting to union with Me, renounce the fruits of all actions with the self controlled.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -430,7 +562,7 @@
       "stats": {
         "original_words": 9,
         "translit_words": 9,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "2cd7a6d0e737e802a1641e8665e4f6da"
     }
@@ -445,16 +577,28 @@
     "meaning": "12.12 Better indeed is knowledge than practice; than knowledge meditation is better; than meditation the renunciation of the fruits of actions: peace immediately follows renunciation.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -470,7 +614,7 @@
       "stats": {
         "original_words": 7,
         "translit_words": 7,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "d27003c3db308297449380c7ba2c3c71"
     }
@@ -485,16 +629,28 @@
     "meaning": "12.13 He who hates no creature, who is friendly and compassionate to all, who is free from attachment and egoism, balanced in pleasure and pain, and forgiving.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -510,7 +666,7 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "def8ba768ce9286881dfa95646a35dd0"
     }
@@ -525,16 +681,28 @@
     "meaning": "12.14 Ever content, steady in meditation, self-controlled, possessed of firm conviction, with the mind and intellect dedicated to Me, he, My devtoee, is dear to Me.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -550,7 +718,7 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "93a54c38843e88889914a0778b237b3b"
     }
@@ -565,16 +733,28 @@
     "meaning": "12.15 He by whom the world is not agitated and who cannot be agitated by the world, and who is freed from joy, anger, fear and anxiety  he is dear to Me.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -590,7 +770,7 @@
       "stats": {
         "original_words": 13,
         "translit_words": 13,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "0424b600e295b524ac26ff9913eacb1c"
     }
@@ -605,16 +785,28 @@
     "meaning": "12.16 He who is free from wants, pure, expert, unconcerned, and free from pain, renouncing all undertakings or commencements  he who is (thus) devoted to Me, is dear to Me.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -629,7 +821,7 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "50287b2e9e4cfc03feaacfe72d481f99"
     }
@@ -644,16 +836,28 @@
     "meaning": "12.17 He who neither rejoices, nor hates, nor grieves, nor desires, renouncing good and evil, and who is full of devotion, is dear to Me.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -666,7 +870,7 @@
       "stats": {
         "original_words": 16,
         "translit_words": 16,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "c5c3d7a6ae52526d518ca1078c40fa4d"
     }
@@ -681,16 +885,28 @@
     "meaning": "Swami Sivananda did not comment on this sloka",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -704,7 +920,7 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "ddf7ca6f7384e1877212c8f63b570916"
     }
@@ -719,16 +935,28 @@
     "meaning": "12.19 He to whom censure and praise are eal, who is silent, content with anything, homeless, of a steady mind, and full of devotion  that man is dear to Me.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -745,7 +973,7 @@
       "stats": {
         "original_words": 10,
         "translit_words": 10,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "8fa97a224724af91ff001dd6ae6c953b"
     }
@@ -760,16 +988,28 @@
     "meaning": "12.20 They verily who follow this immortal Dharma (law or doctrine) as described above, endowed with faith, regarding Me as their supreme goal, they, the devotees, are exceedingly dear to Me.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -786,7 +1026,7 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "73197861ee937c9a21b240c74da63865"
     }

@@ -9,16 +9,28 @@
     "meaning": "15.1 The Blessed Lord said  They (the wise) speak of the indestructible peepul tree having its root above and branches below, whose leaves are the metres or hymns: he who knows it is a knower of the Vedas.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -36,7 +48,7 @@
       "stats": {
         "original_words": 13,
         "translit_words": 13,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "96c2253ea2901b8d3b3975ea11f50685"
     }
@@ -51,16 +63,28 @@
     "meaning": "15.2 Below and above spread its branches, nourished by the Gunas; sense-objects are its buds; and below, in the world of men, stretch forth the roots, originating action.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -76,7 +100,7 @@
       "stats": {
         "original_words": 11,
         "translit_words": 11,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "0f25a44b153f0a85d50f857f74141f1d"
     }
@@ -91,16 +115,28 @@
     "meaning": "15.3 Its form is not perceived here as such, neither its end nor its origin, nor its foundation nor resting place: having cut asunder this firmly rooted peepul tree with the strong axe of non-attachment.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -116,7 +152,7 @@
       "stats": {
         "original_words": 15,
         "translit_words": 15,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "3a1374e3386ea8199a4d31e4ce966604"
     }
@@ -131,16 +167,28 @@
     "meaning": "15.4 Then That goal should be sought for, whither having gone none returns again. I seek refuge in that Primeval Purusha Whence streamed forth the ancient activity or energy.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -156,7 +204,7 @@
       "stats": {
         "original_words": 18,
         "translit_words": 18,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "5d28361faa6205556a7b58316b723695"
     }
@@ -171,16 +219,28 @@
     "meaning": "15.5 Free from pride and delusion, victorious over the evil of attachment, dwelling constantly in the Self, their desires having completely turned away, freed from the pairs of opposites known as pleasure and pain, the undeluded reach the eternal goal.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -195,7 +255,7 @@
       "stats": {
         "original_words": 11,
         "translit_words": 11,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "87981ba90b67ccc8e181c2f816b83ec7"
     }
@@ -210,16 +270,28 @@
     "meaning": "15.6 Neither doth the sun illumine there nor the moon, nor the fire; having gone thither they return not; that is My supreme abode.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -235,7 +307,7 @@
       "stats": {
         "original_words": 15,
         "translit_words": 15,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "4d7ffd60d02d5db3e4198eb9995fe514"
     }
@@ -250,16 +322,28 @@
     "meaning": "15.7 An eternal portion of Myself having become a living soul in the world of life, draws to (itself) the (five) senses with the mind for the sixth, abiding in Nature.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -274,7 +358,7 @@
       "stats": {
         "original_words": 9,
         "translit_words": 9,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "108e62fca1bf204bd395b05aece6da3f"
     }
@@ -289,16 +373,28 @@
     "meaning": "15.8 When the Lord (as the individual soul) obtains a body and when He leaves it, He takes these and goes (with them) as the wind takes the scents from their seats (flowers, etc.).",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -312,7 +408,7 @@
       "stats": {
         "original_words": 8,
         "translit_words": 8,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "6cf60991260f498ef3ab6613dc3c003a"
     }
@@ -327,16 +423,28 @@
     "meaning": "15.9 Presiding over the ear, the eye, touch, taste and smell, as well as the mind, it enjoys the objects of the senses.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -351,7 +459,7 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "2ba5186ca62c1c759c52d067f4a9ec62"
     }
@@ -366,16 +474,28 @@
     "meaning": "15.10 The deluded do not see Him Who departs, stays and enjoys; but they who possess the eye of knowledge behold Him.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -390,7 +510,7 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "07e1c4eeb62d14349e0752005fcfd1b4"
     }
@@ -405,16 +525,28 @@
     "meaning": "15.11 The Yogins striving (for perfection) behold Him dwelling in the Self; but, the unrefined and unintelligent, even though striving, see Him not.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -431,7 +563,7 @@
       "stats": {
         "original_words": 8,
         "translit_words": 8,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "8775e969e12376c4f8b3e9e365bce108"
     }
@@ -446,16 +578,28 @@
     "meaning": "15.12 That light which residing in the sun illumines the whole world, that which is in the moon and in the fire  know that light to be Mine.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -468,7 +612,7 @@
       "stats": {
         "original_words": 10,
         "translit_words": 10,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "85b780f20dcbf12f198a256fc025d9d8"
     }
@@ -483,16 +627,28 @@
     "meaning": "15.13 Permeating the earth I support all beings by (My) energy; and having become the watery moon I nourish all herbs.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -506,7 +662,7 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "76b6b8014be26489cd87f7cee01100b4"
     }
@@ -521,16 +677,28 @@
     "meaning": "15.14 Having become the fire Vaisvanara, I abide in the body of living beings and, associated with the Prana and the Apana, digest the fourfold food.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -545,7 +713,7 @@
       "stats": {
         "original_words": 10,
         "translit_words": 10,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "2ce12b87aa5449f1807995dff3c6a99a"
     }
@@ -560,16 +728,28 @@
     "meaning": "15.15 And I am seated in the hearts of all; from Me are memory and knowledge, as well as their absence. I am verily That which has to be known by all the Vedas; I am indeed the author of the Vedanta and the knower of the Vedas am I.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -586,7 +766,7 @@
       "stats": {
         "original_words": 13,
         "translit_words": 13,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "8b10fffe58105342f51bd7c3c8181db2"
     }
@@ -601,16 +781,28 @@
     "meaning": "15.16 Two Purushas there are in this world, the perishable and the imperishable. All beings are \nthe perishable and the Kutastha  the unchanging  is called the imperishable.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -625,7 +817,7 @@
       "stats": {
         "original_words": 13,
         "translit_words": 13,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "e8a48f20b83dc748457c8d3d3c7af703"
     }
@@ -640,16 +832,28 @@
     "meaning": "15.17 But distinct is the Supreme Purusha called the highest Self, the indestructible Lord Who, pervading the three worlds, sustains them.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -665,7 +869,7 @@
       "stats": {
         "original_words": 9,
         "translit_words": 9,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "4efea52e670926ac53c0c0bbb323e15c"
     }
@@ -680,16 +884,28 @@
     "meaning": "15.18 As I transcend the perishable and am even higher than the imperishable, I am declared to be the highest Purusha in the world and in the Vedas.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -702,7 +918,7 @@
       "stats": {
         "original_words": 10,
         "translit_words": 9,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "f3078465fe06de118c293b836cf6fe2f"
     }
@@ -717,16 +933,28 @@
     "meaning": "15.19 He who, undeluded, knows Me thus as the highest Purusha, he, knowing all, worships Me with his whole being (heart), O Arjuna.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -741,7 +969,7 @@
       "stats": {
         "original_words": 11,
         "translit_words": 11,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "28ca3f8e6bda538d4cc9f5d45ece5319"
     }
@@ -756,16 +984,28 @@
     "meaning": "15.20 Thus, this most secret science has been taught by Me, O sinless one; on knowing this, a man becomes wise, and all his duties are accomplished, O Arjuna.",
     "layers": [
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: ISKCON Commentary]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER: Dnyaneshwari English Translation]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_ISKCON-EN]"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_FROM_DNYANESHWARI-EN]"
       }
     ],
     "ai_metadata": {
@@ -782,7 +1022,7 @@
       "stats": {
         "original_words": 9,
         "translit_words": 9,
-        "layers_count": 2
+        "layers_count": 6
       },
       "fingerprint": "2627d5a1e8b25e959b1919f9a5344a72"
     }
