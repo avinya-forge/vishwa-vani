@@ -27,10 +27,11 @@ def run_node(script_name, args=[]):
     subprocess.run(cmd)
 
 def audit_nvf(target):
-    """Comprehensive schema and quality auditor for NVF 1.0."""
+    """Comprehensive schema and quality auditor for NVF 1.2."""
     REQUIRED_FIELDS = ["id", "text_slug", "chapter", "verse", "original", "meaning", "layers"]
-    REQUIRED_LANGS = ["en", "hi", "mr"]
-    PRIMARY_AUTHORS = ["iskcon", "dnyaneshwari"]
+    REQUIRED_LAYER_FIELDS = ["author", "author_name", "lang", "type", "content"]
+    REQUIRED_LANGS = ["en"]
+    PRIMARY_AUTHORS = ["iskcon", "shankara", "ramanuja"]
 
     def audit_file(file_path):
         print(f"Auditing: {file_path}")
@@ -43,19 +44,24 @@ def audit_nvf(target):
                 
             for idx, verse in enumerate(data):
                 for r in REQUIRED_FIELDS:
-                    if r not in verse: return False, f"Verse {idx} missing: '{r}'"
+                    if r not in verse: return False, f"Verse {idx} missing field: '{r}'"
                         
                 layers = verse.get("layers", [])
+                for i, layer in enumerate(layers):
+                    for rf in REQUIRED_LAYER_FIELDS:
+                        if rf not in layer:
+                            return False, f"Verse {idx}, Layer {i} missing scholarly metadata: '{rf}'"
+                
+                # Check for critical authors as warnings/errors depending on book
+                existing_authors = [l.get("author") for l in layers]
                 for author in PRIMARY_AUTHORS:
-                    for lang in REQUIRED_LANGS:
-                        found = any(l.get("author") == f"{author}-{lang}" or (l.get("author") == author and l.get("lang") == lang) for l in layers)
-                        if not found:
-                            print(f"  [WARN] Verse {idx} missing '{author}' in '{lang}' language.")
+                    if author not in existing_authors:
+                        print(f"  [WARN] Verse {idx} missing primary scholarship layer: '{author}'")
                 
                 if not verse.get("original") or len(verse.get("original")) < 5:
-                    return False, f"Verse {idx} missing valid Sanskrit text."
+                    return False, f"Verse {idx} missing valid Sanskrit/Original text."
                     
-            return True, f"Passed! {len(data)} verses audited."
+            return True, f"Passed NVF 1.2 Audit! {len(data)} verses validated."
         except Exception as e:
             return False, str(e)
 

@@ -15,8 +15,9 @@ export async function generateStaticParams() {
   }))
 }
 
-export default async function StudyChapterPage({ params }: { params: Promise<{ text: string, chapter: string }> }) {
+export default async function StudyChapterPage({ params, searchParams }: { params: Promise<{ text: string, chapter: string }>, searchParams: Promise<{ adhyaya?: string }> }) {
   const { text: textSlug, chapter: chapterNumber } = await params
+  const { adhyaya: adhyayaParam } = await searchParams
   setRequestLocale('en')
   
   const textMetadata = getTextBySlug(textSlug)
@@ -42,9 +43,41 @@ export default async function StudyChapterPage({ params }: { params: Promise<{ t
     verses = await getVersesFromLakeServer(textSlug, chapterInt, textMetadata.lakeFile || undefined)
   } else {
     try {
-      const dataPath = path.join(process.cwd(), 'data', '3-gold', textMetadata.dataPrefix, `${textMetadata.dataPrefix}-chapter-${chapterNumber}.json`)
-      const rawData = fs.readFileSync(dataPath, 'utf8')
-      verses = JSON.parse(rawData)
+      // 🗺️ MANIFEST-DRIVEN SHARD RESOLUTION
+      const manifestPath = path.join(process.cwd(), 'data', 'manifest.json')
+      const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'))
+      const bookManifest = manifest.books.find((b: any) => b.slug === textSlug)
+      
+      let shardFile = `${textMetadata.dataPrefix}-chapter-${chapterNumber}.json` // Default fallback
+      
+      if (bookManifest && bookManifest.shards) {
+        // Special logic for Mahabharata: chapter Number refers to Parva
+        if (textSlug === 'mahabharata') {
+          // If a specific adhyaya is requested via query param, load that
+          const targetAdhyaya = adhyayaParam ? parseInt(adhyayaParam) : 1
+          const parvaShard = bookManifest.shards.find((s: any) => 
+            s.file === `parva-${chapterNumber}/adhyaya-${targetAdhyaya}.json`
+          ) || bookManifest.shards.find((s: any) => s.file.startsWith(`parva-${chapterNumber}/`))
+          if (parvaShard) shardFile = parvaShard.file
+        } else {
+          // Standard shard mapping
+          const mappedShard = bookManifest.shards[chapterInt - 1]
+          if (mappedShard) shardFile = mappedShard.file
+        }
+      }
+
+      const dataPath = path.join(process.cwd(), 'data', '3-gold', textMetadata.dataPrefix, shardFile)
+      if (fs.existsSync(dataPath)) {
+        const rawData = fs.readFileSync(dataPath, 'utf8')
+        verses = JSON.parse(rawData)
+      } else {
+        console.warn(`Shard not found: ${dataPath}. Attempting fallback path...`)
+        // Final fallback to flat structure
+        const fallbackPath = path.join(process.cwd(), 'data', '3-gold', textMetadata.dataPrefix, `${textMetadata.dataPrefix}-chapter-${chapterNumber}.json`)
+        if (fs.existsSync(fallbackPath)) {
+          verses = JSON.parse(fs.readFileSync(fallbackPath, 'utf8'))
+        }
+      }
     } catch (e) {
       console.error(`Failed to load text ${textSlug} chapter ${chapterNumber} data`, e)
     }
@@ -53,9 +86,24 @@ export default async function StudyChapterPage({ params }: { params: Promise<{ t
   // Ensure ALL data is in NVF format before passing to Client components
   const nvfVerses = verses.map((v: any) => migrateToNVF(v, textSlug, chapterInt))
 
+  // Build adhyaya list for Mahabharata
+  const adhyayaList = textSlug === 'mahabharata' 
+    ? (JSON.parse(fs.readFileSync(path.join(process.cwd(), 'data', 'manifest.json'), 'utf8'))
+        .books.find((b: any) => b.slug === 'mahabharata')?.shards
+        .filter((s: any) => s.file.startsWith(`parva-${chapterNumber}/`))
+        .map((s: any) => {
+            // s.file format: "parva-2/adhyaya-5.json"
+            const filename = s.file.split('/')[1]               // "adhyaya-5.json"
+            const num = parseInt(filename.replace('adhyaya-', '').replace('.json', ''))
+            return { num, id: s.id }
+        })
+        .sort((a: any, b: any) => a.num - b.num)
+        || [])
+    : []
+
   // Build chapter list for navigation
   const chapterList: { num: number; name: string }[] = []
-  for (let i = 1; i <= textMetadata.totalChapters; i++) {
+  for (let i = 1; i <= (textMetadata.totalChapters || 1); i++) {
     chapterList.push({
       num: i,
       name: textMetadata.chapterNames?.[String(i)] || `Chapter ${i}`,
@@ -70,6 +118,7 @@ export default async function StudyChapterPage({ params }: { params: Promise<{ t
           textMetadata={textMetadata} 
           chapterNumber={chapterNumber}
           chapterList={chapterList}
+          adhyayaList={adhyayaList}
         />
       </div>
     </main>
@@ -80,7 +129,7 @@ export default async function StudyChapterPage({ params }: { params: Promise<{ t
  * Intermediate wrapper to determine localized titles server-side (for SEO)
  * while still letting the client handle the main interactive state.
  */
-function StudyWrapper({ verses, textMetadata, chapterNumber, chapterList }: any) {
+function StudyWrapper({ verses, textMetadata, chapterNumber, chapterList, adhyayaList }: any) {
   const title = textMetadata.chapterNames[chapterNumber] || `${textMetadata.name} - Chapter ${chapterNumber}`
   const scriptureName = textMetadata.name
   const tagline = textMetadata.description
@@ -94,6 +143,7 @@ function StudyWrapper({ verses, textMetadata, chapterNumber, chapterList }: any)
         verses={verses} 
         textSlug={textMetadata.slug}
         chapter={parseInt(chapterNumber)}
+        adhyayaList={adhyayaList || []}
       />
       
       {/* Footer Navigation */}

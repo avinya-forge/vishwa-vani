@@ -225,8 +225,7 @@ export const VEDIC_LIBRARY: VedicText[] = [
     description: 'The longest epic poem in the world, chronicling the Kurukshetra War and the fates of the Kaurava and Pandava princes.',
     category: 'itihas',
     available: true,
-    storage: 'lake',
-    lakeFile: 'itihasa-lake.db',
+    storage: 'json', // Changed from lake to json for shard support
     chapterNames: {
       '1': 'Adi Parva', '2': 'Sabha Parva', '3': 'Vana Parva', '4': 'Virata Parva', '5': 'Udyoga Parva',
       '6': 'Bhishma Parva', '7': 'Drona Parva', '8': 'Karna Parva', '9': 'Shalya Parva', '10': 'Sauptika Parva',

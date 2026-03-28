@@ -7,7 +7,6 @@ export default function VedicLabPage() {
     <main className="min-h-screen bg-[#0C0B0A] text-stone-200 selection:bg-orange-500/30 pb-32 pt-20 relative overflow-hidden">
       {/* 🌌 COSMIC BACKGROUND */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,_#2A1A0A_0%,_transparent_50%)]" />
-      <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M30 0l15 30-15 30-15-30z\' fill=\'%23ffffff\' fill-rule=\'evenodd\'/%3E%3C/svg%3E")' }} />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="flex flex-col md:flex-row justify-between items-end gap-10 mb-20">

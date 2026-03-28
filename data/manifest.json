@@ -4,8 +4,8 @@
   "books": [
     {
       "slug": "bhagavad-gita",
-      "total_chapters": 1,
-      "total_verses": 47,
+      "total_chapters": 18,
+      "total_verses": 657,
       "languages": [
         "en",
         "hi",
@@ -18,15 +18,83 @@
       "shards": [
         {
           "file": "bhagavad-gita-chapter-1.json",
-          "verses": 47
+          "verses": 39
+        },
+        {
+          "file": "bhagavad-gita-chapter-10.json",
+          "verses": 40
+        },
+        {
+          "file": "bhagavad-gita-chapter-11.json",
+          "verses": 52
+        },
+        {
+          "file": "bhagavad-gita-chapter-12.json",
+          "verses": 16
+        },
+        {
+          "file": "bhagavad-gita-chapter-13.json",
+          "verses": 29
+        },
+        {
+          "file": "bhagavad-gita-chapter-14.json",
+          "verses": 24
+        },
+        {
+          "file": "bhagavad-gita-chapter-15.json",
+          "verses": 19
+        },
+        {
+          "file": "bhagavad-gita-chapter-16.json",
+          "verses": 19
+        },
+        {
+          "file": "bhagavad-gita-chapter-17.json",
+          "verses": 26
+        },
+        {
+          "file": "bhagavad-gita-chapter-18.json",
+          "verses": 76
+        },
+        {
+          "file": "bhagavad-gita-chapter-2.json",
+          "verses": 71
+        },
+        {
+          "file": "bhagavad-gita-chapter-3.json",
+          "verses": 43
+        },
+        {
+          "file": "bhagavad-gita-chapter-4.json",
+          "verses": 42
+        },
+        {
+          "file": "bhagavad-gita-chapter-5.json",
+          "verses": 27
+        },
+        {
+          "file": "bhagavad-gita-chapter-6.json",
+          "verses": 42
+        },
+        {
+          "file": "bhagavad-gita-chapter-7.json",
+          "verses": 30
+        },
+        {
+          "file": "bhagavad-gita-chapter-8.json",
+          "verses": 28
+        },
+        {
+          "file": "bhagavad-gita-chapter-9.json",
+          "verses": 34
         }
       ],
       "completeness": 100.0
     },
     {
       "slug": "bhagavata-purana",
-      "total_chapters": 1,
-      "total_verses": 3,
+      "total_chapters": 12,
+      "total_verses": 14,
       "languages": [
         "en"
       ],
@@ -39,14 +107,58 @@
         {
           "file": "bhagavata-purana-chapter-1.json",
           "verses": 3
+        },
+        {
+          "file": "bhagavata-purana-chapter-10.json",
+          "verses": 1
+        },
+        {
+          "file": "bhagavata-purana-chapter-11.json",
+          "verses": 1
+        },
+        {
+          "file": "bhagavata-purana-chapter-12.json",
+          "verses": 1
+        },
+        {
+          "file": "bhagavata-purana-chapter-2.json",
+          "verses": 1
+        },
+        {
+          "file": "bhagavata-purana-chapter-3.json",
+          "verses": 1
+        },
+        {
+          "file": "bhagavata-purana-chapter-4.json",
+          "verses": 1
+        },
+        {
+          "file": "bhagavata-purana-chapter-5.json",
+          "verses": 1
+        },
+        {
+          "file": "bhagavata-purana-chapter-6.json",
+          "verses": 1
+        },
+        {
+          "file": "bhagavata-purana-chapter-7.json",
+          "verses": 1
+        },
+        {
+          "file": "bhagavata-purana-chapter-8.json",
+          "verses": 1
+        },
+        {
+          "file": "bhagavata-purana-chapter-9.json",
+          "verses": 1
         }
       ],
       "completeness": 100.0
     },
     {
       "slug": "garuda-purana",
-      "total_chapters": 1,
-      "total_verses": 1,
+      "total_chapters": 2,
+      "total_verses": 2,
       "languages": [
         "en"
       ],
@@ -58,9 +170,13 @@
         {
           "file": "garuda-purana-chapter-1.json",
           "verses": 1
+        },
+        {
+          "file": "garuda-purana-chapter-2.json",
+          "verses": 1
         }
       ],
-      "completeness": 0.0
+      "completeness": 100.0
     },
     {
       "slug": "isha-upanishad",
@@ -100,12 +216,12 @@
           "verses": 1
         }
       ],
-      "completeness": 0.0
+      "completeness": 100.0
     },
     {
       "slug": "mahabharata",
-      "total_chapters": 1,
-      "total_verses": 1,
+      "total_chapters": 371,
+      "total_verses": 12624,
       "languages": [
         "en"
       ],
@@ -116,11 +232,1862 @@
       ],
       "shards": [
         {
-          "file": "mahabharata-chapter-1.json",
-          "verses": 1
+          "id": "parva-2_adhyaya-1",
+          "file": "parva-2/adhyaya-1.json",
+          "verses": 19
+        },
+        {
+          "id": "parva-2_adhyaya-2",
+          "file": "parva-2/adhyaya-2.json",
+          "verses": 23
+        },
+        {
+          "id": "parva-2_adhyaya-3",
+          "file": "parva-2/adhyaya-3.json",
+          "verses": 34
+        },
+        {
+          "id": "parva-2_adhyaya-4",
+          "file": "parva-2/adhyaya-4.json",
+          "verses": 34
+        },
+        {
+          "id": "parva-2_adhyaya-5",
+          "file": "parva-2/adhyaya-5.json",
+          "verses": 116
+        },
+        {
+          "id": "parva-2_adhyaya-6",
+          "file": "parva-2/adhyaya-6.json",
+          "verses": 18
+        },
+        {
+          "id": "parva-2_adhyaya-7",
+          "file": "parva-2/adhyaya-7.json",
+          "verses": 26
+        },
+        {
+          "id": "parva-2_adhyaya-8",
+          "file": "parva-2/adhyaya-8.json",
+          "verses": 38
+        },
+        {
+          "id": "parva-2_adhyaya-9",
+          "file": "parva-2/adhyaya-9.json",
+          "verses": 25
+        },
+        {
+          "id": "parva-2_adhyaya-10",
+          "file": "parva-2/adhyaya-10.json",
+          "verses": 23
+        },
+        {
+          "id": "parva-2_adhyaya-11",
+          "file": "parva-2/adhyaya-11.json",
+          "verses": 73
+        },
+        {
+          "id": "parva-2_adhyaya-12",
+          "file": "parva-2/adhyaya-12.json",
+          "verses": 40
+        },
+        {
+          "id": "parva-2_adhyaya-13",
+          "file": "parva-2/adhyaya-13.json",
+          "verses": 68
+        },
+        {
+          "id": "parva-2_adhyaya-14",
+          "file": "parva-2/adhyaya-14.json",
+          "verses": 20
+        },
+        {
+          "id": "parva-2_adhyaya-15",
+          "file": "parva-2/adhyaya-15.json",
+          "verses": 16
+        },
+        {
+          "id": "parva-2_adhyaya-16",
+          "file": "parva-2/adhyaya-16.json",
+          "verses": 51
+        },
+        {
+          "id": "parva-2_adhyaya-17",
+          "file": "parva-2/adhyaya-17.json",
+          "verses": 27
+        },
+        {
+          "id": "parva-2_adhyaya-18",
+          "file": "parva-2/adhyaya-18.json",
+          "verses": 30
+        },
+        {
+          "id": "parva-2_adhyaya-19",
+          "file": "parva-2/adhyaya-19.json",
+          "verses": 50
+        },
+        {
+          "id": "parva-2_adhyaya-20",
+          "file": "parva-2/adhyaya-20.json",
+          "verses": 34
+        },
+        {
+          "id": "parva-2_adhyaya-21",
+          "file": "parva-2/adhyaya-21.json",
+          "verses": 23
+        },
+        {
+          "id": "parva-2_adhyaya-22",
+          "file": "parva-2/adhyaya-22.json",
+          "verses": 58
+        },
+        {
+          "id": "parva-2_adhyaya-23",
+          "file": "parva-2/adhyaya-23.json",
+          "verses": 26
+        },
+        {
+          "id": "parva-2_adhyaya-24",
+          "file": "parva-2/adhyaya-24.json",
+          "verses": 27
+        },
+        {
+          "id": "parva-2_adhyaya-25",
+          "file": "parva-2/adhyaya-25.json",
+          "verses": 20
+        },
+        {
+          "id": "parva-2_adhyaya-26",
+          "file": "parva-2/adhyaya-26.json",
+          "verses": 16
+        },
+        {
+          "id": "parva-2_adhyaya-27",
+          "file": "parva-2/adhyaya-27.json",
+          "verses": 28
+        },
+        {
+          "id": "parva-2_adhyaya-28",
+          "file": "parva-2/adhyaya-28.json",
+          "verses": 55
+        },
+        {
+          "id": "parva-2_adhyaya-29",
+          "file": "parva-2/adhyaya-29.json",
+          "verses": 19
+        },
+        {
+          "id": "parva-2_adhyaya-30",
+          "file": "parva-2/adhyaya-30.json",
+          "verses": 54
+        },
+        {
+          "id": "parva-2_adhyaya-31",
+          "file": "parva-2/adhyaya-31.json",
+          "verses": 25
+        },
+        {
+          "id": "parva-2_adhyaya-32",
+          "file": "parva-2/adhyaya-32.json",
+          "verses": 18
+        },
+        {
+          "id": "parva-2_adhyaya-33",
+          "file": "parva-2/adhyaya-33.json",
+          "verses": 32
+        },
+        {
+          "id": "parva-2_adhyaya-34",
+          "file": "parva-2/adhyaya-34.json",
+          "verses": 23
+        },
+        {
+          "id": "parva-2_adhyaya-35",
+          "file": "parva-2/adhyaya-35.json",
+          "verses": 29
+        },
+        {
+          "id": "parva-2_adhyaya-36",
+          "file": "parva-2/adhyaya-36.json",
+          "verses": 15
+        },
+        {
+          "id": "parva-2_adhyaya-37",
+          "file": "parva-2/adhyaya-37.json",
+          "verses": 15
+        },
+        {
+          "id": "parva-2_adhyaya-38",
+          "file": "parva-2/adhyaya-38.json",
+          "verses": 40
+        },
+        {
+          "id": "parva-2_adhyaya-39",
+          "file": "parva-2/adhyaya-39.json",
+          "verses": 20
+        },
+        {
+          "id": "parva-2_adhyaya-40",
+          "file": "parva-2/adhyaya-40.json",
+          "verses": 23
+        },
+        {
+          "id": "parva-2_adhyaya-41",
+          "file": "parva-2/adhyaya-41.json",
+          "verses": 33
+        },
+        {
+          "id": "parva-2_adhyaya-42",
+          "file": "parva-2/adhyaya-42.json",
+          "verses": 60
+        },
+        {
+          "id": "parva-2_adhyaya-43",
+          "file": "parva-2/adhyaya-43.json",
+          "verses": 36
+        },
+        {
+          "id": "parva-2_adhyaya-44",
+          "file": "parva-2/adhyaya-44.json",
+          "verses": 22
+        },
+        {
+          "id": "parva-2_adhyaya-45",
+          "file": "parva-2/adhyaya-45.json",
+          "verses": 58
+        },
+        {
+          "id": "parva-2_adhyaya-46",
+          "file": "parva-2/adhyaya-46.json",
+          "verses": 35
+        },
+        {
+          "id": "parva-2_adhyaya-47",
+          "file": "parva-2/adhyaya-47.json",
+          "verses": 31
+        },
+        {
+          "id": "parva-2_adhyaya-48",
+          "file": "parva-2/adhyaya-48.json",
+          "verses": 42
+        },
+        {
+          "id": "parva-2_adhyaya-49",
+          "file": "parva-2/adhyaya-49.json",
+          "verses": 25
+        },
+        {
+          "id": "parva-2_adhyaya-50",
+          "file": "parva-2/adhyaya-50.json",
+          "verses": 28
+        },
+        {
+          "id": "parva-2_adhyaya-51",
+          "file": "parva-2/adhyaya-51.json",
+          "verses": 26
+        },
+        {
+          "id": "parva-2_adhyaya-52",
+          "file": "parva-2/adhyaya-52.json",
+          "verses": 37
+        },
+        {
+          "id": "parva-2_adhyaya-53",
+          "file": "parva-2/adhyaya-53.json",
+          "verses": 25
+        },
+        {
+          "id": "parva-2_adhyaya-54",
+          "file": "parva-2/adhyaya-54.json",
+          "verses": 29
+        },
+        {
+          "id": "parva-2_adhyaya-55",
+          "file": "parva-2/adhyaya-55.json",
+          "verses": 17
+        },
+        {
+          "id": "parva-2_adhyaya-56",
+          "file": "parva-2/adhyaya-56.json",
+          "verses": 10
+        },
+        {
+          "id": "parva-2_adhyaya-57",
+          "file": "parva-2/adhyaya-57.json",
+          "verses": 21
+        },
+        {
+          "id": "parva-2_adhyaya-58",
+          "file": "parva-2/adhyaya-58.json",
+          "verses": 43
+        },
+        {
+          "id": "parva-2_adhyaya-59",
+          "file": "parva-2/adhyaya-59.json",
+          "verses": 12
+        },
+        {
+          "id": "parva-2_adhyaya-60",
+          "file": "parva-2/adhyaya-60.json",
+          "verses": 47
+        },
+        {
+          "id": "parva-2_adhyaya-61",
+          "file": "parva-2/adhyaya-61.json",
+          "verses": 82
+        },
+        {
+          "id": "parva-2_adhyaya-62",
+          "file": "parva-2/adhyaya-62.json",
+          "verses": 38
+        },
+        {
+          "id": "parva-2_adhyaya-63",
+          "file": "parva-2/adhyaya-63.json",
+          "verses": 36
+        },
+        {
+          "id": "parva-2_adhyaya-64",
+          "file": "parva-2/adhyaya-64.json",
+          "verses": 17
+        },
+        {
+          "id": "parva-2_adhyaya-65",
+          "file": "parva-2/adhyaya-65.json",
+          "verses": 17
+        },
+        {
+          "id": "parva-2_adhyaya-66",
+          "file": "parva-2/adhyaya-66.json",
+          "verses": 37
+        },
+        {
+          "id": "parva-2_adhyaya-67",
+          "file": "parva-2/adhyaya-67.json",
+          "verses": 21
+        },
+        {
+          "id": "parva-2_adhyaya-68",
+          "file": "parva-2/adhyaya-68.json",
+          "verses": 46
+        },
+        {
+          "id": "parva-2_adhyaya-69",
+          "file": "parva-2/adhyaya-69.json",
+          "verses": 21
+        },
+        {
+          "id": "parva-2_adhyaya-70",
+          "file": "parva-2/adhyaya-70.json",
+          "verses": 24
+        },
+        {
+          "id": "parva-2_adhyaya-71",
+          "file": "parva-2/adhyaya-71.json",
+          "verses": 47
+        },
+        {
+          "id": "parva-2_adhyaya-72",
+          "file": "parva-2/adhyaya-72.json",
+          "verses": 36
+        },
+        {
+          "id": "parva-3_adhyaya-1",
+          "file": "parva-3/adhyaya-1.json",
+          "verses": 43
+        },
+        {
+          "id": "parva-3_adhyaya-2",
+          "file": "parva-3/adhyaya-2.json",
+          "verses": 79
+        },
+        {
+          "id": "parva-3_adhyaya-3",
+          "file": "parva-3/adhyaya-3.json",
+          "verses": 33
+        },
+        {
+          "id": "parva-3_adhyaya-4",
+          "file": "parva-3/adhyaya-4.json",
+          "verses": 10
+        },
+        {
+          "id": "parva-3_adhyaya-5",
+          "file": "parva-3/adhyaya-5.json",
+          "verses": 20
+        },
+        {
+          "id": "parva-3_adhyaya-6",
+          "file": "parva-3/adhyaya-6.json",
+          "verses": 22
+        },
+        {
+          "id": "parva-3_adhyaya-7",
+          "file": "parva-3/adhyaya-7.json",
+          "verses": 24
+        },
+        {
+          "id": "parva-3_adhyaya-8",
+          "file": "parva-3/adhyaya-8.json",
+          "verses": 23
+        },
+        {
+          "id": "parva-3_adhyaya-9",
+          "file": "parva-3/adhyaya-9.json",
+          "verses": 12
+        },
+        {
+          "id": "parva-3_adhyaya-10",
+          "file": "parva-3/adhyaya-10.json",
+          "verses": 23
+        },
+        {
+          "id": "parva-3_adhyaya-11",
+          "file": "parva-3/adhyaya-11.json",
+          "verses": 39
+        },
+        {
+          "id": "parva-3_adhyaya-12",
+          "file": "parva-3/adhyaya-12.json",
+          "verses": 75
+        },
+        {
+          "id": "parva-3_adhyaya-13",
+          "file": "parva-3/adhyaya-13.json",
+          "verses": 120
+        },
+        {
+          "id": "parva-3_adhyaya-14",
+          "file": "parva-3/adhyaya-14.json",
+          "verses": 17
+        },
+        {
+          "id": "parva-3_adhyaya-15",
+          "file": "parva-3/adhyaya-15.json",
+          "verses": 22
+        },
+        {
+          "id": "parva-3_adhyaya-16",
+          "file": "parva-3/adhyaya-16.json",
+          "verses": 23
+        },
+        {
+          "id": "parva-3_adhyaya-17",
+          "file": "parva-3/adhyaya-17.json",
+          "verses": 33
+        },
+        {
+          "id": "parva-3_adhyaya-18",
+          "file": "parva-3/adhyaya-18.json",
+          "verses": 24
+        },
+        {
+          "id": "parva-3_adhyaya-19",
+          "file": "parva-3/adhyaya-19.json",
+          "verses": 33
+        },
+        {
+          "id": "parva-3_adhyaya-20",
+          "file": "parva-3/adhyaya-20.json",
+          "verses": 27
+        },
+        {
+          "id": "parva-3_adhyaya-21",
+          "file": "parva-3/adhyaya-21.json",
+          "verses": 38
+        },
+        {
+          "id": "parva-3_adhyaya-22",
+          "file": "parva-3/adhyaya-22.json",
+          "verses": 30
+        },
+        {
+          "id": "parva-3_adhyaya-23",
+          "file": "parva-3/adhyaya-23.json",
+          "verses": 51
+        },
+        {
+          "id": "parva-3_adhyaya-24",
+          "file": "parva-3/adhyaya-24.json",
+          "verses": 16
+        },
+        {
+          "id": "parva-3_adhyaya-25",
+          "file": "parva-3/adhyaya-25.json",
+          "verses": 26
+        },
+        {
+          "id": "parva-3_adhyaya-26",
+          "file": "parva-3/adhyaya-26.json",
+          "verses": 18
+        },
+        {
+          "id": "parva-3_adhyaya-27",
+          "file": "parva-3/adhyaya-27.json",
+          "verses": 25
+        },
+        {
+          "id": "parva-3_adhyaya-28",
+          "file": "parva-3/adhyaya-28.json",
+          "verses": 37
+        },
+        {
+          "id": "parva-3_adhyaya-29",
+          "file": "parva-3/adhyaya-29.json",
+          "verses": 35
+        },
+        {
+          "id": "parva-3_adhyaya-30",
+          "file": "parva-3/adhyaya-30.json",
+          "verses": 50
+        },
+        {
+          "id": "parva-3_adhyaya-31",
+          "file": "parva-3/adhyaya-31.json",
+          "verses": 42
+        },
+        {
+          "id": "parva-3_adhyaya-32",
+          "file": "parva-3/adhyaya-32.json",
+          "verses": 40
+        },
+        {
+          "id": "parva-3_adhyaya-33",
+          "file": "parva-3/adhyaya-33.json",
+          "verses": 58
+        },
+        {
+          "id": "parva-3_adhyaya-34",
+          "file": "parva-3/adhyaya-34.json",
+          "verses": 85
+        },
+        {
+          "id": "parva-3_adhyaya-35",
+          "file": "parva-3/adhyaya-35.json",
+          "verses": 21
+        },
+        {
+          "id": "parva-3_adhyaya-36",
+          "file": "parva-3/adhyaya-36.json",
+          "verses": 34
+        },
+        {
+          "id": "parva-3_adhyaya-37",
+          "file": "parva-3/adhyaya-37.json",
+          "verses": 41
+        },
+        {
+          "id": "parva-3_adhyaya-38",
+          "file": "parva-3/adhyaya-38.json",
+          "verses": 45
+        },
+        {
+          "id": "parva-3_adhyaya-39",
+          "file": "parva-3/adhyaya-39.json",
+          "verses": 30
+        },
+        {
+          "id": "parva-3_adhyaya-40",
+          "file": "parva-3/adhyaya-40.json",
+          "verses": 61
+        },
+        {
+          "id": "parva-3_adhyaya-41",
+          "file": "parva-3/adhyaya-41.json",
+          "verses": 26
+        },
+        {
+          "id": "parva-3_adhyaya-42",
+          "file": "parva-3/adhyaya-42.json",
+          "verses": 42
+        },
+        {
+          "id": "parva-3_adhyaya-43",
+          "file": "parva-3/adhyaya-43.json",
+          "verses": 38
+        },
+        {
+          "id": "parva-3_adhyaya-44",
+          "file": "parva-3/adhyaya-44.json",
+          "verses": 32
+        },
+        {
+          "id": "parva-3_adhyaya-45",
+          "file": "parva-3/adhyaya-45.json",
+          "verses": 38
+        },
+        {
+          "id": "parva-3_adhyaya-46",
+          "file": "parva-3/adhyaya-46.json",
+          "verses": 41
+        },
+        {
+          "id": "parva-3_adhyaya-47",
+          "file": "parva-3/adhyaya-47.json",
+          "verses": 12
+        },
+        {
+          "id": "parva-3_adhyaya-48",
+          "file": "parva-3/adhyaya-48.json",
+          "verses": 41
+        },
+        {
+          "id": "parva-3_adhyaya-49",
+          "file": "parva-3/adhyaya-49.json",
+          "verses": 43
+        },
+        {
+          "id": "parva-3_adhyaya-50",
+          "file": "parva-3/adhyaya-50.json",
+          "verses": 31
+        },
+        {
+          "id": "parva-3_adhyaya-51",
+          "file": "parva-3/adhyaya-51.json",
+          "verses": 29
+        },
+        {
+          "id": "parva-3_adhyaya-52",
+          "file": "parva-3/adhyaya-52.json",
+          "verses": 24
+        },
+        {
+          "id": "parva-3_adhyaya-53",
+          "file": "parva-3/adhyaya-53.json",
+          "verses": 21
+        },
+        {
+          "id": "parva-3_adhyaya-54",
+          "file": "parva-3/adhyaya-54.json",
+          "verses": 38
+        },
+        {
+          "id": "parva-3_adhyaya-55",
+          "file": "parva-3/adhyaya-55.json",
+          "verses": 13
+        },
+        {
+          "id": "parva-3_adhyaya-56",
+          "file": "parva-3/adhyaya-56.json",
+          "verses": 18
+        },
+        {
+          "id": "parva-3_adhyaya-57",
+          "file": "parva-3/adhyaya-57.json",
+          "verses": 23
+        },
+        {
+          "id": "parva-3_adhyaya-58",
+          "file": "parva-3/adhyaya-58.json",
+          "verses": 34
+        },
+        {
+          "id": "parva-3_adhyaya-59",
+          "file": "parva-3/adhyaya-59.json",
+          "verses": 25
+        },
+        {
+          "id": "parva-3_adhyaya-60",
+          "file": "parva-3/adhyaya-60.json",
+          "verses": 38
+        },
+        {
+          "id": "parva-3_adhyaya-61",
+          "file": "parva-3/adhyaya-61.json",
+          "verses": 125
+        },
+        {
+          "id": "parva-3_adhyaya-62",
+          "file": "parva-3/adhyaya-62.json",
+          "verses": 43
+        },
+        {
+          "id": "parva-3_adhyaya-63",
+          "file": "parva-3/adhyaya-63.json",
+          "verses": 24
+        },
+        {
+          "id": "parva-3_adhyaya-64",
+          "file": "parva-3/adhyaya-64.json",
+          "verses": 19
+        },
+        {
+          "id": "parva-3_adhyaya-65",
+          "file": "parva-3/adhyaya-65.json",
+          "verses": 37
+        },
+        {
+          "id": "parva-3_adhyaya-66",
+          "file": "parva-3/adhyaya-66.json",
+          "verses": 26
+        },
+        {
+          "id": "parva-3_adhyaya-67",
+          "file": "parva-3/adhyaya-67.json",
+          "verses": 22
+        },
+        {
+          "id": "parva-3_adhyaya-68",
+          "file": "parva-3/adhyaya-68.json",
+          "verses": 24
+        },
+        {
+          "id": "parva-3_adhyaya-69",
+          "file": "parva-3/adhyaya-69.json",
+          "verses": 34
+        },
+        {
+          "id": "parva-3_adhyaya-70",
+          "file": "parva-3/adhyaya-70.json",
+          "verses": 39
+        },
+        {
+          "id": "parva-3_adhyaya-71",
+          "file": "parva-3/adhyaya-71.json",
+          "verses": 34
+        },
+        {
+          "id": "parva-3_adhyaya-72",
+          "file": "parva-3/adhyaya-72.json",
+          "verses": 30
+        },
+        {
+          "id": "parva-3_adhyaya-73",
+          "file": "parva-3/adhyaya-73.json",
+          "verses": 28
+        },
+        {
+          "id": "parva-3_adhyaya-74",
+          "file": "parva-3/adhyaya-74.json",
+          "verses": 24
+        },
+        {
+          "id": "parva-3_adhyaya-75",
+          "file": "parva-3/adhyaya-75.json",
+          "verses": 27
+        },
+        {
+          "id": "parva-3_adhyaya-76",
+          "file": "parva-3/adhyaya-76.json",
+          "verses": 19
+        },
+        {
+          "id": "parva-3_adhyaya-77",
+          "file": "parva-3/adhyaya-77.json",
+          "verses": 29
+        },
+        {
+          "id": "parva-3_adhyaya-78",
+          "file": "parva-3/adhyaya-78.json",
+          "verses": 23
+        },
+        {
+          "id": "parva-3_adhyaya-79",
+          "file": "parva-3/adhyaya-79.json",
+          "verses": 29
+        },
+        {
+          "id": "parva-3_adhyaya-80",
+          "file": "parva-3/adhyaya-80.json",
+          "verses": 133
+        },
+        {
+          "id": "parva-3_adhyaya-81",
+          "file": "parva-3/adhyaya-81.json",
+          "verses": 178
+        },
+        {
+          "id": "parva-3_adhyaya-82",
+          "file": "parva-3/adhyaya-82.json",
+          "verses": 143
+        },
+        {
+          "id": "parva-3_adhyaya-83",
+          "file": "parva-3/adhyaya-83.json",
+          "verses": 114
+        },
+        {
+          "id": "parva-3_adhyaya-84",
+          "file": "parva-3/adhyaya-84.json",
+          "verses": 20
+        },
+        {
+          "id": "parva-3_adhyaya-85",
+          "file": "parva-3/adhyaya-85.json",
+          "verses": 23
+        },
+        {
+          "id": "parva-3_adhyaya-86",
+          "file": "parva-3/adhyaya-86.json",
+          "verses": 24
+        },
+        {
+          "id": "parva-3_adhyaya-87",
+          "file": "parva-3/adhyaya-87.json",
+          "verses": 15
+        },
+        {
+          "id": "parva-3_adhyaya-88",
+          "file": "parva-3/adhyaya-88.json",
+          "verses": 30
+        },
+        {
+          "id": "parva-3_adhyaya-89",
+          "file": "parva-3/adhyaya-89.json",
+          "verses": 22
+        },
+        {
+          "id": "parva-3_adhyaya-90",
+          "file": "parva-3/adhyaya-90.json",
+          "verses": 24
+        },
+        {
+          "id": "parva-3_adhyaya-91",
+          "file": "parva-3/adhyaya-91.json",
+          "verses": 28
+        },
+        {
+          "id": "parva-3_adhyaya-92",
+          "file": "parva-3/adhyaya-92.json",
+          "verses": 22
+        },
+        {
+          "id": "parva-3_adhyaya-93",
+          "file": "parva-3/adhyaya-93.json",
+          "verses": 27
+        },
+        {
+          "id": "parva-3_adhyaya-94",
+          "file": "parva-3/adhyaya-94.json",
+          "verses": 27
+        },
+        {
+          "id": "parva-3_adhyaya-95",
+          "file": "parva-3/adhyaya-95.json",
+          "verses": 24
+        },
+        {
+          "id": "parva-3_adhyaya-96",
+          "file": "parva-3/adhyaya-96.json",
+          "verses": 20
+        },
+        {
+          "id": "parva-3_adhyaya-97",
+          "file": "parva-3/adhyaya-97.json",
+          "verses": 27
+        },
+        {
+          "id": "parva-3_adhyaya-98",
+          "file": "parva-3/adhyaya-98.json",
+          "verses": 24
+        },
+        {
+          "id": "parva-3_adhyaya-99",
+          "file": "parva-3/adhyaya-99.json",
+          "verses": 21
+        },
+        {
+          "id": "parva-3_adhyaya-100",
+          "file": "parva-3/adhyaya-100.json",
+          "verses": 24
+        },
+        {
+          "id": "parva-3_adhyaya-101",
+          "file": "parva-3/adhyaya-101.json",
+          "verses": 17
+        },
+        {
+          "id": "parva-3_adhyaya-102",
+          "file": "parva-3/adhyaya-102.json",
+          "verses": 23
+        },
+        {
+          "id": "parva-3_adhyaya-103",
+          "file": "parva-3/adhyaya-103.json",
+          "verses": 19
+        },
+        {
+          "id": "parva-3_adhyaya-104",
+          "file": "parva-3/adhyaya-104.json",
+          "verses": 22
+        },
+        {
+          "id": "parva-3_adhyaya-105",
+          "file": "parva-3/adhyaya-105.json",
+          "verses": 25
+        },
+        {
+          "id": "parva-3_adhyaya-106",
+          "file": "parva-3/adhyaya-106.json",
+          "verses": 40
+        },
+        {
+          "id": "parva-3_adhyaya-107",
+          "file": "parva-3/adhyaya-107.json",
+          "verses": 25
+        },
+        {
+          "id": "parva-3_adhyaya-108",
+          "file": "parva-3/adhyaya-108.json",
+          "verses": 19
+        },
+        {
+          "id": "parva-3_adhyaya-109",
+          "file": "parva-3/adhyaya-109.json",
+          "verses": 20
+        },
+        {
+          "id": "parva-3_adhyaya-110",
+          "file": "parva-3/adhyaya-110.json",
+          "verses": 36
+        },
+        {
+          "id": "parva-3_adhyaya-111",
+          "file": "parva-3/adhyaya-111.json",
+          "verses": 22
+        },
+        {
+          "id": "parva-3_adhyaya-112",
+          "file": "parva-3/adhyaya-112.json",
+          "verses": 18
+        },
+        {
+          "id": "parva-3_adhyaya-113",
+          "file": "parva-3/adhyaya-113.json",
+          "verses": 25
+        },
+        {
+          "id": "parva-3_adhyaya-114",
+          "file": "parva-3/adhyaya-114.json",
+          "verses": 26
+        },
+        {
+          "id": "parva-3_adhyaya-115",
+          "file": "parva-3/adhyaya-115.json",
+          "verses": 30
+        },
+        {
+          "id": "parva-3_adhyaya-116",
+          "file": "parva-3/adhyaya-116.json",
+          "verses": 29
+        },
+        {
+          "id": "parva-3_adhyaya-117",
+          "file": "parva-3/adhyaya-117.json",
+          "verses": 18
+        },
+        {
+          "id": "parva-3_adhyaya-118",
+          "file": "parva-3/adhyaya-118.json",
+          "verses": 23
+        },
+        {
+          "id": "parva-3_adhyaya-119",
+          "file": "parva-3/adhyaya-119.json",
+          "verses": 22
+        },
+        {
+          "id": "parva-3_adhyaya-120",
+          "file": "parva-3/adhyaya-120.json",
+          "verses": 30
+        },
+        {
+          "id": "parva-3_adhyaya-121",
+          "file": "parva-3/adhyaya-121.json",
+          "verses": 23
+        },
+        {
+          "id": "parva-3_adhyaya-122",
+          "file": "parva-3/adhyaya-122.json",
+          "verses": 27
+        },
+        {
+          "id": "parva-3_adhyaya-123",
+          "file": "parva-3/adhyaya-123.json",
+          "verses": 23
+        },
+        {
+          "id": "parva-3_adhyaya-124",
+          "file": "parva-3/adhyaya-124.json",
+          "verses": 24
+        },
+        {
+          "id": "parva-3_adhyaya-125",
+          "file": "parva-3/adhyaya-125.json",
+          "verses": 23
+        },
+        {
+          "id": "parva-3_adhyaya-126",
+          "file": "parva-3/adhyaya-126.json",
+          "verses": 43
+        },
+        {
+          "id": "parva-3_adhyaya-127",
+          "file": "parva-3/adhyaya-127.json",
+          "verses": 21
+        },
+        {
+          "id": "parva-3_adhyaya-128",
+          "file": "parva-3/adhyaya-128.json",
+          "verses": 19
+        },
+        {
+          "id": "parva-3_adhyaya-129",
+          "file": "parva-3/adhyaya-129.json",
+          "verses": 22
+        },
+        {
+          "id": "parva-3_adhyaya-130",
+          "file": "parva-3/adhyaya-130.json",
+          "verses": 20
+        },
+        {
+          "id": "parva-3_adhyaya-131",
+          "file": "parva-3/adhyaya-131.json",
+          "verses": 32
+        },
+        {
+          "id": "parva-3_adhyaya-132",
+          "file": "parva-3/adhyaya-132.json",
+          "verses": 20
+        },
+        {
+          "id": "parva-3_adhyaya-133",
+          "file": "parva-3/adhyaya-133.json",
+          "verses": 27
+        },
+        {
+          "id": "parva-3_adhyaya-134",
+          "file": "parva-3/adhyaya-134.json",
+          "verses": 39
+        },
+        {
+          "id": "parva-3_adhyaya-135",
+          "file": "parva-3/adhyaya-135.json",
+          "verses": 42
+        },
+        {
+          "id": "parva-3_adhyaya-136",
+          "file": "parva-3/adhyaya-136.json",
+          "verses": 18
+        },
+        {
+          "id": "parva-3_adhyaya-137",
+          "file": "parva-3/adhyaya-137.json",
+          "verses": 20
+        },
+        {
+          "id": "parva-3_adhyaya-138",
+          "file": "parva-3/adhyaya-138.json",
+          "verses": 19
+        },
+        {
+          "id": "parva-3_adhyaya-139",
+          "file": "parva-3/adhyaya-139.json",
+          "verses": 24
+        },
+        {
+          "id": "parva-3_adhyaya-140",
+          "file": "parva-3/adhyaya-140.json",
+          "verses": 17
+        },
+        {
+          "id": "parva-3_adhyaya-141",
+          "file": "parva-3/adhyaya-141.json",
+          "verses": 30
+        },
+        {
+          "id": "parva-3_adhyaya-142",
+          "file": "parva-3/adhyaya-142.json",
+          "verses": 28
+        },
+        {
+          "id": "parva-3_adhyaya-143",
+          "file": "parva-3/adhyaya-143.json",
+          "verses": 21
+        },
+        {
+          "id": "parva-3_adhyaya-144",
+          "file": "parva-3/adhyaya-144.json",
+          "verses": 27
+        },
+        {
+          "id": "parva-3_adhyaya-145",
+          "file": "parva-3/adhyaya-145.json",
+          "verses": 43
+        },
+        {
+          "id": "parva-3_adhyaya-146",
+          "file": "parva-3/adhyaya-146.json",
+          "verses": 81
+        },
+        {
+          "id": "parva-3_adhyaya-147",
+          "file": "parva-3/adhyaya-147.json",
+          "verses": 41
+        },
+        {
+          "id": "parva-3_adhyaya-148",
+          "file": "parva-3/adhyaya-148.json",
+          "verses": 39
+        },
+        {
+          "id": "parva-3_adhyaya-149",
+          "file": "parva-3/adhyaya-149.json",
+          "verses": 52
+        },
+        {
+          "id": "parva-3_adhyaya-150",
+          "file": "parva-3/adhyaya-150.json",
+          "verses": 28
+        },
+        {
+          "id": "parva-3_adhyaya-151",
+          "file": "parva-3/adhyaya-151.json",
+          "verses": 15
+        },
+        {
+          "id": "parva-3_adhyaya-152",
+          "file": "parva-3/adhyaya-152.json",
+          "verses": 25
+        },
+        {
+          "id": "parva-3_adhyaya-153",
+          "file": "parva-3/adhyaya-153.json",
+          "verses": 31
+        },
+        {
+          "id": "parva-3_adhyaya-154",
+          "file": "parva-3/adhyaya-154.json",
+          "verses": 61
+        },
+        {
+          "id": "parva-3_adhyaya-155",
+          "file": "parva-3/adhyaya-155.json",
+          "verses": 90
+        },
+        {
+          "id": "parva-3_adhyaya-156",
+          "file": "parva-3/adhyaya-156.json",
+          "verses": 31
+        },
+        {
+          "id": "parva-3_adhyaya-157",
+          "file": "parva-3/adhyaya-157.json",
+          "verses": 70
+        },
+        {
+          "id": "parva-3_adhyaya-158",
+          "file": "parva-3/adhyaya-158.json",
+          "verses": 59
+        },
+        {
+          "id": "parva-3_adhyaya-159",
+          "file": "parva-3/adhyaya-159.json",
+          "verses": 35
+        },
+        {
+          "id": "parva-3_adhyaya-160",
+          "file": "parva-3/adhyaya-160.json",
+          "verses": 37
+        },
+        {
+          "id": "parva-3_adhyaya-161",
+          "file": "parva-3/adhyaya-161.json",
+          "verses": 29
+        },
+        {
+          "id": "parva-3_adhyaya-162",
+          "file": "parva-3/adhyaya-162.json",
+          "verses": 16
+        },
+        {
+          "id": "parva-3_adhyaya-163",
+          "file": "parva-3/adhyaya-163.json",
+          "verses": 53
+        },
+        {
+          "id": "parva-3_adhyaya-164",
+          "file": "parva-3/adhyaya-164.json",
+          "verses": 58
+        },
+        {
+          "id": "parva-3_adhyaya-165",
+          "file": "parva-3/adhyaya-165.json",
+          "verses": 23
+        },
+        {
+          "id": "parva-3_adhyaya-166",
+          "file": "parva-3/adhyaya-166.json",
+          "verses": 23
+        },
+        {
+          "id": "parva-3_adhyaya-167",
+          "file": "parva-3/adhyaya-167.json",
+          "verses": 28
+        },
+        {
+          "id": "parva-3_adhyaya-168",
+          "file": "parva-3/adhyaya-168.json",
+          "verses": 30
+        },
+        {
+          "id": "parva-3_adhyaya-169",
+          "file": "parva-3/adhyaya-169.json",
+          "verses": 35
+        },
+        {
+          "id": "parva-3_adhyaya-170",
+          "file": "parva-3/adhyaya-170.json",
+          "verses": 69
+        },
+        {
+          "id": "parva-3_adhyaya-171",
+          "file": "parva-3/adhyaya-171.json",
+          "verses": 17
+        },
+        {
+          "id": "parva-3_adhyaya-172",
+          "file": "parva-3/adhyaya-172.json",
+          "verses": 24
+        },
+        {
+          "id": "parva-3_adhyaya-173",
+          "file": "parva-3/adhyaya-173.json",
+          "verses": 22
+        },
+        {
+          "id": "parva-3_adhyaya-174",
+          "file": "parva-3/adhyaya-174.json",
+          "verses": 24
+        },
+        {
+          "id": "parva-3_adhyaya-175",
+          "file": "parva-3/adhyaya-175.json",
+          "verses": 21
+        },
+        {
+          "id": "parva-3_adhyaya-176",
+          "file": "parva-3/adhyaya-176.json",
+          "verses": 51
+        },
+        {
+          "id": "parva-3_adhyaya-177",
+          "file": "parva-3/adhyaya-177.json",
+          "verses": 33
+        },
+        {
+          "id": "parva-3_adhyaya-178",
+          "file": "parva-3/adhyaya-178.json",
+          "verses": 50
+        },
+        {
+          "id": "parva-3_adhyaya-179",
+          "file": "parva-3/adhyaya-179.json",
+          "verses": 18
+        },
+        {
+          "id": "parva-3_adhyaya-180",
+          "file": "parva-3/adhyaya-180.json",
+          "verses": 49
+        },
+        {
+          "id": "parva-3_adhyaya-181",
+          "file": "parva-3/adhyaya-181.json",
+          "verses": 41
+        },
+        {
+          "id": "parva-3_adhyaya-182",
+          "file": "parva-3/adhyaya-182.json",
+          "verses": 21
+        },
+        {
+          "id": "parva-3_adhyaya-183",
+          "file": "parva-3/adhyaya-183.json",
+          "verses": 32
+        },
+        {
+          "id": "parva-3_adhyaya-184",
+          "file": "parva-3/adhyaya-184.json",
+          "verses": 25
+        },
+        {
+          "id": "parva-3_adhyaya-185",
+          "file": "parva-3/adhyaya-185.json",
+          "verses": 54
+        },
+        {
+          "id": "parva-3_adhyaya-186",
+          "file": "parva-3/adhyaya-186.json",
+          "verses": 129
+        },
+        {
+          "id": "parva-3_adhyaya-187",
+          "file": "parva-3/adhyaya-187.json",
+          "verses": 55
+        },
+        {
+          "id": "parva-3_adhyaya-188",
+          "file": "parva-3/adhyaya-188.json",
+          "verses": 93
+        },
+        {
+          "id": "parva-3_adhyaya-189",
+          "file": "parva-3/adhyaya-189.json",
+          "verses": 31
+        },
+        {
+          "id": "parva-3_adhyaya-190",
+          "file": "parva-3/adhyaya-190.json",
+          "verses": 25
+        },
+        {
+          "id": "parva-3_adhyaya-191",
+          "file": "parva-3/adhyaya-191.json",
+          "verses": 3
+        },
+        {
+          "id": "parva-3_adhyaya-192",
+          "file": "parva-3/adhyaya-192.json",
+          "verses": 29
+        },
+        {
+          "id": "parva-3_adhyaya-193",
+          "file": "parva-3/adhyaya-193.json",
+          "verses": 27
+        },
+        {
+          "id": "parva-3_adhyaya-194",
+          "file": "parva-3/adhyaya-194.json",
+          "verses": 30
+        },
+        {
+          "id": "parva-3_adhyaya-195",
+          "file": "parva-3/adhyaya-195.json",
+          "verses": 39
+        },
+        {
+          "id": "parva-3_adhyaya-196",
+          "file": "parva-3/adhyaya-196.json",
+          "verses": 21
+        },
+        {
+          "id": "parva-3_adhyaya-197",
+          "file": "parva-3/adhyaya-197.json",
+          "verses": 44
+        },
+        {
+          "id": "parva-3_adhyaya-198",
+          "file": "parva-3/adhyaya-198.json",
+          "verses": 94
+        },
+        {
+          "id": "parva-3_adhyaya-199",
+          "file": "parva-3/adhyaya-199.json",
+          "verses": 34
+        },
+        {
+          "id": "parva-3_adhyaya-200",
+          "file": "parva-3/adhyaya-200.json",
+          "verses": 54
+        },
+        {
+          "id": "parva-3_adhyaya-201",
+          "file": "parva-3/adhyaya-201.json",
+          "verses": 20
+        },
+        {
+          "id": "parva-3_adhyaya-202",
+          "file": "parva-3/adhyaya-202.json",
+          "verses": 25
+        },
+        {
+          "id": "parva-3_adhyaya-203",
+          "file": "parva-3/adhyaya-203.json",
+          "verses": 51
+        },
+        {
+          "id": "parva-3_adhyaya-204",
+          "file": "parva-3/adhyaya-204.json",
+          "verses": 27
+        },
+        {
+          "id": "parva-3_adhyaya-205",
+          "file": "parva-3/adhyaya-205.json",
+          "verses": 29
+        },
+        {
+          "id": "parva-3_adhyaya-206",
+          "file": "parva-3/adhyaya-206.json",
+          "verses": 34
+        },
+        {
+          "id": "parva-3_adhyaya-207",
+          "file": "parva-3/adhyaya-207.json",
+          "verses": 20
+        },
+        {
+          "id": "parva-3_adhyaya-208",
+          "file": "parva-3/adhyaya-208.json",
+          "verses": 8
+        },
+        {
+          "id": "parva-3_adhyaya-209",
+          "file": "parva-3/adhyaya-209.json",
+          "verses": 25
+        },
+        {
+          "id": "parva-3_adhyaya-210",
+          "file": "parva-3/adhyaya-210.json",
+          "verses": 19
+        },
+        {
+          "id": "parva-3_adhyaya-211",
+          "file": "parva-3/adhyaya-211.json",
+          "verses": 31
+        },
+        {
+          "id": "parva-3_adhyaya-212",
+          "file": "parva-3/adhyaya-212.json",
+          "verses": 30
+        },
+        {
+          "id": "parva-3_adhyaya-213",
+          "file": "parva-3/adhyaya-213.json",
+          "verses": 52
+        },
+        {
+          "id": "parva-3_adhyaya-214",
+          "file": "parva-3/adhyaya-214.json",
+          "verses": 37
+        },
+        {
+          "id": "parva-3_adhyaya-215",
+          "file": "parva-3/adhyaya-215.json",
+          "verses": 23
+        },
+        {
+          "id": "parva-3_adhyaya-216",
+          "file": "parva-3/adhyaya-216.json",
+          "verses": 15
+        },
+        {
+          "id": "parva-3_adhyaya-217",
+          "file": "parva-3/adhyaya-217.json",
+          "verses": 14
+        },
+        {
+          "id": "parva-3_adhyaya-218",
+          "file": "parva-3/adhyaya-218.json",
+          "verses": 49
+        },
+        {
+          "id": "parva-3_adhyaya-219",
+          "file": "parva-3/adhyaya-219.json",
+          "verses": 58
+        },
+        {
+          "id": "parva-3_adhyaya-220",
+          "file": "parva-3/adhyaya-220.json",
+          "verses": 27
+        },
+        {
+          "id": "parva-3_adhyaya-221",
+          "file": "parva-3/adhyaya-221.json",
+          "verses": 80
+        },
+        {
+          "id": "parva-3_adhyaya-222",
+          "file": "parva-3/adhyaya-222.json",
+          "verses": 59
+        },
+        {
+          "id": "parva-3_adhyaya-223",
+          "file": "parva-3/adhyaya-223.json",
+          "verses": 12
+        },
+        {
+          "id": "parva-3_adhyaya-224",
+          "file": "parva-3/adhyaya-224.json",
+          "verses": 17
+        },
+        {
+          "id": "parva-3_adhyaya-225",
+          "file": "parva-3/adhyaya-225.json",
+          "verses": 31
+        },
+        {
+          "id": "parva-3_adhyaya-226",
+          "file": "parva-3/adhyaya-226.json",
+          "verses": 22
+        },
+        {
+          "id": "parva-3_adhyaya-227",
+          "file": "parva-3/adhyaya-227.json",
+          "verses": 24
+        },
+        {
+          "id": "parva-3_adhyaya-228",
+          "file": "parva-3/adhyaya-228.json",
+          "verses": 29
+        },
+        {
+          "id": "parva-3_adhyaya-229",
+          "file": "parva-3/adhyaya-229.json",
+          "verses": 29
+        },
+        {
+          "id": "parva-3_adhyaya-230",
+          "file": "parva-3/adhyaya-230.json",
+          "verses": 31
+        },
+        {
+          "id": "parva-3_adhyaya-231",
+          "file": "parva-3/adhyaya-231.json",
+          "verses": 21
+        },
+        {
+          "id": "parva-3_adhyaya-232",
+          "file": "parva-3/adhyaya-232.json",
+          "verses": 21
+        },
+        {
+          "id": "parva-3_adhyaya-233",
+          "file": "parva-3/adhyaya-233.json",
+          "verses": 21
+        },
+        {
+          "id": "parva-3_adhyaya-234",
+          "file": "parva-3/adhyaya-234.json",
+          "verses": 28
+        },
+        {
+          "id": "parva-3_adhyaya-235",
+          "file": "parva-3/adhyaya-235.json",
+          "verses": 25
+        },
+        {
+          "id": "parva-3_adhyaya-236",
+          "file": "parva-3/adhyaya-236.json",
+          "verses": 15
+        },
+        {
+          "id": "parva-3_adhyaya-237",
+          "file": "parva-3/adhyaya-237.json",
+          "verses": 15
+        },
+        {
+          "id": "parva-3_adhyaya-238",
+          "file": "parva-3/adhyaya-238.json",
+          "verses": 49
+        },
+        {
+          "id": "parva-3_adhyaya-239",
+          "file": "parva-3/adhyaya-239.json",
+          "verses": 26
+        },
+        {
+          "id": "parva-3_adhyaya-240",
+          "file": "parva-3/adhyaya-240.json",
+          "verses": 47
+        },
+        {
+          "id": "parva-3_adhyaya-241",
+          "file": "parva-3/adhyaya-241.json",
+          "verses": 37
+        },
+        {
+          "id": "parva-3_adhyaya-242",
+          "file": "parva-3/adhyaya-242.json",
+          "verses": 24
+        },
+        {
+          "id": "parva-3_adhyaya-243",
+          "file": "parva-3/adhyaya-243.json",
+          "verses": 24
+        },
+        {
+          "id": "parva-3_adhyaya-244",
+          "file": "parva-3/adhyaya-244.json",
+          "verses": 16
+        },
+        {
+          "id": "parva-3_adhyaya-245",
+          "file": "parva-3/adhyaya-245.json",
+          "verses": 34
+        },
+        {
+          "id": "parva-3_adhyaya-246",
+          "file": "parva-3/adhyaya-246.json",
+          "verses": 36
+        },
+        {
+          "id": "parva-3_adhyaya-247",
+          "file": "parva-3/adhyaya-247.json",
+          "verses": 47
+        },
+        {
+          "id": "parva-3_adhyaya-248",
+          "file": "parva-3/adhyaya-248.json",
+          "verses": 17
+        },
+        {
+          "id": "parva-3_adhyaya-249",
+          "file": "parva-3/adhyaya-249.json",
+          "verses": 13
+        },
+        {
+          "id": "parva-3_adhyaya-250",
+          "file": "parva-3/adhyaya-250.json",
+          "verses": 9
+        },
+        {
+          "id": "parva-3_adhyaya-251",
+          "file": "parva-3/adhyaya-251.json",
+          "verses": 21
+        },
+        {
+          "id": "parva-3_adhyaya-252",
+          "file": "parva-3/adhyaya-252.json",
+          "verses": 27
+        },
+        {
+          "id": "parva-3_adhyaya-253",
+          "file": "parva-3/adhyaya-253.json",
+          "verses": 26
+        },
+        {
+          "id": "parva-3_adhyaya-254",
+          "file": "parva-3/adhyaya-254.json",
+          "verses": 21
+        },
+        {
+          "id": "parva-3_adhyaya-255",
+          "file": "parva-3/adhyaya-255.json",
+          "verses": 59
+        },
+        {
+          "id": "parva-3_adhyaya-256",
+          "file": "parva-3/adhyaya-256.json",
+          "verses": 30
+        },
+        {
+          "id": "parva-3_adhyaya-257",
+          "file": "parva-3/adhyaya-257.json",
+          "verses": 10
+        },
+        {
+          "id": "parva-3_adhyaya-258",
+          "file": "parva-3/adhyaya-258.json",
+          "verses": 16
+        },
+        {
+          "id": "parva-3_adhyaya-259",
+          "file": "parva-3/adhyaya-259.json",
+          "verses": 40
+        },
+        {
+          "id": "parva-3_adhyaya-260",
+          "file": "parva-3/adhyaya-260.json",
+          "verses": 15
+        },
+        {
+          "id": "parva-3_adhyaya-261",
+          "file": "parva-3/adhyaya-261.json",
+          "verses": 55
+        },
+        {
+          "id": "parva-3_adhyaya-262",
+          "file": "parva-3/adhyaya-262.json",
+          "verses": 41
+        },
+        {
+          "id": "parva-3_adhyaya-263",
+          "file": "parva-3/adhyaya-263.json",
+          "verses": 43
+        },
+        {
+          "id": "parva-3_adhyaya-264",
+          "file": "parva-3/adhyaya-264.json",
+          "verses": 73
+        },
+        {
+          "id": "parva-3_adhyaya-265",
+          "file": "parva-3/adhyaya-265.json",
+          "verses": 30
+        },
+        {
+          "id": "parva-3_adhyaya-266",
+          "file": "parva-3/adhyaya-266.json",
+          "verses": 68
+        },
+        {
+          "id": "parva-3_adhyaya-267",
+          "file": "parva-3/adhyaya-267.json",
+          "verses": 54
+        },
+        {
+          "id": "parva-3_adhyaya-268",
+          "file": "parva-3/adhyaya-268.json",
+          "verses": 40
+        },
+        {
+          "id": "parva-3_adhyaya-269",
+          "file": "parva-3/adhyaya-269.json",
+          "verses": 14
+        },
+        {
+          "id": "parva-3_adhyaya-270",
+          "file": "parva-3/adhyaya-270.json",
+          "verses": 29
+        },
+        {
+          "id": "parva-3_adhyaya-271",
+          "file": "parva-3/adhyaya-271.json",
+          "verses": 27
+        },
+        {
+          "id": "parva-3_adhyaya-272",
+          "file": "parva-3/adhyaya-272.json",
+          "verses": 26
+        },
+        {
+          "id": "parva-3_adhyaya-273",
+          "file": "parva-3/adhyaya-273.json",
+          "verses": 33
+        },
+        {
+          "id": "parva-3_adhyaya-274",
+          "file": "parva-3/adhyaya-274.json",
+          "verses": 31
+        },
+        {
+          "id": "parva-3_adhyaya-275",
+          "file": "parva-3/adhyaya-275.json",
+          "verses": 69
+        },
+        {
+          "id": "parva-3_adhyaya-276",
+          "file": "parva-3/adhyaya-276.json",
+          "verses": 13
+        },
+        {
+          "id": "parva-3_adhyaya-277",
+          "file": "parva-3/adhyaya-277.json",
+          "verses": 41
+        },
+        {
+          "id": "parva-3_adhyaya-278",
+          "file": "parva-3/adhyaya-278.json",
+          "verses": 32
+        },
+        {
+          "id": "parva-3_adhyaya-279",
+          "file": "parva-3/adhyaya-279.json",
+          "verses": 23
+        },
+        {
+          "id": "parva-3_adhyaya-280",
+          "file": "parva-3/adhyaya-280.json",
+          "verses": 33
+        },
+        {
+          "id": "parva-3_adhyaya-281",
+          "file": "parva-3/adhyaya-281.json",
+          "verses": 108
+        },
+        {
+          "id": "parva-3_adhyaya-282",
+          "file": "parva-3/adhyaya-282.json",
+          "verses": 44
+        },
+        {
+          "id": "parva-3_adhyaya-283",
+          "file": "parva-3/adhyaya-283.json",
+          "verses": 16
+        },
+        {
+          "id": "parva-3_adhyaya-284",
+          "file": "parva-3/adhyaya-284.json",
+          "verses": 39
+        },
+        {
+          "id": "parva-3_adhyaya-285",
+          "file": "parva-3/adhyaya-285.json",
+          "verses": 17
+        },
+        {
+          "id": "parva-3_adhyaya-286",
+          "file": "parva-3/adhyaya-286.json",
+          "verses": 20
+        },
+        {
+          "id": "parva-3_adhyaya-287",
+          "file": "parva-3/adhyaya-287.json",
+          "verses": 29
+        },
+        {
+          "id": "parva-3_adhyaya-288",
+          "file": "parva-3/adhyaya-288.json",
+          "verses": 19
+        },
+        {
+          "id": "parva-3_adhyaya-289",
+          "file": "parva-3/adhyaya-289.json",
+          "verses": 23
+        },
+        {
+          "id": "parva-3_adhyaya-290",
+          "file": "parva-3/adhyaya-290.json",
+          "verses": 26
+        },
+        {
+          "id": "parva-3_adhyaya-291",
+          "file": "parva-3/adhyaya-291.json",
+          "verses": 28
+        },
+        {
+          "id": "parva-3_adhyaya-292",
+          "file": "parva-3/adhyaya-292.json",
+          "verses": 27
+        },
+        {
+          "id": "parva-3_adhyaya-293",
+          "file": "parva-3/adhyaya-293.json",
+          "verses": 23
+        },
+        {
+          "id": "parva-3_adhyaya-294",
+          "file": "parva-3/adhyaya-294.json",
+          "verses": 43
+        },
+        {
+          "id": "parva-3_adhyaya-295",
+          "file": "parva-3/adhyaya-295.json",
+          "verses": 17
+        },
+        {
+          "id": "parva-3_adhyaya-296",
+          "file": "parva-3/adhyaya-296.json",
+          "verses": 43
+        },
+        {
+          "id": "parva-3_adhyaya-297",
+          "file": "parva-3/adhyaya-297.json",
+          "verses": 74
+        },
+        {
+          "id": "parva-3_adhyaya-298",
+          "file": "parva-3/adhyaya-298.json",
+          "verses": 28
+        },
+        {
+          "id": "parva-3_adhyaya-299",
+          "file": "parva-3/adhyaya-299.json",
+          "verses": 29
         }
       ],
-      "completeness": 0.0
+      "completeness": 100.0
     },
     {
       "slug": "samskaras",
@@ -139,12 +2106,12 @@
           "verses": 3
         }
       ],
-      "completeness": 66.67
+      "completeness": 100.0
     },
     {
       "slug": "vishnu-purana",
-      "total_chapters": 1,
-      "total_verses": 1,
+      "total_chapters": 6,
+      "total_verses": 6,
       "languages": [
         "en"
       ],
@@ -156,14 +2123,34 @@
         {
           "file": "vishnu-purana-chapter-1.json",
           "verses": 1
+        },
+        {
+          "file": "vishnu-purana-chapter-2.json",
+          "verses": 1
+        },
+        {
+          "file": "vishnu-purana-chapter-3.json",
+          "verses": 1
+        },
+        {
+          "file": "vishnu-purana-chapter-4.json",
+          "verses": 1
+        },
+        {
+          "file": "vishnu-purana-chapter-5.json",
+          "verses": 1
+        },
+        {
+          "file": "vishnu-purana-chapter-6.json",
+          "verses": 1
         }
       ],
       "completeness": 100.0
     },
     {
       "slug": "yoga-sutras",
-      "total_chapters": 1,
-      "total_verses": 9,
+      "total_chapters": 5,
+      "total_verses": 204,
       "languages": [
         "en"
       ],
@@ -176,6 +2163,22 @@
         {
           "file": "yoga-sutras-chapter-1.json",
           "verses": 9
+        },
+        {
+          "file": "yoga-sutras-pada-1.json",
+          "verses": 51
+        },
+        {
+          "file": "yoga-sutras-pada-2.json",
+          "verses": 55
+        },
+        {
+          "file": "yoga-sutras-pada-3.json",
+          "verses": 55
+        },
+        {
+          "file": "yoga-sutras-pada-4.json",
+          "verses": 34
         }
       ],
       "completeness": 100.0

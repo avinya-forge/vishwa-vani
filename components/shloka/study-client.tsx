@@ -9,71 +9,84 @@ import VedicManuscriptCard from './vedic-manuscript-card'
 import { VEDIC_LIBRARY } from '@/lib/texts'
 import { useTranslations, useLocale } from 'next-intl'
 
-interface FragmentLayer {
-  author: string
-  lang: string
-  type: string
-  content: string
-}
-
-interface Verse {
-  id: string
-  text_slug: string
-  chapter: number
-  verse: number
-  original?: string
-  transliteration?: string
-  layers: FragmentLayer[]
-}
-
-const AUTHOR_METADATA: Record<string, { name: string, bio: string, label: string, icon: string }> = {
+// 🏛️ DYNAMIC PERSPECTIVE METADATA
+const DEFAULT_METADATA: Record<string, { name: string, bio: string, label: string, icon: string }> = {
   'none': { 
-    name: 'Primal Perspective', 
-    label: 'Refined Scripture',
-    icon: '🧘',
-    bio: 'Pure scripture without external commentary, focusing on the original Sanskrit shloka and its meaning.' 
-  },
-  'iskcon-en': { 
-    name: 'A.C. Bhaktivedanta Swami Prabhupada', 
-    label: 'Bhaktivedanta Vedapurusa',
-    icon: '🔱',
-    bio: 'Founder-Acharya of the International Society for Krishna Consciousness (ISKCON).' 
-  },
-  'dnyaneshwari-en': { 
-    name: 'Sant Dnyaneshwar Maharaj (Trans. D.A. Ghaisas)', 
-    label: 'The Dnyaneshwari',
+    name: 'Original Text Only', 
+    label: 'Text Only',
     icon: '📜',
-    bio: 'The definitive 13th-century Marathi commentary translated by Diwakar Anant Ghaisas.' 
+    bio: 'Pure scripture — Sanskrit shloka and its meaning, without external commentary.' 
   },
   'all': { 
-    name: 'Comparative Scholarship Synthesis', 
-    label: 'All Commentaries',
+    name: 'All Commentaries', 
+    label: 'All Scholars',
     icon: '🏛️',
-    bio: 'A side-by-side comparative view of multiple scriptural realizations.' 
+    bio: 'Compare all available scholarly perspectives side by side.' 
   }
 }
 
 export default function StudyClient({ 
   textSlug, 
   chapter, 
-  verses 
+  verses,
+  adhyayaList = []
 }: { 
   textSlug: string, 
   chapter: number, 
-  verses: Verse[] 
+  verses: any[],
+  adhyayaList?: { num: number, id: string }[]
 }) {
   const t = useTranslations('study')
   const locale = useLocale()
   const router = useRouter()
   
-  // 🔱 PERSISTENT SCHOLAR SELECTION: Remembering user preference across pages
-  const [scholarSelection, setScholarSelection] = useState<string>('iskcon-en')
+  // Collect all unique scholarly authors across verses
+  const availableScholars = React.useMemo(() => {
+    const scholars = new Set<string>(['none'])
+    verses.forEach((v: any) => v.layers?.forEach((l: any) => {
+      if (l.type === 'commentary') scholars.add(l.author)
+    }))
+    // Only add 'all' if there are multiple commentary authors
+    const commentaryAuthors = Array.from(scholars).filter(s => s !== 'none')
+    if (commentaryAuthors.length > 1) scholars.add('all')
+    return Array.from(scholars)
+  }, [verses])
+
+  // Get display metadata for a scholar key
+  const getScholarMeta = (authorKey: string) => {
+    if (DEFAULT_METADATA[authorKey]) return DEFAULT_METADATA[authorKey]
+    for (const v of verses as any[]) {
+      const layer = v.layers?.find((l: any) => l.author === authorKey)
+      if (layer && layer.author_name) {
+        return {
+          name: layer.author_name,
+          bio: layer.author_bio || '',
+          label: layer.author_label || layer.author_name,
+          icon: layer.author_icon || '📜'
+        }
+      }
+    }
+    // Friendly fallback names
+    if (authorKey === 'iskcon') return { name: 'A.C. Bhaktivedanta Swami Prabhupada', label: 'ISKCON / Prabhupada', icon: '🔱', bio: 'Founder-Acharya of ISKCON. Bhagavad-gītā As It Is.' }
+    return { name: authorKey, label: authorKey, icon: '📜', bio: '' }
+  }
+
+  // Default to first available non-none scholar
+  const defaultScholar = availableScholars.find(s => s !== 'none') || 'none'
+  const [scholarSelection, setScholarSelection] = useState<string>(defaultScholar)
   const [showChapterMatrix, setShowChapterMatrix] = useState(false)
+  const [showAdhyayaMatrix, setShowAdhyayaMatrix] = useState(false)
+  const [activeAdhyaya, setActiveAdhyaya] = useState<number>(1)
   
   useEffect(() => {
     const saved = localStorage.getItem('vishwa_scholar_pref')
-    if (saved && AUTHOR_METADATA[saved]) setScholarSelection(saved)
-  }, [])
+    if (saved && availableScholars.includes(saved)) {
+      setScholarSelection(saved)
+    } else {
+       const first = availableScholars.find(s => s !== 'none')
+       if (first) setScholarSelection(first)
+    }
+  }, [availableScholars])
 
   const updateScholar = (s: string) => {
     setScholarSelection(s)
@@ -82,28 +95,25 @@ export default function StudyClient({
 
   const [synthesisMap, setSynthesisMap] = useState<Record<string, { text: string; loading: boolean }>>({})
   const [isChapterSynthesizing, setIsChapterSynthesizing] = useState(false)
-
   const verseRefs = useRef<Record<number, HTMLElement | null>>({})
-
   const cleanText = (txt: string) => (txt || '').replace(/\\n/g, '\n')
   
-  /** 🧠 One-Click Chapter Synthesis */
   const synthesizeEntireChapter = async () => {
     setIsChapterSynthesizing(true)
     for (const verse of verses) {
-       if (synthesisMap[verse.id]?.text) continue 
-       setSynthesisMap(p => ({...p, [verse.id]: { text: '', loading: true }}))
+       if (synthesisMap[(verse as any).id]?.text) continue 
+       setSynthesisMap(p => ({...p, [(verse as any).id]: { text: '', loading: true }}))
        try {
-         const texts = verse.layers.filter(l => l.type === 'commentary' && (l.author.includes('iskcon') || l.author.includes('dnyan'))).map(l => l.content)
+         const texts = (verse as any).layers.filter((l: any) => l.type === 'commentary').map((l: any) => l.content)
          const res = await fetch('/api/synthesize', { 
            method: 'POST', 
            headers: {'Content-Type': 'application/json'}, 
-           body: JSON.stringify({ verseId: verse.id, contextTexts: texts, language: 'en' }) 
+           body: JSON.stringify({ verseId: (verse as any).id, contextTexts: texts, language: 'en' }) 
          })
          const data = await res.json()
-         if (data.success) setSynthesisMap(p => ({...p, [verse.id]: { text: data.synthesis, loading: false }}))
+         if (data.success) setSynthesisMap(p => ({...p, [(verse as any).id]: { text: data.synthesis, loading: false }}))
        } catch (e) { 
-         setSynthesisMap(p => ({...p, [verse.id]: { text: 'Synthesis failed.', loading: false }})) 
+         setSynthesisMap(p => ({...p, [(verse as any).id]: { text: 'Synthesis failed.', loading: false }})) 
        }
     }
     setIsChapterSynthesizing(false)
@@ -111,295 +121,266 @@ export default function StudyClient({
 
   const bookData = VEDIC_LIBRARY.find(b => b.slug === textSlug)
   const totalChapters = bookData?.totalChapters || 1
+  const isParva = textSlug === 'mahabharata'
 
   return (
     <>
-      <header className="bg-white border-b border-stone-100 pt-10 pb-12 overflow-hidden relative">
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-orange-100/10 rounded-full blur-[120px] -mr-[300px] -mt-[300px] -z-10" />
-        <div className="max-wide mx-auto flex flex-col md:flex-row justify-between items-start md:items-end gap-10 relative z-10">
-          <div className="space-y-6 flex-1">
-             <div className="flex items-center gap-4">
-                <Link href="/" className="text-[11px] font-black uppercase tracking-[0.4em] text-orange-600 hover:text-orange-700 transition-all flex items-center gap-3">
-                   ← {t('backToDashboard')}
-                </Link>
-                <div className="w-[1px] h-3 bg-stone-200" />
-                <span className="text-[11px] font-black uppercase tracking-[0.3em] text-stone-300">Scholarly Workspace</span>
-             </div>
-             <div className="flex items-center gap-8">
-                <div className="w-2 h-20 bg-gradient-to-b from-orange-600 to-transparent rounded-full glow-orange" />
-                <div>
-                   <h1 className="text-5xl md:text-6xl font-serif font-black text-stone-900 leading-tight mb-4">
-                      {bookData?.name || textSlug}
-                   </h1>
-                   <div className="flex items-center gap-4">
+      {/* ═══════════════════════════════════════════ HEADER ═══ */}
+      <header className="bg-white border-b border-stone-100 pt-8 pb-0 overflow-visible relative">
+        {/* Soft warm glow — top right only */}
+        <div className="absolute top-0 right-0 w-96 h-96 bg-orange-50 rounded-full blur-[100px] -mr-48 -mt-48 opacity-60 pointer-events-none" />
+
+        <div className="max-w-[1400px] mx-auto px-6 relative z-10">
+          {/* Breadcrumb */}
+          <div className="flex items-center gap-3 mb-6">
+            <Link href="/" className="text-[11px] font-bold uppercase tracking-[0.35em] text-orange-500 hover:text-orange-600 transition-colors flex items-center gap-2">
+              ← Library
+            </Link>
+            <span className="text-stone-200">·</span>
+            <span className="text-[11px] font-bold uppercase tracking-[0.25em] text-stone-300">Scholarly Reading</span>
+          </div>
+
+          {/* Title Row */}
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 pb-6">
+            <div className="flex items-center gap-5">
+              {/* Saffron accent bar */}
+              <div className="w-1 h-14 bg-gradient-to-b from-orange-600 to-orange-200 rounded-full flex-shrink-0" />
+              <div>
+                <h1 className="text-4xl md:text-5xl font-serif font-black text-stone-900 leading-none tracking-tight">
+                  {bookData?.name || textSlug}
+                </h1>
+                <div className="flex items-center gap-3 mt-2">
+                  {/* Chapter / Parva selector */}
+                  <button 
+                    onClick={() => setShowChapterMatrix(!showChapterMatrix)}
+                    className="flex items-center gap-2 text-sm font-bold text-stone-500 hover:text-orange-600 transition-colors"
+                  >
+                    <span className="text-orange-600 font-black">{isParva ? 'Parva' : 'Chapter'} {chapter}</span>
+                    <span className="text-stone-300">·</span>
+                    <span className="hidden md:inline">{bookData?.chapterNames[String(chapter)]}</span>
+                    <svg className={`w-3.5 h-3.5 transition-transform text-stone-400 ${showChapterMatrix ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}><path d="M19 9l-7 7-7-7" /></svg>
+                  </button>
+
+                  {/* Adhyaya selector — Mahabharata only */}
+                  {isParva && adhyayaList.length > 0 && (
+                    <>
+                      <span className="text-stone-200">·</span>
                       <button 
-                        onClick={() => setShowChapterMatrix(!showChapterMatrix)}
-                        className="bg-white border-2 border-stone-100 hover:border-orange-600 rounded-xl px-5 py-2.5 text-sm font-black text-stone-700 transition-all flex items-center gap-3 shadow-sm"
+                        onClick={() => setShowAdhyayaMatrix(!showAdhyayaMatrix)}
+                        className="flex items-center gap-1.5 text-sm font-bold text-stone-500 hover:text-orange-600 transition-colors"
                       >
-                        <span className="text-orange-600">Chapter {chapter}</span>
-                        <svg className={`w-4 h-4 transition-transform ${showChapterMatrix ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}><path d="M19 9l-7 7-7-7" /></svg>
+                        <span>Adhyaya {activeAdhyaya}</span>
+                        <svg className={`w-3.5 h-3.5 transition-transform text-stone-400 ${showAdhyayaMatrix ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}><path d="M19 9l-7 7-7-7" /></svg>
                       </button>
-                      <h4 className="text-sm font-bold text-stone-400 uppercase tracking-widest hidden md:block">
-                         {bookData?.chapterNames[String(chapter)]}
-                      </h4>
-                   </div>
+                    </>
+                  )}
                 </div>
-             </div>
+              </div>
+            </div>
+
+            {/* Prev / Next navigation */}
+            <div className="flex items-center gap-2">
+              <button 
+                onClick={() => router.push(`/${textSlug}/${Math.max(1, chapter - 1)}`)} 
+                disabled={chapter === 1}
+                className="p-2.5 rounded-xl border border-stone-200 hover:border-orange-400 hover:text-orange-600 disabled:opacity-30 transition-all"
+              >
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path d="M15 19l-7-7 7-7" /></svg>
+              </button>
+              <span className="text-xs font-bold text-stone-300 px-2">{chapter} / {totalChapters}</span>
+              <button 
+                onClick={() => router.push(`/${textSlug}/${chapter + 1}`)} 
+                disabled={chapter >= totalChapters}
+                className="p-2.5 rounded-xl border border-stone-200 hover:border-orange-400 hover:text-orange-600 disabled:opacity-30 transition-all"
+              >
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path d="M9 5l7 7-7 7" /></svg>
+              </button>
+            </div>
           </div>
 
-          <div className="flex items-center gap-3 bg-stone-50 p-2.5 rounded-2xl border border-stone-100">
-             <button onClick={() => router.push(`/${textSlug}/${Math.max(1, chapter - 1)}`)} className="p-4 hover:bg-white hover:text-orange-600 rounded-xl transition-all disabled:opacity-20 active:scale-90" disabled={chapter === 1}>
-                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}><path d="M15 19l-7-7 7-7" /></svg>
-             </button>
-             <button onClick={() => router.push(`/${textSlug}/${chapter + 1}`)} className="p-4 hover:bg-white hover:text-orange-600 rounded-xl transition-all disabled:opacity-20 active:scale-90" disabled={chapter >= totalChapters}>
-                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}><path d="M9 5l7 7-7 7" /></svg>
-             </button>
+          {/* Chapter number pill strip */}
+          <div className="flex flex-wrap gap-1.5 pb-5 border-t border-stone-50 pt-4">
+            {Array.from({ length: totalChapters }, (_, i) => i + 1).map((n) => (
+              <Link 
+                key={n} 
+                href={`/${textSlug}/${n}`}
+                title={bookData?.chapterNames[String(n)]}
+                className={`w-9 h-9 rounded-lg flex items-center justify-center transition-all text-xs font-black ${
+                  n === chapter 
+                  ? 'bg-stone-900 text-white shadow-md' 
+                  : 'bg-stone-50 text-stone-400 hover:bg-orange-50 hover:text-orange-600'
+                }`}
+              >
+                {n}
+              </Link>
+            ))}
           </div>
         </div>
 
-        <div className="max-wide mx-auto mt-10 space-y-8 relative z-10">
-           {/* ⏳ GENEALOGICAL ANCHOR (Redesigned Stream) */}
-           <VedicTimeline slug={textSlug} />
-           
-           {/* 🗺️ SHARD STREAM (Grid-based Navigator) */}
-           <div className="space-y-6">
-              <div className="flex items-center justify-between px-2">
-                 <h4 className="text-[10px] font-black uppercase tracking-[0.4rem] text-stone-300">Epic Shards ({totalChapters})</h4>
-                 <div className="hidden md:flex items-center gap-4 bg-orange-50/50 px-5 py-2 rounded-full border border-orange-100/50">
-                    <span className="text-[10px] font-black text-orange-600 uppercase tracking-widest leading-none">Currently Exploring: Shard {chapter}</span>
-                 </div>
+        {/* Adhyaya dropdown */}
+        {showAdhyayaMatrix && (
+          <div className="absolute top-full left-0 right-0 mt-1 bg-white border border-stone-100 shadow-2xl z-50 animate-in fade-in slide-in-from-top-2 duration-200">
+            <div className="max-w-[1400px] mx-auto px-6 py-6">
+              <div className="flex items-center justify-between mb-4">
+                <span className="text-xs font-black uppercase tracking-widest text-stone-400">Adhyaya ({adhyayaList.length})</span>
+                <button onClick={() => setShowAdhyayaMatrix(false)} className="text-stone-300 hover:text-stone-700 transition-colors">
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path d="M6 18L18 6M6 6l12 12" /></svg>
+                </button>
               </div>
-              
-              <div className="flex flex-wrap gap-3 px-2">
-                 {Array.from({ length: totalChapters }, (_, i) => i + 1).map((n) => (
-                    <Link 
-                      key={n} 
-                      href={`/${textSlug}/${n}`}
-                      title={bookData?.chapterNames[String(n)]}
-                      className={`w-12 h-12 rounded-xl border-2 flex items-center justify-center transition-all duration-300 font-serif font-black text-lg ${
-                        n === chapter 
-                        ? 'bg-stone-900 border-stone-800 text-white shadow-lg scale-110 z-10' 
-                        : 'bg-white border-stone-100 text-stone-300 hover:border-orange-300 hover:text-stone-900 hover:scale-105'
-                      }`}
-                    >
-                       {n}
-                    </Link>
-                 ))}
+              <div className="grid grid-cols-10 md:grid-cols-20 gap-1.5 max-h-52 overflow-y-auto">
+                {adhyayaList.map((a) => (
+                  <button 
+                    key={a.id} 
+                    onClick={() => {
+                      setActiveAdhyaya(a.num)
+                      setShowAdhyayaMatrix(false)
+                      router.push(`/${textSlug}/${chapter}?adhyaya=${a.num}`)
+                    }}
+                    className={`h-9 rounded-lg text-xs font-black transition-all ${
+                      activeAdhyaya === a.num 
+                      ? 'bg-orange-600 text-white' 
+                      : 'bg-stone-50 text-stone-400 hover:bg-orange-50 hover:text-orange-600'
+                    }`}
+                  >
+                    {a.num}
+                  </button>
+                ))}
               </div>
-           </div>
-        </div>
+            </div>
+          </div>
+        )}
       </header>
 
-      {/* 🛠️ NAVIGATION & CONTROL TOOLBAR (Simplified: Lang toggles removed) */}
-      <div className="sticky top-16 z-40 glass border-b border-stone-200 backdrop-blur-xl">
-        <div className="max-wide flex flex-col md:flex-row justify-between items-center py-4 gap-6">
-           
-           {/* Perspective Selection (Scholarly Custom Selection) */}
-           <div className="flex items-center gap-2 bg-stone-100/50 p-1.5 rounded-[2rem] border border-stone-200 shadow-inner">
-             {(['none', 'iskcon-en', 'dnyaneshwari-en', 'all'] as const).map(s => (
+      {/* ═══════════════════════════════════════════ TOOLBAR ═══ */}
+      <div className="sticky top-16 z-40 bg-white/90 backdrop-blur-md border-b border-stone-100 shadow-sm">
+        <div className="max-w-[1400px] mx-auto px-6 flex items-center justify-between py-3 gap-4">
+          {/* Scholar selector pills */}
+          <div className="flex items-center gap-1 overflow-x-auto">
+            {availableScholars.map(s => {
+              const meta = getScholarMeta(s)
+              return (
                 <button 
                   key={s}
                   onClick={() => updateScholar(s)}
-                  className={`flex items-center gap-3 px-6 py-3 rounded-full text-sm font-black transition-all duration-500 whitespace-nowrap ${
+                  className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all ${
                     scholarSelection === s 
-                    ? 'bg-white text-stone-900 shadow-xl shadow-orange-100/50 scale-105 border border-orange-200' 
-                    : 'text-stone-400 hover:text-stone-600 hover:bg-white/50'
+                    ? 'bg-stone-900 text-white shadow-md' 
+                    : 'text-stone-500 hover:bg-stone-100'
                   }`}
                 >
-                   <span className={scholarSelection === s ? 'opacity-100' : 'opacity-40 grayscale'}>{AUTHOR_METADATA[s].icon}</span>
-                   {AUTHOR_METADATA[s].label}
+                  <span className={scholarSelection === s ? '' : 'grayscale opacity-60'}>{meta.icon}</span>
+                  {meta.label}
                 </button>
-             ))}
-           </div>
+              )
+            })}
+          </div>
 
-           <button 
-             onClick={synthesizeEntireChapter}
-             disabled={isChapterSynthesizing}
-             className="btn-primary !px-8 !py-3 !text-[11px] tracking-widest flex items-center gap-3 active:scale-95"
-           >
-              <span>{isChapterSynthesizing ? '✨' : '🧠'}</span>
-              <span>{isChapterSynthesizing ? 'Synthesizing Wisdom...' : 'Analyze Chapter Intelligence'}</span>
-           </button>
+          {/* AI Synthesis button */}
+          <button 
+            onClick={synthesizeEntireChapter}
+            disabled={isChapterSynthesizing}
+            className="flex-shrink-0 flex items-center gap-2 px-5 py-2 bg-stone-900 hover:bg-orange-600 text-white text-xs font-bold rounded-full transition-all disabled:opacity-60"
+          >
+            <span>{isChapterSynthesizing ? '✨' : '🧠'}</span>
+            <span className="hidden md:inline">{isChapterSynthesizing ? 'Analysing...' : 'AI Analysis'}</span>
+          </button>
         </div>
       </div>
 
-      <main className="bg-[#FAF9F6] relative overflow-hidden">
-        {/* 🎭 VEDIC BACKGROUND ORNAMENTATION (Subtle fixed patterns) */}
-        <div className="fixed inset-0 pointer-events-none opacity-[0.03] grayscale" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M30 0l15 30-15 30-15-30z\' fill=\'%23a16207\' fill-rule=\'evenodd\'/%3E%3C/svg%3E")' }} />
-        
-        <div className="max-wide py-16 flex gap-12 relative z-10">
-           
-           <aside className="hidden xl:block sticky top-44 self-start w-16 space-y-2">
-             <div className="text-[10px] font-black text-stone-200 uppercase tracking-widest mb-6 border-b border-stone-100 pb-2">Shloka Index</div>
-             {verses.map(v => (
-                <button 
-                  key={v.id} 
-                  onClick={() => verseRefs.current[v.verse]?.scrollIntoView({ behavior: 'smooth', block: 'center' })}
-                  className="w-12 h-10 flex items-center justify-center rounded-xl bg-white border-2 border-stone-100 text-[11px] font-serif font-black text-stone-300 hover:border-orange-500 hover:text-orange-600 hover:shadow-lg transition-all"
-                >
-                   {v.verse}
-                </button>
-             ))}
-          </aside>
+      {/* ═══════════════════════════════════════════ VERSES ═══ */}
+      <main className="bg-[#FDFBF8] min-h-screen">
+        <div className="max-w-[900px] mx-auto px-6 py-12 space-y-10">
+          {/* Vedic Timeline — compact version at top */}
+          <VedicTimeline slug={textSlug} />
 
-          <section className="flex-1 space-y-20">
-            {/* 📊 CHAPTER INTELLIGENCE (Archival Metrics & AI Specialty) */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-24 animate-in fade-in slide-in-from-bottom-4 duration-1000 relative">
-               <div className="card-premium p-8 bg-white/40 backdrop-blur-md border-white/50 shadow-2xl hover:translate-y-[-4px] transition-all relative overflow-hidden group">
-                  <div className="absolute inset-0 bg-gradient-to-br from-orange-50/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                  <div className="flex items-center gap-3 mb-4 relative z-10">
-                     <span className="text-xl">📊</span>
-                     <span className="text-[10px] font-black uppercase tracking-[0.3em] text-stone-400">Archival Scope</span>
-                  </div>
-                  <div className="flex items-baseline gap-2 relative z-10">
-                     <span className="text-5xl font-serif font-black text-stone-900">{verses.length}</span>
-                     <span className="text-sm font-black text-stone-300 uppercase tracking-widest leading-none">Shlokas</span>
-                  </div>
-                  <div className="mt-6 h-1.5 w-full bg-stone-100/50 rounded-full overflow-hidden relative z-10">
-                     <div className="h-full bg-orange-400 animate-[vedic-shimmer_3s_infinite]" style={{ width: '100%' }} />
-                  </div>
-               </div>
+          {/* Verses */}
+          {verses.map((verse: any) => {
+            // Find the best "translation/meaning" layer — any English layer that's a translation, or fall back to meaning field
+            const meaningLayer = verse.layers?.find((l: any) => l.type === 'translation' && l.lang === 'en')
+            const meaning = meaningLayer?.content || verse.meaning || verse.translation || ''
+            
+            // Commentary layers — filter by selected scholar
+            const commentaries = verse.layers?.filter((l: any) => {
+              if (scholarSelection === 'none') return false
+              if (l.type !== 'commentary') return false
+              if (l.lang && l.lang !== 'en') return false
+              if (scholarSelection === 'all') return true
+              return l.author === scholarSelection || l.author.startsWith(scholarSelection)
+            }) || []
 
-               <div className="card-premium p-8 bg-white/40 backdrop-blur-md border-white/50 shadow-2xl hover:translate-y-[-4px] transition-all relative overflow-hidden">
-                  <div className="flex items-center gap-3 mb-5">
-                     <span className="text-xl">🧠</span>
-                     <span className="text-[10px] font-black uppercase tracking-[0.3em] text-orange-600/40">AI Scriptural Focus</span>
-                  </div>
-                  <div className="space-y-4">
-                     <div className="flex flex-wrap gap-2">
-                        {((verses[0] as any)?.ai_metadata?.specialty?.focus || ['Dharma', 'Philosophy']).map((t: string) => (
-                           <span key={t} className="px-3 py-1 bg-white/80 text-[9px] font-black text-orange-700 uppercase tracking-[0.2em] rounded-full border border-orange-100/30 shadow-sm">{t}</span>
-                        ))}
-                     </div>
-                     <p className="text-sm font-serif italic text-stone-500 leading-relaxed antialiased">
-                        { (verses[0] as any)?.ai_metadata?.specialty?.description || 'Deep scholarly exploration of the foundational scriptural narrative and philosophical discourse.' }
-                     </p>
-                  </div>
-               </div>
+            const synth = synthesisMap[verse.id]
 
-               <div className="card-premium p-8 bg-white/40 backdrop-blur-md border-white/50 shadow-2xl hover:translate-y-[-4px] transition-all relative overflow-hidden">
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-orange-100/10 rounded-full blur-3xl -mr-16 -mt-16" />
-                  <div className="flex items-center gap-3 mb-4">
-                     <span className="text-xl">⏳</span>
-                     <span className="text-[10px] font-black uppercase tracking-[0.3em] text-stone-400">Historical Window</span>
-                  </div>
-                  <div className="relative z-10 space-y-1">
-                     <div className="text-2xl font-serif font-black text-stone-900">~3102 BCE</div>
-                     <div className="text-[10px] font-black text-stone-300 uppercase tracking-[0.3em]">Era: Dvapara Yuga</div>
-                  </div>
-                  <div className="mt-8 flex items-center justify-between text-[10px] font-black text-orange-600/60 uppercase tracking-widest pt-4 border-t border-stone-100/50">
-                     <span>Archival Status</span>
-                     <span className="flex items-center gap-2">
-                        <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
-                        Verified Gold
-                     </span>
-                  </div>
-               </div>
-            </div>
+            return (
+              <article 
+                key={verse.id} 
+                ref={el => { verseRefs.current[verse.verse] = el as HTMLElement | null }}
+                className="bg-white rounded-2xl border border-stone-100 shadow-sm hover:shadow-md hover:border-orange-100 transition-all duration-300 overflow-hidden"
+              >
+                {/* Verse number badge */}
+                <div className="flex items-center justify-between px-6 py-3 bg-stone-50 border-b border-stone-100">
+                  <span className="text-xs font-black uppercase tracking-widest text-stone-400">
+                    {isParva ? 'Śloka' : 'BG'} {verse.chapter}.{verse.verse}
+                  </span>
+                  <button
+                    onClick={() => verseRefs.current[verse.verse]?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+                    className="text-[10px] text-stone-300 hover:text-orange-400 font-bold transition-colors"
+                  >
+                    #
+                  </button>
+                </div>
 
-            {verses.map((verse) => {
-               const enTrans = verse.layers.find(l => l.type === 'translation' && l.lang === 'en')
-               
-               // 🔱 TARGETED SCHOLAR FILTERING (ISKCON vs DNYANESHWARI)
-               const commentaries = verse.layers.filter(l => {
-                  if (scholarSelection === 'none') return false
-                  if (l.lang !== 'en') return false // Filter out HI/MR placeholders
-                  if (scholarSelection === 'all') return true 
-                  if (scholarSelection === 'iskcon-en') return l.author.includes('iskcon') || l.author.includes('prabhu')
-                  if (scholarSelection === 'dnyaneshwari-en') return l.author.includes('dnyan')
-                  return false
-               })
-               
-               const synth = synthesisMap[verse.id]
-               const duoMode = scholarSelection === 'all' || (scholarSelection !== 'all' && commentaries.length > 1)
-
-               return (
-                 <article 
-                   key={verse.id} 
-                   ref={el => { verseRefs.current[verse.verse] = el }}
-                   className="bg-white rounded-[4rem] p-0 shadow-2xl border border-stone-100 group transition-all duration-700 hover:shadow-orange-100/50 relative"
-                 >
-                    {/* 🎨 MANUSCRIPT HANDLE (Visual ornamentation) */}
-                    <div className="absolute left-6 top-1/2 -translate-y-1/2 w-px h-32 bg-stone-100 group-hover:bg-orange-200 transition-colors" />
-                    <div className="absolute right-6 top-1/2 -translate-y-1/2 w-px h-32 bg-stone-100 group-hover:bg-orange-200 transition-colors" />
-
-                    {/* 📜 SACRED RAIL (Conditionally rendered for fragments vs prose) */}
-                    {verse.original && (
-                       <div className="bg-[#FCFBF9] border-b border-stone-100 px-12 py-12 md:py-20 text-center relative overflow-hidden">
-                          <div className="absolute top-8 right-12 text-[9px] font-black text-stone-300 uppercase tracking-[0.4rem] opacity-50">
-                             {bookData?.name.split(' ')[0]} Fragment {verse.chapter}.{verse.verse}
-                          </div>
-                          <ShlokaMask text={verse?.original || ''} fontSize={28} />
-                          {verse.transliteration && (
-                            <p className="mt-8 max-w-2xl mx-auto text-stone-400 font-serif italic text-sm md:text-lg leading-relaxed opacity-60">
-                               {verse.transliteration}
-                            </p>
-                          )}
-                       </div>
+                {/* Sanskrit */}
+                {verse.original && (
+                  <div className="px-8 py-8 text-center border-b border-stone-50">
+                    <ShlokaMask text={verse.original} fontSize={22} />
+                    {verse.transliteration && (
+                      <p className="mt-4 text-stone-400 font-serif italic text-sm leading-relaxed max-w-xl mx-auto">
+                        {verse.transliteration}
+                      </p>
                     )}
-                    
-                    {!verse.original && (
-                       <div className="bg-[#FAF9F7]/50 px-12 py-16 md:py-24 text-center border-b border-stone-100 flex flex-col items-center">
-                          <div className="max-w-xl mx-auto space-y-4">
-                             <div className="text-[9px] font-black text-orange-600/40 uppercase tracking-[0.6em] mb-4">Chronicle Transition</div>
-                             <h2 className="text-xl md:text-2xl font-serif italic text-stone-600 leading-relaxed font-light">
-                                Entering the historical annals of {bookData?.name.split(' ')[0]}
-                             </h2>
-                          </div>
-                          <div className="mt-8 h-12 w-px bg-gradient-to-b from-orange-200 to-transparent opacity-50" />
-                       </div>
-                    )}
+                  </div>
+                )}
+                
+                {/* English meaning / translation */}
+                {meaning && (
+                  <div className="px-8 py-6 border-b border-stone-50">
+                    <p className="text-[11px] font-black uppercase tracking-widest text-stone-300 mb-3">Meaning</p>
+                    <p className="text-stone-700 leading-relaxed text-base font-medium">
+                      {cleanText(meaning)}
+                    </p>
+                  </div>
+                )}
 
-                    {/* 📚 MEANING LAYER (Scholarly Literary Form) */}
-                    <div className="px-12 py-10 md:py-14 border-b border-stone-50 bg-[#FDFCFA]">
-                        <div className="max-w-4xl mx-auto space-y-6 text-center">
-                           <div className="flex items-center justify-center gap-4 mb-2">
-                              <div className="h-px w-6 bg-orange-100" />
-                              <span className="text-[9px] font-black uppercase tracking-[0.4em] text-orange-600/40">
-                                 {enTrans?.content?.length && enTrans.content.length > 500 ? 'Historical Narrative' : 'Manuscript Meaning'}
-                              </span>
-                              <div className="h-px w-6 bg-orange-100" />
-                           </div>
-                           
-                           <p className="text-xl md:text-2xl font-serif font-black text-stone-800 leading-relaxed italic antialiased selection:bg-orange-50 tracking-tight">
-                               &ldquo;{cleanText(enTrans?.content || (verse as any).meaning || '')}&rdquo;
-                           </p>
+                {/* Commentary */}
+                {commentaries.length > 0 && (
+                  <div className="px-8 py-6 bg-orange-50/30">
+                    {commentaries.map((c: any, ci: number) => {
+                      const meta = getScholarMeta(c.author)
+                      return (
+                        <div key={ci} className={ci > 0 ? 'mt-6 pt-6 border-t border-orange-100' : ''}>
+                          <div className="flex items-center gap-2 mb-3">
+                            <span className="text-base">{meta.icon}</span>
+                            <span className="text-[10px] font-black uppercase tracking-widest text-orange-700">{meta.label}</span>
+                          </div>
+                          <p className="text-stone-600 leading-relaxed text-sm font-medium whitespace-pre-line">
+                            {cleanText(c.content)}
+                          </p>
                         </div>
-                    </div>
+                      )
+                    })}
+                  </div>
+                )}
 
-                    {/* 🎨 SCHOLARSHIP DECK (At Bottom - Centered Scholarly Deliberation) */}
-                    {commentaries.length > 0 && (
-                       <div className={`bg-[#fdfbf7] px-12 py-20 flex flex-col items-center ${duoMode ? 'space-y-24' : 'space-y-16'}`}>
-                          {commentaries.map((c, ci) => (
-                             <div key={ci} className={`max-w-5xl w-full space-y-8 text-center animate-in fade-in zoom-in-95 duration-700`}>
-                                <div className="flex flex-col items-center gap-4">
-                                   <div className="w-1.5 h-12 bg-gradient-to-b from-orange-400 to-transparent rounded-full shadow-sm" />
-                                   <span className="text-[10px] font-black uppercase tracking-[0.4em] text-stone-400">
-                                      {AUTHOR_METADATA[c.author]?.name || AUTHOR_METADATA[`${c.author}-en`]?.name || 'Sant Dnyaneshwar Maharaj'}
-                                   </span>
-                                </div>
-                                <div className="text-stone-700 leading-relaxed text-lg md:text-xl font-medium whitespace-pre-line selection:bg-orange-50 transition-colors group-hover:text-black font-serif italic max-w-4xl mx-auto">
-                                   &ldquo;{cleanText(c.content)}&rdquo;
-                                </div>
-                                <div className="pt-8 flex justify-center">
-                                   <div className="w-8 h-px bg-stone-100" />
-                                </div>
-                             </div>
-                          ))}
-                       </div>
-                    )}
-
-                    {/* 🧠 COGNITIVE TATTVA (ADF-SYNTHESIS Manuscript) */}
-                    {(synth?.text || synth?.loading) && (
-                       <VedicManuscriptCard 
-                         content={synth.loading ? 'Extracting the essence of traditional scholarship...' : synth.text} 
-                         className="mx-12 mb-20 shadow-orange-100" 
-                       />
-                    )}
-                 </article>
-               )
-            })}
-          </section>
+                {/* AI Synthesis result */}
+                {(synth?.text || synth?.loading) && (
+                  <VedicManuscriptCard 
+                    content={synth.loading ? 'Synthesising wisdom...' : synth.text} 
+                    className="m-6 mt-0"
+                  />
+                )}
+              </article>
+            )
+          })}
         </div>
       </main>
     </>
