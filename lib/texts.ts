@@ -39,6 +39,8 @@ export interface VedicText {
   lakeFile?: string
   /** Hierarchical link: slug of the parent record (e.g. 'mahabharata') */
   parentSlug?: string
+  /** Emoji icon for the text */
+  icon?: string
   /** High-level metadata for mind maps and diagrams */
   contextualInfo?: {
     speaker?: string

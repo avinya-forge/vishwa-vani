@@ -57,7 +57,7 @@ export default function Footer() {
               <span className="block text-stone-500 text-xs font-black uppercase tracking-widest mb-1 opacity-40">Status</span>
               <div className="flex items-center gap-2">
                  <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-                 <span className="text-white text-sm font-bold tracking-widest">NVF 1.1 Ready</span>
+                 <span className="text-white text-sm font-bold tracking-widest">Verse Archive: Active</span>
               </div>
            </div>
            <p className="text-stone-500 text-xs font-bold leading-relaxed pt-10">
