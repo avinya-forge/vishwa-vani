@@ -106,9 +106,8 @@ export default async function StudyVersePage({ params }: { params: Promise<{ tex
     <main className="min-h-screen bg-[#FDFBF7] selection:bg-orange-100/60 pb-20">
       <StudyClient 
         verses={[verseData]} 
-        chapterTitle={`${title} - Verse ${verseNumber}`} 
-        scriptureName={scriptureName}
-        tagline={tagline}
+        textSlug={textSlug}
+        chapter={parseInt(chapterNumber)}
       />
 
       {/* Footer Navigation */}

@@ -8,6 +8,7 @@ import VedicTimeline from './vedic-timeline'
 import VedicManuscriptCard from './vedic-manuscript-card'
 import { VEDIC_LIBRARY } from '@/lib/texts'
 import { useTranslations, useLocale } from 'next-intl'
+import HierarchicalNav, { LevelData } from '@/components/ui/hierarchical-nav'
 
 // 🏛️ DYNAMIC PERSPECTIVE METADATA
 const DEFAULT_METADATA: Record<string, { name: string, bio: string, label: string, icon: string }> = {
@@ -74,8 +75,6 @@ export default function StudyClient({
   // Default to first available non-none scholar
   const defaultScholar = availableScholars.find(s => s !== 'none') || 'none'
   const [scholarSelection, setScholarSelection] = useState<string>(defaultScholar)
-  const [showChapterMatrix, setShowChapterMatrix] = useState(false)
-  const [showAdhyayaMatrix, setShowAdhyayaMatrix] = useState(false)
   const [activeAdhyaya, setActiveAdhyaya] = useState<number>(1)
   
   useEffect(() => {
@@ -123,132 +122,93 @@ export default function StudyClient({
   const totalChapters = bookData?.totalChapters || 1
   const isParva = textSlug === 'mahabharata'
 
+  // Build the generic HierarchicalNav levels
+  const navLevels: LevelData[] = [
+    {
+      id: 'chapter',
+      name: isParva ? 'Parva' : 'Chapter',
+      activeValue: chapter,
+      activeLabel: bookData?.chapterNames[String(chapter)] || '',
+      options: Array.from({ length: totalChapters }, (_, i) => ({
+        value: i + 1,
+        tooltip: bookData?.chapterNames[String(i + 1)],
+        href: `/${textSlug}/${i + 1}`,
+      }))
+    }
+  ]
+
+  // If we have adhyaya sub-levels, push them into the generic nav
+  if (isParva && adhyayaList.length > 0) {
+    navLevels.push({
+      id: 'adhyaya',
+      name: 'Adhyaya',
+      activeValue: activeAdhyaya,
+      options: adhyayaList.map(a => ({
+        value: a.num,
+        href: `/${textSlug}/${chapter}?adhyaya=${a.num}`
+      }))
+    })
+  }
+
+  // Sync state when URL adhyaya changes
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const adh = urlParams.get('adhyaya');
+    if (adh) setActiveAdhyaya(parseInt(adh));
+  }, []);
+
   return (
     <>
       {/* ═══════════════════════════════════════════ HEADER ═══ */}
-      <header className="bg-white border-b border-stone-100 pt-8 pb-0 overflow-visible relative">
+      <header className="bg-white border-b border-stone-100 pt-6 pb-4 overflow-visible relative">
         {/* Soft warm glow — top right only */}
-        <div className="absolute top-0 right-0 w-96 h-96 bg-orange-50 rounded-full blur-[100px] -mr-48 -mt-48 opacity-60 pointer-events-none" />
+        <div className="absolute top-0 right-0 w-80 h-80 bg-orange-50 rounded-full blur-[90px] -mr-40 -mt-20 opacity-60 pointer-events-none" />
 
-        <div className="max-w-[1400px] mx-auto px-6 relative z-10">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 relative z-10">
           {/* Breadcrumb */}
-          <div className="flex items-center gap-3 mb-6">
-            <Link href="/" className="text-[11px] font-bold uppercase tracking-[0.35em] text-orange-500 hover:text-orange-600 transition-colors flex items-center gap-2">
-              ← Library
+          <div className="flex items-center gap-2 mb-4">
+            <Link href="/" className="text-[10px] font-bold uppercase tracking-[0.3em] text-orange-500 hover:text-orange-600 transition-colors flex items-center gap-1.5">
+              &larr; Library
             </Link>
             <span className="text-stone-200">·</span>
-            <span className="text-[11px] font-bold uppercase tracking-[0.25em] text-stone-300">Scholarly Reading</span>
+            <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-stone-300">Scholarly Reading</span>
           </div>
 
           {/* Title Row */}
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 pb-6">
-            <div className="flex items-center gap-5">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+            <div className="flex items-center gap-4">
               {/* Saffron accent bar */}
-              <div className="w-1 h-14 bg-gradient-to-b from-orange-600 to-orange-200 rounded-full flex-shrink-0" />
+              <div className="w-1 h-10 bg-gradient-to-b from-orange-600 to-orange-200 rounded-full flex-shrink-0" />
               <div>
-                <h1 className="text-4xl md:text-5xl font-serif font-black text-stone-900 leading-none tracking-tight">
+                <h1 className="text-3xl md:text-4xl font-serif font-black text-stone-900 leading-none tracking-tight">
                   {bookData?.name || textSlug}
                 </h1>
-                <div className="flex items-center gap-3 mt-2">
-                  {/* Chapter / Parva selector */}
-                  <button 
-                    onClick={() => setShowChapterMatrix(!showChapterMatrix)}
-                    className="flex items-center gap-2 text-sm font-bold text-stone-500 hover:text-orange-600 transition-colors"
-                  >
-                    <span className="text-orange-600 font-black">{isParva ? 'Parva' : 'Chapter'} {chapter}</span>
-                    <span className="text-stone-300">·</span>
-                    <span className="hidden md:inline">{bookData?.chapterNames[String(chapter)]}</span>
-                    <svg className={`w-3.5 h-3.5 transition-transform text-stone-400 ${showChapterMatrix ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}><path d="M19 9l-7 7-7-7" /></svg>
-                  </button>
-
-                  {/* Adhyaya selector — Mahabharata only */}
-                  {isParva && adhyayaList.length > 0 && (
-                    <>
-                      <span className="text-stone-200">·</span>
-                      <button 
-                        onClick={() => setShowAdhyayaMatrix(!showAdhyayaMatrix)}
-                        className="flex items-center gap-1.5 text-sm font-bold text-stone-500 hover:text-orange-600 transition-colors"
-                      >
-                        <span>Adhyaya {activeAdhyaya}</span>
-                        <svg className={`w-3.5 h-3.5 transition-transform text-stone-400 ${showAdhyayaMatrix ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}><path d="M19 9l-7 7-7-7" /></svg>
-                      </button>
-                    </>
-                  )}
+                <div className="mt-2.5">
+                  <HierarchicalNav levels={navLevels} />
                 </div>
               </div>
             </div>
 
             {/* Prev / Next navigation */}
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-1.5 hidden md:flex">
               <button 
                 onClick={() => router.push(`/${textSlug}/${Math.max(1, chapter - 1)}`)} 
                 disabled={chapter === 1}
-                className="p-2.5 rounded-xl border border-stone-200 hover:border-orange-400 hover:text-orange-600 disabled:opacity-30 transition-all"
+                className="p-2 rounded-lg border border-stone-200 hover:border-orange-400 hover:text-orange-600 disabled:opacity-30 transition-all bg-white"
               >
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path d="M15 19l-7-7 7-7" /></svg>
               </button>
-              <span className="text-xs font-bold text-stone-300 px-2">{chapter} / {totalChapters}</span>
+              <span className="text-[10px] font-black tracking-widest text-stone-300 px-2">{chapter} / {totalChapters}</span>
               <button 
                 onClick={() => router.push(`/${textSlug}/${chapter + 1}`)} 
                 disabled={chapter >= totalChapters}
-                className="p-2.5 rounded-xl border border-stone-200 hover:border-orange-400 hover:text-orange-600 disabled:opacity-30 transition-all"
+                className="p-2 rounded-lg border border-stone-200 hover:border-orange-400 hover:text-orange-600 disabled:opacity-30 transition-all bg-white"
               >
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path d="M9 5l7 7-7 7" /></svg>
               </button>
             </div>
           </div>
-
-          {/* Chapter number pill strip */}
-          <div className="flex flex-wrap gap-1.5 pb-5 border-t border-stone-50 pt-4">
-            {Array.from({ length: totalChapters }, (_, i) => i + 1).map((n) => (
-              <Link 
-                key={n} 
-                href={`/${textSlug}/${n}`}
-                title={bookData?.chapterNames[String(n)]}
-                className={`w-9 h-9 rounded-lg flex items-center justify-center transition-all text-xs font-black ${
-                  n === chapter 
-                  ? 'bg-stone-900 text-white shadow-md' 
-                  : 'bg-stone-50 text-stone-400 hover:bg-orange-50 hover:text-orange-600'
-                }`}
-              >
-                {n}
-              </Link>
-            ))}
-          </div>
         </div>
-
-        {/* Adhyaya dropdown */}
-        {showAdhyayaMatrix && (
-          <div className="absolute top-full left-0 right-0 mt-1 bg-white border border-stone-100 shadow-2xl z-50 animate-in fade-in slide-in-from-top-2 duration-200">
-            <div className="max-w-[1400px] mx-auto px-6 py-6">
-              <div className="flex items-center justify-between mb-4">
-                <span className="text-xs font-black uppercase tracking-widest text-stone-400">Adhyaya ({adhyayaList.length})</span>
-                <button onClick={() => setShowAdhyayaMatrix(false)} className="text-stone-300 hover:text-stone-700 transition-colors">
-                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path d="M6 18L18 6M6 6l12 12" /></svg>
-                </button>
-              </div>
-              <div className="grid grid-cols-10 md:grid-cols-20 gap-1.5 max-h-52 overflow-y-auto">
-                {adhyayaList.map((a) => (
-                  <button 
-                    key={a.id} 
-                    onClick={() => {
-                      setActiveAdhyaya(a.num)
-                      setShowAdhyayaMatrix(false)
-                      router.push(`/${textSlug}/${chapter}?adhyaya=${a.num}`)
-                    }}
-                    className={`h-9 rounded-lg text-xs font-black transition-all ${
-                      activeAdhyaya === a.num 
-                      ? 'bg-orange-600 text-white' 
-                      : 'bg-stone-50 text-stone-400 hover:bg-orange-50 hover:text-orange-600'
-                    }`}
-                  >
-                    {a.num}
-                  </button>
-                ))}
-              </div>
-            </div>
-          </div>
-        )}
       </header>
 
       {/* ═══════════════════════════════════════════ TOOLBAR ═══ */}
@@ -289,7 +249,7 @@ export default function StudyClient({
 
       {/* ═══════════════════════════════════════════ VERSES ═══ */}
       <main className="bg-[#FDFBF8] min-h-screen">
-        <div className="max-w-[900px] mx-auto px-6 py-12 space-y-10">
+        <div className="max-w-[900px] mx-auto px-4 sm:px-6 py-8 space-y-6">
           {/* Vedic Timeline — compact version at top */}
           <VedicTimeline slug={textSlug} />
 
@@ -331,10 +291,10 @@ export default function StudyClient({
 
                 {/* Sanskrit */}
                 {verse.original && (
-                  <div className="px-8 py-8 text-center border-b border-stone-50">
-                    <ShlokaMask text={verse.original} fontSize={22} />
+                  <div className="px-5 sm:px-6 py-6 text-center border-b border-stone-50">
+                    <ShlokaMask text={verse.original} fontSize={22} className="min-w-full" />
                     {verse.transliteration && (
-                      <p className="mt-4 text-stone-400 font-serif italic text-sm leading-relaxed max-w-xl mx-auto">
+                      <p className="mt-3 text-stone-400 font-serif italic text-sm leading-relaxed max-w-xl mx-auto">
                         {verse.transliteration}
                       </p>
                     )}
@@ -343,9 +303,9 @@ export default function StudyClient({
                 
                 {/* English meaning / translation */}
                 {meaning && (
-                  <div className="px-8 py-6 border-b border-stone-50">
-                    <p className="text-[11px] font-black uppercase tracking-widest text-stone-300 mb-3">Meaning</p>
-                    <p className="text-stone-700 leading-relaxed text-base font-medium">
+                  <div className="px-5 sm:px-6 py-5 border-b border-stone-50">
+                    <p className="text-[10px] font-black uppercase tracking-widest text-stone-300 mb-2">Meaning</p>
+                    <p className="text-stone-700 leading-relaxed text-[15px] font-medium">
                       {cleanText(meaning)}
                     </p>
                   </div>
@@ -353,16 +313,16 @@ export default function StudyClient({
 
                 {/* Commentary */}
                 {commentaries.length > 0 && (
-                  <div className="px-8 py-6 bg-orange-50/30">
+                  <div className="px-5 sm:px-6 py-5 bg-orange-50/30">
                     {commentaries.map((c: any, ci: number) => {
                       const meta = getScholarMeta(c.author)
                       return (
-                        <div key={ci} className={ci > 0 ? 'mt-6 pt-6 border-t border-orange-100' : ''}>
-                          <div className="flex items-center gap-2 mb-3">
-                            <span className="text-base">{meta.icon}</span>
-                            <span className="text-[10px] font-black uppercase tracking-widest text-orange-700">{meta.label}</span>
+                        <div key={ci} className={ci > 0 ? 'mt-5 pt-5 border-t border-orange-100' : ''}>
+                          <div className="flex items-center gap-2 mb-2">
+                            <span className="text-sm">{meta.icon}</span>
+                            <span className="text-[9px] font-black uppercase tracking-widest text-orange-700">{meta.label}</span>
                           </div>
-                          <p className="text-stone-600 leading-relaxed text-sm font-medium whitespace-pre-line">
+                          <p className="text-stone-600 leading-relaxed text-[13px] font-medium whitespace-pre-line">
                             {cleanText(c.content)}
                           </p>
                         </div>

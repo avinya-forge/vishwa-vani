@@ -23,17 +23,41 @@ export default function ShlokaMask({ text, className, fontSize = 28 }: { text: s
         // Set dimensions based on parent/font
         const currentFontSize = fontSize
         const lineHeight = currentFontSize * 1.5
-        const paddingX = 12
-        const paddingY = 16
-        const lines = text.split('\n')
+        const paddingX = 16
+        const paddingY = 24
         
         ctx.font = `700 ${currentFontSize}px "Noto Serif Devanagari", serif`
-        const metrics = lines.map(l => ctx.measureText(l))
-        const maxWidth = Math.max(...metrics.map(m => m.width)) + paddingX * 2
+        
+        // Dynamic Word Wrapping logic for extremely long Shlokas
+        const rawLines = text.replace(/\\n/g, '\n').split('\n')
+        const maxAllowedWidth = typeof window !== 'undefined' ? Math.min(800, window.innerWidth - 64) : 800;
+        
+        const wrappedLines: string[] = [];
+        rawLines.forEach(line => {
+            const words = line.split(' ');
+            let currentLine = '';
+            
+            for (let n = 0; n < words.length; n++) {
+                const testLine = currentLine + words[n] + ' ';
+                const metrics = ctx.measureText(testLine);
+                if (metrics.width > maxAllowedWidth && n > 0) {
+                    wrappedLines.push(currentLine);
+                    currentLine = words[n] + ' ';
+                } else {
+                    currentLine = testLine;
+                }
+            }
+            wrappedLines.push(currentLine);
+        });
+        
+        const finalLines = wrappedLines.map(l => l.trim()).filter(l => l.length > 0)
+
+        const metricsList = finalLines.map(l => ctx.measureText(l))
+        const maxWidth = Math.max(...metricsList.map(m => m.width), 100) + paddingX * 2
         
         const dpr = window.devicePixelRatio || 1
         canvas.width = maxWidth * dpr
-        canvas.height = (lines.length * lineHeight + paddingY * 2) * dpr
+        canvas.height = (finalLines.length * lineHeight + paddingY * 2) * dpr
         canvas.style.width = `${maxWidth}px`
         
         ctx.scale(dpr, dpr)
@@ -42,7 +66,7 @@ export default function ShlokaMask({ text, className, fontSize = 28 }: { text: s
         ctx.textBaseline = 'alphabetic'
         ctx.fillStyle = '#1c1917' 
         
-        lines.forEach((line, i) => {
+        finalLines.forEach((line, i) => {
             const y = paddingY + (i * lineHeight) + currentFontSize * 1.1
             ctx.fillText(line, maxWidth / 2, y)
         })
