@@ -15,9 +15,29 @@ export async function generateStaticParams() {
   }))
 }
 
-export default async function StudyChapterPage({ params, searchParams }: { params: Promise<{ text: string, chapter: string }>, searchParams: Promise<{ adhyaya?: string }> }) {
-  const { text: textSlug, chapter: chapterNumber } = await params
-  const { adhyaya: adhyayaParam } = await searchParams
+type Props = {
+  params: Promise<{ text: string; chapter: string }>
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
+}
+
+export default async function StudyChapterPage(props: Props) {
+  const params = await props.params
+  const textSlug = params.text
+  const chapterNumber = params.chapter
+
+  // Workaround for Next.js 15 static export issues with searchParams
+  // Read adhyaya directly without awaiting (or default it)
+  // For static generation, we assume adhyaya isn't set
+  let adhyayaParam: string | undefined = undefined;
+  try {
+     const sp = await props.searchParams;
+     if (typeof sp?.adhyaya === 'string') {
+        adhyayaParam = sp.adhyaya;
+     }
+  } catch (e) {
+     // Ignore
+  }
+
   setRequestLocale('en')
   
   const textMetadata = getTextBySlug(textSlug)

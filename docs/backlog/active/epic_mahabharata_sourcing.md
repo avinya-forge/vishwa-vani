@@ -31,3 +31,12 @@ All new data will follow the NVF 1.3 standard, which supports both shlokas and p
 
 ## 4. Next Physical Action
 *   Begin systematic fetch of **Parva 1 (Adi Parva)** Sanskrit text from `sanskritdocuments.org` to replace the placeholders in `mahabharata-chapter-1.json`.
+
+---
+
+### [TASK_1] | [Status: READY]
+- **Definition of Done**: Initial pipeline built for fetching Sanskrit text from sanskritdocuments.org.
+- **Audit focus**: CUPID/SLAP - ensure fetch logic is simple and decoupled.
+- **Technical Context**: `scripts/vishwa-fetch.py` (To be created)
+- **Engineering Log**:
+  - [Run 1]: [Decision: Create initial `vishwa-fetch.py` script] | [Counter-Argument: None, this is the foundational tool needed.]
