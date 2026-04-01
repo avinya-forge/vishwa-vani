@@ -98,7 +98,7 @@ Every book must pass through 5 phases (P1: Ingest, P2: Harden, P3: Enrich, P4: T
 ### 6. ⚔️ Mahabharata (Full 18 Parvas)
 - **Status**: 🔥 **PHASE 1 (Ingest & Sourcing)**
 - **Tasks**: 
-  - [ ] **Sanskrit Sourcing**: Aggressively fetch BORI Critical Edition Sanskrit for all 18 Parvas (Reference: [Sourcing Roadmap](file:///d:/Code/avinya-forge/vishwa-vani/docs/mahabharata-sourcing-roadmap.md)).
+  - [ ] **Sanskrit Sourcing**: Aggressively fetch BORI Critical Edition Sanskrit for all 18 Parvas (Reference: [Sourcing Roadmap](docs/backlog/active/epic_mahabharata_sourcing.md).
   - [ ] **Dual-Language Ingest**: Ingest using **NVF 1.3 (Prose Support)** to preserve narrative flow.
   - [ ] **Link Gitas**: Cross-reference Bhishma Parva with Bhagavad Gita.
   - [x] **Prose Consolidation**: Initial consolidation of fragmented KMG narratives completed.
