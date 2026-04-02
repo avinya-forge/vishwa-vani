@@ -2,7 +2,7 @@
 
 > **Vishwa-Vani** is a transcendent, multilingual, and highly performant digital sanctuary for exploring Vedic wisdom. This project aims to be the "Wikipedia for Vedas," providing an immersive experience for exploring Shlokas, Mantras, and Sanskrit definitions across languages—English, Hindi, and Marathi.
 
-[![Version](https://img.shields.io/badge/version-v0.6.0-orange.svg)](./docs/planning/release_notes_v0.6.md)
+[![Version](https://img.shields.io/badge/version-v0.6.0-orange.svg)](./docs/release-notes.md)
 [![Hosting](https://img.shields.io/badge/hosting-GitHub_Pages-black.svg)](https://github.com/vishwa-vani/vishwa-vani)
 
 ---
@@ -24,10 +24,9 @@ Vishwa-Vani is built with a **Framework First** approach, ensuring absolute scal
 
 | Milestone | Phase | Status | Progress | Highlights |
 | :--- | :--- | :--- | :--- | :--- |
-| **M1** | Framework & Vedic Lake | ✅ **DONE** | 100% | SQLite WASM, i18n, Security Shield |
-| **M2** | Interactive & AI Prof | ⏳ IN PROGRESS | 35% | Astro Module, 1600px UI, WebLLM |
-| **M3** | Massive Aggregation | 📅 BACKLOG | 0% | Mahabharata, Vedas, Puranas |
-| **M4** | Wiki Crowdsourcing | 📅 BACKLOG | 0% | Community Edit Protocols |
+| **M1** | The Autonomous Data Factory | ⏳ IN PROGRESS | 50% | Gita-Patch, NVF 1.2, Mahabharata-Ingest |
+| **M2** | The AI Professor | 📅 UP NEXT | 0% | AI Explanation, Semantic Search, Concept Tagging |
+| **M3** | Massive Content Aggregation | 📅 BACKLOG | 0% | Populating the Wiki with thousands of interpretations |
 
 ---
 
@@ -71,10 +70,11 @@ This generates an `out/` folder ready for static hosting.
 ## 🗺️ Documentation
 
 - 🏛️ [Vishwa-Vani Vision](./docs/vision.md)
-- 🚀 [Master Backlog](./docs/backlog.md)
+- 🚀 [Master Backlog](./docs/planning/backlog.md)
 - 📦 [Release Notes](./docs/release-notes.md)
-- 🏗️ [Architecture Blueprint](./docs/architecture.md)
+- 🏗️ [Architecture Blueprint](./docs/architecture/blueprint.md)
 - 🛠️ [Engineering & Operations](./docs/engineering.md)
+- ⚖️ [Standards](./docs/rules/standards.md)
 
 ---
 _Vishwa-Vani: Turning Vedic Knowledge into an Interactive Journey._
