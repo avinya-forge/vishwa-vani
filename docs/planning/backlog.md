@@ -55,10 +55,7 @@ This is the consolidated roadmap and task list for Vishwa-Vani's journey from a 
 - [ ] **ADF-303 (Genealogical Map)**: UI component for Vedic timeline placement.
 
 ### EPIC 4: UI consistency & UX Excellence (UI-ENG)
-- [x] **UI-ENG-101 (Font Clipping)**: Fix Sanskrit text clipping in `ShlokaMask`.
-- [x] **UI-ENG-102 (Global Scale-Up)**: Standardize font size at 13-14px.
-- [ ] **UI-ENG-103 (Card Sync)**: Consistent card heights on Home/Lab.
-- [x] **UI-ENG-104 (Redundancy Cleanup)**: Remove redundant author labels.
+- [ ] **UI-ENG-BATCH (Consistency & UX Excellence)**: Fix Sanskrit text clipping in `ShlokaMask`, standardize font size at 13-14px, ensure consistent card heights on Home/Lab, and remove redundant author labels (> 50 LOC).
 
 ### EPIC 5: Developer Ecosystem & APIs (VANI-API)
 - [ ] **AP-101 (Public API Spec)**: Design a secure, rate-limited GraphQL/REST API for scriptural retrieval (Read-only).
