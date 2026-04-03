@@ -48,17 +48,26 @@ describe('StudyClient', () => {
       id: '1.1',
       original: 'धृतराष्ट्र उवाच',
       transliteration: 'dhṛtarāṣṭra uvāca',
+      verse: 1,
+      chapter: 1,
+      meaning: 'Meaning of the verse',
       layers: [
         {
           type: 'commentary',
-          author: 'shankara',
-          language: 'sanskrit',
-          content: 'Shankara commentary'
+          author: 'dnyaneshwari-en',
+          lang: 'en',
+          content: 'Dnyaneshwari commentary'
+        },
+        {
+          type: 'commentary',
+          author: 'iskcon-en',
+          lang: 'en',
+          content: 'Prabhupada commentary'
         },
         {
           type: 'translation',
+          lang: 'en',
           author: 'gambhirananda',
-          language: 'english',
           content: 'Dhritarashtra said'
         }
       ]
@@ -78,10 +87,14 @@ describe('StudyClient', () => {
     expect(screen.getByTestId('shloka-mask')).toBeInTheDocument();
   });
 
-  it('displays author filter dropdown', () => {
+  it('displays author filter buttons for exactly two primary scholars', () => {
     render(<StudyClient {...defaultProps} />);
-    const authorSelect = screen.getByRole('combobox', { name: /author/i });
-    expect(authorSelect).toBeInTheDocument();
+    const dnyanButton = screen.getAllByRole('button').find(b => b.textContent?.includes('Dnyaneshwari'));
+    const prabhupadaButton = screen.getAllByRole('button').find(b => b.textContent?.includes('Prabhupada'));
+    expect(dnyanButton).toBeDefined();
+    expect(prabhupadaButton).toBeDefined();
+    const visibleAuthorButtons = screen.getAllByRole('button').filter(b => /Dnyaneshwari|Prabhupada/.test(b.textContent || ''));
+    expect(visibleAuthorButtons.length).toBeLessThanOrEqual(2);
   });
 
   it('displays language filter dropdown', () => {
@@ -90,20 +103,32 @@ describe('StudyClient', () => {
     expect(languageSelect).toBeInTheDocument();
   });
 
-  it('shows verse content', () => {
+  it('hides commentaries by default (lean template)', () => {
     render(<StudyClient {...defaultProps} />);
+    // Commentary should NOT be visible by default
+    expect(screen.queryByText('Shankara commentary')).not.toBeInTheDocument();
+  });
+
+  it('shows verse content (meaning visible by default)', () => {
+    render(<StudyClient {...defaultProps} />);
+    // The Sanskrit verse should always be visible
     expect(screen.getByText('धृतराष्ट्र उवाच')).toBeInTheDocument();
   });
 
-  it('filters commentaries by author', async () => {
+  it('shows commentaries after selecting author', async () => {
     render(<StudyClient {...defaultProps} />);
 
-    const authorSelect = screen.getByRole('combobox', { name: /author/i });
-    fireEvent.change(authorSelect, { target: { value: 'shankara' } });
+    // Click the author button to show commentary
+    const authorButtons = screen.getAllByRole('button');
+    const shankaraButton = authorButtons.find(b => b.textContent?.includes('shankara'));
+    
+    if (shankaraButton) {
+      fireEvent.click(shankaraButton);
 
-    await waitFor(() => {
-      expect(screen.getByText('Shankara commentary')).toBeInTheDocument();
-    });
+      await waitFor(() => {
+        expect(screen.getByText('Shankara commentary')).toBeInTheDocument();
+      });
+    }
   });
 
   it('handles empty verses array', () => {

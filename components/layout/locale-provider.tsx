@@ -28,7 +28,11 @@ export default function LocaleProvider({ children }: { children: ReactNode }) {
   }, [])
 
   return (
-    <NextIntlClientProvider locale={locale} messages={messagesMap[locale as keyof typeof messagesMap]}>
+    <NextIntlClientProvider 
+      locale={locale} 
+      messages={messagesMap[locale as keyof typeof messagesMap]}
+      timeZone="UTC"
+    >
       {children}
     </NextIntlClientProvider>
   )

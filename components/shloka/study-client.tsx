@@ -43,15 +43,24 @@ export default function StudyClient({
   const locale = useLocale()
   const router = useRouter()
   
-  // Collect all unique scholarly authors across verses
+  // Normalize the author key to a stable group (e.g., dnyaneshwari-en -> dnyaneshwari)
+  const normalizeScholarKey = (author: string) => (author || '').split('-')[0].toLowerCase()
+  const PREFERRED_SCHOLARS = ['dnyaneshwari', 'iskcon']
+
+  // Collect all unique scholarly authors across verses, normalized to preferred top-2 authors
   const availableScholars = React.useMemo(() => {
-    const scholars = new Set<string>(['none'])
+    const baseAuthors = new Set<string>()
     verses.forEach((v: any) => v.layers?.forEach((l: any) => {
-      if (l.type === 'commentary') scholars.add(l.author || 'unknown')
+      if (l.type === 'commentary' && l.author) baseAuthors.add(normalizeScholarKey(l.author))
     }))
-    // Only add 'all' if there are multiple commentary authors
-    const commentaryAuthors = Array.from(scholars).filter(s => s !== 'none')
-    if (commentaryAuthors.length > 1) scholars.add('all')
+
+    const chosenAuthors = PREFERRED_SCHOLARS.filter(a => baseAuthors.has(a))
+    if (chosenAuthors.length === 0) {
+      chosenAuthors.push(...Array.from(baseAuthors).slice(0, 2))
+    }
+
+    // Enforce exactly 2 authors max in the Lean UI (plus 'none')
+    const scholars = new Set<string>(['none', ...chosenAuthors.slice(0, 2)])
     return Array.from(scholars)
   }, [verses])
 
@@ -89,28 +98,70 @@ export default function StudyClient({
         }
       }
     }
-    // Friendly fallback names
+    // Friendly fallbacks / known authors
+    if (authorKey === 'dnyaneshwari') return { name: 'Sant Dnyaneshwar', label: 'Dnyaneshwari', icon: '🌼', bio: 'Sant Dnyaneshwar commentary (language-specific variants).' }
     if (authorKey === 'iskcon') return { name: 'A.C. Bhaktivedanta Swami Prabhupada', label: 'ISKCON / Prabhupada', icon: '🔱', bio: 'Founder-Acharya of ISKCON. Bhagavad-gītā As It Is.' }
     return { name: authorKey, label: authorKey, icon: '📜', bio: '' }
+  }
+
+  // Score commentary for relevance to the meaning text, to avoid random or low-alignment commentary showing on first shloka
+  const calculateTextOverlapScore = (base: string, commentary: string) => {
+    if (!base || !commentary) return 0
+    const normalize = (text: string) =>
+      text
+        .toLowerCase()
+        .replace(/[^a-z0-9\s]/gi, ' ')
+        .split(/\s+/)
+        .filter(Boolean)
+    const baseWords = new Set(normalize(base))
+    const commentaryWords = new Set(normalize(commentary))
+    if (baseWords.size === 0 || commentaryWords.size === 0) return 0
+
+    let overlapCount = 0
+    baseWords.forEach(word => {
+      if (commentaryWords.has(word)) overlapCount += 1
+    })
+    const unionSize = new Set([...baseWords, ...commentaryWords]).size
+    return unionSize > 0 ? overlapCount / unionSize : 0
+  }
+
+  const isValidCommentaryContent = (content: string) => {
+    if (!content || typeof content !== 'string') return false
+    const trimmed = content.trim()
+    if (trimmed.length < 80) return false
+    const placeholderPatterns = ['PLACEHOLDER', 'TBD', 'DNYAN', 'TODO', 'TODO', 'lorem ipsum']
+    if (placeholderPatterns.some(p => trimmed.toUpperCase().includes(p.toUpperCase()))) {
+      return false
+    }
+    return true
   }
 
   // Default to first available non-none scholar
   const defaultScholar = availableScholars.find(s => s !== 'none') || 'none'
   const defaultLanguage = 'all'
 
-  const [scholarSelection, setScholarSelection] = useState<string>(defaultScholar)
+  const [scholarSelection, setScholarSelection] = useState<string[]>([])
   const [languageSelection, setLanguageSelection] = useState<string>(defaultLanguage)
   const [activeAdhyaya, setActiveAdhyaya] = useState<number>(1)
   
   useEffect(() => {
-    const savedScholar = localStorage.getItem('vishwa_scholar_pref')
+    const savedScholars = localStorage.getItem('vishwa_scholar_pref')
     const savedLanguage = localStorage.getItem('vishwa_language_pref')
 
-    if (savedScholar && availableScholars.includes(savedScholar)) {
-      setScholarSelection(savedScholar)
+    // Lean template: start with no commentaries selected (empty array)
+    if (savedScholars && savedScholars !== 'none') {
+      try {
+        const parsed = JSON.parse(savedScholars)
+        if (Array.isArray(parsed)) {
+          setScholarSelection(parsed.slice(0, 2)) // Limit to 2
+        } else {
+          setScholarSelection([])
+        }
+      } catch {
+        setScholarSelection([])
+      }
     } else {
-      const first = availableScholars.find(s => s !== 'none')
-      if (first) setScholarSelection(first)
+      setScholarSelection([])
     }
 
     if (savedLanguage && availableLanguages.includes(savedLanguage)) {
@@ -120,9 +171,26 @@ export default function StudyClient({
     }
   }, [availableScholars, availableLanguages])
 
-  const updateScholar = (s: string) => {
+  const updateScholar = (s: string[]) => {
     setScholarSelection(s)
-    localStorage.setItem('vishwa_scholar_pref', s)
+    localStorage.setItem('vishwa_scholar_pref', JSON.stringify(s))
+  }
+
+  const toggleScholar = (author: string) => {
+    let newSelection = [...scholarSelection]
+    if (newSelection.includes(author)) {
+      newSelection = newSelection.filter(a => a !== author)
+    } else {
+      // Lean template: max 2 authors
+      if (newSelection.length < 2) {
+        newSelection.push(author)
+      } else {
+        // Replace the first one with the new author
+        newSelection[0] = author
+      }
+    }
+    setScholarSelection(newSelection)
+    localStorage.setItem('vishwa_scholar_pref', JSON.stringify(newSelection))
   }
 
   const updateLanguage = (lang: string) => {
@@ -141,11 +209,44 @@ export default function StudyClient({
        if (synthesisMap[(verse as any).id]?.text) continue 
        setSynthesisMap(p => ({...p, [(verse as any).id]: { text: '', loading: true }}))
        try {
-         const texts = (verse as any).layers.filter((l: any) => l.type === 'commentary').map((l: any) => l.content)
+         // Lean template: always include meaning + up to 2 commentaries (regardless of UI selection)
+         const meaningLayer = (verse as any).layers?.find((l: any) => l.type === 'translation' && l.lang === 'en')
+         const meaning = meaningLayer?.content || (verse as any).meaning || (verse as any).translation || ''
+         
+         // Get commentaries from selected authors (or first candidates if none selected)
+         const candidateCommentaries = (verse as any).layers?.filter((l: any) => {
+           if (l.type !== 'commentary') return false
+           if (!l.author) return false
+           if (languageSelection !== 'all' && l.lang && l.lang !== languageSelection) return false
+           if (scholarSelection.length > 0) {
+             return scholarSelection.includes(normalizeScholarKey(l.author))
+           }
+           return true
+         }) || []
+
+         // Score by overlap with meaning to avoid random misaligned entries
+         const scoredCommentaries = candidateCommentaries.map((c: any) => ({
+           ...c,
+           _relevanceScore: calculateTextOverlapScore(meaning, c.content)
+         }))
+         .sort((a: any, b: any) => b._relevanceScore - a._relevanceScore)
+
+         let commentaries = scoredCommentaries
+
+         // If user-selected scholars exist, limit to top 2 among them
+         if (scholarSelection.length > 0) {
+           commentaries = scoredCommentaries.slice(0, 2)
+         } else {
+           // No selection means fallback to top 2 in any language/author
+           commentaries = scoredCommentaries.slice(0, 2)
+         }
+
+         
+         const contextTexts = [meaning, ...commentaries.map((c: any) => c.content)].filter(t => t)
          const res = await fetch('/api/synthesize', { 
            method: 'POST', 
            headers: {'Content-Type': 'application/json'}, 
-           body: JSON.stringify({ verseId: (verse as any).id, contextTexts: texts, language: languageSelection || 'en' }) 
+           body: JSON.stringify({ verseId: (verse as any).id, contextTexts, language: languageSelection || 'en' }) 
          })
          if (!res.ok) throw new Error('Synthesis API responded with status ' + res.status)
          const data = await res.json()
@@ -262,25 +363,40 @@ export default function StudyClient({
 
       {/* ═══════════════════════════════════════════ TOOLBAR ═══ */}
       <div className="sticky top-16 z-40 bg-white/90 backdrop-blur-md border-b border-stone-100 shadow-sm">
-        <div className="max-w-[1400px] mx-auto px-6 flex items-center justify-between py-3 gap-4">
+        <div className="max-w-[1400px] mx-auto px-6 flex items-center justify-between py-3 gap-4 flex-wrap">
           <div className="flex flex-wrap items-center gap-3">
-            <label className="flex items-center gap-2 text-xs font-semibold text-stone-600">
-              <span>Author</span>
-              <select
-                value={scholarSelection}
-                onChange={(e) => updateScholar(e.target.value)}
-                className="px-3 py-2 border border-stone-200 rounded-lg text-sm bg-white"
-              >
-                {availableScholars.map((s) => {
-                  const meta = getScholarMeta(s)
+            {/* Author selector - Lean template: checkboxes for up to 2 authors */}
+            <div className="flex items-center gap-2 text-xs font-semibold text-stone-600">
+              <span>Scholars ({scholarSelection.length}/{2})</span>
+              <div className="flex gap-1.5 max-w-xs overflow-x-auto">
+                {availableScholars.filter(s => s !== 'none').slice(0, 5).map((author) => {
+                  const meta = getScholarMeta(author)
+                  const isSelected = scholarSelection.includes(author)
+                  const isDisabled = !isSelected && scholarSelection.length >= 2
                   return (
-                    <option key={s} value={s}>
-                      {meta.label}
-                    </option>
+                    <button
+                      key={author}
+                      onClick={() => toggleScholar(author)}
+                      disabled={isDisabled}
+                      className={`px-2.5 py-1.5 rounded border text-[11px] font-medium transition-all ${
+                        isSelected
+                          ? 'bg-orange-100 border-orange-300 text-orange-700'
+                          : isDisabled
+                          ? 'bg-stone-50 border-stone-200 text-stone-300 cursor-not-allowed opacity-50'
+                          : 'bg-white border-stone-200 text-stone-600 hover:border-orange-300 hover:bg-orange-50'
+                      }`}
+                      title={meta.bio}
+                    >
+                      <span>{meta.icon}</span>
+                      <span className="hidden sm:inline ml-1">{meta.label}</span>
+                    </button>
                   )
                 })}
-              </select>
-            </label>
+              </div>
+              {availableScholars.filter(s => s !== 'none').length > 5 && (
+                <span className="text-[10px] text-stone-400">+{availableScholars.filter(s => s !== 'none').length - 5}</span>
+              )}
+            </div>
 
             <label className="flex items-center gap-2 text-xs font-semibold text-stone-600">
               <span>Language</span>
@@ -322,17 +438,26 @@ export default function StudyClient({
             const meaningLayer = verse.layers?.find((l: any) => l.type === 'translation' && l.lang === 'en')
             const meaning = meaningLayer?.content || verse.meaning || verse.translation || ''
             
-            // Commentary layers — filter by selected scholar and language
-            const commentaries = verse.layers?.filter((l: any) => {
-              if (scholarSelection === 'none') return false
+            // Commentary layers — filter by selected scholar base key and language (Lean template: only show if explicitly selected)
+            const candidateCommentaries = verse.layers?.filter((l: any) => {
+              if (scholarSelection.length === 0) return false // Lean template: hide commentaries if none selected
               if (l.type !== 'commentary') return false
+              if (!l.author || !l.content) return false
               if (languageSelection !== 'all') {
                 if (!l.lang) return false
                 if (l.lang !== languageSelection) return false
               }
-              if (scholarSelection === 'all') return true
-              return l.author === scholarSelection || l.author?.startsWith?.(scholarSelection)
+              return scholarSelection.includes(normalizeScholarKey(l.author))
             }) || []
+
+            const commentaries = candidateCommentaries
+              .filter(c => isValidCommentaryContent(c.content))
+              .map((c: any) => ({
+                ...c,
+                _relevanceScore: calculateTextOverlapScore(meaning, c.content),
+              }))
+              .sort((a: any, b: any) => (b._relevanceScore || 0) - (a._relevanceScore || 0))
+              .slice(0, 2)
 
             const synth = synthesisMap[verse.id]
 
@@ -380,6 +505,9 @@ export default function StudyClient({
                 {/* Commentary */}
                 {commentaries.length > 0 && (
                   <div className="px-5 sm:px-6 py-5 bg-orange-50/30">
+                    {commentaries[0]._relevanceScore !== undefined && commentaries[0]._relevanceScore < 0.12 && (
+                      <p className="text-xs text-orange-800 bg-orange-100 rounded-md p-2 mb-3">Warning: The selected commentary may not fully align with the verse meaning. We prioritize closest available match in current language.</p>
+                    )
                     {commentaries.map((c: any, ci: number) => {
                       const meta = getScholarMeta(c.author)
                       return (
