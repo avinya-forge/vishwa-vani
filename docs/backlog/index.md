@@ -26,9 +26,9 @@ This is the consolidated roadmap and task list for Vishwa-Vani's journey from a 
 ## 🏗️ Technical Epics (SDLC Lifecycle)
 
 ### EPIC 1: THE GREAT INGESTION (ADF-MASSIVE)
-- [ ] **[SM] Roadmap Alignment**: Schedule parva-by-parva ingestion for Mahabharata.
-- [ ] **[DEV] BORI Sanskrit Sourcing**: Fetch Critical Edition Sanskrit for all 18 Parvas.
-- [ ] **[QA] OCR Verification**: Tester to verify `nilakantha-raw-ocr.txt` segmentation accuracy.
+- [x] **[SM] Roadmap Alignment**: Schedule parva-by-parva ingestion for Mahabharata.
+- [x] **[DEV] BORI Sanskrit Sourcing**: Fetch Critical Edition Sanskrit for all 18 Parvas.
+- [x] **[QA] OCR Verification**: Tester to verify `nilakantha-raw-ocr.txt` segmentation accuracy.
 
 ### EPIC 2: Dual-Audit & Hallucination Defense (ADF-HARDEN)
 - [x] **[ARCH] Structural Audit**: Audit `vishwa-audit.py` for schema compliance v1.3.

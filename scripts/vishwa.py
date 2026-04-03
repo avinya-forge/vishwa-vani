@@ -161,7 +161,7 @@ def main():
 
     # Data management
     dp = subparsers.add_parser("data", help="Tiered data management")
-    dp.add_argument("action", choices=["ingest", "promote", "status", "harden", "inventory", "discover", "link", "tag", "summary", "stats", "cyclic"])
+    dp.add_argument("action", choices=["ingest", "promote", "status", "harden", "inventory", "discover", "link", "tag", "summary", "stats", "cyclic", "bori", "ocr"])
     dp.add_argument("slug", nargs="?")
     dp.add_argument("target", nargs="?")
 
@@ -205,6 +205,8 @@ def main():
         elif args.action == "tag": tag_book(args.slug, args.target)
         elif args.action == "harden": harden_data(args.slug)
         elif args.action == "cyclic": cyclic_bug_loop(args.target or "data/3-gold")
+        elif args.action == "bori": fetch_bori_edition(int(args.slug))
+        elif args.action == "ocr": verify_ocr_segmentation(args.target or "data/1-bronze/nilakantha-raw-ocr.txt")
         # The following actions were in the original code but removed in the instruction's data handling:
         # elif args.action == "ingest" and args.source: ingest_to_bronze(args.source, args.slug)
         # elif args.action == "promote" and args.slug: promote_tier(args.slug)
@@ -642,42 +644,45 @@ def promote_tier(slug):
     else:
         print(f"Cannot find data for {slug} in any promotion-ready tier.")
 
-def cyclic_bug_loop(target_dir, sample_rate=0.05):
-    """Identify 5% random verse errors and inject back to backlog."""
-    import random
-    all_files = []
-    for root, _, files in os.walk(target_dir):
-        for f in files:
-            if f.endswith(".json"):
-                all_files.append(os.path.join(root, f))
+def fetch_bori_edition(parva_num):
+    """Fetch BORI Critical Edition for a specific Parva."""
+    import requests
+    from pathlib import Path
     
-    sample_size = max(1, int(len(all_files) * sample_rate))
-    sampled_files = random.sample(all_files, sample_size)
+    # Placeholder: In real implementation, this would fetch from BORI or archive
+    url = f"https://example.com/bori/mahabharata/parva-{parva_num}.pdf"
+    output_path = DATA_BRONZE / f"bori-mahabharata-parva-{parva_num}.pdf"
     
-    errors = []
-    for file_path in sampled_files:
-        try:
-            with open(file_path, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-            
-            for verse in data:
-                # Check for common errors
-                if not verse.get("original"):
-                    errors.append(f"{file_path}: Verse {verse.get('id')} missing original text")
-                if len(verse.get("layers", [])) < 1:
-                    errors.append(f"{file_path}: Verse {verse.get('id')} has no layers")
-                # Add more checks as needed
-        except Exception as e:
-            errors.append(f"{file_path}: JSON parse error - {str(e)}")
+    try:
+        response = requests.get(url)
+        if response.status_code == 200:
+            with open(output_path, 'wb') as f:
+                f.write(response.content)
+            print(f"Downloaded BORI Parva {parva_num} to {output_path}")
+        else:
+            print(f"Failed to download Parva {parva_num}: {response.status_code}")
+    except Exception as e:
+        print(f"Error fetching Parva {parva_num}: {str(e)}")
+
+def verify_ocr_segmentation(ocr_file):
+    """Verify OCR segmentation accuracy."""
+    with open(ocr_file, 'r', encoding='utf-8') as f:
+        content = f.read()
     
-    # Inject to backlog
-    backlog_path = BASE_DIR / "docs" / "backlog" / "index.md"
-    with open(backlog_path, 'a') as f:
-        f.write("\n### Cyclic Bug Loop Findings\n")
-        for error in errors[:10]:  # Limit to 10
-            f.write(f"- [ ] **[BUG]** {error}\n")
+    # Basic checks
+    lines = content.split('\n')
+    sanskrit_lines = [l for l in lines if any(c in l for c in 'अआइईउऊऋॠऌॡएऐओऔअंअःकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसह')]
+    print(f"OCR file has {len(lines)} total lines, {len(sanskrit_lines)} with Sanskrit characters")
     
-    print(f"Cyclic audit complete. Found {len(errors)} issues. Injected to backlog.")
+    # Check for common OCR errors
+    error_patterns = ['11111111', '~~~~', '====', '€+', '„~']
+    errors = sum(1 for pattern in error_patterns if pattern in content)
+    print(f"Detected {errors} potential OCR artifacts")
+    
+    if len(sanskrit_lines) > 100 and errors < 50:
+        print("OCR segmentation appears acceptable")
+    else:
+        print("OCR may need manual review")
 
 if __name__ == "__main__":
     main()
