@@ -26,8 +26,12 @@ export interface VedicText {
   /** Chapter names in Hindi */
   chapterNamesHi: Record<string, string>
   /** Chapter names in Marathi */
-  chapterNamesMr: Record<string, string>  parent?: string // Parent book slug if nested
-  children?: string[] // Child book slugs if this is a container  /** Brief description */
+  chapterNamesMr: Record<string, string>
+  /** Parent book slug if nested */
+  parent?: string
+  /** Child book slugs if this is a container */
+  children?: string[]
+  /** Brief description */
   description: string
   /** Category for grouping */
   category: 'itihas' | 'upanishad' | 'veda' | 'purana' | 'other'

@@ -42,7 +42,54 @@ Vishwa-Vani is built with a **Framework First** approach, ensuring absolute scal
 
 ---
 
-## 🛠️ Getting Started
+## � Deployment
+
+Vishwa-Vani supports multiple free hosting options:
+
+### Option 1: Vercel (Recommended)
+1. **Connect Repository**: Link your GitHub repo to [Vercel](https://vercel.com)
+2. **Auto-Deploy**: Vercel automatically detects Next.js and deploys
+3. **Custom Domain**: Add your domain (free .vercel.app subdomain available)
+4. **Analytics**: Built-in analytics and performance monitoring
+
+### Option 2: Netlify
+1. **Connect Repository**: Link to [Netlify](https://netlify.com)
+2. **Build Settings**:
+   - Build Command: `npm run build`
+   - Publish Directory: `.next`
+3. **Deploy**: Automatic deployments on push
+
+### Option 3: GitHub Pages
+1. **Enable Pages**: Go to repository Settings → Pages
+2. **Source**: GitHub Actions
+3. **Workflow**: Create `.github/workflows/deploy.yml`:
+```yaml
+name: Deploy to GitHub Pages
+on:
+  push:
+    branches: [ main ]
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - run: npm ci
+      - run: npm run build
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .next
+```
+
+### Environment Variables
+For production deployment, set these environment variables:
+- `NODE_ENV=production`
+- `NEXT_PUBLIC_APP_URL=https://your-domain.com`
+
+---
 
 ### Installation
 Ensure you have Node.js (v18+) installed.

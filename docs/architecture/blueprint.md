@@ -5,17 +5,26 @@ This document outlines the technical foundations, design patterns, and architect
 ## 🏛️ System Architecture
 Vishwa-Vani is a **Static-First, Data-Heavy** application designed for zero-cost hosting (GitHub Pages) with high-performance scriptural retrieval.
 
-### 1. Hybrid Data Lake (Vedic Lake)
+### 1. AI-Enhanced Data Lake (Vedic Lake)
 - **JSON Sharding**: Massive books (e.g., Mahabharata) are sharded by chapter: `data/<book-slug>/chapter-<n>.json`.
 - **SQLite WASM**: For large-scale search and complex relational queries, we use a client-side SQLite database loaded into a Web Worker.
-- **NVF 1.0 (Normalized Vedic Fragment)**: A standardized JSON schema ensuring interoperability between any scripture and the UI.
+- **NVF 1.3 (Normalized Vedic Fragment)**: A standardized JSON schema ensuring interoperability between any scripture and the UI.
   - `verse_id`, `original_sanskrit`, `transliteration`, `primary_meaning`.
   - `layers`: Extensible array of commentaries/translations (HI/MR/EN).
+- **AI Context Enrichment**: Each verse is enriched with AI-generated metadata including themes, philosophical depth, cross-references, difficulty assessment, and emotional tone analysis.
 
-### 2. Vedic Shield (Security Architecture)
-- **ShlokaMask**: A canvas-based rendering engine to prevent easy DOM scraping of proprietary aggregated content.
-- **AES-256-GCM**: Client-side decryption using WASM for sensitive or early-access datasets.
-- **DevTools Prevention**: Script-based blocking of console inspection to safeguard the "Fortress of Wisdom."
+### 2. Vedic Data Service Layer
+- **Centralized Data Access**: `VedicDataService` provides unified access to all scriptural data with AI enrichment.
+- **Smart Caching**: Intelligent caching of enriched data to improve performance.
+- **UI-Optimized Structure**: Data is structured specifically for optimal rendering in React components.
+- **Navigation Intelligence**: Automatic generation of chapter navigation with contextual links.
+
+### 4. AI-Enhanced Data Organization
+- **Contextual Intelligence**: Every verse includes AI-generated metadata for themes, philosophical depth, cross-references, and difficulty assessment.
+- **Emotional Tone Analysis**: Automatic detection of devotional, ethical, contemplative, or philosophical tones.
+- **Reading Time Estimation**: Calculated based on text complexity and length.
+- **Complexity Scoring**: Multi-factor assessment including sacred symbols, commentary density, and verse length.
+- **Thematic Clustering**: Automatic grouping of verses by core Vedic concepts (Dharma, Karma, Bhakti, Jnana, Yoga).
 
 ### 3. Frontend & i18n
 - **Next.js 15 (App Router)**: Utilizing Static Site Generation (SSG) for all reading routes.
