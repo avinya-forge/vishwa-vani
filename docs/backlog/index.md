@@ -38,7 +38,7 @@ This is the consolidated roadmap and task list for Vishwa-Vani's journey from a 
 ### EPIC 3: UI consistency & UX Excellence (UI-ENG)
 - [x] **[DEV] Font Clipping**: Fix Sanskrit text clipping in `ShlokaMask`.
 - [x] **[DEV] Global Scale-Up**: Standardize font size at 13-14px.
-- [ ] **[QA] Card Sync Audit**: Verify consistent card heights on Home/Lab.
+- [x] **[QA] Card Sync Audit**: Verify consistent card heights on Home/Lab.
 - [x] **[DEV] Commentary Filter**: Implement 2-step `Author` + `Language` dropdown in `StudyClient` (supports `all`, named authors, and 0-case for `Original`).
 - [x] **[DEV] API Stability**: Add non-break fallback in `synthesizeEntireChapter` when `/api/synthesize` is unavailable; document and add tests.
 - [x] **[QA] Verse Overflow**: Add regression tests for text overflow in `StudyClient` (commentary cards, translation cells, and responsive text wrapping) using Cypress/Jest.
@@ -60,7 +60,7 @@ Every book must pass through 5 phases (P1: Ingest, P2: Harden, P3: Enrich, P4: T
 - **Status**: ⚠️ **PARTIAL (Parva ingestion + adhyaaya routing only)**
 - **Tasks**: [x] **[DEV]** Stabilize `adhyaya` URL parsing and proper fallback to first subchapter.
 - [x] **[DEV]** Add UI indicator: current book/chapter/adhyaya + total counts.
-- [ ] **[QA]** Validate inbound data for Parva-specific commentary language variants.
+- [x] **[QA]** Validate inbound data for Parva-specific commentary language variants.
 
 ### 3. 🕯️ Isha Upanishad
 - **Status**: ⏳ **IN PROGRESS**
