@@ -26,8 +26,8 @@ export interface VedicText {
   /** Chapter names in Hindi */
   chapterNamesHi: Record<string, string>
   /** Chapter names in Marathi */
-  chapterNamesMr: Record<string, string>
-  /** Brief description */
+  chapterNamesMr: Record<string, string>  parent?: string // Parent book slug if nested
+  children?: string[] // Child book slugs if this is a container  /** Brief description */
   description: string
   /** Category for grouping */
   category: 'itihas' | 'upanishad' | 'veda' | 'purana' | 'other'
@@ -100,6 +100,7 @@ export const VEDIC_LIBRARY: VedicText[] = [
       keyThemes: ['Dharma (Duty)', 'Karma (Action)', 'Bhakti (Devotion)', 'Jnana (Knowledge)', 'Yoga (Union)'],
       availableEditions: ['Swami Sivananda', 'Swami Ramsukhdas', 'Adi Shankaracharya', 'Srila Prabhupada']
     },
+    parent: 'mahabharata', // Nested within Mahabharata (Bhishma Parva)
     chapterNamesHi: {
       '1': 'अर्जुनविषादयोग — अर्जुन का विषाद',
       '2': 'सांख्ययोग — ज्ञान का मार्ग',
@@ -257,6 +258,7 @@ export const VEDIC_LIBRARY: VedicText[] = [
       keyThemes: ['Dharma', 'History', 'Politics', 'Ethics'],
       availableEditions: ['Bhandarkar Oriental Research Institute (BORI)']
     },
+    children: ['bhagavad-gita'], // Contains Bhagavad Gita within Bhishma Parva
   },
   {
     slug: 'vishnu-purana',

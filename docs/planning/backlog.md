@@ -36,9 +36,9 @@ This is the consolidated roadmap and task list for Vishwa-Vani's journey from a 
 - [ ] **[QA] Cyclic Bug Loop**: Identify 5% random verse errors -> Inject back to Backlog.
 
 ### EPIC 3: Knowledge Graph & Cross-Scripture Linkage (ADF-LINK)
-- [ ] **ADF-301 (Nested Slug Handler)**: 🔥 **HIGH PRIORITY** Parent/Child book relationships (e.g. Gita in Mahabharata).
-- [ ] **ADF-302 (Universal Concept Tagging)**: Cross-book search functionality via shared tattvas.
-- [ ] **ADF-303 (Genealogical Map)**: UI component for Vedic timeline placement.
+- [x] **ADF-301 (Nested Slug Handler)**: 🔥 **HIGH PRIORITY** Parent/Child book relationships (e.g. Gita in Mahabharata).
+- [x] **ADF-302 (Universal Concept Tagging)**: Cross-book search functionality via shared tattvas.
+- [x] **ADF-303 (Genealogical Map)**: UI component for Vedic timeline placement.
 
 ### EPIC 4: UI consistency & UX Excellence (UI-ENG)
 - [x] **[DEV] Font Clipping**: Fix Sanskrit text clipping in `ShlokaMask`.
