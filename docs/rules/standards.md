@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🛠️ Vishwa-Vani: Engineering & Operations
 
 This document defines the quality standards, development processes, and coding conventions for the Vishwa-Vani project.
@@ -43,3 +44,30 @@ We utilize a Medallion Architecture for scriptural data to ensure 100% accuracy:
 
 ---
 _Driving Factors: [Vision](./vision.md) | [Backlog](./backlog.md)_
+
+
+**SDLC v3.0 | Status: ALPHA**
+
+## 1. CORE DIRECTIVES (The "No Mistakes" Policy)
+- **TDD-FIRST**: No functional code is accepted without a corresponding unit test in `tests/`.
+- **LOC GATE**: No single function or React component should exceed **50 lines of code**.
+- **0 DEAD CODE**: Immediately remove any unused imports, variables, or commented-out blocks.
+- **NO BUGGY CODE**: If a bug is caught by the [QA] engine, it MUST be fixed before the task is marked as `[x]`.
+
+## 2. PROJECT-SPECIFIC RULES
+- **Schema Compliance**: All scriptural data must adhere to **NVF 1.3** specifications.
+- **Responsive Purity**: UI card layouts must be tested across 3 breakpoints (Mobile, Tablet, Desktop).
+- **Static Ingestion**: Maintain the "Zero-Touch" static directory scanning for books.
+
+## 3. DATA INTEGRITY (The "No Data Loss" Policy)
+- **Backlog**: New tasks are ALWAYS appended at the **bottom** of `docs/backlog/index.md`.
+- **Release Notes**: Completed tasks are migrated version-wise to `docs/release/release-notes.md`.
+- **Vision Document**: The strategic vision in `README.md` is immutable unless authorized by the [PO] role.
+
+## 4. SESSION PRIORITY
+- **Primary Engine**: `development-and-verification.md` is the default prompt for implementation.
+- **Verification**: Every session must conclude with an E2E test run (`./run.sh --test`).
+
+---
+_Authorized by: Product Governor_
+>>>>>>> f8302c1 (chore(docs): add standards rule file)
