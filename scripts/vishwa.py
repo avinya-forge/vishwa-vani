@@ -27,11 +27,12 @@ def run_node(script_name, args=[]):
     subprocess.run(cmd)
 
 def audit_nvf(target):
-    """Comprehensive schema and quality auditor for NVF 1.2."""
-    REQUIRED_FIELDS = ["id", "text_slug", "chapter", "verse", "original", "meaning", "layers"]
-    REQUIRED_LAYER_FIELDS = ["author", "author_name", "lang", "type", "content"]
+    """Comprehensive schema and quality auditor for NVF 1.3."""
+    REQUIRED_FIELDS = ["id", "text_slug", "chapter", "verse", "original", "transliteration", "layers"]
+    OPTIONAL_FIELDS = ["anvaya", "ai_metadata"]
+    REQUIRED_LAYER_FIELDS = ["author", "lang", "type", "content"]
     REQUIRED_LANGS = ["en"]
-    PRIMARY_AUTHORS = ["iskcon", "shankara", "ramanuja"]
+    PRIMARY_AUTHORS = ["iskcon", "shankara", "ramanuja", "dnyaneshwari"]
 
     def audit_file(file_path):
         print(f"Auditing: {file_path}")
@@ -44,13 +45,13 @@ def audit_nvf(target):
                 
             for idx, verse in enumerate(data):
                 for r in REQUIRED_FIELDS:
-                    if r not in verse: return False, f"Verse {idx} missing field: '{r}'"
+                    if r not in verse: return False, f"Verse {idx} missing required field: '{r}'"
                         
                 layers = verse.get("layers", [])
                 for i, layer in enumerate(layers):
                     for rf in REQUIRED_LAYER_FIELDS:
                         if rf not in layer:
-                            return False, f"Verse {idx}, Layer {i} missing scholarly metadata: '{rf}'"
+                            return False, f"Verse {idx}, Layer {i} missing required field: '{rf}'"
                 
                 # Check for critical authors as warnings/errors depending on book
                 existing_authors = [l.get("author") for l in layers]
@@ -61,7 +62,10 @@ def audit_nvf(target):
                 if not verse.get("original") or len(verse.get("original")) < 5:
                     return False, f"Verse {idx} missing valid Sanskrit/Original text."
                     
-            return True, f"Passed NVF 1.2 Audit! {len(data)} verses validated."
+                if not verse.get("transliteration") or len(verse.get("transliteration")) < 5:
+                    return False, f"Verse {idx} missing valid transliteration."
+                    
+            return True, f"Passed NVF 1.3 Audit! {len(data)} verses validated."
         except Exception as e:
             return False, str(e)
 
@@ -157,7 +161,7 @@ def main():
 
     # Data management
     dp = subparsers.add_parser("data", help="Tiered data management")
-    dp.add_argument("action", choices=["ingest", "promote", "status", "harden", "inventory", "discover", "link", "tag", "summary", "stats"])
+    dp.add_argument("action", choices=["ingest", "promote", "status", "harden", "inventory", "discover", "link", "tag", "summary", "stats", "cyclic"])
     dp.add_argument("slug", nargs="?")
     dp.add_argument("target", nargs="?")
 
@@ -200,6 +204,7 @@ def main():
         elif args.action == "link": link_books(args.slug, args.target)
         elif args.action == "tag": tag_book(args.slug, args.target)
         elif args.action == "harden": harden_data(args.slug)
+        elif args.action == "cyclic": cyclic_bug_loop(args.target or "data/3-gold")
         # The following actions were in the original code but removed in the instruction's data handling:
         # elif args.action == "ingest" and args.source: ingest_to_bronze(args.source, args.slug)
         # elif args.action == "promote" and args.slug: promote_tier(args.slug)
@@ -636,6 +641,43 @@ def promote_tier(slug):
         shutil.copytree(silver_path, gold_path, dirs_exist_ok=True)
     else:
         print(f"Cannot find data for {slug} in any promotion-ready tier.")
+
+def cyclic_bug_loop(target_dir, sample_rate=0.05):
+    """Identify 5% random verse errors and inject back to backlog."""
+    import random
+    all_files = []
+    for root, _, files in os.walk(target_dir):
+        for f in files:
+            if f.endswith(".json"):
+                all_files.append(os.path.join(root, f))
+    
+    sample_size = max(1, int(len(all_files) * sample_rate))
+    sampled_files = random.sample(all_files, sample_size)
+    
+    errors = []
+    for file_path in sampled_files:
+        try:
+            with open(file_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            
+            for verse in data:
+                # Check for common errors
+                if not verse.get("original"):
+                    errors.append(f"{file_path}: Verse {verse.get('id')} missing original text")
+                if len(verse.get("layers", [])) < 1:
+                    errors.append(f"{file_path}: Verse {verse.get('id')} has no layers")
+                # Add more checks as needed
+        except Exception as e:
+            errors.append(f"{file_path}: JSON parse error - {str(e)}")
+    
+    # Inject to backlog
+    backlog_path = BASE_DIR / "docs" / "backlog" / "index.md"
+    with open(backlog_path, 'a') as f:
+        f.write("\n### Cyclic Bug Loop Findings\n")
+        for error in errors[:10]:  # Limit to 10
+            f.write(f"- [ ] **[BUG]** {error}\n")
+    
+    print(f"Cyclic audit complete. Found {len(errors)} issues. Injected to backlog.")
 
 if __name__ == "__main__":
     main()

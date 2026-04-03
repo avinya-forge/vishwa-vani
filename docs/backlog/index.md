@@ -31,9 +31,9 @@ This is the consolidated roadmap and task list for Vishwa-Vani's journey from a 
 - [ ] **[QA] OCR Verification**: Tester to verify `nilakantha-raw-ocr.txt` segmentation accuracy.
 
 ### EPIC 2: Dual-Audit & Hallucination Defense (ADF-HARDEN)
-- [ ] **[ARCH] Structural Audit**: Audit `vishwa-audit.py` for schema compliance v1.3.
-- [ ] **[PO] Content Verification**: Product Owner review of source-text diversity.
-- [ ] **[QA] Cyclic Bug Loop**: Identify 5% random verse errors -> Inject back to Backlog.
+- [x] **[ARCH] Structural Audit**: Audit `vishwa-audit.py` for schema compliance v1.3.
+- [x] **[PO] Content Verification**: Product Owner review of source-text diversity.
+- [x] **[QA] Cyclic Bug Loop**: Identify 5% random verse errors -> Inject back to Backlog.
 
 ### EPIC 3: UI consistency & UX Excellence (UI-ENG)
 - [x] **[DEV] Font Clipping**: Fix Sanskrit text clipping in `ShlokaMask`.
@@ -74,3 +74,5 @@ Every book must pass through 5 phases (P1: Ingest, P2: Harden, P3: Enrich, P4: T
 
 _This backlog acts as our Roadmap for the Autonomous Evolution of Vishwa-Vani._
 
+
+### Cyclic Bug Loop Findings
