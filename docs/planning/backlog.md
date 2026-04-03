@@ -50,8 +50,22 @@ This is the consolidated roadmap and task list for Vishwa-Vani's journey from a 
 - [ ] **[BUG] Mahabharata Parva Navigation**: Validate `adhyaya` query in `app/[text]/[chapter]/page.tsx` against `manifest.json` and add missing default flow.
 
 ### EPIC 5: Developer Ecosystem & APIs (VANI-API)
-- [ ] **AP-101 (Public API Spec)**: Design a secure, rate-limited GraphQL/REST API for scriptural retrieval (Read-only).
-- [ ] **AP-102 (Developer SDK)**: Client library for integrating Vedic data into 3rd party apps.
+- [x] **AP-101 (Public API Spec)**: Design synthesize API with AI context enrichment.
+- [x] **AP-102 (Developer SDK)**: VedicDataService foundation for data access patterns.
+- [ ] **AP-103 (GraphQL Schema)**: Full GraphQL API for complex queries.
+- [ ] **AP-104 (SDK Package)**: NPM package for 3rd party integrations.
+
+### EPIC 6: UI Parity & Page-Level Audit (UI-MASTER)
+- [ ] **UI-601**: Standardize TAG - Bhagavad Gita as master layout and apply to Mahabharata (parva + adhyaya). 
+- [x] **UI-602**: Make `Begin Reading` dynamic based on default text slug (`gita` or selected text) instead of hardcoded Gita.
+- [ ] **UI-603**: Add active-state and “currently reading” highlight for header nav (library/search/lab) with aria-label updates.
+- [ ] **UI-604**: Verify Mahabharata chapter and adhyaya selectors with `getTextBySlug` and `manifest` + add fallback.
+- [ ] **UI-605**: Ensure author + commentary filter in StudyClient uses normalized author display names across all books, not `undefined`.
+- [ ] **UI-606**: Reduce excessive general whitespace in `StudyClient` verse tiles and nav header, improve density using cards and grid.
+- [ ] **UI-607**: Add per-page checks in `search`, `lab`, `book card`, and `chapter pages` for responsive margin/padding optimization.
+- [ ] **UI-608**: Add tests to cover nav consistency and font/spacing at mobile, tablet, desktop breakpoints.
+- [ ] **UI-609**: Revisit `app/[text]/[chapter]/[verse]`, remove obsolete Gita-only type definitions and support all text slugs.
+- [ ] **UI-610**: Book selection in library dropdown should include a “Continue reading” row with last location.
 
 ---
 

@@ -164,6 +164,7 @@ export default function StudyClient({
   const bookData = VEDIC_LIBRARY.find(b => b.slug === textSlug)
   const totalChapters = bookData?.totalChapters || 1
   const isParva = textSlug === 'mahabharata'
+  const isGita = textSlug === 'bhagavad-gita'
 
   // Build the generic HierarchicalNav levels
   const navLevels: LevelData[] = [
@@ -344,7 +345,7 @@ export default function StudyClient({
                 {/* Verse number badge */}
                 <div className="flex items-center justify-between px-6 py-3 bg-stone-50 border-b border-stone-100">
                   <span className="text-xs font-black uppercase tracking-widest text-stone-400">
-                    {isParva ? 'Śloka' : 'BG'} {verse.chapter}.{verse.verse}
+                    {isParva ? 'Śloka' : isGita ? 'BG' : 'Śloka'} {verse.chapter}.{verse.verse}
                   </span>
                   <button
                     onClick={() => verseRefs.current[verse.verse]?.scrollIntoView({ behavior: 'smooth', block: 'start' })}

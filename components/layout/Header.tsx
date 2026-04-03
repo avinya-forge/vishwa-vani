@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useTranslations, useLocale } from 'next-intl'
+import { usePathname } from 'next/navigation'
 import { VEDIC_LIBRARY } from '@/lib/texts'
 import { useState, useEffect, useRef } from 'react'
 import stats from '@/lib/stats.json'
@@ -28,8 +29,10 @@ function useOnClickOutside(ref: React.RefObject<HTMLDivElement | null>, handler:
 export default function Header() {
   const t = useTranslations('nav')
   const locale = useLocale()
+  const pathname = usePathname()
   const [showLibrary, setShowLibrary] = useState(false)
   const [showMobileMenu, setShowMobileMenu] = useState(false)
+  const [defaultTextSlug, setDefaultTextSlug] = useState('bhagavad-gita')
   const dropdownRef = useRef<HTMLDivElement>(null)
 
   // Attach generic click outside handler
@@ -38,6 +41,12 @@ export default function Header() {
   // Close mobile menu on route change
   useEffect(() => {
     setShowMobileMenu(false)
+  }, [pathname])
+
+  // Load user preference for default reading text
+  useEffect(() => {
+    const saved = localStorage.getItem('vishwa_last_text')
+    if (saved) setDefaultTextSlug(saved)
   }, [])
 
   // Group available books by category  
@@ -83,7 +92,11 @@ export default function Header() {
                         <Link
                           key={book.slug}
                           href={`/${book.slug}/1`}
-                          onClick={() => setShowLibrary(false)}
+                            onClick={() => {
+                              setShowLibrary(false)
+                              setDefaultTextSlug(book.slug)
+                              localStorage.setItem('vishwa_last_text', book.slug)
+                            }}
                           className="flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-orange-50 hover:text-orange-700 transition-all border border-transparent hover:border-orange-100 group bg-white shadow-sm"
                         >
                           <span className="text-[17px] opacity-80 group-hover:opacity-100 transition-opacity">{book.icon || '📜'}</span>
@@ -109,11 +122,11 @@ export default function Header() {
               )}
             </div>
 
-            <Link href="/search" className="px-3 py-1.5 rounded-md text-xs font-bold text-stone-600 hover:text-stone-900 hover:bg-stone-50 transition-all">
+            <Link href="/search" className={`px-3 py-1.5 rounded-md text-xs font-bold transition-all ${pathname === '/search' ? 'text-orange-600 bg-orange-50' : 'text-stone-600 hover:text-stone-900 hover:bg-stone-50'}`}>
               Search
             </Link>
 
-            <Link href="/lab" className="flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-bold text-orange-600 hover:bg-orange-50 transition-all">
+            <Link href="/lab" className={`flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-bold transition-all ${pathname === '/lab' ? 'text-orange-600 bg-orange-50' : 'text-orange-600 hover:bg-orange-50'}`}>
               <span className="text-[13px]">🧪</span> Vedic Labs
             </Link>
           </div>
@@ -135,7 +148,10 @@ export default function Header() {
         {/* Right actions */}
         <div className="flex items-center gap-2">
           <Link
-            href="/bhagavad-gita/1"
+            href={`/${defaultTextSlug}/1`}
+            onClick={() => {
+              localStorage.setItem('vishwa_last_text', defaultTextSlug)
+            }}
             className="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 bg-stone-900 hover:bg-orange-600 text-white text-[11px] font-bold rounded-lg transition-all shadow-sm focus:ring-2 focus:ring-offset-2 focus:ring-stone-900"
           >
             <span className="text-[13px]">📜</span> Begin Reading
