@@ -59,6 +59,7 @@ export default function ShlokaMask({ text, className, fontSize = 28 }: { text: s
         canvas.width = maxWidth * dpr
         canvas.height = (finalLines.length * lineHeight + paddingY * 2) * dpr
         canvas.style.width = `${maxWidth}px`
+        canvas.style.maxWidth = '100%'
         
         ctx.scale(dpr, dpr)
         ctx.font = `700 ${currentFontSize}px "Noto Serif Devanagari", serif`

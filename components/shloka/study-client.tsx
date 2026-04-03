@@ -45,13 +45,33 @@ export default function StudyClient({
   const availableScholars = React.useMemo(() => {
     const scholars = new Set<string>(['none'])
     verses.forEach((v: any) => v.layers?.forEach((l: any) => {
-      if (l.type === 'commentary') scholars.add(l.author)
+      if (l.type === 'commentary') scholars.add(l.author || 'unknown')
     }))
     // Only add 'all' if there are multiple commentary authors
     const commentaryAuthors = Array.from(scholars).filter(s => s !== 'none')
     if (commentaryAuthors.length > 1) scholars.add('all')
     return Array.from(scholars)
   }, [verses])
+
+  // Collect all languages available in commentary layers
+  const availableLanguages = React.useMemo(() => {
+    const langs = new Set<string>(['all'])
+    verses.forEach((v: any) => v.layers?.forEach((l: any) => {
+      if (l.type === 'commentary' && l.lang) langs.add(l.lang)
+    }))
+    return Array.from(langs)
+  }, [verses])
+
+  const getLanguageLabel = (lang: string) => {
+    switch (lang) {
+      case 'en': return 'English'
+      case 'hi': return 'Hindi'
+      case 'mr': return 'Marathi'
+      case 'sa': return 'Sanskrit'
+      case 'all': return 'All Languages'
+      default: return lang.toUpperCase()
+    }
+  }
 
   // Get display metadata for a scholar key
   const getScholarMeta = (authorKey: string) => {
@@ -74,22 +94,38 @@ export default function StudyClient({
 
   // Default to first available non-none scholar
   const defaultScholar = availableScholars.find(s => s !== 'none') || 'none'
+  const defaultLanguage = 'all'
+
   const [scholarSelection, setScholarSelection] = useState<string>(defaultScholar)
+  const [languageSelection, setLanguageSelection] = useState<string>(defaultLanguage)
   const [activeAdhyaya, setActiveAdhyaya] = useState<number>(1)
   
   useEffect(() => {
-    const saved = localStorage.getItem('vishwa_scholar_pref')
-    if (saved && availableScholars.includes(saved)) {
-      setScholarSelection(saved)
+    const savedScholar = localStorage.getItem('vishwa_scholar_pref')
+    const savedLanguage = localStorage.getItem('vishwa_language_pref')
+
+    if (savedScholar && availableScholars.includes(savedScholar)) {
+      setScholarSelection(savedScholar)
     } else {
-       const first = availableScholars.find(s => s !== 'none')
-       if (first) setScholarSelection(first)
+      const first = availableScholars.find(s => s !== 'none')
+      if (first) setScholarSelection(first)
     }
-  }, [availableScholars])
+
+    if (savedLanguage && availableLanguages.includes(savedLanguage)) {
+      setLanguageSelection(savedLanguage)
+    } else {
+      setLanguageSelection(defaultLanguage)
+    }
+  }, [availableScholars, availableLanguages])
 
   const updateScholar = (s: string) => {
     setScholarSelection(s)
     localStorage.setItem('vishwa_scholar_pref', s)
+  }
+
+  const updateLanguage = (lang: string) => {
+    setLanguageSelection(lang)
+    localStorage.setItem('vishwa_language_pref', lang)
   }
 
   const [synthesisMap, setSynthesisMap] = useState<Record<string, { text: string; loading: boolean }>>({})
@@ -107,10 +143,15 @@ export default function StudyClient({
          const res = await fetch('/api/synthesize', { 
            method: 'POST', 
            headers: {'Content-Type': 'application/json'}, 
-           body: JSON.stringify({ verseId: (verse as any).id, contextTexts: texts, language: 'en' }) 
+           body: JSON.stringify({ verseId: (verse as any).id, contextTexts: texts, language: languageSelection || 'en' }) 
          })
+         if (!res.ok) throw new Error('Synthesis API responded with status ' + res.status)
          const data = await res.json()
-         if (data.success) setSynthesisMap(p => ({...p, [(verse as any).id]: { text: data.synthesis, loading: false }}))
+         if (data.success) {
+           setSynthesisMap(p => ({...p, [(verse as any).id]: { text: data.synthesis, loading: false }}))
+         } else {
+           setSynthesisMap(p => ({...p, [(verse as any).id]: { text: 'Synthesis unavailable, try again later.', loading: false }}))
+         }
        } catch (e) { 
          setSynthesisMap(p => ({...p, [(verse as any).id]: { text: 'Synthesis failed.', loading: false }})) 
        }
@@ -214,25 +255,39 @@ export default function StudyClient({
       {/* ═══════════════════════════════════════════ TOOLBAR ═══ */}
       <div className="sticky top-16 z-40 bg-white/90 backdrop-blur-md border-b border-stone-100 shadow-sm">
         <div className="max-w-[1400px] mx-auto px-6 flex items-center justify-between py-3 gap-4">
-          {/* Scholar selector pills */}
-          <div className="flex items-center gap-1 overflow-x-auto">
-            {availableScholars.map(s => {
-              const meta = getScholarMeta(s)
-              return (
-                <button 
-                  key={s}
-                  onClick={() => updateScholar(s)}
-                  className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all ${
-                    scholarSelection === s 
-                    ? 'bg-stone-900 text-white shadow-md' 
-                    : 'text-stone-500 hover:bg-stone-100'
-                  }`}
-                >
-                  <span className={scholarSelection === s ? '' : 'grayscale opacity-60'}>{meta.icon}</span>
-                  {meta.label}
-                </button>
-              )
-            })}
+          <div className="flex flex-wrap items-center gap-3">
+            <label className="flex items-center gap-2 text-xs font-semibold text-stone-600">
+              <span>Author</span>
+              <select
+                value={scholarSelection}
+                onChange={(e) => updateScholar(e.target.value)}
+                className="px-3 py-2 border border-stone-200 rounded-lg text-sm bg-white"
+              >
+                {availableScholars.map((s) => {
+                  const meta = getScholarMeta(s)
+                  return (
+                    <option key={s} value={s}>
+                      {meta.label}
+                    </option>
+                  )
+                })}
+              </select>
+            </label>
+
+            <label className="flex items-center gap-2 text-xs font-semibold text-stone-600">
+              <span>Language</span>
+              <select
+                value={languageSelection}
+                onChange={(e) => updateLanguage(e.target.value)}
+                className="px-3 py-2 border border-stone-200 rounded-lg text-sm bg-white"
+              >
+                {availableLanguages.map((lang) => (
+                  <option key={lang} value={lang}>
+                    {getLanguageLabel(lang)}
+                  </option>
+                ))}
+              </select>
+            </label>
           </div>
 
           {/* AI Synthesis button */}
@@ -259,13 +314,16 @@ export default function StudyClient({
             const meaningLayer = verse.layers?.find((l: any) => l.type === 'translation' && l.lang === 'en')
             const meaning = meaningLayer?.content || verse.meaning || verse.translation || ''
             
-            // Commentary layers — filter by selected scholar
+            // Commentary layers — filter by selected scholar and language
             const commentaries = verse.layers?.filter((l: any) => {
               if (scholarSelection === 'none') return false
               if (l.type !== 'commentary') return false
-              if (l.lang && l.lang !== 'en') return false
+              if (languageSelection !== 'all') {
+                if (!l.lang) return false
+                if (l.lang !== languageSelection) return false
+              }
               if (scholarSelection === 'all') return true
-              return l.author === scholarSelection || l.author.startsWith(scholarSelection)
+              return l.author === scholarSelection || l.author?.startsWith?.(scholarSelection)
             }) || []
 
             const synth = synthesisMap[verse.id]
@@ -322,7 +380,7 @@ export default function StudyClient({
                             <span className="text-sm">{meta.icon}</span>
                             <span className="text-[9px] font-black uppercase tracking-widest text-orange-700">{meta.label}</span>
                           </div>
-                          <p className="text-stone-600 leading-relaxed text-[13px] font-medium whitespace-pre-line">
+                          <p className="text-stone-600 leading-relaxed text-[13px] font-medium whitespace-pre-line break-words overflow-wrap-anywhere">
                             {cleanText(c.content)}
                           </p>
                         </div>
