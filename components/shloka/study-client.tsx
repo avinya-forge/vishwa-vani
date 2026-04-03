@@ -30,12 +30,14 @@ export default function StudyClient({
   textSlug, 
   chapter, 
   verses,
-  adhyayaList = []
+  adhyayaList = [],
+  currentAdhyaya
 }: { 
   textSlug: string, 
   chapter: number, 
   verses: any[],
-  adhyayaList?: { num: number, id: string }[]
+  adhyayaList?: { num: number, id: string }[],
+  currentAdhyaya?: number
 }) {
   const t = useTranslations('study')
   const locale = useLocale()
@@ -223,6 +225,11 @@ export default function StudyClient({
               <div>
                 <h1 className="text-3xl md:text-4xl font-serif font-black text-stone-900 leading-none tracking-tight">
                   {bookData?.name || textSlug}
+                  {isParva && currentAdhyaya && (
+                    <span className="block text-sm font-normal text-stone-500 mt-1">
+                      Parva {chapter} / Adhyaya {currentAdhyaya} of {adhyayaList.length}
+                    </span>
+                  )}
                 </h1>
                 <div className="mt-2.5">
                   <HierarchicalNav levels={navLevels} />

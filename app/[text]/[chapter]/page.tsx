@@ -75,8 +75,12 @@ export default async function StudyChapterPage(props: Props) {
         if (textSlug === 'mahabharata') {
           // If a specific adhyaya is requested via query param, load that
           const targetAdhyaya = adhyayaParam ? parseInt(adhyayaParam) : 1
-          const parvaShard = bookManifest.shards.find((s: any) => 
+          // Validate against manifest: check if adhyaya exists
+          const validAdhyaya = bookManifest.shards.some((s: any) => 
             s.file === `parva-${chapterNumber}/adhyaya-${targetAdhyaya}.json`
+          ) ? targetAdhyaya : 1 // Default to 1 if invalid
+          const parvaShard = bookManifest.shards.find((s: any) => 
+            s.file === `parva-${chapterNumber}/adhyaya-${validAdhyaya}.json`
           ) || bookManifest.shards.find((s: any) => s.file.startsWith(`parva-${chapterNumber}/`))
           if (parvaShard) shardFile = parvaShard.file
         } else {
@@ -139,23 +143,25 @@ export default async function StudyChapterPage(props: Props) {
           chapterNumber={chapterNumber}
           chapterList={chapterList}
           adhyayaList={adhyayaList}
+          currentAdhyaya={adhyayaParam ? parseInt(adhyayaParam) : 1}
         />
       </div>
     </main>
   )
 }
 
-/** 
- * Intermediate wrapper to determine localized titles server-side (for SEO)
- * while still letting the client handle the main interactive state.
- */
-function StudyWrapper({ verses, textMetadata, chapterNumber, chapterList, adhyayaList }: any) {
+function StudyWrapper({ verses, textMetadata, chapterNumber, chapterList, adhyayaList, currentAdhyaya }: any) {
   const title = textMetadata.chapterNames[chapterNumber] || `${textMetadata.name} - Chapter ${chapterNumber}`
   const scriptureName = textMetadata.name
   const tagline = textMetadata.description
 
   const prevChapter = parseInt(chapterNumber) > 1 ? parseInt(chapterNumber) - 1 : null
   const nextChapter = parseInt(chapterNumber) < textMetadata.totalChapters ? parseInt(chapterNumber) + 1 : null
+
+  // For Mahabharata, add adhyaya indicator
+  const isMahabharata = textMetadata.slug === 'mahabharata'
+  const currentAdhyaya = adhyayaList.length > 0 ? adhyayaList[0].num : null // Assuming first if multiple, but need to pass current
+  const totalAdhyayas = adhyayaList.length
 
   return (
     <>
@@ -164,6 +170,7 @@ function StudyWrapper({ verses, textMetadata, chapterNumber, chapterList, adhyay
         textSlug={textMetadata.slug}
         chapter={parseInt(chapterNumber)}
         adhyayaList={adhyayaList || []}
+        currentAdhyaya={currentAdhyaya}
       />
       
       {/* Footer Navigation */}

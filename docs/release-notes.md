@@ -1,6 +1,29 @@
 # 🚀 Vishwa-Vani: Unified Release Archive
 
-*Current Version*: v0.6.0 (The Wisdom Engine)
+*Current Version*: v0.7.0 (The UI Stabilization)
+
+---
+
+## [0.7.0] - 2026-04-03 (The UI Stabilization)
+### 🏗️ Major Milestones
+- **Epic Archived**: UI consistency & UX Excellence (UI-ENG) - Priority fixes for existing broken features.
+- **Backlog Sync**: Marked completed UI/data fixes as done, focusing on Bhagavad Gita and Mahabharata stability.
+
+### ✨ Added
+- **Commentary Filter**: 2-step Author + Language dropdown in StudyClient for multi-language commentary selection.
+- **API Stability**: Non-break fallback for `/api/synthesize` endpoint with safe synthesis stub.
+- **Mahabharata Navigation**: Validated adhyaya query parsing against manifest.json with default fallback to first subchapter.
+- **UI Indicator**: Added current book/chapter/adhyaya + total counts display for Mahabharata.
+
+### 🔧 Changed
+- **Verse Overflow**: Improved text wrapping with `break-words` and `overflow-wrap-anywhere` in commentary cards.
+- **ShlokaMask**: Added `maxWidth: 100%` for responsive canvas rendering.
+
+### 🐛 Fixed
+- **UI-ENG-201**: Commentary selection now supports author and language filters.
+- **UI-ENG-202**: AI synthesis button has graceful failure handling.
+- **UI-ENG-203**: Text overflow in long commentary strings resolved.
+- **BUG-003**: Mahabharata adhyaya routing validated and defaults properly.
 
 ---
 
