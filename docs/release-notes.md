@@ -1,6 +1,30 @@
 # 🚀 Vishwa-Vani: Unified Release Archive
 
-*Current Version*: v0.7.0 (The UI Stabilization)
+*Current Version*: v0.8.0 (AI Service & Developer Ecosystem)
+
+---
+
+## [0.8.0] - 2026-04-03 (The AI Developer Ecosystem)
+### 🏗️ Major Milestones
+- **Epic Completed**: Developer Ecosystem & APIs (VANI-API) and AI data service layer.
+- **Data Model**: AIVedicDataService with verse enrichment, navigation intelligence, and caching.
+- **Test Coverage**: 14 new unit tests across API, data models, and UI components.
+- **Deployment Preparation**: Added `vercel.json`, Next config for build, and README step-by-step deployment guide.
+
+### ✨ Added
+- **AI Context Enrichment**: `themes`, `philosophicalDepth`, `crossReferences`, `difficulty`, `emotionalTone`.
+- **UI Metadata**: `readingTime`, `complexityScore`, `hasCommentary`, `languageCount`.
+- **Public API Stub**: Synthesis endpoint `/api/synthesize` with robust request validation.
+- **Data Service Layer**: `lib/data-service.ts` for centralized retrieval and UI mapping.
+
+### 🔧 Changed
+- **Page Data Loading**: `/[text]/[chapter]` now uses `VedicDataService.getChapterData` for unified fetch and enrichment.
+- **Navigation**: Footer uses AI service navigation metadata rather than local corner case code.
+- **Build**: Disabled `output: 'export'` in `next.config.ts` for API/SSR compatibility.
+
+### 🐛 Fixed
+- `verify_ocr_segmentation` NPE and path bug fixed in `scripts/vishwa.py`.
+- Architecture docs updated to include AI-driven data pipeline as single source of truth.
 
 ---
 

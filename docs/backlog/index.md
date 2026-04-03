@@ -44,6 +44,12 @@ This is the consolidated roadmap and task list for Vishwa-Vani's journey from a 
 - [x] **[QA] Verse Overflow**: Add regression tests for text overflow in `StudyClient` (commentary cards, translation cells, and responsive text wrapping) using Cypress/Jest.
 - [x] **[BUG] Mahabharata Parva Navigation**: Validate `adhyaya` query in `app/[text]/[chapter]/page.tsx` against `manifest.json` and add missing default flow.
 
+### EPIC 5: Developer Ecosystem & APIs (VANI-API)
+- [x] **[AP-101] Public API Spec**: Implement `/api/synthesize` with payload validation and fallback.
+- [x] **[AP-102] Developer SDK foundation**: Add `lib/data-service.ts` and connect chapter page data flow.
+- [x] **[AP-103] Data Modeling**: Add AI-enriched verse metadata, navigation metadata, and caching strategy.
+- [x] **[AP-104] Deployment / Docs**: Add Vercel/Netlify/GitHub Pages deployment instructions and `vercel.json`.
+
 ---
 
 ## 📊 Book-Wise Ingestion Progress (NVF 1.0)
