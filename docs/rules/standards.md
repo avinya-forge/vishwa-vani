@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🛠️ Vishwa-Vani: Engineering & Operations
 
 This document defines the quality standards, development processes, and coding conventions for the Vishwa-Vani project.
@@ -70,4 +69,3 @@ _Driving Factors: [Vision](./vision.md) | [Backlog](./backlog.md)_
 
 ---
 _Authorized by: Product Governor_
->>>>>>> f8302c1 (chore(docs): add standards rule file)
