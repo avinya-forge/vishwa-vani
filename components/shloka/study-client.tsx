@@ -507,7 +507,7 @@ export default function StudyClient({
                   <div className="px-5 sm:px-6 py-5 bg-orange-50/30">
                     {commentaries[0]._relevanceScore !== undefined && commentaries[0]._relevanceScore < 0.12 && (
                       <p className="text-xs text-orange-800 bg-orange-100 rounded-md p-2 mb-3">Warning: The selected commentary may not fully align with the verse meaning. We prioritize closest available match in current language.</p>
-                    )
+                    )}
                     {commentaries.map((c: any, ci: number) => {
                       const meta = getScholarMeta(c.author)
                       return (
