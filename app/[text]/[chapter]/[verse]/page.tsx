@@ -13,10 +13,9 @@ export async function generateStaticParams() {
 
   // Pre-generate a conservative number of pages to keep build fast
   for (const p of paths) {
-    if (p.text === 'bhagavad-gita') {
-      for (let v = 1; v <= 3; v++) {
-        params.push({ text: p.text, chapter: p.chapter, verse: String(v) })
-      }
+    // Generate first 3 verses for each chapter of all texts
+    for (let v = 1; v <= 3; v++) {
+      params.push({ text: p.text, chapter: p.chapter, verse: String(v) })
     }
   }
 

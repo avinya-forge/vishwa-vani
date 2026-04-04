@@ -32,6 +32,7 @@ export default function GrammarTokenizer() {
       title="Sanskrit Tokenizer"
       subtitle="Grammar & Morphology"
       icon="🧩"
+      darkMode={true}
       footerNote="This module currently uses a placeholder word-split algorithm. Full Paninian grammar parsing coming in Phase 4."
     >
       {!result ? (
@@ -42,7 +43,7 @@ export default function GrammarTokenizer() {
               placeholder="Paste a Sanskrit Shloka here (Devanagari or Transliteration)..."
               value={shloka}
               onChange={(e) => setShloka(e.target.value)}
-              className="w-full bg-stone-50 border border-stone-200 p-4 rounded-xl focus:border-orange-400 outline-none transition-all placeholder:text-stone-300 text-[13px] text-stone-800 font-sans resize-none h-24 shadow-inner"
+              className="w-full bg-stone-800/50 border border-stone-700 p-4 rounded-xl focus:border-orange-400 outline-none transition-all placeholder:text-stone-400 text-stone-100 font-sans resize-none h-24 shadow-inner"
             />
           </div>
 

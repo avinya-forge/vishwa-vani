@@ -56,9 +56,35 @@ export default async function StudyChapterPage(props: Props) {
 
   const chapterInt = parseInt(chapterNumber)
 
+  // Build adhyaya list for Mahabharata
+  const adhyayaList = textSlug === 'mahabharata' 
+    ? (JSON.parse(fs.readFileSync(path.join(process.cwd(), 'data', 'manifest.json'), 'utf8'))
+        .books.find((b: any) => b.slug === 'mahabharata')?.shards
+        .filter((s: any) => s.file.startsWith(`parva-${chapterNumber}/`))
+        .map((s: any) => {
+            // s.file format: "parva-2/adhyaya-5.json"
+            const filename = s.file.split('/')[1]               // "adhyaya-5.json"
+            const num = parseInt(filename.replace('adhyaya-', '').replace('.json', ''))
+            return { num, id: s.id }
+        })
+        .sort((a: any, b: any) => a.num - b.num)
+        || [])
+    : []
+
+  // Validate adhyaya parameter for Mahabharata
+  let validatedAdhyayaParam = adhyayaParam
+  if (textSlug === 'mahabharata' && adhyayaList.length > 0) {
+    const requestedAdhyaya = adhyayaParam ? parseInt(adhyayaParam) : null
+    const isValidAdhyaya = requestedAdhyaya && adhyayaList.some((a: any) => a.num === requestedAdhyaya)
+    if (!isValidAdhyaya) {
+      // Fallback to first available adhyaya
+      validatedAdhyayaParam = String(adhyayaList[0].num)
+    }
+  }
+
   // Load data using AI-enhanced service
   const chapterData = await vedicDataService.getChapterData(textSlug, chapterInt, {
-    adhyaya: adhyayaParam ? parseInt(adhyayaParam) : undefined,
+    adhyaya: validatedAdhyayaParam ? parseInt(validatedAdhyayaParam) : undefined,
     includeAI: true, // Enable AI enrichment
     language: 'en'
   });
@@ -79,21 +105,6 @@ export default async function StudyChapterPage(props: Props) {
 
   const { verses: enrichedVerses, navigation, aiInsights } = chapterData;
 
-  // Build adhyaya list for Mahabharata
-  const adhyayaList = textSlug === 'mahabharata' 
-    ? (JSON.parse(fs.readFileSync(path.join(process.cwd(), 'data', 'manifest.json'), 'utf8'))
-        .books.find((b: any) => b.slug === 'mahabharata')?.shards
-        .filter((s: any) => s.file.startsWith(`parva-${chapterNumber}/`))
-        .map((s: any) => {
-            // s.file format: "parva-2/adhyaya-5.json"
-            const filename = s.file.split('/')[1]               // "adhyaya-5.json"
-            const num = parseInt(filename.replace('adhyaya-', '').replace('.json', ''))
-            return { num, id: s.id }
-        })
-        .sort((a: any, b: any) => a.num - b.num)
-        || [])
-    : []
-
   // Build chapter list for navigation
   const chapterList: { num: number; name: string }[] = []
   for (let i = 1; i <= (textMetadata.totalChapters || 1); i++) {
@@ -110,15 +121,17 @@ export default async function StudyChapterPage(props: Props) {
           chapterData={chapterData}
           textSlug={textSlug}
           chapterNumber={chapterInt}
-          adhyayaParam={adhyayaParam}
+          adhyayaParam={validatedAdhyayaParam}
+          adhyayaList={adhyayaList}
         />
       </div>
     </main>
   )
 }
 
-function StudyWrapper({ chapterData, textSlug, chapterNumber, adhyayaParam }: any) {
+function StudyWrapper({ chapterData, textSlug, chapterNumber, adhyayaParam, adhyayaList }: any) {
   const { verses, navigation, aiInsights, metadata } = chapterData;
+  const textMetadata = getTextBySlug(textSlug);
 
   return (
     <>
@@ -126,13 +139,23 @@ function StudyWrapper({ chapterData, textSlug, chapterNumber, adhyayaParam }: an
         verses={verses}
         textSlug={metadata.slug}
         chapter={chapterNumber}
-        adhyayaList={[]} // TODO: Build from navigation data
+        adhyayaList={adhyayaList}
         currentAdhyaya={adhyayaParam ? parseInt(adhyayaParam) : undefined}
       />
       
       {/* Footer Navigation */}
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 mt-8 pb-12 flex flex-col sm:flex-row items-center justify-between gap-4 relative z-10">
-        <div className="flex gap-3 w-full sm:w-auto">
+        {/* Footer Metadata */}
+        <div className="flex flex-col gap-1 text-center sm:text-left">
+          <div className="text-[10px] font-black uppercase tracking-widest text-stone-400">
+            {textMetadata?.name || textSlug}
+          </div>
+          <div className="text-[9px] text-stone-500 font-medium">
+            Chapter {chapterNumber}{adhyayaParam ? ` • Adhyaya ${adhyayaParam}` : ''} • {verses?.length || 0} Verses
+          </div>
+        </div>
+
+        <div className="flex gap-3 w-full sm:w-auto justify-center sm:justify-end">
           {navigation.prevChapter && (
             <Link
               href={navigation.prevChapter.slug}

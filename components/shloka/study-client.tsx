@@ -47,6 +47,18 @@ export default function StudyClient({
   const normalizeScholarKey = (author: string) => (author || '').split('-')[0].toLowerCase()
   const PREFERRED_SCHOLARS = ['dnyaneshwari', 'iskcon']
 
+  // Persist reading position for "Continue Reading" feature
+  useEffect(() => {
+    const readingPosition = {
+      text: textSlug,
+      chapter: chapter,
+      verse: verses.length > 0 ? verses[0].verse : 1,
+      timestamp: Date.now()
+    }
+    localStorage.setItem('vishwa_continue_reading', JSON.stringify(readingPosition))
+    localStorage.setItem('vishwa_last_text', textSlug)
+  }, [textSlug, chapter, verses])
+
   // Collect all unique scholarly authors across verses, normalized to preferred top-2 authors
   const availableScholars = React.useMemo(() => {
     const baseAuthors = new Set<string>()
@@ -451,7 +463,7 @@ export default function StudyClient({
             }) || []
 
             const commentaries = candidateCommentaries
-              .filter(c => isValidCommentaryContent(c.content))
+              .filter((c: any) => isValidCommentaryContent(c.content))
               .map((c: any) => ({
                 ...c,
                 _relevanceScore: calculateTextOverlapScore(meaning, c.content),

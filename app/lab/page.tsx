@@ -1,6 +1,7 @@
 import PranayamaTimer from '@/components/lab/pranayama-timer'
 import AkshauhiniCalc from '@/components/lab/akshauhini-calc'
 import VedicInstruments from '@/components/lab/vedic-instruments'
+import KarmaYogaSimulator from '@/components/lab/karma-yoga-simulator'
 
 export default function VedicLabPage() {
   return (
@@ -33,6 +34,7 @@ export default function VedicLabPage() {
             <div className="space-y-8">
                <AkshauhiniCalc />
                <VedicInstruments />
+               <KarmaYogaSimulator />
             </div>
         </div>
       </div>

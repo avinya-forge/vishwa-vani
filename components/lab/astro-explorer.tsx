@@ -34,6 +34,7 @@ export default function AstroExplorer() {
       title="Astro Explorer"
       subtitle="Pancha-Tattva Elements"
       icon="🌌"
+      darkMode={true}
       footerNote="This module uses an experimental Guna-Shastra algorithm. Accurate readings requiring Janma-Kundali are in the Phase 4 roadmap."
     >
       {!result ? (
@@ -45,7 +46,7 @@ export default function AstroExplorer() {
               placeholder="Enter your name..."
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="w-full bg-stone-50 border border-stone-200 p-4 rounded-xl focus:border-orange-400 outline-none transition-all placeholder:text-stone-300 text-[13px] text-stone-800 shadow-inner"
+              className="w-full bg-stone-800/50 border border-stone-700 p-4 rounded-xl focus:border-orange-400 outline-none transition-all placeholder:text-stone-400 text-stone-100 shadow-inner"
             />
           </div>
           

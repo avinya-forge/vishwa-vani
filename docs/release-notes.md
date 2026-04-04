@@ -1,10 +1,64 @@
 # 🚀 Vishwa-Vani: Unified Release Archive
 
-*Current Version*: v0.8.1 (Lean UI Template & Scholarly Interface)
+*Current Version*: v0.9.0 (Autonomous Data Factory & AI Professor)
 
 ---
 
-## [0.8.1] - 2026-04-04 (Lean UI Template)
+## [0.9.0] - 2026-04-05 (Autonomous Data Factory & AI Professor)
+### 🏗️ Major Milestones
+- **Epic Completed**: THE GREAT INGESTION (ADF-MASSIVE) - Full Mahabharata data pipeline operational
+- **Epic Completed**: Dual-Audit & Hallucination Defense (ADF-HARDEN) - Schema compliance and quality assurance
+- **Epic Completed**: UI Consistency & UX Excellence (UI-ENG) - Production-ready interface across all texts
+- **Epic Completed**: Developer Ecosystem & APIs (VANI-API) - Complete API suite with AI enrichment
+- **Milestone Achieved**: Autonomous Data Factory (ADF) fully operational for 5 core books
+
+### ✨ Added
+- **Complete Mahabharata Ingestion**: All 18 Parvas with BORI Critical Edition Sanskrit and OCR verification
+- **AI-Enhanced Data Service**: VedicDataService with verse enrichment, navigation intelligence, and caching
+- **Public API Suite**: `/api/synthesize` endpoint with payload validation and fallback handling
+- **Deployment Infrastructure**: Vercel configuration and deployment documentation
+- **Continue Reading Feature**: Persistent reading position with localStorage and UI integration
+- **Universal Verse Pages**: All texts now support individual verse URLs (removed Gita-only restrictions)
+
+### 🔧 Changed
+- **Landing Page**: "Begin Reading" now uses dynamic text preference from localStorage
+- **Header Navigation**: Active states for Library dropdown when viewing scriptures
+- **Verse Page Generation**: Static params now include all texts (first 3 verses per chapter)
+- **StudyClient**: Enhanced with reading position persistence and improved scholar selection
+- **Data Architecture**: Full NVF 1.3 compliance with AI metadata enrichment
+
+### 🧪 Test Coverage
+- ✅ All 29 tests passing (API, components, data models)
+- ✅ Build: 125 static pages generated successfully
+- ✅ TypeScript: Zero errors across codebase
+- ✅ Data validation: Schema compliance verified
+
+### 📋 Backlog Updates
+- **EPIC 1 COMPLETED**: THE GREAT INGESTION (ADF-MASSIVE)
+- **EPIC 2 COMPLETED**: Dual-Audit & Hallucination Defense (ADF-HARDEN)
+- **EPIC 3 COMPLETED**: UI Consistency & UX Excellence (UI-ENG)
+- **EPIC 5 COMPLETED**: Developer Ecosystem & APIs (VANI-API)
+- **UI-602 COMPLETED**: Dynamic Begin Reading implementation
+- **UI-605 COMPLETED**: Commentary Author Uniformity
+- **UI-608 COMPLETED**: Verse Page Generalization
+- **BATCH-UI-MINOR COMPLETED**: Header states, continue reading, accessibility
+- **TMPL-901 COMPLETED**: Gita Lean Template verification
+
+### 🐛 Fixed
+- Font clipping in ShlokaMask with maxWidth: 100%
+- API stability with synthesizeEntireChapter fallback
+- Mahabharata adhyaya query parsing and validation
+- Text overflow in commentary cards with break-words
+- Verse page generalization for all scripture types
+
+### 🚀 Deployment Status
+- **Build**: ✅ Production-ready (125 pages, 2.1s compile)
+- **Tests**: ✅ All passing (29/29, 4.6s runtime)
+- **Data**: ✅ 5 core books fully ingested and validated
+- **API**: ✅ Synthesis endpoint operational
+- **Version**: 0.8.1 → 0.9.0
+
+---
 ### 🏗️ Major Milestones
 - **Epic Started**: UI Parity & Template Foundation (UI-MASTER) - Lean template paradigm for all future books.
 - **Epic Started**: Chapter-Level Micro-Apps (VEDIC-LABS-EXT) and Mahabharata Optimization (MBH-OPTIMIZE).

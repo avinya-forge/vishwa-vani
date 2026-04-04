@@ -33,21 +33,31 @@ export default function Header() {
   const [showLibrary, setShowLibrary] = useState(false)
   const [showMobileMenu, setShowMobileMenu] = useState(false)
   const [defaultTextSlug, setDefaultTextSlug] = useState('bhagavad-gita')
+  const [continueReading, setContinueReading] = useState<{text: string, chapter: number, verse: number} | null>(null)
   const dropdownRef = useRef<HTMLDivElement>(null)
 
   // Attach generic click outside handler
   useOnClickOutside(dropdownRef, () => setShowLibrary(false))
+
+  // Load continue reading position
+  useEffect(() => {
+    const saved = localStorage.getItem('vishwa_continue_reading')
+    if (saved) {
+      try {
+        setContinueReading(JSON.parse(saved))
+      } catch (e) {
+        // Ignore invalid data
+      }
+    }
+  }, [])
 
   // Close mobile menu on route change
   useEffect(() => {
     setShowMobileMenu(false)
   }, [pathname])
 
-  // Load user preference for default reading text
-  useEffect(() => {
-    const saved = localStorage.getItem('vishwa_last_text')
-    if (saved) setDefaultTextSlug(saved)
-  }, [])
+  // Check if current path is a text page
+  const isOnTextPage = pathname.startsWith('/') && pathname.split('/').length >= 3 && !['search', 'lab', 'acknowledgments'].includes(pathname.split('/')[1])
 
   // Group available books by category  
   const availableBooks = VEDIC_LIBRARY.filter(b => b.available)
@@ -76,7 +86,7 @@ export default function Header() {
               <button
                 onClick={() => setShowLibrary(v => !v)}
                 aria-expanded={showLibrary}
-                className={`flex items-center gap-1 px-3 py-1.5 rounded-md text-xs font-bold transition-all ${showLibrary ? 'text-orange-600 bg-orange-50' : 'text-stone-600 hover:text-stone-900 hover:bg-stone-50'}`}
+                className={`flex items-center gap-1 px-3 py-1.5 rounded-md text-xs font-bold transition-all ${showLibrary || isOnTextPage ? 'text-orange-600 bg-orange-50' : 'text-stone-600 hover:text-stone-900 hover:bg-stone-50'}`}
               >
                 Library
                 <svg className={`w-3 h-3 transition-transform duration-200 ${showLibrary ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path d="M19 9l-7 7-7-7" /></svg>
@@ -84,6 +94,26 @@ export default function Header() {
 
               {showLibrary && (
                 <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[420px] bg-white border border-stone-100 rounded-xl shadow-2xl shadow-stone-200/50 overflow-hidden animate-in fade-in slide-in-from-top-1 duration-150 z-[150] origin-top">
+                  {/* Continue Reading */}
+                  {continueReading && (
+                    <div className="px-4 py-3 border-b border-stone-50 bg-orange-50/30">
+                      <p className="text-[9px] font-black uppercase tracking-widest text-orange-600 mb-2.5">Continue Reading</p>
+                      <Link
+                        href={`/${continueReading.text}/${continueReading.chapter}/${continueReading.verse}`}
+                        onClick={() => setShowLibrary(false)}
+                        className="flex items-center gap-2.5 px-3 py-2 rounded-lg bg-orange-100 hover:bg-orange-200 text-orange-800 transition-all border border-orange-200 group"
+                      >
+                        <span className="text-[17px]">📖</span>
+                        <div>
+                          <div className="text-xs font-bold leading-tight">
+                            {VEDIC_LIBRARY.find(b => b.slug === continueReading.text)?.name || continueReading.text}
+                          </div>
+                          <div className="text-[9px] text-orange-600/70 font-medium">Chapter {continueReading.chapter}, Verse {continueReading.verse}</div>
+                        </div>
+                      </Link>
+                    </div>
+                  )}
+
                   {/* Quick links row */}
                   <div className="px-4 py-3 border-b border-stone-50 bg-stone-50/30">
                     <p className="text-[9px] font-black uppercase tracking-widest text-stone-400 mb-2.5">Available Now</p>

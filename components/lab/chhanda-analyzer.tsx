@@ -39,6 +39,7 @@ export default function ChhandaAnalyzer() {
       title="Meter Analyzer"
       subtitle="Chhanda Validation Engine"
       icon="📜"
+      darkMode={true}
       footerNote="This module currently uses a simple string-length approximator. Full algorithmic syllable parsing coming in Phase 4."
     >
       {!result ? (
@@ -49,7 +50,7 @@ export default function ChhandaAnalyzer() {
               placeholder="Paste a Sanskrit Shloka here (Devanagari or Transliteration)..."
               value={shloka}
               onChange={(e) => setShloka(e.target.value)}
-              className="w-full bg-stone-50 border border-stone-200 p-4 rounded-xl focus:border-orange-400 outline-none transition-all placeholder:text-stone-300 text-[13px] text-stone-800 font-sans resize-none h-24 shadow-inner"
+              className="w-full bg-stone-800/50 border border-stone-700 p-4 rounded-xl focus:border-orange-400 outline-none transition-all placeholder:text-stone-400 text-stone-100 font-sans resize-none h-24 shadow-inner"
             />
           </div>
 

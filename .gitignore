@@ -64,3 +64,10 @@ Thumbs.db
 /public/*.db
 /public/static_search_fallback.json
 /docs/generated/
+
+# Documentation restrictions
+/docs/*
+!/docs/backlog.md
+!/docs/release-notes.md
+!/docs/vision.md
+!/docs/standards.md

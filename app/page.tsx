@@ -9,10 +9,15 @@ export default function Home() {
   const t = useTranslations('home')
   const locale = useLocale()
   const [mounted, setMounted] = useState(false)
+  const [defaultTextSlug, setDefaultTextSlug] = useState('bhagavad-gita')
   const stats = getLibraryStats()
   const hierarchy = getVedicHierarchy()
 
-  useEffect(() => { setMounted(true) }, [])
+  useEffect(() => { 
+    setMounted(true)
+    const saved = localStorage.getItem('vishwa_last_text')
+    if (saved) setDefaultTextSlug(saved)
+  }, [])
   if (!mounted) return <div className="min-h-screen bg-[#FDFBF7]" />
 
   // Only show categories that have at least one available book
@@ -40,7 +45,7 @@ export default function Home() {
 
         <div className="flex flex-wrap justify-center gap-3">
           <Link
-            href="/bhagavad-gita/1"
+            href={`/${defaultTextSlug}/1`}
             className="inline-flex items-center gap-2 px-6 py-3 bg-stone-900 hover:bg-orange-600 text-white font-bold rounded-xl transition-all shadow-lg shadow-stone-200/50 text-xs tracking-wide"
           >
             <span className="text-sm">📜</span> Begin Reading
