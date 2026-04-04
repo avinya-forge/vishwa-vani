@@ -154,7 +154,15 @@ export default function StudyClient({
 
   const [scholarSelection, setScholarSelection] = useState<string[]>([])
   const [languageSelection, setLanguageSelection] = useState<string>(defaultLanguage)
-  const [activeAdhyaya, setActiveAdhyaya] = useState<number>(1)
+  const [activeAdhyaya, setActiveAdhyaya] = useState<number>(currentAdhyaya || 1)
+
+  useEffect(() => {
+    if (typeof currentAdhyaya === 'number' && currentAdhyaya > 0) {
+      setActiveAdhyaya(currentAdhyaya)
+    } else if (adhyayaList.length > 0) {
+      setActiveAdhyaya(adhyayaList[0].num)
+    }
+  }, [currentAdhyaya, adhyayaList])
   
   useEffect(() => {
     const savedScholars = localStorage.getItem('vishwa_scholar_pref')

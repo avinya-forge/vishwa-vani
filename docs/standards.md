@@ -94,6 +94,8 @@ The Lean UI Template is the official UI standard.
 - **Schema validation**: CI verifies `data/` against NVF.
 - **Link integrity**: all internal shloka references resolve.
 - **Testing**: new work requires corresponding tests.
+- **Coverage target**: maintain at least 95% unit test coverage for core product code before greenlighting new feature epics.
+- **Stability gate**: existing product fix work and coverage remediation must complete before significant new feature development begins.
 
 ## 8. Compliance & Legal
 - Use only CC0 or explicitly permitted translations.

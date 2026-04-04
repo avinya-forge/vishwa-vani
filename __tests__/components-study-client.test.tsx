@@ -142,4 +142,17 @@ describe('StudyClient', () => {
     expect(screen.getByTestId('hierarchical-nav')).toBeInTheDocument();
     expect(screen.getByTestId('vedic-timeline')).toBeInTheDocument();
   });
+
+  it('uses currentAdhyaya from Mahabharata deep-linking', () => {
+    const mahabharataProps = {
+      ...defaultProps,
+      textSlug: 'mahabharata',
+      chapter: 1,
+      adhyayaList: [{ num: 5, id: 'parva-1-adhyaya-5' }],
+      currentAdhyaya: 5
+    };
+
+    render(<StudyClient {...mahabharataProps} />);
+    expect(screen.getByText(/Parva 1 \/ Adhyaya 5/)).toBeInTheDocument();
+  });
 });
