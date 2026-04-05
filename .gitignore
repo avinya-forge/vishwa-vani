@@ -67,7 +67,11 @@ Thumbs.db
 
 # Documentation restrictions
 /docs/*
-!/docs/backlog.md
+!/docs/planning
+!/docs/planning/*
+!/docs/rules
+!/docs/rules/*
+!/docs/architecture
+!/docs/architecture/*
 !/docs/release-notes.md
 !/docs/vision.md
-!/docs/standards.md

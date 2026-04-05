@@ -24,10 +24,9 @@ Vishwa-Vani is built with a **Framework First** approach, ensuring absolute scal
 
 | Milestone | Phase | Status | Progress | Highlights |
 | :--- | :--- | :--- | :--- | :--- |
-| **M1** | The Autonomous Data Factory | ✅ **DONE** | 100% | SQLite WASM, i18n, Security Shield |
-| **M2** | The AI Professor | ⏳ IN PROGRESS | 35% | Astro Module, 1600px UI, WebLLM |
-| **M3** | Massive Aggregation | 📅 BACKLOG | 0% | Mahabharata, Vedas, Puranas |
-| **M4** | Wiki Crowdsourcing | 📅 BACKLOG | 0% | Community Edit Protocols |
+| **M1** | The Autonomous Data Factory | ✅ **COMPLETED** | 100% | All core ingestion, audit, and data pipeline tasks finished |
+| **M2** | The AI Professor | ⏳ **BETA READY** | 35% | AI-assisted conceptual maps, Semantic Search |
+| **M3** | Global Public Release | 📅 **ROLLOUT** | 0% | Public-facing API and Multi-language UI |
 
 ---
 
