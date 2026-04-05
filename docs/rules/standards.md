@@ -1,24 +1,29 @@
 ﻿# 🛠️ Vishwa-Vani: Standards, Architecture, and UI Template
 
-This file is the single source of truth for standards, architecture principles, UI template requirements, and document policy.
+This file is the single source of truth for standards, UI template requirements, and document policy.
 
 ## 📁 Active Documentation Set
+- `README.md` — Vision and Pulse-Table.
 - `docs/vision.md` — Strategic direction and product intent.
-- `docs/backlog.md` — The single active backlog and roadmap.
+- `docs/planning/backlog.md` — The single active backlog and roadmap.
 - `docs/release-notes.md` — Release history and completed work.
-- `docs/standards.md` — Standards, architecture principles, UI template requirements, and document policy.
+- `docs/architecture/blueprint.md` — Architectural principles and API expectations.
+- `docs/rules/standards.md` — Standards, UI template requirements, and document policy.
 
 > If UI template details are required, use the UI Template section in this file; no separate UI template document is required.
 
 ---
 
 ## 1. Document Policy
-- Only four active docs are tracked under `docs/`.
+- Only six active docs are tracked in the documentation set.
 - New documentation may be added only by explicit approval.
-- Planning lives in `docs/backlog.md`.
+- Hierarchical SSOT: `README.md` (Vision) > `docs/architecture/blueprint.md` (Blueprints) > `docs/rules/standards.md`
+- Mandatory Trifecta: `README.md`, `docs/planning/backlog.md`, and `docs/release-notes.md` must exist.
+- Planning lives in `docs/planning/backlog.md`.
 - Completed work is recorded in `docs/release-notes.md`.
 - Vision stays in `docs/vision.md`.
-- Standards and process rules live in `docs/standards.md`.
+- Architecture stays in `docs/architecture/blueprint.md`.
+- Standards and process rules live in `docs/rules/standards.md`.
 
 ## 2. Development Process
 ### ADF Workflow: Data Tiers
@@ -70,22 +75,6 @@ The Lean UI Template is the official UI standard.
 - Keep meaning visible on initial load.
 - Enforce the 2-author rule in toggle logic.
 - If UI template detail is needed, consult this section.
-
-## 5. Architecture Principles
-- **Static-first**: prefer SSG; client-side intelligence only when needed.
-- **Sharded data**: use chapter-level JSON for large scriptures.
-- **NVF compliance**: normalize and version data.
-- **Data service**: use `lib/data-service.ts` for unified access.
-- **Search**: prefer build-time indexes or lightweight local search.
-- **Navigation**: auto-register books from filesystem metadata.
-
-## 6. API Expectations
-- `GET /v1/manifest` — list scriptures and metadata.
-- `GET /v1/verse/{slug}/{chapter}/{verse}` — verse data with commentary layers.
-- `POST /v1/search` — semantic search input.
-- `POST /v1/synthesize` — AI synthesis using meaning plus up to 2 commentaries.
-- Security: bearer tokens or OAuth2 where required.
-- Rate limits should be defined per consumer tier.
 
 ## 7. Quality & Testing
 - **Textual hardening**: Sanskrit and transliteration must align.
