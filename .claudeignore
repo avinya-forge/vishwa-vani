@@ -1,28 +1,20 @@
 # Claude Code context ignore rules
 # These paths are never loaded into prompt context
 
-# Version control internals — never useful as context
-.git
+# Version control internals
 .git/**
 
-# Package trees — huge and irrelevant to product logic
-node_modules
+# Package trees
 node_modules/**
 
 # Build artefacts
-.next
 .next/**
-out
 out/**
-build
 build/**
-coverage
 coverage/**
 
 # Tooling / deployment
-.vercel
 .vercel/**
-.yarn
 .yarn/**
 
 # Generated & binary assets

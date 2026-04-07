@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react'
 import { NVFFragment } from '@/lib/nvf'
 import Link from 'next/link'
+import { PrototypeBadge } from '@/components/ui/prototype-badge'
 
 interface CorrelationProps {
     currentVerse: NVFFragment
@@ -73,7 +74,7 @@ export default function PhilosophicalCorrelation({ currentVerse }: CorrelationPr
                 <div>
                     <h3 className="text-xl font-serif font-black text-stone-900 tracking-tight">Philosophical Correlation</h3>
                     <p className="text-sm text-stone-500">Cross-referenced wisdom with similar semantic essence</p>
-                    <span className="inline-block mt-1 px-2 py-0.5 rounded-full bg-amber-100 text-amber-700 text-[9px] font-black uppercase tracking-widest border border-amber-200">⚗ Prototype — mock index</span>
+                    <PrototypeBadge text="Prototype — mock index" />
                 </div>
             </div>
 

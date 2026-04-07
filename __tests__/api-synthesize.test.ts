@@ -40,7 +40,9 @@ describe('/api/synthesize', () => {
     });
 
     const response = await POST(mockRequest as any);
+    const data = await response.json();
 
     expect(response.status).toBe(400);
+    expect(data).not.toHaveProperty('synthesisMode');
   });
 });
