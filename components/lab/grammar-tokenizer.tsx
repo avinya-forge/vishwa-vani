@@ -33,7 +33,8 @@ export default function GrammarTokenizer() {
       subtitle="Grammar & Morphology"
       icon="🧩"
       darkMode={true}
-      footerNote="This module currently uses a placeholder word-split algorithm. Full Paninian grammar parsing coming in Phase 4."
+      pocMode={true}
+      footerNote="Currently uses a word-split placeholder. Full Paninian grammar and morphology parsing arriving in Phase 4."
     >
       {!result ? (
         <div className="space-y-6">

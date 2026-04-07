@@ -40,7 +40,8 @@ export default function ChhandaAnalyzer() {
       subtitle="Chhanda Validation Engine"
       icon="📜"
       darkMode={true}
-      footerNote="This module currently uses a simple string-length approximator. Full algorithmic syllable parsing coming in Phase 4."
+      pocMode={true}
+      footerNote="Currently uses a string-length approximator for syllable counting. Full Paninian chhanda parsing arriving in Phase 4."
     >
       {!result ? (
         <div className="space-y-6">

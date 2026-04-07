@@ -31,6 +31,7 @@ describe('/api/synthesize', () => {
     expect(data).toHaveProperty('synthesis');
     expect(typeof data.synthesis).toBe('string');
     expect(data.synthesis.length).toBeGreaterThan(0);
+    expect(data).toHaveProperty('synthesisMode', 'concatenation-fallback');
   });
 
   it('should handle empty request body', async () => {
