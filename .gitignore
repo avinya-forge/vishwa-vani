@@ -75,3 +75,41 @@ Thumbs.db
 !/docs/architecture/*
 !/docs/release-notes.md
 !/docs/vision.md
+
+# Skills (installed via npx skills experimental_install from skills-lock.json)
+/skills/
+/.agents/
+
+# Agent-specific skill directories (created by npx skills)
+/.adal/
+/.augment/
+/.bob/
+/.codebuddy/
+/.commandcode/
+/.continue/
+/.cortex/
+/.crush/
+/.factory/
+/.goose/
+/.iflow/
+/.junie/
+/.kilocode/
+/.kiro/
+/.kode/
+/.mcpjam/
+/.mux/
+/.neovate/
+/.openhands/
+/.pi/
+/.pochi/
+/.qoder/
+/.qwen/
+/.roo/
+/.trae/
+/.vibe/
+/.windsurf/
+/.zencoder/
+
+# Skill symlinks (resolved from skills-lock.json via npx skills experimental_install)
+/.agents/
+.claude/skills/

@@ -22,6 +22,10 @@ public/*.db
 public/static_search_fallback.json
 docs/generated/**
 
+# Skills packages (installed from skills-lock.json)
+skills/**
+.agents/**
+
 # Logs and temp files
 *.log
 *.log.*
