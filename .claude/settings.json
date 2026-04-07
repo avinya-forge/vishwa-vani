@@ -1,6 +1,17 @@
 {
   "respectGitignore": true,
   "autoCompactWindow": 40000,
+  "extraKnownMarketplaces": {
+    "thedotmack": {
+      "source": {
+        "source": "github",
+        "repo": "thedotmack/claude-mem"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "claude-mem@thedotmack": true
+  },
   "hooks": {
     "UserPromptSubmit": [
       {
