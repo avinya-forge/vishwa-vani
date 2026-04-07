@@ -1,30 +1,25 @@
 import { NextResponse } from 'next/server'
 
 /**
- * AI Synthesis Endpoint
- * 
  * POST /api/synthesize
- * 
- * Request body:
- *   - verseId: string (unique verse identifier)
- *   - contextTexts: string[] (verse meaning + commentary layers)
- *   - language: 'en' | 'hi' | 'mr' (output language, default: 'en')
- * 
- * Response:
- *   - success: boolean
- *   - synthesis: string (AI-generated or fallback meaning)
- *   - message?: string (error details if !success)
- * 
- * NOTE: Currently uses safe fallback (concatenation). 
- * FUTURE: Connect to Claude API or local inference engine for real synthesis.
+ *
+ * Body: { verseId: string, contextTexts: string[], language?: 'en'|'hi'|'mr' }
+ *
+ * 200: { success: true, synthesis: string, synthesisMode: 'concatenation-fallback', metadata: {...} }
+ * 400: { success: false, message: string }   — invalid / missing input
+ * 503: { success: false, message: string }   — unexpected server error
+ *
+ * synthesisMode switches to 'llm' when a real inference engine is wired.
  */
+
+const SUPPORTED_LANGUAGES = ['en', 'hi', 'mr'] as const
+type Language = typeof SUPPORTED_LANGUAGES[number]
 
 export async function POST(request: Request) {
   try {
     const body = await request.json()
     const { verseId, contextTexts, language = 'en' } = body || {}
 
-    // Validate inputs
     if (!verseId || typeof verseId !== 'string') {
       return NextResponse.json(
         { success: false, message: 'Missing or invalid verseId.' },
@@ -39,19 +34,17 @@ export async function POST(request: Request) {
       )
     }
 
-    if (!['en', 'hi', 'mr'].includes(language)) {
+    if (!SUPPORTED_LANGUAGES.includes(language as Language)) {
       return NextResponse.json(
         { success: false, message: 'Unsupported language. Use en, hi, or mr.' },
         { status: 400 }
       )
     }
 
-    // FALLBACK IMPLEMENTATION: Safe content concatenation until LLM engine is available
-    // In production, this would call an actual synthesis service with context awareness
     const validTexts = contextTexts
-      .filter((t: any) => t && typeof t === 'string')
-      .map((t: any) => t.trim())
-      .filter(t => t.length > 0)
+      .filter((t: unknown) => t && typeof t === 'string')
+      .map((t: unknown) => (t as string).trim())
+      .filter((t: string) => t.length > 0)
 
     if (validTexts.length === 0) {
       return NextResponse.json(
@@ -60,29 +53,27 @@ export async function POST(request: Request) {
       )
     }
 
-    // Build synthesis from available context (meaning + commentaries)
-    // Currently deterministic; future: add LLM-based synthesis
-    const meaningText = validTexts[0] || ''
-    const commentarySnippets = validTexts.slice(1, 3) // Up to 2 commentary contributions
+    const meaningText = validTexts[0]
+    const commentarySnippets = validTexts.slice(1, 3)
 
     const synthesisText =
       commentarySnippets.length > 0
         ? `${meaningText}\n\nContext: ${commentarySnippets.join(' | ')}`
         : meaningText
 
-    // Limit response to prevent token bloat
+    // Limit response size to prevent token bloat in downstream consumers
     const synthesis = synthesisText.substring(0, 2048)
 
     return NextResponse.json(
       {
         success: true,
         synthesis,
-        synthesisMode: 'concatenation-fallback', // Feature flag: 'llm' when real engine is wired
+        synthesisMode: 'concatenation-fallback',
         metadata: {
           verseId,
           language,
-          contextId: Buffer.from(contextTexts.join('|')).toString('base64').substring(0, 16) // Trace context
-        }
+          contextId: Buffer.from(contextTexts.join('|')).toString('base64').substring(0, 16),
+        },
       },
       { status: 200 }
     )
