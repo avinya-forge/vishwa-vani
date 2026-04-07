@@ -1,6 +1,31 @@
 # 🚀 Vishwa-Vani: Unified Release Archive
 
-*Current Version*: v0.9.0 (Autonomous Data Factory & AI Professor)
+*Current Version*: v0.9.1 (Stability Gate — Verification & Placeholder Removal)
+
+---
+
+## [0.9.1] - 2026-04-07 (Stability Gate: STAB-601 + STAB-602)
+
+### 🏗️ Epic Progress
+- **STAB-601 COMPLETED**: Verification Audit — release note claims audited against actual code behaviour.
+- **STAB-602 COMPLETED**: Placeholder Removal — all known mocked/placeholder flows given explicit product-ready PoC gating.
+
+### ✨ Added
+- **`VedicAppTemplate.pocMode`**: New `pocMode` boolean prop; renders a visible amber "⚗ Prototype" banner at the top of any lab app that runs on a placeholder algorithm.
+- **`synthesisMode` field**: `/api/synthesize` response now includes `synthesisMode: 'concatenation-fallback'` so API consumers know exactly which engine answered — value will switch to `'llm'` once a real engine is wired.
+- **PhilosophicalCorrelation prototype badge**: Visible "⚗ Prototype — mock index" label added beneath the component heading so readers know results come from a hardcoded topic map, not a real vector search.
+
+### 🔧 Changed
+- **`chhanda-analyzer`**: `pocMode={true}` enabled; amber prototype banner now shown above the Meter Analyzer.
+- **`grammar-tokenizer`**: `pocMode={true}` enabled; amber prototype banner now shown above the Sanskrit Tokenizer.
+- **API synthesize test**: Extended to assert `synthesisMode: 'concatenation-fallback'` is present in a successful response.
+
+### 📋 Audit Discrepancies Found (STAB-601)
+- **"29 tests passing"** (v0.9.0 release notes): Inaccurate. Only 4 test files exist; `jest` binary is not installed in the current environment. Test claims from v0.9.0 are marked as **UNVERIFIED** pending dependency restoration.
+- **Philosophical Correlation, Chhanda Analyzer, Grammar Tokenizer, `/api/synthesize`**: Previously described in release notes as features without clear prototype status — now explicitly gated with PoC indicators in the UI and API response.
+
+### 🐛 Fixed
+- No regressions introduced. All changes are additive UI flags and a new response field.
 
 ---
 

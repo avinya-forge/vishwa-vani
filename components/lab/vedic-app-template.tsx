@@ -6,6 +6,8 @@ interface VedicAppTemplateProps {
   icon: string;
   footerNote?: string;
   darkMode?: boolean;
+  /** Mark this app as a Proof-of-Concept with a visible prototype banner */
+  pocMode?: boolean;
   children: React.ReactNode;
 }
 
@@ -15,6 +17,7 @@ export default function VedicAppTemplate({
   icon,
   footerNote,
   darkMode = false,
+  pocMode = false,
   children,
 }: VedicAppTemplateProps) {
   const bgClass = darkMode ? 'bg-stone-900/40 border-stone-800' : 'bg-white border-stone-200';
@@ -24,6 +27,12 @@ export default function VedicAppTemplate({
 
   return (
     <div className={`rounded-3xl p-8 border shadow-sm flex flex-col h-full ${bgClass}`}>
+      {pocMode && (
+        <div className="mb-4 px-3 py-2 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center gap-2">
+          <span className="text-amber-500 text-xs font-black uppercase tracking-widest">⚗ Prototype</span>
+          <span className="text-amber-600/70 text-[10px] font-medium">Algorithm is a placeholder — production version coming in Phase 4.</span>
+        </div>
+      )}
       <div className="flex items-center gap-4 mb-6">
         <div className="w-12 h-12 bg-stone-100 rounded-full flex items-center justify-center text-2xl">
           {icon}

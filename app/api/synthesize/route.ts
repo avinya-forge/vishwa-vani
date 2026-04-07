@@ -77,6 +77,7 @@ export async function POST(request: Request) {
       {
         success: true,
         synthesis,
+        synthesisMode: 'concatenation-fallback', // Feature flag: 'llm' when real engine is wired
         metadata: {
           verseId,
           language,
