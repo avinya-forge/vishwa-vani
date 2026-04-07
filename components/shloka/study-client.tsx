@@ -9,6 +9,8 @@ import VedicManuscriptCard from './vedic-manuscript-card'
 import { VEDIC_LIBRARY } from '@/lib/texts'
 import { useTranslations, useLocale } from 'next-intl'
 import HierarchicalNav, { LevelData } from '@/components/ui/hierarchical-nav'
+import VerseAppLinks from './verse-app-links'
+import AdhyayaShareLink from './adhyaya-share-link'
 
 // 🏛️ DYNAMIC PERSPECTIVE METADATA
 const DEFAULT_METADATA: Record<string, { name: string, bio: string, label: string, icon: string }> = {
@@ -348,8 +350,9 @@ export default function StudyClient({
                 <h1 className="text-3xl md:text-4xl font-serif font-black text-stone-900 leading-none tracking-tight">
                   {bookData?.name || textSlug}
                   {isParva && currentAdhyaya && (
-                    <span className="block text-sm font-normal text-stone-500 mt-1">
-                      Parva {chapter} / Adhyaya {currentAdhyaya} of {adhyayaList.length}
+                    <span className="flex items-center gap-3 text-sm font-normal text-stone-500 mt-1">
+                      <span>Parva {chapter} / Adhyaya {currentAdhyaya} of {adhyayaList.length}</span>
+                      <AdhyayaShareLink textSlug={textSlug} chapter={chapter} adhyaya={activeAdhyaya} />
                     </span>
                   )}
                 </h1>
@@ -547,11 +550,16 @@ export default function StudyClient({
 
                 {/* AI Synthesis result */}
                 {(synth?.text || synth?.loading) && (
-                  <VedicManuscriptCard 
-                    content={synth.loading ? 'Synthesising wisdom...' : synth.text} 
+                  <VedicManuscriptCard
+                    content={synth.loading ? 'Synthesising wisdom...' : synth.text}
                     className="m-6 mt-0"
                   />
                 )}
+
+                {/* Contextual micro-app suggestions (APP-703) */}
+                <div className="px-5 sm:px-6 pb-4">
+                  <VerseAppLinks bookSlug={textSlug} chapter={chapter} />
+                </div>
               </article>
             )
           })}

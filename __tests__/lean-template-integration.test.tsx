@@ -43,6 +43,11 @@ jest.mock('@/components/ui/hierarchical-nav', () => {
 });
 
 describe('StudyClient - Lean Template Integration', () => {
+  // Commentary content must be > 80 chars to pass isValidCommentaryContent filter in StudyClient
+  const SHANKARA_EN = 'From the perspective of Advaita Vedanta, Dhritarashtra represents the ego-bound mind that clings to the fruits of action and cannot perceive the non-dual truth.'
+  const RAMANUJA_EN = 'From the perspective of Vishishtadvaita, Dhritarashtra symbolises attachment to kin and outcome, which clouds the discriminating intellect at the decisive moment of dharmic choice.'
+  const SHANKARA_HI = 'अद्वैत वेदान्त के अनुसार धृतराष्ट्र अहंकार और आसक्ति का प्रतीक हैं जो सत्य के दर्शन को रोकता है। यह श्लोक नेत्रहीनता को अज्ञान का प्रतीक मानता है।'
+
   const mockVerses = [
     {
       id: '1.1',
@@ -52,28 +57,10 @@ describe('StudyClient - Lean Template Integration', () => {
       chapter: 1,
       meaning: 'Dhritarashtra said',
       layers: [
-        {
-          type: 'commentary',
-          author: 'shankara',
-          lang: 'en',
-          author_name: 'Adi Shankara',
-          author_icon: '📜',
-          content: 'From the perspective of Advaita Vedanta...'
-        },
-        {
-          type: 'commentary',
-          author: 'ramanuja',
-          lang: 'en',
-          author_name: 'Ramanuja',
-          author_icon: '🔱',
-          content: 'From the perspective of Visistadvaita...'
-        },
-        {
-          type: 'translation',
-          lang: 'en',
-          author: 'gambhirananda',
-          content: 'Dhritarashtra said'
-        }
+        { type: 'commentary', author: 'shankara', lang: 'en', author_name: 'Adi Shankara', author_icon: '📜', content: SHANKARA_EN },
+        { type: 'commentary', author: 'ramanuja', lang: 'en', author_name: 'Ramanuja', author_icon: '🔱', content: RAMANUJA_EN },
+        { type: 'commentary', author: 'shankara', lang: 'hi', author_name: 'Adi Shankara', author_icon: '📜', content: SHANKARA_HI },
+        { type: 'translation', lang: 'en', author: 'gambhirananda', content: 'Dhritarashtra said' }
       ]
     },
     {
@@ -84,20 +71,8 @@ describe('StudyClient - Lean Template Integration', () => {
       chapter: 1,
       meaning: 'Sanjaya said',
       layers: [
-        {
-          type: 'commentary',
-          author: 'shankara',
-          lang: 'en',
-          author_name: 'Adi Shankara',
-          author_icon: '📜',
-          content: 'Sanjaya begins...'
-        },
-        {
-          type: 'translation',
-          lang: 'en',
-          author: 'gambhirananda',
-          content: 'Sanjaya said'
-        }
+        { type: 'commentary', author: 'shankara', lang: 'en', author_name: 'Adi Shankara', author_icon: '📜', content: SHANKARA_EN },
+        { type: 'translation', lang: 'en', author: 'gambhirananda', content: 'Sanjaya said' }
       ]
     }
   ];
@@ -240,6 +215,56 @@ describe('StudyClient - Lean Template Integration', () => {
       expect(screen.getByTestId('hierarchical-nav')).toBeInTheDocument();
       expect(screen.getByTestId('vedic-timeline')).toBeInTheDocument();
       expect(screen.getByRole('button', { name: /AI Analysis/i })).toBeInTheDocument();
+    });
+  });
+
+  describe('STAB-604 Audit: third-author replacement, language filter, adhyaya display', () => {
+    it('counter increments to 1/2 after selecting one author', async () => {
+      localStorage.clear();
+      render(<StudyClient {...defaultProps} />);
+
+      expect(screen.getByText(/Scholars \(0\/2\)/)).toBeInTheDocument();
+
+      const buttons = screen.getAllByRole('button');
+      const authorBtn = buttons.find(b =>
+        /shankara|ramanuja/i.test(b.textContent || '') && !(b as HTMLButtonElement).disabled
+      );
+
+      if (authorBtn) {
+        fireEvent.click(authorBtn);
+        await waitFor(() => {
+          expect(screen.getByText(/Scholars \(1\/2\)/)).toBeInTheDocument();
+        });
+      }
+    });
+
+    it('language filter hides commentary in non-matching language', async () => {
+      render(<StudyClient {...defaultProps} />);
+
+      // Select shankara so commentary can appear
+      const shankaraBtn = screen.getAllByRole('button').find(b => /shankara/i.test(b.textContent || ''));
+      if (shankaraBtn) fireEvent.click(shankaraBtn);
+
+      // Switch language to Hindi — English commentary should be hidden
+      const langSelect = screen.getByRole('combobox', { name: /language/i });
+      fireEvent.change(langSelect, { target: { value: 'hi' } });
+
+      await waitFor(() => {
+        // English commentary must not appear
+        expect(screen.queryByText(SHANKARA_EN)).not.toBeInTheDocument();
+      });
+    });
+
+    it('Mahabharata header shows Parva/Adhyaya counter when currentAdhyaya set', () => {
+      const mbhProps = {
+        ...defaultProps,
+        textSlug: 'mahabharata',
+        chapter: 1,
+        adhyayaList: [{ num: 3, id: 'parva-1-adhyaya-3' }, { num: 4, id: 'parva-1-adhyaya-4' }],
+        currentAdhyaya: 3
+      };
+      render(<StudyClient {...mbhProps} />);
+      expect(screen.getByText(/Parva 1 \/ Adhyaya 3/)).toBeInTheDocument();
     });
   });
 

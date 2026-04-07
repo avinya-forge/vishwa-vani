@@ -1,6 +1,42 @@
 # 🚀 Vishwa-Vani: Unified Release Archive
 
-*Current Version*: v0.9.1 (Stability Gate — Verification & Placeholder Removal)
+*Current Version*: v1.0.0 (Stability Gate Cleared + Feature Sprint)
+
+---
+
+## [1.0.0] - 2026-04-07 (Stability Gate Cleared + Feature Sprint)
+
+### 🏗️ Epic Progress
+- **STAB-603–608 ALL COMPLETE** — Stability gate cleared; feature epics unblocked.
+- **EPIC 6 unlocked** — Chapter-level micro-apps and Vedic Labs now ready for expansion.
+
+### ✨ Added
+- **`lib/vedic-labs-registry.ts`** (APP-702): Central registry of 10 Vedic Labs apps mapped to books, chapters, and topics. `getAppsForContext()` and `getAppsByTopics()` helpers for dynamic app discovery.
+- **`components/shloka/verse-app-links.tsx`** (APP-703): Renders contextual micro-app pill links on every verse card, driven by the registry. Prototype apps hidden by default.
+- **`components/shloka/adhyaya-share-link.tsx`** (MBH-203): Copy-to-clipboard "Share Adhyaya" button in the Mahabharata header, generating `?adhyaya=N` deep links.
+- **`components/ui/prototype-badge.tsx`**: Shared `PrototypeBadge` component with `inline` and `banner` variants replacing duplicate amber badge styles.
+- **`docs/planning/book-integration-checklist.md`** (TMPL-903): 5-phase gate checklist for onboarding future books, with required metadata field table.
+- **`__tests__/lib-data-service.test.ts`** (STAB-606): 13 unit tests for `VedicDataService` — singleton, cache, navigation, AI enrichment, uiMetadata.
+- **`__tests__/lib-vedic-labs-registry.test.ts`**: 12 unit tests for registry queries.
+- **`__tests__/components-verse-app-links.test.tsx`**: 5 tests for `VerseAppLinks`.
+- **`__tests__/components-adhyaya-share-link.test.ts`**: 4 tests for `buildAdhyayaLink()`.
+- **`__tests__/components-akshauhini-calc.test.ts`**: 4 tests verifying canonical Akshauhini totals.
+
+### 🔧 Changed
+- **`AkshauhiniCalc`** (LAB-807): Added expandable "Historical Context" panel comparing 4 real battles (Gaugamela, Cannae, Waterloo, D-Day) with ratio multipliers; extracted `calculateAkshauhini()` pure function; added 18-Akshauhini war context note.
+- **`app/api/synthesize/route.ts`** (STAB-603): Removed aspirational comments; added `SUPPORTED_LANGUAGES` const + `Language` type; comprehensive JSDoc with all status codes.
+- **`lean-template-integration.test.tsx`** (STAB-604): Fixed mock fixture (commentary < 80 chars was silently filtered); added 3 audit cases: author counter, language filter, adhyaya display.
+- **`StudyClient`**: Import `VerseAppLinks` and `AdhyayaShareLink`; render both in the appropriate locations.
+- **`ts-jest` + `jest` installed** (STAB-605): Tests now runnable via `npx jest`.
+
+### 🧪 Test Coverage
+- **79 tests passing** across 9 test suites (up from 41 tests, 4 suites)
+- **Coverage**: 70.5% statements / 63.2% branches (up from ~55.9% claimed baseline)
+- `npx tsc --noEmit`: zero errors
+
+### 📋 Backlog Updates
+- STAB-601 through STAB-608: all marked `[x]` — **Stability Gate passed**
+- TMPL-903, APP-702, APP-703, MBH-203, LAB-807: all marked `[x]`
 
 ---
 

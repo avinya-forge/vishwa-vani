@@ -1,0 +1,17 @@
+{
+  "respectGitignore": true,
+  "autoCompactWindow": 40000,
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '.tool_input.prompt // .prompt // \"\"' 2>/dev/null | grep -q 'SPRINT:backlog-sprint' && echo '{\"systemMessage\": \"Sprint detected — if context window is large, cancel and run /compact first, then re-invoke /backlog-sprint for best results.\"}' || true",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}

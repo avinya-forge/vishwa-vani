@@ -1,4 +1,5 @@
 import React from 'react';
+import { PrototypeBadge } from '@/components/ui/prototype-badge'
 
 interface VedicAppTemplateProps {
   title: string;
@@ -27,12 +28,7 @@ export default function VedicAppTemplate({
 
   return (
     <div className={`rounded-3xl p-8 border shadow-sm flex flex-col h-full ${bgClass}`}>
-      {pocMode && (
-        <div className="mb-4 px-3 py-2 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center gap-2">
-          <span className="text-amber-500 text-xs font-black uppercase tracking-widest">⚗ Prototype</span>
-          <span className="text-amber-600/70 text-[10px] font-medium">Algorithm is a placeholder — production version coming in Phase 4.</span>
-        </div>
-      )}
+      {pocMode && <PrototypeBadge variant="banner" />}
       <div className="flex items-center gap-4 mb-6">
         <div className="w-12 h-12 bg-stone-100 rounded-full flex items-center justify-center text-2xl">
           {icon}
