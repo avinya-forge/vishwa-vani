@@ -26,12 +26,20 @@ This file is the single source of truth for standards, UI template requirements,
 - Standards and process rules live in `docs/rules/standards.md`.
 
 ## 2. Development Process
-### ADF Workflow: Data Tiers
-- **BRONZE**: Raw source text and OCR.
-- **SILVER**: Structured NVF drafts and staging.
-- **GOLD**: Audited, sharded NVF 1.0 in `data/`.
-- **Audit**: Run `python scripts/vishwa.py audit` before promotion.
-- **Build**: Use `npm run build`; deploy only from GOLD data.
+## 2. Development Process
+### Data Pipeline (DP) Tiers & Promotion Criteria
+Vishwa-Vani follows a strict three-tier data pipeline. Data must meet 100% of the criteria before promotion.
+
+| Tier | Status | Criteria | UI Usage |
+|------|--------|----------|-----------|
+| **1-BRONZE** | Raw | Source text, OCR, or partial scrapes. Unstructured. | 🚫 Strictly Forbidden |
+| **2-SILVER** | Processing | Structured (NVF), massaged, but potentially incomplete or unverified. | 🚫 Strictly Forbidden |
+| **3-GOLD** | **UI-READY** | **Complete book**, 100% accurate, audited, scholarly-verified, final JSON/Lake format. | ✅ Production Ready |
+
+**Promotion Rule**: A book only enters **3-GOLD** when it is **100% complete** (all chapters/verses). Partial books (e.g. "Chapter 1 only") must remain in **2-SILVER** until the entire work is processed.
+
+- **Audit**: Run `python scripts/vishwa.py audit` before promotion to Gold.
+- **Verification**: Spot-check 5% of verses against canonical editions.
 
 ### SDLC Release Flow
 1. Pick the top unchecked task from `docs/planning/backlog.md`.
@@ -163,6 +171,8 @@ These three gates are **blocking**. No commit proceeds if any of them fail.
 - Simulated/hardcoded "mock" responses in production components are not acceptable for release.
 
 ## 7. Data & Architecture Standards
+- **Gold Standard Only**: The UI must NEVER hook into Bronze or Silver data. Only Gold-tier data is registered in `lib/texts.ts`.
+- **Completeness Rule**: A book is either available in Gold (Full) or not available in the UI. No "Chapter 1 coming soon" placeholders in production.
 - **NVF compliance**: Sanskrit → Transliteration → Meaning → HI/MR commentary layers.
 - **Static-first**: SSG by default; client-side fetching only when unavoidable.
 - **Sharded data**: Large scriptures use chapter-level JSON in `data/`.

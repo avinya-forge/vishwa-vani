@@ -58,17 +58,21 @@ export default async function StudyChapterPage(props: Props) {
 
   // Build adhyaya list for Mahabharata
   const adhyayaList = textSlug === 'mahabharata'
-    ? (JSON.parse(fs.readFileSync(path.join(process.cwd(), 'data', 'manifest.json'), 'utf8'))
-        .books.find((b: unknown) => (b as Record<string, unknown>).slug === 'mahabharata')?.shards
-        .filter((s: unknown) => (s as Record<string, unknown>).file && String((s as Record<string, unknown>).file).startsWith(`parva-${chapterNumber}/`))
-        .map((s: unknown) => {
-            // s.file format: "parva-2/adhyaya-5.json"
-            const filename = String((s as Record<string, unknown>).file).split('/')[1]               // "adhyaya-5.json"
-            const num = parseInt(filename.replace('adhyaya-', '').replace('.json', ''))
-            return { num, id: (s as Record<string, unknown>).id }
-        })
-        .sort((a: unknown, b: unknown) => ((a as Record<string, unknown>).num as number) - ((b as Record<string, unknown>).num as number))
-        || [])
+    ? (() => {
+        const manifest = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'data', 'manifest.json'), 'utf8'));
+        const book = manifest.books.find((b: any) => b.book_id === 'mahabharata' || b.slug === 'mahabharata');
+        const chapters = book?.chapters || book?.shards || [];
+        return chapters
+          .filter((s: any) => s.file && String(s.file).startsWith(`parva-${chapterNumber}/`))
+          .map((s: any) => {
+              // s.file format: "parva-2/adhyaya-5.json"
+              const filename = String(s.file).split('/')[1]               // "adhyaya-5.json"
+              const num = parseInt(filename.replace('adhyaya-', '').replace('.json', ''))
+              return { num, id: s.id || `parva-${chapterNumber}_adhyaya-${num}` }
+          })
+          .sort((a: any, b: any) => a.num - b.num)
+          || [];
+      })()
     : []
 
   // Validate adhyaya parameter for Mahabharata

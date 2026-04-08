@@ -39,8 +39,9 @@ description: Vishwa-Vani project rules — loaded every session
 - **Flat Documentation**: The `docs/` folder is flat. NEVER create subfolders (like `docs/planning`). This is a hard rule. AI-generated artifacts or scratchpads MUST NOT be pushed to git.
 - **One task at a time.** Never start task N+1 before task N is lint-clean, build-clean, and test-passing.
 - **Stability Gate (STAB-608) is active.** No new feature epics until EPIC 7 (STABILITY) is fully complete.
+- **Gold Standard Only.** Only 100% complete, verified books go to `data/3-gold/`. No placeholders in production. No partial books in UI.
 - **Incremental only.** No big-bang rewrites. Every commit must leave the codebase in a working state.
-- **Zero broken windows.** No `TODO` comments in production code paths. Use feature flags or documented PoC status.
+- **Zero broken windows.** No `TODO` comments or placeholders (e.g. `[PLACEHOLDER_...]`) in production code paths.
 
 ---
 

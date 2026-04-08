@@ -112,19 +112,21 @@ export class VedicDataService {
     try {
       const manifestPath = path.join(process.cwd(), 'data', 'manifest.json');
       const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8')) as Record<string, unknown>;
-      const bookManifest = (manifest.books as unknown[])?.find((b: unknown) => (b as Record<string, unknown>).slug === textSlug) as Record<string, unknown>;
+      const books = (manifest.books as Record<string, unknown>[]) || [];
+      const bookManifest = books.find(b => b.book_id === textSlug || b.slug === textSlug); // Backward compat for slug
 
       let shardFile = `${textSlug}-chapter-${chapterNumber}.json`;
 
-      if (bookManifest?.shards) {
+      if (bookManifest?.chapters || bookManifest?.shards) {
+        const chapters = (bookManifest.chapters || bookManifest.shards) as Record<string, unknown>[];
+        
         if (textSlug === 'mahabharata' && adhyaya) {
-          const parvaShard = (bookManifest.shards as unknown[])?.find((s: unknown) =>
-            (s as Record<string, unknown>).file === `parva-${chapterNumber}/adhyaya-${adhyaya}.json`
-          ) as Record<string, unknown>;
+          const parvaShard = chapters.find(s =>
+            s.file === `parva-${chapterNumber}/adhyaya-${adhyaya}.json`
+          );
           if (parvaShard) shardFile = parvaShard.file as string;
         } else {
-          const shards = bookManifest.shards as Record<string, unknown>[];
-          const mappedShard = shards[chapterNumber - 1] as Record<string, unknown> | undefined;
+          const mappedShard = chapters[chapterNumber - 1];
           if (mappedShard) shardFile = mappedShard.file as string;
         }
       }

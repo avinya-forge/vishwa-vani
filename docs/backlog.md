@@ -8,8 +8,8 @@ Jules and Antigravity (The Execution Agents) will read this backlog to determine
 ## 🗺️ High-Level Roadmap (The Rollout)
 
 ### 🏛️ Milestone 1: The Autonomous Data Factory (CRITICAL PRIORITY)
-*Phase: Alpha | Target: 100% Ingestion for 5 Core Books.*
-**[✅ COMPLETED]** All core ingestion, audit, and data pipeline tasks finished.
+*Phase: Alpha | Target: 100% Ingestion for 18 Parvas of Mahabharata and core Puranas.*
+**[IN PROGRESS]** 3/18 Parvas in Silver. Gold Tier Audit pending.
 
 ### 🤖 Milestone 2: The AI Professor (BETA READY)
 *Phase: Beta | Target: AI-assisted conceptual maps.*
@@ -56,6 +56,20 @@ Every new book follows this 5-phase integration process:
 - [ ] **Performance Audit**: Load times and memory usage
 - [ ] **Content Accuracy**: Scholarly review and corrections
 - [ ] **Documentation**: User guides and API references
+
+---
+
+## 🏛️ EPIC — DATA PIPELINE (DP) [IN PROGRESS]
+*Goal: Ensure 100% accurate, complete, and UI-ready data for all scriptures. No partial books allowed in Gold.*
+
+- [ ] `DP-101` **Gold Tier Audit**: Verify all `available: true` texts in `lib/texts.ts` meet Gold criteria (Complete book, accurate NVF 1.3, scholarly proofread).
+- [ ] `DP-102` **Mahabharata Restoration**: Fix KMG layer alignment bug (currently redundant parva intro) and re-ingest Parvas 1-18 from Silver to Gold.
+- [ ] `DP-103` **Purana Pipeline**: Gather, clean, and process Bhagavata, Vishnu, and Garuda Puranas to Gold standard.
+- [ ] `DP-104` **Upanishad Consolidation**: Audit and normalize Isha and Kena Upanishads; add 8 more major Upanishads to Silver.
+- [ ] `DP-105` **Vedic Samhita Pipeline**: Acquire and ingest Rigveda, Samaveda, Yajurveda, and Atharvaveda from Bronze to Silver.
+- [ ] `DP-106` **Data Massaging Layer**: Implement automated scripts to filter OCR noise and normalize transliteration across all DP stages.
+
+---
 
 ### EPIC 6: Chapter-Level Micro-Apps & Gita Educational Content (VEDIC-LABS-EXT)
 - [ ] **[APP-710] Sankhya Philosophy Visualizer**: Make nature/spirit discrimination concrete with an interactive Sankhya concept explorer from Gita 13.

@@ -66,6 +66,7 @@ These rules apply strictly across Claude, Jules, and Antigravity:
 ### 1. Document Structure Preservation
 - **Flat Docs**: `docs/` is completely flat. **DO NOT** recreate folders like `docs/planning`, `docs/architecture`, or `docs/rules`. 
 - **Single Source of Truth**: All backlog files, blueprints, and style-guides exist ONLY directly in the `docs/` folder.
+- **Gold Standard Rule**: Only 100% complete, audited, and verified books can be in `data/3-gold/`. Mark `available: true` in `lib/texts.ts` ONLY when data is UI-ready (no placeholders like `[PLACEHOLDER_...]`).
 - **No Rogue Files**: AI should not create random `.md` files or scratchpads at the root. AI-generated assets should not be stored in Git unless they are robust architectural documents placed carefully in `docs/`.
 
 ### 2. Git Synchronization & Pull Request Lifecycle
