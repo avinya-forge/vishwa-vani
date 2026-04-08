@@ -140,6 +140,36 @@ export const VEDIC_LABS_REGISTRY: LabAppEntry[] = [
     topics: ['moksha', 'liberation', 'yoga', 'devotion'],
     available: false,
   },
+  {
+    id: 'time-consciousness-wheel',
+    name: 'Time Consciousness Wheel',
+    description: 'Explore Vedic time cycles from Nimesha to Brahma\'s lifespan and discover the eternal Self beyond time.',
+    path: '/labs/time-wheel',
+    books: ['bhagavad-gita'],
+    chapters: [8, 10],
+    topics: ['time', 'cosmology', 'Brahma', 'eternity', 'Gita'],
+    available: true,
+  },
+  {
+    id: 'divine-qualities-assessment',
+    name: 'Divine Qualities Assessment',
+    description: 'Self-evaluate the 16 daivi and asuri qualities from Gita Chapter 16 to understand your current disposition.',
+    path: '/labs/qualities',
+    books: ['bhagavad-gita'],
+    chapters: [16],
+    topics: ['dharma', 'daivi', 'asuri', 'qualities', 'self-assessment'],
+    available: true,
+  },
+  {
+    id: 'meditation-state-tracker',
+    name: 'Meditation State Tracker',
+    description: 'Log your daily meditation state (Kshipta to Nirodha) and receive guidance from Gita Chapter 6.',
+    path: '/labs/meditation',
+    books: ['bhagavad-gita'],
+    chapters: [6],
+    topics: ['meditation', 'dhyana', 'yoga', 'mind', 'practice'],
+    available: true,
+  },
 ]
 
 /**

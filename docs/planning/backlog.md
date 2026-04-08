@@ -1,4 +1,4 @@
-﻿# 🚀 Vishwa-Vani: The Master Backlog [SDLC v3.0]
+# 🚀 Vishwa-Vani: The Master Backlog [SDLC v3.0]
 
 This is the single active backlog for Vishwa-Vani. It replaces all legacy planning variants and is the authoritative source for prioritized work, roadmap direction, and task context.
 
@@ -64,14 +64,15 @@ Every new book follows this 5-phase integration process:
 - [x] **[APP-705] Jnana Yoga Explorer**: Build a self-inquiry framework with discrimination exercises to help readers apply knowledge from Gita 13. **Done**: `components/lab/jnana-yoga-explorer.tsx` — 4 Neti Neti self-inquiry scenarios; Kshetra/Kshetrajna discrimination framework; score + guidance result screen; registered available in VEDIC_LABS_REGISTRY.
 - [x] **[APP-706] Bhakti Yoga Compass**: Create a devotional practice tracker for surrender exercises and emotional guidance from Gita 12. **Done**: `components/lab/bhakti-yoga-compass.tsx` — 4 bhakti scenarios testing unconditional devotion vs ego-driven practice; Gita 12.13-20 daivi qualities framework; added to VEDIC_LABS_REGISTRY.
 - [x] **[APP-707] Dharma Decision Matrix**: Provide an ethical decision-making framework derived from Gita 2 and 16 to help users resolve dilemmas. **Done**: `components/lab/dharma-decision-matrix.tsx` — 4 professional ethics dilemmas; daivi vs asuri quality discrimination; Gita 16.1-4 framework; registered available in VEDIC_LABS_REGISTRY.
-- [ ] **[APP-708] Time Consciousness Wheel**: Visualize past/present/future themes from Gita 8 and 10 to clarify cyclical time concepts.
-- [ ] **[APP-709] Divine Qualities Assessment**: Add a self-evaluation tool for daivi vs asuri qualities to support personal reflection from Gita 16.
+- [x] **[APP-708] Time Consciousness Wheel**: Visualize Vedic time cycles from Gita 8 & 10. **Done**: `components/lab/time-consciousness-wheel.tsx` — 6 time scales (Nimesha to Brahma lifespan), 3-question cosmology quiz; registered available (ch 8 & 10).
+- [x] **[APP-709] Divine Qualities Assessment**: Self-evaluation of daivi vs asuri qualities from Gita 16. **Done**: `components/lab/divine-qualities-assessment.tsx` — 16 qualities, 1-5 rating, score bars; registered available (ch 16).
 - [ ] **[APP-710] Sankhya Philosophy Visualizer**: Make nature/spirit discrimination concrete with an interactive Sankhya concept explorer from Gita 13.
 - [ ] **[APP-711] Cosmic Vision Simulator**: Help readers grasp the universal form by simulating key insights from Gita 11.
-- [ ] **[APP-712] Meditation State Tracker**: Track dhyana yoga progress and give practical next-step guidance from Gita 6.
+- [x] **[APP-712] Meditation State Tracker**: Track dhyana yoga states from Gita 6. **Done**: `components/lab/meditation-state-tracker.tsx` — 5 mind states (Kshipta→Nirodha), daily check-in, practice guidance, session log; registered available (ch 6).
 - [ ] **[APP-713] Moksha Path Navigator**: Build an interactive journey through liberation paths using key teachings from Gita 8, 12, and 13.
 - [x] **[LAB-801] UI Theme Consistency**: Resolve light/dark theme inconsistency in lab components.
-- [ ] **[BATCH-LAB] Vedic Lab Refinements**: Implement real algorithms for Chhanda Analyzer, Grammar Tokenizer, Astro Explorer, add audio for Vedic instruments, and enhance Pranayama tracking.
+- [x] **[LAB-806] Pranayama Enhancements**: Session tracking + customizable intervals. **Done**: `components/lab/pranayama-timer.tsx` — 4 presets (Box, Relaxing, Energizing, 4-7-8), custom ratio, round counter, elapsed timer.
+- [ ] **[BATCH-LAB] Vedic Lab Refinements**: Real algorithms for Chhanda Analyzer, Grammar Tokenizer, Astro Explorer, and audio for Vedic instruments.
 - [x] **[LAB-807] Akshauhini Context**: Add historical comparisons and export features to make the ancient army-size calculator meaningful. **Done**: Extracted `calculateAkshauhini()` pure function; added expandable "Historical Context" panel comparing 4 real battles (Gaugamela, Cannae, Waterloo, D-Day) with ratio display; added 18-Akshauhini context note; 4 unit tests confirming canonical totals.
 - [x] **[UI-701] Lean Template Verification**: Audit all text implementations for lean template compliance to catch hidden UI inconsistencies. **Done**: Audited StudyClient — scholarSelection defaults `[]`, max 2 enforced, commentary hidden when none selected, languageSelection defaults `'all'`. Removed dead `defaultScholar` variable (lint fix). Both chapter and verse page routes pass no non-lean overrides. tsconfig updated to exclude `skills/` and `.agents/` from tsc.
 - [ ] **[UI-702] Verse App Integration**: Add contextual app suggestions in the verse UI so readers can act on insights immediately.
@@ -114,7 +115,7 @@ Following the 5-phase book integration template for comprehensive Mahabharata ro
 - [x] **[MBH-202] Parva Navigation**: Chapter routing with adhyaya sub-navigation
 - [x] **[MBH-203] Adhyaya Deep Linking**: Direct links to specific adhyayas. **Done**: `components/shloka/adhyaya-share-link.tsx` — copy-to-clipboard button for `?adhyaya=N` URLs; wired into Mahabharata header alongside parva/adhyaya counter; `buildAdhyayaLink()` pure function tested (4 cases).
 - [ ] **[MBH-204] Mobile Optimization**: Responsive design for epic-length content
-- [ ] **[MBH-205] Reading Progress**: Chapter completion tracking and bookmarks
+- [x] **[MBH-205] Reading Progress**: Chapter completion tracking and bookmarks. **Done**: `components/shloka/reading-progress.tsx` — localStorage-backed progress bar, mark-read button, bookmark add/remove with deep links, `useReadingProgress` hook exported for reuse.
 
 #### **PHASE 3: API Integration (MBH-API)**
 - [x] **[MBH-301] Data Service Integration**: VedicDataService compatibility
