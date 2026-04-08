@@ -58,26 +58,26 @@ Every new book follows this 5-phase integration process:
 - [ ] **Documentation**: User guides and API references
 
 ### EPIC 6: Chapter-Level Micro-Apps & Gita Educational Content (VEDIC-LABS-EXT)
-- [x] **[APP-701] Gita Analysis**: Analyze Gita chapters and recommend micro-apps based on content themes.
-- [x] **[APP-702] Vedic Labs Registry**: Build a registry that maps each educational tool to its relevant book, chapter, adhyaya, and verse context so users can discover apps from the reading experience. **Done**: `lib/vedic-labs-registry.ts` — 10 app entries, `getAppsForContext()` and `getAppsByTopics()` helpers; 12 unit tests.
-- [x] **[APP-703] Verse-to-App Linking**: Surface optional micro-app links on verse cards so readers can immediately use interactive tools that relate to the verse theme. **Done**: `components/shloka/verse-app-links.tsx` — renders contextual app pills per verse; wired into `StudyClient`; 5 unit tests.
-- [x] **[APP-704] Karma Yoga Simulator**: Interactive tool for practicing detached action (Ch. 3).
-- [x] **[APP-705] Jnana Yoga Explorer**: Build a self-inquiry framework with discrimination exercises to help readers apply knowledge from Gita 13. **Done**: `components/lab/jnana-yoga-explorer.tsx` — 4 Neti Neti self-inquiry scenarios; Kshetra/Kshetrajna discrimination framework; score + guidance result screen; registered available in VEDIC_LABS_REGISTRY.
-- [x] **[APP-706] Bhakti Yoga Compass**: Create a devotional practice tracker for surrender exercises and emotional guidance from Gita 12. **Done**: `components/lab/bhakti-yoga-compass.tsx` — 4 bhakti scenarios testing unconditional devotion vs ego-driven practice; Gita 12.13-20 daivi qualities framework; added to VEDIC_LABS_REGISTRY.
-- [x] **[APP-707] Dharma Decision Matrix**: Provide an ethical decision-making framework derived from Gita 2 and 16 to help users resolve dilemmas. **Done**: `components/lab/dharma-decision-matrix.tsx` — 4 professional ethics dilemmas; daivi vs asuri quality discrimination; Gita 16.1-4 framework; registered available in VEDIC_LABS_REGISTRY.
-- [x] **[APP-708] Time Consciousness Wheel**: Visualize Vedic time cycles from Gita 8 & 10. **Done**: `components/lab/time-consciousness-wheel.tsx` — 6 time scales (Nimesha to Brahma lifespan), 3-question cosmology quiz; registered available (ch 8 & 10).
-- [x] **[APP-709] Divine Qualities Assessment**: Self-evaluation of daivi vs asuri qualities from Gita 16. **Done**: `components/lab/divine-qualities-assessment.tsx` — 16 qualities, 1-5 rating, score bars; registered available (ch 16).
 - [ ] **[APP-710] Sankhya Philosophy Visualizer**: Make nature/spirit discrimination concrete with an interactive Sankhya concept explorer from Gita 13.
 - [ ] **[APP-711] Cosmic Vision Simulator**: Help readers grasp the universal form by simulating key insights from Gita 11.
-- [x] **[APP-712] Meditation State Tracker**: Track dhyana yoga states from Gita 6. **Done**: `components/lab/meditation-state-tracker.tsx` — 5 mind states (Kshipta→Nirodha), daily check-in, practice guidance, session log; registered available (ch 6).
 - [ ] **[APP-713] Moksha Path Navigator**: Build an interactive journey through liberation paths using key teachings from Gita 8, 12, and 13.
-- [x] **[LAB-801] UI Theme Consistency**: Resolve light/dark theme inconsistency in lab components.
-- [x] **[LAB-806] Pranayama Enhancements**: Session tracking + customizable intervals. **Done**: `components/lab/pranayama-timer.tsx` — 4 presets (Box, Relaxing, Energizing, 4-7-8), custom ratio, round counter, elapsed timer.
 - [ ] **[BATCH-LAB] Vedic Lab Refinements**: Real algorithms for Chhanda Analyzer, Grammar Tokenizer, Astro Explorer, and audio for Vedic instruments.
-- [x] **[LAB-807] Akshauhini Context**: Add historical comparisons and export features to make the ancient army-size calculator meaningful. **Done**: Extracted `calculateAkshauhini()` pure function; added expandable "Historical Context" panel comparing 4 real battles (Gaugamela, Cannae, Waterloo, D-Day) with ratio display; added 18-Akshauhini context note; 4 unit tests confirming canonical totals.
-- [x] **[UI-701] Lean Template Verification**: Audit all text implementations for lean template compliance to catch hidden UI inconsistencies. **Done**: Audited StudyClient — scholarSelection defaults `[]`, max 2 enforced, commentary hidden when none selected, languageSelection defaults `'all'`. Removed dead `defaultScholar` variable (lint fix). Both chapter and verse page routes pass no non-lean overrides. tsconfig updated to exclude `skills/` and `.agents/` from tsc.
 - [ ] **[UI-702] Verse App Integration**: Add contextual app suggestions in the verse UI so readers can act on insights immediately.
 - [ ] **[UI-703] Lab Navigation Enhancement**: Improve discoverability of relevant apps from the reading interface so users can find related educational tools.
+- [x] **[APP-701] Gita Analysis**: Analyze Gita chapters and recommend micro-apps based on content themes.
+- [x] **[APP-702] Vedic Labs Registry**: Build a registry that maps each educational tool... (Completed)
+- [x] **[APP-703] Verse-to-App Linking**: Surface optional micro-app links... (Completed)
+- [x] **[APP-704] Karma Yoga Simulator**: Interactive tool for practicing detached action.
+- [x] **[APP-705] Jnana Yoga Explorer**: Build a self-inquiry framework... (Completed)
+- [x] **[APP-706] Bhakti Yoga Compass**: Create a devotional practice tracker... (Completed)
+- [x] **[APP-707] Dharma Decision Matrix**: Provide an ethical decision-making framework... (Completed)
+- [x] **[APP-708] Time Consciousness Wheel**: Visualize Vedic time cycles... (Completed)
+- [x] **[APP-709] Divine Qualities Assessment**: Self-evaluation of daivi vs asuri qualities... (Completed)
+- [x] **[APP-712] Meditation State Tracker**: Track dhyana yoga states... (Completed)
+- [x] **[LAB-801] UI Theme Consistency**: Resolve light/dark theme inconsistency in lab components.
+- [x] **[LAB-806] Pranayama Enhancements**: Session tracking + customizable intervals. (Completed)
+- [x] **[LAB-807] Akshauhini Context**: Add historical comparisons... (Completed)
+- [x] **[UI-701] Lean Template Verification**: Audit all text implementations... (Completed)
 
 ### EPIC 7: Product Stabilization & Coverage (STABILITY)
 - [x] **[STAB-601] Verification Audit**: Validate each completed release note claim against actual app behavior and update backlog/release notes where discrepancies exist. **Findings**: (1) "29 tests" claim in v0.9.0 release notes is inaccurate — only 4 test files exist; (2) `philosophical-correlation`, `chhanda-analyzer`, `grammar-tokenizer`, and `/api/synthesize` are all placeholders not documented clearly in UI — addressed in STAB-602; (3) release notes have been annotated accordingly.
@@ -105,11 +105,12 @@ Every new book follows this 5-phase integration process:
 Following the 5-phase book integration template for comprehensive Mahabharata rollout.
 
 #### **PHASE 1: Data Pipeline Completion (MBH-DATA)**
-- [x] **[MBH-101] Data Ingestion**: All 18 Parvas ingested with BORI Critical Edition
-- [x] **[MBH-102] Schema Validation**: NVF compliance verified across all parvas
-- [ ] **[MBH-103] Content Audit**: Complete verse count and author mapping audit
-- [ ] **[MBH-104] AI Enrichment**: Generate comprehensive metadata for all adhyayas
-- [ ] **[MBH-105] Cross-reference Validation**: Verify internal śloka references
+- [ ] **[MBH-106] (CRITICAL FIX)**: Add `parva-1` to `manifest.json` shards. It currently has 225 adhyaya files but is inaccessible because it's missing from the manifest.
+- [ ] **[MBH-101] Data Ingestion**: Ingest Parvas 4–18. (Audit reveals only 3/18 are currently present).
+- [ ] **[MBH-102] Schema Validation**: NVF compliance verify Parvas 4–18 once ingested.
+- [ ] **[MBH-104] AI Enrichment**: Generate comprehensive metadata for complete adhyayas. Scoped to Parvas 1–3 for now.
+- [x] **[MBH-103] Content Audit**: Audit complete. Truth: 3/18 ingested. Adi=225 adhyayas, Vana=299 adhyayas. Parvas 4-18 missing.
+- [x] **[MBH-105] Cross-reference Validation**: Completed for Parvas 1-3. No broken refs found.
 
 #### **PHASE 2: UI Implementation (MBH-UI)**
 - [x] **[MBH-201] Lean Template Compliance**: Base layer visibility and commentary hiding
@@ -139,7 +140,8 @@ Every book must pass through 5 phases (P1: Ingest, P2: Harden, P3: Enrich, P4: T
 
 ### 1. 🕉️ Bhagavad Gita
 - **Status**: ✅ **STABLE**
-- **Tasks**: [X] 700 verses, [X] UI audit, [ ] feasibility check for 10+ commentary integration.
+- **Tasks**:
+- [ ] **[DEV]** Feasibility check for 10+ commentary integration.
 - [x] **[DEV]** Add `footer` metadata that displays name/author/language filter on verse pages.
 - [x] **[DEV]** Enforce 2-author lean filter for Gita and Mahabharata.
 - [x] **[DEV]** Keep base template meaning visible by default.
@@ -163,30 +165,30 @@ Every book must pass through 5 phases (P1: Ingest, P2: Harden, P3: Enrich, P4: T
 ## 📍 Mahabharata Ingestion Roadmap
 
 ### Phase 1: Foundation (Q1 2026)
-- **Adi Parva** (Parva 1): ✅ Complete - 19 Adhyayas
+- **Adi Parva** (Parva 1): ⚠️ Present (225 Adhyayas) but NOT in manifest
 - **Sabha Parva** (Parva 2): ✅ Complete - 72 Adhyayas
-- **Vana Parva** (Parva 3): ✅ Complete - 267 Adhyayas
+- **Vana Parva** (Parva 3): ✅ Complete - 299 Adhyayas
 
 ### Phase 2: Core Conflict (Q2 2026)
-- **Virata Parva** (Parva 4): ✅ Complete - 67 Adhyayas
-- **Udyoga Parva** (Parva 5): ✅ Complete - 186 Adhyayas
-- **Bhishma Parva** (Parva 6): ✅ Complete - 117 Adhyayas
+- **Virata Parva** (Parva 4): ❌ MISSING
+- **Udyoga Parva** (Parva 5): ❌ MISSING
+- **Bhishma Parva** (Parva 6): ❌ MISSING
 
 ### Phase 3: Climax (Q3 2026)
-- **Drona Parva** (Parva 7): ✅ Complete - 170 Adhyayas
-- **Karna Parva** (Parva 8): ✅ Complete - 69 Adhyayas
-- **Shalya Parva** (Parva 9): ✅ Complete - 57 Adhyayas
+- **Drona Parva** (Parva 7): ❌ MISSING
+- **Karna Parva** (Parva 8): ❌ MISSING
+- **Shalya Parva** (Parva 9): ❌ MISSING
 
 ### Phase 4: Resolution (Q4 2026)
-- **Sauptika Parva** (Parva 10): ✅ Complete - 16 Adhyayas
-- **Stri Parva** (Parva 11): ✅ Complete - 23 Adhyayas
-- **Shanti Parva** (Parva 12): ✅ Complete - 334 Adhyayas
-- **Anushasana Parva** (Parva 13): ✅ Complete - 154 Adhyayas
-- **Ashvamedhika Parva** (Parva 14): ✅ Complete - 92 Adhyayas
-- **Ashramavasika Parva** (Parva 15): ✅ Complete - 35 Adhyayas
-- **Mausala Parva** (Parva 16): ✅ Complete - 7 Adhyayas
-- **Mahaprasthanika Parva** (Parva 17): ✅ Complete - 3 Adhyayas
-- **Svargarohana Parva** (Parva 18): ✅ Complete - 5 Adhyayas
+- **Sauptika Parva** (Parva 10): ❌ MISSING
+- **Stri Parva** (Parva 11): ❌ MISSING
+- **Shanti Parva** (Parva 12): ❌ MISSING
+- **Anushasana Parva** (Parva 13): ❌ MISSING
+- **Ashvamedhika Parva** (Parva 14): ❌ MISSING
+- **Ashramavasika Parva** (Parva 15): ❌ MISSING
+- **Mausala Parva** (Parva 16): ❌ MISSING
+- **Mahaprasthanika Parva** (Parva 17): ❌ MISSING
+- **Svargarohana Parva** (Parva 18): ❌ MISSING
 
 ---
 

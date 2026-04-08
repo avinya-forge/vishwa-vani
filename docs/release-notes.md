@@ -101,7 +101,7 @@
 - **Milestone Achieved**: Autonomous Data Factory (ADF) fully operational for 5 core books
 
 ### ✨ Added
-- **Complete Mahabharata Ingestion**: All 18 Parvas with BORI Critical Edition Sanskrit and OCR verification
+- **Partial Mahabharata Ingestion**: Parvas 1-3 ingested with BORI Critical Edition (Parvas 4-18 deferred to backlog per MBH-103 audit).
 - **AI-Enhanced Data Service**: VedicDataService with verse enrichment, navigation intelligence, and caching
 - **Public API Suite**: `/api/synthesize` endpoint with payload validation and fallback handling
 - **Deployment Infrastructure**: Vercel configuration and deployment documentation
@@ -122,7 +122,7 @@
 - ✅ Data validation: Schema compliance verified
 
 ### 📋 Backlog Updates
-- **EPIC 1 COMPLETED**: THE GREAT INGESTION (ADF-MASSIVE)
+- **EPIC 1 COMPLETED**: THE GREAT INGESTION (ADF-MASSIVE) (For Phase 1 texts only)
 - **EPIC 2 COMPLETED**: Dual-Audit & Hallucination Defense (ADF-HARDEN)
 - **EPIC 3 COMPLETED**: UI Consistency & UX Excellence (UI-ENG)
 - **EPIC 5 COMPLETED**: Developer Ecosystem & APIs (VANI-API)
@@ -142,7 +142,7 @@
 ### 🚀 Deployment Status
 - **Build**: ✅ Production-ready (125 pages, 2.1s compile)
 - **Tests**: ✅ All passing (29/29, 4.6s runtime)
-- **Data**: ✅ 5 core books fully ingested and validated
+- **Data**: ✅ 5 core books partially ingested and validated (Mahabharata Phase 1)
 - **API**: ✅ Synthesis endpoint operational
 - **Version**: 0.8.1 → 0.9.0
 
