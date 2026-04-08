@@ -1,6 +1,7 @@
-# 🚀 Vishwa-Vani: The Master Backlog [SDLC v3.0]
+# 🚀 Vishwa-Vani: The Master Backlog [SDLC v4.0 - Agentic Governance]
 
-This is the single active backlog for Vishwa-Vani. It replaces all legacy planning variants and is the authoritative source for prioritized work, roadmap direction, and task context.
+This is the single active backlog for Vishwa-Vani, **managed and governed strictly by Claude (The Architect)**. 
+Jules and Antigravity (The Execution Agents) will read this backlog to determine the next task to implement, but they should defer major roadmap modifications to Claude.
 
 ---
 

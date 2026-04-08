@@ -19,21 +19,24 @@ description: Vishwa-Vani project rules — loaded every session
 ## 📋 SDLC Process — Read This Every Session
 
 ### Startup Protocol (every session)
-1. Read `docs/planning/backlog.md` — find the **top unchecked task** in the current sprint.
-2. Read `docs/rules/standards.md` — recall the lean template and quality rules.
+1. **SYNC GIT**: Pull latest `main` from remote.
+2. Read `docs/backlog.md` — find the **top unchecked task** in the current sprint.
+3. Read `docs/standards.md` — recall the lean template and quality rules.
 3. Pick ONE task, mark it `[IN PROGRESS]` in the backlog comment (do not edit the file yet).
 4. Implement incrementally. After EACH task:
    - Run `npm run lint` → fix all errors.
    - Run `npm run build` → fix all errors.
    - Run `npm test` → all tests must pass.
-   - Mark task `[x]` in `docs/planning/backlog.md`.
+   - Mark task `[x]` in `docs/backlog.md`.
    - Add a brief entry under the current version in `docs/release-notes.md`.
 5. After an entire **Epic** is done:
    - Run `npm run test -- --coverage` → check coverage.
    - Fix any regressions before starting the next epic.
    - Update the release notes with an epic-complete entry.
+   - If creating a PR or pushing, **check remote main, rebase logically, and automatically resolve conflicts** without prompting the user.
 
 ### Golden Rules
+- **Flat Documentation**: The `docs/` folder is flat. NEVER create subfolders (like `docs/planning`). This is a hard rule. AI-generated artifacts or scratchpads MUST NOT be pushed to git.
 - **One task at a time.** Never start task N+1 before task N is lint-clean, build-clean, and test-passing.
 - **Stability Gate (STAB-608) is active.** No new feature epics until EPIC 7 (STABILITY) is fully complete.
 - **Incremental only.** No big-bang rewrites. Every commit must leave the codebase in a working state.
@@ -209,6 +212,6 @@ After stability gate:
 When starting from a phone or new session:
 1. Always mount `D:\Code\avinya-forge\vishwa-vani` first.
 2. Read this file (`/.agents/rules/code-style-guide.md`) — it auto-loads on every session.
-3. Read `docs/planning/backlog.md` for the current task.
+3. Read `docs/backlog.md` for the current task.
 4. Follow the Startup Protocol above.
 5. Never start two tasks in parallel — one thing at a time.

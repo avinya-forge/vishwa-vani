@@ -24,6 +24,7 @@
 - **`components/lab/pranayama-timer.tsx`** (LAB-806): Added 4 technique presets (Box/Relaxing/Energizing/4-7-8), custom ratio control (1-16s per phase), round counter, elapsed session timer, and reset button.
 - **`components/shloka/study-client.tsx`** (UI-701): Removed unused `defaultScholar` variable (lint fix). All lean template rules verified: `scholarSelection=[]` default, max 2 scholars, commentary hidden until selection, `languageSelection='all'`.
 - **`tsconfig.json`**: Added `skills` and `.agents` to exclude list — prevents superpowers/caveman skill example files from polluting tsc.
+- **Architectural & SDLC Docs**: Updated `CLAUDE.md`, `docs/vision.md`, `docs/blueprint.md`, and `docs/backlog.md` to formally define standard Multi-Agent workflows (Claude as Architect, Jules/Antigravity as Executors).
 
 ### 📊 Tests
 - 93 tests passing across 11 suites (up from 79 tests, 9 suites)
@@ -41,7 +42,7 @@
 - **`components/shloka/verse-app-links.tsx`** (APP-703): Renders contextual micro-app pill links on every verse card, driven by the registry. Prototype apps hidden by default.
 - **`components/shloka/adhyaya-share-link.tsx`** (MBH-203): Copy-to-clipboard "Share Adhyaya" button in the Mahabharata header, generating `?adhyaya=N` deep links.
 - **`components/ui/prototype-badge.tsx`**: Shared `PrototypeBadge` component with `inline` and `banner` variants replacing duplicate amber badge styles.
-- **`docs/planning/book-integration-checklist.md`** (TMPL-903): 5-phase gate checklist for onboarding future books, with required metadata field table.
+- **`docs/book-integration-checklist.md`** (TMPL-903): 5-phase gate checklist for onboarding future books, with required metadata field table.
 - **`__tests__/lib-data-service.test.ts`** (STAB-606): 13 unit tests for `VedicDataService` — singleton, cache, navigation, AI enrichment, uiMetadata.
 - **`__tests__/lib-vedic-labs-registry.test.ts`**: 12 unit tests for registry queries.
 - **`__tests__/components-verse-app-links.test.tsx`**: 5 tests for `VerseAppLinks`.

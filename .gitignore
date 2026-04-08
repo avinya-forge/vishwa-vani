@@ -65,16 +65,19 @@ Thumbs.db
 /public/static_search_fallback.json
 /docs/generated/
 
+# STRICT AI AGENT RULES: No random subfolders or AI generated files
+# Ignore all random generated AI artifacts
+/tmp/
+/.tmp/
+/scratchpad/
+*.scratch.*
+/ai-artifacts/
+
 # Documentation restrictions
-/docs/*
-!/docs/planning
-!/docs/planning/*
-!/docs/rules
-!/docs/rules/*
-!/docs/architecture
-!/docs/architecture/*
-!/docs/release-notes.md
-!/docs/vision.md
+# Enforce FLAT docs/ structure (no subdirectories allowed in docs/)
+/docs/*/
+# Explicitly track flat docs but ignore subdirectories
+!/docs/*.md
 
 # Skills (installed via npx skills experimental_install from skills-lock.json)
 /skills/

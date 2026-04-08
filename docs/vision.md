@@ -22,6 +22,11 @@ Our primary objective is to take raw, disparate textual fragments (scanned scrol
 - **Vedic Lake Storage**: Hybrid binary storage (SQLite WASM) for massive scriptures with indexed $O(1)$ retrieval.
 - **Security Shield (Vedic Shield Architecture)**: Multi-layered protection including AES-256-GCM data encryption and ShlokaMask Canvas rendering to prevent DOM crawling.
 
+## 🤖 Multi-Agent Ecosystem
+Vishwa-Vani operates under a strict, AI-driven division of labor:
+*   **Claude (The Architect)**: Dedicated to architectural planning, blueprinting, and SDLC roadmap generation. Governs this `vision.md`, the `backlog.md`, and technical specifications.
+*   **Jules & Antigravity (The Execution Agents)**: Software engineers responsible for feature development. They parse Claude's blueprints, modify components, optimize queries, and run the test suites.
+
 ## ⚖️ Pipeline Laws
 1. **Static-First Execution**: Default to Static Generation (`npm run build`). JSON data sharding is used for chapters to keep page loads fast.
 2. **Framework Before Data**: The core architecture must be rock-solid before massive content imports.
@@ -32,4 +37,4 @@ Our primary objective is to take raw, disparate textual fragments (scanned scrol
     *   **Pragmatist**: "Is this overkill for a static site? Can we do this at build time?"
 
 ---
-_Vishwa-Vani: Wisdom for the digital age._
+_Vishwa-Vani: Wisdom for the digital age, forged by Agentic Intelligence._

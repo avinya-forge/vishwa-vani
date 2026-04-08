@@ -114,13 +114,27 @@ This generates an `out/` folder ready for static hosting.
 
 ---
 
-## 🗺️ Documentation
-
+## 🗺️ Single Source of Truth Documentation
+All documentation lives directly in the `docs/` root. Do not create nested folders here to ensure clarity and immediate discoverability. By design, no content is ever removed from the master backlog, only marked as completed.
 - 🏛️ [Vishwa-Vani Vision](./docs/vision.md)
-- 🚀 [Master Backlog](./docs/planning/backlog.md)
+- 🚀 [Master Backlog](./docs/backlog.md)
 - 📦 [Release Notes](./docs/release-notes.md)
-- 🏗️ [Architecture Blueprint](./docs/architecture/blueprint.md)
-- 🛠️ [Engineering & Operations](./docs/rules/standards.md)
+- 🏗️ [Architecture Blueprint](./docs/blueprint.md)
+- 🛠️ [Engineering & Operations](./docs/standards.md)
 
 ---
-_Vishwa-Vani: Turning Vedic Knowledge into an Interactive Journey._
+
+## 🤖 System Governance (Claude Pro & Agentic Workflows)
+Vishwa-Vani is aggressively optimized for **Agentic Development** leveraging Claude Pro features. 
+**Agentic Multi-Role Setup:**
+1. **Claude (The Architect)**: Masters the `docs/` directory. Directs backlog priority, audits blueprints, and determines project viability.
+2. **Jules / Antigravity (The Execution Agents)**: Software Engineers that implement logic natively in the codebase.
+
+**Claude Pro Optimum Utilization Instructions:**
+- **Caveman Protocol**: Engage `/caveman` (or `/caveman ultra`) to drastically compress Claude's syntax parsing and output sizes (~65% token drop) ensuring context isn't quickly lost on mega-prompts.
+- **Superpowers (Skills)**: Auto-trigged agentic skills (e.g., `brainstorming`, `writing-plans`, `subagent-driven-development`). Always command Claude to use `writing-plans` prior to writing code.
+- **Claude-Mem**: Use `/mem-search <query>` to cross-reference past architectural decisions seamlessly across sessions. 
+- Refer extensively to `CLAUDE.md` to bootstrap a new environment with optimal memory usage immediately.
+
+---
+_Vishwa-Vani: Turning Vedic Knowledge into an Interactive Journey, Orchestrated by Artificial Intelligence._

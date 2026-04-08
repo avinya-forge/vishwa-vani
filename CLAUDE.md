@@ -1,105 +1,74 @@
-# Vishwa Vani — Claude Code Project Memory
+# Vishwa Vani — Claude Project Architecture Memory
 
 ## Project Summary
+Next.js 16 App Router project serving Sanskrit scripture (Mahabharata, Bhagavad Gita) with transliteration, layered commentary, and AI synthesis. TypeScript strict mode throughout.
 
-Next.js 15 App Router project serving Sanskrit scripture (Mahabharata, Bhagavad Gita) with
-transliteration, layered commentary, and AI synthesis. TypeScript strict mode throughout.
+## 🤖 Agentic Roles & Responsibilities
+
+Vishwa-Vani follows a strict multi-agent separation of concerns:
+
+### 🧠 Claude (The Architect & Planner)
+Claude is solely responsible for **Architectural Blueprinting & Planning**. 
+- **Domain**: `docs/vision.md`, `docs/backlog.md`, `docs/release-notes.md`, `docs/blueprint.md`, and high-level structural decisions.
+- **Rules**: Claude maps out the roadmap, structures the milestones, governs the SDLC rules, and analyzes feature feasibility. Claude **does not write feature code**.
+
+### ⚡ Jules & Antigravity (The Execution Agents)
+Jules and Antigravity are responsible for **Implementation & Code Execution**.
+- **Domain**: All `/app`, `/components`, `/lib`, `/data`, `/scripts`, and `__tests__` directories.
+- **Rules**: They pick up the exact tasks mapped out in `docs/backlog.md` by Claude, implement them according to the `docs/standards.md`, run tests, and commit code. 
 
 ## Key Architecture
-
 - **NVF (Normalized Vedic Fragment)** — core data schema: `{ id, original, transliteration, layers[] }`
 - **VedicDataService** — singleton with in-memory cache; source of truth for chapter data
-- **VEDIC_LABS_REGISTRY** — 10 micro-apps mapped to books/chapters/topics (`lib/vedic-labs-registry.ts`)
+- **VEDIC_LABS_REGISTRY** — micro-apps mapped to books/chapters/topics (`lib/vedic-labs-registry.ts`)
 - **Lean UI Template** — commentary hidden by default; max 2 scholars; `scholarSelection=[]`; `languageSelection='all'`
 - **API routes** — `GET /api/synthesize` returns `synthesisMode: 'concatenation-fallback'`; supported languages: `en`, `hi`, `mr`
 
 ## Content Filtering Rule
-
-`isValidCommentaryContent()` rejects strings shorter than **80 characters**. Test fixtures must
-use commentary strings ≥ 80 chars or they are silently filtered.
-
-## Test Setup
-
-- Jest + ts-jest; config in `jest.config.ts`
-- Run: `npm test`
-- Type check: `npx tsc --noEmit`
-- 79 tests across 9 suites at v1.0.0
+`isValidCommentaryContent()` rejects strings shorter than **80 characters**. Test fixtures must use commentary strings ≥ 80 chars.
 
 ## Current Version
-
-**v1.0.0** — all STAB stabilization tasks complete; feature epics APP/MBH/LAB/TMPL unlocked.
-See `docs/planning/backlog.md` for next tasks and `docs/release-notes.md` for history.
-
-## Sprint Command
-
-`/backlog-sprint` — picks next 10 backlog tasks, implements, tests, commits in one session.
+**v1.2.0** — Feature Epics APP/MBH/LAB/TMPL unlocked. See `docs/backlog.md` for active tasks.
 
 ---
 
-## Token Optimization Strategy
+## 🛠️ Claude's Optimizer Toolkit
 
-This project uses three tools to maximise Claude context efficiency:
+When acting as the Architect, Claude must optimally utilize the following plugins and skills:
 
-### 1. caveman — Output Compression (~65% fewer output tokens)
+### 1. superpowers — Workflow Structure (reduces drift and hallucination)
+Claude should use specific skills to define perfect architectural plans before Jules/Antigravity execute:
+- `brainstorming`: To structure new epics in the backlog.
+- `writing-plans`: For defining new micro-app data models or database schemas before handing them to the developer agents.
 
-Activate in any session:
-- `/caveman` — compressed replies (drop filler, keep accuracy)
-- `/caveman lite` — drop filler only, keep grammar
-- `/caveman ultra` — telegraphic maximum compression
-- `stop caveman` — back to normal
-- `/caveman-compress CLAUDE.md` — rewrites this file in compressed form (~45% smaller), keeps `CLAUDE.original.md` as backup
+### 2. claude-mem — Cross-Session Planning Memory
+Claude should memorize long-term strategic decisions across sessions.
+- **What it remembers**: Architectural constraints, backlog priorities passed from one epic to another, unresolved API contracts.
+- **Viewer**: `npx claude-mem start` → open `http://localhost:37777`
+- **Search in session**: `/mem-search <query>`
 
-**When to use:** Any session involving repetitive explanation, large diffs, or verbose code review feedback. The `/backlog-sprint` command benefits most — 10 tasks of output shrinks dramatically.
+### 3. caveman — Output Compression (~65% fewer output tokens)
+When managing large backlog migrations or defining vast release notes, activate compression:
+- `/caveman` — compressed replies (drop filler, keep logic)
+- `/caveman-compress CLAUDE.md` — rewrites this file in compressed form tightly.
 
-### 2. superpowers — Workflow Structure (reduces drift and hallucination)
-
-Available skills (auto-triggered or invocable by name):
-| Skill | When |
-|---|---|
-| `brainstorming` | Before starting a feature — diverge before converging |
-| `writing-plans` | Architecture decisions; always plan before implement |
-| `test-driven-development` | New components/functions — test first |
-| `subagent-driven-development` | Tasks with 3+ independent sub-tasks — parallelize |
-| `dispatching-parallel-agents` | Explicit parallel work (e.g. 3 files at once) |
-| `systematic-debugging` | Bug investigation — hypothesis before mutation |
-| `verification-before-completion` | Before closing a task — verify all acceptance criteria |
-| `finishing-a-development-branch` | Before PR — lint, test, release notes |
-| `requesting-code-review` / `receiving-code-review` | PR review cycles |
-| `using-git-worktrees` | Long-running feature branches |
-
-**When to use:** Invoke by name or let Claude detect the context. Subagent-driven development keeps each agent's context window small — a 10-task sprint dispatched as 10 subagents uses 10× less per-agent context than a single monolithic session.
-
-### 3. claude-mem — Cross-Session Memory (eliminates re-explanation cost)
-
-Automatically captures observations during sessions and injects relevant context into future ones.
-
-**Progressive disclosure pattern (10× more efficient than loading full context):**
-1. `search(query=..., limit=10)` → compact index (~50–100 tokens/result)
-2. `timeline(observation_id=...)` → chronological context around a hit
-3. `get_observations(ids=[...])` → full details only for what you need
-
-**What it remembers:** file paths + decisions, test fixture requirements (the 80-char rule), API contracts, bug patterns, architecture trade-offs. After this session it will remember NVF schema, VedicDataService singleton pattern, etc.
-
-**Viewer:** `npx claude-mem start` → open `http://localhost:37777`
-**Search in session:** `/mem-search <query>`
-
-### Recommended Session Opening
-
-For any session working on this codebase:
-
+### Recommended Session Opening for Claude
 ```
-Use caveman mode. Search memory for "vishwa-vani recent decisions". Then implement [task].
+You are the Vishwa Vani Architect. Review docs/backlog.md for the current epic. Update tasks or release-notes as necessary and prepare a technical plan for Jules and Antigravity to execute. Use caveman mode.
 ```
 
-This single line saves ~2,000 tokens vs. the full context re-read approach.
+---
 
-### Combined Savings Estimate (per /backlog-sprint run)
+## 🚫 STRICt REPOSITORY POLICIES (MANDATORY FOR ALL AGENTS)
 
-| Layer | Saving |
-|---|---|
-| caveman output compression | ~65% of output tokens |
-| caveman-compress on CLAUDE.md | ~45% of CLAUDE.md input tokens |
-| claude-mem context injection (vs. manual re-explain) | ~3,000–5,000 tokens/session |
-| superpowers subagent dispatch (10 tasks → 10 small contexts) | ~70% per-agent context reduction |
+These rules apply strictly across Claude, Jules, and Antigravity:
 
-At Sonnet pricing, a full 10-task sprint session drops from ~$0.80 to ~$0.20 with all layers active.
+### 1. Document Structure Preservation
+- **Flat Docs**: `docs/` is completely flat. **DO NOT** recreate folders like `docs/planning`, `docs/architecture`, or `docs/rules`. 
+- **Single Source of Truth**: All backlog files, blueprints, and style-guides exist ONLY directly in the `docs/` folder.
+- **No Rogue Files**: AI should not create random `.md` files or scratchpads at the root. AI-generated assets should not be stored in Git unless they are robust architectural documents placed carefully in `docs/`.
+
+### 2. Git Synchronization & Pull Request Lifecycle
+- **Sync First**: Whenever an agent begins a new session or work item, it MUST pull the latest changes from Git (`git pull origin main`).
+- **Pre-PR Rebase Requirement**: Before checking in code or creating a PR, the agent MUST explicitly check remote `main`. The working branch **MUST BE REBASED** logically against the latest `main`.
+- **Conflict Resolution**: If the pre-PR rebase or any merge involves conflicts, the agent MUST resolve those conflicts automatically and logically, ensuring zero code loss, and verify resolution state BEFORE pushing. Do not prompt the user for permission to resolve conflicts unless completely blocked.

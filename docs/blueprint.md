@@ -15,3 +15,7 @@
 - `POST /v1/synthesize` — AI synthesis using meaning plus up to 2 commentaries.
 - Security: bearer tokens or OAuth2 where required.
 - Rate limits should be defined per consumer tier.
+
+## 7. Agentic Orchestration
+- **Claude (vishwa-architect)**: Primary governor of SDLC rules, backlog, and structural design. Controls roadmap documents.
+- **Jules & Antigravity (vishwa-engineers)**: Consume Claude's blueprints to manipulate Next.js components, APIs, and ensure Jest coverage remains at/above the 80% threshold without architect intervention.
