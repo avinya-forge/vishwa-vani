@@ -108,7 +108,17 @@ export const VEDIC_LABS_REGISTRY: LabAppEntry[] = [
     books: ['bhagavad-gita'],
     chapters: [13],
     topics: ['jnana', 'knowledge', 'self-inquiry', 'discrimination'],
-    available: false,
+    available: true,
+  },
+  {
+    id: 'bhakti-yoga-compass',
+    name: 'Bhakti Yoga Compass',
+    description: 'Devotional practice scenarios testing surrender and equanimity from Gita Chapter 12.',
+    path: '/labs/bhakti',
+    books: ['bhagavad-gita'],
+    chapters: [12],
+    topics: ['bhakti', 'devotion', 'surrender', 'equanimity'],
+    available: true,
   },
   {
     id: 'dharma-decision-matrix',
@@ -118,7 +128,7 @@ export const VEDIC_LABS_REGISTRY: LabAppEntry[] = [
     books: ['bhagavad-gita'],
     chapters: [2, 16],
     topics: ['dharma', 'ethics', 'decision', 'duty'],
-    available: false,
+    available: true,
   },
   {
     id: 'moksha-path-navigator',
