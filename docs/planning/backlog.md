@@ -61,25 +61,11 @@ Every new book follows this 5-phase integration process:
 - [x] **[APP-702] Vedic Labs Registry**: Build a registry that maps each educational tool to its relevant book, chapter, adhyaya, and verse context so users can discover apps from the reading experience. **Done**: `lib/vedic-labs-registry.ts` — 10 app entries, `getAppsForContext()` and `getAppsByTopics()` helpers; 12 unit tests.
 - [x] **[APP-703] Verse-to-App Linking**: Surface optional micro-app links on verse cards so readers can immediately use interactive tools that relate to the verse theme. **Done**: `components/shloka/verse-app-links.tsx` — renders contextual app pills per verse; wired into `StudyClient`; 5 unit tests.
 - [x] **[APP-704] Karma Yoga Simulator**: Interactive tool for practicing detached action (Ch. 3).
-- [ ] **[APP-705] Jnana Yoga Explorer**: Build a self-inquiry framework with discrimination exercises to help readers apply knowledge from Gita 13.
-- [ ] **[APP-706] Bhakti Yoga Compass**: Create a devotional practice tracker for surrender exercises and emotional guidance from Gita 12.
-- [ ] **[APP-707] Dharma Decision Matrix**: Provide an ethical decision-making framework derived from Gita 2 and 16 to help users resolve dilemmas.
-- [ ] **[APP-708] Time Consciousness Wheel**: Visualize past/present/future themes from Gita 8 and 10 to clarify cyclical time concepts.
-- [ ] **[APP-709] Divine Qualities Assessment**: Add a self-evaluation tool for daivi vs asuri qualities to support personal reflection from Gita 16.
-- [ ] **[APP-710] Sankhya Philosophy Visualizer**: Make nature/spirit discrimination concrete with an interactive Sankhya concept explorer from Gita 13.
-- [ ] **[APP-711] Cosmic Vision Simulator**: Help readers grasp the universal form by simulating key insights from Gita 11.
-- [ ] **[APP-712] Meditation State Tracker**: Track dhyana yoga progress and give practical next-step guidance from Gita 6.
-- [ ] **[APP-713] Moksha Path Navigator**: Build an interactive journey through liberation paths using key teachings from Gita 8, 12, and 13.
+- [ ] **[BATCH-APP] Micro-Apps Expansion**: Build Jnana Yoga Explorer (Ch.13), Bhakti Compass (Ch.12), Dharma Matrix (Ch.2,16), Time Wheel (Ch.8,10), Qualities Assessment (Ch.16), Sankhya Visualizer (Ch.13), Cosmic Vision (Ch.11), Meditation Tracker (Ch.6), and Moksha Navigator (Ch.8,12,13).
 - [x] **[LAB-801] UI Theme Consistency**: Resolve light/dark theme inconsistency in lab components.
-- [ ] **[LAB-802] Chhanda Analyzer Algorithm**: Replace placeholder code with real Sanskrit meter analysis so users get accurate chandas insights.
-- [ ] **[LAB-803] Grammar Tokenizer Parser**: Build proper Paninian grammar analysis instead of a mock tokenizer to support real Sanskrit study.
-- [ ] **[LAB-804] Vedic Instruments Audio**: Add conch and instrument sound playback so lab experiences feel authentic.
-- [ ] **[LAB-805] Astro Explorer Algorithm**: Improve numerology with proper Vedic calculations rather than superficial astrology results.
-- [ ] **[LAB-806] Pranayama Enhancements**: Add session tracking and customizable intervals so breathing practice is usable over time.
+- [ ] **[BATCH-LAB] Vedic Lab Refinements**: Implement real algorithms for Chhanda Analyzer, Grammar Tokenizer, Astro Explorer, add audio for Vedic instruments, and enhance Pranayama tracking.
 - [x] **[LAB-807] Akshauhini Context**: Add historical comparisons and export features to make the ancient army-size calculator meaningful. **Done**: Extracted `calculateAkshauhini()` pure function; added expandable "Historical Context" panel comparing 4 real battles (Gaugamela, Cannae, Waterloo, D-Day) with ratio display; added 18-Akshauhini context note; 4 unit tests confirming canonical totals.
-- [ ] **[UI-701] Lean Template Verification**: Audit all text implementations for lean template compliance to catch hidden UI inconsistencies.
-- [ ] **[UI-702] Verse App Integration**: Add contextual app suggestions in the verse UI so readers can act on insights immediately.
-- [ ] **[UI-703] Lab Navigation Enhancement**: Improve discoverability of relevant apps from the reading interface so users can find related educational tools.
+- [ ] **[BATCH-UI] UI Enhancements**: Audit lean template compliance, integrate verse apps, and improve lab navigation.
 
 ### EPIC 7: Product Stabilization & Coverage (STABILITY)
 - [x] **[STAB-601] Verification Audit**: Validate each completed release note claim against actual app behavior and update backlog/release notes where discrepancies exist. **Findings**: (1) "29 tests" claim in v0.9.0 release notes is inaccurate — only 4 test files exist; (2) `philosophical-correlation`, `chhanda-analyzer`, `grammar-tokenizer`, and `/api/synthesize` are all placeholders not documented clearly in UI — addressed in STAB-602; (3) release notes have been annotated accordingly.
@@ -97,11 +83,8 @@ Every new book follows this 5-phase integration process:
 
 ### EPIC 9: Template Consistency & Book Rollout (TEMPLATE-STD)
 - [x] **[TMPL-902] Mahabharata Lean Template**: Apply the lean UI template to Mahabharata.
-- [x] **[TMPL-903] Book Checklist**: Document the lean UI template spec for future books, including default visibility, commentary behaviour, and required metadata fields. **Done**: Created `docs/planning/book-integration-checklist.md` — 5-phase gate list covering data pipeline, UI compliance, API integration, app ecosystem, and QA with required metadata field table.
-- [ ] **[TMPL-904] New Book Rollout**: Onboard the next book using the standard template pattern so future integrations are repeatable and predictable.
-- [ ] **[TMPL-905] AI Data Cleaning**: Add AI quality metrics for commentary and author mapping to detect bad metadata, duplicate entries, and hallucinated references.
-- [ ] **[TMPL-906] App-Task Generator**: Auto-generate UI micro-app tasks from semantic topics so the backlog stays aligned with the content themes of each book.
-- [ ] **[TMPL-907] AI Search Productionization**: Build a question-driven search bar and AI answer service that uses integrated book context, filtered book data, and verse references; include source citations for trust and transparency. (Lower priority than core integration tasks.)
+- [x] **[TMPL-903] Book Checklist**: Document the lean UI template spec for future books, including default visibility, commentary behaviour, and required metadata fields. **Done**: Appended 5-phase gate list covering data pipeline, UI compliance, API integration, app ecosystem, and QA with required metadata field table to `docs/rules/standards.md`.
+- [ ] **[BATCH-TMPL] Consistency Pipeline**: Onboard new book using standard template, add AI data cleaning, generate app-tasks from semantic topics, and productionize AI search.
 
 ### EPIC 10: Mahabharata Full Integration (MBH-COMPLETE)
 Following the 5-phase book integration template for comprehensive Mahabharata rollout.
@@ -128,20 +111,10 @@ Following the 5-phase book integration template for comprehensive Mahabharata ro
 - [ ] **[MBH-305] Caching Strategy**: Intelligent caching for epic content
 
 #### **PHASE 4: App Ecosystem (MBH-APPS)**
-- [ ] **[MBH-401] Content Analysis**: Identify key themes across 18 parvas
-- [ ] **[MBH-402] Character Relationship Map**: Interactive Kaurava/Pandava dynamics
-- [ ] **[MBH-403] Dharma Dilemma Explorer**: Ethical decision scenarios from epic
-- [ ] **[MBH-404] Battle Strategy Simulator**: Military tactics and formations
-- [ ] **[MBH-405] Wisdom Quote Generator**: Curated insights from key characters
-- [ ] **[MBH-406] Timeline Navigator**: Historical progression through 18 parvas
-- [ ] **[MBH-407] Character Arc Tracker**: Personal growth journeys of key figures
+- [ ] **[BATCH-MBH-APPS] Mahabharata Apps**: Analyze content for themes, build Character Map, Dharma Dilemma Explorer, Battle Simulator, Wisdom Quotes, Timeline, and Character Arc Tracker.
 
 #### **PHASE 5: Quality Assurance (MBH-QA)**
-- [ ] **[MBH-501] Cross-browser Testing**: Compatibility across all major browsers
-- [ ] **[MBH-502] Performance Audit**: Load times for large parva chapters
-- [ ] **[MBH-503] Content Accuracy**: Scholarly review of translations and commentaries
-- [ ] **[MBH-504] Accessibility Audit**: Screen reader and keyboard navigation
-- [ ] **[MBH-505] Documentation**: User guides and advanced features
+- [ ] **[BATCH-MBH-QA] Quality Assurance**: Perform cross-browser testing, performance audit, scholarly content accuracy review, accessibility audit, and documentation updates.
 
 ---
 
