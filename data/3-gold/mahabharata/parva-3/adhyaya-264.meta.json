@@ -1,0 +1,19 @@
+{
+  "chapter_ref": "parva-3-adhyaya-264",
+  "parva": 3,
+  "adhyaya": 264,
+  "verse_count": 73,
+  "has_sanskrit": true,
+  "has_translation": true,
+  "authors": [
+    "km_ganguli"
+  ],
+  "stub_themes": [
+    "dharma",
+    "epic-narrative",
+    "character-arc"
+  ],
+  "enrichment_version": "0.1-stub",
+  "enrichment_date": "2026-04-08T19:54:57.811847",
+  "_enrichment_note": "STUB: Placeholder metadata pending real LLM enrichment (STAB-603). Themes are generic until AI synthesis endpoint is implemented."
+}

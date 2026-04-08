@@ -22,7 +22,7 @@ export interface ScriptureVerse {
   slok: string;
   transliteration: string;
   /** Authors and Commentaries are dynamic keys */
-  [key: string]: any;
+  [key: string]: unknown;
 }
 
 const MANDATORY_FIELDS = ['_id', 'chapter', 'verse', 'slok', 'transliteration'];
@@ -30,17 +30,18 @@ const MANDATORY_FIELDS = ['_id', 'chapter', 'verse', 'slok', 'transliteration'];
 /**
  * Validates the integrity of a verse object.
  */
-export function validateVerse(verse: any): { valid: boolean; errors: string[] } {
+export function validateVerse(verse: unknown): { valid: boolean; errors: string[] } {
+  const v = verse as Record<string, unknown>
   const errors: string[] = [];
 
   MANDATORY_FIELDS.forEach(field => {
-    if (verse[field] === undefined || verse[field] === null || verse[field] === '') {
+    if (v[field] === undefined || v[field] === null || v[field] === '') {
       errors.push(`Missing mandatory field: ${field}`);
     }
   });
 
-  if (typeof verse.chapter !== 'number') errors.push('Chapter must be a number');
-  if (typeof verse.verse !== 'number') errors.push('Verse must be a number');
+  if (typeof v.chapter !== 'number') errors.push('Chapter must be a number');
+  if (typeof v.verse !== 'number') errors.push('Verse must be a number');
 
   return {
     valid: errors.length === 0,

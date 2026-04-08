@@ -1,6 +1,6 @@
-import initSqlJs from 'sql.js';
+import initSqlJs, { type Database } from 'sql.js';
 
-let LAKES: Record<string, any> = {};
+const LAKES: Record<string, Database> = {};
 
 /**
  * Vedic Lake Worker 🪷
@@ -28,9 +28,9 @@ self.onmessage = async (event: MessageEvent) => {
         const stmt = db.prepare('SELECT content FROM verses WHERE text_slug = :slug AND chapter = :ch ORDER BY verse ASC');
         stmt.bind({ ':slug': textSlug, ':ch': chapter });
 
-        const verses: any[] = [];
+        const verses: unknown[] = [];
         while (stmt.step()) {
-          const row = stmt.getAsObject();
+          const row = stmt.getAsObject() as Record<string, unknown>;
           if (row.content) verses.push(JSON.parse(row.content as string));
         }
         stmt.free();
@@ -52,7 +52,7 @@ self.onmessage = async (event: MessageEvent) => {
             WHERE verses_fts MATCH :q
             LIMIT 40
           `, { ':q': query });
-        } catch (e) {
+        } catch {
           results = db.exec(`
             SELECT text_slug, chapter, verse, slok, transliteration, 0 as relevance
             FROM verses 
@@ -64,15 +64,18 @@ self.onmessage = async (event: MessageEvent) => {
           });
         }
 
-        const searchResults = (results && results[0]) 
-          ? results[0].values.map((v: any) => ({
-              textSlug: v[0],
-              chapter: v[1],
-              verse: v[2],
-              slok: v[3],
-              transliteration: v[4],
-              relevance: v[5]
-            }))
+        const searchResults = (results && results[0])
+          ? (results[0].values as unknown[]).map((v: unknown) => {
+              const row = v as unknown[];
+              return {
+                textSlug: row[0],
+                chapter: row[1],
+                verse: row[2],
+                slok: row[3],
+                transliteration: row[4],
+                relevance: row[5]
+              };
+            })
           : [];
 
         self.postMessage({ type: 'SEARCH_SUCCESS', id, payload: { results: searchResults } });
@@ -82,8 +85,8 @@ self.onmessage = async (event: MessageEvent) => {
       default:
         console.warn('Unknown message type to LakeWorker:', type);
     }
-  } catch (error: any) {
-    self.postMessage({ type: 'ERROR', id, error: error.message });
+  } catch (error: unknown) {
+    self.postMessage({ type: 'ERROR', id, error: (error as Record<string, unknown>).message });
   }
 };
 
@@ -106,8 +109,8 @@ async function getOrInitLake(lakeFile: string = 'vedic-lake.db') {
     if (!res || !res[0] || !res[0].values || res[0].values[0][0] !== '1.0') {
       throw new Error(`Incompatible Lake Version. Hard reload required (Ctrl+Shift+R).`);
     }
-  } catch (e: any) {
-    throw new Error(`Corrupted or Outdated Lake detected [${lakeFile}]: ${e.message}`);
+  } catch (e: unknown) {
+    throw new Error(`Corrupted or Outdated Lake detected [${lakeFile}]: ${(e as Record<string, unknown>).message}`);
   }
 
   LAKES[lakeFile] = db;

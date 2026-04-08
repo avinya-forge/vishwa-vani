@@ -1,7 +1,8 @@
 'use client'
 
 import { NextIntlClientProvider } from 'next-intl'
-import { useState, useEffect, ReactNode } from 'react'
+import { useState, useEffect } from 'react'
+import type { ReactNode } from 'react'
 import en from '@/messages/en.json'
 import hi from '@/messages/hi.json'
 import mr from '@/messages/mr.json'
@@ -10,7 +11,7 @@ const messagesMap = { en, hi, mr }
 
 export default function LocaleProvider({ children }: { children: ReactNode }) {
   const [locale, setLocale] = useState('en')
-  const [mounted, setMounted] = useState(false)
+  const [_mounted, setMounted] = useState(false)
 
   useEffect(() => {
     const stored = localStorage.getItem('vishwa_lang')
@@ -20,10 +21,10 @@ export default function LocaleProvider({ children }: { children: ReactNode }) {
     setMounted(true)
 
     // Listen for custom locale change events
-    const handleLocaleChange = (e: any) => {
-      setLocale(e.detail)
+    const handleLocaleChange = (e: unknown) => {
+      setLocale((e as Record<string, unknown>).detail as string)
     }
-    window.addEventListener('vishwa-locale-change', handleLocaleChange)
+    window.addEventListener('vishwa-locale-change', handleLocaleChange as EventListener)
     return () => window.removeEventListener('vishwa-locale-change', handleLocaleChange)
   }, [])
 

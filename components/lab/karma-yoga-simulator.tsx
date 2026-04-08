@@ -173,23 +173,23 @@ export default function KarmaYogaSimulator() {
               </button>
             ))}
           </div>
-        ) : (
+        ) : selectedOption !== null ? (
           <div className="space-y-4">
             <div className={`p-4 rounded-xl border-2 ${
-              scenario.options[selectedOption!].karmaYoga 
-                ? 'bg-green-900/20 border-green-600' 
+              scenario.options[selectedOption].karmaYoga
+                ? 'bg-green-900/20 border-green-600'
                 : 'bg-red-900/20 border-red-600'
             }`}>
               <div className="flex items-center gap-2 mb-2">
-                <span className={`text-lg ${scenario.options[selectedOption!].karmaYoga ? 'text-green-400' : 'text-red-400'}`}>
-                  {scenario.options[selectedOption!].karmaYoga ? '✅' : '❌'}
+                <span className={`text-lg ${scenario.options[selectedOption].karmaYoga ? 'text-green-400' : 'text-red-400'}`}>
+                  {scenario.options[selectedOption].karmaYoga ? '✅' : '❌'}
                 </span>
-                <span className={`font-bold ${scenario.options[selectedOption!].karmaYoga ? 'text-green-300' : 'text-red-300'}`}>
-                  {scenario.options[selectedOption!].karmaYoga ? 'Karma Yoga Path' : 'Attached Action'}
+                <span className={`font-bold ${scenario.options[selectedOption].karmaYoga ? 'text-green-300' : 'text-red-300'}`}>
+                  {scenario.options[selectedOption].karmaYoga ? 'Karma Yoga Path' : 'Attached Action'}
                 </span>
               </div>
               <p className="text-stone-200 text-sm leading-relaxed">
-                {scenario.options[selectedOption!].explanation}
+                {scenario.options[selectedOption].explanation}
               </p>
             </div>
 
@@ -200,7 +200,7 @@ export default function KarmaYogaSimulator() {
               {currentScenario < SCENARIOS.length - 1 ? 'Next Scenario' : 'View Results'}
             </button>
           </div>
-        )}
+        ) : null}
       </div>
     </VedicAppTemplate>
   )

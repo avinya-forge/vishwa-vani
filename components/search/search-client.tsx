@@ -15,9 +15,9 @@ interface SearchResult {
 }
 
 export default function SearchClient() {
-  const t = useTranslations('study')
-  const nt = useTranslations('nav')
-  const locale = useLocale()
+  const _t = useTranslations('study')
+  const _nt = useTranslations('nav')
+  const _locale = useLocale()
 
   const [query, setQuery] = useState('')
   const [results, setResults] = useState<SearchResult[]>([])
@@ -30,7 +30,7 @@ export default function SearchClient() {
         setIsSearching(true)
         try {
           const res = await searchLake(query)
-          setResults(res)
+          setResults((res as unknown as SearchResult[]) || [])
         } catch (error) {
           console.error('Search failed:', error)
         } finally {
@@ -101,7 +101,7 @@ export default function SearchClient() {
           {['all', 'itihas', 'upanishad', 'purana'].map((tab) => (
             <button
               key={tab}
-              onClick={() => setActiveTab(tab as any)}
+              onClick={() => setActiveTab(tab as 'all' | 'itihas' | 'upanishad' | 'purana')}
               className={`px-6 py-3 rounded-2xl text-[11px] font-black uppercase tracking-[0.2em] transition-all whitespace-nowrap border ${
                 activeTab === tab 
                 ? 'bg-stone-900 text-white border-stone-900 shadow-xl' 

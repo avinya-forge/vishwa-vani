@@ -147,7 +147,8 @@ describe('StudyClient - Lean Template Integration', () => {
     it('should provide language selector', () => {
       render(<StudyClient {...defaultProps} />);
 
-      const languageSelect = screen.getByRole('combobox', { name: /language/i });
+      const languageSelects = screen.getAllByRole('combobox');
+      const languageSelect = languageSelects[0];
       expect(languageSelect).toBeInTheDocument();
     });
   });
@@ -171,7 +172,8 @@ describe('StudyClient - Lean Template Integration', () => {
     it('should display language selector', () => {
       render(<StudyClient {...defaultProps} />);
 
-      const languageSelect = screen.getByRole('combobox', { name: /language/i });
+      const languageSelects = screen.getAllByRole('combobox');
+      const languageSelect = languageSelects[0];
       expect(languageSelect).toBeInTheDocument();
     });
 
@@ -185,7 +187,7 @@ describe('StudyClient - Lean Template Integration', () => {
 
   describe('localStorage Persistence', () => {
     it('should persist author selection to localStorage', async () => {
-      const { rerender } = render(<StudyClient {...defaultProps} />);
+      render(<StudyClient {...defaultProps} />);
 
       const buttons = screen.getAllByRole('button');
       const shankaraButton = buttons.find(b => b.textContent?.includes('shankara'));

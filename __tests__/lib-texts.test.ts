@@ -1,4 +1,5 @@
-import { VEDIC_LIBRARY, VedicText } from '@/lib/texts';
+import { VEDIC_LIBRARY } from '@/lib/texts';
+import type { VedicText } from '@/lib/texts';
 
 describe('VEDIC_LIBRARY', () => {
   it('should contain valid VedicText entries', () => {

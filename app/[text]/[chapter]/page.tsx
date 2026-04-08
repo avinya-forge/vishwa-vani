@@ -2,7 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import Link from 'next/link'
 import StudyClient from '@/components/shloka/study-client'
-import { getTextBySlug, getAllTextChapterPaths, VEDIC_LIBRARY } from '@/lib/texts'
+import { getTextBySlug, getAllTextChapterPaths } from '@/lib/texts'
 import { vedicDataService } from '@/lib/data-service'
 import { setRequestLocale } from 'next-intl/server'
 
@@ -33,7 +33,7 @@ export default async function StudyChapterPage(props: Props) {
      if (typeof sp?.adhyaya === 'string') {
         adhyayaParam = sp.adhyaya;
      }
-  } catch (e) {
+  } catch {
      // Ignore
   }
 
@@ -57,17 +57,17 @@ export default async function StudyChapterPage(props: Props) {
   const chapterInt = parseInt(chapterNumber)
 
   // Build adhyaya list for Mahabharata
-  const adhyayaList = textSlug === 'mahabharata' 
+  const adhyayaList = textSlug === 'mahabharata'
     ? (JSON.parse(fs.readFileSync(path.join(process.cwd(), 'data', 'manifest.json'), 'utf8'))
-        .books.find((b: any) => b.slug === 'mahabharata')?.shards
-        .filter((s: any) => s.file.startsWith(`parva-${chapterNumber}/`))
-        .map((s: any) => {
+        .books.find((b: unknown) => (b as Record<string, unknown>).slug === 'mahabharata')?.shards
+        .filter((s: unknown) => (s as Record<string, unknown>).file && String((s as Record<string, unknown>).file).startsWith(`parva-${chapterNumber}/`))
+        .map((s: unknown) => {
             // s.file format: "parva-2/adhyaya-5.json"
-            const filename = s.file.split('/')[1]               // "adhyaya-5.json"
+            const filename = String((s as Record<string, unknown>).file).split('/')[1]               // "adhyaya-5.json"
             const num = parseInt(filename.replace('adhyaya-', '').replace('.json', ''))
-            return { num, id: s.id }
+            return { num, id: (s as Record<string, unknown>).id }
         })
-        .sort((a: any, b: any) => a.num - b.num)
+        .sort((a: unknown, b: unknown) => ((a as Record<string, unknown>).num as number) - ((b as Record<string, unknown>).num as number))
         || [])
     : []
 
@@ -75,10 +75,10 @@ export default async function StudyChapterPage(props: Props) {
   let validatedAdhyayaParam = adhyayaParam
   if (textSlug === 'mahabharata' && adhyayaList.length > 0) {
     const requestedAdhyaya = adhyayaParam ? parseInt(adhyayaParam) : null
-    const isValidAdhyaya = requestedAdhyaya && adhyayaList.some((a: any) => a.num === requestedAdhyaya)
+    const isValidAdhyaya = requestedAdhyaya && adhyayaList.some((a: unknown) => (a as Record<string, unknown>).num === requestedAdhyaya)
     if (!isValidAdhyaya) {
       // Fallback to first available adhyaya
-      validatedAdhyayaParam = String(adhyayaList[0].num)
+      validatedAdhyayaParam = String((adhyayaList[0] as Record<string, unknown>).num)
     }
   }
 
@@ -103,7 +103,7 @@ export default async function StudyChapterPage(props: Props) {
     )
   }
 
-  const { verses: enrichedVerses, navigation, aiInsights } = chapterData;
+  const { verses: _enrichedVerses, navigation: _navigation, aiInsights: _aiInsights } = chapterData;
 
   // Build chapter list for navigation
   const chapterList: { num: number; name: string }[] = []
@@ -129,52 +129,60 @@ export default async function StudyChapterPage(props: Props) {
   )
 }
 
-function StudyWrapper({ chapterData, textSlug, chapterNumber, adhyayaParam, adhyayaList }: any) {
-  const { verses, navigation, aiInsights, metadata } = chapterData;
-  const textMetadata = getTextBySlug(textSlug);
+function StudyWrapper({ chapterData, textSlug, chapterNumber, adhyayaParam, adhyayaList }: Record<string, unknown>) {
+  const { verses, navigation, aiInsights: _aiInsights, metadata } = chapterData as Record<string, unknown>;
+  const textSlugStr = String(textSlug);
+  const chapterNumberNum = Number(chapterNumber);
+  const adhyayaParamStr = adhyayaParam ? String(adhyayaParam) : undefined;
+  const textMetadata = getTextBySlug(textSlugStr);
+
+  // Safely access navigation with type guards
+  const nav = navigation as Record<string, unknown> | undefined;
 
   return (
     <>
       <StudyClient
-        verses={verses}
-        textSlug={metadata.slug}
-        chapter={chapterNumber}
-        adhyayaList={adhyayaList}
-        currentAdhyaya={adhyayaParam ? parseInt(adhyayaParam) : undefined}
+        verses={verses as unknown[]}
+        textSlug={(metadata as Record<string, unknown>)?.slug as string}
+        chapter={chapterNumberNum}
+        adhyayaList={adhyayaList as { num: number; id: string }[]}
+        currentAdhyaya={adhyayaParamStr ? parseInt(adhyayaParamStr) : undefined}
       />
-      
+
       {/* Footer Navigation */}
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 mt-8 pb-12 flex flex-col sm:flex-row items-center justify-between gap-4 relative z-10">
+      <div className="max-w-[1400px] mx-auto px-3 sm:px-4 lg:px-6 mt-8 pb-12 flex flex-col sm:flex-row items-center justify-between gap-4 relative z-10">
         {/* Footer Metadata */}
         <div className="flex flex-col gap-1 text-center sm:text-left">
           <div className="text-[10px] font-black uppercase tracking-widest text-stone-400">
-            {textMetadata?.name || textSlug}
+            {String(textMetadata?.name || textSlugStr)}
           </div>
           <div className="text-[9px] text-stone-500 font-medium">
-            Chapter {chapterNumber}{adhyayaParam ? ` • Adhyaya ${adhyayaParam}` : ''} • {verses?.length || 0} Verses
+            Chapter {chapterNumberNum}{adhyayaParamStr ? String(` • Adhyaya ${adhyayaParamStr}`) : String('')} • {(verses as unknown[])?.length || 0} Verses
           </div>
         </div>
 
-        <div className="flex gap-3 w-full sm:w-auto justify-center sm:justify-end">
-          {navigation.prevChapter && (
+        <div className="flex gap-2 sm:gap-3 w-full sm:w-auto justify-center sm:justify-end flex-wrap">
+          {(nav as Record<string, unknown>)?.prevChapter ? (
             <Link
-              href={navigation.prevChapter.slug}
-              className="flex-1 sm:flex-none inline-flex items-center justify-center gap-2 px-6 py-3 bg-white border border-stone-200 text-stone-700 rounded-xl hover:bg-stone-50 transition-all font-bold text-[10px] uppercase tracking-widest shadow-sm hover:shadow-md"
+              href={String(((nav as Record<string, unknown>).prevChapter as Record<string, unknown>).slug)}
+              className="flex-1 min-w-0 sm:flex-none inline-flex items-center justify-center gap-1 sm:gap-2 px-3 sm:px-6 py-2 sm:py-3 bg-white border border-stone-200 text-stone-700 rounded-xl hover:bg-stone-50 transition-all font-bold text-[9px] sm:text-[10px] uppercase tracking-widest shadow-sm hover:shadow-md"
             >
-              &larr; {navigation.prevChapter.title}
+              <span className="hidden xs:inline">&larr;</span>
+              <span className="truncate">{String(((nav as Record<string, unknown>).prevChapter as Record<string, unknown>).title)}</span>
             </Link>
-          )}
-          {navigation.nextChapter && (
+          ) : null}
+          {(nav as Record<string, unknown>)?.nextChapter ? (
             <Link
-              href={navigation.nextChapter.slug}
-              className="flex-1 sm:flex-none inline-flex items-center justify-center gap-2 px-6 py-3 bg-orange-600 text-white rounded-xl hover:bg-orange-700 transition-all font-bold text-[10px] uppercase tracking-widest shadow-xl shadow-orange-200"
+              href={String(((nav as Record<string, unknown>).nextChapter as Record<string, unknown>).slug)}
+              className="flex-1 min-w-0 sm:flex-none inline-flex items-center justify-center gap-1 sm:gap-2 px-3 sm:px-6 py-2 sm:py-3 bg-orange-600 text-white rounded-xl hover:bg-orange-700 transition-all font-bold text-[9px] sm:text-[10px] uppercase tracking-widest shadow-xl shadow-orange-200"
             >
-              {navigation.nextChapter.title} &rarr;
+              <span className="truncate">{String(((nav as Record<string, unknown>).nextChapter as Record<string, unknown>).title)}</span>
+              <span className="hidden xs:inline">&rarr;</span>
             </Link>
-          )}
+          ) : null}
         </div>
 
-        <Link href="/" className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-stone-900 text-white rounded-xl font-black text-[10px] uppercase tracking-widest shadow-2xl active:scale-95">
+        <Link href="/" className="inline-flex items-center justify-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-stone-900 text-white rounded-xl font-black text-[9px] sm:text-[10px] uppercase tracking-widest shadow-2xl active:scale-95 flex-shrink-0">
           Back to Hub
         </Link>
       </div>

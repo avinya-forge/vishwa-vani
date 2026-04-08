@@ -11,7 +11,7 @@ import { VEDIC_LIBRARY } from './texts'
 
 let worker: Worker | null = null;
 let requestCounter = 0;
-const pendingRequests: Record<number, { resolve: Function, reject: Function }> = {};
+const pendingRequests: Record<number, { resolve: (value: unknown) => void, reject: (reason?: unknown) => void }> = {};
 
 function getWorker(): Worker {
   if (worker) return worker;
@@ -33,7 +33,7 @@ function getWorker(): Worker {
   return worker;
 }
 
-function sendRequest(type: string, payload: any): Promise<any> {
+function sendRequest(type: string, payload: unknown): Promise<unknown> {
     const id = ++requestCounter;
     return new Promise((resolve, reject) => {
         pendingRequests[id] = { resolve, reject };

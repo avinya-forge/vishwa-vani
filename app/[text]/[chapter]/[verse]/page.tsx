@@ -33,7 +33,7 @@ interface VerseAuthor {
   sc?: string // Sanskrit Commentary
 }
 
-interface GitaVerse {
+interface _GitaVerse {
   _id: string
   chapter: number
   verse: number
@@ -64,22 +64,23 @@ export default async function StudyVersePage({ params }: { params: Promise<{ tex
     )
   }
 
-  let verses: any[] = []
+  let verses: Record<string, unknown>[] = []
   const chapterInt = parseInt(chapterNumber)
 
   if (textMetadata.storage === 'lake') {
-    verses = await getVersesFromLakeServer(textSlug, chapterInt, textMetadata.lakeFile || undefined)
+    const lakeVerses = await getVersesFromLakeServer(textSlug, chapterInt, textMetadata.lakeFile || undefined)
+    verses = (lakeVerses as unknown as Record<string, unknown>[]) || []
   } else {
     try {
       const dataPath = path.join(process.cwd(), 'data', `${textMetadata.dataPrefix}_chapter_${chapterNumber}.json`)
       const rawData = fs.readFileSync(dataPath, 'utf8')
-      verses = JSON.parse(rawData)
+      verses = (JSON.parse(rawData) as unknown as Record<string, unknown>[]) || []
     } catch (e) {
       console.error(`Failed to load text ${textSlug} chapter ${chapterNumber} data`, e)
     }
   }
 
-  const rawVerseData = verses.find(v => String(v.verse) === verseNumber)
+  const rawVerseData = verses.find(v => String((v as Record<string, unknown>).verse) === verseNumber)
 
   if (!rawVerseData) {
     return (
@@ -95,9 +96,9 @@ export default async function StudyVersePage({ params }: { params: Promise<{ tex
     )
   }
 
-  const title = textMetadata.chapterNames[chapterNumber] || `${textMetadata.name} - Chapter ${chapterNumber}`
+  const _title = textMetadata.chapterNames[chapterNumber] || `${textMetadata.name} - Chapter ${chapterNumber}`
   const scriptureName = textMetadata.name
-  const tagline = textMetadata.description
+  const _tagline = textMetadata.description
 
   const verseData = migrateToNVF(rawVerseData, scriptureName)
 

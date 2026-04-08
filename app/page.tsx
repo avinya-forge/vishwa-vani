@@ -22,7 +22,7 @@ export default function Home() {
 
   // Only show categories that have at least one available book
   const categories = stats.categories.filter((cat: string) =>
-    hierarchy.tree.some((t: any) => t.category === cat && t.available)
+    hierarchy.tree.some((t: unknown) => (t as Record<string, unknown>).category === cat && (t as Record<string, unknown>).available)
   )
 
   return (
@@ -77,7 +77,7 @@ export default function Home() {
       <section className="max-w-[1200px] mx-auto px-4 sm:px-6 pb-20">
         
         {categories.map((cat: string) => {
-          const books = hierarchy.tree.filter((t: any) => t.category === cat)
+          const books = hierarchy.tree.filter((t: unknown) => (t as Record<string, unknown>).category === cat)
           const catLabels: Record<string, string> = {
             itihas: 'Itihasa', upanishad: 'Upanishads',
             purana: 'Puranas', veda: 'Vedas', other: 'Other'
@@ -90,14 +90,14 @@ export default function Home() {
                 <h2 className="text-xl md:text-2xl font-serif font-black text-stone-900">{catLabels[cat] || cat}</h2>
                 <div className="flex-1 h-px bg-stone-100" />
                 <span className="text-xs font-bold text-stone-400">
-                  {books.filter((b: any) => b.available).length} available
+                  {books.filter((b: unknown) => (b as Record<string, unknown>).available).length} available
                 </span>
               </div>
 
               {/* Book cards grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-                {books.map((book: any) => (
-                  <BookCard key={book.slug} book={book} locale={locale} />
+                {books.map((book: unknown) => (
+                  <BookCard key={(book as Record<string, unknown>).slug as string} book={book as Record<string, unknown>} locale={locale} />
                 ))}
               </div>
             </div>
@@ -109,12 +109,12 @@ export default function Home() {
 }
 
 // ─── Reusable BookCard ────────────────────────────────────────────────────────
-function BookCard({ book, locale }: { book: any, locale: string }) {
+function BookCard({ book, locale }: { book: Record<string, unknown>, locale: string }) {
   const name = locale === 'hi' ? book.nameHi : locale === 'mr' ? book.nameMr : book.name
   const isAvailable = book.available
 
-  const parentBook = book.parent ? VEDIC_LIBRARY.find(b => b.slug === book.parent) : null
-  const childBooks = book.children ? book.children.map((slug: string) => VEDIC_LIBRARY.find(b => b.slug === slug)).filter(Boolean) : []
+  const parentBook = book.parent ? VEDIC_LIBRARY.find(b => b.slug === book.parent as string) : null
+  const childBooks = book.children ? (book.children as string[]).map((slug: string) => VEDIC_LIBRARY.find(b => b.slug === slug)).filter(Boolean) : []
 
   return (
     <div className={`group relative bg-white rounded-xl border border-stone-100 overflow-hidden transition-all duration-300 flex flex-col h-full 
@@ -127,7 +127,7 @@ function BookCard({ book, locale }: { book: any, locale: string }) {
         {/* Category + status badges */}
         <div className="flex items-center justify-between mb-3">
           <span className="text-[9px] font-bold uppercase tracking-widest text-stone-400 bg-stone-50 px-2 py-0.5 rounded-md">
-            {book.category}
+            {String(book.category)}
           </span>
           {isAvailable
             ? <span className="text-[9px] font-bold text-green-600 bg-green-50 px-2 py-0.5 rounded-md">Available</span>
@@ -136,31 +136,34 @@ function BookCard({ book, locale }: { book: any, locale: string }) {
         </div>
 
         {/* Title */}
-        <Link href={`/${book.slug}/1`} className="block mb-2">
+        <Link href={`/${book.slug as string}/1`} className="block mb-2">
           <h3 className="text-lg font-serif font-black text-stone-900 leading-tight group-hover:text-orange-700 transition-colors line-clamp-2">
-            {name}
+            {String(name)}
           </h3>
         </Link>
 
         {/* Description */}
         <p className="text-stone-500 text-xs leading-relaxed mb-4 line-clamp-3 flex-1">
-          {book.description}
+          {String(book.description)}
         </p>
 
         {/* Child texts (e.g. Bhagavad Gita within Mahabharata) */}
         {childBooks.length > 0 && (
           <div className="mb-4 space-y-1">
             <p className="text-[9px] font-bold uppercase tracking-widest text-stone-300 mb-1.5 mt-2">Includes</p>
-            {childBooks.map((child: any) => (
+            {childBooks.map((child: unknown) => {
+              const childObj = child as Record<string, unknown>
+              return (
               <Link
-                key={child.slug}
-                href={`/${child.slug}/1`}
+                key={childObj.slug as string}
+                href={`/${childObj.slug as string}/1`}
                 className="flex items-center justify-between p-2.5 rounded-lg bg-stone-50 hover:bg-orange-50 hover:text-orange-700 transition-all text-xs font-bold text-stone-600 border border-transparent hover:border-orange-100"
               >
-                {child.name}
+                {String(childObj.name)}
                 <svg className="w-3.5 h-3.5 opacity-40 group-hover:opacity-100 transition-opacity" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path d="M9 5l7 7-7 7" /></svg>
               </Link>
-            ))}
+              )
+            })}
           </div>
         )}
 
@@ -169,10 +172,10 @@ function BookCard({ book, locale }: { book: any, locale: string }) {
           <div className="mb-4">
             <p className="text-[9px] font-bold uppercase tracking-widest text-stone-300 mb-1.5">Part of</p>
             <Link
-              href={`/${parentBook.slug}/1`}
+              href={`/${parentBook.slug as string}/1`}
               className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-orange-50 hover:bg-orange-100 text-orange-700 transition-all text-xs font-bold border border-orange-200"
             >
-              {parentBook.name}
+              {parentBook.name as string}
               <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path d="M15 19l-7-7 7-7" /></svg>
             </Link>
           </div>
@@ -182,10 +185,10 @@ function BookCard({ book, locale }: { book: any, locale: string }) {
         <div className="flex items-center justify-between pt-3 border-t border-stone-50 mt-auto">
           <div>
             <div className="text-[9px] font-bold uppercase tracking-[0.2em] text-stone-300">Chapters</div>
-            <div className="text-lg font-serif font-black text-stone-900 leading-none mt-0.5">{book.totalChapters}</div>
+            <div className="text-lg font-serif font-black text-stone-900 leading-none mt-0.5">{String(book.totalChapters)}</div>
           </div>
           <Link
-            href={`/${book.slug}/1`}
+            href={`/${book.slug as string}/1`}
             className="flex items-center gap-1.5 px-4 py-2 bg-stone-900 group-hover:bg-orange-600 text-white text-[10px] uppercase tracking-wider font-bold rounded-lg transition-all shadow-sm"
           >
             Read <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>

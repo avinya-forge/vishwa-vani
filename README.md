@@ -2,7 +2,7 @@
 
 > **Vishwa-Vani** is a transcendent, multilingual, and highly performant digital sanctuary for exploring Vedic wisdom. This project aims to be the "Wikipedia for Vedas," providing an immersive experience for exploring Shlokas, Mantras, and Sanskrit definitions across languages—English, Hindi, and Marathi.
 
-[![Version](https://img.shields.io/badge/version-v0.8.0-orange.svg)](./docs/release-notes.md)
+[![Version](https://img.shields.io/badge/version-v0.9.4-orange.svg)](./docs/release-notes.md)
 [![Hosting](https://img.shields.io/badge/hosting-Vercel%20%7C%20Netlify%20%7C%20GitHub_Pages-blue.svg)](https://github.com/vishwa-vani/vishwa-vani)
 
 ---

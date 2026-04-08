@@ -1,7 +1,8 @@
 import sqlite3 from 'sqlite3';
 import path from 'path';
 import crypto from 'crypto';
-import { migrateToNVF, NVFFragment } from './nvf';
+import type { NVFFragment } from './nvf';
+import { migrateToNVF } from './nvf';
 
 // SECURE: Shared decryption key (PoC). In production, this would be obfuscated in WASM.
 const SECRET_KEY = Buffer.from('4eeeb3a1-5752-4f34-b49f-4eeb23d3210e', 'utf-8').slice(0, 32);
@@ -33,7 +34,7 @@ function decrypt(encryptedText: string): string {
 export async function getVersesFromLakeServer(textSlug: string, chapter: number, lakeFile: string = 'vedic-lake.db'): Promise<NVFFragment[]> {
   const dbPath = path.join(process.cwd(), 'public', lakeFile);
   
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve, _reject) => {
     const db = new sqlite3.Database(dbPath, sqlite3.OPEN_READONLY, (err) => {
       if (err) {
         console.error('SERVER LAKE: Connection error', err);
@@ -42,24 +43,25 @@ export async function getVersesFromLakeServer(textSlug: string, chapter: number,
     });
 
     const query = `SELECT content FROM verses WHERE text_slug = ? AND chapter = ? ORDER BY verse ASC`;
-    
+
     db.all(query, [textSlug, chapter], (err, rows) => {
       db.close();
       if (err) {
         console.error('SERVER LAKE: Query error', err);
         return resolve([]);
       }
-      
-      const fragments = rows.map((row: any) => {
+
+      const fragments = (rows as unknown[]).map((row: unknown) => {
+        const rowData = row as Record<string, unknown>
         try {
-          const decrypted = decrypt(row.content);
+          const decrypted = decrypt(rowData.content as string);
           const raw = JSON.parse(decrypted);
           return migrateToNVF(raw, textSlug);
         } catch (e) {
           console.error(`SERVER LAKE: JSON parse fail`, e);
           return null;
         }
-      }).filter(f => f !== null) as NVFFragment[];
+      }).filter((f: unknown) => f !== null) as NVFFragment[];
 
       resolve(fragments);
     });

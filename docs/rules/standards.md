@@ -1,4 +1,4 @@
-﻿# 🛠️ Vishwa-Vani: Standards, Architecture, and UI Template
+# 🛠️ Vishwa-Vani: Standards, Architecture, and UI Template
 
 This file is the single source of truth for standards, UI template requirements, and document policy.
 
@@ -33,68 +33,155 @@ This file is the single source of truth for standards, UI template requirements,
 - **Audit**: Run `python scripts/vishwa.py audit` before promotion.
 - **Build**: Use `npm run build`; deploy only from GOLD data.
 
-### Release Flow
-- Backlog → implementation → release notes.
-- No extra tracked documents are required.
+### SDLC Release Flow
+1. Pick the top unchecked task from `docs/planning/backlog.md`.
+2. Implement it. Run lint → build → test. Fix any failures before proceeding.
+3. Mark the task `[x]` in the backlog.
+4. Add a brief entry to `docs/release-notes.md` under the current version.
+5. After completing an entire epic: run coverage report, verify thresholds, update release notes with an epic-complete summary.
+6. No task is "done" until lint, build, and tests all pass.
 
-## 3. Coding Standards
-- Enable TypeScript strict mode.
-- Avoid `any` without documented justification.
-- File names: `lowercase-kebab-case.tsx`.
-- Component names: `PascalCase`.
-- Data hooks: `use-` prefix.
-- Keep components and logic small and testable.
-- Prefer vanilla JS/CSS or WASM for small tasks.
+### Stability Gate (STAB-608)
+- EPIC 7 (STABILITY) tasks STAB-601 through STAB-607 must be 100% complete before any new feature epics begin.
+- New feature work = EPIC 6, EPIC 9, EPIC 10, or any new APP-/LAB- tasks.
 
-## 4. UI Template Standard
-The Lean UI Template is the official UI standard.
+## 3. Coding Standards (Ultra-Lean)
 
-### Core rules
+### TypeScript
+- **Strict mode** (`strict: true`) is non-negotiable. Never disable.
+- **No `any`** without an explicit inline justification comment.
+- Prefer `unknown` for external/unvalidated data; narrow with type guards.
+- Use `interface` for object shapes, `type` for unions/aliases.
+- No unused variables or imports (ESLint will catch these).
+- `noUncheckedIndexedAccess` is recommended for array safety; enable when feasible.
+
+### Naming & File Organization
+- File names: `lowercase-kebab-case.tsx` / `.ts`
+- Component names: `PascalCase`
+- Hook names: `use-` prefix + `camelCase` (e.g., `useDebouncedSearch`)
+- Module-level constants: `SCREAMING_SNAKE_CASE`
+- Local constants: `camelCase`
+- One component per file, default export for pages/components.
+- Max ~300 lines per component file — extract when exceeded.
+- Max ~50 lines per function — extract helpers when exceeded.
+
+### React / Next.js Rules
+- `'use client'` only when browser APIs, state, or event handlers are genuinely needed.
+- Prefer Server Components and SSG by default.
+- No `useEffect` for data that can be fetched at build time (SSG).
+- All `localStorage` reads must happen inside `useEffect` to prevent hydration mismatches.
+- `key` props must be stable identifiers — never use array index for dynamic lists.
+- `console.log` is forbidden in committed code. Use `console.error` only for error logging.
+- No `TODO` comments in code — convert to backlog tasks.
+
+### API Routes
+- Validate all request body fields before processing.
+- Return consistent shape: `{ success: boolean, data?: T, message?: string }`.
+- Wrap all async logic in `try/catch`. Log errors with `console.error`.
+- No `TODO` comments — document stub status in code with a `// STUB:` comment + backlog reference.
+
+### Git Hygiene
+- Commit message format: `type(scope): description`
+  - Types: `feat`, `fix`, `chore`, `docs`, `test`, `refactor`, `perf`
+  - Example: `fix(study-client): enforce 2-author limit in toggle logic`
+- No stray `logs/`, `dumps/`, `tmp/`, or `.bak` files committed.
+- Remove all `console.log` calls before committing.
+
+## 4. UI Template Standard — Lean Reading Interface
+The Lean UI Template is the official UI standard for all scripture reading interfaces.
+
+### Core Rules
 - **Base layer**: Sanskrit + English meaning always visible.
-- **Commentary hidden by default**.
-- **Max 2 authors** selected at once.
-- **AI synthesis** includes meaning + up to 2 commentaries.
-- **Language filter** applies to commentary only.
+- **Commentary hidden by default** — user must opt-in by selecting an author.
+- **Max 2 authors** selected at once; selecting a 3rd replaces the oldest active author.
+- **AI synthesis** includes meaning + up to 2 commentaries regardless of UI selection.
+- **Language filter** applies to commentary only, not to the base layer.
 - **Responsive toolbar**: inline on desktop, stacked on mobile.
 - **Initial state**: `scholarSelection = []`, `languageSelection = 'all'`.
 
-### Expected behavior
-- Author selector uses button-style controls.
-- Selecting a third author replaces the oldest active author.
-- Commentary renders only with selected authors.
-- AI analysis is always available and uses current context.
-- User preferences persist via localStorage.
+### Expected Behavior
+- Author selector uses button-style controls (not dropdown).
+- Commentary renders only when at least one author is selected.
+- AI analysis is always available and uses the current context.
+- User preferences persist via `localStorage` (`vishwa_scholar_pref`, `vishwa_continue_reading`).
 
-### State management
-- `scholarSelection: string[]`
-- `languageSelection: string`
-- `synthesisMap: Record<string, {text:string; loading:boolean}>`
+### State Management
+```typescript
+scholarSelection: string[]          // max 2 items
+languageSelection: string           // 'all' | 'en' | 'hi' | 'mr'
+synthesisMap: Record<string, { text: string; loading: boolean }>
+```
 
-### Implementation expectations
-- Hide commentary when no authors are selected.
+### Implementation Expectations
+- Hide commentary when `scholarSelection.length === 0`.
 - Keep meaning visible on initial load.
-- Enforce the 2-author rule in toggle logic.
+- Enforce 2-author rule in toggle logic.
 - If UI template detail is needed, consult this section.
 
-## 7. Quality & Testing
-- **Textual hardening**: Sanskrit and transliteration must align.
-- **Hydration safety**: avoid browser-only logic during first render.
-- **Performance**: initial bundle should stay small.
-- **Schema validation**: CI verifies `data/` against NVF.
-- **Link integrity**: all internal shloka references resolve.
-- **Testing**: new work requires corresponding tests.
-- **Coverage target**: maintain at least 95% unit test coverage for core product code before greenlighting new feature epics.
-- **Stability gate**: existing product fix work and coverage remediation must complete before significant new feature development begins.
+## 5. Lint & Build Quality Gates (Mandatory Before Every Commit)
+
+```bash
+npm run lint    # Must exit 0 — zero ESLint errors or warnings configured as errors
+npm run build   # Must exit 0 — zero TypeScript errors, zero build errors
+npm test        # All tests must pass — zero failures
+```
+
+These three gates are **blocking**. No commit proceeds if any of them fail.
+
+### ESLint Configuration Requirements
+- `@next/eslint-plugin-next` recommended + core-web-vitals rules (active).
+- `@typescript-eslint` plugin with at minimum: `no-explicit-any`, `no-unused-vars`, `no-non-null-assertion`.
+- All rules configured as errors, not warnings, for blocking quality.
+
+### TypeScript Build Requirements
+- `npm run build` must report zero TypeScript errors.
+- Never use `// @ts-ignore` or `// @ts-nocheck` to suppress errors — fix the root cause.
+- `skipLibCheck: true` is acceptable for third-party types only.
+
+## 6. Quality & Testing Standards
+
+### Coverage Targets
+- **Enforced floor**: 80% statements, branches, functions, lines (via `jest.config.js` `coverageThreshold`).
+- **Goal**: 95% for core product paths: `StudyClient`, `SearchClient`, `VedicDataService`, API synthesis.
+- **Stability gate**: No new feature epics begin until core paths reach 80% floor.
+
+### Test Requirements
+- Every new component: render test + happy-path interaction test + at least one edge-case test.
+- Every new API route: valid input test + each invalid input case + error path test.
+- Every new utility function: unit tests for all code branches.
+- Test files live in `__tests__/` mirroring the source path.
+- Use `@testing-library/react` for component tests.
+- Mock `next/navigation`, `next-intl`, and `localStorage` in component tests.
+- No snapshot tests — use explicit assertions.
+- No mocking the module under test — only mock external dependencies.
+
+### Mock Policy
+- PoC/placeholder code must be either:
+  - Gated behind a feature flag, OR
+  - Labeled clearly in the UI with a `// STUB: [BACKLOG-TASK-ID]` comment, OR
+  - Replaced with a real implementation.
+- Simulated/hardcoded "mock" responses in production components are not acceptable for release.
+
+## 7. Data & Architecture Standards
+- **NVF compliance**: Sanskrit → Transliteration → Meaning → HI/MR commentary layers.
+- **Static-first**: SSG by default; client-side fetching only when unavoidable.
+- **Sharded data**: Large scriptures use chapter-level JSON in `data/`.
+- **Data service**: Always use `lib/data-service.ts` for data access — never bypass it.
+- **Hydration safety**: Avoid browser-only APIs (`localStorage`, `window`) during first render.
+- **Performance**: Initial bundle must stay small. No heavy libraries imported client-side without code splitting.
+- **Schema validation**: All `data/` files must pass NVF schema validation before use.
+- **Link integrity**: All internal shloka references must resolve.
 
 ## 8. Compliance & Legal
 - Use only CC0 or explicitly permitted translations.
-- Include `source_url` and `license_type` for author layers.
-- Clearly label AI-generated metadata.
+- Include `source_url` and `license_type` for all author commentary layers.
+- Clearly label AI-generated metadata as such in the data and UI.
 
 ## 9. Hygiene
 - Remove temporary files before merge.
 - No stray `logs/`, `dumps/`, `tmp/`, or `.bak` files.
-- Keep docs confined to the four active files.
+- Keep docs confined to the six active files listed in Section 1.
+- The `coverage/` directory is gitignored — do not commit coverage reports.
 
 ---
 # Book Integration Checklist (TMPL-903)
@@ -233,3 +320,4 @@ _This checklist supersedes any informal book onboarding notes. See `docs/rules/s
 ---
 
 _This consolidated standards file keeps the documentation set small while preserving the full implementation intent._
+_Last updated: 2026-04-07_

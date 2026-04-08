@@ -27,8 +27,8 @@ function useOnClickOutside(ref: React.RefObject<HTMLDivElement | null>, handler:
 }
 
 export default function Header() {
-  const t = useTranslations('nav')
-  const locale = useLocale()
+  const _t = useTranslations('nav')
+  const _locale = useLocale()
   const pathname = usePathname()
   const [showLibrary, setShowLibrary] = useState(false)
   const [showMobileMenu, setShowMobileMenu] = useState(false)
@@ -45,7 +45,7 @@ export default function Header() {
     if (saved) {
       try {
         setContinueReading(JSON.parse(saved))
-      } catch (e) {
+      } catch {
         // Ignore invalid data
       }
     }

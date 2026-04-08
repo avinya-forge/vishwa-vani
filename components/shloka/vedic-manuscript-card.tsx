@@ -18,9 +18,12 @@ export default function VedicManuscriptCard({ content, className = "" }: { conte
             <div className="absolute top-0 right-0 w-96 h-96 bg-orange-600/5 blur-[120px] rounded-full pointer-events-none -mr-48 -mt-48 transition-all group-hover/manuscript:scale-110 duration-[5000ms]" />
             
             <div className="relative z-10 space-y-8">
-                <div className="flex items-center gap-6">
-                    <div className="w-1.5 h-1.5 rounded-full bg-orange-600" />
-                    <span className="text-[11px] font-black uppercase tracking-[0.4em] text-stone-300">Cognitive Manuscript Synthesis</span>
+                <div className="flex items-center gap-4">
+                    <div className="flex items-center gap-2">
+                        <div className="w-1.5 h-1.5 rounded-full bg-orange-600" />
+                        <span className="text-[11px] font-black uppercase tracking-[0.4em] text-stone-300">Cognitive Manuscript Synthesis</span>
+                    </div>
+                    <span className="text-[9px] uppercase font-black tracking-wider text-orange-600 bg-orange-50/50 py-0.5 px-2 rounded-full border border-orange-200/50">PoC Fallback</span>
                 </div>
 
                 <div className="max-w-4xl">

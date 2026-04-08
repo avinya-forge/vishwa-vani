@@ -3,8 +3,10 @@
 
 // In a real environment: import { pipeline } from '@xenova/transformers';
 
-self.onmessage = async (event) => {
-  const { query, topK = 5 } = event.data;
+self.onmessage = async (event: unknown) => {
+  const data = (event as Record<string, unknown>).data as Record<string, unknown>
+  const _query = data.query as string
+  const topK = (data.topK || 5) as number
 
   try {
     // 1. Convert query to vector (Mock)
@@ -13,7 +15,7 @@ self.onmessage = async (event) => {
 
     // 2. Fetch SQLite DB (vedic-vectors.db)
     // 3. Compute cosine similarity against all 384d vectors
-    
+
     // MOCK RESPONSE to prove architecture
     const mockResults = [
       { id: 'bhagavad-gita_2_47', score: 0.941, slok: 'कर्मण्येवाधिकारस्ते मा फलेषु कदाचन' },
@@ -23,7 +25,7 @@ self.onmessage = async (event) => {
 
     self.postMessage({ status: 'success', results: mockResults });
 
-  } catch (error: any) {
-    self.postMessage({ status: 'error', error: error.message });
+  } catch (error: unknown) {
+    self.postMessage({ status: 'error', error: (error as Record<string, unknown>).message });
   }
 };

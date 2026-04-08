@@ -7,14 +7,15 @@
 
 import fs from 'fs';
 import path from 'path';
-import { VEDIC_LIBRARY, VedicText } from './texts';
+import type { VedicText } from './texts';
+import { VEDIC_LIBRARY } from './texts';
 import { getVersesFromLakeServer } from './server-lake';
 
 export interface EnrichedVerse {
   id: string;
   original: string;
   transliteration?: string;
-  layers: any[];
+  layers: unknown[];
   // AI-enriched fields
   aiContext?: {
     themes: string[];
@@ -49,7 +50,7 @@ export interface ChapterData {
 
 export class VedicDataService {
   private static instance: VedicDataService;
-  private dataCache = new Map<string, any>();
+  private dataCache = new Map<string, ChapterData>();
 
   static getInstance(): VedicDataService {
     if (!VedicDataService.instance) {
@@ -72,14 +73,14 @@ export class VedicDataService {
   ): Promise<ChapterData | null> {
     const cacheKey = `${textSlug}-${chapterNumber}-${options?.adhyaya || 0}`;
     if (this.dataCache.has(cacheKey)) {
-      return this.dataCache.get(cacheKey);
+      return this.dataCache.get(cacheKey) ?? null;
     }
 
     const textMetadata = VEDIC_LIBRARY.find(t => t.slug === textSlug);
     if (!textMetadata) return null;
 
     // Load raw verses
-    let verses: any[] = [];
+    let verses: unknown[] = [];
     if (textMetadata.storage === 'lake') {
       verses = await getVersesFromLakeServer(textSlug, chapterNumber, textMetadata.lakeFile);
     } else {
@@ -107,23 +108,24 @@ export class VedicDataService {
     return chapterData;
   }
 
-  private async loadFromJson(textSlug: string, chapterNumber: number, adhyaya?: number): Promise<any[]> {
+  private async loadFromJson(textSlug: string, chapterNumber: number, adhyaya?: number): Promise<unknown[]> {
     try {
       const manifestPath = path.join(process.cwd(), 'data', 'manifest.json');
-      const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
-      const bookManifest = manifest.books.find((b: any) => b.slug === textSlug);
+      const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8')) as Record<string, unknown>;
+      const bookManifest = (manifest.books as unknown[])?.find((b: unknown) => (b as Record<string, unknown>).slug === textSlug) as Record<string, unknown>;
 
       let shardFile = `${textSlug}-chapter-${chapterNumber}.json`;
 
       if (bookManifest?.shards) {
         if (textSlug === 'mahabharata' && adhyaya) {
-          const parvaShard = bookManifest.shards.find((s: any) =>
-            s.file === `parva-${chapterNumber}/adhyaya-${adhyaya}.json`
-          );
-          if (parvaShard) shardFile = parvaShard.file;
+          const parvaShard = (bookManifest.shards as unknown[])?.find((s: unknown) =>
+            (s as Record<string, unknown>).file === `parva-${chapterNumber}/adhyaya-${adhyaya}.json`
+          ) as Record<string, unknown>;
+          if (parvaShard) shardFile = parvaShard.file as string;
         } else {
-          const mappedShard = bookManifest.shards[chapterNumber - 1];
-          if (mappedShard) shardFile = mappedShard.file;
+          const shards = bookManifest.shards as Record<string, unknown>[];
+          const mappedShard = shards[chapterNumber - 1] as Record<string, unknown> | undefined;
+          if (mappedShard) shardFile = mappedShard.file as string;
         }
       }
 
@@ -145,18 +147,19 @@ export class VedicDataService {
     return [];
   }
 
-  private async enrichVerses(verses: any[], includeAI: boolean = false): Promise<EnrichedVerse[]> {
+  private async enrichVerses(verses: unknown[], includeAI: boolean = false): Promise<EnrichedVerse[]> {
     return verses.map(verse => {
+      const v = verse as Record<string, unknown>
       const enriched: EnrichedVerse = {
-        id: verse.id || verse.verse_id,
-        original: verse.original || verse.original_sanskrit,
-        transliteration: verse.transliteration,
-        layers: verse.layers || [],
+        id: (v.id || v.verse_id) as string,
+        original: (v.original || v.original_sanskrit) as string,
+        transliteration: v.transliteration as string | undefined,
+        layers: (v.layers || []) as unknown[],
         uiMetadata: {
           readingTime: this.calculateReadingTime(verse),
           complexityScore: this.calculateComplexity(verse),
-          hasCommentary: (verse.layers || []).some((l: any) => l.type === 'commentary'),
-          languageCount: this.countLanguages(verse.layers || [])
+          hasCommentary: ((v.layers as unknown[]) || []).some((l: unknown) => (l as Record<string, unknown>).type === 'commentary'),
+          languageCount: this.countLanguages((v.layers as unknown[]) || [])
         }
       };
 
@@ -202,28 +205,31 @@ export class VedicDataService {
   }
 
   // Helper methods for AI enrichment
-  private calculateReadingTime(verse: any): number {
-    const text = verse.original + (verse.transliteration || '') +
-                 (verse.layers || []).map((l: any) => l.content || '').join('');
-    return Math.max(1, Math.ceil(text.length / 200)); // Rough estimate: 200 chars per minute
+  private calculateReadingTime(verse: unknown): number {
+    const v = verse as Record<string, unknown>
+    const text = (v.original || '') + ((v.transliteration || '') as string) +
+                 ((v.layers as unknown[]) || []).map((l: unknown) => (l as Record<string, unknown>).content || '').join('');
+    return Math.max(1, Math.ceil(String(text).length / 200)); // Rough estimate: 200 chars per minute
   }
 
-  private calculateComplexity(verse: any): number {
+  private calculateComplexity(verse: unknown): number {
+    const v = verse as Record<string, unknown>
     let score = 0;
-    if (verse.original?.includes('ॐ')) score += 2; // Sacred symbols
-    if ((verse.layers || []).length > 3) score += 1; // Multiple commentaries
-    if (verse.transliteration?.length > 100) score += 1; // Long verse
+    if ((v.original as string)?.includes('ॐ')) score += 2; // Sacred symbols
+    if (((v.layers as unknown[]) || []).length > 3) score += 1; // Multiple commentaries
+    if ((v.transliteration as string)?.length > 100) score += 1; // Long verse
     return Math.min(10, Math.max(1, score));
   }
 
-  private countLanguages(layers: any[]): number {
-    const languages = new Set(layers.map(l => l.lang).filter(Boolean));
+  private countLanguages(layers: unknown[]): number {
+    const languages = new Set((layers || []).map((l: unknown) => (l as Record<string, unknown>).lang).filter(Boolean));
     return languages.size;
   }
 
-  private extractThemes(verse: any): string[] {
+  private extractThemes(verse: unknown): string[] {
+    const v = verse as Record<string, unknown>
     const themes: string[] = [];
-    const text = (verse.original + ' ' + (verse.layers || []).map((l: any) => l.content).join(' ')).toLowerCase();
+    const text = ((v.original || '') + ' ' + ((v.layers as unknown[]) || []).map((l: unknown) => (l as Record<string, unknown>).content).join(' ')).toLowerCase();
 
     if (text.includes('dharma') || text.includes('धर्म')) themes.push('Dharma');
     if (text.includes('karma') || text.includes('कर्म')) themes.push('Karma');
@@ -234,15 +240,17 @@ export class VedicDataService {
     return themes;
   }
 
-  private assessPhilosophicalDepth(verse: any): number {
-    const layers = verse.layers || [];
-    return Math.min(10, layers.length * 2 + (verse.original?.length > 50 ? 1 : 0));
+  private assessPhilosophicalDepth(verse: unknown): number {
+    const v = verse as Record<string, unknown>
+    const layers = (v.layers as unknown[]) || [];
+    return Math.min(10, layers.length * 2 + ((v.original as string)?.length > 50 ? 1 : 0));
   }
 
-  private findCrossReferences(verse: any): string[] {
+  private findCrossReferences(verse: unknown): string[] {
     // Simple cross-reference detection (can be enhanced)
+    const v = verse as Record<string, unknown>
     const references: string[] = [];
-    const text = verse.original?.toLowerCase() || '';
+    const text = (v.original as string)?.toLowerCase() || '';
 
     if (text.includes('krishna') || text.includes('कृष्ण')) references.push('Krishna');
     if (text.includes('arjuna') || text.includes('अर्जुन')) references.push('Arjuna');
@@ -251,15 +259,16 @@ export class VedicDataService {
     return references;
   }
 
-  private assessDifficulty(verse: any): 'beginner' | 'intermediate' | 'advanced' {
+  private assessDifficulty(verse: unknown): 'beginner' | 'intermediate' | 'advanced' {
     const complexity = this.calculateComplexity(verse);
     if (complexity <= 3) return 'beginner';
     if (complexity <= 7) return 'intermediate';
     return 'advanced';
   }
 
-  private analyzeEmotionalTone(verse: any): string {
-    const text = verse.original?.toLowerCase() || '';
+  private analyzeEmotionalTone(verse: unknown): string {
+    const v = verse as Record<string, unknown>
+    const text = (v.original as string)?.toLowerCase() || '';
     if (text.includes('fear') || text.includes('भय')) return 'contemplative';
     if (text.includes('love') || text.includes('प्रेम')) return 'devotional';
     if (text.includes('duty') || text.includes('कर्तव्य')) return 'ethical';

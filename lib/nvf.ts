@@ -61,45 +61,47 @@ export interface NVFFragment {
  * Migration Helper: Converts legacy GitaVerse format to NVF.
  * Ensures the system remains operational during the schema transition.
  */
-export function migrateToNVF(legacy: any, textSlug: string, fallbackChapter?: number): NVFFragment {
+export function migrateToNVF(legacy: unknown, textSlug: string, fallbackChapter?: number): NVFFragment {
+  const legacyData = legacy as Record<string, unknown>
   const AUTHOR_KEYS = ['siva', 'rams', 'chinmay', 'sankar', 'prabhu', 'tej', 'gambir', 'raman', 'abhyankar']
   const layers: FragmentLayer[] = []
 
-  const chapter = legacy.chapter || fallbackChapter || 0
-  const verse = legacy.verse || 0
-  const original = legacy.original || legacy.slok || ""
-  const transliteration = legacy.transliteration || ""
+  const chapter = (legacyData.chapter || fallbackChapter || 0) as number
+  const verse = (legacyData.verse || 0) as number
+  const original = (legacyData.original || legacyData.slok || "") as string
+  const transliteration = (legacyData.transliteration || "") as string
 
   AUTHOR_KEYS.forEach(key => {
-    if (legacy[key]) {
-      const item = legacy[key]
-      if (item.et) layers.push({ author: key, lang: 'en', type: 'translation', content: item.et })
-      if (item.ec) layers.push({ author: key, lang: 'en', type: 'commentary', content: item.ec })
-      if (item.ht) layers.push({ author: key, lang: 'hi', type: 'translation', content: item.ht })
-      if (item.hc) layers.push({ author: key, lang: 'hi', type: 'commentary', content: item.hc })
-      if (item.sc) layers.push({ author: key, lang: 'sa', type: 'commentary', content: item.sc })
+    if (legacyData[key]) {
+      const item = legacyData[key] as Record<string, unknown>
+      if (item.et) layers.push({ author: key, lang: 'en', type: 'translation', content: item.et as string })
+      if (item.ec) layers.push({ author: key, lang: 'en', type: 'commentary', content: item.ec as string })
+      if (item.ht) layers.push({ author: key, lang: 'hi', type: 'translation', content: item.ht as string })
+      if (item.hc) layers.push({ author: key, lang: 'hi', type: 'commentary', content: item.hc as string })
+      if (item.sc) layers.push({ author: key, lang: 'sa', type: 'commentary', content: item.sc as string })
     }
   })
 
   // Handle cases where layers are already in the new format
-  if (legacy.layers && Array.isArray(legacy.layers)) {
-    legacy.layers.forEach((l: any) => {
-      if (l.author && l.content) {
-        layers.push(l as FragmentLayer)
+  if (legacyData.layers && Array.isArray(legacyData.layers)) {
+    (legacyData.layers as unknown[]).forEach((l: unknown) => {
+      const layer = l as Record<string, unknown>
+      if (layer.author && layer.content) {
+        layers.push(layer as unknown as FragmentLayer)
       }
     })
   }
 
   return {
-    id: legacy.id || `${textSlug}_${chapter}_${verse}`,
+    id: (legacyData.id as string) || `${textSlug}_${chapter}_${verse}`,
     text_slug: textSlug,
     chapter,
     verse,
     original,
     transliteration,
-    anvaya: legacy.anvaya || legacy.word_meanings || undefined,
+    anvaya: (legacyData.anvaya || legacyData.word_meanings) as AnvayaToken[] | undefined,
     layers,
-    ai_metadata: legacy.ai_metadata || {
+    ai_metadata: (legacyData.ai_metadata as Record<string, unknown>) || {
         topics: []
     }
   }

@@ -1,14 +1,10 @@
 'use client'
 
 import React, { useState } from 'react'
-import { AnvayaToken } from '@/lib/nvf'
-import { useTranslations } from 'next-intl'
+import type { AnvayaToken } from '@/lib/nvf'
 
 export default function VedicExplainShell({ tokens, lang = 'en' }: { tokens: AnvayaToken[], lang?: 'en'|'hi'|'mr' }) {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
-  
-  // As a fallback for translation keys if needed.
-  // const t = useTranslations('study')
 
   if (!tokens || tokens.length === 0) return null
 

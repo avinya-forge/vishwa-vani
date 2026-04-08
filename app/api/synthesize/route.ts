@@ -41,10 +41,11 @@ export async function POST(request: Request) {
       )
     }
 
-    const validTexts = contextTexts
-      .filter((t: unknown) => t && typeof t === 'string')
-      .map((t: unknown) => (t as string).trim())
-      .filter((t: string) => t.length > 0)
+    // STUB: pending LLM integration. Fallback concatenation — not a real LLM synthesis engine.
+    // Pending integration with a real AI inference service (Claude API or local model).
+    const validTexts = (contextTexts as unknown[])
+      .filter((t): t is string => typeof t === 'string' && (t).trim().length > 0)
+      .map((t) => (t).trim())
 
     if (validTexts.length === 0) {
       return NextResponse.json(
