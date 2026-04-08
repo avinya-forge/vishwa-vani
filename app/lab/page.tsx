@@ -2,9 +2,13 @@ import PranayamaTimer from '@/components/lab/pranayama-timer'
 import AkshauhiniCalc from '@/components/lab/akshauhini-calc'
 import VedicInstruments from '@/components/lab/vedic-instruments'
 import KarmaYogaSimulator from '@/components/lab/karma-yoga-simulator'
+<<<<<<< HEAD
 import JnanaYogaExplorer from '@/components/lab/jnana-yoga-explorer'
 import BhaktiYogaCompass from '@/components/lab/bhakti-yoga-compass'
 import DharmaDecisionMatrix from '@/components/lab/dharma-decision-matrix'
+import TimeConsciousnessWheel from '@/components/lab/time-consciousness-wheel'
+import DivineQualitiesAssessment from '@/components/lab/divine-qualities-assessment'
+import MeditationStateTracker from '@/components/lab/meditation-state-tracker'
 
 export default function VedicLabPage() {
   return (
@@ -42,15 +46,12 @@ export default function VedicLabPage() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-8">
-            <div className="lg:col-span-1">
-               <JnanaYogaExplorer />
-            </div>
-            <div className="lg:col-span-1">
-               <BhaktiYogaCompass />
-            </div>
-            <div className="lg:col-span-1">
-               <DharmaDecisionMatrix />
-            </div>
+            <JnanaYogaExplorer />
+            <BhaktiYogaCompass />
+            <DharmaDecisionMatrix />
+            <TimeConsciousnessWheel />
+            <DivineQualitiesAssessment />
+            <MeditationStateTracker />
         </div>
       </div>
     </main>
