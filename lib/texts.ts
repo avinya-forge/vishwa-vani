@@ -146,7 +146,6 @@ export const VEDIC_LIBRARY: VedicText[] = [
       '18': 'मोक्षसंन्यासयोग — संन्यास आणि मोक्ष',
     },
   },
-  // --- PLACEHOLDER: Future texts to be imported ---
   {
     slug: 'isha-upanishad',
     dataPrefix: 'isha_upanishad',
@@ -158,7 +157,7 @@ export const VEDIC_LIBRARY: VedicText[] = [
     description: 'One of the shortest and most profound Upanishads. 18 verses addressing the nature of the Self and the universe.',
     category: 'upanishad',
     available: true,
-    storage: 'lake',
+    storage: 'json',
     chapterNames: { '1': 'Isha Upanishad — Complete Text' },
     chapterNamesHi: { '1': 'ईशावास्योपनिषद् — पूर्ण पाठ' },
     chapterNamesMr: { '1': 'ईशावास्योपनिषद् — पूर्ण पाठ' },

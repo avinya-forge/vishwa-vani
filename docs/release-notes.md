@@ -1,6 +1,26 @@
 # 🚀 Vishwa-Vani: Unified Release Archive
 
-*Current Version*: v1.0.0 (Stability Gate Cleared + Feature Sprint)
+*Current Version*: v1.1.0 (Yoga Apps Sprint + Isha Upanishad Rollout)
+
+---
+
+## [1.1.0] - 2026-04-08 (Yoga Apps Sprint + Isha Upanishad Rollout)
+
+### ✨ Added
+- **`components/lab/jnana-yoga-explorer.tsx`** (APP-705): Self-inquiry tool — 4 Neti Neti scenarios discriminating Kshetra (field) from Kshetrajna (witness-Self); Gita Ch. 13 framework; score + guidance screen.
+- **`components/lab/bhakti-yoga-compass.tsx`** (APP-706): Devotion assessment — 4 bhakti scenarios testing unconditional surrender vs ego-driven practice; Gita Ch. 12 daivi qualities; result with contextual guidance.
+- **`components/lab/dharma-decision-matrix.tsx`** (APP-707): Ethics tool — 4 professional dilemmas applying Gita 2 & 16 daivi/asuri discrimination; truthfulness, fearlessness, accountability themes.
+- **`__tests__/components-lab-apps.test.ts`**: 7 registry tests for APP-705/706/707 — available flag, chapters, topics, getAppsForContext filtering.
+
+### 🔧 Changed
+- **`lib/vedic-labs-registry.ts`**: Marked `jnana-yoga-explorer`, `bhakti-yoga-compass`, `dharma-decision-matrix` as `available: true`; added `bhakti-yoga-compass` entry (Gita Ch. 12, bhakti topics).
+- **`app/lab/page.tsx`**: Added second grid row with JnanaYogaExplorer, BhaktiYogaCompass, DharmaDecisionMatrix.
+- **`lib/texts.ts`** (TMPL-904): Isha Upanishad changed from `storage: 'lake'` to `storage: 'json'` — now served from `data/3-gold/isha-upanishad/` via standard `loadFromJson` path; route `/isha-upanishad/1` live.
+- **`components/shloka/study-client.tsx`** (UI-701): Removed unused `defaultScholar` variable (lint fix). All lean template rules verified: `scholarSelection=[]` default, max 2 scholars, commentary hidden until selection, `languageSelection='all'`.
+- **`tsconfig.json`**: Added `skills` and `.agents` to exclude list — prevents superpowers/caveman skill example files from polluting tsc.
+
+### 📊 Tests
+- 86 tests passing across 10 suites (up from 79/9)
 
 ---
 

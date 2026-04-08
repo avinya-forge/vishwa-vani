@@ -150,8 +150,6 @@ export default function StudyClient({
     return true
   }
 
-  // Default to first available non-none scholar
-  const defaultScholar = availableScholars.find(s => s !== 'none') || 'none'
   const defaultLanguage = 'all'
 
   const [scholarSelection, setScholarSelection] = useState<string[]>([])
