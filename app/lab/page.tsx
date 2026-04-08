@@ -2,7 +2,6 @@ import PranayamaTimer from '@/components/lab/pranayama-timer'
 import AkshauhiniCalc from '@/components/lab/akshauhini-calc'
 import VedicInstruments from '@/components/lab/vedic-instruments'
 import KarmaYogaSimulator from '@/components/lab/karma-yoga-simulator'
-<<<<<<< HEAD
 import JnanaYogaExplorer from '@/components/lab/jnana-yoga-explorer'
 import BhaktiYogaCompass from '@/components/lab/bhakti-yoga-compass'
 import DharmaDecisionMatrix from '@/components/lab/dharma-decision-matrix'

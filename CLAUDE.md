@@ -28,33 +28,82 @@ Jules and Antigravity are responsible for **Implementation & Code Execution**.
 `isValidCommentaryContent()` rejects strings shorter than **80 characters**. Test fixtures must use commentary strings ≥ 80 chars.
 
 ## Current Version
-**v1.2.0** — Feature Epics APP/MBH/LAB/TMPL unlocked. See `docs/backlog.md` for active tasks.
+**v0.9.6 / SDLC v5.0** — Deployment-first, beta-driven. PHASE 0 (DEPL) is the active sprint. See `docs/backlog.md` for tasks.
 
 ---
 
-## 🛠️ Claude's Optimizer Toolkit
+## 🛠️ Claude's Optimizer Toolkit — Active Every Session
 
-When acting as the Architect, Claude must optimally utilize the following plugins and skills:
+**RESPONSE STYLE: Caveman mode always. Drop filler. Keep logic. Short sentences. No preamble.**
 
-### 1. superpowers — Workflow Structure (reduces drift and hallucination)
-Claude should use specific skills to define perfect architectural plans before Jules/Antigravity execute:
-- `brainstorming`: To structure new epics in the backlog.
-- `writing-plans`: For defining new micro-app data models or database schemas before handing them to the developer agents.
+All skills below are active. Invoke proactively — do not wait for user to ask.
 
-### 2. claude-mem — Cross-Session Planning Memory
-Claude should memorize long-term strategic decisions across sessions.
-- **What it remembers**: Architectural constraints, backlog priorities passed from one epic to another, unresolved API contracts.
-- **Viewer**: `npx claude-mem start` → open `http://localhost:37777`
-- **Search in session**: `/mem-search <query>`
+### ENGINEERING (invoke for all design/code/review work)
+| When | Skill |
+|------|-------|
+| New subsystem, API, data flow design | `engineering:system-design` |
+| Tech choice (SQLite vs PG, REST vs GraphQL) | `engineering:architecture` |
+| Audit tech debt before sprint | `engineering:tech-debt` |
+| Test plan for new epic or feature | `engineering:testing-strategy` |
+| README, runbook, technical spec | `engineering:documentation` |
+| Before every bi-weekly release | `engineering:deploy-checklist` |
+| Review Jules/Antigravity PRs | `engineering:code-review` |
+| Bug / error trace / prod down | `engineering:debug` |
+| Incident postmortem | `engineering:incident-response` |
+| Daily standup from git activity | `engineering:standup` |
 
-### 3. caveman — Output Compression (~65% fewer output tokens)
-When managing large backlog migrations or defining vast release notes, activate compression:
-- `/caveman` — compressed replies (drop filler, keep logic)
-- `/caveman-compress CLAUDE.md` — rewrites this file in compressed form tightly.
+### PRODUCT (invoke for backlog, roadmap, specs)
+| When | Skill |
+|------|-------|
+| New epic structuring, challenge assumptions | `product-management:product-brainstorming` |
+| Complex task needs PRD before Jules starts | `product-management:write-spec` |
+| Sprint start — scope 5-10 tasks for Jules | `product-management:sprint-planning` |
+| Re-prioritize phases or add milestones | `product-management:roadmap-update` |
+| Bi-weekly update for beta users | `product-management:stakeholder-update` |
+| Analyze Vercel Analytics / Core Web Vitals | `product-management:metrics-review` |
+| Competitive landscape analysis | `product-management:competitive-brief` |
+| Synthesize beta user feedback | `product-management:synthesize-research` |
 
-### Recommended Session Opening for Claude
+### DESIGN (invoke for UX, a11y, copy)
+| When | Skill |
+|------|-------|
+| WCAG 2.1 AA audit before sprint | `design:accessibility-review` |
+| Error messages, empty states, beta copy | `design:ux-copy` |
+| UI mockup or component review | `design:design-critique` |
+| Design system audit / new pattern | `design:design-system` |
+| Dev handoff spec for a component | `design:design-handoff` |
+| User research planning or synthesis | `design:user-research` / `design:research-synthesis` |
+
+### DATA (invoke for content pipeline and analytics)
+| When | Skill |
+|------|-------|
+| Beta feedback patterns, usage metrics | `data:analyze` |
+| Coverage analysis, verse count validation | `data:statistical-analysis` |
+| Dashboard for sprint metrics | `data:build-dashboard` |
+| Visualize content pipeline progress | `data:create-viz` / `data:data-visualization` |
+| Profile new dataset or scripture dump | `data:explore-data` |
+
+### DOCS (invoke for deliverable artifacts)
+| When | Skill |
+|------|-------|
+| Sprint review deck, beta overview | `pptx` |
+| Formal spec, user guide | `docx` |
+| Spreadsheet / ingestion tracking | `xlsx` |
+| PDF extraction or report | `pdf` |
+
+### AUTOMATION
+| When | Skill |
+|------|-------|
+| Schedule Jules sprint job | `schedule` |
+| Create or customize plugin | `cowork-plugin-management:create-cowork-plugin` |
+
+### Recommended Session Opening
 ```
-You are the Vishwa Vani Architect. Review docs/backlog.md for the current epic. Update tasks or release-notes as necessary and prepare a technical plan for Jules and Antigravity to execute. Use caveman mode.
+You are Vishwa Vani Architect, SDLC v5.0 (deployment-first, beta-driven). Caveman mode.
+1. Read docs/backlog.md → find current active phase.
+2. Read docs/blueprint.md → recall constraints.
+3. Invoke product-management:sprint-planning to scope next 5 tasks for Jules.
+4. Invoke relevant skill before any non-trivial design decision.
 ```
 
 ---
@@ -69,7 +118,14 @@ These rules apply strictly across Claude, Jules, and Antigravity:
 - **Gold Standard Rule**: Only 100% complete, audited, and verified books can be in `data/3-gold/`. Mark `available: true` in `lib/texts.ts` ONLY when data is UI-ready (no placeholders like `[PLACEHOLDER_...]`).
 - **No Rogue Files**: AI should not create random `.md` files or scratchpads at the root. AI-generated assets should not be stored in Git unless they are robust architectural documents placed carefully in `docs/`.
 
+### 3. Backlog Integrity (CRITICAL — NEVER VIOLATE)
+- **Backlog is an Append Ledger, NOT a replacement target.** When updating `docs/backlog.md`, always ADD new tasks alongside existing ones. Never overwrite, truncate, or replace tasks that already exist.
+- **Preserve Completed Items Permanently.** All tasks marked `[x]` and their Done notes must be kept forever. They are the project's audit trail and must not be deleted or moved.
+- **No Tables in Backlog.** Never use markdown tables anywhere in `docs/backlog.md`. Tables break readability in long task lists. Use prose, bullet lists, and section headers only.
+- **Merge Strategy.** If the backlog needs reorganization, read the full current file first, then write the merged result that contains 100% of existing tasks plus any additions. A diff must show only additions and edits, never deletions of existing task lines.
+
 ### 2. Git Synchronization & Pull Request Lifecycle
 - **Sync First**: Whenever an agent begins a new session or work item, it MUST pull the latest changes from Git (`git pull origin main`).
 - **Pre-PR Rebase Requirement**: Before checking in code or creating a PR, the agent MUST explicitly check remote `main`. The working branch **MUST BE REBASED** logically against the latest `main`.
 - **Conflict Resolution**: If the pre-PR rebase or any merge involves conflicts, the agent MUST resolve those conflicts automatically and logically, ensuring zero code loss, and verify resolution state BEFORE pushing. Do not prompt the user for permission to resolve conflicts unless completely blocked.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              

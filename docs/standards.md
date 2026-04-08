@@ -2,28 +2,29 @@
 
 This file is the single source of truth for standards, UI template requirements, and document policy.
 
-## 📁 Active Documentation Set
-- `README.md` — Vision and Pulse-Table.
+## 📁 Active Documentation Set (Flat — all files directly in docs/)
+- `README.md` — Vision and project overview.
 - `docs/vision.md` — Strategic direction and product intent.
-- `docs/planning/backlog.md` — The single active backlog and roadmap.
+- `docs/backlog.md` — The single active backlog and roadmap (append-only ledger).
 - `docs/release-notes.md` — Release history and completed work.
-- `docs/architecture/blueprint.md` — Architectural principles and API expectations.
-- `docs/rules/standards.md` — Standards, UI template requirements, and document policy.
+- `docs/blueprint.md` — Architectural principles, zero-cost deployment, API expectations.
+- `docs/standards.md` — Standards, UI template requirements, and document policy (this file).
+- `docs/jules-prompt.md` — Schedulable Jules execution prompt for sprint automation.
 
-> If UI template details are required, use the UI Template section in this file; no separate UI template document is required.
+> **FLAT DOCS RULE**: All documentation lives directly in `docs/`. No subdirectories (`docs/planning/`, `docs/architecture/`, `docs/rules/`) are permitted. If UI template details are needed, use the UI Template section in this file.
 
 ---
 
 ## 1. Document Policy
-- Only six active docs are tracked in the documentation set.
-- New documentation may be added only by explicit approval.
-- Hierarchical SSOT: `README.md` (Vision) > `docs/architecture/blueprint.md` (Blueprints) > `docs/rules/standards.md`
-- Mandatory Trifecta: `README.md`, `docs/planning/backlog.md`, and `docs/release-notes.md` must exist.
-- Planning lives in `docs/planning/backlog.md`.
+- Seven active docs are tracked in the documentation set.
+- New documentation may be added only by explicit approval from Claude (The Architect).
+- Hierarchical SSOT: `README.md` (Vision) > `docs/blueprint.md` (Architecture) > `docs/standards.md` (Process)
+- Mandatory Trifecta: `README.md`, `docs/backlog.md`, and `docs/release-notes.md` must exist.
+- Planning lives in `docs/backlog.md` — it is an append-only ledger; never overwrite or truncate.
 - Completed work is recorded in `docs/release-notes.md`.
 - Vision stays in `docs/vision.md`.
-- Architecture stays in `docs/architecture/blueprint.md`.
-- Standards and process rules live in `docs/rules/standards.md`.
+- Architecture stays in `docs/blueprint.md`.
+- Standards and process rules live in `docs/standards.md` (this file).
 
 ## 2. Development Process
 ## 2. Development Process
@@ -42,7 +43,7 @@ Vishwa-Vani follows a strict three-tier data pipeline. Data must meet 100% of th
 - **Verification**: Spot-check 5% of verses against canonical editions.
 
 ### SDLC Release Flow
-1. Pick the top unchecked task from `docs/planning/backlog.md`.
+1. Pick the top unchecked task from `docs/backlog.md`.
 2. Implement it. Run lint → build → test. Fix any failures before proceeding.
 3. Mark the task `[x]` in the backlog.
 4. Add a brief entry to `docs/release-notes.md` under the current version.
@@ -325,9 +326,9 @@ This checklist is the authoritative gate list for onboarding any new book into V
 
 ---
 
-_This checklist supersedes any informal book onboarding notes. See `docs/rules/standards.md` §4 for the Lean UI Template rules._
+_This checklist supersedes any informal book onboarding notes. See `docs/standards.md` §4 for the Lean UI Template rules._
 
 ---
 
 _This consolidated standards file keeps the documentation set small while preserving the full implementation intent._
-_Last updated: 2026-04-07_
+_Last updated: 2026-04-09_

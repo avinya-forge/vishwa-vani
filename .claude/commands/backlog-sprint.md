@@ -10,7 +10,7 @@ Complete at least **10 backlog tasks** end-to-end: implemented, tested, lint-cle
 
 ## Step 0 — Plan the Sprint
 
-1. Read `docs/planning/backlog.md` in full.
+1. Read `docs/backlog.md` in full.
 2. Identify the next pending `[ ]` tasks that:
    - Are **not gated** by incomplete prerequisite tasks (check STAB-608 and any explicit gating notes)
    - Are **concrete to implement** (not pure audit/planning tasks — those count only if they produce a code or doc artefact)
