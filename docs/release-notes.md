@@ -1,26 +1,30 @@
-# 🚀 Vishwa-Vani: Unified Release Archive
-
-*Current Version*: v1.1.0 (Yoga Apps Sprint + Isha Upanishad Rollout)
+# 🚀 Vishwa-Vani: Unified Release Archive*Current Version*: v1.2.0 (Labs Expansion Sprint 2 + Isha Upanishad Rollout)
 
 ---
 
-## [1.1.0] - 2026-04-08 (Yoga Apps Sprint + Isha Upanishad Rollout)
+## [1.2.0] - 2026-04-08 (Labs Expansion Sprint 2 + Isha Upanishad Rollout)
 
 ### ✨ Added
 - **`components/lab/jnana-yoga-explorer.tsx`** (APP-705): Self-inquiry tool — 4 Neti Neti scenarios discriminating Kshetra (field) from Kshetrajna (witness-Self); Gita Ch. 13 framework; score + guidance screen.
 - **`components/lab/bhakti-yoga-compass.tsx`** (APP-706): Devotion assessment — 4 bhakti scenarios testing unconditional surrender vs ego-driven practice; Gita Ch. 12 daivi qualities; result with contextual guidance.
 - **`components/lab/dharma-decision-matrix.tsx`** (APP-707): Ethics tool — 4 professional dilemmas applying Gita 2 & 16 daivi/asuri discrimination; truthfulness, fearlessness, accountability themes.
+- **`components/lab/time-consciousness-wheel.tsx`** (APP-708): 6 Vedic time scales from Nimesha to Brahma's lifespan with expandable descriptions; 3-question cosmology quiz on Gita 8 & 10 teachings.
+- **`components/lab/divine-qualities-assessment.tsx`** (APP-709): Self-rate 16 qualities (12 daivi + 4 asuri from Gita 16); visual score bars; Gita 16.5 contextual teaching in result screen.
+- **`components/lab/meditation-state-tracker.tsx`** (APP-712): Daily mind-state check-in (Kshipta → Nirodha); practice guidance per state; persistent session log (localStorage, last 10 sessions).
+- **`components/shloka/reading-progress.tsx`** (MBH-205): Progress bar + mark-read button + bookmark add/remove with deep links; `useReadingProgress` hook exportable for any page.
 - **`__tests__/components-lab-apps.test.ts`**: 7 registry tests for APP-705/706/707 — available flag, chapters, topics, getAppsForContext filtering.
+- **`__tests__/components-lab-apps-2.test.ts`**: 7 registry + export tests for APP-708/709/712 and ReadingProgress.
 
 ### 🔧 Changed
-- **`lib/vedic-labs-registry.ts`**: Marked `jnana-yoga-explorer`, `bhakti-yoga-compass`, `dharma-decision-matrix` as `available: true`; added `bhakti-yoga-compass` entry (Gita Ch. 12, bhakti topics).
-- **`app/lab/page.tsx`**: Added second grid row with JnanaYogaExplorer, BhaktiYogaCompass, DharmaDecisionMatrix.
+- **`lib/vedic-labs-registry.ts`**: Added 6 new entries (jnana-yoga-explorer, bhakti-yoga-compass, dharma-decision-matrix, time-consciousness-wheel, divine-qualities-assessment, meditation-state-tracker) all `available: true`.
+- **`app/lab/page.tsx`**: Added second grid row with all 6 new Yoga/Labs apps.
 - **`lib/texts.ts`** (TMPL-904): Isha Upanishad changed from `storage: 'lake'` to `storage: 'json'` — now served from `data/3-gold/isha-upanishad/` via standard `loadFromJson` path; route `/isha-upanishad/1` live.
+- **`components/lab/pranayama-timer.tsx`** (LAB-806): Added 4 technique presets (Box/Relaxing/Energizing/4-7-8), custom ratio control (1-16s per phase), round counter, elapsed session timer, and reset button.
 - **`components/shloka/study-client.tsx`** (UI-701): Removed unused `defaultScholar` variable (lint fix). All lean template rules verified: `scholarSelection=[]` default, max 2 scholars, commentary hidden until selection, `languageSelection='all'`.
 - **`tsconfig.json`**: Added `skills` and `.agents` to exclude list — prevents superpowers/caveman skill example files from polluting tsc.
 
 ### 📊 Tests
-- 86 tests passing across 10 suites (up from 79/9)
+- 93 tests passing across 11 suites (up from 79 tests, 9 suites)BH-205 reading progress — v1.2.0)
 
 ---
 
