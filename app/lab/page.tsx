@@ -2,6 +2,9 @@ import PranayamaTimer from '@/components/lab/pranayama-timer'
 import AkshauhiniCalc from '@/components/lab/akshauhini-calc'
 import VedicInstruments from '@/components/lab/vedic-instruments'
 import KarmaYogaSimulator from '@/components/lab/karma-yoga-simulator'
+import TimeConsciousnessWheel from '@/components/lab/time-consciousness-wheel'
+import DivineQualitiesAssessment from '@/components/lab/divine-qualities-assessment'
+import MeditationStateTracker from '@/components/lab/meditation-state-tracker'
 
 export default function VedicLabPage() {
   return (
@@ -36,6 +39,12 @@ export default function VedicLabPage() {
                <VedicInstruments />
                <KarmaYogaSimulator />
             </div>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-8">
+            <TimeConsciousnessWheel />
+            <DivineQualitiesAssessment />
+            <MeditationStateTracker />
         </div>
       </div>
     </main>

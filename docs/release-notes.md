@@ -1,6 +1,26 @@
 # 🚀 Vishwa-Vani: Unified Release Archive
 
-*Current Version*: v1.0.0 (Stability Gate Cleared + Feature Sprint)
+*Current Version*: v1.2.0 (Labs Expansion Sprint 2)
+
+---
+
+## [1.2.0] - 2026-04-08 (Labs Expansion Sprint 2)
+
+### ✨ Added
+- **`components/lab/time-consciousness-wheel.tsx`** (APP-708): 6 Vedic time scales from Nimesha to Brahma's lifespan with expandable descriptions; 3-question cosmology quiz on Gita 8 & 10 teachings.
+- **`components/lab/divine-qualities-assessment.tsx`** (APP-709): Self-rate 16 qualities (12 daivi + 4 asuri from Gita 16); visual score bars; Gita 16.5 contextual teaching in result screen.
+- **`components/lab/meditation-state-tracker.tsx`** (APP-712): Daily mind-state check-in (Kshipta → Nirodha); practice guidance per state; persistent session log (localStorage, last 10 sessions).
+- **`components/shloka/reading-progress.tsx`** (MBH-205): Progress bar + mark-read button + bookmark add/remove with deep links; `useReadingProgress` hook exportable for any page.
+- **`__tests__/components-lab-apps-2.test.ts`**: 7 registry + export tests for APP-708/709/712 and ReadingProgress.
+
+### 🔧 Changed
+- **`components/lab/pranayama-timer.tsx`** (LAB-806): Added 4 technique presets (Box/Relaxing/Energizing/4-7-8), custom ratio control (1-16s per phase), round counter, elapsed session timer, and reset button.
+- **`lib/vedic-labs-registry.ts`**: Added 3 new entries (time-consciousness-wheel, divine-qualities-assessment, meditation-state-tracker) all `available: true`.
+- **`app/lab/page.tsx`**: Second row of 3 lab apps (TimeConsciousnessWheel, DivineQualitiesAssessment, MeditationStateTracker).
+- **`tsconfig.json`**: Added `skills` and `.agents` to exclude list.
+
+### 📊 Tests
+- 86 tests passing across 10 suites (+ 7 new registry/export tests)
 
 ---
 

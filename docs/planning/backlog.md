@@ -61,9 +61,15 @@ Every new book follows this 5-phase integration process:
 - [x] **[APP-702] Vedic Labs Registry**: Build a registry that maps each educational tool to its relevant book, chapter, adhyaya, and verse context so users can discover apps from the reading experience. **Done**: `lib/vedic-labs-registry.ts` — 10 app entries, `getAppsForContext()` and `getAppsByTopics()` helpers; 12 unit tests.
 - [x] **[APP-703] Verse-to-App Linking**: Surface optional micro-app links on verse cards so readers can immediately use interactive tools that relate to the verse theme. **Done**: `components/shloka/verse-app-links.tsx` — renders contextual app pills per verse; wired into `StudyClient`; 5 unit tests.
 - [x] **[APP-704] Karma Yoga Simulator**: Interactive tool for practicing detached action (Ch. 3).
-- [ ] **[BATCH-APP] Micro-Apps Expansion**: Build Jnana Yoga Explorer (Ch.13), Bhakti Compass (Ch.12), Dharma Matrix (Ch.2,16), Time Wheel (Ch.8,10), Qualities Assessment (Ch.16), Sankhya Visualizer (Ch.13), Cosmic Vision (Ch.11), Meditation Tracker (Ch.6), and Moksha Navigator (Ch.8,12,13).
+- [x] **[APP-708] Time Consciousness Wheel**: Visualize Vedic time cycles from Gita 8 & 10. **Done**: `components/lab/time-consciousness-wheel.tsx` — 6 time scales (Nimesha to Brahma lifespan), 3-question cosmology quiz; registered available (ch 8 & 10).
+- [x] **[APP-709] Divine Qualities Assessment**: Self-evaluation of daivi vs asuri qualities from Gita 16. **Done**: `components/lab/divine-qualities-assessment.tsx` — 16 qualities, 1-5 rating, score bars; registered available (ch 16).
+- [ ] **[APP-710] Sankhya Philosophy Visualizer**: Interactive Sankhya concept explorer from Gita 13.
+- [ ] **[APP-711] Cosmic Vision Simulator**: Universal form simulation from Gita 11.
+- [x] **[APP-712] Meditation State Tracker**: Track dhyana yoga states from Gita 6. **Done**: `components/lab/meditation-state-tracker.tsx` — 5 mind states (Kshipta→Nirodha), daily check-in, practice guidance, session log; registered available (ch 6).
+- [ ] **[APP-713] Moksha Path Navigator**: Liberation path journey from Gita 8, 12, 13.
 - [x] **[LAB-801] UI Theme Consistency**: Resolve light/dark theme inconsistency in lab components.
-- [ ] **[BATCH-LAB] Vedic Lab Refinements**: Implement real algorithms for Chhanda Analyzer, Grammar Tokenizer, Astro Explorer, add audio for Vedic instruments, and enhance Pranayama tracking.
+- [x] **[LAB-806] Pranayama Enhancements**: Session tracking + customizable intervals. **Done**: `components/lab/pranayama-timer.tsx` — 4 presets (Box, Relaxing, Energizing, 4-7-8), custom ratio, round counter, elapsed timer.
+- [ ] **[BATCH-LAB] Vedic Lab Refinements**: Real algorithms for Chhanda Analyzer, Grammar Tokenizer, Astro Explorer, and audio for Vedic instruments.
 - [x] **[LAB-807] Akshauhini Context**: Add historical comparisons and export features to make the ancient army-size calculator meaningful. **Done**: Extracted `calculateAkshauhini()` pure function; added expandable "Historical Context" panel comparing 4 real battles (Gaugamela, Cannae, Waterloo, D-Day) with ratio display; added 18-Akshauhini context note; 4 unit tests confirming canonical totals.
 - [ ] **[BATCH-UI] UI Enhancements**: Audit lean template compliance, integrate verse apps, and improve lab navigation.
 
@@ -101,7 +107,7 @@ Following the 5-phase book integration template for comprehensive Mahabharata ro
 - [x] **[MBH-202] Parva Navigation**: Chapter routing with adhyaya sub-navigation
 - [x] **[MBH-203] Adhyaya Deep Linking**: Direct links to specific adhyayas. **Done**: `components/shloka/adhyaya-share-link.tsx` — copy-to-clipboard button for `?adhyaya=N` URLs; wired into Mahabharata header alongside parva/adhyaya counter; `buildAdhyayaLink()` pure function tested (4 cases).
 - [ ] **[MBH-204] Mobile Optimization**: Responsive design for epic-length content
-- [ ] **[MBH-205] Reading Progress**: Chapter completion tracking and bookmarks
+- [x] **[MBH-205] Reading Progress**: Chapter completion tracking and bookmarks. **Done**: `components/shloka/reading-progress.tsx` — localStorage-backed progress bar, mark-read button, bookmark add/remove with deep links, `useReadingProgress` hook exported for reuse.
 
 #### **PHASE 3: API Integration (MBH-API)**
 - [x] **[MBH-301] Data Service Integration**: VedicDataService compatibility
