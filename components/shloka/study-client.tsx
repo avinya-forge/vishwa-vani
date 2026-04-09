@@ -8,7 +8,8 @@ import VedicTimeline from './vedic-timeline'
 import VedicManuscriptCard from './vedic-manuscript-card'
 import { VEDIC_LIBRARY } from '@/lib/texts'
 import { useTranslations, useLocale } from 'next-intl'
-import HierarchicalNav, { LevelData } from '@/components/ui/hierarchical-nav'
+import type { LevelData } from '@/components/ui/hierarchical-nav';
+import HierarchicalNav from '@/components/ui/hierarchical-nav'
 import VerseAppLinks from './verse-app-links'
 import AdhyayaShareLink from './adhyaya-share-link'
 

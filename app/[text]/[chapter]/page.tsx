@@ -60,17 +60,17 @@ export default async function StudyChapterPage(props: Props) {
   const adhyayaList = textSlug === 'mahabharata'
     ? (() => {
         const manifest = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'data', 'manifest.json'), 'utf8'));
-        const book = manifest.books.find((b: any) => b.book_id === 'mahabharata' || b.slug === 'mahabharata');
+        const book = manifest.books.find((b: Record<string, unknown>) => b.book_id === 'mahabharata' || b.slug === 'mahabharata');
         const chapters = book?.chapters || book?.shards || [];
         return chapters
-          .filter((s: any) => s.file && String(s.file).startsWith(`parva-${chapterNumber}/`))
-          .map((s: any) => {
+          .filter((s: unknown) => s && (s as Record<string, unknown>).file && String((s as Record<string, unknown>).file).startsWith(`parva-${chapterNumber}/`))
+          .map((s: unknown) => { const sObj = s as Record<string, unknown>;
               // s.file format: "parva-2/adhyaya-5.json"
-              const filename = String(s.file).split('/')[1]               // "adhyaya-5.json"
+              const filename = String(sObj.file).split('/')[1]               // "adhyaya-5.json"
               const num = parseInt(filename.replace('adhyaya-', '').replace('.json', ''))
-              return { num, id: s.id || `parva-${chapterNumber}_adhyaya-${num}` }
+              return { num, id: sObj.id || `parva-${chapterNumber}_adhyaya-${num}` }
           })
-          .sort((a: any, b: any) => a.num - b.num)
+          .sort((a: unknown, b: unknown) => (a as Record<string, unknown>).num as number - ((b as Record<string, unknown>).num as number))
           || [];
       })()
     : []
@@ -192,4 +192,41 @@ function StudyWrapper({ chapterData, textSlug, chapterNumber, adhyayaParam, adhy
       </div>
     </>
   )
+}
+
+
+import type { Metadata } from 'next'
+
+export async function generateMetadata(props: Props): Promise<Metadata> {
+  const params = await props.params
+  const textSlug = params.text
+  const chapterNumber = params.chapter
+
+  const textInfo = getTextBySlug(textSlug)
+  const title = textInfo ? `${textInfo.name} - Chapter ${chapterNumber}` : `Chapter ${chapterNumber}`
+  const description = textInfo ? `Read and explore Chapter ${chapterNumber} of ${textInfo.name} with translations and commentaries.` : 'Read and explore Vedic wisdom.'
+
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      url: `https://vishwavani.app/${textSlug}/${chapterNumber}`,
+      images: [
+        {
+          url: 'https://vishwavani.app/og-image.jpg',
+          width: 1200,
+          height: 630,
+          alt: title
+        }
+      ]
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: ['https://vishwavani.app/twitter-image.jpg']
+    }
+  }
 }

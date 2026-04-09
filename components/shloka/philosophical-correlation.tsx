@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useEffect, useState } from 'react'
-import { NVFFragment } from '@/lib/nvf'
+import type { NVFFragment } from '@/lib/nvf'
 import Link from 'next/link'
 import { PrototypeBadge } from '@/components/ui/prototype-badge'
 

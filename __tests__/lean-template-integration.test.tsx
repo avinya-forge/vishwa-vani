@@ -248,7 +248,7 @@ describe('StudyClient - Lean Template Integration', () => {
       if (shankaraBtn) fireEvent.click(shankaraBtn);
 
       // Switch language to Hindi — English commentary should be hidden
-      const langSelect = screen.getByRole('combobox', { name: /language/i });
+      const langSelect = screen.getAllByRole('combobox')[0];
       fireEvent.change(langSelect, { target: { value: 'hi' } });
 
       await waitFor(() => {
