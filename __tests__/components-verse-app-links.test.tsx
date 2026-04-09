@@ -4,7 +4,7 @@ import '@testing-library/jest-dom'
 import VerseAppLinks from '@/components/shloka/verse-app-links'
 
 jest.mock('next/link', () => {
-  return function MockLink({ href, children, title }: any) {
+  return function MockLink({ href, children, title }: { href: string, children: React.ReactNode, title?: string }) {
     return <a href={href} title={title}>{children}</a>
   }
 })

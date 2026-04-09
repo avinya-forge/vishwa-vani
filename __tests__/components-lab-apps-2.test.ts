@@ -49,8 +49,8 @@ describe('Vedic Labs Registry — sprint 2 apps', () => {
 })
 
 describe('ReadingProgress exports', () => {
-  it('exports default component and useReadingProgress hook', () => {
-    const mod = require('@/components/shloka/reading-progress')
+  it('exports default component and useReadingProgress hook', async () => {
+    const mod = await import('@/components/shloka/reading-progress')
     expect(mod.default).toBeDefined()
     expect(typeof mod.default).toBe('function')
     expect(mod.useReadingProgress).toBeDefined()

@@ -1,6 +1,26 @@
 # 🚀 Vishwa-Vani: Unified Release Archive
 
-*Current Version*: v1.3.0 (Labs Expansion Sprint 2 + Isha Upanishad Rollout)
+*Current Version*: v1.4.0 (Beta Infrastructure & Hotfixes)
+
+---
+
+## [1.4.0] - 2026-04-09 (Beta Infrastructure & Hotfixes)
+
+### 🏗️ Major Milestones
+- **Epic Started**: Beta Infrastructure (BETA) - Adding user feedback tools and error handling for preview launch.
+- **Code Quality**: `[HOTFIX]` Addressed extensive ESLint violations (`no-explicit-any`, `no-require-imports`) across test and lab component files, stabilizing the build.
+
+### ✨ Added
+- **`components/ui/feedback-widget.tsx`** (BETA-001): Floating widget allowing users to report bugs and suggest content changes.
+- **`app/api/feedback/route.ts`** (BETA-002): Backend endpoint that converts user feedback into GitHub issues via GitHub API.
+- **`__tests__/api-feedback.test.ts`** (BETA-003): Unit tests ensuring validation logic and GitHub API error handling.
+- **`components/ui/beta-banner.tsx`** (BETA-004): Collapsible header banner with `localStorage` dismissal persistence.
+- **`app/error.tsx`** (BETA-005): Global error boundary with an integrated user feedback button.
+
+### 🔧 Changed
+- **`app/layout.tsx`**: Integrated `<BetaBanner />` and `<FeedbackWidget />` inside the root layout.
+- **Test Suite**: Fixed `require()` to `import` statements and typed mock parameters properly to satisfy strict TypeScript rules (INFRA-007).
+- **Vedic Labs**: Resolved `no-explicit-any` usage and `no-unused-vars` in UI components (`bhakti-yoga-compass.tsx`, `time-consciousness-wheel.tsx`, `philosophical-correlation.tsx`, etc).
 
 ---
 

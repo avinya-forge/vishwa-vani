@@ -19,6 +19,7 @@ jest.mock('fs', () => {
 
 const clearCache = () => {
   // Access private cache via any cast to reset between tests
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   ;(vedicDataService as any).dataCache.clear()
 }
 
@@ -87,7 +88,7 @@ describe('VedicDataService', () => {
   })
 
   describe('enrichVerses() — private helpers via enriched output', () => {
-    const makeVerse = (overrides: Record<string, any> = {}) => ({
+    const makeVerse = (overrides: Record<string, unknown> = {}) => ({
       id: 'test.1.1',
       original: 'ॐ',
       transliteration: 'om',
@@ -100,32 +101,32 @@ describe('VedicDataService', () => {
 
     it('enriched verse has uiMetadata with hasCommentary = true', async () => {
       // Inject a verse via mock
-      const { getVersesFromLakeServer } = require('@/lib/server-lake')
-      getVersesFromLakeServer.mockResolvedValueOnce([makeVerse()])
+      const { getVersesFromLakeServer } = await import('@/lib/server-lake')
+      ;(getVersesFromLakeServer as jest.Mock).mockResolvedValueOnce([makeVerse()])
 
       const result = await vedicDataService.getChapterData('bhagavad-gita', 7)
       expect(result?.verses[0].uiMetadata?.hasCommentary).toBe(true)
     })
 
     it('enriched verse hasCommentary = false when no commentary layers', async () => {
-      const { getVersesFromLakeServer } = require('@/lib/server-lake')
-      getVersesFromLakeServer.mockResolvedValueOnce([makeVerse({ layers: [] })])
+      const { getVersesFromLakeServer } = await import('@/lib/server-lake')
+      ;(getVersesFromLakeServer as jest.Mock).mockResolvedValueOnce([makeVerse({ layers: [] })])
 
       const result = await vedicDataService.getChapterData('bhagavad-gita', 8)
       expect(result?.verses[0].uiMetadata?.hasCommentary).toBe(false)
     })
 
     it('languageCount counts distinct languages in layers', async () => {
-      const { getVersesFromLakeServer } = require('@/lib/server-lake')
-      getVersesFromLakeServer.mockResolvedValueOnce([makeVerse()]) // 2 layers: en + hi
+      const { getVersesFromLakeServer } = await import('@/lib/server-lake')
+      ;(getVersesFromLakeServer as jest.Mock).mockResolvedValueOnce([makeVerse()]) // 2 layers: en + hi
 
       const result = await vedicDataService.getChapterData('bhagavad-gita', 9)
       expect(result?.verses[0].uiMetadata?.languageCount).toBe(2)
     })
 
     it('includes aiContext fields when includeAI is true', async () => {
-      const { getVersesFromLakeServer } = require('@/lib/server-lake')
-      getVersesFromLakeServer.mockResolvedValueOnce([
+      const { getVersesFromLakeServer } = await import('@/lib/server-lake')
+      ;(getVersesFromLakeServer as jest.Mock).mockResolvedValueOnce([
         makeVerse({ original: 'dharma धर्म karma कर्म' })
       ])
 

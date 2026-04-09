@@ -5,6 +5,8 @@ import { GoogleAnalytics } from '@next/third-parties/google'
 import LocaleProvider from '@/components/layout/locale-provider'
 import SecurityShield from '@/components/layout/security-shield'
 import { setRequestLocale } from 'next-intl/server'
+import BetaBanner from '@/components/ui/beta-banner'
+import FeedbackWidget from '@/components/ui/feedback-widget'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
@@ -69,6 +71,8 @@ export default async function RootLayout({
         />
       </head>
       <body suppressHydrationWarning className={`${inter.variable} ${notoSerifDevanagari.variable} ${outfit.variable} font-sans min-h-screen flex flex-col bg-[#FDFBF7] text-stone-900 overflow-x-hidden`}>
+        <BetaBanner />
+        <FeedbackWidget />
         <LocaleProvider>
           <SecurityShield />
           <Header />
