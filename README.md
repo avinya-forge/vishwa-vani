@@ -1,140 +1,68 @@
-# 🏛️ Vishwa-Vani: The Vedic Wikipedia
+# 🏛️ Vishwa-Vani: The Universal Voice of Vedic Wisdom
 
-> **Vishwa-Vani** is a transcendent, multilingual, and highly performant digital sanctuary for exploring Vedic wisdom. This project aims to be the "Wikipedia for Vedas," providing an immersive experience for exploring Shlokas, Mantras, and Sanskrit definitions across languages—English, Hindi, and Marathi.
+[![Version](https://img.shields.io/badge/version-v1.0.0-orange.svg)](./docs/release-notes.md)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Build Status](https://github.com/avinya-forge/vishwa-vani/actions/workflows/ci.yml/badge.svg)](https://github.com/avinya-forge/vishwa-vani/actions)
 
-[![Version](https://img.shields.io/badge/version-v0.9.4-orange.svg)](./docs/release-notes.md)
-[![Hosting](https://img.shields.io/badge/hosting-Vercel%20%7C%20Netlify%20%7C%20GitHub_Pages-blue.svg)](https://github.com/vishwa-vani/vishwa-vani)
+**Vishwa-Vani** is a high-performance, multilingual digital sanctuary for exploring the depth of Vedic literature. It serves as a "Universal Repository," providing an immersive, scholarly experience for the Bhagavad Gita, Upanishads, and the Mahabharata.
 
----
+## ✨ Core Features
 
-## 🏛️ Project Identity
+- **Lean UI Template**: A minimalist-by-default interface focusing on the sacred text, with opt-in scholarly depth.
+- **Normalized Vedic Fragment (NVF)**: A robust data schema ensuring cross-scripture consistency and AI-readiness.
+- **Multilingual Support**: Explore wisdom in English, Hindi, and Marathi with seamless locale switching.
+- **Vedic Lake Architecture**: Hybrid storage leveraging sharded JSON and SQLite WASM for retrieval of massive epics.
+- **Interactive Labs**: Specialized modules for Sanskrit grammar, meter analysis (Chhanda), and philosophical correlation.
+- **Security Shield**: Enterprise-grade Content Security Policy (CSP) and HSTS enforcement for a safe reading environment.
 
-Vishwa-Vani is built with a **Framework First** approach, ensuring absolute scalability and security before massive content aggregation. It is architected for **zero-cost hosting** on platforms like GitHub Pages using **Next.js Static Export (SSG)**.
+## 🚀 Getting Started
 
-- **Multilingual UI**: Native support for English (EN), Hindi (HI), and Marathi (MR) using `next-intl`.
-- **Vedic Lake Storage**: Hybrid binary storage (SQLite WASM) for massive scriptures (Mahabharata, Puranas) with indexed $O(1)$ retrieval.
-- **Security Shield**: Multi-layered protection (CSP + Console Blocking) to safeguard the "Fortress of Wisdom."
-- **Immersive 1600px UI**: A wide-canvas reading experience optimized for both mobile "one-screen" shlokas and desktop "Knowledge Side-Panels."
-- **Interactive Vedic Lab**: Astrology-aware and gamified modules to make learning fun and non-boring.
-- **Aggregated Commentary**: Philosophical insights from historical and modern sages.
-
----
-
-## 🏛️ Current Pulse (Milestone Framework)
-
-| Milestone | Phase | Status | Progress | Highlights |
-| :--- | :--- | :--- | :--- | :--- |
-| **M1** | The Autonomous Data Factory | ✅ **COMPLETED** | 100% | All core ingestion, audit, and data pipeline tasks finished |
-| **M2** | The AI Professor | ⏳ **BETA READY** | 35% | AI-assisted conceptual maps, Semantic Search |
-| **M3** | Global Public Release | 📅 **ROLLOUT** | 0% | Public-facing API and Multi-language UI |
-
----
-
-## 🏛️ Technical Stack
-
-- **Framework**: Next.js 15+ (App Router)
-- **Internationalization**: `next-intl`
-- **Data Engine**: **The Vedic Lake** (SQLite WASM + JSON Sharding)
-- **Security**: **Vedic Shield Architecture** (CSP + DevTools Prevention)
-- **Styling**: Tailwind CSS (Immersive Wider Layout)
-- **Hosting**: GitHub Pages (Full Static SSG)
-
----
-
-## � Deployment
-
-Vishwa-Vani supports multiple free hosting options:
-
-### Option 1: Vercel (Recommended)
-1. **Connect Repository**: Link your GitHub repo to [Vercel](https://vercel.com)
-2. **Auto-Deploy**: Vercel automatically detects Next.js and deploys
-3. **Custom Domain**: Add your domain (free .vercel.app subdomain available)
-4. **Analytics**: Built-in analytics and performance monitoring
-
-### Option 2: Netlify
-1. **Connect Repository**: Link to [Netlify](https://netlify.com)
-2. **Build Settings**:
-   - Build Command: `npm run build`
-   - Publish Directory: `.next`
-3. **Deploy**: Automatic deployments on push
-
-### Option 3: GitHub Pages
-1. **Enable Pages**: Go to repository Settings → Pages
-2. **Source**: GitHub Actions
-3. **Workflow**: Create `.github/workflows/deploy.yml`:
-```yaml
-name: Deploy to GitHub Pages
-on:
-  push:
-    branches: [ main ]
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18
-      - run: npm ci
-      - run: npm run build
-      - uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .next
-```
-
-### Environment Variables
-For production deployment, set these environment variables:
-- `NODE_ENV=production`
-- `NEXT_PUBLIC_APP_URL=https://your-domain.com`
-
----
+### Prerequisites
+- **Node.js**: v20.x or higher
+- **npm**: v10.x or higher
 
 ### Installation
-Ensure you have Node.js (v18+) installed.
-
 ```bash
-git clone https://github.com/vishwa-vani/vishwa-vani.git
+git clone https://github.com/avinya-forge/vishwa-vani.git
 cd vishwa-vani
 npm install
 ```
 
-### Build & Ingest
+### Local Development
 ```bash
-# Ingest data into the Vedic Lake (SQLite shards)
-python scripts/vishwa.py lake ingest
-
-# Build Search Index
-python scripts/vishwa.py lake index
-
-# Build for Production
-npm run build
+npm run dev
 ```
-This generates an `out/` folder ready for static hosting.
+Visit `http://localhost:3000` to explore the library.
+
+### Production Build
+```bash
+npm run build
+npm start
+```
+
+## 📖 Documentation
+
+Our documentation is maintained as a flat ledger in the `/docs` directory for maximum discoverability:
+
+- [Master Backlog](./docs/backlog.md) — Roadmap and task tracking.
+- [Release Notes](./docs/release-notes.md) — Version history and changelogs.
+- [Architecture Blueprint](./docs/blueprint.md) — Technical design and data models.
+- [Engineering Standards](./docs/standards.md) — Coding conventions and NVF compliance.
+- [Deployment Guide](./docs/deployment.md) — Infrastructure and domain configuration.
+
+## 🤝 Contributing
+
+We welcome contributions from scholars, engineers, and seekers. Please read our [Engineering Standards](./docs/standards.md) before submitting a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📜 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
-
-## 🗺️ Single Source of Truth Documentation
-All documentation lives directly in the `docs/` root. Do not create nested folders here to ensure clarity and immediate discoverability. By design, no content is ever removed from the master backlog, only marked as completed.
-- 🏛️ [Vishwa-Vani Vision](./docs/vision.md)
-- 🚀 [Master Backlog](./docs/backlog.md)
-- 📦 [Release Notes](./docs/release-notes.md)
-- 🏗️ [Architecture Blueprint](./docs/blueprint.md)
-- 🛠️ [Engineering & Operations](./docs/standards.md)
-
----
-
-## 🤖 System Governance (Claude Pro & Agentic Workflows)
-Vishwa-Vani is aggressively optimized for **Agentic Development** leveraging Claude Pro features. 
-**Agentic Multi-Role Setup:**
-1. **Claude (The Architect)**: Masters the `docs/` directory. Directs backlog priority, audits blueprints, and determines project viability.
-2. **Jules / Antigravity (The Execution Agents)**: Software Engineers that implement logic natively in the codebase.
-
-**Claude Pro Optimum Utilization Instructions:**
-- **Caveman Protocol**: Engage `/caveman` (or `/caveman ultra`) to drastically compress Claude's syntax parsing and output sizes (~65% token drop) ensuring context isn't quickly lost on mega-prompts.
-- **Superpowers (Skills)**: Auto-trigged agentic skills (e.g., `brainstorming`, `writing-plans`, `subagent-driven-development`). Always command Claude to use `writing-plans` prior to writing code.
-- **Claude-Mem**: Use `/mem-search <query>` to cross-reference past architectural decisions seamlessly across sessions. 
-- Refer extensively to `CLAUDE.md` to bootstrap a new environment with optimal memory usage immediately.
-
----
-_Vishwa-Vani: Turning Vedic Knowledge into an Interactive Journey, Orchestrated by Artificial Intelligence._
+*Vishwa-Vani: Turning Vedic Knowledge into a Digital Journey for the Modern World.*

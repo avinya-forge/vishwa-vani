@@ -1,82 +1,98 @@
 import React from 'react'
-import Link from 'next/link'
+import Header from '@/components/layout/Header'
+import Footer from '@/components/layout/Footer'
+import { setRequestLocale } from 'next-intl/server'
 
 export default function AcknowledgmentsPage() {
+  setRequestLocale('en')
+
+  const sections = [
+    {
+      title: '📜 Scholarly Sources',
+      items: [
+        { name: 'BORI Critical Edition', role: 'Mahabharata Sanskrit Source', link: 'https://bori.ac.in/' },
+        { name: 'Swami Sivananda', role: 'Commentary & Translation (Gita)', link: '#' },
+        { name: 'Adi Shankaracharya', role: 'Bhasya (Gita & Upanishads)', link: '#' },
+        { name: 'Swami Chinmayananda', role: 'Holy Geeta Commentary', link: '#' },
+        { name: 'Gita Press Gorakhpur', role: 'Hindi Translations & References', link: 'https://www.gitapress.org/' }
+      ]
+    },
+    {
+      title: '🛠️ Open Source & Libraries',
+      items: [
+        { name: 'Next.js', role: 'The React Framework for the Web', link: 'https://nextjs.org/' },
+        { name: 'Tailwind CSS', role: 'Utility-first CSS framework', link: 'https://tailwindcss.com/' },
+        { name: 'sql.js', role: 'SQLite compiled to JavaScript/WebAssembly', link: 'https://sql.js.org/' },
+        { name: 'next-intl', role: 'Internationalization for Next.js', link: 'https://next-intl-docs.vercel.app/' },
+        { name: 'React Markdown', role: 'Markdown component for React', link: 'https://github.com/remarkjs/react-markdown' }
+      ]
+    },
+    {
+      title: '🏛️ Contributors & Community',
+      items: [
+        { name: 'Avinya Forge', role: 'Project Architecture & Engineering', link: '#' },
+        { name: 'Vedic Wisdom Community', role: 'Content Validation & Proofreading', link: '#' }
+      ]
+    }
+  ]
+
   return (
-    <main className="min-h-screen bg-[#FDFBF7] py-16 px-6 sm:px-12">
-      <div className="max-w-4xl mx-auto">
-        <header className="mb-16 border-b border-stone-200 pb-12">
-            <Link href="/" className="text-orange-600 font-bold text-xs uppercase tracking-widest hover:text-orange-700 transition-colors mb-8 inline-block">
-                ← Return to Library
-            </Link>
-            <h1 className="text-4xl sm:text-6xl font-serif font-black text-stone-900 leading-tight">
-                Vishwa-Vani <br/><span className="text-orange-600">Acknowledgments</span>
-            </h1>
-            <p className="mt-8 text-stone-500 text-lg leading-relaxed max-w-2xl">
-                Honoring the spiritual luminaries, digital archives, and open-source contributors who made this platform possible.
-            </p>
-        </header>
-
-        <div className="grid gap-16">
-            <section>
-                <h2 className="text-xs font-black uppercase tracking-[0.2em] text-stone-400 mb-8 flex items-center gap-3">
-                    <span className="w-8 h-px bg-stone-200" />
-                    Scriptural Sources
-                </h2>
-                <div className="grid sm:grid-cols-2 gap-8">
-                    <div className="bg-white p-8 rounded-3xl border border-stone-100 shadow-sm">
-                        <h3 className="font-serif font-bold text-xl mb-4">Gita Supersite</h3>
-                        <p className="text-stone-500 text-sm leading-relaxed mb-6">
-                            IIT Kanpur's seminal digital archive of the Bhagavad Gita and major commentaries. Primary source for multi-author comparisons.
-                        </p>
-                        <a href="https://www.gitasupersite.iitk.ac.in/" target="_blank" className="text-orange-600 text-[10px] font-black uppercase tracking-widest hover:underline">Visit Repository</a>
-                    </div>
-                    <div className="bg-white p-8 rounded-3xl border border-stone-100 shadow-sm">
-                        <h3 className="font-serif font-bold text-xl mb-4">Vedabase</h3>
-                        <p className="text-stone-500 text-sm leading-relaxed mb-6">
-                            Srila Prabhupada's monumental translations and purports. Essential for Bhakti-focused scholarship.
-                        </p>
-                        <a href="https://vedabase.io/" target="_blank" className="text-orange-600 text-[10px] font-black uppercase tracking-widest hover:underline">Visit Repository</a>
-                    </div>
-                    <div className="bg-white p-8 rounded-3xl border border-stone-100 shadow-sm">
-                        <h3 className="font-serif font-bold text-xl mb-4">Chat-with-author (Anish Nemali)</h3>
-                        <p className="text-stone-500 text-sm leading-relaxed mb-6">
-                            Kisari Mohan Ganguli's (KMG) unabridged English translation of the 18 Parvas of the Mahabharata.
-                        </p>
-                        <a href="https://github.com/Anishnemali/Chat-with-author" target="_blank" className="text-orange-600 text-[10px] font-black uppercase tracking-widest hover:underline">Visit Repository</a>
-                    </div>
-                </div>
-            </section>
-
-            <section>
-                <h2 className="text-xs font-black uppercase tracking-[0.2em] text-stone-400 mb-8 flex items-center gap-3">
-                    <span className="w-8 h-px bg-stone-200" />
-                    Cultural Guardians
-                </h2>
-                <div className="space-y-4">
-                    <div className="p-6 bg-stone-50 rounded-2xl border border-stone-100 flex items-center justify-between">
-                        <span className="font-bold text-stone-800">Vedanta Spiritual Library</span>
-                        <a href="http://www.celextel.org/" className="text-stone-400 hover:text-orange-600 italic text-xs">celextel.org</a>
-                    </div>
-                    <div className="p-6 bg-stone-50 rounded-2xl border border-stone-100 flex items-center justify-between">
-                        <span className="font-bold text-stone-800">Sanskrit Documents (ITRANS)</span>
-                        <a href="https://sanskritdocuments.org/" className="text-stone-400 hover:text-orange-600 italic text-xs">sanskritdocuments.org</a>
-                    </div>
-                </div>
-            </section>
-
-            <section className="bg-stone-900 text-white p-12 rounded-[3rem] shadow-2xl relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-64 h-64 bg-orange-600 blur-[100px] opacity-20" />
-                <h3 className="font-serif text-3xl mb-4 italic">"Wisdom is like the ocean; <br/>all streams lead back to the source."</h3>
-                <p className="text-stone-400 text-sm leading-relaxed max-w-lg mb-8">
-                    Vishwa-Vani is a non-commercial, educational platform dedicated to the preservation and accessibility of Vedic knowledge. All content is shared under fair use principles or respective open-source licenses.
-                </p>
-                <footer className="text-[10px] font-bold text-orange-200 uppercase tracking-widest">
-                    Digital Dharma Project © 2026
-                </footer>
-            </section>
+    <div className="min-h-screen bg-[#FDFBF7] flex flex-col">
+      <Header />
+      <main className="flex-grow max-w-4xl mx-auto px-6 py-20">
+        <div className="text-center mb-16">
+          <h1 className="text-4xl md:text-6xl font-serif font-black text-stone-900 mb-6">Acknowledgments</h1>
+          <p className="text-stone-500 text-lg max-w-2xl mx-auto leading-relaxed">
+            Vishwa-Vani is a collaborative effort built upon centuries of scholarly wisdom and decades of open-source engineering. We extend our deepest gratitude to those who preserved this knowledge.
+          </p>
         </div>
-      </div>
-    </main>
+
+        <div className="space-y-16">
+          {sections.map((section, idx) => (
+            <section key={idx} className="space-y-8">
+              <h2 className="text-2xl font-serif font-black text-stone-800 border-b border-stone-200 pb-4">
+                {section.title}
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {section.items.map((item, i) => (
+                  <div key={i} className="p-6 bg-white rounded-2xl border border-stone-100 shadow-sm hover:border-orange-200 transition-all group">
+                    <h3 className="font-bold text-stone-900 group-hover:text-orange-600 transition-colors">
+                      {item.name}
+                    </h3>
+                    <p className="text-xs text-stone-400 uppercase tracking-widest mt-1">
+                      {item.role}
+                    </p>
+                    {item.link !== '#' && (
+                      <a
+                        href={item.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[10px] text-orange-500 font-black uppercase tracking-tighter mt-4 inline-block hover:underline"
+                      >
+                        Visit Website &rarr;
+                      </a>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </section>
+          ))}
+        </div>
+
+        <div className="mt-20 p-12 bg-stone-900 rounded-[3rem] text-center text-white">
+          <h3 className="text-2xl font-serif font-bold mb-4">Support the Preservation</h3>
+          <p className="text-stone-400 text-sm max-w-lg mx-auto mb-8">
+            This project is open-source and non-profit. If you wish to contribute to the preservation and digitization of Vedic texts, please join our community.
+          </p>
+          <a
+            href="https://github.com/avinya-forge/vishwa-vani"
+            className="inline-block px-8 py-4 bg-orange-600 text-white rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-orange-500 transition-all shadow-xl shadow-orange-900/20"
+          >
+            Contribute on GitHub
+          </a>
+        </div>
+      </main>
+      <Footer />
+    </div>
   )
 }

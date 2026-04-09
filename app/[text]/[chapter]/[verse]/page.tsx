@@ -122,3 +122,37 @@ export default async function StudyVersePage({ params }: { params: Promise<{ tex
     </main>
   )
 }
+
+import type { Metadata } from 'next'
+
+export async function generateMetadata({ params }: { params: Promise<{ text: string, chapter: string, verse: string }> }): Promise<Metadata> {
+  const { text: textSlug, chapter: chapterNumber, verse: verseNumber } = await params
+  const textMetadata = getTextBySlug(textSlug)
+
+  const title = textMetadata ? `${textMetadata.name} ${chapterNumber}.${verseNumber}` : `Verse ${chapterNumber}.${verseNumber}`
+  const description = textMetadata ? `Explore ${textMetadata.name} Chapter ${chapterNumber}, Verse ${verseNumber} with deep scholarly commentaries and translations.` : 'Read Vedic wisdom.'
+
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      url: `https://vishwavani.app/${textSlug}/${chapterNumber}/${verseNumber}`,
+      images: [
+        {
+          url: 'https://vishwavani.app/og-image.jpg',
+          width: 1200,
+          height: 630,
+          alt: title
+        }
+      ]
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: ['https://vishwavani.app/twitter-image.jpg']
+    }
+  }
+}
