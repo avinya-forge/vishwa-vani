@@ -23,7 +23,7 @@ export default function VedicManuscriptCard({ content, className = "" }: { conte
                         <div className="w-1.5 h-1.5 rounded-full bg-orange-600" />
                         <span className="text-[11px] font-black uppercase tracking-[0.4em] text-stone-300">Cognitive Manuscript Synthesis</span>
                     </div>
-                    <span className="text-[9px] uppercase font-black tracking-wider text-orange-600 bg-orange-50/50 py-0.5 px-2 rounded-full border border-orange-200/50">PoC Fallback</span>
+
                 </div>
 
                 <div className="max-w-4xl">

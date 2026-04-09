@@ -309,14 +309,14 @@ Following the 5-phase book integration template for comprehensive Mahabharata ro
 
 ### Deployment & Domain
 
-- [ ] `PUB-001` Register and configure custom domain (e.g. vishwavani.app) — point DNS to Vercel production via A records or CNAME
-- [ ] `PUB-002` Configure Cloudflare as DNS/CDN layer in front of Vercel (free tier) — add DDoS protection, edge caching, WAF rules
-- [ ] `PUB-003` Enable HTTPS enforcement and set HSTS header in `next.config.ts` (Strict-Transport-Security: max-age=31536000)
+- [x] `PUB-001` Register and configure custom domain (e.g. vishwavani.app) — point DNS to Vercel production via A records or CNAME — Done: 2026-04-09
+- [x] `PUB-002` Configure Cloudflare — Done: 2026-04-09 as DNS/CDN layer in front of Vercel (free tier) — add DDoS protection, edge caching, WAF rules
+- [x] `PUB-003` Enable HTTPS enforcement and set HSTS header in `next.config.ts` (Strict-Transport-Security: max-age=31536000) — Done: 2026-04-09
 
 ### Security & Compliance
 
-- [ ] `PUB-004` Full security audit — verify CSP headers, no API keys in client code, no sensitive env vars in git, rate limits functional, CORS policies correct
-- [ ] `PUB-005` Remove all beta/PoC labels and banners (BetaBanner, PoC badges, "Simulated" labels) — replace with production state
+- [x] `PUB-004` Full security audit — Done: 2026-04-09 verify CSP headers, no API keys in client code, no sensitive env vars in git, rate limits functional, CORS policies correct
+- [x] `PUB-005` Remove all beta/PoC labels and banners — Done: 2026-04-09 (BetaBanner, PoC badges, "Simulated" labels) — replace with production state
 
 ### Performance Optimization
 

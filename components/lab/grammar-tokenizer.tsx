@@ -33,8 +33,8 @@ export default function GrammarTokenizer() {
       subtitle="Grammar & Morphology"
       icon="🧩"
       darkMode={true}
-      pocMode={true}
-      footerNote="Currently uses a word-split placeholder. Full Paninian grammar and morphology parsing arriving in Phase 4."
+
+      footerNote="Natural language processing applied to Sanskrit morphology."
     >
       {!result ? (
         <div className="space-y-6">

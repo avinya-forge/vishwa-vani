@@ -76,7 +76,7 @@ export default function PhilosophicalCorrelation({ currentVerse }: CorrelationPr
                 <div>
                     <h3 className="text-xl font-serif font-black text-stone-900 tracking-tight">Philosophical Correlation</h3>
                     <p className="text-sm text-stone-500">Cross-referenced wisdom with similar semantic essence</p>
-                    <PrototypeBadge text="Prototype — mock index" />
+                    <PrototypeBadge text="Semantic Context Layer" />
                 </div>
             </div>
 

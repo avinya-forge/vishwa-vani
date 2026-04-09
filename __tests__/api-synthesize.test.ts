@@ -1,9 +1,8 @@
 // Mock Next.js modules
 jest.mock('next/server', () => ({
   NextResponse: {
-    json: (data: unknown, options?: unknown) => ({
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      status: (options as any)?.status || 200,
+    json: (data: unknown, options?: { status?: number }) => ({
+      status: options?.status || 200,
       json: async () => data
     })
   }
@@ -13,6 +12,11 @@ import { POST } from '@/app/api/synthesize/route'
 
 const mockRequest = (body: unknown) => ({ json: async () => body } as unknown as Request)
 
+interface MockResponse {
+  status: number;
+  json: () => Promise<Record<string, unknown>>;
+}
+
 describe('/api/synthesize', () => {
   describe('success (200)', () => {
     it('returns synthesis with synthesisMode on valid input', async () => {
@@ -20,13 +24,13 @@ describe('/api/synthesize', () => {
         verseId: '1.1',
         contextTexts: ['Sample meaning', 'Commentary text'],
         language: 'en'
-      })) as unknown as { status: number, json: () => Promise<any> }
+      })) as unknown as MockResponse
       const data = await res.json()
 
       expect(res.status).toBe(200)
       expect(data.success).toBe(true)
       expect(typeof data.synthesis).toBe('string')
-      expect(data.synthesis.length).toBeGreaterThan(0)
+      expect((data.synthesis as string).length).toBeGreaterThan(0)
       expect(data.synthesisMode).toBe('concatenation-fallback')
       expect(data.metadata).toHaveProperty('verseId', '1.1')
       expect(data.metadata).toHaveProperty('language', 'en')
@@ -36,11 +40,11 @@ describe('/api/synthesize', () => {
       const res = await POST(mockRequest({
         verseId: 'gita.2.47',
         contextTexts: ['Meaning only']
-      })) as unknown as { status: number, json: () => Promise<any> }
+      })) as unknown as MockResponse
       const data = await res.json()
 
       expect(res.status).toBe(200)
-      expect(data.metadata.language).toBe('en')
+      expect((data.metadata as Record<string, string>).language).toBe('en')
     })
 
     it('includes meaning-only synthesis when no commentaries provided', async () => {
@@ -48,7 +52,7 @@ describe('/api/synthesize', () => {
         verseId: 'gita.1.1',
         contextTexts: ['Only meaning text here'],
         language: 'hi'
-      })) as unknown as { status: number, json: () => Promise<any> }
+      })) as unknown as MockResponse
       const data = await res.json()
 
       expect(res.status).toBe(200)
@@ -61,17 +65,17 @@ describe('/api/synthesize', () => {
         verseId: 'x.1',
         contextTexts: [longText],
         language: 'en'
-      })) as unknown as { status: number, json: () => Promise<any> }
+      })) as unknown as MockResponse
       const data = await res.json()
 
       expect(res.status).toBe(200)
-      expect(data.synthesis.length).toBeLessThanOrEqual(2048)
+      expect((data.synthesis as string).length).toBeLessThanOrEqual(2048)
     })
   })
 
   describe('validation errors (400)', () => {
     it('rejects missing verseId', async () => {
-      const res = await POST(mockRequest({ contextTexts: ['text'], language: 'en' })) as unknown as { status: number, json: () => Promise<any> }
+      const res = await POST(mockRequest({ contextTexts: ['text'], language: 'en' })) as unknown as MockResponse
       const data = await res.json()
 
       expect(res.status).toBe(400)
@@ -80,7 +84,7 @@ describe('/api/synthesize', () => {
     })
 
     it('rejects empty contextTexts array', async () => {
-      const res = await POST(mockRequest({ verseId: '1.1', contextTexts: [] })) as unknown as { status: number, json: () => Promise<any> }
+      const res = await POST(mockRequest({ verseId: '1.1', contextTexts: [] })) as unknown as MockResponse
       const data = await res.json()
 
       expect(res.status).toBe(400)
@@ -89,7 +93,7 @@ describe('/api/synthesize', () => {
     })
 
     it('rejects non-array contextTexts', async () => {
-      const res = await POST(mockRequest({ verseId: '1.1', contextTexts: 'not-array' })) as unknown as { status: number, json: () => Promise<any> }
+      const res = await POST(mockRequest({ verseId: '1.1', contextTexts: 'not-array' })) as unknown as MockResponse
       const data = await res.json()
 
       expect(res.status).toBe(400)
@@ -101,11 +105,11 @@ describe('/api/synthesize', () => {
         verseId: '1.1',
         contextTexts: ['text'],
         language: 'fr'
-      })) as unknown as { status: number, json: () => Promise<any> }
+      })) as unknown as MockResponse
       const data = await res.json()
 
       expect(res.status).toBe(400)
-      expect(data.message).toMatch(/unsupported language/i)
+      expect(data.message as string).toMatch(/unsupported language/i)
       expect(data).not.toHaveProperty('synthesisMode')
     })
 
@@ -114,16 +118,16 @@ describe('/api/synthesize', () => {
         verseId: '1.1',
         contextTexts: ['', '   ', ''],
         language: 'en'
-      })) as unknown as { status: number, json: () => Promise<any> }
+      })) as unknown as MockResponse
       const data = await res.json()
 
       expect(res.status).toBe(400)
-      expect(data.message).toMatch(/empty/i)
+      expect(data.message as string).toMatch(/empty/i)
       expect(data).not.toHaveProperty('synthesisMode')
     })
 
     it('rejects null body', async () => {
-      const res = await POST(mockRequest(null)) as unknown as { status: number, json: () => Promise<any> }
+      const res = await POST(mockRequest(null)) as unknown as MockResponse
       const data = await res.json()
 
       expect(res.status).toBe(400)
