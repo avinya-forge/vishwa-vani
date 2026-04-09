@@ -2,29 +2,47 @@
 
 import { useEffect } from 'react'
 
-export default function Error({
-    error,
-    reset,
+export default function GlobalError({
+  error,
+  reset,
 }: {
-    error: Error & { digest?: string }
-    reset: () => void
+  error: Error & { digest?: string }
+  reset: () => void
 }) {
-    useEffect(() => {
-        console.error(error)
-    }, [error])
+  useEffect(() => {
+    console.error('Global Error Boundary caught:', error)
+  }, [error])
 
-    return (
-        <div className="min-h-screen flex flex-col items-center justify-center bg-red-50 text-center px-4">
-            <h2 className="text-2xl font-bold text-red-800 mb-4">Something went wrong!</h2>
-            <p className="text-red-600 mb-8 max-w-md">
-                An unexpected error occurred. Please try again.
-            </p>
-            <button
-                onClick={() => reset()}
-                className="px-6 py-3 bg-red-600 text-white rounded-full font-semibold hover:bg-red-700 transition-colors shadow-md"
-            >
-                Try again
-            </button>
+  return (
+    <div className="min-h-screen bg-[#FDFBF7] flex flex-col items-center justify-center p-6 text-center">
+      <div className="bg-white p-8 rounded-2xl shadow-xl max-w-md w-full border border-stone-100">
+        <div className="text-4xl mb-4">⚠️</div>
+        <h2 className="text-2xl font-devanagari font-bold text-orange-900 mb-2">Something went wrong</h2>
+        <p className="text-stone-600 mb-6">
+          We apologize for the inconvenience. An unexpected error occurred while loading this page.
+        </p>
+
+        <div className="flex flex-col space-y-3">
+          <button
+            onClick={() => reset()}
+            className="bg-orange-600 hover:bg-orange-700 text-white font-medium py-3 px-4 rounded-lg transition-colors"
+          >
+            Try again
+          </button>
+
+          <button
+            onClick={() => {
+              // A simple way to trigger the feedback widget is to dispatch a custom event
+              // We'll update the feedback widget to listen for this if needed,
+              // or the user can just use the floating button that remains on screen.
+              document.querySelector<HTMLButtonElement>('button[aria-label="Report an issue or give feedback"]')?.click()
+            }}
+            className="bg-stone-200 hover:bg-stone-300 text-stone-800 font-medium py-3 px-4 rounded-lg transition-colors"
+          >
+            Report this bug
+          </button>
         </div>
-    )
+      </div>
+    </div>
+  )
 }

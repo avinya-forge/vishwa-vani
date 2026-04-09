@@ -10,7 +10,7 @@ interface CorrelationProps {
 }
 
 export default function PhilosophicalCorrelation({ currentVerse }: CorrelationProps) {
-    const [related, setRelated] = useState<any[]>([])
+    const [related, setRelated] = useState<{ id?: string; slok?: string; text?: string }[]>([])
     const [loading, setLoading] = useState(false)
 
     useEffect(() => {
@@ -25,7 +25,7 @@ export default function PhilosophicalCorrelation({ currentVerse }: CorrelationPr
                 
                 // MOCK LOGIC: We fetch some known 'related' verses based on common topics
                 // This simulates what a real semantic engine would return
-                const simulatedNetwork: any = {
+                const simulatedNetwork: Record<string, unknown[]> = {
                     'dharma': [
                         { id: 'bhagavad-gita_3_35', slok: 'श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात्', text: 'Better is ones own duty, though devoid of merit, than the duty of another well performed.' },
                         { id: 'bhagavad-gita_18_66', slok: 'सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज', text: 'Abandoning all duties, come unto Me alone for shelter.' },
@@ -45,12 +45,14 @@ export default function PhilosophicalCorrelation({ currentVerse }: CorrelationPr
                     ]
                 }
 
-                const matches: any[] = []
+                const matches: { id: string; slok?: string; text?: string }[] = []
                 topics.forEach(t => {
-                    if (simulatedNetwork[t]) matches.push(...simulatedNetwork[t])
+                    if (simulatedNetwork[t]) {
+                        matches.push(...(simulatedNetwork[t] as { id: string; slok?: string; text?: string }[]))
+                    }
                 })
 
-                setRelated(Array.from(new Set(matches.map(m => m.id))).map(id => matches.find(m => m.id === id)))
+                setRelated(Array.from(new Set(matches.map(m => m.id))).map(id => matches.find(m => m.id === id)).filter(Boolean) as { id?: string; slok?: string; text?: string }[])
             } catch (e) {
                 console.error(e)
             } finally {
@@ -84,22 +86,22 @@ export default function PhilosophicalCorrelation({ currentVerse }: CorrelationPr
                         Scanning Vedic Library...
                     </div>
                 ) : related.length > 0 ? (
-                    related.map((item, i) => (
+                    related.map((item: { id?: string; slok?: string; text?: string }, i) => (
                         <Link 
                             key={i}
-                            href={`/${item.id.split('_').slice(0, 3).join('/')}`}
+                            href={`/${item?.id?.split('_').slice(0, 3).join('/')}`}
                             className="group p-6 bg-white border border-stone-100 rounded-2xl hover:border-orange-200 transition-all hover:bg-orange-50/10"
                         >
                             <div className="flex justify-between items-start mb-3">
-                                <span className="text-[10px] font-black text-orange-600/60 uppercase tracking-widest">{item.id.replace(/-/g, ' ').replace(/_/g, ' : ')}</span>
+                                <span className="text-[10px] font-black text-orange-600/60 uppercase tracking-widest">{item?.id?.replace(/-/g, ' ').replace(/_/g, ' : ')}</span>
                                 <span className="opacity-0 group-hover:opacity-100 transition-opacity">
                                     <svg className="w-4 h-4 text-orange-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                                     </svg>
                                 </span>
                             </div>
-                            <p className="text-sm font-semibold font-devanagari text-stone-800 line-clamp-1 mb-2">{item.slok}</p>
-                            <p className="text-xs text-stone-500 leading-relaxed line-clamp-2 italic">{item.text}</p>
+                            <p className="text-sm font-semibold font-devanagari text-stone-800 line-clamp-1 mb-2">{item?.slok}</p>
+                            <p className="text-xs text-stone-500 leading-relaxed line-clamp-2 italic">{item?.text}</p>
                         </Link>
                     ))
                 ) : (

@@ -1,8 +1,9 @@
 // Mock Next.js modules
 jest.mock('next/server', () => ({
   NextResponse: {
-    json: (data: any, options?: any) => ({
-      status: options?.status || 200,
+    json: (data: unknown, options?: unknown) => ({
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      status: (options as any)?.status || 200,
       json: async () => data
     })
   }
@@ -10,7 +11,7 @@ jest.mock('next/server', () => ({
 
 import { POST } from '@/app/api/synthesize/route'
 
-const mockRequest = (body: any) => ({ json: async () => body })
+const mockRequest = (body: unknown) => ({ json: async () => body } as unknown as Request)
 
 describe('/api/synthesize', () => {
   describe('success (200)', () => {
@@ -19,7 +20,7 @@ describe('/api/synthesize', () => {
         verseId: '1.1',
         contextTexts: ['Sample meaning', 'Commentary text'],
         language: 'en'
-      }) as any)
+      })) as unknown as { status: number, json: () => Promise<any> }
       const data = await res.json()
 
       expect(res.status).toBe(200)
@@ -35,7 +36,7 @@ describe('/api/synthesize', () => {
       const res = await POST(mockRequest({
         verseId: 'gita.2.47',
         contextTexts: ['Meaning only']
-      }) as any)
+      })) as unknown as { status: number, json: () => Promise<any> }
       const data = await res.json()
 
       expect(res.status).toBe(200)
@@ -47,7 +48,7 @@ describe('/api/synthesize', () => {
         verseId: 'gita.1.1',
         contextTexts: ['Only meaning text here'],
         language: 'hi'
-      }) as any)
+      })) as unknown as { status: number, json: () => Promise<any> }
       const data = await res.json()
 
       expect(res.status).toBe(200)
@@ -60,7 +61,7 @@ describe('/api/synthesize', () => {
         verseId: 'x.1',
         contextTexts: [longText],
         language: 'en'
-      }) as any)
+      })) as unknown as { status: number, json: () => Promise<any> }
       const data = await res.json()
 
       expect(res.status).toBe(200)
@@ -70,7 +71,7 @@ describe('/api/synthesize', () => {
 
   describe('validation errors (400)', () => {
     it('rejects missing verseId', async () => {
-      const res = await POST(mockRequest({ contextTexts: ['text'], language: 'en' }) as any)
+      const res = await POST(mockRequest({ contextTexts: ['text'], language: 'en' })) as unknown as { status: number, json: () => Promise<any> }
       const data = await res.json()
 
       expect(res.status).toBe(400)
@@ -79,7 +80,7 @@ describe('/api/synthesize', () => {
     })
 
     it('rejects empty contextTexts array', async () => {
-      const res = await POST(mockRequest({ verseId: '1.1', contextTexts: [] }) as any)
+      const res = await POST(mockRequest({ verseId: '1.1', contextTexts: [] })) as unknown as { status: number, json: () => Promise<any> }
       const data = await res.json()
 
       expect(res.status).toBe(400)
@@ -88,7 +89,7 @@ describe('/api/synthesize', () => {
     })
 
     it('rejects non-array contextTexts', async () => {
-      const res = await POST(mockRequest({ verseId: '1.1', contextTexts: 'not-array' }) as any)
+      const res = await POST(mockRequest({ verseId: '1.1', contextTexts: 'not-array' })) as unknown as { status: number, json: () => Promise<any> }
       const data = await res.json()
 
       expect(res.status).toBe(400)
@@ -100,7 +101,7 @@ describe('/api/synthesize', () => {
         verseId: '1.1',
         contextTexts: ['text'],
         language: 'fr'
-      }) as any)
+      })) as unknown as { status: number, json: () => Promise<any> }
       const data = await res.json()
 
       expect(res.status).toBe(400)
@@ -113,7 +114,7 @@ describe('/api/synthesize', () => {
         verseId: '1.1',
         contextTexts: ['', '   ', ''],
         language: 'en'
-      }) as any)
+      })) as unknown as { status: number, json: () => Promise<any> }
       const data = await res.json()
 
       expect(res.status).toBe(400)
@@ -122,7 +123,7 @@ describe('/api/synthesize', () => {
     })
 
     it('rejects null body', async () => {
-      const res = await POST(mockRequest(null) as any)
+      const res = await POST(mockRequest(null)) as unknown as { status: number, json: () => Promise<any> }
       const data = await res.json()
 
       expect(res.status).toBe(400)

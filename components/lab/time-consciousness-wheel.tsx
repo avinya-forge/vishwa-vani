@@ -99,7 +99,7 @@ export default function TimeConsciousnessWheel() {
   const [quizDone, setQuizDone] = useState(false)
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null)
 
-  const selected = TIME_SCALES.find(s => s.id === activeScale)
+  const _selected = TIME_SCALES.find(s => s.id === activeScale)
 
   const handleAnswer = (idx: number) => {
     setSelectedAnswer(idx)

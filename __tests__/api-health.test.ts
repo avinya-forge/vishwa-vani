@@ -3,9 +3,10 @@ import { GET } from '@/app/api/health/route'
 jest.mock('next/server', () => {
   return {
     NextResponse: {
-      json: (body: any, init?: any) => {
+      json: (body: unknown, init?: unknown) => {
         return {
-          status: init?.status || 200,
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          status: (init as any)?.status || 200,
           json: async () => body
         }
       }
@@ -15,8 +16,8 @@ jest.mock('next/server', () => {
 
 describe('GET /api/health', () => {
   it('returns a successful health status', async () => {
-    const response = await GET() as any
-    const data = await response.json()
+    const response = await GET() as unknown as { status: number, json: () => Promise<unknown> }
+    const data = await response.json() as Record<string, unknown>
 
     expect(response.status).toBe(200)
     expect(data.status).toBe('ok')
