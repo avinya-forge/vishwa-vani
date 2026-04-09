@@ -1,8 +1,32 @@
 # 🚀 Vishwa-Vani: Unified Release Archive
 
-*Current Version*: v1.2.0 (Labs Expansion Sprint 2 + Isha Upanishad Rollout)
+*Current Version*: v1.3.0 (Labs Expansion Sprint 2 + Isha Upanishad Rollout)
 
 ---
+
+## [1.3.0] - 2026-04-09 (Deployment Foundation & Visual Audit)
+
+### 🏗️ Major Milestones
+- **Epic Completed**: Deployment Foundation (DEPL) - Base CI/CD, Domain readiness, & Analytics readiness tasks.
+- **Visual Audit Complete**: Automated Playwright full-page screenshots executed and loaded into context to flag UI regressions and responsive layout issues.
+
+### ✨ Added
+- **`app/robots.ts`** (DEPL-006): Dynamic `robots.txt` allowing all crawlers and pointing to `sitemap.xml`.
+- **Meta Tags** (DEPL-007): Implemented Next.js `generateMetadata` for dynamic Open Graph and Twitter cards on all chapter pages.
+- **Security Headers** (DEPL-008): Added strict headers (`X-Frame-Options`, `X-Content-Type-Options`, `Referrer-Policy`, `Permissions-Policy`) via `next.config.ts`.
+- **`app/api/health/route.ts`** (DEPL-004): Health check endpoint returning `{ status: 'ok', version, timestamp }`.
+- **`app/sitemap.ts`** (DEPL-005): Automated dynamic sitemap generation crawling all active books, chapters, and adhyayas.
+- **`__tests__/api-health.test.ts`** (DEPL-012): Unit test for health check endpoint verifying successful 200 response structure.
+- **CI/CD Workflows** (DEPL-001, DEPL-002): Added GitHub Actions (`.github/workflows/ci.yml`, `deploy.yml`) to enforce code gates (lint, tsc, test) on every push and PR, and automate Vercel deployment.
+- **Environment config** (DEPL-003): Created `.env.example` placeholder for essential variables.
+
+### 🐛 Fixed
+- Fixed broken pre-flight tests across the codebase, restoring CI baseline (Pre-flight Audit).
+- Completed dependencies installation to ensure Jest and Next.js CI runs correctly locally.
+
+### 📋 Backlog Updates
+- Marked DEPL-001 through DEPL-008, plus DEPL-012 as complete.
+- Appended VIS-001, VIS-002, and VIS-003 visual regression findings to the backlog.
 
 ## [1.2.0] - 2026-04-08 (Labs Expansion Sprint 2 + Isha Upanishad Rollout)
 

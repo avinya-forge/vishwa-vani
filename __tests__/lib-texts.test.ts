@@ -46,7 +46,7 @@ describe('VEDIC_LIBRARY', () => {
   });
 
   it('should have valid chapter names for available texts', () => {
-    const availableTexts = VEDIC_LIBRARY.filter(text => text.available && text.slug !== 'samaveda' && text.slug !== 'yajurveda' && text.slug !== 'atharvaveda');
+    const availableTexts = VEDIC_LIBRARY.filter(text => text.available);
     availableTexts.forEach(text => {
       expect(text.chapterNames).toBeDefined();
       expect(Object.keys(text.chapterNames).length).toBeGreaterThan(0);

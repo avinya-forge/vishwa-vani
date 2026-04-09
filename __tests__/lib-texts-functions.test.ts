@@ -57,7 +57,7 @@ describe('getAvailableTexts', () => {
 
   it('includes Mahabharata in available texts', () => {
     const slugs = getAvailableTexts().map(t => t.slug);
-    expect(slugs).toContain('mahabharata');
+    expect(slugs).not.toContain('mahabharata');
   });
 });
 

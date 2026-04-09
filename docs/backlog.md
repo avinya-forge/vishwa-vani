@@ -31,18 +31,18 @@ Never overwrite or replace existing tasks. Always ADD new tasks alongside existi
 **Exit Gate**: Live on Vercel with CI pipeline, sitemap present, health check passing, environment variables configured  
 **Tasks Prefix**: `DEPL-`
 
-- [ ] `DEPL-001` Add GitHub Actions CI workflow (`.github/workflows/ci.yml`) — lint → tsc → test → build on every push and PR
-- [ ] `DEPL-002` Add GitHub Actions deploy workflow (`.github/workflows/deploy.yml`) — auto-deploy main→production, develop→preview on Vercel
-- [ ] `DEPL-003` Create `.env.example` with all required environment variables (NEXT_PUBLIC_SITE_URL, VERCEL_URL, ANTHROPIC_API_KEY placeholder, GITHUB_TOKEN placeholder)
-- [ ] `DEPL-004` Implement `GET /api/health` route returning `{ status: 'ok', version, timestamp }` — used by CI to verify deployment health
-- [ ] `DEPL-005` Generate `public/sitemap.xml` (Next.js app directory sitemap.ts) covering all available text/chapter/adhyaya routes
-- [ ] `DEPL-006` Create `public/robots.txt` (allow all, reference sitemap)
-- [ ] `DEPL-007` Add Open Graph and Twitter meta tags to `app/layout.tsx` and all chapter pages (title, description, og:image placeholder)
-- [ ] `DEPL-008` Add security headers via `next.config.ts` (X-Frame-Options: DENY, X-Content-Type-Options: nosniff, Referrer-Policy: strict-origin-when-cross-origin, Permissions-Policy: microphone=(), camera=())
+- [x] `DEPL-001` Add GitHub Actions CI workflow (`.github/workflows/ci.yml`) — lint → tsc → test → build on every push and PR — Done: Added CI workflow testing lint, tsc, and jest, 2026-04-09
+- [x] `DEPL-002` Add GitHub Actions deploy workflow (`.github/workflows/deploy.yml`) — auto-deploy main→production, develop→preview on Vercel — Done: Added Vercel deploy workflow, 2026-04-09
+- [x] `DEPL-003` Create `.env.example` with all required environment variables (NEXT_PUBLIC_SITE_URL, VERCEL_URL, ANTHROPIC_API_KEY placeholder, GITHUB_TOKEN placeholder) — Done: Created .env.example with required placeholders, 2026-04-09
+- [x] `DEPL-004` Implement `GET /api/health` route returning `{ status: 'ok', version, timestamp }` — used by CI to verify deployment health — Done: Implemented GET /api/health endpoint, 2026-04-09
+- [x] `DEPL-005` Generate `public/sitemap.xml` (Next.js app directory sitemap.ts) covering all available text/chapter/adhyaya routes — Done: Created dynamic sitemap.ts generating valid xml, 2026-04-09
+- [x] `DEPL-006` Create `public/robots.txt` (allow all, reference sitemap) — Done: Created public/robots.txt allowing all and pointing to sitemap, 2026-04-09
+- [x] `DEPL-007` Add Open Graph and Twitter meta tags to `app/layout.tsx` and all chapter pages (title, description, og:image placeholder) — Done: Added Open Graph and Twitter meta tags to app/layout.tsx and app/[text]/[chapter]/page.tsx, 2026-04-09
+- [x] `DEPL-008` Add security headers via `next.config.ts` (X-Frame-Options: DENY, X-Content-Type-Options: nosniff, Referrer-Policy: strict-origin-when-cross-origin, Permissions-Policy: microphone=(), camera=()) — Done: Added strict security headers (X-Frame-Options, X-Content-Type-Options, etc) in next.config.ts, 2026-04-09
 - [ ] `DEPL-009` Fix Content Security Policy in `middleware.ts` to allow Vercel Analytics and sql.js WASM module loading
 - [ ] `DEPL-010` Integrate Vercel Analytics (`@vercel/analytics`) to `app/layout.tsx` for free Core Web Vitals tracking
 - [ ] `DEPL-011` Register `parva-1` adhyaya shard files in `manifest.json` so VedicDataService can access Adi Parva (225 adhyayas currently missing from manifest)
-- [ ] `DEPL-012` Write unit test for `GET /api/health` route (success case, response structure validation)
+- [x] `DEPL-012` Write unit test for `GET /api/health` route (success case, response structure validation) — Done: Wrote api-health test validating status 200 response structure, 2026-04-09
 
 ---
 
@@ -453,3 +453,11 @@ NVF Compliance: all verses must have `{ id, original, transliteration, layers[] 
 ---
 
 *This backlog is the authoritative planning document for Vishwa-Vani. Last updated: 2026-04-09.*
+
+## 🎨 VISUAL AUDIT FINDINGS
+
+Identified during Playwright visual regression run:
+
+- [ ] `VIS-001` Home Page: Hero section typography needs mobile breakpoint adjustments — currently "The Universal Repository of Vedic Wisdom" text breaks awkwardly on screens < 380px.
+- [ ] `VIS-002` Gita Chapter 1: Commentary language selector does not distinctly indicate the active state — add `bg-orange-100` and text weight to the selected locale button.
+- [ ] `VIS-003` Lab Page: Explore Labs grid items have overlapping text on tablet viewports (768px-1024px) when the title spans more than two lines. Adjust flex basis or add `line-clamp` specifically for tablet views.
