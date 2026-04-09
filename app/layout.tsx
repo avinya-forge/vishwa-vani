@@ -5,7 +5,6 @@ import { GoogleAnalytics } from '@next/third-parties/google'
 import LocaleProvider from '@/components/layout/locale-provider'
 import SecurityShield from '@/components/layout/security-shield'
 import { setRequestLocale } from 'next-intl/server'
-import BetaBanner from '@/components/ui/beta-banner'
 import FeedbackWidget from '@/components/ui/feedback-widget'
 import './globals.css'
 
@@ -65,13 +64,8 @@ export default async function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <meta name="theme-color" content="#EA580C" />
-        <meta
-          httpEquiv="Content-Security-Policy"
-          content="default-src 'self' https://*.googletagmanager.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; worker-src 'self' blob:;"
-        />
       </head>
       <body suppressHydrationWarning className={`${inter.variable} ${notoSerifDevanagari.variable} ${outfit.variable} font-sans min-h-screen flex flex-col bg-[#FDFBF7] text-stone-900 overflow-x-hidden`}>
-        <BetaBanner />
         <FeedbackWidget />
         <LocaleProvider>
           <SecurityShield />
@@ -103,4 +97,3 @@ export default async function RootLayout({
     </html>
   )
 }
-

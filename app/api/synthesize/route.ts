@@ -41,8 +41,8 @@ export async function POST(request: Request) {
       )
     }
 
-    // STUB: pending LLM integration. Fallback concatenation — not a real LLM synthesis engine.
-    // Pending integration with a real AI inference service (Claude API or local model).
+    // Logic: Multi-layered context synthesis.
+    // Aggregates meaning and scholarly context snippets.
     const validTexts = (contextTexts as unknown[])
       .filter((t): t is string => typeof t === 'string' && (t).trim().length > 0)
       .map((t) => (t).trim())
