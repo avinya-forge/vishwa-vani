@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen, fireEvent, waitFor } from '@testing-library/react';
+import { render, screen, fireEvent, waitFor, act } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import SearchClient from '@/components/search/search-client';
 
@@ -88,7 +88,9 @@ describe('SearchClient', () => {
     mockSearchLake.mockResolvedValue([mockGitaResult]);
     render(<SearchClient />);
     fireEvent.change(screen.getByPlaceholderText(/Search verses/i), { target: { value: 'karma' } });
-    jest.advanceTimersByTime(450);
+    await act(async () => {
+      jest.advanceTimersByTime(450);
+    });
     await waitFor(() => expect(mockSearchLake).toHaveBeenCalledWith('karma'));
   });
 
@@ -96,7 +98,9 @@ describe('SearchClient', () => {
     mockSearchLake.mockResolvedValue([mockGitaResult]);
     render(<SearchClient />);
     fireEvent.change(screen.getByPlaceholderText(/Search verses/i), { target: { value: 'karma' } });
-    jest.advanceTimersByTime(450);
+    await act(async () => {
+      jest.advanceTimersByTime(450);
+    });
     await waitFor(() => {
       expect(screen.getByText('कर्मण्येवाधिकारस्ते मा फलेषु कदाचन')).toBeInTheDocument();
     });
@@ -106,7 +110,9 @@ describe('SearchClient', () => {
     mockSearchLake.mockResolvedValue([mockGitaResult]);
     render(<SearchClient />);
     fireEvent.change(screen.getByPlaceholderText(/Search verses/i), { target: { value: 'karma' } });
-    jest.advanceTimersByTime(450);
+    await act(async () => {
+      jest.advanceTimersByTime(450);
+    });
     await waitFor(() => {
       expect(screen.getByText(/Chapter 2 · Verse 47/i)).toBeInTheDocument();
     });
@@ -118,11 +124,15 @@ describe('SearchClient', () => {
     const input = screen.getByPlaceholderText(/Search verses/i);
 
     fireEvent.change(input, { target: { value: 'karma' } });
-    jest.advanceTimersByTime(450);
+    await act(async () => {
+      jest.advanceTimersByTime(450);
+    });
     await waitFor(() => expect(screen.getByText('कर्मण्येवाधिकारस्ते मा फलेषु कदाचन')).toBeInTheDocument());
 
     fireEvent.change(input, { target: { value: 'ka' } });
-    jest.advanceTimersByTime(450);
+    await act(async () => {
+      jest.advanceTimersByTime(450);
+    });
     await waitFor(() => expect(screen.queryByText('कर्मण्येवाधिकारस्ते मा फलेषु कदाचन')).not.toBeInTheDocument());
   });
 
@@ -130,7 +140,9 @@ describe('SearchClient', () => {
     mockSearchLake.mockResolvedValue([]);
     render(<SearchClient />);
     fireEvent.change(screen.getByPlaceholderText(/Search verses/i), { target: { value: 'xyznotfound' } });
-    jest.advanceTimersByTime(450);
+    await act(async () => {
+      jest.advanceTimersByTime(450);
+    });
     await waitFor(() => {
       expect(screen.getByText(/No fragments found/i)).toBeInTheDocument();
     });
@@ -140,7 +152,9 @@ describe('SearchClient', () => {
     mockSearchLake.mockRejectedValue(new Error('Lake offline'));
     render(<SearchClient />);
     fireEvent.change(screen.getByPlaceholderText(/Search verses/i), { target: { value: 'dharma' } });
-    jest.advanceTimersByTime(450);
+    await act(async () => {
+      jest.advanceTimersByTime(450);
+    });
     // Should not throw — error is caught and logged
     await waitFor(() => expect(mockSearchLake).toHaveBeenCalled());
   });
@@ -161,7 +175,9 @@ describe('SearchClient', () => {
     render(<SearchClient />);
     const input = screen.getByPlaceholderText(/Search verses/i);
     fireEvent.change(input, { target: { value: 'dharma' } });
-    jest.advanceTimersByTime(450);
+    await act(async () => {
+      jest.advanceTimersByTime(450);
+    });
     await waitFor(() => expect(screen.getByText('कर्मण्येवाधिकारस्ते मा फलेषु कदाचन')).toBeInTheDocument());
 
     // Switch to Upanishad tab — both results are itihas so neither should show
@@ -175,10 +191,16 @@ describe('SearchClient', () => {
     mockSearchLake.mockResolvedValue([mockGitaResult, mockMbhResult]);
     render(<SearchClient />);
     fireEvent.change(screen.getByPlaceholderText(/Search verses/i), { target: { value: 'dharma' } });
-    jest.advanceTimersByTime(450);
+    await act(async () => {
+      jest.advanceTimersByTime(450);
+    });
     await waitFor(() => {
       expect(screen.getByText('कर्मण्येवाधिकारस्ते मा फलेषु कदाचन')).toBeInTheDocument();
       expect(screen.getByText('नारायणं नमस्कृत्य')).toBeInTheDocument();
     });
+  });
+
+  afterEach(() => {
+    jest.clearAllTimers();
   });
 });

@@ -1,8 +1,9 @@
+import type {
+  LabAppEntry} from '@/lib/vedic-labs-registry';
 import {
   VEDIC_LABS_REGISTRY,
   getAppsForContext,
-  getAppsByTopics,
-  LabAppEntry,
+  getAppsByTopics
 } from '@/lib/vedic-labs-registry'
 
 describe('VEDIC_LABS_REGISTRY', () => {
