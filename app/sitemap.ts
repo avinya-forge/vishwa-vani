@@ -5,7 +5,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://vishwavani.app'
 
   // Add all static routes
-  const routes = ['', '/search', '/lab'].map(route => ({
+  const routes = ['', '/search', '/lab', '/acknowledgments'].map(route => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
     changeFrequency: 'weekly' as const,

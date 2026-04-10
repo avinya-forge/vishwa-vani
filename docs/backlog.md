@@ -461,3 +461,17 @@ Identified during Playwright visual regression run:
 - [ ] `VIS-001` Home Page: Hero section typography needs mobile breakpoint adjustments — currently "The Universal Repository of Vedic Wisdom" text breaks awkwardly on screens < 380px.
 - [ ] `VIS-002` Gita Chapter 1: Commentary language selector does not distinctly indicate the active state — add `bg-orange-100` and text weight to the selected locale button.
 - [ ] `VIS-003` Lab Page: Explore Labs grid items have overlapping text on tablet viewports (768px-1024px) when the title spans more than two lines. Adjust flex basis or add `line-clamp` specifically for tablet views.
+
+---
+
+## 🛑 HIGH PRIORITY: POST-RELEASE AUDIT FINDINGS
+
+Identified during critical visual audit on 2026-04-10:
+
+- [ ] `AUDIT-001` **Lab Skeletons**: Implement CSS skeletons for dynamically loaded lab components to prevent layout shift during `next/dynamic` hydration.
+- [ ] `AUDIT-002` **Search Empty State**: The search page lacks a visually engaging "No results found" state; currently just shows an empty grid. Add a Vedic-themed empty state icon and suggestion text.
+- [ ] `AUDIT-003` **Mobile Navigation**: The mobile header menu is functional but lacks a backdrop blur (`backdrop-filter: blur(12px)`) causing legibility issues when scrolled over dense Sanskrit text.
+- [ ] `AUDIT-004` **Verse Typography**: Shloka font size on mobile (375px) is slightly too large, causing unnecessary horizontal scrolling for 4-line verses. Adjust to `text-lg` from `text-xl` on mobile breakpoint.
+- [ ] `AUDIT-005` **API Standardization**: Update `/api/feedback` and `/api/synthesize` to return a consistent `{ error: string, code: string }` JSON structure for 405/400 errors instead of plain text or empty responses.
+- [ ] `AUDIT-006` **Acknowledgments Link Polish**: Ensure all external links in `app/acknowledgments/page.tsx` have `rel="nofollow"` where appropriate to preserve SEO equity for the main domain.
+- [ ] `AUDIT-007` **Metadata Completeness**: Add `og:image` specifically for the Lab and Search routes in their respective `generateMetadata` functions to improve social sharing.

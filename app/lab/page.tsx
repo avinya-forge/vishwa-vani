@@ -1,13 +1,48 @@
-import PranayamaTimer from '@/components/lab/pranayama-timer'
-import AkshauhiniCalc from '@/components/lab/akshauhini-calc'
-import VedicInstruments from '@/components/lab/vedic-instruments'
-import KarmaYogaSimulator from '@/components/lab/karma-yoga-simulator'
-import JnanaYogaExplorer from '@/components/lab/jnana-yoga-explorer'
-import BhaktiYogaCompass from '@/components/lab/bhakti-yoga-compass'
-import DharmaDecisionMatrix from '@/components/lab/dharma-decision-matrix'
-import TimeConsciousnessWheel from '@/components/lab/time-consciousness-wheel'
-import DivineQualitiesAssessment from '@/components/lab/divine-qualities-assessment'
-import MeditationStateTracker from '@/components/lab/meditation-state-tracker'
+'use client'
+
+import dynamic from 'next/dynamic'
+import { LabSkeleton } from '@/components/layout/Skeleton'
+
+const PranayamaTimer = dynamic(() => import('@/components/lab/pranayama-timer'), {
+  ssr: false,
+  loading: () => <LabSkeleton />
+})
+const AkshauhiniCalc = dynamic(() => import('@/components/lab/akshauhini-calc'), {
+  ssr: false,
+  loading: () => <LabSkeleton />
+})
+const VedicInstruments = dynamic(() => import('@/components/lab/vedic-instruments'), {
+  ssr: false,
+  loading: () => <LabSkeleton />
+})
+const KarmaYogaSimulator = dynamic(() => import('@/components/lab/karma-yoga-simulator'), {
+  ssr: false,
+  loading: () => <LabSkeleton />
+})
+const JnanaYogaExplorer = dynamic(() => import('@/components/lab/jnana-yoga-explorer'), {
+  ssr: false,
+  loading: () => <LabSkeleton />
+})
+const BhaktiYogaCompass = dynamic(() => import('@/components/lab/bhakti-yoga-compass'), {
+  ssr: false,
+  loading: () => <LabSkeleton />
+})
+const DharmaDecisionMatrix = dynamic(() => import('@/components/lab/dharma-decision-matrix'), {
+  ssr: false,
+  loading: () => <LabSkeleton />
+})
+const TimeConsciousnessWheel = dynamic(() => import('@/components/lab/time-consciousness-wheel'), {
+  ssr: false,
+  loading: () => <LabSkeleton />
+})
+const DivineQualitiesAssessment = dynamic(() => import('@/components/lab/divine-qualities-assessment'), {
+  ssr: false,
+  loading: () => <LabSkeleton />
+})
+const MeditationStateTracker = dynamic(() => import('@/components/lab/meditation-state-tracker'), {
+  ssr: false,
+  loading: () => <LabSkeleton />
+})
 
 export default function VedicLabPage() {
   return (

@@ -81,7 +81,6 @@ export default function SearchClient() {
           )}
         </div>
 
-        {/* 🏷️ SEARCH BY CONCEPT (ADF-110) */}
         <div className="flex flex-wrap gap-3 mt-8 animate-in fade-in slide-in-from-bottom-2 duration-700">
            <span className="text-[10px] font-black uppercase tracking-[0.3em] text-stone-400 py-2 mr-2 leading-8">Top Concepts:</span>
            {['Bhakti', 'Karma', 'Jnana', 'Dharma', 'Yoga', 'Atman', 'Brahman'].map(concept => (
@@ -140,13 +139,15 @@ export default function SearchClient() {
               )
             })
           ) : query.length > 2 && !isSearching ? (
-            <div className="text-center py-32 bg-stone-50 rounded-[3rem] border border-dashed border-stone-200">
-               <p className="text-stone-400 font-serif italic text-xl">No fragments found matching your intent.</p>
-               <button onClick={() => setQuery('')} className="mt-4 text-orange-600 font-black uppercase text-xs tracking-widest hover:underline">Clear Search</button>
+            <div className="text-center py-32 bg-white rounded-[3rem] border border-dashed border-stone-200 shadow-inner">
+               <div className="text-6xl mb-6 opacity-20">🕯️</div>
+               <p className="text-stone-900 font-serif font-black text-2xl mb-2">No fragments found</p>
+               <p className="text-stone-400 font-medium max-w-xs mx-auto mb-8">Matching your intent '{query}' across the shards.</p>
+               <button onClick={() => setQuery('')} className="px-8 py-3 bg-stone-900 text-white font-black uppercase text-[10px] tracking-[0.2em] rounded-xl hover:bg-orange-600 transition-all shadow-lg shadow-stone-200">Clear Search</button>
             </div>
           ) : (
             <div className="text-center py-32">
-               <div className="w-20 h-20 bg-stone-50 rounded-full flex items-center justify-center mx-auto mb-6 text-3xl opacity-50">🧭</div>
+               <div className="w-20 h-20 bg-orange-50 rounded-full flex items-center justify-center mx-auto mb-6 text-3xl opacity-50 animate-pulse">🧭</div>
                <p className="text-stone-400 font-serif italic text-lg leading-relaxed max-w-sm mx-auto">
                  Begin your journey across the Sanskrit shards by typing a concept or keyword.
                </p>

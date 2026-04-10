@@ -192,20 +192,20 @@ export default function JnanaYogaExplorer() {
         ) : (
           <div className="space-y-4">
             <div className={`p-4 rounded-xl border-2 ${
-              question.options[selectedOption!].correct
+              selectedOption !== null && question.options[selectedOption].correct
                 ? 'bg-green-900/20 border-green-600'
                 : 'bg-red-900/20 border-red-600'
             }`}>
               <div className="flex items-center gap-2 mb-2">
-                <span className={`text-lg ${question.options[selectedOption!].correct ? 'text-green-400' : 'text-red-400'}`}>
-                  {question.options[selectedOption!].correct ? '✅' : '❌'}
+                <span className={`text-lg ${selectedOption !== null && question.options[selectedOption].correct ? 'text-green-400' : 'text-red-400'}`}>
+                  {selectedOption !== null && question.options[selectedOption].correct ? '✅' : '❌'}
                 </span>
-                <span className={`font-bold ${question.options[selectedOption!].correct ? 'text-green-300' : 'text-red-300'}`}>
-                  {question.options[selectedOption!].correct ? 'Kshetrajna Recognised' : 'Kshetra Mistaken for Self'}
+                <span className={`font-bold ${selectedOption !== null && question.options[selectedOption].correct ? 'text-green-300' : 'text-red-300'}`}>
+                  {selectedOption !== null && question.options[selectedOption].correct ? 'Kshetrajna Recognised' : 'Kshetra Mistaken for Self'}
                 </span>
               </div>
               <p className="text-stone-200 text-sm leading-relaxed">
-                {question.options[selectedOption!].explanation}
+                {selectedOption !== null && question.options[selectedOption].explanation}
               </p>
             </div>
 

@@ -1,17 +1,5 @@
 import { NextResponse } from 'next/server'
 
-/**
- * POST /api/synthesize
- *
- * Body: { verseId: string, contextTexts: string[], language?: 'en'|'hi'|'mr' }
- *
- * 200: { success: true, synthesis: string, synthesisMode: 'concatenation-fallback', metadata: {...} }
- * 400: { success: false, message: string }   — invalid / missing input
- * 503: { success: false, message: string }   — unexpected server error
- *
- * synthesisMode switches to 'llm' when a real inference engine is wired.
- */
-
 const SUPPORTED_LANGUAGES = ['en', 'hi', 'mr'] as const
 type Language = typeof SUPPORTED_LANGUAGES[number]
 
@@ -22,34 +10,32 @@ export async function POST(request: Request) {
 
     if (!verseId || typeof verseId !== 'string') {
       return NextResponse.json(
-        { success: false, message: 'Missing or invalid verseId.' },
+        { success: false, error: 'Missing or invalid verseId.', message: 'Missing or invalid verseId.', code: 'INVALID_VERSE_ID' },
         { status: 400 }
       )
     }
 
     if (!Array.isArray(contextTexts) || contextTexts.length === 0) {
       return NextResponse.json(
-        { success: false, message: 'No context text provided for synthesis.' },
+        { success: false, error: 'No context text provided for synthesis.', message: 'No context text provided for synthesis.', code: 'NO_CONTEXT' },
         { status: 400 }
       )
     }
 
     if (!SUPPORTED_LANGUAGES.includes(language as Language)) {
       return NextResponse.json(
-        { success: false, message: 'Unsupported language. Use en, hi, or mr.' },
+        { success: false, error: 'Unsupported language. Use en, hi, or mr.', message: 'Unsupported language. Use en, hi, or mr.', code: 'UNSUPPORTED_LANGUAGE' },
         { status: 400 }
       )
     }
 
-    // Logic: Multi-layered context synthesis.
-    // Aggregates meaning and scholarly context snippets.
     const validTexts = (contextTexts as unknown[])
       .filter((t): t is string => typeof t === 'string' && (t).trim().length > 0)
       .map((t) => (t).trim())
 
     if (validTexts.length === 0) {
       return NextResponse.json(
-        { success: false, message: 'All context texts were empty or invalid.' },
+        { success: false, error: 'All context texts were empty or invalid.', message: 'All context texts were empty or invalid.', code: 'EMPTY_CONTEXT' },
         { status: 400 }
       )
     }
@@ -62,7 +48,6 @@ export async function POST(request: Request) {
         ? `${meaningText}\n\nContext: ${commentarySnippets.join(' | ')}`
         : meaningText
 
-    // Limit response size to prevent token bloat in downstream consumers
     const synthesis = synthesisText.substring(0, 2048)
 
     return NextResponse.json(
@@ -81,8 +66,12 @@ export async function POST(request: Request) {
   } catch (error) {
     console.error('API synthesis error:', error)
     return NextResponse.json(
-      { success: false, message: 'Synthesis service temporarily unavailable.' },
+      { success: false, error: 'Synthesis service temporarily unavailable.', message: 'Synthesis service temporarily unavailable.', code: 'SERVICE_UNAVAILABLE' },
       { status: 503 }
     )
   }
+}
+
+export async function GET() {
+  return NextResponse.json({ success: false, error: 'Method not allowed', message: 'Method not allowed', code: 'METHOD_NOT_ALLOWED' }, { status: 405 })
 }
