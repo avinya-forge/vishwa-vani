@@ -39,7 +39,7 @@ const eslintConfig = [
         "error",
         { prefer: "type-imports", disallowTypeAnnotations: false },
       ],
-      "@typescript-eslint/no-non-null-assertion": "warn",
+      "@typescript-eslint/no-non-null-assertion": "error",
       // Allow empty object types (common in Next.js page props)
       "@typescript-eslint/no-empty-object-type": "off",
       // Explicit module boundary types — disabled for gradual adoption

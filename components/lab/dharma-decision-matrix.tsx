@@ -199,20 +199,20 @@ export default function DharmaDecisionMatrix() {
         ) : (
           <div className="space-y-4">
             <div className={`p-4 rounded-xl border-2 ${
-              dilemma.options[selectedOption!].dharmic
+              selectedOption !== null && dilemma.options[selectedOption].dharmic
                 ? 'bg-green-900/20 border-green-600'
                 : 'bg-red-900/20 border-red-600'
             }`}>
               <div className="flex items-center gap-2 mb-2">
-                <span className={`text-lg ${dilemma.options[selectedOption!].dharmic ? 'text-green-400' : 'text-red-400'}`}>
-                  {dilemma.options[selectedOption!].dharmic ? '✅' : '❌'}
+                <span className={`text-lg ${selectedOption !== null && dilemma.options[selectedOption].dharmic ? 'text-green-400' : 'text-red-400'}`}>
+                  {selectedOption !== null && dilemma.options[selectedOption].dharmic ? '✅' : '❌'}
                 </span>
-                <span className={`font-bold ${dilemma.options[selectedOption!].dharmic ? 'text-green-300' : 'text-red-300'}`}>
-                  {dilemma.options[selectedOption!].dharmic ? 'Daivi — Dharmic Action' : 'Asuri — Ego-Driven Action'}
+                <span className={`font-bold ${selectedOption !== null && dilemma.options[selectedOption].dharmic ? 'text-green-300' : 'text-red-300'}`}>
+                  {selectedOption !== null && dilemma.options[selectedOption].dharmic ? 'Daivi — Dharmic Action' : 'Asuri — Ego-Driven Action'}
                 </span>
               </div>
               <p className="text-stone-200 text-sm leading-relaxed">
-                {dilemma.options[selectedOption!].explanation}
+                {selectedOption !== null && dilemma.options[selectedOption].explanation}
               </p>
             </div>
             <button

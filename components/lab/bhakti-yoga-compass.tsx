@@ -192,20 +192,20 @@ export default function BhaktiYogaCompass() {
         ) : (
           <div className="space-y-4">
             <div className={`p-4 rounded-xl border-2 ${
-              scenario.options[selectedOption!].bhakti
+              selectedOption !== null && scenario.options[selectedOption].bhakti
                 ? 'bg-green-900/20 border-green-600'
                 : 'bg-red-900/20 border-red-600'
             }`}>
               <div className="flex items-center gap-2 mb-2">
-                <span className={`text-lg ${scenario.options[selectedOption!].bhakti ? 'text-green-400' : 'text-red-400'}`}>
-                  {scenario.options[selectedOption!].bhakti ? '✅' : '❌'}
+                <span className={`text-lg ${selectedOption !== null && scenario.options[selectedOption].bhakti ? 'text-green-400' : 'text-red-400'}`}>
+                  {selectedOption !== null && scenario.options[selectedOption].bhakti ? '✅' : '❌'}
                 </span>
-                <span className={`font-bold ${scenario.options[selectedOption!].bhakti ? 'text-green-300' : 'text-red-300'}`}>
-                  {scenario.options[selectedOption!].bhakti ? 'Bhakti Path' : 'Ego-Driven Response'}
+                <span className={`font-bold ${selectedOption !== null && scenario.options[selectedOption].bhakti ? 'text-green-300' : 'text-red-300'}`}>
+                  {selectedOption !== null && scenario.options[selectedOption].bhakti ? 'Bhakti Path' : 'Ego-Driven Response'}
                 </span>
               </div>
               <p className="text-stone-200 text-sm leading-relaxed">
-                {scenario.options[selectedOption!].explanation}
+                {selectedOption !== null && scenario.options[selectedOption].explanation}
               </p>
             </div>
 

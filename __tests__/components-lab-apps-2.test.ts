@@ -9,27 +9,33 @@ describe('Vedic Labs Registry — sprint 2 apps', () => {
   it('APP-708: time-consciousness-wheel available in registry', () => {
     const e = VEDIC_LABS_REGISTRY.find(a => a.id === 'time-consciousness-wheel')
     expect(e).toBeDefined()
-    expect(e!.available).toBe(true)
-    expect(e!.chapters).toContain(8)
-    expect(e!.chapters).toContain(10)
-    expect(e!.topics).toContain('cosmology')
+    if (e) {
+      expect(e.available).toBe(true)
+      expect(e.chapters).toContain(8)
+      expect(e.chapters).toContain(10)
+      expect(e.topics).toContain('cosmology')
+    }
   })
 
   it('APP-709: divine-qualities-assessment available in registry', () => {
     const e = VEDIC_LABS_REGISTRY.find(a => a.id === 'divine-qualities-assessment')
     expect(e).toBeDefined()
-    expect(e!.available).toBe(true)
-    expect(e!.chapters).toContain(16)
-    expect(e!.topics).toContain('daivi')
-    expect(e!.topics).toContain('asuri')
+    if (e) {
+      expect(e.available).toBe(true)
+      expect(e.chapters).toContain(16)
+      expect(e.topics).toContain('daivi')
+      expect(e.topics).toContain('asuri')
+    }
   })
 
   it('APP-712: meditation-state-tracker available in registry', () => {
     const e = VEDIC_LABS_REGISTRY.find(a => a.id === 'meditation-state-tracker')
     expect(e).toBeDefined()
-    expect(e!.available).toBe(true)
-    expect(e!.chapters).toContain(6)
-    expect(e!.topics).toContain('dhyana')
+    if (e) {
+      expect(e.available).toBe(true)
+      expect(e.chapters).toContain(6)
+      expect(e.topics).toContain('dhyana')
+    }
   })
 
   it('getAppsForContext returns time-wheel for gita ch 8', () => {

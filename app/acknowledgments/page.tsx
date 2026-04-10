@@ -11,9 +11,9 @@ export default function AcknowledgmentsPage() {
       title: '📜 Scholarly Sources',
       items: [
         { name: 'BORI Critical Edition', role: 'Mahabharata Sanskrit Source', link: 'https://bori.ac.in/' },
-        { name: 'Swami Sivananda', role: 'Commentary & Translation (Gita)', link: '#' },
+        { name: 'Swami Sivananda', role: 'Commentary & Translation (Gita)', link: 'https://www.dlshq.org/' },
         { name: 'Adi Shankaracharya', role: 'Bhasya (Gita & Upanishads)', link: '#' },
-        { name: 'Swami Chinmayananda', role: 'Holy Geeta Commentary', link: '#' },
+        { name: 'Swami Chinmayananda', role: 'Holy Geeta Commentary', link: 'https://www.chinmayamission.com/' },
         { name: 'Gita Press Gorakhpur', role: 'Hindi Translations & References', link: 'https://www.gitapress.org/' }
       ]
     },
@@ -24,13 +24,18 @@ export default function AcknowledgmentsPage() {
         { name: 'Tailwind CSS', role: 'Utility-first CSS framework', link: 'https://tailwindcss.com/' },
         { name: 'sql.js', role: 'SQLite compiled to JavaScript/WebAssembly', link: 'https://sql.js.org/' },
         { name: 'next-intl', role: 'Internationalization for Next.js', link: 'https://next-intl-docs.vercel.app/' },
-        { name: 'React Markdown', role: 'Markdown component for React', link: 'https://github.com/remarkjs/react-markdown' }
+        { name: 'React Markdown', role: 'Markdown component for React', link: 'https://github.com/remarkjs/react-markdown' },
+        { name: 'Sharp', role: 'High performance Node.js image processing', link: 'https://sharp.pixelplumbing.com/' },
+        { name: 'Jest', role: 'Delightful JavaScript Testing', link: 'https://jestjs.io/' },
+        { name: 'Testing Library', role: 'Simple and complete testing utilities', link: 'https://testing-library.com/' },
+        { name: 'use-debounce', role: 'Debounce hook for React', link: 'https://github.com/xnimorz/use-debounce' },
+        { name: 'TypeScript ESLint', role: 'Tooling for TypeScript and ESLint', link: 'https://typescript-eslint.io/' }
       ]
     },
     {
       title: '🏛️ Contributors & Community',
       items: [
-        { name: 'Avinya Forge', role: 'Project Architecture & Engineering', link: '#' },
+        { name: 'Avinya Forge', role: 'Project Architecture & Engineering', link: 'https://github.com/avinya-forge' },
         { name: 'Vedic Wisdom Community', role: 'Content Validation & Proofreading', link: '#' }
       ]
     }
@@ -66,7 +71,7 @@ export default function AcknowledgmentsPage() {
                       <a
                         href={item.link}
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="noopener noreferrer nofollow"
                         className="text-[10px] text-orange-500 font-black uppercase tracking-tighter mt-4 inline-block hover:underline"
                       >
                         Visit Website &rarr;
@@ -86,6 +91,8 @@ export default function AcknowledgmentsPage() {
           </p>
           <a
             href="https://github.com/avinya-forge/vishwa-vani"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
             className="inline-block px-8 py-4 bg-orange-600 text-white rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-orange-500 transition-all shadow-xl shadow-orange-900/20"
           >
             Contribute on GitHub
