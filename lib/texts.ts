@@ -156,7 +156,7 @@ export const VEDIC_LIBRARY: VedicText[] = [
     totalChapters: 1,
     description: 'One of the shortest and most profound Upanishads. 18 verses addressing the nature of the Self and the universe.',
     category: 'upanishad',
-    available: false,
+    available: true,
     storage: 'json',
     chapterNames: { '1': 'Isha Upanishad — Complete Text' },
     chapterNamesHi: { '1': 'ईशावास्योपनिषद् — पूर्ण पाठ' },
@@ -230,7 +230,7 @@ export const VEDIC_LIBRARY: VedicText[] = [
     totalChapters: 18,
     description: 'The longest epic poem in the world, chronicling the Kurukshetra War and the fates of the Kaurava and Pandava princes.',
     category: 'itihas',
-    available: false,
+    available: true,
     storage: 'json', // Changed from lake to json for shard support
     chapterNames: {
       '1': 'Adi Parva', '2': 'Sabha Parva', '3': 'Vana Parva', '4': 'Virata Parva', '5': 'Udyoga Parva',

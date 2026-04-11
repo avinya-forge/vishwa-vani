@@ -1,5 +1,20 @@
 # Release Notes
 
+## [1.0.3] - 2026-04-11
+### ✨ Enhancements & Fixes
+- **Metadata Completeness**: Converted metadata definitions in `app/lab/layout.tsx` and `app/search/page.tsx` to `generateMetadata` dynamically providing comprehensive OpenGraph and Twitter properties (AUDIT-007).
+- **Responsive UI**: Fixed awkward mobile typography breakpoints in `app/page.tsx` hero section (VIS-001).
+- **Responsive UI**: Added tablet-specific line clamping in `components/lab/vedic-app-template.tsx` to fix overlap (VIS-003).
+- **Active State Indicators**: Distinctly highlighted active language choices using `bg-orange-100 font-bold` in the commentary language selector (VIS-002).
+- **Data Configuration**: Switched on `mahabharata` (CONT-001) and `isha-upanishad` availability, registered parva-1 in `manifest.json` (CONT-002), mapped Isha Upanishad in manifest (CONT-008). Note: Data ingestion awaits proper gold-tier verification script execution.
+- **Infrastructure Audits**: Completed and documented verification passes for tests (INFRA-008) and ESLint config loading (INFRA-009).
+
+### 🧪 Quality Gates
+- Lint: ✅ (0 errors)
+- TSC: ✅ (0 errors)
+- Test: ✅ (172/172 passing)
+- Build: ✅ (160 pages generated)
+
 ## [1.0.2] - 2026-04-11
 ### ✨ Enhancements & Fixes
 - **Audit Findings Resolved**:

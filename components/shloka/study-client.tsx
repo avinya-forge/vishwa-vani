@@ -519,7 +519,7 @@ export default function StudyClient({
               <select
                 value={languageSelection}
                 onChange={(e) => updateLanguage(e.target.value)}
-                className="px-2 sm:px-3 py-2 border border-stone-200 rounded-lg text-xs sm:text-sm bg-white"
+                className={`px-2 sm:px-3 py-2 border rounded-lg text-xs sm:text-sm transition-colors ${languageSelection !== 'all' ? 'bg-orange-100 border-orange-300 text-orange-900 font-bold' : 'bg-white border-stone-200 text-stone-600'}`}
               >
                 {availableLanguages.map((lang) => (
                   <option key={lang} value={lang}>
