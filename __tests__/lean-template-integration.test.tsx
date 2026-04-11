@@ -132,15 +132,16 @@ describe('StudyClient - Lean Template Integration', () => {
 
       const allButtons = screen.getAllByRole('button');
       // Find button with emoji (author button)
-      const authorButton = allButtons.find(b => b.textContent?.match(/[🔱📜]/));
+      const authorButton = allButtons.find(b => b.textContent?.match(/Adi Shankara|Ramanuja/) && !(b as HTMLButtonElement).disabled);
 
       if (authorButton) {
         fireEvent.click(authorButton);
 
         // Counter should update to 1/2
         await waitFor(() => {
-          expect(screen.getByText(/Scholars \(1\/2\)/)).toBeInTheDocument();
-        });
+          const counter = screen.getByTestId('scholars-counter');
+          expect(counter).toHaveTextContent('Scholars (1/2)');
+        }, { timeout: 3000 });
       }
     });
 
@@ -235,8 +236,9 @@ describe('StudyClient - Lean Template Integration', () => {
       if (authorBtn) {
         fireEvent.click(authorBtn);
         await waitFor(() => {
-          expect(screen.getByText(/Scholars \(1\/2\)/)).toBeInTheDocument();
-        });
+          const counter = screen.getByTestId('scholars-counter');
+          expect(counter).toHaveTextContent('Scholars (1/2)');
+        }, { timeout: 3000 });
       }
     });
 

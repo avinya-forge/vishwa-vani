@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 export default function FeedbackWidget() {
   const [isOpen, setIsOpen] = useState(false)
@@ -10,6 +10,21 @@ export default function FeedbackWidget() {
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
   const [errorText, setErrorText] = useState('')
   const [issueUrl, setIssueUrl] = useState('')
+
+  useEffect(() => {
+    const handleOpenFeedback = (e: Event) => {
+      setIsOpen(true);
+      const customEvent = e as CustomEvent;
+      if (customEvent.detail) {
+        const { textSlug, chapter } = customEvent.detail;
+        if (textSlug) {
+          setMessage(`Context: ${textSlug} Chapter ${chapter}\n\n`);
+        }
+      }
+    };
+    window.addEventListener('open-feedback', handleOpenFeedback);
+    return () => window.removeEventListener('open-feedback', handleOpenFeedback);
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()

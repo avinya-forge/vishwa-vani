@@ -2,6 +2,7 @@ import { Inter, Noto_Serif_Devanagari, Outfit } from 'next/font/google'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import { GoogleAnalytics } from '@next/third-parties/google'
+import { Analytics } from '@vercel/analytics/react'
 import LocaleProvider from '@/components/layout/locale-provider'
 import SecurityShield from '@/components/layout/security-shield'
 import { setRequestLocale } from 'next-intl/server'
@@ -93,6 +94,7 @@ export default async function RootLayout({
         />
         {/* Placeholder GA Measurement ID. Update before shipping. */}
         <GoogleAnalytics gaId="G-XXXXXX" />
+        <Analytics />
       </body>
     </html>
   )

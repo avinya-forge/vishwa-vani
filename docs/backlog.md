@@ -39,9 +39,9 @@ Never overwrite or replace existing tasks. Always ADD new tasks alongside existi
 - [x] `DEPL-006` Create `public/robots.txt` (allow all, reference sitemap) — Done: Created public/robots.txt allowing all and pointing to sitemap, 2026-04-09
 - [x] `DEPL-007` Add Open Graph and Twitter meta tags to `app/layout.tsx` and all chapter pages (title, description, og:image placeholder) — Done: Added Open Graph and Twitter meta tags to app/layout.tsx and app/[text]/[chapter]/page.tsx, 2026-04-09
 - [x] `DEPL-008` Add security headers via `next.config.ts` (X-Frame-Options: DENY, X-Content-Type-Options: nosniff, Referrer-Policy: strict-origin-when-cross-origin, Permissions-Policy: microphone=(), camera=()) — Done: Added strict security headers (X-Frame-Options, X-Content-Type-Options, etc) in next.config.ts, 2026-04-09
-- [ ] `DEPL-009` Fix Content Security Policy in `middleware.ts` to allow Vercel Analytics and sql.js WASM module loading
-- [ ] `DEPL-010` Integrate Vercel Analytics (`@vercel/analytics`) to `app/layout.tsx` for free Core Web Vitals tracking
-- [ ] `DEPL-011` Register `parva-1` adhyaya shard files in `manifest.json` so VedicDataService can access Adi Parva (225 adhyayas currently missing from manifest)
+- [x] `DEPL-009` Fix Content Security Policy in `middleware.ts` to allow Vercel Analytics and sql.js WASM module loading — Done: Updated next.config.ts CSP instead since headers are defined there, added va.vercel-scripts.com and wasm-unsafe-eval, 2026-04-10
+- [x] `DEPL-010` Integrate Vercel Analytics (`@vercel/analytics`) to `app/layout.tsx` for free Core Web Vitals tracking — Done: Added Analytics component from @vercel/analytics, 2026-04-10
+- [x] `DEPL-011` Register `parva-1` adhyaya shard files in `manifest.json` so VedicDataService can access Adi Parva (225 adhyayas currently missing from manifest) — Done: Added mahabharata parva-1 adhyaya list to manifest.json with GOLD status, 2026-04-10
 - [x] `DEPL-012` Write unit test for `GET /api/health` route (success case, response structure validation) — Done: Wrote api-health test validating status 200 response structure, 2026-04-09
 
 ---
@@ -56,11 +56,11 @@ Never overwrite or replace existing tasks. Always ADD new tasks alongside existi
 - [x] `BETA-003` Write unit tests for `POST /api/feedback` (valid input creates issue, missing fields return 400, GitHub API errors handled gracefully, email optional) — Done: Created __tests__/api-feedback.test.ts, 2026-04-09
 - [x] `BETA-004` Create `BetaBanner` component (collapsible bar at top of all pages, dismissible with localStorage key `vishwa_beta_dismissed`, message: "🧪 Preview Release — expect rough edges, bugs welcome") — Done: Created in components/ui/beta-banner.tsx, 2026-04-09
 - [x] `BETA-005` Create global error boundary (`app/error.tsx`) with user-friendly error message and "Report this bug" button linked to FeedbackWidget — Done: Created app/error.tsx, 2026-04-09
-- [ ] `BETA-006` Build loading skeleton components for chapter pages (`SkeletonVerse`, `SkeletonCommentary`) to prevent layout shift during hydration
-- [ ] `BETA-007` Create 404 not-found page (`app/not-found.tsx`) with "Page not found" message and navigation links back to library
-- [ ] `BETA-008` Create error.tsx for API routes — handle verse not found (404), chapter unavailable (404), rate limit exceeded (429) with user-friendly messages
-- [ ] `BETA-009` Write unit tests for `FeedbackWidget` (render, open modal, fill form, submit, success confirmation, close)
-- [ ] `BETA-010` Add feedback button to `study-client.tsx` toolbar — small icon (💬), opens FeedbackWidget with verse context pre-filled (verseId, textSlug, adhyayaNum if available)
+- [x] `BETA-006` Build loading skeleton components for chapter pages (`SkeletonVerse`, `SkeletonCommentary`) to prevent layout shift during hydration — Done: Created skeleton-verse.tsx and skeleton-commentary.tsx in components/ui, 2026-04-10
+- [x] `BETA-007` Create 404 not-found page (`app/not-found.tsx`) with "Page not found" message and navigation links back to library — Done: Created app/not-found.tsx, 2026-04-10
+- [x] `BETA-008` Create error.tsx for API routes — handle verse not found (404), chapter unavailable (404), rate limit exceeded (429) with user-friendly messages — Done: Created app/api/error.tsx to catch server errors gracefully, 2026-04-10
+- [x] `BETA-009` Write unit tests for `FeedbackWidget` (render, open modal, fill form, submit, success confirmation, close) — Done: Created __tests__/components-feedback-widget.test.tsx, 2026-04-10
+- [x] `BETA-010` Add feedback button to `study-client.tsx` toolbar — small icon (💬), opens FeedbackWidget with verse context pre-filled (verseId, textSlug, adhyayaNum if available) — Done: Added feedback button to study-client and updated widget to listen to events, 2026-04-10
 
 ---
 
