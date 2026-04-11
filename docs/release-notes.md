@@ -1,5 +1,21 @@
 # Release Notes
 
+## [1.0.2] - 2026-04-11
+### ✨ Enhancements & Fixes
+- **Audit Findings Resolved**:
+  - Prevented layout shifts in lab components by giving `LabSkeleton` a `min-h-[400px] h-full` styling (AUDIT-001).
+  - Implemented a Vedic-themed empty state with Om (`ॐ`) for search results (AUDIT-002).
+  - Enhanced mobile navigation legibility by using a 12px backdrop blur (AUDIT-003).
+  - Improved mobile shloka legibility by reducing font size on `<640px` viewports (AUDIT-004).
+  - Standardized error response structures for `/api/feedback` and `/api/synthesize` to `{ error, code }` (AUDIT-005).
+  - Verified presence of `rel="nofollow"` on external links in acknowledgments page (AUDIT-006).
+
+### 🧪 Quality Gates
+- Lint: ✅ (0 errors)
+- TSC: ✅ (0 errors)
+- Test: ✅ (172/172 passing)
+- Build: ✅ (84 pages generated)
+
 ## [1.0.1] - 2026-04-10
 ### ✨ Enhancements & Fixes
 - **Analytics Integration**: Added `@vercel/analytics` to `app/layout.tsx` for core web vitals tracking (DEPL-010).
