@@ -1,5 +1,24 @@
 # Release Notes
 
+## [1.0.1] - 2026-04-10
+### ✨ Enhancements & Fixes
+- **Analytics Integration**: Added `@vercel/analytics` to `app/layout.tsx` for core web vitals tracking (DEPL-010).
+- **Security Policy**: Updated `next.config.ts` Content-Security-Policy to allow Vercel Analytics and wasm-unsafe-eval (DEPL-009).
+- **Content completeness**: Registered missing `mahabharata` parva-1 adhyaya shard files in `manifest.json` as GOLD status (DEPL-011).
+- **UX & UI**: Added `SkeletonVerse` and `SkeletonCommentary` components for smooth loading (BETA-006).
+- **Routing**: Added a custom `app/not-found.tsx` 404 page (BETA-007).
+- **API Error Handling**: Created `app/api/error.tsx` (BETA-008).
+- **Feedback Widget Testing**: Wrote tests for `FeedbackWidget` in `__tests__/components-feedback-widget.test.tsx` (BETA-009).
+- **Feedback Button**: Added a feedback trigger button to the `study-client.tsx` toolbar (BETA-010).
+- **Infrastructure**: Verified `eslint.config.mjs` validity (INFRA-009).
+
+### 🧪 Quality Gates
+- Lint: ✅ (0 errors)
+- TSC: ✅ (0 errors)
+- Test: ✅ (172/172 passing)
+- Build: ✅ (84 pages generated)
+
+
 ## [1.0.0] - 2026-04-09
 ### 🏆 PRODUCTION RELEASE
 - **v1.0.0 Milestone**: Official production release of Vishwa-Vani, the universal voice of Vedic wisdom.

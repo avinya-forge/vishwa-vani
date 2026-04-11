@@ -464,6 +464,16 @@ export default function StudyClient({
               >
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path d="M9 5l7 7-7 7" /></svg>
               </button>
+              <button
+                onClick={() => {
+                  const event = new CustomEvent('open-feedback', { detail: { textSlug, chapter } });
+                  window.dispatchEvent(event);
+                }}
+                className="p-2 rounded-lg border border-stone-200 hover:border-orange-400 hover:text-orange-600 transition-all bg-white ml-2"
+                title="Report an issue or give feedback"
+              >
+                💬
+              </button>
             </div>
           </div>
         </div>
@@ -475,7 +485,7 @@ export default function StudyClient({
           <div className="flex flex-wrap items-center gap-2 sm:gap-3 min-w-0">
             {/* Author selector - Lean template: checkboxes for up to 2 authors */}
             <div className="flex items-center gap-2 text-xs font-semibold text-stone-600">
-              <span className="hidden xs:inline">Scholars ({scholarSelection.length}/{2})</span>
+              <span className="hidden xs:inline" data-testid="scholars-counter">Scholars ({scholarSelection.length}/{2})</span>
               <span className="inline xs:hidden text-[10px]">S</span>
               <div className="flex gap-1.5 max-w-xs overflow-x-auto">
                 {availableScholars.filter(s => s !== 'none').slice(0, 5).map((author) => {
