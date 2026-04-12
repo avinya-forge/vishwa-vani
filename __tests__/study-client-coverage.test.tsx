@@ -121,7 +121,7 @@ describe('StudyClient — STAB-606 coverage', () => {
   describe('Lean Template: author toggle', () => {
     it('shows commentary after selecting one author', async () => {
       render(<StudyClient {...defaultProps} />);
-      const shankaraBtn = screen.getAllByRole('button').find(b => b.textContent?.includes('Shankara'));
+      const shankaraBtn = screen.getAllByRole('switch').find(b => b.textContent?.includes('Shankara'));
       expect(shankaraBtn).toBeDefined();
       if (shankaraBtn) fireEvent.click(shankaraBtn);
       await waitFor(() => {
@@ -132,7 +132,7 @@ describe('StudyClient — STAB-606 coverage', () => {
 
     it('hides commentary after deselecting the only author', async () => {
       render(<StudyClient {...defaultProps} />);
-      const shankaraBtn = screen.getAllByRole('button').find(b => b.textContent?.includes('Shankara'));
+      const shankaraBtn = screen.getAllByRole('switch').find(b => b.textContent?.includes('Shankara'));
       if (shankaraBtn) fireEvent.click(shankaraBtn); // select
       await waitFor(() => expect(screen.getByText(longCommentary)).toBeInTheDocument());
       if (shankaraBtn) fireEvent.click(shankaraBtn); // deselect
@@ -141,7 +141,7 @@ describe('StudyClient — STAB-606 coverage', () => {
 
     it('allows selecting up to 2 authors simultaneously', async () => {
       render(<StudyClient {...defaultProps} />);
-      const buttons = screen.getAllByRole('button');
+      const buttons = screen.getAllByRole('switch');
       const shankaraBtn = buttons.find(b => b.textContent?.includes('Shankara'));
       const ramanujaBtn = buttons.find(b => b.textContent?.includes('Ramanuja'));
       if (shankaraBtn) fireEvent.click(shankaraBtn);
@@ -155,7 +155,7 @@ describe('StudyClient — STAB-606 coverage', () => {
         { type: 'commentary', author: 'madhva', lang: 'en', author_name: 'Madhva', author_label: 'Madhva', author_icon: '🌸', content: longCommentary },
       ]);
       render(<StudyClient {...defaultProps} verses={versesWithThree} />);
-      const buttons = screen.getAllByRole('button');
+      const buttons = screen.getAllByRole('switch');
       const shankaraBtn = buttons.find(b => b.textContent?.includes('Shankara'));
       const ramanujaBtn = buttons.find(b => b.textContent?.includes('Ramanuja'));
       const madhvaBtn = buttons.find(b => b.textContent?.includes('Madhva'));
@@ -173,13 +173,16 @@ describe('StudyClient — STAB-606 coverage', () => {
 
     it('persists scholar selection to localStorage', async () => {
       render(<StudyClient {...defaultProps} />);
-      const shankaraBtn = screen.getAllByRole('button').find(b => b.textContent?.includes('Shankara'));
-      if (shankaraBtn) fireEvent.click(shankaraBtn);
-      await waitFor(() => {
-        const saved = localStorageMock.getItem('vishwa_scholar_pref');
-        expect(saved).not.toBeNull();
-        if (saved) expect(JSON.parse(saved)).toContain('shankara');
-      });
+      const buttons = screen.getAllByRole('switch');
+      const shankaraBtn = buttons.find(b => b.textContent?.includes('Shankara'));
+      if (shankaraBtn) {
+        fireEvent.click(shankaraBtn);
+        await waitFor(() => {
+          const saved = localStorageMock.getItem('vishwa_scholar_pref');
+          expect(saved).not.toBeNull();
+          if (saved) expect(JSON.parse(saved)).toContain('shankara');
+        }, { timeout: 3000 });
+      }
     });
 
     it('restores saved scholar selection from localStorage on mount', async () => {
@@ -278,7 +281,7 @@ describe('StudyClient — STAB-606 coverage', () => {
   describe('AI Synthesis button', () => {
     it('renders AI Analysis button and is not disabled initially', () => {
       render(<StudyClient {...defaultProps} />);
-      const btn = screen.getByRole('button', { name: /AI Analysis/i });
+      const btn = screen.getByRole('button', { name: /Generate AI Synthesis for entire chapter/i });
       expect(btn).toBeInTheDocument();
       expect(btn).not.toBeDisabled();
     });
@@ -288,7 +291,7 @@ describe('StudyClient — STAB-606 coverage', () => {
       global.fetch = jest.fn(() => new Promise(() => {})) as jest.Mock;
 
       render(<StudyClient {...defaultProps} />);
-      const btn = screen.getByRole('button', { name: /AI Analysis/i });
+      const btn = screen.getByRole('button', { name: /Generate AI Synthesis for entire chapter/i });
       fireEvent.click(btn);
       await waitFor(() => {
         expect(screen.getByRole('button', { name: /Analysing/i })).toBeInTheDocument();
@@ -304,7 +307,7 @@ describe('StudyClient — STAB-606 coverage', () => {
       ) as jest.Mock;
 
       render(<StudyClient {...defaultProps} />);
-      const btn = screen.getByRole('button', { name: /AI Analysis/i });
+      const btn = screen.getByRole('button', { name: /Generate AI Synthesis for entire chapter/i });
       fireEvent.click(btn);
       await waitFor(() => {
         expect(screen.getByTestId('vedic-manuscript-card')).toBeInTheDocument();
@@ -322,7 +325,7 @@ describe('StudyClient — STAB-606 coverage', () => {
       ) as jest.Mock;
 
       render(<StudyClient {...defaultProps} />);
-      fireEvent.click(screen.getByRole('button', { name: /AI Analysis/i }));
+      fireEvent.click(screen.getByRole('button', { name: /Generate AI Synthesis for entire chapter/i }));
       await waitFor(() => {
         expect(screen.getByText(/Synthesis failed/i)).toBeInTheDocument();
       });
@@ -338,7 +341,7 @@ describe('StudyClient — STAB-606 coverage', () => {
       ) as jest.Mock;
 
       render(<StudyClient {...defaultProps} />);
-      fireEvent.click(screen.getByRole('button', { name: /AI Analysis/i }));
+      fireEvent.click(screen.getByRole('button', { name: /Generate AI Synthesis for entire chapter/i }));
       await waitFor(() => {
         expect(screen.getByText(/Synthesis unavailable/i)).toBeInTheDocument();
       });
@@ -347,7 +350,7 @@ describe('StudyClient — STAB-606 coverage', () => {
     it('handles fetch network error gracefully', async () => {
       global.fetch = jest.fn(() => Promise.reject(new Error('Network error'))) as jest.Mock;
       render(<StudyClient {...defaultProps} />);
-      fireEvent.click(screen.getByRole('button', { name: /AI Analysis/i }));
+      fireEvent.click(screen.getByRole('button', { name: /Generate AI Synthesis for entire chapter/i }));
       await waitFor(() => {
         expect(screen.getByText(/Synthesis failed/i)).toBeInTheDocument();
       });

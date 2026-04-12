@@ -169,13 +169,13 @@ Every new book follows this 5-phase integration process used across all epics be
 **Tasks Prefix**: `UX-`
 
 - [ ] `UX-001` Triage and fix all beta feedback bugs (reserve 50% sprint capacity for reactive fixes from PHASE 1 feedback)
-- [ ] `UX-002` Add keyboard navigation to scholar selector buttons in `study-client.tsx` (Enter to toggle, Arrow keys to cycle scholars, Tab to move between controls)
-- [ ] `UX-003` Add ARIA labels and roles to all interactive elements in `study-client.tsx` (scholar buttons, language selector, synthesis button, feedback button)
-- [ ] `UX-004` Add skip-to-content link in `app/layout.tsx` (visually hidden, keyboard-accessible, jumps to main reading area)
-- [ ] `UX-005` Apply focus-visible ring styles to all interactive elements using Tailwind (`focus-visible:ring-2 focus-visible:ring-blue-500`)
+- [x] `UX-002` Add keyboard navigation to scholar selector buttons in `study-client.tsx` (Enter to toggle, Arrow keys to cycle scholars, Tab to move between controls) — Done: Implemented keyboard nav handling Enter and arrow keys, 2026-04-11
+- [x] `UX-003` Add ARIA labels and roles to all interactive elements in `study-client.tsx` (scholar buttons, language selector, synthesis button, feedback button) — Done: Added missing ARIA attributes, 2026-04-11
+- [x] `UX-004` Add skip-to-content link in `app/layout.tsx` (visually hidden, keyboard-accessible, jumps to main reading area) — Done: Added skip-to-content link and `#main-content` target, 2026-04-11
+- [x] `UX-005` Apply focus-visible ring styles to all interactive elements using Tailwind (`focus-visible:ring-2 focus-visible:ring-blue-500`) — Done: Applied `focus-visible:ring-orange-500`, 2026-04-11
 - [ ] `UX-006` Implement reading position persistence — on page load, scroll to last-read verse (stored in localStorage as `vishwa_continue_reading:{textSlug}:{chapterNum}`)
 - [ ] `UX-007` Add chapter progress indicator to study-client toolbar (displays "Śloka 23 / 78" or "Adhyaya 5 / 18" depending on text)
-- [ ] `UX-008` Add "Copy verse" button to each verse card (copies Sanskrit + English transliteration to clipboard with toast notification)
+- [x] `UX-008` Add "Copy verse" button to each verse card (copies Sanskrit + English transliteration to clipboard with toast notification) — Done: Added "Copy" button handling native clipboard copy, 2026-04-11
 - [ ] `UX-009` Add verse permalink button (copies `/${textSlug}/${chapterNum}/${verseNum}` URL to clipboard with timestamp)
 - [ ] `UX-010` Optimize mobile toolbar layout — move "AI Analysis" button to floating action button (FAB) on bottom-right for <640px viewports
 - [ ] `UX-011` Implement swipe-to-next-chapter gesture on mobile (touch event listeners on verse list, swipe right=previous chapter, swipe left=next chapter)

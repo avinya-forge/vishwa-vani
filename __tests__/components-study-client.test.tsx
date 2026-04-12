@@ -89,8 +89,8 @@ describe('StudyClient', () => {
 
   it('displays author filter buttons for exactly two primary scholars', () => {
     render(<StudyClient {...defaultProps} />);
-    const dnyanButton = screen.getAllByRole('button').find(b => b.textContent?.includes('Dnyaneshwari'));
-    const prabhupadaButton = screen.getAllByRole('button').find(b => b.textContent?.includes('Prabhupada'));
+    const dnyanButton = screen.getAllByRole('switch').find(b => b.textContent?.includes('Dnyaneshwari'));
+    const prabhupadaButton = screen.getAllByRole('switch').find(b => b.textContent?.includes('Prabhupada'));
     expect(dnyanButton).toBeDefined();
     expect(prabhupadaButton).toBeDefined();
     const visibleAuthorButtons = screen.getAllByRole('button').filter(b => /Dnyaneshwari|Prabhupada/.test(b.textContent || ''));
