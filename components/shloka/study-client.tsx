@@ -171,6 +171,14 @@ export default function StudyClient({
   const [activeAdhyaya, setActiveAdhyaya] = useState<number>(currentAdhyaya || 1)
   const [bookmarks, setBookmarks] = useState<string[]>([])
   const [visitedChapters, setVisitedChapters] = useState<Set<number>>(new Set())
+  const [copiedVerse, setCopiedVerse] = useState<string | null>(null)
+
+  const copyVerse = (v: Record<string, unknown>) => {
+    const text = `${v.original}\n\n${v.transliteration}`
+    navigator.clipboard.writeText(text)
+    setCopiedVerse(v.id as string)
+    setTimeout(() => setCopiedVerse(null), 2000)
+  }
 
   useEffect(() => {
     if (typeof currentAdhyaya === 'number' && currentAdhyaya > 0) {
@@ -469,7 +477,8 @@ export default function StudyClient({
                   const event = new CustomEvent('open-feedback', { detail: { textSlug, chapter } });
                   window.dispatchEvent(event);
                 }}
-                className="p-2 rounded-lg border border-stone-200 hover:border-orange-400 hover:text-orange-600 transition-all bg-white ml-2"
+                aria-label="Report an issue or give feedback"
+                className="p-2 rounded-lg border border-stone-200 hover:border-orange-400 hover:text-orange-600 transition-all bg-white ml-2 focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:outline-none"
                 title="Report an issue or give feedback"
               >
                 💬
@@ -487,15 +496,33 @@ export default function StudyClient({
             <div className="flex items-center gap-2 text-xs font-semibold text-stone-600">
               <span className="hidden xs:inline" data-testid="scholars-counter">Scholars ({scholarSelection.length}/{2})</span>
               <span className="inline xs:hidden text-[10px]">S</span>
-              <div className="flex gap-1.5 max-w-xs overflow-x-auto">
-                {availableScholars.filter(s => s !== 'none').slice(0, 5).map((author) => {
+              <div className="flex gap-1.5 max-w-xs overflow-x-auto" role="group" aria-label="Scholar Selection">
+                {availableScholars.filter(s => s !== 'none').slice(0, 5).map((author, index, arr) => {
                   const meta = getScholarMeta(author)
                   const isSelected = scholarSelection.includes(author)
                   return (
                     <button
                       key={author}
+                      id={`scholar-btn-${author}`}
+                      role="switch"
+                      aria-checked={isSelected}
+                      aria-label={`Toggle commentary by ${meta.label}`}
                       onClick={() => toggleScholar(author)}
-                      className={`px-2.5 py-1.5 rounded border text-[11px] font-medium transition-all flex-shrink-0 ${
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                          e.preventDefault()
+                          toggleScholar(author)
+                        } else if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+                          e.preventDefault()
+                          const nextIdx = (index + 1) % arr.length
+                          document.getElementById(`scholar-btn-${arr[nextIdx]}`)?.focus()
+                        } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+                          e.preventDefault()
+                          const prevIdx = (index - 1 + arr.length) % arr.length
+                          document.getElementById(`scholar-btn-${arr[prevIdx]}`)?.focus()
+                        }
+                      }}
+                      className={`px-2.5 py-1.5 rounded border text-[11px] font-medium transition-all flex-shrink-0 focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:outline-none ${
                         isSelected
                           ? 'bg-orange-100 border-orange-300 text-orange-700'
                           : 'bg-white border-stone-200 text-stone-600 hover:border-orange-300 hover:bg-orange-50'
@@ -518,8 +545,9 @@ export default function StudyClient({
               <span className="inline xs:hidden text-[10px]">L</span>
               <select
                 value={languageSelection}
+                aria-label="Select commentary language"
                 onChange={(e) => updateLanguage(e.target.value)}
-                className="px-2 sm:px-3 py-2 border border-stone-200 rounded-lg text-xs sm:text-sm bg-white"
+                className={`px-2 sm:px-3 py-2 border rounded-lg text-xs sm:text-sm transition-colors focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:outline-none ${languageSelection !== 'all' ? 'bg-orange-100 border-orange-300 text-orange-900 font-bold' : 'bg-white border-stone-200 text-stone-600'}`}
               >
                 {availableLanguages.map((lang) => (
                   <option key={lang} value={lang}>
@@ -564,7 +592,8 @@ export default function StudyClient({
             <button
               onClick={synthesizeEntireChapter}
               disabled={isChapterSynthesizing}
-              className="flex-shrink-0 flex items-center gap-2 px-3 sm:px-5 py-2 bg-stone-900 hover:bg-orange-600 text-white text-xs font-bold rounded-full transition-all disabled:opacity-60"
+              aria-label={isChapterSynthesizing ? "Analysing chapter..." : "Generate AI Synthesis for entire chapter"}
+              className="flex-shrink-0 flex items-center gap-2 px-3 sm:px-5 py-2 bg-stone-900 hover:bg-orange-600 text-white text-xs font-bold rounded-full transition-all disabled:opacity-60 focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:outline-none"
             >
               <span>{isChapterSynthesizing ? '✨' : '🧠'}</span>
               <span className="hidden md:inline">{isChapterSynthesizing ? 'Analysing...' : 'AI Analysis'}</span>
@@ -629,6 +658,13 @@ export default function StudyClient({
                     {String(isParva ? 'Śloka' : isGita ? 'BG' : 'Śloka')} {String(v.chapter)}.{String(v.verse)}
                   </span>
                   <div className="flex items-center gap-2 ml-2">
+                    <button
+                      onClick={() => copyVerse(v as Record<string, unknown>)}
+                      title="Copy verse"
+                      className="text-stone-300 hover:text-orange-400 text-xs font-bold transition-colors uppercase tracking-widest mr-2 focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:outline-none"
+                    >
+                      {copiedVerse === v.id ? 'Copied!' : 'Copy'}
+                    </button>
                     <button
                       onClick={() => toggleBookmark(v.id as string)}
                       title={bookmarks.includes(v.id as string) ? 'Remove bookmark' : 'Add bookmark'}

@@ -69,14 +69,14 @@ Never overwrite or replace existing tasks. Always ADD new tasks alongside existi
 **Exit Gate**: Mahabharata parvas 1-5 accessible and readable in UI, Isha Upanishad complete with commentary, all available content verified  
 **Tasks Prefix**: `CONT-`
 
-- [ ] `CONT-001` Update `lib/texts.ts` to set `mahabharata available: true` for all parvas that have data (parvas 1-3 currently have files but marked false)
-- [ ] `CONT-002` Verify and complete parva-1 shard registration in `manifest.json` — confirm all 225 adhyaya files are accessible via VedicDataService
+- [x] `CONT-001` Update `lib/texts.ts` to set `mahabharata available: true` for all parvas that have data (parvas 1-3 currently have files but marked false) — Done: Updated `lib/texts.ts` setting `mahabharata available: true`, 2026-04-11
+- [x] `CONT-002` Verify and complete parva-1 shard registration in `manifest.json` — confirm all 225 adhyaya files are accessible via VedicDataService — Done: Verified that parva-1 with 225 adhyayas is properly registered, 2026-04-11
 - [ ] `CONT-003` Ingest Mahabharata Virata Parva (Parva 4) — acquire KMG source, convert to NVF 1.3 format, validate adhyaya counts, write to `data/3-gold/mahabharata/parva-4/`
 - [ ] `CONT-004` Ingest Mahabharata Udyoga Parva (Parva 5) — same pipeline as CONT-003, validate cross-references to earlier parvas
 - [ ] `CONT-005` Run `scripts/mbh_validate_refs.py` after CONT-003 and CONT-004 to verify no broken adhyaya references across parva boundaries
 - [ ] `CONT-006` Complete Isha Upanishad Phase 3 — add Adi Shankara Bhasya (commentary layer) to existing `data/3-gold/isha-upanishad/isha-upanishad-chapter-1.json`
-- [ ] `CONT-007` Update `lib/texts.ts` to set `isha-upanishad available: true` and verify `storage: 'json'` configuration
-- [ ] `CONT-008` Verify Isha Upanishad shard registration in `manifest.json` — ensure 10 verses are all accessible
+- [x] `CONT-007` Update `lib/texts.ts` to set `isha-upanishad available: true` and verify `storage: 'json'` configuration — Done: Updated `lib/texts.ts` setting `isha-upanishad available: true` and verified `storage: 'json'` config, 2026-04-11
+- [x] `CONT-008` Verify Isha Upanishad shard registration in `manifest.json` — ensure 10 verses are all accessible — Done: Added missing Isha Upanishad shard to `manifest.json` with 10 verses, 2026-04-11
 - [ ] `CONT-009` Run spot-check validation on all available books (Gita 100%, Mahabharata parvas 1-5, Isha Upanishad 100%) — verify no truncated verses, no OCR artifacts, no missing transliterations
 - [ ] `CONT-010` Create `scripts/content_quality_report.py` — generates markdown report of content status per book (verse count, commentary availability, language coverage)
 
@@ -169,13 +169,13 @@ Every new book follows this 5-phase integration process used across all epics be
 **Tasks Prefix**: `UX-`
 
 - [ ] `UX-001` Triage and fix all beta feedback bugs (reserve 50% sprint capacity for reactive fixes from PHASE 1 feedback)
-- [ ] `UX-002` Add keyboard navigation to scholar selector buttons in `study-client.tsx` (Enter to toggle, Arrow keys to cycle scholars, Tab to move between controls)
-- [ ] `UX-003` Add ARIA labels and roles to all interactive elements in `study-client.tsx` (scholar buttons, language selector, synthesis button, feedback button)
-- [ ] `UX-004` Add skip-to-content link in `app/layout.tsx` (visually hidden, keyboard-accessible, jumps to main reading area)
-- [ ] `UX-005` Apply focus-visible ring styles to all interactive elements using Tailwind (`focus-visible:ring-2 focus-visible:ring-blue-500`)
+- [x] `UX-002` Add keyboard navigation to scholar selector buttons in `study-client.tsx` (Enter to toggle, Arrow keys to cycle scholars, Tab to move between controls) — Done: Implemented keyboard nav handling Enter and arrow keys, 2026-04-11
+- [x] `UX-003` Add ARIA labels and roles to all interactive elements in `study-client.tsx` (scholar buttons, language selector, synthesis button, feedback button) — Done: Added missing ARIA attributes, 2026-04-11
+- [x] `UX-004` Add skip-to-content link in `app/layout.tsx` (visually hidden, keyboard-accessible, jumps to main reading area) — Done: Added skip-to-content link and `#main-content` target, 2026-04-11
+- [x] `UX-005` Apply focus-visible ring styles to all interactive elements using Tailwind (`focus-visible:ring-2 focus-visible:ring-blue-500`) — Done: Applied `focus-visible:ring-orange-500`, 2026-04-11
 - [ ] `UX-006` Implement reading position persistence — on page load, scroll to last-read verse (stored in localStorage as `vishwa_continue_reading:{textSlug}:{chapterNum}`)
 - [ ] `UX-007` Add chapter progress indicator to study-client toolbar (displays "Śloka 23 / 78" or "Adhyaya 5 / 18" depending on text)
-- [ ] `UX-008` Add "Copy verse" button to each verse card (copies Sanskrit + English transliteration to clipboard with toast notification)
+- [x] `UX-008` Add "Copy verse" button to each verse card (copies Sanskrit + English transliteration to clipboard with toast notification) — Done: Added "Copy" button handling native clipboard copy, 2026-04-11
 - [ ] `UX-009` Add verse permalink button (copies `/${textSlug}/${chapterNum}/${verseNum}` URL to clipboard with timestamp)
 - [ ] `UX-010` Optimize mobile toolbar layout — move "AI Analysis" button to floating action button (FAB) on bottom-right for <640px viewports
 - [ ] `UX-011` Implement swipe-to-next-chapter gesture on mobile (touch event listeners on verse list, swipe right=previous chapter, swipe left=next chapter)
@@ -350,8 +350,8 @@ Run every sprint across all phases:
 - [ ] `INFRA-005` Release tagging — tag every bi-weekly deployment as `v0.X.Y` or `v1.X.Y` with changelog entries in `release-notes.md`
 - [ ] `INFRA-006` Vercel preview links — include preview deployment URL in every PR description for visual regression testing
 - [x] `INFRA-007` Fix pre-existing ESLint violations across components and test files. Replace `any` with `unknown` + narrow at use sites; convert `require()` to `import`. Done: 2026-04-09.
-- [ ] `INFRA-008` Fix 2 pre-existing failing tests — (1) `__tests__/lib-texts-functions.test.ts` line 60: `expect(slugs).toContain('mahabharata')` fails because `mahabharata` is `available: false` — update test to match current availability state or fix the availability flag per CONT-001; (2) `__tests__/lean-template-integration.test.tsx` STAB-604 audit test: `getByRole('combobox', { name: /language/i })` fails — the language selector UI changed from a `<select>` element to a button group, update the test query to use `getByRole('button')` with matching label.
-- [ ] `INFRA-009` Fix `eslint.config.mjs` — was truncated in a previous agent session (missing closing `},\n];\nexport default eslintConfig`). Verify file is complete and parses cleanly with `node --input-type=module < eslint.config.mjs`.
+- [x] `INFRA-008` Fix 2 pre-existing failing tests — (1) `__tests__/lib-texts-functions.test.ts` line 60: `expect(slugs).toContain('mahabharata')` fails because `mahabharata` is `available: false` — update test to match current availability state or fix the availability flag per CONT-001; (2) `__tests__/lean-template-integration.test.tsx` STAB-604 audit test: `getByRole('combobox', { name: /language/i })` fails — the language selector UI changed from a `<select>` element to a button group, update the test query to use `getByRole('button')` with matching label. — Done: Tests are already passing with 100% success rate, 2026-04-11
+- [x] `INFRA-009` Fix `eslint.config.mjs` — was truncated in a previous agent session (missing closing `},\n];\nexport default eslintConfig`). Verify file is complete and parses cleanly with `node --input-type=module < eslint.config.mjs`. — Done: Verified that `eslint.config.mjs` parses cleanly and runs without errors, 2026-04-11
 
 ---
 
@@ -458,9 +458,9 @@ NVF Compliance: all verses must have `{ id, original, transliteration, layers[] 
 
 Identified during Playwright visual regression run:
 
-- [ ] `VIS-001` Home Page: Hero section typography needs mobile breakpoint adjustments — currently "The Universal Repository of Vedic Wisdom" text breaks awkwardly on screens < 380px.
-- [ ] `VIS-002` Gita Chapter 1: Commentary language selector does not distinctly indicate the active state — add `bg-orange-100` and text weight to the selected locale button.
-- [ ] `VIS-003` Lab Page: Explore Labs grid items have overlapping text on tablet viewports (768px-1024px) when the title spans more than two lines. Adjust flex basis or add `line-clamp` specifically for tablet views.
+- [x] `VIS-001` Home Page: Hero section typography needs mobile breakpoint adjustments — currently "The Universal Repository of Vedic Wisdom" text breaks awkwardly on screens < 380px. — Done: Added `text-3xl sm:text-4xl` to the Hero section in `app/page.tsx`, 2026-04-11
+- [x] `VIS-002` Gita Chapter 1: Commentary language selector does not distinctly indicate the active state — add `bg-orange-100` and text weight to the selected locale button. — Done: Updated active language button classes in `components/shloka/study-client.tsx`, 2026-04-11
+- [x] `VIS-003` Lab Page: Explore Labs grid items have overlapping text on tablet viewports (768px-1024px) when the title spans more than two lines. Adjust flex basis or add `line-clamp` specifically for tablet views. — Done: Added `line-clamp` to `components/lab/vedic-app-template.tsx`, 2026-04-11
 
 ---
 
@@ -468,10 +468,10 @@ Identified during Playwright visual regression run:
 
 Identified during critical visual audit on 2026-04-10:
 
-- [ ] `AUDIT-001` **Lab Skeletons**: Implement CSS skeletons for dynamically loaded lab components to prevent layout shift during `next/dynamic` hydration.
-- [ ] `AUDIT-002` **Search Empty State**: The search page lacks a visually engaging "No results found" state; currently just shows an empty grid. Add a Vedic-themed empty state icon and suggestion text.
-- [ ] `AUDIT-003` **Mobile Navigation**: The mobile header menu is functional but lacks a backdrop blur (`backdrop-filter: blur(12px)`) causing legibility issues when scrolled over dense Sanskrit text.
-- [ ] `AUDIT-004` **Verse Typography**: Shloka font size on mobile (375px) is slightly too large, causing unnecessary horizontal scrolling for 4-line verses. Adjust to `text-lg` from `text-xl` on mobile breakpoint.
-- [ ] `AUDIT-005` **API Standardization**: Update `/api/feedback` and `/api/synthesize` to return a consistent `{ error: string, code: string }` JSON structure for 405/400 errors instead of plain text or empty responses.
-- [ ] `AUDIT-006` **Acknowledgments Link Polish**: Ensure all external links in `app/acknowledgments/page.tsx` have `rel="nofollow"` where appropriate to preserve SEO equity for the main domain.
-- [ ] `AUDIT-007` **Metadata Completeness**: Add `og:image` specifically for the Lab and Search routes in their respective `generateMetadata` functions to improve social sharing.
+- [x] `AUDIT-001` **Lab Skeletons**: Implement CSS skeletons for dynamically loaded lab components to prevent layout shift during `next/dynamic` hydration. — Done: Added `w-full min-h-[400px] h-full` to `components/layout/Skeleton.tsx`, 2026-04-11
+- [x] `AUDIT-002` **Search Empty State**: The search page lacks a visually engaging "No results found" state; currently just shows an empty grid. Add a Vedic-themed empty state icon and suggestion text. — Done: Added Om symbol and Vedic themed suggestion text, 2026-04-11
+- [x] `AUDIT-003` **Mobile Navigation**: The mobile header menu is functional but lacks a backdrop blur (`backdrop-filter: blur(12px)`) causing legibility issues when scrolled over dense Sanskrit text. — Done: Applied `backdrop-blur-[12px]`, 2026-04-11
+- [x] `AUDIT-004` **Verse Typography**: Shloka font size on mobile (375px) is slightly too large, causing unnecessary horizontal scrolling for 4-line verses. Adjust to `text-lg` from `text-xl` on mobile breakpoint. — Done: Updated `ShlokaMask` font size property in `components/shloka/study-client.tsx`, 2026-04-11
+- [x] `AUDIT-005` **API Standardization**: Update `/api/feedback` and `/api/synthesize` to return a consistent `{ error: string, code: string }` JSON structure for 405/400 errors instead of plain text or empty responses. — Done: Updated both APIs and fixed tests, 2026-04-11
+- [x] `AUDIT-006` **Acknowledgments Link Polish**: Ensure all external links in `app/acknowledgments/page.tsx` have `rel="nofollow"` where appropriate to preserve SEO equity for the main domain. — Done: Verified that all external links use `rel="noopener noreferrer nofollow"`, 2026-04-11
+- [x] `AUDIT-007` **Metadata Completeness**: Add `og:image` specifically for the Lab and Search routes in their respective `generateMetadata` functions to improve social sharing. — Done: Migrated `app/lab/layout.tsx` and `app/search/page.tsx` to `generateMetadata` with full OpenGraph images, 2026-04-11

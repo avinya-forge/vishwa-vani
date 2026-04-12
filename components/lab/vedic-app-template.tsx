@@ -34,7 +34,7 @@ export default function VedicAppTemplate({
           {icon}
         </div>
         <div>
-          <h3 className={`font-serif font-black text-xl ${textClass}`}>{title}</h3>
+          <h3 className={`font-serif font-black text-xl line-clamp-2 md:line-clamp-1 lg:line-clamp-2 ${textClass}`}>{title}</h3>
           <p className={`text-xs font-bold uppercase tracking-widest ${subtitleClass}`}>{subtitle}</p>
         </div>
       </div>

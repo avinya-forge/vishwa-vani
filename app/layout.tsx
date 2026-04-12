@@ -67,11 +67,12 @@ export default async function RootLayout({
         <meta name="theme-color" content="#EA580C" />
       </head>
       <body suppressHydrationWarning className={`${inter.variable} ${notoSerifDevanagari.variable} ${outfit.variable} font-sans min-h-screen flex flex-col bg-[#FDFBF7] text-stone-900 overflow-x-hidden`}>
+        <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:p-4 focus:bg-white focus:text-stone-900 focus:font-bold">Skip to content</a>
         <FeedbackWidget />
         <LocaleProvider>
           <SecurityShield />
           <Header />
-          <main className="flex-grow">
+          <main id="main-content" className="flex-grow">
             {children}
           </main>
           <Footer />

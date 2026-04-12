@@ -4,6 +4,25 @@
   "note": "Only Gold-tier (verified and complete) books are active in manifest.",
   "books": [
     {
+      "book_id": "isha-upanishad",
+      "title": {
+        "en": "Isha Upanishad",
+        "hi": "ईशावास्योपनिषद्",
+        "mr": "ईशावास्योपनिषद्",
+        "sa": "ईशावास्योपनिषद्"
+      },
+      "total_chapters": 1,
+      "shards": [
+        {
+          "chapter": 1,
+          "file": "isha-upanishad-chapter-1.json",
+          "verse_count": 10
+        }
+      ],
+      "completeness_score": 100.0,
+      "status": "GOLD"
+    },
+    {
       "book_id": "bhagavad-gita",
       "title": {
         "en": "Bhagavad Gita",

@@ -6,11 +6,11 @@ export async function POST(request: Request) {
     const { type, message, email } = body
 
     if (!type || !message) {
-      return NextResponse.json({ success: false, error: 'Type and message are required', message: 'Type and message are required', code: 'MISSING_FIELDS' }, { status: 400 })
+      return NextResponse.json({ error: 'Type and message are required', code: 'MISSING_FIELDS' }, { status: 400 })
     }
 
     if (message.length < 200) {
-      return NextResponse.json({ success: false, error: 'Message must be at least 200 characters long', message: 'Message must be at least 200 characters long', code: 'MESSAGE_TOO_SHORT' }, { status: 400 })
+      return NextResponse.json({ error: 'Message must be at least 200 characters long', code: 'MESSAGE_TOO_SHORT' }, { status: 400 })
     }
 
     const githubToken = process.env.GITHUB_TOKEN
@@ -49,7 +49,7 @@ ${message}
     if (!response.ok) {
       const errorData = await response.json()
       console.error('GitHub API error:', errorData)
-      return NextResponse.json({ success: false, error: 'Failed to create GitHub issue', message: 'Failed to create GitHub issue', code: 'GITHUB_API_ERROR' }, { status: 502 })
+      return NextResponse.json({ error: 'Failed to create GitHub issue', code: 'GITHUB_API_ERROR' }, { status: 502 })
     }
 
     const data = await response.json()
@@ -61,10 +61,10 @@ ${message}
 
   } catch (error) {
     console.error('Feedback API error:', error)
-    return NextResponse.json({ success: false, error: 'Internal server error', message: 'Internal server error', code: 'INTERNAL_ERROR' }, { status: 500 })
+    return NextResponse.json({ error: 'Internal server error', code: 'INTERNAL_ERROR' }, { status: 500 })
   }
 }
 
 export async function GET() {
-  return NextResponse.json({ success: false, error: 'Method not allowed', message: 'Method not allowed', code: 'METHOD_NOT_ALLOWED' }, { status: 405 })
+  return NextResponse.json({ error: 'Method not allowed', code: 'METHOD_NOT_ALLOWED' }, { status: 405 })
 }

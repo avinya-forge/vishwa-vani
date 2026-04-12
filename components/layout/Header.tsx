@@ -86,7 +86,7 @@ export default function Header() {
               <button
                 onClick={() => setShowLibrary(v => !v)}
                 aria-expanded={showLibrary}
-                className={`flex items-center gap-1 px-3 py-1.5 rounded-md text-xs font-bold transition-all ${showLibrary || isOnTextPage ? 'text-orange-600 bg-orange-50' : 'text-stone-600 hover:text-stone-900 hover:bg-stone-50'}`}
+                className={`flex items-center gap-1 px-3 py-1.5 rounded-md text-xs font-bold transition-all focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:outline-none ${showLibrary || isOnTextPage ? 'text-orange-600 bg-orange-50' : 'text-stone-600 hover:text-stone-900 hover:bg-stone-50'}`}
               >
                 Library
                 <svg className={`w-3 h-3 transition-transform duration-200 ${showLibrary ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path d="M19 9l-7 7-7-7" /></svg>
@@ -152,11 +152,11 @@ export default function Header() {
               )}
             </div>
 
-            <Link href="/search" className={`px-3 py-1.5 rounded-md text-xs font-bold transition-all ${pathname === '/search' ? 'text-orange-600 bg-orange-50' : 'text-stone-600 hover:text-stone-900 hover:bg-stone-50'}`}>
+            <Link href="/search" className={`px-3 py-1.5 rounded-md text-xs font-bold transition-all focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:outline-none ${pathname === '/search' ? 'text-orange-600 bg-orange-50' : 'text-stone-600 hover:text-stone-900 hover:bg-stone-50'}`}>
               Search
             </Link>
 
-            <Link href="/lab" className={`flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-bold transition-all ${pathname === '/lab' ? 'text-orange-600 bg-orange-50' : 'text-orange-600 hover:bg-orange-50'}`}>
+            <Link href="/lab" className={`flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-bold transition-all focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:outline-none ${pathname === '/lab' ? 'text-orange-600 bg-orange-50' : 'text-orange-600 hover:bg-orange-50'}`}>
               <span className="text-[13px]">🧪</span> Vedic Labs
             </Link>
           </div>
@@ -190,7 +190,7 @@ export default function Header() {
           {/* Mobile hamburger */}
           <button
             onClick={() => setShowMobileMenu(v => !v)}
-            className="lg:hidden p-2 rounded-lg bg-stone-50 text-stone-600 hover:bg-orange-50 hover:text-orange-600 transition-all"
+            className="lg:hidden p-2 rounded-lg bg-stone-50 text-stone-600 hover:bg-orange-50 hover:text-orange-600 transition-all focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:outline-none"
             aria-label="Toggle Navigation Menu"
             aria-expanded={showMobileMenu}
           >

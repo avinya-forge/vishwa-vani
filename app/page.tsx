@@ -35,7 +35,7 @@ export default function Home() {
           Eternal Wisdom · Open Access
         </div>
 
-        <h1 className="text-4xl md:text-6xl font-serif font-black text-stone-900 leading-[1.05] tracking-tight mb-4">
+        <h1 className="text-3xl sm:text-4xl md:text-6xl font-serif font-black text-stone-900 leading-[1.05] tracking-tight mb-4">
           The Universal Repository<br className="hidden md:block" /> of Vedic Wisdom
         </h1>
 

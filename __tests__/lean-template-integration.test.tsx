@@ -161,7 +161,7 @@ describe('StudyClient - Lean Template Integration', () => {
       
       render(<StudyClient {...defaultProps} />);
 
-      const aiButton = screen.getByRole('button', { name: /AI Analysis/i });
+      const aiButton = screen.getByRole('button', { name: /Generate AI Synthesis for entire chapter/i });
       expect(aiButton).toBeInTheDocument();
 
       // Button availability confirms synthesis is set up for lean template
@@ -217,7 +217,7 @@ describe('StudyClient - Lean Template Integration', () => {
       // Verify key elements are present
       expect(screen.getByTestId('hierarchical-nav')).toBeInTheDocument();
       expect(screen.getByTestId('vedic-timeline')).toBeInTheDocument();
-      expect(screen.getByRole('button', { name: /AI Analysis/i })).toBeInTheDocument();
+      expect(screen.getByRole('button', { name: /Generate AI Synthesis for entire chapter/i })).toBeInTheDocument();
     });
   });
 

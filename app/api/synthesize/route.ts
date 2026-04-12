@@ -10,21 +10,21 @@ export async function POST(request: Request) {
 
     if (!verseId || typeof verseId !== 'string') {
       return NextResponse.json(
-        { success: false, error: 'Missing or invalid verseId.', message: 'Missing or invalid verseId.', code: 'INVALID_VERSE_ID' },
+        { error: 'Missing or invalid verseId.', code: 'INVALID_VERSE_ID' },
         { status: 400 }
       )
     }
 
     if (!Array.isArray(contextTexts) || contextTexts.length === 0) {
       return NextResponse.json(
-        { success: false, error: 'No context text provided for synthesis.', message: 'No context text provided for synthesis.', code: 'NO_CONTEXT' },
+        { error: 'No context text provided for synthesis.', code: 'NO_CONTEXT' },
         { status: 400 }
       )
     }
 
     if (!SUPPORTED_LANGUAGES.includes(language as Language)) {
       return NextResponse.json(
-        { success: false, error: 'Unsupported language. Use en, hi, or mr.', message: 'Unsupported language. Use en, hi, or mr.', code: 'UNSUPPORTED_LANGUAGE' },
+        { error: 'Unsupported language. Use en, hi, or mr.', code: 'UNSUPPORTED_LANGUAGE' },
         { status: 400 }
       )
     }
@@ -35,7 +35,7 @@ export async function POST(request: Request) {
 
     if (validTexts.length === 0) {
       return NextResponse.json(
-        { success: false, error: 'All context texts were empty or invalid.', message: 'All context texts were empty or invalid.', code: 'EMPTY_CONTEXT' },
+        { error: 'All context texts were empty or invalid.', code: 'EMPTY_CONTEXT' },
         { status: 400 }
       )
     }
@@ -66,12 +66,12 @@ export async function POST(request: Request) {
   } catch (error) {
     console.error('API synthesis error:', error)
     return NextResponse.json(
-      { success: false, error: 'Synthesis service temporarily unavailable.', message: 'Synthesis service temporarily unavailable.', code: 'SERVICE_UNAVAILABLE' },
+      { error: 'Synthesis service temporarily unavailable.', code: 'SERVICE_UNAVAILABLE' },
       { status: 503 }
     )
   }
 }
 
 export async function GET() {
-  return NextResponse.json({ success: false, error: 'Method not allowed', message: 'Method not allowed', code: 'METHOD_NOT_ALLOWED' }, { status: 405 })
+  return NextResponse.json({ error: 'Method not allowed', code: 'METHOD_NOT_ALLOWED' }, { status: 405 })
 }
