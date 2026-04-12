@@ -215,6 +215,22 @@ def scan_fragments(fragments: List[Dict], index: Dict) -> Tuple[int, int, int, i
     return total_refs, valid_refs, broken_refs, dangling_refs, broken_examples
 
 
+def load_parva_4():
+    import json
+    path = DATA_DIR / "parva-4" / "parva-4-data.json"
+    if path.exists():
+        with open(path) as f:
+            return json.load(f)
+    return []
+
+def load_parva_5():
+    import json
+    path = DATA_DIR / "parva-5" / "parva-5-data.json"
+    if path.exists():
+        with open(path) as f:
+            return json.load(f)
+    return []
+
 def main():
     """Main validation flow."""
     print("Loading fragments...")
@@ -227,7 +243,13 @@ def main():
     frags_p3 = load_parva_3()
     print(f"  Parva 3: {len(frags_p3)} fragments")
 
-    all_fragments = frags_p1 + frags_p2 + frags_p3
+    frags_p4 = load_parva_4()
+    print(f"  Parva 4: {len(frags_p4)} fragments")
+
+    frags_p5 = load_parva_5()
+    print(f"  Parva 5: {len(frags_p5)} fragments")
+
+    all_fragments = frags_p1 + frags_p2 + frags_p3 + frags_p4 + frags_p5
     total_fragments = len(all_fragments)
     print(f"  Total: {total_fragments} fragments")
 
@@ -242,6 +264,8 @@ def main():
     max_adhyaya_p1 = max((f.get('chapter', 0) for f in frags_p1), default=0)
     max_adhyaya_p2 = max((f.get('chapter', 0) for f in frags_p2), default=0)
     max_adhyaya_p3 = max((f.get('chapter', 0) for f in frags_p3), default=0)
+    max_adhyaya_p4 = max((f.get('chapter', 0) for f in frags_p4), default=0)
+    max_adhyaya_p5 = max((f.get('chapter', 0) for f in frags_p5), default=0)
 
     # Generate report
     report_lines = [
@@ -263,7 +287,9 @@ def main():
         f"- **Parva 1**: {len(frags_p1)} fragments across {max_adhyaya_p1} adhyayas",
         f"- **Parva 2**: {len(frags_p2)} fragments across {max_adhyaya_p2} adhyayas",
         f"- **Parva 3**: {len(frags_p3)} fragments across {max_adhyaya_p3} adhyayas",
-        f"- **Parva 4-18**: NOT ingested (will cause broken references if cited)",
+        f"- **Parva 4**: {len(frags_p4)} fragments across {max_adhyaya_p4} adhyayas",
+        f"- **Parva 5**: {len(frags_p5)} fragments across {max_adhyaya_p5} adhyayas",
+        f"- **Parva 6-18**: NOT ingested (will cause broken references if cited)",
         "",
         "## Reference Patterns Checked",
         "",
