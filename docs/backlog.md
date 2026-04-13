@@ -71,13 +71,13 @@ Never overwrite or replace existing tasks. Always ADD new tasks alongside existi
 
 - [x] `CONT-001` Update `lib/texts.ts` to set `mahabharata available: true` for all parvas that have data (parvas 1-3 currently have files but marked false) — Done: Updated `lib/texts.ts` setting `mahabharata available: true`, 2026-04-11
 - [x] `CONT-002` Verify and complete parva-1 shard registration in `manifest.json` — confirm all 225 adhyaya files are accessible via VedicDataService — Done: Verified that parva-1 with 225 adhyayas is properly registered, 2026-04-11
-- [ ] `CONT-003` Ingest Mahabharata Virata Parva (Parva 4) — acquire KMG source, convert to NVF 1.3 format, validate adhyaya counts, write to `data/3-gold/mahabharata/parva-4/`
-- [ ] `CONT-004` Ingest Mahabharata Udyoga Parva (Parva 5) — same pipeline as CONT-003, validate cross-references to earlier parvas
-- [ ] `CONT-005` Run `scripts/mbh_validate_refs.py` after CONT-003 and CONT-004 to verify no broken adhyaya references across parva boundaries
-- [ ] `CONT-006` Complete Isha Upanishad Phase 3 — add Adi Shankara Bhasya (commentary layer) to existing `data/3-gold/isha-upanishad/isha-upanishad-chapter-1.json`
+- [x] `CONT-003` Ingest Mahabharata Virata Parva (Parva 4) — acquire KMG source, convert to NVF 1.3 format, validate adhyaya counts, write to `data/3-gold/mahabharata/parva-4/`
+- [x] `CONT-004` Ingest Mahabharata Udyoga Parva (Parva 5) — same pipeline as CONT-003, validate cross-references to earlier parvas
+- [x] `CONT-005` Run `scripts/mbh_validate_refs.py` after CONT-003 and CONT-004 to verify no broken adhyaya references across parva boundaries
+- [x] `CONT-006` Complete Isha Upanishad Phase 3 — add Adi Shankara Bhasya (commentary layer) to existing `data/3-gold/isha-upanishad/isha-upanishad-chapter-1.json`
 - [x] `CONT-007` Update `lib/texts.ts` to set `isha-upanishad available: true` and verify `storage: 'json'` configuration — Done: Updated `lib/texts.ts` setting `isha-upanishad available: true` and verified `storage: 'json'` config, 2026-04-11
 - [x] `CONT-008` Verify Isha Upanishad shard registration in `manifest.json` — ensure 10 verses are all accessible — Done: Added missing Isha Upanishad shard to `manifest.json` with 10 verses, 2026-04-11
-- [ ] `CONT-009` Run spot-check validation on all available books (Gita 100%, Mahabharata parvas 1-5, Isha Upanishad 100%) — verify no truncated verses, no OCR artifacts, no missing transliterations
+- [x] `CONT-009` Run spot-check validation on all available books (Gita 100%, Mahabharata parvas 1-5, Isha Upanishad 100%) — verify no truncated verses, no OCR artifacts, no missing transliterations
 - [ ] `CONT-010` Create `scripts/content_quality_report.py` — generates markdown report of content status per book (verse count, commentary availability, language coverage)
 
 ---

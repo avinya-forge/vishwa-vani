@@ -50,6 +50,16 @@
 - Build: ✅ (84 pages generated)
 
 
+
+## [1.0.1] - 2026-04-12
+### Added
+- [CONT-003] Ingested Mahabharata Virata Parva (Parva 4) into Gold tier.
+- [CONT-004] Ingested Mahabharata Udyoga Parva (Parva 5) into Gold tier.
+- [CONT-006] Added Adi Shankara Bhasya commentary to Isha Upanishad Chapter 1.
+### Changed
+- [CONT-005] Updated `mbh_validate_refs.py` to cover newly ingested Parvas 4 and 5.
+- [CONT-009] Implemented spot-check validations for Gita, Mahabharata 1-5, and Isha Upanishad.
+
 ## [1.0.0] - 2026-04-09
 ### 🏆 PRODUCTION RELEASE
 - **v1.0.0 Milestone**: Official production release of Vishwa-Vani, the universal voice of Vedic wisdom.

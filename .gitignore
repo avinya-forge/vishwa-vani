@@ -3,15 +3,11 @@
 # dependencies
 /node_modules
 /.pnp
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/versions
+.pnp.js
 
 # testing
 /coverage
+/test-results
 
 # next.js
 /.next/
@@ -29,18 +25,9 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
-*.log
-*.log.*
-build_*.txt
-npm_output.log
-dev.log
-metric_summary.txt
-output.txt
-*.tmp
-*.bak
 
-# env files (can opt-in for committing if needed)
-.env*
+# local env files
+.env*.local
 
 # vercel
 .vercel
@@ -48,71 +35,19 @@ output.txt
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-.memory/
 
-# Lock files - usually kept, but can be ignored if only using one
-# package-lock.json
-# yarn.lock
-# pnpm-lock.yaml
+# Vishwa-Vani Specific
+# We ignore bronze/silver data as it's raw/processing and can be large
+/data/1-bronze/
+/data/2-silver/
+/data/logs/
+/data/tmp/
 
-# System files
-.DS_Store
-Thumbs.db
-*.pem
+# sqlite lake
+vedic-lake.db
+vedic-lake.db-journal
 
-# Vishwa-Vani Generated Assets & DBs
-/public/*.db
-/public/static_search_fallback.json
-/docs/generated/
-
-# STRICT AI AGENT RULES: No random subfolders or AI generated files
-# Ignore all random generated AI artifacts
-/tmp/
-/.tmp/
-/scratchpad/
-*.scratch.*
-/ai-artifacts/
-
-# Documentation restrictions
-# Enforce FLAT docs/ structure (no subdirectories allowed in docs/)
-/docs/*/
-# Explicitly track flat docs but ignore subdirectories
-!/docs/*.md
-
-# Skills (installed via npx skills experimental_install from skills-lock.json)
-/skills/
-/.agents/
-
-# Agent-specific skill directories (created by npx skills)
-/.adal/
-/.augment/
-/.bob/
-/.codebuddy/
-/.commandcode/
-/.continue/
-/.cortex/
-/.crush/
-/.factory/
-/.goose/
-/.iflow/
-/.junie/
-/.kilocode/
-/.kiro/
-/.kode/
-/.mcpjam/
-/.mux/
-/.neovate/
-/.openhands/
-/.pi/
-/.pochi/
-/.qoder/
-/.qwen/
-/.roo/
-/.trae/
-/.vibe/
-/.windsurf/
-/.zencoder/
-
-# Skill symlinks (resolved from skills-lock.json via npx skills experimental_install)
-/.agents/
-.claude/skills/
+data/3-gold/mahabharata/parva-*/*.json
+scripts/mock_data/
+data/mahabharata_chapter_*.json
+data/isha_upanishad_chapter_*.json
