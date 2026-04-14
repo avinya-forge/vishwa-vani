@@ -179,10 +179,10 @@ Every new book follows this 5-phase integration process used across all epics be
 - [x] `UX-009` Add verse permalink button (copies `/${textSlug}/${chapterNum}/${verseNum}` URL to clipboard with timestamp) — Done: Added link button to verse card using window.location.origin, 2026-04-13
 - [x] `UX-010` Optimize mobile toolbar layout — move "AI Analysis" button to floating action button (FAB) on bottom-right for <640px viewports — Done: Added floating FAB visible only on mobile, hid main button on mobile, 2026-04-13
 - [x] `UX-011` Implement swipe-to-next-chapter gesture on mobile (touch event listeners on verse list, swipe right=previous chapter, swipe left=next chapter) — Done: Added onTouchStart and onTouchEnd handling to main container for >50px swipe, 2026-04-13
-- [ ] `UX-012` Enhance search results page — add snippet preview of matching verse text (50 chars before/after match highlighted)
-- [ ] `UX-013` Add "No results" state to search with curated topic suggestions (e.g. "Try: dharma, brahman, yoga, meditation")
-- [ ] `UX-014` Write unit tests for UX enhancements (keyboard nav, clipboard copy, progress indicator, mobile gestures)
-- [ ] `UX-015` Run Lighthouse CI audit and document baseline scores (target: Performance ≥80, Accessibility ≥90, Best Practices ≥90, SEO ≥90)
+- [x] `UX-012` Enhance search results page — add snippet preview of matching verse text (50 chars before/after match highlighted) — Done: Added client-side text matching to display snippets, 2026-04-14
+- [x] `UX-013` Add "No results" state to search with curated topic suggestions (e.g. "Try: dharma, brahman, yoga, meditation") — Done: Implemented clickable topic suggestion chips, 2026-04-14
+- [x] `UX-014` Write unit tests for UX enhancements (keyboard nav, clipboard copy, progress indicator, mobile gestures) — Done: Added comprehensive userEvent and touchEvent tests, 2026-04-14
+- [x] `UX-015` Run Lighthouse CI audit and document baseline scores (target: Performance ≥80, Accessibility ≥90, Best Practices ≥90, SEO ≥90) — Done: Ran baseline via CLI; logged in release notes, 2026-04-14
 
 ---
 

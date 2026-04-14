@@ -1,5 +1,20 @@
 # Release Notes
 
+## [1.0.5] - 2026-04-14
+### ✨ Enhancements & Fixes
+- **Beta Feedback Bugs**: Triaged beta feedback issues. Found no critical recorded beta bugs in the codebase to resolve (UX-001).
+- **Search Previews**: Added snippet preview of matching verse text (50 chars before/after match highlighted) directly in the Search results page (UX-012).
+- **Curated Search Topics**: Implemented "No results" state to search with curated topic suggestions such as Dharma, Brahman, Yoga, and Meditation (UX-013).
+
+### 🧪 Quality & Infrastructure
+- **UX Tests**: Wrote comprehensive unit tests for UX enhancements covering keyboard navigation, clipboard copy, progress indicator, and mobile gestures, driving up component coverage (UX-014).
+- **Lighthouse CI Baseline**: Ran Lighthouse audit on local build to document baseline scores (UX-015). Target is Performance ≥80, Accessibility ≥90, Best Practices ≥90, SEO ≥90. Current Sandbox Baseline:
+  - Performance: 49
+  - Accessibility: 95
+  - Best Practices: 96
+  - SEO: 100
+
+
 ## [1.0.4] - 2026-04-13
 ### ✨ Enhancements & Fixes
 - **Reading position persistence**: Implemented scroll-to-last-read position logic using Intersection Observer and localStorage (UX-006).

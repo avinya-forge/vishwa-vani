@@ -52,6 +52,32 @@ export default function SearchClient() {
     })
   }, [results, activeTab])
 
+  const getSnippet = (text: string, q: string) => {
+    if (!text || !q || q.length < 3) return null
+    const lowerText = text.toLowerCase()
+    const lowerQ = q.toLowerCase()
+    const idx = lowerText.indexOf(lowerQ)
+    if (idx === -1) return null
+
+    const start = Math.max(0, idx - 50)
+    const end = Math.min(text.length, idx + q.length + 50)
+
+    const prefix = start > 0 ? '...' : ''
+    const suffix = end < text.length ? '...' : ''
+
+    const beforeMatch = text.slice(start, idx)
+    const match = text.slice(idx, idx + q.length)
+    const afterMatch = text.slice(idx + q.length, end)
+
+    return (
+      <span>
+        {prefix}{beforeMatch}
+        <mark className="bg-orange-200 text-stone-900 rounded px-1">{match}</mark>
+        {afterMatch}{suffix}
+      </span>
+    )
+  }
+
   return (
     <div className="max-wide px-6 py-12 md:py-20">
       <div className="max-w-4xl mx-auto mb-12">
@@ -131,9 +157,14 @@ export default function SearchClient() {
                     <p className="text-stone-900 font-serif text-xl md:text-2xl font-black mb-3 leading-snug group-hover:text-orange-600 transition-colors">
                       {result.slok}
                     </p>
-                    <p className="text-stone-500 italic text-sm leading-relaxed line-clamp-2 font-serif opacity-70 group-hover:opacity-100 transition-opacity">
+                    <p className="text-stone-500 italic text-sm leading-relaxed line-clamp-2 font-serif opacity-70 group-hover:opacity-100 transition-opacity mb-3">
                       {result.transliteration}
                     </p>
+                    {(getSnippet(result.slok, query) || getSnippet(result.transliteration, query)) && (
+                      <p className="text-sm text-stone-600 bg-stone-50 p-3 rounded border border-stone-100 italic leading-relaxed">
+                        {getSnippet(result.slok, query) || getSnippet(result.transliteration, query)}
+                      </p>
+                    )}
                   </div>
                 </Link>
               )
@@ -143,6 +174,22 @@ export default function SearchClient() {
                <div className="text-6xl mb-6 opacity-20">🕯️</div>
                <p className="text-stone-900 font-serif font-black text-2xl mb-2">No fragments found</p>
                <p className="text-stone-400 font-medium max-w-xs mx-auto mb-8">Matching your intent '{query}' across the shards.</p>
+
+               <div className="flex flex-col items-center gap-4 mb-8">
+                 <span className="text-xs font-bold uppercase tracking-widest text-stone-500">Suggested Topics</span>
+                 <div className="flex flex-wrap justify-center gap-2">
+                   {['Dharma', 'Brahman', 'Yoga', 'Meditation'].map(topic => (
+                     <button
+                       key={topic}
+                       onClick={() => setQuery(topic.toLowerCase())}
+                       className="px-4 py-2 bg-stone-50 hover:bg-orange-100 text-stone-700 hover:text-orange-800 text-sm font-semibold rounded-full border border-stone-200 hover:border-orange-300 transition-all"
+                     >
+                       Try: {topic}
+                     </button>
+                   ))}
+                 </div>
+               </div>
+
                <button onClick={() => setQuery('')} className="px-8 py-3 bg-stone-900 text-white font-black uppercase text-[10px] tracking-[0.2em] rounded-xl hover:bg-orange-600 transition-all shadow-lg shadow-stone-200">Clear Search</button>
             </div>
           ) : (

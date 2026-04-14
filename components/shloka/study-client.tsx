@@ -703,7 +703,7 @@ export default function StudyClient({
       </div>
 
       {/* ═══════════════════════════════════════════ VERSES ═══ */}
-      <main className="bg-[#FDFBF8] min-h-screen" onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
+      <main className="bg-[#FDFBF8] min-h-screen" data-testid="study-container" onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
         <div className="max-w-[900px] mx-auto px-3 sm:px-4 lg:px-6 py-4 sm:py-8 space-y-4 sm:space-y-6">
           {/* Vedic Timeline — compact version at top */}
           <VedicTimeline slug={textSlug} />
