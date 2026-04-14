@@ -86,6 +86,33 @@ beforeEach(() => {
 
 // ─── Tests ────────────────────────────────────────────────────────────────────
 
+
+beforeAll(() => {
+  // Mock IntersectionObserver
+  class IntersectionObserver {
+    callback: (...args: unknown[]) => unknown;
+    constructor(callback: (...args: unknown[]) => unknown) {
+      this.callback = callback;
+    }
+    observe = jest.fn((el) => {
+      // simulate intersection immediately
+      if (el && el.id && el.id === 'verse-1') {
+        setTimeout(() => {
+          this.callback([{ isIntersecting: true, target: el }]);
+        }, 0);
+      }
+    })
+    disconnect = jest.fn()
+    unobserve = jest.fn()
+  }
+  Object.defineProperty(window, 'IntersectionObserver', {
+    writable: true,
+    configurable: true,
+    value: IntersectionObserver
+  })
+})
+
+
 describe('StudyClient — STAB-606 coverage', () => {
 
   // ── LEAN TEMPLATE: Default State ──────────────────────────────────────────

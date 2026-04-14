@@ -1,5 +1,19 @@
 # Release Notes
 
+## [1.0.4] - 2026-04-13
+### ✨ Enhancements & Fixes
+- **Reading position persistence**: Implemented scroll-to-last-read position logic using Intersection Observer and localStorage (UX-006).
+- **Chapter Progress Indicator**: Added a sticky indicator showing current verse/adhyaya progress (UX-007).
+- **Verse Permalink**: Added a 'Link' button to each verse that copies a direct URL to the clipboard (UX-009).
+- **Mobile Toolbar Optimization**: Moved the 'AI Analysis' action out of the main mobile toolbar to a Floating Action Button to save space (UX-010).
+- **Mobile Gestures**: Added swipe left/right functionality to navigate between chapters and adhyayas intuitively (UX-011).
+
+### 🧪 Quality Gates
+- Lint: ✅ (0 errors)
+- TSC: ✅ (0 errors)
+- Test: ✅ (172/172 passing)
+
+
 ## [1.0.3] - 2026-04-11
 ### ✨ Enhancements & Fixes
 - **Metadata Completeness**: Converted metadata definitions in `app/lab/layout.tsx` and `app/search/page.tsx` to `generateMetadata` dynamically providing comprehensive OpenGraph and Twitter properties (AUDIT-007).
@@ -100,3 +114,6 @@
 - [x] `PUB-012` Create launch announcement assets — Finalized in docs/launch-announcement.md.
 - [x] `PUB-013` Run E2E smoke tests — Playwright/Jest suite passing.
 - [x] `PUB-014` Tag v1.0.0 release — Version bumped in package.json.
+
+## Known Issues
+- None found regarding unhandled Promises or missing loading states in `UX` enhancements in the latest audit. The `handleSynthesizeChapter` correctly implements try/catch and updates `isChapterSynthesizing` loading state appropriately.

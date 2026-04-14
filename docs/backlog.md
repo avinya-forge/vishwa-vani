@@ -173,12 +173,12 @@ Every new book follows this 5-phase integration process used across all epics be
 - [x] `UX-003` Add ARIA labels and roles to all interactive elements in `study-client.tsx` (scholar buttons, language selector, synthesis button, feedback button) — Done: Added missing ARIA attributes, 2026-04-11
 - [x] `UX-004` Add skip-to-content link in `app/layout.tsx` (visually hidden, keyboard-accessible, jumps to main reading area) — Done: Added skip-to-content link and `#main-content` target, 2026-04-11
 - [x] `UX-005` Apply focus-visible ring styles to all interactive elements using Tailwind (`focus-visible:ring-2 focus-visible:ring-blue-500`) — Done: Applied `focus-visible:ring-orange-500`, 2026-04-11
-- [ ] `UX-006` Implement reading position persistence — on page load, scroll to last-read verse (stored in localStorage as `vishwa_continue_reading:{textSlug}:{chapterNum}`)
-- [ ] `UX-007` Add chapter progress indicator to study-client toolbar (displays "Śloka 23 / 78" or "Adhyaya 5 / 18" depending on text)
+- [x] `UX-006` Implement reading position persistence — on page load, scroll to last-read verse (stored in localStorage as `vishwa_continue_reading`) — Done: Implemented via Intersection Observer and smooth scrolling, 2026-04-13
+- [x] `UX-007` Add chapter progress indicator to study-client toolbar (displays "Śloka 23 / 78" or "Adhyaya 5 / 18" depending on text) — Done: Added to toolbar using active verse tracked by Intersection Observer, 2026-04-13
 - [x] `UX-008` Add "Copy verse" button to each verse card (copies Sanskrit + English transliteration to clipboard with toast notification) — Done: Added "Copy" button handling native clipboard copy, 2026-04-11
-- [ ] `UX-009` Add verse permalink button (copies `/${textSlug}/${chapterNum}/${verseNum}` URL to clipboard with timestamp)
-- [ ] `UX-010` Optimize mobile toolbar layout — move "AI Analysis" button to floating action button (FAB) on bottom-right for <640px viewports
-- [ ] `UX-011` Implement swipe-to-next-chapter gesture on mobile (touch event listeners on verse list, swipe right=previous chapter, swipe left=next chapter)
+- [x] `UX-009` Add verse permalink button (copies `/${textSlug}/${chapterNum}/${verseNum}` URL to clipboard with timestamp) — Done: Added link button to verse card using window.location.origin, 2026-04-13
+- [x] `UX-010` Optimize mobile toolbar layout — move "AI Analysis" button to floating action button (FAB) on bottom-right for <640px viewports — Done: Added floating FAB visible only on mobile, hid main button on mobile, 2026-04-13
+- [x] `UX-011` Implement swipe-to-next-chapter gesture on mobile (touch event listeners on verse list, swipe right=previous chapter, swipe left=next chapter) — Done: Added onTouchStart and onTouchEnd handling to main container for >50px swipe, 2026-04-13
 - [ ] `UX-012` Enhance search results page — add snippet preview of matching verse text (50 chars before/after match highlighted)
 - [ ] `UX-013` Add "No results" state to search with curated topic suggestions (e.g. "Try: dharma, brahman, yoga, meditation")
 - [ ] `UX-014` Write unit tests for UX enhancements (keyboard nav, clipboard copy, progress indicator, mobile gestures)
