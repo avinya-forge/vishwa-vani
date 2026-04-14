@@ -3,9 +3,9 @@
 import Link from 'next/link'
 import { useTranslations, useLocale } from 'next-intl'
 import { usePathname } from 'next/navigation'
-import { VEDIC_LIBRARY } from '@/lib/texts'
+import { VEDIC_LIBRARY, getLibraryStats } from '@/lib/texts'
 import { useState, useEffect, useRef } from 'react'
-import stats from '@/lib/stats.json'
+import { ThemeToggle } from '@/components/theme-toggle'
 
 // Custom hook to handle clicks outside the ref element generically
 function useOnClickOutside(ref: React.RefObject<HTMLDivElement | null>, handler: (event: MouseEvent | TouchEvent) => void) {
@@ -60,6 +60,7 @@ export default function Header() {
   const isOnTextPage = pathname.startsWith('/') && pathname.split('/').length >= 3 && !['search', 'lab', 'acknowledgments'].includes(pathname.split('/')[1])
 
   // Group available books by category  
+  const stats = getLibraryStats()
   const availableBooks = VEDIC_LIBRARY.filter(b => b.available)
   
   const topBooks = availableBooks.slice(0, 5)
@@ -177,6 +178,8 @@ export default function Header() {
 
         {/* Right actions */}
         <div className="flex items-center gap-2">
+          <ThemeToggle />
+          
           <Link
             href={`/${defaultTextSlug}/1`}
             onClick={() => {

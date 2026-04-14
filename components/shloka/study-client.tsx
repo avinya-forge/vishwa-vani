@@ -208,8 +208,8 @@ export default function StudyClient({
   const isValidCommentaryContent = (content: string) => {
     if (!content || typeof content !== 'string') return false
     const trimmed = content.trim()
-    if (trimmed.length < 80) return false
-    const placeholderPatterns = ['PLACEHOLDER', 'TBD', 'DNYAN', 'TODO', 'TODO', 'lorem ipsum']
+    if (trimmed.length < 20) return false // Lowered threshold to catch short but valid verses
+    const placeholderPatterns = ['[PLACEHOLDER_', 'TBD_CONTENT', 'TODO_LAYER', 'LOREM IPSUM']
     if (placeholderPatterns.some(p => trimmed.toUpperCase().includes(p.toUpperCase()))) {
       return false
     }
@@ -512,68 +512,59 @@ export default function StudyClient({
   return (
     <>
       {/* ═══════════════════════════════════════════ HEADER ═══ */}
-      <header className="bg-white border-b border-stone-100 pt-6 pb-4 overflow-visible relative">
+      <header className="bg-white dark:bg-[#1c1917] border-b border-stone-100 dark:border-stone-800 pt-3 pb-3 overflow-visible relative">
         {/* Soft warm glow — top right only */}
-        <div className="absolute top-0 right-0 w-80 h-80 bg-orange-50 rounded-full blur-[90px] -mr-40 -mt-20 opacity-60 pointer-events-none" />
+        <div className="absolute top-0 right-0 w-80 h-80 bg-orange-50 dark:bg-orange-950/20 rounded-full blur-[90px] -mr-40 -mt-20 opacity-60 pointer-events-none" />
 
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 relative z-10">
-          {/* Breadcrumb */}
-          <div className="flex items-center gap-2 mb-4">
-            <Link href="/" className="text-[10px] font-bold uppercase tracking-[0.3em] text-orange-500 hover:text-orange-600 transition-colors flex items-center gap-1.5">
+
+          {/* 3-column header row: back | title | nav */}
+          <div className="grid grid-cols-[auto_1fr_auto] items-center gap-3">
+
+            {/* LEFT — back to library */}
+            <Link
+              href="/"
+              className="text-[10px] font-bold uppercase tracking-[0.3em] text-orange-500 hover:text-orange-600 transition-colors flex items-center gap-1 whitespace-nowrap"
+            >
               &larr; Library
             </Link>
-            <span className="text-stone-200">·</span>
-            <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-stone-300">Scholarly Reading</span>
-          </div>
 
-          {/* Title Row */}
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-            <div className="flex items-center gap-4">
-              {/* Saffron accent bar */}
-              <div className="w-1 h-10 bg-gradient-to-b from-orange-600 to-orange-200 rounded-full flex-shrink-0" />
-              <div>
-                <h1 className="text-3xl md:text-4xl font-serif font-black text-stone-900 leading-none tracking-tight">
-                  {bookData?.name || textSlug}
-                  {isParva && currentAdhyaya && (
-                    <span className="flex items-center gap-3 text-sm font-normal text-stone-500 mt-1">
-                      <span>Parva {chapter} / Adhyaya {currentAdhyaya} of {adhyayaList.length}</span>
-                      <AdhyayaShareLink textSlug={textSlug} chapter={chapter} adhyaya={activeAdhyaya} />
-                    </span>
-                  )}
-                </h1>
-                <div className="mt-2.5">
-                  <HierarchicalNav levels={navLevels} />
-                </div>
-              </div>
+            {/* CENTER — book title */}
+            <div className="flex flex-col items-center justify-center text-center min-w-0">
+              <h1 className="text-base sm:text-lg font-serif font-bold text-stone-800 dark:text-stone-100 tracking-wide uppercase leading-tight truncate max-w-full">
+                {bookData?.name || textSlug}
+              </h1>
+              {bookData?.chapterNames?.[String(chapter)] && (
+                <p className="text-[10px] font-medium text-stone-400 dark:text-stone-500 mt-0.5 tracking-wide truncate max-w-full">
+                  {bookData.chapterNames[String(chapter)]}
+                </p>
+              )}
+              {isParva && currentAdhyaya && (
+                <span className="flex items-center justify-center gap-2 text-[10px] font-normal text-stone-400 dark:text-stone-500 mt-0.5">
+                  <span>Parva {chapter} · Adhyaya {currentAdhyaya} of {adhyayaList.length}</span>
+                  <AdhyayaShareLink textSlug={textSlug} chapter={chapter} adhyaya={activeAdhyaya} />
+                </span>
+              )}
             </div>
 
-            {/* Prev / Next navigation */}
-            <div className="flex items-center gap-1.5 hidden md:flex">
-              <button 
-                onClick={() => router.push(`/${textSlug}/${Math.max(1, chapter - 1)}`)} 
-                disabled={chapter === 1}
-                className="p-2 rounded-lg border border-stone-200 hover:border-orange-400 hover:text-orange-600 disabled:opacity-30 transition-all bg-white"
-              >
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path d="M15 19l-7-7 7-7" /></svg>
-              </button>
-              <span className="text-[10px] font-black tracking-widest text-stone-300 px-2">{chapter} / {totalChapters}</span>
-              <button 
-                onClick={() => router.push(`/${textSlug}/${chapter + 1}`)} 
-                disabled={chapter >= totalChapters}
-                className="p-2 rounded-lg border border-stone-200 hover:border-orange-400 hover:text-orange-600 disabled:opacity-30 transition-all bg-white"
-              >
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path d="M9 5l7 7-7 7" /></svg>
-              </button>
+            {/* RIGHT — chapter nav + prev/next */}
+            <div className="flex items-center gap-1.5 flex-shrink-0">
               <button
-                onClick={() => {
-                  const event = new CustomEvent('open-feedback', { detail: { textSlug, chapter } });
-                  window.dispatchEvent(event);
-                }}
-                aria-label="Report an issue or give feedback"
-                className="p-2 rounded-lg border border-stone-200 hover:border-orange-400 hover:text-orange-600 transition-all bg-white ml-2 focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:outline-none"
-                title="Report an issue or give feedback"
+                onClick={() => router.push(`/${textSlug}/${Math.max(1, chapter - 1)}`)}
+                disabled={chapter === 1}
+                className="p-1.5 rounded-lg border border-stone-200 dark:border-stone-700 hover:border-orange-400 hover:text-orange-600 dark:hover:border-orange-500 disabled:opacity-30 transition-all bg-white dark:bg-stone-800 text-stone-600 dark:text-stone-300"
+                aria-label="Previous chapter"
               >
-                💬
+                <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path d="M15 19l-7-7 7-7" /></svg>
+              </button>
+              <HierarchicalNav levels={navLevels} />
+              <button
+                onClick={() => router.push(`/${textSlug}/${chapter + 1}`)}
+                disabled={chapter >= totalChapters}
+                className="p-1.5 rounded-lg border border-stone-200 dark:border-stone-700 hover:border-orange-400 hover:text-orange-600 dark:hover:border-orange-500 disabled:opacity-30 transition-all bg-white dark:bg-stone-800 text-stone-600 dark:text-stone-300"
+                aria-label="Next chapter"
+              >
+                <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path d="M9 5l7 7-7 7" /></svg>
               </button>
             </div>
           </div>
@@ -581,22 +572,26 @@ export default function StudyClient({
       </header>
 
       {/* ═══════════════════════════════════════════ TOOLBAR ═══ */}
-      <div className="sticky top-16 z-40 bg-white/90 backdrop-blur-md border-b border-stone-100 shadow-sm">
-        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 flex items-center justify-between py-3 gap-2 sm:gap-4 flex-wrap">
-          <div className="flex flex-wrap items-center gap-2 sm:gap-3 min-w-0">
+      <div className="sticky top-[3.5rem] z-40 bg-white/90 dark:bg-stone-900/90 backdrop-blur-md border-b border-stone-100 dark:border-stone-800 shadow-sm">
+        <div className="max-w-[1400px] mx-auto px-3 sm:px-6 flex flex-row items-center justify-between py-2 gap-2">
+
+          {/* Left group — progress + scholars + language */}
+          <div className="flex items-center gap-2 min-w-0 overflow-x-auto">
 
             {/* Progress indicator */}
-            <div className="hidden sm:flex items-center ml-2 px-3 py-1.5 bg-stone-100 rounded-full text-xs font-medium text-stone-600 shadow-inner">
+            <div className="hidden sm:flex items-center px-2.5 py-1 bg-stone-100 dark:bg-stone-800 rounded-full text-[11px] font-medium text-stone-500 dark:text-stone-400 flex-shrink-0">
               <span className="whitespace-nowrap" data-testid="chapter-progress">
                 {bookData?.category === 'itihas' ? 'Adhyaya' : 'Śloka'} {activeVerse} / {verses.length}
               </span>
             </div>
 
+            {/* Divider */}
+            <div className="hidden sm:block w-px h-4 bg-stone-200 dark:bg-stone-700 flex-shrink-0" />
+
             {/* Author selector - Lean template: checkboxes for up to 2 authors */}
-            <div className="flex items-center gap-2 text-xs font-semibold text-stone-600">
-              <span className="hidden xs:inline" data-testid="scholars-counter">Scholars ({scholarSelection.length}/{2})</span>
-              <span className="inline xs:hidden text-[10px]">S</span>
-              <div className="flex gap-1.5 max-w-xs overflow-x-auto" role="group" aria-label="Scholar Selection">
+            <div className="flex items-center gap-1.5 flex-shrink-0">
+              <span className="text-[10px] font-bold uppercase tracking-widest text-stone-400 dark:text-stone-500 whitespace-nowrap" data-testid="scholars-counter">Scholars {scholarSelection.length}/{2}</span>
+              <div className="flex gap-1" role="group" aria-label="Scholar Selection">
                 {availableScholars.filter(s => s !== 'none').slice(0, 5).map((author, index, arr) => {
                   const meta = getScholarMeta(author)
                   const isSelected = scholarSelection.includes(author)
@@ -622,50 +617,60 @@ export default function StudyClient({
                           document.getElementById(`scholar-btn-${arr[prevIdx]}`)?.focus()
                         }
                       }}
-                      className={`px-2.5 py-1.5 rounded border text-[11px] font-medium transition-all flex-shrink-0 focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:outline-none ${
+                      className={`px-2 py-1 rounded border text-[11px] font-medium transition-all flex-shrink-0 focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:outline-none ${
                         isSelected
-                          ? 'bg-orange-100 border-orange-300 text-orange-700'
-                          : 'bg-white border-stone-200 text-stone-600 hover:border-orange-300 hover:bg-orange-50'
+                          ? 'bg-orange-100 dark:bg-orange-950/50 border-orange-300 dark:border-orange-700 text-orange-700 dark:text-orange-400'
+                          : 'bg-white dark:bg-stone-800 border-stone-200 dark:border-stone-700 text-stone-600 dark:text-stone-400 hover:border-orange-300 hover:bg-orange-50 dark:hover:bg-orange-950/30'
                       }`}
                       title={isSelected ? `Deselect ${meta.label}` : scholarSelection.length >= 2 ? `Replace oldest with ${meta.label}` : meta.bio}
                     >
                       <span>{meta.icon}</span>
-                      <span className="hidden sm:inline ml-1">{meta.label}</span>
+                      <span className="hidden md:inline ml-1 text-[10px]">{meta.label}</span>
                     </button>
                   )
                 })}
               </div>
               {availableScholars.filter(s => s !== 'none').length > 5 && (
-                <span className="text-[10px] text-stone-400 hidden xs:inline">+{availableScholars.filter(s => s !== 'none').length - 5}</span>
+                <span className="text-[10px] text-stone-400">+{availableScholars.filter(s => s !== 'none').length - 5}</span>
               )}
             </div>
 
-            <label className="flex items-center gap-2 text-xs font-semibold text-stone-600 flex-shrink-0">
-              <span className="hidden xs:inline">Lang</span>
-              <span className="inline xs:hidden text-[10px]">L</span>
-              <select
-                value={languageSelection}
-                aria-label="Select commentary language"
-                onChange={(e) => updateLanguage(e.target.value)}
-                className={`px-2 sm:px-3 py-2 border rounded-lg text-xs sm:text-sm transition-colors focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:outline-none ${languageSelection !== 'all' ? 'bg-orange-100 border-orange-300 text-orange-900 font-bold' : 'bg-white border-stone-200 text-stone-600'}`}
-              >
-                {availableLanguages.map((lang) => (
-                  <option key={lang} value={lang}>
-                    {getLanguageLabel(lang)}
-                  </option>
-                ))}
-              </select>
-            </label>
+            {/* Divider */}
+            <div className="w-px h-4 bg-stone-200 dark:bg-stone-700 flex-shrink-0" />
+
+            {/* Language selector */}
+            <div className="flex items-center gap-1.5 flex-shrink-0">
+              <span className="text-[10px] font-bold uppercase tracking-widest text-stone-400 dark:text-stone-500 hidden sm:inline">Lang</span>
+              <div className="flex gap-0.5 bg-stone-100 dark:bg-stone-800 p-0.5 rounded-lg border border-stone-200 dark:border-stone-700" role="group" aria-label="Language selection">
+                {availableLanguages.map((lang) => {
+                  const isSelected = languageSelection === lang
+                  return (
+                    <button
+                      key={lang}
+                      onClick={() => updateLanguage(lang)}
+                      className={`px-2.5 py-1 rounded-md text-[10px] font-black uppercase tracking-tight transition-all ${
+                        isSelected
+                          ? 'bg-white dark:bg-stone-700 text-orange-600 dark:text-orange-400 shadow-sm'
+                          : 'text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300'
+                      }`}
+                    >
+                      {lang === 'all' ? 'All' : lang.toUpperCase()}
+                    </button>
+                  )
+                })}
+              </div>
+            </div>
           </div>
 
-          <div className="flex items-center gap-1.5 sm:gap-2 flex-shrink-0">
+          {/* Right group — actions */}
+          <div className="flex items-center gap-1 flex-shrink-0">
             {/* Share link button */}
             <button
               onClick={copyShareLink}
               title="Copy chapter link to clipboard"
-              className="p-2 rounded-lg border border-stone-200 hover:border-orange-400 hover:text-orange-600 transition-all bg-white text-stone-600"
+              className="p-1.5 rounded-lg border border-stone-200 dark:border-stone-700 hover:border-orange-400 hover:text-orange-600 dark:hover:border-orange-500 transition-all bg-white dark:bg-stone-800 text-stone-500 dark:text-stone-400"
             >
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+              <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.658 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
               </svg>
             </button>
@@ -675,16 +680,14 @@ export default function StudyClient({
               <button
                 onClick={jumpToFirstBookmark}
                 title={`Jump to first bookmark (${bookmarks.length})`}
-                className="p-2 rounded-lg border border-stone-200 hover:border-orange-400 hover:text-orange-600 transition-all bg-white text-stone-600 relative"
+                className="p-1.5 rounded-lg border border-stone-200 dark:border-stone-700 hover:border-orange-400 hover:text-orange-600 dark:hover:border-orange-500 transition-all bg-white dark:bg-stone-800 text-stone-500 dark:text-stone-400 relative"
               >
-                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M5 5a2 2 0 012-2h6a2 2 0 012 2v12H5V5zm8 12V5m0 12a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
                 </svg>
-                {bookmarks.length > 0 && (
-                  <span className="absolute -top-1 -right-1 bg-orange-600 text-white text-[9px] font-bold rounded-full w-4 h-4 flex items-center justify-center">
-                    {bookmarks.length}
-                  </span>
-                )}
+                <span className="absolute -top-1 -right-1 bg-orange-600 text-white text-[9px] font-bold rounded-full w-4 h-4 flex items-center justify-center">
+                  {bookmarks.length}
+                </span>
               </button>
             )}
 
@@ -693,7 +696,7 @@ export default function StudyClient({
               onClick={synthesizeEntireChapter}
               disabled={isChapterSynthesizing}
               aria-label={isChapterSynthesizing ? "Analysing chapter..." : "Generate AI Synthesis for entire chapter"}
-              className="hidden sm:flex flex-shrink-0 items-center gap-2 px-3 sm:px-5 py-2 bg-stone-900 hover:bg-orange-600 text-white text-xs font-bold rounded-full transition-all disabled:opacity-60 focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:outline-none"
+              className="hidden sm:flex flex-shrink-0 items-center gap-1.5 px-3 py-1.5 bg-stone-900 dark:bg-stone-700 hover:bg-orange-600 dark:hover:bg-orange-600 text-white text-[11px] font-bold rounded-full transition-all disabled:opacity-60 focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:outline-none"
             >
               <span>{isChapterSynthesizing ? '✨' : '🧠'}</span>
               <span className="hidden md:inline">{isChapterSynthesizing ? 'Analysing...' : 'AI Analysis'}</span>
@@ -703,8 +706,9 @@ export default function StudyClient({
       </div>
 
       {/* ═══════════════════════════════════════════ VERSES ═══ */}
-      <main className="bg-[#FDFBF8] min-h-screen" data-testid="study-container" onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
-        <div className="max-w-[900px] mx-auto px-3 sm:px-4 lg:px-6 py-4 sm:py-8 space-y-4 sm:space-y-6">
+      <main className="bg-[#FDFBF8] dark:bg-[#121212] min-h-screen" data-testid="study-container" onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
+        <div className="max-w-[1400px] mx-auto px-3 sm:px-4 lg:px-6 py-4 sm:py-8 flex lg:gap-8 justify-center items-start">
+          <div className="w-full max-w-[900px] space-y-4 sm:space-y-6">
           {/* Vedic Timeline — compact version at top */}
           <VedicTimeline slug={textSlug} />
 
@@ -751,11 +755,11 @@ export default function StudyClient({
                 id={`verse-${v.verse}`}
                 key={v.id as string}
                 ref={el => { verseRefs.current[v.verse as number] = el as HTMLElement | null }}
-                className="bg-white rounded-2xl border border-stone-100 shadow-sm hover:shadow-md hover:border-orange-100 transition-all duration-300 overflow-hidden"
+                className="bg-white dark:bg-[#121212] rounded-2xl border border-stone-100 dark:border-stone-800/80 shadow-sm hover:shadow-md dark:shadow-none hover:border-orange-100 dark:hover:border-orange-900/50 transition-all duration-300 overflow-hidden"
               >
                 {/* Verse number badge */}
-                <div className="flex items-center justify-between px-4 sm:px-6 py-3 bg-stone-50 border-b border-stone-100">
-                  <span className="text-xs font-black uppercase tracking-widest text-stone-400 truncate">
+                <div className="flex items-center justify-between px-4 sm:px-6 py-3 bg-stone-50 dark:bg-stone-900/40 border-b border-stone-100 dark:border-stone-800/50">
+                  <span className="text-xs font-black uppercase tracking-widest text-stone-400 dark:text-stone-500 truncate">
                     {String(isParva ? 'Śloka' : isGita ? 'BG' : 'Śloka')} {String(v.chapter || (v.id as string).split('_')[1] || '?')}.{String(v.verse || (v.id as string).split('_')[2] || '?')}
                   </span>
                   <div className="flex items-center gap-2 ml-2">
@@ -795,7 +799,7 @@ export default function StudyClient({
 
                 {/* Sanskrit */}
                 {v.original ? (
-                  <div className="px-4 sm:px-6 py-4 sm:py-6 text-center border-b border-stone-50 overflow-x-auto">
+                  <div className="px-4 sm:px-6 py-4 sm:py-6 text-center border-b border-stone-50 dark:border-stone-800/30 overflow-x-auto">
                     <div className="min-w-full flex justify-center">
                       <ShlokaMask text={String(v.original)} fontSize={typeof window !== "undefined" && window.innerWidth < 640 ? 16 : 22} className="sm:w-full" />
                     </div>
@@ -809,9 +813,9 @@ export default function StudyClient({
 
                 {/* English meaning / translation */}
                 {meaning ? (
-                  <div className="px-4 sm:px-6 py-4 sm:py-5 border-b border-stone-50">
-                    <p className="text-[10px] font-black uppercase tracking-widest text-stone-300 mb-2">Meaning</p>
-                    <p className="text-stone-700 leading-relaxed text-sm sm:text-[15px] font-medium break-words overflow-wrap-anywhere">
+                  <div className="px-4 sm:px-6 py-4 sm:py-5 border-b border-stone-50 dark:border-stone-800/30">
+                    <p className="text-[10px] font-black uppercase tracking-widest text-stone-300 dark:text-stone-600 mb-2">Meaning</p>
+                    <p className="text-stone-700 dark:text-stone-300 leading-relaxed text-sm sm:text-[15px] font-medium break-words overflow-wrap-anywhere">
                       {cleanText(meaning)}
                     </p>
                   </div>
@@ -819,27 +823,34 @@ export default function StudyClient({
 
                 {/* Commentary */}
                 {commentaries.length > 0 ? (
-                  <div className="px-4 sm:px-6 py-4 sm:py-5 bg-orange-50/30">
-                    {commentaries[0]._relevanceScore !== undefined && commentaries[0]._relevanceScore < 0.12 ? (
-                      <p className="text-xs text-orange-800 bg-orange-100 rounded-md p-2 mb-3">Warning: The selected commentary may not fully align with the verse meaning. We prioritize closest available match in current language.</p>
+                  <div className="px-4 sm:px-6 py-4 sm:py-5 bg-orange-50/30 dark:bg-orange-950/20">
+                    {commentaries[0]._relevanceScore !== undefined && (commentaries[0]._relevanceScore as number) < 0.12 ? (
+                      <p className="text-xs text-orange-800 bg-orange-100 dark:text-orange-200 dark:bg-orange-900/50 rounded-md p-2 mb-3">Warning: The selected commentary may not fully align with the verse meaning. We prioritize closest available match in current language.</p>
                     ) : null}
                     {commentaries.map((c: unknown, ci: number) => {
                       const comment = c as Record<string, unknown>
-                      const meta = getScholarMeta(comment.author as string)
+                      const meta = getScholarMeta(normalizeScholarKey(comment.author as string))
                       return (
-                        <div key={ci} className={ci > 0 ? 'mt-4 sm:mt-5 pt-4 sm:pt-5 border-t border-orange-100' : ''}>
+                        <div key={ci} className={ci > 0 ? 'mt-4 sm:mt-5 pt-4 sm:pt-5 border-t border-orange-100 dark:border-orange-500/10' : ''}>
                           <div className="flex items-center gap-2 mb-2 flex-wrap">
                             <span className="text-sm">{meta.icon}</span>
-                            <span className="text-[9px] font-black uppercase tracking-widest text-orange-700 break-words">{meta.label}</span>
+                            <span className="text-[9px] font-black uppercase tracking-widest text-orange-700 dark:text-orange-500 break-words">{meta.label}</span>
                           </div>
-                          <p className="text-stone-600 leading-relaxed text-xs sm:text-[13px] font-medium whitespace-pre-line break-words overflow-wrap-anywhere">
+                          <p className="text-stone-600 dark:text-stone-400 leading-relaxed text-xs sm:text-[13px] font-medium whitespace-pre-line break-words overflow-wrap-anywhere">
                             {cleanText(comment.content as string)}
                           </p>
                         </div>
                       )
                     })}
                   </div>
-                ) : null}
+                ) : (scholarSelection.length > 0 && (
+                  <div className="px-4 sm:px-6 py-4 bg-stone-50/50 dark:bg-stone-800/20">
+                    <p className="text-[10px] text-stone-400 dark:text-stone-500 font-bold italic tracking-wide">
+                      Commentary unavailable for selected scholar(s) in {getLanguageLabel(languageSelection).toLowerCase()}. 
+                      Try switching to 'All' languages or selecting a different scholar.
+                    </p>
+                  </div>
+                ))}
 
                 {/* AI Synthesis result */}
                 {synth && ((synth as Record<string, unknown>)?.text || (synth as Record<string, unknown>)?.loading) ? (
@@ -856,6 +867,48 @@ export default function StudyClient({
               </article>
             )
           })}
+          </div>
+          
+          {/* Desktop Sidebar (UI-715) */}
+          <aside className="hidden xl:block w-[320px] flex-shrink-0 sticky top-24 space-y-4 pt-12">
+            <div className="bg-white dark:bg-[#121212] rounded-2xl border border-stone-200 dark:border-stone-800 p-6 shadow-sm">
+              <h3 className="text-[10px] font-black uppercase tracking-widest text-stone-400 dark:text-stone-500 mb-5">Explore Vedic Labs</h3>
+              <div className="space-y-4">
+                <Link href="/lab" className="block p-3 rounded-xl border border-stone-100 hover:border-orange-300 dark:border-stone-700 dark:hover:border-orange-500 hover:bg-orange-50 dark:hover:bg-orange-950/20 transition-all group">
+                  <div className="flex items-center gap-3">
+                    <span className="text-xl">🪷</span>
+                    <div>
+                      <div className="text-xs font-bold text-stone-700 dark:text-stone-300 group-hover:text-orange-600 dark:group-hover:text-orange-400">Pranayama Timer</div>
+                      <div className="text-[10px] text-stone-400 mt-0.5">Focus and breathe before reading</div>
+                    </div>
+                  </div>
+                </Link>
+                <Link href="/lab" className="block p-3 rounded-xl border border-stone-100 hover:border-orange-300 dark:border-stone-700 dark:hover:border-orange-500 hover:bg-orange-50 dark:hover:bg-orange-950/20 transition-all group">
+                  <div className="flex items-center gap-3">
+                    <span className="text-xl">🐘</span>
+                    <div>
+                      <div className="text-xs font-bold text-stone-700 dark:text-stone-300 group-hover:text-orange-600 dark:group-hover:text-orange-400">Akshauhini Engine</div>
+                      <div className="text-[10px] text-stone-400 mt-0.5">Explore Mahabharata scale</div>
+                    </div>
+                  </div>
+                </Link>
+                <Link href="/lab" className="block p-3 rounded-xl border border-stone-100 hover:border-orange-300 dark:border-stone-700 dark:hover:border-orange-500 hover:bg-orange-50 dark:hover:bg-orange-950/20 transition-all group">
+                  <div className="flex items-center gap-3">
+                    <span className="text-xl">🐚</span>
+                    <div>
+                      <div className="text-xs font-bold text-stone-700 dark:text-stone-300 group-hover:text-orange-600 dark:group-hover:text-orange-400">Shankha Soundboard</div>
+                      <div className="text-[10px] text-stone-400 mt-0.5">Sacred instruments of heroes</div>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+            </div>
+            <div className="bg-orange-50/50 dark:bg-orange-950/10 rounded-2xl border border-orange-100 dark:border-orange-900/30 p-5 text-center">
+              <span className="text-2xl mb-2 block">🧠</span>
+              <p className="text-[11px] font-bold text-orange-800 dark:text-orange-400 mb-1 tracking-wide">Vishwa-Vani Cognitive UI</p>
+              <p className="text-[10px] text-orange-600/70 dark:text-orange-500/70">Click 'AI Analysis' to synthesize all visible verses into a unified philosophical summary.</p>
+            </div>
+          </aside>
         </div>
       </main>
     </>

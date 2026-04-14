@@ -50,7 +50,7 @@ export default function HierarchicalNav({ levels }: { levels: LevelData[] }) {
               {level.activeLabel && (
                 <>
                   <span className="text-stone-300 mx-0.5">·</span>
-                  <span className="hidden md:inline text-stone-500 font-semibold truncate max-w-[150px]">{level.activeLabel}</span>
+                  <span className="hidden md:inline text-stone-500 font-semibold">{level.activeLabel}</span>
                 </>
               )}
               <svg className={`w-3.5 h-3.5 transition-transform text-stone-400 ${activeDropdown === level.id ? 'rotate-180 text-orange-600' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}><path d="M19 9l-7 7-7-7" /></svg>

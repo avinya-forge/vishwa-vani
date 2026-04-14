@@ -19,6 +19,12 @@ export default function Home() {
     if (saved) setDefaultTextSlug(saved)
   }, [])
   if (!mounted) return <div className="min-h-screen bg-[#FDFBF7]" />
+  
+  const statsList = [
+    { n: stats.totalBooks, label: 'Sacred Texts', icon: '📜' },
+    { n: `${stats.totalVerses}`, label: 'Verses', icon: '✨' },
+    { n: '3', label: 'Languages', icon: '🌍' },
+  ]
 
   // Only show categories that have at least one available book
   const categories = stats.categories.filter((cat: string) =>
@@ -26,7 +32,11 @@ export default function Home() {
   )
 
   return (
-    <div className="min-h-screen bg-[#FDFBF7]">
+    <div className="min-h-screen bg-[#FDFBF7] selection:bg-orange-500/20">
+      {/* 🌌 AMBIENT GLOW */}
+      <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-orange-100/40 rounded-full blur-[120px] -mr-96 -mt-96 pointer-events-none" />
+      <div className="absolute top-[20%] left-0 w-[600px] h-[600px] bg-stone-100/60 rounded-full blur-[100px] -ml-96 pointer-events-none" />
+
 
       {/* ═══════ HERO ═══════ */}
       <section className="max-w-[1200px] mx-auto px-4 sm:px-6 pt-10 pb-12 text-center">
@@ -35,12 +45,12 @@ export default function Home() {
           Eternal Wisdom · Open Access
         </div>
 
-        <h1 className="text-3xl sm:text-4xl md:text-6xl font-serif font-black text-stone-900 leading-[1.05] tracking-tight mb-4">
-          The Universal Repository<br className="hidden md:block" /> of Vedic Wisdom
+        <h1 className="text-4xl sm:text-5xl md:text-7xl font-serif font-black text-stone-900 leading-[1.1] tracking-tight mb-6">
+          The Universal Portal to <span className="bg-gradient-to-r from-orange-600 to-orange-400 bg-clip-text text-transparent">Vedic Wisdom</span>
         </h1>
 
-        <p className="text-base md:text-lg text-stone-500 max-w-2xl mx-auto leading-relaxed font-serif italic mb-8">
-          &ldquo;{t('description')}&rdquo;
+        <p className="text-lg md:text-xl text-stone-600 max-w-3xl mx-auto leading-relaxed font-serif italic mb-10 opacity-80">
+          &ldquo;{t('description') || 'Restoring the Universal Voice of Vedic Wisdom through AI-integrated scholarship and open-access intelligence.'}&rdquo;
         </p>
 
         <div className="flex flex-wrap justify-center gap-3">
@@ -59,15 +69,12 @@ export default function Home() {
         </div>
 
         {/* Quick stats */}
-        <div className="flex justify-center gap-8 mt-10 pt-8 border-t border-stone-100">
-          {[
-            { n: stats.totalBooks, label: 'Sacred Texts' },
-            { n: `${stats.totalVerses.toLocaleString()}+`, label: 'Verses' },
-            { n: '3', label: 'Languages' },
-          ].map(s => (
-            <div key={s.label} className="text-center">
-              <div className="text-xl md:text-2xl font-serif font-black text-stone-900">{s.n}</div>
-              <div className="text-[9px] md:text-[10px] font-bold text-stone-400 uppercase tracking-widest mt-0.5">{s.label}</div>
+        <div className="grid grid-cols-3 gap-4 sm:gap-8 mt-16 max-w-3xl mx-auto">
+          {statsList.map(s => (
+            <div key={s.label} className="bg-white/50 backdrop-blur-sm border border-stone-100 rounded-2xl p-4 sm:p-6 shadow-sm hover:shadow-md hover:border-orange-200 transition-all group">
+              <div className="text-xl mb-1 group-hover:scale-110 transition-transform">{s.icon}</div>
+              <div className="text-2xl sm:text-3xl font-serif font-black text-stone-900">{s.n}</div>
+              <div className="text-[10px] font-black text-stone-400 uppercase tracking-widest mt-1">{s.label}</div>
             </div>
           ))}
         </div>

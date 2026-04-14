@@ -5,6 +5,9 @@
 - **Beta Feedback Bugs**: Triaged beta feedback issues. Found no critical recorded beta bugs in the codebase to resolve (UX-001).
 - **Search Previews**: Added snippet preview of matching verse text (50 chars before/after match highlighted) directly in the Search results page (UX-012).
 - **Curated Search Topics**: Implemented "No results" state to search with curated topic suggestions such as Dharma, Brahman, Yoga, and Meditation (UX-013).
+- **Tailwind V4 Dark Mode System Fix**: Added `@custom-variant dark` in `globals.css` ensuring that `next-themes` appropriately updates all design tokens globally (UI-716).
+- **Chapter Dropdown Trimming Fix**: Removed restrictive truncations from `HierarchicalNav` dropdowns so that full chapter names are successfully rendered (UI-717).
+- **Text Header Typographical Shift**: Redesigned the scripture title in `StudyClient` to be centered, tracking-wide text with reduced boldness, and strategically moved the Prev/Next navigation beneath it for proper focal structure (UI-718).
 
 ### 🛡️ Data Governance & Audit
 - **POST-LAUNCH AUDIT**: Identified significant "Data Debt" in the Mahabharata Gold tier. Previous claims of 18-parva ingestion were verified as placeholder-only.

@@ -112,7 +112,7 @@ describe('StudyClient - Lean Template Integration', () => {
       render(<StudyClient {...defaultProps} />);
 
       // Look for the Scholars counter text that appears before the buttons
-      const scholarsLabel = screen.getByText(/Scholars \(\d\/2\)/);
+      const scholarsLabel = screen.getByText(/Scholars \d\/2/);
       expect(scholarsLabel).toBeInTheDocument();
 
       // Verify we have author buttons in the document
@@ -124,7 +124,7 @@ describe('StudyClient - Lean Template Integration', () => {
       render(<StudyClient {...defaultProps} />);
 
       // Verify counter shows 0/2 initially (lean template default)
-      expect(screen.getByText(/Scholars \(0\/2\)/)).toBeInTheDocument();
+      expect(screen.getByText(/Scholars 0\/2/)).toBeInTheDocument();
     });
 
     it('should update counter when author is selected', async () => {
@@ -140,7 +140,7 @@ describe('StudyClient - Lean Template Integration', () => {
         // Counter should update to 1/2
         await waitFor(() => {
           const counter = screen.getByTestId('scholars-counter');
-          expect(counter).toHaveTextContent('Scholars (1/2)');
+          expect(counter).toHaveTextContent('Scholars 1/2');
         }, { timeout: 3000 });
       }
     });
@@ -148,9 +148,8 @@ describe('StudyClient - Lean Template Integration', () => {
     it('should provide language selector', () => {
       render(<StudyClient {...defaultProps} />);
 
-      const languageSelects = screen.getAllByRole('combobox');
-      const languageSelect = languageSelects[0];
-      expect(languageSelect).toBeInTheDocument();
+      const langBtn = screen.getByRole('button', { name: 'EN' });
+      expect(langBtn).toBeInTheDocument();
     });
   });
 
@@ -173,9 +172,8 @@ describe('StudyClient - Lean Template Integration', () => {
     it('should display language selector', () => {
       render(<StudyClient {...defaultProps} />);
 
-      const languageSelects = screen.getAllByRole('combobox');
-      const languageSelect = languageSelects[0];
-      expect(languageSelect).toBeInTheDocument();
+      const langBtn = screen.getByRole('button', { name: 'EN' });
+      expect(langBtn).toBeInTheDocument();
     });
 
     it('should maintain meaning display regardless of language selection', () => {
@@ -226,7 +224,7 @@ describe('StudyClient - Lean Template Integration', () => {
       localStorage.clear();
       render(<StudyClient {...defaultProps} />);
 
-      expect(screen.getByText(/Scholars \(0\/2\)/)).toBeInTheDocument();
+      expect(screen.getByText(/Scholars 0\/2/)).toBeInTheDocument();
 
       const buttons = screen.getAllByRole('button');
       const authorBtn = buttons.find(b =>
@@ -237,7 +235,7 @@ describe('StudyClient - Lean Template Integration', () => {
         fireEvent.click(authorBtn);
         await waitFor(() => {
           const counter = screen.getByTestId('scholars-counter');
-          expect(counter).toHaveTextContent('Scholars (1/2)');
+          expect(counter).toHaveTextContent('Scholars 1/2');
         }, { timeout: 3000 });
       }
     });
@@ -250,8 +248,8 @@ describe('StudyClient - Lean Template Integration', () => {
       if (shankaraBtn) fireEvent.click(shankaraBtn);
 
       // Switch language to Hindi — English commentary should be hidden
-      const langSelect = screen.getAllByRole('combobox')[0];
-      fireEvent.change(langSelect, { target: { value: 'hi' } });
+      const langBtn = screen.getByRole('button', { name: 'HI' });
+      fireEvent.click(langBtn);
 
       await waitFor(() => {
         // English commentary must not appear
@@ -268,7 +266,7 @@ describe('StudyClient - Lean Template Integration', () => {
         currentAdhyaya: 3
       };
       render(<StudyClient {...mbhProps} />);
-      expect(screen.getByText(/Parva 1 \/ Adhyaya 3/)).toBeInTheDocument();
+      expect(screen.getByText(/Parva 1 · Adhyaya 3/)).toBeInTheDocument();
     });
   });
 

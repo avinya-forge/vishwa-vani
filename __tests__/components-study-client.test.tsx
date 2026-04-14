@@ -128,8 +128,8 @@ describe('StudyClient', () => {
 
   it('displays language filter dropdown', () => {
     render(<StudyClient {...defaultProps} />);
-    const languageSelects = screen.getAllByRole('combobox');
-    expect(languageSelects.length).toBeGreaterThan(0);
+    const langBtn = screen.getByRole('button', { name: 'EN' });
+    expect(langBtn).toBeInTheDocument();
   });
 
   it('hides commentaries by default (lean template)', () => {
@@ -249,7 +249,7 @@ describe('StudyClient', () => {
     };
 
     render(<StudyClient {...mahabharataProps} />);
-    expect(screen.getByText(/Parva 1 \/ Adhyaya 5/)).toBeInTheDocument();
+    expect(screen.getByText(/Parva 1 · Adhyaya 5/)).toBeInTheDocument();
   });
 
   // UX Enhancements Tests (UX-014)

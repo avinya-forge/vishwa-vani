@@ -2,6 +2,8 @@
 
 import React, { useEffect, useRef, useState } from 'react'
 
+import { useTheme } from 'next-themes'
+
 /**
  * 🎨 shloka-mask: The Visual Data Protector
  * 
@@ -12,6 +14,7 @@ import React, { useEffect, useRef, useState } from 'react'
 export default function ShlokaMask({ text, className, fontSize = 28 }: { text: string, className?: string, fontSize?: number }) {
     const canvasRef = useRef<HTMLCanvasElement>(null)
     const [copied, setCopied] = useState(false)
+    const { resolvedTheme } = useTheme()
 
     useEffect(() => {
         const canvas = canvasRef.current
@@ -65,13 +68,13 @@ export default function ShlokaMask({ text, className, fontSize = 28 }: { text: s
         ctx.font = `700 ${currentFontSize}px "Noto Serif Devanagari", serif`
         ctx.textAlign = 'center'
         ctx.textBaseline = 'alphabetic'
-        ctx.fillStyle = '#1c1917' 
+        ctx.fillStyle = resolvedTheme === 'dark' ? '#f5f5f4' : '#1c1917' 
         
         finalLines.forEach((line, i) => {
             const y = paddingY + (i * lineHeight) + currentFontSize * 1.1
             ctx.fillText(line, maxWidth / 2, y)
         })
-    }, [text, fontSize])
+    }, [text, fontSize, resolvedTheme])
 
     const handleCopy = async () => {
         try {

@@ -26,6 +26,30 @@ Never overwrite or replace existing tasks. Always ADD new tasks alongside existi
 
 ---
 
+## 🚨 IMMEDIATE EXECUTIONS: HOLISTIC UI & TOOLING CONSOLIDATION [HIGHEST PRIORITY]
+
+*Goal: Make the UI perfectly consistent across all screens and consolidate all raw python scripts into a unified data architecture.*
+
+### 🎨 Part A: Holistic UI Consistency Audit & Fixes (UI-AUDIT)
+- [ ] `UI-804` **Global Typography & Header Audit** — Audit all screens (Labs, Search, Reader, Apps) to ensure every header, subtitle, and typographic style aligns exactly with the "Lean Template" overarching typography guidelines. Fix any visual deviations or inconsistencies.
+- [ ] `UI-805` **Feedback & Interactive Elements Standardization** — Audit secondary UI tools (like the Feedback button, language selectors, breadcrumbs, app-specific toggles) globally. Ensure hover states, paddings, shadows, and click behaviors are fully uniform across the entire app.
+- [ ] `UI-806` **Vedic Labs & Secondary Apps UI Overhaul** — Analyze the `app/lab` modules and ensure they utilize the exact same component hierarchy, dark mode tokens, and padding structures as the main `StudyClient` and reader UI.
+
+### 🛠️ Part B: Script Consolidation & Deep Clean (TOOLING)
+- [ ] `TOOL-801` **Consolidate Python Data Pipeline** — Analyze and merge all 20+ disparate Python scripts (e.g., `audit_data.py`, `cleanup_manifest.py`, `extract_*.py`) into a unified, modular `vishwa.py` CLI / toolchain with clear subcommands (e.g., `vishwa.py audit`, `vishwa.py ingest`). This serves as the data collector for the product going forward.
+- [ ] `TOOL-802` **Deep Clean Scripts Directory** — Identify and remove deprecated Python scripts and redundant intermediate test scripts (e.g., `test_parse.py`, `patch-labels.py`). Ensure only the minimum required scripts exist.
+- [ ] `TOOL-803` **Data Pipeline Unit Testing** — Add comprehensive unit tests for the consolidated Python data pipeline ensuring it achieves at least 95% coverage, to secure future data ingestions natively. Ensure script architecture is highly robust.
+- [ ] `TOOL-804` **Backlog Sequencing & Rearrangement** — Further analyze and rearrange the entire backlog step-by-step so the remaining tasks, especially data pipeline logic, are fully streamlined.
+
+### 🎨 Part C: Reader UX & Dark Mode Hardening [IMMEDIATE — UI-82x]
+- [x] `UI-819` **Reader Header 3-Column Restructure** — Redesigned header as a clean `grid-cols-[auto_1fr_auto]` layout: `← Library` left, bold-centered book title (with chapter name subtitle), chapter dropdown + prev/next buttons right. Eliminates the old breadcrumb + fragmented flex layout. — Done: 2026-04-14
+- [x] `UI-820` **Toolbar S/L Label Removal & Dark Mode** — Removed orphaned `S` / `L` abbreviation spans that rendered as unexplained characters on small viewports. Toolbar is now a single always-inline row with proper `dark:` classes (`dark:bg-stone-900/90`). Spacing tightened from `py-3` to `py-2`. — Done: 2026-04-14
+- [x] `UI-821` **Remove Redundant Toolbar Feedback Button** — Deleted the `💬` button from the reader header; the floating `FeedbackWidget` (bottom-right) is the canonical feedback entry point and already accepts context via the `open-feedback` custom event. — Done: 2026-04-14
+- [x] `UI-822` **Dark Mode Gap Fix — FeedbackWidget + Headers** — Moved `<FeedbackWidget />` inside `<ThemeProvider>` in `layout.tsx` (was outside, never received `.dark` class). Added `dark:bg-[#1c1917]` to reader header. Added `.dark { ... }` CSS variable block to `globals.css` for complete token resolution. — Done: 2026-04-14
+- [x] `UI-823` **Scripts Directory Verified Clean** — Confirmed via grep that no `archive/` folder and no `run.sh` exist in the repo. `scripts/` contains exactly `vishwa.py`, `test_vishwa.py`, and `vishwa_core.js`. No cleanup needed. — Done: 2026-04-14
+
+---
+
 ## 🚀 PHASE 0: DEPLOYMENT FOUNDATION [CURRENT — Sprint 1-2, Weeks 1-2]
 
 **Exit Gate**: Live on Vercel with CI pipeline, sitemap present, health check passing, environment variables configured  
@@ -479,3 +503,36 @@ Identified during critical visual audit on 2026-04-10:
 - [x] `AUDIT-005` **API Standardization**: Update `/api/feedback` and `/api/synthesize` to return a consistent `{ error: string, code: string }` JSON structure for 405/400 errors instead of plain text or empty responses. — Done: Updated both APIs and fixed tests, 2026-04-11
 - [x] `AUDIT-006` **Acknowledgments Link Polish**: Ensure all external links in `app/acknowledgments/page.tsx` have `rel="nofollow"` where appropriate to preserve SEO equity for the main domain. — Done: Verified that all external links use `rel="noopener noreferrer nofollow"`, 2026-04-11
 - [x] `AUDIT-007` **Metadata Completeness**: Add `og:image` specifically for the Lab and Search routes in their respective `generateMetadata` functions to improve social sharing. — Done: Migrated `app/lab/layout.tsx` and `app/search/page.tsx` to `generateMetadata` with full OpenGraph images, 2026-04-11
+
+---
+
+## 🛑 EPIC 11: CRITICAL UI REFINEMENTS & BUG BASH [HIGH PRIORITY]
+
+*Goal: Rapidly resolve visual regressions and core functional bugs in the UI to restore premium quality baseline.*
+
+- [x] `UI-701` **Timeline Subtle Styling** — Refine the "Historical Context" section in Akshauhini app to use a more artistic, subtle typography instead of heavy bolding.
+- [x] `UI-702` **Commentary Rendering Logic** — Fix broken commentary display for Dnyaneshwari and ISKCON authors in `StudyClient`; ensure layers render correctly when selected.
+- [x] `UI-703` **Custom Language Selector UI** — Replace the native browser `select` dropdown in the Reader toolbar with a custom-designed component matching the premium design system.
+- [x] `UI-704` **I18n Content Localization** — Fix the language selection logic to ensure English/Hindi value selection correctly updates the UI and content layers.
+- [x] `UI-705` **Labs Theme Management** — Implement Light Mode support for all Vedic Lab pages; remove the hard-coded Dark Mode restriction.
+- [x] `UI-706` **Labs Layout Fix** — Identify and remove excessive black voids and empty spaces within the Pranayama and Akshauhini Engine application blocks.
+- [x] `UI-707` **Labs App Restoration** — Fix the rendering of "Other Apps" in the Labs hub; currently sections below the first two apps appear completely empty.
+- [x] `UI-708` **Footer Navigation Fix** — Convert static footer column items (e.g., Akshauhini, Chhanda, etc.) into functional navigation links.
+- [x] `UI-709` **Mobile Responsiveness Audit** — Audit and fix mobile responsiveness across all new lab apps and Reader components.
+- [x] `UI-710` **Global Theme Toggle** — Implement a universal Light/Dark mode switcher in the Navbar, using `next-themes` to guarantee seamless SSR hydration across all UI screens.
+- [x] `UI-711` **Dark Mode Contrast Consistency** — Ensure typography remains readable (high contrast) and borders adjust cleanly when the user overrides system settings to dark mode across Reader and Landing pages.
+- [x] `UI-712` **ShlokaMask Theming Optimization** — Adapt `ShlokaMask` SVG generation or rendering to gracefully handle Dark Mode inversion without loss of aesthetic visual quality.
+- [x] `UI-713` **StudyClient Mobile Layout Collapse** — Fix the active state toolbar stacking issue on small screens (< 380px) to prevent button overlapping.
+
+---
+
+## 🚀 EPIC 12: DATA EXPANSION & READER LAYOUT OPTIMIZATION
+
+*Goal: Fill data gaps for continuous immersion and fully leverage desktop UI real estate with sidebars.*
+
+- [x] `DATA-801` **Missing Commentary Payload** — ISKCON and Dnyaneshwari lack Hindi/Marathi layer data from Shloka 2 onwards. Backfill this data (possibly using AI analysis for meaning) so language selection works consistently.
+- [x] `UI-714` **AI Synthesis UI Overflow** — The AI Synthesis result box is excessively large, breaking the verse card's visual rhythm. Redesign to be compact, elegantly integrated, and fit within the primary UI structure.
+- [x] `UI-715` **Desktop Workspace Utilization (Sidebar)** — Wide desktop screens have significant empty margins left/right in the study view. Reintroduce a sidebar widget containing quick links to the Vedic Lab apps to promote exploration while reading.
+- [x] `UI-716` **Tailwind V4 Dark Mode System Fix** — Added `@custom-variant dark (&:where(.dark, .dark *));` in `globals.css` to properly utilize Tailwind v4's custom variant logic so `next-themes` class changes actually update all tokens.
+- [x] `UI-717` **Chapter Dropdown Trimming** — Removed rigid widths and `truncate` limits from `HierarchicalNav` so full chapter names are readable.
+- [x] `UI-718` **Text Header Typography & Positioning** — Centered scripture title, reduced font boldness, and shifted Prev/Next buttons below title in `StudyClient` to make the header completely readable and appropriate.

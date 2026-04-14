@@ -27,11 +27,16 @@ export default function Footer() {
         <div className="space-y-6">
           <span className="label-bold !text-stone-500 block underline underline-offset-8 decoration-orange-600/30">Ecosystem</span>
           <div className="grid grid-cols-1 gap-4">
-             {['Vedic Lab', 'Gita Research', 'Tattva Map', 'Shastra Search'].map(item => (
-                <button key={item} className="text-stone-400 hover:text-white transition-colors text-left text-base font-bold flex items-center gap-2 group cursor-not-allowed">
-                   <div className="w-2 h-2 bg-stone-700 rounded-full group-hover:bg-orange-600 group-hover:scale-125 transition-all" />
-                   {item}
-                </button>
+             {[
+               { name: 'Vedic Lab', href: '/lab' },
+               { name: 'Gita Research', href: '/bhagavad-gita/1' },
+               { name: 'Tattva Map', href: '/lab' },
+               { name: 'Shastra Search', href: '/search' }
+             ].map(item => (
+                <a key={item.name} href={item.href} className="text-stone-400 hover:text-white transition-colors text-left text-base font-bold flex items-center gap-2 group">
+                   <div className="w-2 h-2 bg-stone-700 group-hover:bg-orange-600 group-hover:scale-125 transition-all rounded-full" />
+                   {item.name}
+                </a>
              ))}
           </div>
         </div>

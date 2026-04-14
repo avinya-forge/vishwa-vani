@@ -46,29 +46,29 @@ const MeditationStateTracker = dynamic(() => import('@/components/lab/meditation
 
 export default function VedicLabPage() {
   return (
-    <main className="min-h-screen bg-[#0C0B0A] text-stone-200 selection:bg-orange-500/30 pb-32 pt-20 relative overflow-hidden">
+    <main className="min-h-screen bg-stone-50 dark:bg-[#0C0B0A] text-stone-900 dark:text-stone-200 selection:bg-orange-500/30 pb-32 pt-20 relative overflow-hidden transition-colors duration-500">
       {/* 🌌 COSMIC BACKGROUND */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,_#2A1A0A_0%,_transparent_50%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,_#FFEDD5_0%,_transparent_50%)] dark:bg-[radial-gradient(circle_at_50%_0%,_#2A1A0A_0%,_transparent_50%)] opacity-40 dark:opacity-100" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="flex flex-col md:flex-row justify-between items-end gap-10 mb-20">
           <div className="max-w-2xl space-y-4">
              <div className="flex items-center gap-3">
                 <span className="w-8 h-[1px] bg-orange-500" />
-                <span className="text-[10px] font-black uppercase tracking-[0.5em] text-orange-500">Experimental Sanctum</span>
+                <span className="text-[10px] font-black uppercase tracking-[0.5em] text-orange-600 dark:text-orange-500">Experimental Sanctum</span>
              </div>
-             <h1 className="text-6xl md:text-8xl font-serif font-black text-white leading-none tracking-tighter">Vedic Labs</h1>
-             <p className="text-stone-400 text-lg md:text-xl font-medium leading-relaxed italic">
+             <h1 className="text-6xl md:text-8xl font-serif font-black text-stone-900 dark:text-white leading-none tracking-tighter">Vedic Labs</h1>
+             <p className="text-stone-500 dark:text-stone-400 text-lg md:text-xl font-medium leading-relaxed italic">
                 Translating ancient scriptural measurements and philosophical disciplines into interactive digital experience tokens.
              </p>
           </div>
-          <div className="flex gap-4 p-2 bg-stone-900/50 rounded-2xl border border-stone-800">
+          <div className="flex gap-4 p-2 bg-white/50 dark:bg-stone-900/50 rounded-2xl border border-stone-200 dark:border-stone-800 backdrop-blur-md">
              <div className="px-6 py-3 bg-orange-600 rounded-xl text-xs font-black uppercase tracking-widest text-white shadow-lg">New Shards</div>
-             <div className="px-6 py-3 text-xs font-black uppercase tracking-widest text-stone-500">Archives</div>
+             <div className="px-6 py-3 text-xs font-black uppercase tracking-widest text-stone-400 dark:text-stone-500">Archives</div>
           </div>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
             <div className="lg:col-span-2">
                <PranayamaTimer />
             </div>

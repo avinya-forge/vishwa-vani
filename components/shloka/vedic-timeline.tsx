@@ -39,7 +39,7 @@ export default function VedicTimeline({ slug }: { slug: string }) {
                          <div className={`hidden md:block w-3 h-3 rounded-full border-2 mb-4 transition-all duration-500 ${m.active ? 'bg-orange-600 border-orange-200 scale-125 shadow-lg shadow-orange-100' : 'bg-stone-200 border-white'}`} />
                          
                          <span className="text-[10px] font-black uppercase tracking-[0.2em] text-stone-300 mb-2">{m.label}</span>
-                         <div className={`text-base md:text-lg font-serif font-black leading-tight ${m.active ? 'text-stone-900 underline decoration-orange-600/30 underline-offset-4' : 'text-stone-400 opacity-60'}`}>
+                         <div className={`text-sm md:text-base font-serif font-bold leading-tight ${m.active ? 'text-stone-900 border-b-2 border-orange-600/10' : 'text-stone-400 opacity-60'}`}>
                             {m.val}
                          </div>
                     </div>

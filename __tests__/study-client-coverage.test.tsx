@@ -53,7 +53,8 @@ const makeVerses = (extra: object[] = []) => [
     layers: [
       { type: 'translation', lang: 'en', author: 'gambhirananda', content: 'Dhritarashtra said' },
       { type: 'commentary', author: 'shankara', lang: 'en', author_name: 'Adi Shankara', author_label: 'Shankara', author_icon: '📜', content: longCommentary },
-      { type: 'commentary', author: 'ramanuja', lang: 'en', author_name: 'Ramanuja', author_label: 'Ramanuja', author_icon: '🔱', content: longCommentary },
+      { type: 'commentary', author: 'ramanuja', lang: 'en', author_name: 'Ramanuja', author_label: 'Ramanuja', author_icon: '🔱', content: longCommentary + '2' },
+      { type: 'commentary', author: 'shankara', lang: 'hi', author_name: 'Adi Shankara', author_label: 'Shankara', author_icon: '📜', content: longCommentary + 'hi' },
       ...extra,
     ],
   },
@@ -120,15 +121,14 @@ describe('StudyClient — STAB-606 coverage', () => {
   describe('Lean Template: default state', () => {
     it('initialises scholarSelection as empty array (commentaries hidden)', () => {
       render(<StudyClient {...defaultProps} />);
-      expect(screen.getByText(/Scholars \(0\/2\)/)).toBeInTheDocument();
+      expect(screen.getByText(/Scholars 0\/2/)).toBeInTheDocument();
       expect(screen.queryByText(longCommentary)).not.toBeInTheDocument();
     });
 
     it('initialises languageSelection to "all"', () => {
       render(<StudyClient {...defaultProps} />);
-      const selects = screen.getAllByRole('combobox');
-      const select = selects[0];
-      expect((select as HTMLSelectElement).value).toBe('all');
+      const btn = screen.getByRole('button', { name: 'All' });
+      expect(btn).toHaveClass('text-orange-600');
     });
 
     it('shows Sanskrit verse and meaning on initial render', () => {
@@ -152,7 +152,7 @@ describe('StudyClient — STAB-606 coverage', () => {
       expect(shankaraBtn).toBeDefined();
       if (shankaraBtn) fireEvent.click(shankaraBtn);
       await waitFor(() => {
-        expect(screen.getByText(/Scholars \(1\/2\)/)).toBeInTheDocument();
+        expect(screen.getByText(/Scholars 1\/2/)).toBeInTheDocument();
         expect(screen.getByText(longCommentary)).toBeInTheDocument();
       });
     });
@@ -172,9 +172,9 @@ describe('StudyClient — STAB-606 coverage', () => {
       const shankaraBtn = buttons.find(b => b.textContent?.includes('Shankara'));
       const ramanujaBtn = buttons.find(b => b.textContent?.includes('Ramanuja'));
       if (shankaraBtn) fireEvent.click(shankaraBtn);
-      await waitFor(() => expect(screen.getByText(/Scholars \(1\/2\)/)).toBeInTheDocument());
+      await waitFor(() => expect(screen.getByText(/Scholars 1\/2/)).toBeInTheDocument());
       if (ramanujaBtn) fireEvent.click(ramanujaBtn);
-      await waitFor(() => expect(screen.getByText(/Scholars \(2\/2\)/)).toBeInTheDocument());
+      await waitFor(() => expect(screen.getByText(/Scholars 2\/2/)).toBeInTheDocument());
     });
 
     it('replaces oldest when a 3rd author is selected (lean template rule)', async () => {
@@ -189,12 +189,12 @@ describe('StudyClient — STAB-606 coverage', () => {
 
       if (shankaraBtn) fireEvent.click(shankaraBtn); // select #1
       if (ramanujaBtn) fireEvent.click(ramanujaBtn); // select #2
-      await waitFor(() => expect(screen.getByText(/Scholars \(2\/2\)/)).toBeInTheDocument());
+      await waitFor(() => expect(screen.getByText(/Scholars 2\/2/)).toBeInTheDocument());
 
       // Clicking a 3rd should replace oldest (shankara), not add
       if (madhvaBtn) {
         fireEvent.click(madhvaBtn);
-        await waitFor(() => expect(screen.getByText(/Scholars \(2\/2\)/)).toBeInTheDocument());
+        await waitFor(() => expect(screen.getByText(/Scholars 2\/2/)).toBeInTheDocument());
       }
     });
 
@@ -215,22 +215,22 @@ describe('StudyClient — STAB-606 coverage', () => {
     it('restores saved scholar selection from localStorage on mount', async () => {
       localStorageMock.setItem('vishwa_scholar_pref', JSON.stringify(['shankara']));
       render(<StudyClient {...defaultProps} />);
-      await waitFor(() => expect(screen.getByText(/Scholars \(1\/2\)/)).toBeInTheDocument());
+      await waitFor(() => expect(screen.getByText(/Scholars 1\/2/)).toBeInTheDocument());
     });
 
     it('limits restoration to max 2 from localStorage even if more stored', async () => {
       localStorageMock.setItem('vishwa_scholar_pref', JSON.stringify(['shankara', 'ramanuja', 'madhva']));
       render(<StudyClient {...defaultProps} />);
       await waitFor(() => {
-        const counter = screen.getByText(/Scholars \(\d\/2\)/);
-        expect(counter.textContent).toMatch(/Scholars \([0-2]\/2\)/);
+        const counter = screen.getByText(/Scholars \d\/2/);
+        expect(counter.textContent).toMatch(/Scholars [0-2]\/2/);
       });
     });
 
     it('falls back to empty selection if localStorage value is invalid JSON', async () => {
       localStorageMock.setItem('vishwa_scholar_pref', 'not-valid-json{{');
       render(<StudyClient {...defaultProps} />);
-      await waitFor(() => expect(screen.getByText(/Scholars \(0\/2\)/)).toBeInTheDocument());
+      await waitFor(() => expect(screen.getByText(/Scholars 0\/2/)).toBeInTheDocument());
     });
   });
 
@@ -239,9 +239,8 @@ describe('StudyClient — STAB-606 coverage', () => {
   describe('Language filter', () => {
     it('persists language selection to localStorage', async () => {
       render(<StudyClient {...defaultProps} />);
-      const selects = screen.getAllByRole('combobox');
-      const select = selects[0];
-      fireEvent.change(select, { target: { value: 'en' } });
+      const btn = screen.getByRole('button', { name: 'EN' });
+      fireEvent.click(btn);
       await waitFor(() => {
         expect(localStorageMock.getItem('vishwa_language_pref')).toBe('en');
       });
@@ -249,9 +248,8 @@ describe('StudyClient — STAB-606 coverage', () => {
 
     it('language filter does not hide base meaning layer', async () => {
       render(<StudyClient {...defaultProps} />);
-      const selects = screen.getAllByRole('combobox');
-      const select = selects[0];
-      fireEvent.change(select, { target: { value: 'hi' } });
+      const btn = screen.getByRole('button', { name: 'HI' });
+      fireEvent.click(btn);
       // Meaning should still be visible regardless of language filter
       expect(screen.getByText('Dhritarashtra said')).toBeInTheDocument();
     });
@@ -294,7 +292,7 @@ describe('StudyClient — STAB-606 coverage', () => {
           currentAdhyaya={3}
         />
       );
-      expect(screen.getByText(/Parva 1 \/ Adhyaya 3/)).toBeInTheDocument();
+      expect(screen.getByText(/Parva 1 · Adhyaya 3/)).toBeInTheDocument();
     });
 
     it('renders without crash when adhyayaList is empty for Gita', () => {

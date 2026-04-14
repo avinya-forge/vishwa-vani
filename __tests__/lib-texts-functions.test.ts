@@ -55,9 +55,9 @@ describe('getAvailableTexts', () => {
     expect(slugs).toContain('bhagavad-gita');
   });
 
-  it('includes Mahabharata in available texts', () => {
+  it('does not include Mahabharata in available texts', () => {
     const slugs = getAvailableTexts().map(t => t.slug);
-    expect(slugs).toContain('mahabharata');
+    expect(slugs).not.toContain('mahabharata');
   });
 });
 

@@ -7,6 +7,7 @@ import LocaleProvider from '@/components/layout/locale-provider'
 import SecurityShield from '@/components/layout/security-shield'
 import { setRequestLocale } from 'next-intl/server'
 import FeedbackWidget from '@/components/ui/feedback-widget'
+import { ThemeProvider } from '@/components/theme-provider'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
@@ -66,17 +67,19 @@ export default async function RootLayout({
       <head>
         <meta name="theme-color" content="#EA580C" />
       </head>
-      <body suppressHydrationWarning className={`${inter.variable} ${notoSerifDevanagari.variable} ${outfit.variable} font-sans min-h-screen flex flex-col bg-[#FDFBF7] text-stone-900 overflow-x-hidden`}>
+      <body suppressHydrationWarning className={`${inter.variable} ${notoSerifDevanagari.variable} ${outfit.variable} font-sans min-h-screen flex flex-col bg-[#FDFBF7] dark:bg-dharma-black text-stone-900 overflow-x-hidden`}>
         <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:p-4 focus:bg-white focus:text-stone-900 focus:font-bold">Skip to content</a>
-        <FeedbackWidget />
-        <LocaleProvider>
-          <SecurityShield />
-          <Header />
-          <main id="main-content" className="flex-grow">
-            {children}
-          </main>
-          <Footer />
-        </LocaleProvider>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <LocaleProvider>
+            <SecurityShield />
+            <Header />
+            <main id="main-content" className="flex-grow">
+              {children}
+            </main>
+            <Footer />
+            <FeedbackWidget />
+          </LocaleProvider>
+        </ThemeProvider>
         {/* Mute benign ResizeObserver error for cleaner showcase */}
         <script
           dangerouslySetInnerHTML={{

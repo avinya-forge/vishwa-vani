@@ -97,7 +97,7 @@ export default function PranayamaTimer() {
   ]
 
   return (
-    <div className="bg-stone-900/40 border border-stone-800 rounded-[3rem] p-12 h-full flex flex-col justify-between relative overflow-hidden group">
+    <div className="bg-white/70 dark:bg-stone-900/40 border border-stone-200 dark:border-stone-800 rounded-[2.5rem] p-8 sm:p-12 shadow-sm dark:shadow-none h-full flex flex-col justify-between relative overflow-hidden group transition-all backdrop-blur-sm">
       <div className="absolute inset-0 bg-gradient-to-br from-orange-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-1000" />
 
       <div className="relative z-10">
@@ -105,26 +105,26 @@ export default function PranayamaTimer() {
         <div className="flex justify-between items-start mb-6">
           <div className="space-y-1">
             <span className="text-[10px] font-black uppercase tracking-[0.4em] text-orange-500">Gita Ch. 6 • Dhyana Yoga</span>
-            <h2 className="text-4xl font-serif font-black text-white">Pranayama Pulse</h2>
+            <h2 className="text-3xl sm:text-4xl font-serif font-black text-stone-900 dark:text-white">Pranayama Pulse</h2>
           </div>
-          <button
-            onClick={() => setIsActive(!isActive)}
-            className={`w-16 h-16 rounded-full flex items-center justify-center text-xl transition-all ${isActive ? 'bg-white text-stone-900' : 'bg-orange-600 text-white shadow-xl shadow-orange-600/20'}`}
-          >
-            {isActive ? '⏸' : '▶'}
-          </button>
+            <button
+              onClick={() => setIsActive(!isActive)}
+              className={`w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center text-xl transition-all ${isActive ? 'bg-stone-900 dark:bg-white text-white dark:text-stone-900' : 'bg-orange-600 text-white shadow-xl shadow-orange-600/20 hover:scale-105 active:scale-95'}`}
+            >
+              {isActive ? '⏸' : '▶'}
+            </button>
         </div>
 
         {/* Technique selector */}
         <div className="flex gap-1.5 flex-wrap mb-4">
           {TECHNIQUES.map((t, i) => (
             <button key={t.name} onClick={() => handleTechChange(i)}
-              className={`px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider transition-all ${!showCustom && techIndex === i ? 'bg-orange-600 text-white' : 'bg-stone-800 text-stone-400 hover:text-white'}`}>
+              className={`px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider transition-all ${!showCustom && techIndex === i ? 'bg-orange-600 text-white shadow-md' : 'bg-stone-100 dark:bg-stone-800 text-stone-500 hover:text-orange-600'}`}>
               {t.name}
             </button>
           ))}
           <button onClick={() => setShowCustom(v => !v)}
-            className={`px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider transition-all ${showCustom ? 'bg-orange-600 text-white' : 'bg-stone-800 text-stone-400 hover:text-white'}`}>
+            className={`px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider transition-all ${showCustom ? 'bg-orange-600 text-white shadow-md' : 'bg-stone-100 dark:bg-stone-800 text-stone-500 hover:text-orange-600'}`}>
             Custom
           </button>
         </div>
@@ -141,7 +141,7 @@ export default function PranayamaTimer() {
                     const v = Math.max(1, Math.min(16, Number(e.target.value)))
                     setCustomRatio(r => { const n = [...r] as [number,number,number,number]; n[i] = v; return n })
                   }}
-                  className="w-full bg-stone-700 text-white text-center text-sm font-bold rounded-lg p-1 border border-stone-600" />
+                  className="w-full bg-white dark:bg-stone-700 text-stone-900 dark:text-white text-center text-sm font-bold rounded-lg p-1 border border-stone-200 dark:border-stone-600 focus:outline-none focus:border-orange-500" />
               </div>
             ))}
           </div>
@@ -152,21 +152,21 @@ export default function PranayamaTimer() {
           <div className={`w-48 h-48 rounded-full border-4 border-dashed border-stone-800 flex items-center justify-center relative transition-all duration-[4000ms] ${isActive && phase === 'Inhale' ? 'scale-125 border-orange-500' : 'scale-100'}`}>
             <div className={`absolute inset-4 rounded-full bg-gradient-to-t from-orange-600 to-orange-400 opacity-20 blur-2xl transition-all duration-[4000ms] ${isActive && phase === 'Inhale' ? 'scale-150' : 'scale-50'}`} />
             <div className="text-center relative z-10">
-              <div className="text-5xl font-serif font-black text-white mb-1">{seconds}</div>
-              <div className="text-[10px] font-black uppercase tracking-[0.5em] text-orange-500">{phase}</div>
+              <div className="text-5xl font-serif font-black text-stone-900 dark:text-white mb-1 group-hover:scale-110 transition-transform duration-[4000ms]">{seconds}</div>
+              <div className="text-[10px] font-black uppercase tracking-[0.5em] text-orange-600 dark:text-orange-500">{phase}</div>
             </div>
           </div>
         </div>
 
         {/* Session stats */}
-        <div className="grid grid-cols-3 gap-4 text-center bg-stone-800/30 rounded-2xl p-3 mb-4">
+        <div className="grid grid-cols-3 gap-4 text-center bg-stone-100 dark:bg-stone-800/30 border border-stone-200 dark:border-transparent rounded-2xl p-4 mb-6">
           <div>
-            <div className="text-lg font-black text-white">{rounds}</div>
-            <div className="text-[9px] text-stone-500 uppercase tracking-wider">Rounds</div>
+            <div className="text-xl font-black text-stone-900 dark:text-white">{rounds}</div>
+            <div className="text-[9px] text-stone-400 dark:text-stone-500 uppercase tracking-wider font-bold">Rounds</div>
           </div>
           <div>
-            <div className="text-lg font-black text-white">{formatTime(elapsed)}</div>
-            <div className="text-[9px] text-stone-500 uppercase tracking-wider">Duration</div>
+            <div className="text-xl font-black text-stone-900 dark:text-white">{formatTime(elapsed)}</div>
+            <div className="text-[9px] text-stone-400 dark:text-stone-500 uppercase tracking-wider font-bold">Duration</div>
           </div>
           <div>
             <button onClick={reset} className="text-[10px] font-bold text-stone-400 hover:text-white uppercase tracking-wider transition-all">
@@ -180,8 +180,8 @@ export default function PranayamaTimer() {
       <div className="relative z-10 grid grid-cols-4 gap-4 text-center">
         {phaseLabels.map(s => (
           <div key={s.name} className={`space-y-1 transition-opacity ${s.active ? 'opacity-100' : 'opacity-20'}`}>
-            <div className="text-[10px] font-black text-white uppercase tracking-widest">{s.name}</div>
-            <div className="text-[9px] text-stone-500 uppercase tracking-tighter">{s.label}</div>
+            <div className="text-[10px] font-black text-stone-800 dark:text-white uppercase tracking-widest">{s.name}</div>
+            <div className="text-[9px] text-stone-400 dark:text-stone-500 uppercase tracking-tighter font-bold">{s.label}</div>
           </div>
         ))}
       </div>

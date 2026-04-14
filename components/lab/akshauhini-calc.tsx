@@ -27,12 +27,12 @@ export default function AkshauhiniCalc() {
   const stats = calculateAkshauhini(units)
 
   return (
-    <div className="bg-stone-900/40 border border-stone-800 rounded-[3rem] p-10 h-full flex flex-col justify-between group">
+    <div className="bg-white/70 dark:bg-stone-900/40 border border-stone-200 dark:border-stone-800 rounded-[2.5rem] p-8 shadow-sm dark:shadow-none flex flex-col justify-between group transition-all backdrop-blur-sm">
       <div className="relative z-10">
         <div className="flex justify-between items-start mb-10">
           <div className="space-y-1">
             <span className="text-[10px] font-black uppercase tracking-[0.4em] text-orange-500">Mahabharata Ch. 1 • Parva Sangraha</span>
-            <h2 className="text-3xl font-serif font-black text-white">Akshauhini Engine</h2>
+            <h2 className="text-3xl font-serif font-black text-stone-900 dark:text-white">Akshauhini Engine</h2>
           </div>
         </div>
 
@@ -59,10 +59,10 @@ export default function AkshauhiniCalc() {
             { label: 'Turaga (Cavalry)', val: stats.cavalry, icon: '🐎' },
             { label: 'Padati (Infantry)', val: stats.infantry, icon: '⚔️' }
           ].map((s, i) => (
-            <div key={i} className="bg-stone-800/20 border border-stone-800/50 p-6 rounded-3xl hover:border-orange-500/30 transition-all">
-              <div className="text-xl mb-3 opacity-80">{s.icon}</div>
-              <div className="text-xl font-serif font-black text-white">{s.val.toLocaleString()}</div>
-              <div className="text-[9px] font-black uppercase tracking-[0.2em] text-stone-500 mt-1">{s.label}</div>
+            <div key={i} className="bg-stone-50 dark:bg-stone-800/20 border border-stone-100 dark:border-stone-800/50 p-5 rounded-2xl hover:border-orange-500/30 transition-all">
+              <div className="text-xl mb-2 opacity-80">{s.icon}</div>
+              <div className="text-xl font-serif font-black text-stone-900 dark:text-white">{s.val.toLocaleString()}</div>
+              <div className="text-[9px] font-black uppercase tracking-[0.2em] text-stone-400 dark:text-stone-500 mt-1">{s.label}</div>
             </div>
           ))}
         </div>
@@ -84,7 +84,7 @@ export default function AkshauhiniCalc() {
                 return (
                   <div key={i} className="flex items-center justify-between bg-stone-800/10 border border-stone-800/30 rounded-xl px-4 py-3">
                     <div>
-                      <p className="text-[10px] font-bold text-stone-400">{h.label}</p>
+                      <p className="text-[10px] font-medium text-stone-300">{h.label}</p>
                       <p className="text-[9px] text-stone-600">{h.description} · {h.total.toLocaleString()} troops</p>
                     </div>
                     <span className="text-[10px] font-black text-orange-500 ml-4 flex-shrink-0">
