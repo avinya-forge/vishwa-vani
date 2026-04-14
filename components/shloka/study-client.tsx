@@ -50,17 +50,70 @@ export default function StudyClient({
   const normalizeScholarKey = (author: string) => (author || '').split('-')[0].toLowerCase()
   const PREFERRED_SCHOLARS = ['dnyaneshwari', 'iskcon']
 
-  // Persist reading position for "Continue Reading" feature
+
+  // Track reading position using Intersection Observer
   useEffect(() => {
-    const readingPosition = {
-      text: textSlug,
-      chapter: chapter,
-      verse: verses.length > 0 ? (verses[0] as Record<string, unknown>).verse : 1,
-      timestamp: Date.now()
+    if (!verses || verses.length === 0) return;
+
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5
+    };
+
+    const callback = (entries: IntersectionObserverEntry[]) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id;
+          if (id && id.startsWith('verse-')) {
+            const verseNum = parseInt(id.replace('verse-', ''), 10);
+            if (!isNaN(verseNum)) {
+              setActiveVerse(verseNum);
+              const readingPosition = {
+                text: textSlug,
+                chapter: chapter,
+                verse: verseNum,
+                timestamp: Date.now()
+              }
+              localStorage.setItem('vishwa_continue_reading', JSON.stringify(readingPosition))
+              localStorage.setItem('vishwa_last_text', textSlug)
+            }
+          }
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(callback, options);
+
+    Object.values(verseRefs.current).forEach(el => {
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, [textSlug, chapter, verses]);
+
+
+
+  // Scroll to last read position on mount
+  useEffect(() => {
+    const saved = localStorage.getItem('vishwa_continue_reading')
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved)
+        if (parsed.text === textSlug && parsed.chapter === chapter) {
+          const targetVerse = parsed.verse
+          // Add a small delay to ensure DOM is ready
+          setTimeout(() => {
+            if (verseRefs.current[targetVerse]) {
+              verseRefs.current[targetVerse].scrollIntoView({ behavior: 'smooth', block: 'start' })
+            }
+          }, 300)
+        }
+      } catch {
+        // ignore
+      }
     }
-    localStorage.setItem('vishwa_continue_reading', JSON.stringify(readingPosition))
-    localStorage.setItem('vishwa_last_text', textSlug)
-  }, [textSlug, chapter, verses])
+  }, [textSlug, chapter])
 
   // Collect all unique scholarly authors across verses, normalized to preferred top-2 authors
   const availableScholars = React.useMemo(() => {
@@ -172,12 +225,51 @@ export default function StudyClient({
   const [bookmarks, setBookmarks] = useState<string[]>([])
   const [visitedChapters, setVisitedChapters] = useState<Set<number>>(new Set())
   const [copiedVerse, setCopiedVerse] = useState<string | null>(null)
+  const [copiedLink, setCopiedLink] = useState<string | null>(null)
+  const [activeVerse, setActiveVerse] = useState<number>(1)
+  const [touchStartX, setTouchStartX] = useState<number | null>(null)
 
   const copyVerse = (v: Record<string, unknown>) => {
     const text = `${v.original}\n\n${v.transliteration}`
     navigator.clipboard.writeText(text)
     setCopiedVerse(v.id as string)
     setTimeout(() => setCopiedVerse(null), 2000)
+  }
+
+  const copyPermalink = (v: Record<string, unknown>) => {
+    const url = `${window.location.origin}/${textSlug}/${chapter}/${v.verse}`
+    navigator.clipboard.writeText(url)
+    setCopiedLink(v.id as string)
+    setTimeout(() => setCopiedLink(null), 2000)
+  }
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    setTouchStartX(e.targetTouches[0].clientX)
+  }
+
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    if (touchStartX === null) return
+    const touchEndX = e.changedTouches[0].clientX
+    const diff = touchStartX - touchEndX
+
+    if (Math.abs(diff) > 50) {
+      if (diff > 0) {
+        // Swipe left -> Next chapter
+        const nextLink = adhyayaList.length > 0 && typeof currentAdhyaya === 'number'
+          ? (currentAdhyaya < adhyayaList[adhyayaList.length - 1].num ? `/${textSlug}/${chapter}?adhyaya=${currentAdhyaya + 1}` : null)
+          : (chapter < totalChapters ? `/${textSlug}/${chapter + 1}` : null);
+
+        if (nextLink) router.push(nextLink);
+      } else {
+        // Swipe right -> Prev chapter
+        const prevLink = adhyayaList.length > 0 && typeof currentAdhyaya === 'number'
+          ? (currentAdhyaya > adhyayaList[0].num ? `/${textSlug}/${chapter}?adhyaya=${currentAdhyaya - 1}` : null)
+          : (chapter > 1 ? `/${textSlug}/${chapter - 1}` : null);
+
+        if (prevLink) router.push(prevLink);
+      }
+    }
+    setTouchStartX(null)
   }
 
   useEffect(() => {
@@ -492,6 +584,14 @@ export default function StudyClient({
       <div className="sticky top-16 z-40 bg-white/90 backdrop-blur-md border-b border-stone-100 shadow-sm">
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 flex items-center justify-between py-3 gap-2 sm:gap-4 flex-wrap">
           <div className="flex flex-wrap items-center gap-2 sm:gap-3 min-w-0">
+
+            {/* Progress indicator */}
+            <div className="hidden sm:flex items-center ml-2 px-3 py-1.5 bg-stone-100 rounded-full text-xs font-medium text-stone-600 shadow-inner">
+              <span className="whitespace-nowrap" data-testid="chapter-progress">
+                {bookData?.category === 'itihas' ? 'Adhyaya' : 'Śloka'} {activeVerse} / {verses.length}
+              </span>
+            </div>
+
             {/* Author selector - Lean template: checkboxes for up to 2 authors */}
             <div className="flex items-center gap-2 text-xs font-semibold text-stone-600">
               <span className="hidden xs:inline" data-testid="scholars-counter">Scholars ({scholarSelection.length}/{2})</span>
@@ -593,7 +693,7 @@ export default function StudyClient({
               onClick={synthesizeEntireChapter}
               disabled={isChapterSynthesizing}
               aria-label={isChapterSynthesizing ? "Analysing chapter..." : "Generate AI Synthesis for entire chapter"}
-              className="flex-shrink-0 flex items-center gap-2 px-3 sm:px-5 py-2 bg-stone-900 hover:bg-orange-600 text-white text-xs font-bold rounded-full transition-all disabled:opacity-60 focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:outline-none"
+              className="hidden sm:flex flex-shrink-0 items-center gap-2 px-3 sm:px-5 py-2 bg-stone-900 hover:bg-orange-600 text-white text-xs font-bold rounded-full transition-all disabled:opacity-60 focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:outline-none"
             >
               <span>{isChapterSynthesizing ? '✨' : '🧠'}</span>
               <span className="hidden md:inline">{isChapterSynthesizing ? 'Analysing...' : 'AI Analysis'}</span>
@@ -603,7 +703,7 @@ export default function StudyClient({
       </div>
 
       {/* ═══════════════════════════════════════════ VERSES ═══ */}
-      <main className="bg-[#FDFBF8] min-h-screen">
+      <main className="bg-[#FDFBF8] min-h-screen" onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
         <div className="max-w-[900px] mx-auto px-3 sm:px-4 lg:px-6 py-4 sm:py-8 space-y-4 sm:space-y-6">
           {/* Vedic Timeline — compact version at top */}
           <VedicTimeline slug={textSlug} />
@@ -648,6 +748,7 @@ export default function StudyClient({
 
             return (
               <article
+                id={`verse-${v.verse}`}
                 key={v.id as string}
                 ref={el => { verseRefs.current[v.verse as number] = el as HTMLElement | null }}
                 className="bg-white rounded-2xl border border-stone-100 shadow-sm hover:shadow-md hover:border-orange-100 transition-all duration-300 overflow-hidden"
@@ -658,6 +759,13 @@ export default function StudyClient({
                     {String(isParva ? 'Śloka' : isGita ? 'BG' : 'Śloka')} {String(v.chapter)}.{String(v.verse)}
                   </span>
                   <div className="flex items-center gap-2 ml-2">
+                    <button
+                      onClick={() => copyPermalink(v as Record<string, unknown>)}
+                      title="Copy permalink"
+                      className="text-stone-300 hover:text-orange-400 text-xs font-bold transition-colors uppercase tracking-widest mr-2 focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:outline-none"
+                    >
+                      {copiedLink === v.id ? 'Link Copied!' : 'Link'}
+                    </button>
                     <button
                       onClick={() => copyVerse(v as Record<string, unknown>)}
                       title="Copy verse"

@@ -10,11 +10,13 @@ jest.mock('next-intl', () => ({
 }));
 
 // Mock next/navigation
+const mockPush = jest.fn();
+
 jest.mock('next/navigation', () => ({
-  useRouter: () => ({
-    push: jest.fn(),
+  useRouter: jest.fn(() => ({
+    push: mockPush,
     replace: jest.fn()
-  })
+  }))
 }));
 
 // Mock child components
@@ -41,6 +43,33 @@ jest.mock('@/components/ui/hierarchical-nav', () => {
     return <div data-testid="hierarchical-nav">Navigation</div>;
   };
 });
+
+
+beforeAll(() => {
+  // Mock IntersectionObserver
+  class IntersectionObserver {
+    callback: (...args: unknown[]) => unknown;
+    constructor(callback: (...args: unknown[]) => unknown) {
+      this.callback = callback;
+    }
+    observe = jest.fn((el) => {
+      // simulate intersection immediately
+      if (el && el.id && el.id === 'verse-1') {
+        setTimeout(() => {
+          this.callback([{ isIntersecting: true, target: el }]);
+        }, 0);
+      }
+    })
+    disconnect = jest.fn()
+    unobserve = jest.fn()
+  }
+  Object.defineProperty(window, 'IntersectionObserver', {
+    writable: true,
+    configurable: true,
+    value: IntersectionObserver
+  })
+})
+
 
 describe('StudyClient', () => {
   const mockVerses = [
@@ -136,6 +165,73 @@ describe('StudyClient', () => {
     // Should render without crashing, navigation should still be present
     expect(screen.getByTestId('hierarchical-nav')).toBeInTheDocument();
   });
+
+
+  it('displays the permalink copy button', () => {
+    render(
+      <StudyClient
+        textSlug="bhagavad-gita"
+        chapter={1}
+        verses={mockVerses}
+      />
+    )
+    const linkButtons = screen.getAllByTitle(/Copy permalink/i)
+    expect(linkButtons.length).toBeGreaterThan(0)
+  })
+
+  it('displays the chapter progress indicator', () => {
+    render(
+      <StudyClient
+        textSlug="bhagavad-gita"
+        chapter={1}
+        verses={mockVerses}
+      />
+    )
+    const progress = screen.getByTestId('chapter-progress')
+    expect(progress).toBeInTheDocument()
+    expect(progress).toHaveTextContent('1 / 1')
+  })
+
+  it('handles swipe to next chapter', () => {
+    mockPush.mockClear()
+
+    render(
+      <StudyClient
+        textSlug="bhagavad-gita"
+        chapter={1}
+        verses={mockVerses}
+      />
+    )
+
+    const mainArea = screen.getByRole('main')
+
+    // Simulate swipe left (next chapter)
+    fireEvent.touchStart(mainArea, { targetTouches: [{ clientX: 200 }] })
+    fireEvent.touchEnd(mainArea, { changedTouches: [{ clientX: 100 }] })
+
+    expect(mockPush).toHaveBeenCalledWith('/bhagavad-gita/2')
+  })
+
+  it('handles swipe to previous chapter', () => {
+    mockPush.mockClear()
+
+    render(
+      <StudyClient
+        textSlug="bhagavad-gita"
+        chapter={2}
+        verses={mockVerses}
+      />
+    )
+
+    const mainArea = screen.getByRole('main')
+
+    // Simulate swipe right (prev chapter)
+    fireEvent.touchStart(mainArea, { targetTouches: [{ clientX: 100 }] })
+    fireEvent.touchEnd(mainArea, { changedTouches: [{ clientX: 200 }] })
+
+    expect(mockPush).toHaveBeenCalledWith('/bhagavad-gita/1')
+  })
+
 
   it('displays navigation components', () => {
     render(<StudyClient {...defaultProps} />);
