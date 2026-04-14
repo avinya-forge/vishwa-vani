@@ -6,14 +6,22 @@
 - **Search Previews**: Added snippet preview of matching verse text (50 chars before/after match highlighted) directly in the Search results page (UX-012).
 - **Curated Search Topics**: Implemented "No results" state to search with curated topic suggestions such as Dharma, Brahman, Yoga, and Meditation (UX-013).
 
+### 🛡️ Data Governance & Audit
+- **POST-LAUNCH AUDIT**: Identified significant "Data Debt" in the Mahabharata Gold tier. Previous claims of 18-parva ingestion were verified as placeholder-only.
+- **GHOST SHARD REMOVAL**: Pruned `data/manifest.json` from 1600+ lines to ~260, removing references to 270+ non-existent files.
+- **CONTENT GATING**: Reactively set `mahabharata` to `available: false` in `lib/texts.ts` to protect the UI from serving placeholder data.
+- **AUTOMATED REPORTING**: Implemented `scripts/content_quality_report.py` (CONT-010) to generate definitive health reports for all JSON shards.
+
+### 🛠️ Stabilization & Integrity (STAB-702, 703, 704)
+- **UI LABEL FIX**: Resolved "undefined.undefined" verse labels by fixing data mapping in `VedicDataService` and adding robust fallbacks in `StudyClient`.
+- **ROUTE PROTECTION**: Implemented server-side gating to prevent direct URL access to unavailable scriptures (e.g., Mahabharata); users now see a professional "Coming Soon" page.
+- **CONTENT RESTORATION**: Promoted high-quality verified Isha Upanishad content from Silver to Gold tier, replacing low-quality placeholder data.
+- **LAKE REPAIR**: Fixed `server-lake.ts` to pass correct chapter context to NVF migration logic.
+
 ### 🧪 Quality & Infrastructure
 - **UX Tests**: Wrote comprehensive unit tests for UX enhancements covering keyboard navigation, clipboard copy, progress indicator, and mobile gestures, driving up component coverage (UX-014).
-- **Lighthouse CI Baseline**: Ran Lighthouse audit on local build to document baseline scores (UX-015). Target is Performance ≥80, Accessibility ≥90, Best Practices ≥90, SEO ≥90. Current Sandbox Baseline:
-  - Performance: 49
-  - Accessibility: 95
-  - Best Practices: 96
-  - SEO: 100
-
+- **Lighthouse CI Baseline**: Ran Lighthouse audit on local build to document baseline scores (UX-015). Target is Performance ≥80, Accessibility ≥90, Best Practices ≥90, SEO ≥90.
+- **Quality Gates**: Lint: ✅, TSC: ✅, Audit Status: 🟢 STABILIZED (Gita/Isha readable, MBH gated).
 
 ## [1.0.4] - 2026-04-13
 ### ✨ Enhancements & Fixes

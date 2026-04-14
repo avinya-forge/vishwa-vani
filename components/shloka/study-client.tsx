@@ -756,7 +756,7 @@ export default function StudyClient({
                 {/* Verse number badge */}
                 <div className="flex items-center justify-between px-4 sm:px-6 py-3 bg-stone-50 border-b border-stone-100">
                   <span className="text-xs font-black uppercase tracking-widest text-stone-400 truncate">
-                    {String(isParva ? 'Śloka' : isGita ? 'BG' : 'Śloka')} {String(v.chapter)}.{String(v.verse)}
+                    {String(isParva ? 'Śloka' : isGita ? 'BG' : 'Śloka')} {String(v.chapter || (v.id as string).split('_')[1] || '?')}.{String(v.verse || (v.id as string).split('_')[2] || '?')}
                   </span>
                   <div className="flex items-center gap-2 ml-2">
                     <button

@@ -13,6 +13,8 @@ import { getVersesFromLakeServer } from './server-lake';
 
 export interface EnrichedVerse {
   id: string;
+  chapter: number;
+  verse: string | number;
   original: string;
   transliteration?: string;
   layers: unknown[];
@@ -154,6 +156,8 @@ export class VedicDataService {
       const v = verse as Record<string, unknown>
       const enriched: EnrichedVerse = {
         id: (v.id || v.verse_id) as string,
+        chapter: (v.chapter !== undefined ? v.chapter : v.chapter_id) as number,
+        verse: (v.verse !== undefined ? v.verse : v.verse_num) as string | number,
         original: (v.original || v.original_sanskrit) as string,
         transliteration: v.transliteration as string | undefined,
         layers: (v.layers || []) as unknown[],

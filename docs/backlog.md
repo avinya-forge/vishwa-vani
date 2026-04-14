@@ -78,7 +78,11 @@ Never overwrite or replace existing tasks. Always ADD new tasks alongside existi
 - [x] `CONT-007` Update `lib/texts.ts` to set `isha-upanishad available: true` and verify `storage: 'json'` configuration — Done: Updated `lib/texts.ts` setting `isha-upanishad available: true` and verified `storage: 'json'` config, 2026-04-11
 - [x] `CONT-008` Verify Isha Upanishad shard registration in `manifest.json` — ensure 10 verses are all accessible — Done: Added missing Isha Upanishad shard to `manifest.json` with 10 verses, 2026-04-11
 - [x] `CONT-009` Run spot-check validation on all available books (Gita 100%, Mahabharata parvas 1-5, Isha Upanishad 100%) — verify no truncated verses, no OCR artifacts, no missing transliterations
-- [ ] `CONT-010` Create `scripts/content_quality_report.py` — generates markdown report of content status per book (verse count, commentary availability, language coverage)
+- [x] `CONT-010` Create `scripts/content_quality_report.py` — generates markdown report of content status per book (verse count, commentary availability, language coverage) — Done: Created scripts/content_quality_report.py, 2026-04-14
+- [x] `STAB-701` Post-Launch Data Audit — Perform deep-level audit of Gold tier shards against filesystem and Silver data. — Done: Identified ghost shards and placeholder status; pruned manifest; set MBH to unavailable. 2026-04-14
+- [x] `STAB-702` Fix "undefined.undefined" labels — Add chapter and verse fields to EnrichedVerse and ensure robust rendering fallbacks in StudyClient. — Done: Updated lib/data-service.ts and components/shloka/study-client.tsx, 2026-04-14
+- [x] `STAB-703` Route Protection — Prevent direct URL access to unavailable scriptures (e.g., /mahabharata/1) by checking `available: false` in server components. — Done: Implemented in app/[text]/[chapter]/page.tsx, 2026-04-14
+- [x] `STAB-704` Isha Upanishad Promotion — Promote high-quality verified content from Silver to Gold for Isha Upanishad to replace placeholder "Original 1" text. — Done: Copied silver shard to gold directory with Force, 2026-04-14
 
 ---
 

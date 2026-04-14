@@ -56,7 +56,7 @@ export async function getVersesFromLakeServer(textSlug: string, chapter: number,
         try {
           const decrypted = decrypt(rowData.content as string);
           const raw = JSON.parse(decrypted);
-          return migrateToNVF(raw, textSlug);
+          return migrateToNVF(raw, textSlug, chapter);
         } catch (e) {
           console.error(`SERVER LAKE: JSON parse fail`, e);
           return null;
