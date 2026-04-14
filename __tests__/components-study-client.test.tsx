@@ -149,7 +149,7 @@ describe('StudyClient', () => {
 
     // Click the author button to show commentary
     const authorButtons = screen.getAllByRole('button');
-    const shankaraButton = authorButtons.find(b => b.textContent?.includes('shankara'));
+    const shankaraButton = authorButtons.find(b => b.textContent?.includes('shankara') || b.textContent?.includes('Shankara'));
     
     if (shankaraButton) {
       fireEvent.click(shankaraButton);
@@ -250,5 +250,86 @@ describe('StudyClient', () => {
 
     render(<StudyClient {...mahabharataProps} />);
     expect(screen.getByText(/Parva 1 \/ Adhyaya 5/)).toBeInTheDocument();
+  });
+
+  // UX Enhancements Tests (UX-014)
+
+  it('handles keyboard navigation for scholar buttons', () => {
+    render(<StudyClient {...defaultProps} />);
+    // The role is switch according to the other test
+    const buttons = screen.getAllByRole('switch');
+    const dnyanButton = buttons.find(b => b.textContent?.includes('Dnyaneshwari'));
+    expect(dnyanButton).toBeInTheDocument();
+
+    // Initially not checked
+    expect(dnyanButton).toHaveAttribute('aria-checked', 'false');
+
+    // Select via keyboard Enter
+    if (dnyanButton) {
+      fireEvent.keyDown(dnyanButton, { key: 'Enter', code: 'Enter' });
+    }
+
+    // After selection, it should be checked
+    expect(dnyanButton).toHaveAttribute('aria-checked', 'true');
+  });
+
+  it('copies verse text and permalink to clipboard', async () => {
+    const originalClipboard = global.navigator.clipboard;
+    Object.defineProperty(global.navigator, 'clipboard', {
+      value: { writeText: jest.fn().mockResolvedValue(undefined) },
+      writable: true,
+      configurable: true,
+    });
+
+    render(<StudyClient {...defaultProps} />);
+
+    const copyVerseBtns = screen.getAllByTitle('Copy verse');
+    expect(copyVerseBtns.length).toBeGreaterThan(0);
+    fireEvent.click(copyVerseBtns[0]);
+    // The mock data original text
+    expect(global.navigator.clipboard.writeText).toHaveBeenCalledWith(expect.stringContaining('धृतराष्ट्र उवाच'));
+
+    const linkBtns = screen.getAllByTitle('Copy permalink');
+    expect(linkBtns.length).toBeGreaterThan(0);
+    fireEvent.click(linkBtns[0]);
+    expect(global.navigator.clipboard.writeText).toHaveBeenCalledWith(expect.stringContaining('/bhagavad-gita/1/1'));
+
+    Object.defineProperty(global.navigator, 'clipboard', {
+      value: originalClipboard,
+      writable: true,
+      configurable: true,
+    });
+  });
+
+  it('renders progress indicator', () => {
+    render(<StudyClient {...defaultProps} />);
+    const progress = screen.getByTestId('chapter-progress');
+    expect(progress).toBeInTheDocument();
+    // Default props uses itihas category which shows Adhyaya, and 1 verse.
+    expect(progress).toHaveTextContent(/Adhyaya 1 \/ 1/i);
+  });
+
+  it('handles mobile swipe gestures for chapter navigation', () => {
+    render(<StudyClient {...defaultProps} />);
+    const container = screen.getByTestId('study-container');
+
+    // Target is actually e.targetTouches, JSDOM can be weird about it.
+    const touchStartEvent = { targetTouches: [{ clientX: 200 }] } as unknown as TouchEvent;
+    fireEvent.touchStart(container, touchStartEvent);
+    fireEvent.touchEnd(container, { changedTouches: [{ clientX: 100 }] } as unknown as TouchEvent); // dx = -100 (left swipe -> next chapter)
+
+    expect(mockPush).toHaveBeenCalledWith('/bhagavad-gita/2');
+  });
+
+  it('handles mobile swipe gestures for previous chapter navigation', () => {
+    const ch2Props = { ...defaultProps, chapter: 2 };
+    render(<StudyClient {...ch2Props} />);
+    const container = screen.getByTestId('study-container');
+
+    const touchStartEvent = { targetTouches: [{ clientX: 100 }] } as unknown as TouchEvent;
+    fireEvent.touchStart(container, touchStartEvent);
+    fireEvent.touchEnd(container, { changedTouches: [{ clientX: 200 }] } as unknown as TouchEvent); // dx = 100 (right swipe -> prev chapter)
+
+    expect(mockPush).toHaveBeenCalledWith('/bhagavad-gita/1');
   });
 });
