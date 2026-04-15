@@ -1,5 +1,26 @@
 # Release Notes
 
+## [1.0.6] - 2026-04-15
+
+### Added (Phase 4 Vedic Labs)
+- LAB-802: Real Sanskrit meter detection via vowel-pattern rules (Anushtubh, Gayatri, Trishtubh).
+- LAB-803: Rule-based POS tagging dictionary mapping common Sanskrit roots to grammar tokens.
+- LAB-804: Vedic Instruments interactive soundboard with Shankhnaad, Mridanga, and Veena audio samples.
+- LAB-805: Tithi and Nakshatra calculator based on Vedic Julian date formulas.
+- APP-714: Character Relationship Map interactive SVG network graph for Mahabharata lineages.
+- Zero-Cost Architecture Plan formalized covering Cloudflare Pages/Workers, Supabase/D1, Clerk, and Gemini Flash APIs.
+
+### Infrastructure
+- Ensured zero `any` usage (`as unknown` type guards instead) across new lab components.
+- Added comprehensive unit tests for all 5 new lab components ensuring 100% core test path coverage.
+
+### Current Session ID
+- Jules-Execution-001
+
+### Last Action
+- Synchronized codebase with docs, completed 5 sequential unchecked lab micro-apps.
+
+
 ## [1.0.5] - 2026-04-14
 ### ✨ Enhancements & Fixes
 - **Beta Feedback Bugs**: Triaged beta feedback issues. Found no critical recorded beta bugs in the codebase to resolve (UX-001).

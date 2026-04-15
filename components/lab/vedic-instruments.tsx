@@ -1,16 +1,43 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 
 const INSTRUMENTS = [
-  { name: 'Panchajanya', owner: 'Sri Krishna', desc: 'The conch that shattered the hearts of the Kauravas.', icon: '🐚', color: 'bg-orange-600' },
-  { name: 'Devadatta', owner: 'Arjuna', desc: 'The God-gifted conch which signaled the Gandiva bow.', icon: '🐚', color: 'bg-stone-100 text-stone-900' },
-  { name: 'Paundra', owner: 'Bhima', desc: 'The mighty conch of the wolf-bellied Bhima.', icon: '🐚', color: 'bg-stone-800' },
-  { name: 'Anantavijaya', owner: 'Yudhisthira', desc: 'The eternal victory conch of the King of Dharma.', icon: '🐚', color: 'bg-yellow-500' }
+  { name: 'Panchajanya', owner: 'Sri Krishna', desc: 'The conch that shattered the hearts of the Kauravas.', icon: '🐚', color: 'bg-orange-600', audio: '/audio/shankhnaad.mp3' },
+  { name: 'Devadatta', owner: 'Arjuna', desc: 'The God-gifted conch which signaled the Gandiva bow.', icon: '🐚', color: 'bg-stone-100 text-stone-900', audio: '/audio/shankhnaad.mp3' },
+  { name: 'Mridanga', owner: 'Vedic Rhythm', desc: 'The clay drum representing the heartbeat of the cosmos.', icon: '🥁', color: 'bg-stone-800', audio: '/audio/mridanga.mp3' },
+  { name: 'Veena', owner: 'Saraswati', desc: 'The stringed instrument of knowledge and wisdom.', icon: '🪕', color: 'bg-yellow-500', audio: '/audio/veena.mp3' }
 ]
 
 export default function VedicInstruments() {
   const [selected, setSelected] = useState(0)
+  const [isPlaying, setIsPlaying] = useState(false)
+  const audioRef = useRef<HTMLAudioElement | null>(null)
+
+  const playAudio = () => {
+    if (audioRef.current) {
+      if (isPlaying) {
+        audioRef.current.pause()
+        audioRef.current.currentTime = 0
+        setIsPlaying(false)
+      } else {
+        audioRef.current.play()
+        setIsPlaying(true)
+      }
+    }
+  }
+
+  const handleEnded = () => {
+    setIsPlaying(false)
+  }
+
+  const selectInstrument = (idx: number) => {
+    if (isPlaying && audioRef.current) {
+      audioRef.current.pause()
+      setIsPlaying(false)
+    }
+    setSelected(idx)
+  }
 
   return (
     <div className="bg-white/70 dark:bg-stone-900/40 border border-stone-200 dark:border-stone-800 rounded-[2.5rem] p-8 shadow-sm dark:shadow-none flex flex-col justify-between group transition-all backdrop-blur-sm">
@@ -26,8 +53,8 @@ export default function VedicInstruments() {
            {INSTRUMENTS.map((inst, i) => (
              <button 
                key={inst.name} 
-               onClick={() => setSelected(i)}
-               className={`w-full flex items-center gap-4 p-3.5 rounded-2xl border transition-all ${selected === i ? 'bg-white dark:bg-stone-800 border-orange-200 dark:border-white scale-105 shadow-lg shadow-orange-500/5' : 'bg-stone-50 dark:bg-stone-900/40 border-stone-100 dark:border-stone-800 hover:border-orange-200 opacity-60'}`}
+               onClick={() => selectInstrument(i)}
+               className={`w-full flex items-center gap-4 p-4 rounded-2xl border transition-all ${selected === i ? 'bg-white border-white scale-105 shadow-xl shadow-orange-500/10' : 'bg-stone-900/40 border-stone-800 hover:border-stone-700 opacity-60'}`}
              >
                 <div className={`w-10 h-10 rounded-xl flex items-center justify-center text-lg ${inst.color}`}>
                    {inst.icon}
@@ -51,9 +78,18 @@ export default function VedicInstruments() {
         </div>
       </div>
 
-      <div className="mt-6 flex justify-center">
-         <button className="text-[10px] font-black uppercase tracking-[0.3em] text-orange-600 hover:text-orange-500 transition-colors py-2 flex items-center gap-3">
-            <span>🔊</span> Hear the Sound of Dharma
+      <div className="mt-8 flex justify-center">
+         <audio
+           ref={audioRef}
+           src={INSTRUMENTS[selected].audio}
+           onEnded={handleEnded}
+           data-testid="audio-element"
+         />
+         <button
+           onClick={playAudio}
+           className="text-[10px] font-black uppercase tracking-[0.3em] text-orange-600 hover:text-orange-500 transition-colors py-2 flex items-center gap-3"
+         >
+            <span>{isPlaying ? '⏸️' : '🔊'}</span> {isPlaying ? 'Stop' : 'Hear the Sound of Dharma'}
          </button>
       </div>
     </div>

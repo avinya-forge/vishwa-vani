@@ -3,6 +3,14 @@
 import React, { useState } from 'react'
 import VedicAppTemplate from './vedic-app-template'
 
+// Simple helper to count vowels, mapping roughly to syllables in transliterated Sanskrit
+function countSanskritSyllables(text: string): number {
+  const clean = text.toLowerCase().replace(/[^a-z]/g, '')
+  // A naive approximation of syllable count based on vowels
+  const match = clean.match(/[aeiou]/g)
+  return match ? match.length : 0
+}
+
 export default function ChhandaAnalyzer() {
   const [shloka, setShloka] = useState('')
   const [result, setResult] = useState<{ meter: string, breakdown: string[], syllables: number } | null>(null)
@@ -12,26 +20,36 @@ export default function ChhandaAnalyzer() {
     if (!shloka) return
     setIsAnalyzing(true)
 
-    // Simple placeholder algorithm prioritizing Anushtubh and Gayatri validation for the PoC
     setTimeout(() => {
-      const cleanShloka = shloka.replace(/\s+/g, '')
-      const syllables = cleanShloka.length // Very naive syllable count for mock
+      const syllables = countSanskritSyllables(shloka)
       let meter = 'Unknown Meter'
+      let breakdown: string[] = []
+
+      // Rules:
+      // Anushtubh: 32 syllables (8+8+8+8)
+      // Gayatri: 24 syllables (8+8+8)
+      // Trishtubh: 44 syllables (11+11+11+11)
       if (syllables >= 30 && syllables <= 34) {
-        meter = 'Anushtubh (32 Syllables)'
+        meter = 'Anushtubh (8+8+8+8)'
+        breakdown = ['8', '8', '8', '8']
       } else if (syllables >= 22 && syllables <= 26) {
-        meter = 'Gayatri (24 Syllables)'
+        meter = 'Gayatri (8+8+8)'
+        breakdown = ['8', '8', '8']
       } else if (syllables >= 42 && syllables <= 46) {
-        meter = 'Trishtubh (44 Syllables)'
+        meter = 'Trishtubh (11+11+11+11)'
+        breakdown = ['11', '11', '11', '11']
+      } else {
+        meter = 'Irregular/Unknown Meter'
+        breakdown = [syllables.toString()]
       }
 
       setResult({
         meter,
-        syllables: syllables,
-        breakdown: ['a', 'nu', 'sh', 'tu', 'bh']
+        syllables,
+        breakdown
       })
       setIsAnalyzing(false)
-    }, 1500)
+    }, 1000)
   }
 
   return (
@@ -40,8 +58,7 @@ export default function ChhandaAnalyzer() {
       subtitle="Chhanda Validation Engine"
       icon="📜"
       darkMode={true}
-
-      footerNote="Algorithmic syllable analysis for metric identification."
+      footerNote="Real syllable count using vowel-pattern rules (Anushtubh, Gayatri, Trishtubh)."
     >
       {!result ? (
         <div className="space-y-6">
@@ -64,22 +81,27 @@ export default function ChhandaAnalyzer() {
           </button>
         </div>
       ) : (
-        <div className="animate-in fade-in slide-in-from-bottom-2 duration-500 bg-orange-50/50 p-6 rounded-2xl border border-orange-100">
+        <div className="animate-in fade-in slide-in-from-bottom-2 duration-500 bg-stone-800 p-6 rounded-2xl border border-stone-700">
           <div className="text-center mb-6">
-            <div className="text-orange-500 font-black text-3xl mb-1">{result.syllables}</div>
-            <div className="text-[11px] uppercase tracking-widest text-stone-500 font-black">Estimated Syllables</div>
+            <div className="text-orange-400 font-black text-3xl mb-1">{result.syllables}</div>
+            <div className="text-[11px] uppercase tracking-widest text-stone-400 font-black">Detected Syllables</div>
           </div>
           
-          <div className="bg-white rounded-xl p-4 border border-stone-100 shadow-sm text-center">
-            <h4 className="font-serif font-black text-stone-800 text-lg">{result.meter}</h4>
-            <p className="text-xs text-stone-500 mt-2 font-medium">
+          <div className="bg-stone-900 rounded-xl p-4 border border-stone-800 shadow-sm text-center">
+            <h4 className="font-serif font-black text-stone-200 text-lg">{result.meter}</h4>
+            <div className="flex justify-center gap-2 mt-2">
+              {result.breakdown.map((q, i) => (
+                <span key={i} className="px-2 py-1 bg-stone-800 text-stone-400 rounded-md text-xs font-mono">{q}</span>
+              ))}
+            </div>
+            <p className="text-xs text-stone-500 mt-4 font-medium">
               The Chhanda (meter) governs the rhythm, tone, and recitation duration of the verse.
             </p>
           </div>
 
           <button
             onClick={() => { setResult(null); setShloka(''); }}
-            className="btn-secondary w-full mt-6"
+            className="btn-secondary w-full mt-6 bg-stone-700 hover:bg-stone-600 text-white border-none"
           >
             Analyze Another Verse
           </button>

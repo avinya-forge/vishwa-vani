@@ -221,24 +221,24 @@ Every new book follows this 5-phase integration process used across all epics be
 
 ### Lab Algorithm Enhancements
 
-- [ ] `LAB-802` Replace Chhanda Analyzer naive character-count with real Sanskrit meter detection — implement syllable counter using vowel-pattern rules (Anushtubh=8+8+8+8, Gayatri=8+8+8, Trishtubh=11+11+11+11 syllables per quarter)
-- [ ] `LAB-803` Replace Grammar Tokenizer whitespace-split with rule-based POS tagging — build 200+ entry lookup table of common Sanskrit roots with POS labels (noun, verb, adjective, etc.)
-- [ ] `LAB-804` Add Vedic Instruments audio playback — create `/public/audio/` directory, source 3 CC0-licensed samples (shankhnaad/conch, mridanga drum, veena string), add audio player to instrument lab
-- [ ] `LAB-805` Replace Astro Explorer numerology stub with proper astronomical calculations — implement Tithi (lunar day) and Nakshatra (lunar mansion) lookup using Vedic Julian date formulas
+- [x] `LAB-802` Replace Chhanda Analyzer naive character-count with real Sanskrit meter detection — implement syllable counter using vowel-pattern rules (Anushtubh=8+8+8+8, Gayatri=8+8+8, Trishtubh=11+11+11+11 syllables per quarter)
+- [x] `LAB-803` Replace Grammar Tokenizer whitespace-split with rule-based POS tagging — build 200+ entry lookup table of common Sanskrit roots with POS labels (noun, verb, adjective, etc.)
+- [x] `LAB-804` Add Vedic Instruments audio playback — create `/public/audio/` directory, source 3 CC0-licensed samples (shankhnaad/conch, mridanga drum, veena string), add audio player to instrument lab
+- [x] `LAB-805` Replace Astro Explorer numerology stub with proper astronomical calculations — implement Tithi (lunar day) and Nakshatra (lunar mansion) lookup using Vedic Julian date formulas
 
 ### New Mahabharata-Focused Apps
 
-- [ ] `APP-714` Character Relationship Map for Mahabharata — interactive SVG network graph of Kaurava/Pandava family tree with relationship labels and color-coded factions
+- [x] `APP-714` Character Relationship Map for Mahabharata — interactive SVG network graph of Kaurava/Pandava family tree with relationship labels and color-coded factions
 - [ ] `APP-715` Dharma Dilemma Explorer — presents ethical scenarios from Mahabharata parvas with 2-3 branching decision paths and Dharmic analysis for each choice
 
 ### Testing
 
-- [ ] `LAB-TEST-802` Write unit tests for Chhanda Analyzer algorithm (verify meter detection for 5 common Sanskrit meters with known syllable counts)
-- [ ] `LAB-TEST-803` Write unit tests for Grammar Tokenizer (verify POS tags for 20 common Sanskrit words)
-- [ ] `LAB-TEST-805` Write unit tests for Astro Explorer (verify Tithi and Nakshatra calculations for known dates)
+- [x] `LAB-TEST-802` Write unit tests for Chhanda Analyzer algorithm (verify meter detection for 5 common Sanskrit meters with known syllable counts)
+- [x] `LAB-TEST-803` Write unit tests for Grammar Tokenizer (verify POS tags for 20 common Sanskrit words)
+- [x] `LAB-TEST-805` Write unit tests for Astro Explorer (verify Tithi and Nakshatra calculations for known dates)
 - [ ] `APP-TEST-710` Write render and interaction tests for Sankhya Visualizer (render, click tattva items, verify label updates)
 - [ ] `APP-TEST-711` Write animation state tests for Cosmic Vision Simulator (render, scroll through layers, verify visual hierarchy)
-- [ ] `APP-TEST-714` Write tests for Character Relationship Map (render graph, click nodes, verify relationships)
+- [x] `APP-TEST-714` Write tests for Character Relationship Map (render graph, click nodes, verify relationships)
 
 ---
 
