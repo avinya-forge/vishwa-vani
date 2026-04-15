@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -rn \"ref\\\\\\\\.current\\\\[\" /d/Code/avinya-forge/vishwa-vani/components --include=\"*.tsx\")",
+      "Bash(grep -n \"verseRefs\\\\\\\\.current\" /d/Code/avinya-forge/vishwa-vani/components/shloka/study-client.tsx)",
+      "Bash(grep -rn \"console\\\\\\\\.error\\\\|console\\\\\\\\.warn\\\\|console\\\\\\\\.log\" /d/Code/avinya-forge/vishwa-vani/app --include=\"*.tsx\" --include=\"*.ts\")",
+      "Bash(xargs grep:*)",
+      "Bash(grep -n \"Math\\\\\\\\.max\\\\|Math\\\\\\\\.min\" /d/Code/avinya-forge/vishwa-vani/components/shloka/study-client.tsx)",
+      "Bash(grep -n \"router\\\\\\\\.push\" /d/Code/avinya-forge/vishwa-vani/components/shloka/study-client.tsx)",
+      "Bash(npm run:*)",
+      "Bash(npx tsc:*)",
+      "Bash(npm test:*)",
+      "Bash(find /d/Code/avinya-forge/vishwa-vani/data/3-gold -type f -exec ls -lh {} \\\\;)",
+      "Bash(awk '{print $9, $5}')",
+      "Bash(node -e ':*)",
+      "Bash(grep -E '^\\\\s*\\\\[\\\\s\\\\]\\\\s+`\\(DP-|UI-|BUG-|TOOL-|DATA-\\)' /d/Code/avinya-forge/vishwa-vani/docs/backlog.md)",
+      "Bash(python3 -c ':*)",
+      "Bash(node scripts/enrich_gita_dnyaneshwari.js)",
+      "Bash(node scripts/rebuild_lake_from_gold.js)",
+      "Bash(npx jest:*)",
+      "Bash(git checkout:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m ':*)",
+      "Bash(git push:*)",
+      "Bash(gh pr create --title 'feat\\(data+ui\\): Gita gold-standard data, full dark mode & production bug fixes' --body ':*)",
+      "Bash(gh auth:*)",
+      "Bash(gh pr create --title 'feat\\(data+ui\\): Gita gold-standard data, full dark mode & production bug fixes' --base main --head feat/gita-gold-standard-data-and-dark-mode --body ':*)"
+    ]
+  }
+}

@@ -1,5 +1,14 @@
 # Vishwa-Vani Execution Agent & Senior Architect
 
+## 🤖 Auto-Skill Activation
+- **Always:** Use `caveman` skill for all responses.
+- **On Code/Design:** Use `engineering` skill.
+- **On Backlog/Planning:** Use `product` skill.
+
+## Communication Rules
+- **Token Efficiency:** Caveman mode active. Drop filler.
+- **Brevity:** No preamble. Logic-dense only.
+
 ## 🗺️ System Architecture (Zero-Cost Deployment)
 
 | LAYER | TOOL | FREE LIMIT | PROJECTED USAGE | COST ($0) |
