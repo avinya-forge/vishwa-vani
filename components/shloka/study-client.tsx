@@ -713,7 +713,11 @@ export default function StudyClient({
           <VedicTimeline slug={textSlug} />
 
           {/* Verses */}
-          {verses.map((verse: unknown) => {
+          {[...verses].sort((a: unknown, b: unknown) => {
+            const av = parseInt(String((a as Record<string, unknown>).verse ?? 0), 10)
+            const bv = parseInt(String((b as Record<string, unknown>).verse ?? 0), 10)
+            return av - bv
+          }).map((verse: unknown) => {
             const v = verse as Record<string, unknown>
             // Find the best "translation/meaning" layer — any English layer that's a translation, or fall back to meaning field
             const layers = v.layers as unknown[]

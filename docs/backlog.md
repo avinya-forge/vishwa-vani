@@ -600,3 +600,19 @@ All issues identified in the data + bug audit have been resolved.
 - All layers ≥ 80 chars (min 131, max 3600)
 - STATUS: GOLD ✓
 
+
+---
+
+## 🐛 EPIC 15: READER UX BUG BASH — SHLOKA ORDER, CONTEXT, MEANING & LANGUAGE [HIGHEST PRIORITY]
+
+*Goal: Fix all reader-layer bugs so every shloka renders in correct sequence with proper default content and clean language separation. Zero known reader rendering bugs before next release.*
+
+**Exit Gate**: All BUG-019 through BUG-022 resolved, verified in browser across desktop and mobile, lint/tsc/test/build green.
+
+- [ ] `BUG-019` **Shloka order incorrect — lexicographic sort** — Verses render in string-sort order (1, 10, 11, …, 2, 20, …) instead of numeric order (1, 2, 3, …). Root cause: `verses` array from data service is not numerically sorted before render in `study-client.tsx`. Fix: sort by `parseInt(v.verse)` before mapping. — Priority: CRITICAL
+
+- [ ] `BUG-020` **Context/intro text not collapsible** — Some original books include section-level context text (e.g. scene-setting prose between shlokas). Currently either absent or mixed inline. Should be rendered as a collapsed "Context" block above the relevant shloka — visible only when user expands it. Implement a collapsible `<ContextBlock>` component shown per-verse when `v.context` or `v.intro` field is present. — Priority: HIGH
+
+- [ ] `BUG-021` **No default meaning shown without commentary** — When user has no scholar selected (Lean template default), the "Meaning" section is conditionally hidden because `meaningLayer` looks for a `type: 'translation'` layer which may be absent. The `v.translation` and `v.meaning` fields on the verse object always exist and should be shown by default as the base-level Sanskrit→English rendering, regardless of scholar selection. Fix: always render the `meaning` block from `v.translation || v.meaning` even when `meaningLayer` is undefined. — Priority: HIGH
+
+- [ ] `BUG-022` **All-language view jumbles English and Hindi** — When `languageSelection === 'all'`, commentary layers for multiple languages render in arbitrary order (sorted only by relevance score), mixing English and Hindi text mid-section. Fix: group commentaries by lang (`en` → `hi` → `mr`) and render each group under its own language subheading label before listing that group's commentaries. — Priority: HIGH
