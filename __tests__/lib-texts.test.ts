@@ -27,8 +27,7 @@ describe('VEDIC_LIBRARY', () => {
     expect(gita?.totalChapters).toBe(18);
     expect(gita?.category).toBe('itihas');
     expect(gita?.available).toBe(true);
-    expect(gita?.storage).toBe('lake');
-    expect(gita?.lakeFile).toBe('vedic-lake.db');
+    expect(gita?.storage).toBe('json');
   });
 
   it('should have Mahabharata as parent of Bhagavad Gita', () => {

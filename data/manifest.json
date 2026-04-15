@@ -19,7 +19,7 @@
           "verse_count": 18
         }
       ],
-      "completeness_score": 100.0,
+      "completeness_score": 100,
       "status": "GOLD"
     },
     {
@@ -31,45 +31,123 @@
         "sa": "श्रीमद् भगवद्गीता"
       },
       "total_chapters": 18,
-      "total_verses": 700,
-      "languages": ["en", "hi", "mr", "sa"],
+      "total_verses": 657,
+      "languages": [
+        "en",
+        "hi",
+        "mr",
+        "sa"
+      ],
       "primary_publication": "ISKCON",
       "authors": [
         {
-          "id": "sant-dnyaneshwar",
-          "name": "Sant Dnyaneshwar",
-          "work": "Dnyaneshwari",
-          "description": "Thirteenth-century Marathi commentary and expansion of the Gita."
-        },
-        {
           "id": "iskcon",
           "name": "A.C. Bhaktivedanta Swami Prabhupada",
-          "publication": "ISKCON",
-          "description": "Founder-Acharya of the International Society for Krishna Consciousness."
+          "publication": "Bhagavad-gītā As It Is",
+          "description": "Founder-Acharya of ISKCON; full commentary in English, Hindi, and Marathi."
+        },
+        {
+          "id": "sant-dnyaneshwar",
+          "name": "Sant Dnyaneshwar",
+          "work": "Dnyaneshwari (Bhavartha Dipika)",
+          "description": "Thirteenth-century Marathi commentary. English and Marathi layers for all 657 verses."
         }
       ],
       "chapters": [
-        { "number": 1, "file": "bhagavad-gita-chapter-1.json", "verse_count": 47 },
-        { "number": 2, "file": "bhagavad-gita-chapter-2.json", "verse_count": 72 },
-        { "number": 3, "file": "bhagavad-gita-chapter-3.json", "verse_count": 43 },
-        { "number": 4, "file": "bhagavad-gita-chapter-4.json", "verse_count": 42 },
-        { "number": 5, "file": "bhagavad-gita-chapter-5.json", "verse_count": 29 },
-        { "number": 6, "file": "bhagavad-gita-chapter-6.json", "verse_count": 47 },
-        { "number": 7, "file": "bhagavad-gita-chapter-7.json", "verse_count": 30 },
-        { "number": 8, "file": "bhagavad-gita-chapter-8.json", "verse_count": 28 },
-        { "number": 9, "file": "bhagavad-gita-chapter-9.json", "verse_count": 34 },
-        { "number": 10, "file": "bhagavad-gita-chapter-10.json", "verse_count": 42 },
-        { "number": 11, "file": "bhagavad-gita-chapter-11.json", "verse_count": 55 },
-        { "number": 12, "file": "bhagavad-gita-chapter-12.json", "verse_count": 20 },
-        { "number": 13, "file": "bhagavad-gita-chapter-13.json", "verse_count": 10 },
-        { "number": 14, "file": "bhagavad-gita-chapter-14.json", "verse_count": 10 },
-        { "number": 15, "file": "bhagavad-gita-chapter-15.json", "verse_count": 10 },
-        { "number": 16, "file": "bhagavad-gita-chapter-16.json", "verse_count": 10 },
-        { "number": 17, "file": "bhagavad-gita-chapter-17.json", "verse_count": 10 },
-        { "number": 18, "file": "bhagavad-gita-chapter-18.json", "verse_count": 10 }
+        {
+          "number": 1,
+          "file": "bhagavad-gita-chapter-1.json",
+          "verse_count": 39
+        },
+        {
+          "number": 2,
+          "file": "bhagavad-gita-chapter-2.json",
+          "verse_count": 71
+        },
+        {
+          "number": 3,
+          "file": "bhagavad-gita-chapter-3.json",
+          "verse_count": 43
+        },
+        {
+          "number": 4,
+          "file": "bhagavad-gita-chapter-4.json",
+          "verse_count": 42
+        },
+        {
+          "number": 5,
+          "file": "bhagavad-gita-chapter-5.json",
+          "verse_count": 27
+        },
+        {
+          "number": 6,
+          "file": "bhagavad-gita-chapter-6.json",
+          "verse_count": 42
+        },
+        {
+          "number": 7,
+          "file": "bhagavad-gita-chapter-7.json",
+          "verse_count": 30
+        },
+        {
+          "number": 8,
+          "file": "bhagavad-gita-chapter-8.json",
+          "verse_count": 28
+        },
+        {
+          "number": 9,
+          "file": "bhagavad-gita-chapter-9.json",
+          "verse_count": 34
+        },
+        {
+          "number": 10,
+          "file": "bhagavad-gita-chapter-10.json",
+          "verse_count": 40
+        },
+        {
+          "number": 11,
+          "file": "bhagavad-gita-chapter-11.json",
+          "verse_count": 52
+        },
+        {
+          "number": 12,
+          "file": "bhagavad-gita-chapter-12.json",
+          "verse_count": 16
+        },
+        {
+          "number": 13,
+          "file": "bhagavad-gita-chapter-13.json",
+          "verse_count": 29
+        },
+        {
+          "number": 14,
+          "file": "bhagavad-gita-chapter-14.json",
+          "verse_count": 24
+        },
+        {
+          "number": 15,
+          "file": "bhagavad-gita-chapter-15.json",
+          "verse_count": 19
+        },
+        {
+          "number": 16,
+          "file": "bhagavad-gita-chapter-16.json",
+          "verse_count": 19
+        },
+        {
+          "number": 17,
+          "file": "bhagavad-gita-chapter-17.json",
+          "verse_count": 26
+        },
+        {
+          "number": 18,
+          "file": "bhagavad-gita-chapter-18.json",
+          "verse_count": 76
+        }
       ],
-      "completeness_score": 100.0,
-      "status": "GOLD"
+      "completeness_score": 100,
+      "status": "GOLD",
+      "last_audit": "2026-04-15"
     },
     {
       "book_id": "mahabharata",
@@ -81,7 +159,10 @@
       },
       "total_chapters": 18,
       "total_verses": 180,
-      "languages": ["en", "sa"],
+      "languages": [
+        "en",
+        "sa"
+      ],
       "primary_publication": "KMG",
       "authors": [
         {
@@ -92,24 +173,96 @@
         }
       ],
       "chapters": [
-        { "number": 1, "file": "mahabharata-chapter-1.json", "verse_count": 10 },
-        { "number": 2, "file": "mahabharata-chapter-2.json", "verse_count": 10 },
-        { "number": 3, "file": "mahabharata-chapter-3.json", "verse_count": 10 },
-        { "number": 4, "file": "mahabharata-chapter-4.json", "verse_count": 10 },
-        { "number": 5, "file": "mahabharata-chapter-5.json", "verse_count": 10 },
-        { "number": 6, "file": "mahabharata-chapter-6.json", "verse_count": 10 },
-        { "number": 7, "file": "mahabharata-chapter-7.json", "verse_count": 10 },
-        { "number": 8, "file": "mahabharata-chapter-8.json", "verse_count": 10 },
-        { "number": 9, "file": "mahabharata-chapter-9.json", "verse_count": 10 },
-        { "number": 10, "file": "mahabharata-chapter-10.json", "verse_count": 10 },
-        { "number": 11, "file": "mahabharata-chapter-11.json", "verse_count": 10 },
-        { "number": 12, "file": "mahabharata-chapter-12.json", "verse_count": 10 },
-        { "number": 13, "file": "mahabharata-chapter-13.json", "verse_count": 10 },
-        { "number": 14, "file": "mahabharata-chapter-14.json", "verse_count": 10 },
-        { "number": 15, "file": "mahabharata-chapter-15.json", "verse_count": 10 },
-        { "number": 16, "file": "mahabharata-chapter-16.json", "verse_count": 10 },
-        { "number": 17, "file": "mahabharata-chapter-17.json", "verse_count": 10 },
-        { "number": 18, "file": "mahabharata-chapter-18.json", "verse_count": 10 }
+        {
+          "number": 1,
+          "file": "mahabharata-chapter-1.json",
+          "verse_count": 10
+        },
+        {
+          "number": 2,
+          "file": "mahabharata-chapter-2.json",
+          "verse_count": 10
+        },
+        {
+          "number": 3,
+          "file": "mahabharata-chapter-3.json",
+          "verse_count": 10
+        },
+        {
+          "number": 4,
+          "file": "mahabharata-chapter-4.json",
+          "verse_count": 10
+        },
+        {
+          "number": 5,
+          "file": "mahabharata-chapter-5.json",
+          "verse_count": 10
+        },
+        {
+          "number": 6,
+          "file": "mahabharata-chapter-6.json",
+          "verse_count": 10
+        },
+        {
+          "number": 7,
+          "file": "mahabharata-chapter-7.json",
+          "verse_count": 10
+        },
+        {
+          "number": 8,
+          "file": "mahabharata-chapter-8.json",
+          "verse_count": 10
+        },
+        {
+          "number": 9,
+          "file": "mahabharata-chapter-9.json",
+          "verse_count": 10
+        },
+        {
+          "number": 10,
+          "file": "mahabharata-chapter-10.json",
+          "verse_count": 10
+        },
+        {
+          "number": 11,
+          "file": "mahabharata-chapter-11.json",
+          "verse_count": 10
+        },
+        {
+          "number": 12,
+          "file": "mahabharata-chapter-12.json",
+          "verse_count": 10
+        },
+        {
+          "number": 13,
+          "file": "mahabharata-chapter-13.json",
+          "verse_count": 10
+        },
+        {
+          "number": 14,
+          "file": "mahabharata-chapter-14.json",
+          "verse_count": 10
+        },
+        {
+          "number": 15,
+          "file": "mahabharata-chapter-15.json",
+          "verse_count": 10
+        },
+        {
+          "number": 16,
+          "file": "mahabharata-chapter-16.json",
+          "verse_count": 10
+        },
+        {
+          "number": 17,
+          "file": "mahabharata-chapter-17.json",
+          "verse_count": 10
+        },
+        {
+          "number": 18,
+          "file": "mahabharata-chapter-18.json",
+          "verse_count": 10
+        }
       ],
       "completeness_score": 0.8,
       "status": "SILVER"

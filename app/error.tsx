@@ -14,11 +14,11 @@ export default function GlobalError({
   }, [error])
 
   return (
-    <div className="min-h-screen bg-[#FDFBF7] flex flex-col items-center justify-center p-6 text-center">
-      <div className="bg-white p-8 rounded-2xl shadow-xl max-w-md w-full border border-stone-100">
+    <div className="min-h-screen bg-[#FDFBF7] dark:bg-[#1C1917] flex flex-col items-center justify-center p-6 text-center">
+      <div className="bg-white dark:bg-stone-900 p-8 rounded-2xl shadow-xl max-w-md w-full border border-stone-100 dark:border-stone-800">
         <div className="text-4xl mb-4">⚠️</div>
-        <h2 className="text-2xl font-devanagari font-bold text-orange-900 mb-2">Something went wrong</h2>
-        <p className="text-stone-600 mb-6">
+        <h2 className="text-2xl font-devanagari font-bold text-orange-900 dark:text-orange-400 mb-2">Something went wrong</h2>
+        <p className="text-stone-600 dark:text-stone-400 mb-6">
           We apologize for the inconvenience. An unexpected error occurred while loading this page.
         </p>
 

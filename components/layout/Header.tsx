@@ -66,7 +66,7 @@ export default function Header() {
   const topBooks = availableBooks.slice(0, 5)
 
   return (
-    <nav className="w-full border-b border-stone-100 bg-white/90 backdrop-blur-md sticky top-0 z-[100] h-14">
+    <nav className="w-full border-b border-stone-100 dark:border-stone-800 bg-white/90 dark:bg-stone-950/90 backdrop-blur-md sticky top-0 z-[100] h-14">
       <div className="max-w-[1400px] mx-auto h-full flex items-center justify-between px-4 sm:px-6">
 
         {/* Logo */}
@@ -76,7 +76,7 @@ export default function Header() {
             className="flex items-center gap-2 group"
           >
             <div className="w-7 h-7 bg-orange-600 rounded-md flex items-center justify-center text-white text-[13px] shadow-sm group-hover:rotate-12 transition-transform duration-300">ॐ</div>
-            <span className="font-serif font-black text-base text-stone-900 group-hover:text-orange-600 transition-colors hidden sm:block">Vishwa-Vani</span>
+            <span className="font-serif font-black text-base text-stone-900 dark:text-stone-100 group-hover:text-orange-600 transition-colors hidden sm:block">Vishwa-Vani</span>
           </Link>
 
           {/* Desktop nav */}
@@ -87,18 +87,18 @@ export default function Header() {
               <button
                 onClick={() => setShowLibrary(v => !v)}
                 aria-expanded={showLibrary}
-                className={`flex items-center gap-1 px-3 py-1.5 rounded-md text-xs font-bold transition-all focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:outline-none ${showLibrary || isOnTextPage ? 'text-orange-600 bg-orange-50' : 'text-stone-600 hover:text-stone-900 hover:bg-stone-50'}`}
+                className={`flex items-center gap-1 px-3 py-1.5 rounded-md text-xs font-bold transition-all focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:outline-none ${showLibrary || isOnTextPage ? 'text-orange-600 bg-orange-50 dark:bg-orange-950/40' : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 hover:bg-stone-50 dark:hover:bg-stone-800'}`}
               >
                 Library
                 <svg className={`w-3 h-3 transition-transform duration-200 ${showLibrary ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path d="M19 9l-7 7-7-7" /></svg>
               </button>
 
               {showLibrary && (
-                <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[420px] bg-white border border-stone-100 rounded-xl shadow-2xl shadow-stone-200/50 overflow-hidden animate-in fade-in slide-in-from-top-1 duration-150 z-[150] origin-top">
+                <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[420px] bg-white dark:bg-stone-900 border border-stone-100 dark:border-stone-800 rounded-xl shadow-2xl shadow-stone-200/50 dark:shadow-stone-950/50 overflow-hidden animate-in fade-in slide-in-from-top-1 duration-150 z-[150] origin-top">
                   {/* Continue Reading */}
                   {continueReading && (
-                    <div className="px-4 py-3 border-b border-stone-50 bg-orange-50/30">
-                      <p className="text-[9px] font-black uppercase tracking-widest text-orange-600 mb-2.5">Continue Reading</p>
+                    <div className="px-4 py-3 border-b border-stone-50 dark:border-stone-800 bg-orange-50/30 dark:bg-orange-950/20">
+                      <p className="text-[9px] font-black uppercase tracking-widest text-orange-600 dark:text-orange-500 mb-2.5">Continue Reading</p>
                       <Link
                         href={`/${continueReading.text}/${continueReading.chapter}/${continueReading.verse}`}
                         onClick={() => setShowLibrary(false)}
@@ -116,8 +116,8 @@ export default function Header() {
                   )}
 
                   {/* Quick links row */}
-                  <div className="px-4 py-3 border-b border-stone-50 bg-stone-50/30">
-                    <p className="text-[9px] font-black uppercase tracking-widest text-stone-400 mb-2.5">Available Now</p>
+                  <div className="px-4 py-3 border-b border-stone-50 dark:border-stone-800 bg-stone-50/30 dark:bg-stone-800/30">
+                    <p className="text-[9px] font-black uppercase tracking-widest text-stone-400 dark:text-stone-500 mb-2.5">Available Now</p>
                     <div className="grid grid-cols-2 gap-1.5">
                       {topBooks.map(book => (
                         <Link
@@ -128,14 +128,14 @@ export default function Header() {
                               setDefaultTextSlug(book.slug)
                               localStorage.setItem('vishwa_last_text', book.slug)
                             }}
-                          className="flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-orange-50 hover:text-orange-700 transition-all border border-transparent hover:border-orange-100 group bg-white shadow-sm"
+                          className="flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-orange-50 dark:hover:bg-orange-950/40 hover:text-orange-700 dark:hover:text-orange-400 transition-all border border-transparent hover:border-orange-100 dark:hover:border-orange-900 group bg-white dark:bg-stone-800 shadow-sm"
                         >
                           <span className="text-[17px] opacity-80 group-hover:opacity-100 transition-opacity">{book.icon || '📜'}</span>
                           <div>
-                            <div className="text-xs font-bold text-stone-800 group-hover:text-orange-700 leading-tight">
+                            <div className="text-xs font-bold text-stone-800 dark:text-stone-200 group-hover:text-orange-700 dark:group-hover:text-orange-400 leading-tight">
                               {book.name}
                             </div>
-                            <div className="text-[9px] text-stone-400 font-medium group-hover:text-orange-500/70">{book.totalChapters} chap</div>
+                            <div className="text-[9px] text-stone-400 dark:text-stone-500 font-medium group-hover:text-orange-500/70">{book.totalChapters} chap</div>
                           </div>
                         </Link>
                       ))}
@@ -144,7 +144,7 @@ export default function Header() {
 
                   {/* Browse all */}
                   <div className="px-4 py-2.5 flex items-center justify-between">
-                    <span className="text-[10px] text-stone-400 font-medium">{availableBooks.length} texts available</span>
+                    <span className="text-[10px] text-stone-400 dark:text-stone-500 font-medium">{availableBooks.length} texts available</span>
                     <Link href="/" onClick={() => setShowLibrary(false)} className="text-[11px] font-bold text-orange-600 hover:text-orange-700 transition-colors inline-flex items-center gap-1">
                       Full Library <span aria-hidden="true">&rarr;</span>
                     </Link>
@@ -153,7 +153,7 @@ export default function Header() {
               )}
             </div>
 
-            <Link href="/search" className={`px-3 py-1.5 rounded-md text-xs font-bold transition-all focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:outline-none ${pathname === '/search' ? 'text-orange-600 bg-orange-50' : 'text-stone-600 hover:text-stone-900 hover:bg-stone-50'}`}>
+            <Link href="/search" className={`px-3 py-1.5 rounded-md text-xs font-bold transition-all focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:outline-none ${pathname === '/search' ? 'text-orange-600 bg-orange-50 dark:bg-orange-950/40' : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 hover:bg-stone-50 dark:hover:bg-stone-800'}`}>
               Search
             </Link>
 
@@ -166,13 +166,13 @@ export default function Header() {
         {/* Centre stats — desktop only */}
         <div className="hidden xl:flex items-center gap-6 text-center">
           <div>
-            <div className="text-[9px] font-bold text-stone-300 uppercase tracking-[0.2em]">Books</div>
-            <div className="text-xs font-black text-stone-700">{stats.totalBooks}</div>
+            <div className="text-[9px] font-bold text-stone-300 dark:text-stone-600 uppercase tracking-[0.2em]">Books</div>
+            <div className="text-xs font-black text-stone-700 dark:text-stone-300">{stats.totalBooks}</div>
           </div>
-          <div className="w-px h-4 bg-stone-100" />
+          <div className="w-px h-4 bg-stone-100 dark:bg-stone-800" />
           <div>
-            <div className="text-[9px] font-bold text-stone-300 uppercase tracking-[0.2em]">Verses</div>
-            <div className="text-xs font-black text-stone-700">{stats.totalVerses.toLocaleString()}+</div>
+            <div className="text-[9px] font-bold text-stone-300 dark:text-stone-600 uppercase tracking-[0.2em]">Verses</div>
+            <div className="text-xs font-black text-stone-700 dark:text-stone-300">{stats.totalVerses.toLocaleString()}+</div>
           </div>
         </div>
 
@@ -207,23 +207,23 @@ export default function Header() {
 
       {/* Mobile menu — slide down panel */}
       {showMobileMenu && (
-        <div className="lg:hidden fixed inset-x-0 top-14 bg-white/90 backdrop-blur-2xl border-b border-stone-100 shadow-2xl z-[150] animate-in slide-in-from-top-0 duration-200 h-[calc(100vh-3.5rem)] overflow-y-auto">
+        <div className="lg:hidden fixed inset-x-0 top-14 bg-white/95 dark:bg-stone-950/95 backdrop-blur-2xl border-b border-stone-100 dark:border-stone-800 shadow-2xl z-[150] animate-in slide-in-from-top-0 duration-200 h-[calc(100vh-3.5rem)] overflow-y-auto">
           <div className="max-w-[1400px] mx-auto px-4 py-5 space-y-1.5">
-            <p className="text-[10px] font-black uppercase tracking-[0.2em] text-stone-400 mb-3 ml-2">Available Library</p>
+            <p className="text-[10px] font-black uppercase tracking-[0.2em] text-stone-400 dark:text-stone-500 mb-3 ml-2">Available Library</p>
             {topBooks.map(book => (
               <Link
                 key={book.slug}
                 href={`/${book.slug}/1`}
                 onClick={() => setShowMobileMenu(false)}
-                className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-orange-50 transition-all bg-stone-50/50"
+                className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-orange-50 dark:hover:bg-orange-950/30 transition-all bg-stone-50/50 dark:bg-stone-800/50"
               >
                 <span className="text-xl opacity-80">{book.icon || '📜'}</span>
-                <span className="text-sm font-bold text-stone-800">{book.name}</span>
+                <span className="text-sm font-bold text-stone-800 dark:text-stone-200">{book.name}</span>
               </Link>
             ))}
-            <div className="border-t border-stone-100 mt-5 pt-5 space-y-1.5">
-              <Link href="/search" onClick={() => setShowMobileMenu(false)} className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-stone-50 transition-all text-sm font-bold text-stone-600">🔍 Deep Search</Link>
-              <Link href="/lab" onClick={() => setShowMobileMenu(false)} className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-orange-50 transition-all text-sm font-bold text-orange-600">🧪 Vedic Labs</Link>
+            <div className="border-t border-stone-100 dark:border-stone-800 mt-5 pt-5 space-y-1.5">
+              <Link href="/search" onClick={() => setShowMobileMenu(false)} className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-stone-50 dark:hover:bg-stone-800 transition-all text-sm font-bold text-stone-600 dark:text-stone-400">🔍 Deep Search</Link>
+              <Link href="/lab" onClick={() => setShowMobileMenu(false)} className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-orange-50 dark:hover:bg-orange-950/30 transition-all text-sm font-bold text-orange-600 dark:text-orange-500">🧪 Vedic Labs</Link>
               <Link href="/bhagavad-gita/1" onClick={() => setShowMobileMenu(false)} className="flex items-center justify-center gap-2 mt-4 w-full px-6 py-3.5 bg-stone-900 hover:bg-orange-600 text-white text-sm font-bold rounded-xl transition-all shadow-md">📜 Begin Reading</Link>
             </div>
           </div>

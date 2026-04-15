@@ -76,30 +76,30 @@ export default function FeedbackWidget() {
       </button>
 
       {isOpen && (
-        <div className="fixed inset-0 bg-stone-900/50 flex items-center justify-center z-50 p-4">
-          <div className="bg-white rounded-xl shadow-2xl max-w-lg w-full p-6 relative">
+        <div className="fixed inset-0 bg-stone-900/60 flex items-center justify-center z-50 p-4">
+          <div className="bg-white dark:bg-stone-900 rounded-xl shadow-2xl max-w-lg w-full p-6 relative border border-stone-100 dark:border-stone-800">
             <button
               onClick={() => setIsOpen(false)}
-              className="absolute top-4 right-4 text-stone-400 hover:text-stone-600"
+              className="absolute top-4 right-4 text-stone-400 hover:text-stone-600 dark:hover:text-stone-200"
               aria-label="Close"
             >
               ✕
             </button>
 
-            <h2 className="text-2xl font-devanagari font-bold text-orange-900 mb-4">Beta Feedback</h2>
+            <h2 className="text-2xl font-devanagari font-bold text-orange-900 dark:text-orange-400 mb-4">Feedback</h2>
 
             {status === 'success' ? (
-              <div className="bg-green-50 border border-green-200 text-green-800 p-4 rounded-lg">
+              <div className="bg-green-50 dark:bg-green-950/50 border border-green-200 dark:border-green-900 text-green-800 dark:text-green-300 p-4 rounded-lg">
                 <h3 className="font-bold mb-2">Thank you!</h3>
                 <p className="mb-2">Your feedback has been submitted successfully.</p>
                 {issueUrl && (
-                  <a href={issueUrl} target="_blank" rel="noopener noreferrer" className="text-green-700 underline font-medium">
+                  <a href={issueUrl} target="_blank" rel="noopener noreferrer" className="text-green-700 dark:text-green-400 underline font-medium">
                     View Issue on GitHub
                   </a>
                 )}
                 <button
                   onClick={() => setIsOpen(false)}
-                  className="mt-4 w-full bg-stone-200 hover:bg-stone-300 text-stone-800 py-2 rounded-lg font-medium transition-colors"
+                  className="mt-4 w-full bg-stone-200 dark:bg-stone-700 hover:bg-stone-300 dark:hover:bg-stone-600 text-stone-800 dark:text-stone-200 py-2 rounded-lg font-medium transition-colors"
                 >
                   Close
                 </button>
@@ -107,12 +107,12 @@ export default function FeedbackWidget() {
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
-                  <label htmlFor="feedback-type" className="block text-sm font-medium text-stone-700 mb-1">Type of Feedback</label>
+                  <label htmlFor="feedback-type" className="block text-sm font-medium text-stone-700 dark:text-stone-300 mb-1">Type of Feedback</label>
                   <select
                     id="feedback-type"
                     value={type}
                     onChange={(e) => setType(e.target.value)}
-                    className="w-full border-stone-300 rounded-lg shadow-sm focus:border-orange-500 focus:ring-orange-500 bg-stone-50 p-2 border"
+                    className="w-full border-stone-300 dark:border-stone-700 rounded-lg shadow-sm focus:border-orange-500 focus:ring-orange-500 bg-stone-50 dark:bg-stone-800 dark:text-stone-200 p-2 border"
                   >
                     <option>Bug</option>
                     <option>Suggestion</option>
@@ -122,8 +122,8 @@ export default function FeedbackWidget() {
                 </div>
 
                 <div>
-                  <label htmlFor="feedback-message" className="block text-sm font-medium text-stone-700 mb-1">
-                    Details <span className="text-stone-400 font-normal">(min 200 chars)</span>
+                  <label htmlFor="feedback-message" className="block text-sm font-medium text-stone-700 dark:text-stone-300 mb-1">
+                    Details <span className="text-stone-400 dark:text-stone-500 font-normal">(min 200 chars)</span>
                   </label>
                   <textarea
                     id="feedback-message"
@@ -131,7 +131,7 @@ export default function FeedbackWidget() {
                     onChange={(e) => setMessage(e.target.value)}
                     rows={5}
                     placeholder="Please describe the issue or suggestion in detail..."
-                    className="w-full border-stone-300 rounded-lg shadow-sm focus:border-orange-500 focus:ring-orange-500 bg-stone-50 p-2 border"
+                    className="w-full border-stone-300 dark:border-stone-700 rounded-lg shadow-sm focus:border-orange-500 focus:ring-orange-500 bg-stone-50 dark:bg-stone-800 dark:text-stone-200 dark:placeholder:text-stone-600 p-2 border"
                     required
                   />
                   <div className={`text-xs mt-1 ${message.length < 200 ? 'text-red-500' : 'text-green-600'}`}>
@@ -140,8 +140,8 @@ export default function FeedbackWidget() {
                 </div>
 
                 <div>
-                  <label htmlFor="feedback-email" className="block text-sm font-medium text-stone-700 mb-1">
-                    Email <span className="text-stone-400 font-normal">(optional)</span>
+                  <label htmlFor="feedback-email" className="block text-sm font-medium text-stone-700 dark:text-stone-300 mb-1">
+                    Email <span className="text-stone-400 dark:text-stone-500 font-normal">(optional)</span>
                   </label>
                   <input
                     type="email"
@@ -149,12 +149,12 @@ export default function FeedbackWidget() {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="For follow-up questions"
-                    className="w-full border-stone-300 rounded-lg shadow-sm focus:border-orange-500 focus:ring-orange-500 bg-stone-50 p-2 border"
+                    className="w-full border-stone-300 dark:border-stone-700 rounded-lg shadow-sm focus:border-orange-500 focus:ring-orange-500 bg-stone-50 dark:bg-stone-800 dark:text-stone-200 dark:placeholder:text-stone-600 p-2 border"
                   />
                 </div>
 
                 {errorText && (
-                  <div className="text-red-600 text-sm bg-red-50 p-2 rounded border border-red-100">
+                  <div className="text-red-600 dark:text-red-400 text-sm bg-red-50 dark:bg-red-950/40 p-2 rounded border border-red-100 dark:border-red-900">
                     {errorText}
                   </div>
                 )}
@@ -163,7 +163,7 @@ export default function FeedbackWidget() {
                   <button
                     type="button"
                     onClick={() => setIsOpen(false)}
-                    className="flex-1 bg-stone-200 hover:bg-stone-300 text-stone-800 py-2 rounded-lg font-medium transition-colors"
+                    className="flex-1 bg-stone-200 dark:bg-stone-700 hover:bg-stone-300 dark:hover:bg-stone-600 text-stone-800 dark:text-stone-200 py-2 rounded-lg font-medium transition-colors"
                   >
                     Cancel
                   </button>

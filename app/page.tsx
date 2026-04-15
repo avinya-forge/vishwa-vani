@@ -18,7 +18,7 @@ export default function Home() {
     const saved = localStorage.getItem('vishwa_last_text')
     if (saved) setDefaultTextSlug(saved)
   }, [])
-  if (!mounted) return <div className="min-h-screen bg-[#FDFBF7]" />
+  if (!mounted) return <div className="min-h-screen bg-[#FDFBF7] dark:bg-[#1C1917]" />
   
   const statsList = [
     { n: stats.totalBooks, label: 'Sacred Texts', icon: '📜' },
@@ -32,10 +32,10 @@ export default function Home() {
   )
 
   return (
-    <div className="min-h-screen bg-[#FDFBF7] selection:bg-orange-500/20">
+    <div className="min-h-screen bg-[#FDFBF7] dark:bg-[#1C1917] selection:bg-orange-500/20">
       {/* 🌌 AMBIENT GLOW */}
-      <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-orange-100/40 rounded-full blur-[120px] -mr-96 -mt-96 pointer-events-none" />
-      <div className="absolute top-[20%] left-0 w-[600px] h-[600px] bg-stone-100/60 rounded-full blur-[100px] -ml-96 pointer-events-none" />
+      <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-orange-100/40 dark:bg-orange-900/10 rounded-full blur-[120px] -mr-96 -mt-96 pointer-events-none" />
+      <div className="absolute top-[20%] left-0 w-[600px] h-[600px] bg-stone-100/60 dark:bg-stone-900/30 rounded-full blur-[100px] -ml-96 pointer-events-none" />
 
 
       {/* ═══════ HERO ═══════ */}
@@ -45,11 +45,11 @@ export default function Home() {
           Eternal Wisdom · Open Access
         </div>
 
-        <h1 className="text-4xl sm:text-5xl md:text-7xl font-serif font-black text-stone-900 leading-[1.1] tracking-tight mb-6">
+        <h1 className="text-4xl sm:text-5xl md:text-7xl font-serif font-black text-stone-900 dark:text-stone-100 leading-[1.1] tracking-tight mb-6">
           The Universal Portal to <span className="bg-gradient-to-r from-orange-600 to-orange-400 bg-clip-text text-transparent">Vedic Wisdom</span>
         </h1>
 
-        <p className="text-lg md:text-xl text-stone-600 max-w-3xl mx-auto leading-relaxed font-serif italic mb-10 opacity-80">
+        <p className="text-lg md:text-xl text-stone-600 dark:text-stone-400 max-w-3xl mx-auto leading-relaxed font-serif italic mb-10 opacity-80">
           &ldquo;{t('description') || 'Restoring the Universal Voice of Vedic Wisdom through AI-integrated scholarship and open-access intelligence.'}&rdquo;
         </p>
 
@@ -71,10 +71,10 @@ export default function Home() {
         {/* Quick stats */}
         <div className="grid grid-cols-3 gap-4 sm:gap-8 mt-16 max-w-3xl mx-auto">
           {statsList.map(s => (
-            <div key={s.label} className="bg-white/50 backdrop-blur-sm border border-stone-100 rounded-2xl p-4 sm:p-6 shadow-sm hover:shadow-md hover:border-orange-200 transition-all group">
+            <div key={s.label} className="bg-white/50 dark:bg-stone-800/50 backdrop-blur-sm border border-stone-100 dark:border-stone-700 rounded-2xl p-4 sm:p-6 shadow-sm hover:shadow-md hover:border-orange-200 dark:hover:border-orange-800 transition-all group">
               <div className="text-xl mb-1 group-hover:scale-110 transition-transform">{s.icon}</div>
-              <div className="text-2xl sm:text-3xl font-serif font-black text-stone-900">{s.n}</div>
-              <div className="text-[10px] font-black text-stone-400 uppercase tracking-widest mt-1">{s.label}</div>
+              <div className="text-2xl sm:text-3xl font-serif font-black text-stone-900 dark:text-stone-100">{s.n}</div>
+              <div className="text-[10px] font-black text-stone-400 dark:text-stone-500 uppercase tracking-widest mt-1">{s.label}</div>
             </div>
           ))}
         </div>
@@ -94,9 +94,9 @@ export default function Home() {
             <div key={cat} className="mb-12">
               {/* Section header */}
               <div className="flex items-center gap-4 mb-6">
-                <h2 className="text-xl md:text-2xl font-serif font-black text-stone-900">{catLabels[cat] || cat}</h2>
-                <div className="flex-1 h-px bg-stone-100" />
-                <span className="text-xs font-bold text-stone-400">
+                <h2 className="text-xl md:text-2xl font-serif font-black text-stone-900 dark:text-stone-100">{catLabels[cat] || cat}</h2>
+                <div className="flex-1 h-px bg-stone-100 dark:bg-stone-800" />
+                <span className="text-xs font-bold text-stone-400 dark:text-stone-500">
                   {books.filter((b: unknown) => (b as Record<string, unknown>).available).length} available
                 </span>
               </div>
@@ -124,8 +124,8 @@ function BookCard({ book, locale }: { book: Record<string, unknown>, locale: str
   const childBooks = book.children ? (book.children as string[]).map((slug: string) => VEDIC_LIBRARY.find(b => b.slug === slug)).filter(Boolean) : []
 
   return (
-    <div className={`group relative bg-white rounded-xl border border-stone-100 overflow-hidden transition-all duration-300 flex flex-col h-full 
-      ${isAvailable ? 'hover:border-orange-200 hover:shadow-lg hover:shadow-orange-50/50' : 'opacity-60 pointer-events-none grayscale'}`}
+    <div className={`group relative bg-white dark:bg-stone-900 rounded-xl border border-stone-100 dark:border-stone-800 overflow-hidden transition-all duration-300 flex flex-col h-full
+      ${isAvailable ? 'hover:border-orange-200 dark:hover:border-orange-800 hover:shadow-lg hover:shadow-orange-50/50 dark:hover:shadow-orange-900/20' : 'opacity-60 pointer-events-none grayscale'}`}
     >
       {/* Top accent line on hover */}
       <div className="absolute top-0 left-0 right-0 h-0.5 bg-orange-600 opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -133,7 +133,7 @@ function BookCard({ book, locale }: { book: Record<string, unknown>, locale: str
       <div className="p-5 flex flex-col flex-1">
         {/* Category + status badges */}
         <div className="flex items-center justify-between mb-3">
-          <span className="text-[9px] font-bold uppercase tracking-widest text-stone-400 bg-stone-50 px-2 py-0.5 rounded-md">
+          <span className="text-[9px] font-bold uppercase tracking-widest text-stone-400 dark:text-stone-500 bg-stone-50 dark:bg-stone-800 px-2 py-0.5 rounded-md">
             {String(book.category)}
           </span>
           {isAvailable
@@ -144,13 +144,13 @@ function BookCard({ book, locale }: { book: Record<string, unknown>, locale: str
 
         {/* Title */}
         <Link href={`/${book.slug as string}/1`} className="block mb-2">
-          <h3 className="text-lg font-serif font-black text-stone-900 leading-tight group-hover:text-orange-700 transition-colors line-clamp-2">
+          <h3 className="text-lg font-serif font-black text-stone-900 dark:text-stone-100 leading-tight group-hover:text-orange-700 dark:group-hover:text-orange-400 transition-colors line-clamp-2">
             {String(name)}
           </h3>
         </Link>
 
         {/* Description */}
-        <p className="text-stone-500 text-xs leading-relaxed mb-4 line-clamp-3 flex-1">
+        <p className="text-stone-500 dark:text-stone-400 text-xs leading-relaxed mb-4 line-clamp-3 flex-1">
           {String(book.description)}
         </p>
 
@@ -164,7 +164,7 @@ function BookCard({ book, locale }: { book: Record<string, unknown>, locale: str
               <Link
                 key={childObj.slug as string}
                 href={`/${childObj.slug as string}/1`}
-                className="flex items-center justify-between p-2.5 rounded-lg bg-stone-50 hover:bg-orange-50 hover:text-orange-700 transition-all text-xs font-bold text-stone-600 border border-transparent hover:border-orange-100"
+                className="flex items-center justify-between p-2.5 rounded-lg bg-stone-50 dark:bg-stone-800 hover:bg-orange-50 dark:hover:bg-orange-950/50 hover:text-orange-700 dark:hover:text-orange-400 transition-all text-xs font-bold text-stone-600 dark:text-stone-400 border border-transparent hover:border-orange-100 dark:hover:border-orange-900"
               >
                 {String(childObj.name)}
                 <svg className="w-3.5 h-3.5 opacity-40 group-hover:opacity-100 transition-opacity" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path d="M9 5l7 7-7 7" /></svg>
@@ -189,10 +189,10 @@ function BookCard({ book, locale }: { book: Record<string, unknown>, locale: str
         )}
 
         {/* Footer CTA */}
-        <div className="flex items-center justify-between pt-3 border-t border-stone-50 mt-auto">
+        <div className="flex items-center justify-between pt-3 border-t border-stone-50 dark:border-stone-800 mt-auto">
           <div>
-            <div className="text-[9px] font-bold uppercase tracking-[0.2em] text-stone-300">Chapters</div>
-            <div className="text-lg font-serif font-black text-stone-900 leading-none mt-0.5">{String(book.totalChapters)}</div>
+            <div className="text-[9px] font-bold uppercase tracking-[0.2em] text-stone-300 dark:text-stone-600">Chapters</div>
+            <div className="text-lg font-serif font-black text-stone-900 dark:text-stone-100 leading-none mt-0.5">{String(book.totalChapters)}</div>
           </div>
           <Link
             href={`/${book.slug as string}/1`}

@@ -1,6 +1,4 @@
 import SearchClient from '@/components/search/search-client'
-import Header from '@/components/layout/Header'
-import Footer from '@/components/layout/Footer'
 import { setRequestLocale } from 'next-intl/server'
 import type { Metadata } from 'next'
 
@@ -32,13 +30,5 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function SearchPage() {
   setRequestLocale('en')
 
-  return (
-    <div className="min-h-screen bg-[#FDFBF7] flex flex-col">
-      <Header />
-      <main className="flex-grow">
-        <SearchClient />
-      </main>
-      <Footer />
-    </div>
-  )
+  return <SearchClient />
 }

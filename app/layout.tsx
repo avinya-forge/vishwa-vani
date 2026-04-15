@@ -96,8 +96,8 @@ export default async function RootLayout({
             `,
           }}
         />
-        {/* Placeholder GA Measurement ID. Update before shipping. */}
-        <GoogleAnalytics gaId="G-XXXXXX" />
+        {/* GA Measurement ID — set NEXT_PUBLIC_GA_ID env var to enable */}
+        {process.env.NEXT_PUBLIC_GA_ID && <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />}
         <Analytics />
       </body>
     </html>

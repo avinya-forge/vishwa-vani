@@ -24,7 +24,7 @@ describe('FeedbackWidget', () => {
     render(<FeedbackWidget />)
     const button = screen.getByRole('button', { name: /Report an issue/i })
     fireEvent.click(button)
-    expect(screen.getByText('Beta Feedback')).toBeInTheDocument()
+    expect(screen.getByText('Feedback')).toBeInTheDocument()
   })
 
   it('shows error if message is less than 200 characters', async () => {

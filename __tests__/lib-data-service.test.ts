@@ -2,6 +2,7 @@
 // Tests use the singleton so cache must be cleared between cases
 
 import { VedicDataService, vedicDataService } from '@/lib/data-service'
+import * as fs from 'fs'
 
 // Prevent real filesystem / lake reads in unit tests
 jest.mock('@/lib/server-lake', () => ({
@@ -99,36 +100,35 @@ describe('VedicDataService', () => {
       ...overrides
     })
 
+    function injectVerseViaFs(verse: ReturnType<typeof makeVerse>) {
+      ;(fs.readFileSync as jest.Mock).mockReturnValueOnce(JSON.stringify({ books: [] }))
+      ;(fs.existsSync as jest.Mock).mockReturnValueOnce(true)
+      ;(fs.readFileSync as jest.Mock).mockReturnValueOnce(JSON.stringify([verse]))
+    }
+
     it('enriched verse has uiMetadata with hasCommentary = true', async () => {
-      // Inject a verse via mock
-      const { getVersesFromLakeServer } = await import('@/lib/server-lake')
-      ;(getVersesFromLakeServer as jest.Mock).mockResolvedValueOnce([makeVerse()])
+      injectVerseViaFs(makeVerse())
 
       const result = await vedicDataService.getChapterData('bhagavad-gita', 7)
       expect(result?.verses[0].uiMetadata?.hasCommentary).toBe(true)
     })
 
     it('enriched verse hasCommentary = false when no commentary layers', async () => {
-      const { getVersesFromLakeServer } = await import('@/lib/server-lake')
-      ;(getVersesFromLakeServer as jest.Mock).mockResolvedValueOnce([makeVerse({ layers: [] })])
+      injectVerseViaFs(makeVerse({ layers: [] }))
 
       const result = await vedicDataService.getChapterData('bhagavad-gita', 8)
       expect(result?.verses[0].uiMetadata?.hasCommentary).toBe(false)
     })
 
     it('languageCount counts distinct languages in layers', async () => {
-      const { getVersesFromLakeServer } = await import('@/lib/server-lake')
-      ;(getVersesFromLakeServer as jest.Mock).mockResolvedValueOnce([makeVerse()]) // 2 layers: en + hi
+      injectVerseViaFs(makeVerse()) // 2 layers: en + hi
 
       const result = await vedicDataService.getChapterData('bhagavad-gita', 9)
       expect(result?.verses[0].uiMetadata?.languageCount).toBe(2)
     })
 
     it('includes aiContext fields when includeAI is true', async () => {
-      const { getVersesFromLakeServer } = await import('@/lib/server-lake')
-      ;(getVersesFromLakeServer as jest.Mock).mockResolvedValueOnce([
-        makeVerse({ original: 'dharma धर्म karma कर्म' })
-      ])
+      injectVerseViaFs(makeVerse({ original: 'dharma धर्म karma कर्म' }))
 
       const result = await vedicDataService.getChapterData('bhagavad-gita', 10, { includeAI: true })
       const aiCtx = result?.verses[0].aiContext
