@@ -1,3 +1,30 @@
+# Vishwa-Vani Execution Agent & Senior Architect
+
+## 🗺️ System Architecture (Zero-Cost Deployment)
+
+| LAYER | TOOL | FREE LIMIT | PROJECTED USAGE | COST ($0) |
+|-------|------|------------|-----------------|-----------|
+| Frontend & Edge | Cloudflare Pages / Workers | 100,000 req/day | 10,000 req/day | $0 |
+| Database | Supabase (Postgres) / Cloudflare D1 | 500MB / 5M reads | 50MB / 50k reads | $0 |
+| Authentication | Clerk | 10,000 MAU | <1,000 MAU | $0 |
+| AI Synthesizer | Gemini Flash API | 15 RPM / 1M TPM | 50 queries/day | $0 |
+
+## 📊 Data Flow ASCII Diagram
+
+```text
+[ User Browser ] --> ( Cloudflare Pages Edge )
+                              |
+                     [ Next.js SSR / SSG ]
+                     /         |         \
+                    /          |          \
+                   v           v           v
+    [ Clerk Auth API ]  [ Supabase D1 ]   [ Local JSON Lake ]
+         (Tokens)      (User Data/Likes)    (NVF 1.3 Shards)
+                                                |
+                                          [ Gemini Flash API ]
+                                          (Synthesize / Ask)
+```
+
 # Vishwa Vani — Claude Project Architecture Memory
 
 ## Project Summary
@@ -8,14 +35,14 @@ Next.js 16 App Router project serving Sanskrit scripture (Mahabharata, Bhagavad 
 Vishwa-Vani follows a strict multi-agent separation of concerns:
 
 ### 🧠 Claude (The Architect & Planner)
-Claude is solely responsible for **Architectural Blueprinting & Planning**. 
+Claude is solely responsible for **Architectural Blueprinting & Planning**.
 - **Domain**: `docs/vision.md`, `docs/backlog.md`, `docs/release-notes.md`, `docs/blueprint.md`, and high-level structural decisions.
 - **Rules**: Claude maps out the roadmap, structures the milestones, governs the SDLC rules, and analyzes feature feasibility. Claude **does not write feature code**.
 
 ### ⚡ Jules & Antigravity (The Execution Agents)
 Jules and Antigravity are responsible for **Implementation & Code Execution**.
 - **Domain**: All `/app`, `/components`, `/lib`, `/data`, `/scripts`, and `__tests__` directories.
-- **Rules**: They pick up the exact tasks mapped out in `docs/backlog.md` by Claude, implement them according to the `docs/standards.md`, run tests, and commit code. 
+- **Rules**: They pick up the exact tasks mapped out in `docs/backlog.md` by Claude, implement them according to the `docs/standards.md`, run tests, and commit code.
 
 ## Key Architecture
 - **NVF (Normalized Vedic Fragment)** — core data schema: `{ id, original, transliteration, layers[] }`
@@ -113,7 +140,7 @@ You are Vishwa Vani Architect, SDLC v5.0 (deployment-first, beta-driven). Cavema
 These rules apply strictly across Claude, Jules, and Antigravity:
 
 ### 1. Document Structure Preservation
-- **Flat Docs**: `docs/` is completely flat. **DO NOT** recreate folders like `docs/planning`, `docs/architecture`, or `docs/rules`. 
+- **Flat Docs**: `docs/` is completely flat. **DO NOT** recreate folders like `docs/planning`, `docs/architecture`, or `docs/rules`.
 - **Single Source of Truth**: All backlog files, blueprints, and style-guides exist ONLY directly in the `docs/` folder.
 - **Gold Standard Rule**: Only 100% complete, audited, and verified books can be in `data/3-gold/`. Mark `available: true` in `lib/texts.ts` ONLY when data is UI-ready (no placeholders like `[PLACEHOLDER_...]`).
 - **No Rogue Files**: AI should not create random `.md` files or scratchpads at the root. AI-generated assets should not be stored in Git unless they are robust architectural documents placed carefully in `docs/`.
