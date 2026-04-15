@@ -72,7 +72,7 @@ export const VEDIC_LIBRARY: VedicText[] = [
     description: 'The sacred dialogue between Arjuna and Krishna on the battlefield of Kurukshetra. The foundation of Hindu philosophy, exploring duty, devotion, and liberation.',
     category: 'itihas',
     available: true,
-    storage: 'lake',
+    storage: 'json',
     chapterNames: {
       '1': 'Arjuna Visada Yoga — The Despondency of Arjuna',
       '2': 'Sankhya Yoga — The Way of Knowledge',

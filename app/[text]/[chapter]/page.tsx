@@ -42,12 +42,12 @@ export default async function StudyChapterPage(props: Props) {
   const textMetadata = getTextBySlug(textSlug)
   if (!textMetadata || !textMetadata.available) {
     return (
-       <div className="min-h-screen flex items-center justify-center bg-[#FDFBF7]">
-        <div className="text-center p-12 bg-white rounded-[2.5rem] shadow-2xl border border-stone-100 max-w-md">
-          <h2 className="text-3xl font-serif font-black text-stone-900 mb-4">{!textMetadata ? 'Content Not Found' : 'Coming Soon'}</h2>
-          <p className="text-stone-500 font-medium mb-8">
-            {!textMetadata 
-              ? 'The requested scripture could not be found in our library.' 
+       <div className="min-h-screen flex items-center justify-center bg-[#FDFBF7] dark:bg-[#1C1917]">
+        <div className="text-center p-12 bg-white dark:bg-stone-900 rounded-[2.5rem] shadow-2xl border border-stone-100 dark:border-stone-800 max-w-md">
+          <h2 className="text-3xl font-serif font-black text-stone-900 dark:text-stone-100 mb-4">{!textMetadata ? 'Content Not Found' : 'Coming Soon'}</h2>
+          <p className="text-stone-500 dark:text-stone-400 font-medium mb-8">
+            {!textMetadata
+              ? 'The requested scripture could not be found in our library.'
               : `The ${textMetadata.name} is currently undergoing technical audit and will be available soon.`}
           </p>
           <Link href="/" className="px-8 py-4 bg-stone-900 text-white rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-orange-600 transition-all">
@@ -99,10 +99,10 @@ export default async function StudyChapterPage(props: Props) {
 
   if (!chapterData) {
     return (
-       <div className="min-h-screen flex items-center justify-center bg-[#FDFBF7]">
-        <div className="text-center p-12 bg-white rounded-[2.5rem] shadow-2xl border border-stone-100 max-w-md">
-          <h2 className="text-3xl font-serif font-black text-stone-900 mb-4">Content Not Found</h2>
-          <p className="text-stone-500 font-medium mb-8">The requested scripture could not be found in our library.</p>
+       <div className="min-h-screen flex items-center justify-center bg-[#FDFBF7] dark:bg-[#1C1917]">
+        <div className="text-center p-12 bg-white dark:bg-stone-900 rounded-[2.5rem] shadow-2xl border border-stone-100 dark:border-stone-800 max-w-md">
+          <h2 className="text-3xl font-serif font-black text-stone-900 dark:text-stone-100 mb-4">Content Not Found</h2>
+          <p className="text-stone-500 dark:text-stone-400 font-medium mb-8">The requested scripture could not be found in our library.</p>
           <Link href="/" className="px-8 py-4 bg-stone-900 text-white rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-orange-600 transition-all">
             Return to Library
           </Link>
@@ -123,7 +123,7 @@ export default async function StudyChapterPage(props: Props) {
   }
 
   return (
-    <main className="min-h-screen bg-[#FDFBF7]">
+    <main className="min-h-screen bg-[#FDFBF7] dark:bg-[#1C1917]">
       <div className="max-w-none">
         <StudyWrapper
           chapterData={chapterData}
