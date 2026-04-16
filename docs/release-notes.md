@@ -1,5 +1,21 @@
 # Release Notes
 
+## [1.0.9] - 2026-04-16
+
+### 🏛️ Universal Search Portal (EPIC 17)
+- **Home Page Integration**: Added a beautiful, high-discoverability search bar directly into the Hero section, providing an immediate gateway to the entire Vedic library.
+- **Trending Concepts**: Implemented quick-link hashtags for popular concepts like #Dharma, #Karma, and #Yoga on the landing page.
+
+### 🔊 High-Fidelity Sensory Audio
+- **Shankha Soundboard Restoration**: Completely refactored the audio synthesis engine using additive harmonics and brown-noise layering to recreate the resonant, deep drone of sacred conches.
+- **Instrument Variation**: Each of the 6 legendary conches from Gita Ch. 1 now has a unique pitch and timbre (detune variation).
+
+### 🎨 Minute Detail Polish & Aesthetics
+- **Premium 404 Redesign**: Transformed the "Not Found" page into a meditative "Shard Not Found" screen with ambient glows, poetic copy, and glassmorphism.
+- **Translation Hierarchy**: Added a prominent "Universal Translation" label to the reader to distinguish core meanings from scholarly commentaries.
+- **Viewport Hardening**: Applied global `overflow-x: hidden` and `max-width: 100vw` to eliminate horizontal scroll and white-space gaps on all devices.
+- **Mobile Header Optimization**: Reduced header title font size and enabled line-clamping to prevent UI trimming on small viewports.
+
 ## [1.0.8] - 2026-04-16
 
 ### ✨ UI Standardization & Visual Excellence (EPIC 16)

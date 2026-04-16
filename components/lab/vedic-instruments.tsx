@@ -4,12 +4,12 @@ import React, { useState, useRef, useEffect } from 'react'
 import VedicAppTemplate from './vedic-app-template'
 
 const CONCHES = [
-  { name: 'Panchajanya', owner: 'Sri Krishna', origin: 'BG 1.15', desc: 'The transcendental conch whose sound shattered the hearts of the unrighteous.', icon: '🐚', freq: 440, type: 'sine' },
-  { name: 'Devadatta', owner: 'Arjuna', origin: 'BG 1.15', desc: 'The God-gifted conch which announced the beginning of the great dharma-yuddha.', icon: '🐚', freq: 493.88, type: 'sine' },
-  { name: 'Paundra', owner: 'Bhima', origin: 'BG 1.15', desc: 'The enormous conch blown by the voracious eater and performer of Herculean tasks.', icon: '🐚', freq: 329.63, type: 'square' },
-  { name: 'Anantavijaya', owner: 'Yudhisthira', origin: 'BG 1.16', desc: 'The conch of "Infinite Victory" blown by the son of Kunti.', icon: '🐚', freq: 392, type: 'sine' },
-  { name: 'Sughosa', owner: 'Nakula', origin: 'BG 1.16', desc: 'The "Melodious" conch signifying balance and grace.', icon: '🐚', freq: 523.25, type: 'sine' },
-  { name: 'Manipushpaka', owner: 'Sahadeva', origin: 'BG 1.16', desc: 'The "Jeweled" conch of the youngest Pandava.', icon: '🐚', freq: 587.33, type: 'sine' },
+  { name: 'Panchajanya', owner: 'Sri Krishna', origin: 'BG 1.15', desc: 'The transcendental conch whose sound shattered the hearts of the unrighteous.', icon: '🐚', freq: 440, type: 'triangle', detune: 0 },
+  { name: 'Devadatta', owner: 'Arjuna', origin: 'BG 1.15', desc: 'The God-gifted conch which announced the beginning of the great dharma-yuddha.', icon: '🐚', freq: 493.88, type: 'triangle', detune: 200 },
+  { name: 'Paundra', owner: 'Bhima', origin: 'BG 1.15', desc: 'The enormous conch blown by the voracious eater and performer of Herculean tasks.', icon: '🐚', freq: 329.63, type: 'triangle', detune: -400 },
+  { name: 'Anantavijaya', owner: 'Yudhisthira', origin: 'BG 1.16', desc: 'The conch of "Infinite Victory" blown by the son of Kunti.', icon: '🐚', freq: 392, type: 'triangle', detune: 100 },
+  { name: 'Sughosa', owner: 'Nakula', origin: 'BG 1.16', desc: 'The "Melodious" conch signifying balance and grace.', icon: '🐚', freq: 523.25, type: 'triangle', detune: 300 },
+  { name: 'Manipushpaka', owner: 'Sahadeva', origin: 'BG 1.16', desc: 'The "Jeweled" conch of the youngest Pandava.', icon: '🐚', freq: 587.33, type: 'triangle', detune: 500 },
 ]
 
 export default function VedicInstruments() {
@@ -27,52 +27,101 @@ export default function VedicInstruments() {
     }
   }, [])
 
-  const playSynthesizedSound = () => {
-    if (!audioContext.current) {
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any -- Required for legacy webkitAudioContext support in older browsers
-      audioContext.current = new (window.AudioContext || (window as any).webkitAudioContext)()
-    }
-    
-    // BUG-024: Browsers often start AudioContext in 'suspended' state. Must resume on user interaction.
-    if (audioContext.current.state === 'suspended') {
-      audioContext.current.resume()
-    }
-
-    if (isPlaying) {
-      if (oscillator.current) {
-        oscillator.current.stop()
-        oscillator.current = null
+  const playSynthesizedSound = async () => {
+    try {
+      if (!audioContext.current) {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        const AudioCtx = window.AudioContext || (window as any).webkitAudioContext;
+        if (!AudioCtx) {
+          console.error("Web Audio API not supported");
+          return;
+        }
+        audioContext.current = new AudioCtx();
       }
-      setIsPlaying(false)
-      return
-    }
+      
+      const ctx = audioContext.current;
+      
+      // Mandatory resume for browser security policies
+      if (ctx.state === 'suspended') {
+        await ctx.resume();
+      }
 
-    const ctx = audioContext.current
-    const osc = ctx.createOscillator()
-    const gain = ctx.createGain()
-    const inst = CONCHES[selected]
+      if (isPlaying) {
+        if (oscillator.current) {
+          oscillator.current.stop();
+          oscillator.current = null;
+        }
+        setIsPlaying(false);
+        return;
+      }
 
-    osc.type = inst.type as OscillatorType
-    osc.frequency.setValueAtTime(inst.freq as number, ctx.currentTime)
-    
-    // Smooth onset/offset to avoid clicking
-    gain.gain.setValueAtTime(0, ctx.currentTime)
-    gain.gain.linearRampToValueAtTime(0.2, ctx.currentTime + 0.1)
-    gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 2.0)
+      const inst = CONCHES[selected];
+      const osc = ctx.createOscillator();
+      const sub = ctx.createOscillator();
+      const noise = ctx.createBufferSource();
+      const noiseFilter = ctx.createBiquadFilter();
+      const gain = ctx.createGain();
+      const mainFilter = ctx.createBiquadFilter();
 
-    osc.connect(gain)
-    gain.connect(ctx.destination)
+      // Create Brown Noise for the 'breeze/air' in the shell
+      const bufferSize = 2 * ctx.sampleRate;
+      const noiseBuffer = ctx.createBuffer(1, bufferSize, ctx.sampleRate);
+      const output = noiseBuffer.getChannelData(0);
+      let lastOut = 0;
+      for (let i = 0; i < bufferSize; i++) {
+        const white = Math.random() * 2 - 1;
+        output[i] = (lastOut + (0.02 * white)) / 1.02;
+        lastOut = output[i];
+        output[i] *= 3.5; // volume
+      }
+      noise.buffer = noiseBuffer;
+      noise.loop = true;
 
-    osc.start()
-    osc.stop(ctx.currentTime + 2.0)
+      noiseFilter.type = 'lowpass';
+      noiseFilter.frequency.setValueAtTime(400, ctx.currentTime);
+      
+      osc.type = 'triangle'; // Richer than sine
+      osc.frequency.setValueAtTime(inst.freq as number, ctx.currentTime);
+      osc.detune.setValueAtTime(inst.detune as number, ctx.currentTime);
+      
+      sub.type = 'sine';
+      sub.frequency.setValueAtTime((inst.freq as number) / 2, ctx.currentTime);
+      sub.detune.setValueAtTime(inst.detune as number, ctx.currentTime);
+      
+      mainFilter.type = 'lowpass';
+      mainFilter.frequency.setValueAtTime(1200, ctx.currentTime);
+      mainFilter.frequency.exponentialRampToValueAtTime(300, ctx.currentTime + 1.2);
 
-    oscillator.current = osc
-    gainNode.current = gain
-    setIsPlaying(true)
+      gain.gain.setValueAtTime(0, ctx.currentTime);
+      gain.gain.linearRampToValueAtTime(0.4, ctx.currentTime + 0.3);
+      gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 2.5);
 
-    osc.onended = () => {
-      setIsPlaying(false)
-      oscillator.current = null
+      osc.connect(mainFilter);
+      sub.connect(mainFilter);
+      noise.connect(noiseFilter);
+      noiseFilter.connect(mainFilter);
+      
+      mainFilter.connect(gain);
+      gain.connect(ctx.destination);
+
+      osc.start();
+      sub.start();
+      noise.start();
+      
+      osc.stop(ctx.currentTime + 2.5);
+      sub.stop(ctx.currentTime + 2.5);
+      noise.stop(ctx.currentTime + 2.5);
+
+      oscillator.current = osc;
+      setIsPlaying(true);
+
+      osc.onended = () => {
+        setIsPlaying(false);
+        oscillator.current = null;
+      };
+    } catch (err) {
+      console.error("Audio playback error:", err);
+      setIsPlaying(false);
     }
   }
 

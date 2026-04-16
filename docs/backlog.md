@@ -646,6 +646,7 @@ All issues identified in the data + bug audit have been resolved.
 - [x] `LAB-014` **Astro Explorer UI theming** — Refactored to `VedicAppTemplate` with standardized dark mode and spacing. — Done: 2026-04-16
 - [x] `LAB-015` **Vedic Instruments — audio broken** — Implemented Web Audio API fallback for all instruments; works without binary assets. — Done: 2026-04-16
 - [x] `LAB-016` **Vedic Instruments — missing conches from BG Chapter 1** — Added Paundra, Anantavijaya, Sughosa, Manipushpaka with owners and descriptions. — Done: 2026-04-16
+- [x] `LAB-018` **Shankha Audio Restoration** — Restored missing sensory audio in Vedic Lab with high-fidelity additive synthesis (brown-noise layering + harmonics) to simulate real conch resonance. — Done: 2026-04-16
 
 - [x] `LAB-017` **Commentary relevance warning shown per-verse (redundant)** — `study-client.tsx` renders the "Warning: The selected commentary may not fully align…" message on every verse where relevance score < 0.12. This is distracting and repetitive when many verses trigger it. Fix: show this warning at most once per chapter view (e.g. a single dismissible banner at the top of the verse list, not inline on each card). — Priority: MEDIUM — Done: 2026-04-16
 

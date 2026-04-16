@@ -53,19 +53,41 @@ export default function Home() {
           &ldquo;{t('description') || 'Restoring the Universal Voice of Vedic Wisdom through AI-integrated scholarship and open-access intelligence.'}&rdquo;
         </p>
 
-        <div className="flex flex-wrap justify-center gap-3">
+        <div className="flex flex-wrap justify-center gap-4 mb-12">
           <Link
             href={`/${defaultTextSlug}/1`}
-            className="inline-flex items-center gap-2 px-6 py-3 bg-stone-900 hover:bg-orange-600 text-white font-bold rounded-xl transition-all shadow-lg shadow-stone-200/50 text-xs tracking-wide"
+            className="inline-flex items-center gap-3 px-8 py-4 bg-stone-900 hover:bg-orange-600 dark:bg-stone-100 dark:text-stone-900 dark:hover:bg-orange-400 text-white font-black rounded-2xl transition-all shadow-xl shadow-stone-200/50 dark:shadow-none text-[11px] uppercase tracking-widest group"
           >
-            <span className="text-sm">📜</span> Begin Reading
+            <span>📜</span> Begin Reading
+            <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
           </Link>
           <Link
             href="/lab"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-white hover:bg-orange-50 text-stone-700 font-bold rounded-xl border border-stone-200 hover:border-orange-200 transition-all text-xs shadow-sm"
+            className="inline-flex items-center gap-3 px-8 py-4 bg-white hover:bg-orange-50 dark:bg-stone-900 dark:hover:bg-orange-950/30 text-stone-900 dark:text-stone-100 font-black rounded-2xl border border-stone-200 dark:border-stone-800 hover:border-orange-200 transition-all text-[11px] uppercase tracking-widest shadow-sm"
           >
-            <span className="text-sm">🧪</span> Explore Labs
+            <span>🧪</span> Explore Labs
           </Link>
+        </div>
+
+        {/* 🔍 QUICK SEARCH BAR */}
+        <div className="max-w-2xl mx-auto mb-16 px-2">
+            <Link href="/search" className="group relative block">
+                <div className="absolute inset-y-0 left-6 flex items-center pointer-events-none">
+                    <span className="text-xl grayscale group-hover:grayscale-0 transition-all duration-300">🔍</span>
+                </div>
+                <div className="w-full pl-16 pr-8 py-5 bg-white/70 dark:bg-stone-900/70 backdrop-blur-md border border-stone-200/60 dark:border-stone-800 rounded-3xl shadow-lg group-hover:shadow-xl group-hover:border-orange-300 dark:group-hover:border-orange-900 transition-all text-left">
+                    <span className="text-stone-300 dark:text-stone-600 font-serif text-lg">Search the Universal Library...</span>
+                </div>
+                <div className="absolute right-4 top-1/2 -translate-y-1/2 px-3 py-1 bg-stone-100 dark:bg-stone-800 rounded-lg text-[9px] font-black uppercase tracking-widest text-stone-400 opacity-0 group-hover:opacity-100 transition-opacity">
+                    Enter
+                </div>
+            </Link>
+            
+            <div className="flex flex-wrap justify-center gap-2 mt-4 opacity-60">
+                {['Dharma', 'Karma', 'Yoga', 'Brahman'].map(topic => (
+                    <Link key={topic} href={`/search?q=${topic.toLowerCase()}`} className="text-[10px] font-bold text-stone-500 hover:text-orange-600 dark:text-stone-400 dark:hover:text-orange-400 transition-colors">#{topic}</Link>
+                ))}
+            </div>
         </div>
 
         {/* Quick stats */}
