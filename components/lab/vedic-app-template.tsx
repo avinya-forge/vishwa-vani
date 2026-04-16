@@ -21,7 +21,6 @@ export default function VedicAppTemplate({
 }: VedicAppTemplateProps) {
   // We use the site-wide dark mode classes from globals.css
   return (
-  return (
     <div className="relative group rounded-[2.5rem] p-5 sm:p-8 border border-stone-200 dark:border-stone-800 bg-white/70 dark:bg-stone-900/40 backdrop-blur-xl shadow-sm dark:shadow-none hover:shadow-2xl hover:shadow-orange-500/10 transition-all duration-700 flex flex-col h-full overflow-hidden">
       {/* 🌌 AMBIENT GLOW */}
       <div className="absolute -top-24 -right-24 w-48 h-48 bg-orange-500/10 dark:bg-orange-500/5 blur-[80px] rounded-full group-hover:scale-150 transition-transform duration-[2000ms]" />
