@@ -740,6 +740,7 @@ export default function StudyClient({
               return scholarSelection.includes(normalizeScholarKey(layer.author as string))
             }) || []
 
+            const LANG_ORDER = ['en', 'hi', 'mr']
             const commentaries = candidateCommentaries
               .filter((c: unknown) => isValidCommentaryContent((c as Record<string, unknown>).content as string))
               .map((c: unknown) => {
@@ -749,8 +750,17 @@ export default function StudyClient({
                   _relevanceScore: calculateTextOverlapScore(meaning as string, commentary.content as string),
                 }
               })
-              .sort((a: unknown, b: unknown) => (((b as Record<string, unknown>)._relevanceScore as number) || 0) - (((a as Record<string, unknown>)._relevanceScore as number) || 0))
-              .slice(0, 2)
+              .sort((a: unknown, b: unknown) => {
+                const al = a as Record<string, unknown>
+                const bl = b as Record<string, unknown>
+                if (languageSelection === 'all') {
+                  // Group by lang first (en → hi → mr), then by relevance within group
+                  const langDiff = LANG_ORDER.indexOf(al.lang as string) - LANG_ORDER.indexOf(bl.lang as string)
+                  if (langDiff !== 0) return langDiff
+                }
+                return ((bl._relevanceScore as number) || 0) - ((al._relevanceScore as number) || 0)
+              })
+              .slice(0, languageSelection === 'all' ? 6 : 2)
 
             const synth = synthesisMap[v.id as string]
 
@@ -801,6 +811,19 @@ export default function StudyClient({
                   </div>
                 </div>
 
+                {/* Contextual intro — collapsed by default; shown when verse has a context/intro field */}
+                {(v.context || v.intro) ? (
+                  <details className="px-4 sm:px-6 py-2 border-b border-stone-50 dark:border-stone-800/30 group">
+                    <summary className="cursor-pointer list-none flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-stone-400 dark:text-stone-500 hover:text-orange-500 dark:hover:text-orange-400 transition-colors select-none">
+                      <span className="group-open:rotate-90 transition-transform inline-block">▶</span>
+                      Context
+                    </summary>
+                    <p className="mt-2 mb-1 text-stone-500 dark:text-stone-400 text-xs sm:text-[13px] leading-relaxed">
+                      {String(v.context || v.intro)}
+                    </p>
+                  </details>
+                ) : null}
+
                 {/* Sanskrit */}
                 {v.original ? (
                   <div className="px-4 sm:px-6 py-4 sm:py-6 text-center border-b border-stone-50 dark:border-stone-800/30 overflow-x-auto">
@@ -815,15 +838,19 @@ export default function StudyClient({
                   </div>
                 ) : null}
 
-                {/* English meaning / translation */}
-                {meaning ? (
-                  <div className="px-4 sm:px-6 py-4 sm:py-5 border-b border-stone-50 dark:border-stone-800/30">
-                    <p className="text-[10px] font-black uppercase tracking-widest text-stone-300 dark:text-stone-600 mb-2">Meaning</p>
-                    <p className="text-stone-700 dark:text-stone-300 leading-relaxed text-sm sm:text-[15px] font-medium break-words overflow-wrap-anywhere">
-                      {cleanText(meaning)}
-                    </p>
-                  </div>
-                ) : null}
+                {/* English translation — always shown as default base layer */}
+                {(() => {
+                  const baseTranslation = String(v.translation || v.meaning || meaning || '').trim()
+                  if (!baseTranslation) return null
+                  return (
+                    <div className="px-4 sm:px-6 py-4 sm:py-5 border-b border-stone-50 dark:border-stone-800/30">
+                      <p className="text-[10px] font-black uppercase tracking-widest text-orange-400 dark:text-orange-500 mb-2">Translation</p>
+                      <p className="text-stone-700 dark:text-stone-300 leading-relaxed text-sm sm:text-[15px] font-medium break-words overflow-wrap-anywhere">
+                        {cleanText(baseTranslation)}
+                      </p>
+                    </div>
+                  )
+                })()}
 
                 {/* Commentary */}
                 {commentaries.length > 0 ? (
@@ -831,21 +858,55 @@ export default function StudyClient({
                     {commentaries[0]._relevanceScore !== undefined && (commentaries[0]._relevanceScore as number) < 0.12 ? (
                       <p className="text-xs text-orange-800 bg-orange-100 dark:text-orange-200 dark:bg-orange-900/50 rounded-md p-2 mb-3">Warning: The selected commentary may not fully align with the verse meaning. We prioritize closest available match in current language.</p>
                     ) : null}
-                    {commentaries.map((c: unknown, ci: number) => {
-                      const comment = c as Record<string, unknown>
-                      const meta = getScholarMeta(normalizeScholarKey(comment.author as string))
-                      return (
-                        <div key={ci} className={ci > 0 ? 'mt-4 sm:mt-5 pt-4 sm:pt-5 border-t border-orange-100 dark:border-orange-500/10' : ''}>
-                          <div className="flex items-center gap-2 mb-2 flex-wrap">
-                            <span className="text-sm">{meta.icon}</span>
-                            <span className="text-[9px] font-black uppercase tracking-widest text-orange-700 dark:text-orange-500 break-words">{meta.label}</span>
-                          </div>
-                          <p className="text-stone-600 dark:text-stone-400 leading-relaxed text-xs sm:text-[13px] font-medium whitespace-pre-line break-words overflow-wrap-anywhere">
-                            {cleanText(comment.content as string)}
+                    {(() => {
+                      const LANG_LABELS: Record<string, string> = { en: 'English', hi: 'हिन्दी', mr: 'मराठी' }
+                      if (languageSelection !== 'all') {
+                        return commentaries.map((c: unknown, ci: number) => {
+                          const comment = c as Record<string, unknown>
+                          const meta = getScholarMeta(normalizeScholarKey(comment.author as string))
+                          return (
+                            <div key={ci} className={ci > 0 ? 'mt-4 sm:mt-5 pt-4 sm:pt-5 border-t border-orange-100 dark:border-orange-500/10' : ''}>
+                              <div className="flex items-center gap-2 mb-2 flex-wrap">
+                                <span className="text-sm">{meta.icon}</span>
+                                <span className="text-[9px] font-black uppercase tracking-widest text-orange-700 dark:text-orange-500 break-words">{meta.label}</span>
+                              </div>
+                              <p className="text-stone-600 dark:text-stone-400 leading-relaxed text-xs sm:text-[13px] font-medium whitespace-pre-line break-words overflow-wrap-anywhere">
+                                {cleanText(comment.content as string)}
+                              </p>
+                            </div>
+                          )
+                        })
+                      }
+                      // All-languages: group by lang with subheadings
+                      const groups: Record<string, Record<string, unknown>[]> = {}
+                      commentaries.forEach((c: unknown) => {
+                        const comment = c as Record<string, unknown>
+                        const lang = (comment.lang as string) || 'en'
+                        if (!groups[lang]) groups[lang] = []
+                        groups[lang].push(comment)
+                      })
+                      return Object.entries(groups).map(([lang, items], gi) => (
+                        <div key={lang} className={gi > 0 ? 'mt-5 pt-5 border-t border-orange-100 dark:border-orange-500/10' : ''}>
+                          <p className="text-[9px] font-black uppercase tracking-widest text-stone-400 dark:text-stone-500 mb-3">
+                            {LANG_LABELS[lang] || lang.toUpperCase()}
                           </p>
+                          {items.map((comment, ci) => {
+                            const meta = getScholarMeta(normalizeScholarKey(comment.author as string))
+                            return (
+                              <div key={ci} className={ci > 0 ? 'mt-3 pt-3 border-t border-orange-50 dark:border-orange-500/5' : ''}>
+                                <div className="flex items-center gap-2 mb-2 flex-wrap">
+                                  <span className="text-sm">{meta.icon}</span>
+                                  <span className="text-[9px] font-black uppercase tracking-widest text-orange-700 dark:text-orange-500 break-words">{meta.label}</span>
+                                </div>
+                                <p className="text-stone-600 dark:text-stone-400 leading-relaxed text-xs sm:text-[13px] font-medium whitespace-pre-line break-words overflow-wrap-anywhere">
+                                  {cleanText(comment.content as string)}
+                                </p>
+                              </div>
+                            )
+                          })}
                         </div>
-                      )
-                    })}
+                      ))
+                    })()}
                   </div>
                 ) : (scholarSelection.length > 0 && (
                   <div className="px-4 sm:px-6 py-4 bg-stone-50/50 dark:bg-stone-800/20">
