@@ -712,6 +712,26 @@ export default function StudyClient({
           {/* Vedic Timeline — compact version at top */}
           <VedicTimeline slug={textSlug} />
 
+          {/* Single relevance warning banner — shown once if any commentary has low alignment */}
+          {scholarSelection.length > 0 && (() => {
+            const hasLowRelevance = verses.some((verse: unknown) => {
+              const v = verse as Record<string, unknown>
+              const layers = (v.layers as unknown[]) || []
+              const meaning = String(v.translation || v.meaning || '')
+              return layers.some((l: unknown) => {
+                const layer = l as Record<string, unknown>
+                if (layer.type !== 'commentary' || !isValidCommentaryContent(layer.content as string)) return false
+                if (!scholarSelection.includes(normalizeScholarKey(layer.author as string))) return false
+                return calculateTextOverlapScore(meaning, layer.content as string) < 0.12
+              })
+            })
+            return hasLowRelevance ? (
+              <p className="text-xs text-orange-800 bg-orange-100 dark:text-orange-200 dark:bg-orange-900/40 rounded-lg px-4 py-2">
+                Note: Some commentaries in this chapter may not closely align with the verse translation — we display the closest available match in the selected language.
+              </p>
+            ) : null
+          })()}
+
           {/* Verses */}
           {[...verses].sort((a: unknown, b: unknown) => {
             const av = parseInt(String((a as Record<string, unknown>).verse ?? 0), 10)
@@ -855,9 +875,6 @@ export default function StudyClient({
                 {/* Commentary */}
                 {commentaries.length > 0 ? (
                   <div className="px-4 sm:px-6 py-4 sm:py-5 bg-orange-50/30 dark:bg-orange-950/20">
-                    {commentaries[0]._relevanceScore !== undefined && (commentaries[0]._relevanceScore as number) < 0.12 ? (
-                      <p className="text-xs text-orange-800 bg-orange-100 dark:text-orange-200 dark:bg-orange-900/50 rounded-md p-2 mb-3">Warning: The selected commentary may not fully align with the verse meaning. We prioritize closest available match in current language.</p>
-                    ) : null}
                     {(() => {
                       const LANG_LABELS: Record<string, string> = { en: 'English', hi: 'हिन्दी', mr: 'मराठी' }
                       if (languageSelection !== 'all') {
