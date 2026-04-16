@@ -1,11 +1,8 @@
 import Link from 'next/link'
 import StudyClient from '@/components/shloka/study-client'
-import { migrateToNVF } from '@/lib/nvf'
-import { getVersesFromLakeServer } from '@/lib/server-lake'
 import { getTextBySlug, getAllTextChapterPaths } from '@/lib/texts'
+import { vedicDataService } from '@/lib/data-service'
 import { setRequestLocale } from 'next-intl/server'
-import fs from 'fs'
-import path from 'path'
 
 export async function generateStaticParams() {
   const paths = getAllTextChapterPaths()
@@ -64,23 +61,20 @@ export default async function StudyVersePage({ params }: { params: Promise<{ tex
     )
   }
 
-  let verses: Record<string, unknown>[] = []
+  let enrichedVerses: any[] = []
   const chapterInt = parseInt(chapterNumber)
 
-  if (textMetadata.storage === 'lake') {
-    const lakeVerses = await getVersesFromLakeServer(textSlug, chapterInt, textMetadata.lakeFile || undefined)
-    verses = (lakeVerses as unknown as Record<string, unknown>[]) || []
-  } else {
-    try {
-      const dataPath = path.join(process.cwd(), 'data', `${textMetadata.dataPrefix}_chapter_${chapterNumber}.json`)
-      const rawData = fs.readFileSync(dataPath, 'utf8')
-      verses = (JSON.parse(rawData) as unknown as Record<string, unknown>[]) || []
-    } catch (e) {
-      console.error(`Failed to load text ${textSlug} chapter ${chapterNumber} data`, e)
-    }
+  // Use central data service for consistency and Gold-tier support
+  const chapterData = await vedicDataService.getChapterData(textSlug, chapterInt, {
+    includeAI: false,
+    language: 'en'
+  })
+
+  if (chapterData) {
+    enrichedVerses = chapterData.verses
   }
 
-  const rawVerseData = verses.find(v => String((v as Record<string, unknown>).verse) === verseNumber)
+  const rawVerseData = enrichedVerses.find(v => String(v.verse) === verseNumber)
 
   if (!rawVerseData) {
     return (
@@ -96,11 +90,10 @@ export default async function StudyVersePage({ params }: { params: Promise<{ tex
     )
   }
 
-  const _title = textMetadata.chapterNames[chapterNumber] || `${textMetadata.name} - Chapter ${chapterNumber}`
-  const scriptureName = textMetadata.name
-  const _tagline = textMetadata.description
-
-  const verseData = migrateToNVF(rawVerseData, scriptureName)
+  const _title = textMetadata.chapterNames?.[chapterNumber] || `${textMetadata.name} - Chapter ${chapterNumber}`
+  
+  // The DataService already returns enriched, schema-compliant verses
+  const verseData = rawVerseData as any
 
   return (
     <main className="min-h-screen bg-[#FDFBF7] selection:bg-orange-100/60 pb-20">
