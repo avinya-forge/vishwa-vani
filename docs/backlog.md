@@ -616,3 +616,73 @@ All issues identified in the data + bug audit have been resolved.
 - [ ] `BUG-021` **No default meaning shown without commentary** — When user has no scholar selected (Lean template default), the "Meaning" section is conditionally hidden because `meaningLayer` looks for a `type: 'translation'` layer which may be absent. The `v.translation` and `v.meaning` fields on the verse object always exist and should be shown by default as the base-level Sanskrit→English rendering, regardless of scholar selection. Fix: always render the `meaning` block from `v.translation || v.meaning` even when `meaningLayer` is undefined. — Priority: HIGH
 
 - [ ] `BUG-022` **All-language view jumbles English and Hindi** — When `languageSelection === 'all'`, commentary layers for multiple languages render in arbitrary order (sorted only by relevance score), mixing English and Hindi text mid-section. Fix: group commentaries by lang (`en` → `hi` → `mr`) and render each group under its own language subheading label before listing that group's commentaries. — Priority: HIGH
+
+---
+
+## 🐛 EPIC 16: VEDIC LABS UI & AUDIO OVERHAUL [HIGH PRIORITY]
+
+*Goal: Fix all Labs UI layout, theming, and audio issues. Every app should fill the screen correctly, match the site's design system, and have working interactive features.*
+
+**Exit Gate**: All LAB-xxx tasks resolved. Every lab app renders correctly on desktop and mobile, dark mode consistent, no blank space, audio works where present.
+
+- [ ] `LAB-001` **Labs index page layout — blank space and card misalignment** — `app/lab/page.tsx` renders lab cards with excessive empty space and inconsistent sizing. Cards don't fill the grid cleanly. Fix: audit grid layout, enforce consistent card heights, remove dead padding/margin, ensure cards tile edge-to-edge with proper gutters. — Priority: HIGH
+
+- [ ] `LAB-002` **Pranayama Timer UI theming** — `components/lab/pranayama-timer.tsx` uses inconsistent colours and spacing that breaks the card layout on the labs index. Full dark mode audit and layout fix to match site design tokens. — Priority: HIGH
+
+- [ ] `LAB-003` **Akshauhini Calculator UI theming** — `components/lab/akshauhini-calc.tsx` — same issue. Dark mode pass, spacing fix, ensure card fits grid. — Priority: HIGH
+
+- [ ] `LAB-004` **Bhakti Yoga Compass UI theming** — `components/lab/bhakti-yoga-compass.tsx` — dark mode + layout fix. — Priority: HIGH
+
+- [ ] `LAB-005` **Character Relationship Map UI theming** — `components/lab/character-relationship-map.tsx` — dark mode + layout fix. — Priority: HIGH
+
+- [ ] `LAB-006` **Chhanda Analyzer UI theming** — `components/lab/chhanda-analyzer.tsx` — dark mode + layout fix. — Priority: HIGH
+
+- [ ] `LAB-007` **Dharma Decision Matrix UI theming** — `components/lab/dharma-decision-matrix.tsx` — dark mode + layout fix. — Priority: HIGH
+
+- [ ] `LAB-008` **Divine Qualities Assessment UI theming** — `components/lab/divine-qualities-assessment.tsx` — dark mode + layout fix. — Priority: HIGH
+
+- [ ] `LAB-009` **Grammar Tokenizer UI theming** — `components/lab/grammar-tokenizer.tsx` — dark mode + layout fix. — Priority: HIGH
+
+- [ ] `LAB-010` **Jnana Yoga Explorer UI theming** — `components/lab/jnana-yoga-explorer.tsx` — dark mode + layout fix. — Priority: HIGH
+
+- [ ] `LAB-011` **Karma Yoga Simulator UI theming** — `components/lab/karma-yoga-simulator.tsx` — dark mode + layout fix. — Priority: HIGH
+
+- [ ] `LAB-012` **Meditation State Tracker UI theming** — `components/lab/meditation-state-tracker.tsx` — dark mode + layout fix. — Priority: HIGH
+
+- [ ] `LAB-013` **Time Consciousness Wheel UI theming** — `components/lab/time-consciousness-wheel.tsx` — dark mode + layout fix. — Priority: HIGH
+
+- [ ] `LAB-014` **Astro Explorer UI theming** — `components/lab/astro-explorer.tsx` — dark mode + layout fix. — Priority: HIGH
+
+- [ ] `LAB-015` **Vedic Instruments — audio broken** — `components/lab/vedic-instruments.tsx` plays audio from `/audio/shankhnaad.mp3`, `/audio/mridanga.mp3`, `/audio/veena.mp3` — none of these files exist in `public/audio/`. Either source real audio files or replace with Web Audio API tone generation so the play button is never silently broken. Fix: implement Web Audio API fallback tones per instrument so it works without binary audio assets. — Priority: HIGH
+
+- [ ] `LAB-016` **Vedic Instruments — missing conches from BG Chapter 1** — BG 1.12–1.19 names 12+ conches and instruments. Current app includes only Panchajanya (Krishna), Devadatta (Arjuna), Mridanga, Veena. Missing: Paundra (Bhima), Anantavijaya (Yudhishtira), Sughosa (Nakula), Manipushpaka (Sahadeva), conches of Kashi King, Shikhandi, Dhrishtadyumna, Virata, Satyaki, Drupada, sons of Draupadi, Abhimanyu, plus Gandharva drums (Panavah, Anakas, Gomukhas) mentioned in 1.13. Add all verse-cited instruments with their owner, verse reference, and description. — Priority: HIGH
+
+- [ ] `LAB-017` **Commentary relevance warning shown per-verse (redundant)** — `study-client.tsx` renders the "Warning: The selected commentary may not fully align…" message on every verse where relevance score < 0.12. This is distracting and repetitive when many verses trigger it. Fix: show this warning at most once per chapter view (e.g. a single dismissible banner at the top of the verse list, not inline on each card). — Priority: MEDIUM
+
+---
+
+## 📊 EPIC 17: GITA CONTENT ANALYSIS — EXPAND VEDIC LABS COVERAGE [LOWER PRIORITY]
+
+*Goal: Systematically analyze all 18 Gita chapters for themes, interactive concepts, and lab opportunities — then backlog specific new labs.*
+
+- [ ] `LABS-101` **Gita chapter-by-chapter labs analysis** — Read all 18 chapters of the Gita and map each chapter's key philosophical concepts, interactive teaching moments, and quantifiable metaphors. For each, determine if an existing lab can be extended or a new micro-app is warranted. Output: a structured list of 10–20 new lab ideas mapped to chapter + verse range, added to backlog as individual LAB-xxx tasks. — Priority: LOWER
+
+- [ ] `LABS-102` **VEDIC_LABS_REGISTRY expansion** — After LABS-101 analysis, update `lib/vedic-labs-registry.ts` to register all newly identified labs against their chapter + verse trigger ranges so they surface as contextual suggestions in the reader sidebar. — Priority: LOWER
+
+---
+
+## 🚀 EPIC 18: VERCEL PRODUCTION DEPLOYMENT [POST-BUG-BASH]
+
+*Goal: Deploy the application to Vercel with all implemented features working correctly end-to-end. This is the beta launch milestone.*
+
+**Pre-requisite gate**: All EPIC 13, 15, 16 bugs resolved. Lint/tsc/test/build green on main.
+
+- [ ] `DEPL-001` **Vercel project setup and link** — Run `vercel link` to connect the repo to a Vercel project. Configure project settings: framework = Next.js, root directory = `.`, output directory = `.next`. Store `.vercel/project.json` in repo. — Priority: HIGH (when gate opens)
+
+- [ ] `DEPL-002` **Environment variables on Vercel** — Set all required env vars on Vercel dashboard: `NEXT_PUBLIC_GA_ID`, `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY`, `CLERK_SECRET_KEY`, `GEMINI_API_KEY`. Verify no hardcoded secrets remain in codebase. — Priority: HIGH (when gate opens)
+
+- [ ] `DEPL-003` **Static asset audit pre-deploy** — Verify all assets referenced in code exist in `public/`: audio files (or confirm Web Audio fallback), images, fonts, the `vedic-lake.db` SQLite file. Ensure `public/vedic-lake.db` is included in the Vercel build output (add to `.vercelignore` exclusion list if needed). — Priority: HIGH (when gate opens)
+
+- [ ] `DEPL-004` **Production build smoke test** — After first Vercel deployment, manually verify: home page loads, Bhagavad Gita chapter 1 renders all 39 shlokas in correct numeric order, language toggle works, at least one lab app is functional. Log any runtime errors from Vercel function logs. — Priority: HIGH (when gate opens)
+
+- [ ] `DEPL-005` **Custom domain and beta URL** — Point the Vercel deployment to the chosen domain or Vercel preview URL. Share beta URL with first testers. — Priority: MEDIUM (when gate opens)
