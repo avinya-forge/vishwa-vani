@@ -29,8 +29,8 @@ export default function FeedbackWidget() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
 
-    if (message.length < 200) {
-      setErrorText('Please provide at least 200 characters so we have enough context to fix the issue.')
+    if (message.length < 50) {
+      setErrorText('Please provide at least 50 characters so we have enough context to fix the issue.')
       return
     }
 
@@ -123,7 +123,7 @@ export default function FeedbackWidget() {
 
                 <div>
                   <label htmlFor="feedback-message" className="block text-sm font-medium text-stone-700 dark:text-stone-300 mb-1">
-                    Details <span className="text-stone-400 dark:text-stone-500 font-normal">(min 200 chars)</span>
+                    Details <span className="text-stone-400 dark:text-stone-500 font-normal">(min 50 chars)</span>
                   </label>
                   <textarea
                     id="feedback-message"
@@ -134,8 +134,8 @@ export default function FeedbackWidget() {
                     className="w-full border-stone-300 dark:border-stone-700 rounded-lg shadow-sm focus:border-orange-500 focus:ring-orange-500 bg-stone-50 dark:bg-stone-800 dark:text-stone-200 dark:placeholder:text-stone-600 p-2 border"
                     required
                   />
-                  <div className={`text-xs mt-1 ${message.length < 200 ? 'text-red-500' : 'text-green-600'}`}>
-                    {message.length}/200 characters minimum
+                  <div className={`text-xs mt-1 ${message.length < 50 ? 'text-red-500' : 'text-green-600'}`}>
+                    {message.length}/50 characters minimum
                   </div>
                 </div>
 

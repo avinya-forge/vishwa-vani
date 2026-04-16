@@ -43,6 +43,22 @@ const MeditationStateTracker = dynamic(() => import('@/components/lab/meditation
   ssr: false,
   loading: () => <LabSkeleton />
 })
+const AstroExplorer = dynamic(() => import('@/components/lab/astro-explorer'), {
+  ssr: false,
+  loading: () => <LabSkeleton />
+})
+const ChhandaAnalyzer = dynamic(() => import('@/components/lab/chhanda-analyzer'), {
+  ssr: false,
+  loading: () => <LabSkeleton />
+})
+const CharacterRelationshipMap = dynamic(() => import('@/components/lab/character-relationship-map'), {
+  ssr: false,
+  loading: () => <LabSkeleton />
+})
+const GrammarTokenizer = dynamic(() => import('@/components/lab/grammar-tokenizer'), {
+  ssr: false,
+  loading: () => <LabSkeleton />
+})
 
 export default function VedicLabPage() {
   return (
@@ -68,24 +84,21 @@ export default function VedicLabPage() {
           </div>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-            <div className="lg:col-span-2">
-               <PranayamaTimer />
-            </div>
-            <div className="space-y-8">
-               <AkshauhiniCalc />
-               <VedicInstruments />
-               <KarmaYogaSimulator />
-            </div>
-        </div>
-
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-8">
-            <JnanaYogaExplorer />
-            <BhaktiYogaCompass />
-            <DharmaDecisionMatrix />
-            <TimeConsciousnessWheel />
-            <DivineQualitiesAssessment />
-            <MeditationStateTracker />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
+           <PranayamaTimer />
+           <AkshauhiniCalc />
+           <VedicInstruments />
+           <KarmaYogaSimulator />
+           <JnanaYogaExplorer />
+           <BhaktiYogaCompass />
+           <DharmaDecisionMatrix />
+           <TimeConsciousnessWheel />
+           <DivineQualitiesAssessment />
+           <MeditationStateTracker />
+           <AstroExplorer />
+           <ChhandaAnalyzer />
+           <CharacterRelationshipMap />
+           <GrammarTokenizer />
         </div>
       </div>
     </main>

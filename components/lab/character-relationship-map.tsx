@@ -1,5 +1,3 @@
-'use client'
-
 import React, { useState } from 'react'
 import VedicAppTemplate from './vedic-app-template'
 
@@ -41,25 +39,26 @@ export default function CharacterRelationshipMap() {
 
   const getFactionColor = (faction: string) => {
     switch (faction) {
-      case 'Kaurava': return 'fill-red-500 stroke-red-700'
-      case 'Pandava': return 'fill-blue-500 stroke-blue-700'
-      case 'Kuru': return 'fill-orange-500 stroke-orange-700'
-      case 'Divine': return 'fill-yellow-400 stroke-yellow-600'
-      case 'Sage': return 'fill-purple-500 stroke-purple-700'
-      default: return 'fill-stone-500 stroke-stone-700'
+      case 'Kaurava': return 'fill-red-500/80 stroke-red-500'
+      case 'Pandava': return 'fill-blue-500/80 stroke-blue-500'
+      case 'Kuru': return 'fill-orange-500/80 stroke-orange-500'
+      case 'Divine': return 'fill-yellow-400/80 stroke-yellow-400'
+      case 'Sage': return 'fill-purple-500/80 stroke-purple-500'
+      default: return 'fill-stone-500/80 stroke-stone-500'
     }
   }
 
+  const footerNote = "Interactive family tree and relationship network of the Kuru dynasty. Tap circles to isolate bloodlines."
+
   return (
     <VedicAppTemplate
-      title="Character Map"
-      subtitle="Mahabharata Lineage"
+      title="Lineage Map"
+      subtitle="Mahabharata • Kuru Dynasty"
       icon="🔗"
-      darkMode={true}
-      footerNote="Interactive family tree and relationship network of the Kuru dynasty."
+      footerNote={footerNote}
     >
-      <div className="relative w-full h-[500px] bg-stone-900 rounded-2xl border border-stone-800 overflow-hidden shadow-inner custom-scrollbar overflow-x-auto">
-        <svg width="1000" height="500" className="min-w-[1000px]">
+      <div className="relative w-full h-[400px] bg-stone-50/50 dark:bg-stone-900/40 rounded-[2rem] border border-stone-200 dark:border-stone-800 overflow-hidden shadow-inner custom-scrollbar overflow-x-auto">
+        <svg width="1000" height="500" className="min-w-[1000px] select-none">
           {/* Draw Links */}
           {LINKS.map((link, i) => {
             const source = CHARACTERS.find(c => c.id === link.source)
@@ -69,23 +68,27 @@ export default function CharacterRelationshipMap() {
             const isHighlighted = selectedNode === source.id || selectedNode === target.id
 
             return (
-              <g key={i} className={`transition-opacity duration-300 ${selectedNode && !isHighlighted ? 'opacity-20' : 'opacity-100'}`}>
+              <g key={i} className={`transition-all duration-500 ${selectedNode && !isHighlighted ? 'opacity-5' : 'opacity-100'}`}>
                 <line
                   x1={source.x} y1={source.y}
                   x2={target.x} y2={target.y}
-                  stroke={isHighlighted ? '#f97316' : '#57534e'}
+                  stroke={isHighlighted ? '#f97316' : '#d6d3d1'}
                   strokeWidth={isHighlighted ? 2 : 1}
+                  strokeDasharray={isHighlighted ? '0' : '4 4'}
+                  className="transition-all duration-500"
                 />
-                <text
-                  x={(source.x + target.x) / 2}
-                  y={(source.y + target.y) / 2 - 5}
-                  fill={isHighlighted ? '#f97316' : '#78716c'}
-                  fontSize="10"
-                  textAnchor="middle"
-                  className="font-medium"
-                >
-                  {link.label}
-                </text>
+                {isHighlighted && (
+                  <text
+                    x={(source.x + target.x) / 2}
+                    y={(source.y + target.y) / 2 - 8}
+                    fill="#f97316"
+                    fontSize="9"
+                    textAnchor="middle"
+                    className="font-black uppercase tracking-widest text-[8px]"
+                  >
+                    {link.label}
+                  </text>
+                )}
               </g>
             )
           })}
@@ -103,19 +106,19 @@ export default function CharacterRelationshipMap() {
                 key={char.id}
                 transform={`translate(${char.x}, ${char.y})`}
                 onClick={() => setSelectedNode(isSelected ? null : char.id)}
-                className={`cursor-pointer transition-all duration-300 ${isFaded ? 'opacity-20' : 'opacity-100'}`}
+                className={`cursor-pointer transition-all duration-500 ${isFaded ? 'opacity-10 scale-90' : 'opacity-100'}`}
                 data-testid={`node-${char.id}`}
               >
                 <circle
-                  r={isSelected ? 20 : 15}
-                  className={`${getFactionColor(char.faction)} transition-all duration-300 ${isSelected ? 'stroke-[3px]' : 'stroke-2'}`}
+                  r={isSelected ? 14 : 10}
+                  className={`${getFactionColor(char.faction)} transition-all duration-500 ${isSelected ? 'stroke-[4px]' : 'stroke-2'} stroke-white dark:stroke-stone-900 shadow-xl`}
                 />
                 <text
-                  y={30}
-                  fill={isSelected ? '#fff' : '#d6d3d1'}
-                  fontSize={isSelected ? '14' : '12'}
+                  y={isSelected ? 32 : 28}
+                  fill="currentColor"
+                  fontSize={isSelected ? '11' : '9'}
                   textAnchor="middle"
-                  className="font-bold drop-shadow-md"
+                  className={`font-black uppercase tracking-tight transition-all duration-500 ${isSelected ? 'text-orange-600 dark:text-orange-400' : 'text-stone-500 dark:text-stone-400'}`}
                 >
                   {char.name}
                 </text>
@@ -125,12 +128,19 @@ export default function CharacterRelationshipMap() {
         </svg>
       </div>
 
-      <div className="mt-4 flex flex-wrap justify-center gap-4 text-xs font-medium">
-        <div className="flex items-center gap-2"><span className="w-3 h-3 rounded-full bg-orange-500"></span> Kuru</div>
-        <div className="flex items-center gap-2"><span className="w-3 h-3 rounded-full bg-red-500"></span> Kaurava</div>
-        <div className="flex items-center gap-2"><span className="w-3 h-3 rounded-full bg-blue-500"></span> Pandava</div>
-        <div className="flex items-center gap-2"><span className="w-3 h-3 rounded-full bg-yellow-400"></span> Divine</div>
-        <div className="flex items-center gap-2"><span className="w-3 h-3 rounded-full bg-purple-500"></span> Sage</div>
+      <div className="mt-6 flex flex-wrap justify-center gap-3">
+        {[
+          { color: 'bg-orange-500', name: 'Kuru' },
+          { color: 'bg-red-500', name: 'Kaurava' },
+          { color: 'bg-blue-500', name: 'Pandava' },
+          { color: 'bg-yellow-400', name: 'Divine' },
+          { color: 'bg-purple-500', name: 'Sage' }
+        ].map(f => (
+          <div key={f.name} className="flex items-center gap-2 px-3 py-1.5 bg-white dark:bg-stone-900/40 rounded-full border border-stone-100 dark:border-stone-800 shadow-sm">
+            <span className={`w-1.5 h-1.5 rounded-full ${f.color} shadow-sm shadow-${f.color}/50`}></span>
+            <span className="text-[9px] font-black uppercase tracking-widest text-stone-500">{f.name}</span>
+          </div>
+        ))}
       </div>
     </VedicAppTemplate>
   )

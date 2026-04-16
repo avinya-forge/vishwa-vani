@@ -1,5 +1,3 @@
-'use client'
-
 import React, { useState } from 'react'
 import VedicAppTemplate from './vedic-app-template'
 
@@ -34,7 +32,7 @@ const MIND_STATES: StateInfo[] = [
     emoji: '😴',
     description: 'Mind is heavy, dull, or drowsy. Dominated by tamas (inertia/dullness).',
     symptoms: ['Drowsiness during practice', 'Lack of motivation', 'Mental fog', 'Heaviness'],
-    practice: 'Splashe cold water on face. Do 5 minutes of kapalabhati (bellows breath) to energize. Chant or sing to activate the mind before sitting.',
+    practice: 'Splash cold water on face. Do 5 minutes of kapalabhati (bellows breath) to energize. Chant or sing to activate the mind before sitting.',
     gitaRef: 'Gita 14.8',
   },
   {
@@ -98,98 +96,106 @@ export default function MeditationStateTracker() {
     kshipta: '💨', mudha: '😴', vikshipta: '🌊', ekagra: '🎯', nirodha: '🕉️',
   }
 
+  const footerNote = "Gita 6.35: 'Undoubtedly the mind is restless and difficult to restrain. But by practice and non-attachment, it can be controlled.'"
+
   return (
     <VedicAppTemplate
-      title="Meditation State Tracker"
-      subtitle="Gita Ch. 6 • Dhyana Yoga"
+      title="Dhyana Tracker"
+      subtitle="Gita Ch. 6 • Mind States"
       icon="🧘"
-      darkMode={true}
-      footerNote="Gita 6.35: 'Undoubtedly the mind is restless and difficult to restrain. But by practice and non-attachment, it can be controlled.'"
+      footerNote={footerNote}
     >
       <div className="space-y-4">
-        <div className="flex gap-1 p-1 bg-stone-800/50 rounded-xl">
+        <div className="flex gap-1.5 p-1.5 bg-stone-100 dark:bg-stone-800/50 rounded-2xl mb-4">
           {(['checkin', 'guidance', 'log'] as const).map(tab => (
             <button key={tab} onClick={() => setView(tab)}
-              className={`flex-1 py-2 rounded-lg text-xs font-bold uppercase tracking-wider transition-all ${view === tab ? 'bg-orange-600 text-white' : 'text-stone-400'}`}>
-              {tab === 'checkin' ? 'Check-In' : tab === 'guidance' ? 'Guidance' : `Log (${sessions.length})`}
+              className={`flex-1 py-2 rounded-xl text-[10px] font-black uppercase tracking-wider transition-all ${view === tab ? 'bg-white dark:bg-stone-700 shadow-sm text-orange-600' : 'text-stone-500'}`}>
+              {tab === 'checkin' ? 'Check-In' : tab === 'guidance' ? 'Advice' : `Log (${sessions.length})`}
             </button>
           ))}
         </div>
 
         {view === 'checkin' && (
-          <div className="space-y-3">
-            <p className="text-stone-400 text-sm">What was your mind like today?</p>
-            <div className="space-y-2">
+          <div className="space-y-4">
+             <div className="flex justify-between items-center text-[10px] font-black uppercase tracking-widest text-stone-500 mb-2">
+              <span>Duration: {duration} min</span>
+              <span className="text-orange-600">Session Setup</span>
+            </div>
+            <input type="range" min={5} max={60} step={5} value={duration}
+                onChange={e => setDuration(Number(e.target.value))}
+                className="w-full accent-orange-600 cursor-pointer mb-6" />
+
+            <div className="space-y-2 max-h-[300px] overflow-y-auto pr-2 custom-scrollbar">
               {MIND_STATES.map(s => (
                 <button key={s.id} onClick={() => setSelectedState(s.id)}
-                  className={`w-full text-left p-3 rounded-xl border transition-all ${selectedState === s.id ? 'bg-orange-900/30 border-orange-500' : 'bg-stone-800/20 border-stone-700 hover:border-stone-600'}`}>
-                  <div className="flex items-center gap-3">
-                    <span className="text-2xl">{s.emoji}</span>
-                    <div>
-                      <span className="text-white font-bold text-sm">{s.name}</span>
-                      <span className="text-stone-500 text-xs ml-2">{s.sanskrit}</span>
-                      <p className="text-stone-400 text-xs mt-0.5 line-clamp-1">{s.description}</p>
+                  className={`w-full text-left p-4 rounded-2xl border transition-all group ${selectedState === s.id ? 'bg-orange-50 dark:bg-orange-900/10 border-orange-500' : 'bg-white dark:bg-stone-900/40 border-stone-100 dark:border-stone-800 hover:border-orange-500/30'}`}>
+                  <div className="flex items-center gap-4">
+                    <span className="text-2xl group-hover:scale-110 transition-transform">{s.emoji}</span>
+                    <div className="flex-1">
+                      <div className="flex items-baseline gap-2">
+                        <span className={`font-black text-xs uppercase tracking-tight ${selectedState === s.id ? 'text-orange-700 dark:text-orange-400' : 'text-stone-900 dark:text-white'}`}>{s.name}</span>
+                        <span className="text-[10px] font-medium text-stone-400 italic">{s.sanskrit}</span>
+                      </div>
+                      <p className="text-[10px] text-stone-500 dark:text-stone-400 mt-1 line-clamp-1 font-medium">{s.description}</p>
                     </div>
+                    {selectedState === s.id && <div className="w-2 h-2 rounded-full bg-orange-600 animate-pulse" />}
                   </div>
                 </button>
               ))}
             </div>
-            <div className="flex items-center gap-3">
-              <span className="text-stone-400 text-xs">Duration:</span>
-              <input type="range" min={5} max={60} step={5} value={duration}
-                onChange={e => setDuration(Number(e.target.value))}
-                className="flex-1 accent-orange-500" />
-              <span className="text-orange-400 text-sm font-bold w-12">{duration}min</span>
-            </div>
+            
             {selectedState && (
               <button onClick={logSession}
-                className="w-full py-3 bg-orange-600 hover:bg-orange-500 text-white font-bold rounded-xl transition-all">
-                Log Session & Get Guidance
+                className="w-full py-4 bg-stone-900 dark:bg-white text-white dark:text-stone-900 font-black uppercase tracking-widest rounded-2xl transition-all shadow-xl mt-4">
+                Record Presence
               </button>
             )}
           </div>
         )}
 
         {view === 'guidance' && stateInfo && (
-          <div className="space-y-4">
-            <div className="text-center py-3">
-              <span className="text-4xl">{stateInfo.emoji}</span>
-              <h3 className="text-white font-black text-lg mt-2">{stateInfo.name} Mind</h3>
-              <p className="text-stone-400 text-xs">{stateInfo.sanskrit} • {stateInfo.gitaRef}</p>
+          <div className="space-y-6 animate-in slide-in-from-bottom-2 duration-300">
+            <div className="bg-stone-50 dark:bg-stone-800/20 p-6 rounded-[2rem] border border-stone-100 dark:border-stone-800/50 text-center">
+              <span className="text-4xl block mb-2">{stateInfo.emoji}</span>
+              <h3 className="text-stone-900 dark:text-white font-black text-lg uppercase tracking-tight">{stateInfo.name} Presence</h3>
+              <p className="text-stone-500 text-[10px] font-black uppercase tracking-widest mt-1">{stateInfo.sanskrit} • {stateInfo.gitaRef}</p>
             </div>
-            <p className="text-stone-200 text-sm leading-relaxed">{stateInfo.description}</p>
-            <div className="bg-stone-800/40 p-3 rounded-xl">
-              <p className="text-orange-400 text-xs font-bold uppercase tracking-wider mb-2">Practice Guidance</p>
-              <p className="text-stone-200 text-sm leading-relaxed">{stateInfo.practice}</p>
+
+            <div className="bg-white dark:bg-stone-900/40 p-5 rounded-3xl border border-orange-500/10">
+              <p className="text-orange-600 dark:text-orange-400 text-[10px] font-black uppercase tracking-widest mb-3">Practice Guidance</p>
+              <p className="text-stone-600 dark:text-stone-300 text-xs leading-relaxed font-medium italic font-serif">{stateInfo.practice}</p>
             </div>
-            <div>
-              <p className="text-stone-500 text-xs font-bold uppercase tracking-wider mb-1">Signs of this state</p>
-              <ul className="space-y-1">
-                {stateInfo.symptoms.map((s, i) => (
-                  <li key={i} className="text-stone-300 text-xs flex gap-2"><span className="text-orange-500">·</span>{s}</li>
+
+            <div className="grid grid-cols-2 gap-2">
+               {stateInfo.symptoms.map((s, i) => (
+                  <div key={i} className="bg-stone-100/50 dark:bg-stone-800/30 px-3 py-2 rounded-xl text-[9px] font-black uppercase tracking-tight text-stone-500 dark:text-stone-400 border border-stone-200/50 dark:border-stone-700/50 text-center">
+                    {s}
+                  </div>
                 ))}
-              </ul>
             </div>
+
             <button onClick={() => setView('checkin')}
-              className="w-full py-2 bg-stone-800 hover:bg-stone-700 text-stone-300 rounded-xl text-sm transition-all">
-              New Check-In
+              className="w-full py-4 bg-orange-600 hover:bg-orange-500 text-white font-black uppercase tracking-widest rounded-2xl transition-all shadow-lg shadow-orange-600/20">
+              New Session Entry
             </button>
           </div>
         )}
 
         {view === 'log' && (
-          <div className="space-y-2">
+          <div className="space-y-3 animate-in fade-in duration-300">
             {sessions.length === 0 ? (
-              <p className="text-stone-500 text-sm text-center py-8">No sessions logged yet.</p>
+              <div className="py-20 text-center">
+                <p className="text-stone-400 text-xs font-black uppercase tracking-widest italic opacity-50 font-serif">Empty presence log</p>
+              </div>
             ) : (
               sessions.map((s, i) => (
-                <div key={i} className="flex items-center gap-3 bg-stone-800/30 p-3 rounded-xl">
-                  <span className="text-xl">{stateEmojis[s.state]}</span>
+                <div key={i} className="flex items-center gap-4 bg-white dark:bg-stone-900/40 p-4 rounded-2xl border border-stone-100 dark:border-stone-800">
+                  <span className="text-2xl">{stateEmojis[s.state]}</span>
                   <div className="flex-1">
-                    <span className="text-white text-sm font-bold">{MIND_STATES.find(m => m.id === s.state)?.name}</span>
-                    <span className="text-stone-500 text-xs ml-2">{s.duration}min</span>
+                    <div className="text-xs font-black text-stone-900 dark:text-white uppercase tracking-tight">{MIND_STATES.find(m => m.id === s.state)?.name}</div>
+                    <div className="text-[10px] font-medium text-stone-500 italic mt-0.5">{s.duration} min session</div>
                   </div>
-                  <span className="text-stone-500 text-xs">{s.date}</span>
+                  <span className="text-[9px] font-black text-stone-400 dark:text-stone-500 uppercase tracking-widest">{s.date}</span>
                 </div>
               ))
             )}

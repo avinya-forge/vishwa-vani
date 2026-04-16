@@ -1,7 +1,11 @@
 import { NextResponse } from 'next/server'
+import { GoogleGenerativeAI } from '@google/generative-ai'
 
 const SUPPORTED_LANGUAGES = ['en', 'hi', 'mr'] as const
 type Language = typeof SUPPORTED_LANGUAGES[number]
+
+// Initialize Gemini if API key is present
+const genAI = process.env.GEMINI_API_KEY ? new GoogleGenerativeAI(process.env.GEMINI_API_KEY) : null
 
 export async function POST(request: Request) {
   try {
@@ -35,7 +39,7 @@ export async function POST(request: Request) {
 
     if (validTexts.length === 0) {
       return NextResponse.json(
-        { error: 'All context texts were empty or invalid.', code: 'EMPTY_CONTEXT' },
+        { error: 'Context texts were empty.', code: 'EMPTY_CONTEXT' },
         { status: 400 }
       )
     }
@@ -43,22 +47,51 @@ export async function POST(request: Request) {
     const meaningText = validTexts[0]
     const commentarySnippets = validTexts.slice(1, 3)
 
-    const synthesisText =
-      commentarySnippets.length > 0
-        ? `${meaningText}\n\nContext: ${commentarySnippets.join(' | ')}`
-        : meaningText
+    // REAL AI SYNTHESIS (GEMINI)
+    if (genAI) {
+      try {
+        const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash' })
+        
+        const prompt = `
+          As a Vedic scholar, synthesize the following verse meaning and commentaries into a concise, 
+          profound 2-3 sentence summary in ${language === 'en' ? 'English' : language === 'hi' ? 'Hindi' : 'Marathi'}.
+          Focus on the practical philosophical application of this wisdom.
+          
+          Verse Meaning: ${meaningText}
+          Commentaries: ${commentarySnippets.join(' | ')}
+          
+          Provide only the summary, no introductory or concluding text.
+        `
 
-    const synthesis = synthesisText.substring(0, 2048)
+        const result = await model.generateContent(prompt)
+        const synthesis = result.response.text().trim()
+
+        if (synthesis) {
+          return NextResponse.json({
+            success: true,
+            synthesis,
+            synthesisMode: 'generative-gemini',
+            metadata: { verseId, language }
+          })
+        }
+      } catch (aiError) {
+        console.error('Gemini synthesis failure, falling back:', aiError)
+      }
+    }
+
+    // FALLBACK: Concatenation (Free/Deterministic)
+    const fallbackSynthesis = commentarySnippets.length > 0
+        ? `${meaningText}\n\nSynthesis: ${commentarySnippets.join(' | ')}`
+        : meaningText
 
     return NextResponse.json(
       {
         success: true,
-        synthesis,
+        synthesis: fallbackSynthesis.substring(0, 2048),
         synthesisMode: 'concatenation-fallback',
         metadata: {
           verseId,
           language,
-          contextId: Buffer.from(contextTexts.join('|')).toString('base64').substring(0, 16),
         },
       },
       { status: 200 }

@@ -21,15 +21,17 @@ export default function BetaBanner() {
   if (!isVisible) return null
 
   return (
-    <div className="bg-orange-600 text-white px-4 py-2 text-sm text-center relative font-medium shadow-md z-40">
-      <p>
-        <span className="mr-2" aria-hidden="true">🧪</span>
-        Preview Release — expect rough edges, bugs welcome.
-      </p>
+    <div className="bg-orange-600 dark:bg-orange-700 text-white px-8 py-2.5 text-[11px] sm:text-xs text-center relative font-bold uppercase tracking-wider shadow-md z-[60]">
+      <div className="flex items-center justify-center gap-2">
+        <span aria-hidden="true">🕊️</span>
+        <p className="max-w-[80%]">
+          Vishwa-Vani Preview — report bugs to help refine the experience.
+        </p>
+      </div>
       <button
         onClick={dismiss}
-        className="absolute right-2 top-1/2 -translate-y-1/2 p-2 opacity-80 hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-white rounded"
-        aria-label="Dismiss beta banner"
+        className="absolute right-3 top-1/2 -translate-y-1/2 p-1.5 opacity-60 hover:opacity-100 hover:scale-110 active:scale-95 transition-all focus:outline-none rounded-full bg-white/10"
+        aria-label="Dismiss banner"
       >
         ✕
       </button>

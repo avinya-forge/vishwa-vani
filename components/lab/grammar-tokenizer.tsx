@@ -1,5 +1,3 @@
-'use client'
-
 import React, { useState } from 'react'
 import VedicAppTemplate from './vedic-app-template'
 
@@ -53,9 +51,9 @@ export default function GrammarTokenizer() {
         // Fallbacks for unknown words
         let pos = 'Unknown'
         if (cleanWord.endsWith('ti') || cleanWord.endsWith('te')) {
-          pos = 'Verb (Probable)'
+          pos = 'Verb'
         } else if (cleanWord.endsWith('am') || cleanWord.endsWith('as')) {
-          pos = 'Noun (Probable)'
+          pos = 'Noun'
         }
 
         return {
@@ -70,46 +68,49 @@ export default function GrammarTokenizer() {
     }, 1000)
   }
 
+  const footerNote = "Rule-based POS tagging with common roots dictionary. Useful for basic morphology analysis."
+
   return (
     <VedicAppTemplate
-      title="Sanskrit Tokenizer"
-      subtitle="Grammar & Morphology"
+      title="Morphology"
+      subtitle="Vedic Grammar • Tokenizer"
       icon="🧩"
-      darkMode={true}
-      footerNote="Rule-based POS tagging with common roots dictionary."
+      footerNote={footerNote}
     >
       {!result ? (
         <div className="space-y-6">
           <div className="space-y-2">
-            <label className="text-xs font-bold text-stone-500 uppercase tracking-widest ml-1">Sanskrit Line</label>
+            <div className="flex justify-between items-center text-[10px] font-black uppercase tracking-widest text-stone-500 ml-1">
+              <span>Sanskrit Line</span>
+              <span className="text-orange-600">Grammar Engine</span>
+            </div>
             <textarea
               placeholder="Paste a Sanskrit Shloka here (Devanagari or Transliteration)..."
               value={shloka}
               onChange={(e) => setShloka(e.target.value)}
-              className="w-full bg-stone-800/50 border border-stone-700 p-4 rounded-xl focus:border-orange-400 outline-none transition-all placeholder:text-stone-400 text-stone-100 font-sans resize-none h-24 shadow-inner"
+              className="w-full bg-stone-100 dark:bg-stone-800/50 border border-stone-200 dark:border-stone-700/50 p-4 rounded-2xl focus:border-orange-500 outline-none transition-all placeholder:text-stone-400 text-stone-900 dark:text-stone-100 font-sans resize-none h-24 shadow-inner"
             />
           </div>
 
           <button
             onClick={analyzeGrammar}
             disabled={!shloka || isAnalyzing}
-            className="btn-primary w-full shadow-saffron-100"
+            className="w-full py-4 bg-stone-900 dark:bg-white text-white dark:text-stone-900 font-black uppercase tracking-widest rounded-2xl transition-all shadow-xl disabled:opacity-50"
           >
             {isAnalyzing ? 'Parsing Morphology...' : 'Tokenize Shloka'}
           </button>
         </div>
       ) : (
-        <div className="animate-in fade-in slide-in-from-bottom-2 duration-500 bg-stone-800 p-4 rounded-2xl border border-stone-700">
-          
-          <div className="flex flex-col gap-3 max-h-64 overflow-y-auto custom-scrollbar pr-2 mb-4">
+        <div className="animate-in fade-in slide-in-from-bottom-2 duration-500 space-y-4">
+          <div className="flex flex-col gap-2 max-h-64 overflow-y-auto pr-2 custom-scrollbar">
             {result.map((item, idx) => (
-              <div key={idx} className="bg-stone-900 rounded-xl p-3 border border-stone-800 shadow-sm flex items-start gap-4">
-                <div className="bg-stone-800 px-3 py-1.5 rounded-lg border border-stone-700 min-w-[30%] text-center">
-                  <span className="font-serif font-black text-stone-200">{item.word}</span>
+              <div key={idx} className="bg-white dark:bg-stone-900/40 rounded-2xl p-4 border border-stone-100 dark:border-stone-800 flex items-start gap-4">
+                <div className="bg-stone-50 dark:bg-stone-800 px-3 py-1.5 rounded-xl border border-stone-200/50 dark:border-stone-700/50 min-w-[80px] text-center">
+                  <span className="font-serif italic font-black text-stone-900 dark:text-stone-200 text-xs">{item.word}</span>
                 </div>
                 <div className="flex-1">
-                  <div className="text-[10px] uppercase tracking-widest text-orange-400 font-black mb-1">{item.pos}</div>
-                  <div className="text-xs text-stone-400 font-semibold">{item.meaning}</div>
+                  <div className="text-[9px] uppercase tracking-widest text-orange-600 font-black mb-1">{item.pos}</div>
+                  <div className="text-[10px] text-stone-500 dark:text-stone-400 font-medium leading-relaxed italic font-serif ">{item.meaning}</div>
                 </div>
               </div>
             ))}
@@ -117,9 +118,9 @@ export default function GrammarTokenizer() {
 
           <button
             onClick={() => { setResult(null); setShloka(''); }}
-            className="btn-secondary w-full bg-stone-700 hover:bg-stone-600 text-white border-none"
+            className="w-full py-4 bg-orange-600 hover:bg-orange-500 text-white font-black uppercase tracking-widest rounded-2xl transition-all shadow-lg shadow-orange-600/20 mt-2"
           >
-            Tokenize Another Verse
+            Tokenize Next Verse
           </button>
         </div>
       )}

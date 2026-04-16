@@ -1,5 +1,3 @@
-'use client'
-
 import React, { useState } from 'react'
 import VedicAppTemplate from './vedic-app-template'
 
@@ -16,12 +14,12 @@ interface Scenario {
 const SCENARIOS: Scenario[] = [
   {
     id: 'no-progress',
-    situation: 'You\'ve been meditating and chanting daily for months but feel no spiritual progress. How does a bhakta (devotee) respond?',
+    situation: "You've been meditating and chanting daily for months but feel no spiritual progress. How does a bhakta (devotee) respond?",
     options: [
       {
         text: 'Continue the practice with the same love, surrendering the expectation of progress to the Divine.',
         bhakti: true,
-        explanation: 'Pure bhakti is unconditional — it doesn\'t require reciprocation or measurable results. Surrender of expectations is itself the highest devotion (Gita 12.16).'
+        explanation: "Pure bhakti is unconditional — it doesn't require reciprocation or measurable results. Surrender of expectations is itself the highest devotion (Gita 12.16)."
       },
       {
         text: 'Switch to a different practice that gives faster, more tangible results.',
@@ -42,7 +40,7 @@ const SCENARIOS: Scenario[] = [
       {
         text: 'Listen calmly, remain undisturbed, and continue your practice with inner peace.',
         bhakti: true,
-        explanation: 'The ideal devotee described in Gita 12.15-19 is one who causes no agitation and is not agitated by others — \'sama-duḥkha-sukhaḥ\' (equal in pain and pleasure).'
+        explanation: "The ideal devotee described in Gita 12.15-19 is one who causes no agitation and is not agitated by others — 'sama-duḥkha-sukhaḥ' (equal in pain and pleasure)."
       }
     ]
   },
@@ -53,12 +51,12 @@ const SCENARIOS: Scenario[] = [
       {
         text: 'True bhakti expresses as loving kindness to all beings — seeing the Divine in everyone, not just in prayer time.',
         bhakti: true,
-        explanation: 'Gita 12.13: \'adveshṭā sarva-bhūtānāṁ\' — the devotee is free from hatred toward all beings. Devotion extends to every interaction, not just ritual time.'
+        explanation: "Gita 12.13: 'adveshṭā sarva-bhūtānāṁ' — the devotee is free from hatred toward all beings. Devotion extends to every interaction, not just ritual time."
       },
       {
         text: 'Compartmentalize — spiritual life is separate from daily interactions with difficult people.',
         bhakti: false,
-        explanation: 'Compartmentalization shows that devotion hasn\'t penetrated the personality. Gita 12.13-14 describes the bhakta as kind and patient in all relationships, not just in formal worship.'
+        explanation: "Compartmentalization shows that devotion hasn't penetrated the personality. Gita 12.13-14 describes the bhakta as kind and patient in all relationships, not just in formal worship."
       }
     ]
   },
@@ -74,7 +72,7 @@ const SCENARIOS: Scenario[] = [
       {
         text: 'Offer the achievement back to the Divine, recognizing it as grace operating through you, not personal accomplishment.',
         bhakti: true,
-        explanation: 'Gita 12.11: \'sarva-karma-phala-tyāgaṁ\' — renunciation of all fruits of action offered to the Divine. This is the culmination of bhakti — total surrender of doership.'
+        explanation: "Gita 12.11: 'sarva-karma-phala-tyāgaṁ' — renunciation of all fruits of action offered to the Divine. This is the culmination of bhakti — total surrender of doership."
       }
     ]
   }
@@ -115,26 +113,25 @@ export default function BhaktiYogaCompass() {
     setShowExplanation(false)
   }
 
+  const footerNote = "Bhakti means loving surrender. The highest devotee (Gita 12.13-20) is equal in joy and sorrow, friend to all, content, patient, and free from ego."
+
   if (showResult) {
     const percentage = Math.round((score / SCENARIOS.length) * 100)
     return (
       <VedicAppTemplate
-        title="Bhakti Yoga Compass"
-        subtitle="Gita Ch. 12 • Devotion & Surrender"
+        title="Bhakti Compass"
+        subtitle="Gita Ch. 12 • Devotion"
         icon="🪷"
-        darkMode={true}
-        footerNote="Bhakti means loving surrender. The highest devotee (Gita 12.13-20) is equal in joy and sorrow, friend to all, content, patient, and free from ego."
+        footerNote={footerNote}
       >
         <div className="text-center space-y-6">
-          <div className="text-6xl mb-4">🪷</div>
-          <h3 className="text-2xl font-serif font-black text-white mb-4">Your Bhakti Compass Reading</h3>
-          <div className="text-5xl font-black text-orange-400 mb-2">{percentage}%</div>
-          <p className="text-stone-300 mb-6">
-            Your response reflected genuine bhakti in {score} out of {SCENARIOS.length} situations.
-          </p>
+          <div className="py-8">
+            <div className="text-4xl font-black text-orange-600 dark:text-orange-500 mb-1">{percentage}%</div>
+            <div className="text-[10px] font-black uppercase tracking-widest text-stone-500">Devotional Alignment</div>
+          </div>
 
-          <div className="bg-stone-800/50 p-6 rounded-2xl mb-6">
-            <p className="text-stone-200 text-sm leading-relaxed">
+          <div className="bg-stone-100 dark:bg-stone-800/50 p-6 rounded-[2rem] border border-stone-200 dark:border-stone-700/50">
+            <p className="text-stone-600 dark:text-stone-300 text-sm leading-relaxed italic font-serif">
               {percentage >= 75
                 ? 'Your bhakti compass points true north — toward unconditional surrender. Continue embodying the qualities of Gita 12.13-20 in daily life.'
                 : percentage >= 50
@@ -146,7 +143,7 @@ export default function BhaktiYogaCompass() {
 
           <button
             onClick={reset}
-            className="px-8 py-3 bg-orange-600 hover:bg-orange-500 text-white font-bold rounded-xl transition-all"
+            className="w-full py-4 bg-orange-600 hover:bg-orange-500 text-white font-black uppercase tracking-widest rounded-2xl transition-all shadow-lg shadow-orange-600/20"
           >
             Recalibrate Compass
           </button>
@@ -159,61 +156,58 @@ export default function BhaktiYogaCompass() {
 
   return (
     <VedicAppTemplate
-      title="Bhakti Yoga Compass"
-      subtitle="Gita Ch. 12 • Devotion & Surrender"
+      title="Bhakti Compass"
+      subtitle="Gita Ch. 12 • Devotion"
       icon="🪷"
-      darkMode={true}
-      footerNote="Bhakti means loving surrender. The highest devotee (Gita 12.13-20) is equal in joy and sorrow, friend to all, content, patient, and free from ego."
+      footerNote={footerNote}
     >
       <div className="space-y-6">
-        <div className="flex justify-between items-center text-sm text-stone-400">
-          <span>Scenario {currentScenario + 1} of {SCENARIOS.length}</span>
-          <span>Score: {score}/{SCENARIOS.length}</span>
+        <div className="flex justify-between items-center text-[10px] font-black uppercase tracking-widest text-stone-400">
+          <span>{currentScenario + 1} / {SCENARIOS.length}</span>
+          <span className="text-orange-600">Score: {score}</span>
         </div>
 
-        <div className="bg-stone-800/30 p-6 rounded-2xl">
-          <h4 className="text-lg font-serif font-bold text-white mb-4">Situation</h4>
-          <p className="text-stone-200 leading-relaxed">{scenario.situation}</p>
+        <div className="bg-stone-100/50 dark:bg-stone-800/30 p-6 rounded-[2rem] border border-stone-200/50 dark:border-stone-700/50 min-h-[120px] flex flex-col justify-center">
+          <p className="text-sm font-serif italic text-stone-700 dark:text-stone-300 leading-relaxed">{scenario.situation}</p>
         </div>
 
         {!showExplanation ? (
           <div className="space-y-3">
-            <h4 className="text-sm font-bold text-stone-300 uppercase tracking-widest">Choose your response:</h4>
             {scenario.options.map((option, index) => (
               <button
                 key={index}
                 onClick={() => handleOptionSelect(index)}
-                className="w-full text-left p-4 bg-stone-800/20 hover:bg-stone-700/30 border border-stone-700 rounded-xl transition-all"
+                className="w-full text-left p-4 bg-white dark:bg-stone-900/40 hover:bg-orange-50 dark:hover:bg-orange-900/10 border border-stone-200 dark:border-stone-800 rounded-2xl transition-all group"
               >
-                <span className="text-stone-200">{option.text}</span>
+                <span className="text-xs font-medium text-stone-600 dark:text-stone-300 group-hover:text-orange-700 dark:group-hover:text-orange-400 transition-colors leading-relaxed block">{option.text}</span>
               </button>
             ))}
           </div>
         ) : (
-          <div className="space-y-4">
-            <div className={`p-4 rounded-xl border-2 ${
+          <div className="space-y-4 animate-in slide-in-from-bottom-2 duration-300">
+            <div className={`p-5 rounded-3xl border ${
               selectedOption !== null && scenario.options[selectedOption].bhakti
-                ? 'bg-green-900/20 border-green-600'
-                : 'bg-red-900/20 border-red-600'
+                ? 'bg-green-500/5 border-green-500/30'
+                : 'bg-red-500/5 border-red-500/30'
             }`}>
-              <div className="flex items-center gap-2 mb-2">
-                <span className={`text-lg ${selectedOption !== null && scenario.options[selectedOption].bhakti ? 'text-green-400' : 'text-red-400'}`}>
-                  {selectedOption !== null && scenario.options[selectedOption].bhakti ? '✅' : '❌'}
-                </span>
-                <span className={`font-bold ${selectedOption !== null && scenario.options[selectedOption].bhakti ? 'text-green-300' : 'text-red-300'}`}>
-                  {selectedOption !== null && scenario.options[selectedOption].bhakti ? 'Bhakti Path' : 'Ego-Driven Response'}
+              <div className="flex items-center gap-2 mb-3">
+                <div className={`w-6 h-6 rounded-full flex items-center justify-center text-[10px] ${selectedOption !== null && scenario.options[selectedOption].bhakti ? 'bg-green-500 text-white' : 'bg-red-500 text-white'}`}>
+                  {selectedOption !== null && scenario.options[selectedOption].bhakti ? '✓' : '✗'}
+                </div>
+                <span className={`text-[10px] font-black uppercase tracking-widest ${selectedOption !== null && scenario.options[selectedOption].bhakti ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400'}`}>
+                  {selectedOption !== null && scenario.options[selectedOption].bhakti ? 'Pure Path' : 'Ego Response'}
                 </span>
               </div>
-              <p className="text-stone-200 text-sm leading-relaxed">
+              <p className="text-[11px] text-stone-600 dark:text-stone-400 leading-relaxed font-medium">
                 {selectedOption !== null && scenario.options[selectedOption].explanation}
               </p>
             </div>
 
             <button
               onClick={nextScenario}
-              className="w-full py-3 bg-orange-600 hover:bg-orange-500 text-white font-bold rounded-xl transition-all"
+              className="w-full py-4 bg-stone-900 dark:bg-white text-white dark:text-stone-900 font-black uppercase tracking-widest rounded-2xl transition-all shadow-xl"
             >
-              {currentScenario < SCENARIOS.length - 1 ? 'Next Scenario' : 'View Results'}
+              {currentScenario < SCENARIOS.length - 1 ? 'Next Step' : 'View Core Alignment'}
             </button>
           </div>
         )}

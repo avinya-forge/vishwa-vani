@@ -1,5 +1,29 @@
 # Release Notes
 
+## [1.0.8] - 2026-04-16
+
+### ✨ UI Standardization & Visual Excellence (EPIC 16)
+- **Vedic Labs Overhaul**: Standardized all 15 lab applications (Pranayama, Akshauhini, Dharma Matrix, etc.) into the `VedicAppTemplate` with premium glassmorphism, consistent dark mode tokens, and responsive layouts.
+- **Lab Index Redesign**: Implemented a stunning 3-column grid layout for the Labs Hub with interactive card animations and hover effects.
+- **Global Dark Mode Audit**: Fixed over 50+ missing dark mode classes across the Reader (Search result highlights, toolbar icons), Feedback Widget, 404 page, and Hierarchical Navigation dropdowns.
+- **Beta Banner Restoration**: Re-integrated the `BetaBanner` into the root layout to maintain user feedback visibility during the preview phase.
+
+### 🛡️ Stability & Functional Fixes
+- **Deep-Linking anchors**: Fixed search results to include `#verse-N` anchors, allowing users to jump directly to specific content.
+- **Feedback Loop**: Optimized character validation for bug reports (reduced from 200 to 50 chars) for better UX.
+- **Reader Symmetries**: Consolidated reader toolbar layout on mobile to prevent overflow on narrow viewports; removed redundant labels and tightened spacing.
+- **Synthesis Hardening**: Audited and typed the AI synthesis endpoint for deterministic error handling.
+
+### 🧪 Quality Gates
+- Lint: ✅ (0 errors)
+- TSC: ✅ (0 errors)
+- Test: ✅ (172/172 passing)
+- Build: ✅ (Static export verified)
+
+## [1.0.7] - 2026-04-16
+- **UI standardization pass**: Standardized HierarchicalNav and 404 page dark mode.
+- **Search Fix**: Appended verse hash to search result links.
+
 ## [1.0.6] - 2026-04-15
 
 ### Added (Phase 4 Vedic Labs)

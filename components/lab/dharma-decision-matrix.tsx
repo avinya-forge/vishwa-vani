@@ -1,5 +1,3 @@
-'use client'
-
 import React, { useState } from 'react'
 import VedicAppTemplate from './vedic-app-template'
 
@@ -17,7 +15,7 @@ const DILEMMAS: Dilemma[] = [
   {
     id: 'colleague-credit',
     situation:
-      'You discover a colleague has been taking credit for your team\'s work in reports to senior management. Your dharmic response according to Gita 2:',
+      "You discover a colleague has been taking credit for your team's work in reports to senior management. Your dharmic response according to Gita 2:",
     options: [
       {
         text: 'Address the issue directly and honestly with the colleague first, then escalate if needed — without personal animosity.',
@@ -36,7 +34,7 @@ const DILEMMAS: Dilemma[] = [
   {
     id: 'misleading-data',
     situation:
-      'Your company asks you to present data in a way that technically isn\'t false but creates a misleading impression. You:',
+      "Your company asks you to present data in a way that technically isn't false but creates a misleading impression. You:",
     options: [
       {
         text: 'Comply — it\'s legal, others do it, and refusing could cost you your position.',
@@ -124,36 +122,37 @@ export default function DharmaDecisionMatrix() {
     setShowExplanation(false)
   }
 
+  const footerNote = "Dharma is not rule-following but the courageous, truthful action aligned with one's role. Gita 16 distinguishes daivi from asuri qualities — honesty, fearlessness, and transparency define the former."
+
   if (showResult) {
     const percentage = Math.round((score / DILEMMAS.length) * 100)
-    const message =
-      percentage >= 75
-        ? 'Your dharmic compass is well calibrated. You understand that dharma requires both integrity and courage — not comfort. Continue applying Gita 16\'s daivi qualities in professional life.'
-        : percentage >= 50
-        ? 'Good foundation. Study Gita 16.1-3 (daivi qualities) and 16.4 (asuri qualities) for sharper discrimination. Dharma often requires uncomfortable honesty.'
-        : 'Dharma is not what is easy but what is right. Return to Gita 2.31-38 — "Better is one\'s own dharma, though imperfectly performed, than the dharma of another well performed."'
-
     return (
       <VedicAppTemplate
         title="Dharma Assessment"
-        subtitle="Gita Ch. 2 & 16 • Ethical Discernment"
-        icon="🏛️"
-        darkMode={true}
-        footerNote="Dharma is not rule-following but the courageous, truthful action aligned with one's role. Gita 16 distinguishes daivi from asuri qualities — honesty, fearlessness, and transparency define the former."
+        subtitle="Gita Ch. 2 & 16 • Ethics"
+        icon="⚖️"
+        footerNote={footerNote}
       >
         <div className="text-center space-y-6">
-          <div className="text-6xl mb-4">🏛️</div>
-          <h3 className="text-2xl font-serif font-black text-white mb-4">Dharma Score</h3>
-          <div className="text-5xl font-black text-orange-400 mb-2">{percentage}%</div>
-          <p className="text-stone-300 mb-6">
-            Chose the dharmic path in {score} of {DILEMMAS.length} dilemmas.
-          </p>
-          <div className="bg-stone-800/50 p-6 rounded-2xl mb-6">
-            <p className="text-stone-200 text-sm leading-relaxed">{message}</p>
+          <div className="py-8">
+            <div className="text-4xl font-black text-orange-600 dark:text-orange-500 mb-1">{percentage}%</div>
+            <div className="text-[10px] font-black uppercase tracking-widest text-stone-500">Ethical Discernment</div>
           </div>
+
+          <div className="bg-stone-100 dark:bg-stone-800/50 p-6 rounded-[2rem] border border-stone-200 dark:border-stone-700/50">
+            <p className="text-stone-600 dark:text-stone-300 text-sm leading-relaxed italic font-serif">
+               {percentage >= 75
+                ? 'Your dharmic compass is well calibrated. You understand that dharma requires both integrity and courage. Continue applying Gita 16\'s daivi qualities.'
+                : percentage >= 50
+                ? 'Good foundation. Study Gita 16.1-3 (daivi qualities) and 16.4 (asuri qualities) for sharper discrimination. Dharma often requires uncomfortable honesty.'
+                : 'Dharma is not what is easy but what is right. Return to Gita 2.31-38 — "Better is one\'s own dharma, though imperfectly performed."'
+              }
+            </p>
+          </div>
+
           <button
             onClick={reset}
-            className="px-8 py-3 bg-orange-600 hover:bg-orange-500 text-white font-bold rounded-xl transition-all"
+            className="w-full py-4 bg-orange-600 hover:bg-orange-500 text-white font-black uppercase tracking-widest rounded-2xl transition-all shadow-lg shadow-orange-600/20"
           >
             Practice Again
           </button>
@@ -166,60 +165,58 @@ export default function DharmaDecisionMatrix() {
 
   return (
     <VedicAppTemplate
-      title="Dharma Decision Matrix"
-      subtitle="Gita Ch. 2 & 16 • Ethical Discernment"
-      icon="🏛️"
-      darkMode={true}
-      footerNote="Dharma is not rule-following but the courageous, truthful action aligned with one's role. Gita 16 distinguishes daivi from asuri qualities — honesty, fearlessness, and transparency define the former."
+      title="Dharma Matrix"
+      subtitle="Gita Ch. 2 & 16 • Ethics"
+      icon="⚖️"
+      footerNote={footerNote}
     >
       <div className="space-y-6">
-        <div className="flex justify-between items-center text-sm text-stone-400">
-          <span>Dilemma {currentDilemma + 1} of {DILEMMAS.length}</span>
-          <span>Score: {score}/{DILEMMAS.length}</span>
+        <div className="flex justify-between items-center text-[10px] font-black uppercase tracking-widest text-stone-400">
+          <span>{currentDilemma + 1} / {DILEMMAS.length}</span>
+          <span className="text-orange-600">Score: {score}</span>
         </div>
 
-        <div className="bg-stone-800/30 p-6 rounded-2xl">
-          <h4 className="text-lg font-serif font-bold text-white mb-4">Ethical Dilemma</h4>
-          <p className="text-stone-200 leading-relaxed">{dilemma.situation}</p>
+        <div className="bg-stone-100/50 dark:bg-stone-800/30 p-6 rounded-[2rem] border border-stone-200/50 dark:border-stone-700/50 min-h-[120px] flex flex-col justify-center">
+          <p className="text-sm font-serif italic text-stone-700 dark:text-stone-300 leading-relaxed">{dilemma.situation}</p>
         </div>
 
         {!showExplanation ? (
           <div className="space-y-3">
-            <h4 className="text-sm font-bold text-stone-300 uppercase tracking-widest">Choose the dharmic action:</h4>
             {dilemma.options.map((option, index) => (
               <button
                 key={index}
                 onClick={() => handleOptionSelect(index)}
-                className="w-full text-left p-4 bg-stone-800/20 hover:bg-stone-700/30 border border-stone-700 rounded-xl transition-all"
+                className="w-full text-left p-4 bg-white dark:bg-stone-900/40 hover:bg-orange-50 dark:hover:bg-orange-900/10 border border-stone-200 dark:border-stone-800 rounded-2xl transition-all group"
               >
-                <span className="text-stone-200">{option.text}</span>
+                <span className="text-xs font-medium text-stone-600 dark:text-stone-300 group-hover:text-orange-700 dark:group-hover:text-orange-400 transition-colors leading-relaxed block">{option.text}</span>
               </button>
             ))}
           </div>
         ) : (
-          <div className="space-y-4">
-            <div className={`p-4 rounded-xl border-2 ${
+          <div className="space-y-4 animate-in slide-in-from-bottom-2 duration-300">
+            <div className={`p-5 rounded-3xl border ${
               selectedOption !== null && dilemma.options[selectedOption].dharmic
-                ? 'bg-green-900/20 border-green-600'
-                : 'bg-red-900/20 border-red-600'
+                ? 'bg-green-500/5 border-green-500/30'
+                : 'bg-red-500/5 border-red-500/30'
             }`}>
-              <div className="flex items-center gap-2 mb-2">
-                <span className={`text-lg ${selectedOption !== null && dilemma.options[selectedOption].dharmic ? 'text-green-400' : 'text-red-400'}`}>
-                  {selectedOption !== null && dilemma.options[selectedOption].dharmic ? '✅' : '❌'}
-                </span>
-                <span className={`font-bold ${selectedOption !== null && dilemma.options[selectedOption].dharmic ? 'text-green-300' : 'text-red-300'}`}>
-                  {selectedOption !== null && dilemma.options[selectedOption].dharmic ? 'Daivi — Dharmic Action' : 'Asuri — Ego-Driven Action'}
+              <div className="flex items-center gap-2 mb-3">
+                <div className={`w-6 h-6 rounded-full flex items-center justify-center text-[10px] ${selectedOption !== null && dilemma.options[selectedOption].dharmic ? 'bg-green-500 text-white' : 'bg-red-500 text-white'}`}>
+                  {selectedOption !== null && dilemma.options[selectedOption].dharmic ? '✓' : '✗'}
+                </div>
+                <span className={`text-[10px] font-black uppercase tracking-widest ${selectedOption !== null && dilemma.options[selectedOption].dharmic ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400'}`}>
+                  {selectedOption !== null && dilemma.options[selectedOption].dharmic ? 'Daivi Path' : 'Asuri Action'}
                 </span>
               </div>
-              <p className="text-stone-200 text-sm leading-relaxed">
+              <p className="text-[11px] text-stone-600 dark:text-stone-400 leading-relaxed font-medium">
                 {selectedOption !== null && dilemma.options[selectedOption].explanation}
               </p>
             </div>
+
             <button
               onClick={nextDilemma}
-              className="w-full py-3 bg-orange-600 hover:bg-orange-500 text-white font-bold rounded-xl transition-all"
+              className="w-full py-4 bg-stone-900 dark:bg-white text-white dark:text-stone-900 font-black uppercase tracking-widest rounded-2xl transition-all shadow-xl"
             >
-              {currentDilemma < DILEMMAS.length - 1 ? 'Next Dilemma' : 'View Results'}
+              {currentDilemma < DILEMMAS.length - 1 ? 'Next Step' : 'View Core Alignment'}
             </button>
           </div>
         )}

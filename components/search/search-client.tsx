@@ -45,8 +45,17 @@ export default function SearchClient() {
   }, [query])
 
   const filteredResults = useMemo(() => {
-    if (activeTab === 'all') return results
-    return results.filter(r => {
+    let base = [...results]
+    
+    // BUG-028: Natural sort by text, chapter, verse
+    base.sort((a, b) => {
+      if (a.textSlug !== b.textSlug) return a.textSlug.localeCompare(b.textSlug)
+      if (a.chapter !== b.chapter) return a.chapter - b.chapter
+      return a.verse - b.verse
+    })
+
+    if (activeTab === 'all') return base
+    return base.filter(r => {
         const meta = VEDIC_LIBRARY.find(l => l.slug === r.textSlug)
         return meta?.category === activeTab
     })
@@ -70,9 +79,9 @@ export default function SearchClient() {
     const afterMatch = text.slice(idx + q.length, end)
 
     return (
-      <span>
+      <span className="dark:text-stone-300">
         {prefix}{beforeMatch}
-        <mark className="bg-orange-200 text-stone-900 rounded px-1">{match}</mark>
+        <mark className="bg-orange-200 dark:bg-orange-500/40 text-stone-900 dark:text-stone-100 rounded px-1">{match}</mark>
         {afterMatch}{suffix}
       </span>
     )
@@ -123,19 +132,22 @@ export default function SearchClient() {
 
       <div className="max-w-4xl mx-auto">
         <div className="flex gap-2 mb-10 overflow-x-auto pb-4 scrollbar-hide">
-          {['all', 'itihas', 'upanishad', 'purana'].map((tab) => (
-            <button
-              key={tab}
-              onClick={() => setActiveTab(tab as 'all' | 'itihas' | 'upanishad' | 'purana')}
-              className={`px-6 py-3 rounded-2xl text-[11px] font-black uppercase tracking-[0.2em] transition-all whitespace-nowrap border ${
-                activeTab === tab
-                ? 'bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900 border-stone-900 dark:border-stone-100 shadow-xl'
-                : 'bg-white dark:bg-stone-800 text-stone-400 dark:text-stone-500 border-stone-100 dark:border-stone-700 hover:border-orange-200 dark:hover:border-orange-800 hover:text-stone-700 dark:hover:text-stone-300'
-              }`}
-            >
-              {tab === 'all' ? 'All Scriptures' : tab.charAt(0).toUpperCase() + tab.slice(1)}
-            </button>
-          ))}
+          {(() => {
+            const categories = ['all', ...Array.from(new Set(VEDIC_LIBRARY.map(l => l.category).filter(Boolean)))]
+            return categories.map((tab) => (
+              <button
+                key={tab}
+                onClick={() => setActiveTab(tab as any)}
+                className={`px-6 py-3 rounded-2xl text-[11px] font-black uppercase tracking-[0.2em] transition-all whitespace-nowrap border ${
+                  activeTab === tab
+                  ? 'bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900 border-stone-900 dark:border-stone-100 shadow-xl'
+                  : 'bg-white dark:bg-stone-800 text-stone-400 dark:text-stone-500 border-stone-100 dark:border-stone-700 hover:border-orange-200 dark:hover:border-orange-800 hover:text-stone-700 dark:hover:text-stone-300'
+                }`}
+              >
+                {tab === 'all' ? 'All Scriptures' : String(tab).charAt(0).toUpperCase() + String(tab).slice(1)}
+              </button>
+            ))
+          })()}
         </div>
 
         <div className="grid grid-cols-1 gap-6">
@@ -145,7 +157,7 @@ export default function SearchClient() {
               return (
                 <Link 
                   key={idx}
-                  href={`/${result.textSlug}/${result.chapter}`}
+                  href={`/${result.textSlug}/${result.chapter}#verse-${result.verse}`}
                   className="block group"
                 >
                   <div className="card-premium p-8 bg-white/60 dark:bg-stone-900/60 dark:border-stone-800">

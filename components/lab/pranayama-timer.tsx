@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState, useEffect, useRef, useCallback } from 'react'
+import VedicAppTemplate from './vedic-app-template'
 
 type Phase = 'Inhale' | 'Hold' | 'Exhale' | 'Pause'
 
@@ -97,94 +98,90 @@ export default function PranayamaTimer() {
   ]
 
   return (
-    <div className="bg-white/70 dark:bg-stone-900/40 border border-stone-200 dark:border-stone-800 rounded-[2.5rem] p-8 sm:p-12 shadow-sm dark:shadow-none h-full flex flex-col justify-between relative overflow-hidden group transition-all backdrop-blur-sm">
-      <div className="absolute inset-0 bg-gradient-to-br from-orange-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-1000" />
-
-      <div className="relative z-10">
-        {/* Header */}
-        <div className="flex justify-between items-start mb-6">
-          <div className="space-y-1">
-            <span className="text-[10px] font-black uppercase tracking-[0.4em] text-orange-500">Gita Ch. 6 • Dhyana Yoga</span>
-            <h2 className="text-3xl sm:text-4xl font-serif font-black text-stone-900 dark:text-white">Pranayama Pulse</h2>
-          </div>
-            <button
-              onClick={() => setIsActive(!isActive)}
-              className={`w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center text-xl transition-all ${isActive ? 'bg-stone-900 dark:bg-white text-white dark:text-stone-900' : 'bg-orange-600 text-white shadow-xl shadow-orange-600/20 hover:scale-105 active:scale-95'}`}
-            >
-              {isActive ? '⏸' : '▶'}
-            </button>
-        </div>
-
+    <VedicAppTemplate
+      title="Pranayama Pulse"
+      subtitle="Gita Ch. 6 • Dhyana Yoga"
+      icon="🫁"
+      footerNote="Control of breath (Pranayama) leads to steadiness of mind."
+    >
+      <div className="space-y-6">
         {/* Technique selector */}
-        <div className="flex gap-1.5 flex-wrap mb-4">
-          {TECHNIQUES.map((t, i) => (
-            <button key={t.name} onClick={() => handleTechChange(i)}
-              className={`px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider transition-all ${!showCustom && techIndex === i ? 'bg-orange-600 text-white shadow-md' : 'bg-stone-100 dark:bg-stone-800 text-stone-500 hover:text-orange-600'}`}>
-              {t.name}
+        <div className="flex justify-between items-center bg-stone-100/50 dark:bg-stone-800/50 p-2 rounded-2xl border border-stone-200/50 dark:border-stone-700/50">
+          <div className="flex gap-1.5 flex-wrap">
+            {TECHNIQUES.map((t, i) => (
+              <button key={t.name} onClick={() => handleTechChange(i)}
+                className={`px-3 py-1.5 rounded-xl text-[10px] font-black uppercase tracking-wider transition-all ${!showCustom && techIndex === i ? 'bg-orange-600 text-white shadow-lg shadow-orange-600/20' : 'text-stone-500 hover:text-orange-600'}`}>
+                {t.name}
+              </button>
+            ))}
+            <button onClick={() => setShowCustom(v => !v)}
+              className={`px-3 py-1.5 rounded-xl text-[10px] font-black uppercase tracking-wider transition-all ${showCustom ? 'bg-stone-900 dark:bg-white text-white dark:text-stone-900' : 'text-stone-500 hover:text-orange-600'}`}>
+              Custom
             </button>
-          ))}
-          <button onClick={() => setShowCustom(v => !v)}
-            className={`px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider transition-all ${showCustom ? 'bg-orange-600 text-white shadow-md' : 'bg-stone-100 dark:bg-stone-800 text-stone-500 hover:text-orange-600'}`}>
-            Custom
+          </div>
+          <button
+            onClick={() => setIsActive(!isActive)}
+            className={`w-12 h-12 rounded-2xl flex items-center justify-center text-xl transition-all shadow-lg ${isActive ? 'bg-stone-900 dark:bg-white text-white dark:text-stone-900' : 'bg-orange-600 text-white shadow-orange-600/20 hover:scale-105 active:scale-95'}`}
+          >
+            {isActive ? '⏸' : '▶'}
           </button>
         </div>
-        <p className="text-stone-500 text-[10px] mb-4">{technique.description} · {ratio.join('-')} ratio</p>
 
         {/* Custom controls */}
         {showCustom && (
-          <div className="grid grid-cols-4 gap-2 mb-4 bg-stone-800/40 p-3 rounded-2xl">
+          <div className="grid grid-cols-4 gap-2 bg-stone-100 dark:bg-stone-900/60 p-3 rounded-2xl border border-stone-200 dark:border-stone-800 animate-in zoom-in-95 duration-300">
             {(['Inhale', 'Hold', 'Exhale', 'Pause'] as const).map((p, i) => (
               <div key={p} className="text-center">
-                <div className="text-[9px] text-stone-400 uppercase mb-1">{p}</div>
+                <div className="text-[9px] text-stone-400 dark:text-stone-500 uppercase mb-1 font-black">{p}</div>
                 <input type="number" min={1} max={16} value={customRatio[i]}
                   onChange={e => {
                     const v = Math.max(1, Math.min(16, Number(e.target.value)))
                     setCustomRatio(r => { const n = [...r] as [number,number,number,number]; n[i] = v; return n })
                   }}
-                  className="w-full bg-white dark:bg-stone-700 text-stone-900 dark:text-white text-center text-sm font-bold rounded-lg p-1 border border-stone-200 dark:border-stone-600 focus:outline-none focus:border-orange-500" />
+                  className="w-full bg-white dark:bg-stone-800 text-stone-900 dark:text-white text-center text-sm font-black rounded-lg p-1 border border-stone-200 dark:border-stone-700 focus:outline-none focus:ring-1 focus:ring-orange-500" />
               </div>
             ))}
           </div>
         )}
 
         {/* Main breathing circle */}
-        <div className="flex flex-col items-center justify-center py-10">
-          <div className={`w-48 h-48 rounded-full border-4 border-dashed border-stone-800 flex items-center justify-center relative transition-all duration-[4000ms] ${isActive && phase === 'Inhale' ? 'scale-125 border-orange-500' : 'scale-100'}`}>
-            <div className={`absolute inset-4 rounded-full bg-gradient-to-t from-orange-600 to-orange-400 opacity-20 blur-2xl transition-all duration-[4000ms] ${isActive && phase === 'Inhale' ? 'scale-150' : 'scale-50'}`} />
+        <div className="flex flex-col items-center justify-center py-6">
+          <div className={`w-40 h-40 rounded-full border-4 border-dashed border-stone-200 dark:border-stone-800 flex items-center justify-center relative transition-all duration-[4000ms] ${isActive && phase === 'Inhale' ? 'scale-110 border-orange-500/50' : 'scale-100'}`}>
+            <div className={`absolute inset-4 rounded-full bg-orange-500 opacity-20 blur-2xl transition-all duration-[4000ms] ${isActive && phase === 'Inhale' ? 'scale-150' : 'scale-50'}`} />
             <div className="text-center relative z-10">
-              <div className="text-5xl font-serif font-black text-stone-900 dark:text-white mb-1 group-hover:scale-110 transition-transform duration-[4000ms]">{seconds}</div>
-              <div className="text-[10px] font-black uppercase tracking-[0.5em] text-orange-600 dark:text-orange-500">{phase}</div>
+              <div className="text-5xl font-serif font-black text-stone-900 dark:text-white mb-0">{seconds}</div>
+              <p className="text-[9px] font-black uppercase tracking-[0.4em] text-orange-600 dark:text-orange-500">{phase}</p>
             </div>
           </div>
         </div>
 
+        {/* Phase labels */}
+        <div className="grid grid-cols-4 gap-2 text-center pb-4">
+          {phaseLabels.map(s => (
+            <div key={s.name} className={`space-y-1 transition-all duration-500 ${s.active ? 'opacity-100 scale-105' : 'opacity-20'}`}>
+              <div className="text-[10px] font-black text-stone-900 dark:text-white uppercase tracking-widest">{s.name}</div>
+              <div className="text-[8px] text-stone-500 dark:text-stone-400 uppercase tracking-tighter font-black">{s.label}</div>
+            </div>
+          ))}
+        </div>
+
         {/* Session stats */}
-        <div className="grid grid-cols-3 gap-4 text-center bg-stone-100 dark:bg-stone-800/30 border border-stone-200 dark:border-transparent rounded-2xl p-4 mb-6">
+        <div className="grid grid-cols-3 gap-3 text-center bg-stone-100 dark:bg-stone-800/30 border border-stone-200 dark:border-stone-800/50 rounded-2xl p-4">
           <div>
-            <div className="text-xl font-black text-stone-900 dark:text-white">{rounds}</div>
-            <div className="text-[9px] text-stone-400 dark:text-stone-500 uppercase tracking-wider font-bold">Rounds</div>
+            <div className="text-lg font-black text-stone-900 dark:text-white leading-none">{rounds}</div>
+            <div className="text-[8px] text-stone-400 dark:text-stone-500 uppercase tracking-wider font-black mt-1">Rounds</div>
           </div>
           <div>
-            <div className="text-xl font-black text-stone-900 dark:text-white">{formatTime(elapsed)}</div>
-            <div className="text-[9px] text-stone-400 dark:text-stone-500 uppercase tracking-wider font-bold">Duration</div>
+            <div className="text-lg font-black text-stone-900 dark:text-white leading-none">{formatTime(elapsed)}</div>
+            <div className="text-[8px] text-stone-400 dark:text-stone-500 uppercase tracking-wider font-black mt-1">Time</div>
           </div>
-          <div>
-            <button onClick={reset} className="text-[10px] font-bold text-stone-400 hover:text-white uppercase tracking-wider transition-all">
+          <div className="flex items-center justify-center">
+            <button onClick={reset} className="text-[9px] font-black text-stone-400 hover:text-orange-600 transition-colors uppercase tracking-widest">
               Reset ↺
             </button>
           </div>
         </div>
       </div>
-
-      {/* Phase labels */}
-      <div className="relative z-10 grid grid-cols-4 gap-4 text-center">
-        {phaseLabels.map(s => (
-          <div key={s.name} className={`space-y-1 transition-opacity ${s.active ? 'opacity-100' : 'opacity-20'}`}>
-            <div className="text-[10px] font-black text-stone-800 dark:text-white uppercase tracking-widest">{s.name}</div>
-            <div className="text-[9px] text-stone-400 dark:text-stone-500 uppercase tracking-tighter font-bold">{s.label}</div>
-          </div>
-        ))}
-      </div>
-    </div>
+    </VedicAppTemplate>
   )
 }

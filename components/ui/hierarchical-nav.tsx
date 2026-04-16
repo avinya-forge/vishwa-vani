@@ -42,24 +42,24 @@ export default function HierarchicalNav({ levels }: { levels: LevelData[] }) {
           <div className="relative">
             <button 
               onClick={() => setActiveDropdown(activeDropdown === level.id ? null : level.id)}
-              className="flex items-center gap-1.5 text-xs font-bold text-stone-600 hover:text-orange-600 transition-colors bg-white hover:bg-orange-50 px-2.5 py-1.5 rounded-lg border border-transparent hover:border-orange-100"
+              className="flex items-center gap-1.5 text-xs font-bold text-stone-600 dark:text-stone-300 hover:text-orange-600 dark:hover:text-orange-400 transition-colors bg-white dark:bg-stone-800 hover:bg-orange-50 dark:hover:bg-orange-950/30 px-2.5 py-1.5 rounded-lg border border-transparent hover:border-orange-100 dark:hover:border-orange-900/30"
             >
-              <span className={i === 0 ? "text-orange-600 font-extrabold" : ""}>
+              <span className={i === 0 ? "text-orange-600 dark:text-orange-500 font-extrabold" : ""}>
                 {level.name} {level.activeValue}
               </span>
               {level.activeLabel && (
                 <>
-                  <span className="text-stone-300 mx-0.5">·</span>
-                  <span className="hidden md:inline text-stone-500 font-semibold">{level.activeLabel}</span>
+                  <span className="text-stone-300 dark:text-stone-600 mx-0.5">·</span>
+                  <span className="hidden md:inline text-stone-500 dark:text-stone-400 font-semibold">{level.activeLabel}</span>
                 </>
               )}
-              <svg className={`w-3.5 h-3.5 transition-transform text-stone-400 ${activeDropdown === level.id ? 'rotate-180 text-orange-600' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}><path d="M19 9l-7 7-7-7" /></svg>
+              <svg className={`w-3.5 h-3.5 transition-transform text-stone-400 dark:text-stone-500 ${activeDropdown === level.id ? 'rotate-180 text-orange-600 dark:text-orange-500' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}><path d="M19 9l-7 7-7-7" /></svg>
             </button>
 
             {activeDropdown === level.id && (
-              <div className="absolute top-full left-0 mt-1.5 w-72 bg-white border border-stone-100 rounded-xl shadow-xl shadow-stone-200/50 overflow-hidden animate-in fade-in slide-in-from-top-1 duration-150 z-[100]">
-                <div className="px-4 py-2 bg-stone-50/50 border-b border-stone-100 flex justify-between items-center">
-                   <span className="text-[10px] font-black uppercase tracking-[0.2em] text-stone-400">{level.name} Selection</span>
+              <div className="absolute top-full left-0 mt-1.5 w-72 bg-white dark:bg-stone-900 border border-stone-100 dark:border-stone-800 rounded-xl shadow-xl shadow-stone-200/50 dark:shadow-none overflow-hidden animate-in fade-in slide-in-from-top-1 duration-150 z-[100]">
+                <div className="px-4 py-2 bg-stone-50/50 dark:bg-stone-950/30 border-b border-stone-100 dark:border-stone-800 flex justify-between items-center">
+                   <span className="text-[10px] font-black uppercase tracking-[0.2em] text-stone-400 dark:text-stone-500">{level.name} Selection</span>
                 </div>
                 <div className="p-3 max-h-64 overflow-y-auto grid grid-cols-5 gap-1.5">
                   {level.options.map(opt => (
@@ -71,7 +71,7 @@ export default function HierarchicalNav({ levels }: { levels: LevelData[] }) {
                       className={`h-9 flex items-center justify-center rounded-lg text-xs font-black transition-all border ${
                         level.activeValue === opt.value
                         ? 'bg-orange-600 text-white border-orange-600 shadow-sm' 
-                        : 'bg-white text-stone-500 border-stone-100 hover:bg-orange-50 hover:text-orange-600 hover:border-orange-200'
+                        : 'bg-white dark:bg-stone-800 text-stone-500 dark:text-stone-400 border-stone-100 dark:border-stone-700 hover:bg-orange-50 dark:hover:bg-orange-950/30 hover:text-orange-600 dark:hover:text-orange-400 hover:border-orange-200 dark:hover:border-orange-600'
                       }`}
                     >
                       {opt.label || opt.value}

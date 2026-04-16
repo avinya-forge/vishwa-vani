@@ -84,12 +84,15 @@ export default function StudyClient({
     };
 
     const observer = new IntersectionObserver(callback, options);
+    const currentRefs = { ...verseRefs.current };
 
-    Object.values(verseRefs.current).forEach(el => {
+    Object.values(currentRefs).forEach(el => {
       if (el) observer.observe(el);
     });
 
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+    }
   }, [textSlug, chapter, verses]);
 
 
@@ -539,7 +542,7 @@ export default function StudyClient({
                   {bookData.chapterNames[String(chapter)]}
                 </p>
               )}
-              {isParva && currentAdhyaya && (
+              {isParva && currentAdhyaya && adhyayaList && adhyayaList.length > 0 && (
                 <span className="flex items-center justify-center gap-2 text-[10px] font-normal text-stone-400 dark:text-stone-500 mt-0.5">
                   <span>Parva {chapter} · Adhyaya {currentAdhyaya} of {adhyayaList.length}</span>
                   <AdhyayaShareLink textSlug={textSlug} chapter={chapter} adhyaya={activeAdhyaya} />
@@ -579,9 +582,9 @@ export default function StudyClient({
           <div className="flex items-center gap-2 min-w-0 overflow-x-auto">
 
             {/* Progress indicator */}
-            <div className="hidden sm:flex items-center px-2.5 py-1 bg-stone-100 dark:bg-stone-800 rounded-full text-[11px] font-medium text-stone-500 dark:text-stone-400 flex-shrink-0">
+            <div className="flex items-center px-2 py-0.5 bg-stone-100 dark:bg-stone-800 rounded-full text-[10px] sm:text-[11px] font-medium text-stone-500 dark:text-stone-400 flex-shrink-0">
               <span className="whitespace-nowrap" data-testid="chapter-progress">
-                {bookData?.category === 'itihas' ? 'Adhyaya' : 'Śloka'} {activeVerse} / {verses.length}
+                {activeVerse} / {verses.length}
               </span>
             </div>
 
@@ -589,8 +592,8 @@ export default function StudyClient({
             <div className="hidden sm:block w-px h-4 bg-stone-200 dark:bg-stone-700 flex-shrink-0" />
 
             {/* Author selector - Lean template: checkboxes for up to 2 authors */}
-            <div className="flex items-center gap-1.5 flex-shrink-0">
-              <span className="text-[10px] font-bold uppercase tracking-widest text-stone-400 dark:text-stone-500 whitespace-nowrap" data-testid="scholars-counter">Scholars {scholarSelection.length}/{2}</span>
+            <div className="flex items-center gap-1 flex-shrink-0">
+              <span className="text-[10px] font-bold uppercase tracking-widest text-stone-400 dark:text-stone-500 whitespace-nowrap hidden md:inline" data-testid="scholars-counter">Scholars {scholarSelection.length}/2</span>
               <div className="flex gap-1" role="group" aria-label="Scholar Selection">
                 {availableScholars.filter(s => s !== 'none').slice(0, 5).map((author, index, arr) => {
                   const meta = getScholarMeta(author)

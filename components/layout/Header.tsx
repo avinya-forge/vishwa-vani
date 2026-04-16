@@ -157,7 +157,7 @@ export default function Header() {
               Search
             </Link>
 
-            <Link href="/lab" className={`flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-bold transition-all focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:outline-none ${pathname === '/lab' ? 'text-orange-600 bg-orange-50' : 'text-orange-600 hover:bg-orange-50'}`}>
+            <Link href="/lab" className={`flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-bold transition-all focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:outline-none ${pathname === '/lab' ? 'text-orange-600 bg-orange-50 dark:bg-orange-950/40' : 'text-orange-600 hover:bg-orange-50 dark:hover:bg-orange-950/20'}`}>
               <span className="text-[13px]">🧪</span> Vedic Labs
             </Link>
           </div>
@@ -193,7 +193,7 @@ export default function Header() {
           {/* Mobile hamburger */}
           <button
             onClick={() => setShowMobileMenu(v => !v)}
-            className="lg:hidden p-2 rounded-lg bg-stone-50 text-stone-600 hover:bg-orange-50 hover:text-orange-600 transition-all focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:outline-none"
+            className="lg:hidden p-2 rounded-lg bg-stone-50 dark:bg-stone-900 text-stone-600 dark:text-stone-400 hover:bg-orange-50 dark:hover:bg-orange-950/40 hover:text-orange-600 dark:hover:text-orange-500 transition-all focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:outline-none"
             aria-label="Toggle Navigation Menu"
             aria-expanded={showMobileMenu}
           >

@@ -8,6 +8,7 @@ import SecurityShield from '@/components/layout/security-shield'
 import { setRequestLocale } from 'next-intl/server'
 import FeedbackWidget from '@/components/ui/feedback-widget'
 import { ThemeProvider } from '@/components/theme-provider'
+import BetaBanner from '@/components/ui/beta-banner'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
@@ -72,6 +73,7 @@ export default async function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <LocaleProvider>
             <SecurityShield />
+            <BetaBanner />
             <Header />
             <main id="main-content" className="flex-grow">
               {children}

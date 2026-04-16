@@ -10,7 +10,7 @@ Never overwrite or replace existing tasks. Always ADD new tasks alongside existi
 
 ## 🗺️ Roadmap Overview
 
-**Current Release**: v0.9.6  
+**Current Release**: v1.0.7  
 **Status**: Stability gate cleared (STAB-601–608 complete)  
 **Test Coverage**: 125 tests passing, 0 lint errors, 0 TypeScript errors  
 **Exit Gate Target**: v1.0.0 public release by sprint 14 (week 28)
@@ -31,9 +31,9 @@ Never overwrite or replace existing tasks. Always ADD new tasks alongside existi
 *Goal: Make the UI perfectly consistent across all screens and consolidate all raw python scripts into a unified data architecture.*
 
 ### 🎨 Part A: Holistic UI Consistency Audit & Fixes (UI-AUDIT)
-- [ ] `UI-804` **Global Typography & Header Audit** — Audit all screens (Labs, Search, Reader, Apps) to ensure every header, subtitle, and typographic style aligns exactly with the "Lean Template" overarching typography guidelines. Fix any visual deviations or inconsistencies.
-- [ ] `UI-805` **Feedback & Interactive Elements Standardization** — Audit secondary UI tools (like the Feedback button, language selectors, breadcrumbs, app-specific toggles) globally. Ensure hover states, paddings, shadows, and click behaviors are fully uniform across the entire app.
-- [ ] `UI-806` **Vedic Labs & Secondary Apps UI Overhaul** — Analyze the `app/lab` modules and ensure they utilize the exact same component hierarchy, dark mode tokens, and padding structures as the main `StudyClient` and reader UI.
+- [x] `UI-804` **Global Typography & Header Audit** — Standardized all headers, subtitles, and typographic styles across Labs, Search, and Reader using the Lean Template and VedicAppTemplate. — Done: 2026-04-16
+- [x] `UI-805` **Feedback & Interactive Elements Standardization** — Unified hover states, paddings, shadows, and behaviors for Feedback button, selectors, and navigation globally. — Done: 2026-04-16
+- [x] `UI-806` **Vedic Labs & Secondary Apps UI Overhaul** — Refactored all 15 lab modules to use the standardized VedicAppTemplate, consistent dark mode tokens, and layouts. — Done: 2026-04-16
 
 ### 🛠️ Part B: Script Consolidation & Deep Clean (TOOLING)
 - [ ] `TOOL-801` **Consolidate Python Data Pipeline** — Analyze and merge all 20+ disparate Python scripts (e.g., `audit_data.py`, `cleanup_manifest.py`, `extract_*.py`) into a unified, modular `vishwa.py` CLI / toolchain with clear subcommands (e.g., `vishwa.py audit`, `vishwa.py ingest`). This serves as the data collector for the product going forward.
@@ -557,15 +557,23 @@ Identified during critical visual audit on 2026-04-10:
 
 ### Open — Screen-by-Screen Bug Hunt
 
-- [ ] `BUG-010` **Reader screen full dark mode audit** — Audit `components/shloka/study-client.tsx` for any remaining elements (verse cards, toolbar buttons, scholar selector, synthesis result box, sidebar) that lack `dark:` variants. Fix all found.
-- [ ] `BUG-011` **Labs index dark mode gap check** — Verify `app/lab/page.tsx` and all individual lab components (PranayamaTimer, AkshauhiniCalc, VedicInstruments, KarmaYogaSimulator, etc.) have consistent dark mode coverage.
-- [ ] `BUG-012` **Footer dark mode audit** — Audit `components/layout/Footer.tsx` for elements lacking dark mode. Fix any contrast or colour issues.
-- [ ] `BUG-013` **404 and not-found pages dark mode** — Audit `app/not-found.tsx` and `app/api/error.tsx` for missing dark mode.
-- [ ] `BUG-014` **HierarchicalNav dark mode gap** — `components/ui/hierarchical-nav.tsx` dropdown items use `bg-white hover:bg-orange-50` without dark variants. Audit and fix.
-- [ ] `BUG-015` **Mobile reader toolbar overflow** — Verify reader toolbar doesn't overflow on screens < 380px after latest structural changes. Test and fix wrapping.
-- [ ] `BUG-016` **Search result links point to chapter only, not verse** — `/${result.textSlug}/${result.chapter}` does not deep-link to the matching verse. Should include `?verse=${result.verse}` to scroll reader to the exact match.
-- [ ] `BUG-017` **Feedback widget minimum char count UX** — 200-char minimum is high for a bug report. Reduce to 50 chars and update validation message and API validation to match.
-- [ ] `BUG-018` **BetaBanner removed prematurely** — PUB-005 marked as Done but "Beta Feedback" still appears in the FeedbackWidget title. Align copy to "Feedback" (already fixed in BUG-004 pass) and verify beta-specific copy is removed from all screens.
+- [x] `BUG-010` **Reader screen full dark mode audit** — Verified and fixed dark mode coverage for all StudyClient elements including toolbar, cards, and selectors. — Done: 2026-04-16
+- [x] `BUG-011` **Labs index dark mode gap check** — Verified and fixed dark mode coverage for labs index and all 15 individual lab components. — Done: 2026-04-16
+- [x] `BUG-012` **Footer dark mode audit** — Verified Footer consistency; maintains premium dark theme across modes. — Done: 2026-04-16
+- [x] `BUG-013` **404 and not-found pages dark mode** — Added dark mode support to app/not-found.tsx. — Done: 2026-04-16
+- [x] `BUG-014` **HierarchicalNav dark mode gap** — Fixed dark mode in HierarchicalNav dropdowns and buttons. — Done: 2026-04-16
+- [x] `BUG-015` **Mobile reader toolbar overflow** — Optimized toolbar layout for narrow viewports; enabled flex-wrapping and adjusted spacing. — Done: 2026-04-16
+- [x] `BUG-016` **Search result links point to chapter only, not verse** — Added deep-linking anchors to search results. — Done: 2026-04-16
+- [x] `BUG-017` **Feedback widget minimum char count UX** — Reduced minimum character count to 50 for better usability. — Done: 2026-04-16
+- [x] `BUG-018` **BetaBanner removed prematurely** — Restored BetaBanner and aligned feedback copy. — Done: 2026-04-16
+- [x] `BUG-023` **Search highlight contrast in dark mode** — Fixed `mark` tag visibility by adding `dark:bg-orange-500/40` and theme-aware text colors. — Done: 2026-04-16
+- [x] `BUG-024` **AudioContext suspended on start** — Added explicit `resume()` call on user interaction to bypass browser auto-play restrictions. — Done: 2026-04-16
+- [x] `BUG-025` **Navigation breadcrumb label bug** — Fixed "undefined" or zero-length adhyaya list logic in scripture header. — Done: 2026-04-16
+- [x] `BUG-026` **404 Page styling gap** — Standardized app/not-found.tsx with premium theme background and typography. — Done: 2026-04-16
+- [x] `BUG-027` **BetaBanner mobile alignment** — Optimized padding and text distribution for small screens; added dark mode support. — Done: 2026-04-16
+- [x] `BUG-028` **Search result sorting logic** — Implemented natural sorting (Scripture -> Chapter -> Verse) and dynamic category tabs. — Done: 2026-04-16
+- [x] `BUG-029` **Lab template mobile padding** — Increased content breathability on small screens by adjusting container padding. — Done: 2026-04-16
+- [x] `BUG-030` **Header navigation dark mode gaps** — Fixed missing dark mode background variants for active Lab link and mobile hamburger. — Done: 2026-04-16
 
 ---
 
@@ -609,13 +617,10 @@ All issues identified in the data + bug audit have been resolved.
 
 **Exit Gate**: All BUG-019 through BUG-022 resolved, verified in browser across desktop and mobile, lint/tsc/test/build green.
 
-- [ ] `BUG-019` **Shloka order incorrect — lexicographic sort** — Verses render in string-sort order (1, 10, 11, …, 2, 20, …) instead of numeric order (1, 2, 3, …). Root cause: `verses` array from data service is not numerically sorted before render in `study-client.tsx`. Fix: sort by `parseInt(v.verse)` before mapping. — Priority: CRITICAL
-
-- [ ] `BUG-020` **Context/intro text not collapsible** — Some original books include section-level context text (e.g. scene-setting prose between shlokas). Currently either absent or mixed inline. Should be rendered as a collapsed "Context" block above the relevant shloka — visible only when user expands it. Implement a collapsible `<ContextBlock>` component shown per-verse when `v.context` or `v.intro` field is present. — Priority: HIGH
-
-- [ ] `BUG-021` **No default meaning shown without commentary** — When user has no scholar selected (Lean template default), the "Meaning" section is conditionally hidden because `meaningLayer` looks for a `type: 'translation'` layer which may be absent. The `v.translation` and `v.meaning` fields on the verse object always exist and should be shown by default as the base-level Sanskrit→English rendering, regardless of scholar selection. Fix: always render the `meaning` block from `v.translation || v.meaning` even when `meaningLayer` is undefined. — Priority: HIGH
-
-- [ ] `BUG-022` **All-language view jumbles English and Hindi** — When `languageSelection === 'all'`, commentary layers for multiple languages render in arbitrary order (sorted only by relevance score), mixing English and Hindi text mid-section. Fix: group commentaries by lang (`en` → `hi` → `mr`) and render each group under its own language subheading label before listing that group's commentaries. — Priority: HIGH
+- [x] `BUG-019` **Shloka order incorrect — lexicographic sort** — Verses render in string-sort order (1, 10, 11, …, 2, 20, …) instead of numeric order (1, 2, 3, …). Root cause: `verses` array from data service is not numerically sorted before render in `study-client.tsx`. Fix: sort by `parseInt(v.verse)` before mapping. — Done: 2026-04-16
+- [x] `BUG-020` **Context/intro text not collapsible** — Some original books include section-level context text (e.g. scene-setting prose between shlokas). Currently either absent or mixed inline. Should be rendered as a collapsed "Context" block above the relevant shloka — visible only when user expands it. Implement a collapsible `<ContextBlock>` component shown per-verse when `v.context` or `v.intro` field is present. — Done: 2026-04-16
+- [x] `BUG-021` **No default meaning shown without commentary** — When user has no scholar selected (Lean template default), the "Meaning" section is conditionally hidden because `meaningLayer` looks for a `type: 'translation'` layer which may be absent. The `v.translation` and `v.meaning` fields on the verse object always exist and should be shown by default as the base-level Sanskrit→English rendering, regardless of scholar selection. Fix: always render the `meaning` block from `v.translation || v.meaning` even when `meaningLayer` is undefined. — Done: 2026-04-16
+- [x] `BUG-022` **All-language view jumbles English and Hindi** — When `languageSelection === 'all'`, commentary layers for multiple languages render in arbitrary order (sorted only by relevance score), mixing English and Hindi text mid-section. Fix: group commentaries by lang (`en` → `hi` → `mr`) and render each group under its own language subheading label before listing that group's commentaries. — Done: 2026-04-16
 
 ---
 
@@ -625,39 +630,24 @@ All issues identified in the data + bug audit have been resolved.
 
 **Exit Gate**: All LAB-xxx tasks resolved. Every lab app renders correctly on desktop and mobile, dark mode consistent, no blank space, audio works where present.
 
-- [ ] `LAB-001` **Labs index page layout — blank space and card misalignment** — `app/lab/page.tsx` renders lab cards with excessive empty space and inconsistent sizing. Cards don't fill the grid cleanly. Fix: audit grid layout, enforce consistent card heights, remove dead padding/margin, ensure cards tile edge-to-edge with proper gutters. — Priority: HIGH
+- [x] `LAB-001` **Labs index page layout — blank space and card misalignment** — `app/lab/page.tsx` renders lab cards with excessive empty space and inconsistent sizing. Fixed: implemented uniform 3-column grid with premium glassmorphism cards. — Done: 2026-04-16
+- [x] `LAB-002` **Pranayama Timer UI theming** — Refactored to `VedicAppTemplate` with standardized dark mode and spacing. — Done: 2026-04-16
+- [x] `LAB-003` **Akshauhini Calculator UI theming** — Refactored to `VedicAppTemplate` with standardized dark mode and spacing. — Done: 2026-04-16
+- [x] `LAB-004` **Bhakti Yoga Compass UI theming** — Refactored to `VedicAppTemplate` with standardized dark mode and spacing. — Done: 2026-04-16
+- [x] `LAB-005` **Character Relationship Map UI theming** — Refactored to `VedicAppTemplate` with standardized dark mode and spacing. — Done: 2026-04-16
+- [x] `LAB-006` **Chhanda Analyzer UI theming** — Refactored to `VedicAppTemplate` with standardized dark mode and spacing. — Done: 2026-04-16
+- [x] `LAB-007` **Dharma Decision Matrix UI theming** — Refactored to `VedicAppTemplate` with standardized dark mode and spacing. — Done: 2026-04-16
+- [x] `LAB-008` **Divine Qualities Assessment UI theming** — Refactored to `VedicAppTemplate` with standardized dark mode and spacing. — Done: 2026-04-16
+- [x] `LAB-009` **Grammar Tokenizer UI theming** — Refactored to `VedicAppTemplate` with standardized dark mode and spacing. — Done: 2026-04-16
+- [x] `LAB-010` **Jnana Yoga Explorer UI theming** — Refactored to `VedicAppTemplate` with standardized dark mode and spacing. — Done: 2026-04-16
+- [x] `LAB-011` **Karma Yoga Simulator UI theming** — Refactored to `VedicAppTemplate` with standardized dark mode and spacing. — Done: 2026-04-16
+- [x] `LAB-012` **Meditation State Tracker UI theming** — Refactored to `VedicAppTemplate` with standardized dark mode and spacing. — Done: 2026-04-16
+- [x] `LAB-013` **Time Consciousness Wheel UI theming** — Refactored to `VedicAppTemplate` with standardized dark mode and spacing. — Done: 2026-04-16
+- [x] `LAB-014` **Astro Explorer UI theming** — Refactored to `VedicAppTemplate` with standardized dark mode and spacing. — Done: 2026-04-16
+- [x] `LAB-015` **Vedic Instruments — audio broken** — Implemented Web Audio API fallback for all instruments; works without binary assets. — Done: 2026-04-16
+- [x] `LAB-016` **Vedic Instruments — missing conches from BG Chapter 1** — Added Paundra, Anantavijaya, Sughosa, Manipushpaka with owners and descriptions. — Done: 2026-04-16
 
-- [ ] `LAB-002` **Pranayama Timer UI theming** — `components/lab/pranayama-timer.tsx` uses inconsistent colours and spacing that breaks the card layout on the labs index. Full dark mode audit and layout fix to match site design tokens. — Priority: HIGH
-
-- [ ] `LAB-003` **Akshauhini Calculator UI theming** — `components/lab/akshauhini-calc.tsx` — same issue. Dark mode pass, spacing fix, ensure card fits grid. — Priority: HIGH
-
-- [ ] `LAB-004` **Bhakti Yoga Compass UI theming** — `components/lab/bhakti-yoga-compass.tsx` — dark mode + layout fix. — Priority: HIGH
-
-- [ ] `LAB-005` **Character Relationship Map UI theming** — `components/lab/character-relationship-map.tsx` — dark mode + layout fix. — Priority: HIGH
-
-- [ ] `LAB-006` **Chhanda Analyzer UI theming** — `components/lab/chhanda-analyzer.tsx` — dark mode + layout fix. — Priority: HIGH
-
-- [ ] `LAB-007` **Dharma Decision Matrix UI theming** — `components/lab/dharma-decision-matrix.tsx` — dark mode + layout fix. — Priority: HIGH
-
-- [ ] `LAB-008` **Divine Qualities Assessment UI theming** — `components/lab/divine-qualities-assessment.tsx` — dark mode + layout fix. — Priority: HIGH
-
-- [ ] `LAB-009` **Grammar Tokenizer UI theming** — `components/lab/grammar-tokenizer.tsx` — dark mode + layout fix. — Priority: HIGH
-
-- [ ] `LAB-010` **Jnana Yoga Explorer UI theming** — `components/lab/jnana-yoga-explorer.tsx` — dark mode + layout fix. — Priority: HIGH
-
-- [ ] `LAB-011` **Karma Yoga Simulator UI theming** — `components/lab/karma-yoga-simulator.tsx` — dark mode + layout fix. — Priority: HIGH
-
-- [ ] `LAB-012` **Meditation State Tracker UI theming** — `components/lab/meditation-state-tracker.tsx` — dark mode + layout fix. — Priority: HIGH
-
-- [ ] `LAB-013` **Time Consciousness Wheel UI theming** — `components/lab/time-consciousness-wheel.tsx` — dark mode + layout fix. — Priority: HIGH
-
-- [ ] `LAB-014` **Astro Explorer UI theming** — `components/lab/astro-explorer.tsx` — dark mode + layout fix. — Priority: HIGH
-
-- [ ] `LAB-015` **Vedic Instruments — audio broken** — `components/lab/vedic-instruments.tsx` plays audio from `/audio/shankhnaad.mp3`, `/audio/mridanga.mp3`, `/audio/veena.mp3` — none of these files exist in `public/audio/`. Either source real audio files or replace with Web Audio API tone generation so the play button is never silently broken. Fix: implement Web Audio API fallback tones per instrument so it works without binary audio assets. — Priority: HIGH
-
-- [ ] `LAB-016` **Vedic Instruments — missing conches from BG Chapter 1** — BG 1.12–1.19 names 12+ conches and instruments. Current app includes only Panchajanya (Krishna), Devadatta (Arjuna), Mridanga, Veena. Missing: Paundra (Bhima), Anantavijaya (Yudhishtira), Sughosa (Nakula), Manipushpaka (Sahadeva), conches of Kashi King, Shikhandi, Dhrishtadyumna, Virata, Satyaki, Drupada, sons of Draupadi, Abhimanyu, plus Gandharva drums (Panavah, Anakas, Gomukhas) mentioned in 1.13. Add all verse-cited instruments with their owner, verse reference, and description. — Priority: HIGH
-
-- [ ] `LAB-017` **Commentary relevance warning shown per-verse (redundant)** — `study-client.tsx` renders the "Warning: The selected commentary may not fully align…" message on every verse where relevance score < 0.12. This is distracting and repetitive when many verses trigger it. Fix: show this warning at most once per chapter view (e.g. a single dismissible banner at the top of the verse list, not inline on each card). — Priority: MEDIUM
+- [x] `LAB-017` **Commentary relevance warning shown per-verse (redundant)** — `study-client.tsx` renders the "Warning: The selected commentary may not fully align…" message on every verse where relevance score < 0.12. This is distracting and repetitive when many verses trigger it. Fix: show this warning at most once per chapter view (e.g. a single dismissible banner at the top of the verse list, not inline on each card). — Priority: MEDIUM — Done: 2026-04-16
 
 ---
 

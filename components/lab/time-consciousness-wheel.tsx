@@ -1,5 +1,3 @@
-'use client'
-
 import React, { useState } from 'react'
 import VedicAppTemplate from './vedic-app-template'
 
@@ -99,8 +97,6 @@ export default function TimeConsciousnessWheel() {
   const [quizDone, setQuizDone] = useState(false)
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null)
 
-  const _selected = TIME_SCALES.find(s => s.id === activeScale)
-
   const handleAnswer = (idx: number) => {
     setSelectedAnswer(idx)
     if (idx === QUIZ_QUESTIONS[quizIndex].correct) setQuizScore(s => s + 1)
@@ -115,99 +111,130 @@ export default function TimeConsciousnessWheel() {
     }
   }
 
-  const scaleColors = [
-    'bg-stone-700/40 border-stone-600',
-    'bg-blue-900/30 border-blue-700',
-    'bg-indigo-900/30 border-indigo-700',
-    'bg-violet-900/30 border-violet-700',
-    'bg-purple-900/30 border-purple-700',
-    'bg-orange-900/30 border-orange-500',
-  ]
+  const reset = () => {
+    setQuizMode(false)
+    setQuizIndex(0)
+    setQuizScore(0)
+    setQuizDone(false)
+    setSelectedAnswer(null)
+    setActiveScale(null)
+  }
+
+  const footerNote = "Gita 8.16: 'All worlds up to Brahmaloka are subject to return. But for one who reaches Me, there is no rebirth.'"
 
   return (
     <VedicAppTemplate
-      title="Time Consciousness Wheel"
-      subtitle="Gita Ch. 8 & 10 • Vedic Cosmology"
+      title="Kala Cakra"
+      subtitle="Gita Ch. 8 • Cosmic Time"
       icon="⏳"
-      darkMode={true}
-      footerNote="Gita 8.16: 'All worlds up to Brahmaloka are subject to return. But for one who reaches Me, there is no rebirth.'"
+      footerNote={footerNote}
     >
       {!quizMode ? (
         <div className="space-y-4">
-          <p className="text-stone-400 text-sm">Tap any time scale to explore. The Self exists beyond all of them.</p>
-          <div className="space-y-2">
-            {TIME_SCALES.map((scale, i) => (
+          <div className="flex justify-between items-center text-[10px] font-black uppercase tracking-widest text-stone-500 mb-2">
+            <span>Cosmic Hierarchy</span>
+            <span className="text-orange-600">Scale Selection</span>
+          </div>
+
+          <div className="space-y-2 max-h-[350px] overflow-y-auto pr-2 custom-scrollbar">
+            {TIME_SCALES.map((scale) => (
               <button
                 key={scale.id}
                 onClick={() => setActiveScale(activeScale === scale.id ? null : scale.id)}
-                className={`w-full text-left p-4 rounded-xl border transition-all ${scaleColors[i]} ${activeScale === scale.id ? 'ring-1 ring-orange-500' : ''}`}
+                className={`w-full text-left p-4 rounded-2xl border transition-all ${activeScale === scale.id ? 'bg-orange-50 dark:bg-orange-900/10 border-orange-500' : 'bg-white dark:bg-stone-900/40 border-stone-100 dark:border-stone-800'}`}
               >
-                <div className="flex justify-between items-center">
-                  <div>
-                    <span className="text-white font-bold text-sm">{scale.name}</span>
-                    <span className="text-stone-500 text-xs ml-2">({scale.sanskrit})</span>
+                <div className="flex justify-between items-baseline mb-1">
+                  <div className="flex items-baseline gap-2">
+                    <span className={`font-black text-xs uppercase tracking-tight ${activeScale === scale.id ? 'text-orange-700 dark:text-orange-400' : 'text-stone-900 dark:text-white'}`}>{scale.name}</span>
+                    <span className="text-[10px] font-medium text-stone-400 italic">{scale.sanskrit}</span>
                   </div>
-                  <span className="text-orange-400 text-xs font-mono">{scale.duration}</span>
+                  <span className="text-[10px] font-black text-orange-600 dark:text-orange-400 font-serif">{scale.duration}</span>
                 </div>
+                
                 {activeScale === scale.id && (
-                  <div className="mt-3 space-y-2">
-                    <p className="text-stone-200 text-sm leading-relaxed">{scale.description}</p>
-                    <div className="flex gap-4 text-xs text-stone-400">
-                      <span>≈ {scale.humanEquivalent}</span>
-                      <span className="text-orange-500">{scale.gitaRef}</span>
+                  <div className="mt-3 space-y-3 animate-in fade-in duration-300">
+                    <p className="text-[11px] text-stone-600 dark:text-stone-300 leading-relaxed font-serif italic border-l-2 border-orange-500/30 pl-3">
+                      {scale.description}
+                    </p>
+                    <div className="flex justify-between items-center bg-stone-100/50 dark:bg-stone-800/50 p-2 rounded-xl">
+                      <span className="text-[9px] font-black uppercase tracking-widest text-stone-500">Relative Magnitude:</span>
+                      <span className="text-[9px] font-black text-orange-600">{scale.humanEquivalent}</span>
                     </div>
                   </div>
                 )}
               </button>
             ))}
           </div>
+
           <button
             onClick={() => setQuizMode(true)}
-            className="w-full py-3 bg-orange-600 hover:bg-orange-500 text-white font-bold rounded-xl transition-all mt-4"
+            className="w-full py-4 bg-stone-900 dark:bg-white text-white dark:text-stone-900 font-black uppercase tracking-widest rounded-2xl transition-all shadow-xl mt-4"
           >
-            Test Your Understanding →
+            Cosmology Challenge
           </button>
         </div>
       ) : quizDone ? (
-        <div className="text-center space-y-6">
-          <div className="text-6xl">⏳</div>
-          <h3 className="text-2xl font-serif font-black text-white">Cosmology Score</h3>
-          <div className="text-5xl font-black text-orange-400">{Math.round((quizScore / QUIZ_QUESTIONS.length) * 100)}%</div>
-          <p className="text-stone-300">{quizScore} of {QUIZ_QUESTIONS.length} correct.</p>
-          <div className="bg-stone-800/50 p-4 rounded-xl text-stone-300 text-sm">
-            {quizScore === QUIZ_QUESTIONS.length
-              ? 'Excellent! You understand Vedic cosmology\'s message: time is vast, but the Self is beyond time.'
-              : 'Review Gita chapters 8 and 10 for deeper understanding of Vedic time cycles.'}
+        <div className="text-center space-y-6 py-4 animate-in zoom-in-95 duration-500">
+           <div className="py-8">
+            <div className="text-4xl font-black text-orange-600 dark:text-orange-500 mb-1">{Math.round((quizScore / QUIZ_QUESTIONS.length) * 100)}%</div>
+            <div className="text-[10px] font-black uppercase tracking-widest text-stone-500">Universal Clarity</div>
           </div>
-          <button onClick={() => { setQuizMode(false); setQuizIndex(0); setQuizScore(0); setQuizDone(false); setSelectedAnswer(null) }}
-            className="px-8 py-3 bg-orange-600 hover:bg-orange-500 text-white font-bold rounded-xl transition-all">
-            Explore Again
+
+          <div className="bg-stone-100 dark:bg-stone-800/50 p-6 rounded-[2rem] border border-stone-200 dark:border-stone-700/50">
+            <p className="text-stone-600 dark:text-stone-300 text-sm leading-relaxed italic font-serif">
+              {quizScore === QUIZ_QUESTIONS.length
+                ? 'Excellent! You understand Vedic cosmology\'s message: time is vast, but the Self is beyond time.'
+                : 'Review Gita chapters 8 and 10 for deeper understanding of Vedic time cycles.'}
+            </p>
+          </div>
+
+          <button onClick={reset}
+            className="w-full py-4 bg-orange-600 hover:bg-orange-500 text-white font-black uppercase tracking-widest rounded-2xl transition-all shadow-lg shadow-orange-600/20">
+            Re-Align Time
           </button>
         </div>
       ) : (
-        <div className="space-y-4">
-          <div className="text-sm text-stone-400">Question {quizIndex + 1} of {QUIZ_QUESTIONS.length}</div>
-          <div className="bg-stone-800/30 p-4 rounded-xl">
-            <p className="text-stone-200 font-medium">{QUIZ_QUESTIONS[quizIndex].question}</p>
+        <div className="space-y-6 animate-in slide-in-from-right-4 duration-300">
+          <div className="flex justify-between items-center text-[10px] font-black uppercase tracking-widest text-stone-400">
+            <span>{quizIndex + 1} / {QUIZ_QUESTIONS.length}</span>
+            <span className="text-orange-600">Score: {quizScore}</span>
           </div>
+
+          <div className="bg-stone-100/50 dark:bg-stone-800/30 p-6 rounded-[2rem] border border-stone-200/50 dark:border-stone-700/50 min-h-[120px] flex flex-col justify-center">
+            <p className="text-sm font-serif italic text-stone-700 dark:text-stone-300 leading-relaxed">
+               {QUIZ_QUESTIONS[quizIndex].question}
+            </p>
+          </div>
+
           {selectedAnswer === null ? (
-            <div className="space-y-2">
+            <div className="space-y-3">
               {QUIZ_QUESTIONS[quizIndex].options.map((opt, idx) => (
                 <button key={idx} onClick={() => handleAnswer(idx)}
-                  className="w-full text-left p-3 bg-stone-800/20 hover:bg-stone-700/30 border border-stone-700 rounded-xl text-stone-200 text-sm transition-all">
-                  {opt}
+                  className="w-full text-left p-4 bg-white dark:bg-stone-900/40 hover:bg-orange-50 dark:hover:bg-orange-900/10 border border-stone-200 dark:border-stone-800 rounded-2xl transition-all group"
+                >
+                  <span className="text-xs font-medium text-stone-600 dark:text-stone-300 group-hover:text-orange-700 dark:group-hover:text-orange-400 transition-colors leading-relaxed block">{opt}</span>
                 </button>
               ))}
             </div>
           ) : (
-            <div className="space-y-3">
-              <div className={`p-4 rounded-xl border-2 ${selectedAnswer === QUIZ_QUESTIONS[quizIndex].correct ? 'bg-green-900/20 border-green-600' : 'bg-red-900/20 border-red-600'}`}>
-                <div className="font-bold mb-1 text-sm">{selectedAnswer === QUIZ_QUESTIONS[quizIndex].correct ? '✅ Correct' : '❌ Incorrect'}</div>
-                <p className="text-stone-200 text-sm">{QUIZ_QUESTIONS[quizIndex].explanation}</p>
+            <div className="space-y-4 animate-in slide-in-from-bottom-2 duration-300">
+               <div className={`p-5 rounded-3xl border ${selectedAnswer === QUIZ_QUESTIONS[quizIndex].correct ? 'bg-green-500/5 border-green-500/30' : 'bg-red-500/5 border-red-500/30'}`}>
+                <div className="flex items-center gap-2 mb-3">
+                  <div className={`w-6 h-6 rounded-full flex items-center justify-center text-[10px] ${selectedAnswer === QUIZ_QUESTIONS[quizIndex].correct ? 'bg-green-500 text-white' : 'bg-red-500 text-white'}`}>
+                    {selectedAnswer === QUIZ_QUESTIONS[quizIndex].correct ? '✓' : '✗'}
+                  </div>
+                  <span className={`text-[10px] font-black uppercase tracking-widest ${selectedAnswer === QUIZ_QUESTIONS[quizIndex].correct ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400'}`}>
+                    {selectedAnswer === QUIZ_QUESTIONS[quizIndex].correct ? 'Vedic Insight' : 'Temporal Illusion'}
+                  </span>
+                </div>
+                <p className="text-[11px] text-stone-600 dark:text-stone-400 leading-relaxed font-medium">
+                   {QUIZ_QUESTIONS[quizIndex].explanation}
+                </p>
               </div>
+
               <button onClick={nextQuizQuestion}
-                className="w-full py-3 bg-orange-600 hover:bg-orange-500 text-white font-bold rounded-xl transition-all">
-                {quizIndex < QUIZ_QUESTIONS.length - 1 ? 'Next Question' : 'See Results'}
+                className="w-full py-4 bg-stone-900 dark:bg-white text-white dark:text-stone-900 font-black uppercase tracking-widest rounded-2xl transition-all shadow-xl">
+                {quizIndex < QUIZ_QUESTIONS.length - 1 ? 'Next Period' : 'View Epoch Results'}
               </button>
             </div>
           )}
