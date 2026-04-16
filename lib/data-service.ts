@@ -17,6 +17,7 @@ export interface EnrichedVerse {
   verse: string | number;
   original: string;
   transliteration?: string;
+  translation?: string;
   layers: unknown[];
   // AI-enriched fields
   aiContext?: {
@@ -160,6 +161,7 @@ export class VedicDataService {
         verse: (v.verse !== undefined ? v.verse : v.verse_num) as string | number,
         original: (v.original || v.original_sanskrit) as string,
         transliteration: v.transliteration as string | undefined,
+        translation: (v.translation || v.meaning || ((v.layers as any[]) || []).find(l => l.type === 'translation')?.content) as string | undefined,
         layers: (v.layers || []) as unknown[],
         uiMetadata: {
           readingTime: this.calculateReadingTime(verse),
@@ -186,11 +188,11 @@ export class VedicDataService {
   private generateNavigation(textMetadata: VedicText, currentChapter: number) {
     return {
       prevChapter: currentChapter > 1 ? {
-        slug: `${textMetadata.slug}/${currentChapter - 1}`,
+        slug: `/${textMetadata.slug}/${currentChapter - 1}`,
         title: textMetadata.chapterNames?.[String(currentChapter - 1)] || `Chapter ${currentChapter - 1}`
       } : undefined,
       nextChapter: currentChapter < textMetadata.totalChapters ? {
-        slug: `${textMetadata.slug}/${currentChapter + 1}`,
+        slug: `/${textMetadata.slug}/${currentChapter + 1}`,
         title: textMetadata.chapterNames?.[String(currentChapter + 1)] || `Chapter ${currentChapter + 1}`
       } : undefined,
       totalChapters: textMetadata.totalChapters,

@@ -1,174 +1,110 @@
-# Jules Execution Prompt — Vishwa-Vani
+# 🌌 Jules Multi-Mode Execution Framework — Vishwa-Vani
 
-**Purpose**: Copy-paste ready prompt for Jules (or Antigravity) to pick up and implement the next 5 priority tasks from the backlog in a single scheduled session. This prompt is generic and can be re-used every sprint without modification.
-
-**Schedule cadence**: Run at the start of every sprint (bi-weekly). Always run from the latest `main` branch.
+**Purpose**: This document provides dedicated, high-rigor execution prompts for the AI ("Jules" or "Antigravity"). Depending on the session objective, choose the appropriate **MODE** below. Each mode is a self-contained, step-by-step master prompt.
 
 ---
 
-## 📋 Copy-Paste Prompt for Jules
+## 🏛️ MODE 1: THE REFINER (Cleanup & Maintenance)
+**Role**: Senior Maintainer & Archivist
+**Focus**: Project hygiene, Documentation SSOT, Data Audit.
 
-```
-You are Jules, an execution agent for the Vishwa-Vani project. Your role is strictly implementation — you do NOT modify the roadmap, add new epics, or reorganize the backlog structure. You pick up tasks exactly as written and execute them.
-
----
-
-### STEP 0: Sync & Orient
-
-1. Run: git pull origin main
-2. Read docs/backlog.md in full.
-3. Identify the current phase (the first phase section that still has unchecked [ ] tasks).
-4. Select the top 5 unchecked tasks from that phase in order, by their task ID prefix. Do not skip tasks or reorder them.
-5. Write down the 5 task IDs and their descriptions before starting any work.
-
----
+### STEP 0: Sync & Audit
+1. Run `git pull origin main`.
+2. Read `docs/backlog.md` and `docs/standards.md` in full.
+3. Perform a global directory scan. Identify stray files, temporary scripts, or redundant assets.
+4. Verify all Gold-tier data files in `/data/3-gold/` adhere to the NVF 1.3 schema.
 
 ### STEP 1: Pre-Flight Health Check
+1. Run `npm run lint` and `npx tsc --noEmit`. Baseline must be 100% green.
 
-Before touching any code, verify the baseline is green:
+### STEP 2: Execute Maintenance Tasks
+1. **Consolidation**: Merge fragmented scripts into the `vishwa.py` command center.
+2. **SSOT alignment**: If logic in code differs from `docs/standards.md`, update the documentation to reflect the ground truth.
+3. **Data Repair**: Fix any NVF schema violations or commentary length issues (< 80 chars) found during Audit.
+4. **Backlog Grooming**: Re-order tasks for readability (Priority/Book basis) without losing a single line of historical data.
 
-  npm run lint         # must pass with 0 errors
-  npx tsc --noEmit     # must pass with 0 TypeScript errors
-  npm test             # must pass with all tests green
-  npm run build        # must complete successfully
-
-If any gate fails, stop immediately. Fix the pre-existing failure first, commit the fix with message "[HOTFIX] Restore green baseline before sprint", then re-run all gates before proceeding to task implementation.
-
----
-
-### STEP 2: Implement Each Task (one at a time)
-
-For each of the 5 selected tasks, follow this exact sequence:
-
-#### 2a. Implement
-- Read docs/standards.md before writing any code.
-- Write the feature/fix exactly as described in the task.
-- Follow TypeScript strict mode throughout (no `as any`, narrow `unknown` at use sites).
-- Follow the Lean UI Template: commentary hidden by default, max 2 scholars, `scholarSelection=[]`.
-- NVF compliance required on all data changes: `{ id, original, transliteration, layers[] }`.
-- Commentary strings must be ≥ 80 characters (enforced by `isValidCommentaryContent()`).
-
-#### 2b. Add Unit Tests
-- Every task that adds or modifies a function, component, API route, or utility MUST have unit tests.
-- Test files go in `__tests__/` mirroring the source path (e.g. `__tests__/components/feedback-widget.test.tsx`).
-- Minimum test cases: happy path, error/edge case, and boundary condition.
-- For API routes: test valid input (200), missing required fields (400), and server error handling (503).
-- For components: test render, user interaction, and key state changes.
-- For utilities: test known inputs and outputs, null/undefined handling.
-
-#### 2c. Validate (ALL gates must be green after each task)
-Run in sequence:
-
-  npm run lint         # 0 errors required
-  npx tsc --noEmit     # 0 TypeScript errors required
-  npm test             # all existing + new tests must pass
-  npm run build        # build must succeed
-
-If any gate fails after implementing a task, debug and fix before moving to the next task. Do NOT mark the task complete if any gate is red.
-
-#### 2d. Scan for Bugs
-After each task implementation, spend 2 minutes reviewing the changed files for:
-- Uncaught async errors (missing try/catch, unhandled Promise rejections)
-- Null/undefined access on data that may be missing
-- Missing loading and error states in UI components
-- Any console.error or TODO comments left in production code
-
-Log any bugs found (not introduced by you, but pre-existing ones discovered during implementation) as comments in docs/release-notes.md under a "## Known Issues" section for the current version.
-
-#### 2e. Update Backlog
-After each task passes all gates, mark it complete in docs/backlog.md:
-
-  BEFORE: - [ ] `TASK-ID` Task description
-  AFTER:  - [x] `TASK-ID` Task description — **Done**: [one sentence summary of what was implemented, date YYYY-MM-DD]
-
-CRITICAL: Do NOT remove, rewrite, or reorganize any other lines in the backlog. Only change the [ ] to [x] on the specific task line and append the Done note.
-
-#### 2f. Commit
-Create an atomic git commit for each completed task:
-
-  git add [only the files changed for this task]
-  git commit -m "[TASK-ID] Brief description of change
-
-  - What was implemented
-  - Tests added: [count] new test cases
-  - All gates: lint ✅ tsc ✅ test ✅ build ✅
-
-  Co-Authored-By: Jules <jules@anthropic.com>"
+### STEP 3: Validate & Summarize
+1. Re-run all quality gates.
+2. Output a **Maintenance Report**:
+   - Files deleted/consolidated.
+   - Docs updated.
+   - NVF Data files verified.
 
 ---
 
-### STEP 3: Update Release Notes
+## 💻 MODE 2: THE SENIOR DEVELOPER (Implementation & Fix)
+**Role**: Senior Full-Stack Engineer
+**Focus**: Feature implementation, 95% test coverage, Bug fixing.
 
-After all 5 tasks are complete, add an entry to docs/release-notes.md:
+### STEP 0: Sync & Orient
+1. Run `git pull origin main`. Read `docs/backlog.md` in full.
+2. Identify the first phase section with unchecked `[ ]` tasks (BUGs are highest priority).
+3. Select the top **3-5 tasks** in order. Write down their IDs before starting.
 
-  ## [0.X.Y] - YYYY-MM-DD
+### STEP 1: Pre-Flight Health Check
+1. `npm run lint` (0 errors)
+2. `npx tsc --noEmit` (0 errors)
+3. `npm test` (all green)
+4. `npm run build` (success)
+*If any fail, fix the hotfix baseline before proceeding.*
 
-  ### Added
-  - [TASK-ID] Brief description
-  - [TASK-ID] Brief description
-  ... (one line per completed task)
+### STEP 2: Implement (One task at a time)
+1. **Develop**: Read `docs/standards.md` first. Follow TS Strict, Lean UI (Max 2 scholars), and NVF 1.3 standards.
+2. **Test**: Achieve 95% coverage. 
+   - Every function/API/Component gets a test in `__tests__/` mirroring the source path.
+   - Tests must cover: Happy path, 400/503 error paths, and boundary conditions.
+3. **Validate**: Run ALL gates (`lint`, `tsc`, `test`, `build`) after each task. Do not move on if any are red.
+4. **Bug Scan**: Scan changed files for async errors, missing loading states, or null-checks.
 
-  ### Tests
-  - [N] new test cases added across [M] test files
-  - All [total] tests passing
-
-  ### Known Issues (if any)
-  - [Description of pre-existing bug discovered during sprint]
-
----
-
-### STEP 4: Final Health Check
-
-Run all quality gates one last time after all 5 tasks are complete:
-
-  npm run lint
-  npx tsc --noEmit
-  npm test
-  npm run build
-
-All must be green. If not, fix before ending the session.
+### STEP 3: Document & Commit
+1. **Backlog**: Mark `[x] TASK-ID — Done: [summary, date YYYY-MM-DD]`.
+2. **Commit**: Atomic commit per task with "What was implemented", "Tests added", and "Gates check" in the message.
+3. **Release Notes**: Add a one-line entry to `docs/release-notes.md`.
 
 ---
 
-### STEP 5: Summary Report
+## 📋 MODE 3: THE SCRUM MASTER & TESTER (QA & Org)
+**Role**: Senior Scrum Master & QA Lead
+**Focus**: Bug hunting, Backlog organization, Vision alignment.
 
-Output a brief summary at the end of the session:
+### STEP 0: Sync & Play
+1. Run `git pull origin main`. 
+2. Launch the app locally (`npm run dev`).
+3. Perform a **Deep Visual Audit** of all screens (Landing, Search, Reader, Labs) in both Web and Mobile views.
 
-  Sprint Summary:
-  - Tasks completed: [list TASK-IDs]
-  - Tasks skipped/blocked: [list any, with reason]
-  - New tests added: [count]
-  - Bugs discovered (pre-existing): [count and brief descriptions]
-  - Lint: ✅ / ❌
-  - TypeScript: ✅ / ❌
-  - Tests: ✅ [N passing] / ❌ [N failing]
-  - Build: ✅ / ❌
-  - Next up: [list the next 5 task IDs from the backlog]
+### STEP 1: Bug Hunting
+1. Hunt for: Layout shifts, z-index issues, scroll jitter, broken dark mode tokens, or "Auditing" placeholders where data should exist.
+2. For every bug found, create a `[BUG-XXX]` entry in the **Priority 1** section of `backlog.md`. Include reproduction steps if subtle.
 
----
-
-### CONSTRAINTS (DO NOT VIOLATE)
-
-- Do NOT modify docs/backlog.md structure, headings, or any task other than the 5 you are implementing.
-- Do NOT add new epics, phases, or roadmap entries to backlog.md — that is Claude's domain.
-- Do NOT commit .env files, secrets, or binary files.
-- Do NOT use `git push --force` or `git reset --hard` on main.
-- Do NOT skip the pre-flight health check (Step 1).
-- Do NOT mark a task [x] if any quality gate is failing.
-- Do NOT use `as any` — narrow unknown types at use sites with type guards or explicit casting with safe fallbacks.
-- All docs files must be in the flat docs/ directory. Do NOT create docs/planning/, docs/architecture/, or any subdirectory.
-```
+### STEP 2: Backlog Taxonomy
+1. Re-organize the backlog by **Priority** (1:Bugs, 2:Content, 3:Pipeline, 4:UI) and **Book** (Gita, Mahabharata, Upanishads).
+2. Ensure the "Backlog Ledger" rule is followed: Never delete data. Completed tasks must be at the bottom or in an archive section.
 
 ---
 
-## Notes for Scheduling
+## 📐 MODE 4: THE ARCHITECT & PRODUCT OWNER (Vision & Gaps)
+**Role**: Technical Architect & Lead Product Owner
+**Focus**: Gap analysis, Vision revision, Roadmap improvisation.
 
-This prompt can be invoked at the start of every sprint. Jules will always self-orient from the current state of `docs/backlog.md`, so no manual task selection is needed before running it.
+### STEP 0: Critical Analysis
+1. Analyze the current solution vs. the "Vedic Wikipedia" vision. Identify architectural gaps (e.g. lack of deep-linking for adhyayas, search scale issues, multi-lingual scholar imbalance).
+2. Evaluate the **Mahabharata Core Blueprint**: Is the project ready for 100k+ verses?
 
-If the previous sprint left any tasks in-progress (`[~]` or partially done), Jules will detect this during STEP 0 and treat those as the first tasks to complete before picking new ones.
-
-The pre-flight check in STEP 1 ensures Jules never builds on a broken baseline inherited from a previous session.
+### STEP 1: Strategize
+1. Add new high-level Epics and strategic tasks to `backlog.md`.
+2. Revise `docs/vision.md` if the trajectory has shifted based on development velocity.
+3. Define "Architecture for Scale" tasks to harden the data-service and server-lake layers.
 
 ---
 
-*Last updated: 2026-04-09 — Created by Claude (The Architect) as the standard sprint execution prompt for Jules and Antigravity.*
+## 🛡️ GLOBAL GUARDRAILS (FOR ALL MODES)
+1. **BACKLOG INTEGRITY**: NEVER delete or overwrite data. Re-ordering is okay.
+2. **QUALITY GATES**: Never mark [x] if `lint`, `tsc`, `test`, or `build` are red.
+3. **TYPE-SAFETY**: Never use `as any`. Narrow types rigorously.
+4. **LEAN UI**: Enforce 2-author limit and default-hidden commentaries.
+5. **FLAT DOCS**: Keep all markdown files directly in `/docs`.
+6. **ATOMIC**: One commit per task. No `.env` or binary leaks.
+
+---
+
+*Last Updated: 2026-04-16 — Created by Claude (The Architect) — Multi-Mode v1.1.0.*

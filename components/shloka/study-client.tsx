@@ -130,13 +130,7 @@ export default function StudyClient({
       })
     })
 
-    const chosenAuthors = PREFERRED_SCHOLARS.filter(a => baseAuthors.has(a))
-    if (chosenAuthors.length === 0) {
-      chosenAuthors.push(...Array.from(baseAuthors).slice(0, 2))
-    }
-
-    // Enforce exactly 2 authors max in the Lean UI (plus 'none')
-    const scholars = new Set<string>(['none', ...chosenAuthors.slice(0, 2)])
+    const scholars = new Set<string>(['none', ...Array.from(baseAuthors)])
     return Array.from(scholars)
   }, [verses])
 
@@ -346,18 +340,21 @@ export default function StudyClient({
   }
 
   const toggleScholar = (author: string) => {
-    let newSelection = [...scholarSelection]
+    let newSelection = [...scholarSelection].filter(s => s !== 'none')
     if (newSelection.includes(author)) {
       newSelection = newSelection.filter(a => a !== author)
     } else {
-      // Lean template: max 2 authors
+      // Max 2 authors (irrespective of language)
       if (newSelection.length < 2) {
         newSelection.push(author)
       } else {
-        // Replace the first one with the new author
-        newSelection[0] = author
+        // Replace oldest valid selection
+        newSelection = [newSelection[1], author]
       }
     }
+    // Final check for 'none' fallback
+    if (newSelection.length === 0) newSelection = ['none']
+
     setScholarSelection(newSelection)
     localStorage.setItem('vishwa_scholar_pref', JSON.stringify(newSelection))
   }
@@ -521,16 +518,21 @@ export default function StudyClient({
 
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 relative z-10">
 
-          {/* 3-column header row: back | title | nav */}
-          <div className="grid grid-cols-[auto_1fr_auto] items-center gap-3">
+          {/* 3-column header row: back | title | nav — Optimized for mobile with flex-shifting */}
+          <div className="flex flex-col lg:grid lg:grid-cols-[200px_1fr_200px] items-center gap-4 lg:gap-3 py-1">
 
-            {/* LEFT — back to library */}
-            <Link
-              href="/"
-              className="text-[10px] font-bold uppercase tracking-[0.3em] text-orange-500 hover:text-orange-600 transition-colors flex items-center gap-1 whitespace-nowrap"
-            >
-              &larr; Library
-            </Link>
+            <div className="flex w-full justify-between items-center lg:justify-start">
+              <Link
+                href="/"
+                className="text-[10px] font-bold uppercase tracking-[0.3em] text-orange-500 hover:text-orange-600 transition-colors flex items-center gap-1 whitespace-nowrap"
+              >
+                &larr; Library
+              </Link>
+              {/* Mobile next/prev shorthand */}
+              <div className="flex lg:hidden items-center gap-2">
+                <HierarchicalNav levels={navLevels} />
+              </div>
+            </div>
 
             {/* CENTER — book title */}
             <div className="flex flex-col items-center justify-center text-center min-w-0 px-2">
@@ -550,8 +552,8 @@ export default function StudyClient({
               )}
             </div>
 
-            {/* RIGHT — chapter nav + prev/next */}
-            <div className="flex items-center gap-1.5 flex-shrink-0">
+            {/* RIGHT — chapter nav + prev/next (hidden on mobile header top row, handled by HierarchicalNav middle column instead or right column) */}
+            <div className="hidden lg:flex items-center gap-1.5 flex-shrink-0 justify-end">
               <button
                 onClick={() => router.push(`/${textSlug}/${Math.max(1, chapter - 1)}`)}
                 disabled={chapter === 1}
@@ -579,7 +581,7 @@ export default function StudyClient({
         <div className="max-w-[1400px] mx-auto px-3 sm:px-6 flex flex-row items-center justify-between py-2 gap-2">
 
           {/* Left group — progress + scholars + language */}
-          <div className="flex items-center gap-2 min-w-0 overflow-x-auto">
+          <div className="flex items-center gap-3 min-w-0 overflow-x-auto pb-1 sm:pb-0 scrollbar-none">
 
             {/* Progress indicator */}
             <div className="flex items-center px-2 py-0.5 bg-stone-100 dark:bg-stone-800 rounded-full text-[10px] sm:text-[11px] font-medium text-stone-500 dark:text-stone-400 flex-shrink-0">
@@ -591,10 +593,11 @@ export default function StudyClient({
             {/* Divider */}
             <div className="hidden sm:block w-px h-4 bg-stone-200 dark:bg-stone-700 flex-shrink-0" />
 
-            {/* Author selector - Lean template: checkboxes for up to 2 authors */}
-            <div className="flex items-center gap-1.5 flex-shrink-0">
+            {/* Scholar selector prominence */}
+            <div className="flex items-center gap-2 flex-shrink-0">
+              <span className="text-[10px] font-black uppercase tracking-widest text-orange-500/60 dark:text-orange-400/40 hidden xs:inline">Commentary</span>
               <div className="flex gap-1" role="group" aria-label="Scholar Selection">
-                {availableScholars.filter(s => s !== 'none').slice(0, 3).map((author, _idx, _arr) => {
+                {availableScholars.filter(s => s !== 'none').map((author, _idx, _arr) => {
                   const meta = getScholarMeta(author)
                   const isSelected = scholarSelection.includes(author)
                   return (
@@ -675,16 +678,7 @@ export default function StudyClient({
               </button>
             )}
 
-            {/* AI Synthesis button */}
-            <button
-              onClick={synthesizeEntireChapter}
-              disabled={isChapterSynthesizing}
-              aria-label={isChapterSynthesizing ? "Analysing chapter..." : "Generate AI Synthesis for entire chapter"}
-              className="hidden sm:flex flex-shrink-0 items-center gap-1.5 px-3 py-1.5 bg-stone-900 dark:bg-stone-700 hover:bg-orange-600 dark:hover:bg-orange-600 text-white text-[11px] font-bold rounded-full transition-all disabled:opacity-60 focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:outline-none"
-            >
-              <span>{isChapterSynthesizing ? '✨' : '🧠'}</span>
-              <span className="hidden md:inline">{isChapterSynthesizing ? 'Analysing...' : 'AI Analysis'}</span>
-            </button>
+            {/* AI Synthesis button - DISABLED */}
           </div>
         </div>
       </div>
@@ -723,13 +717,8 @@ export default function StudyClient({
             return av - bv
           }).map((verse: unknown) => {
             const v = verse as Record<string, unknown>
-            // Find the best "translation/meaning" layer — any English layer that's a translation, or fall back to meaning field
-            const layers = v.layers as unknown[]
-            const meaningLayer = layers?.find((l: unknown) => {
-              const layer = l as Record<string, unknown>
-              return layer.type === 'translation' && layer.lang === 'en'
-            }) as Record<string, unknown> | undefined
-            const meaning = String(meaningLayer?.content || v.meaning || v.translation || '')
+            const layers = (v.layers || []) as any[]
+            const meaning = String(v.translation || '')
 
             // Commentary layers — filter by selected scholar base key and language (Lean template: only show if explicitly selected)
             const candidateCommentaries = layers?.filter((l: unknown) => {
@@ -844,7 +833,7 @@ export default function StudyClient({
 
                 {/* English translation — always shown as default base layer */}
                 {(() => {
-                  const baseTranslation = String(v.translation || v.meaning || meaning || '').trim()
+                  const baseTranslation = String(v.translation || '').trim()
                   if (!baseTranslation) return (
                     <div className="px-4 sm:px-6 py-4 sm:py-5 border-b border-stone-50 dark:border-stone-800/30">
                       <p className="text-[10px] font-black uppercase tracking-widest text-stone-400 dark:text-stone-500 mb-2">Translation</p>
@@ -853,7 +842,7 @@ export default function StudyClient({
                   )
                   return (
                     <div className="px-4 sm:px-6 py-4 sm:py-8 border-b border-stone-50 dark:border-stone-800/30 bg-white dark:bg-stone-900/10">
-                      <p className="text-[10px] font-black uppercase tracking-widest text-orange-500 dark:text-orange-600 mb-3 ml-0.5">English Translation</p>
+                      <p className="text-[10px] font-black uppercase tracking-widest text-orange-500 dark:text-orange-600 mb-3 ml-0.5">Universal Translation</p>
                       <p className="text-stone-800 dark:text-stone-100 leading-relaxed text-[15px] sm:text-[17px] font-serif font-medium break-words overflow-wrap-anywhere">
                         {cleanText(baseTranslation)}
                       </p>
@@ -914,7 +903,7 @@ export default function StudyClient({
                       ))
                     })()}
                   </div>
-                ) : (scholarSelection.length > 0 && (
+                ) : (scholarSelection.length > 0 && !scholarSelection.includes('none') && (
                   <div className="px-4 sm:px-6 py-4 bg-stone-50/50 dark:bg-stone-800/20">
                     <p className="text-[10px] text-stone-400 dark:text-stone-500 font-bold italic tracking-wide">
                       Commentary unavailable for selected scholar(s) in {getLanguageLabel(languageSelection).toLowerCase()}. 
@@ -931,10 +920,6 @@ export default function StudyClient({
                   />
                 ) : null}
 
-                {/* Contextual micro-app suggestions (APP-703) */}
-                <div className="px-5 sm:px-6 pb-4">
-                  <VerseAppLinks bookSlug={textSlug} chapter={chapter} />
-                </div>
               </article>
             )
           })}
@@ -942,42 +927,16 @@ export default function StudyClient({
           
           {/* Desktop Sidebar (UI-715) */}
           <aside className="hidden xl:block w-[320px] flex-shrink-0 sticky top-24 space-y-4 pt-12">
+            
+            {/* Contextual interactive tools (Dynamic Tags) */}
             <div className="bg-white dark:bg-[#121212] rounded-2xl border border-stone-200 dark:border-stone-800 p-6 shadow-sm">
-              <h3 className="text-[10px] font-black uppercase tracking-widest text-stone-400 dark:text-stone-500 mb-5">Explore Vedic Labs</h3>
-              <div className="space-y-4">
-                <Link href="/lab" className="block p-3 rounded-xl border border-stone-100 hover:border-orange-300 dark:border-stone-700 dark:hover:border-orange-500 hover:bg-orange-50 dark:hover:bg-orange-950/20 transition-all group">
-                  <div className="flex items-center gap-3">
-                    <span className="text-xl">🪷</span>
-                    <div>
-                      <div className="text-xs font-bold text-stone-700 dark:text-stone-300 group-hover:text-orange-600 dark:group-hover:text-orange-400">Pranayama Timer</div>
-                      <div className="text-[10px] text-stone-400 mt-0.5">Focus and breathe before reading</div>
-                    </div>
-                  </div>
-                </Link>
-                <Link href="/lab" className="block p-3 rounded-xl border border-stone-100 hover:border-orange-300 dark:border-stone-700 dark:hover:border-orange-500 hover:bg-orange-50 dark:hover:bg-orange-950/20 transition-all group">
-                  <div className="flex items-center gap-3">
-                    <span className="text-xl">🐘</span>
-                    <div>
-                      <div className="text-xs font-bold text-stone-700 dark:text-stone-300 group-hover:text-orange-600 dark:group-hover:text-orange-400">Akshauhini Engine</div>
-                      <div className="text-[10px] text-stone-400 mt-0.5">Explore Mahabharata scale</div>
-                    </div>
-                  </div>
-                </Link>
-                <Link href="/lab" className="block p-3 rounded-xl border border-stone-100 hover:border-orange-300 dark:border-stone-700 dark:hover:border-orange-500 hover:bg-orange-50 dark:hover:bg-orange-950/20 transition-all group">
-                  <div className="flex items-center gap-3">
-                    <span className="text-xl">🐚</span>
-                    <div>
-                      <div className="text-xs font-bold text-stone-700 dark:text-stone-300 group-hover:text-orange-600 dark:group-hover:text-orange-400">Shankha Soundboard</div>
-                      <div className="text-[10px] text-stone-400 mt-0.5">Sacred instruments of heroes</div>
-                    </div>
-                  </div>
-                </Link>
-              </div>
+               <h3 className="text-[10px] font-black uppercase tracking-widest text-stone-400 dark:text-stone-500 mb-4">Interactive Tools</h3>
+               <VerseAppLinks bookSlug={textSlug} chapter={chapter} />
             </div>
             <div className="bg-orange-50/50 dark:bg-orange-950/10 rounded-2xl border border-orange-100 dark:border-orange-900/30 p-5 text-center">
               <span className="text-2xl mb-2 block">🧠</span>
               <p className="text-[11px] font-bold text-orange-800 dark:text-orange-400 mb-1 tracking-wide">Vishwa-Vani Cognitive UI</p>
-              <p className="text-[10px] text-orange-600/70 dark:text-orange-500/70">Click 'AI Analysis' to synthesize all visible verses into a unified philosophical summary.</p>
+              <p className="text-[10px] text-orange-600/70 dark:text-orange-500/70">Secure AI Synthesis is coming soon. Authenticated users will be able to synthesize all verses into unified philosophical summaries.</p>
             </div>
           </aside>
         </div>
