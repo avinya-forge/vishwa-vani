@@ -223,7 +223,7 @@ export default function StudyClient({
   const defaultLanguage = 'all'
 
   const [scholarSelection, setScholarSelection] = useState<string[]>([])
-  const [languageSelection, setLanguageSelection] = useState<string>(defaultLanguage)
+  const [languageSelection, setLanguageSelection] = useState<string>('en') // Default to 'en' per user request
   const [activeAdhyaya, setActiveAdhyaya] = useState<number>(currentAdhyaya || 1)
   const [bookmarks, setBookmarks] = useState<string[]>([])
   const [visitedChapters, setVisitedChapters] = useState<Set<number>>(new Set())
@@ -533,12 +533,12 @@ export default function StudyClient({
             </Link>
 
             {/* CENTER — book title */}
-            <div className="flex flex-col items-center justify-center text-center min-w-0">
-              <h1 className="text-base sm:text-lg font-serif font-bold text-stone-800 dark:text-stone-100 tracking-wide uppercase leading-tight truncate max-w-full">
+            <div className="flex flex-col items-center justify-center text-center min-w-0 px-2">
+              <h1 className="text-sm sm:text-base md:text-lg font-serif font-black text-stone-800 dark:text-stone-100 tracking-wide uppercase leading-tight line-clamp-1 sm:truncate max-w-full">
                 {bookData?.name || textSlug}
               </h1>
               {bookData?.chapterNames?.[String(chapter)] && (
-                <p className="text-[10px] font-medium text-stone-400 dark:text-stone-500 mt-0.5 tracking-wide truncate max-w-full">
+                <p className="text-[9px] sm:text-[10px] font-bold text-stone-400 dark:text-stone-500 mt-0.5 tracking-[0.1em] uppercase line-clamp-1 sm:truncate max-w-full">
                   {bookData.chapterNames[String(chapter)]}
                 </p>
               )}
@@ -592,10 +592,9 @@ export default function StudyClient({
             <div className="hidden sm:block w-px h-4 bg-stone-200 dark:bg-stone-700 flex-shrink-0" />
 
             {/* Author selector - Lean template: checkboxes for up to 2 authors */}
-            <div className="flex items-center gap-1 flex-shrink-0">
-              <span className="text-[10px] font-bold uppercase tracking-widest text-stone-400 dark:text-stone-500 whitespace-nowrap hidden md:inline" data-testid="scholars-counter">Scholars {scholarSelection.length}/2</span>
+            <div className="flex items-center gap-1.5 flex-shrink-0">
               <div className="flex gap-1" role="group" aria-label="Scholar Selection">
-                {availableScholars.filter(s => s !== 'none').slice(0, 5).map((author, index, arr) => {
+                {availableScholars.filter(s => s !== 'none').slice(0, 3).map((author, _idx, _arr) => {
                   const meta = getScholarMeta(author)
                   const isSelected = scholarSelection.includes(author)
                   return (
@@ -606,36 +605,18 @@ export default function StudyClient({
                       aria-checked={isSelected}
                       aria-label={`Toggle commentary by ${meta.label}`}
                       onClick={() => toggleScholar(author)}
-                      onKeyDown={(e) => {
-                        if (e.key === 'Enter' || e.key === ' ') {
-                          e.preventDefault()
-                          toggleScholar(author)
-                        } else if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
-                          e.preventDefault()
-                          const nextIdx = (index + 1) % arr.length
-                          document.getElementById(`scholar-btn-${arr[nextIdx]}`)?.focus()
-                        } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
-                          e.preventDefault()
-                          const prevIdx = (index - 1 + arr.length) % arr.length
-                          document.getElementById(`scholar-btn-${arr[prevIdx]}`)?.focus()
-                        }
-                      }}
-                      className={`px-2 py-1 rounded border text-[11px] font-medium transition-all flex-shrink-0 focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:outline-none ${
+                      className={`px-3 py-1.5 rounded-xl border text-[11px] font-bold transition-all flex-shrink-0 flex items-center gap-2 ${
                         isSelected
-                          ? 'bg-orange-100 dark:bg-orange-950/50 border-orange-300 dark:border-orange-700 text-orange-700 dark:text-orange-400'
-                          : 'bg-white dark:bg-stone-800 border-stone-200 dark:border-stone-700 text-stone-600 dark:text-stone-400 hover:border-orange-300 hover:bg-orange-50 dark:hover:bg-orange-950/30'
+                          ? 'bg-orange-600 border-orange-600 text-white shadow-lg shadow-orange-200 dark:shadow-none'
+                          : 'bg-white dark:bg-stone-800 border-stone-200 dark:border-stone-700 text-stone-600 dark:text-stone-400 font-black'
                       }`}
-                      title={isSelected ? `Deselect ${meta.label}` : scholarSelection.length >= 2 ? `Replace oldest with ${meta.label}` : meta.bio}
                     >
-                      <span>{meta.icon}</span>
-                      <span className="hidden md:inline ml-1 text-[10px]">{meta.label}</span>
+                      <span className="text-xs">{meta.icon}</span>
+                      <span className="hidden xs:inline text-[9px] uppercase tracking-tighter">{meta.label}</span>
                     </button>
                   )
                 })}
               </div>
-              {availableScholars.filter(s => s !== 'none').length > 5 && (
-                <span className="text-[10px] text-stone-400">+{availableScholars.filter(s => s !== 'none').length - 5}</span>
-              )}
             </div>
 
             {/* Divider */}
@@ -864,11 +845,16 @@ export default function StudyClient({
                 {/* English translation — always shown as default base layer */}
                 {(() => {
                   const baseTranslation = String(v.translation || v.meaning || meaning || '').trim()
-                  if (!baseTranslation) return null
-                  return (
+                  if (!baseTranslation) return (
                     <div className="px-4 sm:px-6 py-4 sm:py-5 border-b border-stone-50 dark:border-stone-800/30">
-                      <p className="text-[10px] font-black uppercase tracking-widest text-orange-400 dark:text-orange-500 mb-2">Translation</p>
-                      <p className="text-stone-700 dark:text-stone-300 leading-relaxed text-sm sm:text-[15px] font-medium break-words overflow-wrap-anywhere">
+                      <p className="text-[10px] font-black uppercase tracking-widest text-stone-400 dark:text-stone-500 mb-2">Translation</p>
+                      <p className="text-stone-400 italic text-xs">Translation data is currently being audited for this verse.</p>
+                    </div>
+                  )
+                  return (
+                    <div className="px-4 sm:px-6 py-4 sm:py-8 border-b border-stone-50 dark:border-stone-800/30 bg-white dark:bg-stone-900/10">
+                      <p className="text-[10px] font-black uppercase tracking-widest text-orange-500 dark:text-orange-600 mb-3 ml-0.5">English Translation</p>
+                      <p className="text-stone-800 dark:text-stone-100 leading-relaxed text-[15px] sm:text-[17px] font-serif font-medium break-words overflow-wrap-anywhere">
                         {cleanText(baseTranslation)}
                       </p>
                     </div>

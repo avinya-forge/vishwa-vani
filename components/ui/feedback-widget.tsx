@@ -68,11 +68,14 @@ export default function FeedbackWidget() {
     <>
       <button
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-6 right-6 bg-orange-600 hover:bg-orange-700 text-white rounded-full p-3 shadow-lg z-50 transition-transform hover:scale-105 flex items-center justify-center"
+        className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 bg-orange-600 hover:bg-orange-700 text-white rounded-full p-2.5 sm:p-3 shadow-lg z-50 transition-transform hover:scale-105 flex items-center justify-center border-2 border-white/20"
         aria-label="Report an issue or give feedback"
         title="Report an issue or give feedback"
       >
-        <span className="text-xl px-2">💬 Feedback</span>
+        <span className="text-sm sm:text-lg px-1 sm:px-2 flex items-center gap-2">
+          <span>💬</span>
+          <span className="hidden xs:inline font-bold uppercase tracking-widest text-[10px] sm:text-xs">Feedback</span>
+        </span>
       </button>
 
       {isOpen && (
@@ -86,7 +89,8 @@ export default function FeedbackWidget() {
               ✕
             </button>
 
-            <h2 className="text-2xl font-devanagari font-bold text-orange-900 dark:text-orange-400 mb-4">Feedback</h2>
+            <h2 className="text-2xl font-devanagari font-bold text-orange-900 dark:text-orange-400 mb-1">Feedback</h2>
+            <p className="text-[10px] text-stone-400 dark:text-stone-500 mb-4 font-bold uppercase tracking-widest">Feedback is tracked as GitHub Issues</p>
 
             {status === 'success' ? (
               <div className="bg-green-50 dark:bg-green-950/50 border border-green-200 dark:border-green-900 text-green-800 dark:text-green-300 p-4 rounded-lg">

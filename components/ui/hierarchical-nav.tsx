@@ -57,7 +57,7 @@ export default function HierarchicalNav({ levels }: { levels: LevelData[] }) {
             </button>
 
             {activeDropdown === level.id && (
-              <div className="absolute top-full left-0 mt-1.5 w-72 bg-white dark:bg-stone-900 border border-stone-100 dark:border-stone-800 rounded-xl shadow-xl shadow-stone-200/50 dark:shadow-none overflow-hidden animate-in fade-in slide-in-from-top-1 duration-150 z-[100]">
+              <div className="absolute top-full left-0 mt-1.5 w-[280px] xs:w-72 bg-white dark:bg-stone-900 border border-stone-100 dark:border-stone-800 rounded-xl shadow-xl shadow-stone-200/50 dark:shadow-none overflow-hidden animate-in fade-in slide-in-from-top-1 duration-150 z-[100]">
                 <div className="px-4 py-2 bg-stone-50/50 dark:bg-stone-950/30 border-b border-stone-100 dark:border-stone-800 flex justify-between items-center">
                    <span className="text-[10px] font-black uppercase tracking-[0.2em] text-stone-400 dark:text-stone-500">{level.name} Selection</span>
                 </div>
