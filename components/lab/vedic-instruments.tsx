@@ -17,7 +17,7 @@ export default function VedicInstruments() {
   const [isPlaying, setIsPlaying] = useState(false)
   const audioContext = useRef<AudioContext | null>(null)
   const oscillator = useRef<OscillatorNode | null>(null)
-  const gainNode = useRef<GainNode | null>(null)
+  const _gainNode = useRef<GainNode | null>(null)
 
   useEffect(() => {
     return () => {
