@@ -35,6 +35,8 @@ Our primary objective is to take raw, disparate textual fragments (scanned scrol
 5. **NVF (Normalized Vedic Fragment)**: Frozen, standardized JSON schema `{ id, original, transliteration, layers[] }` enabling high-performance inference, cross-scripture search, and dynamic app integration.
 6. **Inter-Book Reasoning**: Clean data allows AI to perform "Cross-Scripture Tattva Analysis" linking concepts across Vedas, Gita, and Puranas automatically.
 7. **Zero-Touch UI**: Auto-registers books as soon as they are "Frozen" in the data lake — no code changes needed.
+8. **Server-Lake Layer**: Handle massive datasets (like Mahabharata with 100k+ verses) via edge-hosted SQLite WASM to provide rapid query performance without main-thread jank or heavy CDN payloads.
+9. **Semantic Deep-Linking Protocol**: Build highly resilient, AI-ready global linkage models across the entire text corpus, enabling deep and structured thematic navigation across 15+ ancient texts.
 
 ## 🏔 Ideal State & North Star
 
@@ -61,12 +63,12 @@ Vishwa-Vani operates under a strict, AI-driven division of labor:
 5. **Backlog is an Append Ledger**: `docs/backlog.md` only grows — never overwrites, never loses completed items.
 6. **Quality Gate Blocking**: No commit proceeds if lint, tsc, test, or build fail.
 
-## 📊 Current State (v0.9.6 — 2026-04-09)
+## 📊 Current State (v1.0.0-beta — 2026-04-17)
 
 **Live content**: Bhagavad Gita (18 chapters, full), Mahabharata Adi/Sabha/Vana Parvas (3/18), Isha Upanishad (10 verses, partial).  
-**Current phase**: PHASE 0 — Deployment Foundation (deploying to Vercel with CI/CD pipeline).  
+**Current phase**: PHASE 3 — Architecture for Scale & Scholarship Expansion (Deploying SQLite WASM edge edge layer and improving semantic linkages).
 **Test coverage**: 155 passing, 2 pre-existing failures (known, tracked in backlog).  
 **TypeScript**: 0 errors. ESLint: 33 pre-existing violations tracked in backlog (INFRA-007).  
-**Next milestone**: Live Vercel deployment with health check, beta user onboarding, feedback widget.
+**Next milestone**: Edge-hosted SQLite data ingestion architecture for Mahabharata scale and integration of Semantic Deep-Linking Protocol.
 
-_Last updated: 2026-04-09 — Claude (The Architect), SDLC v5.0_
+_Last updated: 2026-04-17 — Claude (The Architect), SDLC v5.1_

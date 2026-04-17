@@ -45,7 +45,7 @@ export default function SearchClient() {
   }, [query])
 
   const filteredResults = useMemo(() => {
-    let base = [...results]
+    const base = [...results]
     
     // BUG-028: Natural sort by text, chapter, verse
     base.sort((a, b) => {

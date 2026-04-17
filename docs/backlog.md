@@ -68,6 +68,17 @@ This is the single authoritative ledger for Vishwa-Vani progress. It is organize
 
 ---
 
+## 🏛️ EPIC: ARCHITECTURE FOR SCALE & HARDENING (100K+ VERSES)
+
+*Goal: Evolve the data-service and server-lake layers for Mahabharata-scale (100k+ verses) and establish a semantic deep-linking protocol.*
+
+- [ ] `ARCH-001` **Server-Lake Edge Strategy**: Implement edge-hosted SQLite WASM for Mahabharata scale to prevent memory exhaustion and offload the main thread.
+- [ ] `ARCH-002` **Semantic Deep-Linking Protocol**: Build a resilient, global verse-linking system enabling "Cross-Scripture Tattva Analysis" logic to route effectively across all 15+ texts.
+- [ ] `ARCH-003` **Type-Safe Data Fallbacks**: Harden the `VedicDataService` and UI schema interfaces to support rigorous type narrowing and eliminate all implicit `any` patterns during JSON-to-NVF parsing.
+- [ ] `ARCH-004` **Edge-Cached Semantic Search**: Design the integration pathway for Cloudflare Workers AI embedding endpoints for fast, semantic search across the entire structured dataset.
+
+---
+
 ## 📜 HISTORICAL TASK ARCHIVE (Preservation Ledger)
 
 ### PHASE 0: DEPLOYMENT FOUNDATION
