@@ -61,6 +61,15 @@ This is the single authoritative ledger for Vishwa-Vani progress. It is organize
 
 ---
 
+
+## 🗺️ EPIC: THE VEDIC WIKIPEDIA VISION REVISION
+
+*Goal: Align current architecture with the long-term Vedic Wikipedia vision by closing gaps in deep-linking, search, and UI/data balance.*
+
+- [ ] `VISION-001` **Ontological Linkage Blueprint**: Design a graph-based or relational schema to support "Semantic Deep-Linking" beyond hierarchical routing (e.g., Tattva to Shloka mappings across texts).
+- [ ] `VISION-002` **Search Scalability Prototype**: Prototype edge-cached, vector-based semantic search integration (via Cloudflare Workers AI) to bypass client-side limitations for 100k+ verses.
+- [ ] `VISION-003` **Scholar Curation Strategy**: Finalize the acquisition roadmap for 10+ scholars while explicitly defining the subset rules for the "Max 2" Lean UI presentation.
+
 ## 🔬 EPIC: VEDIC LABS & AI DISCOVERY
 
 - [ ] `LAB-AI-001` **Gita Chapter Audit**: Run LLM pass to discover 50+ new lab opportunities.
@@ -76,6 +85,11 @@ This is the single authoritative ledger for Vishwa-Vani progress. It is organize
 - [ ] `ARCH-002` **Semantic Deep-Linking Protocol**: Build a resilient, global verse-linking system enabling "Cross-Scripture Tattva Analysis" logic to route effectively across all 15+ texts.
 - [ ] `ARCH-003` **Type-Safe Data Fallbacks**: Harden the `VedicDataService` and UI schema interfaces to support rigorous type narrowing and eliminate all implicit `any` patterns during JSON-to-NVF parsing.
 - [ ] `ARCH-004` **Edge-Cached Semantic Search**: Design the integration pathway for Cloudflare Workers AI embedding endpoints for fast, semantic search across the entire structured dataset.
+
+- [ ] `ARCH-005` **Web Worker Query Hardening**: Enforce strict type-safety boundaries between the main thread UI and the Web Worker executing SQLite WASM queries, completely eliminating implicit `any` usage.
+- [ ] `ARCH-006` **Lean UI Data-Service Enforcement**: Refactor the data-service layer to dynamically prune scholar payloads, guaranteeing that the UI receives a maximum of 2 scholars per verse to maintain the Lean UI principle, regardless of the underlying 10+ scholar dataset.
+- [ ] `ARCH-007` **Data Sharding Refinement**: Implement intermediate aggregate shards (e.g., Parva-level summaries) to accelerate the Server-Lake layer's hydration of SQLite without stalling on 100k independent verse reads.
+- [ ] `ARCH-008` **Cross-Scripture Index Modeling**: Design the SQLite table indices required to execute real-time cross-scripture queries (e.g., linking Upanishad concepts directly to Gita verses) at the edge.
 
 ---
 

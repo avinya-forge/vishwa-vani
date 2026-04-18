@@ -5,6 +5,19 @@ Vishwa-Vani is an **AI-First Engine** designed to transform the world's unstruct
 ## 🏛️ Project Identity: The Vedic Wikipedia
 Building the **Vedic Wikipedia**: A transcendent, multilingual, and friction-free digital sanctuary for exploring Vedic wisdom. Vishwa-Vani provides an immersive, highly performant, and deeply interconnected experience of Shlokas, Mantras, and Sanskrit definitions across languages — English, Hindi, and Marathi.
 
+## 🔍 Critical Analysis & Scalability Readiness
+
+**Assessment: Solution vs. "Vedic Wikipedia" Vision**
+While the current U2S pipeline successfully ingests and renders standard texts like the Gita, a critical gap analysis reveals significant hurdles in fully realizing the "Vedic Wikipedia" vision:
+- **Semantic Deep-Linking Gap:** The current routing is strictly hierarchical (Book → Chapter → Verse). We lack a global ontological linkage map that allows users to traverse themes (e.g., "Dharma") seamlessly across the Gita, Upanishads, and Mahabharata.
+- **Search Scale Bottlenecks:** Simple client-side filtering works for a 700-verse Gita but fails catastrophically for semantic discovery across 100k+ verses. The vision demands edge-cached, vector-based semantic search.
+- **Scholar Imbalance & Lean UI Drift:** The platform aims for 10+ scholars, yet our Lean UI principle mandates a strict "Max 2" scholar view to prevent cognitive overload. We lack a robust, type-safe data-service layer to dynamically enforce this 2-author limit while still providing the full 10-scholar dataset for search and AI reasoning.
+
+**Scalability: Mahabharata Core Blueprint Readiness (100k+ verses)**
+The current static JSON sharding strategy is insufficient for the Mahabharata.
+- **The Threat:** Loading 100k verses via JSON shards will cause main-thread memory exhaustion, massive CDN payloads, and severe UI jank.
+- **The Solution:** The architecture must evolve to a **Server-Lake Layer** using edge-hosted **SQLite WASM** isolated within Web Workers. This enables rapid, off-thread querying and type-safe data hydration without blocking the UI rendering cycle.
+
 ## 🚀 Core Mission: Unstructured-to-Structured (U2S)
 Our primary objective is to take raw, disparate textual fragments (scanned scrolls, unstructured PDFs, web-shards) and process them through the **Vishwa ADF (Autonomous Data Factory)** until they are "Frozen" as **NVF 1.3** production-grade data accessible through a live, publicly reachable product.
 
@@ -66,7 +79,7 @@ Vishwa-Vani operates under a strict, AI-driven division of labor:
 ## 📊 Current State (v1.0.0-beta — 2026-04-17)
 
 **Live content**: Bhagavad Gita (18 chapters, full), Mahabharata Adi/Sabha/Vana Parvas (3/18), Isha Upanishad (10 verses, partial).  
-**Current phase**: PHASE 3 — Architecture for Scale & Scholarship Expansion (Deploying SQLite WASM edge edge layer and improving semantic linkages).
+**Current phase**: PHASE 4 — The Vedic Wikipedia Vision Revision (Addressing semantic deep-linking gaps, search bottlenecks, and enforcing type-safety & Lean UI at the SQLite WASM data layer).
 **Test coverage**: 155 passing, 2 pre-existing failures (known, tracked in backlog).  
 **TypeScript**: 0 errors. ESLint: 33 pre-existing violations tracked in backlog (INFRA-007).  
 **Next milestone**: Edge-hosted SQLite data ingestion architecture for Mahabharata scale and integration of Semantic Deep-Linking Protocol.
