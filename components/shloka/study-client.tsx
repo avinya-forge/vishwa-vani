@@ -48,7 +48,7 @@ export default function StudyClient({
   
   // Normalize the author key to a stable group (e.g., dnyaneshwari-en -> dnyaneshwari)
   const normalizeScholarKey = (author: string) => (author || '').split('-')[0].toLowerCase()
-  const PREFERRED_SCHOLARS = ['dnyaneshwari', 'iskcon']
+  const _PREFERRED_SCHOLARS = ['dnyaneshwari', 'iskcon']
 
 
   // Track reading position using Intersection Observer
@@ -393,11 +393,11 @@ export default function StudyClient({
   }
 
   const [synthesisMap, setSynthesisMap] = useState<Record<string, { text: string; loading: boolean }>>({})
-  const [isChapterSynthesizing, setIsChapterSynthesizing] = useState(false)
+  const [_isChapterSynthesizing, setIsChapterSynthesizing] = useState(false)
   const verseRefs = useRef<Record<number, HTMLElement | null>>({})
   const cleanText = (txt: string) => (txt || '').replace(/\\n/g, '\n')
   
-  const synthesizeEntireChapter = async () => {
+  const _synthesizeEntireChapter = async () => {
     setIsChapterSynthesizing(true)
     for (const verse of verses) {
        const v = verse as Record<string, unknown>
@@ -717,7 +717,7 @@ export default function StudyClient({
             return av - bv
           }).map((verse: unknown) => {
             const v = verse as Record<string, unknown>
-            const layers = (v.layers || []) as any[]
+            const layers = (v.layers || []) as unknown[]
             const meaning = String(v.translation || '')
 
             // Commentary layers — filter by selected scholar base key and language (Lean template: only show if explicitly selected)
