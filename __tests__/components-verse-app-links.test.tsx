@@ -21,7 +21,7 @@ describe('VerseAppLinks', () => {
   })
 
   it('returns null (renders nothing) when no apps match', () => {
-    const { container } = render(<VerseAppLinks bookSlug="unknown-book" chapter={99} />)
+    render(<VerseAppLinks bookSlug="unknown-book" chapter={99} />)
     expect(screen.getByText('No specific tools available for this chapter yet.')).toBeInTheDocument()
   })
 
