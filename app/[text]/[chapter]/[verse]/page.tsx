@@ -74,7 +74,7 @@ export default async function StudyVersePage({ params }: { params: Promise<{ tex
     enrichedVerses = chapterData.verses
   }
 
-  const rawVerseData = enrichedVerses.find(v => String((v as Record<string, unknown>).verse) === verseNumber)
+  const rawVerseData = enrichedVerses.find((v: unknown) => String((v as Record<string, unknown>).verse) === verseNumber)
 
   if (!rawVerseData) {
     return (
@@ -93,7 +93,7 @@ export default async function StudyVersePage({ params }: { params: Promise<{ tex
   const _title = textMetadata.chapterNames?.[chapterNumber] || `${textMetadata.name} - Chapter ${chapterNumber}`
   
   // The DataService already returns enriched, schema-compliant verses
-  const verseData = rawVerseData as unknown
+  const verseData = rawVerseData as Record<string, unknown>
 
   return (
     <main className="min-h-screen bg-[#FDFBF7] selection:bg-orange-100/60 pb-20">

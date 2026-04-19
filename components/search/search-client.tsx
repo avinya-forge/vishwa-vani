@@ -22,7 +22,7 @@ export default function SearchClient() {
   const [query, setQuery] = useState('')
   const [results, setResults] = useState<SearchResult[]>([])
   const [isSearching, setIsSearching] = useState(false)
-  const [activeTab, setActiveTab] = useState<'all' | 'itihas' | 'upanishad' | 'purana'>('all')
+  const [activeTab, setActiveTab] = useState<'all' | 'itihas' | 'upanishad' | 'veda' | 'purana' | 'other'>('all')
 
   useEffect(() => {
     const delayDebounceFn = setTimeout(async () => {
@@ -137,7 +137,7 @@ export default function SearchClient() {
             return categories.map((tab) => (
               <button
                 key={tab}
-                onClick={() => setActiveTab(tab as typeof activeTab)}
+                onClick={() => setActiveTab(tab as 'all' | 'itihas' | 'upanishad' | 'veda' | 'purana' | 'other')}
                 className={`px-6 py-3 rounded-2xl text-[11px] font-black uppercase tracking-[0.2em] transition-all whitespace-nowrap border ${
                   activeTab === tab
                   ? 'bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900 border-stone-900 dark:border-stone-100 shadow-xl'

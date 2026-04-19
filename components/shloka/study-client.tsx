@@ -393,12 +393,12 @@ export default function StudyClient({
   }
 
   const [synthesisMap, setSynthesisMap] = useState<Record<string, { text: string; loading: boolean }>>({})
-  const [_isChapterSynthesizing, setIsChapterSynthesizing] = useState(false)
+  const [_isChapterSynthesizing, _setIsChapterSynthesizing] = useState(false)
   const verseRefs = useRef<Record<number, HTMLElement | null>>({})
   const cleanText = (txt: string) => (txt || '').replace(/\\n/g, '\n')
   
   const _synthesizeEntireChapter = async () => {
-    setIsChapterSynthesizing(true)
+    _setIsChapterSynthesizing(true)
     for (const verse of verses) {
        const v = verse as Record<string, unknown>
        if (synthesisMap[v.id as string]?.text) continue
@@ -462,7 +462,7 @@ export default function StudyClient({
          setSynthesisMap(p => ({...p, [v.id as string]: { text: 'Synthesis failed.', loading: false }}))
        }
     }
-    setIsChapterSynthesizing(false)
+    _setIsChapterSynthesizing(false)
   }
 
   const bookData = VEDIC_LIBRARY.find(b => b.slug === textSlug)
@@ -717,7 +717,7 @@ export default function StudyClient({
             return av - bv
           }).map((verse: unknown) => {
             const v = verse as Record<string, unknown>
-            const layers = (v.layers || []) as unknown[]
+            const layers = (v.layers || []) as Record<string, unknown>[]
             const meaning = String(v.translation || '')
 
             // Commentary layers — filter by selected scholar base key and language (Lean template: only show if explicitly selected)
