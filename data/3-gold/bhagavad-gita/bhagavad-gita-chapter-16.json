@@ -3,7 +3,7 @@
     "id": "bhagavad-gita_16_1-3",
     "text_slug": "bhagavad-gita",
     "chapter": 16,
-    "verse": "1-3",
+    "verse": 1,
     "original": "श्रीभगवानुवाच\nअभयं सत्त्वसंश‍ुद्धिर्ज्ञानयोगव्यवस्थिति: ।\nदानं दमश्च यज्ञश्च स्वाध्यायस्तप आर्जवम् ॥ १ ॥\nअहिंसा सत्यमक्रोधस्त्याग: शान्तिरपैश‍ुनम् ।\nदया भूतेष्वलोलुप्‍त्वं मार्दवं ह्रीरचापलम् ॥ २ ॥\nतेज: क्षमा धृति: शौचमद्रोहो नातिमानिता ।\nभवन्ति सम्पदं दैवीमभिजातस्य भारत ॥ ३ ॥",
     "transliteration": "śrī-bhagavān uvāca\nabhayaṁ sattva-saṁśuddhir\njñāna-yoga-vyavasthitiḥ\ndānaṁ damaś ca yajñaś ca\nsvādhyāyas tapa ārjavam",
     "translation": "The Supreme Personality of Godhead said: Fearlessness; purification of one’s existence; cultivation of spiritual knowledge; charity; self-control; performance of sacrifice; study of the Vedas; austerity; simplicity; nonviolence; truthfulness; freedom from anger; renunciation; tranquillity; aversion to faultfinding; compassion for all living entities; freedom from covetousness; gentleness; modesty; steady determination; vigor; forgiveness; fortitude; cleanliness; and freedom from envy and from the passion for honor – these transcendental qualities, O son of Bharata, belong to godly men endowed with divine nature.",
@@ -68,6 +68,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: दैवी गुण मोक्षाकडे नेतात आणि आसुरी गुण बंधनाकडे नेतात. स्वतःतील अयोग्य वृत्ती ओळखणे हीच खरी साधना. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -76,15 +94,16 @@
       "stats": {
         "original_words": 36,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "07fbc474762c19c1fabb2cf7675d4d01"
     }
   },
   {
     "id": "bhagavad-gita_16_10",
     "text_slug": "bhagavad-gita",
     "chapter": 16,
-    "verse": "10",
+    "verse": 10,
     "original": "काममाश्रित्य दुष्पूरं दम्भमानमदान्विता: ।\nमोहाद्‍गृहीत्वासद्‍ग्राहान्प्रवर्तन्तेऽश‍ुचिव्रता: ॥ १० ॥",
     "transliteration": "kāmam āśritya duṣpūraṁ\ndambha-māna-madānvitāḥ\nmohād gṛhītvāsad-grāhān\npravartante ’śuci-vratāḥ",
     "translation": "Taking shelter of insatiable lust and absorbed in the conceit of pride and false prestige, the demoniac, thus illusioned, are always sworn to unclean work, attracted by the impermanent.",
@@ -149,6 +168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: दैवी गुण मोक्षाकडे नेतात आणि आसुरी गुण बंधनाकडे नेतात. स्वतःतील अयोग्य वृत्ती ओळखणे हीच खरी साधना. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -157,15 +194,16 @@
       "stats": {
         "original_words": 8,
         "translit_words": 8,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "930065d465a46633d424bfd3bf44070c"
     }
   },
   {
     "id": "bhagavad-gita_16_11-12",
     "text_slug": "bhagavad-gita",
     "chapter": 16,
-    "verse": "11-12",
+    "verse": 11,
     "original": "चिन्तामपरिमेयां च प्रलयान्तामुपाश्रिता: ।\nकामोपभोगपरमा एतावदिति निश्चिता: ॥ ११ ॥\nआशापाशशतैर्बद्धा: कामक्रोधपरायणा: ।\nईहन्ते कामभोगार्थमन्यायेनार्थसञ्चयान् ॥ १२ ॥",
     "transliteration": "cintām aparimeyāṁ ca\npralayāntām upāśritāḥ\nkāmopabhoga-paramā\netāvad iti niścitāḥ",
     "translation": "They believe that to gratify the senses is the prime necessity of human civilization. Thus until the end of life their anxiety is immeasurable. Bound by a network of hundreds of thousands of desires and absorbed in lust and anger, they secure money by illegal means for sense gratification.",
@@ -230,6 +268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — दैवी गुण मोक्षाकडे नेतात आणि आसुरी गुण बंधनाकडे नेतात. स्वतःतील अयोग्य वृत्ती ओळखणे हीच खरी साधना. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -238,15 +294,16 @@
       "stats": {
         "original_words": 18,
         "translit_words": 9,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "24e4624381d158e9b9f0293eb45706df"
     }
   },
   {
     "id": "bhagavad-gita_16_13-15",
     "text_slug": "bhagavad-gita",
     "chapter": 16,
-    "verse": "13-15",
+    "verse": 13,
     "original": "इदमद्य मया लब्धमिमं प्राप्स्ये मनोरथम् ।\nइदमस्तीदमपि मे भविष्यति पुनर्धनम्  ॥ १३ ॥\nअसौ मया हत: शत्रुर्हनिष्ये चापरानपि  ।\nईश्वरोऽहमहं भोगी सिद्धोऽहं बलवान्सुखी ॥ १४ ॥\nआढ्योऽभिजनवानस्मि कोऽन्योऽस्ति सदृशो मया ।\nयक्ष्ये दास्यामि मोदिष्य इत्यज्ञानविमोहिता: ॥ १५ ॥",
     "transliteration": "idam adya mayā labdham\nimaṁ prāpsye manoratham\nidam astīdam api me\nbhaviṣyati punar dhanam",
     "translation": "The demoniac person thinks: “So much wealth do I have today, and I will gain more according to my schemes. So much is mine now, and it will increase in the future, more and more. He is my enemy, and I have killed him, and my other enemies will also be killed. I am the lord of everything. I am the enjoyer. I am perfect, powerful and happy. I am the richest man, surrounded by aristocratic relatives. There is none so powerful and happy as I am. I shall perform sacrifices, I shall give some charity, and thus I shall rejoice.” In this way, such persons are deluded by ignorance.",
@@ -311,6 +368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: दैवी गुण मोक्षाकडे नेतात आणि आसुरी गुण बंधनाकडे नेतात. स्वतःतील अयोग्य वृत्ती ओळखणे हीच खरी साधना. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -319,15 +394,16 @@
       "stats": {
         "original_words": 38,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "b3337f736e781dab5cf7e8a6da0d4adf"
     }
   },
   {
     "id": "bhagavad-gita_16_16",
     "text_slug": "bhagavad-gita",
     "chapter": 16,
-    "verse": "16",
+    "verse": 16,
     "original": "अनेकचित्तविभ्रान्ता मोहजालसमावृता: ।\nप्रसक्ता: कामभोगेषु पतन्ति नरकेऽश‍ुचौ ॥ १६ ॥",
     "transliteration": "aneka-citta-vibhrāntā\nmoha-jāla-samāvṛtāḥ\nprasaktāḥ kāma-bhogeṣu\npatanti narake ’śucau",
     "translation": "Thus perplexed by various anxieties and bound by a network of illusions, they become too strongly attached to sense enjoyment and fall down into hell.",
@@ -392,6 +468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: दैवी गुण मोक्षाकडे नेतात आणि आसुरी गुण बंधनाकडे नेतात. स्वतःतील अयोग्य वृत्ती ओळखणे हीच खरी साधना. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -400,15 +494,16 @@
       "stats": {
         "original_words": 10,
         "translit_words": 7,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "89c3be83497cacb2791ecbf08529aa66"
     }
   },
   {
     "id": "bhagavad-gita_16_17",
     "text_slug": "bhagavad-gita",
     "chapter": 16,
-    "verse": "17",
+    "verse": 17,
     "original": "आत्मसम्भाविता: स्तब्धा धनमानमदान्विता: ।\nयजन्ते नामयज्ञैस्ते दम्भेनाविधिपूर्वकम् ॥ १७ ॥",
     "transliteration": "ātma-sambhāvitāḥ stabdhā\ndhana-māna-madānvitāḥ\nyajante nāma-yajñais te\ndambhenāvidhi-pūrvakam",
     "translation": "Self-complacent and always impudent, deluded by wealth and false prestige, they sometimes proudly perform sacrifices in name only, without following any rules or regulations.",
@@ -473,6 +568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: दैवी गुण मोक्षाकडे नेतात आणि आसुरी गुण बंधनाकडे नेतात. स्वतःतील अयोग्य वृत्ती ओळखणे हीच खरी साधना. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -481,15 +594,16 @@
       "stats": {
         "original_words": 10,
         "translit_words": 7,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "48415652672404f46f605fc11fb34408"
     }
   },
   {
     "id": "bhagavad-gita_16_18",
     "text_slug": "bhagavad-gita",
     "chapter": 16,
-    "verse": "18",
+    "verse": 18,
     "original": "अहङ्कारं बलं दर्पं कामं क्रोधं च संश्रिता: ।\nमामात्मपरदेहेषु प्रद्विषन्तोऽभ्यसूयका: ॥ १८ ॥",
     "transliteration": "ahaṅkāraṁ balaṁ darpaṁ\nkāmaṁ krodhaṁ ca saṁśritāḥ\nmām ātma-para-deheṣu\npradviṣanto ’bhyasūyakāḥ",
     "translation": "Bewildered by false ego, strength, pride, lust and anger, the demons become envious of the Supreme Personality of Godhead, who is situated in their own bodies and in the bodies of others, and blaspheme against the real religion.",
@@ -554,6 +668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: दैवी गुण मोक्षाकडे नेतात आणि आसुरी गुण बंधनाकडे नेतात. स्वतःतील अयोग्य वृत्ती ओळखणे हीच खरी साधना. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -562,15 +694,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "3ab47c501f3993841bc5f07aad5dc385"
     }
   },
   {
     "id": "bhagavad-gita_16_19",
     "text_slug": "bhagavad-gita",
     "chapter": 16,
-    "verse": "19",
+    "verse": 19,
     "original": "तानहं द्विषत: क्रूरान्संसारेषु नराधमान् ।\nक्षिपाम्यजस्रमश‍ुभानासुरीष्वेव योनिषु ॥ १९ ॥",
     "transliteration": "tān ahaṁ dviṣataḥ krūrān\nsaṁsāreṣu narādhamān\nkṣipāmy ajasram aśubhān\nāsurīṣv eva yoniṣu",
     "translation": "Those who are envious and mischievous, who are the lowest among men, I perpetually cast into the ocean of material existence, into various demoniac species of life.",
@@ -635,6 +768,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: दैवी गुण मोक्षाकडे नेतात आणि आसुरी गुण बंधनाकडे नेतात. स्वतःतील अयोग्य वृत्ती ओळखणे हीच खरी साधना. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -643,15 +794,16 @@
       "stats": {
         "original_words": 10,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "4a1dde3053e1dba3aeb8059e372d3555"
     }
   },
   {
     "id": "bhagavad-gita_16_20",
     "text_slug": "bhagavad-gita",
     "chapter": 16,
-    "verse": "20",
+    "verse": 20,
     "original": "आसुरीं योनिमापन्ना मूढा जन्मनि जन्मनि ।\nमामप्राप्यैव कौन्तेय ततो यान्त्यधमां गतिम् ॥ २० ॥",
     "transliteration": "āsurīṁ yonim āpannā\nmūḍhā janmani janmani\nmām aprāpyaiva kaunteya\ntato yānty adhamāṁ gatim",
     "translation": "Attaining repeated birth amongst the species of demoniac life, O son of Kuntī, such persons can never approach Me. Gradually they sink down to the most abominable type of existence.",
@@ -716,6 +868,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — दैवी गुण मोक्षाकडे नेतात आणि आसुरी गुण बंधनाकडे नेतात. स्वतःतील अयोग्य वृत्ती ओळखणे हीच खरी साधना. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -724,15 +894,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "fe59edfde2abc0d3489616a521a29c92"
     }
   },
   {
     "id": "bhagavad-gita_16_21",
     "text_slug": "bhagavad-gita",
     "chapter": 16,
-    "verse": "21",
+    "verse": 21,
     "original": "त्रिविधं नरकस्येदं द्वारं नाशनमात्मन: ।\nकाम: क्रोधस्तथा लोभस्तस्मादेतत्‍त्रयं त्यजेत् ॥ २१ ॥",
     "transliteration": "tri-vidhaṁ narakasyedaṁ\ndvāraṁ nāśanam ātmanaḥ\nkāmaḥ krodhas tathā lobhas\ntasmād etat trayaṁ tyajet",
     "translation": "There are three gates leading to this hell – lust, anger and greed. Every sane man should give these up, for they lead to the degradation of the soul.",
@@ -797,6 +968,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: दैवी गुण मोक्षाकडे नेतात आणि आसुरी गुण बंधनाकडे नेतात. स्वतःतील अयोग्य वृत्ती ओळखणे हीच खरी साधना. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -805,15 +994,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "50ef5da368bcefdf84bd919bee121dfa"
     }
   },
   {
     "id": "bhagavad-gita_16_22",
     "text_slug": "bhagavad-gita",
     "chapter": 16,
-    "verse": "22",
+    "verse": 22,
     "original": "एतैर्विमुक्त: कौन्तेय तमोद्वारैस्त्रिभिर्नर: ।\nआचरत्यात्मन: श्रेयस्ततो याति परां गतिम् ॥ २२ ॥",
     "transliteration": "etair vimuktaḥ kaunteya\ntamo-dvārais tribhir naraḥ\nācaraty ātmanaḥ śreyas\ntato yāti parāṁ gatim",
     "translation": "The man who has escaped these three gates of hell, O son of Kuntī, performs acts conducive to self-realization and thus gradually attains the supreme destination.",
@@ -878,6 +1068,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: दैवी गुण मोक्षाकडे नेतात आणि आसुरी गुण बंधनाकडे नेतात. स्वतःतील अयोग्य वृत्ती ओळखणे हीच खरी साधना. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -886,15 +1094,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "04e0f389ab3b492138012e45b21e4150"
     }
   },
   {
     "id": "bhagavad-gita_16_23",
     "text_slug": "bhagavad-gita",
     "chapter": 16,
-    "verse": "23",
+    "verse": 23,
     "original": "य: शास्त्रविधिमुत्सृज्य वर्तते कामकारत: ।\nन स सिद्धिमवाप्‍नोति न सुखं न परां गतिम् ॥ २३ ॥",
     "transliteration": "yaḥ śāstra-vidhim utsṛjya\nvartate kāma-kārataḥ\nna sa siddhim avāpnoti\nna sukhaṁ na parāṁ gatim",
     "translation": "He who discards scriptural injunctions and acts according to his own whims attains neither perfection, nor happiness, nor the supreme destination.",
@@ -959,6 +1168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: दैवी गुण मोक्षाकडे नेतात आणि आसुरी गुण बंधनाकडे नेतात. स्वतःतील अयोग्य वृत्ती ओळखणे हीच खरी साधना. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -967,15 +1194,16 @@
       "stats": {
         "original_words": 16,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "21c16ac0b1f070886a8d52a007816c43"
     }
   },
   {
     "id": "bhagavad-gita_16_24",
     "text_slug": "bhagavad-gita",
     "chapter": 16,
-    "verse": "24",
+    "verse": 24,
     "original": "तस्माच्छास्त्रं प्रमाणं ते कार्याकार्यव्यवस्थितौ ।\nज्ञात्वा शास्त्रविधानोक्तं कर्म कर्तुमिहार्हसि ॥ २४ ॥",
     "transliteration": "tasmāc chāstraṁ pramāṇaṁ te\nkāryākārya-vyavasthitau\njñātvā śāstra-vidhānoktaṁ\nkarma kartum ihārhasi",
     "translation": "One should therefore understand what is duty and what is not duty by the regulations of the scriptures. Knowing such rules and regulations, one should act so that he may gradually be elevated.",
@@ -1040,6 +1268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: दैवी गुण मोक्षाकडे नेतात आणि आसुरी गुण बंधनाकडे नेतात. स्वतःतील अयोग्य वृत्ती ओळखणे हीच खरी साधना. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1048,15 +1294,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "13bc33a2d8465b9dee77cd78da74153a"
     }
   },
   {
     "id": "bhagavad-gita_16_4",
     "text_slug": "bhagavad-gita",
     "chapter": 16,
-    "verse": "4",
+    "verse": 4,
     "original": "दम्भो दर्पोऽभिमानश्च क्रोध: पारुष्यमेव च ।\nअज्ञानं चाभिजातस्य पार्थ सम्पदमासुरीम् ॥ ४ ॥",
     "transliteration": "dambho darpo ’bhimānaś ca\nkrodhaḥ pāruṣyam eva ca\najñānaṁ cābhijātasya\npārtha sampadam āsurīm",
     "translation": "Pride, arrogance, conceit, anger, harshness and ignorance – these qualities belong to those of demoniac nature, O son of Pṛthā.",
@@ -1121,6 +1368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: दैवी गुण मोक्षाकडे नेतात आणि आसुरी गुण बंधनाकडे नेतात. स्वतःतील अयोग्य वृत्ती ओळखणे हीच खरी साधना. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1129,15 +1394,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "b2e157607ad4e9ca8b4477a140664fd9"
     }
   },
   {
     "id": "bhagavad-gita_16_5",
     "text_slug": "bhagavad-gita",
     "chapter": 16,
-    "verse": "5",
+    "verse": 5,
     "original": "दैवी सम्पद्विमोक्षाय निबन्धायासुरी मता ।\nमा श‍ुच: सम्पदं दैवीमभिजातोऽसि पाण्डव ॥ ५ ॥",
     "transliteration": "daivī sampad vimokṣāya\nnibandhāyāsurī matā\nmā śucaḥ sampadaṁ daivīm\nabhijāto ’si pāṇḍava",
     "translation": "The transcendental qualities are conducive to liberation, whereas the demoniac qualities make for bondage. Do not worry, O son of Pāṇḍu, for you are born with the divine qualities.",
@@ -1202,6 +1468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — दैवी गुण मोक्षाकडे नेतात आणि आसुरी गुण बंधनाकडे नेतात. स्वतःतील अयोग्य वृत्ती ओळखणे हीच खरी साधना. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1210,15 +1494,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "669a1e76bf033b721ba27161eb556e8d"
     }
   },
   {
     "id": "bhagavad-gita_16_6",
     "text_slug": "bhagavad-gita",
     "chapter": 16,
-    "verse": "6",
+    "verse": 6,
     "original": "द्वौ भूतसर्गौ लोकेऽस्मिन्दैव आसुर एव च ।\nदैवो विस्तरश: प्रोक्त आसुरं पार्थ मे श‍ृणु ॥ ६ ॥",
     "transliteration": "dvau bhūta-sargau loke ’smin\ndaiva āsura eva ca\ndaivo vistaraśaḥ prokta\nāsuraṁ pārtha me śṛṇu",
     "translation": "O son of Pṛthā, in this world there are two kinds of created beings. One is called divine and the other demoniac. I have already explained to you at length the divine qualities. Now hear from Me of the demoniac.",
@@ -1283,6 +1568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: दैवी गुण मोक्षाकडे नेतात आणि आसुरी गुण बंधनाकडे नेतात. स्वतःतील अयोग्य वृत्ती ओळखणे हीच खरी साधना. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1291,15 +1594,16 @@
       "stats": {
         "original_words": 17,
         "translit_words": 15,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "c2dd1fea11bd3ce22d3a760b014f15a5"
     }
   },
   {
     "id": "bhagavad-gita_16_7",
     "text_slug": "bhagavad-gita",
     "chapter": 16,
-    "verse": "7",
+    "verse": 7,
     "original": "प्रवृत्तिं च निवृत्तिं च जना न विदुरासुरा: ।\nन शौचं नापि चाचारो न सत्यं तेषु विद्यते ॥ ७ ॥",
     "transliteration": "pravṛttiṁ ca nivṛttiṁ ca\njanā na vidur āsurāḥ\nna śaucaṁ nāpi cācāro\nna satyaṁ teṣu vidyate",
     "translation": "Those who are demoniac do not know what is to be done and what is not to be done. Neither cleanliness nor proper behavior nor truth is found in them.",
@@ -1364,6 +1668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: दैवी गुण मोक्षाकडे नेतात आणि आसुरी गुण बंधनाकडे नेतात. स्वतःतील अयोग्य वृत्ती ओळखणे हीच खरी साधना. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1372,15 +1694,16 @@
       "stats": {
         "original_words": 19,
         "translit_words": 16,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "9d7fd31863f87f7fe702bf1353a87c72"
     }
   },
   {
     "id": "bhagavad-gita_16_8",
     "text_slug": "bhagavad-gita",
     "chapter": 16,
-    "verse": "8",
+    "verse": 8,
     "original": "असत्यमप्रतिष्ठं ते जगदाहुरनीश्वरम् ।\nअपरस्परसम्भूतं किमन्यत्कामहैतुकम् ॥ ८ ॥",
     "transliteration": "asatyam apratiṣṭhaṁ te\njagad āhur anīśvaram\naparaspara-sambhūtaṁ\nkim anyat kāma-haitukam",
     "translation": "They say that this world is unreal, with no foundation, no God in control. They say it is produced of sex desire and has no cause other than lust.",
@@ -1445,6 +1768,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: दैवी गुण मोक्षाकडे नेतात आणि आसुरी गुण बंधनाकडे नेतात. स्वतःतील अयोग्य वृत्ती ओळखणे हीच खरी साधना. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1453,15 +1794,16 @@
       "stats": {
         "original_words": 9,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "22e6cac330050200cd06da5bb4b2a196"
     }
   },
   {
     "id": "bhagavad-gita_16_9",
     "text_slug": "bhagavad-gita",
     "chapter": 16,
-    "verse": "9",
+    "verse": 9,
     "original": "एतां दृष्टिमवष्टभ्य नष्टात्मानोऽल्पबुद्धय: ।\nप्रभवन्त्युग्रकर्माण: क्षयाय जगतोऽहिता: ॥ ९ ॥",
     "transliteration": "etāṁ dṛṣṭim avaṣṭabhya\nnaṣṭātmāno ’lpa-buddhayaḥ\nprabhavanty ugra-karmāṇaḥ\nkṣayāya jagato ’hitāḥ",
     "translation": "Following such conclusions, the demoniac, who are lost to themselves and who have no intelligence, engage in unbeneficial, horrible works meant to destroy the world.",
@@ -1526,6 +1868,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: दैवी गुण मोक्षाकडे नेतात आणि आसुरी गुण बंधनाकडे नेतात. स्वतःतील अयोग्य वृत्ती ओळखणे हीच खरी साधना. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1534,8 +1894,9 @@
       "stats": {
         "original_words": 10,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "246a6418c722c14c33d75925dbec0253"
     }
   }
 ]

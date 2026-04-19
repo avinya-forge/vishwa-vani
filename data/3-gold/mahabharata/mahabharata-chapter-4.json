@@ -1,1 +1,170 @@
-[{"id": "mahabharata_4_1", "text_slug": "mahabharata", "chapter": 4, "verse": 1, "original": "Mock Verse 4.1", "transliteration": "Mock Transliteration 4.1", "layers": []}, {"id": "mahabharata_4_2", "text_slug": "mahabharata", "chapter": 4, "verse": 2, "original": "Mock Verse 4.2", "transliteration": "Mock Transliteration 4.2", "layers": []}, {"id": "mahabharata_4_3", "text_slug": "mahabharata", "chapter": 4, "verse": 3, "original": "Mock Verse 4.3", "transliteration": "Mock Transliteration 4.3", "layers": []}]
+[
+  {
+    "id": "mahabharata_4_1",
+    "text_slug": "mahabharata",
+    "chapter": 4,
+    "verse": 1,
+    "original": "Mock Verse 4.1",
+    "transliteration": "Mock Transliteration 4.1",
+    "layers": [
+      {
+        "author": "iskcon",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
+      }
+    ],
+    "ai_metadata": {
+      "topics": [],
+      "correlations": {},
+      "stats": {
+        "original_words": 3,
+        "translit_words": 3,
+        "layers_count": 6
+      },
+      "fingerprint": "85ce544716fe511c9b1fcc8d7a0e1a54"
+    }
+  },
+  {
+    "id": "mahabharata_4_2",
+    "text_slug": "mahabharata",
+    "chapter": 4,
+    "verse": 2,
+    "original": "Mock Verse 4.2",
+    "transliteration": "Mock Transliteration 4.2",
+    "layers": [
+      {
+        "author": "iskcon",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
+      }
+    ],
+    "ai_metadata": {
+      "topics": [],
+      "correlations": {},
+      "stats": {
+        "original_words": 3,
+        "translit_words": 3,
+        "layers_count": 6
+      },
+      "fingerprint": "69201de84a773e7e47e9e9a7a4d8cc99"
+    }
+  },
+  {
+    "id": "mahabharata_4_3",
+    "text_slug": "mahabharata",
+    "chapter": 4,
+    "verse": 3,
+    "original": "Mock Verse 4.3",
+    "transliteration": "Mock Transliteration 4.3",
+    "layers": [
+      {
+        "author": "iskcon",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
+      }
+    ],
+    "ai_metadata": {
+      "topics": [],
+      "correlations": {},
+      "stats": {
+        "original_words": 3,
+        "translit_words": 3,
+        "layers_count": 6
+      },
+      "fingerprint": "a8e07f7fc4127547d3091deda3ea3055"
+    }
+  }
+]

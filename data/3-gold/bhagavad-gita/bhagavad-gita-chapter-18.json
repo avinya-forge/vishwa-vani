@@ -3,7 +3,7 @@
     "id": "bhagavad-gita_18_1",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "1",
+    "verse": 1,
     "original": "सन्न्यासस्य महाबाहो तत्त्वमिच्छामि वेदितुम् ।\nत्यागस्य च हृषीकेश पृथक्केशिनिषूदन ॥ १ ॥",
     "transliteration": "arjuna uvāca\nsannyāsasya mahā-bāho\ntattvam icchāmi veditum\ntyāgasya ca hṛṣīkeśa\npṛthak keśi-niṣūdana",
     "translation": "Arjuna said: O mighty-armed one, I wish to understand the purpose of renunciation [tyāga] and of the renounced order of life [sannyāsa], O killer of the Keśī demon, master of the senses.",
@@ -68,6 +68,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -76,15 +94,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "6d48b9b26a4d11659fd4ccdbd46c48c4"
     }
   },
   {
     "id": "bhagavad-gita_18_10",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "10",
+    "verse": 10,
     "original": "न द्वेष्ट्यकुशलं कर्म कुशले नानुषज्ज‍ते ।\nत्यागी सत्त्वसमाविष्टो मेधावी छिन्नसंशय: ॥ १० ॥",
     "transliteration": "na dveṣṭy akuśalaṁ karma\nkuśale nānuṣajjate\ntyāgī sattva-samāviṣṭo\nmedhāvī chinna-saṁśayaḥ",
     "translation": "The intelligent renouncer situated in the mode of goodness, neither hateful of inauspicious work nor attached to auspicious work, has no doubts about work.",
@@ -149,6 +168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -157,15 +194,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "a626be63f624229f89691834dceb5b57"
     }
   },
   {
     "id": "bhagavad-gita_18_11",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "11",
+    "verse": 11,
     "original": "न हि देहभृता शक्यं त्यक्तुं कर्माण्यशेषत: ।\nयस्तु कर्मफलत्यागी स त्यागीत्यभिधीयते ॥ ११ ॥",
     "transliteration": "na hi deha-bhṛtā śakyaṁ\ntyaktuṁ karmāṇy aśeṣataḥ\nyas tu karma-phala-tyāgī\nsa tyāgīty abhidhīyate",
     "translation": "It is indeed impossible for an embodied being to give up all activities. But he who renounces the fruits of action is called one who has truly renounced.",
@@ -230,6 +268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -238,15 +294,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "1cadfb19effa2bce5a9fb0a337a04f0d"
     }
   },
   {
     "id": "bhagavad-gita_18_12",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "12",
+    "verse": 12,
     "original": "अनिष्टमिष्टं मिश्रं च त्रिविधं कर्मण: फलम् ।\nभवत्यत्यागिनां प्रेत्य न तु सन्न्यासिनां क्‍वचित् ॥ १२ ॥",
     "transliteration": "aniṣṭam iṣṭaṁ miśraṁ ca\ntri-vidhaṁ karmaṇaḥ phalam\nbhavaty atyāgināṁ pretya\nna tu sannyāsināṁ kvacit",
     "translation": "For one who is not renounced, the threefold fruits of action – desirable, undesirable and mixed – accrue after death. But those who are in the renounced order of life have no such result to suffer or enjoy.",
@@ -311,6 +368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -319,15 +394,16 @@
       "stats": {
         "original_words": 16,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "a0761148e712bd45aef498a69007d7c9"
     }
   },
   {
     "id": "bhagavad-gita_18_13",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "13",
+    "verse": 13,
     "original": "पञ्चैतानि महाबाहो कारणानि निबोध मे ।\nसांख्ये कृतान्ते प्रोक्तानि सिद्धये सर्वकर्मणाम् ॥ १३ ॥",
     "transliteration": "pañcaitāni mahā-bāho\nkāraṇāni nibodha me\nsāṅkhye kṛtānte proktāni\nsiddhaye sarva-karmaṇām",
     "translation": "O mighty-armed Arjuna, according to the Vedānta there are five causes for the accomplishment of all action. Now learn of these from Me.",
@@ -392,6 +468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -400,15 +494,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "835fe7b9650d554ef0511e5ccb838f57"
     }
   },
   {
     "id": "bhagavad-gita_18_14",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "14",
+    "verse": 14,
     "original": "अधिष्ठानं तथा कर्ता करणं च पृथग्विधम् ।\nविविधाश्च पृथक्‍चेष्टा दैवं चैवात्र पञ्चमम् ॥ १४ ॥",
     "transliteration": "adhiṣṭhānaṁ tathā kartā\nkaraṇaṁ ca pṛthag-vidham\nvividhāś ca pṛthak ceṣṭā\ndaivaṁ caivātra pañcamam",
     "translation": "The place of action [the body], the performer, the various senses, the many different kinds of endeavor, and ultimately the Supersoul – these are the five factors of action.",
@@ -473,6 +568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -481,15 +594,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "11da489582a48385508cfd5053a7e338"
     }
   },
   {
     "id": "bhagavad-gita_18_15",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "15",
+    "verse": 15,
     "original": "शरीरवाङ्‍मनोभिर्यत्कर्म प्रारभते नर: ।\nन्याय्यं वा विपरीतं वा पञ्चैते तस्य हेतव: ॥ १५ ॥",
     "transliteration": "śarīra-vāṅ-manobhir yat\nkarma prārabhate naraḥ\nnyāyyaṁ vā viparītaṁ vā\npañcaite tasya hetavaḥ",
     "translation": "Whatever right or wrong action a man performs by body, mind or speech is caused by these five factors.",
@@ -554,6 +668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -562,15 +694,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "746e715516eaf56cc6d55eaa7f6c121f"
     }
   },
   {
     "id": "bhagavad-gita_18_16",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "16",
+    "verse": 16,
     "original": "तत्रैवं सति कर्तारमात्मानं केवलं तु य: ।\nपश्यत्यकृतबुद्धित्वान्न स पश्यति दुर्मति: ॥ १६ ॥",
     "transliteration": "tatraivaṁ sati kartāram\nātmānaṁ kevalaṁ tu yaḥ\npaśyaty akṛta-buddhitvān\nna sa paśyati durmatiḥ",
     "translation": "Therefore one who thinks himself the only doer, not considering the five factors, is certainly not very intelligent and cannot see things as they are.",
@@ -635,6 +768,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -643,15 +794,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "5b535058ad8e7ab6e68571a8958a2cef"
     }
   },
   {
     "id": "bhagavad-gita_18_17",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "17",
+    "verse": 17,
     "original": "यस्य नाहंकृतो भावो बुद्धिर्यस्य न लिप्यते ।\nहत्वापि स इमाँल्ल‍ोकान्न हन्ति न निबध्यते ॥ १७ ॥",
     "transliteration": "yasya nāhaṅkṛto bhāvo\nbuddhir yasya na lipyate\nhatvāpi sa imāḻ lokān\nna hanti na nibadhyate",
     "translation": "One who is not motivated by false ego, whose intelligence is not entangled, though he kills men in this world, does not kill. Nor is he bound by his actions.",
@@ -716,6 +868,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -724,15 +894,16 @@
       "stats": {
         "original_words": 16,
         "translit_words": 15,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "3e0a3e2b1b74557f84da25166acc32a4"
     }
   },
   {
     "id": "bhagavad-gita_18_18",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "18",
+    "verse": 18,
     "original": "ज्ञानं ज्ञेयं परिज्ञाता त्रिविधा कर्मचोदना ।\nकरणं कर्म कर्तेति त्रिविध: कर्मसङ्‍ग्रह: ॥ १८ ॥",
     "transliteration": "jñānaṁ jñeyaṁ parijñātā\ntri-vidhā karma-codanā\nkaraṇaṁ karma karteti\ntri-vidhaḥ karma-saṅgrahaḥ",
     "translation": "Knowledge, the object of knowledge, and the knower are the three factors that motivate action; the senses, the work and the doer are the three constituents of action.",
@@ -797,6 +968,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -805,15 +994,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "09373d333e54559cde7969b0b592cb27"
     }
   },
   {
     "id": "bhagavad-gita_18_19",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "19",
+    "verse": 19,
     "original": "ज्ञानं कर्म च कर्ता च त्रिधैव गुणभेदत: ।\nप्रोच्यते गुणसंख्याने यथावच्छृणु तान्यपि ॥ १९ ॥",
     "transliteration": "jñānaṁ karma ca kartā ca\ntridhaiva guṇa-bhedataḥ\nprocyate guṇa-saṅkhyāne\nyathāvac chṛṇu tāny api",
     "translation": "According to the three different modes of material nature, there are three kinds of knowledge, action and performer of action. Now hear of them from Me.",
@@ -878,6 +1068,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -886,15 +1094,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "e432eb6bf0281f5bd2309339c3397753"
     }
   },
   {
     "id": "bhagavad-gita_18_2",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "2",
+    "verse": 2,
     "original": "श्रीभगवानुवाच ।\nकाम्यानां कर्मणां न्यासं सन्न्यासं कवयो विदु: ।\nसर्वकर्मफलत्यागं प्राहुस्त्यागं विचक्षणा: ॥ २ ॥",
     "transliteration": "śrī-bhagavān uvāca\nkāmyānāṁ karmaṇāṁ nyāsaṁ\nsannyāsaṁ kavayo viduḥ\nsarva-karma-phala-tyāgaṁ\nprāhus tyāgaṁ vicakṣaṇāḥ",
     "translation": "The Supreme Personality of Godhead said: The giving up of activities that are based on material desire is what great learned men call the renounced order of life [sannyāsa]. And giving up the results of all activities is what the wise call renunciation [tyāga].",
@@ -959,6 +1168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -967,15 +1194,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "d38776bc3be65b061d36af1e990d65c8"
     }
   },
   {
     "id": "bhagavad-gita_18_20",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "20",
+    "verse": 20,
     "original": "सर्वभूतेषु येनैकं भावमव्ययमीक्षते ।\nअविभक्तं विभक्तेषु तज्ज्ञानं विद्धि सात्त्विकम् ॥ २० ॥",
     "transliteration": "sarva-bhūteṣu yenaikaṁ\nbhāvam avyayam īkṣate\navibhaktaṁ vibhakteṣu\ntaj jñānaṁ viddhi sāttvikam",
     "translation": "That knowledge by which one undivided spiritual nature is seen in all living entities, though they are divided into innumerable forms, you should understand to be in the mode of goodness.",
@@ -1040,6 +1268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1048,15 +1294,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "171a6f7ecf32afbd0870ea920f3bfd29"
     }
   },
   {
     "id": "bhagavad-gita_18_21",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "21",
+    "verse": 21,
     "original": "पृथक्त्वेन तु यज्ज्ञानं नानाभावान्पृथग्विधान् ।\nवेत्ति सर्वेषु भूतेषु तज्ज्ञानं विद्धि राजसम् ॥ २१ ॥",
     "transliteration": "pṛthaktvena tu yaj jñānaṁ\nnānā-bhāvān pṛthag-vidhān\nvetti sarveṣu bhūteṣu\ntaj jñānaṁ viddhi rājasam",
     "translation": "That knowledge by which one sees that in every different body there is a different type of living entity you should understand to be in the mode of passion.",
@@ -1121,6 +1368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1129,15 +1394,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "058cf2999cd907a117c092f8d10a561c"
     }
   },
   {
     "id": "bhagavad-gita_18_22",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "22",
+    "verse": 22,
     "original": "यत्तु कृत्स्नवदेकस्मिन्कार्ये सक्तमहैतुकम् ।\nअतत्त्वार्थवदल्पं च तत्तामसमुदाहृतम् ॥ २२ ॥",
     "transliteration": "yat tu kṛtsna-vad ekasmin\nkārye saktam ahaitukam\natattvārtha-vad alpaṁ ca\ntat tāmasam udāhṛtam",
     "translation": "And that knowledge by which one is attached to one kind of work as the all in all, without knowledge of the truth, and which is very meager, is said to be in the mode of darkness.",
@@ -1202,6 +1468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1210,15 +1494,16 @@
       "stats": {
         "original_words": 10,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "23ed625168e1e0c185841b754654649d"
     }
   },
   {
     "id": "bhagavad-gita_18_23",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "23",
+    "verse": 23,
     "original": "नियतं सङ्गरहितमरागद्वेषत: कृतम् ।\nअफलप्रेप्सुना कर्म यत्तत्सात्त्विकमुच्यते ॥ २३ ॥",
     "transliteration": "niyataṁ saṅga-rahitam\narāga-dveṣataḥ kṛtam\naphala-prepsunā karma\nyat tat sāttvikam ucyate",
     "translation": "That action which is regulated and which is performed without attachment, without love or hatred, and without desire for fruitive results is said to be in the mode of goodness.",
@@ -1283,6 +1568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1291,15 +1594,16 @@
       "stats": {
         "original_words": 10,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "cbebf5ee2e3000107a9880e83830af19"
     }
   },
   {
     "id": "bhagavad-gita_18_24",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "24",
+    "verse": 24,
     "original": "यत्तु कामेप्सुना कर्म साहङ्कारेण वा पुन: ।\nक्रियते बहुलायासं तद्राजसमुदाहृतम् ॥ २४ ॥",
     "transliteration": "yat tu kāmepsunā karma\nsāhaṅkāreṇa vā punaḥ\nkriyate bahulāyāsaṁ\ntad rājasam udāhṛtam",
     "translation": "But action performed with great effort by one seeking to gratify his desires, and enacted from a sense of false ego, is called action in the mode of passion.",
@@ -1364,6 +1668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1372,15 +1694,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "7159b57f93da697b485e910c8cc86486"
     }
   },
   {
     "id": "bhagavad-gita_18_25",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "25",
+    "verse": 25,
     "original": "अनुबन्धं क्षयं हिंसामनपेक्ष्य च पौरुषम् ।\nमोहादारभ्यते कर्म यत्तत्तामसमुच्यते ॥ २५ ॥",
     "transliteration": "anubandhaṁ kṣayaṁ hiṁsām\nanapekṣya ca pauruṣam\nmohād ārabhyate karma\nyat tat tāmasam ucyate",
     "translation": "That action performed in illusion, in disregard of scriptural injunctions, and without concern for future bondage or for violence or distress caused to others is said to be in the mode of ignorance.",
@@ -1445,6 +1768,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1453,15 +1794,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "791d9c2cf59b36ddeff7177e2bae00dd"
     }
   },
   {
     "id": "bhagavad-gita_18_26",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "26",
+    "verse": 26,
     "original": "मुक्तसङ्गोऽनहंवादी धृत्युत्साहसमन्वित: ।\nसिद्ध्यसिद्ध्योर्निर्विकार: कर्ता सात्त्विक उच्यते ॥ २६ ॥",
     "transliteration": "mukta-saṅgo ’nahaṁ-vādī\ndhṛty-utsāha-samanvitaḥ\nsiddhy-asiddhyor nirvikāraḥ\nkartā sāttvika ucyate",
     "translation": "One who performs his duty without association with the modes of material nature, without false ego, with great determination and enthusiasm, and without wavering in success or failure is said to be a worker in the mode of goodness.",
@@ -1526,6 +1868,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1534,15 +1894,16 @@
       "stats": {
         "original_words": 10,
         "translit_words": 8,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "77e5f038209d747783f8eb6ffd63923e"
     }
   },
   {
     "id": "bhagavad-gita_18_27",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "27",
+    "verse": 27,
     "original": "रागी कर्मफलप्रेप्सुर्लुब्धो हिंसात्मकोऽश‍ुचि: ।\nहर्षशोकान्वित: कर्ता राजस: परिकीर्तित: ॥ २७ ॥",
     "transliteration": "rāgī karma-phala-prepsur\nlubdho hiṁsātmako ’śuciḥ\nharṣa-śokānvitaḥ kartā\nrājasaḥ parikīrtitaḥ",
     "translation": "The worker who is attached to work and the fruits of work, desiring to enjoy those fruits, and who is greedy, always envious, impure, and moved by joy and sorrow, is said to be in the mode of passion.",
@@ -1607,6 +1968,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1615,15 +1994,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 9,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "7a2b122ee731f7bbcef454a2a2aaa47a"
     }
   },
   {
     "id": "bhagavad-gita_18_28",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "28",
+    "verse": 28,
     "original": "अयुक्त: प्राकृत: स्तब्ध: शठो नैष्कृतिकोऽलस: ।\nविषादी दीर्घसूत्री च कर्ता तामस उच्यते ॥ २८ ॥",
     "transliteration": "ayuktaḥ prākṛtaḥ stabdhaḥ\nśaṭho naiṣkṛtiko ’lasaḥ\nviṣādī dīrgha-sūtrī ca\nkartā tāmasa ucyate",
     "translation": "The worker who is always engaged in work against the injunctions of the scripture, who is materialistic, obstinate, cheating and expert in insulting others, and who is lazy, always morose and procrastinating is said to be a worker in the mode of ignorance.",
@@ -1688,6 +2068,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1696,15 +2094,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "172ca18beab5dbb719a73a2c32a0d740"
     }
   },
   {
     "id": "bhagavad-gita_18_29",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "29",
+    "verse": 29,
     "original": "बुद्धेर्भेदं धृतेश्चैव गुणतस्त्रिविधं श‍ृणु ।\nप्रोच्यमानमशेषेण पृथक्त्वेन धनञ्जय ॥ २९ ॥",
     "transliteration": "buddher bhedaṁ dhṛteś caiva\nguṇatas tri-vidhaṁ śṛṇu\nprocyamānam aśeṣeṇa\npṛthaktvena dhanañ-jaya",
     "translation": "O winner of wealth, now please listen as I tell you in detail of the different kinds of understanding and determination, according to the three modes of material nature.",
@@ -1769,6 +2168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1777,15 +2194,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "5be9b83649ecae9604e9239b0870b543"
     }
   },
   {
     "id": "bhagavad-gita_18_3",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "3",
+    "verse": 3,
     "original": "त्याज्यं दोषवदित्येके कर्म प्राहुर्मनीषिण: ।\nयज्ञदानतप:कर्म न त्याज्यमिति चापरे ॥ ३ ॥",
     "transliteration": "tyājyaṁ doṣa-vad ity eke\nkarma prāhur manīṣiṇaḥ\nyajña-dāna-tapaḥ-karma\nna tyājyam iti cāpare",
     "translation": "Some learned men declare that all kinds of fruitive activities should be given up as faulty, yet other sages maintain that acts of sacrifice, charity and penance should never be abandoned.",
@@ -1850,6 +2268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1858,15 +2294,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "38b77c4ef5ebb8e77527203791b19764"
     }
   },
   {
     "id": "bhagavad-gita_18_30",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "30",
+    "verse": 30,
     "original": "प्रवृत्तिं च निवृत्तिं च कार्याकार्ये भयाभये ।\nबन्धं मोक्षं च या वेत्ति बुद्धि: सा पार्थ सात्त्विकी ॥ ३० ॥",
     "transliteration": "pravṛttiṁ ca nivṛttiṁ ca\nkāryākārye bhayābhaye\nbandhaṁ mokṣaṁ ca yā vetti\nbuddhiḥ sā pārtha sāttvikī",
     "translation": "O son of Pṛthā, that understanding by which one knows what ought to be done and what ought not to be done, what is to be feared and what is not to be feared, what is binding and what is liberating, is in the mode of goodness.",
@@ -1931,6 +2368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1939,15 +2394,16 @@
       "stats": {
         "original_words": 19,
         "translit_words": 15,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "17d69970ccc68b95b3231ef61d9d864d"
     }
   },
   {
     "id": "bhagavad-gita_18_31",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "31",
+    "verse": 31,
     "original": "यया धर्ममधर्मं च कार्यं चाकार्यमेव च ।\nअयथावत्प्रजानाति बुद्धि: सा पार्थ राजसी ॥ ३१ ॥",
     "transliteration": "yayā dharmam adharmaṁ ca\nkāryaṁ cākāryam eva ca\nayathāvat prajānāti\nbuddhiḥ sā pārtha rājasī",
     "translation": "O son of Pṛthā, that understanding which cannot distinguish between religion and irreligion, between action that should be done and action that should not be done, is in the mode of passion.",
@@ -2012,6 +2468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2020,15 +2494,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "d5b6ea359b82c435c96da56c747faab0"
     }
   },
   {
     "id": "bhagavad-gita_18_32",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "32",
+    "verse": 32,
     "original": "अधर्मं धर्ममिति या मन्यते तमसावृता ।\nसर्वार्थान्विपरीतांश्च बुद्धि: सा पार्थ तामसी ॥ ३२ ॥",
     "transliteration": "adharmaṁ dharmam iti yā\nmanyate tamasāvṛtā\nsarvārthān viparītāṁś ca\nbuddhiḥ sā pārtha tāmasī",
     "translation": "That understanding which considers irreligion to be religion and religion to be irreligion, under the spell of illusion and darkness, and strives always in the wrong direction, O Pārtha, is in the mode of ignorance.",
@@ -2093,6 +2568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2101,15 +2594,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "8e009181128393129990ee5786160650"
     }
   },
   {
     "id": "bhagavad-gita_18_33",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "33",
+    "verse": 33,
     "original": "धृत्या यया धारयते मन:प्राणेन्द्रियक्रिया: ।\nयोगेनाव्यभिचारिण्या धृति: सा पार्थ सात्त्विकी ॥ ३३ ॥",
     "transliteration": "dhṛtyā yayā dhārayate\nmanaḥ-prāṇendriya-kriyāḥ\nyogenāvyabhicāriṇyā\ndhṛtiḥ sā pārtha sāttvikī",
     "translation": "O son of Pṛthā, that determination which is unbreakable, which is sustained with steadfastness by yoga practice, and which thus controls the activities of the mind, life and senses is determination in the mode of goodness.",
@@ -2174,6 +2668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2182,15 +2694,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 9,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "52e379552c5f2d7b7e34738b3024df2a"
     }
   },
   {
     "id": "bhagavad-gita_18_34",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "34",
+    "verse": 34,
     "original": "यया तु धर्मकामार्थान्धृत्या धारयतेऽर्जुन ।\nप्रसङ्गेन फलाकाङ्क्षी धृति: सा पार्थ राजसी ॥ ३४ ॥",
     "transliteration": "yayā tu dharma-kāmārthān\ndhṛtyā dhārayate ’rjuna\nprasaṅgena phalākāṅkṣī\ndhṛtiḥ sā pārtha rājasī",
     "translation": "But that determination by which one holds fast to fruitive results in religion, economic development and sense gratification is of the nature of passion, O Arjuna.",
@@ -2255,6 +2768,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2263,15 +2794,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "c49f7002ec1cd5e7a762b3b3d237879d"
     }
   },
   {
     "id": "bhagavad-gita_18_35",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "35",
+    "verse": 35,
     "original": "यया स्वप्‍नं भयं शोकं विषादं मदमेव च ।\nन विमुञ्चति दुर्मेधा धृति: सा पार्थ तामसी ॥ ३५ ॥",
     "transliteration": "yayā svapnaṁ bhayaṁ śokaṁ\nviṣādaṁ madam eva ca\nna vimuñcati durmedhā\ndhṛtiḥ sā pārtha tāmasī",
     "translation": "And that determination which cannot go beyond dreaming, fearfulness, lamentation, moroseness and illusion – such unintelligent determination, O son of Pṛthā, is in the mode of darkness.",
@@ -2336,6 +2868,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2344,15 +2894,16 @@
       "stats": {
         "original_words": 18,
         "translit_words": 15,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "03e0da5a585665a712450025746e17a0"
     }
   },
   {
     "id": "bhagavad-gita_18_36",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "36",
+    "verse": 36,
     "original": "सुखं त्विदानीं त्रिविधं श‍ृणु मे भरतर्षभ ।\nअभ्यासाद्रमते यत्र दु:खान्तं च निगच्छति ॥ ३६ ॥",
     "transliteration": "sukhaṁ tv idānīṁ tri-vidhaṁ\nśṛṇu me bharatarṣabha\nabhyāsād ramate yatra\nduḥkhāntaṁ ca nigacchati",
     "translation": "O best of the Bhāratas, now please hear from Me about the three kinds of happiness by which the conditioned soul enjoys, and by which he sometimes comes to the end of all distress.",
@@ -2417,6 +2968,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2425,15 +2994,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "de2dce64f7ed0bedca0896475c057ccd"
     }
   },
   {
     "id": "bhagavad-gita_18_37",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "37",
+    "verse": 37,
     "original": "यत्तदग्रे विषमिव परिणामेऽमृतोपमम् ।\nतत्सुखं सात्त्विकं प्रोक्तमात्मबुद्धिप्रसादजम् ॥ ३७ ॥",
     "transliteration": "yat tad agre viṣam iva\npariṇāme ’mṛtopamam\ntat sukhaṁ sāttvikaṁ proktam\nātma-buddhi-prasāda-jam",
     "translation": "That which in the beginning may be just like poison but at the end is just like nectar and which awakens one to self-realization is said to be happiness in the mode of goodness.",
@@ -2498,6 +3068,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2506,15 +3094,16 @@
       "stats": {
         "original_words": 10,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "907a792e1af86f46987becdaf67bff19"
     }
   },
   {
     "id": "bhagavad-gita_18_38",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "38",
+    "verse": 38,
     "original": "विषयेन्द्रियसंयोगाद्यत्तदग्रेऽमृतोपमम् ।\nपरिणामे विषमिव तत्सुखं राजसं स्मृतम् ॥ ३८ ॥",
     "transliteration": "viṣayendriya-saṁyogād\nyat tad agre ’mṛtopamam\npariṇāme viṣam iva\ntat sukhaṁ rājasaṁ smṛtam",
     "translation": "That happiness which is derived from contact of the senses with their objects and which appears like nectar at first but poison at the end is said to be of the nature of passion.",
@@ -2579,6 +3168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2587,15 +3194,16 @@
       "stats": {
         "original_words": 10,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "73368b07e607d57efe3cd530ae081cce"
     }
   },
   {
     "id": "bhagavad-gita_18_39",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "39",
+    "verse": 39,
     "original": "यदग्रे चानुबन्धे च सुखं मोहनमात्मन: ।\nनिद्रालस्यप्रमादोत्थं तत्तामसमुदाहृतम् ॥ ३९ ॥",
     "transliteration": "yad agre cānubandhe ca\nsukhaṁ mohanam ātmanaḥ\nnidrālasya-pramādotthaṁ\ntat tāmasam udāhṛtam",
     "translation": "And that happiness which is blind to self-realization, which is delusion from beginning to end and which arises from sleep, laziness and illusion is said to be of the nature of ignorance.",
@@ -2660,6 +3268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2668,15 +3294,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "78c9531000d383ff10cf062c69a1a6ae"
     }
   },
   {
     "id": "bhagavad-gita_18_4",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "4",
+    "verse": 4,
     "original": "निश्चयं श‍ृणु मे तत्र त्यागे भरतसत्तम ।\nत्यागो हि पुरुषव्याघ्र त्रिविध: सम्प्रकीर्तित: ॥ ४ ॥",
     "transliteration": "niścayaṁ śṛṇu me tatra\ntyāge bharata-sattama\ntyāgo hi puruṣa-vyāghra\ntri-vidhaḥ samprakīrtitaḥ",
     "translation": "O best of the Bhāratas, now hear My judgment about renunciation. O tiger among men, renunciation is declared in the scriptures to be of three kinds.",
@@ -2741,6 +3368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2749,15 +3394,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "478c400c58133a0020e4e5443912e70e"
     }
   },
   {
     "id": "bhagavad-gita_18_40",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "40",
+    "verse": 40,
     "original": "न तदस्ति पृथिव्यां वा दिवि देवेषु वा पुन: ।\nसत्त्वं प्रकृतिजैर्मुक्तं यदेभि: स्यात्‍त्रिभिर्गुणै: ॥ ४० ॥",
     "transliteration": "na tad asti pṛthivyāṁ vā\ndivi deveṣu vā punaḥ\nsattvaṁ prakṛti-jair muktaṁ\nyad ebhiḥ syāt tribhir guṇaiḥ",
     "translation": "There is no being existing, either here or among the demigods in the higher planetary systems, which is freed from these three modes born of material nature.",
@@ -2822,6 +3468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2830,15 +3494,16 @@
       "stats": {
         "original_words": 16,
         "translit_words": 17,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "44824893f8321179da2a0b673357f2a7"
     }
   },
   {
     "id": "bhagavad-gita_18_41",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "41",
+    "verse": 41,
     "original": "ब्राह्मणक्षत्रियविशां श‍ूद्राणां च परन्तप ।\nकर्माणि प्रविभक्तानि स्वभावप्रभवैर्गुणै: ॥ ४१ ॥",
     "transliteration": "brāhmaṇa-kṣatriya-viśāṁ\nśūdrāṇāṁ ca paran-tapa\nkarmāṇi pravibhaktāni\nsvabhāva-prabhavair guṇaiḥ",
     "translation": "Brāhmaṇas, kṣatriyas, vaiśyas and śūdras are distinguished by the qualities born of their own natures in accordance with the material modes, O chastiser of the enemy.",
@@ -2903,6 +3568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2911,15 +3594,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 8,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "8a88fef16613e4e930c3eb5a58bcee11"
     }
   },
   {
     "id": "bhagavad-gita_18_42",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "42",
+    "verse": 42,
     "original": "शमो दमस्तप: शौचं क्षान्तिरार्जवमेव च ।\nज्ञानं विज्ञानमास्तिक्यं ब्रह्मकर्म स्वभावजम् ॥ ४२ ॥",
     "transliteration": "śamo damas tapaḥ śaucaṁ\nkṣāntir ārjavam eva ca\njñānaṁ vijñānam āstikyaṁ\nbrahma-karma svabhāva-jam",
     "translation": "Peacefulness, self-control, austerity, purity, tolerance, honesty, knowledge, wisdom and religiousness – these are the natural qualities by which the brāhmaṇas work.",
@@ -2984,6 +3668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2992,15 +3694,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "f04ab6fc644bfe8a5690af075b44ba94"
     }
   },
   {
     "id": "bhagavad-gita_18_43",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "43",
+    "verse": 43,
     "original": "शौर्यं तेजो धृतिर्दाक्ष्यं युद्धे चाप्यपलायनम् ।\nदानमीश्वरभावश्च क्षात्रं कर्म स्वभावजम् ॥ ४३ ॥",
     "transliteration": "śauryaṁ tejo dhṛtir dākṣyaṁ\nyuddhe cāpy apalāyanam\ndānam īśvara-bhāvaś ca\nkṣātraṁ karma svabhāva-jam",
     "translation": "Heroism, power, determination, resourcefulness, courage in battle, generosity and leadership are the natural qualities of work for the kṣatriyas.",
@@ -3065,6 +3768,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3073,15 +3794,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "5d0ce12c14dd5ad961c3ec21495f9c8c"
     }
   },
   {
     "id": "bhagavad-gita_18_44",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "44",
+    "verse": 44,
     "original": "कृषिगोरक्ष्यवाणिज्यं वैश्यकर्म स्वभावजम् ।\nपरिचर्यात्मकं कर्म श‍ूद्रस्यापि स्वभावजम् ॥ ४४ ॥",
     "transliteration": "kṛṣi-go-rakṣya-vāṇijyaṁ\nvaiśya-karma svabhāva-jam\nparicaryātmakaṁ karma\nśūdrasyāpi svabhāva-jam",
     "translation": "Farming, cow protection and business are the natural work for the vaiśyas, and for the śūdras there are labor and service to others.",
@@ -3146,6 +3868,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3154,15 +3894,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 7,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "f5e8cb001b4c2209e9e5c9e53d251d13"
     }
   },
   {
     "id": "bhagavad-gita_18_45",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "45",
+    "verse": 45,
     "original": "स्वे स्वे कर्मण्यभिरत: संसिद्धिं लभते नर\nस्वकर्मनिरत: सिद्धिं यथा विन्दति तच्‍छृणु ॥ ४५ ॥",
     "transliteration": "sve sve karmaṇy abhirataḥ\nsaṁsiddhiṁ labhate naraḥ\nsva-karma-nirataḥ siddhiṁ\nyathā vindati tac chṛṇu",
     "translation": "By following his qualities of work, every man can become perfect. Now please hear from Me how this can be done.",
@@ -3227,6 +3968,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3235,15 +3994,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "ad85a77442a768201be5a391190cacb8"
     }
   },
   {
     "id": "bhagavad-gita_18_46",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "46",
+    "verse": 46,
     "original": "यत: प्रवृत्तिर्भूतानां येन सर्वमिदं ततम् ।\nस्वकर्मणा तमभ्यर्च्य सिद्धिं विन्दति मानव: ॥ ४६ ॥",
     "transliteration": "yataḥ pravṛttir bhūtānāṁ\nyena sarvam idaṁ tatam\nsva-karmaṇā tam abhyarcya\nsiddhiṁ vindati mānavaḥ",
     "translation": "By worship of the Lord, who is the source of all beings and who is all-pervading, a man can attain perfection through performing his own work.",
@@ -3308,6 +4068,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3316,15 +4094,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "67de0725f91e9f9ca13350d493654c6b"
     }
   },
   {
     "id": "bhagavad-gita_18_47",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "47",
+    "verse": 47,
     "original": "श्रेयान्स्वधर्मो विगुण: परधर्मात्स्वनुष्ठितात् ।\nस्वभावनियतं कर्म कुर्वन्नाप्‍नोति किल्बिषम् ॥ ४७ ॥",
     "transliteration": "śreyān sva-dharmo viguṇaḥ\npara-dharmāt sv-anuṣṭhitāt\nsvabhāva-niyataṁ karma\nkurvan nāpnoti kilbiṣam",
     "translation": "It is better to engage in one’s own occupation, even though one may perform it imperfectly, than to accept another’s occupation and perform it perfectly. Duties prescribed according to one’s nature are never affected by sinful reactions.",
@@ -3389,6 +4168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3397,15 +4194,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "07719f2f6c0e125612d88fa07ce452cc"
     }
   },
   {
     "id": "bhagavad-gita_18_48",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "48",
+    "verse": 48,
     "original": "सहजं कर्म कौन्तेय सदोषमपि न त्यजेत् ।\nसर्वारम्भा हि दोषेण धूमेनाग्न‍िरिवावृता: ॥ ४८ ॥",
     "transliteration": "saha-jaṁ karma kaunteya\nsa-doṣam api na tyajet\nsarvārambhā hi doṣeṇa\ndhūmenāgnir ivāvṛtāḥ",
     "translation": "Every endeavor is covered by some fault, just as fire is covered by smoke. Therefore one should not give up the work born of his nature, O son of Kuntī, even if such work is full of fault.",
@@ -3470,6 +4268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3478,15 +4294,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "19d72bb3eda8aa7e2a2dd4c7660ea77a"
     }
   },
   {
     "id": "bhagavad-gita_18_49",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "49",
+    "verse": 49,
     "original": "असक्तबुद्धि: सर्वत्र जितात्मा विगतस्पृह: ।\nनैष्कर्म्यसिद्धिं परमां सन्न्यासेनाधिगच्छति ॥ ४९ ॥",
     "transliteration": "asakta-buddhiḥ sarvatra\njitātmā vigata-spṛhaḥ\nnaiṣkarmya-siddhiṁ paramāṁ\nsannyāsenādhigacchati",
     "translation": "One who is self-controlled and unattached and who disregards all material enjoyments can obtain, by practice of renunciation, the highest perfect stage of freedom from reaction.",
@@ -3551,6 +4368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3559,15 +4394,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 7,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "40c1b46d0aa64fab4c636d6b45bcacb7"
     }
   },
   {
     "id": "bhagavad-gita_18_5",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "5",
+    "verse": 5,
     "original": "यज्ञदानतप:कर्म न त्याज्यं कार्यमेव तत् ।\nयज्ञो दानं तपश्चैव पावनानि मनीषिणाम् ॥ ५ ॥",
     "transliteration": "yajña-dāna-tapaḥ-karma\nna tyājyaṁ kāryam eva tat\nyajño dānaṁ tapaś caiva\npāvanāni manīṣiṇām",
     "translation": "Acts of sacrifice, charity and penance are not to be given up; they must be performed. Indeed, sacrifice, charity and penance purify even the great souls.",
@@ -3632,6 +4468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3640,15 +4494,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "fef733185ab6f9131302123980811f2a"
     }
   },
   {
     "id": "bhagavad-gita_18_50",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "50",
+    "verse": 50,
     "original": "सिद्धिं प्राप्‍तो यथा ब्रह्म तथाप्‍नोति निबोध मे ।\nसमासेनैव कौन्तेय निष्ठा ज्ञानस्य या परा ॥ ५० ॥",
     "transliteration": "siddhiṁ prāpto yathā brahma\ntathāpnoti nibodha me\nsamāsenaiva kaunteya\nniṣṭhā jñānasya yā parā",
     "translation": "O son of Kuntī, learn from Me how one who has achieved this perfection can attain to the supreme perfectional stage, Brahman, the stage of highest knowledge, by acting in the way I shall now summarize.",
@@ -3713,6 +4568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3721,15 +4594,16 @@
       "stats": {
         "original_words": 17,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "a54bc119b95bab96bd555552f819736b"
     }
   },
   {
     "id": "bhagavad-gita_18_51-53",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "51-53",
+    "verse": 51,
     "original": "बुद्ध्या विश‍ुद्धया युक्तो धृत्यात्मानं नियम्य च ।\nशब्दादीन्विषयांस्त्यक्त्वा रागद्वेषौ व्युदस्य च ॥ ५१ ॥\nविविक्तसेवी लघ्वाशी यतवाक्कायमानस: ।\nध्यानयोगपरो नित्यं वैराग्यं समुपाश्रित: ॥ ५२ ॥\nअहङ्कारं बलं दर्पं कामं क्रोधं परिग्रहम् ।\nविमुच्य निर्मम: शान्तो ब्रह्मभूयाय कल्पते ॥ ५३ ॥",
     "transliteration": "buddhyā viśuddhayā yukto\ndhṛtyātmānaṁ niyamya ca\nśabdādīn viṣayāṁs tyaktvā\nrāga-dveṣau vyudasya ca",
     "translation": "Being purified by his intelligence and controlling the mind with determination, giving up the objects of sense gratification, being freed from attachment and hatred, one who lives in a secluded place, who eats little, who controls his body, mind and power of speech, who is always in trance and who is detached, free from false ego, false strength, false pride, lust, anger, and acceptance of material things, free from false proprietorship, and peaceful – such a person is certainly elevated to the position of self-realization.",
@@ -3794,6 +4668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3802,15 +4694,16 @@
       "stats": {
         "original_words": 40,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "bac504a898a6e7184de949505e47f584"
     }
   },
   {
     "id": "bhagavad-gita_18_54",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "54",
+    "verse": 54,
     "original": "ब्रह्मभूत: प्रसन्नात्मा न शोचति न काङ्क्षति ।\nसम: सर्वेषु भूतेषु मद्भ‍‍क्तिं लभते पराम् ॥ ५४ ॥",
     "transliteration": "brahma-bhūtaḥ prasannātmā\nna śocati na kāṅkṣati\nsamaḥ sarveṣu bhūteṣu\nmad-bhaktiṁ labhate parām",
     "translation": "One who is thus transcendentally situated at once realizes the Supreme Brahman and becomes fully joyful. He never laments or desires to have anything. He is equally disposed toward every living entity. In that state he attains pure devotional service unto Me.",
@@ -3875,6 +4768,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3883,15 +4794,16 @@
       "stats": {
         "original_words": 16,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "f17cf6cedf1d9f150ebf405c89b6a282"
     }
   },
   {
     "id": "bhagavad-gita_18_55",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "55",
+    "verse": 55,
     "original": "भक्त्य‍ा मामभिजानाति यावान्यश्चास्मि तत्त्वत: ।\nततो मां तत्त्वतो ज्ञात्वा विशते तदनन्तरम् ॥ ५५ ॥",
     "transliteration": "bhaktyā mām abhijānāti\nyāvān yaś cāsmi tattvataḥ\ntato māṁ tattvato jñātvā\nviśate tad-anantaram",
     "translation": "One can understand Me as I am, as the Supreme Personality of Godhead, only by devotional service. And when one is in full consciousness of Me by such devotion, he can enter into the kingdom of God.",
@@ -3956,6 +4868,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3964,15 +4894,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "116a1aaaa3aaa1e14a916c1a0ed56a8d"
     }
   },
   {
     "id": "bhagavad-gita_18_56",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "56",
+    "verse": 56,
     "original": "सर्वकर्माण्यपि सदा कुर्वाणो मद्‍व्यपाश्रय: ।\nमत्प्रसादादवाप्‍नोति शाश्वतं पदमव्ययम् ॥ ५६ ॥",
     "transliteration": "sarva-karmāṇy api sadā\nkurvāṇo mad-vyapāśrayaḥ\nmat-prasādād avāpnoti\nśāśvataṁ padam avyayam",
     "translation": "Though engaged in all kinds of activities, My pure devotee, under My protection, reaches the eternal and imperishable abode by My grace.",
@@ -4037,6 +4968,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -4045,15 +4994,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "f5c55b00787b45462ea8e098a120de03"
     }
   },
   {
     "id": "bhagavad-gita_18_57",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "57",
+    "verse": 57,
     "original": "चेतसा सर्वकर्माणि मयि सन्न्यस्य मत्पर: ।\nबुद्धियोगमुपाश्रित्य मच्च‍ित्त: सततं भव ॥ ५७ ॥",
     "transliteration": "cetasā sarva-karmāṇi\nmayi sannyasya mat-paraḥ\nbuddhi-yogam upāśritya\nmac-cittaḥ satataṁ bhava",
     "translation": "In all activities just depend upon Me and work always under My protection. In such devotional service, be fully conscious of Me.",
@@ -4118,6 +5068,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -4126,15 +5094,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "5f6db59384ec28f6bb523b33a48adc12"
     }
   },
   {
     "id": "bhagavad-gita_18_58",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "58",
+    "verse": 58,
     "original": "मच्च‍ित्त: सर्वदुर्गाणि मत्प्रसादात्तरिष्यसि ।\nअथ चेत्त्वमहङ्कारान्न श्रोष्यसि विनङ्‍क्ष्यसि ॥ ५८ ॥",
     "transliteration": "mac-cittaḥ sarva-durgāṇi\nmat-prasādāt tariṣyasi\natha cet tvam ahaṅkārān\nna śroṣyasi vinaṅkṣyasi",
     "translation": "If you become conscious of Me, you will pass over all the obstacles of conditioned life by My grace. If, however, you do not work in such consciousness but act through false ego, not hearing Me, you will be lost.",
@@ -4199,6 +5168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -4207,15 +5194,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "1607e45fdcdc3d42e5d9c7b64f210523"
     }
   },
   {
     "id": "bhagavad-gita_18_59",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "59",
+    "verse": 59,
     "original": "यदहङ्कारमाश्रित्य न योत्स्य इति मन्यसे ।\nमिथ्यैष व्यवसायस्ते प्रकृतिस्त्वां नियोक्ष्यति ॥ ५९ ॥",
     "transliteration": "yad ahaṅkāram āśritya\nna yotsya iti manyase\nmithyaiṣa vyavasāyas te\nprakṛtis tvāṁ niyokṣyati",
     "translation": "If you do not act according to My direction and do not fight, then you will be falsely directed. By your nature, you will have to be engaged in warfare.",
@@ -4280,6 +5268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -4288,15 +5294,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "e5ae1199ce0ab9451ff0edabeef4959c"
     }
   },
   {
     "id": "bhagavad-gita_18_6",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "6",
+    "verse": 6,
     "original": "एतान्यपि तु कर्माणि सङ्गं त्यक्त्वा फलानि च ।\nकर्तव्यानीति मे पार्थ निश्चितं मतमुत्तमम् ॥ ६ ॥",
     "transliteration": "etāny api tu karmāṇi\nsaṅgaṁ tyaktvā phalāni ca\nkartavyānīti me pārtha\nniścitaṁ matam uttamam",
     "translation": "All these activities should be performed without attachment or any expectation of result. They should be performed as a matter of duty, O son of Pṛthā. That is My final opinion.",
@@ -4361,6 +5368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -4369,15 +5394,16 @@
       "stats": {
         "original_words": 16,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "c00fe739c8738e1edb97fc6799768ba5"
     }
   },
   {
     "id": "bhagavad-gita_18_60",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "60",
+    "verse": 60,
     "original": "स्वभावजेन कौन्तेय निबद्ध: स्वेन कर्मणा ।\nकर्तुं नेच्छसि यन्मोहात्करिष्यस्यवशोऽपि तत् ॥ ६० ॥",
     "transliteration": "svabhāva-jena kaunteya\nnibaddhaḥ svena karmaṇā\nkartuṁ necchasi yan mohāt\nkariṣyasy avaśo ’pi tat",
     "translation": "Under illusion you are now declining to act according to My direction. But, compelled by the work born of your own nature, you will act all the same, O son of Kuntī.",
@@ -4442,6 +5468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -4450,15 +5494,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "64c688e483cd3beff1fc2ebf52a64c7a"
     }
   },
   {
     "id": "bhagavad-gita_18_61",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "61",
+    "verse": 61,
     "original": "ईश्वर: सर्वभूतानां हृद्देशेऽर्जुन तिष्ठति ।\nभ्रामयन्सर्वभूतानि यन्‍त्रारूढानि मायया ॥ ६१ ॥",
     "transliteration": "īśvaraḥ sarva-bhūtānāṁ\nhṛd-deśe ’rjuna tiṣṭhati\nbhrāmayan sarva-bhūtāni\nyantrārūḍhāni māyayā",
     "translation": "The Supreme Lord is situated in everyone’s heart, O Arjuna, and is directing the wanderings of all living entities, who are seated as on a machine, made of the material energy.",
@@ -4523,6 +5568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -4531,15 +5594,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 9,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "7cbe178478eee13135e85418b5c8ec6e"
     }
   },
   {
     "id": "bhagavad-gita_18_62",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "62",
+    "verse": 62,
     "original": "तमेव शरणं गच्छ सर्वभावेन भारत ।\nतत्प्रसादात्परां शान्तिं स्थानं प्राप्स्यसि शाश्वतम् ॥ ६२ ॥",
     "transliteration": "tam eva śaraṇaṁ gaccha\nsarva-bhāvena bhārata\ntat-prasādāt parāṁ śāntiṁ\nsthānaṁ prāpsyasi śāśvatam",
     "translation": "O scion of Bharata, surrender unto Him utterly. By His grace you will attain transcendental peace and the supreme and eternal abode.",
@@ -4604,6 +5668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -4612,15 +5694,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "0058debf92b3d6b53264c2f33d258eb5"
     }
   },
   {
     "id": "bhagavad-gita_18_63",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "63",
+    "verse": 63,
     "original": "इति ते ज्ञानमाख्यातं गुह्याद्‍‍गुह्यतरं मया ।\nविमृश्यैतदशेषेण यथेच्छसि तथा कुरु ॥ ६३ ॥",
     "transliteration": "iti te jñānam ākhyātaṁ\nguhyād guhya-taraṁ mayā\nvimṛśyaitad aśeṣeṇa\nyathecchasi tathā kuru",
     "translation": "Thus I have explained to you knowledge still more confidential. Deliberate on this fully, and then do what you wish to do.",
@@ -4685,6 +5768,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -4693,15 +5794,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "e77348eab64519d1fe13f513fa0b1373"
     }
   },
   {
     "id": "bhagavad-gita_18_64",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "64",
+    "verse": 64,
     "original": "सर्वगुह्यतमं भूय: श‍ृणु मे परमं वच: ।\nइष्टोऽसि मे दृढमिति ततो वक्ष्यामि ते हितम् ॥ ६४ ॥",
     "transliteration": "sarva-guhyatamaṁ bhūyaḥ\nśṛṇu me paramaṁ vacaḥ\niṣṭo ’si me dṛḍham iti\ntato vakṣyāmi te hitam",
     "translation": "Because you are My very dear friend, I am speaking to you My supreme instruction, the most confidential knowledge of all. Hear this from Me, for it is for your benefit.",
@@ -4766,6 +5868,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -4774,15 +5894,16 @@
       "stats": {
         "original_words": 17,
         "translit_words": 15,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "8073f2b0eee0d811cd04ae7ba70e6042"
     }
   },
   {
     "id": "bhagavad-gita_18_65",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "65",
+    "verse": 65,
     "original": "मन्मना भव मद्भ‍क्तो मद्याजी मां नमस्कुरु ।\nमामेवैष्यसि सत्यं ते प्रतिजाने प्रियोऽसि मे ॥ ६५ ॥",
     "transliteration": "man-manā bhava mad-bhakto\nmad-yājī māṁ namaskuru\nmām evaiṣyasi satyaṁ te\npratijāne priyo ’si me",
     "translation": "Always think of Me, become My devotee, worship Me and offer your homage unto Me. Thus you will come to Me without fail. I promise you this because you are My very dear friend.",
@@ -4847,6 +5968,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -4855,15 +5994,16 @@
       "stats": {
         "original_words": 16,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "f9fb74606c69c8db431bbc00217b92f9"
     }
   },
   {
     "id": "bhagavad-gita_18_66",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "66",
+    "verse": 66,
     "original": "सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज ।\nअहं त्वां सर्वपापेभ्यो मोक्षयिष्यामि मा श‍ुच: ॥ ६६ ॥",
     "transliteration": "sarva-dharmān parityajya\nmām ekaṁ śaraṇaṁ vraja\nahaṁ tvāṁ sarva-pāpebhyo\nmokṣayiṣyāmi mā śucaḥ",
     "translation": "Abandon all varieties of religion and just surrender unto Me. I shall deliver you from all sinful reactions. Do not fear.",
@@ -4928,6 +6068,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -4936,15 +6094,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "4cb61e011d445c1cf69abcf237b2956d"
     }
   },
   {
     "id": "bhagavad-gita_18_67",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "67",
+    "verse": 67,
     "original": "इदं ते नातपस्काय नाभक्ताय कदाचन ।\nन चाश‍ुश्रूषवे वाच्यं न च मां योऽभ्यसूयति ॥ ६७ ॥",
     "transliteration": "idaṁ te nātapaskāya\nnābhaktāya kadācana\nna cāśuśrūṣave vācyaṁ\nna ca māṁ yo ’bhyasūyati",
     "translation": "This confidential knowledge may never be explained to those who are not austere, or devoted, or engaged in devotional service, nor to one who is envious of Me.",
@@ -5009,6 +6168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -5017,15 +6194,16 @@
       "stats": {
         "original_words": 16,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "1b4f6a640b40405e8ddf495fbe1d4b85"
     }
   },
   {
     "id": "bhagavad-gita_18_68",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "68",
+    "verse": 68,
     "original": "य इदं परमं गुह्यं मद्भ‍क्तेष्वभिधास्यति ।\nभक्तिं मयि परां कृत्वा मामेवैष्यत्यसंशय: ॥ ६८ ॥",
     "transliteration": "ya idaṁ paramaṁ guhyaṁ\nmad-bhakteṣv abhidhāsyati\nbhaktiṁ mayi parāṁ kṛtvā\nmām evaiṣyaty asaṁśayaḥ",
     "translation": "For one who explains this supreme secret to the devotees, pure devotional service is guaranteed, and at the end he will come back to Me.",
@@ -5090,6 +6268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -5098,15 +6294,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "5b3e9078940c53e550ec078ebda89bd0"
     }
   },
   {
     "id": "bhagavad-gita_18_69",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "69",
+    "verse": 69,
     "original": "न च तस्मान्मनुष्येषु कश्चिन्मे प्रियकृत्तम: ।\nभविता न च मे तस्मादन्य: प्रियतरो भुवि ॥ ६९ ॥",
     "transliteration": "na ca tasmān manuṣyeṣu\nkaścin me priya-kṛttamaḥ\nbhavitā na ca me tasmād\nanyaḥ priya-taro bhuvi",
     "translation": "There is no servant in this world more dear to Me than he, nor will there ever be one more dear.",
@@ -5171,6 +6368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -5179,15 +6394,16 @@
       "stats": {
         "original_words": 16,
         "translit_words": 15,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "f0f461ece3dc67bede01d74783868209"
     }
   },
   {
     "id": "bhagavad-gita_18_7",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "7",
+    "verse": 7,
     "original": "नियतस्य तु सन्न्यास: कर्मणो नोपपद्यते ।\nमोहात्तस्य परित्यागस्तामस: परिकीर्तित: ॥ ७ ॥",
     "transliteration": "niyatasya tu sannyāsaḥ\nkarmaṇo nopapadyate\nmohāt tasya parityāgas\ntāmasaḥ parikīrtitaḥ",
     "translation": "Prescribed duties should never be renounced. If one gives up his prescribed duties because of illusion, such renunciation is said to be in the mode of ignorance.",
@@ -5252,6 +6468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -5260,15 +6494,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "0b0406e6cb50c8b4169d177de10e4cc0"
     }
   },
   {
     "id": "bhagavad-gita_18_70",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "70",
+    "verse": 70,
     "original": "अध्येष्यते च य इमं धर्म्यं संवादमावयो: ।\nज्ञानयज्ञेन तेनाहमिष्ट: स्यामिति मे मति: ॥ ७० ॥",
     "transliteration": "adhyeṣyate ca ya imaṁ\ndharmyaṁ saṁvādam āvayoḥ\njñāna-yajñena tenāham\niṣṭaḥ syām iti me matiḥ",
     "translation": "And I declare that he who studies this sacred conversation of ours worships Me by his intelligence.",
@@ -5333,6 +6568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -5341,15 +6594,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "207c0ede56712a60e4f134abe0d0c4b3"
     }
   },
   {
     "id": "bhagavad-gita_18_71",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "71",
+    "verse": 71,
     "original": "श्रद्धावाननसूयश्च श‍ृणुयादपि यो नर: ।\nसोऽपि मुक्त: शुभाँल्ल‍ोकान्प्राप्‍नुयात्पुण्यकर्मणाम् ॥ ७१ ॥",
     "transliteration": "śraddhāvān anasūyaś ca\nśṛṇuyād api yo naraḥ\nso ’pi muktaḥ śubhāḻ lokān\nprāpnuyāt puṇya-karmaṇām",
     "translation": "And one who listens with faith and without envy becomes free from sinful reactions and attains to the auspicious planets where the pious dwell.",
@@ -5414,6 +6668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -5422,15 +6694,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "cda8bf538fcb21e503364ebfc35f00c4"
     }
   },
   {
     "id": "bhagavad-gita_18_72",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "72",
+    "verse": 72,
     "original": "कच्च‍िदेतच्छ्रुतं पार्थ त्वयैकाग्रेण चेतसा ।\nकच्च‍िदज्ञानसम्मोह: प्रणष्टस्ते धनञ्जय ॥ ७२ ॥",
     "transliteration": "kaccid etac chrutaṁ pārtha\ntvayaikāgreṇa cetasā\nkaccid ajñāna-sammohaḥ\npraṇaṣṭas te dhanañ-jaya",
     "translation": "O son of Pṛthā, O conqueror of wealth, have you heard this with an attentive mind? And are your ignorance and illusions now dispelled?",
@@ -5495,6 +6768,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -5503,15 +6794,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "8062582f823176c8dce497c13d3dca36"
     }
   },
   {
     "id": "bhagavad-gita_18_73",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "73",
+    "verse": 73,
     "original": "नष्टो मोह: स्मृतिर्लब्धा त्वत्प्रसादान्मयाच्युत ।\nस्थितोऽस्मि गतसन्देह: करिष्ये वचनं तव ॥ ७३ ॥",
     "transliteration": "arjuna uvāca\nnaṣṭo mohaḥ smṛtir labdhā\ntvat-prasādān mayācyuta\nsthito ’smi gata-sandehaḥ\nkariṣye vacanaṁ tava",
     "translation": "Arjuna said: My dear Kṛṣṇa, O infallible one, my illusion is now gone. I have regained my memory by Your mercy. I am now firm and free from doubt and am prepared to act according to Your instructions.",
@@ -5576,6 +6868,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -5584,15 +6894,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "b6512e27a9cff391a05fe5e517b135a5"
     }
   },
   {
     "id": "bhagavad-gita_18_74",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "74",
+    "verse": 74,
     "original": "इत्यहं वासुदेवस्य पार्थस्य च महात्मन: ।\nसंवादमिममश्रौषमद्भुतं रोमहर्षणम् ॥ ७४ ॥",
     "transliteration": "sañjaya uvāca\nity ahaṁ vāsudevasya\npārthasya ca mahātmanaḥ\nsaṁvādam imam aśrauṣam\nadbhutaṁ roma-harṣaṇam",
     "translation": "Sañjaya said: Thus have I heard the conversation of two great souls, Kṛṣṇa and Arjuna. And so wonderful is that message that my hair is standing on end.",
@@ -5657,6 +6968,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -5665,15 +6994,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "9741e2f3cc9c2d9d68a2c0949ef43ace"
     }
   },
   {
     "id": "bhagavad-gita_18_75",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "75",
+    "verse": 75,
     "original": "व्यासप्रसादाच्छ्रुतवानेतद्‍गुह्यमहं परम् ।\nयोगं योगेश्वरात्कृष्णात्साक्षात्कथयत: स्वयम् ॥ ७५ ॥",
     "transliteration": "vyāsa-prasādāc chrutavān\netad guhyam ahaṁ param\nyogaṁ yogeśvarāt kṛṣṇāt\nsākṣāt kathayataḥ svayam",
     "translation": "By the mercy of Vyāsa, I have heard these most confidential talks directly from the master of all mysticism, Kṛṣṇa, who was speaking personally to Arjuna.",
@@ -5738,6 +7068,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -5746,15 +7094,16 @@
       "stats": {
         "original_words": 9,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "d62df54273691081c1ffc8789fcbfb02"
     }
   },
   {
     "id": "bhagavad-gita_18_76",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "76",
+    "verse": 76,
     "original": "राजन्संस्मृत्य संस्मृत्य संवादमिममद्भुतम् ।\nकेशवार्जुनयो: पुण्यं हृष्यामि च मुहुर्मुहु: ॥ ७६ ॥",
     "transliteration": "rājan saṁsmṛtya saṁsmṛtya\nsaṁvādam imam adbhutam\nkeśavārjunayoḥ puṇyaṁ\nhṛṣyāmi ca muhur muhuḥ",
     "translation": "O King, as I repeatedly recall this wondrous and holy dialogue between Kṛṣṇa and Arjuna, I take pleasure, being thrilled at every moment.",
@@ -5819,6 +7168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -5827,15 +7194,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "97e516d8ffcb0d8c8580c0bf2a0c2eda"
     }
   },
   {
     "id": "bhagavad-gita_18_77",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "77",
+    "verse": 77,
     "original": "तच्च‍ संस्मृत्य संस्मृत्य रूपमत्यद्भुतं हरे: ।\nविस्मयो मे महान्‍राजन्हृष्यामि च पुन: पुन: ॥ ७७ ॥",
     "transliteration": "tac ca saṁsmṛtya saṁsmṛtya\nrūpam aty-adbhutaṁ hareḥ\nvismayo me mahān rājan\nhṛṣyāmi ca punaḥ punaḥ",
     "translation": "O King, as I remember the wonderful form of Lord Kṛṣṇa, I am struck with wonder more and more, and I rejoice again and again.",
@@ -5900,6 +7268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -5908,15 +7294,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 15,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "1f413326e79eb8011360020ad12c7d9b"
     }
   },
   {
     "id": "bhagavad-gita_18_78",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "78",
+    "verse": 78,
     "original": "यत्र योगेश्वर: कृष्णो यत्र पार्थो धनुर्धर: ।\nतत्र श्रीर्विजयो भूतिर्ध्रुवा नीतिर्मतिर्मम ॥ ७८ ॥",
     "transliteration": "yatra yogeśvaraḥ kṛṣṇo\nyatra pārtho dhanur-dharaḥ\ntatra śrīr vijayo bhūtir\ndhruvā nītir matir mama",
     "translation": "Wherever there is Kṛṣṇa, the master of all mystics, and wherever there is Arjuna, the supreme archer, there will also certainly be opulence, victory, extraordinary power, and morality. That is my opinion.",
@@ -5981,6 +7368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -5989,15 +7394,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "213b4c6e76be36f0bf6b73d94bae244f"
     }
   },
   {
     "id": "bhagavad-gita_18_8",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "8",
+    "verse": 8,
     "original": "दु:खमित्येव यत्कर्म कायक्ल‍ेशभयात्त्यजेत् ।\nस कृत्वा राजसं त्यागं नैव त्यागफलं लभेत् ॥ ८ ॥",
     "transliteration": "duḥkham ity eva yat karma\nkāya-kleśa-bhayāt tyajet\nsa kṛtvā rājasaṁ tyāgaṁ\nnaiva tyāga-phalaṁ labhet",
     "translation": "Anyone who gives up prescribed duties as troublesome or out of fear of bodily discomfort is said to have renounced in the mode of passion. Such action never leads to the elevation of renunciation.",
@@ -6062,6 +7468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -6070,15 +7494,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "a6f9e21bb0a90d2590b8eef4ee1d2ee6"
     }
   },
   {
     "id": "bhagavad-gita_18_9",
     "text_slug": "bhagavad-gita",
     "chapter": 18,
-    "verse": "9",
+    "verse": 9,
     "original": "कार्यमित्येव यत्कर्म नियतं क्रियतेऽर्जुन ।\nसङ्गं त्यक्त्वा फलं चैव स त्याग: सात्त्विको मत: ॥ ९ ॥",
     "transliteration": "kāryam ity eva yat karma\nniyataṁ kriyate ’rjuna\nsaṅgaṁ tyaktvā phalaṁ caiva\nsa tyāgaḥ sāttviko mataḥ",
     "translation": "O Arjuna, when one performs his prescribed duty only because it ought to be done, and renounces all material association and all attachment to the fruit, his renunciation is said to be in the mode of goodness.",
@@ -6143,6 +7568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -6151,8 +7594,9 @@
       "stats": {
         "original_words": 16,
         "translit_words": 16,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "21b1be11649985a9f45c9ad51666cc28"
     }
   }
 ]

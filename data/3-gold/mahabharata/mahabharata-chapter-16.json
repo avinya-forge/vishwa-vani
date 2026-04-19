@@ -1,1 +1,170 @@
-[{"id": "mahabharata_16_1", "text_slug": "mahabharata", "chapter": 16, "verse": 1, "original": "Mock Verse 16.1", "transliteration": "Mock Transliteration 16.1", "layers": []}, {"id": "mahabharata_16_2", "text_slug": "mahabharata", "chapter": 16, "verse": 2, "original": "Mock Verse 16.2", "transliteration": "Mock Transliteration 16.2", "layers": []}, {"id": "mahabharata_16_3", "text_slug": "mahabharata", "chapter": 16, "verse": 3, "original": "Mock Verse 16.3", "transliteration": "Mock Transliteration 16.3", "layers": []}]
+[
+  {
+    "id": "mahabharata_16_1",
+    "text_slug": "mahabharata",
+    "chapter": 16,
+    "verse": 1,
+    "original": "Mock Verse 16.1",
+    "transliteration": "Mock Transliteration 16.1",
+    "layers": [
+      {
+        "author": "iskcon",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
+      }
+    ],
+    "ai_metadata": {
+      "topics": [],
+      "correlations": {},
+      "stats": {
+        "original_words": 3,
+        "translit_words": 3,
+        "layers_count": 6
+      },
+      "fingerprint": "8806ca7889e6e1f396107a2f0b669e60"
+    }
+  },
+  {
+    "id": "mahabharata_16_2",
+    "text_slug": "mahabharata",
+    "chapter": 16,
+    "verse": 2,
+    "original": "Mock Verse 16.2",
+    "transliteration": "Mock Transliteration 16.2",
+    "layers": [
+      {
+        "author": "iskcon",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
+      }
+    ],
+    "ai_metadata": {
+      "topics": [],
+      "correlations": {},
+      "stats": {
+        "original_words": 3,
+        "translit_words": 3,
+        "layers_count": 6
+      },
+      "fingerprint": "2b9c4aa1079fa06efecc337c9fbe321f"
+    }
+  },
+  {
+    "id": "mahabharata_16_3",
+    "text_slug": "mahabharata",
+    "chapter": 16,
+    "verse": 3,
+    "original": "Mock Verse 16.3",
+    "transliteration": "Mock Transliteration 16.3",
+    "layers": [
+      {
+        "author": "iskcon",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
+      }
+    ],
+    "ai_metadata": {
+      "topics": [],
+      "correlations": {},
+      "stats": {
+        "original_words": 3,
+        "translit_words": 3,
+        "layers_count": 6
+      },
+      "fingerprint": "e3b33911be61c4641bd46b2315a8344a"
+    }
+  }
+]

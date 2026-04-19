@@ -3,7 +3,7 @@
     "id": "bhagavad-gita_6_1",
     "text_slug": "bhagavad-gita",
     "chapter": 6,
-    "verse": "1",
+    "verse": 1,
     "original": "श्रीभगवानुवाच\nअनाश्रित: कर्मफलं कार्यं कर्म करोति य: ।\nस सन्न्यासी च योगी च न निरग्न‍िर्न चाक्रिय: ॥ १ ॥",
     "transliteration": "śrī-bhagavān uvāca\nanāśritaḥ karma-phalaṁ\nkāryaṁ karma karoti yaḥ\nsa sannyāsī ca yogī ca\nna niragnir na cākriyaḥ",
     "translation": "The Supreme Personality of Godhead said: One who is unattached to the fruits of his work and who works as he is obligated is in the renounced order of life, and he is the true mystic, not he who lights no fire and performs no duty.",
@@ -68,6 +68,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: ध्यानाच्या सरावाने मन स्थिर होते. वाऱ्यापासून दूर असलेल्या दिव्याप्रमाणे ध्यानस्थ मन चंचल होत नाही. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -76,15 +94,16 @@
       "stats": {
         "original_words": 19,
         "translit_words": 17,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "0e8b5adc41435d95f9056fa9fa11352b"
     }
   },
   {
     "id": "bhagavad-gita_6_10",
     "text_slug": "bhagavad-gita",
     "chapter": 6,
-    "verse": "10",
+    "verse": 10,
     "original": "योगी युञ्जीत सततमात्मानं रहसि स्थित: ।\nएकाकी यतचित्तात्मा निराशीरपरिग्रह: ॥ १० ॥",
     "transliteration": "yogī yuñjīta satatam\nātmānaṁ rahasi sthitaḥ\nekākī yata-cittātmā\nnirāśīr aparigrahaḥ",
     "translation": "A transcendentalist should always engage his body, mind and self in relationship with the Supreme; he should live alone in a secluded place and should always carefully control his mind. He should be free from desires and feelings of possessiveness.",
@@ -149,6 +168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: ध्यानाच्या सरावाने मन स्थिर होते. वाऱ्यापासून दूर असलेल्या दिव्याप्रमाणे ध्यानस्थ मन चंचल होत नाही. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -157,15 +194,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "a4ad14c30d9f89f0bc9ae32a9ebfa060"
     }
   },
   {
     "id": "bhagavad-gita_6_11-12",
     "text_slug": "bhagavad-gita",
     "chapter": 6,
-    "verse": "11-12",
+    "verse": 11,
     "original": "श‍ुचौ देशे प्रतिष्ठाप्य स्थिरमासनमात्मन: ।\nनात्युच्छ्रितं नातिनीचं चैलाजिनकुशोत्तरम् ॥ ११ ॥\nतत्रैकाग्रं मन: कृत्वा यतचित्तेन्द्रियक्रिय ।\nउपविश्यासने युञ्‍ज्याद्योगमात्मविश‍ुद्धये ॥ १२ ॥",
     "transliteration": "śucau deśe pratiṣṭhāpya\nsthiram āsanam ātmanaḥ\nnāty-ucchritaṁ nāti-nīcaṁ\ncailājina-kuśottaram",
     "translation": "To practice yoga, one should go to a secluded place and should lay kuśa grass on the ground and then cover it with a deerskin and a soft cloth. The seat should be neither too high nor too low and should be situated in a sacred place. The yogī should then sit on it very firmly and practice yoga to purify the heart by controlling his mind, senses and activities and fixing the mind on one point.",
@@ -230,6 +268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — ध्यानाच्या सरावाने मन स्थिर होते. वाऱ्यापासून दूर असलेल्या दिव्याप्रमाणे ध्यानस्थ मन चंचल होत नाही. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -238,15 +294,16 @@
       "stats": {
         "original_words": 21,
         "translit_words": 9,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "813d7f08d961042657bd90711e0c42ee"
     }
   },
   {
     "id": "bhagavad-gita_6_13-14",
     "text_slug": "bhagavad-gita",
     "chapter": 6,
-    "verse": "13-14",
+    "verse": 13,
     "original": "समं कायशिरोग्रीवं धारयन्नचलं स्थिर: ।\nसम्प्रेक्ष्य नासिकाग्रं स्वं दिशश्चानवलोकयन् ॥ १३ ॥\nप्रशान्तात्मा विगतभीर्ब्रह्मचारिव्रते स्थित: ।\nमन: संयम्य मच्च‍ित्तो युक्त आसीत मत्पर: ॥ १४ ॥",
     "transliteration": "samaṁ kāya-śiro-grīvaṁ\ndhārayann acalaṁ sthiraḥ\nsamprekṣya nāsikāgraṁ svaṁ\ndiśaś cānavalokayan",
     "translation": "One should hold one’s body, neck and head erect in a straight line and stare steadily at the tip of the nose. Thus, with an unagitated, subdued mind, devoid of fear, completely free from sex life, one should meditate upon Me within the heart and make Me the ultimate goal of life.",
@@ -311,6 +368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: ध्यानाच्या सरावाने मन स्थिर होते. वाऱ्यापासून दूर असलेल्या दिव्याप्रमाणे ध्यानस्थ मन चंचल होत नाही. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -319,15 +394,16 @@
       "stats": {
         "original_words": 25,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "2835582aff01799d6714d7d484c0cf53"
     }
   },
   {
     "id": "bhagavad-gita_6_15",
     "text_slug": "bhagavad-gita",
     "chapter": 6,
-    "verse": "15",
+    "verse": 15,
     "original": "युञ्जन्नेवं सदात्मानं योगी नियतमानस: ।\nशान्तिं निर्वाणपरमां मत्संस्थामधिगच्छति ॥ १५ ॥",
     "transliteration": "yuñjann evaṁ sadātmānaṁ\nyogī niyata-mānasaḥ\nśāntiṁ nirvāṇa-paramāṁ\nmat-saṁsthām adhigacchati",
     "translation": "Thus practicing constant control of the body, mind and activities, the mystic transcendentalist, his mind regulated, attains to the kingdom of God [or the abode of Kṛṣṇa] by cessation of material existence.",
@@ -392,6 +468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: ध्यानाच्या सरावाने मन स्थिर होते. वाऱ्यापासून दूर असलेल्या दिव्याप्रमाणे ध्यानस्थ मन चंचल होत नाही. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -400,15 +494,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 9,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "31ed9b0f3a256f7b3e57e46775d77e90"
     }
   },
   {
     "id": "bhagavad-gita_6_16",
     "text_slug": "bhagavad-gita",
     "chapter": 6,
-    "verse": "16",
+    "verse": 16,
     "original": "नात्यश्न‍तस्तु योगोऽस्ति न चैकान्तमनश्न‍त: ।\nन चातिस्वप्‍नशीलस्य जाग्रतो नैव चार्जुन ॥ १६ ॥",
     "transliteration": "nāty-aśnatas tu yogo ’sti\nna caikāntam anaśnataḥ\nna cāti-svapna-śīlasya\njāgrato naiva cārjuna",
     "translation": "There is no possibility of one’s becoming a yogī, O Arjuna, if one eats too much or eats too little, sleeps too much or does not sleep enough.",
@@ -473,6 +568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: ध्यानाच्या सरावाने मन स्थिर होते. वाऱ्यापासून दूर असलेल्या दिव्याप्रमाणे ध्यानस्थ मन चंचल होत नाही. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -481,15 +594,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "2da663e9b04d460026ff632067bcc7bb"
     }
   },
   {
     "id": "bhagavad-gita_6_17",
     "text_slug": "bhagavad-gita",
     "chapter": 6,
-    "verse": "17",
+    "verse": 17,
     "original": "युक्ताहारविहारस्य युक्तचेष्टस्य कर्मसु ।\nयुक्तस्वप्‍नावबोधस्य योगो भवति दु:खहा ॥ १७ ॥",
     "transliteration": "yuktāhāra-vihārasya\nyukta-ceṣṭasya karmasu\nyukta-svapnāvabodhasya\nyogo bhavati duḥkha-hā",
     "translation": "He who is regulated in his habits of eating, sleeping, recreation and work can mitigate all material pains by practicing the yoga system.",
@@ -554,6 +668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: ध्यानाच्या सरावाने मन स्थिर होते. वाऱ्यापासून दूर असलेल्या दिव्याप्रमाणे ध्यानस्थ मन चंचल होत नाही. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -562,15 +694,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 7,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "56af65c98ba036dfb17dbb1295ab1da7"
     }
   },
   {
     "id": "bhagavad-gita_6_18",
     "text_slug": "bhagavad-gita",
     "chapter": 6,
-    "verse": "18",
+    "verse": 18,
     "original": "यदा विनियतं चित्तमात्मन्येवावतिष्ठते ।\nनिस्पृह: सर्वकामेभ्यो युक्त इत्युच्यते तदा ॥ १८ ॥",
     "transliteration": "yadā viniyataṁ cittam\nātmany evāvatiṣṭhate\nnispṛhaḥ sarva-kāmebhyo\nyukta ity ucyate tadā",
     "translation": "When the yogī, by practice of yoga, disciplines his mental activities and becomes situated in transcendence – devoid of all material desires – he is said to be well established in yoga.",
@@ -635,6 +768,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: ध्यानाच्या सरावाने मन स्थिर होते. वाऱ्यापासून दूर असलेल्या दिव्याप्रमाणे ध्यानस्थ मन चंचल होत नाही. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -643,15 +794,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "b635c602c3e4a5dbcc536b335ad7cd4f"
     }
   },
   {
     "id": "bhagavad-gita_6_19",
     "text_slug": "bhagavad-gita",
     "chapter": 6,
-    "verse": "19",
+    "verse": 19,
     "original": "यथा दीपो निवातस्थो नेङ्गते सोपमा स्मृता ।\nयोगिनो यतचित्तस्य युञ्जतो योगमात्मन: ॥ १९ ॥",
     "transliteration": "yathā dīpo nivāta-stho\nneṅgate sopamā smṛtā\nyogino yata-cittasya\nyuñjato yogam ātmanaḥ",
     "translation": "As a lamp in a windless place does not waver, so the transcendentalist, whose mind is controlled, remains always steady in his meditation on the transcendent Self.",
@@ -716,6 +868,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — ध्यानाच्या सरावाने मन स्थिर होते. वाऱ्यापासून दूर असलेल्या दिव्याप्रमाणे ध्यानस्थ मन चंचल होत नाही. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -724,15 +894,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "ceb0db423f2d166be8b9ce6559e25289"
     }
   },
   {
     "id": "bhagavad-gita_6_2",
     "text_slug": "bhagavad-gita",
     "chapter": 6,
-    "verse": "2",
+    "verse": 2,
     "original": "यं सन्न्यासमिति प्राहुर्योगं तं विद्धि पाण्डव ।\nन ह्यसन्न्यस्तसङ्कल्पो योगी भवति कश्चन ॥ २ ॥",
     "transliteration": "yaṁ sannyāsam iti prāhur\nyogaṁ taṁ viddhi pāṇḍava\nna hy asannyasta-saṅkalpo\nyogī bhavati kaścana",
     "translation": "What is called renunciation you should know to be the same as yoga, or linking oneself with the Supreme, O son of Pāṇḍu, for one can never become a yogī unless he renounces the desire for sense gratification.",
@@ -797,6 +968,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: ध्यानाच्या सरावाने मन स्थिर होते. वाऱ्यापासून दूर असलेल्या दिव्याप्रमाणे ध्यानस्थ मन चंचल होत नाही. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -805,15 +994,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "6560e13ace68d2d37bdf66a48eb1bce8"
     }
   },
   {
     "id": "bhagavad-gita_6_20-23",
     "text_slug": "bhagavad-gita",
     "chapter": 6,
-    "verse": "20-23",
+    "verse": 20,
     "original": "यत्रोपरमते चित्तं निरुद्धं योगसेवया ।\nयत्र चैवात्मनात्मानं पश्यन्नात्मनि तुष्यति ॥ २० ॥\nसुखमात्यन्तिकं यत्तद्‍बुद्धिग्राह्यमतीन्द्रियम् ।\nवेत्ति यत्र न चैवायं स्थितश्चलति तत्त्वत: ॥ २१ ॥\nयं लब्ध्वा चापरं लाभं मन्यते नाधिकं तत: ।\nयस्मिन्स्थितो न दु:खेन गुरुणापि विचाल्यते ॥ २२ ॥\nतं विद्याद्दु:खसंयोगवियोगं योगसंज्ञितम् ॥ २३ ॥",
     "transliteration": "yatroparamate cittaṁ\nniruddhaṁ yoga-sevayā\nyatra caivātmanātmānaṁ\npaśyann ātmani tuṣyati",
     "translation": "In the stage of perfection called trance, or samādhi, one’s mind is completely restrained from material mental activities by practice of yoga. This perfection is characterized by one’s ability to see the Self by the pure mind and to relish and rejoice in the Self. In that joyous state, one is situated in boundless transcendental happiness, realized through transcendental senses. Established thus, one never departs from the truth, and upon gaining this he thinks there is no greater gain. Being situated in such a position, one is never shaken, even in the midst of greatest difficulty. This indeed is actual freedom from all miseries arising from material contact.",
@@ -878,6 +1068,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: ध्यानाच्या सरावाने मन स्थिर होते. वाऱ्यापासून दूर असलेल्या दिव्याप्रमाणे ध्यानस्थ मन चंचल होत नाही. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -886,15 +1094,16 @@
       "stats": {
         "original_words": 46,
         "translit_words": 9,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "fdfdf44293387ba9c1dddd540ff079ea"
     }
   },
   {
     "id": "bhagavad-gita_6_24",
     "text_slug": "bhagavad-gita",
     "chapter": 6,
-    "verse": "24",
+    "verse": 24,
     "original": "स निश्चयेन योक्तव्यो योगोऽनिर्विण्णचेतसा ।\nसङ्कल्पप्रभवान्कामांस्त्यक्त्वा सर्वानशेषत: ।\nमनसैवेन्द्रियग्रामं विनियम्य समन्तत: ॥ २४ ॥",
     "transliteration": "sa niścayena yoktavyo\nyogo ’nirviṇṇa-cetasā\nsaṅkalpa-prabhavān kāmāṁs\ntyaktvā sarvān aśeṣataḥ",
     "translation": "One should engage oneself in the practice of yoga with determination and faith and not be deviated from the path. One should abandon, without exception, all material desires born of mental speculation and thus control all the senses on all sides by the mind.",
@@ -959,6 +1168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: ध्यानाच्या सरावाने मन स्थिर होते. वाऱ्यापासून दूर असलेल्या दिव्याप्रमाणे ध्यानस्थ मन चंचल होत नाही. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -967,15 +1194,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "6d43be9284dccf282d213abaf5fa2fa5"
     }
   },
   {
     "id": "bhagavad-gita_6_25",
     "text_slug": "bhagavad-gita",
     "chapter": 6,
-    "verse": "25",
+    "verse": 25,
     "original": "शनै: शनैरुपरमेद्‍बुद्ध्या धृतिगृहीतया ।\nआत्मसंस्थं मन: कृत्वा न किञ्चिदपि चिन्तयेत् ॥ २५ ॥",
     "transliteration": "śanaiḥ śanair uparamed\nbuddhyā dhṛti-gṛhītayā\nātma-saṁsthaṁ manaḥ kṛtvā\nna kiñcid api cintayet",
     "translation": "Gradually, step by step, one should become situated in trance by means of intelligence sustained by full conviction, and thus the mind should be fixed on the Self alone and should think of nothing else.",
@@ -1040,6 +1268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: ध्यानाच्या सरावाने मन स्थिर होते. वाऱ्यापासून दूर असलेल्या दिव्याप्रमाणे ध्यानस्थ मन चंचल होत नाही. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1048,15 +1294,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "484af456f2074956b91ec5371a0774be"
     }
   },
   {
     "id": "bhagavad-gita_6_26",
     "text_slug": "bhagavad-gita",
     "chapter": 6,
-    "verse": "26",
+    "verse": 26,
     "original": "यतो यतो निश्चलति मनश्चञ्चलमस्थिरम् ।\nततस्ततो नियम्यैतदात्मन्येव वशं नयेत् ॥ २६ ॥",
     "transliteration": "yato yato niścalati\nmanaś cañcalam asthiram\ntatas tato niyamyaitad\nātmany eva vaśaṁ nayet",
     "translation": "From wherever the mind wanders due to its flickering and unsteady nature, one must certainly withdraw it and bring it back under the control of the Self.",
@@ -1121,6 +1368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: ध्यानाच्या सरावाने मन स्थिर होते. वाऱ्यापासून दूर असलेल्या दिव्याप्रमाणे ध्यानस्थ मन चंचल होत नाही. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1129,15 +1394,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "dccbae9a28b8f64cb352133cd6828a99"
     }
   },
   {
     "id": "bhagavad-gita_6_27",
     "text_slug": "bhagavad-gita",
     "chapter": 6,
-    "verse": "27",
+    "verse": 27,
     "original": "प्रशान्तमनसं ह्येनं योगिनं सुखमुत्तमम् ।\nउपैति शान्तरजसं ब्रह्मभूतमकल्मषम् ॥ २७ ॥",
     "transliteration": "praśānta-manasaṁ hy enaṁ\nyoginaṁ sukham uttamam\nupaiti śānta-rajasaṁ\nbrahma-bhūtam akalmaṣam",
     "translation": "The yogī whose mind is fixed on Me verily attains the highest perfection of transcendental happiness. He is beyond the mode of passion, he realizes his qualitative identity with the Supreme, and thus he is freed from all reactions to past deeds.",
@@ -1202,6 +1468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — ध्यानाच्या सरावाने मन स्थिर होते. वाऱ्यापासून दूर असलेल्या दिव्याप्रमाणे ध्यानस्थ मन चंचल होत नाही. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1210,15 +1494,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "2557f048b0d5b201041bab6ac414d104"
     }
   },
   {
     "id": "bhagavad-gita_6_28",
     "text_slug": "bhagavad-gita",
     "chapter": 6,
-    "verse": "28",
+    "verse": 28,
     "original": "युञ्जन्नेवं सदात्मानं योगी विगतकल्मष: ।\nसुखेन ब्रह्मसंस्पर्शमत्यन्तं सुखमश्न‍ुते ॥ २८ ॥",
     "transliteration": "yuñjann evaṁ sadātmānaṁ\nyogī vigata-kalmaṣaḥ\nsukhena brahma-saṁsparśam\natyantaṁ sukham aśnute",
     "translation": "Thus the self-controlled yogī, constantly engaged in yoga practice, becomes free from all material contamination and achieves the highest stage of perfect happiness in transcendental loving service to the Lord.",
@@ -1283,6 +1568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: ध्यानाच्या सरावाने मन स्थिर होते. वाऱ्यापासून दूर असलेल्या दिव्याप्रमाणे ध्यानस्थ मन चंचल होत नाही. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1291,15 +1594,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "35ff070030a920185d20230af0a233f8"
     }
   },
   {
     "id": "bhagavad-gita_6_29",
     "text_slug": "bhagavad-gita",
     "chapter": 6,
-    "verse": "29",
+    "verse": 29,
     "original": "सर्वभूतस्थमात्मानं सर्वभूतानि चात्मनि ।\nईक्षते योगयुक्तात्मा सर्वत्र समदर्शन: ॥ २९ ॥",
     "transliteration": "sarva-bhūta-stham ātmānaṁ\nsarva-bhūtāni cātmani\nīkṣate yoga-yuktātmā\nsarvatra sama-darśanaḥ",
     "translation": "A true yogī observes Me in all beings and also sees every being in Me. Indeed, the self-realized person sees Me, the same Supreme Lord, everywhere.",
@@ -1364,6 +1668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: ध्यानाच्या सरावाने मन स्थिर होते. वाऱ्यापासून दूर असलेल्या दिव्याप्रमाणे ध्यानस्थ मन चंचल होत नाही. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1372,15 +1694,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 8,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "bc83f7cf7d94a2f4b10345727fd116db"
     }
   },
   {
     "id": "bhagavad-gita_6_3",
     "text_slug": "bhagavad-gita",
     "chapter": 6,
-    "verse": "3",
+    "verse": 3,
     "original": "आरुरुक्षोर्मुनेर्योगं कर्म कारणमुच्यते ।\nयोगारूढस्यतस्यैव शम: कारणमुच्यते ॥ ३ ॥",
     "transliteration": "ārurukṣor muner yogaṁ\nkarma kāraṇam ucyate\nyogārūḍhasya tasyaiva\nśamaḥ kāraṇam ucyate",
     "translation": "For one who is a neophyte in the eightfold yoga system, work is said to be the means; and for one who is already elevated in yoga, cessation of all material activities is said to be the means.",
@@ -1445,6 +1768,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: ध्यानाच्या सरावाने मन स्थिर होते. वाऱ्यापासून दूर असलेल्या दिव्याप्रमाणे ध्यानस्थ मन चंचल होत नाही. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1453,15 +1794,16 @@
       "stats": {
         "original_words": 10,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "624f5ccf6124b0f77fe8f4fca9caa7f4"
     }
   },
   {
     "id": "bhagavad-gita_6_30",
     "text_slug": "bhagavad-gita",
     "chapter": 6,
-    "verse": "30",
+    "verse": 30,
     "original": "यो मां पश्यति सर्वत्र सर्वं च मयि पश्यति ।\nतस्याहं न प्रणश्यामि स च मे न प्रणश्यति ॥ ३० ॥",
     "transliteration": "yo māṁ paśyati sarvatra\nsarvaṁ ca mayi paśyati\ntasyāhaṁ na praṇaśyāmi\nsa ca me na praṇaśyati",
     "translation": "For one who sees Me everywhere and sees everything in Me, I am never lost, nor is he ever lost to Me.",
@@ -1526,6 +1868,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: ध्यानाच्या सरावाने मन स्थिर होते. वाऱ्यापासून दूर असलेल्या दिव्याप्रमाणे ध्यानस्थ मन चंचल होत नाही. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1534,15 +1894,16 @@
       "stats": {
         "original_words": 20,
         "translit_words": 16,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "c317386c90fcecd795be502c9a6e5f40"
     }
   },
   {
     "id": "bhagavad-gita_6_31",
     "text_slug": "bhagavad-gita",
     "chapter": 6,
-    "verse": "31",
+    "verse": 31,
     "original": "सर्वभूतस्थितं यो मां भजत्येकत्वमास्थित: ।\nसर्वथा वर्तमानोऽपि स योगी मयि वर्तते ॥ ३१ ॥",
     "transliteration": "sarva-bhūta-sthitaṁ yo māṁ\nbhajaty ekatvam āsthitaḥ\nsarvathā vartamāno ’pi\nsa yogī mayi vartate",
     "translation": "Such a yogī, who engages in the worshipful service of the Supersoul, knowing that I and the Supersoul are one, remains always in Me in all circumstances.",
@@ -1607,6 +1968,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: ध्यानाच्या सरावाने मन स्थिर होते. वाऱ्यापासून दूर असलेल्या दिव्याप्रमाणे ध्यानस्थ मन चंचल होत नाही. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1615,15 +1994,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "54a62ca599b1e8f081339d0e48a1e3d8"
     }
   },
   {
     "id": "bhagavad-gita_6_32",
     "text_slug": "bhagavad-gita",
     "chapter": 6,
-    "verse": "32",
+    "verse": 32,
     "original": "आत्मौपम्येन सर्वत्र समं पश्यति योऽर्जुन ।\nसुखं वा यदि वा दु:खं स योगी परमो मत: ॥ ३२ ॥",
     "transliteration": "ātmaupamyena sarvatra\nsamaṁ paśyati yo ’rjuna\nsukhaṁ vā yadi vā duḥkhaṁ\nsa yogī paramo mataḥ",
     "translation": "He is a perfect yogī who, by comparison to his own self, sees the true equality of all beings, in both their happiness and their distress, O Arjuna!",
@@ -1688,6 +2068,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — ध्यानाच्या सरावाने मन स्थिर होते. वाऱ्यापासून दूर असलेल्या दिव्याप्रमाणे ध्यानस्थ मन चंचल होत नाही. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1696,15 +2094,16 @@
       "stats": {
         "original_words": 18,
         "translit_words": 15,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "92098a120c86972388af7af812fbdcde"
     }
   },
   {
     "id": "bhagavad-gita_6_33",
     "text_slug": "bhagavad-gita",
     "chapter": 6,
-    "verse": "33",
+    "verse": 33,
     "original": "अर्जुन उवाच\nयोऽयं योगस्त्वया प्रोक्त: साम्येन मधुसूदन ।\nएतस्याहं न पश्यामि चञ्चलत्वात्स्थितिं स्थिराम् ॥ ३३ ॥",
     "transliteration": "arjuna uvāca\nyo ’yaṁ yogas tvayā proktaḥ\nsāmyena madhusūdana\netasyāhaṁ na paśyāmi\ncañcalatvāt sthitiṁ sthirām",
     "translation": "Arjuna said: O Madhusūdana, the system of yoga which You have summarized appears impractical and unendurable to me, for the mind is restless and unsteady.",
@@ -1769,6 +2168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: ध्यानाच्या सरावाने मन स्थिर होते. वाऱ्यापासून दूर असलेल्या दिव्याप्रमाणे ध्यानस्थ मन चंचल होत नाही. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1777,15 +2194,16 @@
       "stats": {
         "original_words": 16,
         "translit_words": 15,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "f4920f46c5e77f3712beca3f7c408946"
     }
   },
   {
     "id": "bhagavad-gita_6_34",
     "text_slug": "bhagavad-gita",
     "chapter": 6,
-    "verse": "34",
+    "verse": 34,
     "original": "चञ्चलं हि मन: कृष्ण प्रमाथि बलवद्दृढम् ।\nतस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥ ३४ ॥",
     "transliteration": "cañcalaṁ hi manaḥ kṛṣṇa\npramāthi balavad dṛḍham\ntasyāhaṁ nigrahaṁ manye\nvāyor iva su-duṣkaram",
     "translation": "The mind is restless, turbulent, obstinate and very strong, O Kṛṣṇa, and to subdue it, I think, is more difficult than controlling the wind.",
@@ -1850,6 +2268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: ध्यानाच्या सरावाने मन स्थिर होते. वाऱ्यापासून दूर असलेल्या दिव्याप्रमाणे ध्यानस्थ मन चंचल होत नाही. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1858,15 +2294,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "bde75195fc02ab02991398a4ac27d9c9"
     }
   },
   {
     "id": "bhagavad-gita_6_35",
     "text_slug": "bhagavad-gita",
     "chapter": 6,
-    "verse": "35",
+    "verse": 35,
     "original": "श्रीभगवानुवाच\nअसंशयं महाबाहो मनो दुर्निग्रहं चलम् ।\nअभ्यासेन तु कौन्तेय वैराग्येण च गृह्यते ॥ ३५ ॥",
     "transliteration": "śrī-bhagavān uvāca\nasaṁśayaṁ mahā-bāho\nmano durnigrahaṁ calam\nabhyāsena tu kaunteya\nvairāgyeṇa ca gṛhyate",
     "translation": "Lord Śrī Kṛṣṇa said: O mighty-armed son of Kuntī, it is undoubtedly very difficult to curb the restless mind, but it is possible by suitable practice and by detachment.",
@@ -1931,6 +2368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: ध्यानाच्या सरावाने मन स्थिर होते. वाऱ्यापासून दूर असलेल्या दिव्याप्रमाणे ध्यानस्थ मन चंचल होत नाही. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1939,15 +2394,16 @@
       "stats": {
         "original_words": 16,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "5e8eda82903ffe0e2be1f83ec84a345a"
     }
   },
   {
     "id": "bhagavad-gita_6_36",
     "text_slug": "bhagavad-gita",
     "chapter": 6,
-    "verse": "36",
+    "verse": 36,
     "original": "असंयतात्मना योगो दुष्प्राप इति मे मति: ।\nवश्यात्मना तु यतता शक्योऽवाप्‍तुमुपायत: ॥ ३६ ॥",
     "transliteration": "asaṁyatātmanā yogo\nduṣprāpa iti me matiḥ\nvaśyātmanā tu yatatā\nśakyo ’vāptum upāyataḥ",
     "translation": "For one whose mind is unbridled, self-realization is difficult work. But he whose mind is controlled and who strives by appropriate means is assured of success. That is My opinion.",
@@ -2012,6 +2468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: ध्यानाच्या सरावाने मन स्थिर होते. वाऱ्यापासून दूर असलेल्या दिव्याप्रमाणे ध्यानस्थ मन चंचल होत नाही. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2020,15 +2494,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "6255fb1f9222c4e8a267629b7e959a19"
     }
   },
   {
     "id": "bhagavad-gita_6_37",
     "text_slug": "bhagavad-gita",
     "chapter": 6,
-    "verse": "37",
+    "verse": 37,
     "original": "अर्जुन उवाच\nअयति: श्रद्धयोपेतो योगाच्च‍‍लितमानस: ।\nअप्राप्य योगसंसिद्धिं कां गतिं कृष्ण गच्छति ॥ ३७ ॥",
     "transliteration": "arjuna uvāca\nayatiḥ śraddhayopeto\nyogāc calita-mānasaḥ\naprāpya yoga-saṁsiddhiṁ\nkāṁ gatiṁ kṛṣṇa gacchati",
     "translation": "Arjuna said: O Kṛṣṇa, what is the destination of the unsuccessful transcendentalist, who in the beginning takes to the process of self-realization with faith but who later desists due to worldly-mindedness and thus does not attain perfection in mysticism?",
@@ -2093,6 +2568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: ध्यानाच्या सरावाने मन स्थिर होते. वाऱ्यापासून दूर असलेल्या दिव्याप्रमाणे ध्यानस्थ मन चंचल होत नाही. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2101,15 +2594,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "31b12bd36141c5d29487aea4f38c9d0c"
     }
   },
   {
     "id": "bhagavad-gita_6_38",
     "text_slug": "bhagavad-gita",
     "chapter": 6,
-    "verse": "38",
+    "verse": 38,
     "original": "कच्च‍िन्नोभयविभ्रष्टश्छिन्नाभ्रमिव नश्यति ।\nअप्रतिष्ठो महाबाहो विमूढो ब्रह्मण: पथि ॥ ३८ ॥",
     "transliteration": "kaccin nobhaya-vibhraṣṭaś\nchinnābhram iva naśyati\napratiṣṭho mahā-bāho\nvimūḍho brahmaṇaḥ pathi",
     "translation": "O mighty-armed Kṛṣṇa, does not such a man, who is bewildered from the path of transcendence, fall away from both spiritual and material success and perish like a riven cloud, with no position in any sphere?",
@@ -2174,6 +2668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — ध्यानाच्या सरावाने मन स्थिर होते. वाऱ्यापासून दूर असलेल्या दिव्याप्रमाणे ध्यानस्थ मन चंचल होत नाही. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2182,15 +2694,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "02a87113a42c04f36031de2f883a8ac3"
     }
   },
   {
     "id": "bhagavad-gita_6_39",
     "text_slug": "bhagavad-gita",
     "chapter": 6,
-    "verse": "39",
+    "verse": 39,
     "original": "एतन्मे संशयं कृष्ण छेत्तुमर्हस्यशेषत: ।\nत्वदन्य: संशयस्यास्य छेत्ता न ह्युपपद्यते ॥ ३९ ॥",
     "transliteration": "etan me saṁśayaṁ kṛṣṇa\nchettum arhasy aśeṣataḥ\ntvad-anyaḥ saṁśayasyāsya\nchettā na hy upapadyate",
     "translation": "This is my doubt, O Kṛṣṇa, and I ask You to dispel it completely. But for You, no one is to be found who can destroy this doubt.",
@@ -2255,6 +2768,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: ध्यानाच्या सरावाने मन स्थिर होते. वाऱ्यापासून दूर असलेल्या दिव्याप्रमाणे ध्यानस्थ मन चंचल होत नाही. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2263,15 +2794,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "6fbbf56f011c8278b607e0eff2fc967f"
     }
   },
   {
     "id": "bhagavad-gita_6_4",
     "text_slug": "bhagavad-gita",
     "chapter": 6,
-    "verse": "4",
+    "verse": 4,
     "original": "यदा हि नेन्द्रियार्थेषु न कर्मस्वनुषज्ज‍ते ।\nसर्वसङ्कल्पसन्न्यासी योगारूढस्तदोच्यते ॥ ४ ॥",
     "transliteration": "yadā hi nendriyārtheṣu\nna karmasv anuṣajjate\nsarva-saṅkalpa-sannyāsī\nyogārūḍhas tadocyate",
     "translation": "A person is said to be elevated in yoga when, having renounced all material desires, he neither acts for sense gratification nor engages in fruitive activities.",
@@ -2336,6 +2868,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: ध्यानाच्या सरावाने मन स्थिर होते. वाऱ्यापासून दूर असलेल्या दिव्याप्रमाणे ध्यानस्थ मन चंचल होत नाही. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2344,15 +2894,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 9,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "58573eb2fe80d3bf6e17e92012fc54ae"
     }
   },
   {
     "id": "bhagavad-gita_6_40",
     "text_slug": "bhagavad-gita",
     "chapter": 6,
-    "verse": "40",
+    "verse": 40,
     "original": "श्रीभगवानुवाच\nपार्थ नैवेह नामुत्र विनाशस्तस्य विद्यते ।\nन हि कल्याणकृत्कश्चिद्दुर्गतिं तात गच्छति ॥ ४० ॥",
     "transliteration": "śrī-bhagavān uvāca\npārtha naiveha nāmutra\nvināśas tasya vidyate\nna hi kalyāṇa-kṛt kaścid\ndurgatiṁ tāta gacchati",
     "translation": "The Supreme Personality of Godhead said: Son of Pṛthā, a transcendentalist engaged in auspicious activities does not meet with destruction either in this world or in the spiritual world; one who does good, My friend, is never overcome by evil.",
@@ -2417,6 +2968,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: ध्यानाच्या सरावाने मन स्थिर होते. वाऱ्यापासून दूर असलेल्या दिव्याप्रमाणे ध्यानस्थ मन चंचल होत नाही. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2425,15 +2994,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 15,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "e132afcf36fd16719dcc87b36398eb20"
     }
   },
   {
     "id": "bhagavad-gita_6_41",
     "text_slug": "bhagavad-gita",
     "chapter": 6,
-    "verse": "41",
+    "verse": 41,
     "original": "प्राप्य पुण्यकृतां लोकानुषित्वा शाश्वती: समा: ।\nश‍ुचीनां श्रीमतां गेहे योगभ्रष्टोऽभिजायते ॥ ४१ ॥",
     "transliteration": "prāpya puṇya-kṛtāṁ lokān\nuṣitvā śāśvatīḥ samāḥ\nśucīnāṁ śrīmatāṁ gehe\nyoga-bhraṣṭo ’bhijāyate",
     "translation": "The unsuccessful yogī, after many, many years of enjoyment on the planets of the pious living entities, is born into a family of righteous people, or into a family of rich aristocracy.",
@@ -2498,6 +3068,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: ध्यानाच्या सरावाने मन स्थिर होते. वाऱ्यापासून दूर असलेल्या दिव्याप्रमाणे ध्यानस्थ मन चंचल होत नाही. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2506,15 +3094,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "53c0aaa606baa6ec30fc6a542f6b3e42"
     }
   },
   {
     "id": "bhagavad-gita_6_42",
     "text_slug": "bhagavad-gita",
     "chapter": 6,
-    "verse": "42",
+    "verse": 42,
     "original": "अथवा योगिनामेव कुले भवति धीमताम् ।\nएतद्धि दुर्लभतरं लोके जन्म यदीदृशम् ॥ ४२ ॥",
     "transliteration": "atha vā yoginām eva\nkule bhavati dhīmatām\netad dhi durlabha-taraṁ\nloke janma yad īdṛśam",
     "translation": "Or [if unsuccessful after long practice of yoga] he takes his birth in a family of transcendentalists who are surely great in wisdom. Certainly, such a birth is rare in this world.",
@@ -2579,6 +3168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: ध्यानाच्या सरावाने मन स्थिर होते. वाऱ्यापासून दूर असलेल्या दिव्याप्रमाणे ध्यानस्थ मन चंचल होत नाही. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2587,15 +3194,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "63092f310f785147992ece188d951573"
     }
   },
   {
     "id": "bhagavad-gita_6_43",
     "text_slug": "bhagavad-gita",
     "chapter": 6,
-    "verse": "43",
+    "verse": 43,
     "original": "तत्र तं बुद्धिसंयोगं लभते पौर्वदेहिकम् ।\nयतते च ततो भूय: संसिद्धौ कुरुनन्दन ॥ ४३ ॥",
     "transliteration": "tatra taṁ buddhi-saṁyogaṁ\nlabhate paurva-dehikam\nyatate ca tato bhūyaḥ\nsaṁsiddhau kuru-nandana",
     "translation": "On taking such a birth, he revives the divine consciousness of his previous life, and he again tries to make further progress in order to achieve complete success, O son of Kuru.",
@@ -2660,6 +3268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — ध्यानाच्या सरावाने मन स्थिर होते. वाऱ्यापासून दूर असलेल्या दिव्याप्रमाणे ध्यानस्थ मन चंचल होत नाही. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2668,15 +3294,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "dec9398f0e71f4630d6b95692dfd361b"
     }
   },
   {
     "id": "bhagavad-gita_6_44",
     "text_slug": "bhagavad-gita",
     "chapter": 6,
-    "verse": "44",
+    "verse": 44,
     "original": "पूर्वाभ्यासेन तेनैव ह्रियते ह्यवशोऽपि स: ।\nजिज्ञासुरपि योगस्य शब्दब्रह्मातिवर्तते ॥ ४४ ॥",
     "transliteration": "pūrvābhyāsena tenaiva\nhriyate hy avaśo ’pi saḥ\njijñāsur api yogasya\nśabda-brahmātivartate",
     "translation": "By virtue of the divine consciousness of his previous life, he automatically becomes attracted to the yogic principles – even without seeking them. Such an inquisitive transcendentalist stands always above the ritualistic principles of the scriptures.",
@@ -2741,6 +3368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: ध्यानाच्या सरावाने मन स्थिर होते. वाऱ्यापासून दूर असलेल्या दिव्याप्रमाणे ध्यानस्थ मन चंचल होत नाही. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2749,15 +3394,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "24f6b4c034e239002fef97847580a04f"
     }
   },
   {
     "id": "bhagavad-gita_6_45",
     "text_slug": "bhagavad-gita",
     "chapter": 6,
-    "verse": "45",
+    "verse": 45,
     "original": "प्रयत्‍नाद्यतमानस्तु योगी संश‍ुद्धकिल्बिष: ।\nअनेकजन्मसंसिद्धस्ततो याति परां गतिम् ॥ ४५ ॥",
     "transliteration": "prayatnād yatamānas tu\nyogī saṁśuddha-kilbiṣaḥ\naneka-janma-saṁsiddhas\ntato yāti parāṁ gatim",
     "translation": "And when the yogī engages himself with sincere endeavor in making further progress, being washed of all contaminations, then ultimately, achieving perfection after many, many births of practice, he attains the supreme goal.",
@@ -2822,6 +3468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: ध्यानाच्या सरावाने मन स्थिर होते. वाऱ्यापासून दूर असलेल्या दिव्याप्रमाणे ध्यानस्थ मन चंचल होत नाही. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2830,15 +3494,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "7542a45b3164760c7f036fdb3ce8208a"
     }
   },
   {
     "id": "bhagavad-gita_6_46",
     "text_slug": "bhagavad-gita",
     "chapter": 6,
-    "verse": "46",
+    "verse": 46,
     "original": "तपस्विभ्योऽधिको योगी ज्ञानिभ्योऽपि मतोऽधिक: ।\nकर्मिभ्यश्चाधिको योगी तस्माद्योगी भवार्जुन ॥ ४६ ॥",
     "transliteration": "tapasvibhyo ’dhiko yogī\njñānibhyo ’pi mato ’dhikaḥ\nkarmibhyaś cādhiko yogī\ntasmād yogī bhavārjuna",
     "translation": "A yogī is greater than the ascetic, greater than the empiricist and greater than the fruitive worker. Therefore, O Arjuna, in all circumstances, be a yogī.",
@@ -2903,6 +3568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: ध्यानाच्या सरावाने मन स्थिर होते. वाऱ्यापासून दूर असलेल्या दिव्याप्रमाणे ध्यानस्थ मन चंचल होत नाही. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2911,15 +3594,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "8e6a8eb403468fe46811122f3368b9ed"
     }
   },
   {
     "id": "bhagavad-gita_6_47",
     "text_slug": "bhagavad-gita",
     "chapter": 6,
-    "verse": "47",
+    "verse": 47,
     "original": "योगिनामपि सर्वेषां मद्ग‍तेनान्तरात्मना ।\nश्रद्धावान्भजते यो मां स मे युक्ततमो मत: ॥ ४७ ॥",
     "transliteration": "yoginām api sarveṣāṁ\nmad-gatenāntar-ātmanā\nśraddhāvān bhajate yo māṁ\nsa me yukta-tamo mataḥ",
     "translation": "And of all yogīs, the one with great faith who always abides in Me, thinks of Me within himself and renders transcendental loving service to Me – he is the most intimately united with Me in yoga and is the highest of all. That is My opinion.",
@@ -2984,6 +3668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: ध्यानाच्या सरावाने मन स्थिर होते. वाऱ्यापासून दूर असलेल्या दिव्याप्रमाणे ध्यानस्थ मन चंचल होत नाही. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2992,15 +3694,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "ba1bb4b36df73d67b4cd1e18f8b7ae84"
     }
   },
   {
     "id": "bhagavad-gita_6_5",
     "text_slug": "bhagavad-gita",
     "chapter": 6,
-    "verse": "5",
+    "verse": 5,
     "original": "उद्धरेदात्मनात्मानं नात्मानमवसादयेत् ।\nआत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मन: ॥ ५ ॥",
     "transliteration": "uddhared ātmanātmānaṁ\nnātmānam avasādayet\nātmaiva hy ātmano bandhur\nātmaiva ripur ātmanaḥ",
     "translation": "One must deliver himself with the help of his mind, and not degrade himself. The mind is the friend of the conditioned soul, and his enemy as well.",
@@ -3065,6 +3768,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: ध्यानाच्या सरावाने मन स्थिर होते. वाऱ्यापासून दूर असलेल्या दिव्याप्रमाणे ध्यानस्थ मन चंचल होत नाही. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3073,15 +3794,16 @@
       "stats": {
         "original_words": 10,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "a7228dd86544b587c4811e9237913093"
     }
   },
   {
     "id": "bhagavad-gita_6_6",
     "text_slug": "bhagavad-gita",
     "chapter": 6,
-    "verse": "6",
+    "verse": 6,
     "original": "बन्धुरात्मात्मनस्तस्य येनात्मैवात्मना जित: ।\nअनात्मनस्तु शत्रुत्वे वर्तेतात्मैव शत्रुवत् ॥ ६ ॥",
     "transliteration": "bandhur ātmātmanas tasya\nyenātmaivātmanā jitaḥ\nanātmanas tu śatrutve\nvartetātmaiva śatru-vat",
     "translation": "For him who has conquered the mind, the mind is the best of friends; but for one who has failed to do so, his mind will remain the greatest enemy.",
@@ -3146,6 +3868,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — ध्यानाच्या सरावाने मन स्थिर होते. वाऱ्यापासून दूर असलेल्या दिव्याप्रमाणे ध्यानस्थ मन चंचल होत नाही. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3154,15 +3894,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "e1c7e817143c65c65e59c8b71176168a"
     }
   },
   {
     "id": "bhagavad-gita_6_7",
     "text_slug": "bhagavad-gita",
     "chapter": 6,
-    "verse": "7",
+    "verse": 7,
     "original": "जितात्मन: प्रशान्तस्य परमात्मा समाहित: ।\nशीतोष्णसुखदु:खेषु तथा मानापमानयो: ॥ ७ ॥",
     "transliteration": "jitātmanaḥ praśāntasya\nparamātmā samāhitaḥ\nśītoṣṇa-sukha-duḥkheṣu\ntathā mānāpamānayoḥ",
     "translation": "For one who has conquered the mind, the Supersoul is already reached, for he has attained tranquillity. To such a man happiness and distress, heat and cold, honor and dishonor are all the same.",
@@ -3227,6 +3968,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: ध्यानाच्या सरावाने मन स्थिर होते. वाऱ्यापासून दूर असलेल्या दिव्याप्रमाणे ध्यानस्थ मन चंचल होत नाही. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3235,15 +3994,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 7,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "fbd5df22be13fb7014bb5abc486c693a"
     }
   },
   {
     "id": "bhagavad-gita_6_8",
     "text_slug": "bhagavad-gita",
     "chapter": 6,
-    "verse": "8",
+    "verse": 8,
     "original": "ज्ञानविज्ञानतृप्‍तात्मा कूटस्थो विजितेन्द्रिय: ।\nयुक्त इत्युच्यते योगी समलोष्ट्राश्मकाञ्चन: ॥ ८ ॥",
     "transliteration": "jñāna-vijñāna-tṛptātmā\nkūṭa-stho vijitendriyaḥ\nyukta ity ucyate yogī\nsama-loṣṭrāśma-kāñcanaḥ",
     "translation": "A person is said to be established in self-realization and is called a yogī [or mystic] when he is fully satisfied by virtue of acquired knowledge and realization. Such a person is situated in transcendence and is self-controlled. He sees everything – whether it be pebbles, stones or gold – as the same.",
@@ -3308,6 +4068,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: ध्यानाच्या सरावाने मन स्थिर होते. वाऱ्यापासून दूर असलेल्या दिव्याप्रमाणे ध्यानस्थ मन चंचल होत नाही. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3316,15 +4094,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 8,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "ba0caa1c576381af22151631c1285872"
     }
   },
   {
     "id": "bhagavad-gita_6_9",
     "text_slug": "bhagavad-gita",
     "chapter": 6,
-    "verse": "9",
+    "verse": 9,
     "original": "सुहृन्मित्रार्युदासीनमध्यस्थद्वेष्यबन्धुषु ।\nसाधुष्वपि च पापेषु समबुद्धिर्विशिष्यते ॥ ९ ॥",
     "transliteration": "suhṛn-mitrāry-udāsīna-\nmadhyastha-dveṣya-bandhuṣu\nsādhuṣv api ca pāpeṣu\nsama-buddhir viśiṣyate",
     "translation": "A person is considered still further advanced when he regards honest well-wishers, affectionate benefactors, the neutral, mediators, the envious, friends and enemies, the pious and the sinners all with an equal mind.",
@@ -3389,6 +4168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: ध्यानाच्या सरावाने मन स्थिर होते. वाऱ्यापासून दूर असलेल्या दिव्याप्रमाणे ध्यानस्थ मन चंचल होत नाही. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3397,8 +4194,9 @@
       "stats": {
         "original_words": 9,
         "translit_words": 8,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "6ffcfe9103f914510d1ff1031cce815b"
     }
   }
 ]

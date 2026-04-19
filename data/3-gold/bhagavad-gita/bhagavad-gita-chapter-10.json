@@ -3,7 +3,7 @@
     "id": "bhagavad-gita_10_1",
     "text_slug": "bhagavad-gita",
     "chapter": 10,
-    "verse": "1",
+    "verse": 1,
     "original": "श्रीभगवानुवाच\nभूय एव महाबाहो श‍ृणु मे परमं वच: ।\nयत्तेऽहं प्रीयमाणाय वक्ष्यामि हितकाम्यया ॥ १ ॥",
     "transliteration": "śrī-bhagavān uvāca\nbhūya eva mahā-bāho\nśṛṇu me paramaṁ vacaḥ\nyat te ’haṁ prīyamāṇāya\nvakṣyāmi hita-kāmyayā",
     "translation": "The Supreme Personality of Godhead said: Listen again, O mighty-armed Arjuna. Because you are My dear friend, for your benefit I shall speak to you further, giving knowledge that is better than what I have already explained.",
@@ -68,6 +68,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: जे उत्कृष्ट आहे त्या सर्वांत ईश्वर आहे. नद्यांमध्ये गंगा, प्रकाशांत सूर्य — सर्व विभूती एकाच परमेश्वराच्या प्रकट रूपे आहेत. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -76,15 +94,16 @@
       "stats": {
         "original_words": 16,
         "translit_words": 15,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "49dd274b453a742a9d708b517d2707b7"
     }
   },
   {
     "id": "bhagavad-gita_10_10",
     "text_slug": "bhagavad-gita",
     "chapter": 10,
-    "verse": "10",
+    "verse": 10,
     "original": "तेषां सततयुक्तानां भजतां प्रीतिपूर्वकम् ।\nददामि बुद्धियोगं तं येन मामुपयान्ति ते ॥ १० ॥",
     "transliteration": "teṣāṁ satata-yuktānāṁ\nbhajatāṁ prīti-pūrvakam\ndadāmi buddhi-yogaṁ taṁ\nyena mām upayānti te",
     "translation": "To those who are constantly devoted to serving Me with love, I give the understanding by which they can come to Me.",
@@ -149,6 +168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: जे उत्कृष्ट आहे त्या सर्वांत ईश्वर आहे. नद्यांमध्ये गंगा, प्रकाशांत सूर्य — सर्व विभूती एकाच परमेश्वराच्या प्रकट रूपे आहेत. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -157,15 +194,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "ecc48a633a206bb8b26cd112d380d76b"
     }
   },
   {
     "id": "bhagavad-gita_10_11",
     "text_slug": "bhagavad-gita",
     "chapter": 10,
-    "verse": "11",
+    "verse": 11,
     "original": "तेषामेवानुकम्पार्थमहमज्ञानजं तम: ।\nनाशयाम्यात्मभावस्थो ज्ञानदीपेन भास्वता ॥ ११ ॥",
     "transliteration": "teṣām evānukampārtham\naham ajñāna-jaṁ tamaḥ\nnāśayāmy ātma-bhāva-stho\njñāna-dīpena bhāsvatā",
     "translation": "To show them special mercy, I, dwelling in their hearts, destroy with the shining lamp of knowledge the darkness born of ignorance.",
@@ -230,6 +268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — जे उत्कृष्ट आहे त्या सर्वांत ईश्वर आहे. नद्यांमध्ये गंगा, प्रकाशांत सूर्य — सर्व विभूती एकाच परमेश्वराच्या प्रकट रूपे आहेत. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -238,15 +294,16 @@
       "stats": {
         "original_words": 9,
         "translit_words": 9,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "4a3f80c7c0bff41222c008eb4b2d96f3"
     }
   },
   {
     "id": "bhagavad-gita_10_12-13",
     "text_slug": "bhagavad-gita",
     "chapter": 10,
-    "verse": "12-13",
+    "verse": 12,
     "original": "अर्जुन उवाच\nपरं ब्रह्म परं धाम पवित्रं परमं भवान् ।\nपुरुषं शाश्वतं दिव्यमादिदेवमजं विभुम् ॥ १२ ॥\nआहुस्त्वामृषय: सर्वे देवर्षिर्नारदस्तथा ।\nअसितो देवलो व्यास: स्वयं चैव ब्रवीषि मे ॥ १३ ॥",
     "transliteration": "arjuna uvāca\nparaṁ brahma paraṁ dhāma\npavitraṁ paramaṁ bhavān\npuruṣaṁ śāśvataṁ divyam\nādi-devam ajaṁ vibhum",
     "translation": "Arjuna said: You are the Supreme Personality of Godhead, the ultimate abode, the purest, the Absolute Truth. You are the eternal, transcendental, original person, the unborn, the greatest. All the great sages such as Nārada, Asita, Devala and Vyāsa confirm this truth about You, and now You Yourself are declaring it to me.",
@@ -311,6 +368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: जे उत्कृष्ट आहे त्या सर्वांत ईश्वर आहे. नद्यांमध्ये गंगा, प्रकाशांत सूर्य — सर्व विभूती एकाच परमेश्वराच्या प्रकट रूपे आहेत. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -319,15 +394,16 @@
       "stats": {
         "original_words": 31,
         "translit_words": 15,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "4b09284cfae04367183c61599d71c5cd"
     }
   },
   {
     "id": "bhagavad-gita_10_14",
     "text_slug": "bhagavad-gita",
     "chapter": 10,
-    "verse": "14",
+    "verse": 14,
     "original": "सर्वमेतदृतं मन्ये यन्मां वदसि केशव ।\nन हि ते भगवन्व्यक्तिं विदुर्देवा न दानवा: ॥ १४ ॥",
     "transliteration": "sarvam etad ṛtaṁ manye\nyan māṁ vadasi keśava\nna hi te bhagavan vyaktiṁ\nvidur devā na dānavāḥ",
     "translation": "O Kṛṣṇa, I totally accept as truth all that You have told me. Neither the demigods nor the demons, O Lord, can understand Your personality.",
@@ -392,6 +468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: जे उत्कृष्ट आहे त्या सर्वांत ईश्वर आहे. नद्यांमध्ये गंगा, प्रकाशांत सूर्य — सर्व विभूती एकाच परमेश्वराच्या प्रकट रूपे आहेत. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -400,15 +494,16 @@
       "stats": {
         "original_words": 16,
         "translit_words": 17,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "b8edbc63113db4af095ef817fdeaad6b"
     }
   },
   {
     "id": "bhagavad-gita_10_15",
     "text_slug": "bhagavad-gita",
     "chapter": 10,
-    "verse": "15",
+    "verse": 15,
     "original": "स्वयमेवात्मनात्मानं वेत्थ त्वं पुरुषोत्तम ।\nभूतभावन भूतेश देवदेव जगत्पते ॥ १५ ॥",
     "transliteration": "svayam evātmanātmānaṁ\nvettha tvaṁ puruṣottama\nbhūta-bhāvana bhūteśa\ndeva-deva jagat-pate",
     "translation": "Indeed, You alone know Yourself by Your own internal potency, O Supreme Person, origin of all, Lord of all beings, God of gods, Lord of the universe!",
@@ -473,6 +568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: जे उत्कृष्ट आहे त्या सर्वांत ईश्वर आहे. नद्यांमध्ये गंगा, प्रकाशांत सूर्य — सर्व विभूती एकाच परमेश्वराच्या प्रकट रूपे आहेत. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -481,15 +594,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 9,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "48278e3b1da14b847cd8d6ae7046c585"
     }
   },
   {
     "id": "bhagavad-gita_10_16",
     "text_slug": "bhagavad-gita",
     "chapter": 10,
-    "verse": "16",
+    "verse": 16,
     "original": "वक्तुमर्हस्यशेषेण दिव्या ह्यात्मविभूतय: ।\nयाभिर्विभूतिभिर्लोकानिमांस्त्वं व्याप्य तिष्ठसि ॥ १६ ॥",
     "transliteration": "vaktum arhasy aśeṣeṇa\ndivyā hy ātma-vibhūtayaḥ\nyābhir vibhūtibhir lokān\nimāṁs tvaṁ vyāpya tiṣṭhasi",
     "translation": "Please tell me in detail of Your divine opulences by which You pervade all these worlds.",
@@ -554,6 +668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: जे उत्कृष्ट आहे त्या सर्वांत ईश्वर आहे. नद्यांमध्ये गंगा, प्रकाशांत सूर्य — सर्व विभूती एकाच परमेश्वराच्या प्रकट रूपे आहेत. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -562,15 +694,16 @@
       "stats": {
         "original_words": 10,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "57567a643d31ba29c3affc0f1c55945e"
     }
   },
   {
     "id": "bhagavad-gita_10_17",
     "text_slug": "bhagavad-gita",
     "chapter": 10,
-    "verse": "17",
+    "verse": 17,
     "original": "कथं विद्यामहं योगिंस्त्वां सदा परिचिन्तयन् ।\nकेषु केषु च भावेषु चिन्त्योऽसि भगवन्मया ॥ १७ ॥",
     "transliteration": "kathaṁ vidyām ahaṁ yogiṁs\ntvāṁ sadā paricintayan\nkeṣu keṣu ca bhāveṣu\ncintyo ’si bhagavan mayā",
     "translation": "O Kṛṣṇa, O supreme mystic, how shall I constantly think of You, and how shall I know You? In what various forms are You to be remembered, O Supreme Personality of Godhead?",
@@ -635,6 +768,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: जे उत्कृष्ट आहे त्या सर्वांत ईश्वर आहे. नद्यांमध्ये गंगा, प्रकाशांत सूर्य — सर्व विभूती एकाच परमेश्वराच्या प्रकट रूपे आहेत. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -643,15 +794,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 15,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "463ac41b7ce66815186c60fcff7ecc94"
     }
   },
   {
     "id": "bhagavad-gita_10_18",
     "text_slug": "bhagavad-gita",
     "chapter": 10,
-    "verse": "18",
+    "verse": 18,
     "original": "विस्तरेणात्मनो योगं विभूतिं च जनार्दन ।\nभूय: कथय तृप्‍तिर्हि श‍ृण्वतो नास्ति मेऽमृतम् ॥ १८ ॥",
     "transliteration": "vistareṇātmano yogaṁ\nvibhūtiṁ ca janārdana\nbhūyaḥ kathaya tṛptir hi\nśṛṇvato nāsti me ’mṛtam",
     "translation": "O Janārdana, again please describe in detail the mystic power of Your opulences. I am never satiated in hearing about You, for the more I hear the more I want to taste the nectar of Your words.",
@@ -716,6 +868,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — जे उत्कृष्ट आहे त्या सर्वांत ईश्वर आहे. नद्यांमध्ये गंगा, प्रकाशांत सूर्य — सर्व विभूती एकाच परमेश्वराच्या प्रकट रूपे आहेत. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -724,15 +894,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "736f914e5d36388861c68dcbfd0e3b9d"
     }
   },
   {
     "id": "bhagavad-gita_10_19",
     "text_slug": "bhagavad-gita",
     "chapter": 10,
-    "verse": "19",
+    "verse": 19,
     "original": "श्रीभगवानुवाच\nहन्त ते कथयिष्यामि दिव्या ह्यात्मविभूतय: ।\nप्राधान्यत: कुरुश्रेष्ठ नास्त्यन्तो विस्तरस्य मे ॥ १९ ॥",
     "transliteration": "śrī-bhagavān uvāca\nhanta te kathayiṣyāmi\ndivyā hy ātma-vibhūtayaḥ\nprādhānyataḥ kuru-śreṣṭha\nnāsty anto vistarasya me",
     "translation": "The Supreme Personality of Godhead said: Yes, I will tell you of My splendorous manifestations, but only of those which are prominent, O Arjuna, for My opulence is limitless.",
@@ -797,6 +968,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: जे उत्कृष्ट आहे त्या सर्वांत ईश्वर आहे. नद्यांमध्ये गंगा, प्रकाशांत सूर्य — सर्व विभूती एकाच परमेश्वराच्या प्रकट रूपे आहेत. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -805,15 +994,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "15177ab00447fc95ce0e8f22f12a127a"
     }
   },
   {
     "id": "bhagavad-gita_10_2",
     "text_slug": "bhagavad-gita",
     "chapter": 10,
-    "verse": "2",
+    "verse": 2,
     "original": "न मे विदु: सुरगणा: प्रभवं न महर्षय: ।\nअहमादिर्हि देवानां महर्षीणां च सर्वश: ॥ २ ॥",
     "transliteration": "na me viduḥ sura-gaṇāḥ\nprabhavaṁ na maharṣayaḥ\naham ādir hi devānāṁ\nmaharṣīṇāṁ ca sarvaśaḥ",
     "translation": "Neither the hosts of demigods nor the great sages know My origin or opulences, for, in every respect, I am the source of the demigods and sages.",
@@ -878,6 +1068,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: जे उत्कृष्ट आहे त्या सर्वांत ईश्वर आहे. नद्यांमध्ये गंगा, प्रकाशांत सूर्य — सर्व विभूती एकाच परमेश्वराच्या प्रकट रूपे आहेत. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -886,15 +1094,16 @@
       "stats": {
         "original_words": 16,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "0fda3d5f034459130c5a4a9970847ee7"
     }
   },
   {
     "id": "bhagavad-gita_10_20",
     "text_slug": "bhagavad-gita",
     "chapter": 10,
-    "verse": "20",
+    "verse": 20,
     "original": "अहमात्मा गुडाकेश सर्वभूताशयस्थित: ।\nअहमादिश्च मध्यं च भूतानामन्त एव च ॥ २० ॥",
     "transliteration": "aham ātmā guḍākeśa\nsarva-bhūtāśaya-sthitaḥ\naham ādiś ca madhyaṁ ca\nbhūtānām anta eva ca",
     "translation": "I am the Supersoul, O Arjuna, seated in the hearts of all living entities. I am the beginning, the middle and the end of all beings.",
@@ -959,6 +1168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: जे उत्कृष्ट आहे त्या सर्वांत ईश्वर आहे. नद्यांमध्ये गंगा, प्रकाशांत सूर्य — सर्व विभूती एकाच परमेश्वराच्या प्रकट रूपे आहेत. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -967,15 +1194,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "0f0208fbb1f42b3d1eeee81725c61480"
     }
   },
   {
     "id": "bhagavad-gita_10_21",
     "text_slug": "bhagavad-gita",
     "chapter": 10,
-    "verse": "21",
+    "verse": 21,
     "original": "आदित्यानामहं विष्णुर्ज्योतिषां रविरंश‍ुमान् ।\nमरीचिर्मरुतामस्मि नक्षत्राणामहं शशी ॥ २१ ॥",
     "transliteration": "ādityānām ahaṁ viṣṇur\njyotiṣāṁ ravir aṁśumān\nmarīcir marutām asmi\nnakṣatrāṇām ahaṁ śaśī",
     "translation": "Of the Ādityas I am Viṣṇu, of lights I am the radiant sun, of the Maruts I am Marīci, and among the stars I am the moon.",
@@ -1040,6 +1268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: जे उत्कृष्ट आहे त्या सर्वांत ईश्वर आहे. नद्यांमध्ये गंगा, प्रकाशांत सूर्य — सर्व विभूती एकाच परमेश्वराच्या प्रकट रूपे आहेत. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1048,15 +1294,16 @@
       "stats": {
         "original_words": 10,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "f5f56202fd557b567bd3e47343fd7769"
     }
   },
   {
     "id": "bhagavad-gita_10_22",
     "text_slug": "bhagavad-gita",
     "chapter": 10,
-    "verse": "22",
+    "verse": 22,
     "original": "वेदानां सामवेदोऽस्मि देवानामस्मि वासव: ।\nइन्द्रियाणां मनश्चास्मि भूतानामस्मि चेतना ॥ २२ ॥",
     "transliteration": "vedānāṁ sāma-vedo ’smi\ndevānām asmi vāsavaḥ\nindriyāṇāṁ manaś cāsmi\nbhūtānām asmi cetanā",
     "translation": "Of the Vedas I am the Sāma Veda; of the demigods I am Indra, the king of heaven; of the senses I am the mind; and in living beings I am the living force [consciousness].",
@@ -1121,6 +1368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: जे उत्कृष्ट आहे त्या सर्वांत ईश्वर आहे. नद्यांमध्ये गंगा, प्रकाशांत सूर्य — सर्व विभूती एकाच परमेश्वराच्या प्रकट रूपे आहेत. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1129,15 +1394,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "abbb4b8156f9ec5ffe320d36e6aa330c"
     }
   },
   {
     "id": "bhagavad-gita_10_23",
     "text_slug": "bhagavad-gita",
     "chapter": 10,
-    "verse": "23",
+    "verse": 23,
     "original": "रुद्राणां शङ्करश्चास्मि वित्तेशो यक्षरक्षसाम् ।\nवसूनां पावकश्चास्मि मेरु: शिखरिणामहम् ॥ २३ ॥",
     "transliteration": "rudrāṇāṁ śaṅkaraś cāsmi\nvitteśo yakṣa-rakṣasām\nvasūnāṁ pāvakaś cāsmi\nmeruḥ śikhariṇām aham",
     "translation": "Of all the Rudras I am Lord Śiva, of the Yakṣas and Rākṣasas I am the Lord of wealth [Kuvera], of the Vasus I am fire [Agni], and of mountains I am Meru.",
@@ -1202,6 +1468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — जे उत्कृष्ट आहे त्या सर्वांत ईश्वर आहे. नद्यांमध्ये गंगा, प्रकाशांत सूर्य — सर्व विभूती एकाच परमेश्वराच्या प्रकट रूपे आहेत. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1210,15 +1494,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "9b39e7419d4485eb4d507e0a10626567"
     }
   },
   {
     "id": "bhagavad-gita_10_24",
     "text_slug": "bhagavad-gita",
     "chapter": 10,
-    "verse": "24",
+    "verse": 24,
     "original": "पुरोधसां च मुख्यं मां विद्धि पार्थ बृहस्पतिम् ।\nसेनानीनामहं स्कन्द: सरसामस्मि सागर: ॥ २४ ॥",
     "transliteration": "purodhasāṁ ca mukhyaṁ māṁ\nviddhi pārtha bṛhaspatim\nsenānīnām ahaṁ skandaḥ\nsarasām asmi sāgaraḥ",
     "translation": "Of priests, O Arjuna, know Me to be the chief, Bṛhaspati. Of generals I am Kārttikeya, and of bodies of water I am the ocean.",
@@ -1283,6 +1568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: जे उत्कृष्ट आहे त्या सर्वांत ईश्वर आहे. नद्यांमध्ये गंगा, प्रकाशांत सूर्य — सर्व विभूती एकाच परमेश्वराच्या प्रकट रूपे आहेत. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1291,15 +1594,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "c3fa68f8dfc200bb71d896c6b69dd703"
     }
   },
   {
     "id": "bhagavad-gita_10_25",
     "text_slug": "bhagavad-gita",
     "chapter": 10,
-    "verse": "25",
+    "verse": 25,
     "original": "महर्षीणां भृगुरहं गिरामस्म्येकमक्षरम् ।\nयज्ञानां जपयज्ञोऽस्मि स्थावराणां हिमालय: ॥ २५ ॥",
     "transliteration": "maharṣīṇāṁ bhṛgur ahaṁ\ngirām asmy ekam akṣaram\nyajñānāṁ japa-yajño ’smi\nsthāvarāṇāṁ himālayaḥ",
     "translation": "Of the great sages I am Bhṛgu; of vibrations I am the transcendental oṁ. Of sacrifices I am the chanting of the holy names [japa], and of immovable things I am the Himālayas.",
@@ -1364,6 +1668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: जे उत्कृष्ट आहे त्या सर्वांत ईश्वर आहे. नद्यांमध्ये गंगा, प्रकाशांत सूर्य — सर्व विभूती एकाच परमेश्वराच्या प्रकट रूपे आहेत. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1372,15 +1694,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "c89c565eac0da44426e57862fd03dfbc"
     }
   },
   {
     "id": "bhagavad-gita_10_26",
     "text_slug": "bhagavad-gita",
     "chapter": 10,
-    "verse": "26",
+    "verse": 26,
     "original": "अश्वत्थ: सर्ववृक्षाणां देवर्षीणां च नारद: ।\nगन्धर्वाणां चित्ररथ: सिद्धानां कपिलो मुनि: ॥ २६ ॥",
     "transliteration": "aśvatthaḥ sarva-vṛkṣāṇāṁ\ndevarṣīṇāṁ ca nāradaḥ\ngandharvāṇāṁ citrarathaḥ\nsiddhānāṁ kapilo muniḥ",
     "translation": "Of all trees I am the banyan tree, and of the sages among the demigods I am Nārada. Of the Gandharvas I am Citraratha, and among perfected beings I am the sage Kapila.",
@@ -1445,6 +1768,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: जे उत्कृष्ट आहे त्या सर्वांत ईश्वर आहे. नद्यांमध्ये गंगा, प्रकाशांत सूर्य — सर्व विभूती एकाच परमेश्वराच्या प्रकट रूपे आहेत. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1453,15 +1794,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "ecc7ec80522f4cf87c3adf587873ca98"
     }
   },
   {
     "id": "bhagavad-gita_10_27",
     "text_slug": "bhagavad-gita",
     "chapter": 10,
-    "verse": "27",
+    "verse": 27,
     "original": "उच्‍चैःश्रवसमश्वानां विद्धि माममृतोद्भ‍वम् ।\nऐरावतं गजेन्द्राणां नराणां च नराधिपम् ॥ २७ ॥",
     "transliteration": "uccaiḥśravasam aśvānāṁ\nviddhi mām amṛtodbhavam\nairāvataṁ gajendrāṇāṁ\nnarāṇāṁ ca narādhipam",
     "translation": "Of horses know Me to be Uccaiḥśravā, produced during the churning of the ocean for nectar. Of lordly elephants I am Airāvata, and among men I am the monarch.",
@@ -1526,6 +1868,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: जे उत्कृष्ट आहे त्या सर्वांत ईश्वर आहे. नद्यांमध्ये गंगा, प्रकाशांत सूर्य — सर्व विभूती एकाच परमेश्वराच्या प्रकट रूपे आहेत. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1534,15 +1894,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "e533060a0a92d8a6f7bb107b8584a40f"
     }
   },
   {
     "id": "bhagavad-gita_10_28",
     "text_slug": "bhagavad-gita",
     "chapter": 10,
-    "verse": "28",
+    "verse": 28,
     "original": "आयुधानामहं वज्रं धेनूनामस्मि कामधुक् ।\nप्रजनश्चास्मि कन्दर्प: सर्पाणामस्मि वासुकि: ॥ २८ ॥",
     "transliteration": "āyudhānām ahaṁ vajraṁ\ndhenūnām asmi kāma-dhuk\nprajanaś cāsmi kandarpaḥ\nsarpāṇām asmi vāsukiḥ",
     "translation": "Of weapons I am the thunderbolt; among cows I am the surabhi. Of causes for procreation I am Kandarpa, the god of love, and of serpents I am Vāsuki.",
@@ -1607,6 +1968,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: जे उत्कृष्ट आहे त्या सर्वांत ईश्वर आहे. नद्यांमध्ये गंगा, प्रकाशांत सूर्य — सर्व विभूती एकाच परमेश्वराच्या प्रकट रूपे आहेत. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1615,15 +1994,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "9e30b3fdf8596cac792c42418708979c"
     }
   },
   {
     "id": "bhagavad-gita_10_29",
     "text_slug": "bhagavad-gita",
     "chapter": 10,
-    "verse": "29",
+    "verse": 29,
     "original": "अनन्तश्चास्मि नागानां वरुणो यादसामहम् ।\nपितॄणामर्यमा चास्मि यम: संयमतामहम् ॥ २९ ॥",
     "transliteration": "anantaś cāsmi nāgānāṁ\nvaruṇo yādasām aham\npitṝṇām aryamā cāsmi\nyamaḥ saṁyamatām aham",
     "translation": "Of the many-hooded Nāgas I am Ananta, and among the aquatics I am the demigod Varuṇa. Of departed ancestors I am Aryamā, and among the dispensers of law I am Yama, the lord of death.",
@@ -1688,6 +2068,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — जे उत्कृष्ट आहे त्या सर्वांत ईश्वर आहे. नद्यांमध्ये गंगा, प्रकाशांत सूर्य — सर्व विभूती एकाच परमेश्वराच्या प्रकट रूपे आहेत. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1696,15 +2094,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "aaeeaee5cbf9d95c6845e0e604abccca"
     }
   },
   {
     "id": "bhagavad-gita_10_3",
     "text_slug": "bhagavad-gita",
     "chapter": 10,
-    "verse": "3",
+    "verse": 3,
     "original": "यो मामजमनादिं च वेत्ति लोकमहेश्वरम् ।\nअसम्मूढ: स मर्त्येषु सर्वपापै: प्रमुच्यते ॥ ३ ॥",
     "transliteration": "yo mām ajam anādiṁ ca\nvetti loka-maheśvaram\nasammūḍhaḥ sa martyeṣu\nsarva-pāpaiḥ pramucyate",
     "translation": "He who knows Me as the unborn, as the beginningless, as the Supreme Lord of all the worlds – he only, undeluded among men, is freed from all sins.",
@@ -1769,6 +2168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: जे उत्कृष्ट आहे त्या सर्वांत ईश्वर आहे. नद्यांमध्ये गंगा, प्रकाशांत सूर्य — सर्व विभूती एकाच परमेश्वराच्या प्रकट रूपे आहेत. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1777,15 +2194,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "ea43380354f6b476b35660fddff242ad"
     }
   },
   {
     "id": "bhagavad-gita_10_30",
     "text_slug": "bhagavad-gita",
     "chapter": 10,
-    "verse": "30",
+    "verse": 30,
     "original": "प्रह्लादश्चास्मि दैत्यानां काल: कलयतामहम् ।\nमृगाणां च मृगेन्द्रोऽहं वैनतेयश्च पक्षिणाम् ॥ ३० ॥",
     "transliteration": "prahlādaś cāsmi daityānāṁ\nkālaḥ kalayatām aham\nmṛgāṇāṁ ca mṛgendro ’haṁ\nvainateyaś ca pakṣiṇām",
     "translation": "Among the Daitya demons I am the devoted Prahlāda, among subduers I am time, among beasts I am the lion, and among birds I am Garuḍa.",
@@ -1850,6 +2268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: जे उत्कृष्ट आहे त्या सर्वांत ईश्वर आहे. नद्यांमध्ये गंगा, प्रकाशांत सूर्य — सर्व विभूती एकाच परमेश्वराच्या प्रकट रूपे आहेत. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1858,15 +2294,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "7d3693305138e313a63e4b1785fcf0dd"
     }
   },
   {
     "id": "bhagavad-gita_10_31",
     "text_slug": "bhagavad-gita",
     "chapter": 10,
-    "verse": "31",
+    "verse": 31,
     "original": "पवन: पवतामस्मि राम: शस्त्रभृतामहम् ।\nझषाणां मकरश्चास्मि स्रोतसामस्मि जाह्नवी ॥ ३१ ॥",
     "transliteration": "pavanaḥ pavatām asmi\nrāmaḥ śastra-bhṛtām aham\njhaṣāṇāṁ makaraś cāsmi\nsrotasām asmi jāhnavī",
     "translation": "Of purifiers I am the wind, of the wielders of weapons I am Rāma, of fishes I am the shark, and of flowing rivers I am the Ganges.",
@@ -1931,6 +2368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: जे उत्कृष्ट आहे त्या सर्वांत ईश्वर आहे. नद्यांमध्ये गंगा, प्रकाशांत सूर्य — सर्व विभूती एकाच परमेश्वराच्या प्रकट रूपे आहेत. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1939,15 +2394,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "d075e464d6bc471630fffa77b23ad459"
     }
   },
   {
     "id": "bhagavad-gita_10_32",
     "text_slug": "bhagavad-gita",
     "chapter": 10,
-    "verse": "32",
+    "verse": 32,
     "original": "सर्गाणामादिरन्तश्च मध्यं चैवाहमर्जुन ।\nअध्यात्मविद्या विद्यानां वाद: प्रवदतामहम् ॥ ३२ ॥",
     "transliteration": "sargāṇām ādir antaś ca\nmadhyaṁ caivāham arjuna\nadhyātma-vidyā vidyānāṁ\nvādaḥ pravadatām aham",
     "translation": "Of all creations I am the beginning and the end and also the middle, O Arjuna. Of all sciences I am the spiritual science of the self, and among logicians I am the conclusive truth.",
@@ -2012,6 +2468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: जे उत्कृष्ट आहे त्या सर्वांत ईश्वर आहे. नद्यांमध्ये गंगा, प्रकाशांत सूर्य — सर्व विभूती एकाच परमेश्वराच्या प्रकट रूपे आहेत. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2020,15 +2494,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "9abb0323e2caf17de0ef3261e5676a13"
     }
   },
   {
     "id": "bhagavad-gita_10_33",
     "text_slug": "bhagavad-gita",
     "chapter": 10,
-    "verse": "33",
+    "verse": 33,
     "original": "अक्षराणामकारोऽस्मि द्वन्द्व: सामासिकस्य च ।\nअहमेवाक्षय: कालो धाताहं विश्वतोमुख: ॥ ३३ ॥",
     "transliteration": "akṣarāṇām a-kāro ’smi\ndvandvaḥ sāmāsikasya ca\naham evākṣayaḥ kālo\ndhātāhaṁ viśvato-mukhaḥ",
     "translation": "Of letters I am the letter A, and among compound words I am the dual compound. I am also inexhaustible time, and of creators I am Brahmā.",
@@ -2093,6 +2568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: जे उत्कृष्ट आहे त्या सर्वांत ईश्वर आहे. नद्यांमध्ये गंगा, प्रकाशांत सूर्य — सर्व विभूती एकाच परमेश्वराच्या प्रकट रूपे आहेत. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2101,15 +2594,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "3f28671556a8143c4cc71c97fbe68f4f"
     }
   },
   {
     "id": "bhagavad-gita_10_34",
     "text_slug": "bhagavad-gita",
     "chapter": 10,
-    "verse": "34",
+    "verse": 34,
     "original": "मृत्यु: सर्वहरश्चाहमुद्भ‍वश्च भविष्यताम् ।\nकीर्ति: श्रीर्वाक्‍च नारीणां स्मृतिर्मेधा धृति: क्षमा ॥ ३४ ॥",
     "transliteration": "mṛtyuḥ sarva-haraś cāham\nudbhavaś ca bhaviṣyatām\nkīrtiḥ śrīr vāk ca nārīṇāṁ\nsmṛtir medhā dhṛtiḥ kṣamā",
     "translation": "I am all-devouring death, and I am the generating principle of all that is yet to be. Among women I am fame, fortune, fine speech, memory, intelligence, steadfastness and patience.",
@@ -2174,6 +2668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — जे उत्कृष्ट आहे त्या सर्वांत ईश्वर आहे. नद्यांमध्ये गंगा, प्रकाशांत सूर्य — सर्व विभूती एकाच परमेश्वराच्या प्रकट रूपे आहेत. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2182,15 +2694,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 15,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "7f77e06298c6e3f27e70877890e314fc"
     }
   },
   {
     "id": "bhagavad-gita_10_35",
     "text_slug": "bhagavad-gita",
     "chapter": 10,
-    "verse": "35",
+    "verse": 35,
     "original": "बृहत्साम तथा साम्न‍ां गायत्री छन्दसामहम् ।\nमासानां मार्गशीर्षोऽहमृतूनां कुसुमाकर: ॥ ३५ ॥",
     "transliteration": "bṛhat-sāma tathā sāmnāṁ\ngāyatrī chandasām aham\nmāsānāṁ mārga-śīrṣo ’ham\nṛtūnāṁ kusumākaraḥ",
     "translation": "Of the hymns in the Sāma Veda I am the Bṛhat-sāma, and of poetry I am the Gāyatrī. Of months I am Mārgaśīrṣa [November-December], and of seasons I am flower-bearing spring.",
@@ -2255,6 +2768,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: जे उत्कृष्ट आहे त्या सर्वांत ईश्वर आहे. नद्यांमध्ये गंगा, प्रकाशांत सूर्य — सर्व विभूती एकाच परमेश्वराच्या प्रकट रूपे आहेत. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2263,15 +2794,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "05b341c3995edaf789ec0aa9ee5220fa"
     }
   },
   {
     "id": "bhagavad-gita_10_36",
     "text_slug": "bhagavad-gita",
     "chapter": 10,
-    "verse": "36",
+    "verse": 36,
     "original": "द्यूतं छलयतामस्मि तेजस्तेजस्विनामहम् ।\nजयोऽस्मि व्यवसायोऽस्मि सत्त्वं सत्त्ववतामहम् ॥ ३६ ॥",
     "transliteration": "dyūtaṁ chalayatām asmi\ntejas tejasvinām aham\njayo ’smi vyavasāyo ’smi\nsattvaṁ sattvavatām aham",
     "translation": "I am also the gambling of cheats, and of the splendid I am the splendor. I am victory, I am adventure, and I am the strength of the strong.",
@@ -2336,6 +2868,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: जे उत्कृष्ट आहे त्या सर्वांत ईश्वर आहे. नद्यांमध्ये गंगा, प्रकाशांत सूर्य — सर्व विभूती एकाच परमेश्वराच्या प्रकट रूपे आहेत. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2344,15 +2894,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "29fc9693ccc9adc939c4c255f086d9a6"
     }
   },
   {
     "id": "bhagavad-gita_10_37",
     "text_slug": "bhagavad-gita",
     "chapter": 10,
-    "verse": "37",
+    "verse": 37,
     "original": "वृष्णीनां वासुदेवोऽस्मि पाण्डवानां धनञ्जय: ।\nमुनीनामप्यहं व्यास: कवीनामुशना कवि: ॥ ३७ ॥",
     "transliteration": "vṛṣṇīnāṁ vāsudevo ’smi\npāṇḍavānāṁ dhanañ-jayaḥ\nmunīnām apy ahaṁ vyāsaḥ\nkavīnām uśanā kaviḥ",
     "translation": "Of the descendants of Vṛṣṇi I am Vāsudeva, and of the Pāṇḍavas I am Arjuna. Of the sages I am Vyāsa, and among great thinkers I am Uśanā.",
@@ -2417,6 +2968,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: जे उत्कृष्ट आहे त्या सर्वांत ईश्वर आहे. नद्यांमध्ये गंगा, प्रकाशांत सूर्य — सर्व विभूती एकाच परमेश्वराच्या प्रकट रूपे आहेत. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2425,15 +2994,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "9217b6b0a02c8a1c3ca6d3c0c8fc38a6"
     }
   },
   {
     "id": "bhagavad-gita_10_38",
     "text_slug": "bhagavad-gita",
     "chapter": 10,
-    "verse": "38",
+    "verse": 38,
     "original": "दण्डो दमयतामस्मि नीतिरस्मि जिगीषताम् ।\nमौनं चैवास्मि गुह्यानां ज्ञानं ज्ञानवतामहम् ॥ ३८ ॥",
     "transliteration": "daṇḍo damayatām asmi\nnītir asmi jigīṣatām\nmaunaṁ caivāsmi guhyānāṁ\njñānaṁ jñānavatām aham",
     "translation": "Among all means of suppressing lawlessness I am punishment, and of those who seek victory I am morality. Of secret things I am silence, and of the wise I am the wisdom.",
@@ -2498,6 +3068,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: जे उत्कृष्ट आहे त्या सर्वांत ईश्वर आहे. नद्यांमध्ये गंगा, प्रकाशांत सूर्य — सर्व विभूती एकाच परमेश्वराच्या प्रकट रूपे आहेत. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2506,15 +3094,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "85d77e88c18b7274386965668ae4a75e"
     }
   },
   {
     "id": "bhagavad-gita_10_39",
     "text_slug": "bhagavad-gita",
     "chapter": 10,
-    "verse": "39",
+    "verse": 39,
     "original": "यच्च‍ापि सर्वभूतानां बीजं तदहमर्जुन ।\nन तदस्ति विना यत्स्यान्मया भूतं चराचरम् ॥ ३९ ॥",
     "transliteration": "yac cāpi sarva-bhūtānāṁ\nbījaṁ tad aham arjuna\nna tad asti vinā yat syān\nmayā bhūtaṁ carācaram",
     "translation": "Furthermore, O Arjuna, I am the generating seed of all existences. There is no being – moving or nonmoving – that can exist without Me.",
@@ -2579,6 +3168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: जे उत्कृष्ट आहे त्या सर्वांत ईश्वर आहे. नद्यांमध्ये गंगा, प्रकाशांत सूर्य — सर्व विभूती एकाच परमेश्वराच्या प्रकट रूपे आहेत. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2587,15 +3194,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 16,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "8b049b2763cb7ad0e003f6bf9f7736f1"
     }
   },
   {
     "id": "bhagavad-gita_10_4-5",
     "text_slug": "bhagavad-gita",
     "chapter": 10,
-    "verse": "4-5",
+    "verse": 4,
     "original": "बुद्धिर्ज्ञानमसम्मोह: क्षमा सत्यं दम: शम: ।\nसुखं दु:खं भवोऽभावो भयं चाभयमेव च ॥ ४ ॥\nअहिंसा समता तुष्टिस्तपो दानं यशोऽयश: ।\nभवन्ति भावा भूतानां मत्त एव पृथग्विधा: ॥ ५ ॥",
     "transliteration": "buddhir jñānam asammohaḥ\nkṣamā satyaṁ damaḥ śamaḥ\nsukhaṁ duḥkhaṁ bhavo ’bhāvo\nbhayaṁ cābhayam eva ca",
     "translation": "Intelligence, knowledge, freedom from doubt and delusion, forgiveness, truthfulness, control of the senses, control of the mind, happiness and distress, birth, death, fear, fearlessness, nonviolence, equanimity, satisfaction, austerity, charity, fame and infamy – all these various qualities of living beings are created by Me alone.",
@@ -2660,6 +3268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — जे उत्कृष्ट आहे त्या सर्वांत ईश्वर आहे. नद्यांमध्ये गंगा, प्रकाशांत सूर्य — सर्व विभूती एकाच परमेश्वराच्या प्रकट रूपे आहेत. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2668,15 +3294,16 @@
       "stats": {
         "original_words": 30,
         "translit_words": 15,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "fabdf25cbc68641782b019819f604e2c"
     }
   },
   {
     "id": "bhagavad-gita_10_40",
     "text_slug": "bhagavad-gita",
     "chapter": 10,
-    "verse": "40",
+    "verse": 40,
     "original": "नान्तोऽस्ति मम दिव्यानां विभूतीनां परन्तप ।\nएष तूद्देशत: प्रोक्तो विभूतेर्विस्तरो मया ॥ ४० ॥",
     "transliteration": "nānto ’sti mama divyānāṁ\nvibhūtīnāṁ paran-tapa\neṣa tūddeśataḥ prokto\nvibhūter vistaro mayā",
     "translation": "O mighty conqueror of enemies, there is no end to My divine manifestations. What I have spoken to you is but a mere indication of My infinite opulences.",
@@ -2741,6 +3368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: जे उत्कृष्ट आहे त्या सर्वांत ईश्वर आहे. नद्यांमध्ये गंगा, प्रकाशांत सूर्य — सर्व विभूती एकाच परमेश्वराच्या प्रकट रूपे आहेत. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2749,15 +3394,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "2d4f4da25231aeadf3edf7e3c4ee2bd9"
     }
   },
   {
     "id": "bhagavad-gita_10_41",
     "text_slug": "bhagavad-gita",
     "chapter": 10,
-    "verse": "41",
+    "verse": 41,
     "original": "यद्यद्विभूतिमत्सत्त्वं श्रीमदूर्जितमेव वा ।\nतत्तदेवावगच्छ त्वं मम तेजोऽशसम्भवम् ॥ ४१ ॥",
     "transliteration": "yad yad vibhūtimat sattvaṁ\nśrīmad ūrjitam eva vā\ntat tad evāvagaccha tvaṁ\nmama tejo-’ṁśa-sambhavam",
     "translation": "Know that all opulent, beautiful and glorious creations spring from but a spark of My splendor.",
@@ -2822,6 +3468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: जे उत्कृष्ट आहे त्या सर्वांत ईश्वर आहे. नद्यांमध्ये गंगा, प्रकाशांत सूर्य — सर्व विभूती एकाच परमेश्वराच्या प्रकट रूपे आहेत. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2830,15 +3494,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "15f3677abf3896b019c3d49bc10b42d3"
     }
   },
   {
     "id": "bhagavad-gita_10_42",
     "text_slug": "bhagavad-gita",
     "chapter": 10,
-    "verse": "42",
+    "verse": 42,
     "original": "अथवा बहुनैतेन किं ज्ञातेन तवार्जुन ।\nविष्टभ्याहमिदं कृत्स्नमेकांशेन स्थितो जगत् ॥ ४२ ॥",
     "transliteration": "atha vā bahunaitena\nkiṁ jñātena tavārjuna\nviṣṭabhyāham idaṁ kṛtsnam\nekāṁśena sthito jagat",
     "translation": "But what need is there, Arjuna, for all this detailed knowledge? With a single fragment of Myself I pervade and support this entire universe.",
@@ -2903,6 +3568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: जे उत्कृष्ट आहे त्या सर्वांत ईश्वर आहे. नद्यांमध्ये गंगा, प्रकाशांत सूर्य — सर्व विभूती एकाच परमेश्वराच्या प्रकट रूपे आहेत. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2911,15 +3594,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "20b96620d11e1cac99bc92a1842e1915"
     }
   },
   {
     "id": "bhagavad-gita_10_6",
     "text_slug": "bhagavad-gita",
     "chapter": 10,
-    "verse": "6",
+    "verse": 6,
     "original": "महर्षय: सप्‍त पूर्वे चत्वारो मनवस्तथा ।\nमद्भ‍ावा मानसा जाता येषां लोक इमा: प्रजा: ॥ ६ ॥",
     "transliteration": "maharṣayaḥ sapta pūrve\ncatvāro manavas tathā\nmad-bhāvā mānasā jātā\nyeṣāṁ loka imāḥ prajāḥ",
     "translation": "The seven great sages and before them the four other great sages and the Manus [progenitors of mankind] come from Me, born from My mind, and all the living beings populating the various planets descend from them.",
@@ -2984,6 +3668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: जे उत्कृष्ट आहे त्या सर्वांत ईश्वर आहे. नद्यांमध्ये गंगा, प्रकाशांत सूर्य — सर्व विभूती एकाच परमेश्वराच्या प्रकट रूपे आहेत. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2992,15 +3694,16 @@
       "stats": {
         "original_words": 16,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "0d92475f452973033d82988a2db5610f"
     }
   },
   {
     "id": "bhagavad-gita_10_7",
     "text_slug": "bhagavad-gita",
     "chapter": 10,
-    "verse": "7",
+    "verse": 7,
     "original": "एतां विभूतिं योगं च मम यो वेत्ति तत्त्वत: ।\nसोऽविकल्पेन योगेन युज्यते नात्र संशय: ॥ ७ ॥",
     "transliteration": "etāṁ vibhūtiṁ yogaṁ ca\nmama yo vetti tattvataḥ\nso ’vikalpena yogena\nyujyate nātra saṁśayaḥ",
     "translation": "One who is factually convinced of this opulence and mystic power of Mine engages in unalloyed devotional service; of this there is no doubt.",
@@ -3065,6 +3768,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: जे उत्कृष्ट आहे त्या सर्वांत ईश्वर आहे. नद्यांमध्ये गंगा, प्रकाशांत सूर्य — सर्व विभूती एकाच परमेश्वराच्या प्रकट रूपे आहेत. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3073,15 +3794,16 @@
       "stats": {
         "original_words": 17,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "0c000b251581189da5043786a2abc95f"
     }
   },
   {
     "id": "bhagavad-gita_10_8",
     "text_slug": "bhagavad-gita",
     "chapter": 10,
-    "verse": "8",
+    "verse": 8,
     "original": "अहं सर्वस्य प्रभवो मत्त: सर्वं प्रवर्तते ।\nइति मत्वा भजन्ते मां बुधा भावसमन्विता: ॥ ८ ॥",
     "transliteration": "ahaṁ sarvasya prabhavo\nmattaḥ sarvaṁ pravartate\niti matvā bhajante māṁ\nbudhā bhāva-samanvitāḥ",
     "translation": "I am the source of all spiritual and material worlds. Everything emanates from Me. The wise who perfectly know this engage in My devotional service and worship Me with all their hearts.",
@@ -3146,6 +3868,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — जे उत्कृष्ट आहे त्या सर्वांत ईश्वर आहे. नद्यांमध्ये गंगा, प्रकाशांत सूर्य — सर्व विभूती एकाच परमेश्वराच्या प्रकट रूपे आहेत. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3154,15 +3894,16 @@
       "stats": {
         "original_words": 16,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "ec807509a5c92670855d0578eb6b5995"
     }
   },
   {
     "id": "bhagavad-gita_10_9",
     "text_slug": "bhagavad-gita",
     "chapter": 10,
-    "verse": "9",
+    "verse": 9,
     "original": "मच्च‍ित्ता मद्ग‍तप्राणा बोधयन्त: परस्परम् ।\nकथयन्तश्च मां नित्यं तुष्यन्ति च रमन्ति च ॥ ९ ॥",
     "transliteration": "mac-cittā mad-gata-prāṇā\nbodhayantaḥ parasparam\nkathayantaś ca māṁ nityaṁ\ntuṣyanti ca ramanti ca",
     "translation": "The thoughts of My pure devotees dwell in Me, their lives are fully devoted to My service, and they derive great satisfaction and bliss from always enlightening one another and conversing about Me.",
@@ -3227,6 +3968,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: जे उत्कृष्ट आहे त्या सर्वांत ईश्वर आहे. नद्यांमध्ये गंगा, प्रकाशांत सूर्य — सर्व विभूती एकाच परमेश्वराच्या प्रकट रूपे आहेत. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3235,8 +3994,9 @@
       "stats": {
         "original_words": 15,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "d75c508e2fc899adb3cf99cf056ee167"
     }
   }
 ]

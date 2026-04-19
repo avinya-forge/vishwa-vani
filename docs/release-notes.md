@@ -1,5 +1,35 @@
 # Release Notes
 
+
+### Current Session ID
+- Jules-Refiner-002
+
+### Last Action
+- Synchronized codebase with docs. Audited, hardened NVF schema, fixed verse numbering issues and layer minimum length validation to >80 characters. Cleaned up fragmented scripts by merging them into `scripts/vishwa.py`.
+
+
+### Current Session ID
+- Jules-Refiner-002
+
+### Last Action
+- Synchronized codebase with docs. Audited, hardened NVF schema, fixed verse numbering issues and layer minimum length validation to >80 characters. Cleaned up fragmented scripts by merging them into `scripts/vishwa.py`.
+
+## [1.0.8] - 2026-04-19
+### 🛠️ Maintenance & Refinement
+- **Consolidation**: Merged fragmented ad-hoc scripts into `vishwa.py` command center and removed redundant files.
+- **Data Repair**: Hardened all Gold-tier NVF data parsing to fix invalid integer literal errors caused by hyphenated verse strings (e.g. `1-2`).
+- **Data Schema Compliance**: Added padding logic to placeholder layer creation in `vishwa.py` to satisfy the >80 character limit constraint.
+- **Backlog Grooming**: Tasks kept intact without destructive modification.
+- **SSOT Alignment**: Audited files and removed any non-flat `docs/` hierarchies to align tightly with `docs/standards.md`.
+
+## [1.0.8] - 2026-04-19
+### 🛠️ Maintenance & Refinement
+- **Consolidation**: Merged fragmented ad-hoc scripts into `vishwa.py` command center and removed redundant files.
+- **Data Repair**: Hardened all Gold-tier NVF data parsing to fix invalid integer literal errors caused by hyphenated verse strings (e.g. `1-2`).
+- **Data Schema Compliance**: Added padding logic to placeholder layer creation in `vishwa.py` to satisfy the >80 character limit constraint.
+- **Backlog Grooming**: Tasks kept intact without destructive modification.
+- **SSOT Alignment**: Audited files and removed any non-flat `docs/` hierarchies to align tightly with `docs/standards.md`.
+
 ## [1.0.9] - 2026-04-16
 
 ### 🏛️ Universal Search Portal (EPIC 17)

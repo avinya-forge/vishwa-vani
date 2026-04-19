@@ -1,1 +1,170 @@
-[{"id": "mahabharata_6_1", "text_slug": "mahabharata", "chapter": 6, "verse": 1, "original": "Mock Verse 6.1", "transliteration": "Mock Transliteration 6.1", "layers": []}, {"id": "mahabharata_6_2", "text_slug": "mahabharata", "chapter": 6, "verse": 2, "original": "Mock Verse 6.2", "transliteration": "Mock Transliteration 6.2", "layers": []}, {"id": "mahabharata_6_3", "text_slug": "mahabharata", "chapter": 6, "verse": 3, "original": "Mock Verse 6.3", "transliteration": "Mock Transliteration 6.3", "layers": []}]
+[
+  {
+    "id": "mahabharata_6_1",
+    "text_slug": "mahabharata",
+    "chapter": 6,
+    "verse": 1,
+    "original": "Mock Verse 6.1",
+    "transliteration": "Mock Transliteration 6.1",
+    "layers": [
+      {
+        "author": "iskcon",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
+      }
+    ],
+    "ai_metadata": {
+      "topics": [],
+      "correlations": {},
+      "stats": {
+        "original_words": 3,
+        "translit_words": 3,
+        "layers_count": 6
+      },
+      "fingerprint": "b703c398d433df6da9292fd5095a4e88"
+    }
+  },
+  {
+    "id": "mahabharata_6_2",
+    "text_slug": "mahabharata",
+    "chapter": 6,
+    "verse": 2,
+    "original": "Mock Verse 6.2",
+    "transliteration": "Mock Transliteration 6.2",
+    "layers": [
+      {
+        "author": "iskcon",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
+      }
+    ],
+    "ai_metadata": {
+      "topics": [],
+      "correlations": {},
+      "stats": {
+        "original_words": 3,
+        "translit_words": 3,
+        "layers_count": 6
+      },
+      "fingerprint": "8d0d178193d406360ddec8ca2490be25"
+    }
+  },
+  {
+    "id": "mahabharata_6_3",
+    "text_slug": "mahabharata",
+    "chapter": 6,
+    "verse": 3,
+    "original": "Mock Verse 6.3",
+    "transliteration": "Mock Transliteration 6.3",
+    "layers": [
+      {
+        "author": "iskcon",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
+      }
+    ],
+    "ai_metadata": {
+      "topics": [],
+      "correlations": {},
+      "stats": {
+        "original_words": 3,
+        "translit_words": 3,
+        "layers_count": 6
+      },
+      "fingerprint": "c18fc8307fa9dfec2fb3aaa2fee91ad1"
+    }
+  }
+]

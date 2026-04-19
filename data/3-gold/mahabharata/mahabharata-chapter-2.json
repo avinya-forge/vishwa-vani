@@ -1,1 +1,170 @@
-[{"id": "mahabharata_2_1", "text_slug": "mahabharata", "chapter": 2, "verse": 1, "original": "Mock Verse 2.1", "transliteration": "Mock Transliteration 2.1", "layers": []}, {"id": "mahabharata_2_2", "text_slug": "mahabharata", "chapter": 2, "verse": 2, "original": "Mock Verse 2.2", "transliteration": "Mock Transliteration 2.2", "layers": []}, {"id": "mahabharata_2_3", "text_slug": "mahabharata", "chapter": 2, "verse": 3, "original": "Mock Verse 2.3", "transliteration": "Mock Transliteration 2.3", "layers": []}]
+[
+  {
+    "id": "mahabharata_2_1",
+    "text_slug": "mahabharata",
+    "chapter": 2,
+    "verse": 1,
+    "original": "Mock Verse 2.1",
+    "transliteration": "Mock Transliteration 2.1",
+    "layers": [
+      {
+        "author": "iskcon",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
+      }
+    ],
+    "ai_metadata": {
+      "topics": [],
+      "correlations": {},
+      "stats": {
+        "original_words": 3,
+        "translit_words": 3,
+        "layers_count": 6
+      },
+      "fingerprint": "b71f5cfa43d3cd9a1cbe77378381e561"
+    }
+  },
+  {
+    "id": "mahabharata_2_2",
+    "text_slug": "mahabharata",
+    "chapter": 2,
+    "verse": 2,
+    "original": "Mock Verse 2.2",
+    "transliteration": "Mock Transliteration 2.2",
+    "layers": [
+      {
+        "author": "iskcon",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
+      }
+    ],
+    "ai_metadata": {
+      "topics": [],
+      "correlations": {},
+      "stats": {
+        "original_words": 3,
+        "translit_words": 3,
+        "layers_count": 6
+      },
+      "fingerprint": "a8156d12be572d84d5cb6e5464dd4560"
+    }
+  },
+  {
+    "id": "mahabharata_2_3",
+    "text_slug": "mahabharata",
+    "chapter": 2,
+    "verse": 3,
+    "original": "Mock Verse 2.3",
+    "transliteration": "Mock Transliteration 2.3",
+    "layers": [
+      {
+        "author": "iskcon",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
+      }
+    ],
+    "ai_metadata": {
+      "topics": [],
+      "correlations": {},
+      "stats": {
+        "original_words": 3,
+        "translit_words": 3,
+        "layers_count": 6
+      },
+      "fingerprint": "ec796b8677aeb0189b16ef6e6c7c8d6b"
+    }
+  }
+]

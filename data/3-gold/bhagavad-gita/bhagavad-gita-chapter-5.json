@@ -3,7 +3,7 @@
     "id": "bhagavad-gita_5_1",
     "text_slug": "bhagavad-gita",
     "chapter": 5,
-    "verse": "1",
+    "verse": 1,
     "original": "अर्जुन उवाच\nसन्न्यासं कर्मणां कृष्ण पुनर्योगं च शंससि ।\nयच्छ्रेय एतयोरेकं तन्मे ब्रूहि सुनिश्चितम् ॥ १ ॥",
     "transliteration": "arjuna uvāca\nsannyāsaṁ karmaṇāṁ kṛṣṇa\npunar yogaṁ ca śaṁsasi\nyac chreya etayor ekaṁ\ntan me brūhi su-niścitam",
     "translation": "Arjuna said: O Kṛṣṇa, first of all You ask me to renounce work, and then again You recommend work with devotion. Now will You kindly tell me definitely which of the two is more beneficial?",
@@ -68,6 +68,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: खऱ्या संन्यासाचा अर्थ म्हणजे मनाने सांसारिक गोष्टींशी अनासक्त राहणे. जसे कमळ पाण्यावर राहते पण ओले होत नाही. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -76,15 +94,16 @@
       "stats": {
         "original_words": 17,
         "translit_words": 17,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "c0cc0bbcff6ec6093a974b48a0fb8d25"
     }
   },
   {
     "id": "bhagavad-gita_5_10",
     "text_slug": "bhagavad-gita",
     "chapter": 5,
-    "verse": "10",
+    "verse": 10,
     "original": "ब्रह्मण्याधाय कर्माणि सङ्गं त्यक्त्वा करोति य: ।\nलिप्यते न स पापेन पद्मपत्रमिवाम्भसा ॥ १० ॥",
     "transliteration": "brahmaṇy ādhāya karmāṇi\nsaṅgaṁ tyaktvā karoti yaḥ\nlipyate na sa pāpena\npadma-patram ivāmbhasā",
     "translation": "One who performs his duty without attachment, surrendering the results unto the Supreme Lord, is unaffected by sinful action, as the lotus leaf is untouched by water.",
@@ -149,6 +168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: खऱ्या संन्यासाचा अर्थ म्हणजे मनाने सांसारिक गोष्टींशी अनासक्त राहणे. जसे कमळ पाण्यावर राहते पण ओले होत नाही. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -157,15 +194,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "9cac871479469b313248daaf5327538a"
     }
   },
   {
     "id": "bhagavad-gita_5_11",
     "text_slug": "bhagavad-gita",
     "chapter": 5,
-    "verse": "11",
+    "verse": 11,
     "original": "कायेन मनसा बुद्ध्या केवलैरिन्द्रियैरपि ।\nयोगिन: कर्म कुर्वन्ति सङ्गं त्यक्त्वात्म‍श‍ुद्धये ॥ ११ ॥",
     "transliteration": "kāyena manasā buddhyā\nkevalair indriyair api\nyoginaḥ karma kurvanti\nsaṅgaṁ tyaktvātma-śuddhaye",
     "translation": "The yogīs, abandoning attachment, act with body, mind, intelligence and even with the senses, only for the purpose of purification.",
@@ -230,6 +268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — खऱ्या संन्यासाचा अर्थ म्हणजे मनाने सांसारिक गोष्टींशी अनासक्त राहणे. जसे कमळ पाण्यावर राहते पण ओले होत नाही. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -238,15 +294,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "711ca794b6e6df05d4116dfda333970a"
     }
   },
   {
     "id": "bhagavad-gita_5_12",
     "text_slug": "bhagavad-gita",
     "chapter": 5,
-    "verse": "12",
+    "verse": 12,
     "original": "युक्त: कर्मफलं त्यक्त्वा शान्तिमाप्‍नोति नैष्ठिकीम् ।\nअयुक्त: कामकारेण फले सक्तो निबध्यते ॥ १२ ॥",
     "transliteration": "yuktaḥ karma-phalaṁ tyaktvā\nśāntim āpnoti naiṣṭhikīm\nayuktaḥ kāma-kāreṇa\nphale sakto nibadhyate",
     "translation": "The steadily devoted soul attains unadulterated peace because he offers the result of all activities to Me; whereas a person who is not in union with the Divine, who is greedy for the fruits of his labor, becomes entangled.",
@@ -311,6 +368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: खऱ्या संन्यासाचा अर्थ म्हणजे मनाने सांसारिक गोष्टींशी अनासक्त राहणे. जसे कमळ पाण्यावर राहते पण ओले होत नाही. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -319,15 +394,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "80dae390d86a1260ae36c316b5681b4d"
     }
   },
   {
     "id": "bhagavad-gita_5_13",
     "text_slug": "bhagavad-gita",
     "chapter": 5,
-    "verse": "13",
+    "verse": 13,
     "original": "सर्वकर्माणि मनसा सन्न्यस्यास्ते सुखं वशी ।\nनवद्वारे पुरे देही नैव कुर्वन्न कारयन् ॥ १३ ॥",
     "transliteration": "sarva-karmāṇi manasā\nsannyasyāste sukhaṁ vaśī\nnava-dvāre pure dehī\nnaiva kurvan na kārayan",
     "translation": "When the embodied living being controls his nature and mentally renounces all actions, he resides happily in the city of nine gates [the material body], neither working nor causing work to be done.",
@@ -392,6 +468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: खऱ्या संन्यासाचा अर्थ म्हणजे मनाने सांसारिक गोष्टींशी अनासक्त राहणे. जसे कमळ पाण्यावर राहते पण ओले होत नाही. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -400,15 +494,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "3a3d9c8d864324cbac4e3aaf6410a3c3"
     }
   },
   {
     "id": "bhagavad-gita_5_14",
     "text_slug": "bhagavad-gita",
     "chapter": 5,
-    "verse": "14",
+    "verse": 14,
     "original": "न कर्तृत्वं न कर्माणि लोकस्य सृजति प्रभु: ।\nन कर्मफलसंयोगं स्वभावस्तु प्रवर्तते ॥ १४ ॥",
     "transliteration": "na kartṛtvaṁ na karmāṇi\nlokasya sṛjati prabhuḥ\nna karma-phala-saṁyogaṁ\nsvabhāvas tu pravartate",
     "translation": "The embodied spirit, master of the city of his body, does not create activities, nor does he induce people to act, nor does he create the fruits of action. All this is enacted by the modes of material nature.",
@@ -473,6 +568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: खऱ्या संन्यासाचा अर्थ म्हणजे मनाने सांसारिक गोष्टींशी अनासक्त राहणे. जसे कमळ पाण्यावर राहते पण ओले होत नाही. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -481,15 +594,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "0dc1d59c26250c32eda4db82baf7e353"
     }
   },
   {
     "id": "bhagavad-gita_5_15",
     "text_slug": "bhagavad-gita",
     "chapter": 5,
-    "verse": "15",
+    "verse": 15,
     "original": "नादत्ते कस्यचित्पापं न चैव सुकृतं विभु: ।\nअज्ञानेनावृतं ज्ञानं तेन मुह्यन्ति जन्तव: ॥ १५ ॥",
     "transliteration": "nādatte kasyacit pāpaṁ\nna caiva sukṛtaṁ vibhuḥ\najñānenāvṛtaṁ jñānaṁ\ntena muhyanti jantavaḥ",
     "translation": "Nor does the Supreme Lord assume anyone’s sinful or pious activities. Embodied beings, however, are bewildered because of the ignorance which covers their real knowledge.",
@@ -554,6 +668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: खऱ्या संन्यासाचा अर्थ म्हणजे मनाने सांसारिक गोष्टींशी अनासक्त राहणे. जसे कमळ पाण्यावर राहते पण ओले होत नाही. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -562,15 +694,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "e98cc2770e2bc4ed1a78fec54f6c2eab"
     }
   },
   {
     "id": "bhagavad-gita_5_16",
     "text_slug": "bhagavad-gita",
     "chapter": 5,
-    "verse": "16",
+    "verse": 16,
     "original": "ज्ञानेन तु तदज्ञानं येषां नाशितमात्मन: ।\nतेषामादित्यवज्ज्ञानं प्रकाशयति तत्परम् ॥ १६ ॥",
     "transliteration": "jñānena tu tad ajñānaṁ\nyeṣāṁ nāśitam ātmanaḥ\nteṣām āditya-vaj jñānaṁ\nprakāśayati tat param",
     "translation": "When, however, one is enlightened with the knowledge by which nescience is destroyed, then his knowledge reveals everything, as the sun lights up everything in the daytime.",
@@ -635,6 +768,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: खऱ्या संन्यासाचा अर्थ म्हणजे मनाने सांसारिक गोष्टींशी अनासक्त राहणे. जसे कमळ पाण्यावर राहते पण ओले होत नाही. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -643,15 +794,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "35712da5c3f7b87794f8f367e47587ed"
     }
   },
   {
     "id": "bhagavad-gita_5_17",
     "text_slug": "bhagavad-gita",
     "chapter": 5,
-    "verse": "17",
+    "verse": 17,
     "original": "तद्बुद्धयस्तदात्मानस्तन्निष्ठास्तत्परायणा: ।\nगच्छन्त्यपुनरावृत्तिं ज्ञाननिर्धूतकल्मषा: ॥ १७ ॥",
     "transliteration": "tad-buddhayas tad-ātmānas\ntan-niṣṭhās tat-parāyaṇāḥ\ngacchanty apunar-āvṛttiṁ\njñāna-nirdhūta-kalmaṣāḥ",
     "translation": "When one’s intelligence, mind, faith and refuge are all fixed in the Supreme, then one becomes fully cleansed of misgivings through complete knowledge and thus proceeds straight on the path of liberation.",
@@ -716,6 +868,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — खऱ्या संन्यासाचा अर्थ म्हणजे मनाने सांसारिक गोष्टींशी अनासक्त राहणे. जसे कमळ पाण्यावर राहते पण ओले होत नाही. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -724,15 +894,16 @@
       "stats": {
         "original_words": 7,
         "translit_words": 7,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "ee4a5b5177d1e507b0aaa5d62e6e9409"
     }
   },
   {
     "id": "bhagavad-gita_5_18",
     "text_slug": "bhagavad-gita",
     "chapter": 5,
-    "verse": "18",
+    "verse": 18,
     "original": "विद्याविनयसम्पन्ने ब्राह्मणे गवि हस्तिनि ।\nश‍ुनि चैव श्वपाके च पण्डिता: समदर्शिन: ॥ १८ ॥",
     "transliteration": "vidyā-vinaya-sampanne\nbrāhmaṇe gavi hastini\nśuni caiva śva-pāke ca\npaṇḍitāḥ sama-darśinaḥ",
     "translation": "The humble sages, by virtue of true knowledge, see with equal vision a learned and gentle brāhmaṇa, a cow, an elephant, a dog and a dog-eater [outcaste].",
@@ -797,6 +968,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: खऱ्या संन्यासाचा अर्थ म्हणजे मनाने सांसारिक गोष्टींशी अनासक्त राहणे. जसे कमळ पाण्यावर राहते पण ओले होत नाही. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -805,15 +994,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "1dc87313258102aa3d68b82df336823b"
     }
   },
   {
     "id": "bhagavad-gita_5_19",
     "text_slug": "bhagavad-gita",
     "chapter": 5,
-    "verse": "19",
+    "verse": 19,
     "original": "इहैव तैर्जित: सर्गो येषां साम्ये स्थितं मन: ।\nनिर्दोषं हि समं ब्रह्म तस्माद्‍ब्रह्मणि ते स्थिता: ॥ १९ ॥",
     "transliteration": "ihaiva tair jitaḥ sargo\nyeṣāṁ sāmye sthitaṁ manaḥ\nnirdoṣaṁ hi samaṁ brahma\ntasmād brahmaṇi te sthitāḥ",
     "translation": "Those whose minds are established in sameness and equanimity have already conquered the conditions of birth and death. They are flawless like Brahman, and thus they are already situated in Brahman.",
@@ -878,6 +1068,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: खऱ्या संन्यासाचा अर्थ म्हणजे मनाने सांसारिक गोष्टींशी अनासक्त राहणे. जसे कमळ पाण्यावर राहते पण ओले होत नाही. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -886,15 +1094,16 @@
       "stats": {
         "original_words": 18,
         "translit_words": 16,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "4fa42c6561e58eb6f8329de74feafeb1"
     }
   },
   {
     "id": "bhagavad-gita_5_2",
     "text_slug": "bhagavad-gita",
     "chapter": 5,
-    "verse": "2",
+    "verse": 2,
     "original": "श्रीभगवानुवाच\nसन्न्यास: कर्मयोगश्च नि:श्रेयसकरावुभौ ।\nतयोस्तु कर्मसन्न्यासात्कर्मयोगो विशिष्यते ॥ २ ॥",
     "transliteration": "śrī-bhagavān uvāca\nsannyāsaḥ karma-yogaś ca\nniḥśreyasa-karāv ubhau\ntayos tu karma-sannyāsāt\nkarma-yogo viśiṣyate",
     "translation": "The Personality of Godhead replied: The renunciation of work and work in devotion are both good for liberation. But, of the two, work in devotional service is better than renunciation of work.",
@@ -959,6 +1168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: खऱ्या संन्यासाचा अर्थ म्हणजे मनाने सांसारिक गोष्टींशी अनासक्त राहणे. जसे कमळ पाण्यावर राहते पण ओले होत नाही. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -967,15 +1194,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "83529b322a69d7024f15c064234d32cd"
     }
   },
   {
     "id": "bhagavad-gita_5_20",
     "text_slug": "bhagavad-gita",
     "chapter": 5,
-    "verse": "20",
+    "verse": 20,
     "original": "न प्रहृष्येत्प्रियं प्राप्य नोद्विजेत्प्राप्य चाप्रियम् ।\nस्थिरबुद्धिरसम्मूढो ब्रह्मविद्‍ब्रह्मणि स्थित: ॥ २० ॥",
     "transliteration": "na prahṛṣyet priyaṁ prāpya\nnodvijet prāpya cāpriyam\nsthira-buddhir asammūḍho\nbrahma-vid brahmaṇi sthitaḥ",
     "translation": "A person who neither rejoices upon achieving something pleasant nor laments upon obtaining something unpleasant, who is self-intelligent, who is unbewildered, and who knows the science of God is already situated in transcendence.",
@@ -1040,6 +1268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: खऱ्या संन्यासाचा अर्थ म्हणजे मनाने सांसारिक गोष्टींशी अनासक्त राहणे. जसे कमळ पाण्यावर राहते पण ओले होत नाही. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1048,15 +1294,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "bb87f479467b6fd5f137975896d26831"
     }
   },
   {
     "id": "bhagavad-gita_5_21",
     "text_slug": "bhagavad-gita",
     "chapter": 5,
-    "verse": "21",
+    "verse": 21,
     "original": "बाह्यस्पर्शेष्वसक्तात्मा विन्दत्यात्मनि यत्सुखम् ।\nस ब्रह्मयोगयुक्तात्मा सुखमक्षयमश्न‍ुते ॥ २१ ॥",
     "transliteration": "bāhya-sparśeṣv asaktātmā\nvindaty ātmani yat sukham\nsa brahma-yoga-yuktātmā\nsukham akṣayam aśnute",
     "translation": "Such a liberated person is not attracted to material sense pleasure but is always in trance, enjoying the pleasure within. In this way the self-realized person enjoys unlimited happiness, for he concentrates on the Supreme.",
@@ -1121,6 +1368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: खऱ्या संन्यासाचा अर्थ म्हणजे मनाने सांसारिक गोष्टींशी अनासक्त राहणे. जसे कमळ पाण्यावर राहते पण ओले होत नाही. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1129,15 +1394,16 @@
       "stats": {
         "original_words": 10,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "d9fd1d02b4fa5e1ac667eedd456b0f9b"
     }
   },
   {
     "id": "bhagavad-gita_5_22",
     "text_slug": "bhagavad-gita",
     "chapter": 5,
-    "verse": "22",
+    "verse": 22,
     "original": "ये हि संस्पर्शजा भोगा दु:खयोनय एव ते ।\nआद्यन्तवन्त: कौन्तेय न तेषु रमते बुध: ॥ २२ ॥",
     "transliteration": "ye hi saṁsparśa-jā bhogā\nduḥkha-yonaya eva te\nādy-antavantaḥ kaunteya\nna teṣu ramate budhaḥ",
     "translation": "An intelligent person does not take part in the sources of misery, which are due to contact with the material senses. O son of Kuntī, such pleasures have a beginning and an end, and so the wise man does not delight in them.",
@@ -1202,6 +1468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — खऱ्या संन्यासाचा अर्थ म्हणजे मनाने सांसारिक गोष्टींशी अनासक्त राहणे. जसे कमळ पाण्यावर राहते पण ओले होत नाही. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1210,15 +1494,16 @@
       "stats": {
         "original_words": 17,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "d45f9cc966593b03f309715b298046ce"
     }
   },
   {
     "id": "bhagavad-gita_5_23",
     "text_slug": "bhagavad-gita",
     "chapter": 5,
-    "verse": "23",
+    "verse": 23,
     "original": "शक्न‍ोतीहैव य: सोढुं प्राक्शरीरविमोक्षणात् ।\nकामक्रोधोद्भ‍वं वेगं स युक्त: स सुखी नर: ॥ २३ ॥",
     "transliteration": "śaknotīhaiva yaḥ soḍhuṁ\nprāk śarīra-vimokṣaṇāt\nkāma-krodhodbhavaṁ vegaṁ\nsa yuktaḥ sa sukhī naraḥ",
     "translation": "Before giving up this present body, if one is able to tolerate the urges of the material senses and check the force of desire and anger, he is well situated and is happy in this world.",
@@ -1283,6 +1568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: खऱ्या संन्यासाचा अर्थ म्हणजे मनाने सांसारिक गोष्टींशी अनासक्त राहणे. जसे कमळ पाण्यावर राहते पण ओले होत नाही. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1291,15 +1594,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "8ad1b4a27755524a304f8e99e09afede"
     }
   },
   {
     "id": "bhagavad-gita_5_24",
     "text_slug": "bhagavad-gita",
     "chapter": 5,
-    "verse": "24",
+    "verse": 24,
     "original": "योऽन्त:सुखोऽन्तरारामस्तथान्तर्ज्योतिरेव य: ।\nस योगी ब्रह्मनिर्वाणं ब्रह्मभूतोऽधिगच्छति ॥ २४ ॥",
     "transliteration": "yo ’ntaḥ-sukho ’ntar-ārāmas\ntathāntar-jyotir eva yaḥ\nsa yogī brahma-nirvāṇaṁ\nbrahma-bhūto ’dhigacchati",
     "translation": "One whose happiness is within, who is active and rejoices within, and whose aim is inward is actually the perfect mystic. He is liberated in the Supreme, and ultimately he attains the Supreme.",
@@ -1364,6 +1668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: खऱ्या संन्यासाचा अर्थ म्हणजे मनाने सांसारिक गोष्टींशी अनासक्त राहणे. जसे कमळ पाण्यावर राहते पण ओले होत नाही. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1372,15 +1694,16 @@
       "stats": {
         "original_words": 10,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "cec96005a8679f8dbff3ea38a6a1e5cf"
     }
   },
   {
     "id": "bhagavad-gita_5_25",
     "text_slug": "bhagavad-gita",
     "chapter": 5,
-    "verse": "25",
+    "verse": 25,
     "original": "लभन्ते ब्रह्मनिर्वाणमृषय: क्षीणकल्मषा: ।\nछिन्नद्वैधा यतात्मान: सर्वभूतहिते रता: ॥ २५ ॥",
     "transliteration": "labhante brahma-nirvāṇam\nṛṣayaḥ kṣīṇa-kalmaṣāḥ\nchinna-dvaidhā yatātmānaḥ\nsarva-bhūta-hite ratāḥ",
     "translation": "Those who are beyond the dualities that arise from doubts, whose minds are engaged within, who are always busy working for the welfare of all living beings and who are free from all sins achieve liberation in the Supreme.",
@@ -1445,6 +1768,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: खऱ्या संन्यासाचा अर्थ म्हणजे मनाने सांसारिक गोष्टींशी अनासक्त राहणे. जसे कमळ पाण्यावर राहते पण ओले होत नाही. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1453,15 +1794,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 8,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "b4d55cda889985c69639654210961c10"
     }
   },
   {
     "id": "bhagavad-gita_5_26",
     "text_slug": "bhagavad-gita",
     "chapter": 5,
-    "verse": "26",
+    "verse": 26,
     "original": "कामक्रोधविमुक्तानां यतीनां यतचेतसाम् ।\nअभितो ब्रह्मनिर्वाणं वर्तते विदितात्मनाम् ॥ २६ ॥",
     "transliteration": "kāma-krodha-vimuktānāṁ\nyatīnāṁ yata-cetasām\nabhito brahma-nirvāṇaṁ\nvartate viditātmanām",
     "translation": "Those who are free from anger and all material desires, who are self-realized, self-disciplined and constantly endeavoring for perfection, are assured of liberation in the Supreme in the very near future.",
@@ -1526,6 +1868,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: खऱ्या संन्यासाचा अर्थ म्हणजे मनाने सांसारिक गोष्टींशी अनासक्त राहणे. जसे कमळ पाण्यावर राहते पण ओले होत नाही. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1534,15 +1894,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 7,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "6df756510f31c31af4c6c74655186aa6"
     }
   },
   {
     "id": "bhagavad-gita_5_27-28",
     "text_slug": "bhagavad-gita",
     "chapter": 5,
-    "verse": "27-28",
+    "verse": 27,
     "original": "स्पर्शान्कृत्वा बहिर्बाह्यांश्चक्षुश्चैवान्तरे भ्रुवो: ।\nप्राणापानौ समौ कृत्वा नासाभ्यन्तरचारिणौ ॥ २७ ॥\nयतेन्द्रियमनोबुद्धिर्मुनिर्मोक्षपरायण: ।\nविगतेच्छाभयक्रोधो य: सदा मुक्त एव स: ॥ २८ ॥",
     "transliteration": "sparśān kṛtvā bahir bāhyāṁś\ncakṣuś caivāntare bhruvoḥ\nprāṇāpānau samau kṛtvā\nnāsābhyantara-cāriṇau",
     "translation": "Shutting out all external sense objects, keeping the eyes and vision concentrated between the two eyebrows, suspending the inward and outward breaths within the nostrils, and thus controlling the mind, senses and intelligence, the transcendentalist aiming at liberation becomes free from desire, fear and anger. One who is always in this state is certainly liberated.",
@@ -1607,6 +1968,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: खऱ्या संन्यासाचा अर्थ म्हणजे मनाने सांसारिक गोष्टींशी अनासक्त राहणे. जसे कमळ पाण्यावर राहते पण ओले होत नाही. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1615,15 +1994,16 @@
       "stats": {
         "original_words": 22,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "c7e719539d173c0f66b19daab035934b"
     }
   },
   {
     "id": "bhagavad-gita_5_29",
     "text_slug": "bhagavad-gita",
     "chapter": 5,
-    "verse": "29",
+    "verse": 29,
     "original": "भोक्तारं यज्ञतपसां सर्वलोकमहेश्वरम् ।\nसुहृदं सर्वभूतानां ज्ञात्वा मां शान्तिमृच्छति ॥ २९ ॥",
     "transliteration": "bhoktāraṁ yajña-tapasāṁ\nsarva-loka-maheśvaram\nsuhṛdaṁ sarva-bhūtānāṁ\njñātvā māṁ śāntim ṛcchati",
     "translation": "A person in full consciousness of Me, knowing Me to be the ultimate beneficiary of all sacrifices and austerities, the Supreme Lord of all planets and demigods, and the benefactor and well-wisher of all living entities, attains peace from the pangs of material miseries.",
@@ -1688,6 +2068,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — खऱ्या संन्यासाचा अर्थ म्हणजे मनाने सांसारिक गोष्टींशी अनासक्त राहणे. जसे कमळ पाण्यावर राहते पण ओले होत नाही. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1696,15 +2094,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 9,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "86048bcf31eb6be7a46b812d6ea9d448"
     }
   },
   {
     "id": "bhagavad-gita_5_3",
     "text_slug": "bhagavad-gita",
     "chapter": 5,
-    "verse": "3",
+    "verse": 3,
     "original": "ज्ञेय: स नित्यसन्न्यासी यो न द्वेष्टि न काङ्‍क्षति ।\nनिर्द्वन्द्वो हि महाबाहो सुखं बन्धात्प्रमुच्यते ॥ ३ ॥",
     "transliteration": "jñeyaḥ sa nitya-sannyāsī\nyo na dveṣṭi na kāṅkṣati\nnirdvandvo hi mahā-bāho\nsukhaṁ bandhāt pramucyate",
     "translation": "One who neither hates nor desires the fruits of his activities is known to be always renounced. Such a person, free from all dualities, easily overcomes material bondage and is completely liberated, O mighty-armed Arjuna.",
@@ -1769,6 +2168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: खऱ्या संन्यासाचा अर्थ म्हणजे मनाने सांसारिक गोष्टींशी अनासक्त राहणे. जसे कमळ पाण्यावर राहते पण ओले होत नाही. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1777,15 +2194,16 @@
       "stats": {
         "original_words": 17,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "f1ad63e49b53a7b593a605a81338c408"
     }
   },
   {
     "id": "bhagavad-gita_5_4",
     "text_slug": "bhagavad-gita",
     "chapter": 5,
-    "verse": "4",
+    "verse": 4,
     "original": "सां‍ख्ययोगौ पृथग्बाला: प्रवदन्ति न पण्डिता: ।\nएकमप्यास्थित: सम्यगुभयोर्विन्दते फलम् ॥ ४ ॥",
     "transliteration": "sāṅkhya-yogau pṛthag bālāḥ\npravadanti na paṇḍitāḥ\nekam apy āsthitaḥ samyag\nubhayor vindate phalam",
     "translation": "Only the ignorant speak of devotional service [karma-yoga] as being different from the analytical study of the material world [Sāṅkhya]. Those who are actually learned say that he who applies himself well to one of these paths achieves the results of both.",
@@ -1850,6 +2268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: खऱ्या संन्यासाचा अर्थ म्हणजे मनाने सांसारिक गोष्टींशी अनासक्त राहणे. जसे कमळ पाण्यावर राहते पण ओले होत नाही. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1858,15 +2294,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "df3485095cabcbcf4ffe30f36fe6e2c8"
     }
   },
   {
     "id": "bhagavad-gita_5_5",
     "text_slug": "bhagavad-gita",
     "chapter": 5,
-    "verse": "5",
+    "verse": 5,
     "original": "यत्सां‍ख्यै: प्राप्यते स्थानं तद्योगैरपि गम्यते ।\nएकं सां‍ख्यं च योगं च य: पश्यति स पश्यति ॥ ५ ॥",
     "transliteration": "yat sāṅkhyaiḥ prāpyate sthānaṁ\ntad yogair api gamyate\nekaṁ sāṅkhyaṁ ca yogaṁ ca\nyaḥ paśyati sa paśyati",
     "translation": "One who knows that the position reached by means of analytical study can also be attained by devotional service, and who therefore sees analytical study and devotional service to be on the same level, sees things as they are.",
@@ -1931,6 +2368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: खऱ्या संन्यासाचा अर्थ म्हणजे मनाने सांसारिक गोष्टींशी अनासक्त राहणे. जसे कमळ पाण्यावर राहते पण ओले होत नाही. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1939,15 +2394,16 @@
       "stats": {
         "original_words": 18,
         "translit_words": 17,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "a22337748bfb4a04a8105da2bc30ccd7"
     }
   },
   {
     "id": "bhagavad-gita_5_6",
     "text_slug": "bhagavad-gita",
     "chapter": 5,
-    "verse": "6",
+    "verse": 6,
     "original": "सन्न्यासस्तु महाबाहो दु:खमाप्‍तुमयोगत: ।\nयोगयुक्तो मुनिर्ब्रह्म न चिरेणाधिगच्छति ॥ ६ ॥",
     "transliteration": "sannyāsas tu mahā-bāho\nduḥkham āptum ayogataḥ\nyoga-yukto munir brahma\nna cireṇādhigacchati",
     "translation": "Merely renouncing all activities yet not engaging in the devotional service of the Lord cannot make one happy. But a thoughtful person engaged in devotional service can achieve the Supreme without delay.",
@@ -2012,6 +2468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: खऱ्या संन्यासाचा अर्थ म्हणजे मनाने सांसारिक गोष्टींशी अनासक्त राहणे. जसे कमळ पाण्यावर राहते पण ओले होत नाही. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2020,15 +2494,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "590b97a68461fb61930c21b8afc5bc78"
     }
   },
   {
     "id": "bhagavad-gita_5_7",
     "text_slug": "bhagavad-gita",
     "chapter": 5,
-    "verse": "7",
+    "verse": 7,
     "original": "योगयुक्तो विश‍ुद्धात्मा विजितात्मा जितेन्द्रिय: ।\nसर्वभूतात्मभूतात्मा कुर्वन्नपि न लिप्यते ॥ ७ ॥",
     "transliteration": "yoga-yukto viśuddhātmā\nvijitātmā jitendriyaḥ\nsarva-bhūtātma-bhūtātmā\nkurvann api na lipyate",
     "translation": "One who works in devotion, who is a pure soul, and who controls his mind and senses is dear to everyone, and everyone is dear to him. Though always working, such a man is never entangled.",
@@ -2093,6 +2568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: खऱ्या संन्यासाचा अर्थ म्हणजे मनाने सांसारिक गोष्टींशी अनासक्त राहणे. जसे कमळ पाण्यावर राहते पण ओले होत नाही. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2101,15 +2594,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 9,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "6e5a04e3166e2ab77c8f7dabbd3dfd6e"
     }
   },
   {
     "id": "bhagavad-gita_5_8-9",
     "text_slug": "bhagavad-gita",
     "chapter": 5,
-    "verse": "8-9",
+    "verse": 8,
     "original": "नैव किञ्चित्करोमीति युक्तो मन्येत तत्त्ववित् ।\nपश्यञ्श‍ृण्वन्स्पृशञ्जिघ्रन्नश्न‍न्गच्छन्स्वपन्श्वसन् ॥ ८ ॥\nप्रलपन्विसृजन्गृह्णन्नुन्मिषन्निमिषन्नपि ।\nइन्द्रियाणीन्द्रियार्थेषु वर्तन्त इति धारयन् ॥ ९ ॥",
     "transliteration": "naiva kiñcit karomīti\nyukto manyeta tattva-vit\npaśyañ śṛṇvan spṛśañ jighrann\naśnan gacchan svapañ śvasan",
     "translation": "A person in the divine consciousness, although engaged in seeing, hearing, touching, smelling, eating, moving about, sleeping and breathing, always knows within himself that he actually does nothing at all. Because while speaking, evacuating, receiving, or opening or closing his eyes, he always knows that only the material senses are engaged with their objects and that he is aloof from them.",
@@ -2174,6 +2668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — खऱ्या संन्यासाचा अर्थ म्हणजे मनाने सांसारिक गोष्टींशी अनासक्त राहणे. जसे कमळ पाण्यावर राहते पण ओले होत नाही. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2182,8 +2694,9 @@
       "stats": {
         "original_words": 19,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "0cf639097d723285f2ace392b00938cf"
     }
   }
 ]

@@ -3,7 +3,7 @@
     "id": "bhagavad-gita_9_1",
     "text_slug": "bhagavad-gita",
     "chapter": 9,
-    "verse": "1",
+    "verse": 1,
     "original": "श्रीभगवानुवाच\nइदं तु ते गुह्यतमं प्रवक्ष्याम्यनसूयवे ।\nज्ञानं विज्ञानसहितं यज्ज्ञात्वा मोक्ष्यसेऽश‍ुभात् ॥ १ ॥",
     "transliteration": "śrī-bhagavān uvāca\nidaṁ tu te guhya-tamaṁ\npravakṣyāmy anasūyave\njñānaṁ vijñāna-sahitaṁ\nyaj jñātvā mokṣyase ’śubhāt",
     "translation": "The Supreme Personality of Godhead said: My dear Arjuna, because you are never envious of Me, I shall impart to you this most confidential knowledge and realization, knowing which you shall be relieved of the miseries of material existence.",
@@ -68,6 +68,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: भगवंत जगाला धारण करतो पण जगाने बांधला जात नाही. पत्र, पुष्प, फल, जलाचे निष्काम अर्पण भगवंत प्रेमाने स्वीकारतो. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -76,15 +94,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "94a204bd83622f68e32e931e1a0fc160"
     }
   },
   {
     "id": "bhagavad-gita_9_10",
     "text_slug": "bhagavad-gita",
     "chapter": 9,
-    "verse": "10",
+    "verse": 10,
     "original": "मयाध्यक्षेण प्रकृति: सूयते सचराचरम् ।\nहेतुनानेन कौन्तेय जगद्विपरिवर्तते ॥ १० ॥",
     "transliteration": "mayādhyakṣeṇa prakṛtiḥ\nsūyate sa-carācaram\nhetunānena kaunteya\njagad viparivartate",
     "translation": "This material nature, which is one of My energies, is working under My direction, O son of Kuntī, producing all moving and nonmoving beings. Under its rule this manifestation is created and annihilated again and again.",
@@ -149,6 +168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: भगवंत जगाला धारण करतो पण जगाने बांधला जात नाही. पत्र, पुष्प, फल, जलाचे निष्काम अर्पण भगवंत प्रेमाने स्वीकारतो. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -157,15 +194,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 8,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "d3baa93141f3fe4c851a738cd62ab1e3"
     }
   },
   {
     "id": "bhagavad-gita_9_11",
     "text_slug": "bhagavad-gita",
     "chapter": 9,
-    "verse": "11",
+    "verse": 11,
     "original": "अवजानन्ति मां मूढा मानुषीं तनुमाश्रितम् ।\nपरं भावमजानन्तो मम भूतमहेश्वरम् ॥ ११ ॥",
     "transliteration": "avajānanti māṁ mūḍhā\nmānuṣīṁ tanum āśritam\nparaṁ bhāvam ajānanto\nmama bhūta-maheśvaram",
     "translation": "Fools deride Me when I descend in the human form. They do not know My transcendental nature as the Supreme Lord of all that be.",
@@ -230,6 +268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — भगवंत जगाला धारण करतो पण जगाने बांधला जात नाही. पत्र, पुष्प, फल, जलाचे निष्काम अर्पण भगवंत प्रेमाने स्वीकारतो. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -238,15 +294,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "508420599d45372d5a795c632d6fe612"
     }
   },
   {
     "id": "bhagavad-gita_9_12",
     "text_slug": "bhagavad-gita",
     "chapter": 9,
-    "verse": "12",
+    "verse": 12,
     "original": "मोघाशा मोघकर्माणो मोघज्ञाना विचेतस: ।\nराक्षसीमासुरीं चैव प्रकृतिं मोहिनीं श्रिता: ॥ १२ ॥",
     "transliteration": "moghāśā mogha-karmāṇo\nmogha-jñānā vicetasaḥ\nrākṣasīm āsurīṁ caiva\nprakṛtiṁ mohinīṁ śritāḥ",
     "translation": "Those who are thus bewildered are attracted by demonic and atheistic views. In that deluded condition, their hopes for liberation, their fruitive activities, and their culture of knowledge are all defeated.",
@@ -311,6 +368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: भगवंत जगाला धारण करतो पण जगाने बांधला जात नाही. पत्र, पुष्प, फल, जलाचे निष्काम अर्पण भगवंत प्रेमाने स्वीकारतो. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -319,15 +394,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "c3f3ad84e399d7dae04c2d7e308e894e"
     }
   },
   {
     "id": "bhagavad-gita_9_13",
     "text_slug": "bhagavad-gita",
     "chapter": 9,
-    "verse": "13",
+    "verse": 13,
     "original": "महात्मानस्तु मां पार्थ दैवीं प्रकृतिमाश्रिता: ।\nभजन्त्यनन्यमनसो ज्ञात्वा भूतादिमव्ययम् ॥ १३ ॥",
     "transliteration": "mahātmānas tu māṁ pārtha\ndaivīṁ prakṛtim āśritāḥ\nbhajanty ananya-manaso\njñātvā bhūtādim avyayam",
     "translation": "O son of Pṛthā, those who are not deluded, the great souls, are under the protection of the divine nature. They are fully engaged in devotional service because they know Me as the Supreme Personality of Godhead, original and inexhaustible.",
@@ -392,6 +468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: भगवंत जगाला धारण करतो पण जगाने बांधला जात नाही. पत्र, पुष्प, फल, जलाचे निष्काम अर्पण भगवंत प्रेमाने स्वीकारतो. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -400,15 +494,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "05d2a6369dbea42589bd33693e5df080"
     }
   },
   {
     "id": "bhagavad-gita_9_14",
     "text_slug": "bhagavad-gita",
     "chapter": 9,
-    "verse": "14",
+    "verse": 14,
     "original": "सततं कीर्तयन्तो मां यतन्तश्च दृढव्रता: ।\nनमस्यन्तश्च मां भक्त्य‍ा नित्ययुक्ता उपासते ॥ १४ ॥",
     "transliteration": "satataṁ kīrtayanto māṁ\nyatantaś ca dṛḍha-vratāḥ\nnamasyantaś ca māṁ bhaktyā\nnitya-yuktā upāsate",
     "translation": "Always chanting My glories, endeavoring with great determination, bowing down before Me, these great souls perpetually worship Me with devotion.",
@@ -473,6 +568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: भगवंत जगाला धारण करतो पण जगाने बांधला जात नाही. पत्र, पुष्प, फल, जलाचे निष्काम अर्पण भगवंत प्रेमाने स्वीकारतो. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -481,15 +594,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "0b19f2afc54414713d28bfd483251749"
     }
   },
   {
     "id": "bhagavad-gita_9_15",
     "text_slug": "bhagavad-gita",
     "chapter": 9,
-    "verse": "15",
+    "verse": 15,
     "original": "ज्ञानयज्ञेन चाप्यन्ये यजन्तो मामुपासते ।\nएकत्वेन पृथक्त्वेन बहुधा विश्वतोमुखम् ॥ १५ ॥",
     "transliteration": "jñāna-yajñena cāpy anye\nyajanto mām upāsate\nekatvena pṛthaktvena\nbahudhā viśvato-mukham",
     "translation": "Others, who engage in sacrifice by the cultivation of knowledge, worship the Supreme Lord as the one without a second, as diverse in many, and in the universal form.",
@@ -554,6 +668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: भगवंत जगाला धारण करतो पण जगाने बांधला जात नाही. पत्र, पुष्प, फल, जलाचे निष्काम अर्पण भगवंत प्रेमाने स्वीकारतो. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -562,15 +694,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "2dc9e6b9923bc647f9f68fcad9aed1bd"
     }
   },
   {
     "id": "bhagavad-gita_9_16",
     "text_slug": "bhagavad-gita",
     "chapter": 9,
-    "verse": "16",
+    "verse": 16,
     "original": "अहं क्रतुरहं यज्ञ: स्वधाहमहमौषधम् ।\nमन्‍त्रोऽहमहमेवाज्यमहमग्न‍िरहं हुतम् ॥ १६ ॥",
     "transliteration": "ahaṁ kratur ahaṁ yajñaḥ\nsvadhāham aham auṣadham\nmantro ’ham aham evājyam\naham agnir ahaṁ hutam",
     "translation": "But it is I who am the ritual, I the sacrifice, the offering to the ancestors, the healing herb, the transcendental chant. I am the butter and the fire and the offering.",
@@ -635,6 +768,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: भगवंत जगाला धारण करतो पण जगाने बांधला जात नाही. पत्र, पुष्प, फल, जलाचे निष्काम अर्पण भगवंत प्रेमाने स्वीकारतो. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -643,15 +794,16 @@
       "stats": {
         "original_words": 10,
         "translit_words": 15,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "70075b8b5a8a27b9e0070abb424feea4"
     }
   },
   {
     "id": "bhagavad-gita_9_17",
     "text_slug": "bhagavad-gita",
     "chapter": 9,
-    "verse": "17",
+    "verse": 17,
     "original": "पिताहमस्य जगतो माता धाता पितामह: ।\nवेद्यं पवित्रम् ॐकार ऋक् साम यजुरेव च ॥ १७ ॥",
     "transliteration": "pitāham asya jagato\nmātā dhātā pitāmahaḥ\nvedyaṁ pavitram oṁ-kāra\nṛk sāma yajur eva ca",
     "translation": "I am the father of this universe, the mother, the support and the grandsire. I am the object of knowledge, the purifier and the syllable oṁ. I am also the Ṛg, the Sāma and the Yajur Vedas.",
@@ -716,6 +868,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — भगवंत जगाला धारण करतो पण जगाने बांधला जात नाही. पत्र, पुष्प, फल, जलाचे निष्काम अर्पण भगवंत प्रेमाने स्वीकारतो. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -724,15 +894,16 @@
       "stats": {
         "original_words": 16,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "c39d596e8db72321e7adceef43159c34"
     }
   },
   {
     "id": "bhagavad-gita_9_18",
     "text_slug": "bhagavad-gita",
     "chapter": 9,
-    "verse": "18",
+    "verse": 18,
     "original": "गतिर्भर्ता प्रभु: साक्षी निवास: शरणं सुहृत् ।\nप्रभव: प्रलय: स्थानं निधानं बीजमव्ययम् ॥ १८ ॥",
     "transliteration": "gatir bhartā prabhuḥ sākṣī\nnivāsaḥ śaraṇaṁ suhṛt\nprabhavaḥ pralayaḥ sthānaṁ\nnidhānaṁ bījam avyayam",
     "translation": "I am the goal, the sustainer, the master, the witness, the abode, the refuge and the most dear friend. I am the creation and the annihilation, the basis of everything, the resting place and the eternal seed.",
@@ -797,6 +968,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: भगवंत जगाला धारण करतो पण जगाने बांधला जात नाही. पत्र, पुष्प, फल, जलाचे निष्काम अर्पण भगवंत प्रेमाने स्वीकारतो. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -805,15 +994,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "bce5d02b3b4f091daff05300702d60bb"
     }
   },
   {
     "id": "bhagavad-gita_9_19",
     "text_slug": "bhagavad-gita",
     "chapter": 9,
-    "verse": "19",
+    "verse": 19,
     "original": "तपाम्यहमहं वर्षं निगृह्णाम्युत्सृजामि च ।\nअमृतं चैव मृत्युश्च सदसच्च‍ाहमर्जुन ॥ १९ ॥",
     "transliteration": "tapāmy aham ahaṁ varṣaṁ\nnigṛhṇāmy utsṛjāmi ca\namṛtaṁ caiva mṛtyuś ca\nsad asac cāham arjuna",
     "translation": "O Arjuna, I give heat, and I withhold and send forth the rain. I am immortality, and I am also death personified. Both spirit and matter are in Me.",
@@ -878,6 +1068,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: भगवंत जगाला धारण करतो पण जगाने बांधला जात नाही. पत्र, पुष्प, फल, जलाचे निष्काम अर्पण भगवंत प्रेमाने स्वीकारतो. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -886,15 +1094,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 15,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "f1233fdf036bccacdf6fc2febb7265c4"
     }
   },
   {
     "id": "bhagavad-gita_9_2",
     "text_slug": "bhagavad-gita",
     "chapter": 9,
-    "verse": "2",
+    "verse": 2,
     "original": "राजविद्या राजगुह्यं पवित्रमिदमुत्तमम् ।\nप्रत्यक्षावगमं धर्म्यं सुसुखं कर्तुमव्ययम् ॥ २ ॥",
     "transliteration": "rāja-vidyā rāja-guhyaṁ\npavitram idam uttamam\npratyakṣāvagamaṁ dharmyaṁ\nsu-sukhaṁ kartum avyayam",
     "translation": "This knowledge is the king of education, the most secret of all secrets. It is the purest knowledge, and because it gives direct perception of the self by realization, it is the perfection of religion. It is everlasting, and it is joyfully performed.",
@@ -959,6 +1168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: भगवंत जगाला धारण करतो पण जगाने बांधला जात नाही. पत्र, पुष्प, फल, जलाचे निष्काम अर्पण भगवंत प्रेमाने स्वीकारतो. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -967,15 +1194,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "370470feee279fcce5f5c163c303064c"
     }
   },
   {
     "id": "bhagavad-gita_9_20",
     "text_slug": "bhagavad-gita",
     "chapter": 9,
-    "verse": "20",
+    "verse": 20,
     "original": "त्रैविद्या मां सोमपा: पूतपापा\nयज्ञैरिष्ट्वा स्वर्गतिं प्रार्थयन्ते ।\nते पुण्यमासाद्य सुरेन्द्रलोक-\nमश्न‍‍न्ति दिव्यान्दिवि देवभोगान् ॥ २० ॥",
     "transliteration": "trai-vidyā māṁ soma-pāḥ pūta-pāpā\nyajñair iṣṭvā svar-gatiṁ prārthayante\nte puṇyam āsādya surendra-lokam\naśnanti divyān divi deva-bhogān",
     "translation": "Those who study the Vedas and drink the soma juice, seeking the heavenly planets, worship Me indirectly. Purified of sinful reactions, they take birth on the pious, heavenly planet of Indra, where they enjoy godly delights.",
@@ -1040,6 +1268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: भगवंत जगाला धारण करतो पण जगाने बांधला जात नाही. पत्र, पुष्प, फल, जलाचे निष्काम अर्पण भगवंत प्रेमाने स्वीकारतो. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1048,15 +1294,16 @@
       "stats": {
         "original_words": 17,
         "translit_words": 16,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "3eaee39fab56af08f0f224f57ad05000"
     }
   },
   {
     "id": "bhagavad-gita_9_21",
     "text_slug": "bhagavad-gita",
     "chapter": 9,
-    "verse": "21",
+    "verse": 21,
     "original": "ते तं भुक्त्वा स्वर्गलोकं विशालं\nक्षीणे पुण्ये मर्त्यलोकं विशन्ति ।\nएवं त्रयीधर्ममनुप्रपन्ना\nगतागतं कामकामा लभन्ते ॥ २१ ॥",
     "transliteration": "te taṁ bhuktvā svarga-lokaṁ viśālaṁ\nkṣīṇe puṇye martya-lokaṁ viśanti\nevaṁ trayī-dharmam anuprapannā\ngatāgataṁ kāma-kāmā labhante",
     "translation": "When they have thus enjoyed vast heavenly sense pleasure and the results of their pious activities are exhausted, they return to this mortal planet again. Thus those who seek sense enjoyment by adhering to the principles of the three Vedas achieve only repeated birth and death.",
@@ -1121,6 +1368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: भगवंत जगाला धारण करतो पण जगाने बांधला जात नाही. पत्र, पुष्प, फल, जलाचे निष्काम अर्पण भगवंत प्रेमाने स्वीकारतो. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1129,15 +1394,16 @@
       "stats": {
         "original_words": 18,
         "translit_words": 15,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "cd4ba83b716a6c1e93d924d0fa3f24e0"
     }
   },
   {
     "id": "bhagavad-gita_9_22",
     "text_slug": "bhagavad-gita",
     "chapter": 9,
-    "verse": "22",
+    "verse": 22,
     "original": "अनन्याश्चिन्तयन्तो मां ये जना: पर्युपासते ।\nतेषां नित्याभियुक्तानां योगक्षेमं वहाम्यहम् ॥ २२ ॥",
     "transliteration": "ananyāś cintayanto māṁ\nye janāḥ paryupāsate\nteṣāṁ nityābhiyuktānāṁ\nyoga-kṣemaṁ vahāmy aham",
     "translation": "But those who always worship Me with exclusive devotion, meditating on My transcendental form – to them I carry what they lack, and I preserve what they have.",
@@ -1202,6 +1468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — भगवंत जगाला धारण करतो पण जगाने बांधला जात नाही. पत्र, पुष्प, फल, जलाचे निष्काम अर्पण भगवंत प्रेमाने स्वीकारतो. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1210,15 +1494,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "72d729b593488138d5cdd98d9cdccedf"
     }
   },
   {
     "id": "bhagavad-gita_9_23",
     "text_slug": "bhagavad-gita",
     "chapter": 9,
-    "verse": "23",
+    "verse": 23,
     "original": "येऽप्यन्यदेवताभक्ता यजन्ते श्रद्धयान्विता: ।\nतेऽपि मामेव कौन्तेय यजन्त्यविधिपूर्वकम् ॥ २३ ॥",
     "transliteration": "ye ’py anya-devatā-bhaktā\nyajante śraddhayānvitāḥ\nte ’pi mām eva kaunteya\nyajanty avidhi-pūrvakam",
     "translation": "Those who are devotees of other gods and who worship them with faith actually worship only Me, O son of Kuntī, but they do so in a wrong way.",
@@ -1283,6 +1568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: भगवंत जगाला धारण करतो पण जगाने बांधला जात नाही. पत्र, पुष्प, फल, जलाचे निष्काम अर्पण भगवंत प्रेमाने स्वीकारतो. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1291,15 +1594,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "d0dff011e9a05d5ea16b4d7b98813e45"
     }
   },
   {
     "id": "bhagavad-gita_9_24",
     "text_slug": "bhagavad-gita",
     "chapter": 9,
-    "verse": "24",
+    "verse": 24,
     "original": "अहं हि सर्वयज्ञानां भोक्ता च प्रभुरेव च ।\nन तु मामभिजानन्ति तत्त्वेनातश्‍च्‍यवन्ति ते ॥ २४ ॥",
     "transliteration": "ahaṁ hi sarva-yajñānāṁ\nbhoktā ca prabhur eva ca\nna tu mām abhijānanti\ntattvenātaś cyavanti te",
     "translation": "I am the only enjoyer and master of all sacrifices. Therefore, those who do not recognize My true transcendental nature fall down.",
@@ -1364,6 +1668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: भगवंत जगाला धारण करतो पण जगाने बांधला जात नाही. पत्र, पुष्प, फल, जलाचे निष्काम अर्पण भगवंत प्रेमाने स्वीकारतो. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1372,15 +1694,16 @@
       "stats": {
         "original_words": 16,
         "translit_words": 15,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "0234713dd7d2ceee9f9a0c85496d08d6"
     }
   },
   {
     "id": "bhagavad-gita_9_25",
     "text_slug": "bhagavad-gita",
     "chapter": 9,
-    "verse": "25",
+    "verse": 25,
     "original": "यान्ति देवव्रता देवान्पितॄन्यान्ति पितृव्रता: ।\nभूतानि यान्ति भूतेज्या यान्ति मद्याजिनोऽपि माम् ॥ २५ ॥",
     "transliteration": "yānti deva-vratā devān\npitṝn yānti pitṛ-vratāḥ\nbhūtāni yānti bhūtejyā\nyānti mad-yājino ’pi mām",
     "translation": "Those who worship the demigods will take birth among the demigods; those who worship the ancestors go to the ancestors; those who worship ghosts and spirits will take birth among such beings; and those who worship Me will live with Me.",
@@ -1445,6 +1768,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: भगवंत जगाला धारण करतो पण जगाने बांधला जात नाही. पत्र, पुष्प, फल, जलाचे निष्काम अर्पण भगवंत प्रेमाने स्वीकारतो. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1453,15 +1794,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "4ee3c1f59a56e833ae9e9eb48a4d732d"
     }
   },
   {
     "id": "bhagavad-gita_9_26",
     "text_slug": "bhagavad-gita",
     "chapter": 9,
-    "verse": "26",
+    "verse": 26,
     "original": "पत्रं पुष्पं फलं तोयं यो मे भक्त्य‍ा प्रयच्छति ।\nतदहं भक्त्य‍ुपहृतमश्न‍ामि प्रयतात्मन: ॥ २६ ॥",
     "transliteration": "patraṁ puṣpaṁ phalaṁ toyaṁ\nyo me bhaktyā prayacchati\ntad ahaṁ bhakty-upahṛtam\naśnāmi prayatātmanaḥ",
     "translation": "If one offers Me with love and devotion a leaf, a flower, a fruit or water, I will accept it.",
@@ -1526,6 +1868,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: भगवंत जगाला धारण करतो पण जगाने बांधला जात नाही. पत्र, पुष्प, फल, जलाचे निष्काम अर्पण भगवंत प्रेमाने स्वीकारतो. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1534,15 +1894,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "6cde57fc285d3ea3dd8bb82a280cf734"
     }
   },
   {
     "id": "bhagavad-gita_9_27",
     "text_slug": "bhagavad-gita",
     "chapter": 9,
-    "verse": "27",
+    "verse": 27,
     "original": "यत्करोषि यदश्न‍ासि यज्ज‍ुहोषि ददासि यत् ।\nयत्तपस्यसि कौन्तेय तत्कुरुष्व मदर्पणम् ॥ २७ ॥",
     "transliteration": "yat karoṣi yad aśnāsi\nyaj juhoṣi dadāsi yat\nyat tapasyasi kaunteya\ntat kuruṣva mad-arpaṇam",
     "translation": "Whatever you do, whatever you eat, whatever you offer or give away, and whatever austerities you perform – do that, O son of Kuntī, as an offering to Me.",
@@ -1607,6 +1968,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: भगवंत जगाला धारण करतो पण जगाने बांधला जात नाही. पत्र, पुष्प, फल, जलाचे निष्काम अर्पण भगवंत प्रेमाने स्वीकारतो. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1615,15 +1994,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "62c2dea1c40ce5b81d1540e450301269"
     }
   },
   {
     "id": "bhagavad-gita_9_28",
     "text_slug": "bhagavad-gita",
     "chapter": 9,
-    "verse": "28",
+    "verse": 28,
     "original": "श‍ुभाश‍ुभफलैरेवं मोक्ष्यसे कर्मबन्धनै: ।\nसन्न्यासयोगयुक्तात्मा विमुक्तो मामुपैष्यसि ॥ २८ ॥",
     "transliteration": "śubhāśubha-phalair evaṁ\nmokṣyase karma-bandhanaiḥ\nsannyāsa-yoga-yuktātmā\nvimukto mām upaiṣyasi",
     "translation": "In this way you will be freed from bondage to work and its auspicious and inauspicious results. With your mind fixed on Me in this principle of renunciation, you will be liberated and come to Me.",
@@ -1688,6 +2068,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — भगवंत जगाला धारण करतो पण जगाने बांधला जात नाही. पत्र, पुष्प, फल, जलाचे निष्काम अर्पण भगवंत प्रेमाने स्वीकारतो. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1696,15 +2094,16 @@
       "stats": {
         "original_words": 10,
         "translit_words": 8,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "70bc6a903a2bc27d42fcf7531fb08433"
     }
   },
   {
     "id": "bhagavad-gita_9_29",
     "text_slug": "bhagavad-gita",
     "chapter": 9,
-    "verse": "29",
+    "verse": 29,
     "original": "समोऽहं सर्वभूतेषु न मे द्वेष्योऽस्ति न प्रिय: ।\nये भजन्ति तु मां भक्त्य‍ा मयि ते तेषु चाप्यहम् ॥ २९ ॥",
     "transliteration": "samo ’haṁ sarva-bhūteṣu\nna me dveṣyo ’sti na priyaḥ\nye bhajanti tu māṁ bhaktyā\nmayi te teṣu cāpy aham",
     "translation": "I envy no one, nor am I partial to anyone. I am equal to all. But whoever renders service unto Me in devotion is a friend, is in Me, and I am also a friend to him.",
@@ -1769,6 +2168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: भगवंत जगाला धारण करतो पण जगाने बांधला जात नाही. पत्र, पुष्प, फल, जलाचे निष्काम अर्पण भगवंत प्रेमाने स्वीकारतो. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1777,15 +2194,16 @@
       "stats": {
         "original_words": 20,
         "translit_words": 19,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "8e2ad1ad8f9e8d44c71bb7b6a4fd3ce3"
     }
   },
   {
     "id": "bhagavad-gita_9_3",
     "text_slug": "bhagavad-gita",
     "chapter": 9,
-    "verse": "3",
+    "verse": 3,
     "original": "अश्रद्दधाना: पुरुषा धर्मस्यास्य परन्तप ।\nअप्राप्य मां निवर्तन्ते मृत्युसंसारवर्त्मनि ॥ ३ ॥",
     "transliteration": "aśraddadhānāḥ puruṣā\ndharmasyāsya paran-tapa\naprāpya māṁ nivartante\nmṛtyu-saṁsāra-vartmani",
     "translation": "Those who are not faithful in this devotional service cannot attain Me, O conqueror of enemies. Therefore they return to the path of birth and death in this material world.",
@@ -1850,6 +2268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: भगवंत जगाला धारण करतो पण जगाने बांधला जात नाही. पत्र, पुष्प, फल, जलाचे निष्काम अर्पण भगवंत प्रेमाने स्वीकारतो. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1858,15 +2294,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 8,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "248971057f1882cbfeec8eae1daabb58"
     }
   },
   {
     "id": "bhagavad-gita_9_30",
     "text_slug": "bhagavad-gita",
     "chapter": 9,
-    "verse": "30",
+    "verse": 30,
     "original": "अपि चेत्सुदुराचारो भजते मामनन्यभाक् ।\nसाधुरेव स मन्तव्य: सम्यग्व्यवसितो हि स: ॥ ३० ॥",
     "transliteration": "api cet su-durācāro\nbhajate mām ananya-bhāk\nsādhur eva sa mantavyaḥ\nsamyag vyavasito hi saḥ",
     "translation": "Even if one commits the most abominable action, if he is engaged in devotional service he is to be considered saintly because he is properly situated in his determination.",
@@ -1931,6 +2368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: भगवंत जगाला धारण करतो पण जगाने बांधला जात नाही. पत्र, पुष्प, फल, जलाचे निष्काम अर्पण भगवंत प्रेमाने स्वीकारतो. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1939,15 +2394,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "2333c65992fd787db9c22aca91bc00c8"
     }
   },
   {
     "id": "bhagavad-gita_9_31",
     "text_slug": "bhagavad-gita",
     "chapter": 9,
-    "verse": "31",
+    "verse": 31,
     "original": "क्षिप्रं भवति धर्मात्मा शश्वच्छान्तिं निगच्छति ।\nकौन्तेय प्रतिजानीहि न मे भक्त: प्रणश्यति ॥ ३१ ॥",
     "transliteration": "kṣipraṁ bhavati dharmātmā\nśaśvac-chāntiṁ nigacchati\nkaunteya pratijānīhi\nna me bhaktaḥ praṇaśyati",
     "translation": "He quickly becomes righteous and attains lasting peace. O son of Kuntī, declare it boldly that My devotee never perishes.",
@@ -2012,6 +2468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: भगवंत जगाला धारण करतो पण जगाने बांधला जात नाही. पत्र, पुष्प, फल, जलाचे निष्काम अर्पण भगवंत प्रेमाने स्वीकारतो. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2020,15 +2494,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "3a14c77a269ba00acffafc47335db5b5"
     }
   },
   {
     "id": "bhagavad-gita_9_32",
     "text_slug": "bhagavad-gita",
     "chapter": 9,
-    "verse": "32",
+    "verse": 32,
     "original": "मां हि पार्थ व्यपाश्रित्य येऽपि स्यु: पापयोनय: ।\nस्त्रियो वैश्यास्तथा श‍ूद्रास्तेऽपि यान्ति परां गतिम् ॥ ३२ ॥",
     "transliteration": "māṁ hi pārtha vyapāśritya\nye ’pi syuḥ pāpa-yonayaḥ\nstriyo vaiśyās tathā śūdrās\nte ’pi yānti parāṁ gatim",
     "translation": "O son of Pṛthā, those who take shelter in Me, though they be of lower birth – women, vaiśyas [merchants] and śūdras [workers] – can attain the supreme destination.",
@@ -2093,6 +2568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: भगवंत जगाला धारण करतो पण जगाने बांधला जात नाही. पत्र, पुष्प, फल, जलाचे निष्काम अर्पण भगवंत प्रेमाने स्वीकारतो. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2101,15 +2594,16 @@
       "stats": {
         "original_words": 17,
         "translit_words": 17,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "8e06bb0a01ca7f1399aa15acdd9e8d85"
     }
   },
   {
     "id": "bhagavad-gita_9_33",
     "text_slug": "bhagavad-gita",
     "chapter": 9,
-    "verse": "33",
+    "verse": 33,
     "original": "किं पुनर्ब्राह्मणा: पुण्या भक्ता राजर्षयस्तथा ।\nअनित्यमसुखं लोकमिमं प्राप्य भजस्व माम् ॥ ३३ ॥",
     "transliteration": "kiṁ punar brāhmaṇāḥ puṇyā\nbhaktā rājarṣayas tathā\nanityam asukhaṁ lokam\nimaṁ prāpya bhajasva mām",
     "translation": "How much more this is so of the righteous brāhmaṇas, the devotees and the saintly kings. Therefore, having come to this temporary, miserable world, engage in loving service unto Me.",
@@ -2174,6 +2668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — भगवंत जगाला धारण करतो पण जगाने बांधला जात नाही. पत्र, पुष्प, फल, जलाचे निष्काम अर्पण भगवंत प्रेमाने स्वीकारतो. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2182,15 +2694,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "24406e9425c2f2fa2e2a362be2b861be"
     }
   },
   {
     "id": "bhagavad-gita_9_34",
     "text_slug": "bhagavad-gita",
     "chapter": 9,
-    "verse": "34",
+    "verse": 34,
     "original": "मन्मना भव मद्भ‍क्तो मद्याजी मां नमस्कुरु ।\nमामेवैष्यसि युक्त्वैवमात्मानं मत्परायण: ॥ ३४ ॥",
     "transliteration": "man-manā bhava mad-bhakto\nmad-yājī māṁ namaskuru\nmām evaiṣyasi yuktvaivam\nātmānaṁ mat-parāyaṇaḥ",
     "translation": "Engage your mind always in thinking of Me, become My devotee, offer obeisances to Me and worship Me. Being completely absorbed in Me, surely you will come to Me.",
@@ -2255,6 +2768,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: भगवंत जगाला धारण करतो पण जगाने बांधला जात नाही. पत्र, पुष्प, फल, जलाचे निष्काम अर्पण भगवंत प्रेमाने स्वीकारतो. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2263,15 +2794,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "53b7c1ce5cdcc0344f60beefc758baa4"
     }
   },
   {
     "id": "bhagavad-gita_9_4",
     "text_slug": "bhagavad-gita",
     "chapter": 9,
-    "verse": "4",
+    "verse": 4,
     "original": "मया ततमिदं सर्वं जगदव्यक्तमूर्तिना ।\nमत्स्थानि सर्वभूतानि न चाहं तेष्ववस्थित: ॥ ४ ॥",
     "transliteration": "mayā tatam idaṁ sarvaṁ\njagad avyakta-mūrtinā\nmat-sthāni sarva-bhūtāni\nna cāhaṁ teṣv avasthitaḥ",
     "translation": "By Me, in My unmanifested form, this entire universe is pervaded. All beings are in Me, but I am not in them.",
@@ -2336,6 +2868,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: भगवंत जगाला धारण करतो पण जगाने बांधला जात नाही. पत्र, पुष्प, फल, जलाचे निष्काम अर्पण भगवंत प्रेमाने स्वीकारतो. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2344,15 +2894,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "b2f4e8e10cd5b11b4927fab24f988bbe"
     }
   },
   {
     "id": "bhagavad-gita_9_5",
     "text_slug": "bhagavad-gita",
     "chapter": 9,
-    "verse": "5",
+    "verse": 5,
     "original": "न च मत्स्थानि भूतानि पश्य मे योगमैश्वरम् ।\nभूतभृन्न च भूतस्थो ममात्मा भूतभावन: ॥ ५ ॥",
     "transliteration": "na ca mat-sthāni bhūtāni\npaśya me yogam aiśvaram\nbhūta-bhṛn na ca bhūta-stho\nmamātmā bhūta-bhāvanaḥ",
     "translation": "And yet everything that is created does not rest in Me. Behold My mystic opulence! Although I am the maintainer of all living entities and although I am everywhere, I am not a part of this cosmic manifestation, for My Self is the very source of creation.",
@@ -2417,6 +2968,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: भगवंत जगाला धारण करतो पण जगाने बांधला जात नाही. पत्र, पुष्प, फल, जलाचे निष्काम अर्पण भगवंत प्रेमाने स्वीकारतो. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2425,15 +2994,16 @@
       "stats": {
         "original_words": 16,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "135ac7f7e88bacfd72ad1a875b670c72"
     }
   },
   {
     "id": "bhagavad-gita_9_6",
     "text_slug": "bhagavad-gita",
     "chapter": 9,
-    "verse": "6",
+    "verse": 6,
     "original": "यथाकाशस्थितो नित्यं वायु: सर्वत्रगो महान् ।\nतथा सर्वाणि भूतानि मत्स्थानीत्युपधारय ॥ ६ ॥",
     "transliteration": "yathākāśa-sthito nityaṁ\nvāyuḥ sarvatra-go mahān\ntathā sarvāṇi bhūtāni\nmat-sthānīty upadhāraya",
     "translation": "Understand that as the mighty wind, blowing everywhere, rests always in the sky, all created beings rest in Me.",
@@ -2498,6 +3068,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: भगवंत जगाला धारण करतो पण जगाने बांधला जात नाही. पत्र, पुष्प, फल, जलाचे निष्काम अर्पण भगवंत प्रेमाने स्वीकारतो. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2506,15 +3094,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "d8edfb10354462131eda70662d3d2b32"
     }
   },
   {
     "id": "bhagavad-gita_9_7",
     "text_slug": "bhagavad-gita",
     "chapter": 9,
-    "verse": "7",
+    "verse": 7,
     "original": "सर्वभूतानि कौन्तेय प्रकृतिं यान्ति मामिकाम् ।\nकल्पक्षये पुनस्तानि कल्पादौ विसृजाम्यहम् ॥ ७ ॥",
     "transliteration": "sarva-bhūtāni kaunteya\nprakṛtiṁ yānti māmikām\nkalpa-kṣaye punas tāni\nkalpādau visṛjāmy aham",
     "translation": "O son of Kuntī, at the end of the millennium all material manifestations enter into My nature, and at the beginning of another millennium, by My potency, I create them again.",
@@ -2579,6 +3168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: भगवंत जगाला धारण करतो पण जगाने बांधला जात नाही. पत्र, पुष्प, फल, जलाचे निष्काम अर्पण भगवंत प्रेमाने स्वीकारतो. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2587,15 +3194,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "ea2602dc66654f9310dcadbfdd3ba4a3"
     }
   },
   {
     "id": "bhagavad-gita_9_8",
     "text_slug": "bhagavad-gita",
     "chapter": 9,
-    "verse": "8",
+    "verse": 8,
     "original": "प्रकृतिं स्वामवष्टभ्य विसृजामि पुन: पुन: ।\nभूतग्राममिमं कृत्स्नमवशं प्रकृतेर्वशात् ॥ ८ ॥",
     "transliteration": "prakṛtiṁ svām avaṣṭabhya\nvisṛjāmi punaḥ punaḥ\nbhūta-grāmam imaṁ kṛtsnam\navaśaṁ prakṛter vaśāt",
     "translation": "The whole cosmic order is under Me. Under My will it is automatically manifested again and again, and under My will it is annihilated at the end.",
@@ -2660,6 +3268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — भगवंत जगाला धारण करतो पण जगाने बांधला जात नाही. पत्र, पुष्प, फल, जलाचे निष्काम अर्पण भगवंत प्रेमाने स्वीकारतो. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2668,15 +3294,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "ab516745318c4cfa0b6af438b0c37f45"
     }
   },
   {
     "id": "bhagavad-gita_9_9",
     "text_slug": "bhagavad-gita",
     "chapter": 9,
-    "verse": "9",
+    "verse": 9,
     "original": "न च मां तानि कर्माणि निबध्‍नन्ति धनञ्जय ।\nउदासीनवदासीनमसक्तं तेषु कर्मसु ॥ ९ ॥",
     "transliteration": "na ca māṁ tāni karmāṇi\nnibadhnanti dhanañ-jaya\nudāsīna-vad āsīnam\nasaktaṁ teṣu karmasu",
     "translation": "O Dhanañjaya, all this work cannot bind Me. I am ever detached from all these material activities, seated as though neutral.",
@@ -2741,6 +3368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: भगवंत जगाला धारण करतो पण जगाने बांधला जात नाही. पत्र, पुष्प, फल, जलाचे निष्काम अर्पण भगवंत प्रेमाने स्वीकारतो. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2749,8 +3394,9 @@
       "stats": {
         "original_words": 14,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "9af34a714f551cd3f9a406bdcb5bf9d0"
     }
   }
 ]

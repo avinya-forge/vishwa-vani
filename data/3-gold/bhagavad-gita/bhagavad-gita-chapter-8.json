@@ -3,7 +3,7 @@
     "id": "bhagavad-gita_8_1",
     "text_slug": "bhagavad-gita",
     "chapter": 8,
-    "verse": "1",
+    "verse": 1,
     "original": "अर्जुन उवाच\nकिं तद्‌ब्रह्म किमध्यात्मं किं कर्म पुरुषोत्तम ।\nअधिभूतं च किं प्रोक्तमधिदैवं किमुच्यते ॥ १ ॥",
     "transliteration": "arjuna uvāca\nkiṁ tad brahma kim adhyātmaṁ\nkiṁ karma puruṣottama\nadhibhūtaṁ ca kiṁ proktam\nadhidaivaṁ kim ucyate",
     "translation": "Arjuna inquired: O my Lord, O Supreme Person, what is Brahman? What is the self? What are fruitive activities? What is this material manifestation? And what are the demigods? Please explain this to me.",
@@ -68,6 +68,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: मृत्युसमयी जो परमेश्वराचे स्मरण करतो, तो त्याच्याकडेच जातो. सुगंधी वस्त्राप्रमाणे सतत भक्ती मनाला पवित्र ठेवते. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -76,15 +94,16 @@
       "stats": {
         "original_words": 17,
         "translit_words": 17,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "5f1e7caa4ae7c4ba60306cc06313927f"
     }
   },
   {
     "id": "bhagavad-gita_8_10",
     "text_slug": "bhagavad-gita",
     "chapter": 8,
-    "verse": "10",
+    "verse": 10,
     "original": "प्रयाणकाले मनसाचलेन\nभक्त्य‍ा युक्तो योगबलेन चैव ।\nभ्रुवोर्मध्ये प्राणमावेश्य सम्य-\nक्स तं परं पुरुषमुपैति दिव्यम् ॥ १० ॥",
     "transliteration": "prayāṇa-kāle manasācalena\nbhaktyā yukto yoga-balena caiva\nbhruvor madhye prāṇam āveśya samyak\nsa taṁ paraṁ puruṣam upaiti divyam",
     "translation": "One who, at the time of death, fixes his life air between the eyebrows and, by the strength of yoga, with an undeviating mind, engages himself in remembering the Supreme Lord in full devotion, will certainly attain to the Supreme Personality of Godhead.",
@@ -149,6 +168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: मृत्युसमयी जो परमेश्वराचे स्मरण करतो, तो त्याच्याकडेच जातो. सुगंधी वस्त्राप्रमाणे सतत भक्ती मनाला पवित्र ठेवते. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -157,15 +194,16 @@
       "stats": {
         "original_words": 18,
         "translit_words": 17,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "a5282fec9c98d5bbaf8825f132c74f66"
     }
   },
   {
     "id": "bhagavad-gita_8_11",
     "text_slug": "bhagavad-gita",
     "chapter": 8,
-    "verse": "11",
+    "verse": 11,
     "original": "यदक्षरं वेदविदो वदन्ति\nविशन्ति यद्यतयो वीतरागा: ।\nयदिच्छन्तो ब्रह्मचर्यं चरन्ति\nतत्ते पदं सङ्ग्रहेण प्रवक्ष्ये ॥ ११ ॥",
     "transliteration": "yad akṣaraṁ veda-vido vadanti\nviśanti yad yatayo vīta-rāgāḥ\nyad icchanto brahma-caryaṁ caranti\ntat te padaṁ saṅgraheṇa pravakṣye",
     "translation": "Persons who are learned in the Vedas, who utter oṁ-kāra, and who are great sages in the renounced order enter into Brahman. Desiring such perfection, one practices celibacy. I shall now briefly explain to you this process by which one may attain salvation.",
@@ -230,6 +268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — मृत्युसमयी जो परमेश्वराचे स्मरण करतो, तो त्याच्याकडेच जातो. सुगंधी वस्त्राप्रमाणे सतत भक्ती मनाला पवित्र ठेवते. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -238,15 +294,16 @@
       "stats": {
         "original_words": 17,
         "translit_words": 17,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "2d684da75b01402ee90039ad66976522"
     }
   },
   {
     "id": "bhagavad-gita_8_12",
     "text_slug": "bhagavad-gita",
     "chapter": 8,
-    "verse": "12",
+    "verse": 12,
     "original": "सर्वद्वाराणि संयम्य मनो हृदि निरुध्य च ।\nमूध्‍न्‍‍र्याधायात्मन: प्राणमास्थितो योगधारणाम् ॥ १२ ॥",
     "transliteration": "sarva-dvārāṇi saṁyamya\nmano hṛdi nirudhya ca\nmūrdhny ādhāyātmanaḥ prāṇam\nāsthito yoga-dhāraṇām",
     "translation": "The yogic situation is that of detachment from all sensual engagements. Closing all the doors of the senses and fixing the mind on the heart and the life air at the top of the head, one establishes himself in yoga.",
@@ -311,6 +368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: मृत्युसमयी जो परमेश्वराचे स्मरण करतो, तो त्याच्याकडेच जातो. सुगंधी वस्त्राप्रमाणे सतत भक्ती मनाला पवित्र ठेवते. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -319,15 +394,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "6dd7e46f85303ac600cc4b9f5ab8aebf"
     }
   },
   {
     "id": "bhagavad-gita_8_13",
     "text_slug": "bhagavad-gita",
     "chapter": 8,
-    "verse": "13",
+    "verse": 13,
     "original": "ॐ इत्येकाक्षरं ब्रह्म व्याहरन्मामनुस्मरन् ।\nय: प्रयाति त्यजन्देहं स याति परमां गतिम् ॥ १३ ॥",
     "transliteration": "oṁ ity ekākṣaraṁ brahma\nvyāharan mām anusmaran\nyaḥ prayāti tyajan dehaṁ\nsa yāti paramāṁ gatim",
     "translation": "After being situated in this yoga practice and vibrating the sacred syllable oṁ, the supreme combination of letters, if one thinks of the Supreme Personality of Godhead and quits his body, he will certainly reach the spiritual planets.",
@@ -392,6 +468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: मृत्युसमयी जो परमेश्वराचे स्मरण करतो, तो त्याच्याकडेच जातो. सुगंधी वस्त्राप्रमाणे सतत भक्ती मनाला पवित्र ठेवते. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -400,15 +494,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 15,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "4c541ed1edc3707e13c04af087cc44a8"
     }
   },
   {
     "id": "bhagavad-gita_8_14",
     "text_slug": "bhagavad-gita",
     "chapter": 8,
-    "verse": "14",
+    "verse": 14,
     "original": "अनन्यचेता: सततं यो मां स्मरति नित्यश: ।\nतस्याहं सुलभ: पार्थ नित्ययुक्तस्य योगिन: ॥ १४ ॥",
     "transliteration": "ananya-cetāḥ satataṁ\nyo māṁ smarati nityaśaḥ\ntasyāhaṁ su-labhaḥ pārtha\nnitya-yuktasya yoginaḥ",
     "translation": "For one who always remembers Me without deviation, I am easy to obtain, O son of Pṛthā, because of his constant engagement in devotional service.",
@@ -473,6 +568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: मृत्युसमयी जो परमेश्वराचे स्मरण करतो, तो त्याच्याकडेच जातो. सुगंधी वस्त्राप्रमाणे सतत भक्ती मनाला पवित्र ठेवते. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -481,15 +594,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "6e7d18abd76831edab33338cb3cec5eb"
     }
   },
   {
     "id": "bhagavad-gita_8_15",
     "text_slug": "bhagavad-gita",
     "chapter": 8,
-    "verse": "15",
+    "verse": 15,
     "original": "मामुपेत्य पुनर्जन्म दु:खालयमशाश्वतम् ।\nनाप्‍नुवन्ति महात्मान: संसिद्धिं परमां गता: ॥ १५ ॥",
     "transliteration": "mām upetya punar janma\nduḥkhālayam aśāśvatam\nnāpnuvanti mahātmānaḥ\nsaṁsiddhiṁ paramāṁ gatāḥ",
     "translation": "After attaining Me, the great souls, who are yogīs in devotion, never return to this temporary world, which is full of miseries, because they have attained the highest perfection.",
@@ -554,6 +668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: मृत्युसमयी जो परमेश्वराचे स्मरण करतो, तो त्याच्याकडेच जातो. सुगंधी वस्त्राप्रमाणे सतत भक्ती मनाला पवित्र ठेवते. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -562,15 +694,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "8255cc8a356fc3be245b659b3af5dbdd"
     }
   },
   {
     "id": "bhagavad-gita_8_16",
     "text_slug": "bhagavad-gita",
     "chapter": 8,
-    "verse": "16",
+    "verse": 16,
     "original": "आब्रह्मभुवनाल्ल‍ोका: पुनरावर्तिनोऽर्जुन ।\nमामुपेत्य तु कौन्तेय पुनर्जन्म न विद्यते ॥ १६ ॥",
     "transliteration": "ā-brahma-bhuvanāl lokāḥ\npunar āvartino ’rjuna\nmām upetya tu kaunteya\npunar janma na vidyate",
     "translation": "From the highest planet in the material world down to the lowest, all are places of misery wherein repeated birth and death take place. But one who attains to My abode, O son of Kuntī, never takes birth again.",
@@ -635,6 +768,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: मृत्युसमयी जो परमेश्वराचे स्मरण करतो, तो त्याच्याकडेच जातो. सुगंधी वस्त्राप्रमाणे सतत भक्ती मनाला पवित्र ठेवते. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -643,15 +794,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "ffcb8f4e4487a42f63c865e822e1b540"
     }
   },
   {
     "id": "bhagavad-gita_8_17",
     "text_slug": "bhagavad-gita",
     "chapter": 8,
-    "verse": "17",
+    "verse": 17,
     "original": "सहस्रयुगपर्यन्तमहर्यद्ब्रह्मणो विदु: ।\nरात्रिं युगसहस्रान्तां तेऽहोरात्रविदो जना: ॥ १७ ॥",
     "transliteration": "sahasra-yuga-paryantam\nahar yad brahmaṇo viduḥ\nrātriṁ yuga-sahasrāntāṁ\nte ’ho-rātra-vido janāḥ",
     "translation": "By human calculation, a thousand ages taken together form the duration of Brahmā’s one day. And such also is the duration of his night.",
@@ -716,6 +868,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — मृत्युसमयी जो परमेश्वराचे स्मरण करतो, तो त्याच्याकडेच जातो. सुगंधी वस्त्राप्रमाणे सतत भक्ती मनाला पवित्र ठेवते. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -724,15 +894,16 @@
       "stats": {
         "original_words": 10,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "83a2787c9db91448450e20e90652f47b"
     }
   },
   {
     "id": "bhagavad-gita_8_18",
     "text_slug": "bhagavad-gita",
     "chapter": 8,
-    "verse": "18",
+    "verse": 18,
     "original": "अव्यक्ताद्‍ व्यक्तय: सर्वा: प्रभवन्त्यहरागमे ।\nरात्र्यागमे प्रलीयन्ते तत्रैवाव्यक्तसंज्ञके ॥ १८ ॥",
     "transliteration": "avyaktād vyaktayaḥ sarvāḥ\nprabhavanty ahar-āgame\nrātry-āgame pralīyante\ntatraivāvyakta-saṁjñake",
     "translation": "At the beginning of Brahmā’s day, all living entities become manifest from the unmanifest state, and thereafter, when the night falls, they are merged into the unmanifest again.",
@@ -797,6 +968,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: मृत्युसमयी जो परमेश्वराचे स्मरण करतो, तो त्याच्याकडेच जातो. सुगंधी वस्त्राप्रमाणे सतत भक्ती मनाला पवित्र ठेवते. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -805,15 +994,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 8,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "8d8c2afdf46d2f6345775c7347343862"
     }
   },
   {
     "id": "bhagavad-gita_8_19",
     "text_slug": "bhagavad-gita",
     "chapter": 8,
-    "verse": "19",
+    "verse": 19,
     "original": "भूतग्राम: स एवायं भूत्वा भूत्वा प्रलीयते ।\nरात्र्यागमेऽवश: पार्थ प्रभवत्यहरागमे ॥ १९ ॥",
     "transliteration": "bhūta-grāmaḥ sa evāyaṁ\nbhūtvā bhūtvā pralīyate\nrātry-āgame ’vaśaḥ pārtha\nprabhavaty ahar-āgame",
     "translation": "Again and again, when Brahmā’s day arrives, all living entities come into being, and with the arrival of Brahmā’s night they are helplessly annihilated.",
@@ -878,6 +1068,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: मृत्युसमयी जो परमेश्वराचे स्मरण करतो, तो त्याच्याकडेच जातो. सुगंधी वस्त्राप्रमाणे सतत भक्ती मनाला पवित्र ठेवते. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -886,15 +1094,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "7502bba360038a247ae667f737cd1242"
     }
   },
   {
     "id": "bhagavad-gita_8_2",
     "text_slug": "bhagavad-gita",
     "chapter": 8,
-    "verse": "2",
+    "verse": 2,
     "original": "अधियज्ञ: कथं कोऽत्र देहेऽस्मिन्मधुसूदन ।\nप्रयाणकाले च कथं ज्ञेयोऽसि नियतात्मभि: ॥ २ ॥",
     "transliteration": "adhiyajñaḥ kathaṁ ko ’tra\ndehe ’smin madhusūdana\nprayāṇa-kāle ca kathaṁ\njñeyo ’si niyatātmabhiḥ",
     "translation": "Who is the Lord of sacrifice, and how does He live in the body, O Madhusūdana? And how can those engaged in devotional service know You at the time of death?",
@@ -959,6 +1168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: मृत्युसमयी जो परमेश्वराचे स्मरण करतो, तो त्याच्याकडेच जातो. सुगंधी वस्त्राप्रमाणे सतत भक्ती मनाला पवित्र ठेवते. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -967,15 +1194,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "ec276be413f39d2878f5d84d41c8ac9d"
     }
   },
   {
     "id": "bhagavad-gita_8_20",
     "text_slug": "bhagavad-gita",
     "chapter": 8,
-    "verse": "20",
+    "verse": 20,
     "original": "परस्तस्मात्तु भावोऽन्योऽव्यक्तोऽव्यक्तात्सनातन: ।\nय: स सर्वेषु भूतेषु नश्यत्सु न विनश्यति ॥ २० ॥",
     "transliteration": "paras tasmāt tu bhāvo ’nyo\n’vyakto ’vyaktāt sanātanaḥ\nyaḥ sa sarveṣu bhūteṣu\nnaśyatsu na vinaśyati",
     "translation": "Yet there is another unmanifest nature, which is eternal and is transcendental to this manifested and unmanifested matter. It is supreme and is never annihilated. When all in this world is annihilated, that part remains as it is.",
@@ -1040,6 +1268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: मृत्युसमयी जो परमेश्वराचे स्मरण करतो, तो त्याच्याकडेच जातो. सुगंधी वस्त्राप्रमाणे सतत भक्ती मनाला पवित्र ठेवते. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1048,15 +1294,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 15,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "30d63988896bb14075910b2c53281391"
     }
   },
   {
     "id": "bhagavad-gita_8_21",
     "text_slug": "bhagavad-gita",
     "chapter": 8,
-    "verse": "21",
+    "verse": 21,
     "original": "अव्यक्तोऽक्षर इत्युक्तस्तमाहु: परमां गतिम् ।\nयं प्राप्य न निवर्तन्ते तद्धाम परमं मम ॥ २१ ॥",
     "transliteration": "avyakto ’kṣara ity uktas\ntam āhuḥ paramāṁ gatim\nyaṁ prāpya na nivartante\ntad dhāma paramaṁ mama",
     "translation": "That which the Vedāntists describe as unmanifest and infallible, that which is known as the supreme destination, that place from which, having attained it, one never returns – that is My supreme abode.",
@@ -1121,6 +1368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: मृत्युसमयी जो परमेश्वराचे स्मरण करतो, तो त्याच्याकडेच जातो. सुगंधी वस्त्राप्रमाणे सतत भक्ती मनाला पवित्र ठेवते. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1129,15 +1394,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 16,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "86c49ec851cfb2cdbd4fec6728fe1ac8"
     }
   },
   {
     "id": "bhagavad-gita_8_22",
     "text_slug": "bhagavad-gita",
     "chapter": 8,
-    "verse": "22",
+    "verse": 22,
     "original": "पुरुष: स पर: पार्थ भक्त्य‍ा लभ्यस्त्वनन्यया ।\nयस्यान्त:स्थानि भूतानि येन सर्वमिदं ततम् ॥ २२ ॥",
     "transliteration": "puruṣaḥ sa paraḥ pārtha\nbhaktyā labhyas tv ananyayā\nyasyāntaḥ-sthāni bhūtāni\nyena sarvam idaṁ tatam",
     "translation": "The Supreme Personality of Godhead, who is greater than all, is attainable by unalloyed devotion. Although He is present in His abode, He is all-pervading, and everything is situated within Him.",
@@ -1202,6 +1468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — मृत्युसमयी जो परमेश्वराचे स्मरण करतो, तो त्याच्याकडेच जातो. सुगंधी वस्त्राप्रमाणे सतत भक्ती मनाला पवित्र ठेवते. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1210,15 +1494,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "ba3c16d3471aed3c58c9d893c2608a72"
     }
   },
   {
     "id": "bhagavad-gita_8_23",
     "text_slug": "bhagavad-gita",
     "chapter": 8,
-    "verse": "23",
+    "verse": 23,
     "original": "यत्र काले त्वनावृत्तिमावृत्तिं चैव योगिन: ।\nप्रयाता यान्ति तं कालं वक्ष्यामि भरतर्षभ ॥ २३ ॥",
     "transliteration": "yatra kāle tv anāvṛttim\nāvṛttiṁ caiva yoginaḥ\nprayātā yānti taṁ kālaṁ\nvakṣyāmi bharatarṣabha",
     "translation": "O best of the Bhāratas, I shall now explain to you the different times at which, passing away from this world, the yogī does or does not come back.",
@@ -1283,6 +1568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: मृत्युसमयी जो परमेश्वराचे स्मरण करतो, तो त्याच्याकडेच जातो. सुगंधी वस्त्राप्रमाणे सतत भक्ती मनाला पवित्र ठेवते. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1291,15 +1594,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "1e80f3ac80661002a383db457b56dda1"
     }
   },
   {
     "id": "bhagavad-gita_8_24",
     "text_slug": "bhagavad-gita",
     "chapter": 8,
-    "verse": "24",
+    "verse": 24,
     "original": "अग्न‍िर्ज्योतिरह: शुक्ल‍ः षण्मासा उत्तरायणम् ।\nतत्र प्रयाता गच्छन्ति ब्रह्म ब्रह्मविदो जना: ॥ २४ ॥",
     "transliteration": "agnir jyotir ahaḥ śuklaḥ\nṣaṇ-māsā uttarāyaṇam\ntatra prayātā gacchanti\nbrahma brahma-vido janāḥ",
     "translation": "Those who know the Supreme Brahman attain that Supreme by passing away from the world during the influence of the fiery god, in the light, at an auspicious moment of the day, during the fortnight of the waxing moon, or during the six months when the sun travels in the north.",
@@ -1364,6 +1668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: मृत्युसमयी जो परमेश्वराचे स्मरण करतो, तो त्याच्याकडेच जातो. सुगंधी वस्त्राप्रमाणे सतत भक्ती मनाला पवित्र ठेवते. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1372,15 +1694,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "7360f32b7f2f2245f3d3a028c3a84775"
     }
   },
   {
     "id": "bhagavad-gita_8_25",
     "text_slug": "bhagavad-gita",
     "chapter": 8,
-    "verse": "25",
+    "verse": 25,
     "original": "धूमो रात्रिस्तथा कृष्ण: षण्मासा दक्षिणायनम् ।\nतत्र चान्द्रमसं ज्योतिर्योगी प्राप्य निवर्तते ॥ २५ ॥",
     "transliteration": "dhūmo rātris tathā kṛṣṇaḥ\nṣaṇ-māsā dakṣiṇāyanam\ntatra cāndramasaṁ jyotir\nyogī prāpya nivartate",
     "translation": "The mystic who passes away from this world during the smoke, the night, the fortnight of the waning moon, or the six months when the sun passes to the south reaches the moon planet but again comes back.",
@@ -1445,6 +1768,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: मृत्युसमयी जो परमेश्वराचे स्मरण करतो, तो त्याच्याकडेच जातो. सुगंधी वस्त्राप्रमाणे सतत भक्ती मनाला पवित्र ठेवते. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1453,15 +1794,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "e809d4bb4929ea2ffc0fca53e08d01da"
     }
   },
   {
     "id": "bhagavad-gita_8_26",
     "text_slug": "bhagavad-gita",
     "chapter": 8,
-    "verse": "26",
+    "verse": 26,
     "original": "श‍ुक्ल‍कृष्णे गती ह्येते जगत: शाश्वते मते ।\nएकया यात्यनावृत्तिमन्ययावर्तते पुन: ॥ २६ ॥",
     "transliteration": "śukla-kṛṣṇe gatī hy ete\njagataḥ śāśvate mate\nekayā yāty anāvṛttim\nanyayāvartate punaḥ",
     "translation": "According to Vedic opinion, there are two ways of passing from this world – one in light and one in darkness. When one passes in light, he does not come back; but when one passes in darkness, he returns.",
@@ -1526,6 +1868,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: मृत्युसमयी जो परमेश्वराचे स्मरण करतो, तो त्याच्याकडेच जातो. सुगंधी वस्त्राप्रमाणे सतत भक्ती मनाला पवित्र ठेवते. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1534,15 +1894,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "dbe2be95ec0fcda117aa757dd26c4cd1"
     }
   },
   {
     "id": "bhagavad-gita_8_27",
     "text_slug": "bhagavad-gita",
     "chapter": 8,
-    "verse": "27",
+    "verse": 27,
     "original": "नैते सृती पार्थ जानन्योगी मुह्यति कश्चन ।\nतस्मात्सर्वेषु कालेषु योगयुक्तो भवार्जुन ॥ २७ ॥",
     "transliteration": "naite sṛtī pārtha jānan\nyogī muhyati kaścana\ntasmāt sarveṣu kāleṣu\nyoga-yukto bhavārjuna",
     "translation": "Although the devotees know these two paths, O Arjuna, they are never bewildered. Therefore be always fixed in devotion.",
@@ -1607,6 +1968,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: मृत्युसमयी जो परमेश्वराचे स्मरण करतो, तो त्याच्याकडेच जातो. सुगंधी वस्त्राप्रमाणे सतत भक्ती मनाला पवित्र ठेवते. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1615,15 +1994,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "73c5399faf42f289ed9f857b11020b25"
     }
   },
   {
     "id": "bhagavad-gita_8_28",
     "text_slug": "bhagavad-gita",
     "chapter": 8,
-    "verse": "28",
+    "verse": 28,
     "original": "वेदेषु यज्ञेषु तप:सु चैव\nदानेषु यत्पुण्यफलं प्रदिष्टम् ।\nअत्येति तत्सर्वमिदं विदित्वा\nयोगी परं स्थानमुपैति चाद्यम् ॥ २८ ॥",
     "transliteration": "vedeṣu yajñeṣu tapaḥsu caiva\ndāneṣu yat puṇya-phalaṁ pradiṣṭam\natyeti tat sarvam idaṁ viditvā\nyogī paraṁ sthānam upaiti cādyam",
     "translation": "A person who accepts the path of devotional service is not bereft of the results derived from studying the Vedas, performing sacrifices, undergoing austerities, giving charity or pursuing philosophical and fruitive activities. Simply by performing devotional service, he attains all these, and at the end he reaches the supreme eternal abode.",
@@ -1688,6 +2068,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — मृत्युसमयी जो परमेश्वराचे स्मरण करतो, तो त्याच्याकडेच जातो. सुगंधी वस्त्राप्रमाणे सतत भक्ती मनाला पवित्र ठेवते. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1696,15 +2094,16 @@
       "stats": {
         "original_words": 18,
         "translit_words": 18,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "0ddd87a0d58591c7b015d5cba6d3dab5"
     }
   },
   {
     "id": "bhagavad-gita_8_3",
     "text_slug": "bhagavad-gita",
     "chapter": 8,
-    "verse": "3",
+    "verse": 3,
     "original": "श्रीभगवानुवाच\nअक्षरं ब्रह्म परमं स्वभावोऽध्यात्ममुच्यते ।\nभूतभावोद्भ‍वकरो विसर्ग: कर्मसंज्ञित: ॥ ३ ॥",
     "transliteration": "śrī-bhagavān uvāca\nakṣaraṁ brahma paramaṁ\nsvabhāvo ’dhyātmam ucyate\nbhūta-bhāvodbhava-karo\nvisargaḥ karma-saṁjñitaḥ",
     "translation": "The Supreme Personality of Godhead said: The indestructible, transcendental living entity is called Brahman, and his eternal nature is called adhyātma, the self. Action pertaining to the development of the material bodies of the living entities is called karma, or fruitive activities.",
@@ -1769,6 +2168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: मृत्युसमयी जो परमेश्वराचे स्मरण करतो, तो त्याच्याकडेच जातो. सुगंधी वस्त्राप्रमाणे सतत भक्ती मनाला पवित्र ठेवते. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1777,15 +2194,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "26d2496af8bf1d09c8df26a3e4b1aeae"
     }
   },
   {
     "id": "bhagavad-gita_8_4",
     "text_slug": "bhagavad-gita",
     "chapter": 8,
-    "verse": "4",
+    "verse": 4,
     "original": "अधिभूतं क्षरो भाव: पुरुषश्चाधिदैवतम् ।\nअधियज्ञोऽहमेवात्र देहे देहभृतां वर ॥ ४ ॥",
     "transliteration": "adhibhūtaṁ kṣaro bhāvaḥ\npuruṣaś cādhidaivatam\nadhiyajño ’ham evātra\ndehe deha-bhṛtāṁ vara",
     "translation": "O best of the embodied beings, the physical nature, which is constantly changing, is called adhibhūta [the material manifestation]. The universal form of the Lord, which includes all the demigods, like those of the sun and moon, is called adhidaiva. And I, the Supreme Lord, represented as the Supersoul in the heart of every embodied being, am called adhiyajña [the Lord of sacrifice].",
@@ -1850,6 +2268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: मृत्युसमयी जो परमेश्वराचे स्मरण करतो, तो त्याच्याकडेच जातो. सुगंधी वस्त्राप्रमाणे सतत भक्ती मनाला पवित्र ठेवते. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1858,15 +2294,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "caae8e0f4696f1000bc699a23e7f85be"
     }
   },
   {
     "id": "bhagavad-gita_8_5",
     "text_slug": "bhagavad-gita",
     "chapter": 8,
-    "verse": "5",
+    "verse": 5,
     "original": "अन्तकाले च मामेव स्मरन्मुक्त्वा कलेवरम् ।\nय: प्रयाति स मद्भ‍ावं याति नास्त्यत्र संशय: ॥ ५ ॥",
     "transliteration": "anta-kāle ca mām eva\nsmaran muktvā kalevaram\nyaḥ prayāti sa mad-bhāvaṁ\nyāti nāsty atra saṁśayaḥ",
     "translation": "And whoever, at the end of his life, quits his body remembering Me alone at once attains My nature. Of this there is no doubt.",
@@ -1931,6 +2368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: मृत्युसमयी जो परमेश्वराचे स्मरण करतो, तो त्याच्याकडेच जातो. सुगंधी वस्त्राप्रमाणे सतत भक्ती मनाला पवित्र ठेवते. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1939,15 +2394,16 @@
       "stats": {
         "original_words": 16,
         "translit_words": 15,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "bd9f31a87f75fa5d1eb024c1ece494bf"
     }
   },
   {
     "id": "bhagavad-gita_8_6",
     "text_slug": "bhagavad-gita",
     "chapter": 8,
-    "verse": "6",
+    "verse": 6,
     "original": "यं यं वापि स्मरन्भावं त्यजत्यन्ते कलेवरम् ।\nतं तमेवैति कौन्तेय सदा तद्भ‍ावभावित: ॥ ६ ॥",
     "transliteration": "yaṁ yaṁ vāpi smaran bhāvaṁ\ntyajaty ante kalevaram\ntaṁ tam evaiti kaunteya\nsadā tad-bhāva-bhāvitaḥ",
     "translation": "Whatever state of being one remembers when he quits his body, O son of Kuntī, that state he will attain without fail.",
@@ -2012,6 +2468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: मृत्युसमयी जो परमेश्वराचे स्मरण करतो, तो त्याच्याकडेच जातो. सुगंधी वस्त्राप्रमाणे सतत भक्ती मनाला पवित्र ठेवते. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2020,15 +2494,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "aeaf62e4d8dc03ae38a6ac816225b52d"
     }
   },
   {
     "id": "bhagavad-gita_8_7",
     "text_slug": "bhagavad-gita",
     "chapter": 8,
-    "verse": "7",
+    "verse": 7,
     "original": "तस्मात्सर्वेषु कालेषु मामनुस्मर युध्य च ।\nमय्यर्पितमनोबुद्धिर्मामेवैष्यस्यसंशय: ॥ ७ ॥",
     "transliteration": "tasmāt sarveṣu kāleṣu\nmām anusmara yudhya ca\nmayy arpita-mano-buddhir\nmām evaiṣyasy asaṁśayaḥ",
     "translation": "Therefore, Arjuna, you should always think of Me in the form of Kṛṣṇa and at the same time carry out your prescribed duty of fighting. With your activities dedicated to Me and your mind and intelligence fixed on Me, you will attain Me without doubt.",
@@ -2093,6 +2568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: मृत्युसमयी जो परमेश्वराचे स्मरण करतो, तो त्याच्याकडेच जातो. सुगंधी वस्त्राप्रमाणे सतत भक्ती मनाला पवित्र ठेवते. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2101,15 +2594,16 @@
       "stats": {
         "original_words": 10,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "d28f1373e643b0e93c16ab4c0d8530db"
     }
   },
   {
     "id": "bhagavad-gita_8_8",
     "text_slug": "bhagavad-gita",
     "chapter": 8,
-    "verse": "8",
+    "verse": 8,
     "original": "अभ्यासयोगयुक्तेन चेतसा नान्यगामिना ।\nपरमं पुरुषं दिव्यं याति पार्थानुचिन्तयन् ॥ ८ ॥",
     "transliteration": "abhyāsa-yoga-yuktena\ncetasā nānya-gāminā\nparamaṁ puruṣaṁ divyaṁ\nyāti pārthānucintayan",
     "translation": "He who meditates on Me as the Supreme Personality of Godhead, his mind constantly engaged in remembering Me, undeviated from the path, he, O Pārtha, is sure to reach Me.",
@@ -2174,6 +2668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — मृत्युसमयी जो परमेश्वराचे स्मरण करतो, तो त्याच्याकडेच जातो. सुगंधी वस्त्राप्रमाणे सतत भक्ती मनाला पवित्र ठेवते. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2182,15 +2694,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 8,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "7502d782d946be7e71630a4eabb4d623"
     }
   },
   {
     "id": "bhagavad-gita_8_9",
     "text_slug": "bhagavad-gita",
     "chapter": 8,
-    "verse": "9",
+    "verse": 9,
     "original": "कविं पुराणमनुशासितार-\nमणोरणीयांसमनुस्मरेद्य: ।\nसर्वस्य धातारमचिन्त्यरूप-\nमादित्यवर्णं तमस: परस्तात् ॥ ९ ॥",
     "transliteration": "kaviṁ purāṇam anuśāsitāram\naṇor aṇīyāṁsam anusmared yaḥ\nsarvasya dhātāram acintya-rūpam\nāditya-varṇaṁ tamasaḥ parastāt",
     "translation": "One should meditate upon the Supreme Person as the one who knows everything, as He who is the oldest, who is the controller, who is smaller than the smallest, who is the maintainer of everything, who is beyond all material conception, who is inconceivable, and who is always a person. He is luminous like the sun, and He is transcendental, beyond this material nature.",
@@ -2255,6 +2768,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: मृत्युसमयी जो परमेश्वराचे स्मरण करतो, तो त्याच्याकडेच जातो. सुगंधी वस्त्राप्रमाणे सतत भक्ती मनाला पवित्र ठेवते. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2263,8 +2794,9 @@
       "stats": {
         "original_words": 12,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "2dce235d2b9367fb84c9a25a37b7071d"
     }
   }
 ]

@@ -3,7 +3,7 @@
     "id": "bhagavad-gita_2_1",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "1",
+    "verse": 1,
     "original": "सञ्जय उवाच\nतं तथा कृपयाविष्टमश्रुपूर्णाकुलेक्षणम् ।\nविषीदन्तमिदं वाक्यमुवाच मधुसूदनः ॥ १ ॥",
     "transliteration": "sañjaya uvāca\ntaṁ tathā kṛpayāviṣṭam\naśru-pūrṇākulekṣaṇam\nviṣīdantam idaṁ vākyam\nuvāca madhusūdanaḥ",
     "translation": "Sañjaya said: Seeing Arjuna full of compassion, his mind depressed, his eyes full of tears, Madhusūdana, Kṛṣṇa, spoke the following words.",
@@ -68,6 +68,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -76,15 +94,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "d019ef2f438cab7da4341fad4107db05"
     }
   },
   {
     "id": "bhagavad-gita_2_10",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "10",
+    "verse": 10,
     "original": "तमुवाच हृषीकेशः प्रहसन्निव भारत ।\nसेनयोरूभयोर्मध्ये विषीदन्तमिदं वचः ॥ १० ॥",
     "transliteration": "tam uvāca hṛṣīkeśaḥ\nprahasann iva bhārata\nsenayor ubhayor madhye\nviṣīdantam idaṁ vacaḥ",
     "translation": "O descendant of Bharata, at that time Kṛṣṇa, smiling, in the midst of both the armies, spoke the following words to the grief-stricken Arjuna.",
@@ -149,6 +168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -157,15 +194,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "1e749c9b9aa5a54a5c5aa35dc9d5dd4d"
     }
   },
   {
     "id": "bhagavad-gita_2_11",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "11",
+    "verse": 11,
     "original": "श्री भगवानुवाच\nअशोच्यनन्वशोचस्त्वं प्रज्ञावादांश्च भाषसे ।\nगतासूनगतासूंश्च नानुशोचन्ति पण्डिताः ॥ ११ ॥",
     "transliteration": "śrī-bhagavān uvāca\naśocyān anvaśocas tvaṁ\nprajñā-vādāṁś ca bhāṣase\ngatāsūn agatāsūṁś ca\nnānuśocanti paṇḍitāḥ",
     "translation": "The Supreme Personality of Godhead said: While speaking learned words, you are mourning for what is not worthy of grief. Those who are wise lament neither for the living nor for the dead.",
@@ -230,6 +268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -238,15 +294,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "e611047c0e29823db6262d05a41895cd"
     }
   },
   {
     "id": "bhagavad-gita_2_12",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "12",
+    "verse": 12,
     "original": "न त्वेवाहं जातु नासं न त्वं नेमे जनाधिपाः ।\nन चैव नभविष्यामः सर्वे वयमतः परम् ॥ १२ ॥",
     "transliteration": "na tv evāhaṁ jātu nāsaṁ\nna tvaṁ neme janādhipāḥ\nna caiva na bhaviṣyāmaḥ\nsarve vayam ataḥ param",
     "translation": "Never was there a time when I did not exist, nor you, nor all these kings; nor in the future shall any of us cease to be.",
@@ -311,6 +368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -319,15 +394,16 @@
       "stats": {
         "original_words": 18,
         "translit_words": 17,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "9cb46474933ad543495b96ec015abc69"
     }
   },
   {
     "id": "bhagavad-gita_2_13",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "13",
+    "verse": 13,
     "original": "देहिनोऽस्मिन्यथा देहे कौमारं यौवनं जरा ।\nतथा देहान्तरप्राप्तिर्धीरस्तत्र न मुह्यति ॥ १३ ॥",
     "transliteration": "dehino ’smin yathā dehe\nkaumāraṁ yauvanaṁ jarā\ntathā dehāntara-prāptir\ndhīras tatra na muhyati",
     "translation": "As the embodied soul continuously passes, in this body, from boyhood to youth to old age, the soul similarly passes into another body at death. A sober person is not bewildered by such a change.",
@@ -392,6 +468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -400,15 +494,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "4d05ab7d207a35853bb131af26f02c7c"
     }
   },
   {
     "id": "bhagavad-gita_2_14",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "14",
+    "verse": 14,
     "original": "मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः ।\nआगमापायिनोऽनित्यास्तांस्तितिक्षस्व भारत ॥ १४ ॥",
     "transliteration": "mātrā-sparśās tu kaunteya\nśītoṣṇa-sukha-duḥkha-dāḥ\nāgamāpāyino ’nityās\ntāṁs titikṣasva bhārata",
     "translation": "O son of Kuntī, the nonpermanent appearance of happiness and distress, and their disappearance in due course, are like the appearance and disappearance of winter and summer seasons. They arise from sense perception, O scion of Bharata, and one must learn to tolerate them without being disturbed.",
@@ -473,6 +568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -481,15 +594,16 @@
       "stats": {
         "original_words": 9,
         "translit_words": 9,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "74bb6fd0e0fe25cdb15ffdd20ed14418"
     }
   },
   {
     "id": "bhagavad-gita_2_15",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "15",
+    "verse": 15,
     "original": "यं हि न व्यथयन्त्येते पुरुषं पुरुषर्षभ ।\nसमदुःखसुखं धीरं सोऽमृतत्वाय कल्पते ॥ १५ ॥",
     "transliteration": "yaṁ hi na vyathayanty ete\npuruṣaṁ puruṣarṣabha\nsama-duḥkha-sukhaṁ dhīraṁ\nso ’mṛtatvāya kalpate",
     "translation": "O best among men [Arjuna], the person who is not disturbed by happiness and distress and is steady in both is certainly eligible for liberation.",
@@ -554,6 +668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -562,15 +694,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "238364af981a059f9b0d21472e0e3995"
     }
   },
   {
     "id": "bhagavad-gita_2_16",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "16",
+    "verse": 16,
     "original": "नासतो विद्यते भावो नाभावो विद्यते सतः ।\nउभयोरपि दृष्टोऽन्तस्त्वनयोस्तत्त्वदर्शिभिः ॥ १६ ॥",
     "transliteration": "nāsato vidyate bhāvo\nnābhāvo vidyate sataḥ\nubhayor api dṛṣṭo ’ntas\ntv anayos tattva-darśibhiḥ",
     "translation": "Those who are seers of the truth have concluded that of the nonexistent [the material body] there is no endurance and of the eternal [the soul] there is no change. This they have concluded by studying the nature of both.",
@@ -635,6 +768,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -643,15 +794,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "c9606a316df4454d33ad7766304d1d6d"
     }
   },
   {
     "id": "bhagavad-gita_2_17",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "17",
+    "verse": 17,
     "original": "अविनाशि तु तद्विद्धि येन सर्वमिदं ततम् ।\nविनाशमव्ययस्यास्य न कश्चित्कर्तुमर्हति ॥ १७ ॥",
     "transliteration": "avināśi tu tad viddhi\nyena sarvam idaṁ tatam\nvināśam avyayasyāsya\nna kaścit kartum arhati",
     "translation": "That which pervades the entire body you should know to be indestructible. No one is able to destroy that imperishable soul.",
@@ -716,6 +868,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -724,15 +894,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "16f14a01b598b125f1cac202f471c509"
     }
   },
   {
     "id": "bhagavad-gita_2_18",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "18",
+    "verse": 18,
     "original": "अन्तवन्त इमे देहा नित्यस्योक्ताः शरीरिणः ।\nअनाशिनोऽप्रमेयस्य तस्माद्युध्यस्व भारत ॥ १८ ॥",
     "transliteration": "antavanta ime dehā\nnityasyoktāḥ śarīriṇaḥ\nanāśino ’prameyasya\ntasmād yudhyasva bhārata",
     "translation": "The material body of the indestructible, immeasurable and eternal living entity is sure to come to an end; therefore, fight, O descendant of Bharata.",
@@ -797,6 +968,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -805,15 +994,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "cad2bc5c0abab750e52cf4475653666c"
     }
   },
   {
     "id": "bhagavad-gita_2_19",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "19",
+    "verse": 19,
     "original": "य एनं वेत्ति हन्तारं यश्चैनं मन्यते हतम् ।\nउभौ तौ न विजानीतो नायं हन्ति न हन्यते ॥ १९ ॥",
     "transliteration": "ya enaṁ vetti hantāraṁ\nyaś cainaṁ manyate hatam\nubhau tau na vijānīto\nnāyaṁ hanti na hanyate",
     "translation": "Neither he who thinks the living entity the slayer nor he who thinks it slain is in knowledge, for the self slays not nor is slain.",
@@ -878,6 +1068,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -886,15 +1094,16 @@
       "stats": {
         "original_words": 19,
         "translit_words": 16,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "557f633d5417fa68410de766af98bc7e"
     }
   },
   {
     "id": "bhagavad-gita_2_2",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "2",
+    "verse": 2,
     "original": "श्री भगवानुवाच\nकुतस्त्वा कश्मलमिदं विषमे समुपस्थितम् ।\nअनार्यजुष्टमस्वर्ग्यकीर्तिकरमर्जुन ॥ २ ॥",
     "transliteration": "śrī-bhagavān uvāca\nkutas tvā kaśmalam idaṁ\nviṣame samupasthitam\nanārya-juṣṭam asvargyam\nakīrti-karam arjuna",
     "translation": "The Supreme Personality of Godhead said: My dear Arjuna, how have these impurities come upon you? They are not at all befitting a man who knows the value of life. They lead not to higher planets but to infamy.",
@@ -959,6 +1168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -967,15 +1194,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "d7324a2bced53c14cfaab9b65e2b6fa3"
     }
   },
   {
     "id": "bhagavad-gita_2_20",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "20",
+    "verse": 20,
     "original": "न जायते म्रियते वा कदाचि-\nन्नायं भूत्वा भविता वा न भूयः ।\nअजो नित्यः शाश्वतोऽयं पुराणो\nन हन्यते हन्यमाने शरीरे ॥ २० ॥",
     "transliteration": "na jāyate mriyate vā kadācin\nnāyaṁ bhūtvā bhavitā vā na bhūyaḥ\najo nityaḥ śāśvato ’yaṁ purāṇo\nna hanyate hanyamāne śarīre",
     "translation": "For the soul there is neither birth nor death at any time. He has not come into being, does not come into being, and will not come into being. He is unborn, eternal, ever-existing and primeval. He is not slain when the body is slain.",
@@ -1040,6 +1268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1048,15 +1294,16 @@
       "stats": {
         "original_words": 23,
         "translit_words": 20,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "888341588cd337fb36c504ed6a98069c"
     }
   },
   {
     "id": "bhagavad-gita_2_21",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "21",
+    "verse": 21,
     "original": "वेदाविनाशिनं नित्यं य एनमजमव्ययम् ।\nकथं स पुरुषः पार्थ कं घातयति हन्ति कम् ॥ २१ ॥",
     "transliteration": "vedāvināśinaṁ nityaṁ\nya enam ajam avyayam\nkathaṁ sa puruṣaḥ pārtha\nkaṁ ghātayati hanti kam",
     "translation": "O Pārtha, how can a person who knows that the soul is indestructible, eternal, unborn and immutable kill anyone or cause anyone to kill?",
@@ -1121,6 +1368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1129,15 +1394,16 @@
       "stats": {
         "original_words": 16,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "bdf65f3523516a697ace4c6ba0c50e92"
     }
   },
   {
     "id": "bhagavad-gita_2_22",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "22",
+    "verse": 22,
     "original": "वासांसि जीर्णानि यथा विहाय\nनवानि गृह्णाति नरोऽपराणि ।\nतथा शरीराणि विहाय जीर्णा-\nन्यन्यानि संयाति नवानि देही ॥ २२ ॥",
     "transliteration": "vāsāṁsi jīrṇāni yathā vihāya\nnavāni gṛhṇāti naro ’parāṇi\ntathā śarīrāṇi vihāya jīrṇāny\nanyāni saṁyāti navāni dehī",
     "translation": "As a person puts on new garments, giving up old ones, the soul similarly accepts new material bodies, giving up the old and useless ones.",
@@ -1202,6 +1468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1210,15 +1494,16 @@
       "stats": {
         "original_words": 19,
         "translit_words": 16,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "23ab0b3bf827fbdb2e6c7f29dcb0d3e7"
     }
   },
   {
     "id": "bhagavad-gita_2_23",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "23",
+    "verse": 23,
     "original": "नैनं छिन्दन्ति शस्त्राणि नैनं दहति पावकः ।\nन चैनं क्ल‍ेदयन्त्यापो न शोषयति मारुतः ॥ २३ ॥",
     "transliteration": "nainaṁ chindanti śastrāṇi\nnainaṁ dahati pāvakaḥ\nna cainaṁ kledayanty āpo\nna śoṣayati mārutaḥ",
     "translation": "The soul can never be cut to pieces by any weapon, nor burned by fire, nor moistened by water, nor withered by the wind.",
@@ -1283,6 +1568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1291,15 +1594,16 @@
       "stats": {
         "original_words": 16,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "18368eeb69e2ade59cd06812ba881a6f"
     }
   },
   {
     "id": "bhagavad-gita_2_24",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "24",
+    "verse": 24,
     "original": "अच्छेद्योऽयमदाह्योऽयमक्ल‍ेद्योऽशोष्य एव च ।\nनित्यः सर्वगतः स्थाणुरचलोऽयं सनातनः ॥ २४ ॥",
     "transliteration": "acchedyo ’yam adāhyo ’yam\nakledyo ’śoṣya eva ca\nnityaḥ sarva-gataḥ sthāṇur\nacalo ’yaṁ sanātanaḥ",
     "translation": "This individual soul is unbreakable and insoluble, and can be neither burned nor dried. He is everlasting, present everywhere, unchangeable, immovable and eternally the same.",
@@ -1364,6 +1668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1372,15 +1694,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "a8a6c6c8fa4ef8131dfc33c5e3153895"
     }
   },
   {
     "id": "bhagavad-gita_2_25",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "25",
+    "verse": 25,
     "original": "अव्यक्तोऽयमचिन्त्योऽयमविकार्योऽयमुच्यते ।\nतस्मादेवं विदित्वैनं नानुशोचितुमर्हसि ॥ २५ ॥",
     "transliteration": "avyakto ’yam acintyo ’yam\navikāryo ’yam ucyate\ntasmād evaṁ viditvainaṁ\nnānuśocitum arhasi",
     "translation": "It is said that the soul is invisible, inconceivable and immutable. Knowing this, you should not grieve for the body.",
@@ -1445,6 +1768,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1453,15 +1794,16 @@
       "stats": {
         "original_words": 8,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "0c2731fdf9875daeffe39dd1d534ac08"
     }
   },
   {
     "id": "bhagavad-gita_2_26",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "26",
+    "verse": 26,
     "original": "अथ चैनं नित्यजातं नित्यं वा मन्यसे मृतम् ।\nतथापि त्वं महाबाहो नैनं शोचितुमर्हसि ॥ २६ ॥",
     "transliteration": "atha cainaṁ nitya-jātaṁ\nnityaṁ vā manyase mṛtam\ntathāpi tvaṁ mahā-bāho\nnainaṁ śocitum arhasi",
     "translation": "If, however, you think that the soul [or the symptoms of life] will always be born and die forever, you still have no reason to lament, O mighty-armed.",
@@ -1526,6 +1868,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1534,15 +1894,16 @@
       "stats": {
         "original_words": 16,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "dca191ce8bd9cd4d384b33b8d1f67ce6"
     }
   },
   {
     "id": "bhagavad-gita_2_27",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "27",
+    "verse": 27,
     "original": "जातस्य हि ध्रुवो मृत्युर्ध्रुवं जन्म मृतस्य च ।\nतस्मादपरिहार्येऽर्थे न त्वं शोचितुमर्हसि ॥ २७ ॥",
     "transliteration": "jātasya hi dhruvo mṛtyur\ndhruvaṁ janma mṛtasya ca\ntasmād aparihārye ’rthe\nna tvaṁ śocitum arhasi",
     "translation": "One who has taken his birth is sure to die, and after death one is sure to take birth again. Therefore, in the unavoidable discharge of your duty, you should not lament.",
@@ -1607,6 +1968,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1615,15 +1994,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 15,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "f50e74e5b98527d8934a58c27513199e"
     }
   },
   {
     "id": "bhagavad-gita_2_28",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "28",
+    "verse": 28,
     "original": "अव्यक्तादीनि भूतानि व्यक्तमध्यानि भारत ।\nअव्यक्तनिधनान्येव तत्र का परिदेवना ॥ २८ ॥",
     "transliteration": "avyaktādīni bhūtāni\nvyakta-madhyāni bhārata\navyakta-nidhanāny eva\ntatra kā paridevanā",
     "translation": "All created beings are unmanifest in their beginning, manifest in their interim state, and unmanifest again when annihilated. So what need is there for lamentation?",
@@ -1688,6 +2068,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1696,15 +2094,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 9,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "077eba420f5a5cc49b2492feaf321893"
     }
   },
   {
     "id": "bhagavad-gita_2_29",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "29",
+    "verse": 29,
     "original": "आश्चर्यवत्पश्यति कश्चिदेन -\nमाश्चर्यवद्वदति तथैव चान्यः ।\nआश्चर्यवच्च‍ैनमन्यः श‍ृणोति\nश्रुत्वाप्येनं वेद न चैव कश्चित् ॥ २९ ॥",
     "transliteration": "āścarya-vat paśyati kaścid enam\nāścarya-vad vadati tathaiva cānyaḥ\nāścarya-vac cainam anyaḥ śṛṇoti\nśrutvāpy enaṁ veda na caiva kaścit",
     "translation": "Some look on the soul as amazing, some describe him as amazing, and some hear of him as amazing, while others, even after hearing about him, cannot understand him at all.",
@@ -1769,6 +2168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1777,15 +2194,16 @@
       "stats": {
         "original_words": 17,
         "translit_words": 18,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "645ecf48f041bb3bc6ea0eb4ec3391a0"
     }
   },
   {
     "id": "bhagavad-gita_2_3",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "3",
+    "verse": 3,
     "original": "क्ल‍ैब्यं मा स्म गमः पार्थ नैतत्त्वय्युपपद्यते ।\nक्षुद्रं हृदयदौर्बल्यं त्यक्त्वोत्तिष्ठ परन्तप ॥ ३ ॥",
     "transliteration": "klaibyaṁ mā sma gamaḥ pārtha\nnaitat tvayy upapadyate\nkṣudraṁ hṛdaya-daurbalyaṁ\ntyaktvottiṣṭha paran-tapa",
     "translation": "O son of Pṛthā, do not yield to this degrading impotence. It does not become you. Give up such petty weakness of heart and arise, O chastiser of the enemy.",
@@ -1850,6 +2268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1858,15 +2294,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "449fdba799ef509e62992aeef0c8f8af"
     }
   },
   {
     "id": "bhagavad-gita_2_30",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "30",
+    "verse": 30,
     "original": "देही नित्यमवध्योऽयं देहे सर्वस्य भारत ।\nतस्मात्सर्वाणि भूतानि न त्वं शोचितुमर्हसि ॥ ३० ॥",
     "transliteration": "dehī nityam avadhyo ’yaṁ\ndehe sarvasya bhārata\ntasmāt sarvāṇi bhūtāni\nna tvaṁ śocitum arhasi",
     "translation": "O descendant of Bharata, he who dwells in the body can never be slain. Therefore you need not grieve for any living being.",
@@ -1931,6 +2368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1939,15 +2394,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "6c7e34e8c44cbb00788886525c5b3a78"
     }
   },
   {
     "id": "bhagavad-gita_2_31",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "31",
+    "verse": 31,
     "original": "स्वधर्ममपि चावेक्ष्य न विकम्पितुमर्हसि ।\nधर्म्याद्धि युद्धाच्छ्रेयोऽन्यत्क्षत्रियस्य न विद्यते ॥ ३१ ॥",
     "transliteration": "sva-dharmam api cāvekṣya\nna vikampitum arhasi\ndharmyād dhi yuddhāc chreyo ’nyat\nkṣatriyasya na vidyate",
     "translation": "Considering your specific duty as a kṣatriya, you should know that there is no better engagement for you than fighting on religious principles; and so there is no need for hesitation.",
@@ -2012,6 +2468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2020,15 +2494,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "ef20023617b1f2a2f7f20a4affb193ac"
     }
   },
   {
     "id": "bhagavad-gita_2_32",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "32",
+    "verse": 32,
     "original": "यदृच्छया चोपपन्नं स्वर्गद्वारमपावृतम् ।\nसुखिनः क्षत्रियाः पार्थ लभन्ते युद्धमीदृशम् ॥ ३२ ॥",
     "transliteration": "yadṛcchayā copapannaṁ\nsvarga-dvāram apāvṛtam\nsukhinaḥ kṣatriyāḥ pārtha\nlabhante yuddham īdṛśam",
     "translation": "O Pārtha, happy are the kṣatriyas to whom such fighting opportunities come unsought, opening for them the doors of the heavenly planets.",
@@ -2093,6 +2568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2101,15 +2594,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "75f6e05b77d80350a658705a65a62ba5"
     }
   },
   {
     "id": "bhagavad-gita_2_33",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "33",
+    "verse": 33,
     "original": "अथ चेत्त्वमिमं धर्म्यं सङ्ग्रामं न करिष्यसि ।\nततः स्वधर्मं कीर्तिं च हित्वा पापमवाप्स्यसि ॥ ३३ ॥",
     "transliteration": "atha cet tvam imaṁ dharmyaṁ\nsaṅgrāmaṁ na kariṣyasi\ntataḥ sva-dharmaṁ kīrtiṁ ca\nhitvā pāpam avāpsyasi",
     "translation": "If, however, you do not perform your religious duty of fighting, then you will certainly incur sins for neglecting your duties and thus lose your reputation as a fighter.",
@@ -2174,6 +2668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2182,15 +2694,16 @@
       "stats": {
         "original_words": 16,
         "translit_words": 15,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "76e76a2d00e7a5f30b86477debf7d997"
     }
   },
   {
     "id": "bhagavad-gita_2_34",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "34",
+    "verse": 34,
     "original": "अकीर्तिं चापि भूतानि कथयिष्यन्ति तेऽव्ययाम् ।\nसम्भावितस्य चाकीर्तिर्मरणादतिरिच्यते ॥ ३४ ॥",
     "transliteration": "akīrtiṁ cāpi bhūtāni\nkathayiṣyanti te ’vyayām\nsambhāvitasya cākīrtir\nmaraṇād atiricyate",
     "translation": "People will always speak of your infamy, and for a respectable person, dishonor is worse than death.",
@@ -2255,6 +2768,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2263,15 +2794,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "ec5fe07612269b5c4d7f9016420dd387"
     }
   },
   {
     "id": "bhagavad-gita_2_35",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "35",
+    "verse": 35,
     "original": "भयाद्रणादुपरतं मंस्यन्ते त्वां महारथाः ।\nयेषां च त्वं बहुमतो भूत्वा यास्यसि लाघवम् ॥ ३५ ॥",
     "transliteration": "bhayād raṇād uparataṁ\nmaṁsyante tvāṁ mahā-rathāḥ\nyeṣāṁ ca tvaṁ bahu-mato\nbhūtvā yāsyasi lāghavam",
     "translation": "The great generals who have highly esteemed your name and fame will think that you have left the battlefield out of fear only, and thus they will consider you insignificant.",
@@ -2336,6 +2868,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2344,15 +2894,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "507ea8a8d0bbf8007b803d1a108557f5"
     }
   },
   {
     "id": "bhagavad-gita_2_36",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "36",
+    "verse": 36,
     "original": "अवाच्यवादांश्च बहून्वदिष्यन्ति तवाहिताः ।\nनिन्दन्तस्तव सामर्थ्य ततो दुःखतरं नु किम् ॥ ३६ ॥",
     "transliteration": "avācya-vādāṁś ca bahūn\nvadiṣyanti tavāhitāḥ\nnindantas tava sāmarthyaṁ\ntato duḥkha-taraṁ nu kim",
     "translation": "Your enemies will describe you in many unkind words and scorn your ability. What could be more painful for you?",
@@ -2417,6 +2968,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2425,15 +2994,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "b34108b812dac0f17267dc2135faa4d5"
     }
   },
   {
     "id": "bhagavad-gita_2_37",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "37",
+    "verse": 37,
     "original": "हतो वा प्राप्स्यसि स्वर्ग जित्वा वा भोक्ष्यसे महीम् ।\nतस्मादुत्तिष्ठ कौन्तेय युद्धाय कृतनिश्चयः ॥ ३७ ॥",
     "transliteration": "hato vā prāpsyasi svargaṁ\njitvā vā bhokṣyase mahīm\ntasmād uttiṣṭha kaunteya\nyuddhāya kṛta-niścayaḥ",
     "translation": "O son of Kuntī, either you will be killed on the battlefield and attain the heavenly planets, or you will conquer and enjoy the earthly kingdom. Therefore, get up with determination and fight.",
@@ -2498,6 +3068,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2506,15 +3094,16 @@
       "stats": {
         "original_words": 16,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "3cb3cd54bf84c84881e2d4db08ce47c8"
     }
   },
   {
     "id": "bhagavad-gita_2_38",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "38",
+    "verse": 38,
     "original": "सुखदुःखे समे कृत्वा लाभालाभौ जयाजयौ ।\nततो युद्धाय युज्यस्व नैवं पापमवाप्स्यसि ॥ ३८ ॥",
     "transliteration": "sukha-duḥkhe same kṛtvā\nlābhālābhau jayājayau\ntato yuddhāya yujyasva\nnaivaṁ pāpam avāpsyasi",
     "translation": "Do thou fight for the sake of fighting, without considering happiness or distress, loss or gain, victory or defeat – and by so doing you shall never incur sin.",
@@ -2579,6 +3168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2587,15 +3194,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "5b8064df6f73feb4c1c464b7285bf27e"
     }
   },
   {
     "id": "bhagavad-gita_2_39",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "39",
+    "verse": 39,
     "original": "एषा तेऽभिहिता सांख्ये बुद्धिर्योगे त्विमां श‍ृणु ।\nबुद्ध्या युक्तो यया पार्थ कर्मबन्धं प्रहास्यसि ॥ ३९ ॥",
     "transliteration": "eṣā te ’bhihitā sāṅkhye\nbuddhir yoge tv imāṁ śṛṇu\nbuddhyā yukto yayā pārtha\nkarma-bandhaṁ prahāsyasi",
     "translation": "Thus far I have described this knowledge to you through analytical study. Now listen as I explain it in terms of working without fruitive results. O son of Pṛthā, when you act in such knowledge you can free yourself from the bondage of works.",
@@ -2660,6 +3268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2668,15 +3294,16 @@
       "stats": {
         "original_words": 16,
         "translit_words": 15,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "7d99a94f7a886a2ec75f36683f025d3a"
     }
   },
   {
     "id": "bhagavad-gita_2_4",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "4",
+    "verse": 4,
     "original": "अर्जुन उवाच\nकथं भीष्ममहं संख्ये द्रोणं च मधुसूदन ।\nइषुभिः प्रतियोत्स्यामि पूजार्हावरिसूदन ॥ ४ ॥",
     "transliteration": "arjuna uvāca\nkathaṁ bhīṣmam ahaṁ saṅkhye\ndroṇaṁ ca madhusūdana\niṣubhiḥ pratiyotsyāmi\npūjārhāv ari-sūdana",
     "translation": "Arjuna said: O killer of enemies, O killer of Madhu, how can I counterattack with arrows in battle men like Bhīṣma and Droṇa, who are worthy of my worship?",
@@ -2741,6 +3368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2749,15 +3394,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "41e13f6c049ff2a01e6e5ac65af5c467"
     }
   },
   {
     "id": "bhagavad-gita_2_40",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "40",
+    "verse": 40,
     "original": "नेहाभिक्रमनाशोऽस्ति प्रत्यवायो न विद्यते ।\nस्वल्पमप्यस्य धर्मस्य त्रायते महतो भयात् ॥ ४० ॥",
     "transliteration": "nehābhikrama-nāśo ’sti\npratyavāyo na vidyate\nsv-alpam apy asya dharmasya\ntrāyate mahato bhayāt",
     "translation": "In this endeavor there is no loss or diminution, and a little advancement on this path can protect one from the most dangerous type of fear.",
@@ -2822,6 +3468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2830,15 +3494,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "d456c4a0b5da14103464ca87d537f629"
     }
   },
   {
     "id": "bhagavad-gita_2_41",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "41",
+    "verse": 41,
     "original": "व्यवसायात्मिका बुद्धिरेकेह कुरूनन्दन ।\nबहुशाखा ह्यनन्ताश्च बुद्धयोऽव्यवसायिनाम् ॥ ४१ ॥",
     "transliteration": "vyavasāyātmikā buddhir\nekeha kuru-nandana\nbahu-śākhā hy anantāś ca\nbuddhayo ’vyavasāyinām",
     "translation": "Those who are on this path are resolute in purpose, and their aim is one. O beloved child of the Kurus, the intelligence of those who are irresolute is many-branched.",
@@ -2903,6 +3568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2911,15 +3594,16 @@
       "stats": {
         "original_words": 10,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "da731559bd01af6259044a9fc1a31ba3"
     }
   },
   {
     "id": "bhagavad-gita_2_42-43",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "42-43",
+    "verse": 42,
     "original": "यामिमां पुष्पितां वाचं प्रवदन्त्यविपश्चितः ।\nवेदवादरताः पार्थ नान्यदस्तीति वादिनः ॥ ४२ ॥\nकामात्मानः स्वर्गपरा जन्मकर्मफलप्रदाम् ।\nक्रियाविशेषबहुलां भोगैश्वर्यगतिं प्रति ॥ ४३ ॥",
     "transliteration": "yām imāṁ puṣpitāṁ vācaṁ\npravadanty avipaścitaḥ\nveda-vāda-ratāḥ pārtha\nnānyad astīti vādinaḥ",
     "translation": "Men of small knowledge are very much attached to the flowery words of the Vedas, which recommend various fruitive activities for elevation to heavenly planets, resultant good birth, power, and so forth. Being desirous of sense gratification and opulent life, they say that there is nothing more than this.",
@@ -2984,6 +3668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2992,15 +3694,16 @@
       "stats": {
         "original_words": 22,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "33ea5f1a7f6eb6c7f68b094f39a67a4e"
     }
   },
   {
     "id": "bhagavad-gita_2_44",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "44",
+    "verse": 44,
     "original": "भोगैश्वर्यप्रसक्तानां तयापहृतचेतसाम् ।\nव्यवसायात्मिका बुद्धिः समाधौ न विधीयते ॥ ४४ ॥",
     "transliteration": "bhogaiśvarya-prasaktānāṁ\ntayāpahṛta-cetasām\nvyavasāyātmikā buddhiḥ\nsamādhau na vidhīyate",
     "translation": "In the minds of those who are too attached to sense enjoyment and material opulence, and who are bewildered by such things, the resolute determination for devotional service to the Supreme Lord does not take place.",
@@ -3065,6 +3768,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3073,15 +3794,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 7,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "8f7f32e77d2839fa756443a315137265"
     }
   },
   {
     "id": "bhagavad-gita_2_45",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "45",
+    "verse": 45,
     "original": "त्रैगुण्यविषया वेदा निस्त्रैगुण्यो भवार्जुन ।\nनिर्द्वन्द्वो नित्यसत्त्वस्थो निर्योगक्षेम आत्मवान् ॥ ४५ ॥",
     "transliteration": "trai-guṇya-viṣayā vedā\nnistrai-guṇyo bhavārjuna\nnirdvandvo nitya-sattva-stho\nniryoga-kṣema ātmavān",
     "translation": "The Vedas deal mainly with the subject of the three modes of material nature. O Arjuna, become transcendental to these three modes. Be free from all dualities and from all anxieties for gain and safety, and be established in the self.",
@@ -3146,6 +3868,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3154,15 +3894,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 8,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "cd6a6586793cb0bb6d72f3b3fee76493"
     }
   },
   {
     "id": "bhagavad-gita_2_46",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "46",
+    "verse": 46,
     "original": "यावानर्थ उदपाने सर्वतः सम्प्लुतोदके ।\nतावान्सर्वेषु वेदेषु ब्राह्मणस्य विजानतः ॥ ४६ ॥",
     "transliteration": "yāvān artha uda-pāne\nsarvataḥ samplutodake\ntāvān sarveṣu vedeṣu\nbrāhmaṇasya vijānataḥ",
     "translation": "All purposes served by a small well can at once be served by a great reservoir of water. Similarly, all the purposes of the Vedas can be served to one who knows the purpose behind them.",
@@ -3227,6 +3968,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3235,15 +3994,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "69ee3a864b753c91a61a6821e45ff608"
     }
   },
   {
     "id": "bhagavad-gita_2_47",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "47",
+    "verse": 47,
     "original": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन ।\nमा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥ ४७ ॥",
     "transliteration": "karmaṇy evādhikāras te\nmā phaleṣu kadācana\nmā karma-phala-hetur bhūr\nmā te saṅgo ’stv akarmaṇi",
     "translation": "You have a right to perform your prescribed duty, but you are not entitled to the fruits of action. Never consider yourself the cause of the results of your activities, and never be attached to not doing your duty.",
@@ -3308,6 +4068,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3316,15 +4094,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "92aafa46f33d29f8d857b2ecd32d85ff"
     }
   },
   {
     "id": "bhagavad-gita_2_48",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "48",
+    "verse": 48,
     "original": "योगस्थः कुरु कर्माणि सङ्गं त्यक्त्वा धनञ्जय ।\nसिद्ध्यसिद्ध्योः समो भूत्वा समत्वं योग उच्यते ॥ ४८ ॥",
     "transliteration": "yoga-sthaḥ kuru karmāṇi\nsaṅgaṁ tyaktvā dhanañ-jaya\nsiddhy-asiddhyoḥ samo bhūtvā\nsamatvaṁ yoga ucyate",
     "translation": "Perform your duty equipoised, O Arjuna, abandoning all attachment to success or failure. Such equanimity is called yoga.",
@@ -3389,6 +4168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3397,15 +4194,16 @@
       "stats": {
         "original_words": 16,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "dc8f565fb41e7bf1515737959bbac1ac"
     }
   },
   {
     "id": "bhagavad-gita_2_49",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "49",
+    "verse": 49,
     "original": "दूरेण ह्यवरं कर्म बुद्धियोगाद्धनञ्जय ।\nबुद्धौ शरणमन्विच्छ कृपणाः फलहेतवः ॥ ४९ ॥",
     "transliteration": "dūreṇa hy avaraṁ karma\nbuddhi-yogād dhanañ-jaya\nbuddhau śaraṇam anviccha\nkṛpaṇāḥ phala-hetavaḥ",
     "translation": "O Dhanañjaya, keep all abominable activities far distant by devotional service, and in that consciousness surrender unto the Lord. Those who want to enjoy the fruits of their work are misers.",
@@ -3470,6 +4268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3478,15 +4294,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "23e7e947141c198f92cc27875a0a2e41"
     }
   },
   {
     "id": "bhagavad-gita_2_5",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "5",
+    "verse": 5,
     "original": "गुरूनहत्वा हि महानुभावान्\nश्रेयो भोक्तुं भैक्ष्यमपीह लोके ।\nहत्वार्थकामांस्तु गुरूनिहैव\nभुज्ज‍ीय भोगान्‍रुधिरप्रदिग्धान् ॥ ५ ॥",
     "transliteration": "gurūn ahatvā hi mahānubhāvān\nśreyo bhoktuṁ bhaikṣyam apīha loke\nhatvārtha-kāmāṁs tu gurūn ihaiva\nbhuñjīya bhogān rudhira-pradigdhān",
     "translation": "It would be better to live in this world by begging than to live at the cost of the lives of great souls who are my teachers. Even though desiring worldly gain, they are superiors. If they are killed, everything we enjoy will be tainted with blood.",
@@ -3551,6 +4368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3559,15 +4394,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 16,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "dd9066946281176d1d7cf972c37b3afb"
     }
   },
   {
     "id": "bhagavad-gita_2_50",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "50",
+    "verse": 50,
     "original": "बुद्धियुक्तो जहातीह उभे सुकृतदुष्कृते ।\nतस्माद्योगाय युज्यस्व योगः कर्मसु कौशलम् ॥ ५० ॥",
     "transliteration": "buddhi-yukto jahātīha\nubhe sukṛta-duṣkṛte\ntasmād yogāya yujyasva\nyogaḥ karmasu kauśalam",
     "translation": "A man engaged in devotional service rids himself of both good and bad reactions even in this life. Therefore strive for yoga, which is the art of all work.",
@@ -3632,6 +4468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3640,15 +4494,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "7467a929137917911e597aa441576cd8"
     }
   },
   {
     "id": "bhagavad-gita_2_51",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "51",
+    "verse": 51,
     "original": "कर्मजं बुद्धियुक्ता हि फलं त्यक्त्वा मनीषिणः ।\nजन्मबन्धविनिर्मुक्ताः पदं गच्छन्त्यनामयम् ॥ ५१ ॥",
     "transliteration": "karma-jaṁ buddhi-yuktā hi\nphalaṁ tyaktvā manīṣiṇaḥ\njanma-bandha-vinirmuktāḥ\npadaṁ gacchanty anāmayam",
     "translation": "By thus engaging in devotional service to the Lord, great sages or devotees free themselves from the results of work in the material world. In this way they become free from the cycle of birth and death and attain the state beyond all miseries [by going back to Godhead].",
@@ -3713,6 +4568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3721,15 +4594,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "e1e9fe2c8f1bb27c4377a74acfd808c6"
     }
   },
   {
     "id": "bhagavad-gita_2_52",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "52",
+    "verse": 52,
     "original": "यदा ते मोहकलिलं बुद्धिर्व्यतितरिष्यति ।\nतदा गन्तासि निर्वेदं श्रोतव्यस्य श्रुतस्य च ॥ ५२ ॥",
     "transliteration": "yadā te moha-kalilaṁ\nbuddhir vyatitariṣyati\ntadā gantāsi nirvedaṁ\nśrotavyasya śrutasya ca",
     "translation": "When your intelligence has passed out of the dense forest of delusion, you shall become indifferent to all that has been heard and all that is to be heard.",
@@ -3794,6 +4668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3802,15 +4694,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "f3460b15919cd605bf44dbd05340c113"
     }
   },
   {
     "id": "bhagavad-gita_2_53",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "53",
+    "verse": 53,
     "original": "श्रुतिविप्रतिपन्ना ते यदा स्थास्यति निश्चला ।\nसमाधावचला बुद्धिस्तदा योगमवाप्स्यसि ॥ ५३ ॥",
     "transliteration": "śruti-vipratipannā te\nyadā sthāsyati niścalā\nsamādhāv acalā buddhis\ntadā yogam avāpsyasi",
     "translation": "When your mind is no longer disturbed by the flowery language of the Vedas, and when it remains fixed in the trance of self-realization, then you will have attained the divine consciousness.",
@@ -3875,6 +4768,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3883,15 +4794,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "d94639a9a7e60abeb62088a5b1b75b05"
     }
   },
   {
     "id": "bhagavad-gita_2_54",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "54",
+    "verse": 54,
     "original": "अर्जुन उवाच\nस्थितप्रज्ञस्य का भाषा समाधिस्थस्य केशव ।\nस्थितधीः किं प्रभाषेत किमासीत व्रजेत किम् ॥ ५४ ॥",
     "transliteration": "arjuna uvāca\nsthita-prajñasya kā bhāṣā\nsamādhi-sthasya keśava\nsthita-dhīḥ kiṁ prabhāṣeta\nkim āsīta vrajeta kim",
     "translation": "Arjuna said: O Kṛṣṇa, what are the symptoms of one whose consciousness is thus merged in transcendence? How does he speak, and what is his language? How does he sit, and how does he walk?",
@@ -3956,6 +4868,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3964,15 +4894,16 @@
       "stats": {
         "original_words": 17,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "2fec574c3020bc89287c62d03bb0dafa"
     }
   },
   {
     "id": "bhagavad-gita_2_55",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "55",
+    "verse": 55,
     "original": "श्रीभगवानुवाच\nप्रजहाति यदा कामान्सर्वान्पार्थ मनोगतान् ।\nआत्मन्येवात्मना तुष्टः स्थितप्रज्ञस्तदोच्यते ॥ ५५ ॥",
     "transliteration": "śrī-bhagavān uvāca\nprajahāti yadā kāmān\nsarvān pārtha mano-gatān\nātmany evātmanā tuṣṭaḥ\nsthita-prajñas tadocyate",
     "translation": "The Supreme Personality of Godhead said: O Pārtha, when a man gives up all varieties of desire for sense gratification, which arise from mental concoction, and when his mind, thus purified, finds satisfaction in the self alone, then he is said to be in pure transcendental consciousness.",
@@ -4037,6 +4968,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -4045,15 +4994,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "0651f0a9709a4534377a80897e9fb9ca"
     }
   },
   {
     "id": "bhagavad-gita_2_56",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "56",
+    "verse": 56,
     "original": "दुःखेष्वनुद्विग्न‍मनाः सुखेषु विगतस्पृहः ।\nवीतरागभयक्रोधः स्थिधीर्मुनिरुच्यते ॥ ५६ ॥",
     "transliteration": "duḥkheṣv anudvigna-manāḥ\nsukheṣu vigata-spṛhaḥ\nvīta-rāga-bhaya-krodhaḥ\nsthita-dhīr munir ucyate",
     "translation": "One who is not disturbed in mind even amidst the threefold miseries or elated when there is happiness, and who is free from attachment, fear and anger, is called a sage of steady mind.",
@@ -4118,6 +5068,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -4126,15 +5094,16 @@
       "stats": {
         "original_words": 9,
         "translit_words": 8,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "4c9b6eabf441a11d133442aabdfac916"
     }
   },
   {
     "id": "bhagavad-gita_2_57",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "57",
+    "verse": 57,
     "original": "यः सर्वत्रानभिस्नेहस्तत्तत्प्राप्य श‍ुभाश‍ुभम् ।\nनाभिनन्दति न द्वेष्टि तस्य प्रज्ञा प्रतिष्ठिता ॥ ५७ ॥",
     "transliteration": "yaḥ sarvatrānabhisnehas\ntat tat prāpya śubhāśubham\nnābhinandati na dveṣṭi\ntasya prajñā pratiṣṭhitā",
     "translation": "In the material world, one who is unaffected by whatever good or evil he may obtain, neither praising it nor despising it, is firmly fixed in perfect knowledge.",
@@ -4199,6 +5168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -4207,15 +5194,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "3b056b74794f77254a912df72e7e8a4d"
     }
   },
   {
     "id": "bhagavad-gita_2_58",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "58",
+    "verse": 58,
     "original": "यदा संहरते चायं कूर्मोऽङ्गानीव सर्वशः ।\nइन्द्रियाणीन्द्रियार्थेभ्यस्तस्य प्रज्ञा प्रतिष्ठिता ॥ ५८ ॥",
     "transliteration": "yadā saṁharate cāyaṁ\nkūrmo ’ṅgānīva sarvaśaḥ\nindriyāṇīndriyārthebhyas\ntasya prajñā pratiṣṭhitā",
     "translation": "One who is able to withdraw his senses from sense objects, as the tortoise draws its limbs within the shell, is firmly fixed in perfect consciousness.",
@@ -4280,6 +5268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -4288,15 +5294,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "733cc0d83cfc9bdc2d56ac810cbcff33"
     }
   },
   {
     "id": "bhagavad-gita_2_59",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "59",
+    "verse": 59,
     "original": "विषया विनिवर्तन्ते निराहारस्य देहिनः ।\nरसवर्जं रसोऽप्यस्य परं दृष्ट्वा निवर्तते ॥ ५९ ॥",
     "transliteration": "viṣayā vinivartante\nnirāhārasya dehinaḥ\nrasa-varjaṁ raso ’py asya \nparaṁ dṛṣṭvā nivartate",
     "translation": "Though the embodied soul may be restricted from sense enjoyment, the taste for sense objects remains. But, ceasing such engagements by experiencing a higher taste, he is fixed in consciousness.",
@@ -4361,6 +5368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -4369,15 +5394,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "c5d867633d369bfc6b673281c813476b"
     }
   },
   {
     "id": "bhagavad-gita_2_6",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "6",
+    "verse": 6,
     "original": "न चैतद्विद्मः कतरन्नो गरीयो\nयद्वा जयेम यदि वा नो जयेयुः ।\nयानेव हत्वा न जिजीविषाम-\nस्तेऽवस्थिताः प्रमुखे धार्तराष्ट्राः ॥ ६ ॥",
     "transliteration": "na caitad vidmaḥ kataran no garīyo\nyad vā jayema yadi vā no jayeyuḥ\nyān eva hatvā na jijīviṣāmas\nte ’vasthitāḥ pramukhe dhārtarāṣṭrāḥ",
     "translation": "Nor do we know which is better – conquering them or being conquered by them. If we killed the sons of Dhṛtarāṣṭra, we should not care to live. Yet they are now standing before us on the battlefield.",
@@ -4442,6 +5468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -4450,15 +5494,16 @@
       "stats": {
         "original_words": 21,
         "translit_words": 22,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "1807fa60b4ed5982e35ece84ea269ce2"
     }
   },
   {
     "id": "bhagavad-gita_2_60",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "60",
+    "verse": 60,
     "original": "यततो ह्यपि कौन्तेय पुरुषस्य विपश्चितः ।\nइन्द्रियाणि प्रमाथीनि हरन्ति प्रसभं मनः ॥ ६० ॥",
     "transliteration": "yatato hy api kaunteya\npuruṣasya vipaścitaḥ\nindriyāṇi pramāthīni\nharanti prasabhaṁ manaḥ",
     "translation": "The senses are so strong and impetuous, O Arjuna, that they forcibly carry away the mind even of a man of discrimination who is endeavoring to control them.",
@@ -4523,6 +5568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -4531,15 +5594,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "245d485410bef9e269814fe276e70388"
     }
   },
   {
     "id": "bhagavad-gita_2_61",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "61",
+    "verse": 61,
     "original": "तानि सर्वाणि संयम्य युक्त आसीत मत्परः ।\nवशे हि यस्येन्द्रियाणि तस्य प्रज्ञा प्रतिष्ठिता ॥ ६१ ॥",
     "transliteration": "tāni sarvāṇi saṁyamya\nyukta āsīta mat-paraḥ\nvaśe hi yasyendriyāṇi\ntasya prajñā pratiṣṭhitā",
     "translation": "One who restrains his senses, keeping them under full control, and fixes his consciousness upon Me, is known as a man of steady intelligence.",
@@ -4604,6 +5668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -4612,15 +5694,16 @@
       "stats": {
         "original_words": 16,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "8e0afe810fe8f00832850f8ecb6c5193"
     }
   },
   {
     "id": "bhagavad-gita_2_62",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "62",
+    "verse": 62,
     "original": "ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते ।\nसङ्गात्सञ्जायते कामः कामात्क्रोधोऽभिजायते ॥ ६२ ॥",
     "transliteration": "dhyāyato viṣayān puṁsaḥ\nsaṅgas teṣūpajāyate\nsaṅgāt sañjāyate kāmaḥ\nkāmāt krodho ’bhijāyate",
     "translation": "While contemplating the objects of the senses, a person develops attachment for them, and from such attachment lust develops, and from lust anger arises.",
@@ -4685,6 +5768,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -4693,15 +5794,16 @@
       "stats": {
         "original_words": 10,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "aae673ef8c075879947a24d678d652da"
     }
   },
   {
     "id": "bhagavad-gita_2_63",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "63",
+    "verse": 63,
     "original": "क्रोधाद्भ‍वति सम्मोहः सम्मोहात्स्मृतिविभ्रमः ।\nस्मृतिभ्रंशाद्बुद्धिनाशो बुद्धिनाशात्प्रणश्यति ॥ ६३ ॥",
     "transliteration": "krodhād bhavati sammohaḥ\nsammohāt smṛti-vibhramaḥ\nsmṛti-bhraṁśād buddhi-nāśo\nbuddhi-nāśāt praṇaśyati",
     "translation": "From anger, complete delusion arises, and from delusion bewilderment of memory. When memory is bewildered, intelligence is lost, and when intelligence is lost one falls down again into the material pool.",
@@ -4766,6 +5868,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -4774,15 +5894,16 @@
       "stats": {
         "original_words": 9,
         "translit_words": 9,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "e686930bcae823e5d4249ee7811a85c4"
     }
   },
   {
     "id": "bhagavad-gita_2_64",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "64",
+    "verse": 64,
     "original": "रागद्वेषविमुक्तैस्तु विषयनिन्द्रियैश्चरन् ।\nआत्मवश्यैर्विधेयात्मा प्रसादमधिगच्छति ॥ ६४ ॥",
     "transliteration": "rāga-dveṣa-vimuktais tu\nviṣayān indriyaiś caran\nātma-vaśyair vidheyātmā\nprasādam adhigacchati",
     "translation": "But a person free from all attachment and aversion and able to control his senses through regulative principles of freedom can obtain the complete mercy of the Lord.",
@@ -4847,6 +5968,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -4855,15 +5994,16 @@
       "stats": {
         "original_words": 8,
         "translit_words": 9,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "2d3cf380a72ab9570e556a7c8d9b7371"
     }
   },
   {
     "id": "bhagavad-gita_2_65",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "65",
+    "verse": 65,
     "original": "प्रसादे सर्वदुःखानां हानिरस्योपजायते ।\nप्रसन्नचेतसो ह्याश‍ु बुद्धिः पर्यवतिष्ठते ॥ ६५ ॥",
     "transliteration": "prasāde sarva-duḥkhānāṁ\nhānir asyopajāyate\nprasanna-cetaso hy āśu\nbuddhiḥ paryavatiṣṭhate",
     "translation": "For one thus satisfied [in Kṛṣṇa consciousness], the threefold miseries of material existence exist no longer; in such satisfied consciousness, one’s intelligence is soon well established.",
@@ -4928,6 +6068,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -4936,15 +6094,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 9,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "d13490be7c49fb0cc8ea09d1b8cbe9d9"
     }
   },
   {
     "id": "bhagavad-gita_2_66",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "66",
+    "verse": 66,
     "original": "नास्ति बुद्धिरयुक्तस्य न चायुक्तस्य भावना ।\nन चाभावयतः शान्तिरशान्तस्य कुतः सुखम् ॥ ६६ ॥",
     "transliteration": "nāsti buddhir ayuktasya\nna cāyuktasya bhāvanā\nna cābhāvayataḥ śāntir\naśāntasya kutaḥ sukham",
     "translation": "One who is not connected with the Supreme [in Kṛṣṇa consciousness] can have neither transcendental intelligence nor a steady mind, without which there is no possibility of peace. And how can there be any happiness without peace?",
@@ -5009,6 +6168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -5017,15 +6194,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "5513d290880291d8702be94a600fda2c"
     }
   },
   {
     "id": "bhagavad-gita_2_67",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "67",
+    "verse": 67,
     "original": "इन्द्रियाणां हि चरतां यन्मनोऽनुविधीयते ।\nतदस्य हरति प्रज्ञां वायुर्नावमिवाम्भसि ॥ ६७ ॥",
     "transliteration": "indriyāṇāṁ hi caratāṁ\nyan mano ’nuvidhīyate\ntad asya harati prajñāṁ\nvāyur nāvam ivāmbhasi",
     "translation": "As a strong wind sweeps away a boat on the water, even one of the roaming senses on which the mind focuses can carry away a man’s intelligence.",
@@ -5090,6 +6268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -5098,15 +6294,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "2c551fa749e06ce76e9c2d9e2b292725"
     }
   },
   {
     "id": "bhagavad-gita_2_68",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "68",
+    "verse": 68,
     "original": "तस्माद्यस्य महाबाहो निगृहीतानि सर्वशः ।\nइन्द्रियाणीन्द्रियार्थेभ्यस्तस्य प्रज्ञा प्रतिष्ठिता ॥ ६८ ॥",
     "transliteration": "tasmād yasya mahā-bāho\nnigṛhītāni sarvaśaḥ\nindriyāṇīndriyārthebhyas\ntasya prajñā pratiṣṭhitā",
     "translation": "Therefore, O mighty-armed, one whose senses are restrained from their objects is certainly of steady intelligence.",
@@ -5171,6 +6368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -5179,15 +6394,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 9,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "1314c9bb54224bb352fa528e52b1c6c0"
     }
   },
   {
     "id": "bhagavad-gita_2_69",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "69",
+    "verse": 69,
     "original": "या निशा सर्वभूतानां तस्यां जागर्ति संयमी ।\nयस्यां जाग्रति भूतानि सा निशा पश्यतो मुनेः ॥ ६९ ॥",
     "transliteration": "yā niśā sarva-bhūtānāṁ\ntasyāṁ jāgarti saṁyamī\nyasyāṁ jāgrati bhūtāni\nsā niśā paśyato muneḥ",
     "translation": "What is night for all beings is the time of awakening for the self-controlled; and the time of awakening for all beings is night for the introspective sage.",
@@ -5252,6 +6468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -5260,15 +6494,16 @@
       "stats": {
         "original_words": 17,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "2bfb615fb1a79afa32ee4b25a0b0845e"
     }
   },
   {
     "id": "bhagavad-gita_2_7",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "7",
+    "verse": 7,
     "original": "कार्पण्यदोषोपहतस्वभावः\nपृच्छामि त्वां धर्मसम्मूढचेताः ।\nयच्छ्रेयः स्यान्निश्‍चितं ब्रूहि तन्मे\nशिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम् ॥ ७ ॥",
     "transliteration": "kārpaṇya-doṣopahata-svabhāvaḥ\npṛcchāmi tvāṁ dharma-sammūḍha-cetāḥ\nyac chreyaḥ syān niścitaṁ brūhi tan me\nśiṣyas te ’haṁ śādhi māṁ tvāṁ prapannam",
     "translation": "Now I am confused about my duty and have lost all composure because of miserly weakness. In this condition I am asking You to tell me for certain what is best for me. Now I am Your disciple, and a soul surrendered unto You. Please instruct me.",
@@ -5333,6 +6568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -5341,15 +6594,16 @@
       "stats": {
         "original_words": 17,
         "translit_words": 18,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "eb170f63e14fa96bbc43a3c0154398db"
     }
   },
   {
     "id": "bhagavad-gita_2_70",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "70",
+    "verse": 70,
     "original": "आपूर्यमाणमचलप्रतिष्ठं\nसमुद्रमापः प्रविशन्ति यद्वत् ।\nतद्वत्कामा यं प्रविशन्ति सर्वे\nस शान्तिमाप्‍नोति न कामकामी ॥ ७० ॥",
     "transliteration": "āpūryamāṇam acala-pratiṣṭhaṁ\nsamudram āpaḥ praviśanti yadvat\ntadvat kāmā yaṁ praviśanti sarve\nsa śāntim āpnoti na kāma-kāmī",
     "translation": "A person who is not disturbed by the incessant flow of desires – that enter like rivers into the ocean, which is ever being filled but is always still – can alone achieve peace, and not the man who strives to satisfy such desires.",
@@ -5414,6 +6668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -5422,15 +6694,16 @@
       "stats": {
         "original_words": 16,
         "translit_words": 16,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "34f6a01f9991d53a4ba8bb5184e77f71"
     }
   },
   {
     "id": "bhagavad-gita_2_71",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "71",
+    "verse": 71,
     "original": "विहाय कामान्यः सर्वान्पुमांश्चरति निःस्पृहः ।\nनिर्ममो निरहङ्कार स शान्तिमधिगच्छति ॥ ७१ ॥",
     "transliteration": "vihāya kāmān yaḥ sarvān\npumāṁś carati niḥspṛhaḥ\nnirmamo nirahaṅkāraḥ\nsa śāntim adhigacchati",
     "translation": "A person who has given up all desires for sense gratification, who lives free from desires, who has given up all sense of proprietorship and is devoid of false ego – he alone can attain real peace.",
@@ -5495,6 +6768,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -5503,15 +6794,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "90c44c4232b6dd78cdfc5b9fb3dcee87"
     }
   },
   {
     "id": "bhagavad-gita_2_72",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "72",
+    "verse": 72,
     "original": "एषा ब्राह्मी स्थितिःपार्थ नैनां प्राप्य विमुह्यति ।\nस्थित्वास्यामन्तकालेऽपि ब्रह्मनिर्वाणमृच्छति ॥ ७२ ॥",
     "transliteration": "eṣā brāhmī sthitiḥ pārtha\nnaināṁ prāpya vimuhyati\nsthitvāsyām anta-kāle ’pi\nbrahma-nirvāṇam ṛcchati",
     "translation": "That is the way of the spiritual and godly life, after attaining which a man is not bewildered. If one is thus situated even at the hour of death, one can enter into the kingdom of God.",
@@ -5576,6 +6868,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -5584,15 +6894,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "1056c4653aeac52702534ccbeb47f4ea"
     }
   },
   {
     "id": "bhagavad-gita_2_8",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "8",
+    "verse": 8,
     "original": "न हि प्रपश्यामि ममापनुद्याद् -\nयच्छोकमुच्छोषणमिन्द्रियाणाम् ।\nअवाप्य भूभावसपत्‍नमृद्धं\nराज्यं सुराणामपि चाधिपत्यम् ॥ ८ ॥",
     "transliteration": "na hi prapaśyāmi mamāpanudyād\nyac chokam ucchoṣaṇam indriyāṇām\navāpya bhūmāv asapatnam ṛddhaṁ\nrājyaṁ surāṇām api cādhipatyam",
     "translation": "I can find no means to drive away this grief which is drying up my senses. I will not be able to dispel it even if I win a prosperous, unrivaled kingdom on earth with sovereignty like the demigods in heaven.",
@@ -5657,6 +6968,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -5665,15 +6994,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 16,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "2e0f4a78a20d69a95adf3b845e34bc3a"
     }
   },
   {
     "id": "bhagavad-gita_2_9",
     "text_slug": "bhagavad-gita",
     "chapter": 2,
-    "verse": "9",
+    "verse": 9,
     "original": "सञ्जय उवाच\nएवमुक्त्वा हृषीकेशं गुडाकेशः परन्तपः ।\nन योत्स्य इति गोविन्दामुक्त्वा तूष्णीं बभूव ह ॥ ९ ॥",
     "transliteration": "sañjaya uvāca\nevam uktvā hṛṣīkeśaṁ\nguḍākeśaḥ paran-tapaḥ\nna yotsya iti govindam\nuktvā tūṣṇīṁ babhūva ha",
     "translation": "Sañjaya said: Having spoken thus, Arjuna, chastiser of enemies, told Kṛṣṇa, “Govinda, I shall not fight,” and fell silent.",
@@ -5738,6 +7068,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -5746,8 +7094,9 @@
       "stats": {
         "original_words": 17,
         "translit_words": 15,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "bbc63f47b9f202bed20725fd3f97fc86"
     }
   }
 ]

@@ -15,7 +15,7 @@
       "stats": {
         "original_words": 15,
         "translit_words": 15,
-        "layers_count": 3
+        "layers_count": 8
       },
       "fingerprint": "9816dc0aab96bbe376230d1b2a7fa6f6"
     },
@@ -27,13 +27,13 @@
         "content": "Om. That is whole, this is whole; from the whole, the whole becomes manifest. Taking the whole from the whole, the whole remains."
       },
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER_ISKCON_EN]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER_DNYAN_EN]"
@@ -43,6 +43,30 @@
         "lang": "en",
         "type": "commentary",
         "content": "[ADVAITA_PERSPECTIVE: Adi Shankara's In-Depth Non-Dualist Exposition]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "text_slug": "isha-upanishad"
@@ -63,7 +87,7 @@
       "stats": {
         "original_words": 15,
         "translit_words": 15,
-        "layers_count": 3
+        "layers_count": 8
       },
       "fingerprint": "a61f22c2f28483fc9aa6ba0c2f99acb3"
     },
@@ -75,13 +99,13 @@
         "content": "All this, whatever moves in the world, should be enveloped by God. Enjoy by renunciation. Covet not any more wealth."
       },
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER_ISKCON_EN]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER_DNYAN_EN]"
@@ -91,6 +115,30 @@
         "lang": "en",
         "type": "commentary",
         "content": "[ADVAITA_PERSPECTIVE: Adi Shankara's In-Depth Non-Dualist Exposition]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "text_slug": "isha-upanishad"
@@ -111,7 +159,7 @@
       "stats": {
         "original_words": 15,
         "translit_words": 15,
-        "layers_count": 3
+        "layers_count": 8
       },
       "fingerprint": "eaa54a16a981789a95300527a8647aac"
     },
@@ -123,13 +171,13 @@
         "content": "Performing karma in this world, one should wish to live a hundred years. Thus it is right for you and not otherwise; karma does not cling to man."
       },
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER_ISKCON_EN]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER_DNYAN_EN]"
@@ -139,6 +187,30 @@
         "lang": "en",
         "type": "commentary",
         "content": "[ADVAITA_PERSPECTIVE: Adi Shankara's In-Depth Non-Dualist Exposition]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "text_slug": "isha-upanishad"
@@ -159,7 +231,7 @@
       "stats": {
         "original_words": 16,
         "translit_words": 16,
-        "layers_count": 3
+        "layers_count": 8
       },
       "fingerprint": "ea20fc8c1b9eeb0eef3d282ed2e184c9"
     },
@@ -171,13 +243,13 @@
         "content": "Those worlds of the asuras are enveloped in blind darkness. Those people who kill their Atman go to them after death."
       },
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER_ISKCON_EN]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER_DNYAN_EN]"
@@ -187,6 +259,30 @@
         "lang": "en",
         "type": "commentary",
         "content": "[ADVAITA_PERSPECTIVE: Adi Shankara's In-Depth Non-Dualist Exposition]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "text_slug": "isha-upanishad"
@@ -207,7 +303,7 @@
       "stats": {
         "original_words": 14,
         "translit_words": 14,
-        "layers_count": 3
+        "layers_count": 8
       },
       "fingerprint": "ee4532d29ddf42134dc67ee63f0bee94"
     },
@@ -219,13 +315,13 @@
         "content": "The Atman is motionless, one, and swifter than the mind. The devas could not overtake it as it ran before them. Sitting, it passes others who run. In it, Matarisvan (the wind) bestows the actions of beings."
       },
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER_ISKCON_EN]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER_DNYAN_EN]"
@@ -235,6 +331,30 @@
         "lang": "en",
         "type": "commentary",
         "content": "[ADVAITA_PERSPECTIVE: Adi Shankara's In-Depth Non-Dualist Exposition]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "text_slug": "isha-upanishad"
@@ -255,7 +375,7 @@
       "stats": {
         "original_words": 13,
         "translit_words": 13,
-        "layers_count": 3
+        "layers_count": 8
       },
       "fingerprint": "a71d301555a25be08466f61d51369cba"
     },
@@ -267,13 +387,13 @@
         "content": "It moves, and it moves not. It is far, and it is near. It is within all this, and it is outside all this."
       },
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER_ISKCON_EN]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER_DNYAN_EN]"
@@ -283,6 +403,30 @@
         "lang": "en",
         "type": "commentary",
         "content": "[ADVAITA_PERSPECTIVE: Adi Shankara's In-Depth Non-Dualist Exposition]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "text_slug": "isha-upanishad"
@@ -303,7 +447,7 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 3
+        "layers_count": 8
       },
       "fingerprint": "ecaff07061a96192a9d694915ef8f49d"
     },
@@ -315,13 +459,13 @@
         "content": "He who sees all beings in the Atman, and the Atman in all beings, does not feel any revulsion by reason of such a view."
       },
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER_ISKCON_EN]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER_DNYAN_EN]"
@@ -331,6 +475,30 @@
         "lang": "en",
         "type": "commentary",
         "content": "[ADVAITA_PERSPECTIVE: Adi Shankara's In-Depth Non-Dualist Exposition]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "text_slug": "isha-upanishad"
@@ -351,7 +519,7 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 3
+        "layers_count": 8
       },
       "fingerprint": "e7943c1ee27265a14bdca6a9ca2416a1"
     },
@@ -363,13 +531,13 @@
         "content": "When, to the knower, all beings have become one with his own self (Atman), what delusion and what sorrow can there be for him who has once seen that unity?"
       },
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER_ISKCON_EN]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER_DNYAN_EN]"
@@ -379,6 +547,30 @@
         "lang": "en",
         "type": "commentary",
         "content": "[ADVAITA_PERSPECTIVE: Adi Shankara's In-Depth Non-Dualist Exposition]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "text_slug": "isha-upanishad"
@@ -399,7 +591,7 @@
       "stats": {
         "original_words": 11,
         "translit_words": 11,
-        "layers_count": 3
+        "layers_count": 8
       },
       "fingerprint": "f917f846a670990cece40bc7a30871bc"
     },
@@ -411,13 +603,13 @@
         "content": "He has filled all; he is radiant, bodiless, invulnerable, devoid of sinews, pure, untouched by evil. He, the Seer, the Thinker, the All-pervading, the Self-existent, has assigned to each its respective duties for eternal years."
       },
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER_ISKCON_EN]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER_DNYAN_EN]"
@@ -427,6 +619,30 @@
         "lang": "en",
         "type": "commentary",
         "content": "[ADVAITA_PERSPECTIVE: Adi Shankara's In-Depth Non-Dualist Exposition]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "text_slug": "isha-upanishad"
@@ -447,7 +663,7 @@
       "stats": {
         "original_words": 18,
         "translit_words": 18,
-        "layers_count": 3
+        "layers_count": 8
       },
       "fingerprint": "22bb712fb97dabae68ce00caca01fca1"
     },
@@ -459,13 +675,13 @@
         "content": "O Agni, lead us by the good path to wealth (liberation), O God who knowest all our deeds. Remove from us the deceitful sin. We offer thee the best salutations."
       },
       {
-        "author": "iskcon-en",
+        "author": "iskcon",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER_ISKCON_EN]"
       },
       {
-        "author": "dnyaneshwari-en",
+        "author": "dnyaneshwari",
         "lang": "en",
         "type": "commentary",
         "content": "[PLACEHOLDER_DNYAN_EN]"
@@ -475,6 +691,30 @@
         "lang": "en",
         "type": "commentary",
         "content": "[ADVAITA_PERSPECTIVE: Adi Shankara's In-Depth Non-Dualist Exposition]"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_ISKCON]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "text_slug": "isha-upanishad"

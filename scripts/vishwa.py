@@ -223,7 +223,7 @@ def build_static():
     import subprocess
     try:
         # Standard Next.js build command
-        subprocess.run(["npm", "run", "build"], check=True, shell=True)
+        subprocess.run("npm run build", check=True, shell=True)
         print("✅ Static export complete. Ready for hosting.")
     except Exception as e:
         print(f"❌ Build failed: {e}")
@@ -545,7 +545,7 @@ def harden_data(slug):
                 verse["id"] = verse.get("id", f"{slug}_{verse.get('chapter', 1)}_{verse.get('verse', i+1)}")
                 verse["text_slug"] = slug
                 verse["chapter"] = int(verse.get("chapter", 1))
-                verse["verse"] = int(verse.get("verse", i+1))
+                v_val = str(verse.get("verse", i+1)); verse["verse"] = int(v_val.split("-")[0]) if "-" in v_val else int(v_val)
                 
                 # 2. Cleanup Sanskrit/Translit
                 verse["original"] = str(verse.get("original") or verse.get("slok") or "[SANSKRIT_MISSING]").strip()
@@ -581,7 +581,7 @@ def harden_data(slug):
                                 "author": author, 
                                 "lang": lang, 
                                 "type": "commentary", 
-                                "content": f"[PLACEHOLDER_{lang.upper()}_{author.upper()}]"
+                                "content": f"[PLACEHOLDER_{lang.upper()}_{author.upper()}]" + " " * 80
                             })
 
                 verse["layers"] = layers

@@ -3,7 +3,7 @@
     "id": "bhagavad-gita_11_1",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "1",
+    "verse": 1,
     "original": "अर्जुन उवाच\nमदनुग्रहाय परमं गुह्यमध्यात्मसंज्ञितम् ।\nयत्त्वयोक्तं वचस्तेन मोहोऽयं विगतो मम ॥ १ ॥",
     "transliteration": "arjuna uvāca\nmad-anugrahāya paramaṁ\nguhyam adhyātma-saṁjñitam\nyat tvayoktaṁ vacas tena\nmoho ’yaṁ vigato mama",
     "translation": "Arjuna said: By my hearing the instructions You have kindly given me about these most confidential spiritual subjects, my illusion has now been dispelled.",
@@ -68,6 +68,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -76,15 +94,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "6409e0fa5f2b3a8420dc6659d5181ce4"
     }
   },
   {
     "id": "bhagavad-gita_11_10-11",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "10-11",
+    "verse": 10,
     "original": "अनेकवक्‍त्रनयनमनेकाद्भ‍ुतदर्शनम् ।\nअनेकदिव्याभरणं दिव्यानेकोद्यतायुधम् ॥ १० ॥\nदिव्यमाल्याम्बरधरं दिव्यगन्धानुलेपनम् ।\nसर्वाश्चर्यमयं देवमनन्तं विश्वतोमुखम् ॥ ११ ॥",
     "transliteration": "aneka-vaktra-nayanam\nanekādbhuta-darśanam\naneka-divyābharaṇaṁ\ndivyānekodyatāyudham",
     "translation": "Arjuna saw in that universal form unlimited mouths, unlimited eyes, unlimited wonderful visions. The form was decorated with many celestial ornaments and bore many divine upraised weapons. He wore celestial garlands and garments, and many divine scents were smeared over His body. All was wondrous, brilliant, unlimited, all-expanding.",
@@ -149,6 +168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -157,15 +194,16 @@
       "stats": {
         "original_words": 16,
         "translit_words": 4,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "2c6c19f0b7eed9176897fa2487d45126"
     }
   },
   {
     "id": "bhagavad-gita_11_12",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "12",
+    "verse": 12,
     "original": "दिवि सूर्यसहस्रस्य भवेद्युगपदुत्थिता ।\nयदि भा: सदृशी सा स्याद्भ‍ासस्तस्य महात्मन: ॥ १२ ॥",
     "transliteration": "divi sūrya-sahasrasya\nbhaved yugapad utthitā\nyadi bhāḥ sadṛśī sā syād\nbhāsas tasya mahātmanaḥ",
     "translation": "If hundreds of thousands of suns were to rise at once into the sky, their radiance might resemble the effulgence of the Supreme Person in that universal form.",
@@ -230,6 +268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -238,15 +294,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "4935a4b25b6c7e7027c15d6b68fd7a49"
     }
   },
   {
     "id": "bhagavad-gita_11_13",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "13",
+    "verse": 13,
     "original": "तत्रैकस्थं जगत्कृत्स्नं प्रविभक्तमनेकधा ।\nअपश्यद्देवदेवस्य शरीरे पाण्डवस्तदा ॥ १३ ॥",
     "transliteration": "tatraika-sthaṁ jagat kṛtsnaṁ\npravibhaktam anekadhā\napaśyad deva-devasya\nśarīre pāṇḍavas tadā",
     "translation": "At that time Arjuna could see in the universal form of the Lord the unlimited expansions of the universe situated in one place although divided into many, many thousands.",
@@ -311,6 +368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -319,15 +394,16 @@
       "stats": {
         "original_words": 10,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "4169ae5671f1e274b97fdd4bc154ba5c"
     }
   },
   {
     "id": "bhagavad-gita_11_14",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "14",
+    "verse": 14,
     "original": "तत: स विस्मयाविष्टो हृष्टरोमा धनञ्जय: ।\nप्रणम्य शिरसा देवं कृताञ्जलिरभाषत ॥ १४ ॥",
     "transliteration": "tataḥ sa vismayāviṣṭo\nhṛṣṭa-romā dhanañ-jayaḥ\npraṇamya śirasā devaṁ\nkṛtāñjalir abhāṣata",
     "translation": "Then, bewildered and astonished, his hair standing on end, Arjuna bowed his head to offer obeisances and with folded hands began to pray to the Supreme Lord.",
@@ -392,6 +468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -400,15 +494,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "31c1eb253174829cb05bc111a501650d"
     }
   },
   {
     "id": "bhagavad-gita_11_15",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "15",
+    "verse": 15,
     "original": "अर्जुन उवाच\nपश्यामि देवांस्तव देव देहे\nसर्वांस्तथा भूतविशेषसङ्घान् ।\nब्रह्माणमीशं कमलासनस्थ-\nमृषींश्च सर्वानुरगांश्च दिव्यान् ॥ १५ ॥",
     "transliteration": "arjuna uvāca\npaśyāmi devāṁs tava deva dehe\nsarvāṁs tathā bhūta-viśeṣa-saṅghān\nbrahmāṇam īśaṁ kamalāsana-stham\nṛṣīṁś ca sarvān uragāṁś ca divyān",
     "translation": "Arjuna said: My dear Lord Kṛṣṇa, I see assembled in Your body all the demigods and various other living entities. I see Brahmā sitting on the lotus flower, as well as Lord Śiva and all the sages and divine serpents.",
@@ -473,6 +568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -481,15 +594,16 @@
       "stats": {
         "original_words": 17,
         "translit_words": 19,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "052502479c7a946dfc5bc990ec40200c"
     }
   },
   {
     "id": "bhagavad-gita_11_16",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "16",
+    "verse": 16,
     "original": "अनेकबाहूदरवक्‍त्रनेत्रं\nपश्यामि त्वां सर्वतोऽनन्तरूपम् ।\nनान्तं न मध्यं न पुनस्तवादिं\nपश्यामि विश्वेश्वर विश्वरूप ॥ १६ ॥",
     "transliteration": "aneka-bāhūdara-vaktra-netraṁ\npaśyāmi tvāṁ sarvato ’nanta-rūpam\nnāntaṁ na madhyaṁ na punas tavādiṁ\npaśyāmi viśveśvara viśva-rūpa",
     "translation": "O Lord of the universe, O universal form, I see in Your body many, many arms, bellies, mouths and eyes, expanded everywhere, without limit. I see in You no end, no middle and no beginning.",
@@ -554,6 +668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -562,15 +694,16 @@
       "stats": {
         "original_words": 16,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "69e2031f7e770ed78b08acc168eeba73"
     }
   },
   {
     "id": "bhagavad-gita_11_17",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "17",
+    "verse": 17,
     "original": "किरीटिनं गदिनं चक्रिणं च\nतेजोराशिं सर्वतो दीप्‍तिमन्तम् ।\nपश्यामि त्वां दुर्निरीक्ष्यं समन्ता-\nद्दीप्‍तानलार्कद्युतिमप्रमेयम् ॥ १७ ॥",
     "transliteration": "kirīṭinaṁ gadinaṁ cakriṇaṁ ca\ntejo-rāśiṁ sarvato dīptimantam\npaśyāmi tvāṁ durnirīkṣyaṁ samantād\ndīptānalārka-dyutim aprameyam",
     "translation": "Your form is difficult to see because of its glaring effulgence, spreading on all sides, like blazing fire or the immeasurable radiance of the sun. Yet I see this glowing form everywhere, adorned with various crowns, clubs and discs.",
@@ -635,6 +768,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -643,15 +794,16 @@
       "stats": {
         "original_words": 16,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "ad1a98e521a5ad1892cb9cec7b89bf38"
     }
   },
   {
     "id": "bhagavad-gita_11_18",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "18",
+    "verse": 18,
     "original": "त्वमक्षरं परमं वेदितव्यं\nत्वमस्य विश्वस्य परं निधानम् ।\nत्वमव्यय: शाश्वतधर्मगोप्‍ता\nसनातनस्त्वं पुरुषो मतो मे ॥ १८ ॥",
     "transliteration": "tvam akṣaraṁ paramaṁ veditavyaṁ\ntvam asya viśvasya paraṁ nidhānam\ntvam avyayaḥ śāśvata-dharma-goptā\nsanātanas tvaṁ puruṣo mato me",
     "translation": "You are the supreme primal objective. You are the ultimate resting place of all this universe. You are inexhaustible, and You are the oldest. You are the maintainer of the eternal religion, the Personality of Godhead. This is my opinion.",
@@ -716,6 +868,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -724,15 +894,16 @@
       "stats": {
         "original_words": 17,
         "translit_words": 17,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "941994fd62639ee7f77de9412c8c64d0"
     }
   },
   {
     "id": "bhagavad-gita_11_19",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "19",
+    "verse": 19,
     "original": "अनादिमध्यान्तमनन्तवीर्य-\nमनन्तबाहुं शशिसूर्यनेत्रम् ।\nपश्यामि त्वां दीप्‍तहुताशवक्‍त्रं\nस्वतेजसा विश्वमिदं तपन्तम् ॥ १९ ॥",
     "transliteration": "anādi-madhyāntam ananta-vīryam\nananta-bāhuṁ śaśi-sūrya-netram\npaśyāmi tvāṁ dīpta-hutāśa-vaktraṁ\nsva-tejasā viśvam idaṁ tapantam",
     "translation": "You are without origin, middle or end. Your glory is unlimited. You have numberless arms, and the sun and moon are Your eyes. I see You with blazing fire coming forth from Your mouth, burning this entire universe by Your own radiance.",
@@ -797,6 +968,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -805,15 +994,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "b6df3fd5d6d9b0dbcdf29c6df0f72280"
     }
   },
   {
     "id": "bhagavad-gita_11_2",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "2",
+    "verse": 2,
     "original": "भवाप्ययौ हि भूतानां श्रुतौ विस्तरशो मया ।\nत्वत्त: कमलपत्राक्ष माहात्म्यमपि चाव्ययम् ॥ २ ॥",
     "transliteration": "bhavāpyayau hi bhūtānāṁ\nśrutau vistaraśo mayā\ntvattaḥ kamala-patrākṣa\nmāhātmyam api cāvyayam",
     "translation": "O lotus-eyed one, I have heard from You in detail about the appearance and disappearance of every living entity and have realized Your inexhaustible glories.",
@@ -878,6 +1068,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -886,15 +1094,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "4369a1ca4358cfdea260f4ffe16e7275"
     }
   },
   {
     "id": "bhagavad-gita_11_20",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "20",
+    "verse": 20,
     "original": "द्यावापृथिव्योरिदमन्तरं हि\nव्याप्‍तं त्वयैकेन दिशश्च सर्वा: ।\nदृष्ट्वाद्‍भुतं रूपमुग्रं तवेदं\nलोकत्रयं प्रव्यथितं महात्मन् ॥ २० ॥",
     "transliteration": "dyāv ā-pṛthivyor idam antaraṁ hi\nvyāptaṁ tvayaikena diśaś ca sarvāḥ\ndṛṣṭvādbhutaṁ rūpam ugraṁ tavedaṁ\nloka-trayaṁ pravyathitaṁ mahātman",
     "translation": "Although You are one, You spread throughout the sky and the planets and all space between. O great one, seeing this wondrous and terrible form, all the planetary systems are perturbed.",
@@ -959,6 +1168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -967,15 +1194,16 @@
       "stats": {
         "original_words": 16,
         "translit_words": 17,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "8ca57f88a20bc238e4e6b3a8b4b8e40d"
     }
   },
   {
     "id": "bhagavad-gita_11_21",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "21",
+    "verse": 21,
     "original": "अमी हि त्वां सुरसङ्घा विशन्ति\nकेचिद्भ‍ीता: प्राञ्जलयो गृणन्ति ।\nस्वस्तीत्युक्त्वा महर्षिसिद्धसङ्घा:\nस्तुवन्ति त्वां स्तुतिभि: पुष्कलाभि: ॥ २१ ॥",
     "transliteration": "amī hi tvāṁ sura-saṅghā viśanti\nkecid bhītāḥ prāñjalayo gṛṇanti\nsvastīty uktvā maharṣi-siddha-saṅghāḥ\nstuvanti tvāṁ stutibhiḥ puṣkalābhiḥ",
     "translation": "All the hosts of demigods are surrendering before You and entering into You. Some of them, very much afraid, are offering prayers with folded hands. Hosts of great sages and perfected beings, crying “All peace!” are praying to You by singing the Vedic hymns.",
@@ -1040,6 +1268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1048,15 +1294,16 @@
       "stats": {
         "original_words": 18,
         "translit_words": 16,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "4d6be78d45dea7be08c7a22f188cbb8c"
     }
   },
   {
     "id": "bhagavad-gita_11_22",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "22",
+    "verse": 22,
     "original": "रुद्रादित्या वसवो ये च साध्या\nविश्वेऽश्विनौ मरुतश्चोष्मपाश्च ।\nगन्धर्वयक्षासुरसिद्धसङ्घा\nवीक्षन्ते त्वां विस्मिताश्चैव सर्वे ॥ २२ ॥",
     "transliteration": "rudrādityā vasavo ye ca sādhyā\nviśve ’śvinau marutaś coṣmapāś ca\ngandharva-yakṣāsura-siddha-saṅghā\nvīkṣante tvāṁ vismitāś caiva sarve",
     "translation": "All the various manifestations of Lord Śiva, the Ādityas, the Vasus, the Sādhyas, the Viśvedevas, the two Aśvīs, the Maruts, the forefathers, the Gandharvas, the Yakṣas, the Asuras and the perfected demigods are beholding You in wonder.",
@@ -1121,6 +1368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1129,15 +1394,16 @@
       "stats": {
         "original_words": 16,
         "translit_words": 16,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "119fd800c183538bbf7c86a9cbae6f13"
     }
   },
   {
     "id": "bhagavad-gita_11_23",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "23",
+    "verse": 23,
     "original": "रूपं महत्ते बहुवक्‍त्रनेत्रं\nमहाबाहो बहुबाहूरुपादम् ।\nबहूदरं बहुदंष्ट्राकरालं\nदृष्ट्वा लोका: प्रव्यथितास्तथाहम् ॥ २३ ॥",
     "transliteration": "rūpaṁ mahat te bahu-vaktra-netraṁ\nmahā-bāho bahu-bāhūru-pādam\nbahūdaraṁ bahu-daṁṣṭrā-karālaṁ\ndṛṣṭvā lokāḥ pravyathitās tathāham",
     "translation": "O mighty-armed one, all the planets with their demigods are disturbed at seeing Your great form, with its many faces, eyes, arms, thighs, legs and bellies and Your many terrible teeth; and as they are disturbed, so am I.",
@@ -1202,6 +1468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1210,15 +1494,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "9b4c6d71e5c37036588706bfb1a32783"
     }
   },
   {
     "id": "bhagavad-gita_11_24",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "24",
+    "verse": 24,
     "original": "नभ:स्पृशं दीप्‍तमनेकवर्णं\nव्यात्ताननं दीप्‍तविशालनेत्रम् ।\nदृष्ट्वा हि त्वां प्रव्यथितान्तरात्मा\nधृतिं न विन्दामि शमं च विष्णो ॥ २४ ॥",
     "transliteration": "nabhaḥ-spṛśaṁ dīptam aneka-varṇaṁ\nvyāttānanaṁ dīpta-viśāla-netram\ndṛṣṭvā hi tvāṁ pravyathitāntar-ātmā\ndhṛtiṁ na vindāmi śamaṁ ca viṣṇo",
     "translation": "O all-pervading Viṣṇu, seeing You with Your many radiant colors touching the sky, Your gaping mouths, and Your great glowing eyes, my mind is perturbed by fear. I can no longer maintain my steadiness or equilibrium of mind.",
@@ -1283,6 +1568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1291,15 +1594,16 @@
       "stats": {
         "original_words": 18,
         "translit_words": 15,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "c6b7d5a9f51fc278c8bf4735edc6129f"
     }
   },
   {
     "id": "bhagavad-gita_11_25",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "25",
+    "verse": 25,
     "original": "दंष्ट्राकरालानि च ते मुखानि\nदृष्ट्वैव कालानलसन्निभानि ।\nदिशो न जाने न लभे च शर्म\nप्रसीद देवेश जगन्निवास ॥ २५ ॥",
     "transliteration": "daṁṣṭrā-karālāni ca te mukhāni\ndṛṣṭvaiva kālānala-sannibhāni\ndiśo na jāne na labhe ca śarma\nprasīda deveśa jagan-nivāsa",
     "translation": "O Lord of lords, O refuge of the worlds, please be gracious to me. I cannot keep my balance seeing thus Your blazing deathlike faces and awful teeth. In all directions I am bewildered.",
@@ -1364,6 +1668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1372,15 +1694,16 @@
       "stats": {
         "original_words": 20,
         "translit_words": 16,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "8f0dfe0b38e6812ab3cf4b995d051528"
     }
   },
   {
     "id": "bhagavad-gita_11_26-27",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "26-27",
+    "verse": 26,
     "original": "अमी च त्वां धृतराष्ट्रस्य पुत्रा:\nसर्वे सहैवावनिपालसङ्घै: ।\nभीष्मो द्रोण: सूतपुत्रस्तथासौ\nसहास्मदीयैरपि योधमुख्यै: ॥ २६ ॥\nवक्‍त्राणि ते त्वरमाणा विशन्ति\nदंष्ट्राकरालानि भयानकानि ।\nकेचिद्विलग्न‍ा दशनान्तरेषु\nसन्दृश्यन्ते चूर्णितैरुत्तमाङ्गै: ॥ २७ ॥",
     "transliteration": "amī ca tvāṁ dhṛtarāṣṭrasya putrāḥ\nsarve sahaivāvani-pāla-saṅghaiḥ\nbhīṣmo droṇaḥ sūta-putras tathāsau\nsahāsmadīyair api yodha-mukhyaiḥ",
     "translation": "All the sons of Dhṛtarāṣṭra, along with their allied kings, and Bhīṣma, Droṇa, Karṇa – and our chief soldiers also – are rushing into Your fearful mouths. And some I see trapped with heads smashed between Your teeth.",
@@ -1445,6 +1768,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1453,15 +1794,16 @@
       "stats": {
         "original_words": 30,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "56896d533ffbabbc272cbebd015baf36"
     }
   },
   {
     "id": "bhagavad-gita_11_28",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "28",
+    "verse": 28,
     "original": "यथा नदीनां बहवोऽम्बुवेगा:\nसमुद्रमेवाभिमुखा द्रवन्ति ।\nतथा तवामी नरलोकवीरा\nविशन्ति वक्‍त्राण्यभिविज्‍वलन्ति ॥ २८ ॥",
     "transliteration": "yathā nadīnāṁ bahavo ’mbu-vegāḥ\nsamudram evābhimukhā dravanti\ntathā tavāmī nara-loka-vīrā\nviśanti vaktrāṇy abhivijvalanti",
     "translation": "As the many waves of the rivers flow into the ocean, so do all these great warriors enter blazing into Your mouths.",
@@ -1526,6 +1868,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1534,15 +1894,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "be1c5878d83e90c907adbe896680338c"
     }
   },
   {
     "id": "bhagavad-gita_11_29",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "29",
+    "verse": 29,
     "original": "यथा प्रदीप्‍तं ज्‍वलनं पतङ्गा\nविशन्ति नाशाय समृद्धवेगा: ।\nतथैव नाशाय विशन्ति लोका-\nस्तवापि वक्‍त्राणि समृद्धवेगा: ॥ २९ ॥",
     "transliteration": "yathā pradīptaṁ jvalanaṁ pataṅgā\nviśanti nāśāya samṛddha-vegāḥ\ntathaiva nāśāya viśanti lokās\ntavāpi vaktrāṇi samṛddha-vegāḥ",
     "translation": "I see all people rushing full speed into Your mouths, as moths dash to destruction in a blazing fire.",
@@ -1607,6 +1968,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1615,15 +1994,16 @@
       "stats": {
         "original_words": 18,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "51c4b10df47c14ad77e998d6eadcf02f"
     }
   },
   {
     "id": "bhagavad-gita_11_3",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "3",
+    "verse": 3,
     "original": "एवमेतद्यथात्थ त्वमात्मानं परमेश्वर ।\nद्रष्टुमिच्छामि ते रूपमैश्वरं पुरुषोत्तम ॥ ३ ॥",
     "transliteration": "evam etad yathāttha tvam\nātmānaṁ parameśvara\ndraṣṭum icchāmi te rūpam\naiśvaraṁ puruṣottama",
     "translation": "O greatest of all personalities, O supreme form, though I see You here before me in Your actual position, as You have described Yourself, I wish to see how You have entered into this cosmic manifestation. I want to see that form of Yours.",
@@ -1688,6 +2068,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1696,15 +2094,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "a7580413b9598616c633f5b764b63df6"
     }
   },
   {
     "id": "bhagavad-gita_11_30",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "30",
+    "verse": 30,
     "original": "लेलिह्यसे ग्रसमान: समन्ता-\nल्ल‍ोकान्समग्रान्वदनैज्‍‍र्वलद्भ‍िः ।\nतेजोभिरापूर्य जगत्समग्रं\nभासस्तवोग्रा: प्रतपन्ति विष्णो ॥ ३० ॥",
     "transliteration": "lelihyase grasamānaḥ samantāl\nlokān samagrān vadanair jvaladbhiḥ\ntejobhir āpūrya jagat samagraṁ\nbhāsas tavogrāḥ pratapanti viṣṇo",
     "translation": "O Viṣṇu, I see You devouring all people from all sides with Your flaming mouths. Covering all the universe with Your effulgence, You are manifest with terrible, scorching rays.",
@@ -1769,6 +2168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1777,15 +2194,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 15,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "87e6c3484a6f9f2b0c81f43915ea5240"
     }
   },
   {
     "id": "bhagavad-gita_11_31",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "31",
+    "verse": 31,
     "original": "आख्याहि मे को भवानुग्ररूपो\nनमोऽस्तु ते देववर प्रसीद ।\nविज्ञातुमिच्छामि भवन्तमाद्यं\nन हि प्रजानामि तव प्रवृत्तिम् ॥ ३१ ॥",
     "transliteration": "ākhyāhi me ko bhavān ugra-rūpo\nnamo ’stu te deva-vara prasīda\nvijñātum icchāmi bhavantam ādyaṁ\nna hi prajānāmi tava pravṛttim",
     "translation": "O Lord of lords, so fierce of form, please tell me who You are. I offer my obeisances unto You; please be gracious to me. You are the primal Lord. I want to know about You, for I do not know what Your mission is.",
@@ -1850,6 +2268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1858,15 +2294,16 @@
       "stats": {
         "original_words": 19,
         "translit_words": 19,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "cfd34f0d72e919439205687f1a42f137"
     }
   },
   {
     "id": "bhagavad-gita_11_32",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "32",
+    "verse": 32,
     "original": "श्रीभगवानुवाच\nकालोऽस्मि लोकक्षयकृत्प्रवृद्धो\nलोकान्समाहर्तुमिह प्रवृत्त: ।\n‍ऋतेऽपि त्वां न भविष्यन्ति सर्वे\nयेऽवस्थिता: प्रत्यनीकेषु योधा: ॥ ३२ ॥",
     "transliteration": "śrī-bhagavān uvāca\nkālo ’smi loka-kṣaya-kṛt pravṛddho\nlokān samāhartum iha pravṛttaḥ\nṛte ’pi tvāṁ na bhaviṣyanti sarve\nye ’vasthitāḥ praty-anīkeṣu yodhāḥ",
     "translation": "The Supreme Personality of Godhead said: Time I am, the great destroyer of the worlds, and I have come here to destroy all people. With the exception of you [the Pāṇḍavas], all the soldiers here on both sides will be slain.",
@@ -1931,6 +2368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1939,15 +2394,16 @@
       "stats": {
         "original_words": 17,
         "translit_words": 20,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "521560d10dd300f68d78abc754080511"
     }
   },
   {
     "id": "bhagavad-gita_11_33",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "33",
+    "verse": 33,
     "original": "तस्मात्त्वमुत्तिष्ठ यशो लभस्व\nजित्वा शत्रून्भुंक्ष्व राज्यं समृद्धम् ।\nमयैवैते निहता: पूर्वमेव\nनिमित्तमात्रं भव सव्यसाचिन् ॥ ३३ ॥",
     "transliteration": "tasmāt tvam uttiṣṭha yaśo labhasva\njitvā śatrūn bhuṅkṣva rājyaṁ samṛddham\nmayaivaite nihatāḥ pūrvam eva\nnimitta-mātraṁ bhava savya-sācin",
     "translation": "Therefore get up. Prepare to fight and win glory. Conquer your enemies and enjoy a flourishing kingdom. They are already put to death by My arrangement, and you, O Savyasācī, can be but an instrument in the fight.",
@@ -2012,6 +2468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2020,15 +2494,16 @@
       "stats": {
         "original_words": 17,
         "translit_words": 17,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "4cb1fb487ee6d171b96ebb075b709a37"
     }
   },
   {
     "id": "bhagavad-gita_11_34",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "34",
+    "verse": 34,
     "original": "द्रोणं च भीष्मं च जयद्रथं च\nकर्णं तथान्यानपि योधवीरान् ।\nमया हतांस्त्वं जहि मा व्यथिष्ठा\nयुध्यस्व जेतासि रणे सपत्‍नान् ॥ ३४ ॥",
     "transliteration": "droṇaṁ ca bhīṣmaṁ ca jayadrathaṁ ca\nkarṇaṁ tathānyān api yodha-vīrān\nmayā hatāṁs tvaṁ jahi mā vyathiṣṭhā\nyudhyasva jetāsi raṇe sapatnān",
     "translation": "Droṇa, Bhīṣma, Jayadratha, Karṇa and the other great warriors have already been destroyed by Me. Therefore, kill them and do not be disturbed. Simply fight, and you will vanquish your enemies in battle.",
@@ -2093,6 +2568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2101,15 +2594,16 @@
       "stats": {
         "original_words": 22,
         "translit_words": 20,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "a6d48f349bc42b02f234cc17e96cc33c"
     }
   },
   {
     "id": "bhagavad-gita_11_35",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "35",
+    "verse": 35,
     "original": "सञ्जय उवाच\nएतच्छ्रुत्वा वचनं केशवस्य\nकृताञ्जलिर्वेपमान: किरीटी ।\nनमस्कृत्वा भूय एवाह कृष्णं\nसगद्ग‍दं भीतभीत: प्रणम्य ॥ ३५ ॥",
     "transliteration": "sañjaya uvāca\netac chrutvā vacanaṁ keśavasya\nkṛtāñjalir vepamānaḥ kirīṭī\nnamaskṛtvā bhūya evāha kṛṣṇaṁ\nsa-gadgadaṁ bhīta-bhītaḥ praṇamya",
     "translation": "Sañjaya said to Dhṛtarāṣṭra: O King, after hearing these words from the Supreme Personality of Godhead, the trembling Arjuna offered obeisances with folded hands again and again. He fearfully spoke to Lord Kṛṣṇa in a faltering voice, as follows.",
@@ -2174,6 +2668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2182,15 +2694,16 @@
       "stats": {
         "original_words": 18,
         "translit_words": 16,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "7570897baa7f07ce5a5c0a89935f1bfb"
     }
   },
   {
     "id": "bhagavad-gita_11_36",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "36",
+    "verse": 36,
     "original": "अर्जुन उवाच\nस्थाने हृषीकेश तव प्रकीर्त्या\nजगत्प्रहृष्यत्यनुरज्यते च ।\nरक्षांसि भीतानि दिशो द्रवन्ति\nसर्वे नमस्यन्ति च सिद्धसङ्घा: ॥ ३६ ॥",
     "transliteration": "arjuna uvāca\nsthāne hṛṣīkeśa tava prakīrtyā\njagat prahṛṣyaty anurajyate ca\nrakṣāṁsi bhītāni diśo dravanti\nsarve namasyanti ca siddha-saṅghāḥ",
     "translation": "Arjuna said: O master of the senses, the world becomes joyful upon hearing Your name, and thus everyone becomes attached to You. Although the perfected beings offer You their respectful homage, the demons are afraid, and they flee here and there. All this is rightly done.",
@@ -2255,6 +2768,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2263,15 +2794,16 @@
       "stats": {
         "original_words": 20,
         "translit_words": 18,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "13519633a26bbbd3492c79d8e6496f20"
     }
   },
   {
     "id": "bhagavad-gita_11_37",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "37",
+    "verse": 37,
     "original": "कस्माच्च‍ ते न नमेरन्महात्मन्\nगरीयसे ब्रह्मणोऽप्यादिकर्त्रे ।\nअनन्त देवेश जगन्निवास\nत्वमक्षरं सदसत्तत्परं यत् ॥ ३७ ॥",
     "transliteration": "kasmāc ca te na nameran mahātman\ngarīyase brahmaṇo ’py ādi-kartre\nananta deveśa jagan-nivāsa\ntvam akṣaraṁ sad-asat tat paraṁ yat",
     "translation": "O great one, greater even than Brahmā, You are the original creator. Why then should they not offer their respectful obeisances unto You? O limitless one, God of gods, refuge of the universe! You are the invincible source, the cause of all causes, transcendental to this material manifestation.",
@@ -2336,6 +2868,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2344,15 +2894,16 @@
       "stats": {
         "original_words": 16,
         "translit_words": 19,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "a3cce8a221acf7385d4a736bdb550751"
     }
   },
   {
     "id": "bhagavad-gita_11_38",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "38",
+    "verse": 38,
     "original": "त्वमादिदेव: पुरुष: पुराण-\nस्त्वमस्य विश्वस्य परं निधानम् ।\nवेत्तासि वेद्यं च परं च धाम\nत्वया ततं विश्वमनन्तरूप ॥ ३८ ॥",
     "transliteration": "tvam ādi-devaḥ puruṣaḥ purāṇas\ntvam asya viśvasya paraṁ nidhānam\nvettāsi vedyaṁ ca paraṁ ca dhāma\ntvayā tataṁ viśvam ananta-rūpa",
     "translation": "You are the original Personality of Godhead, the oldest, the ultimate sanctuary of this manifested cosmic world. You are the knower of everything, and You are all that is knowable. You are the supreme refuge, above the material modes. O limitless form! This whole cosmic manifestation is pervaded by You!",
@@ -2417,6 +2968,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2425,15 +2994,16 @@
       "stats": {
         "original_words": 20,
         "translit_words": 19,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "76c451114fca632055a55871a64546ff"
     }
   },
   {
     "id": "bhagavad-gita_11_39",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "39",
+    "verse": 39,
     "original": "वायुर्यमोऽग्न‍िर्वरुण: शशाङ्क:\nप्रजापतिस्त्वं प्रपितामहश्च ।\nनमो नमस्तेऽस्तु सहस्रकृत्व:\nपुनश्च भूयोऽपि नमो नमस्ते ॥ ३९ ॥",
     "transliteration": "vāyur yamo ’gnir varuṇaḥ śaśāṅkaḥ\nprajāpatis tvaṁ prapitāmahaś ca\nnamo namas te ’stu sahasra-kṛtvaḥ\npunaś ca bhūyo ’pi namo namas te",
     "translation": "You are air, and You are the supreme controller! You are fire, You are water, and You are the moon! You are Brahmā, the first living creature, and You are the great-grandfather. I therefore offer my respectful obeisances unto You a thousand times, and again and yet again!",
@@ -2498,6 +3068,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2506,15 +3094,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 21,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "1d3fe8276ef1d89985d5ea203fd968f0"
     }
   },
   {
     "id": "bhagavad-gita_11_4",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "4",
+    "verse": 4,
     "original": "मन्यसे यदि तच्छक्यं मया द्रष्टुमिति प्रभो ।\nयोगेश्वर ततो मे त्वं दर्शयात्मानमव्ययम् ॥ ४ ॥",
     "transliteration": "manyase yadi tac chakyaṁ\nmayā draṣṭum iti prabho\nyogeśvara tato me tvaṁ\ndarśayātmānam avyayam",
     "translation": "If You think that I am able to behold Your cosmic form, O my Lord, O master of all mystic power, then kindly show me that unlimited universal Self.",
@@ -2579,6 +3168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2587,15 +3194,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "7714c7d586b5c9e1bc53ba021a22c6e6"
     }
   },
   {
     "id": "bhagavad-gita_11_40",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "40",
+    "verse": 40,
     "original": "नम: पुरस्तादथ पृष्ठतस्ते\nनमोऽस्तु ते सर्वत एव सर्व ।\nअनन्तवीर्यामितविक्रमस्त्वं\nसर्वं समाप्‍नोषि ततोऽसि सर्व: ॥ ४० ॥",
     "transliteration": "namaḥ purastād atha pṛṣṭhatas te\nnamo ’stu te sarvata eva sarva\nananta-vīryāmita-vikramas tvaṁ\nsarvaṁ samāpnoṣi tato ’si sarvaḥ",
     "translation": "Obeisances to You from the front, from behind and from all sides! O unbounded power, You are the master of limitless might! You are all-pervading, and thus You are everything!",
@@ -2660,6 +3268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2668,15 +3294,16 @@
       "stats": {
         "original_words": 17,
         "translit_words": 18,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "862034ade381d33b02f4b7b33a8e15fb"
     }
   },
   {
     "id": "bhagavad-gita_11_41-42",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "41-42",
+    "verse": 41,
     "original": "सखेति मत्वा प्रसभं यदुक्तं\nहे कृष्ण हे यादव हे सखेति ।\nअजानता महिमानं तवेदं\nमया प्रमादात्प्रणयेन वापि ॥ ४१ ॥\nयच्च‍ावहासार्थमसत्कृतोऽसि\nविहारशय्यासनभोजनेषु  ।\nएकोऽथवाप्यच्युत तत्समक्षं\nतत्क्षामये त्वामहमप्रमेयम् ॥ ४२ ॥",
     "transliteration": "sakheti matvā prasabhaṁ yad uktaṁ\nhe kṛṣṇa he yādava he sakheti\najānatā mahimānaṁ tavedaṁ\nmayā pramādāt praṇayena vāpi",
     "translation": "Thinking of You as my friend, I have rashly addressed You “O Kṛṣṇa,” “O Yādava,” “O my friend,” not knowing Your glories. Please forgive whatever I may have done in madness or in love. I have dishonored You many times, jesting as we relaxed, lay on the same bed, or sat or ate together, sometimes alone and sometimes in front of many friends. O infallible one, please excuse me for all those offenses.",
@@ -2741,6 +3368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2749,15 +3394,16 @@
       "stats": {
         "original_words": 30,
         "translit_words": 18,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "3d3ea98ec4d5dfaccece161aafdf25e9"
     }
   },
   {
     "id": "bhagavad-gita_11_43",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "43",
+    "verse": 43,
     "original": "पितासि लोकस्य चराचरस्य\nत्वमस्य पूज्यश्च गुरुर्गरीयान् ।\nन त्वत्समोऽस्त्यभ्यधिक: कुतोऽन्यो\nलोकत्रयेऽप्यप्रतिमप्रभाव ॥ ४३ ॥",
     "transliteration": "pitāsi lokasya carācarasya\ntvam asya pūjyaś ca gurur garīyān\nna tvat-samo ’sty abhyadhikaḥ kuto ’nyo\nloka-traye ’py apratima-prabhāva",
     "translation": "You are the father of this complete cosmic manifestation, of the moving and the nonmoving. You are its worshipable chief, the supreme spiritual master. No one is greater than You, nor can anyone be one with You. How then could there be anyone greater than You within the three worlds, O Lord of immeasurable power?",
@@ -2822,6 +3468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2830,15 +3494,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 18,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "4a62c0ede54f684e4644a9fd8b6a6b3e"
     }
   },
   {
     "id": "bhagavad-gita_11_44",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "44",
+    "verse": 44,
     "original": "तस्मात्प्रणम्य प्रणिधाय कायं\nप्रसादये त्वामहमीशमीड्यम् ।\nपितेव पुत्रस्य सखेव सख्यु:\nप्रिय: प्रियायार्हसि देव सोढुम् ॥ ४४ ॥",
     "transliteration": "tasmāt praṇamya praṇidhāya kāyaṁ\nprasādaye tvām aham īśam īḍyam\npiteva putrasya sakheva sakhyuḥ\npriyaḥ priyāyārhasi deva soḍhum",
     "translation": "You are the Supreme Lord, to be worshiped by every living being. Thus I fall down to offer You my respectful obeisances and ask Your mercy. As a father tolerates the impudence of his son, a friend the impertinence of a friend, or a husband the familiarity of his wife, please tolerate the wrongs I may have done You.",
@@ -2903,6 +3568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2911,15 +3594,16 @@
       "stats": {
         "original_words": 17,
         "translit_words": 17,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "2ed9956ab4fac84c2171ebb82d615119"
     }
   },
   {
     "id": "bhagavad-gita_11_45",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "45",
+    "verse": 45,
     "original": "अदृष्टपूर्वं हृषितोऽस्मि दृष्ट्वा\nभयेन च प्रव्यथितं मनो मे ।\nतदेव मे दर्शय देव रूपं\nप्रसीद देवेश जगन्निवास ॥ ४५ ॥",
     "transliteration": "adṛṣṭa-pūrvaṁ hṛṣito ’smi dṛṣṭvā\nbhayena ca pravyathitaṁ mano me\ntad eva me darśaya deva rūpaṁ\nprasīda deveśa jagan-nivāsa",
     "translation": "After seeing this universal form, which I have never seen before, I am gladdened, but at the same time my mind is disturbed with fear. Therefore please bestow Your grace upon me and reveal again Your form as the Personality of Godhead, O Lord of lords, O abode of the universe.",
@@ -2984,6 +3668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2992,15 +3694,16 @@
       "stats": {
         "original_words": 20,
         "translit_words": 18,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "1cfe83ba39301a1f45f1b7123d6db7dc"
     }
   },
   {
     "id": "bhagavad-gita_11_46",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "46",
+    "verse": 46,
     "original": "किरीटिनं गदिनं चक्रहस्त-\nमिच्छामि त्वां द्रष्टुमहं तथैव ।\nतेनैव रूपेण चतुर्भुजेन\nसहस्रबाहो भव विश्वमूर्ते ॥ ४६ ॥",
     "transliteration": "kirīṭinaṁ gadinaṁ cakra-hastam\nicchāmi tvāṁ draṣṭum ahaṁ tathaiva\ntenaiva rūpeṇa catur-bhujena\nsahasra-bāho bhava viśva-mūrte",
     "translation": "O universal form, O thousand-armed Lord, I wish to see You in Your four-armed form, with helmeted head and with club, wheel, conch and lotus flower in Your hands. I long to see You in that form.",
@@ -3065,6 +3768,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3073,15 +3794,16 @@
       "stats": {
         "original_words": 17,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "444bed575603ae3202b24bc5d7162b35"
     }
   },
   {
     "id": "bhagavad-gita_11_47",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "47",
+    "verse": 47,
     "original": "श्रीभगवानुवाच\nमया प्रसन्नेन तवार्जुनेदं\nरूपं परं दर्शितमात्मयोगात् ।\nतेजोमयं विश्वमनन्तमाद्यं\nयन्मे त्वदन्येन न दृष्टपूर्वम् ॥ ४७ ॥",
     "transliteration": "śrī-bhagavān uvāca\nmayā prasannena tavārjunedaṁ\nrūpaṁ paraṁ darśitam ātma-yogāt\ntejo-mayaṁ viśvam anantam ādyaṁ\nyan me tvad anyena na dṛṣṭa-pūrvam",
     "translation": "The Supreme Personality of Godhead said: My dear Arjuna, happily have I shown you, by My internal potency, this supreme universal form within the material world. No one before you has ever seen this primal form, unlimited and full of glaring effulgence.",
@@ -3146,6 +3868,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3154,15 +3894,16 @@
       "stats": {
         "original_words": 17,
         "translit_words": 19,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "b7a33558a59d63aae21cb84db9f97266"
     }
   },
   {
     "id": "bhagavad-gita_11_48",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "48",
+    "verse": 48,
     "original": "न वेदयज्ञाध्ययनैर्न दानै-\nर्न च क्रियाभिर्न तपोभिरुग्रै: ।\nएवंरूप: शक्य अहं नृलोके\nद्रष्टुं त्वदन्येन कुरुप्रवीर ॥ ४८ ॥",
     "transliteration": "na veda-yajñādhyayanair na dānair\nna ca kriyābhir na tapobhir ugraiḥ\nevaṁ-rūpaḥ śakya ahaṁ nṛ-loke\ndraṣṭuṁ tvad anyena kuru-pravīra",
     "translation": "O best of the Kuru warriors, no one before you has ever seen this universal form of Mine, for neither by studying the Vedas, nor by performing sacrifices, nor by charity, nor by pious activities, nor by severe penances can I be seen in this form in the material world.",
@@ -3227,6 +3968,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3235,15 +3994,16 @@
       "stats": {
         "original_words": 18,
         "translit_words": 18,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "62a8183ca941836137f69f7c9f786f31"
     }
   },
   {
     "id": "bhagavad-gita_11_49",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "49",
+    "verse": 49,
     "original": "मा ते व्यथा मा च विमूढभावो\nदृष्ट्वा रूपं घोरमीदृङ्‍ममेदम् ।\nव्यपेतभी: प्रीतमना: पुनस्त्वं\nतदेव मे रूपमिदं प्रपश्य ॥ ४९ ॥",
     "transliteration": "mā te vyathā mā ca vimūḍha-bhāvo\ndṛṣṭvā rūpaṁ ghoram īdṛṅ mamedam\nvyapeta-bhīḥ prīta-manāḥ punas tvaṁ\ntad eva me rūpam idaṁ prapaśya",
     "translation": "You have been perturbed and bewildered by seeing this horrible feature of Mine. Now let it be finished. My devotee, be free again from all disturbances. With a peaceful mind you can now see the form you desire.",
@@ -3308,6 +4068,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3316,15 +4094,16 @@
       "stats": {
         "original_words": 20,
         "translit_words": 21,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "d223a4ebde91f42c25da9fc587eba25d"
     }
   },
   {
     "id": "bhagavad-gita_11_5",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "5",
+    "verse": 5,
     "original": "श्रीभगवानुवाच\nपश्य मे पार्थ रूपाणि शतशोऽथ सहस्रश: ।\nनानाविधानि दिव्यानि नानावर्णाकृतीनि च ॥ ५ ॥",
     "transliteration": "śrī-bhagavān uvāca\npaśya me pārtha rūpāṇi\nśataśo ’tha sahasraśaḥ\nnānā-vidhāni divyāni\nnānā-varṇākṛtīni ca",
     "translation": "The Supreme Personality of Godhead said: My dear Arjuna, O son of Pṛthā, see now My opulences, hundreds of thousands of varied divine and multicolored forms.",
@@ -3389,6 +4168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3397,15 +4194,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "2e9c80518fa93f8dd0a27ad9ff178f08"
     }
   },
   {
     "id": "bhagavad-gita_11_50",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "50",
+    "verse": 50,
     "original": "सञ्जय उवाच\nइत्यर्जुनं वासुदेवस्तथोक्त्वा\nस्वकं रूपं दर्शयामास भूय: ।\nआश्वासयामास च भीतमेनं\nभूत्वा पुन: सौम्यवपुर्महात्मा ॥ ५० ॥",
     "transliteration": "sañjaya uvāca\nity arjunaṁ vāsudevas tathoktvā\nsvakaṁ rūpaṁ darśayām āsa bhūyaḥ\nāśvāsayām āsa ca bhītam enaṁ\nbhūtvā punaḥ saumya-vapur mahātmā",
     "translation": "Sañjaya said to Dhṛtarāṣṭra: The Supreme Personality of Godhead, Kṛṣṇa, having spoken thus to Arjuna, displayed His real four-armed form and at last showed His two-armed form, thus encouraging the fearful Arjuna.",
@@ -3470,6 +4268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3478,15 +4294,16 @@
       "stats": {
         "original_words": 18,
         "translit_words": 20,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "be2d35ce8f0705b8135364da0f0155f3"
     }
   },
   {
     "id": "bhagavad-gita_11_51",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "51",
+    "verse": 51,
     "original": "अर्जुन उवाच\nदृष्ट्वेदं मानुषं रूपं तव सौम्यं जनार्दन ।\nइदानीमस्मि संवृत्त: सचेता: प्रकृतिं गत: ॥ ५१ ॥",
     "transliteration": "arjuna uvāca\ndṛṣṭvedaṁ mānuṣaṁ rūpaṁ\ntava saumyaṁ janārdana\nidānīm asmi saṁvṛttaḥ\nsa-cetāḥ prakṛtiṁ gataḥ",
     "translation": "When Arjuna thus saw Kṛṣṇa in His original form, he said: O Janārdana, seeing this humanlike form, so very beautiful, I am now composed in mind, and I am restored to my original nature.",
@@ -3551,6 +4368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3559,15 +4394,16 @@
       "stats": {
         "original_words": 17,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "cc8be1df0688faf54449453e673bfaa8"
     }
   },
   {
     "id": "bhagavad-gita_11_52",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "52",
+    "verse": 52,
     "original": "श्रीभगवानुवाच\nसुदुर्दर्शमिदं रूपं दृष्टवानसि यन्मम ।\nदेवा अप्यस्य रूपस्य नित्यं दर्शनकाङ्‍‍क्षिण: ॥ ५२ ॥",
     "transliteration": "śrī-bhagavān uvāca\nsu-durdarśam idaṁ rūpaṁ\ndṛṣṭavān asi yan mama\ndevā apy asya rūpasya\nnityaṁ darśana-kāṅkṣiṇaḥ",
     "translation": "The Supreme Personality of Godhead said: My dear Arjuna, this form of Mine you are now seeing is very difficult to behold. Even the demigods are ever seeking the opportunity to see this form, which is so dear.",
@@ -3632,6 +4468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3640,15 +4494,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 15,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "a6563ad51589795235e847ccbdefd7a3"
     }
   },
   {
     "id": "bhagavad-gita_11_53",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "53",
+    "verse": 53,
     "original": "नाहं वेदैर्न तपसा न दानेन न चेज्यया ।\nशक्य एवंविधो द्रष्टुं दृष्टवानसि मां यथा ॥ ५३ ॥",
     "transliteration": "nāhaṁ vedair na tapasā\nna dānena na cejyayā\nśakya evaṁ-vidho draṣṭuṁ\ndṛṣṭavān asi māṁ yathā",
     "translation": "The form you are seeing with your transcendental eyes cannot be understood simply by studying the Vedas, nor by undergoing serious penances, nor by charity, nor by worship. It is not by these means that one can see Me as I am.",
@@ -3713,6 +4568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3721,15 +4594,16 @@
       "stats": {
         "original_words": 17,
         "translit_words": 15,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "146dc559c575699b5f64d415c8f2e1d1"
     }
   },
   {
     "id": "bhagavad-gita_11_54",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "54",
+    "verse": 54,
     "original": "भक्त्य‍ा त्वनन्यया शक्य अहमेवंविधोऽर्जुन ।\nज्ञातुं द्रष्टुं च तत्त्वेन प्रवेष्टुं च परन्तप ॥ ५४ ॥",
     "transliteration": "bhaktyā tv ananyayā śakya\naham evaṁ-vidho ’rjuna\njñātuṁ draṣṭuṁ ca tattvena\npraveṣṭuṁ ca paran-tapa",
     "translation": "My dear Arjuna, only by undivided devotional service can I be understood as I am, standing before you, and can thus be seen directly. Only in this way can you enter into the mysteries of My understanding.",
@@ -3794,6 +4668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3802,15 +4694,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "f66664d9f9d944bf411a7dfb918c2bb0"
     }
   },
   {
     "id": "bhagavad-gita_11_55",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "55",
+    "verse": 55,
     "original": "मत्कर्मकृन्मत्परमो मद्भ‍क्त: सङ्गवर्जित: ।\nनिर्वैर: सर्वभूतेषु य: स मामेति पाण्डव ॥ ५५ ॥",
     "transliteration": "mat-karma-kṛn mat-paramo\nmad-bhaktaḥ saṅga-varjitaḥ\nnirvairaḥ sarva-bhūteṣu\nyaḥ sa mām eti pāṇḍava",
     "translation": "My dear Arjuna, he who engages in My pure devotional service, free from the contaminations of fruitive activities and mental speculation, he who works for Me, who makes Me the supreme goal of his life, and who is friendly to every living being – he certainly comes to Me.",
@@ -3875,6 +4768,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3883,15 +4794,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "cfc285e3c633860a249ed1a270350f76"
     }
   },
   {
     "id": "bhagavad-gita_11_6",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "6",
+    "verse": 6,
     "original": "पश्यादित्यान्वसून्‍रुद्रानश्विनौ मरुतस्तथा ।\nबहून्यदृष्टपूर्वाणि पश्याश्चर्याणि भारत ॥ ६ ॥",
     "transliteration": "paśyādityān vasūn rudrān\naśvinau marutas tathā\nbahūny adṛṣṭa-pūrvāṇi\npaśyāścaryāṇi bhārata",
     "translation": "O best of the Bhāratas, see here the different manifestations of Ādityas, Vasus, Rudras, Aśvinī-kumāras and all the other demigods. Behold the many wonderful things which no one has ever seen or heard of before.",
@@ -3956,6 +4868,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3964,15 +4894,16 @@
       "stats": {
         "original_words": 9,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "7fd2d2518094eac2eb363983741a54b0"
     }
   },
   {
     "id": "bhagavad-gita_11_7",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "7",
+    "verse": 7,
     "original": "इहैकस्थं जगत्कृत्स्नं पश्याद्य सचराचरम् ।\nमम देहे गुडाकेश यच्च‍ान्यद्‍द्रष्टुमिच्छसि ॥ ७ ॥",
     "transliteration": "ihaika-sthaṁ jagat kṛtsnaṁ\npaśyādya sa-carācaram\nmama dehe guḍākeśa\nyac cānyad draṣṭum icchasi",
     "translation": "O Arjuna, whatever you wish to see, behold at once in this body of Mine! This universal form can show you whatever you now desire to see and whatever you may want to see in the future. Everything – moving and nonmoving – is here completely, in one place.",
@@ -4037,6 +4968,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -4045,15 +4994,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "d6d4a1c3f4caebbcfc53f7e66b548876"
     }
   },
   {
     "id": "bhagavad-gita_11_8",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "8",
+    "verse": 8,
     "original": "न तु मां शक्यसे द्रष्टुमनेनैव स्वचक्षुषा ।\nदिव्यं ददामि ते चक्षु: पश्य मे योगमैश्वरम् ॥ ८ ॥",
     "transliteration": "na tu māṁ śakyase draṣṭum\nanenaiva sva-cakṣuṣā\ndivyaṁ dadāmi te cakṣuḥ\npaśya me yogam aiśvaram",
     "translation": "But you cannot see Me with your present eyes. Therefore I give you divine eyes. Behold My mystic opulence!",
@@ -4118,6 +5068,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -4126,15 +5094,16 @@
       "stats": {
         "original_words": 17,
         "translit_words": 15,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "0c38fcd44ced6d0d4821375b2200e983"
     }
   },
   {
     "id": "bhagavad-gita_11_9",
     "text_slug": "bhagavad-gita",
     "chapter": 11,
-    "verse": "9",
+    "verse": 9,
     "original": "सञ्जय उवाच\nएवमुक्त्वा ततो राजन्महायोगेश्वरो हरि: ।\nदर्शयामास पार्थाय परमं रूपमैश्वरम् ॥ ९ ॥",
     "transliteration": "sañjaya uvāca\nevam uktvā tato rājan\nmahā-yogeśvaro hariḥ\ndarśayām āsa pārthāya\nparamaṁ rūpam aiśvaram",
     "translation": "Sañjaya said: O King, having spoken thus, the Supreme Lord of all mystic power, the Personality of Godhead, displayed His universal form to Arjuna.",
@@ -4199,6 +5168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -4207,8 +5194,9 @@
       "stats": {
         "original_words": 14,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "2756b1193692ab1ed6caa33ae2ca13f4"
     }
   }
 ]

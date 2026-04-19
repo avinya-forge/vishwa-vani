@@ -3,7 +3,7 @@
     "id": "bhagavad-gita_14_1",
     "text_slug": "bhagavad-gita",
     "chapter": 14,
-    "verse": "1",
+    "verse": 1,
     "original": "श्रीभगवानुवाच\nपरं भूय: प्रवक्ष्यामि ज्ञानानां ज्ञानमुत्तमम् । ‍‍ ॥\nयज्ज्ञात्वा मुनय: सर्वे परां सिद्धिमितो गता: ॥ १ ॥",
     "transliteration": "śrī-bhagavān uvāca\nparaṁ bhūyaḥ pravakṣyāmi\njñānānāṁ jñānam uttamam\nyaj jñātvā munayaḥ sarve\nparāṁ siddhim ito gatāḥ",
     "translation": "The Supreme Personality of Godhead said: Again I shall declare to you this supreme wisdom, the best of all knowledge, knowing which all the sages have attained the supreme perfection.",
@@ -68,6 +68,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: सत्त्व, रज, तम हे तीन गुण म्हणजे प्रकृतीचे तीन धागे आहेत. सोन्याची साखळी असली तरी साखळीच असते — सत्त्वगुणही बांधतो. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -76,15 +94,16 @@
       "stats": {
         "original_words": 18,
         "translit_words": 16,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "0a6662945fd3bbaddb3fe2bd3f214b52"
     }
   },
   {
     "id": "bhagavad-gita_14_10",
     "text_slug": "bhagavad-gita",
     "chapter": 14,
-    "verse": "10",
+    "verse": 10,
     "original": "रजस्तमश्चाभिभूय सत्त्वं भवति भारत ।\nरज: सत्त्वं तमश्चैव तम: सत्त्वं रजस्तथा ॥ १० ॥",
     "transliteration": "rajas tamaś cābhibhūya\nsattvaṁ bhavati bhārata\nrajaḥ sattvaṁ tamaś caiva\ntamaḥ sattvaṁ rajas tathā",
     "translation": "Sometimes the mode of goodness becomes prominent, defeating the modes of passion and ignorance, O son of Bharata. Sometimes the mode of passion defeats goodness and ignorance, and at other times ignorance defeats goodness and passion. In this way there is always competition for supremacy.",
@@ -149,6 +168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: सत्त्व, रज, तम हे तीन गुण म्हणजे प्रकृतीचे तीन धागे आहेत. सोन्याची साखळी असली तरी साखळीच असते — सत्त्वगुणही बांधतो. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -157,15 +194,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "a43d30e7880155af4ddd3350b2be8834"
     }
   },
   {
     "id": "bhagavad-gita_14_11",
     "text_slug": "bhagavad-gita",
     "chapter": 14,
-    "verse": "11",
+    "verse": 11,
     "original": "सर्वद्वारेषु देहेऽस्मिन्प्रकाश उपजायते ।\nज्ञानं यदा तदा विद्याद्विवृद्धं सत्त्वमित्युत ॥ ११ ॥",
     "transliteration": "sarva-dvāreṣu dehe ’smin\nprakāśa upajāyate\njñānaṁ yadā tadā vidyād\nvivṛddhaṁ sattvam ity uta",
     "translation": "The manifestation of the mode of goodness can be experienced when all the gates of the body are illuminated by knowledge.",
@@ -230,6 +268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — सत्त्व, रज, तम हे तीन गुण म्हणजे प्रकृतीचे तीन धागे आहेत. सोन्याची साखळी असली तरी साखळीच असते — सत्त्वगुणही बांधतो. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -238,15 +294,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "d668bdcb17017b37f0141251eb594bb0"
     }
   },
   {
     "id": "bhagavad-gita_14_12",
     "text_slug": "bhagavad-gita",
     "chapter": 14,
-    "verse": "12",
+    "verse": 12,
     "original": "लोभ: प्रवृत्तिरारम्भ: कर्मणामशम: स्पृहा ।\nरजस्येतानि जायन्ते विवृद्धे भरतर्षभ ॥ १२ ॥",
     "transliteration": "lobhaḥ pravṛttir ārambhaḥ\nkarmaṇām aśamaḥ spṛhā\nrajasy etāni jāyante\nvivṛddhe bharatarṣabha",
     "translation": "O chief of the Bhāratas, when there is an increase in the mode of passion the symptoms of great attachment, fruitive activity, intense endeavor, and uncontrollable desire and hankering develop.",
@@ -311,6 +368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: सत्त्व, रज, तम हे तीन गुण म्हणजे प्रकृतीचे तीन धागे आहेत. सोन्याची साखळी असली तरी साखळीच असते — सत्त्वगुणही बांधतो. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -319,15 +394,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "90925c62b500efbae67074c9d44487e7"
     }
   },
   {
     "id": "bhagavad-gita_14_13",
     "text_slug": "bhagavad-gita",
     "chapter": 14,
-    "verse": "13",
+    "verse": 13,
     "original": "अप्रकाशोऽप्रवृत्तिश्च प्रमादो मोह एव च ।\nतमस्येतानि जायन्ते विवृद्धे कुरुनन्दन ॥ १३ ॥",
     "transliteration": "aprakāśo ’pravṛttiś ca\npramādo moha eva ca\ntamasy etāni jāyante\nvivṛddhe kuru-nandana",
     "translation": "When there is an increase in the mode of ignorance, O son of Kuru, darkness, inertia, madness and illusion are manifested.",
@@ -392,6 +468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: सत्त्व, रज, तम हे तीन गुण म्हणजे प्रकृतीचे तीन धागे आहेत. सोन्याची साखळी असली तरी साखळीच असते — सत्त्वगुणही बांधतो. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -400,15 +494,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "cad7f99f0f8374db35c1cdf3b5ae63f0"
     }
   },
   {
     "id": "bhagavad-gita_14_14",
     "text_slug": "bhagavad-gita",
     "chapter": 14,
-    "verse": "14",
+    "verse": 14,
     "original": "यदा सत्त्वे प्रवृद्धे तु प्रलयं याति देहभृत् ।\nतदोत्तमविदां लोकानमलान्प्रतिपद्यते ॥ १४ ॥",
     "transliteration": "yadā sattve pravṛddhe tu\npralayaṁ yāti deha-bhṛt\ntadottama-vidāṁ lokān\namalān pratipadyate",
     "translation": "When one dies in the mode of goodness, he attains to the pure higher planets of the great sages.",
@@ -473,6 +568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: सत्त्व, रज, तम हे तीन गुण म्हणजे प्रकृतीचे तीन धागे आहेत. सोन्याची साखळी असली तरी साखळीच असते — सत्त्वगुणही बांधतो. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -481,15 +594,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "82f76a5e62e37767b881043d857d56a0"
     }
   },
   {
     "id": "bhagavad-gita_14_15",
     "text_slug": "bhagavad-gita",
     "chapter": 14,
-    "verse": "15",
+    "verse": 15,
     "original": "रजसि प्रलयं गत्वा कर्मसङ्गिषु जायते ।\nतथा प्रलीनस्तमसि मूढयोनिषु जायते ॥ १५ ॥",
     "transliteration": "rajasi pralayaṁ gatvā\nkarma-saṅgiṣu jāyate\ntathā pralīnas tamasi\nmūḍha-yoniṣu jāyate",
     "translation": "When one dies in the mode of passion, he takes birth among those engaged in fruitive activities; and when one dies in the mode of ignorance, he takes birth in the animal kingdom.",
@@ -554,6 +668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: सत्त्व, रज, तम हे तीन गुण म्हणजे प्रकृतीचे तीन धागे आहेत. सोन्याची साखळी असली तरी साखळीच असते — सत्त्वगुणही बांधतो. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -562,15 +694,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "011c4c94c01c53d902e92410e37861a5"
     }
   },
   {
     "id": "bhagavad-gita_14_16",
     "text_slug": "bhagavad-gita",
     "chapter": 14,
-    "verse": "16",
+    "verse": 16,
     "original": "कर्मण: सुकृतस्याहु: सात्त्विकं निर्मलं फलम् ।\nरजसस्तु फलं दु:खमज्ञानं तमस: फलम् ॥ १६ ॥",
     "transliteration": "karmaṇaḥ sukṛtasyāhuḥ\nsāttvikaṁ nirmalaṁ phalam\nrajasas tu phalaṁ duḥkham\najñānaṁ tamasaḥ phalam",
     "translation": "The result of pious action is pure and is said to be in the mode of goodness. But action done in the mode of passion results in misery, and action performed in the mode of ignorance results in foolishness.",
@@ -635,6 +768,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: सत्त्व, रज, तम हे तीन गुण म्हणजे प्रकृतीचे तीन धागे आहेत. सोन्याची साखळी असली तरी साखळीच असते — सत्त्वगुणही बांधतो. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -643,15 +794,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "86277b3a6a3246b0c352072fc190eaf9"
     }
   },
   {
     "id": "bhagavad-gita_14_17",
     "text_slug": "bhagavad-gita",
     "chapter": 14,
-    "verse": "17",
+    "verse": 17,
     "original": "सत्त्वात्सञ्जायते ज्ञानं रजसो लोभ एव च ।\nप्रमादमोहौ तमसो भवतोऽज्ञानमेव च ॥ १७ ॥",
     "transliteration": "sattvāt sañjāyate jñānaṁ\nrajaso lobha eva ca\npramāda-mohau tamaso\nbhavato ’jñānam eva ca",
     "translation": "From the mode of goodness, real knowledge develops; from the mode of passion, greed develops; and from the mode of ignorance develop foolishness, madness and illusion.",
@@ -716,6 +868,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — सत्त्व, रज, तम हे तीन गुण म्हणजे प्रकृतीचे तीन धागे आहेत. सोन्याची साखळी असली तरी साखळीच असते — सत्त्वगुणही बांधतो. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -724,15 +894,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "1cd9dc4440244438945b2098bd0c8e29"
     }
   },
   {
     "id": "bhagavad-gita_14_18",
     "text_slug": "bhagavad-gita",
     "chapter": 14,
-    "verse": "18",
+    "verse": 18,
     "original": "ऊर्ध्वं गच्छन्ति सत्त्वस्था मध्ये तिष्ठन्ति राजसा: ।\nजघन्यगुणवृत्तिस्था अधो गच्छन्ति तामसा: ॥ १८ ॥",
     "transliteration": "ūrdhvaṁ gacchanti sattva-sthā\nmadhye tiṣṭhanti rājasāḥ\njaghanya-guṇa-vṛtti-sthā\nadho gacchanti tāmasāḥ",
     "translation": "Those situated in the mode of goodness gradually go upward to the higher planets; those in the mode of passion live on the earthly planets; and those in the abominable mode of ignorance go down to the hellish worlds.",
@@ -797,6 +968,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: सत्त्व, रज, तम हे तीन गुण म्हणजे प्रकृतीचे तीन धागे आहेत. सोन्याची साखळी असली तरी साखळीच असते — सत्त्वगुणही बांधतो. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -805,15 +994,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "5ae9057a057bc2676ea66502ae0e70e1"
     }
   },
   {
     "id": "bhagavad-gita_14_19",
     "text_slug": "bhagavad-gita",
     "chapter": 14,
-    "verse": "19",
+    "verse": 19,
     "original": "नान्यं गुणेभ्य: कर्तारं यदा द्रष्टानुपश्यति ।\nगुणेभ्यश्च परं वेत्ति मद्भ‍ावं सोऽधिगच्छति ॥ १९ ॥",
     "transliteration": "nānyaṁ guṇebhyaḥ kartāraṁ\nyadā draṣṭānupaśyati\nguṇebhyaś ca paraṁ vetti\nmad-bhāvaṁ so ’dhigacchati",
     "translation": "When one properly sees that in all activities no other performer is at work than these modes of nature and he knows the Supreme Lord, who is transcendental to all these modes, he attains My spiritual nature.",
@@ -878,6 +1068,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: सत्त्व, रज, तम हे तीन गुण म्हणजे प्रकृतीचे तीन धागे आहेत. सोन्याची साखळी असली तरी साखळीच असते — सत्त्वगुणही बांधतो. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -886,15 +1094,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "c73b0f4d3d0742a0396cb9415bf597ad"
     }
   },
   {
     "id": "bhagavad-gita_14_2",
     "text_slug": "bhagavad-gita",
     "chapter": 14,
-    "verse": "2",
+    "verse": 2,
     "original": "इदं ज्ञानमुपाश्रित्य मम साधर्म्यमागता: ।\nसर्गेऽपि नोपजायन्ते प्रलये न व्यथन्ति च ॥ २ ॥",
     "transliteration": "idaṁ jñānam upāśritya\nmama sādharmyam āgatāḥ\nsarge ’pi nopajāyante\npralaye na vyathanti ca",
     "translation": "By becoming fixed in this knowledge, one can attain to the transcendental nature like My own. Thus established, one is not born at the time of creation or disturbed at the time of dissolution.",
@@ -959,6 +1168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: सत्त्व, रज, तम हे तीन गुण म्हणजे प्रकृतीचे तीन धागे आहेत. सोन्याची साखळी असली तरी साखळीच असते — सत्त्वगुणही बांधतो. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -967,15 +1194,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "8cd11f4ae8a5f82c23e59750cff22398"
     }
   },
   {
     "id": "bhagavad-gita_14_20",
     "text_slug": "bhagavad-gita",
     "chapter": 14,
-    "verse": "20",
+    "verse": 20,
     "original": "गुणानेतानतीत्य त्रीन्देही देहसमुद्भ‍वान् ।\nजन्ममृत्युजरादु:खैर्विमुक्तोऽमृतमश्न‍ुते ॥ २० ॥",
     "transliteration": "guṇān etān atītya trīn\ndehī deha-samudbhavān\njanma-mṛtyu-jarā-duḥkhair\nvimukto ’mṛtam aśnute",
     "translation": "When the embodied being is able to transcend these three modes associated with the material body, he can become free from birth, death, old age and their distresses and can enjoy nectar even in this life.",
@@ -1040,6 +1268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: सत्त्व, रज, तम हे तीन गुण म्हणजे प्रकृतीचे तीन धागे आहेत. सोन्याची साखळी असली तरी साखळीच असते — सत्त्वगुणही बांधतो. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1048,15 +1294,16 @@
       "stats": {
         "original_words": 8,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "89e940e48601d536e5a7c56bfd1f62b6"
     }
   },
   {
     "id": "bhagavad-gita_14_21",
     "text_slug": "bhagavad-gita",
     "chapter": 14,
-    "verse": "21",
+    "verse": 21,
     "original": "अर्जुन उवाच\nकैर्लिङ्गैस्त्रीन्गुणानेतानतीतो भवति प्रभो ।\nकिमाचार: कथं चैतांस्त्रीन्गुणानतिवर्तते ॥ २१ ॥",
     "transliteration": "arjuna uvāca\nkair liṅgais trīn guṇān etān\natīto bhavati prabho\nkim-ācāraḥ kathaṁ caitāṁs\ntrīn guṇān ativartate",
     "translation": "Arjuna inquired: O my dear Lord, by which symptoms is one known who is transcendental to these three modes? What is his behavior? And how does he transcend the modes of nature?",
@@ -1121,6 +1368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: सत्त्व, रज, तम हे तीन गुण म्हणजे प्रकृतीचे तीन धागे आहेत. सोन्याची साखळी असली तरी साखळीच असते — सत्त्वगुणही बांधतो. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1129,15 +1394,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 16,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "4e506a1095a126bbaee218d422fea473"
     }
   },
   {
     "id": "bhagavad-gita_14_22-25",
     "text_slug": "bhagavad-gita",
     "chapter": 14,
-    "verse": "22-25",
+    "verse": 22,
     "original": "श्रीभगवानुवाच\nप्रकाशं च प्रवृत्तिं च मोहमेव च पाण्डव ।\nन द्वेष्टि सम्प्रवृत्तानि न निवृत्तानि काङ्‍क्षति ॥ २२ ॥\nउदासीनवदासीनो गुणैर्यो न विचाल्यते ।\nगुणा वर्तन्त इत्येवं योऽवतिष्ठति नेङ्गते ॥ २३ ॥\nसमदु:खसुख: स्वस्थ: समलोष्टाश्मकाञ्चन: ।\nतुल्यप्रियाप्रियो धीरस्तुल्यनिन्दात्मसंस्तुति: ॥ २४ ॥\nमानापमानयोस्तुल्यस्तुल्यो मित्रारिपक्षयो: ।\nसर्वारम्भपरित्यागी गुणातीत: स उच्यते ॥ २५ ॥",
     "transliteration": "śrī-bhagavān uvāca\nprakāśaṁ ca pravṛttiṁ ca\nmoham eva ca pāṇḍava\nna dveṣṭi sampravṛttāni\nna nivṛttāni kāṅkṣati",
     "translation": "The Supreme Personality of Godhead said: O son of Pāṇḍu, he who does not hate illumination, attachment and delusion when they are present or long for them when they disappear; who is unwavering and undisturbed through all these reactions of the material qualities, remaining neutral and transcendental, knowing that the modes alone are active; who is situated in the self and regards alike happiness and distress; who looks upon a lump of earth, a stone and a piece of gold with an equal eye; who is equal toward the desirable and the undesirable; who is steady, situated equally well in praise and blame, honor and dishonor; who treats alike both friend and enemy; and who has renounced all material activities – such a person is said to have transcended the modes of nature.",
@@ -1202,6 +1468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — सत्त्व, रज, तम हे तीन गुण म्हणजे प्रकृतीचे तीन धागे आहेत. सोन्याची साखळी असली तरी साखळीच असते — सत्त्वगुणही बांधतो. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1210,15 +1494,16 @@
       "stats": {
         "original_words": 50,
         "translit_words": 16,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "3e6f779cc4ef5c229486d2f56ce8065c"
     }
   },
   {
     "id": "bhagavad-gita_14_26",
     "text_slug": "bhagavad-gita",
     "chapter": 14,
-    "verse": "26",
+    "verse": 26,
     "original": "मां च योऽव्यभिचारेण भक्तियोगेन सेवते ।\nस गुणान्समतीत्यैतान्ब्रह्मभूयाय कल्पते ॥ २६ ॥",
     "transliteration": "māṁ ca yo ’vyabhicāreṇa\nbhakti-yogena sevate\nsa guṇān samatītyaitān\nbrahma-bhūyāya kalpate",
     "translation": "One who engages in full devotional service, unfailing in all circumstances, at once transcends the modes of material nature and thus comes to the level of Brahman.",
@@ -1283,6 +1568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: सत्त्व, रज, तम हे तीन गुण म्हणजे प्रकृतीचे तीन धागे आहेत. सोन्याची साखळी असली तरी साखळीच असते — सत्त्वगुणही बांधतो. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1291,15 +1594,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "130666a6ffe822118f7ee6857e33527a"
     }
   },
   {
     "id": "bhagavad-gita_14_27",
     "text_slug": "bhagavad-gita",
     "chapter": 14,
-    "verse": "27",
+    "verse": 27,
     "original": "ब्रह्मणो हि प्रतिष्ठाहममृतस्याव्ययस्य च ।\nशाश्वतस्य च धर्मस्य सुखस्यैकान्तिकस्य च ॥ २७ ॥",
     "transliteration": "brahmaṇo hi pratiṣṭhāham\namṛtasyāvyayasya ca\nśāśvatasya ca dharmasya\nsukhasyaikāntikasya ca",
     "translation": "And I am the basis of the impersonal Brahman, which is immortal, imperishable and eternal and is the constitutional position of ultimate happiness.",
@@ -1364,6 +1668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: सत्त्व, रज, तम हे तीन गुण म्हणजे प्रकृतीचे तीन धागे आहेत. सोन्याची साखळी असली तरी साखळीच असते — सत्त्वगुणही बांधतो. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1372,15 +1694,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "6fc5da30ce05a1218c2f28b7c0dc49ef"
     }
   },
   {
     "id": "bhagavad-gita_14_3",
     "text_slug": "bhagavad-gita",
     "chapter": 14,
-    "verse": "3",
+    "verse": 3,
     "original": "मम योनिर्महद्‍ब्रह्म तस्मिन्गर्भं दधाम्यहम् ।\nसम्भव: सर्वभूतानां ततो भवति भारत ॥ ३ ॥",
     "transliteration": "mama yonir mahad brahma\ntasmin garbhaṁ dadhāmy aham\nsambhavaḥ sarva-bhūtānāṁ\ntato bhavati bhārata",
     "translation": "The total material substance, called Brahman, is the source of birth, and it is that Brahman that I impregnate, making possible the births of all living beings, O son of Bharata.",
@@ -1445,6 +1768,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: सत्त्व, रज, तम हे तीन गुण म्हणजे प्रकृतीचे तीन धागे आहेत. सोन्याची साखळी असली तरी साखळीच असते — सत्त्वगुणही बांधतो. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1453,15 +1794,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "d3936996fde8ba32b1b6fffcf635c4e3"
     }
   },
   {
     "id": "bhagavad-gita_14_4",
     "text_slug": "bhagavad-gita",
     "chapter": 14,
-    "verse": "4",
+    "verse": 4,
     "original": "सर्वयोनिषु कौन्तेय मूर्तय: सम्भवन्ति या: ।\nतासां ब्रह्म महद्योनिरहं बीजप्रद: पिता ॥ ४ ॥",
     "transliteration": "sarva-yoniṣu kaunteya\nmūrtayaḥ sambhavanti yāḥ\ntāsāṁ brahma mahad yonir\nahaṁ bīja-pradaḥ pitā",
     "translation": "It should be understood that all species of life, O son of Kuntī, are made possible by birth in this material nature, and that I am the seed-giving father.",
@@ -1526,6 +1868,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: सत्त्व, रज, तम हे तीन गुण म्हणजे प्रकृतीचे तीन धागे आहेत. सोन्याची साखळी असली तरी साखळीच असते — सत्त्वगुणही बांधतो. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1534,15 +1894,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "e4bc8d0a05b656d652721b83f986554e"
     }
   },
   {
     "id": "bhagavad-gita_14_5",
     "text_slug": "bhagavad-gita",
     "chapter": 14,
-    "verse": "5",
+    "verse": 5,
     "original": "सत्त्वं रजस्तम इति गुणा: प्रकृतिसम्भवा: ।\nनिबध्‍नन्ति महाबाहो देहे देहिनमव्ययम् ॥ ५ ॥",
     "transliteration": "sattvaṁ rajas tama iti\nguṇāḥ prakṛti-sambhavāḥ\nnibadhnanti mahā-bāho\ndehe dehinam avyayam",
     "translation": "Material nature consists of three modes – goodness, passion and ignorance. When the eternal living entity comes in contact with nature, O mighty-armed Arjuna, he becomes conditioned by these modes.",
@@ -1607,6 +1968,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: सत्त्व, रज, तम हे तीन गुण म्हणजे प्रकृतीचे तीन धागे आहेत. सोन्याची साखळी असली तरी साखळीच असते — सत्त्वगुणही बांधतो. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1615,15 +1994,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "1209c1c98bde5c8a8b7824849dde2aec"
     }
   },
   {
     "id": "bhagavad-gita_14_6",
     "text_slug": "bhagavad-gita",
     "chapter": 14,
-    "verse": "6",
+    "verse": 6,
     "original": "तत्र सत्त्वं निर्मलत्वात्प्रकाशकमनामयम् ।\nसुखसङ्गेन बध्‍नाति ज्ञानसङ्गेन चानघ ॥ ६ ॥",
     "transliteration": "tatra sattvaṁ nirmalatvāt\nprakāśakam anāmayam\nsukha-saṅgena badhnāti\njñāna-saṅgena cānagha",
     "translation": "O sinless one, the mode of goodness, being purer than the others, is illuminating, and it frees one from all sinful reactions. Those situated in that mode become conditioned by a sense of happiness and knowledge.",
@@ -1688,6 +2068,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — सत्त्व, रज, तम हे तीन गुण म्हणजे प्रकृतीचे तीन धागे आहेत. सोन्याची साखळी असली तरी साखळीच असते — सत्त्वगुणही बांधतो. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1696,15 +2094,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 9,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "c061fb3a19d7545c5b78e0ff78f6f3b7"
     }
   },
   {
     "id": "bhagavad-gita_14_7",
     "text_slug": "bhagavad-gita",
     "chapter": 14,
-    "verse": "7",
+    "verse": 7,
     "original": "रजो रागात्मकं विद्धि तृष्णासङ्गसमुद्भ‍वम् ।\nतन्निबध्‍नाति कौन्तेय कर्मसङ्गेन देहिनम् ॥ ७ ॥",
     "transliteration": "rajo rāgātmakaṁ viddhi\ntṛṣṇā-saṅga-samudbhavam\ntan nibadhnāti kaunteya\nkarma-saṅgena dehinam",
     "translation": "The mode of passion is born of unlimited desires and longings, O son of Kuntī, and because of this the embodied living entity is bound to material fruitive actions.",
@@ -1769,6 +2168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: सत्त्व, रज, तम हे तीन गुण म्हणजे प्रकृतीचे तीन धागे आहेत. सोन्याची साखळी असली तरी साखळीच असते — सत्त्वगुणही बांधतो. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1777,15 +2194,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 9,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "daaec72922410deb728137553dbb844b"
     }
   },
   {
     "id": "bhagavad-gita_14_8",
     "text_slug": "bhagavad-gita",
     "chapter": 14,
-    "verse": "8",
+    "verse": 8,
     "original": "तमस्त्वज्ञानजं विद्धि मोहनं सर्वदेहिनाम् ।\nप्रमादालस्यनिद्राभिस्तन्निबध्‍नाति भारत ॥ ८ ॥",
     "transliteration": "tamas tv ajñāna-jaṁ viddhi\nmohanaṁ sarva-dehinām\npramādālasya-nidrābhis\ntan nibadhnāti bhārata",
     "translation": "O son of Bharata, know that the mode of darkness, born of ignorance, is the delusion of all embodied living entities. The results of this mode are madness, indolence and sleep, which bind the conditioned soul.",
@@ -1850,6 +2268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: सत्त्व, रज, तम हे तीन गुण म्हणजे प्रकृतीचे तीन धागे आहेत. सोन्याची साखळी असली तरी साखळीच असते — सत्त्वगुणही बांधतो. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1858,15 +2294,16 @@
       "stats": {
         "original_words": 10,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "8719727299635ff01ea3ee66d7dfbc9f"
     }
   },
   {
     "id": "bhagavad-gita_14_9",
     "text_slug": "bhagavad-gita",
     "chapter": 14,
-    "verse": "9",
+    "verse": 9,
     "original": "सत्त्वं सुखे सञ्जयति रज: कर्मणि भारत ।\nज्ञानमावृत्य तु तम: प्रमादे सञ्जयत्युत ॥ ९ ॥",
     "transliteration": "sattvaṁ sukhe sañjayati\nrajaḥ karmaṇi bhārata\njñānam āvṛtya tu tamaḥ\npramāde sañjayaty uta",
     "translation": "O son of Bharata, the mode of goodness conditions one to happiness; passion conditions one to fruitive action; and ignorance, covering one’s knowledge, binds one to madness.",
@@ -1931,6 +2368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: सत्त्व, रज, तम हे तीन गुण म्हणजे प्रकृतीचे तीन धागे आहेत. सोन्याची साखळी असली तरी साखळीच असते — सत्त्वगुणही बांधतो. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1939,8 +2394,9 @@
       "stats": {
         "original_words": 15,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "e337020179862e16098e8a9de9481d4d"
     }
   }
 ]

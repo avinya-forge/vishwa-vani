@@ -3,7 +3,7 @@
     "id": "bhagavad-gita_1_1",
     "text_slug": "bhagavad-gita",
     "chapter": 1,
-    "verse": "1",
+    "verse": 1,
     "original": "धृतराष्ट्र उवाच\nधर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सव: ।\nमामका: पाण्डवाश्चैव किमकुर्वत सञ्जय ॥ १ ॥",
     "transliteration": "dhṛtarāṣṭra uvāca\ndharma-kṣetre kuru-kṣetre\nsamavetā yuyutsavaḥ\nmāmakāḥ pāṇḍavāś caiva\nkim akurvata sañjaya",
     "translation": "Dhṛtarāṣṭra said: O Sañjaya, after my sons and the sons of Pāṇḍu assembled in the place of pilgrimage at Kurukṣetra, desiring to fight, what did they do?",
@@ -56,6 +56,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: अर्जुनाचा विषाद म्हणजे आत्मज्ञानाची पहिली पायरी आहे. शरीर हे रणांगण आहे आणि मन हा योद्धा आहे. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -64,15 +82,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "eeac2ac49eb6316f5575032b2f434968"
     }
   },
   {
     "id": "bhagavad-gita_1_10",
     "text_slug": "bhagavad-gita",
     "chapter": 1,
-    "verse": "10",
+    "verse": 10,
     "original": "अपर्याप्त‍ं तदस्माकं बलं भीष्माभिरक्षितम् ।\nपर्याप्त‍ं त्विदमेतेषां बलं भीमाभिरक्षितम् ॥ १० ॥",
     "transliteration": "aparyāptaṁ tad asmākaṁ\nbalaṁ bhīṣmābhirakṣitam\nparyāptaṁ tv idam eteṣāṁ\nbalaṁ bhīmābhirakṣitam",
     "translation": "Our strength is immeasurable, and we are perfectly protected by Grandfather Bhīṣma, whereas the strength of the Pāṇḍavas, carefully protected by Bhīma, is limited.",
@@ -125,6 +144,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: अर्जुनाचा विषाद म्हणजे आत्मज्ञानाची पहिली पायरी आहे. शरीर हे रणांगण आहे आणि मन हा योद्धा आहे. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -133,15 +170,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "24bd2101872a311f997a742e290b1f49"
     }
   },
   {
     "id": "bhagavad-gita_1_11",
     "text_slug": "bhagavad-gita",
     "chapter": 1,
-    "verse": "11",
+    "verse": 11,
     "original": "अयनेषु च सर्वेषु यथाभागवमस्थिताः ।\nभीष्ममेवाभिरक्षन्तु भवन्तः सर्व एव हि ॥ ११ ॥",
     "transliteration": "ayaneṣu ca sarveṣu\nyathā-bhāgam avasthitāḥ\nbhīṣmam evābhirakṣantu\nbhavantaḥ sarva eva hi",
     "translation": "All of you must now give full support to Grandfather Bhīṣma, as you stand at your respective strategic points of entrance into the phalanx of the army.",
@@ -194,6 +232,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — अर्जुनाचा विषाद म्हणजे आत्मज्ञानाची पहिली पायरी आहे. शरीर हे रणांगण आहे आणि मन हा योद्धा आहे. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -202,15 +258,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "28e7d3f9d5f098ec9927a82e0e41fb86"
     }
   },
   {
     "id": "bhagavad-gita_1_12",
     "text_slug": "bhagavad-gita",
     "chapter": 1,
-    "verse": "12",
+    "verse": 12,
     "original": "तस्य सञ्जनयन्हर्षं कुरुवृद्धः पितामहः ।\nसिंहनादं विनद्योच्च‍ैः शङ्खं दध्मौ प्रतापवान् ॥ १२ ॥",
     "transliteration": "tasya sañjanayan harṣaṁ\nkuru-vṛddhaḥ pitāmahaḥ\nsiṁha-nādaṁ vinadyoccaiḥ\nśaṅkhaṁ dadhmau pratāpavān",
     "translation": "Then Bhīṣma, the great valiant grandsire of the Kuru dynasty, the grandfather of the fighters, blew his conchshell very loudly, making a sound like the roar of a lion, giving Duryodhana joy.",
@@ -263,6 +320,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: अर्जुनाचा विषाद म्हणजे आत्मज्ञानाची पहिली पायरी आहे. शरीर हे रणांगण आहे आणि मन हा योद्धा आहे. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -271,15 +346,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "8fe5712aa6c43c36b69cfbed59a57a41"
     }
   },
   {
     "id": "bhagavad-gita_1_13",
     "text_slug": "bhagavad-gita",
     "chapter": 1,
-    "verse": "13",
+    "verse": 13,
     "original": "ततः शङ्खाश्च भेर्यश्च पणवानकगोमुखाः ।\nसहसैवाभ्यहन्यन्त स शब्दस्तुमुलोऽभवत् ॥ १३ ॥",
     "transliteration": "tataḥ śaṅkhāś ca bheryaś ca\npaṇavānaka-gomukhāḥ\nsahasaivābhyahanyanta\nsa śabdas tumulo ’bhavat",
     "translation": "After that, the conchshells, drums, bugles, trumpets and horns were all suddenly sounded, and the combined sound was tumultuous.",
@@ -332,6 +408,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: अर्जुनाचा विषाद म्हणजे आत्मज्ञानाची पहिली पायरी आहे. शरीर हे रणांगण आहे आणि मन हा योद्धा आहे. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -340,15 +434,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "817aa8685a029475bc61a586c4e4571b"
     }
   },
   {
     "id": "bhagavad-gita_1_14",
     "text_slug": "bhagavad-gita",
     "chapter": 1,
-    "verse": "14",
+    "verse": 14,
     "original": "ततः श्वेतैर्हयैर्युक्ते महति स्यन्दने स्थितौ ।\nमाधवः पाण्डवश्चैव दिव्यौ शङ्खौ प्रदध्मतुः ॥ १४ ॥",
     "transliteration": "tataḥ śvetair hayair yukte\nmahati syandane sthitau\nmādhavaḥ pāṇḍavaś caiva\ndivyau śaṅkhau pradadhmatuḥ",
     "translation": "On the other side, both Lord Kṛṣṇa and Arjuna, stationed on a great chariot drawn by white horses, sounded their transcendental conchshells.",
@@ -401,6 +496,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: अर्जुनाचा विषाद म्हणजे आत्मज्ञानाची पहिली पायरी आहे. शरीर हे रणांगण आहे आणि मन हा योद्धा आहे. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -409,15 +522,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "047bdddca7924a757a4c727215e08074"
     }
   },
   {
     "id": "bhagavad-gita_1_15",
     "text_slug": "bhagavad-gita",
     "chapter": 1,
-    "verse": "15",
+    "verse": 15,
     "original": "पाञ्चजन्यं हृषीकेशो देवदत्तं धनञ्जयः ।\nपौण्ड्रं दध्मौ महाशङ्खं भीमकर्मा वृकोदरः ॥ १५ ॥",
     "transliteration": "pāñcajanyaṁ hṛṣīkeśo\ndevadattaṁ dhanañ-jayaḥ\npauṇḍraṁ dadhmau mahā-śaṅkhaṁ\nbhīma-karmā vṛkodaraḥ",
     "translation": "Lord Kṛṣṇa blew His conchshell, called Pāñcajanya; Arjuna blew his, the Devadatta; and Bhīma, the voracious eater and performer of herculean tasks, blew his terrific conchshell, called Pauṇḍra.",
@@ -470,6 +584,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: अर्जुनाचा विषाद म्हणजे आत्मज्ञानाची पहिली पायरी आहे. शरीर हे रणांगण आहे आणि मन हा योद्धा आहे. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -478,15 +610,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 9,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "8ea0404ac9c57f50f16cd436a2f39867"
     }
   },
   {
     "id": "bhagavad-gita_1_16-18",
     "text_slug": "bhagavad-gita",
     "chapter": 1,
-    "verse": "16-18",
+    "verse": 16,
     "original": "अनन्तविजयं राजा कुन्तीपुत्रो युधिष्ठिरः ।\nनकुलः सहदेवश्च सुघोषमणिपुष्पकौ ॥ १६ ॥\nकाश्यश्च परमेष्वास: शिखण्डी च महारथ: ।\nधृष्टद्युम्न‍ो विराटश्च सात्यकिश्‍चापराजित: ॥ १७ ॥\nद्रुपदो द्रौपदेयाश्च सर्वश: पृथिवीपते ।\nसौभद्रश्च महाबाहु: शङ्खान्दध्मु: पृथक्पृथक् ॥ १८ ॥",
     "transliteration": "anantavijayaṁ rājā\nkuntī-putro yudhiṣṭhiraḥ\nnakulaḥ sahadevaś ca\nsughoṣa-maṇipuṣpakau",
     "translation": "King Yudhiṣṭhira, the son of Kuntī, blew his conchshell, the Ananta-vijaya, and Nakula and Sahadeva blew the Sughoṣa and Maṇipuṣpaka. That great archer the King of Kāśī, the great fighter Śikhaṇḍī, Dhṛṣṭadyumna, Virāṭa, the unconquerable Sātyaki, Drupada, the sons of Draupadī, and others, O King, such as the mighty-armed son of Subhadrā, all blew their respective conchshells.",
@@ -539,6 +672,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: अर्जुनाचा विषाद म्हणजे आत्मज्ञानाची पहिली पायरी आहे. शरीर हे रणांगण आहे आणि मन हा योद्धा आहे. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -547,15 +698,16 @@
       "stats": {
         "original_words": 35,
         "translit_words": 8,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "cca0a8010d024ecc8f638e7f5cef5cb9"
     }
   },
   {
     "id": "bhagavad-gita_1_19",
     "text_slug": "bhagavad-gita",
     "chapter": 1,
-    "verse": "19",
+    "verse": 19,
     "original": "स घोषो धार्तराष्ट्राणां हृदयानि व्यदारयत् ।\nनभश्च पृथिवीं चैव तुमुलोऽभ्यनुनादयन् ॥ १९ ॥",
     "transliteration": "sa ghoṣo dhārtarāṣṭrāṇāṁ\nhṛdayāni vyadārayat\nnabhaś ca pṛthivīṁ caiva\ntumulo ’bhyanunādayan",
     "translation": "The blowing of these different conchshells became uproarious. Vibrating both in the sky and on the earth, it shattered the hearts of the sons of Dhṛtarāṣṭra.",
@@ -608,6 +760,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — अर्जुनाचा विषाद म्हणजे आत्मज्ञानाची पहिली पायरी आहे. शरीर हे रणांगण आहे आणि मन हा योद्धा आहे. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -616,15 +786,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "87ccc32cecebcb4556e9db7a0f411638"
     }
   },
   {
     "id": "bhagavad-gita_1_2",
     "text_slug": "bhagavad-gita",
     "chapter": 1,
-    "verse": "2",
+    "verse": 2,
     "original": "सञ्जय उवाच\nदृष्ट्वा तु पाण्डवानीकं व्यूढं दुर्योधनस्तदा ।\nआचार्यमुपसङ्गम्य राजा वचनमब्रवीत् ॥ २ ॥",
     "transliteration": "sañjaya uvāca\ndṛṣṭvā tu pāṇḍavānīkaṁ\nvyūḍhaṁ duryodhanas tadā\nācāryam upasaṅgamya\nrājā vacanam abravīt",
     "translation": "Sañjaya said: O King, after looking over the army arranged in military formation by the sons of Pāṇḍu, King Duryodhana went to his teacher and spoke the following words.",
@@ -677,6 +848,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: अर्जुनाचा विषाद म्हणजे आत्मज्ञानाची पहिली पायरी आहे. शरीर हे रणांगण आहे आणि मन हा योद्धा आहे. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -685,15 +874,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "a43c6a238d62306cac0fa792abe6bbd8"
     }
   },
   {
     "id": "bhagavad-gita_1_20",
     "text_slug": "bhagavad-gita",
     "chapter": 1,
-    "verse": "20",
+    "verse": 20,
     "original": "अथ व्यवस्थितान्दृष्ट्वा धार्तराष्ट्रान्कपिध्वजः ।\nप्रवृत्ते शस्त्रसम्पाते धनुरुद्यम्य पाण्डवः ।\nहृषीकेशं तदा वाक्यमिदमाह महीपते ॥ २० ॥",
     "transliteration": "atha vyavasthitān dṛṣṭvā\ndhārtarāṣṭrān kapi-dhvajaḥ\npravṛtte śastra-sampāte\ndhanur udyamya pāṇḍavaḥ\nhṛṣīkeśaṁ tadā vākyam\nidam āha mahī-pate",
     "translation": "At that time Arjuna, the son of Pāṇḍu, seated in the chariot bearing the flag marked with Hanumān, took up his bow and prepared to shoot his arrows. O King, after looking at the sons of Dhṛtarāṣṭra drawn in military array, Arjuna then spoke to Lord Kṛṣṇa these words.",
@@ -746,6 +936,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: अर्जुनाचा विषाद म्हणजे आत्मज्ञानाची पहिली पायरी आहे. शरीर हे रणांगण आहे आणि मन हा योद्धा आहे. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -754,15 +962,16 @@
       "stats": {
         "original_words": 16,
         "translit_words": 16,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "86a70ad7e437a134a52a5d1dfd26e91d"
     }
   },
   {
     "id": "bhagavad-gita_1_21-22",
     "text_slug": "bhagavad-gita",
     "chapter": 1,
-    "verse": "21-22",
+    "verse": 21,
     "original": "अर्जुन उवाच\nसेनयोरुभयोर्मध्ये रथं स्थापय मेऽच्युत ।\nयावदेतान्निरीक्षेऽहं योद्‍धुकामानवस्थितान् ॥ २१ ॥\nकैर्मया सह योद्धव्यमस्मिन्‍रणसमुद्यमे ॥ २२ ॥",
     "transliteration": "arjuna uvāca\nsenayor ubhayor madhye\nrathaṁ sthāpaya me ’cyuta\nyāvad etān nirīkṣe ’haṁ\nyoddhu-kāmān avasthitān",
     "translation": "Arjuna said: O infallible one, please draw my chariot between the two armies so that I may see those present here, who desire to fight, and with whom I must contend in this great trial of arms.",
@@ -815,6 +1024,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: अर्जुनाचा विषाद म्हणजे आत्मज्ञानाची पहिली पायरी आहे. शरीर हे रणांगण आहे आणि मन हा योद्धा आहे. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -823,15 +1050,16 @@
       "stats": {
         "original_words": 18,
         "translit_words": 15,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "1345e4d9025e031ecf00541d4f883d41"
     }
   },
   {
     "id": "bhagavad-gita_1_23",
     "text_slug": "bhagavad-gita",
     "chapter": 1,
-    "verse": "23",
+    "verse": 23,
     "original": "योत्स्यमानानवेक्षेऽहं य एतेऽत्र समागताः ।\nधार्तराष्ट्रस्य दुर्बुद्धेर्युद्धे प्रियचिकीर्षवः ॥ २३ ॥",
     "transliteration": "yotsyamānān avekṣe ’haṁ\nya ete ’tra samāgatāḥ\ndhārtarāṣṭrasya durbuddher\nyuddhe priya-cikīrṣavaḥ",
     "translation": "Let me see those who have come here to fight, wishing to please the evil-minded son of Dhṛtarāṣṭra.",
@@ -884,6 +1112,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: अर्जुनाचा विषाद म्हणजे आत्मज्ञानाची पहिली पायरी आहे. शरीर हे रणांगण आहे आणि मन हा योद्धा आहे. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -892,15 +1138,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "78cdd432927ab1cac3445d466b8aa381"
     }
   },
   {
     "id": "bhagavad-gita_1_24",
     "text_slug": "bhagavad-gita",
     "chapter": 1,
-    "verse": "24",
+    "verse": 24,
     "original": "सञ्जय उवाच\nएवमुक्तो हृषीकेशो गुडाकेशेन भारत ।\nसेनयोरुभयोर्मध्ये स्थापयित्वा रथोत्तमम् ॥ २४ ॥",
     "transliteration": "sañjaya uvāca\nevam ukto hṛṣīkeśo\nguḍākeśena bhārata\nsenayor ubhayor madhye\nsthāpayitvā rathottamam",
     "translation": "Sañjaya said: O descendant of Bharata, having thus been addressed by Arjuna, Lord Kṛṣṇa drew up the fine chariot in the midst of the armies of both parties.",
@@ -953,6 +1200,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: अर्जुनाचा विषाद म्हणजे आत्मज्ञानाची पहिली पायरी आहे. शरीर हे रणांगण आहे आणि मन हा योद्धा आहे. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -961,15 +1226,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "ae90cfd439686ba07b4e6b5627ef3b6f"
     }
   },
   {
     "id": "bhagavad-gita_1_25",
     "text_slug": "bhagavad-gita",
     "chapter": 1,
-    "verse": "25",
+    "verse": 25,
     "original": "भीष्मद्रोणप्रमुखतः सर्वेषां च महीक्षिताम्  ।\nउवाच पार्थ पश्यैतान्समवेतान्कुरुनिति ॥ २५ ॥",
     "transliteration": "bhīṣma-droṇa-pramukhataḥ\nsarveṣāṁ ca mahī-kṣitām\nuvāca pārtha paśyaitān\nsamavetān kurūn iti",
     "translation": "In the presence of Bhīṣma, Droṇa and all the other chieftains of the world, the Lord said, “Just behold, Pārtha, all the Kurus assembled here.”",
@@ -1022,6 +1288,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — अर्जुनाचा विषाद म्हणजे आत्मज्ञानाची पहिली पायरी आहे. शरीर हे रणांगण आहे आणि मन हा योद्धा आहे. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1030,15 +1314,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "852e3335916c510e015d731ebf52e222"
     }
   },
   {
     "id": "bhagavad-gita_1_26",
     "text_slug": "bhagavad-gita",
     "chapter": 1,
-    "verse": "26",
+    "verse": 26,
     "original": "तत्रापश्यत्स्थितान्पार्थः पितॄनथ पितामहान्।\nआचार्यान्मातुलान्भ्रातॄन्पुत्रान्पौत्रान्सखींस्तथा।\nश्वश‍ुरान्सुहृदश्चैव सेनयोरुभयोरपि ॥ २६ ॥",
     "transliteration": "tatrāpaśyat sthitān pārthaḥ\npitṝn atha pitāmahān\nācāryān mātulān bhrātṝn\nputrān pautrān sakhīṁs tathā\nśvaśurān suhṛdaś caiva\nsenayor ubhayor api",
     "translation": "There Arjuna could see, within the midst of the armies of both parties, his fathers, grandfathers, teachers, maternal uncles, brothers, sons, grandsons, friends, and also his fathers-in-law and well-wishers.",
@@ -1091,6 +1376,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: अर्जुनाचा विषाद म्हणजे आत्मज्ञानाची पहिली पायरी आहे. शरीर हे रणांगण आहे आणि मन हा योद्धा आहे. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1099,15 +1402,16 @@
       "stats": {
         "original_words": 9,
         "translit_words": 19,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "c53b5ea5a7369e157ea935d32de72cdd"
     }
   },
   {
     "id": "bhagavad-gita_1_27",
     "text_slug": "bhagavad-gita",
     "chapter": 1,
-    "verse": "27",
+    "verse": 27,
     "original": "तान्समीक्ष्य स कौन्तेयः सर्वान्बन्धूनवस्थितान्  ।\nकृपया परयाविष्टो विषीदन्निदमब्रवीत् ॥ २७ ॥",
     "transliteration": "tān samīkṣya sa kaunteyaḥ\nsarvān bandhūn avasthitān\nkṛpayā parayāviṣṭo\nviṣīdann idam abravīt",
     "translation": "When the son of Kuntī, Arjuna, saw all these different grades of friends and relatives, he became overwhelmed with compassion and spoke thus.",
@@ -1160,6 +1464,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: अर्जुनाचा विषाद म्हणजे आत्मज्ञानाची पहिली पायरी आहे. शरीर हे रणांगण आहे आणि मन हा योद्धा आहे. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1168,15 +1490,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "a3249a8aee10ba51ef5c199ce7d1dcea"
     }
   },
   {
     "id": "bhagavad-gita_1_28",
     "text_slug": "bhagavad-gita",
     "chapter": 1,
-    "verse": "28",
+    "verse": 28,
     "original": "अर्जुन उवाच\nदृष्ट्वेमं स्वजनं कृष्ण युयुत्सुं समुपस्थितम्  ।\nसीदन्ति मम गात्राणि मुखं च परिश‍ुष्यति ॥ २८ ॥",
     "transliteration": "arjuna uvāca\ndṛṣṭvemaṁ sva-janaṁ kṛṣṇa\nyuyutsuṁ samupasthitam\nsīdanti mama gātrāṇi\nmukhaṁ ca pariśuṣyati",
     "translation": "Arjuna said: My dear Kṛṣṇa, seeing my friends and relatives present before me in such a fighting spirit, I feel the limbs of my body quivering and my mouth drying up.",
@@ -1229,6 +1552,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: अर्जुनाचा विषाद म्हणजे आत्मज्ञानाची पहिली पायरी आहे. शरीर हे रणांगण आहे आणि मन हा योद्धा आहे. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1237,15 +1578,16 @@
       "stats": {
         "original_words": 17,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "61b551a5a525c66654d8bd936944536d"
     }
   },
   {
     "id": "bhagavad-gita_1_29",
     "text_slug": "bhagavad-gita",
     "chapter": 1,
-    "verse": "29",
+    "verse": 29,
     "original": "वेपथुश्च शरीरे मे रोमहर्षश्च जायते ।\nगाण्डीवं स्रंसते हस्तात्त्वक्च‍ैव परिदह्यते ॥ २९ ॥",
     "transliteration": "vepathuś ca śarīre me\nroma-harṣaś ca jāyate\ngāṇḍīvaṁ sraṁsate hastāt\ntvak caiva paridahyate",
     "translation": "My whole body is trembling, my hair is standing on end, my bow Gāṇḍīva is slipping from my hand, and my skin is burning.",
@@ -1298,6 +1640,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: अर्जुनाचा विषाद म्हणजे आत्मज्ञानाची पहिली पायरी आहे. शरीर हे रणांगण आहे आणि मन हा योद्धा आहे. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1306,15 +1666,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "07bb6689beee305c0378ac4ebb8bc19f"
     }
   },
   {
     "id": "bhagavad-gita_1_3",
     "text_slug": "bhagavad-gita",
     "chapter": 1,
-    "verse": "3",
+    "verse": 3,
     "original": "पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम् ।\nव्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता ॥ ३ ॥",
     "transliteration": "paśyaitāṁ pāṇḍu-putrāṇām\nācārya mahatīṁ camūm\nvyūḍhāṁ drupada-putreṇa\ntava śiṣyeṇa dhīmatā",
     "translation": "O my teacher, behold the great army of the sons of Pāṇḍu, so expertly arranged by your intelligent disciple the son of Drupada.",
@@ -1367,6 +1728,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: अर्जुनाचा विषाद म्हणजे आत्मज्ञानाची पहिली पायरी आहे. शरीर हे रणांगण आहे आणि मन हा योद्धा आहे. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1375,15 +1754,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "b98db4a4a48a071d6fe1e520672170d7"
     }
   },
   {
     "id": "bhagavad-gita_1_30",
     "text_slug": "bhagavad-gita",
     "chapter": 1,
-    "verse": "30",
+    "verse": 30,
     "original": "न च शक्न‍ोम्यवस्थातुं भ्रमतीव च मे मनः ।\nनिमित्तानि च पश्यामि विपरीतानि केशव ॥ ३० ॥",
     "transliteration": "na ca śaknomy avasthātuṁ\nbhramatīva ca me manaḥ\nnimittāni ca paśyāmi\nviparītāni keśava",
     "translation": "I am now unable to stand here any longer. I am forgetting myself, and my mind is reeling. I see only causes of misfortune, O Kṛṣṇa, killer of the Keśī demon.",
@@ -1436,6 +1816,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — अर्जुनाचा विषाद म्हणजे आत्मज्ञानाची पहिली पायरी आहे. शरीर हे रणांगण आहे आणि मन हा योद्धा आहे. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1444,15 +1842,16 @@
       "stats": {
         "original_words": 16,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "531bdb27c750ed75a9f1f44fd61647c6"
     }
   },
   {
     "id": "bhagavad-gita_1_31",
     "text_slug": "bhagavad-gita",
     "chapter": 1,
-    "verse": "31",
+    "verse": 31,
     "original": "न च श्रेयोऽनुपश्यामि हत्वा स्वजनमाहवे ।\nन काङ्क्षे विजयं कृष्ण न च राज्यं सुखानि च ॥ ३१ ॥",
     "transliteration": "na ca śreyo ’nupaśyāmi\nhatvā sva-janam āhave\nna kāṅkṣe vijayaṁ kṛṣṇa\nna ca rājyaṁ sukhāni ca",
     "translation": "I do not see how any good can come from killing my own kinsmen in this battle, nor can I, my dear Kṛṣṇa, desire any subsequent victory, kingdom or happiness.",
@@ -1505,6 +1904,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: अर्जुनाचा विषाद म्हणजे आत्मज्ञानाची पहिली पायरी आहे. शरीर हे रणांगण आहे आणि मन हा योद्धा आहे. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1513,15 +1930,16 @@
       "stats": {
         "original_words": 18,
         "translit_words": 16,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "22edcb9a8dbf5aa78a3483df9673262d"
     }
   },
   {
     "id": "bhagavad-gita_1_32-35",
     "text_slug": "bhagavad-gita",
     "chapter": 1,
-    "verse": "32-35",
+    "verse": 32,
     "original": "किं नो राज्येन गोविन्द किं भोगैर्जीवितेन वा ।\nयेषामर्थे काङ्‍‍क्षितं नो राज्यं भोगाः सुखानि च ॥ ३२ ॥\nत इमेऽवस्थिता युद्धे प्राणांस्त्यक्त्वा धनानि च ।\nआचार्याः पितरः पुत्रास्तथैव च पितामहाः ॥ ३3 ॥\nमातुलाः श्वश‍ुराः पौत्राः श्यालाः सम्बन्धिनस्तथा ।\nएतान्न हन्तुमिच्छामि घ्न‍तोऽपि मधुसूदन ॥ ३४ ॥\nअपि त्रैलोक्यराज्यस्य हेतोः किं नु महीकृते ।\nनिहत्य धार्तराष्ट्रान्नः का प्रीतिः स्याज्ज‍नार्दन ॥ ३५ ॥",
     "transliteration": "kiṁ no rājyena govinda\nkiṁ bhogair jīvitena vā\nyeṣām arthe kāṅkṣitaṁ no\nrājyaṁ bhogāḥ sukhāni ca",
     "translation": "O Govinda, of what avail to us are a kingdom, happiness or even life itself when all those for whom we may desire them are now arrayed on this battlefield? O Madhusūdana, when teachers, fathers, sons, grandfathers, maternal uncles, fathers-in-law, grandsons, brothers-in-law and other relatives are ready to give up their lives and properties and are standing before me, why should I wish to kill them, even though they might otherwise kill me? O maintainer of all living entities, I am not prepared to fight with them even in exchange for the three worlds, let alone this earth. What pleasure will we derive from killing the sons of Dhṛtarāṣṭra?",
@@ -1574,6 +1992,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: अर्जुनाचा विषाद म्हणजे आत्मज्ञानाची पहिली पायरी आहे. शरीर हे रणांगण आहे आणि मन हा योद्धा आहे. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1582,15 +2018,16 @@
       "stats": {
         "original_words": 61,
         "translit_words": 16,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "b0404a64bca2318160e7e3dacfaac119"
     }
   },
   {
     "id": "bhagavad-gita_1_36",
     "text_slug": "bhagavad-gita",
     "chapter": 1,
-    "verse": "36",
+    "verse": 36,
     "original": "पापमेवाश्रयेदस्मान्हत्वैतानाततायिनः ।\nतस्मान्नार्हा वयं हन्तुं धार्तराष्ट्रान्सबान्धवान् ।\nस्वजनं हि कथं हत्वा सुखिनः स्याम माधव ॥ ३६ ॥",
     "transliteration": "pāpam evāśrayed asmān\nhatvaitān ātatāyinaḥ\ntasmān nārhā vayaṁ hantuṁ\ndhārtarāṣṭrān sa-bāndhavān\nsva-janaṁ hi kathaṁ hatvā\nsukhinaḥ syāma mādhava",
     "translation": "Sin will overcome us if we slay such aggressors. Therefore it is not proper for us to kill the sons of Dhṛtarāṣṭra and our friends. What should we gain, O Kṛṣṇa, husband of the goddess of fortune, and how could we be happy by killing our own kinsmen?",
@@ -1643,6 +2080,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: अर्जुनाचा विषाद म्हणजे आत्मज्ञानाची पहिली पायरी आहे. शरीर हे रणांगण आहे आणि मन हा योद्धा आहे. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1651,15 +2106,16 @@
       "stats": {
         "original_words": 17,
         "translit_words": 18,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "d27893c1738ee0a03416517fcee83136"
     }
   },
   {
     "id": "bhagavad-gita_1_37-38",
     "text_slug": "bhagavad-gita",
     "chapter": 1,
-    "verse": "37-38",
+    "verse": 37,
     "original": "यद्यप्येते न पश्यन्ति लोभोपहतचेतसः ।\nकुलक्षयकृतं दोषं मित्रद्रोहे च पातकम् ॥ ३७ ॥\nकथं न ज्ञेयमस्माभिः पापादस्मन्निवर्तितुम् ।\nकुलक्षयकृतं दोषं प्रपश्यद्भ‍िर्जनार्दन ॥ ३८ ॥",
     "transliteration": "yady apy ete na paśyanti\nlobhopahata-cetasaḥ\nkula-kṣaya-kṛtaṁ doṣaṁ\nmitra-drohe ca pātakam",
     "translation": "O Janārdana, although these men, their hearts overtaken by greed, see no fault in killing one’s family or quarreling with friends, why should we, who can see the crime in destroying a family, engage in these acts of sin?",
@@ -1712,6 +2168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: अर्जुनाचा विषाद म्हणजे आत्मज्ञानाची पहिली पायरी आहे. शरीर हे रणांगण आहे आणि मन हा योद्धा आहे. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1720,15 +2194,16 @@
       "stats": {
         "original_words": 24,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "cb4157ce23e74586935fd54973ddfd44"
     }
   },
   {
     "id": "bhagavad-gita_1_39",
     "text_slug": "bhagavad-gita",
     "chapter": 1,
-    "verse": "39",
+    "verse": 39,
     "original": "कुलक्षये प्रणश्यन्ति कुलधर्माः सनातनाः ।\nधर्मे नष्टे कुलं कृत्स्नमधर्मोऽभिभवत्युत ॥ ३९ ॥",
     "transliteration": "kula-kṣaye praṇaśyanti\nkula-dharmāḥ sanātanāḥ\ndharme naṣṭe kulaṁ kṛtsnam\nadharmo ’bhibhavaty uta",
     "translation": "With the destruction of the dynasty, the eternal family tradition is vanquished, and thus the rest of the family becomes involved in irreligion.",
@@ -1781,6 +2256,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: अर्जुनाचा विषाद म्हणजे आत्मज्ञानाची पहिली पायरी आहे. शरीर हे रणांगण आहे आणि मन हा योद्धा आहे. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1789,15 +2282,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "e47c73e6780a43c47fc89d8483f93d02"
     }
   },
   {
     "id": "bhagavad-gita_1_4",
     "text_slug": "bhagavad-gita",
     "chapter": 1,
-    "verse": "4",
+    "verse": 4,
     "original": "अत्र श‍ूरा महेष्वासा भीमार्जुनसमा युधि ।\nयुयुधानो विराटश्च द्रुपदश्च महारथः ॥ ४ ॥",
     "transliteration": "atra śūrā maheṣv-āsā\nbhīmārjuna-samā yudhi\nyuyudhāno virāṭaś ca\ndrupadaś ca mahā-rathaḥ",
     "translation": "Here in this army are many heroic bowmen equal in fighting to Bhīma and Arjuna: great fighters like Yuyudhāna, Virāṭa and Drupada.",
@@ -1850,6 +2344,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — अर्जुनाचा विषाद म्हणजे आत्मज्ञानाची पहिली पायरी आहे. शरीर हे रणांगण आहे आणि मन हा योद्धा आहे. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1858,15 +2370,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "c6e77e3612a60af6abacd8abcdf623b5"
     }
   },
   {
     "id": "bhagavad-gita_1_40",
     "text_slug": "bhagavad-gita",
     "chapter": 1,
-    "verse": "40",
+    "verse": 40,
     "original": "अधर्माभिभवात्कृष्ण प्रदुष्यन्ति कुलस्त्रियः ।\nस्त्रीषु दुष्टासु वार्ष्णेय जायते वर्णसङ्करः ॥ ४० ॥",
     "transliteration": "adharmābhibhavāt kṛṣṇa\npraduṣyanti kula-striyaḥ\nstrīṣu duṣṭāsu vārṣṇeya\njāyate varṇa-saṅkaraḥ",
     "translation": "When irreligion is prominent in the family, O Kṛṣṇa, the women of the family become polluted, and from the degradation of womanhood, O descendant of Vṛṣṇi, comes unwanted progeny.",
@@ -1919,6 +2432,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: अर्जुनाचा विषाद म्हणजे आत्मज्ञानाची पहिली पायरी आहे. शरीर हे रणांगण आहे आणि मन हा योद्धा आहे. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1927,15 +2458,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 9,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "be492d3ca1c9c452178b0f6eac4195a2"
     }
   },
   {
     "id": "bhagavad-gita_1_41",
     "text_slug": "bhagavad-gita",
     "chapter": 1,
-    "verse": "41",
+    "verse": 41,
     "original": "सङ्करो नरकायैव कुलघ्न‍ानां कुलस्य च ।\nपतन्ति पितरो ह्येषां लुप्तपिण्डोदकक्रियाः ॥ ४१ ॥",
     "transliteration": "saṅkaro narakāyaiva\nkula-ghnānāṁ kulasya ca\npatanti pitaro hy eṣāṁ\nlupta-piṇḍodaka-kriyāḥ",
     "translation": "An increase of unwanted population certainly causes hellish life both for the family and for those who destroy the family tradition. The ancestors of such corrupt families fall down, because the performances for offering them food and water are entirely stopped.",
@@ -1988,6 +2520,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: अर्जुनाचा विषाद म्हणजे आत्मज्ञानाची पहिली पायरी आहे. शरीर हे रणांगण आहे आणि मन हा योद्धा आहे. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1996,15 +2546,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "59820fa83c9a7d71e3e108238ccd1d28"
     }
   },
   {
     "id": "bhagavad-gita_1_42",
     "text_slug": "bhagavad-gita",
     "chapter": 1,
-    "verse": "42",
+    "verse": 42,
     "original": "दोषैरेतैः कुलघ्न‍ानां वर्णसङ्करकारकैः ।\nउत्साद्यन्ते जातिधर्माः कुलधर्माश्च शाश्वताः ॥ ४२ ॥",
     "transliteration": "doṣair etaiḥ kula-ghnānāṁ\nvarṇa-saṅkara-kārakaiḥ\nutsādyante jāti-dharmāḥ\nkula-dharmāś ca śāśvatāḥ",
     "translation": "By the evil deeds of those who destroy the family tradition and thus give rise to unwanted children, all kinds of community projects and family welfare activities are devastated.",
@@ -2057,6 +2608,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: अर्जुनाचा विषाद म्हणजे आत्मज्ञानाची पहिली पायरी आहे. शरीर हे रणांगण आहे आणि मन हा योद्धा आहे. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2065,15 +2634,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 9,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "e105f8c5ab236ff6295644b4682103d7"
     }
   },
   {
     "id": "bhagavad-gita_1_43",
     "text_slug": "bhagavad-gita",
     "chapter": 1,
-    "verse": "43",
+    "verse": 43,
     "original": "उत्सन्नकुलधर्माणां मनुष्याणां जनार्दन ।\nनरके नियतं वासो भवतीत्यनुश‍ुश्रुम ॥ ४३ ॥",
     "transliteration": "utsanna-kula-dharmāṇāṁ\nmanuṣyāṇāṁ janārdana\nnarake niyataṁ vāso\nbhavatīty anuśuśruma",
     "translation": "O Kṛṣṇa, maintainer of the people, I have heard by disciplic succession that those whose family traditions are destroyed dwell always in hell.",
@@ -2126,6 +2696,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: अर्जुनाचा विषाद म्हणजे आत्मज्ञानाची पहिली पायरी आहे. शरीर हे रणांगण आहे आणि मन हा योद्धा आहे. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2134,15 +2722,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 8,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "0c7328d069d0c7ff291e2f0bae1b14e3"
     }
   },
   {
     "id": "bhagavad-gita_1_44",
     "text_slug": "bhagavad-gita",
     "chapter": 1,
-    "verse": "44",
+    "verse": 44,
     "original": "अहो बत महत्पापं कर्तुं व्यवसिता वयम् ।\nयद्राज्यसुखलोभेन हन्तुं स्वजनमुद्यताः ॥ ४४ ॥",
     "transliteration": "aho bata mahat pāpaṁ\nkartuṁ vyavasitā vayam\nyad rājya-sukha-lobhena\nhantuṁ sva-janam udyatāḥ",
     "translation": "Alas, how strange it is that we are preparing to commit greatly sinful acts. Driven by the desire to enjoy royal happiness, we are intent on killing our own kinsmen.",
@@ -2195,6 +2784,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: अर्जुनाचा विषाद म्हणजे आत्मज्ञानाची पहिली पायरी आहे. शरीर हे रणांगण आहे आणि मन हा योद्धा आहे. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2203,15 +2810,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "e6bbd1f57b10a272c0f39a5aaefde14c"
     }
   },
   {
     "id": "bhagavad-gita_1_45",
     "text_slug": "bhagavad-gita",
     "chapter": 1,
-    "verse": "45",
+    "verse": 45,
     "original": "यदि मामप्रतीकारमशस्त्रं शस्त्रपाणयः ।\nधार्तराष्ट्रा रणे हन्युस्तन्मे क्षेमतरं भवेत् ॥ ४५ ॥",
     "transliteration": "yadi mām apratīkāram\naśastraṁ śastra-pāṇayaḥ\ndhārtarāṣṭrā raṇe hanyus\ntan me kṣema-taraṁ bhavet",
     "translation": "Better for me if the sons of Dhṛtarāṣṭra, weapons in hand, were to kill me unarmed and unresisting on the battlefield.",
@@ -2264,6 +2872,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — अर्जुनाचा विषाद म्हणजे आत्मज्ञानाची पहिली पायरी आहे. शरीर हे रणांगण आहे आणि मन हा योद्धा आहे. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2272,15 +2898,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "2591b4ca96cc136ad991f230901b273d"
     }
   },
   {
     "id": "bhagavad-gita_1_46",
     "text_slug": "bhagavad-gita",
     "chapter": 1,
-    "verse": "46",
+    "verse": 46,
     "original": "सञ्जय उवाच\nएवमुक्त्वार्जुनः संख्ये रथोपस्थ उपाविशत् ।\nविसृज्य सशरं चापं शोकसंविग्न‍मानसः ॥ ४६ ॥",
     "transliteration": "sañjaya uvāca\nevam uktvārjunaḥ saṅkhye\nrathopastha upāviśat\nvisṛjya sa-śaraṁ cāpaṁ\nśoka-saṁvigna-mānasaḥ",
     "translation": "Sañjaya said: Arjuna, having thus spoken on the battlefield, cast aside his bow and arrows and sat down on the chariot, his mind overwhelmed with grief.",
@@ -2333,6 +2960,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: अर्जुनाचा विषाद म्हणजे आत्मज्ञानाची पहिली पायरी आहे. शरीर हे रणांगण आहे आणि मन हा योद्धा आहे. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2341,15 +2986,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "1f841688f2fec1a0718b1046ea06ef12"
     }
   },
   {
     "id": "bhagavad-gita_1_5",
     "text_slug": "bhagavad-gita",
     "chapter": 1,
-    "verse": "5",
+    "verse": 5,
     "original": "धृष्टकेतुश्चेकितानः काशिराजश्च वीर्यवान् ।\nपुरुजित्कुन्तिभोजश्च शैब्यश्च नरपुङ्गवः ॥ ५ ॥",
     "transliteration": "dhṛṣṭaketuś cekitānaḥ\nkāśirājaś ca vīryavān\npurujit kuntibhojaś ca\nśaibyaś ca nara-puṅgavaḥ",
     "translation": "There are also great heroic, powerful fighters like Dhṛṣṭaketu, Cekitāna, Kāśirāja, Purujit, Kuntibhoja and Śaibya.",
@@ -2402,6 +3048,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: अर्जुनाचा विषाद म्हणजे आत्मज्ञानाची पहिली पायरी आहे. शरीर हे रणांगण आहे आणि मन हा योद्धा आहे. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2410,15 +3074,16 @@
       "stats": {
         "original_words": 10,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "610f1f96536236502bf5f0fdd8bad11f"
     }
   },
   {
     "id": "bhagavad-gita_1_6",
     "text_slug": "bhagavad-gita",
     "chapter": 1,
-    "verse": "6",
+    "verse": 6,
     "original": "युधामन्युश्च विक्रान्त उत्तमौजाश्च वीर्यवान् ।\nसौभद्रो द्रौपदेयाश्च सर्व एव महारथाः ॥ ६ ॥",
     "transliteration": "yudhāmanyuś ca vikrānta\nuttamaujāś ca vīryavān\nsaubhadro draupadeyāś ca\nsarva eva mahā-rathāḥ",
     "translation": "There are the mighty Yudhāmanyu, the very powerful Uttamaujā, the son of Subhadrā and the sons of Draupadī. All these warriors are great chariot fighters.",
@@ -2471,6 +3136,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: अर्जुनाचा विषाद म्हणजे आत्मज्ञानाची पहिली पायरी आहे. शरीर हे रणांगण आहे आणि मन हा योद्धा आहे. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2479,15 +3162,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "30024912067f654062fe4b4f207e565b"
     }
   },
   {
     "id": "bhagavad-gita_1_7",
     "text_slug": "bhagavad-gita",
     "chapter": 1,
-    "verse": "7",
+    "verse": 7,
     "original": "अस्माकं तु विशिष्टा ये तान्निबोध द्विजोत्तम ।\nनायका मम सैन्यस्य संज्ञार्थ तान्ब्रवीमि ते ॥ ७ ॥",
     "transliteration": "asmākaṁ tu viśiṣṭā ye\ntān nibodha dvijottama\nnāyakā mama sainyasya\nsaṁjñārthaṁ tān bravīmi te",
     "translation": "But for your information, O best of the brāhmaṇas, let me tell you about the captains who are especially qualified to lead my military force.",
@@ -2540,6 +3224,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: अर्जुनाचा विषाद म्हणजे आत्मज्ञानाची पहिली पायरी आहे. शरीर हे रणांगण आहे आणि मन हा योद्धा आहे. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2548,15 +3250,16 @@
       "stats": {
         "original_words": 16,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "86718fa9a891087415bb7401c6181df1"
     }
   },
   {
     "id": "bhagavad-gita_1_8",
     "text_slug": "bhagavad-gita",
     "chapter": 1,
-    "verse": "8",
+    "verse": 8,
     "original": "भवान्भीष्मश्च कर्णश्च कृपश्च समितिंजयः ।\nअश्वत्थामा विकर्णश्च सौमदत्तिस्तथैव च ॥ ८ ॥",
     "transliteration": "bhavān bhīṣmaś ca karṇaś ca\nkṛpaś ca samitiṁ-jayaḥ\naśvatthāmā vikarṇaś ca\nsaumadattis tathaiva ca",
     "translation": "There are personalities like you, Bhīṣma, Karṇa, Kṛpa, Aśvatthāmā, Vikarṇa and the son of Somadatta called Bhūriśravā, who are always victorious in battle.",
@@ -2609,6 +3312,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: अर्जुनाचा विषाद म्हणजे आत्मज्ञानाची पहिली पायरी आहे. शरीर हे रणांगण आहे आणि मन हा योद्धा आहे. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2617,15 +3338,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "6a770c64eb7932149cfd3794dda23688"
     }
   },
   {
     "id": "bhagavad-gita_1_9",
     "text_slug": "bhagavad-gita",
     "chapter": 1,
-    "verse": "9",
+    "verse": 9,
     "original": "अन्ये च बहवः श‍ूरा मदर्थे त्यक्तजीविताः ।\nनानाशस्त्रप्रहरणाः सर्वे युद्धविशारदाः ॥ ९ ॥",
     "transliteration": "anye ca bahavaḥ śūrā\nmad-arthe tyakta-jīvitāḥ\nnānā-śastra-praharaṇāḥ\nsarve yuddha-viśāradāḥ",
     "translation": "There are many other heroes who are prepared to lay down their lives for my sake. All of them are well equipped with different kinds of weapons, and all are experienced in military science.",
@@ -2678,6 +3400,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — अर्जुनाचा विषाद म्हणजे आत्मज्ञानाची पहिली पायरी आहे. शरीर हे रणांगण आहे आणि मन हा योद्धा आहे. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2686,8 +3426,9 @@
       "stats": {
         "original_words": 13,
         "translit_words": 9,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "b9d3e55b98b4dbeb4bbcde4299d67001"
     }
   }
 ]

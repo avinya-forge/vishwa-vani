@@ -3,7 +3,7 @@
     "id": "bhagavad-gita_4_1",
     "text_slug": "bhagavad-gita",
     "chapter": 4,
-    "verse": "1",
+    "verse": 1,
     "original": "श्रीभगवानुवाच\nइमं विवस्वते योगं प्रोक्तवानहमव्ययम् ।\nविवस्वान्मनवे प्राह मनुरिक्ष्वाकवेऽब्रवीत् ॥ १ ॥",
     "transliteration": "śrī-bhagavān uvāca\nimaṁ vivasvate yogaṁ\nproktavān aham avyayam\nvivasvān manave prāha\nmanur ikṣvākave ’bravīt",
     "translation": "The Personality of Godhead, Lord Śrī Kṛṣṇa, said: I instructed this imperishable science of yoga to the sun-god, Vivasvān, and Vivasvān instructed it to Manu, the father of mankind, and Manu in turn instructed it to Ikṣvāku.",
@@ -68,6 +68,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: ज्ञानाचा अग्नि सर्व कर्मांना भस्म करतो. भगवंत जेव्हा धर्माचे संरक्षण करण्यासाठी अवतरतात, तेव्हा ते कृपेने येतात. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -76,15 +94,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "bb2fea76abc31b4777148832ffa17f45"
     }
   },
   {
     "id": "bhagavad-gita_4_10",
     "text_slug": "bhagavad-gita",
     "chapter": 4,
-    "verse": "10",
+    "verse": 10,
     "original": "वीतरागभयक्रोधा मन्मया मामुपाश्रिताः ।\nबहवो ज्ञानतपसा पूता मद्भ‍ावमागताः ॥ १० ॥",
     "transliteration": "vīta-rāga-bhaya-krodhā\nman-mayā mām upāśritāḥ\nbahavo jñāna-tapasā\npūtā mad-bhāvam āgatāḥ",
     "translation": "Being freed from attachment, fear and anger, being fully absorbed in Me and taking refuge in Me, many, many persons in the past became purified by knowledge of Me – and thus they all attained transcendental love for Me.",
@@ -149,6 +168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: ज्ञानाचा अग्नि सर्व कर्मांना भस्म करतो. भगवंत जेव्हा धर्माचे संरक्षण करण्यासाठी अवतरतात, तेव्हा ते कृपेने येतात. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -157,15 +194,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 9,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "cfcf3b592022533635860e15e2107989"
     }
   },
   {
     "id": "bhagavad-gita_4_11",
     "text_slug": "bhagavad-gita",
     "chapter": 4,
-    "verse": "11",
+    "verse": 11,
     "original": "ये यथा मां प्रपद्यन्ते तांस्तथैव भजाम्यहम् ।\nमम वर्त्मानुवर्तन्ते मनुष्याः पार्थ सर्वशः ॥ ११ ॥",
     "transliteration": "ye yathā māṁ prapadyante\ntāṁs tathaiva bhajāmy aham\nmama vartmānuvartante\nmanuṣyāḥ pārtha sarvaśaḥ",
     "translation": "As all surrender unto Me, I reward them accordingly. Everyone follows My path in all respects, O son of Pṛthā.",
@@ -230,6 +268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — ज्ञानाचा अग्नि सर्व कर्मांना भस्म करतो. भगवंत जेव्हा धर्माचे संरक्षण करण्यासाठी अवतरतात, तेव्हा ते कृपेने येतात. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -238,15 +294,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "7499a89dbcf5045b00d19c811bb79e16"
     }
   },
   {
     "id": "bhagavad-gita_4_12",
     "text_slug": "bhagavad-gita",
     "chapter": 4,
-    "verse": "12",
+    "verse": 12,
     "original": "काङ्क्षन्तः कर्मणां सिद्धिं यजन्त इह देवता ।\nक्षिप्रं हि मानुषे लोके सिद्धिर्भवति कर्मजा ॥ १२ ॥",
     "transliteration": "kāṅkṣantaḥ karmaṇāṁ siddhiṁ\nyajanta iha devatāḥ\nkṣipraṁ hi mānuṣe loke\nsiddhir bhavati karma-jā",
     "translation": "Men in this world desire success in fruitive activities, and therefore they worship the demigods. Quickly, of course, men get results from fruitive work in this world.",
@@ -311,6 +368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: ज्ञानाचा अग्नि सर्व कर्मांना भस्म करतो. भगवंत जेव्हा धर्माचे संरक्षण करण्यासाठी अवतरतात, तेव्हा ते कृपेने येतात. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -319,15 +394,16 @@
       "stats": {
         "original_words": 16,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "7e89645e8ad3e73d85424cc47e24a4c1"
     }
   },
   {
     "id": "bhagavad-gita_4_13",
     "text_slug": "bhagavad-gita",
     "chapter": 4,
-    "verse": "13",
+    "verse": 13,
     "original": "चातुर्वर्ण्यं मया सृष्टं गुणकर्मविभागशः ।\nतस्य कर्तारमपि मां विद्ध्यकर्तारमव्ययम् ॥ १३ ॥",
     "transliteration": "cātur-varṇyaṁ mayā sṛṣṭaṁ\nguṇa-karma-vibhāgaśaḥ\ntasya kartāram api māṁ\nviddhy akartāram avyayam",
     "translation": "According to the three modes of material nature and the work associated with them, the four divisions of human society are created by Me. And although I am the creator of this system, you should know that I am yet the nondoer, being unchangeable.",
@@ -392,6 +468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: ज्ञानाचा अग्नि सर्व कर्मांना भस्म करतो. भगवंत जेव्हा धर्माचे संरक्षण करण्यासाठी अवतरतात, तेव्हा ते कृपेने येतात. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -400,15 +494,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "cb7121aca61c226ea1ebc0fea4c34ed1"
     }
   },
   {
     "id": "bhagavad-gita_4_14",
     "text_slug": "bhagavad-gita",
     "chapter": 4,
-    "verse": "14",
+    "verse": 14,
     "original": "न मां कर्माणि लिम्पन्ति न मे कर्मफले स्पृहा ।\nइति मां योऽभिजानाति कर्मभिर्न स बध्यते ॥ १४ ॥",
     "transliteration": "na māṁ karmāṇi limpanti\nna me karma-phale spṛhā\niti māṁ yo ’bhijānāti\nkarmabhir na sa badhyate",
     "translation": "There is no work that affects Me; nor do I aspire for the fruits of action. One who understands this truth about Me also does not become entangled in the fruitive reactions of work.",
@@ -473,6 +568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: ज्ञानाचा अग्नि सर्व कर्मांना भस्म करतो. भगवंत जेव्हा धर्माचे संरक्षण करण्यासाठी अवतरतात, तेव्हा ते कृपेने येतात. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -481,15 +594,16 @@
       "stats": {
         "original_words": 18,
         "translit_words": 16,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "0a2324ff2c86f9eeb55f995f4172c794"
     }
   },
   {
     "id": "bhagavad-gita_4_15",
     "text_slug": "bhagavad-gita",
     "chapter": 4,
-    "verse": "15",
+    "verse": 15,
     "original": "एवं ज्ञात्वा कृतं कर्म पूर्वैरपि मुमुक्षुभिः ।\nकुरु कर्मैव तस्मात्त्वं पूर्वैः पूर्वतरं कृतम् ॥ १५ ॥",
     "transliteration": "evaṁ jñātvā kṛtaṁ karma\npūrvair api mumukṣubhiḥ\nkuru karmaiva tasmāt tvaṁ\npūrvaiḥ pūrva-taraṁ kṛtam",
     "translation": "All the liberated souls in ancient times acted with this understanding of My transcendental nature. Therefore you should perform your duty, following in their footsteps.",
@@ -554,6 +668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: ज्ञानाचा अग्नि सर्व कर्मांना भस्म करतो. भगवंत जेव्हा धर्माचे संरक्षण करण्यासाठी अवतरतात, तेव्हा ते कृपेने येतात. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -562,15 +694,16 @@
       "stats": {
         "original_words": 16,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "8d8e21f5ff38efd1798885c8d3be62b3"
     }
   },
   {
     "id": "bhagavad-gita_4_16",
     "text_slug": "bhagavad-gita",
     "chapter": 4,
-    "verse": "16",
+    "verse": 16,
     "original": "किं कर्म किमकर्मेति कवयोऽप्यत्र मोहिताः ।\nतत्ते कर्म प्रवक्ष्यामि यज्ज्ञात्वा मोक्ष्यसेऽश‍ुभात् ॥ १६ ॥",
     "transliteration": "kiṁ karma kim akarmeti\nkavayo ’py atra mohitāḥ\ntat te karma pravakṣyāmi\nyaj jñātvā mokṣyase ’śubhāt",
     "translation": "Even the intelligent are bewildered in determining what is action and what is inaction. Now I shall explain to you what action is, knowing which you shall be liberated from all misfortune.",
@@ -635,6 +768,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: ज्ञानाचा अग्नि सर्व कर्मांना भस्म करतो. भगवंत जेव्हा धर्माचे संरक्षण करण्यासाठी अवतरतात, तेव्हा ते कृपेने येतात. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -643,15 +794,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 16,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "2e35ab9e457196abfd0736951d2a6640"
     }
   },
   {
     "id": "bhagavad-gita_4_17",
     "text_slug": "bhagavad-gita",
     "chapter": 4,
-    "verse": "17",
+    "verse": 17,
     "original": "कर्मणो ह्यपि बोद्धव्यं बोद्धव्यं च विकर्मणः ।\nअकर्मणश्च बोद्धव्यं गहना कर्मणो गतिः ॥ १७ ॥",
     "transliteration": "karmaṇo hy api boddhavyaṁ\nboddhavyaṁ ca vikarmaṇaḥ\nakarmaṇaś ca boddhavyaṁ\ngahanā karmaṇo gatiḥ",
     "translation": "The intricacies of action are very hard to understand. Therefore one should know properly what action is, what forbidden action is and what inaction is.",
@@ -716,6 +868,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — ज्ञानाचा अग्नि सर्व कर्मांना भस्म करतो. भगवंत जेव्हा धर्माचे संरक्षण करण्यासाठी अवतरतात, तेव्हा ते कृपेने येतात. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -724,15 +894,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "e93db0815d315fadec8b02c7f64a9df8"
     }
   },
   {
     "id": "bhagavad-gita_4_18",
     "text_slug": "bhagavad-gita",
     "chapter": 4,
-    "verse": "18",
+    "verse": 18,
     "original": "कर्मण्यकर्म यः पश्येदकर्मणि च कर्म यः ।\nस बुद्धिमान्मनुष्येषु स युक्तः कृत्स्नकर्मकृत् ॥ १८ ॥",
     "transliteration": "karmaṇy akarma yaḥ paśyed\nakarmaṇi ca karma yaḥ\nsa buddhimān manuṣyeṣu\nsa yuktaḥ kṛtsna-karma-kṛt",
     "translation": "One who sees inaction in action and action in inaction is intelligent among men, and he is in the transcendental position, although engaged in all sorts of activities.",
@@ -797,6 +968,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: ज्ञानाचा अग्नि सर्व कर्मांना भस्म करतो. भगवंत जेव्हा धर्माचे संरक्षण करण्यासाठी अवतरतात, तेव्हा ते कृपेने येतात. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -805,15 +994,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "18553cceba76e20012abd77d1c71b951"
     }
   },
   {
     "id": "bhagavad-gita_4_19",
     "text_slug": "bhagavad-gita",
     "chapter": 4,
-    "verse": "19",
+    "verse": 19,
     "original": "यस्य सर्वे समारम्भाः कामसंकल्पवर्जिताः ।\nज्ञानाग्निदग्धकर्माणं तमाहुः पण्डितं बुधाः ॥ १९ ॥",
     "transliteration": "yasya sarve samārambhāḥ\nkāma-saṅkalpa-varjitāḥ\njñānāgni-dagdha-karmāṇaṁ\ntam āhuḥ paṇḍitaṁ budhāḥ",
     "translation": "One is understood to be in full knowledge whose every endeavor is devoid of desire for sense gratification. He is said by sages to be a worker for whom the reactions of work have been burned up by the fire of perfect knowledge.",
@@ -878,6 +1068,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: ज्ञानाचा अग्नि सर्व कर्मांना भस्म करतो. भगवंत जेव्हा धर्माचे संरक्षण करण्यासाठी अवतरतात, तेव्हा ते कृपेने येतात. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -886,15 +1094,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 9,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "34b73b308600fcc39bc97872a2830695"
     }
   },
   {
     "id": "bhagavad-gita_4_2",
     "text_slug": "bhagavad-gita",
     "chapter": 4,
-    "verse": "2",
+    "verse": 2,
     "original": "एवं परम्पराप्राप्तमिमं राजर्षयो विदुः ।\nस कालेनेह महता योगे नष्टः परन्तप ॥ २ ॥",
     "transliteration": "evaṁ paramparā-prāptam\nimaṁ rājarṣayo viduḥ\nsa kāleneha mahatā\nyogo naṣṭaḥ paran-tapa",
     "translation": "This supreme science was thus received through the chain of disciplic succession, and the saintly kings understood it in that way. But in course of time the succession was broken, and therefore the science as it is appears to be lost.",
@@ -959,6 +1168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: ज्ञानाचा अग्नि सर्व कर्मांना भस्म करतो. भगवंत जेव्हा धर्माचे संरक्षण करण्यासाठी अवतरतात, तेव्हा ते कृपेने येतात. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -967,15 +1194,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "6c6fc3284e7fed097fc6e7cb92f5a4dd"
     }
   },
   {
     "id": "bhagavad-gita_4_20",
     "text_slug": "bhagavad-gita",
     "chapter": 4,
-    "verse": "20",
+    "verse": 20,
     "original": "त्यक्त्वा कर्मफलासङ्गं नित्यतृप्तो निराश्रयः ।\nकर्मण्यभिप्रवृत्तोऽपि नैव किञ्चित्करोति सः ॥ २० ॥",
     "transliteration": "tyaktvā karma-phalāsaṅgaṁ\nnitya-tṛpto nirāśrayaḥ\nkarmaṇy abhipravṛtto ’pi\nnaiva kiñcit karoti saḥ",
     "translation": "Abandoning all attachment to the results of his activities, ever satisfied and independent, he performs no fruitive action, although engaged in all kinds of undertakings.",
@@ -1040,6 +1268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: ज्ञानाचा अग्नि सर्व कर्मांना भस्म करतो. भगवंत जेव्हा धर्माचे संरक्षण करण्यासाठी अवतरतात, तेव्हा ते कृपेने येतात. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1048,15 +1294,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "5ca7941162e2635dfb8d16fc0d5d92d3"
     }
   },
   {
     "id": "bhagavad-gita_4_21",
     "text_slug": "bhagavad-gita",
     "chapter": 4,
-    "verse": "21",
+    "verse": 21,
     "original": "निराशीर्यतचित्तात्मा त्यक्तसर्वपरिग्रहः ।\nशारीरं केवलं कर्म कुर्वन्नाप्‍नोति किल्बिषम् ॥ २१ ॥",
     "transliteration": "nirāśīr yata-cittātmā\ntyakta-sarva-parigrahaḥ\nśārīraṁ kevalaṁ karma\nkurvan nāpnoti kilbiṣam",
     "translation": "Such a man of understanding acts with mind and intelligence perfectly controlled, gives up all sense of proprietorship over his possessions and acts only for the bare necessities of life. Thus working, he is not affected by sinful reactions.",
@@ -1121,6 +1368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: ज्ञानाचा अग्नि सर्व कर्मांना भस्म करतो. भगवंत जेव्हा धर्माचे संरक्षण करण्यासाठी अवतरतात, तेव्हा ते कृपेने येतात. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1129,15 +1394,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 9,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "c9afc27b81dbf53811b9c6ec9d34bb8c"
     }
   },
   {
     "id": "bhagavad-gita_4_22",
     "text_slug": "bhagavad-gita",
     "chapter": 4,
-    "verse": "22",
+    "verse": 22,
     "original": "यदृच्छालाभसंतुष्टो द्वन्द्वातीतो विमत्सरः ।\nसमः सिद्धावसिद्धौ च कृत्वापि न निबध्यते ॥ २२ ॥",
     "transliteration": "yadṛcchā-lābha-santuṣṭo\ndvandvātīto vimatsaraḥ\nsamaḥ siddhāv asiddhau ca\nkṛtvāpi na nibadhyate",
     "translation": "He who is satisfied with gain which comes of its own accord, who is free from duality and does not envy, who is steady in both success and failure, is never entangled, although performing actions.",
@@ -1202,6 +1468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — ज्ञानाचा अग्नि सर्व कर्मांना भस्म करतो. भगवंत जेव्हा धर्माचे संरक्षण करण्यासाठी अवतरतात, तेव्हा ते कृपेने येतात. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1210,15 +1494,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "ddaf00b3f5619651c89a547fd04b4fb3"
     }
   },
   {
     "id": "bhagavad-gita_4_23",
     "text_slug": "bhagavad-gita",
     "chapter": 4,
-    "verse": "23",
+    "verse": 23,
     "original": "गतसङ्गस्य मुक्तस्य ज्ञानावस्थितचेतसः ।\nयज्ञायाचरतः कर्म समग्रं प्रविलीयते ॥ २३ ॥",
     "transliteration": "gata-saṅgasya muktasya\njñānāvasthita-cetasaḥ\nyajñāyācarataḥ karma\nsamagraṁ pravilīyate",
     "translation": "The work of a man who is unattached to the modes of material nature and who is fully situated in transcendental knowledge merges entirely into transcendence.",
@@ -1283,6 +1568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: ज्ञानाचा अग्नि सर्व कर्मांना भस्म करतो. भगवंत जेव्हा धर्माचे संरक्षण करण्यासाठी अवतरतात, तेव्हा ते कृपेने येतात. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1291,15 +1594,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 7,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "7d48bb1f03033e192a6268ebbff789fd"
     }
   },
   {
     "id": "bhagavad-gita_4_24",
     "text_slug": "bhagavad-gita",
     "chapter": 4,
-    "verse": "24",
+    "verse": 24,
     "original": "ब्रह्मार्पणं ब्रह्म हविर्ब्रह्माग्न‍ौ ब्रह्मणा हुतम् ।\nब्रह्मैव तेन गन्तव्यं ब्रह्मकर्मसमाधिना ॥ २४ ॥",
     "transliteration": "brahmārpaṇaṁ brahma havir\nbrahmāgnau brahmaṇā hutam\nbrahmaiva tena gantavyaṁ\nbrahma-karma-samādhinā",
     "translation": "A person who is fully absorbed in Kṛṣṇa consciousness is sure to attain the spiritual kingdom because of his full contribution to spiritual activities, in which the consummation is absolute and that which is offered is of the same spiritual nature.",
@@ -1364,6 +1668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: ज्ञानाचा अग्नि सर्व कर्मांना भस्म करतो. भगवंत जेव्हा धर्माचे संरक्षण करण्यासाठी अवतरतात, तेव्हा ते कृपेने येतात. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1372,15 +1694,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "4bf3fdcea4d28edd55b9023bff3dcc2d"
     }
   },
   {
     "id": "bhagavad-gita_4_25",
     "text_slug": "bhagavad-gita",
     "chapter": 4,
-    "verse": "25",
+    "verse": 25,
     "original": "दैवमेवापरे यज्ञं योगिनः पर्युपासते ।\nब्रह्माग्न‍ावपरे यज्ञं यज्ञेनैवोपजुह्वति ॥ २५ ॥",
     "transliteration": "daivam evāpare yajñaṁ\nyoginaḥ paryupāsate\nbrahmāgnāv apare yajñaṁ\nyajñenaivopajuhvati",
     "translation": "Some yogīs perfectly worship the demigods by offering different sacrifices to them, and some offer sacrifices in the fire of the Supreme Brahman.",
@@ -1445,6 +1768,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: ज्ञानाचा अग्नि सर्व कर्मांना भस्म करतो. भगवंत जेव्हा धर्माचे संरक्षण करण्यासाठी अवतरतात, तेव्हा ते कृपेने येतात. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1453,15 +1794,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 9,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "06f8a919b9061dfc9889cdd6bbdcfcd1"
     }
   },
   {
     "id": "bhagavad-gita_4_26",
     "text_slug": "bhagavad-gita",
     "chapter": 4,
-    "verse": "26",
+    "verse": 26,
     "original": "श्रोत्रादीनीन्द्रियाण्यन्ये संयमाग्न‍िषु जुह्वति ।\nशब्दादीन्विषयानन्य इन्द्रियाग्न‍िषु जुह्वति ॥ २६ ॥",
     "transliteration": "śrotrādīnīndriyāṇy anye\nsaṁyamāgniṣu juhvati\nśabdādīn viṣayān anya\nindriyāgniṣu juhvati",
     "translation": "Some [the unadulterated brahmacārīs] sacrifice the hearing process and the senses in the fire of mental control, and others [the regulated householders] sacrifice the objects of the senses in the fire of the senses.",
@@ -1526,6 +1868,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: ज्ञानाचा अग्नि सर्व कर्मांना भस्म करतो. भगवंत जेव्हा धर्माचे संरक्षण करण्यासाठी अवतरतात, तेव्हा ते कृपेने येतात. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1534,15 +1894,16 @@
       "stats": {
         "original_words": 10,
         "translit_words": 9,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "18afa9ffb34fce7d878b1d05bc1b96da"
     }
   },
   {
     "id": "bhagavad-gita_4_27",
     "text_slug": "bhagavad-gita",
     "chapter": 4,
-    "verse": "27",
+    "verse": 27,
     "original": "सर्वाणीन्द्रियकर्माणि प्राणकर्माणि चापरे ।\nआत्मसंयमयोगाग्न‍ौ जुह्वति ज्ञानदीपिते ॥ २७ ॥",
     "transliteration": "sarvāṇīndriya-karmāṇi\nprāṇa-karmāṇi cāpare\nātma-saṁyama-yogāgnau\njuhvati jñāna-dīpite",
     "translation": "Others, who are interested in achieving self-realization through control of the mind and senses, offer the functions of all the senses, and of the life breath, as oblations into the fire of the controlled mind.",
@@ -1607,6 +1968,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: ज्ञानाचा अग्नि सर्व कर्मांना भस्म करतो. भगवंत जेव्हा धर्माचे संरक्षण करण्यासाठी अवतरतात, तेव्हा ते कृपेने येतात. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1615,15 +1994,16 @@
       "stats": {
         "original_words": 10,
         "translit_words": 6,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "67ad36bb9d446b893efead5f9de149d2"
     }
   },
   {
     "id": "bhagavad-gita_4_28",
     "text_slug": "bhagavad-gita",
     "chapter": 4,
-    "verse": "28",
+    "verse": 28,
     "original": "द्रव्ययज्ञास्तपोयज्ञा योगयज्ञास्तथापरे ।\nस्वाध्यायज्ञानयज्ञाश्च यतयः संशितव्रताः ॥ २८ ॥",
     "transliteration": "dravya-yajñās tapo-yajñā\nyoga-yajñās tathāpare\nsvādhyāya-jñāna-yajñāś ca\nyatayaḥ saṁśita-vratāḥ",
     "translation": "Having accepted strict vows, some become enlightened by sacrificing their possessions, and others by performing severe austerities, by practicing the yoga of eightfold mysticism, or by studying the Vedas to advance in transcendental knowledge.",
@@ -1688,6 +2068,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — ज्ञानाचा अग्नि सर्व कर्मांना भस्म करतो. भगवंत जेव्हा धर्माचे संरक्षण करण्यासाठी अवतरतात, तेव्हा ते कृपेने येतात. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1696,15 +2094,16 @@
       "stats": {
         "original_words": 9,
         "translit_words": 8,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "db35d4e6c1cea04923ecf3ce754469fd"
     }
   },
   {
     "id": "bhagavad-gita_4_29",
     "text_slug": "bhagavad-gita",
     "chapter": 4,
-    "verse": "29",
+    "verse": 29,
     "original": "अपाने जुह्वति प्राणं प्राणेऽपानं तथापरे ।\nप्राणापानगती रुद्ध्वा प्राणायामपरायणाः ।\nअपरे नियताहाराः प्राणान्प्राणेषु जुह्वति ॥ २९ ॥",
     "transliteration": "apāne juhvati prāṇaṁ\nprāṇe ’pānaṁ tathāpare\nprāṇāpāna-gatī ruddhvā\nprāṇāyāma-parāyaṇāḥ\napare niyatāhārāḥ\nprāṇān prāṇeṣu juhvati",
     "translation": "Still others, who are inclined to the process of breath restraint to remain in trance, practice by offering the movement of the outgoing breath into the incoming, and the incoming breath into the outgoing, and thus at last remain in trance, stopping all breathing. Others, curtailing the eating process, offer the outgoing breath into itself as a sacrifice.",
@@ -1769,6 +2168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: ज्ञानाचा अग्नि सर्व कर्मांना भस्म करतो. भगवंत जेव्हा धर्माचे संरक्षण करण्यासाठी अवतरतात, तेव्हा ते कृपेने येतात. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1777,15 +2194,16 @@
       "stats": {
         "original_words": 17,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "c6ce1d552b8c8336cab5aba1588bf79a"
     }
   },
   {
     "id": "bhagavad-gita_4_3",
     "text_slug": "bhagavad-gita",
     "chapter": 4,
-    "verse": "3",
+    "verse": 3,
     "original": "स एवायं मया तेऽद्य योगः प्रोक्तः पुरातनः ।\nभक्तोऽसि मे सखा चेति रहस्यं ह्येतदुत्तमम् ॥ ३ ॥",
     "transliteration": "sa evāyaṁ mayā te ’dya\nyogaḥ proktaḥ purātanaḥ\nbhakto ’si me sakhā ceti\nrahasyaṁ hy etad uttamam",
     "translation": "That very ancient science of the relationship with the Supreme is today told by Me to you because you are My devotee as well as My friend and can therefore understand the transcendental mystery of this science.",
@@ -1850,6 +2268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: ज्ञानाचा अग्नि सर्व कर्मांना भस्म करतो. भगवंत जेव्हा धर्माचे संरक्षण करण्यासाठी अवतरतात, तेव्हा ते कृपेने येतात. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1858,15 +2294,16 @@
       "stats": {
         "original_words": 17,
         "translit_words": 17,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "bea974f1b63fd8f1cfef9b2ec9719d23"
     }
   },
   {
     "id": "bhagavad-gita_4_30",
     "text_slug": "bhagavad-gita",
     "chapter": 4,
-    "verse": "30",
+    "verse": 30,
     "original": "सर्वेऽप्येते यज्ञविदो यज्ञक्षपितकल्मषाः ।\nयज्ञशिष्टामृतभुजो यान्ति ब्रह्म सनातनम् ॥ ३० ॥",
     "transliteration": "sarve ’py ete yajña-vido\nyajña-kṣapita-kalmaṣāḥ\nyajña-śiṣṭāmṛta-bhujo\nyānti brahma sanātanam",
     "translation": "All these performers who know the meaning of sacrifice become cleansed of sinful reactions, and, having tasted the nectar of the results of sacrifices, they advance toward the supreme eternal atmosphere.",
@@ -1931,6 +2368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: ज्ञानाचा अग्नि सर्व कर्मांना भस्म करतो. भगवंत जेव्हा धर्माचे संरक्षण करण्यासाठी अवतरतात, तेव्हा ते कृपेने येतात. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1939,15 +2394,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 9,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "a7db0b2002021e3f3922e7d192f5245c"
     }
   },
   {
     "id": "bhagavad-gita_4_31",
     "text_slug": "bhagavad-gita",
     "chapter": 4,
-    "verse": "31",
+    "verse": 31,
     "original": "नायं लोकोऽस्त्ययज्ञस्य कुतोऽन्यः कुरुसत्तम ॥ ३१ ॥",
     "transliteration": "nāyaṁ loko ’sty ayajñasya\nkuto ’nyaḥ kuru-sattama",
     "translation": "O best of the Kuru dynasty, without sacrifice one can never live happily on this planet or in this life: what then of the next?",
@@ -2012,6 +2468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: ज्ञानाचा अग्नि सर्व कर्मांना भस्म करतो. भगवंत जेव्हा धर्माचे संरक्षण करण्यासाठी अवतरतात, तेव्हा ते कृपेने येतात. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2020,15 +2494,16 @@
       "stats": {
         "original_words": 7,
         "translit_words": 7,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "be631bbab40086821482f4684261a05f"
     }
   },
   {
     "id": "bhagavad-gita_4_32",
     "text_slug": "bhagavad-gita",
     "chapter": 4,
-    "verse": "32",
+    "verse": 32,
     "original": "एवं बहुविधा यज्ञा वितता ब्रह्मणो मुखे ।\nकर्मजान्विद्धि तान्सर्वानेवं ज्ञात्वा विमोक्ष्यसे ॥ ३२ ॥",
     "transliteration": "evaṁ bahu-vidhā yajñā\nvitatā brahmaṇo mukhe\nkarma-jān viddhi tān sarvān\nevaṁ jñātvā vimokṣyase",
     "translation": "All these different types of sacrifice are approved by the Vedas, and all of them are born of different types of work. Knowing them as such, you will become liberated.",
@@ -2093,6 +2568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: ज्ञानाचा अग्नि सर्व कर्मांना भस्म करतो. भगवंत जेव्हा धर्माचे संरक्षण करण्यासाठी अवतरतात, तेव्हा ते कृपेने येतात. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2101,15 +2594,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "42363869a11861e474e77e5cffe46060"
     }
   },
   {
     "id": "bhagavad-gita_4_33",
     "text_slug": "bhagavad-gita",
     "chapter": 4,
-    "verse": "33",
+    "verse": 33,
     "original": "श्रेयान्द्रव्यमयाद्यज्ञाज्ज्ञानयज्ञः परन्तप ।\nसर्वं कर्माखिलं पार्थ ज्ञाने परिसमाप्यते ॥ ३३ ॥",
     "transliteration": "śreyān dravya-mayād yajñāj\njñāna-yajñaḥ paran-tapa\nsarvaṁ karmākhilaṁ pārtha\njñāne parisamāpyate",
     "translation": "O chastiser of the enemy, the sacrifice performed in knowledge is better than the mere sacrifice of material possessions. After all, O son of Pṛthā, all sacrifices of work culminate in transcendental knowledge.",
@@ -2174,6 +2668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — ज्ञानाचा अग्नि सर्व कर्मांना भस्म करतो. भगवंत जेव्हा धर्माचे संरक्षण करण्यासाठी अवतरतात, तेव्हा ते कृपेने येतात. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2182,15 +2694,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "46583a9bfa143dad20dd4d9ab0f962c6"
     }
   },
   {
     "id": "bhagavad-gita_4_34",
     "text_slug": "bhagavad-gita",
     "chapter": 4,
-    "verse": "34",
+    "verse": 34,
     "original": "तद्विद्धि प्रणिपातेन परिप्रश्न‍ेन सेवया ।\nउपदेक्ष्यन्ति ते ज्ञानं ज्ञानिनस्तत्त्वदर्शिनः ॥ ३४ ॥",
     "transliteration": "tad viddhi praṇipātena\nparipraśnena sevayā\nupadekṣyanti te jñānaṁ\njñāninas tattva-darśinaḥ",
     "translation": "Just try to learn the truth by approaching a spiritual master. Inquire from him submissively and render service unto him. The self-realized souls can impart knowledge unto you because they have seen the truth.",
@@ -2255,6 +2768,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: ज्ञानाचा अग्नि सर्व कर्मांना भस्म करतो. भगवंत जेव्हा धर्माचे संरक्षण करण्यासाठी अवतरतात, तेव्हा ते कृपेने येतात. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2263,15 +2794,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "8a39834ba3f174b09a11ccd407fafed6"
     }
   },
   {
     "id": "bhagavad-gita_4_35",
     "text_slug": "bhagavad-gita",
     "chapter": 4,
-    "verse": "35",
+    "verse": 35,
     "original": "यज्ज्ञात्वा न पुनर्मोहमेवं यास्यसि पाण्डव ।\nयेन भूतान्यशेषाणि द्रक्ष्यस्यात्मन्यथो मयि ॥ ३५ ॥",
     "transliteration": "yaj jñātvā na punar moham\nevaṁ yāsyasi pāṇḍava\nyena bhūtāny aśeṣāṇi\ndrakṣyasy ātmany atho mayi",
     "translation": "Having obtained real knowledge from a self-realized soul, you will never fall again into such illusion, for by this knowledge you will see that all living beings are but part of the Supreme, or, in other words, that they are Mine.",
@@ -2336,6 +2868,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: ज्ञानाचा अग्नि सर्व कर्मांना भस्म करतो. भगवंत जेव्हा धर्माचे संरक्षण करण्यासाठी अवतरतात, तेव्हा ते कृपेने येतात. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2344,15 +2894,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 15,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "0976dcc4a51c933ca907b97c313813bd"
     }
   },
   {
     "id": "bhagavad-gita_4_36",
     "text_slug": "bhagavad-gita",
     "chapter": 4,
-    "verse": "36",
+    "verse": 36,
     "original": "अपि चेदसि पापेभ्यः सर्वेभ्यः पापकृत्तमः ।\nसर्वं ज्ञानप्ल‍वेनैव वृजिनं सन्तरिष्यसि ॥ ३६ ॥",
     "transliteration": "api ced asi pāpebhyaḥ\nsarvebhyaḥ pāpa-kṛt-tamaḥ\nsarvaṁ jñāna-plavenaiva\nvṛjinaṁ santariṣyasi",
     "translation": "Even if you are considered to be the most sinful of all sinners, when you are situated in the boat of transcendental knowledge you will be able to cross over the ocean of miseries.",
@@ -2417,6 +2968,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: ज्ञानाचा अग्नि सर्व कर्मांना भस्म करतो. भगवंत जेव्हा धर्माचे संरक्षण करण्यासाठी अवतरतात, तेव्हा ते कृपेने येतात. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2425,15 +2994,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "68079021c5c06fdfb0c699043489638f"
     }
   },
   {
     "id": "bhagavad-gita_4_37",
     "text_slug": "bhagavad-gita",
     "chapter": 4,
-    "verse": "37",
+    "verse": 37,
     "original": "यथैधांसि समिद्धोऽग्न‍िर्भस्मसात्कुरुतेऽर्जुन ।\nज्ञानाग्न‍िः सर्वकर्माणि भस्मसात्कुरुते तथा ॥ ३७ ॥",
     "transliteration": "yathaidhāṁsi samiddho ’gnir\nbhasma-sāt kurute ’rjuna\njñānāgniḥ sarva-karmāṇi\nbhasma-sāt kurute tathā",
     "translation": "As a blazing fire turns firewood to ashes, O Arjuna, so does the fire of knowledge burn to ashes all reactions to material activities.",
@@ -2498,6 +3068,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: ज्ञानाचा अग्नि सर्व कर्मांना भस्म करतो. भगवंत जेव्हा धर्माचे संरक्षण करण्यासाठी अवतरतात, तेव्हा ते कृपेने येतात. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2506,15 +3094,16 @@
       "stats": {
         "original_words": 10,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "f08c3a726be8fd383324e33a1a43319c"
     }
   },
   {
     "id": "bhagavad-gita_4_38",
     "text_slug": "bhagavad-gita",
     "chapter": 4,
-    "verse": "38",
+    "verse": 38,
     "original": "न हि ज्ञानेन सदृशं पवित्रमिह विद्यते ।\nतत्स्वयं योगसंसिद्धः कालेनात्मनि विन्दति ॥ ३८ ॥",
     "transliteration": "na hi jñānena sadṛśaṁ\npavitram iha vidyate\ntat svayaṁ yoga-saṁsiddhaḥ\nkālenātmani vindati",
     "translation": "In this world, there is nothing so sublime and pure as transcendental knowledge. Such knowledge is the mature fruit of all mysticism. And one who has become accomplished in the practice of devotional service enjoys this knowledge within himself in due course of time.",
@@ -2579,6 +3168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: ज्ञानाचा अग्नि सर्व कर्मांना भस्म करतो. भगवंत जेव्हा धर्माचे संरक्षण करण्यासाठी अवतरतात, तेव्हा ते कृपेने येतात. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2587,15 +3194,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "7aa314cf6f7366c98eed1da0379b9d01"
     }
   },
   {
     "id": "bhagavad-gita_4_39",
     "text_slug": "bhagavad-gita",
     "chapter": 4,
-    "verse": "39",
+    "verse": 39,
     "original": "श्रद्धावाँल्ल‍भते ज्ञानं तत्परः संयतेन्द्रियः ।\nज्ञानं लब्ध्वा परां शान्तिमचिरेणाधिगच्छति ॥ ३९ ॥",
     "transliteration": "śraddhāvāḻ labhate jñānaṁ\ntat-paraḥ saṁyatendriyaḥ\njñānaṁ labdhvā parāṁ śāntim\nacireṇādhigacchati",
     "translation": "A faithful man who is dedicated to transcendental knowledge and who subdues his senses is eligible to achieve such knowledge, and having achieved it he quickly attains the supreme spiritual peace.",
@@ -2660,6 +3268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — ज्ञानाचा अग्नि सर्व कर्मांना भस्म करतो. भगवंत जेव्हा धर्माचे संरक्षण करण्यासाठी अवतरतात, तेव्हा ते कृपेने येतात. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2668,15 +3294,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "719f5e8f379f021d42f1666285e47bb4"
     }
   },
   {
     "id": "bhagavad-gita_4_4",
     "text_slug": "bhagavad-gita",
     "chapter": 4,
-    "verse": "4",
+    "verse": 4,
     "original": "अर्जुन उवाच\nअपरं भवतो जन्म परं जन्म विवस्वतः ।\nकथमेतद्विजानीयां त्वमादौ प्रोक्तवानिति ॥ ४ ॥",
     "transliteration": "arjuna uvāca\naparaṁ bhavato janma\nparaṁ janma vivasvataḥ\nkatham etad vijānīyāṁ\ntvam ādau proktavān iti",
     "translation": "Arjuna said: The sun-god Vivasvān is senior by birth to You. How am I to understand that in the beginning You instructed this science to him?",
@@ -2741,6 +3368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: ज्ञानाचा अग्नि सर्व कर्मांना भस्म करतो. भगवंत जेव्हा धर्माचे संरक्षण करण्यासाठी अवतरतात, तेव्हा ते कृपेने येतात. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2749,15 +3394,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 15,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "b83dd7a3b4de1541884875f489ab6254"
     }
   },
   {
     "id": "bhagavad-gita_4_40",
     "text_slug": "bhagavad-gita",
     "chapter": 4,
-    "verse": "40",
+    "verse": 40,
     "original": "अज्ञश्चाश्रद्दधानश्च संशयात्मा विनश्यति ।\nनायं लोकोऽस्ति न परो न सुखं संशयात्मनः ॥ ४० ॥",
     "transliteration": "ajñaś cāśraddadhānaś ca\nsaṁśayātmā vinaśyati\nnāyaṁ loko ’sti na paro\nna sukhaṁ saṁśayātmanaḥ",
     "translation": "But ignorant and faithless persons who doubt the revealed scriptures do not attain God consciousness; they fall down. For the doubting soul there is happiness neither in this world nor in the next.",
@@ -2822,6 +3468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: ज्ञानाचा अग्नि सर्व कर्मांना भस्म करतो. भगवंत जेव्हा धर्माचे संरक्षण करण्यासाठी अवतरतात, तेव्हा ते कृपेने येतात. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2830,15 +3494,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "e36e40986b3816214457ee04ce4c53ad"
     }
   },
   {
     "id": "bhagavad-gita_4_41",
     "text_slug": "bhagavad-gita",
     "chapter": 4,
-    "verse": "41",
+    "verse": 41,
     "original": "योगसन्न्यस्तकर्माणं ज्ञानसञ्छिन्नसंशयम् ।\nआत्मवन्तं न कर्माणि निबध्न‍‍न्ति धनञ्जय ॥ ४१ ॥",
     "transliteration": "yoga-sannyasta-karmāṇaṁ\njñāna-sañchinna-saṁśayam\nātmavantaṁ na karmāṇi\nnibadhnanti dhanañ-jaya",
     "translation": "One who acts in devotional service, renouncing the fruits of his actions, and whose doubts have been destroyed by transcendental knowledge, is situated factually in the self. Thus he is not bound by the reactions of work, O conqueror of riches.",
@@ -2903,6 +3568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: ज्ञानाचा अग्नि सर्व कर्मांना भस्म करतो. भगवंत जेव्हा धर्माचे संरक्षण करण्यासाठी अवतरतात, तेव्हा ते कृपेने येतात. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2911,15 +3594,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 7,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "625c6206ee1eeefbd991af925d8c5594"
     }
   },
   {
     "id": "bhagavad-gita_4_42",
     "text_slug": "bhagavad-gita",
     "chapter": 4,
-    "verse": "42",
+    "verse": 42,
     "original": "तस्मादज्ञानसम्भूतं हृत्स्थं ज्ञानासिनात्मनः ।\nछित्त्वैनं संशयं योगमातिष्ठोत्तिष्ठ भारत ॥ ४२ ॥",
     "transliteration": "tasmād ajñāna-sambhūtaṁ\nhṛt-sthaṁ jñānāsinātmanaḥ\nchittvainaṁ saṁśayaṁ yogam\nātiṣṭhottiṣṭha bhārata",
     "translation": "Therefore the doubts which have arisen in your heart out of ignorance should be slashed by the weapon of knowledge. Armed with yoga, O Bhārata, stand and fight.",
@@ -2984,6 +3668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: ज्ञानाचा अग्नि सर्व कर्मांना भस्म करतो. भगवंत जेव्हा धर्माचे संरक्षण करण्यासाठी अवतरतात, तेव्हा ते कृपेने येतात. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2992,15 +3694,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 9,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "20bbcd586c872c0f8eadfd5d4cf3612f"
     }
   },
   {
     "id": "bhagavad-gita_4_5",
     "text_slug": "bhagavad-gita",
     "chapter": 4,
-    "verse": "5",
+    "verse": 5,
     "original": "श्रीभगवानुवाच\nबहूनि मे व्यतीतानि जन्मानि तव चार्जुन ।\nतान्यहं वेद सर्वाणि न त्वं वेत्थ परन्तप ॥ ५ ॥",
     "transliteration": "śrī-bhagavān uvāca\nbahūni me vyatītāni\njanmāni tava cārjuna\ntāny ahaṁ veda sarvāṇi\nna tvaṁ vettha paran-tapa",
     "translation": "The Personality of Godhead said: Many, many births both you and I have passed. I can remember all of them, but you cannot, O subduer of the enemy!",
@@ -3065,6 +3768,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: ज्ञानाचा अग्नि सर्व कर्मांना भस्म करतो. भगवंत जेव्हा धर्माचे संरक्षण करण्यासाठी अवतरतात, तेव्हा ते कृपेने येतात. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3073,15 +3794,16 @@
       "stats": {
         "original_words": 18,
         "translit_words": 16,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "cb1f5767ce08e654d124b8e088711013"
     }
   },
   {
     "id": "bhagavad-gita_4_6",
     "text_slug": "bhagavad-gita",
     "chapter": 4,
-    "verse": "6",
+    "verse": 6,
     "original": "अजोऽपि सन्नव्ययात्मा भूतानामीश्वरोऽपि सन् ।\nप्रकृतिं स्वामधिष्ठाय सम्भवाम्यात्ममायया ॥ ६ ॥",
     "transliteration": "ajo ’pi sann avyayātmā\nbhūtānām īśvaro ’pi san\nprakṛtiṁ svām adhiṣṭhāya\nsambhavāmy ātma-māyayā",
     "translation": "Although I am unborn and My transcendental body never deteriorates, and although I am the Lord of all living entities, by My internal energy I still appear in every millennium in My original transcendental form.",
@@ -3146,6 +3868,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — ज्ञानाचा अग्नि सर्व कर्मांना भस्म करतो. भगवंत जेव्हा धर्माचे संरक्षण करण्यासाठी अवतरतात, तेव्हा ते कृपेने येतात. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3154,15 +3894,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "a66781311fde1ab3c9c23739437de844"
     }
   },
   {
     "id": "bhagavad-gita_4_7",
     "text_slug": "bhagavad-gita",
     "chapter": 4,
-    "verse": "7",
+    "verse": 7,
     "original": "यदा यदा हि धर्मस्य ग्लानिर्भवति भारत ।\nअभ्युत्थानमधर्मस्य तदात्मानं सृजाम्यहम् ॥ ७ ॥",
     "transliteration": "yadā yadā hi dharmasya\nglānir bhavati bhārata\nabhyutthānam adharmasya\ntadātmānaṁ sṛjāmy aham",
     "translation": "Whenever and wherever there is a decline in religious practice, O descendant of Bharata, and a predominant rise of irreligion – at that time I descend Myself.",
@@ -3227,6 +3968,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: ज्ञानाचा अग्नि सर्व कर्मांना भस्म करतो. भगवंत जेव्हा धर्माचे संरक्षण करण्यासाठी अवतरतात, तेव्हा ते कृपेने येतात. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3235,15 +3994,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "1a4a13d3a3c9d79a460a0d4152eb5259"
     }
   },
   {
     "id": "bhagavad-gita_4_8",
     "text_slug": "bhagavad-gita",
     "chapter": 4,
-    "verse": "8",
+    "verse": 8,
     "original": "परित्राणाय साधुनां विनाशाय च दुष्कृताम् ।\nधर्मसंस्थानार्थाय सम्भवामि युगे युगे ॥ ८ ॥",
     "transliteration": "paritrāṇāya sādhūnāṁ\nvināśāya ca duṣkṛtām\ndharma-saṁsthāpanārthāya\nsambhavāmi yuge yuge",
     "translation": "To deliver the pious and to annihilate the miscreants, as well as to reestablish the principles of religion, I Myself appear, millennium after millennium.",
@@ -3308,6 +4068,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: ज्ञानाचा अग्नि सर्व कर्मांना भस्म करतो. भगवंत जेव्हा धर्माचे संरक्षण करण्यासाठी अवतरतात, तेव्हा ते कृपेने येतात. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3316,15 +4094,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 9,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "0146470c2d4cfee28d826ed81f7a58ee"
     }
   },
   {
     "id": "bhagavad-gita_4_9",
     "text_slug": "bhagavad-gita",
     "chapter": 4,
-    "verse": "9",
+    "verse": 9,
     "original": "जन्म कर्म च मे दिव्यमेवं यो वेत्ति तत्त्वतः ।\nत्यक्त्वा देहं पुनर्जन्म नैति मामेति सोऽर्जुन ॥ ९ ॥",
     "transliteration": "janma karma ca me divyam\nevaṁ yo vetti tattvataḥ\ntyaktvā dehaṁ punar janma\nnaiti mām eti so ’rjuna",
     "translation": "One who knows the transcendental nature of My appearance and activities does not, upon leaving the body, take his birth again in this material world, but attains My eternal abode, O Arjuna.",
@@ -3389,6 +4168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: ज्ञानाचा अग्नि सर्व कर्मांना भस्म करतो. भगवंत जेव्हा धर्माचे संरक्षण करण्यासाठी अवतरतात, तेव्हा ते कृपेने येतात. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -3397,8 +4194,9 @@
       "stats": {
         "original_words": 18,
         "translit_words": 18,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "6fd06a82c7ffba9429583f93b1c36d06"
     }
   }
 ]

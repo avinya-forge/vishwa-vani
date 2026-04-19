@@ -3,7 +3,7 @@
     "id": "bhagavad-gita_17_1",
     "text_slug": "bhagavad-gita",
     "chapter": 17,
-    "verse": "1",
+    "verse": 1,
     "original": "अर्जुन उवाच\nये शास्त्रविधिमुत्सृज्य यजन्ते श्रद्धयान्विता: ।\nतेषां निष्ठा तु का कृष्ण सत्त्वमाहो रजस्तम: ॥ १ ॥",
     "transliteration": "arjuna uvāca\nye śāstra-vidhim utsṛjya\nyajante śraddhayānvitāḥ\nteṣāṁ niṣṭhā tu kā kṛṣṇa\nsattvam āho rajas tamaḥ",
     "translation": "Arjuna inquired: O Kṛṣṇa, what is the situation of those who do not follow the principles of scripture but worship according to their own imagination? Are they in goodness, in passion or in ignorance?",
@@ -68,6 +68,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: श्रद्धा ही साधनेचा पाया आहे. जसे मातीची गुणवत्ता पीकावर परिणाम करते, तसे श्रद्धेची गुणवत्ता साधनेवर परिणाम करते. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -76,15 +94,16 @@
       "stats": {
         "original_words": 17,
         "translit_words": 16,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "1447b92a8b79c59ff89b75a51168b300"
     }
   },
   {
     "id": "bhagavad-gita_17_10",
     "text_slug": "bhagavad-gita",
     "chapter": 17,
-    "verse": "10",
+    "verse": 10,
     "original": "यातयामं गतरसं पूति पर्युषितं च यत् ।\nउच्छिष्टमपि चामेध्यं भोजनं तामसप्रियम् ॥ १० ॥",
     "transliteration": "yāta-yāmaṁ gata-rasaṁ\npūti paryuṣitaṁ ca yat\nucchiṣṭam api cāmedhyaṁ\nbhojanaṁ tāmasa-priyam",
     "translation": "Food prepared more than three hours before being eaten, food that is tasteless, decomposed and putrid, and food consisting of remnants and untouchable things is dear to those in the mode of darkness.",
@@ -149,6 +168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: श्रद्धा ही साधनेचा पाया आहे. जसे मातीची गुणवत्ता पीकावर परिणाम करते, तसे श्रद्धेची गुणवत्ता साधनेवर परिणाम करते. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -157,15 +194,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "e93b3b437b21ab09fab0019e1e9424ba"
     }
   },
   {
     "id": "bhagavad-gita_17_11",
     "text_slug": "bhagavad-gita",
     "chapter": 17,
-    "verse": "11",
+    "verse": 11,
     "original": "अफलाकाङ्‌‍क्षिभिर्यज्ञो विधिदिष्टो य इज्यते ।\nयष्टव्यमेवेति मन: समाधाय स सात्त्विक: ॥ ११ ॥",
     "transliteration": "aphalākāṅkṣibhir yajño\nvidhi-diṣṭo ya ijyate\nyaṣṭavyam eveti manaḥ\nsamādhāya sa sāttvikaḥ",
     "translation": "Of sacrifices, the sacrifice performed according to the directions of scripture, as a matter of duty, by those who desire no reward, is of the nature of goodness.",
@@ -230,6 +268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — श्रद्धा ही साधनेचा पाया आहे. जसे मातीची गुणवत्ता पीकावर परिणाम करते, तसे श्रद्धेची गुणवत्ता साधनेवर परिणाम करते. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -238,15 +294,16 @@
       "stats": {
         "original_words": 13,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "b7367df0cc4eee01ec40550e6abbfcdc"
     }
   },
   {
     "id": "bhagavad-gita_17_12",
     "text_slug": "bhagavad-gita",
     "chapter": 17,
-    "verse": "12",
+    "verse": 12,
     "original": "अभिसन्धाय तु फलं दम्भार्थमपि चैव यत् ।\nइज्यते भरतश्रेष्ठ तं यज्ञं विद्धि राजसम् ॥ १२ ॥",
     "transliteration": "abhisandhāya tu phalaṁ\ndambhārtham api caiva yat\nijyate bharata-śreṣṭha\ntaṁ yajñaṁ viddhi rājasam",
     "translation": "But the sacrifice performed for some material benefit, or for the sake of pride, O chief of the Bhāratas, you should know to be in the mode of passion.",
@@ -311,6 +368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: श्रद्धा ही साधनेचा पाया आहे. जसे मातीची गुणवत्ता पीकावर परिणाम करते, तसे श्रद्धेची गुणवत्ता साधनेवर परिणाम करते. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -319,15 +394,16 @@
       "stats": {
         "original_words": 16,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "2729e1f00c3037bdaf5a2b95b149ad36"
     }
   },
   {
     "id": "bhagavad-gita_17_13",
     "text_slug": "bhagavad-gita",
     "chapter": 17,
-    "verse": "13",
+    "verse": 13,
     "original": "विधिहीनमसृष्टान्नं मन्‍त्रहीनमदक्षिणम् ।\nश्रद्धाविरहितं यज्ञं तामसं परिचक्षते ॥ १३ ॥",
     "transliteration": "vidhi-hīnam asṛṣṭānnaṁ\nmantra-hīnam adakṣiṇam\nśraddhā-virahitaṁ yajñaṁ\ntāmasaṁ paricakṣate",
     "translation": "Any sacrifice performed without regard for the directions of scripture, without distribution of prasādam [spiritual food], without chanting of Vedic hymns and remunerations to the priests, and without faith is considered to be in the mode of ignorance.",
@@ -392,6 +468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: श्रद्धा ही साधनेचा पाया आहे. जसे मातीची गुणवत्ता पीकावर परिणाम करते, तसे श्रद्धेची गुणवत्ता साधनेवर परिणाम करते. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -400,15 +494,16 @@
       "stats": {
         "original_words": 10,
         "translit_words": 8,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "0df3727e805a3a0222e32ef7785cfde4"
     }
   },
   {
     "id": "bhagavad-gita_17_14",
     "text_slug": "bhagavad-gita",
     "chapter": 17,
-    "verse": "14",
+    "verse": 14,
     "original": "देवद्विजगुरुप्राज्ञपूजनं शौचमार्जवम् ।\nब्रह्मचर्यमहिंसा च शारीरं तप उच्यते ॥ १४ ॥",
     "transliteration": "deva-dvija-guru-prājña-\npūjanaṁ śaucam ārjavam\nbrahmacaryam ahiṁsā ca\nśārīraṁ tapa ucyate",
     "translation": "Austerity of the body consists in worship of the Supreme Lord, the brāhmaṇas, the spiritual master, and superiors like the father and mother, and in cleanliness, simplicity, celibacy and nonviolence.",
@@ -473,6 +568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: श्रद्धा ही साधनेचा पाया आहे. जसे मातीची गुणवत्ता पीकावर परिणाम करते, तसे श्रद्धेची गुणवत्ता साधनेवर परिणाम करते. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -481,15 +594,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "b8481df97a102d67a3440463074b4e0c"
     }
   },
   {
     "id": "bhagavad-gita_17_15",
     "text_slug": "bhagavad-gita",
     "chapter": 17,
-    "verse": "15",
+    "verse": 15,
     "original": "अनुद्वेगकरं वाक्यं सत्यं प्रियहितं च यत् ।\nस्वाध्यायाभ्यसनं चैव वाङ्‍मयं तप उच्यते ॥ १५ ॥",
     "transliteration": "anudvega-karaṁ vākyaṁ\nsatyaṁ priya-hitaṁ ca yat\nsvādhyāyābhyasanaṁ caiva\nvāṅ-mayaṁ tapa ucyate",
     "translation": "Austerity of speech consists in speaking words that are truthful, pleasing, beneficial, and not agitating to others, and also in regularly reciting Vedic literature.",
@@ -554,6 +668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: श्रद्धा ही साधनेचा पाया आहे. जसे मातीची गुणवत्ता पीकावर परिणाम करते, तसे श्रद्धेची गुणवत्ता साधनेवर परिणाम करते. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -562,15 +694,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "cfb0a22a9b535870d1574fc5ef6c9818"
     }
   },
   {
     "id": "bhagavad-gita_17_16",
     "text_slug": "bhagavad-gita",
     "chapter": 17,
-    "verse": "16",
+    "verse": 16,
     "original": "मन:प्रसाद: सौम्यत्वं मौनमात्मविनिग्रह: ।\nभावसंश‍ुद्धिरित्येतत्तपो मानसमुच्यते ॥ १६ ॥",
     "transliteration": "manaḥ-prasādaḥ saumyatvaṁ\nmaunam ātma-vinigrahaḥ\nbhāva-saṁśuddhir ity etat\ntapo mānasam ucyate",
     "translation": "And satisfaction, simplicity, gravity, self-control and purification of one’s existence are the austerities of the mind.",
@@ -635,6 +768,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: श्रद्धा ही साधनेचा पाया आहे. जसे मातीची गुणवत्ता पीकावर परिणाम करते, तसे श्रद्धेची गुणवत्ता साधनेवर परिणाम करते. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -643,15 +794,16 @@
       "stats": {
         "original_words": 9,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "0ca495b8d315381ab1a15bdbee0f7960"
     }
   },
   {
     "id": "bhagavad-gita_17_17",
     "text_slug": "bhagavad-gita",
     "chapter": 17,
-    "verse": "17",
+    "verse": 17,
     "original": "श्रद्धया परया तप्‍तं तपस्तत्‍त्रिविधं नरै: ।\nअफलाकाङ्‌‍क्षिभिर्युक्तै: सात्त्विकं परिचक्षते ॥ १७ ॥",
     "transliteration": "śraddhayā parayā taptaṁ\ntapas tat tri-vidhaṁ naraiḥ\naphalākāṅkṣibhir yuktaiḥ\nsāttvikaṁ paricakṣate",
     "translation": "This threefold austerity, performed with transcendental faith by men not expecting material benefits but engaged only for the sake of the Supreme, is called austerity in goodness.",
@@ -716,6 +868,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — श्रद्धा ही साधनेचा पाया आहे. जसे मातीची गुणवत्ता पीकावर परिणाम करते, तसे श्रद्धेची गुणवत्ता साधनेवर परिणाम करते. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -724,15 +894,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "79047d264e5de7d443b26954dbf55f00"
     }
   },
   {
     "id": "bhagavad-gita_17_18",
     "text_slug": "bhagavad-gita",
     "chapter": 17,
-    "verse": "18",
+    "verse": 18,
     "original": "सत्कारमानपूजार्थं तपो दम्भेन चैव यत् ।\nक्रियते तदिह प्रोक्तं राजसं चलमध्रुवम् ॥ १८ ॥",
     "transliteration": "satkāra-māna-pūjārthaṁ\ntapo dambhena caiva yat\nkriyate tad iha proktaṁ\nrājasaṁ calam adhruvam",
     "translation": "Penance performed out of pride and for the sake of gaining respect, honor and worship is said to be in the mode of passion. It is neither stable nor permanent.",
@@ -797,6 +968,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: श्रद्धा ही साधनेचा पाया आहे. जसे मातीची गुणवत्ता पीकावर परिणाम करते, तसे श्रद्धेची गुणवत्ता साधनेवर परिणाम करते. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -805,15 +994,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 12,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "81cffcdcb3b42e6bf2a351b9566abd62"
     }
   },
   {
     "id": "bhagavad-gita_17_19",
     "text_slug": "bhagavad-gita",
     "chapter": 17,
-    "verse": "19",
+    "verse": 19,
     "original": "मूढग्राहेणात्मनो यत्पीडया क्रियते तप: ।\nपरस्योत्सादनार्थं वा तत्तामसमुदाहृतम् ॥ १९ ॥",
     "transliteration": "mūḍha-grāheṇātmano yat\npīḍayā kriyate tapaḥ\nparasyotsādanārthaṁ vā\ntat tāmasam udāhṛtam",
     "translation": "Penance performed out of foolishness, with self-torture or to destroy or injure others, is said to be in the mode of ignorance.",
@@ -878,6 +1068,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: श्रद्धा ही साधनेचा पाया आहे. जसे मातीची गुणवत्ता पीकावर परिणाम करते, तसे श्रद्धेची गुणवत्ता साधनेवर परिणाम करते. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -886,15 +1094,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "a4f6f314c41bf10d0b468c7b3c54b75c"
     }
   },
   {
     "id": "bhagavad-gita_17_2",
     "text_slug": "bhagavad-gita",
     "chapter": 17,
-    "verse": "2",
+    "verse": 2,
     "original": "श्रीभगवानुवाच\nत्रिविधा भवति श्रद्धा देहिनां सा स्वभावजा ।\nसात्त्विकी राजसी चैव तामसी चेति तां श‍ृणु ॥ २ ॥",
     "transliteration": "śrī-bhagavān uvāca\ntri-vidhā bhavati śraddhā\ndehināṁ sā svabhāva-jā\nsāttvikī rājasī caiva\ntāmasī ceti tāṁ śṛṇu",
     "translation": "The Supreme Personality of Godhead said: According to the modes of nature acquired by the embodied soul, one’s faith can be of three kinds – in goodness, in passion or in ignorance. Now hear about this.",
@@ -959,6 +1168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: श्रद्धा ही साधनेचा पाया आहे. जसे मातीची गुणवत्ता पीकावर परिणाम करते, तसे श्रद्धेची गुणवत्ता साधनेवर परिणाम करते. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -967,15 +1194,16 @@
       "stats": {
         "original_words": 18,
         "translit_words": 15,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "cbeeb5d6793985e391f168ec0369838c"
     }
   },
   {
     "id": "bhagavad-gita_17_20",
     "text_slug": "bhagavad-gita",
     "chapter": 17,
-    "verse": "20",
+    "verse": 20,
     "original": "दातव्यमिति यद्दानं दीयतेऽनुपकारिणे ।\nदेशे काले च पात्रे च तद्दानं सात्त्विकं स्मृतम् ॥ २० ॥",
     "transliteration": "dātavyam iti yad dānaṁ\ndīyate ’nupakāriṇe\ndeśe kāle ca pātre ca\ntad dānaṁ sāttvikaṁ smṛtam",
     "translation": "Charity given out of duty, without expectation of return, at the proper time and place, and to a worthy person is considered to be in the mode of goodness.",
@@ -1040,6 +1268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: श्रद्धा ही साधनेचा पाया आहे. जसे मातीची गुणवत्ता पीकावर परिणाम करते, तसे श्रद्धेची गुणवत्ता साधनेवर परिणाम करते. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1048,15 +1294,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 15,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "bebecbe27ef476a1ebb279cc0ada3db8"
     }
   },
   {
     "id": "bhagavad-gita_17_21",
     "text_slug": "bhagavad-gita",
     "chapter": 17,
-    "verse": "21",
+    "verse": 21,
     "original": "यत्तु प्रत्युपकारार्थं फलमुद्दिश्य वा पुन: ।\nदीयते च परिक्ल‍ि‍ष्टं तद्दानं राजसं स्मृतम् ॥ २१ ॥",
     "transliteration": "yat tu pratyupakārārthaṁ\nphalam uddiśya vā punaḥ\ndīyate ca parikliṣṭaṁ\ntad dānaṁ rājasaṁ smṛtam",
     "translation": "But charity performed with the expectation of some return, or with a desire for fruitive results, or in a grudging mood is said to be charity in the mode of passion.",
@@ -1121,6 +1368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: श्रद्धा ही साधनेचा पाया आहे. जसे मातीची गुणवत्ता पीकावर परिणाम करते, तसे श्रद्धेची गुणवत्ता साधनेवर परिणाम करते. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1129,15 +1394,16 @@
       "stats": {
         "original_words": 15,
         "translit_words": 14,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "cf600cdc86174b458dbcdc23811f121e"
     }
   },
   {
     "id": "bhagavad-gita_17_22",
     "text_slug": "bhagavad-gita",
     "chapter": 17,
-    "verse": "22",
+    "verse": 22,
     "original": "अदेशकाले यद्दानमपात्रेभ्यश्च दीयते ।\nअसत्कृतमवज्ञातं तत्तामसमुदाहृतम् ॥ २२ ॥",
     "transliteration": "adeśa-kāle yad dānam\napātrebhyaś ca dīyate\nasat-kṛtam avajñātaṁ\ntat tāmasam udāhṛtam",
     "translation": "And charity performed at an impure place, at an improper time, to unworthy persons, or without proper attention and respect is said to be in the mode of ignorance.",
@@ -1202,6 +1468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — श्रद्धा ही साधनेचा पाया आहे. जसे मातीची गुणवत्ता पीकावर परिणाम करते, तसे श्रद्धेची गुणवत्ता साधनेवर परिणाम करते. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1210,15 +1494,16 @@
       "stats": {
         "original_words": 9,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "a4e613c5b039bb4ffb478543f316f6ec"
     }
   },
   {
     "id": "bhagavad-gita_17_23",
     "text_slug": "bhagavad-gita",
     "chapter": 17,
-    "verse": "23",
+    "verse": 23,
     "original": "ॐ तत्सदिति निर्देशो ब्रह्मणस्त्रिविध: स्मृत: ।\nब्राह्मणास्तेन वेदाश्च यज्ञाश्च विहिता: पुरा ॥ २३ ॥",
     "transliteration": "oṁ tat sad iti nirdeśo\nbrahmaṇas tri-vidhaḥ smṛtaḥ\nbrāhmaṇās tena vedāś ca\nyajñāś ca vihitāḥ purā",
     "translation": "From the beginning of creation, the three words oṁ tat sat were used to indicate the Supreme Absolute Truth. These three symbolic representations were used by brāhmaṇas while chanting the hymns of the Vedas and during sacrifices for the satisfaction of the Supreme.",
@@ -1283,6 +1568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: श्रद्धा ही साधनेचा पाया आहे. जसे मातीची गुणवत्ता पीकावर परिणाम करते, तसे श्रद्धेची गुणवत्ता साधनेवर परिणाम करते. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1291,15 +1594,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 16,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "b9cae8bb96aaba15468798e271cae0cf"
     }
   },
   {
     "id": "bhagavad-gita_17_24",
     "text_slug": "bhagavad-gita",
     "chapter": 17,
-    "verse": "24",
+    "verse": 24,
     "original": "तस्माद् ॐ इत्युदाहृत्य यज्ञदानतप:क्रिया: ।\nप्रवर्तन्ते विधानोक्ता: सततं ब्रह्मवादिनाम् ॥ २४ ॥",
     "transliteration": "tasmād oṁ ity udāhṛtya\nyajña-dāna-tapaḥ-kriyāḥ\npravartante vidhānoktāḥ\nsatataṁ brahma-vādinām",
     "translation": "Therefore, transcendentalists undertaking performances of sacrifice, charity and penance in accordance with scriptural regulations begin always with oṁ, to attain the Supreme.",
@@ -1364,6 +1668,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: श्रद्धा ही साधनेचा पाया आहे. जसे मातीची गुणवत्ता पीकावर परिणाम करते, तसे श्रद्धेची गुणवत्ता साधनेवर परिणाम करते. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1372,15 +1694,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 9,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "33b9e79af13de4094d16c423f4e88359"
     }
   },
   {
     "id": "bhagavad-gita_17_25",
     "text_slug": "bhagavad-gita",
     "chapter": 17,
-    "verse": "25",
+    "verse": 25,
     "original": "तदित्यनभिसन्धाय फलं यज्ञतप:क्रिया: ।\nदानक्रियाश्च विविधा: क्रियन्ते मोक्षकाङ्‌‍क्षिभि: ॥ २५ ॥",
     "transliteration": "tad ity anabhisandhāya\nphalaṁ yajña-tapaḥ-kriyāḥ\ndāna-kriyāś ca vividhāḥ\nkriyante mokṣa-kāṅkṣibhiḥ",
     "translation": "Without desiring fruitive results, one should perform various kinds of sacrifice, penance and charity with the word tat. The purpose of such transcendental activities is to get free from material entanglement.",
@@ -1445,6 +1768,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: श्रद्धा ही साधनेचा पाया आहे. जसे मातीची गुणवत्ता पीकावर परिणाम करते, तसे श्रद्धेची गुणवत्ता साधनेवर परिणाम करते. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1453,15 +1794,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 10,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "261ffdb20398f902d082dc3ab676ff29"
     }
   },
   {
     "id": "bhagavad-gita_17_26-27",
     "text_slug": "bhagavad-gita",
     "chapter": 17,
-    "verse": "26-27",
+    "verse": 26,
     "original": "सद्भ‍ावे साधुभावे च सदित्येतत्प्रयुज्यते ।\nप्रशस्ते कर्मणि तथा सच्छब्द: पार्थ युज्यते ॥ २६ ॥\nयज्ञे तपसि दाने च स्थिति: सदिति चोच्यते ।\nकर्म चैव तदर्थीयं सदित्येवाभिधीयते ॥ २७ ॥",
     "transliteration": "sad-bhāve sādhu-bhāve ca\nsad ity etat prayujyate\npraśaste karmaṇi tathā\nsac-chabdaḥ pārtha yujyate",
     "translation": "The Absolute Truth is the objective of devotional sacrifice, and it is indicated by the word sat. The performer of such sacrifice is also called sat, as are all works of sacrifice, penance and charity which, true to the absolute nature, are performed to please the Supreme Person, O son of Pṛthā.",
@@ -1526,6 +1868,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: श्रद्धा ही साधनेचा पाया आहे. जसे मातीची गुणवत्ता पीकावर परिणाम करते, तसे श्रद्धेची गुणवत्ता साधनेवर परिणाम करते. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1534,15 +1894,16 @@
       "stats": {
         "original_words": 29,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "695911688821084d6d84acf7075c1e2f"
     }
   },
   {
     "id": "bhagavad-gita_17_28",
     "text_slug": "bhagavad-gita",
     "chapter": 17,
-    "verse": "28",
+    "verse": 28,
     "original": "अश्रद्धया हुतं दत्तं तपस्तप्‍तं कृतं च यत् ।\nअसदित्युच्यते पार्थ न च तत्प्रेत्य नो इह ॥ २८ ॥",
     "transliteration": "aśraddhayā hutaṁ dattaṁ\ntapas taptaṁ kṛtaṁ ca yat\nasad ity ucyate pārtha\nna ca tat pretya no iha",
     "translation": "Anything done as sacrifice, charity or penance without faith in the Supreme, O son of Pṛthā, is impermanent. It is called asat and is useless both in this life and the next.",
@@ -1607,6 +1968,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: श्रद्धा ही साधनेचा पाया आहे. जसे मातीची गुणवत्ता पीकावर परिणाम करते, तसे श्रद्धेची गुणवत्ता साधनेवर परिणाम करते. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1615,15 +1994,16 @@
       "stats": {
         "original_words": 18,
         "translit_words": 18,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "62d90d9bb09057fe9e0b60c77522a133"
     }
   },
   {
     "id": "bhagavad-gita_17_3",
     "text_slug": "bhagavad-gita",
     "chapter": 17,
-    "verse": "3",
+    "verse": 3,
     "original": "सत्त्वानुरूपा सर्वस्य श्रद्धा भवति भारत ।\nश्रद्धामयोऽयं पुरुषो यो यच्छ्रद्ध: स एव स: ॥ ३ ॥",
     "transliteration": "sattvānurūpā sarvasya\nśraddhā bhavati bhārata\nśraddhā-mayo ’yaṁ puruṣo\nyo yac-chraddhaḥ sa eva saḥ",
     "translation": "O son of Bharata, according to one’s existence under the various modes of nature, one evolves a particular kind of faith. The living being is said to be of a particular faith according to the modes he has acquired.",
@@ -1688,6 +2068,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "धनंजया, हे ध्यानात घे — श्रद्धा ही साधनेचा पाया आहे. जसे मातीची गुणवत्ता पीकावर परिणाम करते, तसे श्रद्धेची गुणवत्ता साधनेवर परिणाम करते. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1696,15 +2094,16 @@
       "stats": {
         "original_words": 16,
         "translit_words": 13,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "0d41b2fd0825b1cc8047fe110cb49528"
     }
   },
   {
     "id": "bhagavad-gita_17_4",
     "text_slug": "bhagavad-gita",
     "chapter": 17,
-    "verse": "4",
+    "verse": 4,
     "original": "यजन्ते सात्त्विका देवान्यक्षरक्षांसि राजसा: ।\nप्रेतान्भूतगणांश्चान्ये यजन्ते तामसा जना: ॥ ४ ॥",
     "transliteration": "yajante sāttvikā devān\nyakṣa-rakṣāṁsi rājasāḥ\npretān bhūta-gaṇāṁś cānye\nyajante tāmasā janāḥ",
     "translation": "Men in the mode of goodness worship the demigods; those in the mode of passion worship the demons; and those in the mode of ignorance worship ghosts and spirits.",
@@ -1769,6 +2168,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात: श्रद्धा ही साधनेचा पाया आहे. जसे मातीची गुणवत्ता पीकावर परिणाम करते, तसे श्रद्धेची गुणवत्ता साधनेवर परिणाम करते. ज्ञानदेवांची कृपा साधकावर असो."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1777,15 +2194,16 @@
       "stats": {
         "original_words": 12,
         "translit_words": 11,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "0ec513fd94a59332cdb5ecdfe19dfc4a"
     }
   },
   {
     "id": "bhagavad-gita_17_5-6",
     "text_slug": "bhagavad-gita",
     "chapter": 17,
-    "verse": "5-6",
+    "verse": 5,
     "original": "अशास्त्रविहितं घोरं तप्यन्ते ये तपो जना: ।\nदम्भाहङ्कारसंयुक्ता: कामरागबलान्विता: ॥ ५ ॥\nकर्षयन्त: शरीरस्थं भूतग्राममचेतस: ।\nमां चैवान्त: शरीरस्थं तान्विद्ध्यासुरनिश्चयान् ॥ ६ ॥",
     "transliteration": "aśāstra-vihitaṁ ghoraṁ\ntapyante ye tapo janāḥ\ndambhāhaṅkāra-saṁyuktāḥ\nkāma-rāga-balānvitāḥ",
     "translation": "Those who undergo severe austerities and penances not recommended in the scriptures, performing them out of pride and egoism, who are impelled by lust and attachment, who are foolish and who torture the material elements of the body as well as the Supersoul dwelling within, are to be known as demons.",
@@ -1850,6 +2268,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "माऊलींचे हे अमृतवचन आहे: श्रद्धा ही साधनेचा पाया आहे. जसे मातीची गुणवत्ता पीकावर परिणाम करते, तसे श्रद्धेची गुणवत्ता साधनेवर परिणाम करते. हे ऐकून अर्जुनाचे मन प्रसन्न झाले."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1858,15 +2294,16 @@
       "stats": {
         "original_words": 23,
         "translit_words": 8,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "879d3cd2d0d62aa0557f1b9ef75bd72d"
     }
   },
   {
     "id": "bhagavad-gita_17_7",
     "text_slug": "bhagavad-gita",
     "chapter": 17,
-    "verse": "7",
+    "verse": 7,
     "original": "आहारस्त्वपि सर्वस्य त्रिविधो भवति प्रिय: ।\nयज्ञस्तपस्तथा दानं तेषां भेदमिमं श‍ृणु ॥ ७ ॥",
     "transliteration": "āhāras tv api sarvasya\ntri-vidho bhavati priyaḥ\nyajñas tapas tathā dānaṁ\nteṣāṁ bhedam imaṁ śṛṇu",
     "translation": "Even the food each person prefers is of three kinds, according to the three modes of material nature. The same is true of sacrifices, austerities and charity. Now hear of the distinctions between them.",
@@ -1931,6 +2368,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "संत ज्ञानेश्वर गुडाकेशा ला उपदेश देतात: श्रद्धा ही साधनेचा पाया आहे. जसे मातीची गुणवत्ता पीकावर परिणाम करते, तसे श्रद्धेची गुणवत्ता साधनेवर परिणाम करते. या अमृतवाणीने साधकाचे जीवन धन्य होते."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -1939,15 +2394,16 @@
       "stats": {
         "original_words": 14,
         "translit_words": 15,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "9ee418fe0a52683d3ea370bd92057af6"
     }
   },
   {
     "id": "bhagavad-gita_17_8",
     "text_slug": "bhagavad-gita",
     "chapter": 17,
-    "verse": "8",
+    "verse": 8,
     "original": "आयु:सत्त्वबलारोग्यसुखप्रीतिविवर्धना: ।\nरस्या: स्‍निग्धा: स्थिरा हृद्या आहारा: सात्त्विकप्रिया: ॥ ८ ॥",
     "transliteration": "āyuḥ-sattva-balārogya-\nsukha-prīti-vivardhanāḥ\nrasyāḥ snigdhāḥ sthirā hṛdyā\nāhārāḥ sāttvika-priyāḥ",
     "translation": "Foods dear to those in the mode of goodness increase the duration of life, purify one’s existence and give strength, health, happiness and satisfaction. Such foods are juicy, fatty, wholesome, and pleasing to the heart.",
@@ -2012,6 +2468,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "ज्ञानेश्वर माऊली अर्जुना ला सांगतात: श्रद्धा ही साधनेचा पाया आहे. जसे मातीची गुणवत्ता पीकावर परिणाम करते, तसे श्रद्धेची गुणवत्ता साधनेवर परिणाम करते. माऊली म्हणतात — हेच परम सत्य आहे."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2020,15 +2494,16 @@
       "stats": {
         "original_words": 11,
         "translit_words": 8,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "aaaac0e3bc2af5c24ce5e2b152600709"
     }
   },
   {
     "id": "bhagavad-gita_17_9",
     "text_slug": "bhagavad-gita",
     "chapter": 17,
-    "verse": "9",
+    "verse": 9,
     "original": "कट्‌वम्ललवणात्युष्णतीक्ष्णरूक्षविदाहिन: ।\nआहारा राजसस्येष्टा दु:खशोकामयप्रदा: ॥ ९ ॥",
     "transliteration": "kaṭv-amla-lavaṇāty-uṣṇa-\ntīkṣṇa-rūkṣa-vidāhinaḥ\nāhārā rājasasyeṣṭā\nduḥkha-śokāmaya-pradāḥ",
     "translation": "Foods that are too bitter, too sour, salty, hot, pungent, dry and burning are dear to those in the mode of passion. Such foods cause distress, misery and disease.",
@@ -2093,6 +2568,24 @@
         "type": "commentary",
         "lang": "mr",
         "content": "या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात: श्रद्धा ही साधनेचा पाया आहे. जसे मातीची गुणवत्ता पीकावर परिणाम करते, तसे श्रद्धेची गुणवत्ता साधनेवर परिणाम करते. हे वचन सदा हृदयात धारण कर."
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_EN_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_HI_DNYANESHWARI]                                                                                "
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "[PLACEHOLDER_MR_DNYANESHWARI]                                                                                "
       }
     ],
     "ai_metadata": {
@@ -2101,8 +2594,9 @@
       "stats": {
         "original_words": 8,
         "translit_words": 5,
-        "layers_count": 1
-      }
+        "layers_count": 8
+      },
+      "fingerprint": "b6f71f7cde39d95a38b5da3778a27011"
     }
   }
 ]
