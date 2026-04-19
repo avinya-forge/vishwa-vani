@@ -20,9 +20,9 @@ describe('VerseAppLinks', () => {
     expect(screen.getByText('Akshauhini Calculator')).toBeInTheDocument()
   })
 
-  it('returns null (renders nothing) when no apps match', () => {
-    const { container } = render(<VerseAppLinks bookSlug="unknown-book" chapter={99} />)
-    expect(container.firstChild).toBeNull()
+  it('renders no tools message when no apps match', () => {
+    render(<VerseAppLinks bookSlug="unknown-book" chapter={99} />)
+    expect(screen.getByText('No specific tools available for this chapter yet.')).toBeInTheDocument()
   })
 
   it('links point to the correct /labs path', () => {
