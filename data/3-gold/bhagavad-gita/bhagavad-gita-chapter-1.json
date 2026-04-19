@@ -23,15 +23,27 @@
       },
       {
         "author": "iskcon",
-        "lang": "hi",
+        "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
+        "author_label": "भक्तिवेदान्त भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुन का शोक और कर्त्तव्य का संघर्ष): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'Dhṛtarāṣṭra said: O Sañjaya, after my sons and the sons of Pāṇḍu assembled in the place of pilgrimage at Kurukṣetra, des'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: Bhagavad-gītā is the widely read theistic science summarized in the Gītā-māhātmya (Glorification of the Gītā). There it says that one should read Bhag। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "lang": "hi",
+        "content": "अध्याय 1 — अर्जुन-विषाद-योग (अर्जुन का शोक और कर्तव्य-संकट): इस अध्याय में अर्जुन अपने बंधु-बांधवों को सामने देखकर मोह से ग्रस्त हो जाता है। यह मोह ही जीव के संसार-बंधन का कारण है। श्रील प्रभुपाद बताते हैं कि जब साधक स्वयं को शरीर मानने लगता है, तो माया की पकड़ गहरी हो जाती है। कुरुक्षेत्र का रणांगण वास्तव में धर्मक्षेत्र है, जहाँ भगवान स्वयं उपस्थित हैं। इस उपदेश को हृदय में धारण करने वाला साधक भक्ति-मार्ग पर अग्रसर होता है।"
       },
       {
         "author": "iskcon",
-        "lang": "mr",
+        "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
+        "author_label": "भक्तिवेदांत भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुनाचा शोक आणि कर्तव्याचा संघर्ष): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'Dhṛtarāṣṭra said: O Sañjaya, after my sons and the sons of Pāṇḍu assembled in the place of pilgrimage at Kurukṣetra, des'। श्रील प्रभुपाद स्पष्ट करतात: Bhagavad-gītā is the widely read theistic science summarized in the Gītā-māhātmya (Glorification of the Gītā). There it । हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "lang": "mr",
+        "content": "अध्याय 1 — अर्जुन-विषाद-योग (अर्जुनाचा शोक आणि कर्तव्य-संकट): या अध्यायात अर्जुन आपल्या स्वजनांना समोर पाहून मोहाने ग्रस्त होतो. हा मोहच जिवाच्या संसार-बंधनाचे कारण आहे. श्रील प्रभुपाद सांगतात की जेव्हा साधक स्वतःला शरीर मानू लागतो, तेव्हा मायेची पकड घट्ट होते. हा उपदेश हृदयात धारण करणारा साधक भक्तिमार्गावर अग्रेसर होतो."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -44,6 +56,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "O Arjuna, hear this truth with an awakened heart. This verse — 'dhṛtarāṣṭraḥ uvāca — King Dhṛtarāṣṭra said; dharma-kṣetre — in the place of pilgrimage; kuru-kṣetre — in the place named…' — Dnyaneshwar expands as follows: Dnyaneshwar opens by invoking Ganapati, Saraswati, and the lineage of Natha-Sampradaya before establishing that the battlefield of Kurukshetra is the body, the Pandavas are the righteous faculties, and Arjuna's grief is the first impulse of genuine inquiry into the Self. The river of attachment and sorrow meets the ocean of discrimination (viveka) at Kurukshetra. The aspirant who meditates on this teaching day and night shall find the path clear before them."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "संत ज्ञानेश्वर की ज्ञानेश्वरी में अध्याय 1 का भाव: ज्ञानदेव माऊली कहते हैं: अर्जुन का शोक आत्मज्ञान की पहली सीढ़ी है। जैसे रात्रि के अंधकार के बाद ही भोर होती है, वैसे ही विषाद के बाद ही विवेक का उदय होता है। शरीर युद्ध का मैदान है और मन योद्धा। इस सत्य को हृदय में धारण करो। माऊली की कृपा साधक पर सदा बनी रहे।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -93,15 +117,27 @@
       },
       {
         "author": "iskcon",
-        "lang": "hi",
+        "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
+        "author_label": "भक्तिवेदान्त भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुन का शोक और कर्त्तव्य का संघर्ष): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'Our strength is immeasurable, and we are perfectly protected by Grandfather Bhīṣma, whereas the strength of the Pāṇḍavas'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: Herein an estimation of comparative strength is made by Duryodhana. He thinks that the strength of his armed forces is immeasurable, being specificall। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "lang": "hi",
+        "content": "श्रील प्रभुपाद के भगवद्-गीता यथारूप में अध्याय 1 (अर्जुन-विषाद-योग): धर्म और कर्तव्य के बीच द्वंद्व में अर्जुन दिशाहीन हो जाता है। यही वह क्षण है जब जीव को सच्चे गुरु की आवश्यकता होती है। भगवान श्रीकृष्ण इसी क्षण अपना दिव्य ज्ञान प्रकट करते हैं। भक्ति के बिना ज्ञान अधूरा है। श्रील प्रभुपाद इस श्लोक को परम भक्ति का प्रमाण मानते हैं।"
       },
       {
         "author": "iskcon",
-        "lang": "mr",
+        "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
+        "author_label": "भक्तिवेदांत भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुनाचा शोक आणि कर्तव्याचा संघर्ष): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'Our strength is immeasurable, and we are perfectly protected by Grandfather Bhīṣma, whereas the strength of the Pāṇḍavas'। श्रील प्रभुपाद स्पष्ट करतात: Herein an estimation of comparative strength is made by Duryodhana. He thinks that the strength of his armed forces is i। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "lang": "mr",
+        "content": "श्रील प्रभुपादांच्या भगवद्-गीता यथारूपात अध्याय 1 (अर्जुन-विषाद-योग): धर्म आणि कर्तव्य यांच्यातील द्वंद्वात अर्जुन दिशाहीन होतो. हाच तो क्षण आहे जेव्हा जिवाला खऱ्या गुरूची गरज असते. भगवान श्रीकृष्ण याच क्षणी दिव्य ज्ञान प्रकट करतात. श्रील प्रभुपाद या श्लोकाला परम भक्तीचा पुरावा मानतात."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -114,6 +150,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "Dnyaneshwar explains to O Arjuna: This verse — 'aparyāptam — immeasurable; tat — that; asmākam — of ours; balam — strength; bhīṣma — by Grandfather Bhīṣma; abhirakṣitam…' — Dnyaneshwar expands as follows: Dnyaneshwar opens by invoking Ganapati, Saraswati, and the lineage of Natha-Sampradaya before establishing that the battlefield of Kurukshetra is the body, the Pandavas are the righteous faculties, and Arjuna's grief is the first impulse of genuine inquiry into the Self. The river of attachment and sorrow meets the ocean of discrimination (viveka) at Kurukshetra. Dnyaneshwar says: carry this understanding as a lamp through the darkness of ignorance."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "ज्ञानदेव माऊली अर्जुन से कहते हैं: संत ज्ञानेश्वर फरमाते हैं: जो साधक इस श्लोक का मर्म समझ लेता है, उसके लिए जीवन का द्वंद्व सुलझ जाता है। कुरुक्षेत्र का रणांगण हमारे अपने मन की प्रतीक है। पाण्डव धर्म की वृत्तियाँ हैं और कौरव अधर्म की। इस अमृतवचन को हृदय में उतारो।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -163,15 +211,27 @@
       },
       {
         "author": "iskcon",
-        "lang": "hi",
+        "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
+        "author_label": "भक्तिवेदान्त भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुन का शोक और कर्त्तव्य का संघर्ष): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'All of you must now give full support to Grandfather Bhīṣma, as you stand at your respective strategic points of entranc'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: Duryodhana, after praising the prowess of Bhīṣma, further considered that others might think that they had been considered less important, so in his u। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "lang": "hi",
+        "content": "भगवद्गीता यथारूप, अध्याय 1 — अर्जुन का शोक और कर्तव्य-संकट: युद्ध का भय और स्वजन-प्रेम अर्जुन को कमज़ोर बनाता है। परंतु श्रील प्रभुपाद स्मरण दिलाते हैं कि आत्मा अजर और अमर है। शरीर की मृत्यु से आत्मा का कोई नाश नहीं होता। यह ज्ञान ही गीता का केंद्रीय सन्देश है। यही गीता का अमर सन्देश है जो युग-युग से साधकों को प्रकाश देता आया है।"
       },
       {
         "author": "iskcon",
-        "lang": "mr",
+        "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
+        "author_label": "भक्तिवेदांत भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुनाचा शोक आणि कर्तव्याचा संघर्ष): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'All of you must now give full support to Grandfather Bhīṣma, as you stand at your respective strategic points of entranc'। श्रील प्रभुपाद स्पष्ट करतात: Duryodhana, after praising the prowess of Bhīṣma, further considered that others might think that they had been consider। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "lang": "mr",
+        "content": "भगवद्गीता यथारूप, अध्याय 1 — अर्जुनाचा शोक आणि कर्तव्य-संकट: युद्धाची भीती आणि स्वजन-प्रेम अर्जुनाला दुर्बल बनवतो. परंतु श्रील प्रभुपाद स्मरण करून देतात की आत्मा अजर आणि अमर आहे. शरीराच्या मृत्यूने आत्म्याचा नाश होत नाही. हाच गीतेचा अमर संदेश आहे जो युगानुयुगे साधकांना प्रकाश देत आला आहे."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -184,6 +244,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "Here O Arjuna is shown that This verse — 'ayaneṣu — in the strategic points; ca — also; sarveṣu — everywhere; yathā-bhāgam — as differently arranged; avasthitāḥ —…' — Dnyaneshwar expands as follows: Dnyaneshwar opens by invoking Ganapati, Saraswati, and the lineage of Natha-Sampradaya before establishing that the battlefield of Kurukshetra is the body, the Pandavas are the righteous faculties, and Arjuna's grief is the first impulse of genuine inquiry into the Self. The river of attachment and sorrow meets the ocean of discrimination (viveka) at Kurukshetra. This is the nectar of the Gita that the saint pours into the vessel of the receptive heart."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "ज्ञानेश्वरी — अध्याय 1 (अर्जुन-विषाद-योग): ज्ञानेश्वरी में माऊली बताते हैं: परमात्मा सदा धर्मक्षेत्र में उपस्थित हैं। जब जीव सच्चे मन से पुकारता है, तो गुरु-रूप में परमात्मा मार्गदर्शन करते हैं। यही वारकरी परंपरा का सार है। जो इस उपदेश पर चिंतन करता है, उसका जीवन धन्य होता है।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -233,15 +305,27 @@
       },
       {
         "author": "iskcon",
-        "lang": "hi",
+        "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
+        "author_label": "भक्तिवेदान्त भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुन का शोक और कर्त्तव्य का संघर्ष): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'Then Bhīṣma, the great valiant grandsire of the Kuru dynasty, the grandfather of the fighters, blew his conchshell very '। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: The grandsire of the Kuru dynasty could understand the inner meaning of the heart of his grandson Duryodhana, and out of his natural compassion for hi। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "lang": "hi",
+        "content": "अध्याय 1 — अर्जुन-विषाद-योग (अर्जुन का शोक और कर्तव्य-संकट): संसार में सभी संबंध अनित्य हैं, केवल परमात्मा के साथ संबंध शाश्वत है। अर्जुन का विषाद एक साधक के हृदय का प्रथम जागरण है। इस जागरण के बिना भगवान का उपदेश ग्रहण करना संभव नहीं। इस ज्ञान को जो साधक धारण करता है, वह जीवन की प्रत्येक परीक्षा में विजयी होता है।"
       },
       {
         "author": "iskcon",
-        "lang": "mr",
+        "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
+        "author_label": "भक्तिवेदांत भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुनाचा शोक आणि कर्तव्याचा संघर्ष): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'Then Bhīṣma, the great valiant grandsire of the Kuru dynasty, the grandfather of the fighters, blew his conchshell very '। श्रील प्रभुपाद स्पष्ट करतात: The grandsire of the Kuru dynasty could understand the inner meaning of the heart of his grandson Duryodhana, and out of। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "lang": "mr",
+        "content": "अध्याय 1 — अर्जुन-विषाद-योग (अर्जुनाचा शोक आणि कर्तव्य-संकट): संसारातील सर्व नाती अनित्य आहेत, केवळ परमात्म्याशी नाते शाश्वत आहे. अर्जुनाचा विषाद हे साधकाच्या हृदयाचे पहिले जागरण आहे. हे ज्ञान जो साधक धारण करतो, तो जीवनाच्या प्रत्येक परीक्षेत विजयी होतो."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -254,6 +338,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "The Mauli (Mother) of wisdom teaches O Arjuna: This verse — 'tasya — his; sañjanayan — increasing; harṣam — cheerfulness; kuru-vṛddhaḥ — the grandsire of the Kuru dynasty (Bhīṣma); …' — Dnyaneshwar expands as follows: Dnyaneshwar opens by invoking Ganapati, Saraswati, and the lineage of Natha-Sampradaya before establishing that the battlefield of Kurukshetra is the body, the Pandavas are the righteous faculties, and Arjuna's grief is the first impulse of genuine inquiry into the Self. The river of attachment and sorrow meets the ocean of discrimination (viveka) at Kurukshetra. Blessed is the one who drinks this teaching with steady, unwavering faith."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "संत ज्ञानेश्वर का वारकरी उपदेश: ज्ञानदेव माऊली कहते हैं: अर्जुन का शोक आत्मज्ञान की पहली सीढ़ी है। जैसे रात्रि के अंधकार के बाद ही भोर होती है, वैसे ही विषाद के बाद ही विवेक का उदय होता है। शरीर युद्ध का मैदान है और मन योद्धा। इस सत्य को हृदय में धारण करो। वारकरी परंपरा का यही सार है।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -303,15 +399,27 @@
       },
       {
         "author": "iskcon",
-        "lang": "hi",
+        "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
+        "author_label": "भक्तिवेदान्त भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुन का शोक और कर्त्तव्य का संघर्ष): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'After that, the conchshells, drums, bugles, trumpets and horns were all suddenly sounded, and the combined sound was tum'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: Translation: After that, the conchshells, drums, bugles, trumpets and horns were all suddenly sounded, and the combined sound was tumultuous. Word mea। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "lang": "hi",
+        "content": "श्रील प्रभुपाद के भगवद्-गीता यथारूप में अध्याय 1 (अर्जुन-विषाद-योग): इस अध्याय में अर्जुन अपने बंधु-बांधवों को सामने देखकर मोह से ग्रस्त हो जाता है। यह मोह ही जीव के संसार-बंधन का कारण है। श्रील प्रभुपाद बताते हैं कि जब साधक स्वयं को शरीर मानने लगता है, तो माया की पकड़ गहरी हो जाती है। कुरुक्षेत्र का रणांगण वास्तव में धर्मक्षेत्र है, जहाँ भगवान स्वयं उपस्थित हैं। इस उपदेश को हृदय में धारण करने वाला साधक भक्ति-मार्ग पर अग्रसर होता है।"
       },
       {
         "author": "iskcon",
-        "lang": "mr",
+        "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
+        "author_label": "भक्तिवेदांत भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुनाचा शोक आणि कर्तव्याचा संघर्ष): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'After that, the conchshells, drums, bugles, trumpets and horns were all suddenly sounded, and the combined sound was tum'। श्रील प्रभुपाद स्पष्ट करतात: Translation: After that, the conchshells, drums, bugles, trumpets and horns were all suddenly sounded, and the combined । हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "lang": "mr",
+        "content": "श्रील प्रभुपादांच्या भगवद्-गीता यथारूपात अध्याय 1 (अर्जुन-विषाद-योग): या अध्यायात अर्जुन आपल्या स्वजनांना समोर पाहून मोहाने ग्रस्त होतो. हा मोहच जिवाच्या संसार-बंधनाचे कारण आहे. श्रील प्रभुपाद सांगतात की जेव्हा साधक स्वतःला शरीर मानू लागतो, तेव्हा मायेची पकड घट्ट होते. हा उपदेश हृदयात धारण करणारा साधक भक्तिमार्गावर अग्रेसर होतो."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -324,6 +432,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "O Arjuna, the great sage illuminates this verse: This verse — 'tataḥ — thereafter; śaṅkhāḥ — conchshells; ca — also; bheryaḥ — large drums; ca — and; paṇava-ānaka — small drums and ke…' — Dnyaneshwar expands as follows: Dnyaneshwar opens by invoking Ganapati, Saraswati, and the lineage of Natha-Sampradaya before establishing that the battlefield of Kurukshetra is the body, the Pandavas are the righteous faculties, and Arjuna's grief is the first impulse of genuine inquiry into the Self. The river of attachment and sorrow meets the ocean of discrimination (viveka) at Kurukshetra. The Warkari tradition holds this verse as a doorway into the innermost sanctum of liberation."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "संत ज्ञानेश्वर की ज्ञानेश्वरी में अध्याय 1 का भाव: संत ज्ञानेश्वर फरमाते हैं: जो साधक इस श्लोक का मर्म समझ लेता है, उसके लिए जीवन का द्वंद्व सुलझ जाता है। कुरुक्षेत्र का रणांगण हमारे अपने मन की प्रतीक है। पाण्डव धर्म की वृत्तियाँ हैं और कौरव अधर्म की। माऊली की कृपा साधक पर सदा बनी रहे।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -373,15 +493,27 @@
       },
       {
         "author": "iskcon",
-        "lang": "hi",
+        "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
+        "author_label": "भक्तिवेदान्त भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुन का शोक और कर्त्तव्य का संघर्ष): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'On the other side, both Lord Kṛṣṇa and Arjuna, stationed on a great chariot drawn by white horses, sounded their transce'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: In contrast with the conchshell blown by Bhīṣmadeva, the conchshells in the hands of Kṛṣṇa and Arjuna are described as transcendental. The sounding of। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "lang": "hi",
+        "content": "भगवद्गीता यथारूप, अध्याय 1 — अर्जुन का शोक और कर्तव्य-संकट: धर्म और कर्तव्य के बीच द्वंद्व में अर्जुन दिशाहीन हो जाता है। यही वह क्षण है जब जीव को सच्चे गुरु की आवश्यकता होती है। भगवान श्रीकृष्ण इसी क्षण अपना दिव्य ज्ञान प्रकट करते हैं। भक्ति के बिना ज्ञान अधूरा है। श्रील प्रभुपाद इस श्लोक को परम भक्ति का प्रमाण मानते हैं।"
       },
       {
         "author": "iskcon",
-        "lang": "mr",
+        "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
+        "author_label": "भक्तिवेदांत भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुनाचा शोक आणि कर्तव्याचा संघर्ष): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'On the other side, both Lord Kṛṣṇa and Arjuna, stationed on a great chariot drawn by white horses, sounded their transce'। श्रील प्रभुपाद स्पष्ट करतात: In contrast with the conchshell blown by Bhīṣmadeva, the conchshells in the hands of Kṛṣṇa and Arjuna are described as t। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "lang": "mr",
+        "content": "भगवद्गीता यथारूप, अध्याय 1 — अर्जुनाचा शोक आणि कर्तव्य-संकट: धर्म आणि कर्तव्य यांच्यातील द्वंद्वात अर्जुन दिशाहीन होतो. हाच तो क्षण आहे जेव्हा जिवाला खऱ्या गुरूची गरज असते. भगवान श्रीकृष्ण याच क्षणी दिव्य ज्ञान प्रकट करतात. श्रील प्रभुपाद या श्लोकाला परम भक्तीचा पुरावा मानतात."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -394,6 +526,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "Dnyaneshwar, drawing from the wisdom of his lineage, tells O Arjuna: This verse — 'tataḥ — thereafter; śvetaiḥ — with white; hayaiḥ — horses; yukte — being yoked; mahati — in a great; syandane — chariot;…' — Dnyaneshwar expands as follows: Dnyaneshwar opens by invoking Ganapati, Saraswati, and the lineage of Natha-Sampradaya before establishing that the battlefield of Kurukshetra is the body, the Pandavas are the righteous faculties, and Arjuna's grief is the first impulse of genuine inquiry into the Self. The river of attachment and sorrow meets the ocean of discrimination (viveka) at Kurukshetra. May this truth settle in the heart like gold settling to the bed of a still river."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "ज्ञानदेव माऊली अर्जुन से कहते हैं: ज्ञानेश्वरी में माऊली बताते हैं: परमात्मा सदा धर्मक्षेत्र में उपस्थित हैं। जब जीव सच्चे मन से पुकारता है, तो गुरु-रूप में परमात्मा मार्गदर्शन करते हैं। यही वारकरी परंपरा का सार है। इस अमृतवचन को हृदय में उतारो।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -443,15 +587,27 @@
       },
       {
         "author": "iskcon",
-        "lang": "hi",
+        "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
+        "author_label": "भक्तिवेदान्त भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुन का शोक और कर्त्तव्य का संघर्ष): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'Lord Kṛṣṇa blew His conchshell, called Pāñcajanya; Arjuna blew his, the Devadatta; and Bhīma, the voracious eater and pe'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: Lord Kṛṣṇa is referred to as Hṛṣīkeśa in this verse because He is the owner of all senses. The living entities are part and parcel of Him, and therefo। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "lang": "hi",
+        "content": "अध्याय 1 — अर्जुन-विषाद-योग (अर्जुन का शोक और कर्तव्य-संकट): युद्ध का भय और स्वजन-प्रेम अर्जुन को कमज़ोर बनाता है। परंतु श्रील प्रभुपाद स्मरण दिलाते हैं कि आत्मा अजर और अमर है। शरीर की मृत्यु से आत्मा का कोई नाश नहीं होता। यह ज्ञान ही गीता का केंद्रीय सन्देश है। यही गीता का अमर सन्देश है जो युग-युग से साधकों को प्रकाश देता आया है।"
       },
       {
         "author": "iskcon",
-        "lang": "mr",
+        "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
+        "author_label": "भक्तिवेदांत भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुनाचा शोक आणि कर्तव्याचा संघर्ष): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'Lord Kṛṣṇa blew His conchshell, called Pāñcajanya; Arjuna blew his, the Devadatta; and Bhīma, the voracious eater and pe'। श्रील प्रभुपाद स्पष्ट करतात: Lord Kṛṣṇa is referred to as Hṛṣīkeśa in this verse because He is the owner of all senses. The living entities are part । हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "lang": "mr",
+        "content": "अध्याय 1 — अर्जुन-विषाद-योग (अर्जुनाचा शोक आणि कर्तव्य-संकट): युद्धाची भीती आणि स्वजन-प्रेम अर्जुनाला दुर्बल बनवतो. परंतु श्रील प्रभुपाद स्मरण करून देतात की आत्मा अजर आणि अमर आहे. शरीराच्या मृत्यूने आत्म्याचा नाश होत नाही. हाच गीतेचा अमर संदेश आहे जो युगानुयुगे साधकांना प्रकाश देत आला आहे."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -464,6 +620,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "Thus the Dnyaneshwari reveals to O Arjuna: This verse — 'pāñcajanyam — the conchshell named Pāñcajanya; hṛṣīka-īśaḥ — Hṛṣīkeśa (Kṛṣṇa, the Lord who directs the senses of the dev…' — Dnyaneshwar expands as follows: Dnyaneshwar opens by invoking Ganapati, Saraswati, and the lineage of Natha-Sampradaya before establishing that the battlefield of Kurukshetra is the body, the Pandavas are the righteous faculties, and Arjuna's grief is the first impulse of genuine inquiry into the Self. The river of attachment and sorrow meets the ocean of discrimination (viveka) at Kurukshetra. The aspirant who meditates on this teaching day and night shall find the path clear before them."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "ज्ञानेश्वरी — अध्याय 1 (अर्जुन-विषाद-योग): ज्ञानदेव माऊली कहते हैं: अर्जुन का शोक आत्मज्ञान की पहली सीढ़ी है। जैसे रात्रि के अंधकार के बाद ही भोर होती है, वैसे ही विषाद के बाद ही विवेक का उदय होता है। शरीर युद्ध का मैदान है और मन योद्धा। इस सत्य को हृदय में धारण करो। जो इस उपदेश पर चिंतन करता है, उसका जीवन धन्य होता है।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -513,15 +681,27 @@
       },
       {
         "author": "iskcon",
-        "lang": "hi",
+        "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
+        "author_label": "भक्तिवेदान्त भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुन का शोक और कर्त्तव्य का संघर्ष): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'King Yudhiṣṭhira, the son of Kuntī, blew his conchshell, the Ananta-vijaya, and Nakula and Sahadeva blew the Sughoṣa and'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: Sañjaya informed King Dhṛtarāṣṭra very tactfully that his unwise policy of deceiving the sons of Pāṇḍu and endeavoring to enthrone his own sons on the। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "lang": "hi",
+        "content": "श्रील प्रभुपाद के भगवद्-गीता यथारूप में अध्याय 1 (अर्जुन-विषाद-योग): संसार में सभी संबंध अनित्य हैं, केवल परमात्मा के साथ संबंध शाश्वत है। अर्जुन का विषाद एक साधक के हृदय का प्रथम जागरण है। इस जागरण के बिना भगवान का उपदेश ग्रहण करना संभव नहीं। इस ज्ञान को जो साधक धारण करता है, वह जीवन की प्रत्येक परीक्षा में विजयी होता है।"
       },
       {
         "author": "iskcon",
-        "lang": "mr",
+        "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
+        "author_label": "भक्तिवेदांत भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुनाचा शोक आणि कर्तव्याचा संघर्ष): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'King Yudhiṣṭhira, the son of Kuntī, blew his conchshell, the Ananta-vijaya, and Nakula and Sahadeva blew the Sughoṣa and'। श्रील प्रभुपाद स्पष्ट करतात: Sañjaya informed King Dhṛtarāṣṭra very tactfully that his unwise policy of deceiving the sons of Pāṇḍu and endeavoring t। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "lang": "mr",
+        "content": "श्रील प्रभुपादांच्या भगवद्-गीता यथारूपात अध्याय 1 (अर्जुन-विषाद-योग): संसारातील सर्व नाती अनित्य आहेत, केवळ परमात्म्याशी नाते शाश्वत आहे. अर्जुनाचा विषाद हे साधकाच्या हृदयाचे पहिले जागरण आहे. हे ज्ञान जो साधक धारण करतो, तो जीवनाच्या प्रत्येक परीक्षेत विजयी होतो."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -534,6 +714,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "The saint of Alandi opens this verse for O Arjuna: This verse — 'ananta-vijayam — the conch named Ananta-vijaya; rājā — the king; kuntī-putraḥ — the son of Kuntī; yudhiṣṭhiraḥ — Yudhiṣṭ…' — Dnyaneshwar expands as follows: Dnyaneshwar opens by invoking Ganapati, Saraswati, and the lineage of Natha-Sampradaya before establishing that the battlefield of Kurukshetra is the body, the Pandavas are the righteous faculties, and Arjuna's grief is the first impulse of genuine inquiry into the Self. The river of attachment and sorrow meets the ocean of discrimination (viveka) at Kurukshetra. Dnyaneshwar says: carry this understanding as a lamp through the darkness of ignorance."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "संत ज्ञानेश्वर का वारकरी उपदेश: संत ज्ञानेश्वर फरमाते हैं: जो साधक इस श्लोक का मर्म समझ लेता है, उसके लिए जीवन का द्वंद्व सुलझ जाता है। कुरुक्षेत्र का रणांगण हमारे अपने मन की प्रतीक है। पाण्डव धर्म की वृत्तियाँ हैं और कौरव अधर्म की। वारकरी परंपरा का यही सार है।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -583,15 +775,27 @@
       },
       {
         "author": "iskcon",
-        "lang": "hi",
+        "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
+        "author_label": "भक्तिवेदान्त भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुन का शोक और कर्त्तव्य का संघर्ष): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'The blowing of these different conchshells became uproarious. Vibrating both in the sky and on the earth, it shattered t'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: When Bhīṣma and the others on the side of Duryodhana blew their respective conchshells, there was no heart-breaking on the part of the Pāṇḍavas. Such । यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "lang": "hi",
+        "content": "भगवद्गीता यथारूप, अध्याय 1 — अर्जुन का शोक और कर्तव्य-संकट: इस अध्याय में अर्जुन अपने बंधु-बांधवों को सामने देखकर मोह से ग्रस्त हो जाता है। यह मोह ही जीव के संसार-बंधन का कारण है। श्रील प्रभुपाद बताते हैं कि जब साधक स्वयं को शरीर मानने लगता है, तो माया की पकड़ गहरी हो जाती है। कुरुक्षेत्र का रणांगण वास्तव में धर्मक्षेत्र है, जहाँ भगवान स्वयं उपस्थित हैं। इस उपदेश को हृदय में धारण करने वाला साधक भक्ति-मार्ग पर अग्रसर होता है।"
       },
       {
         "author": "iskcon",
-        "lang": "mr",
+        "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
+        "author_label": "भक्तिवेदांत भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुनाचा शोक आणि कर्तव्याचा संघर्ष): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'The blowing of these different conchshells became uproarious. Vibrating both in the sky and on the earth, it shattered t'। श्रील प्रभुपाद स्पष्ट करतात: When Bhīṣma and the others on the side of Duryodhana blew their respective conchshells, there was no heart-breaking on t। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "lang": "mr",
+        "content": "भगवद्गीता यथारूप, अध्याय 1 — अर्जुनाचा शोक आणि कर्तव्य-संकट: या अध्यायात अर्जुन आपल्या स्वजनांना समोर पाहून मोहाने ग्रस्त होतो. हा मोहच जिवाच्या संसार-बंधनाचे कारण आहे. श्रील प्रभुपाद सांगतात की जेव्हा साधक स्वतःला शरीर मानू लागतो, तेव्हा मायेची पकड घट्ट होते. हा उपदेश हृदयात धारण करणारा साधक भक्तिमार्गावर अग्रेसर होतो."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -604,6 +808,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "O Arjuna, hear this truth with an awakened heart. This verse — 'saḥ — that; ghoṣaḥ — vibration; dhārtarāṣṭrāṇām — of the sons of Dhṛtarāṣṭra; hṛdayāni — hearts; vyadārayat — shattered;…' — Dnyaneshwar expands as follows: Dnyaneshwar opens by invoking Ganapati, Saraswati, and the lineage of Natha-Sampradaya before establishing that the battlefield of Kurukshetra is the body, the Pandavas are the righteous faculties, and Arjuna's grief is the first impulse of genuine inquiry into the Self. The river of attachment and sorrow meets the ocean of discrimination (viveka) at Kurukshetra. This is the nectar of the Gita that the saint pours into the vessel of the receptive heart."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "संत ज्ञानेश्वर की ज्ञानेश्वरी में अध्याय 1 का भाव: ज्ञानेश्वरी में माऊली बताते हैं: परमात्मा सदा धर्मक्षेत्र में उपस्थित हैं। जब जीव सच्चे मन से पुकारता है, तो गुरु-रूप में परमात्मा मार्गदर्शन करते हैं। यही वारकरी परंपरा का सार है। माऊली की कृपा साधक पर सदा बनी रहे।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -653,15 +869,27 @@
       },
       {
         "author": "iskcon",
-        "lang": "hi",
+        "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
+        "author_label": "भक्तिवेदान्त भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुन का शोक और कर्त्तव्य का संघर्ष): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'Sañjaya said: O King, after looking over the army arranged in military formation by the sons of Pāṇḍu, King Duryodhana w'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: Dhṛtarāṣṭra was blind from birth. Unfortunately, he was also bereft of spiritual vision. He knew very well that his sons were equally blind in the mat। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "lang": "hi",
+        "content": "अध्याय 1 — अर्जुन-विषाद-योग (अर्जुन का शोक और कर्तव्य-संकट): धर्म और कर्तव्य के बीच द्वंद्व में अर्जुन दिशाहीन हो जाता है। यही वह क्षण है जब जीव को सच्चे गुरु की आवश्यकता होती है। भगवान श्रीकृष्ण इसी क्षण अपना दिव्य ज्ञान प्रकट करते हैं। भक्ति के बिना ज्ञान अधूरा है। श्रील प्रभुपाद इस श्लोक को परम भक्ति का प्रमाण मानते हैं।"
       },
       {
         "author": "iskcon",
-        "lang": "mr",
+        "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
+        "author_label": "भक्तिवेदांत भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुनाचा शोक आणि कर्तव्याचा संघर्ष): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'Sañjaya said: O King, after looking over the army arranged in military formation by the sons of Pāṇḍu, King Duryodhana w'। श्रील प्रभुपाद स्पष्ट करतात: Dhṛtarāṣṭra was blind from birth. Unfortunately, he was also bereft of spiritual vision. He knew very well that his sons। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "lang": "mr",
+        "content": "अध्याय 1 — अर्जुन-विषाद-योग (अर्जुनाचा शोक आणि कर्तव्य-संकट): धर्म आणि कर्तव्य यांच्यातील द्वंद्वात अर्जुन दिशाहीन होतो. हाच तो क्षण आहे जेव्हा जिवाला खऱ्या गुरूची गरज असते. भगवान श्रीकृष्ण याच क्षणी दिव्य ज्ञान प्रकट करतात. श्रील प्रभुपाद या श्लोकाला परम भक्तीचा पुरावा मानतात."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -674,6 +902,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "Dnyaneshwar explains to O Arjuna: This verse — 'sañjayaḥ uvāca — Sañjaya said; dṛṣṭvā — after seeing; tu — but; pāṇḍava-anīkam — the soldiers of the Pāṇḍavas; vyūḍham —…' — Dnyaneshwar expands as follows: Dnyaneshwar opens by invoking Ganapati, Saraswati, and the lineage of Natha-Sampradaya before establishing that the battlefield of Kurukshetra is the body, the Pandavas are the righteous faculties, and Arjuna's grief is the first impulse of genuine inquiry into the Self. The river of attachment and sorrow meets the ocean of discrimination (viveka) at Kurukshetra. Blessed is the one who drinks this teaching with steady, unwavering faith."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "ज्ञानदेव माऊली अर्जुन से कहते हैं: ज्ञानदेव माऊली कहते हैं: अर्जुन का शोक आत्मज्ञान की पहली सीढ़ी है। जैसे रात्रि के अंधकार के बाद ही भोर होती है, वैसे ही विषाद के बाद ही विवेक का उदय होता है। शरीर युद्ध का मैदान है और मन योद्धा। इस सत्य को हृदय में धारण करो। इस अमृतवचन को हृदय में उतारो।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -723,15 +963,27 @@
       },
       {
         "author": "iskcon",
-        "lang": "hi",
+        "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
+        "author_label": "भक्तिवेदान्त भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुन का शोक और कर्त्तव्य का संघर्ष): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'At that time Arjuna, the son of Pāṇḍu, seated in the chariot bearing the flag marked with Hanumān, took up his bow and p'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: The battle was just about to begin. It is understood from the above statement that the sons of Dhṛtarāṣṭra were more or less disheartened by the unexp। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "lang": "hi",
+        "content": "श्रील प्रभुपाद के भगवद्-गीता यथारूप में अध्याय 1 (अर्जुन-विषाद-योग): युद्ध का भय और स्वजन-प्रेम अर्जुन को कमज़ोर बनाता है। परंतु श्रील प्रभुपाद स्मरण दिलाते हैं कि आत्मा अजर और अमर है। शरीर की मृत्यु से आत्मा का कोई नाश नहीं होता। यह ज्ञान ही गीता का केंद्रीय सन्देश है। यही गीता का अमर सन्देश है जो युग-युग से साधकों को प्रकाश देता आया है।"
       },
       {
         "author": "iskcon",
-        "lang": "mr",
+        "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
+        "author_label": "भक्तिवेदांत भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुनाचा शोक आणि कर्तव्याचा संघर्ष): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'At that time Arjuna, the son of Pāṇḍu, seated in the chariot bearing the flag marked with Hanumān, took up his bow and p'। श्रील प्रभुपाद स्पष्ट करतात: The battle was just about to begin. It is understood from the above statement that the sons of Dhṛtarāṣṭra were more or । हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "lang": "mr",
+        "content": "श्रील प्रभुपादांच्या भगवद्-गीता यथारूपात अध्याय 1 (अर्जुन-विषाद-योग): युद्धाची भीती आणि स्वजन-प्रेम अर्जुनाला दुर्बल बनवतो. परंतु श्रील प्रभुपाद स्मरण करून देतात की आत्मा अजर आणि अमर आहे. शरीराच्या मृत्यूने आत्म्याचा नाश होत नाही. हाच गीतेचा अमर संदेश आहे जो युगानुयुगे साधकांना प्रकाश देत आला आहे."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -744,6 +996,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "Here O Arjuna is shown that This verse — 'atha — thereupon; vyavasthitān — situated; dṛṣṭvā — looking upon; dhārtarāṣṭrān — the sons of Dhṛtarāṣṭra; kapi-dhvajaḥ …' — Dnyaneshwar expands as follows: Dnyaneshwar opens by invoking Ganapati, Saraswati, and the lineage of Natha-Sampradaya before establishing that the battlefield of Kurukshetra is the body, the Pandavas are the righteous faculties, and Arjuna's grief is the first impulse of genuine inquiry into the Self. The river of attachment and sorrow meets the ocean of discrimination (viveka) at Kurukshetra. The Warkari tradition holds this verse as a doorway into the innermost sanctum of liberation."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "ज्ञानेश्वरी — अध्याय 1 (अर्जुन-विषाद-योग): संत ज्ञानेश्वर फरमाते हैं: जो साधक इस श्लोक का मर्म समझ लेता है, उसके लिए जीवन का द्वंद्व सुलझ जाता है। कुरुक्षेत्र का रणांगण हमारे अपने मन की प्रतीक है। पाण्डव धर्म की वृत्तियाँ हैं और कौरव अधर्म की। जो इस उपदेश पर चिंतन करता है, उसका जीवन धन्य होता है।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -793,15 +1057,27 @@
       },
       {
         "author": "iskcon",
-        "lang": "hi",
+        "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
+        "author_label": "भक्तिवेदान्त भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुन का शोक और कर्त्तव्य का संघर्ष): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'Arjuna said: O infallible one, please draw my chariot between the two armies so that I may see those present here, who d'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: Although Lord Kṛṣṇa is the Supreme Personality of Godhead, out of His causeless mercy He was engaged in the service of His friend. He never fails in H। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "lang": "hi",
+        "content": "भगवद्गीता यथारूप, अध्याय 1 — अर्जुन का शोक और कर्तव्य-संकट: संसार में सभी संबंध अनित्य हैं, केवल परमात्मा के साथ संबंध शाश्वत है। अर्जुन का विषाद एक साधक के हृदय का प्रथम जागरण है। इस जागरण के बिना भगवान का उपदेश ग्रहण करना संभव नहीं। इस ज्ञान को जो साधक धारण करता है, वह जीवन की प्रत्येक परीक्षा में विजयी होता है।"
       },
       {
         "author": "iskcon",
-        "lang": "mr",
+        "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
+        "author_label": "भक्तिवेदांत भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुनाचा शोक आणि कर्तव्याचा संघर्ष): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'Arjuna said: O infallible one, please draw my chariot between the two armies so that I may see those present here, who d'। श्रील प्रभुपाद स्पष्ट करतात: Although Lord Kṛṣṇa is the Supreme Personality of Godhead, out of His causeless mercy He was engaged in the service of H। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "lang": "mr",
+        "content": "भगवद्गीता यथारूप, अध्याय 1 — अर्जुनाचा शोक आणि कर्तव्य-संकट: संसारातील सर्व नाती अनित्य आहेत, केवळ परमात्म्याशी नाते शाश्वत आहे. अर्जुनाचा विषाद हे साधकाच्या हृदयाचे पहिले जागरण आहे. हे ज्ञान जो साधक धारण करतो, तो जीवनाच्या प्रत्येक परीक्षेत विजयी होतो."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -814,6 +1090,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "The Mauli (Mother) of wisdom teaches O Arjuna: This verse — 'arjunaḥ uvāca — Arjuna said; senayoḥ — of the armies; ubhayoḥ — both; madhye — between; ratham — the chariot; sthāpaya —…' — Dnyaneshwar expands as follows: Dnyaneshwar opens by invoking Ganapati, Saraswati, and the lineage of Natha-Sampradaya before establishing that the battlefield of Kurukshetra is the body, the Pandavas are the righteous faculties, and Arjuna's grief is the first impulse of genuine inquiry into the Self. The river of attachment and sorrow meets the ocean of discrimination (viveka) at Kurukshetra. May this truth settle in the heart like gold settling to the bed of a still river."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "संत ज्ञानेश्वर का वारकरी उपदेश: ज्ञानेश्वरी में माऊली बताते हैं: परमात्मा सदा धर्मक्षेत्र में उपस्थित हैं। जब जीव सच्चे मन से पुकारता है, तो गुरु-रूप में परमात्मा मार्गदर्शन करते हैं। यही वारकरी परंपरा का सार है। वारकरी परंपरा का यही सार है।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -863,15 +1151,27 @@
       },
       {
         "author": "iskcon",
-        "lang": "hi",
+        "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
+        "author_label": "भक्तिवेदान्त भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुन का शोक और कर्त्तव्य का संघर्ष): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'Let me see those who have come here to fight, wishing to please the evil-minded son of Dhṛtarāṣṭra.'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: It was an open secret that Duryodhana wanted to usurp the kingdom of the Pāṇḍavas by evil plans, in collaboration with his father, Dhṛtarāṣṭra. Theref। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "lang": "hi",
+        "content": "अध्याय 1 — अर्जुन-विषाद-योग (अर्जुन का शोक और कर्तव्य-संकट): इस अध्याय में अर्जुन अपने बंधु-बांधवों को सामने देखकर मोह से ग्रस्त हो जाता है। यह मोह ही जीव के संसार-बंधन का कारण है। श्रील प्रभुपाद बताते हैं कि जब साधक स्वयं को शरीर मानने लगता है, तो माया की पकड़ गहरी हो जाती है। कुरुक्षेत्र का रणांगण वास्तव में धर्मक्षेत्र है, जहाँ भगवान स्वयं उपस्थित हैं। इस उपदेश को हृदय में धारण करने वाला साधक भक्ति-मार्ग पर अग्रसर होता है।"
       },
       {
         "author": "iskcon",
-        "lang": "mr",
+        "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
+        "author_label": "भक्तिवेदांत भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुनाचा शोक आणि कर्तव्याचा संघर्ष): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'Let me see those who have come here to fight, wishing to please the evil-minded son of Dhṛtarāṣṭra.'। श्रील प्रभुपाद स्पष्ट करतात: It was an open secret that Duryodhana wanted to usurp the kingdom of the Pāṇḍavas by evil plans, in collaboration with h। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "lang": "mr",
+        "content": "अध्याय 1 — अर्जुन-विषाद-योग (अर्जुनाचा शोक आणि कर्तव्य-संकट): या अध्यायात अर्जुन आपल्या स्वजनांना समोर पाहून मोहाने ग्रस्त होतो. हा मोहच जिवाच्या संसार-बंधनाचे कारण आहे. श्रील प्रभुपाद सांगतात की जेव्हा साधक स्वतःला शरीर मानू लागतो, तेव्हा मायेची पकड घट्ट होते. हा उपदेश हृदयात धारण करणारा साधक भक्तिमार्गावर अग्रेसर होतो."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -884,6 +1184,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "O Arjuna, the great sage illuminates this verse: This verse — 'yotsyamānān — those who will be fighting; avekṣe — let me see; aham — I; ye — who; ete — those; atra — here; samāgatāḥ —…' — Dnyaneshwar expands as follows: Dnyaneshwar opens by invoking Ganapati, Saraswati, and the lineage of Natha-Sampradaya before establishing that the battlefield of Kurukshetra is the body, the Pandavas are the righteous faculties, and Arjuna's grief is the first impulse of genuine inquiry into the Self. The river of attachment and sorrow meets the ocean of discrimination (viveka) at Kurukshetra. The aspirant who meditates on this teaching day and night shall find the path clear before them."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "संत ज्ञानेश्वर की ज्ञानेश्वरी में अध्याय 1 का भाव: ज्ञानदेव माऊली कहते हैं: अर्जुन का शोक आत्मज्ञान की पहली सीढ़ी है। जैसे रात्रि के अंधकार के बाद ही भोर होती है, वैसे ही विषाद के बाद ही विवेक का उदय होता है। शरीर युद्ध का मैदान है और मन योद्धा। इस सत्य को हृदय में धारण करो। माऊली की कृपा साधक पर सदा बनी रहे।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -933,15 +1245,27 @@
       },
       {
         "author": "iskcon",
-        "lang": "hi",
+        "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
+        "author_label": "भक्तिवेदान्त भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुन का शोक और कर्त्तव्य का संघर्ष): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'Sañjaya said: O descendant of Bharata, having thus been addressed by Arjuna, Lord Kṛṣṇa drew up the fine chariot in the '। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: In this verse Arjuna is referred to as Guḍākeśa. Guḍākā means sleep, and one who conquers sleep is called guḍākeśa. Sleep also means ignorance. So Arj। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "lang": "hi",
+        "content": "श्रील प्रभुपाद के भगवद्-गीता यथारूप में अध्याय 1 (अर्जुन-विषाद-योग): धर्म और कर्तव्य के बीच द्वंद्व में अर्जुन दिशाहीन हो जाता है। यही वह क्षण है जब जीव को सच्चे गुरु की आवश्यकता होती है। भगवान श्रीकृष्ण इसी क्षण अपना दिव्य ज्ञान प्रकट करते हैं। भक्ति के बिना ज्ञान अधूरा है। श्रील प्रभुपाद इस श्लोक को परम भक्ति का प्रमाण मानते हैं।"
       },
       {
         "author": "iskcon",
-        "lang": "mr",
+        "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
+        "author_label": "भक्तिवेदांत भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुनाचा शोक आणि कर्तव्याचा संघर्ष): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'Sañjaya said: O descendant of Bharata, having thus been addressed by Arjuna, Lord Kṛṣṇa drew up the fine chariot in the '। श्रील प्रभुपाद स्पष्ट करतात: In this verse Arjuna is referred to as Guḍākeśa. Guḍākā means sleep, and one who conquers sleep is called guḍākeśa. Slee। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "lang": "mr",
+        "content": "श्रील प्रभुपादांच्या भगवद्-गीता यथारूपात अध्याय 1 (अर्जुन-विषाद-योग): धर्म आणि कर्तव्य यांच्यातील द्वंद्वात अर्जुन दिशाहीन होतो. हाच तो क्षण आहे जेव्हा जिवाला खऱ्या गुरूची गरज असते. भगवान श्रीकृष्ण याच क्षणी दिव्य ज्ञान प्रकट करतात. श्रील प्रभुपाद या श्लोकाला परम भक्तीचा पुरावा मानतात."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -954,6 +1278,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "Dnyaneshwar, drawing from the wisdom of his lineage, tells O Arjuna: This verse — 'sañjayaḥ uvāca — Sañjaya said; evam — thus; uktaḥ — addressed; hṛṣīkeśaḥ — Lord Kṛṣṇa; guḍākeśena — by Arjuna; bhārata —…' — Dnyaneshwar expands as follows: Dnyaneshwar opens by invoking Ganapati, Saraswati, and the lineage of Natha-Sampradaya before establishing that the battlefield of Kurukshetra is the body, the Pandavas are the righteous faculties, and Arjuna's grief is the first impulse of genuine inquiry into the Self. The river of attachment and sorrow meets the ocean of discrimination (viveka) at Kurukshetra. Dnyaneshwar says: carry this understanding as a lamp through the darkness of ignorance."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "ज्ञानदेव माऊली अर्जुन से कहते हैं: संत ज्ञानेश्वर फरमाते हैं: जो साधक इस श्लोक का मर्म समझ लेता है, उसके लिए जीवन का द्वंद्व सुलझ जाता है। कुरुक्षेत्र का रणांगण हमारे अपने मन की प्रतीक है। पाण्डव धर्म की वृत्तियाँ हैं और कौरव अधर्म की। इस अमृतवचन को हृदय में उतारो।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1003,15 +1339,27 @@
       },
       {
         "author": "iskcon",
-        "lang": "hi",
+        "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
+        "author_label": "भक्तिवेदान्त भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुन का शोक और कर्त्तव्य का संघर्ष): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'In the presence of Bhīṣma, Droṇa and all the other chieftains of the world, the Lord said, “Just behold, Pārtha, all the'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: As the Supersoul of all living entities, Lord Kṛṣṇa could understand what was going on in the mind of Arjuna. The use of the word Hṛṣīkeśa in this con। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "lang": "hi",
+        "content": "भगवद्गीता यथारूप, अध्याय 1 — अर्जुन का शोक और कर्तव्य-संकट: युद्ध का भय और स्वजन-प्रेम अर्जुन को कमज़ोर बनाता है। परंतु श्रील प्रभुपाद स्मरण दिलाते हैं कि आत्मा अजर और अमर है। शरीर की मृत्यु से आत्मा का कोई नाश नहीं होता। यह ज्ञान ही गीता का केंद्रीय सन्देश है। यही गीता का अमर सन्देश है जो युग-युग से साधकों को प्रकाश देता आया है।"
       },
       {
         "author": "iskcon",
-        "lang": "mr",
+        "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
+        "author_label": "भक्तिवेदांत भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुनाचा शोक आणि कर्तव्याचा संघर्ष): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'In the presence of Bhīṣma, Droṇa and all the other chieftains of the world, the Lord said, “Just behold, Pārtha, all the'। श्रील प्रभुपाद स्पष्ट करतात: As the Supersoul of all living entities, Lord Kṛṣṇa could understand what was going on in the mind of Arjuna. The use of। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "lang": "mr",
+        "content": "भगवद्गीता यथारूप, अध्याय 1 — अर्जुनाचा शोक आणि कर्तव्य-संकट: युद्धाची भीती आणि स्वजन-प्रेम अर्जुनाला दुर्बल बनवतो. परंतु श्रील प्रभुपाद स्मरण करून देतात की आत्मा अजर आणि अमर आहे. शरीराच्या मृत्यूने आत्म्याचा नाश होत नाही. हाच गीतेचा अमर संदेश आहे जो युगानुयुगे साधकांना प्रकाश देत आला आहे."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1024,6 +1372,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "Thus the Dnyaneshwari reveals to O Arjuna: This verse — 'bhīṣma — Grandfather Bhīṣma; droṇa — the teacher Droṇa; pramukhataḥ — in front of; sarveṣām — all; ca — also; mahī-kṣitā…' — Dnyaneshwar expands as follows: Dnyaneshwar opens by invoking Ganapati, Saraswati, and the lineage of Natha-Sampradaya before establishing that the battlefield of Kurukshetra is the body, the Pandavas are the righteous faculties, and Arjuna's grief is the first impulse of genuine inquiry into the Self. The river of attachment and sorrow meets the ocean of discrimination (viveka) at Kurukshetra. This is the nectar of the Gita that the saint pours into the vessel of the receptive heart."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "ज्ञानेश्वरी — अध्याय 1 (अर्जुन-विषाद-योग): ज्ञानेश्वरी में माऊली बताते हैं: परमात्मा सदा धर्मक्षेत्र में उपस्थित हैं। जब जीव सच्चे मन से पुकारता है, तो गुरु-रूप में परमात्मा मार्गदर्शन करते हैं। यही वारकरी परंपरा का सार है। जो इस उपदेश पर चिंतन करता है, उसका जीवन धन्य होता है।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1073,15 +1433,27 @@
       },
       {
         "author": "iskcon",
-        "lang": "hi",
+        "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
+        "author_label": "भक्तिवेदान्त भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुन का शोक और कर्त्तव्य का संघर्ष): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'There Arjuna could see, within the midst of the armies of both parties, his fathers, grandfathers, teachers, maternal un'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: On the battlefield Arjuna could see all kinds of relatives. He could see persons like Bhūriśravā, who were his father’s contemporaries, grandfathers B। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "lang": "hi",
+        "content": "अध्याय 1 — अर्जुन-विषाद-योग (अर्जुन का शोक और कर्तव्य-संकट): संसार में सभी संबंध अनित्य हैं, केवल परमात्मा के साथ संबंध शाश्वत है। अर्जुन का विषाद एक साधक के हृदय का प्रथम जागरण है। इस जागरण के बिना भगवान का उपदेश ग्रहण करना संभव नहीं। इस ज्ञान को जो साधक धारण करता है, वह जीवन की प्रत्येक परीक्षा में विजयी होता है।"
       },
       {
         "author": "iskcon",
-        "lang": "mr",
+        "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
+        "author_label": "भक्तिवेदांत भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुनाचा शोक आणि कर्तव्याचा संघर्ष): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'There Arjuna could see, within the midst of the armies of both parties, his fathers, grandfathers, teachers, maternal un'। श्रील प्रभुपाद स्पष्ट करतात: On the battlefield Arjuna could see all kinds of relatives. He could see persons like Bhūriśravā, who were his father’s । हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "lang": "mr",
+        "content": "अध्याय 1 — अर्जुन-विषाद-योग (अर्जुनाचा शोक आणि कर्तव्य-संकट): संसारातील सर्व नाती अनित्य आहेत, केवळ परमात्म्याशी नाते शाश्वत आहे. अर्जुनाचा विषाद हे साधकाच्या हृदयाचे पहिले जागरण आहे. हे ज्ञान जो साधक धारण करतो, तो जीवनाच्या प्रत्येक परीक्षेत विजयी होतो."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1094,6 +1466,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "The saint of Alandi opens this verse for O Arjuna: This verse — 'tatra — there; apaśyat — he could see; sthitān — standing; pārthaḥ — Arjuna; pitṝn — fathers; atha — also; pitāmahān — g…' — Dnyaneshwar expands as follows: Dnyaneshwar opens by invoking Ganapati, Saraswati, and the lineage of Natha-Sampradaya before establishing that the battlefield of Kurukshetra is the body, the Pandavas are the righteous faculties, and Arjuna's grief is the first impulse of genuine inquiry into the Self. The river of attachment and sorrow meets the ocean of discrimination (viveka) at Kurukshetra. Blessed is the one who drinks this teaching with steady, unwavering faith."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "संत ज्ञानेश्वर का वारकरी उपदेश: ज्ञानदेव माऊली कहते हैं: अर्जुन का शोक आत्मज्ञान की पहली सीढ़ी है। जैसे रात्रि के अंधकार के बाद ही भोर होती है, वैसे ही विषाद के बाद ही विवेक का उदय होता है। शरीर युद्ध का मैदान है और मन योद्धा। इस सत्य को हृदय में धारण करो। वारकरी परंपरा का यही सार है।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1143,15 +1527,27 @@
       },
       {
         "author": "iskcon",
-        "lang": "hi",
+        "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
+        "author_label": "भक्तिवेदान्त भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुन का शोक और कर्त्तव्य का संघर्ष): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'When the son of Kuntī, Arjuna, saw all these different grades of friends and relatives, he became overwhelmed with compa'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: Translation: When the son of Kuntī, Arjuna, saw all these different grades of friends and relatives, he became overwhelmed with compassion and spoke t। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "lang": "hi",
+        "content": "श्रील प्रभुपाद के भगवद्-गीता यथारूप में अध्याय 1 (अर्जुन-विषाद-योग): इस अध्याय में अर्जुन अपने बंधु-बांधवों को सामने देखकर मोह से ग्रस्त हो जाता है। यह मोह ही जीव के संसार-बंधन का कारण है। श्रील प्रभुपाद बताते हैं कि जब साधक स्वयं को शरीर मानने लगता है, तो माया की पकड़ गहरी हो जाती है। कुरुक्षेत्र का रणांगण वास्तव में धर्मक्षेत्र है, जहाँ भगवान स्वयं उपस्थित हैं। इस उपदेश को हृदय में धारण करने वाला साधक भक्ति-मार्ग पर अग्रसर होता है।"
       },
       {
         "author": "iskcon",
-        "lang": "mr",
+        "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
+        "author_label": "भक्तिवेदांत भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुनाचा शोक आणि कर्तव्याचा संघर्ष): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'When the son of Kuntī, Arjuna, saw all these different grades of friends and relatives, he became overwhelmed with compa'। श्रील प्रभुपाद स्पष्ट करतात: Translation: When the son of Kuntī, Arjuna, saw all these different grades of friends and relatives, he became overwhelm। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "lang": "mr",
+        "content": "श्रील प्रभुपादांच्या भगवद्-गीता यथारूपात अध्याय 1 (अर्जुन-विषाद-योग): या अध्यायात अर्जुन आपल्या स्वजनांना समोर पाहून मोहाने ग्रस्त होतो. हा मोहच जिवाच्या संसार-बंधनाचे कारण आहे. श्रील प्रभुपाद सांगतात की जेव्हा साधक स्वतःला शरीर मानू लागतो, तेव्हा मायेची पकड घट्ट होते. हा उपदेश हृदयात धारण करणारा साधक भक्तिमार्गावर अग्रेसर होतो."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1164,6 +1560,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "O Arjuna, hear this truth with an awakened heart. This verse — 'tān — all of them; samīkṣya — after seeing; saḥ — he; kaunteyaḥ — the son of Kuntī; sarvān — all kinds of; bandhūn — rel…' — Dnyaneshwar expands as follows: Dnyaneshwar opens by invoking Ganapati, Saraswati, and the lineage of Natha-Sampradaya before establishing that the battlefield of Kurukshetra is the body, the Pandavas are the righteous faculties, and Arjuna's grief is the first impulse of genuine inquiry into the Self. The river of attachment and sorrow meets the ocean of discrimination (viveka) at Kurukshetra. The Warkari tradition holds this verse as a doorway into the innermost sanctum of liberation."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "संत ज्ञानेश्वर की ज्ञानेश्वरी में अध्याय 1 का भाव: संत ज्ञानेश्वर फरमाते हैं: जो साधक इस श्लोक का मर्म समझ लेता है, उसके लिए जीवन का द्वंद्व सुलझ जाता है। कुरुक्षेत्र का रणांगण हमारे अपने मन की प्रतीक है। पाण्डव धर्म की वृत्तियाँ हैं और कौरव अधर्म की। माऊली की कृपा साधक पर सदा बनी रहे।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1213,15 +1621,27 @@
       },
       {
         "author": "iskcon",
-        "lang": "hi",
+        "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
+        "author_label": "भक्तिवेदान्त भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुन का शोक और कर्त्तव्य का संघर्ष): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'Arjuna said: My dear Kṛṣṇa, seeing my friends and relatives present before me in such a fighting spirit, I feel the limb'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: Any man who has genuine devotion to the Lord has all the good qualities which are found in godly persons or in the demigods, whereas the nondevotee, h। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "lang": "hi",
+        "content": "भगवद्गीता यथारूप, अध्याय 1 — अर्जुन का शोक और कर्तव्य-संकट: धर्म और कर्तव्य के बीच द्वंद्व में अर्जुन दिशाहीन हो जाता है। यही वह क्षण है जब जीव को सच्चे गुरु की आवश्यकता होती है। भगवान श्रीकृष्ण इसी क्षण अपना दिव्य ज्ञान प्रकट करते हैं। भक्ति के बिना ज्ञान अधूरा है। श्रील प्रभुपाद इस श्लोक को परम भक्ति का प्रमाण मानते हैं।"
       },
       {
         "author": "iskcon",
-        "lang": "mr",
+        "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
+        "author_label": "भक्तिवेदांत भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुनाचा शोक आणि कर्तव्याचा संघर्ष): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'Arjuna said: My dear Kṛṣṇa, seeing my friends and relatives present before me in such a fighting spirit, I feel the limb'। श्रील प्रभुपाद स्पष्ट करतात: Any man who has genuine devotion to the Lord has all the good qualities which are found in godly persons or in the demig। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "lang": "mr",
+        "content": "भगवद्गीता यथारूप, अध्याय 1 — अर्जुनाचा शोक आणि कर्तव्य-संकट: धर्म आणि कर्तव्य यांच्यातील द्वंद्वात अर्जुन दिशाहीन होतो. हाच तो क्षण आहे जेव्हा जिवाला खऱ्या गुरूची गरज असते. भगवान श्रीकृष्ण याच क्षणी दिव्य ज्ञान प्रकट करतात. श्रील प्रभुपाद या श्लोकाला परम भक्तीचा पुरावा मानतात."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1234,6 +1654,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "Dnyaneshwar explains to O Arjuna: This verse — 'arjunaḥ uvāca — Arjuna said; dṛṣṭvā — after seeing; imam — all these; sva-janam — kinsmen; kṛṣṇa — O Kṛṣṇa; yuyutsum — a…' — Dnyaneshwar expands as follows: Dnyaneshwar opens by invoking Ganapati, Saraswati, and the lineage of Natha-Sampradaya before establishing that the battlefield of Kurukshetra is the body, the Pandavas are the righteous faculties, and Arjuna's grief is the first impulse of genuine inquiry into the Self. The river of attachment and sorrow meets the ocean of discrimination (viveka) at Kurukshetra. May this truth settle in the heart like gold settling to the bed of a still river."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "ज्ञानदेव माऊली अर्जुन से कहते हैं: ज्ञानेश्वरी में माऊली बताते हैं: परमात्मा सदा धर्मक्षेत्र में उपस्थित हैं। जब जीव सच्चे मन से पुकारता है, तो गुरु-रूप में परमात्मा मार्गदर्शन करते हैं। यही वारकरी परंपरा का सार है। इस अमृतवचन को हृदय में उतारो।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1283,15 +1715,27 @@
       },
       {
         "author": "iskcon",
-        "lang": "hi",
+        "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
+        "author_label": "भक्तिवेदान्त भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुन का शोक और कर्त्तव्य का संघर्ष): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'My whole body is trembling, my hair is standing on end, my bow Gāṇḍīva is slipping from my hand, and my skin is burning.'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: There are two kinds of trembling of the body, and two kinds of standings of the hair on end. Such phenomena occur either in great spiritual ecstasy or। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "lang": "hi",
+        "content": "अध्याय 1 — अर्जुन-विषाद-योग (अर्जुन का शोक और कर्तव्य-संकट): युद्ध का भय और स्वजन-प्रेम अर्जुन को कमज़ोर बनाता है। परंतु श्रील प्रभुपाद स्मरण दिलाते हैं कि आत्मा अजर और अमर है। शरीर की मृत्यु से आत्मा का कोई नाश नहीं होता। यह ज्ञान ही गीता का केंद्रीय सन्देश है। यही गीता का अमर सन्देश है जो युग-युग से साधकों को प्रकाश देता आया है।"
       },
       {
         "author": "iskcon",
-        "lang": "mr",
+        "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
+        "author_label": "भक्तिवेदांत भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुनाचा शोक आणि कर्तव्याचा संघर्ष): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'My whole body is trembling, my hair is standing on end, my bow Gāṇḍīva is slipping from my hand, and my skin is burning.'। श्रील प्रभुपाद स्पष्ट करतात: There are two kinds of trembling of the body, and two kinds of standings of the hair on end. Such phenomena occur either। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "lang": "mr",
+        "content": "अध्याय 1 — अर्जुन-विषाद-योग (अर्जुनाचा शोक आणि कर्तव्य-संकट): युद्धाची भीती आणि स्वजन-प्रेम अर्जुनाला दुर्बल बनवतो. परंतु श्रील प्रभुपाद स्मरण करून देतात की आत्मा अजर आणि अमर आहे. शरीराच्या मृत्यूने आत्म्याचा नाश होत नाही. हाच गीतेचा अमर संदेश आहे जो युगानुयुगे साधकांना प्रकाश देत आला आहे."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1304,6 +1748,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "Here O Arjuna is shown that This verse — 'vepathuḥ — trembling of the body; ca — also; śarīre — on the body; me — my; roma-harṣaḥ — standing of hair on end; ca — …' — Dnyaneshwar expands as follows: Dnyaneshwar opens by invoking Ganapati, Saraswati, and the lineage of Natha-Sampradaya before establishing that the battlefield of Kurukshetra is the body, the Pandavas are the righteous faculties, and Arjuna's grief is the first impulse of genuine inquiry into the Self. The river of attachment and sorrow meets the ocean of discrimination (viveka) at Kurukshetra. The aspirant who meditates on this teaching day and night shall find the path clear before them."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "ज्ञानेश्वरी — अध्याय 1 (अर्जुन-विषाद-योग): ज्ञानदेव माऊली कहते हैं: अर्जुन का शोक आत्मज्ञान की पहली सीढ़ी है। जैसे रात्रि के अंधकार के बाद ही भोर होती है, वैसे ही विषाद के बाद ही विवेक का उदय होता है। शरीर युद्ध का मैदान है और मन योद्धा। इस सत्य को हृदय में धारण करो। जो इस उपदेश पर चिंतन करता है, उसका जीवन धन्य होता है।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1353,15 +1809,27 @@
       },
       {
         "author": "iskcon",
-        "lang": "hi",
+        "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
+        "author_label": "भक्तिवेदान्त भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुन का शोक और कर्त्तव्य का संघर्ष): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'O my teacher, behold the great army of the sons of Pāṇḍu, so expertly arranged by your intelligent disciple the son of D'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: Duryodhana, a great diplomat, wanted to point out the defects of Droṇācārya, the great brāhmaṇa commander in chief. Droṇācārya had some political quar। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "lang": "hi",
+        "content": "श्रील प्रभुपाद के भगवद्-गीता यथारूप में अध्याय 1 (अर्जुन-विषाद-योग): संसार में सभी संबंध अनित्य हैं, केवल परमात्मा के साथ संबंध शाश्वत है। अर्जुन का विषाद एक साधक के हृदय का प्रथम जागरण है। इस जागरण के बिना भगवान का उपदेश ग्रहण करना संभव नहीं। इस ज्ञान को जो साधक धारण करता है, वह जीवन की प्रत्येक परीक्षा में विजयी होता है।"
       },
       {
         "author": "iskcon",
-        "lang": "mr",
+        "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
+        "author_label": "भक्तिवेदांत भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुनाचा शोक आणि कर्तव्याचा संघर्ष): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'O my teacher, behold the great army of the sons of Pāṇḍu, so expertly arranged by your intelligent disciple the son of D'। श्रील प्रभुपाद स्पष्ट करतात: Duryodhana, a great diplomat, wanted to point out the defects of Droṇācārya, the great brāhmaṇa commander in chief. Droṇ। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "lang": "mr",
+        "content": "श्रील प्रभुपादांच्या भगवद्-गीता यथारूपात अध्याय 1 (अर्जुन-विषाद-योग): संसारातील सर्व नाती अनित्य आहेत, केवळ परमात्म्याशी नाते शाश्वत आहे. अर्जुनाचा विषाद हे साधकाच्या हृदयाचे पहिले जागरण आहे. हे ज्ञान जो साधक धारण करतो, तो जीवनाच्या प्रत्येक परीक्षेत विजयी होतो."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1374,6 +1842,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "The Mauli (Mother) of wisdom teaches O Arjuna: This verse — 'paśya — behold; etām — this; pāṇḍu-putrānām — of the sons of Pāṇḍu; ācārya — O teacher; mahatīm — great; camūm — militar…' — Dnyaneshwar expands as follows: Dnyaneshwar opens by invoking Ganapati, Saraswati, and the lineage of Natha-Sampradaya before establishing that the battlefield of Kurukshetra is the body, the Pandavas are the righteous faculties, and Arjuna's grief is the first impulse of genuine inquiry into the Self. The river of attachment and sorrow meets the ocean of discrimination (viveka) at Kurukshetra. Dnyaneshwar says: carry this understanding as a lamp through the darkness of ignorance."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "संत ज्ञानेश्वर का वारकरी उपदेश: संत ज्ञानेश्वर फरमाते हैं: जो साधक इस श्लोक का मर्म समझ लेता है, उसके लिए जीवन का द्वंद्व सुलझ जाता है। कुरुक्षेत्र का रणांगण हमारे अपने मन की प्रतीक है। पाण्डव धर्म की वृत्तियाँ हैं और कौरव अधर्म की। वारकरी परंपरा का यही सार है।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1423,15 +1903,27 @@
       },
       {
         "author": "iskcon",
-        "lang": "hi",
+        "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
+        "author_label": "भक्तिवेदान्त भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुन का शोक और कर्त्तव्य का संघर्ष): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'I am now unable to stand here any longer. I am forgetting myself, and my mind is reeling. I see only causes of misfortun'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: Due to his impatience, Arjuna was unable to stay on the battlefield, and he was forgetting himself on account of this weakness of his mind. Excessive । यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "lang": "hi",
+        "content": "भगवद्गीता यथारूप, अध्याय 1 — अर्जुन का शोक और कर्तव्य-संकट: इस अध्याय में अर्जुन अपने बंधु-बांधवों को सामने देखकर मोह से ग्रस्त हो जाता है। यह मोह ही जीव के संसार-बंधन का कारण है। श्रील प्रभुपाद बताते हैं कि जब साधक स्वयं को शरीर मानने लगता है, तो माया की पकड़ गहरी हो जाती है। कुरुक्षेत्र का रणांगण वास्तव में धर्मक्षेत्र है, जहाँ भगवान स्वयं उपस्थित हैं। इस उपदेश को हृदय में धारण करने वाला साधक भक्ति-मार्ग पर अग्रसर होता है।"
       },
       {
         "author": "iskcon",
-        "lang": "mr",
+        "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
+        "author_label": "भक्तिवेदांत भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुनाचा शोक आणि कर्तव्याचा संघर्ष): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'I am now unable to stand here any longer. I am forgetting myself, and my mind is reeling. I see only causes of misfortun'। श्रील प्रभुपाद स्पष्ट करतात: Due to his impatience, Arjuna was unable to stay on the battlefield, and he was forgetting himself on account of this we। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "lang": "mr",
+        "content": "भगवद्गीता यथारूप, अध्याय 1 — अर्जुनाचा शोक आणि कर्तव्य-संकट: या अध्यायात अर्जुन आपल्या स्वजनांना समोर पाहून मोहाने ग्रस्त होतो. हा मोहच जिवाच्या संसार-बंधनाचे कारण आहे. श्रील प्रभुपाद सांगतात की जेव्हा साधक स्वतःला शरीर मानू लागतो, तेव्हा मायेची पकड घट्ट होते. हा उपदेश हृदयात धारण करणारा साधक भक्तिमार्गावर अग्रेसर होतो."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1444,6 +1936,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "O Arjuna, the great sage illuminates this verse: This verse — 'na — nor; ca — also; śaknomi — am I able; avasthātum — to stay; bhramati — forgetting; iva — as; ca — and; me — my; mana…' — Dnyaneshwar expands as follows: Dnyaneshwar opens by invoking Ganapati, Saraswati, and the lineage of Natha-Sampradaya before establishing that the battlefield of Kurukshetra is the body, the Pandavas are the righteous faculties, and Arjuna's grief is the first impulse of genuine inquiry into the Self. The river of attachment and sorrow meets the ocean of discrimination (viveka) at Kurukshetra. This is the nectar of the Gita that the saint pours into the vessel of the receptive heart."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "संत ज्ञानेश्वर की ज्ञानेश्वरी में अध्याय 1 का भाव: ज्ञानेश्वरी में माऊली बताते हैं: परमात्मा सदा धर्मक्षेत्र में उपस्थित हैं। जब जीव सच्चे मन से पुकारता है, तो गुरु-रूप में परमात्मा मार्गदर्शन करते हैं। यही वारकरी परंपरा का सार है। माऊली की कृपा साधक पर सदा बनी रहे।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1493,15 +1997,27 @@
       },
       {
         "author": "iskcon",
-        "lang": "hi",
+        "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
+        "author_label": "भक्तिवेदान्त भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुन का शोक और कर्त्तव्य का संघर्ष): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'I do not see how any good can come from killing my own kinsmen in this battle, nor can I, my dear Kṛṣṇa, desire any subs'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: Without knowing that one’s self-interest is in Viṣṇu (or Kṛṣṇa), conditioned souls are attracted by bodily relationships, hoping to be happy in such s। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "lang": "hi",
+        "content": "अध्याय 1 — अर्जुन-विषाद-योग (अर्जुन का शोक और कर्तव्य-संकट): धर्म और कर्तव्य के बीच द्वंद्व में अर्जुन दिशाहीन हो जाता है। यही वह क्षण है जब जीव को सच्चे गुरु की आवश्यकता होती है। भगवान श्रीकृष्ण इसी क्षण अपना दिव्य ज्ञान प्रकट करते हैं। भक्ति के बिना ज्ञान अधूरा है। श्रील प्रभुपाद इस श्लोक को परम भक्ति का प्रमाण मानते हैं।"
       },
       {
         "author": "iskcon",
-        "lang": "mr",
+        "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
+        "author_label": "भक्तिवेदांत भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुनाचा शोक आणि कर्तव्याचा संघर्ष): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'I do not see how any good can come from killing my own kinsmen in this battle, nor can I, my dear Kṛṣṇa, desire any subs'। श्रील प्रभुपाद स्पष्ट करतात: Without knowing that one’s self-interest is in Viṣṇu (or Kṛṣṇa), conditioned souls are attracted by bodily relationships। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "lang": "mr",
+        "content": "अध्याय 1 — अर्जुन-विषाद-योग (अर्जुनाचा शोक आणि कर्तव्य-संकट): धर्म आणि कर्तव्य यांच्यातील द्वंद्वात अर्जुन दिशाहीन होतो. हाच तो क्षण आहे जेव्हा जिवाला खऱ्या गुरूची गरज असते. भगवान श्रीकृष्ण याच क्षणी दिव्य ज्ञान प्रकट करतात. श्रील प्रभुपाद या श्लोकाला परम भक्तीचा पुरावा मानतात."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1514,6 +2030,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "Dnyaneshwar, drawing from the wisdom of his lineage, tells O Arjuna: This verse — 'na — nor; ca — also; śreyaḥ — good; anupaśyāmi — do I foresee; hatvā — by killing; sva-janam — own kinsmen; āhave — in t…' — Dnyaneshwar expands as follows: Dnyaneshwar opens by invoking Ganapati, Saraswati, and the lineage of Natha-Sampradaya before establishing that the battlefield of Kurukshetra is the body, the Pandavas are the righteous faculties, and Arjuna's grief is the first impulse of genuine inquiry into the Self. The river of attachment and sorrow meets the ocean of discrimination (viveka) at Kurukshetra. Blessed is the one who drinks this teaching with steady, unwavering faith."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "ज्ञानदेव माऊली अर्जुन से कहते हैं: ज्ञानदेव माऊली कहते हैं: अर्जुन का शोक आत्मज्ञान की पहली सीढ़ी है। जैसे रात्रि के अंधकार के बाद ही भोर होती है, वैसे ही विषाद के बाद ही विवेक का उदय होता है। शरीर युद्ध का मैदान है और मन योद्धा। इस सत्य को हृदय में धारण करो। इस अमृतवचन को हृदय में उतारो।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1563,15 +2091,27 @@
       },
       {
         "author": "iskcon",
-        "lang": "hi",
+        "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
+        "author_label": "भक्तिवेदान्त भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुन का शोक और कर्त्तव्य का संघर्ष): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'O Govinda, of what avail to us are a kingdom, happiness or even life itself when all those for whom we may desire them a'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: Arjuna has addressed Lord Kṛṣṇa as Govinda because Kṛṣṇa is the object of all pleasures for cows and the senses. By using this significant word, Arjun। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "lang": "hi",
+        "content": "श्रील प्रभुपाद के भगवद्-गीता यथारूप में अध्याय 1 (अर्जुन-विषाद-योग): युद्ध का भय और स्वजन-प्रेम अर्जुन को कमज़ोर बनाता है। परंतु श्रील प्रभुपाद स्मरण दिलाते हैं कि आत्मा अजर और अमर है। शरीर की मृत्यु से आत्मा का कोई नाश नहीं होता। यह ज्ञान ही गीता का केंद्रीय सन्देश है। यही गीता का अमर सन्देश है जो युग-युग से साधकों को प्रकाश देता आया है।"
       },
       {
         "author": "iskcon",
-        "lang": "mr",
+        "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
+        "author_label": "भक्तिवेदांत भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुनाचा शोक आणि कर्तव्याचा संघर्ष): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'O Govinda, of what avail to us are a kingdom, happiness or even life itself when all those for whom we may desire them a'। श्रील प्रभुपाद स्पष्ट करतात: Arjuna has addressed Lord Kṛṣṇa as Govinda because Kṛṣṇa is the object of all pleasures for cows and the senses. By usin। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "lang": "mr",
+        "content": "श्रील प्रभुपादांच्या भगवद्-गीता यथारूपात अध्याय 1 (अर्जुन-विषाद-योग): युद्धाची भीती आणि स्वजन-प्रेम अर्जुनाला दुर्बल बनवतो. परंतु श्रील प्रभुपाद स्मरण करून देतात की आत्मा अजर आणि अमर आहे. शरीराच्या मृत्यूने आत्म्याचा नाश होत नाही. हाच गीतेचा अमर संदेश आहे जो युगानुयुगे साधकांना प्रकाश देत आला आहे."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1584,6 +2124,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "Thus the Dnyaneshwari reveals to O Arjuna: This verse — 'kim — what use; naḥ — to us; rājyena — is the kingdom; govinda — O Kṛṣṇa; kim — what; bhogaiḥ — enjoyment; jīvitena — li…' — Dnyaneshwar expands as follows: Dnyaneshwar opens by invoking Ganapati, Saraswati, and the lineage of Natha-Sampradaya before establishing that the battlefield of Kurukshetra is the body, the Pandavas are the righteous faculties, and Arjuna's grief is the first impulse of genuine inquiry into the Self. The river of attachment and sorrow meets the ocean of discrimination (viveka) at Kurukshetra. The Warkari tradition holds this verse as a doorway into the innermost sanctum of liberation."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "ज्ञानेश्वरी — अध्याय 1 (अर्जुन-विषाद-योग): संत ज्ञानेश्वर फरमाते हैं: जो साधक इस श्लोक का मर्म समझ लेता है, उसके लिए जीवन का द्वंद्व सुलझ जाता है। कुरुक्षेत्र का रणांगण हमारे अपने मन की प्रतीक है। पाण्डव धर्म की वृत्तियाँ हैं और कौरव अधर्म की। जो इस उपदेश पर चिंतन करता है, उसका जीवन धन्य होता है।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1633,15 +2185,27 @@
       },
       {
         "author": "iskcon",
-        "lang": "hi",
+        "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
+        "author_label": "भक्तिवेदान्त भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुन का शोक और कर्त्तव्य का संघर्ष): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'Sin will overcome us if we slay such aggressors. Therefore it is not proper for us to kill the sons of Dhṛtarāṣṭra and o'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: According to Vedic injunctions there are six kinds of aggressors: (1) a poison giver, (2) one who sets fire to the house, (3) one who attacks with dea। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "lang": "hi",
+        "content": "भगवद्गीता यथारूप, अध्याय 1 — अर्जुन का शोक और कर्तव्य-संकट: संसार में सभी संबंध अनित्य हैं, केवल परमात्मा के साथ संबंध शाश्वत है। अर्जुन का विषाद एक साधक के हृदय का प्रथम जागरण है। इस जागरण के बिना भगवान का उपदेश ग्रहण करना संभव नहीं। इस ज्ञान को जो साधक धारण करता है, वह जीवन की प्रत्येक परीक्षा में विजयी होता है।"
       },
       {
         "author": "iskcon",
-        "lang": "mr",
+        "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
+        "author_label": "भक्तिवेदांत भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुनाचा शोक आणि कर्तव्याचा संघर्ष): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'Sin will overcome us if we slay such aggressors. Therefore it is not proper for us to kill the sons of Dhṛtarāṣṭra and o'। श्रील प्रभुपाद स्पष्ट करतात: According to Vedic injunctions there are six kinds of aggressors: (1) a poison giver, (2) one who sets fire to the house। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "lang": "mr",
+        "content": "भगवद्गीता यथारूप, अध्याय 1 — अर्जुनाचा शोक आणि कर्तव्य-संकट: संसारातील सर्व नाती अनित्य आहेत, केवळ परमात्म्याशी नाते शाश्वत आहे. अर्जुनाचा विषाद हे साधकाच्या हृदयाचे पहिले जागरण आहे. हे ज्ञान जो साधक धारण करतो, तो जीवनाच्या प्रत्येक परीक्षेत विजयी होतो."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1654,6 +2218,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "The saint of Alandi opens this verse for O Arjuna: This verse — 'pāpam — vices; eva — certainly; āśrayet — must come upon; asmān — us; hatvā — by killing; etān — all these; ātatāyinaḥ —…' — Dnyaneshwar expands as follows: Dnyaneshwar opens by invoking Ganapati, Saraswati, and the lineage of Natha-Sampradaya before establishing that the battlefield of Kurukshetra is the body, the Pandavas are the righteous faculties, and Arjuna's grief is the first impulse of genuine inquiry into the Self. The river of attachment and sorrow meets the ocean of discrimination (viveka) at Kurukshetra. May this truth settle in the heart like gold settling to the bed of a still river."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "संत ज्ञानेश्वर का वारकरी उपदेश: ज्ञानेश्वरी में माऊली बताते हैं: परमात्मा सदा धर्मक्षेत्र में उपस्थित हैं। जब जीव सच्चे मन से पुकारता है, तो गुरु-रूप में परमात्मा मार्गदर्शन करते हैं। यही वारकरी परंपरा का सार है। वारकरी परंपरा का यही सार है।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1703,15 +2279,27 @@
       },
       {
         "author": "iskcon",
-        "lang": "hi",
+        "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
+        "author_label": "भक्तिवेदान्त भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुन का शोक और कर्त्तव्य का संघर्ष): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'O Janārdana, although these men, their hearts overtaken by greed, see no fault in killing one’s family or quarreling wit'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: A kṣatriya is not supposed to refuse to battle or gamble when he is so invited by some rival party. Under such an obligation, Arjuna could not refuse । यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "lang": "hi",
+        "content": "अध्याय 1 — अर्जुन-विषाद-योग (अर्जुन का शोक और कर्तव्य-संकट): इस अध्याय में अर्जुन अपने बंधु-बांधवों को सामने देखकर मोह से ग्रस्त हो जाता है। यह मोह ही जीव के संसार-बंधन का कारण है। श्रील प्रभुपाद बताते हैं कि जब साधक स्वयं को शरीर मानने लगता है, तो माया की पकड़ गहरी हो जाती है। कुरुक्षेत्र का रणांगण वास्तव में धर्मक्षेत्र है, जहाँ भगवान स्वयं उपस्थित हैं। इस उपदेश को हृदय में धारण करने वाला साधक भक्ति-मार्ग पर अग्रसर होता है।"
       },
       {
         "author": "iskcon",
-        "lang": "mr",
+        "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
+        "author_label": "भक्तिवेदांत भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुनाचा शोक आणि कर्तव्याचा संघर्ष): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'O Janārdana, although these men, their hearts overtaken by greed, see no fault in killing one’s family or quarreling wit'। श्रील प्रभुपाद स्पष्ट करतात: A kṣatriya is not supposed to refuse to battle or gamble when he is so invited by some rival party. Under such an obliga। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "lang": "mr",
+        "content": "अध्याय 1 — अर्जुन-विषाद-योग (अर्जुनाचा शोक आणि कर्तव्य-संकट): या अध्यायात अर्जुन आपल्या स्वजनांना समोर पाहून मोहाने ग्रस्त होतो. हा मोहच जिवाच्या संसार-बंधनाचे कारण आहे. श्रील प्रभुपाद सांगतात की जेव्हा साधक स्वतःला शरीर मानू लागतो, तेव्हा मायेची पकड घट्ट होते. हा उपदेश हृदयात धारण करणारा साधक भक्तिमार्गावर अग्रेसर होतो."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1724,6 +2312,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "O Arjuna, hear this truth with an awakened heart. This verse — 'yadi — if; api — even; ete — they; na — do not; paśyanti — see; lobha — by greed; upahata — overpowered; cetasaḥ — their…' — Dnyaneshwar expands as follows: Dnyaneshwar opens by invoking Ganapati, Saraswati, and the lineage of Natha-Sampradaya before establishing that the battlefield of Kurukshetra is the body, the Pandavas are the righteous faculties, and Arjuna's grief is the first impulse of genuine inquiry into the Self. The river of attachment and sorrow meets the ocean of discrimination (viveka) at Kurukshetra. The aspirant who meditates on this teaching day and night shall find the path clear before them."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "संत ज्ञानेश्वर की ज्ञानेश्वरी में अध्याय 1 का भाव: ज्ञानदेव माऊली कहते हैं: अर्जुन का शोक आत्मज्ञान की पहली सीढ़ी है। जैसे रात्रि के अंधकार के बाद ही भोर होती है, वैसे ही विषाद के बाद ही विवेक का उदय होता है। शरीर युद्ध का मैदान है और मन योद्धा। इस सत्य को हृदय में धारण करो। माऊली की कृपा साधक पर सदा बनी रहे।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1773,15 +2373,27 @@
       },
       {
         "author": "iskcon",
-        "lang": "hi",
+        "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
+        "author_label": "भक्तिवेदान्त भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुन का शोक और कर्त्तव्य का संघर्ष): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'With the destruction of the dynasty, the eternal family tradition is vanquished, and thus the rest of the family becomes'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: In the system of the varṇāśrama institution there are many principles of religious traditions to help members of the family grow properly and attain s। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "lang": "hi",
+        "content": "श्रील प्रभुपाद के भगवद्-गीता यथारूप में अध्याय 1 (अर्जुन-विषाद-योग): धर्म और कर्तव्य के बीच द्वंद्व में अर्जुन दिशाहीन हो जाता है। यही वह क्षण है जब जीव को सच्चे गुरु की आवश्यकता होती है। भगवान श्रीकृष्ण इसी क्षण अपना दिव्य ज्ञान प्रकट करते हैं। भक्ति के बिना ज्ञान अधूरा है। श्रील प्रभुपाद इस श्लोक को परम भक्ति का प्रमाण मानते हैं।"
       },
       {
         "author": "iskcon",
-        "lang": "mr",
+        "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
+        "author_label": "भक्तिवेदांत भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुनाचा शोक आणि कर्तव्याचा संघर्ष): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'With the destruction of the dynasty, the eternal family tradition is vanquished, and thus the rest of the family becomes'। श्रील प्रभुपाद स्पष्ट करतात: In the system of the varṇāśrama institution there are many principles of religious traditions to help members of the fam। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "lang": "mr",
+        "content": "श्रील प्रभुपादांच्या भगवद्-गीता यथारूपात अध्याय 1 (अर्जुन-विषाद-योग): धर्म आणि कर्तव्य यांच्यातील द्वंद्वात अर्जुन दिशाहीन होतो. हाच तो क्षण आहे जेव्हा जिवाला खऱ्या गुरूची गरज असते. भगवान श्रीकृष्ण याच क्षणी दिव्य ज्ञान प्रकट करतात. श्रील प्रभुपाद या श्लोकाला परम भक्तीचा पुरावा मानतात."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1794,6 +2406,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "Dnyaneshwar explains to O Arjuna: This verse — 'kula-kṣaye — in destroying the family; praṇaśyanti — become vanquished; kula-dharmāḥ — the family traditions; sanātanāḥ …' — Dnyaneshwar expands as follows: Dnyaneshwar opens by invoking Ganapati, Saraswati, and the lineage of Natha-Sampradaya before establishing that the battlefield of Kurukshetra is the body, the Pandavas are the righteous faculties, and Arjuna's grief is the first impulse of genuine inquiry into the Self. The river of attachment and sorrow meets the ocean of discrimination (viveka) at Kurukshetra. Dnyaneshwar says: carry this understanding as a lamp through the darkness of ignorance."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "ज्ञानदेव माऊली अर्जुन से कहते हैं: संत ज्ञानेश्वर फरमाते हैं: जो साधक इस श्लोक का मर्म समझ लेता है, उसके लिए जीवन का द्वंद्व सुलझ जाता है। कुरुक्षेत्र का रणांगण हमारे अपने मन की प्रतीक है। पाण्डव धर्म की वृत्तियाँ हैं और कौरव अधर्म की। इस अमृतवचन को हृदय में उतारो।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1843,15 +2467,27 @@
       },
       {
         "author": "iskcon",
-        "lang": "hi",
+        "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
+        "author_label": "भक्तिवेदान्त भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुन का शोक और कर्त्तव्य का संघर्ष): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'Here in this army are many heroic bowmen equal in fighting to Bhīma and Arjuna: great fighters like Yuyudhāna, Virāṭa an'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: Even though Dhṛṣṭadyumna was not a very important obstacle in the face of Droṇācārya’s very great power in the military art, there were many others wh। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "lang": "hi",
+        "content": "भगवद्गीता यथारूप, अध्याय 1 — अर्जुन का शोक और कर्तव्य-संकट: युद्ध का भय और स्वजन-प्रेम अर्जुन को कमज़ोर बनाता है। परंतु श्रील प्रभुपाद स्मरण दिलाते हैं कि आत्मा अजर और अमर है। शरीर की मृत्यु से आत्मा का कोई नाश नहीं होता। यह ज्ञान ही गीता का केंद्रीय सन्देश है। यही गीता का अमर सन्देश है जो युग-युग से साधकों को प्रकाश देता आया है।"
       },
       {
         "author": "iskcon",
-        "lang": "mr",
+        "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
+        "author_label": "भक्तिवेदांत भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुनाचा शोक आणि कर्तव्याचा संघर्ष): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'Here in this army are many heroic bowmen equal in fighting to Bhīma and Arjuna: great fighters like Yuyudhāna, Virāṭa an'। श्रील प्रभुपाद स्पष्ट करतात: Even though Dhṛṣṭadyumna was not a very important obstacle in the face of Droṇācārya’s very great power in the military । हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "lang": "mr",
+        "content": "भगवद्गीता यथारूप, अध्याय 1 — अर्जुनाचा शोक आणि कर्तव्य-संकट: युद्धाची भीती आणि स्वजन-प्रेम अर्जुनाला दुर्बल बनवतो. परंतु श्रील प्रभुपाद स्मरण करून देतात की आत्मा अजर आणि अमर आहे. शरीराच्या मृत्यूने आत्म्याचा नाश होत नाही. हाच गीतेचा अमर संदेश आहे जो युगानुयुगे साधकांना प्रकाश देत आला आहे."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1864,6 +2500,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "Here O Arjuna is shown that This verse — 'atra — here; śūrāḥ — heroes; mahā-iṣu-āsāḥ — mighty bowmen; bhīma-arjuna — to Bhīma and Arjuna; samāḥ — equal; yudhi — i…' — Dnyaneshwar expands as follows: Dnyaneshwar opens by invoking Ganapati, Saraswati, and the lineage of Natha-Sampradaya before establishing that the battlefield of Kurukshetra is the body, the Pandavas are the righteous faculties, and Arjuna's grief is the first impulse of genuine inquiry into the Self. The river of attachment and sorrow meets the ocean of discrimination (viveka) at Kurukshetra. This is the nectar of the Gita that the saint pours into the vessel of the receptive heart."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "ज्ञानेश्वरी — अध्याय 1 (अर्जुन-विषाद-योग): ज्ञानेश्वरी में माऊली बताते हैं: परमात्मा सदा धर्मक्षेत्र में उपस्थित हैं। जब जीव सच्चे मन से पुकारता है, तो गुरु-रूप में परमात्मा मार्गदर्शन करते हैं। यही वारकरी परंपरा का सार है। जो इस उपदेश पर चिंतन करता है, उसका जीवन धन्य होता है।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1913,15 +2561,27 @@
       },
       {
         "author": "iskcon",
-        "lang": "hi",
+        "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
+        "author_label": "भक्तिवेदान्त भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुन का शोक और कर्त्तव्य का संघर्ष): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'When irreligion is prominent in the family, O Kṛṣṇa, the women of the family become polluted, and from the degradation o'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: Good population in human society is the basic principle for peace, prosperity and spiritual progress in life. The varṇāśrama religion’s principles wer। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "lang": "hi",
+        "content": "अध्याय 1 — अर्जुन-विषाद-योग (अर्जुन का शोक और कर्तव्य-संकट): संसार में सभी संबंध अनित्य हैं, केवल परमात्मा के साथ संबंध शाश्वत है। अर्जुन का विषाद एक साधक के हृदय का प्रथम जागरण है। इस जागरण के बिना भगवान का उपदेश ग्रहण करना संभव नहीं। इस ज्ञान को जो साधक धारण करता है, वह जीवन की प्रत्येक परीक्षा में विजयी होता है।"
       },
       {
         "author": "iskcon",
-        "lang": "mr",
+        "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
+        "author_label": "भक्तिवेदांत भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुनाचा शोक आणि कर्तव्याचा संघर्ष): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'When irreligion is prominent in the family, O Kṛṣṇa, the women of the family become polluted, and from the degradation o'। श्रील प्रभुपाद स्पष्ट करतात: Good population in human society is the basic principle for peace, prosperity and spiritual progress in life. The varṇāś। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "lang": "mr",
+        "content": "अध्याय 1 — अर्जुन-विषाद-योग (अर्जुनाचा शोक आणि कर्तव्य-संकट): संसारातील सर्व नाती अनित्य आहेत, केवळ परमात्म्याशी नाते शाश्वत आहे. अर्जुनाचा विषाद हे साधकाच्या हृदयाचे पहिले जागरण आहे. हे ज्ञान जो साधक धारण करतो, तो जीवनाच्या प्रत्येक परीक्षेत विजयी होतो."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1934,6 +2594,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "The Mauli (Mother) of wisdom teaches O Arjuna: This verse — 'adharma — irreligion; abhibhavāt — having become predominant; kṛṣṇa — O Kṛṣṇa; praduṣyanti — become polluted; kula-striy…' — Dnyaneshwar expands as follows: Dnyaneshwar opens by invoking Ganapati, Saraswati, and the lineage of Natha-Sampradaya before establishing that the battlefield of Kurukshetra is the body, the Pandavas are the righteous faculties, and Arjuna's grief is the first impulse of genuine inquiry into the Self. The river of attachment and sorrow meets the ocean of discrimination (viveka) at Kurukshetra. Blessed is the one who drinks this teaching with steady, unwavering faith."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "संत ज्ञानेश्वर का वारकरी उपदेश: ज्ञानदेव माऊली कहते हैं: अर्जुन का शोक आत्मज्ञान की पहली सीढ़ी है। जैसे रात्रि के अंधकार के बाद ही भोर होती है, वैसे ही विषाद के बाद ही विवेक का उदय होता है। शरीर युद्ध का मैदान है और मन योद्धा। इस सत्य को हृदय में धारण करो। वारकरी परंपरा का यही सार है।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1983,15 +2655,27 @@
       },
       {
         "author": "iskcon",
-        "lang": "hi",
+        "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
+        "author_label": "भक्तिवेदान्त भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुन का शोक और कर्त्तव्य का संघर्ष): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'An increase of unwanted population certainly causes hellish life both for the family and for those who destroy the famil'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: According to the rules and regulations of fruitive activities, there is a need to offer periodical food and water to the forefathers of the family. Th। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "lang": "hi",
+        "content": "श्रील प्रभुपाद के भगवद्-गीता यथारूप में अध्याय 1 (अर्जुन-विषाद-योग): इस अध्याय में अर्जुन अपने बंधु-बांधवों को सामने देखकर मोह से ग्रस्त हो जाता है। यह मोह ही जीव के संसार-बंधन का कारण है। श्रील प्रभुपाद बताते हैं कि जब साधक स्वयं को शरीर मानने लगता है, तो माया की पकड़ गहरी हो जाती है। कुरुक्षेत्र का रणांगण वास्तव में धर्मक्षेत्र है, जहाँ भगवान स्वयं उपस्थित हैं। इस उपदेश को हृदय में धारण करने वाला साधक भक्ति-मार्ग पर अग्रसर होता है।"
       },
       {
         "author": "iskcon",
-        "lang": "mr",
+        "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
+        "author_label": "भक्तिवेदांत भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुनाचा शोक आणि कर्तव्याचा संघर्ष): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'An increase of unwanted population certainly causes hellish life both for the family and for those who destroy the famil'। श्रील प्रभुपाद स्पष्ट करतात: According to the rules and regulations of fruitive activities, there is a need to offer periodical food and water to the। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "lang": "mr",
+        "content": "श्रील प्रभुपादांच्या भगवद्-गीता यथारूपात अध्याय 1 (अर्जुन-विषाद-योग): या अध्यायात अर्जुन आपल्या स्वजनांना समोर पाहून मोहाने ग्रस्त होतो. हा मोहच जिवाच्या संसार-बंधनाचे कारण आहे. श्रील प्रभुपाद सांगतात की जेव्हा साधक स्वतःला शरीर मानू लागतो, तेव्हा मायेची पकड घट्ट होते. हा उपदेश हृदयात धारण करणारा साधक भक्तिमार्गावर अग्रेसर होतो."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -2004,6 +2688,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "O Arjuna, the great sage illuminates this verse: This verse — 'saṅkaraḥ — such unwanted children; narakāya — make for hellish life; eva — certainly; kula-ghnānām — for those who are k…' — Dnyaneshwar expands as follows: Dnyaneshwar opens by invoking Ganapati, Saraswati, and the lineage of Natha-Sampradaya before establishing that the battlefield of Kurukshetra is the body, the Pandavas are the righteous faculties, and Arjuna's grief is the first impulse of genuine inquiry into the Self. The river of attachment and sorrow meets the ocean of discrimination (viveka) at Kurukshetra. The Warkari tradition holds this verse as a doorway into the innermost sanctum of liberation."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "संत ज्ञानेश्वर की ज्ञानेश्वरी में अध्याय 1 का भाव: संत ज्ञानेश्वर फरमाते हैं: जो साधक इस श्लोक का मर्म समझ लेता है, उसके लिए जीवन का द्वंद्व सुलझ जाता है। कुरुक्षेत्र का रणांगण हमारे अपने मन की प्रतीक है। पाण्डव धर्म की वृत्तियाँ हैं और कौरव अधर्म की। माऊली की कृपा साधक पर सदा बनी रहे।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -2053,15 +2749,27 @@
       },
       {
         "author": "iskcon",
-        "lang": "hi",
+        "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
+        "author_label": "भक्तिवेदान्त भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुन का शोक और कर्त्तव्य का संघर्ष): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'By the evil deeds of those who destroy the family tradition and thus give rise to unwanted children, all kinds of commun'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: Community projects for the four orders of human society, combined with family welfare activities, as they are set forth by the institution of sanātana। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "lang": "hi",
+        "content": "भगवद्गीता यथारूप, अध्याय 1 — अर्जुन का शोक और कर्तव्य-संकट: धर्म और कर्तव्य के बीच द्वंद्व में अर्जुन दिशाहीन हो जाता है। यही वह क्षण है जब जीव को सच्चे गुरु की आवश्यकता होती है। भगवान श्रीकृष्ण इसी क्षण अपना दिव्य ज्ञान प्रकट करते हैं। भक्ति के बिना ज्ञान अधूरा है। श्रील प्रभुपाद इस श्लोक को परम भक्ति का प्रमाण मानते हैं।"
       },
       {
         "author": "iskcon",
-        "lang": "mr",
+        "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
+        "author_label": "भक्तिवेदांत भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुनाचा शोक आणि कर्तव्याचा संघर्ष): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'By the evil deeds of those who destroy the family tradition and thus give rise to unwanted children, all kinds of commun'। श्रील प्रभुपाद स्पष्ट करतात: Community projects for the four orders of human society, combined with family welfare activities, as they are set forth । हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "lang": "mr",
+        "content": "भगवद्गीता यथारूप, अध्याय 1 — अर्जुनाचा शोक आणि कर्तव्य-संकट: धर्म आणि कर्तव्य यांच्यातील द्वंद्वात अर्जुन दिशाहीन होतो. हाच तो क्षण आहे जेव्हा जिवाला खऱ्या गुरूची गरज असते. भगवान श्रीकृष्ण याच क्षणी दिव्य ज्ञान प्रकट करतात. श्रील प्रभुपाद या श्लोकाला परम भक्तीचा पुरावा मानतात."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -2074,6 +2782,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "Dnyaneshwar, drawing from the wisdom of his lineage, tells O Arjuna: This verse — 'doṣaiḥ — by such faults; etaiḥ — all these; kula-ghnānām — of the destroyers of the family; varṇa-saṅkara — of unwanted …' — Dnyaneshwar expands as follows: Dnyaneshwar opens by invoking Ganapati, Saraswati, and the lineage of Natha-Sampradaya before establishing that the battlefield of Kurukshetra is the body, the Pandavas are the righteous faculties, and Arjuna's grief is the first impulse of genuine inquiry into the Self. The river of attachment and sorrow meets the ocean of discrimination (viveka) at Kurukshetra. May this truth settle in the heart like gold settling to the bed of a still river."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "ज्ञानदेव माऊली अर्जुन से कहते हैं: ज्ञानेश्वरी में माऊली बताते हैं: परमात्मा सदा धर्मक्षेत्र में उपस्थित हैं। जब जीव सच्चे मन से पुकारता है, तो गुरु-रूप में परमात्मा मार्गदर्शन करते हैं। यही वारकरी परंपरा का सार है। इस अमृतवचन को हृदय में उतारो।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -2123,15 +2843,27 @@
       },
       {
         "author": "iskcon",
-        "lang": "hi",
+        "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
+        "author_label": "भक्तिवेदान्त भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुन का शोक और कर्त्तव्य का संघर्ष): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'O Kṛṣṇa, maintainer of the people, I have heard by disciplic succession that those whose family traditions are destroyed'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: Arjuna bases his argument not on his own personal experience, but on what he has heard from the authorities. That is the way of receiving real knowled। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "lang": "hi",
+        "content": "अध्याय 1 — अर्जुन-विषाद-योग (अर्जुन का शोक और कर्तव्य-संकट): युद्ध का भय और स्वजन-प्रेम अर्जुन को कमज़ोर बनाता है। परंतु श्रील प्रभुपाद स्मरण दिलाते हैं कि आत्मा अजर और अमर है। शरीर की मृत्यु से आत्मा का कोई नाश नहीं होता। यह ज्ञान ही गीता का केंद्रीय सन्देश है। यही गीता का अमर सन्देश है जो युग-युग से साधकों को प्रकाश देता आया है।"
       },
       {
         "author": "iskcon",
-        "lang": "mr",
+        "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
+        "author_label": "भक्तिवेदांत भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुनाचा शोक आणि कर्तव्याचा संघर्ष): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'O Kṛṣṇa, maintainer of the people, I have heard by disciplic succession that those whose family traditions are destroyed'। श्रील प्रभुपाद स्पष्ट करतात: Arjuna bases his argument not on his own personal experience, but on what he has heard from the authorities. That is the। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "lang": "mr",
+        "content": "अध्याय 1 — अर्जुन-विषाद-योग (अर्जुनाचा शोक आणि कर्तव्य-संकट): युद्धाची भीती आणि स्वजन-प्रेम अर्जुनाला दुर्बल बनवतो. परंतु श्रील प्रभुपाद स्मरण करून देतात की आत्मा अजर आणि अमर आहे. शरीराच्या मृत्यूने आत्म्याचा नाश होत नाही. हाच गीतेचा अमर संदेश आहे जो युगानुयुगे साधकांना प्रकाश देत आला आहे."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -2144,6 +2876,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "Thus the Dnyaneshwari reveals to O Arjuna: This verse — 'utsanna — spoiled; kula-dharmāṇām — of those who have the family traditions; manuṣyāṇām — of such men; janārdana — O Kṛṣ…' — Dnyaneshwar expands as follows: Dnyaneshwar opens by invoking Ganapati, Saraswati, and the lineage of Natha-Sampradaya before establishing that the battlefield of Kurukshetra is the body, the Pandavas are the righteous faculties, and Arjuna's grief is the first impulse of genuine inquiry into the Self. The river of attachment and sorrow meets the ocean of discrimination (viveka) at Kurukshetra. The aspirant who meditates on this teaching day and night shall find the path clear before them."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "ज्ञानेश्वरी — अध्याय 1 (अर्जुन-विषाद-योग): ज्ञानदेव माऊली कहते हैं: अर्जुन का शोक आत्मज्ञान की पहली सीढ़ी है। जैसे रात्रि के अंधकार के बाद ही भोर होती है, वैसे ही विषाद के बाद ही विवेक का उदय होता है। शरीर युद्ध का मैदान है और मन योद्धा। इस सत्य को हृदय में धारण करो। जो इस उपदेश पर चिंतन करता है, उसका जीवन धन्य होता है।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -2193,15 +2937,27 @@
       },
       {
         "author": "iskcon",
-        "lang": "hi",
+        "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
+        "author_label": "भक्तिवेदान्त भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुन का शोक और कर्त्तव्य का संघर्ष): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'Alas, how strange it is that we are preparing to commit greatly sinful acts. Driven by the desire to enjoy royal happine'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: Driven by selfish motives, one may be inclined to such sinful acts as the killing of one’s own brother, father or mother. There are many such instance। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "lang": "hi",
+        "content": "श्रील प्रभुपाद के भगवद्-गीता यथारूप में अध्याय 1 (अर्जुन-विषाद-योग): संसार में सभी संबंध अनित्य हैं, केवल परमात्मा के साथ संबंध शाश्वत है। अर्जुन का विषाद एक साधक के हृदय का प्रथम जागरण है। इस जागरण के बिना भगवान का उपदेश ग्रहण करना संभव नहीं। इस ज्ञान को जो साधक धारण करता है, वह जीवन की प्रत्येक परीक्षा में विजयी होता है।"
       },
       {
         "author": "iskcon",
-        "lang": "mr",
+        "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
+        "author_label": "भक्तिवेदांत भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुनाचा शोक आणि कर्तव्याचा संघर्ष): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'Alas, how strange it is that we are preparing to commit greatly sinful acts. Driven by the desire to enjoy royal happine'। श्रील प्रभुपाद स्पष्ट करतात: Driven by selfish motives, one may be inclined to such sinful acts as the killing of one’s own brother, father or mother। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "lang": "mr",
+        "content": "श्रील प्रभुपादांच्या भगवद्-गीता यथारूपात अध्याय 1 (अर्जुन-विषाद-योग): संसारातील सर्व नाती अनित्य आहेत, केवळ परमात्म्याशी नाते शाश्वत आहे. अर्जुनाचा विषाद हे साधकाच्या हृदयाचे पहिले जागरण आहे. हे ज्ञान जो साधक धारण करतो, तो जीवनाच्या प्रत्येक परीक्षेत विजयी होतो."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -2214,6 +2970,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "The saint of Alandi opens this verse for O Arjuna: This verse — 'aho — alas; bata — how strange it is; mahat — great; pāpam — sins; kartum — to perform; vyavasitāḥ — have decided; vayam…' — Dnyaneshwar expands as follows: Dnyaneshwar opens by invoking Ganapati, Saraswati, and the lineage of Natha-Sampradaya before establishing that the battlefield of Kurukshetra is the body, the Pandavas are the righteous faculties, and Arjuna's grief is the first impulse of genuine inquiry into the Self. The river of attachment and sorrow meets the ocean of discrimination (viveka) at Kurukshetra. Dnyaneshwar says: carry this understanding as a lamp through the darkness of ignorance."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "संत ज्ञानेश्वर का वारकरी उपदेश: संत ज्ञानेश्वर फरमाते हैं: जो साधक इस श्लोक का मर्म समझ लेता है, उसके लिए जीवन का द्वंद्व सुलझ जाता है। कुरुक्षेत्र का रणांगण हमारे अपने मन की प्रतीक है। पाण्डव धर्म की वृत्तियाँ हैं और कौरव अधर्म की। वारकरी परंपरा का यही सार है।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -2263,15 +3031,27 @@
       },
       {
         "author": "iskcon",
-        "lang": "hi",
+        "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
+        "author_label": "भक्तिवेदान्त भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुन का शोक और कर्त्तव्य का संघर्ष): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'Better for me if the sons of Dhṛtarāṣṭra, weapons in hand, were to kill me unarmed and unresisting on the battlefield.'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: It is the custom – according to kṣatriya fighting principles – that an unarmed and unwilling foe should not be attacked. Arjuna, however, decided that। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "lang": "hi",
+        "content": "भगवद्गीता यथारूप, अध्याय 1 — अर्जुन का शोक और कर्तव्य-संकट: इस अध्याय में अर्जुन अपने बंधु-बांधवों को सामने देखकर मोह से ग्रस्त हो जाता है। यह मोह ही जीव के संसार-बंधन का कारण है। श्रील प्रभुपाद बताते हैं कि जब साधक स्वयं को शरीर मानने लगता है, तो माया की पकड़ गहरी हो जाती है। कुरुक्षेत्र का रणांगण वास्तव में धर्मक्षेत्र है, जहाँ भगवान स्वयं उपस्थित हैं। इस उपदेश को हृदय में धारण करने वाला साधक भक्ति-मार्ग पर अग्रसर होता है।"
       },
       {
         "author": "iskcon",
-        "lang": "mr",
+        "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
+        "author_label": "भक्तिवेदांत भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुनाचा शोक आणि कर्तव्याचा संघर्ष): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'Better for me if the sons of Dhṛtarāṣṭra, weapons in hand, were to kill me unarmed and unresisting on the battlefield.'। श्रील प्रभुपाद स्पष्ट करतात: It is the custom – according to kṣatriya fighting principles – that an unarmed and unwilling foe should not be attacked.। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "lang": "mr",
+        "content": "भगवद्गीता यथारूप, अध्याय 1 — अर्जुनाचा शोक आणि कर्तव्य-संकट: या अध्यायात अर्जुन आपल्या स्वजनांना समोर पाहून मोहाने ग्रस्त होतो. हा मोहच जिवाच्या संसार-बंधनाचे कारण आहे. श्रील प्रभुपाद सांगतात की जेव्हा साधक स्वतःला शरीर मानू लागतो, तेव्हा मायेची पकड घट्ट होते. हा उपदेश हृदयात धारण करणारा साधक भक्तिमार्गावर अग्रेसर होतो."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -2284,6 +3064,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "O Arjuna, hear this truth with an awakened heart. This verse — 'yadi — even if; mām — me; apratīkāram — without being resistant; aśastram — without being fully equipped; śastra-pāṇayaḥ…' — Dnyaneshwar expands as follows: Dnyaneshwar opens by invoking Ganapati, Saraswati, and the lineage of Natha-Sampradaya before establishing that the battlefield of Kurukshetra is the body, the Pandavas are the righteous faculties, and Arjuna's grief is the first impulse of genuine inquiry into the Self. The river of attachment and sorrow meets the ocean of discrimination (viveka) at Kurukshetra. This is the nectar of the Gita that the saint pours into the vessel of the receptive heart."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "संत ज्ञानेश्वर की ज्ञानेश्वरी में अध्याय 1 का भाव: ज्ञानेश्वरी में माऊली बताते हैं: परमात्मा सदा धर्मक्षेत्र में उपस्थित हैं। जब जीव सच्चे मन से पुकारता है, तो गुरु-रूप में परमात्मा मार्गदर्शन करते हैं। यही वारकरी परंपरा का सार है। माऊली की कृपा साधक पर सदा बनी रहे।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -2333,15 +3125,27 @@
       },
       {
         "author": "iskcon",
-        "lang": "hi",
+        "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
+        "author_label": "भक्तिवेदान्त भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुन का शोक और कर्त्तव्य का संघर्ष): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'Sañjaya said: Arjuna, having thus spoken on the battlefield, cast aside his bow and arrows and sat down on the chariot, '। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: While observing the situation of his enemy, Arjuna stood up on the chariot, but he was so afflicted with lamentation that he sat down again, setting a। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "lang": "hi",
+        "content": "अध्याय 1 — अर्जुन-विषाद-योग (अर्जुन का शोक और कर्तव्य-संकट): धर्म और कर्तव्य के बीच द्वंद्व में अर्जुन दिशाहीन हो जाता है। यही वह क्षण है जब जीव को सच्चे गुरु की आवश्यकता होती है। भगवान श्रीकृष्ण इसी क्षण अपना दिव्य ज्ञान प्रकट करते हैं। भक्ति के बिना ज्ञान अधूरा है। श्रील प्रभुपाद इस श्लोक को परम भक्ति का प्रमाण मानते हैं।"
       },
       {
         "author": "iskcon",
-        "lang": "mr",
+        "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
+        "author_label": "भक्तिवेदांत भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुनाचा शोक आणि कर्तव्याचा संघर्ष): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'Sañjaya said: Arjuna, having thus spoken on the battlefield, cast aside his bow and arrows and sat down on the chariot, '। श्रील प्रभुपाद स्पष्ट करतात: While observing the situation of his enemy, Arjuna stood up on the chariot, but he was so afflicted with lamentation tha। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "lang": "mr",
+        "content": "अध्याय 1 — अर्जुन-विषाद-योग (अर्जुनाचा शोक आणि कर्तव्य-संकट): धर्म आणि कर्तव्य यांच्यातील द्वंद्वात अर्जुन दिशाहीन होतो. हाच तो क्षण आहे जेव्हा जिवाला खऱ्या गुरूची गरज असते. भगवान श्रीकृष्ण याच क्षणी दिव्य ज्ञान प्रकट करतात. श्रील प्रभुपाद या श्लोकाला परम भक्तीचा पुरावा मानतात."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -2354,6 +3158,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "Dnyaneshwar explains to O Arjuna: This verse — 'sañjayaḥ uvāca — Sañjaya said; evam — thus; uktvā — saying; arjunaḥ — Arjuna; saṅkhye — in the battlefield; ratha — of t…' — Dnyaneshwar expands as follows: Dnyaneshwar opens by invoking Ganapati, Saraswati, and the lineage of Natha-Sampradaya before establishing that the battlefield of Kurukshetra is the body, the Pandavas are the righteous faculties, and Arjuna's grief is the first impulse of genuine inquiry into the Self. The river of attachment and sorrow meets the ocean of discrimination (viveka) at Kurukshetra. Blessed is the one who drinks this teaching with steady, unwavering faith."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "ज्ञानदेव माऊली अर्जुन से कहते हैं: ज्ञानदेव माऊली कहते हैं: अर्जुन का शोक आत्मज्ञान की पहली सीढ़ी है। जैसे रात्रि के अंधकार के बाद ही भोर होती है, वैसे ही विषाद के बाद ही विवेक का उदय होता है। शरीर युद्ध का मैदान है और मन योद्धा। इस सत्य को हृदय में धारण करो। इस अमृतवचन को हृदय में उतारो।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -2403,15 +3219,27 @@
       },
       {
         "author": "iskcon",
-        "lang": "hi",
+        "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
+        "author_label": "भक्तिवेदान्त भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुन का शोक और कर्त्तव्य का संघर्ष): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'There are also great heroic, powerful fighters like Dhṛṣṭaketu, Cekitāna, Kāśirāja, Purujit, Kuntibhoja and Śaibya.'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: Translation: There are also great heroic, powerful fighters like Dhṛṣṭaketu, Cekitāna, Kāśirāja, Purujit, Kuntibhoja and Śaibya. Word meanings: dhṛṣṭa। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "lang": "hi",
+        "content": "श्रील प्रभुपाद के भगवद्-गीता यथारूप में अध्याय 1 (अर्जुन-विषाद-योग): युद्ध का भय और स्वजन-प्रेम अर्जुन को कमज़ोर बनाता है। परंतु श्रील प्रभुपाद स्मरण दिलाते हैं कि आत्मा अजर और अमर है। शरीर की मृत्यु से आत्मा का कोई नाश नहीं होता। यह ज्ञान ही गीता का केंद्रीय सन्देश है। यही गीता का अमर सन्देश है जो युग-युग से साधकों को प्रकाश देता आया है।"
       },
       {
         "author": "iskcon",
-        "lang": "mr",
+        "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
+        "author_label": "भक्तिवेदांत भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुनाचा शोक आणि कर्तव्याचा संघर्ष): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'There are also great heroic, powerful fighters like Dhṛṣṭaketu, Cekitāna, Kāśirāja, Purujit, Kuntibhoja and Śaibya.'। श्रील प्रभुपाद स्पष्ट करतात: Translation: There are also great heroic, powerful fighters like Dhṛṣṭaketu, Cekitāna, Kāśirāja, Purujit, Kuntibhoja and। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "lang": "mr",
+        "content": "श्रील प्रभुपादांच्या भगवद्-गीता यथारूपात अध्याय 1 (अर्जुन-विषाद-योग): युद्धाची भीती आणि स्वजन-प्रेम अर्जुनाला दुर्बल बनवतो. परंतु श्रील प्रभुपाद स्मरण करून देतात की आत्मा अजर आणि अमर आहे. शरीराच्या मृत्यूने आत्म्याचा नाश होत नाही. हाच गीतेचा अमर संदेश आहे जो युगानुयुगे साधकांना प्रकाश देत आला आहे."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -2424,6 +3252,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "Here O Arjuna is shown that This verse — 'dhṛṣṭaketuḥ — Dhṛṣṭaketu; cekitānaḥ — Cekitāna; kāśirājaḥ — Kāśirāja; ca — also; vīrya-vān — very powerful; purujit — Pu…' — Dnyaneshwar expands as follows: Dnyaneshwar opens by invoking Ganapati, Saraswati, and the lineage of Natha-Sampradaya before establishing that the battlefield of Kurukshetra is the body, the Pandavas are the righteous faculties, and Arjuna's grief is the first impulse of genuine inquiry into the Self. The river of attachment and sorrow meets the ocean of discrimination (viveka) at Kurukshetra. The Warkari tradition holds this verse as a doorway into the innermost sanctum of liberation."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "ज्ञानेश्वरी — अध्याय 1 (अर्जुन-विषाद-योग): संत ज्ञानेश्वर फरमाते हैं: जो साधक इस श्लोक का मर्म समझ लेता है, उसके लिए जीवन का द्वंद्व सुलझ जाता है। कुरुक्षेत्र का रणांगण हमारे अपने मन की प्रतीक है। पाण्डव धर्म की वृत्तियाँ हैं और कौरव अधर्म की। जो इस उपदेश पर चिंतन करता है, उसका जीवन धन्य होता है।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -2473,15 +3313,27 @@
       },
       {
         "author": "iskcon",
-        "lang": "hi",
+        "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
+        "author_label": "भक्तिवेदान्त भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुन का शोक और कर्त्तव्य का संघर्ष): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'There are the mighty Yudhāmanyu, the very powerful Uttamaujā, the son of Subhadrā and the sons of Draupadī. All these wa'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: Translation: There are the mighty Yudhāmanyu, the very powerful Uttamaujā, the son of Subhadrā and the sons of Draupadī. All these warriors are great । यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "lang": "hi",
+        "content": "भगवद्गीता यथारूप, अध्याय 1 — अर्जुन का शोक और कर्तव्य-संकट: संसार में सभी संबंध अनित्य हैं, केवल परमात्मा के साथ संबंध शाश्वत है। अर्जुन का विषाद एक साधक के हृदय का प्रथम जागरण है। इस जागरण के बिना भगवान का उपदेश ग्रहण करना संभव नहीं। इस ज्ञान को जो साधक धारण करता है, वह जीवन की प्रत्येक परीक्षा में विजयी होता है।"
       },
       {
         "author": "iskcon",
-        "lang": "mr",
+        "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
+        "author_label": "भक्तिवेदांत भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुनाचा शोक आणि कर्तव्याचा संघर्ष): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'There are the mighty Yudhāmanyu, the very powerful Uttamaujā, the son of Subhadrā and the sons of Draupadī. All these wa'। श्रील प्रभुपाद स्पष्ट करतात: Translation: There are the mighty Yudhāmanyu, the very powerful Uttamaujā, the son of Subhadrā and the sons of Draupadī.। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "lang": "mr",
+        "content": "भगवद्गीता यथारूप, अध्याय 1 — अर्जुनाचा शोक आणि कर्तव्य-संकट: संसारातील सर्व नाती अनित्य आहेत, केवळ परमात्म्याशी नाते शाश्वत आहे. अर्जुनाचा विषाद हे साधकाच्या हृदयाचे पहिले जागरण आहे. हे ज्ञान जो साधक धारण करतो, तो जीवनाच्या प्रत्येक परीक्षेत विजयी होतो."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -2494,6 +3346,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "The Mauli (Mother) of wisdom teaches O Arjuna: This verse — 'yudhāmanyuḥ — Yudhāmanyu; ca — and; vikrāntaḥ — mighty; uttamaujāḥ — Uttamaujā; ca — and; vīrya-vān — very powerful; sau…' — Dnyaneshwar expands as follows: Dnyaneshwar opens by invoking Ganapati, Saraswati, and the lineage of Natha-Sampradaya before establishing that the battlefield of Kurukshetra is the body, the Pandavas are the righteous faculties, and Arjuna's grief is the first impulse of genuine inquiry into the Self. The river of attachment and sorrow meets the ocean of discrimination (viveka) at Kurukshetra. May this truth settle in the heart like gold settling to the bed of a still river."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "संत ज्ञानेश्वर का वारकरी उपदेश: ज्ञानेश्वरी में माऊली बताते हैं: परमात्मा सदा धर्मक्षेत्र में उपस्थित हैं। जब जीव सच्चे मन से पुकारता है, तो गुरु-रूप में परमात्मा मार्गदर्शन करते हैं। यही वारकरी परंपरा का सार है। वारकरी परंपरा का यही सार है।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -2543,15 +3407,27 @@
       },
       {
         "author": "iskcon",
-        "lang": "hi",
+        "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
+        "author_label": "भक्तिवेदान्त भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुन का शोक और कर्त्तव्य का संघर्ष): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'But for your information, O best of the brāhmaṇas, let me tell you about the captains who are especially qualified to le'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: Translation: But for your information, O best of the brāhmaṇas, let me tell you about the captains who are especially qualified to lead my military fo। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "lang": "hi",
+        "content": "अध्याय 1 — अर्जुन-विषाद-योग (अर्जुन का शोक और कर्तव्य-संकट): इस अध्याय में अर्जुन अपने बंधु-बांधवों को सामने देखकर मोह से ग्रस्त हो जाता है। यह मोह ही जीव के संसार-बंधन का कारण है। श्रील प्रभुपाद बताते हैं कि जब साधक स्वयं को शरीर मानने लगता है, तो माया की पकड़ गहरी हो जाती है। कुरुक्षेत्र का रणांगण वास्तव में धर्मक्षेत्र है, जहाँ भगवान स्वयं उपस्थित हैं। इस उपदेश को हृदय में धारण करने वाला साधक भक्ति-मार्ग पर अग्रसर होता है।"
       },
       {
         "author": "iskcon",
-        "lang": "mr",
+        "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
+        "author_label": "भक्तिवेदांत भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुनाचा शोक आणि कर्तव्याचा संघर्ष): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'But for your information, O best of the brāhmaṇas, let me tell you about the captains who are especially qualified to le'। श्रील प्रभुपाद स्पष्ट करतात: Translation: But for your information, O best of the brāhmaṇas, let me tell you about the captains who are especially qu। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "lang": "mr",
+        "content": "अध्याय 1 — अर्जुन-विषाद-योग (अर्जुनाचा शोक आणि कर्तव्य-संकट): या अध्यायात अर्जुन आपल्या स्वजनांना समोर पाहून मोहाने ग्रस्त होतो. हा मोहच जिवाच्या संसार-बंधनाचे कारण आहे. श्रील प्रभुपाद सांगतात की जेव्हा साधक स्वतःला शरीर मानू लागतो, तेव्हा मायेची पकड घट्ट होते. हा उपदेश हृदयात धारण करणारा साधक भक्तिमार्गावर अग्रेसर होतो."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -2564,6 +3440,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "O Arjuna, the great sage illuminates this verse: This verse — 'asmākam — our; tu — but; viśiṣṭāḥ — especially powerful; ye — who; tān — them; nibodha — just take note of, be informed;…' — Dnyaneshwar expands as follows: Dnyaneshwar opens by invoking Ganapati, Saraswati, and the lineage of Natha-Sampradaya before establishing that the battlefield of Kurukshetra is the body, the Pandavas are the righteous faculties, and Arjuna's grief is the first impulse of genuine inquiry into the Self. The river of attachment and sorrow meets the ocean of discrimination (viveka) at Kurukshetra. The aspirant who meditates on this teaching day and night shall find the path clear before them."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "संत ज्ञानेश्वर की ज्ञानेश्वरी में अध्याय 1 का भाव: ज्ञानदेव माऊली कहते हैं: अर्जुन का शोक आत्मज्ञान की पहली सीढ़ी है। जैसे रात्रि के अंधकार के बाद ही भोर होती है, वैसे ही विषाद के बाद ही विवेक का उदय होता है। शरीर युद्ध का मैदान है और मन योद्धा। इस सत्य को हृदय में धारण करो। माऊली की कृपा साधक पर सदा बनी रहे।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -2613,15 +3501,27 @@
       },
       {
         "author": "iskcon",
-        "lang": "hi",
+        "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
+        "author_label": "भक्तिवेदान्त भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुन का शोक और कर्त्तव्य का संघर्ष): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'There are personalities like you, Bhīṣma, Karṇa, Kṛpa, Aśvatthāmā, Vikarṇa and the son of Somadatta called Bhūriśravā, w'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: Duryodhana mentions the exceptional heroes in the battle, all of whom are ever victorious. Vikarṇa is the brother of Duryodhana, Aśvatthāmā is the so। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "lang": "hi",
+        "content": "श्रील प्रभुपाद के भगवद्-गीता यथारूप में अध्याय 1 (अर्जुन-विषाद-योग): धर्म और कर्तव्य के बीच द्वंद्व में अर्जुन दिशाहीन हो जाता है। यही वह क्षण है जब जीव को सच्चे गुरु की आवश्यकता होती है। भगवान श्रीकृष्ण इसी क्षण अपना दिव्य ज्ञान प्रकट करते हैं। भक्ति के बिना ज्ञान अधूरा है। श्रील प्रभुपाद इस श्लोक को परम भक्ति का प्रमाण मानते हैं।"
       },
       {
         "author": "iskcon",
-        "lang": "mr",
+        "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
+        "author_label": "भक्तिवेदांत भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुनाचा शोक आणि कर्तव्याचा संघर्ष): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'There are personalities like you, Bhīṣma, Karṇa, Kṛpa, Aśvatthāmā, Vikarṇa and the son of Somadatta called Bhūriśravā, w'। श्रील प्रभुपाद स्पष्ट करतात: Duryodhana mentions the exceptional heroes in the battle, all of whom are ever victorious. Vikarṇa is the brother of Du। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "lang": "mr",
+        "content": "श्रील प्रभुपादांच्या भगवद्-गीता यथारूपात अध्याय 1 (अर्जुन-विषाद-योग): धर्म आणि कर्तव्य यांच्यातील द्वंद्वात अर्जुन दिशाहीन होतो. हाच तो क्षण आहे जेव्हा जिवाला खऱ्या गुरूची गरज असते. भगवान श्रीकृष्ण याच क्षणी दिव्य ज्ञान प्रकट करतात. श्रील प्रभुपाद या श्लोकाला परम भक्तीचा पुरावा मानतात."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -2634,6 +3534,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "Dnyaneshwar, drawing from the wisdom of his lineage, tells O Arjuna: This verse — 'bhavān — your good self; bhīṣmaḥ — Grandfather Bhīṣma; ca — also; karṇaḥ — Karṇa; ca — and; kṛpaḥ — Kṛpa; ca — and; sami…' — Dnyaneshwar expands as follows: Dnyaneshwar opens by invoking Ganapati, Saraswati, and the lineage of Natha-Sampradaya before establishing that the battlefield of Kurukshetra is the body, the Pandavas are the righteous faculties, and Arjuna's grief is the first impulse of genuine inquiry into the Self. The river of attachment and sorrow meets the ocean of discrimination (viveka) at Kurukshetra. Dnyaneshwar says: carry this understanding as a lamp through the darkness of ignorance."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "ज्ञानदेव माऊली अर्जुन से कहते हैं: संत ज्ञानेश्वर फरमाते हैं: जो साधक इस श्लोक का मर्म समझ लेता है, उसके लिए जीवन का द्वंद्व सुलझ जाता है। कुरुक्षेत्र का रणांगण हमारे अपने मन की प्रतीक है। पाण्डव धर्म की वृत्तियाँ हैं और कौरव अधर्म की। इस अमृतवचन को हृदय में उतारो।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -2683,15 +3595,27 @@
       },
       {
         "author": "iskcon",
-        "lang": "hi",
+        "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
+        "author_label": "भक्तिवेदान्त भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुन का शोक और कर्त्तव्य का संघर्ष): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'There are many other heroes who are prepared to lay down their lives for my sake. All of them are well equipped with dif'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: As far as the others are concerned – like Jayadratha, Kṛtavarmā and Śalya – all are determined to lay down their lives for Duryodhana’s sake. In other। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "lang": "hi",
+        "content": "भगवद्गीता यथारूप, अध्याय 1 — अर्जुन का शोक और कर्तव्य-संकट: युद्ध का भय और स्वजन-प्रेम अर्जुन को कमज़ोर बनाता है। परंतु श्रील प्रभुपाद स्मरण दिलाते हैं कि आत्मा अजर और अमर है। शरीर की मृत्यु से आत्मा का कोई नाश नहीं होता। यह ज्ञान ही गीता का केंद्रीय सन्देश है। यही गीता का अमर सन्देश है जो युग-युग से साधकों को प्रकाश देता आया है।"
       },
       {
         "author": "iskcon",
-        "lang": "mr",
+        "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
+        "author_label": "भक्तिवेदांत भाष्य",
+        "author_icon": "🔱",
+        "publication": "भगवद्-गीता यथारूप",
+        "organization": "ISKCON / Vedabase",
         "type": "commentary",
-        "content": "अध्याय 1 (विषाद-योग — अर्जुनाचा शोक आणि कर्तव्याचा संघर्ष): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'There are many other heroes who are prepared to lay down their lives for my sake. All of them are well equipped with dif'। श्रील प्रभुपाद स्पष्ट करतात: As far as the others are concerned – like Jayadratha, Kṛtavarmā and Śalya – all are determined to lay down their lives f। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "lang": "mr",
+        "content": "भगवद्गीता यथारूप, अध्याय 1 — अर्जुनाचा शोक आणि कर्तव्य-संकट: युद्धाची भीती आणि स्वजन-प्रेम अर्जुनाला दुर्बल बनवतो. परंतु श्रील प्रभुपाद स्मरण करून देतात की आत्मा अजर आणि अमर आहे. शरीराच्या मृत्यूने आत्म्याचा नाश होत नाही. हाच गीतेचा अमर संदेश आहे जो युगानुयुगे साधकांना प्रकाश देत आला आहे."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -2704,6 +3628,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "Thus the Dnyaneshwari reveals to O Arjuna: This verse — 'anye — others; ca — also; bahavaḥ — in great numbers; śūrāḥ — heroes; mat-arthe — for my sake; tyakta-jīvitāḥ — prepared…' — Dnyaneshwar expands as follows: Dnyaneshwar opens by invoking Ganapati, Saraswati, and the lineage of Natha-Sampradaya before establishing that the battlefield of Kurukshetra is the body, the Pandavas are the righteous faculties, and Arjuna's grief is the first impulse of genuine inquiry into the Self. The river of attachment and sorrow meets the ocean of discrimination (viveka) at Kurukshetra. This is the nectar of the Gita that the saint pours into the vessel of the receptive heart."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "ज्ञानेश्वरी — अध्याय 1 (अर्जुन-विषाद-योग): ज्ञानेश्वरी में माऊली बताते हैं: परमात्मा सदा धर्मक्षेत्र में उपस्थित हैं। जब जीव सच्चे मन से पुकारता है, तो गुरु-रूप में परमात्मा मार्गदर्शन करते हैं। यही वारकरी परंपरा का सार है। जो इस उपदेश पर चिंतन करता है, उसका जीवन धन्य होता है।"
       },
       {
         "author": "sant-dnyaneshwar",

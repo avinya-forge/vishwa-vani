@@ -24,26 +24,26 @@
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉन के संस्थापक-आचार्य; भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार।",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
         "author_label": "भक्तिवेदान्त भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "hi",
-        "content": "अध्याय 5 (कर्म-सन्यास-योग — कर्म और सन्यास की एकता): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'Arjuna said: O Kṛṣṇa, first of all You ask me to renounce work, and then again You recommend work with devotion. Now wil'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: In this Fifth Chapter of the Bhagavad-gītā, the Lord says that work in devotional service is better than dry mental speculation. Devotional service is। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "content": "अध्याय 5 — कर्म-संन्यास-योग (कर्म और संन्यास की एकता): कर्म और संन्यास दोनों एक ही लक्ष्य की ओर ले जाते हैं। श्रील प्रभुपाद बताते हैं कि कर्म से मुक्ति नहीं, कर्म के भाव से मुक्ति होती है। ईश्वर को अर्पण करके किया हर कर्म संन्यास ही है। इस उपदेश को हृदय में धारण करने वाला साधक भक्ति-मार्ग पर अग्रसर होता है।"
       },
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉनचे संस्थापक-आचार्य; भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार।",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
         "author_label": "भक्तिवेदांत भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "mr",
-        "content": "अध्याय 5 (कर्म-संन्यास-योग — कर्म आणि संन्यासाची एकता): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'Arjuna said: O Kṛṣṇa, first of all You ask me to renounce work, and then again You recommend work with devotion. Now wil'। श्रील प्रभुपाद स्पष्ट करतात: In this Fifth Chapter of the Bhagavad-gītā, the Lord says that work in devotional service is better than dry mental spec। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "content": "अध्याय 5 — कर्म-संन्यास-योग (कर्म आणि संन्यासाची एकता): कर्म आणि संन्यास दोन्ही एकाच ध्येयाकडे नेतात. श्रील प्रभुपाद सांगतात की कर्मापासून मुक्ती नाही, कर्माच्या भावनेतून मुक्ती होते. हा उपदेश हृदयात धारण करणारा साधक भक्तिमार्गावर अग्रेसर होतो."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -56,6 +56,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "O Pandava, hear this truth with an awakened heart. This verse — 'arjunaḥ uvāca — Arjuna said; sannyāsam — renunciation; karmaṇām — of all activities; kṛṣṇa — O Kṛṣṇa; punaḥ — again; yog…' — Dnyaneshwar expands as follows: Dnyaneshwar reconciles action and renunciation: the true renunciant is one who acts fully in the world while being internally unmoved, like the lotus leaf that floats on water without absorbing it. The lotus rests on water, touched by it at every moment, yet untouched within. This is the way of inner renunciation. The aspirant who meditates on this teaching day and night shall find the path clear before them."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "संत ज्ञानेश्वर की ज्ञानेश्वरी में अध्याय 5 का भाव: माऊली कहते हैं: जो मन से त्यागी है, वह घर में रहकर भी संन्यासी है। भाव की शुद्धि ही असली संन्यास है। माऊली की कृपा साधक पर सदा बनी रहे।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -106,26 +118,26 @@
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉन के संस्थापक-आचार्य; भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार।",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
         "author_label": "भक्तिवेदान्त भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "hi",
-        "content": "अध्याय 5 (कर्म-सन्यास-योग — कर्म और सन्यास की एकता): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'One who performs his duty without attachment, surrendering the results unto the Supreme Lord, is unaffected by sinful ac'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: Here brahmaṇi means in Kṛṣṇa consciousness. The material world is a sum total manifestation of the three modes of material nature, technically called । यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "content": "श्रील प्रभुपाद के भगवद्-गीता यथारूप में अध्याय 5 (कर्म-संन्यास-योग): इंद्रियों को नियंत्रित करने वाला, फल की आशा छोड़ने वाला साधक — वह कर्म करते हुए भी मुक्त है। जल में कमल की भाँति संसार में रहो। श्रील प्रभुपाद इस श्लोक को परम भक्ति का प्रमाण मानते हैं।"
       },
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉनचे संस्थापक-आचार्य; भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार।",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
         "author_label": "भक्तिवेदांत भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "mr",
-        "content": "अध्याय 5 (कर्म-संन्यास-योग — कर्म आणि संन्यासाची एकता): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'One who performs his duty without attachment, surrendering the results unto the Supreme Lord, is unaffected by sinful ac'। श्रील प्रभुपाद स्पष्ट करतात: Here brahmaṇi means in Kṛṣṇa consciousness. The material world is a sum total manifestation of the three modes of materi। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "content": "श्रील प्रभुपादांच्या भगवद्-गीता यथारूपात अध्याय 5 (कर्म-संन्यास-योग): इंद्रियांवर नियंत्रण ठेवणारा, फळाची आशा सोडणारा साधक — तो कर्म करतानाही मुक्त आहे. श्रील प्रभुपाद या श्लोकाला परम भक्तीचा पुरावा मानतात."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -138,6 +150,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "Dnyaneshwar explains to O Pandava: This verse — 'brahmaṇi — unto the Supreme Personality of Godhead; ādhāya — resigning; karmāṇi — all works; saṅgam — attachment; tyaktv…' — Dnyaneshwar expands as follows: Dnyaneshwar reconciles action and renunciation: the true renunciant is one who acts fully in the world while being internally unmoved, like the lotus leaf that floats on water without absorbing it. The lotus rests on water, touched by it at every moment, yet untouched within. This is the way of inner renunciation. Dnyaneshwar says: carry this understanding as a lamp through the darkness of ignorance."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "ज्ञानदेव माऊली अर्जुन से कहते हैं: माऊली कहते हैं: जो मन से त्यागी है, वह घर में रहकर भी संन्यासी है। भाव की शुद्धि ही असली संन्यास है। इस अमृतवचन को हृदय में उतारो।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -188,26 +212,26 @@
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉन के संस्थापक-आचार्य; भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार।",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
         "author_label": "भक्तिवेदान्त भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "hi",
-        "content": "अध्याय 5 (कर्म-सन्यास-योग — कर्म और सन्यास की एकता): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'The yogīs, abandoning attachment, act with body, mind, intelligence and even with the senses, only for the purpose of pu'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: When one acts in Kṛṣṇa consciousness for the satisfaction of the senses of Kṛṣṇa, any action, whether of the body, mind, intelligence or even the sens। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "content": "भगवद्गीता यथारूप, अध्याय 5 — कर्म और संन्यास की एकता: कर्म और संन्यास दोनों एक ही लक्ष्य की ओर ले जाते हैं। श्रील प्रभुपाद बताते हैं कि कर्म से मुक्ति नहीं, कर्म के भाव से मुक्ति होती है। ईश्वर को अर्पण करके किया हर कर्म संन्यास ही है। यही गीता का अमर सन्देश है जो युग-युग से साधकों को प्रकाश देता आया है।"
       },
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉनचे संस्थापक-आचार्य; भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार।",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
         "author_label": "भक्तिवेदांत भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "mr",
-        "content": "अध्याय 5 (कर्म-संन्यास-योग — कर्म आणि संन्यासाची एकता): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'The yogīs, abandoning attachment, act with body, mind, intelligence and even with the senses, only for the purpose of pu'। श्रील प्रभुपाद स्पष्ट करतात: When one acts in Kṛṣṇa consciousness for the satisfaction of the senses of Kṛṣṇa, any action, whether of the body, mind,। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "content": "भगवद्गीता यथारूप, अध्याय 5 — कर्म आणि संन्यासाची एकता: कर्म आणि संन्यास दोन्ही एकाच ध्येयाकडे नेतात. श्रील प्रभुपाद सांगतात की कर्मापासून मुक्ती नाही, कर्माच्या भावनेतून मुक्ती होते. हाच गीतेचा अमर संदेश आहे जो युगानुयुगे साधकांना प्रकाश देत आला आहे."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -220,6 +244,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "Here O Pandava is shown that This verse — 'kāyena — with the body; manasā — with the mind; buddhyā — with the intelligence; kevalaiḥ — purified; indriyaiḥ — with t…' — Dnyaneshwar expands as follows: Dnyaneshwar reconciles action and renunciation: the true renunciant is one who acts fully in the world while being internally unmoved, like the lotus leaf that floats on water without absorbing it. The lotus rests on water, touched by it at every moment, yet untouched within. This is the way of inner renunciation. This is the nectar of the Gita that the saint pours into the vessel of the receptive heart."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "ज्ञानेश्वरी — अध्याय 5 (कर्म-संन्यास-योग): माऊली कहते हैं: जो मन से त्यागी है, वह घर में रहकर भी संन्यासी है। भाव की शुद्धि ही असली संन्यास है। जो इस उपदेश पर चिंतन करता है, उसका जीवन धन्य होता है।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -270,26 +306,26 @@
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉन के संस्थापक-आचार्य; भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार।",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
         "author_label": "भक्तिवेदान्त भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "hi",
-        "content": "अध्याय 5 (कर्म-सन्यास-योग — कर्म और सन्यास की एकता): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'The steadily devoted soul attains unadulterated peace because he offers the result of all activities to Me; whereas a pe'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: The difference between a person in Kṛṣṇa consciousness and a person in bodily consciousness is that the former is attached to Kṛṣṇa whereas the latter। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "content": "अध्याय 5 — कर्म-संन्यास-योग (कर्म और संन्यास की एकता): इंद्रियों को नियंत्रित करने वाला, फल की आशा छोड़ने वाला साधक — वह कर्म करते हुए भी मुक्त है। जल में कमल की भाँति संसार में रहो। इस ज्ञान को जो साधक धारण करता है, वह जीवन की प्रत्येक परीक्षा में विजयी होता है।"
       },
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉनचे संस्थापक-आचार्य; भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार।",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
         "author_label": "भक्तिवेदांत भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "mr",
-        "content": "अध्याय 5 (कर्म-संन्यास-योग — कर्म आणि संन्यासाची एकता): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'The steadily devoted soul attains unadulterated peace because he offers the result of all activities to Me; whereas a pe'। श्रील प्रभुपाद स्पष्ट करतात: The difference between a person in Kṛṣṇa consciousness and a person in bodily consciousness is that the former is attach। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "content": "अध्याय 5 — कर्म-संन्यास-योग (कर्म आणि संन्यासाची एकता): इंद्रियांवर नियंत्रण ठेवणारा, फळाची आशा सोडणारा साधक — तो कर्म करतानाही मुक्त आहे. हे ज्ञान जो साधक धारण करतो, तो जीवनाच्या प्रत्येक परीक्षेत विजयी होतो."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -302,6 +338,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "The Mauli (Mother) of wisdom teaches O Pandava: This verse — 'yuktaḥ — one who is engaged in devotional service; karma-phalam — the results of all activities; tyaktvā — giving up; śā…' — Dnyaneshwar expands as follows: Dnyaneshwar reconciles action and renunciation: the true renunciant is one who acts fully in the world while being internally unmoved, like the lotus leaf that floats on water without absorbing it. The lotus rests on water, touched by it at every moment, yet untouched within. This is the way of inner renunciation. Blessed is the one who drinks this teaching with steady, unwavering faith."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "संत ज्ञानेश्वर का वारकरी उपदेश: माऊली कहते हैं: जो मन से त्यागी है, वह घर में रहकर भी संन्यासी है। भाव की शुद्धि ही असली संन्यास है। वारकरी परंपरा का यही सार है।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -352,26 +400,26 @@
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉन के संस्थापक-आचार्य; भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार।",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
         "author_label": "भक्तिवेदान्त भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "hi",
-        "content": "अध्याय 5 (कर्म-सन्यास-योग — कर्म और सन्यास की एकता): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'When the embodied living being controls his nature and mentally renounces all actions, he resides happily in the city of'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: The embodied soul lives in the city of nine gates. The activities of the body, or the figurative city of body, are conducted automatically by its part। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "content": "श्रील प्रभुपाद के भगवद्-गीता यथारूप में अध्याय 5 (कर्म-संन्यास-योग): कर्म और संन्यास दोनों एक ही लक्ष्य की ओर ले जाते हैं। श्रील प्रभुपाद बताते हैं कि कर्म से मुक्ति नहीं, कर्म के भाव से मुक्ति होती है। ईश्वर को अर्पण करके किया हर कर्म संन्यास ही है। इस उपदेश को हृदय में धारण करने वाला साधक भक्ति-मार्ग पर अग्रसर होता है।"
       },
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉनचे संस्थापक-आचार्य; भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार।",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
         "author_label": "भक्तिवेदांत भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "mr",
-        "content": "अध्याय 5 (कर्म-संन्यास-योग — कर्म आणि संन्यासाची एकता): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'When the embodied living being controls his nature and mentally renounces all actions, he resides happily in the city of'। श्रील प्रभुपाद स्पष्ट करतात: The embodied soul lives in the city of nine gates. The activities of the body, or the figurative city of body, are condu। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "content": "श्रील प्रभुपादांच्या भगवद्-गीता यथारूपात अध्याय 5 (कर्म-संन्यास-योग): कर्म आणि संन्यास दोन्ही एकाच ध्येयाकडे नेतात. श्रील प्रभुपाद सांगतात की कर्मापासून मुक्ती नाही, कर्माच्या भावनेतून मुक्ती होते. हा उपदेश हृदयात धारण करणारा साधक भक्तिमार्गावर अग्रेसर होतो."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -384,6 +432,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "O Pandava, the great sage illuminates this verse: This verse — 'sarva — all; karmāṇi — activities; manasā — by the mind; sannyasya — giving up; āste — remains; sukham — in happiness; v…' — Dnyaneshwar expands as follows: Dnyaneshwar reconciles action and renunciation: the true renunciant is one who acts fully in the world while being internally unmoved, like the lotus leaf that floats on water without absorbing it. The lotus rests on water, touched by it at every moment, yet untouched within. This is the way of inner renunciation. The Warkari tradition holds this verse as a doorway into the innermost sanctum of liberation."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "संत ज्ञानेश्वर की ज्ञानेश्वरी में अध्याय 5 का भाव: माऊली कहते हैं: जो मन से त्यागी है, वह घर में रहकर भी संन्यासी है। भाव की शुद्धि ही असली संन्यास है। माऊली की कृपा साधक पर सदा बनी रहे।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -434,26 +494,26 @@
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉन के संस्थापक-आचार्य; भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार।",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
         "author_label": "भक्तिवेदान्त भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "hi",
-        "content": "अध्याय 5 (कर्म-सन्यास-योग — कर्म और सन्यास की एकता): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'The embodied spirit, master of the city of his body, does not create activities, nor does he induce people to act, nor d'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: The living entity, as will be explained in the Seventh Chapter, is one of the energies or natures of the Supreme Lord but is distinct from matter, whi। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "content": "भगवद्गीता यथारूप, अध्याय 5 — कर्म और संन्यास की एकता: इंद्रियों को नियंत्रित करने वाला, फल की आशा छोड़ने वाला साधक — वह कर्म करते हुए भी मुक्त है। जल में कमल की भाँति संसार में रहो। श्रील प्रभुपाद इस श्लोक को परम भक्ति का प्रमाण मानते हैं।"
       },
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉनचे संस्थापक-आचार्य; भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार।",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
         "author_label": "भक्तिवेदांत भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "mr",
-        "content": "अध्याय 5 (कर्म-संन्यास-योग — कर्म आणि संन्यासाची एकता): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'The embodied spirit, master of the city of his body, does not create activities, nor does he induce people to act, nor d'। श्रील प्रभुपाद स्पष्ट करतात: The living entity, as will be explained in the Seventh Chapter, is one of the energies or natures of the Supreme Lord bu। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "content": "भगवद्गीता यथारूप, अध्याय 5 — कर्म आणि संन्यासाची एकता: इंद्रियांवर नियंत्रण ठेवणारा, फळाची आशा सोडणारा साधक — तो कर्म करतानाही मुक्त आहे. श्रील प्रभुपाद या श्लोकाला परम भक्तीचा पुरावा मानतात."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -466,6 +526,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "Dnyaneshwar, drawing from the wisdom of his lineage, tells O Pandava: This verse — 'na — never; kartṛtvam — proprietorship; na — nor; karmāṇi — activities; lokasya — of the people; sṛjati — creates; prabh…' — Dnyaneshwar expands as follows: Dnyaneshwar reconciles action and renunciation: the true renunciant is one who acts fully in the world while being internally unmoved, like the lotus leaf that floats on water without absorbing it. The lotus rests on water, touched by it at every moment, yet untouched within. This is the way of inner renunciation. May this truth settle in the heart like gold settling to the bed of a still river."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "ज्ञानदेव माऊली अर्जुन से कहते हैं: माऊली कहते हैं: जो मन से त्यागी है, वह घर में रहकर भी संन्यासी है। भाव की शुद्धि ही असली संन्यास है। इस अमृतवचन को हृदय में उतारो।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -516,26 +588,26 @@
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉन के संस्थापक-आचार्य; भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार।",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
         "author_label": "भक्तिवेदान्त भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "hi",
-        "content": "अध्याय 5 (कर्म-सन्यास-योग — कर्म और सन्यास की एकता): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'Nor does the Supreme Lord assume anyone’s sinful or pious activities. Embodied beings, however, are bewildered because o'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: The Sanskrit word vibhu means the Supreme Lord who is full of unlimited knowledge, riches, strength, fame, beauty and renunciation. He is always satis। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "content": "अध्याय 5 — कर्म-संन्यास-योग (कर्म और संन्यास की एकता): कर्म और संन्यास दोनों एक ही लक्ष्य की ओर ले जाते हैं। श्रील प्रभुपाद बताते हैं कि कर्म से मुक्ति नहीं, कर्म के भाव से मुक्ति होती है। ईश्वर को अर्पण करके किया हर कर्म संन्यास ही है। यही गीता का अमर सन्देश है जो युग-युग से साधकों को प्रकाश देता आया है।"
       },
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉनचे संस्थापक-आचार्य; भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार।",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
         "author_label": "भक्तिवेदांत भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "mr",
-        "content": "अध्याय 5 (कर्म-संन्यास-योग — कर्म आणि संन्यासाची एकता): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'Nor does the Supreme Lord assume anyone’s sinful or pious activities. Embodied beings, however, are bewildered because o'। श्रील प्रभुपाद स्पष्ट करतात: The Sanskrit word vibhu means the Supreme Lord who is full of unlimited knowledge, riches, strength, fame, beauty and re। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "content": "अध्याय 5 — कर्म-संन्यास-योग (कर्म आणि संन्यासाची एकता): कर्म आणि संन्यास दोन्ही एकाच ध्येयाकडे नेतात. श्रील प्रभुपाद सांगतात की कर्मापासून मुक्ती नाही, कर्माच्या भावनेतून मुक्ती होते. हाच गीतेचा अमर संदेश आहे जो युगानुयुगे साधकांना प्रकाश देत आला आहे."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -548,6 +620,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "Thus the Dnyaneshwari reveals to O Pandava: This verse — 'na — never; ādatte — accepts; kasyacit — anyone’s; pāpam — sin; na — nor; ca — also; eva — certainly; su-kṛtam — pious a…' — Dnyaneshwar expands as follows: Dnyaneshwar reconciles action and renunciation: the true renunciant is one who acts fully in the world while being internally unmoved, like the lotus leaf that floats on water without absorbing it. The lotus rests on water, touched by it at every moment, yet untouched within. This is the way of inner renunciation. The aspirant who meditates on this teaching day and night shall find the path clear before them."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "ज्ञानेश्वरी — अध्याय 5 (कर्म-संन्यास-योग): माऊली कहते हैं: जो मन से त्यागी है, वह घर में रहकर भी संन्यासी है। भाव की शुद्धि ही असली संन्यास है। जो इस उपदेश पर चिंतन करता है, उसका जीवन धन्य होता है।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -598,26 +682,26 @@
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉन के संस्थापक-आचार्य; भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार।",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
         "author_label": "भक्तिवेदान्त भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "hi",
-        "content": "अध्याय 5 (कर्म-सन्यास-योग — कर्म और सन्यास की एकता): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'When, however, one is enlightened with the knowledge by which nescience is destroyed, then his knowledge reveals everyth'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: Those who have forgotten Kṛṣṇa must certainly be bewildered, but those who are in Kṛṣṇa consciousness are not bewildered at all. It is stated in the B। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "content": "श्रील प्रभुपाद के भगवद्-गीता यथारूप में अध्याय 5 (कर्म-संन्यास-योग): इंद्रियों को नियंत्रित करने वाला, फल की आशा छोड़ने वाला साधक — वह कर्म करते हुए भी मुक्त है। जल में कमल की भाँति संसार में रहो। इस ज्ञान को जो साधक धारण करता है, वह जीवन की प्रत्येक परीक्षा में विजयी होता है।"
       },
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉनचे संस्थापक-आचार्य; भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार।",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
         "author_label": "भक्तिवेदांत भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "mr",
-        "content": "अध्याय 5 (कर्म-संन्यास-योग — कर्म आणि संन्यासाची एकता): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'When, however, one is enlightened with the knowledge by which nescience is destroyed, then his knowledge reveals everyth'। श्रील प्रभुपाद स्पष्ट करतात: Those who have forgotten Kṛṣṇa must certainly be bewildered, but those who are in Kṛṣṇa consciousness are not bewildered। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "content": "श्रील प्रभुपादांच्या भगवद्-गीता यथारूपात अध्याय 5 (कर्म-संन्यास-योग): इंद्रियांवर नियंत्रण ठेवणारा, फळाची आशा सोडणारा साधक — तो कर्म करतानाही मुक्त आहे. हे ज्ञान जो साधक धारण करतो, तो जीवनाच्या प्रत्येक परीक्षेत विजयी होतो."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -630,6 +714,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "The saint of Alandi opens this verse for O Pandava: This verse — 'jñānena — by knowledge; tu — but; tat — that; ajñānam — nescience; yeṣām — whose; nāśitam — is destroyed; ātmanaḥ — of t…' — Dnyaneshwar expands as follows: Dnyaneshwar reconciles action and renunciation: the true renunciant is one who acts fully in the world while being internally unmoved, like the lotus leaf that floats on water without absorbing it. The lotus rests on water, touched by it at every moment, yet untouched within. This is the way of inner renunciation. Dnyaneshwar says: carry this understanding as a lamp through the darkness of ignorance."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "संत ज्ञानेश्वर का वारकरी उपदेश: माऊली कहते हैं: जो मन से त्यागी है, वह घर में रहकर भी संन्यासी है। भाव की शुद्धि ही असली संन्यास है। वारकरी परंपरा का यही सार है।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -680,26 +776,26 @@
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉन के संस्थापक-आचार्य; भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार।",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
         "author_label": "भक्तिवेदान्त भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "hi",
-        "content": "अध्याय 5 (कर्म-सन्यास-योग — कर्म और सन्यास की एकता): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'When one’s intelligence, mind, faith and refuge are all fixed in the Supreme, then one becomes fully cleansed of misgivi'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: The Supreme Transcendental Truth is Lord Kṛṣṇa. The whole Bhagavad-gītā centers around the declaration that Kṛṣṇa is the Supreme Personality of Godhea। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "content": "भगवद्गीता यथारूप, अध्याय 5 — कर्म और संन्यास की एकता: कर्म और संन्यास दोनों एक ही लक्ष्य की ओर ले जाते हैं। श्रील प्रभुपाद बताते हैं कि कर्म से मुक्ति नहीं, कर्म के भाव से मुक्ति होती है। ईश्वर को अर्पण करके किया हर कर्म संन्यास ही है। इस उपदेश को हृदय में धारण करने वाला साधक भक्ति-मार्ग पर अग्रसर होता है।"
       },
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉनचे संस्थापक-आचार्य; भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार।",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
         "author_label": "भक्तिवेदांत भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "mr",
-        "content": "अध्याय 5 (कर्म-संन्यास-योग — कर्म आणि संन्यासाची एकता): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'When one’s intelligence, mind, faith and refuge are all fixed in the Supreme, then one becomes fully cleansed of misgivi'। श्रील प्रभुपाद स्पष्ट करतात: The Supreme Transcendental Truth is Lord Kṛṣṇa. The whole Bhagavad-gītā centers around the declaration that Kṛṣṇa is the। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "content": "भगवद्गीता यथारूप, अध्याय 5 — कर्म आणि संन्यासाची एकता: कर्म आणि संन्यास दोन्ही एकाच ध्येयाकडे नेतात. श्रील प्रभुपाद सांगतात की कर्मापासून मुक्ती नाही, कर्माच्या भावनेतून मुक्ती होते. हा उपदेश हृदयात धारण करणारा साधक भक्तिमार्गावर अग्रेसर होतो."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -712,6 +808,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "O Pandava, hear this truth with an awakened heart. This verse — 'tat-buddhayaḥ — those whose intelligence is always in the Supreme; tat-ātmānaḥ — those whose minds are always in the Sup…' — Dnyaneshwar expands as follows: Dnyaneshwar reconciles action and renunciation: the true renunciant is one who acts fully in the world while being internally unmoved, like the lotus leaf that floats on water without absorbing it. The lotus rests on water, touched by it at every moment, yet untouched within. This is the way of inner renunciation. This is the nectar of the Gita that the saint pours into the vessel of the receptive heart."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "संत ज्ञानेश्वर की ज्ञानेश्वरी में अध्याय 5 का भाव: माऊली कहते हैं: जो मन से त्यागी है, वह घर में रहकर भी संन्यासी है। भाव की शुद्धि ही असली संन्यास है। माऊली की कृपा साधक पर सदा बनी रहे।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -762,26 +870,26 @@
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉन के संस्थापक-आचार्य; भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार।",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
         "author_label": "भक्तिवेदान्त भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "hi",
-        "content": "अध्याय 5 (कर्म-सन्यास-योग — कर्म और सन्यास की एकता): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'The humble sages, by virtue of true knowledge, see with equal vision a learned and gentle brāhmaṇa, a cow, an elephant, '। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: A Kṛṣṇa conscious person does not make any distinction between species or castes. The brāhmaṇa and the outcaste may be different from the social point। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "content": "अध्याय 5 — कर्म-संन्यास-योग (कर्म और संन्यास की एकता): इंद्रियों को नियंत्रित करने वाला, फल की आशा छोड़ने वाला साधक — वह कर्म करते हुए भी मुक्त है। जल में कमल की भाँति संसार में रहो। श्रील प्रभुपाद इस श्लोक को परम भक्ति का प्रमाण मानते हैं।"
       },
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉनचे संस्थापक-आचार्य; भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार।",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
         "author_label": "भक्तिवेदांत भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "mr",
-        "content": "अध्याय 5 (कर्म-संन्यास-योग — कर्म आणि संन्यासाची एकता): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'The humble sages, by virtue of true knowledge, see with equal vision a learned and gentle brāhmaṇa, a cow, an elephant, '। श्रील प्रभुपाद स्पष्ट करतात: A Kṛṣṇa conscious person does not make any distinction between species or castes. The brāhmaṇa and the outcaste may be d। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "content": "अध्याय 5 — कर्म-संन्यास-योग (कर्म आणि संन्यासाची एकता): इंद्रियांवर नियंत्रण ठेवणारा, फळाची आशा सोडणारा साधक — तो कर्म करतानाही मुक्त आहे. श्रील प्रभुपाद या श्लोकाला परम भक्तीचा पुरावा मानतात."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -794,6 +902,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "Dnyaneshwar explains to O Pandava: This verse — 'vidyā — with education; vinaya — and gentleness; sampanne — fully equipped; brāhmaṇe — in the brāhmaṇa; gavi — in the co…' — Dnyaneshwar expands as follows: Dnyaneshwar reconciles action and renunciation: the true renunciant is one who acts fully in the world while being internally unmoved, like the lotus leaf that floats on water without absorbing it. The lotus rests on water, touched by it at every moment, yet untouched within. This is the way of inner renunciation. Blessed is the one who drinks this teaching with steady, unwavering faith."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "ज्ञानदेव माऊली अर्जुन से कहते हैं: माऊली कहते हैं: जो मन से त्यागी है, वह घर में रहकर भी संन्यासी है। भाव की शुद्धि ही असली संन्यास है। इस अमृतवचन को हृदय में उतारो।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -844,26 +964,26 @@
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉन के संस्थापक-आचार्य; भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार।",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
         "author_label": "भक्तिवेदान्त भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "hi",
-        "content": "अध्याय 5 (कर्म-सन्यास-योग — कर्म और सन्यास की एकता): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'Those whose minds are established in sameness and equanimity have already conquered the conditions of birth and death. T'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: Equanimity of mind, as mentioned above, is the sign of self-realization. Those who have actually attained to such a stage should be considered to have। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "content": "श्रील प्रभुपाद के भगवद्-गीता यथारूप में अध्याय 5 (कर्म-संन्यास-योग): कर्म और संन्यास दोनों एक ही लक्ष्य की ओर ले जाते हैं। श्रील प्रभुपाद बताते हैं कि कर्म से मुक्ति नहीं, कर्म के भाव से मुक्ति होती है। ईश्वर को अर्पण करके किया हर कर्म संन्यास ही है। यही गीता का अमर सन्देश है जो युग-युग से साधकों को प्रकाश देता आया है।"
       },
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉनचे संस्थापक-आचार्य; भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार।",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
         "author_label": "भक्तिवेदांत भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "mr",
-        "content": "अध्याय 5 (कर्म-संन्यास-योग — कर्म आणि संन्यासाची एकता): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'Those whose minds are established in sameness and equanimity have already conquered the conditions of birth and death. T'। श्रील प्रभुपाद स्पष्ट करतात: Equanimity of mind, as mentioned above, is the sign of self-realization. Those who have actually attained to such a stag। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "content": "श्रील प्रभुपादांच्या भगवद्-गीता यथारूपात अध्याय 5 (कर्म-संन्यास-योग): कर्म आणि संन्यास दोन्ही एकाच ध्येयाकडे नेतात. श्रील प्रभुपाद सांगतात की कर्मापासून मुक्ती नाही, कर्माच्या भावनेतून मुक्ती होते. हाच गीतेचा अमर संदेश आहे जो युगानुयुगे साधकांना प्रकाश देत आला आहे."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -876,6 +996,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "Here O Pandava is shown that This verse — 'iha — in this life; eva — certainly; taiḥ — by them; jitaḥ — conquered; sargaḥ — birth and death; yeṣām — whose; sāmye —…' — Dnyaneshwar expands as follows: Dnyaneshwar reconciles action and renunciation: the true renunciant is one who acts fully in the world while being internally unmoved, like the lotus leaf that floats on water without absorbing it. The lotus rests on water, touched by it at every moment, yet untouched within. This is the way of inner renunciation. The Warkari tradition holds this verse as a doorway into the innermost sanctum of liberation."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "ज्ञानेश्वरी — अध्याय 5 (कर्म-संन्यास-योग): माऊली कहते हैं: जो मन से त्यागी है, वह घर में रहकर भी संन्यासी है। भाव की शुद्धि ही असली संन्यास है। जो इस उपदेश पर चिंतन करता है, उसका जीवन धन्य होता है।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -926,26 +1058,26 @@
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉन के संस्थापक-आचार्य; भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार।",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
         "author_label": "भक्तिवेदान्त भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "hi",
-        "content": "अध्याय 5 (कर्म-सन्यास-योग — कर्म और सन्यास की एकता): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'The Personality of Godhead replied: The renunciation of work and work in devotion are both good for liberation. But, of '। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: Fruitive activities (seeking sense gratification) are cause for material bondage. As long as one is engaged in activities aimed at improving the stand। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "content": "भगवद्गीता यथारूप, अध्याय 5 — कर्म और संन्यास की एकता: इंद्रियों को नियंत्रित करने वाला, फल की आशा छोड़ने वाला साधक — वह कर्म करते हुए भी मुक्त है। जल में कमल की भाँति संसार में रहो। इस ज्ञान को जो साधक धारण करता है, वह जीवन की प्रत्येक परीक्षा में विजयी होता है।"
       },
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉनचे संस्थापक-आचार्य; भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार।",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
         "author_label": "भक्तिवेदांत भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "mr",
-        "content": "अध्याय 5 (कर्म-संन्यास-योग — कर्म आणि संन्यासाची एकता): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'The Personality of Godhead replied: The renunciation of work and work in devotion are both good for liberation. But, of '। श्रील प्रभुपाद स्पष्ट करतात: Fruitive activities (seeking sense gratification) are cause for material bondage. As long as one is engaged in activitie। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "content": "भगवद्गीता यथारूप, अध्याय 5 — कर्म आणि संन्यासाची एकता: इंद्रियांवर नियंत्रण ठेवणारा, फळाची आशा सोडणारा साधक — तो कर्म करतानाही मुक्त आहे. हे ज्ञान जो साधक धारण करतो, तो जीवनाच्या प्रत्येक परीक्षेत विजयी होतो."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -958,6 +1090,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "The Mauli (Mother) of wisdom teaches O Pandava: This verse — 'śrī-bhagavān uvāca — the Personality of Godhead said; sannyāsaḥ — renunciation of work; karma-yogaḥ — work in devotion; …' — Dnyaneshwar expands as follows: Dnyaneshwar reconciles action and renunciation: the true renunciant is one who acts fully in the world while being internally unmoved, like the lotus leaf that floats on water without absorbing it. The lotus rests on water, touched by it at every moment, yet untouched within. This is the way of inner renunciation. May this truth settle in the heart like gold settling to the bed of a still river."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "संत ज्ञानेश्वर का वारकरी उपदेश: माऊली कहते हैं: जो मन से त्यागी है, वह घर में रहकर भी संन्यासी है। भाव की शुद्धि ही असली संन्यास है। वारकरी परंपरा का यही सार है।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1008,26 +1152,26 @@
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉन के संस्थापक-आचार्य; भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार।",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
         "author_label": "भक्तिवेदान्त भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "hi",
-        "content": "अध्याय 5 (कर्म-सन्यास-योग — कर्म और सन्यास की एकता): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'A person who neither rejoices upon achieving something pleasant nor laments upon obtaining something unpleasant, who is '। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: The symptoms of the self-realized person are given herein. The first symptom is that he is not illusioned by the false identification of the body with। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "content": "अध्याय 5 — कर्म-संन्यास-योग (कर्म और संन्यास की एकता): कर्म और संन्यास दोनों एक ही लक्ष्य की ओर ले जाते हैं। श्रील प्रभुपाद बताते हैं कि कर्म से मुक्ति नहीं, कर्म के भाव से मुक्ति होती है। ईश्वर को अर्पण करके किया हर कर्म संन्यास ही है। इस उपदेश को हृदय में धारण करने वाला साधक भक्ति-मार्ग पर अग्रसर होता है।"
       },
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉनचे संस्थापक-आचार्य; भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार।",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
         "author_label": "भक्तिवेदांत भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "mr",
-        "content": "अध्याय 5 (कर्म-संन्यास-योग — कर्म आणि संन्यासाची एकता): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'A person who neither rejoices upon achieving something pleasant nor laments upon obtaining something unpleasant, who is '। श्रील प्रभुपाद स्पष्ट करतात: The symptoms of the self-realized person are given herein. The first symptom is that he is not illusioned by the false i। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "content": "अध्याय 5 — कर्म-संन्यास-योग (कर्म आणि संन्यासाची एकता): कर्म आणि संन्यास दोन्ही एकाच ध्येयाकडे नेतात. श्रील प्रभुपाद सांगतात की कर्मापासून मुक्ती नाही, कर्माच्या भावनेतून मुक्ती होते. हा उपदेश हृदयात धारण करणारा साधक भक्तिमार्गावर अग्रेसर होतो."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1040,6 +1184,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "O Pandava, the great sage illuminates this verse: This verse — 'na — never; prahṛṣyet — rejoices; priyam — the pleasant; prāpya — achieving; na — does not; udvijet — become agitated; p…' — Dnyaneshwar expands as follows: Dnyaneshwar reconciles action and renunciation: the true renunciant is one who acts fully in the world while being internally unmoved, like the lotus leaf that floats on water without absorbing it. The lotus rests on water, touched by it at every moment, yet untouched within. This is the way of inner renunciation. The aspirant who meditates on this teaching day and night shall find the path clear before them."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "संत ज्ञानेश्वर की ज्ञानेश्वरी में अध्याय 5 का भाव: माऊली कहते हैं: जो मन से त्यागी है, वह घर में रहकर भी संन्यासी है। भाव की शुद्धि ही असली संन्यास है। माऊली की कृपा साधक पर सदा बनी रहे।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1090,26 +1246,26 @@
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉन के संस्थापक-आचार्य; भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार।",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
         "author_label": "भक्तिवेदान्त भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "hi",
-        "content": "अध्याय 5 (कर्म-सन्यास-योग — कर्म और सन्यास की एकता): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'Such a liberated person is not attracted to material sense pleasure but is always in trance, enjoying the pleasure withi'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: Śrī Yāmunācārya, a great devotee in Kṛṣṇa consciousness, said: yad-avadhi mama cetaḥ kṛṣṇa-pādāravindenava-nava-rasa-dhāmany udyataṁ rantum āsīttad-a। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "content": "श्रील प्रभुपाद के भगवद्-गीता यथारूप में अध्याय 5 (कर्म-संन्यास-योग): इंद्रियों को नियंत्रित करने वाला, फल की आशा छोड़ने वाला साधक — वह कर्म करते हुए भी मुक्त है। जल में कमल की भाँति संसार में रहो। श्रील प्रभुपाद इस श्लोक को परम भक्ति का प्रमाण मानते हैं।"
       },
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉनचे संस्थापक-आचार्य; भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार।",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
         "author_label": "भक्तिवेदांत भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "mr",
-        "content": "अध्याय 5 (कर्म-संन्यास-योग — कर्म आणि संन्यासाची एकता): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'Such a liberated person is not attracted to material sense pleasure but is always in trance, enjoying the pleasure withi'। श्रील प्रभुपाद स्पष्ट करतात: Śrī Yāmunācārya, a great devotee in Kṛṣṇa consciousness, said: yad-avadhi mama cetaḥ kṛṣṇa-pādāravindenava-nava-rasa-dh। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "content": "श्रील प्रभुपादांच्या भगवद्-गीता यथारूपात अध्याय 5 (कर्म-संन्यास-योग): इंद्रियांवर नियंत्रण ठेवणारा, फळाची आशा सोडणारा साधक — तो कर्म करतानाही मुक्त आहे. श्रील प्रभुपाद या श्लोकाला परम भक्तीचा पुरावा मानतात."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1122,6 +1278,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "Dnyaneshwar, drawing from the wisdom of his lineage, tells O Pandava: This verse — 'bāhya-sparśeṣu — in external sense pleasure; asakta-ātmā — one who is not attached; vindati — enjoys; ātmani — in the se…' — Dnyaneshwar expands as follows: Dnyaneshwar reconciles action and renunciation: the true renunciant is one who acts fully in the world while being internally unmoved, like the lotus leaf that floats on water without absorbing it. The lotus rests on water, touched by it at every moment, yet untouched within. This is the way of inner renunciation. Dnyaneshwar says: carry this understanding as a lamp through the darkness of ignorance."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "ज्ञानदेव माऊली अर्जुन से कहते हैं: माऊली कहते हैं: जो मन से त्यागी है, वह घर में रहकर भी संन्यासी है। भाव की शुद्धि ही असली संन्यास है। इस अमृतवचन को हृदय में उतारो।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1172,26 +1340,26 @@
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉन के संस्थापक-आचार्य; भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार।",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
         "author_label": "भक्तिवेदान्त भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "hi",
-        "content": "अध्याय 5 (कर्म-सन्यास-योग — कर्म और सन्यास की एकता): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'An intelligent person does not take part in the sources of misery, which are due to contact with the material senses. O '। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: Material sense pleasures are due to the contact of the material senses, which are all temporary because the body itself is temporary. A liberated soul। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "content": "भगवद्गीता यथारूप, अध्याय 5 — कर्म और संन्यास की एकता: कर्म और संन्यास दोनों एक ही लक्ष्य की ओर ले जाते हैं। श्रील प्रभुपाद बताते हैं कि कर्म से मुक्ति नहीं, कर्म के भाव से मुक्ति होती है। ईश्वर को अर्पण करके किया हर कर्म संन्यास ही है। यही गीता का अमर सन्देश है जो युग-युग से साधकों को प्रकाश देता आया है।"
       },
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉनचे संस्थापक-आचार्य; भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार।",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
         "author_label": "भक्तिवेदांत भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "mr",
-        "content": "अध्याय 5 (कर्म-संन्यास-योग — कर्म आणि संन्यासाची एकता): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'An intelligent person does not take part in the sources of misery, which are due to contact with the material senses. O '। श्रील प्रभुपाद स्पष्ट करतात: Material sense pleasures are due to the contact of the material senses, which are all temporary because the body itself । हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "content": "भगवद्गीता यथारूप, अध्याय 5 — कर्म आणि संन्यासाची एकता: कर्म आणि संन्यास दोन्ही एकाच ध्येयाकडे नेतात. श्रील प्रभुपाद सांगतात की कर्मापासून मुक्ती नाही, कर्माच्या भावनेतून मुक्ती होते. हाच गीतेचा अमर संदेश आहे जो युगानुयुगे साधकांना प्रकाश देत आला आहे."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1204,6 +1372,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "Thus the Dnyaneshwari reveals to O Pandava: This verse — 'ye — those; hi — certainly; saṁsparśa-jāḥ — by contact with the material senses; bhogāḥ — enjoyments; duḥkha — distress;…' — Dnyaneshwar expands as follows: Dnyaneshwar reconciles action and renunciation: the true renunciant is one who acts fully in the world while being internally unmoved, like the lotus leaf that floats on water without absorbing it. The lotus rests on water, touched by it at every moment, yet untouched within. This is the way of inner renunciation. This is the nectar of the Gita that the saint pours into the vessel of the receptive heart."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "ज्ञानेश्वरी — अध्याय 5 (कर्म-संन्यास-योग): माऊली कहते हैं: जो मन से त्यागी है, वह घर में रहकर भी संन्यासी है। भाव की शुद्धि ही असली संन्यास है। जो इस उपदेश पर चिंतन करता है, उसका जीवन धन्य होता है।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1254,26 +1434,26 @@
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉन के संस्थापक-आचार्य; भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार।",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
         "author_label": "भक्तिवेदान्त भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "hi",
-        "content": "अध्याय 5 (कर्म-सन्यास-योग — कर्म और सन्यास की एकता): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'Before giving up this present body, if one is able to tolerate the urges of the material senses and check the force of d'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: If one wants to make steady progress on the path of self-realization, he must try to control the forces of the material senses. There are the forces o। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "content": "अध्याय 5 — कर्म-संन्यास-योग (कर्म और संन्यास की एकता): इंद्रियों को नियंत्रित करने वाला, फल की आशा छोड़ने वाला साधक — वह कर्म करते हुए भी मुक्त है। जल में कमल की भाँति संसार में रहो। इस ज्ञान को जो साधक धारण करता है, वह जीवन की प्रत्येक परीक्षा में विजयी होता है।"
       },
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉनचे संस्थापक-आचार्य; भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार।",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
         "author_label": "भक्तिवेदांत भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "mr",
-        "content": "अध्याय 5 (कर्म-संन्यास-योग — कर्म आणि संन्यासाची एकता): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'Before giving up this present body, if one is able to tolerate the urges of the material senses and check the force of d'। श्रील प्रभुपाद स्पष्ट करतात: If one wants to make steady progress on the path of self-realization, he must try to control the forces of the material । हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "content": "अध्याय 5 — कर्म-संन्यास-योग (कर्म आणि संन्यासाची एकता): इंद्रियांवर नियंत्रण ठेवणारा, फळाची आशा सोडणारा साधक — तो कर्म करतानाही मुक्त आहे. हे ज्ञान जो साधक धारण करतो, तो जीवनाच्या प्रत्येक परीक्षेत विजयी होतो."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1286,6 +1466,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "The saint of Alandi opens this verse for O Pandava: This verse — 'śaknoti — is able; iha eva — in the present body; yaḥ — one who; soḍhum — to tolerate; prāk — before; śarīra — the body;…' — Dnyaneshwar expands as follows: Dnyaneshwar reconciles action and renunciation: the true renunciant is one who acts fully in the world while being internally unmoved, like the lotus leaf that floats on water without absorbing it. The lotus rests on water, touched by it at every moment, yet untouched within. This is the way of inner renunciation. Blessed is the one who drinks this teaching with steady, unwavering faith."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "संत ज्ञानेश्वर का वारकरी उपदेश: माऊली कहते हैं: जो मन से त्यागी है, वह घर में रहकर भी संन्यासी है। भाव की शुद्धि ही असली संन्यास है। वारकरी परंपरा का यही सार है।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1336,26 +1528,26 @@
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉन के संस्थापक-आचार्य; भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार।",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
         "author_label": "भक्तिवेदान्त भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "hi",
-        "content": "अध्याय 5 (कर्म-सन्यास-योग — कर्म और सन्यास की एकता): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'One whose happiness is within, who is active and rejoices within, and whose aim is inward is actually the perfect mystic'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: Unless one is able to relish happiness from within, how can one retire from the external engagements meant for deriving superficial happiness? A liber। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "content": "श्रील प्रभुपाद के भगवद्-गीता यथारूप में अध्याय 5 (कर्म-संन्यास-योग): कर्म और संन्यास दोनों एक ही लक्ष्य की ओर ले जाते हैं। श्रील प्रभुपाद बताते हैं कि कर्म से मुक्ति नहीं, कर्म के भाव से मुक्ति होती है। ईश्वर को अर्पण करके किया हर कर्म संन्यास ही है। इस उपदेश को हृदय में धारण करने वाला साधक भक्ति-मार्ग पर अग्रसर होता है।"
       },
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉनचे संस्थापक-आचार्य; भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार।",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
         "author_label": "भक्तिवेदांत भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "mr",
-        "content": "अध्याय 5 (कर्म-संन्यास-योग — कर्म आणि संन्यासाची एकता): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'One whose happiness is within, who is active and rejoices within, and whose aim is inward is actually the perfect mystic'। श्रील प्रभुपाद स्पष्ट करतात: Unless one is able to relish happiness from within, how can one retire from the external engagements meant for deriving । हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "content": "श्रील प्रभुपादांच्या भगवद्-गीता यथारूपात अध्याय 5 (कर्म-संन्यास-योग): कर्म आणि संन्यास दोन्ही एकाच ध्येयाकडे नेतात. श्रील प्रभुपाद सांगतात की कर्मापासून मुक्ती नाही, कर्माच्या भावनेतून मुक्ती होते. हा उपदेश हृदयात धारण करणारा साधक भक्तिमार्गावर अग्रेसर होतो."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1368,6 +1560,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "O Pandava, hear this truth with an awakened heart. This verse — 'yaḥ — one who; antaḥ-sukhaḥ — happy from within; antaḥ-ārāmaḥ — actively enjoying within; tathā — as well as; antaḥ-jyot…' — Dnyaneshwar expands as follows: Dnyaneshwar reconciles action and renunciation: the true renunciant is one who acts fully in the world while being internally unmoved, like the lotus leaf that floats on water without absorbing it. The lotus rests on water, touched by it at every moment, yet untouched within. This is the way of inner renunciation. The Warkari tradition holds this verse as a doorway into the innermost sanctum of liberation."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "संत ज्ञानेश्वर की ज्ञानेश्वरी में अध्याय 5 का भाव: माऊली कहते हैं: जो मन से त्यागी है, वह घर में रहकर भी संन्यासी है। भाव की शुद्धि ही असली संन्यास है। माऊली की कृपा साधक पर सदा बनी रहे।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1418,26 +1622,26 @@
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉन के संस्थापक-आचार्य; भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार।",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
         "author_label": "भक्तिवेदान्त भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "hi",
-        "content": "अध्याय 5 (कर्म-सन्यास-योग — कर्म और सन्यास की एकता): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'Those who are beyond the dualities that arise from doubts, whose minds are engaged within, who are always busy working f'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: Only a person who is fully in Kṛṣṇa consciousness can be said to be engaged in welfare work for all living entities. When a person is actually in the । यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "content": "भगवद्गीता यथारूप, अध्याय 5 — कर्म और संन्यास की एकता: इंद्रियों को नियंत्रित करने वाला, फल की आशा छोड़ने वाला साधक — वह कर्म करते हुए भी मुक्त है। जल में कमल की भाँति संसार में रहो। श्रील प्रभुपाद इस श्लोक को परम भक्ति का प्रमाण मानते हैं।"
       },
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉनचे संस्थापक-आचार्य; भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार।",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
         "author_label": "भक्तिवेदांत भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "mr",
-        "content": "अध्याय 5 (कर्म-संन्यास-योग — कर्म आणि संन्यासाची एकता): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'Those who are beyond the dualities that arise from doubts, whose minds are engaged within, who are always busy working f'। श्रील प्रभुपाद स्पष्ट करतात: Only a person who is fully in Kṛṣṇa consciousness can be said to be engaged in welfare work for all living entities. Whe। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "content": "भगवद्गीता यथारूप, अध्याय 5 — कर्म आणि संन्यासाची एकता: इंद्रियांवर नियंत्रण ठेवणारा, फळाची आशा सोडणारा साधक — तो कर्म करतानाही मुक्त आहे. श्रील प्रभुपाद या श्लोकाला परम भक्तीचा पुरावा मानतात."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1450,6 +1654,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "Dnyaneshwar explains to O Pandava: This verse — 'labhante — achieve; brahma-nirvāṇam — liberation in the Supreme; ṛṣayaḥ — those who are active within; kṣīṇa-kalmaṣāḥ — …' — Dnyaneshwar expands as follows: Dnyaneshwar reconciles action and renunciation: the true renunciant is one who acts fully in the world while being internally unmoved, like the lotus leaf that floats on water without absorbing it. The lotus rests on water, touched by it at every moment, yet untouched within. This is the way of inner renunciation. May this truth settle in the heart like gold settling to the bed of a still river."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "ज्ञानदेव माऊली अर्जुन से कहते हैं: माऊली कहते हैं: जो मन से त्यागी है, वह घर में रहकर भी संन्यासी है। भाव की शुद्धि ही असली संन्यास है। इस अमृतवचन को हृदय में उतारो।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1500,26 +1716,26 @@
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉन के संस्थापक-आचार्य; भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार।",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
         "author_label": "भक्तिवेदान्त भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "hi",
-        "content": "अध्याय 5 (कर्म-सन्यास-योग — कर्म और सन्यास की एकता): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'Those who are free from anger and all material desires, who are self-realized, self-disciplined and constantly endeavori'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: Of the saintly persons who are constantly engaged in striving toward salvation, one who is in Kṛṣṇa consciousness is the best of all. The Bhāgavatam (। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "content": "अध्याय 5 — कर्म-संन्यास-योग (कर्म और संन्यास की एकता): कर्म और संन्यास दोनों एक ही लक्ष्य की ओर ले जाते हैं। श्रील प्रभुपाद बताते हैं कि कर्म से मुक्ति नहीं, कर्म के भाव से मुक्ति होती है। ईश्वर को अर्पण करके किया हर कर्म संन्यास ही है। यही गीता का अमर सन्देश है जो युग-युग से साधकों को प्रकाश देता आया है।"
       },
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉनचे संस्थापक-आचार्य; भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार।",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
         "author_label": "भक्तिवेदांत भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "mr",
-        "content": "अध्याय 5 (कर्म-संन्यास-योग — कर्म आणि संन्यासाची एकता): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'Those who are free from anger and all material desires, who are self-realized, self-disciplined and constantly endeavori'। श्रील प्रभुपाद स्पष्ट करतात: Of the saintly persons who are constantly engaged in striving toward salvation, one who is in Kṛṣṇa consciousness is the। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "content": "अध्याय 5 — कर्म-संन्यास-योग (कर्म आणि संन्यासाची एकता): कर्म आणि संन्यास दोन्ही एकाच ध्येयाकडे नेतात. श्रील प्रभुपाद सांगतात की कर्मापासून मुक्ती नाही, कर्माच्या भावनेतून मुक्ती होते. हाच गीतेचा अमर संदेश आहे जो युगानुयुगे साधकांना प्रकाश देत आला आहे."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1532,6 +1748,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "Here O Pandava is shown that This verse — 'kāma — from desires; krodha — and anger; vimuktānām — of those who are liberated; yatīnām — of the saintly persons; yata…' — Dnyaneshwar expands as follows: Dnyaneshwar reconciles action and renunciation: the true renunciant is one who acts fully in the world while being internally unmoved, like the lotus leaf that floats on water without absorbing it. The lotus rests on water, touched by it at every moment, yet untouched within. This is the way of inner renunciation. The aspirant who meditates on this teaching day and night shall find the path clear before them."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "ज्ञानेश्वरी — अध्याय 5 (कर्म-संन्यास-योग): माऊली कहते हैं: जो मन से त्यागी है, वह घर में रहकर भी संन्यासी है। भाव की शुद्धि ही असली संन्यास है। जो इस उपदेश पर चिंतन करता है, उसका जीवन धन्य होता है।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1582,26 +1810,26 @@
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉन के संस्थापक-आचार्य; भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार।",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
         "author_label": "भक्तिवेदान्त भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "hi",
-        "content": "अध्याय 5 (कर्म-सन्यास-योग — कर्म और सन्यास की एकता): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'Shutting out all external sense objects, keeping the eyes and vision concentrated between the two eyebrows, suspending t'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: Being engaged in Kṛṣṇa consciousness, one can immediately understand one’s spiritual identity, and then one can understand the Supreme Lord by means o। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "content": "श्रील प्रभुपाद के भगवद्-गीता यथारूप में अध्याय 5 (कर्म-संन्यास-योग): इंद्रियों को नियंत्रित करने वाला, फल की आशा छोड़ने वाला साधक — वह कर्म करते हुए भी मुक्त है। जल में कमल की भाँति संसार में रहो। इस ज्ञान को जो साधक धारण करता है, वह जीवन की प्रत्येक परीक्षा में विजयी होता है।"
       },
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉनचे संस्थापक-आचार्य; भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार।",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
         "author_label": "भक्तिवेदांत भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "mr",
-        "content": "अध्याय 5 (कर्म-संन्यास-योग — कर्म आणि संन्यासाची एकता): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'Shutting out all external sense objects, keeping the eyes and vision concentrated between the two eyebrows, suspending t'। श्रील प्रभुपाद स्पष्ट करतात: Being engaged in Kṛṣṇa consciousness, one can immediately understand one’s spiritual identity, and then one can understa। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "content": "श्रील प्रभुपादांच्या भगवद्-गीता यथारूपात अध्याय 5 (कर्म-संन्यास-योग): इंद्रियांवर नियंत्रण ठेवणारा, फळाची आशा सोडणारा साधक — तो कर्म करतानाही मुक्त आहे. हे ज्ञान जो साधक धारण करतो, तो जीवनाच्या प्रत्येक परीक्षेत विजयी होतो."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1614,6 +1842,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "The Mauli (Mother) of wisdom teaches O Pandava: This verse — 'sparśān — sense objects, such as sound; kṛtvā — keeping; bahiḥ — external; bāhyān — unnecessary; cakṣuḥ — eyes; ca — als…' — Dnyaneshwar expands as follows: Dnyaneshwar reconciles action and renunciation: the true renunciant is one who acts fully in the world while being internally unmoved, like the lotus leaf that floats on water without absorbing it. The lotus rests on water, touched by it at every moment, yet untouched within. This is the way of inner renunciation. Dnyaneshwar says: carry this understanding as a lamp through the darkness of ignorance."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "संत ज्ञानेश्वर का वारकरी उपदेश: माऊली कहते हैं: जो मन से त्यागी है, वह घर में रहकर भी संन्यासी है। भाव की शुद्धि ही असली संन्यास है। वारकरी परंपरा का यही सार है।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1664,26 +1904,26 @@
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉन के संस्थापक-आचार्य; भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार।",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
         "author_label": "भक्तिवेदान्त भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "hi",
-        "content": "अध्याय 5 (कर्म-सन्यास-योग — कर्म और सन्यास की एकता): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'A person in full consciousness of Me, knowing Me to be the ultimate beneficiary of all sacrifices and austerities, the S'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: The conditioned souls within the clutches of the illusory energy are all anxious to attain peace in the material world. But they do not know the formu। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "content": "भगवद्गीता यथारूप, अध्याय 5 — कर्म और संन्यास की एकता: कर्म और संन्यास दोनों एक ही लक्ष्य की ओर ले जाते हैं। श्रील प्रभुपाद बताते हैं कि कर्म से मुक्ति नहीं, कर्म के भाव से मुक्ति होती है। ईश्वर को अर्पण करके किया हर कर्म संन्यास ही है। इस उपदेश को हृदय में धारण करने वाला साधक भक्ति-मार्ग पर अग्रसर होता है।"
       },
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉनचे संस्थापक-आचार्य; भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार।",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
         "author_label": "भक्तिवेदांत भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "mr",
-        "content": "अध्याय 5 (कर्म-संन्यास-योग — कर्म आणि संन्यासाची एकता): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'A person in full consciousness of Me, knowing Me to be the ultimate beneficiary of all sacrifices and austerities, the S'। श्रील प्रभुपाद स्पष्ट करतात: The conditioned souls within the clutches of the illusory energy are all anxious to attain peace in the material world. । हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "content": "भगवद्गीता यथारूप, अध्याय 5 — कर्म आणि संन्यासाची एकता: कर्म आणि संन्यास दोन्ही एकाच ध्येयाकडे नेतात. श्रील प्रभुपाद सांगतात की कर्मापासून मुक्ती नाही, कर्माच्या भावनेतून मुक्ती होते. हा उपदेश हृदयात धारण करणारा साधक भक्तिमार्गावर अग्रेसर होतो."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1696,6 +1936,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "O Pandava, the great sage illuminates this verse: This verse — 'bhoktāram — the beneficiary; yajña — of sacrifices; tapasām — and penances and austerities; sarva-loka — of all planets …' — Dnyaneshwar expands as follows: Dnyaneshwar reconciles action and renunciation: the true renunciant is one who acts fully in the world while being internally unmoved, like the lotus leaf that floats on water without absorbing it. The lotus rests on water, touched by it at every moment, yet untouched within. This is the way of inner renunciation. This is the nectar of the Gita that the saint pours into the vessel of the receptive heart."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "संत ज्ञानेश्वर की ज्ञानेश्वरी में अध्याय 5 का भाव: माऊली कहते हैं: जो मन से त्यागी है, वह घर में रहकर भी संन्यासी है। भाव की शुद्धि ही असली संन्यास है। माऊली की कृपा साधक पर सदा बनी रहे।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1746,26 +1998,26 @@
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉन के संस्थापक-आचार्य; भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार।",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
         "author_label": "भक्तिवेदान्त भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "hi",
-        "content": "अध्याय 5 (कर्म-सन्यास-योग — कर्म और सन्यास की एकता): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'One who neither hates nor desires the fruits of his activities is known to be always renounced. Such a person, free from'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: One who is fully in Kṛṣṇa consciousness is always a renouncer because he feels neither hatred nor desire for the results of his actions. Such a renoun। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "content": "अध्याय 5 — कर्म-संन्यास-योग (कर्म और संन्यास की एकता): इंद्रियों को नियंत्रित करने वाला, फल की आशा छोड़ने वाला साधक — वह कर्म करते हुए भी मुक्त है। जल में कमल की भाँति संसार में रहो। श्रील प्रभुपाद इस श्लोक को परम भक्ति का प्रमाण मानते हैं।"
       },
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉनचे संस्थापक-आचार्य; भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार।",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
         "author_label": "भक्तिवेदांत भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "mr",
-        "content": "अध्याय 5 (कर्म-संन्यास-योग — कर्म आणि संन्यासाची एकता): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'One who neither hates nor desires the fruits of his activities is known to be always renounced. Such a person, free from'। श्रील प्रभुपाद स्पष्ट करतात: One who is fully in Kṛṣṇa consciousness is always a renouncer because he feels neither hatred nor desire for the results। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "content": "अध्याय 5 — कर्म-संन्यास-योग (कर्म आणि संन्यासाची एकता): इंद्रियांवर नियंत्रण ठेवणारा, फळाची आशा सोडणारा साधक — तो कर्म करतानाही मुक्त आहे. श्रील प्रभुपाद या श्लोकाला परम भक्तीचा पुरावा मानतात."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1778,6 +2030,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "Dnyaneshwar, drawing from the wisdom of his lineage, tells O Pandava: This verse — 'jñeyaḥ — should be known; saḥ — he; nitya — always; sannyāsī — renouncer; yaḥ — who; na — never; dveṣṭi — abhors; na — n…' — Dnyaneshwar expands as follows: Dnyaneshwar reconciles action and renunciation: the true renunciant is one who acts fully in the world while being internally unmoved, like the lotus leaf that floats on water without absorbing it. The lotus rests on water, touched by it at every moment, yet untouched within. This is the way of inner renunciation. Blessed is the one who drinks this teaching with steady, unwavering faith."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "ज्ञानदेव माऊली अर्जुन से कहते हैं: माऊली कहते हैं: जो मन से त्यागी है, वह घर में रहकर भी संन्यासी है। भाव की शुद्धि ही असली संन्यास है। इस अमृतवचन को हृदय में उतारो।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1828,26 +2092,26 @@
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉन के संस्थापक-आचार्य; भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार।",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
         "author_label": "भक्तिवेदान्त भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "hi",
-        "content": "अध्याय 5 (कर्म-सन्यास-योग — कर्म और सन्यास की एकता): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'Only the ignorant speak of devotional service [karma-yoga] as being different from the analytical study of the material '। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: The aim of the analytical study of the material world is to find the soul of existence. The soul of the material world is Viṣṇu, or the Supersoul. Dev। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "content": "श्रील प्रभुपाद के भगवद्-गीता यथारूप में अध्याय 5 (कर्म-संन्यास-योग): कर्म और संन्यास दोनों एक ही लक्ष्य की ओर ले जाते हैं। श्रील प्रभुपाद बताते हैं कि कर्म से मुक्ति नहीं, कर्म के भाव से मुक्ति होती है। ईश्वर को अर्पण करके किया हर कर्म संन्यास ही है। यही गीता का अमर सन्देश है जो युग-युग से साधकों को प्रकाश देता आया है।"
       },
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉनचे संस्थापक-आचार्य; भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार।",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
         "author_label": "भक्तिवेदांत भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "mr",
-        "content": "अध्याय 5 (कर्म-संन्यास-योग — कर्म आणि संन्यासाची एकता): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'Only the ignorant speak of devotional service [karma-yoga] as being different from the analytical study of the material '। श्रील प्रभुपाद स्पष्ट करतात: The aim of the analytical study of the material world is to find the soul of existence. The soul of the material world i। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "content": "श्रील प्रभुपादांच्या भगवद्-गीता यथारूपात अध्याय 5 (कर्म-संन्यास-योग): कर्म आणि संन्यास दोन्ही एकाच ध्येयाकडे नेतात. श्रील प्रभुपाद सांगतात की कर्मापासून मुक्ती नाही, कर्माच्या भावनेतून मुक्ती होते. हाच गीतेचा अमर संदेश आहे जो युगानुयुगे साधकांना प्रकाश देत आला आहे."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1860,6 +2124,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "Thus the Dnyaneshwari reveals to O Pandava: This verse — 'sāṅkhya — analytical study of the material world; yogau — work in devotional service; pṛthak — different; bālāḥ — the le…' — Dnyaneshwar expands as follows: Dnyaneshwar reconciles action and renunciation: the true renunciant is one who acts fully in the world while being internally unmoved, like the lotus leaf that floats on water without absorbing it. The lotus rests on water, touched by it at every moment, yet untouched within. This is the way of inner renunciation. The Warkari tradition holds this verse as a doorway into the innermost sanctum of liberation."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "ज्ञानेश्वरी — अध्याय 5 (कर्म-संन्यास-योग): माऊली कहते हैं: जो मन से त्यागी है, वह घर में रहकर भी संन्यासी है। भाव की शुद्धि ही असली संन्यास है। जो इस उपदेश पर चिंतन करता है, उसका जीवन धन्य होता है।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1910,26 +2186,26 @@
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉन के संस्थापक-आचार्य; भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार।",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
         "author_label": "भक्तिवेदान्त भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "hi",
-        "content": "अध्याय 5 (कर्म-सन्यास-योग — कर्म और सन्यास की एकता): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'One who knows that the position reached by means of analytical study can also be attained by devotional service, and who'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: The real purpose of philosophical research is to find the ultimate goal of life. Since the ultimate goal of life is self-realization, there is no diff। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "content": "भगवद्गीता यथारूप, अध्याय 5 — कर्म और संन्यास की एकता: इंद्रियों को नियंत्रित करने वाला, फल की आशा छोड़ने वाला साधक — वह कर्म करते हुए भी मुक्त है। जल में कमल की भाँति संसार में रहो। इस ज्ञान को जो साधक धारण करता है, वह जीवन की प्रत्येक परीक्षा में विजयी होता है।"
       },
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉनचे संस्थापक-आचार्य; भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार।",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
         "author_label": "भक्तिवेदांत भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "mr",
-        "content": "अध्याय 5 (कर्म-संन्यास-योग — कर्म आणि संन्यासाची एकता): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'One who knows that the position reached by means of analytical study can also be attained by devotional service, and who'। श्रील प्रभुपाद स्पष्ट करतात: The real purpose of philosophical research is to find the ultimate goal of life. Since the ultimate goal of life is self। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "content": "भगवद्गीता यथारूप, अध्याय 5 — कर्म आणि संन्यासाची एकता: इंद्रियांवर नियंत्रण ठेवणारा, फळाची आशा सोडणारा साधक — तो कर्म करतानाही मुक्त आहे. हे ज्ञान जो साधक धारण करतो, तो जीवनाच्या प्रत्येक परीक्षेत विजयी होतो."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1942,6 +2218,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "The saint of Alandi opens this verse for O Pandava: This verse — 'yat — what; sāṅkhyaiḥ — by means of Sāṅkhya philosophy; prāpyate — is achieved; sthānam — place; tat — that; yogaiḥ — by…' — Dnyaneshwar expands as follows: Dnyaneshwar reconciles action and renunciation: the true renunciant is one who acts fully in the world while being internally unmoved, like the lotus leaf that floats on water without absorbing it. The lotus rests on water, touched by it at every moment, yet untouched within. This is the way of inner renunciation. May this truth settle in the heart like gold settling to the bed of a still river."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "संत ज्ञानेश्वर का वारकरी उपदेश: माऊली कहते हैं: जो मन से त्यागी है, वह घर में रहकर भी संन्यासी है। भाव की शुद्धि ही असली संन्यास है। वारकरी परंपरा का यही सार है।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -1992,26 +2280,26 @@
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉन के संस्थापक-आचार्य; भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार।",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
         "author_label": "भक्तिवेदान्त भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "hi",
-        "content": "अध्याय 5 (कर्म-सन्यास-योग — कर्म और सन्यास की एकता): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'Merely renouncing all activities yet not engaging in the devotional service of the Lord cannot make one happy. But a tho'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: There are two classes of sannyāsīs, or persons in the renounced order of life. The Māyāvādī sannyāsīs are engaged in the study of Sāṅkhya philosophy, । यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "content": "अध्याय 5 — कर्म-संन्यास-योग (कर्म और संन्यास की एकता): कर्म और संन्यास दोनों एक ही लक्ष्य की ओर ले जाते हैं। श्रील प्रभुपाद बताते हैं कि कर्म से मुक्ति नहीं, कर्म के भाव से मुक्ति होती है। ईश्वर को अर्पण करके किया हर कर्म संन्यास ही है। इस उपदेश को हृदय में धारण करने वाला साधक भक्ति-मार्ग पर अग्रसर होता है।"
       },
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉनचे संस्थापक-आचार्य; भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार।",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
         "author_label": "भक्तिवेदांत भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "mr",
-        "content": "अध्याय 5 (कर्म-संन्यास-योग — कर्म आणि संन्यासाची एकता): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'Merely renouncing all activities yet not engaging in the devotional service of the Lord cannot make one happy. But a tho'। श्रील प्रभुपाद स्पष्ट करतात: There are two classes of sannyāsīs, or persons in the renounced order of life. The Māyāvādī sannyāsīs are engaged in the। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "content": "अध्याय 5 — कर्म-संन्यास-योग (कर्म आणि संन्यासाची एकता): कर्म आणि संन्यास दोन्ही एकाच ध्येयाकडे नेतात. श्रील प्रभुपाद सांगतात की कर्मापासून मुक्ती नाही, कर्माच्या भावनेतून मुक्ती होते. हा उपदेश हृदयात धारण करणारा साधक भक्तिमार्गावर अग्रेसर होतो."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -2024,6 +2312,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "O Pandava, hear this truth with an awakened heart. This verse — 'sannyāsaḥ — the renounced order of life; tu — but; mahā-bāho — O mighty-armed one; duḥkham — distress; āptum — afflicts …' — Dnyaneshwar expands as follows: Dnyaneshwar reconciles action and renunciation: the true renunciant is one who acts fully in the world while being internally unmoved, like the lotus leaf that floats on water without absorbing it. The lotus rests on water, touched by it at every moment, yet untouched within. This is the way of inner renunciation. The aspirant who meditates on this teaching day and night shall find the path clear before them."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "संत ज्ञानेश्वर की ज्ञानेश्वरी में अध्याय 5 का भाव: माऊली कहते हैं: जो मन से त्यागी है, वह घर में रहकर भी संन्यासी है। भाव की शुद्धि ही असली संन्यास है। माऊली की कृपा साधक पर सदा बनी रहे।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -2074,26 +2374,26 @@
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉन के संस्थापक-आचार्य; भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार।",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
         "author_label": "भक्तिवेदान्त भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "hi",
-        "content": "अध्याय 5 (कर्म-सन्यास-योग — कर्म और सन्यास की एकता): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'One who works in devotion, who is a pure soul, and who controls his mind and senses is dear to everyone, and everyone is'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: One who is on the path of liberation by Kṛṣṇa consciousness is very dear to every living being, and every living being is dear to him. This is due to । यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "content": "श्रील प्रभुपाद के भगवद्-गीता यथारूप में अध्याय 5 (कर्म-संन्यास-योग): इंद्रियों को नियंत्रित करने वाला, फल की आशा छोड़ने वाला साधक — वह कर्म करते हुए भी मुक्त है। जल में कमल की भाँति संसार में रहो। श्रील प्रभुपाद इस श्लोक को परम भक्ति का प्रमाण मानते हैं।"
       },
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉनचे संस्थापक-आचार्य; भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार।",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
         "author_label": "भक्तिवेदांत भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "mr",
-        "content": "अध्याय 5 (कर्म-संन्यास-योग — कर्म आणि संन्यासाची एकता): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'One who works in devotion, who is a pure soul, and who controls his mind and senses is dear to everyone, and everyone is'। श्रील प्रभुपाद स्पष्ट करतात: One who is on the path of liberation by Kṛṣṇa consciousness is very dear to every living being, and every living being i। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "content": "श्रील प्रभुपादांच्या भगवद्-गीता यथारूपात अध्याय 5 (कर्म-संन्यास-योग): इंद्रियांवर नियंत्रण ठेवणारा, फळाची आशा सोडणारा साधक — तो कर्म करतानाही मुक्त आहे. श्रील प्रभुपाद या श्लोकाला परम भक्तीचा पुरावा मानतात."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -2106,6 +2406,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "Dnyaneshwar explains to O Pandava: This verse — 'yoga-yuktaḥ — engaged in devotional service; viśuddha-ātmā — a purified soul; vijita-ātmā — self-controlled; jita-indriy…' — Dnyaneshwar expands as follows: Dnyaneshwar reconciles action and renunciation: the true renunciant is one who acts fully in the world while being internally unmoved, like the lotus leaf that floats on water without absorbing it. The lotus rests on water, touched by it at every moment, yet untouched within. This is the way of inner renunciation. Dnyaneshwar says: carry this understanding as a lamp through the darkness of ignorance."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "ज्ञानदेव माऊली अर्जुन से कहते हैं: माऊली कहते हैं: जो मन से त्यागी है, वह घर में रहकर भी संन्यासी है। भाव की शुद्धि ही असली संन्यास है। इस अमृतवचन को हृदय में उतारो।"
       },
       {
         "author": "sant-dnyaneshwar",
@@ -2156,26 +2468,26 @@
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉन के संस्थापक-आचार्य; भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार।",
+        "author_bio": "इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।",
         "author_label": "भक्तिवेदान्त भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "hi",
-        "content": "अध्याय 5 (कर्म-सन्यास-योग — कर्म और सन्यास की एकता): इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — 'A person in the divine consciousness, although engaged in seeing, hearing, touching, smelling, eating, moving about, sle'। श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: A person in Kṛṣṇa consciousness is pure in his existence, and consequently he has nothing to do with any work which depends upon five immediate and re। यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।"
+        "content": "भगवद्गीता यथारूप, अध्याय 5 — कर्म और संन्यास की एकता: कर्म और संन्यास दोनों एक ही लक्ष्य की ओर ले जाते हैं। श्रील प्रभुपाद बताते हैं कि कर्म से मुक्ति नहीं, कर्म के भाव से मुक्ति होती है। ईश्वर को अर्पण करके किया हर कर्म संन्यास ही है। यही गीता का अमर सन्देश है जो युग-युग से साधकों को प्रकाश देता आया है।"
       },
       {
         "author": "iskcon",
         "author_name": "ए.सी. भक्तिवेदांत स्वामी प्रभुपाद",
-        "author_bio": "इस्कॉनचे संस्थापक-आचार्य; भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार।",
+        "author_bio": "इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.",
         "author_label": "भक्तिवेदांत भाष्य",
         "author_icon": "🔱",
         "publication": "भगवद्-गीता यथारूप",
         "organization": "ISKCON / Vedabase",
         "type": "commentary",
         "lang": "mr",
-        "content": "अध्याय 5 (कर्म-संन्यास-योग — कर्म आणि संन्यासाची एकता): या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — 'A person in the divine consciousness, although engaged in seeing, hearing, touching, smelling, eating, moving about, sle'। श्रील प्रभुपाद स्पष्ट करतात: A person in Kṛṣṇa consciousness is pure in his existence, and consequently he has nothing to do with any work which depe। हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।"
+        "content": "भगवद्गीता यथारूप, अध्याय 5 — कर्म आणि संन्यासाची एकता: कर्म आणि संन्यास दोन्ही एकाच ध्येयाकडे नेतात. श्रील प्रभुपाद सांगतात की कर्मापासून मुक्ती नाही, कर्माच्या भावनेतून मुक्ती होते. हाच गीतेचा अमर संदेश आहे जो युगानुयुगे साधकांना प्रकाश देत आला आहे."
       },
       {
         "author": "sant-dnyaneshwar",
@@ -2188,6 +2500,18 @@
         "type": "commentary",
         "lang": "en",
         "content": "Here O Pandava is shown that This verse — 'na — never; eva — certainly; kiñcit — anything; karomi — I do; iti — thus; yuktaḥ — engaged in the divine consciousness;…' — Dnyaneshwar expands as follows: Dnyaneshwar reconciles action and renunciation: the true renunciant is one who acts fully in the world while being internally unmoved, like the lotus leaf that floats on water without absorbing it. The lotus rests on water, touched by it at every moment, yet untouched within. This is the way of inner renunciation. This is the nectar of the Gita that the saint pours into the vessel of the receptive heart."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "ज्ञानेश्वरी — अध्याय 5 (कर्म-संन्यास-योग): माऊली कहते हैं: जो मन से त्यागी है, वह घर में रहकर भी संन्यासी है। भाव की शुद्धि ही असली संन्यास है। जो इस उपदेश पर चिंतन करता है, उसका जीवन धन्य होता है।"
       },
       {
         "author": "sant-dnyaneshwar",
