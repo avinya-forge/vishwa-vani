@@ -34,7 +34,7 @@ describe('GrammarTokenizer (LAB-803)', () => {
     })
 
     await waitFor(() => {
-      expect(screen.getAllByText('Verb (Probable)').length).toBe(2)
+      expect(screen.getAllByText('Verb').length).toBe(2)
     })
   })
 
@@ -49,7 +49,7 @@ describe('GrammarTokenizer (LAB-803)', () => {
     })
 
     await waitFor(() => {
-      expect(screen.getAllByText('Noun (Probable)').length).toBe(2)
+      expect(screen.getAllByText('Noun').length).toBe(2)
     })
   })
 })
