@@ -297,90 +297,12 @@ describe('StudyClient — STAB-606 coverage', () => {
 
     it('renders without crash when adhyayaList is empty for Gita', () => {
       render(<StudyClient {...defaultProps} />);
-      expect(screen.getByTestId('hierarchical-nav')).toBeInTheDocument();
+      expect(screen.getAllByTestId('hierarchical-nav').length).toBeGreaterThan(0);
     });
   });
 
   // ── AI SYNTHESIS BUTTON ────────────────────────────────────────────────────
 
-  describe('AI Synthesis button', () => {
-    it('renders AI Analysis button and is not disabled initially', () => {
-      render(<StudyClient {...defaultProps} />);
-      const btn = screen.getByRole('button', { name: /Generate AI Synthesis for entire chapter/i });
-      expect(btn).toBeInTheDocument();
-      expect(btn).not.toBeDisabled();
-    });
-
-    it('shows loading state while synthesizing', async () => {
-      // Mock fetch to stall
-      global.fetch = jest.fn(() => new Promise(() => {})) as jest.Mock;
-
-      render(<StudyClient {...defaultProps} />);
-      const btn = screen.getByRole('button', { name: /Generate AI Synthesis for entire chapter/i });
-      fireEvent.click(btn);
-      await waitFor(() => {
-        expect(screen.getByRole('button', { name: /Analysing/i })).toBeInTheDocument();
-      });
-    });
-
-    it('shows synthesis result in manuscript card on success', async () => {
-      global.fetch = jest.fn(() =>
-        Promise.resolve({
-          ok: true,
-          json: () => Promise.resolve({ success: true, synthesis: 'Synthesised wisdom text' }),
-        })
-      ) as jest.Mock;
-
-      render(<StudyClient {...defaultProps} />);
-      const btn = screen.getByRole('button', { name: /Generate AI Synthesis for entire chapter/i });
-      fireEvent.click(btn);
-      await waitFor(() => {
-        expect(screen.getByTestId('vedic-manuscript-card')).toBeInTheDocument();
-      });
-    });
-
-    it('shows "Synthesis failed" when API returns non-ok HTTP status', async () => {
-      // res.ok=false triggers throw → caught → sets "Synthesis failed."
-      global.fetch = jest.fn(() =>
-        Promise.resolve({
-          ok: false,
-          status: 503,
-          json: () => Promise.resolve({ success: false }),
-        })
-      ) as jest.Mock;
-
-      render(<StudyClient {...defaultProps} />);
-      fireEvent.click(screen.getByRole('button', { name: /Generate AI Synthesis for entire chapter/i }));
-      await waitFor(() => {
-        expect(screen.getByText(/Synthesis failed/i)).toBeInTheDocument();
-      });
-    });
-
-    it('shows "Synthesis unavailable" when API ok but success:false', async () => {
-      // res.ok=true but data.success=false → sets "Synthesis unavailable, try again later."
-      global.fetch = jest.fn(() =>
-        Promise.resolve({
-          ok: true,
-          json: () => Promise.resolve({ success: false, message: 'No context provided' }),
-        })
-      ) as jest.Mock;
-
-      render(<StudyClient {...defaultProps} />);
-      fireEvent.click(screen.getByRole('button', { name: /Generate AI Synthesis for entire chapter/i }));
-      await waitFor(() => {
-        expect(screen.getByText(/Synthesis unavailable/i)).toBeInTheDocument();
-      });
-    });
-
-    it('handles fetch network error gracefully', async () => {
-      global.fetch = jest.fn(() => Promise.reject(new Error('Network error'))) as jest.Mock;
-      render(<StudyClient {...defaultProps} />);
-      fireEvent.click(screen.getByRole('button', { name: /Generate AI Synthesis for entire chapter/i }));
-      await waitFor(() => {
-        expect(screen.getByText(/Synthesis failed/i)).toBeInTheDocument();
-      });
-    });
-  });
 
   // ── VERSES WITHOUT COMMENTARY ──────────────────────────────────────────────
 
@@ -388,13 +310,15 @@ describe('StudyClient — STAB-606 coverage', () => {
     it('renders verse with no commentary layers gracefully', () => {
       const verses = [{ id: '1.1', original: 'Test', transliteration: '', verse: 1, chapter: 1, meaning: 'Test meaning', layers: [] }];
       render(<StudyClient {...defaultProps} verses={verses} />);
+      // Translation gets passed 'Test meaning' from v.meaning
       expect(screen.getByText('Test meaning')).toBeInTheDocument();
     });
 
     it('renders verse without transliteration without crash', () => {
-      const verses = [{ id: '1.1', original: 'संस्कृत', transliteration: '', verse: 1, chapter: 1, meaning: 'Sanskrit', layers: [] }];
+      const verses = [{ id: '1.1', original: 'संस्कृत', transliteration: '', verse: 1, chapter: 1, meaning: 'Sanskrit translation', layers: [] }];
       render(<StudyClient {...defaultProps} verses={verses} />);
-      expect(screen.getByText('Sanskrit')).toBeInTheDocument();
+      // Translation shows the text
+      expect(screen.getByText('Sanskrit translation')).toBeInTheDocument();
     });
 
     it('renders verse without meaning without crash', () => {

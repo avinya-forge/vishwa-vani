@@ -833,7 +833,7 @@ export default function StudyClient({
 
                 {/* English translation — always shown as default base layer */}
                 {(() => {
-                  const baseTranslation = String(v.translation || '').trim()
+                  const baseTranslation = String(v.translation || v.meaning || '').trim()
                   if (!baseTranslation) return (
                     <div className="px-4 sm:px-6 py-4 sm:py-5 border-b border-stone-50 dark:border-stone-800/30">
                       <p className="text-[10px] font-black uppercase tracking-widest text-stone-400 dark:text-stone-500 mb-2">Translation</p>

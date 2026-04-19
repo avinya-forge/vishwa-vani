@@ -12,10 +12,10 @@ This is the single authoritative ledger for Vishwa-Vani progress. It is organize
 - [x] `BUG-026` **Next Chapter Link Broken** — Fix absolute slugs in navigation.
 - [x] `BUG-029` **Redundant Interactive Tools** — Apps were repeated for every shloka. Fix: Moved to Desktop Sidebar (Global Chapter context). — Done: 2026-04-16
 - [x] `BUG-030` **Scholar selection limit unrestriction** — Restored "Max 2" selection limit (irrespective of language) to avoid UI clutter. — Done: 2026-04-16
-- [ ] `BUG-032` **Mobile Horizontal Jitter** — Identify and remove 1-2px overflow causing "white screen background" on zoom-out/swipe.
-- [ ] `BUG-033` **Sound Propagation (Mobile Safari)** — Fix missing audio triggers for conch sound effects due to strict auto-play/AudioContext restrictions.
-- [ ] `BUG-034` **Persistent "Auditing" Placeholder** — Investigate why some Gold-tier verses still show placeholder text even when `original` and `transliteration` are present. Hard-code fallback to `meaning` field if layer is missing.
-- [ ] `BUG-035` **Timeline Alignment** — Fix center-alignment of milestones on mobile viewports; currently they lean left.
+- [x] `BUG-032` **Mobile Horizontal Jitter** — Done: Fixed max-width overflow on html/body, 2026-04-16
+- [x] `BUG-033` **Sound Propagation (Mobile Safari)** — Done: Synchronous AudioContext resume, 2026-04-16
+- [x] `BUG-034` **Persistent "Auditing" Placeholder** — Done: Hard-coded fallback to v.meaning, 2026-04-16
+- [x] `BUG-035` **Timeline Alignment** — Done: Added text-center alignment for mobile milestones, 2026-04-16
 
 ---
 
