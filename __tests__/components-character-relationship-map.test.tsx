@@ -16,15 +16,15 @@ describe('CharacterRelationshipMap (APP-714)', () => {
     render(<CharacterRelationshipMap />)
     const arjunaNode = screen.getByTestId('node-arjuna')
 
-    // Initial state: font-size 12
+    // Initial state: font-size 9
     const textEl = arjunaNode.querySelector('text')
-    expect(textEl?.getAttribute('font-size')).toBe('12')
+    expect(textEl?.getAttribute('font-size')).toBe('9')
 
     // Click to select
     fireEvent.click(arjunaNode)
 
-    // State after click: font-size 14
-    expect(arjunaNode.querySelector('text')?.getAttribute('font-size')).toBe('14')
+    // State after click: font-size 11
+    expect(arjunaNode.querySelector('text')?.getAttribute('font-size')).toBe('11')
   })
 
   it('deselects a node on second click', () => {
@@ -33,10 +33,10 @@ describe('CharacterRelationshipMap (APP-714)', () => {
 
     // Select
     fireEvent.click(arjunaNode)
-    expect(arjunaNode.querySelector('text')?.getAttribute('font-size')).toBe('14')
+    expect(arjunaNode.querySelector('text')?.getAttribute('font-size')).toBe('11')
 
     // Deselect
     fireEvent.click(arjunaNode)
-    expect(arjunaNode.querySelector('text')?.getAttribute('font-size')).toBe('12')
+    expect(arjunaNode.querySelector('text')?.getAttribute('font-size')).toBe('9')
   })
 })

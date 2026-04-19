@@ -15,17 +15,36 @@ import AdhyayaShareLink from './adhyaya-share-link'
 
 // 🏛️ DYNAMIC PERSPECTIVE METADATA
 const DEFAULT_METADATA: Record<string, { name: string, bio: string, label: string, icon: string }> = {
-  'none': { 
-    name: 'Original Text Only', 
+  'none': {
+    name: 'Original Text Only',
     label: 'Text Only',
     icon: '📜',
-    bio: 'Pure scripture — Sanskrit shloka and its meaning, without external commentary.' 
+    bio: 'Pure scripture — Sanskrit shloka and its meaning, without external commentary.'
   },
-  'all': { 
-    name: 'All Commentaries', 
+  'all': {
+    name: 'All Commentaries',
     label: 'All Scholars',
     icon: '🏛️',
-    bio: 'Compare all available scholarly perspectives side by side.' 
+    bio: 'Compare all available scholarly perspectives side by side.'
+  },
+  // normalizeScholarKey splits on '-': 'sant-dnyaneshwar' → 'sant', 'dnyaneshwari-en' → 'dnyaneshwari'
+  'sant': {
+    name: 'Sant Dnyaneshwar',
+    label: 'Dnyaneshwari',
+    icon: '🪷',
+    bio: 'Maharashtrian saint-philosopher (1275–1296 CE). Composed the Dnyaneshwari — a Marathi verse commentary on the Gita — at age 16. Founding text of the Warkari tradition.'
+  },
+  'dnyaneshwari': {
+    name: 'Sant Dnyaneshwar',
+    label: 'Dnyaneshwari',
+    icon: '🪷',
+    bio: 'Maharashtrian saint-philosopher (1275–1296 CE). Composed the Dnyaneshwari — a Marathi verse commentary on the Gita — at age 16. Founding text of the Warkari tradition.'
+  },
+  'iskcon': {
+    name: 'A.C. Bhaktivedanta Swami Prabhupada',
+    label: 'Prabhupada',
+    icon: '🔱',
+    bio: 'Founder-Acharya of ISKCON. Translator and commentator of Bhagavad-gītā As It Is. One of the most widely read Gita commentaries in the world.'
   }
 }
 
@@ -159,13 +178,17 @@ export default function StudyClient({
     }
   }
 
-  // Get display metadata for a scholar key
+  // Get display metadata for a scholar key (normalized key e.g. 'sant', 'iskcon')
   const getScholarMeta = (authorKey: string): { name: string; bio: string; label: string; icon: string } => {
     if (DEFAULT_METADATA[authorKey]) return DEFAULT_METADATA[authorKey]
+    // Search layers: match exact author OR authors that start with normalizedKey + '-'
     for (const v of verses) {
       const verse = v as Record<string, unknown>
       const layers = verse.layers as unknown[]
-      const layer = layers?.find((l: unknown) => (l as Record<string, unknown>).author === authorKey) as Record<string, unknown> | undefined
+      const layer = layers?.find((l: unknown) => {
+        const a = String((l as Record<string, unknown>).author || '')
+        return a === authorKey || a.startsWith(authorKey + '-')
+      }) as Record<string, unknown> | undefined
       if (layer && layer.author_name) {
         return {
           name: String(layer.author_name),
@@ -175,9 +198,6 @@ export default function StudyClient({
         }
       }
     }
-    // Friendly fallbacks / known authors
-    if (authorKey === 'dnyaneshwari') return { name: 'Sant Dnyaneshwar', label: 'Dnyaneshwari', icon: '🌼', bio: 'Sant Dnyaneshwar commentary (language-specific variants).' }
-    if (authorKey === 'iskcon') return { name: 'A.C. Bhaktivedanta Swami Prabhupada', label: 'ISKCON / Prabhupada', icon: '🔱', bio: 'Founder-Acharya of ISKCON. Bhagavad-gītā As It Is.' }
     return { name: authorKey, label: authorKey, icon: '📜', bio: '' }
   }
 
@@ -595,7 +615,7 @@ export default function StudyClient({
 
             {/* Scholar selector prominence */}
             <div className="flex items-center gap-2 flex-shrink-0">
-              <span className="text-[10px] font-black uppercase tracking-widest text-orange-500/60 dark:text-orange-400/40 hidden xs:inline">Commentary</span>
+              <span data-testid="scholars-counter" className="text-[10px] font-black uppercase tracking-widest text-orange-500/60 dark:text-orange-400/40 hidden xs:inline">Scholars {scholarSelection.length}/2</span>
               <div className="flex gap-1" role="group" aria-label="Scholar Selection">
                 {availableScholars.filter(s => s !== 'none').map((author, _idx, _arr) => {
                   const meta = getScholarMeta(author)
@@ -608,6 +628,7 @@ export default function StudyClient({
                       aria-checked={isSelected}
                       aria-label={`Toggle commentary by ${meta.label}`}
                       onClick={() => toggleScholar(author)}
+                      onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleScholar(author) } }}
                       className={`px-3 py-1.5 rounded-xl border text-[11px] font-bold transition-all flex-shrink-0 flex items-center gap-2 ${
                         isSelected
                           ? 'bg-orange-600 border-orange-600 text-white shadow-lg shadow-orange-200 dark:shadow-none'
@@ -678,7 +699,16 @@ export default function StudyClient({
               </button>
             )}
 
-            {/* AI Synthesis button - DISABLED */}
+            {/* AI Synthesis button */}
+            <button
+              onClick={_synthesizeEntireChapter}
+              disabled={_isChapterSynthesizing}
+              aria-label={_isChapterSynthesizing ? 'Analysing' : 'Generate AI Synthesis for entire chapter'}
+              title="Generate AI Synthesis for entire chapter"
+              className="px-3 py-1.5 rounded-xl border text-[11px] font-bold transition-all flex-shrink-0 flex items-center gap-1.5 bg-white dark:bg-stone-800 border-stone-200 dark:border-stone-700 text-stone-600 dark:text-stone-400 hover:border-orange-400 hover:text-orange-600 disabled:opacity-50"
+            >
+              {_isChapterSynthesizing ? 'Analysing…' : 'Generate AI Synthesis for entire chapter'}
+            </button>
           </div>
         </div>
       </div>
@@ -833,7 +863,7 @@ export default function StudyClient({
 
                 {/* English translation — always shown as default base layer */}
                 {(() => {
-                  const baseTranslation = String(v.translation || '').trim()
+                  const baseTranslation = String(v.translation || v.meaning || '').trim()
                   if (!baseTranslation) return (
                     <div className="px-4 sm:px-6 py-4 sm:py-5 border-b border-stone-50 dark:border-stone-800/30">
                       <p className="text-[10px] font-black uppercase tracking-widest text-stone-400 dark:text-stone-500 mb-2">Translation</p>

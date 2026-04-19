@@ -11,11 +11,10 @@ describe('ChhandaAnalyzer (LAB-802)', () => {
     fireEvent.change(textarea, { target: { value: 'a e i o u a e i o u a e i o u a e i o u a e i o u a e i o u a e' } }) // 32 vowels
     fireEvent.click(screen.getByRole('button', { name: /Analyze Chhanda/i }))
 
-    act(() => {
-      jest.advanceTimersByTime(1000)
-    })
+    act(() => { jest.advanceTimersByTime(1000) })
 
     await waitFor(() => {
+      // Component outputs meter name without syllable breakdown in parentheses
       expect(screen.getByText('Anushtubh')).toBeInTheDocument()
       expect(screen.getAllByText('32')[0]).toBeInTheDocument()
     })
@@ -27,9 +26,7 @@ describe('ChhandaAnalyzer (LAB-802)', () => {
     fireEvent.change(textarea, { target: { value: 'a e i o u a e i o u a e i o u a e i o u a e i o' } }) // 24 vowels
     fireEvent.click(screen.getByRole('button', { name: /Analyze Chhanda/i }))
 
-    act(() => {
-      jest.advanceTimersByTime(1000)
-    })
+    act(() => { jest.advanceTimersByTime(1000) })
 
     await waitFor(() => {
       expect(screen.getByText('Gayatri')).toBeInTheDocument()
@@ -43,9 +40,7 @@ describe('ChhandaAnalyzer (LAB-802)', () => {
     fireEvent.change(textarea, { target: { value: 'a e i o u a e i o u a e i o u a e i o u a e i o u a e i o u a e i o u a e i o u a e i o' } }) // 44 vowels
     fireEvent.click(screen.getByRole('button', { name: /Analyze Chhanda/i }))
 
-    act(() => {
-      jest.advanceTimersByTime(1000)
-    })
+    act(() => { jest.advanceTimersByTime(1000) })
 
     await waitFor(() => {
       expect(screen.getByText('Trishtubh')).toBeInTheDocument()
@@ -53,17 +48,16 @@ describe('ChhandaAnalyzer (LAB-802)', () => {
     })
   })
 
-  it('identifies Unknown meter', async () => {
+  it('identifies Irregular meter for short input', async () => {
     render(<ChhandaAnalyzer />)
     const textarea = screen.getByPlaceholderText(/Paste a Sanskrit Shloka here/i)
     fireEvent.change(textarea, { target: { value: 'a' } }) // 1 vowel
     fireEvent.click(screen.getByRole('button', { name: /Analyze Chhanda/i }))
 
-    act(() => {
-      jest.advanceTimersByTime(1000)
-    })
+    act(() => { jest.advanceTimersByTime(1000) })
 
     await waitFor(() => {
+      // Component outputs 'Irregular' not 'Irregular/Unknown Meter'
       expect(screen.getByText('Irregular')).toBeInTheDocument()
       expect(screen.getAllByText('1')[0]).toBeInTheDocument()
     })

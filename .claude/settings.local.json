@@ -24,7 +24,12 @@
       "Bash(git push:*)",
       "Bash(gh pr create --title 'feat\\(data+ui\\): Gita gold-standard data, full dark mode & production bug fixes' --body ':*)",
       "Bash(gh auth:*)",
-      "Bash(gh pr create --title 'feat\\(data+ui\\): Gita gold-standard data, full dark mode & production bug fixes' --base main --head feat/gita-gold-standard-data-and-dark-mode --body ':*)"
+      "Bash(gh pr create --title 'feat\\(data+ui\\): Gita gold-standard data, full dark mode & production bug fixes' --base main --head feat/gita-gold-standard-data-and-dark-mode --body ':*)",
+      "Bash(git fetch *)",
+      "Bash(node -e ' *)",
+      "Bash(node scripts/rebuild_gita_multilang.js)",
+      "Bash(grep -v \"^\\\\s*●\\\\s*$\")",
+      "Bash(npx next *)"
     ]
   }
 }

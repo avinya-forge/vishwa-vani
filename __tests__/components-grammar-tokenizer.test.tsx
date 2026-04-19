@@ -23,7 +23,7 @@ describe('GrammarTokenizer (LAB-803)', () => {
     })
   })
 
-  it('identifies probable verbs ending in ti/te', async () => {
+  it('identifies unknown words ending in ti/te as Verb', async () => {
     render(<GrammarTokenizer />)
     const textarea = screen.getByPlaceholderText(/Paste a Sanskrit Shloka here/i)
     fireEvent.change(textarea, { target: { value: 'unknownwordti anotherte' } })
@@ -34,11 +34,12 @@ describe('GrammarTokenizer (LAB-803)', () => {
     })
 
     await waitFor(() => {
+      // Component outputs 'Verb' for unknown words ending in ti/te
       expect(screen.getAllByText('Verb').length).toBe(2)
     })
   })
 
-  it('identifies probable nouns ending in am/as', async () => {
+  it('identifies unknown words ending in am/as as Noun', async () => {
     render(<GrammarTokenizer />)
     const textarea = screen.getByPlaceholderText(/Paste a Sanskrit Shloka here/i)
     fireEvent.change(textarea, { target: { value: 'unknownwordam unknownwordas' } })
@@ -49,6 +50,7 @@ describe('GrammarTokenizer (LAB-803)', () => {
     })
 
     await waitFor(() => {
+      // Component outputs 'Noun' for unknown words ending in am/as
       expect(screen.getAllByText('Noun').length).toBe(2)
     })
   })
