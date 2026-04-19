@@ -7,7 +7,6 @@ import ShlokaMask from './shloka-mask'
 import VedicTimeline from './vedic-timeline'
 import VedicManuscriptCard from './vedic-manuscript-card'
 import { VEDIC_LIBRARY } from '@/lib/texts'
-import { useTranslations, useLocale } from 'next-intl'
 import type { LevelData } from '@/components/ui/hierarchical-nav';
 import HierarchicalNav from '@/components/ui/hierarchical-nav'
 import VerseAppLinks from './verse-app-links'
@@ -61,13 +60,10 @@ export default function StudyClient({
   adhyayaList?: { num: number, id: string }[],
   currentAdhyaya?: number
 }) {
-  const _t = useTranslations('study')
-  const _locale = useLocale()
   const router = useRouter()
-  
+
   // Normalize the author key to a stable group (e.g., dnyaneshwari-en -> dnyaneshwari)
   const normalizeScholarKey = (author: string) => (author || '').split('-')[0].toLowerCase()
-  const _PREFERRED_SCHOLARS = ['dnyaneshwari', 'iskcon']
 
 
   // Track reading position using Intersection Observer

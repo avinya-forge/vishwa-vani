@@ -54,7 +54,7 @@ export default function PhilosophicalCorrelation({ currentVerse }: CorrelationPr
 
                 setRelated(Array.from(new Set(matches.map(m => m.id))).map(id => matches.find(m => m.id === id)).filter(Boolean) as { id?: string; slok?: string; text?: string }[])
             } catch (e) {
-                console.error(e)
+                console.error('Philosophical correlation search failed:', e)
             } finally {
                 setLoading(false)
             }

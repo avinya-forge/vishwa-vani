@@ -41,9 +41,9 @@ export default function VedicInstruments() {
       
       const ctx = audioContext.current;
       
-      // Mandatory resume for browser security policies
+      // Fire-and-forget resume — Mobile Safari needs synchronous path through user gesture
       if (ctx.state === 'suspended') {
-        await ctx.resume();
+        ctx.resume();
       }
 
       if (isPlaying) {

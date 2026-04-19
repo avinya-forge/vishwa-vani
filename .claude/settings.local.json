@@ -29,7 +29,8 @@
       "Bash(node -e ' *)",
       "Bash(node scripts/rebuild_gita_multilang.js)",
       "Bash(grep -v \"^\\\\s*●\\\\s*$\")",
-      "Bash(npx next *)"
+      "Bash(npx next *)",
+      "Bash(find /d/Code/avinya-forge/vishwa-vani -type f \\\\\\( -name \"*.ts\" -o -name \"*.tsx\" \\\\\\) ! -path \"*/.next/*\" -exec grep -l \"console\\\\.\" {} \\\\;)"
     ]
   }
 }

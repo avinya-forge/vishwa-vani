@@ -11,14 +11,12 @@ const messagesMap = { en, hi, mr }
 
 export default function LocaleProvider({ children }: { children: ReactNode }) {
   const [locale, setLocale] = useState('en')
-  const [_mounted, setMounted] = useState(false)
 
   useEffect(() => {
     const stored = localStorage.getItem('vishwa_lang')
     if (stored && ['en', 'hi', 'mr'].includes(stored)) {
       setLocale(stored)
     }
-    setMounted(true)
 
     // Listen for custom locale change events
     const handleLocaleChange = (e: unknown) => {
@@ -39,7 +37,6 @@ export default function LocaleProvider({ children }: { children: ReactNode }) {
   )
 }
 
-// Global helper to change locale
 export function changeVishwaLocale(newLocale: string) {
   localStorage.setItem('vishwa_lang', newLocale)
   window.dispatchEvent(new CustomEvent('vishwa-locale-change', { detail: newLocale }))

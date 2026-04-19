@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect, useMemo } from 'react'
 import Link from 'next/link'
-import { useTranslations, useLocale } from 'next-intl'
 import { searchLake } from '@/lib/lake'
 import { VEDIC_LIBRARY } from '@/lib/texts'
 
@@ -15,9 +14,6 @@ interface SearchResult {
 }
 
 export default function SearchClient() {
-  const _t = useTranslations('study')
-  const _nt = useTranslations('nav')
-  const _locale = useLocale()
 
   const [query, setQuery] = useState('')
   const [results, setResults] = useState<SearchResult[]>([])
