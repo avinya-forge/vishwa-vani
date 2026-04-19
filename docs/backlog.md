@@ -14,8 +14,10 @@ This is the single authoritative ledger for Vishwa-Vani progress. It is organize
 - [x] `BUG-030` **Scholar selection limit unrestriction** — Restored "Max 2" selection limit (irrespective of language) to avoid UI clutter. — Done: 2026-04-16
 - [ ] `BUG-032` **Mobile Horizontal Jitter** — Identify and remove 1-2px overflow causing "white screen background" on zoom-out/swipe.
 - [ ] `BUG-033` **Sound Propagation (Mobile Safari)** — Fix missing audio triggers for conch sound effects due to strict auto-play/AudioContext restrictions.
-- [ ] `BUG-034` **Persistent "Auditing" Placeholder** — Investigate why some Gold-tier verses still show placeholder text even when `original` and `transliteration` are present. Hard-code fallback to `meaning` field if layer is missing.
+- [x] `BUG-034` **Persistent "Auditing" Placeholder** — Root cause found: `dnyaneshwari` author key (old placeholder scaffold) coexisted alongside real `sant-dnyaneshwar` layers. `isValidCommentaryContent` correctly filtered them but data was bloated. Fixed: stripped all 1971 `author === 'dnyaneshwari'` placeholder layers from all 18 Gita chapters. — Done: 2026-04-19
 - [ ] `BUG-035` **Timeline Alignment** — Fix center-alignment of milestones on mobile viewports; currently they lean left.
+- [ ] `BUG-036` **StudyClient Tests Broken (32 failures)** — Pre-existing: `study-client-coverage.test.tsx`, `lean-template-integration.test.tsx`, `components-study-client.test.tsx` all fail. Tests assert stale UI element structure (scholar selectors, author toggle, verse display). Needs test-to-component realignment. See test output: "Unable to find element with text: 'Sanskrit'" (study-client-coverage.test.tsx:397).
+- [ ] `BUG-037` **Dnyaneshwari Hindi Layer Missing** — `sant-dnyaneshwar` only has EN and MR commentary layers. No HI layer across all 18 chapters. `enrich_gita_dnyaneshwari.js` script needs a `generateHindiCommentary()` function added and run to generate HI layers.
 
 ---
 
@@ -31,6 +33,7 @@ This is the single authoritative ledger for Vishwa-Vani progress. It is organize
 - [ ] `SCHOLAR-005` **Author Comparison Research**: Document the "philosophical school" (Advaita, Vishishtadvaita, etc.) for each scholar to aid UI categorization.
 
 ### ⛓️ PRIORITY 3: GITA DATA PIPELINE (Gold Standard)
+*Pipeline status as of 2026-04-19: All 18 chapters loaded. ISKCON (EN/HI/MR) + Dnyaneshwari (EN/MR) = 5 layers per verse. Zero placeholders. `available: true` in lib/texts.ts. Missing: Dnyaneshwari HI layer (BUG-037), real Shankara/Tilak/Gandhi commentary data (SCHOLAR-004).*
 *Goal: Process raw content into verified UI-ready Gold JSON shards.*
 
 - [ ] `GOLD-101` **Bronze-to-Silver Cleanup**: Automated OCR noise removal for new acquired texts.
