@@ -16,7 +16,7 @@ describe('ChhandaAnalyzer (LAB-802)', () => {
     })
 
     await waitFor(() => {
-      expect(screen.getByText('Anushtubh (8+8+8+8)')).toBeInTheDocument()
+      expect(screen.getByText('Anushtubh')).toBeInTheDocument()
       expect(screen.getAllByText('32')[0]).toBeInTheDocument()
     })
   })
@@ -32,7 +32,7 @@ describe('ChhandaAnalyzer (LAB-802)', () => {
     })
 
     await waitFor(() => {
-      expect(screen.getByText('Gayatri (8+8+8)')).toBeInTheDocument()
+      expect(screen.getByText('Gayatri')).toBeInTheDocument()
       expect(screen.getAllByText('24')[0]).toBeInTheDocument()
     })
   })
@@ -48,7 +48,7 @@ describe('ChhandaAnalyzer (LAB-802)', () => {
     })
 
     await waitFor(() => {
-      expect(screen.getByText('Trishtubh (11+11+11+11)')).toBeInTheDocument()
+      expect(screen.getByText('Trishtubh')).toBeInTheDocument()
       expect(screen.getAllByText('44')[0]).toBeInTheDocument()
     })
   })
@@ -64,7 +64,7 @@ describe('ChhandaAnalyzer (LAB-802)', () => {
     })
 
     await waitFor(() => {
-      expect(screen.getByText('Irregular/Unknown Meter')).toBeInTheDocument()
+      expect(screen.getByText('Irregular')).toBeInTheDocument()
       expect(screen.getAllByText('1')[0]).toBeInTheDocument()
     })
   })

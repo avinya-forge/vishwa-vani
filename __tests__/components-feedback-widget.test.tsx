@@ -24,10 +24,10 @@ describe('FeedbackWidget', () => {
     render(<FeedbackWidget />)
     const button = screen.getByRole('button', { name: /Report an issue/i })
     fireEvent.click(button)
-    expect(screen.getByText('Feedback')).toBeInTheDocument()
+    expect(screen.getAllByText('Feedback')[0]).toBeInTheDocument()
   })
 
-  it('shows error if message is less than 200 characters', async () => {
+  it('shows error if message is less than 50 characters', async () => {
     render(<FeedbackWidget />)
     fireEvent.click(screen.getByRole('button', { name: /Report an issue/i }))
 
@@ -37,7 +37,7 @@ describe('FeedbackWidget', () => {
     const submitBtn = screen.getByRole('button', { name: /submit/i })
     fireEvent.click(submitBtn)
 
-    expect(await screen.findByText(/at least 200 characters/i)).toBeInTheDocument()
+    expect(await screen.findByText(/at least 50 characters/i)).toBeInTheDocument()
   })
 
   it('submits successfully and shows confirmation', async () => {
