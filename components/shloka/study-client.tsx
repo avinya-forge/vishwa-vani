@@ -83,7 +83,8 @@ export default function StudyClient({
           if (id && id.startsWith('verse-')) {
             const verseNum = parseInt(id.replace('verse-', ''), 10);
             if (!isNaN(verseNum)) {
-              setActiveVerse(verseNum);
+              const verseIndex = verses.findIndex(v => Number((v as Record<string, unknown>).verse) === verseNum);
+              setActiveVerse(verseIndex >= 0 ? verseIndex + 1 : 1);
               const readingPosition = {
                 text: textSlug,
                 chapter: chapter,
