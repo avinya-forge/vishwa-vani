@@ -16,7 +16,7 @@ This file is the single source of truth for standards, UI template requirements,
 ---
 
 ## 1. Document Policy
-- Seven active docs are tracked in the documentation set.
+- Thirteen active docs are tracked in the documentation set.
 - New documentation may be added only by explicit approval from Claude (The Architect).
 - Hierarchical SSOT: `README.md` (Vision) > `docs/blueprint.md` (Architecture) > `docs/standards.md` (Process)
 - Mandatory Trifecta: `README.md`, `docs/backlog.md`, and `docs/release-notes.md` must exist.
