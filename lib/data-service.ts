@@ -162,7 +162,7 @@ export class VedicDataService {
         original: (v.original || v.original_sanskrit) as string,
         transliteration: v.transliteration as string | undefined,
         translation: (v.translation || v.meaning || ((v.layers as Record<string, unknown>[]) || []).find(l => l.type === 'translation')?.content) as string | undefined,
-        layers: (v.layers || []) as unknown[],
+        layers: this.pruneLayersToTwoAuthors((v.layers as Record<string, unknown>[]) || []),
         uiMetadata: {
           readingTime: this.calculateReadingTime(verse),
           complexityScore: this.calculateComplexity(verse),
@@ -210,6 +210,24 @@ export class VedicDataService {
       keyThemes: uniqueThemes.slice(0, 5),
       philosophicalProgression: 'From inquiry to wisdom'
     };
+  }
+
+  // Prunes layers to enforce the 2-author limit (Lean UI principle)
+  private pruneLayersToTwoAuthors(layers: Record<string, unknown>[]): unknown[] {
+    const allowedAuthors = new Set<string>();
+    const prunedLayers: Record<string, unknown>[] = [];
+
+    for (const layer of layers) {
+      const author = String(layer.author);
+      if (allowedAuthors.has(author)) {
+        prunedLayers.push(layer);
+      } else if (allowedAuthors.size < 2) {
+        allowedAuthors.add(author);
+        prunedLayers.push(layer);
+      }
+    }
+
+    return prunedLayers;
   }
 
   // Helper methods for AI enrichment

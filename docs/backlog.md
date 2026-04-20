@@ -8,6 +8,7 @@ This is the single authoritative ledger for Vishwa-Vani progress. It is organize
 *Goal: 100% production-ready quality. Zero regressions in implemented features.*
 
 ### BOOK: GLOBAL / ALL
+- [ ] `BUG-042` **Translation Placeholder Rendering**: During UI verification, "Translation data is currently being audited for this verse" appeared for missing base translations instead of silently defaulting. Ensure fallback aligns with Lean UI standards.
 - [ ] `BUG-038` **Landing Page Hydration/Blank Screen** — Landing page renders completely blank (only Header visible) after mount. Repro: Load `/` on desktop/mobile and wait for hydration.
 - [ ] `BUG-039` **Search Filter Contrast** — Unselected category chips on the Search page have broken light-mode tokens, rendering them illegible. Repro: Go to `/search` in light mode, observe 'ITIHAS', 'UPANISHAD', etc. chips.
 - [ ] `BUG-040` **Labs Skeleton Theme Mismatch** — Skeleton loaders on Vedic Labs render with dark-mode colors on a light-mode page. Repro: Go to `/lab` in light mode, observe placeholder cards before components load.
