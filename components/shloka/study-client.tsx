@@ -223,6 +223,8 @@ export default function StudyClient({
     if (!content || typeof content !== 'string') return false
     const trimmed = content.trim()
     if (trimmed.length < 20) return false // Lowered threshold to catch short but valid verses
+    // Reject any unresolved template marker (e.g. [PLACEHOLDER_X], [ADVAITA_PERSPECTIVE:...], [SUTRA_TEXT])
+    if (trimmed.startsWith('[')) return false
     const placeholderPatterns = ['[PLACEHOLDER_', 'TBD_CONTENT', 'TODO_LAYER', 'LOREM IPSUM']
     if (placeholderPatterns.some(p => trimmed.toUpperCase().includes(p.toUpperCase()))) {
       return false
