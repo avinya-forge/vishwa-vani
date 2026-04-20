@@ -83,6 +83,8 @@ This is the single authoritative ledger for Vishwa-Vani progress. It is organize
 - [ ] `VISION-003` **Scholar Curation Strategy**: Finalize the acquisition roadmap for 10+ scholars while explicitly defining the subset rules for the "Max 2" Lean UI presentation.
 - [ ] `VISION-004` **Ontological Mapping Schema**: Define the cross-scripture schema mapping structure to effectively relate tags/concepts across disparate texts (Gita, Mahabharata, Upanishads) without rigid hierarchies.
 - [ ] `VISION-005` **Knowledge Graph Foundation**: Investigate and define the underlying data structure (e.g., RDF, property graph) for the Semantic Deep-Linking Protocol to scale beyond traditional relational models.
+- [ ] `VISION-006` **Type-Safe Ontological Maps**: Ensure all cross-scripture linking matrices define rigid interfaces to prevent `any` mapping errors during deep-link navigation.
+- [ ] `VISION-007` **Lean UI Global Enforcement**: Implement global architecture controls to formally decouple the internal 10+ scholar dataset used for AI reasoning from the maximum 2-scholar payload served to the UI.
 
 ## 🔬 EPIC: VEDIC LABS & AI DISCOVERY (PAUSED)
 
@@ -107,6 +109,8 @@ This is the single authoritative ledger for Vishwa-Vani progress. It is organize
 - [ ] `ARCH-009` **SQLite WASM Boundaries**: Formalize the message-passing contract between the main thread and the Server-Lake worker to guarantee zero memory leaks and type-safe data hydration during continuous fetching.
 - [ ] `ARCH-010` **Memory-Safe Ingestion Pipeline**: Redesign the ingestion scripts (e.g., JSON to SQLite conversion) to operate via stream-processing instead of holding 100k+ verses in RAM simultaneously.
 - [ ] `ARCH-011` **Type-Safe Pruning Logic**: Implement rigorous type validation inside `VedicDataService` to ensure the pruning algorithm never returns invalid or partial verse fragments, even when dynamically extracting the top 2 authors.
+- [ ] `ARCH-012` **Web-Worker Type Bridges**: Build rigorous generic wrappers around Web Worker `postMessage` interfaces to strictly type all inter-thread communication payloads.
+- [ ] `ARCH-013` **Edge WASM Chunking Strategy**: Define chunking and pagination limits for SQLite WASM queries to guarantee constant time `O(1)` memory consumption during extreme burst fetching.
 
 ---
 
