@@ -233,7 +233,7 @@ export default function StudyClient({
   const defaultLanguage = 'all'
 
   const [scholarSelection, setScholarSelection] = useState<string[]>([])
-  const [languageSelection, setLanguageSelection] = useState<string>('en') // Default to 'en' per user request
+  const [languageSelection, setLanguageSelection] = useState<string>('all')
   const [activeAdhyaya, setActiveAdhyaya] = useState<number>(currentAdhyaya || 1)
   const [bookmarks, setBookmarks] = useState<string[]>([])
   const [visitedChapters, setVisitedChapters] = useState<Set<number>>(new Set())
