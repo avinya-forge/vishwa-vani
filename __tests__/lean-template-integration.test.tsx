@@ -43,7 +43,7 @@ jest.mock('@/components/ui/hierarchical-nav', () => {
 });
 
 describe('StudyClient - Lean Template Integration', () => {
-  // Commentary content must be > 80 chars to pass isValidCommentaryContent filter in StudyClient
+  // Commentary content must be ≥ 20 chars and not start with '[' to pass isValidCommentaryContent
   const SHANKARA_EN = 'From the perspective of Advaita Vedanta, Dhritarashtra represents the ego-bound mind that clings to the fruits of action and cannot perceive the non-dual truth.'
   const RAMANUJA_EN = 'From the perspective of Vishishtadvaita, Dhritarashtra symbolises attachment to kin and outcome, which clouds the discriminating intellect at the decisive moment of dharmic choice.'
   const SHANKARA_HI = 'अद्वैत वेदान्त के अनुसार धृतराष्ट्र अहंकार और आसक्ति का प्रतीक हैं जो सत्य के दर्शन को रोकता है। यह श्लोक नेत्रहीनता को अज्ञान का प्रतीक मानता है।'

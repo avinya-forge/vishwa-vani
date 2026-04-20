@@ -427,9 +427,12 @@ export default function StudyClient({
          const layers = v.layers as unknown[]
          const meaningLayer = layers?.find((l: unknown) => {
            const layer = l as Record<string, unknown>
-           return layer.type === 'translation' && layer.lang === 'en'
+           return (layer.type === 'translation' || layer.type === 'meaning') && layer.lang === 'en'
          }) as Record<string, unknown> | undefined
-         const meaning = String(meaningLayer?.content || v.meaning || v.translation || '')
+         // Fallback chain: translation-type layer → verse-level meaning → verse-level translation
+         // All three checked so future data format changes don't silently produce empty synthesis context
+         const meaningCandidate = String(meaningLayer?.content ?? v.meaning ?? v.translation ?? '')
+         const meaning = isValidCommentaryContent(meaningCandidate) ? meaningCandidate : ''
 
          // Get commentaries from selected authors (or first candidates if none selected)
          const candidateCommentaries = layers?.filter((l: unknown) => {
