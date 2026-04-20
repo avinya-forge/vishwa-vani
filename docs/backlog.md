@@ -4,10 +4,16 @@ This is the single authoritative ledger for Vishwa-Vani progress. It is organize
 
 ---
 
-## 🐞 PRIORITY 1: CONTINUOUS STABILITY & BUG BASH
-
+## 🐞 PRIORITY 1: BUGS
 *Goal: 100% production-ready quality. Zero regressions in implemented features.*
 
+### BOOK: GLOBAL / ALL
+- [ ] `BUG-038` **Landing Page Hydration/Blank Screen** — Landing page renders completely blank (only Header visible) after mount. Repro: Load `/` on desktop/mobile and wait for hydration.
+- [ ] `BUG-039` **Search Filter Contrast** — Unselected category chips on the Search page have broken light-mode tokens, rendering them illegible. Repro: Go to `/search` in light mode, observe 'ITIHAS', 'UPANISHAD', etc. chips.
+- [ ] `BUG-040` **Labs Skeleton Theme Mismatch** — Skeleton loaders on Vedic Labs render with dark-mode colors on a light-mode page. Repro: Go to `/lab` in light mode, observe placeholder cards before components load.
+- [ ] `BUG-041` **Reader Content Layout Shift** — Main verse content in the Reader view exhibits a massive empty vertical space, pushing text to the absolute bottom. Repro: Go to `/bhagavad-gita/1/1`, scroll to main content area.
+
+### COMPLETED BUGS (HISTORICAL)
 - [x] `BUG-025` **Mobile Navigation Dropdown hidden** — Fix header layout stacking.
 - [x] `BUG-026` **Next Chapter Link Broken** — Fix absolute slugs in navigation.
 - [x] `BUG-029` **Redundant Interactive Tools** — Apps were repeated for every shloka. Fix: Moved to Desktop Sidebar (Global Chapter context). — Done: 2026-04-16
@@ -21,49 +27,52 @@ This is the single authoritative ledger for Vishwa-Vani progress. It is organize
 
 ---
 
-## 📖 BOOK: BHAGAVAD GITA
+## 🏆 PRIORITY 2: CONTENT
 
-### 🏆 PRIORITY 2: GITA SCHOLARSHIP EXPANSION (Top 10 Authors)
+### BOOK: BHAGAVAD GITA
 *Goal: Transform into a "Vedic Wikipedia" by providing the 10 most influential commentaries across Hi/En/Mr.*
-
 - [ ] `SCHOLAR-001` **Top 10 Identification**: Research and rank candidates (Adi Shankara, Ramanuja, Madhva, Abhinavagupta, Tilak, Gandhi, Radhakrishnan, Easwaran, Aurobindo, Gita Press).
 - [ ] `SCHOLAR-002` **Multilingual Balance Pass**: Actively target scholars to ensure Hindi (Goyandka), Marathi (Historical Sages), and English (Modern scholars) are represented.
 - [ ] `SCHOLAR-003` **Single-Language Excellence**: Ingest high-prestige scholars even if they only have 1 language (e.g., pure Sanskrit Bhasyas or regional Marathi works). 
 - [ ] `SCHOLAR-004` **Data Acquisition**: Gather public domain / CC-licensed raw text for identified authors.
 - [ ] `SCHOLAR-005` **Author Comparison Research**: Document the "philosophical school" (Advaita, Vishishtadvaita, etc.) for each scholar to aid UI categorization.
 
-### ⛓️ PRIORITY 3: GITA DATA PIPELINE (Gold Standard)
+### BOOK: MAHABHARATA
+- [ ] `MBH-CORE-004` **MBH Metadata Foundation**: Research timeline and historical era specific to MBH for the Timeline component.
+
+---
+
+## ⛓️ PRIORITY 3: PIPELINE
+
+### BOOK: BHAGAVAD GITA
 *Pipeline status as of 2026-04-19: All 18 chapters loaded. ISKCON (EN/HI/MR) + Dnyaneshwari (EN/MR) = 5 layers per verse. Zero placeholders. `available: true` in lib/texts.ts. Missing: Dnyaneshwari HI layer (BUG-037), real Shankara/Tilak/Gandhi commentary data (SCHOLAR-004).*
 *Goal: Process raw content into verified UI-ready Gold JSON shards.*
-
 - [ ] `GOLD-101` **Bronze-to-Silver Cleanup**: Automated OCR noise removal for new acquired texts.
 - [ ] `GOLD-102` **Verse Alignment**: Cross-verify adhyaya/shloka numbering for all 10 scholars (handling variant numberings).
 - [ ] `GOLD-103` **Metadata Injection**: Add author bios, historical dates, and icons for all 10 new scholars.
 - [ ] `GOLD-104` **Data Service Mapping**: Register new scholar indices in `VedicDataService`.
 
-### 🎨 PRIORITY 4: UI/UX FOR SCALE
-*Goal: Elegant interface that handles 10+ authors without cluttering.*
+### BOOK: MAHABHARATA
+*Goal: Replicate the Gita pipeline for a book 100x larger (18 Parvas, 100k+ verses).*
+- [ ] `MBH-CORE-001` **Scale Ingestion Roadmap**: Audit all 18 Parvas (225-300+ adhyayas each) and create a phased ingestion schedule (Phase 1-Parvas 1-6, Phase 2-Parvas 7-12, Phase 3-Parvas 13-18).
+- [ ] `MBH-CORE-002` **Process Replication**: Document the `docs/ingestion-runbook.md` specific to MBH scale (avoiding OOM during build, handling massive JSON shards).
+- [ ] `MBH-CORE-003` **KMG Source Verification**: Clean the KMG (Kisari Mohan Ganguli) layers for parvas 1-18.
 
+---
+
+## 🎨 PRIORITY 4: UI
+
+### BOOK: BHAGAVAD GITA
+*Goal: Elegant interface that handles 10+ authors without cluttering.*
 - [ ] `UI-901` **Scholar Selection Overhaul**: Design a categorized/tabbed selector for scholars (e.g. "Classical Sages", "Modern Philosophers", "Regional Masters").
 - [ ] `UI-902` **Advanced Language Filtering**: Allow users to hide scholars based on language availability.
 - [ ] `UI-903` **Scholar "Mode" Persistence**: Save preferred scholars to `localStorage` so they stick across chapters.
 - [ ] `UI-904` **Interactive Tagging**: Implement the "Tag System" for links to reduce screen space usage.
 
----
-
-## 🐘 BOOK: MAHABHARATA (MBH CORE)
-
-### 🗺️ PRIORITY 5: THE MBH "HUGE BOOK" BLUEPRINT
-*Goal: Replicate the Gita pipeline for a book 100x larger (18 Parvas, 100k+ verses).*
-
-- [ ] `MBH-CORE-001` **Scale Ingestion Roadmap**: Audit all 18 Parvas (225-300+ adhyayas each) and create a phased ingestion schedule (Phase 1-Parvas 1-6, Phase 2-Parvas 7-12, Phase 3-Parvas 13-18).
-- [ ] `MBH-CORE-002` **Process Replication**: Document the `docs/ingestion-runbook.md` specific to MBH scale (avoiding OOM during build, handling massive JSON shards).
-- [ ] `MBH-CORE-003` **KMG Source Verification**: Clean the KMG (Kisari Mohan Ganguli) layers for parvas 1-18.
-- [ ] `MBH-CORE-004` **MBH Metadata Foundation**: Research timeline and historical era specific to MBH for the Timeline component.
+### BOOK: MAHABHARATA
 - [ ] `MBH-CORE-005` **Adhyaya Navigation Hardening**: Improve the `HierarchicalNav` to handle parvas with 300+ items efficiently (search-in-dropdown).
 
 ---
-
 
 ## 🗺️ EPIC: THE VEDIC WIKIPEDIA VISION REVISION
 
