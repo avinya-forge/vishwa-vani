@@ -196,8 +196,8 @@ function BookCard({ book, locale }: { book: Record<string, unknown>, locale: str
           </div>
         )}
 
-        {/* Parent reference */}
-        {parentBook && (
+        {/* Parent reference — only show when parent is available to avoid dead links */}
+        {parentBook && parentBook.available && (
           <div className="mb-4">
             <p className="text-[9px] font-bold uppercase tracking-widest text-stone-300 mb-1.5">Part of</p>
             <Link
