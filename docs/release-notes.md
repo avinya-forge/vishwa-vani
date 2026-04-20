@@ -2,10 +2,14 @@
 
 
 ### Current Session ID
-- Jules-Refiner-003
+- Jules-Execution-002
 
 ### Last Action
-- Consolidated scripts, aligned SSOT docs, repaired NVF schema data < 80 characters.
+- Implemented Lean UI Data-Service Enforcement (ARCH-006) to limit commentary payload to 2 scholars per verse.
+
+## [1.0.10] - 2026-04-20
+### 🏗️ Architecture & Core Enforcement
+- **Lean UI Data-Service Enforcement**: Refactored `VedicDataService.enrichVerses` to dynamically prune scholar payloads. The service now guarantees that the UI receives a maximum of 2 scholars per verse to strictly maintain the Lean UI principle, regardless of the underlying 10+ scholar dataset (`ARCH-006`).
 
 ## [1.0.9] - 2026-04-20
 ### 🛠️ Maintenance & Refinement
