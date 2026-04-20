@@ -1,25 +1,36 @@
 import Link from 'next/link'
 import StudyClient from '@/components/shloka/study-client'
 import { getTextBySlug, getAllTextChapterPaths } from '@/lib/texts'
-import { vedicDataService } from '@/lib/data-service'
+import { vedicDataService, type EnrichedVerse } from '@/lib/data-service'
 import { setRequestLocale } from 'next-intl/server'
 
 export async function generateStaticParams() {
   const paths = getAllTextChapterPaths()
   const params: { text: string, chapter: string, verse: string }[] = []
 
-  // Pre-generate a conservative number of pages to keep build fast
   for (const p of paths) {
-    // Generate first 3 verses for each chapter of all texts
-    for (let v = 1; v <= 3; v++) {
-      params.push({ text: p.text, chapter: p.chapter, verse: String(v) })
+    const chapterData = await vedicDataService.getChapterData(p.text, parseInt(p.chapter), {
+      includeAI: false,
+      language: 'en'
+    })
+    if (chapterData?.verses?.length) {
+      for (const verse of chapterData.verses) {
+        const v = verse as EnrichedVerse
+        params.push({ text: p.text, chapter: p.chapter, verse: String(v.verse) })
+      }
+    } else {
+      // Fallback: generate first 10 verses if data service unavailable at build time
+      for (let v = 1; v <= 10; v++) {
+        params.push({ text: p.text, chapter: p.chapter, verse: String(v) })
+      }
     }
   }
 
   return params
 }
 
-export const dynamicParams = false;
+// Allow on-demand rendering for verse numbers not pre-generated (e.g. combined shlokas)
+export const dynamicParams = true;
 
 interface VerseAuthor {
   author: string
