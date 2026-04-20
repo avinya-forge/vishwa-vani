@@ -8,11 +8,18 @@ This is the single authoritative ledger for Vishwa-Vani progress. It is organize
 *Goal: 100% production-ready quality. Zero regressions in implemented features.*
 
 ### BOOK: GLOBAL / ALL
+
+- [ ] `BUG-043` **[P0] Verse Permalink 404 — Only 3 Verses Accessible Per Chapter**: `app/[text]/[chapter]/[verse]/page.tsx` has `dynamicParams = false` + `generateStaticParams` generates only verses 1–3 per chapter. 606 of 657 Gita verse URLs (any verse > 3 in all 18 chapters) return hard 404. Every "Copy Permalink" link shared for verse > 3 is dead. Fix: set `dynamicParams = true` and expand `generateStaticParams` to enumerate all real verse numbers via `vedicDataService`.
+- [ ] `BUG-044` **[P1] Progress Counter Shows Verse Number > Total**: `study-client.tsx:604` displays `{activeVerse} / {verses.length}`. `activeVerse` stores the verse *number* (e.g. `46`) while `verses.length` is the verse *count* (e.g. `39` for Ch. 1). Counter reads `46 / 39` at chapter end. Fix: track visible verse by array index, display `{activeVerseIndex + 1} / {verses.length}`.
+- [ ] `BUG-045` **[P1] Language Selector Flash on Cold Load**: `study-client.tsx:236` initializes `useState('en')` but `useEffect` resets to `'all'`. Causes visible EN → ALL flash on every cold load. Violates standards.md §2.1. Fix: initialize `useState('all')` directly.
+- [ ] `BUG-046` **[P2] Stale Test Comments: isValidCommentaryContent Threshold**: Test files (`lean-template-integration.test.tsx:46`, `study-client-coverage.test.tsx:43`) comment threshold as `> 80 chars`. Actual implementation lowered to `< 20`. Misleads future developers.
+- [ ] `BUG-047` **[P2] Gita BookCard "Part of Mahabharata" Links to Unavailable Text**: `texts.ts:107` sets `parent: 'mahabharata'`. BookCard renders a "Part of" link to `/mahabharata/1` which shows a Coming Soon wall (Mahabharata `available: false`). Low impact now but confusing UX.
+- [ ] `BUG-048` **[P2] AI Synthesis Meaning Extraction — Fragile Fallback**: `study-client.tsx:429` extracts meaning via `meaningLayer?.content || v.meaning || v.translation`. Gold Gita has no `meaning` field and no `translation`-type layers, so always falls through to `v.translation`. Silent empty context if future data drops `translation` at verse level.
 - [ ] `BUG-042` **Translation Placeholder Rendering**: During UI verification, "Translation data is currently being audited for this verse" appeared for missing base translations instead of silently defaulting. Ensure fallback aligns with Lean UI standards.
-- [ ] `BUG-038` **Landing Page Hydration/Blank Screen** — Landing page renders completely blank (only Header visible) after mount. Repro: Load `/` on desktop/mobile and wait for hydration.
+- [ ] `BUG-038` **Landing Page Hydration/Blank Screen** — Root cause confirmed: `app/page.tsx` is a `'use client'` component returning an empty div until JS hydrates. No server-rendered fallback. Repro: Load `/` on desktop/mobile and wait for hydration.
 - [ ] `BUG-039` **Search Filter Contrast** — Unselected category chips on the Search page have broken light-mode tokens, rendering them illegible. Repro: Go to `/search` in light mode, observe 'ITIHAS', 'UPANISHAD', etc. chips.
 - [ ] `BUG-040` **Labs Skeleton Theme Mismatch** — Skeleton loaders on Vedic Labs render with dark-mode colors on a light-mode page. Repro: Go to `/lab` in light mode, observe placeholder cards before components load.
-- [ ] `BUG-041` **Reader Content Layout Shift** — Main verse content in the Reader view exhibits a massive empty vertical space, pushing text to the absolute bottom. Repro: Go to `/bhagavad-gita/1/1`, scroll to main content area.
+- [ ] `BUG-041` **Reader Content Layout Shift** — Root cause confirmed: `shloka-mask.tsx` `<canvas>` has zero initial dimensions; `useEffect` resizes after paint causing layout shift. Secondary: SSR renders `fontSize=22`, mobile client hydrates to `16`, triggers second resize. Repro: Go to `/bhagavad-gita/1/1`, scroll to main content area.
 
 ### COMPLETED BUGS (HISTORICAL)
 - [x] `BUG-025` **Mobile Navigation Dropdown hidden** — Fix header layout stacking.
@@ -58,6 +65,65 @@ This is the single authoritative ledger for Vishwa-Vani progress. It is organize
 - [ ] `MBH-CORE-001` **Scale Ingestion Roadmap**: Audit all 18 Parvas (225-300+ adhyayas each) and create a phased ingestion schedule (Phase 1-Parvas 1-6, Phase 2-Parvas 7-12, Phase 3-Parvas 13-18).
 - [ ] `MBH-CORE-002` **Process Replication**: Document the `docs/ingestion-runbook.md` specific to MBH scale (avoiding OOM during build, handling massive JSON shards).
 - [ ] `MBH-CORE-003` **KMG Source Verification**: Clean the KMG (Kisari Mohan Ganguli) layers for parvas 1-18.
+
+---
+
+## 🔧 PRIORITY 3B: REUSABLE DATA PIPELINE
+
+*Goal: A generic, repeatable 7-stage ingestion workflow that promotes any scripture from raw source to Gold-tier UI-ready data. Execute stages in order per book. Set `available: true` in `lib/texts.ts` ONLY after Stage 7 passes.*
+
+### WORKFLOW DEFINITION (applies to every book — do not skip stages)
+
+- Stage 1 SOURCE-AUDIT — Inventory raw files in `data/1-bronze/` and `data/2-silver/`; identify gaps; choose canonical source per language.
+- Stage 2 BRONZE-PARSE — Run or write book-specific parser; output NVF-compliant JSON shards to `data/2-silver/{book}/`.
+- Stage 3 SILVER-VALIDATE — Run `scripts/validate_silver.js`; enforce NVF schema (`id`, `original`, `transliteration`, `layers[]`); commentary strings ≥ 80 chars; zero placeholder strings.
+- Stage 4 LAYER-ENRICH — Add translation + commentary layers from canonical sources; enforce `isValidCommentaryContent` filter; at least 1 EN layer required.
+- Stage 5 GOLD-PROMOTE — Run `scripts/promote_to_gold.js`; move validated shards to `data/3-gold/{book}/`; update `data/manifest.json` with verse counts.
+- Stage 6 REGISTER — Add/update entry in `lib/texts.ts` (keep `available: false`); run full test suite; fix all failures before Stage 7.
+- Stage 7 UI-VERIFY — Flip `available: true`; load in reader UI; confirm no 404s, no layout shift, commentary renders correctly; revert if any P0/P1 issue found.
+
+### TOOLING (shared — implement once, reuse for all books)
+
+- [ ] `PIPE-001` **Create `scripts/validate_silver.js`** — Generic NVF schema validator: checks `id`, `original`, `transliteration`, `layers[]` presence; commentary length ≥ 80 chars; no placeholder strings `[PLACEHOLDER_`; prints per-verse errors + summary pass/fail.
+- [ ] `PIPE-002` **Create `scripts/promote_to_gold.js`** — Generic Silver → Gold promotion: copies validated shards to `data/3-gold/{book}/`; auto-updates `data/manifest.json` with `verse_count` and `status: GOLD`; refuses to run if `validate_silver` fails.
+- [ ] `PIPE-003` **Create `scripts/audit_gold.js`** — Post-promotion completeness report: prints verse count per chapter, layer counts per author, % with each language layer, any missing fields.
+
+### BOOK TRACK 1: KENA UPANISHAD (~35 verses, 1 chapter, Silver exists)
+*Fastest path to a second complete Gold text. Silver data already parsed.*
+
+- [ ] `PIPE-KENA-1` Stage 1: Source audit — inspect `data/2-silver/kena-upanishad/`; confirm verse count matches canonical 34-verse structure; note gaps.
+- [ ] `PIPE-KENA-2` Stage 3: Silver validate — run PIPE-001 against Kena shard; fix NVF non-compliance and short commentary strings.
+- [ ] `PIPE-KENA-3` Stage 4: Layer enrich — add English translation layer (public-domain Shankaracharya commentary or Max Müller); ensure all 34+ verses have ≥ 1 EN layer ≥ 80 chars.
+- [ ] `PIPE-KENA-4` Stage 5: Gold promote — run PIPE-002; verify `data/manifest.json` updated.
+- [ ] `PIPE-KENA-5` Stage 6: Register — add `kena-upanishad` entry to `lib/texts.ts` with correct `totalChapters`; run tests.
+- [ ] `PIPE-KENA-6` Stage 7: UI verify — flip `available: true`; test reader at `/kena-upanishad/1`; confirm all verses render; revert if issues.
+
+### BOOK TRACK 2: YOGA SUTRAS OF PATANJALI (196 sutras, 4 padas, Silver exists)
+
+- [ ] `PIPE-YS-1` Stage 1: Source audit — inspect `data/2-silver/yoga-sutras/` (4 pada files); confirm sutra numbering per pada (51/55/56/34).
+- [ ] `PIPE-YS-2` Stage 3: Silver validate — run PIPE-001 against all 4 padas; fix NVF issues.
+- [ ] `PIPE-YS-3` Stage 4: Layer enrich — add at least EN translation layer (Swami Vivekananda / Patanjali public-domain); all 196 sutras.
+- [ ] `PIPE-YS-4` Stage 5: Gold promote — run PIPE-002; update manifest.
+- [ ] `PIPE-YS-5` Stage 6: Register — add `patanjali-yoga-sutras` to `lib/texts.ts`; run tests.
+- [ ] `PIPE-YS-6` Stage 7: UI verify — flip `available: true`; test all 4 padas in reader.
+
+### BOOK TRACK 3: ISHA UPANISHAD — ENRICH (18 verses, Gold exists, sparse layers)
+*Already Gold but only 1 author layer. Add 2 more commentaries to match Gita depth.*
+
+- [ ] `PIPE-ISHA-1` Stage 4: Layer enrich — add Shankara commentary (EN) + Aurobindo commentary (EN) for all 18 verses; commentary ≥ 80 chars each.
+- [ ] `PIPE-ISHA-2` Stage 3: Re-validate — run PIPE-001 on enriched Isha; confirm 3 author layers, all ≥ 80 chars.
+- [ ] `PIPE-ISHA-3` Stage 5: Re-promote — run PIPE-002; update manifest `authors` array.
+- [ ] `PIPE-ISHA-4` Stage 7: UI verify — confirm commentary selector shows 3 scholars in reader; Lean UI prunes to 2 correctly.
+
+### BOOK TRACK 4: MAHABHARATA PARVA 1 — SILVER → PARTIAL GOLD (Adhyayas 1–10)
+*Target first 10 adhyayas only. Establishes MBH Gold pipeline before full 117-adhyaya scale.*
+
+- [ ] `PIPE-MBH-1` Stage 1: Source audit — inspect `data/2-silver/mahabharata/parva-1/`; map adhyaya files 001–010; note verse count gaps vs KMG canonical.
+- [ ] `PIPE-MBH-2` Stage 3: Silver validate — run PIPE-001 on adhyayas 1–10; fix NVF issues; drop placeholder stubs.
+- [ ] `PIPE-MBH-3` Stage 4: Layer enrich — verify KMG (km_ganguli) EN translation layer present for all verses in adhyayas 1–10.
+- [ ] `PIPE-MBH-4` Stage 5: Partial Gold promote — move adhyayas 1–10 to `data/3-gold/mahabharata/parva-1/`; update manifest with partial status.
+- [ ] `PIPE-MBH-5` Stage 6: Register partial — update `lib/texts.ts` MBH entry to reflect partial Gold; keep `available: false` until Stage 7.
+- [ ] `PIPE-MBH-6` Stage 7: UI verify — flip `available: true` for MBH; test adhyayas 1–10 in reader; verify hierarchy nav renders parva/adhyaya structure.
 
 ---
 
@@ -185,4 +251,4 @@ This is the single authoritative ledger for Vishwa-Vani progress. It is organize
 
 ---
 
-*Last Updated: 2026-04-16 by Claude/Antigravity.*
+*Last Updated: 2026-04-20 by Claude. Added BUG-043 (P0), BUG-044/045 (P1), BUG-046/047/048 (P2) from audit. Added PRIORITY 3B reusable data pipeline workflow with PIPE-001–003 tooling + 4 book tracks (Kena, Yoga Sutras, Isha enrichment, MBH Parva 1).*
