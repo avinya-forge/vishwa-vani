@@ -9,12 +9,15 @@ This is the single authoritative ledger for Vishwa-Vani progress. It is organize
 
 ### BOOK: GLOBAL / ALL
 
-- [ ] `BUG-043` **[P0] Verse Permalink 404 — Only 3 Verses Accessible Per Chapter**: `app/[text]/[chapter]/[verse]/page.tsx` has `dynamicParams = false` + `generateStaticParams` generates only verses 1–3 per chapter. 606 of 657 Gita verse URLs (any verse > 3 in all 18 chapters) return hard 404. Every "Copy Permalink" link shared for verse > 3 is dead. Fix: set `dynamicParams = true` and expand `generateStaticParams` to enumerate all real verse numbers via `vedicDataService`.
-- [ ] `BUG-044` **[P1] Progress Counter Shows Verse Number > Total**: `study-client.tsx:604` displays `{activeVerse} / {verses.length}`. `activeVerse` stores the verse *number* (e.g. `46`) while `verses.length` is the verse *count* (e.g. `39` for Ch. 1). Counter reads `46 / 39` at chapter end. Fix: track visible verse by array index, display `{activeVerseIndex + 1} / {verses.length}`.
-- [ ] `BUG-045` **[P1] Language Selector Flash on Cold Load**: `study-client.tsx:236` initializes `useState('en')` but `useEffect` resets to `'all'`. Causes visible EN → ALL flash on every cold load. Violates standards.md §2.1. Fix: initialize `useState('all')` directly.
-- [ ] `BUG-046` **[P2] Stale Test Comments: isValidCommentaryContent Threshold**: Test files (`lean-template-integration.test.tsx:46`, `study-client-coverage.test.tsx:43`) comment threshold as `> 80 chars`. Actual implementation lowered to `< 20`. Misleads future developers.
-- [ ] `BUG-047` **[P2] Gita BookCard "Part of Mahabharata" Links to Unavailable Text**: `texts.ts:107` sets `parent: 'mahabharata'`. BookCard renders a "Part of" link to `/mahabharata/1` which shows a Coming Soon wall (Mahabharata `available: false`). Low impact now but confusing UX.
-- [ ] `BUG-048` **[P2] AI Synthesis Meaning Extraction — Fragile Fallback**: `study-client.tsx:429` extracts meaning via `meaningLayer?.content || v.meaning || v.translation`. Gold Gita has no `meaning` field and no `translation`-type layers, so always falls through to `v.translation`. Silent empty context if future data drops `translation` at verse level.
+- [x] `BUG-043` **[P0] Verse Permalink 404 — Only 3 Verses Accessible Per Chapter**: Fixed `generateStaticParams` to load all real verse numbers from VedicDataService. `dynamicParams` changed `false → true` as safety net. — Done: 2026-04-20
+- [x] `BUG-044` **[P1] Progress Counter Shows Verse Number > Total**: Intersection observer now converts verse number → 1-based array index before `setActiveVerse`. Counter correctly shows `N / total`. — Done: 2026-04-20
+- [x] `BUG-045` **[P1] Language Selector Flash on Cold Load**: `useState` initialized directly to `'all'`, eliminating the EN→ALL re-render on mount. — Done: 2026-04-20
+- [x] `BUG-046` **[P2] Stale Test Comments**: Updated both test files to reflect actual threshold: `≥ 20 chars and not starting with '['`. — Done: 2026-04-20
+- [x] `BUG-047` **[P2] Gita BookCard "Part of" Dead Link**: Parent link now only renders when `parentBook.available === true`. — Done: 2026-04-20
+- [x] `BUG-048` **[P2] AI Synthesis Meaning Extraction Fragile**: Fallback chain now uses `??` (not `||`), checks both `translation` and `meaning` layer types, and validates final string through `isValidCommentaryContent`. — Done: 2026-04-20
+- [x] `BUG-049` **[P1] Bracket-Prefixed Template Markers Bypass Content Filter**: `isValidCommentaryContent` only blocked `[PLACEHOLDER_` but not `[ADVAITA_PERSPECTIVE:...]` and similar padded fakes in Isha gold data. Added `trimmed.startsWith('[')` early exit to block all template markers. — Done: 2026-04-20
+- [ ] `BUG-050` **[P1] Isha Upanishad Gold Data Incomplete**: `data/3-gold/isha-upanishad/isha-upanishad-chapter-1.json` has only 10 of 18 verses (missing verses 9–17). Only `isa` author has real content; `iskcon`, `dnyaneshwari`, `adi-shankara` layers are all placeholders (now blocked by BUG-049 fix). Manifest claims `verse_count: 18` but file has 10. Repro: `node scripts/audit_gold.js isha-upanishad`.
+- [ ] `BUG-042` **Translation Placeholder Rendering**: During UI verification, "Translation data is currently being audited for this verse" appeared for missing base translations instead of silently defaulting. Ensure fallback aligns with Lean UI standards.
 - [ ] `BUG-042` **Translation Placeholder Rendering**: During UI verification, "Translation data is currently being audited for this verse" appeared for missing base translations instead of silently defaulting. Ensure fallback aligns with Lean UI standards.
 - [ ] `BUG-038` **Landing Page Hydration/Blank Screen** — Root cause confirmed: `app/page.tsx` is a `'use client'` component returning an empty div until JS hydrates. No server-rendered fallback. Repro: Load `/` on desktop/mobile and wait for hydration.
 - [ ] `BUG-039` **Search Filter Contrast** — Unselected category chips on the Search page have broken light-mode tokens, rendering them illegible. Repro: Go to `/search` in light mode, observe 'ITIHAS', 'UPANISHAD', etc. chips.
@@ -82,11 +85,33 @@ This is the single authoritative ledger for Vishwa-Vani progress. It is organize
 - Stage 6 REGISTER — Add/update entry in `lib/texts.ts` (keep `available: false`); run full test suite; fix all failures before Stage 7.
 - Stage 7 UI-VERIFY — Flip `available: true`; load in reader UI; confirm no 404s, no layout shift, commentary renders correctly; revert if any P0/P1 issue found.
 
+### RUNBOOK — HOW TO ADD A NEW BOOK (executor reference)
+
+```
+# 1. Fix source data in data/2-silver/{book-slug}/
+# 2. Validate — must exit 0 before proceeding
+node scripts/validate_silver.js {book-slug}
+
+# 3. Promote to Gold (runs validate internally; blocked if failures)
+node scripts/promote_to_gold.js {book-slug}
+
+# 4. Audit completeness
+node scripts/audit_gold.js {book-slug}
+# Must print "Readiness: 100%" and no PLACEHOLDER-HEAVY authors
+
+# 5. Register in lib/texts.ts — keep available:false initially
+# 6. Run test suite: npm test
+# 7. Set available:true and test in reader UI
+# 8. Revert available:true if any P0/P1 regression found
+```
+
+**GOLD-GATE**: `VedicDataService.getChapterData()` reads `manifest.json` at runtime and returns `null` for any book not marked `status: GOLD`. Setting `available: true` alone is not sufficient — the manifest must be updated by `promote_to_gold.js`.
+
 ### TOOLING (shared — implement once, reuse for all books)
 
-- [ ] `PIPE-001` **Create `scripts/validate_silver.js`** — Generic NVF schema validator: checks `id`, `original`, `transliteration`, `layers[]` presence; commentary length ≥ 80 chars; no placeholder strings `[PLACEHOLDER_`; prints per-verse errors + summary pass/fail.
-- [ ] `PIPE-002` **Create `scripts/promote_to_gold.js`** — Generic Silver → Gold promotion: copies validated shards to `data/3-gold/{book}/`; auto-updates `data/manifest.json` with `verse_count` and `status: GOLD`; refuses to run if `validate_silver` fails.
-- [ ] `PIPE-003` **Create `scripts/audit_gold.js`** — Post-promotion completeness report: prints verse count per chapter, layer counts per author, % with each language layer, any missing fields.
+- [x] `PIPE-001` **`scripts/validate_silver.js`** — Generic NVF schema validator. Checks `id`, `original`, `verse`, `layers[]`; commentary ≥ 20 chars; no bracket-prefix or `[PLACEHOLDER_` content; EN layer required. Exit 0 = pass. — Done: 2026-04-20
+- [x] `PIPE-002` **`scripts/promote_to_gold.js`** — Generic Silver → Gold promotion. Runs PIPE-001 gate; copies shards to `data/3-gold/{book}/`; auto-updates `manifest.json` with verse counts and `status: GOLD`. Blocked if validation fails. — Done: 2026-04-20
+- [x] `PIPE-003` **`scripts/audit_gold.js`** — Post-promotion completeness report. Prints verse counts, per-author layer coverage, placeholder %, readiness score; flags manifest/file count mismatches. — Done: 2026-04-20
 
 ### BOOK TRACK 1: KENA UPANISHAD (~35 verses, 1 chapter, Silver exists)
 *Fastest path to a second complete Gold text. Silver data already parsed.*
@@ -251,4 +276,4 @@ This is the single authoritative ledger for Vishwa-Vani progress. It is organize
 
 ---
 
-*Last Updated: 2026-04-20 by Claude. Added BUG-043 (P0), BUG-044/045 (P1), BUG-046/047/048 (P2) from audit. Added PRIORITY 3B reusable data pipeline workflow with PIPE-001–003 tooling + 4 book tracks (Kena, Yoga Sutras, Isha enrichment, MBH Parva 1).*
+*Last Updated: 2026-04-20 by Claude. Session 2: Fixed BUG-043–049 (all resolved). Added BUG-050 (Isha gold incomplete). Added PIPE-001/002/003 tooling + GOLD-GATE mechanism. RUNBOOK added to Priority 3B. Kena/YS storage types corrected to json pipeline.*
