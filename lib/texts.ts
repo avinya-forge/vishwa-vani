@@ -164,7 +164,7 @@ export const VEDIC_LIBRARY: VedicText[] = [
   },
   {
     slug: 'kena-upanishad',
-    dataPrefix: 'kena_upanishad',
+    dataPrefix: 'kena-upanishad',
     name: 'Kena Upanishad',
     nameHi: 'केनोपनिषद् — हिन्दी',
     nameMr: 'केनोपनिषद् — मराठी',
@@ -172,15 +172,15 @@ export const VEDIC_LIBRARY: VedicText[] = [
     totalChapters: 1,
     description: 'Explores the nature of Brahman (the ultimate reality) through the question: By whose will does the mind think?',
     category: 'upanishad',
-    available: false,
-    storage: 'lake',
+    available: false, // Set true only after: PIPE-KENA-1→6 pass + node scripts/audit_gold.js kena-upanishad shows 100%
+    storage: 'json',  // Pipeline: data/2-silver/kena-upanishad → validate → data/3-gold/kena-upanishad
     chapterNames: { '1': 'Kena Upanishad — Complete Text' },
     chapterNamesHi: { '1': 'केनोपनिषद् — पूर्ण पाठ' },
     chapterNamesMr: { '1': 'केनोपनिषद् — पूर्ण पाठ' },
   },
   {
     slug: 'patanjali-yoga-sutras',
-    dataPrefix: 'yoga_sutras',
+    dataPrefix: 'yoga-sutras',
     name: 'Yoga Sutras of Patanjali',
     nameHi: 'पतंजलि योगसूत्र — हिन्दी',
     nameMr: 'पतंजलि योगसूत्र — मराठी',
@@ -188,8 +188,8 @@ export const VEDIC_LIBRARY: VedicText[] = [
     totalChapters: 4,
     description: 'The foundational text of Raja Yoga, consisting of 196 sutras (aphorisms) on the theory and practice of yoga.',
     category: 'other',
-    available: false,
-    storage: 'lake',
+    available: false, // Set true only after: PIPE-YS-1→6 pass + node scripts/audit_gold.js patanjali-yoga-sutras shows 100%
+    storage: 'json',  // Pipeline: data/2-silver/yoga-sutras → validate → data/3-gold/patanjali-yoga-sutras
     chapterNames: {
       '1': 'Samadhi Pada',
       '2': 'Sadhana Pada',
@@ -230,8 +230,8 @@ export const VEDIC_LIBRARY: VedicText[] = [
     totalChapters: 18,
     description: 'The longest epic poem in the world, chronicling the Kurukshetra War and the fates of the Kaurava and Pandava princes.',
     category: 'itihas',
-    available: false,
-    storage: 'json', // Changed from lake to json for shard support
+    available: false, // Set true only after: PIPE-MBH-1→6 pass + node scripts/audit_gold.js mahabharata shows 100%
+    storage: 'json',  // Pipeline: data/2-silver/mahabharata/parva-1 → validate → data/3-gold/mahabharata
     chapterNames: {
       '1': 'Adi Parva', '2': 'Sabha Parva', '3': 'Vana Parva', '4': 'Virata Parva', '5': 'Udyoga Parva',
       '6': 'Bhishma Parva', '7': 'Drona Parva', '8': 'Karna Parva', '9': 'Shalya Parva', '10': 'Sauptika Parva',
