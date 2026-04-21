@@ -11,10 +11,17 @@ import { useTheme } from 'next-themes'
  * while maintaining the premium, elegant typography for humans.
  * Now includes a secure 'Copy' feature for authorized analysis tools.
  */
-export default function ShlokaMask({ text, className, fontSize = 28 }: { text: string, className?: string, fontSize?: number }) {
+export default function ShlokaMask({ text, className, fontSize }: { text: string, className?: string, fontSize?: number }) {
     const canvasRef = useRef<HTMLCanvasElement>(null)
     const [copied, setCopied] = useState(false)
+    const [resolvedFontSize, setResolvedFontSize] = useState(fontSize ?? 22)
     const { resolvedTheme } = useTheme()
+
+    useEffect(() => {
+        if (fontSize === undefined) {
+            setResolvedFontSize(window.innerWidth < 640 ? 16 : 22)
+        }
+    }, [fontSize])
 
     useEffect(() => {
         const canvas = canvasRef.current
@@ -24,7 +31,7 @@ export default function ShlokaMask({ text, className, fontSize = 28 }: { text: s
         if (!ctx) return
 
         // Set dimensions based on parent/font
-        const currentFontSize = fontSize
+        const currentFontSize = resolvedFontSize
         const lineHeight = currentFontSize * 1.5
         const paddingX = 16
         const paddingY = 24
@@ -74,7 +81,7 @@ export default function ShlokaMask({ text, className, fontSize = 28 }: { text: s
             const y = paddingY + (i * lineHeight) + currentFontSize * 1.1
             ctx.fillText(line, maxWidth / 2, y)
         })
-    }, [text, fontSize, resolvedTheme])
+    }, [text, resolvedFontSize, resolvedTheme])
 
     const handleCopy = async () => {
         try {
@@ -88,10 +95,10 @@ export default function ShlokaMask({ text, className, fontSize = 28 }: { text: s
 
     return (
         <div className={`group relative overflow-hidden flex justify-center ${className}`}>
-            <canvas 
-                ref={canvasRef} 
+            <canvas
+                ref={canvasRef}
                 className="max-w-full h-auto cursor-default pointer-events-none select-none"
-                style={{ filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.05))' }}
+                style={{ filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.05))', minHeight: `${resolvedFontSize * 3}px` }}
             />
             
             {/* 📋 Secure Copy Button - Only for humans, visible on hover */}

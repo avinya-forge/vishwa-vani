@@ -853,7 +853,7 @@ export default function StudyClient({
                 {v.original ? (
                   <div className="px-4 sm:px-6 py-4 sm:py-6 text-center border-b border-stone-50 dark:border-stone-800/30 overflow-x-auto">
                     <div className="min-w-full flex justify-center">
-                      <ShlokaMask text={String(v.original)} fontSize={typeof window !== "undefined" && window.innerWidth < 640 ? 16 : 22} className="sm:w-full" />
+                      <ShlokaMask text={String(v.original)} className="sm:w-full" />
                     </div>
                     {v.transliteration ? (
                       <p className="mt-3 text-stone-400 font-serif italic text-xs sm:text-sm leading-relaxed max-w-xl mx-auto break-words">
