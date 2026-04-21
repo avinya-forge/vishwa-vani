@@ -61,10 +61,87 @@ Jules and Antigravity are responsible for **Implementation & Code Execution**.
 - **API routes** — `GET /api/synthesize` returns `synthesisMode: 'concatenation-fallback'`; supported languages: `en`, `hi`, `mr`
 
 ## Content Filtering Rule
-`isValidCommentaryContent()` rejects strings shorter than **80 characters**. Test fixtures must use commentary strings ≥ 80 chars.
+`isValidCommentaryContent()` rejects: (1) strings shorter than **20 characters**, (2) any string that starts with `[` (catches all template markers like `[PLACEHOLDER_X]`, `[ADVAITA_PERSPECTIVE:...]`), (3) known stub patterns `TBD_CONTENT`, `TODO_LAYER`, `LOREM IPSUM`. Test fixtures must use real prose ≥ 20 chars that does not start with `[`.
 
 ## Current Version
-**v0.9.6 / SDLC v5.0** — Deployment-first, beta-driven. PHASE 0 (DEPL) is the active sprint. See `docs/backlog.md` for tasks.
+**v0.9.7 / SDLC v5.1** — Content-scale phase. One book at a time. See `docs/backlog.md` PRIORITY 0 for the active book.
+
+## 🎯 ONE BOOK AT A TIME — Active Focus Protocol (MANDATORY)
+
+Exactly **one book** is active at any moment. All work for that book must complete its full cycle before the next book starts. No parallel book tracks in active development.
+
+### The Book Cycle (7 stages — must complete in order — no skipping)
+
+See `docs/backlog.md` PRIORITY 3B for the granular task template to copy for each new book.
+
+```
+STAGE 1 — DATA GATHERING
+  Acquire Sanskrit original (no gaps), transliteration.
+  Author 1: EN + HI + MR layers (scholarly public-domain translation).
+  Author 2: EN + HI/MR layers (different philosophical tradition/school).
+  Target: ≥ 2 authors × 3 languages = 6 layer types per verse minimum.
+  Stotras: identify any embedded stotras/mantras (see Stage 7).
+
+STAGE 2 — PIPELINE
+  node scripts/validate_silver.js {book}     ← must exit 0
+  node scripts/promote_to_gold.js {book}     ← blocked if validate fails
+  node scripts/audit_gold.js {book}          ← Readiness 100%, 2+ authors, EN/HI/MR
+
+STAGE 3 — UI INTEGRATION
+  Register in lib/texts.ts (available:false → run tests → available:true).
+  Test all chapter + verse routes; language selector; scholar selector.
+  Confirm no 404, no layout shift, AI synthesis works.
+
+STAGE 4 — BUG HUNT
+  Audit: verse permalinks, progress counter, commentary content filter,
+  scholar selector max-2 enforcement, language flash, mobile layout.
+  Log every P0/P1/P2 to PRIORITY 1 in backlog.
+
+STAGE 5 — BUG FIX
+  Fix ALL P0 and P1 before proceeding. Log P2 and move on.
+
+STAGE 6 — LABS SCAN & IMPLEMENT
+  Read chapter content → map philosophical themes per chapter.
+  Identify 3+ interactive app concepts (comparisons, simulators, visualizers).
+  Register top apps in lib/vedic-labs-registry.ts.
+  Implement highest-priority app. Bug hunt the new app.
+
+STAGE 7 — STOTRAS & MANTRAS EXTRACTION
+  Scan all chapters for embedded stotras, mantras, ashtakas, hymns.
+  Key examples: Vishnu Sahasranama (MBH Anushasana Parva 149),
+    Bhishma Stuti (MBH), Durga Saptashati (Markandeya Purana),
+    Purusha Sukta (Rigveda 10.90), Sri Suktam (Rigveda khila).
+  Extract as NVF shards → data/2-silver/stotras/{stotra-slug}.json
+  Tag: mantraType (stotra/mantra/ashtaka), deity, dailyUse (boolean).
+  Daily-use stotras: add pronunciation guide layer, add to CAT-016.
+  Cross-reference back to parent book verse where the stotra appears.
+
+STAGE 8 — GRADUATE
+  Book marked complete in backlog. Advance to next in priority list.
+```
+
+### Current Active Book
+See `docs/backlog.md` — **PRIORITY 0** section. Always check there first.
+
+### Bhagavad Gita Status: ✅ COMPLETE (verified 2026-04-20)
+657 verses, 18 chapters. ISKCON (EN/HI/MR) + Sant Dnyaneshwar (EN/HI/MR). All routes working.
+Open: BUG-041 (cosmetic layout shift). Labs: 44% chapter coverage — 14 new app opportunities logged.
+
+### Book Priority Order (from PRIORITY 5 in backlog)
+1. Isha Upanishad repair (BUG-050 — 10/18 verses, needs real data)
+2. Mahabharata Parva 1 (real KMG silver data exists, most pipeline-ready)
+3. Bhagavata Purana Skanda 1 (partial silver exists)
+4. Kena Upanishad (1 real verse — needs full source acquisition)
+5. Yoga Sutras of Patanjali (195 stubs — needs real Sanskrit text)
+6. Vishnu Purana (partial silver exists)
+See backlog PRIORITY 5 for the full 73-text catalog.
+
+### Pipeline Gate Rules (enforced by code — never bypass)
+
+- `VedicDataService` GOLD-GATE: returns `null` for any book not marked `status: GOLD` in `manifest.json`. Setting `available: true` without running `promote_to_gold.js` serves nothing.
+- `isValidCommentaryContent()` in `study-client.tsx`: rejects content starting with `[`, short stubs, known placeholder patterns. Never lower the threshold to make placeholder data pass.
+- `validate_silver.js` must exit 0 before `promote_to_gold.js` is run. `--force` flag exists but must never be used on production data.
+- `audit_gold.js` must show Readiness 100% and zero PLACEHOLDER-HEAVY authors before `available: true` is set.
 
 ---
 
@@ -135,11 +212,12 @@ All skills below are active. Invoke proactively — do not wait for user to ask.
 
 ### Recommended Session Opening
 ```
-You are Vishwa Vani Architect, SDLC v5.0 (deployment-first, beta-driven). Caveman mode.
-1. Read docs/backlog.md → find current active phase.
-2. Read docs/blueprint.md → recall constraints.
-3. Invoke product-management:sprint-planning to scope next 5 tasks for Jules.
-4. Invoke relevant skill before any non-trivial design decision.
+You are Vishwa Vani Architect, SDLC v5.1 (content-scale, one-book-at-a-time). Caveman mode.
+1. Read docs/backlog.md → check PRIORITY 0 for the active book and its current cycle step.
+2. Check PRIORITY 1 → any open P0/P1 bugs must be fixed before advancing the active book.
+3. If active book cycle step is DATA or PIPELINE → run validate_silver.js to see current state.
+4. If active book cycle step is UI or BUG HUNT → check reader routes and log all findings.
+5. Invoke relevant skill before any non-trivial design decision.
 ```
 
 ---
@@ -159,6 +237,13 @@ These rules apply strictly across Claude, Jules, and Antigravity:
 - **Preserve Completed Items Permanently.** All tasks marked `[x]` and their Done notes must be kept forever. They are the project's audit trail and must not be deleted or moved.
 - **No Tables in Backlog.** Never use markdown tables anywhere in `docs/backlog.md`. Tables break readability in long task lists. Use prose, bullet lists, and section headers only.
 - **Merge Strategy.** If the backlog needs reorganization, read the full current file first, then write the merged result that contains 100% of existing tasks plus any additions. A diff must show only additions and edits, never deletions of existing task lines.
+
+### 4. One Book at a Time (CRITICAL — NEVER VIOLATE)
+- **Single Active Book**: Only one book advances through the data→pipeline→UI→bug-hunt→fix cycle at a time. Never start data collection for Book B while Book A is in UI or bug-fix stage.
+- **Cycle Completeness**: A book is not "done" until Step 5 (BUG FIX) is clear of all P0 and P1 issues. No partial graduations.
+- **No Available:true Shortcuts**: Never set `available: true` for a book until `audit_gold.js` prints Readiness 100% AND the UI has been manually verified in the reader. The GOLD-GATE in `VedicDataService` is a second programmatic guard but is not a substitute for the manual check.
+- **Pipeline Respect**: The 7-stage pipeline in PRIORITY 3B of backlog.md is the law. No stage may be skipped. `validate_silver.js` must exit 0. `promote_to_gold.js` must run before manifest is updated.
+- **Bug Hunt is Mandatory**: After every book's UI integration, a structured bug hunt (verse permalinks, progress counter, content filter, scholar selector, AI synthesis, mobile layout) must be run and all findings logged to PRIORITY 1 before declaring the book cycle complete.
 
 ### 2. Git Synchronization & Pull Request Lifecycle
 - **Sync First**: Whenever an agent begins a new session or work item, it MUST pull the latest changes from Git (`git pull origin main`).
