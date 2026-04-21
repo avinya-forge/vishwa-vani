@@ -1,6 +1,33 @@
-# 🚀 Vishwa-Vani: The Master Backlog [SDLC v5.1 — Priority-First, Content-Scaled]
+# 🚀 Vishwa-Vani: The Master Backlog [SDLC v5.1 — One Book at a Time]
 
-This is the single authoritative ledger for Vishwa-Vani progress. It is organized by **Priority** (Bugs → Content → Pipeline → UI) and **Book** (Gita → Mahabharata).
+This is the single authoritative ledger for Vishwa-Vani progress. Sections are: PRIORITY 0 (active book focus) → PRIORITY 1 (bugs) → PRIORITY 2 (content) → PRIORITY 3/3B (pipeline) → PRIORITY 4 (UI) → PRIORITY 5 (scripture catalog) → EPICs → Archive.
+
+---
+
+## 🎯 PRIORITY 0: ACTIVE BOOK FOCUS
+
+*Exactly one book is in active development at a time. Complete the full cycle before advancing. Check this section first every session.*
+
+### ACTIVE BOOK: ISHA UPANISHAD — CYCLE STEP 1: DATA COLLECTION
+
+Status as of 2026-04-20:
+- Gold file has 10 of 18 verses (missing verses 9–17). BUG-050 open.
+- Only `isa` author layer is real. `iskcon`, `dnyaneshwari`, `adi-shankara` are all placeholder (blocked by BUG-049 fix).
+- `node scripts/audit_gold.js isha-upanishad` → 3 PLACEHOLDER-HEAVY authors, verse count mismatch.
+
+Active tasks for this book (in order — do not skip):
+- [ ] `ISHA-CYCLE-1` Acquire missing 8 verses (9–17) from canonical public-domain Isha Upanishad source. Add real Sanskrit original + transliteration for all 18 verses. Update `data/2-silver/isha-upanishad/isha-upanishad-chapter-1.json`.
+- [ ] `ISHA-CYCLE-2` Add real EN commentary layer for all 18 verses. Minimum: Shankara Bhashya (public domain). Target: also Aurobindo (public domain). Each commentary ≥ 20 chars, no bracket prefix.
+- [ ] `ISHA-CYCLE-3` Run `node scripts/validate_silver.js isha-upanishad` — must exit 0. Fix all failures.
+- [ ] `ISHA-CYCLE-4` Run `node scripts/promote_to_gold.js isha-upanishad` — updates manifest, copies to gold.
+- [ ] `ISHA-CYCLE-5` Run `node scripts/audit_gold.js isha-upanishad` — must show Readiness: 100%, 18 verses, zero PLACEHOLDER-HEAVY authors.
+- [ ] `ISHA-CYCLE-6` Set `available: true` in `lib/texts.ts`. Test `/isha-upanishad/1` in reader: all 18 verses render, commentary displays, no 404, language selector works.
+- [ ] `ISHA-CYCLE-7` Bug hunt: check verse permalinks, progress counter, scholar selector, AI synthesis for Isha. Log all P0/P1/P2 to PRIORITY 1.
+- [ ] `ISHA-CYCLE-8` Fix all P0 and P1 bugs found. Isha cycle complete → advance to MAHABHARATA PARVA 1.
+
+### NEXT BOOK (after Isha cycle completes): MAHABHARATA PARVA 1
+
+Real KMG data exists in `data/2-silver/mahabharata/parva-1/` — 210 real verses in adhyaya-1 alone, no placeholders. Best data-ready candidate after Isha. Tasks: PIPE-MBH-1 through PIPE-MBH-6 (see PRIORITY 3B).
 
 ---
 
@@ -16,8 +43,7 @@ This is the single authoritative ledger for Vishwa-Vani progress. It is organize
 - [x] `BUG-047` **[P2] Gita BookCard "Part of" Dead Link**: Parent link now only renders when `parentBook.available === true`. — Done: 2026-04-20
 - [x] `BUG-048` **[P2] AI Synthesis Meaning Extraction Fragile**: Fallback chain now uses `??` (not `||`), checks both `translation` and `meaning` layer types, and validates final string through `isValidCommentaryContent`. — Done: 2026-04-20
 - [x] `BUG-049` **[P1] Bracket-Prefixed Template Markers Bypass Content Filter**: `isValidCommentaryContent` only blocked `[PLACEHOLDER_` but not `[ADVAITA_PERSPECTIVE:...]` and similar padded fakes in Isha gold data. Added `trimmed.startsWith('[')` early exit to block all template markers. — Done: 2026-04-20
-- [ ] `BUG-050` **[P1] Isha Upanishad Gold Data Incomplete**: `data/3-gold/isha-upanishad/isha-upanishad-chapter-1.json` has only 10 of 18 verses (missing verses 9–17). Only `isa` author has real content; `iskcon`, `dnyaneshwari`, `adi-shankara` layers are all placeholders (now blocked by BUG-049 fix). Manifest claims `verse_count: 18` but file has 10. Repro: `node scripts/audit_gold.js isha-upanishad`.
-- [ ] `BUG-042` **Translation Placeholder Rendering**: During UI verification, "Translation data is currently being audited for this verse" appeared for missing base translations instead of silently defaulting. Ensure fallback aligns with Lean UI standards.
+- [ ] `BUG-050` **[P1] Isha Upanishad Gold Data Incomplete**: `data/3-gold/isha-upanishad/isha-upanishad-chapter-1.json` has only 10 of 18 verses (missing verses 9–17). Only `isa` author has real content; `iskcon`, `dnyaneshwari`, `adi-shankara` layers are all placeholders (now blocked by BUG-049 fix). Manifest claims `verse_count: 18` but file has 10. Repro: `node scripts/audit_gold.js isha-upanishad`. Tracked in ISHA-CYCLE-1 through ISHA-CYCLE-8 (see PRIORITY 0).
 - [ ] `BUG-042` **Translation Placeholder Rendering**: During UI verification, "Translation data is currently being audited for this verse" appeared for missing base translations instead of silently defaulting. Ensure fallback aligns with Lean UI standards.
 - [ ] `BUG-038` **Landing Page Hydration/Blank Screen** — Root cause confirmed: `app/page.tsx` is a `'use client'` component returning an empty div until JS hydrates. No server-rendered fallback. Repro: Load `/` on desktop/mobile and wait for hydration.
 - [ ] `BUG-039` **Search Filter Contrast** — Unselected category chips on the Search page have broken light-mode tokens, rendering them illegible. Repro: Go to `/search` in light mode, observe 'ITIHAS', 'UPANISHAD', etc. chips.
@@ -276,4 +302,96 @@ node scripts/audit_gold.js {book-slug}
 
 ---
 
-*Last Updated: 2026-04-20 by Claude. Session 2: Fixed BUG-043–049 (all resolved). Added BUG-050 (Isha gold incomplete). Added PIPE-001/002/003 tooling + GOLD-GATE mechanism. RUNBOOK added to Priority 3B. Kena/YS storage types corrected to json pipeline.*
+## 📚 PRIORITY 5: SCRIPTURE MASTER CATALOG
+
+*Full list of Hindu Vedas, Granthas, Upanishads, Puranas, and Itihas to be ingested. Work one book at a time in priority order. Check PRIORITY 0 for the currently active book before picking the next.*
+
+Each book follows the same 7-stage pipeline. See PRIORITY 3B RUNBOOK.
+
+### TIER A — HALF-STARTED (silver data exists or gold incomplete — highest priority)
+
+Books in this tier have real data already in the repo. Least work to production.
+
+- [ ] `CAT-001` Isha Upanishad — ACTIVE (PRIORITY 0). 10/18 verses gold, real `isa` layer. Needs 8 missing verses + 2 real commentaries. Cycle: ISHA-CYCLE-1→8.
+- [ ] `CAT-002` Mahabharata — NEXT. Real KMG data in `data/2-silver/mahabharata/parva-1/` (adhyaya files, 210+ verses/file, no placeholders). Pipeline: PIPE-MBH-1→6. Goal: Parva 1 adhyayas 1–10 to Gold first.
+- [ ] `CAT-003` Bhagavata Purana — 12 skandhas partial silver in `data/2-silver/bhagavata-purana/`. Audit silver quality before promoting. Source: Prabhupada translation (CC) or Gita Press EN.
+- [ ] `CAT-004` Vishnu Purana — 6 amshas partial silver in `data/2-silver/vishnu-purana/`. Source: H.H. Wilson translation (public domain).
+- [ ] `CAT-005` Garuda Purana — partial silver in `data/2-silver/garuda-purana/`. Source: Ernest Wood & Subrahmanyam translation (public domain).
+- [ ] `CAT-006` 16 Samskaras — partial silver in `data/2-silver/samskaras/`. Source: existing curated content.
+
+### TIER B — STUB SILVER (all verses are placeholders — needs real source acquisition)
+
+Books in this tier have the verse structure but no real text. Need Sanskrit source first.
+
+- [ ] `CAT-007` Yoga Sutras of Patanjali — 195 stubs across 4 padas. Needs real Sanskrit sutras (Panini standard), transliteration, and Vivekananda/Patanjali EN commentary. Then run pipeline.
+- [ ] `CAT-008` Kena Upanishad — 1 real verse + 33 missing. Needs full 34-verse Sanskrit source. Commentary: Shankara Bhashya (Max Müller translation, public domain).
+
+### TIER C — REGISTERED IN lib/texts.ts (no data yet — needs full acquisition)
+
+Books already registered and visible as "Coming Soon" in the UI.
+
+- [ ] `CAT-009` Rigveda — 10 mandalas, 1028 hymns, ~10,552 verses. Source: Griffith translation (public domain). Start with Mandala 1 (191 hymns).
+- [ ] `CAT-010` Samaveda — 1875 verses (mostly derived from Rigveda). Source: Stevenson translation or Ralph Griffith (public domain).
+- [ ] `CAT-011` Yajurveda — Krishna Yajurveda (Taittiriya Samhita, 7 kanda) + Shukla Yajurveda (40 chapters). Source: Griffith translation (public domain).
+- [ ] `CAT-012` Atharvaveda — 20 books, ~730 hymns. Source: Griffith or Bloomfield translation (public domain).
+- [ ] `CAT-013` Brahma Sutras (Vedanta Sutras) — 4 adhyayas, 555 aphorisms. Source: Swami Vireswarananda translation + Shankara Bhashya (public domain).
+- [ ] `CAT-014` Manusmriti (Laws of Manu) — 12 adhyayas, ~2685 shlokas. Source: Georg Bühler translation (public domain, SBE Vol 25).
+- [ ] `CAT-015` Dasbodh (Ramdas Swami) — 20 dashaks, 200 samaas. Marathi original + EN translation. Source: existing curated EN translation.
+- [ ] `CAT-016` Stotras (Sanskrit Hymns Collection) — collection of major stotras: Hanuman Chalisa, Vishnu Sahasranama, Lalita Sahasranama, Shiva Tandava, Durga Saptashati intro, Bhaja Govindam.
+
+### TIER D — CATALOG ONLY (not yet registered — add to lib/texts.ts when starting)
+
+Register in `lib/texts.ts` with `available: false` when this book's cycle begins. Do not register in advance.
+
+Upanishads (108 total — priority subset):
+- [ ] `CAT-020` Katha Upanishad — 2 adhyayas, 119 verses. Yama teaches Nachiketa. Source: Max Müller or Swami Gambhirananda (public domain).
+- [ ] `CAT-021` Mundaka Upanishad — 3 mundakas, 64 mantras. Source: Max Müller SBE Vol 15 (public domain).
+- [ ] `CAT-022` Mandukya Upanishad — 12 mantras + Gaudapada Karika (215 shlokas). Shortest yet most profound.
+- [ ] `CAT-023` Prashna Upanishad — 6 prashnas, 67 verses. Source: Max Müller SBE (public domain).
+- [ ] `CAT-024` Taittiriya Upanishad — 3 vallis. Source: Swami Sarvananda or Max Müller (public domain).
+- [ ] `CAT-025` Aitareya Upanishad — 3 adhyayas, 33 mantras. Source: Max Müller SBE Vol 1 (public domain).
+- [ ] `CAT-026` Chandogya Upanishad — 8 chapters, 156 sections. One of the two longest. Source: Max Müller SBE Vol 1 (public domain).
+- [ ] `CAT-027` Brihadaranyaka Upanishad — 6 adhyayas. Largest Upanishad. Source: Max Müller SBE Vol 15 (public domain).
+- [ ] `CAT-028` Svetasvatara Upanishad — 6 adhyayas, 113 verses. Source: Max Müller SBE (public domain).
+
+Itihas:
+- [ ] `CAT-030` Ramayana (Valmiki) — 7 kandas, ~24,000 shlokas. Source: Griffith translation (public domain). Start with Bala Kanda (77 sargas).
+- [ ] `CAT-031` Harivamsa — appendix to Mahabharata, ~16,374 shlokas. Source: available after MBH pipeline matures.
+
+Yoga & Vedanta:
+- [ ] `CAT-035` Vivekachudamani (Adi Shankara) — 580 verses. Source: Swami Madhavananda translation (public domain).
+- [ ] `CAT-036` Ashtavakra Gita — 20 chapters, 298 verses. Source: Thomas Byrom or Radhakamal Mukerjee translation.
+- [ ] `CAT-037` Yoga Vasistha (Laghu Yoga Vasistha) — abridged version, 6 prakaranas. Source: K. Narayanaswami Aiyer translation (public domain).
+- [ ] `CAT-038` Narada Bhakti Sutras — 84 sutras. Source: Swami Prabhavananda translation.
+
+Puranas (18 Mahapuranas — priority order by devotional significance):
+- [ ] `CAT-040` Shiva Purana — 7 samhitas, ~24,000 shlokas. Source: AITM / Motilal Banarsidass excerpts.
+- [ ] `CAT-041` Devi Bhagavata Purana — 12 skandhas, ~18,000 shlokas.
+- [ ] `CAT-042` Narada Purana — 2 parts, ~22,000 shlokas.
+- [ ] `CAT-043` Padma Purana — 6 khandas, ~55,000 shlokas (largest).
+- [ ] `CAT-044` Brahma Purana — 245 chapters, ~14,000 shlokas.
+- [ ] `CAT-045` Markandeya Purana — 137 chapters. Contains Devi Mahatmya (Durga Saptashati).
+- [ ] `CAT-046` Agni Purana — 383 chapters, ~15,000 shlokas. Encyclopedic.
+- [ ] `CAT-047` Linga Purana — 163 chapters, ~11,000 shlokas.
+- [ ] `CAT-048` Matsya Purana — 290 chapters, ~14,000 shlokas.
+- [ ] `CAT-049` Kurma Purana — 2 khandas, ~18,000 shlokas.
+- [ ] `CAT-050` Varaha Purana — 217 chapters, ~10,000 shlokas.
+- [ ] `CAT-051` Brahmanda Purana — 3 khandas, ~12,000 shlokas.
+- [ ] `CAT-052` Brahma Vaivarta Purana — 4 khandas, ~18,000 shlokas.
+- [ ] `CAT-053` Vayu Purana — 2 khandas, ~12,000 shlokas.
+- [ ] `CAT-054` Skanda Purana — 7 khandas, ~81,100 shlokas (largest Purana overall).
+
+Dharmashastra:
+- [ ] `CAT-060` Arthashastra (Kautilya) — 15 books, 6,000 shlokas/sutras. Source: R. Shamasastry translation (public domain).
+- [ ] `CAT-061` Yajnavalkya Smriti — 3 adhyayas. Source: SBE series (public domain).
+- [ ] `CAT-062` Narada Smriti — dharmashastra. Source: Julius Jolly translation SBE (public domain).
+
+Devotional / Regional:
+- [ ] `CAT-070` Devi Mahatmya (Durga Saptashati) — 700 shlokas in 13 chapters. Source: Swami Jagadiswarananda translation.
+- [ ] `CAT-071` Dnyaneshwari (full standalone) — 18 adhyayas of Marathi Gita commentary. Currently used as layers in Gita; expose as standalone text.
+- [ ] `CAT-072` Tukaram Gatha — 4,607 abhangas in Marathi. Source: available Marathi-EN translations.
+- [ ] `CAT-073` Valmiki Ramcharitmanas — 7 khandas, Awadhi Hindi. Source: Gita Press edition.
+
+---
+
+*Last Updated: 2026-04-20 by Claude. Session 3: Added PRIORITY 0 active book focus (Isha cycle). Fixed BUG-042 duplicate. Added PRIORITY 5 Scripture Master Catalog (73 texts, 4 tiers). Updated CLAUDE.md: one-book protocol, corrected content filter rule (20 chars), pipeline gate rules, session opening checklist.*
