@@ -8,17 +8,14 @@ import { useState, useEffect } from 'react'
 export default function Home() {
   const t = useTranslations('home')
   const locale = useLocale()
-  const [mounted, setMounted] = useState(false)
   const [defaultTextSlug, setDefaultTextSlug] = useState('bhagavad-gita')
   const stats = getLibraryStats()
   const hierarchy = getVedicHierarchy()
 
-  useEffect(() => { 
-    setMounted(true)
+  useEffect(() => {
     const saved = localStorage.getItem('vishwa_last_text')
     if (saved) setDefaultTextSlug(saved)
   }, [])
-  if (!mounted) return <div className="min-h-screen bg-[#FDFBF7] dark:bg-[#1C1917]" />
   
   const statsList = [
     { n: stats.totalBooks, label: 'Sacred Texts', icon: '📜' },
@@ -56,6 +53,7 @@ export default function Home() {
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           <Link
             href={`/${defaultTextSlug}/1`}
+            suppressHydrationWarning
             className="inline-flex items-center gap-3 px-8 py-4 bg-stone-900 hover:bg-orange-600 dark:bg-stone-100 dark:text-stone-900 dark:hover:bg-orange-400 text-white font-black rounded-2xl transition-all shadow-xl shadow-stone-200/50 dark:shadow-none text-[11px] uppercase tracking-widest group"
           >
             <span>📜</span> Begin Reading

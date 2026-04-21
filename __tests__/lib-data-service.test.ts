@@ -9,12 +9,24 @@ jest.mock('@/lib/server-lake', () => ({
   getVersesFromLakeServer: jest.fn().mockResolvedValue([])
 }))
 
+// Default manifest supplies bhagavad-gita as GOLD so the GOLD-GATE passes
+// in tests that don't call injectVerseViaFs. existsSync returns false so
+// loadFromJson falls through to an empty verses array — result is non-null
+// but has no verses.
+const GOLD_MANIFEST = JSON.stringify({
+  books: [{ book_id: 'bhagavad-gita', status: 'GOLD', chapters: [] }]
+})
+
 jest.mock('fs', () => {
   const actual = jest.requireActual('fs')
+  // Inline JSON so the factory doesn't reference an outer const (jest.mock is hoisted)
+  const defaultManifest = JSON.stringify({
+    books: [{ book_id: 'bhagavad-gita', status: 'GOLD', chapters: [] }]
+  })
   return {
     ...actual,
     existsSync: jest.fn().mockReturnValue(false),
-    readFileSync: jest.fn().mockReturnValue('[]'),
+    readFileSync: jest.fn().mockReturnValue(defaultManifest),
   }
 })
 
@@ -27,6 +39,9 @@ const clearCache = () => {
 describe('VedicDataService', () => {
   beforeEach(() => {
     clearCache()
+    // Reset to the default GOLD_MANIFEST after each injectVerseViaFs call
+    ;(fs.readFileSync as jest.Mock).mockReturnValue(GOLD_MANIFEST)
+    ;(fs.existsSync as jest.Mock).mockReturnValue(false)
   })
 
   describe('getInstance()', () => {
@@ -100,10 +115,14 @@ describe('VedicDataService', () => {
       ...overrides
     })
 
+    // Injects a verse via mocked FS.
+    // getChapterData makes exactly 2 readFileSync calls (isBookGoldTier + loadFromJson manifest)
+    // and 1 existsSync + 1 readFileSync (actual data file) when the file is found.
     function injectVerseViaFs(verse: ReturnType<typeof makeVerse>) {
-      ;(fs.readFileSync as jest.Mock).mockReturnValueOnce(JSON.stringify({ books: [] }))
-      ;(fs.existsSync as jest.Mock).mockReturnValueOnce(true)
-      ;(fs.readFileSync as jest.Mock).mockReturnValueOnce(JSON.stringify([verse]))
+      ;(fs.readFileSync as jest.Mock).mockReturnValueOnce(GOLD_MANIFEST)     // isBookGoldTier: manifest
+      ;(fs.readFileSync as jest.Mock).mockReturnValueOnce(GOLD_MANIFEST)     // loadFromJson: manifest
+      ;(fs.existsSync as jest.Mock).mockReturnValueOnce(true)                // file exists
+      ;(fs.readFileSync as jest.Mock).mockReturnValueOnce(JSON.stringify([verse]))  // verse data
     }
 
     it('enriched verse has uiMetadata with hasCommentary = true', async () => {
