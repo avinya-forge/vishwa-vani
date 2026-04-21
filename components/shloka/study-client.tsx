@@ -866,12 +866,7 @@ export default function StudyClient({
                 {/* English translation — always shown as default base layer */}
                 {(() => {
                   const baseTranslation = String(v.translation || v.meaning || '').trim()
-                  if (!baseTranslation) return (
-                    <div className="px-4 sm:px-6 py-4 sm:py-5 border-b border-stone-50 dark:border-stone-800/30">
-                      <p className="text-[10px] font-black uppercase tracking-widest text-stone-400 dark:text-stone-500 mb-2">Translation</p>
-                      <p className="text-stone-400 italic text-xs">Translation data is currently being audited for this verse.</p>
-                    </div>
-                  )
+                  if (!baseTranslation) return null
                   return (
                     <div className="px-4 sm:px-6 py-4 sm:py-8 border-b border-stone-50 dark:border-stone-800/30 bg-white dark:bg-stone-900/10">
                       <p className="text-[10px] font-black uppercase tracking-widest text-orange-500 dark:text-orange-600 mb-3 ml-0.5">Universal Translation</p>
