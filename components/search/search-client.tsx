@@ -137,7 +137,7 @@ export default function SearchClient() {
                 className={`px-6 py-3 rounded-2xl text-[11px] font-black uppercase tracking-[0.2em] transition-all whitespace-nowrap border ${
                   activeTab === tab
                   ? 'bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900 border-stone-900 dark:border-stone-100 shadow-xl'
-                  : 'bg-white dark:bg-stone-800 text-stone-400 dark:text-stone-500 border-stone-100 dark:border-stone-700 hover:border-orange-200 dark:hover:border-orange-800 hover:text-stone-700 dark:hover:text-stone-300'
+                  : 'bg-white dark:bg-stone-800 text-stone-600 dark:text-stone-400 border-stone-300 dark:border-stone-700 hover:border-orange-400 dark:hover:border-orange-800 hover:text-stone-900 dark:hover:text-stone-300'
                 }`}
               >
                 {tab === 'all' ? 'All Scriptures' : String(tab).charAt(0).toUpperCase() + String(tab).slice(1)}
