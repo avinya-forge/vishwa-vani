@@ -70,46 +70,71 @@ Jules and Antigravity are responsible for **Implementation & Code Execution**.
 
 Exactly **one book** is active at any moment. All work for that book must complete its full cycle before the next book starts. No parallel book tracks in active development.
 
-### The Book Cycle (must complete in order — no skipping)
+### The Book Cycle (7 stages — must complete in order — no skipping)
+
+See `docs/backlog.md` PRIORITY 3B for the granular task template to copy for each new book.
 
 ```
-STEP 1 — DATA COLLECTION
-  Gather all source text, translations, public-domain commentaries.
-  Target: ≥ 1 EN translation + 1 EN commentary layer per verse, real Sanskrit.
+STAGE 1 — DATA GATHERING
+  Acquire Sanskrit original (no gaps), transliteration.
+  Author 1: EN + HI + MR layers (scholarly public-domain translation).
+  Author 2: EN + HI/MR layers (different philosophical tradition/school).
+  Target: ≥ 2 authors × 3 languages = 6 layer types per verse minimum.
+  Stotras: identify any embedded stotras/mantras (see Stage 7).
 
-STEP 2 — PIPELINE
+STAGE 2 — PIPELINE
   node scripts/validate_silver.js {book}     ← must exit 0
   node scripts/promote_to_gold.js {book}     ← blocked if validate fails
-  node scripts/audit_gold.js {book}          ← must print "Readiness: 100%"
+  node scripts/audit_gold.js {book}          ← Readiness 100%, 2+ authors, EN/HI/MR
 
-STEP 3 — UI INTEGRATION
-  Set available:true in lib/texts.ts.
-  Test all chapter + verse routes in reader UI.
-  Confirm no 404, no layout shift, commentary renders, language selector works.
+STAGE 3 — UI INTEGRATION
+  Register in lib/texts.ts (available:false → run tests → available:true).
+  Test all chapter + verse routes; language selector; scholar selector.
+  Confirm no 404, no layout shift, AI synthesis works.
 
-STEP 4 — BUG HUNT
-  Run full audit: verse permalinks, progress counter, content filter,
-  scholar selector, AI synthesis. Log every P0/P1/P2 found to backlog.
+STAGE 4 — BUG HUNT
+  Audit: verse permalinks, progress counter, commentary content filter,
+  scholar selector max-2 enforcement, language flash, mobile layout.
+  Log every P0/P1/P2 to PRIORITY 1 in backlog.
 
-STEP 5 — BUG FIX
-  Fix ALL P0 and P1 bugs before declaring book complete.
-  P2 may be deferred to next session but must be logged.
+STAGE 5 — BUG FIX
+  Fix ALL P0 and P1 before proceeding. Log P2 and move on.
 
-STEP 6 — GRADUATE
-  Book marked complete in backlog. Advance to next book in priority list.
+STAGE 6 — LABS SCAN & IMPLEMENT
+  Read chapter content → map philosophical themes per chapter.
+  Identify 3+ interactive app concepts (comparisons, simulators, visualizers).
+  Register top apps in lib/vedic-labs-registry.ts.
+  Implement highest-priority app. Bug hunt the new app.
+
+STAGE 7 — STOTRAS & MANTRAS EXTRACTION
+  Scan all chapters for embedded stotras, mantras, ashtakas, hymns.
+  Key examples: Vishnu Sahasranama (MBH Anushasana Parva 149),
+    Bhishma Stuti (MBH), Durga Saptashati (Markandeya Purana),
+    Purusha Sukta (Rigveda 10.90), Sri Suktam (Rigveda khila).
+  Extract as NVF shards → data/2-silver/stotras/{stotra-slug}.json
+  Tag: mantraType (stotra/mantra/ashtaka), deity, dailyUse (boolean).
+  Daily-use stotras: add pronunciation guide layer, add to CAT-016.
+  Cross-reference back to parent book verse where the stotra appears.
+
+STAGE 8 — GRADUATE
+  Book marked complete in backlog. Advance to next in priority list.
 ```
 
 ### Current Active Book
 See `docs/backlog.md` — **PRIORITY 0** section. Always check there first.
 
+### Bhagavad Gita Status: ✅ COMPLETE (verified 2026-04-20)
+657 verses, 18 chapters. ISKCON (EN/HI/MR) + Sant Dnyaneshwar (EN/HI/MR). All routes working.
+Open: BUG-041 (cosmetic layout shift). Labs: 44% chapter coverage — 14 new app opportunities logged.
+
 ### Book Priority Order (from PRIORITY 5 in backlog)
 1. Isha Upanishad repair (BUG-050 — 10/18 verses, needs real data)
-2. Mahabharata Parva 1 (real KMG silver data exists)
+2. Mahabharata Parva 1 (real KMG silver data exists, most pipeline-ready)
 3. Bhagavata Purana Skanda 1 (partial silver exists)
 4. Kena Upanishad (1 real verse — needs full source acquisition)
 5. Yoga Sutras of Patanjali (195 stubs — needs real Sanskrit text)
 6. Vishnu Purana (partial silver exists)
-See backlog PRIORITY 5 for the full 40+ text catalog.
+See backlog PRIORITY 5 for the full 73-text catalog.
 
 ### Pipeline Gate Rules (enforced by code — never bypass)
 

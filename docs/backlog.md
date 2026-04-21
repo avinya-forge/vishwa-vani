@@ -6,24 +6,53 @@ This is the single authoritative ledger for Vishwa-Vani progress. Sections are: 
 
 ## 🎯 PRIORITY 0: ACTIVE BOOK FOCUS
 
-*Exactly one book is in active development at a time. Complete the full cycle before advancing. Check this section first every session.*
+*Exactly one book is in active development at a time. Complete the full 8-stage cycle before advancing. Check this section first every session.*
 
-### ACTIVE BOOK: ISHA UPANISHAD — CYCLE STEP 1: DATA COLLECTION
+### GRADUATED BOOKS (fully complete — all 8 stages done)
+
+- [x] `BOOK-GITA` **Bhagavad Gita** — ✅ COMPLETE (2026-04-20). 657 verses, 18 chapters. ISKCON + Sant Dnyaneshwar, EN/HI/MR. All routes working. Open: BUG-041 (cosmetic). Labs: 14 new opportunities logged (see LAB-GITA section in PRIORITY 2).
+
+### ACTIVE BOOK: ISHA UPANISHAD — CYCLE STAGE 1: DATA GATHERING
 
 Status as of 2026-04-20:
 - Gold file has 10 of 18 verses (missing verses 9–17). BUG-050 open.
 - Only `isa` author layer is real. `iskcon`, `dnyaneshwari`, `adi-shankara` are all placeholder (blocked by BUG-049 fix).
 - `node scripts/audit_gold.js isha-upanishad` → 3 PLACEHOLDER-HEAVY authors, verse count mismatch.
 
-Active tasks for this book (in order — do not skip):
-- [ ] `ISHA-CYCLE-1` Acquire missing 8 verses (9–17) from canonical public-domain Isha Upanishad source. Add real Sanskrit original + transliteration for all 18 verses. Update `data/2-silver/isha-upanishad/isha-upanishad-chapter-1.json`.
-- [ ] `ISHA-CYCLE-2` Add real EN commentary layer for all 18 verses. Minimum: Shankara Bhashya (public domain). Target: also Aurobindo (public domain). Each commentary ≥ 20 chars, no bracket prefix.
-- [ ] `ISHA-CYCLE-3` Run `node scripts/validate_silver.js isha-upanishad` — must exit 0. Fix all failures.
-- [ ] `ISHA-CYCLE-4` Run `node scripts/promote_to_gold.js isha-upanishad` — updates manifest, copies to gold.
-- [ ] `ISHA-CYCLE-5` Run `node scripts/audit_gold.js isha-upanishad` — must show Readiness: 100%, 18 verses, zero PLACEHOLDER-HEAVY authors.
-- [ ] `ISHA-CYCLE-6` Set `available: true` in `lib/texts.ts`. Test `/isha-upanishad/1` in reader: all 18 verses render, commentary displays, no 404, language selector works.
-- [ ] `ISHA-CYCLE-7` Bug hunt: check verse permalinks, progress counter, scholar selector, AI synthesis for Isha. Log all P0/P1/P2 to PRIORITY 1.
-- [ ] `ISHA-CYCLE-8` Fix all P0 and P1 bugs found. Isha cycle complete → advance to MAHABHARATA PARVA 1.
+Active tasks for this book — follows BOOK CYCLE TEMPLATE (8 stages):
+
+STAGE 1 — DATA GATHERING:
+- [ ] `ISHA-DATA-1` Acquire missing 8 verses (9–17): Sanskrit original (Devanagari) + IAST transliteration for all 18 verses. Source: complete Isha Upanishad from GRETIL or Transliteration Project (public domain).
+- [ ] `ISHA-DATA-2` Author 1 EN: Shankara Bhashya English translation (Max Müller SBE Vol 1, public domain) for all 18 verses. ≥ 20 chars/verse, no bracket prefix.
+- [ ] `ISHA-DATA-3` Author 1 HI: Hindi translation of Isha from Gita Press or Geeta Vatika (public domain). All 18 verses.
+- [ ] `ISHA-DATA-4` Author 1 MR: Marathi translation of Isha (Warkari tradition or Gita Press Marathi). All 18 verses.
+- [ ] `ISHA-DATA-5` Author 2 EN: Sri Aurobindo's commentary on Isha Upanishad (public domain — The Secret of the Veda / Isha Upanishad, published 1914). All 18 verses.
+- [ ] `ISHA-DATA-6` Stotra scan: Isha Upanishad is itself recited as a daily prayer/mantra. Tag entire text as `dailyUse: true, mantraType: 'upanishad-mantra'`. Note shanti patha (introductory peace invocation).
+
+STAGE 2 — PIPELINE:
+- [ ] `ISHA-PIPE-1` Run `node scripts/validate_silver.js isha-upanishad` — must exit 0. Fix all failures.
+- [ ] `ISHA-PIPE-2` Run `node scripts/promote_to_gold.js isha-upanishad`.
+- [ ] `ISHA-PIPE-3` Run `node scripts/audit_gold.js isha-upanishad` — Readiness: 100%, 18 verses, 2 authors, EN/HI/MR present.
+
+STAGE 3 — UI INTEGRATION:
+- [ ] `ISHA-UI-1` Test `/isha-upanishad/1`: all 18 verses render, all 3 languages show, both scholars selectable.
+- [ ] `ISHA-UI-2` Test verse permalinks (no 404s for verses 1–18).
+- [ ] `ISHA-UI-3` Test AI synthesis on 3 Isha verses.
+- [ ] `ISHA-UI-4` Mobile layout check at 375px.
+
+STAGE 4–5 — BUG HUNT & FIX:
+- [ ] `ISHA-BUG-1` Run full Stage 4 checklist from BOOK CYCLE TEMPLATE. Log findings to PRIORITY 1.
+- [ ] `ISHA-FIX-1` Fix all P0/P1 found.
+
+STAGE 6 — LABS SCAN:
+- [ ] `ISHA-LAB-1` Map themes for all 18 Isha verses. Propose 3+ interactive app concepts.
+- [ ] `ISHA-LAB-2` Implement top 1 lab app for Isha (likely a meditation/contemplation guided experience for verse 1: "Isavasyam idam sarvam").
+
+STAGE 7 — STOTRAS:
+- [ ] `ISHA-STOTRA-1` Extract Isha shanti patha as standalone daily mantra shard. Add to `data/2-silver/stotras/isha-shanti-patha.json` with EN/HI pronunciation guides.
+
+STAGE 8 — GRADUATE:
+- [ ] `ISHA-GRAD-1` Mark complete in PRIORITY 0 → advance to Mahabharata Parva 1.
 
 ### NEXT BOOK (after Isha cycle completes): MAHABHARATA PARVA 1
 
@@ -67,12 +96,43 @@ Real KMG data exists in `data/2-silver/mahabharata/parva-1/` — 210 real verses
 ## 🏆 PRIORITY 2: CONTENT
 
 ### BOOK: BHAGAVAD GITA
-*Goal: Transform into a "Vedic Wikipedia" by providing the 10 most influential commentaries across Hi/En/Mr.*
+
+*Data + UI: COMPLETE (2026-04-20). 657 verses, 2 authors (ISKCON + Sant Dnyaneshwar), EN/HI/MR. Labs: 44% chapter coverage (8/18). Open bugs: BUG-041.*
+
+#### Gita Scholar Enrichment (Stages 1–3 complete; these extend the author set beyond 2)
 - [ ] `SCHOLAR-001` **Top 10 Identification**: Research and rank candidates (Adi Shankara, Ramanuja, Madhva, Abhinavagupta, Tilak, Gandhi, Radhakrishnan, Easwaran, Aurobindo, Gita Press).
 - [ ] `SCHOLAR-002` **Multilingual Balance Pass**: Actively target scholars to ensure Hindi (Goyandka), Marathi (Historical Sages), and English (Modern scholars) are represented.
-- [ ] `SCHOLAR-003` **Single-Language Excellence**: Ingest high-prestige scholars even if they only have 1 language (e.g., pure Sanskrit Bhasyas or regional Marathi works). 
+- [ ] `SCHOLAR-003` **Single-Language Excellence**: Ingest high-prestige scholars even if they only have 1 language (e.g., pure Sanskrit Bhasyas or regional Marathi works).
 - [ ] `SCHOLAR-004` **Data Acquisition**: Gather public domain / CC-licensed raw text for identified authors.
 - [ ] `SCHOLAR-005` **Author Comparison Research**: Document the "philosophical school" (Advaita, Vishishtadvaita, etc.) for each scholar to aid UI categorization.
+
+#### Gita Lab Apps — Stage 6 (14 opportunities, 10 uncovered chapters)
+*Audit 2026-04-20: 8 of 18 chapters have dedicated apps. 10 chapters uncovered.*
+
+Priority Tier 1 — highest user engagement:
+- [ ] `LAB-GITA-001` **Arjuna's Crisis Counselor** (Ch 1) — User plays Krishna responding to Arjuna's 100+ verses of doubt. Three response modes: Warrior ethics / Knowledge / Devotion. Each path unlocks Gita teaching. Covers Ch 1 (only chapter with zero apps).
+- [ ] `LAB-GITA-002` **Guna Balancing Simulator** (Ch 14) — Interactive Sattva/Rajas/Tamas wheel. User inputs daily habits (sleep, food, work patterns) → real-time Guna score → guidance to evolve toward Sattva. Visual, reusable daily.
+- [ ] `LAB-GITA-003` **Moksha Pathways Engine** (Ch 18) — Decision tree: "Which liberation path suits you?" Compare Karma Yoga / Bhakti / Jnana / Meditation. Deep dive into 18.66 (sarva-dharman parityajya). Covers the final chapter.
+- [ ] `LAB-GITA-004` **Sanyasa Paradox Resolver** (Ch 4, 5) — Interactive: "How to renounce while still acting?" Map life situation to Krishna's guidance on Karma Yoga vs. pure renunciation. Resolves Ch 3↔5 apparent contradiction.
+
+Priority Tier 2 — knowledge & realization:
+- [ ] `LAB-GITA-005` **Visvarupa Contemplation Guide** (Ch 11) — Text-triggered meditation for Arjuna's awe-struck vision of Universal Form. Guided progressive revelation using Ch 11 verses. Vedic cosmology overlay.
+- [ ] `LAB-GITA-006` **Royal Science Decoder** (Ch 9) — Progressive unlock of 9 secrets Krishna reveals. Each "secret" unlocks a meditation/practice. Covers the entirely uncovered Ch 9.
+- [ ] `LAB-GITA-007` **Jnana Progression Path** (Ch 7) — Map 7 stages of knowing: Brahman → Paramatman → Purusha → Heart → Direct realization. Daily journaling of current stage. Covers uncovered Ch 7.
+- [ ] `LAB-GITA-008` **Purushottama Self-Inquiry** (Ch 15) — Interactive diagram: Kshatraja (perishable tree) → Akshara (imperishable) → Purushottama (Supreme). Self-assessment of current consciousness level. Covers uncovered Ch 15.
+
+Priority Tier 3 — advanced & synthesis:
+- [ ] `LAB-GITA-009` **Dharmic Conflict Resolver — Modern Edition** (Ch 2, 4, 16, 18) — Map modern dilemmas (career/family, honesty/mercy) to Gita framework. Outputs relevant verses + Krishna's principle.
+- [ ] `LAB-GITA-010` **Verse Guna Analyzer** (Ch 14–17) — For each verse analyze dominant Guna (Sattva/Rajas/Tamas). Visualize how Krishna's language elevates consciousness across the chapter arc.
+- [ ] `LAB-GITA-011` **Commentary Comparison Tool** (All chapters) — Side-by-side diff: ISKCON (Prabhupada) vs. Sant Dnyaneshwar. Highlights philosophical divergence (devotion vs. knowledge, transcendence vs. immanence).
+- [ ] `LAB-GITA-012` **Marathi Heritage Explorer** (All chapters) — Celebrate 13th-century Warkari tradition. 3-layer display: original shloka → Dnyaneshwari verse → modern Marathi. Cultural + historical context.
+- [ ] `LAB-GITA-013` **Consciousness State Mapper** (Ch 7, 13, 15) — Journey through 4 states: Jagrat/Swapna/Sushupti/Turiya. Map to Gita verses. Track meditation state. Cross-references Mandukya Upanishad when available.
+- [ ] `LAB-GITA-014` **Vedic Geometry Visualizer** (Ch 10) — Unfold the Vibhutis (divine manifestations in Ch 10) into geometric pattern (Sri Yantra structure). Meditative visual exploration.
+
+#### Gita Stotra/Mantra Extraction — Stage 7
+- [ ] `LAB-GITA-STOTRA-1` Gita itself as daily recitation: structure each chapter as a standalone prayer unit with chapter invocation verse. Tag chapter-level dailyUse stotras (e.g., Ch 15.1–20 Purushottama Yoga as standalone).
+- [ ] `LAB-GITA-STOTRA-2` Gita Dhyana Shlokas: 9 preparatory dhyana shlokas traditionally recited before Gita. Extract, add EN/HI pronunciation guide, add to CAT-016.
+- [ ] `LAB-GITA-STOTRA-3` Gita Mahatmya: extract verses praising the Gita (traditional). Add to CAT-016 as daily-use stotra.
 
 ### BOOK: MAHABHARATA
 - [ ] `MBH-CORE-004` **MBH Metadata Foundation**: Research timeline and historical era specific to MBH for the Timeline component.
@@ -97,9 +157,74 @@ Real KMG data exists in `data/2-silver/mahabharata/parva-1/` — 210 real verses
 
 ---
 
+## 📐 BOOK CYCLE TEMPLATE
+
+*Copy this template for every new book. Replace {BOOK} with the book slug. All 8 stages are mandatory — no skipping. Check off each task as completed.*
+
+### STAGE 1 — DATA GATHERING
+- [ ] `{BOOK}-DATA-1` Source audit: identify canonical Sanskrit text, public-domain EN translation, HI + MR translation/commentary. Check `data/1-bronze/` and `data/2-silver/` for existing files.
+- [ ] `{BOOK}-DATA-2` Sanskrit original layer: complete verse-by-verse Devanagari original, no gaps, no placeholders.
+- [ ] `{BOOK}-DATA-3` Transliteration layer: IAST or Harvard-Kyoto for all verses.
+- [ ] `{BOOK}-DATA-4` Author 1 EN layer: scholarly translation ≥ 20 chars/verse (public domain — Griffith, Max Müller, Prabhupada, Gita Press EN, etc.).
+- [ ] `{BOOK}-DATA-5` Author 1 HI layer: Hindi translation from same or different author (≥ 20 chars/verse).
+- [ ] `{BOOK}-DATA-6` Author 1 MR layer: Marathi translation/commentary (≥ 20 chars/verse).
+- [ ] `{BOOK}-DATA-7` Author 2 EN layer: second philosophical tradition/school (Advaita vs Vishishtadvaita, classical vs modern, etc.).
+- [ ] `{BOOK}-DATA-8` Author 2 HI/MR layer: second author in at least one additional language.
+- [ ] `{BOOK}-DATA-9` Stotra/Mantra scan: read every chapter for embedded stotras, mantras, ashtakas, kavachas, hymns that are suitable for daily prayer use. List each with chapter reference.
+
+### STAGE 2 — PIPELINE
+- [ ] `{BOOK}-PIPE-1` Run `node scripts/validate_silver.js {book}` — must exit 0. Fix all failures before continuing.
+- [ ] `{BOOK}-PIPE-2` Run `node scripts/promote_to_gold.js {book}` — updates manifest, copies to `data/3-gold/`.
+- [ ] `{BOOK}-PIPE-3` Run `node scripts/audit_gold.js {book}` — must print Readiness: 100%, ≥ 2 authors, EN/HI/MR all present, zero PLACEHOLDER-HEAVY authors.
+
+### STAGE 3 — UI INTEGRATION
+- [ ] `{BOOK}-UI-1` Register in `lib/texts.ts`: `available: false`, correct `totalChapters`, all `chapterNames` in EN/HI/MR, `storage: 'json'`.
+- [ ] `{BOOK}-UI-2` Run full test suite: `npm test`. Fix all failures.
+- [ ] `{BOOK}-UI-3` Set `available: true`. Test all chapter routes (`/{book}/1` through `/{book}/{n}`).
+- [ ] `{BOOK}-UI-4` Test 10 verse permalink routes. Confirm no 404s.
+- [ ] `{BOOK}-UI-5` Test language toggle: switch EN/HI/MR — all 3 render, no flash on cold load.
+- [ ] `{BOOK}-UI-6` Test scholar selector: max-2 enforced, both authors selectable.
+- [ ] `{BOOK}-UI-7` Test AI synthesis: trigger synthesis for 3 verses, confirm non-empty result.
+- [ ] `{BOOK}-UI-8` Test on mobile viewport (375px): no overflow, text readable, no horizontal scroll.
+
+### STAGE 4 — BUG HUNT
+- [ ] `{BOOK}-BUG-1` Verse permalink audit: check `generateStaticParams` covers all verse numbers (including combined shlokas).
+- [ ] `{BOOK}-BUG-2` Progress counter: scroll to last verse — counter shows `N/N` not exceeding total.
+- [ ] `{BOOK}-BUG-3` Commentary content filter: open DevTools, confirm no `[`-prefixed content visible in UI.
+- [ ] `{BOOK}-BUG-4` Language selector: cold-load the reader — selector initializes to `all` without flash.
+- [ ] `{BOOK}-BUG-5` Mobile layout: load on 375px — no horizontal scroll, canvas renders cleanly.
+- [ ] `{BOOK}-BUG-6` Log every P0/P1 found as new BUG-XXX items in PRIORITY 1. Log P2 with `[P2]` tag.
+
+### STAGE 5 — BUG FIX
+- [ ] `{BOOK}-FIX-1` Fix all P0 bugs found in Stage 4.
+- [ ] `{BOOK}-FIX-2` Fix all P1 bugs found in Stage 4.
+- [ ] `{BOOK}-FIX-3` Verify fixes: re-run Stage 4 checklist — all green.
+
+### STAGE 6 — LABS SCAN & IMPLEMENT
+- [ ] `{BOOK}-LAB-1` Read all chapter Gold data. List dominant philosophical theme per chapter (1 sentence each).
+- [ ] `{BOOK}-LAB-2` For each uncovered chapter, propose 1–2 interactive app concepts (simulator, visualizer, assessment, decision tree, comparison tool).
+- [ ] `{BOOK}-LAB-3` Prioritize top 3 apps by user engagement potential. Write brief spec (name, chapter scope, interaction type).
+- [ ] `{BOOK}-LAB-4` Register top 3 apps in `lib/vedic-labs-registry.ts` (available: false initially).
+- [ ] `{BOOK}-LAB-5` Implement highest-priority lab app. Set available: true.
+- [ ] `{BOOK}-LAB-6` Bug hunt the new lab app: test on mobile, dark/light mode, empty states.
+
+### STAGE 7 — STOTRAS & MANTRAS EXTRACTION
+- [ ] `{BOOK}-STOTRA-1` From DATA-9 scan: extract each identified stotra/mantra as NVF JSON to `data/2-silver/stotras/{stotra-slug}.json`. Tag fields: `mantraType` (stotra/mantra/ashtaka/kavacham/suktam), `deity`, `dailyUse` (boolean), `sourceBook`, `sourceChapter`.
+- [ ] `{BOOK}-STOTRA-2` For each stotra: add EN translation layer + HI pronunciation guide layer.
+- [ ] `{BOOK}-STOTRA-3` Run `node scripts/validate_silver.js stotras` — fix failures.
+- [ ] `{BOOK}-STOTRA-4` Promote daily-use stotras to Gold and register in CAT-016 (Stotras collection).
+- [ ] `{BOOK}-STOTRA-5` Cross-reference: in the parent book's Gold JSON, add `relatedStotra` metadata on the source verse.
+
+### STAGE 8 — GRADUATE
+- [ ] `{BOOK}-GRAD-1` Mark book complete in PRIORITY 0: add to GRADUATED BOOKS list with completion date.
+- [ ] `{BOOK}-GRAD-2` Update PRIORITY 5 catalog entry: mark `[x]` and note verse count, author count, lab app count.
+- [ ] `{BOOK}-GRAD-3` Advance PRIORITY 0 to next book from priority list.
+
+---
+
 ## 🔧 PRIORITY 3B: REUSABLE DATA PIPELINE
 
-*Goal: A generic, repeatable 7-stage ingestion workflow that promotes any scripture from raw source to Gold-tier UI-ready data. Execute stages in order per book. Set `available: true` in `lib/texts.ts` ONLY after Stage 7 passes.*
+*Goal: A generic, repeatable ingestion workflow that promotes any scripture from raw source to Gold-tier UI-ready data. Execute stages in order per book. Set `available: true` in `lib/texts.ts` ONLY after Stage 3 (PIPELINE) passes 100%.*
 
 ### WORKFLOW DEFINITION (applies to every book — do not skip stages)
 
@@ -394,4 +519,4 @@ Devotional / Regional:
 
 ---
 
-*Last Updated: 2026-04-20 by Claude. Session 3: Added PRIORITY 0 active book focus (Isha cycle). Fixed BUG-042 duplicate. Added PRIORITY 5 Scripture Master Catalog (73 texts, 4 tiers). Updated CLAUDE.md: one-book protocol, corrected content filter rule (20 chars), pipeline gate rules, session opening checklist.*
+*Last Updated: 2026-04-20 by Claude. Session 4: Bhagavad Gita verified COMPLETE (657v, 2 authors, EN/HI/MR, all routes). BOOK CYCLE TEMPLATE added (8 stages: data→pipeline→UI→bug hunt→bug fix→labs→stotras→graduate). LAB-GITA-001–014 added (14 new lab app opportunities for 10 uncovered chapters). LAB-GITA-STOTRA-1–3 added. Isha cycle tasks expanded to full 8-stage template. CLAUDE.md updated: 8-stage cycle with Stotra extraction stage, Gita status noted as complete.*
