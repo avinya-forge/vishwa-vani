@@ -40,7 +40,7 @@ jest.mock('@/components/ui/hierarchical-nav', () =>
 
 // ─── Fixtures ─────────────────────────────────────────────────────────────────
 
-const longCommentary = 'A'.repeat(120); // Must be > 80 chars to pass isValidCommentaryContent
+const longCommentary = 'A'.repeat(120); // Must be ≥ 20 chars and not start with '[' to pass isValidCommentaryContent
 
 const makeVerses = (extra: object[] = []) => [
   {

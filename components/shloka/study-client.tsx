@@ -83,7 +83,8 @@ export default function StudyClient({
           if (id && id.startsWith('verse-')) {
             const verseNum = parseInt(id.replace('verse-', ''), 10);
             if (!isNaN(verseNum)) {
-              setActiveVerse(verseNum);
+              const verseIndex = verses.findIndex(v => Number((v as Record<string, unknown>).verse) === verseNum);
+              setActiveVerse(verseIndex >= 0 ? verseIndex + 1 : 1);
               const readingPosition = {
                 text: textSlug,
                 chapter: chapter,
@@ -222,6 +223,8 @@ export default function StudyClient({
     if (!content || typeof content !== 'string') return false
     const trimmed = content.trim()
     if (trimmed.length < 20) return false // Lowered threshold to catch short but valid verses
+    // Reject any unresolved template marker (e.g. [PLACEHOLDER_X], [ADVAITA_PERSPECTIVE:...], [SUTRA_TEXT])
+    if (trimmed.startsWith('[')) return false
     const placeholderPatterns = ['[PLACEHOLDER_', 'TBD_CONTENT', 'TODO_LAYER', 'LOREM IPSUM']
     if (placeholderPatterns.some(p => trimmed.toUpperCase().includes(p.toUpperCase()))) {
       return false
@@ -233,7 +236,7 @@ export default function StudyClient({
   const defaultLanguage = 'all'
 
   const [scholarSelection, setScholarSelection] = useState<string[]>([])
-  const [languageSelection, setLanguageSelection] = useState<string>('en') // Default to 'en' per user request
+  const [languageSelection, setLanguageSelection] = useState<string>('all')
   const [activeAdhyaya, setActiveAdhyaya] = useState<number>(currentAdhyaya || 1)
   const [bookmarks, setBookmarks] = useState<string[]>([])
   const [visitedChapters, setVisitedChapters] = useState<Set<number>>(new Set())
@@ -424,9 +427,12 @@ export default function StudyClient({
          const layers = v.layers as unknown[]
          const meaningLayer = layers?.find((l: unknown) => {
            const layer = l as Record<string, unknown>
-           return layer.type === 'translation' && layer.lang === 'en'
+           return (layer.type === 'translation' || layer.type === 'meaning') && layer.lang === 'en'
          }) as Record<string, unknown> | undefined
-         const meaning = String(meaningLayer?.content || v.meaning || v.translation || '')
+         // Fallback chain: translation-type layer → verse-level meaning → verse-level translation
+         // All three checked so future data format changes don't silently produce empty synthesis context
+         const meaningCandidate = String(meaningLayer?.content ?? v.meaning ?? v.translation ?? '')
+         const meaning = isValidCommentaryContent(meaningCandidate) ? meaningCandidate : ''
 
          // Get commentaries from selected authors (or first candidates if none selected)
          const candidateCommentaries = layers?.filter((l: unknown) => {

@@ -63,6 +63,24 @@ export class VedicDataService {
   }
 
   /**
+   * GOLD-GATE: returns true only when the book is marked GOLD in manifest.json.
+   * Books with storage:'lake' bypass the gate (their quality is controlled by the lake).
+   * This prevents incomplete or Silver-tier JSON data from ever reaching the UI.
+   */
+  private isBookGoldTier(textSlug: string, storage?: string): boolean {
+    if (storage === 'lake') return true; // lake books are always served (gated by available:false in texts.ts)
+    try {
+      const manifestPath = path.join(process.cwd(), 'data', 'manifest.json');
+      const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8')) as Record<string, unknown>;
+      const books = (manifest.books as Record<string, unknown>[]) || [];
+      const entry = books.find(b => b.book_id === textSlug);
+      return entry?.status === 'GOLD';
+    } catch {
+      return false;
+    }
+  }
+
+  /**
    * Load and enrich chapter data with AI context
    */
   async getChapterData(
@@ -81,6 +99,12 @@ export class VedicDataService {
 
     const textMetadata = VEDIC_LIBRARY.find(t => t.slug === textSlug);
     if (!textMetadata) return null;
+
+    // GOLD-GATE: refuse to serve data for any book not promoted to Gold tier
+    if (!this.isBookGoldTier(textSlug, textMetadata.storage)) {
+      console.warn(`[VedicDataService] GOLD-GATE blocked: '${textSlug}' is not GOLD in manifest.json`);
+      return null;
+    }
 
     // Load raw verses
     let verses: unknown[] = [];
