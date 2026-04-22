@@ -9,15 +9,15 @@ Building the **Vedic Wikipedia**: A transcendent, multilingual, and friction-fre
 
 **Assessment: Solution vs. "Vedic Wikipedia" Vision**
 While the current U2S pipeline successfully ingests and renders standard texts like the Gita, a critical gap analysis reveals significant hurdles in fully realizing the "Vedic Wikipedia" vision:
-- **Semantic Deep-Linking Gap:** The current routing is strictly hierarchical (Book → Chapter → Verse). We lack a global ontological linkage map that allows users to traverse themes (e.g., "Dharma") seamlessly across the Gita, Upanishads, and Mahabharata.
-- **Search Scale Bottlenecks:** Simple client-side filtering works for a 700-verse Gita but fails catastrophically for semantic discovery across 100k+ verses. The vision demands edge-cached, vector-based semantic search.
+- **Semantic Deep-Linking Gap:** The current routing is strictly hierarchical (Book → Chapter → Verse). We lack a global ontological linkage map that allows users to traverse themes (e.g., "Dharma") seamlessly across the Gita, Upanishads, and Mahabharata. We must design a Knowledge Graph foundation to establish inter-textual relationships.
+- **Search Scale Bottlenecks:** Simple client-side filtering works for a 700-verse Gita but fails catastrophically for semantic discovery across 100k+ verses. The vision demands edge-cached, vector-based semantic search interacting seamlessly with our SQLite worker architecture.
 - **Scholar Imbalance & Lean UI Drift:** The platform aims for 10+ scholars, yet our Lean UI principle mandates a strict "Max 2" scholar view to prevent cognitive overload. We lack a robust, type-safe data-service layer to dynamically enforce this 2-author limit while still providing the full 10-scholar dataset for search and AI reasoning.
 - **Type-Safety Enforcement Gap:** As the dataset scales to 100k+ verses, implicit `any` usage in data parsing becomes a massive regression vector. Architecture must evolve to support rigorous type-narrowing across the boundary between unstructured external data and the structured React frontend.
 
 **Scalability: Mahabharata Core Blueprint Readiness (100k+ verses)**
 The current static JSON sharding strategy is insufficient for the Mahabharata.
 - **The Threat:** Loading 100k verses via JSON shards will cause main-thread memory exhaustion, massive CDN payloads, and severe UI jank.
-- **The Solution:** The architecture must evolve to a **Server-Lake Layer** using edge-hosted **SQLite WASM** isolated within Web Workers. This enables rapid, off-thread querying and type-safe data hydration without blocking the UI rendering cycle. Furthermore, the WASM data layer must actively chunk data streams and prune payloads to guarantee the 2-author limit before transmitting back to the main thread.
+- **The Solution:** The architecture must evolve to a **Server-Lake Layer** using edge-hosted **SQLite WASM** isolated strictly within **Web Workers**. This establishes a non-blocking boundary. It enables rapid, off-thread querying and enforces type-safe data hydration via strictly typed message-passing bridges without blocking the UI rendering cycle. Furthermore, the WASM data layer must actively chunk data streams and prune payloads to guarantee the 2-author limit before transmitting back to the main thread.
 
 ## 🚀 Core Mission: Unstructured-to-Structured (U2S)
 Our primary objective is to take raw, disparate textual fragments (scanned scrolls, unstructured PDFs, web-shards) and process them through the **Vishwa ADF (Autonomous Data Factory)** until they are "Frozen" as **NVF 1.3** production-grade data accessible through a live, publicly reachable product.
@@ -54,11 +54,11 @@ Our primary objective is to take raw, disparate textual fragments (scanned scrol
 
 ## 🏔 Ideal State & North Star
 
-**Performance**: Sub-100ms LCP on all text-heavy routes via Next.js SSG and Vercel edge CDN.  
+**Performance**: Sub-100ms LCP on all text-heavy routes via Next.js SSG and Vercel edge CDN. Semantic Graph query latency must resolve under 200ms at the edge.
 **Aesthetic**: Minimalist, culturally resonant design focused on absolute readability (Devanagari-safe fonts) and accessibility (WCAG 2.1 AA).  
-**Storage**: JSON shards for Gita-scale texts; SQLite WASM in Web Worker for Mahabharata-scale (100k+ verses).  
+**Storage**: JSON shards for Gita-scale texts; SQLite WASM in Web Worker for Mahabharata-scale (100k+ verses), deeply integrated with edge KV stores for topic linkage.
 **Cost**: $0/month at beta scale. Under $5/month at full Mahabharata + AI synthesis load.  
-**Security**: CSP headers, no secrets in client code, rate-limited API routes, CORS-protected endpoints.
+**Security**: CSP headers, no secrets in client code, rate-limited API routes, CORS-protected endpoints. Strict data-service typing ensuring zero payload leaks.
 
 ## 🤖 Multi-Agent Ecosystem
 

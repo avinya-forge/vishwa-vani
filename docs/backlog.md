@@ -341,6 +341,10 @@ node scripts/audit_gold.js {book-slug}
 - [ ] `VISION-005` **Knowledge Graph Foundation**: Investigate and define the underlying data structure (e.g., RDF, property graph) for the Semantic Deep-Linking Protocol to scale beyond traditional relational models.
 - [ ] `VISION-006` **Type-Safe Ontological Maps**: Ensure all cross-scripture linking matrices define rigid interfaces to prevent `any` mapping errors during deep-link navigation.
 - [ ] `VISION-007` **Lean UI Global Enforcement**: Implement global architecture controls to formally decouple the internal 10+ scholar dataset used for AI reasoning from the maximum 2-scholar payload served to the UI.
+- [ ] `VISION-008` **Semantic Graph Implementation**: Execute the deployment of the selected knowledge graph foundation mapping the first 10,000 entities across Gita and Mahabharata.
+- [ ] `VISION-009` **Knowledge Graph Query Spec**: Draft the standard GraphQL/REST query interface specification for retrieving semantic links from the frontend.
+- [ ] `VISION-010` **Edge WASM integration for Graph**: Evaluate loading the knowledge graph via localized edge WASM environments (similar to the server-lake data approach).
+- [ ] `VISION-011` **Topic Linkage Strategy**: Define the editorial and programmatic pipeline required to assign semantic topics consistently to raw incoming verses.
 
 ## 🔬 EPIC: VEDIC LABS & AI DISCOVERY (PAUSED)
 
@@ -367,6 +371,11 @@ node scripts/audit_gold.js {book-slug}
 - [ ] `ARCH-011` **Type-Safe Pruning Logic**: Implement rigorous type validation inside `VedicDataService` to ensure the pruning algorithm never returns invalid or partial verse fragments, even when dynamically extracting the top 2 authors.
 - [ ] `ARCH-012` **Web-Worker Type Bridges**: Build rigorous generic wrappers around Web Worker `postMessage` interfaces to strictly type all inter-thread communication payloads.
 - [ ] `ARCH-013` **Edge WASM Chunking Strategy**: Define chunking and pagination limits for SQLite WASM queries to guarantee constant time `O(1)` memory consumption during extreme burst fetching.
+- [ ] `ARCH-014` **Cloudflare KV Integration Spec**: Create technical specifications for storing and retrieving high-frequency semantic graph linkages across the edge network.
+- [ ] `ARCH-015` **Server-Lake Data Chunking Pipeline**: Build a stream-processing service that intercepts and chunks SQLite payloads before they reach the main thread, maintaining the 2-author max constraint dynamically.
+- [ ] `ARCH-016` **Web Worker Typed Events Library**: Standardize a dedicated event-bus strictly defining Web Worker interfaces for asynchronous WASM queries.
+- [ ] `ARCH-017` **Main-Thread Offloading Audit**: Audit the entire UI rendering lifecycle to confirm zero heavy parsing operations exist outside of the isolated Worker environment.
+- [ ] `ARCH-018` **Data Fallback Safety Nets**: Ensure all JSON-to-NVF ingestion logic is equipped with default fallback boundaries matching the `VedicDataService` interface strictness.
 
 ---
 
