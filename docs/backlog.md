@@ -63,36 +63,40 @@ Real KMG data exists in `data/2-silver/mahabharata/parva-1/` — 210 real verses
 ## 🐞 PRIORITY 1: BUGS
 *Goal: 100% production-ready quality. Zero regressions in implemented features.*
 
-### BOOK: GLOBAL / ALL
+### BOOK: BHAGAVAD GITA
+- [ ] `BUG-041` **Reader Content Layout Shift** — Root cause confirmed: `shloka-mask.tsx` `<canvas>` has zero initial dimensions; `useEffect` resizes after paint causing layout shift. Secondary: SSR renders `fontSize=22`, mobile client hydrates to `16`, triggers second resize. Repro: Go to `/bhagavad-gita/1/1`, scroll to main content area.
+- [x] `BUG-047` **[P2] Gita BookCard "Part of" Dead Link**: Parent link now only renders when `parentBook.available === true`. — Done: 2026-04-20
+- [x] `BUG-034` **Persistent "Auditing" Placeholder** — Root cause found: `dnyaneshwari` author key (old placeholder scaffold) coexisted alongside real `sant-dnyaneshwar` layers. `isValidCommentaryContent` correctly filtered them but data was bloated. Fixed: stripped all 1971 `author === 'dnyaneshwari'` placeholder layers from all 18 Gita chapters. — Done: 2026-04-19
+- [x] `BUG-037` **Dnyaneshwari Hindi Layer Missing** — Fixed: `rebuild_gita_multilang.js` added sant-dnyaneshwar HI layer for all 657 verses across 18 chapters. — Done: 2026-04-19
 
+### BOOK: UPANISHADS
+- [ ] `BUG-050` **[P1] Isha Upanishad Gold Data Incomplete**: `data/3-gold/isha-upanishad/isha-upanishad-chapter-1.json` has only 10 of 18 verses (missing verses 9–17). Only `isa` author has real content; `iskcon`, `dnyaneshwari`, `adi-shankara` layers are all placeholders (now blocked by BUG-049 fix). Manifest claims `verse_count: 18` but file has 10. Repro: `node scripts/audit_gold.js isha-upanishad`. Tracked in ISHA-CYCLE-1 through ISHA-CYCLE-8 (see PRIORITY 0).
+- [x] `BUG-049` **[P1] Bracket-Prefixed Template Markers Bypass Content Filter**: `isValidCommentaryContent` only blocked `[PLACEHOLDER_` but not `[ADVAITA_PERSPECTIVE:...]` and similar padded fakes in Isha gold data. Added `trimmed.startsWith('[')` early exit to block all template markers. — Done: 2026-04-20
+
+### BOOK: MAHABHARATA
+*(No bugs yet)*
+
+### BOOK: GLOBAL / ALL
+- [ ] `BUG-038` **Landing Page Hydration/Blank Screen** — Root cause confirmed: `app/page.tsx` is a `'use client'` component returning an empty div until JS hydrates. No server-rendered fallback. Repro: Load `/` on desktop/mobile and wait for hydration.
+- [ ] `BUG-039` **Search Filter Contrast** — Unselected category chips on the Search page have broken light-mode tokens, rendering them illegible. Repro: Go to `/search` in light mode, observe 'ITIHAS', 'UPANISHAD', etc. chips.
+- [ ] `BUG-040` **Labs Skeleton Theme Mismatch** — Skeleton loaders on Vedic Labs render with dark-mode colors on a light-mode page. Repro: Go to `/lab` in light mode, observe placeholder cards before components load.
+- [ ] `BUG-042` **Translation Placeholder Rendering**: During UI verification, "Translation data is currently being audited for this verse" appeared for missing base translations instead of silently defaulting. Ensure fallback aligns with Lean UI standards.
+- [ ] `BUG-051` **[P1] Floating 'N' Element**: A dark circle containing the letter 'N' floats unexpectedly on the left-hand side of the viewport across multiple pages (Landing, Search, Reader). Repro: Navigate to `/`, `/search`, or `/bhagavad-gita/1/1` and observe the left edge of the screen.
 - [x] `BUG-043` **[P0] Verse Permalink 404 — Only 3 Verses Accessible Per Chapter**: Fixed `generateStaticParams` to load all real verse numbers from VedicDataService. `dynamicParams` changed `false → true` as safety net. — Done: 2026-04-20
 - [x] `BUG-044` **[P1] Progress Counter Shows Verse Number > Total**: Intersection observer now converts verse number → 1-based array index before `setActiveVerse`. Counter correctly shows `N / total`. — Done: 2026-04-20
 - [x] `BUG-045` **[P1] Language Selector Flash on Cold Load**: `useState` initialized directly to `'all'`, eliminating the EN→ALL re-render on mount. — Done: 2026-04-20
 - [x] `BUG-046` **[P2] Stale Test Comments**: Updated both test files to reflect actual threshold: `≥ 20 chars and not starting with '['`. — Done: 2026-04-20
-- [x] `BUG-047` **[P2] Gita BookCard "Part of" Dead Link**: Parent link now only renders when `parentBook.available === true`. — Done: 2026-04-20
 - [x] `BUG-048` **[P2] AI Synthesis Meaning Extraction Fragile**: Fallback chain now uses `??` (not `||`), checks both `translation` and `meaning` layer types, and validates final string through `isValidCommentaryContent`. — Done: 2026-04-20
-- [x] `BUG-049` **[P1] Bracket-Prefixed Template Markers Bypass Content Filter**: `isValidCommentaryContent` only blocked `[PLACEHOLDER_` but not `[ADVAITA_PERSPECTIVE:...]` and similar padded fakes in Isha gold data. Added `trimmed.startsWith('[')` early exit to block all template markers. — Done: 2026-04-20
-- [ ] `BUG-050` **[P1] Isha Upanishad Gold Data Incomplete**: `data/3-gold/isha-upanishad/isha-upanishad-chapter-1.json` has only 10 of 18 verses (missing verses 9–17). Only `isa` author has real content; `iskcon`, `dnyaneshwari`, `adi-shankara` layers are all placeholders (now blocked by BUG-049 fix). Manifest claims `verse_count: 18` but file has 10. Repro: `node scripts/audit_gold.js isha-upanishad`. Tracked in ISHA-CYCLE-1 through ISHA-CYCLE-8 (see PRIORITY 0).
-- [ ] `BUG-042` **Translation Placeholder Rendering**: During UI verification, "Translation data is currently being audited for this verse" appeared for missing base translations instead of silently defaulting. Ensure fallback aligns with Lean UI standards.
-- [ ] `BUG-038` **Landing Page Hydration/Blank Screen** — Root cause confirmed: `app/page.tsx` is a `'use client'` component returning an empty div until JS hydrates. No server-rendered fallback. Repro: Load `/` on desktop/mobile and wait for hydration.
-- [ ] `BUG-039` **Search Filter Contrast** — Unselected category chips on the Search page have broken light-mode tokens, rendering them illegible. Repro: Go to `/search` in light mode, observe 'ITIHAS', 'UPANISHAD', etc. chips.
-- [ ] `BUG-040` **Labs Skeleton Theme Mismatch** — Skeleton loaders on Vedic Labs render with dark-mode colors on a light-mode page. Repro: Go to `/lab` in light mode, observe placeholder cards before components load.
-- [ ] `BUG-041` **Reader Content Layout Shift** — Root cause confirmed: `shloka-mask.tsx` `<canvas>` has zero initial dimensions; `useEffect` resizes after paint causing layout shift. Secondary: SSR renders `fontSize=22`, mobile client hydrates to `16`, triggers second resize. Repro: Go to `/bhagavad-gita/1/1`, scroll to main content area.
-
-### COMPLETED BUGS (HISTORICAL)
 - [x] `BUG-025` **Mobile Navigation Dropdown hidden** — Fix header layout stacking.
 - [x] `BUG-026` **Next Chapter Link Broken** — Fix absolute slugs in navigation.
 - [x] `BUG-029` **Redundant Interactive Tools** — Apps were repeated for every shloka. Fix: Moved to Desktop Sidebar (Global Chapter context). — Done: 2026-04-16
 - [x] `BUG-030` **Scholar selection limit unrestriction** — Restored "Max 2" selection limit (irrespective of language) to avoid UI clutter. — Done: 2026-04-16
 - [x] `BUG-032` **Mobile Horizontal Jitter** — Fixed: `html, body { max-width: 100% }` instead of `100vw` in globals.css. — Done: 2026-04-19
 - [x] `BUG-033` **Sound Propagation (Mobile Safari)** — Fixed: `ctx.resume()` fire-and-forget (no await) keeps execution on user-gesture stack for Mobile Safari. — Done: 2026-04-19
-- [x] `BUG-034` **Persistent "Auditing" Placeholder** — Root cause found: `dnyaneshwari` author key (old placeholder scaffold) coexisted alongside real `sant-dnyaneshwar` layers. `isValidCommentaryContent` correctly filtered them but data was bloated. Fixed: stripped all 1971 `author === 'dnyaneshwari'` placeholder layers from all 18 Gita chapters. — Done: 2026-04-19
 - [x] `BUG-035` **Timeline Alignment** — Fixed: Added `text-center md:text-left` to milestone label/value elements in vedic-timeline.tsx. — Done: 2026-04-19
 - [x] `BUG-036` **StudyClient Tests Broken (32 failures)** — Fixed: Realigned all 169 tests to current component structure. Added Scholars X/2 counter, re-enabled AI Synthesis button, fixed v.translation||v.meaning fallback, getAllByTestId for multiple nav instances. — Done: 2026-04-19
-- [x] `BUG-037` **Dnyaneshwari Hindi Layer Missing** — Fixed: `rebuild_gita_multilang.js` added sant-dnyaneshwar HI layer for all 657 verses across 18 chapters. — Done: 2026-04-19
 
 ---
-
 ## 🏆 PRIORITY 2: CONTENT
 
 ### BOOK: BHAGAVAD GITA
@@ -137,6 +141,9 @@ Priority Tier 3 — advanced & synthesis:
 ### BOOK: MAHABHARATA
 - [ ] `MBH-CORE-004` **MBH Metadata Foundation**: Research timeline and historical era specific to MBH for the Timeline component.
 
+### BOOK: UPANISHADS
+*(No content tasks yet)*
+
 ---
 
 ## ⛓️ PRIORITY 3: PIPELINE
@@ -154,6 +161,9 @@ Priority Tier 3 — advanced & synthesis:
 - [ ] `MBH-CORE-001` **Scale Ingestion Roadmap**: Audit all 18 Parvas (225-300+ adhyayas each) and create a phased ingestion schedule (Phase 1-Parvas 1-6, Phase 2-Parvas 7-12, Phase 3-Parvas 13-18).
 - [ ] `MBH-CORE-002` **Process Replication**: Document the `docs/ingestion-runbook.md` specific to MBH scale (avoiding OOM during build, handling massive JSON shards).
 - [ ] `MBH-CORE-003` **KMG Source Verification**: Clean the KMG (Kisari Mohan Ganguli) layers for parvas 1-18.
+
+### BOOK: UPANISHADS
+*(No tasks yet)*
 
 ---
 
@@ -314,6 +324,9 @@ node scripts/audit_gold.js {book-slug}
 
 ### BOOK: MAHABHARATA
 - [ ] `MBH-CORE-005` **Adhyaya Navigation Hardening**: Improve the `HierarchicalNav` to handle parvas with 300+ items efficiently (search-in-dropdown).
+
+### BOOK: UPANISHADS
+*(No tasks yet)*
 
 ---
 
