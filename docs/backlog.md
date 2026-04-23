@@ -9,8 +9,8 @@ This is the single authoritative ledger for Vishwa-Vani progress. Sections are: 
 *Exactly one book is in active development at a time. Complete the full 8-stage cycle before advancing. Check this section first every session.*
 
 ### GRADUATED BOOKS (fully complete — all 8 stages done)
-
 - [x] `BOOK-GITA` **Bhagavad Gita** — ✅ COMPLETE (2026-04-20). 657 verses, 18 chapters. ISKCON + Sant Dnyaneshwar, EN/HI/MR. All routes working. Open: BUG-041 (cosmetic). Labs: 14 new opportunities logged (see LAB-GITA section in PRIORITY 2).
+
 
 ### ACTIVE BOOK: ISHA UPANISHAD — CYCLE STAGE 1: DATA GATHERING
 
@@ -82,6 +82,8 @@ Real KMG data exists in `data/2-silver/mahabharata/parva-1/` — 210 real verses
 - [ ] `BUG-040` **Labs Skeleton Theme Mismatch** — Skeleton loaders on Vedic Labs render with dark-mode colors on a light-mode page. Repro: Go to `/lab` in light mode, observe placeholder cards before components load.
 - [ ] `BUG-042` **Translation Placeholder Rendering**: During UI verification, "Translation data is currently being audited for this verse" appeared for missing base translations instead of silently defaulting. Ensure fallback aligns with Lean UI standards.
 - [ ] `BUG-051` **[P1] Floating 'N' Element**: A dark circle containing the letter 'N' floats unexpectedly on the left-hand side of the viewport across multiple pages (Landing, Search, Reader). Repro: Navigate to `/`, `/search`, or `/bhagavad-gita/1/1` and observe the left edge of the screen.
+
+---
 - [x] `BUG-043` **[P0] Verse Permalink 404 — Only 3 Verses Accessible Per Chapter**: Fixed `generateStaticParams` to load all real verse numbers from VedicDataService. `dynamicParams` changed `false → true` as safety net. — Done: 2026-04-20
 - [x] `BUG-044` **[P1] Progress Counter Shows Verse Number > Total**: Intersection observer now converts verse number → 1-based array index before `setActiveVerse`. Counter correctly shows `N / total`. — Done: 2026-04-20
 - [x] `BUG-045` **[P1] Language Selector Flash on Cold Load**: `useState` initialized directly to `'all'`, eliminating the EN→ALL re-render on mount. — Done: 2026-04-20
@@ -95,8 +97,6 @@ Real KMG data exists in `data/2-silver/mahabharata/parva-1/` — 210 real verses
 - [x] `BUG-033` **Sound Propagation (Mobile Safari)** — Fixed: `ctx.resume()` fire-and-forget (no await) keeps execution on user-gesture stack for Mobile Safari. — Done: 2026-04-19
 - [x] `BUG-035` **Timeline Alignment** — Fixed: Added `text-center md:text-left` to milestone label/value elements in vedic-timeline.tsx. — Done: 2026-04-19
 - [x] `BUG-036` **StudyClient Tests Broken (32 failures)** — Fixed: Realigned all 169 tests to current component structure. Added Scholars X/2 counter, re-enabled AI Synthesis button, fixed v.translation||v.meaning fallback, getAllByTestId for multiple nav instances. — Done: 2026-04-19
-
----
 ## 🏆 PRIORITY 2: CONTENT
 
 ### BOOK: BHAGAVAD GITA
@@ -269,10 +269,10 @@ node scripts/audit_gold.js {book-slug}
 **GOLD-GATE**: `VedicDataService.getChapterData()` reads `manifest.json` at runtime and returns `null` for any book not marked `status: GOLD`. Setting `available: true` alone is not sufficient — the manifest must be updated by `promote_to_gold.js`.
 
 ### TOOLING (shared — implement once, reuse for all books)
-
 - [x] `PIPE-001` **`scripts/validate_silver.js`** — Generic NVF schema validator. Checks `id`, `original`, `verse`, `layers[]`; commentary ≥ 20 chars; no bracket-prefix or `[PLACEHOLDER_` content; EN layer required. Exit 0 = pass. — Done: 2026-04-20
 - [x] `PIPE-002` **`scripts/promote_to_gold.js`** — Generic Silver → Gold promotion. Runs PIPE-001 gate; copies shards to `data/3-gold/{book}/`; auto-updates `manifest.json` with verse counts and `status: GOLD`. Blocked if validation fails. — Done: 2026-04-20
 - [x] `PIPE-003` **`scripts/audit_gold.js`** — Post-promotion completeness report. Prints verse counts, per-author layer coverage, placeholder %, readiness score; flags manifest/file count mismatches. — Done: 2026-04-20
+
 
 ### BOOK TRACK 1: KENA UPANISHAD (~35 verses, 1 chapter, Silver exists)
 *Fastest path to a second complete Gold text. Silver data already parsed.*
@@ -435,6 +435,8 @@ node scripts/audit_gold.js {book-slug}
 - [x] `UI-701` Lean Template Verification — Done
 
 ### EPIC 7-11: STABILITY & UI REFINEMENT
+
+---
 - [x] `STAB-601` Verification Audit — Done
 - [x] `STAB-602` Placeholder Removal — Done
 - [x] `STAB-603` Endpoint Hardening — Done
@@ -446,8 +448,6 @@ node scripts/audit_gold.js {book-slug}
 - [x] `UI-601/604` Gita/MBH Parity — Done
 - [x] `UI-701-713` Critical Refinements — Done
 - [x] `UI-714-718` Reader Optimization — Done
-
----
 
 ## 📚 PRIORITY 5: SCRIPTURE MASTER CATALOG
 
