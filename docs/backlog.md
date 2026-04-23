@@ -376,6 +376,10 @@ node scripts/audit_gold.js {book-slug}
 - [ ] `ARCH-016` **Web Worker Typed Events Library**: Standardize a dedicated event-bus strictly defining Web Worker interfaces for asynchronous WASM queries.
 - [ ] `ARCH-017` **Main-Thread Offloading Audit**: Audit the entire UI rendering lifecycle to confirm zero heavy parsing operations exist outside of the isolated Worker environment.
 - [ ] `ARCH-018` **Data Fallback Safety Nets**: Ensure all JSON-to-NVF ingestion logic is equipped with default fallback boundaries matching the `VedicDataService` interface strictness.
+- [ ] `ARCH-019` **Cloudflare Deployment Strategy**: Plan the deployment of the frontend to Cloudflare Pages/Workers to leverage edge capabilities fully.
+- [ ] `ARCH-020` **Supabase/Cloudflare D1 Integration Spec**: Design the schema and migration path from static JSON shards to a managed D1/Supabase database.
+- [ ] `ARCH-021` **Clerk Authentication Prototype**: Implement Clerk for user authentication to support saved reader preferences and reading history.
+- [ ] `ARCH-022` **Gemini Flash AI Integration**: Refactor the AI synthesis and embedding pipeline to use Gemini Flash for improved cost and speed at scale.
 
 ---
 

@@ -13,11 +13,13 @@ While the current U2S pipeline successfully ingests and renders standard texts l
 - **Search Scale Bottlenecks:** Simple client-side filtering works for a 700-verse Gita but fails catastrophically for semantic discovery across 100k+ verses. The vision demands edge-cached, vector-based semantic search interacting seamlessly with our SQLite worker architecture.
 - **Scholar Imbalance & Lean UI Drift:** The platform aims for 10+ scholars, yet our Lean UI principle mandates a strict "Max 2" scholar view to prevent cognitive overload. We lack a robust, type-safe data-service layer to dynamically enforce this 2-author limit while still providing the full 10-scholar dataset for search and AI reasoning.
 - **Type-Safety Enforcement Gap:** As the dataset scales to 100k+ verses, implicit `any` usage in data parsing becomes a massive regression vector. Architecture must evolve to support rigorous type-narrowing across the boundary between unstructured external data and the structured React frontend.
+- **User Preference Persistence Gap:** To fulfill the vision of a friction-free sanctuary, the platform must persist reader state, including scholar selection and cross-device reading history. Implementing Clerk for user authentication is essential for saving this critical user preference data.
+- **Scalable AI Synthesis Bottlenecks:** For scalable, cost-effective inter-book reasoning and synthesis, the platform requires integration with Gemini Flash API, enabling high-speed semantic analysis at massive scale compared to current legacy approaches.
 
 **Scalability: Mahabharata Core Blueprint Readiness (100k+ verses)**
 The current static JSON sharding strategy is insufficient for the Mahabharata.
 - **The Threat:** Loading 100k verses via JSON shards will cause main-thread memory exhaustion, massive CDN payloads, and severe UI jank.
-- **The Solution:** The architecture must evolve to a **Server-Lake Layer** using edge-hosted **SQLite WASM** isolated strictly within **Web Workers**. This establishes a non-blocking boundary. It enables rapid, off-thread querying and enforces type-safe data hydration via strictly typed message-passing bridges without blocking the UI rendering cycle. Furthermore, the WASM data layer must actively chunk data streams and prune payloads to guarantee the 2-author limit before transmitting back to the main thread.
+- **The Solution:** The architecture must evolve to a hybrid approach incorporating a **Server-Lake Layer** using edge-hosted **SQLite WASM** isolated strictly within **Web Workers**, working in synergy with **Supabase / Cloudflare D1** as the backend relational data store. This establishes a non-blocking boundary. Supabase/D1 securely handles raw data management and synchronization, while the WASM worker enables rapid, localized, off-thread querying. It enforces type-safe data hydration via strictly typed message-passing bridges without blocking the UI rendering cycle. Furthermore, the WASM data layer must actively chunk data streams and prune payloads to guarantee the 2-author limit before transmitting back to the main thread.
 
 ## 🚀 Core Mission: Unstructured-to-Structured (U2S)
 Our primary objective is to take raw, disparate textual fragments (scanned scrolls, unstructured PDFs, web-shards) and process them through the **Vishwa ADF (Autonomous Data Factory)** until they are "Frozen" as **NVF 1.3** production-grade data accessible through a live, publicly reachable product.
@@ -34,11 +36,11 @@ Our primary objective is to take raw, disparate textual fragments (scanned scrol
 - Content and features grow in parallel — never block features waiting for full content ingestion.
 
 **Zero-cost deployment stack:**
-- Vercel free tier (100GB bandwidth, 100K serverless invocations/month, automatic global CDN)
+- Cloudflare Pages/Workers (Frontend & Edge) for global distribution, caching, and serverless execution
 - GitHub Actions free CI (2,000 minutes/month) for lint → tsc → test → build → deploy pipeline
-- No managed database — JSON shards as static assets, SQLite WASM in Web Worker for large scriptures
-- Anthropic Claude API (pay-per-use, under $5/month at beta scale with rate limiting)
-- Cloudflare free tier for DNS, DDoS protection, and edge caching at v1.0
+- Supabase / Cloudflare D1 (Database) acting as the managed relational source, integrating with SQLite WASM in Web Workers for large scriptures
+- Clerk (Authentication) for secure and scaleable user identity management
+- Gemini Flash (AI API) for high-performance, cost-effective inference and semantic embeddings
 
 ## 🏔 Strategic Pillars
 
