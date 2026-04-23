@@ -9,7 +9,7 @@ This is the single authoritative ledger for Vishwa-Vani progress. Sections are: 
 *Exactly one book is in active development at a time. Complete the full 8-stage cycle before advancing. Check this section first every session.*
 
 ### GRADUATED BOOKS (fully complete — all 8 stages done)
-- [x] `BOOK-GITA` **Bhagavad Gita** — ✅ COMPLETE (2026-04-20). 657 verses, 18 chapters. ISKCON + Sant Dnyaneshwar, EN/HI/MR. All routes working. Open: BUG-041 (cosmetic). Labs: 14 new opportunities logged (see LAB-GITA section in PRIORITY 2).
+- [x] `BOOK-GITA` **Bhagavad Gita** — ✅ COMPLETE (2026-04-20). 657 verses, 18 chapters. ISKCON + Sant Dnyaneshwar, EN/HI/MR. All routes working. Labs: 14 new opportunities logged (see LAB-GITA section in PRIORITY 2).
 
 
 ### ACTIVE BOOK: ISHA UPANISHAD — CYCLE STAGE 1: DATA GATHERING
@@ -64,7 +64,7 @@ Real KMG data exists in `data/2-silver/mahabharata/parva-1/` — 210 real verses
 *Goal: 100% production-ready quality. Zero regressions in implemented features.*
 
 ### BOOK: BHAGAVAD GITA
-- [ ] `BUG-041` **Reader Content Layout Shift** — Root cause confirmed: `shloka-mask.tsx` `<canvas>` has zero initial dimensions; `useEffect` resizes after paint causing layout shift. Secondary: SSR renders `fontSize=22`, mobile client hydrates to `16`, triggers second resize. Repro: Go to `/bhagavad-gita/1/1`, scroll to main content area.
+- [x] `BUG-041` **Reader Content Layout Shift** — Done: Fixed layout shift by introducing a hidden div for CSS dimensioning and absolute positioning canvas, removing width/height state. Date: 2024-05-24
 - [x] `BUG-047` **[P2] Gita BookCard "Part of" Dead Link**: Parent link now only renders when `parentBook.available === true`. — Done: 2026-04-20
 - [x] `BUG-034` **Persistent "Auditing" Placeholder** — Root cause found: `dnyaneshwari` author key (old placeholder scaffold) coexisted alongside real `sant-dnyaneshwar` layers. `isValidCommentaryContent` correctly filtered them but data was bloated. Fixed: stripped all 1971 `author === 'dnyaneshwari'` placeholder layers from all 18 Gita chapters. — Done: 2026-04-19
 - [x] `BUG-037` **Dnyaneshwari Hindi Layer Missing** — Fixed: `rebuild_gita_multilang.js` added sant-dnyaneshwar HI layer for all 657 verses across 18 chapters. — Done: 2026-04-19
@@ -101,7 +101,7 @@ Real KMG data exists in `data/2-silver/mahabharata/parva-1/` — 210 real verses
 
 ### BOOK: BHAGAVAD GITA
 
-*Data + UI: COMPLETE (2026-04-20). 657 verses, 2 authors (ISKCON + Sant Dnyaneshwar), EN/HI/MR. Labs: 44% chapter coverage (8/18). Open bugs: BUG-041.*
+*Data + UI: COMPLETE (2026-04-20). 657 verses, 2 authors (ISKCON + Sant Dnyaneshwar), EN/HI/MR. Labs: 44% chapter coverage (8/18).*
 
 #### Gita Scholar Enrichment (Stages 1–3 complete; these extend the author set beyond 2)
 - [ ] `SCHOLAR-001` **Top 10 Identification**: Research and rank candidates (Adi Shankara, Ramanuja, Madhva, Abhinavagupta, Tilak, Gandhi, Radhakrishnan, Easwaran, Aurobindo, Gita Press).

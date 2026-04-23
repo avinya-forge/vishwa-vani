@@ -2,10 +2,14 @@
 
 
 ### Current Session ID
-- Jules-Refiner-003
+- Jules-Engineer-004
 
 ### Last Action
-- Consolidated scripts, aligned SSOT docs, repaired NVF schema data < 80 characters.
+- Fixed ShlokaMask CLS Layout Shift, added accessibility properties, and ensured aspect-ratio scales cleanly.
+
+## [1.0.10] - 2024-05-24
+### 🐞 Bug Fixes
+- **Reader Content Layout Shift (BUG-041)**: Solved severe layout shift and horizontal text compression on `shloka-mask` component by moving structural width calculations purely to CSS, via an invisible `aria-hidden` container `div`. Ensured correct Canvas word-wrap padding constraints match standard container.
 
 ## [1.0.9] - 2026-04-20
 ### 🛠️ Maintenance & Refinement
