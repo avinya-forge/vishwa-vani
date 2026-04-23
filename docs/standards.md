@@ -10,13 +10,20 @@ This file is the single source of truth for standards, UI template requirements,
 - `docs/blueprint.md` — Architectural principles, zero-cost deployment, API expectations.
 - `docs/standards.md` — Standards, UI template requirements, and document policy (this file).
 - `docs/jules-prompt.md` — Schedulable Jules execution prompt for sprint automation.
+- `docs/content-quality-report.md` — Auto-generated quality report for all active texts.
+- `docs/deployment-plan.md` — Future strategies for deployment scaling.
+- `docs/deployment.md` — Current active deployment configuration and steps.
+- `docs/final-verification-checklist.md` — Manual launch criteria for v1.0.0.
+- `docs/launch-announcement.md` — Marketing and release copy for product launch.
+- `docs/release-notes-v1.0.0.md` — Archived static release notes.
+- `docs/sitemap-submission.md` — Search engine indexing procedures.
 
 > **FLAT DOCS RULE**: All documentation lives directly in `docs/`. No subdirectories (`docs/planning/`, `docs/architecture/`, `docs/rules/`) are permitted. If UI template details are needed, use the UI Template section in this file.
 
 ---
 
 ## 1. Document Policy
-- Thirteen active docs are tracked in the documentation set.
+- Fourteen active docs are tracked in the documentation set (including README.md).
 - New documentation may be added only by explicit approval from Claude (The Architect).
 - Hierarchical SSOT: `README.md` (Vision) > `docs/blueprint.md` (Architecture) > `docs/standards.md` (Process)
 - Mandatory Trifecta: `README.md`, `docs/backlog.md`, and `docs/release-notes.md` must exist.
