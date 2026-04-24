@@ -82,6 +82,7 @@ Real KMG data exists in `data/2-silver/mahabharata/parva-1/` — 210 real verses
 - [ ] `BUG-040` **Labs Skeleton Theme Mismatch** — Skeleton loaders on Vedic Labs render with dark-mode colors on a light-mode page. Repro: Go to `/lab` in light mode, observe placeholder cards before components load.
 - [ ] `BUG-042` **Translation Placeholder Rendering**: During UI verification, "Translation data is currently being audited for this verse" appeared for missing base translations instead of silently defaulting. Ensure fallback aligns with Lean UI standards.
 - [ ] `BUG-051` **[P1] Floating 'N' Element**: A dark circle containing the letter 'N' floats unexpectedly on the left-hand side of the viewport across multiple pages (Landing, Search, Reader). Repro: Navigate to `/`, `/search`, or `/bhagavad-gita/1/1` and observe the left edge of the screen.
+- [ ] `BUG-052` **[P2] `npm install` Warnings and Vulnerabilities**: Fix all deprecated package warnings (inflight, glob, whatwg-encoding, prebuild-install) and 5 security vulnerabilities (2 moderate, 3 high) to achieve a clean `npm i` execution output.
 
 ---
 - [x] `BUG-043` **[P0] Verse Permalink 404 — Only 3 Verses Accessible Per Chapter**: Fixed `generateStaticParams` to load all real verse numbers from VedicDataService. `dynamicParams` changed `false → true` as safety net. — Done: 2026-04-20
