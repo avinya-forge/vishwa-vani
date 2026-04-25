@@ -1,11 +1,30 @@
 # Release Notes
 
+## [1.0.10] - 2026-04-25 (Gold Data Quality + Pipeline + UI Bug Sprint)
 
-### Current Session ID
-- Jules-Refiner-003
+### Tasks Completed
+- BUG-038: Converted `app/page.tsx` to async server component; `BeginReadingButton` client island handles `localStorage`
+- BUG-039: Search filter unselected chip contrast fixed (`text-stone-800` + `hover:text-orange-700`)
+- BUG-040: `LabSkeleton` light-mode bg changed from `stone-100` → `white`; inner shimmers use `stone-100/stone-200`
+- BUG-041: Reader canvas layout shift eliminated — synchronous `matchMedia` init, explicit height, `minHeight` reserve
+- BUG-051: Floating Next.js 'N' dev indicator suppressed via `devIndicators: false` in `next.config.ts`
+- BUG-054: Deleted 18 mock Mahabharata gold files containing `"Mock Verse 1.1"` data
+- BUG-055: `isValidCommentaryContent()` now blocks generic filler text patterns (case-insensitive)
+- BUG-056: Synthesis API `Promise.race()` 10s timeout + frontend `AbortController` 15s timeout
+- Pipeline: `scripts/run_pipeline.js` one-command strip→validate→promote→audit chain
+- Pipeline: `scripts/strip_placeholders.js` cleans `[PLACEHOLDER_*]` from silver/gold
+- Pipeline: `validate_silver.js` + `promote_to_gold.js` now handle nested directory structures (Mahabharata parva/adhyaya)
+- Gold: bhagavata-purana, garuda-purana, vishnu-purana, samskaras, yoga-sutras, kena-upanishad promoted to gold tier
+- Gold: Mahabharata 596 parva files (19,580 KMG EN verses) promoted to gold; manifest updated
 
-### Last Action
-- Consolidated scripts, aligned SSOT docs, repaired NVF schema data < 80 characters.
+### Test Coverage
+- 169 existing tests: all pass
+- TypeScript: zero errors
+
+### Backlog
+- BUG-038/039/040/041/051/054/055/056 marked [x] in `docs/backlog.md`
+- BUG-057 (Gita HI/MR authentic data) tracked; requires data acquisition
+- Open P1: BUG-050 (Isha Upanishad incomplete), BUG-057 (Gita HI/MR)
 
 ## [1.0.9] - 2026-04-20
 ### 🛠️ Maintenance & Refinement
