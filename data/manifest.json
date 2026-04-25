@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "last_audit": "2026-04-14",
+  "last_audit": "2026-04-25",
   "note": "Only Gold-tier (verified and complete) books are active in manifest. Mahabharata is currently in SILVER tier.",
   "books": [
     {
@@ -157,12 +157,9 @@
         "mr": "महाभारत",
         "sa": "महाभारतम्"
       },
-      "total_chapters": 18,
-      "total_verses": 180,
-      "languages": [
-        "en",
-        "sa"
-      ],
+      "total_chapters": 0,
+      "total_verses": 0,
+      "languages": [],
       "primary_publication": "KMG",
       "authors": [
         {
@@ -172,100 +169,10 @@
           "description": "An Indian translator known for being the first to provide a complete English translation of the Mahabharata."
         }
       ],
-      "chapters": [
-        {
-          "number": 1,
-          "file": "mahabharata-chapter-1.json",
-          "verse_count": 10
-        },
-        {
-          "number": 2,
-          "file": "mahabharata-chapter-2.json",
-          "verse_count": 10
-        },
-        {
-          "number": 3,
-          "file": "mahabharata-chapter-3.json",
-          "verse_count": 10
-        },
-        {
-          "number": 4,
-          "file": "mahabharata-chapter-4.json",
-          "verse_count": 10
-        },
-        {
-          "number": 5,
-          "file": "mahabharata-chapter-5.json",
-          "verse_count": 10
-        },
-        {
-          "number": 6,
-          "file": "mahabharata-chapter-6.json",
-          "verse_count": 10
-        },
-        {
-          "number": 7,
-          "file": "mahabharata-chapter-7.json",
-          "verse_count": 10
-        },
-        {
-          "number": 8,
-          "file": "mahabharata-chapter-8.json",
-          "verse_count": 10
-        },
-        {
-          "number": 9,
-          "file": "mahabharata-chapter-9.json",
-          "verse_count": 10
-        },
-        {
-          "number": 10,
-          "file": "mahabharata-chapter-10.json",
-          "verse_count": 10
-        },
-        {
-          "number": 11,
-          "file": "mahabharata-chapter-11.json",
-          "verse_count": 10
-        },
-        {
-          "number": 12,
-          "file": "mahabharata-chapter-12.json",
-          "verse_count": 10
-        },
-        {
-          "number": 13,
-          "file": "mahabharata-chapter-13.json",
-          "verse_count": 10
-        },
-        {
-          "number": 14,
-          "file": "mahabharata-chapter-14.json",
-          "verse_count": 10
-        },
-        {
-          "number": 15,
-          "file": "mahabharata-chapter-15.json",
-          "verse_count": 10
-        },
-        {
-          "number": 16,
-          "file": "mahabharata-chapter-16.json",
-          "verse_count": 10
-        },
-        {
-          "number": 17,
-          "file": "mahabharata-chapter-17.json",
-          "verse_count": 10
-        },
-        {
-          "number": 18,
-          "file": "mahabharata-chapter-18.json",
-          "verse_count": 10
-        }
-      ],
-      "completeness_score": 0.8,
-      "status": "SILVER"
+      "chapters": [],
+      "completeness_score": 0,
+      "status": "PENDING",
+      "note": "Gold chapter files deleted 2026-04-25 (were mock data). Real KMG silver data at data/2-silver/mahabharata/parva-1/. Pipeline not yet run. See backlog MBH-DATA-* tasks."
     }
   ]
 }
