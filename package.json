@@ -9,7 +9,15 @@
     "lint": "eslint",
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "validate": "node scripts/validate_silver.js --all",
+    "promote": "node scripts/promote_to_gold.js",
+    "audit:gold": "node scripts/audit_gold.js --all",
+    "audit:multilang": "node scripts/audit_multilang.js --all",
+    "audit:standards": "node scripts/audit_standards.js --all",
+    "audit:silver": "node scripts/audit_standards.js --silver --all",
+    "audit:all": "npm run audit:gold && npm run audit:multilang && npm run audit:standards",
+    "pipeline": "node scripts/validate_silver.js"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
