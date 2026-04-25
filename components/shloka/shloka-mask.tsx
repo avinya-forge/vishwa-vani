@@ -14,13 +14,21 @@ import { useTheme } from 'next-themes'
 export default function ShlokaMask({ text, className, fontSize }: { text: string, className?: string, fontSize?: number }) {
     const canvasRef = useRef<HTMLCanvasElement>(null)
     const [copied, setCopied] = useState(false)
-    const [resolvedFontSize, setResolvedFontSize] = useState(fontSize ?? 22)
+    // Derive font size synchronously from a CSS media query match to avoid a
+    // SSR→client mismatch that triggers a second layout shift.
+    const [resolvedFontSize, setResolvedFontSize] = useState(() => {
+        if (fontSize !== undefined) return fontSize
+        if (typeof window === 'undefined') return 22
+        return window.matchMedia('(max-width: 639px)').matches ? 16 : 22
+    })
     const { resolvedTheme } = useTheme()
 
     useEffect(() => {
-        if (fontSize === undefined) {
-            setResolvedFontSize(window.innerWidth < 640 ? 16 : 22)
-        }
+        if (fontSize !== undefined) return
+        const mq = window.matchMedia('(max-width: 639px)')
+        const update = () => setResolvedFontSize(mq.matches ? 16 : 22)
+        mq.addEventListener('change', update)
+        return () => mq.removeEventListener('change', update)
     }, [fontSize])
 
     useEffect(() => {
@@ -69,6 +77,7 @@ export default function ShlokaMask({ text, className, fontSize }: { text: string
         canvas.width = maxWidth * dpr
         canvas.height = (finalLines.length * lineHeight + paddingY * 2) * dpr
         canvas.style.width = `${maxWidth}px`
+        canvas.style.height = `${finalLines.length * lineHeight + paddingY * 2}px`
         canvas.style.maxWidth = '100%'
         
         ctx.scale(dpr, dpr)
@@ -97,8 +106,12 @@ export default function ShlokaMask({ text, className, fontSize }: { text: string
         <div className={`group relative overflow-hidden flex justify-center ${className}`}>
             <canvas
                 ref={canvasRef}
-                className="max-w-full h-auto cursor-default pointer-events-none select-none"
-                style={{ filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.05))', minHeight: `${resolvedFontSize * 3}px` }}
+                className="max-w-full cursor-default pointer-events-none select-none"
+                style={{
+                    filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.05))',
+                    minHeight: `${resolvedFontSize * 4}px`,
+                    display: 'block',
+                }}
             />
             
             {/* 📋 Secure Copy Button - Only for humans, visible on hover */}
