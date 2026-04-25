@@ -17,7 +17,9 @@
     "audit:standards": "node scripts/audit_standards.js --all",
     "audit:silver": "node scripts/audit_standards.js --silver --all",
     "audit:all": "npm run audit:gold && npm run audit:multilang && npm run audit:standards",
-    "pipeline": "node scripts/validate_silver.js"
+    "pipeline": "node scripts/run_pipeline.js",
+    "pipeline:dry": "node scripts/run_pipeline.js --all --dry-run",
+    "strip": "node scripts/strip_placeholders.js"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
