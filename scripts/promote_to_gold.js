@@ -45,6 +45,19 @@ function deriveChapterNumber(filename) {
   return m ? parseInt(m[1], 10) : null;
 }
 
+function collectJsonFiles(dir) {
+  const results = [];
+  for (const entry of fs.readdirSync(dir).sort()) {
+    const full = path.join(dir, entry);
+    if (fs.statSync(full).isDirectory()) {
+      results.push(...collectJsonFiles(full).map(r => ({ ...r, rel: path.join(entry, r.rel) })));
+    } else if (entry.endsWith('.json')) {
+      results.push({ full, rel: entry });
+    }
+  }
+  return results;
+}
+
 // ── Core ──────────────────────────────────────────────────────────────────────
 
 function promoteBook(bookSlug, force = false) {
@@ -79,25 +92,23 @@ function promoteBook(bookSlug, force = false) {
     console.log(`  Created: ${goldBookDir}`);
   }
 
-  const silverFiles = fs.readdirSync(silverBookDir)
-    .filter(f => f.endsWith('.json'))
-    .sort();
-
+  const silverFiles = collectJsonFiles(silverBookDir);
   const chapterMeta = [];
 
-  for (const file of silverFiles) {
-    const src  = path.join(silverBookDir, file);
-    const dest = path.join(goldBookDir, file);
+  for (const { full: src, rel } of silverFiles) {
+    const dest = path.join(goldBookDir, rel);
+    const destDir = path.dirname(dest);
+    if (!fs.existsSync(destDir)) fs.mkdirSync(destDir, { recursive: true });
     fs.copyFileSync(src, dest);
 
     const verseCount  = countVerses(dest);
-    const chapterNum  = deriveChapterNumber(file);
+    const chapterNum  = deriveChapterNumber(rel);
 
-    if (chapterNum !== null && !file.endsWith('.meta.json')) {
-      chapterMeta.push({ number: chapterNum, file, verse_count: verseCount });
-      console.log(`  ✓ ${file} (${verseCount} verses)`);
+    if (chapterNum !== null && !rel.endsWith('.meta.json')) {
+      chapterMeta.push({ number: chapterNum, file: rel, verse_count: verseCount });
+      console.log(`  ✓ ${rel} (${verseCount} verses)`);
     } else {
-      console.log(`  ✓ ${file} (metadata)`);
+      console.log(`  ✓ ${rel} (metadata)`);
     }
   }
 

@@ -115,6 +115,20 @@ function validateFile(filePath, bookSlug, chapterNum) {
   return { errors, verseCount: verses.length };
 }
 
+function collectJsonFiles(dir, baseDir) {
+  const results = [];
+  for (const entry of fs.readdirSync(dir).sort()) {
+    const full = path.join(dir, entry);
+    const stat = fs.statSync(full);
+    if (stat.isDirectory()) {
+      results.push(...collectJsonFiles(full, baseDir));
+    } else if (entry.endsWith('.json') && !entry.endsWith('.meta.json')) {
+      results.push({ full, rel: path.relative(baseDir, full) });
+    }
+  }
+  return results;
+}
+
 function validateBook(bookSlug) {
   const bookDir = path.join(SILVER_DIR, bookSlug);
   if (!fs.existsSync(bookDir)) {
@@ -122,9 +136,7 @@ function validateBook(bookSlug) {
     return false;
   }
 
-  const files = fs.readdirSync(bookDir)
-    .filter(f => f.endsWith('.json') && !f.endsWith('.meta.json'))
-    .sort();
+  const files = collectJsonFiles(bookDir, bookDir);
 
   if (files.length === 0) {
     console.error(`✗ ${bookSlug}: no JSON files in silver directory`);
@@ -137,22 +149,21 @@ function validateBook(bookSlug) {
 
   console.log(`\n── Validating ${bookSlug} (${files.length} file(s)) ──────────────────`);
 
-  for (const file of files) {
-    const filePath   = path.join(bookDir, file);
-    const chapterMatch = file.match(/(\d+)/);
+  for (const { full, rel } of files) {
+    const chapterMatch = rel.match(/(\d+)/);
     const chapterNum   = chapterMatch ? parseInt(chapterMatch[1]) : 0;
 
-    const { errors, verseCount } = validateFile(filePath, bookSlug, chapterNum);
+    const { errors, verseCount } = validateFile(full, bookSlug, chapterNum);
     totalVerses += verseCount;
 
     if (errors.length > 0) {
       filesWithErrors++;
-      console.log(`  ✗ ${file} (${verseCount} verses, ${errors.length} error(s))`);
+      console.log(`  ✗ ${rel} (${verseCount} verses, ${errors.length} error(s))`);
       errors.slice(0, 5).forEach(e => console.log(`    • ${e}`));
       if (errors.length > 5) console.log(`    … and ${errors.length - 5} more`);
       totalErrors.push(...errors);
     } else {
-      console.log(`  ✓ ${file} (${verseCount} verses)`);
+      console.log(`  ✓ ${rel} (${verseCount} verses)`);
     }
   }
 
