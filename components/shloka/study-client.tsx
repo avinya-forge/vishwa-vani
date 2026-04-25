@@ -225,7 +225,7 @@ export default function StudyClient({
     if (trimmed.length < 20) return false // Lowered threshold to catch short but valid verses
     // Reject any unresolved template marker (e.g. [PLACEHOLDER_X], [ADVAITA_PERSPECTIVE:...], [SUTRA_TEXT])
     if (trimmed.startsWith('[')) return false
-    const placeholderPatterns = ['[PLACEHOLDER_', 'TBD_CONTENT', 'TODO_LAYER', 'LOREM IPSUM']
+    const placeholderPatterns = ['[PLACEHOLDER_', 'TBD_CONTENT', 'TODO_LAYER', 'LOREM IPSUM', 'THIS IS A GENERIC PLACEHOLDER', 'INSERTED TO SATISFY THE MINIMUM LENGTH']
     if (placeholderPatterns.some(p => trimmed.toUpperCase().includes(p.toUpperCase()))) {
       return false
     }
@@ -468,13 +468,21 @@ export default function StudyClient({
 
 
          const contextTexts = [meaning, ...commentaries.map((c: unknown) => (c as Record<string, unknown>).content)].filter((t: unknown) => t)
-         const res = await fetch('/api/synthesize', {
-           method: 'POST',
-           headers: {'Content-Type': 'application/json'},
-           body: JSON.stringify({ verseId: v.id, contextTexts, language: languageSelection || 'en' })
-         })
-         if (!res.ok) throw new Error('Synthesis API responded with status ' + res.status)
-         const data = await res.json() as Record<string, unknown>
+         const controller = new AbortController()
+         const timeoutId = setTimeout(() => controller.abort(), 15_000)
+         let res: Response
+         try {
+           res = await fetch('/api/synthesize', {
+             method: 'POST',
+             headers: {'Content-Type': 'application/json'},
+             body: JSON.stringify({ verseId: v.id, contextTexts, language: languageSelection || 'en' }),
+             signal: controller.signal
+           })
+         } finally {
+           clearTimeout(timeoutId)
+         }
+         if (!res!.ok) throw new Error('Synthesis API responded with status ' + res!.status)
+         const data = await res!.json() as Record<string, unknown>
          if (data.success) {
            setSynthesisMap(p => ({...p, [v.id as string]: { text: data.synthesis as string, loading: false }}))
          } else {
