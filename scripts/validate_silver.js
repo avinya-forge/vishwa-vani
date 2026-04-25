@@ -73,15 +73,9 @@ function validateVerse(verse, bookSlug, chapterNum) {
     errors.push(`${verseId}: 'transliteration' is corrupted mock data`);
   }
 
-  // layers validation
-  if (!verse.layers || !Array.isArray(verse.layers) || verse.layers.length === 0) {
-    errors.push(`${verseId}: has no layers (at least 1 EN layer required)`);
-  } else {
-    const enLayers = verse.layers.filter(l => l.lang === 'en' && l.content && isValidContent(l.content));
-    if (enLayers.length === 0) {
-      errors.push(`${verseId}: no valid English (lang:'en') layer found`);
-    }
-
+  // layers: at silver tier, layers are optional (verse structure alone is valid).
+  // Gold tier requires EN layer coverage — enforced by audit_gold.js / audit_standards.js.
+  if (verse.layers && Array.isArray(verse.layers)) {
     for (const layer of verse.layers) {
       if (!layer.author) {
         errors.push(`${verseId}: layer missing 'author' field`);

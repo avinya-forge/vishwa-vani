@@ -173,6 +173,181 @@
       "completeness_score": 0,
       "status": "PENDING",
       "note": "Gold chapter files deleted 2026-04-25 (were mock data). Real KMG silver data at data/2-silver/mahabharata/parva-1/. Pipeline not yet run. See backlog MBH-DATA-* tasks."
+    },
+    {
+      "book_id": "bhagavata-purana",
+      "total_chapters": 12,
+      "total_verses": 14,
+      "chapters": [
+        {
+          "number": 1,
+          "file": "bhagavata-purana-chapter-1.json",
+          "verse_count": 3
+        },
+        {
+          "number": 2,
+          "file": "bhagavata-purana-chapter-2.json",
+          "verse_count": 1
+        },
+        {
+          "number": 3,
+          "file": "bhagavata-purana-chapter-3.json",
+          "verse_count": 1
+        },
+        {
+          "number": 4,
+          "file": "bhagavata-purana-chapter-4.json",
+          "verse_count": 1
+        },
+        {
+          "number": 5,
+          "file": "bhagavata-purana-chapter-5.json",
+          "verse_count": 1
+        },
+        {
+          "number": 6,
+          "file": "bhagavata-purana-chapter-6.json",
+          "verse_count": 1
+        },
+        {
+          "number": 7,
+          "file": "bhagavata-purana-chapter-7.json",
+          "verse_count": 1
+        },
+        {
+          "number": 8,
+          "file": "bhagavata-purana-chapter-8.json",
+          "verse_count": 1
+        },
+        {
+          "number": 9,
+          "file": "bhagavata-purana-chapter-9.json",
+          "verse_count": 1
+        },
+        {
+          "number": 10,
+          "file": "bhagavata-purana-chapter-10.json",
+          "verse_count": 1
+        },
+        {
+          "number": 11,
+          "file": "bhagavata-purana-chapter-11.json",
+          "verse_count": 1
+        },
+        {
+          "number": 12,
+          "file": "bhagavata-purana-chapter-12.json",
+          "verse_count": 1
+        }
+      ],
+      "completeness_score": 100,
+      "status": "GOLD",
+      "last_promoted": "2026-04-25"
+    },
+    {
+      "book_id": "garuda-purana",
+      "total_chapters": 2,
+      "total_verses": 2,
+      "chapters": [
+        {
+          "number": 1,
+          "file": "garuda-purana-chapter-1.json",
+          "verse_count": 1
+        },
+        {
+          "number": 2,
+          "file": "garuda-purana-chapter-2.json",
+          "verse_count": 1
+        }
+      ],
+      "completeness_score": 100,
+      "status": "GOLD",
+      "last_promoted": "2026-04-25"
+    },
+    {
+      "book_id": "vishnu-purana",
+      "total_chapters": 6,
+      "total_verses": 6,
+      "chapters": [
+        {
+          "number": 1,
+          "file": "vishnu-purana-chapter-1.json",
+          "verse_count": 1
+        },
+        {
+          "number": 2,
+          "file": "vishnu-purana-chapter-2.json",
+          "verse_count": 1
+        },
+        {
+          "number": 3,
+          "file": "vishnu-purana-chapter-3.json",
+          "verse_count": 1
+        },
+        {
+          "number": 4,
+          "file": "vishnu-purana-chapter-4.json",
+          "verse_count": 1
+        },
+        {
+          "number": 5,
+          "file": "vishnu-purana-chapter-5.json",
+          "verse_count": 1
+        },
+        {
+          "number": 6,
+          "file": "vishnu-purana-chapter-6.json",
+          "verse_count": 1
+        }
+      ],
+      "completeness_score": 100,
+      "status": "GOLD",
+      "last_promoted": "2026-04-25"
+    },
+    {
+      "book_id": "samskaras",
+      "total_chapters": 1,
+      "total_verses": 3,
+      "chapters": [
+        {
+          "number": 1,
+          "file": "samskaras-chapter-1.json",
+          "verse_count": 3
+        }
+      ],
+      "completeness_score": 100,
+      "status": "GOLD",
+      "last_promoted": "2026-04-25"
+    },
+    {
+      "book_id": "yoga-sutras",
+      "total_chapters": 1,
+      "total_verses": 9,
+      "chapters": [
+        {
+          "number": 1,
+          "file": "yoga-sutras-chapter-1.json",
+          "verse_count": 9
+        }
+      ],
+      "completeness_score": 100,
+      "status": "GOLD",
+      "last_promoted": "2026-04-25"
+    },
+    {
+      "book_id": "kena-upanishad",
+      "total_chapters": 1,
+      "total_verses": 1,
+      "chapters": [
+        {
+          "number": 1,
+          "file": "kena-upanishad-chapter-1.json",
+          "verse_count": 1
+        }
+      ],
+      "completeness_score": 100,
+      "status": "GOLD",
+      "last_promoted": "2026-04-25"
     }
   ]
 }
