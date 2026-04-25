@@ -75,12 +75,8 @@ Real KMG data exists in `data/2-silver/mahabharata/parva-1/` — 210 real verses
 - [x] `BUG-037` **Dnyaneshwari Hindi Layer Missing** — Fixed: `rebuild_gita_multilang.js` added sant-dnyaneshwar HI layer for all 657 verses across 18 chapters. — Done: 2026-04-19
 
 ### BOOK: UPANISHADS
-<<<<<<< HEAD
-- [ ] `BUG-057` **[P1] Isha Upanishad Metadata Leak**: The reader page for `/isha-upanishad/1` incorrectly displays Bhagavad Gita metadata, such as "Sacred Location: Kurukshetra Basin" and "Approx. 3102 BCE".
-- [ ] `BUG-050` **[P1] Isha Upanishad Gold Data Incomplete**: `data/3-gold/isha-upanishad/isha-upanishad-chapter-1.json` has only 10 of 18 verses (missing verses 9–17). Only `isa` author has real content; `iskcon`, `dnyaneshwari`, `adi-shankara` layers are all placeholders (now blocked by BUG-049 fix). Manifest claims `verse_count: 18` but file has 10. Repro: `node scripts/audit_gold.js isha-upanishad`. Tracked in ISHA-CYCLE-1 through ISHA-CYCLE-8 (see PRIORITY 0).
-=======
+- [ ] `BUG-060` **[P1] Isha Upanishad Metadata Leak**: The reader page for `/isha-upanishad/1` incorrectly displays Bhagavad Gita metadata, such as "Sacred Location: Kurukshetra Basin" and "Approx. 3102 BCE".
 - [ ] `BUG-050` **[P1] Isha Upanishad Gold Data Incomplete** — `audit_standards.js` quantified: 150 violations across 10 verses. Breakdown: GOLD_MISSING_TRANSLATION×10, GOLD_MISSING_MEANING×10, GOLD_MISSING_AUTHOR_NAME×10, GOLD_MISSING_AUTHOR_LABEL×10, GOLD_INVALID_LAYER_CONTENT×70 (generic filler for iskcon/dnyaneshwari/adi-shankara authors), GOLD_MISSING_LANG×40 (no HI/MR for `isa` and `adi-shankara`). Also only 10/18 verses present (missing 9–17). Repro: `node scripts/audit_standards.js isha-upanishad`. Fix tracked in ISHA-DATA-1 through ISHA-DATA-9 (see PRIORITY 0).
->>>>>>> 8566c8b01d9ff87f2bb13687f5a2f24cf34fd0db
 - [x] `BUG-049` **[P1] Bracket-Prefixed Template Markers Bypass Content Filter**: `isValidCommentaryContent` only blocked `[PLACEHOLDER_` but not `[ADVAITA_PERSPECTIVE:...]` and similar padded fakes in Isha gold data. Added `trimmed.startsWith('[')` early exit to block all template markers. — Done: 2026-04-20
 
 ### BOOK: MAHABHARATA
@@ -88,19 +84,13 @@ Real KMG data exists in `data/2-silver/mahabharata/parva-1/` — 210 real verses
 - [x] `BUG-059` **Stray mock file data/isha_upanishad_chapter_1.json at repo root**: File contained "Mock Verse 1.1" data with empty layers — a leftover scaffold outside the gold tier. Deleted. — Done: 2026-04-25
 
 ### BOOK: GLOBAL / ALL
-<<<<<<< HEAD
-- [ ] `BUG-053` **[P1] Ineffective Theme Toggle**: The theme toggle button changes its icon (Sun/Moon), but the page content remains in a dark-themed state. No transition to "Light Mode" observed.
-- [ ] `BUG-054` **[P1] Search Functionality Failure**: Searching returns "No fragments found". Console logs reveal an error: `Search failed: Error: Could not fetch lake file: itihasa-lake.db`.
-- [ ] `BUG-055` **[P2] Responsive Layout Overlap**: In mobile view, the floating 'N' element and floating feedback button overlap with footer and main text, making interaction and reading difficult.
-- [ ] `BUG-056` **[P2] Inconsistent Statistics on Landing Page**: Landing page displays "2 Sacred Texts" but verse count is listed as "39,390+" which is incorrect and misleading.
-- [ ] `BUG-038` **Landing Page Hydration/Blank Screen** — Root cause confirmed: `app/page.tsx` is a `'use client'` component returning an empty div until JS hydrates. No server-rendered fallback. Repro: Load `/` on desktop/mobile and wait for hydration.
-- [ ] `BUG-039` **Search Filter Contrast** — Unselected category chips on the Search page have broken light-mode tokens, rendering them illegible. Repro: Go to `/search` in light mode, observe 'ITIHAS', 'UPANISHAD', etc. chips.
-- [ ] `BUG-040` **Labs Skeleton Theme Mismatch** — Skeleton loaders on Vedic Labs render with dark-mode colors on a light-mode page. Repro: Go to `/lab` in light mode, observe placeholder cards before components load.
-=======
+- [ ] `BUG-061` **[P1] Ineffective Theme Toggle**: The theme toggle button changes its icon (Sun/Moon), but the page content remains in a dark-themed state. No transition to "Light Mode" observed.
+- [ ] `BUG-062` **[P1] Search Functionality Failure**: Searching returns "No fragments found". Console logs reveal an error: `Search failed: Error: Could not fetch lake file: itihasa-lake.db`.
+- [ ] `BUG-063` **[P2] Responsive Layout Overlap**: In mobile view, the floating 'N' element and floating feedback button overlap with footer and main text, making interaction and reading difficult.
+- [ ] `BUG-064` **[P2] Inconsistent Statistics on Landing Page**: Landing page displays "2 Sacred Texts" but verse count is listed as "39,390+" which is incorrect and misleading.
 - [x] `BUG-038` **Landing Page Hydration/Blank Screen** — Fix: converted `app/page.tsx` to async server component; `getTranslations()` replaces client `useTranslations()`; `BeginReadingButton` (new `'use client'` island) handles `localStorage` read. — Done: 2026-04-25
 - [x] `BUG-039` **Search Filter Contrast** — Unselected category chips on the Search page had `text-stone-600` (low contrast in light mode). Fix: changed to `text-stone-800` + `hover:text-orange-700` in `search-client.tsx`. — Done: 2026-04-25
 - [x] `BUG-040` **Labs Skeleton Theme Mismatch** — Skeleton loaders had `bg-stone-100` outer and `bg-stone-200/60` (visually dark on light page). Fix: outer → `bg-white`; inner lines → `bg-stone-100`/`bg-stone-200` in `Skeleton.tsx`. — Done: 2026-04-25
->>>>>>> 8566c8b01d9ff87f2bb13687f5a2f24cf34fd0db
 - [ ] `BUG-042` **Translation Placeholder Rendering**: During UI verification, "Translation data is currently being audited for this verse" appeared for missing base translations instead of silently defaulting. Ensure fallback aligns with Lean UI standards.
 - [x] `BUG-051` **[P1] Floating 'N' Element**: A dark circle containing the letter 'N' floats unexpectedly on the left-hand side of the viewport across multiple pages (Landing, Search, Reader). Root cause: Next.js dev-mode route indicator. Fix: `devIndicators: false` in `next.config.ts`. — Done: 2026-04-25
 - [ ] `BUG-052` **[P2] `npm install` Warnings and Vulnerabilities**: Fix all deprecated package warnings (inflight, glob, whatwg-encoding, prebuild-install) and 5 security vulnerabilities (2 moderate, 3 high) to achieve a clean `npm i` execution output.
