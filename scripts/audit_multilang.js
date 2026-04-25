@@ -176,7 +176,7 @@ function auditBook(bookSlug) {
     console.log(`  ✗ FAIL — ${totalViolations} violations found`);
     if (repeatedGroups > 0) {
       console.log('    → Fix: replace chapter-summary content with verse-specific commentary');
-      console.log('    → Use: scripts/fix_gita_multilang_verse_level.js (to be written)');
+      console.log('    → Use: node scripts/fix_multilang_verse_level.js --book <book-slug>');
     }
     if (thinLayers > 0) {
       console.log('    → Fix: expand thin layers to ≥ 80 chars per gold standard');

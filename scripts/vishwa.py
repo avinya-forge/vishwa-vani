@@ -2044,7 +2044,7 @@ DATA_SILVER = DATA_ROOT / "2-silver" # Staging: Processed NVF but awaiting audit
 DATA_GOLD = DATA_ROOT / "3-gold"   # Audited, production-ready sharded NVF 1.0
 
 def run_node(script_name, args=[]):
-    """Bridge to the JS-based operations."""
+    """Bridge to the JS-based operations. Prefers standalone file over embedded string."""
     import tempfile
 
     script_map = {
@@ -2058,15 +2058,17 @@ def run_node(script_name, args=[]):
         "rebuild_lake_from_gold.js": REBUILD_LAKE_FROM_GOLD_JS
     }
 
-    if script_name not in script_map:
-        # Fallback to file execution if it exists
-        script_path = SCRIPTS_DIR / script_name
-        if not script_path.exists():
-            print(f"Error: JS backend {script_name} not found.")
-            return 1
+    # Prefer standalone file if it exists (standalone is single source of truth)
+    script_path = SCRIPTS_DIR / script_name
+    if script_path.exists():
         cmd = ["node", str(script_path)] + args
         print(f"Executing JS file: {' '.join(cmd)}")
         return subprocess.run(cmd).returncode
+
+    # Fall back to embedded string if no standalone file
+    if script_name not in script_map:
+        print(f"Error: JS backend {script_name} not found as file or embedded string.")
+        return 1
 
     script_content = script_map[script_name]
 

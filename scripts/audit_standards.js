@@ -1,0 +1,378 @@
+#!/usr/bin/env node
+/**
+ * audit_standards.js — Vishwa-Vani comprehensive data standards checker
+ *
+ * Validates data files against docs/data-standards.md for each tier.
+ * For gold tier: enforces all gold-checklist requirements.
+ * For silver tier: enforces minimum NVF structure + blocks corrupted filler.
+ *
+ * Usage:
+ *   node scripts/audit_standards.js                  # audit all gold books
+ *   node scripts/audit_standards.js --all            # audit all tiers
+ *   node scripts/audit_standards.js bhagavad-gita    # one gold book
+ *   node scripts/audit_standards.js --silver         # silver tier only
+ *   node scripts/audit_standards.js --silver bhagavata-purana
+ *
+ * Exit codes:
+ *   0 — all checks pass
+ *   1 — violations found (check output)
+ */
+
+'use strict';
+const fs   = require('fs');
+const path = require('path');
+
+const BASE     = path.resolve(__dirname, '..');
+const GOLD_DIR = path.join(BASE, 'data', '3-gold');
+const SILV_DIR = path.join(BASE, 'data', '2-silver');
+
+// ─── Violation constants ────────────────────────────────────────────────────
+
+// Blocked at ALL tiers — indicate corrupted/mock data
+const CORRUPTED_PATTERNS = [
+  /^Mock Verse/i,
+  /^Mock Transliteration/i,
+  /THIS IS A GENERIC PLACEHOLDER/i,
+  /INSERTED TO SATISFY THE MINIMUM LENGTH/i,
+];
+
+// Blocked at GOLD tier (allowed at silver as in-progress markers)
+const PLACEHOLDER_PATTERNS = [
+  /^\s*\[/,              // any bracket-prefix content
+  /\[PLACEHOLDER_/i,
+  /TBD_CONTENT/i,
+  /TODO_LAYER/i,
+  /LOREM IPSUM/i,
+];
+
+const GOLD_MIN_ORIGINAL_LEN    = 10;
+const GOLD_MIN_TRANSLIT_LEN    = 10;
+const GOLD_MIN_TRANSLATION_LEN = 20;
+const GOLD_MIN_MEANING_LEN     = 20;
+const GOLD_MIN_LAYER_LEN       = 80;
+const GOLD_MIN_AUTHORS         = 2;
+const GOLD_REQUIRED_LANGS      = ['en', 'hi', 'mr'];
+
+// ─── Helpers ────────────────────────────────────────────────────────────────
+
+function isCorrupted(str) {
+  if (!str || typeof str !== 'string') return false;
+  return CORRUPTED_PATTERNS.some(p => p.test(str.trim()));
+}
+
+function isPlaceholder(str) {
+  if (!str || typeof str !== 'string') return false;
+  return PLACEHOLDER_PATTERNS.some(p => p.test(str.trim()));
+}
+
+function isInvalidContent(str) {
+  return isCorrupted(str) || isPlaceholder(str);
+}
+
+function short(str, n = 60) {
+  const s = String(str || '').trim().replace(/\s+/g, ' ');
+  return s.length > n ? s.slice(0, n) + '…' : s;
+}
+
+// ─── Silver audit ───────────────────────────────────────────────────────────
+
+function auditSilverFile(filePath) {
+  const violations = [];
+  let verses;
+  try {
+    const raw = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+    verses = Array.isArray(raw) ? raw : (raw.verses || []);
+  } catch (e) {
+    return [{ type: 'PARSE_ERROR', msg: e.message }];
+  }
+
+  for (const verse of verses) {
+    const ref = `v${verse.chapter}.${verse.verse}`;
+
+    // Required fields
+    if (!verse.id)              violations.push({ ref, type: 'MISSING_ID' });
+    if (!verse.chapter)         violations.push({ ref, type: 'MISSING_CHAPTER' });
+    if (verse.verse === undefined) violations.push({ ref, type: 'MISSING_VERSE_NUM' });
+
+    // Original Sanskrit
+    if (!verse.original || verse.original.trim().length < 5) {
+      violations.push({ ref, type: 'MISSING_ORIGINAL', val: short(verse.original) });
+    } else if (isCorrupted(verse.original)) {
+      violations.push({ ref, type: 'CORRUPTED_ORIGINAL', val: short(verse.original) });
+    }
+
+    // Transliteration
+    if (!verse.transliteration || verse.transliteration.trim().length < 5) {
+      violations.push({ ref, type: 'MISSING_TRANSLIT', val: short(verse.transliteration) });
+    } else if (isCorrupted(verse.transliteration)) {
+      violations.push({ ref, type: 'CORRUPTED_TRANSLIT', val: short(verse.transliteration) });
+    }
+
+    // Layers
+    if (!Array.isArray(verse.layers) || verse.layers.length === 0) {
+      violations.push({ ref, type: 'NO_LAYERS' });
+      continue;
+    }
+
+    let hasEnLayer = false;
+    for (const layer of verse.layers) {
+      if (!layer.author) violations.push({ ref, type: 'LAYER_NO_AUTHOR' });
+      if (!layer.lang)   violations.push({ ref, type: 'LAYER_NO_LANG' });
+      if (!layer.type)   violations.push({ ref, type: 'LAYER_NO_TYPE' });
+      if (isCorrupted(layer.content)) {
+        violations.push({ ref, type: 'LAYER_CORRUPTED', author: layer.author, lang: layer.lang, val: short(layer.content) });
+      }
+      if (layer.lang === 'en' && layer.content && !isCorrupted(layer.content)) {
+        hasEnLayer = true;
+      }
+    }
+    if (!hasEnLayer) violations.push({ ref, type: 'NO_EN_LAYER' });
+  }
+
+  return violations;
+}
+
+// ─── Gold audit ─────────────────────────────────────────────────────────────
+
+function auditGoldFile(filePath) {
+  const violations = [];
+  let verses;
+  try {
+    const raw = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+    verses = Array.isArray(raw) ? raw : (raw.verses || []);
+  } catch (e) {
+    return [{ type: 'PARSE_ERROR', msg: e.message }];
+  }
+
+  // Track per-chapter repeated content
+  const chapterContentMap = {}; // chapterKey → { author+lang → [content] }
+
+  for (const verse of verses) {
+    const ref = `v${verse.chapter}.${verse.verse}`;
+    const ch  = `ch${verse.chapter}`;
+
+    // ── Sanskrit core ──────────────────────────────────────────────────────
+    if (!verse.original || verse.original.trim().length < GOLD_MIN_ORIGINAL_LEN) {
+      violations.push({ ref, type: 'GOLD_MISSING_ORIGINAL', val: short(verse.original) });
+    } else if (isInvalidContent(verse.original)) {
+      violations.push({ ref, type: 'GOLD_INVALID_ORIGINAL', val: short(verse.original) });
+    }
+
+    if (!verse.transliteration || verse.transliteration.trim().length < GOLD_MIN_TRANSLIT_LEN) {
+      violations.push({ ref, type: 'GOLD_MISSING_TRANSLIT', val: short(verse.transliteration) });
+    } else if (isInvalidContent(verse.transliteration)) {
+      violations.push({ ref, type: 'GOLD_INVALID_TRANSLIT', val: short(verse.transliteration) });
+    }
+
+    if (!verse.translation || verse.translation.trim().length < GOLD_MIN_TRANSLATION_LEN) {
+      violations.push({ ref, type: 'GOLD_MISSING_TRANSLATION', val: short(verse.translation) });
+    }
+
+    if (!verse.meaning || verse.meaning.trim().length < GOLD_MIN_MEANING_LEN) {
+      violations.push({ ref, type: 'GOLD_MISSING_MEANING', val: short(verse.meaning) });
+    }
+
+    // ── Layers ─────────────────────────────────────────────────────────────
+    const layers = Array.isArray(verse.layers) ? verse.layers : [];
+    const authorLangMap = {}; // author → Set of langs
+
+    for (const layer of layers) {
+      const key = `${layer.author}::${layer.lang}`;
+      if (!authorLangMap[layer.author]) authorLangMap[layer.author] = new Set();
+      authorLangMap[layer.author].add(layer.lang);
+
+      const content = String(layer.content || '').trim();
+
+      // Block invalid content in gold
+      if (isInvalidContent(content)) {
+        violations.push({ ref, type: 'GOLD_INVALID_LAYER_CONTENT', author: layer.author, lang: layer.lang, val: short(content) });
+        continue;
+      }
+
+      // Min length
+      if (content.length < GOLD_MIN_LAYER_LEN) {
+        violations.push({ ref, type: 'GOLD_THIN_LAYER', author: layer.author, lang: layer.lang, len: content.length });
+      }
+
+      // Author metadata completeness
+      if (!layer.author_name) violations.push({ ref, type: 'GOLD_MISSING_AUTHOR_NAME', author: layer.author, lang: layer.lang });
+      if (!layer.author_label) violations.push({ ref, type: 'GOLD_MISSING_AUTHOR_LABEL', author: layer.author, lang: layer.lang });
+
+      // Track for repeated content check
+      if (!chapterContentMap[ch]) chapterContentMap[ch] = {};
+      if (!chapterContentMap[ch][key]) chapterContentMap[ch][key] = [];
+      chapterContentMap[ch][key].push({ verse: verse.verse, content });
+    }
+
+    // Verify required langs per author
+    const authors = Object.keys(authorLangMap);
+    if (authors.length < GOLD_MIN_AUTHORS) {
+      violations.push({ ref, type: 'GOLD_INSUFFICIENT_AUTHORS', count: authors.length, need: GOLD_MIN_AUTHORS });
+    }
+    for (const author of authors) {
+      for (const lang of GOLD_REQUIRED_LANGS) {
+        if (!authorLangMap[author].has(lang)) {
+          violations.push({ ref, type: 'GOLD_MISSING_LANG', author, lang });
+        }
+      }
+    }
+
+    // AI metadata
+    if (!verse.ai_metadata) {
+      violations.push({ ref, type: 'GOLD_MISSING_AI_METADATA' });
+    } else {
+      if (!Array.isArray(verse.ai_metadata.topics)) violations.push({ ref, type: 'GOLD_MISSING_TOPICS' });
+      if (!verse.ai_metadata.fingerprint)           violations.push({ ref, type: 'GOLD_MISSING_FINGERPRINT' });
+      if (!verse.ai_metadata.stats)                 violations.push({ ref, type: 'GOLD_MISSING_STATS' });
+    }
+  }
+
+  // ── Repeated content check across chapter ──────────────────────────────
+  for (const [ch, authorMap] of Object.entries(chapterContentMap)) {
+    for (const [key, entries] of Object.entries(authorMap)) {
+      const groups = {};
+      for (const e of entries) {
+        if (!groups[e.content]) groups[e.content] = [];
+        groups[e.content].push(e.verse);
+      }
+      for (const [content, verseNums] of Object.entries(groups)) {
+        if (verseNums.length > 1) {
+          const [author, lang] = key.split('::');
+          violations.push({
+            ref: ch,
+            type: 'GOLD_REPEATED_CONTENT',
+            author, lang,
+            count: verseNums.length,
+            verses: verseNums.slice(0, 8),
+            val: short(content)
+          });
+        }
+      }
+    }
+  }
+
+  return violations;
+}
+
+// ─── Printer ────────────────────────────────────────────────────────────────
+
+function printViolations(violations, label) {
+  if (violations.length === 0) {
+    console.log(`  ✓ ${label}`);
+    return;
+  }
+  console.log(`  ✗ ${label} — ${violations.length} violation(s)`);
+  const grouped = {};
+  for (const v of violations) {
+    const k = v.type;
+    if (!grouped[k]) grouped[k] = [];
+    grouped[k].push(v);
+  }
+  for (const [type, items] of Object.entries(grouped)) {
+    const sample = items.slice(0, 3).map(i => {
+      const parts = [i.ref];
+      if (i.author) parts.push(`author:${i.author}`);
+      if (i.lang)   parts.push(`lang:${i.lang}`);
+      if (i.val)    parts.push(`"${i.val}"`);
+      if (i.len !== undefined) parts.push(`len:${i.len}`);
+      if (i.verses) parts.push(`verses:[${i.verses.join(',')}]`);
+      if (i.msg)    parts.push(i.msg);
+      return parts.join(' ');
+    }).join('\n        ');
+    console.log(`    [${type}] ×${items.length}`);
+    console.log(`        ${sample}`);
+    if (items.length > 3) console.log(`        … and ${items.length - 3} more`);
+  }
+}
+
+// ─── Book runners ────────────────────────────────────────────────────────────
+
+function runGoldBook(slug) {
+  const bookDir = path.join(GOLD_DIR, slug);
+  if (!fs.existsSync(bookDir)) {
+    console.log(`  ✗ ${slug}: no gold directory`);
+    return 1;
+  }
+  const files = fs.readdirSync(bookDir).filter(f => f.endsWith('.json')).sort();
+  if (files.length === 0) {
+    console.log(`  ✗ ${slug}: empty gold directory (no JSON files)`);
+    return 1;
+  }
+
+  let totalViolations = 0;
+  for (const file of files) {
+    const viol = auditGoldFile(path.join(bookDir, file));
+    totalViolations += viol.length;
+    printViolations(viol, file);
+  }
+  return totalViolations;
+}
+
+function runSilverBook(slug) {
+  const bookDir = path.join(SILV_DIR, slug);
+  if (!fs.existsSync(bookDir)) {
+    // May have sub-directories (e.g. mahabharata/parva-1/)
+    console.log(`  — ${slug}: not found directly, skipping`);
+    return 0;
+  }
+  const files = fs.readdirSync(bookDir).filter(f => f.endsWith('.json') && !f.endsWith('.meta.json')).sort();
+  if (files.length === 0) {
+    console.log(`  — ${slug}: no JSON files`);
+    return 0;
+  }
+
+  let totalViolations = 0;
+  for (const file of files) {
+    const viol = auditSilverFile(path.join(bookDir, file));
+    totalViolations += viol.length;
+    printViolations(viol, file);
+  }
+  return totalViolations;
+}
+
+// ─── Main ────────────────────────────────────────────────────────────────────
+
+function main() {
+  const args = process.argv.slice(2);
+  const silverMode = args.includes('--silver');
+  const allMode    = args.includes('--all');
+  const targets    = args.filter(a => !a.startsWith('--'));
+
+  console.log('audit_standards.js — Vishwa-Vani data standards checker');
+  console.log(`Mode: ${silverMode ? 'SILVER' : 'GOLD'}${allMode ? ' (all books)' : ''}`);
+  console.log('');
+
+  let totalViolations = 0;
+
+  if (silverMode) {
+    const books = allMode || targets.length === 0
+      ? fs.readdirSync(SILV_DIR).filter(b => fs.statSync(path.join(SILV_DIR, b)).isDirectory())
+      : targets;
+
+    for (const book of books) {
+      console.log(`[SILVER] ${book}`);
+      totalViolations += runSilverBook(book);
+      console.log('');
+    }
+  } else {
+    const books = allMode || targets.length === 0
+      ? fs.readdirSync(GOLD_DIR).filter(b => fs.statSync(path.join(GOLD_DIR, b)).isDirectory())
+      : targets;
+
+    for (const book of books) {
+      console.log(`[GOLD] ${book}`);
+      totalViolations += runGoldBook(book);
+      console.log('');
+    }
+  }
+
+  if (totalViolations === 0) {
+    console.log('✓ PASS — all checked files meet tier standards.');
+    process.exit(0);
+  } else {
+    console.log(`✗ FAIL — ${totalViolations} total violation(s). See output above.`);
+    process.exit(1);
+  }
+}
+
+main();

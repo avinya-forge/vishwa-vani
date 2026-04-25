@@ -63,7 +63,10 @@ export async function POST(request: Request) {
           Provide only the summary, no introductory or concluding text.
         `
 
-        const result = await model.generateContent(prompt)
+        const timeoutPromise = new Promise<never>((_, reject) =>
+          setTimeout(() => reject(new Error('Gemini timeout after 10s')), 10_000)
+        )
+        const result = await Promise.race([model.generateContent(prompt), timeoutPromise])
         const synthesis = result.response.text().trim()
 
         if (synthesis) {
