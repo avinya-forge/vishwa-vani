@@ -57,7 +57,7 @@ export async function searchLake(query: string) {
   // Find all unique lake shards mentioned in registry
   const shards = Array.from(new Set(
     VEDIC_LIBRARY
-      .filter(t => t.storage === 'lake' && t.lakeFile)
+      .filter(t => t.available && t.storage === 'lake' && t.lakeFile)
       .map(t => t.lakeFile as string)
   ));
 

@@ -68,12 +68,12 @@ export default function FeedbackWidget() {
     <>
       <button
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 bg-orange-600 hover:bg-orange-700 text-white rounded-full p-2.5 sm:p-3 shadow-lg z-50 transition-transform hover:scale-105 flex items-center justify-center border-2 border-white/20"
+        className="fixed bottom-6 right-6 sm:bottom-10 sm:right-10 bg-orange-600 hover:bg-orange-700 text-white rounded-full p-3 sm:p-4 shadow-2xl z-[1000] transition-all hover:scale-110 active:scale-95 flex items-center justify-center border-2 border-white/20 group"
         aria-label="Report an issue or give feedback"
         title="Report an issue or give feedback"
       >
         <span className="text-sm sm:text-lg px-1 sm:px-2 flex items-center gap-2">
-          <span>💬</span>
+          <span className="group-hover:rotate-12 transition-transform duration-300">💬</span>
           <span className="hidden xs:inline font-bold uppercase tracking-widest text-[10px] sm:text-xs">Feedback</span>
         </span>
       </button>

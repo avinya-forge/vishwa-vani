@@ -21,10 +21,10 @@ export default function VedicTimeline({ slug }: { slug: string }) {
     const meta = book?.contextualInfo
 
     const milestones = [
-        { label: 'Ancient Era', val: meta?.historicalEra || 'Approx. 3102 BCE', active: true },
-        { label: 'Scientific Evidence', val: meta?.archaeologicalEvidence || 'Literary Traditions', active: !!meta?.archaeologicalEvidence },
-        { label: 'Scriptural Tradition', val: meta?.documentationEra || 'Classical Compilation', active: true },
-        { label: 'Sacred Location', val: meta?.geographicalContext || 'Kurukshetra Basin', active: !!meta?.geographicalContext }
+        { label: 'Ancient Era', val: meta?.historicalEra || 'Vedic Antiquity', active: !!meta?.historicalEra },
+        { label: 'Scientific Evidence', val: meta?.archaeologicalEvidence || 'Literary Tradition', active: !!meta?.archaeologicalEvidence },
+        { label: 'Scriptural Tradition', val: meta?.documentationEra || 'Oral Recitation', active: !!meta?.documentationEra },
+        { label: 'Sacred Location', val: meta?.geographicalContext || 'Bharata Varsha', active: !!meta?.geographicalContext }
     ]
 
     return (

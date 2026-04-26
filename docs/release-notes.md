@@ -1,5 +1,21 @@
 # Release Notes
 
+## [1.0.11] - 2026-04-25 (Project Sanitization & Stabilization Sprint)
+
+### Tasks Completed
+- BUG-060: Fixed Isha Upanishad metadata leak by providing authentic historical/geographical data and refactoring `VedicTimeline`.
+- BUG-061: Resolved ineffective theme toggle by implementing Tailwind v4 `@variant dark` support in `globals.css` and using semantic background tokens in `layout.tsx`.
+- BUG-062: Fixed Search failure (`itihasa-lake.db` fetch error) by filtering the scripture registry for available texts only in `lib/lake.ts`.
+- BUG-063: Improved mobile responsiveness of `FeedbackWidget` by adjusting z-index and positioning to prevent content overlap.
+- BUG-064: Corrected misleading library stats on landing page; total verse count now accurately reflects available Gold texts (~700+).
+- Sanitization: Fixed 3 blocking lint errors in `study-client.tsx` regarding non-null assertions and synthesis fetch error handling.
+
+### Quality Status
+- Lint: ✅ CLEAN
+- Build: ✅ PASSING
+- Tests: ✅ 169 PASSING
+- Stability Gate: EPIC 7 requirements satisfied for current book cycle.
+
 ## [1.0.10] - 2026-04-25 (Gold Data Quality + Pipeline + UI Bug Sprint)
 
 ### Tasks Completed

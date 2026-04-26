@@ -1,6 +1,6 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
-@custom-variant dark (&:where(.dark, .dark *));
+@variant dark (&:where(.dark, .dark *));
 
 /* 🕉️ VISHWA-VANI DESIGN SYSTEM v2.1 (Architectural Stability Fix) */
 :root {

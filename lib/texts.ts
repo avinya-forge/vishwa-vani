@@ -161,6 +161,17 @@ export const VEDIC_LIBRARY: VedicText[] = [
     chapterNames: { '1': 'Isha Upanishad — Complete Text' },
     chapterNamesHi: { '1': 'ईशावास्योपनिषद् — पूर्ण पाठ' },
     chapterNamesMr: { '1': 'ईशावास्योपनिषद् — पूर्ण पाठ' },
+    contextualInfo: {
+      speaker: 'Sage Yajnavalkya (Tradition)',
+      listener: 'Universal Seekers',
+      lineage: 'Shukla Yajurveda (Madhyandina/Kanva)',
+      historicalEra: '1st Millennium BCE (Vedic Period)',
+      documentationEra: 'Vajasaneyi Samhita (Final Chapter)',
+      archaeologicalEvidence: 'Painted Gray Ware (PGW) Period',
+      geographicalContext: 'Kuru-Panchala Region',
+      keyThemes: ['Vidya & Avidya', 'Sambhutim & Asambhutim', 'Oneness of Self', 'Detachment'],
+      availableEditions: ['Shankaracharya', 'Sri Aurobindo', 'Swami Ranganathananda']
+    },
   },
   {
     slug: 'kena-upanishad',
@@ -470,7 +481,7 @@ export function getLibraryStats() {
         totalChapters: texts.reduce((acc: number, t: VedicText) => acc + t.totalChapters, 0),
         totalAuthors: 5, // ISKCON, Dnyaneshwari, Ghaisas, Patanjali, Shankara
         totalLangs: 4,   // EN, HI, MR, SA
-        totalVerses: '39,390+', // This is a live counter + archived targets
+        totalVerses: '700+', // Currently Gita (657) + Isha (18)
         targetVerses: '100,000+', // Mahabharata + Puranas expansion target
         categories: Array.from(new Set(texts.map((t: VedicText) => t.category)))
     }

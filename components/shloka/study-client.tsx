@@ -470,7 +470,7 @@ export default function StudyClient({
          const contextTexts = [meaning, ...commentaries.map((c: unknown) => (c as Record<string, unknown>).content)].filter((t: unknown) => t)
          const controller = new AbortController()
          const timeoutId = setTimeout(() => controller.abort(), 15_000)
-         let res: Response
+         let res: Response | null = null
          try {
            res = await fetch('/api/synthesize', {
              method: 'POST',
@@ -481,8 +481,8 @@ export default function StudyClient({
          } finally {
            clearTimeout(timeoutId)
          }
-         if (!res!.ok) throw new Error('Synthesis API responded with status ' + res!.status)
-         const data = await res!.json() as Record<string, unknown>
+         if (!res || !res.ok) throw new Error('Synthesis API responded with status ' + (res?.status ?? 'unknown'))
+         const data = await res.json() as Record<string, unknown>
          if (data.success) {
            setSynthesisMap(p => ({...p, [v.id as string]: { text: data.synthesis as string, loading: false }}))
          } else {

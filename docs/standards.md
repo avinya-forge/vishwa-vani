@@ -5,20 +5,14 @@ This file is the single source of truth for standards, UI template requirements,
 ## 📁 Active Documentation Set (Flat — all files directly in docs/)
 - `README.md` — Vision and project overview.
 - `docs/vision.md` — Strategic direction and product intent.
-- `docs/backlog.md` — The single active backlog and roadmap (append-only ledger).
+- `docs/backlog.md` — The single active backlog, roadmap, and release checklists.
 - `docs/release-notes.md` — Release history and completed work.
 - `docs/blueprint.md` — Architectural principles, zero-cost deployment, API expectations.
 - `docs/standards.md` — Standards, UI template requirements, and document policy (this file).
-- `docs/jules-prompt.md` — Schedulable Jules execution prompt for sprint automation.
-- `docs/content-quality-report.md` — Auto-generated quality report for all active texts.
-- `docs/deployment-plan.md` — Future strategies for deployment scaling.
-- `docs/deployment.md` — Current active deployment configuration and steps.
-- `docs/final-verification-checklist.md` — Manual launch criteria for v1.0.0.
+- `docs/deployment.md` — Active deployment configuration and future zero-cost strategy.
 - `docs/launch-announcement.md` — Marketing and release copy for product launch.
-- `docs/release-notes-v1.0.0.md` — Archived static release notes.
-- `docs/sitemap-submission.md` — Search engine indexing procedures.
 
-> **FLAT DOCS RULE**: All documentation lives directly in `docs/`. No subdirectories (`docs/planning/`, `docs/architecture/`, `docs/rules/`) are permitted. If UI template details are needed, use the UI Template section in this file.
+> **FLAT DOCS RULE**: All documentation lives directly in `docs/`. No subdirectories (`docs/planning/`, `docs/architecture/`, `docs/rules/`) are permitted.
 
 ---
 
@@ -36,18 +30,28 @@ This file is the single source of truth for standards, UI template requirements,
 ## 2. Development Process
 ## 2. Development Process
 ### Data Pipeline (DP) Tiers & Promotion Criteria
-Vishwa-Vani follows a strict three-tier data pipeline. Data must meet 100% of the criteria before promotion.
+Vishwa-Vani follows a strict three-tier data pipeline (NVF 1.3). Data must meet 100% of the criteria before promotion.
 
-| Tier | Status | Criteria | UI Usage |
-|------|--------|----------|-----------|
-| **1-BRONZE** | Raw | Source text, OCR, or partial scrapes. Unstructured. | 🚫 Strictly Forbidden |
-| **2-SILVER** | Processing | Structured (NVF), massaged, but potentially incomplete or unverified. | 🚫 Strictly Forbidden |
-| **3-GOLD** | **UI-READY** | **Complete book**, 100% accurate, audited, scholarly-verified, final JSON/Lake format. | ✅ Production Ready |
+#### Tier Summary
+- **1-BRONZE (Raw)**: Source text, OCR, or partial scrapes. Unstructured. `data/1-bronze/`. 🚫 Strictly Forbidden in UI.
+- **2-SILVER (Processing)**: Structured (NVF JSON), massaged, but potentially incomplete or unverified. `data/2-silver/`. 🚫 Strictly Forbidden in UI.
+- **3-GOLD (UI-READY)**: **Complete book**, 100% accurate, audited, scholarly-verified, final JSON/Lake format. `data/3-gold/`. ✅ Production Ready.
 
-**Promotion Rule**: A book only enters **3-GOLD** when it is **100% complete** (all chapters/verses). Partial books (e.g. "Chapter 1 only") must remain in **2-SILVER** until the entire work is processed.
+#### GOLD Checklist — Per Verse (All must pass)
+- **Sanskrit Core**: `original` (Devanagari ≥ 10 chars), `transliteration` (IAST ≥ 10 chars), `translation` (Prose ≥ 20 chars), `meaning` (Word-by-word breakdown ≥ 20 chars).
+- **Commentary Layers**: Minimum 6 layers (2 authors × 3 languages: EN, HI, MR). Minimum 80 characters per layer. Must be authentic scholarly prose.
+- **AI Metadata**: Topics array (≥ 1 tag), fingerprint (MD5), and stats (word counts) populated.
+- **Content Rules**: No bracketed placeholders (`[PLACEHOLDER_*]`), no generic filler, no repeated identical content across verses.
 
-- **Audit**: Run `python scripts/vishwa.py audit` before promotion to Gold.
-- **Verification**: Spot-check 5% of verses against canonical editions.
+#### GOLD Checklist — Per Book (Mandatory before `available: true`)
+- All chapters pass per-chapter checklist (verse counts, metadata, Vedic Labs gate).
+- Audit passes: `node scripts/audit_gold.js {book-slug}` and `node scripts/audit_multilang.js {book-slug}`.
+- Manual UI verification: URL loads, permalinks work, all 3 language selectors function, AI synthesis works, responsive audit pass.
+- Flip `available: true` in `lib/texts.ts` ONLY after 100% compliance.
+
+#### Promotion Sequence
+1. **BRONZE → SILVER**: Convert to NVF 1.3 JSON. Fill real Sanskrit. At least 1 EN layer. `python3 scripts/vishwa.py validate` → exit 0.
+2. **SILVER → GOLD**: Complete all 6 layers. Authentic HI/MR content. Add AI metadata. `python3 scripts/vishwa.py promote` → `audit_gold.js` Readiness 100%.
 
 ### SDLC Release Flow
 1. Pick the top unchecked task from `docs/backlog.md`.
@@ -198,7 +202,7 @@ These three gates are **blocking**. No commit proceeds if any of them fail.
 ## 9. Hygiene
 - Remove temporary files before merge.
 - No stray `logs/`, `dumps/`, `tmp/`, or `.bak` files.
-- Keep docs confined to the six active files listed in Section 1.
+- Keep docs confined to the eight active files listed in Section 1 (including README.md).
 - The `coverage/` directory is gitignored — do not commit coverage reports.
 
 ---
