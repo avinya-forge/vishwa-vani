@@ -1,0 +1,9 @@
+{
+    "project_name": "Scalable-App-V1",
+    "preferred_models": {
+        "planning": "claude-3-5-sonnet-thinking",
+        "execution": "gemini-3-flash",
+        "qa_audit": "claude-3-5-sonnet-thinking"
+    },
+    "terminal_policy": "auto"
+}

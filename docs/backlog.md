@@ -23,19 +23,19 @@ Active tasks for this book — follows BOOK CYCLE TEMPLATE (8 stages):
 
 STAGE 1 — DATA GATHERING:
 - [x] `ISHA-DATA-1` Acquire missing 8 verses (9–17): Sanskrit original (Devanagari) + IAST transliteration for all 18 verses. — Done: 2026-04-26
-- [ ] `ISHA-DATA-2` **[IN PROGRESS]** Author 1 EN: Shankara Bhashya English translation (Max Müller SBE Vol 1, public domain) for all 18 verses. ≥ 20 chars/verse, no bracket prefix.
-- [ ] `ISHA-DATA-3` Author 1 HI: Hindi translation of Isha from Gita Press or Geeta Vatika (public domain). All 18 verses.
-- [ ] `ISHA-DATA-4` Author 1 MR: Marathi translation of Isha (Warkari tradition or Gita Press Marathi). All 18 verses.
-- [ ] `ISHA-DATA-5` Author 2 EN: Sri Aurobindo's commentary on Isha Upanishad (public domain — The Secret of the Veda / Isha Upanishad, published 1914). All 18 verses.
-- [ ] `ISHA-DATA-6` Stotra scan: Isha Upanishad is itself recited as a daily prayer/mantra. Tag entire text as `dailyUse: true, mantraType: 'upanishad-mantra'`. Note shanti patha (introductory peace invocation).
-- [ ] `ISHA-DATA-7` Author 2 HI: Hindi translation of Sri Aurobindo's Isha Upanishad commentary (Aurobindo Ashram Hindi publications or scholarly Hindi paraphrase of The Secret of the Veda, 1914). All 18 verses ≥ 80 chars/verse, verse-specific — not chapter summaries.
-- [ ] `ISHA-DATA-8` Author 2 MR: Marathi commentary on Isha. Source: Tilak's Vedic writings (Marathi original) or Warkari commentary tradition (Eknathi Bhagavat references to Isha). All 18 verses ≥ 80 chars/verse, verse-specific.
-- [ ] `ISHA-DATA-9` Write `scripts/enrich_isha.js` — merges all 8 acquired data sources (Author 1 EN/HI/MR + Author 2 EN/HI/MR + Sanskrit + transliteration) into NVF gold-standard shards for all 18 verses. Output: `data/2-silver/isha-upanishad/isha-upanishad-chapter-1.json` with 6-layer schema per verse (2 authors × 3 languages). Run after ISHA-DATA-1 through ISHA-DATA-8 are all complete.
+- [x] `ISHA-DATA-2` Author 1 EN: Shankara Bhashya English translation (Max Müller SBE Vol 1, public domain) for all 18 verses. ≥ 20 chars/verse, no bracket prefix. — Done: 2026-04-26
+- [x] `ISHA-DATA-3` Author 1 HI: Hindi translation of Isha from Gita Press or Geeta Vatika (public domain). All 18 verses. — Done: 2026-04-26
+- [x] `ISHA-DATA-4` Author 1 MR: Marathi translation of Isha (Warkari tradition or Gita Press Marathi). All 18 verses. — Done: 2026-04-26
+- [x] `ISHA-DATA-5` Author 2 EN: Sri Aurobindo's commentary on Isha Upanishad (public domain — The Secret of the Veda / Isha Upanishad, published 1914). All 18 verses. — Done: 2026-04-26
+- [x] `ISHA-DATA-6` Stotra scan: Isha Upanishad is itself recited as a daily prayer/mantra. Tag entire text as `dailyUse: true, mantraType: 'upanishad-mantra'`. Note shanti patha (introductory peace invocation). — Done: 2026-04-26
+- [x] `ISHA-DATA-7` Author 2 HI: Hindi translation of Sri Aurobindo's Isha Upanishad commentary. — Done: 2026-04-26
+- [x] `ISHA-DATA-8` Author 2 MR: Marathi commentary on Isha. — Done: 2026-04-26
+- [x] `ISHA-DATA-9` Write `scripts/enrich_isha.js` — merges all 8 acquired data sources... Run after ISHA-DATA-1 through ISHA-DATA-8 are all complete. — Done: 2026-04-26
 
 STAGE 2 — PIPELINE:
-- [ ] `ISHA-PIPE-1` Run `node scripts/validate_silver.js isha-upanishad` — must exit 0. Fix all failures.
-- [ ] `ISHA-PIPE-2` Run `node scripts/promote_to_gold.js isha-upanishad`.
-- [ ] `ISHA-PIPE-3` Run `node scripts/audit_gold.js isha-upanishad` — Readiness: 100%, 18 verses, 2 authors, EN/HI/MR present.
+- [x] `ISHA-PIPE-1` Run `node scripts/validate_silver.js isha-upanishad` — must exit 0. Fix all failures. — Done: 2026-04-26
+- [x] `ISHA-PIPE-2` Run `node scripts/promote_to_gold.js isha-upanishad`. — Done: 2026-04-26
+- [x] `ISHA-PIPE-3` Run `node scripts/audit_gold.js isha-upanishad` — Readiness: 100%, 18 verses, 2 authors, EN/HI/MR present. — Done: 2026-04-26
 
 STAGE 3 — UI INTEGRATION:
 - [ ] `ISHA-UI-1` Test `/isha-upanishad/1`: all 18 verses render, all 3 languages show, both scholars selectable.
