@@ -31,7 +31,10 @@
       "Bash(grep -v \"^\\\\s*●\\\\s*$\")",
       "Bash(npx next *)",
       "Bash(find /d/Code/avinya-forge/vishwa-vani -type f \\\\\\( -name \"*.ts\" -o -name \"*.tsx\" \\\\\\) ! -path \"*/.next/*\" -exec grep -l \"console\\\\.\" {} \\\\;)",
-      "PowerShell(New-Item -ItemType Directory -Force -Path graphify-out)"
+      "PowerShell(New-Item -ItemType Directory -Force -Path graphify-out)",
+      "Bash(gh pr create --title 'chore\\(settings\\): add graphify + pipeline tool permissions' --body ' *)",
+      "Bash(node scripts/audit_gold.js isha-upanishad)",
+      "Bash(git commit -m ' *)"
     ]
   }
 }
