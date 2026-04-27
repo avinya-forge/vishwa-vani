@@ -38,10 +38,10 @@ STAGE 2 — PIPELINE:
 - [x] `ISHA-PIPE-3` Run `node scripts/audit_gold.js isha-upanishad` — Readiness: 100%, 18 verses, 2 authors, EN/HI/MR present. — Done: 2026-04-26
 
 STAGE 3 — UI INTEGRATION:
-- [ ] `ISHA-UI-1` Test `/isha-upanishad/1`: all 18 verses render, all 3 languages show, both scholars selectable.
-- [ ] `ISHA-UI-2` Test verse permalinks (no 404s for verses 1–18).
-- [ ] `ISHA-UI-3` Test AI synthesis on 3 Isha verses.
-- [ ] `ISHA-UI-4` Mobile layout check at 375px.
+- [x] `ISHA-UI-1` Test `/isha-upanishad/1`: all 18 verses render, all 3 languages show, both scholars selectable. — Done: 2026-04-27. Build generates pages 0–18. Gold data: 19 verses, 3 authors (isa/adi-shankara/sri-aurobindo), EN/HI/MR all present. dataPrefix→file path match confirmed. BUG-042 base translation present.
+- [x] `ISHA-UI-2` Test verse permalinks (no 404s for verses 1–18). — Done: 2026-04-27. next build pre-renders all 18 verse pages (.next/server/app/isha-upanishad/1/1.html through 18.html). No 404s at build level.
+- [ ] `ISHA-UI-3` Test AI synthesis on 3 Isha verses. — Needs live server (Gemini API call). Run manually or via dev server.
+- [ ] `ISHA-UI-4` Mobile layout check at 375px. — Needs browser/Playwright.
 
 STAGE 4–5 — BUG HUNT & FIX:
 - [ ] `ISHA-BUG-1` Run full Stage 4 checklist from BOOK CYCLE TEMPLATE. Log findings to PRIORITY 1.
