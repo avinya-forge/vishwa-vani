@@ -1,0 +1,145 @@
+{
+  "id": "isha-shanti-patha",
+  "slug": "isha-shanti-patha",
+  "title": {
+    "en": "Isha Upanishad Shanti Patha",
+    "hi": "ईशावास्योपनिषद् शान्तिपाठ",
+    "mr": "ईशावास्योपनिषद् शांतीपाठ",
+    "sa": "ईशावास्योपनिषद् शान्तिपाठः"
+  },
+  "mantraType": "upanishad-mantra",
+  "deity": "Brahman / Purna (the Absolute Whole)",
+  "dailyUse": true,
+  "tradition": "Shukla Yajurveda",
+  "sourceBook": "isha-upanishad",
+  "sourceChapter": 1,
+  "sourceVerseRef": "Shanti Patha (prefatory mantra before verse 1)",
+  "totalMantras": 3,
+  "notes": "The Isha Upanishad shanti patha is the traditional peace invocation recited before and after the Isha. It encapsulates the entire Upanishad's teaching in three lines: the declaration of purnata (wholeness), the inference of wholeness from wholeness, and the prayer for peace at all three levels of existence.",
+  "verses": [
+    {
+      "id": "isha-shanti-patha-1",
+      "verse": 1,
+      "original": "ॐ पूर्णमदः पूर्णमिदम् पूर्णात् पूर्णमुदच्यते ।",
+      "transliteration": "Oṃ pūrṇam adaḥ pūrṇam idaṃ pūrṇāt pūrṇam udacyate |",
+      "translation": "Om. That is whole (infinite). This is whole (infinite). From the whole, the whole becomes manifest.",
+      "meaning": "The Absolute (Brahman) is whole and infinite. This manifest universe is also whole and infinite. When the whole (universe) emerges from the Whole (Brahman), the Whole (Brahman) remains undivided and whole.",
+      "layers": [
+        {
+          "author": "adi-shankara",
+          "author_name": "Adi Shankaracharya",
+          "author_label": "Advaita Vedanta — 8th century CE",
+          "lang": "en",
+          "type": "commentary",
+          "content": "Pūrṇam adaḥ — that Brahman which is the cause is full (pūrṇa) because it is not limited by any adjunct (upādhi). Pūrṇam idam — this manifested universe too is pūrṇa in the sense that it has Brahman as its substratum and does not lack anything as an appearance. When the manifested whole is taken away, Brahman remains undiminished. This teaches the non-dual identity of cause and effect."
+        },
+        {
+          "author": "adi-shankara",
+          "author_name": "Adi Shankaracharya",
+          "author_label": "Advaita Vedanta — 8th century CE",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "वह ब्रह्म पूर्ण है — न किसी कारण से सीमित, न किसी उपाधि से। यह जगत भी पूर्ण है क्योंकि इसका आधार ब्रह्म है। जब पूर्ण में से पूर्ण निकल जाता है, तब भी पूर्ण शेष रहता है। यह मंत्र अद्वैत वेदान्त की मूल शिक्षा को एक ही श्लोक में व्यक्त करता है।"
+        },
+        {
+          "author": "adi-shankara",
+          "author_name": "Adi Shankaracharya",
+          "author_label": "Advaita Vedanta — 8th century CE",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "तो ब्रह्म पूर्ण आहे — कोणत्याही उपाधीने मर्यादित नाही. हे विश्वही पूर्ण आहे कारण त्याचा आधार ब्रह्म आहे. पूर्णातून पूर्ण निघाले तरी पूर्ण उरते — हाच अद्वैत वेदान्ताचा मूळ सिद्धान्त या एका मंत्रात सांगितला आहे।"
+        }
+      ],
+      "pronunciation_guide": {
+        "en": "Begin with a long, resonant Om. Pause after adaḥ (that) and idam (this). Stress pūrṇa on the first syllable: POOR-nam. The final 'ḥ' in adaḥ is a soft aspiration.",
+        "hi": "लंबे, गहरे ओम से शुरू करें। अदः और इदम् के बाद रुकें। पूर्ण में 'पूर्' पर बल दें। अंतिम विसर्ग (ः) को हल्की श्वास से उच्चारें।"
+      }
+    },
+    {
+      "id": "isha-shanti-patha-2",
+      "verse": 2,
+      "original": "पूर्णस्य पूर्णमादाय पूर्णमेवावशिष्यते ॥",
+      "transliteration": "pūrṇasya pūrṇam ādāya pūrṇam evāvaśiṣyate ||",
+      "translation": "Taking the whole from the whole, the whole still remains.",
+      "meaning": "Even after the entire manifest creation is drawn out from the Absolute, the Absolute remains complete and undivided. This is the paradox of infinite mathematics: infinity minus infinity is still infinity. Brahman is inexhaustible.",
+      "layers": [
+        {
+          "author": "adi-shankara",
+          "author_name": "Adi Shankaracharya",
+          "author_label": "Advaita Vedanta — 8th century CE",
+          "lang": "en",
+          "type": "commentary",
+          "content": "This second line logically follows from the first. If both the cause (Brahman) and the effect (world) are pūrṇa, then removing the effect does not diminish the cause. This is the signature of infinity: it cannot be depleted by subtraction. The teaching counters the intuition that creation must have diminished or departed from Brahman — it has not. Brahman is ever the same, as space is unchanged whether a pot exists within it or not."
+        },
+        {
+          "author": "adi-shankara",
+          "author_name": "Adi Shankaracharya",
+          "author_label": "Advaita Vedanta — 8th century CE",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "यह पंक्ति पहले श्लोक का तार्किक विस्तार है। यदि कारण और कार्य दोनों पूर्ण हैं, तो कार्य को हटाने पर कारण कम नहीं होता। यह अनंत का स्वभाव है — उससे कुछ भी घटाया जाए, वह पूर्ण रहता है। जैसे घड़े को हटाने पर आकाश कम नहीं होता, वैसे ही सृष्टि के लय पर भी ब्रह्म अखंड रहता है।"
+        },
+        {
+          "author": "adi-shankara",
+          "author_name": "Adi Shankaracharya",
+          "author_label": "Advaita Vedanta — 8th century CE",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "पूर्णातून पूर्ण घेतल्यानंतरही पूर्ण उरते — हे अनंताचे लक्षण आहे. कारण व कार्य दोन्ही पूर्ण असतील तर कार्य नष्ट केल्यावर कारण कमी होत नाही. जसे घडा नष्ट केला तरी आकाश कमी होत नाही, तसेच सृष्टी लयास गेली तरी ब्रह्म अखंड राहते।"
+        }
+      ],
+      "pronunciation_guide": {
+        "en": "This line is a single flowing sentence. Keep the pace steady. End with a double danda (||) pause — a full breath before proceeding to the peace prayer.",
+        "hi": "यह एक प्रवाहमान वाक्य है। गति समान रखें। दोहरे दण्ड (॥) के बाद पूरी सांस लें और शान्ति-मंत्र की ओर बढ़ें।"
+      }
+    },
+    {
+      "id": "isha-shanti-patha-3",
+      "verse": 3,
+      "original": "ॐ शान्तिः शान्तिः शान्तिः ॥",
+      "transliteration": "Oṃ śāntiḥ śāntiḥ śāntiḥ ||",
+      "translation": "Om. Peace. Peace. Peace.",
+      "meaning": "The three-fold peace invocation traditionally addresses the three types of obstacles (tapas): adhyatmika (internal — bodily and mental ailments), adhibhautika (external — disturbances from other beings), and adhidaivika (cosmic — natural forces, fate). Chanting peace three times invokes freedom from all three levels simultaneously.",
+      "layers": [
+        {
+          "author": "adi-shankara",
+          "author_name": "Adi Shankaracharya",
+          "author_label": "Advaita Vedanta — 8th century CE",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The three-fold repetition of śāntiḥ is not mere emphasis but a precise address to three categories of disturbance: internal (disease, mental agitation), external (conflict with other beings), and cosmic (forces of nature and fate). The Upanishadic student prepares the field of the mind by invoking peace at all three levels before entering the study of Brahman. Without this triple peace, the mind cannot hold the teaching of pūrṇatā."
+        },
+        {
+          "author": "adi-shankara",
+          "author_name": "Adi Shankaracharya",
+          "author_label": "Advaita Vedanta — 8th century CE",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "तीन बार शान्तिः का उच्चारण तीन प्रकार के तापों को शांत करने के लिए है — आध्यात्मिक (शरीर और मन की व्याधियाँ), आधिभौतिक (अन्य प्राणियों से बाधाएँ), और आधिदैविक (प्रकृति की शक्तियाँ)। ब्रह्म-विद्या का अध्ययन करने से पूर्व इन तीनों स्तरों पर शान्ति का आह्वान अनिवार्य है।"
+        },
+        {
+          "author": "adi-shankara",
+          "author_name": "Adi Shankaracharya",
+          "author_label": "Advaita Vedanta — 8th century CE",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "तीन वेळा शांतिः म्हणणे म्हणजे तीन प्रकारच्या ताप-निवारणासाठी — आध्यात्मिक (शरीर-मन), आधिभौतिक (इतर प्राण्यांशी संघर्ष), आणि आधिदैविक (नैसर्गिक शक्ती). ब्रह्मविद्येचा अभ्यास सुरू करण्यापूर्वी या तीनही स्तरांवर शांती मागणे आवश्यक आहे।"
+        }
+      ],
+      "pronunciation_guide": {
+        "en": "Chant each śāntiḥ slowly and resonantly. Pause briefly between each. The final śāntiḥ should fade into silence — do not rush. Let the silence after the third repetition be a moment of true stillness.",
+        "hi": "प्रत्येक शान्तिः को धीरे और गहराई से बोलें। बीच में थोड़ा रुकें। अंतिम शान्तिः के बाद मौन में रहें — यह मौन स्वयं ब्रह्म है।"
+      }
+    }
+  ],
+  "complete_text": {
+    "sa": "ॐ पूर्णमदः पूर्णमिदम् पूर्णात् पूर्णमुदच्यते । पूर्णस्य पूर्णमादाय पूर्णमेवावशिष्यते ॥ ॐ शान्तिः शान्तिः शान्तिः ॥",
+    "transliteration": "Oṃ pūrṇam adaḥ pūrṇam idaṃ pūrṇāt pūrṇam udacyate | pūrṇasya pūrṇam ādāya pūrṇam evāvaśiṣyate || Oṃ śāntiḥ śāntiḥ śāntiḥ ||",
+    "en": "Om. That is whole, this is whole; from the whole, the whole becomes manifest. Taking the whole from the whole, the whole still remains. Om. Peace. Peace. Peace."
+  },
+  "daily_practice": {
+    "when": "Recite at the beginning and end of Upanishad study, morning prayer, or meditation session.",
+    "duration": "Approximately 30 seconds at a deliberate pace.",
+    "effect": "Stabilises the mind for study or meditation; invokes the field of Brahman as the context for all learning and practice."
+  }
+}
