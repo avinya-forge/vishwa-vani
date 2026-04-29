@@ -263,14 +263,24 @@ export const VEDIC_LIBRARY: VedicText[] = [
     },
     contextualInfo: {
       speaker: 'Vyasa / Vaisampayana',
-      listener: 'Janamejaya',
-      lineage: 'Kuru Dynasty History',
-      historicalEra: '3102 BCE (Great War Epoch)',
-      documentationEra: '8th-4th Century BCE (Jaya to Mahabharata)',
-      archaeologicalEvidence: 'Painted Gray Ware (PGW) Culture parallels',
-      geographicalContext: 'Hastinapur / Kurukshetra',
-      keyThemes: ['Dharma', 'History', 'Politics', 'Ethics'],
-      availableEditions: ['Bhandarkar Oriental Research Institute (BORI)']
+      listener: "Janamejaya (Vyasa recites to Vaisampayana; Vaisampayana recites at Janamejaya's sarpa-satra)",
+      lineage: 'Kuru Dynasty — Bharat Vamsha (descendants of Bharata)',
+      historicalEra: '~900 BCE (Astronomical Evidence via Nilesh Oak) / 3102 BCE (Kali Yuga Traditional)',
+      documentationEra: '400 BCE – 400 CE (Core Jaya expanded to Mahabharata; BORI Critical Edition)',
+      archaeologicalEvidence: 'Painted Gray Ware (PGW) Culture c.1200–600 BCE at Hastinapur & Kurukshetra sites; BORI Critical Edition (1966–2016, 19 volumes)',
+      geographicalContext: 'Hastinapur (Kuru capital), Kurukshetra (battle site), Indraprastha (Pandava capital), Dwaraka (Krishna)',
+      keyThemes: ['Dharma vs Adharma', 'Kshatriya duty', 'Karma', 'Cosmic cycles', 'Bhakti', 'Vedanta (via Gita)', 'State craft', 'Family loyalty'],
+      availableEditions: [
+        'Bhandarkar Oriental Research Institute (BORI) Critical Edition — 1966–2016',
+        'Kisari Mohan Ganguli (KMG) English translation — 1883–1896 (public domain)',
+        'Bibek Debroy translation — 2010–2014, Penguin (modern scholarly)'
+      ],
+      parvaStructure: {
+        totalParvas: 18,
+        totalAdhyayas: 2109,
+        totalShlokas: 100000,
+        note: 'Adi Parva alone has 236 adhyayas. Shanti Parva is the longest (339 adhyayas).'
+      }
     },
     children: ['bhagavad-gita'], // Contains Bhagavad Gita within Bhishma Parva
   },

@@ -179,7 +179,7 @@ Priority Tier 3 — advanced & synthesis:
 - [ ] `LAB-GITA-STOTRA-3` Gita Mahatmya: extract verses praising the Gita (traditional). Add to CAT-016 as daily-use stotra.
 
 ### BOOK: MAHABHARATA
-- [ ] `MBH-CORE-004` **MBH Metadata Foundation**: Research timeline and historical era specific to MBH for the Timeline component.
+- [x] `MBH-CORE-004` **MBH Metadata Foundation**: Research timeline and historical era specific to MBH for the Timeline component. **Done**: 2026-04-29. Enriched `contextualInfo` in `lib/texts.ts` for mahabharata: historicalEra now references both traditional Kali Yuga date (3102 BCE) and astronomical/PGW evidence (~900 BCE); archaeologicalEvidence cites BORI Critical Edition (1966–2016, 19 volumes) + PGW culture; geographicalContext adds Indraprastha and Dwaraka; availableEditions updated (BORI, KMG public domain, Debroy); parvaStructure added (18 parvas, 2109 adhyayas, ~100k shlokas). 5 tests added in lib-texts.test.ts verifying all 4 VedicTimeline fields are populated.
 
 ### BOOK: UPANISHADS
 *(No content tasks yet)*
@@ -361,7 +361,7 @@ node scripts/audit_gold.js {book-slug}
 ### BOOK TRACK 1: KENA UPANISHAD (~35 verses, 1 chapter, Silver exists)
 *Fastest path to a second complete Gold text. Silver data already parsed.*
 
-- [ ] `PIPE-KENA-1` Stage 1: Source audit — inspect `data/2-silver/kena-upanishad/`; confirm verse count matches canonical 34-verse structure; note gaps.
+- [x] `PIPE-KENA-1` Stage 1: Source audit. **Done**: 2026-04-29. Findings: `data/2-silver/kena-upanishad/kena-upanishad-chapter-1.json` has 1 of 34 canonical verses. Verse 1 has authentic Sanskrit (केनेषितं...) + IAST transliteration. Empty translation and meaning fields. Zero commentary layers. Empty ai_metadata.topics. `validate_silver.js` → PASS (permissive on verse count). Gap analysis: 33 missing verses spanning 4 khandas — Khanda 1 (~13v), Khanda 2 (~5v), Khanda 3 (~12v), Khanda 4 (~9v). Required actions before PIPE-KENA-2: acquire complete Sanskrit text for all 34 verses + Max Müller translation (SBE Vol. 1, public domain) + Shankara Bhashya EN commentary. Register finding: Kena silver state is INCOMPLETE — needs full source acquisition before pipeline can advance.
 - [ ] `PIPE-KENA-2` Stage 3: Silver validate — run PIPE-001 against Kena shard; fix NVF non-compliance and short commentary strings.
 - [ ] `PIPE-KENA-3` Stage 4: Layer enrich — add English translation layer (public-domain Shankaracharya commentary or Max Müller); ensure all 34+ verses have ≥ 1 EN layer ≥ 80 chars.
 - [ ] `PIPE-KENA-4` Stage 5: Gold promote — run PIPE-002; verify `data/manifest.json` updated.
