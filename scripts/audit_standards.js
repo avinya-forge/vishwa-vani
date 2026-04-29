@@ -25,6 +25,85 @@ const path = require('path');
 const BASE     = path.resolve(__dirname, '..');
 const GOLD_DIR = path.join(BASE, 'data', '3-gold');
 const SILV_DIR = path.join(BASE, 'data', '2-silver');
+const REGISTRY_PATH = path.join(BASE, 'lib', 'vedic-labs-registry.ts');
+
+// ─── Vedic Labs Registry parser (STD-003) ───────────────────────────────────
+
+/**
+ * Parse the VEDIC_LABS_REGISTRY from the TypeScript source file.
+ * Returns array of { id, books, chapters, available } objects.
+ * Uses text extraction — no runtime TS compilation needed.
+ */
+function loadLabRegistry() {
+  if (!fs.existsSync(REGISTRY_PATH)) return [];
+  const src = fs.readFileSync(REGISTRY_PATH, 'utf8');
+
+  const entries = [];
+  // Match each object block between { ... } inside the array literal
+  // Strategy: split on top-level commas between object entries
+  const arrayMatch = src.match(/VEDIC_LABS_REGISTRY[^=]*=\s*\[([\s\S]*?)\];?\s*\n\/\*\*/);
+  if (!arrayMatch) return [];
+
+  const arrayText = arrayMatch[1];
+  // Split into individual entry blocks by matching '{' ... '}'
+  const entryRegex = /\{([^{}]*(?:\{[^{}]*\}[^{}]*)*)\}/g;
+  let m;
+  while ((m = entryRegex.exec(arrayText)) !== null) {
+    const block = m[1];
+
+    const idM      = block.match(/\bid\s*:\s*['"]([^'"]+)['"]/);
+    const availM   = block.match(/\bavailable\s*:\s*(true|false)/);
+    const booksM   = block.match(/\bbooks\s*:\s*\[([^\]]*)\]/);
+    const chapsM   = block.match(/\bchapters\s*:\s*\[([^\]]*)\]/);
+
+    if (!idM) continue;
+
+    const books = booksM
+      ? booksM[1].split(',').map(s => s.trim().replace(/['"]/g, '')).filter(Boolean)
+      : [];
+    const chapters = chapsM
+      ? chapsM[1].split(',').map(s => parseInt(s.trim(), 10)).filter(n => !isNaN(n))
+      : [];
+
+    const protoM = block.match(/\bisPrototype\s*:\s*(true|false)/);
+
+    entries.push({
+      id: idM[1],
+      available: availM ? availM[1] === 'true' : false,
+      isPrototype: protoM ? protoM[1] === 'true' : false,
+      books,
+      chapters,
+    });
+  }
+  return entries;
+}
+
+let _labRegistry = null;
+function getLabRegistry() {
+  if (!_labRegistry) _labRegistry = loadLabRegistry();
+  return _labRegistry;
+}
+
+/**
+ * STD-003: For a given book slug, check every chapter in goldFiles for lab coverage.
+ * Returns an array of { chapter, type: 'LABS_NO_COVERAGE' } violations.
+ */
+function auditLabsCoverage(slug, chapterNumbers) {
+  const registry = getLabRegistry();
+  // Only non-prototype, available apps count as real lab coverage
+  const appsForBook = registry.filter(app =>
+    app.available && !app.isPrototype && (app.books.length === 0 || app.books.includes(slug))
+  );
+
+  const violations = [];
+  for (const ch of chapterNumbers) {
+    const hasApp = appsForBook.some(app => app.chapters.length === 0 || app.chapters.includes(ch));
+    if (!hasApp) {
+      violations.push({ ref: `${slug}/ch${ch}`, type: 'LABS_NO_COVERAGE', chapter: ch });
+    }
+  }
+  return violations;
+}
 
 // ─── Violation constants ────────────────────────────────────────────────────
 
@@ -299,12 +378,68 @@ function runGoldBook(slug) {
     return 1;
   }
 
+  // Load manifest for chapter-level metadata check (STD-004)
+  const manifestPath = path.join(BASE, 'data', 'manifest.json');
+  let manifestChapterMeta = {};
+  if (fs.existsSync(manifestPath)) {
+    try {
+      const mf = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
+      const bookEntry = (mf.books || []).find(b => b.book_id === slug || b.slug === slug);
+      if (bookEntry && Array.isArray(bookEntry.chapters)) {
+        for (const ch of bookEntry.chapters) {
+          manifestChapterMeta[ch.number] = ch;
+        }
+      }
+    } catch (e) { /* non-fatal */ }
+  }
+
   let totalViolations = 0;
+  const chapterNumbers = [];
   for (const file of files) {
     const viol = auditGoldFile(path.join(bookDir, file));
     totalViolations += viol.length;
     printViolations(viol, file);
+    // Extract chapter number from filename for labs coverage check
+    const chM = file.match(/chapter-?(\d+)/i);
+    if (chM) chapterNumbers.push(parseInt(chM[1], 10));
   }
+
+  // STD-004: chapter-level metadata gate
+  const metaViolations = [];
+  for (const chNum of chapterNumbers) {
+    const meta = manifestChapterMeta[chNum];
+    if (!meta) {
+      metaViolations.push(`ch${chNum}: missing from manifest.chapters`);
+    } else {
+      if (!meta.theme)                         metaViolations.push(`ch${chNum}: missing theme`);
+      if (meta.stotra_present === undefined)   metaViolations.push(`ch${chNum}: missing stotra_present`);
+    }
+  }
+  if (metaViolations.length > 0) {
+    console.log(`  ⚠ CHAPTER METADATA (STD-004): ${metaViolations.length} chapter(s) missing fields`);
+    metaViolations.slice(0, 5).forEach(m => console.log(`    ${m}`));
+    if (metaViolations.length > 5) console.log(`    … and ${metaViolations.length - 5} more`);
+  } else if (chapterNumbers.length > 0) {
+    console.log(`  ✓ CHAPTER METADATA: all ${chapterNumbers.length} chapter(s) have theme/stotra_present`);
+  }
+
+  // STD-003: Vedic Labs gate — report chapters with no lab app coverage
+  if (chapterNumbers.length > 0) {
+    const labViol = auditLabsCoverage(slug, chapterNumbers.sort((a, b) => a - b));
+    const coveredCount = chapterNumbers.length - labViol.length;
+    if (labViol.length === chapterNumbers.length) {
+      // Zero coverage — hard fail (blocks graduation)
+      console.log(`  ✗ LABS COVERAGE: ZERO — no chapter has a lab app (blocks graduation)`);
+      totalViolations += 1;
+    } else if (labViol.length > 0) {
+      // Partial coverage — warning only, does not fail audit
+      console.log(`  ⚠ LABS COVERAGE: ${coveredCount}/${chapterNumbers.length} chapters covered (${labViol.length} uncovered — see LAB-* tasks)`);
+      labViol.forEach(v => console.log(`    [LABS_NO_COVERAGE] ch${v.chapter}`));
+    } else {
+      console.log(`  ✓ LABS: all ${chapterNumbers.length} chapter(s) have lab app coverage`);
+    }
+  }
+
   return totalViolations;
 }
 

@@ -16,7 +16,9 @@
         {
           "number": 1,
           "file": "isha-upanishad-chapter-1.json",
-          "verse_count": 19
+          "verse_count": 19,
+          "theme": "The Divine permeates all creation — renunciation, action, and the immortal Self across 18 mantras",
+          "stotra_present": true
         }
       ],
       "completeness_score": 100,
@@ -59,92 +61,146 @@
         {
           "number": 1,
           "file": "bhagavad-gita-chapter-1.json",
-          "verse_count": 39
+          "verse_count": 39,
+          "theme": "Arjuna's grief on the battlefield of Kurukshetra",
+          "yoga_type": "Arjuna Vishada Yoga",
+          "stotra_present": false
         },
         {
           "number": 2,
           "file": "bhagavad-gita-chapter-2.json",
-          "verse_count": 71
+          "verse_count": 71,
+          "theme": "Sankhya philosophy and the eternal Self explained by Krishna",
+          "yoga_type": "Sankhya Yoga",
+          "stotra_present": false
         },
         {
           "number": 3,
           "file": "bhagavad-gita-chapter-3.json",
-          "verse_count": 43
+          "verse_count": 43,
+          "theme": "Selfless action as the path of duty and liberation",
+          "yoga_type": "Karma Yoga",
+          "stotra_present": false
         },
         {
           "number": 4,
           "file": "bhagavad-gita-chapter-4.json",
-          "verse_count": 42
+          "verse_count": 42,
+          "theme": "Knowledge, renunciation, and the Divine descent",
+          "yoga_type": "Jnana-Karma-Sanyasa Yoga",
+          "stotra_present": false
         },
         {
           "number": 5,
           "file": "bhagavad-gita-chapter-5.json",
-          "verse_count": 27
+          "verse_count": 27,
+          "theme": "True renunciation through knowledge and detachment",
+          "yoga_type": "Karma-Sanyasa Yoga",
+          "stotra_present": false
         },
         {
           "number": 6,
           "file": "bhagavad-gita-chapter-6.json",
-          "verse_count": 42
+          "verse_count": 42,
+          "theme": "Meditation, mind-mastery, and the path of inner yoga",
+          "yoga_type": "Dhyana Yoga",
+          "stotra_present": false
         },
         {
           "number": 7,
           "file": "bhagavad-gita-chapter-7.json",
-          "verse_count": 30
+          "verse_count": 30,
+          "theme": "Knowledge of Brahman and the four types of devotees",
+          "yoga_type": "Jnana-Vijnana Yoga",
+          "stotra_present": false
         },
         {
           "number": 8,
           "file": "bhagavad-gita-chapter-8.json",
-          "verse_count": 28
+          "verse_count": 28,
+          "theme": "The imperishable Brahman and the path at death",
+          "yoga_type": "Akshara-Brahma Yoga",
+          "stotra_present": false
         },
         {
           "number": 9,
           "file": "bhagavad-gita-chapter-9.json",
-          "verse_count": 34
+          "verse_count": 34,
+          "theme": "The royal secret of devotion and the sovereign science",
+          "yoga_type": "Raja-Vidya-Raja-Guhya Yoga",
+          "stotra_present": false
         },
         {
           "number": 10,
           "file": "bhagavad-gita-chapter-10.json",
-          "verse_count": 40
+          "verse_count": 40,
+          "theme": "Divine manifestations and the infinite glories of Krishna",
+          "yoga_type": "Vibhuti Yoga",
+          "stotra_present": false
         },
         {
           "number": 11,
           "file": "bhagavad-gita-chapter-11.json",
-          "verse_count": 52
+          "verse_count": 52,
+          "theme": "Arjuna's vision of Krishna's Universal Form",
+          "yoga_type": "Vishvarupa-Darshana Yoga",
+          "stotra_present": false
         },
         {
           "number": 12,
           "file": "bhagavad-gita-chapter-12.json",
-          "verse_count": 16
+          "verse_count": 16,
+          "theme": "Devotion as the highest and most accessible path",
+          "yoga_type": "Bhakti Yoga",
+          "stotra_present": false
         },
         {
           "number": 13,
           "file": "bhagavad-gita-chapter-13.json",
-          "verse_count": 29
+          "verse_count": 29,
+          "theme": "The field, the knower of the field, and self-knowledge",
+          "yoga_type": "Kshetra-Kshetrajna Vibhaga Yoga",
+          "stotra_present": false
         },
         {
           "number": 14,
           "file": "bhagavad-gita-chapter-14.json",
-          "verse_count": 24
+          "verse_count": 24,
+          "theme": "The three Gunas — Sattva, Rajas, Tamas — and transcendence",
+          "yoga_type": "Gunatraya-Vibhaga Yoga",
+          "stotra_present": false
         },
         {
           "number": 15,
           "file": "bhagavad-gita-chapter-15.json",
-          "verse_count": 19
+          "verse_count": 19,
+          "theme": "The Purushottama — the Supreme Person beyond perishable and imperishable",
+          "yoga_type": "Purushottama Yoga",
+          "stotra_present": true
         },
         {
           "number": 16,
           "file": "bhagavad-gita-chapter-16.json",
-          "verse_count": 19
+          "verse_count": 19,
+          "theme": "Divine and demonic natures and the supremacy of scripture",
+          "yoga_type": "Daivasura-Sampad-Vibhaga Yoga",
+          "stotra_present": false
         },
         {
           "number": 17,
           "file": "bhagavad-gita-chapter-17.json",
-          "verse_count": 26
+          "verse_count": 26,
+          "theme": "The three-fold faith in worship, austerity, and charity",
+          "yoga_type": "Shraddhatraya-Vibhaga Yoga",
+          "stotra_present": false
         },
         {
           "number": 18,
           "file": "bhagavad-gita-chapter-18.json",
-          "verse_count": 76
+          "verse_count": 76,
+          "theme": "The supreme secret — surrender to Krishna as the ultimate liberation",
+          "yoga_type": "Moksha-Sanyasa Yoga",
+          "stotra_present": false
         }
       ],
       "completeness_score": 100,
