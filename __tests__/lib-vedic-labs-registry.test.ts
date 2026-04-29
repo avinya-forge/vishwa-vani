@@ -83,3 +83,31 @@ describe('getAppsByTopics()', () => {
     expect(getAppsByTopics(['nonexistent-topic-xyz'])).toEqual([])
   })
 })
+
+// ISHA-LAB-2: Isha Contemplation Guide registration checks
+describe('isha-contemplation-guide registry entry', () => {
+  const ishaApp = VEDIC_LABS_REGISTRY.find(a => a.id === 'isha-contemplation-guide')
+
+  it('is registered in VEDIC_LABS_REGISTRY', () => {
+    expect(ishaApp).toBeDefined()
+  })
+
+  it('is available and not a prototype', () => {
+    expect(ishaApp?.available).toBe(true)
+    expect(ishaApp?.isPrototype).not.toBe(true)
+  })
+
+  it('is scoped to isha-upanishad book', () => {
+    expect(ishaApp?.books).toContain('isha-upanishad')
+  })
+
+  it('getAppsForContext returns it for isha-upanishad chapter 1', () => {
+    const apps = getAppsForContext('isha-upanishad', 1)
+    expect(apps.map(a => a.id)).toContain('isha-contemplation-guide')
+  })
+
+  it('getAppsForContext does NOT return it for bhagavad-gita', () => {
+    const apps = getAppsForContext('bhagavad-gita', 1)
+    expect(apps.map(a => a.id)).not.toContain('isha-contemplation-guide')
+  })
+})

@@ -59,6 +59,10 @@ const GrammarTokenizer = dynamic(() => import('@/components/lab/grammar-tokenize
   ssr: false,
   loading: () => <LabSkeleton />
 })
+const IshaContemplationGuide = dynamic(() => import('@/components/lab/isha-contemplation-guide'), {
+  ssr: false,
+  loading: () => <LabSkeleton />
+})
 
 export default function VedicLabPage() {
   return (
@@ -99,6 +103,7 @@ export default function VedicLabPage() {
            <ChhandaAnalyzer />
            <CharacterRelationshipMap />
            <GrammarTokenizer />
+           <IshaContemplationGuide />
         </div>
       </div>
     </main>

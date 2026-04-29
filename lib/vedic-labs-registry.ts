@@ -170,6 +170,17 @@ export const VEDIC_LABS_REGISTRY: LabAppEntry[] = [
     topics: ['meditation', 'dhyana', 'yoga', 'mind', 'practice'],
     available: true,
   },
+  {
+    id: 'isha-contemplation-guide',
+    name: 'Isha Contemplation Guide',
+    description: 'Guided verse-by-verse contemplation of all 18 Isha Upanishad mantras with thematic prompts for daily practice.',
+    path: '/labs',
+    books: ['isha-upanishad'],
+    chapters: [1],
+    topics: ['upanishad', 'meditation', 'atman', 'brahman', 'contemplation', 'isha'],
+    available: true,
+    isPrototype: false,
+  },
 ]
 
 /**
