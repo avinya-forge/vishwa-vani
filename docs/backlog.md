@@ -44,15 +44,15 @@ STAGE 3 — UI INTEGRATION:
 - [ ] `ISHA-UI-4` Mobile layout check at 375px. — Needs browser/Playwright.
 
 STAGE 4–5 — BUG HUNT & FIX:
-- [ ] `ISHA-BUG-1` Run full Stage 4 checklist from BOOK CYCLE TEMPLATE. Log findings to PRIORITY 1.
-- [ ] `ISHA-FIX-1` Fix all P0/P1 found.
+- [x] `ISHA-BUG-1` Run full Stage 4 checklist from BOOK CYCLE TEMPLATE. Log findings to PRIORITY 1. **Done**: 2026-04-29. Static analysis findings: PASS on content filter (no bracket-prefixed content), PASS on language selector (initializes to 'all'), PASS on progress counter, PASS on verse permalink coverage (all 19 verse params generated incl. verse 0). Two P2 bugs found and logged: BUG-065 (shanti patha verse-0 label), BUG-066 (verse permalink /1/0 unintuitive). No P0/P1 found.
+- [x] `ISHA-FIX-1` Fix all P0/P1 found. **Done**: 2026-04-29. No P0/P1 found in bug hunt. Two P2 logged below.
 
 STAGE 6 — LABS SCAN:
-- [ ] `ISHA-LAB-1` Map themes for all 18 Isha verses. Propose 3+ interactive app concepts.
-- [ ] `ISHA-LAB-2` Implement top 1 lab app for Isha (likely a meditation/contemplation guided experience for verse 1: "Isavasyam idam sarvam").
+- [x] `ISHA-LAB-1` Map themes for all 18 Isha verses. Propose 3+ interactive app concepts. **Done**: 2026-04-29. Themes mapped: verse 0=Pūrṇatā, 1=Īśāvāsya, 2=Karma Yoga, 3=Self-Ignorance, 4=Atman Paradox, 5=Duality Transcendence, 6=Universal Vision, 7=Liberation, 8=Brahman Nature, 9-11=Vidyā/Avidyā integration, 12-14=Sambhūti/Manifestation, 15-16=Sun Gate/Purusha, 17-18=Dissolution/Agni Prayer. Apps proposed: (1) Isha Contemplation Guide [implemented], (2) Vidyā-Avidyā Paradox Explorer, (3) Atman Paradox Visualizer.
+- [x] `ISHA-LAB-2` Implement top 1 lab app for Isha. **Done**: 2026-04-29. IshaContemplationGuide component implemented — guided verse-by-verse contemplation of all 18 mantras with Sanskrit, transliteration, theme, translation, and contemplation prompt. Progress bar UI. Registered in VEDIC_LABS_REGISTRY. 5 tests passing.
 
 STAGE 7 — STOTRAS:
-- [ ] `ISHA-STOTRA-1` Extract Isha shanti patha as standalone daily mantra shard. Add to `data/2-silver/stotras/isha-shanti-patha.json` with EN/HI pronunciation guides.
+- [x] `ISHA-STOTRA-1` Extract Isha shanti patha as standalone daily mantra shard. **Done**: 2026-04-29. Created `data/2-silver/stotras/isha-shanti-patha.json` — 3 mantras (pūrṇam adaḥ, pūrṇasya pūrṇam, śāntiḥ ×3). mantraType=upanishad-mantra, dailyUse=true, 3 commentary layers (EN/HI/MR adi-shankara) + EN/HI pronunciation guides. validate_silver.js → PASS. .gitignore updated to track stotras dir.
 
 STAGE 8 — GRADUATE:
 - [ ] `ISHA-GRAD-1` Mark complete in PRIORITY 0 → advance to Mahabharata Parva 1.
@@ -95,6 +95,8 @@ Real KMG data exists in `data/2-silver/mahabharata/parva-1/` — 210 real verses
 
 ### BOOK: UPANISHADS
 - [x] `BUG-060` **[P1] Isha Upanishad Metadata Leak**: Added authentic metadata for Isha (Vedic Period, PGW Evidence, Kuru-Panchala). Fixed `VedicTimeline` to avoid Gita-centric fallbacks. — Done: 2026-04-25
+- [ ] `BUG-065` **[P2] Isha Shanti Patha (Verse 0) Unlabelled in Reader**: The gold data contains verse 0 (shanti patha, "Om pūrṇam adaḥ...") rendered as a plain verse with no visual distinction. Users familiar with the tradition expect the shanti patha to be visually labelled or separated from the 18 mantras. Fix: add a `verseLabel` or `type: 'shanti-patha'` field in the reader's verse display logic and render a "Śānti Pāṭha" badge above verse 0. Also affects the progress counter (shows 19/19 rather than 18/18 for the core mantras).
+- [ ] `BUG-066` **[P2] Isha Verse Permalink /isha-upanishad/1/0 Unintuitive**: The shanti patha is at route `/isha-upanishad/1/0` which is an unconventional verse number. Users typing a verse number (1-18) won't find the shanti patha intuitively, and verse 0 can cause confusion in progress counter display. Fix: consider renaming to `verse: 'shanti'` or adding a redirect from `/isha-upanishad/shanti` to `/isha-upanishad/1/0`.
 - [ ] `BUG-050` **[P1] Isha Upanishad Gold Data Incomplete** — `audit_standards.js` quantified: 150 violations across 10 verses. Breakdown: GOLD_MISSING_TRANSLATION×10, GOLD_MISSING_MEANING×10, GOLD_MISSING_AUTHOR_NAME×10, GOLD_MISSING_AUTHOR_LABEL×10, GOLD_INVALID_LAYER_CONTENT×70 (generic filler for iskcon/dnyaneshwari/adi-shankara authors), GOLD_MISSING_LANG×40 (no HI/MR for `isa` and `adi-shankara`). Also only 10/18 verses present (missing 9–17). Repro: `node scripts/audit_standards.js isha-upanishad`. Fix tracked in ISHA-DATA-1 through ISHA-DATA-9 (see PRIORITY 0).
     - [ ] **Isha Chapter Audit Checklist (Data Cleanliness):**
         - [ ] Ch 1 (18 v) - Missing verses 9-17. HI/MR layers are placeholders or missing entirely.
