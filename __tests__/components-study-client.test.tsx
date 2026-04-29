@@ -332,4 +332,35 @@ describe('StudyClient', () => {
 
     expect(mockPush).toHaveBeenCalledWith('/bhagavad-gita/1');
   });
+
+  // BUG-042: Translation placeholder rendering — invalid content must not render
+  it('BUG-042: silently hides Universal Translation when translation is a known placeholder', () => {
+    const placeholderVerse = [{
+      id: '1.1',
+      original: 'धृतराष्ट्र उवाच',
+      transliteration: 'dhṛtarāṣṭra uvāca',
+      verse: 1,
+      chapter: 1,
+      translation: 'TBD_CONTENT',
+      meaning: 'TODO_LAYER',
+      layers: []
+    }];
+    render(<StudyClient {...defaultProps} verses={placeholderVerse} />);
+    expect(screen.queryByText('Universal Translation')).not.toBeInTheDocument();
+  });
+
+  it('BUG-042: renders Universal Translation when translation is valid prose', () => {
+    const validVerse = [{
+      id: '1.1',
+      original: 'धृतराष्ट्र उवाच',
+      transliteration: 'dhṛtarāṣṭra uvāca',
+      verse: 1,
+      chapter: 1,
+      translation: 'Dhritarashtra said: O Sanjaya, after my sons and the sons of Pandu assembled.',
+      meaning: '',
+      layers: []
+    }];
+    render(<StudyClient {...defaultProps} verses={validVerse} />);
+    expect(screen.getByText('Universal Translation')).toBeInTheDocument();
+  });
 });
