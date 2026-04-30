@@ -111,3 +111,31 @@ describe('isha-contemplation-guide registry entry', () => {
     expect(apps.map(a => a.id)).not.toContain('isha-contemplation-guide')
   })
 })
+
+describe('LAB-GITA-001: ArjunasCrisisCounselor registry entry', () => {
+  const app = VEDIC_LABS_REGISTRY.find(a => a.id === 'arjunas-crisis-counselor')
+
+  it('is registered in VEDIC_LABS_REGISTRY', () => {
+    expect(app).toBeDefined()
+  })
+
+  it('is available and not a prototype', () => {
+    expect(app?.available).toBe(true)
+    expect(app?.isPrototype).not.toBe(true)
+  })
+
+  it('is scoped to bhagavad-gita chapter 1', () => {
+    expect(app?.books).toContain('bhagavad-gita')
+    expect(app?.chapters).toContain(1)
+  })
+
+  it('getAppsForContext returns it for bhagavad-gita chapter 1', () => {
+    const apps = getAppsForContext('bhagavad-gita', 1)
+    expect(apps.map(a => a.id)).toContain('arjunas-crisis-counselor')
+  })
+
+  it('getAppsForContext does NOT return it for bhagavad-gita chapter 2', () => {
+    const apps = getAppsForContext('bhagavad-gita', 2)
+    expect(apps.map(a => a.id)).not.toContain('arjunas-crisis-counselor')
+  })
+})

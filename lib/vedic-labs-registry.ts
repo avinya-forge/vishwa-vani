@@ -181,6 +181,17 @@ export const VEDIC_LABS_REGISTRY: LabAppEntry[] = [
     available: true,
     isPrototype: false,
   },
+  {
+    id: 'arjunas-crisis-counselor',
+    name: "Arjuna's Crisis Counselor",
+    description: "Play Krishna responding to Arjuna's 5 crises of doubt in Chapter 1. Choose Warrior Ethics, Knowledge, or Devotion — each path reveals a Gita teaching.",
+    path: '/labs',
+    books: ['bhagavad-gita'],
+    chapters: [1],
+    topics: ['dharma', 'arjuna', 'krishna', 'crisis', 'warrior', 'bhakti', 'jnana', 'chapter-1'],
+    available: true,
+    isPrototype: false,
+  },
 ]
 
 /**

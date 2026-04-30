@@ -63,6 +63,10 @@ const IshaContemplationGuide = dynamic(() => import('@/components/lab/isha-conte
   ssr: false,
   loading: () => <LabSkeleton />
 })
+const ArjunasCrisisCounselor = dynamic(() => import('@/components/lab/arjunas-crisis-counselor'), {
+  ssr: false,
+  loading: () => <LabSkeleton />
+})
 
 export default function VedicLabPage() {
   return (
@@ -104,6 +108,7 @@ export default function VedicLabPage() {
            <CharacterRelationshipMap />
            <GrammarTokenizer />
            <IshaContemplationGuide />
+           <ArjunasCrisisCounselor />
         </div>
       </div>
     </main>
