@@ -10,14 +10,15 @@ This is the single authoritative ledger for Vishwa-Vani progress. Sections are: 
 
 ### GRADUATED BOOKS (fully complete — all 8 stages done)
 - [x] `BOOK-GITA` **Bhagavad Gita** — ✅ COMPLETE (2026-04-20). 657 verses, 18 chapters. ISKCON + Sant Dnyaneshwar, EN/HI/MR. All routes working. BUG-041 (canvas shift) fixed 2026-04-25. Open: BUG-057 (HI/MR template-generated, needs authentic data). Chapters 1-18 all currently contain "wrapper-text" placeholders in HI/MR layers.
+- [x] `BOOK-ISHA` **Isha Upanishad** — ✅ COMPLETE (2026-04-30). 19 verses (incl. shanti patha), 1 chapter. 3 authors (isa/adi-shankara/sri-aurobindo), EN/HI/MR. All routes working. BUG-065 (shanti patha label) fixed. BUG-066 (/shanti redirect) fixed. Isha Contemplation Guide lab app live. Shanti patha stotra shard extracted. ISHA-UI-3 (AI synthesis) and ISHA-UI-4 (mobile) deferred — require live server; no P0/P1 bugs found in static analysis.
 
 
-### ACTIVE BOOK: ISHA UPANISHAD — CYCLE STAGE 1: DATA GATHERING
+### ACTIVE BOOK: MAHABHARATA PARVA 1 — CYCLE STAGE 1: DATA GATHERING
 
-Status as of 2026-04-20:
-- Gold file has 10 of 18 verses (missing verses 9–17). BUG-050 open.
-- Only `isa` author layer is real. `iskcon`, `dnyaneshwari`, `adi-shankara` are all placeholder (blocked by BUG-049 fix).
-- `node scripts/audit_gold.js isha-upanishad` → 3 PLACEHOLDER-HEAVY authors, verse count mismatch.
+Status as of 2026-04-30:
+- Real KMG data exists in `data/2-silver/mahabharata/parva-1/` — 210 real verses in adhyaya-1 alone.
+- No HI/MR layers yet. Single author (KMG). Needs MBH-DATA-1 through MBH-DATA-7 before pipeline.
+- See PRIORITY 3 → BOOK TRACK 4 for task breakdown.
 
 Active tasks for this book — follows BOOK CYCLE TEMPLATE (8 stages):
 
@@ -55,7 +56,7 @@ STAGE 7 — STOTRAS:
 - [x] `ISHA-STOTRA-1` Extract Isha shanti patha as standalone daily mantra shard. **Done**: 2026-04-29. Created `data/2-silver/stotras/isha-shanti-patha.json` — 3 mantras (pūrṇam adaḥ, pūrṇasya pūrṇam, śāntiḥ ×3). mantraType=upanishad-mantra, dailyUse=true, 3 commentary layers (EN/HI/MR adi-shankara) + EN/HI pronunciation guides. validate_silver.js → PASS. .gitignore updated to track stotras dir.
 
 STAGE 8 — GRADUATE:
-- [ ] `ISHA-GRAD-1` Mark complete in PRIORITY 0 → advance to Mahabharata Parva 1.
+- [x] `ISHA-GRAD-1` Mark complete in PRIORITY 0 → advance to Mahabharata Parva 1. **Done**: 2026-04-30. Isha Upanishad added to GRADUATED BOOKS. Active book advanced to Mahabharata Parva 1.
 
 ### NEXT BOOK (after Isha cycle completes): MAHABHARATA PARVA 1
 
