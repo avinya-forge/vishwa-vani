@@ -51,4 +51,38 @@ describe('VEDIC_LIBRARY', () => {
       expect(Object.keys(text.chapterNames).length).toBeGreaterThan(0);
     });
   });
+
+  // MBH-CORE-004: Mahabharata Timeline metadata completeness
+  describe('Mahabharata Timeline metadata (MBH-CORE-004)', () => {
+    const mbh = VEDIC_LIBRARY.find(t => t.slug === 'mahabharata');
+
+    it('has contextualInfo with all four Timeline milestone fields', () => {
+      expect(mbh?.contextualInfo).toBeDefined();
+      expect(mbh?.contextualInfo?.historicalEra).toBeTruthy();
+      expect(mbh?.contextualInfo?.documentationEra).toBeTruthy();
+      expect(mbh?.contextualInfo?.archaeologicalEvidence).toBeTruthy();
+      expect(mbh?.contextualInfo?.geographicalContext).toBeTruthy();
+    });
+
+    it('historicalEra references both traditional and astronomical dates', () => {
+      const era = mbh?.contextualInfo?.historicalEra || '';
+      expect(era).toMatch(/BCE/);
+    });
+
+    it('archaeologicalEvidence references BORI Critical Edition', () => {
+      const evid = mbh?.contextualInfo?.archaeologicalEvidence || '';
+      expect(evid.toLowerCase()).toMatch(/bori|painted gray/i);
+    });
+
+    it('availableEditions includes KMG public-domain translation', () => {
+      const editions = mbh?.contextualInfo?.availableEditions as string[] | undefined;
+      expect(Array.isArray(editions)).toBe(true);
+      const hasKMG = editions?.some(e => /Ganguli|KMG/i.test(e));
+      expect(hasKMG).toBe(true);
+    });
+
+    it('geographicalContext mentions Kurukshetra', () => {
+      expect(mbh?.contextualInfo?.geographicalContext).toMatch(/Kurukshetra/i);
+    });
+  });
 });

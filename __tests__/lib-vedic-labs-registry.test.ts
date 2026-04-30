@@ -83,3 +83,118 @@ describe('getAppsByTopics()', () => {
     expect(getAppsByTopics(['nonexistent-topic-xyz'])).toEqual([])
   })
 })
+
+// ISHA-LAB-2: Isha Contemplation Guide registration checks
+describe('isha-contemplation-guide registry entry', () => {
+  const ishaApp = VEDIC_LABS_REGISTRY.find(a => a.id === 'isha-contemplation-guide')
+
+  it('is registered in VEDIC_LABS_REGISTRY', () => {
+    expect(ishaApp).toBeDefined()
+  })
+
+  it('is available and not a prototype', () => {
+    expect(ishaApp?.available).toBe(true)
+    expect(ishaApp?.isPrototype).not.toBe(true)
+  })
+
+  it('is scoped to isha-upanishad book', () => {
+    expect(ishaApp?.books).toContain('isha-upanishad')
+  })
+
+  it('getAppsForContext returns it for isha-upanishad chapter 1', () => {
+    const apps = getAppsForContext('isha-upanishad', 1)
+    expect(apps.map(a => a.id)).toContain('isha-contemplation-guide')
+  })
+
+  it('getAppsForContext does NOT return it for bhagavad-gita', () => {
+    const apps = getAppsForContext('bhagavad-gita', 1)
+    expect(apps.map(a => a.id)).not.toContain('isha-contemplation-guide')
+  })
+})
+
+describe('LAB-GITA-001: ArjunasCrisisCounselor registry entry', () => {
+  const app = VEDIC_LABS_REGISTRY.find(a => a.id === 'arjunas-crisis-counselor')
+
+  it('is registered in VEDIC_LABS_REGISTRY', () => {
+    expect(app).toBeDefined()
+  })
+
+  it('is available and not a prototype', () => {
+    expect(app?.available).toBe(true)
+    expect(app?.isPrototype).not.toBe(true)
+  })
+
+  it('is scoped to bhagavad-gita chapter 1', () => {
+    expect(app?.books).toContain('bhagavad-gita')
+    expect(app?.chapters).toContain(1)
+  })
+
+  it('getAppsForContext returns it for bhagavad-gita chapter 1', () => {
+    const apps = getAppsForContext('bhagavad-gita', 1)
+    expect(apps.map(a => a.id)).toContain('arjunas-crisis-counselor')
+  })
+
+  it('getAppsForContext does NOT return it for bhagavad-gita chapter 2', () => {
+    const apps = getAppsForContext('bhagavad-gita', 2)
+    expect(apps.map(a => a.id)).not.toContain('arjunas-crisis-counselor')
+  })
+})
+
+describe('LAB-GITA-002: GunaBalancingSimulator registry entry', () => {
+  const app = VEDIC_LABS_REGISTRY.find(a => a.id === 'guna-balancing-simulator')
+
+  it('is registered in VEDIC_LABS_REGISTRY', () => {
+    expect(app).toBeDefined()
+  })
+
+  it('is available and not a prototype', () => {
+    expect(app?.available).toBe(true)
+    expect(app?.isPrototype).not.toBe(true)
+  })
+
+  it('is scoped to bhagavad-gita chapter 14', () => {
+    expect(app?.books).toContain('bhagavad-gita')
+    expect(app?.chapters).toContain(14)
+  })
+
+  it('getAppsForContext returns it for bhagavad-gita chapter 14', () => {
+    const apps = getAppsForContext('bhagavad-gita', 14)
+    expect(apps.map(a => a.id)).toContain('guna-balancing-simulator')
+  })
+
+  it('has guna-related topics', () => {
+    expect(app?.topics).toContain('sattva')
+    expect(app?.topics).toContain('rajas')
+    expect(app?.topics).toContain('tamas')
+  })
+})
+
+describe('LAB-GITA-003: MokshaPathwaysEngine registry entry', () => {
+  const app = VEDIC_LABS_REGISTRY.find(a => a.id === 'moksha-pathways-engine')
+
+  it('is registered in VEDIC_LABS_REGISTRY', () => {
+    expect(app).toBeDefined()
+  })
+
+  it('is available and not a prototype', () => {
+    expect(app?.available).toBe(true)
+    expect(app?.isPrototype).not.toBe(true)
+  })
+
+  it('is scoped to bhagavad-gita chapter 18', () => {
+    expect(app?.books).toContain('bhagavad-gita')
+    expect(app?.chapters).toContain(18)
+  })
+
+  it('getAppsForContext returns it for bhagavad-gita chapter 18', () => {
+    const apps = getAppsForContext('bhagavad-gita', 18)
+    expect(apps.map(a => a.id)).toContain('moksha-pathways-engine')
+  })
+
+  it('has moksha and all 4 yoga path topics', () => {
+    expect(app?.topics).toContain('moksha')
+    expect(app?.topics).toContain('bhakti')
+    expect(app?.topics).toContain('jnana')
+    expect(app?.topics).toContain('dhyana')
+  })
+})

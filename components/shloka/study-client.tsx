@@ -806,8 +806,13 @@ export default function StudyClient({
               >
                 {/* Verse number badge */}
                 <div className="flex items-center justify-between px-4 sm:px-6 py-3 bg-stone-50 dark:bg-stone-900/40 border-b border-stone-100 dark:border-stone-800/50">
-                  <span className="text-xs font-black uppercase tracking-widest text-stone-400 dark:text-stone-500 truncate">
-                    {String(isParva ? 'Śloka' : isGita ? 'BG' : 'Śloka')} {String(v.chapter || (v.id as string).split('_')[1] || '?')}.{String(v.verse || (v.id as string).split('_')[2] || '?')}
+                  <span className="flex items-center gap-2 text-xs font-black uppercase tracking-widest text-stone-400 dark:text-stone-500 truncate">
+                    {String(isParva ? 'Śloka' : isGita ? 'BG' : 'Śloka')} {String(v.chapter || (v.id as string).split('_')[1] || '?')}.{String(v.verse ?? (v.id as string).split('_')[2] ?? '?')}
+                    {(v.verse as number) === 0 && (
+                      <span className="text-[10px] font-black uppercase tracking-widest text-amber-700 dark:text-amber-400 bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800/50 px-2 py-0.5 rounded-full">
+                        Śānti Pāṭha
+                      </span>
+                    )}
                   </span>
                   <div className="flex items-center gap-2 ml-2">
                     <button
@@ -874,7 +879,11 @@ export default function StudyClient({
                 {/* English translation — always shown as default base layer */}
                 {(() => {
                   const baseTranslation = String(v.translation || v.meaning || '').trim()
-                  if (!baseTranslation) return null
+                  // Reject empty strings and known placeholder patterns; length check skipped
+                  // (base translations can legitimately be short, e.g. sutras or mantras)
+                  const knownBadPatterns = ['[PLACEHOLDER_', 'TBD_CONTENT', 'TODO_LAYER', 'LOREM IPSUM', 'THIS IS A GENERIC PLACEHOLDER', 'INSERTED TO SATISFY THE MINIMUM LENGTH']
+                  const isPlaceholder = !baseTranslation || baseTranslation.startsWith('[') || knownBadPatterns.some(p => baseTranslation.toUpperCase().includes(p.toUpperCase()))
+                  if (isPlaceholder) return null
                   return (
                     <div className="px-4 sm:px-6 py-4 sm:py-8 border-b border-stone-50 dark:border-stone-800/30 bg-white dark:bg-stone-900/10">
                       <p className="text-[10px] font-black uppercase tracking-widest text-orange-500 dark:text-orange-600 mb-3 ml-0.5">Universal Translation</p>

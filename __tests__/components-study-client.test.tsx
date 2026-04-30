@@ -332,4 +332,55 @@ describe('StudyClient', () => {
 
     expect(mockPush).toHaveBeenCalledWith('/bhagavad-gita/1');
   });
+
+  // BUG-042: Translation placeholder rendering — invalid content must not render
+  it('BUG-042: silently hides Universal Translation when translation is a known placeholder', () => {
+    const placeholderVerse = [{
+      id: '1.1',
+      original: 'धृतराष्ट्र उवाच',
+      transliteration: 'dhṛtarāṣṭra uvāca',
+      verse: 1,
+      chapter: 1,
+      translation: 'TBD_CONTENT',
+      meaning: 'TODO_LAYER',
+      layers: []
+    }];
+    render(<StudyClient {...defaultProps} verses={placeholderVerse} />);
+    expect(screen.queryByText('Universal Translation')).not.toBeInTheDocument();
+  });
+
+  it('BUG-042: renders Universal Translation when translation is valid prose', () => {
+    const validVerse = [{
+      id: '1.1',
+      original: 'धृतराष्ट्र उवाच',
+      transliteration: 'dhṛtarāṣṭra uvāca',
+      verse: 1,
+      chapter: 1,
+      translation: 'Dhritarashtra said: O Sanjaya, after my sons and the sons of Pandu assembled.',
+      meaning: '',
+      layers: []
+    }];
+    render(<StudyClient {...defaultProps} verses={validVerse} />);
+    expect(screen.getByText('Universal Translation')).toBeInTheDocument();
+  });
+
+  it('BUG-065: renders Śānti Pāṭha badge for verse 0', () => {
+    const shantiVerse = [{
+      id: 'isha-upanishad_1_0',
+      original: 'ॐ पूर्णमदः पूर्णमिदम्',
+      transliteration: 'oṃ pūrṇam adaḥ pūrṇam idam',
+      verse: 0,
+      chapter: 1,
+      translation: 'Om — that is full, this is full.',
+      meaning: 'From fullness, fullness proceeds. Taking fullness from fullness, fullness remains.',
+      layers: []
+    }];
+    render(<StudyClient {...defaultProps} textSlug="isha-upanishad" verses={shantiVerse} />);
+    expect(screen.getByText('Śānti Pāṭha')).toBeInTheDocument();
+  });
+
+  it('BUG-065: does NOT render Śānti Pāṭha badge for regular verses', () => {
+    render(<StudyClient {...defaultProps} />);
+    expect(screen.queryByText('Śānti Pāṭha')).not.toBeInTheDocument();
+  });
 });

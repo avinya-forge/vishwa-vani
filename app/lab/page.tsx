@@ -59,6 +59,22 @@ const GrammarTokenizer = dynamic(() => import('@/components/lab/grammar-tokenize
   ssr: false,
   loading: () => <LabSkeleton />
 })
+const IshaContemplationGuide = dynamic(() => import('@/components/lab/isha-contemplation-guide'), {
+  ssr: false,
+  loading: () => <LabSkeleton />
+})
+const ArjunasCrisisCounselor = dynamic(() => import('@/components/lab/arjunas-crisis-counselor'), {
+  ssr: false,
+  loading: () => <LabSkeleton />
+})
+const GunaBalancingSimulator = dynamic(() => import('@/components/lab/guna-balancing-simulator'), {
+  ssr: false,
+  loading: () => <LabSkeleton />
+})
+const MokshaPathwaysEngine = dynamic(() => import('@/components/lab/moksha-pathways-engine'), {
+  ssr: false,
+  loading: () => <LabSkeleton />
+})
 
 export default function VedicLabPage() {
   return (
@@ -99,6 +115,10 @@ export default function VedicLabPage() {
            <ChhandaAnalyzer />
            <CharacterRelationshipMap />
            <GrammarTokenizer />
+           <IshaContemplationGuide />
+           <ArjunasCrisisCounselor />
+           <GunaBalancingSimulator />
+           <MokshaPathwaysEngine />
         </div>
       </div>
     </main>
