@@ -168,3 +168,33 @@ describe('LAB-GITA-002: GunaBalancingSimulator registry entry', () => {
     expect(app?.topics).toContain('tamas')
   })
 })
+
+describe('LAB-GITA-003: MokshaPathwaysEngine registry entry', () => {
+  const app = VEDIC_LABS_REGISTRY.find(a => a.id === 'moksha-pathways-engine')
+
+  it('is registered in VEDIC_LABS_REGISTRY', () => {
+    expect(app).toBeDefined()
+  })
+
+  it('is available and not a prototype', () => {
+    expect(app?.available).toBe(true)
+    expect(app?.isPrototype).not.toBe(true)
+  })
+
+  it('is scoped to bhagavad-gita chapter 18', () => {
+    expect(app?.books).toContain('bhagavad-gita')
+    expect(app?.chapters).toContain(18)
+  })
+
+  it('getAppsForContext returns it for bhagavad-gita chapter 18', () => {
+    const apps = getAppsForContext('bhagavad-gita', 18)
+    expect(apps.map(a => a.id)).toContain('moksha-pathways-engine')
+  })
+
+  it('has moksha and all 4 yoga path topics', () => {
+    expect(app?.topics).toContain('moksha')
+    expect(app?.topics).toContain('bhakti')
+    expect(app?.topics).toContain('jnana')
+    expect(app?.topics).toContain('dhyana')
+  })
+})

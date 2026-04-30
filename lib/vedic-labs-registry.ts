@@ -203,6 +203,17 @@ export const VEDIC_LABS_REGISTRY: LabAppEntry[] = [
     available: true,
     isPrototype: false,
   },
+  {
+    id: 'moksha-pathways-engine',
+    name: 'Moksha Pathways Engine',
+    description: 'Discover which of the 4 liberation paths suits you — Karma, Bhakti, Jnana, or Dhyana Yoga. 5 questions, personalised BG 18.66 interpretation, practice, and lineage.',
+    path: '/labs',
+    books: ['bhagavad-gita'],
+    chapters: [18],
+    topics: ['moksha', 'liberation', 'karma-yoga', 'bhakti', 'jnana', 'dhyana', 'chapter-18', '18.66'],
+    available: true,
+    isPrototype: false,
+  },
 ]
 
 /**

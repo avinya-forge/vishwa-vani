@@ -71,6 +71,10 @@ const GunaBalancingSimulator = dynamic(() => import('@/components/lab/guna-balan
   ssr: false,
   loading: () => <LabSkeleton />
 })
+const MokshaPathwaysEngine = dynamic(() => import('@/components/lab/moksha-pathways-engine'), {
+  ssr: false,
+  loading: () => <LabSkeleton />
+})
 
 export default function VedicLabPage() {
   return (
@@ -114,6 +118,7 @@ export default function VedicLabPage() {
            <IshaContemplationGuide />
            <ArjunasCrisisCounselor />
            <GunaBalancingSimulator />
+           <MokshaPathwaysEngine />
         </div>
       </div>
     </main>
