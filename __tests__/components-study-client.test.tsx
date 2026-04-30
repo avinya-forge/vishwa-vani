@@ -363,4 +363,24 @@ describe('StudyClient', () => {
     render(<StudyClient {...defaultProps} verses={validVerse} />);
     expect(screen.getByText('Universal Translation')).toBeInTheDocument();
   });
+
+  it('BUG-065: renders Śānti Pāṭha badge for verse 0', () => {
+    const shantiVerse = [{
+      id: 'isha-upanishad_1_0',
+      original: 'ॐ पूर्णमदः पूर्णमिदम्',
+      transliteration: 'oṃ pūrṇam adaḥ pūrṇam idam',
+      verse: 0,
+      chapter: 1,
+      translation: 'Om — that is full, this is full.',
+      meaning: 'From fullness, fullness proceeds. Taking fullness from fullness, fullness remains.',
+      layers: []
+    }];
+    render(<StudyClient {...defaultProps} textSlug="isha-upanishad" verses={shantiVerse} />);
+    expect(screen.getByText('Śānti Pāṭha')).toBeInTheDocument();
+  });
+
+  it('BUG-065: does NOT render Śānti Pāṭha badge for regular verses', () => {
+    render(<StudyClient {...defaultProps} />);
+    expect(screen.queryByText('Śānti Pāṭha')).not.toBeInTheDocument();
+  });
 });

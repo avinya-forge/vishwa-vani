@@ -806,8 +806,13 @@ export default function StudyClient({
               >
                 {/* Verse number badge */}
                 <div className="flex items-center justify-between px-4 sm:px-6 py-3 bg-stone-50 dark:bg-stone-900/40 border-b border-stone-100 dark:border-stone-800/50">
-                  <span className="text-xs font-black uppercase tracking-widest text-stone-400 dark:text-stone-500 truncate">
-                    {String(isParva ? 'Śloka' : isGita ? 'BG' : 'Śloka')} {String(v.chapter || (v.id as string).split('_')[1] || '?')}.{String(v.verse || (v.id as string).split('_')[2] || '?')}
+                  <span className="flex items-center gap-2 text-xs font-black uppercase tracking-widest text-stone-400 dark:text-stone-500 truncate">
+                    {String(isParva ? 'Śloka' : isGita ? 'BG' : 'Śloka')} {String(v.chapter || (v.id as string).split('_')[1] || '?')}.{String(v.verse ?? (v.id as string).split('_')[2] ?? '?')}
+                    {(v.verse as number) === 0 && (
+                      <span className="text-[10px] font-black uppercase tracking-widest text-amber-700 dark:text-amber-400 bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800/50 px-2 py-0.5 rounded-full">
+                        Śānti Pāṭha
+                      </span>
+                    )}
                   </span>
                   <div className="flex items-center gap-2 ml-2">
                     <button
