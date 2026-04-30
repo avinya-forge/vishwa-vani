@@ -192,6 +192,17 @@ export const VEDIC_LABS_REGISTRY: LabAppEntry[] = [
     available: true,
     isPrototype: false,
   },
+  {
+    id: 'guna-balancing-simulator',
+    name: 'Guna Balancing Simulator',
+    description: 'Assess your Sattva / Rajas / Tamas balance through 6 lifestyle questions. Reveals your dominant Guna, Gita teaching from Ch 14, and personalised practice guidance.',
+    path: '/labs',
+    books: ['bhagavad-gita'],
+    chapters: [14],
+    topics: ['guna', 'sattva', 'rajas', 'tamas', 'lifestyle', 'self-assessment', 'chapter-14'],
+    available: true,
+    isPrototype: false,
+  },
 ]
 
 /**

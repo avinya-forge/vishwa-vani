@@ -139,3 +139,32 @@ describe('LAB-GITA-001: ArjunasCrisisCounselor registry entry', () => {
     expect(apps.map(a => a.id)).not.toContain('arjunas-crisis-counselor')
   })
 })
+
+describe('LAB-GITA-002: GunaBalancingSimulator registry entry', () => {
+  const app = VEDIC_LABS_REGISTRY.find(a => a.id === 'guna-balancing-simulator')
+
+  it('is registered in VEDIC_LABS_REGISTRY', () => {
+    expect(app).toBeDefined()
+  })
+
+  it('is available and not a prototype', () => {
+    expect(app?.available).toBe(true)
+    expect(app?.isPrototype).not.toBe(true)
+  })
+
+  it('is scoped to bhagavad-gita chapter 14', () => {
+    expect(app?.books).toContain('bhagavad-gita')
+    expect(app?.chapters).toContain(14)
+  })
+
+  it('getAppsForContext returns it for bhagavad-gita chapter 14', () => {
+    const apps = getAppsForContext('bhagavad-gita', 14)
+    expect(apps.map(a => a.id)).toContain('guna-balancing-simulator')
+  })
+
+  it('has guna-related topics', () => {
+    expect(app?.topics).toContain('sattva')
+    expect(app?.topics).toContain('rajas')
+    expect(app?.topics).toContain('tamas')
+  })
+})

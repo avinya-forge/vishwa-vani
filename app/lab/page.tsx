@@ -67,6 +67,10 @@ const ArjunasCrisisCounselor = dynamic(() => import('@/components/lab/arjunas-cr
   ssr: false,
   loading: () => <LabSkeleton />
 })
+const GunaBalancingSimulator = dynamic(() => import('@/components/lab/guna-balancing-simulator'), {
+  ssr: false,
+  loading: () => <LabSkeleton />
+})
 
 export default function VedicLabPage() {
   return (
@@ -109,6 +113,7 @@ export default function VedicLabPage() {
            <GrammarTokenizer />
            <IshaContemplationGuide />
            <ArjunasCrisisCounselor />
+           <GunaBalancingSimulator />
         </div>
       </div>
     </main>

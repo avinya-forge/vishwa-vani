@@ -156,7 +156,7 @@ Real KMG data exists in `data/2-silver/mahabharata/parva-1/` — 210 real verses
 
 Priority Tier 1 — highest user engagement:
 - [x] `LAB-GITA-001` **Arjuna's Crisis Counselor** (Ch 1) — User plays Krishna responding to Arjuna's 100+ verses of doubt. Three response modes: Warrior ethics / Knowledge / Devotion. Each path unlocks Gita teaching. Covers Ch 1 (only chapter with zero apps). **Done**: 2026-04-30. 5 doubt scenarios from Ch 1 (BG 1.28, 1.36, 1.40, 1.45, 1.47). 3 response modes (Warrior/Knowledge/Devotion) each with teaching + Gita ref + insight. Registered in registry. 5 tests passing.
-- [ ] `LAB-GITA-002` **Guna Balancing Simulator** (Ch 14) — Interactive Sattva/Rajas/Tamas wheel. User inputs daily habits (sleep, food, work patterns) → real-time Guna score → guidance to evolve toward Sattva. Visual, reusable daily.
+- [x] `LAB-GITA-002` **Guna Balancing Simulator** (Ch 14) — Interactive Sattva/Rajas/Tamas wheel. User inputs daily habits (sleep, food, work patterns) → real-time Guna score → guidance to evolve toward Sattva. Visual, reusable daily. **Done**: 2026-04-30. 6 lifestyle habit questions (sleep/food/work/emotion/knowledge/speech). Dominant Guna revealed with percentage bars, Gita Ch 14 teaching, and personalised practice. 5 tests passing.
 - [ ] `LAB-GITA-003` **Moksha Pathways Engine** (Ch 18) — Decision tree: "Which liberation path suits you?" Compare Karma Yoga / Bhakti / Jnana / Meditation. Deep dive into 18.66 (sarva-dharman parityajya). Covers the final chapter.
 - [ ] `LAB-GITA-004` **Sanyasa Paradox Resolver** (Ch 4, 5) — Interactive: "How to renounce while still acting?" Map life situation to Krishna's guidance on Karma Yoga vs. pure renunciation. Resolves Ch 3↔5 apparent contradiction.
 
