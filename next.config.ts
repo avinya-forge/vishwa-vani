@@ -9,6 +9,16 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
+  async redirects() {
+    return [
+      // BUG-066: friendly alias for Isha Upanishad Shanti Patha (verse 0)
+      {
+        source: '/isha-upanishad/shanti',
+        destination: '/isha-upanishad/1/0',
+        permanent: false,
+      },
+    ];
+  },
   async headers() {
     return [
       {
