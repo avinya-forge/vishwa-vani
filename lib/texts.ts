@@ -56,6 +56,12 @@ export interface VedicText {
     geographicalContext?: string
     keyThemes?: string[]
     availableEditions?: string[]
+    parvaStructure?: {
+      totalParvas: number
+      totalAdhyayas: number
+      totalShlokas: number
+      note?: string
+    }
   }
 }
 

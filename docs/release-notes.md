@@ -1,5 +1,30 @@
 # Release Notes
 
+## [1.0.12] - 2026-04-29 (Backlog Sprint — Standards, Isha Labs, MBH Foundation)
+
+### Tasks Completed
+- BUG-042: `study-client.tsx` Universal Translation block now filters known placeholder patterns before rendering; prevents TBD_CONTENT/bracket-prefixed strings from displaying.
+- STD-003: `scripts/audit_standards.js` now enforces Vedic Labs gate — parses `vedic-labs-registry.ts`, reports per-chapter coverage. Zero coverage = hard graduation block; partial coverage = warning.
+- STD-004: `scripts/backfill_chapter_metadata.js` adds `theme`/`yoga_type`/`stotra_present` fields to `data/manifest.json` chapters. Backfills all 18 Gita chapters and Isha ch1. `audit_standards.js` verifies fields exist.
+- STD-005: `node scripts/audit_standards.js isha-upanishad` → PASS (0 violations) after ISHA-LAB-2 registration + metadata backfill.
+- ISHA-LAB-1: Philosophical theme map for all 18 Isha Upanishad mantras documented. Three app concepts proposed: Contemplation Guide (implemented), Vidyā-Avidyā Paradox Explorer, Atman Paradox Visualizer.
+- ISHA-LAB-2: `IshaContemplationGuide` component — verse-by-verse guided meditation for all 18 mantras with Sanskrit, transliteration, theme, translation, contemplation prompt, and progress bar. Registered in `VEDIC_LABS_REGISTRY`.
+- ISHA-STOTRA-1: `data/2-silver/stotras/isha-shanti-patha.json` created — 3 mantras, EN/HI/MR Shankara commentary, EN/HI pronunciation guide. `.gitignore` updated to track stotras dir.
+- ISHA-BUG-1: Stage 4 static analysis complete — PASS on content filter, language selector, progress counter, verse permalinks. Two P2 logged: BUG-065 (shanti patha unlabelled), BUG-066 (route /1/0 unintuitive).
+- PIPE-KENA-1: Kena Upanishad silver audit — 1/34 verses present, zero layers. 33 verses missing across 4 khandas. Full source acquisition required.
+- MBH-CORE-004: `lib/texts.ts` mahabharata contextualInfo enriched — dual-date historicalEra, BORI + KMG editions, expanded geography, parvaStructure (18 parvas, 2109 adhyayas, ~100k shlokas).
+
+### Test Coverage
+- 22 new test cases added across 4 test files
+- `components-study-client.test.tsx`: +2 (BUG-042 placeholder/valid translation)
+- `lib-vedic-labs-registry.test.ts`: +5 (ISHA-LAB-2 registration)
+- `lib-texts.test.ts`: +5 (MBH-CORE-004 Timeline metadata)
+- TypeScript: zero new errors introduced
+
+### Backlog
+- All 10 sprint items marked [x] in docs/backlog.md
+- BUG-065 and BUG-066 logged as [P2] open items
+
 ## [1.0.11] - 2026-04-25 (Project Sanitization & Stabilization Sprint)
 
 ### Tasks Completed
