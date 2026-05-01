@@ -6,6 +6,8 @@ This is the single authoritative ledger for Vishwa-Vani progress. Sections are: 
 
 ## 🎯 PRIORITY 0: ACTIVE BOOK FOCUS
 
+**SPRINT ACTIVE:** 30-day mega-sprint 2026-05-01→2026-05-30. State: `session.state` (project root). Burn-down: `docs/burn-down.md`. Day 1 S1 batch: BUG-050 / BUG-057 / BUG-053 / MBH-DATA-1. Target: 48 tasks / 30 days / 3 sessions per day.
+
 *Exactly one book is in active development at a time. Complete the full 8-stage cycle before advancing. Check this section first every session.*
 
 ### GRADUATED BOOKS (fully complete — all 8 stages done)
