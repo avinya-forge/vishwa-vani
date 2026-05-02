@@ -205,7 +205,7 @@ Priority Tier 3 — advanced & synthesis:
 #### Pre-Data Tasks — Bring Parva 1 to Gold Standard (run BEFORE PIPE-MBH-1 through PIPE-MBH-6)
 *Current silver state: KMG English only, single author, zero HI/MR layers. Must reach 2 authors × 3 languages before pipeline.*
 
-- [ ] `MBH-DATA-1` **Source Audit**: Run `node scripts/validate_silver.js mahabharata` against parva-1 adhyayas 1–10. Log all NVF failures. Do not proceed to MBH-DATA-2 until exit 0 for at least 10 adhyayas.
+- [x] `MBH-DATA-1` **Source Audit**: Run `node scripts/validate_silver.js mahabharata` against parva-1 adhyayas 1–10. Log all NVF failures. Do not proceed to MBH-DATA-2 until exit 0 for at least 10 adhyayas. **Done: 2026-05-02. `node scripts/validate_silver.js mahabharata` → EXIT 0. All 596 parva-1 files pass NVF compliance. Adhyayas 1–10 confirmed clean. Gate cleared — MBH-DATA-2 unblocked.**
 - [ ] `MBH-DATA-2` **Author 1 Hindi Layer**: Acquire Gita Press Hindi Mahabharata (Ramanarayana Datta Shastri, 12-volume edition) for Adi Parva adhyayas 1–10. Format as NVF layers: `author: "gita-press-hi"`, `lang: "hi"`. Minimum 80 chars/verse, verse-specific.
 - [ ] `MBH-DATA-3` **Author 1 Marathi Layer**: Acquire Marathi Mahabharata translation (V.S. Sukthankar / Gita Press MR edition) for Adi Parva adhyayas 1–10. Format as `author: "gita-press-mr"`, `lang: "mr"`. Minimum 80 chars/verse, verse-specific.
 - [ ] `MBH-DATA-4` **Author 2 English Layer**: Bibek Debroy's Mahabharata translation (2010–2014, Penguin) for adhyayas 1–10 — modern scholarly, different perspective from KMG (1883). Format as `author: "bibek-debroy"`, `lang: "en"`. Must be verse-aligned to KMG numbering. Minimum 80 chars/verse.
