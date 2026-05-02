@@ -11,7 +11,8 @@
 
 | Day | Date       | Completed (day) | Cumulative | Remaining | 3d Velocity | V-Score | Risk |
 |-----|------------|-----------------|------------|-----------|-------------|---------|------|
-| 1   | 2026-05-01 | —               | 0          | 48        | —           | —       | —    |
+| 1   | 2026-05-01 | 11              | 11         | 37        | 11.0        | 9.5     | —    |
+| 2   | 2026-05-02 | —               | 11         | 37        | —           | —       | —    |
 
 *One row per day. Updated at Night session close. Append-only — never delete rows.*
 
@@ -29,18 +30,31 @@
 - Notes: Sprint initialized. 48 tasks total. Branch: claude/setup-sprint-orchestration-FF0t7. Orchestration infrastructure created (session.state + burn-down.md).
 
 **Mid (S2)**
-- Batch: TBD (depends on Morning output)
-- Opened: —
+- Batch: merged into S1 (extended session)
+- Notes: —
+
+**Night (S3)**
+- Batch: merged into S1 (extended session)
+- Day 1 Summary: 11 tasks completed. Remaining: 37. V-Score: 9.5. Commits: 13.
+
+---
+
+### Day 2 — 2026-05-02
+
+**Morning (S2-1)**
+- Batch: LAB-GITA-011, LAB-GITA-012, LAB-GITA-013, SCHOLAR-001
+- Opened: 2026-05-02T09:34:00Z
 - Closed: —
 - Completed: —
 - Notes: —
 
-**Night (S3)**
+**Mid (S2-2)**
 - Batch: TBD
-- Opened: —
-- Closed: —
-- Completed: —
-- Day 1 Summary: — tasks completed. Remaining: 48. V-Score: —
+- Notes: —
+
+**Night (S2-3)**
+- Batch: TBD
+- Day 2 Summary: —
 
 ---
 
