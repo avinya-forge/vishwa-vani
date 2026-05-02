@@ -75,6 +75,34 @@ const MokshaPathwaysEngine = dynamic(() => import('@/components/lab/moksha-pathw
   ssr: false,
   loading: () => <LabSkeleton />
 })
+const SanyasaParadoxResolver = dynamic(() => import('@/components/lab/sanyasa-paradox-resolver'), {
+  ssr: false,
+  loading: () => <LabSkeleton />
+})
+const VisvarupaContemplation = dynamic(() => import('@/components/lab/visvarupa-contemplation'), {
+  ssr: false,
+  loading: () => <LabSkeleton />
+})
+const RoyalScienceDecoder = dynamic(() => import('@/components/lab/royal-science-decoder'), {
+  ssr: false,
+  loading: () => <LabSkeleton />
+})
+const JnanaProgressionPath = dynamic(() => import('@/components/lab/jnana-progression-path'), {
+  ssr: false,
+  loading: () => <LabSkeleton />
+})
+const PurushottamaSelfInquiry = dynamic(() => import('@/components/lab/purushottama-self-inquiry'), {
+  ssr: false,
+  loading: () => <LabSkeleton />
+})
+const DharmicConflictResolver = dynamic(() => import('@/components/lab/dharmic-conflict-resolver'), {
+  ssr: false,
+  loading: () => <LabSkeleton />
+})
+const VerseGunaAnalyzer = dynamic(() => import('@/components/lab/verse-guna-analyzer'), {
+  ssr: false,
+  loading: () => <LabSkeleton />
+})
 
 export default function VedicLabPage() {
   return (
@@ -119,6 +147,13 @@ export default function VedicLabPage() {
            <ArjunasCrisisCounselor />
            <GunaBalancingSimulator />
            <MokshaPathwaysEngine />
+           <SanyasaParadoxResolver />
+           <VisvarupaContemplation />
+           <RoyalScienceDecoder />
+           <JnanaProgressionPath />
+           <PurushottamaSelfInquiry />
+           <DharmicConflictResolver />
+           <VerseGunaAnalyzer />
         </div>
       </div>
     </main>

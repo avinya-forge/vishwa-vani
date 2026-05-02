@@ -1,0 +1,191 @@
+{
+  "_schema": "sprint-state-v1",
+  "_description": "High-Velocity SDLC sprint state. Committed at each session close. Read at each session open.",
+
+  "sprint": {
+    "name": "Vishwa-Vani 30-Day Mega-Sprint",
+    "sdlcVersion": "5.1",
+    "startDate": "2026-05-01",
+    "endDate": "2026-05-30",
+    "totalDays": 30,
+    "sessionsPerDay": 3,
+    "totalSessions": 90
+  },
+
+  "position": {
+    "day": 2,
+    "session": 1,
+    "sessionLabel": "Morning",
+    "sessionStartISO": "2026-05-02T09:34:00Z",
+    "sessionEndISO": null
+  },
+
+  "burnDown": {
+    "totalTasksAtSprintStart": 48,
+    "completedAllTime": 11,
+    "remainingAtSessionStart": 37,
+    "completedThisSession": 0,
+    "remainingNow": 37,
+    "targetVelocityPerDay": 1.6,
+    "targetVelocityPerSession": 0.53,
+    "actualVelocityToday": 0.0,
+    "rollingVelocity3Day": 11.0,
+    "riskThreshold": "rolling 3-day velocity < 2.4 tasks/day triggers riskFlag",
+    "riskFlag": false
+  },
+
+  "activeBook": {
+    "slug": "mahabharata",
+    "displayName": "Mahabharata Parva 1",
+    "cycleStage": 1,
+    "cycleStageLabel": "Data Gathering",
+    "nextGate": "MBH-DATA-2: acquire Hindi + Marathi layers for adhyayas 1-10"
+  },
+
+  "currentBatch": {
+    "batchId": "D2-S1",
+    "tasks": [
+      {
+        "id": "LAB-GITA-011",
+        "title": "Commentary Comparison Tool — All chapters",
+        "priority": "P2",
+        "track": "LAB",
+        "status": "pending",
+        "doneCriteria": "Component live in /labs, registered in registry, available:true"
+      },
+      {
+        "id": "LAB-GITA-012",
+        "title": "Marathi Heritage Explorer — All chapters",
+        "priority": "P2",
+        "track": "LAB",
+        "status": "pending",
+        "doneCriteria": "Component live in /labs, 3-layer display: shloka → Dnyaneshwari → modern Marathi"
+      },
+      {
+        "id": "LAB-GITA-013",
+        "title": "Consciousness State Mapper — Ch 7, 13, 15",
+        "priority": "P2",
+        "track": "LAB",
+        "status": "pending",
+        "doneCriteria": "Component live in /labs, 4 states (Jagrat/Swapna/Sushupti/Turiya), Mandukya cross-ref"
+      },
+      {
+        "id": "SCHOLAR-001",
+        "title": "Top 10 Scholar Identification — research and rank candidates",
+        "priority": "P2",
+        "track": "CONTENT",
+        "status": "pending",
+        "doneCriteria": "backlog.md updated with ranked list + acquisition plan per scholar"
+      }
+    ]
+  },
+
+  "completedThisSession": [],
+
+  "completedAllTime": [
+    { "id": "BUG-050", "session": "D1-S1", "closedISO": "2026-05-02T09:00:00Z" },
+    { "id": "BUG-053", "session": "D1-S1", "closedISO": "2026-05-02T09:00:00Z" },
+    { "id": "BUG-042", "session": "D1-S1", "closedISO": "2026-05-02T09:00:00Z" },
+    { "id": "MBH-DATA-1", "session": "D1-S1", "closedISO": "2026-05-02T09:00:00Z" },
+    { "id": "LAB-GITA-004", "session": "D1-S1", "closedISO": "2026-05-02T09:20:00Z" },
+    { "id": "LAB-GITA-005", "session": "D1-S1", "closedISO": "2026-05-02T09:20:00Z" },
+    { "id": "LAB-GITA-006", "session": "D1-S1", "closedISO": "2026-05-02T09:20:00Z" },
+    { "id": "LAB-GITA-007", "session": "D1-S1", "closedISO": "2026-05-02T09:20:00Z" },
+    { "id": "LAB-GITA-008", "session": "D1-S1", "closedISO": "2026-05-02T09:20:00Z" },
+    { "id": "LAB-GITA-009", "session": "D1-S1", "closedISO": "2026-05-02T09:20:00Z" },
+    { "id": "LAB-GITA-010", "session": "D1-S1", "closedISO": "2026-05-02T09:20:00Z" }
+  ],
+
+  "dataQuality": {
+    "lastAuditScript": "scripts/audit_multilang.js bhagavad-gita",
+    "lastAuditResult": "PASS",
+    "ishaGoldStatus": "PASS (19 verses, 9 layers each, 0 violations)",
+    "gitaGoldStatus": "PASS (657 verses, 0 repeated groups, 0 thin layers — BUG-057 structural fix done, authentic HI/MR still P1-open)",
+    "mbhSilverStatus": "PASS (596 files, validate_silver exits 0)",
+    "overallGate": "PASS"
+  },
+
+  "vScore": {
+    "current": 9.5,
+    "lastSessionScore": 9.5,
+    "sessionD1S1Breakdown": {
+      "TaskComp": 10,
+      "Quality": 10,
+      "Momentum": 8,
+      "RiskClean": 9,
+      "raw": "0.40*10 + 0.30*10 + 0.20*8 + 0.10*9 = 9.5"
+    },
+    "formula": "V = 0.40*TaskComp + 0.30*Quality + 0.20*Momentum + 0.10*RiskClean",
+    "factorRules": {
+      "TaskComp": "min(10, completedThisSession/batchSize * 10)",
+      "Quality": "10=PASS | 6=PARTIAL | 3=FAIL | 2=not_run",
+      "Momentum": "10=rolling>=target | 7=>=75% | 5=>=50% | 2=<50% | 8=null(Day1)",
+      "RiskClean": "max(0, 10 - openP0*5 - min(3, openP1*1))"
+    },
+    "target": 8.0,
+    "minimum": 6.0
+  },
+
+  "nextSessionPrep": {
+    "nextSessionLabel": "Day 2 Mid",
+    "suggestedNextBatch": [
+      "MBH-DATA-2 (acquire HI layer source for adhyayas 1-10 — Gita Press Hindi parallel)",
+      "SCHOLAR-002 (language balance audit across top-10 candidates)",
+      "LAB-GITA-STOTRA-1 (extract Vishnu Sahasranama chapter from Gita context)",
+      "PIPE-KENA-2 (Kena Upanishad pipeline step 2)"
+    ],
+    "blockers": [
+      "BUG-057 (authentic HI/MR Gita layers) — data acquisition task, not code; needs public-domain source selection"
+    ]
+  },
+
+  "openP1Bugs": [
+    {
+      "id": "BUG-057",
+      "title": "Gita HI/MR Layers Not Authentic — derived from EN, not real HI/MR scholarship",
+      "note": "Structural uniqueness fixed (BUG-053 closed). Authenticity still open. Requires Gita Press Hindi + Dnyaneshwari Marathi source acquisition."
+    }
+  ],
+
+  "sprintScope": {
+    "totalTasksAtStart": 48,
+    "completedCount": 11,
+    "remainingCount": 37,
+    "breakdown": {
+      "P1_bugs": { "total": 4, "done": 3, "open": ["BUG-057"] },
+      "scholar_enrichment": { "total": 5, "done": 0, "ids": ["SCHOLAR-001", "SCHOLAR-002", "SCHOLAR-003", "SCHOLAR-004", "SCHOLAR-005"] },
+      "gita_labs": { "total": 10, "done": 7, "open": ["LAB-GITA-011", "LAB-GITA-012", "LAB-GITA-013"] },
+      "gita_stotras": { "total": 3, "done": 0, "ids": ["LAB-GITA-STOTRA-1", "LAB-GITA-STOTRA-2", "LAB-GITA-STOTRA-3"] },
+      "mbh_data": { "total": 7, "done": 1, "open": ["MBH-DATA-2", "MBH-DATA-3", "MBH-DATA-4", "MBH-DATA-5", "MBH-DATA-6", "MBH-DATA-7"] },
+      "mbh_pipeline": { "total": 6, "done": 0, "ids": ["PIPE-MBH-1", "PIPE-MBH-2", "PIPE-MBH-3", "PIPE-MBH-4", "PIPE-MBH-5", "PIPE-MBH-6"] },
+      "mbh_ui_core": { "total": 5, "done": 0, "ids": ["MBH-CORE-001", "MBH-CORE-002", "MBH-CORE-003", "MBH-CORE-005", "MBH-UI-1"] },
+      "mbh_labs": { "total": 3, "done": 0, "ids": ["MBH-LAB-1", "MBH-LAB-2", "MBH-LAB-3"] },
+      "kena_pipeline": { "total": 5, "done": 0, "ids": ["PIPE-KENA-2", "PIPE-KENA-3", "PIPE-KENA-4", "PIPE-KENA-5", "PIPE-KENA-6"] }
+    }
+  },
+
+  "log": [
+    {
+      "timestamp": "2026-05-01T00:00:00Z",
+      "event": "sprint_initialized",
+      "agent": "architect",
+      "note": "48 tasks. Branch: claude/setup-sprint-orchestration-FF0t7."
+    },
+    {
+      "timestamp": "2026-05-02T09:34:00Z",
+      "event": "session_closed",
+      "session": "D1-S1",
+      "agent": "claude",
+      "tasksCompleted": 11,
+      "vScore": 9.5,
+      "note": "11 tasks closed: 4 P1 bugs confirmed done (BUG-050/053/042/MBH-DATA-1) + 7 Gita lab apps (LAB-GITA-004–010). All audits PASS. 13 granular commits pushed."
+    },
+    {
+      "timestamp": "2026-05-02T09:34:00Z",
+      "event": "session_opened",
+      "session": "D2-S1",
+      "agent": "claude",
+      "note": "D2-S1 batch: LAB-GITA-011, LAB-GITA-012, LAB-GITA-013, SCHOLAR-001. 37 tasks remaining."
+    }
+  ]
+}
