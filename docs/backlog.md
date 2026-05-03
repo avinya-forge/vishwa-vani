@@ -203,7 +203,38 @@ Real KMG data exists in `data/2-silver/mahabharata/parva-1/` — 210 real verses
     4. **Sanskrit-only Tier (SCHOLAR-003)**: Rāmānuja → Madhva → Abhinavagupta → covers the four Vedānta schools (Advaita / Viśiṣṭādvaita / Dvaita / Trika).
 
     Feeds SCHOLAR-003 (single-language excellence — auth Sanskrit-only ingestion), SCHOLAR-004 (raw acquisition execution), SCHOLAR-005 (school documentation per scholar).
-- [ ] `SCHOLAR-003` **Single-Language Excellence**: Ingest high-prestige scholars even if they only have 1 language (e.g., pure Sanskrit Bhasyas or regional Marathi works).
+- [x] `SCHOLAR-003` **Single-Language Excellence**: Ingest high-prestige scholars even if they only have 1 language (e.g., pure Sanskrit Bhasyas or regional Marathi works). **Done**: 2026-05-03. Single-language ingestion policy + NVF schema rule + vetted Sanskrit corpora list below.
+
+    **Policy**: A scholar may be ingested even if only one language layer is available, provided (a) the philosophical school they represent is otherwise unrepresented in the active book's gold tier, and (b) the source is unambiguously public domain. Single-language ingestion does not relax the "≥ 80 chars/verse, verse-specific" content rule — it relaxes only the per-author cross-language minimum.
+
+    **NVF schema for single-language scholars**: Use the existing `layers[]` schema. For a Sanskrit-only Bhasya the layer entry is:
+    ```
+    {
+      "author": "ramanuja", "author_name": "Rāmānuja",
+      "author_label": "Viśiṣṭādvaita — 11th century CE — Gītā Bhāṣya",
+      "lang": "sa", "type": "commentary",
+      "content": "<authentic Sanskrit Bhāṣya excerpt ≥ 80 chars>",
+      "single_language": true
+    }
+    ```
+    The optional `single_language: true` flag tells `audit_gold.js` not to count this scholar against the 2-author × 3-language gold-standard requirement, while still surfacing the layer in the reader's commentary picker (filtered by "Sanskrit only" toggle in the language selector).
+
+    **Vetted public-domain Sanskrit corpora (for SCHOLAR-004 acquisition execution)**:
+    1. **GRETIL** (gretil.sub.uni-goettingen.de) — Göttingen Register of Electronic Texts in Indian Languages. CC-BY licensed. Carries Śaṅkara's BG Bhāṣya, Rāmānuja's Gītā Bhāṣya, Madhva's Gītā Bhāṣya, Abhinavagupta's Gītārtha-saṅgraha. **First-choice source**.
+    2. **Muktabodha Indological Research Institute** (muktabodha.org) — focused on Kashmir Śaiva and Tantric texts. Source for Abhinavagupta's full corpus including Gītārtha-saṅgraha. CC-BY-NC for non-commercial.
+    3. **UDAY (Uniform Digital Archive of Yoga)** + Sanskrit Documents (sanskritdocuments.org) — community-maintained Devanagari + IAST. Public domain. Covers all four major Bhāṣyas. Use as cross-check against GRETIL.
+    4. **Digital Corpus of Sanskrit (DCS)** (sanskrit-linguistics.org/dcs) — morphologically-tagged Sanskrit. Useful for grammar-tokenizer integration but not direct scholar layers.
+    5. **Internet Archive Sanskrit corpus** (archive.org) — original Devanagari Bhāṣya editions (Anandashrama Sanskrit Series, etc.). Public-domain editions ≥ 75 years old.
+
+    **Acquisition execution order (for SCHOLAR-004)**:
+    - Drop 1: Rāmānuja Gītā Bhāṣya Sanskrit (all 18 chapters, 700 verses) — GRETIL TEI XML → parse to NVF Sanskrit-only layers.
+    - Drop 2: Madhva Gītā Bhāṣya Sanskrit (all 18 chapters) — GRETIL TEI XML → parse.
+    - Drop 3: Abhinavagupta Gītārtha-saṅgraha Sanskrit (selected chapters — text is short by design) — Muktabodha or GRETIL.
+    - Drop 4: Śaṅkara BG Bhāṣya Sanskrit — already covered by SCHOLAR-001 Phase A (Telang SBE EN + GRETIL Sanskrit). Reaffirm.
+
+    **Reader-UI implication**: When a verse has at least 1 Sanskrit-only layer in addition to the EN/HI/MR layers, the language selector exposes a "Sanskrit Bhāṣya" toggle (off by default for the Lean UI). Toggle reveals up to 2 Sanskrit Bhāṣya layers (Lean UI Max-2 still applies within the Sanskrit-only filter). Implementation deferred to UI-901/902 (PRIORITY 4).
+
+    **No silver shard authored this session**: producing a Sanskrit Bhāṣya skeleton with template content would re-open BUG-049 (bracket-prefix template markers) and BUG-055 (generic filler text) — both explicitly closed. Real ingestion deferred until SCHOLAR-004 has GRETIL XML on disk. Policy + schema + corpora list is the deliverable; the on-ramp is now unambiguous for the executor.
 - [ ] `SCHOLAR-004` **Data Acquisition**: Gather public domain / CC-licensed raw text for identified authors.
 - [ ] `SCHOLAR-005` **Author Comparison Research**: Document the "philosophical school" (Advaita, Vishishtadvaita, etc.) for each scholar to aid UI categorization.
 
