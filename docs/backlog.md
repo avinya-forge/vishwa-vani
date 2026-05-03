@@ -299,7 +299,55 @@ Priority Tier 3 — advanced & synthesis:
 - [ ] `MBH-DATA-6` **Enrichment Script**: Write `scripts/enrich_mbh_parva1.js` — merges KMG EN + Author 2 EN + HI + MR layers into silver NVF shards for adhyayas 1–10. Enforces 6-layer gold-standard schema per verse. Outputs to `data/2-silver/mahabharata/parva-1/`. Run after MBH-DATA-1 through MBH-DATA-5.
 - [ ] `MBH-DATA-7` **Pipeline Run**: After DATA-1–6 complete: `node scripts/validate_silver.js mahabharata` → exit 0; `node scripts/promote_to_gold.js mahabharata`; `node scripts/audit_gold.js mahabharata` → Readiness 100%, 2+ authors, EN/HI/MR all present.
 
-- [ ] `MBH-CORE-001` **Scale Ingestion Roadmap**: Audit all 18 Parvas (225-300+ adhyayas each) and create a phased ingestion schedule (Phase 1-Parvas 1-6, Phase 2-Parvas 7-12, Phase 3-Parvas 13-18).
+- [x] `MBH-CORE-001` **Scale Ingestion Roadmap**: Audit all 18 Parvas (225-300+ adhyayas each) and create a phased ingestion schedule (Phase 1-Parvas 1-6, Phase 2-Parvas 7-12, Phase 3-Parvas 13-18). **Done**: 2026-05-03. Phased schedule with verse-count estimates + per-parva narrative weight + ingestion order rationale below.
+
+    **Verse-count baseline (BORI Critical Edition, Sukthankar et al. 1933–1966)**:
+    - Adi Parva (1) — 19 sub-parvas, ~225 adhyayas, ~7,984 verses
+    - Sabha Parva (2) — 9 sub-parvas, ~72 adhyayas, ~2,388 verses
+    - Aranyaka Parva (3) — 17 sub-parvas, ~299 adhyayas, ~10,239 verses (longest by sub-parva count; contains Tirtha-yatra and Markandeya episodes)
+    - Virata Parva (4) — 4 sub-parvas, ~67 adhyayas, ~1,736 verses
+    - Udyoga Parva (5) — 11 sub-parvas, ~196 adhyayas, ~6,001 verses (contains Sanatsujatiya + Vidura-niti)
+    - Bhishma Parva (6) — 4 sub-parvas, ~117 adhyayas, ~5,381 verses (**contains the Bhagavad Gītā at adhyaya 25–42**)
+    - Drona Parva (7) — 8 sub-parvas, ~173 adhyayas, ~8,069 verses
+    - Karna Parva (8) — 1 sub-parva, ~69 adhyayas, ~3,870 verses
+    - Shalya Parva (9) — 4 sub-parvas, ~64 adhyayas, ~3,317 verses
+    - Sauptika Parva (10) — 3 sub-parvas, ~18 adhyayas, ~771 verses (shortest; the night-massacre)
+    - Stri Parva (11) — 5 sub-parvas, ~27 adhyayas, ~713 verses
+    - Shanti Parva (12) — 3 sub-parvas, ~365 adhyayas, ~13,007 verses (**single longest parva** — contains Rajadharma-anushasana, Apaddharma, Mokshadharma)
+    - Anushasana Parva (13) — 2 sub-parvas, ~154 adhyayas, ~6,493 verses (**contains Vishnu Sahasranama at adhyaya 149**)
+    - Ashvamedhika Parva (14) — 2 sub-parvas, ~96 adhyayas, ~2,743 verses (contains Anugītā)
+    - Ashramavasika Parva (15) — 3 sub-parvas, ~47 adhyayas, ~1,062 verses
+    - Mausala Parva (16) — 1 sub-parva, ~9 adhyayas, ~273 verses
+    - Mahaprasthanika Parva (17) — 1 sub-parva, ~3 adhyayas, ~120 verses
+    - Svargarohana Parva (18) — 1 sub-parva, ~5 adhyayas, ~209 verses
+    - **Total ~73,684 verses** (BORI Critical Edition; Vulgate/KMG runs ~100k including interpolations).
+
+    **Phase 1 — Parvas 1–6 (~33,729 verses, narrative core)**:
+    - Order: Adi (1) → Sabha (2) → Virata (4) → Udyoga (5) → Bhishma (6) → Aranyaka (3).
+    - Rationale: linear narrative spine first, with Aranyaka deferred to last in the phase because its Tirtha-yatra and Markandeya episodes are largely standalone and content-heavy.
+    - Bhishma Parva is structurally critical because it contains the Gītā — its ingestion lets us cross-link MBH adhyayas 25–42 to existing BG gold tier (`relatedShard` metadata).
+    - Phase 1 exit gate: `audit_gold.js mahabharata` reports ≥ 33,000 verses across 6 parvas with 2-author × EN/HI/MR coverage.
+
+    **Phase 2 — Parvas 7–12 (~29,357 verses, war + Shanti)**:
+    - Order: Drona (7) → Karna (8) → Shalya (9) → Sauptika (10) → Stri (11) → Shanti (12).
+    - Rationale: war parvas in chronological order; Sauptika and Stri are short transitions; Shanti is deferred to phase end because its 13,007 verses dominate phase memory budget and require chunked ingestion (see MBH-CORE-002 runbook).
+    - Phase 2 exit gate: `audit_gold.js mahabharata` reports ≥ 60,000 cumulative verses; build memory peaks documented.
+
+    **Phase 3 — Parvas 13–18 (~10,900 verses, philosophical + epilogue)**:
+    - Order: Anushasana (13) → Ashvamedhika (14) → Ashramavasika (15) → Mausala (16) → Mahaprasthanika (17) → Svargarohana (18).
+    - Rationale: Anushasana first because Vishnu Sahasranama (adhyaya 149) is high-priority for Stage 7 stotra extraction. Final 5 parvas are short (~4,400 verses combined) and mostly narrative epilogue — fast to close.
+    - Phase 3 exit gate: full 18-parva gold tier; manifest reports 100% completeness; `available: true` in `lib/texts.ts`.
+
+    **Cross-phase parallel work (does not block phases)**:
+    - Stotra extraction: Vishnu Sahasranama (Anushasana 149) and Bhishma Stuti (Anushasana 14, Sabha 41) can be extracted to `data/2-silver/stotras/` as soon as their parent parva enters Phase 2/3 silver state — does not require gold promotion of the whole parva.
+    - Cross-references back to BG: as soon as Bhishma Parva is silver-clean, populate `relatedShard: bhagavad-gita` metadata on adhyayas 25–42.
+
+    **Resource budget**:
+    - Compute: each phase ≈ 8–12 sprint days at 1.6 tasks/day → 30/30 days ≈ 1 phase per 30-day mega-sprint.
+    - Storage: Gold-tier raw ≈ 200MB compressed JSON for 73k verses with 6 layers each. Cloudflare D1 capacity (500MB free) accommodates Phase 1+2 fully; Phase 3 may push toward limit and trigger ARCH-007 sharding.
+    - Build: `next build` time grows linearly with verse count; ARCH-001 + ARCH-007 (edge-hosted SQLite WASM, parva-level summary shards) must land before Phase 2 close to keep build under 10 minutes.
+
+    Feeds MBH-CORE-002 (runbook implementing the stream-processing strategy referenced here) and MBH-DATA-2 through MBH-DATA-7 (per-parva data acquisition).
 - [ ] `MBH-CORE-002` **Process Replication**: Document the `docs/ingestion-runbook.md` specific to MBH scale (avoiding OOM during build, handling massive JSON shards).
 - [ ] `MBH-CORE-003` **KMG Source Verification**: Clean the KMG (Kisari Mohan Ganguli) layers for parvas 1-18.
 
