@@ -281,6 +281,17 @@ export const VEDIC_LABS_REGISTRY: LabAppEntry[] = [
     isPrototype: false,
   },
   {
+    id: 'consciousness-state-mapper',
+    name: 'Consciousness State Mapper',
+    description: 'Journey through the four states — Jāgrat, Svapna, Suṣupti, Turīya — with Gītā anchors from Ch 7/13/15 and Māṇḍūkya Upaniṣad cross-references. Includes a daily state tracker.',
+    path: '/labs',
+    books: ['bhagavad-gita'],
+    chapters: [7, 13, 15],
+    topics: ['turiya', 'jagrat', 'svapna', 'sushupti', 'consciousness', 'mandukya', 'witness', 'atman', 'chapter-7', 'chapter-13', 'chapter-15'],
+    available: true,
+    isPrototype: false,
+  },
+  {
     id: 'marathi-heritage-explorer',
     name: 'Marathi Heritage Explorer',
     description: 'Three-layer Bhagavad Gītā reader: Sanskrit śloka → 13th-century Sant Dnyāneshwar ovī → modern Marathi/English. Toggle layers to see vernacularisation in motion across 6 key verses.',
