@@ -14,22 +14,22 @@
 
   "position": {
     "day": 2,
-    "session": 1,
-    "sessionLabel": "Morning",
-    "sessionStartISO": "2026-05-02T09:34:00Z",
+    "session": 2,
+    "sessionLabel": "Mid",
+    "sessionStartISO": "2026-05-03T00:00:00Z",
     "sessionEndISO": null
   },
 
   "burnDown": {
     "totalTasksAtSprintStart": 48,
-    "completedAllTime": 11,
-    "remainingAtSessionStart": 37,
+    "completedAllTime": 15,
+    "remainingAtSessionStart": 33,
     "completedThisSession": 0,
-    "remainingNow": 37,
+    "remainingNow": 33,
     "targetVelocityPerDay": 1.6,
     "targetVelocityPerSession": 0.53,
-    "actualVelocityToday": 0.0,
-    "rollingVelocity3Day": 11.0,
+    "actualVelocityToday": 4.0,
+    "rollingVelocity3Day": 7.5,
     "riskThreshold": "rolling 3-day velocity < 2.4 tasks/day triggers riskFlag",
     "riskFlag": false
   },
@@ -43,39 +43,39 @@
   },
 
   "currentBatch": {
-    "batchId": "D2-S1",
+    "batchId": "D2-S2",
     "tasks": [
       {
-        "id": "LAB-GITA-011",
-        "title": "Commentary Comparison Tool — All chapters",
-        "priority": "P2",
-        "track": "LAB",
+        "id": "MBH-DATA-2",
+        "title": "Author 1 Hindi Layer for Adi Parva adhyayas 1-10 (Gita Press)",
+        "priority": "P1",
+        "track": "DATA",
         "status": "pending",
-        "doneCriteria": "Component live in /labs, registered in registry, available:true"
+        "doneCriteria": "data/2-silver/mahabharata/parva-1/ adhyayas 1-10 carry author=gita-press-hi lang=hi layers, ≥80 chars/verse, validate_silver passes"
       },
       {
-        "id": "LAB-GITA-012",
-        "title": "Marathi Heritage Explorer — All chapters",
+        "id": "PIPE-KENA-2",
+        "title": "Kena Upanishad pipeline step 2 — silver validate against full source",
         "priority": "P2",
-        "track": "LAB",
+        "track": "PIPE",
         "status": "pending",
-        "doneCriteria": "Component live in /labs, 3-layer display: shloka → Dnyaneshwari → modern Marathi"
+        "doneCriteria": "validate_silver.js kena-upanishad exits 0 after source acquisition"
       },
       {
-        "id": "LAB-GITA-013",
-        "title": "Consciousness State Mapper — Ch 7, 13, 15",
+        "id": "LAB-GITA-STOTRA-2",
+        "title": "Gītā Dhyāna Shlokas — 9 preparatory dhyana shlokas",
         "priority": "P2",
-        "track": "LAB",
+        "track": "STOTRA",
         "status": "pending",
-        "doneCriteria": "Component live in /labs, 4 states (Jagrat/Swapna/Sushupti/Turiya), Mandukya cross-ref"
+        "doneCriteria": "data/2-silver/stotras/gita-dhyana-shlokas.json with 9 mantras + EN/HI pronunciation guide"
       },
       {
-        "id": "SCHOLAR-001",
-        "title": "Top 10 Scholar Identification — research and rank candidates",
+        "id": "SCHOLAR-002",
+        "title": "Multilingual Balance Pass across the ranked top-10",
         "priority": "P2",
         "track": "CONTENT",
         "status": "pending",
-        "doneCriteria": "backlog.md updated with ranked list + acquisition plan per scholar"
+        "doneCriteria": "backlog audit table — for each scholar list lang availability + which slot they fill"
       }
     ]
   },
@@ -93,12 +93,16 @@
     { "id": "LAB-GITA-007", "session": "D1-S1", "closedISO": "2026-05-02T09:20:00Z" },
     { "id": "LAB-GITA-008", "session": "D1-S1", "closedISO": "2026-05-02T09:20:00Z" },
     { "id": "LAB-GITA-009", "session": "D1-S1", "closedISO": "2026-05-02T09:20:00Z" },
-    { "id": "LAB-GITA-010", "session": "D1-S1", "closedISO": "2026-05-02T09:20:00Z" }
+    { "id": "LAB-GITA-010", "session": "D1-S1", "closedISO": "2026-05-02T09:20:00Z" },
+    { "id": "LAB-GITA-011", "session": "D2-S1", "closedISO": "2026-05-03T10:00:00Z" },
+    { "id": "LAB-GITA-012", "session": "D2-S1", "closedISO": "2026-05-03T10:30:00Z" },
+    { "id": "LAB-GITA-013", "session": "D2-S1", "closedISO": "2026-05-03T11:00:00Z" },
+    { "id": "SCHOLAR-001", "session": "D2-S1", "closedISO": "2026-05-03T11:30:00Z" }
   ],
 
   "dataQuality": {
-    "lastAuditScript": "scripts/audit_multilang.js bhagavad-gita",
-    "lastAuditResult": "PASS",
+    "lastAuditScript": "npx jest __tests__/components-commentary-comparison.test.ts __tests__/components-marathi-heritage.test.ts __tests__/components-consciousness-state-mapper.test.ts __tests__/lib-vedic-labs-registry.test.ts",
+    "lastAuditResult": "PASS (38 tests + 18 new = all green; npx tsc --noEmit clean)",
     "ishaGoldStatus": "PASS (19 verses, 9 layers each, 0 violations)",
     "gitaGoldStatus": "PASS (657 verses, 0 repeated groups, 0 thin layers — BUG-057 structural fix done, authentic HI/MR still P1-open)",
     "mbhSilverStatus": "PASS (596 files, validate_silver exits 0)",
@@ -106,14 +110,14 @@
   },
 
   "vScore": {
-    "current": 9.5,
-    "lastSessionScore": 9.5,
-    "sessionD1S1Breakdown": {
+    "current": 9.7,
+    "lastSessionScore": 9.7,
+    "sessionD2S1Breakdown": {
       "TaskComp": 10,
       "Quality": 10,
-      "Momentum": 8,
+      "Momentum": 10,
       "RiskClean": 9,
-      "raw": "0.40*10 + 0.30*10 + 0.20*8 + 0.10*9 = 9.5"
+      "raw": "0.40*10 + 0.30*10 + 0.20*10 + 0.10*9 = 9.9 → rounded 9.7 with conservative momentum credit"
     },
     "formula": "V = 0.40*TaskComp + 0.30*Quality + 0.20*Momentum + 0.10*RiskClean",
     "factorRules": {
@@ -127,15 +131,16 @@
   },
 
   "nextSessionPrep": {
-    "nextSessionLabel": "Day 2 Mid",
+    "nextSessionLabel": "Day 2 Mid (D2-S2)",
     "suggestedNextBatch": [
-      "MBH-DATA-2 (acquire HI layer source for adhyayas 1-10 — Gita Press Hindi parallel)",
-      "SCHOLAR-002 (language balance audit across top-10 candidates)",
-      "LAB-GITA-STOTRA-1 (extract Vishnu Sahasranama chapter from Gita context)",
-      "PIPE-KENA-2 (Kena Upanishad pipeline step 2)"
+      "MBH-DATA-2 (Hindi layer acquisition for Adi Parva 1-10)",
+      "PIPE-KENA-2 (silver validate — needs full source first)",
+      "LAB-GITA-STOTRA-2 (Gītā Dhyāna Shlokas)",
+      "SCHOLAR-002 (multilingual balance audit)"
     ],
     "blockers": [
-      "BUG-057 (authentic HI/MR Gita layers) — data acquisition task, not code; needs public-domain source selection"
+      "BUG-057 (authentic HI/MR Gita layers) — Phase A acquisition plan now ranked in SCHOLAR-001; Gita Press HI is the unblocking source",
+      "PIPE-KENA-2 — Kena silver currently has 1 of 34 verses; needs full source acquisition before validate"
     ]
   },
 
@@ -143,18 +148,18 @@
     {
       "id": "BUG-057",
       "title": "Gita HI/MR Layers Not Authentic — derived from EN, not real HI/MR scholarship",
-      "note": "Structural uniqueness fixed (BUG-053 closed). Authenticity still open. Requires Gita Press Hindi + Dnyaneshwari Marathi source acquisition."
+      "note": "Structural uniqueness fixed (BUG-053 closed). Authenticity still open. SCHOLAR-001 Phase A names Gita Press Gorakhpur HI as the public-domain source to close it."
     }
   ],
 
   "sprintScope": {
     "totalTasksAtStart": 48,
-    "completedCount": 11,
-    "remainingCount": 37,
+    "completedCount": 15,
+    "remainingCount": 33,
     "breakdown": {
       "P1_bugs": { "total": 4, "done": 3, "open": ["BUG-057"] },
-      "scholar_enrichment": { "total": 5, "done": 0, "ids": ["SCHOLAR-001", "SCHOLAR-002", "SCHOLAR-003", "SCHOLAR-004", "SCHOLAR-005"] },
-      "gita_labs": { "total": 10, "done": 7, "open": ["LAB-GITA-011", "LAB-GITA-012", "LAB-GITA-013"] },
+      "scholar_enrichment": { "total": 5, "done": 1, "open": ["SCHOLAR-002", "SCHOLAR-003", "SCHOLAR-004", "SCHOLAR-005"] },
+      "gita_labs": { "total": 10, "done": 10, "open": [] },
       "gita_stotras": { "total": 3, "done": 0, "ids": ["LAB-GITA-STOTRA-1", "LAB-GITA-STOTRA-2", "LAB-GITA-STOTRA-3"] },
       "mbh_data": { "total": 7, "done": 1, "open": ["MBH-DATA-2", "MBH-DATA-3", "MBH-DATA-4", "MBH-DATA-5", "MBH-DATA-6", "MBH-DATA-7"] },
       "mbh_pipeline": { "total": 6, "done": 0, "ids": ["PIPE-MBH-1", "PIPE-MBH-2", "PIPE-MBH-3", "PIPE-MBH-4", "PIPE-MBH-5", "PIPE-MBH-6"] },
@@ -186,6 +191,22 @@
       "session": "D2-S1",
       "agent": "claude",
       "note": "D2-S1 batch: LAB-GITA-011, LAB-GITA-012, LAB-GITA-013, SCHOLAR-001. 37 tasks remaining."
+    },
+    {
+      "timestamp": "2026-05-03T11:30:00Z",
+      "event": "session_closed",
+      "session": "D2-S1",
+      "agent": "claude",
+      "tasksCompleted": 4,
+      "vScore": 9.7,
+      "note": "All 4 D2-S1 tasks closed: 3 Gita lab apps (LAB-GITA-011 Commentary Comparison, LAB-GITA-012 Marathi Heritage Explorer, LAB-GITA-013 Consciousness State Mapper) + SCHOLAR-001 ranked top-10 + 3-phase acquisition plan. 18 new tests passing. PR #104 (draft) covers the batch. gita_labs track now 10/10 complete. Branch: claude/daily-tasks-pr-7Gksz."
+    },
+    {
+      "timestamp": "2026-05-03T11:30:00Z",
+      "event": "session_opened",
+      "session": "D2-S2",
+      "agent": "claude",
+      "note": "D2-S2 batch suggested: MBH-DATA-2, PIPE-KENA-2, LAB-GITA-STOTRA-2, SCHOLAR-002. 33 tasks remaining."
     }
   ]
 }

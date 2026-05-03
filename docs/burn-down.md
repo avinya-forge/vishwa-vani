@@ -12,7 +12,8 @@
 | Day | Date       | Completed (day) | Cumulative | Remaining | 3d Velocity | V-Score | Risk |
 |-----|------------|-----------------|------------|-----------|-------------|---------|------|
 | 1   | 2026-05-01 | 11              | 11         | 37        | 11.0        | 9.5     | —    |
-| 2   | 2026-05-02 | —               | 11         | 37        | —           | —       | —    |
+| 2   | 2026-05-02 | 0               | 11         | 37        | 5.5         | —       | —    |
+| 3   | 2026-05-03 | 4               | 15         | 33        | 5.0         | 9.7     | —    |
 
 *One row per day. Updated at Night session close. Append-only — never delete rows.*
 
@@ -44,17 +45,31 @@
 **Morning (S2-1)**
 - Batch: LAB-GITA-011, LAB-GITA-012, LAB-GITA-013, SCHOLAR-001
 - Opened: 2026-05-02T09:34:00Z
-- Closed: —
-- Completed: —
-- Notes: —
+- Closed: 2026-05-03T11:30:00Z (rolled into Day 3 — extended session)
+- Completed: see Day 3 row
+- Notes: Session bridged the day boundary; closed under D3 row to keep velocity attribution honest.
 
-**Mid (S2-2)**
-- Batch: TBD
-- Notes: —
+**Mid (S2-2)** — skipped (extended morning session)
+**Night (S2-3)** — skipped (extended morning session)
 
-**Night (S2-3)**
+---
+
+### Day 3 — 2026-05-03
+
+**Morning (D2-S1 close)**
+- Batch: LAB-GITA-011, LAB-GITA-012, LAB-GITA-013, SCHOLAR-001
+- Opened: 2026-05-02T09:34:00Z
+- Closed: 2026-05-03T11:30:00Z
+- Completed: 4/4
+- Notes: 4 commits pushed to `claude/daily-tasks-pr-7Gksz`. PR #104 (draft) opened against main. 18 new tests added (6 per lab app), all green. `npx tsc --noEmit` clean. Gita labs track now 10/10 complete (track closed). SCHOLAR-001 produces 3-phase acquisition plan unblocking BUG-057 source selection (Gita Press HI is Phase A).
+
+**Mid (D2-S2)**
+- Batch: MBH-DATA-2, PIPE-KENA-2, LAB-GITA-STOTRA-2, SCHOLAR-002
+- Notes: Suggested in nextSessionPrep — opens after PR #104 lands or operator chooses next batch.
+
+**Night (D2-S3)**
 - Batch: TBD
-- Day 2 Summary: —
+- Day 3 Summary: 4 tasks completed in extended D2-S1 session. Cumulative 15/48. V-Score 9.7. Commits: 4. PR: #104.
 
 ---
 
