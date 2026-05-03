@@ -348,7 +348,7 @@ Priority Tier 3 — advanced & synthesis:
     - Build: `next build` time grows linearly with verse count; ARCH-001 + ARCH-007 (edge-hosted SQLite WASM, parva-level summary shards) must land before Phase 2 close to keep build under 10 minutes.
 
     Feeds MBH-CORE-002 (runbook implementing the stream-processing strategy referenced here) and MBH-DATA-2 through MBH-DATA-7 (per-parva data acquisition).
-- [ ] `MBH-CORE-002` **Process Replication**: Document the `docs/ingestion-runbook.md` specific to MBH scale (avoiding OOM during build, handling massive JSON shards).
+- [x] `MBH-CORE-002` **Process Replication**: Document the `docs/ingestion-runbook.md` specific to MBH scale (avoiding OOM during build, handling massive JSON shards). **Done**: 2026-05-03. Created `docs/ingestion-runbook.md` — 9-section engineering runbook covering: (0) hard limits (Node heap, D1 free tier, Vercel build ceiling); (1) tier topology; (2) mandatory streaming pattern with anti-pattern + correct example; (3) JSON-stream parsing (htmlparser2/stream-json/readline); (4) per-parva 7-step pipeline; (5) build-time strategy per phase; (6) memory-safe script template; (7) storage budget enforcement; (8) failure recovery; (9) ARCH-001/007/010 cross-references. Targets: Phase 1 build ≤ 6 min, Phase 2 ≤ 8 min, Phase 3 ≤ 5 min.
 - [ ] `MBH-CORE-003` **KMG Source Verification**: Clean the KMG (Kisari Mohan Ganguli) layers for parvas 1-18.
 
 ### BOOK: UPANISHADS
