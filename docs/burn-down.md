@@ -13,7 +13,7 @@
 |-----|------------|-----------------|------------|-----------|-------------|---------|------|
 | 1   | 2026-05-01 | 11              | 11         | 37        | 11.0        | 9.5     | —    |
 | 2   | 2026-05-02 | 0               | 11         | 37        | 5.5         | —       | —    |
-| 3   | 2026-05-03 | 4               | 15         | 33        | 5.0         | 9.7     | —    |
+| 3   | 2026-05-03 | 6               | 17         | 31        | 5.7         | 8.4     | —    |
 
 *One row per day. Updated at Night session close. Append-only — never delete rows.*
 
@@ -65,11 +65,15 @@
 
 **Mid (D2-S2)**
 - Batch: MBH-DATA-2, PIPE-KENA-2, LAB-GITA-STOTRA-2, SCHOLAR-002
-- Notes: Suggested in nextSessionPrep — opens after PR #104 lands or operator chooses next batch.
+- Opened: 2026-05-03T11:30:00Z
+- Closed: 2026-05-03T12:55:00Z
+- Completed: 2/4 (LAB-GITA-STOTRA-2 + SCHOLAR-002)
+- Blocked: 2/4 (MBH-DATA-2 + PIPE-KENA-2 — sandbox 403 on all public-domain text fetch attempts: sacred-texts.com, wikisource, gretil, wisdomlib. Honest blocker logged on both backlog entries; no template content generated.)
+- Notes: LAB-GITA-STOTRA-2 created `data/2-silver/stotras/gita-dhyana-shlokas.json` (9 mantras, validate_silver PASS, 9 tests). SCHOLAR-002 published per-language ✓/△/✗ matrix + gap-closing acquisition order. .gitignore fixed so future stotras shards don't need -f. 3 commits pushed.
 
 **Night (D2-S3)**
-- Batch: TBD
-- Day 3 Summary: 4 tasks completed in extended D2-S1 session. Cumulative 15/48. V-Score 9.7. Commits: 4. PR: #104.
+- Batch: SCHOLAR-003, LAB-GITA-STOTRA-3, MBH-CORE-001, MBH-CORE-002 (suggested — all non-fetch tasks to route around sandbox 403)
+- Day 3 Summary: 6 tasks completed across D2-S1 + D2-S2. Cumulative 17/48 (35%). V-Score 8.4. Commits: 7. PR: #104. Blockers: 2 tasks (MBH-DATA-2, PIPE-KENA-2) deferred on sandbox 403.
 
 ---
 
