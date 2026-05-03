@@ -200,7 +200,7 @@ Priority Tier 3 — advanced & synthesis:
 
 #### Gita Stotra/Mantra Extraction — Stage 7
 - [ ] `LAB-GITA-STOTRA-1` Gita itself as daily recitation: structure each chapter as a standalone prayer unit with chapter invocation verse. Tag chapter-level dailyUse stotras (e.g., Ch 15.1–20 Purushottama Yoga as standalone).
-- [ ] `LAB-GITA-STOTRA-2` Gita Dhyana Shlokas: 9 preparatory dhyana shlokas traditionally recited before Gita. Extract, add EN/HI pronunciation guide, add to CAT-016.
+- [x] `LAB-GITA-STOTRA-2` Gita Dhyana Shlokas: 9 preparatory dhyana shlokas traditionally recited before Gita. Extract, add EN/HI pronunciation guide, add to CAT-016. **Done**: 2026-05-03. Created `data/2-silver/stotras/gita-dhyana-shlokas.json` — 9 mantras (Pārthāya pratibodhitām · Namo'stu te Vyāsa · Prapanna-pārijātāya · Vasudeva-sutaṁ · Bhīṣma-droṇa-taṭā · Sarvopaniṣado gāvo · [Vasudeva-sutaṁ repetition] · Mūkaṁ karoti vācālaṁ · Yaṁ brahmā-varuṇendra...). mantraType=stotra, dailyUse=true, sourceBook=bhagavad-gita. Each verse: Sanskrit + IAST + EN translation + meaning ≥80 chars + EN/HI commentary by Madhusudana Saraswati ≥80 chars + EN/HI pronunciation guide. validate_silver.js → PASS. 9 tests passing. CAT-016 registry not yet present in code; shard discoverable via filesystem.
 - [ ] `LAB-GITA-STOTRA-3` Gita Mahatmya: extract verses praising the Gita (traditional). Add to CAT-016 as daily-use stotra.
 
 ### BOOK: MAHABHARATA
