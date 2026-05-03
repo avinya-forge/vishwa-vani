@@ -170,7 +170,39 @@ Real KMG data exists in `data/2-silver/mahabharata/parva-1/` — 210 real verses
     **Coverage matrix** (post Phase A): Advaita (#1), Viśiṣṭādvaita (#4 Sanskrit only), Dvaita (#5 Sanskrit only), Integral (#3), Karma-yoga modern (#2), Devotional (existing ISKCON), Bhakti-Marathi (existing Dnyāneshwarī), Sanātana synthesis (#10). 8 of 10 schools represented after Phase A.
 
     Feeds into SCHOLAR-002 (language balance), SCHOLAR-003 (single-language excellence), SCHOLAR-004 (raw acquisition), SCHOLAR-005 (school documentation).
-- [ ] `SCHOLAR-002` **Multilingual Balance Pass**: Actively target scholars to ensure Hindi (Goyandka), Marathi (Historical Sages), and English (Modern scholars) are represented.
+- [x] `SCHOLAR-002` **Multilingual Balance Pass**: Actively target scholars to ensure Hindi (Goyandka), Marathi (Historical Sages), and English (Modern scholars) are represented. **Done**: 2026-05-03. Built on the SCHOLAR-001 ranked list — language-availability matrix below + per-language target slate + gap analysis.
+
+    **Per-scholar language matrix (✓ = clean public-domain source identified, △ = source exists but copyright unresolved, ✗ = no clean source).**
+
+    Tier 0 (already in production, BG 657 verses):
+    - **A. C. Bhaktivedanta Swami Prabhupada (ISKCON)** — EN ✓ · HI △ (BUG-057 — wrapper text, needs Gita Press HI replacement) · MR △ (same wrapper). Devotional / Achintya-bhedābheda.
+    - **Sant Dnyāneshwar (Dnyāneshwarī)** — EN ✓ (paraphrase) · HI ✗ (BUG-037 closed via rebuild) · MR ✓ (original 1290 ovī). Bhakti-Marathi heritage.
+
+    Tier 1 (SCHOLAR-001 ranked top-10) — language matrix:
+    1. **Ādi Śaṅkara** — Sanskrit ✓ (GRETIL CC-BY) · EN ✓ (Telang SBE Vol VIII 1882) · HI ✓ (Gita Press HI editions) · MR △ (no canonical Marathi Bhāṣya translation; commission paraphrase). *Fills*: Advaita anchor, EN+HI+SA simultaneously.
+    2. **Bal Gangadhar Tilak — Gītā Rahasya** — MR ✓ (1915 original, public domain) · EN ✓ (Sukthankar 1935) · HI ✓ (multiple PD translations from 1930s). *Fills*: modern Marathi prose (Dnyāneshwarī is poetic ovī); Karma-yoga emphasis.
+    3. **Sri Aurobindo — Essays on the Gītā** — EN ✓ (1922 PD) · HI △ (Aurobindo Ashram editions, license needs verify) · MR ✗. *Fills*: Integral Yoga; bridge classical to modern.
+    4. **Rāmānuja — Gītā Bhāṣya** — Sanskrit ✓ (UDAY/Muktabodha) · EN △ (Sampatkumaran/Adidevananda copyright) · HI ✗ · MR ✗. *Fills*: Viśiṣṭādvaita anchor — Sanskrit only until EN paraphrase commissioned.
+    5. **Madhva — Gītā Bhāṣya** — Sanskrit ✓ · EN △ (Bannanje Govindacharya copyright) · HI ✗ · MR ✗. *Fills*: Dvaita anchor — same Sanskrit-only constraint as Rāmānuja.
+    6. **Mahatma Gandhi — Anāsakti-yoga** — GU ✓ (1929 original PD) · EN △ (Mahadev Desai 1946; Indian PD term life+60 expired 2006 — VERIFY) · HI ✓ (multiple PD translations). *Fills*: 20th-century activist voice; HI strong, EN pending verification.
+    7. **Sarvepalli Radhakrishnan — The Bhagavadgītā** — EN △ (Allen & Unwin 1948 still under copyright) · HI ✗ · MR ✗. *Defer until license clear*.
+    8. **Eknath Easwaran — The Bhagavad Gītā** — EN △ (Nilgiri Press 1985 active copyright) · HI ✗ · MR ✗. *Defer*.
+    9. **Abhinavagupta — Gītārtha-saṅgraha** — Sanskrit ✓ (Muktabodha) · EN △ (Marjanovic 2004) · HI ✗ · MR ✗. *Fills*: Kashmir Śaiva — Sanskrit only.
+    10. **Gita Press Gorakhpur — Śrīmadbhagavadgītā** — Sanskrit ✓ · HI ✓ (Goyandka, 1923+ PD in India) · EN ✓ (Gambhirananda) · MR ✓ (Marathi Gita Press editions). *Fills*: HI authority for BUG-057; pan-language reference standard.
+
+    **Per-language target slate (≥ 3 scholars per language for Lean UI Max-2 + 1 backup):**
+    - **English**: ✓ STRONG. Existing: Prabhupada. Phase A adds: Śaṅkara (Telang SBE), Tilak (Sukthankar), Aurobindo, Gita Press (Gambhirananda). 5 EN scholars covering Advaita / Devotional / Karma-yoga / Integral / Synthesis. **No gap.**
+    - **Hindi**: △ MEDIUM-WEAK. Existing: Prabhupada (wrapper text — fails authenticity). Phase A adds: Śaṅkara HI (Gita Press), Tilak HI, Gita Press Goyandka, Gandhi HI. 4 authentic HI scholars after Phase A. **Closes BUG-057.**
+    - **Marathi**: △ MEDIUM. Existing: Sant Dnyāneshwar (poetic ovī), Prabhupada (wrapper). Phase A adds: Tilak Gītā Rahasya (modern Marathi prose), Gita Press MR. 3 authentic MR scholars after Phase A. **Closes BUG-057 MR side.**
+    - **Sanskrit (Bhāṣya tier — single-language excellence)**: ✓ STRONG once Phase B lands. Phase B adds: Rāmānuja, Madhva, Abhinavagupta — all from Muktabodha/UDAY public-domain Sanskrit corpora. SCHOLAR-003 explicitly authorises ingesting Sanskrit-only scholars where the philosophical voice is otherwise absent.
+
+    **Acquisition priorities — by-language gap-closing order:**
+    1. **HI gap (BUG-057 unblocker)**: Gita Press Goyandka HI for all 657 BG verses → highest priority.
+    2. **MR gap (BUG-057 unblocker)**: Tilak Gītā Rahasya MR for at least Ch 2/3/12/18 → unblocks "modern MR prose" alongside Dnyāneshwarī ovī.
+    3. **EN philosophical-school spread**: Śaṅkara (Telang) + Tilak (Sukthankar) → adds Advaita and Karma-yoga voices in EN.
+    4. **Sanskrit-only Tier (SCHOLAR-003)**: Rāmānuja → Madhva → Abhinavagupta → covers the four Vedānta schools (Advaita / Viśiṣṭādvaita / Dvaita / Trika).
+
+    Feeds SCHOLAR-003 (single-language excellence — auth Sanskrit-only ingestion), SCHOLAR-004 (raw acquisition execution), SCHOLAR-005 (school documentation per scholar).
 - [ ] `SCHOLAR-003` **Single-Language Excellence**: Ingest high-prestige scholars even if they only have 1 language (e.g., pure Sanskrit Bhasyas or regional Marathi works).
 - [ ] `SCHOLAR-004` **Data Acquisition**: Gather public domain / CC-licensed raw text for identified authors.
 - [ ] `SCHOLAR-005` **Author Comparison Research**: Document the "philosophical school" (Advaita, Vishishtadvaita, etc.) for each scholar to aid UI categorization.
