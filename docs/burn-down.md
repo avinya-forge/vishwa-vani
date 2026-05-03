@@ -13,7 +13,7 @@
 |-----|------------|-----------------|------------|-----------|-------------|---------|------|
 | 1   | 2026-05-01 | 11              | 11         | 37        | 11.0        | 9.5     | —    |
 | 2   | 2026-05-02 | 0               | 11         | 37        | 5.5         | —       | —    |
-| 3   | 2026-05-03 | 6               | 17         | 31        | 5.7         | 8.4     | —    |
+| 3   | 2026-05-03 | 10              | 21         | 27        | 7.0         | 9.7     | —    |
 
 *One row per day. Updated at Night session close. Append-only — never delete rows.*
 
@@ -72,8 +72,13 @@
 - Notes: LAB-GITA-STOTRA-2 created `data/2-silver/stotras/gita-dhyana-shlokas.json` (9 mantras, validate_silver PASS, 9 tests). SCHOLAR-002 published per-language ✓/△/✗ matrix + gap-closing acquisition order. .gitignore fixed so future stotras shards don't need -f. 3 commits pushed.
 
 **Night (D2-S3)**
-- Batch: SCHOLAR-003, LAB-GITA-STOTRA-3, MBH-CORE-001, MBH-CORE-002 (suggested — all non-fetch tasks to route around sandbox 403)
-- Day 3 Summary: 6 tasks completed across D2-S1 + D2-S2. Cumulative 17/48 (35%). V-Score 8.4. Commits: 7. PR: #104. Blockers: 2 tasks (MBH-DATA-2, PIPE-KENA-2) deferred on sandbox 403.
+- Batch: SCHOLAR-003, MBH-CORE-001, MBH-CORE-002, LAB-GITA-STOTRA-3
+- Opened: 2026-05-03T13:00:00Z
+- Closed: 2026-05-03T15:05:00Z
+- Completed: 4/4
+- Notes: All non-fetch tasks shipped. SCHOLAR-003 = single-language ingestion policy + NVF schema flag + 5 vetted Sanskrit corpora + 4-drop acquisition order. MBH-CORE-001 = 18-parva phased roadmap with BORI verse counts (~73,684 total). MBH-CORE-002 = `docs/ingestion-runbook.md` (9 sections, streaming pattern, build-time targets). LAB-GITA-STOTRA-3 = Gītā Māhātmya 5-verse silver shard (validate PASS, 10 tests). 4 commits pushed.
+
+- Day 3 Summary: 10 tasks completed across D2-S1 + D2-S2 + D2-S3. Cumulative 21/48 (44%). V-Score 9.7 (10/10 task-completion on D2-S3). Commits: 11. PR: #104. Open blockers: MBH-DATA-2, PIPE-KENA-2 — both deferred on sandbox 403; D3 batch pivots around them.
 
 ---
 
