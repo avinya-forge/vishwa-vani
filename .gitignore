@@ -39,7 +39,7 @@ next-env.d.ts
 # Vishwa-Vani Specific
 # We ignore bronze/silver data as it's raw/processing and can be large
 /data/1-bronze/
-/data/2-silver/
+/data/2-silver/*
 # Stotras are small curated NVF shards — track them in git
 !/data/2-silver/stotras/
 /data/logs/

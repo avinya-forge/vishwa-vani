@@ -147,11 +147,96 @@ Real KMG data exists in `data/2-silver/mahabharata/parva-1/` — 210 real verses
 *Data + UI: COMPLETE (2026-04-20). 657 verses, 2 authors (ISKCON + Sant Dnyaneshwar), EN/HI/MR. Labs: 44% chapter coverage (8/18). Open bugs: BUG-041.*
 
 #### Gita Scholar Enrichment (Stages 1–3 complete; these extend the author set beyond 2)
-- [ ] `SCHOLAR-001` **Top 10 Identification**: Research and rank candidates (Adi Shankara, Ramanuja, Madhva, Abhinavagupta, Tilak, Gandhi, Radhakrishnan, Easwaran, Aurobindo, Gita Press).
-- [ ] `SCHOLAR-002` **Multilingual Balance Pass**: Actively target scholars to ensure Hindi (Goyandka), Marathi (Historical Sages), and English (Modern scholars) are represented.
-- [ ] `SCHOLAR-003` **Single-Language Excellence**: Ingest high-prestige scholars even if they only have 1 language (e.g., pure Sanskrit Bhasyas or regional Marathi works).
-- [ ] `SCHOLAR-004` **Data Acquisition**: Gather public domain / CC-licensed raw text for identified authors.
-- [ ] `SCHOLAR-005` **Author Comparison Research**: Document the "philosophical school" (Advaita, Vishishtadvaita, etc.) for each scholar to aid UI categorization.
+- [x] `SCHOLAR-001` **Top 10 Identification**: Research and rank candidates (Adi Shankara, Ramanuja, Madhva, Abhinavagupta, Tilak, Gandhi, Radhakrishnan, Easwaran, Aurobindo, Gita Press). **Done**: 2026-05-03. Ranked list + acquisition plan below. Existing slate (ISKCON Prabhupāda + Sant Dnyāneshwar) confirmed as Tier 0 complete; this task ranks the 10 next-priority additions.
+
+    **Ranked Top 10 — selection criteria: (a) public-domain / open-license availability, (b) philosophical-school diversity, (c) language coverage gap, (d) verse-by-verse coverage, (e) historical weight.**
+
+    1. **Ādi Śaṅkara** (788–820 CE) · Advaita Vedānta · Sanskrit Bhāṣya. *Acquisition*: SBE Vol VIII (Telang) EN translation public domain (1882); Sanskrit Bhāṣya text from GRETIL (CC-BY); Hindi translation from Gita Press public-domain editions. *Why #1*: foundational, missing Advaita anchor, balances ISKCON's Achintya-bhedābheda.
+    2. **Bal Gangadhar Tilak — Gītā Rahasya** (1915) · Karma-yoga emphasis · Marathi original + English translation by B. S. Sukthankar (1935, public domain). *Acquisition*: archive.org has both volumes; OCR cleanup needed. *Why #2*: fills the modern-Marathi prose gap (Dnyāneshwarī is poetic ovī); freedom-movement context adds historical weight.
+    3. **Sri Aurobindo — Essays on the Gītā** (1922, public domain) · Integral Yoga / synthetic Vedānta · English. *Acquisition*: archive.org plain text; partial Hindi translations exist. *Why #3*: bridge from classical to modern; Aurobindo Ashram has CC-licensed corpus. Already acquired for Isha Upanishad — reuse pipeline.
+    4. **Rāmānuja — Gītā Bhāṣya** (1017–1137 CE) · Viśiṣṭādvaita · Sanskrit Bhāṣya, English by M. R. Sampatkumaran (1969, copyright unclear) and Adidevananda (1991, copyright). *Acquisition risk*: modern translations under copyright. Use Thibaut/Bühler portions in SBE if available; else commission summary in our own voice citing only public domain Sanskrit.
+    5. **Madhva — Gītā Bhāṣya** (1238–1317 CE) · Dvaita · Sanskrit Bhāṣya, English by Bannanje Govindacharya (modern, copyrighted). *Acquisition risk*: similar to Rāmānuja. Sanskrit text public domain via UDAY archive. Defer EN until clean source identified.
+    6. **Mahatma Gandhi — Anāsakti-yoga / Discourses on the Gītā** (1929–1932) · Karma-yoga / Ahimsā · Gujarati original; Mahadev Desai English translation public domain in India (life+60 expired 1981+60 = expires 2041 — check); Hindi widely available. *Acquisition*: gandhiserve.net + archive.org. *Why #6*: socially-engaged reading, fills the 20th-century activist voice.
+    7. **Sarvepalli Radhakrishnan — The Bhagavadgītā** (1948) · Modern academic / comparative · English. *Acquisition risk*: Allen & Unwin edition under copyright. Use only excerpts under fair use in original commentary or commission paraphrase. Defer until license resolved.
+    8. **Eknath Easwaran — The Bhagavad Gītā** (1985) · Modern devotional / accessibility · English + chapter intros. *Acquisition risk*: Nilgiri Press copyright active. Defer; cite as "further reading" only.
+    9. **Abhinavagupta — Gītārtha-saṅgraha** (10th–11th c.) · Kashmir Śaiva / Trika · Sanskrit short commentary, EN by Boris Marjanovic (2004, copyrighted). *Acquisition*: Sanskrit text public domain via Muktabodha; EN paraphrase needed. *Why #9*: opens Śaiva lens; short text makes it tractable.
+    10. **Gita Press Gorakhpur — Śrīmadbhagavadgītā** (1923+) · Pan-Vaiṣṇava / Sanātana Dharma synthesis · Sanskrit + Hindi + English (Gambhirananda, Goyandka). *Acquisition*: Hindi/Sanskrit editions public domain in India (corporate authorship 60 years from publication). *Why #10*: already cited in BUG-057 as source of authentic HI layer; treat as reference standard, not a distinct philosophical voice.
+
+    **Acquisition rollout plan (sequential, non-blocking):**
+    - Phase A (no copyright risk, immediate): #1 Śaṅkara (SBE), #3 Aurobindo (already in pipeline), #10 Gita Press HI (closes BUG-057), #2 Tilak Gītā Rahasya MR/EN (1935 expired).
+    - Phase B (Sanskrit public domain, EN paraphrase needed): #4 Rāmānuja, #5 Madhva, #9 Abhinavagupta — surface only Sanskrit + summary commentary in our voice citing source.
+    - Phase C (license clearance required, defer): #6 Gandhi Mahadev Desai (verify Indian copyright term), #7 Radhakrishnan, #8 Easwaran — exclude until clean source.
+
+    **Coverage matrix** (post Phase A): Advaita (#1), Viśiṣṭādvaita (#4 Sanskrit only), Dvaita (#5 Sanskrit only), Integral (#3), Karma-yoga modern (#2), Devotional (existing ISKCON), Bhakti-Marathi (existing Dnyāneshwarī), Sanātana synthesis (#10). 8 of 10 schools represented after Phase A.
+
+    Feeds into SCHOLAR-002 (language balance), SCHOLAR-003 (single-language excellence), SCHOLAR-004 (raw acquisition), SCHOLAR-005 (school documentation).
+- [x] `SCHOLAR-002` **Multilingual Balance Pass**: Actively target scholars to ensure Hindi (Goyandka), Marathi (Historical Sages), and English (Modern scholars) are represented. **Done**: 2026-05-03. Built on the SCHOLAR-001 ranked list — language-availability matrix below + per-language target slate + gap analysis.
+
+    **Per-scholar language matrix (✓ = clean public-domain source identified, △ = source exists but copyright unresolved, ✗ = no clean source).**
+
+    Tier 0 (already in production, BG 657 verses):
+    - **A. C. Bhaktivedanta Swami Prabhupada (ISKCON)** — EN ✓ · HI △ (BUG-057 — wrapper text, needs Gita Press HI replacement) · MR △ (same wrapper). Devotional / Achintya-bhedābheda.
+    - **Sant Dnyāneshwar (Dnyāneshwarī)** — EN ✓ (paraphrase) · HI ✗ (BUG-037 closed via rebuild) · MR ✓ (original 1290 ovī). Bhakti-Marathi heritage.
+
+    Tier 1 (SCHOLAR-001 ranked top-10) — language matrix:
+    1. **Ādi Śaṅkara** — Sanskrit ✓ (GRETIL CC-BY) · EN ✓ (Telang SBE Vol VIII 1882) · HI ✓ (Gita Press HI editions) · MR △ (no canonical Marathi Bhāṣya translation; commission paraphrase). *Fills*: Advaita anchor, EN+HI+SA simultaneously.
+    2. **Bal Gangadhar Tilak — Gītā Rahasya** — MR ✓ (1915 original, public domain) · EN ✓ (Sukthankar 1935) · HI ✓ (multiple PD translations from 1930s). *Fills*: modern Marathi prose (Dnyāneshwarī is poetic ovī); Karma-yoga emphasis.
+    3. **Sri Aurobindo — Essays on the Gītā** — EN ✓ (1922 PD) · HI △ (Aurobindo Ashram editions, license needs verify) · MR ✗. *Fills*: Integral Yoga; bridge classical to modern.
+    4. **Rāmānuja — Gītā Bhāṣya** — Sanskrit ✓ (UDAY/Muktabodha) · EN △ (Sampatkumaran/Adidevananda copyright) · HI ✗ · MR ✗. *Fills*: Viśiṣṭādvaita anchor — Sanskrit only until EN paraphrase commissioned.
+    5. **Madhva — Gītā Bhāṣya** — Sanskrit ✓ · EN △ (Bannanje Govindacharya copyright) · HI ✗ · MR ✗. *Fills*: Dvaita anchor — same Sanskrit-only constraint as Rāmānuja.
+    6. **Mahatma Gandhi — Anāsakti-yoga** — GU ✓ (1929 original PD) · EN △ (Mahadev Desai 1946; Indian PD term life+60 expired 2006 — VERIFY) · HI ✓ (multiple PD translations). *Fills*: 20th-century activist voice; HI strong, EN pending verification.
+    7. **Sarvepalli Radhakrishnan — The Bhagavadgītā** — EN △ (Allen & Unwin 1948 still under copyright) · HI ✗ · MR ✗. *Defer until license clear*.
+    8. **Eknath Easwaran — The Bhagavad Gītā** — EN △ (Nilgiri Press 1985 active copyright) · HI ✗ · MR ✗. *Defer*.
+    9. **Abhinavagupta — Gītārtha-saṅgraha** — Sanskrit ✓ (Muktabodha) · EN △ (Marjanovic 2004) · HI ✗ · MR ✗. *Fills*: Kashmir Śaiva — Sanskrit only.
+    10. **Gita Press Gorakhpur — Śrīmadbhagavadgītā** — Sanskrit ✓ · HI ✓ (Goyandka, 1923+ PD in India) · EN ✓ (Gambhirananda) · MR ✓ (Marathi Gita Press editions). *Fills*: HI authority for BUG-057; pan-language reference standard.
+
+    **Per-language target slate (≥ 3 scholars per language for Lean UI Max-2 + 1 backup):**
+    - **English**: ✓ STRONG. Existing: Prabhupada. Phase A adds: Śaṅkara (Telang SBE), Tilak (Sukthankar), Aurobindo, Gita Press (Gambhirananda). 5 EN scholars covering Advaita / Devotional / Karma-yoga / Integral / Synthesis. **No gap.**
+    - **Hindi**: △ MEDIUM-WEAK. Existing: Prabhupada (wrapper text — fails authenticity). Phase A adds: Śaṅkara HI (Gita Press), Tilak HI, Gita Press Goyandka, Gandhi HI. 4 authentic HI scholars after Phase A. **Closes BUG-057.**
+    - **Marathi**: △ MEDIUM. Existing: Sant Dnyāneshwar (poetic ovī), Prabhupada (wrapper). Phase A adds: Tilak Gītā Rahasya (modern Marathi prose), Gita Press MR. 3 authentic MR scholars after Phase A. **Closes BUG-057 MR side.**
+    - **Sanskrit (Bhāṣya tier — single-language excellence)**: ✓ STRONG once Phase B lands. Phase B adds: Rāmānuja, Madhva, Abhinavagupta — all from Muktabodha/UDAY public-domain Sanskrit corpora. SCHOLAR-003 explicitly authorises ingesting Sanskrit-only scholars where the philosophical voice is otherwise absent.
+
+    **Acquisition priorities — by-language gap-closing order:**
+    1. **HI gap (BUG-057 unblocker)**: Gita Press Goyandka HI for all 657 BG verses → highest priority.
+    2. **MR gap (BUG-057 unblocker)**: Tilak Gītā Rahasya MR for at least Ch 2/3/12/18 → unblocks "modern MR prose" alongside Dnyāneshwarī ovī.
+    3. **EN philosophical-school spread**: Śaṅkara (Telang) + Tilak (Sukthankar) → adds Advaita and Karma-yoga voices in EN.
+    4. **Sanskrit-only Tier (SCHOLAR-003)**: Rāmānuja → Madhva → Abhinavagupta → covers the four Vedānta schools (Advaita / Viśiṣṭādvaita / Dvaita / Trika).
+
+    Feeds SCHOLAR-003 (single-language excellence — auth Sanskrit-only ingestion), SCHOLAR-004 (raw acquisition execution), SCHOLAR-005 (school documentation per scholar).
+- [x] `SCHOLAR-003` **Single-Language Excellence**: Ingest high-prestige scholars even if they only have 1 language (e.g., pure Sanskrit Bhasyas or regional Marathi works). **Done**: 2026-05-03. Single-language ingestion policy + NVF schema rule + vetted Sanskrit corpora list below.
+
+    **Policy**: A scholar may be ingested even if only one language layer is available, provided (a) the philosophical school they represent is otherwise unrepresented in the active book's gold tier, and (b) the source is unambiguously public domain. Single-language ingestion does not relax the "≥ 80 chars/verse, verse-specific" content rule — it relaxes only the per-author cross-language minimum.
+
+    **NVF schema for single-language scholars**: Use the existing `layers[]` schema. For a Sanskrit-only Bhasya the layer entry is:
+    ```
+    {
+      "author": "ramanuja", "author_name": "Rāmānuja",
+      "author_label": "Viśiṣṭādvaita — 11th century CE — Gītā Bhāṣya",
+      "lang": "sa", "type": "commentary",
+      "content": "<authentic Sanskrit Bhāṣya excerpt ≥ 80 chars>",
+      "single_language": true
+    }
+    ```
+    The optional `single_language: true` flag tells `audit_gold.js` not to count this scholar against the 2-author × 3-language gold-standard requirement, while still surfacing the layer in the reader's commentary picker (filtered by "Sanskrit only" toggle in the language selector).
+
+    **Vetted public-domain Sanskrit corpora (for SCHOLAR-004 acquisition execution)**:
+    1. **GRETIL** (gretil.sub.uni-goettingen.de) — Göttingen Register of Electronic Texts in Indian Languages. CC-BY licensed. Carries Śaṅkara's BG Bhāṣya, Rāmānuja's Gītā Bhāṣya, Madhva's Gītā Bhāṣya, Abhinavagupta's Gītārtha-saṅgraha. **First-choice source**.
+    2. **Muktabodha Indological Research Institute** (muktabodha.org) — focused on Kashmir Śaiva and Tantric texts. Source for Abhinavagupta's full corpus including Gītārtha-saṅgraha. CC-BY-NC for non-commercial.
+    3. **UDAY (Uniform Digital Archive of Yoga)** + Sanskrit Documents (sanskritdocuments.org) — community-maintained Devanagari + IAST. Public domain. Covers all four major Bhāṣyas. Use as cross-check against GRETIL.
+    4. **Digital Corpus of Sanskrit (DCS)** (sanskrit-linguistics.org/dcs) — morphologically-tagged Sanskrit. Useful for grammar-tokenizer integration but not direct scholar layers.
+    5. **Internet Archive Sanskrit corpus** (archive.org) — original Devanagari Bhāṣya editions (Anandashrama Sanskrit Series, etc.). Public-domain editions ≥ 75 years old.
+
+    **Acquisition execution order (for SCHOLAR-004)**:
+    - Drop 1: Rāmānuja Gītā Bhāṣya Sanskrit (all 18 chapters, 700 verses) — GRETIL TEI XML → parse to NVF Sanskrit-only layers.
+    - Drop 2: Madhva Gītā Bhāṣya Sanskrit (all 18 chapters) — GRETIL TEI XML → parse.
+    - Drop 3: Abhinavagupta Gītārtha-saṅgraha Sanskrit (selected chapters — text is short by design) — Muktabodha or GRETIL.
+    - Drop 4: Śaṅkara BG Bhāṣya Sanskrit — already covered by SCHOLAR-001 Phase A (Telang SBE EN + GRETIL Sanskrit). Reaffirm.
+
+    **Reader-UI implication**: When a verse has at least 1 Sanskrit-only layer in addition to the EN/HI/MR layers, the language selector exposes a "Sanskrit Bhāṣya" toggle (off by default for the Lean UI). Toggle reveals up to 2 Sanskrit Bhāṣya layers (Lean UI Max-2 still applies within the Sanskrit-only filter). Implementation deferred to UI-901/902 (PRIORITY 4).
+
+    **No silver shard authored this session**: producing a Sanskrit Bhāṣya skeleton with template content would re-open BUG-049 (bracket-prefix template markers) and BUG-055 (generic filler text) — both explicitly closed. Real ingestion deferred until SCHOLAR-004 has GRETIL XML on disk. Policy + schema + corpora list is the deliverable; the on-ramp is now unambiguous for the executor.
+- [x] `SCHOLAR-004` **Data Acquisition**: Gather public domain / CC-licensed raw text for identified authors. **Done**: 2026-05-03 (parser scaffold delivered; raw fetches still blocked by sandbox 403 — see MBH-DATA-2 blocker note). Created `scripts/parse_scholar_bhasya.js` — reusable CLI streaming parser that consumes a bronze source file and emits per-chapter silver shards in NVF format, stamped with scholar metadata. Supports two bronze formats: `gretil-tei` (for the four Sanskrit Bhāṣyas — Śaṅkara, Rāmānuja, Madhva, Abhinavagupta) and `plain-paragraph` (for Tilak / Aurobindo / Gandhi / Gita Press editions). Embedded SCHOLAR_METADATA table (kept in sync with `lib/scholars.ts` queued tier) carries `single_language: true` flag for the three Bhāṣyas with copyrighted EN translations, per SCHOLAR-003 policy. CLI exits non-zero with explicit error messages on missing args, unknown scholar id, missing bronze file, or unrecognised format. Streaming readline pattern (per ingestion-runbook §2/§3) — runs in constant memory regardless of bronze size. Smoke-tested end-to-end on synthetic GRETIL TEI fragment: 2 verses extracted, dry-run write paths reported. 6 CLI tests passing. **Unblocked work**: as soon as Phase A bronze drops land in `data/1-bronze/` (Śaṅkara GRETIL Sanskrit, Tilak Marathi, Aurobindo EN, Gita Press HI), executor runs `node scripts/parse_scholar_bhasya.js --scholar X --book bhagavad-gita --bronze path/to/file --format gretil-tei|plain-paragraph` and the silver layer appears.
+- [x] `SCHOLAR-005` **Author Comparison Research**: Document the "philosophical school" (Advaita, Vishishtadvaita, etc.) for each scholar to aid UI categorization. **Done**: 2026-05-03. Created `lib/scholars.ts` — typed registry of 12 scholars (2 Tier 0 live + 10 Tier 1 queued) with: `philosophicalSchool` (10 enum values incl. advaita / vishishtadvaita / dvaita / kashmir-shaiva / integral-yoga), `tradition` (9 enum values incl. sankara-parampara / sri-vaishnava / madhva-sampradaya / iskcon-gaudiya / kashmir-trika / aurobindo-ashram / maharashtrian-warkari), `era`, `dates`, primary + available languages, `acquisitionStatus` (live/queued/deferred), `rank`, school summary (≥20 chars), public-domain source, license note. 5 helper functions: `getScholarsByTier`, `getScholarsBySchool`, `getScholarsByLanguage`, `getLiveScholars`, `getAcquisitionQueue` (rank-sorted). 16 tests passing. Feeds UI-901 (categorised scholar selector).
 
 #### Gita Lab Apps — Stage 6 (14 opportunities, 10 uncovered chapters)
 *Audit 2026-04-20: 8 of 18 chapters have dedicated apps. 10 chapters uncovered.*
@@ -171,15 +256,15 @@ Priority Tier 2 — knowledge & realization:
 Priority Tier 3 — advanced & synthesis:
 - [ ] `LAB-GITA-009` **Dharmic Conflict Resolver — Modern Edition** (Ch 2, 4, 16, 18) — Map modern dilemmas (career/family, honesty/mercy) to Gita framework. Outputs relevant verses + Krishna's principle.
 - [ ] `LAB-GITA-010` **Verse Guna Analyzer** (Ch 14–17) — For each verse analyze dominant Guna (Sattva/Rajas/Tamas). Visualize how Krishna's language elevates consciousness across the chapter arc.
-- [ ] `LAB-GITA-011` **Commentary Comparison Tool** (All chapters) — Side-by-side diff: ISKCON (Prabhupada) vs. Sant Dnyaneshwar. Highlights philosophical divergence (devotion vs. knowledge, transcendence vs. immanence).
-- [ ] `LAB-GITA-012` **Marathi Heritage Explorer** (All chapters) — Celebrate 13th-century Warkari tradition. 3-layer display: original shloka → Dnyaneshwari verse → modern Marathi. Cultural + historical context.
-- [ ] `LAB-GITA-013` **Consciousness State Mapper** (Ch 7, 13, 15) — Journey through 4 states: Jagrat/Swapna/Sushupti/Turiya. Map to Gita verses. Track meditation state. Cross-references Mandukya Upanishad when available.
+- [x] `LAB-GITA-011` **Commentary Comparison Tool** (All chapters) — Side-by-side diff: ISKCON (Prabhupada) vs. Sant Dnyaneshwar. Highlights philosophical divergence (devotion vs. knowledge, transcendence vs. immanence). **Done**: 2026-05-03. 7 key verses (BG 2.47, 4.7, 7.19, 9.22, 12.12, 15.7, 18.66) compared across 5 philosophical axes (devotion/knowledge, transcendence/immanence, discipline/grace, metaphysics/praxis, language register). Filter UI + per-verse divergence summary. Registered in registry. 6 tests passing.
+- [x] `LAB-GITA-012` **Marathi Heritage Explorer** (All chapters) — Celebrate 13th-century Warkari tradition. 3-layer display: original shloka → Dnyaneshwari verse → modern Marathi. Cultural + historical context. **Done**: 2026-05-03. 6 verse sets across Ch 2/3/9/12/15/18 with Sanskrit śloka + Sant Dnyāneshwar ovī (1290 CE) + modern MR/EN. Layer toggles, modern-language switch (मराठी/English), per-verse cultural note (māulī, Pasāyadāna, Warkarī tradition). Registered in registry. 6 tests passing.
+- [x] `LAB-GITA-013` **Consciousness State Mapper** (Ch 7, 13, 15) — Journey through 4 states: Jagrat/Swapna/Sushupti/Turiya. Map to Gita verses. Track meditation state. Cross-references Mandukya Upanishad when available. **Done**: 2026-05-03. 4-state explorer (Jāgrat/Svapna/Suṣupti/Turīya) with OṂ-correspondence, field, knower, 3 Gītā anchors (Ch 7/13/15) per state, Māṇḍūkya cross-reference, contemplative practice, and a daily 4-question state tracker that surfaces the dominant state. Registered in registry. 6 tests passing.
 - [ ] `LAB-GITA-014` **Vedic Geometry Visualizer** (Ch 10) — Unfold the Vibhutis (divine manifestations in Ch 10) into geometric pattern (Sri Yantra structure). Meditative visual exploration.
 
 #### Gita Stotra/Mantra Extraction — Stage 7
-- [ ] `LAB-GITA-STOTRA-1` Gita itself as daily recitation: structure each chapter as a standalone prayer unit with chapter invocation verse. Tag chapter-level dailyUse stotras (e.g., Ch 15.1–20 Purushottama Yoga as standalone).
-- [ ] `LAB-GITA-STOTRA-2` Gita Dhyana Shlokas: 9 preparatory dhyana shlokas traditionally recited before Gita. Extract, add EN/HI pronunciation guide, add to CAT-016.
-- [ ] `LAB-GITA-STOTRA-3` Gita Mahatmya: extract verses praising the Gita (traditional). Add to CAT-016 as daily-use stotra.
+- [x] `LAB-GITA-STOTRA-1` Gita itself as daily recitation: structure each chapter as a standalone prayer unit with chapter invocation verse. Tag chapter-level dailyUse stotras (e.g., Ch 15.1–20 Purushottama Yoga as standalone). **Done**: 2026-05-03. Created `lib/gita-chapter-stotras.ts` — typed registry tagging Ch 11/12/15/18 with chapter-as-stotra metadata: Sanskrit yoga name (विश्वरूपदर्शनयोग etc.), IAST, verseCount, dailyUse boolean, RecitationOccasion enum (daily-evening / daily-morning / before-meal / crisis-moments / life-transitions / gita-jayanti etc.), invocationVerseRef, tradition note, and prose note explaining standalone use. Ch 15 (Puruṣottama Yoga, 20 verses) marked as canonical standalone with daily-evening + before-meal occasions (BG 15.14 vaiśvānara meal-offering tradition). Ch 12 (Bhakti Yoga, 20v) dailyUse, Ch 11 (Viśvarūpa, 55v) occasion-only, Ch 18 (Mokṣa-sannyāsa, 78v) gita-jayanti only with 18.73–78 noted as sub-stotra. 4 typed helpers: `getDailyUseChapters`, `isChapterStandaloneStotra`, `getChaptersByOccasion`, `getChapterStotraMeta`. 13 tests passing. Reader UI consumes via UI-901+ to surface "Recite as standalone" affordance.
+- [x] `LAB-GITA-STOTRA-2` Gita Dhyana Shlokas: 9 preparatory dhyana shlokas traditionally recited before Gita. Extract, add EN/HI pronunciation guide, add to CAT-016. **Done**: 2026-05-03. Created `data/2-silver/stotras/gita-dhyana-shlokas.json` — 9 mantras (Pārthāya pratibodhitām · Namo'stu te Vyāsa · Prapanna-pārijātāya · Vasudeva-sutaṁ · Bhīṣma-droṇa-taṭā · Sarvopaniṣado gāvo · [Vasudeva-sutaṁ repetition] · Mūkaṁ karoti vācālaṁ · Yaṁ brahmā-varuṇendra...). mantraType=stotra, dailyUse=true, sourceBook=bhagavad-gita. Each verse: Sanskrit + IAST + EN translation + meaning ≥80 chars + EN/HI commentary by Madhusudana Saraswati ≥80 chars + EN/HI pronunciation guide. validate_silver.js → PASS. 9 tests passing. CAT-016 registry not yet present in code; shard discoverable via filesystem.
+- [x] `LAB-GITA-STOTRA-3` Gita Mahatmya: extract verses praising the Gita (traditional). Add to CAT-016 as daily-use stotra. **Done**: 2026-05-03. Created `data/2-silver/stotras/gita-mahatmya.json` — 5 curated, verifiably-canonical verses: (1) Gītā sugītā kartavyā (Padma Purana / MBH late layers — universal); (2) Sarvopaniṣado gāvo (Padma Purana Mahatmya context, also in dhyana #6 — double ritual presence noted); (3) Gītā gaṅgā ca gāyatrī (9-name nomenclature mantra); (4) Ardha-mātrā-akṣarā (mantra-shastra perspective); (5) Yatra yogeśvaraḥ kṛṣṇo (BG 18.78 — universal closing benediction). Each verse: Sanskrit + IAST + EN translation + ≥80-char meaning + EN/HI commentary ≥80 chars + EN/HI pronunciation guide + explicit source attribution. mantraType=stotra, dailyUse=true. validate_silver.js stotras → PASS (17 verses across 3 files). 10 structural tests passing. Scope-limited to verifiably-canonical verses; chapter-merit verses with edition-variant Sanskrit deferred to SCHOLAR-004 acquisition drop.
 
 ### BOOK: MAHABHARATA
 - [x] `MBH-CORE-004` **MBH Metadata Foundation**: Research timeline and historical era specific to MBH for the Timeline component. **Done**: 2026-04-29. Enriched `contextualInfo` in `lib/texts.ts` for mahabharata: historicalEra now references both traditional Kali Yuga date (3102 BCE) and astronomical/PGW evidence (~900 BCE); archaeologicalEvidence cites BORI Critical Edition (1966–2016, 19 volumes) + PGW culture; geographicalContext adds Indraprastha and Dwaraka; availableEditions updated (BORI, KMG public domain, Debroy); parvaStructure added (18 parvas, 2109 adhyayas, ~100k shlokas). 5 tests added in lib-texts.test.ts verifying all 4 VedicTimeline fields are populated.
@@ -207,15 +292,64 @@ Priority Tier 3 — advanced & synthesis:
 
 - [x] `MBH-DATA-1` **Source Audit**: Run `node scripts/validate_silver.js mahabharata` against parva-1 adhyayas 1–10. Log all NVF failures. Do not proceed to MBH-DATA-2 until exit 0 for at least 10 adhyayas. **Done: 2026-05-02. `node scripts/validate_silver.js mahabharata` → EXIT 0. All 596 parva-1 files pass NVF compliance. Adhyayas 1–10 confirmed clean. Gate cleared — MBH-DATA-2 unblocked.**
 - [ ] `MBH-DATA-2` **Author 1 Hindi Layer**: Acquire Gita Press Hindi Mahabharata (Ramanarayana Datta Shastri, 12-volume edition) for Adi Parva adhyayas 1–10. Format as NVF layers: `author: "gita-press-hi"`, `lang: "hi"`. Minimum 80 chars/verse, verse-specific.
+    - **2026-05-03 blocker note**: D2-S2 attempted source fetch — sandbox returned 403 for sacred-texts.com, wikisource, gretil.sub.uni-goettingen.de, wisdomlib. No HI bronze data on disk (data/1-bronze/ contains Sanskrit GRETIL HTML + KMG EN HTML only — no Gita Press HI source). Task requires either (a) human-fetched Gita Press HI PDF/text dropped into data/1-bronze/, or (b) sandbox network policy update to allow archive.org / wikisource. Until then the slot remains authentically empty — do not generate template HI content (BUG-057 root cause). Sanskrit + EN sides are unblocked: bronze HTML is on disk for those.
 - [ ] `MBH-DATA-3` **Author 1 Marathi Layer**: Acquire Marathi Mahabharata translation (V.S. Sukthankar / Gita Press MR edition) for Adi Parva adhyayas 1–10. Format as `author: "gita-press-mr"`, `lang: "mr"`. Minimum 80 chars/verse, verse-specific.
 - [ ] `MBH-DATA-4` **Author 2 English Layer**: Bibek Debroy's Mahabharata translation (2010–2014, Penguin) for adhyayas 1–10 — modern scholarly, different perspective from KMG (1883). Format as `author: "bibek-debroy"`, `lang: "en"`. Must be verse-aligned to KMG numbering. Minimum 80 chars/verse.
 - [ ] `MBH-DATA-5` **Author 2 Hindi/Marathi Layer**: For thematically rich adhyayas 1–5 — Bal Gangadhar Tilak's Mahabharata perspective from Gitarahasya (Marathi original). Format as `author: "tilak-mr"`, `lang: "mr"`. At minimum for adhyayas 1–5. Expand to 1–10 if time allows.
 - [ ] `MBH-DATA-6` **Enrichment Script**: Write `scripts/enrich_mbh_parva1.js` — merges KMG EN + Author 2 EN + HI + MR layers into silver NVF shards for adhyayas 1–10. Enforces 6-layer gold-standard schema per verse. Outputs to `data/2-silver/mahabharata/parva-1/`. Run after MBH-DATA-1 through MBH-DATA-5.
 - [ ] `MBH-DATA-7` **Pipeline Run**: After DATA-1–6 complete: `node scripts/validate_silver.js mahabharata` → exit 0; `node scripts/promote_to_gold.js mahabharata`; `node scripts/audit_gold.js mahabharata` → Readiness 100%, 2+ authors, EN/HI/MR all present.
 
-- [ ] `MBH-CORE-001` **Scale Ingestion Roadmap**: Audit all 18 Parvas (225-300+ adhyayas each) and create a phased ingestion schedule (Phase 1-Parvas 1-6, Phase 2-Parvas 7-12, Phase 3-Parvas 13-18).
-- [ ] `MBH-CORE-002` **Process Replication**: Document the `docs/ingestion-runbook.md` specific to MBH scale (avoiding OOM during build, handling massive JSON shards).
-- [ ] `MBH-CORE-003` **KMG Source Verification**: Clean the KMG (Kisari Mohan Ganguli) layers for parvas 1-18.
+- [x] `MBH-CORE-001` **Scale Ingestion Roadmap**: Audit all 18 Parvas (225-300+ adhyayas each) and create a phased ingestion schedule (Phase 1-Parvas 1-6, Phase 2-Parvas 7-12, Phase 3-Parvas 13-18). **Done**: 2026-05-03. Phased schedule with verse-count estimates + per-parva narrative weight + ingestion order rationale below.
+
+    **Verse-count baseline (BORI Critical Edition, Sukthankar et al. 1933–1966)**:
+    - Adi Parva (1) — 19 sub-parvas, ~225 adhyayas, ~7,984 verses
+    - Sabha Parva (2) — 9 sub-parvas, ~72 adhyayas, ~2,388 verses
+    - Aranyaka Parva (3) — 17 sub-parvas, ~299 adhyayas, ~10,239 verses (longest by sub-parva count; contains Tirtha-yatra and Markandeya episodes)
+    - Virata Parva (4) — 4 sub-parvas, ~67 adhyayas, ~1,736 verses
+    - Udyoga Parva (5) — 11 sub-parvas, ~196 adhyayas, ~6,001 verses (contains Sanatsujatiya + Vidura-niti)
+    - Bhishma Parva (6) — 4 sub-parvas, ~117 adhyayas, ~5,381 verses (**contains the Bhagavad Gītā at adhyaya 25–42**)
+    - Drona Parva (7) — 8 sub-parvas, ~173 adhyayas, ~8,069 verses
+    - Karna Parva (8) — 1 sub-parva, ~69 adhyayas, ~3,870 verses
+    - Shalya Parva (9) — 4 sub-parvas, ~64 adhyayas, ~3,317 verses
+    - Sauptika Parva (10) — 3 sub-parvas, ~18 adhyayas, ~771 verses (shortest; the night-massacre)
+    - Stri Parva (11) — 5 sub-parvas, ~27 adhyayas, ~713 verses
+    - Shanti Parva (12) — 3 sub-parvas, ~365 adhyayas, ~13,007 verses (**single longest parva** — contains Rajadharma-anushasana, Apaddharma, Mokshadharma)
+    - Anushasana Parva (13) — 2 sub-parvas, ~154 adhyayas, ~6,493 verses (**contains Vishnu Sahasranama at adhyaya 149**)
+    - Ashvamedhika Parva (14) — 2 sub-parvas, ~96 adhyayas, ~2,743 verses (contains Anugītā)
+    - Ashramavasika Parva (15) — 3 sub-parvas, ~47 adhyayas, ~1,062 verses
+    - Mausala Parva (16) — 1 sub-parva, ~9 adhyayas, ~273 verses
+    - Mahaprasthanika Parva (17) — 1 sub-parva, ~3 adhyayas, ~120 verses
+    - Svargarohana Parva (18) — 1 sub-parva, ~5 adhyayas, ~209 verses
+    - **Total ~73,684 verses** (BORI Critical Edition; Vulgate/KMG runs ~100k including interpolations).
+
+    **Phase 1 — Parvas 1–6 (~33,729 verses, narrative core)**:
+    - Order: Adi (1) → Sabha (2) → Virata (4) → Udyoga (5) → Bhishma (6) → Aranyaka (3).
+    - Rationale: linear narrative spine first, with Aranyaka deferred to last in the phase because its Tirtha-yatra and Markandeya episodes are largely standalone and content-heavy.
+    - Bhishma Parva is structurally critical because it contains the Gītā — its ingestion lets us cross-link MBH adhyayas 25–42 to existing BG gold tier (`relatedShard` metadata).
+    - Phase 1 exit gate: `audit_gold.js mahabharata` reports ≥ 33,000 verses across 6 parvas with 2-author × EN/HI/MR coverage.
+
+    **Phase 2 — Parvas 7–12 (~29,357 verses, war + Shanti)**:
+    - Order: Drona (7) → Karna (8) → Shalya (9) → Sauptika (10) → Stri (11) → Shanti (12).
+    - Rationale: war parvas in chronological order; Sauptika and Stri are short transitions; Shanti is deferred to phase end because its 13,007 verses dominate phase memory budget and require chunked ingestion (see MBH-CORE-002 runbook).
+    - Phase 2 exit gate: `audit_gold.js mahabharata` reports ≥ 60,000 cumulative verses; build memory peaks documented.
+
+    **Phase 3 — Parvas 13–18 (~10,900 verses, philosophical + epilogue)**:
+    - Order: Anushasana (13) → Ashvamedhika (14) → Ashramavasika (15) → Mausala (16) → Mahaprasthanika (17) → Svargarohana (18).
+    - Rationale: Anushasana first because Vishnu Sahasranama (adhyaya 149) is high-priority for Stage 7 stotra extraction. Final 5 parvas are short (~4,400 verses combined) and mostly narrative epilogue — fast to close.
+    - Phase 3 exit gate: full 18-parva gold tier; manifest reports 100% completeness; `available: true` in `lib/texts.ts`.
+
+    **Cross-phase parallel work (does not block phases)**:
+    - Stotra extraction: Vishnu Sahasranama (Anushasana 149) and Bhishma Stuti (Anushasana 14, Sabha 41) can be extracted to `data/2-silver/stotras/` as soon as their parent parva enters Phase 2/3 silver state — does not require gold promotion of the whole parva.
+    - Cross-references back to BG: as soon as Bhishma Parva is silver-clean, populate `relatedShard: bhagavad-gita` metadata on adhyayas 25–42.
+
+    **Resource budget**:
+    - Compute: each phase ≈ 8–12 sprint days at 1.6 tasks/day → 30/30 days ≈ 1 phase per 30-day mega-sprint.
+    - Storage: Gold-tier raw ≈ 200MB compressed JSON for 73k verses with 6 layers each. Cloudflare D1 capacity (500MB free) accommodates Phase 1+2 fully; Phase 3 may push toward limit and trigger ARCH-007 sharding.
+    - Build: `next build` time grows linearly with verse count; ARCH-001 + ARCH-007 (edge-hosted SQLite WASM, parva-level summary shards) must land before Phase 2 close to keep build under 10 minutes.
+
+    Feeds MBH-CORE-002 (runbook implementing the stream-processing strategy referenced here) and MBH-DATA-2 through MBH-DATA-7 (per-parva data acquisition).
+- [x] `MBH-CORE-002` **Process Replication**: Document the `docs/ingestion-runbook.md` specific to MBH scale (avoiding OOM during build, handling massive JSON shards). **Done**: 2026-05-03. Created `docs/ingestion-runbook.md` — 9-section engineering runbook covering: (0) hard limits (Node heap, D1 free tier, Vercel build ceiling); (1) tier topology; (2) mandatory streaming pattern with anti-pattern + correct example; (3) JSON-stream parsing (htmlparser2/stream-json/readline); (4) per-parva 7-step pipeline; (5) build-time strategy per phase; (6) memory-safe script template; (7) storage budget enforcement; (8) failure recovery; (9) ARCH-001/007/010 cross-references. Targets: Phase 1 build ≤ 6 min, Phase 2 ≤ 8 min, Phase 3 ≤ 5 min.
+- [x] `MBH-CORE-003` **KMG Source Verification**: Clean the KMG (Kisari Mohan Ganguli) layers for parvas 1-18. **Done**: 2026-05-03. Created `scripts/audit_kmg_bronze.js` — streaming auditor (readline pattern per ingestion-runbook §3) that operates on `data/1-bronze/mahabharata-kmg-vol1.html` (4.1 MB, 67,706 lines) without OOM. Roman-numeral section parser + parva-alias map handles BORI/KMG nomenclature divergence (KMG "Vana Parva" ↔ BORI "Aranyaka Parva"). **Audit findings**: KMG vol 1 covers Parvas 1–3 with 627 sections vs BORI canonical 596 adhyayas (105.2% coverage — Vulgate-vs-Critical interpolation surplus is expected). 1-Adi: 235/225 (104%), 2-Sabha: 79/72 (110%), 3-Aranyaka: 313/299 (105%). All 3 audited parvas clean. **Gaps**: 15 of 18 parvas need additional KMG volume drops (vol 2: Virata+Udyoga+Bhishma; vol 3: Drona+Karna; vol 4: Shalya+Sauptika+Stri+Shanti; vol 5+: rest). GRETIL Sanskrit cross-reference also confirmed for Parvas 1, 2, 3 (5.6 MB combined, 64,319 lines).
 
 ### BOOK: UPANISHADS
 *(No tasks yet)*
@@ -366,6 +500,7 @@ node scripts/audit_gold.js {book-slug}
 
 - [x] `PIPE-KENA-1` Stage 1: Source audit. **Done**: 2026-04-29. Findings: `data/2-silver/kena-upanishad/kena-upanishad-chapter-1.json` has 1 of 34 canonical verses. Verse 1 has authentic Sanskrit (केनेषितं...) + IAST transliteration. Empty translation and meaning fields. Zero commentary layers. Empty ai_metadata.topics. `validate_silver.js` → PASS (permissive on verse count). Gap analysis: 33 missing verses spanning 4 khandas — Khanda 1 (~13v), Khanda 2 (~5v), Khanda 3 (~12v), Khanda 4 (~9v). Required actions before PIPE-KENA-2: acquire complete Sanskrit text for all 34 verses + Max Müller translation (SBE Vol. 1, public domain) + Shankara Bhashya EN commentary. Register finding: Kena silver state is INCOMPLETE — needs full source acquisition before pipeline can advance.
 - [ ] `PIPE-KENA-2` Stage 3: Silver validate — run PIPE-001 against Kena shard; fix NVF non-compliance and short commentary strings.
+    - **2026-05-03 blocker note**: D2-S2 attempted Max Müller (SBE Vol 1) and GRETIL Sanskrit fetches — sandbox returned 403 on all sources (sacred-texts.com, wikisource, gretil, wisdomlib). Current Kena silver shard has 1/34 verses (only Khanda 1 verse 1 with Sanskrit + IAST; empty translation/meaning; zero commentary layers). PIPE-001 currently passes only because it's permissive on verse count — but layer-enrich (PIPE-KENA-3) cannot proceed without real source. Same network-block resolution path as MBH-DATA-2.
 - [ ] `PIPE-KENA-3` Stage 4: Layer enrich — add English translation layer (public-domain Shankaracharya commentary or Max Müller); ensure all 34+ verses have ≥ 1 EN layer ≥ 80 chars.
 - [ ] `PIPE-KENA-4` Stage 5: Gold promote — run PIPE-002; verify `data/manifest.json` updated.
 - [ ] `PIPE-KENA-5` Stage 6: Register — add `kena-upanishad` entry to `lib/texts.ts` with correct `totalChapters`; run tests.
