@@ -281,6 +281,17 @@ export const VEDIC_LABS_REGISTRY: LabAppEntry[] = [
     isPrototype: false,
   },
   {
+    id: 'commentary-comparison-tool',
+    name: 'Commentary Comparison Tool',
+    description: 'Side-by-side reading of 7 key Gītā verses through ISKCON (Prabhupāda) and Sant Dnyāneshwar — filter by 5 philosophical axes to see where the schools converge and diverge.',
+    path: '/labs',
+    books: ['bhagavad-gita'],
+    chapters: [2, 4, 7, 9, 12, 15, 18],
+    topics: ['commentary', 'comparison', 'iskcon', 'dnyaneshwar', 'lineage', 'bhakti', 'jnana', 'advaita', 'all-chapters'],
+    available: true,
+    isPrototype: false,
+  },
+  {
     id: 'verse-guna-analyzer',
     name: 'Verse Guṇa Analyzer',
     description: 'Analyze how Krishna\'s language reflects Sattva, Rajas, and Tamas across Chapters 14–17. See verse-level Guna tagging and the overall chapter arc for each of the four Guna chapters.',

@@ -103,6 +103,10 @@ const VerseGunaAnalyzer = dynamic(() => import('@/components/lab/verse-guna-anal
   ssr: false,
   loading: () => <LabSkeleton />
 })
+const CommentaryComparisonTool = dynamic(() => import('@/components/lab/commentary-comparison-tool'), {
+  ssr: false,
+  loading: () => <LabSkeleton />
+})
 
 export default function VedicLabPage() {
   return (
@@ -154,6 +158,7 @@ export default function VedicLabPage() {
            <PurushottamaSelfInquiry />
            <DharmicConflictResolver />
            <VerseGunaAnalyzer />
+           <CommentaryComparisonTool />
         </div>
       </div>
     </main>
