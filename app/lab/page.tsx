@@ -107,6 +107,10 @@ const CommentaryComparisonTool = dynamic(() => import('@/components/lab/commenta
   ssr: false,
   loading: () => <LabSkeleton />
 })
+const MarathiHeritageExplorer = dynamic(() => import('@/components/lab/marathi-heritage-explorer'), {
+  ssr: false,
+  loading: () => <LabSkeleton />
+})
 
 export default function VedicLabPage() {
   return (
@@ -159,6 +163,7 @@ export default function VedicLabPage() {
            <DharmicConflictResolver />
            <VerseGunaAnalyzer />
            <CommentaryComparisonTool />
+           <MarathiHeritageExplorer />
         </div>
       </div>
     </main>

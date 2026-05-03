@@ -281,6 +281,17 @@ export const VEDIC_LABS_REGISTRY: LabAppEntry[] = [
     isPrototype: false,
   },
   {
+    id: 'marathi-heritage-explorer',
+    name: 'Marathi Heritage Explorer',
+    description: 'Three-layer Bhagavad Gītā reader: Sanskrit śloka → 13th-century Sant Dnyāneshwar ovī → modern Marathi/English. Toggle layers to see vernacularisation in motion across 6 key verses.',
+    path: '/labs',
+    books: ['bhagavad-gita'],
+    chapters: [2, 3, 9, 12, 15, 18],
+    topics: ['marathi', 'dnyaneshwari', 'warkari', 'heritage', 'vernacular', 'bhakti', 'all-chapters'],
+    available: true,
+    isPrototype: false,
+  },
+  {
     id: 'commentary-comparison-tool',
     name: 'Commentary Comparison Tool',
     description: 'Side-by-side reading of 7 key Gītā verses through ISKCON (Prabhupāda) and Sant Dnyāneshwar — filter by 5 philosophical axes to see where the schools converge and diverge.',
