@@ -147,7 +147,29 @@ Real KMG data exists in `data/2-silver/mahabharata/parva-1/` — 210 real verses
 *Data + UI: COMPLETE (2026-04-20). 657 verses, 2 authors (ISKCON + Sant Dnyaneshwar), EN/HI/MR. Labs: 44% chapter coverage (8/18). Open bugs: BUG-041.*
 
 #### Gita Scholar Enrichment (Stages 1–3 complete; these extend the author set beyond 2)
-- [ ] `SCHOLAR-001` **Top 10 Identification**: Research and rank candidates (Adi Shankara, Ramanuja, Madhva, Abhinavagupta, Tilak, Gandhi, Radhakrishnan, Easwaran, Aurobindo, Gita Press).
+- [x] `SCHOLAR-001` **Top 10 Identification**: Research and rank candidates (Adi Shankara, Ramanuja, Madhva, Abhinavagupta, Tilak, Gandhi, Radhakrishnan, Easwaran, Aurobindo, Gita Press). **Done**: 2026-05-03. Ranked list + acquisition plan below. Existing slate (ISKCON Prabhupāda + Sant Dnyāneshwar) confirmed as Tier 0 complete; this task ranks the 10 next-priority additions.
+
+    **Ranked Top 10 — selection criteria: (a) public-domain / open-license availability, (b) philosophical-school diversity, (c) language coverage gap, (d) verse-by-verse coverage, (e) historical weight.**
+
+    1. **Ādi Śaṅkara** (788–820 CE) · Advaita Vedānta · Sanskrit Bhāṣya. *Acquisition*: SBE Vol VIII (Telang) EN translation public domain (1882); Sanskrit Bhāṣya text from GRETIL (CC-BY); Hindi translation from Gita Press public-domain editions. *Why #1*: foundational, missing Advaita anchor, balances ISKCON's Achintya-bhedābheda.
+    2. **Bal Gangadhar Tilak — Gītā Rahasya** (1915) · Karma-yoga emphasis · Marathi original + English translation by B. S. Sukthankar (1935, public domain). *Acquisition*: archive.org has both volumes; OCR cleanup needed. *Why #2*: fills the modern-Marathi prose gap (Dnyāneshwarī is poetic ovī); freedom-movement context adds historical weight.
+    3. **Sri Aurobindo — Essays on the Gītā** (1922, public domain) · Integral Yoga / synthetic Vedānta · English. *Acquisition*: archive.org plain text; partial Hindi translations exist. *Why #3*: bridge from classical to modern; Aurobindo Ashram has CC-licensed corpus. Already acquired for Isha Upanishad — reuse pipeline.
+    4. **Rāmānuja — Gītā Bhāṣya** (1017–1137 CE) · Viśiṣṭādvaita · Sanskrit Bhāṣya, English by M. R. Sampatkumaran (1969, copyright unclear) and Adidevananda (1991, copyright). *Acquisition risk*: modern translations under copyright. Use Thibaut/Bühler portions in SBE if available; else commission summary in our own voice citing only public domain Sanskrit.
+    5. **Madhva — Gītā Bhāṣya** (1238–1317 CE) · Dvaita · Sanskrit Bhāṣya, English by Bannanje Govindacharya (modern, copyrighted). *Acquisition risk*: similar to Rāmānuja. Sanskrit text public domain via UDAY archive. Defer EN until clean source identified.
+    6. **Mahatma Gandhi — Anāsakti-yoga / Discourses on the Gītā** (1929–1932) · Karma-yoga / Ahimsā · Gujarati original; Mahadev Desai English translation public domain in India (life+60 expired 1981+60 = expires 2041 — check); Hindi widely available. *Acquisition*: gandhiserve.net + archive.org. *Why #6*: socially-engaged reading, fills the 20th-century activist voice.
+    7. **Sarvepalli Radhakrishnan — The Bhagavadgītā** (1948) · Modern academic / comparative · English. *Acquisition risk*: Allen & Unwin edition under copyright. Use only excerpts under fair use in original commentary or commission paraphrase. Defer until license resolved.
+    8. **Eknath Easwaran — The Bhagavad Gītā** (1985) · Modern devotional / accessibility · English + chapter intros. *Acquisition risk*: Nilgiri Press copyright active. Defer; cite as "further reading" only.
+    9. **Abhinavagupta — Gītārtha-saṅgraha** (10th–11th c.) · Kashmir Śaiva / Trika · Sanskrit short commentary, EN by Boris Marjanovic (2004, copyrighted). *Acquisition*: Sanskrit text public domain via Muktabodha; EN paraphrase needed. *Why #9*: opens Śaiva lens; short text makes it tractable.
+    10. **Gita Press Gorakhpur — Śrīmadbhagavadgītā** (1923+) · Pan-Vaiṣṇava / Sanātana Dharma synthesis · Sanskrit + Hindi + English (Gambhirananda, Goyandka). *Acquisition*: Hindi/Sanskrit editions public domain in India (corporate authorship 60 years from publication). *Why #10*: already cited in BUG-057 as source of authentic HI layer; treat as reference standard, not a distinct philosophical voice.
+
+    **Acquisition rollout plan (sequential, non-blocking):**
+    - Phase A (no copyright risk, immediate): #1 Śaṅkara (SBE), #3 Aurobindo (already in pipeline), #10 Gita Press HI (closes BUG-057), #2 Tilak Gītā Rahasya MR/EN (1935 expired).
+    - Phase B (Sanskrit public domain, EN paraphrase needed): #4 Rāmānuja, #5 Madhva, #9 Abhinavagupta — surface only Sanskrit + summary commentary in our voice citing source.
+    - Phase C (license clearance required, defer): #6 Gandhi Mahadev Desai (verify Indian copyright term), #7 Radhakrishnan, #8 Easwaran — exclude until clean source.
+
+    **Coverage matrix** (post Phase A): Advaita (#1), Viśiṣṭādvaita (#4 Sanskrit only), Dvaita (#5 Sanskrit only), Integral (#3), Karma-yoga modern (#2), Devotional (existing ISKCON), Bhakti-Marathi (existing Dnyāneshwarī), Sanātana synthesis (#10). 8 of 10 schools represented after Phase A.
+
+    Feeds into SCHOLAR-002 (language balance), SCHOLAR-003 (single-language excellence), SCHOLAR-004 (raw acquisition), SCHOLAR-005 (school documentation).
 - [ ] `SCHOLAR-002` **Multilingual Balance Pass**: Actively target scholars to ensure Hindi (Goyandka), Marathi (Historical Sages), and English (Modern scholars) are represented.
 - [ ] `SCHOLAR-003` **Single-Language Excellence**: Ingest high-prestige scholars even if they only have 1 language (e.g., pure Sanskrit Bhasyas or regional Marathi works).
 - [ ] `SCHOLAR-004` **Data Acquisition**: Gather public domain / CC-licensed raw text for identified authors.
