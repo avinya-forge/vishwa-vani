@@ -33,7 +33,9 @@ describe('SCHOLARS_REGISTRY structure', () => {
     const tier1 = SCHOLARS_REGISTRY.filter(s => s.tier === 1)
     for (const s of tier1) {
       expect(s.rank).not.toBeNull()
-      expect(s.rank! >= 1 && s.rank! <= 10).toBe(true)
+      if (s.rank !== null) {
+        expect(s.rank >= 1 && s.rank <= 10).toBe(true)
+      }
     }
   })
 
@@ -117,7 +119,11 @@ describe('getLiveScholars() and getAcquisitionQueue()', () => {
   it('acquisition queue is sorted by rank ascending', () => {
     const queue = getAcquisitionQueue()
     for (let i = 1; i < queue.length; i++) {
-      expect(queue[i].rank! >= queue[i - 1].rank!).toBe(true)
+      const r1 = queue[i].rank
+      const r0 = queue[i - 1].rank
+      if (r1 !== null && r0 !== null) {
+        expect(r1 >= r0).toBe(true)
+      }
     }
   })
 

@@ -105,8 +105,6 @@ const STAGES: Stage[] = [
 export default function JnanaProgressionPath() {
   const [selected, setSelected] = useState<number | null>(null)
 
-  const current = selected !== null ? STAGES[selected] : null
-
   return (
     <VedicAppTemplate
       title="Jñāna Progression Path"

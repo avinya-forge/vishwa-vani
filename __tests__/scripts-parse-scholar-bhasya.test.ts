@@ -18,11 +18,12 @@ function runScript(args: string[]): { stdout: string; stderr: string; status: nu
       stdio: ['ignore', 'pipe', 'pipe'],
     })
     return { stdout, stderr: '', status: 0 }
-  } catch (e: any) {
+  } catch (e) {
+    const err = e as any // eslint-disable-line @typescript-eslint/no-explicit-any
     return {
-      stdout: e.stdout?.toString() ?? '',
-      stderr: e.stderr?.toString() ?? '',
-      status: e.status ?? 1,
+      stdout: err.stdout?.toString() ?? '',
+      stderr: err.stderr?.toString() ?? '',
+      status: err.status ?? 1,
     }
   }
 }

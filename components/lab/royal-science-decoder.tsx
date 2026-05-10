@@ -90,8 +90,6 @@ export default function RoyalScienceDecoder() {
   const [revealed, setRevealed] = useState(0)
   const [selected, setSelected] = useState<number | null>(null)
 
-  const current = selected !== null ? ROYAL_SECRETS[selected] : null
-
   return (
     <VedicAppTemplate
       title="Royal Science Decoder"
