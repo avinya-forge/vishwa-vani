@@ -30,7 +30,7 @@ export default function Footer() {
              {[
                { name: 'Vedic Lab', href: '/lab' },
                { name: 'Gita Research', href: '/bhagavad-gita/1' },
-               { name: 'Tattva Map', href: '/lab' },
+               { name: 'Ingestion Roadmap', href: '/roadmap' },
                { name: 'Shastra Search', href: '/search' }
              ].map(item => (
                 <a key={item.name} href={item.href} className="text-stone-400 hover:text-white transition-colors text-left text-base font-bold flex items-center gap-2 group">

@@ -608,10 +608,10 @@ export default function StudyClient({
 
       {/* ═══════════════════════════════════════════ TOOLBAR ═══ */}
       <div className="sticky top-[3.5rem] z-40 bg-white/90 dark:bg-stone-900/90 backdrop-blur-md border-b border-stone-100 dark:border-stone-800 shadow-sm">
-        <div className="max-w-[1400px] mx-auto px-3 sm:px-6 flex flex-row items-center justify-between py-2 gap-2">
+        <div className="max-w-[1400px] mx-auto px-3 sm:px-6 flex flex-col md:flex-row items-center justify-between py-2.5 gap-3 md:gap-2">
 
           {/* Left group — progress + scholars + language */}
-          <div className="flex items-center gap-3 min-w-0 overflow-x-auto pb-1 sm:pb-0 scrollbar-none">
+          <div className="flex items-center gap-3 w-full md:w-auto overflow-x-auto pb-1.5 md:pb-0 scrollbar-none">
 
             {/* Progress indicator */}
             <div className="flex items-center px-2 py-0.5 bg-stone-100 dark:bg-stone-800 rounded-full text-[10px] sm:text-[11px] font-medium text-stone-500 dark:text-stone-400 flex-shrink-0">
@@ -641,8 +641,8 @@ export default function StudyClient({
                       onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleScholar(author) } }}
                       className={`px-3 py-1.5 rounded-xl border text-[11px] font-bold transition-all flex-shrink-0 flex items-center gap-2 ${
                         isSelected
-                          ? 'bg-orange-600 border-orange-600 text-white shadow-lg shadow-orange-200 dark:shadow-none'
-                          : 'bg-white dark:bg-stone-800 border-stone-200 dark:border-stone-700 text-stone-600 dark:text-stone-400 font-black'
+                           ? 'bg-orange-600 border-orange-600 text-white shadow-lg shadow-orange-200 dark:shadow-none'
+                           : 'bg-white dark:bg-stone-800 border-stone-200 dark:border-stone-700 text-stone-600 dark:text-stone-400 font-black'
                       }`}
                     >
                       <span className="text-xs">{meta.icon}</span>
@@ -681,33 +681,35 @@ export default function StudyClient({
           </div>
 
           {/* Right group — actions */}
-          <div className="flex items-center gap-1 flex-shrink-0">
-            {/* Share link button */}
-            <button
-              onClick={copyShareLink}
-              title="Copy chapter link to clipboard"
-              className="p-1.5 rounded-lg border border-stone-200 dark:border-stone-700 hover:border-orange-400 hover:text-orange-600 dark:hover:border-orange-500 transition-all bg-white dark:bg-stone-800 text-stone-500 dark:text-stone-400"
-            >
-              <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                <path d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.658 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
-              </svg>
-            </button>
-
-            {/* Jump to bookmark button */}
-            {bookmarks.length > 0 && (
+          <div className="flex items-center gap-2 w-full md:w-auto justify-between md:justify-end flex-wrap">
+            <div className="flex items-center gap-1.5">
+              {/* Share link button */}
               <button
-                onClick={jumpToFirstBookmark}
-                title={`Jump to first bookmark (${bookmarks.length})`}
-                className="p-1.5 rounded-lg border border-stone-200 dark:border-stone-700 hover:border-orange-400 hover:text-orange-600 dark:hover:border-orange-500 transition-all bg-white dark:bg-stone-800 text-stone-500 dark:text-stone-400 relative"
+                onClick={copyShareLink}
+                title="Copy chapter link to clipboard"
+                className="p-1.5 rounded-lg border border-stone-200 dark:border-stone-700 hover:border-orange-400 hover:text-orange-600 dark:hover:border-orange-500 transition-all bg-white dark:bg-stone-800 text-stone-500 dark:text-stone-400"
               >
-                <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M5 5a2 2 0 012-2h6a2 2 0 012 2v12H5V5zm8 12V5m0 12a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                  <path d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.658 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
                 </svg>
-                <span className="absolute -top-1 -right-1 bg-orange-600 text-white text-[9px] font-bold rounded-full w-4 h-4 flex items-center justify-center">
-                  {bookmarks.length}
-                </span>
               </button>
-            )}
+
+              {/* Jump to bookmark button */}
+              {bookmarks.length > 0 && (
+                <button
+                  onClick={jumpToFirstBookmark}
+                  title={`Jump to first bookmark (${bookmarks.length})`}
+                  className="p-1.5 rounded-lg border border-stone-200 dark:border-stone-700 hover:border-orange-400 hover:text-orange-600 dark:hover:border-orange-500 transition-all bg-white dark:bg-stone-800 text-stone-500 dark:text-stone-400 relative"
+                >
+                  <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M5 5a2 2 0 012-2h6a2 2 0 012 2v12H5V5zm8 12V5m0 12a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                  </svg>
+                  <span className="absolute -top-1 -right-1 bg-orange-600 text-white text-[9px] font-bold rounded-full w-4 h-4 flex items-center justify-center">
+                    {bookmarks.length}
+                  </span>
+                </button>
+              )}
+            </div>
 
             {/* AI Synthesis button */}
             <button

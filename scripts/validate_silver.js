@@ -136,6 +136,46 @@ function validateBook(bookSlug) {
     return false;
   }
 
+  // ── LEGAL GATE CHECK ──────────────────────────────────────────────────────
+  const metaPaths = [
+    path.join(bookDir, 'book.meta.json'),
+    path.join(bookDir, 'metadata.json')
+  ];
+  let metaPath = null;
+  for (const p of metaPaths) {
+    if (fs.existsSync(p)) {
+      metaPath = p;
+      break;
+    }
+  }
+
+  const legalErrors = [];
+  if (!metaPath) {
+    legalErrors.push(`[LEGAL_GATE_FAIL] Missing legal metadata file. You MUST create 'book.meta.json' or 'metadata.json' in 'data/2-silver/${bookSlug}/' specifying 'license_type', 'source_url', and 'legal_clearance': true before pipeline validation can proceed.`);
+  } else {
+    try {
+      const meta = JSON.parse(fs.readFileSync(metaPath, 'utf8'));
+      if (!meta.license_type || typeof meta.license_type !== 'string' || meta.license_type.trim().length === 0) {
+        legalErrors.push(`[LEGAL_GATE_FAIL] 'license_type' is missing or invalid in metadata. Specify a valid license (e.g. 'Public Domain', 'Creative Commons CC0').`);
+      }
+      if (!meta.source_url || typeof meta.source_url !== 'string' || meta.source_url.trim().length === 0) {
+        legalErrors.push(`[LEGAL_GATE_FAIL] 'source_url' is missing or empty. Provide the original public/cleared source URL.`);
+      }
+      if (meta.legal_clearance !== true) {
+        legalErrors.push(`[LEGAL_GATE_FAIL] 'legal_clearance' is not set to true. A developer must verify and set 'legal_clearance': true in metadata.`);
+      }
+    } catch (e) {
+      legalErrors.push(`[LEGAL_GATE_FAIL] Failed to parse legal metadata file: ${e.message}`);
+    }
+  }
+
+  if (legalErrors.length > 0) {
+    console.error(`\n✗ LEGAL GATE REJECTED for ${bookSlug} — PIPELINE HALTED EARLY`);
+    legalErrors.forEach(e => console.error(`  • ${e}`));
+    return false;
+  }
+  // ──────────────────────────────────────────────────────────────────────────
+
   const files = collectJsonFiles(bookDir, bookDir);
 
   if (files.length === 0) {

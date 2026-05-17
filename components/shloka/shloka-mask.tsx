@@ -19,17 +19,32 @@ export default function ShlokaMask({ text, className, fontSize }: { text: string
     const [resolvedFontSize, setResolvedFontSize] = useState(() => {
         if (fontSize !== undefined) return fontSize
         if (typeof window === 'undefined') return 22
-        return window.matchMedia('(max-width: 639px)').matches ? 16 : 22
+        if (window.innerWidth < 380) return 14
+        if (window.innerWidth < 640) return 16
+        return 22
     })
     const { resolvedTheme } = useTheme()
+    const [windowWidth, setWindowWidth] = useState(() => typeof window !== 'undefined' ? window.innerWidth : 800)
+
+    useEffect(() => {
+        if (typeof window === 'undefined') return
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth)
+        }
+        window.addEventListener('resize', handleResize)
+        return () => window.removeEventListener('resize', handleResize)
+    }, [])
 
     useEffect(() => {
         if (fontSize !== undefined) return
-        const mq = window.matchMedia('(max-width: 639px)')
-        const update = () => setResolvedFontSize(mq.matches ? 16 : 22)
-        mq.addEventListener('change', update)
-        return () => mq.removeEventListener('change', update)
-    }, [fontSize])
+        if (windowWidth < 380) {
+            setResolvedFontSize(14)
+        } else if (windowWidth < 640) {
+            setResolvedFontSize(16)
+        } else {
+            setResolvedFontSize(22)
+        }
+    }, [fontSize, windowWidth])
 
     useEffect(() => {
         const canvas = canvasRef.current
@@ -48,7 +63,7 @@ export default function ShlokaMask({ text, className, fontSize }: { text: string
         
         // Dynamic Word Wrapping logic for extremely long Shlokas
         const rawLines = text.replace(/\\n/g, '\n').split('\n')
-        const maxAllowedWidth = typeof window !== 'undefined' ? Math.min(800, window.innerWidth - 64) : 800;
+        const maxAllowedWidth = Math.min(800, windowWidth - 64);
         
         const wrappedLines: string[] = [];
         rawLines.forEach(line => {
@@ -90,7 +105,7 @@ export default function ShlokaMask({ text, className, fontSize }: { text: string
             const y = paddingY + (i * lineHeight) + currentFontSize * 1.1
             ctx.fillText(line, maxWidth / 2, y)
         })
-    }, [text, resolvedFontSize, resolvedTheme])
+    }, [text, resolvedFontSize, resolvedTheme, windowWidth])
 
     const handleCopy = async () => {
         try {

@@ -53,6 +53,18 @@ Vishwa-Vani follows a strict three-tier data pipeline (NVF 1.3). Data must meet 
 1. **BRONZE → SILVER**: Convert to NVF 1.3 JSON. Fill real Sanskrit. At least 1 EN layer. `python3 scripts/vishwa.py validate` → exit 0.
 2. **SILVER → GOLD**: Complete all 6 layers. Authentic HI/MR content. Add AI metadata. `python3 scripts/vishwa.py promote` → `audit_gold.js` Readiness 100%.
 
+#### Programmatic Ingestion Legal Gate & Retrospective Safety Guidelines
+Vishwa-Vani operates under strict compliance with fair-use and copyright laws. To prevent premature ingestion of unverified or copyrighted text:
+1. **Mandatory Metadata File**: Each scripture folder inside the silver tier (`data/2-silver/{book-slug}/`) MUST contain a legal metadata file: `book.meta.json` or `metadata.json`.
+2. **Mandatory Fields**: The file must declare:
+   - `license_type`: e.g. "Public Domain", "Creative Commons CC0", or "Licensed/Permitted".
+   - `source_url`: The verified URL where the source text is cleared and publicly accessible.
+   - `legal_clearance`: Boolean, explicitly set to `true`.
+3. **Developer Vetting Process**: Developers/agents are strictly forbidden from setting `legal_clearance: true` until they have personally verified that:
+   - The commentaries (bhasyas) are either written in the public domain, licensed, or appropriately paraphrased in an original voice (under guidelines `LEGAL-002`).
+   - The source is a legitimate free/open repository.
+4. **Pipeline Safeguard**: The generic silver-tier validator (`node scripts/validate_silver.js <book-slug>`) checks these properties *first*. If any check fails, the pipeline halts immediately, preventing gold promotion.
+
 ### SDLC Release Flow
 1. Pick the top unchecked task from `docs/backlog.md`.
 2. Implement it. Run lint → build → test. Fix any failures before proceeding.
@@ -341,5 +353,43 @@ _This checklist supersedes any informal book onboarding notes. See `docs/standar
 
 ---
 
+---
+
+## 4. Legal Copyright Review & Commentary Paraphrasing Policy
+
+To expand the library with complete integrity while respecting intellectual property, this section defines the copyright review criteria for all core scriptural authors and sets the precise guidelines for original paraphrasing.
+
+### A. Author Copyright Review & Expiration Ledger
+Vishwa-Vani maintains a strict catalog of copyright clearances. Below is the active legal status of registered commentary and translation sources:
+
+1. **Adi Shankara (Max Müller SBE series)**:
+   * *Status*: **Public Domain**.
+   * *Details*: Translations from the Sacred Books of the East series (published late 19th / early 20th century) are fully in the public domain globally (70+ years post-mortem). Direct verbatim reproduction is fully cleared.
+2. **Bal Gangadhar Tilak (Gita Rahasya)**:
+   * *Status*: **Public Domain** (in India and most regions).
+   * *Details*: Tilak passed away in 1920. Commentary written in 1915 entered the public domain 60 years post-mortem (1980 in India) or 70 years post-mortem (1990 in EU/US). Fully cleared.
+3. **Gita Press Gorakhpur (Anonymous/Traditional)**:
+   * *Status*: **Cleared / Fair-Use Vetted**.
+   * *Details*: Traditional translations and summaries conform to standard public Vedic interpretations. Literal commentaries (e.g. by Jayadayal Goyandka) require paraphrasing under voice guidelines.
+4. **BBT / ISKCON (A.C. Bhaktivedanta Swami Prabhupada)**:
+   * *Status*: **Restricted / Copyrighted by BBT**.
+   * *Details*: Direct prose translation and commentaries are protected. Verbatim copy-pasting is strictly prohibited without explicit licensing. Must be completely paraphrased using the original voice guidelines below.
+5. **Sri Aurobindo Ashram (Sri Aurobindo / Mother)**:
+   * *Status*: **Restricted / Copyrighted**.
+   * *Details*: Works are active under the Ashram trust. Direct transcription is blocked. Must be paraphrased.
+
+### B. Original Commentary Paraphrasing Guidelines (Original Voice)
+If direct licensing is denied or restricted for modern commentaries, editors and AI agents must follow this strict paraphrasing policy to synthesize philosophical concepts without copyright infringement:
+
+1. **Focus on the Core Philosophy**: Identify the central spiritual, logical, or theological argument made by the commentator (e.g. Shankaracharya's non-dualist *Advaita* vs. Prabhupada's devotional *Dvaitadvaita*).
+2. **Absolute Voice Shift**: Never copy consecutive strings of more than 4 words. Restructure the sentence architecture entirely.
+   * *Verbatim (Restricted)*: "This means that the living entity is eternally a servant of the supreme lord."
+   * *Paraphrased (Cleared)*: "The commentator emphasizes that individual consciousness maintains an eternal relationship of loving service to the supreme transcendental reality."
+3. **Citation & Attribution Mandatory**: Always preserve attribution to the original author (e.g. `[sankar]` or `[prabhu]`) and include a reference to the source volume. This converts the usage into an informative scholarly citation.
+4. **No Semantic Dilution**: Retain the exact technical terms of the commentary (e.g. *Maya*, *Brahman*, *Prakriti*, *Gunatita*) since Sanskrit philosophical categories are not subject to copyright.
+5. **Vetting Check**: Before promoting any paraphrased silver text to gold, the promoting developer must audit at least 10% of the verses against the original work using standard plagiarism checks.
+
+---
+
 _This consolidated standards file keeps the documentation set small while preserving the full implementation intent._
-_Last updated: 2026-04-09_
+_Last updated: 2026-05-17_

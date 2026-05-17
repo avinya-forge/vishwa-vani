@@ -1398,6 +1398,270 @@ vishwa-vani/
 
 ---
 
+## 11. Sprint Priority & Phase 5 Blueprints
+
+This section documents the technical specifications, schemas, and configurations for scaling Vishwa-Vani into real-time server-side upvoting, native mobile wraps (CapacitorJS), GA4 privacy tracking, and Cloudflare CDN offloading.
+
+### A. Real-Time Prioritization Database Schema (Supabase/D1)
+To scale from `/roadmap`'s local-storage cache to global aggregated voting metrics, a lightweight serverless SQLite (Cloudflare D1) or Supabase PostgreSQL table will track book priority metrics dynamically.
+
+#### Supabase/PostgreSQL Migration Script:
+```sql
+-- Table to store global upvote/downvote aggregates per book
+CREATE TABLE public.book_priorities (
+    book_id VARCHAR(100) PRIMARY KEY,
+    upvotes INTEGER DEFAULT 0 NOT NULL,
+    downvotes INTEGER DEFAULT 0 NOT NULL,
+    last_updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
+
+-- Table to log granular device votes (safeguarding against duplicate voting)
+CREATE TABLE public.device_votes (
+    id BIGSERIAL PRIMARY KEY,
+    device_fingerprint VARCHAR(255) NOT NULL,
+    book_id VARCHAR(100) REFERENCES public.book_priorities(book_id) ON DELETE CASCADE,
+    vote_type VARCHAR(10) CHECK (vote_type IN ('upvote', 'downvote')) NOT NULL,
+    voted_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    UNIQUE(device_fingerprint, book_id)
+);
+
+-- Index for instant aggregation lookups
+CREATE INDEX idx_device_votes_fingerprint ON public.device_votes(device_fingerprint);
+```
+
+#### API Endpoint Spec (`/api/roadmap/vote`):
+* **Method**: `POST`
+* **Request Payload**:
+  ```json
+  {
+    "book_id": "mahabharata",
+    "vote_type": "upvote",
+    "device_fingerprint": "hash_sha256_of_ip_useragent_canvas"
+  }
+  ```
+* **Logic**: Wrap inside a single atomic database transaction to prevent race conditions:
+  1. Try inserting the record into `device_votes`.
+  2. If unique key violation (`device_fingerprint`, `book_id`), throw `409 Conflict` (already voted).
+  3. On insert success, update the corresponding `upvotes` or `downvotes` counter in `book_priorities` and return updated aggregates.
+
+---
+
+### B. Cross-Platform Native Mobile Wrapper Spec (CapacitorJS)
+To compile the static Next.js export bundle into native Android and iOS apps with zero infrastructure costs:
+
+#### 1. Next.js Static Export Configuration:
+Update `next.config.ts` or `next.config.js` to enable static assets exports:
+```typescript
+import type { NextConfig } from 'next';
+
+const nextConfig: NextConfig = {
+  output: 'export', // Enforces static HTML/JS/CSS assets generation
+  distDir: 'out',   // Target output folder for Capacitor to bundle
+  images: {
+    unoptimized: true // Required since static export cannot run Next.js server-side image optimizer
+  }
+};
+
+export default nextConfig;
+```
+
+#### 2. Capacitor Initialization:
+Initialize Capacitor in the repository root:
+```bash
+npm install @capacitor/core @capacitor/cli
+npx cap init VishwaVani com.avinyaforge.vishwavani --web-dir=out
+```
+
+#### 3. Native Platform Staging:
+Add native platforms:
+```bash
+npm install @capacitor/android @capacitor/ios
+npx cap add android
+npx cap add ios
+```
+
+#### 4. Automated Compilation Script:
+Add a native packaging command inside `package.json` scripts:
+```json
+"scripts": {
+  "app:compile": "npm run build && npx cap sync"
+}
+```
+* Executing `npm run app:compile` builds the static page hierarchy into `/out` and mirrors it directly to `/android` and `/ios` project spaces, ready to run in Android Studio or Xcode with one click.
+
+---
+
+### C. Privacy-First Google Analytics 4 Setup
+To capture user engagement metrics (page visits, search hits, and voting clicks) without cookie banners or privacy leaks:
+
+#### 1. Setup Wrapper in `app/layout.tsx`:
+Leverage the optimized Next.js 16 core script wrapper:
+```tsx
+import { GoogleAnalytics } from '@next/third-parties/google';
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en">
+      <body>
+        {children}
+        {process.env.NEXT_PUBLIC_GA_ID && (
+          <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
+        )}
+      </body>
+    </html>
+  );
+}
+```
+
+#### 2. Trigger Custom Events for Vedic Labs / Votes:
+In client components:
+```typescript
+import { sendGAEvent } from '@next/third-parties/google';
+
+// Event hook for book prioritization voting
+export const trackVote = (bookId: string, voteType: 'upvote' | 'downvote') => {
+  sendGAEvent({
+    event: 'roadmap_vote',
+    value: { book_id: bookId, vote_type: voteType }
+  });
+};
+
+// Event hook for search queries
+export const trackSearch = (query: string) => {
+  sendGAEvent({
+    event: 'search_query',
+    value: { search_term: query }
+  });
+};
+```
+
+---
+
+### D. Edge CDN Offloading via Cloudflare Workers
+To bypass Vercel bandwidth limits and offload SQLite DB files and JSON chapters to a free global edge layer:
+
+#### Workers Configuration (`wrangler.toml`):
+```toml
+name = "vishwa-vani-cdn"
+main = "src/index.js"
+compatibility_date = "2026-05-17"
+
+[site]
+bucket = "./public" # Cloudflare hosts and deploys all static public files
+```
+
+#### Caching Proxy Code (`src/index.js`):
+```javascript
+export default {
+  async fetch(request, env, ctx) {
+    const url = new URL(request.url);
+    const cache = caches.default;
+    
+    // Look up static shard or DB in Cloudflare global edge cache first
+    let response = await cache.match(request);
+    
+    if (!response) {
+      // Cache miss: fetch static asset from static bucket
+      response = await env.ASSETS.fetch(request);
+      
+      // Enforce aggressive 30-day caching headers for static databases and JSON shards
+      if (url.pathname.endsWith('.db') || url.pathname.endsWith('.json')) {
+        response = new Response(response.body, response);
+        response.headers.set('Cache-Control', 'public, max-age=2592000, immutable');
+        ctx.waitUntil(cache.put(request, response.clone()));
+      }
+    }
+    
+    return response;
+  }
+};
+```
+
+---
+
+### E. Subscription & AI Monetization Architecture Blueprints
+To fund AI synthesis capabilities long-term without compromising public accessibility, Vishwa-Vani will implement a lightweight, tiered monetization model (Free / Plus / Pro).
+
+#### 1. Tier Metadata & Entitlements Map:
+These metadata parameters are mapped directly inside the Stripe Dashboard product metadata and read by our webhook during account entitlement syncs:
+```json
+{
+  "tiers": {
+    "free": {
+      "name": "Free Tier",
+      "price_usd": 0.00,
+      "synthesis_daily_limit": 5,
+      "synthesis_mode": "concatenation-fallback",
+      "features": ["basic-reading", "offline-access", "labs-prototypes"]
+    },
+    "plus": {
+      "name": "Vishwa Plus",
+      "price_usd": 4.99,
+      "synthesis_daily_limit": 100,
+      "synthesis_mode": "claude-3-haiku-premium",
+      "features": ["unlimited-labs", "advanced-search", "priority-roadmap-weight"]
+    },
+    "pro": {
+      "name": "Vishwa Pro",
+      "price_usd": 14.99,
+      "synthesis_daily_limit": 9999,
+      "synthesis_mode": "claude-3-5-sonnet-scholar",
+      "features": ["api-access", "original-commentary-hosting", "early-drafts-vetted"]
+    }
+  }
+}
+```
+
+#### 2. Rate-Limiting AI Credit Verification API Spec (`/api/synthesize`):
+On each user request to the `/api/synthesize` endpoint, credit validation is processed early at the edge using Cloudflare KV or Redis:
+```typescript
+import { NextRequest, NextResponse } from 'next/server';
+
+interface UserSubscription {
+  user_id: string;
+  tier: 'free' | 'plus' | 'pro';
+  stripe_status: 'active' | 'canceled' | 'none';
+}
+
+export async function POST(req: NextRequest) {
+  const { user_id, text_slug, chapter, verse } = await req.json();
+  
+  // 1. Resolve User Tier & Status (mock fallback if unauthenticated)
+  const userSub: UserSubscription = await fetchUserSubscription(user_id);
+  const tierConfig = TIERS[userSub.tier];
+  
+  // 2. Fetch daily usage counts from Edge KV / Redis
+  const todayKey = `usage:${user_id}:${new Date().toISOString().split('T')[0]}`;
+  const currentUsage = parseInt(await edgeKV.get(todayKey) || '0', 10);
+  
+  // 3. Early check: Enforce daily rate limit ceiling
+  if (currentUsage >= tierConfig.synthesis_daily_limit) {
+    return NextResponse.json({
+      success: false,
+      error_code: 'RATE_LIMIT_EXCEEDED',
+      message: `You have reached your daily limit of ${tierConfig.synthesis_daily_limit} AI syntheses on the ${tierConfig.name}. Please upgrade to Vishwa Plus or Pro for unlimited access.`
+    }, { status: 429 });
+  }
+  
+  // 4. Proceed with AI Synthesis under user's tier mode
+  const synthesisResult = await executeSynthesis(text_slug, chapter, verse, tierConfig.synthesis_mode);
+  
+  // 5. Increment daily count in KV with a 24-hour expiration window
+  await edgeKV.set(todayKey, (currentUsage + 1).toString(), { ttl: 86400 });
+  
+  return NextResponse.json({
+    success: true,
+    data: {
+      synthesis: synthesisResult,
+      tier: userSub.tier,
+      remaining: tierConfig.synthesis_daily_limit - (currentUsage + 1)
+    }
+  });
+}
+```
+
+---
+
 ## Document History
 
 | Version | Date | Author | Changes |

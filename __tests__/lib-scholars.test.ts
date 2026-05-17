@@ -29,9 +29,9 @@ describe('SCHOLARS_REGISTRY structure', () => {
     }
   })
 
-  it('Tier 1 entries carry a rank in 1..10', () => {
-    const tier1 = SCHOLARS_REGISTRY.filter(s => s.tier === 1)
-    for (const s of tier1) {
+  it('Tier 1 queued entries carry a rank in 1..10', () => {
+    const tier1Queued = SCHOLARS_REGISTRY.filter(s => s.tier === 1 && s.acquisitionStatus === 'queued')
+    for (const s of tier1Queued) {
       expect(s.rank).not.toBeNull()
       if (s.rank !== null) {
         expect(s.rank >= 1 && s.rank <= 10).toBe(true)
@@ -59,13 +59,13 @@ describe('getScholarsByTier()', () => {
   it('returns the 2 currently-live scholars at tier 0', () => {
     const live = getScholarsByTier(0)
     expect(live.length).toBe(2)
-    expect(live.map(s => s.id)).toContain('iskcon-prabhupada')
+    expect(live.map(s => s.id)).toContain('adi-shankara')
     expect(live.map(s => s.id)).toContain('sant-dnyaneshwar')
   })
 
-  it('returns 10 queued scholars at tier 1', () => {
+  it('returns 11 queued scholars at tier 1', () => {
     const queue = getScholarsByTier(1)
-    expect(queue.length).toBe(10)
+    expect(queue.length).toBe(11)
   })
 })
 
@@ -97,9 +97,9 @@ describe('getScholarsByLanguage()', () => {
     expect(mr.map(s => s.id)).toContain('tilak-gita-rahasya')
   })
 
-  it('Gujarati surfaces Gandhi (single primary-Gu scholar)', () => {
+  it('Gujarati currently surfaces 0 scholars (since Gandhi was excised)', () => {
     const gu = getScholarsByLanguage('gu')
-    expect(gu.map(s => s.id)).toContain('gandhi-anasakti-yoga')
+    expect(gu.length).toBe(0)
   })
 })
 
@@ -127,8 +127,8 @@ describe('getLiveScholars() and getAcquisitionQueue()', () => {
     }
   })
 
-  it('acquisition queue starts with Ādi Śaṅkara (rank 1)', () => {
+  it('acquisition queue starts with Tilak (rank 2)', () => {
     const queue = getAcquisitionQueue()
-    expect(queue[0].id).toBe('adi-shankara')
+    expect(queue[0].id).toBe('tilak-gita-rahasya')
   })
 })
