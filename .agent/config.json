@@ -1,9 +1,9 @@
 {
-    "project_name": "Scalable-App-V1",
+    "project_name": "Vishwa-Vani",
     "preferred_models": {
-        "planning": "claude-3-5-sonnet-thinking",
-        "execution": "gemini-3-flash",
-        "qa_audit": "claude-3-5-sonnet-thinking"
+        "planning": "gemini-2.0-pro-exp",
+        "execution": "gemini-2.0-flash",
+        "qa_audit": "gemini-2.0-pro-exp"
     },
     "terminal_policy": "auto"
 }

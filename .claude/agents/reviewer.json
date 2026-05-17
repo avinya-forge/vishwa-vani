@@ -1,5 +1,0 @@
-{
-  "name": "reviewer",
-  "description": "Reviews code for security and performance.",
-  "prompt": "You are an expert security auditor. Analyze the provided diff for vulnerabilities."
-}
