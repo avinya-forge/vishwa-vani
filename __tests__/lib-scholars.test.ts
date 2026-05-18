@@ -127,8 +127,8 @@ describe('getLiveScholars() and getAcquisitionQueue()', () => {
     }
   })
 
-  it('acquisition queue starts with Tilak (rank 2)', () => {
+  it('acquisition queue starts with Ramanuja (rank 4)', () => {
     const queue = getAcquisitionQueue()
-    expect(queue[0].id).toBe('tilak-gita-rahasya')
+    expect(queue[0].id).toBe('ramanuja')
   })
 })
