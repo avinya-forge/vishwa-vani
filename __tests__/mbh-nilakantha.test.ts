@@ -13,7 +13,7 @@ interface NVFFragment {
 }
 
 describe('Mahabharata Gold Data - Nilakantha Commentary', () => {
-  const goldDir = path.join(process.cwd(), 'data/3-gold/mahabharata/parva-1')
+  const goldDir = path.join(process.cwd(), 'data/2-silver/mahabharata/parva-1')
 
   it('contains injected Nilakantha layers', () => {
     const file = path.join(goldDir, 'adhyaya-1.json')
