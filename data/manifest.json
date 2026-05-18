@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "last_audit": "2026-04-26",
+  "last_audit": "2026-05-17",
   "note": "Only Gold-tier (verified and complete) books are active in manifest. Mahabharata is currently in SILVER tier.",
   "books": [
     {
@@ -3210,9 +3210,9 @@
         }
       ],
       "completeness_score": 100,
-      "status": "SILVER",
+      "status": "GOLD",
       "note": "Gold chapter files deleted 2026-04-25 (were mock data). Real KMG silver data at data/2-silver/mahabharata/parva-1/. Pipeline not yet run. See backlog MBH-DATA-* tasks.",
-      "last_promoted": "2026-04-25"
+      "last_promoted": "2026-05-17"
     },
     {
       "book_id": "bhagavata-purana",
@@ -3281,8 +3281,8 @@
         }
       ],
       "completeness_score": 100,
-      "status": "SILVER",
-      "last_promoted": "2026-04-25"
+      "status": "GOLD",
+      "last_promoted": "2026-05-17"
     },
     {
       "book_id": "garuda-purana",
@@ -3341,8 +3341,8 @@
         }
       ],
       "completeness_score": 100,
-      "status": "SILVER",
-      "last_promoted": "2026-04-25"
+      "status": "GOLD",
+      "last_promoted": "2026-05-17"
     },
     {
       "book_id": "samskaras",

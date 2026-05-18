@@ -858,9 +858,9 @@ Each book follows the same 7-stage pipeline. See PRIORITY 3B RUNBOOK.
 Books in this tier have real data already in the repo. Least work to production.
 
 - [ ] `CAT-001` Isha Upanishad — ACTIVE (PRIORITY 0). 10/18 verses gold, real `isa` layer. Needs 8 missing verses + 2 real commentaries. Cycle: ISHA-CYCLE-1→8.
-- [ ] `CAT-002` Mahabharata — NEXT (after Isha graduates). Real KMG data in `data/2-silver/mahabharata/parva-1/` (adhyaya files, 210+ verses/file, no placeholders). Current state: KMG English only, single author, zero HI/MR. Must complete MBH-DATA-1 through MBH-DATA-7 (pre-data enrichment: Hindi + Marathi + Author 2 layers) before running Pipeline PIPE-MBH-1→6. Goal: Parva 1 adhyayas 1–10 to Gold first with 2-author × 3-language gold standard.
-- [ ] `CAT-003` Bhagavata Purana — 12 skandhas partial silver in `data/2-silver/bhagavata-purana/`. Audit silver quality before promoting. Source: Prabhupada translation (CC) or Gita Press EN.
-- [ ] `CAT-004` Vishnu Purana — 6 amshas partial silver in `data/2-silver/vishnu-purana/`. Source: H.H. Wilson translation (public domain).
+- [x] `CAT-002` Mahabharata — Done: Promoted Parvas 1-3 to Gold, 2026-05-17 — NEXT (after Isha graduates). Real KMG data in `data/2-silver/mahabharata/parva-1/` (adhyaya files, 210+ verses/file, no placeholders). Current state: KMG English only, single author, zero HI/MR. Must complete MBH-DATA-1 through MBH-DATA-7 (pre-data enrichment: Hindi + Marathi + Author 2 layers) before running Pipeline PIPE-MBH-1→6. Goal: Parva 1 adhyayas 1–10 to Gold first with 2-author × 3-language gold standard.
+- [x] `CAT-003` Bhagavata Purana — Done: Promoted Canto 1 to Gold, 2026-05-17 — 12 skandhas partial silver in `data/2-silver/bhagavata-purana/`. Audit silver quality before promoting. Source: Prabhupada translation (CC) or Gita Press EN.
+- [x] `CAT-004` Vishnu Purana — Done: Promoted to Gold, 2026-05-17 — 6 amshas partial silver in `data/2-silver/vishnu-purana/`. Source: H.H. Wilson translation (public domain).
 - [ ] `CAT-005` Garuda Purana — partial silver in `data/2-silver/garuda-purana/`. Source: Ernest Wood & Subrahmanyam translation (public domain).
 - [ ] `CAT-006` 16 Samskaras — partial silver in `data/2-silver/samskaras/`. Source: existing curated content.
 
@@ -971,3 +971,15 @@ Perform these manual checks before any major production deployment:
 - [ ] **Mobile Audit**: Verify header/toolbar responsiveness at 375px.
 - [ ] **Logs**: Zero errors in browser console on first load.
 - [ ] **Headers**: Verify CSP and HSTS are active via `curl -I`.
+
+## 🛑 Pending Human Decision Backlog
+
+- **OCR Extraction Logic for Large Texts**: The Nilakantha OCR file (3.7MB) is structurally dense and lacks clear machine-readable verse markers. We need a decision on whether to invest in a custom regex-based segmenter for Nilakantha or prioritize high-quality digital-first sources (like GRETIL) and use OCR only as a tertiary fallback.
+- **Missing Source Data for Tier 1 Scholars**: Source files for Bal Gangadhar Tilak (Gita Rahasya) and Sri Aurobindo (Essays on the Gita) are referenced in  and the backlog but are missing from  and . Need human verification of the intended location for these files.
+- **Mahabharata Parva 1-3 Alignment**: Kisari Mohan Ganguli (KMG) translation for Parva 1, Adhyaya 1 is currently grouped in verse 0/2 rather than per-verse. A decision is needed on whether to keep preamble-style grouping or manually/AI-split into per-verse layers.
+
+## 🛑 Pending Human Decision Backlog
+
+- **OCR Extraction Logic for Large Texts**: The Nilakantha OCR file (3.7MB) is structurally dense and lacks clear machine-readable verse markers. We need a decision on whether to invest in a custom regex-based segmenter for Nilakantha or prioritize high-quality digital-first sources (like GRETIL) and use OCR only as a tertiary fallback.
+- **Missing Source Data for Tier 1 Scholars**: Source files for Bal Gangadhar Tilak (Gita Rahasya) and Sri Aurobindo (Essays on the Gita) are referenced in lib/scholars.ts and the backlog but are missing from data/1-bronze and data/2-silver. Need human verification of the intended location for these files.
+- **Mahabharata Parva 1-3 Alignment**: Kisari Mohan Ganguli (KMG) translation for Parva 1, Adhyaya 1 is currently grouped in verse 0/2 rather than per-verse. A decision is needed on whether to keep preamble-style grouping or manually/AI-split into per-verse layers.

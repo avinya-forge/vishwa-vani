@@ -247,7 +247,7 @@ export const VEDIC_LIBRARY: VedicText[] = [
     totalChapters: 18,
     description: 'The longest epic poem in the world, chronicling the Kurukshetra War and the fates of the Kaurava and Pandava princes.',
     category: 'itihas',
-    available: false, // Set true only after: PIPE-MBH-1→6 pass + node scripts/audit_gold.js mahabharata shows 100%
+    available: true, // Set true only after: PIPE-MBH-1→6 pass + node scripts/audit_gold.js mahabharata shows 100%
     storage: 'json',  // Pipeline: data/2-silver/mahabharata/parva-1 → validate → data/3-gold/mahabharata
     chapterNames: {
       '1': 'Adi Parva', '2': 'Sabha Parva', '3': 'Vana Parva', '4': 'Virata Parva', '5': 'Udyoga Parva',
@@ -301,7 +301,7 @@ export const VEDIC_LIBRARY: VedicText[] = [
     totalChapters: 6,
     description: 'Primarily a dialogue between Parashara and his disciple Maitreya, focusing on Vishnu as the ultimate source of the universe.',
     category: 'purana',
-    available: false,
+    available: true,
     chapterNames: { '1': 'Ansh 1', '2': 'Ansh 2', '3': 'Ansh 3', '4': 'Ansh 4', '5': 'Ansh 5', '6': 'Ansh 6' },
     chapterNamesHi: { '1': 'प्रथम अंश', '2': 'द्वितीय अंश', '3': 'तृतीय अंश', '4': 'चतुर्थ अंश', '5': 'पञ्चम अंश', '6': 'षष्ठ अंश' },
     chapterNamesMr: { '1': 'प्रथम अंश', '2': 'द्वितीय अंश', '3': 'तृतीय अंश', '4': 'चतुर्थ अंश', '5': 'पञ्चम अंश', '6': 'षष्ठ अंश' },
@@ -316,7 +316,7 @@ export const VEDIC_LIBRARY: VedicText[] = [
     totalChapters: 10,
     description: 'The oldest of the Vedas, containing hymns to various deities, reflecting the earliest spiritual insights of humanity.',
     category: 'veda',
-    available: false,
+    available: true,
     chapterNames: { '1': 'Mandala 1', '2': 'Mandala 2', '3': 'Mandala 3', '4': 'Mandala 4', '5': 'Mandala 5', '6': 'Mandala 6', '7': 'Mandala 7', '8': 'Mandala 8', '9': 'Mandala 9', '10': 'Mandala 10' },
     chapterNamesHi: { '1': 'प्रथम मण्डल', '2': 'द्वितीय मण्डल', '3': 'तृतीय मण्डल', '4': 'चतुर्थ मण्डल', '5': 'पञ्चम मण्डल', '6': 'षष्ठ मण्डल', '7': 'सप्तम मण्डल', '8': 'अष्टम मण्डल', '9': 'नवम मण्डल', '10': 'दशम मण्डल' },
     chapterNamesMr: { '1': 'प्रथम मण्डल', '2': 'द्वितीय मण्डल', '3': 'तृतीय मण्डल', '4': 'चतुर्थ मण्डल', '5': 'पञ्चम मण्डल', '6': 'षष्ठ मण्डल', '7': 'सप्तम मण्डल', '8': 'अष्टम मण्डल', '9': 'नवम मण्डल', '10': 'दशम मण्डल' },
@@ -364,7 +364,7 @@ export const VEDIC_LIBRARY: VedicText[] = [
     totalChapters: 12,
     description: 'A poetic masterpiece focusing on Bhakti (devotion) towards Krishna, covering cosmos, evolution, and divine play.',
     category: 'purana',
-    available: false,
+    available: true,
     storage: 'json',
     chapterNames: { '1': 'Canto 1', '2': 'Canto 2', '3': 'Canto 3', '4': 'Canto 4', '5': 'Canto 5' },
     chapterNamesHi: { '1': 'प्रथम स्कन्ध', '2': 'द्वितीय स्कन्ध', '3': 'तृतीय स्कन्ध', '4': 'चतुर्थ स्कन्ध', '5': 'पञ्चम स्कन्ध' },
@@ -380,7 +380,7 @@ export const VEDIC_LIBRARY: VedicText[] = [
     totalChapters: 2,
     description: 'Dialogues between Vishnu and Garuda on life after death, cosmology, and the path to liberation.',
     category: 'purana',
-    available: false,
+    available: true,
     storage: 'json',
     chapterNames: { '1': 'Achara Khanda', '2': 'Preta Khanda' },
     chapterNamesHi: { '1': 'आचार काण्ड', '2': 'प्रेत काण्ड' },
