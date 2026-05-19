@@ -67,6 +67,23 @@ export interface ScholarEntry {
 }
 
 export const SCHOLARS_REGISTRY: ScholarEntry[] = [
+
+  {
+    id: 'nilakantha',
+    displayName: 'Nilakantha Caturdhara',
+    era: 'medieval',
+    dates: '17th Century CE',
+    philosophicalSchool: 'advaita',
+    tradition: 'sankara-parampara',
+    primaryLanguage: 'sa',
+    availableLanguages: ['sa'],
+    acquisitionStatus: 'live',
+    tier: 0,
+    rank: null,
+    schoolSummary: 'Advaita Vedanta synthesis for the Mahabharata.',
+    publicDomainSource: 'Public domain (Sanskrit)',
+  },
+
   // ── Tier 0 — currently live in production ─────────────────────────────────
   {
     id: 'iskcon-prabhupada',

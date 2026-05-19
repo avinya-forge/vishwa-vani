@@ -25,9 +25,9 @@ This is the single authoritative ledger for Vishwa-Vani progress. It is strictly
 2. `GITA-SCH-02` **Sant Dnyāneshwar** (Bhakti / Marathi) · [x] **COMPLETE & TESTED**
 3. `GITA-SCH-03` **Bal Gangadhar Tilak — *Gītā Rahasya*** (Karma-Yoga) · [ ] **QUEUED**
    - [ ] Gather/extract Silver data (from `data/2-silver/`) into Gold chapter shards.
-   - [ ] Register in scholars registry `lib/scholars.ts` & update UI selector.
+   - [x] Register in scholars registry `lib/scholars.ts` & update UI selector.
    - [ ] Write dedicated Jest test case: `__tests__/gita-tilak.test.ts`.
-   - [ ] Run lint, test runner, and build check.
+   - [x] Run lint, test runner, and build check.
 4. `GITA-SCH-04` **Sri Aurobindo — *Essays on the Gītā*** (Integral Yoga) · [ ] **QUEUED**
    - [ ] Gather/extract Silver data, promote to Gold, register, test, and verify.
 5. `GITA-SCH-05` **Acharya Vinoba Bhave — *Gītā Pravachane*** (Samyayoga) · [ ] **QUEUED**
@@ -47,11 +47,11 @@ This is the single authoritative ledger for Vishwa-Vani progress. It is strictly
 
 ### 🏛️ BOOK B: MAHABHARATA (Selected Parvas - Adi, Sabha, Aranya)
 *Status: Real Bronze data exists in data/1-bronze/ (KMG English, GRETIL Sanskrit, Nilakantha Sanskrit). 10 commentators queued for sequential Agile integration.*
-1. `MBH-SCH-01` **Nilakantha Caturdhara — *Bhāratabhāvadīpa*** (Traditional Advaita - most celebrated MBH commentary) · [ ] **QUEUED**
-   - [ ] Ingest Nilakantha Sanskrit commentary from `data/1-bronze/nilakantha-raw-ocr.txt` into Gold adhyaya files.
-   - [ ] Register in scholars registry & update UI selector.
-   - [ ] Write dedicated Jest test case: `__tests__/mbh-nilakantha.test.ts`.
-   - [ ] Run lint, test runner, and build check.
+1. `MBH-SCH-01` **Nilakantha Caturdhara — *Bhāratabhāvadīpa*** (Traditional Advaita - most celebrated MBH commentary) · [x] **COMPLETE & TESTED**
+   - [x] Ingest Nilakantha Sanskrit commentary from `data/1-bronze/nilakantha-raw-ocr.txt` into Gold adhyaya files.
+   - [x] Register in scholars registry & update UI selector.
+   - [x] Write dedicated Jest test case: `__tests__/mbh-nilakantha.test.ts`.
+   - [x] Run lint, test runner, and build check.
 2. `MBH-SCH-02` **Kisari Mohan Ganguli (KMG)** (English Translation) · [ ] **QUEUED**
    - [ ] Ingest KMG translation, promote to Gold, register, test, and verify.
 3. `MBH-SCH-03` **Madhvācārya — *Mahābhārata Tātparya Nirṇaya*** (Dvaita) · [ ] **QUEUED**
@@ -77,7 +77,7 @@ This is the single authoritative ledger for Vishwa-Vani progress. It is strictly
 *Status: Initial structures mapped in Silver. 10 commentators queued for sequential Agile integration.*
 1. `BHAG-SCH-01` **Śrīdhara Svāmī — *Bhāvārtha-Dīpikā*** (Traditional Advaita Bhakti) · [ ] **QUEUED**
    - [ ] Ingest authentic Bhāvārtha-Dīpikā commentary layers (EN/HI/MR summaries).
-   - [ ] Register in scholars registry & update UI selector.
+   - [x] Register in scholars registry & update UI selector.
    - [ ] Write dedicated Jest test case: `__tests__/bhagavata-sridhara.test.ts`.
    - [ ] Run validation, test runner, and lint pass.
 2. `BHAG-SCH-02` **Sanātana Gosvāmī — *Bṛhad-Vaiṣṇava-Toṣaṇī*** (Gaudiya Vaishnava) · [ ] **QUEUED**
@@ -105,7 +105,7 @@ This is the single authoritative ledger for Vishwa-Vani progress. It is strictly
 *Status: Initial staging. 10 commentators queued for sequential Agile integration.*
 1. `RAM-SCH-01` **Govindarāja — *Rāmāyaṇa-Bhūṣaṇa*** (Sri Vaishnava traditional) · [ ] **QUEUED**
    - [ ] Ingest authentic Govindaraja commentary layers.
-   - [ ] Register in scholars registry & update UI selector.
+   - [x] Register in scholars registry & update UI selector.
    - [ ] Write dedicated Jest test case: `__tests__/ramayana-govindaraja.test.ts`.
    - [ ] Run validation, test runner, and lint pass.
 2. `RAM-SCH-02` **Kataka Mādhava — *Amṛtakataka*** (Classical traditional) · [ ] **QUEUED**

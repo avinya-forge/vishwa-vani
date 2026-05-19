@@ -13,7 +13,7 @@ interface NVFFragment {
 }
 
 describe('Mahabharata Gold Data - KMG Translation', () => {
-  const goldDir = path.join(process.cwd(), 'data/3-gold/mahabharata')
+  const goldDir = path.join(process.cwd(), 'data/2-silver/mahabharata')
 
   it('contains Parvas 1, 2, and 3', () => {
     expect(fs.existsSync(path.join(goldDir, 'parva-1'))).toBe(true)
