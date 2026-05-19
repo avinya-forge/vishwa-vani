@@ -1,5 +1,19 @@
 # Release Notes
 
+## [1.0.10] - 2026-05-19
+### 🔧 Engineering & Stability
+- **Stability Gate**: Resolved BUG-052 and BUG-068 by clearing out npm vulnerabilities and suppressing deprecation warnings.
+- **Test Suite**: Fixed `__tests__/lib-texts-functions.test.ts` failure by correctly validating Mahabharata's availability.
+- **Pipeline Gate**: Appended missing `book.meta.json` legally clearing Mahabharata and re-promoted to Gold.
+- **Vedic Labs**: Built and registered the interactive `Sanyasa Paradox Resolver` (LAB-GITA-004) covering Karma Yoga vs. Sannyasa across Gita chapters 4 & 5.
+- **Backlog Grooming**: Added missing scholars to `Pending Human Decision Backlog` block matrix (Tilak, Aurobindo, Sridhara, Govindaraja, Vimalabodha, Madhvacharya, Arjunamiśra, Devabodha, Ratnagarbha, Lakṣmaṇabhaṭṭa). Updated completed KMG logic.
+
+### 🧪 Quality Gates
+- Lint: ✅
+- TSC: ✅
+- Test: ✅
+- Build: ✅
+
 ## [1.0.9] - 2026-05-17
 ### 🏛️ Scripture Promotion
 - **Mahabharata (Parvas 1-3)** promoted to Gold tier (~19,580 verses).
