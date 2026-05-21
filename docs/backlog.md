@@ -52,8 +52,8 @@ This is the single authoritative ledger for Vishwa-Vani progress. It is strictly
    - [x] Register in scholars registry & update UI selector.
    - [x] Write dedicated Jest test case: `__tests__/mbh-nilakantha.test.ts`.
    - [x] Run lint, test runner, and build check.
-2. `MBH-SCH-02` **Kisari Mohan Ganguli (KMG)** (English Translation) · [ ] **QUEUED**
-   - [ ] Ingest KMG translation, promote to Gold, register, test, and verify.
+2. `MBH-SCH-02` **Kisari Mohan Ganguli (KMG)** (English Translation) · [x] **COMPLETE & TESTED**
+   - [x] Ingest KMG translation, promote to Gold, register, test, and verify.
 3. `MBH-SCH-03` **Madhvācārya — *Mahābhārata Tātparya Nirṇaya*** (Dvaita) · [ ] **QUEUED**
    - [ ] Ingest, register, test, and verify.
 4. `MBH-SCH-04` **Vimalabodha — *Durghaṭārthaprakāśinī*** (Classical Sanskrit) · [ ] **QUEUED**
