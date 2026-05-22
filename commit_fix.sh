@@ -1,0 +1,1 @@
+git add scripts/audit_gold.js scripts/audit_multilang.js scripts/audit_standards.js data/2-silver/mahabharata/book.meta.json data/2-silver/bhagavata-purana/book.meta.json data/2-silver/vishnu-purana/book.meta.json package.json package-lock.json docs/backlog.md docs/release-notes.md data/manifest.json

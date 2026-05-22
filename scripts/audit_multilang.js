@@ -29,6 +29,19 @@ const GOLD_DIR = path.join(BASE_DIR, 'data', '3-gold');
 const THIN_THRESHOLD = 80;
 const LANGS_TO_CHECK = ['hi', 'mr'];
 
+function getAllJsonFiles(dir, fileList = []) {
+  const files = fs.readdirSync(dir);
+  for (const file of files) {
+    const filePath = require('path').join(dir, file);
+    if (fs.statSync(filePath).isDirectory()) {
+      getAllJsonFiles(filePath, fileList);
+    } else if (file.endsWith('.json') && !file.endsWith('.meta.json')) {
+      fileList.push(filePath);
+    }
+  }
+  return fileList.sort();
+}
+
 function auditBook(bookSlug) {
   const bookDir = path.join(GOLD_DIR, bookSlug);
   if (!fs.existsSync(bookDir)) {
@@ -36,9 +49,7 @@ function auditBook(bookSlug) {
     return { violations: 1 };
   }
 
-  const files = fs.readdirSync(bookDir)
-    .filter(f => f.endsWith('.json'))
-    .sort();
+  const files = getAllJsonFiles(bookDir);
 
   if (files.length === 0) {
     console.error(`  ✗ No JSON files found in ${bookDir}`);
@@ -51,7 +62,7 @@ function auditBook(bookSlug) {
   const bookThinMap = {};
 
   for (const file of files) {
-    const filePath = path.join(bookDir, file);
+    const filePath = file;
     let verses;
     try {
       verses = JSON.parse(fs.readFileSync(filePath, 'utf8'));

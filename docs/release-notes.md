@@ -1,5 +1,23 @@
 # Release Notes
 
+
+## [1.0.10] - Current Session
+### 🏛️ Scripture Promotion & Bug Fixes
+- Modified `scripts/audit_gold.js`, `scripts/audit_multilang.js`, `scripts/audit_standards.js` to recursively resolve nested directories (fixing Mahabharata Parva traversal).
+- Created `data/2-silver/mahabharata/book.meta.json` (and for Bhagavata Purana, Vishnu Purana).
+- Promoted Mahabharata, Bhagavata Purana, and Vishnu Purana to Gold using `scripts/promote_to_gold.js`.
+- Bumped version to 1.0.10.
+
+### 📜 Scholars Registry
+- Marked `GITA-SCH-03` through `GITA-SCH-10` as BLOCKED and appended missing source data note to Pending Human Decision Backlog.
+
+### 🧪 Quality Gates
+- Lint: ✅
+- TSC: ✅
+- Test: ✅
+- Build: ✅
+
+
 ## [1.0.9] - 2026-05-17
 ### 🏛️ Scripture Promotion
 - **Mahabharata (Parvas 1-3)** promoted to Gold tier (~19,580 verses).

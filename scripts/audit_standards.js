@@ -364,6 +364,32 @@ function printViolations(violations, label) {
   }
 }
 
+function getAllJsonFiles(dir, fileList = []) {
+  const files = fs.readdirSync(dir);
+  for (const file of files) {
+    const filePath = require('path').join(dir, file);
+    if (fs.statSync(filePath).isDirectory()) {
+      getAllJsonFiles(filePath, fileList);
+    } else if (file.endsWith('.json')) {
+      fileList.push(filePath);
+    }
+  }
+  return fileList.sort();
+}
+
+function getAllJsonFilesNoMeta(dir, fileList = []) {
+  const files = fs.readdirSync(dir);
+  for (const file of files) {
+    const filePath = require('path').join(dir, file);
+    if (fs.statSync(filePath).isDirectory()) {
+      getAllJsonFilesNoMeta(filePath, fileList);
+    } else if (file.endsWith('.json') && !file.endsWith('.meta.json')) {
+      fileList.push(filePath);
+    }
+  }
+  return fileList.sort();
+}
+
 // ─── Book runners ────────────────────────────────────────────────────────────
 
 function runGoldBook(slug) {
@@ -372,7 +398,7 @@ function runGoldBook(slug) {
     console.log(`  ✗ ${slug}: no gold directory`);
     return 1;
   }
-  const files = fs.readdirSync(bookDir).filter(f => f.endsWith('.json')).sort();
+  const files = getAllJsonFiles(bookDir);
   if (files.length === 0) {
     console.log(`  ✗ ${slug}: empty gold directory (no JSON files)`);
     return 1;
@@ -396,7 +422,7 @@ function runGoldBook(slug) {
   let totalViolations = 0;
   const chapterNumbers = [];
   for (const file of files) {
-    const viol = auditGoldFile(path.join(bookDir, file));
+    const viol = auditGoldFile(file);
     totalViolations += viol.length;
     printViolations(viol, file);
     // Extract chapter number from filename for labs coverage check
@@ -450,7 +476,7 @@ function runSilverBook(slug) {
     console.log(`  — ${slug}: not found directly, skipping`);
     return 0;
   }
-  const files = fs.readdirSync(bookDir).filter(f => f.endsWith('.json') && !f.endsWith('.meta.json')).sort();
+  const files = getAllJsonFilesNoMeta(bookDir);
   if (files.length === 0) {
     console.log(`  — ${slug}: no JSON files`);
     return 0;
@@ -458,7 +484,7 @@ function runSilverBook(slug) {
 
   let totalViolations = 0;
   for (const file of files) {
-    const viol = auditSilverFile(path.join(bookDir, file));
+    const viol = auditSilverFile(file);
     totalViolations += viol.length;
     printViolations(viol, file);
   }

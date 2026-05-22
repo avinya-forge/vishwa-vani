@@ -86,6 +86,19 @@ function auditFile(filePath) {
   return stats;
 }
 
+function getAllJsonFiles(dir, fileList = []) {
+  const files = fs.readdirSync(dir);
+  for (const file of files) {
+    const filePath = require('path').join(dir, file);
+    if (fs.statSync(filePath).isDirectory()) {
+      getAllJsonFiles(filePath, fileList);
+    } else if (file.endsWith('.json') && !file.endsWith('.meta.json')) {
+      fileList.push(filePath);
+    }
+  }
+  return fileList.sort();
+}
+
 function printBookAudit(bookSlug) {
   const bookDir = path.join(GOLD_DIR, bookSlug);
   if (!fs.existsSync(bookDir)) {
@@ -93,9 +106,7 @@ function printBookAudit(bookSlug) {
     return false;
   }
 
-  const files = fs.readdirSync(bookDir)
-    .filter(f => f.endsWith('.json') && !f.endsWith('.meta.json'))
-    .sort();
+  const files = getAllJsonFiles(bookDir);
 
   if (files.length === 0) {
     console.error(`✗ ${bookSlug}: no JSON shards in gold directory`);
@@ -117,7 +128,7 @@ function printBookAudit(bookSlug) {
   };
 
   for (const file of files) {
-    const stats = auditFile(path.join(bookDir, file));
+    const stats = auditFile(file);
     combined.totalVerses += stats.verseCount;
     combined.versesWithNoValidLayer += stats.versesWithNoValidLayer;
     combined.versesWithMissingOriginal += stats.versesWithMissingOriginal;

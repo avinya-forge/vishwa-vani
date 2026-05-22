@@ -1,6 +1,6 @@
 {
   "name": "vishwa-vani",
-  "version": "1.0.8",
+  "version": "1.0.10",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -38,7 +38,7 @@
     "use-debounce": "^10.1.0"
   },
   "devDependencies": {
-    "@next/eslint-plugin-next": "^16.2.3",
+    "@next/eslint-plugin-next": "^16.2.6",
     "@tailwindcss/postcss": "^4",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
