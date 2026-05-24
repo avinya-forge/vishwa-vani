@@ -3,6 +3,9 @@
 
 ## [1.0.10] - Current Session
 ### 🏛️ Scripture Promotion & Bug Fixes
+- Enabled Mahabharata availability in `lib/texts.ts` and successfully verified its UI via rigorous checks.
+- Addressed development environment dependency vulnerabilities and resolved deprecated package warnings, satisfying `BUG-052` and `BUG-068`.
+- Updated test environment `jsdom` and `jest-environment-jsdom` to exact compatible versions and eliminated testing blockers.
 - Modified `scripts/audit_gold.js`, `scripts/audit_multilang.js`, `scripts/audit_standards.js` to recursively resolve nested directories (fixing Mahabharata Parva traversal).
 - Created `data/2-silver/mahabharata/book.meta.json` (and for Bhagavata Purana, Vishnu Purana).
 - Promoted Mahabharata, Bhagavata Purana, and Vishnu Purana to Gold using `scripts/promote_to_gold.js`.
