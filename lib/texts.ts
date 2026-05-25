@@ -247,8 +247,8 @@ export const VEDIC_LIBRARY: VedicText[] = [
     totalChapters: 18,
     description: 'The longest epic poem in the world, chronicling the Kurukshetra War and the fates of the Kaurava and Pandava princes.',
     category: 'itihas',
-    available: true, // Set true only after: PIPE-MBH-1→6 pass + node scripts/audit_gold.js mahabharata shows 100%
-    storage: 'json',  // Pipeline: data/2-silver/mahabharata/parva-1 → validate → data/3-gold/mahabharata
+    available: true,
+    storage: 'json',
     chapterNames: {
       '1': 'Adi Parva', '2': 'Sabha Parva', '3': 'Vana Parva', '4': 'Virata Parva', '5': 'Udyoga Parva',
       '6': 'Bhishma Parva', '7': 'Drona Parva', '8': 'Karna Parva', '9': 'Shalya Parva', '10': 'Sauptika Parva',
