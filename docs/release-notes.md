@@ -3,6 +3,8 @@
 
 ## [1.0.10] - Current Session
 ### 🏛️ Scripture Promotion & Bug Fixes
+- Added Crawlee and Playwright dependencies and scaffolded generic data crawling implementation.
+- Fixed `isha-upanishad` pipeline verification missing file `book.meta.json` and repromoted to Gold level.
 - Enabled Mahabharata availability in `lib/texts.ts` and successfully verified its UI via rigorous checks.
 - Addressed development environment dependency vulnerabilities and resolved deprecated package warnings, satisfying `BUG-052` and `BUG-068`.
 - Updated test environment `jsdom` and `jest-environment-jsdom` to exact compatible versions and eliminated testing blockers.
