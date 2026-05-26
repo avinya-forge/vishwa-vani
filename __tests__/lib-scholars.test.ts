@@ -56,9 +56,9 @@ describe('SCHOLARS_REGISTRY structure', () => {
 })
 
 describe('getScholarsByTier()', () => {
-  it('returns the 5 currently-live scholars at tier 0', () => {
+  it('returns the 6 currently-live scholars at tier 0', () => {
     const live = getScholarsByTier(0)
-    expect(live.length).toBe(5)
+    expect(live.length).toBe(6)
     expect(live.map(s => s.id)).toContain('adi-shankara')
     expect(live.map(s => s.id)).toContain('sant-dnyaneshwar')
     expect(live.map(s => s.id)).toContain('nilakantha')

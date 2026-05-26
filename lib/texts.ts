@@ -364,7 +364,7 @@ export const VEDIC_LIBRARY: VedicText[] = [
     totalChapters: 12,
     description: 'A poetic masterpiece focusing on Bhakti (devotion) towards Krishna, covering cosmos, evolution, and divine play.',
     category: 'purana',
-    available: false,
+    available: true,
     storage: 'json',
     chapterNames: { '1': 'Canto 1', '2': 'Canto 2', '3': 'Canto 3', '4': 'Canto 4', '5': 'Canto 5' },
     chapterNamesHi: { '1': 'प्रथम स्कन्ध', '2': 'द्वितीय स्कन्ध', '3': 'तृतीय स्कन्ध', '4': 'चतुर्थ स्कन्ध', '5': 'पञ्चम स्कन्ध' },

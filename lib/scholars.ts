@@ -68,6 +68,22 @@ export interface ScholarEntry {
 
 export const SCHOLARS_REGISTRY: ScholarEntry[] = [
   {
+    id: 'prabhupada',
+    displayName: 'A.C. Bhaktivedanta Swami Prabhupada',
+    era: 'modern',
+    dates: '1896–1977 CE',
+    philosophicalSchool: 'achintya-bhedabheda',
+    tradition: 'independent-modern',
+    primaryLanguage: 'en',
+    availableLanguages: ['en'],
+    acquisitionStatus: 'live',
+    tier: 0,
+    rank: null,
+    schoolSummary: 'Gaudiya Vaishnava — devotion (bhakti) centered on Krishna.',
+    publicDomainSource: 'Bhaktivedanta Purport (Srimad Bhagavatam)',
+  },
+
+  {
     id: 'sridhara',
     displayName: 'Śrīdhara Svāmī',
     era: 'medieval',
