@@ -1,71 +1,146 @@
 [
   {
     "id": "bhagavata-purana_1_1",
+    "text_slug": "bhagavata-purana",
     "chapter": 1,
     "verse": 1,
     "original": "जन्माद्यस्य यतोऽन्वयादितरतश्चार्थेष्वभिज्ञः स्वराट्\nतेने ब्रह्म हृदा य आदिकवये मुह्यन्ति यत्सूरयः ।\nतेजोवारिमृदां यथा विनिमयो यत्र त्रिसर्गोऽमृषा\nधाम्ना स्वेन सदा निरस्तकुहकं सत्यं परं धीमहि ॥ १ ॥",
     "transliteration": "janmādy asya yato 'nvayād itaratas cārtheṣv abhijñaḥ svarāṭ\ntene brahma hṛdā ya ādi-kavaye muhyanti yat sūrayaḥ\ntejo-vāri-mṛdāṁ yathā vinimayo yatra tri-sargo 'mṛṣā\ndhāmnā svena sadā nirasta-kuhakaṁ satyaṁ paraṁ dhīmahi",
+    "meaning": "I meditate upon Lord Sri Krishna, because He is the absolute truth...",
+    "layers": [
+      {
+        "author": "vyasa",
+        "lang": "en",
+        "type": "translation",
+        "content": "I meditate upon Lord Sri Krishna, because He is the absolute truth and the primeval cause of all causes of the creation, sustenance and destruction of the manifested universes."
+      },
+      {
+        "author": "sridhara",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Bhāvārtha-Dīpikā",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Sridhara Svami explains that the ultimate object of meditation is the Supreme Truth, distinct from illusion, which creates, sustains, and destroys the universe. This truth is luminous and removes all darkness."
+      },
+      {
+        "author": "sridhara",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Bhāvārtha-Dīpikā",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "श्रीधर स्वामी बताते हैं कि ध्यान का अंतिम उद्देश्य परम सत्य है, जो भ्रम से अलग है, जो ब्रह्मांड का निर्माण, पालन और विनाश करता है। यह सत्य प्रकाशमान है और सभी अंधकार को दूर करता है।"
+      },
+      {
+        "author": "sridhara",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Bhāvārtha-Dīpikā",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "श्रीधर स्वामी स्पष्ट करतात की ध्यानाचा अंतिम उद्देश परम सत्य आहे, जे भ्रमापेक्षा वेगळे आहे, जे विश्वाची निर्मिती, देखभाल आणि विनाश करते. हे सत्य प्रकाशमान आहे आणि सर्व अंधकार दूर करते."
+      }
+    ],
     "ai_metadata": {
       "topics": [
         "creation",
         "truth",
         "meditation"
       ]
-    },
+    }
+  },
+  {
+    "id": "bhagavata-purana_1_2",
+    "text_slug": "bhagavata-purana",
+    "chapter": 1,
+    "verse": 2,
+    "original": "धर्मः प्रोज्झितकैतवोऽत्र परमो निर्मत्सराणां सतां\nवेद्यं वास्तवमत्र वस्तु शिवदं तापत्रयोन्मूलनम् ।\nश्रीमद्भागवते महामुनिकृते किं वा परैरीश्वरः\nसद्यो हृद्यवरुध्यतेऽत्र कृतिभिः शुश्रूषुभिस्तत्क्षणात् ॥ २ ॥",
+    "transliteration": "dharmaḥ projjhita-kaitavo 'tra paramo nirmatsarāṇāṁ satāṁ\nvedyaṁ vāstavam atra vastu śivadaṁ tāpa-trayonmūlanam\nśrīmad-bhāgavate mahā-muni-kṛte kiṁ vā parair īśvaraḥ\nsadyo hṛdy avarudhyate 'tra kṛtibhiḥ śuśrūṣubhis tat-kṣaṇāt",
+    "meaning": "Completely rejecting all religious activities which are materially motivated, this Bhagavata Purana propounds the highest truth...",
     "layers": [
       {
         "author": "vyasa",
         "lang": "en",
         "type": "translation",
-        "content": "I meditate upon Lord Sri Krishna, because He is the absolute truth and the primeval cause of all causes of the creation, sustenance and destruction of the manifested universes. He is directly and indirectly conscious of all manifestations, and He is independent because there is no other cause beyond Him. It is He only who first imparted the Vedic knowledge unto the heart of Brahma-deva, the original living being. By Him even the great sages and demigods are placed into illusion, as one is bewildered by the illusory representations of water seen in fire, or land seen on water. Only because of Him do the material universes, temporarily manifested by the reactions of the three modes of nature, appear factual, although they are unreal. I therefore meditate upon Him, Lord Sri Krishna, who is eternally existent in the transcendental abode, which is forever free from the illusory representations of the material world. I meditate upon Him, for He is the absolute truth."
+        "content": "Completely rejecting all religious activities which are materially motivated, this Bhagavata Purana propounds the highest truth, which is understandable by those devotees who are fully pure in heart."
+      },
+      {
+        "author": "sridhara",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Bhāvārtha-Dīpikā",
+        "lang": "en",
+        "type": "commentary",
+        "content": "According to Sridhara Svami, the Bhagavata Purana distinguishes itself by rejecting all deceptive and materially motivated religious activities. It offers a pure path to the highest truth, eradicating the threefold miseries of existence."
+      },
+      {
+        "author": "sridhara",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Bhāvārtha-Dīpikā",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "श्रीधर स्वामी के अनुसार, भागवत पुराण सभी भ्रामक और भौतिक रूप से प्रेरित धार्मिक गतिविधियों को खारिज करके खुद को अलग करता है। यह अस्तित्व के तीन प्रकार के दुखों को मिटाते हुए, उच्चतम सत्य का एक शुद्ध मार्ग प्रदान करता है।"
+      },
+      {
+        "author": "sridhara",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Bhāvārtha-Dīpikā",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "श्रीधर स्वामींच्या मते, भागवत पुराण सर्व भ्रामक आणि भौतिकदृष्ट्या प्रेरित धार्मिक क्रियाकलाप नाकारून स्वतःला वेगळे करते. हे अस्तित्वाचे तीन प्रकारचे दुःख मिटवून, सर्वोच्च सत्याचा शुद्ध मार्ग प्रदान करते."
       }
     ],
-    "text_slug": "bhagavata-purana"
-  },
-  {
-    "id": "bhagavata-purana_1_2",
-    "chapter": 1,
-    "verse": 2,
-    "original": "धर्मः प्रोज्झितकैतवोऽत्र परमो निर्मत्सराणां सतां\nवेद्यं वास्तवमत्र वस्तु शिवदं तापत्रयोन्मूलनम् ।\nश्रीमद्भागवते महामुनिकृते किं वा परैरीश्वरः\nसद्यो हृद्यवरुध्यतेऽत्र कृतिभिः शुश्रूषुभिस्तत्क्षणात् ॥ २ ॥",
-    "transliteration": "dharmaḥ projjhita-kaitavo 'tra paramo nirmatsarāṇāṁ satāṁ\nvedyaṁ vāstavam atra vastu śivadaṁ tāpa-trayonmūlanam\nśrīmad-bhāgavate mahā-muni-kṛte kiṁ vā parair īśvaraḥ\nsadyo hṛdy avarudhyate 'tra kṛtibhiḥ śuśrūṣubhis tat-kṣaṇāt",
     "ai_metadata": {
       "topics": [
         "dharma",
         "devotion",
         "purana"
       ]
-    },
+    }
+  },
+  {
+    "id": "bhagavata-purana_1_3",
+    "text_slug": "bhagavata-purana",
+    "chapter": 1,
+    "verse": 3,
+    "original": "निगमकल्पतरोर्गलितं फलं शुकमुखादमृतद्रवसंयुतम् ।\nपिबत भागवतं रसमालयं मुहुरहो रसिका भुवि भावुकाः ॥ ३ ॥",
+    "transliteration": "nigama-kalpa-taror galitaṁ phalaṁ śuka-mukhād amṛta-drava-saṁyutam\npibata bhāgavataṁ rasam ālayam muhur aho rasikā bhuvi bhāvukāḥ",
+    "meaning": "O expert and thoughtful men, relish Srimad-Bhagavatam, the mature fruit of the desire tree of Vedic literatures...",
     "layers": [
       {
         "author": "vyasa",
         "lang": "en",
         "type": "translation",
-        "content": "Completely rejecting all religious activities which are materially motivated, this Bhagavata Purana propounds the highest truth, which is understandable by those devotees who are fully pure in heart. The highest truth is reality distinguished from illusion for the welfare of all. Such truth uproots the threefold miseries. This beautiful Bhagavatam, compiled by the great sage Vyasadeva (in his maturity), is sufficient in itself for God realization. What is the need of any other scripture? As soon as one attentively and submissively hears the message of Bhagavatam, by this culture of knowledge the Supreme Lord is established within his heart."
+        "content": "O learned men and thoughtful readers, relish Srimad-Bhagavatam, the mature fruit of the desire tree of Vedic literatures. It emanated from the lips of Sri Sukadeva Gosvami."
+      },
+      {
+        "author": "sridhara",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Bhāvārtha-Dīpikā",
+        "lang": "en",
+        "type": "commentary",
+        "content": "The Srimad Bhagavatam is likened to the ripened fruit of the Vedic desire tree. Sridhara Svami emphasizes that its transmission through Sukadeva Gosvami makes it a continuous flow of nectar, encouraging all spiritual seekers to constantly relish its divine essence."
+      },
+      {
+        "author": "sridhara",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Bhāvārtha-Dīpikā",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "श्रीमद् भागवत की तुलना वैदिक कल्पवृक्ष के पके हुए फल से की गई है। श्रीधर स्वामी इस बात पर जोर देते हैं कि शुकदेव गोस्वामी के माध्यम से इसका प्रसारण इसे अमृत का एक निरंतर प्रवाह बनाता है, जो सभी आध्यात्मिक साधकों को इसके दिव्य सार का लगातार आनंद लेने के लिए प्रोत्साहित करता है।"
+      },
+      {
+        "author": "sridhara",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Bhāvārtha-Dīpikā",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "श्रीमद् भागवताची तुलना वैदिक कल्पवृक्षाच्या पिकलेल्या फळाशी केली जाते. श्रीधर स्वामी यावर जोर देतात की शुकदेव गोस्वामींच्या माध्यमातून त्याचे प्रसारण याला अमृताचा एक सतत प्रवाह बनवते, जे सर्व आध्यात्मिक साधकांना त्याच्या दैवी साराचा सतत आनंद घेण्यासाठी प्रोत्साहित करते."
       }
     ],
-    "text_slug": "bhagavata-purana"
-  },
-  {
-    "id": "bhagavata-purana_1_3",
-    "chapter": 1,
-    "verse": 3,
-    "original": "निगमकल्पतरोर्गलितं फलं शुकमुखादमृतद्रवसंयुतम् ।\nपिबत भागवतं रसमालयं मुहुरहो रसिका भुवि भावुकाः ॥ ३ ॥",
-    "transliteration": "nigama-kalpa-taror galitaṁ phalaṁ śuka-mukhād amṛta-drava-saṁyutam\npibata bhāgavataṁ rasam ālayam muhur aho rasikā bhuvi bhāvukāḥ",
     "ai_metadata": {
       "topics": [
         "nectar",
         "wisdom",
         "bliss"
       ]
-    },
-    "layers": [
-      {
-        "author": "vyasa",
-        "lang": "en",
-        "type": "translation",
-        "content": "O learned men and thoughtful readers, relish Srimad-Bhagavatam, the mature fruit of the desire tree of Vedic literatures. It emanated from the lips of Sri Sukadeva Gosvami. Therefore this fruit has become even more tasteful, although its nectarean juice was already relishable for all, including liberated souls."
-      }
-    ],
-    "text_slug": "bhagavata-purana"
+    }
   }
 ]
