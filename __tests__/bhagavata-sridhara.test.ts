@@ -13,7 +13,7 @@ describe('BHAG-SCH-01 Sridhara Svami Commentary', () => {
   it('has mock silver data promoted to gold with Sridhara layers for Chapter 1', () => {
     const manifestPath = path.join(__dirname, '..', 'data', 'manifest.json')
     const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'))
-    const bhagavata = manifest.books.find((b: any) => b.book_id === 'bhagavata-purana')
+    const bhagavata = manifest.books.find((b: { book_id: string }) => b.book_id === 'bhagavata-purana')
     expect(bhagavata.status).toBe('GOLD')
 
     const chapter1Path = path.join(__dirname, '..', 'data', '3-gold', 'bhagavata-purana', 'bhagavata-purana-chapter-1.json')
@@ -21,10 +21,10 @@ describe('BHAG-SCH-01 Sridhara Svami Commentary', () => {
     expect(chapter1).toBeDefined()
     expect(chapter1.length).toBeGreaterThan(0)
 
-    const verse1 = chapter1.find((v: any) => v.verse === 1)
+    const verse1 = chapter1.find((v: { verse: number; layers: { author: string; lang: string; content: string }[] }) => v.verse === 1)
     expect(verse1).toBeDefined()
 
-    const sridharaEn = verse1?.layers.find((l: any) => l.author === 'sridhara' && l.lang === 'en')
+    const sridharaEn = verse1?.layers.find((l: { author: string; lang: string; content: string }) => l.author === 'sridhara' && l.lang === 'en')
     expect(sridharaEn).toBeDefined()
     expect(sridharaEn?.content).toContain('Sridhara Svami explains')
   })
