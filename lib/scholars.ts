@@ -67,6 +67,38 @@ export interface ScholarEntry {
 }
 
 export const SCHOLARS_REGISTRY: ScholarEntry[] = [
+  {
+    id: 'prabhupada',
+    displayName: 'A.C. Bhaktivedanta Swami Prabhupada',
+    era: 'modern',
+    dates: '1896–1977 CE',
+    philosophicalSchool: 'achintya-bhedabheda',
+    tradition: 'independent-modern',
+    primaryLanguage: 'en',
+    availableLanguages: ['en'],
+    acquisitionStatus: 'live',
+    tier: 0,
+    rank: null,
+    schoolSummary: 'Gaudiya Vaishnava — devotion (bhakti) centered on Krishna.',
+    publicDomainSource: 'Bhaktivedanta Purport (Srimad Bhagavatam)',
+  },
+
+  {
+    id: 'sridhara',
+    displayName: 'Śrīdhara Svāmī',
+    era: 'medieval',
+    dates: '14th Century CE',
+    philosophicalSchool: 'advaita',
+    tradition: 'sankara-parampara',
+    primaryLanguage: 'sa',
+    availableLanguages: ['sa', 'en', 'hi', 'mr'],
+    acquisitionStatus: 'live',
+    tier: 0,
+    rank: null,
+    schoolSummary: 'Advaita Bhakti — harmonizing non-dualism with devotion to Krishna.',
+    publicDomainSource: 'Bhāvārtha-Dīpikā (English Translation and Sanskrit Original)',
+  },
+
 
   {
     id: 'nilakantha',
@@ -158,8 +190,8 @@ export const SCHOLARS_REGISTRY: ScholarEntry[] = [
     primaryLanguage: 'en',
     availableLanguages: ['en', 'hi'],
     acquisitionStatus: 'deferred',
-    tier: 1,
-    rank: 3,
+    tier: 0,
+    rank: null,
     schoolSummary: 'Integral Yoga — synthesis of classical Vedānta with evolutionary spirituality; the Gītā as the supreme ethical scripture of the integral life.',
     publicDomainSource: 'Essays on the Gītā (1922, archive.org public domain); Aurobindo Ashram CC-licensed corpus for re-use',
   },

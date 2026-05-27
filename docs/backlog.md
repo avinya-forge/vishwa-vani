@@ -24,24 +24,61 @@ This is the single authoritative ledger for Vishwa-Vani progress. It is strictly
 1. `GITA-SCH-01` **Ādi Śaṅkarācārya** (Advaita) · [x] **COMPLETE & TESTED**
 2. `GITA-SCH-02` **Sant Dnyāneshwar** (Bhakti / Marathi) · [x] **COMPLETE & TESTED**
 3. `GITA-SCH-03` **Bal Gangadhar Tilak — *Gītā Rahasya*** (Karma-Yoga) · [ ] **QUEUED**
-   - [ ] Gather/extract Silver data (from `data/2-silver/`) into Gold chapter shards.
-   - [x] Register in scholars registry `lib/scholars.ts` & update UI selector.
-   - [ ] Write dedicated Jest test case: `__tests__/gita-tilak.test.ts`.
-   - [x] Run lint, test runner, and build check.
+   - [ ] Research and acquire primary source data or text for this commentary.
+   - [ ] Write Python/Node parsing script to convert source into NVF 1.0 JSON format.
+   - [ ] Validate parsed Silver data via `validate_silver.js`.
+   - [ ] Promote dataset to Gold tier using `promote_to_gold.js`.
+   - [ ] Register scholar ID and text mapping in `lib/scholars.ts`.
+   - [ ] Write dedicated Jest test covering the new layers.
 4. `GITA-SCH-04` **Sri Aurobindo — *Essays on the Gītā*** (Integral Yoga) · [ ] **QUEUED**
-   - [ ] Gather/extract Silver data, promote to Gold, register, test, and verify.
+   - [ ] Research and acquire primary source data or text for this commentary.
+   - [ ] Write Python/Node parsing script to convert source into NVF 1.0 JSON format.
+   - [ ] Validate parsed Silver data via `validate_silver.js`.
+   - [ ] Promote dataset to Gold tier using `promote_to_gold.js`.
+   - [ ] Register scholar ID and text mapping in `lib/scholars.ts`.
+   - [ ] Write dedicated Jest test covering the new layers.
 5. `GITA-SCH-05` **Acharya Vinoba Bhave — *Gītā Pravachane*** (Samyayoga) · [ ] **QUEUED**
-   - [ ] Ingest, register, test, and verify.
+   - [ ] Research and acquire primary source data or text for this commentary.
+   - [ ] Write Python/Node parsing script to convert source into NVF 1.0 JSON format.
+   - [ ] Validate parsed Silver data via `validate_silver.js`.
+   - [ ] Promote dataset to Gold tier using `promote_to_gold.js`.
+   - [ ] Register scholar ID and text mapping in `lib/scholars.ts`.
+   - [ ] Write dedicated Jest test covering the new layers.
 6. `GITA-SCH-06` **Veer Savarkar — *Gītā Karma-Yoga*** (Karma-Yoga / Action) · [ ] **QUEUED**
-   - [ ] Ingest, register, test, and verify.
+   - [ ] Research and acquire primary source data or text for this commentary.
+   - [ ] Write Python/Node parsing script to convert source into NVF 1.0 JSON format.
+   - [ ] Validate parsed Silver data via `validate_silver.js`.
+   - [ ] Promote dataset to Gold tier using `promote_to_gold.js`.
+   - [ ] Register scholar ID and text mapping in `lib/scholars.ts`.
+   - [ ] Write dedicated Jest test covering the new layers.
 7. `GITA-SCH-07` **Rāmānujācārya — *Gītā Bhāṣya*** (Viśiṣṭādvaita) · [ ] **QUEUED**
-   - [ ] Ingest, register, test, and verify.
+   - [ ] Research and acquire primary source data or text for this commentary.
+   - [ ] Write Python/Node parsing script to convert source into NVF 1.0 JSON format.
+   - [ ] Validate parsed Silver data via `validate_silver.js`.
+   - [ ] Promote dataset to Gold tier using `promote_to_gold.js`.
+   - [ ] Register scholar ID and text mapping in `lib/scholars.ts`.
+   - [ ] Write dedicated Jest test covering the new layers.
 8. `GITA-SCH-08` **Madhvācārya — *Gītā Bhāṣya*** (Dvaita) · [ ] **QUEUED**
-   - [ ] Ingest, register, test, and verify.
+   - [ ] Research and acquire primary source data or text for this commentary.
+   - [ ] Write Python/Node parsing script to convert source into NVF 1.0 JSON format.
+   - [ ] Validate parsed Silver data via `validate_silver.js`.
+   - [ ] Promote dataset to Gold tier using `promote_to_gold.js`.
+   - [ ] Register scholar ID and text mapping in `lib/scholars.ts`.
+   - [ ] Write dedicated Jest test covering the new layers.
 9. `GITA-SCH-09` **Abhinavagupta — *Gītārtha-saṅgraha*** (Kashmir Śaiva) · [ ] **QUEUED**
-   - [ ] Ingest, register, test, and verify.
+   - [ ] Research and acquire primary source data or text for this commentary.
+   - [ ] Write Python/Node parsing script to convert source into NVF 1.0 JSON format.
+   - [ ] Validate parsed Silver data via `validate_silver.js`.
+   - [ ] Promote dataset to Gold tier using `promote_to_gold.js`.
+   - [ ] Register scholar ID and text mapping in `lib/scholars.ts`.
+   - [ ] Write dedicated Jest test covering the new layers.
 10. `GITA-SCH-10` **Gita Press Gorakhpur** (Traditional Reference) · [ ] **QUEUED**
-    - [ ] Ingest, register, test, and verify.
+    - [ ] Research and acquire primary source data or text for this commentary.
+   - [ ] Write Python/Node parsing script to convert source into NVF 1.0 JSON format.
+   - [ ] Validate parsed Silver data via `validate_silver.js`.
+   - [ ] Promote dataset to Gold tier using `promote_to_gold.js`.
+   - [ ] Register scholar ID and text mapping in `lib/scholars.ts`.
+   - [ ] Write dedicated Jest test covering the new layers.
 
 ---
 
@@ -55,49 +92,135 @@ This is the single authoritative ledger for Vishwa-Vani progress. It is strictly
 2. `MBH-SCH-02` **Kisari Mohan Ganguli (KMG)** (English Translation) · [x] **COMPLETE & TESTED**
    - [x] Ingest KMG translation, promote to Gold, register, test, and verify.
 3. `MBH-SCH-03` **Madhvācārya — *Mahābhārata Tātparya Nirṇaya*** (Dvaita) · [ ] **QUEUED**
-   - [ ] Ingest, register, test, and verify.
+   - [ ] Research and acquire primary source data or text for this commentary.
+   - [ ] Write Python/Node parsing script to convert source into NVF 1.0 JSON format.
+   - [ ] Validate parsed Silver data via `validate_silver.js`.
+   - [ ] Promote dataset to Gold tier using `promote_to_gold.js`.
+   - [ ] Register scholar ID and text mapping in `lib/scholars.ts`.
+   - [ ] Write dedicated Jest test covering the new layers.
 4. `MBH-SCH-04` **Vimalabodha — *Durghaṭārthaprakāśinī*** (Classical Sanskrit) · [ ] **QUEUED**
-   - [ ] Ingest, register, test, and verify.
+   - [ ] Research and acquire primary source data or text for this commentary.
+   - [ ] Write Python/Node parsing script to convert source into NVF 1.0 JSON format.
+   - [ ] Validate parsed Silver data via `validate_silver.js`.
+   - [ ] Promote dataset to Gold tier using `promote_to_gold.js`.
+   - [ ] Register scholar ID and text mapping in `lib/scholars.ts`.
+   - [ ] Write dedicated Jest test covering the new layers.
 5. `MBH-SCH-05` **Arjunamiśra — *Bhāratārthadīpikā*** (Classical traditional) · [ ] **QUEUED**
-   - [ ] Ingest, register, test, and verify.
+   - [ ] Research and acquire primary source data or text for this commentary.
+   - [ ] Write Python/Node parsing script to convert source into NVF 1.0 JSON format.
+   - [ ] Validate parsed Silver data via `validate_silver.js`.
+   - [ ] Promote dataset to Gold tier using `promote_to_gold.js`.
+   - [ ] Register scholar ID and text mapping in `lib/scholars.ts`.
+   - [ ] Write dedicated Jest test covering the new layers.
 6. `MBH-SCH-06` **Devabodha — *Jñanadīpikā*** (Classical traditional) · [ ] **QUEUED**
-   - [ ] Ingest, register, test, and verify.
+   - [ ] Research and acquire primary source data or text for this commentary.
+   - [ ] Write Python/Node parsing script to convert source into NVF 1.0 JSON format.
+   - [ ] Validate parsed Silver data via `validate_silver.js`.
+   - [ ] Promote dataset to Gold tier using `promote_to_gold.js`.
+   - [ ] Register scholar ID and text mapping in `lib/scholars.ts`.
+   - [ ] Write dedicated Jest test covering the new layers.
 7. `MBH-SCH-07` **Ratnagarbha — *Bhāratālaṅkāraprakāśa*** (Classical traditional) · [ ] **QUEUED**
-   - [ ] Ingest, register, test, and verify.
+   - [ ] Research and acquire primary source data or text for this commentary.
+   - [ ] Write Python/Node parsing script to convert source into NVF 1.0 JSON format.
+   - [ ] Validate parsed Silver data via `validate_silver.js`.
+   - [ ] Promote dataset to Gold tier using `promote_to_gold.js`.
+   - [ ] Register scholar ID and text mapping in `lib/scholars.ts`.
+   - [ ] Write dedicated Jest test covering the new layers.
 8. `MBH-SCH-08` **Lakṣmaṇabhaṭṭa — *Dhyānaślokatīkā*** (Classical traditional) · [ ] **QUEUED**
-   - [ ] Ingest, register, test, and verify.
+   - [ ] Research and acquire primary source data or text for this commentary.
+   - [ ] Write Python/Node parsing script to convert source into NVF 1.0 JSON format.
+   - [ ] Validate parsed Silver data via `validate_silver.js`.
+   - [ ] Promote dataset to Gold tier using `promote_to_gold.js`.
+   - [ ] Register scholar ID and text mapping in `lib/scholars.ts`.
+   - [ ] Write dedicated Jest test covering the new layers.
 9. `MBH-SCH-09` **Traditional Warkari/Marathi summaries** (Marathi Regional) · [ ] **QUEUED**
-    - [ ] Ingest, register, test, and verify.
+    - [ ] Research and acquire primary source data or text for this commentary.
+   - [ ] Write Python/Node parsing script to convert source into NVF 1.0 JSON format.
+   - [ ] Validate parsed Silver data via `validate_silver.js`.
+   - [ ] Promote dataset to Gold tier using `promote_to_gold.js`.
+   - [ ] Register scholar ID and text mapping in `lib/scholars.ts`.
+   - [ ] Write dedicated Jest test covering the new layers.
 10. `MBH-SCH-10` **Gita Press Gorakhpur** (Traditional Reference) · [ ] **QUEUED**
-    - [ ] Ingest, register, test, and verify.
+    - [ ] Research and acquire primary source data or text for this commentary.
+   - [ ] Write Python/Node parsing script to convert source into NVF 1.0 JSON format.
+   - [ ] Validate parsed Silver data via `validate_silver.js`.
+   - [ ] Promote dataset to Gold tier using `promote_to_gold.js`.
+   - [ ] Register scholar ID and text mapping in `lib/scholars.ts`.
+   - [ ] Write dedicated Jest test covering the new layers.
 
 ---
 
 ### 🏛️ BOOK C: BHAGAVATA PURANA (Canto 1)
 *Status: Initial structures mapped in Silver. 10 commentators queued for sequential Agile integration.*
-1. `BHAG-SCH-01` **Śrīdhara Svāmī — *Bhāvārtha-Dīpikā*** (Traditional Advaita Bhakti) · [ ] **QUEUED**
-   - [ ] Ingest authentic Bhāvārtha-Dīpikā commentary layers (EN/HI/MR summaries).
+1. `BHAG-SCH-01` **A.C. Bhaktivedanta Swami Prabhupada** (Gaudiya Vaishnava) · [x] **COMPLETE & TESTED**
+   - [x] Scrape Vedabase for Canto 1.
+   - [x] Parse into NVF 1.0 format.
    - [x] Register in scholars registry & update UI selector.
-   - [ ] Write dedicated Jest test case: `__tests__/bhagavata-sridhara.test.ts`.
-   - [ ] Run validation, test runner, and lint pass.
+   - [x] Write dedicated Jest test case: `__tests__/bhagavata-prabhupada.test.ts`.
+   - [x] Run validation, promote to Gold, test runner, and lint pass.
 2. `BHAG-SCH-02` **Sanātana Gosvāmī — *Bṛhad-Vaiṣṇava-Toṣaṇī*** (Gaudiya Vaishnava) · [ ] **QUEUED**
-   - [ ] Ingest, register, test, and verify.
+   - [ ] Research and acquire primary source data or text for this commentary.
+   - [ ] Write Python/Node parsing script to convert source into NVF 1.0 JSON format.
+   - [ ] Validate parsed Silver data via `validate_silver.js`.
+   - [ ] Promote dataset to Gold tier using `promote_to_gold.js`.
+   - [ ] Register scholar ID and text mapping in `lib/scholars.ts`.
+   - [ ] Write dedicated Jest test covering the new layers.
 3. `BHAG-SCH-03` **Jīva Gosvāmī — *Krama-Sandarbha*** (Gaudiya Vaishnava) · [ ] **QUEUED**
-   - [ ] Ingest, register, test, and verify.
+   - [ ] Research and acquire primary source data or text for this commentary.
+   - [ ] Write Python/Node parsing script to convert source into NVF 1.0 JSON format.
+   - [ ] Validate parsed Silver data via `validate_silver.js`.
+   - [ ] Promote dataset to Gold tier using `promote_to_gold.js`.
+   - [ ] Register scholar ID and text mapping in `lib/scholars.ts`.
+   - [ ] Write dedicated Jest test covering the new layers.
 4. `BHAG-SCH-04` **Viśvanātha Cakravartī Ṭhākura — *Sārārtha-Darśinī*** (Gaudiya Vaishnava) · [ ] **QUEUED**
-   - [ ] Ingest, register, test, and verify.
+   - [ ] Research and acquire primary source data or text for this commentary.
+   - [ ] Write Python/Node parsing script to convert source into NVF 1.0 JSON format.
+   - [ ] Validate parsed Silver data via `validate_silver.js`.
+   - [ ] Promote dataset to Gold tier using `promote_to_gold.js`.
+   - [ ] Register scholar ID and text mapping in `lib/scholars.ts`.
+   - [ ] Write dedicated Jest test covering the new layers.
 5. `BHAG-SCH-05` **Madhvācārya — *Bhāgavata Tātparya Nirṇaya*** (Dvaita) · [ ] **QUEUED**
-   - [ ] Ingest, register, test, and verify.
+   - [ ] Research and acquire primary source data or text for this commentary.
+   - [ ] Write Python/Node parsing script to convert source into NVF 1.0 JSON format.
+   - [ ] Validate parsed Silver data via `validate_silver.js`.
+   - [ ] Promote dataset to Gold tier using `promote_to_gold.js`.
+   - [ ] Register scholar ID and text mapping in `lib/scholars.ts`.
+   - [ ] Write dedicated Jest test covering the new layers.
 6. `BHAG-SCH-06` **Vallabhācārya — *Subodhinī*** (Suddhadvaita) · [ ] **QUEUED**
-   - [ ] Ingest, register, test, and verify.
+   - [ ] Research and acquire primary source data or text for this commentary.
+   - [ ] Write Python/Node parsing script to convert source into NVF 1.0 JSON format.
+   - [ ] Validate parsed Silver data via `validate_silver.js`.
+   - [ ] Promote dataset to Gold tier using `promote_to_gold.js`.
+   - [ ] Register scholar ID and text mapping in `lib/scholars.ts`.
+   - [ ] Write dedicated Jest test covering the new layers.
 7. `BHAG-SCH-07` **Vijayadhvaja Tīrtha — *Pada-Ratnāvalī*** (Dvaita traditional) · [ ] **QUEUED**
-   - [ ] Ingest, register, test, and verify.
+   - [ ] Research and acquire primary source data or text for this commentary.
+   - [ ] Write Python/Node parsing script to convert source into NVF 1.0 JSON format.
+   - [ ] Validate parsed Silver data via `validate_silver.js`.
+   - [ ] Promote dataset to Gold tier using `promote_to_gold.js`.
+   - [ ] Register scholar ID and text mapping in `lib/scholars.ts`.
+   - [ ] Write dedicated Jest test covering the new layers.
 8. `BHAG-SCH-08` **Śukadeva Ācārya — *Siddhānta-Pradīpa*** (Nimbarka traditional) · [ ] **QUEUED**
-   - [ ] Ingest, register, test, and verify.
+   - [ ] Research and acquire primary source data or text for this commentary.
+   - [ ] Write Python/Node parsing script to convert source into NVF 1.0 JSON format.
+   - [ ] Validate parsed Silver data via `validate_silver.js`.
+   - [ ] Promote dataset to Gold tier using `promote_to_gold.js`.
+   - [ ] Register scholar ID and text mapping in `lib/scholars.ts`.
+   - [ ] Write dedicated Jest test covering the new layers.
 9. `BHAG-SCH-09` **Gaṅgāsahāya — *Bhāvārtha-Pradīpa*** (Traditional Sanatana) · [ ] **QUEUED**
-   - [ ] Ingest, register, test, and verify.
+   - [ ] Research and acquire primary source data or text for this commentary.
+   - [ ] Write Python/Node parsing script to convert source into NVF 1.0 JSON format.
+   - [ ] Validate parsed Silver data via `validate_silver.js`.
+   - [ ] Promote dataset to Gold tier using `promote_to_gold.js`.
+   - [ ] Register scholar ID and text mapping in `lib/scholars.ts`.
+   - [ ] Write dedicated Jest test covering the new layers.
 10. `BHAG-SCH-10` **Gita Press Gorakhpur** (Traditional Reference) · [ ] **QUEUED**
-    - [ ] Ingest, register, test, and verify.
+    - [ ] Research and acquire primary source data or text for this commentary.
+   - [ ] Write Python/Node parsing script to convert source into NVF 1.0 JSON format.
+   - [ ] Validate parsed Silver data via `validate_silver.js`.
+   - [ ] Promote dataset to Gold tier using `promote_to_gold.js`.
+   - [ ] Register scholar ID and text mapping in `lib/scholars.ts`.
+   - [ ] Write dedicated Jest test covering the new layers.
 
 ---
 
@@ -109,23 +232,68 @@ This is the single authoritative ledger for Vishwa-Vani progress. It is strictly
    - [ ] Write dedicated Jest test case: `__tests__/ramayana-govindaraja.test.ts`.
    - [ ] Run validation, test runner, and lint pass.
 2. `RAM-SCH-02` **Kataka Mādhava — *Amṛtakataka*** (Classical traditional) · [ ] **QUEUED**
-   - [ ] Ingest, register, test, and verify.
+   - [ ] Research and acquire primary source data or text for this commentary.
+   - [ ] Write Python/Node parsing script to convert source into NVF 1.0 JSON format.
+   - [ ] Validate parsed Silver data via `validate_silver.js`.
+   - [ ] Promote dataset to Gold tier using `promote_to_gold.js`.
+   - [ ] Register scholar ID and text mapping in `lib/scholars.ts`.
+   - [ ] Write dedicated Jest test covering the new layers.
 3. `RAM-SCH-03` **Maheśvara Tīrtha — *Rāmāyaṇa-Tattva-Dīpikā*** (Classical traditional) · [ ] **QUEUED**
-   - [ ] Ingest, register, test, and verify.
+   - [ ] Research and acquire primary source data or text for this commentary.
+   - [ ] Write Python/Node parsing script to convert source into NVF 1.0 JSON format.
+   - [ ] Validate parsed Silver data via `validate_silver.js`.
+   - [ ] Promote dataset to Gold tier using `promote_to_gold.js`.
+   - [ ] Register scholar ID and text mapping in `lib/scholars.ts`.
+   - [ ] Write dedicated Jest test covering the new layers.
 4. `RAM-SCH-04` **Śivasahāya — *Rāmāyaṇa-Śiromaṇi*** (Classical traditional) · [ ] **QUEUED**
-   - [ ] Ingest, register, test, and verify.
+   - [ ] Research and acquire primary source data or text for this commentary.
+   - [ ] Write Python/Node parsing script to convert source into NVF 1.0 JSON format.
+   - [ ] Validate parsed Silver data via `validate_silver.js`.
+   - [ ] Promote dataset to Gold tier using `promote_to_gold.js`.
+   - [ ] Register scholar ID and text mapping in `lib/scholars.ts`.
+   - [ ] Write dedicated Jest test covering the new layers.
 5. `RAM-SCH-05` **Nāgeśa Bhaṭṭa — *Rāmāyaṇa-Tilaka*** (Grammatical / Traditional) · [ ] **QUEUED**
-   - [ ] Ingest, register, test, and verify.
+   - [ ] Research and acquire primary source data or text for this commentary.
+   - [ ] Write Python/Node parsing script to convert source into NVF 1.0 JSON format.
+   - [ ] Validate parsed Silver data via `validate_silver.js`.
+   - [ ] Promote dataset to Gold tier using `promote_to_gold.js`.
+   - [ ] Register scholar ID and text mapping in `lib/scholars.ts`.
+   - [ ] Write dedicated Jest test covering the new layers.
 6. `RAM-SCH-06` **Rāmānuja — *Rāmāyaṇa-Rāmānujīya*** (Viśiṣṭādvaita) · [ ] **QUEUED**
-   - [ ] Ingest, register, test, and verify.
+   - [ ] Research and acquire primary source data or text for this commentary.
+   - [ ] Write Python/Node parsing script to convert source into NVF 1.0 JSON format.
+   - [ ] Validate parsed Silver data via `validate_silver.js`.
+   - [ ] Promote dataset to Gold tier using `promote_to_gold.js`.
+   - [ ] Register scholar ID and text mapping in `lib/scholars.ts`.
+   - [ ] Write dedicated Jest test covering the new layers.
 7. `RAM-SCH-07` **Tulasīdāsa — *Rāmacaritamānasa*** (Avadhi Regional Bhakti) · [ ] **QUEUED**
-   - [ ] Ingest, register, test, and verify.
+   - [ ] Research and acquire primary source data or text for this commentary.
+   - [ ] Write Python/Node parsing script to convert source into NVF 1.0 JSON format.
+   - [ ] Validate parsed Silver data via `validate_silver.js`.
+   - [ ] Promote dataset to Gold tier using `promote_to_gold.js`.
+   - [ ] Register scholar ID and text mapping in `lib/scholars.ts`.
+   - [ ] Write dedicated Jest test covering the new layers.
 8. `RAM-SCH-08` **Kamba — *Kamba Rāmāyaṇam*** (Tamil Regional traditional) · [ ] **QUEUED**
-   - [ ] Ingest, register, test, and verify.
+   - [ ] Research and acquire primary source data or text for this commentary.
+   - [ ] Write Python/Node parsing script to convert source into NVF 1.0 JSON format.
+   - [ ] Validate parsed Silver data via `validate_silver.js`.
+   - [ ] Promote dataset to Gold tier using `promote_to_gold.js`.
+   - [ ] Register scholar ID and text mapping in `lib/scholars.ts`.
+   - [ ] Write dedicated Jest test covering the new layers.
 9. `RAM-SCH-09` **Eknātha — *Bhāvārtha-Rāmāyaṇa*** (Marathi Regional traditional) · [ ] **QUEUED**
-    - [ ] Ingest, register, test, and verify.
+    - [ ] Research and acquire primary source data or text for this commentary.
+   - [ ] Write Python/Node parsing script to convert source into NVF 1.0 JSON format.
+   - [ ] Validate parsed Silver data via `validate_silver.js`.
+   - [ ] Promote dataset to Gold tier using `promote_to_gold.js`.
+   - [ ] Register scholar ID and text mapping in `lib/scholars.ts`.
+   - [ ] Write dedicated Jest test covering the new layers.
 10. `RAM-SCH-10` **Gita Press Gorakhpur** (Traditional Reference) · [ ] **QUEUED**
-    - [ ] Ingest, register, test, and verify.
+    - [ ] Research and acquire primary source data or text for this commentary.
+   - [ ] Write Python/Node parsing script to convert source into NVF 1.0 JSON format.
+   - [ ] Validate parsed Silver data via `validate_silver.js`.
+   - [ ] Promote dataset to Gold tier using `promote_to_gold.js`.
+   - [ ] Register scholar ID and text mapping in `lib/scholars.ts`.
+   - [ ] Write dedicated Jest test covering the new layers.
 
 ---
 

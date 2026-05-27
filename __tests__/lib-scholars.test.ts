@@ -56,17 +56,17 @@ describe('SCHOLARS_REGISTRY structure', () => {
 })
 
 describe('getScholarsByTier()', () => {
-  it('returns the 2 currently-live scholars at tier 0', () => {
+  it('returns the 6 currently-live scholars at tier 0', () => {
     const live = getScholarsByTier(0)
-    expect(live.length).toBe(3)
+    expect(live.length).toBe(6)
     expect(live.map(s => s.id)).toContain('adi-shankara')
     expect(live.map(s => s.id)).toContain('sant-dnyaneshwar')
     expect(live.map(s => s.id)).toContain('nilakantha')
   })
 
-  it('returns 11 queued scholars at tier 1', () => {
+  it('returns 10 queued scholars at tier 1', () => {
     const queue = getScholarsByTier(1)
-    expect(queue.length).toBe(11)
+    expect(queue.length).toBe(10)
   })
 })
 
