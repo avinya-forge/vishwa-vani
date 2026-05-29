@@ -189,7 +189,7 @@ export const VEDIC_LIBRARY: VedicText[] = [
     totalChapters: 1,
     description: 'Explores the nature of Brahman (the ultimate reality) through the question: By whose will does the mind think?',
     category: 'upanishad',
-    available: false, // Set true only after: PIPE-KENA-1→6 pass + node scripts/audit_gold.js kena-upanishad shows 100%
+    available: true, // Set true only after: PIPE-KENA-1→6 pass + node scripts/audit_gold.js kena-upanishad shows 100%
     storage: 'json',  // Pipeline: data/2-silver/kena-upanishad → validate → data/3-gold/kena-upanishad
     chapterNames: { '1': 'Kena Upanishad — Complete Text' },
     chapterNamesHi: { '1': 'केनोपनिषद् — पूर्ण पाठ' },
@@ -205,7 +205,7 @@ export const VEDIC_LIBRARY: VedicText[] = [
     totalChapters: 1,
     description: 'The foundational text of Raja Yoga, consisting of 196 sutras (aphorisms) on the theory and practice of yoga.',
     category: 'other',
-    available: false,
+    available: true,
     storage: 'json',
     chapterNames: {
       '1': 'Samadhi Pada',

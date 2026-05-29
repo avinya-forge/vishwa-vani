@@ -111,6 +111,7 @@ const MarathiHeritageExplorer = dynamic(() => import('@/components/lab/marathi-h
   ssr: false,
   loading: () => <LabSkeleton />
 })
+const KenaInquiryLab = dynamic(() => import('@/components/lab/kena-inquiry-lab'), { ssr: false, loading: () => <LabSkeleton /> });
 const ConsciousnessStateMapper = dynamic(() => import('@/components/lab/consciousness-state-mapper'), {
   ssr: false,
   loading: () => <LabSkeleton />
@@ -168,6 +169,7 @@ export default function VedicLabPage() {
            <VerseGunaAnalyzer />
            <CommentaryComparisonTool />
            <MarathiHeritageExplorer />
+           <KenaInquiryLab />
            <ConsciousnessStateMapper />
         </div>
       </div>
