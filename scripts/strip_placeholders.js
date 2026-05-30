@@ -28,6 +28,7 @@ const PLACEHOLDER_CONTENT_PATTERNS = [
   /^\[/,
   /THIS IS A GENERIC PLACEHOLDER/i,
   /INSERTED TO SATISFY THE MINIMUM LENGTH/i,
+  /A beautiful verse demonstrating the glories of the Supreme Lord/i,
   /^Mock Verse/i,
   /^Mock Transliteration/i,
 ];

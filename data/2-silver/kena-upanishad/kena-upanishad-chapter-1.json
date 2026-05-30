@@ -4,11 +4,249 @@
     "text_slug": "kena-upanishad",
     "chapter": 1,
     "verse": 1,
-    "original": "केनेषितं पतति प्रेषितं मनः। केन प्राणः प्रथमः प्रैति युक्तः।\nकेनेषितां वाचमिमां वदन्ति। चक्षुः श्रोत्रं क उ देवो युनक्ति॥",
-    "transliteration": "keneṣitaṃ patati preṣitaṃ manaḥ | kena prāṇaḥ prathamaḥ praiti yuktaḥ |\nkeneṣitāṃ vācamimāṃ vadanti | cakṣuḥ śrotraṃ ka u devo yunakti ||",
-    "layers": [],
+    "original": "केनेषितं पतति प्रेषितं मनः। केन प्राणः प्रथमः प्रैति युक्तः। केनेषितां वाचमिमां वदन्ति। चक्षुः श्रोत्रं क उ देवो युनक्ति॥",
+    "transliteration": "keneṣitaṃ patati preṣitaṃ manaḥ | kena prāṇaḥ prathamaḥ praiti yuktaḥ | keneṣitāṃ vācamimāṃ vadanti | cakṣuḥ śrotraṃ ka u devo yunakti ||",
+    "meaning": "By whom missioned falls the mind shot forth? By whom yoked does the first life-breath move forward? By whom missioned is this speech that men utter? Who is the god that yokes the eye and ear?",
+    "layers": [
+      {
+        "author": "max_muller",
+        "author_name": "Friedrich Max Müller",
+        "author_label": "SBE Translation",
+        "author_bio": "German-born philologist and Orientalist, one of the founders of the western academic field of Indian studies.",
+        "author_icon": "📖",
+        "lang": "en",
+        "type": "translation",
+        "content": "By whom missioned falls the mind shot forth? By whom yoked does the first life-breath move forward? By whom missioned is this speech that men utter? Who is the god that yokes the eye and ear?"
+      }
+    ],
     "ai_metadata": {
-      "topics": []
+      "topics": [
+        "mind",
+        "breath",
+        "speech",
+        "senses",
+        "inquiry"
+      ]
+    }
+  },
+  {
+    "id": "kena-upanishad_1_2",
+    "text_slug": "kena-upanishad",
+    "chapter": 1,
+    "verse": 2,
+    "original": "श्रोत्रस्य श्रोत्रं मनसो मनो यद्वाचो ह वाचं स उ प्राणस्य प्राणः। चक्षुषश्चक्षुरतिमुच्य धीराः प्रेत्यास्माल्लोकादमृता भवन्ति॥",
+    "transliteration": "śrotrasya śrotraṃ manaso mano yadvāco ha vācaṃ sa u prāṇasya prāṇaḥ | cakṣuṣaścakṣuratimucya dhīrāḥ pretyāsmāllokādamṛtā bhavanti ||",
+    "meaning": "It is the ear of the ear, the mind of the mind, the speech of speech, the life of life, and the eye of the eye. The wise, giving up (the identification with these), on departing from this world, become immortal.",
+    "layers": [
+      {
+        "author": "max_muller",
+        "author_name": "Friedrich Max Müller",
+        "author_label": "SBE Translation",
+        "author_bio": "German-born philologist and Orientalist, one of the founders of the western academic field of Indian studies.",
+        "author_icon": "📖",
+        "lang": "en",
+        "type": "translation",
+        "content": "It is the ear of the ear, the mind of the mind, the speech of speech, the life of life, and the eye of the eye. The wise, giving up (the identification with these), on departing from this world, become immortal."
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "brahman",
+        "immortality",
+        "wise"
+      ]
+    }
+  },
+  {
+    "id": "kena-upanishad_1_3",
+    "text_slug": "kena-upanishad",
+    "chapter": 1,
+    "verse": 3,
+    "original": "न तत्र चक्षुर्गच्छति न वाग्गच्छति नो मनः। न विद्मो न विजानीमो यथैतदनुशिष्यात्॥",
+    "transliteration": "na tatra cakṣurgacchati na vāggacchati no manaḥ | na vidmo na vijānīmo yathaitadanuśiṣyāt ||",
+    "meaning": "The eye does not go thither, nor speech, nor mind. We do not know, we do not understand, how any one can teach it.",
+    "layers": [
+      {
+        "author": "max_muller",
+        "author_name": "Friedrich Max Müller",
+        "author_label": "SBE Translation",
+        "author_bio": "German-born philologist and Orientalist, one of the founders of the western academic field of Indian studies.",
+        "author_icon": "📖",
+        "lang": "en",
+        "type": "translation",
+        "content": "The eye does not go thither, nor speech, nor mind. We do not know, we do not understand, how any one can teach it."
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "ineffability",
+        "brahman",
+        "teaching"
+      ]
+    }
+  },
+  {
+    "id": "kena-upanishad_1_4",
+    "text_slug": "kena-upanishad",
+    "chapter": 1,
+    "verse": 4,
+    "original": "अन्यदेव तद्विदितादथो अविदितादधि। इति शुश्रुम पूर्वेषां ये नस्तद्व्याचचक्षिरे॥",
+    "transliteration": "anyadeva tadviditādatho aviditādadhi | iti śuśruma pūrveṣāṃ ye nastadvyācacakṣire ||",
+    "meaning": "It is different from the known, it is also above the unknown, thus we have heard from those of old, who taught us this.",
+    "layers": [
+      {
+        "author": "max_muller",
+        "author_name": "Friedrich Max Müller",
+        "author_label": "SBE Translation",
+        "author_bio": "German-born philologist and Orientalist, one of the founders of the western academic field of Indian studies.",
+        "author_icon": "📖",
+        "lang": "en",
+        "type": "translation",
+        "content": "It is different from the known, it is also above the unknown, thus we have heard from those of old, who taught us this."
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "brahman",
+        "tradition",
+        "beyond-knowledge"
+      ]
+    }
+  },
+  {
+    "id": "kena-upanishad_1_5",
+    "text_slug": "kena-upanishad",
+    "chapter": 1,
+    "verse": 5,
+    "original": "यद्वाचाऽनभ्युदितं येन वागभ्युद्यते। तदेव ब्रह्म त्वं विद्धि नेदं यदिदमुपासते॥",
+    "transliteration": "yadvācā'nabhyuditaṃ yena vāgabhyudyate | tadeva brahma tvaṃ viddhi nedaṃ yadidamupāsate ||",
+    "meaning": "That which is not expressed by speech and by which speech is expressed, that alone know as Brahman, not that which people here adore.",
+    "layers": [
+      {
+        "author": "max_muller",
+        "author_name": "Friedrich Max Müller",
+        "author_label": "SBE Translation",
+        "author_bio": "German-born philologist and Orientalist, one of the founders of the western academic field of Indian studies.",
+        "author_icon": "📖",
+        "lang": "en",
+        "type": "translation",
+        "content": "That which is not expressed by speech and by which speech is expressed, that alone know as Brahman, not that which people here adore."
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "speech",
+        "brahman",
+        "worship"
+      ]
+    }
+  },
+  {
+    "id": "kena-upanishad_1_6",
+    "text_slug": "kena-upanishad",
+    "chapter": 1,
+    "verse": 6,
+    "original": "यन्मनसा न मनुते येनाहुर्मनो मतम्। तदेव ब्रह्म त्वं विद्धि नेदं यदिदमुपासते॥",
+    "transliteration": "yanmanasā na manute yenāhurmano matam | tadeva brahma tvaṃ viddhi nedaṃ yadidamupāsate ||",
+    "meaning": "That which does not think by mind, and by which mind is thought, that alone know as Brahman, not that which people here adore.",
+    "layers": [
+      {
+        "author": "max_muller",
+        "author_name": "Friedrich Max Müller",
+        "author_label": "SBE Translation",
+        "author_bio": "German-born philologist and Orientalist, one of the founders of the western academic field of Indian studies.",
+        "author_icon": "📖",
+        "lang": "en",
+        "type": "translation",
+        "content": "That which does not think by mind, and by which mind is thought, that alone know as Brahman, not that which people here adore."
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "mind",
+        "brahman"
+      ]
+    }
+  },
+  {
+    "id": "kena-upanishad_1_7",
+    "text_slug": "kena-upanishad",
+    "chapter": 1,
+    "verse": 7,
+    "original": "यच्चक्षुषा न पश्यति येन चक्षूंषि पश्यति। तदेव ब्रह्म त्वं विद्धि नेदं यदिदमुपासते॥",
+    "transliteration": "yaccakṣuṣā na paśyati yena cakṣūṃṣi paśyati | tadeva brahma tvaṃ viddhi nedaṃ yadidamupāsate ||",
+    "meaning": "That which does not see by the eye, and by which one sees the eyes, that alone know as Brahman, not that which people here adore.",
+    "layers": [
+      {
+        "author": "max_muller",
+        "author_name": "Friedrich Max Müller",
+        "author_label": "SBE Translation",
+        "author_bio": "German-born philologist and Orientalist, one of the founders of the western academic field of Indian studies.",
+        "author_icon": "📖",
+        "lang": "en",
+        "type": "translation",
+        "content": "That which does not see by the eye, and by which one sees the eyes, that alone know as Brahman, not that which people here adore."
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "eye",
+        "brahman"
+      ]
+    }
+  },
+  {
+    "id": "kena-upanishad_1_8",
+    "text_slug": "kena-upanishad",
+    "chapter": 1,
+    "verse": 8,
+    "original": "यच्छ्रोत्रेण न शृणोति येन श्रोत्रमिदं श्रुतम्। तदेव ब्रह्म त्वं विद्धि नेदं यदिदमुपासते॥",
+    "transliteration": "yacchrotreṇa na śṛṇoti yena śrotramidaṃ śrutam | tadeva brahma tvaṃ viddhi nedaṃ yadidamupāsate ||",
+    "meaning": "That which does not hear by the ear, and by which the ear is heard, that alone know as Brahman, not that which people here adore.",
+    "layers": [
+      {
+        "author": "max_muller",
+        "author_name": "Friedrich Max Müller",
+        "author_label": "SBE Translation",
+        "author_bio": "German-born philologist and Orientalist, one of the founders of the western academic field of Indian studies.",
+        "author_icon": "📖",
+        "lang": "en",
+        "type": "translation",
+        "content": "That which does not hear by the ear, and by which the ear is heard, that alone know as Brahman, not that which people here adore."
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "ear",
+        "brahman"
+      ]
+    }
+  },
+  {
+    "id": "kena-upanishad_1_9",
+    "text_slug": "kena-upanishad",
+    "chapter": 1,
+    "verse": 9,
+    "original": "यत्प्राणेन न प्राणिति येन प्राणः प्रणीयते। तदेव ब्रह्म त्वं विद्धि नेदं यदिदमुपासते॥",
+    "transliteration": "yatprāṇena na prāṇiti yena prāṇaḥ praṇīyate | tadeva brahma tvaṃ viddhi nedaṃ yadidamupāsate ||",
+    "meaning": "That which does not breathe by breath, and by which breath is drawn, that alone know as Brahman, not that which people here adore.",
+    "layers": [
+      {
+        "author": "max_muller",
+        "author_name": "Friedrich Max Müller",
+        "author_label": "SBE Translation",
+        "author_bio": "German-born philologist and Orientalist, one of the founders of the western academic field of Indian studies.",
+        "author_icon": "📖",
+        "lang": "en",
+        "type": "translation",
+        "content": "That which does not breathe by breath, and by which breath is drawn, that alone know as Brahman, not that which people here adore."
+      }
+    ],
+    "ai_metadata": {
+      "topics": [
+        "breath",
+        "brahman"
+      ]
     }
   }
 ]

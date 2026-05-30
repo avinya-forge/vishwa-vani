@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "last_audit": "2026-05-26",
+  "last_audit": "2026-05-29",
   "note": "Only Gold-tier (verified and complete) books are active in manifest. Mahabharata is currently in SILVER tier.",
   "books": [
     {
@@ -16,7 +16,10 @@
         {
           "number": 1,
           "file": "isha-upanishad-chapter-1.json",
-          "verse_count": 19
+          "verse_count": 19,
+          "theme": "The Divine permeates all creation — renunciation, action, and the immortal Self across 18 mantras",
+          "stotra_present": true,
+          "yoga_type": null
         }
       ],
       "completeness_score": 100,
@@ -3220,97 +3223,154 @@
         {
           "number": 1,
           "file": "bhagavata-purana-chapter-1.json",
-          "verse_count": 23
+          "verse_count": 23,
+          "theme": "Questions by the Sages",
+          "yoga_type": null,
+          "stotra_present": false
         },
         {
           "number": 2,
           "file": "bhagavata-purana-chapter-2.json",
-          "verse_count": 32
+          "verse_count": 32,
+          "theme": "Divinity and Divine Service",
+          "yoga_type": null,
+          "stotra_present": false
         },
         {
           "number": 3,
           "file": "bhagavata-purana-chapter-3.json",
-          "verse_count": 44
+          "verse_count": 44,
+          "theme": "Krishna is the Source of All Incarnations",
+          "yoga_type": null,
+          "stotra_present": false
         },
         {
           "number": 4,
           "file": "bhagavata-purana-chapter-4.json",
-          "verse_count": 29
+          "verse_count": 29,
+          "theme": "The Appearance of Sri Narada",
+          "yoga_type": null,
+          "stotra_present": false
         },
         {
           "number": 5,
           "file": "bhagavata-purana-chapter-5.json",
-          "verse_count": 40
+          "verse_count": 40,
+          "theme": "Narada's Instructions on Srimad-Bhagavatam for Vyasadeva",
+          "yoga_type": null,
+          "stotra_present": false
         },
         {
           "number": 6,
           "file": "bhagavata-purana-chapter-6.json",
-          "verse_count": 38
+          "verse_count": 38,
+          "theme": "Conversation Between Narada and Vyasadeva",
+          "yoga_type": null,
+          "stotra_present": false
         },
         {
           "number": 7,
           "file": "bhagavata-purana-chapter-7.json",
-          "verse_count": 54
+          "verse_count": 54,
+          "theme": "The Son of Drona Punished",
+          "yoga_type": null,
+          "stotra_present": false
         },
         {
           "number": 8,
           "file": "bhagavata-purana-chapter-8.json",
-          "verse_count": 52
+          "verse_count": 52,
+          "theme": "Prayers by Queen Kunti and Pariksit Saved",
+          "yoga_type": null,
+          "stotra_present": true
         },
         {
           "number": 9,
           "file": "bhagavata-purana-chapter-9.json",
-          "verse_count": 47
+          "verse_count": 47,
+          "theme": "The Passing Away of Bhismadeva in the Presence of Lord Krishna",
+          "yoga_type": null,
+          "stotra_present": true
         },
         {
           "number": 10,
           "file": "bhagavata-purana-chapter-10.json",
-          "verse_count": 8
+          "verse_count": 8,
+          "theme": "Departure of Lord Krishna for Dwaraka",
+          "yoga_type": null,
+          "stotra_present": false
         },
         {
           "number": 11,
           "file": "bhagavata-purana-chapter-11.json",
-          "verse_count": 35
+          "verse_count": 35,
+          "theme": "Lord Krishna's Entrance into Dwaraka",
+          "yoga_type": null,
+          "stotra_present": false
         },
         {
           "number": 12,
           "file": "bhagavata-purana-chapter-12.json",
-          "verse_count": 36
+          "verse_count": 36,
+          "theme": "Birth of Emperor Pariksit",
+          "yoga_type": null,
+          "stotra_present": false
         },
         {
           "number": 13,
           "file": "bhagavata-purana-chapter-13.json",
-          "verse_count": 58
+          "verse_count": 58,
+          "theme": "Dhritarashtra Quits Home",
+          "yoga_type": null,
+          "stotra_present": false
         },
         {
           "number": 14,
           "file": "bhagavata-purana-chapter-14.json",
-          "verse_count": 38
+          "verse_count": 38,
+          "theme": "The Disappearance of Lord Krishna",
+          "yoga_type": null,
+          "stotra_present": false
         },
         {
           "number": 15,
           "file": "bhagavata-purana-chapter-15.json",
-          "verse_count": 45
+          "verse_count": 45,
+          "theme": "The Pandavas Retire Timely",
+          "yoga_type": null,
+          "stotra_present": false
         },
         {
           "number": 16,
           "file": "bhagavata-purana-chapter-16.json",
-          "verse_count": 12
+          "verse_count": 12,
+          "theme": "How Pariksit Received the Age of Kali",
+          "yoga_type": null,
+          "stotra_present": false
         },
         {
           "number": 17,
           "file": "bhagavata-purana-chapter-17.json",
-          "verse_count": 41
+          "verse_count": 41,
+          "theme": "Punishment and Reward of Kali",
+          "yoga_type": null,
+          "stotra_present": false
         },
         {
           "number": 18,
           "file": "bhagavata-purana-chapter-18.json",
-          "verse_count": 48
+          "verse_count": 48,
+          "theme": "Maharaja Pariksit Cursed by a Brahmana Boy",
+          "yoga_type": null,
+          "stotra_present": false
         },
         {
           "number": 19,
           "file": "bhagavata-purana-chapter-19.json",
-          "verse_count": 38
+          "verse_count": 38,
+          "theme": "The Appearance of Sukadeva Gosvami",
+          "yoga_type": null,
+          "stotra_present": false
         }
       ],
       "completeness_score": 100,
@@ -3395,32 +3455,38 @@
     {
       "book_id": "yoga-sutras",
       "total_chapters": 1,
-      "total_verses": 9,
+      "total_verses": 10,
       "chapters": [
         {
           "number": 1,
           "file": "yoga-sutras-chapter-1.json",
-          "verse_count": 9
+          "verse_count": 10,
+          "theme": "Samādhi Pāda: The nature of concentration and the definition of Yoga.",
+          "yoga_type": "Ashtanga Yoga",
+          "stotra_present": false
         }
       ],
       "completeness_score": 100,
-      "status": "SILVER",
-      "last_promoted": "2026-04-25"
+      "status": "GOLD",
+      "last_promoted": "2026-05-29"
     },
     {
       "book_id": "kena-upanishad",
       "total_chapters": 1,
-      "total_verses": 1,
+      "total_verses": 9,
       "chapters": [
         {
           "number": 1,
           "file": "kena-upanishad-chapter-1.json",
-          "verse_count": 1
+          "verse_count": 9,
+          "theme": "Sensory inquiry: By whom is the mind and breath directed?",
+          "yoga_type": null,
+          "stotra_present": true
         }
       ],
       "completeness_score": 100,
-      "status": "SILVER",
-      "last_promoted": "2026-04-25"
+      "status": "GOLD",
+      "last_promoted": "2026-05-29"
     }
   ]
 }

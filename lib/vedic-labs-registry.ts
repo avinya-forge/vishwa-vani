@@ -324,7 +324,40 @@ export const VEDIC_LABS_REGISTRY: LabAppEntry[] = [
     available: true,
     isPrototype: false,
   },
-]
+  {
+    id: 'kena-sensory-inquiry',
+    name: 'Kena Sensory Inquiry',
+    description: "Investigate the source of mental and sensory faculties through the Kena Upanishad's method of inquiry (The Eye of the Eye).",
+    path: '/labs',
+    books: ['kena-upanishad'],
+    chapters: [1],
+    topics: ['upanishad', 'brahman', 'senses', 'consciousness', 'inquiry', 'kena'],
+    available: true,
+    isPrototype: false,
+  },
+  {
+    id: 'yoga-mind-control',
+    name: 'Yoga Mind Control Explorer',
+    description: 'Explore the definition of Yoga as mind-control and the practice of Abhyasa and Vairagya from Chapter 1.',
+    path: '/labs',
+    books: ['yoga-sutras'],
+    chapters: [1],
+    topics: ['yoga', 'mind', 'practice', 'detachment', 'patanjali'],
+    available: true,
+    isPrototype: false,
+  },
+  {
+    id: 'bhagavata-bhakti-flow',
+    name: 'Bhāgavata Bhakti Flow',
+    description: 'A guided journey through the first 19 chapters of Canto 1, exploring the primary questions of the sages and the emergence of Srimad Bhagavatam.',
+    path: '/labs',
+    books: ['bhagavata-purana'],
+    chapters: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+    topics: ['bhagavatam', 'bhakti', 'canto-1', 'questions', 'sages'],
+    available: true,
+    isPrototype: false,
+  },
+];
 
 /**
  * Return apps relevant to a given book and chapter.

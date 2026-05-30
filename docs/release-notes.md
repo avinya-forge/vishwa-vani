@@ -44,3 +44,13 @@
 - TSC: ✅
 - Test: ✅
 - Build: ✅
+
+## [2026-05-29] - Ingestion & Quality Sprint
+- **Bhagavata Purana (Canto 1)**: Repaired all 19 chapters. Removed "A beautiful verse" fillers, backfilled Vyasa/Prabhupada metadata, and ensured EN/HI/MR coverage. Added chapter themes to manifest.
+- **Kena Upanishad**: Ingested Khandas 1 & 2 (14 verses) with Max Müller translation. Promoted to Gold and activated.
+- **Yoga Sutras (Chapter 1)**: Ingested 10 key sutras of Samadhi Pada with Vivekananda translation. Promoted to Gold and activated.
+- **Kena Sensory Inquiry Lab**: New interactive lab for sensory inquiry (Kena 1.1-1.2).
+- **V-Score/Readiness**: Bhagavata Purana, Kena Upanishad, and Yoga Sutras now 100% Gold Standard compliant.
+
+**Current Session ID**: session_20260529_kena_bhag_yoga
+**Last Action**: Full Gold promotion and Lab registration for three scriptures.

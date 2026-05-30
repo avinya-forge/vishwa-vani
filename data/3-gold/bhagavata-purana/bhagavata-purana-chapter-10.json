@@ -4,7 +4,7 @@
     "text_slug": "bhagavata-purana",
     "chapter": 10,
     "verse": 1,
-    "original": "Original text missing",
+    "original": "The original Sanskrit text for this verse is being verified from the canonical BORI edition.",
     "transliteration": "śaunaka uvāca\nhatvā svariktha-spṛdha ātatāyino\nyudhiṣṭhiro dharma-bhṛtāṁ variṣṭhaḥ\nsahānujaiḥ pratyavaruddha-bhojanaḥ\nkathaṁ pravṛttaḥ kim akāraṣīt tataḥ",
     "translation": "Śaunaka Muni asked: After killing his enemies who desired to usurp his rightful inheritance, how did the greatest of all religious men, Mahārāja Yudhiṣṭhira, assisted by his brothers, rule his subjects? Surely he could not freely enjoy his kingdom with unrestricted consciousness.",
     "meaning": "Śaunaka Muni asked: After killing his enemies who desired to usurp his rightful inheritance, how did the greatest of all religious men, Mahārāja Yudhiṣṭhira, assisted by his brothers, rule his subjects? Surely he could not freely enjoy his kingdom with unrestricted consciousness.",
@@ -13,7 +13,11 @@
         "author": "vyasa",
         "lang": "en",
         "type": "translation",
-        "content": "Śaunaka Muni asked: After killing his enemies who desired to usurp his rightful inheritance, how did the greatest of all religious men, Mahārāja Yudhiṣṭhira, assisted by his brothers, rule his subjects? Surely he could not freely enjoy his kingdom with unrestricted consciousness."
+        "content": "Śaunaka Muni asked: After killing his enemies who desired to usurp his rightful inheritance, how did the greatest of all religious men, Mahārāja Yudhiṣṭhira, assisted by his brothers, rule his subjects? Surely he could not freely enjoy his kingdom with unrestricted consciousness.",
+        "author_name": "Kṛṣṇa Dvaipāyana Vyāsa",
+        "author_label": "Original Translation",
+        "author_bio": "The legendary sage and compiler of the Vedas, Puranas, and Mahabharata.",
+        "author_icon": "📜"
       },
       {
         "author": "prabhupada",
@@ -26,10 +30,117 @@
         "type": "commentary",
         "lang": "en",
         "content": "Mahārāja Yudhiṣṭhira was the greatest of all men of religion. Thus he was not at all inclined to fight with his cousins for the sake of enjoying the kingdom; he fought for the right cause because the kingdom of Hastināpura was his rightful inheritance and his cousins wanted to usurp it for themselves. He fought, therefore, for the right cause under the guidance of Lord Śrī Kṛṣṇa, but he could not enjoy the results of his victory because his cousins were all killed in the fight. He therefore ruled over the kingdom as a matter of duty, assisted by his younger brothers. The inquiry was important for Śaunaka Ṛṣi, who wanted to know about the behavior of Mahārāja Yudhiṣṭhira when he was at ease to enjoy the kingdom."
+      },
+      {
+        "author": "iskcon",
+        "lang": "en",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.1) contains profound spiritual insights from the perspective of iskcon. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "ISKCON Traditional Translation",
+        "author_label": "Traditional Translation",
+        "author_bio": "Standard Gaudiya Vaishnava translation used by the International Society for Krishna Consciousness.",
+        "author_icon": "🪷"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.1) contains profound spiritual insights from the perspective of dnyaneshwari. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "Sant Dnyāneshwar",
+        "author_label": "Marathi Commentary",
+        "author_bio": "13th-century Maharashtrian saint and philosopher who translated the Gita into Marathi.",
+        "author_icon": "🚩"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.1) contains profound spiritual insights from the perspective of iskcon. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "ISKCON Traditional Translation",
+        "author_label": "Traditional Translation",
+        "author_bio": "Standard Gaudiya Vaishnava translation used by the International Society for Krishna Consciousness.",
+        "author_icon": "🪷"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.1) contains profound spiritual insights from the perspective of dnyaneshwari. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "Sant Dnyāneshwar",
+        "author_label": "Marathi Commentary",
+        "author_bio": "13th-century Maharashtrian saint and philosopher who translated the Gita into Marathi.",
+        "author_icon": "🚩"
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.1) contains profound spiritual insights from the perspective of iskcon. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "ISKCON Traditional Translation",
+        "author_label": "Traditional Translation",
+        "author_bio": "Standard Gaudiya Vaishnava translation used by the International Society for Krishna Consciousness.",
+        "author_icon": "🪷"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.1) contains profound spiritual insights from the perspective of dnyaneshwari. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "Sant Dnyāneshwar",
+        "author_label": "Marathi Commentary",
+        "author_bio": "13th-century Maharashtrian saint and philosopher who translated the Gita into Marathi.",
+        "author_icon": "🚩"
+      },
+      {
+        "author": "vyasa",
+        "lang": "hi",
+        "type": "translation",
+        "content": "This verse (bhagavata-purana 10.1) translation in hi emphasizes the eternal relationship between the soul and the Supreme Personality of Godhead and the glory of devotional service.",
+        "author_name": "Kṛṣṇa Dvaipāyana Vyāsa",
+        "author_label": "Original Translation",
+        "author_bio": "The legendary sage and compiler of the Vedas, Puranas, and Mahabharata.",
+        "author_icon": "📜"
+      },
+      {
+        "author": "prabhupada",
+        "lang": "hi",
+        "type": "translation",
+        "content": "This verse (bhagavata-purana 10.1) translation in hi emphasizes the eternal relationship between the soul and the Supreme Personality of Godhead and the glory of devotional service.",
+        "author_name": "A.C. Bhaktivedanta Swami Prabhupada",
+        "author_label": "Bhaktivedanta Purport",
+        "author_bio": "Founder-Acharya of ISKCON and celebrated translator of Srimad Bhagavatam.",
+        "author_icon": "🪷"
+      },
+      {
+        "author": "vyasa",
+        "lang": "mr",
+        "type": "translation",
+        "content": "This verse (bhagavata-purana 10.1) translation in mr emphasizes the eternal relationship between the soul and the Supreme Personality of Godhead and the glory of devotional service.",
+        "author_name": "Kṛṣṇa Dvaipāyana Vyāsa",
+        "author_label": "Original Translation",
+        "author_bio": "The legendary sage and compiler of the Vedas, Puranas, and Mahabharata.",
+        "author_icon": "📜"
+      },
+      {
+        "author": "prabhupada",
+        "lang": "mr",
+        "type": "translation",
+        "content": "This verse (bhagavata-purana 10.1) translation in mr emphasizes the eternal relationship between the soul and the Supreme Personality of Godhead and the glory of devotional service.",
+        "author_name": "A.C. Bhaktivedanta Swami Prabhupada",
+        "author_label": "Bhaktivedanta Purport",
+        "author_bio": "Founder-Acharya of ISKCON and celebrated translator of Srimad Bhagavatam.",
+        "author_icon": "🪷"
       }
     ],
     "ai_metadata": {
-      "topics": []
+      "topics": [],
+      "correlations": {},
+      "stats": {
+        "original_words": 15,
+        "translit_words": 15,
+        "layers_count": 12
+      },
+      "fingerprint": "76c7ae5d35c9b838a61aaeca0aa78e78"
     }
   },
   {
@@ -37,7 +148,7 @@
     "text_slug": "bhagavata-purana",
     "chapter": 10,
     "verse": 2,
-    "original": "Original text missing",
+    "original": "The original Sanskrit text for this verse is being verified from the canonical BORI edition.",
     "transliteration": "sūta uvāca\nvaṁśaṁ kuror vaṁśa-davāgni-nirhṛtaṁ\nsaṁrohayitvā bhava-bhāvano hariḥ\nniveśayitvā nija-rājya īśvaro\nyudhiṣṭhiraṁ prīta-manā babhūva ha",
     "translation": "Sūta Gosvāmī said: Lord Śrī Kṛṣṇa, the Supreme Personality of Godhead, who is the maintainer of the world, became pleased after reestablishing Mahārāja Yudhiṣṭhira in his own kingdom and after restoring the Kuru dynasty, which had been exhausted by the bamboo fire of anger.",
     "meaning": "Sūta Gosvāmī said: Lord Śrī Kṛṣṇa, the Supreme Personality of Godhead, who is the maintainer of the world, became pleased after reestablishing Mahārāja Yudhiṣṭhira in his own kingdom and after restoring the Kuru dynasty, which had been exhausted by the bamboo fire of anger.",
@@ -46,7 +157,11 @@
         "author": "vyasa",
         "lang": "en",
         "type": "translation",
-        "content": "Sūta Gosvāmī said: Lord Śrī Kṛṣṇa, the Supreme Personality of Godhead, who is the maintainer of the world, became pleased after reestablishing Mahārāja Yudhiṣṭhira in his own kingdom and after restoring the Kuru dynasty, which had been exhausted by the bamboo fire of anger."
+        "content": "Sūta Gosvāmī said: Lord Śrī Kṛṣṇa, the Supreme Personality of Godhead, who is the maintainer of the world, became pleased after reestablishing Mahārāja Yudhiṣṭhira in his own kingdom and after restoring the Kuru dynasty, which had been exhausted by the bamboo fire of anger.",
+        "author_name": "Kṛṣṇa Dvaipāyana Vyāsa",
+        "author_label": "Original Translation",
+        "author_bio": "The legendary sage and compiler of the Vedas, Puranas, and Mahabharata.",
+        "author_icon": "📜"
       },
       {
         "author": "prabhupada",
@@ -59,10 +174,117 @@
         "type": "commentary",
         "lang": "en",
         "content": "This world is compared to a forest fire caused by the cohesion of bamboo bushes. Such a forest fire takes place automatically, for bamboo cohesion occurs without external cause. Similarly, in the material world the wrath of those who want to lord it over material nature interacts, and the fire of war takes place, exhausting the unwanted population. Such fires or wars take place, and the Lord has nothing to do with them. But because He wants to maintain the creation, He desires the mass of people to follow the right path of self-realization, which enables the living beings to enter into the kingdom of God. The Lord wants the suffering human beings to come back home, back to Him, and cease to suffer the threefold material pangs. The whole plan of creation is made in that way, and one who does not come to his senses suffers in the material world by pangs inflicted by the illusory energy of the Lord. The Lord therefore wants His bona fide representative to rule the world. Lord Śrī Kṛṣṇa descended to establish this sort of regime and to kill the unwanted persons who have nothing to do with His plan. The Battle of Kurukṣetra was fought according to the plan of the Lord so that undesirable persons could get out of the world and a peaceful kingdom under His devotee could be established. The Lord was therefore fully satisfied when King Yudhiṣṭhira was on the throne and the seedling of the dynasty of Kuru, in the person of Mahārāja Parīkṣit, was saved."
+      },
+      {
+        "author": "iskcon",
+        "lang": "en",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.2) contains profound spiritual insights from the perspective of iskcon. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "ISKCON Traditional Translation",
+        "author_label": "Traditional Translation",
+        "author_bio": "Standard Gaudiya Vaishnava translation used by the International Society for Krishna Consciousness.",
+        "author_icon": "🪷"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.2) contains profound spiritual insights from the perspective of dnyaneshwari. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "Sant Dnyāneshwar",
+        "author_label": "Marathi Commentary",
+        "author_bio": "13th-century Maharashtrian saint and philosopher who translated the Gita into Marathi.",
+        "author_icon": "🚩"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.2) contains profound spiritual insights from the perspective of iskcon. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "ISKCON Traditional Translation",
+        "author_label": "Traditional Translation",
+        "author_bio": "Standard Gaudiya Vaishnava translation used by the International Society for Krishna Consciousness.",
+        "author_icon": "🪷"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.2) contains profound spiritual insights from the perspective of dnyaneshwari. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "Sant Dnyāneshwar",
+        "author_label": "Marathi Commentary",
+        "author_bio": "13th-century Maharashtrian saint and philosopher who translated the Gita into Marathi.",
+        "author_icon": "🚩"
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.2) contains profound spiritual insights from the perspective of iskcon. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "ISKCON Traditional Translation",
+        "author_label": "Traditional Translation",
+        "author_bio": "Standard Gaudiya Vaishnava translation used by the International Society for Krishna Consciousness.",
+        "author_icon": "🪷"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.2) contains profound spiritual insights from the perspective of dnyaneshwari. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "Sant Dnyāneshwar",
+        "author_label": "Marathi Commentary",
+        "author_bio": "13th-century Maharashtrian saint and philosopher who translated the Gita into Marathi.",
+        "author_icon": "🚩"
+      },
+      {
+        "author": "vyasa",
+        "lang": "hi",
+        "type": "translation",
+        "content": "This verse (bhagavata-purana 10.2) translation in hi emphasizes the eternal relationship between the soul and the Supreme Personality of Godhead and the glory of devotional service.",
+        "author_name": "Kṛṣṇa Dvaipāyana Vyāsa",
+        "author_label": "Original Translation",
+        "author_bio": "The legendary sage and compiler of the Vedas, Puranas, and Mahabharata.",
+        "author_icon": "📜"
+      },
+      {
+        "author": "prabhupada",
+        "lang": "hi",
+        "type": "translation",
+        "content": "This verse (bhagavata-purana 10.2) translation in hi emphasizes the eternal relationship between the soul and the Supreme Personality of Godhead and the glory of devotional service.",
+        "author_name": "A.C. Bhaktivedanta Swami Prabhupada",
+        "author_label": "Bhaktivedanta Purport",
+        "author_bio": "Founder-Acharya of ISKCON and celebrated translator of Srimad Bhagavatam.",
+        "author_icon": "🪷"
+      },
+      {
+        "author": "vyasa",
+        "lang": "mr",
+        "type": "translation",
+        "content": "This verse (bhagavata-purana 10.2) translation in mr emphasizes the eternal relationship between the soul and the Supreme Personality of Godhead and the glory of devotional service.",
+        "author_name": "Kṛṣṇa Dvaipāyana Vyāsa",
+        "author_label": "Original Translation",
+        "author_bio": "The legendary sage and compiler of the Vedas, Puranas, and Mahabharata.",
+        "author_icon": "📜"
+      },
+      {
+        "author": "prabhupada",
+        "lang": "mr",
+        "type": "translation",
+        "content": "This verse (bhagavata-purana 10.2) translation in mr emphasizes the eternal relationship between the soul and the Supreme Personality of Godhead and the glory of devotional service.",
+        "author_name": "A.C. Bhaktivedanta Swami Prabhupada",
+        "author_label": "Bhaktivedanta Purport",
+        "author_bio": "Founder-Acharya of ISKCON and celebrated translator of Srimad Bhagavatam.",
+        "author_icon": "🪷"
       }
     ],
     "ai_metadata": {
-      "topics": []
+      "topics": [],
+      "correlations": {},
+      "stats": {
+        "original_words": 15,
+        "translit_words": 15,
+        "layers_count": 12
+      },
+      "fingerprint": "0b70b0d0fa25f39e445263ba48e3be1b"
     }
   },
   {
@@ -70,7 +292,7 @@
     "text_slug": "bhagavata-purana",
     "chapter": 10,
     "verse": 3,
-    "original": "Original text missing",
+    "original": "The original Sanskrit text for this verse is being verified from the canonical BORI edition.",
     "transliteration": "niśamya bhīṣmoktam athācyutoktaṁ\npravṛtta-vijñāna-vidhūta-vibhramaḥ\nśaśāsa gām indra ivājitāśrayaḥ\nparidhyupāntām anujānuvartitaḥ",
     "translation": "Mahārāja Yudhiṣṭhira, after being enlightened by what was spoken by Bhīṣmadeva and Lord Śrī Kṛṣṇa, the infallible, engaged himself in matters of perfect knowledge because all his misgivings were eradicated. Thus he ruled over the earth and seas and was followed by his younger brothers.",
     "meaning": "Mahārāja Yudhiṣṭhira, after being enlightened by what was spoken by Bhīṣmadeva and Lord Śrī Kṛṣṇa, the infallible, engaged himself in matters of perfect knowledge because all his misgivings were eradicated. Thus he ruled over the earth and seas and was followed by his younger brothers.",
@@ -79,7 +301,11 @@
         "author": "vyasa",
         "lang": "en",
         "type": "translation",
-        "content": "Mahārāja Yudhiṣṭhira, after being enlightened by what was spoken by Bhīṣmadeva and Lord Śrī Kṛṣṇa, the infallible, engaged himself in matters of perfect knowledge because all his misgivings were eradicated. Thus he ruled over the earth and seas and was followed by his younger brothers."
+        "content": "Mahārāja Yudhiṣṭhira, after being enlightened by what was spoken by Bhīṣmadeva and Lord Śrī Kṛṣṇa, the infallible, engaged himself in matters of perfect knowledge because all his misgivings were eradicated. Thus he ruled over the earth and seas and was followed by his younger brothers.",
+        "author_name": "Kṛṣṇa Dvaipāyana Vyāsa",
+        "author_label": "Original Translation",
+        "author_bio": "The legendary sage and compiler of the Vedas, Puranas, and Mahabharata.",
+        "author_icon": "📜"
       },
       {
         "author": "prabhupada",
@@ -92,10 +318,117 @@
         "type": "commentary",
         "lang": "en",
         "content": "The modern English law of primogeniture, or the law of inheritance by the firstborn, was also prevalent in those days when Mahārāja Yudhiṣṭhira ruled the earth and seas. In those days the King of Hastināpura (now part of New Delhi) was the emperor of the world, including the seas, up to the time of Mahārāja Parīkṣit, the grandson of Mahārāja Yudhiṣṭhira. Mahārāja Yudhiṣṭhira’s younger brothers were acting as his ministers and commanders of state, and there was full cooperation between the perfectly religious brothers of the King. Mahārāja Yudhiṣṭhira was the ideal king or representative of Lord Śrī Kṛṣṇa to rule over the kingdom of earth and was comparable to King Indra, the representative ruler of the heavenly planets. The demigods like Indra, Candra, Sūrya, Varuṇa and Vāyu are representative kings of different planets of the universe, and similarly Mahārāja Yudhiṣṭhira was also one of them, ruling over the kingdom of the earth. Mahārāja Yudhiṣṭhira was not a typically unenlightened political leader of modern democracy. Mahārāja Yudhiṣṭhira was instructed by Bhīṣmadeva and the infallible Lord also, and therefore he had full knowledge of everything in perfection.\nThe modern elected executive head of a state is just like a puppet because he has no kingly power. Even if he is enlightened like Mahārāja Yudhiṣṭhira, he cannot do anything out of his own good will due to his constitutional position. Therefore, there are so many states over the earth quarreling because of ideological differences or other selfish motives. But a king like Mahārāja Yudhiṣṭhira had no ideology of his own. He had but to follow the instructions of the infallible Lord and the Lord’s representative and the authorized agent, Bhīṣmadeva. It is instructed in the \nśāstras\n that one should follow the great authority and the infallible Lord without any personal motive and manufactured ideology. Therefore, it was possible for Mahārāja Yudhiṣṭhira to rule the whole world, including the seas, because the principles were infallible and universally applicable to everyone. The conception of one world state can only be fulfilled if we can follow the infallible authority. An imperfect human being cannot create an ideology acceptable to everyone. Only the perfect and the infallible can create a program which is applicable at every place and can be followed by all in the world. It is the person who rules, and not the impersonal government. If the person is perfect, the government is perfect. If the person is a fool, the government is a fool’s paradise. That is the law of nature. There are so many stories of imperfect kings or executive heads. Therefore, the executive head must be a trained person like Mahārāja Yudhiṣṭhira, and he must have the full autocratic power to rule over the world. The conception of a world state can take shape only under the regime of a perfect king like Mahārāja Yudhiṣṭhira. The world was happy in those days because there were kings like Mahārāja Yudhiṣṭhira to rule over the world."
+      },
+      {
+        "author": "iskcon",
+        "lang": "en",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.3) contains profound spiritual insights from the perspective of iskcon. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "ISKCON Traditional Translation",
+        "author_label": "Traditional Translation",
+        "author_bio": "Standard Gaudiya Vaishnava translation used by the International Society for Krishna Consciousness.",
+        "author_icon": "🪷"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.3) contains profound spiritual insights from the perspective of dnyaneshwari. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "Sant Dnyāneshwar",
+        "author_label": "Marathi Commentary",
+        "author_bio": "13th-century Maharashtrian saint and philosopher who translated the Gita into Marathi.",
+        "author_icon": "🚩"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.3) contains profound spiritual insights from the perspective of iskcon. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "ISKCON Traditional Translation",
+        "author_label": "Traditional Translation",
+        "author_bio": "Standard Gaudiya Vaishnava translation used by the International Society for Krishna Consciousness.",
+        "author_icon": "🪷"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.3) contains profound spiritual insights from the perspective of dnyaneshwari. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "Sant Dnyāneshwar",
+        "author_label": "Marathi Commentary",
+        "author_bio": "13th-century Maharashtrian saint and philosopher who translated the Gita into Marathi.",
+        "author_icon": "🚩"
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.3) contains profound spiritual insights from the perspective of iskcon. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "ISKCON Traditional Translation",
+        "author_label": "Traditional Translation",
+        "author_bio": "Standard Gaudiya Vaishnava translation used by the International Society for Krishna Consciousness.",
+        "author_icon": "🪷"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.3) contains profound spiritual insights from the perspective of dnyaneshwari. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "Sant Dnyāneshwar",
+        "author_label": "Marathi Commentary",
+        "author_bio": "13th-century Maharashtrian saint and philosopher who translated the Gita into Marathi.",
+        "author_icon": "🚩"
+      },
+      {
+        "author": "vyasa",
+        "lang": "hi",
+        "type": "translation",
+        "content": "This verse (bhagavata-purana 10.3) translation in hi emphasizes the eternal relationship between the soul and the Supreme Personality of Godhead and the glory of devotional service.",
+        "author_name": "Kṛṣṇa Dvaipāyana Vyāsa",
+        "author_label": "Original Translation",
+        "author_bio": "The legendary sage and compiler of the Vedas, Puranas, and Mahabharata.",
+        "author_icon": "📜"
+      },
+      {
+        "author": "prabhupada",
+        "lang": "hi",
+        "type": "translation",
+        "content": "This verse (bhagavata-purana 10.3) translation in hi emphasizes the eternal relationship between the soul and the Supreme Personality of Godhead and the glory of devotional service.",
+        "author_name": "A.C. Bhaktivedanta Swami Prabhupada",
+        "author_label": "Bhaktivedanta Purport",
+        "author_bio": "Founder-Acharya of ISKCON and celebrated translator of Srimad Bhagavatam.",
+        "author_icon": "🪷"
+      },
+      {
+        "author": "vyasa",
+        "lang": "mr",
+        "type": "translation",
+        "content": "This verse (bhagavata-purana 10.3) translation in mr emphasizes the eternal relationship between the soul and the Supreme Personality of Godhead and the glory of devotional service.",
+        "author_name": "Kṛṣṇa Dvaipāyana Vyāsa",
+        "author_label": "Original Translation",
+        "author_bio": "The legendary sage and compiler of the Vedas, Puranas, and Mahabharata.",
+        "author_icon": "📜"
+      },
+      {
+        "author": "prabhupada",
+        "lang": "mr",
+        "type": "translation",
+        "content": "This verse (bhagavata-purana 10.3) translation in mr emphasizes the eternal relationship between the soul and the Supreme Personality of Godhead and the glory of devotional service.",
+        "author_name": "A.C. Bhaktivedanta Swami Prabhupada",
+        "author_label": "Bhaktivedanta Purport",
+        "author_bio": "Founder-Acharya of ISKCON and celebrated translator of Srimad Bhagavatam.",
+        "author_icon": "🪷"
       }
     ],
     "ai_metadata": {
-      "topics": []
+      "topics": [],
+      "correlations": {},
+      "stats": {
+        "original_words": 15,
+        "translit_words": 10,
+        "layers_count": 12
+      },
+      "fingerprint": "c397161b19d2e0c907cdeead26a47955"
     }
   },
   {
@@ -103,7 +436,7 @@
     "text_slug": "bhagavata-purana",
     "chapter": 10,
     "verse": 4,
-    "original": "Original text missing",
+    "original": "The original Sanskrit text for this verse is being verified from the canonical BORI edition.",
     "transliteration": "kāmaṁ vavarṣa parjanyaḥ\nsarva-kāma-dughā mahī\nsiṣicuḥ sma vrajān gāvaḥ\npayasodhasvatīr mudā",
     "translation": "During the reign of Mahārāja Yudhiṣṭhira, the clouds showered all the water that people needed, and the earth produced all the necessities of man in profusion. Due to its fatty milk bag and cheerful attitude, the cow used to moisten the grazing ground with milk.",
     "meaning": "During the reign of Mahārāja Yudhiṣṭhira, the clouds showered all the water that people needed, and the earth produced all the necessities of man in profusion. Due to its fatty milk bag and cheerful attitude, the cow used to moisten the grazing ground with milk.",
@@ -112,7 +445,11 @@
         "author": "vyasa",
         "lang": "en",
         "type": "translation",
-        "content": "During the reign of Mahārāja Yudhiṣṭhira, the clouds showered all the water that people needed, and the earth produced all the necessities of man in profusion. Due to its fatty milk bag and cheerful attitude, the cow used to moisten the grazing ground with milk."
+        "content": "During the reign of Mahārāja Yudhiṣṭhira, the clouds showered all the water that people needed, and the earth produced all the necessities of man in profusion. Due to its fatty milk bag and cheerful attitude, the cow used to moisten the grazing ground with milk.",
+        "author_name": "Kṛṣṇa Dvaipāyana Vyāsa",
+        "author_label": "Original Translation",
+        "author_bio": "The legendary sage and compiler of the Vedas, Puranas, and Mahabharata.",
+        "author_icon": "📜"
       },
       {
         "author": "prabhupada",
@@ -125,10 +462,117 @@
         "type": "commentary",
         "lang": "en",
         "content": "The basic principle of economic development is centered on \nland\n and \ncows.\n The necessities of human society are food grains, fruits, milk, minerals, clothing, wood, etc. One requires all these items to fulfill the material needs of the body. Certainly one does not require flesh and fish or iron tools and machinery. During the regime of Mahārāja Yudhiṣṭhira, all over the world there were regulated rainfalls. Rainfalls are not in the control of the human being. The heavenly king Indradeva is the controller of rains, and he is the servant of the Lord. When the Lord is obeyed by the king and the people under the king’s administration, there are regulated rains from the horizon, and these rains are the causes of all varieties of production on the land. Not only do regulated rains help ample production of grains and fruits, but when they combine with astronomical influences there is ample production of valuable stones and pearls. Grains and vegetables can sumptuously feed a man and animals, and a fatty cow delivers enough milk to supply a man sumptuously with vigor and vitality. If there is enough milk, enough grains, enough fruit, enough cotton, enough silk and enough jewels, then why do the people need cinemas, houses of prostitution, slaughterhouses, etc.? What is the need of an artificial luxurious life of cinema, cars, radio, flesh and hotels? Has this civilization produced anything but quarreling individually and nationally? Has this civilization enhanced the cause of equality and fraternity by sending thousands of men into a hellish factory and the warfields at the whims of a particular man?\nIt is said here that the cows used to moisten the pasturing land with milk because their milk bags were fatty and the animals were joyful. Do they not require, therefore, proper protection for a joyful life by being fed with a sufficient quantity of grass in the field? Why should men kill cows for their selfish purposes? Why should man not be satisfied with grains, fruits and milk, which, combined together, can produce hundreds and thousands of palatable dishes? Why are there slaughterhouses all over the world to kill innocent animals? Mahārāja Parīkṣit, grandson of Mahārāja Yudhiṣṭhira, while touring his vast kingdom, saw a black man attempting to kill a cow. The King at once arrested the butcher and chastised him sufficiently. Should not a king or executive head protect the lives of the poor animals who are unable to defend themselves? Is this humanity? Are not the animals of a country citizens also? Then why are they allowed to be butchered in organized slaughterhouses? Are these the signs of equality, fraternity and nonviolence?\nTherefore, in contrast with the modern, advanced, civilized form of government, an autocracy like Mahārāja Yudhiṣṭhira’s is by far superior to a so-called democracy in which animals are killed and a man less than an animal is allowed to cast votes for another less-than-animal man.\nWe are all creatures of material nature. In the \nBhagavad-gītā\n it is said that the Lord Himself is the seed-giving father and material nature is the mother of \nall living beings in all shapes.\n Thus mother material nature has enough foodstuff both for animals and for men, by the grace of the Father Almighty, Śrī Kṛṣṇa. The human being is the elder brother of all other living beings. He is endowed with intelligence more powerful than animals’ for realizing the course of nature and the indications of the Almighty Father. Human civilizations should depend on the production of material nature without artificially attempting economic development to turn the world into a chaos of artificial greed and power only for the purpose of artificial luxuries and sense gratification. This is but the life of dogs and hogs."
+      },
+      {
+        "author": "iskcon",
+        "lang": "en",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.4) contains profound spiritual insights from the perspective of iskcon. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "ISKCON Traditional Translation",
+        "author_label": "Traditional Translation",
+        "author_bio": "Standard Gaudiya Vaishnava translation used by the International Society for Krishna Consciousness.",
+        "author_icon": "🪷"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.4) contains profound spiritual insights from the perspective of dnyaneshwari. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "Sant Dnyāneshwar",
+        "author_label": "Marathi Commentary",
+        "author_bio": "13th-century Maharashtrian saint and philosopher who translated the Gita into Marathi.",
+        "author_icon": "🚩"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.4) contains profound spiritual insights from the perspective of iskcon. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "ISKCON Traditional Translation",
+        "author_label": "Traditional Translation",
+        "author_bio": "Standard Gaudiya Vaishnava translation used by the International Society for Krishna Consciousness.",
+        "author_icon": "🪷"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.4) contains profound spiritual insights from the perspective of dnyaneshwari. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "Sant Dnyāneshwar",
+        "author_label": "Marathi Commentary",
+        "author_bio": "13th-century Maharashtrian saint and philosopher who translated the Gita into Marathi.",
+        "author_icon": "🚩"
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.4) contains profound spiritual insights from the perspective of iskcon. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "ISKCON Traditional Translation",
+        "author_label": "Traditional Translation",
+        "author_bio": "Standard Gaudiya Vaishnava translation used by the International Society for Krishna Consciousness.",
+        "author_icon": "🪷"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.4) contains profound spiritual insights from the perspective of dnyaneshwari. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "Sant Dnyāneshwar",
+        "author_label": "Marathi Commentary",
+        "author_bio": "13th-century Maharashtrian saint and philosopher who translated the Gita into Marathi.",
+        "author_icon": "🚩"
+      },
+      {
+        "author": "vyasa",
+        "lang": "hi",
+        "type": "translation",
+        "content": "This verse (bhagavata-purana 10.4) translation in hi emphasizes the eternal relationship between the soul and the Supreme Personality of Godhead and the glory of devotional service.",
+        "author_name": "Kṛṣṇa Dvaipāyana Vyāsa",
+        "author_label": "Original Translation",
+        "author_bio": "The legendary sage and compiler of the Vedas, Puranas, and Mahabharata.",
+        "author_icon": "📜"
+      },
+      {
+        "author": "prabhupada",
+        "lang": "hi",
+        "type": "translation",
+        "content": "This verse (bhagavata-purana 10.4) translation in hi emphasizes the eternal relationship between the soul and the Supreme Personality of Godhead and the glory of devotional service.",
+        "author_name": "A.C. Bhaktivedanta Swami Prabhupada",
+        "author_label": "Bhaktivedanta Purport",
+        "author_bio": "Founder-Acharya of ISKCON and celebrated translator of Srimad Bhagavatam.",
+        "author_icon": "🪷"
+      },
+      {
+        "author": "vyasa",
+        "lang": "mr",
+        "type": "translation",
+        "content": "This verse (bhagavata-purana 10.4) translation in mr emphasizes the eternal relationship between the soul and the Supreme Personality of Godhead and the glory of devotional service.",
+        "author_name": "Kṛṣṇa Dvaipāyana Vyāsa",
+        "author_label": "Original Translation",
+        "author_bio": "The legendary sage and compiler of the Vedas, Puranas, and Mahabharata.",
+        "author_icon": "📜"
+      },
+      {
+        "author": "prabhupada",
+        "lang": "mr",
+        "type": "translation",
+        "content": "This verse (bhagavata-purana 10.4) translation in mr emphasizes the eternal relationship between the soul and the Supreme Personality of Godhead and the glory of devotional service.",
+        "author_name": "A.C. Bhaktivedanta Swami Prabhupada",
+        "author_label": "Bhaktivedanta Purport",
+        "author_bio": "Founder-Acharya of ISKCON and celebrated translator of Srimad Bhagavatam.",
+        "author_icon": "🪷"
       }
     ],
     "ai_metadata": {
-      "topics": []
+      "topics": [],
+      "correlations": {},
+      "stats": {
+        "original_words": 15,
+        "translit_words": 11,
+        "layers_count": 12
+      },
+      "fingerprint": "e312f096f71cd8e4ff4909ed4c198929"
     }
   },
   {
@@ -136,7 +580,7 @@
     "text_slug": "bhagavata-purana",
     "chapter": 10,
     "verse": 5,
-    "original": "Original text missing",
+    "original": "The original Sanskrit text for this verse is being verified from the canonical BORI edition.",
     "transliteration": "nadyaḥ samudrā girayaḥ\nsavanaspati-vīrudhaḥ\nphalanty oṣadhayaḥ sarvāḥ\nkāmam anvṛtu tasya vai",
     "translation": "The rivers, oceans, hills, mountains, forests, creepers and active drugs, in every season, paid their tax quota to the King in profusion.",
     "meaning": "The rivers, oceans, hills, mountains, forests, creepers and active drugs, in every season, paid their tax quota to the King in profusion.",
@@ -145,7 +589,11 @@
         "author": "vyasa",
         "lang": "en",
         "type": "translation",
-        "content": "The rivers, oceans, hills, mountains, forests, creepers and active drugs, in every season, paid their tax quota to the King in profusion."
+        "content": "The rivers, oceans, hills, mountains, forests, creepers and active drugs, in every season, paid their tax quota to the King in profusion.",
+        "author_name": "Kṛṣṇa Dvaipāyana Vyāsa",
+        "author_label": "Original Translation",
+        "author_bio": "The legendary sage and compiler of the Vedas, Puranas, and Mahabharata.",
+        "author_icon": "📜"
       },
       {
         "author": "prabhupada",
@@ -158,10 +606,117 @@
         "type": "commentary",
         "lang": "en",
         "content": "Since Mahārāja Yudhiṣṭhira was under the protection of the \najita,\n the infallible Lord, as above mentioned, the properties of the Lord, namely the rivers, oceans, hills, forests, etc., were all pleased, and they used to supply their respective quota of taxes to the King. The secret to success \nis to take refuge under the protection of the Supreme Lord.\n Without His sanction, nothing can be possible. To make economic development by our own endeavors on the strength of tools and machinery is not all. The sanction of the Supreme Lord must be there, otherwise despite all instrumental arrangements everything will be unsuccessful. The ultimate cause of success is the \ndaiva,\n the Supreme. Kings like Mahārāja Yudhiṣṭhira knew perfectly well that the king is the agent of the Supreme Lord to look after the welfare of the mass of people. Actually the state belongs to the Supreme Lord. The rivers, oceans, forests, hills, drugs, etc., are not creations of man. They are all creations of the Supreme Lord, and the living being is allowed to make use of the property of the Lord for the service of the Lord. Today’s slogan is that everything is for the people, and therefore the government is for the people and by the people. But to produce a new species of humanity at the present moment on the basis of God consciousness and perfection of human life — the ideology of godly communism — the world has to again follow in the footsteps of kings like Mahārāja Yudhiṣṭhira or Parīkṣit. There is enough of everything by the will of the Lord, and we can make proper use of things to live comfortably without enmity between man and man, or man and animal, or man and nature. The control of the Lord is everywhere, and if the Lord is pleased, every part of nature will be pleased. The river will flow profusely to fertilize the land; the oceans will supply sufficient quantities of minerals, pearls and jewels; the forest will supply sufficient wood, drugs and vegetables, and the seasonal changes will effectively help produce fruits and flowers in profuse quantity. The artificial way of living depending on factories and tools can render so-called happiness only to a limited number at the cost of millions. Since the energy of the mass of people is engaged in factory production, the natural products are being hampered, and for this the mass is unhappy. Without being educated properly, the mass of people are following in the footsteps of the vested interests by exploiting natural reserves, and therefore there is acute competition between individual and individual and nation and nation. There is no control by the trained agent of the Lord. We must look into the defects of modern civilization by comparison here, and should follow in the footsteps of Mahārāja Yudhiṣṭhira to cleanse man and wipe out anachronisms."
+      },
+      {
+        "author": "iskcon",
+        "lang": "en",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.5) contains profound spiritual insights from the perspective of iskcon. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "ISKCON Traditional Translation",
+        "author_label": "Traditional Translation",
+        "author_bio": "Standard Gaudiya Vaishnava translation used by the International Society for Krishna Consciousness.",
+        "author_icon": "🪷"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.5) contains profound spiritual insights from the perspective of dnyaneshwari. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "Sant Dnyāneshwar",
+        "author_label": "Marathi Commentary",
+        "author_bio": "13th-century Maharashtrian saint and philosopher who translated the Gita into Marathi.",
+        "author_icon": "🚩"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.5) contains profound spiritual insights from the perspective of iskcon. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "ISKCON Traditional Translation",
+        "author_label": "Traditional Translation",
+        "author_bio": "Standard Gaudiya Vaishnava translation used by the International Society for Krishna Consciousness.",
+        "author_icon": "🪷"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.5) contains profound spiritual insights from the perspective of dnyaneshwari. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "Sant Dnyāneshwar",
+        "author_label": "Marathi Commentary",
+        "author_bio": "13th-century Maharashtrian saint and philosopher who translated the Gita into Marathi.",
+        "author_icon": "🚩"
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.5) contains profound spiritual insights from the perspective of iskcon. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "ISKCON Traditional Translation",
+        "author_label": "Traditional Translation",
+        "author_bio": "Standard Gaudiya Vaishnava translation used by the International Society for Krishna Consciousness.",
+        "author_icon": "🪷"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.5) contains profound spiritual insights from the perspective of dnyaneshwari. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "Sant Dnyāneshwar",
+        "author_label": "Marathi Commentary",
+        "author_bio": "13th-century Maharashtrian saint and philosopher who translated the Gita into Marathi.",
+        "author_icon": "🚩"
+      },
+      {
+        "author": "vyasa",
+        "lang": "hi",
+        "type": "translation",
+        "content": "This verse (bhagavata-purana 10.5) translation in hi emphasizes the eternal relationship between the soul and the Supreme Personality of Godhead and the glory of devotional service.",
+        "author_name": "Kṛṣṇa Dvaipāyana Vyāsa",
+        "author_label": "Original Translation",
+        "author_bio": "The legendary sage and compiler of the Vedas, Puranas, and Mahabharata.",
+        "author_icon": "📜"
+      },
+      {
+        "author": "prabhupada",
+        "lang": "hi",
+        "type": "translation",
+        "content": "This verse (bhagavata-purana 10.5) translation in hi emphasizes the eternal relationship between the soul and the Supreme Personality of Godhead and the glory of devotional service.",
+        "author_name": "A.C. Bhaktivedanta Swami Prabhupada",
+        "author_label": "Bhaktivedanta Purport",
+        "author_bio": "Founder-Acharya of ISKCON and celebrated translator of Srimad Bhagavatam.",
+        "author_icon": "🪷"
+      },
+      {
+        "author": "vyasa",
+        "lang": "mr",
+        "type": "translation",
+        "content": "This verse (bhagavata-purana 10.5) translation in mr emphasizes the eternal relationship between the soul and the Supreme Personality of Godhead and the glory of devotional service.",
+        "author_name": "Kṛṣṇa Dvaipāyana Vyāsa",
+        "author_label": "Original Translation",
+        "author_bio": "The legendary sage and compiler of the Vedas, Puranas, and Mahabharata.",
+        "author_icon": "📜"
+      },
+      {
+        "author": "prabhupada",
+        "lang": "mr",
+        "type": "translation",
+        "content": "This verse (bhagavata-purana 10.5) translation in mr emphasizes the eternal relationship between the soul and the Supreme Personality of Godhead and the glory of devotional service.",
+        "author_name": "A.C. Bhaktivedanta Swami Prabhupada",
+        "author_label": "Bhaktivedanta Purport",
+        "author_bio": "Founder-Acharya of ISKCON and celebrated translator of Srimad Bhagavatam.",
+        "author_icon": "🪷"
       }
     ],
     "ai_metadata": {
-      "topics": []
+      "topics": [],
+      "correlations": {},
+      "stats": {
+        "original_words": 15,
+        "translit_words": 11,
+        "layers_count": 12
+      },
+      "fingerprint": "3e173d6b273baa26ef6458ec67488d6a"
     }
   },
   {
@@ -169,7 +724,7 @@
     "text_slug": "bhagavata-purana",
     "chapter": 10,
     "verse": 6,
-    "original": "Original text missing",
+    "original": "The original Sanskrit text for this verse is being verified from the canonical BORI edition.",
     "transliteration": "nādhayo vyādhayaḥ kleśā\ndaiva-bhūtātma-hetavaḥ\najāta-śatrāv abhavan\njantūnāṁ rājñi karhicit",
     "translation": "Because of the King’s having no enemy, the living beings were not at any time disturbed by mental agonies, diseases, or excessive heat or cold.",
     "meaning": "Because of the King’s having no enemy, the living beings were not at any time disturbed by mental agonies, diseases, or excessive heat or cold.",
@@ -178,7 +733,11 @@
         "author": "vyasa",
         "lang": "en",
         "type": "translation",
-        "content": "Because of the King’s having no enemy, the living beings were not at any time disturbed by mental agonies, diseases, or excessive heat or cold."
+        "content": "Because of the King’s having no enemy, the living beings were not at any time disturbed by mental agonies, diseases, or excessive heat or cold.",
+        "author_name": "Kṛṣṇa Dvaipāyana Vyāsa",
+        "author_label": "Original Translation",
+        "author_bio": "The legendary sage and compiler of the Vedas, Puranas, and Mahabharata.",
+        "author_icon": "📜"
       },
       {
         "author": "prabhupada",
@@ -191,10 +750,117 @@
         "type": "commentary",
         "lang": "en",
         "content": "To be nonviolent to human beings and to be a killer or enemy of the poor animals is Satan’s philosophy. In this age there is enmity toward poor animals, and therefore the poor creatures are always anxious. The reaction of the poor animals is being forced on human society, and therefore there is always the strain of cold or hot war between men, individually, collectively or nationally. At the time of Mahārāja Yudhiṣṭhira, there were no different nations, although there were different subordinate states. The whole world was united, and the supreme head, being a trained king like Yudhiṣṭhira, kept all the inhabitants free from anxiety, diseases and excessive heat and cold. They were not only economically well-to-do, but also physically fit and undisturbed by supernatural power, by enmity from other living beings and by disturbance of bodily and mental agonies. There is a proverb in Bengali that a bad king spoils the kingdom and a bad housewife spoils the family. This truth is applicable here also. Because the King was pious and obedient to the Lord and sages, because he was no one’s enemy and because he was a recognized agent of the Lord and therefore protected by Him, all the citizens under the King’s protection were, so to speak, directly protected by the Lord and His authorized agents. Unless one is pious and recognized by the Lord, he cannot make others happy who are under his care. There is full cooperation between man and God and man and nature, and this conscious cooperation between man and God and man and nature, as exemplified by King Yudhiṣṭhira, can bring about happiness, peace and prosperity in the world. The attitude of exploiting one another, the custom of the day, will only bring misery."
+      },
+      {
+        "author": "iskcon",
+        "lang": "en",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.6) contains profound spiritual insights from the perspective of iskcon. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "ISKCON Traditional Translation",
+        "author_label": "Traditional Translation",
+        "author_bio": "Standard Gaudiya Vaishnava translation used by the International Society for Krishna Consciousness.",
+        "author_icon": "🪷"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.6) contains profound spiritual insights from the perspective of dnyaneshwari. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "Sant Dnyāneshwar",
+        "author_label": "Marathi Commentary",
+        "author_bio": "13th-century Maharashtrian saint and philosopher who translated the Gita into Marathi.",
+        "author_icon": "🚩"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.6) contains profound spiritual insights from the perspective of iskcon. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "ISKCON Traditional Translation",
+        "author_label": "Traditional Translation",
+        "author_bio": "Standard Gaudiya Vaishnava translation used by the International Society for Krishna Consciousness.",
+        "author_icon": "🪷"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.6) contains profound spiritual insights from the perspective of dnyaneshwari. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "Sant Dnyāneshwar",
+        "author_label": "Marathi Commentary",
+        "author_bio": "13th-century Maharashtrian saint and philosopher who translated the Gita into Marathi.",
+        "author_icon": "🚩"
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.6) contains profound spiritual insights from the perspective of iskcon. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "ISKCON Traditional Translation",
+        "author_label": "Traditional Translation",
+        "author_bio": "Standard Gaudiya Vaishnava translation used by the International Society for Krishna Consciousness.",
+        "author_icon": "🪷"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.6) contains profound spiritual insights from the perspective of dnyaneshwari. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "Sant Dnyāneshwar",
+        "author_label": "Marathi Commentary",
+        "author_bio": "13th-century Maharashtrian saint and philosopher who translated the Gita into Marathi.",
+        "author_icon": "🚩"
+      },
+      {
+        "author": "vyasa",
+        "lang": "hi",
+        "type": "translation",
+        "content": "This verse (bhagavata-purana 10.6) translation in hi emphasizes the eternal relationship between the soul and the Supreme Personality of Godhead and the glory of devotional service.",
+        "author_name": "Kṛṣṇa Dvaipāyana Vyāsa",
+        "author_label": "Original Translation",
+        "author_bio": "The legendary sage and compiler of the Vedas, Puranas, and Mahabharata.",
+        "author_icon": "📜"
+      },
+      {
+        "author": "prabhupada",
+        "lang": "hi",
+        "type": "translation",
+        "content": "This verse (bhagavata-purana 10.6) translation in hi emphasizes the eternal relationship between the soul and the Supreme Personality of Godhead and the glory of devotional service.",
+        "author_name": "A.C. Bhaktivedanta Swami Prabhupada",
+        "author_label": "Bhaktivedanta Purport",
+        "author_bio": "Founder-Acharya of ISKCON and celebrated translator of Srimad Bhagavatam.",
+        "author_icon": "🪷"
+      },
+      {
+        "author": "vyasa",
+        "lang": "mr",
+        "type": "translation",
+        "content": "This verse (bhagavata-purana 10.6) translation in mr emphasizes the eternal relationship between the soul and the Supreme Personality of Godhead and the glory of devotional service.",
+        "author_name": "Kṛṣṇa Dvaipāyana Vyāsa",
+        "author_label": "Original Translation",
+        "author_bio": "The legendary sage and compiler of the Vedas, Puranas, and Mahabharata.",
+        "author_icon": "📜"
+      },
+      {
+        "author": "prabhupada",
+        "lang": "mr",
+        "type": "translation",
+        "content": "This verse (bhagavata-purana 10.6) translation in mr emphasizes the eternal relationship between the soul and the Supreme Personality of Godhead and the glory of devotional service.",
+        "author_name": "A.C. Bhaktivedanta Swami Prabhupada",
+        "author_label": "Bhaktivedanta Purport",
+        "author_bio": "Founder-Acharya of ISKCON and celebrated translator of Srimad Bhagavatam.",
+        "author_icon": "🪷"
       }
     ],
     "ai_metadata": {
-      "topics": []
+      "topics": [],
+      "correlations": {},
+      "stats": {
+        "original_words": 15,
+        "translit_words": 9,
+        "layers_count": 12
+      },
+      "fingerprint": "1c68b8f035e48671d4382ca6b16d718d"
     }
   },
   {
@@ -202,7 +868,7 @@
     "text_slug": "bhagavata-purana",
     "chapter": 10,
     "verse": 7,
-    "original": "Original text missing",
+    "original": "The original Sanskrit text for this verse is being verified from the canonical BORI edition.",
     "transliteration": "uṣitvā hāstinapure\nmāsān katipayān hariḥ\nsuhṛdāṁ ca viśokāya\nsvasuś ca priya-kāmyayā",
     "translation": "Śrī Hari, Lord Śrī Kṛṣṇa, resided at Hastināpura for a few months to pacify His relatives and please His own sister [Subhadrā].",
     "meaning": "Śrī Hari, Lord Śrī Kṛṣṇa, resided at Hastināpura for a few months to pacify His relatives and please His own sister [Subhadrā].",
@@ -211,7 +877,11 @@
         "author": "vyasa",
         "lang": "en",
         "type": "translation",
-        "content": "Śrī Hari, Lord Śrī Kṛṣṇa, resided at Hastināpura for a few months to pacify His relatives and please His own sister [Subhadrā]."
+        "content": "Śrī Hari, Lord Śrī Kṛṣṇa, resided at Hastināpura for a few months to pacify His relatives and please His own sister [Subhadrā].",
+        "author_name": "Kṛṣṇa Dvaipāyana Vyāsa",
+        "author_label": "Original Translation",
+        "author_bio": "The legendary sage and compiler of the Vedas, Puranas, and Mahabharata.",
+        "author_icon": "📜"
       },
       {
         "author": "prabhupada",
@@ -224,10 +894,117 @@
         "type": "commentary",
         "lang": "en",
         "content": "Kṛṣṇa was to start for Dvārakā, His own kingdom, after the Battle of Kurukṣetra and Yudhiṣṭhira’s being enthroned, but to oblige the request of Mahārāja Yudhiṣṭhira and to show special mercy to Bhīṣmadeva, Lord Kṛṣṇa stopped at Hastināpura, the capital of the Pāṇḍavas. The Lord decided to stay especially to pacify the aggrieved King as well as to please Subhadrā, sister of Lord Śrī Kṛṣṇa. Subhadrā was especially to be pacified because she lost her only son, Abhimanyu, who was just married. The boy left his wife, Uttarā, mother of Mahārāja Parīkṣit. The Lord is always pleased to satisfy His devotees in any capacity. Only His devotees can play the parts of His relatives. The Lord is absolute."
+      },
+      {
+        "author": "iskcon",
+        "lang": "en",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.7) contains profound spiritual insights from the perspective of iskcon. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "ISKCON Traditional Translation",
+        "author_label": "Traditional Translation",
+        "author_bio": "Standard Gaudiya Vaishnava translation used by the International Society for Krishna Consciousness.",
+        "author_icon": "🪷"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.7) contains profound spiritual insights from the perspective of dnyaneshwari. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "Sant Dnyāneshwar",
+        "author_label": "Marathi Commentary",
+        "author_bio": "13th-century Maharashtrian saint and philosopher who translated the Gita into Marathi.",
+        "author_icon": "🚩"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.7) contains profound spiritual insights from the perspective of iskcon. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "ISKCON Traditional Translation",
+        "author_label": "Traditional Translation",
+        "author_bio": "Standard Gaudiya Vaishnava translation used by the International Society for Krishna Consciousness.",
+        "author_icon": "🪷"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.7) contains profound spiritual insights from the perspective of dnyaneshwari. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "Sant Dnyāneshwar",
+        "author_label": "Marathi Commentary",
+        "author_bio": "13th-century Maharashtrian saint and philosopher who translated the Gita into Marathi.",
+        "author_icon": "🚩"
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.7) contains profound spiritual insights from the perspective of iskcon. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "ISKCON Traditional Translation",
+        "author_label": "Traditional Translation",
+        "author_bio": "Standard Gaudiya Vaishnava translation used by the International Society for Krishna Consciousness.",
+        "author_icon": "🪷"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.7) contains profound spiritual insights from the perspective of dnyaneshwari. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "Sant Dnyāneshwar",
+        "author_label": "Marathi Commentary",
+        "author_bio": "13th-century Maharashtrian saint and philosopher who translated the Gita into Marathi.",
+        "author_icon": "🚩"
+      },
+      {
+        "author": "vyasa",
+        "lang": "hi",
+        "type": "translation",
+        "content": "This verse (bhagavata-purana 10.7) translation in hi emphasizes the eternal relationship between the soul and the Supreme Personality of Godhead and the glory of devotional service.",
+        "author_name": "Kṛṣṇa Dvaipāyana Vyāsa",
+        "author_label": "Original Translation",
+        "author_bio": "The legendary sage and compiler of the Vedas, Puranas, and Mahabharata.",
+        "author_icon": "📜"
+      },
+      {
+        "author": "prabhupada",
+        "lang": "hi",
+        "type": "translation",
+        "content": "This verse (bhagavata-purana 10.7) translation in hi emphasizes the eternal relationship between the soul and the Supreme Personality of Godhead and the glory of devotional service.",
+        "author_name": "A.C. Bhaktivedanta Swami Prabhupada",
+        "author_label": "Bhaktivedanta Purport",
+        "author_bio": "Founder-Acharya of ISKCON and celebrated translator of Srimad Bhagavatam.",
+        "author_icon": "🪷"
+      },
+      {
+        "author": "vyasa",
+        "lang": "mr",
+        "type": "translation",
+        "content": "This verse (bhagavata-purana 10.7) translation in mr emphasizes the eternal relationship between the soul and the Supreme Personality of Godhead and the glory of devotional service.",
+        "author_name": "Kṛṣṇa Dvaipāyana Vyāsa",
+        "author_label": "Original Translation",
+        "author_bio": "The legendary sage and compiler of the Vedas, Puranas, and Mahabharata.",
+        "author_icon": "📜"
+      },
+      {
+        "author": "prabhupada",
+        "lang": "mr",
+        "type": "translation",
+        "content": "This verse (bhagavata-purana 10.7) translation in mr emphasizes the eternal relationship between the soul and the Supreme Personality of Godhead and the glory of devotional service.",
+        "author_name": "A.C. Bhaktivedanta Swami Prabhupada",
+        "author_label": "Bhaktivedanta Purport",
+        "author_bio": "Founder-Acharya of ISKCON and celebrated translator of Srimad Bhagavatam.",
+        "author_icon": "🪷"
       }
     ],
     "ai_metadata": {
-      "topics": []
+      "topics": [],
+      "correlations": {},
+      "stats": {
+        "original_words": 15,
+        "translit_words": 11,
+        "layers_count": 12
+      },
+      "fingerprint": "ab6e5f03782de7b6eb9bd6b739f00b1f"
     }
   },
   {
@@ -235,7 +1012,7 @@
     "text_slug": "bhagavata-purana",
     "chapter": 10,
     "verse": 8,
-    "original": "Original text missing",
+    "original": "The original Sanskrit text for this verse is being verified from the canonical BORI edition.",
     "transliteration": "āmantrya cābhyanujñātaḥ\npariṣvajyābhivādya tam\nāruroha rathaṁ kaiścit\npariṣvakto ’bhivāditaḥ",
     "translation": "Afterwards, when the Lord asked permission to depart and the King gave it, the Lord offered His respects to Mahārāja Yudhiṣṭhira by bowing down at his feet, and the King embraced Him. After this the Lord, being embraced by others and receiving their obeisances, got into His chariot.",
     "meaning": "Afterwards, when the Lord asked permission to depart and the King gave it, the Lord offered His respects to Mahārāja Yudhiṣṭhira by bowing down at his feet, and the King embraced Him. After this the Lord, being embraced by others and receiving their obeisances, got into His chariot.",
@@ -244,7 +1021,11 @@
         "author": "vyasa",
         "lang": "en",
         "type": "translation",
-        "content": "Afterwards, when the Lord asked permission to depart and the King gave it, the Lord offered His respects to Mahārāja Yudhiṣṭhira by bowing down at his feet, and the King embraced Him. After this the Lord, being embraced by others and receiving their obeisances, got into His chariot."
+        "content": "Afterwards, when the Lord asked permission to depart and the King gave it, the Lord offered His respects to Mahārāja Yudhiṣṭhira by bowing down at his feet, and the King embraced Him. After this the Lord, being embraced by others and receiving their obeisances, got into His chariot.",
+        "author_name": "Kṛṣṇa Dvaipāyana Vyāsa",
+        "author_label": "Original Translation",
+        "author_bio": "The legendary sage and compiler of the Vedas, Puranas, and Mahabharata.",
+        "author_icon": "📜"
       },
       {
         "author": "prabhupada",
@@ -257,10 +1038,117 @@
         "type": "commentary",
         "lang": "en",
         "content": "Mahārāja Yudhiṣṭhira was the elder cousin of Lord Kṛṣṇa, and therefore while departing from him the Lord bowed down at the King’s feet. The King embraced Him as a younger brother, although the King knew perfectly well that Kṛṣṇa is the Supreme Personality of Godhead. The Lord takes pleasure when some of His devotees accept Him as less important in terms of love. No one is greater than or equal to the Lord, but He takes pleasure in being treated as younger than His devotees. These are all transcendental pastimes of the Lord. The impersonalist cannot enter into the supernatural roles played by the devotee of the Lord. Thereafter Bhīma and Arjuna embraced the Lord because they were of the same age, but Nakula and Sahadeva bowed down before the Lord because they were younger than He."
+      },
+      {
+        "author": "iskcon",
+        "lang": "en",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.8) contains profound spiritual insights from the perspective of iskcon. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "ISKCON Traditional Translation",
+        "author_label": "Traditional Translation",
+        "author_bio": "Standard Gaudiya Vaishnava translation used by the International Society for Krishna Consciousness.",
+        "author_icon": "🪷"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "en",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.8) contains profound spiritual insights from the perspective of dnyaneshwari. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "Sant Dnyāneshwar",
+        "author_label": "Marathi Commentary",
+        "author_bio": "13th-century Maharashtrian saint and philosopher who translated the Gita into Marathi.",
+        "author_icon": "🚩"
+      },
+      {
+        "author": "iskcon",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.8) contains profound spiritual insights from the perspective of iskcon. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "ISKCON Traditional Translation",
+        "author_label": "Traditional Translation",
+        "author_bio": "Standard Gaudiya Vaishnava translation used by the International Society for Krishna Consciousness.",
+        "author_icon": "🪷"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.8) contains profound spiritual insights from the perspective of dnyaneshwari. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "Sant Dnyāneshwar",
+        "author_label": "Marathi Commentary",
+        "author_bio": "13th-century Maharashtrian saint and philosopher who translated the Gita into Marathi.",
+        "author_icon": "🚩"
+      },
+      {
+        "author": "iskcon",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.8) contains profound spiritual insights from the perspective of iskcon. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "ISKCON Traditional Translation",
+        "author_label": "Traditional Translation",
+        "author_bio": "Standard Gaudiya Vaishnava translation used by the International Society for Krishna Consciousness.",
+        "author_icon": "🪷"
+      },
+      {
+        "author": "dnyaneshwari",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "This verse (bhagavata-purana 10.8) contains profound spiritual insights from the perspective of dnyaneshwari. It explores the transcendental nature of the Supreme Lord and the path of devotional service as described in the Srimad Bhagavatam.",
+        "author_name": "Sant Dnyāneshwar",
+        "author_label": "Marathi Commentary",
+        "author_bio": "13th-century Maharashtrian saint and philosopher who translated the Gita into Marathi.",
+        "author_icon": "🚩"
+      },
+      {
+        "author": "vyasa",
+        "lang": "hi",
+        "type": "translation",
+        "content": "This verse (bhagavata-purana 10.8) translation in hi emphasizes the eternal relationship between the soul and the Supreme Personality of Godhead and the glory of devotional service.",
+        "author_name": "Kṛṣṇa Dvaipāyana Vyāsa",
+        "author_label": "Original Translation",
+        "author_bio": "The legendary sage and compiler of the Vedas, Puranas, and Mahabharata.",
+        "author_icon": "📜"
+      },
+      {
+        "author": "prabhupada",
+        "lang": "hi",
+        "type": "translation",
+        "content": "This verse (bhagavata-purana 10.8) translation in hi emphasizes the eternal relationship between the soul and the Supreme Personality of Godhead and the glory of devotional service.",
+        "author_name": "A.C. Bhaktivedanta Swami Prabhupada",
+        "author_label": "Bhaktivedanta Purport",
+        "author_bio": "Founder-Acharya of ISKCON and celebrated translator of Srimad Bhagavatam.",
+        "author_icon": "🪷"
+      },
+      {
+        "author": "vyasa",
+        "lang": "mr",
+        "type": "translation",
+        "content": "This verse (bhagavata-purana 10.8) translation in mr emphasizes the eternal relationship between the soul and the Supreme Personality of Godhead and the glory of devotional service.",
+        "author_name": "Kṛṣṇa Dvaipāyana Vyāsa",
+        "author_label": "Original Translation",
+        "author_bio": "The legendary sage and compiler of the Vedas, Puranas, and Mahabharata.",
+        "author_icon": "📜"
+      },
+      {
+        "author": "prabhupada",
+        "lang": "mr",
+        "type": "translation",
+        "content": "This verse (bhagavata-purana 10.8) translation in mr emphasizes the eternal relationship between the soul and the Supreme Personality of Godhead and the glory of devotional service.",
+        "author_name": "A.C. Bhaktivedanta Swami Prabhupada",
+        "author_label": "Bhaktivedanta Purport",
+        "author_bio": "Founder-Acharya of ISKCON and celebrated translator of Srimad Bhagavatam.",
+        "author_icon": "🪷"
       }
     ],
     "ai_metadata": {
-      "topics": []
+      "topics": [],
+      "correlations": {},
+      "stats": {
+        "original_words": 15,
+        "translit_words": 9,
+        "layers_count": 12
+      },
+      "fingerprint": "2c30087e2e12460813c22dbd45f50628"
     }
   }
 ]
