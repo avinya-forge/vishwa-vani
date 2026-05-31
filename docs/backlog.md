@@ -1154,7 +1154,3 @@ Perform these manual checks before any major production deployment:
 
 - **Bhagavata Purana Data Pipeline**: Missing basic translations, meanings, and sufficient layered data (`vyasa`, `sant-dnyaneshwar` equivalents, `sridhara`) for Canto 1 in `data/2-silver/bhagavata-purana/`. Ingestion needs manual human retrieval or structural parsing tools to convert unstructured Canto 1 data into Gold Schema.
 - **Vishnu Purana Data Pipeline**: Currently missing content, translation, meaning, and layered commentary. Also lacks chapter-level metadata (`theme` and `stotra_present`). Requires acquisition of a valid public domain bronze dataset to extract and inject into `data/2-silver/vishnu-purana`.
-
-- **Scrapling Evaluation**: Conducted an evaluation on the Python web scraping library `Scrapling` (https://github.com/D4Vinci/Scrapling) for its viability in extracting text for the project. Conclusion: The framework successfully bypassed 403 errors on `sacred-texts.com` that was previously halting pipeline steps, and is recommended for future scraping. Full details in `docs/scrapling_evaluation.md`.
-
-- **Consolidated Scraping**: I have consolidated the individual scraping scripts (`gita_press_scraper.js`, `kmg_scraper.js`, `sbe_scraper.js`) into `scripts/scraping/consolidated_scraper.js` to ensure the project has a single reliable entry point for extracting text via Playwright.
