@@ -11,6 +11,8 @@ import type { LevelData } from '@/components/ui/hierarchical-nav';
 import HierarchicalNav from '@/components/ui/hierarchical-nav'
 import VerseAppLinks from './verse-app-links'
 import AdhyayaShareLink from './adhyaya-share-link'
+import RatingTelemetry from './rating-telemetry'
+
 
 // 🏛️ DYNAMIC PERSPECTIVE METADATA
 const DEFAULT_METADATA: Record<string, { name: string, bio: string, label: string, icon: string }> = {
@@ -914,6 +916,9 @@ export default function StudyClient({
                               <p className="text-stone-600 dark:text-stone-400 leading-relaxed text-xs sm:text-[13px] font-medium whitespace-pre-line break-words overflow-wrap-anywhere">
                                 {cleanText(comment.content as string)}
                               </p>
+                              <div className="mt-3">
+                                <RatingTelemetry verseId={v.id as string} scholarId={comment.author as string} language={(comment.lang as string) || 'en'} />
+                              </div>
                             </div>
                           )
                         })
@@ -942,6 +947,9 @@ export default function StudyClient({
                                 <p className="text-stone-600 dark:text-stone-400 leading-relaxed text-xs sm:text-[13px] font-medium whitespace-pre-line break-words overflow-wrap-anywhere">
                                   {cleanText(comment.content as string)}
                                 </p>
+                                <div className="mt-3">
+                                  <RatingTelemetry verseId={v.id as string} scholarId={comment.author as string} language={lang} />
+                                </div>
                               </div>
                             )
                           })}

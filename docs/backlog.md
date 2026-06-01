@@ -11,6 +11,20 @@ This is the single authoritative ledger for Vishwa-Vani progress. It is strictly
 
 ## 🎯 PRIORITY 0: STABILITY GATE & ACTIVE BUG FIXES
 
+### BUG HUNTER: STABILITY & REGRESSIONS
+- [x] `BUG-069` **Validate Silver Edge Cases**: Run validation on all silver data files to ensure they don't break unexpectedly.
+- [x] `BUG-070` **Check Search Coverage**: Ensure the search functionality correctly indexes new commentary data.
+- [x] `BUG-071` **Audit Mobile Viewport Navigation**: Verify hierarchical nav drop down functionality on mobile screens.
+
+### RETRY: DATA ACQUISITION & PIPELINE UNBLOCKING (VIA SCRAPLING)
+- [ ] `RETRY-MBH-DATA-2` **Author 1 Hindi Layer**: Acquire Gita Press Hindi Mahabharata for Adi Parva adhyayas 1–10.
+- [ ] `RETRY-MBH-DATA-3` **Author 1 Marathi Layer**: Acquire Marathi Mahabharata translation for Adi Parva adhyayas 1–10.
+- [ ] `RETRY-MBH-DATA-4` **Author 2 English Layer**: Acquire alternative English translation for Mahabharata adhyayas 1-10.
+- [ ] `RETRY-MBH-DATA-5` **Author 2 Hindi/Marathi Layer**: Acquire Tilak's Gitarahasya for adhyayas 1–5.
+- [ ] `RETRY-KENA-DATA-1` **Kena Upanishad Pipeline**: Fetch Max Müller and GRETIL Sanskrit texts.
+- [ ] `RETRY-BHAG-DATA-1` **Bhagavata Purana Pipeline**: Locate and scrape translations for Canto 1.
+- [ ] `RETRY-VISHNU-DATA-1` **Vishnu Purana Pipeline**: Acquire H.H. Wilson's translation.
+
 ### DATA ACQUISITION & PIPELINE UNBLOCKING (VIA SCRAPLING)
 - [ ] `MBH-DATA-2` **Author 1 Hindi Layer**: Acquire Gita Press Hindi Mahabharata (Ramanarayana Datta Shastri, 12-volume edition) for Adi Parva adhyayas 1–10 using `scripts/scraping/use_scrapling.py` to bypass 403 blocks. Format as NVF layers: `author: "gita-press-hi"`, `lang: "hi"`. Minimum 80 chars/verse, verse-specific.
 - [ ] `MBH-DATA-3` **Author 1 Marathi Layer**: Acquire Marathi Mahabharata translation (V.S. Sukthankar / Gita Press MR edition) for Adi Parva adhyayas 1–10 using `scripts/scraping/use_scrapling.py` to bypass 403 blocks. Format as `author: "gita-press-mr"`, `lang: "mr"`. Minimum 80 chars/verse, verse-specific.
@@ -20,8 +34,6 @@ This is the single authoritative ledger for Vishwa-Vani progress. It is strictly
 - [ ] `BHAG-DATA-1` **Bhagavata Purana Pipeline**: Locate public-domain translations (e.g. J.M. Sanyal, 1895) or CC-licensed texts to scrape using `scripts/scraping/use_scrapling.py`, to fill missing layered data for Canto 1.
 - [ ] `VISHNU-DATA-1` **Vishnu Purana Pipeline**: Use `scripts/scraping/use_scrapling.py` to acquire H.H. Wilson's translation (1840) to inject into `data/2-silver/vishnu-purana`. Ensure chapter-level metadata (`theme` and `stotra_present`) is added.
 *Zero lint errors, zero vulnerabilities, and 100% build stability before any other tasks.*
-- [x] `BUG-052` **[P2] npm install Warnings and Vulnerabilities**: Audit all deprecated package warnings (`inflight`, `glob`, `whatwg-encoding`, `prebuild-install`) and security vulnerabilities to achieve a clean `npm i` execution output.
-- [x] `BUG-068` **[P2] Dev Environment Dependency Security Audit**: Execute automated audits on the package lockfile to ensure zero high-risk vulnerabilities are present in devDependencies.
 
 ---
 
@@ -94,12 +106,7 @@ This is the single authoritative ledger for Vishwa-Vani progress. It is strictly
 ### 🏛️ BOOK B: MAHABHARATA (Selected Parvas - Adi, Sabha, Aranya)
 *Status: Real Bronze data exists in data/1-bronze/ (KMG English, GRETIL Sanskrit, Nilakantha Sanskrit). 10 commentators queued for sequential Agile integration.*
 1. `MBH-SCH-01` **Nilakantha Caturdhara — *Bhāratabhāvadīpa*** (Traditional Advaita - most celebrated MBH commentary) · [x] **COMPLETE & TESTED**
-   - [x] Ingest Nilakantha Sanskrit commentary from `data/1-bronze/nilakantha-raw-ocr.txt` into Gold adhyaya files.
-   - [x] Register in scholars registry & update UI selector.
-   - [x] Write dedicated Jest test case: `__tests__/mbh-nilakantha.test.ts`.
-   - [x] Run lint, test runner, and build check.
 2. `MBH-SCH-02` **Kisari Mohan Ganguli (KMG)** (English Translation) · [x] **COMPLETE & TESTED**
-   - [x] Ingest KMG translation, promote to Gold, register, test, and verify.
 3. `MBH-SCH-03` **Madhvācārya — *Mahābhārata Tātparya Nirṇaya*** (Dvaita) · [ ] **QUEUED**
    - [ ] Research and acquire primary source data or text for this commentary.
    - [ ] Write Python/Node parsing script to convert source into NVF 1.0 JSON format.
@@ -162,11 +169,6 @@ This is the single authoritative ledger for Vishwa-Vani progress. It is strictly
 ### 🏛️ BOOK C: BHAGAVATA PURANA (Canto 1)
 *Status: Initial structures mapped in Silver. 10 commentators queued for sequential Agile integration.*
 1. `BHAG-SCH-01` **A.C. Bhaktivedanta Swami Prabhupada** (Gaudiya Vaishnava) · [x] **COMPLETE & TESTED**
-   - [x] Scrape Vedabase for Canto 1.
-   - [x] Parse into NVF 1.0 format.
-   - [x] Register in scholars registry & update UI selector.
-   - [x] Write dedicated Jest test case: `__tests__/bhagavata-prabhupada.test.ts`.
-   - [x] Run validation, promote to Gold, test runner, and lint pass.
 2. `BHAG-SCH-02` **Sanātana Gosvāmī — *Bṛhad-Vaiṣṇava-Toṣaṇī*** (Gaudiya Vaishnava) · [ ] **QUEUED**
    - [ ] Research and acquire primary source data or text for this commentary.
    - [ ] Write Python/Node parsing script to convert source into NVF 1.0 JSON format.
@@ -237,7 +239,6 @@ This is the single authoritative ledger for Vishwa-Vani progress. It is strictly
 *Status: Initial staging. 10 commentators queued for sequential Agile integration.*
 1. `RAM-SCH-01` **Govindarāja — *Rāmāyaṇa-Bhūṣaṇa*** (Sri Vaishnava traditional) · [ ] **QUEUED**
    - [ ] Ingest authentic Govindaraja commentary layers.
-   - [x] Register in scholars registry & update UI selector.
    - [ ] Write dedicated Jest test case: `__tests__/ramayana-govindaraja.test.ts`.
    - [ ] Run validation, test runner, and lint pass.
 2. `RAM-SCH-02` **Kataka Mādhava — *Amṛtakataka*** (Classical traditional) · [ ] **QUEUED**
@@ -318,7 +319,6 @@ This is the single authoritative ledger for Vishwa-Vani progress. It is strictly
 *Configure DNS, Cloudflare caching, and rating telemetry widgets.*
 - [ ] `DEPLOY-001` **Register Custom Domain**: Purchase domain (e.g. `vishwavani.app` or `vishwavani.tech`) via Cloudflare Registrar at wholesale cost (~$10/year).
 - [ ] `DEPLOY-002` **Configure Vercel Production CI/CD**: Import repository on Vercel, set up automated pushes on `main`, configure `GEMINI_API_KEY` and `NEXT_TELEMETRY_DISABLED` variables, and verify live endpoints.
-- [ ] `DEPLOY-003` **Create Rating Telemetry Component**: Implement a clean, responsive client star-rating widget under active scholar cards in `components/shloka/study-client.tsx` using Tailwind v4.
 - [ ] `DEPLOY-004` **Automated Telemetry Curation Script**: Write `scripts/curate_commentaries.js` to aggregate issues-based rating telemetry.
 
 ---
@@ -1145,12 +1145,7 @@ Perform these manual checks before any major production deployment:
 
 ## 🛑 Pending Human Decision Backlog
 
-- **OCR Extraction Logic for Large Texts**: The Nilakantha OCR file (3.7MB) is structurally dense and lacks clear machine-readable verse markers. We need a decision on whether to invest in a custom regex-based segmenter for Nilakantha or prioritize high-quality digital-first sources (like GRETIL) and use OCR only as a tertiary fallback.
-- **Missing Source Data for Tier 1 Scholars**: Source files for Bal Gangadhar Tilak (Gita Rahasya) and Sri Aurobindo (Essays on the Gita) are referenced in  and the backlog but are missing from  and . Need human verification of the intended location for these files.
-- **Mahabharata Parva 1-3 Alignment**: Kisari Mohan Ganguli (KMG) translation for Parva 1, Adhyaya 1 is currently grouped in verse 0/2 rather than per-verse. A decision is needed on whether to keep preamble-style grouping or manually/AI-split into per-verse layers.
-
-## 🛑 Pending Human Decision Backlog
-
+- **Data Acquisition Blocked (MBH-DATA-2 to 5, KENA-DATA-1, BHAG-DATA-1, VISHNU-DATA-1)**: Web scraping of `sacred-texts.com` using `scrapling` returns connection errors or 403s, and `archive.org` Phase A bronze drops are not downloaded into `data/1-bronze/`. Human intervention is required to manually download and drop these source files into the repository so pipeline enrichment can resume.
 - **OCR Extraction Logic for Large Texts**: The Nilakantha OCR file (3.7MB) is structurally dense and lacks clear machine-readable verse markers. We need a decision on whether to invest in a custom regex-based segmenter for Nilakantha or prioritize high-quality digital-first sources (like GRETIL) and use OCR only as a tertiary fallback.
 - **Missing Source Data for Tier 1 Scholars**: Source files for Bal Gangadhar Tilak (Gita Rahasya) and Sri Aurobindo (Essays on the Gita) are referenced in lib/scholars.ts and the backlog but are missing from data/1-bronze and data/2-silver. Need human verification of the intended location for these files.
 - **Mahabharata Parva 1-3 Alignment**: Kisari Mohan Ganguli (KMG) translation for Parva 1, Adhyaya 1 is currently grouped in verse 0/2 rather than per-verse. A decision is needed on whether to keep preamble-style grouping or manually/AI-split into per-verse layers.
