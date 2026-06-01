@@ -32,6 +32,13 @@ jest.mock('@/components/shloka/vedic-timeline', () => {
   };
 });
 
+
+jest.mock('@/components/shloka/rating-telemetry', () => {
+  return function MockRatingTelemetry({ verseId, scholarId }: { verseId: string, scholarId: string }) {
+    return <div data-testid={`rating-telemetry-${verseId}-${scholarId}`}>RatingTelemetry</div>;
+  };
+});
+
 jest.mock('@/components/shloka/vedic-manuscript-card', () => {
   return function MockVedicManuscriptCard() {
     return <div data-testid="vedic-manuscript-card">Manuscript Card</div>;
