@@ -14,9 +14,9 @@ describe('Yoga Sutras Gold Tier Coverage', () => {
 
     expect(firstVerse.chapter).toBe(1)
     expect(firstVerse.verse).toBe(1)
-    expect(firstVerse.layers.some((l: any) => l.author === 'vivekananda')).toBe(true)
+    expect(firstVerse.layers.some((l: { author: string }) => l.author === 'vivekananda')).toBe(true)
 
-    const vLayer = firstVerse.layers.find((l: any) => l.author === 'vivekananda')
+    const vLayer = firstVerse.layers.find((l: { author: string; author_name: string; author_label: string; content: string }) => l.author === 'vivekananda')
     expect(vLayer.author_name).toBeDefined()
     expect(vLayer.author_label).toBeDefined()
     expect(vLayer.content.length).toBeGreaterThan(80)

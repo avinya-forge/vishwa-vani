@@ -1,4 +1,3 @@
-import { SCHOLARS_REGISTRY } from '../lib/scholars'
 import fs from 'fs'
 import path from 'path'
 
@@ -15,9 +14,9 @@ describe('Kena Upanishad Gold Tier Coverage', () => {
 
     expect(firstVerse.chapter).toBe(1)
     expect(firstVerse.verse).toBe(1)
-    expect(firstVerse.layers.some((l: any) => l.author === 'max_muller')).toBe(true)
+    expect(firstVerse.layers.some((l: { author: string }) => l.author === 'max_muller')).toBe(true)
 
-    const mmLayer = firstVerse.layers.find((l: any) => l.author === 'max_muller')
+    const mmLayer = firstVerse.layers.find((l: { author: string; author_name: string; author_label: string; content: string }) => l.author === 'max_muller')
     expect(mmLayer.author_name).toBeDefined()
     expect(mmLayer.author_label).toBeDefined()
     expect(mmLayer.content.length).toBeGreaterThan(80)
