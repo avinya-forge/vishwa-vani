@@ -12,9 +12,9 @@ This is the single authoritative ledger for Vishwa-Vani progress. It is strictly
 ## 🎯 PRIORITY 0: STABILITY GATE & ACTIVE BUG FIXES
 
 ### BUG HUNTER: STABILITY & REGRESSIONS
-- [ ] `BUG-069` **Validate Silver Edge Cases**: Run validation on all silver data files to ensure they don't break unexpectedly.
-- [ ] `BUG-070` **Check Search Coverage**: Ensure the search functionality correctly indexes new commentary data.
-- [ ] `BUG-071` **Audit Mobile Viewport Navigation**: Verify hierarchical nav drop down functionality on mobile screens.
+- [x] `BUG-069` **Validate Silver Edge Cases**: Run validation on all silver data files to ensure they don't break unexpectedly.
+- [x] `BUG-070` **Check Search Coverage**: Ensure the search functionality correctly indexes new commentary data.
+- [x] `BUG-071` **Audit Mobile Viewport Navigation**: Verify hierarchical nav drop down functionality on mobile screens.
 
 ### RETRY: DATA ACQUISITION & PIPELINE UNBLOCKING (VIA SCRAPLING)
 - [ ] `RETRY-MBH-DATA-2` **Author 1 Hindi Layer**: Acquire Gita Press Hindi Mahabharata for Adi Parva adhyayas 1–10.

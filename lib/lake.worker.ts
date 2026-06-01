@@ -56,7 +56,7 @@ self.onmessage = async (event: MessageEvent) => {
           results = db.exec(`
             SELECT text_slug, chapter, verse, slok, transliteration, 0 as relevance
             FROM verses 
-            WHERE slok LIKE :prefixQ OR transliteration LIKE :prefixQ OR slok LIKE :fallbackQ
+            WHERE slok LIKE :prefixQ OR transliteration LIKE :prefixQ OR slok LIKE :fallbackQ OR content LIKE :fallbackQ
             LIMIT 30
           `, { 
             ':prefixQ': `${query}%`, 

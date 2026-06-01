@@ -3,6 +3,9 @@
 
 ## [1.0.10] - Current Session
 ### 🏛️ Scripture Promotion & Bug Fixes
+- [x] `BUG-069` **Validate Silver Edge Cases**: Added required `book.meta.json` legal clearance metadata to `garuda-purana`, `isha-upanishad`, `samskaras`, `stotras`, and `yoga-sutras` so they successfully pass silver data validation.
+- [x] `BUG-070` **Check Search Coverage**: Modified `lib/lake.worker.ts` to include searching the JSON `content` column in SQLite so new commentary data is indexed in the fallback search query.
+- [x] `BUG-071` **Audit Mobile Viewport Navigation**: Patched `HierarchicalNav` to restrict maximum dropdown width on narrow mobile viewports and implemented search filtering inside the dropdown to handle large parva structures.
 - `BUG-052` **[P2] npm install Warnings and Vulnerabilities**: Audit all deprecated package warnings (`inflight`, `glob`, `whatwg-encoding`, `prebuild-install`) and security vulnerabilities to achieve a clean `npm i` execution output.
 - `BUG-068` **[P2] Dev Environment Dependency Security Audit**: Execute automated audits on the package lockfile to ensure zero high-risk vulnerabilities are present in devDependencies.
 - Ingest Nilakantha Sanskrit commentary from `data/1-bronze/nilakantha-raw-ocr.txt` into Gold adhyaya files.
