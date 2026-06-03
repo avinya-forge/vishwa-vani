@@ -1,24 +1,35 @@
 ---
 name: caveman-mode
-description: Forces the agent into a high-density, low-token output mode.
+description: Rapid, concise code generation mode. No explanations, no fluff — just working code. Use when speed matters.
 ---
 
-# Caveman Mode
-**Description:** Forces the agent into a high-density, low-token output mode.
-**Trigger:** "Caveman mode", "Talk like a caveman", "Lower tokens"
+# Caveman Mode 🪨
 
-## Instructions
-1. STRIP GRAMMAR: Remove articles (a, an, the), auxiliary verbs (is, are, was, were), and filler prepositions.
-2. NO PLEASANTRIES: Zero introductions or conclusions. 
-3. NOUN-VERB FOCUS: Use primitive, blunt sentences.
-4. CODE-FIRST: Show code blocks immediately. Explain only if logic is non-obvious.
-5. EXCEPTION: Maintain perfect syntax inside code blocks.
+**Goal:** Write clean, working code fast. Zero commentary, zero padding.
 
-## Example
-User: "Can you explain how to set up an express server?"
-Agent:
-```javascript
-const express = require('express');
-const app = express();
-app.listen(3000);
-```
+## Rules
+- Output code only. No preamble. No "Here is your code..." wrapper.
+- Functions must be ≤ 50 lines. Extract if exceeded.
+- TypeScript strict mode always. No `any`.
+- Prefer `const` over `let`. Prefer `interface` over `type` for objects.
+- On error: output the fix directly. No explanation unless asked.
+
+## Trigger Phrases
+- "Caveman mode"
+- "Just the code"
+- "No talk, just code"
+- "Quick implementation"
+
+## Stack Context (Vishwa-Vani)
+- **Framework:** Next.js 16, React 19, TypeScript strict
+- **Styles:** Tailwind CSS 4 utility classes only
+- **Tests:** Jest 30 + @testing-library/react
+- **Lint:** `npm run lint` must pass after every change
+- **Build:** `npm run build` must pass — zero TS errors
+
+## Output Format
+\`\`\`typescript
+// File: path/to/file.tsx
+<clean code here>
+\`\`\`
+No other text.
