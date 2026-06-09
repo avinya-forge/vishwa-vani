@@ -23,7 +23,7 @@
         }
       ],
       "completeness_score": 100,
-      "status": "GOLD",
+      "status": "SILVER",
       "total_verses": 19,
       "last_promoted": "2026-05-25"
     },
@@ -3211,7 +3211,7 @@
         }
       ],
       "completeness_score": 100,
-      "status": "GOLD",
+      "status": "SILVER",
       "note": "Gold chapter files deleted 2026-04-25 (were mock data). Real KMG silver data at data/2-silver/mahabharata/parva-1/. Pipeline not yet run. See backlog MBH-DATA-* tasks.",
       "last_promoted": "2026-05-24"
     },
@@ -3374,7 +3374,7 @@
         }
       ],
       "completeness_score": 100,
-      "status": "GOLD",
+      "status": "SILVER",
       "last_promoted": "2026-05-26"
     },
     {
@@ -3434,7 +3434,7 @@
         }
       ],
       "completeness_score": 100,
-      "status": "GOLD",
+      "status": "SILVER",
       "last_promoted": "2026-05-24"
     },
     {
@@ -3467,7 +3467,7 @@
         }
       ],
       "completeness_score": 100,
-      "status": "GOLD",
+      "status": "SILVER",
       "last_promoted": "2026-05-29"
     },
     {
@@ -3485,7 +3485,7 @@
         }
       ],
       "completeness_score": 100,
-      "status": "GOLD",
+      "status": "SILVER",
       "last_promoted": "2026-05-29"
     }
   ]

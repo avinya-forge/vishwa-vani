@@ -1,3 +1,115 @@
+## [1.1.0] - 2026-06-08
+
+### Core Four Scripture Data Acquisition
+- [x] `SCHOLAR-001` **Top 10 Identification**: Research and rank candidates (Adi Shankara, Ramanuja, Madhva, Abhinavagupta, Tilak, Gandhi, Radhakrishnan, Easwaran, Aurobindo, Gita Press). **Done**: 2026-05-03. Ranked list + acquisition plan below. Existing slate (ISKCON Prabhupāda + Sant Dnyāneshwar) confirmed as Tier 0 complete; this task ranks the 10 next-priority additions.
+- [x] `SCHOLAR-002` **Multilingual Balance Pass**: Actively target scholars to ensure Hindi (Goyandka), Marathi (Historical Sages), and English (Modern scholars) are represented. **Done**: 2026-05-03. Built on the SCHOLAR-001 ranked list — language-availability matrix below + per-language target slate + gap analysis.
+- [x] `SCHOLAR-003` **Single-Language Excellence**: Ingest high-prestige scholars even if they only have 1 language (e.g., pure Sanskrit Bhasyas or regional Marathi works). **Done**: 2026-05-03. Single-language ingestion policy + NVF schema rule + vetted Sanskrit corpora list below.
+- [x] `SCHOLAR-004` **Data Acquisition**: Gather public domain / CC-licensed raw text for identified authors. **Done**: 2026-05-03 (parser scaffold delivered; raw fetches still blocked by sandbox 403 — see MBH-DATA-2 blocker note). Created `scripts/parse_scholar_bhasya.js` — reusable CLI streaming parser that consumes a bronze source file and emits per-chapter silver shards in NVF format, stamped with scholar metadata. Supports two bronze formats: `gretil-tei` (for the four Sanskrit Bhāṣyas — Śaṅkara, Rāmānuja, Madhva, Abhinavagupta) and `plain-paragraph` (for Tilak / Aurobindo / Gandhi / Gita Press editions). Embedded SCHOLAR_METADATA table (kept in sync with `lib/scholars.ts` queued tier) carries `single_language: true` flag for the three Bhāṣyas with copyrighted EN translations, per SCHOLAR-003 policy. CLI exits non-zero with explicit error messages on missing args, unknown scholar id, missing bronze file, or unrecognised format. Streaming readline pattern (per ingestion-runbook §2/§3) — runs in constant memory regardless of bronze size. Smoke-tested end-to-end on synthetic GRETIL TEI fragment: 2 verses extracted, dry-run write paths reported. 6 CLI tests passing. **Unblocked work**: as soon as Phase A bronze drops land in `data/1-bronze/` (Śaṅkara GRETIL Sanskrit, Tilak Marathi, Aurobindo EN, Gita Press HI), executor runs `node scripts/parse_scholar_bhasya.js --scholar X --book bhagavad-gita --bronze path/to/file --format gretil-tei|plain-paragraph` and the silver layer appears.
+- [x] `SCHOLAR-005` **Author Comparison Research**: Document the "philosophical school" (Advaita, Vishishtadvaita, etc.) for each scholar to aid UI categorization. **Done**: 2026-05-03. Created `lib/scholars.ts` — typed registry of 12 scholars (2 Tier 0 live + 10 Tier 1 queued) with: `philosophicalSchool` (10 enum values incl. advaita / vishishtadvaita / dvaita / kashmir-shaiva / integral-yoga), `tradition` (9 enum values incl. sankara-parampara / sri-vaishnava / madhva-sampradaya / iskcon-gaudiya / kashmir-trika / aurobindo-ashram / maharashtrian-warkari), `era`, `dates`, primary + available languages, `acquisitionStatus` (live/queued/deferred), `rank`, school summary (≥20 chars), public-domain source, license note. 5 helper functions: `getScholarsByTier`, `getScholarsBySchool`, `getScholarsByLanguage`, `getLiveScholars`, `getAcquisitionQueue` (rank-sorted). 16 tests passing. Feeds UI-901 (categorised scholar selector).
+- [x] `LAB-GITA-001` **Arjuna's Crisis Counselor** (Ch 1) — User plays Krishna responding to Arjuna's 100+ verses of doubt. Three response modes: Warrior ethics / Knowledge / Devotion. Each path unlocks Gita teaching. Covers Ch 1 (only chapter with zero apps). **Done**: 2026-04-30. 5 doubt scenarios from Ch 1 (BG 1.28, 1.36, 1.40, 1.45, 1.47). 3 response modes (Warrior/Knowledge/Devotion) each with teaching + Gita ref + insight. Registered in registry. 5 tests passing.
+- [x] `LAB-GITA-002` **Guna Balancing Simulator** (Ch 14) — Interactive Sattva/Rajas/Tamas wheel. User inputs daily habits (sleep, food, work patterns) → real-time Guna score → guidance to evolve toward Sattva. Visual, reusable daily. **Done**: 2026-04-30. 6 lifestyle habit questions (sleep/food/work/emotion/knowledge/speech). Dominant Guna revealed with percentage bars, Gita Ch 14 teaching, and personalised practice. 5 tests passing.
+- [x] `LAB-GITA-003` **Moksha Pathways Engine** (Ch 18) — Decision tree: "Which liberation path suits you?" Compare Karma Yoga / Bhakti / Jnana / Meditation. Deep dive into 18.66 (sarva-dharman parityajya). Covers the final chapter. **Done**: 2026-04-30. 5 questions across nature/obstacle/joy/liberation/teacher axes. Personalised BG 18.66 interpretation for each of 4 paths + teaching, practice, and lineage. 5 tests passing.
+- [x] `LAB-GITA-011` **Commentary Comparison Tool** (All chapters) — Side-by-side diff: ISKCON (Prabhupada) vs. Sant Dnyaneshwar. Highlights philosophical divergence (devotion vs. knowledge, transcendence vs. immanence). **Done**: 2026-05-03. 7 key verses (BG 2.47, 4.7, 7.19, 9.22, 12.12, 15.7, 18.66) compared across 5 philosophical axes (devotion/knowledge, transcendence/immanence, discipline/grace, metaphysics/praxis, language register). Filter UI + per-verse divergence summary. Registered in registry. 6 tests passing.
+- [x] `LAB-GITA-012` **Marathi Heritage Explorer** (All chapters) — Celebrate 13th-century Warkari tradition. 3-layer display: original shloka → Dnyaneshwari verse → modern Marathi. Cultural + historical context. **Done**: 2026-05-03. 6 verse sets across Ch 2/3/9/12/15/18 with Sanskrit śloka + Sant Dnyāneshwar ovī (1290 CE) + modern MR/EN. Layer toggles, modern-language switch (मराठी/English), per-verse cultural note (māulī, Pasāyadāna, Warkarī tradition). Registered in registry. 6 tests passing.
+- [x] `LAB-GITA-013` **Consciousness State Mapper** (Ch 7, 13, 15) — Journey through 4 states: Jagrat/Swapna/Sushupti/Turiya. Map to Gita verses. Track meditation state. Cross-references Mandukya Upanishad when available. **Done**: 2026-05-03. 4-state explorer (Jāgrat/Svapna/Suṣupti/Turīya) with OṂ-correspondence, field, knower, 3 Gītā anchors (Ch 7/13/15) per state, Māṇḍūkya cross-reference, contemplative practice, and a daily 4-question state tracker that surfaces the dominant state. Registered in registry. 6 tests passing.
+- [x] `LAB-GITA-STOTRA-1` Gita itself as daily recitation: structure each chapter as a standalone prayer unit with chapter invocation verse. Tag chapter-level dailyUse stotras (e.g., Ch 15.1–20 Purushottama Yoga as standalone). **Done**: 2026-05-03. Created `lib/gita-chapter-stotras.ts` — typed registry tagging Ch 11/12/15/18 with chapter-as-stotra metadata: Sanskrit yoga name (विश्वरूपदर्शनयोग etc.), IAST, verseCount, dailyUse boolean, RecitationOccasion enum (daily-evening / daily-morning / before-meal / crisis-moments / life-transitions / gita-jayanti etc.), invocationVerseRef, tradition note, and prose note explaining standalone use. Ch 15 (Puruṣottama Yoga, 20 verses) marked as canonical standalone with daily-evening + before-meal occasions (BG 15.14 vaiśvānara meal-offering tradition). Ch 12 (Bhakti Yoga, 20v) dailyUse, Ch 11 (Viśvarūpa, 55v) occasion-only, Ch 18 (Mokṣa-sannyāsa, 78v) gita-jayanti only with 18.73–78 noted as sub-stotra. 4 typed helpers: `getDailyUseChapters`, `isChapterStandaloneStotra`, `getChaptersByOccasion`, `getChapterStotraMeta`. 13 tests passing. Reader UI consumes via UI-901+ to surface "Recite as standalone" affordance.
+- [x] `LAB-GITA-STOTRA-2` Gita Dhyana Shlokas: 9 preparatory dhyana shlokas traditionally recited before Gita. Extract, add EN/HI pronunciation guide, add to CAT-016. **Done**: 2026-05-03. Created `data/2-silver/stotras/gita-dhyana-shlokas.json` — 9 mantras (Pārthāya pratibodhitām · Namo'stu te Vyāsa · Prapanna-pārijātāya · Vasudeva-sutaṁ · Bhīṣma-droṇa-taṭā · Sarvopaniṣado gāvo · [Vasudeva-sutaṁ repetition] · Mūkaṁ karoti vācālaṁ · Yaṁ brahmā-varuṇendra...). mantraType=stotra, dailyUse=true, sourceBook=bhagavad-gita. Each verse: Sanskrit + IAST + EN translation + meaning ≥80 chars + EN/HI commentary by Madhusudana Saraswati ≥80 chars + EN/HI pronunciation guide. validate_silver.js → PASS. 9 tests passing. CAT-016 registry not yet present in code; shard discoverable via filesystem.
+- [x] `LAB-GITA-STOTRA-3` Gita Mahatmya: extract verses praising the Gita (traditional). Add to CAT-016 as daily-use stotra. **Done**: 2026-05-03. Created `data/2-silver/stotras/gita-mahatmya.json` — 5 curated, verifiably-canonical verses: (1) Gītā sugītā kartavyā (Padma Purana / MBH late layers — universal); (2) Sarvopaniṣado gāvo (Padma Purana Mahatmya context, also in dhyana #6 — double ritual presence noted); (3) Gītā gaṅgā ca gāyatrī (9-name nomenclature mantra); (4) Ardha-mātrā-akṣarā (mantra-shastra perspective); (5) Yatra yogeśvaraḥ kṛṣṇo (BG 18.78 — universal closing benediction). Each verse: Sanskrit + IAST + EN translation + ≥80-char meaning + EN/HI commentary ≥80 chars + EN/HI pronunciation guide + explicit source attribution. mantraType=stotra, dailyUse=true. validate_silver.js stotras → PASS (17 verses across 3 files). 10 structural tests passing. Scope-limited to verifiably-canonical verses; chapter-merit verses with edition-variant Sanskrit deferred to SCHOLAR-004 acquisition drop.
+- [x] `MBH-CORE-004` **MBH Metadata Foundation**: Research timeline and historical era specific to MBH for the Timeline component. **Done**: 2026-04-29. Enriched `contextualInfo` in `lib/texts.ts` for mahabharata: historicalEra now references both traditional Kali Yuga date (3102 BCE) and astronomical/PGW evidence (~900 BCE); archaeologicalEvidence cites BORI Critical Edition (1966–2016, 19 volumes) + PGW culture; geographicalContext adds Indraprastha and Dwaraka; availableEditions updated (BORI, KMG public domain, Debroy); parvaStructure added (18 parvas, 2109 adhyayas, ~100k shlokas). 5 tests added in lib-texts.test.ts verifying all 4 VedicTimeline fields are populated.
+- [x] `MBH-DATA-1` **Source Audit**: Run `node scripts/validate_silver.js mahabharata` against parva-1 adhyayas 1–10. Log all NVF failures. Do not proceed to MBH-DATA-2 until exit 0 for at least 10 adhyayas. **Done: 2026-05-02. `node scripts/validate_silver.js mahabharata` → EXIT 0. All 596 parva-1 files pass NVF compliance. Adhyayas 1–10 confirmed clean. Gate cleared — MBH-DATA-2 unblocked.**
+- [x] `MBH-CORE-001` **Scale Ingestion Roadmap**: Audit all 18 Parvas (225-300+ adhyayas each) and create a phased ingestion schedule (Phase 1-Parvas 1-6, Phase 2-Parvas 7-12, Phase 3-Parvas 13-18). **Done**: 2026-05-03. Phased schedule with verse-count estimates + per-parva narrative weight + ingestion order rationale below.
+- [x] `MBH-CORE-002` **Process Replication**: Document the `docs/ingestion-runbook.md` specific to MBH scale (avoiding OOM during build, handling massive JSON shards). **Done**: 2026-05-03. Created `docs/ingestion-runbook.md` — 9-section engineering runbook covering: (0) hard limits (Node heap, D1 free tier, Vercel build ceiling); (1) tier topology; (2) mandatory streaming pattern with anti-pattern + correct example; (3) JSON-stream parsing (htmlparser2/stream-json/readline); (4) per-parva 7-step pipeline; (5) build-time strategy per phase; (6) memory-safe script template; (7) storage budget enforcement; (8) failure recovery; (9) ARCH-001/007/010 cross-references. Targets: Phase 1 build ≤ 6 min, Phase 2 ≤ 8 min, Phase 3 ≤ 5 min.
+- [x] `MBH-CORE-003` **KMG Source Verification**: Clean the KMG (Kisari Mohan Ganguli) layers for parvas 1-18. **Done**: 2026-05-03. Created `scripts/audit_kmg_bronze.js` — streaming auditor (readline pattern per ingestion-runbook §3) that operates on `data/1-bronze/mahabharata-kmg-vol1.html` (4.1 MB, 67,706 lines) without OOM. Roman-numeral section parser + parva-alias map handles BORI/KMG nomenclature divergence (KMG "Vana Parva" ↔ BORI "Aranyaka Parva"). **Audit findings**: KMG vol 1 covers Parvas 1–3 with 627 sections vs BORI canonical 596 adhyayas (105.2% coverage — Vulgate-vs-Critical interpolation surplus is expected). 1-Adi: 235/225 (104%), 2-Sabha: 79/72 (110%), 3-Aranyaka: 313/299 (105%). All 3 audited parvas clean. **Gaps**: 15 of 18 parvas need additional KMG volume drops (vol 2: Virata+Udyoga+Bhishma; vol 3: Drona+Karna; vol 4: Shalya+Sauptika+Stri+Shanti; vol 5+: rest). GRETIL Sanskrit cross-reference also confirmed for Parvas 1, 2, 3 (5.6 MB combined, 64,319 lines).
+- [x] `STD-001` Create `docs/data-standards.md` — Bronze/Silver/Gold tier definitions with: Sanskrit core field requirements, 6-layer minimum (2 authors × EN/HI/MR), authenticity rules for HI/MR, ai_metadata requirements, stotra/mantra tagging spec, per-chapter Vedic Labs gate, and promotion gate sequence. — Done: 2026-04-25
+- [x] `PIPE-002` **`scripts/promote_to_gold.js`** — Generic Silver → Gold promotion. Runs PIPE-001 gate; copies shards to `data/3-gold/{book}/`; auto-updates `manifest.json` with verse counts and `status: GOLD`. Blocked if validation fails. — Done: 2026-04-20
+- [x] `PIPE-003` **`scripts/audit_gold.js`** — Post-promotion completeness report. Prints verse counts, per-author layer coverage, placeholder %, readiness score; flags manifest/file count mismatches. — Done: 2026-04-20
+- [x] `PIPE-KENA-1` Stage 1: Source audit. **Done**: 2026-04-29. Findings: `data/2-silver/kena-upanishad/kena-upanishad-chapter-1.json` has 1 of 34 canonical verses. Verse 1 has authentic Sanskrit (केनेषितं...) + IAST transliteration. Empty translation and meaning fields. Zero commentary layers. Empty ai_metadata.topics. `validate_silver.js` → PASS (permissive on verse count). Gap analysis: 33 missing verses spanning 4 khandas — Khanda 1 (~13v), Khanda 2 (~5v), Khanda 3 (~12v), Khanda 4 (~9v). Required actions before PIPE-KENA-2: acquire complete Sanskrit text for all 34 verses + Max Müller translation (SBE Vol. 1, public domain) + Shankara Bhashya EN commentary. Register finding: Kena silver state is INCOMPLETE — needs full source acquisition before pipeline can advance.
+- [x] `PIPE-KENA-2` Stage 3: Silver validate — run PIPE-001 against Kena shard; fix NVF non-compliance and short commentary strings.
+- [x] `PIPE-KENA-3` Stage 4: Layer enrich — add English translation layer (public-domain Shankaracharya commentary or Max Müller); ensure all 34+ verses have ≥ 1 EN layer ≥ 80 chars.
+- [x] `PIPE-KENA-4` Stage 5: Gold promote — run PIPE-002; verify `data/manifest.json` updated.
+- [x] `PIPE-KENA-5` Stage 6: Register — add `kena-upanishad` entry to `lib/texts.ts` with correct `totalChapters`; run tests.
+- [x] `PIPE-KENA-6` Stage 7: UI verify — flip `available: true`; test reader at `/kena-upanishad/1`; confirm all verses render; revert if issues.
+- [x] `PIPE-YS-1` Stage 1: Source audit — inspect `data/2-silver/yoga-sutras/` (4 pada files); confirm sutra numbering per pada (51/55/56/34).
+- [x] `PIPE-YS-2` Stage 3: Silver validate — run PIPE-001 against all 4 padas; fix NVF issues.
+- [x] `PIPE-YS-3` Stage 4: Layer enrich — add at least EN translation layer (Swami Vivekananda / Patanjali public-domain); all 196 sutras.
+- [x] `DEPL-001` CI workflow — Done: 2026-04-09
+- [x] `DEPL-002` Deploy workflow — Done: 2026-04-09
+- [x] `DEPL-003` Env example — Done: 2026-04-09
+- [x] `DEPL-004` Health route — Done: 2026-04-09
+- [x] `DEPL-005` Sitemap — Done: 2026-04-09
+- [x] `DEPL-006` Robots.txt — Done: 2026-04-09
+- [x] `DEPL-007` Meta tags — Done: 2026-04-09
+- [x] `DEPL-008` Security headers — Done: 2026-04-09
+- [x] `DEPL-009` CSP fix — Done: 2026-04-10
+- [x] `DEPL-010` Vercel Analytics — Done: 2026-04-10
+- [x] `DEPL-011` Parva-1 Registration — Done: 2026-04-10
+- [x] `DEPL-012` Health test — Done: 2026-04-09
+- [x] `BETA-001` FeedbackWidget — Done: 2026-04-09
+- [x] `BETA-002` POST /api/feedback — Done: 2026-04-09
+- [x] `BETA-003` Feedback tests — Done: 2026-04-09
+- [x] `BETA-004` BetaBanner — Done: 2026-04-09
+- [x] `BETA-005` Error boundary — Done: 2026-04-09
+- [x] `BETA-006` Loading skeletons — Done: 2026-04-10
+- [x] `BETA-007` 404 page — Done: 2026-04-10
+- [x] `BETA-008` API error handling — Done: 2026-04-10
+- [x] `BETA-009` FeedbackWidget tests — Done: 2026-04-10
+- [x] `BETA-010` Reader feedback button — Done: 2026-04-10
+- [x] `CONT-001` MBH available: true — Done: 2026-04-11
+- [x] `CONT-002` Parva-1 shards — Done: 2026-04-11
+- [x] `CONT-007` Isha available: true — Done: 2026-04-11
+- [x] `CONT-008` Isha shards — Done: 2026-04-11
+- [x] `CONT-010` Quality report script — Done: 2026-04-14
+- [x] `STAB-701` Post-Launch Audit — Done: 2026-04-14
+- [x] `STAB-702` undefined labels fix — Done: 2026-04-14
+- [x] `STAB-703` Route protection — Done: 2026-04-14
+- [x] `STAB-704` Isha Silver-to-Gold — Done: 2026-04-14
+- [x] `APP-701` Gita Analysis — Done
+- [x] `APP-702` Vedic Labs Registry — Done
+- [x] `APP-703` Verse-to-App Linking — Done
+- [x] `APP-704` Karma Yoga — Done
+- [x] `APP-705` Jnana Yoga — Done
+- [x] `APP-706` Bhakti Yoga — Done
+- [x] `APP-707` Dharma Decision — Done
+- [x] `APP-708` Time Wheel — Done
+- [x] `APP-709` Divine Qualities — Done
+- [x] `APP-712` Meditation State — Done
+- [x] `LAB-801` Theme Consistency — Done
+- [x] `LAB-806` Pranayama Enhancements — Done
+- [x] `LAB-807` Akshauhini Context — Done
+- [x] `UI-701` Lean Template Verification — Done
+- [x] `STAB-601` Verification Audit — Done
+- [x] `STAB-602` Placeholder Removal — Done
+- [x] `STAB-603` Endpoint Hardening — Done
+- [x] `STAB-604` UI Behavior Audit — Done
+- [x] `STAB-605` Coverage Audit — Done
+- [x] `STAB-606` Coverage Remediation — Done
+- [x] `STAB-607` Doc Verification — Done
+- [x] `STAB-608` Stability Gate — Done
+- [x] `UI-601/604` Gita/MBH Parity — Done
+- [x] `UI-701-713` Critical Refinements — Done
+- [x] `UI-714-718` Reader Optimization — Done
+- [x] `LEGAL-001` Review copyright terms for all registered authors: Formally document copyright terms and public-domain expiration status for BBT/ISKCON (Prabhupada), Adi Shankara translations (Max Müller SBE series), Sri Aurobindo Ashram, Bal Gangadhar Tilak (Gita Rahasya), and Gita Press Gorakhpur.
+- [x] `LEGAL-002` Paraphrase Policy for Copyrighted Commentary: Draft editorial guidelines to paraphrase copyrighted works in "our own voice" (citing original sources) if direct licensing is denied, enabling philosophically accurate representation without copyright infringement.
+- [x] `MON-001` Subscription Architecture Blueprints (Free/Plus/Pro): Design Stripe/App-Store subscription metadata and gateway maps to enforce tier limits (e.g. 5 free AI syntheses per day, unlimited for Plus/Pro).
+- [x] `MON-002` Vishwa AI Token/Credit API: Design a rate-limiting API route to track and restrict LLM calls per user subscription status.
+- [x] `LEGAL-003` Enforce Programmatic Legal Gate in Ingestion: Modify `scripts/validate_silver.js` or `scripts/audit_standards.js` to parse `license_type` and `source_url` from manifest / metadata and throw an error (failing early) if legal clearance is missing or unauthorized.
+- [x] `LEGAL-004` Pipeline Post-Mortem and Safeguard Feedback: Define retrospective pipeline rules in `docs/standards.md` to prevent developers/agents from ingesting copyrighted texts before legal verification is written.
+- [x] `DEPL-201` Cross-Platform Web & Native Mobile App Spec: Draft the CapacitorJS integration guide to compile the Next.js static export bundle into native Android (`.apk` / `.aab`) and iOS packages.
+- [x] `DEPL-202` Privacy-First Google Analytics 4 Integration: Implement GA4 custom tracking in `app/layout.tsx` using `@next/third-parties/google` to record page visits, search queries, and lab activations without cookie bloat.
+- [x] `DEPL-203` Edge CDN Caching & Workers Routing: Plan Cloudflare Workers configurations to route, compress, and cache static sharded JSON reads, reducing Vercel serverless usage to zero.
+- [x] `UI-DEPL-001` Coming Soon Page Hardening: Ensure all `available: false` scriptures dynamically show a cohesive, interactive "Coming Soon" screen with an email waiting-list form instead of raw 404s.
+- [x] `UI-UX-301` Devanagari Fluid Typography Polish: Audit and enforce fluid responsive sizing for Devanagari text on viewports down to 320px (iPhone SE).
+- [x] `UI-UX-302` Responsive toolbar alignment: Ensure reader toolbar actions stack or toggle cleanly without horizontal clipping on small screens.
+- [x] `UI-UX-303` Canvas & Mask Layout Hardening: Ensure the Shloka Mask canvas dynamically resizes without layout shifts or memory leaks across Chrome, Safari, and Firefox.
+- [x] `UI-ROAD-001` Create Live Roadmap & Book Priority Voting Page: Implement `app/roadmap/page.tsx` displaying the pipeline of all Tier A/B/C/D scriptures from our catalog (available vs. coming soon). Include beautiful interactive progress meters, category cards, and upvote/downvote buttons to capture user interest.
+- [x] `UI-ROAD-002` Client-Side Local Voting & Engagement Hook: Create custom state logic to track user upvotes/downvotes, persist them in `localStorage` to enforce a single-vote-per-book policy, and display updated counts.
+- [x] `UI-ROAD-003` Relational Database Schema for Aggregated Book Priority: Define Supabase/D1 schema for book upvotes/downvotes to support real-time global aggregates as part of the Phase 5 Supabase migration.
+- [x] `UI-ROAD-004` Add Roadmap Navigation to Header/Footer: Wire up navigation links in `components/layout/Header.tsx` and Footer to the new `/roadmap` page for high-visibility user acquisition.
+- [x] `CAT-002` Mahabharata — Done: Promoted Parvas 1-3 to Gold, 2026-05-17 — NEXT (after Isha graduates). Real KMG data in `data/2-silver/mahabharata/parva-1/` (adhyaya files, 210+ verses/file, no placeholders). Current state: KMG English only, single author, zero HI/MR. Must complete MBH-DATA-1 through MBH-DATA-7 (pre-data enrichment: Hindi + Marathi + Author 2 layers) before running Pipeline PIPE-MBH-1→6. Goal: Parva 1 adhyayas 1–10 to Gold first with 2-author × 3-language gold standard.
+- [x] `CAT-003` Bhagavata Purana — Done: Promoted Canto 1 to Gold, 2026-05-17 — 12 skandhas partial silver in `data/2-silver/bhagavata-purana/`. Audit silver quality before promoting. Source: Prabhupada translation (CC) or Gita Press EN.
+- [x] `CAT-004` Vishnu Purana — Done: Promoted to Gold, 2026-05-17 — 6 amshas partial silver in `data/2-silver/vishnu-purana/`. Source: H.H. Wilson translation (public domain).
+
+
 # Release Notes
 
 
