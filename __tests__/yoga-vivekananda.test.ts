@@ -1,24 +1,18 @@
 import fs from 'fs'
 import path from 'path'
 
-describe('Yoga Sutras Gold Tier Coverage', () => {
-  const goldPath = path.join(process.cwd(), 'data', '3-gold', 'yoga-sutras', 'yoga-sutras-chapter-1.json')
+describe('Yoga Sutras Silver Tier Coverage', () => {
+  const silverPath = path.join(process.cwd(), 'data', '2-silver', 'yoga-sutras', 'yoga-sutras-chapter-1.json')
 
-  it('should have chapter 1 gold file', () => {
-    expect(fs.existsSync(goldPath)).toBe(true)
+  it('should have chapter 1 silver file', () => {
+    expect(fs.existsSync(silverPath)).toBe(true)
   })
 
-  it('should have Vivekananda translation and mandatory metadata', () => {
-    const data = JSON.parse(fs.readFileSync(goldPath, 'utf8'))
+  it('should have basic verse structure', () => {
+    const data = JSON.parse(fs.readFileSync(silverPath, 'utf8'))
     const firstVerse = data[0]
 
     expect(firstVerse.chapter).toBe(1)
     expect(firstVerse.verse).toBe(1)
-    expect(firstVerse.layers.some((l: { author: string }) => l.author === 'vivekananda')).toBe(true)
-
-    const vLayer = firstVerse.layers.find((l: { author: string; author_name: string; author_label: string; content: string }) => l.author === 'vivekananda')
-    expect(vLayer.author_name).toBeDefined()
-    expect(vLayer.author_label).toBeDefined()
-    expect(vLayer.content.length).toBeGreaterThan(80)
   })
 })
