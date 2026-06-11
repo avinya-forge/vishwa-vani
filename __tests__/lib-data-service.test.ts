@@ -147,14 +147,47 @@ describe('VedicDataService', () => {
     })
 
     it('includes aiContext fields when includeAI is true', async () => {
-      injectVerseViaFs(makeVerse({ original: 'dharma धर्म karma कर्म' }))
+      injectVerseViaFs(makeVerse({ original: 'dharma धर्म karma कर्म bhakti ज्ञान yoga' }))
 
       const result = await vedicDataService.getChapterData('bhagavad-gita', 10, { includeAI: true })
       const aiCtx = result?.verses[0].aiContext
       expect(aiCtx).toBeDefined()
       expect(aiCtx?.themes).toContain('Dharma')
       expect(aiCtx?.themes).toContain('Karma')
+      expect(aiCtx?.themes).toContain('Bhakti')
+      expect(aiCtx?.themes).toContain('Jnana')
+      expect(aiCtx?.themes).toContain('Yoga')
       expect(['beginner', 'intermediate', 'advanced']).toContain(aiCtx?.difficulty)
+    })
+
+    it('covers all cross references', async () => {
+      injectVerseViaFs(makeVerse({ original: 'krishna arjuna veda' }))
+      const result = await vedicDataService.getChapterData('bhagavad-gita', 11, { includeAI: true })
+      const aiCtx = result?.verses[0].aiContext
+      expect(aiCtx?.crossReferences).toContain('Krishna')
+      expect(aiCtx?.crossReferences).toContain('Arjuna')
+      expect(aiCtx?.crossReferences).toContain('Vedas')
+    })
+
+    it('covers emotional tones', async () => {
+      injectVerseViaFs(makeVerse({ original: 'fear' }))
+      let result = await vedicDataService.getChapterData('bhagavad-gita', 12, { includeAI: true })
+      expect(result?.verses[0].aiContext?.emotionalTone).toBe('contemplative')
+
+      clearCache()
+      injectVerseViaFs(makeVerse({ original: 'love' }))
+      result = await vedicDataService.getChapterData('bhagavad-gita', 13, { includeAI: true })
+      expect(result?.verses[0].aiContext?.emotionalTone).toBe('devotional')
+
+      clearCache()
+      injectVerseViaFs(makeVerse({ original: 'duty' }))
+      result = await vedicDataService.getChapterData('bhagavad-gita', 14, { includeAI: true })
+      expect(result?.verses[0].aiContext?.emotionalTone).toBe('ethical')
+
+      clearCache()
+      injectVerseViaFs(makeVerse({ original: 'something else' }))
+      result = await vedicDataService.getChapterData('bhagavad-gita', 15, { includeAI: true })
+      expect(result?.verses[0].aiContext?.emotionalTone).toBe('philosophical')
     })
   })
 })

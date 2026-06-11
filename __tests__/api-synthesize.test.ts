@@ -1,4 +1,3 @@
-// Mock Next.js modules
 jest.mock('next/server', () => ({
   NextResponse: {
     json: (data: unknown, options?: { status?: number }) => ({
@@ -8,9 +7,31 @@ jest.mock('next/server', () => ({
   }
 }))
 
-import { POST } from '@/app/api/synthesize/route'
+// Mock Gemini
+const mockGenerateContent = jest.fn()
+jest.mock('@google/generative-ai', () => {
+  return {
+    GoogleGenerativeAI: jest.fn().mockImplementation(() => {
+      return {
+        getGenerativeModel: jest.fn().mockReturnValue({
+          generateContent: mockGenerateContent
+        })
+      }
+    })
+  }
+})
 
-const mockRequest = (body: unknown) => ({ json: async () => body } as unknown as Request)
+// Set env var BEFORE importing the route, so genAI is initialized
+process.env.GEMINI_API_KEY = 'fake-key'
+
+import { POST, GET } from '@/app/api/synthesize/route'
+
+const mockRequest = (body: unknown, throwError = false) => ({ 
+  json: async () => {
+    if (throwError) throw new Error('Simulated network error')
+    return body
+  } 
+} as unknown as Request)
 
 interface MockResponse {
   status: number;
@@ -18,8 +39,21 @@ interface MockResponse {
 }
 
 describe('/api/synthesize', () => {
+  const originalEnv = process.env;
+
+  beforeEach(() => {
+    jest.resetModules()
+    process.env = { ...originalEnv, GEMINI_API_KEY: 'fake-key' }
+    mockGenerateContent.mockReset()
+  })
+
+  afterAll(() => {
+    process.env = originalEnv
+  })
+
   describe('success (200)', () => {
-    it('returns synthesis with synthesisMode on valid input', async () => {
+    it('returns synthesis with synthesisMode on valid input via fallback when gemini fails', async () => {
+      mockGenerateContent.mockRejectedValue(new Error('API Down'))
       const res = await POST(mockRequest({
         verseId: '1.1',
         contextTexts: ['Sample meaning', 'Commentary text'],
@@ -34,6 +68,42 @@ describe('/api/synthesize', () => {
       expect(data.synthesisMode).toBe('concatenation-fallback')
       expect(data.metadata).toHaveProperty('verseId', '1.1')
       expect(data.metadata).toHaveProperty('language', 'en')
+    })
+
+    it('returns gemini synthesis when successful', async () => {
+      mockGenerateContent.mockResolvedValue({
+        response: { text: () => 'Gemini synthetic response.' }
+      })
+      const res = await POST(mockRequest({
+        verseId: '1.2',
+        contextTexts: ['Sample meaning'],
+        language: 'hi'
+      })) as unknown as MockResponse
+      const data = await res.json()
+
+      expect(res.status).toBe(200)
+      expect(data.synthesis).toBe('Gemini synthetic response.')
+      expect(data.synthesisMode).toBe('generative-gemini')
+      expect(data.metadata).toHaveProperty('language', 'hi')
+    })
+
+    it('falls back if gemini times out', async () => {
+      const originalSetTimeout = global.setTimeout
+      // Immediately trigger the timeout callback
+      global.setTimeout = ((cb: Function) => cb()) as any
+
+      mockGenerateContent.mockImplementation(() => new Promise(() => {})) // Never resolves
+      const res = await POST(mockRequest({
+        verseId: '1.3',
+        contextTexts: ['Sample meaning'],
+        language: 'en'
+      })) as unknown as MockResponse
+      const data = await res.json()
+
+      expect(res.status).toBe(200)
+      expect(data.synthesisMode).toBe('concatenation-fallback')
+
+      global.setTimeout = originalSetTimeout
     })
 
     it('defaults language to en when omitted', async () => {
@@ -133,6 +203,25 @@ describe('/api/synthesize', () => {
 
       expect(res.status).toBe(400)
       expect(data.error).toBe('Missing or invalid verseId.')
+    })
+  })
+
+  describe('server errors (500/503)', () => {
+    it('returns 503 on unhandled exception', async () => {
+      const res = await POST(mockRequest({}, true)) as unknown as MockResponse
+      const data = await res.json()
+
+      expect(res.status).toBe(503)
+      expect(data.error).toBe('Synthesis service temporarily unavailable.')
+    })
+  })
+
+  describe('GET method', () => {
+    it('returns 405 Method Not Allowed', async () => {
+      const res = await GET() as unknown as MockResponse
+      const data = await res.json()
+      expect(res.status).toBe(405)
+      expect(data.error).toBe('Method not allowed')
     })
   })
 })

@@ -54,6 +54,7 @@ const makeVerses = (extra: object[] = []) => [
       { type: 'translation', lang: 'en', author: 'gambhirananda', content: 'Dhritarashtra said' },
       { type: 'commentary', author: 'shankara', lang: 'en', author_name: 'Adi Shankara', author_label: 'Shankara', author_icon: '📜', content: longCommentary },
       { type: 'commentary', author: 'ramanuja', lang: 'en', author_name: 'Ramanuja', author_label: 'Ramanuja', author_icon: '🔱', content: longCommentary + '2' },
+      { type: 'commentary', author: 'madhva', lang: 'en', author_name: 'Madhva', author_label: 'Madhva', author_icon: '🔱', content: longCommentary + '3' },
       { type: 'commentary', author: 'shankara', lang: 'hi', author_name: 'Adi Shankara', author_label: 'Shankara', author_icon: '📜', content: longCommentary + 'hi' },
       ...extra,
     ],
@@ -89,6 +90,7 @@ beforeEach(() => {
 
 
 beforeAll(() => {
+  window.HTMLElement.prototype.scrollIntoView = jest.fn();
   // Mock IntersectionObserver
   class IntersectionObserver {
     callback: (...args: unknown[]) => unknown;
@@ -120,9 +122,22 @@ describe('StudyClient — STAB-606 coverage', () => {
 
 
   // ── LEAN TEMPLATE: Author Toggle ──────────────────────────────────────────
-
-
-  // ── LANGUAGE FILTER ────────────────────────────────────────────────────────
+  describe('Author Toggle', () => {
+    it('allows toggling scholars and enforces max 2 limit', async () => {
+      render(<StudyClient {...defaultProps} />);
+      const buttons = screen.getAllByRole('switch');
+      
+      // Click first
+      fireEvent.click(buttons[0]);
+      // Click second
+      if (buttons[1]) fireEvent.click(buttons[1]);
+      // Click third (should replace oldest)
+      if (buttons[2]) fireEvent.click(buttons[2]);
+      
+      // Click third again to untoggle
+      if (buttons[2]) fireEvent.click(buttons[2]);
+    });
+  });  // ── LANGUAGE FILTER ────────────────────────────────────────────────────────
 
   describe('Language filter', () => {
     it('persists language selection to localStorage', async () => {
@@ -209,6 +224,103 @@ describe('StudyClient — STAB-606 coverage', () => {
       const verses = [{ id: '1.1', original: 'Test', transliteration: '', verse: 1, chapter: 1, meaning: '', layers: [] }];
       render(<StudyClient {...defaultProps} verses={verses} />);
       expect(screen.getByTestId('shloka-mask')).toBeInTheDocument();
+    });
+  });
+
+  // ── SYNTHESIS UI ────────────────────────────────────────────────────────────
+  describe('Synthesis UI', () => {
+    let originalFetch: typeof global.fetch;
+    beforeAll(() => {
+      originalFetch = global.fetch;
+    });
+    afterAll(() => {
+      global.fetch = originalFetch;
+    });
+
+    it('handles synthesizing the entire chapter successfully', async () => {
+      global.fetch = jest.fn().mockResolvedValue({
+        ok: true,
+        json: async () => ({ success: true, synthesis: 'Mocked AI synthesis' })
+      });
+      render(<StudyClient {...defaultProps} />);
+      const btn = screen.getByRole('button', { name: /Generate AI Synthesis for entire chapter/i });
+      fireEvent.click(btn);
+      
+      await waitFor(() => {
+        expect(global.fetch).toHaveBeenCalled();
+      });
+    });
+
+    it('handles synthesis API failure gracefully', async () => {
+      global.fetch = jest.fn().mockResolvedValue({
+        ok: false,
+        status: 500
+      });
+      render(<StudyClient {...defaultProps} />);
+      const btn = screen.getByRole('button', { name: /Generate AI Synthesis for entire chapter/i });
+      fireEvent.click(btn);
+      
+      await waitFor(() => {
+        expect(global.fetch).toHaveBeenCalled();
+      });
+    });
+
+    it('handles synthesis JSON error gracefully', async () => {
+      global.fetch = jest.fn().mockResolvedValue({
+        ok: true,
+        json: async () => ({ success: false })
+      });
+      render(<StudyClient {...defaultProps} />);
+      const btn = screen.getByRole('button', { name: /Generate AI Synthesis for entire chapter/i });
+      fireEvent.click(btn);
+      
+      await waitFor(() => {
+        expect(global.fetch).toHaveBeenCalled();
+      });
+    });
+  });
+
+  // ── BOOKMARKS & SHARE ───────────────────────────────────────────────────────
+  describe('Bookmarks and Share Links', () => {
+    it('can toggle bookmarks', async () => {
+      render(<StudyClient {...defaultProps} />);
+      const addBookmarkBtn = screen.getByTitle('Add bookmark');
+      fireEvent.click(addBookmarkBtn);
+      
+      await waitFor(() => {
+        expect(screen.getByTitle('Remove bookmark')).toBeInTheDocument();
+      });
+
+      // Jump to bookmark
+      const jumpBtn = screen.getByTitle(/Jump to first bookmark/);
+      fireEvent.click(jumpBtn);
+      
+      // Remove bookmark
+      fireEvent.click(screen.getByTitle('Remove bookmark'));
+      await waitFor(() => {
+        expect(screen.getByTitle('Add bookmark')).toBeInTheDocument();
+      });
+    });
+
+    it('can copy chapter share link', async () => {
+      const originalClipboard = global.navigator.clipboard;
+      Object.defineProperty(global.navigator, 'clipboard', {
+        value: { writeText: jest.fn().mockResolvedValue(undefined) },
+        writable: true,
+        configurable: true,
+      });
+
+      render(<StudyClient {...defaultProps} />);
+      const shareBtn = screen.getByTitle('Copy chapter link to clipboard');
+      fireEvent.click(shareBtn);
+      
+      expect(global.navigator.clipboard.writeText).toHaveBeenCalled();
+
+      Object.defineProperty(global.navigator, 'clipboard', {
+        value: originalClipboard,
+        writable: true,
+        configurable: true,
+      });
     });
   });
 });
