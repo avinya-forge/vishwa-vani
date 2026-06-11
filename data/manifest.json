@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "last_audit": "2026-05-29",
+  "last_audit": "2026-06-11",
   "note": "Only Gold-tier (verified and complete) books are active in manifest. Mahabharata is currently in SILVER tier.",
   "books": [
     {
@@ -16,16 +16,13 @@
         {
           "number": 1,
           "file": "isha-upanishad-chapter-1.json",
-          "verse_count": 19,
-          "theme": "The Divine permeates all creation — renunciation, action, and the immortal Self across 18 mantras",
-          "stotra_present": true,
-          "yoga_type": null
+          "verse_count": 19
         }
       ],
       "completeness_score": 100,
-      "status": "SILVER",
+      "status": "GOLD",
       "total_verses": 19,
-      "last_promoted": "2026-05-25"
+      "last_promoted": "2026-06-11"
     },
     {
       "book_id": "bhagavad-gita",
@@ -3487,6 +3484,15 @@
       "completeness_score": 100,
       "status": "SILVER",
       "last_promoted": "2026-05-29"
+    },
+    {
+      "book_id": "stotras",
+      "total_chapters": 0,
+      "total_verses": 0,
+      "chapters": [],
+      "completeness_score": 100,
+      "status": "GOLD",
+      "last_promoted": "2026-06-11"
     }
   ]
 }
