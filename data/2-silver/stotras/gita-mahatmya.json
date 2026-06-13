@@ -1,462 +1,471 @@
-[
-  {
-    "id": "gita-mahatmya-1",
-    "verse": 1,
-    "original": "गीता सुगीता कर्तव्या किमन्यैः शास्त्रविस्तरैः । या स्वयं पद्मनाभस्य मुखपद्माद्विनिःसृता ॥",
-    "transliteration": "gītā sugītā kartavyā kim anyaiḥ śāstra-vistaraiḥ | yā svayaṃ padma-nābhasya mukha-padmād viniḥsṛtā ||",
-    "translation": "The Gita should be well-recited — what need is there for elaborate other scriptures? It has come forth from the very lotus mouth of the lotus-naveled Lord (Vishnu) himself.",
-    "meaning": "One of the most quoted single verses of the entire Mahatmya tradition. Found in the Mahabharata's later layers and in the Padma Purana. The argument is direct: when the source-teaching has been delivered by the Source himself, the proliferation of secondary commentaries is unnecessary. 'Sugītā kartavyā' — recite it well — is the imperative; the rest is sufficiency.",
-    "layers": [
-      {
-        "author": "padma-purana-tradition",
-        "author_name": "Padma Purana — Uttara Khanda",
-        "author_label": "Mahatmya tradition — universally-recited Sanskrit",
-        "lang": "en",
-        "type": "commentary",
-        "content": "The verse closes the case for elaborate scriptural pluralism. When the Gita has issued from the mouth of Padmanabha himself, all other sastras become explanatory rather than constitutive. 'Sugītā' is significant — not merely 'recited' but 'well-recited', meaning recited with attention, with proper pronunciation, and with understanding. The verse is itself a recursive instruction: do not study many texts; study this one well."
+{
+  "id": "gita-mahatmya",
+  "slug": "gita-mahatmya",
+  "mantraType": "stotra",
+  "deity": "Krishna",
+  "dailyUse": true,
+  "sourceBook": "bhagavad-gita",
+  "totalMantras": 5,
+  "verses": [
+    {
+      "id": "gita-mahatmya-1",
+      "verse": 1,
+      "original": "गीता सुगीता कर्तव्या किमन्यैः शास्त्रविस्तरैः । या स्वयं पद्मनाभस्य मुखपद्माद्विनिःसृता ॥",
+      "transliteration": "gītā sugītā kartavyā kim anyaiḥ śāstra-vistaraiḥ | yā svayaṃ padma-nābhasya mukha-padmād viniḥsṛtā ||",
+      "translation": "The Gita should be well-recited — what need is there for elaborate other scriptures? It has come forth from the very lotus mouth of the lotus-naveled Lord (Vishnu) himself.",
+      "meaning": "One of the most quoted single verses of the entire Mahatmya tradition. Found in the Mahabharata's later layers and in the Padma Purana. The argument is direct: when the source-teaching has been delivered by the Source himself, the proliferation of secondary commentaries is unnecessary. 'Sugītā kartavyā' — recite it well — is the imperative; the rest is sufficiency.",
+      "layers": [
+        {
+          "author": "padma-purana-tradition",
+          "author_name": "Padma Purana — Uttara Khanda",
+          "author_label": "Mahatmya tradition — universally-recited Sanskrit",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The verse closes the case for elaborate scriptural pluralism. When the Gita has issued from the mouth of Padmanabha himself, all other sastras become explanatory rather than constitutive. 'Sugītā' is significant — not merely 'recited' but 'well-recited', meaning recited with attention, with proper pronunciation, and with understanding. The verse is itself a recursive instruction: do not study many texts; study this one well."
+        },
+        {
+          "author": "padma-purana-tradition",
+          "author_name": "Padma Purana — Uttara Khanda",
+          "author_label": "Mahatmya tradition — Hindi paraphrase",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "गीता को सुगीत करना चाहिए — अर्थात् केवल पाठ नहीं, सावधानीपूर्वक, स्पष्ट उच्चारण के साथ, समझ के साथ पाठ करना चाहिए। जब स्वयं पद्मनाभ के मुख से यह निकली है, तो अन्य शास्त्रों के विस्तार की क्या आवश्यकता? यह श्लोक स्वयं पुनरावर्ती निर्देश है — अनेक ग्रंथ मत पढ़ो, इस एक को भली-भाँति पढ़ो।"
+        },
+        {
+          "author": "traditional",
+          "author_name": "Padma Purana — Uttara Khanda",
+          "author_label": "Mahatmya tradition — universally-recited Sanskrit",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The verse closes the case for elaborate scriptural pluralism. When the Gita has issued from the mouth of Padmanabha himself, all other sastras become explanatory rather than constitutive. 'Sugītā' is significant — not merely 'recited' but 'well-recited', meaning recited with attention, with proper pronunciation, and with understanding. The verse is itself a recursive instruction: do not study many texts; study this one well."
+        },
+        {
+          "author": "traditional",
+          "author_name": "Padma Purana — Uttara Khanda",
+          "author_label": "Mahatmya tradition — Hindi paraphrase",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "गीता को सुगीत करना चाहिए — अर्थात् केवल पाठ नहीं, सावधानीपूर्वक, स्पष्ट उच्चारण के साथ, समझ के साथ पाठ करना चाहिए। जब स्वयं पद्मनाभ के मुख से यह निकली है, तो अन्य शास्त्रों के विस्तार की क्या आवश्यकता? यह श्लोक स्वयं पुनरावर्ती निर्देश है — अनेक ग्रंथ मत पढ़ो, इस एक को भली-भाँति पढ़ो।"
+        },
+        {
+          "author": "padma-purana-tradition",
+          "author_name": "Padma Purana — Uttara Khanda",
+          "author_label": "Mahatmya tradition — universally-recited Sanskrit",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "The verse closes the case for elaborate scriptural pluralism. When the Gita has issued from the mouth of Padmanabha himself, all other sastras become explanatory rather than constitutive. 'Sugītā' is significant — not merely 'recited' but 'well-recited', meaning recited with attention, with proper pronunciation, and with understanding. The verse is itself a recursive instruction: do not study many texts; study this one well. (MR)"
+        },
+        {
+          "author": "padma-purana-tradition",
+          "author_name": "Padma Purana — Uttara Khanda",
+          "author_label": "Mahatmya tradition — Hindi paraphrase",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "गीता को सुगीत करना चाहिए — अर्थात् केवल पाठ नहीं, सावधानीपूर्वक, स्पष्ट उच्चारण के साथ, समझ के साथ पाठ करना चाहिए। जब स्वयं पद्मनाभ के मुख से यह निकली है, तो अन्य शास्त्रों के विस्तार की क्या आवश्यकता? यह श्लोक स्वयं पुनरावर्ती निर्देश है — अनेक ग्रंथ मत पढ़ो, इस एक को भली-भाँति पढ़ो। (MR)"
+        },
+        {
+          "author": "traditional",
+          "author_name": "Padma Purana — Uttara Khanda",
+          "author_label": "Mahatmya tradition — universally-recited Sanskrit",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "The verse closes the case for elaborate scriptural pluralism. When the Gita has issued from the mouth of Padmanabha himself, all other sastras become explanatory rather than constitutive. 'Sugītā' is significant — not merely 'recited' but 'well-recited', meaning recited with attention, with proper pronunciation, and with understanding. The verse is itself a recursive instruction: do not study many texts; study this one well. (MR)"
+        },
+        {
+          "author": "traditional",
+          "author_name": "Padma Purana — Uttara Khanda",
+          "author_label": "Mahatmya tradition — Hindi paraphrase",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "गीता को सुगीत करना चाहिए — अर्थात् केवल पाठ नहीं, सावधानीपूर्वक, स्पष्ट उच्चारण के साथ, समझ के साथ पाठ करना चाहिए। जब स्वयं पद्मनाभ के मुख से यह निकली है, तो अन्य शास्त्रों के विस्तार की क्या आवश्यकता? यह श्लोक स्वयं पुनरावर्ती निर्देश है — अनेक ग्रंथ मत पढ़ो, इस एक को भली-भाँति पढ़ो। (MR)"
+        }
+      ],
+      "pronunciation_guide": {
+        "en": "Gītā: GEE-taa (long ee, long aa). Sugītā: su-GEE-taa. Kartavyā: kar-TAV-yaa. Padma-nābhasya: PAD-ma-NAA-bhas-ya (lotus-naveled — one of Vishnu's epithets). Mukha-padmād: MU-kha-pad-MAAD. Viniḥsṛtā: vi-nih-SRI-taa. The verse is in anushtubh — 8 syllables per quarter, four quarters.",
+        "hi": "अनुष्टुप् छन्द — चारों चरणों में 8-8 अक्षर। 'गीता' का 'गी' दीर्घ। 'सुगीता' को 'सु-गी-ता' — 'गी' दीर्घ। 'पद्मनाभस्य' — पद्म + नाभ + अस्य। 'मुखपद्माद्' — मुख-पद्मात् (पाँचवीं विभक्ति)। 'विनिःसृता' को सावधानी से उच्चारें।"
       },
-      {
-        "author": "padma-purana-tradition",
-        "author_name": "Padma Purana — Uttara Khanda",
-        "author_label": "Mahatmya tradition — Hindi paraphrase",
-        "lang": "hi",
-        "type": "commentary",
-        "content": "गीता को सुगीत करना चाहिए — अर्थात् केवल पाठ नहीं, सावधानीपूर्वक, स्पष्ट उच्चारण के साथ, समझ के साथ पाठ करना चाहिए। जब स्वयं पद्मनाभ के मुख से यह निकली है, तो अन्य शास्त्रों के विस्तार की क्या आवश्यकता? यह श्लोक स्वयं पुनरावर्ती निर्देश है — अनेक ग्रंथ मत पढ़ो, इस एक को भली-भाँति पढ़ो।"
-      },
-      {
-        "author": "traditional",
-        "author_name": "Padma Purana — Uttara Khanda",
-        "author_label": "Mahatmya tradition — universally-recited Sanskrit",
-        "lang": "en",
-        "type": "commentary",
-        "content": "The verse closes the case for elaborate scriptural pluralism. When the Gita has issued from the mouth of Padmanabha himself, all other sastras become explanatory rather than constitutive. 'Sugītā' is significant — not merely 'recited' but 'well-recited', meaning recited with attention, with proper pronunciation, and with understanding. The verse is itself a recursive instruction: do not study many texts; study this one well."
-      },
-      {
-        "author": "traditional",
-        "author_name": "Padma Purana — Uttara Khanda",
-        "author_label": "Mahatmya tradition — Hindi paraphrase",
-        "lang": "hi",
-        "type": "commentary",
-        "content": "गीता को सुगीत करना चाहिए — अर्थात् केवल पाठ नहीं, सावधानीपूर्वक, स्पष्ट उच्चारण के साथ, समझ के साथ पाठ करना चाहिए। जब स्वयं पद्मनाभ के मुख से यह निकली है, तो अन्य शास्त्रों के विस्तार की क्या आवश्यकता? यह श्लोक स्वयं पुनरावर्ती निर्देश है — अनेक ग्रंथ मत पढ़ो, इस एक को भली-भाँति पढ़ो।"
-      },
-      {
-        "author": "padma-purana-tradition",
-        "author_name": "Padma Purana — Uttara Khanda",
-        "author_label": "Mahatmya tradition — universally-recited Sanskrit",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "The verse closes the case for elaborate scriptural pluralism. When the Gita has issued from the mouth of Padmanabha himself, all other sastras become explanatory rather than constitutive. 'Sugītā' is significant — not merely 'recited' but 'well-recited', meaning recited with attention, with proper pronunciation, and with understanding. The verse is itself a recursive instruction: do not study many texts; study this one well. (MR)"
-      },
-      {
-        "author": "padma-purana-tradition",
-        "author_name": "Padma Purana — Uttara Khanda",
-        "author_label": "Mahatmya tradition — Hindi paraphrase",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "गीता को सुगीत करना चाहिए — अर्थात् केवल पाठ नहीं, सावधानीपूर्वक, स्पष्ट उच्चारण के साथ, समझ के साथ पाठ करना चाहिए। जब स्वयं पद्मनाभ के मुख से यह निकली है, तो अन्य शास्त्रों के विस्तार की क्या आवश्यकता? यह श्लोक स्वयं पुनरावर्ती निर्देश है — अनेक ग्रंथ मत पढ़ो, इस एक को भली-भाँति पढ़ो। (MR)"
-      },
-      {
-        "author": "traditional",
-        "author_name": "Padma Purana — Uttara Khanda",
-        "author_label": "Mahatmya tradition — universally-recited Sanskrit",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "The verse closes the case for elaborate scriptural pluralism. When the Gita has issued from the mouth of Padmanabha himself, all other sastras become explanatory rather than constitutive. 'Sugītā' is significant — not merely 'recited' but 'well-recited', meaning recited with attention, with proper pronunciation, and with understanding. The verse is itself a recursive instruction: do not study many texts; study this one well. (MR)"
-      },
-      {
-        "author": "traditional",
-        "author_name": "Padma Purana — Uttara Khanda",
-        "author_label": "Mahatmya tradition — Hindi paraphrase",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "गीता को सुगीत करना चाहिए — अर्थात् केवल पाठ नहीं, सावधानीपूर्वक, स्पष्ट उच्चारण के साथ, समझ के साथ पाठ करना चाहिए। जब स्वयं पद्मनाभ के मुख से यह निकली है, तो अन्य शास्त्रों के विस्तार की क्या आवश्यकता? यह श्लोक स्वयं पुनरावर्ती निर्देश है — अनेक ग्रंथ मत पढ़ो, इस एक को भली-भाँति पढ़ो। (MR)"
+      "ai_metadata": {
+        "topics": [
+          "Stotra",
+          "Prayer"
+        ],
+        "correlations": [
+          "Devotion"
+        ],
+        "fingerprint": "mock-fingerprint",
+        "stats": {
+          "total_layers": 8,
+          "total_words": 10
+        }
       }
-    ],
-    "pronunciation_guide": {
-      "en": "Gītā: GEE-taa (long ee, long aa). Sugītā: su-GEE-taa. Kartavyā: kar-TAV-yaa. Padma-nābhasya: PAD-ma-NAA-bhas-ya (lotus-naveled — one of Vishnu's epithets). Mukha-padmād: MU-kha-pad-MAAD. Viniḥsṛtā: vi-nih-SRI-taa. The verse is in anushtubh — 8 syllables per quarter, four quarters.",
-      "hi": "अनुष्टुप् छन्द — चारों चरणों में 8-8 अक्षर। 'गीता' का 'गी' दीर्घ। 'सुगीता' को 'सु-गी-ता' — 'गी' दीर्घ। 'पद्मनाभस्य' — पद्म + नाभ + अस्य। 'मुखपद्माद्' — मुख-पद्मात् (पाँचवीं विभक्ति)। 'विनिःसृता' को सावधानी से उच्चारें।"
     },
-    "ai_metadata": {
-      "topics": [
-        "Stotra",
-        "Prayer"
+    {
+      "id": "gita-mahatmya-2",
+      "verse": 2,
+      "original": "सर्वोपनिषदो गावो दोग्धा गोपालनन्दनः । पार्थो वत्सः सुधीर्भोक्ता दुग्धं गीतामृतं महत् ॥",
+      "transliteration": "sarvopaniṣado gāvo dogdhā gopāla-nandanaḥ | pārtho vatsaḥ sudhīr bhoktā dugdhaṃ gītāmṛtaṃ mahat ||",
+      "translation": "All the Upanishads are the cows; the cowherd's son (Krishna) is the milker; Arjuna is the calf; the wise are the drinkers; the milk is the great Gita-nectar.",
+      "meaning": "This verse appears in two distinct ritual contexts. As a Dhyana Shloka it sets the meditation-frame before Gita study (see gita-dhyana-shlokas verse 6). As a Mahatmya verse it appears in the Padma Purana sequence praising the Gita's nature. The double presence is intentional: the verse maps the entire transmission economy of the Gita — source, milker, occasion, recipients, substance. It is included in both shards.",
+      "layers": [
+        {
+          "author": "padma-purana-tradition",
+          "author_name": "Padma Purana — Uttara Khanda",
+          "author_label": "Mahatmya tradition — universally-recited Sanskrit",
+          "lang": "en",
+          "type": "commentary",
+          "content": "In the Mahatmya context the verse functions as a praise of the Gita's nutritional sufficiency — not just any milk but the milk drawn from the entirety of the Upanishadic herd. The Mahatmya is making a comprehensiveness claim: whoever drinks this milk has effectively drunk from every cow. This is why the Padma Purana places it at the head of the merit-recital — it justifies the premise of the entire Mahatmya."
+        },
+        {
+          "author": "padma-purana-tradition",
+          "author_name": "Padma Purana — Uttara Khanda",
+          "author_label": "Mahatmya tradition — Hindi paraphrase",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "माहात्म्य के संदर्भ में यह श्लोक गीता की पोषण-पर्याप्तता की स्तुति करता है — कोई भी दूध नहीं, अपितु सम्पूर्ण उपनिषद्-गायों से दुहा गया दूध। माहात्म्य यहाँ एक व्यापकता का दावा कर रहा है — जो यह दूध पीता है उसने प्रभाव में हर गाय से पिया। इसीलिए पद्म पुराण इसे पाठ के आरंभ में रखता है — यही पूरे माहात्म्य का मूल औचित्य है।"
+        },
+        {
+          "author": "traditional",
+          "author_name": "Padma Purana — Uttara Khanda",
+          "author_label": "Mahatmya tradition — universally-recited Sanskrit",
+          "lang": "en",
+          "type": "commentary",
+          "content": "In the Mahatmya context the verse functions as a praise of the Gita's nutritional sufficiency — not just any milk but the milk drawn from the entirety of the Upanishadic herd. The Mahatmya is making a comprehensiveness claim: whoever drinks this milk has effectively drunk from every cow. This is why the Padma Purana places it at the head of the merit-recital — it justifies the premise of the entire Mahatmya."
+        },
+        {
+          "author": "traditional",
+          "author_name": "Padma Purana — Uttara Khanda",
+          "author_label": "Mahatmya tradition — Hindi paraphrase",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "माहात्म्य के संदर्भ में यह श्लोक गीता की पोषण-पर्याप्तता की स्तुति करता है — कोई भी दूध नहीं, अपितु सम्पूर्ण उपनिषद्-गायों से दुहा गया दूध। माहात्म्य यहाँ एक व्यापकता का दावा कर रहा है — जो यह दूध पीता है उसने प्रभाव में हर गाय से पिया। इसीलिए पद्म पुराण इसे पाठ के आरंभ में रखता है — यही पूरे माहात्म्य का मूल औचित्य है।"
+        },
+        {
+          "author": "padma-purana-tradition",
+          "author_name": "Padma Purana — Uttara Khanda",
+          "author_label": "Mahatmya tradition — universally-recited Sanskrit",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "In the Mahatmya context the verse functions as a praise of the Gita's nutritional sufficiency — not just any milk but the milk drawn from the entirety of the Upanishadic herd. The Mahatmya is making a comprehensiveness claim: whoever drinks this milk has effectively drunk from every cow. This is why the Padma Purana places it at the head of the merit-recital — it justifies the premise of the entire Mahatmya. (MR)"
+        },
+        {
+          "author": "padma-purana-tradition",
+          "author_name": "Padma Purana — Uttara Khanda",
+          "author_label": "Mahatmya tradition — Hindi paraphrase",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "माहात्म्य के संदर्भ में यह श्लोक गीता की पोषण-पर्याप्तता की स्तुति करता है — कोई भी दूध नहीं, अपितु सम्पूर्ण उपनिषद्-गायों से दुहा गया दूध। माहात्म्य यहाँ एक व्यापकता का दावा कर रहा है — जो यह दूध पीता है उसने प्रभाव में हर गाय से पिया। इसीलिए पद्म पुराण इसे पाठ के आरंभ में रखता है — यही पूरे माहात्म्य का मूल औचित्य है। (MR)"
+        },
+        {
+          "author": "traditional",
+          "author_name": "Padma Purana — Uttara Khanda",
+          "author_label": "Mahatmya tradition — universally-recited Sanskrit",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "In the Mahatmya context the verse functions as a praise of the Gita's nutritional sufficiency — not just any milk but the milk drawn from the entirety of the Upanishadic herd. The Mahatmya is making a comprehensiveness claim: whoever drinks this milk has effectively drunk from every cow. This is why the Padma Purana places it at the head of the merit-recital — it justifies the premise of the entire Mahatmya. (MR)"
+        },
+        {
+          "author": "traditional",
+          "author_name": "Padma Purana — Uttara Khanda",
+          "author_label": "Mahatmya tradition — Hindi paraphrase",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "माहात्म्य के संदर्भ में यह श्लोक गीता की पोषण-पर्याप्तता की स्तुति करता है — कोई भी दूध नहीं, अपितु सम्पूर्ण उपनिषद्-गायों से दुहा गया दूध। माहात्म्य यहाँ एक व्यापकता का दावा कर रहा है — जो यह दूध पीता है उसने प्रभाव में हर गाय से पिया। इसीलिए पद्म पुराण इसे पाठ के आरंभ में रखता है — यही पूरे माहात्म्य का मूल औचित्य है। (MR)"
+        }
       ],
-      "correlations": [
-        "Devotion"
+      "pronunciation_guide": {
+        "en": "Identical to gita-dhyana-shlokas verse 6. Anushtubh meter — 8 syllables per line. The two shards (Dhyana + Mahatmya) recite this verse at different moments: Dhyana before study, Mahatmya during merit-recitation. Notice the same Sanskrit, different ritual context.",
+        "hi": "गीता ध्यान श्लोक 6 के समान। अनुष्टुप् छन्द। एक ही श्लोक दो भिन्न क्षणों में पाठ्य है — ध्यान-शृंखला में अध्ययन से पूर्व, माहात्म्य-शृंखला में पुण्य-पाठ के समय।"
+      },
+      "ai_metadata": {
+        "topics": [
+          "Stotra",
+          "Prayer"
+        ],
+        "correlations": [
+          "Devotion"
+        ],
+        "fingerprint": "mock-fingerprint",
+        "stats": {
+          "total_layers": 8,
+          "total_words": 10
+        }
+      }
+    },
+    {
+      "id": "gita-mahatmya-3",
+      "verse": 3,
+      "original": "गीता गङ्गा च गायत्री सीता सत्या सरस्वती । ब्रह्मविद्या ब्रह्मवल्ली त्रिसन्ध्या मुक्तिगेहिनी ॥",
+      "transliteration": "gītā gaṅgā ca gāyatrī sītā satyā sarasvatī | brahma-vidyā brahma-vallī tri-sandhyā mukti-gehinī ||",
+      "translation": "The Gita is the Ganga, Gayatri, Sita, Satya (truth), Sarasvati, Brahma-knowledge, Brahma-creeper, the threefold-twilight (sandhya), and the dweller in liberation.",
+      "meaning": "A condensed nomenclature verse. Each name is itself a meditation: Gita as the Ganga (purifying), as Gayatri (the most sacred Vedic mantra), as Sita (consort of Rama, embodiment of dharma), as Sarasvati (goddess of wisdom), as Brahma-vidya (knowledge of the Absolute). The accumulation is not redundancy — it is naming-from-many-angles, as in a stuti. The closing 'mukti-gehini' (the woman who is the home of liberation) personifies the Gita as the abode in which moksha resides.",
+      "layers": [
+        {
+          "author": "padma-purana-tradition",
+          "author_name": "Padma Purana — Uttara Khanda",
+          "author_label": "Mahatmya tradition — universally-recited Sanskrit",
+          "lang": "en",
+          "type": "commentary",
+          "content": "Nine epithets in two lines. The grammatical pattern is naming-as-praise — each name is a meditative entry-point. Notice the architecture: river (Ganga), mantra (Gayatri), goddess-as-dharma (Sita), reality (Satya), goddess-of-wisdom (Sarasvati), knowledge (Brahma-vidya), creeper (Brahma-valli — the climbing plant that reaches the goal), threefold-twilight (the three sandhyas of dawn, noon, dusk), and finally mukti-gehini — she in whom liberation makes its home. The verse exhausts the modes of feminine sacred presence in one breath."
+        },
+        {
+          "author": "padma-purana-tradition",
+          "author_name": "Padma Purana — Uttara Khanda",
+          "author_label": "Mahatmya tradition — Hindi paraphrase",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "दो पंक्तियों में नौ नाम। व्याकरणीय शैली नाम-स्तुति है — प्रत्येक नाम ध्यान का प्रवेश-द्वार। संरचना देखें — नदी (गंगा), मंत्र (गायत्री), धर्म-स्वरूपिणी देवी (सीता), सत्य, ज्ञान-देवी (सरस्वती), ज्ञान (ब्रह्मविद्या), लता (ब्रह्मवल्ली — लक्ष्य तक पहुँचाने वाली बेल), त्रिसंध्या, और अंत में मुक्ति-गेहिनी — वह जिसमें मुक्ति का गृह बसता है। एक श्वास में स्त्री-रूप पवित्र उपस्थिति की समस्त मुद्राएँ समाहित।"
+        },
+        {
+          "author": "traditional",
+          "author_name": "Padma Purana — Uttara Khanda",
+          "author_label": "Mahatmya tradition — universally-recited Sanskrit",
+          "lang": "en",
+          "type": "commentary",
+          "content": "Nine epithets in two lines. The grammatical pattern is naming-as-praise — each name is a meditative entry-point. Notice the architecture: river (Ganga), mantra (Gayatri), goddess-as-dharma (Sita), reality (Satya), goddess-of-wisdom (Sarasvati), knowledge (Brahma-vidya), creeper (Brahma-valli — the climbing plant that reaches the goal), threefold-twilight (the three sandhyas of dawn, noon, dusk), and finally mukti-gehini — she in whom liberation makes its home. The verse exhausts the modes of feminine sacred presence in one breath."
+        },
+        {
+          "author": "traditional",
+          "author_name": "Padma Purana — Uttara Khanda",
+          "author_label": "Mahatmya tradition — Hindi paraphrase",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "दो पंक्तियों में नौ नाम। व्याकरणीय शैली नाम-स्तुति है — प्रत्येक नाम ध्यान का प्रवेश-द्वार। संरचना देखें — नदी (गंगा), मंत्र (गायत्री), धर्म-स्वरूपिणी देवी (सीता), सत्य, ज्ञान-देवी (सरस्वती), ज्ञान (ब्रह्मविद्या), लता (ब्रह्मवल्ली — लक्ष्य तक पहुँचाने वाली बेल), त्रिसंध्या, और अंत में मुक्ति-गेहिनी — वह जिसमें मुक्ति का गृह बसता है। एक श्वास में स्त्री-रूप पवित्र उपस्थिति की समस्त मुद्राएँ समाहित।"
+        },
+        {
+          "author": "padma-purana-tradition",
+          "author_name": "Padma Purana — Uttara Khanda",
+          "author_label": "Mahatmya tradition — universally-recited Sanskrit",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "Nine epithets in two lines. The grammatical pattern is naming-as-praise — each name is a meditative entry-point. Notice the architecture: river (Ganga), mantra (Gayatri), goddess-as-dharma (Sita), reality (Satya), goddess-of-wisdom (Sarasvati), knowledge (Brahma-vidya), creeper (Brahma-valli — the climbing plant that reaches the goal), threefold-twilight (the three sandhyas of dawn, noon, dusk), and finally mukti-gehini — she in whom liberation makes its home. The verse exhausts the modes of feminine sacred presence in one breath. (MR)"
+        },
+        {
+          "author": "padma-purana-tradition",
+          "author_name": "Padma Purana — Uttara Khanda",
+          "author_label": "Mahatmya tradition — Hindi paraphrase",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "दो पंक्तियों में नौ नाम। व्याकरणीय शैली नाम-स्तुति है — प्रत्येक नाम ध्यान का प्रवेश-द्वार। संरचना देखें — नदी (गंगा), मंत्र (गायत्री), धर्म-स्वरूपिणी देवी (सीता), सत्य, ज्ञान-देवी (सरस्वती), ज्ञान (ब्रह्मविद्या), लता (ब्रह्मवल्ली — लक्ष्य तक पहुँचाने वाली बेल), त्रिसंध्या, और अंत में मुक्ति-गेहिनी — वह जिसमें मुक्ति का गृह बसता है। एक श्वास में स्त्री-रूप पवित्र उपस्थिति की समस्त मुद्राएँ समाहित। (MR)"
+        },
+        {
+          "author": "traditional",
+          "author_name": "Padma Purana — Uttara Khanda",
+          "author_label": "Mahatmya tradition — universally-recited Sanskrit",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "Nine epithets in two lines. The grammatical pattern is naming-as-praise — each name is a meditative entry-point. Notice the architecture: river (Ganga), mantra (Gayatri), goddess-as-dharma (Sita), reality (Satya), goddess-of-wisdom (Sarasvati), knowledge (Brahma-vidya), creeper (Brahma-valli — the climbing plant that reaches the goal), threefold-twilight (the three sandhyas of dawn, noon, dusk), and finally mukti-gehini — she in whom liberation makes its home. The verse exhausts the modes of feminine sacred presence in one breath. (MR)"
+        },
+        {
+          "author": "traditional",
+          "author_name": "Padma Purana — Uttara Khanda",
+          "author_label": "Mahatmya tradition — Hindi paraphrase",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "दो पंक्तियों में नौ नाम। व्याकरणीय शैली नाम-स्तुति है — प्रत्येक नाम ध्यान का प्रवेश-द्वार। संरचना देखें — नदी (गंगा), मंत्र (गायत्री), धर्म-स्वरूपिणी देवी (सीता), सत्य, ज्ञान-देवी (सरस्वती), ज्ञान (ब्रह्मविद्या), लता (ब्रह्मवल्ली — लक्ष्य तक पहुँचाने वाली बेल), त्रिसंध्या, और अंत में मुक्ति-गेहिनी — वह जिसमें मुक्ति का गृह बसता है। एक श्वास में स्त्री-रूप पवित्र उपस्थिति की समस्त मुद्राएँ समाहित। (MR)"
+        }
       ],
-      "fingerprint": "mock-fingerprint",
-      "stats": {
-        "total_layers": 8,
-        "total_words": 10
+      "pronunciation_guide": {
+        "en": "Anushtubh meter. Each name receives equal stress — the verse is a mala (rosary) of names. Gītā: GEE-taa. Gaṅgā: GUNG-gaa. Gāyatrī: gaa-ya-TREE. Sītā: SEE-taa. Satyā: SAT-yaa. Sarasvatī: sa-ras-va-TEE. Brahma-vidyā: BRAH-ma-vid-YAA. Brahma-vallī: BRAH-ma-VAL-lee. Tri-sandhyā: tri-SAN-dhyaa. Mukti-gehinī: muk-ti-GAY-hi-nee. Recite as a continuous rosary without rushing.",
+        "hi": "अनुष्टुप् छन्द। प्रत्येक नाम पर समान बल — यह श्लोक एक नाम-माला है। 'त्रिसन्ध्या' — तीनों सन्ध्याएँ (प्रातः, मध्याह्न, सायं)। 'मुक्तिगेहिनी' — मुक्ति-गेह-इनी (मुक्ति का घर बनने वाली)। बिना जल्दबाज़ी के माला की तरह पाठ करें।"
+      },
+      "ai_metadata": {
+        "topics": [
+          "Stotra",
+          "Prayer"
+        ],
+        "correlations": [
+          "Devotion"
+        ],
+        "fingerprint": "mock-fingerprint",
+        "stats": {
+          "total_layers": 8,
+          "total_words": 10
+        }
+      }
+    },
+    {
+      "id": "gita-mahatmya-4",
+      "verse": 4,
+      "original": "अर्धमात्रा-अक्षरा नित्या अनिर्वाच्या पदात्मिका । चिदानन्देन कृष्णेन प्रोक्ता स्वमुखतोऽर्जुनम् ॥",
+      "transliteration": "ardha-mātrā-akṣarā nityā anirvācyā padātmikā | cid-ānandena kṛṣṇena proktā sva-mukhato'rjunam ||",
+      "translation": "She of half-measure and syllables, eternal, indescribable, of the nature of pada (foot/word) — spoken to Arjuna from his own lips by Krishna who is consciousness-bliss.",
+      "meaning": "A more esoteric Mahatmya verse — characterizes the Gita using the language of mantra-shastra. 'Ardha-matra-akshara' refers to the half-measure that completes Aum (the silence after the M). 'Nitya' (eternal) and 'anirvacya' (indescribable) are technical terms from Advaita Vedanta. 'Pad-atmika' — embodied as syllabic feet — points to the Gita as itself a mantra-body, not merely a discourse about Brahman.",
+      "layers": [
+        {
+          "author": "padma-purana-tradition",
+          "author_name": "Padma Purana — Uttara Khanda",
+          "author_label": "Mahatmya tradition — universally-recited Sanskrit",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The verse moves the Gita from the category of 'discourse about Brahman' to the category of 'mantra-body of Brahman'. 'Ardha-matra' is the half-measure that completes the pranava Aum — the silence after M, which is technically not pronounceable but is the substratum of the three sounds. By calling the Gita 'ardha-matra-aksara', the Mahatmya tradition asserts that the Gita's sound-body is non-different from the cosmic sound itself. 'Cid-ananda' (consciousness-bliss) is the Advaita Vedanta technical name for Brahman — Krishna is here named not by his biographical role but by his ontological status."
+        },
+        {
+          "author": "padma-purana-tradition",
+          "author_name": "Padma Purana — Uttara Khanda",
+          "author_label": "Mahatmya tradition — Hindi paraphrase",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "यह श्लोक गीता को 'ब्रह्म पर उपदेश' की श्रेणी से 'ब्रह्म के मंत्र-शरीर' की श्रेणी में स्थानांतरित करता है। 'अर्धमात्रा' वह आधी मात्रा है जो प्रणव ॐ को पूर्ण करती है — म् के बाद का मौन, जो तकनीकी रूप से उच्चारणीय नहीं परन्तु तीनों ध्वनियों का आधार है। गीता को 'अर्धमात्राक्षरा' कहकर माहात्म्य परंपरा यह घोषित करती है कि गीता का शब्द-शरीर ब्रह्मांडीय शब्द से अभिन्न है। 'चिदानन्द' अद्वैत वेदान्त का ब्रह्म-वाचक तकनीकी शब्द है — कृष्ण को यहाँ जीवनी-भूमिका से नहीं, अपितु सत्ता-शास्त्रीय स्थान से नामित किया गया है।"
+        },
+        {
+          "author": "traditional",
+          "author_name": "Padma Purana — Uttara Khanda",
+          "author_label": "Mahatmya tradition — universally-recited Sanskrit",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The verse moves the Gita from the category of 'discourse about Brahman' to the category of 'mantra-body of Brahman'. 'Ardha-matra' is the half-measure that completes the pranava Aum — the silence after M, which is technically not pronounceable but is the substratum of the three sounds. By calling the Gita 'ardha-matra-aksara', the Mahatmya tradition asserts that the Gita's sound-body is non-different from the cosmic sound itself. 'Cid-ananda' (consciousness-bliss) is the Advaita Vedanta technical name for Brahman — Krishna is here named not by his biographical role but by his ontological status."
+        },
+        {
+          "author": "traditional",
+          "author_name": "Padma Purana — Uttara Khanda",
+          "author_label": "Mahatmya tradition — Hindi paraphrase",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "यह श्लोक गीता को 'ब्रह्म पर उपदेश' की श्रेणी से 'ब्रह्म के मंत्र-शरीर' की श्रेणी में स्थानांतरित करता है। 'अर्धमात्रा' वह आधी मात्रा है जो प्रणव ॐ को पूर्ण करती है — म् के बाद का मौन, जो तकनीकी रूप से उच्चारणीय नहीं परन्तु तीनों ध्वनियों का आधार है। गीता को 'अर्धमात्राक्षरा' कहकर माहात्म्य परंपरा यह घोषित करती है कि गीता का शब्द-शरीर ब्रह्मांडीय शब्द से अभिन्न है। 'चिदानन्द' अद्वैत वेदान्त का ब्रह्म-वाचक तकनीकी शब्द है — कृष्ण को यहाँ जीवनी-भूमिका से नहीं, अपितु सत्ता-शास्त्रीय स्थान से नामित किया गया है।"
+        },
+        {
+          "author": "padma-purana-tradition",
+          "author_name": "Padma Purana — Uttara Khanda",
+          "author_label": "Mahatmya tradition — universally-recited Sanskrit",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "The verse moves the Gita from the category of 'discourse about Brahman' to the category of 'mantra-body of Brahman'. 'Ardha-matra' is the half-measure that completes the pranava Aum — the silence after M, which is technically not pronounceable but is the substratum of the three sounds. By calling the Gita 'ardha-matra-aksara', the Mahatmya tradition asserts that the Gita's sound-body is non-different from the cosmic sound itself. 'Cid-ananda' (consciousness-bliss) is the Advaita Vedanta technical name for Brahman — Krishna is here named not by his biographical role but by his ontological status. (MR)"
+        },
+        {
+          "author": "padma-purana-tradition",
+          "author_name": "Padma Purana — Uttara Khanda",
+          "author_label": "Mahatmya tradition — Hindi paraphrase",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "यह श्लोक गीता को 'ब्रह्म पर उपदेश' की श्रेणी से 'ब्रह्म के मंत्र-शरीर' की श्रेणी में स्थानांतरित करता है। 'अर्धमात्रा' वह आधी मात्रा है जो प्रणव ॐ को पूर्ण करती है — म् के बाद का मौन, जो तकनीकी रूप से उच्चारणीय नहीं परन्तु तीनों ध्वनियों का आधार है। गीता को 'अर्धमात्राक्षरा' कहकर माहात्म्य परंपरा यह घोषित करती है कि गीता का शब्द-शरीर ब्रह्मांडीय शब्द से अभिन्न है। 'चिदानन्द' अद्वैत वेदान्त का ब्रह्म-वाचक तकनीकी शब्द है — कृष्ण को यहाँ जीवनी-भूमिका से नहीं, अपितु सत्ता-शास्त्रीय स्थान से नामित किया गया है। (MR)"
+        },
+        {
+          "author": "traditional",
+          "author_name": "Padma Purana — Uttara Khanda",
+          "author_label": "Mahatmya tradition — universally-recited Sanskrit",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "The verse moves the Gita from the category of 'discourse about Brahman' to the category of 'mantra-body of Brahman'. 'Ardha-matra' is the half-measure that completes the pranava Aum — the silence after M, which is technically not pronounceable but is the substratum of the three sounds. By calling the Gita 'ardha-matra-aksara', the Mahatmya tradition asserts that the Gita's sound-body is non-different from the cosmic sound itself. 'Cid-ananda' (consciousness-bliss) is the Advaita Vedanta technical name for Brahman — Krishna is here named not by his biographical role but by his ontological status. (MR)"
+        },
+        {
+          "author": "traditional",
+          "author_name": "Padma Purana — Uttara Khanda",
+          "author_label": "Mahatmya tradition — Hindi paraphrase",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "यह श्लोक गीता को 'ब्रह्म पर उपदेश' की श्रेणी से 'ब्रह्म के मंत्र-शरीर' की श्रेणी में स्थानांतरित करता है। 'अर्धमात्रा' वह आधी मात्रा है जो प्रणव ॐ को पूर्ण करती है — म् के बाद का मौन, जो तकनीकी रूप से उच्चारणीय नहीं परन्तु तीनों ध्वनियों का आधार है। गीता को 'अर्धमात्राक्षरा' कहकर माहात्म्य परंपरा यह घोषित करती है कि गीता का शब्द-शरीर ब्रह्मांडीय शब्द से अभिन्न है। 'चिदानन्द' अद्वैत वेदान्त का ब्रह्म-वाचक तकनीकी शब्द है — कृष्ण को यहाँ जीवनी-भूमिका से नहीं, अपितु सत्ता-शास्त्रीय स्थान से नामित किया गया है। (MR)"
+        }
+      ],
+      "pronunciation_guide": {
+        "en": "This verse contains technical mantra-shastra vocabulary. Ardha-mātrā: ar-dha-MAA-traa (half-measure). Akṣarā: AK-sha-raa (syllable / imperishable — pun is intentional). Anirvācyā: a-nir-VAA-chyaa (indescribable). Padātmikā: pa-DAAT-mi-kaa (whose nature is pada — foot/syllable/word). Cid-ānandena: CHID-aa-NAN-de-na. Pause briefly after each compound to let its meaning unfold.",
+        "hi": "यह श्लोक मंत्र-शास्त्रीय शब्दावली से युक्त है। 'अर्धमात्रा' — आधी मात्रा (ॐ की अंतिम)। 'अक्षरा' का दोहरा अर्थ है — अक्षर (अविनाशी) और स्वर। 'अनिर्वाच्या' — अनिर्वाच्या (वर्णन-अयोग्य)। 'पदात्मिका' — पद-आत्मिका। प्रत्येक समास के बाद थोड़ा रुकें ताकि अर्थ खुले।"
+      },
+      "ai_metadata": {
+        "topics": [
+          "Stotra",
+          "Prayer"
+        ],
+        "correlations": [
+          "Devotion"
+        ],
+        "fingerprint": "mock-fingerprint",
+        "stats": {
+          "total_layers": 8,
+          "total_words": 10
+        }
+      }
+    },
+    {
+      "id": "gita-mahatmya-5",
+      "verse": 5,
+      "original": "यत्र योगेश्वरः कृष्णो यत्र पार्थो धनुर्धरः । तत्र श्रीर्विजयो भूतिर्ध्रुवा नीतिर्मतिर्मम ॥",
+      "transliteration": "yatra yogeśvaraḥ kṛṣṇo yatra pārtho dhanur-dharaḥ | tatra śrīr vijayo bhūtir dhruvā nītir matir mama ||",
+      "translation": "Wherever Krishna the Lord of Yoga is, and wherever Arjuna the bow-bearer is — there will be prosperity, victory, abundance, and unwavering moral order. This is my conviction. (Spoken by Sanjaya.)",
+      "meaning": "The famous closing verse of the Bhagavad Gita itself (BG 18.78) — also recited as the closing Mahatmya verse. Sanjaya, the narrator who has seen the entire Kurukshetra dialogue through his divine sight, ends the Gita with his own conviction. The verse functions as a benediction at the close of any Gita recitation, study session, or ritual. It is among the most quoted single verses of the entire Hindu canon.",
+      "layers": [
+        {
+          "author": "padma-purana-tradition",
+          "author_name": "Bhagavad Gita 18.78 (Sanjaya) + Mahatmya closing",
+          "author_label": "Universally-recited closing benediction",
+          "lang": "en",
+          "type": "commentary",
+          "content": "This verse is unique in the Mahatmya sequence — it is itself a Gita verse (18.78) rather than a verse about the Gita. The Mahatmya tradition closes with it because it embodies what the Gita gives: wherever the teaching and the seeker are joined (Krishna + Arjuna), there is sri (auspiciousness), vijaya (victory), bhuti (well-being), and dhruva-niti (firm moral order). Sanjaya's last word in the entire Gita is 'matir mama' — 'this is my conviction'. The Mahatmya tradition adopts Sanjaya's conviction as its own closing affirmation."
+        },
+        {
+          "author": "padma-purana-tradition",
+          "author_name": "Bhagavad Gita 18.78 (Sanjaya) + Mahatmya closing",
+          "author_label": "Universally-recited closing benediction — Hindi",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "यह श्लोक माहात्म्य-क्रम में अद्वितीय है — स्वयं गीता का श्लोक (18.78) है, गीता-विषयक नहीं। माहात्म्य परंपरा इसी से समापन करती है क्योंकि यह व्यक्त करता है कि गीता क्या देती है — जहाँ उपदेश और साधक एक साथ हैं (कृष्ण + अर्जुन), वहाँ श्री, विजय, भूति और ध्रुव-नीति है। संजय का गीता में अंतिम शब्द है 'मतिर्मम' — 'यही मेरा निश्चय है'। माहात्म्य परंपरा संजय के निश्चय को अपना अंतिम घोषवाक्य बना लेती है।"
+        },
+        {
+          "author": "traditional",
+          "author_name": "Bhagavad Gita 18.78 (Sanjaya) + Mahatmya closing",
+          "author_label": "Universally-recited closing benediction",
+          "lang": "en",
+          "type": "commentary",
+          "content": "This verse is unique in the Mahatmya sequence — it is itself a Gita verse (18.78) rather than a verse about the Gita. The Mahatmya tradition closes with it because it embodies what the Gita gives: wherever the teaching and the seeker are joined (Krishna + Arjuna), there is sri (auspiciousness), vijaya (victory), bhuti (well-being), and dhruva-niti (firm moral order). Sanjaya's last word in the entire Gita is 'matir mama' — 'this is my conviction'. The Mahatmya tradition adopts Sanjaya's conviction as its own closing affirmation."
+        },
+        {
+          "author": "traditional",
+          "author_name": "Bhagavad Gita 18.78 (Sanjaya) + Mahatmya closing",
+          "author_label": "Universally-recited closing benediction — Hindi",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "यह श्लोक माहात्म्य-क्रम में अद्वितीय है — स्वयं गीता का श्लोक (18.78) है, गीता-विषयक नहीं। माहात्म्य परंपरा इसी से समापन करती है क्योंकि यह व्यक्त करता है कि गीता क्या देती है — जहाँ उपदेश और साधक एक साथ हैं (कृष्ण + अर्जुन), वहाँ श्री, विजय, भूति और ध्रुव-नीति है। संजय का गीता में अंतिम शब्द है 'मतिर्मम' — 'यही मेरा निश्चय है'। माहात्म्य परंपरा संजय के निश्चय को अपना अंतिम घोषवाक्य बना लेती है।"
+        },
+        {
+          "author": "padma-purana-tradition",
+          "author_name": "Bhagavad Gita 18.78 (Sanjaya) + Mahatmya closing",
+          "author_label": "Universally-recited closing benediction",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "This verse is unique in the Mahatmya sequence — it is itself a Gita verse (18.78) rather than a verse about the Gita. The Mahatmya tradition closes with it because it embodies what the Gita gives: wherever the teaching and the seeker are joined (Krishna + Arjuna), there is sri (auspiciousness), vijaya (victory), bhuti (well-being), and dhruva-niti (firm moral order). Sanjaya's last word in the entire Gita is 'matir mama' — 'this is my conviction'. The Mahatmya tradition adopts Sanjaya's conviction as its own closing affirmation. (MR)"
+        },
+        {
+          "author": "padma-purana-tradition",
+          "author_name": "Bhagavad Gita 18.78 (Sanjaya) + Mahatmya closing",
+          "author_label": "Universally-recited closing benediction — Hindi",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "यह श्लोक माहात्म्य-क्रम में अद्वितीय है — स्वयं गीता का श्लोक (18.78) है, गीता-विषयक नहीं। माहात्म्य परंपरा इसी से समापन करती है क्योंकि यह व्यक्त करता है कि गीता क्या देती है — जहाँ उपदेश और साधक एक साथ हैं (कृष्ण + अर्जुन), वहाँ श्री, विजय, भूति और ध्रुव-नीति है। संजय का गीता में अंतिम शब्द है 'मतिर्मम' — 'यही मेरा निश्चय है'। माहात्म्य परंपरा संजय के निश्चय को अपना अंतिम घोषवाक्य बना लेती है। (MR)"
+        },
+        {
+          "author": "traditional",
+          "author_name": "Bhagavad Gita 18.78 (Sanjaya) + Mahatmya closing",
+          "author_label": "Universally-recited closing benediction",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "This verse is unique in the Mahatmya sequence — it is itself a Gita verse (18.78) rather than a verse about the Gita. The Mahatmya tradition closes with it because it embodies what the Gita gives: wherever the teaching and the seeker are joined (Krishna + Arjuna), there is sri (auspiciousness), vijaya (victory), bhuti (well-being), and dhruva-niti (firm moral order). Sanjaya's last word in the entire Gita is 'matir mama' — 'this is my conviction'. The Mahatmya tradition adopts Sanjaya's conviction as its own closing affirmation. (MR)"
+        },
+        {
+          "author": "traditional",
+          "author_name": "Bhagavad Gita 18.78 (Sanjaya) + Mahatmya closing",
+          "author_label": "Universally-recited closing benediction — Hindi",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "यह श्लोक माहात्म्य-क्रम में अद्वितीय है — स्वयं गीता का श्लोक (18.78) है, गीता-विषयक नहीं। माहात्म्य परंपरा इसी से समापन करती है क्योंकि यह व्यक्त करता है कि गीता क्या देती है — जहाँ उपदेश और साधक एक साथ हैं (कृष्ण + अर्जुन), वहाँ श्री, विजय, भूति और ध्रुव-नीति है। संजय का गीता में अंतिम शब्द है 'मतिर्मम' — 'यही मेरा निश्चय है'। माहात्म्य परंपरा संजय के निश्चय को अपना अंतिम घोषवाक्य बना लेती है। (MR)"
+        }
+      ],
+      "pronunciation_guide": {
+        "en": "Anushtubh meter. The most quoted single verse in Hindu tradition — recited at the close of Gita study, weddings, rituals, and as a daily benediction. Yatra: YA-tra. Yogeśvaraḥ: yo-GAY-shva-rah. Kṛṣṇo: KRISH-no. Dhanur-dharaḥ: dha-NUR-dha-rah. Śrīr-vijayo: SHREER-vi-JA-yo (long ee). Dhruvā nītir matir mama: DHRU-vaa NEE-tir MA-tir MA-ma. Pause fully on the final 'mama' — Sanjaya's signature.",
+        "hi": "अनुष्टुप् छन्द। हिन्दू परंपरा में सर्वाधिक उद्धृत एकल श्लोक — गीता-पाठ के समापन में, विवाह में, अनुष्ठानों में, और दैनिक मंगल-पाठ के रूप में। 'यत्र' दो बार आता है — दोनों पर समान बल। 'धनुर्धरः' — धनुष धारण करने वाला। 'मतिर्मम' पर पूर्ण विराम लें — यह संजय का हस्ताक्षर है।"
+      },
+      "ai_metadata": {
+        "topics": [
+          "Stotra",
+          "Prayer"
+        ],
+        "correlations": [
+          "Devotion"
+        ],
+        "fingerprint": "mock-fingerprint",
+        "stats": {
+          "total_layers": 8,
+          "total_words": 10
+        }
       }
     }
-  },
-  {
-    "id": "gita-mahatmya-2",
-    "verse": 2,
-    "original": "सर्वोपनिषदो गावो दोग्धा गोपालनन्दनः । पार्थो वत्सः सुधीर्भोक्ता दुग्धं गीतामृतं महत् ॥",
-    "transliteration": "sarvopaniṣado gāvo dogdhā gopāla-nandanaḥ | pārtho vatsaḥ sudhīr bhoktā dugdhaṃ gītāmṛtaṃ mahat ||",
-    "translation": "All the Upanishads are the cows; the cowherd's son (Krishna) is the milker; Arjuna is the calf; the wise are the drinkers; the milk is the great Gita-nectar.",
-    "meaning": "This verse appears in two distinct ritual contexts. As a Dhyana Shloka it sets the meditation-frame before Gita study (see gita-dhyana-shlokas verse 6). As a Mahatmya verse it appears in the Padma Purana sequence praising the Gita's nature. The double presence is intentional: the verse maps the entire transmission economy of the Gita — source, milker, occasion, recipients, substance. It is included in both shards.",
-    "layers": [
-      {
-        "author": "padma-purana-tradition",
-        "author_name": "Padma Purana — Uttara Khanda",
-        "author_label": "Mahatmya tradition — universally-recited Sanskrit",
-        "lang": "en",
-        "type": "commentary",
-        "content": "In the Mahatmya context the verse functions as a praise of the Gita's nutritional sufficiency — not just any milk but the milk drawn from the entirety of the Upanishadic herd. The Mahatmya is making a comprehensiveness claim: whoever drinks this milk has effectively drunk from every cow. This is why the Padma Purana places it at the head of the merit-recital — it justifies the premise of the entire Mahatmya."
-      },
-      {
-        "author": "padma-purana-tradition",
-        "author_name": "Padma Purana — Uttara Khanda",
-        "author_label": "Mahatmya tradition — Hindi paraphrase",
-        "lang": "hi",
-        "type": "commentary",
-        "content": "माहात्म्य के संदर्भ में यह श्लोक गीता की पोषण-पर्याप्तता की स्तुति करता है — कोई भी दूध नहीं, अपितु सम्पूर्ण उपनिषद्-गायों से दुहा गया दूध। माहात्म्य यहाँ एक व्यापकता का दावा कर रहा है — जो यह दूध पीता है उसने प्रभाव में हर गाय से पिया। इसीलिए पद्म पुराण इसे पाठ के आरंभ में रखता है — यही पूरे माहात्म्य का मूल औचित्य है।"
-      },
-      {
-        "author": "traditional",
-        "author_name": "Padma Purana — Uttara Khanda",
-        "author_label": "Mahatmya tradition — universally-recited Sanskrit",
-        "lang": "en",
-        "type": "commentary",
-        "content": "In the Mahatmya context the verse functions as a praise of the Gita's nutritional sufficiency — not just any milk but the milk drawn from the entirety of the Upanishadic herd. The Mahatmya is making a comprehensiveness claim: whoever drinks this milk has effectively drunk from every cow. This is why the Padma Purana places it at the head of the merit-recital — it justifies the premise of the entire Mahatmya."
-      },
-      {
-        "author": "traditional",
-        "author_name": "Padma Purana — Uttara Khanda",
-        "author_label": "Mahatmya tradition — Hindi paraphrase",
-        "lang": "hi",
-        "type": "commentary",
-        "content": "माहात्म्य के संदर्भ में यह श्लोक गीता की पोषण-पर्याप्तता की स्तुति करता है — कोई भी दूध नहीं, अपितु सम्पूर्ण उपनिषद्-गायों से दुहा गया दूध। माहात्म्य यहाँ एक व्यापकता का दावा कर रहा है — जो यह दूध पीता है उसने प्रभाव में हर गाय से पिया। इसीलिए पद्म पुराण इसे पाठ के आरंभ में रखता है — यही पूरे माहात्म्य का मूल औचित्य है।"
-      },
-      {
-        "author": "padma-purana-tradition",
-        "author_name": "Padma Purana — Uttara Khanda",
-        "author_label": "Mahatmya tradition — universally-recited Sanskrit",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "In the Mahatmya context the verse functions as a praise of the Gita's nutritional sufficiency — not just any milk but the milk drawn from the entirety of the Upanishadic herd. The Mahatmya is making a comprehensiveness claim: whoever drinks this milk has effectively drunk from every cow. This is why the Padma Purana places it at the head of the merit-recital — it justifies the premise of the entire Mahatmya. (MR)"
-      },
-      {
-        "author": "padma-purana-tradition",
-        "author_name": "Padma Purana — Uttara Khanda",
-        "author_label": "Mahatmya tradition — Hindi paraphrase",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "माहात्म्य के संदर्भ में यह श्लोक गीता की पोषण-पर्याप्तता की स्तुति करता है — कोई भी दूध नहीं, अपितु सम्पूर्ण उपनिषद्-गायों से दुहा गया दूध। माहात्म्य यहाँ एक व्यापकता का दावा कर रहा है — जो यह दूध पीता है उसने प्रभाव में हर गाय से पिया। इसीलिए पद्म पुराण इसे पाठ के आरंभ में रखता है — यही पूरे माहात्म्य का मूल औचित्य है। (MR)"
-      },
-      {
-        "author": "traditional",
-        "author_name": "Padma Purana — Uttara Khanda",
-        "author_label": "Mahatmya tradition — universally-recited Sanskrit",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "In the Mahatmya context the verse functions as a praise of the Gita's nutritional sufficiency — not just any milk but the milk drawn from the entirety of the Upanishadic herd. The Mahatmya is making a comprehensiveness claim: whoever drinks this milk has effectively drunk from every cow. This is why the Padma Purana places it at the head of the merit-recital — it justifies the premise of the entire Mahatmya. (MR)"
-      },
-      {
-        "author": "traditional",
-        "author_name": "Padma Purana — Uttara Khanda",
-        "author_label": "Mahatmya tradition — Hindi paraphrase",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "माहात्म्य के संदर्भ में यह श्लोक गीता की पोषण-पर्याप्तता की स्तुति करता है — कोई भी दूध नहीं, अपितु सम्पूर्ण उपनिषद्-गायों से दुहा गया दूध। माहात्म्य यहाँ एक व्यापकता का दावा कर रहा है — जो यह दूध पीता है उसने प्रभाव में हर गाय से पिया। इसीलिए पद्म पुराण इसे पाठ के आरंभ में रखता है — यही पूरे माहात्म्य का मूल औचित्य है। (MR)"
-      }
-    ],
-    "pronunciation_guide": {
-      "en": "Identical to gita-dhyana-shlokas verse 6. Anushtubh meter — 8 syllables per line. The two shards (Dhyana + Mahatmya) recite this verse at different moments: Dhyana before study, Mahatmya during merit-recitation. Notice the same Sanskrit, different ritual context.",
-      "hi": "गीता ध्यान श्लोक 6 के समान। अनुष्टुप् छन्द। एक ही श्लोक दो भिन्न क्षणों में पाठ्य है — ध्यान-शृंखला में अध्ययन से पूर्व, माहात्म्य-शृंखला में पुण्य-पाठ के समय।"
-    },
-    "ai_metadata": {
-      "topics": [
-        "Stotra",
-        "Prayer"
-      ],
-      "correlations": [
-        "Devotion"
-      ],
-      "fingerprint": "mock-fingerprint",
-      "stats": {
-        "total_layers": 8,
-        "total_words": 10
-      }
-    }
-  },
-  {
-    "id": "gita-mahatmya-3",
-    "verse": 3,
-    "original": "गीता गङ्गा च गायत्री सीता सत्या सरस्वती । ब्रह्मविद्या ब्रह्मवल्ली त्रिसन्ध्या मुक्तिगेहिनी ॥",
-    "transliteration": "gītā gaṅgā ca gāyatrī sītā satyā sarasvatī | brahma-vidyā brahma-vallī tri-sandhyā mukti-gehinī ||",
-    "translation": "The Gita is the Ganga, Gayatri, Sita, Satya (truth), Sarasvati, Brahma-knowledge, Brahma-creeper, the threefold-twilight (sandhya), and the dweller in liberation.",
-    "meaning": "A condensed nomenclature verse. Each name is itself a meditation: Gita as the Ganga (purifying), as Gayatri (the most sacred Vedic mantra), as Sita (consort of Rama, embodiment of dharma), as Sarasvati (goddess of wisdom), as Brahma-vidya (knowledge of the Absolute). The accumulation is not redundancy — it is naming-from-many-angles, as in a stuti. The closing 'mukti-gehini' (the woman who is the home of liberation) personifies the Gita as the abode in which moksha resides.",
-    "layers": [
-      {
-        "author": "padma-purana-tradition",
-        "author_name": "Padma Purana — Uttara Khanda",
-        "author_label": "Mahatmya tradition — universally-recited Sanskrit",
-        "lang": "en",
-        "type": "commentary",
-        "content": "Nine epithets in two lines. The grammatical pattern is naming-as-praise — each name is a meditative entry-point. Notice the architecture: river (Ganga), mantra (Gayatri), goddess-as-dharma (Sita), reality (Satya), goddess-of-wisdom (Sarasvati), knowledge (Brahma-vidya), creeper (Brahma-valli — the climbing plant that reaches the goal), threefold-twilight (the three sandhyas of dawn, noon, dusk), and finally mukti-gehini — she in whom liberation makes its home. The verse exhausts the modes of feminine sacred presence in one breath."
-      },
-      {
-        "author": "padma-purana-tradition",
-        "author_name": "Padma Purana — Uttara Khanda",
-        "author_label": "Mahatmya tradition — Hindi paraphrase",
-        "lang": "hi",
-        "type": "commentary",
-        "content": "दो पंक्तियों में नौ नाम। व्याकरणीय शैली नाम-स्तुति है — प्रत्येक नाम ध्यान का प्रवेश-द्वार। संरचना देखें — नदी (गंगा), मंत्र (गायत्री), धर्म-स्वरूपिणी देवी (सीता), सत्य, ज्ञान-देवी (सरस्वती), ज्ञान (ब्रह्मविद्या), लता (ब्रह्मवल्ली — लक्ष्य तक पहुँचाने वाली बेल), त्रिसंध्या, और अंत में मुक्ति-गेहिनी — वह जिसमें मुक्ति का गृह बसता है। एक श्वास में स्त्री-रूप पवित्र उपस्थिति की समस्त मुद्राएँ समाहित।"
-      },
-      {
-        "author": "traditional",
-        "author_name": "Padma Purana — Uttara Khanda",
-        "author_label": "Mahatmya tradition — universally-recited Sanskrit",
-        "lang": "en",
-        "type": "commentary",
-        "content": "Nine epithets in two lines. The grammatical pattern is naming-as-praise — each name is a meditative entry-point. Notice the architecture: river (Ganga), mantra (Gayatri), goddess-as-dharma (Sita), reality (Satya), goddess-of-wisdom (Sarasvati), knowledge (Brahma-vidya), creeper (Brahma-valli — the climbing plant that reaches the goal), threefold-twilight (the three sandhyas of dawn, noon, dusk), and finally mukti-gehini — she in whom liberation makes its home. The verse exhausts the modes of feminine sacred presence in one breath."
-      },
-      {
-        "author": "traditional",
-        "author_name": "Padma Purana — Uttara Khanda",
-        "author_label": "Mahatmya tradition — Hindi paraphrase",
-        "lang": "hi",
-        "type": "commentary",
-        "content": "दो पंक्तियों में नौ नाम। व्याकरणीय शैली नाम-स्तुति है — प्रत्येक नाम ध्यान का प्रवेश-द्वार। संरचना देखें — नदी (गंगा), मंत्र (गायत्री), धर्म-स्वरूपिणी देवी (सीता), सत्य, ज्ञान-देवी (सरस्वती), ज्ञान (ब्रह्मविद्या), लता (ब्रह्मवल्ली — लक्ष्य तक पहुँचाने वाली बेल), त्रिसंध्या, और अंत में मुक्ति-गेहिनी — वह जिसमें मुक्ति का गृह बसता है। एक श्वास में स्त्री-रूप पवित्र उपस्थिति की समस्त मुद्राएँ समाहित।"
-      },
-      {
-        "author": "padma-purana-tradition",
-        "author_name": "Padma Purana — Uttara Khanda",
-        "author_label": "Mahatmya tradition — universally-recited Sanskrit",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "Nine epithets in two lines. The grammatical pattern is naming-as-praise — each name is a meditative entry-point. Notice the architecture: river (Ganga), mantra (Gayatri), goddess-as-dharma (Sita), reality (Satya), goddess-of-wisdom (Sarasvati), knowledge (Brahma-vidya), creeper (Brahma-valli — the climbing plant that reaches the goal), threefold-twilight (the three sandhyas of dawn, noon, dusk), and finally mukti-gehini — she in whom liberation makes its home. The verse exhausts the modes of feminine sacred presence in one breath. (MR)"
-      },
-      {
-        "author": "padma-purana-tradition",
-        "author_name": "Padma Purana — Uttara Khanda",
-        "author_label": "Mahatmya tradition — Hindi paraphrase",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "दो पंक्तियों में नौ नाम। व्याकरणीय शैली नाम-स्तुति है — प्रत्येक नाम ध्यान का प्रवेश-द्वार। संरचना देखें — नदी (गंगा), मंत्र (गायत्री), धर्म-स्वरूपिणी देवी (सीता), सत्य, ज्ञान-देवी (सरस्वती), ज्ञान (ब्रह्मविद्या), लता (ब्रह्मवल्ली — लक्ष्य तक पहुँचाने वाली बेल), त्रिसंध्या, और अंत में मुक्ति-गेहिनी — वह जिसमें मुक्ति का गृह बसता है। एक श्वास में स्त्री-रूप पवित्र उपस्थिति की समस्त मुद्राएँ समाहित। (MR)"
-      },
-      {
-        "author": "traditional",
-        "author_name": "Padma Purana — Uttara Khanda",
-        "author_label": "Mahatmya tradition — universally-recited Sanskrit",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "Nine epithets in two lines. The grammatical pattern is naming-as-praise — each name is a meditative entry-point. Notice the architecture: river (Ganga), mantra (Gayatri), goddess-as-dharma (Sita), reality (Satya), goddess-of-wisdom (Sarasvati), knowledge (Brahma-vidya), creeper (Brahma-valli — the climbing plant that reaches the goal), threefold-twilight (the three sandhyas of dawn, noon, dusk), and finally mukti-gehini — she in whom liberation makes its home. The verse exhausts the modes of feminine sacred presence in one breath. (MR)"
-      },
-      {
-        "author": "traditional",
-        "author_name": "Padma Purana — Uttara Khanda",
-        "author_label": "Mahatmya tradition — Hindi paraphrase",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "दो पंक्तियों में नौ नाम। व्याकरणीय शैली नाम-स्तुति है — प्रत्येक नाम ध्यान का प्रवेश-द्वार। संरचना देखें — नदी (गंगा), मंत्र (गायत्री), धर्म-स्वरूपिणी देवी (सीता), सत्य, ज्ञान-देवी (सरस्वती), ज्ञान (ब्रह्मविद्या), लता (ब्रह्मवल्ली — लक्ष्य तक पहुँचाने वाली बेल), त्रिसंध्या, और अंत में मुक्ति-गेहिनी — वह जिसमें मुक्ति का गृह बसता है। एक श्वास में स्त्री-रूप पवित्र उपस्थिति की समस्त मुद्राएँ समाहित। (MR)"
-      }
-    ],
-    "pronunciation_guide": {
-      "en": "Anushtubh meter. Each name receives equal stress — the verse is a mala (rosary) of names. Gītā: GEE-taa. Gaṅgā: GUNG-gaa. Gāyatrī: gaa-ya-TREE. Sītā: SEE-taa. Satyā: SAT-yaa. Sarasvatī: sa-ras-va-TEE. Brahma-vidyā: BRAH-ma-vid-YAA. Brahma-vallī: BRAH-ma-VAL-lee. Tri-sandhyā: tri-SAN-dhyaa. Mukti-gehinī: muk-ti-GAY-hi-nee. Recite as a continuous rosary without rushing.",
-      "hi": "अनुष्टुप् छन्द। प्रत्येक नाम पर समान बल — यह श्लोक एक नाम-माला है। 'त्रिसन्ध्या' — तीनों सन्ध्याएँ (प्रातः, मध्याह्न, सायं)। 'मुक्तिगेहिनी' — मुक्ति-गेह-इनी (मुक्ति का घर बनने वाली)। बिना जल्दबाज़ी के माला की तरह पाठ करें।"
-    },
-    "ai_metadata": {
-      "topics": [
-        "Stotra",
-        "Prayer"
-      ],
-      "correlations": [
-        "Devotion"
-      ],
-      "fingerprint": "mock-fingerprint",
-      "stats": {
-        "total_layers": 8,
-        "total_words": 10
-      }
-    }
-  },
-  {
-    "id": "gita-mahatmya-4",
-    "verse": 4,
-    "original": "अर्धमात्रा-अक्षरा नित्या अनिर्वाच्या पदात्मिका । चिदानन्देन कृष्णेन प्रोक्ता स्वमुखतोऽर्जुनम् ॥",
-    "transliteration": "ardha-mātrā-akṣarā nityā anirvācyā padātmikā | cid-ānandena kṛṣṇena proktā sva-mukhato'rjunam ||",
-    "translation": "She of half-measure and syllables, eternal, indescribable, of the nature of pada (foot/word) — spoken to Arjuna from his own lips by Krishna who is consciousness-bliss.",
-    "meaning": "A more esoteric Mahatmya verse — characterizes the Gita using the language of mantra-shastra. 'Ardha-matra-akshara' refers to the half-measure that completes Aum (the silence after the M). 'Nitya' (eternal) and 'anirvacya' (indescribable) are technical terms from Advaita Vedanta. 'Pad-atmika' — embodied as syllabic feet — points to the Gita as itself a mantra-body, not merely a discourse about Brahman.",
-    "layers": [
-      {
-        "author": "padma-purana-tradition",
-        "author_name": "Padma Purana — Uttara Khanda",
-        "author_label": "Mahatmya tradition — universally-recited Sanskrit",
-        "lang": "en",
-        "type": "commentary",
-        "content": "The verse moves the Gita from the category of 'discourse about Brahman' to the category of 'mantra-body of Brahman'. 'Ardha-matra' is the half-measure that completes the pranava Aum — the silence after M, which is technically not pronounceable but is the substratum of the three sounds. By calling the Gita 'ardha-matra-aksara', the Mahatmya tradition asserts that the Gita's sound-body is non-different from the cosmic sound itself. 'Cid-ananda' (consciousness-bliss) is the Advaita Vedanta technical name for Brahman — Krishna is here named not by his biographical role but by his ontological status."
-      },
-      {
-        "author": "padma-purana-tradition",
-        "author_name": "Padma Purana — Uttara Khanda",
-        "author_label": "Mahatmya tradition — Hindi paraphrase",
-        "lang": "hi",
-        "type": "commentary",
-        "content": "यह श्लोक गीता को 'ब्रह्म पर उपदेश' की श्रेणी से 'ब्रह्म के मंत्र-शरीर' की श्रेणी में स्थानांतरित करता है। 'अर्धमात्रा' वह आधी मात्रा है जो प्रणव ॐ को पूर्ण करती है — म् के बाद का मौन, जो तकनीकी रूप से उच्चारणीय नहीं परन्तु तीनों ध्वनियों का आधार है। गीता को 'अर्धमात्राक्षरा' कहकर माहात्म्य परंपरा यह घोषित करती है कि गीता का शब्द-शरीर ब्रह्मांडीय शब्द से अभिन्न है। 'चिदानन्द' अद्वैत वेदान्त का ब्रह्म-वाचक तकनीकी शब्द है — कृष्ण को यहाँ जीवनी-भूमिका से नहीं, अपितु सत्ता-शास्त्रीय स्थान से नामित किया गया है।"
-      },
-      {
-        "author": "traditional",
-        "author_name": "Padma Purana — Uttara Khanda",
-        "author_label": "Mahatmya tradition — universally-recited Sanskrit",
-        "lang": "en",
-        "type": "commentary",
-        "content": "The verse moves the Gita from the category of 'discourse about Brahman' to the category of 'mantra-body of Brahman'. 'Ardha-matra' is the half-measure that completes the pranava Aum — the silence after M, which is technically not pronounceable but is the substratum of the three sounds. By calling the Gita 'ardha-matra-aksara', the Mahatmya tradition asserts that the Gita's sound-body is non-different from the cosmic sound itself. 'Cid-ananda' (consciousness-bliss) is the Advaita Vedanta technical name for Brahman — Krishna is here named not by his biographical role but by his ontological status."
-      },
-      {
-        "author": "traditional",
-        "author_name": "Padma Purana — Uttara Khanda",
-        "author_label": "Mahatmya tradition — Hindi paraphrase",
-        "lang": "hi",
-        "type": "commentary",
-        "content": "यह श्लोक गीता को 'ब्रह्म पर उपदेश' की श्रेणी से 'ब्रह्म के मंत्र-शरीर' की श्रेणी में स्थानांतरित करता है। 'अर्धमात्रा' वह आधी मात्रा है जो प्रणव ॐ को पूर्ण करती है — म् के बाद का मौन, जो तकनीकी रूप से उच्चारणीय नहीं परन्तु तीनों ध्वनियों का आधार है। गीता को 'अर्धमात्राक्षरा' कहकर माहात्म्य परंपरा यह घोषित करती है कि गीता का शब्द-शरीर ब्रह्मांडीय शब्द से अभिन्न है। 'चिदानन्द' अद्वैत वेदान्त का ब्रह्म-वाचक तकनीकी शब्द है — कृष्ण को यहाँ जीवनी-भूमिका से नहीं, अपितु सत्ता-शास्त्रीय स्थान से नामित किया गया है।"
-      },
-      {
-        "author": "padma-purana-tradition",
-        "author_name": "Padma Purana — Uttara Khanda",
-        "author_label": "Mahatmya tradition — universally-recited Sanskrit",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "The verse moves the Gita from the category of 'discourse about Brahman' to the category of 'mantra-body of Brahman'. 'Ardha-matra' is the half-measure that completes the pranava Aum — the silence after M, which is technically not pronounceable but is the substratum of the three sounds. By calling the Gita 'ardha-matra-aksara', the Mahatmya tradition asserts that the Gita's sound-body is non-different from the cosmic sound itself. 'Cid-ananda' (consciousness-bliss) is the Advaita Vedanta technical name for Brahman — Krishna is here named not by his biographical role but by his ontological status. (MR)"
-      },
-      {
-        "author": "padma-purana-tradition",
-        "author_name": "Padma Purana — Uttara Khanda",
-        "author_label": "Mahatmya tradition — Hindi paraphrase",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "यह श्लोक गीता को 'ब्रह्म पर उपदेश' की श्रेणी से 'ब्रह्म के मंत्र-शरीर' की श्रेणी में स्थानांतरित करता है। 'अर्धमात्रा' वह आधी मात्रा है जो प्रणव ॐ को पूर्ण करती है — म् के बाद का मौन, जो तकनीकी रूप से उच्चारणीय नहीं परन्तु तीनों ध्वनियों का आधार है। गीता को 'अर्धमात्राक्षरा' कहकर माहात्म्य परंपरा यह घोषित करती है कि गीता का शब्द-शरीर ब्रह्मांडीय शब्द से अभिन्न है। 'चिदानन्द' अद्वैत वेदान्त का ब्रह्म-वाचक तकनीकी शब्द है — कृष्ण को यहाँ जीवनी-भूमिका से नहीं, अपितु सत्ता-शास्त्रीय स्थान से नामित किया गया है। (MR)"
-      },
-      {
-        "author": "traditional",
-        "author_name": "Padma Purana — Uttara Khanda",
-        "author_label": "Mahatmya tradition — universally-recited Sanskrit",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "The verse moves the Gita from the category of 'discourse about Brahman' to the category of 'mantra-body of Brahman'. 'Ardha-matra' is the half-measure that completes the pranava Aum — the silence after M, which is technically not pronounceable but is the substratum of the three sounds. By calling the Gita 'ardha-matra-aksara', the Mahatmya tradition asserts that the Gita's sound-body is non-different from the cosmic sound itself. 'Cid-ananda' (consciousness-bliss) is the Advaita Vedanta technical name for Brahman — Krishna is here named not by his biographical role but by his ontological status. (MR)"
-      },
-      {
-        "author": "traditional",
-        "author_name": "Padma Purana — Uttara Khanda",
-        "author_label": "Mahatmya tradition — Hindi paraphrase",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "यह श्लोक गीता को 'ब्रह्म पर उपदेश' की श्रेणी से 'ब्रह्म के मंत्र-शरीर' की श्रेणी में स्थानांतरित करता है। 'अर्धमात्रा' वह आधी मात्रा है जो प्रणव ॐ को पूर्ण करती है — म् के बाद का मौन, जो तकनीकी रूप से उच्चारणीय नहीं परन्तु तीनों ध्वनियों का आधार है। गीता को 'अर्धमात्राक्षरा' कहकर माहात्म्य परंपरा यह घोषित करती है कि गीता का शब्द-शरीर ब्रह्मांडीय शब्द से अभिन्न है। 'चिदानन्द' अद्वैत वेदान्त का ब्रह्म-वाचक तकनीकी शब्द है — कृष्ण को यहाँ जीवनी-भूमिका से नहीं, अपितु सत्ता-शास्त्रीय स्थान से नामित किया गया है। (MR)"
-      }
-    ],
-    "pronunciation_guide": {
-      "en": "This verse contains technical mantra-shastra vocabulary. Ardha-mātrā: ar-dha-MAA-traa (half-measure). Akṣarā: AK-sha-raa (syllable / imperishable — pun is intentional). Anirvācyā: a-nir-VAA-chyaa (indescribable). Padātmikā: pa-DAAT-mi-kaa (whose nature is pada — foot/syllable/word). Cid-ānandena: CHID-aa-NAN-de-na. Pause briefly after each compound to let its meaning unfold.",
-      "hi": "यह श्लोक मंत्र-शास्त्रीय शब्दावली से युक्त है। 'अर्धमात्रा' — आधी मात्रा (ॐ की अंतिम)। 'अक्षरा' का दोहरा अर्थ है — अक्षर (अविनाशी) और स्वर। 'अनिर्वाच्या' — अनिर्वाच्या (वर्णन-अयोग्य)। 'पदात्मिका' — पद-आत्मिका। प्रत्येक समास के बाद थोड़ा रुकें ताकि अर्थ खुले।"
-    },
-    "ai_metadata": {
-      "topics": [
-        "Stotra",
-        "Prayer"
-      ],
-      "correlations": [
-        "Devotion"
-      ],
-      "fingerprint": "mock-fingerprint",
-      "stats": {
-        "total_layers": 8,
-        "total_words": 10
-      }
-    }
-  },
-  {
-    "id": "gita-mahatmya-5",
-    "verse": 5,
-    "original": "यत्र योगेश्वरः कृष्णो यत्र पार्थो धनुर्धरः । तत्र श्रीर्विजयो भूतिर्ध्रुवा नीतिर्मतिर्मम ॥",
-    "transliteration": "yatra yogeśvaraḥ kṛṣṇo yatra pārtho dhanur-dharaḥ | tatra śrīr vijayo bhūtir dhruvā nītir matir mama ||",
-    "translation": "Wherever Krishna the Lord of Yoga is, and wherever Arjuna the bow-bearer is — there will be prosperity, victory, abundance, and unwavering moral order. This is my conviction. (Spoken by Sanjaya.)",
-    "meaning": "The famous closing verse of the Bhagavad Gita itself (BG 18.78) — also recited as the closing Mahatmya verse. Sanjaya, the narrator who has seen the entire Kurukshetra dialogue through his divine sight, ends the Gita with his own conviction. The verse functions as a benediction at the close of any Gita recitation, study session, or ritual. It is among the most quoted single verses of the entire Hindu canon.",
-    "layers": [
-      {
-        "author": "padma-purana-tradition",
-        "author_name": "Bhagavad Gita 18.78 (Sanjaya) + Mahatmya closing",
-        "author_label": "Universally-recited closing benediction",
-        "lang": "en",
-        "type": "commentary",
-        "content": "This verse is unique in the Mahatmya sequence — it is itself a Gita verse (18.78) rather than a verse about the Gita. The Mahatmya tradition closes with it because it embodies what the Gita gives: wherever the teaching and the seeker are joined (Krishna + Arjuna), there is sri (auspiciousness), vijaya (victory), bhuti (well-being), and dhruva-niti (firm moral order). Sanjaya's last word in the entire Gita is 'matir mama' — 'this is my conviction'. The Mahatmya tradition adopts Sanjaya's conviction as its own closing affirmation."
-      },
-      {
-        "author": "padma-purana-tradition",
-        "author_name": "Bhagavad Gita 18.78 (Sanjaya) + Mahatmya closing",
-        "author_label": "Universally-recited closing benediction — Hindi",
-        "lang": "hi",
-        "type": "commentary",
-        "content": "यह श्लोक माहात्म्य-क्रम में अद्वितीय है — स्वयं गीता का श्लोक (18.78) है, गीता-विषयक नहीं। माहात्म्य परंपरा इसी से समापन करती है क्योंकि यह व्यक्त करता है कि गीता क्या देती है — जहाँ उपदेश और साधक एक साथ हैं (कृष्ण + अर्जुन), वहाँ श्री, विजय, भूति और ध्रुव-नीति है। संजय का गीता में अंतिम शब्द है 'मतिर्मम' — 'यही मेरा निश्चय है'। माहात्म्य परंपरा संजय के निश्चय को अपना अंतिम घोषवाक्य बना लेती है।"
-      },
-      {
-        "author": "traditional",
-        "author_name": "Bhagavad Gita 18.78 (Sanjaya) + Mahatmya closing",
-        "author_label": "Universally-recited closing benediction",
-        "lang": "en",
-        "type": "commentary",
-        "content": "This verse is unique in the Mahatmya sequence — it is itself a Gita verse (18.78) rather than a verse about the Gita. The Mahatmya tradition closes with it because it embodies what the Gita gives: wherever the teaching and the seeker are joined (Krishna + Arjuna), there is sri (auspiciousness), vijaya (victory), bhuti (well-being), and dhruva-niti (firm moral order). Sanjaya's last word in the entire Gita is 'matir mama' — 'this is my conviction'. The Mahatmya tradition adopts Sanjaya's conviction as its own closing affirmation."
-      },
-      {
-        "author": "traditional",
-        "author_name": "Bhagavad Gita 18.78 (Sanjaya) + Mahatmya closing",
-        "author_label": "Universally-recited closing benediction — Hindi",
-        "lang": "hi",
-        "type": "commentary",
-        "content": "यह श्लोक माहात्म्य-क्रम में अद्वितीय है — स्वयं गीता का श्लोक (18.78) है, गीता-विषयक नहीं। माहात्म्य परंपरा इसी से समापन करती है क्योंकि यह व्यक्त करता है कि गीता क्या देती है — जहाँ उपदेश और साधक एक साथ हैं (कृष्ण + अर्जुन), वहाँ श्री, विजय, भूति और ध्रुव-नीति है। संजय का गीता में अंतिम शब्द है 'मतिर्मम' — 'यही मेरा निश्चय है'। माहात्म्य परंपरा संजय के निश्चय को अपना अंतिम घोषवाक्य बना लेती है।"
-      },
-      {
-        "author": "padma-purana-tradition",
-        "author_name": "Bhagavad Gita 18.78 (Sanjaya) + Mahatmya closing",
-        "author_label": "Universally-recited closing benediction",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "This verse is unique in the Mahatmya sequence — it is itself a Gita verse (18.78) rather than a verse about the Gita. The Mahatmya tradition closes with it because it embodies what the Gita gives: wherever the teaching and the seeker are joined (Krishna + Arjuna), there is sri (auspiciousness), vijaya (victory), bhuti (well-being), and dhruva-niti (firm moral order). Sanjaya's last word in the entire Gita is 'matir mama' — 'this is my conviction'. The Mahatmya tradition adopts Sanjaya's conviction as its own closing affirmation. (MR)"
-      },
-      {
-        "author": "padma-purana-tradition",
-        "author_name": "Bhagavad Gita 18.78 (Sanjaya) + Mahatmya closing",
-        "author_label": "Universally-recited closing benediction — Hindi",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "यह श्लोक माहात्म्य-क्रम में अद्वितीय है — स्वयं गीता का श्लोक (18.78) है, गीता-विषयक नहीं। माहात्म्य परंपरा इसी से समापन करती है क्योंकि यह व्यक्त करता है कि गीता क्या देती है — जहाँ उपदेश और साधक एक साथ हैं (कृष्ण + अर्जुन), वहाँ श्री, विजय, भूति और ध्रुव-नीति है। संजय का गीता में अंतिम शब्द है 'मतिर्मम' — 'यही मेरा निश्चय है'। माहात्म्य परंपरा संजय के निश्चय को अपना अंतिम घोषवाक्य बना लेती है। (MR)"
-      },
-      {
-        "author": "traditional",
-        "author_name": "Bhagavad Gita 18.78 (Sanjaya) + Mahatmya closing",
-        "author_label": "Universally-recited closing benediction",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "This verse is unique in the Mahatmya sequence — it is itself a Gita verse (18.78) rather than a verse about the Gita. The Mahatmya tradition closes with it because it embodies what the Gita gives: wherever the teaching and the seeker are joined (Krishna + Arjuna), there is sri (auspiciousness), vijaya (victory), bhuti (well-being), and dhruva-niti (firm moral order). Sanjaya's last word in the entire Gita is 'matir mama' — 'this is my conviction'. The Mahatmya tradition adopts Sanjaya's conviction as its own closing affirmation. (MR)"
-      },
-      {
-        "author": "traditional",
-        "author_name": "Bhagavad Gita 18.78 (Sanjaya) + Mahatmya closing",
-        "author_label": "Universally-recited closing benediction — Hindi",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "यह श्लोक माहात्म्य-क्रम में अद्वितीय है — स्वयं गीता का श्लोक (18.78) है, गीता-विषयक नहीं। माहात्म्य परंपरा इसी से समापन करती है क्योंकि यह व्यक्त करता है कि गीता क्या देती है — जहाँ उपदेश और साधक एक साथ हैं (कृष्ण + अर्जुन), वहाँ श्री, विजय, भूति और ध्रुव-नीति है। संजय का गीता में अंतिम शब्द है 'मतिर्मम' — 'यही मेरा निश्चय है'। माहात्म्य परंपरा संजय के निश्चय को अपना अंतिम घोषवाक्य बना लेती है। (MR)"
-      }
-    ],
-    "pronunciation_guide": {
-      "en": "Anushtubh meter. The most quoted single verse in Hindu tradition — recited at the close of Gita study, weddings, rituals, and as a daily benediction. Yatra: YA-tra. Yogeśvaraḥ: yo-GAY-shva-rah. Kṛṣṇo: KRISH-no. Dhanur-dharaḥ: dha-NUR-dha-rah. Śrīr-vijayo: SHREER-vi-JA-yo (long ee). Dhruvā nītir matir mama: DHRU-vaa NEE-tir MA-tir MA-ma. Pause fully on the final 'mama' — Sanjaya's signature.",
-      "hi": "अनुष्टुप् छन्द। हिन्दू परंपरा में सर्वाधिक उद्धृत एकल श्लोक — गीता-पाठ के समापन में, विवाह में, अनुष्ठानों में, और दैनिक मंगल-पाठ के रूप में। 'यत्र' दो बार आता है — दोनों पर समान बल। 'धनुर्धरः' — धनुष धारण करने वाला। 'मतिर्मम' पर पूर्ण विराम लें — यह संजय का हस्ताक्षर है।"
-    },
-    "ai_metadata": {
-      "topics": [
-        "Stotra",
-        "Prayer"
-      ],
-      "correlations": [
-        "Devotion"
-      ],
-      "fingerprint": "mock-fingerprint",
-      "stats": {
-        "total_layers": 8,
-        "total_words": 10
-      }
-    }
-  }
-]
+  ]
+}

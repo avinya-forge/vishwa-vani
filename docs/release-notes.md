@@ -290,3 +290,15 @@
 - [x] `STD-002` Create `scripts/audit_standards.js` — comprehensive multi-tier standards validator. Checks: gold verse fields (original/translit/translation/meaning), layer coverage (2 authors × 3 langs), layer authenticity, author metadata completeness, ai_metadata, repeated content. Silver checks: NVF structure, no corrupted/mock data, at least 1 EN layer. Audit results 2026-04-25: Gita gold ALL PASS; Isha gold 150 violations (pre-existing BUG-050); all silver PASS. — Done: 2026-04-25
 
 - [x] `PIPE-001` **`scripts/validate_silver.js`** — Generic NVF schema validator. Checks `id`, `original`, `verse`, `layers[]`; commentary ≥ 20 chars; no bracket-prefix or `[PLACEHOLDER_` content; EN layer required. Exit 0 = pass. — Done: 2026-04-20
+# Release Notes
+
+## Pre-Flight Checks
+- [x] `CHK-001` **Pre-Flight Health Check**: Run full build (`npm run build`), lint (`npm run lint`), and test suite (`npm test`). Enforce 0 errors and 95% unit test coverage floor before starting data ingestion.
+- [x] `BUG-050` **Placeholder Content Audit**: Run scripts to catch mock content or single-character placeholders in Gold/Silver tiers (specifically Isha and Mahabharata datasets).
+- [x] `BUG-051` **Transliteration Missing**: Generate missing transliteration fields for Mahabharata Parva 1 to comply with NVF requirements.
+- [x] `BUG-052` **AI Metadata Missing**: Generate missing AI Metadata (topics, correlations) for Mahabharata Parva 1 to comply with NVF requirements.
+- [x] `GATE-000` **Phase 0 Visual Audit & Bug Triage**: Complete visual check of the UI. Log any new bugs here and fix them before starting Phase 1.
+
+## Phase 1 Promotions
+- [x] `ISHA-DATA-11` **Verify & Promote Isha Upanishad**: Manually verify the 19 verses (Sanskrit, EN/HI/MR, 2+ authors). Run `promote_to_gold.js` and update manifest.
+- [x] `STOTRA-DATA-1` **Verify & Promote Stotras**: Audit and promote the 17 verses across 3 chapters. Update manifest.
