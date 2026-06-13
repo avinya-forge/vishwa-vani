@@ -81,3 +81,11 @@ This backlog is organized sequentially. Do not proceed to the next phase until t
 - [ ] `ROADMAP-001` **Upanishad Expansion**: Target Katha, Prashna, Mundaka, and Mandukya Upanishads.
 - [ ] `ROADMAP-002` **Ramayana Integration**: Target Valmiki Ramayana (all Kandas).
 - [ ] `ROADMAP-003` **Vedas Integration**: Target Rigveda (Mandala 1-10).
+
+## 🔍 NEW EPIC: PIPELINE, TESTING & QUALITY
+*Re-prioritized sequence focusing on completing 1 book end to end properly.*
+
+- [ ] `QA-001` **Code Review & Bug Hunter**: Prioritize bug hunting across existing texts. Conduct strict code reviews and escalate identified issues.
+- [ ] `QA-002` **Deep Cleaning & UI Auditing**: Perform deep cleaning of the codebase and comprehensively audit the UI (routing, toggle logic, performance with large chapters).
+- [ ] `TEST-001` **End-to-End Browser Testing**: Implement comprehensive end-to-end tests with browser integration to verify reading flows.
+- [ ] `TEST-002` **Unit Test Coverage Enhancement**: Ensure 95%+ minimum unit test coverage across all newly added and existing code.
