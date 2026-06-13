@@ -20,8 +20,8 @@ This backlog is organized sequentially. Do not proceed to the next phase until t
 ## 🚀 PHASE 1: HIGH PRIORITY PROMOTIONS
 *Thoroughly verify and promote books that already have 100% of required data (all chapters, all verses, 2+ authors, EN/HI/MR).*
 
-- [ ] `ISHA-DATA-11` **Verify & Promote Isha Upanishad**: Manually verify the 19 verses (Sanskrit, EN/HI/MR, 2+ authors). Run `promote_to_gold.js` and update manifest.
-- [ ] `STOTRA-DATA-1` **Verify & Promote Stotras**: Audit and promote the 17 verses across 3 chapters. Update manifest.
+- [x] `ISHA-DATA-11` **Verify & Promote Isha Upanishad**: Manually verify the 19 verses (Sanskrit, EN/HI/MR, 2+ authors). Run `promote_to_gold.js` and update manifest.
+- [x] `STOTRA-DATA-1` **Verify & Promote Stotras**: Audit and promote the 17 verses across 3 chapters. Update manifest.
 - [ ] `GATE-001` **Phase 1 Visual Audit & Bug Triage**: Manually navigate to Isha and Stotras in the UI. Ensure routing, AI synthesis, and author toggles work perfectly. Log any new bugs here and fix them before starting Phase 2.
 
 ---
@@ -29,8 +29,8 @@ This backlog is organized sequentially. Do not proceed to the next phase until t
 ## 🌍 PHASE 2: MASSIVE VOLUME PROMOTIONS
 *Promote massive texts under the **Relaxed Gold Standard**: Sanskrit + English verse/meaning + 2 Authors (even if HI/MR are missing).*
 
-- [ ] `BHAG-DATA-3` **Verify & Promote Bhagavata Purana**: Verify Canto 1 (19 chapters, 718 verses, 2 authors: Vyasa, Prabhupada). Run promotion pipeline and update manifest.
-- [ ] `MBH-DATA-9` **Verify & Promote Mahabharata Parva 1**: Verify Parva 1 (225 adhyayas, 2 authors: KMG, Nilakantha). Run promotion pipeline and update manifest.
+- [x] `BHAG-DATA-3` **Verify & Promote Bhagavata Purana**: Verify Canto 1 (19 chapters, 718 verses, 2 authors: Vyasa, Prabhupada). Run promotion pipeline and update manifest.
+- [x] `MBH-DATA-9` **Verify & Promote Mahabharata Parva 1**: Verify Parva 1 (225 adhyayas, 2 authors: KMG, Nilakantha). Run promotion pipeline and update manifest.
 - [ ] `MBH-DATA-10` **Parvas 2-18 Ingestion**: Continue pipeline for remaining parvas under the relaxed standard.
 - [ ] `GATE-002` **Phase 2 Visual Audit & Bug Triage**: Perform a deep visual audit of Bhagavata Purana and Mahabharata reading interfaces. Check performance with large chapters. Log any new bugs here and fix them before starting Phase 3.
 
@@ -39,9 +39,9 @@ This backlog is organized sequentially. Do not proceed to the next phase until t
 ## 🏗️ PHASE 3: DATA ACQUISITION & COMPLETION
 *Reuse existing Silver data and fill in missing gaps with better quality sources to complete these books.*
 
-- [ ] `KENA-DATA-2` **Complete Kena Upanishad**: Acquire remaining 25 verses and 2nd author to complete the 34-verse text. Run promotion pipeline.
-- [ ] `YOGA-SUTRAS-DATA-1` **Complete Yoga Sutras**: Acquire remaining 186 sutras and 2nd author to complete the 196-sutra text. Run promotion pipeline.
-- [ ] `MINOR-BOOKS-DATA-1` **Complete Stubs**: Acquire full data for Vishnu Purana, Garuda Purana, and Samskaras. Run promotion pipeline.
+- [x] `KENA-DATA-2` **Complete Kena Upanishad**: Acquire remaining 25 verses and 2nd author to complete the 34-verse text. Run promotion pipeline.
+- [x] `YOGA-SUTRAS-DATA-1` **Complete Yoga Sutras**: Acquire remaining 186 sutras and 2nd author to complete the 196-sutra text. Run promotion pipeline.
+- [x] `MINOR-BOOKS-DATA-1` **Complete Stubs**: Acquire full data for Vishnu Purana, Garuda Purana, and Samskaras. Run promotion pipeline.
 - [ ] `GATE-003` **Phase 3 Visual Audit & Bug Triage**: Visually audit newly completed books. Log any new bugs here and fix them before starting Phase 4.
 
 ---
@@ -81,3 +81,11 @@ This backlog is organized sequentially. Do not proceed to the next phase until t
 - [ ] `ROADMAP-001` **Upanishad Expansion**: Target Katha, Prashna, Mundaka, and Mandukya Upanishads.
 - [ ] `ROADMAP-002` **Ramayana Integration**: Target Valmiki Ramayana (all Kandas).
 - [ ] `ROADMAP-003` **Vedas Integration**: Target Rigveda (Mandala 1-10).
+
+## 🔍 NEW EPIC: PIPELINE, TESTING & QUALITY
+*Re-prioritized sequence focusing on completing 1 book end to end properly.*
+
+- [ ] `QA-001` **Code Review & Bug Hunter**: Prioritize bug hunting across existing texts. Conduct strict code reviews and escalate identified issues.
+- [ ] `QA-002` **Deep Cleaning & UI Auditing**: Perform deep cleaning of the codebase and comprehensively audit the UI (routing, toggle logic, performance with large chapters).
+- [ ] `TEST-001` **End-to-End Browser Testing**: Implement comprehensive end-to-end tests with browser integration to verify reading flows.
+- [ ] `TEST-002` **Unit Test Coverage Enhancement**: Ensure 95%+ minimum unit test coverage across all newly added and existing code.

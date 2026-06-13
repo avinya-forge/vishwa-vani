@@ -90,7 +90,7 @@ describe('/api/synthesize', () => {
     it('falls back if gemini times out', async () => {
       const originalSetTimeout = global.setTimeout
       // Immediately trigger the timeout callback
-      global.setTimeout = ((cb: Function) => cb()) as any
+      global.setTimeout = ((cb: (...args: unknown[]) => void) => cb()) as unknown as typeof global.setTimeout
 
       mockGenerateContent.mockImplementation(() => new Promise(() => {})) // Never resolves
       const res = await POST(mockRequest({
