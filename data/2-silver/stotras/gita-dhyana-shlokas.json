@@ -1,830 +1,839 @@
-[
-  {
-    "id": "gita-dhyana-1",
-    "verse": 1,
-    "original": "ॐ पार्थाय प्रतिबोधितां भगवता नारायणेन स्वयं व्यासेन ग्रथितां पुराणमुनिना मध्ये महाभारतम् । अद्वैतामृतवर्षिणीं भगवतीम् अष्टादशाध्यायिनीम् अम्ब त्वाम् अनुसन्दधामि भगवद्गीते भवद्वेषिणीम् ॥",
-    "transliteration": "Oṃ pārthāya pratibodhitāṃ bhagavatā nārāyaṇena svayaṃ vyāsena grathitāṃ purāṇa-muninā madhye mahābhāratam | advaitāmṛta-varṣiṇīṃ bhagavatīm aṣṭādaśādhyāyinīm amba tvām anusandadhāmi bhagavad-gīte bhava-dveṣiṇīm ||",
-    "translation": "Om. O Mother Bhagavad Gita, taught by Bhagavan Narayana himself to Arjuna, woven by the ancient sage Vyasa into the middle of the Mahabharata, showering the nectar of non-duality, divine, of eighteen chapters, dispeller of worldly bondage — upon you I meditate.",
-    "meaning": "The opening invocation salutes the Gita as a living Mother (amba) — the eighteen chapters are her embodiment. The verse names the entire transmission lineage in one breath: Narayana (the source), Arjuna (the first listener), Vyasa (the redactor), Mahabharata (the matrix). Reciting this verse before study orients the seeker to the lineage rather than to private interpretation.",
-    "layers": [
-      {
-        "author": "madhusudana-saraswati",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE — composer of the Dhyana Shlokas",
-        "lang": "en",
-        "type": "commentary",
-        "content": "The first verse names the Gita herself as Mother (amba) and the dispeller of worldly bondage (bhava-dveshini). Notice the precise lineage embedded: it was Narayana who taught her, Vyasa who wove her into the Mahabharata, and Arjuna who first received her. To meditate on the Gita is to remember that one is receiving a transmission, not an opinion."
+{
+  "id": "gita-dhyana-shlokas",
+  "slug": "gita-dhyana-shlokas",
+  "mantraType": "stotra",
+  "deity": "Krishna",
+  "dailyUse": true,
+  "sourceBook": "bhagavad-gita",
+  "totalMantras": 9,
+  "verses": [
+    {
+      "id": "gita-dhyana-1",
+      "verse": 1,
+      "original": "ॐ पार्थाय प्रतिबोधितां भगवता नारायणेन स्वयं व्यासेन ग्रथितां पुराणमुनिना मध्ये महाभारतम् । अद्वैतामृतवर्षिणीं भगवतीम् अष्टादशाध्यायिनीम् अम्ब त्वाम् अनुसन्दधामि भगवद्गीते भवद्वेषिणीम् ॥",
+      "transliteration": "Oṃ pārthāya pratibodhitāṃ bhagavatā nārāyaṇena svayaṃ vyāsena grathitāṃ purāṇa-muninā madhye mahābhāratam | advaitāmṛta-varṣiṇīṃ bhagavatīm aṣṭādaśādhyāyinīm amba tvām anusandadhāmi bhagavad-gīte bhava-dveṣiṇīm ||",
+      "translation": "Om. O Mother Bhagavad Gita, taught by Bhagavan Narayana himself to Arjuna, woven by the ancient sage Vyasa into the middle of the Mahabharata, showering the nectar of non-duality, divine, of eighteen chapters, dispeller of worldly bondage — upon you I meditate.",
+      "meaning": "The opening invocation salutes the Gita as a living Mother (amba) — the eighteen chapters are her embodiment. The verse names the entire transmission lineage in one breath: Narayana (the source), Arjuna (the first listener), Vyasa (the redactor), Mahabharata (the matrix). Reciting this verse before study orients the seeker to the lineage rather than to private interpretation.",
+      "layers": [
+        {
+          "author": "madhusudana-saraswati",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE — composer of the Dhyana Shlokas",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The first verse names the Gita herself as Mother (amba) and the dispeller of worldly bondage (bhava-dveshini). Notice the precise lineage embedded: it was Narayana who taught her, Vyasa who wove her into the Mahabharata, and Arjuna who first received her. To meditate on the Gita is to remember that one is receiving a transmission, not an opinion."
+        },
+        {
+          "author": "madhusudana-saraswati",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "इस प्रथम श्लोक में गीता को अम्बा (माता) और भवद्वेषिणी (संसार-बंधन को नष्ट करने वाली) कहा गया है। इसमें सम्पूर्ण परंपरा एक श्वास में समाहित है — नारायण ने सिखाया, व्यास ने महाभारत में पिरोया, अर्जुन ने सर्वप्रथम सुना। गीता का ध्यान करना अर्थात् यह स्मरण करना कि हम अपनी कोई व्यक्तिगत राय नहीं, अपितु एक जीवंत संप्रदाय का संदेश ग्रहण कर रहे हैं।"
+        },
+        {
+          "author": "traditional",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE — composer of the Dhyana Shlokas",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The first verse names the Gita herself as Mother (amba) and the dispeller of worldly bondage (bhava-dveshini). Notice the precise lineage embedded: it was Narayana who taught her, Vyasa who wove her into the Mahabharata, and Arjuna who first received her. To meditate on the Gita is to remember that one is receiving a transmission, not an opinion."
+        },
+        {
+          "author": "traditional",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "इस प्रथम श्लोक में गीता को अम्बा (माता) और भवद्वेषिणी (संसार-बंधन को नष्ट करने वाली) कहा गया है। इसमें सम्पूर्ण परंपरा एक श्वास में समाहित है — नारायण ने सिखाया, व्यास ने महाभारत में पिरोया, अर्जुन ने सर्वप्रथम सुना। गीता का ध्यान करना अर्थात् यह स्मरण करना कि हम अपनी कोई व्यक्तिगत राय नहीं, अपितु एक जीवंत संप्रदाय का संदेश ग्रहण कर रहे हैं।"
+        },
+        {
+          "author": "madhusudana-saraswati",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE — composer of the Dhyana Shlokas",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "The first verse names the Gita herself as Mother (amba) and the dispeller of worldly bondage (bhava-dveshini). Notice the precise lineage embedded: it was Narayana who taught her, Vyasa who wove her into the Mahabharata, and Arjuna who first received her. To meditate on the Gita is to remember that one is receiving a transmission, not an opinion. (MR)"
+        },
+        {
+          "author": "madhusudana-saraswati",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "इस प्रथम श्लोक में गीता को अम्बा (माता) और भवद्वेषिणी (संसार-बंधन को नष्ट करने वाली) कहा गया है। इसमें सम्पूर्ण परंपरा एक श्वास में समाहित है — नारायण ने सिखाया, व्यास ने महाभारत में पिरोया, अर्जुन ने सर्वप्रथम सुना। गीता का ध्यान करना अर्थात् यह स्मरण करना कि हम अपनी कोई व्यक्तिगत राय नहीं, अपितु एक जीवंत संप्रदाय का संदेश ग्रहण कर रहे हैं। (MR)"
+        },
+        {
+          "author": "traditional",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE — composer of the Dhyana Shlokas",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "The first verse names the Gita herself as Mother (amba) and the dispeller of worldly bondage (bhava-dveshini). Notice the precise lineage embedded: it was Narayana who taught her, Vyasa who wove her into the Mahabharata, and Arjuna who first received her. To meditate on the Gita is to remember that one is receiving a transmission, not an opinion. (MR)"
+        },
+        {
+          "author": "traditional",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "इस प्रथम श्लोक में गीता को अम्बा (माता) और भवद्वेषिणी (संसार-बंधन को नष्ट करने वाली) कहा गया है। इसमें सम्पूर्ण परंपरा एक श्वास में समाहित है — नारायण ने सिखाया, व्यास ने महाभारत में पिरोया, अर्जुन ने सर्वप्रथम सुना। गीता का ध्यान करना अर्थात् यह स्मरण करना कि हम अपनी कोई व्यक्तिगत राय नहीं, अपितु एक जीवंत संप्रदाय का संदेश ग्रहण कर रहे हैं। (MR)"
+        }
+      ],
+      "pronunciation_guide": {
+        "en": "Begin with a long Om. Pārthāya: PAAR-thaa-ya. Pratibodhitām: with stress on 'bodh'. Vyāsena: vyaa-SAY-na (long second syllable). Aṣṭādaśādhyāyinīm: ash-taa-da-shaa-dhyaa-yi-NEEM. Pause after each line of the verse — there are four metrical lines.",
+        "hi": "लंबे ॐ से प्रारंभ करें। 'पार्थाय' में पार पर बल। 'व्यासेन' में 'से' दीर्घ। 'अष्टादशाध्यायिनीम्' को सावधानी से उच्चारें — आठ-दश-अध्यायिनीम्। प्रत्येक चरण के बाद विराम लें।"
       },
-      {
-        "author": "madhusudana-saraswati",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "hi",
-        "type": "commentary",
-        "content": "इस प्रथम श्लोक में गीता को अम्बा (माता) और भवद्वेषिणी (संसार-बंधन को नष्ट करने वाली) कहा गया है। इसमें सम्पूर्ण परंपरा एक श्वास में समाहित है — नारायण ने सिखाया, व्यास ने महाभारत में पिरोया, अर्जुन ने सर्वप्रथम सुना। गीता का ध्यान करना अर्थात् यह स्मरण करना कि हम अपनी कोई व्यक्तिगत राय नहीं, अपितु एक जीवंत संप्रदाय का संदेश ग्रहण कर रहे हैं।"
-      },
-      {
-        "author": "traditional",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE — composer of the Dhyana Shlokas",
-        "lang": "en",
-        "type": "commentary",
-        "content": "The first verse names the Gita herself as Mother (amba) and the dispeller of worldly bondage (bhava-dveshini). Notice the precise lineage embedded: it was Narayana who taught her, Vyasa who wove her into the Mahabharata, and Arjuna who first received her. To meditate on the Gita is to remember that one is receiving a transmission, not an opinion."
-      },
-      {
-        "author": "traditional",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "hi",
-        "type": "commentary",
-        "content": "इस प्रथम श्लोक में गीता को अम्बा (माता) और भवद्वेषिणी (संसार-बंधन को नष्ट करने वाली) कहा गया है। इसमें सम्पूर्ण परंपरा एक श्वास में समाहित है — नारायण ने सिखाया, व्यास ने महाभारत में पिरोया, अर्जुन ने सर्वप्रथम सुना। गीता का ध्यान करना अर्थात् यह स्मरण करना कि हम अपनी कोई व्यक्तिगत राय नहीं, अपितु एक जीवंत संप्रदाय का संदेश ग्रहण कर रहे हैं।"
-      },
-      {
-        "author": "madhusudana-saraswati",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE — composer of the Dhyana Shlokas",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "The first verse names the Gita herself as Mother (amba) and the dispeller of worldly bondage (bhava-dveshini). Notice the precise lineage embedded: it was Narayana who taught her, Vyasa who wove her into the Mahabharata, and Arjuna who first received her. To meditate on the Gita is to remember that one is receiving a transmission, not an opinion. (MR)"
-      },
-      {
-        "author": "madhusudana-saraswati",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "इस प्रथम श्लोक में गीता को अम्बा (माता) और भवद्वेषिणी (संसार-बंधन को नष्ट करने वाली) कहा गया है। इसमें सम्पूर्ण परंपरा एक श्वास में समाहित है — नारायण ने सिखाया, व्यास ने महाभारत में पिरोया, अर्जुन ने सर्वप्रथम सुना। गीता का ध्यान करना अर्थात् यह स्मरण करना कि हम अपनी कोई व्यक्तिगत राय नहीं, अपितु एक जीवंत संप्रदाय का संदेश ग्रहण कर रहे हैं। (MR)"
-      },
-      {
-        "author": "traditional",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE — composer of the Dhyana Shlokas",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "The first verse names the Gita herself as Mother (amba) and the dispeller of worldly bondage (bhava-dveshini). Notice the precise lineage embedded: it was Narayana who taught her, Vyasa who wove her into the Mahabharata, and Arjuna who first received her. To meditate on the Gita is to remember that one is receiving a transmission, not an opinion. (MR)"
-      },
-      {
-        "author": "traditional",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "इस प्रथम श्लोक में गीता को अम्बा (माता) और भवद्वेषिणी (संसार-बंधन को नष्ट करने वाली) कहा गया है। इसमें सम्पूर्ण परंपरा एक श्वास में समाहित है — नारायण ने सिखाया, व्यास ने महाभारत में पिरोया, अर्जुन ने सर्वप्रथम सुना। गीता का ध्यान करना अर्थात् यह स्मरण करना कि हम अपनी कोई व्यक्तिगत राय नहीं, अपितु एक जीवंत संप्रदाय का संदेश ग्रहण कर रहे हैं। (MR)"
+      "ai_metadata": {
+        "topics": [
+          "Stotra",
+          "Prayer"
+        ],
+        "correlations": [
+          "Devotion"
+        ],
+        "fingerprint": "mock-fingerprint",
+        "stats": {
+          "total_layers": 8,
+          "total_words": 10
+        }
       }
-    ],
-    "pronunciation_guide": {
-      "en": "Begin with a long Om. Pārthāya: PAAR-thaa-ya. Pratibodhitām: with stress on 'bodh'. Vyāsena: vyaa-SAY-na (long second syllable). Aṣṭādaśādhyāyinīm: ash-taa-da-shaa-dhyaa-yi-NEEM. Pause after each line of the verse — there are four metrical lines.",
-      "hi": "लंबे ॐ से प्रारंभ करें। 'पार्थाय' में पार पर बल। 'व्यासेन' में 'से' दीर्घ। 'अष्टादशाध्यायिनीम्' को सावधानी से उच्चारें — आठ-दश-अध्यायिनीम्। प्रत्येक चरण के बाद विराम लें।"
     },
-    "ai_metadata": {
-      "topics": [
-        "Stotra",
-        "Prayer"
+    {
+      "id": "gita-dhyana-2",
+      "verse": 2,
+      "original": "नमोऽस्तु ते व्यास विशालबुद्धे फुल्लारविन्दायतपत्रनेत्र । येन त्वया भारततैलपूर्णः प्रज्वालितो ज्ञानमयः प्रदीपः ॥",
+      "transliteration": "namo'stu te vyāsa viśāla-buddhe phullāravindāyata-patra-netra | yena tvayā bhārata-taila-pūrṇaḥ prajvālito jñānamayaḥ pradīpaḥ ||",
+      "translation": "Salutations to you, O Vyasa of vast intellect, with eyes long as the petals of the fully-bloomed lotus — by whom the lamp of knowledge, full of the Mahabharata oil, was kindled.",
+      "meaning": "The metaphor is exact: the Mahabharata is the oil, the Bhagavad Gita is the lamp's flame, knowledge is the light. Without the matrix-narrative the central teaching could not have been received; without the central teaching the matrix would be only history. Vyasa is honored as the one who saw both as one composition.",
+      "layers": [
+        {
+          "author": "madhusudana-saraswati",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The image of the lamp filled with Mahabharata-oil is the precise inversion of how a casual reader approaches the text: most see the Gita as a discourse extracted from a war story. Vyasa's vision is the opposite — the war is the oil, the Gita is the flame. Without the larger narrative the teaching would be abstract; without the teaching the narrative would be only chronicle."
+        },
+        {
+          "author": "madhusudana-saraswati",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "महाभारत-तैल से भरा ज्ञान-दीप — यह उपमा अत्यंत सटीक है। साधारण पाठक गीता को कथा से निकाला हुआ उपदेश समझता है, परंतु व्यास की दृष्टि में युद्ध तैल है, गीता ज्वाला है। बृहत् कथा के बिना उपदेश अमूर्त रहता; उपदेश के बिना कथा केवल इतिहास होती।"
+        },
+        {
+          "author": "traditional",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The image of the lamp filled with Mahabharata-oil is the precise inversion of how a casual reader approaches the text: most see the Gita as a discourse extracted from a war story. Vyasa's vision is the opposite — the war is the oil, the Gita is the flame. Without the larger narrative the teaching would be abstract; without the teaching the narrative would be only chronicle."
+        },
+        {
+          "author": "traditional",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "महाभारत-तैल से भरा ज्ञान-दीप — यह उपमा अत्यंत सटीक है। साधारण पाठक गीता को कथा से निकाला हुआ उपदेश समझता है, परंतु व्यास की दृष्टि में युद्ध तैल है, गीता ज्वाला है। बृहत् कथा के बिना उपदेश अमूर्त रहता; उपदेश के बिना कथा केवल इतिहास होती।"
+        },
+        {
+          "author": "madhusudana-saraswati",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "The image of the lamp filled with Mahabharata-oil is the precise inversion of how a casual reader approaches the text: most see the Gita as a discourse extracted from a war story. Vyasa's vision is the opposite — the war is the oil, the Gita is the flame. Without the larger narrative the teaching would be abstract; without the teaching the narrative would be only chronicle. (MR)"
+        },
+        {
+          "author": "madhusudana-saraswati",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "महाभारत-तैल से भरा ज्ञान-दीप — यह उपमा अत्यंत सटीक है। साधारण पाठक गीता को कथा से निकाला हुआ उपदेश समझता है, परंतु व्यास की दृष्टि में युद्ध तैल है, गीता ज्वाला है। बृहत् कथा के बिना उपदेश अमूर्त रहता; उपदेश के बिना कथा केवल इतिहास होती। (MR)"
+        },
+        {
+          "author": "traditional",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "The image of the lamp filled with Mahabharata-oil is the precise inversion of how a casual reader approaches the text: most see the Gita as a discourse extracted from a war story. Vyasa's vision is the opposite — the war is the oil, the Gita is the flame. Without the larger narrative the teaching would be abstract; without the teaching the narrative would be only chronicle. (MR)"
+        },
+        {
+          "author": "traditional",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "महाभारत-तैल से भरा ज्ञान-दीप — यह उपमा अत्यंत सटीक है। साधारण पाठक गीता को कथा से निकाला हुआ उपदेश समझता है, परंतु व्यास की दृष्टि में युद्ध तैल है, गीता ज्वाला है। बृहत् कथा के बिना उपदेश अमूर्त रहता; उपदेश के बिना कथा केवल इतिहास होती। (MR)"
+        }
       ],
-      "correlations": [
-        "Devotion"
+      "pronunciation_guide": {
+        "en": "Vyāsa: vee-AA-sa with long second syllable. Viśāla-buddhe: vi-SHAA-la-BOOD-dhe. Phullāravindāyata-patra-netra: a long compound — break it as phulla / aravinda / āyata / patra / netra (eyes like the long petals of the bloomed lotus). Pradīpaḥ: pra-DEE-pah.",
+        "hi": "व्यास का 'या' दीर्घ। 'विशालबुद्धे' में 'शा' पर बल। 'फुल्लारविन्दायतपत्रनेत्र' — इसे टुकड़ों में पढ़ें: फुल्ल / अरविन्द / आयत / पत्र / नेत्र। 'प्रदीपः' में 'दी' दीर्घ।"
+      },
+      "ai_metadata": {
+        "topics": [
+          "Stotra",
+          "Prayer"
+        ],
+        "correlations": [
+          "Devotion"
+        ],
+        "fingerprint": "mock-fingerprint",
+        "stats": {
+          "total_layers": 8,
+          "total_words": 10
+        }
+      }
+    },
+    {
+      "id": "gita-dhyana-3",
+      "verse": 3,
+      "original": "प्रपन्नपारिजाताय तोत्रवेत्रैकपाणये । ज्ञानमुद्राय कृष्णाय गीतामृतदुहे नमः ॥",
+      "transliteration": "prapanna-pārijātāya totra-vetraika-pāṇaye | jñāna-mudrāya kṛṣṇāya gītāmṛta-duhe namaḥ ||",
+      "translation": "Salutations to Krishna — wish-fulfilling tree (pārijāta) for those who surrender, holding the goad (totra) and whip (vetra) in one hand, displaying the jnana mudra, milking the nectar of the Gita.",
+      "meaning": "Four images compressed into one verse: Krishna as the kalpa-vriksha for the surrendered; as the charioteer driver holding goad and whip; as the teacher in jnana-mudra; as the milkman drawing forth the Gita-nectar. Each image is a different mode of relationship the devotee can take with him during recitation.",
+      "layers": [
+        {
+          "author": "madhusudana-saraswati",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "en",
+          "type": "commentary",
+          "content": "Notice that one hand holds the worldly instruments of the charioteer (totra-vetra — goad and whip) while the other forms the jnana-mudra. This is the Gita itself: the same Krishna who drives the chariot through Kurukshetra teaches the highest knowledge from that chariot. The instrument and the teaching are not separated by hand."
+        },
+        {
+          "author": "madhusudana-saraswati",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "ध्यान दें — एक हाथ में सारथी के लौकिक उपकरण (तोत्र-वेत्र — चाबुक और छड़ी) हैं, और दूसरा हाथ ज्ञानमुद्रा बनाता है। यही गीता का सार है — वही कृष्ण जो कुरुक्षेत्र में रथ चलाते हैं, वही उसी रथ से सर्वोच्च ज्ञान सिखाते हैं। साधन और साध्य हाथों में विभाजित नहीं।"
+        },
+        {
+          "author": "traditional",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "en",
+          "type": "commentary",
+          "content": "Notice that one hand holds the worldly instruments of the charioteer (totra-vetra — goad and whip) while the other forms the jnana-mudra. This is the Gita itself: the same Krishna who drives the chariot through Kurukshetra teaches the highest knowledge from that chariot. The instrument and the teaching are not separated by hand."
+        },
+        {
+          "author": "traditional",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "ध्यान दें — एक हाथ में सारथी के लौकिक उपकरण (तोत्र-वेत्र — चाबुक और छड़ी) हैं, और दूसरा हाथ ज्ञानमुद्रा बनाता है। यही गीता का सार है — वही कृष्ण जो कुरुक्षेत्र में रथ चलाते हैं, वही उसी रथ से सर्वोच्च ज्ञान सिखाते हैं। साधन और साध्य हाथों में विभाजित नहीं।"
+        },
+        {
+          "author": "madhusudana-saraswati",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "Notice that one hand holds the worldly instruments of the charioteer (totra-vetra — goad and whip) while the other forms the jnana-mudra. This is the Gita itself: the same Krishna who drives the chariot through Kurukshetra teaches the highest knowledge from that chariot. The instrument and the teaching are not separated by hand. (MR)"
+        },
+        {
+          "author": "madhusudana-saraswati",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "ध्यान दें — एक हाथ में सारथी के लौकिक उपकरण (तोत्र-वेत्र — चाबुक और छड़ी) हैं, और दूसरा हाथ ज्ञानमुद्रा बनाता है। यही गीता का सार है — वही कृष्ण जो कुरुक्षेत्र में रथ चलाते हैं, वही उसी रथ से सर्वोच्च ज्ञान सिखाते हैं। साधन और साध्य हाथों में विभाजित नहीं। (MR)"
+        },
+        {
+          "author": "traditional",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "Notice that one hand holds the worldly instruments of the charioteer (totra-vetra — goad and whip) while the other forms the jnana-mudra. This is the Gita itself: the same Krishna who drives the chariot through Kurukshetra teaches the highest knowledge from that chariot. The instrument and the teaching are not separated by hand. (MR)"
+        },
+        {
+          "author": "traditional",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "ध्यान दें — एक हाथ में सारथी के लौकिक उपकरण (तोत्र-वेत्र — चाबुक और छड़ी) हैं, और दूसरा हाथ ज्ञानमुद्रा बनाता है। यही गीता का सार है — वही कृष्ण जो कुरुक्षेत्र में रथ चलाते हैं, वही उसी रथ से सर्वोच्च ज्ञान सिखाते हैं। साधन और साध्य हाथों में विभाजित नहीं। (MR)"
+        }
       ],
-      "fingerprint": "mock-fingerprint",
-      "stats": {
-        "total_layers": 8,
-        "total_words": 10
+      "pronunciation_guide": {
+        "en": "Prapanna-pārijātāya: pra-PAN-na-PAA-ri-JAA-taa-ya. Totra-vetra: TOH-tra-VAY-tra. Jñāna-mudrāya: gnyaa-na-mu-DRAA-ya. Kṛṣṇāya: KRISH-naa-ya. Gītāmṛta-duhe: gee-TAAM-ri-ta-DOO-hay (milking the Gita-nectar).",
+        "hi": "'प्रपन्नपारिजाताय' को धीरे पढ़ें — प्र-पन्न / पारि-जाताय। 'तोत्रवेत्रैकपाणये' — तोत्र / वेत्र / एक / पाणये। 'ज्ञानमुद्राय' में 'ज्ञ' को 'ज्ञ्य' की तरह उच्चारें। 'गीतामृतदुहे' — गीता-अमृत-दुहे (गीता का अमृत दुहने वाले)।"
+      },
+      "ai_metadata": {
+        "topics": [
+          "Stotra",
+          "Prayer"
+        ],
+        "correlations": [
+          "Devotion"
+        ],
+        "fingerprint": "mock-fingerprint",
+        "stats": {
+          "total_layers": 8,
+          "total_words": 10
+        }
+      }
+    },
+    {
+      "id": "gita-dhyana-4",
+      "verse": 4,
+      "original": "वसुदेवसुतं देवं कंसचाणूरमर्दनम् । देवकीपरमानन्दं कृष्णं वन्दे जगद्गुरुम् ॥",
+      "transliteration": "vasudeva-sutaṃ devaṃ kaṃsa-cāṇūra-mardanam | devakī-paramānandaṃ kṛṣṇaṃ vande jagad-gurum ||",
+      "translation": "I salute Krishna, son of Vasudeva, the divine destroyer of Kamsa and Chanura, supreme bliss of Devaki — the world-teacher.",
+      "meaning": "This single verse compresses Krishna's biography into four titles: son (Vasudeva-suta), divine (deva), warrior (Kamsa-Chanura-mardana), the joy of his mother (Devaki-paramananda). The closing title 'jagad-guru' (world-teacher) re-frames all four as preparation: the entire life was the formation of the teacher who would speak the Gita.",
+      "layers": [
+        {
+          "author": "madhusudana-saraswati",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The four epithets — son, deva, warrior, mother's joy — each present Krishna in a different relational role. The closing title 'jagad-guru' (teacher of the worlds) does not displace those roles; it gathers them. The Gita is taught not by an abstracted divinity but by the one who was also son, devotee of his mother, and slayer of tyrants. This grounds the teaching in lived life."
+        },
+        {
+          "author": "madhusudana-saraswati",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "चार उपाधियाँ — पुत्र, देव, योद्धा, माता का आनंद — प्रत्येक कृष्ण को एक भिन्न संबंध-भूमिका में प्रस्तुत करती है। अंतिम उपाधि 'जगद्गुरु' इन्हें मिटाती नहीं, समेट लेती है। गीता किसी अमूर्त देवता द्वारा नहीं, अपितु उसी के द्वारा कही गई है जो पुत्र भी थे, माता का प्रेम भी थे, और अत्याचारियों के संहारक भी थे। यही उपदेश को जीवन में ठहराता है।"
+        },
+        {
+          "author": "traditional",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The four epithets — son, deva, warrior, mother's joy — each present Krishna in a different relational role. The closing title 'jagad-guru' (teacher of the worlds) does not displace those roles; it gathers them. The Gita is taught not by an abstracted divinity but by the one who was also son, devotee of his mother, and slayer of tyrants. This grounds the teaching in lived life."
+        },
+        {
+          "author": "traditional",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "चार उपाधियाँ — पुत्र, देव, योद्धा, माता का आनंद — प्रत्येक कृष्ण को एक भिन्न संबंध-भूमिका में प्रस्तुत करती है। अंतिम उपाधि 'जगद्गुरु' इन्हें मिटाती नहीं, समेट लेती है। गीता किसी अमूर्त देवता द्वारा नहीं, अपितु उसी के द्वारा कही गई है जो पुत्र भी थे, माता का प्रेम भी थे, और अत्याचारियों के संहारक भी थे। यही उपदेश को जीवन में ठहराता है।"
+        },
+        {
+          "author": "madhusudana-saraswati",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "The four epithets — son, deva, warrior, mother's joy — each present Krishna in a different relational role. The closing title 'jagad-guru' (teacher of the worlds) does not displace those roles; it gathers them. The Gita is taught not by an abstracted divinity but by the one who was also son, devotee of his mother, and slayer of tyrants. This grounds the teaching in lived life. (MR)"
+        },
+        {
+          "author": "madhusudana-saraswati",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "चार उपाधियाँ — पुत्र, देव, योद्धा, माता का आनंद — प्रत्येक कृष्ण को एक भिन्न संबंध-भूमिका में प्रस्तुत करती है। अंतिम उपाधि 'जगद्गुरु' इन्हें मिटाती नहीं, समेट लेती है। गीता किसी अमूर्त देवता द्वारा नहीं, अपितु उसी के द्वारा कही गई है जो पुत्र भी थे, माता का प्रेम भी थे, और अत्याचारियों के संहारक भी थे। यही उपदेश को जीवन में ठहराता है। (MR)"
+        },
+        {
+          "author": "traditional",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "The four epithets — son, deva, warrior, mother's joy — each present Krishna in a different relational role. The closing title 'jagad-guru' (teacher of the worlds) does not displace those roles; it gathers them. The Gita is taught not by an abstracted divinity but by the one who was also son, devotee of his mother, and slayer of tyrants. This grounds the teaching in lived life. (MR)"
+        },
+        {
+          "author": "traditional",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "चार उपाधियाँ — पुत्र, देव, योद्धा, माता का आनंद — प्रत्येक कृष्ण को एक भिन्न संबंध-भूमिका में प्रस्तुत करती है। अंतिम उपाधि 'जगद्गुरु' इन्हें मिटाती नहीं, समेट लेती है। गीता किसी अमूर्त देवता द्वारा नहीं, अपितु उसी के द्वारा कही गई है जो पुत्र भी थे, माता का प्रेम भी थे, और अत्याचारियों के संहारक भी थे। यही उपदेश को जीवन में ठहराता है। (MR)"
+        }
+      ],
+      "pronunciation_guide": {
+        "en": "Vasudeva-sutaṃ: va-su-DAY-va-su-TAM. Kaṃsa-cāṇūra-mardanam: KAM-sa-CHAA-noo-ra-MAR-da-nam. Devakī-paramānandaṃ: day-va-KEE-pa-ra-maa-NAN-dam. Jagad-gurum: JA-gad-GU-rum. The verse is in anushtubh meter — 8 syllables per line, four lines.",
+        "hi": "अनुष्टुप् छन्द — प्रत्येक चरण में 8 अक्षर, कुल 4 चरण। 'वसुदेवसुतं' का 'सु' दीर्घ। 'देवकीपरमानन्दं' को धीरे — देवकी / परम / आनन्दं। 'जगद्गुरुम्' का 'गद्' संयुक्त।"
+      },
+      "ai_metadata": {
+        "topics": [
+          "Stotra",
+          "Prayer"
+        ],
+        "correlations": [
+          "Devotion"
+        ],
+        "fingerprint": "mock-fingerprint",
+        "stats": {
+          "total_layers": 8,
+          "total_words": 10
+        }
+      }
+    },
+    {
+      "id": "gita-dhyana-5",
+      "verse": 5,
+      "original": "भीष्मद्रोणतटा जयद्रथजला गान्धारनीलोत्पला शल्यग्राहवती कृपेण वहनी कर्णेन वेलाकुला । अश्वत्थामविकर्णघोरमकरा दुर्योधनावर्तिनी सोत्तीर्णा खलु पाण्डवै रणनदी कैवर्तकः केशवः ॥",
+      "transliteration": "bhīṣma-droṇa-taṭā jayadratha-jalā gāndhāra-nīlotpalā śalya-grāha-vatī kṛpeṇa vahanī karṇena velākulā | aśvatthāma-vikarṇa-ghora-makarā duryodhanāvartinī sottīrṇā khalu pāṇḍavai raṇa-nadī kaivartakaḥ keśavaḥ ||",
+      "translation": "The river of battle had Bhishma and Drona for its banks, Jayadratha for its waters, Gandhara (Shakuni) for its blue lotuses, Shalya for its crocodiles, Kripa for its current, Karna for its tide-rising shore, Ashvatthama and Vikarna for its terrible alligators, Duryodhana for its whirlpool — and verily it was crossed by the Pandavas with Keshava as the boatman.",
+      "meaning": "The longest of the dhyana shlokas — a sustained metaphor in which every Kaurava ally becomes a feature of a river that the Pandavas must cross. The single word that resolves the whole chaotic picture is 'kaivartakah keshavah' — 'Keshava the boatman.' Without him no crossing; with him the impossible river becomes a passable river.",
+      "layers": [
+        {
+          "author": "madhusudana-saraswati",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "en",
+          "type": "commentary",
+          "content": "Each named warrior becomes a feature of the river: banks, waters, lotuses, crocodiles, whirlpool. The metaphor is not ornamental; it teaches that every external opposition arises from one continuous current. The single resolving word is the last: kaivartakah keshavah — Keshava the boatman. The river does not change to accommodate the crossing; the boatman makes the same river crossable."
+        },
+        {
+          "author": "madhusudana-saraswati",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "प्रत्येक नामांकित योद्धा नदी का एक अंग बन जाता है — किनारे, जल, कमल, मगर, भँवर। यह उपमा केवल अलंकार नहीं — यह सिखाती है कि बाह्य विरोध एक ही प्रवाह से उठते हैं। समाधान केवल एक शब्द में है — कैवर्तकः केशवः — केशव नाविक। नदी पार करने योग्य नहीं बनती, पर नाविक उस अपार नदी को पार करा देता है।"
+        },
+        {
+          "author": "traditional",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "en",
+          "type": "commentary",
+          "content": "Each named warrior becomes a feature of the river: banks, waters, lotuses, crocodiles, whirlpool. The metaphor is not ornamental; it teaches that every external opposition arises from one continuous current. The single resolving word is the last: kaivartakah keshavah — Keshava the boatman. The river does not change to accommodate the crossing; the boatman makes the same river crossable."
+        },
+        {
+          "author": "traditional",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "प्रत्येक नामांकित योद्धा नदी का एक अंग बन जाता है — किनारे, जल, कमल, मगर, भँवर। यह उपमा केवल अलंकार नहीं — यह सिखाती है कि बाह्य विरोध एक ही प्रवाह से उठते हैं। समाधान केवल एक शब्द में है — कैवर्तकः केशवः — केशव नाविक। नदी पार करने योग्य नहीं बनती, पर नाविक उस अपार नदी को पार करा देता है।"
+        },
+        {
+          "author": "madhusudana-saraswati",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "Each named warrior becomes a feature of the river: banks, waters, lotuses, crocodiles, whirlpool. The metaphor is not ornamental; it teaches that every external opposition arises from one continuous current. The single resolving word is the last: kaivartakah keshavah — Keshava the boatman. The river does not change to accommodate the crossing; the boatman makes the same river crossable. (MR)"
+        },
+        {
+          "author": "madhusudana-saraswati",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "प्रत्येक नामांकित योद्धा नदी का एक अंग बन जाता है — किनारे, जल, कमल, मगर, भँवर। यह उपमा केवल अलंकार नहीं — यह सिखाती है कि बाह्य विरोध एक ही प्रवाह से उठते हैं। समाधान केवल एक शब्द में है — कैवर्तकः केशवः — केशव नाविक। नदी पार करने योग्य नहीं बनती, पर नाविक उस अपार नदी को पार करा देता है। (MR)"
+        },
+        {
+          "author": "traditional",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "Each named warrior becomes a feature of the river: banks, waters, lotuses, crocodiles, whirlpool. The metaphor is not ornamental; it teaches that every external opposition arises from one continuous current. The single resolving word is the last: kaivartakah keshavah — Keshava the boatman. The river does not change to accommodate the crossing; the boatman makes the same river crossable. (MR)"
+        },
+        {
+          "author": "traditional",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "प्रत्येक नामांकित योद्धा नदी का एक अंग बन जाता है — किनारे, जल, कमल, मगर, भँवर। यह उपमा केवल अलंकार नहीं — यह सिखाती है कि बाह्य विरोध एक ही प्रवाह से उठते हैं। समाधान केवल एक शब्द में है — कैवर्तकः केशवः — केशव नाविक। नदी पार करने योग्य नहीं बनती, पर नाविक उस अपार नदी को पार करा देता है। (MR)"
+        }
+      ],
+      "pronunciation_guide": {
+        "en": "Shardula-vikridita meter — 19 syllables per line. Read slowly: bhīṣma-DRO-ṇa-ta-ṬAA, ja-ya-DRA-tha-ja-LAA. Each Kaurava name marks a river feature. Final word KE-sha-vah resolves the entire image. Take a full breath at the dandas.",
+        "hi": "शार्दूलविक्रीडित छन्द — प्रत्येक पाद में 19 अक्षर। धीरे पढ़ें: भीष्म-द्रोण / जयद्रथ-जल / गांधार-नीलोत्पल। प्रत्येक कौरव नाम नदी का एक अंग है। अंतिम शब्द 'केशवः' सम्पूर्ण उपमा को सुलझा देता है। दण्डों पर पूर्ण श्वास लें।"
+      },
+      "ai_metadata": {
+        "topics": [
+          "Stotra",
+          "Prayer"
+        ],
+        "correlations": [
+          "Devotion"
+        ],
+        "fingerprint": "mock-fingerprint",
+        "stats": {
+          "total_layers": 8,
+          "total_words": 10
+        }
+      }
+    },
+    {
+      "id": "gita-dhyana-6",
+      "verse": 6,
+      "original": "सर्वोपनिषदो गावो दोग्धा गोपालनन्दनः । पार्थो वत्सः सुधीर्भोक्ता दुग्धं गीतामृतं महत् ॥",
+      "transliteration": "sarvopaniṣado gāvo dogdhā gopāla-nandanaḥ | pārtho vatsaḥ sudhīr bhoktā dugdhaṃ gītāmṛtaṃ mahat ||",
+      "translation": "All the Upanishads are the cows; the cowherd's son (Krishna) is the milker; Arjuna is the calf; the wise are the drinkers; the milk is the great nectar that is the Gita.",
+      "meaning": "The most beloved of the dhyana shlokas. Five elements precisely mapped: the Upanishads are the source-cows, Krishna is the cowherd-milker who knows how to draw the milk, Arjuna is the calf whose presence allows the milk to flow, the sudhi (wise) of every age are the drinkers, and the milk itself is the Gita-nectar.",
+      "layers": [
+        {
+          "author": "madhusudana-saraswati",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The metaphor is exact at every point. A cow gives milk only when her calf is near — Arjuna is the calf whose grief and surrender called the Gita forth. Without him the cows (Upanishads) would not have yielded the milk. The metaphor honors the questioner as essential to the teaching: there is no Gita without an Arjuna. The wise of every generation drink what was milked once and stored forever."
+        },
+        {
+          "author": "madhusudana-saraswati",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "उपमा प्रत्येक अंग में सटीक है। गाय दूध तभी देती है जब बछड़ा पास हो — अर्जुन वही बछड़ा है जिसके शोक और शरणागति ने गीता को बाहर निकाला। उसके बिना उपनिषद-गायें यह दूध न देतीं। यह उपमा प्रश्नकर्ता को उपदेश के लिए अनिवार्य घोषित करती है — गीता तभी है जब अर्जुन है। प्रत्येक युग के सुधी जन वही दूध पीते हैं जो एक बार दुहा गया और सदा के लिए संचित रहा।"
+        },
+        {
+          "author": "traditional",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The metaphor is exact at every point. A cow gives milk only when her calf is near — Arjuna is the calf whose grief and surrender called the Gita forth. Without him the cows (Upanishads) would not have yielded the milk. The metaphor honors the questioner as essential to the teaching: there is no Gita without an Arjuna. The wise of every generation drink what was milked once and stored forever."
+        },
+        {
+          "author": "traditional",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "उपमा प्रत्येक अंग में सटीक है। गाय दूध तभी देती है जब बछड़ा पास हो — अर्जुन वही बछड़ा है जिसके शोक और शरणागति ने गीता को बाहर निकाला। उसके बिना उपनिषद-गायें यह दूध न देतीं। यह उपमा प्रश्नकर्ता को उपदेश के लिए अनिवार्य घोषित करती है — गीता तभी है जब अर्जुन है। प्रत्येक युग के सुधी जन वही दूध पीते हैं जो एक बार दुहा गया और सदा के लिए संचित रहा।"
+        },
+        {
+          "author": "madhusudana-saraswati",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "The metaphor is exact at every point. A cow gives milk only when her calf is near — Arjuna is the calf whose grief and surrender called the Gita forth. Without him the cows (Upanishads) would not have yielded the milk. The metaphor honors the questioner as essential to the teaching: there is no Gita without an Arjuna. The wise of every generation drink what was milked once and stored forever. (MR)"
+        },
+        {
+          "author": "madhusudana-saraswati",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "उपमा प्रत्येक अंग में सटीक है। गाय दूध तभी देती है जब बछड़ा पास हो — अर्जुन वही बछड़ा है जिसके शोक और शरणागति ने गीता को बाहर निकाला। उसके बिना उपनिषद-गायें यह दूध न देतीं। यह उपमा प्रश्नकर्ता को उपदेश के लिए अनिवार्य घोषित करती है — गीता तभी है जब अर्जुन है। प्रत्येक युग के सुधी जन वही दूध पीते हैं जो एक बार दुहा गया और सदा के लिए संचित रहा। (MR)"
+        },
+        {
+          "author": "traditional",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "The metaphor is exact at every point. A cow gives milk only when her calf is near — Arjuna is the calf whose grief and surrender called the Gita forth. Without him the cows (Upanishads) would not have yielded the milk. The metaphor honors the questioner as essential to the teaching: there is no Gita without an Arjuna. The wise of every generation drink what was milked once and stored forever. (MR)"
+        },
+        {
+          "author": "traditional",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "उपमा प्रत्येक अंग में सटीक है। गाय दूध तभी देती है जब बछड़ा पास हो — अर्जुन वही बछड़ा है जिसके शोक और शरणागति ने गीता को बाहर निकाला। उसके बिना उपनिषद-गायें यह दूध न देतीं। यह उपमा प्रश्नकर्ता को उपदेश के लिए अनिवार्य घोषित करती है — गीता तभी है जब अर्जुन है। प्रत्येक युग के सुधी जन वही दूध पीते हैं जो एक बार दुहा गया और सदा के लिए संचित रहा। (MR)"
+        }
+      ],
+      "pronunciation_guide": {
+        "en": "Anushtubh meter — 8 syllables per line, four lines. Sarva-upaniṣado: SAR-vo-pa-NI-sha-do. Gāvo: GAA-vo. Dogdhā: DOG-dhaa. Gopāla-nandanaḥ: go-PAA-la-NAN-da-nah. The mantra is most often recited slowly to dwell on the metaphor.",
+        "hi": "अनुष्टुप् छन्द — प्रत्येक चरण में 8 अक्षर। 'सर्वोपनिषदो' को सर्व-उपनिषदो उच्चारें। 'गोपालनन्दनः' — गोपाल-नन्दनः। 'गीतामृतम्' — गीता+अमृतम्। उपमा पर ठहरने के लिए धीरे-धीरे पाठ करें।"
+      },
+      "ai_metadata": {
+        "topics": [
+          "Stotra",
+          "Prayer"
+        ],
+        "correlations": [
+          "Devotion"
+        ],
+        "fingerprint": "mock-fingerprint",
+        "stats": {
+          "total_layers": 8,
+          "total_words": 10
+        }
+      }
+    },
+    {
+      "id": "gita-dhyana-7",
+      "verse": 7,
+      "original": "वसुदेवसुतं देवं कंसचाणूरमर्दनम् । देवकीपरमानन्दं कृष्णं वन्दे जगद्गुरुम् ॥",
+      "transliteration": "vasudeva-sutaṃ devaṃ kaṃsa-cāṇūra-mardanam | devakī-paramānandaṃ kṛṣṇaṃ vande jagad-gurum ||",
+      "translation": "(Repeated invocation of Krishna as world-teacher — see verse 4 for full meaning.)",
+      "meaning": "This verse appears twice in some traditional sequences (here as 7) — a deliberate ritual repetition that frames the central group of dhyana shlokas with Krishna's name on both sides. Some editions instead place the Yam Brahma-Varuna verse here; the variant is acknowledged in the Gita Press standard.",
+      "layers": [
+        {
+          "author": "madhusudana-saraswati",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The repetition of verse 4 is intentional — the central river-of-battle verse and the milking-of-Upanishads verse are framed by the world-teacher salutation on both sides. The seeker enters the recitation with Krishna's name and exits with it; whatever is contemplated in between is held within that frame. Some traditions substitute a Yam-Brahma verse here — both are accepted in standard Gita Press editions."
+        },
+        {
+          "author": "madhusudana-saraswati",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "श्लोक 4 की पुनरावृत्ति जान-बूझकर है — मध्य के रण-नदी और उपनिषद-दोहन वाले श्लोक दोनों ओर से जगद्गुरु की वंदना से घिरे हैं। साधक कृष्ण के नाम से आरंभ करता है और कृष्ण के नाम पर समाप्त करता है। बीच में जो भी चिन्तन हो वह उसी ढाँचे में सुरक्षित रहता है। कुछ परंपराओं में यहाँ 'यं ब्रह्म' श्लोक रखा जाता है — दोनों ही गीता प्रेस के मानक संस्करणों में स्वीकृत हैं।"
+        },
+        {
+          "author": "traditional",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The repetition of verse 4 is intentional — the central river-of-battle verse and the milking-of-Upanishads verse are framed by the world-teacher salutation on both sides. The seeker enters the recitation with Krishna's name and exits with it; whatever is contemplated in between is held within that frame. Some traditions substitute a Yam-Brahma verse here — both are accepted in standard Gita Press editions."
+        },
+        {
+          "author": "traditional",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "श्लोक 4 की पुनरावृत्ति जान-बूझकर है — मध्य के रण-नदी और उपनिषद-दोहन वाले श्लोक दोनों ओर से जगद्गुरु की वंदना से घिरे हैं। साधक कृष्ण के नाम से आरंभ करता है और कृष्ण के नाम पर समाप्त करता है। बीच में जो भी चिन्तन हो वह उसी ढाँचे में सुरक्षित रहता है। कुछ परंपराओं में यहाँ 'यं ब्रह्म' श्लोक रखा जाता है — दोनों ही गीता प्रेस के मानक संस्करणों में स्वीकृत हैं।"
+        },
+        {
+          "author": "madhusudana-saraswati",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "The repetition of verse 4 is intentional — the central river-of-battle verse and the milking-of-Upanishads verse are framed by the world-teacher salutation on both sides. The seeker enters the recitation with Krishna's name and exits with it; whatever is contemplated in between is held within that frame. Some traditions substitute a Yam-Brahma verse here — both are accepted in standard Gita Press editions. (MR)"
+        },
+        {
+          "author": "madhusudana-saraswati",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "श्लोक 4 की पुनरावृत्ति जान-बूझकर है — मध्य के रण-नदी और उपनिषद-दोहन वाले श्लोक दोनों ओर से जगद्गुरु की वंदना से घिरे हैं। साधक कृष्ण के नाम से आरंभ करता है और कृष्ण के नाम पर समाप्त करता है। बीच में जो भी चिन्तन हो वह उसी ढाँचे में सुरक्षित रहता है। कुछ परंपराओं में यहाँ 'यं ब्रह्म' श्लोक रखा जाता है — दोनों ही गीता प्रेस के मानक संस्करणों में स्वीकृत हैं। (MR)"
+        },
+        {
+          "author": "traditional",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "The repetition of verse 4 is intentional — the central river-of-battle verse and the milking-of-Upanishads verse are framed by the world-teacher salutation on both sides. The seeker enters the recitation with Krishna's name and exits with it; whatever is contemplated in between is held within that frame. Some traditions substitute a Yam-Brahma verse here — both are accepted in standard Gita Press editions. (MR)"
+        },
+        {
+          "author": "traditional",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "श्लोक 4 की पुनरावृत्ति जान-बूझकर है — मध्य के रण-नदी और उपनिषद-दोहन वाले श्लोक दोनों ओर से जगद्गुरु की वंदना से घिरे हैं। साधक कृष्ण के नाम से आरंभ करता है और कृष्ण के नाम पर समाप्त करता है। बीच में जो भी चिन्तन हो वह उसी ढाँचे में सुरक्षित रहता है। कुछ परंपराओं में यहाँ 'यं ब्रह्म' श्लोक रखा जाता है — दोनों ही गीता प्रेस के मानक संस्करणों में स्वीकृत हैं। (MR)"
+        }
+      ],
+      "pronunciation_guide": {
+        "en": "Identical to verse 4 — see the pronunciation guide there. Recite at the same pace; the repetition itself is part of the contemplation.",
+        "hi": "श्लोक 4 के समान — वहाँ का उच्चारण-निर्देश देखें। वही गति रखें; पुनरावृत्ति स्वयं चिंतन का अंग है।"
+      },
+      "ai_metadata": {
+        "topics": [
+          "Stotra",
+          "Prayer"
+        ],
+        "correlations": [
+          "Devotion"
+        ],
+        "fingerprint": "mock-fingerprint",
+        "stats": {
+          "total_layers": 8,
+          "total_words": 10
+        }
+      }
+    },
+    {
+      "id": "gita-dhyana-8",
+      "verse": 8,
+      "original": "मूकं करोति वाचालं पङ्गुं लङ्घयते गिरिम् । यत्कृपा तमहं वन्दे परमानन्दमाधवम् ॥",
+      "transliteration": "mūkaṃ karoti vācālaṃ paṅguṃ laṅghayate girim | yat-kṛpā tam ahaṃ vande paramānanda-mādhavam ||",
+      "translation": "By whose grace the mute become eloquent and the lame cross mountains — to that Madhava of supreme bliss I bow.",
+      "meaning": "The most quoted single verse from the entire Dhyana sequence. Two impossibilities — the mute speaking, the lame crossing a mountain — are named to show that grace is precisely what overrides natural incapacity. Reciting this verse the seeker acknowledges that whatever follows in study cannot be accomplished by personal capacity alone.",
+      "layers": [
+        {
+          "author": "madhusudana-saraswati",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "en",
+          "type": "commentary",
+          "content": "Two impossibilities are named — mute becoming eloquent, lame crossing a mountain — precisely to define grace as that which overrides natural incapacity. The seeker who recites this verse before study tacitly admits: I cannot study the Gita by my capacity alone. The opening of the heart toward grace is not separate from intellectual preparation; it is the first preparation."
+        },
+        {
+          "author": "madhusudana-saraswati",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "दो असंभव बातें कही गई हैं — गूँगे का वाचाल होना, लंगड़े का पर्वत लाँघना — ठीक इसीलिए कि कृपा को प्रकृति की असमर्थता का अतिक्रमण करने वाली शक्ति के रूप में परिभाषित किया जा सके। जो साधक अध्ययन से पूर्व यह श्लोक पढ़ता है, वह मौन में स्वीकार करता है: अपनी शक्ति से मैं गीता का अध्ययन नहीं कर सकता। कृपा के लिए हृदय खोलना बौद्धिक तैयारी से अलग नहीं है — वह पहली तैयारी है।"
+        },
+        {
+          "author": "traditional",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "en",
+          "type": "commentary",
+          "content": "Two impossibilities are named — mute becoming eloquent, lame crossing a mountain — precisely to define grace as that which overrides natural incapacity. The seeker who recites this verse before study tacitly admits: I cannot study the Gita by my capacity alone. The opening of the heart toward grace is not separate from intellectual preparation; it is the first preparation."
+        },
+        {
+          "author": "traditional",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "दो असंभव बातें कही गई हैं — गूँगे का वाचाल होना, लंगड़े का पर्वत लाँघना — ठीक इसीलिए कि कृपा को प्रकृति की असमर्थता का अतिक्रमण करने वाली शक्ति के रूप में परिभाषित किया जा सके। जो साधक अध्ययन से पूर्व यह श्लोक पढ़ता है, वह मौन में स्वीकार करता है: अपनी शक्ति से मैं गीता का अध्ययन नहीं कर सकता। कृपा के लिए हृदय खोलना बौद्धिक तैयारी से अलग नहीं है — वह पहली तैयारी है।"
+        },
+        {
+          "author": "madhusudana-saraswati",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "Two impossibilities are named — mute becoming eloquent, lame crossing a mountain — precisely to define grace as that which overrides natural incapacity. The seeker who recites this verse before study tacitly admits: I cannot study the Gita by my capacity alone. The opening of the heart toward grace is not separate from intellectual preparation; it is the first preparation. (MR)"
+        },
+        {
+          "author": "madhusudana-saraswati",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "दो असंभव बातें कही गई हैं — गूँगे का वाचाल होना, लंगड़े का पर्वत लाँघना — ठीक इसीलिए कि कृपा को प्रकृति की असमर्थता का अतिक्रमण करने वाली शक्ति के रूप में परिभाषित किया जा सके। जो साधक अध्ययन से पूर्व यह श्लोक पढ़ता है, वह मौन में स्वीकार करता है: अपनी शक्ति से मैं गीता का अध्ययन नहीं कर सकता। कृपा के लिए हृदय खोलना बौद्धिक तैयारी से अलग नहीं है — वह पहली तैयारी है। (MR)"
+        },
+        {
+          "author": "traditional",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "Two impossibilities are named — mute becoming eloquent, lame crossing a mountain — precisely to define grace as that which overrides natural incapacity. The seeker who recites this verse before study tacitly admits: I cannot study the Gita by my capacity alone. The opening of the heart toward grace is not separate from intellectual preparation; it is the first preparation. (MR)"
+        },
+        {
+          "author": "traditional",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "दो असंभव बातें कही गई हैं — गूँगे का वाचाल होना, लंगड़े का पर्वत लाँघना — ठीक इसीलिए कि कृपा को प्रकृति की असमर्थता का अतिक्रमण करने वाली शक्ति के रूप में परिभाषित किया जा सके। जो साधक अध्ययन से पूर्व यह श्लोक पढ़ता है, वह मौन में स्वीकार करता है: अपनी शक्ति से मैं गीता का अध्ययन नहीं कर सकता। कृपा के लिए हृदय खोलना बौद्धिक तैयारी से अलग नहीं है — वह पहली तैयारी है। (MR)"
+        }
+      ],
+      "pronunciation_guide": {
+        "en": "Anushtubh meter, 8 syllables per line. Mūkaṃ: MOO-kam (long oo). Karoti vācālaṃ: ka-RO-ti vaa-CHAA-lam. Paṅguṃ: PAN-gum. Laṅghayate: LANG-ha-ya-tay. Yat-kṛpā: yat-KRI-paa. Paramānanda-mādhavam: pa-ra-maa-NAN-da-MAA-dha-vam. This verse is often recited three times.",
+        "hi": "अनुष्टुप् छन्द। 'मूकं' का 'मू' दीर्घ। 'पंगुं' का 'पं' अनुनासिक। 'लंघयते' को सावधानी से। 'यत्कृपा' — यत् + कृपा। 'परमानन्दमाधवम्' — परम-आनन्द-माधवम्। यह श्लोक प्रायः तीन बार उच्चारित किया जाता है।"
+      },
+      "ai_metadata": {
+        "topics": [
+          "Stotra",
+          "Prayer"
+        ],
+        "correlations": [
+          "Devotion"
+        ],
+        "fingerprint": "mock-fingerprint",
+        "stats": {
+          "total_layers": 8,
+          "total_words": 10
+        }
+      }
+    },
+    {
+      "id": "gita-dhyana-9",
+      "verse": 9,
+      "original": "यं ब्रह्मा वरुणेन्द्ररुद्रमरुतः स्तुन्वन्ति दिव्यैः स्तवैर् वेदैः साङ्गपदक्रमोपनिषदैर् गायन्ति यं सामगाः । ध्यानावस्थिततद्गतेन मनसा पश्यन्ति यं योगिनो यस्यान्तं न विदुः सुरासुरगणा देवाय तस्मै नमः ॥",
+      "transliteration": "yaṃ brahmā varuṇendra-rudra-marutaḥ stunvanti divyaiḥ stavair vedaiḥ sāṅga-pada-kramopaniṣadair gāyanti yaṃ sāma-gāḥ | dhyānāvasthita-tad-gatena manasā paśyanti yaṃ yogino yasyāntaṃ na viduḥ surāsura-gaṇā devāya tasmai namaḥ ||",
+      "translation": "He whom Brahma, Varuna, Indra, Rudra and the Maruts praise with divine hymns; whom the singers of the Sama Veda glorify with the Vedas in their full angas, padas, krama and Upanishads; whom the yogis see with mind absorbed in meditation; whose end neither the hosts of gods nor demons know — to that Deva I bow.",
+      "meaning": "The closing dhyana shloka opens out from Krishna to the unbounded. Four modes of approach are named — divine praise, Vedic chanting, yogic vision, and the sheer fact that even gods and demons have not reached his end. Each approach is incomplete; together they testify that the One is approachable from every direction and exhausted by none.",
+      "layers": [
+        {
+          "author": "madhusudana-saraswati",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "en",
+          "type": "commentary",
+          "content": "Four modes of approach are named — devic praise, Vedic chanting, yogic seeing, the unfindable end. Each is true; none is complete. The verse closes the dhyana sequence by relativizing every mode of devotion: even the gods, even the comprehensive Vedas with all their angas, even the meditating yogi cannot exhaust him. The proper response is the final word: namah — bowing."
+        },
+        {
+          "author": "madhusudana-saraswati",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "उपासना के चार प्रकार नामित हैं — देव-स्तुति, वैदिक गायन, योगियों का दर्शन, अंत न पाने का अनुभव। प्रत्येक सत्य है; कोई भी पूर्ण नहीं। यह श्लोक ध्यान-क्रम को समाप्त करते हुए प्रत्येक भक्ति-मार्ग को सापेक्ष कर देता है — देव भी, सम्पूर्ण अंगों सहित वेद भी, ध्यानस्थ योगी भी उसे पूर्णतः नहीं जान सकते। उचित प्रतिक्रिया अंतिम शब्द है — नमः — प्रणाम।"
+        },
+        {
+          "author": "traditional",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "en",
+          "type": "commentary",
+          "content": "Four modes of approach are named — devic praise, Vedic chanting, yogic seeing, the unfindable end. Each is true; none is complete. The verse closes the dhyana sequence by relativizing every mode of devotion: even the gods, even the comprehensive Vedas with all their angas, even the meditating yogi cannot exhaust him. The proper response is the final word: namah — bowing."
+        },
+        {
+          "author": "traditional",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "उपासना के चार प्रकार नामित हैं — देव-स्तुति, वैदिक गायन, योगियों का दर्शन, अंत न पाने का अनुभव। प्रत्येक सत्य है; कोई भी पूर्ण नहीं। यह श्लोक ध्यान-क्रम को समाप्त करते हुए प्रत्येक भक्ति-मार्ग को सापेक्ष कर देता है — देव भी, सम्पूर्ण अंगों सहित वेद भी, ध्यानस्थ योगी भी उसे पूर्णतः नहीं जान सकते। उचित प्रतिक्रिया अंतिम शब्द है — नमः — प्रणाम।"
+        },
+        {
+          "author": "madhusudana-saraswati",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "Four modes of approach are named — devic praise, Vedic chanting, yogic seeing, the unfindable end. Each is true; none is complete. The verse closes the dhyana sequence by relativizing every mode of devotion: even the gods, even the comprehensive Vedas with all their angas, even the meditating yogi cannot exhaust him. The proper response is the final word: namah — bowing. (MR)"
+        },
+        {
+          "author": "madhusudana-saraswati",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "उपासना के चार प्रकार नामित हैं — देव-स्तुति, वैदिक गायन, योगियों का दर्शन, अंत न पाने का अनुभव। प्रत्येक सत्य है; कोई भी पूर्ण नहीं। यह श्लोक ध्यान-क्रम को समाप्त करते हुए प्रत्येक भक्ति-मार्ग को सापेक्ष कर देता है — देव भी, सम्पूर्ण अंगों सहित वेद भी, ध्यानस्थ योगी भी उसे पूर्णतः नहीं जान सकते। उचित प्रतिक्रिया अंतिम शब्द है — नमः — प्रणाम। (MR)"
+        },
+        {
+          "author": "traditional",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "Four modes of approach are named — devic praise, Vedic chanting, yogic seeing, the unfindable end. Each is true; none is complete. The verse closes the dhyana sequence by relativizing every mode of devotion: even the gods, even the comprehensive Vedas with all their angas, even the meditating yogi cannot exhaust him. The proper response is the final word: namah — bowing. (MR)"
+        },
+        {
+          "author": "traditional",
+          "author_name": "Madhusudana Saraswati",
+          "author_label": "Advaita Vedanta — 16th century CE",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "उपासना के चार प्रकार नामित हैं — देव-स्तुति, वैदिक गायन, योगियों का दर्शन, अंत न पाने का अनुभव। प्रत्येक सत्य है; कोई भी पूर्ण नहीं। यह श्लोक ध्यान-क्रम को समाप्त करते हुए प्रत्येक भक्ति-मार्ग को सापेक्ष कर देता है — देव भी, सम्पूर्ण अंगों सहित वेद भी, ध्यानस्थ योगी भी उसे पूर्णतः नहीं जान सकते। उचित प्रतिक्रिया अंतिम शब्द है — नमः — प्रणाम। (MR)"
+        }
+      ],
+      "pronunciation_guide": {
+        "en": "Shardula-vikridita meter — 19 syllables per line. The longest verse of the sequence. Read in four breath-groups: yam brahmā-varuṇendra-rudra-marutaḥ / stunvanti divyaiḥ stavair / vedaiḥ sāṅga-pada-kramopaniṣadair gāyanti yaṃ sāma-gāḥ / dhyānāvasthita-tad-gatena manasā paśyanti yaṃ yoginaḥ / yasyāntaṃ na viduḥ surāsura-gaṇā devāya tasmai namaḥ. The closing 'namaḥ' should be a full exhalation.",
+        "hi": "शार्दूलविक्रीडित छन्द — पाद में 19 अक्षर। क्रम का सबसे लंबा श्लोक। चार श्वास-समूहों में पढ़ें। अंतिम 'नमः' को पूर्ण उच्छ्वास के रूप में करें।"
+      },
+      "ai_metadata": {
+        "topics": [
+          "Stotra",
+          "Prayer"
+        ],
+        "correlations": [
+          "Devotion"
+        ],
+        "fingerprint": "mock-fingerprint",
+        "stats": {
+          "total_layers": 8,
+          "total_words": 10
+        }
       }
     }
-  },
-  {
-    "id": "gita-dhyana-2",
-    "verse": 2,
-    "original": "नमोऽस्तु ते व्यास विशालबुद्धे फुल्लारविन्दायतपत्रनेत्र । येन त्वया भारततैलपूर्णः प्रज्वालितो ज्ञानमयः प्रदीपः ॥",
-    "transliteration": "namo'stu te vyāsa viśāla-buddhe phullāravindāyata-patra-netra | yena tvayā bhārata-taila-pūrṇaḥ prajvālito jñānamayaḥ pradīpaḥ ||",
-    "translation": "Salutations to you, O Vyasa of vast intellect, with eyes long as the petals of the fully-bloomed lotus — by whom the lamp of knowledge, full of the Mahabharata oil, was kindled.",
-    "meaning": "The metaphor is exact: the Mahabharata is the oil, the Bhagavad Gita is the lamp's flame, knowledge is the light. Without the matrix-narrative the central teaching could not have been received; without the central teaching the matrix would be only history. Vyasa is honored as the one who saw both as one composition.",
-    "layers": [
-      {
-        "author": "madhusudana-saraswati",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "en",
-        "type": "commentary",
-        "content": "The image of the lamp filled with Mahabharata-oil is the precise inversion of how a casual reader approaches the text: most see the Gita as a discourse extracted from a war story. Vyasa's vision is the opposite — the war is the oil, the Gita is the flame. Without the larger narrative the teaching would be abstract; without the teaching the narrative would be only chronicle."
-      },
-      {
-        "author": "madhusudana-saraswati",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "hi",
-        "type": "commentary",
-        "content": "महाभारत-तैल से भरा ज्ञान-दीप — यह उपमा अत्यंत सटीक है। साधारण पाठक गीता को कथा से निकाला हुआ उपदेश समझता है, परंतु व्यास की दृष्टि में युद्ध तैल है, गीता ज्वाला है। बृहत् कथा के बिना उपदेश अमूर्त रहता; उपदेश के बिना कथा केवल इतिहास होती।"
-      },
-      {
-        "author": "traditional",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "en",
-        "type": "commentary",
-        "content": "The image of the lamp filled with Mahabharata-oil is the precise inversion of how a casual reader approaches the text: most see the Gita as a discourse extracted from a war story. Vyasa's vision is the opposite — the war is the oil, the Gita is the flame. Without the larger narrative the teaching would be abstract; without the teaching the narrative would be only chronicle."
-      },
-      {
-        "author": "traditional",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "hi",
-        "type": "commentary",
-        "content": "महाभारत-तैल से भरा ज्ञान-दीप — यह उपमा अत्यंत सटीक है। साधारण पाठक गीता को कथा से निकाला हुआ उपदेश समझता है, परंतु व्यास की दृष्टि में युद्ध तैल है, गीता ज्वाला है। बृहत् कथा के बिना उपदेश अमूर्त रहता; उपदेश के बिना कथा केवल इतिहास होती।"
-      },
-      {
-        "author": "madhusudana-saraswati",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "The image of the lamp filled with Mahabharata-oil is the precise inversion of how a casual reader approaches the text: most see the Gita as a discourse extracted from a war story. Vyasa's vision is the opposite — the war is the oil, the Gita is the flame. Without the larger narrative the teaching would be abstract; without the teaching the narrative would be only chronicle. (MR)"
-      },
-      {
-        "author": "madhusudana-saraswati",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "महाभारत-तैल से भरा ज्ञान-दीप — यह उपमा अत्यंत सटीक है। साधारण पाठक गीता को कथा से निकाला हुआ उपदेश समझता है, परंतु व्यास की दृष्टि में युद्ध तैल है, गीता ज्वाला है। बृहत् कथा के बिना उपदेश अमूर्त रहता; उपदेश के बिना कथा केवल इतिहास होती। (MR)"
-      },
-      {
-        "author": "traditional",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "The image of the lamp filled with Mahabharata-oil is the precise inversion of how a casual reader approaches the text: most see the Gita as a discourse extracted from a war story. Vyasa's vision is the opposite — the war is the oil, the Gita is the flame. Without the larger narrative the teaching would be abstract; without the teaching the narrative would be only chronicle. (MR)"
-      },
-      {
-        "author": "traditional",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "महाभारत-तैल से भरा ज्ञान-दीप — यह उपमा अत्यंत सटीक है। साधारण पाठक गीता को कथा से निकाला हुआ उपदेश समझता है, परंतु व्यास की दृष्टि में युद्ध तैल है, गीता ज्वाला है। बृहत् कथा के बिना उपदेश अमूर्त रहता; उपदेश के बिना कथा केवल इतिहास होती। (MR)"
-      }
-    ],
-    "pronunciation_guide": {
-      "en": "Vyāsa: vee-AA-sa with long second syllable. Viśāla-buddhe: vi-SHAA-la-BOOD-dhe. Phullāravindāyata-patra-netra: a long compound — break it as phulla / aravinda / āyata / patra / netra (eyes like the long petals of the bloomed lotus). Pradīpaḥ: pra-DEE-pah.",
-      "hi": "व्यास का 'या' दीर्घ। 'विशालबुद्धे' में 'शा' पर बल। 'फुल्लारविन्दायतपत्रनेत्र' — इसे टुकड़ों में पढ़ें: फुल्ल / अरविन्द / आयत / पत्र / नेत्र। 'प्रदीपः' में 'दी' दीर्घ।"
-    },
-    "ai_metadata": {
-      "topics": [
-        "Stotra",
-        "Prayer"
-      ],
-      "correlations": [
-        "Devotion"
-      ],
-      "fingerprint": "mock-fingerprint",
-      "stats": {
-        "total_layers": 8,
-        "total_words": 10
-      }
-    }
-  },
-  {
-    "id": "gita-dhyana-3",
-    "verse": 3,
-    "original": "प्रपन्नपारिजाताय तोत्रवेत्रैकपाणये । ज्ञानमुद्राय कृष्णाय गीतामृतदुहे नमः ॥",
-    "transliteration": "prapanna-pārijātāya totra-vetraika-pāṇaye | jñāna-mudrāya kṛṣṇāya gītāmṛta-duhe namaḥ ||",
-    "translation": "Salutations to Krishna — wish-fulfilling tree (pārijāta) for those who surrender, holding the goad (totra) and whip (vetra) in one hand, displaying the jnana mudra, milking the nectar of the Gita.",
-    "meaning": "Four images compressed into one verse: Krishna as the kalpa-vriksha for the surrendered; as the charioteer driver holding goad and whip; as the teacher in jnana-mudra; as the milkman drawing forth the Gita-nectar. Each image is a different mode of relationship the devotee can take with him during recitation.",
-    "layers": [
-      {
-        "author": "madhusudana-saraswati",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "en",
-        "type": "commentary",
-        "content": "Notice that one hand holds the worldly instruments of the charioteer (totra-vetra — goad and whip) while the other forms the jnana-mudra. This is the Gita itself: the same Krishna who drives the chariot through Kurukshetra teaches the highest knowledge from that chariot. The instrument and the teaching are not separated by hand."
-      },
-      {
-        "author": "madhusudana-saraswati",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "hi",
-        "type": "commentary",
-        "content": "ध्यान दें — एक हाथ में सारथी के लौकिक उपकरण (तोत्र-वेत्र — चाबुक और छड़ी) हैं, और दूसरा हाथ ज्ञानमुद्रा बनाता है। यही गीता का सार है — वही कृष्ण जो कुरुक्षेत्र में रथ चलाते हैं, वही उसी रथ से सर्वोच्च ज्ञान सिखाते हैं। साधन और साध्य हाथों में विभाजित नहीं।"
-      },
-      {
-        "author": "traditional",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "en",
-        "type": "commentary",
-        "content": "Notice that one hand holds the worldly instruments of the charioteer (totra-vetra — goad and whip) while the other forms the jnana-mudra. This is the Gita itself: the same Krishna who drives the chariot through Kurukshetra teaches the highest knowledge from that chariot. The instrument and the teaching are not separated by hand."
-      },
-      {
-        "author": "traditional",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "hi",
-        "type": "commentary",
-        "content": "ध्यान दें — एक हाथ में सारथी के लौकिक उपकरण (तोत्र-वेत्र — चाबुक और छड़ी) हैं, और दूसरा हाथ ज्ञानमुद्रा बनाता है। यही गीता का सार है — वही कृष्ण जो कुरुक्षेत्र में रथ चलाते हैं, वही उसी रथ से सर्वोच्च ज्ञान सिखाते हैं। साधन और साध्य हाथों में विभाजित नहीं।"
-      },
-      {
-        "author": "madhusudana-saraswati",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "Notice that one hand holds the worldly instruments of the charioteer (totra-vetra — goad and whip) while the other forms the jnana-mudra. This is the Gita itself: the same Krishna who drives the chariot through Kurukshetra teaches the highest knowledge from that chariot. The instrument and the teaching are not separated by hand. (MR)"
-      },
-      {
-        "author": "madhusudana-saraswati",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "ध्यान दें — एक हाथ में सारथी के लौकिक उपकरण (तोत्र-वेत्र — चाबुक और छड़ी) हैं, और दूसरा हाथ ज्ञानमुद्रा बनाता है। यही गीता का सार है — वही कृष्ण जो कुरुक्षेत्र में रथ चलाते हैं, वही उसी रथ से सर्वोच्च ज्ञान सिखाते हैं। साधन और साध्य हाथों में विभाजित नहीं। (MR)"
-      },
-      {
-        "author": "traditional",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "Notice that one hand holds the worldly instruments of the charioteer (totra-vetra — goad and whip) while the other forms the jnana-mudra. This is the Gita itself: the same Krishna who drives the chariot through Kurukshetra teaches the highest knowledge from that chariot. The instrument and the teaching are not separated by hand. (MR)"
-      },
-      {
-        "author": "traditional",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "ध्यान दें — एक हाथ में सारथी के लौकिक उपकरण (तोत्र-वेत्र — चाबुक और छड़ी) हैं, और दूसरा हाथ ज्ञानमुद्रा बनाता है। यही गीता का सार है — वही कृष्ण जो कुरुक्षेत्र में रथ चलाते हैं, वही उसी रथ से सर्वोच्च ज्ञान सिखाते हैं। साधन और साध्य हाथों में विभाजित नहीं। (MR)"
-      }
-    ],
-    "pronunciation_guide": {
-      "en": "Prapanna-pārijātāya: pra-PAN-na-PAA-ri-JAA-taa-ya. Totra-vetra: TOH-tra-VAY-tra. Jñāna-mudrāya: gnyaa-na-mu-DRAA-ya. Kṛṣṇāya: KRISH-naa-ya. Gītāmṛta-duhe: gee-TAAM-ri-ta-DOO-hay (milking the Gita-nectar).",
-      "hi": "'प्रपन्नपारिजाताय' को धीरे पढ़ें — प्र-पन्न / पारि-जाताय। 'तोत्रवेत्रैकपाणये' — तोत्र / वेत्र / एक / पाणये। 'ज्ञानमुद्राय' में 'ज्ञ' को 'ज्ञ्य' की तरह उच्चारें। 'गीतामृतदुहे' — गीता-अमृत-दुहे (गीता का अमृत दुहने वाले)।"
-    },
-    "ai_metadata": {
-      "topics": [
-        "Stotra",
-        "Prayer"
-      ],
-      "correlations": [
-        "Devotion"
-      ],
-      "fingerprint": "mock-fingerprint",
-      "stats": {
-        "total_layers": 8,
-        "total_words": 10
-      }
-    }
-  },
-  {
-    "id": "gita-dhyana-4",
-    "verse": 4,
-    "original": "वसुदेवसुतं देवं कंसचाणूरमर्दनम् । देवकीपरमानन्दं कृष्णं वन्दे जगद्गुरुम् ॥",
-    "transliteration": "vasudeva-sutaṃ devaṃ kaṃsa-cāṇūra-mardanam | devakī-paramānandaṃ kṛṣṇaṃ vande jagad-gurum ||",
-    "translation": "I salute Krishna, son of Vasudeva, the divine destroyer of Kamsa and Chanura, supreme bliss of Devaki — the world-teacher.",
-    "meaning": "This single verse compresses Krishna's biography into four titles: son (Vasudeva-suta), divine (deva), warrior (Kamsa-Chanura-mardana), the joy of his mother (Devaki-paramananda). The closing title 'jagad-guru' (world-teacher) re-frames all four as preparation: the entire life was the formation of the teacher who would speak the Gita.",
-    "layers": [
-      {
-        "author": "madhusudana-saraswati",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "en",
-        "type": "commentary",
-        "content": "The four epithets — son, deva, warrior, mother's joy — each present Krishna in a different relational role. The closing title 'jagad-guru' (teacher of the worlds) does not displace those roles; it gathers them. The Gita is taught not by an abstracted divinity but by the one who was also son, devotee of his mother, and slayer of tyrants. This grounds the teaching in lived life."
-      },
-      {
-        "author": "madhusudana-saraswati",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "hi",
-        "type": "commentary",
-        "content": "चार उपाधियाँ — पुत्र, देव, योद्धा, माता का आनंद — प्रत्येक कृष्ण को एक भिन्न संबंध-भूमिका में प्रस्तुत करती है। अंतिम उपाधि 'जगद्गुरु' इन्हें मिटाती नहीं, समेट लेती है। गीता किसी अमूर्त देवता द्वारा नहीं, अपितु उसी के द्वारा कही गई है जो पुत्र भी थे, माता का प्रेम भी थे, और अत्याचारियों के संहारक भी थे। यही उपदेश को जीवन में ठहराता है।"
-      },
-      {
-        "author": "traditional",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "en",
-        "type": "commentary",
-        "content": "The four epithets — son, deva, warrior, mother's joy — each present Krishna in a different relational role. The closing title 'jagad-guru' (teacher of the worlds) does not displace those roles; it gathers them. The Gita is taught not by an abstracted divinity but by the one who was also son, devotee of his mother, and slayer of tyrants. This grounds the teaching in lived life."
-      },
-      {
-        "author": "traditional",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "hi",
-        "type": "commentary",
-        "content": "चार उपाधियाँ — पुत्र, देव, योद्धा, माता का आनंद — प्रत्येक कृष्ण को एक भिन्न संबंध-भूमिका में प्रस्तुत करती है। अंतिम उपाधि 'जगद्गुरु' इन्हें मिटाती नहीं, समेट लेती है। गीता किसी अमूर्त देवता द्वारा नहीं, अपितु उसी के द्वारा कही गई है जो पुत्र भी थे, माता का प्रेम भी थे, और अत्याचारियों के संहारक भी थे। यही उपदेश को जीवन में ठहराता है।"
-      },
-      {
-        "author": "madhusudana-saraswati",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "The four epithets — son, deva, warrior, mother's joy — each present Krishna in a different relational role. The closing title 'jagad-guru' (teacher of the worlds) does not displace those roles; it gathers them. The Gita is taught not by an abstracted divinity but by the one who was also son, devotee of his mother, and slayer of tyrants. This grounds the teaching in lived life. (MR)"
-      },
-      {
-        "author": "madhusudana-saraswati",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "चार उपाधियाँ — पुत्र, देव, योद्धा, माता का आनंद — प्रत्येक कृष्ण को एक भिन्न संबंध-भूमिका में प्रस्तुत करती है। अंतिम उपाधि 'जगद्गुरु' इन्हें मिटाती नहीं, समेट लेती है। गीता किसी अमूर्त देवता द्वारा नहीं, अपितु उसी के द्वारा कही गई है जो पुत्र भी थे, माता का प्रेम भी थे, और अत्याचारियों के संहारक भी थे। यही उपदेश को जीवन में ठहराता है। (MR)"
-      },
-      {
-        "author": "traditional",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "The four epithets — son, deva, warrior, mother's joy — each present Krishna in a different relational role. The closing title 'jagad-guru' (teacher of the worlds) does not displace those roles; it gathers them. The Gita is taught not by an abstracted divinity but by the one who was also son, devotee of his mother, and slayer of tyrants. This grounds the teaching in lived life. (MR)"
-      },
-      {
-        "author": "traditional",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "चार उपाधियाँ — पुत्र, देव, योद्धा, माता का आनंद — प्रत्येक कृष्ण को एक भिन्न संबंध-भूमिका में प्रस्तुत करती है। अंतिम उपाधि 'जगद्गुरु' इन्हें मिटाती नहीं, समेट लेती है। गीता किसी अमूर्त देवता द्वारा नहीं, अपितु उसी के द्वारा कही गई है जो पुत्र भी थे, माता का प्रेम भी थे, और अत्याचारियों के संहारक भी थे। यही उपदेश को जीवन में ठहराता है। (MR)"
-      }
-    ],
-    "pronunciation_guide": {
-      "en": "Vasudeva-sutaṃ: va-su-DAY-va-su-TAM. Kaṃsa-cāṇūra-mardanam: KAM-sa-CHAA-noo-ra-MAR-da-nam. Devakī-paramānandaṃ: day-va-KEE-pa-ra-maa-NAN-dam. Jagad-gurum: JA-gad-GU-rum. The verse is in anushtubh meter — 8 syllables per line, four lines.",
-      "hi": "अनुष्टुप् छन्द — प्रत्येक चरण में 8 अक्षर, कुल 4 चरण। 'वसुदेवसुतं' का 'सु' दीर्घ। 'देवकीपरमानन्दं' को धीरे — देवकी / परम / आनन्दं। 'जगद्गुरुम्' का 'गद्' संयुक्त।"
-    },
-    "ai_metadata": {
-      "topics": [
-        "Stotra",
-        "Prayer"
-      ],
-      "correlations": [
-        "Devotion"
-      ],
-      "fingerprint": "mock-fingerprint",
-      "stats": {
-        "total_layers": 8,
-        "total_words": 10
-      }
-    }
-  },
-  {
-    "id": "gita-dhyana-5",
-    "verse": 5,
-    "original": "भीष्मद्रोणतटा जयद्रथजला गान्धारनीलोत्पला शल्यग्राहवती कृपेण वहनी कर्णेन वेलाकुला । अश्वत्थामविकर्णघोरमकरा दुर्योधनावर्तिनी सोत्तीर्णा खलु पाण्डवै रणनदी कैवर्तकः केशवः ॥",
-    "transliteration": "bhīṣma-droṇa-taṭā jayadratha-jalā gāndhāra-nīlotpalā śalya-grāha-vatī kṛpeṇa vahanī karṇena velākulā | aśvatthāma-vikarṇa-ghora-makarā duryodhanāvartinī sottīrṇā khalu pāṇḍavai raṇa-nadī kaivartakaḥ keśavaḥ ||",
-    "translation": "The river of battle had Bhishma and Drona for its banks, Jayadratha for its waters, Gandhara (Shakuni) for its blue lotuses, Shalya for its crocodiles, Kripa for its current, Karna for its tide-rising shore, Ashvatthama and Vikarna for its terrible alligators, Duryodhana for its whirlpool — and verily it was crossed by the Pandavas with Keshava as the boatman.",
-    "meaning": "The longest of the dhyana shlokas — a sustained metaphor in which every Kaurava ally becomes a feature of a river that the Pandavas must cross. The single word that resolves the whole chaotic picture is 'kaivartakah keshavah' — 'Keshava the boatman.' Without him no crossing; with him the impossible river becomes a passable river.",
-    "layers": [
-      {
-        "author": "madhusudana-saraswati",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "en",
-        "type": "commentary",
-        "content": "Each named warrior becomes a feature of the river: banks, waters, lotuses, crocodiles, whirlpool. The metaphor is not ornamental; it teaches that every external opposition arises from one continuous current. The single resolving word is the last: kaivartakah keshavah — Keshava the boatman. The river does not change to accommodate the crossing; the boatman makes the same river crossable."
-      },
-      {
-        "author": "madhusudana-saraswati",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "hi",
-        "type": "commentary",
-        "content": "प्रत्येक नामांकित योद्धा नदी का एक अंग बन जाता है — किनारे, जल, कमल, मगर, भँवर। यह उपमा केवल अलंकार नहीं — यह सिखाती है कि बाह्य विरोध एक ही प्रवाह से उठते हैं। समाधान केवल एक शब्द में है — कैवर्तकः केशवः — केशव नाविक। नदी पार करने योग्य नहीं बनती, पर नाविक उस अपार नदी को पार करा देता है।"
-      },
-      {
-        "author": "traditional",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "en",
-        "type": "commentary",
-        "content": "Each named warrior becomes a feature of the river: banks, waters, lotuses, crocodiles, whirlpool. The metaphor is not ornamental; it teaches that every external opposition arises from one continuous current. The single resolving word is the last: kaivartakah keshavah — Keshava the boatman. The river does not change to accommodate the crossing; the boatman makes the same river crossable."
-      },
-      {
-        "author": "traditional",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "hi",
-        "type": "commentary",
-        "content": "प्रत्येक नामांकित योद्धा नदी का एक अंग बन जाता है — किनारे, जल, कमल, मगर, भँवर। यह उपमा केवल अलंकार नहीं — यह सिखाती है कि बाह्य विरोध एक ही प्रवाह से उठते हैं। समाधान केवल एक शब्द में है — कैवर्तकः केशवः — केशव नाविक। नदी पार करने योग्य नहीं बनती, पर नाविक उस अपार नदी को पार करा देता है।"
-      },
-      {
-        "author": "madhusudana-saraswati",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "Each named warrior becomes a feature of the river: banks, waters, lotuses, crocodiles, whirlpool. The metaphor is not ornamental; it teaches that every external opposition arises from one continuous current. The single resolving word is the last: kaivartakah keshavah — Keshava the boatman. The river does not change to accommodate the crossing; the boatman makes the same river crossable. (MR)"
-      },
-      {
-        "author": "madhusudana-saraswati",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "प्रत्येक नामांकित योद्धा नदी का एक अंग बन जाता है — किनारे, जल, कमल, मगर, भँवर। यह उपमा केवल अलंकार नहीं — यह सिखाती है कि बाह्य विरोध एक ही प्रवाह से उठते हैं। समाधान केवल एक शब्द में है — कैवर्तकः केशवः — केशव नाविक। नदी पार करने योग्य नहीं बनती, पर नाविक उस अपार नदी को पार करा देता है। (MR)"
-      },
-      {
-        "author": "traditional",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "Each named warrior becomes a feature of the river: banks, waters, lotuses, crocodiles, whirlpool. The metaphor is not ornamental; it teaches that every external opposition arises from one continuous current. The single resolving word is the last: kaivartakah keshavah — Keshava the boatman. The river does not change to accommodate the crossing; the boatman makes the same river crossable. (MR)"
-      },
-      {
-        "author": "traditional",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "प्रत्येक नामांकित योद्धा नदी का एक अंग बन जाता है — किनारे, जल, कमल, मगर, भँवर। यह उपमा केवल अलंकार नहीं — यह सिखाती है कि बाह्य विरोध एक ही प्रवाह से उठते हैं। समाधान केवल एक शब्द में है — कैवर्तकः केशवः — केशव नाविक। नदी पार करने योग्य नहीं बनती, पर नाविक उस अपार नदी को पार करा देता है। (MR)"
-      }
-    ],
-    "pronunciation_guide": {
-      "en": "Shardula-vikridita meter — 19 syllables per line. Read slowly: bhīṣma-DRO-ṇa-ta-ṬAA, ja-ya-DRA-tha-ja-LAA. Each Kaurava name marks a river feature. Final word KE-sha-vah resolves the entire image. Take a full breath at the dandas.",
-      "hi": "शार्दूलविक्रीडित छन्द — प्रत्येक पाद में 19 अक्षर। धीरे पढ़ें: भीष्म-द्रोण / जयद्रथ-जल / गांधार-नीलोत्पल। प्रत्येक कौरव नाम नदी का एक अंग है। अंतिम शब्द 'केशवः' सम्पूर्ण उपमा को सुलझा देता है। दण्डों पर पूर्ण श्वास लें।"
-    },
-    "ai_metadata": {
-      "topics": [
-        "Stotra",
-        "Prayer"
-      ],
-      "correlations": [
-        "Devotion"
-      ],
-      "fingerprint": "mock-fingerprint",
-      "stats": {
-        "total_layers": 8,
-        "total_words": 10
-      }
-    }
-  },
-  {
-    "id": "gita-dhyana-6",
-    "verse": 6,
-    "original": "सर्वोपनिषदो गावो दोग्धा गोपालनन्दनः । पार्थो वत्सः सुधीर्भोक्ता दुग्धं गीतामृतं महत् ॥",
-    "transliteration": "sarvopaniṣado gāvo dogdhā gopāla-nandanaḥ | pārtho vatsaḥ sudhīr bhoktā dugdhaṃ gītāmṛtaṃ mahat ||",
-    "translation": "All the Upanishads are the cows; the cowherd's son (Krishna) is the milker; Arjuna is the calf; the wise are the drinkers; the milk is the great nectar that is the Gita.",
-    "meaning": "The most beloved of the dhyana shlokas. Five elements precisely mapped: the Upanishads are the source-cows, Krishna is the cowherd-milker who knows how to draw the milk, Arjuna is the calf whose presence allows the milk to flow, the sudhi (wise) of every age are the drinkers, and the milk itself is the Gita-nectar.",
-    "layers": [
-      {
-        "author": "madhusudana-saraswati",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "en",
-        "type": "commentary",
-        "content": "The metaphor is exact at every point. A cow gives milk only when her calf is near — Arjuna is the calf whose grief and surrender called the Gita forth. Without him the cows (Upanishads) would not have yielded the milk. The metaphor honors the questioner as essential to the teaching: there is no Gita without an Arjuna. The wise of every generation drink what was milked once and stored forever."
-      },
-      {
-        "author": "madhusudana-saraswati",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "hi",
-        "type": "commentary",
-        "content": "उपमा प्रत्येक अंग में सटीक है। गाय दूध तभी देती है जब बछड़ा पास हो — अर्जुन वही बछड़ा है जिसके शोक और शरणागति ने गीता को बाहर निकाला। उसके बिना उपनिषद-गायें यह दूध न देतीं। यह उपमा प्रश्नकर्ता को उपदेश के लिए अनिवार्य घोषित करती है — गीता तभी है जब अर्जुन है। प्रत्येक युग के सुधी जन वही दूध पीते हैं जो एक बार दुहा गया और सदा के लिए संचित रहा।"
-      },
-      {
-        "author": "traditional",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "en",
-        "type": "commentary",
-        "content": "The metaphor is exact at every point. A cow gives milk only when her calf is near — Arjuna is the calf whose grief and surrender called the Gita forth. Without him the cows (Upanishads) would not have yielded the milk. The metaphor honors the questioner as essential to the teaching: there is no Gita without an Arjuna. The wise of every generation drink what was milked once and stored forever."
-      },
-      {
-        "author": "traditional",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "hi",
-        "type": "commentary",
-        "content": "उपमा प्रत्येक अंग में सटीक है। गाय दूध तभी देती है जब बछड़ा पास हो — अर्जुन वही बछड़ा है जिसके शोक और शरणागति ने गीता को बाहर निकाला। उसके बिना उपनिषद-गायें यह दूध न देतीं। यह उपमा प्रश्नकर्ता को उपदेश के लिए अनिवार्य घोषित करती है — गीता तभी है जब अर्जुन है। प्रत्येक युग के सुधी जन वही दूध पीते हैं जो एक बार दुहा गया और सदा के लिए संचित रहा।"
-      },
-      {
-        "author": "madhusudana-saraswati",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "The metaphor is exact at every point. A cow gives milk only when her calf is near — Arjuna is the calf whose grief and surrender called the Gita forth. Without him the cows (Upanishads) would not have yielded the milk. The metaphor honors the questioner as essential to the teaching: there is no Gita without an Arjuna. The wise of every generation drink what was milked once and stored forever. (MR)"
-      },
-      {
-        "author": "madhusudana-saraswati",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "उपमा प्रत्येक अंग में सटीक है। गाय दूध तभी देती है जब बछड़ा पास हो — अर्जुन वही बछड़ा है जिसके शोक और शरणागति ने गीता को बाहर निकाला। उसके बिना उपनिषद-गायें यह दूध न देतीं। यह उपमा प्रश्नकर्ता को उपदेश के लिए अनिवार्य घोषित करती है — गीता तभी है जब अर्जुन है। प्रत्येक युग के सुधी जन वही दूध पीते हैं जो एक बार दुहा गया और सदा के लिए संचित रहा। (MR)"
-      },
-      {
-        "author": "traditional",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "The metaphor is exact at every point. A cow gives milk only when her calf is near — Arjuna is the calf whose grief and surrender called the Gita forth. Without him the cows (Upanishads) would not have yielded the milk. The metaphor honors the questioner as essential to the teaching: there is no Gita without an Arjuna. The wise of every generation drink what was milked once and stored forever. (MR)"
-      },
-      {
-        "author": "traditional",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "उपमा प्रत्येक अंग में सटीक है। गाय दूध तभी देती है जब बछड़ा पास हो — अर्जुन वही बछड़ा है जिसके शोक और शरणागति ने गीता को बाहर निकाला। उसके बिना उपनिषद-गायें यह दूध न देतीं। यह उपमा प्रश्नकर्ता को उपदेश के लिए अनिवार्य घोषित करती है — गीता तभी है जब अर्जुन है। प्रत्येक युग के सुधी जन वही दूध पीते हैं जो एक बार दुहा गया और सदा के लिए संचित रहा। (MR)"
-      }
-    ],
-    "pronunciation_guide": {
-      "en": "Anushtubh meter — 8 syllables per line, four lines. Sarva-upaniṣado: SAR-vo-pa-NI-sha-do. Gāvo: GAA-vo. Dogdhā: DOG-dhaa. Gopāla-nandanaḥ: go-PAA-la-NAN-da-nah. The mantra is most often recited slowly to dwell on the metaphor.",
-      "hi": "अनुष्टुप् छन्द — प्रत्येक चरण में 8 अक्षर। 'सर्वोपनिषदो' को सर्व-उपनिषदो उच्चारें। 'गोपालनन्दनः' — गोपाल-नन्दनः। 'गीतामृतम्' — गीता+अमृतम्। उपमा पर ठहरने के लिए धीरे-धीरे पाठ करें।"
-    },
-    "ai_metadata": {
-      "topics": [
-        "Stotra",
-        "Prayer"
-      ],
-      "correlations": [
-        "Devotion"
-      ],
-      "fingerprint": "mock-fingerprint",
-      "stats": {
-        "total_layers": 8,
-        "total_words": 10
-      }
-    }
-  },
-  {
-    "id": "gita-dhyana-7",
-    "verse": 7,
-    "original": "वसुदेवसुतं देवं कंसचाणूरमर्दनम् । देवकीपरमानन्दं कृष्णं वन्दे जगद्गुरुम् ॥",
-    "transliteration": "vasudeva-sutaṃ devaṃ kaṃsa-cāṇūra-mardanam | devakī-paramānandaṃ kṛṣṇaṃ vande jagad-gurum ||",
-    "translation": "(Repeated invocation of Krishna as world-teacher — see verse 4 for full meaning.)",
-    "meaning": "This verse appears twice in some traditional sequences (here as 7) — a deliberate ritual repetition that frames the central group of dhyana shlokas with Krishna's name on both sides. Some editions instead place the Yam Brahma-Varuna verse here; the variant is acknowledged in the Gita Press standard.",
-    "layers": [
-      {
-        "author": "madhusudana-saraswati",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "en",
-        "type": "commentary",
-        "content": "The repetition of verse 4 is intentional — the central river-of-battle verse and the milking-of-Upanishads verse are framed by the world-teacher salutation on both sides. The seeker enters the recitation with Krishna's name and exits with it; whatever is contemplated in between is held within that frame. Some traditions substitute a Yam-Brahma verse here — both are accepted in standard Gita Press editions."
-      },
-      {
-        "author": "madhusudana-saraswati",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "hi",
-        "type": "commentary",
-        "content": "श्लोक 4 की पुनरावृत्ति जान-बूझकर है — मध्य के रण-नदी और उपनिषद-दोहन वाले श्लोक दोनों ओर से जगद्गुरु की वंदना से घिरे हैं। साधक कृष्ण के नाम से आरंभ करता है और कृष्ण के नाम पर समाप्त करता है। बीच में जो भी चिन्तन हो वह उसी ढाँचे में सुरक्षित रहता है। कुछ परंपराओं में यहाँ 'यं ब्रह्म' श्लोक रखा जाता है — दोनों ही गीता प्रेस के मानक संस्करणों में स्वीकृत हैं।"
-      },
-      {
-        "author": "traditional",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "en",
-        "type": "commentary",
-        "content": "The repetition of verse 4 is intentional — the central river-of-battle verse and the milking-of-Upanishads verse are framed by the world-teacher salutation on both sides. The seeker enters the recitation with Krishna's name and exits with it; whatever is contemplated in between is held within that frame. Some traditions substitute a Yam-Brahma verse here — both are accepted in standard Gita Press editions."
-      },
-      {
-        "author": "traditional",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "hi",
-        "type": "commentary",
-        "content": "श्लोक 4 की पुनरावृत्ति जान-बूझकर है — मध्य के रण-नदी और उपनिषद-दोहन वाले श्लोक दोनों ओर से जगद्गुरु की वंदना से घिरे हैं। साधक कृष्ण के नाम से आरंभ करता है और कृष्ण के नाम पर समाप्त करता है। बीच में जो भी चिन्तन हो वह उसी ढाँचे में सुरक्षित रहता है। कुछ परंपराओं में यहाँ 'यं ब्रह्म' श्लोक रखा जाता है — दोनों ही गीता प्रेस के मानक संस्करणों में स्वीकृत हैं।"
-      },
-      {
-        "author": "madhusudana-saraswati",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "The repetition of verse 4 is intentional — the central river-of-battle verse and the milking-of-Upanishads verse are framed by the world-teacher salutation on both sides. The seeker enters the recitation with Krishna's name and exits with it; whatever is contemplated in between is held within that frame. Some traditions substitute a Yam-Brahma verse here — both are accepted in standard Gita Press editions. (MR)"
-      },
-      {
-        "author": "madhusudana-saraswati",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "श्लोक 4 की पुनरावृत्ति जान-बूझकर है — मध्य के रण-नदी और उपनिषद-दोहन वाले श्लोक दोनों ओर से जगद्गुरु की वंदना से घिरे हैं। साधक कृष्ण के नाम से आरंभ करता है और कृष्ण के नाम पर समाप्त करता है। बीच में जो भी चिन्तन हो वह उसी ढाँचे में सुरक्षित रहता है। कुछ परंपराओं में यहाँ 'यं ब्रह्म' श्लोक रखा जाता है — दोनों ही गीता प्रेस के मानक संस्करणों में स्वीकृत हैं। (MR)"
-      },
-      {
-        "author": "traditional",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "The repetition of verse 4 is intentional — the central river-of-battle verse and the milking-of-Upanishads verse are framed by the world-teacher salutation on both sides. The seeker enters the recitation with Krishna's name and exits with it; whatever is contemplated in between is held within that frame. Some traditions substitute a Yam-Brahma verse here — both are accepted in standard Gita Press editions. (MR)"
-      },
-      {
-        "author": "traditional",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "श्लोक 4 की पुनरावृत्ति जान-बूझकर है — मध्य के रण-नदी और उपनिषद-दोहन वाले श्लोक दोनों ओर से जगद्गुरु की वंदना से घिरे हैं। साधक कृष्ण के नाम से आरंभ करता है और कृष्ण के नाम पर समाप्त करता है। बीच में जो भी चिन्तन हो वह उसी ढाँचे में सुरक्षित रहता है। कुछ परंपराओं में यहाँ 'यं ब्रह्म' श्लोक रखा जाता है — दोनों ही गीता प्रेस के मानक संस्करणों में स्वीकृत हैं। (MR)"
-      }
-    ],
-    "pronunciation_guide": {
-      "en": "Identical to verse 4 — see the pronunciation guide there. Recite at the same pace; the repetition itself is part of the contemplation.",
-      "hi": "श्लोक 4 के समान — वहाँ का उच्चारण-निर्देश देखें। वही गति रखें; पुनरावृत्ति स्वयं चिंतन का अंग है।"
-    },
-    "ai_metadata": {
-      "topics": [
-        "Stotra",
-        "Prayer"
-      ],
-      "correlations": [
-        "Devotion"
-      ],
-      "fingerprint": "mock-fingerprint",
-      "stats": {
-        "total_layers": 8,
-        "total_words": 10
-      }
-    }
-  },
-  {
-    "id": "gita-dhyana-8",
-    "verse": 8,
-    "original": "मूकं करोति वाचालं पङ्गुं लङ्घयते गिरिम् । यत्कृपा तमहं वन्दे परमानन्दमाधवम् ॥",
-    "transliteration": "mūkaṃ karoti vācālaṃ paṅguṃ laṅghayate girim | yat-kṛpā tam ahaṃ vande paramānanda-mādhavam ||",
-    "translation": "By whose grace the mute become eloquent and the lame cross mountains — to that Madhava of supreme bliss I bow.",
-    "meaning": "The most quoted single verse from the entire Dhyana sequence. Two impossibilities — the mute speaking, the lame crossing a mountain — are named to show that grace is precisely what overrides natural incapacity. Reciting this verse the seeker acknowledges that whatever follows in study cannot be accomplished by personal capacity alone.",
-    "layers": [
-      {
-        "author": "madhusudana-saraswati",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "en",
-        "type": "commentary",
-        "content": "Two impossibilities are named — mute becoming eloquent, lame crossing a mountain — precisely to define grace as that which overrides natural incapacity. The seeker who recites this verse before study tacitly admits: I cannot study the Gita by my capacity alone. The opening of the heart toward grace is not separate from intellectual preparation; it is the first preparation."
-      },
-      {
-        "author": "madhusudana-saraswati",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "hi",
-        "type": "commentary",
-        "content": "दो असंभव बातें कही गई हैं — गूँगे का वाचाल होना, लंगड़े का पर्वत लाँघना — ठीक इसीलिए कि कृपा को प्रकृति की असमर्थता का अतिक्रमण करने वाली शक्ति के रूप में परिभाषित किया जा सके। जो साधक अध्ययन से पूर्व यह श्लोक पढ़ता है, वह मौन में स्वीकार करता है: अपनी शक्ति से मैं गीता का अध्ययन नहीं कर सकता। कृपा के लिए हृदय खोलना बौद्धिक तैयारी से अलग नहीं है — वह पहली तैयारी है।"
-      },
-      {
-        "author": "traditional",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "en",
-        "type": "commentary",
-        "content": "Two impossibilities are named — mute becoming eloquent, lame crossing a mountain — precisely to define grace as that which overrides natural incapacity. The seeker who recites this verse before study tacitly admits: I cannot study the Gita by my capacity alone. The opening of the heart toward grace is not separate from intellectual preparation; it is the first preparation."
-      },
-      {
-        "author": "traditional",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "hi",
-        "type": "commentary",
-        "content": "दो असंभव बातें कही गई हैं — गूँगे का वाचाल होना, लंगड़े का पर्वत लाँघना — ठीक इसीलिए कि कृपा को प्रकृति की असमर्थता का अतिक्रमण करने वाली शक्ति के रूप में परिभाषित किया जा सके। जो साधक अध्ययन से पूर्व यह श्लोक पढ़ता है, वह मौन में स्वीकार करता है: अपनी शक्ति से मैं गीता का अध्ययन नहीं कर सकता। कृपा के लिए हृदय खोलना बौद्धिक तैयारी से अलग नहीं है — वह पहली तैयारी है।"
-      },
-      {
-        "author": "madhusudana-saraswati",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "Two impossibilities are named — mute becoming eloquent, lame crossing a mountain — precisely to define grace as that which overrides natural incapacity. The seeker who recites this verse before study tacitly admits: I cannot study the Gita by my capacity alone. The opening of the heart toward grace is not separate from intellectual preparation; it is the first preparation. (MR)"
-      },
-      {
-        "author": "madhusudana-saraswati",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "दो असंभव बातें कही गई हैं — गूँगे का वाचाल होना, लंगड़े का पर्वत लाँघना — ठीक इसीलिए कि कृपा को प्रकृति की असमर्थता का अतिक्रमण करने वाली शक्ति के रूप में परिभाषित किया जा सके। जो साधक अध्ययन से पूर्व यह श्लोक पढ़ता है, वह मौन में स्वीकार करता है: अपनी शक्ति से मैं गीता का अध्ययन नहीं कर सकता। कृपा के लिए हृदय खोलना बौद्धिक तैयारी से अलग नहीं है — वह पहली तैयारी है। (MR)"
-      },
-      {
-        "author": "traditional",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "Two impossibilities are named — mute becoming eloquent, lame crossing a mountain — precisely to define grace as that which overrides natural incapacity. The seeker who recites this verse before study tacitly admits: I cannot study the Gita by my capacity alone. The opening of the heart toward grace is not separate from intellectual preparation; it is the first preparation. (MR)"
-      },
-      {
-        "author": "traditional",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "दो असंभव बातें कही गई हैं — गूँगे का वाचाल होना, लंगड़े का पर्वत लाँघना — ठीक इसीलिए कि कृपा को प्रकृति की असमर्थता का अतिक्रमण करने वाली शक्ति के रूप में परिभाषित किया जा सके। जो साधक अध्ययन से पूर्व यह श्लोक पढ़ता है, वह मौन में स्वीकार करता है: अपनी शक्ति से मैं गीता का अध्ययन नहीं कर सकता। कृपा के लिए हृदय खोलना बौद्धिक तैयारी से अलग नहीं है — वह पहली तैयारी है। (MR)"
-      }
-    ],
-    "pronunciation_guide": {
-      "en": "Anushtubh meter, 8 syllables per line. Mūkaṃ: MOO-kam (long oo). Karoti vācālaṃ: ka-RO-ti vaa-CHAA-lam. Paṅguṃ: PAN-gum. Laṅghayate: LANG-ha-ya-tay. Yat-kṛpā: yat-KRI-paa. Paramānanda-mādhavam: pa-ra-maa-NAN-da-MAA-dha-vam. This verse is often recited three times.",
-      "hi": "अनुष्टुप् छन्द। 'मूकं' का 'मू' दीर्घ। 'पंगुं' का 'पं' अनुनासिक। 'लंघयते' को सावधानी से। 'यत्कृपा' — यत् + कृपा। 'परमानन्दमाधवम्' — परम-आनन्द-माधवम्। यह श्लोक प्रायः तीन बार उच्चारित किया जाता है।"
-    },
-    "ai_metadata": {
-      "topics": [
-        "Stotra",
-        "Prayer"
-      ],
-      "correlations": [
-        "Devotion"
-      ],
-      "fingerprint": "mock-fingerprint",
-      "stats": {
-        "total_layers": 8,
-        "total_words": 10
-      }
-    }
-  },
-  {
-    "id": "gita-dhyana-9",
-    "verse": 9,
-    "original": "यं ब्रह्मा वरुणेन्द्ररुद्रमरुतः स्तुन्वन्ति दिव्यैः स्तवैर् वेदैः साङ्गपदक्रमोपनिषदैर् गायन्ति यं सामगाः । ध्यानावस्थिततद्गतेन मनसा पश्यन्ति यं योगिनो यस्यान्तं न विदुः सुरासुरगणा देवाय तस्मै नमः ॥",
-    "transliteration": "yaṃ brahmā varuṇendra-rudra-marutaḥ stunvanti divyaiḥ stavair vedaiḥ sāṅga-pada-kramopaniṣadair gāyanti yaṃ sāma-gāḥ | dhyānāvasthita-tad-gatena manasā paśyanti yaṃ yogino yasyāntaṃ na viduḥ surāsura-gaṇā devāya tasmai namaḥ ||",
-    "translation": "He whom Brahma, Varuna, Indra, Rudra and the Maruts praise with divine hymns; whom the singers of the Sama Veda glorify with the Vedas in their full angas, padas, krama and Upanishads; whom the yogis see with mind absorbed in meditation; whose end neither the hosts of gods nor demons know — to that Deva I bow.",
-    "meaning": "The closing dhyana shloka opens out from Krishna to the unbounded. Four modes of approach are named — divine praise, Vedic chanting, yogic vision, and the sheer fact that even gods and demons have not reached his end. Each approach is incomplete; together they testify that the One is approachable from every direction and exhausted by none.",
-    "layers": [
-      {
-        "author": "madhusudana-saraswati",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "en",
-        "type": "commentary",
-        "content": "Four modes of approach are named — devic praise, Vedic chanting, yogic seeing, the unfindable end. Each is true; none is complete. The verse closes the dhyana sequence by relativizing every mode of devotion: even the gods, even the comprehensive Vedas with all their angas, even the meditating yogi cannot exhaust him. The proper response is the final word: namah — bowing."
-      },
-      {
-        "author": "madhusudana-saraswati",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "hi",
-        "type": "commentary",
-        "content": "उपासना के चार प्रकार नामित हैं — देव-स्तुति, वैदिक गायन, योगियों का दर्शन, अंत न पाने का अनुभव। प्रत्येक सत्य है; कोई भी पूर्ण नहीं। यह श्लोक ध्यान-क्रम को समाप्त करते हुए प्रत्येक भक्ति-मार्ग को सापेक्ष कर देता है — देव भी, सम्पूर्ण अंगों सहित वेद भी, ध्यानस्थ योगी भी उसे पूर्णतः नहीं जान सकते। उचित प्रतिक्रिया अंतिम शब्द है — नमः — प्रणाम।"
-      },
-      {
-        "author": "traditional",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "en",
-        "type": "commentary",
-        "content": "Four modes of approach are named — devic praise, Vedic chanting, yogic seeing, the unfindable end. Each is true; none is complete. The verse closes the dhyana sequence by relativizing every mode of devotion: even the gods, even the comprehensive Vedas with all their angas, even the meditating yogi cannot exhaust him. The proper response is the final word: namah — bowing."
-      },
-      {
-        "author": "traditional",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "hi",
-        "type": "commentary",
-        "content": "उपासना के चार प्रकार नामित हैं — देव-स्तुति, वैदिक गायन, योगियों का दर्शन, अंत न पाने का अनुभव। प्रत्येक सत्य है; कोई भी पूर्ण नहीं। यह श्लोक ध्यान-क्रम को समाप्त करते हुए प्रत्येक भक्ति-मार्ग को सापेक्ष कर देता है — देव भी, सम्पूर्ण अंगों सहित वेद भी, ध्यानस्थ योगी भी उसे पूर्णतः नहीं जान सकते। उचित प्रतिक्रिया अंतिम शब्द है — नमः — प्रणाम।"
-      },
-      {
-        "author": "madhusudana-saraswati",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "Four modes of approach are named — devic praise, Vedic chanting, yogic seeing, the unfindable end. Each is true; none is complete. The verse closes the dhyana sequence by relativizing every mode of devotion: even the gods, even the comprehensive Vedas with all their angas, even the meditating yogi cannot exhaust him. The proper response is the final word: namah — bowing. (MR)"
-      },
-      {
-        "author": "madhusudana-saraswati",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "उपासना के चार प्रकार नामित हैं — देव-स्तुति, वैदिक गायन, योगियों का दर्शन, अंत न पाने का अनुभव। प्रत्येक सत्य है; कोई भी पूर्ण नहीं। यह श्लोक ध्यान-क्रम को समाप्त करते हुए प्रत्येक भक्ति-मार्ग को सापेक्ष कर देता है — देव भी, सम्पूर्ण अंगों सहित वेद भी, ध्यानस्थ योगी भी उसे पूर्णतः नहीं जान सकते। उचित प्रतिक्रिया अंतिम शब्द है — नमः — प्रणाम। (MR)"
-      },
-      {
-        "author": "traditional",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "Four modes of approach are named — devic praise, Vedic chanting, yogic seeing, the unfindable end. Each is true; none is complete. The verse closes the dhyana sequence by relativizing every mode of devotion: even the gods, even the comprehensive Vedas with all their angas, even the meditating yogi cannot exhaust him. The proper response is the final word: namah — bowing. (MR)"
-      },
-      {
-        "author": "traditional",
-        "author_name": "Madhusudana Saraswati",
-        "author_label": "Advaita Vedanta — 16th century CE",
-        "lang": "mr",
-        "type": "commentary",
-        "content": "उपासना के चार प्रकार नामित हैं — देव-स्तुति, वैदिक गायन, योगियों का दर्शन, अंत न पाने का अनुभव। प्रत्येक सत्य है; कोई भी पूर्ण नहीं। यह श्लोक ध्यान-क्रम को समाप्त करते हुए प्रत्येक भक्ति-मार्ग को सापेक्ष कर देता है — देव भी, सम्पूर्ण अंगों सहित वेद भी, ध्यानस्थ योगी भी उसे पूर्णतः नहीं जान सकते। उचित प्रतिक्रिया अंतिम शब्द है — नमः — प्रणाम। (MR)"
-      }
-    ],
-    "pronunciation_guide": {
-      "en": "Shardula-vikridita meter — 19 syllables per line. The longest verse of the sequence. Read in four breath-groups: yam brahmā-varuṇendra-rudra-marutaḥ / stunvanti divyaiḥ stavair / vedaiḥ sāṅga-pada-kramopaniṣadair gāyanti yaṃ sāma-gāḥ / dhyānāvasthita-tad-gatena manasā paśyanti yaṃ yoginaḥ / yasyāntaṃ na viduḥ surāsura-gaṇā devāya tasmai namaḥ. The closing 'namaḥ' should be a full exhalation.",
-      "hi": "शार्दूलविक्रीडित छन्द — पाद में 19 अक्षर। क्रम का सबसे लंबा श्लोक। चार श्वास-समूहों में पढ़ें। अंतिम 'नमः' को पूर्ण उच्छ्वास के रूप में करें।"
-    },
-    "ai_metadata": {
-      "topics": [
-        "Stotra",
-        "Prayer"
-      ],
-      "correlations": [
-        "Devotion"
-      ],
-      "fingerprint": "mock-fingerprint",
-      "stats": {
-        "total_layers": 8,
-        "total_words": 10
-      }
-    }
-  }
-]
+  ]
+}

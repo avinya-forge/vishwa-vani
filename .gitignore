@@ -53,3 +53,6 @@ data/3-gold/mahabharata/parva-*/*.json
 scripts/mock_data/
 data/mahabharata_chapter_*.json
 data/isha_upanishad_chapter_*.json
+
+# Track agents configuration and skills
+!.agents/
