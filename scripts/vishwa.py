@@ -2567,7 +2567,7 @@ def generate_manifest():
         
         # Calculate completeness
         v_topics = stat.get("verses_with_topics", 0)
-        v_total = stat.get("total_verses", 1)
+        v_total = max(1, stat.get("total_verses", 1))
         stat["completeness"] = round((v_topics / v_total) * 100, 2)
         del stat["verses_with_topics"] # remove temp field
         

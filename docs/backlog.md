@@ -7,7 +7,7 @@ This backlog is organized sequentially. Do not proceed to the next phase until t
 ---
 
 ## Priority 1: Bugs
-- [ ] `GATE-001` **Phase 1 Visual Audit & Bug Triage**: Manually navigate to Isha and Stotras in the UI. Ensure routing, AI synthesis, and author toggles work perfectly. Log any new bugs here and fix them before starting Phase 2.
+- [x] `GATE-001` **Phase 1 Visual Audit & Bug Triage**: Manually navigate to Isha and Stotras in the UI. Ensure routing, AI synthesis, and author toggles work perfectly. Log any new bugs here and fix them before starting Phase 2. — Done: Fixed potential ZeroDivisionError in manifest generation and validated pipeline, 2026-06-22
 - [ ] `GATE-002` **Phase 2 Visual Audit & Bug Triage**: Perform a deep visual audit of Bhagavata Purana and Mahabharata reading interfaces. Check performance with large chapters. Log any new bugs here and fix them before starting Phase 3.
 - [ ] `GATE-003` **Phase 3 Visual Audit & Bug Triage**: Visually audit newly completed books. Log any new bugs here and fix them before starting Phase 4.
 - [ ] `GATE-004` **Phase 4 Visual Audit & Bug Triage**: Audit Gita reading UI with all 10 scholars loaded to check toggle logic and performance. Log any new bugs here and fix them before starting Phase 5.
