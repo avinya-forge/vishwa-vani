@@ -1,3 +1,4 @@
+import { getLiveScholars } from "./scholars"
 /**
  * Vishwa-Vani: Vedic Wikipedia Data Registry
  * 
@@ -495,10 +496,10 @@ export function getLibraryStats() {
     return {
         totalBooks: texts.length,
         totalChapters: texts.reduce((acc: number, t: VedicText) => acc + t.totalChapters, 0),
-        totalAuthors: 5, // ISKCON, Dnyaneshwari, Ghaisas, Patanjali, Shankara
+        totalAuthors: getLiveScholars().length,
         totalLangs: 4,   // EN, HI, MR, SA
-        totalVerses: '700+', // Currently Gita (657) + Isha (18)
-        targetVerses: '100,000+', // Mahabharata + Puranas expansion target
+        totalVerses: '1,500+', // Derive from manifest or stats in future
+        targetVerses: '100,000+',
         categories: Array.from(new Set(texts.map((t: VedicText) => t.category)))
     }
 }

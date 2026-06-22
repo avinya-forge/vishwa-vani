@@ -16,18 +16,13 @@ export default function ShlokaMask({ text, className, fontSize }: { text: string
     const [copied, setCopied] = useState(false)
     // Derive font size synchronously from a CSS media query match to avoid a
     // SSR→client mismatch that triggers a second layout shift.
-    const [resolvedFontSize, setResolvedFontSize] = useState(() => {
-        if (fontSize !== undefined) return fontSize
-        if (typeof window === 'undefined') return 22
-        if (window.innerWidth < 380) return 14
-        if (window.innerWidth < 640) return 16
-        return 22
-    })
+    const [resolvedFontSize, setResolvedFontSize] = useState(fontSize ?? 22)
     const { resolvedTheme } = useTheme()
-    const [windowWidth, setWindowWidth] = useState(() => typeof window !== 'undefined' ? window.innerWidth : 800)
+    const [windowWidth, setWindowWidth] = useState(800)
 
     useEffect(() => {
         if (typeof window === 'undefined') return
+        setWindowWidth(window.innerWidth)
         const handleResize = () => {
             setWindowWidth(window.innerWidth)
         }

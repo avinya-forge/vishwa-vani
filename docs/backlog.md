@@ -1,20 +1,30 @@
-# 🚀 Vishwa-Vani: The Master Backlog [SDLC v7.4 — Unified Production Pipeline]
+# 🚀 Vishwa-Vani: The Master Backlog [SDLC v7.5 — Unified Production Pipeline]
 
 This backlog is organized sequentially. Do not proceed to the next phase until the current phase is fully complete. The goal is maximum promotion to the Gold tier with absolute codebase stability. 
 
-> **CRITICAL RULE**: After each phase, a complete **Visual Audit** must be performed. Any bugs identified during this audit must be logged at the top of the backlog and fixed before the next phase can begin.
+> **CRITICAL RULE**: After each phase, a complete **Visual Audit** must be performed. Any bugs identified during this audit must be logged at the top of the backlog and fix them before the next phase can begin.
 
 ---
 
-## Priority 1: Bugs
-- [x] `GATE-001` **Phase 1 Visual Audit & Bug Triage**: Manually navigate to Isha and Stotras in the UI. Ensure routing, AI synthesis, and author toggles work perfectly. Log any new bugs here and fix them before starting Phase 2. — Done: Fixed potential ZeroDivisionError in manifest generation and validated pipeline, 2026-06-22
-- [ ] `GATE-002` **Phase 2 Visual Audit & Bug Triage**: Perform a deep visual audit of Bhagavata Purana and Mahabharata reading interfaces. Check performance with large chapters. Log any new bugs here and fix them before starting Phase 3.
-- [ ] `GATE-003` **Phase 3 Visual Audit & Bug Triage**: Visually audit newly completed books. Log any new bugs here and fix them before starting Phase 4.
-- [ ] `GATE-004` **Phase 4 Visual Audit & Bug Triage**: Audit Gita reading UI with all 10 scholars loaded to check toggle logic and performance. Log any new bugs here and fix them before starting Phase 5.
+## Priority 0: BUGS (Immediate Fix Required)
+- [x] `BUG-071` **Hydration Risk in ShlokaMask**: `window.innerWidth` accessed during initial render causing SSR mismatch. — Done: Refactored to use `useEffect` for window access.
+- [x] `BUG-072` **Hardcoded Library Stats**: `totalAuthors` and other metrics were hardcoded in `lib/texts.ts`. — Done: Refactored to derive from `SCHOLARS_REGISTRY`.
+- [x] `BUG-073` **Data Duplication in MBH Parva 3**: Verse content in `adhyaya-231.json` was identical across multiple verses. — Done: Removed duplicated content; flagged for re-scraping.
+- [x] `BUG-074` **Placeholder Violation in Pipeline**: `vishwa.py` was auto-generating `[PLACEHOLDER_...]` strings. — Done: Refactored to log warnings instead.
+- [ ] `BUG-075` **Mahabharata Parva 3 Re-scraping**: Adhyaya 231 needs fresh ingestion due to identified data corruption (duplication).
+- [ ] `BUG-076` **Hydration Audit (Global)**: Audit `Header.tsx` and `locale-provider.tsx` for safe `localStorage` access.
 
 ---
 
-## Priority 2: Content
+## Priority 1: Critical Fixes & Crawlers
+- [ ] `CRAWL-001` **Investigate specialized KMG scrapers**: Replace generic `PlaywrightCrawler` with a more robust parser for Sacred Texts.
+- [ ] `CRAWL-002` **Integrate GRETIL Scraper**: Research and integrate a library for high-accuracy Sanskrit extraction from GRETIL.
+- [x] `GATE-001` **Phase 1 Visual Audit & Bug Triage**: Manually navigate to Isha and Stotras in the UI. Ensure routing, AI synthesis, and author toggles work perfectly. — Done: 2026-06-22
+- [ ] `GATE-002` **Phase 2 Visual Audit & Bug Triage**: Perform a deep visual audit of Bhagavata Purana and Mahabharata reading interfaces. Check performance with large chapters.
+
+---
+
+## Priority 2: Content (Gathering -> Pipeline)
 
 ### Kena Upanishad
 - [ ] `GATHER-KENA-UPANISHAD` **Gather Kena Upanishad**: Gather remaining 25 verses and 2nd author into Bronze/Silver.
@@ -28,14 +38,6 @@ This backlog is organized sequentially. Do not proceed to the next phase until t
 - [ ] `GATHER-VISHNU-PURANA` **Gather Vishnu Purana**: Gather all Vishnu Purana content into Bronze/Silver.
 - [ ] `MINOR-BOOKS-DATA-VISHNU` **Complete Vishnu Purana**: Acquire full data for Vishnu Purana. Run promotion pipeline.
 
-### Garuda Purana
-- [ ] `GATHER-GARUDA-PURANA` **Gather Garuda Purana**: Gather all Garuda Purana content into Bronze/Silver.
-- [ ] `MINOR-BOOKS-DATA-GARUDA` **Complete Garuda Purana**: Acquire full data for Garuda Purana. Run promotion pipeline.
-
-### Samskaras
-- [ ] `GATHER-SAMSKARAS` **Gather Samskaras**: Gather all Samskaras content into Bronze/Silver.
-- [ ] `MINOR-BOOKS-DATA-SAMSKARAS` **Complete Samskaras**: Acquire full data for Samskaras. Run promotion pipeline.
-
 ### Bhagavata Purana
 - [ ] `BHAG-DATA-GAP` **Gather Bhagavata Purana Gaps**: Gather HI and MR translations, and AI metadata.
 - [ ] `BHAG-DATA-3` **Verify & Promote Bhagavata Purana**: Verify Canto 1 (19 chapters, 718 verses, 2 authors: Vyasa, Prabhupada). Run promotion pipeline and update manifest.
@@ -46,19 +48,7 @@ This backlog is organized sequentially. Do not proceed to the next phase until t
 - [ ] `MBH-DATA-10` **Parvas 2-18 Ingestion**: Continue pipeline for remaining parvas under the relaxed standard.
 
 ### Bhagavad Gita (Gold Expansion)
-- [ ] `GITA-SCH-03` **Bal Gangadhar Tilak**: Acquire data, parse to NVF, promote to Gold.
-- [ ] `GITA-SCH-04` **Sri Aurobindo**: Acquire data, parse to NVF, promote to Gold.
-- [ ] `GITA-SCH-05` **Acharya Vinoba Bhave**: Acquire data, parse to NVF, promote to Gold.
-- [ ] `GITA-SCH-06` **Rāmānuja**: Acquire data, parse to NVF, promote to Gold.
-- [ ] `GITA-SCH-07` **Madhvācārya**: Acquire data, parse to NVF, promote to Gold.
-- [ ] `GITA-SCH-08` **Abhinavagupta**: Acquire data, parse to NVF, promote to Gold.
-- [ ] `GITA-SCH-09` **Veer Savarkar**: Acquire data, parse to NVF, promote to Gold.
-- [ ] `GITA-SCH-10` **Gita Press Gorakhpur**: Acquire data, parse to NVF, promote to Gold.
-
-### Future Book Integration (Roadmap)
-- [ ] `ROADMAP-001` **Upanishad Expansion**: Target Katha, Prashna, Mundaka, and Mandukya Upanishads.
-- [ ] `ROADMAP-002` **Ramayana Integration**: Target Valmiki Ramayana (all Kandas).
-- [ ] `ROADMAP-003` **Vedas Integration**: Target Rigveda (Mandala 1-10).
+- [ ] `GITA-SCH-03` to `GITA-SCH-10` **Scholarly Ingestion**: Tilak, Aurobindo, Bhave, Ramanuja, Madhva, Abhinavagupta, Savarkar, Gita Press.
 
 ---
 
@@ -67,9 +57,7 @@ This backlog is organized sequentially. Do not proceed to the next phase until t
 
 ---
 
-## Priority 4: UI
+## Priority 4: UI & Deployment
 - [ ] `LAB-GITA-004` to `LAB-GITA-010` **Bhagavad Gita Labs**
-- [ ] `LAB-GARUDA-001` **Garuda Purana Lab**
-- [ ] `LAB-SAMSKARA-001` **Samskaras Lab**
 - [ ] `DEPLOY-001` Setup Cloudflare Pages / Vercel Edge caching and rate limiting telemetry.
 - [ ] `DEPLOY-002` Domain configuration and SSL setup.
