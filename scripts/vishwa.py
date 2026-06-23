@@ -2681,16 +2681,11 @@ def harden_data(slug):
                             l["author"] = parts[0]
                             if not l.get("lang"): l["lang"] = parts[1]
 
-                # Ensure mandatory perspectives (en, hi, mr) are present as slots for AI synthesis
+                # Ensure mandatory perspectives (en, hi, mr) are logged if missing
                 for lang in allowed_langs:
                     for author in ["iskcon", "dnyaneshwari"]:
                         if not layer_exists(author, lang):
-                            layers.append({
-                                "author": author, 
-                                "lang": lang, 
-                                "type": "commentary", 
-                                "content": f"[PLACEHOLDER_{lang.upper()}_{author.upper()}]" + " " * 80
-                            })
+                            print(f"    [Warning] Missing layer: {author}/{lang} for verse {verse.get('id')}")
 
                 verse["layers"] = layers
                 
