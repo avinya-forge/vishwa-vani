@@ -11,8 +11,10 @@ const messagesMap = { en, hi, mr }
 
 export default function LocaleProvider({ children }: { children: ReactNode }) {
   const [locale, setLocale] = useState('en')
+  const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
+    setMounted(true)
     const stored = localStorage.getItem('vishwa_lang')
     if (stored && ['en', 'hi', 'mr'].includes(stored)) {
       setLocale(stored)
@@ -27,13 +29,15 @@ export default function LocaleProvider({ children }: { children: ReactNode }) {
   }, [])
 
   return (
-    <NextIntlClientProvider 
-      locale={locale} 
-      messages={messagesMap[locale as keyof typeof messagesMap]}
-      timeZone="UTC"
-    >
-      {children}
-    </NextIntlClientProvider>
+    <div style={!mounted ? { visibility: 'hidden' } : undefined}>
+      <NextIntlClientProvider
+        locale={locale}
+        messages={messagesMap[locale as keyof typeof messagesMap]}
+        timeZone="UTC"
+      >
+        {children}
+      </NextIntlClientProvider>
+    </div>
   )
 }
 

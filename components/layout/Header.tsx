@@ -39,15 +39,20 @@ export default function Header() {
   // Attach generic click outside handler
   useOnClickOutside(dropdownRef, () => setShowLibrary(false))
 
-  // Load continue reading position
+  // Load continue reading position and last text
   useEffect(() => {
-    const saved = localStorage.getItem('vishwa_continue_reading')
-    if (saved) {
+    const savedReading = localStorage.getItem('vishwa_continue_reading')
+    if (savedReading) {
       try {
-        setContinueReading(JSON.parse(saved))
+        setContinueReading(JSON.parse(savedReading))
       } catch {
         // Ignore invalid data
       }
+    }
+
+    const savedText = localStorage.getItem('vishwa_last_text')
+    if (savedText) {
+      setDefaultTextSlug(savedText)
     }
   }, [])
 

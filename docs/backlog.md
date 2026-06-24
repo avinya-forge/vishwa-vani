@@ -12,7 +12,7 @@ This backlog is organized sequentially. Do not proceed to the next phase until t
 - [x] `BUG-073` **Data Duplication in MBH Parva 3**: Verse content in `adhyaya-231.json` was identical across multiple verses. — Done: Removed duplicated content; flagged for re-scraping.
 - [x] `BUG-074` **Placeholder Violation in Pipeline**: `vishwa.py` was auto-generating `[PLACEHOLDER_...]` strings. — Done: Refactored to log warnings instead.
 - [ ] `BUG-075` **Mahabharata Parva 3 Re-scraping**: Adhyaya 231 needs fresh ingestion due to identified data corruption (duplication).
-- [ ] `BUG-076` **Hydration Audit (Global)**: Audit `Header.tsx` and `locale-provider.tsx` for safe `localStorage` access.
+- [x] `BUG-076` **Hydration Audit (Global)**: Audit `Header.tsx` and `locale-provider.tsx` for safe `localStorage` access. — Done: Added `useEffect` and `mounted` states to safely access `localStorage` and prevent hydration mismatch.
 
 ---
 
