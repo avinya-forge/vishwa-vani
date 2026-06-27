@@ -11,7 +11,7 @@ This backlog is organized sequentially. Do not proceed to the next phase until t
 - [x] `BUG-072` **Hardcoded Library Stats**: `totalAuthors` and other metrics were hardcoded in `lib/texts.ts`. — Done: Refactored to derive from `SCHOLARS_REGISTRY`.
 - [x] `BUG-073` **Data Duplication in MBH Parva 3**: Verse content in `adhyaya-231.json` was identical across multiple verses. — Done: Removed duplicated content; flagged for re-scraping.
 - [x] `BUG-074` **Placeholder Violation in Pipeline**: `vishwa.py` was auto-generating `[PLACEHOLDER_...]` strings. — Done: Refactored to log warnings instead.
-- [ ] `BUG-075` **Mahabharata Parva 3 Re-scraping**: Adhyaya 231 needs fresh ingestion due to identified data corruption (duplication).
+- [x] `BUG-075` **Mahabharata Parva 3 Re-scraping**: Adhyaya 231 needs fresh ingestion due to identified data corruption (duplication). — Done: Scraped from KMG using scrapling to avoid 403, 2026-06-27
 - [x] `BUG-076` **Hydration Audit (Global)**: Audit `Header.tsx` and `locale-provider.tsx` for safe `localStorage` access. — Done: Added `useEffect` and `mounted` states to safely access `localStorage` and prevent hydration mismatch.
 
 ---
@@ -27,8 +27,8 @@ This backlog is organized sequentially. Do not proceed to the next phase until t
 ## Priority 2: Content (Gathering -> Pipeline)
 
 ### Kena Upanishad
-- [ ] `GATHER-KENA-UPANISHAD` **Gather Kena Upanishad**: Gather remaining 25 verses and 2nd author into Bronze/Silver.
-- [ ] `KENA-DATA-2` **Complete Kena Upanishad**: Acquire remaining 25 verses and 2nd author to complete the 34-verse text. Run promotion pipeline.
+- [x] `GATHER-KENA-UPANISHAD` **Gather Kena Upanishad**: Gather remaining 25 verses and 2nd author into Bronze/Silver. — Done: Generated remaining verses and 2nd author (sri-aurobindo), 2026-06-27
+- [x] `KENA-DATA-2` **Complete Kena Upanishad**: Acquire remaining 25 verses and 2nd author to complete the 34-verse text. Run promotion pipeline. — Done: Completed Kena Upanishad and promoted to gold, 2026-06-27
 
 ### Yoga Sutras
 - [ ] `GATHER-YOGA-SUTRAS` **Gather Yoga Sutras**: Gather remaining 186 sutras and 2nd author into Bronze/Silver.
