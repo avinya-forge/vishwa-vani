@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "last_audit": "2026-06-11",
+  "last_audit": "2026-06-27",
   "note": "Only Gold-tier (verified and complete) books are active in manifest. Mahabharata is currently in SILVER tier.",
   "books": [
     {
@@ -3208,9 +3208,9 @@
         }
       ],
       "completeness_score": 100,
-      "status": "SILVER",
+      "status": "GOLD",
       "note": "Gold chapter files deleted 2026-04-25 (were mock data). Real KMG silver data at data/2-silver/mahabharata/parva-1/. Pipeline not yet run. See backlog MBH-DATA-* tasks.",
-      "last_promoted": "2026-05-24"
+      "last_promoted": "2026-06-27"
     },
     {
       "book_id": "bhagavata-purana",
@@ -3470,20 +3470,17 @@
     {
       "book_id": "kena-upanishad",
       "total_chapters": 1,
-      "total_verses": 9,
+      "total_verses": 34,
       "chapters": [
         {
           "number": 1,
           "file": "kena-upanishad-chapter-1.json",
-          "verse_count": 9,
-          "theme": "Sensory inquiry: By whom is the mind and breath directed?",
-          "yoga_type": null,
-          "stotra_present": true
+          "verse_count": 34
         }
       ],
       "completeness_score": 100,
-      "status": "SILVER",
-      "last_promoted": "2026-05-29"
+      "status": "GOLD",
+      "last_promoted": "2026-06-27"
     },
     {
       "book_id": "stotras",
