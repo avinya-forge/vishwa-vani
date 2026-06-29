@@ -40,6 +40,16 @@ export const VEDIC_LABS_REGISTRY: LabAppEntry[] = [
     isPrototype: false,
   },
   {
+    id: 'moksha-path-navigator',
+    name: 'Moksha Path Navigator',
+    description: 'Interactive journey through liberation paths from Gita Chapters 8, 12, and 13.',
+    path: '/labs/moksha',
+    books: ['bhagavad-gita'],
+    chapters: [8, 12, 13],
+    topics: ['moksha', 'liberation', 'yoga', 'devotion'],
+    available: true,
+  },
+  {
     id: 'chhanda-analyzer',
     name: 'Meter Analyzer',
     description: 'Detect Sanskrit verse meter (Anushtubh, Gayatri, Trishtubh) from Devanagari input.',
@@ -129,16 +139,6 @@ export const VEDIC_LABS_REGISTRY: LabAppEntry[] = [
     chapters: [2, 16],
     topics: ['dharma', 'ethics', 'decision', 'duty'],
     available: true,
-  },
-  {
-    id: 'moksha-path-navigator',
-    name: 'Moksha Path Navigator',
-    description: 'Interactive journey through liberation paths from Gita Chapters 8, 12, and 13.',
-    path: '/labs/moksha',
-    books: ['bhagavad-gita'],
-    chapters: [8, 12, 13],
-    topics: ['moksha', 'liberation', 'yoga', 'devotion'],
-    available: false,
   },
   {
     id: 'time-consciousness-wheel',
