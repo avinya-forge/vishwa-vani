@@ -7,6 +7,22 @@ const PranayamaTimer = dynamic(() => import('@/components/lab/pranayama-timer'),
   ssr: false,
   loading: () => <LabSkeleton />
 })
+const MokshaPathNavigator = dynamic(() => import('@/components/lab/moksha-path-navigator'), {
+  ssr: false,
+  loading: () => <LabSkeleton />
+})
+const YogaMindControl = dynamic(() => import('@/components/lab/yoga-mind-control'), {
+  ssr: false,
+  loading: () => <LabSkeleton />
+})
+const BhagavataBhaktiFlow = dynamic(() => import('@/components/lab/bhagavata-bhakti-flow'), {
+  ssr: false,
+  loading: () => <LabSkeleton />
+})
+const KenaSensoryInquiry = dynamic(() => import('@/components/lab/kena-sensory-inquiry'), {
+  ssr: false,
+  loading: () => <LabSkeleton />
+})
 const AkshauhiniCalc = dynamic(() => import('@/components/lab/akshauhini-calc'), {
   ssr: false,
   loading: () => <LabSkeleton />
@@ -160,6 +176,10 @@ export default function VedicLabPage() {
            <ArjunasCrisisCounselor />
            <GunaBalancingSimulator />
            <MokshaPathwaysEngine />
+           <MokshaPathNavigator />
+           <YogaMindControl />
+           <BhagavataBhaktiFlow />
+           <KenaSensoryInquiry />
            <SanyasaParadoxResolver />
            <VisvarupaContemplation />
            <RoyalScienceDecoder />
