@@ -1,2 +1,16 @@
 CURRENT_LOC=1044
 V-SCORE=100
+
+--- BOOK-WISE DATA STATUS ---
+isha-upanishad: 19/19 verses (100.00%)
+bhagavad-gita: 657/657 verses (100.00%)
+mahabharata: 21/100000 verses (0.02%)
+bhagavata-purana: 58/14000 verses (0.41%)
+garuda-purana: 1/2 verses (50.00%)
+vishnu-purana: 1/6 verses (16.67%)
+samskaras: 3/3 verses (100.00%)
+yoga-sutras: 10/196 verses (5.10%)
+kena-upanishad: 34/34 verses (100.00%)
+stotras: 17/17 verses (100.00%)
+
+OVERALL COMPLETION: 821/114934 verses (0.71%)
