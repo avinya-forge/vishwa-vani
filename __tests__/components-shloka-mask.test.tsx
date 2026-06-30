@@ -13,7 +13,7 @@ describe('ShlokaMask Component', () => {
       font: '',
       fillStyle: '',
       clearRect: jest.fn(),
-    })) as unknown as (contextId: "2d" | "bitmaprenderer" | "webgl" | "webgl2", options?: unknown) => RenderingContext | null;
+    })) as unknown as (contextId: string, options?: unknown) => RenderingContext | null;
   });
 
   it('renders a canvas element', () => {

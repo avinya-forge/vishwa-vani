@@ -1,22 +1,21 @@
 jest.mock('@/lib/lake', () => {
     return {
+        queryLake: jest.fn(),
+        initLake: jest.fn(),
+        searchLake: jest.fn(),
+        getLakeDB: jest.fn(() => null),
         lake: {
-            init: jest.fn(),
-            query: jest.fn(),
-            queryOne: jest.fn()
+            init: jest.fn()
         },
-        getLakeDB: jest.fn(() => null)
+        __esModule: true
     };
 });
 
-import { lake, getLakeDB } from '@/lib/lake';
+import * as lakeModule from '@/lib/lake';
 
 describe('lake.ts', () => {
-    it('getLakeDB should return null initially', () => {
-        expect(getLakeDB()).toBeNull();
-    });
-
-    it('lake initialization should be simulated', async () => {
-        expect(typeof lake.init).toBe('function');
+    it('should export queryLake and initLake', () => {
+        expect(typeof lakeModule.queryLake).toBe('function');
+        expect(typeof lakeModule.initLake).toBe('function');
     });
 });
