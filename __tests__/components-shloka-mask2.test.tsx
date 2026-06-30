@@ -22,7 +22,7 @@ describe('ShlokaMask Component Canvas Tests', () => {
       textAlign: '',
       textBaseline: ''
     };
-    HTMLCanvasElement.prototype.getContext = jest.fn(() => mockContext) as unknown as (contextId: string, options?: unknown) => RenderingContext | null;
+    HTMLCanvasElement.prototype.getContext = jest.fn(() => mockContext) as unknown as typeof HTMLCanvasElement.prototype.getContext;
   });
 
   it('handles resize events to update windowWidth', () => {
