@@ -16,11 +16,20 @@ This backlog is organized sequentially. Do not proceed to the next phase until t
 
 ---
 
-## Priority 1: Critical Fixes & Crawlers
+## Priority 1: Investor Demo Readiness (10-Day Sprint)
+- [ ] `MBH-DATA-GAP` **Gather Mahabharata Parva 1 Gaps**: Gather transliterations, translations, HI/MR translations, missing authors and AI metadata.
+- [ ] `MBH-DATA-9` **Verify & Promote Mahabharata Parva 1**: Verify Parva 1 (225 adhyayas, 2 authors: KMG, Nilakantha). Run promotion pipeline and update manifest.
+- [ ] `GITA-SCH-03` to `GITA-SCH-10` **Scholarly Ingestion**: Tilak, Aurobindo, Bhave, Ramanuja, Madhva, Abhinavagupta, Savarkar, Gita Press.
+- [ ] `GATE-002` **Phase 2 Visual Audit & Bug Triage**: Perform a deep visual audit of Bhagavata Purana and Mahabharata reading interfaces. Check performance with large chapters.
+- [ ] `BUG-078` **Hunt Pipeline/Data Bugs**: Actively hunt for mapping, formatting, and completeness bugs across the Gold data tier before the demo.
+- [ ] `BUG-079` **Bhagavata Purana Data Integrity**: Fix repeated content, invalid layer content, missing fields in `book.meta.json`, and missing Prabhupada translations (hi/mr) across Canto 1.
+- [ ] `BHAG-DATA-GAP` **Gather Bhagavata Purana Gaps**: Gather HI and MR translations, and AI metadata.
+- [ ] `BHAG-DATA-3` **Verify & Promote Bhagavata Purana**: Verify Canto 1 (19 chapters, 718 verses, 2 authors: Vyasa, Prabhupada). Run promotion pipeline and update manifest.
+
+## Priority 1.5: Critical Fixes & Crawlers
 - [ ] `CRAWL-001` **Investigate specialized KMG scrapers**: Replace generic `PlaywrightCrawler` with a more robust parser for Sacred Texts.
 - [ ] `CRAWL-002` **Integrate GRETIL Scraper**: Research and integrate a library for high-accuracy Sanskrit extraction from GRETIL.
 - [x] `GATE-001` **Phase 1 Visual Audit & Bug Triage**: Manually navigate to Isha and Stotras in the UI. Ensure routing, AI synthesis, and author toggles work perfectly. — Done: 2026-06-22
-- [ ] `GATE-002` **Phase 2 Visual Audit & Bug Triage**: Perform a deep visual audit of Bhagavata Purana and Mahabharata reading interfaces. Check performance with large chapters.
 
 ---
 
@@ -38,18 +47,10 @@ This backlog is organized sequentially. Do not proceed to the next phase until t
 - [ ] `GATHER-VISHNU-PURANA` **Gather Vishnu Purana**: Gather all Vishnu Purana content into Bronze/Silver.
 - [ ] `MINOR-BOOKS-DATA-VISHNU` **Complete Vishnu Purana**: Acquire full data for Vishnu Purana. Run promotion pipeline.
 
-### Bhagavata Purana
-- [ ] `BHAG-DATA-GAP` **Gather Bhagavata Purana Gaps**: Gather HI and MR translations, and AI metadata.
-- [ ] `BHAG-DATA-3` **Verify & Promote Bhagavata Purana**: Verify Canto 1 (19 chapters, 718 verses, 2 authors: Vyasa, Prabhupada). Run promotion pipeline and update manifest.
-
 ### Mahabharata
 - [ ] `MBH-DATA-GAP` **Gather Mahabharata Parva 1 Gaps**: Blocked on gathering complete data due to unknown target source. Logged in Pending Human Decision.
-- [ ] `MBH-FIX-PARVA3` **Fix Parva 3**: Blocked on fixing Parva 3 due to missing complete data mappings. Logged in Pending Human Decision.
 - [ ] `MBH-DATA-9` **Verify & Promote Mahabharata Parva 1**: Verify Parva 1 (225 adhyayas, 2 authors: KMG, Nilakantha). Run promotion pipeline and update manifest.
 - [ ] `MBH-DATA-10` **Parvas 2-18 Ingestion**: Continue pipeline for remaining parvas under the relaxed standard.
-
-### Bhagavad Gita (Gold Expansion)
-- [ ] `GITA-SCH-03` to `GITA-SCH-10` **Scholarly Ingestion**: Tilak, Aurobindo, Bhave, Ramanuja, Madhva, Abhinavagupta, Savarkar, Gita Press.
 
 ---
 
@@ -62,6 +63,7 @@ This backlog is organized sequentially. Do not proceed to the next phase until t
 - [x] `LAB-GITA-004` to `LAB-GITA-010` **Bhagavad Gita Labs** — Done: Implemented Moksha Path Navigator, Yoga Mind Control Explorer, Bhāgavata Bhakti Flow, and Kena Sensory Inquiry labs.
 - [ ] `DEPLOY-001` Setup Cloudflare Pages / Vercel Edge caching and rate limiting telemetry.
 - [ ] `DEPLOY-002` Domain configuration and SSL setup.
+- [ ] `BUG-077` **KMG Translation Misalignment Audit**: Audit the entire Mahabharata KMG dataset for translation misalignments due to differences in chapter numbering between KMG and standard Sanskrit editions, similar to the Parva 3 Adhyaya 231 issue.
 
 ## 🛑 Pending Human Decision Backlog
 - `BHAG-GATHER-FULL`: Blocked on gathering complete Bhagavata Purana data due to unknown target source.
