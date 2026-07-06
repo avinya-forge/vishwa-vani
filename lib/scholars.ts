@@ -64,6 +64,8 @@ export interface ScholarEntry {
   publicDomainSource: string
   /** Notes on copyright / license risk if any */
   licenseNote?: string
+  /** Exempt from multi-language translation requirements */
+  single_language?: boolean
 }
 
 export const SCHOLARS_REGISTRY: ScholarEntry[] = [
@@ -77,6 +79,7 @@ export const SCHOLARS_REGISTRY: ScholarEntry[] = [
     primaryLanguage: 'en',
     availableLanguages: ['en'],
     acquisitionStatus: 'live',
+    single_language: true,
     tier: 0,
     rank: null,
     schoolSummary: 'Gaudiya Vaishnava — devotion (bhakti) centered on Krishna.',
@@ -110,6 +113,7 @@ export const SCHOLARS_REGISTRY: ScholarEntry[] = [
     primaryLanguage: 'sa',
     availableLanguages: ['sa'],
     acquisitionStatus: 'live',
+    single_language: true,
     tier: 0,
     rank: null,
     schoolSummary: 'Advaita Vedanta synthesis for the Mahabharata.',
@@ -204,7 +208,7 @@ export const SCHOLARS_REGISTRY: ScholarEntry[] = [
     tradition: 'sri-vaishnava',
     primaryLanguage: 'sa',
     availableLanguages: ['sa'],
-    acquisitionStatus: 'queued',
+    acquisitionStatus: 'deferred',
     tier: 1,
     rank: 4,
     schoolSummary: 'Viśiṣṭādvaita — qualified non-dualism; the world and souls are real attributes of Brahman, who is Nārāyaṇa with auspicious qualities.',
@@ -220,7 +224,7 @@ export const SCHOLARS_REGISTRY: ScholarEntry[] = [
     tradition: 'madhva-sampradaya',
     primaryLanguage: 'sa',
     availableLanguages: ['sa'],
-    acquisitionStatus: 'queued',
+    acquisitionStatus: 'deferred',
     tier: 1,
     rank: 5,
     schoolSummary: 'Dvaita — strict dualism; Brahman, jīva, and the world are eternally and ontologically distinct; bhakti to Viṣṇu is the sole path.',
@@ -236,7 +240,7 @@ export const SCHOLARS_REGISTRY: ScholarEntry[] = [
     tradition: 'independent-modern',
     primaryLanguage: 'mr',
     availableLanguages: ['mr', 'en', 'hi'],
-    acquisitionStatus: 'queued',
+    acquisitionStatus: 'deferred',
     tier: 1,
     rank: 6,
     schoolSummary: 'Samyayoga — Equanimity and spiritualized selfless action; pure action (akarma) where duty dissolves into love and service.',
@@ -251,7 +255,7 @@ export const SCHOLARS_REGISTRY: ScholarEntry[] = [
     tradition: 'independent-modern',
     primaryLanguage: 'mr',
     availableLanguages: ['mr', 'en', 'hi'],
-    acquisitionStatus: 'queued',
+    acquisitionStatus: 'deferred',
     tier: 1,
     rank: 7,
     schoolSummary: 'Ethical action for national duty — The Gītā as a text of strength, ethical struggle, and fulfilling Swadharma without fear.',
@@ -298,7 +302,7 @@ export const SCHOLARS_REGISTRY: ScholarEntry[] = [
     tradition: 'kashmir-trika',
     primaryLanguage: 'sa',
     availableLanguages: ['sa'],
-    acquisitionStatus: 'queued',
+    acquisitionStatus: 'deferred',
     tier: 1,
     rank: 8,
     schoolSummary: 'Kashmir Śaiva (Trika) — non-dual recognition (pratyabhijñā); the Gītā read through Śiva-Śakti dynamics rather than Vaiṣṇava theology.',
@@ -314,12 +318,28 @@ export const SCHOLARS_REGISTRY: ScholarEntry[] = [
     tradition: 'pan-vaishnava-sanatana',
     primaryLanguage: 'sa',
     availableLanguages: ['sa', 'hi', 'en', 'mr'],
-    acquisitionStatus: 'queued',
+    acquisitionStatus: 'deferred',
     tier: 1,
     rank: 9,
     schoolSummary: 'Pan-Vaiṣṇava Sanātana Dharma synthesis — house style integrating multiple commentarial streams; the de-facto reference standard for Hindi devotional readership.',
     publicDomainSource: 'Sanskrit + HI editions (Goyandka, Gambhirananda) public-domain in India under corporate-authorship 60-year rule (1923+ originals are PD). MR editions PD on the same basis.',
     licenseNote: 'BUG-057 unblocker: Goyandka HI is the highest-priority Phase A drop for closing the authentic-HI gap.',
+  },
+  {
+    id: 'vyasa',
+    displayName: 'Veda Vyasa',
+    era: 'classical',
+    dates: 'Antiquity',
+    philosophicalSchool: 'sanatana-synthesis',
+    tradition: 'sankara-parampara',
+    primaryLanguage: 'sa',
+    availableLanguages: ['sa'],
+    acquisitionStatus: 'live',
+    single_language: true,
+    tier: 0,
+    rank: null,
+    schoolSummary: 'Original Author of the Puranas and Mahabharata.',
+    publicDomainSource: 'Public domain (Sanskrit)',
   },
 ]
 

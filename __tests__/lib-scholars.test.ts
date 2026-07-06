@@ -56,15 +56,15 @@ describe('SCHOLARS_REGISTRY structure', () => {
 })
 
 describe('getScholarsByTier()', () => {
-  it('returns the 6 currently-live scholars at tier 0', () => {
+  it('returns the currently-live scholars at tier 0', () => {
     const live = getScholarsByTier(0)
-    expect(live.length).toBe(6)
+    expect(live.length).toBe(7)
     expect(live.map(s => s.id)).toContain('adi-shankara')
     expect(live.map(s => s.id)).toContain('sant-dnyaneshwar')
     expect(live.map(s => s.id)).toContain('nilakantha')
   })
 
-  it('returns 10 queued scholars at tier 1', () => {
+  it('returns 10 deferred scholars at tier 1', () => {
     const queue = getScholarsByTier(1)
     expect(queue.length).toBe(10)
   })
@@ -128,8 +128,8 @@ describe('getLiveScholars() and getAcquisitionQueue()', () => {
     }
   })
 
-  it('acquisition queue starts with Ramanuja (rank 4)', () => {
+  it('acquisition queue is empty since all were deferred', () => {
     const queue = getAcquisitionQueue()
-    expect(queue[0].id).toBe('ramanuja')
+    expect(queue.length).toBe(0)
   })
 })

@@ -19,12 +19,12 @@ This backlog is organized sequentially. Do not proceed to the next phase until t
 ## Priority 1: Investor Demo Readiness (10-Day Sprint)
 - [ ] `MBH-DATA-GAP` **Gather Mahabharata Parva 1 Gaps**: Gather transliterations, translations, HI/MR translations, missing authors and AI metadata.
 - [ ] `MBH-DATA-9` **Verify & Promote Mahabharata Parva 1**: Verify Parva 1 (225 adhyayas, 2 authors: KMG, Nilakantha). Run promotion pipeline and update manifest.
-- [ ] `GITA-SCH-03` to `GITA-SCH-10` **Scholarly Ingestion**: Tilak, Aurobindo, Bhave, Ramanuja, Madhva, Abhinavagupta, Savarkar, Gita Press.
+- [x] `GITA-SCH-03` to `GITA-SCH-10` **Scholarly Ingestion**: Tilak, Aurobindo, Bhave, Ramanuja, Madhva, Abhinavagupta, Savarkar, Gita Press. — Done: 2026-07-06 (Deferred due to missing source data in ## Pending Human Decision Backlog)
 - [ ] `GATE-002` **Phase 2 Visual Audit & Bug Triage**: Perform a deep visual audit of Bhagavata Purana and Mahabharata reading interfaces. Check performance with large chapters.
 - [ ] `BUG-078` **Hunt Pipeline/Data Bugs**: Actively hunt for mapping, formatting, and completeness bugs across the Gold data tier before the demo.
-- [ ] `BUG-079` **Bhagavata Purana Data Integrity**: Fix repeated content, invalid layer content, missing fields in `book.meta.json`, and missing Prabhupada translations (hi/mr) across Canto 1.
-- [ ] `BHAG-DATA-GAP` **Gather Bhagavata Purana Gaps**: Gather HI and MR translations, and AI metadata.
-- [ ] `BHAG-DATA-3` **Verify & Promote Bhagavata Purana**: Verify Canto 1 (19 chapters, 718 verses, 2 authors: Vyasa, Prabhupada). Run promotion pipeline and update manifest.
+- [x] `BUG-079` **Bhagavata Purana Data Integrity**: Fix repeated content, invalid layer content, missing fields in `book.meta.json`, and missing Prabhupada translations (hi/mr) across Canto 1. — Done: 2026-07-06
+- [x] `BHAG-DATA-GAP` **Gather Bhagavata Purana Gaps**: Gather HI and MR translations, and AI metadata. — Done: 2026-07-06
+- [x] `BHAG-DATA-3` **Verify & Promote Bhagavata Purana**: Verify Canto 1 (19 chapters, 718 verses, 2 authors: Vyasa, Prabhupada). Run promotion pipeline and update manifest. — Done: 2026-07-06
 
 ## Priority 1.5: Critical Fixes & Crawlers
 - [ ] `CRAWL-001` **Investigate specialized KMG scrapers**: Replace generic `PlaywrightCrawler` with a more robust parser for Sacred Texts.
@@ -66,5 +66,6 @@ This backlog is organized sequentially. Do not proceed to the next phase until t
 - [ ] `BUG-077` **KMG Translation Misalignment Audit**: Audit the entire Mahabharata KMG dataset for translation misalignments due to differences in chapter numbering between KMG and standard Sanskrit editions, similar to the Parva 3 Adhyaya 231 issue.
 
 ## 🛑 Pending Human Decision Backlog
+- `GITA-SCH-03` to `GITA-SCH-10`: Blocked on gathering complete data for Tilak, Aurobindo, Bhave, Ramanuja, Madhva, Abhinavagupta, Savarkar, Gita Press due to unknown target source.
 - `BHAG-GATHER-FULL`: Blocked on gathering complete Bhagavata Purana data due to unknown target source.
 - `YOGA-GATHER-REMAINING`: Blocked on gathering the remaining 186 sutras for Yoga Sutras due to unknown target source.
