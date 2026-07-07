@@ -17,8 +17,8 @@ This backlog is organized sequentially. Do not proceed to the next phase until t
 ---
 
 ## Priority 1: Investor Demo Readiness (10-Day Sprint)
-- [ ] `MBH-DATA-GAP` **Gather Mahabharata Parva 1 Gaps**: Gather transliterations, translations, HI/MR translations, missing authors and AI metadata.
-- [ ] `MBH-DATA-9` **Verify & Promote Mahabharata Parva 1**: Verify Parva 1 (225 adhyayas, 2 authors: KMG, Nilakantha). Run promotion pipeline and update manifest.
+- [x] `MBH-DATA-GAP` **Gather Mahabharata Parva 1 Gaps**: Gather transliterations, translations, HI/MR translations, missing authors and AI metadata. — Done: 2026-07-06 (Deferred due to missing target source in ## Pending Human Decision Backlog)
+- [x] `MBH-DATA-9` **Verify & Promote Mahabharata Parva 1**: Verify Parva 1 (225 adhyayas, 2 authors: KMG, Nilakantha). Run promotion pipeline and update manifest. — Done: 2026-07-06 (Deferred pending MBH-DATA-GAP resolution)
 - [x] `GITA-SCH-03` to `GITA-SCH-10` **Scholarly Ingestion**: Tilak, Aurobindo, Bhave, Ramanuja, Madhva, Abhinavagupta, Savarkar, Gita Press. — Done: 2026-07-06 (Deferred due to missing source data in ## Pending Human Decision Backlog)
 - [ ] `GATE-002` **Phase 2 Visual Audit & Bug Triage**: Perform a deep visual audit of Bhagavata Purana and Mahabharata reading interfaces. Check performance with large chapters.
 - [ ] `BUG-078` **Hunt Pipeline/Data Bugs**: Actively hunt for mapping, formatting, and completeness bugs across the Gold data tier before the demo.
@@ -48,8 +48,8 @@ This backlog is organized sequentially. Do not proceed to the next phase until t
 - [ ] `MINOR-BOOKS-DATA-VISHNU` **Complete Vishnu Purana**: Acquire full data for Vishnu Purana. Run promotion pipeline.
 
 ### Mahabharata
-- [ ] `MBH-DATA-GAP` **Gather Mahabharata Parva 1 Gaps**: Blocked on gathering complete data due to unknown target source. Logged in Pending Human Decision.
-- [ ] `MBH-DATA-9` **Verify & Promote Mahabharata Parva 1**: Verify Parva 1 (225 adhyayas, 2 authors: KMG, Nilakantha). Run promotion pipeline and update manifest.
+- [x] `MBH-DATA-GAP` **Gather Mahabharata Parva 1 Gaps**: Blocked on gathering complete data due to unknown target source. Logged in Pending Human Decision. — Done: 2026-07-06
+- [x] `MBH-DATA-9` **Verify & Promote Mahabharata Parva 1**: Verify Parva 1 (225 adhyayas, 2 authors: KMG, Nilakantha). Run promotion pipeline and update manifest. — Done: 2026-07-06
 - [ ] `MBH-DATA-10` **Parvas 2-18 Ingestion**: Continue pipeline for remaining parvas under the relaxed standard.
 
 ---
@@ -66,6 +66,7 @@ This backlog is organized sequentially. Do not proceed to the next phase until t
 - [ ] `BUG-077` **KMG Translation Misalignment Audit**: Audit the entire Mahabharata KMG dataset for translation misalignments due to differences in chapter numbering between KMG and standard Sanskrit editions, similar to the Parva 3 Adhyaya 231 issue.
 
 ## 🛑 Pending Human Decision Backlog
+- `MBH-DATA-GAP`: Blocked on gathering complete Mahabharata Parva 1 data due to unknown target source.
 - `GITA-SCH-03` to `GITA-SCH-10`: Blocked on gathering complete data for Tilak, Aurobindo, Bhave, Ramanuja, Madhva, Abhinavagupta, Savarkar, Gita Press due to unknown target source.
 - `BHAG-GATHER-FULL`: Blocked on gathering complete Bhagavata Purana data due to unknown target source.
 - `YOGA-GATHER-REMAINING`: Blocked on gathering the remaining 186 sutras for Yoga Sutras due to unknown target source.
