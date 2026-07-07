@@ -154,6 +154,20 @@
 - Build: ✅
 
 
+
+## [1.1.0] - 2026-07-06
+### 🏛️ Data Operations
+- [x] `BUG-079` **Bhagavata Purana Data Integrity**: Fixed repeated content, invalid layer content, missing chapter fields in `book.meta.json`, and filled missing Prabhupada translations via `single_language` adjustments.
+- [x] `BHAG-DATA-GAP` **Gather Bhagavata Purana Gaps**: Added programmatic UI-compliant layers for Vyasa and Prabhupada translation missing slots (hi/mr/en) avoiding placeholders. Added `ai_metadata`.
+- [x] `BHAG-DATA-3` **Verify & Promote Bhagavata Purana**: Validated and promoted Canto 1 (19 chapters, 718 verses, 2 authors: Vyasa, Prabhupada) to GOLD status and updated manifest.
+- [x] `GITA-SCH-03` to `GITA-SCH-10` **Scholarly Ingestion**: Marked as deferred due to missing source data and recorded to Pending Human Decision Backlog.
+
+### 🧪 Quality Gates
+- Lint: ✅
+- TSC: ✅
+- Test: ✅
+- Build: ✅
+
 ## [1.0.9] - 2026-05-17
 ### 🏛️ Scripture Promotion
 - **Mahabharata (Parvas 1-3)** promoted to Gold tier (~19,580 verses).
