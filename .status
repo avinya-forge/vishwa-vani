@@ -1,411 +1,257 @@
-{
-  "last_updated": "2026-07-11",
-  "metrics": {
-    "total_books": 17,
-    "gold_books": 6,
-    "silver_books": 4,
-    "ui_ready_books": 8,
-    "tech_debt": [
-      "TODOs in codebase: 23"
-    ]
+[
+  {
+    "name": "Isha Upanishad",
+    "slug": "isha-upanishad",
+    "score": 100.0,
+    "stage": "GOLD",
+    "ui": "READY",
+    "progress": {
+      "chapters": "1/1",
+      "verses": "19/19",
+      "langs": "4/4",
+      "authors": "3/2"
+    },
+    "has_placeholders": false,
+    "description": "Smallest Upanishad."
   },
-  "books": [
-    {
-      "name": "Isha Upanishad",
-      "slug": "isha-upanishad",
-      "score": 100.0,
-      "stage": "GOLD",
-      "ui": "READY",
-      "progress": {
-        "chapters": "1/1",
-        "verses": "19/19",
-        "langs": "4/4",
-        "authors": "3/2"
-      },
-      "flags": {
-        "placeholders": false,
-        "incomplete_structural": false
-      },
-      "pending_tasks": [],
-      "description": "The shortest Upanishad, emphasizing the omnipresence of the Divine."
+  {
+    "name": "Kena Upanishad",
+    "slug": "kena-upanishad",
+    "score": 85.0,
+    "stage": "GOLD",
+    "ui": "READY",
+    "progress": {
+      "chapters": "1/1",
+      "verses": "34/34",
+      "langs": "4/4",
+      "authors": "2/2"
     },
-    {
-      "name": "Kena Upanishad",
-      "slug": "kena-upanishad",
-      "score": 85.0,
-      "stage": "GOLD",
-      "ui": "READY",
-      "progress": {
-        "chapters": "1/1",
-        "verses": "34/34",
-        "langs": "4/4",
-        "authors": "2/2"
-      },
-      "flags": {
-        "placeholders": true,
-        "incomplete_structural": false
-      },
-      "pending_tasks": [
-        "Audit and replace placeholder/generated data with authentic scholarship"
-      ],
-      "description": "Focuses on the nature of the Brahman and the power behind the senses."
+    "has_placeholders": true,
+    "description": "Nature of Brahman."
+  },
+  {
+    "name": "Bhagavad Gita",
+    "slug": "bhagavad-gita",
+    "score": 82.16,
+    "stage": "GOLD",
+    "ui": "READY",
+    "progress": {
+      "chapters": "18/18",
+      "verses": "657/700",
+      "langs": "4/4",
+      "authors": "2/10"
     },
-    {
-      "name": "Srimad Bhagavatam (Canto 1)",
-      "slug": "bhagavata-purana",
-      "score": 85.0,
-      "stage": "GOLD",
-      "ui": "READY",
-      "progress": {
-        "chapters": "19/19",
-        "verses": "718/718",
-        "langs": "4/4",
-        "authors": "2/2"
-      },
-      "flags": {
-        "placeholders": true,
-        "incomplete_structural": false
-      },
-      "pending_tasks": [
-        "Audit and replace placeholder/generated data with authentic scholarship"
-      ],
-      "description": "Canto 1: 19 Chapters. The glories of the Lord and His devotees."
+    "has_placeholders": false,
+    "description": "18 Chapters. Universal dialogue."
+  },
+  {
+    "name": "Mahabharata (All 18 Parvas)",
+    "slug": "mahabharata",
+    "score": 58.7,
+    "stage": "GOLD",
+    "ui": "READY",
+    "progress": {
+      "chapters": "299/2115",
+      "verses": "19580/100000",
+      "langs": "2/2",
+      "authors": "2/2"
     },
-    {
-      "name": "Bhagavad Gita",
-      "slug": "bhagavad-gita",
-      "score": 82.16,
-      "stage": "GOLD",
-      "ui": "READY",
-      "progress": {
-        "chapters": "18/18",
-        "verses": "657/700",
-        "langs": "4/4",
-        "authors": "2/10"
-      },
-      "flags": {
-        "placeholders": false,
-        "incomplete_structural": true
-      },
-      "pending_tasks": [
-        "Missing 43 verses",
-        "Add 8 more authors"
-      ],
-      "description": "18 Chapters, 700 Shlokas. Primary focus: Yoga of Action, Devotion, and Knowledge."
+    "has_placeholders": false,
+    "description": "The Great Epic."
+  },
+  {
+    "name": "Stotras & Stuties",
+    "slug": "stotras",
+    "score": 50.51,
+    "stage": "GOLD",
+    "ui": "READY",
+    "progress": {
+      "chapters": "0/100",
+      "verses": "17/1000",
+      "langs": "4/4",
+      "authors": "4/1"
     },
-    {
-      "name": "Stotras & Stuties",
-      "slug": "stotras",
-      "score": 77.29,
-      "stage": "GOLD",
-      "ui": "READY",
-      "progress": {
-        "chapters": "3/1",
-        "verses": "17/70",
-        "langs": "4/4",
-        "authors": "4/1"
-      },
-      "flags": {
-        "placeholders": false,
-        "incomplete_structural": true
-      },
-      "pending_tasks": [
-        "Missing 53 verses"
-      ],
-      "description": "A collection of devotional hymns (Sahasranamas, Shatakas)."
+    "has_placeholders": false,
+    "description": "Hymn collection."
+  },
+  {
+    "name": "Srimad Bhagavatam (12 Cantos)",
+    "slug": "bhagavata-purana",
+    "score": 44.48,
+    "stage": "GOLD",
+    "ui": "READY",
+    "progress": {
+      "chapters": "19/335",
+      "verses": "718/18000",
+      "langs": "4/4",
+      "authors": "2/2"
     },
-    {
-      "name": "Mahabharata (All 18 Parvas)",
-      "slug": "mahabharata",
-      "score": 44.32,
-      "stage": "GOLD",
-      "ui": "READY",
-      "progress": {
-        "chapters": "2/18",
-        "verses": "6977/100000",
-        "langs": "2/2",
-        "authors": "1/2"
-      },
-      "flags": {
-        "placeholders": false,
-        "incomplete_structural": true
-      },
-      "pending_tasks": [
-        "Missing 16 chapters",
-        "Missing 93023 verses",
-        "Add 1 more authors"
-      ],
-      "description": "The world\u2019s longest epic. Currently targeting Parva 1 (Adi) and 3 (Vana)."
+    "has_placeholders": true,
+    "description": "12 Cantos, 18,000 Verses."
+  },
+  {
+    "name": "Yoga Sutras of Patanjali",
+    "slug": "yoga-sutras",
+    "score": 36.53,
+    "stage": "SILVER",
+    "ui": "READY",
+    "progress": {
+      "chapters": "1/4",
+      "verses": "10/196",
+      "langs": "2/4",
+      "authors": "1/2"
     },
-    {
-      "name": "Vishnu Purana",
-      "slug": "vishnu-purana",
-      "score": 40.03,
-      "stage": "SILVER",
-      "ui": "READY",
-      "progress": {
-        "chapters": "6/6",
-        "verses": "6/7000",
-        "langs": "1/2",
-        "authors": "0/2"
-      },
-      "flags": {
-        "placeholders": false,
-        "incomplete_structural": true
-      },
-      "pending_tasks": [
-        "Missing 6994 verses",
-        "Missing languages: en",
-        "Add 2 more authors"
-      ],
-      "description": "One of the oldest Puranas, focusing on Vishnu as the Supreme."
+    "has_placeholders": false,
+    "description": "Aphorisms of Yoga."
+  },
+  {
+    "name": "16 Samskaras (Ritual Handbook)",
+    "slug": "samskaras",
+    "score": 32.29,
+    "stage": "SILVER",
+    "ui": "HIDDEN",
+    "progress": {
+      "chapters": "1/1",
+      "verses": "3/16",
+      "langs": "1/3",
+      "authors": "0/1"
     },
-    {
-      "name": "Yoga Sutras of Patanjali",
-      "slug": "yoga-sutras",
-      "score": 36.53,
-      "stage": "SILVER",
-      "ui": "READY",
-      "progress": {
-        "chapters": "1/4",
-        "verses": "10/196",
-        "langs": "2/4",
-        "authors": "1/2"
-      },
-      "flags": {
-        "placeholders": false,
-        "incomplete_structural": true
-      },
-      "pending_tasks": [
-        "Missing 3 chapters",
-        "Missing 186 verses",
-        "Missing languages: mr, hi",
-        "Add 1 more authors"
-      ],
-      "description": "Foundation of Raja Yoga. 4 Padas: Samadhi, Sadhana, Vibhuti, Kaivalya."
+    "has_placeholders": false,
+    "description": "Life-cycle rituals."
+  },
+  {
+    "name": "Vishnu Purana",
+    "slug": "vishnu-purana",
+    "score": 20.98,
+    "stage": "SILVER",
+    "ui": "READY",
+    "progress": {
+      "chapters": "6/126",
+      "verses": "6/7000",
+      "langs": "1/2",
+      "authors": "0/2"
     },
-    {
-      "name": "16 Samskaras (Ritual Handbook)",
-      "slug": "samskaras",
-      "score": 32.29,
-      "stage": "SILVER",
-      "ui": "HIDDEN",
-      "progress": {
-        "chapters": "1/1",
-        "verses": "3/16",
-        "langs": "1/3",
-        "authors": "0/1"
-      },
-      "flags": {
-        "placeholders": false,
-        "incomplete_structural": true
-      },
-      "pending_tasks": [
-        "Missing 13 verses",
-        "Missing languages: mr, hi",
-        "Add 1 more authors",
-        "Integrate with UI (Reader/Index)"
-      ],
-      "description": "The 16 life-cycle rites (Samskaras) of Hindu tradition."
+    "has_placeholders": false,
+    "description": "Chronicle of Vishnu."
+  },
+  {
+    "name": "Garuda Purana",
+    "slug": "garuda-purana",
+    "score": 10.16,
+    "stage": "SILVER",
+    "ui": "HIDDEN",
+    "progress": {
+      "chapters": "2/250",
+      "verses": "2/19000",
+      "langs": "1/2",
+      "authors": "0/2"
     },
-    {
-      "name": "Garuda Purana",
-      "slug": "garuda-purana",
-      "score": 30.0,
-      "stage": "SILVER",
-      "ui": "HIDDEN",
-      "progress": {
-        "chapters": "2/2",
-        "verses": "2/19000",
-        "langs": "1/2",
-        "authors": "0/2"
-      },
-      "flags": {
-        "placeholders": false,
-        "incomplete_structural": true
-      },
-      "pending_tasks": [
-        "Missing 18998 verses",
-        "Missing languages: en",
-        "Add 2 more authors",
-        "Integrate with UI (Reader/Index)"
-      ],
-      "description": "Dialogues on life after death and the journey of the soul."
+    "has_placeholders": false,
+    "description": "Dialogues on death."
+  },
+  {
+    "name": "Rigveda Samhita",
+    "slug": "rigveda",
+    "score": 0.0,
+    "stage": "BRONZE",
+    "ui": "HIDDEN",
+    "progress": {
+      "chapters": "0/10",
+      "verses": "0/10552",
+      "langs": "0/2",
+      "authors": "0/1"
     },
-    {
-      "name": "Rigveda Samhita",
-      "slug": "rigveda",
-      "score": 0.0,
-      "stage": "BRONZE/INGESTING",
-      "ui": "HIDDEN",
-      "progress": {
-        "chapters": "0/10",
-        "verses": "0/10552",
-        "langs": "0/2",
-        "authors": "0/1"
-      },
-      "flags": {
-        "placeholders": false,
-        "incomplete_structural": true
-      },
-      "pending_tasks": [
-        "Missing 10 chapters",
-        "Missing 10552 verses",
-        "Missing languages: en, sa",
-        "Add 1 more authors",
-        "Integrate with UI (Reader/Index)"
-      ],
-      "description": "The oldest Veda."
+    "has_placeholders": false,
+    "description": "Oldest Veda."
+  },
+  {
+    "name": "Brahma Sutras",
+    "slug": "brahma-sutras",
+    "score": 0.0,
+    "stage": "BRONZE",
+    "ui": "HIDDEN",
+    "progress": {
+      "chapters": "0/4",
+      "verses": "0/555",
+      "langs": "0/2",
+      "authors": "0/2"
     },
-    {
-      "name": "Brahma Sutras",
-      "slug": "brahma-sutras",
-      "score": 0.0,
-      "stage": "BRONZE/INGESTING",
-      "ui": "HIDDEN",
-      "progress": {
-        "chapters": "0/4",
-        "verses": "0/555",
-        "langs": "0/2",
-        "authors": "0/2"
-      },
-      "flags": {
-        "placeholders": false,
-        "incomplete_structural": true
-      },
-      "pending_tasks": [
-        "Missing 4 chapters",
-        "Missing 555 verses",
-        "Missing languages: en, sa",
-        "Add 2 more authors",
-        "Integrate with UI (Reader/Index)"
-      ],
-      "description": "Synthesis of Upanishads."
+    "has_placeholders": false,
+    "description": "Vedanta philosophy."
+  },
+  {
+    "name": "Manusmriti",
+    "slug": "manusmriti",
+    "score": 0.0,
+    "stage": "BRONZE",
+    "ui": "HIDDEN",
+    "progress": {
+      "chapters": "0/12",
+      "verses": "0/2684",
+      "langs": "0/2",
+      "authors": "0/1"
     },
-    {
-      "name": "Manusmriti",
-      "slug": "manusmriti",
-      "score": 0.0,
-      "stage": "BRONZE/INGESTING",
-      "ui": "HIDDEN",
-      "progress": {
-        "chapters": "0/12",
-        "verses": "0/2684",
-        "langs": "0/2",
-        "authors": "0/1"
-      },
-      "flags": {
-        "placeholders": false,
-        "incomplete_structural": true
-      },
-      "pending_tasks": [
-        "Missing 12 chapters",
-        "Missing 2684 verses",
-        "Missing languages: en, sa",
-        "Add 1 more authors",
-        "Integrate with UI (Reader/Index)"
-      ],
-      "description": "Social and legal code."
+    "has_placeholders": false,
+    "description": "Code of Manu."
+  },
+  {
+    "name": "Dasbodh",
+    "slug": "dasbodh",
+    "score": 0.0,
+    "stage": "BRONZE",
+    "ui": "HIDDEN",
+    "progress": {
+      "chapters": "0/20",
+      "verses": "0/7751",
+      "langs": "0/2",
+      "authors": "0/1"
     },
-    {
-      "name": "Dasbodh",
-      "slug": "dasbodh",
-      "score": 0.0,
-      "stage": "BRONZE/INGESTING",
-      "ui": "HIDDEN",
-      "progress": {
-        "chapters": "0/20",
-        "verses": "0/7751",
-        "langs": "0/2",
-        "authors": "0/1"
-      },
-      "flags": {
-        "placeholders": false,
-        "incomplete_structural": true
-      },
-      "pending_tasks": [
-        "Missing 20 chapters",
-        "Missing 7751 verses",
-        "Missing languages: sa, mr",
-        "Add 1 more authors",
-        "Integrate with UI (Reader/Index)"
-      ],
-      "description": "Philosophical work of Samarth Ramdas."
+    "has_placeholders": false,
+    "description": "Samarth Ramdas."
+  },
+  {
+    "name": "Samaveda Samhita",
+    "slug": "samaveda",
+    "score": 0.0,
+    "stage": "BRONZE",
+    "ui": "HIDDEN",
+    "progress": {
+      "chapters": "0/2",
+      "verses": "0/1875",
+      "langs": "0/2",
+      "authors": "0/1"
     },
-    {
-      "name": "Samaveda Samhita",
-      "slug": "samaveda",
-      "score": 0.0,
-      "stage": "BRONZE/INGESTING",
-      "ui": "HIDDEN",
-      "progress": {
-        "chapters": "0/2",
-        "verses": "0/1875",
-        "langs": "0/2",
-        "authors": "0/1"
-      },
-      "flags": {
-        "placeholders": false,
-        "incomplete_structural": true
-      },
-      "pending_tasks": [
-        "Missing 2 chapters",
-        "Missing 1875 verses",
-        "Missing languages: en, sa",
-        "Add 1 more authors",
-        "Integrate with UI (Reader/Index)"
-      ],
-      "description": "The Veda of melodies."
+    "has_placeholders": false,
+    "description": "Veda of melodies."
+  },
+  {
+    "name": "Yajurveda Samhita",
+    "slug": "yajurveda",
+    "score": 0.0,
+    "stage": "BRONZE",
+    "ui": "HIDDEN",
+    "progress": {
+      "chapters": "0/40",
+      "verses": "0/1975",
+      "langs": "0/2",
+      "authors": "0/1"
     },
-    {
-      "name": "Yajurveda Samhita",
-      "slug": "yajurveda",
-      "score": 0.0,
-      "stage": "BRONZE/INGESTING",
-      "ui": "HIDDEN",
-      "progress": {
-        "chapters": "0/40",
-        "verses": "0/1975",
-        "langs": "0/2",
-        "authors": "0/1"
-      },
-      "flags": {
-        "placeholders": false,
-        "incomplete_structural": true
-      },
-      "pending_tasks": [
-        "Missing 40 chapters",
-        "Missing 1975 verses",
-        "Missing languages: en, sa",
-        "Add 1 more authors",
-        "Integrate with UI (Reader/Index)"
-      ],
-      "description": "The Veda of rituals."
+    "has_placeholders": false,
+    "description": "Veda of rituals."
+  },
+  {
+    "name": "Atharvaveda Samhita",
+    "slug": "atharvaveda",
+    "score": 0.0,
+    "stage": "BRONZE",
+    "ui": "HIDDEN",
+    "progress": {
+      "chapters": "0/20",
+      "verses": "0/5977",
+      "langs": "0/2",
+      "authors": "0/1"
     },
-    {
-      "name": "Atharvaveda Samhita",
-      "slug": "atharvaveda",
-      "score": 0.0,
-      "stage": "BRONZE/INGESTING",
-      "ui": "HIDDEN",
-      "progress": {
-        "chapters": "0/20",
-        "verses": "0/5977",
-        "langs": "0/2",
-        "authors": "0/1"
-      },
-      "flags": {
-        "placeholders": false,
-        "incomplete_structural": true
-      },
-      "pending_tasks": [
-        "Missing 20 chapters",
-        "Missing 5977 verses",
-        "Missing languages: en, sa",
-        "Add 1 more authors",
-        "Integrate with UI (Reader/Index)"
-      ],
-      "description": "The Veda of formulas."
-    }
-  ]
-}
+    "has_placeholders": false,
+    "description": "Veda of formulas."
+  }
+]
