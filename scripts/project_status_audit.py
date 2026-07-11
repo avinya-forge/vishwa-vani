@@ -2,77 +2,48 @@ import json
 import os
 import re
 import subprocess
+from datetime import datetime
 
 # Canonical Targets for Project Mastery
 TARGETS = {
     'bhagavad-gita': {
-        'chapters': 18,
-        'verses': 700,
-        'authors': 10,
-        'langs': ['sa', 'en', 'hi', 'mr'],
+        'chapters': 18, 'verses': 700, 'authors': 10, 'langs': ['sa', 'en', 'hi', 'mr'],
         'description': '18 Chapters, 700 Shlokas. Primary focus: Yoga of Action, Devotion, and Knowledge.'
     },
     'bhagavata-purana': {
-        'chapters': 19, # Target: Canto 1
-        'verses': 718,
-        'authors': 2,
-        'langs': ['sa', 'en', 'hi', 'mr'],
+        'chapters': 19, 'verses': 718, 'authors': 2, 'langs': ['sa', 'en', 'hi', 'mr'],
         'description': 'Canto 1: 19 Chapters. The glories of the Lord and His devotees.'
     },
     'isha-upanishad': {
-        'chapters': 1,
-        'verses': 19,
-        'authors': 2,
-        'langs': ['sa', 'en', 'hi', 'mr'],
+        'chapters': 1, 'verses': 19, 'authors': 2, 'langs': ['sa', 'en', 'hi', 'mr'],
         'description': 'The shortest Upanishad, emphasizing the omnipresence of the Divine.'
     },
     'kena-upanishad': {
-        'chapters': 1,
-        'verses': 34,
-        'authors': 2,
-        'langs': ['sa', 'en', 'hi', 'mr'],
+        'chapters': 1, 'verses': 34, 'authors': 2, 'langs': ['sa', 'en', 'hi', 'mr'],
         'description': 'Focuses on the nature of the Brahman and the power behind the senses.'
     },
     'mahabharata': {
-        'chapters': 18, # 18 Parvas
-        'verses': 100000,
-        'authors': 2,
-        'langs': ['sa', 'en'],
+        'chapters': 18, 'verses': 100000, 'authors': 2, 'langs': ['sa', 'en'],
         'description': 'The world’s longest epic. Currently targeting Parva 1 (Adi) and 3 (Vana).'
     },
     'yoga-sutras': {
-        'chapters': 4,
-        'verses': 196,
-        'authors': 2,
-        'langs': ['sa', 'en', 'hi', 'mr'],
+        'chapters': 4, 'verses': 196, 'authors': 2, 'langs': ['sa', 'en', 'hi', 'mr'],
         'description': 'Foundation of Raja Yoga. 4 Padas: Samadhi, Sadhana, Vibhuti, Kaivalya.'
     },
     'vishnu-purana': {
-        'chapters': 6,
-        'verses': 7000,
-        'authors': 2,
-        'langs': ['sa', 'en'],
+        'chapters': 6, 'verses': 7000, 'authors': 2, 'langs': ['sa', 'en'],
         'description': 'One of the oldest Puranas, focusing on Vishnu as the Supreme.'
     },
     'garuda-purana': {
-        'chapters': 2,
-        'verses': 19000,
-        'authors': 2,
-        'langs': ['sa', 'en'],
+        'chapters': 2, 'verses': 19000, 'authors': 2, 'langs': ['sa', 'en'],
         'description': 'Dialogues on life after death and the journey of the soul.'
     },
     'samskaras': {
-        'chapters': 1,
-        'verses': 16,
-        'authors': 1,
-        'langs': ['sa', 'hi', 'mr'],
+        'chapters': 1, 'verses': 16, 'authors': 1, 'langs': ['sa', 'hi', 'mr'],
         'description': 'The 16 life-cycle rites (Samskaras) of Hindu tradition.'
     },
     'stotras': {
-        'chapters': 1,
-        'verses': 70,
-        'authors': 1,
-        'langs': ['sa', 'en', 'hi', 'mr'],
+        'chapters': 1, 'verses': 70, 'authors': 1, 'langs': ['sa', 'en', 'hi', 'mr'],
         'description': 'A collection of devotional hymns (Sahasranamas, Shatakas).'
     },
     'rigveda': {'chapters': 10, 'verses': 10552, 'authors': 1, 'langs': ['sa', 'en'], 'description': 'The oldest Veda.'},
@@ -113,7 +84,6 @@ def audit_file_quality(filepath):
         for v in verses:
             if v.get('original'): langs.add('sa')
             if v.get('translation'): langs.add('en')
-
             layers = v.get('layers', [])
             for l in layers:
                 if l.get('lang'): langs.add(l.get('lang'))
@@ -125,16 +95,10 @@ def audit_file_quality(filepath):
 
 def get_tech_debt():
     debt = []
-    # Count TODOs in codebase
     try:
         todo_count = subprocess.check_output("grep -r 'TODO' . --exclude-dir=node_modules --exclude-dir=.next --exclude-dir=.git | wc -l", shell=True).decode().strip()
         debt.append(f"TODOs in codebase: {todo_count}")
     except: pass
-
-    # Check for missing tests
-    # ...
-
-    # Check for lint issues (simulated)
     return debt
 
 def run_audit():
@@ -149,16 +113,9 @@ def run_audit():
     for slug, name, available_str in books_raw:
         target = TARGETS.get(slug, {'chapters': 1, 'verses': 100, 'authors': 1, 'langs': ['sa', 'en'], 'description': ''})
 
-        stats = {
-            'actual_chapters': 0,
-            'actual_verses': 0,
-            'actual_authors': set(),
-            'actual_langs': set(),
-            'has_placeholders': False,
-            'stage': 'NOT_STARTED'
-        }
+        stats = {'actual_chapters': 0, 'actual_verses': 0, 'actual_authors': set(), 'actual_langs': set(), 'has_placeholders': False, 'stage': 'NOT_STARTED'}
 
-        # Check Gold
+        # Priority: GOLD > SILVER
         gold_path = f'data/3-gold/{slug}'
         if os.path.exists(gold_path):
             stats['stage'] = 'GOLD'
@@ -169,23 +126,17 @@ def run_audit():
                         stats['actual_chapters'] += 1
                         for f_name in os.listdir(p_path):
                             if f_name.endswith('.json') and f_name != 'book.meta.json':
-                                langs, authors, v_count, ph = audit_file_quality(os.path.join(p_path, f_name))
-                                stats['actual_langs'].update(langs)
-                                stats['actual_authors'].update(authors)
-                                stats['actual_verses'] += v_count
+                                l, a, v, ph = audit_file_quality(os.path.join(p_path, f_name))
+                                stats['actual_langs'].update(l); stats['actual_authors'].update(a); stats['actual_verses'] += v
                                 if ph: stats['has_placeholders'] = True
             else:
                 for root, _, files in os.walk(gold_path):
                     for f_name in files:
                         if f_name.endswith('.json') and f_name != 'book.meta.json':
-                            langs, authors, v_count, ph = audit_file_quality(os.path.join(root, f_name))
-                            stats['actual_langs'].update(langs)
-                            stats['actual_authors'].update(authors)
-                            stats['actual_verses'] += v_count
-                            stats['actual_chapters'] += 1
+                            l, a, v, ph = audit_file_quality(os.path.join(root, f_name))
+                            stats['actual_langs'].update(l); stats['actual_authors'].update(a); stats['actual_verses'] += v; stats['actual_chapters'] += 1
                             if ph: stats['has_placeholders'] = True
 
-        # Check Silver if Gold is incomplete or missing
         silver_path = f'data/2-silver/{slug}'
         if os.path.exists(silver_path):
             if stats['stage'] == 'NOT_STARTED': stats['stage'] = 'SILVER'
@@ -195,92 +146,88 @@ def run_audit():
                     stats['actual_chapters'] += 1
                     for f_name in os.listdir(p1_path):
                         if f_name.endswith('.json'):
-                            _, _, v_count, ph = audit_file_quality(os.path.join(p1_path, f_name))
-                            stats['actual_verses'] += v_count
+                            _, _, v, ph = audit_file_quality(os.path.join(p1_path, f_name))
+                            stats['actual_verses'] += v
                             if ph: stats['has_placeholders'] = True
             elif stats['stage'] == 'SILVER':
                 for root, _, files in os.walk(silver_path):
                     for f_name in files:
                         if f_name.endswith('.json') and f_name != 'book.meta.json':
-                            langs, authors, v_count, ph = audit_file_quality(os.path.join(root, f_name))
-                            stats['actual_langs'].update(langs)
-                            stats['actual_authors'].update(authors)
-                            stats['actual_verses'] += v_count
-                            stats['actual_chapters'] += 1
+                            l, a, v, ph = audit_file_quality(os.path.join(root, f_name))
+                            stats['actual_langs'].update(l); stats['actual_authors'].update(a); stats['actual_verses'] += v; stats['actual_chapters'] += 1
                             if ph: stats['has_placeholders'] = True
 
-        # Check Bronze
         if stats['stage'] == 'NOT_STARTED':
             if os.path.exists(f'data/1-bronze/{slug}') or os.path.exists(f'data/1-bronze/mahabharata-adi-parva-mapping.tsv'):
                 stats['stage'] = 'BRONZE/INGESTING'
 
-        # Calculate Readiness
         v_score = min(stats['actual_verses'] / target['verses'], 1.0) if target['verses'] > 0 else 0
         c_score = min(stats['actual_chapters'] / target['chapters'], 1.0) if target['chapters'] > 0 else 0
         a_score = min(len(stats['actual_authors']) / target['authors'], 1.0) if target['authors'] > 0 else 0
-
         display_langs = {l for l in stats['actual_langs'] if l in ['sa', 'en', 'hi', 'mr']}
         l_score = (len(display_langs) / len(target['langs'])) if target['langs'] else 0
-
         ui_score = 1.0 if available_str == 'true' else 0.0
 
-        # Weighted Composite Score
         score = (v_score * 0.3 + c_score * 0.2 + l_score * 0.2 + a_score * 0.2 + ui_score * 0.1) * 100
-        if stats['has_placeholders']:
-            score *= 0.85
-
+        if stats['has_placeholders']: score *= 0.85
         score = round(min(score, 100.0), 2)
 
         pending = []
         if stats['actual_chapters'] < target['chapters']: pending.append(f"Missing {target['chapters'] - stats['actual_chapters']} chapters")
         if stats['actual_verses'] < target['verses']: pending.append(f"Missing {target['verses'] - stats['actual_verses']} verses")
-        if len(display_langs) < len(target['langs']):
-            missing_langs = set(target['langs']) - display_langs
-            pending.append(f"Missing languages: {', '.join(missing_langs)}")
+        if len(display_langs) < len(target['langs']): pending.append(f"Missing languages: {', '.join(set(target['langs']) - display_langs)}")
         if len(stats['actual_authors']) < target['authors']: pending.append(f"Add {target['authors'] - len(stats['actual_authors'])} more authors")
         if stats['has_placeholders']: pending.append("Audit and replace placeholder/generated data with authentic scholarship")
         if available_str == 'false': pending.append("Integrate with UI (Reader/Index)")
 
         status_report.append({
-            'name': name,
-            'slug': slug,
-            'score': score,
-            'stage': stats['stage'],
-            'ui': 'READY' if available_str == 'true' else 'HIDDEN',
-            'progress': {
-                'chapters': f"{stats['actual_chapters']}/{target['chapters']}",
-                'verses': f"{stats['actual_verses']}/{target['verses']}",
-                'langs': f"{len(display_langs)}/{len(target['langs'])}",
-                'authors': f"{len(stats['actual_authors'])}/{target['authors']}"
-            },
-            'flags': {
-                'placeholders': stats['has_placeholders'],
-                'incomplete_structural': stats['actual_verses'] < target['verses']
-            },
-            'pending_tasks': pending,
-            'description': target['description']
+            'name': name, 'slug': slug, 'score': score, 'stage': stats['stage'], 'ui': 'READY' if available_str == 'true' else 'HIDDEN',
+            'progress': {'chapters': f"{stats['actual_chapters']}/{target['chapters']}", 'verses': f"{stats['actual_verses']}/{target['verses']}", 'langs': f"{len(display_langs)}/{len(target['langs'])}", 'authors': f"{len(stats['actual_authors'])}/{target['authors']}"},
+            'flags': {'placeholders': stats['has_placeholders'], 'incomplete_structural': stats['actual_verses'] < target['verses']},
+            'pending_tasks': pending, 'description': target['description']
         })
 
     status_report.sort(key=lambda x: x['score'], reverse=True)
+    metrics = {'total_books': len(status_report), 'gold_books': len([b for b in status_report if b['stage'] == 'GOLD']), 'silver_books': len([b for b in status_report if b['stage'] == 'SILVER']), 'ui_ready_books': len([b for b in status_report if b['ui'] == 'READY']), 'tech_debt': get_tech_debt()}
 
-    project_metrics = {
-        'total_books': len(status_report),
-        'gold_books': len([b for b in status_report if b['stage'] == 'GOLD']),
-        'silver_books': len([b for b in status_report if b['stage'] == 'SILVER']),
-        'ui_ready_books': len([b for b in status_report if b['ui'] == 'READY']),
-        'tech_debt': get_tech_debt()
-    }
+    final_data = {'last_updated': datetime.now().strftime('%Y-%m-%d'), 'metrics': metrics, 'books': status_report}
 
-    final_report = {
-        'last_updated': '2026-07-06',
-        'metrics': project_metrics,
-        'books': status_report
-    }
+    # Save JSON
+    with open('.status', 'w') as f: json.dump(final_data, f, indent=2)
 
-    with open('.status', 'w') as f:
-        json.dump(final_report, f, indent=2)
+    # Generate Markdown
+    lines = [
+        '# 🗺️ Vishwa-Vani: Master Project Status Tracker', '',
+        'This document is the **Single Source of Truth** for project readiness. It tracks books across structural, linguistic, and scholarly dimensions. Books with placeholders are penalized.', '',
+        '## 📊 Project Metrics', '',
+        f"- **Total Books in Registry:** {metrics['total_books']}",
+        f"- **Gold Tier Books:** {metrics['gold_books']}",
+        f"- **Silver Tier Books:** {metrics['silver_books']}",
+        f"- **UI Ready Books:** {metrics['ui_ready_books']}", '',
+        '### 🛠️ Technical Debt',
+    ]
+    for d in metrics['tech_debt']: lines.append(f"- {d}")
+    lines.extend(['', '## 🚀 Library Readiness Summary', '', '| Book Name | Stage | UI | Score (%) | Chapters | Verses | Langs | Authors |', '| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |'])
+    for b in status_report:
+        p = b['progress']
+        score_display = f"**{b['score']}%**" + (" ⚠️" if b['flags']['placeholders'] else "")
+        lines.append(f"| {b['name']} | {b['stage']} | {b['ui']} | {score_display} | {p['chapters']} | {p['verses']} | {p['langs']} | {p['authors']} |")
 
-    print("Project Status Audit Complete. Generated .status")
+    lines.append('\n---\n## 🔍 Granular Book Audits\n')
+    for b in status_report:
+        lines.append(f"### {b['name']} (`{b['slug']}`) \n> {b['description']}\n")
+        lines.append(f"- **Composite Score:** {b['score']}% | **Stage:** {b['stage']} | **UI:** {b['ui']}")
+        lines.append(f"- **Progress:** Chapters: {b['progress']['chapters']} | Verses: {b['progress']['verses']} | Langs: {b['progress']['langs']} | Authors: {b['progress']['authors']}")
+        if b['pending_tasks']:
+            lines.append("- **🚨 Pending Tasks:**")
+            for t in b['pending_tasks']: lines.append(f"  - [ ] {t}")
+        else: lines.append("- **✅ Status:** Fully complete and verified.")
+        lines.append("")
 
-if __name__ == '__main__':
-    run_audit()
+    lines.append('---\n**⚠️ Warning:** Scores marked with ⚠️ contain placeholder content that MUST be replaced.\n')
+    lines.append(f"*Last Master Audit: {final_data['last_updated']}*")
+
+    with open('docs/PROJECT_STATUS.md', 'w') as f: f.write('\n'.join(lines))
+    print("Project Status Audit Complete. Generated .status and docs/PROJECT_STATUS.md")
+
+if __name__ == '__main__': run_audit()

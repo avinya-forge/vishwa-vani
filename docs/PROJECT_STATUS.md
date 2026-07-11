@@ -1,6 +1,6 @@
 # 🗺️ Vishwa-Vani: Master Project Status Tracker
 
-This document is the **Single Source of Truth** for project readiness. It tracks books across structural, linguistic, and scholarly dimensions. Books with placeholders are penalized in their score.
+This document is the **Single Source of Truth** for project readiness. It tracks books across structural, linguistic, and scholarly dimensions. Books with placeholders are penalized.
 
 ## 📊 Project Metrics
 
@@ -9,8 +9,8 @@ This document is the **Single Source of Truth** for project readiness. It tracks
 - **Silver Tier Books:** 4
 - **UI Ready Books:** 8
 
-### 🛠️ Technical Debt & Engineering Health
-- TODOs in codebase: 22
+### 🛠️ Technical Debt
+- TODOs in codebase: 23
 
 ## 🚀 Library Readiness Summary
 
@@ -35,61 +35,36 @@ This document is the **Single Source of Truth** for project readiness. It tracks
 | Atharvaveda Samhita | BRONZE/INGESTING | HIDDEN | **0.0%** | 0/20 | 0/5977 | 0/2 | 0/1 |
 
 ---
-
-## 🔍 Granular Book Audits & Pending Tasks
+## 🔍 Granular Book Audits
 
 ### Isha Upanishad (`isha-upanishad`)
 > The shortest Upanishad, emphasizing the omnipresence of the Divine.
 
-- **Composite Score:** 100.0%
-- **Pipeline Stage:** GOLD
-- **UI Integration:** READY
-- **Current Progress:**
-  - Chapters: 1/1
-  - Verses: 19/19
-  - Language Layers: 4/4
-  - Scholar Coverage: 3/2
+- **Composite Score:** 100.0% | **Stage:** GOLD | **UI:** READY
+- **Progress:** Chapters: 1/1 | Verses: 19/19 | Langs: 4/4 | Authors: 3/2
 - **✅ Status:** Fully complete and verified.
 
 ### Kena Upanishad (`kena-upanishad`)
 > Focuses on the nature of the Brahman and the power behind the senses.
 
-- **Composite Score:** 85.0%
-- **Pipeline Stage:** GOLD
-- **UI Integration:** READY
-- **Current Progress:**
-  - Chapters: 1/1
-  - Verses: 34/34
-  - Language Layers: 4/4
-  - Scholar Coverage: 2/2
+- **Composite Score:** 85.0% | **Stage:** GOLD | **UI:** READY
+- **Progress:** Chapters: 1/1 | Verses: 34/34 | Langs: 4/4 | Authors: 2/2
 - **🚨 Pending Tasks:**
   - [ ] Audit and replace placeholder/generated data with authentic scholarship
 
 ### Srimad Bhagavatam (Canto 1) (`bhagavata-purana`)
 > Canto 1: 19 Chapters. The glories of the Lord and His devotees.
 
-- **Composite Score:** 85.0%
-- **Pipeline Stage:** GOLD
-- **UI Integration:** READY
-- **Current Progress:**
-  - Chapters: 19/19
-  - Verses: 718/718
-  - Language Layers: 4/4
-  - Scholar Coverage: 2/2
+- **Composite Score:** 85.0% | **Stage:** GOLD | **UI:** READY
+- **Progress:** Chapters: 19/19 | Verses: 718/718 | Langs: 4/4 | Authors: 2/2
 - **🚨 Pending Tasks:**
   - [ ] Audit and replace placeholder/generated data with authentic scholarship
 
 ### Bhagavad Gita (`bhagavad-gita`)
 > 18 Chapters, 700 Shlokas. Primary focus: Yoga of Action, Devotion, and Knowledge.
 
-- **Composite Score:** 82.16%
-- **Pipeline Stage:** GOLD
-- **UI Integration:** READY
-- **Current Progress:**
-  - Chapters: 18/18
-  - Verses: 657/700
-  - Language Layers: 4/4
-  - Scholar Coverage: 2/10
+- **Composite Score:** 82.16% | **Stage:** GOLD | **UI:** READY
+- **Progress:** Chapters: 18/18 | Verses: 657/700 | Langs: 4/4 | Authors: 2/10
 - **🚨 Pending Tasks:**
   - [ ] Missing 43 verses
   - [ ] Add 8 more authors
@@ -97,28 +72,16 @@ This document is the **Single Source of Truth** for project readiness. It tracks
 ### Stotras & Stuties (`stotras`)
 > A collection of devotional hymns (Sahasranamas, Shatakas).
 
-- **Composite Score:** 77.29%
-- **Pipeline Stage:** GOLD
-- **UI Integration:** READY
-- **Current Progress:**
-  - Chapters: 3/1
-  - Verses: 17/70
-  - Language Layers: 4/4
-  - Scholar Coverage: 4/1
+- **Composite Score:** 77.29% | **Stage:** GOLD | **UI:** READY
+- **Progress:** Chapters: 3/1 | Verses: 17/70 | Langs: 4/4 | Authors: 4/1
 - **🚨 Pending Tasks:**
   - [ ] Missing 53 verses
 
 ### Mahabharata (All 18 Parvas) (`mahabharata`)
 > The world’s longest epic. Currently targeting Parva 1 (Adi) and 3 (Vana).
 
-- **Composite Score:** 44.32%
-- **Pipeline Stage:** GOLD
-- **UI Integration:** READY
-- **Current Progress:**
-  - Chapters: 2/18
-  - Verses: 6977/100000
-  - Language Layers: 2/2
-  - Scholar Coverage: 1/2
+- **Composite Score:** 44.32% | **Stage:** GOLD | **UI:** READY
+- **Progress:** Chapters: 2/18 | Verses: 6977/100000 | Langs: 2/2 | Authors: 1/2
 - **🚨 Pending Tasks:**
   - [ ] Missing 16 chapters
   - [ ] Missing 93023 verses
@@ -127,14 +90,8 @@ This document is the **Single Source of Truth** for project readiness. It tracks
 ### Vishnu Purana (`vishnu-purana`)
 > One of the oldest Puranas, focusing on Vishnu as the Supreme.
 
-- **Composite Score:** 40.03%
-- **Pipeline Stage:** SILVER
-- **UI Integration:** READY
-- **Current Progress:**
-  - Chapters: 6/6
-  - Verses: 6/7000
-  - Language Layers: 1/2
-  - Scholar Coverage: 0/2
+- **Composite Score:** 40.03% | **Stage:** SILVER | **UI:** READY
+- **Progress:** Chapters: 6/6 | Verses: 6/7000 | Langs: 1/2 | Authors: 0/2
 - **🚨 Pending Tasks:**
   - [ ] Missing 6994 verses
   - [ ] Missing languages: en
@@ -143,48 +100,30 @@ This document is the **Single Source of Truth** for project readiness. It tracks
 ### Yoga Sutras of Patanjali (`yoga-sutras`)
 > Foundation of Raja Yoga. 4 Padas: Samadhi, Sadhana, Vibhuti, Kaivalya.
 
-- **Composite Score:** 36.53%
-- **Pipeline Stage:** SILVER
-- **UI Integration:** READY
-- **Current Progress:**
-  - Chapters: 1/4
-  - Verses: 10/196
-  - Language Layers: 2/4
-  - Scholar Coverage: 1/2
+- **Composite Score:** 36.53% | **Stage:** SILVER | **UI:** READY
+- **Progress:** Chapters: 1/4 | Verses: 10/196 | Langs: 2/4 | Authors: 1/2
 - **🚨 Pending Tasks:**
   - [ ] Missing 3 chapters
   - [ ] Missing 186 verses
-  - [ ] Missing languages: hi, mr
+  - [ ] Missing languages: mr, hi
   - [ ] Add 1 more authors
 
 ### 16 Samskaras (Ritual Handbook) (`samskaras`)
 > The 16 life-cycle rites (Samskaras) of Hindu tradition.
 
-- **Composite Score:** 32.29%
-- **Pipeline Stage:** SILVER
-- **UI Integration:** HIDDEN
-- **Current Progress:**
-  - Chapters: 1/1
-  - Verses: 3/16
-  - Language Layers: 1/3
-  - Scholar Coverage: 0/1
+- **Composite Score:** 32.29% | **Stage:** SILVER | **UI:** HIDDEN
+- **Progress:** Chapters: 1/1 | Verses: 3/16 | Langs: 1/3 | Authors: 0/1
 - **🚨 Pending Tasks:**
   - [ ] Missing 13 verses
-  - [ ] Missing languages: hi, mr
+  - [ ] Missing languages: mr, hi
   - [ ] Add 1 more authors
   - [ ] Integrate with UI (Reader/Index)
 
 ### Garuda Purana (`garuda-purana`)
 > Dialogues on life after death and the journey of the soul.
 
-- **Composite Score:** 30.0%
-- **Pipeline Stage:** SILVER
-- **UI Integration:** HIDDEN
-- **Current Progress:**
-  - Chapters: 2/2
-  - Verses: 2/19000
-  - Language Layers: 1/2
-  - Scholar Coverage: 0/2
+- **Composite Score:** 30.0% | **Stage:** SILVER | **UI:** HIDDEN
+- **Progress:** Chapters: 2/2 | Verses: 2/19000 | Langs: 1/2 | Authors: 0/2
 - **🚨 Pending Tasks:**
   - [ ] Missing 18998 verses
   - [ ] Missing languages: en
@@ -194,68 +133,44 @@ This document is the **Single Source of Truth** for project readiness. It tracks
 ### Rigveda Samhita (`rigveda`)
 > The oldest Veda.
 
-- **Composite Score:** 0.0%
-- **Pipeline Stage:** BRONZE/INGESTING
-- **UI Integration:** HIDDEN
-- **Current Progress:**
-  - Chapters: 0/10
-  - Verses: 0/10552
-  - Language Layers: 0/2
-  - Scholar Coverage: 0/1
+- **Composite Score:** 0.0% | **Stage:** BRONZE/INGESTING | **UI:** HIDDEN
+- **Progress:** Chapters: 0/10 | Verses: 0/10552 | Langs: 0/2 | Authors: 0/1
 - **🚨 Pending Tasks:**
   - [ ] Missing 10 chapters
   - [ ] Missing 10552 verses
-  - [ ] Missing languages: sa, en
+  - [ ] Missing languages: en, sa
   - [ ] Add 1 more authors
   - [ ] Integrate with UI (Reader/Index)
 
 ### Brahma Sutras (`brahma-sutras`)
 > Synthesis of Upanishads.
 
-- **Composite Score:** 0.0%
-- **Pipeline Stage:** BRONZE/INGESTING
-- **UI Integration:** HIDDEN
-- **Current Progress:**
-  - Chapters: 0/4
-  - Verses: 0/555
-  - Language Layers: 0/2
-  - Scholar Coverage: 0/2
+- **Composite Score:** 0.0% | **Stage:** BRONZE/INGESTING | **UI:** HIDDEN
+- **Progress:** Chapters: 0/4 | Verses: 0/555 | Langs: 0/2 | Authors: 0/2
 - **🚨 Pending Tasks:**
   - [ ] Missing 4 chapters
   - [ ] Missing 555 verses
-  - [ ] Missing languages: sa, en
+  - [ ] Missing languages: en, sa
   - [ ] Add 2 more authors
   - [ ] Integrate with UI (Reader/Index)
 
 ### Manusmriti (`manusmriti`)
 > Social and legal code.
 
-- **Composite Score:** 0.0%
-- **Pipeline Stage:** BRONZE/INGESTING
-- **UI Integration:** HIDDEN
-- **Current Progress:**
-  - Chapters: 0/12
-  - Verses: 0/2684
-  - Language Layers: 0/2
-  - Scholar Coverage: 0/1
+- **Composite Score:** 0.0% | **Stage:** BRONZE/INGESTING | **UI:** HIDDEN
+- **Progress:** Chapters: 0/12 | Verses: 0/2684 | Langs: 0/2 | Authors: 0/1
 - **🚨 Pending Tasks:**
   - [ ] Missing 12 chapters
   - [ ] Missing 2684 verses
-  - [ ] Missing languages: sa, en
+  - [ ] Missing languages: en, sa
   - [ ] Add 1 more authors
   - [ ] Integrate with UI (Reader/Index)
 
 ### Dasbodh (`dasbodh`)
 > Philosophical work of Samarth Ramdas.
 
-- **Composite Score:** 0.0%
-- **Pipeline Stage:** BRONZE/INGESTING
-- **UI Integration:** HIDDEN
-- **Current Progress:**
-  - Chapters: 0/20
-  - Verses: 0/7751
-  - Language Layers: 0/2
-  - Scholar Coverage: 0/1
+- **Composite Score:** 0.0% | **Stage:** BRONZE/INGESTING | **UI:** HIDDEN
+- **Progress:** Chapters: 0/20 | Verses: 0/7751 | Langs: 0/2 | Authors: 0/1
 - **🚨 Pending Tasks:**
   - [ ] Missing 20 chapters
   - [ ] Missing 7751 verses
@@ -266,58 +181,40 @@ This document is the **Single Source of Truth** for project readiness. It tracks
 ### Samaveda Samhita (`samaveda`)
 > The Veda of melodies.
 
-- **Composite Score:** 0.0%
-- **Pipeline Stage:** BRONZE/INGESTING
-- **UI Integration:** HIDDEN
-- **Current Progress:**
-  - Chapters: 0/2
-  - Verses: 0/1875
-  - Language Layers: 0/2
-  - Scholar Coverage: 0/1
+- **Composite Score:** 0.0% | **Stage:** BRONZE/INGESTING | **UI:** HIDDEN
+- **Progress:** Chapters: 0/2 | Verses: 0/1875 | Langs: 0/2 | Authors: 0/1
 - **🚨 Pending Tasks:**
   - [ ] Missing 2 chapters
   - [ ] Missing 1875 verses
-  - [ ] Missing languages: sa, en
+  - [ ] Missing languages: en, sa
   - [ ] Add 1 more authors
   - [ ] Integrate with UI (Reader/Index)
 
 ### Yajurveda Samhita (`yajurveda`)
 > The Veda of rituals.
 
-- **Composite Score:** 0.0%
-- **Pipeline Stage:** BRONZE/INGESTING
-- **UI Integration:** HIDDEN
-- **Current Progress:**
-  - Chapters: 0/40
-  - Verses: 0/1975
-  - Language Layers: 0/2
-  - Scholar Coverage: 0/1
+- **Composite Score:** 0.0% | **Stage:** BRONZE/INGESTING | **UI:** HIDDEN
+- **Progress:** Chapters: 0/40 | Verses: 0/1975 | Langs: 0/2 | Authors: 0/1
 - **🚨 Pending Tasks:**
   - [ ] Missing 40 chapters
   - [ ] Missing 1975 verses
-  - [ ] Missing languages: sa, en
+  - [ ] Missing languages: en, sa
   - [ ] Add 1 more authors
   - [ ] Integrate with UI (Reader/Index)
 
 ### Atharvaveda Samhita (`atharvaveda`)
 > The Veda of formulas.
 
-- **Composite Score:** 0.0%
-- **Pipeline Stage:** BRONZE/INGESTING
-- **UI Integration:** HIDDEN
-- **Current Progress:**
-  - Chapters: 0/20
-  - Verses: 0/5977
-  - Language Layers: 0/2
-  - Scholar Coverage: 0/1
+- **Composite Score:** 0.0% | **Stage:** BRONZE/INGESTING | **UI:** HIDDEN
+- **Progress:** Chapters: 0/20 | Verses: 0/5977 | Langs: 0/2 | Authors: 0/1
 - **🚨 Pending Tasks:**
   - [ ] Missing 20 chapters
   - [ ] Missing 5977 verses
-  - [ ] Missing languages: sa, en
+  - [ ] Missing languages: en, sa
   - [ ] Add 1 more authors
   - [ ] Integrate with UI (Reader/Index)
 
 ---
-**⚠️ Warning:** Scores marked with ⚠️ contain placeholder or generated content that MUST be replaced with authentic scholarship to reach 100%.
+**⚠️ Warning:** Scores marked with ⚠️ contain placeholder content that MUST be replaced.
 
-*Last Master Audit: 2026-07-06*
+*Last Master Audit: 2026-07-11*

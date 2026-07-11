@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-07-06",
+  "last_updated": "2026-07-11",
   "metrics": {
     "total_books": 17,
     "gold_books": 6,
     "silver_books": 4,
     "ui_ready_books": 8,
     "tech_debt": [
-      "TODOs in codebase: 22"
+      "TODOs in codebase: 23"
     ]
   },
   "books": [
@@ -179,7 +179,7 @@
       "pending_tasks": [
         "Missing 3 chapters",
         "Missing 186 verses",
-        "Missing languages: hi, mr",
+        "Missing languages: mr, hi",
         "Add 1 more authors"
       ],
       "description": "Foundation of Raja Yoga. 4 Padas: Samadhi, Sadhana, Vibhuti, Kaivalya."
@@ -202,7 +202,7 @@
       },
       "pending_tasks": [
         "Missing 13 verses",
-        "Missing languages: hi, mr",
+        "Missing languages: mr, hi",
         "Add 1 more authors",
         "Integrate with UI (Reader/Index)"
       ],
@@ -251,7 +251,7 @@
       "pending_tasks": [
         "Missing 10 chapters",
         "Missing 10552 verses",
-        "Missing languages: sa, en",
+        "Missing languages: en, sa",
         "Add 1 more authors",
         "Integrate with UI (Reader/Index)"
       ],
@@ -276,7 +276,7 @@
       "pending_tasks": [
         "Missing 4 chapters",
         "Missing 555 verses",
-        "Missing languages: sa, en",
+        "Missing languages: en, sa",
         "Add 2 more authors",
         "Integrate with UI (Reader/Index)"
       ],
@@ -301,7 +301,7 @@
       "pending_tasks": [
         "Missing 12 chapters",
         "Missing 2684 verses",
-        "Missing languages: sa, en",
+        "Missing languages: en, sa",
         "Add 1 more authors",
         "Integrate with UI (Reader/Index)"
       ],
@@ -351,7 +351,7 @@
       "pending_tasks": [
         "Missing 2 chapters",
         "Missing 1875 verses",
-        "Missing languages: sa, en",
+        "Missing languages: en, sa",
         "Add 1 more authors",
         "Integrate with UI (Reader/Index)"
       ],
@@ -376,7 +376,7 @@
       "pending_tasks": [
         "Missing 40 chapters",
         "Missing 1975 verses",
-        "Missing languages: sa, en",
+        "Missing languages: en, sa",
         "Add 1 more authors",
         "Integrate with UI (Reader/Index)"
       ],
@@ -401,7 +401,7 @@
       "pending_tasks": [
         "Missing 20 chapters",
         "Missing 5977 verses",
-        "Missing languages: sa, en",
+        "Missing languages: en, sa",
         "Add 1 more authors",
         "Integrate with UI (Reader/Index)"
       ],
