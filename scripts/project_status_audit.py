@@ -1,6 +1,7 @@
 import json
 import os
 import re
+import subprocess
 
 # Canonical Targets for Project Mastery
 TARGETS = {
@@ -20,7 +21,7 @@ TARGETS = {
     },
     'isha-upanishad': {
         'chapters': 1,
-        'verses': 19, # 18 shlokas + 1 invocation
+        'verses': 19,
         'authors': 2,
         'langs': ['sa', 'en', 'hi', 'mr'],
         'description': 'The shortest Upanishad, emphasizing the omnipresence of the Divine.'
@@ -54,7 +55,7 @@ TARGETS = {
         'description': 'One of the oldest Puranas, focusing on Vishnu as the Supreme.'
     },
     'garuda-purana': {
-        'chapters': 2, # Main sections
+        'chapters': 2,
         'verses': 19000,
         'authors': 2,
         'langs': ['sa', 'en'],
@@ -122,6 +123,20 @@ def audit_file_quality(filepath):
     except:
         return set(), set(), 0, False
 
+def get_tech_debt():
+    debt = []
+    # Count TODOs in codebase
+    try:
+        todo_count = subprocess.check_output("grep -r 'TODO' . --exclude-dir=node_modules --exclude-dir=.next --exclude-dir=.git | wc -l", shell=True).decode().strip()
+        debt.append(f"TODOs in codebase: {todo_count}")
+    except: pass
+
+    # Check for missing tests
+    # ...
+
+    # Check for lint issues (simulated)
+    return debt
+
 def run_audit():
     if not os.path.exists('lib/texts.ts'): return
     with open('lib/texts.ts', 'r') as f:
@@ -148,7 +163,6 @@ def run_audit():
         if os.path.exists(gold_path):
             stats['stage'] = 'GOLD'
             if slug == 'mahabharata':
-                # Special MBH check
                 for p in ['parva-3']:
                     p_path = os.path.join(gold_path, p)
                     if os.path.exists(p_path):
@@ -181,8 +195,6 @@ def run_audit():
                     stats['actual_chapters'] += 1
                     for f_name in os.listdir(p1_path):
                         if f_name.endswith('.json'):
-                            # MBH silver is often high volume, just count verses from manifest or approx
-                            # But let's try to be accurate for parva 1
                             _, _, v_count, ph = audit_file_quality(os.path.join(p1_path, f_name))
                             stats['actual_verses'] += v_count
                             if ph: stats['has_placeholders'] = True
@@ -213,8 +225,6 @@ def run_audit():
         ui_score = 1.0 if available_str == 'true' else 0.0
 
         # Weighted Composite Score
-        # Verses (30%), Chapters (20%), Langs (20%), Authors (20%), UI (10%)
-        # Penalty for placeholders (-15% of the score)
         score = (v_score * 0.3 + c_score * 0.2 + l_score * 0.2 + a_score * 0.2 + ui_score * 0.1) * 100
         if stats['has_placeholders']:
             score *= 0.85
@@ -253,8 +263,22 @@ def run_audit():
 
     status_report.sort(key=lambda x: x['score'], reverse=True)
 
+    project_metrics = {
+        'total_books': len(status_report),
+        'gold_books': len([b for b in status_report if b['stage'] == 'GOLD']),
+        'silver_books': len([b for b in status_report if b['stage'] == 'SILVER']),
+        'ui_ready_books': len([b for b in status_report if b['ui'] == 'READY']),
+        'tech_debt': get_tech_debt()
+    }
+
+    final_report = {
+        'last_updated': '2026-07-06',
+        'metrics': project_metrics,
+        'books': status_report
+    }
+
     with open('.status', 'w') as f:
-        json.dump(status_report, f, indent=2)
+        json.dump(final_report, f, indent=2)
 
     print("Project Status Audit Complete. Generated .status")
 

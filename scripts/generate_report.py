@@ -1,20 +1,38 @@
 import json
 
 with open('.status', 'r') as f:
-    report = json.load(f)
+    report_data = json.load(f)
+
+metrics = report_data['metrics']
+books = report_data['books']
 
 lines = [
     '# 🗺️ Vishwa-Vani: Master Project Status Tracker',
     '',
     'This document is the **Single Source of Truth** for project readiness. It tracks books across structural, linguistic, and scholarly dimensions. Books with placeholders are penalized in their score.',
     '',
-    '## 📊 Project Completion Summary',
+    '## 📊 Project Metrics',
+    '',
+    f"- **Total Books in Registry:** {metrics['total_books']}",
+    f"- **Gold Tier Books:** {metrics['gold_books']}",
+    f"- **Silver Tier Books:** {metrics['silver_books']}",
+    f"- **UI Ready Books:** {metrics['ui_ready_books']}",
+    '',
+    '### 🛠️ Technical Debt & Engineering Health',
+]
+
+for debt in metrics['tech_debt']:
+    lines.append(f"- {debt}")
+
+lines.extend([
+    '',
+    '## 🚀 Library Readiness Summary',
     '',
     '| Book Name | Stage | UI | Score (%) | Chapters | Verses | Langs | Authors |',
     '| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |'
-]
+])
 
-for b in report:
+for b in books:
     p = b['progress']
     score_display = f"**{b['score']}%**"
     if b['flags']['placeholders']:
@@ -25,7 +43,7 @@ for b in report:
 lines.append('\n---\n')
 lines.append('## 🔍 Granular Book Audits & Pending Tasks\n')
 
-for b in report:
+for b in books:
     lines.append(f"### {b['name']} (`{b['slug']}`) ")
     lines.append(f"> {b['description']}")
     lines.append('')
@@ -51,7 +69,7 @@ for b in report:
 lines.append('---')
 lines.append('**⚠️ Warning:** Scores marked with ⚠️ contain placeholder or generated content that MUST be replaced with authentic scholarship to reach 100%.')
 lines.append('')
-lines.append('*Last Master Audit: 2026-07-06*')
+lines.append(f"*Last Master Audit: {report_data['last_updated']}*")
 
 with open('docs/PROJECT_STATUS.md', 'w') as f:
     f.write('\n'.join(lines))

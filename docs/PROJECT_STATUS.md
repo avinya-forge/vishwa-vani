@@ -2,7 +2,17 @@
 
 This document is the **Single Source of Truth** for project readiness. It tracks books across structural, linguistic, and scholarly dimensions. Books with placeholders are penalized in their score.
 
-## 📊 Project Completion Summary
+## 📊 Project Metrics
+
+- **Total Books in Registry:** 17
+- **Gold Tier Books:** 6
+- **Silver Tier Books:** 4
+- **UI Ready Books:** 8
+
+### 🛠️ Technical Debt & Engineering Health
+- TODOs in codebase: 22
+
+## 🚀 Library Readiness Summary
 
 | Book Name | Stage | UI | Score (%) | Chapters | Verses | Langs | Authors |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -144,7 +154,7 @@ This document is the **Single Source of Truth** for project readiness. It tracks
 - **🚨 Pending Tasks:**
   - [ ] Missing 3 chapters
   - [ ] Missing 186 verses
-  - [ ] Missing languages: mr, hi
+  - [ ] Missing languages: hi, mr
   - [ ] Add 1 more authors
 
 ### 16 Samskaras (Ritual Handbook) (`samskaras`)
@@ -160,7 +170,7 @@ This document is the **Single Source of Truth** for project readiness. It tracks
   - Scholar Coverage: 0/1
 - **🚨 Pending Tasks:**
   - [ ] Missing 13 verses
-  - [ ] Missing languages: mr, hi
+  - [ ] Missing languages: hi, mr
   - [ ] Add 1 more authors
   - [ ] Integrate with UI (Reader/Index)
 
