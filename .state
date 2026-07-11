@@ -82,5 +82,63 @@
       "percentage": 0.01,
       "stage": "SILVER"
     }
+  ],
+  "libraryTrackerSummary": [
+    {
+      "slug": "kena-upanishad",
+      "name": "Kena Upanishad",
+      "score": 100.0,
+      "stage": "GOLD",
+      "ui": "READY"
+    },
+    {
+      "slug": "bhagavad-gita",
+      "name": "Bhagavad Gita",
+      "score": 82.16,
+      "stage": "GOLD",
+      "ui": "READY"
+    },
+    {
+      "slug": "mahabharata",
+      "name": "Mahabharata (All 18 Parvas)",
+      "score": 54.32,
+      "stage": "GOLD",
+      "ui": "READY"
+    },
+    {
+      "slug": "samskaras",
+      "name": "16 Samskaras (Ritual Handbook)",
+      "score": 32.29,
+      "stage": "SILVER",
+      "ui": "HIDDEN"
+    },
+    {
+      "slug": "garuda-purana",
+      "name": "Garuda Purana",
+      "score": 30.0,
+      "stage": "SILVER",
+      "ui": "HIDDEN"
+    },
+    {
+      "slug": "rigveda",
+      "name": "Rigveda Samhita",
+      "score": 0.0,
+      "stage": "BRONZE/INGESTING",
+      "ui": "HIDDEN"
+    },
+    {
+      "slug": "dasbodh",
+      "name": "Dasbodh",
+      "score": 0.0,
+      "stage": "BRONZE/INGESTING",
+      "ui": "HIDDEN"
+    },
+    {
+      "slug": "samaveda",
+      "name": "Samaveda Samhita",
+      "score": 0.0,
+      "stage": "BRONZE/INGESTING",
+      "ui": "HIDDEN"
+    }
   ]
 }

@@ -1,0 +1,161 @@
+[
+  {
+    "name": "Kena Upanishad",
+    "slug": "kena-upanishad",
+    "stage": "GOLD",
+    "ui": "READY",
+    "verses": "34/34",
+    "chapters": "1/1",
+    "langs_list": [
+      "hi",
+      "mr",
+      "sa",
+      "en"
+    ],
+    "target_langs": [
+      "sa",
+      "en",
+      "hi",
+      "mr"
+    ],
+    "authors_list": [
+      "sri-aurobindo",
+      "max_muller"
+    ],
+    "target_authors_count": 2,
+    "score": 100.0
+  },
+  {
+    "name": "Bhagavad Gita",
+    "slug": "bhagavad-gita",
+    "stage": "GOLD",
+    "ui": "READY",
+    "verses": "657/700",
+    "chapters": "18/18",
+    "langs_list": [
+      "hi",
+      "mr",
+      "sa",
+      "en"
+    ],
+    "target_langs": [
+      "sa",
+      "en",
+      "hi",
+      "mr"
+    ],
+    "authors_list": [
+      "sant-dnyaneshwar",
+      "adi-shankara"
+    ],
+    "target_authors_count": 10,
+    "score": 82.16
+  },
+  {
+    "name": "Mahabharata (All 18 Parvas)",
+    "slug": "mahabharata",
+    "stage": "GOLD",
+    "ui": "READY",
+    "verses": "6977/100000",
+    "chapters": "2/18",
+    "langs_list": [
+      "sa",
+      "en"
+    ],
+    "target_langs": [
+      "sa",
+      "en"
+    ],
+    "authors_list": [
+      "km_ganguli",
+      "nilakantha"
+    ],
+    "target_authors_count": 2,
+    "score": 54.32
+  },
+  {
+    "name": "16 Samskaras (Ritual Handbook)",
+    "slug": "samskaras",
+    "stage": "SILVER",
+    "ui": "HIDDEN",
+    "verses": "3/16",
+    "chapters": "1/1",
+    "langs_list": [
+      "sa"
+    ],
+    "target_langs": [
+      "sa",
+      "hi",
+      "mr"
+    ],
+    "authors_list": [],
+    "target_authors_count": 1,
+    "score": 32.29
+  },
+  {
+    "name": "Garuda Purana",
+    "slug": "garuda-purana",
+    "stage": "SILVER",
+    "ui": "HIDDEN",
+    "verses": "2/19000",
+    "chapters": "2/2",
+    "langs_list": [
+      "sa"
+    ],
+    "target_langs": [
+      "sa",
+      "en"
+    ],
+    "authors_list": [],
+    "target_authors_count": 2,
+    "score": 30.0
+  },
+  {
+    "name": "Rigveda Samhita",
+    "slug": "rigveda",
+    "stage": "BRONZE/INGESTING",
+    "ui": "HIDDEN",
+    "verses": "0/10552",
+    "chapters": "0/10",
+    "langs_list": [],
+    "target_langs": [
+      "sa",
+      "en"
+    ],
+    "authors_list": [],
+    "target_authors_count": 1,
+    "score": 0.0
+  },
+  {
+    "name": "Dasbodh",
+    "slug": "dasbodh",
+    "stage": "BRONZE/INGESTING",
+    "ui": "HIDDEN",
+    "verses": "0/7751",
+    "chapters": "0/20",
+    "langs_list": [],
+    "target_langs": [
+      "sa",
+      "mr"
+    ],
+    "authors_list": [],
+    "target_authors_count": 1,
+    "score": 0.0
+  },
+  {
+    "name": "Samaveda Samhita",
+    "slug": "samaveda",
+    "stage": "BRONZE/INGESTING",
+    "ui": "HIDDEN",
+    "verses": "0/1875",
+    "chapters": "0/2",
+    "langs_list": [],
+    "target_langs": [
+      "sa",
+      "en"
+    ],
+    "authors_list": [],
+    "target_authors_count": 1,
+    "score": 0.0
+  }
+]
