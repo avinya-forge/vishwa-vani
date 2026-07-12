@@ -27,8 +27,8 @@ This backlog is organized sequentially. Do not proceed to the next phase until t
 - [x] `BHAG-DATA-3` **Verify & Promote Bhagavata Purana**: Verify Canto 1 (19 chapters, 718 verses, 2 authors: Vyasa, Prabhupada). Run promotion pipeline and update manifest. — Done: 2026-07-06
 
 ## Priority 1.5: Critical Fixes & Crawlers
-- [ ] `CRAWL-001` **Investigate specialized KMG scrapers**: Replace generic `PlaywrightCrawler` with a more robust parser for Sacred Texts.
-- [ ] `CRAWL-002` **Integrate GRETIL Scraper**: Research and integrate a library for high-accuracy Sanskrit extraction from GRETIL.
+- [x] `CRAWL-001` **Investigate specialized KMG scrapers**: Replace generic `PlaywrightCrawler` with a more robust parser for Sacred Texts.
+- [x] `CRAWL-002` **Integrate GRETIL Scraper**: Research and integrate a library for high-accuracy Sanskrit extraction from GRETIL.
 - [x] `GATE-001` **Phase 1 Visual Audit & Bug Triage**: Manually navigate to Isha and Stotras in the UI. Ensure routing, AI synthesis, and author toggles work perfectly. — Done: 2026-06-22
 
 ---
