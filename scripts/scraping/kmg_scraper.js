@@ -1,4 +1,5 @@
-const { PlaywrightCrawler } = require('crawlee');
+const { HttpCrawler } = require('crawlee');
+const cheerio = require('cheerio');
 const fs = require('fs');
 const path = require('path');
 
@@ -13,10 +14,12 @@ async function scrapeKMGParva(parvaNumber, startAdhyaya, endAdhyaya) {
         requests.push(`https://www.sacred-texts.com/hin/m${paddedParva}/m${paddedParva}${paddedAdhyaya}.htm`);
     }
 
-    const crawler = new PlaywrightCrawler({
+    const crawler = new HttpCrawler({
         maxRequestsPerCrawl: requests.length,
-        async requestHandler({ page, request, log }) {
+        async requestHandler({ request, body, log }) {
             log.info(`Processing ${request.url}`);
+
+            const $ = cheerio.load(body);
 
             // Extract the chapter number from the URL
             const urlParts = request.url.split('/');
@@ -24,15 +27,15 @@ async function scrapeKMGParva(parvaNumber, startAdhyaya, endAdhyaya) {
             const chapStr = filename.replace('.htm', '').slice(3); // e.g. 001
             const chapterNum = parseInt(chapStr, 10);
 
-            const title = await page.title();
+            const title = $('title').text();
 
             // Extract content, looking for standard text elements
-            const extracted = await page.evaluate(() => {
-                const paragraphs = Array.from(document.querySelectorAll('p, blockquote'));
-                // Filtering out the generic header/footer from sacred-texts
-                return paragraphs
-                    .map(p => p.innerText.trim())
-                    .filter(t => t.length > 20 && !t.includes('Sacred Texts') && !t.includes('Hinduism') && !t.includes('Mahabharata'));
+            const extracted = [];
+            $('p, blockquote').each((i, el) => {
+                const t = $(el).text().trim();
+                if (t.length > 20 && !t.includes('Sacred Texts') && !t.includes('Hinduism') && !t.includes('Mahabharata')) {
+                    extracted.push(t);
+                }
             });
 
             const outDir = path.join(__dirname, '..', '..', 'data', '1-bronze', `mahabharata-kmg-parva-${parvaNumber}`);

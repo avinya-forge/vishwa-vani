@@ -56,3 +56,4 @@ data/isha_upanishad_chapter_*.json
 
 # Track agents configuration and skills
 !.agents/
+/storage/
