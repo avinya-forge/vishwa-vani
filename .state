@@ -1,4 +1,144 @@
 {
   "CURRENT_LOC": 140,
-  "V-Score": 100
+  "V-Score": 100,
+  "bookStatusSummary": [
+    {
+      "name": "Isha Upanishad",
+      "slug": "isha-upanishad",
+      "current_verses": 19,
+      "expected_verses": 19,
+      "percentage": 100.0,
+      "stage": "GOLD"
+    },
+    {
+      "name": "Kena Upanishad",
+      "slug": "kena-upanishad",
+      "current_verses": 34,
+      "expected_verses": 34,
+      "percentage": 100.0,
+      "stage": "GOLD"
+    },
+    {
+      "name": "Srimad Bhagavatam (Canto 1)",
+      "slug": "bhagavata-purana",
+      "current_verses": 718,
+      "expected_verses": 718,
+      "percentage": 100.0,
+      "stage": "GOLD"
+    },
+    {
+      "name": "Bhagavad Gita",
+      "slug": "bhagavad-gita",
+      "current_verses": 657,
+      "expected_verses": 700,
+      "percentage": 93.86,
+      "stage": "GOLD"
+    },
+    {
+      "name": "Stotras & Stuties",
+      "slug": "stotras",
+      "current_verses": 17,
+      "expected_verses": 70,
+      "percentage": 24.29,
+      "stage": "GOLD"
+    },
+    {
+      "name": "16 Samskaras (Ritual Handbook)",
+      "slug": "samskaras",
+      "current_verses": 3,
+      "expected_verses": 16,
+      "percentage": 18.75,
+      "stage": "SILVER"
+    },
+    {
+      "name": "Mahabharata (All 18 Parvas)",
+      "slug": "mahabharata",
+      "current_verses": 13500,
+      "expected_verses": 100000,
+      "percentage": 13.5,
+      "stage": "GOLD"
+    },
+    {
+      "name": "Yoga Sutras of Patanjali",
+      "slug": "yoga-sutras",
+      "current_verses": 10,
+      "expected_verses": 196,
+      "percentage": 5.1,
+      "stage": "SILVER"
+    },
+    {
+      "name": "Vishnu Purana",
+      "slug": "vishnu-purana",
+      "current_verses": 6,
+      "expected_verses": 7000,
+      "percentage": 0.09,
+      "stage": "SILVER"
+    },
+    {
+      "name": "Garuda Purana",
+      "slug": "garuda-purana",
+      "current_verses": 2,
+      "expected_verses": 19000,
+      "percentage": 0.01,
+      "stage": "SILVER"
+    }
+  ],
+  "libraryTrackerSummary": [
+    {
+      "slug": "kena-upanishad",
+      "name": "Kena Upanishad",
+      "score": 100.0,
+      "stage": "GOLD",
+      "ui": "READY"
+    },
+    {
+      "slug": "bhagavad-gita",
+      "name": "Bhagavad Gita",
+      "score": 82.16,
+      "stage": "GOLD",
+      "ui": "READY"
+    },
+    {
+      "slug": "mahabharata",
+      "name": "Mahabharata (All 18 Parvas)",
+      "score": 54.32,
+      "stage": "GOLD",
+      "ui": "READY"
+    },
+    {
+      "slug": "samskaras",
+      "name": "16 Samskaras (Ritual Handbook)",
+      "score": 32.29,
+      "stage": "SILVER",
+      "ui": "HIDDEN"
+    },
+    {
+      "slug": "garuda-purana",
+      "name": "Garuda Purana",
+      "score": 30.0,
+      "stage": "SILVER",
+      "ui": "HIDDEN"
+    },
+    {
+      "slug": "rigveda",
+      "name": "Rigveda Samhita",
+      "score": 0.0,
+      "stage": "BRONZE/INGESTING",
+      "ui": "HIDDEN"
+    },
+    {
+      "slug": "dasbodh",
+      "name": "Dasbodh",
+      "score": 0.0,
+      "stage": "BRONZE/INGESTING",
+      "ui": "HIDDEN"
+    },
+    {
+      "slug": "samaveda",
+      "name": "Samaveda Samhita",
+      "score": 0.0,
+      "stage": "BRONZE/INGESTING",
+      "ui": "HIDDEN"
+    }
+  ]
 }
