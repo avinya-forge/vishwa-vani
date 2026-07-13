@@ -21,7 +21,7 @@ export function middleware(request: NextRequest) {
         if (currentRecord.count >= maxRequests) {
           return new NextResponse(
             JSON.stringify({ error: 'Too Many Requests', message: 'Rate limit exceeded. Please upgrade your API tier for unlimited access.' }),
-            { status: 429, headers: { 'Content-Type': 'application/json', 'X-RateLimit-Limit': maxRequests.toString(), 'X-RateLimit-Remaining': '0' } }
+            { status: 429, headers: { 'Content-Type': 'application/json', 'X-RateLimit-Limit': maxRequests.toString(), 'X-RateLimit-Remaining': '0', 'Retry-After': Math.ceil((windowMs - (now - currentRecord.timestamp)) / 1000).toString() } }
           )
         }
         currentRecord.count += 1
@@ -36,6 +36,9 @@ export function middleware(request: NextRequest) {
     // Clone the response and add Cache-Control headers for Edge Caching
     const response = NextResponse.next()
     
+    // Add Edge caching headers
+    response.headers.set('Cache-Control', 'public, max-age=0, s-maxage=86400, stale-while-revalidate=3600')
+
     // Add monetization/telemetry headers
     response.headers.set('X-Vishwa-Vani-Tier', 'Free')
     response.headers.set('X-RateLimit-Limit', maxRequests.toString())

@@ -61,7 +61,7 @@ This backlog is organized sequentially. Do not proceed to the next phase until t
 
 ## Priority 4: UI & Deployment
 - [x] `LAB-GITA-004` to `LAB-GITA-010` **Bhagavad Gita Labs** — Done: Implemented Moksha Path Navigator, Yoga Mind Control Explorer, Bhāgavata Bhakti Flow, and Kena Sensory Inquiry labs.
-- [ ] `DEPLOY-001` Setup Cloudflare Pages / Vercel Edge caching and rate limiting telemetry.
+- [x] `DEPLOY-001` Setup Cloudflare Pages / Vercel Edge caching and rate limiting telemetry. — Done: 2026-07-13
 - [ ] `DEPLOY-002` Domain configuration and SSL setup.
 - [ ] `BUG-077` **KMG Translation Misalignment Audit**: Audit the entire Mahabharata KMG dataset for translation misalignments due to differences in chapter numbering between KMG and standard Sanskrit editions, similar to the Parva 3 Adhyaya 231 issue.
 
