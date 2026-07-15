@@ -6,7 +6,6 @@
     "verse": 1,
     "original": "केनेषितं पतति प्रेषितं मनः। केन प्राणः प्रथमः प्रैति युक्तः। केनेषितां वाचमिमां वदन्ति। चक्षुः श्रोत्रं क उ देवो युनक्ति॥",
     "transliteration": "keneṣitaṃ patati preṣitaṃ manaḥ | kena prāṇaḥ prathamaḥ praiti yuktaḥ | keneṣitāṃ vācamimāṃ vadanti | cakṣuḥ śrotraṃ ka u devo yunakti ||",
-    "meaning": "Meaning of the verse based on actual translation.",
     "layers": [
       {
         "author": "max_muller",
@@ -75,8 +74,7 @@
     "stats": {
       "words": 15,
       "chars": 100
-    },
-    "translation": "Meaning of the verse based on actual translation."
+    }
   },
   {
     "id": "kena-upanishad_1_2",
@@ -85,7 +83,6 @@
     "verse": 2,
     "original": "श्रोत्रस्य श्रोत्रं मनसो मनो यद्वाचो ह वाचं स उ प्राणस्य प्राणः। चक्षुषश्चक्षुरतिमुच्य धीराः प्रेत्यास्माल्लोकादमृता भवन्ति॥",
     "transliteration": "śrotrasya śrotraṃ manaso mano yadvāco ha vācaṃ sa u prāṇasya prāṇaḥ | cakṣuṣaścakṣuratimucya dhīrāḥ pretyāsmāllokādamṛtā bhavanti ||",
-    "meaning": "Meaning of the verse based on actual translation.",
     "layers": [
       {
         "author": "max_muller",
@@ -154,8 +151,7 @@
     "stats": {
       "words": 15,
       "chars": 100
-    },
-    "translation": "Meaning of the verse based on actual translation."
+    }
   },
   {
     "id": "kena-upanishad_1_3",
@@ -164,7 +160,6 @@
     "verse": 3,
     "original": "न तत्र चक्षुर्गच्छति न वाग्गच्छति नो मनः। न विद्मो न विजानीमो यथैतदनुशिष्यात्॥",
     "transliteration": "na tatra cakṣurgacchati na vāggacchati no manaḥ | na vidmo na vijānīmo yathaitadanuśiṣyāt ||",
-    "meaning": "Meaning of the verse based on actual translation.",
     "layers": [
       {
         "author": "max_muller",
@@ -233,8 +228,7 @@
     "stats": {
       "words": 15,
       "chars": 100
-    },
-    "translation": "Meaning of the verse based on actual translation."
+    }
   },
   {
     "id": "kena-upanishad_1_4",
@@ -243,7 +237,6 @@
     "verse": 4,
     "original": "अन्यदेव तद्विदितादथो अविदितादधि। इति शुश्रुम पूर्वेषां ये नस्तद्व्याचचक्षिरे॥",
     "transliteration": "anyadeva tadviditādatho aviditādadhi | iti śuśruma pūrveṣāṃ ye nastadvyācacakṣire ||",
-    "meaning": "Meaning of the verse based on actual translation.",
     "layers": [
       {
         "author": "max_muller",
@@ -312,8 +305,7 @@
     "stats": {
       "words": 15,
       "chars": 100
-    },
-    "translation": "Meaning of the verse based on actual translation."
+    }
   },
   {
     "id": "kena-upanishad_1_5",
@@ -322,7 +314,6 @@
     "verse": 5,
     "original": "यद्वाचाऽनभ्युदितं येन वागभ्युद्यते। तदेव ब्रह्म त्वं विद्धि नेदं यदिदमुपासते॥",
     "transliteration": "yadvācā'nabhyuditaṃ yena vāgabhyudyate | tadeva brahma tvaṃ viddhi nedaṃ yadidamupāsate ||",
-    "meaning": "Meaning of the verse based on actual translation.",
     "layers": [
       {
         "author": "max_muller",
@@ -391,8 +382,7 @@
     "stats": {
       "words": 15,
       "chars": 100
-    },
-    "translation": "Meaning of the verse based on actual translation."
+    }
   },
   {
     "id": "kena-upanishad_1_6",
@@ -401,7 +391,6 @@
     "verse": 6,
     "original": "यन्मनसा न मनुते येनाहुर्मनो मतम्। तदेव ब्रह्म त्वं विद्धि नेदं यदिदमुपासते॥",
     "transliteration": "yanmanasā na manute yenāhurmano matam | tadeva brahma tvaṃ viddhi nedaṃ yadidamupāsate ||",
-    "meaning": "Meaning of the verse based on actual translation.",
     "layers": [
       {
         "author": "max_muller",
@@ -470,8 +459,7 @@
     "stats": {
       "words": 15,
       "chars": 100
-    },
-    "translation": "Meaning of the verse based on actual translation."
+    }
   },
   {
     "id": "kena-upanishad_1_7",
@@ -480,7 +468,6 @@
     "verse": 7,
     "original": "यच्चक्षुषा न पश्यति येन चक्षूंषि पश्यति। तदेव ब्रह्म त्वं विद्धि नेदं यदिदमुपासते॥",
     "transliteration": "yaccakṣuṣā na paśyati yena cakṣūṃṣi paśyati | tadeva brahma tvaṃ viddhi nedaṃ yadidamupāsate ||",
-    "meaning": "Meaning of the verse based on actual translation.",
     "layers": [
       {
         "author": "max_muller",
@@ -549,8 +536,7 @@
     "stats": {
       "words": 15,
       "chars": 100
-    },
-    "translation": "Meaning of the verse based on actual translation."
+    }
   },
   {
     "id": "kena-upanishad_1_8",
@@ -559,7 +545,6 @@
     "verse": 8,
     "original": "यच्छ्रोत्रेण न शृणोति येन श्रोत्रमिदं श्रुतम्। तदेव ब्रह्म त्वं विद्धि नेदं यदिदमुपासते॥",
     "transliteration": "yacchrotreṇa na śṛṇoti yena śrotramidaṃ śrutam | tadeva brahma tvaṃ viddhi nedaṃ yadidamupāsate ||",
-    "meaning": "Meaning of the verse based on actual translation.",
     "layers": [
       {
         "author": "max_muller",
@@ -628,8 +613,7 @@
     "stats": {
       "words": 15,
       "chars": 100
-    },
-    "translation": "Meaning of the verse based on actual translation."
+    }
   },
   {
     "id": "kena-upanishad_1_9",
@@ -638,7 +622,6 @@
     "verse": 9,
     "original": "यत्प्राणेन न प्राणिति येन प्राणः प्रणीयते। तदेव ब्रह्म त्वं विद्धि नेदं यदिदमुपासते॥",
     "transliteration": "yatprāṇena na prāṇiti yena prāṇaḥ praṇīyate | tadeva brahma tvaṃ viddhi nedaṃ yadidamupāsate ||",
-    "meaning": "Meaning of the verse based on actual translation.",
     "layers": [
       {
         "author": "max_muller",
@@ -707,8 +690,7 @@
     "stats": {
       "words": 15,
       "chars": 100
-    },
-    "translation": "Meaning of the verse based on actual translation."
+    }
   },
   {
     "id": "kena_1_10",
@@ -716,7 +698,6 @@
     "verse": 10,
     "original": "न तत्र चक्षुर्गच्छति न वाग्गच्छति नो मनः ।",
     "transliteration": "Transliteration for verse 10",
-    "meaning": "Meaning of the verse based on actual translation.",
     "layers": [
       {
         "author": "max_muller",
@@ -783,8 +764,7 @@
         "words": 15,
         "chars": 100
       }
-    },
-    "translation": "Meaning of the verse based on actual translation."
+    }
   },
   {
     "id": "kena_1_11",
@@ -792,7 +772,6 @@
     "verse": 11,
     "original": "न विद्मो न विजानीमो यथैतदनुशिष्यात् ॥",
     "transliteration": "Transliteration for verse 11",
-    "meaning": "Meaning of the verse based on actual translation.",
     "layers": [
       {
         "author": "max_muller",
@@ -859,8 +838,7 @@
         "words": 15,
         "chars": 100
       }
-    },
-    "translation": "Meaning of the verse based on actual translation."
+    }
   },
   {
     "id": "kena_1_12",
@@ -868,7 +846,6 @@
     "verse": 12,
     "original": "अन्यदेव तद्विदितादथो अविदितादधि ।",
     "transliteration": "Transliteration for verse 12",
-    "meaning": "Meaning of the verse based on actual translation.",
     "layers": [
       {
         "author": "max_muller",
@@ -935,8 +912,7 @@
         "words": 15,
         "chars": 100
       }
-    },
-    "translation": "Meaning of the verse based on actual translation."
+    }
   },
   {
     "id": "kena_1_13",
@@ -944,7 +920,6 @@
     "verse": 13,
     "original": "इति शुश्रुम पूर्वेषां ये नस्तद्व्याचचक्षिरे ॥",
     "transliteration": "Transliteration for verse 13",
-    "meaning": "Meaning of the verse based on actual translation.",
     "layers": [
       {
         "author": "max_muller",
@@ -1011,8 +986,7 @@
         "words": 15,
         "chars": 100
       }
-    },
-    "translation": "Meaning of the verse based on actual translation."
+    }
   },
   {
     "id": "kena_1_14",
@@ -1020,7 +994,6 @@
     "verse": 14,
     "original": "यद्वाचाऽनभ्युदितं येन वागभ्युद्यते ।",
     "transliteration": "Transliteration for verse 14",
-    "meaning": "Meaning of the verse based on actual translation.",
     "layers": [
       {
         "author": "max_muller",
@@ -1087,8 +1060,7 @@
         "words": 15,
         "chars": 100
       }
-    },
-    "translation": "Meaning of the verse based on actual translation."
+    }
   },
   {
     "id": "kena_1_15",
@@ -1096,7 +1068,6 @@
     "verse": 15,
     "original": "तदेव ब्रह्म त्वं विद्धि नेदं यदिदमुपासते ॥",
     "transliteration": "Transliteration for verse 15",
-    "meaning": "Meaning of the verse based on actual translation.",
     "layers": [
       {
         "author": "max_muller",
@@ -1163,8 +1134,7 @@
         "words": 15,
         "chars": 100
       }
-    },
-    "translation": "Meaning of the verse based on actual translation."
+    }
   },
   {
     "id": "kena_1_16",
@@ -1172,7 +1142,6 @@
     "verse": 16,
     "original": "यन्मनसा न मनुते येनाहुर्मनो मतम् ।",
     "transliteration": "Transliteration for verse 16",
-    "meaning": "Meaning of the verse based on actual translation.",
     "layers": [
       {
         "author": "max_muller",
@@ -1239,8 +1208,7 @@
         "words": 15,
         "chars": 100
       }
-    },
-    "translation": "Meaning of the verse based on actual translation."
+    }
   },
   {
     "id": "kena_1_17",
@@ -1248,7 +1216,6 @@
     "verse": 17,
     "original": "तदेव ब्रह्म त्वं विद्धि नेदं यदिदमुपासते ॥",
     "transliteration": "Transliteration for verse 17",
-    "meaning": "Meaning of the verse based on actual translation.",
     "layers": [
       {
         "author": "max_muller",
@@ -1315,8 +1282,7 @@
         "words": 15,
         "chars": 100
       }
-    },
-    "translation": "Meaning of the verse based on actual translation."
+    }
   },
   {
     "id": "kena_1_18",
@@ -1324,7 +1290,6 @@
     "verse": 18,
     "original": "यच्चक्षुषा न पश्यति येन चक्षूंषि पश्यति ।",
     "transliteration": "Transliteration for verse 18",
-    "meaning": "Meaning of the verse based on actual translation.",
     "layers": [
       {
         "author": "max_muller",
@@ -1391,8 +1356,7 @@
         "words": 15,
         "chars": 100
       }
-    },
-    "translation": "Meaning of the verse based on actual translation."
+    }
   },
   {
     "id": "kena_1_19",
@@ -1400,7 +1364,6 @@
     "verse": 19,
     "original": "तदेव ब्रह्म त्वं विद्धि नेदं यदिदमुपासते ॥",
     "transliteration": "Transliteration for verse 19",
-    "meaning": "Meaning of the verse based on actual translation.",
     "layers": [
       {
         "author": "max_muller",
@@ -1467,8 +1430,7 @@
         "words": 15,
         "chars": 100
       }
-    },
-    "translation": "Meaning of the verse based on actual translation."
+    }
   },
   {
     "id": "kena_1_20",
@@ -1476,7 +1438,6 @@
     "verse": 20,
     "original": "यच्छ्रोत्रेण न शृणोति येन श्रोत्रमिदं श्रुतम् ।",
     "transliteration": "Transliteration for verse 20",
-    "meaning": "Meaning of the verse based on actual translation.",
     "layers": [
       {
         "author": "max_muller",
@@ -1543,8 +1504,7 @@
         "words": 15,
         "chars": 100
       }
-    },
-    "translation": "Meaning of the verse based on actual translation."
+    }
   },
   {
     "id": "kena_1_21",
@@ -1552,7 +1512,6 @@
     "verse": 21,
     "original": "तदेव ब्रह्म त्वं विद्धि नेदं यदिदमुपासते ॥",
     "transliteration": "Transliteration for verse 21",
-    "meaning": "Meaning of the verse based on actual translation.",
     "layers": [
       {
         "author": "max_muller",
@@ -1619,8 +1578,7 @@
         "words": 15,
         "chars": 100
       }
-    },
-    "translation": "Meaning of the verse based on actual translation."
+    }
   },
   {
     "id": "kena_1_22",
@@ -1628,7 +1586,6 @@
     "verse": 22,
     "original": "यत्प्राणेन न प्राणिति येन प्राणः प्रणीयते ।",
     "transliteration": "Transliteration for verse 22",
-    "meaning": "Meaning of the verse based on actual translation.",
     "layers": [
       {
         "author": "max_muller",
@@ -1695,8 +1652,7 @@
         "words": 15,
         "chars": 100
       }
-    },
-    "translation": "Meaning of the verse based on actual translation."
+    }
   },
   {
     "id": "kena_1_23",
@@ -1704,7 +1660,6 @@
     "verse": 23,
     "original": "तदेव ब्रह्म त्वं विद्धि नेदं यदिदमुपासते ॥",
     "transliteration": "Transliteration for verse 23",
-    "meaning": "Meaning of the verse based on actual translation.",
     "layers": [
       {
         "author": "max_muller",
@@ -1771,8 +1726,7 @@
         "words": 15,
         "chars": 100
       }
-    },
-    "translation": "Meaning of the verse based on actual translation."
+    }
   },
   {
     "id": "kena_1_24",
@@ -1780,7 +1734,6 @@
     "verse": 24,
     "original": "यदि मन्यसे सुवेदेति दभ्रमेवापि नूनं त्वं वेत्थ ब्रह्मणो रूपम् ।",
     "transliteration": "Transliteration for verse 24",
-    "meaning": "Meaning of the verse based on actual translation.",
     "layers": [
       {
         "author": "max_muller",
@@ -1847,8 +1800,7 @@
         "words": 15,
         "chars": 100
       }
-    },
-    "translation": "Meaning of the verse based on actual translation."
+    }
   },
   {
     "id": "kena_1_25",
@@ -1856,7 +1808,6 @@
     "verse": 25,
     "original": "यदस्य त्वं यदस्य देवेष्वथ नु मीमांस्यमेव ते मन्ये विदितम् ॥",
     "transliteration": "Transliteration for verse 25",
-    "meaning": "Meaning of the verse based on actual translation.",
     "layers": [
       {
         "author": "max_muller",
@@ -1923,8 +1874,7 @@
         "words": 15,
         "chars": 100
       }
-    },
-    "translation": "Meaning of the verse based on actual translation."
+    }
   },
   {
     "id": "kena_1_26",
@@ -1932,7 +1882,6 @@
     "verse": 26,
     "original": "नाहं मन्ये सुवेदेति नो न वेदेति वेद च ।",
     "transliteration": "Transliteration for verse 26",
-    "meaning": "Meaning of the verse based on actual translation.",
     "layers": [
       {
         "author": "max_muller",
@@ -1999,8 +1948,7 @@
         "words": 15,
         "chars": 100
       }
-    },
-    "translation": "Meaning of the verse based on actual translation."
+    }
   },
   {
     "id": "kena_1_27",
@@ -2008,7 +1956,6 @@
     "verse": 27,
     "original": "यो नस्तद्वेद तद्वेद नो न वेदेति वेद च ॥",
     "transliteration": "Transliteration for verse 27",
-    "meaning": "Meaning of the verse based on actual translation.",
     "layers": [
       {
         "author": "max_muller",
@@ -2075,8 +2022,7 @@
         "words": 15,
         "chars": 100
       }
-    },
-    "translation": "Meaning of the verse based on actual translation."
+    }
   },
   {
     "id": "kena_1_28",
@@ -2084,7 +2030,6 @@
     "verse": 28,
     "original": "यस्यामतं तस्य मतं मतं यस्य न वेद सः ।",
     "transliteration": "Transliteration for verse 28",
-    "meaning": "Meaning of the verse based on actual translation.",
     "layers": [
       {
         "author": "max_muller",
@@ -2151,8 +2096,7 @@
         "words": 15,
         "chars": 100
       }
-    },
-    "translation": "Meaning of the verse based on actual translation."
+    }
   },
   {
     "id": "kena_1_29",
@@ -2160,7 +2104,6 @@
     "verse": 29,
     "original": "अविज्ञातं विजानतां विज्ञातमविजानताम् ॥",
     "transliteration": "Transliteration for verse 29",
-    "meaning": "Meaning of the verse based on actual translation.",
     "layers": [
       {
         "author": "max_muller",
@@ -2227,8 +2170,7 @@
         "words": 15,
         "chars": 100
       }
-    },
-    "translation": "Meaning of the verse based on actual translation."
+    }
   },
   {
     "id": "kena_1_30",
@@ -2236,7 +2178,6 @@
     "verse": 30,
     "original": "प्रतिबोधविदितं मतममृतत्वं हि विन्दते ।",
     "transliteration": "Transliteration for verse 30",
-    "meaning": "Meaning of the verse based on actual translation.",
     "layers": [
       {
         "author": "max_muller",
@@ -2303,8 +2244,7 @@
         "words": 15,
         "chars": 100
       }
-    },
-    "translation": "Meaning of the verse based on actual translation."
+    }
   },
   {
     "id": "kena_1_31",
@@ -2312,7 +2252,6 @@
     "verse": 31,
     "original": "आत्मना विन्दते वीर्यं विद्यया विन्दतेऽमृतम् ॥",
     "transliteration": "Transliteration for verse 31",
-    "meaning": "Meaning of the verse based on actual translation.",
     "layers": [
       {
         "author": "max_muller",
@@ -2379,8 +2318,7 @@
         "words": 15,
         "chars": 100
       }
-    },
-    "translation": "Meaning of the verse based on actual translation."
+    }
   },
   {
     "id": "kena_1_32",
@@ -2388,7 +2326,6 @@
     "verse": 32,
     "original": "इह चेदवेदीदथ सत्यमस्ति न चेदिहावेदीन्महती विनष्टिः ।",
     "transliteration": "Transliteration for verse 32",
-    "meaning": "Meaning of the verse based on actual translation.",
     "layers": [
       {
         "author": "max_muller",
@@ -2455,8 +2392,7 @@
         "words": 15,
         "chars": 100
       }
-    },
-    "translation": "Meaning of the verse based on actual translation."
+    }
   },
   {
     "id": "kena_1_33",
@@ -2464,7 +2400,6 @@
     "verse": 33,
     "original": "भूतेषु भूतेषु विचित्य धीराः प्रेत्यास्माल्लोकादमृता भवन्ति ॥",
     "transliteration": "Transliteration for verse 33",
-    "meaning": "Meaning of the verse based on actual translation.",
     "layers": [
       {
         "author": "max_muller",
@@ -2531,8 +2466,7 @@
         "words": 15,
         "chars": 100
       }
-    },
-    "translation": "Meaning of the verse based on actual translation."
+    }
   },
   {
     "id": "kena_1_34",
@@ -2540,7 +2474,6 @@
     "verse": 34,
     "original": "ब्रह्म ह देवेभ्यो विजिग्ये तस्य ह ब्रह्मणो विजये देवा अमहीयन्त ॥",
     "transliteration": "Transliteration for verse 34",
-    "meaning": "Meaning of the verse based on actual translation.",
     "layers": [
       {
         "author": "max_muller",
@@ -2607,7 +2540,6 @@
         "words": 15,
         "chars": 100
       }
-    },
-    "translation": "Meaning of the verse based on actual translation."
+    }
   }
 ]

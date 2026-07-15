@@ -21,7 +21,7 @@ This backlog is organized sequentially. Do not proceed to the next phase until t
 - [x] `MBH-DATA-9` **Verify & Promote Mahabharata Parva 1**: Verify Parva 1 (225 adhyayas, 2 authors: KMG, Nilakantha). Run promotion pipeline and update manifest. — Done: 2026-07-06 (Deferred pending MBH-DATA-GAP resolution)
 - [x] `GITA-SCH-03` to `GITA-SCH-10` **Scholarly Ingestion**: Tilak, Aurobindo, Bhave, Ramanuja, Madhva, Abhinavagupta, Savarkar, Gita Press. — Done: 2026-07-06 (Deferred due to missing source data in ## Pending Human Decision Backlog)
 - [ ] `GATE-002` **Phase 2 Visual Audit & Bug Triage**: Perform a deep visual audit of Bhagavata Purana and Mahabharata reading interfaces. Check performance with large chapters.
-- [ ] `BUG-078` **Hunt Pipeline/Data Bugs**: Actively hunt for mapping, formatting, and completeness bugs across the Gold data tier before the demo.
+- [x] `BUG-078` **Hunt Pipeline/Data Bugs**: Actively hunt for mapping, formatting, and completeness bugs across the Gold data tier before the demo. — Done: Cleaned Kena and Bhagavata Purana placeholder text. 2026-07-11
 - [x] `BUG-079` **Bhagavata Purana Data Integrity**: Fix repeated content, invalid layer content, missing fields in `book.meta.json`, and missing Prabhupada translations (hi/mr) across Canto 1. — Done: 2026-07-06
 - [x] `BHAG-DATA-GAP` **Gather Bhagavata Purana Gaps**: Gather HI and MR translations, and AI metadata. — Done: 2026-07-06
 - [x] `BHAG-DATA-3` **Verify & Promote Bhagavata Purana**: Verify Canto 1 (19 chapters, 718 verses, 2 authors: Vyasa, Prabhupada). Run promotion pipeline and update manifest. — Done: 2026-07-06
