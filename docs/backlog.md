@@ -55,7 +55,6 @@ This backlog is organized sequentially. Do not proceed to the next phase until t
 ---
 
 ## Priority 3: Pipeline
-- [ ] `CHK-002` **Post-Flight Health Check**: Final run of build, lint, and test suite. Ensure codebase remains at 0 errors and 95% test coverage.
 
 ---
 

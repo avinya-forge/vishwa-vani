@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "last_audit": "2026-07-06",
+  "last_audit": "2026-07-16",
   "note": "Only Gold-tier (verified and complete) books are active in manifest. Mahabharata is currently in SILVER tier.",
   "books": [
     {
@@ -3438,15 +3438,12 @@
         {
           "number": 1,
           "file": "yoga-sutras-chapter-1.json",
-          "verse_count": 10,
-          "theme": "Samādhi Pāda: The nature of concentration and the definition of Yoga.",
-          "yoga_type": "Ashtanga Yoga",
-          "stotra_present": false
+          "verse_count": 10
         }
       ],
       "completeness_score": 100,
-      "status": "SILVER",
-      "last_promoted": "2026-05-29"
+      "status": "GOLD",
+      "last_promoted": "2026-07-16"
     },
     {
       "book_id": "kena-upanishad",
