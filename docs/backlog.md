@@ -64,6 +64,10 @@ This backlog is organized sequentially. Do not proceed to the next phase until t
 - [ ] `DEPLOY-002` Domain configuration and SSL setup.
 - [ ] `BUG-077` **KMG Translation Misalignment Audit**: Audit the entire Mahabharata KMG dataset for translation misalignments due to differences in chapter numbering between KMG and standard Sanskrit editions, similar to the Parva 3 Adhyaya 231 issue.
 
+## Priority 5: AI Enhancements and Labs for Completed Books
+- [ ] `AI-SCAN-COMPLETED-BOOKS` **AI Scan for Completed Books**: Run AI scans over all books that are marked as GOLD.
+- [ ] `LAB-GEN-COMPLETED-BOOKS` **Generate Labs for Completed Books**: Design and implement interactive Labs based on the concepts identified in the AI scans for the GOLD tier books. Let's make sure these are highly relevant.
+
 ## 🛑 Pending Human Decision Backlog
 - `MBH-DATA-GAP`: Blocked on gathering complete Mahabharata Parva 1 data due to unknown target source.
 - `GITA-SCH-03` to `GITA-SCH-10`: Blocked on gathering complete data for Tilak, Aurobindo, Bhave, Ramanuja, Madhva, Abhinavagupta, Savarkar, Gita Press due to unknown target source.
