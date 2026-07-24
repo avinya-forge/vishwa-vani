@@ -357,6 +357,17 @@ export const VEDIC_LABS_REGISTRY: LabAppEntry[] = [
     available: true,
     isPrototype: false,
   },
+  {
+    id: 'vishnu-purana-cosmic-explorer',
+    name: 'Cosmic Cycle Explorer',
+    description: 'Explore the cycles of creation and dissolution.',
+    path: '/labs',
+    books: ['vishnu-purana'],
+    chapters: [1, 2, 3, 4, 5, 6],
+    topics: ['creation', 'cosmos'],
+    available: true,
+    isPrototype: false,
+  },
 ];
 
 /**
