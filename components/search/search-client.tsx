@@ -13,6 +13,10 @@ interface SearchResult {
   transliteration: string
 }
 
+
+const VEDIC_LIBRARY_MAP = new Map(VEDIC_LIBRARY.map(l => [l.slug, l]));
+const CATEGORIES = ['all', ...Array.from(new Set(VEDIC_LIBRARY.map(l => l.category).filter(Boolean)))];
+
 export default function SearchClient() {
 
   const [query, setQuery] = useState('')
@@ -52,7 +56,7 @@ export default function SearchClient() {
 
     if (activeTab === 'all') return base
     return base.filter(r => {
-        const meta = VEDIC_LIBRARY.find(l => l.slug === r.textSlug)
+        const meta = VEDIC_LIBRARY_MAP.get(r.textSlug)
         return meta?.category === activeTab
     })
   }, [results, activeTab])
@@ -128,9 +132,7 @@ export default function SearchClient() {
 
       <div className="max-w-4xl mx-auto">
         <div className="flex gap-2 mb-10 overflow-x-auto pb-4 scrollbar-hide">
-          {(() => {
-            const categories = ['all', ...Array.from(new Set(VEDIC_LIBRARY.map(l => l.category).filter(Boolean)))]
-            return categories.map((tab) => (
+          {CATEGORIES.map((tab) => (
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab as 'all' | 'itihas' | 'upanishad' | 'veda' | 'purana' | 'other')}
@@ -142,14 +144,15 @@ export default function SearchClient() {
               >
                 {tab === 'all' ? 'All Scriptures' : String(tab).charAt(0).toUpperCase() + String(tab).slice(1)}
               </button>
-            ))
-          })()}
+            ))}
         </div>
 
         <div className="grid grid-cols-1 gap-6">
           {filteredResults.length > 0 ? (
             filteredResults.map((result, idx) => {
-              const meta = VEDIC_LIBRARY.find(l => l.slug === result.textSlug)
+              const meta = VEDIC_LIBRARY_MAP.get(result.textSlug)
+              const snippet = getSnippet(result.slok, query) || getSnippet(result.transliteration, query)
+
               return (
                 <Link 
                   key={idx}
@@ -168,9 +171,9 @@ export default function SearchClient() {
                     <p className="text-stone-500 dark:text-stone-400 italic text-sm leading-relaxed line-clamp-2 font-serif opacity-70 group-hover:opacity-100 transition-opacity mb-3">
                       {result.transliteration}
                     </p>
-                    {(getSnippet(result.slok, query) || getSnippet(result.transliteration, query)) && (
+                    {snippet && (
                       <p className="text-sm text-stone-600 dark:text-stone-400 bg-stone-50 dark:bg-stone-800 p-3 rounded border border-stone-100 dark:border-stone-700 italic leading-relaxed">
-                        {getSnippet(result.slok, query) || getSnippet(result.transliteration, query)}
+                        {snippet}
                       </p>
                     )}
                   </div>

@@ -1,0 +1,3 @@
+## 2024-05-24 - O(n) Map Lookup Optimization
+**Learning:** Found O(N * M) nested loops in search results filtering and rendering where `VEDIC_LIBRARY.find()` was called for every search result. With large search result sets, this causes unnecessary CPU overhead during renders. Also found expensive category array recalculations and duplicate string matching calls inside the render loop.
+**Action:** Replace `Array.find()` inside loops/maps with a static `Map` lookup (`O(1)`). Extract static arrays outside of components. Memoize/store inline function results (like `getSnippet`) to avoid duplicate execution in conditional JSX rendering.
