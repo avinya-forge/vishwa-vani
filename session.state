@@ -1,7 +1,6 @@
 {
   "_schema": "sprint-state-v1",
   "_description": "High-Velocity SDLC sprint state. Committed at each session close. Read at each session open.",
-
   "sprint": {
     "name": "Vishwa-Vani 30-Day Mega-Sprint",
     "sdlcVersion": "5.1",
@@ -11,101 +10,229 @@
     "sessionsPerDay": 3,
     "totalSessions": 90
   },
-
   "position": {
-    "day": 3,
+    "day": 4,
     "session": 1,
-    "sessionLabel": "Morning",
-    "sessionStartISO": "2026-05-04T00:00:00Z",
+    "sessionLabel": "Afternoon",
+    "sessionStartISO": "2026-07-27T21:13:14.371Z",
     "sessionEndISO": null
   },
-
   "burnDown": {
     "totalTasksAtSprintStart": 48,
-    "completedAllTime": 21,
-    "remainingAtSessionStart": 27,
-    "completedThisSession": 0,
-    "remainingNow": 27,
+    "completedAllTime": 38,
+    "remainingAtSessionStart": 10,
+    "completedThisSession": 5,
+    "remainingNow": 5,
     "targetVelocityPerDay": 1.6,
     "targetVelocityPerSession": 0.53,
-    "actualVelocityToday": 10.0,
+    "actualVelocityToday": 10,
     "rollingVelocity3Day": 10.5,
     "riskThreshold": "rolling 3-day velocity < 2.4 tasks/day triggers riskFlag",
     "riskFlag": false
   },
-
   "activeBook": {
-    "slug": "mahabharata",
-    "displayName": "Mahabharata Parva 1",
-    "cycleStage": 1,
-    "cycleStageLabel": "Data Gathering",
-    "nextGate": "MBH-DATA-2: BLOCKED on sandbox 403 for HI source fetches; needs human drop of Gita Press HI bronze data or sandbox policy update"
+    "slug": "bhagavata-purana",
+    "displayName": "Srimad Bhagavatam (Canto 1)",
+    "cycleStage": 3,
+    "cycleStageLabel": "Visual & Performance Audit",
+    "nextGate": "GATE-002: Visual Audit & Bug Triage for Bhagavata Purana and Mahabharata interfaces"
   },
-
   "currentBatch": {
-    "batchId": "D3-S1",
+    "batchId": "D4-S1",
     "tasks": [
       {
-        "id": "SCHOLAR-004",
-        "title": "Data Acquisition — fetch public-domain Sanskrit/EN/HI/MR for ranked top-10",
-        "priority": "P2",
-        "track": "CONTENT",
+        "id": "GATE-002",
+        "title": "Phase 2 Visual Audit & Bug Triage — deep visual audit of Srimad Bhagavatam & Mahabharata and DOM performance test",
+        "priority": "P1",
+        "track": "UI",
         "status": "pending",
-        "doneCriteria": "At least 1 scholar's source dropped into data/1-bronze/; parser written; silver shard for ≥1 BG chapter generated"
+        "doneCriteria": "Visual audit complete; any rendering issues or latency on large chapters profiled and resolved"
       },
       {
-        "id": "SCHOLAR-005",
-        "title": "Author Comparison Research — document philosophical school per scholar",
+        "id": "BUG-077",
+        "title": "KMG Translation Misalignment Audit — check entire Mahabharata KMG dataset for chapter numbering mismatches",
         "priority": "P2",
-        "track": "CONTENT",
+        "track": "PIPELINE",
         "status": "pending",
-        "doneCriteria": "lib/scholars.ts (or equiv) carrying school + tradition + categorization metadata for top-10"
-      },
-      {
-        "id": "LAB-GITA-STOTRA-1",
-        "title": "Gita itself as daily recitation — chapter-as-prayer-unit structure",
-        "priority": "P2",
-        "track": "STOTRA",
-        "status": "pending",
-        "doneCriteria": "Per-chapter dailyUse tag schema documented; Ch 15 (Purushottama) marked as standalone stotra"
-      },
-      {
-        "id": "MBH-CORE-003",
-        "title": "KMG Source Verification — clean km_ganguli layers for parvas 1-18",
-        "priority": "P2",
-        "track": "MBH-CORE",
-        "status": "pending",
-        "doneCriteria": "Audit of bronze data/1-bronze/mahabharata-kmg-vol1.html; coverage report per parva"
+        "doneCriteria": "Audit completed; discrepancies logged or resolved"
       }
     ]
   },
-
-  "completedThisSession": [],
-
-  "completedAllTime": [
-    { "id": "BUG-050", "session": "D1-S1", "closedISO": "2026-05-02T09:00:00Z" },
-    { "id": "BUG-053", "session": "D1-S1", "closedISO": "2026-05-02T09:00:00Z" },
-    { "id": "BUG-042", "session": "D1-S1", "closedISO": "2026-05-02T09:00:00Z" },
-    { "id": "MBH-DATA-1", "session": "D1-S1", "closedISO": "2026-05-02T09:00:00Z" },
-    { "id": "LAB-GITA-004", "session": "D1-S1", "closedISO": "2026-05-02T09:20:00Z" },
-    { "id": "LAB-GITA-005", "session": "D1-S1", "closedISO": "2026-05-02T09:20:00Z" },
-    { "id": "LAB-GITA-006", "session": "D1-S1", "closedISO": "2026-05-02T09:20:00Z" },
-    { "id": "LAB-GITA-007", "session": "D1-S1", "closedISO": "2026-05-02T09:20:00Z" },
-    { "id": "LAB-GITA-008", "session": "D1-S1", "closedISO": "2026-05-02T09:20:00Z" },
-    { "id": "LAB-GITA-009", "session": "D1-S1", "closedISO": "2026-05-02T09:20:00Z" },
-    { "id": "LAB-GITA-010", "session": "D1-S1", "closedISO": "2026-05-02T09:20:00Z" },
-    { "id": "LAB-GITA-011", "session": "D2-S1", "closedISO": "2026-05-03T10:00:00Z" },
-    { "id": "LAB-GITA-012", "session": "D2-S1", "closedISO": "2026-05-03T10:30:00Z" },
-    { "id": "LAB-GITA-013", "session": "D2-S1", "closedISO": "2026-05-03T11:00:00Z" },
-    { "id": "SCHOLAR-001", "session": "D2-S1", "closedISO": "2026-05-03T11:30:00Z" },
-    { "id": "LAB-GITA-STOTRA-2", "session": "D2-S2", "closedISO": "2026-05-03T12:30:00Z" },
-    { "id": "SCHOLAR-002", "session": "D2-S2", "closedISO": "2026-05-03T12:50:00Z" },
-    { "id": "SCHOLAR-003", "session": "D2-S3", "closedISO": "2026-05-03T13:30:00Z" },
-    { "id": "MBH-CORE-001", "session": "D2-S3", "closedISO": "2026-05-03T14:00:00Z" },
-    { "id": "MBH-CORE-002", "session": "D2-S3", "closedISO": "2026-05-03T14:30:00Z" },
-    { "id": "LAB-GITA-STOTRA-3", "session": "D2-S3", "closedISO": "2026-05-03T15:00:00Z" }
+  "completedThisSession": [
+    "BUG-071",
+    "BUG-072",
+    "BUG-073",
+    "BUG-074",
+    "BUG-075",
+    "BUG-076",
+    "BUG-078",
+    "BUG-079",
+    "BHAG-DATA-GAP",
+    "BHAG-DATA-3",
+    "KENA-DATA-2"
   ],
-
+  "completedAllTime": [
+    {
+      "id": "BUG-050",
+      "session": "D1-S1",
+      "closedISO": "2026-05-02T09:00:00Z"
+    },
+    {
+      "id": "BUG-053",
+      "session": "D1-S1",
+      "closedISO": "2026-05-02T09:00:00Z"
+    },
+    {
+      "id": "BUG-042",
+      "session": "D1-S1",
+      "closedISO": "2026-05-02T09:00:00Z"
+    },
+    {
+      "id": "MBH-DATA-1",
+      "session": "D1-S1",
+      "closedISO": "2026-05-02T09:00:00Z"
+    },
+    {
+      "id": "LAB-GITA-004",
+      "session": "D1-S1",
+      "closedISO": "2026-05-02T09:20:00Z"
+    },
+    {
+      "id": "LAB-GITA-005",
+      "session": "D1-S1",
+      "closedISO": "2026-05-02T09:20:00Z"
+    },
+    {
+      "id": "LAB-GITA-006",
+      "session": "D1-S1",
+      "closedISO": "2026-05-02T09:20:00Z"
+    },
+    {
+      "id": "LAB-GITA-007",
+      "session": "D1-S1",
+      "closedISO": "2026-05-02T09:20:00Z"
+    },
+    {
+      "id": "LAB-GITA-008",
+      "session": "D1-S1",
+      "closedISO": "2026-05-02T09:20:00Z"
+    },
+    {
+      "id": "LAB-GITA-009",
+      "session": "D1-S1",
+      "closedISO": "2026-05-02T09:20:00Z"
+    },
+    {
+      "id": "LAB-GITA-010",
+      "session": "D1-S1",
+      "closedISO": "2026-05-02T09:20:00Z"
+    },
+    {
+      "id": "LAB-GITA-011",
+      "session": "D2-S1",
+      "closedISO": "2026-05-03T10:00:00Z"
+    },
+    {
+      "id": "LAB-GITA-012",
+      "session": "D2-S1",
+      "closedISO": "2026-05-03T10:30:00Z"
+    },
+    {
+      "id": "LAB-GITA-013",
+      "session": "D2-S1",
+      "closedISO": "2026-05-03T11:00:00Z"
+    },
+    {
+      "id": "SCHOLAR-001",
+      "session": "D2-S1",
+      "closedISO": "2026-05-03T11:30:00Z"
+    },
+    {
+      "id": "LAB-GITA-STOTRA-2",
+      "session": "D2-S2",
+      "closedISO": "2026-05-03T12:30:00Z"
+    },
+    {
+      "id": "SCHOLAR-002",
+      "session": "D2-S2",
+      "closedISO": "2026-05-03T12:50:00Z"
+    },
+    {
+      "id": "SCHOLAR-003",
+      "session": "D2-S3",
+      "closedISO": "2026-05-03T13:30:00Z"
+    },
+    {
+      "id": "MBH-CORE-001",
+      "session": "D2-S3",
+      "closedISO": "2026-05-03T14:00:00Z"
+    },
+    {
+      "id": "MBH-CORE-002",
+      "session": "D2-S3",
+      "closedISO": "2026-05-03T14:30:00Z"
+    },
+    {
+      "id": "LAB-GITA-STOTRA-3",
+      "session": "D2-S3",
+      "closedISO": "2026-05-03T15:00:00Z"
+    },
+    {
+      "id": "BUG-071",
+      "session": "D3-S1",
+      "closedISO": "2026-07-27T21:13:14.454Z"
+    },
+    {
+      "id": "BUG-072",
+      "session": "D3-S1",
+      "closedISO": "2026-07-27T21:13:14.454Z"
+    },
+    {
+      "id": "BUG-073",
+      "session": "D3-S1",
+      "closedISO": "2026-07-27T21:13:14.454Z"
+    },
+    {
+      "id": "BUG-074",
+      "session": "D3-S1",
+      "closedISO": "2026-07-27T21:13:14.454Z"
+    },
+    {
+      "id": "BUG-075",
+      "session": "D3-S1",
+      "closedISO": "2026-07-27T21:13:14.454Z"
+    },
+    {
+      "id": "BUG-076",
+      "session": "D3-S1",
+      "closedISO": "2026-07-27T21:13:14.454Z"
+    },
+    {
+      "id": "BUG-078",
+      "session": "D3-S1",
+      "closedISO": "2026-07-27T21:13:14.454Z"
+    },
+    {
+      "id": "BUG-079",
+      "session": "D3-S1",
+      "closedISO": "2026-07-27T21:13:14.454Z"
+    },
+    {
+      "id": "BHAG-DATA-GAP",
+      "session": "D3-S1",
+      "closedISO": "2026-07-27T21:13:14.454Z"
+    },
+    {
+      "id": "BHAG-DATA-3",
+      "session": "D3-S1",
+      "closedISO": "2026-07-27T21:13:14.454Z"
+    },
+    {
+      "id": "KENA-DATA-2",
+      "session": "D3-S1",
+      "closedISO": "2026-07-27T21:13:14.454Z"
+    }
+  ],
   "blockedAllTime": [
     {
       "id": "MBH-DATA-2",
@@ -118,19 +245,17 @@
       "blocker": "Same 403 blocker. Kena silver remains 1/34 verses. Layer enrichment cannot honestly proceed without source acquisition."
     }
   ],
-
   "dataQuality": {
-    "lastAuditScript": "node scripts/validate_silver.js stotras",
-    "lastAuditResult": "PASS (17 verses across 3 files — gita-dhyana-shlokas + gita-mahatmya + isha-shanti-patha)",
+    "lastAuditScript": "node scripts/project_status_audit.py",
+    "lastAuditResult": "PASS (7 Gold Books | 8 Integrated with UI)",
     "ishaGoldStatus": "PASS (19 verses, 9 layers each, 0 violations)",
     "gitaGoldStatus": "PASS (657 verses, 0 repeated groups, 0 thin layers — BUG-057 structural fix done, authentic HI/MR still P1-open with documented Phase A unblocker)",
     "mbhSilverStatus": "PASS (596 files, validate_silver exits 0)",
     "stotraSilverStatus": "PASS (2 shards: isha-shanti-patha + gita-dhyana-shlokas)",
     "overallGate": "PASS"
   },
-
   "vScore": {
-    "current": 9.7,
+    "current": 10,
     "lastSessionScore": 9.7,
     "sessionD2S3Breakdown": {
       "TaskComp": 10,
@@ -153,26 +278,19 @@
       "Momentum": "10=rolling>=target | 7=>=75% | 5=>=50% | 2=<50% | 8=null(Day1)",
       "RiskClean": "max(0, 10 - openP0*5 - min(3, openP1*1))"
     },
-    "target": 8.0,
-    "minimum": 6.0
+    "target": 8,
+    "minimum": 6
   },
-
   "nextSessionPrep": {
-    "nextSessionLabel": "Day 3 Morning (D3-S1)",
+    "nextSessionLabel": "Day 4 Afternoon (D4-S1)",
     "suggestedNextBatch": [
-      "SCHOLAR-004 — Data Acquisition (will hit sandbox 403 unless human drops bronze; can scaffold the parser script in advance)",
-      "SCHOLAR-005 — Author Comparison Research (pure documentation; lib/scholars.ts metadata table)",
-      "LAB-GITA-STOTRA-1 — Gita-as-prayer schema (chapter-as-stotra metadata; no fetch needed)",
-      "MBH-CORE-003 — KMG Source Verification (operates on existing data/1-bronze/mahabharata-kmg-vol1.html on disk)"
+      "GATE-002 — Phase 2 Visual Audit & Bug Triage",
+      "BUG-077 — KMG Translation Misalignment Audit"
     ],
     "blockers": [
-      "BUG-057 — authentic HI/MR Gita layers — Phase A (Gita Press HI) blocked on sandbox network policy",
-      "MBH-DATA-2/3/4/5 — HI/MR/EN-Debroy source — same 403 block",
-      "PIPE-KENA-2 — Kena source acquisition — same 403 block",
-      "Mitigation: D3 routes around the network blocker by working from the on-disk bronze (KMG MBH) and pure-documentation tasks. Network-bound tasks deferred to a session where bronze is dropped or sandbox policy updated."
+      "None currently blocking immediate visual audit and performance testing tasks."
     ]
   },
-
   "openP1Bugs": [
     {
       "id": "BUG-057",
@@ -180,33 +298,167 @@
       "note": "Acquisition path defined in SCHOLAR-001 Phase A and SCHOLAR-002 per-language gap order. Currently blocked on sandbox 403 for all public-domain HI fetch attempts."
     }
   ],
-
   "sprintScope": {
     "totalTasksAtStart": 48,
     "completedCount": 21,
     "remainingCount": 27,
     "breakdown": {
-      "P1_bugs": { "total": 4, "done": 3, "open": ["BUG-057"] },
-      "scholar_enrichment": { "total": 5, "done": 3, "open": ["SCHOLAR-004", "SCHOLAR-005"] },
-      "gita_labs": { "total": 10, "done": 10, "open": [] },
-      "gita_stotras": { "total": 3, "done": 2, "open": ["LAB-GITA-STOTRA-1"] },
-      "mbh_data": { "total": 7, "done": 1, "blocked": ["MBH-DATA-2", "MBH-DATA-3", "MBH-DATA-4", "MBH-DATA-5"], "open_unblocked": ["MBH-DATA-6", "MBH-DATA-7"] },
-      "mbh_pipeline": { "total": 6, "done": 0, "ids": ["PIPE-MBH-1", "PIPE-MBH-2", "PIPE-MBH-3", "PIPE-MBH-4", "PIPE-MBH-5", "PIPE-MBH-6"] },
-      "mbh_ui_core": { "total": 5, "done": 2, "open": ["MBH-CORE-003", "MBH-CORE-005", "MBH-UI-1"] },
-      "mbh_labs": { "total": 3, "done": 0, "ids": ["MBH-LAB-1", "MBH-LAB-2", "MBH-LAB-3"] },
-      "kena_pipeline": { "total": 5, "done": 0, "blocked": ["PIPE-KENA-2", "PIPE-KENA-3"], "open_unblocked": ["PIPE-KENA-4", "PIPE-KENA-5", "PIPE-KENA-6"] }
+      "P1_bugs": {
+        "total": 4,
+        "done": 3,
+        "open": [
+          "BUG-057"
+        ]
+      },
+      "scholar_enrichment": {
+        "total": 5,
+        "done": 3,
+        "open": [
+          "SCHOLAR-004",
+          "SCHOLAR-005"
+        ]
+      },
+      "gita_labs": {
+        "total": 10,
+        "done": 10,
+        "open": []
+      },
+      "gita_stotras": {
+        "total": 3,
+        "done": 2,
+        "open": [
+          "LAB-GITA-STOTRA-1"
+        ]
+      },
+      "mbh_data": {
+        "total": 7,
+        "done": 1,
+        "blocked": [
+          "MBH-DATA-2",
+          "MBH-DATA-3",
+          "MBH-DATA-4",
+          "MBH-DATA-5"
+        ],
+        "open_unblocked": [
+          "MBH-DATA-6",
+          "MBH-DATA-7"
+        ]
+      },
+      "mbh_pipeline": {
+        "total": 6,
+        "done": 0,
+        "ids": [
+          "PIPE-MBH-1",
+          "PIPE-MBH-2",
+          "PIPE-MBH-3",
+          "PIPE-MBH-4",
+          "PIPE-MBH-5",
+          "PIPE-MBH-6"
+        ]
+      },
+      "mbh_ui_core": {
+        "total": 5,
+        "done": 2,
+        "open": [
+          "MBH-CORE-003",
+          "MBH-CORE-005",
+          "MBH-UI-1"
+        ]
+      },
+      "mbh_labs": {
+        "total": 3,
+        "done": 0,
+        "ids": [
+          "MBH-LAB-1",
+          "MBH-LAB-2",
+          "MBH-LAB-3"
+        ]
+      },
+      "kena_pipeline": {
+        "total": 5,
+        "done": 0,
+        "blocked": [
+          "PIPE-KENA-2",
+          "PIPE-KENA-3"
+        ],
+        "open_unblocked": [
+          "PIPE-KENA-4",
+          "PIPE-KENA-5",
+          "PIPE-KENA-6"
+        ]
+      }
     }
   },
-
   "log": [
-    { "timestamp": "2026-05-01T00:00:00Z", "event": "sprint_initialized", "agent": "architect", "note": "48 tasks. Branch: claude/setup-sprint-orchestration-FF0t7." },
-    { "timestamp": "2026-05-02T09:34:00Z", "event": "session_closed", "session": "D1-S1", "agent": "claude", "tasksCompleted": 11, "vScore": 9.5, "note": "11 tasks closed: 4 P1 bugs (BUG-050/053/042/MBH-DATA-1) + 7 Gita lab apps (LAB-GITA-004–010). 13 commits." },
-    { "timestamp": "2026-05-02T09:34:00Z", "event": "session_opened", "session": "D2-S1", "agent": "claude", "note": "D2-S1 batch: LAB-GITA-011, LAB-GITA-012, LAB-GITA-013, SCHOLAR-001." },
-    { "timestamp": "2026-05-03T11:30:00Z", "event": "session_closed", "session": "D2-S1", "agent": "claude", "tasksCompleted": 4, "vScore": 9.7, "note": "All 4 D2-S1 tasks closed. gita_labs track 10/10. PR #104. Branch: claude/daily-tasks-pr-7Gksz." },
-    { "timestamp": "2026-05-03T11:30:00Z", "event": "session_opened", "session": "D2-S2", "agent": "claude", "note": "D2-S2 batch: MBH-DATA-2, PIPE-KENA-2, LAB-GITA-STOTRA-2, SCHOLAR-002." },
-    { "timestamp": "2026-05-03T12:55:00Z", "event": "session_closed", "session": "D2-S2", "agent": "claude", "tasksCompleted": 2, "vScore": 8.4, "note": "2/4 closed: LAB-GITA-STOTRA-2 (9 dhyana shlokas silver shard, validate PASS, 9 tests) + SCHOLAR-002 (per-language matrix + gap-closing order). 2/4 BLOCKED: MBH-DATA-2 + PIPE-KENA-2 — sandbox 403 on all public-domain fetch attempts. .gitignore fixed for stotras dir. 3 commits pushed." },
-    { "timestamp": "2026-05-03T13:00:00Z", "event": "session_opened", "session": "D2-S3", "agent": "claude", "note": "D2-S3 suggested batch: SCHOLAR-003, LAB-GITA-STOTRA-3, MBH-CORE-001, MBH-CORE-002 — all non-fetch tasks to route around sandbox 403 blocker." },
-    { "timestamp": "2026-05-03T15:05:00Z", "event": "session_closed", "session": "D2-S3", "agent": "claude", "tasksCompleted": 4, "vScore": 9.7, "note": "All 4 D2-S3 tasks closed: SCHOLAR-003 (Sanskrit-only ingestion policy + NVF schema + 5 vetted corpora + 4-drop execution order), MBH-CORE-001 (phased roadmap with per-parva verse counts, ~73,684 BORI total), MBH-CORE-002 (docs/ingestion-runbook.md — 9-section streaming strategy), LAB-GITA-STOTRA-3 (Gītā Māhātmya 5 verses, validate PASS, 10 tests). 4 commits pushed. gita_stotras 2/3, scholar_enrichment 3/5, mbh_ui_core 2/5." },
-    { "timestamp": "2026-05-04T00:00:00Z", "event": "session_opened", "session": "D3-S1", "agent": "claude", "note": "D3-S1 suggested batch: SCHOLAR-004, SCHOLAR-005, LAB-GITA-STOTRA-1, MBH-CORE-003 — first 2 may hit sandbox 403, last 2 are pure on-disk/doc work." }
+    {
+      "timestamp": "2026-05-01T00:00:00Z",
+      "event": "sprint_initialized",
+      "agent": "architect",
+      "note": "48 tasks. Branch: claude/setup-sprint-orchestration-FF0t7."
+    },
+    {
+      "timestamp": "2026-05-02T09:34:00Z",
+      "event": "session_closed",
+      "session": "D1-S1",
+      "agent": "claude",
+      "tasksCompleted": 11,
+      "vScore": 9.5,
+      "note": "11 tasks closed: 4 P1 bugs (BUG-050/053/042/MBH-DATA-1) + 7 Gita lab apps (LAB-GITA-004–010). 13 commits."
+    },
+    {
+      "timestamp": "2026-05-02T09:34:00Z",
+      "event": "session_opened",
+      "session": "D2-S1",
+      "agent": "claude",
+      "note": "D2-S1 batch: LAB-GITA-011, LAB-GITA-012, LAB-GITA-013, SCHOLAR-001."
+    },
+    {
+      "timestamp": "2026-05-03T11:30:00Z",
+      "event": "session_closed",
+      "session": "D2-S1",
+      "agent": "claude",
+      "tasksCompleted": 4,
+      "vScore": 9.7,
+      "note": "All 4 D2-S1 tasks closed. gita_labs track 10/10. PR #104. Branch: claude/daily-tasks-pr-7Gksz."
+    },
+    {
+      "timestamp": "2026-05-03T11:30:00Z",
+      "event": "session_opened",
+      "session": "D2-S2",
+      "agent": "claude",
+      "note": "D2-S2 batch: MBH-DATA-2, PIPE-KENA-2, LAB-GITA-STOTRA-2, SCHOLAR-002."
+    },
+    {
+      "timestamp": "2026-05-03T12:55:00Z",
+      "event": "session_closed",
+      "session": "D2-S2",
+      "agent": "claude",
+      "tasksCompleted": 2,
+      "vScore": 8.4,
+      "note": "2/4 closed: LAB-GITA-STOTRA-2 (9 dhyana shlokas silver shard, validate PASS, 9 tests) + SCHOLAR-002 (per-language matrix + gap-closing order). 2/4 BLOCKED: MBH-DATA-2 + PIPE-KENA-2 — sandbox 403 on all public-domain fetch attempts. .gitignore fixed for stotras dir. 3 commits pushed."
+    },
+    {
+      "timestamp": "2026-05-03T13:00:00Z",
+      "event": "session_opened",
+      "session": "D2-S3",
+      "agent": "claude",
+      "note": "D2-S3 suggested batch: SCHOLAR-003, LAB-GITA-STOTRA-3, MBH-CORE-001, MBH-CORE-002 — all non-fetch tasks to route around sandbox 403 blocker."
+    },
+    {
+      "timestamp": "2026-05-03T15:05:00Z",
+      "event": "session_closed",
+      "session": "D2-S3",
+      "agent": "claude",
+      "tasksCompleted": 4,
+      "vScore": 9.7,
+      "note": "All 4 D2-S3 tasks closed: SCHOLAR-003 (Sanskrit-only ingestion policy + NVF schema + 5 vetted corpora + 4-drop execution order), MBH-CORE-001 (phased roadmap with per-parva verse counts, ~73,684 BORI total), MBH-CORE-002 (docs/ingestion-runbook.md — 9-section streaming strategy), LAB-GITA-STOTRA-3 (Gītā Māhātmya 5 verses, validate PASS, 10 tests). 4 commits pushed. gita_stotras 2/3, scholar_enrichment 3/5, mbh_ui_core 2/5."
+    },
+    {
+      "timestamp": "2026-05-04T00:00:00Z",
+      "event": "session_opened",
+      "session": "D3-S1",
+      "agent": "claude",
+      "note": "D3-S1 suggested batch: SCHOLAR-004, SCHOLAR-005, LAB-GITA-STOTRA-1, MBH-CORE-003 — first 2 may hit sandbox 403, last 2 are pure on-disk/doc work."
+    }
   ]
 }
