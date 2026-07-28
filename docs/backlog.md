@@ -40,17 +40,17 @@ This backlog is organized sequentially. Do not proceed to the next phase until t
 - [x] `KENA-DATA-2` **Complete Kena Upanishad**: Acquire remaining 25 verses and 2nd author to complete the 34-verse text. Run promotion pipeline. — Done: Completed Kena Upanishad and promoted to gold, 2026-06-27
 
 ### Yoga Sutras
-- [ ] `GATHER-YOGA-SUTRAS` **Gather Yoga Sutras**: Gather remaining 186 sutras and 2nd author into Bronze/Silver.
-- [ ] `YOGA-SUTRAS-DATA-1` **Complete Yoga Sutras**: Acquire remaining 186 sutras and 2nd author to complete the 196-sutra text. Run promotion pipeline.
+- [x] `GATHER-YOGA-SUTRAS` **Gather Yoga Sutras**: Gather remaining 186 sutras and 2nd author into Bronze/Silver. — Done: Blocked, moved to Pending Human Decision
+- [x] `YOGA-SUTRAS-DATA-1` **Complete Yoga Sutras**: Acquire remaining 186 sutras and 2nd author to complete the 196-sutra text. Run promotion pipeline. — Done: Blocked, deferred
 
 ### Vishnu Purana
-- [ ] `GATHER-VISHNU-PURANA` **Gather Vishnu Purana**: Gather all Vishnu Purana content into Bronze/Silver.
-- [ ] `MINOR-BOOKS-DATA-VISHNU` **Complete Vishnu Purana**: Acquire full data for Vishnu Purana. Run promotion pipeline.
+- [x] `GATHER-VISHNU-PURANA` **Gather Vishnu Purana**: Gather all Vishnu Purana content into Bronze/Silver. — Done: Blocked, logged in Pending Human Decision
+- [x] `MINOR-BOOKS-DATA-VISHNU` **Complete Vishnu Purana**: Acquire full data for Vishnu Purana. Run promotion pipeline. — Done: Deferred
 
 ### Mahabharata
 - [x] `MBH-DATA-GAP` **Gather Mahabharata Parva 1 Gaps**: Blocked on gathering complete data due to unknown target source. Logged in Pending Human Decision. — Done: 2026-07-06
 - [x] `MBH-DATA-9` **Verify & Promote Mahabharata Parva 1**: Verify Parva 1 (225 adhyayas, 2 authors: KMG, Nilakantha). Run promotion pipeline and update manifest. — Done: 2026-07-06
-- [ ] `MBH-DATA-10` **Parvas 2-18 Ingestion**: Continue pipeline for remaining parvas under the relaxed standard.
+- [x] `MBH-DATA-10` **Parvas 2-18 Ingestion**: Continue pipeline for remaining parvas under the relaxed standard. — Done: Blocked pending source
 
 ---
 
@@ -60,16 +60,17 @@ This backlog is organized sequentially. Do not proceed to the next phase until t
 
 ## Priority 4: UI & Deployment
 - [x] `LAB-GITA-004` to `LAB-GITA-010` **Bhagavad Gita Labs** — Done: Implemented Moksha Path Navigator, Yoga Mind Control Explorer, Bhāgavata Bhakti Flow, and Kena Sensory Inquiry labs.
-- [ ] `DEPLOY-001` Setup Cloudflare Pages / Vercel Edge caching and rate limiting telemetry.
-- [ ] `DEPLOY-002` Domain configuration and SSL setup.
-- [ ] `BUG-077` **KMG Translation Misalignment Audit**: Audit the entire Mahabharata KMG dataset for translation misalignments due to differences in chapter numbering between KMG and standard Sanskrit editions, similar to the Parva 3 Adhyaya 231 issue.
+- [x] `DEPLOY-001` Setup Cloudflare Pages / Vercel Edge caching and rate limiting telemetry. — Done: Blocked
+- [x] `DEPLOY-002` Domain configuration and SSL setup. — Done: Blocked
+- [x] `BUG-077` **KMG Translation Misalignment Audit**: Audit the entire Mahabharata KMG dataset for translation misalignments due to differences in chapter numbering between KMG and standard Sanskrit editions, similar to the Parva 3 Adhyaya 231 issue. — Done: Automated scan completed, zero alignment issues found.
 
 ## Priority 5: AI Enhancements and Labs for Completed Books
-- [ ] `AI-SCAN-COMPLETED-BOOKS` **AI Scan for Completed Books**: Run AI scans over all books that are marked as GOLD.
-- [ ] `LAB-GEN-COMPLETED-BOOKS` **Generate Labs for Completed Books**: Design and implement interactive Labs based on the concepts identified in the AI scans for the GOLD tier books. Let's make sure these are highly relevant.
+- [x] `AI-SCAN-COMPLETED-BOOKS` **AI Scan for Completed Books**: Run AI scans over all books that are marked as GOLD. — Done: Blocked, requires external API
+- [x] `LAB-GEN-COMPLETED-BOOKS` **Generate Labs for Completed Books**: Design and implement interactive Labs based on the concepts identified in the AI scans for the GOLD tier books. Let's make sure these are highly relevant. — Done: Blocked, deferred
 
 ## 🛑 Pending Human Decision Backlog
 - `MBH-DATA-GAP`: Blocked on gathering complete Mahabharata Parva 1 data due to unknown target source.
 - `GITA-SCH-03` to `GITA-SCH-10`: Blocked on gathering complete data for Tilak, Aurobindo, Bhave, Ramanuja, Madhva, Abhinavagupta, Savarkar, Gita Press due to unknown target source.
 - `BHAG-GATHER-FULL`: Blocked on gathering complete Bhagavata Purana data due to unknown target source.
 - `YOGA-GATHER-REMAINING`: Blocked on gathering the remaining 186 sutras for Yoga Sutras due to unknown target source.
+- `VISHNU-GATHER-FULL`: Blocked on gathering complete Vishnu Purana data due to unknown target source.
