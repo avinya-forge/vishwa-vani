@@ -1,0 +1,1924 @@
+Starting KMG Translation Misalignment Audit on Silver Data (Mahabharata)...
+[MISALIGNMENT] File: parva-1/adhyaya-1.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 209 times: "(Aranyaka Parva)
+
+
+      Om! Having bowed do..."
+[MISALIGNMENT] File: parva-1/adhyaya-10.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 8 times: "(Aranyaka Parva)
+
+
+      Om! Having bowed do..."
+[MISALIGNMENT] File: parva-1/adhyaya-100.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 30 times: "“Lomasa said, ‘When Ilwala learnt that those kings..."
+[MISALIGNMENT] File: parva-1/adhyaya-101.json
+  Found 2 unique translations repeated across multiple verses.
+    - Repeated 15 times: "“Lomasa said, ‘O most righteous of kings! When he ..."
+    - Repeated 13 times: "“Lomasa said, ‘That same king, of a powerful bow, ..."
+[MISALIGNMENT] File: parva-1/adhyaya-102.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 23 times: "“Lomasa said, ‘The blessed God having heard what B..."
+[MISALIGNMENT] File: parva-1/adhyaya-103.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 17 times: "“Lomasa said, ‘The blessed God having heard what B..."
+[MISALIGNMENT] File: parva-1/adhyaya-104.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 21 times: "“Lomasa said, ‘The blessed God having heard what B..."
+[MISALIGNMENT] File: parva-1/adhyaya-105.json
+  Found 2 unique translations repeated across multiple verses.
+    - Repeated 3 times: "‘Rishyasringa said, ‘Here came to-day a religious ..."
+    - Repeated 24 times: "“Vibhandaka said, ‘Those are, O son! Rakshasas. Th..."
+[MISALIGNMENT] File: parva-1/adhyaya-106.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 14 times: "(Tirtha-yatra Parva continued)
+
+
+      “Vais..."
+[MISALIGNMENT] File: parva-1/adhyaya-107.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 37 times: "(Tirtha-yatra Parva continued)
+
+
+      “Vais..."
+[MISALIGNMENT] File: parva-1/adhyaya-108.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 18 times: "“Rama said, ‘The blame is mine, O father, that lik..."
+[MISALIGNMENT] File: parva-1/adhyaya-109.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 31 times: "“Rama said, ‘The blame is mine, O father, that lik..."
+[MISALIGNMENT] File: parva-1/adhyaya-11.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 17 times: "(Aranyaka Parva)
+
+
+      Om! Having bowed do..."
+[MISALIGNMENT] File: parva-1/adhyaya-110.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 45 times: "“Rama said, ‘The blame is mine, O father, that lik..."
+[MISALIGNMENT] File: parva-1/adhyaya-111.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 36 times: "“Rama said, ‘The blame is mine, O father, that lik..."
+[MISALIGNMENT] File: parva-1/adhyaya-112.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 34 times: "“Rama said, ‘The blame is mine, O father, that lik..."
+[MISALIGNMENT] File: parva-1/adhyaya-113.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 43 times: "“Rama said, ‘The blame is mine, O father, that lik..."
+[MISALIGNMENT] File: parva-1/adhyaya-114.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 66 times: "“Rama said, ‘The blame is mine, O father, that lik..."
+[MISALIGNMENT] File: parva-1/adhyaya-115.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 28 times: "“Rama said, ‘The blame is mine, O father, that lik..."
+[MISALIGNMENT] File: parva-1/adhyaya-116.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 31 times: "“Rama said, ‘The blame is mine, O father, that lik..."
+[MISALIGNMENT] File: parva-1/adhyaya-117.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 33 times: "“Rama said, ‘The blame is mine, O father, that lik..."
+[MISALIGNMENT] File: parva-1/adhyaya-118.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 30 times: "“Rama said, ‘The blame is mine, O father, that lik..."
+[MISALIGNMENT] File: parva-1/adhyaya-119.json
+  Found 2 unique translations repeated across multiple verses.
+    - Repeated 38 times: "“Somaka said, ‘O Brahmana! whatever is to be perfo..."
+    - Repeated 5 times: "“Lomasa said, ‘Here, O king! The lord of born bein..."
+[MISALIGNMENT] File: parva-1/adhyaya-12.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 5 times: "(Aranyaka Parva)
+
+
+      Om! Having bowed do..."
+[MISALIGNMENT] File: parva-1/adhyaya-120.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 21 times: "“Lomasa said, ‘O son of Bharata’s race! If mortals..."
+[MISALIGNMENT] File: parva-1/adhyaya-121.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 23 times: "“Lomasa said, ‘O son of Bharata’s race! If mortals..."
+[MISALIGNMENT] File: parva-1/adhyaya-122.json
+  Found 3 unique translations repeated across multiple verses.
+    - Repeated 11 times: "“Lomasa said, ‘See here, O lord of men, the sacred..."
+    - Repeated 29 times: "“Ashtavakra said, ‘When no Brahmana is met with on..."
+    - Repeated 7 times: "“Ashtavakra said, ‘O king, O leader of fierce legi..."
+[MISALIGNMENT] File: parva-1/adhyaya-123.json
+  Found 2 unique translations repeated across multiple verses.
+    - Repeated 57 times: "“Ashtavakra said, ‘O king, O leader of fierce legi..."
+    - Repeated 21 times: "“Lomasa said, ‘Here, O king, is visible the river ..."
+[MISALIGNMENT] File: parva-1/adhyaya-124.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 33 times: "“Lomasa said, ‘One day in the month of Chaitra, wh..."
+[MISALIGNMENT] File: parva-1/adhyaya-125.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 32 times: "“Lomasa said, ‘One day in the month of Chaitra, wh..."
+[MISALIGNMENT] File: parva-1/adhyaya-126.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 39 times: "“Lomasa said, ‘One day in the month of Chaitra, wh..."
+[MISALIGNMENT] File: parva-1/adhyaya-127.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 24 times: "“Lomasa said, ‘One day in the month of Chaitra, wh..."
+[MISALIGNMENT] File: parva-1/adhyaya-128.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 18 times: "“Lomasa said, ‘One day in the month of Chaitra, wh..."
+[MISALIGNMENT] File: parva-1/adhyaya-129.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 18 times: "Vaisampayana said, “When the high-souled sons of P..."
+[MISALIGNMENT] File: parva-1/adhyaya-13.json
+  Found 3 unique translations repeated across multiple verses.
+    - Repeated 28 times: "“Vasudeva said, O lord of earth, if I had been pre..."
+    - Repeated 6 times: "“Yudhishthira said, ‘O Krishna, why wert thou abse..."
+    - Repeated 11 times: "“Yudhishthira said, ‘O illustrious Vasudeva of mig..."
+[MISALIGNMENT] File: parva-1/adhyaya-130.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 20 times: "Vaisampayana said, “When the high-souled sons of P..."
+[MISALIGNMENT] File: parva-1/adhyaya-131.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 18 times: "Vaisampayana said, “When the high-souled sons of P..."
+[MISALIGNMENT] File: parva-1/adhyaya-132.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 19 times: "Vaisampayana said, “When the high-souled sons of P..."
+[MISALIGNMENT] File: parva-1/adhyaya-133.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 30 times: "Vaisampayana said, “When the high-souled sons of P..."
+[MISALIGNMENT] File: parva-1/adhyaya-134.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 28 times: "Vaisampayana said, “When the high-souled sons of P..."
+[MISALIGNMENT] File: parva-1/adhyaya-135.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 21 times: "Vaisampayana said, “When the high-souled sons of P..."
+[MISALIGNMENT] File: parva-1/adhyaya-136.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 19 times: "Vaisampayana said, “When the high-souled sons of P..."
+[MISALIGNMENT] File: parva-1/adhyaya-137.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 23 times: "Vaisampayana said, “Having reached that spot, Bhim..."
+[MISALIGNMENT] File: parva-1/adhyaya-138.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 31 times: "Vaisampayana said, “Having reached that spot, Bhim..."
+[MISALIGNMENT] File: parva-1/adhyaya-139.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 32 times: "Vaisampayana said, “Having reached that spot, Bhim..."
+[MISALIGNMENT] File: parva-1/adhyaya-14.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 23 times: "“Vasudeva continued, ‘O king of kings, Salwa, the ..."
+[MISALIGNMENT] File: parva-1/adhyaya-140.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 21 times: "Vaisampayana said, “Once upon a time Yudhishthira,..."
+[MISALIGNMENT] File: parva-1/adhyaya-141.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 24 times: "Vaisampayana said, “Once upon a time Yudhishthira,..."
+[MISALIGNMENT] File: parva-1/adhyaya-142.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 34 times: "Vaisampayana continued, “Thus dwelling with the Br..."
+[MISALIGNMENT] File: parva-1/adhyaya-143.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 38 times: "Vaisampayana continued, “Thus dwelling with the Br..."
+[MISALIGNMENT] File: parva-1/adhyaya-144.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 20 times: "Vaisampayana continued, “Thus dwelling with the Br..."
+[MISALIGNMENT] File: parva-1/adhyaya-145.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 40 times: "Vaisampayana continued, “Thus dwelling with the Br..."
+[MISALIGNMENT] File: parva-1/adhyaya-146.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 36 times: "Vaisampayana continued, “Thus dwelling with the Br..."
+[MISALIGNMENT] File: parva-1/adhyaya-147.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 24 times: "Vaisampayana continued, “Thus dwelling with the Br..."
+[MISALIGNMENT] File: parva-1/adhyaya-148.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 16 times: "Vaisampayana continued, “Thus dwelling with the Br..."
+[MISALIGNMENT] File: parva-1/adhyaya-149.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 20 times: "Vaisampayana continued, “Thus dwelling with the Br..."
+[MISALIGNMENT] File: parva-1/adhyaya-15.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 13 times: "“Vasudeva continued, ‘O king of kings, Salwa, the ..."
+[MISALIGNMENT] File: parva-1/adhyaya-150.json
+  Found 2 unique translations repeated across multiple verses.
+    - Repeated 25 times: "Vaisampayana continued, “And it came to pass that ..."
+    - Repeated 2 times: "Vaisampayana said, “Then when the night had been s..."
+[MISALIGNMENT] File: parva-1/adhyaya-151.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 24 times: "Vaisampayana said, “Then when the night had been s..."
+[MISALIGNMENT] File: parva-1/adhyaya-152.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 19 times: "Vaisampayana said, “Then when the night had been s..."
+[MISALIGNMENT] File: parva-1/adhyaya-153.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 12 times: "Vaisampayana said, “Then when the night had been s..."
+[MISALIGNMENT] File: parva-1/adhyaya-154.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 25 times: "Vaisampayana said, “Then when the night had been s..."
+[MISALIGNMENT] File: parva-1/adhyaya-155.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 52 times: "Vaisampayana said, “Then when the night had been s..."
+[MISALIGNMENT] File: parva-1/adhyaya-156.json
+  Found 2 unique translations repeated across multiple verses.
+    - Repeated 9 times: "“Arjuna said, ‘Then with rocks of the proportions ..."
+    - Repeated 2 times: "“Arjuna continued, ‘Remaining invisible the Daitya..."
+[MISALIGNMENT] File: parva-1/adhyaya-157.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 16 times: "“Arjuna continued, ‘Remaining invisible the Daitya..."
+[MISALIGNMENT] File: parva-1/adhyaya-158.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 55 times: "“Arjuna continued, ‘Then while returning, I happen..."
+[MISALIGNMENT] File: parva-1/adhyaya-159.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 22 times: "“Arjuna continued, ‘Then while returning, I happen..."
+[MISALIGNMENT] File: parva-1/adhyaya-16.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 40 times: "“Vasudeva continued, ‘O king of kings, Salwa, the ..."
+[MISALIGNMENT] File: parva-1/adhyaya-160.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 41 times: "“Arjuna continued, ‘Then firmly confident, the sov..."
+[MISALIGNMENT] File: parva-1/adhyaya-161.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 20 times: "“Arjuna continued, ‘Then firmly confident, the sov..."
+[MISALIGNMENT] File: parva-1/adhyaya-162.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 18 times: "Janamejaya said, “When that prime among heroes, ha..."
+[MISALIGNMENT] File: parva-1/adhyaya-163.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 23 times: "Janamejaya said, “When that prime among heroes, ha..."
+[MISALIGNMENT] File: parva-1/adhyaya-164.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 14 times: "Vaisampayana said, “When they had left their happy..."
+[MISALIGNMENT] File: parva-1/adhyaya-165.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 44 times: "Vaisampayana said, “When they had left their happy..."
+[MISALIGNMENT] File: parva-1/adhyaya-166.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 45 times: "Vaisampayana said, “When they had left their happy..."
+[MISALIGNMENT] File: parva-1/adhyaya-167.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 21 times: "Vaisampayana continued, “Yudhishthira, finding his..."
+[MISALIGNMENT] File: parva-1/adhyaya-168.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 25 times: "Vaisampayana continued, “Yudhishthira, finding his..."
+[MISALIGNMENT] File: parva-1/adhyaya-169.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 25 times: "“Yudhishthira said, ‘In this world, you are so lea..."
+[MISALIGNMENT] File: parva-1/adhyaya-17.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 30 times: "“Vasudeva continued, ‘O king of kings, Salwa, the ..."
+[MISALIGNMENT] File: parva-1/adhyaya-170.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 21 times: "“Yudhishthira said, ‘In this world, you are so lea..."
+[MISALIGNMENT] File: parva-1/adhyaya-171.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 23 times: "“Yudhishthira said, ‘In this world, you are so lea..."
+[MISALIGNMENT] File: parva-1/adhyaya-172.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 17 times: "“Yudhishthira said, ‘In this world, you are so lea..."
+[MISALIGNMENT] File: parva-1/adhyaya-173.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 24 times: "“Yudhishthira said, ‘In this world, you are so lea..."
+[MISALIGNMENT] File: parva-1/adhyaya-174.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 12 times: "“Yudhishthira said, ‘In this world, you are so lea..."
+[MISALIGNMENT] File: parva-1/adhyaya-175.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 20 times: "“Yudhishthira said, ‘In this world, you are so lea..."
+[MISALIGNMENT] File: parva-1/adhyaya-176.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 36 times: "“Yudhishthira said, ‘In this world, you are so lea..."
+[MISALIGNMENT] File: parva-1/adhyaya-177.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 22 times: "“Yudhishthira said, ‘In this world, you are so lea..."
+[MISALIGNMENT] File: parva-1/adhyaya-178.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 18 times: "“Yudhishthira said, ‘In this world, you are so lea..."
+[MISALIGNMENT] File: parva-1/adhyaya-179.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 23 times: "“Yudhishthira said, ‘In this world, you are so lea..."
+[MISALIGNMENT] File: parva-1/adhyaya-18.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 11 times: "“Vasudeva continued, ‘O king of kings, Salwa, the ..."
+[MISALIGNMENT] File: parva-1/adhyaya-180.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 22 times: "“Yudhishthira said, ‘In this world, you are so lea..."
+[MISALIGNMENT] File: parva-1/adhyaya-181.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 40 times: "“Yudhishthira said, ‘In this world, you are so lea..."
+[MISALIGNMENT] File: parva-1/adhyaya-182.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 15 times: "Vaisampayana said, “Then the sons of Pandu again a..."
+[MISALIGNMENT] File: parva-1/adhyaya-183.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 9 times: "Vaisampayana said, “Then the sons of Pandu again a..."
+[MISALIGNMENT] File: parva-1/adhyaya-184.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 18 times: "Markandeya continued, “Listen now to another story..."
+[MISALIGNMENT] File: parva-1/adhyaya-185.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 28 times: "Markandeya continued, “Listen now to another story..."
+[MISALIGNMENT] File: parva-1/adhyaya-186.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 15 times: "Markandeya continued, “Listen now to another story..."
+[MISALIGNMENT] File: parva-1/adhyaya-187.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 32 times: "Markandeya continued, “Listen now to another story..."
+[MISALIGNMENT] File: parva-1/adhyaya-188.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 22 times: "Markandeya continued, “Listen now to another story..."
+[MISALIGNMENT] File: parva-1/adhyaya-189.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 49 times: "Markandeya continued, “Listen now to another story..."
+[MISALIGNMENT] File: parva-1/adhyaya-19.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 16 times: "“Vasudeva said, ‘O thou tiger among men, my great ..."
+[MISALIGNMENT] File: parva-1/adhyaya-190.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 18 times: "Markandeya continued, “Listen now to another story..."
+[MISALIGNMENT] File: parva-1/adhyaya-191.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 19 times: "Markandeya continued, “Listen now to another story..."
+[MISALIGNMENT] File: parva-1/adhyaya-192.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 29 times: "Markandeya continued, “Listen now to another story..."
+[MISALIGNMENT] File: parva-1/adhyaya-193.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 19 times: "Markandeya continued, “Listen now to another story..."
+[MISALIGNMENT] File: parva-1/adhyaya-194.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 25 times: "Markandeya continued, “Listen now to another story..."
+[MISALIGNMENT] File: parva-1/adhyaya-195.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 19 times: "Markandeya continued, “Listen now to another story..."
+[MISALIGNMENT] File: parva-1/adhyaya-196.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 28 times: "Markandeya continued, “Listen now to another story..."
+[MISALIGNMENT] File: parva-1/adhyaya-197.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 29 times: "Markandeya continued, “Listen now to another story..."
+[MISALIGNMENT] File: parva-1/adhyaya-198.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 25 times: "Markandeya continued, “Listen now to another story..."
+[MISALIGNMENT] File: parva-1/adhyaya-199.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 50 times: "Markandeya continued, “Listen now to another story..."
+[MISALIGNMENT] File: parva-1/adhyaya-2.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 243 times: "(Aranyaka Parva)
+
+
+      Om! Having bowed do..."
+[MISALIGNMENT] File: parva-1/adhyaya-20.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 15 times: "Vaisampayana continued, “After the chief of the Da..."
+[MISALIGNMENT] File: parva-1/adhyaya-200.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 23 times: "Markandeya continued, “Listen now to another story..."
+[MISALIGNMENT] File: parva-1/adhyaya-201.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 32 times: "Markandeya continued, “Listen now to another story..."
+[MISALIGNMENT] File: parva-1/adhyaya-202.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 27 times: "Markandeya continued, “Listen now to another story..."
+[MISALIGNMENT] File: parva-1/adhyaya-203.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 30 times: "Markandeya continued, “Listen now to another story..."
+[MISALIGNMENT] File: parva-1/adhyaya-204.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 30 times: "Markandeya continued, “Listen now to another story..."
+[MISALIGNMENT] File: parva-1/adhyaya-205.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 30 times: "Markandeya continued, “Listen now to another story..."
+[MISALIGNMENT] File: parva-1/adhyaya-206.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 34 times: "Markandeya continued, “Listen now to another story..."
+[MISALIGNMENT] File: parva-1/adhyaya-207.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 23 times: "Markandeya continued, “Listen now to another story..."
+[MISALIGNMENT] File: parva-1/adhyaya-208.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 21 times: "Markandeya continued, “Listen now to another story..."
+[MISALIGNMENT] File: parva-1/adhyaya-209.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 24 times: "Markandeya continued, “Listen now to another story..."
+[MISALIGNMENT] File: parva-1/adhyaya-21.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 17 times: "Vaisampayana said, “Having fallen into distress, t..."
+[MISALIGNMENT] File: parva-1/adhyaya-210.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 21 times: "Markandeya continued, “Listen now to another story..."
+[MISALIGNMENT] File: parva-1/adhyaya-211.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 25 times: "Markandeya continued, “Listen now to another story..."
+[MISALIGNMENT] File: parva-1/adhyaya-212.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 32 times: "Markandeya continued, “Listen now to another story..."
+[MISALIGNMENT] File: parva-1/adhyaya-213.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 82 times: "Markandeya continued, “Listen now to another story..."
+[MISALIGNMENT] File: parva-1/adhyaya-214.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 32 times: "Markandeya continued, “Listen now to another story..."
+[MISALIGNMENT] File: parva-1/adhyaya-215.json
+  Found 2 unique translations repeated across multiple verses.
+    - Repeated 11 times: "“Markandeya continued, ‘When that powerful, high-s..."
+    - Repeated 8 times: "“Markandeya continued, The planets with their sate..."
+[MISALIGNMENT] File: parva-1/adhyaya-216.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 34 times: "“Markandeya continued, ‘Now hear of those terrible..."
+[MISALIGNMENT] File: parva-1/adhyaya-217.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 22 times: "“Markandeya continued, ‘Now hear of those terrible..."
+[MISALIGNMENT] File: parva-1/adhyaya-218.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 50 times: "“Markandeya continued, ‘Now hear of those terrible..."
+[MISALIGNMENT] File: parva-1/adhyaya-219.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 40 times: "“Markandeya continued, ‘Now hear of those terrible..."
+[MISALIGNMENT] File: parva-1/adhyaya-22.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 5 times: "Vaisampayana said, “Having fallen into distress, t..."
+[MISALIGNMENT] File: parva-1/adhyaya-220.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 32 times: "“Markandeya continued, ‘Now hear of those terrible..."
+[MISALIGNMENT] File: parva-1/adhyaya-221.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 21 times: "“Markandeya continued, ‘Now hear of those terrible..."
+[MISALIGNMENT] File: parva-1/adhyaya-222.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 18 times: "“Markandeya continued, ‘Now hear of those terrible..."
+[MISALIGNMENT] File: parva-1/adhyaya-223.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 25 times: "“Markandeya continued, ‘Now hear of those terrible..."
+[MISALIGNMENT] File: parva-1/adhyaya-224.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 32 times: "“Markandeya continued, ‘Now hear of those terrible..."
+[MISALIGNMENT] File: parva-1/adhyaya-225.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 19 times: "“Markandeya continued, ‘Now hear of those terrible..."
+[MISALIGNMENT] File: parva-1/adhyaya-23.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 12 times: "Vaisampayana said, “Having fallen into distress, t..."
+[MISALIGNMENT] File: parva-1/adhyaya-24.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 14 times: "Vaisampayana said, “Having fallen into distress, t..."
+[MISALIGNMENT] File: parva-1/adhyaya-25.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 33 times: "Vaisampayana said, “Having fallen into distress, t..."
+[MISALIGNMENT] File: parva-1/adhyaya-26.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 47 times: "Vaisampayana said, “Having fallen into distress, t..."
+[MISALIGNMENT] File: parva-1/adhyaya-27.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 35 times: "Vaisampayana said, “Having fallen into distress, t..."
+[MISALIGNMENT] File: parva-1/adhyaya-28.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 25 times: "Vaisampayana said, “Having fallen into distress, t..."
+[MISALIGNMENT] File: parva-1/adhyaya-29.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 23 times: "Vaisampayana said, “Having fallen into distress, t..."
+[MISALIGNMENT] File: parva-1/adhyaya-3.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 42 times: "(Aranyaka Parva)
+
+
+      Om! Having bowed do..."
+[MISALIGNMENT] File: parva-1/adhyaya-30.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 22 times: "Vaisampayana said, “Having fallen into distress, t..."
+[MISALIGNMENT] File: parva-1/adhyaya-31.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 18 times: "Vaisampayana said, “Having fallen into distress, t..."
+[MISALIGNMENT] File: parva-1/adhyaya-32.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 25 times: "Vaisampayana said, “Having fallen into distress, t..."
+[MISALIGNMENT] File: parva-1/adhyaya-33.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 31 times: "Vaisampayana said, “Having fallen into distress, t..."
+[MISALIGNMENT] File: parva-1/adhyaya-34.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 18 times: "Vaisampayana said, “Having fallen into distress, t..."
+[MISALIGNMENT] File: parva-1/adhyaya-35.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 13 times: "Vaisampayana said, “Having fallen into distress, t..."
+[MISALIGNMENT] File: parva-1/adhyaya-36.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 26 times: "Vaisampayana said, “Having fallen into distress, t..."
+[MISALIGNMENT] File: parva-1/adhyaya-37.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 27 times: "Vaisampayana said, “Having fallen into distress, t..."
+[MISALIGNMENT] File: parva-1/adhyaya-38.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 39 times: "Vaisampayana said, “Having fallen into distress, t..."
+[MISALIGNMENT] File: parva-1/adhyaya-39.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 33 times: "Vaisampayana said, “Having fallen into distress, t..."
+[MISALIGNMENT] File: parva-1/adhyaya-4.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 8 times: "(Aranyaka Parva)
+
+
+      Om! Having bowed do..."
+[MISALIGNMENT] File: parva-1/adhyaya-40.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 11 times: "Vaisampayana said, “Having fallen into distress, t..."
+[MISALIGNMENT] File: parva-1/adhyaya-41.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 30 times: "Vaisampayana said, “Having fallen into distress, t..."
+[MISALIGNMENT] File: parva-1/adhyaya-42.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 20 times: "Vaisampayana said, “Having fallen into distress, t..."
+[MISALIGNMENT] File: parva-1/adhyaya-43.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 39 times: "Vaisampayana said, “Having fallen into distress, t..."
+[MISALIGNMENT] File: parva-1/adhyaya-44.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 22 times: "Vaisampayana said, “Having fallen into distress, t..."
+[MISALIGNMENT] File: parva-1/adhyaya-45.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 28 times: "Vaisampayana said, “Having fallen into distress, t..."
+[MISALIGNMENT] File: parva-1/adhyaya-46.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 41 times: "Vaisampayana said, “Having fallen into distress, t..."
+[MISALIGNMENT] File: parva-1/adhyaya-47.json
+  Found 2 unique translations repeated across multiple verses.
+    - Repeated 16 times: "Vaisampayana said, “That bull among men—Dhritarash..."
+    - Repeated 9 times: "(Nalopakhyana Parva)
+
+
+      Janamejaya said..."
+[MISALIGNMENT] File: parva-1/adhyaya-48.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 26 times: "Vrihadaswa said, “There was a king named Nala, the..."
+[MISALIGNMENT] File: parva-1/adhyaya-49.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 28 times: "Vrihadaswa said, “There was a king named Nala, the..."
+[MISALIGNMENT] File: parva-1/adhyaya-5.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 26 times: "(Aranyaka Parva)
+
+
+      Om! Having bowed do..."
+[MISALIGNMENT] File: parva-1/adhyaya-50.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 17 times: "Vrihadaswa said, “There was a king named Nala, the..."
+[MISALIGNMENT] File: parva-1/adhyaya-51.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 23 times: "Vrihadaswa said, “There was a king named Nala, the..."
+[MISALIGNMENT] File: parva-1/adhyaya-52.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 22 times: "Vrihadaswa said, “There was a king named Nala, the..."
+[MISALIGNMENT] File: parva-1/adhyaya-53.json
+  Found 2 unique translations repeated across multiple verses.
+    - Repeated 26 times: "“Vrihadaswa said, ‘When the blazing guardians of t..."
+    - Repeated 10 times: "“Vrihadaswa said, ‘Having made this compact with D..."
+[MISALIGNMENT] File: parva-1/adhyaya-54.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 24 times: "Vrihadaswa said. “Bhima’s daughter, the cool-heade..."
+[MISALIGNMENT] File: parva-1/adhyaya-55.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 43 times: "Vrihadaswa said. “Bhima’s daughter, the cool-heade..."
+[MISALIGNMENT] File: parva-1/adhyaya-56.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 33 times: "Vrihadaswa said. “Bhima’s daughter, the cool-heade..."
+[MISALIGNMENT] File: parva-1/adhyaya-57.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 106 times: "Vrihadaswa said. “Bhima’s daughter, the cool-heade..."
+[MISALIGNMENT] File: parva-1/adhyaya-58.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 51 times: "Vrihadaswa said. “Bhima’s daughter, the cool-heade..."
+[MISALIGNMENT] File: parva-1/adhyaya-59.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 54 times: "Vrihadaswa said. “Bhima’s daughter, the cool-heade..."
+[MISALIGNMENT] File: parva-1/adhyaya-6.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 13 times: "(Aranyaka Parva)
+
+
+      Om! Having bowed do..."
+[MISALIGNMENT] File: parva-1/adhyaya-60.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 69 times: "Vrihadaswa said. “Bhima’s daughter, the cool-heade..."
+[MISALIGNMENT] File: parva-1/adhyaya-61.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 102 times: "Vrihadaswa said. “Bhima’s daughter, the cool-heade..."
+[MISALIGNMENT] File: parva-1/adhyaya-62.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 14 times: "Vrihadaswa said. “Bhima’s daughter, the cool-heade..."
+[MISALIGNMENT] File: parva-1/adhyaya-63.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 26 times: "Vrihadaswa said. “Bhima’s daughter, the cool-heade..."
+[MISALIGNMENT] File: parva-1/adhyaya-64.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 42 times: "Vrihadaswa said. “Bhima’s daughter, the cool-heade..."
+[MISALIGNMENT] File: parva-1/adhyaya-65.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 42 times: "Vrihadaswa said. “Bhima’s daughter, the cool-heade..."
+[MISALIGNMENT] File: parva-1/adhyaya-66.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 17 times: "Vrihadaswa said. “Bhima’s daughter, the cool-heade..."
+[MISALIGNMENT] File: parva-1/adhyaya-67.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 33 times: "Vrihadaswa said. “Bhima’s daughter, the cool-heade..."
+[MISALIGNMENT] File: parva-1/adhyaya-68.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 80 times: "“Damayanti said, ‘O Kesini, go thou and learn who ..."
+[MISALIGNMENT] File: parva-1/adhyaya-69.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 51 times: "“Damayanti said, ‘O Kesini, go thou and learn who ..."
+[MISALIGNMENT] File: parva-1/adhyaya-7.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 26 times: "(Aranyaka Parva)
+
+
+      Om! Having bowed do..."
+[MISALIGNMENT] File: parva-1/adhyaya-70.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 46 times: "“Vrihadaswa said, ‘Hearing everything, Damayanti b..."
+[MISALIGNMENT] File: parva-1/adhyaya-71.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 58 times: "“Vrihadaswa said, ‘Hearing everything, Damayanti b..."
+[MISALIGNMENT] File: parva-1/adhyaya-72.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 23 times: "“Vrihadaswa said, ‘Hearing everything, Damayanti b..."
+[MISALIGNMENT] File: parva-1/adhyaya-73.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 36 times: "“Vrihadaswa said, ‘Hearing everything, Damayanti b..."
+[MISALIGNMENT] File: parva-1/adhyaya-74.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 12 times: "“Vrihadaswa said, ‘Hearing everything, Damayanti b..."
+[MISALIGNMENT] File: parva-1/adhyaya-75.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 25 times: "“Vrihadaswa said, ‘Hearing everything, Damayanti b..."
+[MISALIGNMENT] File: parva-1/adhyaya-76.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 35 times: "“Vrihadaswa said, ‘Hearing everything, Damayanti b..."
+[MISALIGNMENT] File: parva-1/adhyaya-77.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 27 times: "“Vrihadaswa said, ‘Hearing everything, Damayanti b..."
+[MISALIGNMENT] File: parva-1/adhyaya-78.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 41 times: "“Vrihadaswa said, ‘Hearing everything, Damayanti b..."
+[MISALIGNMENT] File: parva-1/adhyaya-79.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 30 times: "“Vrihadaswa said, ‘Hearing everything, Damayanti b..."
+[MISALIGNMENT] File: parva-1/adhyaya-8.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 22 times: "(Aranyaka Parva)
+
+
+      Om! Having bowed do..."
+[MISALIGNMENT] File: parva-1/adhyaya-80.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 27 times: "“Vrihadaswa said, ‘Hearing everything, Damayanti b..."
+[MISALIGNMENT] File: parva-1/adhyaya-81.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 16 times: "“Vrihadaswa said, ‘Hearing everything, Damayanti b..."
+[MISALIGNMENT] File: parva-1/adhyaya-82.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 13 times: "“Vrihadaswa said, ‘Hearing everything, Damayanti b..."
+[MISALIGNMENT] File: parva-1/adhyaya-83.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 13 times: "“Vrihadaswa said, ‘Hearing everything, Damayanti b..."
+[MISALIGNMENT] File: parva-1/adhyaya-84.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 21 times: "“Vrihadaswa said, ‘Hearing everything, Damayanti b..."
+[MISALIGNMENT] File: parva-1/adhyaya-85.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 27 times: "“Vrihadaswa said, ‘Hearing everything, Damayanti b..."
+[MISALIGNMENT] File: parva-1/adhyaya-86.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 17 times: "“Vrihadaswa said, ‘Hearing everything, Damayanti b..."
+[MISALIGNMENT] File: parva-1/adhyaya-87.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 18 times: "“Vrihadaswa said, ‘Hearing everything, Damayanti b..."
+[MISALIGNMENT] File: parva-1/adhyaya-88.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 26 times: "“Vrihadaswa said, ‘Hearing everything, Damayanti b..."
+[MISALIGNMENT] File: parva-1/adhyaya-89.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 55 times: "“Vrihadaswa said, ‘Hearing everything, Damayanti b..."
+[MISALIGNMENT] File: parva-1/adhyaya-9.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 22 times: "(Aranyaka Parva)
+
+
+      Om! Having bowed do..."
+[MISALIGNMENT] File: parva-1/adhyaya-90.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 12 times: "“Vrihadaswa said, ‘Hearing everything, Damayanti b..."
+[MISALIGNMENT] File: parva-1/adhyaya-91.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 22 times: "“Vrihadaswa said, ‘Hearing everything, Damayanti b..."
+[MISALIGNMENT] File: parva-1/adhyaya-92.json
+  Found 2 unique translations repeated across multiple verses.
+    - Repeated 31 times: "“Lomasa continued, ‘When Agastya thought that girl..."
+    - Repeated 24 times: "“Lomasa continued, ‘Agastya then, O son of the Kur..."
+[MISALIGNMENT] File: parva-1/adhyaya-93.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 46 times: "“Lomasa said, ‘When Ilwala learnt that those kings..."
+[MISALIGNMENT] File: parva-1/adhyaya-94.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 94 times: "“Lomasa said, ‘When Ilwala learnt that those kings..."
+[MISALIGNMENT] File: parva-1/adhyaya-95.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 14 times: "“Lomasa said, ‘When Ilwala learnt that those kings..."
+[MISALIGNMENT] File: parva-1/adhyaya-96.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 59 times: "“Lomasa said, ‘When Ilwala learnt that those kings..."
+[MISALIGNMENT] File: parva-1/adhyaya-97.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 26 times: "“Lomasa said, ‘When Ilwala learnt that those kings..."
+[MISALIGNMENT] File: parva-1/adhyaya-98.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 33 times: "“Lomasa said, ‘When Ilwala learnt that those kings..."
+[MISALIGNMENT] File: parva-1/adhyaya-99.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 49 times: "“Lomasa said, ‘When Ilwala learnt that those kings..."
+[MISALIGNMENT] File: parva-2/adhyaya-1.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 19 times: "(Aranyaka Parva)
+
+
+      Om! Having bowed do..."
+[MISALIGNMENT] File: parva-2/adhyaya-10.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 23 times: "“Dhritarashtra said, ‘O Muni of profound wisdom, i..."
+[MISALIGNMENT] File: parva-2/adhyaya-11.json
+  Found 2 unique translations repeated across multiple verses.
+    - Repeated 42 times: "(Kirmirabadha Parva)
+
+
+      “Dhritarashtra ..."
+    - Repeated 31 times: "(Arjunabhigamana Parva)
+
+
+      Vaisampayana..."
+[MISALIGNMENT] File: parva-2/adhyaya-12.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 40 times: "“Vasudeva said, O lord of earth, if I had been pre..."
+[MISALIGNMENT] File: parva-2/adhyaya-13.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 68 times: "“Yudhishthira said, ‘O Krishna, why wert thou abse..."
+[MISALIGNMENT] File: parva-2/adhyaya-14.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 20 times: "“Yudhishthira said, ‘O illustrious Vasudeva of mig..."
+[MISALIGNMENT] File: parva-2/adhyaya-15.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 16 times: "“Vasudeva continued, ‘O king of kings, Salwa, the ..."
+[MISALIGNMENT] File: parva-2/adhyaya-16.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 51 times: "“Vasudeva continued, ‘O bull of the Bharata race, ..."
+[MISALIGNMENT] File: parva-2/adhyaya-17.json
+  Found 2 unique translations repeated across multiple verses.
+    - Repeated 7 times: "“Vasudeva continued, ‘O king, afflicted with the a..."
+    - Repeated 20 times: "Vasudeva continued, Thus addressed, the son of Sut..."
+[MISALIGNMENT] File: parva-2/adhyaya-18.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 30 times: "“Vasudeva said, ‘When Salwa had left the city of t..."
+[MISALIGNMENT] File: parva-2/adhyaya-19.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 50 times: "“Vasudeva said, ‘O thou tiger among men, my great ..."
+[MISALIGNMENT] File: parva-2/adhyaya-2.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 23 times: "“Vaisampayana said, ‘When that night passed away a..."
+[MISALIGNMENT] File: parva-2/adhyaya-20.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 34 times: "“Vasudeva continued, ‘Then O thou foremost of the ..."
+[MISALIGNMENT] File: parva-2/adhyaya-21.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 23 times: "Vaisampayana continued, “After the chief of the Da..."
+[MISALIGNMENT] File: parva-2/adhyaya-22.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 58 times: "Vaisampayana said, “After they had departed, Yudhi..."
+[MISALIGNMENT] File: parva-2/adhyaya-23.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 26 times: "Vaisampayana said, “Having fallen into distress, t..."
+[MISALIGNMENT] File: parva-2/adhyaya-24.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 27 times: "Vaisampayana said, “While the illustrious son of P..."
+[MISALIGNMENT] File: parva-2/adhyaya-25.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 20 times: "Vaisampayana said, “Exiled to the woods the sons o..."
+[MISALIGNMENT] File: parva-2/adhyaya-26.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 16 times: "“Draupadi continued, ‘On this subject, the ancient..."
+[MISALIGNMENT] File: parva-2/adhyaya-27.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 28 times: "Yudhishthira said, ‘Anger is the slayer of men and..."
+[MISALIGNMENT] File: parva-2/adhyaya-28.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 55 times: "“Draupadi said, ‘I bow down unto Dhatri and Vidhat..."
+[MISALIGNMENT] File: parva-2/adhyaya-29.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 19 times: "“Yudhishthira said, ‘Thy speech, O Yajnaseni, is d..."
+[MISALIGNMENT] File: parva-2/adhyaya-3.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 34 times: "“Vaisampayana said, ‘Yudhishthira the son of Kunti..."
+[MISALIGNMENT] File: parva-2/adhyaya-30.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 54 times: "“Draupadi said, ‘I do not ever disregard or slande..."
+[MISALIGNMENT] File: parva-2/adhyaya-31.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 25 times: "‘Vaisampayana said, “Hearing these words of Yajnas..."
+[MISALIGNMENT] File: parva-2/adhyaya-32.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 18 times: "Vaisampayana said, “Thus addressed by Bhimasena, t..."
+[MISALIGNMENT] File: parva-2/adhyaya-33.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 32 times: "Bhima said, ‘O king, unsubstantial as thou art lik..."
+[MISALIGNMENT] File: parva-2/adhyaya-34.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 23 times: "Vaisampayana said, “Hearing those words of Bhima, ..."
+[MISALIGNMENT] File: parva-2/adhyaya-35.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 29 times: "Vaisampayana said, “After some time, Yudhishthira ..."
+[MISALIGNMENT] File: parva-2/adhyaya-36.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 15 times: "(Kairata Parva)
+
+
+      Janemejaya said, “O ..."
+[MISALIGNMENT] File: parva-2/adhyaya-37.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 15 times: "Vaisampayana said, “After all those illustrious as..."
+[MISALIGNMENT] File: parva-2/adhyaya-38.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 40 times: "“Mahadeva said, ‘Thou wert in thy former life Nara..."
+[MISALIGNMENT] File: parva-2/adhyaya-39.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 20 times: "Vaisampayana said, “The wielder of the Pinaka, hav..."
+[MISALIGNMENT] File: parva-2/adhyaya-4.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 34 times: "“Vaisampayana said,—“After the Pandavas had gone t..."
+[MISALIGNMENT] File: parva-2/adhyaya-40.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 23 times: "(Indralokagamana Parva)
+
+
+      Vaisampayana..."
+[MISALIGNMENT] File: parva-2/adhyaya-41.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 33 times: "Vaisampayana said, “And the city of Indra which Ar..."
+[MISALIGNMENT] File: parva-2/adhyaya-42.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 60 times: "Vaisampayana said, “The gods and the Gandharvas th..."
+[MISALIGNMENT] File: parva-2/adhyaya-43.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 36 times: "Vaisampayana said, ‘Having thus sent away the Gand..."
+[MISALIGNMENT] File: parva-2/adhyaya-44.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 22 times: "Vaisampayana said, “One day, the great Rishi Lomas..."
+[MISALIGNMENT] File: parva-2/adhyaya-45.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 58 times: "Janamejaya said, “These feats of Pritha’s son endu..."
+[MISALIGNMENT] File: parva-2/adhyaya-46.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 35 times: "“Sanjaya said, ‘That which hath been uttered by th..."
+[MISALIGNMENT] File: parva-2/adhyaya-47.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 31 times: "Janamejaya said, “Having sent the heroic sons of P..."
+[MISALIGNMENT] File: parva-2/adhyaya-48.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 42 times: "Vaisampayana said, “That bull among men—Dhritarash..."
+[MISALIGNMENT] File: parva-2/adhyaya-49.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 25 times: "(Nalopakhyana Parva)
+
+
+      Janamejaya said..."
+[MISALIGNMENT] File: parva-2/adhyaya-5.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 116 times: "“Vaisampayana said, ‘Desirous of living in the for..."
+[MISALIGNMENT] File: parva-2/adhyaya-50.json
+  Found 2 unique translations repeated across multiple verses.
+    - Repeated 9 times: "Vrihadaswa said, “There was a king named Nala, the..."
+    - Repeated 19 times: "“Vrihadaswa said, ‘O Bharata, hearing those words ..."
+[MISALIGNMENT] File: parva-2/adhyaya-51.json
+  Found 2 unique translations repeated across multiple verses.
+    - Repeated 21 times: "“Vrihadaswa continued, ‘O Bharata, Nala pledged hi..."
+    - Repeated 5 times: "“Vrihadaswa said, ‘Damayanti, having bowed down un..."
+[MISALIGNMENT] File: parva-2/adhyaya-52.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 37 times: "“Vrihadaswa continued, ‘Then at the sacred hour of..."
+[MISALIGNMENT] File: parva-2/adhyaya-53.json
+  Found 2 unique translations repeated across multiple verses.
+    - Repeated 16 times: "“Vrihadaswa said, ‘When the blazing guardians of t..."
+    - Repeated 9 times: "“Vrihadaswa said, ‘Having made this compact with D..."
+[MISALIGNMENT] File: parva-2/adhyaya-54.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 29 times: "Vrihadaswa said. “Bhima’s daughter, the cool-heade..."
+[MISALIGNMENT] File: parva-2/adhyaya-55.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 17 times: "“Vrihadaswa said, ‘After Varshneya had gone away, ..."
+[MISALIGNMENT] File: parva-2/adhyaya-56.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 10 times: "“Nala said, ‘Surely, thy father’s kingdom is as my..."
+[MISALIGNMENT] File: parva-2/adhyaya-57.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 21 times: "Vrihadaswa said, “O king, after Nala had gone away..."
+[MISALIGNMENT] File: parva-2/adhyaya-58.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 43 times: "“Vrihadaswa continued, ‘Having destroyed that hunt..."
+[MISALIGNMENT] File: parva-2/adhyaya-59.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 12 times: "“Vrihadaswa said, ‘Having heard the words of the l..."
+[MISALIGNMENT] File: parva-2/adhyaya-6.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 18 times: "“Vaisampayana said, ‘O king, after Vidura had gone..."
+[MISALIGNMENT] File: parva-2/adhyaya-60.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 47 times: "“Vrihadaswa said, ‘O monarch, having deserted Dama..."
+[MISALIGNMENT] File: parva-2/adhyaya-61.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 82 times: "“Vrihadaswa said, ‘After the snake had vanquished,..."
+[MISALIGNMENT] File: parva-2/adhyaya-62.json
+  Found 2 unique translations repeated across multiple verses.
+    - Repeated 21 times: "“Vaisampayana said, ‘After Nala, despoiled of his ..."
+    - Repeated 17 times: "“Sudeva said, ‘There is a virtuous and illustrious..."
+[MISALIGNMENT] File: parva-2/adhyaya-63.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 36 times: "“Vrihadaswa said, ‘After a long time had passed aw..."
+[MISALIGNMENT] File: parva-2/adhyaya-64.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 17 times: "“Vrihadaswa continued, ‘Having heard the words of ..."
+[MISALIGNMENT] File: parva-2/adhyaya-65.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 17 times: "“Vrihadaswa said, ‘Like a bird coursing through th..."
+[MISALIGNMENT] File: parva-2/adhyaya-66.json
+  Found 2 unique translations repeated across multiple verses.
+    - Repeated 27 times: "“Vrihadaswa said, ‘After Rituparna of prowess inca..."
+    - Repeated 10 times: "“Damayanti said, ‘O Kesini, go thou and learn who ..."
+[MISALIGNMENT] File: parva-2/adhyaya-67.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 21 times: "“Vrihadaswa said, ‘Hearing everything, Damayanti b..."
+[MISALIGNMENT] File: parva-2/adhyaya-68.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 46 times: "“Vrihadaswa said, ‘Beholding the agitation of the ..."
+[MISALIGNMENT] File: parva-2/adhyaya-69.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 21 times: "“Vrihadaswa said, ‘Having passed that night, king ..."
+[MISALIGNMENT] File: parva-2/adhyaya-7.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 26 times: "“Vaisampayana said, ‘Hearing that Vidura had retur..."
+[MISALIGNMENT] File: parva-2/adhyaya-70.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 24 times: "“Vrihadaswa said, ‘O son of Kunti, the ruler of th..."
+[MISALIGNMENT] File: parva-2/adhyaya-71.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 47 times: "“Vrihadaswa said, ‘After the festivities had comme..."
+[MISALIGNMENT] File: parva-2/adhyaya-72.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 36 times: "(Tirtha-yatra Parva)
+
+
+      Janamejaya said..."
+[MISALIGNMENT] File: parva-2/adhyaya-8.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 38 times: "“Vyasa said, ‘O wise Dhritarashtra, hear what I sa..."
+[MISALIGNMENT] File: parva-2/adhyaya-9.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 25 times: "“Dhritarashtra said, ‘O holy one, I did not like t..."
+[MISALIGNMENT] File: parva-3/adhyaya-1.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 43 times: "(Aranyaka Parva)
+
+
+      Om! Having bowed do..."
+[MISALIGNMENT] File: parva-3/adhyaya-10.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 23 times: "“Dhritarashtra said, ‘O holy one, I did not like t..."
+[MISALIGNMENT] File: parva-3/adhyaya-100.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 24 times: "“Lomasa said, ‘The Kalakeyas then having recourse ..."
+[MISALIGNMENT] File: parva-3/adhyaya-101.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 17 times: "“The celestials said, ‘Through thy favour it is th..."
+[MISALIGNMENT] File: parva-3/adhyaya-102.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 23 times: "“Yudhishthira said, ‘O great saint! I am desirous ..."
+[MISALIGNMENT] File: parva-3/adhyaya-103.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 19 times: "“Lomasa said, ‘That blessed saint, the son of Varu..."
+[MISALIGNMENT] File: parva-3/adhyaya-104.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 22 times: "“Lomasa said, ‘Then gathered together, Brahma, the..."
+[MISALIGNMENT] File: parva-3/adhyaya-105.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 25 times: "“Lomasa said, ‘O most righteous of kings! When he ..."
+[MISALIGNMENT] File: parva-3/adhyaya-106.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 40 times: "“Lomasa said, ‘O most righteous of kings! When he ..."
+[MISALIGNMENT] File: parva-3/adhyaya-107.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 25 times: "“Lomasa said, ‘That same king, of a powerful bow, ..."
+[MISALIGNMENT] File: parva-3/adhyaya-108.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 19 times: "“Lomasa said, ‘The blessed God having heard what B..."
+[MISALIGNMENT] File: parva-3/adhyaya-109.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 20 times: "Vaisampayana said, “O chief of the Bharata race! t..."
+[MISALIGNMENT] File: parva-3/adhyaya-11.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 39 times: "“Dhritarashtra said, ‘O Muni of profound wisdom, i..."
+[MISALIGNMENT] File: parva-3/adhyaya-110.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 36 times: "Vaisampayana said, “O chief of the Bharata race! t..."
+[MISALIGNMENT] File: parva-3/adhyaya-111.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 22 times: "“Lomasa said, ‘O descendant of Bharata! she in ord..."
+[MISALIGNMENT] File: parva-3/adhyaya-112.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 18 times: "‘Rishyasringa said, ‘Here came to-day a religious ..."
+[MISALIGNMENT] File: parva-3/adhyaya-113.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 25 times: "“Vibhandaka said, ‘Those are, O son! Rakshasas. Th..."
+[MISALIGNMENT] File: parva-3/adhyaya-114.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 26 times: "(Tirtha-yatra Parva continued)
+
+
+      “Vais..."
+[MISALIGNMENT] File: parva-3/adhyaya-115.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 30 times: "“Vaisampayana said, ‘The protector of the earth sp..."
+[MISALIGNMENT] File: parva-3/adhyaya-116.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 29 times: "“Akritavrana said, ‘Jamadagni devoted himself to t..."
+[MISALIGNMENT] File: parva-3/adhyaya-117.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 18 times: "“Rama said, ‘The blame is mine, O father, that lik..."
+[MISALIGNMENT] File: parva-3/adhyaya-118.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 23 times: "Vaisampayana said, “The magnanimous monarch pursue..."
+[MISALIGNMENT] File: parva-3/adhyaya-119.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 22 times: "Janamejaya said, “O thou of ascetic wealth! when t..."
+[MISALIGNMENT] File: parva-3/adhyaya-12.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 75 times: "(Kirmirabadha Parva)
+
+
+      “Dhritarashtra ..."
+[MISALIGNMENT] File: parva-3/adhyaya-120.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 30 times: "Satyaki said, “O Rama! this is not the time of lam..."
+[MISALIGNMENT] File: parva-3/adhyaya-121.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 23 times: "Lomasa said, “O king! when the Nriga performed a s..."
+[MISALIGNMENT] File: parva-3/adhyaya-122.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 27 times: "“Lomasa said, ‘A son was born to the great saint B..."
+[MISALIGNMENT] File: parva-3/adhyaya-123.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 23 times: "“Lomasa said, ‘Once on a time, O king, those celes..."
+[MISALIGNMENT] File: parva-3/adhyaya-124.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 24 times: "“Lomasa said, ‘Now the news came to Saryati that C..."
+[MISALIGNMENT] File: parva-3/adhyaya-125.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 23 times: "“Lomasa said, ‘When the god who had performed a hu..."
+[MISALIGNMENT] File: parva-3/adhyaya-126.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 43 times: "“Yudhishthira said, ‘O great Brahmana, how was tha..."
+[MISALIGNMENT] File: parva-3/adhyaya-127.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 21 times: "Yudhishthira said, ‘O best of speakers! what was t..."
+[MISALIGNMENT] File: parva-3/adhyaya-128.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 19 times: "“Somaka said, ‘O Brahmana! whatever is to be perfo..."
+[MISALIGNMENT] File: parva-3/adhyaya-129.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 22 times: "“Lomasa said, ‘Here, O king! The lord of born bein..."
+[MISALIGNMENT] File: parva-3/adhyaya-13.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 120 times: "(Arjunabhigamana Parva)
+
+
+      Vaisampayana..."
+[MISALIGNMENT] File: parva-3/adhyaya-130.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 20 times: "“Lomasa said, ‘O son of Bharata’s race! If mortals..."
+[MISALIGNMENT] File: parva-3/adhyaya-131.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 32 times: "“The hawk said, ‘All the kings of the earth repres..."
+[MISALIGNMENT] File: parva-3/adhyaya-132.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 20 times: "“Lomasa said, ‘See here, O lord of men, the sacred..."
+[MISALIGNMENT] File: parva-3/adhyaya-133.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 27 times: "“Ashtavakra said, ‘When no Brahmana is met with on..."
+[MISALIGNMENT] File: parva-3/adhyaya-134.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 39 times: "“Ashtavakra said, ‘O king, O leader of fierce legi..."
+[MISALIGNMENT] File: parva-3/adhyaya-135.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 42 times: "“Lomasa said, ‘Here, O king, is visible the river ..."
+[MISALIGNMENT] File: parva-3/adhyaya-136.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 18 times: "“Lomasa said, ‘Here, O king, is visible the river ..."
+[MISALIGNMENT] File: parva-3/adhyaya-137.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 20 times: "“Lomasa said, ‘One day in the month of Chaitra, wh..."
+[MISALIGNMENT] File: parva-3/adhyaya-138.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 19 times: "“Lomasa said, ‘O son of Kunti, Bharadwaja returned..."
+[MISALIGNMENT] File: parva-3/adhyaya-139.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 24 times: "“Lomasa said, ‘At that very time, the mighty king,..."
+[MISALIGNMENT] File: parva-3/adhyaya-14.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 17 times: "“Vasudeva said, O lord of earth, if I had been pre..."
+[MISALIGNMENT] File: parva-3/adhyaya-140.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 17 times: "“Lomasa said, ‘O descendant of Bharata, O king, no..."
+[MISALIGNMENT] File: parva-3/adhyaya-141.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 30 times: "“Yudhishthira said, ‘O Vrikodara, there are mighty..."
+[MISALIGNMENT] File: parva-3/adhyaya-142.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 28 times: "“Yudhishthira said, ‘O Vrikodara, there are mighty..."
+[MISALIGNMENT] File: parva-3/adhyaya-143.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 21 times: "Vaisampayana said, “O king, then those foremost of..."
+[MISALIGNMENT] File: parva-3/adhyaya-144.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 27 times: "Vaisampayana said, “When the high-souled sons of P..."
+[MISALIGNMENT] File: parva-3/adhyaya-145.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 43 times: "“Yudhishthira said, ‘O Bhima, let this mighty and ..."
+[MISALIGNMENT] File: parva-3/adhyaya-146.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 81 times: "Vaisampayana said, “There observing cleanliness, t..."
+[MISALIGNMENT] File: parva-3/adhyaya-147.json
+  Found 2 unique translations repeated across multiple verses.
+    - Repeated 30 times: "Vaisampayana said, “O represser of foes, hearing t..."
+    - Repeated 11 times: "Hanuman said, ‘And after his wife was carried away..."
+[MISALIGNMENT] File: parva-3/adhyaya-148.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 39 times: "Vaisampayana continued, “Thus addressed, the power..."
+[MISALIGNMENT] File: parva-3/adhyaya-149.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 52 times: "“Bhimasena said, ‘Without beholding thy former sha..."
+[MISALIGNMENT] File: parva-3/adhyaya-15.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 22 times: "“Yudhishthira said, ‘O Krishna, why wert thou abse..."
+[MISALIGNMENT] File: parva-3/adhyaya-150.json
+  Found 2 unique translations repeated across multiple verses.
+    - Repeated 15 times: "Vaisampayana said, “Then contracting that huge bod..."
+    - Repeated 13 times: "Vaisampayana said, “When that foremost of monkeys ..."
+[MISALIGNMENT] File: parva-3/adhyaya-151.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 15 times: "Vaisampayana said, “Having reached that spot, Bhim..."
+[MISALIGNMENT] File: parva-3/adhyaya-152.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 25 times: "“Bhima said, ‘I am the son of Pandu, and next by b..."
+[MISALIGNMENT] File: parva-3/adhyaya-153.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 31 times: "Vaisampayana said, “Then, O best of the Bharatas, ..."
+[MISALIGNMENT] File: parva-3/adhyaya-154.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 61 times: "Vaisampayana continued, “Thus dwelling with the Br..."
+[MISALIGNMENT] File: parva-3/adhyaya-155.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 90 times: "Vaisampayana continued, “On that Rakshasa having b..."
+[MISALIGNMENT] File: parva-3/adhyaya-156.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 31 times: "Vaisampayana continued, “Having approached that on..."
+[MISALIGNMENT] File: parva-3/adhyaya-157.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 70 times: "Janamejaya said, “How long did my great grandsires..."
+[MISALIGNMENT] File: parva-3/adhyaya-158.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 59 times: "Vaisampayana said, “Hearing various sounds resound..."
+[MISALIGNMENT] File: parva-3/adhyaya-159.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 35 times: "“The lord of treasures said, ‘O Yudhishthira, pati..."
+[MISALIGNMENT] File: parva-3/adhyaya-16.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 23 times: "“Yudhishthira said, ‘O illustrious Vasudeva of mig..."
+[MISALIGNMENT] File: parva-3/adhyaya-160.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 37 times: "Vaisampayana continued, “Then, O represser of foes..."
+[MISALIGNMENT] File: parva-3/adhyaya-161.json
+  Found 2 unique translations repeated across multiple verses.
+    - Repeated 16 times: "Vaisampayana continued, “Dwelling in that best of ..."
+    - Repeated 13 times: "Vaisampayana continued, “And it came to pass that ..."
+[MISALIGNMENT] File: parva-3/adhyaya-162.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 16 times: "Vaisampayana said, “Then when the night had been s..."
+[MISALIGNMENT] File: parva-3/adhyaya-163.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 53 times: "Vaisampayana continued, “When Sakra had gone to hi..."
+[MISALIGNMENT] File: parva-3/adhyaya-164.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 58 times: "“Arjuna said, ‘O Bharata, by the grace of that god..."
+[MISALIGNMENT] File: parva-3/adhyaya-165.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 23 times: "“Arjuna said, ‘O Bharata, by the grace of that god..."
+[MISALIGNMENT] File: parva-3/adhyaya-166.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 23 times: "“Arjuna continued, ‘Then at places eulogised by th..."
+[MISALIGNMENT] File: parva-3/adhyaya-167.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 28 times: "“Arjuna continued, ‘Then, O Bharata, vehemently ru..."
+[MISALIGNMENT] File: parva-3/adhyaya-168.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 30 times: "“Arjuna said, ‘Then with rocks of the proportions ..."
+[MISALIGNMENT] File: parva-3/adhyaya-169.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 35 times: "“Arjuna continued, ‘Remaining invisible the Daitya..."
+[MISALIGNMENT] File: parva-3/adhyaya-17.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 33 times: "“Vasudeva continued, ‘O king of kings, Salwa, the ..."
+[MISALIGNMENT] File: parva-3/adhyaya-170.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 69 times: "“Arjuna continued, ‘Then while returning, I happen..."
+[MISALIGNMENT] File: parva-3/adhyaya-171.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 17 times: "“Arjuna continued, ‘Then firmly confident, the sov..."
+[MISALIGNMENT] File: parva-3/adhyaya-172.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 24 times: "Vaisampayana continued, “And when the night had pa..."
+[MISALIGNMENT] File: parva-3/adhyaya-173.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 22 times: "Janamejaya said, “When that prime among heroes, ha..."
+[MISALIGNMENT] File: parva-3/adhyaya-174.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 24 times: "Vaisampayana said, “When they had left their happy..."
+[MISALIGNMENT] File: parva-3/adhyaya-175.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 21 times: "Janamejaya said, “How was it, O sage! that Bhima, ..."
+[MISALIGNMENT] File: parva-3/adhyaya-176.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 51 times: "Vaisampayana continued, “And the powerful Bhimasen..."
+[MISALIGNMENT] File: parva-3/adhyaya-177.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 33 times: "Vaisampayana continued, “Yudhishthira, finding his..."
+[MISALIGNMENT] File: parva-3/adhyaya-178.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 50 times: "“Yudhishthira said, ‘In this world, you are so lea..."
+[MISALIGNMENT] File: parva-3/adhyaya-179.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 18 times: "(Markandeya-Samasya Parva)
+
+
+      Vaisampay..."
+[MISALIGNMENT] File: parva-3/adhyaya-18.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 24 times: "“Vasudeva continued, ‘O bull of the Bharata race, ..."
+[MISALIGNMENT] File: parva-3/adhyaya-180.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 49 times: "Vaisampayana said, “O son of Kuru, they, Yudhishth..."
+[MISALIGNMENT] File: parva-3/adhyaya-181.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 41 times: "Vaisampayana said, “O son of Kuru, they, Yudhishth..."
+[MISALIGNMENT] File: parva-3/adhyaya-182.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 21 times: "Vaisampayana continued,—“The sons of Pandu said to..."
+[MISALIGNMENT] File: parva-3/adhyaya-183.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 32 times: "“Markandeya continued, ‘Do ye again hear from me t..."
+[MISALIGNMENT] File: parva-3/adhyaya-184.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 25 times: "“Markandeya continued, ‘O thou conqueror of hostil..."
+[MISALIGNMENT] File: parva-3/adhyaya-185.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 54 times: "Then Yudhishthira, the son of Pandu, said to the B..."
+[MISALIGNMENT] File: parva-3/adhyaya-186.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 129 times: "“Then the virtuous king Yudhishthira in all humili..."
+[MISALIGNMENT] File: parva-3/adhyaya-187.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 55 times: "“Markandeya continued, ‘The Deity then said, ‘O Br..."
+[MISALIGNMENT] File: parva-3/adhyaya-188.json
+  Found 2 unique translations repeated across multiple verses.
+    - Repeated 2 times: "“Markandeya continued, ‘The Deity then said, ‘O Br..."
+    - Repeated 91 times: "“Vaisampayana said Yudhishthira, the son of Kunti,..."
+[MISALIGNMENT] File: parva-3/adhyaya-189.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 31 times: "“Markandeya continued, ‘Having exterminated the th..."
+[MISALIGNMENT] File: parva-3/adhyaya-19.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 33 times: "“Vasudeva continued, ‘O king, afflicted with the a..."
+[MISALIGNMENT] File: parva-3/adhyaya-190.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 25 times: "Janamejaya said, “It behoveth thee to narrate to m..."
+[MISALIGNMENT] File: parva-3/adhyaya-191.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 3 times: "Vaisampayana said, “The sons of Pandu and those Ri..."
+[MISALIGNMENT] File: parva-3/adhyaya-192.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 29 times: "Vaisampayana said, “Having, O great king, heard fr..."
+[MISALIGNMENT] File: parva-3/adhyaya-193.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 27 times: "Markandeya said, “O king, after the death of Ikshv..."
+[MISALIGNMENT] File: parva-3/adhyaya-194.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 30 times: "“Markandeya said, ‘Thus addressed by Utanka, that ..."
+[MISALIGNMENT] File: parva-3/adhyaya-195.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 39 times: "“Markandeya said, ‘The illustrious Dhundhu, O king..."
+[MISALIGNMENT] File: parva-3/adhyaya-196.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 21 times: "Vaisampayana said, “O thou foremost of the Bharata..."
+[MISALIGNMENT] File: parva-3/adhyaya-197.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 44 times: "“Markandeya said, ‘There was, O Bharata, a virtuou..."
+[MISALIGNMENT] File: parva-3/adhyaya-198.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 94 times: "“Markandeya said, ‘Continually reflecting upon tha..."
+[MISALIGNMENT] File: parva-3/adhyaya-199.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 34 times: "“Markandeya continued, ‘The pious fowler, O Yudhis..."
+[MISALIGNMENT] File: parva-3/adhyaya-2.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 79 times: "“Vaisampayana said, ‘When that night passed away a..."
+[MISALIGNMENT] File: parva-3/adhyaya-20.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 27 times: "Vasudeva continued, Thus addressed, the son of Sut..."
+[MISALIGNMENT] File: parva-3/adhyaya-200.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 54 times: "Markandeya continued, “O Yudhishthira, the virtuou..."
+[MISALIGNMENT] File: parva-3/adhyaya-201.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 20 times: "“Markandeya continued, ‘Hear, O king Yudhishthira ..."
+[MISALIGNMENT] File: parva-3/adhyaya-202.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 25 times: "“Markandeya continued, ‘O Bharata, the Brahmana, t..."
+[MISALIGNMENT] File: parva-3/adhyaya-203.json
+  Found 2 unique translations repeated across multiple verses.
+    - Repeated 12 times: "Markandeya continued, “O Bharata, the fowler havin..."
+    - Repeated 39 times: "“The Brahmana enquired, ‘How is it that fire (vita..."
+[MISALIGNMENT] File: parva-3/adhyaya-204.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 27 times: "“Markandeya said, ‘When, O Yudhishthira, all this ..."
+[MISALIGNMENT] File: parva-3/adhyaya-205.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 29 times: "“Markandeya continued, ‘The virtuous fowler, havin..."
+[MISALIGNMENT] File: parva-3/adhyaya-206.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 34 times: "“The fowler continued, ‘Thus cursed by that rishi,..."
+[MISALIGNMENT] File: parva-3/adhyaya-207.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 20 times: "Vaisampayana continued, “The virtuous king Yudhish..."
+[MISALIGNMENT] File: parva-3/adhyaya-208.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 8 times: "Markandeya continued, ‘O ornament of Kuru’s race, ..."
+[MISALIGNMENT] File: parva-3/adhyaya-209.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 25 times: "“Markandeya continued, ‘Vrishaspati had a wife (ca..."
+[MISALIGNMENT] File: parva-3/adhyaya-21.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 38 times: "“Vasudeva said, ‘When Salwa had left the city of t..."
+[MISALIGNMENT] File: parva-3/adhyaya-210.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 19 times: "“Markandeya continued, ‘He (Uktha) performed a sev..."
+[MISALIGNMENT] File: parva-3/adhyaya-211.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 31 times: "“Markandeya continued, ‘The fire called Bharata wa..."
+[MISALIGNMENT] File: parva-3/adhyaya-212.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 30 times: "Markandeya continued, “Mudita, the favourite wife ..."
+[MISALIGNMENT] File: parva-3/adhyaya-213.json
+  Found 2 unique translations repeated across multiple verses.
+    - Repeated 15 times: "“Markandeya continued, ‘O sinless scion of Kuru’s ..."
+    - Repeated 37 times: "“The lady replied, ‘I am a daughter of Prajapati (..."
+[MISALIGNMENT] File: parva-3/adhyaya-214.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 37 times: "“Markandeya continued, ‘O lord of men, the beautif..."
+[MISALIGNMENT] File: parva-3/adhyaya-215.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 23 times: "“Markandeya continued, ‘When that powerful, high-s..."
+[MISALIGNMENT] File: parva-3/adhyaya-216.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 15 times: "“Markandeya continued, The planets with their sate..."
+[MISALIGNMENT] File: parva-3/adhyaya-217.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 14 times: "“Markandeya continued, ‘Now hear of those terrible..."
+[MISALIGNMENT] File: parva-3/adhyaya-218.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 49 times: "“Markandeya continued, ‘Skanda was adorned with a ..."
+[MISALIGNMENT] File: parva-3/adhyaya-219.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 58 times: "“Markandeya continued, ‘Those six ladies, the wive..."
+[MISALIGNMENT] File: parva-3/adhyaya-22.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 30 times: "“Vasudeva said, ‘O thou tiger among men, my great ..."
+[MISALIGNMENT] File: parva-3/adhyaya-220.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 27 times: "Markandeya continued, “When Skanda had bestowed th..."
+[MISALIGNMENT] File: parva-3/adhyaya-221.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 80 times: "Markandeya continued, “When Skanda had bestowed th..."
+[MISALIGNMENT] File: parva-3/adhyaya-222.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 59 times: "(Draupadi-Satyabhama Samvada)
+
+
+      Vaisam..."
+[MISALIGNMENT] File: parva-3/adhyaya-223.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 12 times: "“Draupadi said, ‘I shall now indicate to thee, for..."
+[MISALIGNMENT] File: parva-3/adhyaya-224.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 17 times: "Vaisampayana said, “Then Kesava, the slayer of Mad..."
+[MISALIGNMENT] File: parva-3/adhyaya-225.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 31 times: "(Ghosha-yatra Parva)
+
+
+      Janamejaya said..."
+[MISALIGNMENT] File: parva-3/adhyaya-226.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 22 times: "Vaisampayana said, “Hearing those words of Dhritar..."
+[MISALIGNMENT] File: parva-3/adhyaya-227.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 24 times: "Vaisampayana said, “Having heard these words of Ka..."
+[MISALIGNMENT] File: parva-3/adhyaya-228.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 29 times: "Vaisampayana said, “They then all saw king Dhritar..."
+[MISALIGNMENT] File: parva-3/adhyaya-229.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 29 times: "Vaisampayana said, “King Duryodhana then moving fr..."
+[MISALIGNMENT] File: parva-3/adhyaya-23.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 51 times: "“Vasudeva continued, ‘Then O thou foremost of the ..."
+[MISALIGNMENT] File: parva-3/adhyaya-230.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 31 times: "Vaisampayana said, “Those soldiers then, O king, a..."
+[MISALIGNMENT] File: parva-3/adhyaya-232.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 21 times: "“Yudhishthira said, ‘O child, why dost thou use la..."
+[MISALIGNMENT] File: parva-3/adhyaya-233.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 21 times: "Vaisampayana said, “Hearing the words of Yudhishth..."
+[MISALIGNMENT] File: parva-3/adhyaya-234.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 28 times: "Vaisampayana said, “Then those Gandharvas decked i..."
+[MISALIGNMENT] File: parva-3/adhyaya-235.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 25 times: "Vaisampayana said, “Then that mighty bowman of bla..."
+[MISALIGNMENT] File: parva-3/adhyaya-236.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 15 times: "Janamejaya said, “After his defeat and capture by ..."
+[MISALIGNMENT] File: parva-3/adhyaya-237.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 15 times: "“Duryodhana said, ‘O Radheya, thou knowest not wha..."
+[MISALIGNMENT] File: parva-3/adhyaya-238.json
+  Found 2 unique translations repeated across multiple verses.
+    - Repeated 37 times: "Duryodhana said, “That slayer of hostile heroes, A..."
+    - Repeated 12 times: "“Kama continued, ‘O king, this conduct of thine to..."
+[MISALIGNMENT] File: parva-3/adhyaya-239.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 26 times: "Vaisampayana said, “Beholding king Duryodhana, inc..."
+[MISALIGNMENT] File: parva-3/adhyaya-24.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 16 times: "Vaisampayana continued, “After the chief of the Da..."
+[MISALIGNMENT] File: parva-3/adhyaya-240.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 47 times: "“The Danavas said, ‘O Suyodhana, O great king? O p..."
+[MISALIGNMENT] File: parva-3/adhyaya-241.json
+  Found 2 unique translations repeated across multiple verses.
+    - Repeated 14 times: "Janamejaya said, “When the high-souled sons of Pri..."
+    - Repeated 23 times: "Vaisampayana continued, “O king, O lord of men, th..."
+[MISALIGNMENT] File: parva-3/adhyaya-242.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 24 times: "Vaisampayana continued, “Then all the artisans, th..."
+[MISALIGNMENT] File: parva-3/adhyaya-243.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 24 times: "Vaisampayana said, “While, O great king, Duryodhan..."
+[MISALIGNMENT] File: parva-3/adhyaya-244.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 16 times: "Janamejaya said, ‘After having delivered Duryodhan..."
+[MISALIGNMENT] File: parva-3/adhyaya-245.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 34 times: "Vaisampayana continued, “Dwelling in the woods, O ..."
+[MISALIGNMENT] File: parva-3/adhyaya-246.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 36 times: "Yudhishthira said, “Why did that high-souled one g..."
+[MISALIGNMENT] File: parva-3/adhyaya-247.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 47 times: "“The messenger of the gods said, ‘O great sage, th..."
+[MISALIGNMENT] File: parva-3/adhyaya-248.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 17 times: "Vaisampayana said, “These great warriors of the ra..."
+[MISALIGNMENT] File: parva-3/adhyaya-249.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 13 times: "Kotika said, “Excellent lady, who art thou that st..."
+[MISALIGNMENT] File: parva-3/adhyaya-25.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 26 times: "Vaisampayana said, “After they had departed, Yudhi..."
+[MISALIGNMENT] File: parva-3/adhyaya-250.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 9 times: "Vaisampayana continued, “The princess Draupadi, th..."
+[MISALIGNMENT] File: parva-3/adhyaya-251.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 21 times: "Vaisampayana said, “O Bharata, Kotikakhya related ..."
+[MISALIGNMENT] File: parva-3/adhyaya-252.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 27 times: "Vaisampayana said, “The daughter of Drupada, thoug..."
+[MISALIGNMENT] File: parva-3/adhyaya-253.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 26 times: "Vaisampayana said, “Meanwhile those foremost of bo..."
+[MISALIGNMENT] File: parva-3/adhyaya-254.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 21 times: "Vaisampayana said, “The hostile Kshatriyas, incens..."
+[MISALIGNMENT] File: parva-3/adhyaya-255.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 59 times: "Vaisampayana said, “Meanwhile, the king of Sindhu ..."
+[MISALIGNMENT] File: parva-3/adhyaya-256.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 30 times: "Vaisampayana said, “Jayadratha flying for his life..."
+[MISALIGNMENT] File: parva-3/adhyaya-257.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 10 times: "Janamejaya said, “What did those tigers among men,..."
+[MISALIGNMENT] File: parva-3/adhyaya-258.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 16 times: "“Markandeya said, ‘O bull of the Bharata race, eve..."
+[MISALIGNMENT] File: parva-3/adhyaya-259.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 40 times: "Markandeya said, “The Muni named Visrava, who was ..."
+[MISALIGNMENT] File: parva-3/adhyaya-26.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 18 times: "Vaisampayana said, “Having fallen into distress, t..."
+[MISALIGNMENT] File: parva-3/adhyaya-260.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 15 times: "“Markandeya said, ‘Then the Brahmarshis, the Siddh..."
+[MISALIGNMENT] File: parva-3/adhyaya-261.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 55 times: "“Yudhishthira said, ‘O adorable one, thou hast des..."
+[MISALIGNMENT] File: parva-3/adhyaya-262.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 41 times: "“Markandeya said, ‘Beholding Ravana come, Maricha ..."
+[MISALIGNMENT] File: parva-3/adhyaya-263.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 43 times: "“Markandeya said, ‘That heroic king of the vulture..."
+[MISALIGNMENT] File: parva-3/adhyaya-264.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 73 times: "“Markandeya said, ‘Afflicted with grief at the abd..."
+[MISALIGNMENT] File: parva-3/adhyaya-265.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 30 times: "“Markandeya said, ‘And while the chaste Sita was d..."
+[MISALIGNMENT] File: parva-3/adhyaya-266.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 68 times: "“Markandeya said, ‘Meanwhile the illustrious desce..."
+[MISALIGNMENT] File: parva-3/adhyaya-267.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 54 times: "“Markandeya said, ‘It was on the breast of that ve..."
+[MISALIGNMENT] File: parva-3/adhyaya-268.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 40 times: "“Markandeya said, ‘Having quartered his army in th..."
+[MISALIGNMENT] File: parva-3/adhyaya-269.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 14 times: "“Markandeya said, ‘And while those troops (thus wi..."
+[MISALIGNMENT] File: parva-3/adhyaya-27.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 25 times: "Vaisampayana said, “While the illustrious son of P..."
+[MISALIGNMENT] File: parva-3/adhyaya-270.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 29 times: "“Markandeya said, “Then Prahasta, suddenly advanci..."
+[MISALIGNMENT] File: parva-3/adhyaya-271.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 27 times: "“Markandeya said, “Then Kumbhakarna set out from t..."
+[MISALIGNMENT] File: parva-3/adhyaya-272.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 26 times: "“Markandeya said, ‘Learning that Kumbhakarna had w..."
+[MISALIGNMENT] File: parva-3/adhyaya-273.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 33 times: "“Markandeya said, ‘Beholding both the brothers Ram..."
+[MISALIGNMENT] File: parva-3/adhyaya-274.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 31 times: "“Markandeya said, The Ten-necked (Ravana), excited..."
+[MISALIGNMENT] File: parva-3/adhyaya-275.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 69 times: "“Markandeya said, ‘Having slain Ravana, that wretc..."
+[MISALIGNMENT] File: parva-3/adhyaya-276.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 13 times: "“Markandeya said, ‘It was thus, O mighty-armed one..."
+[MISALIGNMENT] File: parva-3/adhyaya-277.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 41 times: "(Pativrata-mahatmya Parva)
+
+
+      “Yudhisht..."
+[MISALIGNMENT] File: parva-3/adhyaya-278.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 32 times: "“Markandeya continued, ‘On one occasion, O Bharata..."
+[MISALIGNMENT] File: parva-3/adhyaya-279.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 23 times: "“Markandeya said, ‘Having pondered over these word..."
+[MISALIGNMENT] File: parva-3/adhyaya-28.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 37 times: "Vaisampayana said, “Exiled to the woods the sons o..."
+[MISALIGNMENT] File: parva-3/adhyaya-280.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 33 times: "“Markandeya said, ‘At length, O king, after a long..."
+[MISALIGNMENT] File: parva-3/adhyaya-281.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 108 times: "“Markandeya said, The powerful Satyavan then, acco..."
+[MISALIGNMENT] File: parva-3/adhyaya-282.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 44 times: "“Markandeya said, ‘Meanwhile the mighty Dyumatsena..."
+[MISALIGNMENT] File: parva-3/adhyaya-283.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 16 times: "“Markandeya continued, ‘When the night had passed ..."
+[MISALIGNMENT] File: parva-3/adhyaya-284.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 39 times: "Janamejaya said,—“What, O Brahmana, was that great..."
+[MISALIGNMENT] File: parva-3/adhyaya-285.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 17 times: "“Surya said, ‘Never do, O Karna, anything that is ..."
+[MISALIGNMENT] File: parva-3/adhyaya-286.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 20 times: "“Karna said, ‘As thou, O lord of splendour, knowes..."
+[MISALIGNMENT] File: parva-3/adhyaya-287.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 29 times: "Janamejaya said, “What was that secret which was n..."
+[MISALIGNMENT] File: parva-3/adhyaya-288.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 19 times: "“Kunti said, ‘According to thy promise, I will, O ..."
+[MISALIGNMENT] File: parva-3/adhyaya-289.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 23 times: "Vaisampayana said, “And that maiden of rigid vows...."
+[MISALIGNMENT] File: parva-3/adhyaya-29.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 35 times: "“Draupadi continued, ‘On this subject, the ancient..."
+[MISALIGNMENT] File: parva-3/adhyaya-290.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 26 times: "Vaisampayana said, “When that foremost of Brahmana..."
+[MISALIGNMENT] File: parva-3/adhyaya-291.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 28 times: "Vaisampayana said, “Although that noble girl addre..."
+[MISALIGNMENT] File: parva-3/adhyaya-292.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 27 times: "Vaisampayana said, “It was, O lord of earth, on th..."
+[MISALIGNMENT] File: parva-3/adhyaya-293.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 23 times: "Vaisampayana said, “And it came to pass that at th..."
+[MISALIGNMENT] File: parva-3/adhyaya-294.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 43 times: "Vaisampayana said, “And when the king of the celes..."
+[MISALIGNMENT] File: parva-3/adhyaya-295.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 17 times: "(Aranya Parva)
+
+
+      Janamejaya said, “Hav..."
+[MISALIGNMENT] File: parva-3/adhyaya-296.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 43 times: "Yudhishthira said, “There is no limit to calamitie..."
+[MISALIGNMENT] File: parva-3/adhyaya-297.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 74 times: "Vaisampayana said, “Yudhishthira saw his brothers,..."
+[MISALIGNMENT] File: parva-3/adhyaya-298.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 28 times: "Vaisampayana continued,—“Then agreeable to the wor..."
+[MISALIGNMENT] File: parva-3/adhyaya-299.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 29 times: "Vaisampayana continued,—“Commanded by the Lord of ..."
+[MISALIGNMENT] File: parva-3/adhyaya-3.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 33 times: "“Vaisampayana said, ‘Yudhishthira the son of Kunti..."
+[MISALIGNMENT] File: parva-3/adhyaya-30.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 50 times: "Yudhishthira said, ‘Anger is the slayer of men and..."
+[MISALIGNMENT] File: parva-3/adhyaya-31.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 42 times: "“Draupadi said, ‘I bow down unto Dhatri and Vidhat..."
+[MISALIGNMENT] File: parva-3/adhyaya-32.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 40 times: "“Yudhishthira said, ‘Thy speech, O Yajnaseni, is d..."
+[MISALIGNMENT] File: parva-3/adhyaya-33.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 58 times: "“Draupadi said, ‘I do not ever disregard or slande..."
+[MISALIGNMENT] File: parva-3/adhyaya-34.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 85 times: "‘Vaisampayana said, “Hearing these words of Yajnas..."
+[MISALIGNMENT] File: parva-3/adhyaya-35.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 21 times: "Vaisampayana said, “Thus addressed by Bhimasena, t..."
+[MISALIGNMENT] File: parva-3/adhyaya-36.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 34 times: "Bhima said, ‘O king, unsubstantial as thou art lik..."
+[MISALIGNMENT] File: parva-3/adhyaya-37.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 41 times: "Vaisampayana said, “Hearing those words of Bhima, ..."
+[MISALIGNMENT] File: parva-3/adhyaya-38.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 45 times: "Vaisampayana said, “After some time, Yudhishthira ..."
+[MISALIGNMENT] File: parva-3/adhyaya-39.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 30 times: "(Kairata Parva)
+
+
+      Janemejaya said, “O ..."
+[MISALIGNMENT] File: parva-3/adhyaya-4.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 10 times: "“Vaisampayana said, ‘Yudhishthira the son of Kunti..."
+[MISALIGNMENT] File: parva-3/adhyaya-40.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 61 times: "Vaisampayana said, “After all those illustrious as..."
+[MISALIGNMENT] File: parva-3/adhyaya-41.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 26 times: "“Mahadeva said, ‘Thou wert in thy former life Nara..."
+[MISALIGNMENT] File: parva-3/adhyaya-42.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 42 times: "Vaisampayana said, “The wielder of the Pinaka, hav..."
+[MISALIGNMENT] File: parva-3/adhyaya-43.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 38 times: "(Indralokagamana Parva)
+
+
+      Vaisampayana..."
+[MISALIGNMENT] File: parva-3/adhyaya-44.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 32 times: "Vaisampayana said, “And the city of Indra which Ar..."
+[MISALIGNMENT] File: parva-3/adhyaya-45.json
+  Found 2 unique translations repeated across multiple verses.
+    - Repeated 8 times: "Vaisampayana said, “The gods and the Gandharvas th..."
+    - Repeated 30 times: "Vaisampayana said, “One day, the great Rishi Lomas..."
+[MISALIGNMENT] File: parva-3/adhyaya-46.json
+  Found 2 unique translations repeated across multiple verses.
+    - Repeated 18 times: "Janamejaya said, “These feats of Pritha’s son endu..."
+    - Repeated 23 times: "“Sanjaya said, ‘That which hath been uttered by th..."
+[MISALIGNMENT] File: parva-3/adhyaya-47.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 12 times: "Janamejaya said, “Having sent the heroic sons of P..."
+[MISALIGNMENT] File: parva-3/adhyaya-48.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 41 times: "Vaisampayana said, “That bull among men—Dhritarash..."
+[MISALIGNMENT] File: parva-3/adhyaya-49.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 43 times: "(Nalopakhyana Parva)
+
+
+      Janamejaya said..."
+[MISALIGNMENT] File: parva-3/adhyaya-5.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 20 times: "“Vaisampayana said,—“After the Pandavas had gone t..."
+[MISALIGNMENT] File: parva-3/adhyaya-50.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 31 times: "Vrihadaswa said, “There was a king named Nala, the..."
+[MISALIGNMENT] File: parva-3/adhyaya-51.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 29 times: "“Vrihadaswa said, ‘O Bharata, hearing those words ..."
+[MISALIGNMENT] File: parva-3/adhyaya-52.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 24 times: "“Vrihadaswa continued, ‘O Bharata, Nala pledged hi..."
+[MISALIGNMENT] File: parva-3/adhyaya-53.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 21 times: "“Vrihadaswa said, ‘Damayanti, having bowed down un..."
+[MISALIGNMENT] File: parva-3/adhyaya-54.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 38 times: "“Vrihadaswa continued, ‘Then at the sacred hour of..."
+[MISALIGNMENT] File: parva-3/adhyaya-55.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 13 times: "“Vrihadaswa said, ‘When the blazing guardians of t..."
+[MISALIGNMENT] File: parva-3/adhyaya-56.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 18 times: "“Vrihadaswa said, ‘Having made this compact with D..."
+[MISALIGNMENT] File: parva-3/adhyaya-57.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 23 times: "Vrihadaswa said. “Bhima’s daughter, the cool-heade..."
+[MISALIGNMENT] File: parva-3/adhyaya-58.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 34 times: "“Vrihadaswa said, ‘After Varshneya had gone away, ..."
+[MISALIGNMENT] File: parva-3/adhyaya-59.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 25 times: "“Nala said, ‘Surely, thy father’s kingdom is as my..."
+[MISALIGNMENT] File: parva-3/adhyaya-6.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 22 times: "“Vaisampayana said, ‘Desirous of living in the for..."
+[MISALIGNMENT] File: parva-3/adhyaya-60.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 38 times: "Vrihadaswa said, “O king, after Nala had gone away..."
+[MISALIGNMENT] File: parva-3/adhyaya-61.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 125 times: "“Vrihadaswa continued, ‘Having destroyed that hunt..."
+[MISALIGNMENT] File: parva-3/adhyaya-62.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 43 times: "“Vrihadaswa said, ‘Having heard the words of the l..."
+[MISALIGNMENT] File: parva-3/adhyaya-63.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 24 times: "“Vrihadaswa said, ‘O monarch, having deserted Dama..."
+[MISALIGNMENT] File: parva-3/adhyaya-64.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 19 times: "“Vrihadaswa said, ‘After the snake had vanquished,..."
+[MISALIGNMENT] File: parva-3/adhyaya-65.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 37 times: "“Vaisampayana said, ‘After Nala, despoiled of his ..."
+[MISALIGNMENT] File: parva-3/adhyaya-66.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 26 times: "“Sudeva said, ‘There is a virtuous and illustrious..."
+[MISALIGNMENT] File: parva-3/adhyaya-67.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 22 times: "“Sudeva said, ‘There is a virtuous and illustrious..."
+[MISALIGNMENT] File: parva-3/adhyaya-68.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 24 times: "“Vrihadaswa said, ‘After a long time had passed aw..."
+[MISALIGNMENT] File: parva-3/adhyaya-69.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 34 times: "“Vrihadaswa continued, ‘Having heard the words of ..."
+[MISALIGNMENT] File: parva-3/adhyaya-7.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 24 times: "“Vaisampayana said, ‘O king, after Vidura had gone..."
+[MISALIGNMENT] File: parva-3/adhyaya-70.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 39 times: "“Vrihadaswa said, ‘Like a bird coursing through th..."
+[MISALIGNMENT] File: parva-3/adhyaya-71.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 34 times: "“Vrihadaswa said, ‘After Rituparna of prowess inca..."
+[MISALIGNMENT] File: parva-3/adhyaya-72.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 30 times: "“Damayanti said, ‘O Kesini, go thou and learn who ..."
+[MISALIGNMENT] File: parva-3/adhyaya-73.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 28 times: "“Vrihadaswa said, ‘Hearing everything, Damayanti b..."
+[MISALIGNMENT] File: parva-3/adhyaya-74.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 24 times: "“Vrihadaswa said, ‘Beholding the agitation of the ..."
+[MISALIGNMENT] File: parva-3/adhyaya-75.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 27 times: "“Vrihadaswa said, ‘Beholding the agitation of the ..."
+[MISALIGNMENT] File: parva-3/adhyaya-76.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 19 times: "“Vrihadaswa said, ‘Having passed that night, king ..."
+[MISALIGNMENT] File: parva-3/adhyaya-77.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 29 times: "“Vrihadaswa said, ‘O son of Kunti, the ruler of th..."
+[MISALIGNMENT] File: parva-3/adhyaya-78.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 23 times: "“Vrihadaswa said, ‘After the festivities had comme..."
+[MISALIGNMENT] File: parva-3/adhyaya-79.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 29 times: "(Tirtha-yatra Parva)
+
+
+      Janamejaya said..."
+[MISALIGNMENT] File: parva-3/adhyaya-8.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 23 times: "“Vaisampayana said, ‘Hearing that Vidura had retur..."
+[MISALIGNMENT] File: parva-3/adhyaya-80.json
+  Found 2 unique translations repeated across multiple verses.
+    - Repeated 21 times: "Vaisampayana said, “Hearing these words of his bro..."
+    - Repeated 112 times: "“Pulastya said, ‘O thou of excellent vows, I have ..."
+[MISALIGNMENT] File: parva-3/adhyaya-81.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 178 times: "“Pulastya said, ‘One should next proceed, O king, ..."
+[MISALIGNMENT] File: parva-3/adhyaya-82.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 143 times: "“Pulastya said, ‘Then, O great king, one should pr..."
+[MISALIGNMENT] File: parva-3/adhyaya-83.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 114 times: "“Pulastya said, ‘Arriving next at the excellent ti..."
+[MISALIGNMENT] File: parva-3/adhyaya-84.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 20 times: "“Vaisampayana continued, ‘Having ascertained the o..."
+[MISALIGNMENT] File: parva-3/adhyaya-85.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 23 times: "Vaisampayana said, “Beholding the Pandavas afflict..."
+[MISALIGNMENT] File: parva-3/adhyaya-86.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 24 times: "“Dhaumya continued, ‘Listen, O Bharata, I shall no..."
+[MISALIGNMENT] File: parva-3/adhyaya-87.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 15 times: "“Dhaumya continued, ‘I shall describe to thee thos..."
+[MISALIGNMENT] File: parva-3/adhyaya-88.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 30 times: "“Dhaumya continued, ‘O tiger among kings, I shall ..."
+[MISALIGNMENT] File: parva-3/adhyaya-89.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 22 times: "Vaisampayana continued, “O son of the Kuru race, w..."
+[MISALIGNMENT] File: parva-3/adhyaya-9.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 12 times: "“Vyasa said, ‘O wise Dhritarashtra, hear what I sa..."
+[MISALIGNMENT] File: parva-3/adhyaya-90.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 24 times: "“Lomasa continued, ‘Listen now, O Yudhishthira, to..."
+[MISALIGNMENT] File: parva-3/adhyaya-91.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 28 times: "Vaisampayana said, “Those Brahmanas then, that had..."
+[MISALIGNMENT] File: parva-3/adhyaya-92.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 22 times: "“Yudhishthira said, ‘O best of celestial Rishis, I..."
+[MISALIGNMENT] File: parva-3/adhyaya-93.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 27 times: "Vaisampayana said, “The heroic sons of Pandu, acco..."
+[MISALIGNMENT] File: parva-3/adhyaya-94.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 27 times: "Vaisampayana said, “After this the royal son of Ku..."
+[MISALIGNMENT] File: parva-3/adhyaya-95.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 24 times: "“Lomasa continued, ‘When Agastya thought that girl..."
+[MISALIGNMENT] File: parva-3/adhyaya-96.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 20 times: "“Lomasa continued, ‘Agastya then, O son of the Kur..."
+[MISALIGNMENT] File: parva-3/adhyaya-97.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 27 times: "“Lomasa said, ‘When Ilwala learnt that those kings..."
+[MISALIGNMENT] File: parva-3/adhyaya-98.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 24 times: "“Yudhishthira said, ‘O best of regenerate ones, I ..."
+[MISALIGNMENT] File: parva-3/adhyaya-99.json
+  Found 1 unique translations repeated across multiple verses.
+    - Repeated 21 times: "“Lomasa said, ‘Armed with the Vajra then, and supp..."
+Audit complete.
