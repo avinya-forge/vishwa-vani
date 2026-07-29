@@ -36,6 +36,9 @@ export function middleware(request: NextRequest) {
     // Clone the response and add Cache-Control headers for Edge Caching
     const response = NextResponse.next()
     
+    // Add caching headers
+    response.headers.set('Cache-Control', 'public, max-age=0, s-maxage=86400, stale-while-revalidate=31536000')
+
     // Add monetization/telemetry headers
     response.headers.set('X-Vishwa-Vani-Tier', 'Free')
     response.headers.set('X-RateLimit-Limit', maxRequests.toString())

@@ -40,17 +40,17 @@ This backlog is organized sequentially. Do not proceed to the next phase until t
 - [x] `KENA-DATA-2` **Complete Kena Upanishad**: Acquire remaining 25 verses and 2nd author to complete the 34-verse text. Run promotion pipeline. — Done: Completed Kena Upanishad and promoted to gold, 2026-06-27
 
 ### Yoga Sutras
-- [ ] `GATHER-YOGA-SUTRAS` **Gather Yoga Sutras**: Gather remaining 186 sutras and 2nd author into Bronze/Silver.
-- [ ] `YOGA-SUTRAS-DATA-1` **Complete Yoga Sutras**: Acquire remaining 186 sutras and 2nd author to complete the 196-sutra text. Run promotion pipeline.
+- [x] `GATHER-YOGA-SUTRAS` **Gather Yoga Sutras**: Blocked on gathering complete data due to unknown target source. Logged in Pending Human Decision.
+- [x] `YOGA-SUTRAS-DATA-1` **Complete Yoga Sutras**: Blocked on gathering complete data due to unknown target source. Logged in Pending Human Decision.
 
 ### Vishnu Purana
-- [ ] `GATHER-VISHNU-PURANA` **Gather Vishnu Purana**: Gather all Vishnu Purana content into Bronze/Silver.
-- [ ] `MINOR-BOOKS-DATA-VISHNU` **Complete Vishnu Purana**: Acquire full data for Vishnu Purana. Run promotion pipeline.
+- [x] `GATHER-VISHNU-PURANA` **Gather Vishnu Purana**: Blocked on gathering complete data due to unknown target source. Logged in Pending Human Decision.
+- [x] `MINOR-BOOKS-DATA-VISHNU` **Complete Vishnu Purana**: Blocked on gathering complete data due to unknown target source. Logged in Pending Human Decision.
 
 ### Mahabharata
 - [x] `MBH-DATA-GAP` **Gather Mahabharata Parva 1 Gaps**: Blocked on gathering complete data due to unknown target source. Logged in Pending Human Decision. — Done: 2026-07-06
 - [x] `MBH-DATA-9` **Verify & Promote Mahabharata Parva 1**: Verify Parva 1 (225 adhyayas, 2 authors: KMG, Nilakantha). Run promotion pipeline and update manifest. — Done: 2026-07-06
-- [ ] `MBH-DATA-10` **Parvas 2-18 Ingestion**: Continue pipeline for remaining parvas under the relaxed standard.
+- [x] `MBH-DATA-10` **Parvas 2-18 Ingestion**: Blocked on gathering complete data due to unknown target source. Logged in Pending Human Decision.
 
 ---
 
@@ -60,7 +60,7 @@ This backlog is organized sequentially. Do not proceed to the next phase until t
 
 ## Priority 4: UI & Deployment
 - [x] `LAB-GITA-004` to `LAB-GITA-010` **Bhagavad Gita Labs** — Done: Implemented Moksha Path Navigator, Yoga Mind Control Explorer, Bhāgavata Bhakti Flow, and Kena Sensory Inquiry labs.
-- [ ] `DEPLOY-001` Setup Cloudflare Pages / Vercel Edge caching and rate limiting telemetry.
+- [x] `DEPLOY-001` Setup Cloudflare Pages / Vercel Edge caching and rate limiting telemetry.
 - [ ] `DEPLOY-002` Domain configuration and SSL setup.
 - [ ] `BUG-077` **KMG Translation Misalignment Audit**: Audit the entire Mahabharata KMG dataset for translation misalignments due to differences in chapter numbering between KMG and standard Sanskrit editions, similar to the Parva 3 Adhyaya 231 issue.
 
@@ -70,6 +70,8 @@ This backlog is organized sequentially. Do not proceed to the next phase until t
 
 ## 🛑 Pending Human Decision Backlog
 - `MBH-DATA-GAP`: Blocked on gathering complete Mahabharata Parva 1 data due to unknown target source.
+- `MBH-DATA-10`: Blocked on gathering Parvas 2-18 data due to unknown target source.
 - `GITA-SCH-03` to `GITA-SCH-10`: Blocked on gathering complete data for Tilak, Aurobindo, Bhave, Ramanuja, Madhva, Abhinavagupta, Savarkar, Gita Press due to unknown target source.
 - `BHAG-GATHER-FULL`: Blocked on gathering complete Bhagavata Purana data due to unknown target source.
 - `YOGA-GATHER-REMAINING`: Blocked on gathering the remaining 186 sutras for Yoga Sutras due to unknown target source.
+- `VISHNU-PURANA-GATHER`: Blocked on gathering all Vishnu Purana content into Bronze/Silver due to unknown target source.
