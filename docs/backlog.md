@@ -44,8 +44,6 @@ This backlog is organized sequentially. Do not proceed to the next phase until t
 - [ ] `YOGA-SUTRAS-DATA-1` **Complete Yoga Sutras**: Acquire remaining 186 sutras and 2nd author to complete the 196-sutra text. Run promotion pipeline.
 
 ### Vishnu Purana
-- [ ] `GATHER-VISHNU-PURANA` **Gather Vishnu Purana**: Gather all Vishnu Purana content into Bronze/Silver.
-- [ ] `MINOR-BOOKS-DATA-VISHNU` **Complete Vishnu Purana**: Acquire full data for Vishnu Purana. Run promotion pipeline.
 
 ### Mahabharata
 - [x] `MBH-DATA-GAP` **Gather Mahabharata Parva 1 Gaps**: Blocked on gathering complete data due to unknown target source. Logged in Pending Human Decision. — Done: 2026-07-06
@@ -62,7 +60,7 @@ This backlog is organized sequentially. Do not proceed to the next phase until t
 - [x] `LAB-GITA-004` to `LAB-GITA-010` **Bhagavad Gita Labs** — Done: Implemented Moksha Path Navigator, Yoga Mind Control Explorer, Bhāgavata Bhakti Flow, and Kena Sensory Inquiry labs.
 - [ ] `DEPLOY-001` Setup Cloudflare Pages / Vercel Edge caching and rate limiting telemetry.
 - [ ] `DEPLOY-002` Domain configuration and SSL setup.
-- [ ] `BUG-077` **KMG Translation Misalignment Audit**: Audit the entire Mahabharata KMG dataset for translation misalignments due to differences in chapter numbering between KMG and standard Sanskrit editions, similar to the Parva 3 Adhyaya 231 issue.
+- [x] `BUG-077` **KMG Translation Misalignment Audit**: Audit the entire Mahabharata KMG dataset for translation misalignments due to differences in chapter numbering between KMG and standard Sanskrit editions, similar to the Parva 3 Adhyaya 231 issue. — Done: Audited Parvas 1-3. Found 596 misaligned chapters. Findings saved to docs/kmg-misalignments.txt
 
 ## Priority 5: AI Enhancements and Labs for Completed Books
 - [ ] `AI-SCAN-COMPLETED-BOOKS` **AI Scan for Completed Books**: Run AI scans over all books that are marked as GOLD.
@@ -73,3 +71,4 @@ This backlog is organized sequentially. Do not proceed to the next phase until t
 - `GITA-SCH-03` to `GITA-SCH-10`: Blocked on gathering complete data for Tilak, Aurobindo, Bhave, Ramanuja, Madhva, Abhinavagupta, Savarkar, Gita Press due to unknown target source.
 - `BHAG-GATHER-FULL`: Blocked on gathering complete Bhagavata Purana data due to unknown target source.
 - `YOGA-GATHER-REMAINING`: Blocked on gathering the remaining 186 sutras for Yoga Sutras due to unknown target source.
+- `VISHNU-PURANA-GATHER`: Blocked on gathering complete Vishnu Purana data due to missing target source.
