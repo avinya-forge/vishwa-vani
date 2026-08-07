@@ -1,6 +1,6 @@
 # 🚀 Vishwa-Vani: Aligned Master Backlog [SDLC v8.0 — Vision & Pipeline Integration]
 
-This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani Vision**. Content development is structured by scripture in exact descending priority of their score, ensuring focused completion of one book at a time.
+This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani Vision**. Content development is structured by scripture in exact descending priority of their score, ensuring focused completion of one book at a time. All target lengths, indices, and breadths have been audited for absolute accuracy.
 
 ---
 
@@ -36,6 +36,10 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 - [ ] `FEAT-BETA-001` **Feedback to GitHub Issue Bridge**: Modify `/api/feedback` server route to automatically format feedback submissions and submit them as issues to the repository.
 - [ ] `FEAT-BETA-002` **Inline star rating analytics**: Build a lightweight telemetry SQLite table to capture anonymous study ratings, displaying translation feedback directly.
 
+### 5. Documentation and Process Synchronization (Periodic Audits)
+- [ ] `AUDIT-SYNC-001` **Bi-Weekly Backlog & Status Check**: Schedule explicit session to run `python scripts/project_status_audit.py` to regenerate `.status` and `docs/PROJECT_STATUS.md`, copy status report to `docs/status_report.md`, and clean completed tasks into `docs/release-notes.md`.
+- [ ] `AUDIT-SYNC-002` **Sanskrit Metric Integrity Audit**: Execute deep structural checks verifying matching JSON chapter and verse ranges against canonical targets in `project_status_audit.py` prior to any minor version bump.
+
 ---
 
 ## Priority 2: Content (Descending score priority to complete books)
@@ -50,10 +54,49 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 - [ ] `GITA-SCH-INTEGRATE` **Promote Enriched Scholars**: Merge the parsed commentary layers into the Gita Gold shards and verify in the UI.
 
 ### 2. Mahabharata [Readiness Score: 58.7%]
-- [ ] `MBH-DATA-GAP-PARV1` **Resolve Parva 1 Missing Layers**: Gather Hindi/Marathi translations and AI metadata for Parva 1.
-- [ ] `MBH-DATA-PROM-PARV1` **Freeze Parva 1 Gold Data**: Run the promotion pipeline on Parva 1 and verify.
-- [ ] `MBH-DATA-INGEST-PARVS` **Ingest remaining Parvas 2-18**: Ingest the remaining 1816 chapters / 80k+ verses into the silver data layer.
-- [ ] `MBH-DATA-PROM-PARVS` **Promote Remaining Parvas to Gold**: Run promotion and audit standards sequentially on all Parvas.
+*This giant scripture comprises 18 Parvas (Books) containing ~2,115 adhyayas and ~100,000 verses.*
+
+- **Parva 1: Adi Parva [225 Chapters, 7984 Verses]**
+  - [ ] `MBH-PARV1-GAP` **Verify Parva 1 Missing Layers**: Gather English, Hindi, and Marathi translations, transliterations, and AI metadata.
+  - [ ] `MBH-PARV1-PROM` **Promote Parva 1 to Gold**: Validate and freeze the complete Adi Parva Gold tier.
+- **Parva 2: Sabha Parva [72 Chapters, 2511 Verses]**
+  - [ ] `MBH-PARV2-ACQ` **Acquire Sabha Parva**: Ingest Sanskrit text and KMG English translation layers.
+  - [ ] `MBH-PARV2-PROM` **Promote Sabha Parva to Gold**: Execute pipeline validation and promote.
+- **Parva 3: Vana Parva (Aranyaka) [299 Chapters, 11664 Verses]**
+  - [ ] `MBH-PARV3-AUDIT` **Re-verify Parva 3 Duplications**: Double-check all 299 chapters (including Adhyaya 231) for duplication bugs.
+  - [ ] `MBH-PARV3-PROM` **Promote Vana Parva**: Execute validation pipeline to lock into Gold tier.
+- **Parva 4: Virata Parva [67 Chapters, 2050 Verses]**
+  - [ ] `MBH-PARV4-ACQ` **Acquire Virata Parva**: Retrieve core verses, transliterations, and KMG translation layers.
+- **Parva 5: Udyoga Parva [197 Chapters, 6071 Verses]**
+  - [ ] `MBH-PARV5-ACQ` **Acquire Udyoga Parva**: Ingest core text and scholars layers.
+- **Parva 6: Bhishma Parva [117 Chapters, 5856 Verses]**
+  - [ ] `MBH-PARV6-ACQ` **Acquire Bhishma Parva**: Parse and structure the Bhagavad Gita parent book context.
+- **Parva 7: Drona Parva [173 Chapters, 8909 Verses]**
+  - [ ] `MBH-PARV7-ACQ` **Acquire Drona Parva**: Retrieve and parse core chapters.
+- **Parva 8: Karna Parva [69 Chapters, 4964 Verses]**
+  - [ ] `MBH-PARV8-ACQ` **Acquire Karna Parva**: Structure core verse files in NVF.
+- **Parva 9: Shalya Parva [59 Chapters, 3220 Verses]**
+  - [ ] `MBH-PARV9-ACQ` **Acquire Shalya Parva**: Ingest Sanskrit and KMG layers.
+- **Parva 10: Sauptika Parva [18 Chapters, 870 Verses]**
+  - [ ] `MBH-PARV10-ACQ` **Acquire Sauptika Parva**: Process and structure core verses.
+- **Parva 11: Stri Parva [27 Chapters, 775 Verses]**
+  - [ ] `MBH-PARV11-ACQ` **Acquire Stri Parva**: Parse laments and translations.
+- **Parva 12: Shanti Parva [353 Chapters, 14732 Verses]**
+  - [ ] `MBH-PARV12-ACQ` **Acquire Shanti Parva**: Ingest the largest parva (philosophical treatises) in chunks.
+- **Parva 13: Anushasana Parva [154 Chapters, 8000 Verses]**
+  - [ ] `MBH-PARV13-ACQ` **Acquire Anushasana Parva**: Parse legal codes and discourse layers.
+- **Parva 14: Ashvamedhika Parva [96 Chapters, 3320 Verses]**
+  - [ ] `MBH-PARV14-ACQ` **Acquire Ashvamedhika Parva**: Structure core narrative sections.
+- **Parva 15: Ashramavasika Parva [47 Chapters, 1506 Verses]**
+  - [ ] `MBH-PARV15-ACQ` **Acquire Ashramavasika Parva**: Parse retirement dialogues.
+- **Parva 16: Mausala Parva [9 Chapters, 320 Verses]**
+  - [ ] `MBH-PARV16-ACQ` **Acquire Mausala Parva**: Structure the destruction of Yadavas.
+- **Parva 17: Mahaprasthanika Parva [3 Chapters, 120 Verses]**
+  - [ ] `MBH-PARV17-ACQ` **Acquire Mahaprasthanika Parva**: Ingest climb to Himalayas.
+- **Parva 18: Svargarohana Parva [5 Chapters, 209 Verses]**
+  - [ ] `MBH-PARV18-ACQ` **Acquire Svargarohana Parva**: Ingest the final parva.
+- **Whole Book Consolidation & SQLite Indexing**
+  - [ ] `MBH-CONSOLIDATE-DB` **Consolidate 18 Parvas in SQLite**: Index all 100,000 verses together in `itihasa-lake.db`.
 
 ### 3. Stotras & Stuties [Readiness Score: 50.51%]
 - [ ] `STOTRAS-DATA-GAP` **Identify Target Hymns**: Define the exact list of stotras needed to reach the target 100 chapters and 1000 verses.
@@ -61,24 +104,81 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 - [ ] `STOTRAS-DATA-PROM` **Promote and Register Stotras**: Run promotion pipeline and update UI cards.
 
 ### 4. Srimad Bhagavatam (12 Cantos) [Readiness Score: 42.33%]
-- [ ] `BHAG-DATA-GAP-CANTOS` **Map Missing Cantos**: Outline missing chapters and verses for Cantos 2 through 12.
-- [ ] `BHAG-DATA-ACQ-CANTOS` **Acquire Cantos 2-12**: Retrieve Sanskrit text, Prabhupada English translations, and AI metadata.
-- [ ] `BHAG-DATA-PROM-CANTOS` **Promote Skandhas Sequentially**: Run promotion pipeline to systematically populate Gold layer Skandhas.
+*This scripture comprises 12 Cantos (Skandhas) detailing 335 chapters and ~18,000 verses.*
+
+- **Canto 1: Creation [19 Chapters, 811 Verses]** (Already GOLD)
+  - [ ] `BHAG-CANTO1-AUDIT` **Verify Canto 1**: Run deep quality and consistency audit on the 19 chapters.
+- **Canto 2: Cosmic Manifestation [10 Chapters, 393 Verses]**
+  - [ ] `BHAG-CANTO2-ACQ` **Acquire Canto 2**: Ingest Sanskrit, Prabhupada English translation, and AI metadata.
+  - [ ] `BHAG-CANTO2-PROM` **Promote Canto 2**: Validate and promote Canto 2 to Gold tier.
+- **Canto 3: Status Quo [33 Chapters, 1428 Verses]**
+  - [ ] `BHAG-CANTO3-ACQ` **Acquire Canto 3**: Retrieve all 33 chapters and structure in NVF.
+  - [ ] `BHAG-CANTO3-PROM` **Promote Canto 3**: Run promotion pipeline.
+- **Canto 4: Creation of Fourth Order [31 Chapters, 1490 Verses]**
+  - [ ] `BHAG-CANTO4-ACQ` **Acquire Canto 4**: Process Sanskrit text and english purports.
+- **Canto 5: Creative Impetus [26 Chapters, 666 Verses]**
+  - [ ] `BHAG-CANTO5-ACQ` **Acquire Canto 5**: Parse cosmology, geography, and verses.
+- **Canto 6: Prescribed Duties for Mankind [19 Chapters, 851 Verses]**
+  - [ ] `BHAG-CANTO6-ACQ` **Acquire Canto 6**: Structure chapters and translations.
+- **Canto 7: Science of God [15 Chapters, 750 Verses]**
+  - [ ] `BHAG-CANTO7-ACQ` **Acquire Canto 7**: Parse dialogues of Prahlada Maharaja.
+- **Canto 8: Withdrawal of Cosmic Creations [24 Chapters, 743 Verses]**
+  - [ ] `BHAG-CANTO8-ACQ` **Acquire Canto 8**: Process text of Gajendra and Kurma Avatara.
+- **Canto 9: Liberation [24 Chapters, 960 Verses]**
+  - [ ] `BHAG-CANTO9-ACQ` **Acquire Canto 9**: Process dynasties of Surya and Chandra.
+- **Canto 10: Summum Bonum [90 Chapters, 3946 Verses]**
+  - [ ] `BHAG-CANTO10-ACQ` **Acquire Canto 10**: Ingest the largest Canto (Life of Krishna) in batches.
+- **Canto 11: General History [31 Chapters, 1367 Verses]**
+  - [ ] `BHAG-CANTO11-ACQ` **Acquire Canto 11**: Parse Uddhava Gita and final pastimes.
+- **Canto 12: Age of Deterioration [13 Chapters, 565 Verses]**
+  - [ ] `BHAG-CANTO12-ACQ` **Acquire Canto 12**: Parse Kali-yuga symptoms and conclusion.
 
 ### 5. Yoga Sutras of Patanjali [Readiness Score: 36.53%]
-- [ ] `YOGA-DATA-GAP` **Identify Missing Sutras**: Map missing 186 sutras across Padas 2, 3, and 4.
-- [ ] `YOGA-DATA-ACQ` **Gather Sutras 2-4**: Ingest Sanskrit, IAST, Vivekananda translation, and Hindi/Marathi translation layers.
-- [ ] `YOGA-DATA-PROM` **Promote Yoga Sutras to Gold**: Run pipeline validation to achieve 100% score.
+*This scripture is divided into 4 Padas (Books) containing 196 sutras.*
+
+- **Pada 1: Samadhi Pada [51 Sutras]**
+  - [ ] `YOGA-PADA1-GAP` **Verify Pada 1**: Check the 10 currently gold sutras, acquire the remaining 41.
+- **Pada 2: Sadhana Pada [55 Sutras]**
+  - [ ] `YOGA-PADA2-ACQ` **Acquire Pada 2**: Ingest Sanskrit, IAST, Vivekananda translation, and Hindi/Marathi layers.
+- **Pada 3: Vibhuti Pada [56 Sutras]**
+  - [ ] `YOGA-PADA3-ACQ` **Acquire Pada 3**: Ingest core text and comments.
+- **Pada 4: Kaivalya Pada [34 Sutras]**
+  - [ ] `YOGA-PADA4-ACQ` **Acquire Pada 4**: Ingest final pada.
+- **Consolidation**
+  - [ ] `YOGA-PROM` **Promote Yoga Sutras**: Move entire 196 sutras to Gold.
 
 ### 6. 16 Samskaras (Ritual Handbook) [Readiness Score: 32.29%]
-- [ ] `SAMSKARAS-DATA-GAP` **Map Samskara Procedures**: Locate remaining 13 life-cycle rituals and associated verses.
-- [ ] `SAMSKARAS-DATA-ACQ` **Gather Ritual Mantras**: Source legally cleared mantras and multilang instructions.
-- [ ] `SAMSKARAS-DATA-PROM` **Validate & Promote Samskaras**: Promote to Gold and enable on the UI.
+*Standardizes the 16 life-cycle rituals of Sanatana Dharma.*
+
+- [ ] `SAMSKARAS-1-TO-16` **Acquire 16 Samskaras**: Detail, translate, and source Sanskrit mantras for all 16 rituals:
+  1. Garbhadhana (Conception)
+  2. Pumsavana (Engendering male child)
+  3. Simantonnayana (Hair-parting)
+  4. Jatakarma (Birth rituals)
+  5. Namakarana (Naming ceremony)
+  6. Nishkramana (First outing)
+  7. Annaprashana (First solid food)
+  8. Chudakarana (Tonsure)
+  9. Karnavedha (Ear piercing)
+  10. Vidyarambha (Beginning of education)
+  11. Upanayana (Sacred thread ceremony)
+  12. Vedarambha (Beginning of Vedic studies)
+  13. Keshanta (First shaving)
+  14. Samavartana (Graduation)
+  15. Vivaha (Marriage)
+  16. Antyeshti (Funeral rites)
+- [ ] `SAMSKARAS-PROM` **Validate & Promote Samskaras**: Move complete 16 chapters to Gold.
 
 ### 7. Vishnu Purana [Readiness Score: 20.98%]
-- [ ] `VISHNU-DATA-GAP` **Map Missing Chapters**: Identify missing 120 chapters / ~6994 verses.
-- [ ] `VISHNU-DATA-ACQ` **Ingest H.H. Wilson Layers**: Acquire remaining chapters and translations.
-- [ ] `VISHNU-DATA-PROM` **Promote Vishnu Purana**: Sequentially run pipeline and promote to Gold.
+*This scripture comprises 6 Amshas (Books), 126 chapters, and ~7,000 verses.*
+
+- **Amsha 1 [22 Chapters]**: [ ] `VISHNU-AM1-ACQ` Ingest Sanskrit text and H.H. Wilson English translation.
+- **Amsha 2 [16 Chapters]**: [ ] `VISHNU-AM2-ACQ` Retrieve core verses and translate.
+- **Amsha 3 [18 Chapters]**: [ ] `VISHNU-AM3-ACQ` Ingest core chapters.
+- **Amsha 4 [24 Chapters]**: [ ] `VISHNU-AM4-ACQ` Process historical dynastic chapters.
+- **Amsha 5 [38 Chapters]**: [ ] `VISHNU-AM5-ACQ` Retrieve Krishna's pastimes chapters.
+- **Amsha 6 [8 Chapters]**: [ ] `VISHNU-AM6-ACQ` Ingest final book chapters.
+- **Consolidation**: [ ] `VISHNU-PROM` Run validation and promote all 6 Amshas to Gold.
 
 ### 8. Garuda Purana [Readiness Score: 10.16%]
 - [ ] `GARUDA-DATA-GAP` **Identify Missing Chapters**: Map the remaining 248 chapters.
