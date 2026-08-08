@@ -23,6 +23,8 @@ export default function SearchClient() {
   const [results, setResults] = useState<SearchResult[]>([])
   const [isSearching, setIsSearching] = useState(false)
   const [activeTab, setActiveTab] = useState<'all' | 'itihas' | 'upanishad' | 'veda' | 'purana' | 'other'>('all')
+  const [displayedCount, setDisplayedCount] = useState(50)
+  const [isPending, startTransition] = React.useTransition()
 
   useEffect(() => {
     const delayDebounceFn = setTimeout(async () => {
@@ -31,6 +33,7 @@ export default function SearchClient() {
         try {
           const res = await searchLake(query)
           setResults((res as unknown as SearchResult[]) || [])
+          setDisplayedCount(50)
         } catch (error) {
           console.error('Search failed:', error)
         } finally {
@@ -45,20 +48,25 @@ export default function SearchClient() {
   }, [query])
 
   const filteredResults = useMemo(() => {
-    const base = [...results]
+    let base = results
+
+    if (activeTab !== 'all') {
+      base = base.filter(r => {
+          const meta = VEDIC_LIBRARY_MAP.get(r.textSlug)
+          return meta?.category === activeTab
+      })
+    }
+
+    const sorted = [...base]
     
     // BUG-028: Natural sort by text, chapter, verse
-    base.sort((a, b) => {
+    sorted.sort((a, b) => {
       if (a.textSlug !== b.textSlug) return a.textSlug.localeCompare(b.textSlug)
       if (a.chapter !== b.chapter) return a.chapter - b.chapter
       return a.verse - b.verse
     })
 
-    if (activeTab === 'all') return base
-    return base.filter(r => {
-        const meta = VEDIC_LIBRARY_MAP.get(r.textSlug)
-        return meta?.category === activeTab
-    })
+    return sorted
   }, [results, activeTab])
 
   const getSnippet = (text: string, q: string) => {
@@ -135,12 +143,17 @@ export default function SearchClient() {
           {CATEGORIES.map((tab) => (
               <button
                 key={tab}
-                onClick={() => setActiveTab(tab as 'all' | 'itihas' | 'upanishad' | 'veda' | 'purana' | 'other')}
+                onClick={() => {
+                  startTransition(() => {
+                    setActiveTab(tab as 'all' | 'itihas' | 'upanishad' | 'veda' | 'purana' | 'other')
+                    setDisplayedCount(50)
+                  })
+                }}
                 className={`px-6 py-3 rounded-2xl text-[11px] font-black uppercase tracking-[0.2em] transition-all whitespace-nowrap border ${
                   activeTab === tab
                   ? 'bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900 border-stone-900 dark:border-stone-100 shadow-xl'
                   : 'bg-white dark:bg-stone-800 text-stone-800 dark:text-stone-400 border-stone-300 dark:border-stone-700 hover:border-orange-400 dark:hover:border-orange-800 hover:text-orange-700 dark:hover:text-stone-300'
-                }`}
+                } ${isPending ? 'opacity-50 pointer-events-none' : ''}`}
               >
                 {tab === 'all' ? 'All Scriptures' : String(tab).charAt(0).toUpperCase() + String(tab).slice(1)}
               </button>
@@ -149,11 +162,12 @@ export default function SearchClient() {
 
         <div className="grid grid-cols-1 gap-6">
           {filteredResults.length > 0 ? (
-            filteredResults.map((result, idx) => {
-              const meta = VEDIC_LIBRARY_MAP.get(result.textSlug)
-              const snippet = getSnippet(result.slok, query) || getSnippet(result.transliteration, query)
+            <>
+              {filteredResults.slice(0, displayedCount).map((result, idx) => {
+                const meta = VEDIC_LIBRARY_MAP.get(result.textSlug)
+                const snippet = getSnippet(result.slok, query) || getSnippet(result.transliteration, query)
 
-              return (
+                return (
                 <Link 
                   key={idx}
                   href={`/${result.textSlug}/${result.chapter}#verse-${result.verse}`}
@@ -178,8 +192,19 @@ export default function SearchClient() {
                     )}
                   </div>
                 </Link>
-              )
-            })
+                )
+              })}
+              {filteredResults.length > displayedCount && (
+                <div className="flex justify-center mt-6">
+                  <button
+                    onClick={() => setDisplayedCount(prev => prev + 50)}
+                    className="px-8 py-3 bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 hover:border-orange-400 dark:hover:border-orange-800 text-stone-700 dark:text-stone-300 font-bold text-sm rounded-full transition-all shadow-sm hover:shadow-md"
+                  >
+                    Load More ({filteredResults.length - displayedCount} remaining)
+                  </button>
+                </div>
+              )}
+            </>
           ) : query.length > 2 && !isSearching ? (
             <div className="text-center py-32 bg-white dark:bg-stone-900 rounded-[3rem] border border-dashed border-stone-200 dark:border-stone-700 shadow-inner">
                <div className="text-6xl mb-6 opacity-20">🕯️</div>
