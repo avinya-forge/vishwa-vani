@@ -81,6 +81,16 @@ export class VedicDataService {
   }
 
   /**
+   * Enforces the Lean UI "Max 2" scholar limit by pruning the payload layers
+   */
+  private prunePayload(verses: EnrichedVerse[]): EnrichedVerse[] {
+    return verses.map(verse => ({
+      ...verse,
+      layers: verse.layers && Array.isArray(verse.layers) ? verse.layers.slice(0, 2) : []
+    }));
+  }
+
+  /**
    * Load and enrich chapter data with AI context
    */
   async getChapterData(
@@ -115,7 +125,10 @@ export class VedicDataService {
     }
 
     // Enrich verses with AI context and UI metadata
-    const enrichedVerses = await this.enrichVerses(verses, options?.includeAI);
+    let enrichedVerses = await this.enrichVerses(verses, options?.includeAI);
+
+    // Dynamically prune layers to enforce Max 2 limits before sending payload to UI
+    enrichedVerses = this.prunePayload(enrichedVerses);
 
     // Generate navigation data
     const navigation = this.generateNavigation(textMetadata, chapterNumber);

@@ -3,7 +3,6 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import React from 'react'
 
-// Assuming we would load from data/ontology/tattvas.json
 import tattvasData from '@/data/ontology/tattvas.json'
 import type { Tattva } from '@/types/ontology'
 
@@ -73,14 +72,14 @@ export default function TattvaPage({ params }: { params: { slug: string } }) {
               className="p-6 border border-stone-200 dark:border-stone-800 rounded-2xl hover:border-orange-400 dark:hover:border-orange-800 hover:shadow-lg transition-all group bg-white dark:bg-stone-900"
             >
               <div className="text-xs font-bold text-stone-400 uppercase tracking-wider mb-2">
-                {source.textSlug.replace('-', ' ')}
+                {source.textSlug.replace(/-/g, ' ')}
               </div>
               <div className="text-lg font-serif text-stone-900 dark:text-stone-100 mb-3 group-hover:text-orange-600 transition-colors">
                 Ch. {source.chapter}, Verse {source.verse}
               </div>
               {source.preview && (
                 <p className="text-sm text-stone-600 dark:text-stone-400 italic line-clamp-2">
-                  "{source.preview}"
+                  &quot;{source.preview}&quot;
                 </p>
               )}
             </Link>
@@ -112,7 +111,7 @@ export default function TattvaPage({ params }: { params: { slug: string } }) {
                     href={`/${link.target.textSlug}/${link.target.chapter}#verse-${link.target.verse}`}
                     className="text-lg font-serif font-bold text-stone-900 dark:text-stone-100 hover:text-orange-600 dark:hover:text-orange-400 mb-2 inline-block"
                   >
-                    {link.target.textSlug.replace('-', ' ')} — {link.target.chapter}:{link.target.verse}
+                    {link.target.textSlug.replace(/-/g, ' ')} — {link.target.chapter}:{link.target.verse}
                   </Link>
                   {link.rationale && (
                     <p className="text-sm text-stone-600 dark:text-stone-400">{link.rationale}</p>
