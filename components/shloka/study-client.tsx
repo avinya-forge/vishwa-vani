@@ -74,8 +74,8 @@ export default function StudyClient({
 
     const options = {
       root: null,
-      rootMargin: '0px',
-      threshold: 0.5
+      rootMargin: '-10% 0px -10% 0px',
+      threshold: [0.1, 0.5, 0.9]
     };
 
     const callback = (entries: IntersectionObserverEntry[]) => {

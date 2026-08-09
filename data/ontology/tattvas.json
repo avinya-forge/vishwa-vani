@@ -1,0 +1,138 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2026-04-20T12:00:00Z",
+  "tattvas": {
+    "dharma": {
+      "id": "dharma",
+      "label": "Dharma",
+      "sanskritLabel": "धर्म",
+      "definition": "The cosmic law underlying right behavior and social order. In Hinduism, it refers to the behaviors that are considered to be in accord with Rta, the order that makes life and universe possible.",
+      "synonyms": [
+        "duty",
+        "righteousness",
+        "moral law",
+        "universal order",
+        "virtue",
+        "path"
+      ],
+      "category": "ethics",
+      "primarySources": [
+        {
+          "textSlug": "bhagavad-gita",
+          "chapter": 2,
+          "verse": 31,
+          "preview": "Considering your specific duty as a Kshatriya, you should not hesitate...",
+          "relevance": 0.95
+        },
+        {
+          "textSlug": "bhagavad-gita",
+          "chapter": 3,
+          "verse": 35,
+          "preview": "Those who constantly practice this teaching of Mine, with faith...",
+          "relevance": 0.88
+        }
+      ],
+      "crossReferences": [
+        {
+          "target": {
+            "textSlug": "mahabharata",
+            "chapter": 1,
+            "verse": 1,
+            "preview": "Narayana and Nara, the best of male beings...",
+            "relevance": 0.8
+          },
+          "relationshipType": "expands",
+          "rationale": "The Mahabharata serves as an expansive narrative illustrating Dharma in complex situations."
+        }
+      ]
+    },
+    "brahman": {
+      "id": "brahman",
+      "label": "Brahman",
+      "sanskritLabel": "ब्रह्मन्",
+      "definition": "The ultimate reality underlying all phenomena in the Hindu Vedic philosophy.",
+      "synonyms": [
+        "ultimate reality",
+        "supreme being",
+        "absolute",
+        "cosmic spirit"
+      ],
+      "category": "theology",
+      "primarySources": [
+        {
+          "textSlug": "kena-upanishad",
+          "chapter": 1,
+          "verse": 1,
+          "preview": "By whom willed and directed does the mind light on its objects?",
+          "relevance": 0.99
+        },
+        {
+          "textSlug": "isha-upanishad",
+          "chapter": 1,
+          "verse": 1,
+          "preview": "All this, whatsoever moves in this moving world, is enveloped by God.",
+          "relevance": 0.95
+        }
+      ],
+      "crossReferences": [
+        {
+          "target": {
+            "textSlug": "bhagavad-gita",
+            "chapter": 8,
+            "verse": 3,
+            "preview": "The Supreme Indestructible is Brahman...",
+            "relevance": 0.98
+          },
+          "relationshipType": "defines",
+          "rationale": "Krishna explicitly defines the nature of Brahman."
+        }
+      ]
+    },
+    "atman": {
+      "id": "atman",
+      "label": "Atman",
+      "sanskritLabel": "आत्मन्",
+      "definition": "The spiritual life principle of the universe, especially when regarded as inherent in the real self of the individual.",
+      "synonyms": [
+        "self",
+        "soul",
+        "inner essence",
+        "pure consciousness"
+      ],
+      "category": "psychology",
+      "primarySources": [
+        {
+          "textSlug": "bhagavad-gita",
+          "chapter": 2,
+          "verse": 20,
+          "preview": "The soul that dwells in the body of all can never be slain...",
+          "relevance": 0.98
+        }
+      ],
+      "crossReferences": []
+    },
+    "karma": {
+      "id": "karma",
+      "label": "Karma",
+      "sanskritLabel": "कर्म",
+      "definition": "The universal principle of cause and effect, action and reaction, which Hindus believe governs all consciousness.",
+      "synonyms": [
+        "action",
+        "deed",
+        "fate",
+        "cause and effect"
+      ],
+      "category": "metaphysics",
+      "primarySources": [
+        {
+          "textSlug": "bhagavad-gita",
+          "chapter": 2,
+          "verse": 47,
+          "preview": "You have a right to perform your prescribed duty, but you are not entitled to the fruits of action.",
+          "relevance": 1.0
+        }
+      ],
+      "crossReferences": []
+    }
+  }
+}

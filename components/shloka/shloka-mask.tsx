@@ -116,6 +116,8 @@ export default function ShlokaMask({ text, className, fontSize }: { text: string
         <div className={`group relative overflow-hidden flex justify-center ${className}`}>
             <canvas
                 ref={canvasRef}
+                width={800}
+                height={200}
                 className="max-w-full cursor-default pointer-events-none select-none"
                 style={{
                     filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.05))',
