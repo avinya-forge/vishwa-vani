@@ -20,6 +20,7 @@ const CATEGORIES = ['all', ...Array.from(new Set(VEDIC_LIBRARY.map(l => l.catego
 export default function SearchClient() {
 
   const [query, setQuery] = useState('')
+  const [searchQuery, setSearchQuery] = useState('')
   const [results, setResults] = useState<SearchResult[]>([])
   const [isSearching, setIsSearching] = useState(false)
   const [activeTab, setActiveTab] = useState<'all' | 'itihas' | 'upanishad' | 'veda' | 'purana' | 'other'>('all')
@@ -33,6 +34,7 @@ export default function SearchClient() {
         try {
           const res = await searchLake(query)
           setResults((res as unknown as SearchResult[]) || [])
+          setSearchQuery(query)
           setDisplayedCount(50)
         } catch (error) {
           console.error('Search failed:', error)
@@ -41,6 +43,7 @@ export default function SearchClient() {
         }
       } else {
         setResults([])
+        setSearchQuery('')
       }
     }, 400)
 
@@ -165,7 +168,7 @@ export default function SearchClient() {
             <>
               {filteredResults.slice(0, displayedCount).map((result, idx) => {
                 const meta = VEDIC_LIBRARY_MAP.get(result.textSlug)
-                const snippet = getSnippet(result.slok, query) || getSnippet(result.transliteration, query)
+                const snippet = getSnippet(result.slok, searchQuery) || getSnippet(result.transliteration, searchQuery)
 
                 return (
                 <Link 
