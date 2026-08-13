@@ -16,7 +16,7 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 ### 1. Semantic Deep-Linking Protocol (Ontological Knowledge Graph)
 - [ ] `FEAT-SEM-001` **Define Tattva Ontology Schema**: Define a JSON schema (`types/ontology.ts`) for global semantic concepts (Tattvas) such as "Dharma", "Brahman", "Atman", and "Karma" mapped to scripture coordinates.
 - [ ] `FEAT-SEM-002` **Static Ontology Seed Mapping**: Create `data/ontology/tattvas.json` containing initial hand-curated linkages across Bhagavad Gita, Isha Upanishad, and Kena Upanishad.
-- [ ] `FEAT-SEM-003` **Automated Linkage Indexing Script**: Write `scripts/generate_semantic_links.py` to crawl the Gold text corpus and automatically index keyword coordinates.
+- [x] `FEAT-SEM-003` **Automated Linkage Indexing Script**: Write `scripts/generate_semantic_links.py` to crawl the Gold text corpus and automatically index keyword coordinates.
 - [ ] `FEAT-SEM-004` **Cross-Scripture Tattva Router**: Implement dynamic route page `app/tattvas/[slug]/page.tsx` displaying connected verses dynamically across all scriptures.
 - [ ] `FEAT-SEM-005` **UI Semantic Explorer Drawer**: Implement an interactive, visual sliding drawer in the reader UI allowing readers to view and jump to cross-scripture linked verses.
 
