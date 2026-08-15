@@ -33,7 +33,7 @@
         "sa": "श्रीमद् भगवद्गीता"
       },
       "total_chapters": 18,
-      "total_verses": 657,
+      "total_verses": 700,
       "languages": [
         "en",
         "hi",
@@ -59,7 +59,7 @@
         {
           "number": 1,
           "file": "bhagavad-gita-chapter-1.json",
-          "verse_count": 39,
+          "verse_count": 47,
           "theme": "Arjuna's grief on the battlefield of Kurukshetra",
           "yoga_type": "Arjuna Vishada Yoga",
           "stotra_present": false
@@ -67,7 +67,7 @@
         {
           "number": 2,
           "file": "bhagavad-gita-chapter-2.json",
-          "verse_count": 71,
+          "verse_count": 72,
           "theme": "Sankhya philosophy and the eternal Self explained by Krishna",
           "yoga_type": "Sankhya Yoga",
           "stotra_present": false
@@ -91,7 +91,7 @@
         {
           "number": 5,
           "file": "bhagavad-gita-chapter-5.json",
-          "verse_count": 27,
+          "verse_count": 29,
           "theme": "True renunciation through knowledge and detachment",
           "yoga_type": "Karma-Sanyasa Yoga",
           "stotra_present": false
@@ -99,7 +99,7 @@
         {
           "number": 6,
           "file": "bhagavad-gita-chapter-6.json",
-          "verse_count": 42,
+          "verse_count": 47,
           "theme": "Meditation, mind-mastery, and the path of inner yoga",
           "yoga_type": "Dhyana Yoga",
           "stotra_present": false
@@ -131,7 +131,7 @@
         {
           "number": 10,
           "file": "bhagavad-gita-chapter-10.json",
-          "verse_count": 40,
+          "verse_count": 42,
           "theme": "Divine manifestations and the infinite glories of Krishna",
           "yoga_type": "Vibhuti Yoga",
           "stotra_present": false
@@ -139,7 +139,7 @@
         {
           "number": 11,
           "file": "bhagavad-gita-chapter-11.json",
-          "verse_count": 52,
+          "verse_count": 55,
           "theme": "Arjuna's vision of Krishna's Universal Form",
           "yoga_type": "Vishvarupa-Darshana Yoga",
           "stotra_present": false
@@ -147,7 +147,7 @@
         {
           "number": 12,
           "file": "bhagavad-gita-chapter-12.json",
-          "verse_count": 16,
+          "verse_count": 20,
           "theme": "Devotion as the highest and most accessible path",
           "yoga_type": "Bhakti Yoga",
           "stotra_present": false
@@ -155,7 +155,7 @@
         {
           "number": 13,
           "file": "bhagavad-gita-chapter-13.json",
-          "verse_count": 29,
+          "verse_count": 34,
           "theme": "The field, the knower of the field, and self-knowledge",
           "yoga_type": "Kshetra-Kshetrajna Vibhaga Yoga",
           "stotra_present": false
@@ -163,7 +163,7 @@
         {
           "number": 14,
           "file": "bhagavad-gita-chapter-14.json",
-          "verse_count": 24,
+          "verse_count": 27,
           "theme": "The three Gunas — Sattva, Rajas, Tamas — and transcendence",
           "yoga_type": "Gunatraya-Vibhaga Yoga",
           "stotra_present": false
@@ -171,7 +171,7 @@
         {
           "number": 15,
           "file": "bhagavad-gita-chapter-15.json",
-          "verse_count": 19,
+          "verse_count": 20,
           "theme": "The Purushottama — the Supreme Person beyond perishable and imperishable",
           "yoga_type": "Purushottama Yoga",
           "stotra_present": true
@@ -179,7 +179,7 @@
         {
           "number": 16,
           "file": "bhagavad-gita-chapter-16.json",
-          "verse_count": 19,
+          "verse_count": 24,
           "theme": "Divine and demonic natures and the supremacy of scripture",
           "yoga_type": "Daivasura-Sampad-Vibhaga Yoga",
           "stotra_present": false
@@ -187,7 +187,7 @@
         {
           "number": 17,
           "file": "bhagavad-gita-chapter-17.json",
-          "verse_count": 26,
+          "verse_count": 28,
           "theme": "The three-fold faith in worship, austerity, and charity",
           "yoga_type": "Shraddhatraya-Vibhaga Yoga",
           "stotra_present": false
@@ -195,7 +195,7 @@
         {
           "number": 18,
           "file": "bhagavad-gita-chapter-18.json",
-          "verse_count": 76,
+          "verse_count": 78,
           "theme": "The supreme secret — surrender to Krishna as the ultimate liberation",
           "yoga_type": "Moksha-Sanyasa Yoga",
           "stotra_present": false

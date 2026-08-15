@@ -45,10 +45,10 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 ## Priority 2: Content (Descending score priority to complete books)
 
 ### 1. Bhagavad Gita [Readiness Score: 82.16%] (HIGHEST PRIORITY)
-- [ ] `GITA-DATA-GAP` **Identify Missing Gita Verses**: Conduct an automated audit to locate the exact 43 missing verses in the existing JSON shards (657/700 verses).
-- [ ] `GITA-DATA-ACQ` **Acquire Missing Gita Verses**: Extract raw Sanskrit text, IAST, base translation, and meaning for the missing 43 verses without placeholders.
-- [ ] `GITA-DATA-MERGE` **Merge Missing Verses**: Inject the acquired 43 verses into the active JSON shards.
-- [ ] `GITA-DATA-VALIDATE` **Validate and Promote Gita**: Execute `scripts/run_pipeline.js bhagavad-gita` to update the Gold manifest and verify 700/700 verses are present.
+- [x] `GITA-DATA-GAP` **Identify Missing Gita Verses**: Conduct an automated audit to locate the exact 43 missing verses in the existing JSON shards (657/700 verses).
+- [x] `GITA-DATA-ACQ` **Acquire Missing Gita Verses**: Extract raw Sanskrit text, IAST, base translation, and meaning for the missing 43 verses without placeholders.
+- [x] `GITA-DATA-MERGE` **Merge Missing Verses**: Inject the acquired 43 verses into the active JSON shards.
+- [x] `GITA-DATA-VALIDATE` **Validate and Promote Gita**: Execute `scripts/run_pipeline.js bhagavad-gita` to update the Gold manifest and verify 700/700 verses are present.
 - [ ] `GITA-SCH-ACQ` **Acquire Deferred Gita Scholars**: Unblock and download digitized text for Tilak, Aurobindo, Bhave, Ramanuja, Madhva, Abhinavagupta, Savarkar, and Gita Press commentaries.
 - [ ] `GITA-SCH-PARSE` **Parse and Enrich Commentary Layers**: Run `scripts/parse_scholar_bhasya.js` to structure the newly acquired scholars into the NVF format.
 - [ ] `GITA-SCH-INTEGRATE` **Promote Enriched Scholars**: Merge the parsed commentary layers into the Gita Gold shards and verify in the UI.

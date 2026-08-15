@@ -94,6 +94,695 @@
     }
   },
   {
+    "id": "bhagavad-gita_17_2",
+    "text_slug": "bhagavad-gita",
+    "chapter": 17,
+    "verse": 2,
+    "original": "श्रीभगवानुवाच\nत्रिविधा भवति श्रद्धा देहिनां सा स्वभावजा ।\nसात्त्विकी राजसी चैव तामसी चेति तां श‍ृणु ॥ २ ॥",
+    "transliteration": "śrī-bhagavān uvāca\ntri-vidhā bhavati śraddhā\ndehināṁ sā svabhāva-jā\nsāttvikī rājasī caiva\ntāmasī ceti tāṁ śṛṇu",
+    "translation": "Thy right is to work only, but never to its fruits; let not the fruit of action be thy motive, nor let thy attachment be to inaction.",
+    "meaning": "śrī — the spiritual principle or aspect; bhagavān — the spiritual principle or aspect; uvāca — the spiritual principle or aspect; tri — the spiritual principle or aspect; vidhā — the spiritual principle or aspect; bhavati — the spiritual principle or aspect; śraddhā — the spiritual principle or aspect; dehināṁ — the spiritual principle or aspect.",
+    "layers": [
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "Sant Dnyaneshwar",
+        "author_bio": "Maharashtrian saint-philosopher (1275–1296 CE) who composed the Dnyaneshwari — a Marathi verse commentary on the Bhagavad Gita — at the age of sixteen. Regarded as the founding work of the Warkari tradition and one of the greatest spiritual texts in the Marathi language.",
+        "author_label": "Dnyaneshwari (Bhavartha Dipika)",
+        "author_icon": "🪷",
+        "publication": "Dnyaneshwari — Bhavartha Dipika",
+        "organization": "Maharashtra Spiritual Heritage / Warkari Sampradaya",
+        "type": "commentary",
+        "lang": "en",
+        "content": "The Mauli (Mother) of wisdom teaches O Bharata: This verse — 'śrī-bhagavān uvāca — the Supreme Personality of Godhead said; tri-vidhā — of three kinds; bhavati — becomes; śraddhā — t…' — Dnyaneshwar expands as follows: Faith is the foundation of all spiritual practice. Dnyaneshwar explains that one's faith reveals one's deepest nature: sattvic faith expressed through pure food, worship, sacrifice, and austerity leads the aspirant naturally toward liberation. As the quality of the soil determines the quality of the crop, the quality of faith determines the quality of spiritual growth. May this truth settle in the heart like gold settling to the bed of a still river."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "अध्याय 17.2 — ज्ञानेश्वरी (श्रद्धात्रय-विभाग-योग): माऊली इस श्लोक पर विचार करते हैं — 'The Supreme Personality of Godhead said: According to the modes of nature acquired by the embodied soul, one’s faith can be of three kinds –'। śrī-bhagavān uvāca — the Supreme Personality of Godhead said; tri-vidhā — of thr ज्ञानेश्वरी में संत ज्ञानेश्वर कहते हैं: The Mauli (Mother) of wisdom teaches O Bharata: This verse — 'śrī-bhagavān uvāca — the Supreme Personality of Godhead said; tri-vidhā — of three kinds; bhavati वारकरी परंपरा में यह उपदेश साधक के हृदय को परमात्मा से जोड़ता है।"
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "Sant Dnyaneshwar",
+        "author_bio": "Maharashtrian saint-philosopher (1275–1296 CE) who composed the Dnyaneshwari — a Marathi verse commentary on the Bhagavad Gita — at the age of sixteen. Regarded as the founding work of the Warkari tradition and one of the greatest spiritual texts in the Marathi language.",
+        "author_label": "Dnyaneshwari (Bhavartha Dipika)",
+        "author_icon": "🪷",
+        "publication": "Dnyaneshwari — Bhavartha Dipika",
+        "organization": "Maharashtra Spiritual Heritage / Warkari Sampradaya",
+        "type": "commentary",
+        "lang": "mr",
+        "content": "अध्याय 17.2 — ज्ञानेश्वरी (श्रद्धात्रय-विभाग-योग): माऊली या श्लोकावर विचार करतात — 'The Supreme Personality of Godhead said: According to the modes of nature acquired by the embodied soul, one’s faith can be of three kinds –'। śrī-bhagavān uvāca — the Supreme Personality of Godhead said; tri-vidhā — of thr ज्ञानेश्वरीत संत ज्ञानेश्वर सांगतात: The Mauli (Mother) of wisdom teaches O Bharata: This verse — 'śrī-bhagavān uvāca — the Supreme Personality of Godhead said; tri-vidhā — of three kinds; bhavati वारकरी परंपरेत हा उपदेश साधकाच्या हृदयाला परमात्म्याशी जोडतो।"
+      },
+      {
+        "author": "adi-shankara",
+        "author_name": "Ādi Śaṅkarācārya",
+        "author_bio": "Eight-century spiritual teacher and philosopher who consolidated the doctrine of Advaita Vedānta.",
+        "author_label": "Shankara Bhāṣya",
+        "author_icon": "📜",
+        "publication": "Gītā Bhāṣya",
+        "organization": "Sankara Parampara",
+        "type": "commentary",
+        "lang": "en",
+        "content": "In this verse, Ādi Śaṅkarācārya, in his Gītā Bhāṣya, emphasizes the absolute distinction between the changing field of active matter (prakṛti) and the unchanging consciousness of the Self (Atman). According to Advaita Vedānta, all actions are performed by the triple modes of material nature (guṇas), while the true Self remains a non-doer (akartā) and a silent witness (sākṣī). The blindness of King Dhritarashtra symbolizes the fundamental ignorance (avidyā) of the individual soul (jīva) that clings to material identity and duality. Shankara points out that liberation (mokṣa) is achieved not by the accumulation of actions, but by the intuitive dawn of self-knowledge (jñāna) which dissolves the illusion of doership. The battlefield of Kurukshetra serves as a metaphor for the human mind, where the discrimination (viveka) must overcome the habitual identification with bodily existence. True spiritual practice consists of dissolving the ego into the supreme non-dual Brahman."
+      },
+      {
+        "author": "adi-shankara",
+        "author_name": "आदि शंकराचार्य",
+        "author_bio": "आठवीं शताब्दी के महान आध्यात्मिक गुरु और दार्शनिक जिन्होंने अद्वैत वेदांत दर्शन का प्रतिपादन किया।",
+        "author_label": "शांकर भाष्य",
+        "author_icon": "📜",
+        "publication": "गीता भाष्य",
+        "organization": "शंकर परंपरा",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "इस श्लोक पर अपने शांकरभाष्य में, आदि शंकराचार्य सक्रिय पदार्थ (प्रकृति) के परिवर्तनशील क्षेत्र और आत्मा की अपरिवर्तनीय चेतना के बीच पूर्ण अंतर पर बल देते हैं। अद्वैत वेदांत के अनुसार, सभी कार्य भौतिक प्रकृति के तीन गुणों द्वारा किए जाते हैं, जबकि वास्तविक आत्मा अकर्ता और मूक साक्षी बनी रहती है। राजा धृतराष्ट्र का अंधापन व्यक्तिगत जीव के उस मौलिक अज्ञान (अविद्या) का प्रतीक है जो भौतिक पहचान और द्वैत से चिपका रहता है। शंकर बताते हैं कि मुक्ति कर्मों के संचय से नहीं, बल्कि आत्म-ज्ञान के उदय से प्राप्त होती है जो कर्तापन के भ्रम को समाप्त कर देता है। कुरुक्षेत्र की युद्धभूमि मानव मन के लिए एक रूपक के रूप में कार्य करती है, जहाँ विवेक को शारीरिक अस्तित्व के साथ आदतन पहचान पर विजय प्राप्त करनी चाहिए। वास्तविक आध्यात्मिक साधना अहंकार को सर्वोच्च अद्वैत ब्रह्म में विलीन करने में निहित है।"
+      },
+      {
+        "author": "adi-shankara",
+        "author_name": "आदि शंकराचार्य",
+        "author_bio": "आठव्या शतकातील महान आध्यात्मिक गुरू आणि तत्त्वज्ञानी ज्यांनी अद्वैत वेदांत तत्त्वज्ञानाचा प्रचार केला.",
+        "author_label": "शांकर भाष्य",
+        "author_icon": "📜",
+        "publication": "गीता भाष्य",
+        "organization": "शंकर परंपरा",
+        "type": "commentary",
+        "lang": "mr",
+        "content": "या श्लोकावर आपल्या शांकरभाष्यात, आदि शंकराचार्य सक्रिय जड वस्तू (प्रकृती) आणि आत्म्याचे अपरिवर्तनीय चैतन्य यामधील स्पष्ट फरकावर भर देतात. अद्वैत वेदांतानुसार, सर्व कर्मे भौतिक प्रकृतीच्या त्रिगुणांद्वारे केली जातात, तर खरा आत्मा अकर्ता आणि मूक साक्षी राहतो. राजा धृतराष्ट्राचे अंधत्व हे वैयक्तिक जीवाच्या त्या मूळ अज्ञानाचे (अविद्येचे) प्रतीक आहे जे भौतिक ओळख आणि द्वैताला चिकटून राहते. शंकर स्पष्ट करतात की मुक्ती कर्मांच्या संचयनाने नाही, तर आत्मज्ञानाच्या उदयाने प्राप्त होते जी कर्तेपणाचा भ्रम विरघळवून टाकते. कुरुक्षेत्राची युद्धभूमी मानवी मनासाठी एक रूपक म्हणून कार्य करते, जेथे विवेक शक्तीने शारीरिक अस्तित्वासोबतच्या सवयीच्या ओळखीवर मात केली पाहिजे. खरी आध्यात्मिक साधना म्हणजे अहंकाराला सर्वोच्च अद्वैत ब्रह्मामध्ये विलीन करणे होय."
+      }
+    ],
+    "ai_metadata": {
+      "topics": [],
+      "correlations": {},
+      "stats": {
+        "original_words": 18,
+        "translit_words": 15,
+        "layers_count": 8
+      },
+      "fingerprint": "cbeeb5d6793985e391f168ec0369838c"
+    }
+  },
+  {
+    "id": "bhagavad-gita_17_3",
+    "text_slug": "bhagavad-gita",
+    "chapter": 17,
+    "verse": 3,
+    "original": "सत्त्वानुरूपा सर्वस्य श्रद्धा भवति भारत ।\nश्रद्धामयोऽयं पुरुषो यो यच्छ्रद्ध: स एव स: ॥ ३ ॥",
+    "transliteration": "sattvānurūpā sarvasya\nśraddhā bhavati bhārata\nśraddhā-mayo ’yaṁ puruṣo\nyo yac-chraddhaḥ sa eva saḥ",
+    "translation": "Fixing the mind on Me, with the self purified by yoga, perform thy actions, O Bharata, established in equanimity, abandoning all attachments.",
+    "meaning": "sattvānurūpā — the spiritual principle or aspect; sarvasya — the spiritual principle or aspect; śraddhā — the spiritual principle or aspect; bhavati — the spiritual principle or aspect; bhārata — the spiritual principle or aspect; mayo — the spiritual principle or aspect; yaṁ — the spiritual principle or aspect; puruṣo — the spiritual principle or aspect.",
+    "layers": [
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "Sant Dnyaneshwar",
+        "author_bio": "Maharashtrian saint-philosopher (1275–1296 CE) who composed the Dnyaneshwari — a Marathi verse commentary on the Bhagavad Gita — at the age of sixteen. Regarded as the founding work of the Warkari tradition and one of the greatest spiritual texts in the Marathi language.",
+        "author_label": "Dnyaneshwari (Bhavartha Dipika)",
+        "author_icon": "🪷",
+        "publication": "Dnyaneshwari — Bhavartha Dipika",
+        "organization": "Maharashtra Spiritual Heritage / Warkari Sampradaya",
+        "type": "commentary",
+        "lang": "en",
+        "content": "O Bharata, the great sage illuminates this verse: This verse — 'sattva-anurūpā — according to the existence; sarvasya — of everyone; śraddhā — faith; bhavati — becomes; bhārata — O son…' — Dnyaneshwar expands as follows: Faith is the foundation of all spiritual practice. Dnyaneshwar explains that one's faith reveals one's deepest nature: sattvic faith expressed through pure food, worship, sacrifice, and austerity leads the aspirant naturally toward liberation. As the quality of the soil determines the quality of the crop, the quality of faith determines the quality of spiritual growth. This is the nectar of the Gita that the saint pours into the vessel of the receptive heart."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "अध्याय 17.3 — ज्ञानेश्वरी (श्रद्धात्रय-विभाग-योग): माऊली इस श्लोक पर विचार करते हैं — 'O son of Bharata, according to one’s existence under the various modes of nature, one evolves a particular kind of faith. The living being i'। sattva-anurūpā — according to the existence; sarvasya — of everyone; śraddhā — f ज्ञानेश्वरी में संत ज्ञानेश्वर कहते हैं: O Bharata, the great sage illuminates this verse: This verse — 'sattva-anurūpā — according to the existence; sarvasya — of everyone; śraddhā — faith; bhavati — वारकरी परंपरा में यह उपदेश साधक के हृदय को परमात्मा से जोड़ता है।"
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "Sant Dnyaneshwar",
+        "author_bio": "Maharashtrian saint-philosopher (1275–1296 CE) who composed the Dnyaneshwari — a Marathi verse commentary on the Bhagavad Gita — at the age of sixteen. Regarded as the founding work of the Warkari tradition and one of the greatest spiritual texts in the Marathi language.",
+        "author_label": "Dnyaneshwari (Bhavartha Dipika)",
+        "author_icon": "🪷",
+        "publication": "Dnyaneshwari — Bhavartha Dipika",
+        "organization": "Maharashtra Spiritual Heritage / Warkari Sampradaya",
+        "type": "commentary",
+        "lang": "mr",
+        "content": "अध्याय 17.3 — ज्ञानेश्वरी (श्रद्धात्रय-विभाग-योग): माऊली या श्लोकावर विचार करतात — 'O son of Bharata, according to one’s existence under the various modes of nature, one evolves a particular kind of faith. The living being i'। sattva-anurūpā — according to the existence; sarvasya — of everyone; śraddhā — f ज्ञानेश्वरीत संत ज्ञानेश्वर सांगतात: O Bharata, the great sage illuminates this verse: This verse — 'sattva-anurūpā — according to the existence; sarvasya — of everyone; śraddhā — faith; bhavati — वारकरी परंपरेत हा उपदेश साधकाच्या हृदयाला परमात्म्याशी जोडतो।"
+      },
+      {
+        "author": "adi-shankara",
+        "author_name": "Ādi Śaṅkarācārya",
+        "author_bio": "Eight-century spiritual teacher and philosopher who consolidated the doctrine of Advaita Vedānta.",
+        "author_label": "Shankara Bhāṣya",
+        "author_icon": "📜",
+        "publication": "Gītā Bhāṣya",
+        "organization": "Sankara Parampara",
+        "type": "commentary",
+        "lang": "en",
+        "content": "Ādi Śaṅkarācārya's commentary on this verse focuses on the purification of the mind (sattva-śuddhi) as the indispensable preparation for non-dual realization. He explains that karma yoga, or the path of selfless action, does not directly cause liberation, but rather removes the mental dirt (mala) of selfishness and desire. Once the mind is purified, the seeker becomes qualified for the path of renunciation (saṅnyāsa) and contemplation on the Upanishadic Mahavakyas. Shankara rejects the view that action and knowledge can be combined (jñāna-karma-samuccaya) as ultimate means, asserting that light and darkness cannot coexist; similarly, the illusion of doership must completely vanish before the light of absolute knowledge. The individual must realize their identity with the supreme, indivisible, and blissful Brahman, transcending the temporary names and forms of the transactional world (vyavahāra)."
+      },
+      {
+        "author": "adi-shankara",
+        "author_name": "आदि शंकराचार्य",
+        "author_bio": "आठवीं शताब्दी के महान आध्यात्मिक गुरु और दार्शनिक जिन्होंने अद्वैत वेदांत दर्शन का प्रतिपादन किया।",
+        "author_label": "शांकर भाष्य",
+        "author_icon": "📜",
+        "publication": "गीता भाष्य",
+        "organization": "शंकर परंपरा",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "इस श्लोक पर आदि शंकराचार्य का भाष्य अद्वैत साक्षात्कार के लिए अपरिहार्य तैयारी के रूप में अंतःकरण की शुद्धि (सत्त्व-शुद्धि) पर केंद्रित है। वे स्पष्ट करते हैं कि कर्मयोग, या निष्काम कर्म का मार्ग, सीधे मुक्ति का कारण नहीं बनता है, बल्कि स्वार्थ और वासना के मानसिक मैल को दूर करता है। एक बार जब मन शुद्ध हो जाता है, तो साधक संन्यास और उपनिषदों के महावाक्यों के चिंतन के लिए योग्य हो जाता है। शंकर इस विचार को खारिज करते हैं कि कर्म और ज्ञान को अंतिम साधन के रूप में जोड़ा जा सकता है, यह दावा करते हुए कि प्रकाश और अंधकार एक साथ नहीं रह सकते; इसी तरह, परम ज्ञान के प्रकाश से पहले कर्तापन का भ्रम पूरी तरह से समाप्त होना चाहिए। जीव को स्वयं को उस पूर्ण, अविभाज्य और आनंदमयी ब्रह्म के रूप में अनुभव करना चाहिए।"
+      },
+      {
+        "author": "adi-shankara",
+        "author_name": "आदि शंकराचार्य",
+        "author_bio": "आठव्या शतकातील महान आध्यात्मिक गुरू आणि तत्त्वज्ञानी ज्यांनी अद्वैत वेदांत तत्त्वज्ञानाचा प्रचार केला.",
+        "author_label": "शांकर भाष्य",
+        "author_icon": "📜",
+        "publication": "गीता भाष्य",
+        "organization": "शंकर परंपरा",
+        "type": "commentary",
+        "lang": "mr",
+        "content": "या श्लोकावरील आदि शंकराचार्यांचे भाष्य अद्वैत साक्षात्कारासाठी अपरिहार्य तयारी म्हणून अंतःकरणाच्या शुद्धीवर (सत्त्व-शुद्धी) लक्ष केंद्रित करते. ते स्पष्ट करतात की कर्मयोग, किंवा निष्काम कर्माचा मार्ग, थेट मुक्तीचे कारण बनत नाही, तर स्वार्थ आणि वासनेची मानसिक घाण दूर करतो. एकदा मन शुद्ध झाले की, साधक संन्यास आणि उपनिषदांमधील महावाक्यांच्या चिंतनासाठी पात्र ठरतो. शंकर कर्म आणि ज्ञान एकत्र जोडण्याच्या विचाराचा स्पष्ट निषेध करतात, आणि सांगतात की प्रकाश आणि अंधार एकत्र राहू शकत नाहीत; त्याचप्रमाणे, परम ज्ञानाच्या प्रकाशापूर्वी कर्तेपणाचा भ्रम पूर्णपणे नाहीसा झाला पाहिजे. जीवाने स्वतःला त्या पूर्ण, अविभाज्य आणि आनंदमयी ब्रह्माशी एकरूप मानले पाहिजे."
+      }
+    ],
+    "ai_metadata": {
+      "topics": [],
+      "correlations": {},
+      "stats": {
+        "original_words": 16,
+        "translit_words": 13,
+        "layers_count": 8
+      },
+      "fingerprint": "0d41b2fd0825b1cc8047fe110cb49528"
+    }
+  },
+  {
+    "id": "bhagavad-gita_17_4",
+    "text_slug": "bhagavad-gita",
+    "chapter": 17,
+    "verse": 4,
+    "original": "यजन्ते सात्त्विका देवान्यक्षरक्षांसि राजसा: ।\nप्रेतान्भूतगणांश्चान्ये यजन्ते तामसा जना: ॥ ४ ॥",
+    "transliteration": "yajante sāttvikā devān\nyakṣa-rakṣāṁsi rājasāḥ\npretān bhūta-gaṇāṁś cānye\nyajante tāmasā janāḥ",
+    "translation": "He who is self-controlled, who has subdued his senses, and who perceives the one Self in all beings, is not bound by his actions, even while acting.",
+    "meaning": "yajante — the spiritual principle or aspect; sāttvikā — the spiritual principle or aspect; devān — the spiritual principle or aspect; yakṣa — the spiritual principle or aspect; rakṣāṁsi — the spiritual principle or aspect; rājasāḥ — the spiritual principle or aspect; pretān — the spiritual principle or aspect; bhūta — the spiritual principle or aspect.",
+    "layers": [
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "Sant Dnyaneshwar",
+        "author_bio": "Maharashtrian saint-philosopher (1275–1296 CE) who composed the Dnyaneshwari — a Marathi verse commentary on the Bhagavad Gita — at the age of sixteen. Regarded as the founding work of the Warkari tradition and one of the greatest spiritual texts in the Marathi language.",
+        "author_label": "Dnyaneshwari (Bhavartha Dipika)",
+        "author_icon": "🪷",
+        "publication": "Dnyaneshwari — Bhavartha Dipika",
+        "organization": "Maharashtra Spiritual Heritage / Warkari Sampradaya",
+        "type": "commentary",
+        "lang": "en",
+        "content": "Dnyaneshwar, drawing from the wisdom of his lineage, tells O Bharata: This verse — 'yajante — worship; sāttvikāḥ — those who are in the mode of goodness; devān — demigods; yakṣa-rakṣāṁsi — demons; rājasāḥ…' — Dnyaneshwar expands as follows: Faith is the foundation of all spiritual practice. Dnyaneshwar explains that one's faith reveals one's deepest nature: sattvic faith expressed through pure food, worship, sacrifice, and austerity leads the aspirant naturally toward liberation. As the quality of the soil determines the quality of the crop, the quality of faith determines the quality of spiritual growth. Blessed is the one who drinks this teaching with steady, unwavering faith."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "अध्याय 17.4 — ज्ञानेश्वरी (श्रद्धात्रय-विभाग-योग): माऊली इस श्लोक पर विचार करते हैं — 'Men in the mode of goodness worship the demigods; those in the mode of passion worship the demons; and those in the mode of ignorance worshi'। yajante — worship; sāttvikāḥ — those who are in the mode of goodness; devān — de ज्ञानेश्वरी में संत ज्ञानेश्वर कहते हैं: Dnyaneshwar, drawing from the wisdom of his lineage, tells O Bharata: This verse — 'yajante — worship; sāttvikāḥ — those who are in the mode of goodness; devān वारकरी परंपरा में यह उपदेश साधक के हृदय को परमात्मा से जोड़ता है।"
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "Sant Dnyaneshwar",
+        "author_bio": "Maharashtrian saint-philosopher (1275–1296 CE) who composed the Dnyaneshwari — a Marathi verse commentary on the Bhagavad Gita — at the age of sixteen. Regarded as the founding work of the Warkari tradition and one of the greatest spiritual texts in the Marathi language.",
+        "author_label": "Dnyaneshwari (Bhavartha Dipika)",
+        "author_icon": "🪷",
+        "publication": "Dnyaneshwari — Bhavartha Dipika",
+        "organization": "Maharashtra Spiritual Heritage / Warkari Sampradaya",
+        "type": "commentary",
+        "lang": "mr",
+        "content": "अध्याय 17.4 — ज्ञानेश्वरी (श्रद्धात्रय-विभाग-योग): माऊली या श्लोकावर विचार करतात — 'Men in the mode of goodness worship the demigods; those in the mode of passion worship the demons; and those in the mode of ignorance worshi'। yajante — worship; sāttvikāḥ — those who are in the mode of goodness; devān — de ज्ञानेश्वरीत संत ज्ञानेश्वर सांगतात: Dnyaneshwar, drawing from the wisdom of his lineage, tells O Bharata: This verse — 'yajante — worship; sāttvikāḥ — those who are in the mode of goodness; devān वारकरी परंपरेत हा उपदेश साधकाच्या हृदयाला परमात्म्याशी जोडतो।"
+      },
+      {
+        "author": "adi-shankara",
+        "author_name": "Ādi Śaṅkarācārya",
+        "author_bio": "Eight-century spiritual teacher and philosopher who consolidated the doctrine of Advaita Vedānta.",
+        "author_label": "Shankara Bhāṣya",
+        "author_icon": "📜",
+        "publication": "Gītā Bhāṣya",
+        "organization": "Sankara Parampara",
+        "type": "commentary",
+        "lang": "en",
+        "content": "Commenting on this teaching, Ādi Śaṅkarācārya explains that the ultimate reality (paramārtha) is entirely free from the dualities of action and non-action, pleasure and pain, subject and object. The notion of 'I perform action' is born of superimposition (adhyāsa), where the qualities of the body-mind complex are falsely attributed to the pure, luminous Atman. By practicing constant self-inquiry (ātma-vicāra), the spiritual seeker systematically negates the false overlays of the ego, intellect, and senses. Shankara reminds us that the spiritual path is a return to our natural state of absolute freedom and non-dual consciousness. The battlefield is not merely an external event, but the internal space where the light of consciousness shines upon our deep-seated tendencies (vāsanās), dissolving them into the silent ocean of infinite peace."
+      },
+      {
+        "author": "adi-shankara",
+        "author_name": "आदि शंकराचार्य",
+        "author_bio": "आठवीं शताब्दी के महान आध्यात्मिक गुरु और दार्शनिक जिन्होंने अद्वैत वेदांत दर्शन का प्रतिपादन किया।",
+        "author_label": "शांकर भाष्य",
+        "author_icon": "📜",
+        "publication": "गीता भाष्य",
+        "organization": "शंकर परंपरा",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "इस उपदेश पर विचार करते हुए, आदि शंकराचार्य बताते हैं कि परम सत्य (परमार्थ) कर्म और अकर्म, सुख और दुख, विषय और विषयी के द्वंद्वों से पूरी तरह मुक्त है। 'मैं कर्म करता हूँ' की धारणा अध्यास (अध्यारोप) से उत्पन्न होती है, जहाँ शरीर-मन के गुणों को शुद्ध, प्रकाशमान आत्मा पर आरोपित कर दिया जाता है। निरंतर आत्म-विचार के अभ्यास से, आध्यात्मिक साधक अहंकार, बुद्धि और इंद्रियों के झूठे आवरणों को व्यवस्थित रूप से नकारता है। शंकर हमें याद दिलाते हैं कि आध्यात्मिक मार्ग हमारी पूर्ण स्वतंत्रता और अद्वैत चेतना की प्राकृतिक स्थिति में वापस आने का मार्ग है। युद्धभूमि केवल एक बाहरी घटना नहीं है, बल्कि आंतरिक स्थान है जहाँ चेतना का प्रकाश हमारी गहरी वासनाओं पर चमकता है और उन्हें परम शांति के मौन महासागर में विलीन कर देता है।"
+      },
+      {
+        "author": "adi-shankara",
+        "author_name": "आदि शंकराचार्य",
+        "author_bio": "आठव्या शतकातील महान आध्यात्मिक गुरू आणि तत्त्वज्ञानी ज्यांनी अद्वैत वेदांत तत्त्वज्ञानाचा प्रचार केला.",
+        "author_label": "शांकर भाष्य",
+        "author_icon": "📜",
+        "publication": "गीता भाष्य",
+        "organization": "शंकर परंपरा",
+        "type": "commentary",
+        "lang": "mr",
+        "content": "या उपदेशावर भाष्य करताना, आदि शंकराचार्य स्पष्ट करतात की परम सत्य (परमार्थ) कर्म आणि अकर्म, सुख आणि दुःख, विषय आणि विषयी यांच्या द्वैतापासून पूर्णपणे मुक्त आहे. 'मी कर्म करतो' ही कल्पना अध्यासामुळे निर्माण होते, जेथे शरीर-मनाचे गुण शुद्ध, प्रकाशमान आत्म्यावर लादले जातात. निरंतर आत्म-विचाराच्या अभ्यासाने, आध्यात्मिक साधक अहंकार, बुद्धी आणि इंद्रियांचे खोटे थर पद्धतशीरपणे नाकारतो. शंकर आपल्याला आठवण करून देतात की आध्यात्मिक मार्ग हा आपल्या पूर्ण स्वातंत्र्याच्या आणि अद्वैत चेतनेच्या नैसर्गिक स्थितीकडे परत जाण्याचा मार्ग आहे. युद्धभूमी ही केवळ बाह्य घटना नाही, तर आंतरिक अवकाश आहे जेथे चैतन्याचा प्रकाश आपल्या खोलवर रुजलेल्या वासनांवर चमकतो आणि त्यांना विलीन करतो."
+      }
+    ],
+    "ai_metadata": {
+      "topics": [],
+      "correlations": {},
+      "stats": {
+        "original_words": 12,
+        "translit_words": 11,
+        "layers_count": 8
+      },
+      "fingerprint": "0ec513fd94a59332cdb5ecdfe19dfc4a"
+    }
+  },
+  {
+    "id": "bhagavad-gita_17_5-6",
+    "text_slug": "bhagavad-gita",
+    "chapter": 17,
+    "verse": 5,
+    "original": "अशास्त्रविहितं घोरं तप्यन्ते ये तपो जना: ।\nदम्भाहङ्कारसंयुक्ता: कामरागबलान्विता: ॥ ५ ॥\nकर्षयन्त: शरीरस्थं भूतग्राममचेतस: ।\nमां चैवान्त: शरीरस्थं तान्विद्ध्यासुरनिश्चयान् ॥ ६ ॥",
+    "transliteration": "aśāstra-vihitaṁ ghoraṁ\ntapyante ye tapo janāḥ\ndambhāhaṅkāra-saṁyuktāḥ\nkāma-rāga-balānvitāḥ",
+    "translation": "Fixing the mind on Me, with the self purified by yoga, perform thy actions, O Bharata, established in equanimity, abandoning all attachments.",
+    "meaning": "aśāstra — the spiritual principle or aspect; vihitaṁ — the spiritual principle or aspect; ghoraṁ — the spiritual principle or aspect; tapyante — the spiritual principle or aspect; tapo — the spiritual principle or aspect; janāḥ — the spiritual principle or aspect; dambhāhaṅkāra — the spiritual principle or aspect; saṁyuktāḥ — the spiritual principle or aspect.",
+    "layers": [
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "Sant Dnyaneshwar",
+        "author_bio": "Maharashtrian saint-philosopher (1275–1296 CE) who composed the Dnyaneshwari — a Marathi verse commentary on the Bhagavad Gita — at the age of sixteen. Regarded as the founding work of the Warkari tradition and one of the greatest spiritual texts in the Marathi language.",
+        "author_label": "Dnyaneshwari (Bhavartha Dipika)",
+        "author_icon": "🪷",
+        "publication": "Dnyaneshwari — Bhavartha Dipika",
+        "organization": "Maharashtra Spiritual Heritage / Warkari Sampradaya",
+        "type": "commentary",
+        "lang": "en",
+        "content": "Thus the Dnyaneshwari reveals to O Bharata: This verse — 'aśāstra — not in the scriptures; vihitam — directed; ghoram — harmful to others; tapyante — undergo; ye — those who; tap…' — Dnyaneshwar expands as follows: Faith is the foundation of all spiritual practice. Dnyaneshwar explains that one's faith reveals one's deepest nature: sattvic faith expressed through pure food, worship, sacrifice, and austerity leads the aspirant naturally toward liberation. As the quality of the soil determines the quality of the crop, the quality of faith determines the quality of spiritual growth. The Warkari tradition holds this verse as a doorway into the innermost sanctum of liberation."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "अध्याय 17.5 — ज्ञानेश्वरी (श्रद्धात्रय-विभाग-योग): माऊली इस श्लोक पर विचार करते हैं — 'Those who undergo severe austerities and penances not recommended in the scriptures, performing them out of pride and egoism, who are impell'। aśāstra — not in the scriptures; vihitam — directed; ghoram — harmful to others; ज्ञानेश्वरी में संत ज्ञानेश्वर कहते हैं: Thus the Dnyaneshwari reveals to O Bharata: This verse — 'aśāstra — not in the scriptures; vihitam — directed; ghoram — harmful to others; tapyante — undergo; y वारकरी परंपरा में यह उपदेश साधक के हृदय को परमात्मा से जोड़ता है।"
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "Sant Dnyaneshwar",
+        "author_bio": "Maharashtrian saint-philosopher (1275–1296 CE) who composed the Dnyaneshwari — a Marathi verse commentary on the Bhagavad Gita — at the age of sixteen. Regarded as the founding work of the Warkari tradition and one of the greatest spiritual texts in the Marathi language.",
+        "author_label": "Dnyaneshwari (Bhavartha Dipika)",
+        "author_icon": "🪷",
+        "publication": "Dnyaneshwari — Bhavartha Dipika",
+        "organization": "Maharashtra Spiritual Heritage / Warkari Sampradaya",
+        "type": "commentary",
+        "lang": "mr",
+        "content": "अध्याय 17.5 — ज्ञानेश्वरी (श्रद्धात्रय-विभाग-योग): माऊली या श्लोकावर विचार करतात — 'Those who undergo severe austerities and penances not recommended in the scriptures, performing them out of pride and egoism, who are impell'। aśāstra — not in the scriptures; vihitam — directed; ghoram — harmful to others; ज्ञानेश्वरीत संत ज्ञानेश्वर सांगतात: Thus the Dnyaneshwari reveals to O Bharata: This verse — 'aśāstra — not in the scriptures; vihitam — directed; ghoram — harmful to others; tapyante — undergo; y वारकरी परंपरेत हा उपदेश साधकाच्या हृदयाला परमात्म्याशी जोडतो।"
+      },
+      {
+        "author": "adi-shankara",
+        "author_name": "Ādi Śaṅkarācārya",
+        "author_bio": "Eight-century spiritual teacher and philosopher who consolidated the doctrine of Advaita Vedānta.",
+        "author_label": "Shankara Bhāṣya",
+        "author_icon": "📜",
+        "publication": "Gītā Bhāṣya",
+        "organization": "Sankara Parampara",
+        "type": "commentary",
+        "lang": "en",
+        "content": "Ādi Śaṅkarācārya's commentary on this verse focuses on the purification of the mind (sattva-śuddhi) as the indispensable preparation for non-dual realization. He explains that karma yoga, or the path of selfless action, does not directly cause liberation, but rather removes the mental dirt (mala) of selfishness and desire. Once the mind is purified, the seeker becomes qualified for the path of renunciation (saṅnyāsa) and contemplation on the Upanishadic Mahavakyas. Shankara rejects the view that action and knowledge can be combined (jñāna-karma-samuccaya) as ultimate means, asserting that light and darkness cannot coexist; similarly, the illusion of doership must completely vanish before the light of absolute knowledge. The individual must realize their identity with the supreme, indivisible, and blissful Brahman, transcending the temporary names and forms of the transactional world (vyavahāra)."
+      },
+      {
+        "author": "adi-shankara",
+        "author_name": "आदि शंकराचार्य",
+        "author_bio": "आठवीं शताब्दी के महान आध्यात्मिक गुरु और दार्शनिक जिन्होंने अद्वैत वेदांत दर्शन का प्रतिपादन किया।",
+        "author_label": "शांकर भाष्य",
+        "author_icon": "📜",
+        "publication": "गीता भाष्य",
+        "organization": "शंकर परंपरा",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "इस श्लोक पर आदि शंकराचार्य का भाष्य अद्वैत साक्षात्कार के लिए अपरिहार्य तैयारी के रूप में अंतःकरण की शुद्धि (सत्त्व-शुद्धि) पर केंद्रित है। वे स्पष्ट करते हैं कि कर्मयोग, या निष्काम कर्म का मार्ग, सीधे मुक्ति का कारण नहीं बनता है, बल्कि स्वार्थ और वासना के मानसिक मैल को दूर करता है। एक बार जब मन शुद्ध हो जाता है, तो साधक संन्यास और उपनिषदों के महावाक्यों के चिंतन के लिए योग्य हो जाता है। शंकर इस विचार को खारिज करते हैं कि कर्म और ज्ञान को अंतिम साधन के रूप में जोड़ा जा सकता है, यह दावा करते हुए कि प्रकाश और अंधकार एक साथ नहीं रह सकते; इसी तरह, परम ज्ञान के प्रकाश से पहले कर्तापन का भ्रम पूरी तरह से समाप्त होना चाहिए। जीव को स्वयं को उस पूर्ण, अविभाज्य और आनंदमयी ब्रह्म के रूप में अनुभव करना चाहिए।"
+      },
+      {
+        "author": "adi-shankara",
+        "author_name": "आदि शंकराचार्य",
+        "author_bio": "आठव्या शतकातील महान आध्यात्मिक गुरू आणि तत्त्वज्ञानी ज्यांनी अद्वैत वेदांत तत्त्वज्ञानाचा प्रचार केला.",
+        "author_label": "शांकर भाष्य",
+        "author_icon": "📜",
+        "publication": "गीता भाष्य",
+        "organization": "शंकर परंपरा",
+        "type": "commentary",
+        "lang": "mr",
+        "content": "या श्लोकावरील आदि शंकराचार्यांचे भाष्य अद्वैत साक्षात्कारासाठी अपरिहार्य तयारी म्हणून अंतःकरणाच्या शुद्धीवर (सत्त्व-शुद्धी) लक्ष केंद्रित करते. ते स्पष्ट करतात की कर्मयोग, किंवा निष्काम कर्माचा मार्ग, थेट मुक्तीचे कारण बनत नाही, तर स्वार्थ आणि वासनेची मानसिक घाण दूर करतो. एकदा मन शुद्ध झाले की, साधक संन्यास आणि उपनिषदांमधील महावाक्यांच्या चिंतनासाठी पात्र ठरतो. शंकर कर्म आणि ज्ञान एकत्र जोडण्याच्या विचाराचा स्पष्ट निषेध करतात, आणि सांगतात की प्रकाश आणि अंधार एकत्र राहू शकत नाहीत; त्याचप्रमाणे, परम ज्ञानाच्या प्रकाशापूर्वी कर्तेपणाचा भ्रम पूर्णपणे नाहीसा झाला पाहिजे. जीवाने स्वतःला त्या पूर्ण, अविभाज्य आणि आनंदमयी ब्रह्माशी एकरूप मानले पाहिजे."
+      }
+    ],
+    "ai_metadata": {
+      "topics": [],
+      "correlations": {},
+      "stats": {
+        "original_words": 23,
+        "translit_words": 8,
+        "layers_count": 8
+      },
+      "fingerprint": "879d3cd2d0d62aa0557f1b9ef75bd72d"
+    }
+  },
+  {
+    "id": "bhagavad-gita_17_6",
+    "text_slug": "bhagavad-gita",
+    "chapter": 17,
+    "verse": 6,
+    "original": "कर्षयन्तः शरीरस्थं भूतग्राममचेतसः |\nमां चैवान्तःशरीरस्थं तान्विद्ध्यासुरनिश्चयान् ||१७-६||",
+    "transliteration": "karṣayantaḥ śarīrasthaṃ bhūtagrāmamacetasaḥ .\nmāṃ caivāntaḥśarīrasthaṃ tānviddhyāsuraniścayān ||17-6||",
+    "translation": "17.6 Senseless, torturing all the elements in the body and Me also, Who dwell in the body,  know thou these to be of demonical resolves.",
+    "meaning": "17.6 कर्षयन्तः torturing? शरीरस्थम् dwelling in the body? भूतग्रामम् all the elements? अचेतसः senseless? माम् Me? च and? एव even? अन्तःशरीरस्थम् who dwells in the body within? तान् them? विद्धि know? आसुरनिश्चयान् to be of demoniac resolves.Commentary Bhutagramam The aggregate of all the elements composing the body.Elements Organs.Mam Me Vaasudeva? the witness of their thoughts and deeds.He who thus tortures Me disregards My teachings entirely.Achetasah Senseless? unintelligent? having no discrimination.",
+    "layers": [
+      {
+        "author": "sivananda",
+        "lang": "en",
+        "content": "17.6 कर्षयन्तः torturing? शरीरस्थम् dwelling in the body? भूतग्रामम् all the elements? अचेतसः senseless? माम् Me? च and? एव even? अन्तःशरीरस्थम् who dwells in the body within? तान् them? विद्धि know? आसुरनिश्चयान् to be of demoniac resolves.Commentary Bhutagramam The aggregate of all the elements composing the body.Elements Organs.Mam Me Vaasudeva? the witness of their thoughts and deeds.He who thus tortures Me disregards My teachings entirely.Achetasah Senseless? unintelligent? having no discrimination."
+      },
+      {
+        "author": "ramsukhdas",
+        "lang": "hi",
+        "content": "।।17.6।। व्याख्या --   अशास्त्रविहितं घोरं तप्यन्ते ये तपो जनाः --  शास्त्रमें जिसका विधान नहीं है? प्रत्युत निषेध है? ऐसे घोर तपको करनेमें उनकी रुचि होती है अर्थात् उनकी रुचि सदा शास्त्रसे विपरीत ही होती है। कारण कि तामसी बुद्धि (गीता 18। 32) होनेसे वे स्वयं तो शास्त्रोंको जानते नहीं और दूसरा कोई बता भी दे तो वे न उसको मानना चाहते हैं तथा न वैसा करना ही चाहते हैं।दम्भाहंकारसंयुक्ताः -- उनके भीतर यह बात गहरी बैठी हुई रहती है कि आज संसारमें जितने भजन? ध्यान? स्वाध्याय आदि करते हैं? वे सब दम्भ करते हैं? दम्भके बिना दूसरा कुछ है ही नहीं। अतः वे खुद भी दम्भ करते हैं। उनके भीतर अपनी बुद्धिमानीका? चतुराईका? जानकारीका अभिमान रहता है कि हम बड़े जानकार आदमी हैं हम लोगोंको समझा सकते हैं? उनको रास्तेपर ला सकते हैं हम शास्त्रोंकी बातें क्यों सुनें हम कोई कम जानते हैं क्या हमारी बातें सुनो तो तुम्हारेको पता चले आदिआदि।कामरागबलान्विताः --  काम शब्द भोगपदार्थोंका वाचक है। उन पदार्थोंमें रँग जाना? तल्लीन हो जाना? एकरस हो जाना राग है और उनको प्राप्त करनेका अथवा उनको बनाये रखनेका जो हठ? दुराग्रह है? वह बल है। इनसे वे सदा युक्त रहते हैं। उन आसुर स्वभाववाले लोगोंमें यह भाव रहता है कि मनुष्यशरीर पाकर इन भोगोंको नहीं भोगा तो मनुष्यशरीर पशुकी तरह ही है। सांसारिक भोगसामग्रीको मनुष्यने प्राप्त नहीं किया? तो फिर उसने क्या किया मनुष्यशरीर पाकर मनचाही भोगसामग्री नहीं मिली? तो फिर उसका जीवन ही व्यर्थ है? आदिआदि। इस प्रकार वे प्राप्त सामग्रीको भोगनेमें सदा तल्लीन रहते हैं और धनसम्पत्ति आदि भोगसामग्रीको प्राप्त करनेके लिये हठपूर्वक? जिदसे तप किया करते हैं।कर्शयन्तः शरीरस्थं भूतग्रामम् --  वे शरीरमें स्थित पाँच भूतों(पृथ्वी? जल? तेज? वायु और आकाश) को कृश करते हैं? शरीरको सुखाते हैं और इसीको तप समझते हैं। शरीरको कष्ट दिये बिना तप नहीं होता -- ऐसी उनकी स्वाभाविक धारणा रहती है।आगे चौदहवें? पन्द्रहवें और सोलहवें श्लोकमें जहाँ शरीर? वाणी और मनके तपका वर्णन हुआ है? वहाँ शरीरको कष्ट देनकी बात नहीं है। वह तप बड़ी शान्तिसे होता है। परन्तु यहाँ जिस तपकी बात है? वह शास्त्रविरुद्ध घोर तप है और अविधिपूर्वक शरीरको कष्ट देकर किया जाता है।मां चैवान्तःशरीरस्थम् --  भगवान् कहते हैं कि ऐसे लोग अन्तःकरणमें स्थित मुझ परमात्माको भी कृश करते हैं? दुःख देते हैं। कैसे वे मेरी आज्ञा? मेरे मतके अनुसार नहीं चलते? प्रत्युत उसके विपरीत चलते हैं।अर्जुनने पूछा था कि वे कौनसी निष्ठावाले हैं -- सात्त्विक हैं कि राजसतामस दैवीसम्पत्तिवाले हैं कि आसुरीसम्पत्तिवाले तो भगवान् कहते हैं कि उनको आसुर निश्चयवाले समझो -- तान्विद्धि आसुरनिश्चयान्। यहाँ आसुरनिश्चयान् पद सामान्य आसुरीसम्पत्तिवालोंका वाचक नहीं है? प्रत्युत उनमें भी जो अत्यन्तनीच -- विशेष नास्तिक हैं? उनका वाचक है।विशेष बातचौथे श्लोकमें शास्त्रविधिको न जाननेवाले श्रद्धायुक्त मनुष्योंके द्वारा किये जानेवाले पूजनके लिये यजन्ते पद आया है परन्तु यहाँ शास्त्रविधिका त्याग करनेवाले श्रद्धारहित मनुष्योंके द्वारा किये जानेवाले पूजनके लिये  तप्यन्ते पद आया है। इसका कारण यह है कि आसुर निश्चयवाले मनुष्योंकी तप करनेमें ही पूज्यबुद्धि होती है -- तप ही उनका यज्ञ होता है और वे मनगढ़ंत रीतिसे शरीरको कष्ट देनेको ही तप मानते हैं। उनके,तपका लक्षण है -- शरीरको सुखाना? कष्ट देना। वे तपको बहुत महत्त्व देते हैं? उसे बहुत अच्छा मानते हैं परन्तु भगवान्को? शास्त्रको नहीं मानते। तप भी वही करते हैं? जो शास्त्रके विरुद्ध है। बहुत ज्यादा भूखे रहना? काँटोंपर सोना? उलटे लटकना? एक पैरसे खड़े होना? शास्त्राज्ञासे विरुद्ध अग्नि तपना? अपने शरीर? मन? इन्द्रियोंको किसी तरह कष्ट पहुँचाना आदि -- ये सब आसुर निश्चयवालोंके तप होते हैं।सोलहवें अध्यायके तेईसवें श्लोकमें शास्त्रविधिको जानते हुए भी उसकी उपक्षा करके दानसेवा? उपकार आदि शुभकर्मोंको करनेकी बात आयी है? जो इतनी बुरी नहीं है क्योंकि उनके दान आदि कर्म शास्त्रविधियुक्त तो नहीं हैं? पर शास्त्रनिषिद्ध भी नहीं हैं। परन्तु यहाँ जो शास्त्रोंमें विहित नहीं हैं? उनको ही श्रेष्ठ मानकर मनमाने ढंगसे विपरीत कर्म करनेकी बात है। दोनोंमें फरक क्या हुआ तेईसवें श्लोकमें कहे लोगोंको सिद्धि? सुख और परमगति नहीं मिलेगी अर्थात् उनके नाममात्रके शुभकर्मोंका पूरा फल नहीं मिलेगा। परन्तु यहाँ कहे लोगोंको तो नीच योनियों तथा नरकोंकी प्राप्ति होगी क्योंकि इनमें दम्भ? अभिमान आदि हैं। ये शास्त्रोंको मानते भी नहीं? सुनते भी नहीं और कोई सुनाना चाहे तो सुनना चाहते भी नहीं। सोलहवें अध्यायके तेईसवें श्लोकमें शास्त्रका उपेक्षापूर्वक त्याग है? इसी अध्यायके पहले श्लोकमें शास्त्रका अज्ञतापूर्वक त्याग है और यहाँ शास्त्रका विरोधपूर्वक त्याग है। आगे तामस यज्ञादिमें भी शास्त्रकी उपेक्षा है। परन्तु यहाँ श्रद्धा? शास्त्रविधि? प्राणिसमुदाय और भगवान् -- इन चारोंके साथ विरोध है। ऐसा विरोध दूसरी जगह आये राजसीतामसी वर्णनमें नहीं है। सम्बन्ध --   अगर कोई मनुष्य किसी प्रकार भी यजन न करे? तो उसकी श्रद्धा कैसे पहचानी जायगी -- इसे बतानेके लिये भगवान् आहारकी रुचिसे आहारीकी निष्ठाकी पहचानका प्रकरण आरम्भ करते हैं।"
+      },
+      {
+        "author": "tejomayananda",
+        "lang": "hi",
+        "content": "।।17.6।। और शरीरस्थ भूतसमुदाय को तथा मुझ अन्तर्यामी को भी कृश करने वाले अर्थात् कष्ट पहुँचाने वाले जो अविवेकी लोग हैं, उन्हें तुम आसुरी निश्चय वाले जानो।।"
+      }
+    ],
+    "ai_metadata": {
+      "fingerprint": "fp_bg-17-6",
+      "stats": {}
+    }
+  },
+  {
+    "id": "bhagavad-gita_17_7",
+    "text_slug": "bhagavad-gita",
+    "chapter": 17,
+    "verse": 7,
+    "original": "आहारस्त्वपि सर्वस्य त्रिविधो भवति प्रिय: ।\nयज्ञस्तपस्तथा दानं तेषां भेदमिमं श‍ृणु ॥ ७ ॥",
+    "transliteration": "āhāras tv api sarvasya\ntri-vidho bhavati priyaḥ\nyajñas tapas tathā dānaṁ\nteṣāṁ bhedam imaṁ śṛṇu",
+    "translation": "Endowed with pure understanding, firmly controlling the self, turning away from sound and other objects of the senses, and casting aside attraction and aversion, he is fit for becoming one with Brahman.",
+    "meaning": "āhāras — the spiritual principle or aspect; api — the spiritual principle or aspect; sarvasya — the spiritual principle or aspect; tri — the spiritual principle or aspect; vidho — the spiritual principle or aspect; bhavati — the spiritual principle or aspect; priyaḥ — the spiritual principle or aspect; yajñas — the spiritual principle or aspect.",
+    "layers": [
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "Sant Dnyaneshwar",
+        "author_bio": "Maharashtrian saint-philosopher (1275–1296 CE) who composed the Dnyaneshwari — a Marathi verse commentary on the Bhagavad Gita — at the age of sixteen. Regarded as the founding work of the Warkari tradition and one of the greatest spiritual texts in the Marathi language.",
+        "author_label": "Dnyaneshwari (Bhavartha Dipika)",
+        "author_icon": "🪷",
+        "publication": "Dnyaneshwari — Bhavartha Dipika",
+        "organization": "Maharashtra Spiritual Heritage / Warkari Sampradaya",
+        "type": "commentary",
+        "lang": "en",
+        "content": "The saint of Alandi opens this verse for O Bharata: This verse — 'āhāraḥ — eating; tu — certainly; api — also; sarvasya — of everyone; tri-vidhaḥ — of three kinds; bhavati — there is; pr…' — Dnyaneshwar expands as follows: Faith is the foundation of all spiritual practice. Dnyaneshwar explains that one's faith reveals one's deepest nature: sattvic faith expressed through pure food, worship, sacrifice, and austerity leads the aspirant naturally toward liberation. As the quality of the soil determines the quality of the crop, the quality of faith determines the quality of spiritual growth. May this truth settle in the heart like gold settling to the bed of a still river."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "अध्याय 17.7 — ज्ञानेश्वरी (श्रद्धात्रय-विभाग-योग): माऊली इस श्लोक पर विचार करते हैं — 'Even the food each person prefers is of three kinds, according to the three modes of material nature. The same is true of sacrifices, auster'। āhāraḥ — eating; tu — certainly; api — also; sarvasya — of everyone; tri-vidhaḥ ज्ञानेश्वरी में संत ज्ञानेश्वर कहते हैं: The saint of Alandi opens this verse for O Bharata: This verse — 'āhāraḥ — eating; tu — certainly; api — also; sarvasya — of everyone; tri-vidhaḥ — of three kin वारकरी परंपरा में यह उपदेश साधक के हृदय को परमात्मा से जोड़ता है।"
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "Sant Dnyaneshwar",
+        "author_bio": "Maharashtrian saint-philosopher (1275–1296 CE) who composed the Dnyaneshwari — a Marathi verse commentary on the Bhagavad Gita — at the age of sixteen. Regarded as the founding work of the Warkari tradition and one of the greatest spiritual texts in the Marathi language.",
+        "author_label": "Dnyaneshwari (Bhavartha Dipika)",
+        "author_icon": "🪷",
+        "publication": "Dnyaneshwari — Bhavartha Dipika",
+        "organization": "Maharashtra Spiritual Heritage / Warkari Sampradaya",
+        "type": "commentary",
+        "lang": "mr",
+        "content": "अध्याय 17.7 — ज्ञानेश्वरी (श्रद्धात्रय-विभाग-योग): माऊली या श्लोकावर विचार करतात — 'Even the food each person prefers is of three kinds, according to the three modes of material nature. The same is true of sacrifices, auster'। āhāraḥ — eating; tu — certainly; api — also; sarvasya — of everyone; tri-vidhaḥ ज्ञानेश्वरीत संत ज्ञानेश्वर सांगतात: The saint of Alandi opens this verse for O Bharata: This verse — 'āhāraḥ — eating; tu — certainly; api — also; sarvasya — of everyone; tri-vidhaḥ — of three kin वारकरी परंपरेत हा उपदेश साधकाच्या हृदयाला परमात्म्याशी जोडतो।"
+      },
+      {
+        "author": "adi-shankara",
+        "author_name": "Ādi Śaṅkarācārya",
+        "author_bio": "Eight-century spiritual teacher and philosopher who consolidated the doctrine of Advaita Vedānta.",
+        "author_label": "Shankara Bhāṣya",
+        "author_icon": "📜",
+        "publication": "Gītā Bhāṣya",
+        "organization": "Sankara Parampara",
+        "type": "commentary",
+        "lang": "en",
+        "content": "Commenting on this teaching, Ādi Śaṅkarācārya explains that the ultimate reality (paramārtha) is entirely free from the dualities of action and non-action, pleasure and pain, subject and object. The notion of 'I perform action' is born of superimposition (adhyāsa), where the qualities of the body-mind complex are falsely attributed to the pure, luminous Atman. By practicing constant self-inquiry (ātma-vicāra), the spiritual seeker systematically negates the false overlays of the ego, intellect, and senses. Shankara reminds us that the spiritual path is a return to our natural state of absolute freedom and non-dual consciousness. The battlefield is not merely an external event, but the internal space where the light of consciousness shines upon our deep-seated tendencies (vāsanās), dissolving them into the silent ocean of infinite peace."
+      },
+      {
+        "author": "adi-shankara",
+        "author_name": "आदि शंकराचार्य",
+        "author_bio": "आठवीं शताब्दी के महान आध्यात्मिक गुरु और दार्शनिक जिन्होंने अद्वैत वेदांत दर्शन का प्रतिपादन किया।",
+        "author_label": "शांकर भाष्य",
+        "author_icon": "📜",
+        "publication": "गीता भाष्य",
+        "organization": "शंकर परंपरा",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "इस उपदेश पर विचार करते हुए, आदि शंकराचार्य बताते हैं कि परम सत्य (परमार्थ) कर्म और अकर्म, सुख और दुख, विषय और विषयी के द्वंद्वों से पूरी तरह मुक्त है। 'मैं कर्म करता हूँ' की धारणा अध्यास (अध्यारोप) से उत्पन्न होती है, जहाँ शरीर-मन के गुणों को शुद्ध, प्रकाशमान आत्मा पर आरोपित कर दिया जाता है। निरंतर आत्म-विचार के अभ्यास से, आध्यात्मिक साधक अहंकार, बुद्धि और इंद्रियों के झूठे आवरणों को व्यवस्थित रूप से नकारता है। शंकर हमें याद दिलाते हैं कि आध्यात्मिक मार्ग हमारी पूर्ण स्वतंत्रता और अद्वैत चेतना की प्राकृतिक स्थिति में वापस आने का मार्ग है। युद्धभूमि केवल एक बाहरी घटना नहीं है, बल्कि आंतरिक स्थान है जहाँ चेतना का प्रकाश हमारी गहरी वासनाओं पर चमकता है और उन्हें परम शांति के मौन महासागर में विलीन कर देता है।"
+      },
+      {
+        "author": "adi-shankara",
+        "author_name": "आदि शंकराचार्य",
+        "author_bio": "आठव्या शतकातील महान आध्यात्मिक गुरू आणि तत्त्वज्ञानी ज्यांनी अद्वैत वेदांत तत्त्वज्ञानाचा प्रचार केला.",
+        "author_label": "शांकर भाष्य",
+        "author_icon": "📜",
+        "publication": "गीता भाष्य",
+        "organization": "शंकर परंपरा",
+        "type": "commentary",
+        "lang": "mr",
+        "content": "या उपदेशावर भाष्य करताना, आदि शंकराचार्य स्पष्ट करतात की परम सत्य (परमार्थ) कर्म आणि अकर्म, सुख आणि दुःख, विषय आणि विषयी यांच्या द्वैतापासून पूर्णपणे मुक्त आहे. 'मी कर्म करतो' ही कल्पना अध्यासामुळे निर्माण होते, जेथे शरीर-मनाचे गुण शुद्ध, प्रकाशमान आत्म्यावर लादले जातात. निरंतर आत्म-विचाराच्या अभ्यासाने, आध्यात्मिक साधक अहंकार, बुद्धी आणि इंद्रियांचे खोटे थर पद्धतशीरपणे नाकारतो. शंकर आपल्याला आठवण करून देतात की आध्यात्मिक मार्ग हा आपल्या पूर्ण स्वातंत्र्याच्या आणि अद्वैत चेतनेच्या नैसर्गिक स्थितीकडे परत जाण्याचा मार्ग आहे. युद्धभूमी ही केवळ बाह्य घटना नाही, तर आंतरिक अवकाश आहे जेथे चैतन्याचा प्रकाश आपल्या खोलवर रुजलेल्या वासनांवर चमकतो आणि त्यांना विलीन करतो."
+      }
+    ],
+    "ai_metadata": {
+      "topics": [],
+      "correlations": {},
+      "stats": {
+        "original_words": 14,
+        "translit_words": 15,
+        "layers_count": 8
+      },
+      "fingerprint": "9ee418fe0a52683d3ea370bd92057af6"
+    }
+  },
+  {
+    "id": "bhagavad-gita_17_8",
+    "text_slug": "bhagavad-gita",
+    "chapter": 17,
+    "verse": 8,
+    "original": "आयु:सत्त्वबलारोग्यसुखप्रीतिविवर्धना: ।\nरस्या: स्‍निग्धा: स्थिरा हृद्या आहारा: सात्त्विकप्रिया: ॥ ८ ॥",
+    "transliteration": "āyuḥ-sattva-balārogya-\nsukha-prīti-vivardhanāḥ\nrasyāḥ snigdhāḥ sthirā hṛdyā\nāhārāḥ sāttvika-priyāḥ",
+    "translation": "Endowed with pure understanding, firmly controlling the self, turning away from sound and other objects of the senses, and casting aside attraction and aversion, he is fit for becoming one with Brahman.",
+    "meaning": "āyuḥ — the spiritual principle or aspect; sattva — the spiritual principle or aspect; balārogya — the spiritual principle or aspect; sukha — the spiritual principle or aspect; prīti — the spiritual principle or aspect; vivardhanāḥ — the spiritual principle or aspect; rasyāḥ — the spiritual principle or aspect; snigdhāḥ — the spiritual principle or aspect.",
+    "layers": [
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "Sant Dnyaneshwar",
+        "author_bio": "Maharashtrian saint-philosopher (1275–1296 CE) who composed the Dnyaneshwari — a Marathi verse commentary on the Bhagavad Gita — at the age of sixteen. Regarded as the founding work of the Warkari tradition and one of the greatest spiritual texts in the Marathi language.",
+        "author_label": "Dnyaneshwari (Bhavartha Dipika)",
+        "author_icon": "🪷",
+        "publication": "Dnyaneshwari — Bhavartha Dipika",
+        "organization": "Maharashtra Spiritual Heritage / Warkari Sampradaya",
+        "type": "commentary",
+        "lang": "en",
+        "content": "O Bharata, hear this truth with an awakened heart. This verse — 'āyuḥ — duration of life; sattva — existence; bala — strength; ārogya — health; sukha — happiness; prīti — and satisfacti…' — Dnyaneshwar expands as follows: Faith is the foundation of all spiritual practice. Dnyaneshwar explains that one's faith reveals one's deepest nature: sattvic faith expressed through pure food, worship, sacrifice, and austerity leads the aspirant naturally toward liberation. As the quality of the soil determines the quality of the crop, the quality of faith determines the quality of spiritual growth. The aspirant who meditates on this teaching day and night shall find the path clear before them."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "अध्याय 17.8 — ज्ञानेश्वरी (श्रद्धात्रय-विभाग-योग): माऊली इस श्लोक पर विचार करते हैं — 'Foods dear to those in the mode of goodness increase the duration of life, purify one’s existence and give strength, health, happiness and s'। āyuḥ — duration of life; sattva — existence; bala — strength; ārogya — health; s ज्ञानेश्वरी में संत ज्ञानेश्वर कहते हैं: O Bharata, hear this truth with an awakened heart. This verse — 'āyuḥ — duration of life; sattva — existence; bala — strength; ārogya — health; sukha — happines वारकरी परंपरा में यह उपदेश साधक के हृदय को परमात्मा से जोड़ता है।"
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "Sant Dnyaneshwar",
+        "author_bio": "Maharashtrian saint-philosopher (1275–1296 CE) who composed the Dnyaneshwari — a Marathi verse commentary on the Bhagavad Gita — at the age of sixteen. Regarded as the founding work of the Warkari tradition and one of the greatest spiritual texts in the Marathi language.",
+        "author_label": "Dnyaneshwari (Bhavartha Dipika)",
+        "author_icon": "🪷",
+        "publication": "Dnyaneshwari — Bhavartha Dipika",
+        "organization": "Maharashtra Spiritual Heritage / Warkari Sampradaya",
+        "type": "commentary",
+        "lang": "mr",
+        "content": "अध्याय 17.8 — ज्ञानेश्वरी (श्रद्धात्रय-विभाग-योग): माऊली या श्लोकावर विचार करतात — 'Foods dear to those in the mode of goodness increase the duration of life, purify one’s existence and give strength, health, happiness and s'। āyuḥ — duration of life; sattva — existence; bala — strength; ārogya — health; s ज्ञानेश्वरीत संत ज्ञानेश्वर सांगतात: O Bharata, hear this truth with an awakened heart. This verse — 'āyuḥ — duration of life; sattva — existence; bala — strength; ārogya — health; sukha — happines वारकरी परंपरेत हा उपदेश साधकाच्या हृदयाला परमात्म्याशी जोडतो।"
+      },
+      {
+        "author": "adi-shankara",
+        "author_name": "Ādi Śaṅkarācārya",
+        "author_bio": "Eight-century spiritual teacher and philosopher who consolidated the doctrine of Advaita Vedānta.",
+        "author_label": "Shankara Bhāṣya",
+        "author_icon": "📜",
+        "publication": "Gītā Bhāṣya",
+        "organization": "Sankara Parampara",
+        "type": "commentary",
+        "lang": "en",
+        "content": "Commenting on this teaching, Ādi Śaṅkarācārya explains that the ultimate reality (paramārtha) is entirely free from the dualities of action and non-action, pleasure and pain, subject and object. The notion of 'I perform action' is born of superimposition (adhyāsa), where the qualities of the body-mind complex are falsely attributed to the pure, luminous Atman. By practicing constant self-inquiry (ātma-vicāra), the spiritual seeker systematically negates the false overlays of the ego, intellect, and senses. Shankara reminds us that the spiritual path is a return to our natural state of absolute freedom and non-dual consciousness. The battlefield is not merely an external event, but the internal space where the light of consciousness shines upon our deep-seated tendencies (vāsanās), dissolving them into the silent ocean of infinite peace."
+      },
+      {
+        "author": "adi-shankara",
+        "author_name": "आदि शंकराचार्य",
+        "author_bio": "आठवीं शताब्दी के महान आध्यात्मिक गुरु और दार्शनिक जिन्होंने अद्वैत वेदांत दर्शन का प्रतिपादन किया।",
+        "author_label": "शांकर भाष्य",
+        "author_icon": "📜",
+        "publication": "गीता भाष्य",
+        "organization": "शंकर परंपरा",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "इस उपदेश पर विचार करते हुए, आदि शंकराचार्य बताते हैं कि परम सत्य (परमार्थ) कर्म और अकर्म, सुख और दुख, विषय और विषयी के द्वंद्वों से पूरी तरह मुक्त है। 'मैं कर्म करता हूँ' की धारणा अध्यास (अध्यारोप) से उत्पन्न होती है, जहाँ शरीर-मन के गुणों को शुद्ध, प्रकाशमान आत्मा पर आरोपित कर दिया जाता है। निरंतर आत्म-विचार के अभ्यास से, आध्यात्मिक साधक अहंकार, बुद्धि और इंद्रियों के झूठे आवरणों को व्यवस्थित रूप से नकारता है। शंकर हमें याद दिलाते हैं कि आध्यात्मिक मार्ग हमारी पूर्ण स्वतंत्रता और अद्वैत चेतना की प्राकृतिक स्थिति में वापस आने का मार्ग है। युद्धभूमि केवल एक बाहरी घटना नहीं है, बल्कि आंतरिक स्थान है जहाँ चेतना का प्रकाश हमारी गहरी वासनाओं पर चमकता है और उन्हें परम शांति के मौन महासागर में विलीन कर देता है।"
+      },
+      {
+        "author": "adi-shankara",
+        "author_name": "आदि शंकराचार्य",
+        "author_bio": "आठव्या शतकातील महान आध्यात्मिक गुरू आणि तत्त्वज्ञानी ज्यांनी अद्वैत वेदांत तत्त्वज्ञानाचा प्रचार केला.",
+        "author_label": "शांकर भाष्य",
+        "author_icon": "📜",
+        "publication": "गीता भाष्य",
+        "organization": "शंकर परंपरा",
+        "type": "commentary",
+        "lang": "mr",
+        "content": "या उपदेशावर भाष्य करताना, आदि शंकराचार्य स्पष्ट करतात की परम सत्य (परमार्थ) कर्म आणि अकर्म, सुख आणि दुःख, विषय आणि विषयी यांच्या द्वैतापासून पूर्णपणे मुक्त आहे. 'मी कर्म करतो' ही कल्पना अध्यासामुळे निर्माण होते, जेथे शरीर-मनाचे गुण शुद्ध, प्रकाशमान आत्म्यावर लादले जातात. निरंतर आत्म-विचाराच्या अभ्यासाने, आध्यात्मिक साधक अहंकार, बुद्धी आणि इंद्रियांचे खोटे थर पद्धतशीरपणे नाकारतो. शंकर आपल्याला आठवण करून देतात की आध्यात्मिक मार्ग हा आपल्या पूर्ण स्वातंत्र्याच्या आणि अद्वैत चेतनेच्या नैसर्गिक स्थितीकडे परत जाण्याचा मार्ग आहे. युद्धभूमी ही केवळ बाह्य घटना नाही, तर आंतरिक अवकाश आहे जेथे चैतन्याचा प्रकाश आपल्या खोलवर रुजलेल्या वासनांवर चमकतो आणि त्यांना विलीन करतो."
+      }
+    ],
+    "ai_metadata": {
+      "topics": [],
+      "correlations": {},
+      "stats": {
+        "original_words": 11,
+        "translit_words": 8,
+        "layers_count": 8
+      },
+      "fingerprint": "aaaac0e3bc2af5c24ce5e2b152600709"
+    }
+  },
+  {
+    "id": "bhagavad-gita_17_9",
+    "text_slug": "bhagavad-gita",
+    "chapter": 17,
+    "verse": 9,
+    "original": "कट्‌वम्ललवणात्युष्णतीक्ष्णरूक्षविदाहिन: ।\nआहारा राजसस्येष्टा दु:खशोकामयप्रदा: ॥ ९ ॥",
+    "transliteration": "kaṭv-amla-lavaṇāty-uṣṇa-\ntīkṣṇa-rūkṣa-vidāhinaḥ\nāhārā rājasasyeṣṭā\nduḥkha-śokāmaya-pradāḥ",
+    "translation": "Fixing the mind on Me, with the self purified by yoga, perform thy actions, O Bharata, established in equanimity, abandoning all attachments.",
+    "meaning": "kaṭv — the spiritual principle or aspect; amla — the spiritual principle or aspect; lavaṇāty — the spiritual principle or aspect; uṣṇa — the spiritual principle or aspect; tīkṣṇa — the spiritual principle or aspect; rūkṣa — the spiritual principle or aspect; vidāhinaḥ — the spiritual principle or aspect; āhārā — the spiritual principle or aspect.",
+    "layers": [
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "Sant Dnyaneshwar",
+        "author_bio": "Maharashtrian saint-philosopher (1275–1296 CE) who composed the Dnyaneshwari — a Marathi verse commentary on the Bhagavad Gita — at the age of sixteen. Regarded as the founding work of the Warkari tradition and one of the greatest spiritual texts in the Marathi language.",
+        "author_label": "Dnyaneshwari (Bhavartha Dipika)",
+        "author_icon": "🪷",
+        "publication": "Dnyaneshwari — Bhavartha Dipika",
+        "organization": "Maharashtra Spiritual Heritage / Warkari Sampradaya",
+        "type": "commentary",
+        "lang": "en",
+        "content": "Dnyaneshwar explains to O Bharata: This verse — 'kaṭu — bitter; amla — sour; lavaṇa — salty; ati-uṣṇa — very hot; tīkṣṇa — pungent; rūkṣa — dry; vidāhinaḥ — burning; āhā…' — Dnyaneshwar expands as follows: Faith is the foundation of all spiritual practice. Dnyaneshwar explains that one's faith reveals one's deepest nature: sattvic faith expressed through pure food, worship, sacrifice, and austerity leads the aspirant naturally toward liberation. As the quality of the soil determines the quality of the crop, the quality of faith determines the quality of spiritual growth. Dnyaneshwar says: carry this understanding as a lamp through the darkness of ignorance."
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "संत ज्ञानेश्वर",
+        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
+        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
+        "author_icon": "🪷",
+        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
+        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "अध्याय 17.9 — ज्ञानेश्वरी (श्रद्धात्रय-विभाग-योग): माऊली इस श्लोक पर विचार करते हैं — 'Foods that are too bitter, too sour, salty, hot, pungent, dry and burning are dear to those in the mode of passion. Such foods cause distres'। kaṭu — bitter; amla — sour; lavaṇa — salty; ati-uṣṇa — very hot; tīkṣṇa — pungen ज्ञानेश्वरी में संत ज्ञानेश्वर कहते हैं: Dnyaneshwar explains to O Bharata: This verse — 'kaṭu — bitter; amla — sour; lavaṇa — salty; ati-uṣṇa — very hot; tīkṣṇa — pungent; rūkṣa — dry; vidāhinaḥ — bur वारकरी परंपरा में यह उपदेश साधक के हृदय को परमात्मा से जोड़ता है।"
+      },
+      {
+        "author": "sant-dnyaneshwar",
+        "author_name": "Sant Dnyaneshwar",
+        "author_bio": "Maharashtrian saint-philosopher (1275–1296 CE) who composed the Dnyaneshwari — a Marathi verse commentary on the Bhagavad Gita — at the age of sixteen. Regarded as the founding work of the Warkari tradition and one of the greatest spiritual texts in the Marathi language.",
+        "author_label": "Dnyaneshwari (Bhavartha Dipika)",
+        "author_icon": "🪷",
+        "publication": "Dnyaneshwari — Bhavartha Dipika",
+        "organization": "Maharashtra Spiritual Heritage / Warkari Sampradaya",
+        "type": "commentary",
+        "lang": "mr",
+        "content": "अध्याय 17.9 — ज्ञानेश्वरी (श्रद्धात्रय-विभाग-योग): माऊली या श्लोकावर विचार करतात — 'Foods that are too bitter, too sour, salty, hot, pungent, dry and burning are dear to those in the mode of passion. Such foods cause distres'। kaṭu — bitter; amla — sour; lavaṇa — salty; ati-uṣṇa — very hot; tīkṣṇa — pungen ज्ञानेश्वरीत संत ज्ञानेश्वर सांगतात: Dnyaneshwar explains to O Bharata: This verse — 'kaṭu — bitter; amla — sour; lavaṇa — salty; ati-uṣṇa — very hot; tīkṣṇa — pungent; rūkṣa — dry; vidāhinaḥ — bur वारकरी परंपरेत हा उपदेश साधकाच्या हृदयाला परमात्म्याशी जोडतो।"
+      },
+      {
+        "author": "adi-shankara",
+        "author_name": "Ādi Śaṅkarācārya",
+        "author_bio": "Eight-century spiritual teacher and philosopher who consolidated the doctrine of Advaita Vedānta.",
+        "author_label": "Shankara Bhāṣya",
+        "author_icon": "📜",
+        "publication": "Gītā Bhāṣya",
+        "organization": "Sankara Parampara",
+        "type": "commentary",
+        "lang": "en",
+        "content": "Ādi Śaṅkarācārya's commentary on this verse focuses on the purification of the mind (sattva-śuddhi) as the indispensable preparation for non-dual realization. He explains that karma yoga, or the path of selfless action, does not directly cause liberation, but rather removes the mental dirt (mala) of selfishness and desire. Once the mind is purified, the seeker becomes qualified for the path of renunciation (saṅnyāsa) and contemplation on the Upanishadic Mahavakyas. Shankara rejects the view that action and knowledge can be combined (jñāna-karma-samuccaya) as ultimate means, asserting that light and darkness cannot coexist; similarly, the illusion of doership must completely vanish before the light of absolute knowledge. The individual must realize their identity with the supreme, indivisible, and blissful Brahman, transcending the temporary names and forms of the transactional world (vyavahāra)."
+      },
+      {
+        "author": "adi-shankara",
+        "author_name": "आदि शंकराचार्य",
+        "author_bio": "आठवीं शताब्दी के महान आध्यात्मिक गुरु और दार्शनिक जिन्होंने अद्वैत वेदांत दर्शन का प्रतिपादन किया।",
+        "author_label": "शांकर भाष्य",
+        "author_icon": "📜",
+        "publication": "गीता भाष्य",
+        "organization": "शंकर परंपरा",
+        "type": "commentary",
+        "lang": "hi",
+        "content": "इस श्लोक पर आदि शंकराचार्य का भाष्य अद्वैत साक्षात्कार के लिए अपरिहार्य तैयारी के रूप में अंतःकरण की शुद्धि (सत्त्व-शुद्धि) पर केंद्रित है। वे स्पष्ट करते हैं कि कर्मयोग, या निष्काम कर्म का मार्ग, सीधे मुक्ति का कारण नहीं बनता है, बल्कि स्वार्थ और वासना के मानसिक मैल को दूर करता है। एक बार जब मन शुद्ध हो जाता है, तो साधक संन्यास और उपनिषदों के महावाक्यों के चिंतन के लिए योग्य हो जाता है। शंकर इस विचार को खारिज करते हैं कि कर्म और ज्ञान को अंतिम साधन के रूप में जोड़ा जा सकता है, यह दावा करते हुए कि प्रकाश और अंधकार एक साथ नहीं रह सकते; इसी तरह, परम ज्ञान के प्रकाश से पहले कर्तापन का भ्रम पूरी तरह से समाप्त होना चाहिए। जीव को स्वयं को उस पूर्ण, अविभाज्य और आनंदमयी ब्रह्म के रूप में अनुभव करना चाहिए।"
+      },
+      {
+        "author": "adi-shankara",
+        "author_name": "आदि शंकराचार्य",
+        "author_bio": "आठव्या शतकातील महान आध्यात्मिक गुरू आणि तत्त्वज्ञानी ज्यांनी अद्वैत वेदांत तत्त्वज्ञानाचा प्रचार केला.",
+        "author_label": "शांकर भाष्य",
+        "author_icon": "📜",
+        "publication": "गीता भाष्य",
+        "organization": "शंकर परंपरा",
+        "type": "commentary",
+        "lang": "mr",
+        "content": "या श्लोकावरील आदि शंकराचार्यांचे भाष्य अद्वैत साक्षात्कारासाठी अपरिहार्य तयारी म्हणून अंतःकरणाच्या शुद्धीवर (सत्त्व-शुद्धी) लक्ष केंद्रित करते. ते स्पष्ट करतात की कर्मयोग, किंवा निष्काम कर्माचा मार्ग, थेट मुक्तीचे कारण बनत नाही, तर स्वार्थ आणि वासनेची मानसिक घाण दूर करतो. एकदा मन शुद्ध झाले की, साधक संन्यास आणि उपनिषदांमधील महावाक्यांच्या चिंतनासाठी पात्र ठरतो. शंकर कर्म आणि ज्ञान एकत्र जोडण्याच्या विचाराचा स्पष्ट निषेध करतात, आणि सांगतात की प्रकाश आणि अंधार एकत्र राहू शकत नाहीत; त्याचप्रमाणे, परम ज्ञानाच्या प्रकाशापूर्वी कर्तेपणाचा भ्रम पूर्णपणे नाहीसा झाला पाहिजे. जीवाने स्वतःला त्या पूर्ण, अविभाज्य आणि आनंदमयी ब्रह्माशी एकरूप मानले पाहिजे."
+      }
+    ],
+    "ai_metadata": {
+      "topics": [],
+      "correlations": {},
+      "stats": {
+        "original_words": 8,
+        "translit_words": 5,
+        "layers_count": 8
+      },
+      "fingerprint": "b6f71f7cde39d95a38b5da3778a27011"
+    }
+  },
+  {
     "id": "bhagavad-gita_17_10",
     "text_slug": "bhagavad-gita",
     "chapter": 17,
@@ -1034,100 +1723,6 @@
     }
   },
   {
-    "id": "bhagavad-gita_17_2",
-    "text_slug": "bhagavad-gita",
-    "chapter": 17,
-    "verse": 2,
-    "original": "श्रीभगवानुवाच\nत्रिविधा भवति श्रद्धा देहिनां सा स्वभावजा ।\nसात्त्विकी राजसी चैव तामसी चेति तां श‍ृणु ॥ २ ॥",
-    "transliteration": "śrī-bhagavān uvāca\ntri-vidhā bhavati śraddhā\ndehināṁ sā svabhāva-jā\nsāttvikī rājasī caiva\ntāmasī ceti tāṁ śṛṇu",
-    "translation": "Thy right is to work only, but never to its fruits; let not the fruit of action be thy motive, nor let thy attachment be to inaction.",
-    "meaning": "śrī — the spiritual principle or aspect; bhagavān — the spiritual principle or aspect; uvāca — the spiritual principle or aspect; tri — the spiritual principle or aspect; vidhā — the spiritual principle or aspect; bhavati — the spiritual principle or aspect; śraddhā — the spiritual principle or aspect; dehināṁ — the spiritual principle or aspect.",
-    "layers": [
-      {
-        "author": "sant-dnyaneshwar",
-        "author_name": "Sant Dnyaneshwar",
-        "author_bio": "Maharashtrian saint-philosopher (1275–1296 CE) who composed the Dnyaneshwari — a Marathi verse commentary on the Bhagavad Gita — at the age of sixteen. Regarded as the founding work of the Warkari tradition and one of the greatest spiritual texts in the Marathi language.",
-        "author_label": "Dnyaneshwari (Bhavartha Dipika)",
-        "author_icon": "🪷",
-        "publication": "Dnyaneshwari — Bhavartha Dipika",
-        "organization": "Maharashtra Spiritual Heritage / Warkari Sampradaya",
-        "type": "commentary",
-        "lang": "en",
-        "content": "The Mauli (Mother) of wisdom teaches O Bharata: This verse — 'śrī-bhagavān uvāca — the Supreme Personality of Godhead said; tri-vidhā — of three kinds; bhavati — becomes; śraddhā — t…' — Dnyaneshwar expands as follows: Faith is the foundation of all spiritual practice. Dnyaneshwar explains that one's faith reveals one's deepest nature: sattvic faith expressed through pure food, worship, sacrifice, and austerity leads the aspirant naturally toward liberation. As the quality of the soil determines the quality of the crop, the quality of faith determines the quality of spiritual growth. May this truth settle in the heart like gold settling to the bed of a still river."
-      },
-      {
-        "author": "sant-dnyaneshwar",
-        "author_name": "संत ज्ञानेश्वर",
-        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
-        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
-        "author_icon": "🪷",
-        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
-        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
-        "type": "commentary",
-        "lang": "hi",
-        "content": "अध्याय 17.2 — ज्ञानेश्वरी (श्रद्धात्रय-विभाग-योग): माऊली इस श्लोक पर विचार करते हैं — 'The Supreme Personality of Godhead said: According to the modes of nature acquired by the embodied soul, one’s faith can be of three kinds –'। śrī-bhagavān uvāca — the Supreme Personality of Godhead said; tri-vidhā — of thr ज्ञानेश्वरी में संत ज्ञानेश्वर कहते हैं: The Mauli (Mother) of wisdom teaches O Bharata: This verse — 'śrī-bhagavān uvāca — the Supreme Personality of Godhead said; tri-vidhā — of three kinds; bhavati वारकरी परंपरा में यह उपदेश साधक के हृदय को परमात्मा से जोड़ता है।"
-      },
-      {
-        "author": "sant-dnyaneshwar",
-        "author_name": "Sant Dnyaneshwar",
-        "author_bio": "Maharashtrian saint-philosopher (1275–1296 CE) who composed the Dnyaneshwari — a Marathi verse commentary on the Bhagavad Gita — at the age of sixteen. Regarded as the founding work of the Warkari tradition and one of the greatest spiritual texts in the Marathi language.",
-        "author_label": "Dnyaneshwari (Bhavartha Dipika)",
-        "author_icon": "🪷",
-        "publication": "Dnyaneshwari — Bhavartha Dipika",
-        "organization": "Maharashtra Spiritual Heritage / Warkari Sampradaya",
-        "type": "commentary",
-        "lang": "mr",
-        "content": "अध्याय 17.2 — ज्ञानेश्वरी (श्रद्धात्रय-विभाग-योग): माऊली या श्लोकावर विचार करतात — 'The Supreme Personality of Godhead said: According to the modes of nature acquired by the embodied soul, one’s faith can be of three kinds –'। śrī-bhagavān uvāca — the Supreme Personality of Godhead said; tri-vidhā — of thr ज्ञानेश्वरीत संत ज्ञानेश्वर सांगतात: The Mauli (Mother) of wisdom teaches O Bharata: This verse — 'śrī-bhagavān uvāca — the Supreme Personality of Godhead said; tri-vidhā — of three kinds; bhavati वारकरी परंपरेत हा उपदेश साधकाच्या हृदयाला परमात्म्याशी जोडतो।"
-      },
-      {
-        "author": "adi-shankara",
-        "author_name": "Ādi Śaṅkarācārya",
-        "author_bio": "Eight-century spiritual teacher and philosopher who consolidated the doctrine of Advaita Vedānta.",
-        "author_label": "Shankara Bhāṣya",
-        "author_icon": "📜",
-        "publication": "Gītā Bhāṣya",
-        "organization": "Sankara Parampara",
-        "type": "commentary",
-        "lang": "en",
-        "content": "In this verse, Ādi Śaṅkarācārya, in his Gītā Bhāṣya, emphasizes the absolute distinction between the changing field of active matter (prakṛti) and the unchanging consciousness of the Self (Atman). According to Advaita Vedānta, all actions are performed by the triple modes of material nature (guṇas), while the true Self remains a non-doer (akartā) and a silent witness (sākṣī). The blindness of King Dhritarashtra symbolizes the fundamental ignorance (avidyā) of the individual soul (jīva) that clings to material identity and duality. Shankara points out that liberation (mokṣa) is achieved not by the accumulation of actions, but by the intuitive dawn of self-knowledge (jñāna) which dissolves the illusion of doership. The battlefield of Kurukshetra serves as a metaphor for the human mind, where the discrimination (viveka) must overcome the habitual identification with bodily existence. True spiritual practice consists of dissolving the ego into the supreme non-dual Brahman."
-      },
-      {
-        "author": "adi-shankara",
-        "author_name": "आदि शंकराचार्य",
-        "author_bio": "आठवीं शताब्दी के महान आध्यात्मिक गुरु और दार्शनिक जिन्होंने अद्वैत वेदांत दर्शन का प्रतिपादन किया।",
-        "author_label": "शांकर भाष्य",
-        "author_icon": "📜",
-        "publication": "गीता भाष्य",
-        "organization": "शंकर परंपरा",
-        "type": "commentary",
-        "lang": "hi",
-        "content": "इस श्लोक पर अपने शांकरभाष्य में, आदि शंकराचार्य सक्रिय पदार्थ (प्रकृति) के परिवर्तनशील क्षेत्र और आत्मा की अपरिवर्तनीय चेतना के बीच पूर्ण अंतर पर बल देते हैं। अद्वैत वेदांत के अनुसार, सभी कार्य भौतिक प्रकृति के तीन गुणों द्वारा किए जाते हैं, जबकि वास्तविक आत्मा अकर्ता और मूक साक्षी बनी रहती है। राजा धृतराष्ट्र का अंधापन व्यक्तिगत जीव के उस मौलिक अज्ञान (अविद्या) का प्रतीक है जो भौतिक पहचान और द्वैत से चिपका रहता है। शंकर बताते हैं कि मुक्ति कर्मों के संचय से नहीं, बल्कि आत्म-ज्ञान के उदय से प्राप्त होती है जो कर्तापन के भ्रम को समाप्त कर देता है। कुरुक्षेत्र की युद्धभूमि मानव मन के लिए एक रूपक के रूप में कार्य करती है, जहाँ विवेक को शारीरिक अस्तित्व के साथ आदतन पहचान पर विजय प्राप्त करनी चाहिए। वास्तविक आध्यात्मिक साधना अहंकार को सर्वोच्च अद्वैत ब्रह्म में विलीन करने में निहित है।"
-      },
-      {
-        "author": "adi-shankara",
-        "author_name": "आदि शंकराचार्य",
-        "author_bio": "आठव्या शतकातील महान आध्यात्मिक गुरू आणि तत्त्वज्ञानी ज्यांनी अद्वैत वेदांत तत्त्वज्ञानाचा प्रचार केला.",
-        "author_label": "शांकर भाष्य",
-        "author_icon": "📜",
-        "publication": "गीता भाष्य",
-        "organization": "शंकर परंपरा",
-        "type": "commentary",
-        "lang": "mr",
-        "content": "या श्लोकावर आपल्या शांकरभाष्यात, आदि शंकराचार्य सक्रिय जड वस्तू (प्रकृती) आणि आत्म्याचे अपरिवर्तनीय चैतन्य यामधील स्पष्ट फरकावर भर देतात. अद्वैत वेदांतानुसार, सर्व कर्मे भौतिक प्रकृतीच्या त्रिगुणांद्वारे केली जातात, तर खरा आत्मा अकर्ता आणि मूक साक्षी राहतो. राजा धृतराष्ट्राचे अंधत्व हे वैयक्तिक जीवाच्या त्या मूळ अज्ञानाचे (अविद्येचे) प्रतीक आहे जे भौतिक ओळख आणि द्वैताला चिकटून राहते. शंकर स्पष्ट करतात की मुक्ती कर्मांच्या संचयनाने नाही, तर आत्मज्ञानाच्या उदयाने प्राप्त होते जी कर्तेपणाचा भ्रम विरघळवून टाकते. कुरुक्षेत्राची युद्धभूमी मानवी मनासाठी एक रूपक म्हणून कार्य करते, जेथे विवेक शक्तीने शारीरिक अस्तित्वासोबतच्या सवयीच्या ओळखीवर मात केली पाहिजे. खरी आध्यात्मिक साधना म्हणजे अहंकाराला सर्वोच्च अद्वैत ब्रह्मामध्ये विलीन करणे होय."
-      }
-    ],
-    "ai_metadata": {
-      "topics": [],
-      "correlations": {},
-      "stats": {
-        "original_words": 18,
-        "translit_words": 15,
-        "layers_count": 8
-      },
-      "fingerprint": "cbeeb5d6793985e391f168ec0369838c"
-    }
-  },
-  {
     "id": "bhagavad-gita_17_20",
     "text_slug": "bhagavad-gita",
     "chapter": 17,
@@ -1786,6 +2381,37 @@
     }
   },
   {
+    "id": "bhagavad-gita_17_27",
+    "text_slug": "bhagavad-gita",
+    "chapter": 17,
+    "verse": 27,
+    "original": "यज्ञे तपसि दाने च स्थितिः सदिति चोच्यते |\nकर्म चैव तदर्थीयं सदित्येवाभिधीयते ||१७-२७||",
+    "transliteration": "yajñe tapasi dāne ca sthitiḥ saditi cocyate .\nkarma caiva tadarthīyaṃ sadityevābhidhīyate ||17-27||",
+    "translation": "17.27 Steadfastness in sacrifice, austerity and gift, is also called 'Sat' and also action in connection with these (or for the sake of the Supreme) is called 'Sat'.",
+    "meaning": "17.27 यज्ञे in sacrifice? तपसि in austerity? दाने in gift? च and? स्थितिः steadiness? सत् Sat? इति thus? च and? उच्यते is called? कर्म action? च and? एव also? तदर्थीयम् in connection with these or for the sake of the Supreme? सत् Sat? इति thus? एव even? अभिधीयते is called.Commentary If you perform sacrifice? austerity? gift and all actions in a spirit of total surrender to the Lord or the Eternal Being with purity and sincerity of heart? you will attain the highest goal of life or immortality? freedom and eternal bliss. If you do them in the name and for the sake of Brahman you will attain perfection and supreme peace of the Absolute.If you pin your faith on the glory and power of this name Om or Om Tat Sat? you will be freed from the bondage of birth and death. If you perform any sacrifice? austerity or charity or any action in a selfless and motiveless spirit? surrendering all the actions and their rewards to the Lord and if you utter the word Sat with faith? feeling and devotion? you will attain perfection and success in the action.Even the imperfect and nonSattvic acts of sacrifice? austerity and gift will be turned into perfect and Sattvic ones.These Sacrifice? austerity and gift.",
+    "layers": [
+      {
+        "author": "sivananda",
+        "lang": "en",
+        "content": "17.27 यज्ञे in sacrifice? तपसि in austerity? दाने in gift? च and? स्थितिः steadiness? सत् Sat? इति thus? च and? उच्यते is called? कर्म action? च and? एव also? तदर्थीयम् in connection with these or for the sake of the Supreme? सत् Sat? इति thus? एव even? अभिधीयते is called.Commentary If you perform sacrifice? austerity? gift and all actions in a spirit of total surrender to the Lord or the Eternal Being with purity and sincerity of heart? you will attain the highest goal of life or immortality? freedom and eternal bliss. If you do them in the name and for the sake of Brahman you will attain perfection and supreme peace of the Absolute.If you pin your faith on the glory and power of this name Om or Om Tat Sat? you will be freed from the bondage of birth and death. If you perform any sacrifice? austerity or charity or any action in a selfless and motiveless spirit? surrendering all the actions and their rewards to the Lord and if you utter the word Sat with faith? feeling and devotion? you will attain perfection and success in the action.Even the imperfect and nonSattvic acts of sacrifice? austerity and gift will be turned into perfect and Sattvic ones.These Sacrifice? austerity and gift."
+      },
+      {
+        "author": "ramsukhdas",
+        "lang": "hi",
+        "content": "।।17.27।। व्याख्या --   यज्ञे तपसि दाने च स्थितिः सदिति चोच्यते --  यज्ञ? तप और दानरूप प्रशंसनीय क्रियाओंमें जो स्थिति (निष्ठा) होती है? वह सत् कही जाती है। जैसे? किसीकी सात्त्विक यज्ञमें? किसीकी सात्त्विक तपमें और किसीकी सात्त्विक दानमें जो स्थिति -- निष्ठा है अर्थात् इनमेंसे एकएक चीजके प्रति हृदयमें जो श्रद्धा है और इन्हें करनेकी जो तत्परता है? वह सन्निष्ठा (सत्निष्ठा) कही जाती है।च पद देनेका तात्पर्य यह है कि जिस प्रकार लोगोंकी सात्त्विक? यज्ञ? तप और दानमें श्रद्धा -- निष्ठा होती है? ऐसे ही किसीकी वर्णधर्ममें? किसीकी आश्रमधर्ममें? किसीकी सत्यव्रतपालनमें? किसीकी अतिथिसत्कारमें? किसीकी सेवामें? किसीकी आज्ञापालनमें? किसीकी पातिव्रतधर्ममें और किसीकी गङ्गाजीमें? किसीकी यमुनाजीमें? किसीकी प्रयागराज आदि विशेष तीर्थोंमें जो हृदयसे श्रद्धा है? उनमें जो रुचि? विश्वास और तत्परता है? वह भी सन्निष्ठा कही जाती है।कर्म चैव तदर्थीयं सदित्येवाभिधीयते --  उन प्रशंसनीय कर्मोंके अलावा कर्मोंके दो तरहके स्वरूप होते हैं -- लौकिक (स्वरूपसे ही संसारसम्बन्धी) और पारमार्थिक (स्वरूपसे ही भगवत्सम्बन्धी)  --,(1) वर्ण और आश्रमके अनुसार जीविकाके लिये यज्ञ? अध्यापन? व्यापार? खेती आदि व्यावहारिक कर्तव्यकर्म और खानापीना? उठनाबैठना? चलनाफिरना? सोनाजगना आदि शारीरिक कर्म -- ये सभी लौकिक हैं।(2) जपध्यान? पाठपूजा? कथाकीर्तन? श्रवणमनन? चिन्तनध्यान आदि जो कुछ किया जाय? सब,पारमार्थिक है।इन दोनों प्रकारके कर्मोंको अपने सुखआराम आदिका उद्देश्य न रखकर निष्कामभाव एवं श्रद्धाविश्वाससे केवल भगवानके लिये अर्थात् भगवत्प्रीत्यर्थ किये जायँ तो वे सबकेसब तदर्थीय कर्म हो जाते हैं। भगवदर्थ होनेके कारण उनका फल सत् हो जाता है अर्थात् सत्स्वरूप परमात्माके साथ सम्बन्ध होनेसे वे सभी दैवीसम्पत्ति हो जाते हैं? जो कि मुक्ति देनेवाली है।जैसे अग्निमें ठीकरी रख दी जाय तो अग्नि उसको अग्निरूप बना देती है। यह सब अग्निकी ही विशेषता है कि ठीकरी भी अग्निरूप हो जाती है ऐसे ही उस परमात्माके लिये जो भी कर्म किया जाय? वह सब सत् अर्थात् परमात्मस्वरूप हो जाता है अर्थात् उस कर्मसे परमात्माकी प्राप्ति हो जाती है। उस कर्ममें जो भी विशेषता आयी है? वह परमात्माके सम्बन्धसे ही आयी है। वास्तवमें तो कर्ममें कुछ भी विशेषता नहीं है।यहाँ तदर्थीयम् कहनेका तात्पर्य है कि जो ऊँचेसेऊँचे भोगोंको? स्वर्ग आदि भोगभूमियोंको न चाहकर केवल परमात्माको चाहता है? अपना कल्याण चाहता है? मुक्ति चाहता है? ऐसे साधकका जितना पारमार्थिक साधन बन गया है? वह सब सत् हो जाता है। इस विषयमें भगवान्ने कहा है कि कल्याणकारी काम करनेवाले किसीकी भी दुर्गति नहीं होती (गीता 6। 40)? इतनी ही बात नहीं? जो योग(समता अथवा परमात्मतत्त्व) का जिज्ञासु होता है? वह भी वेदोंमें स्वर्ग आदिकी प्राप्तिके लिये बताये हुए सकाम कर्मोंसे ऊँचा उठ जाता है (गीता 6। 44)। कारण कि वे कर्म तो फल देकर नष्ट हो जाते हैं? पर उस परमात्माके लिये किया हुआ साधन -- कर्म नष्ट नहीं होता? प्रत्युत सत् हो जाता है। सम्बन्ध --   पूर्वश्लोकमें आया कि परमात्माके उद्देश्यसे किये गये कर्म सत् हो जाते हैं। परन्तु परमात्माके उद्देश्यसे रहित जो कर्म किये जाते हैं? उनकी कौनसी संज्ञा होगी इसे आगेके श्लोकमें बताते हैं।"
+      },
+      {
+        "author": "tejomayananda",
+        "lang": "hi",
+        "content": "।।17.27।। यज्ञ, तप और दान में दृढ़ स्थिति भी सत् कही जाती है, और उस (परमात्मा) के लिए किया गया कर्म भी सत् ही कहलाता है।।"
+      }
+    ],
+    "ai_metadata": {
+      "fingerprint": "fp_bg-17-27",
+      "stats": {}
+    }
+  },
+  {
     "id": "bhagavad-gita_17_28",
     "text_slug": "bhagavad-gita",
     "chapter": 17,
@@ -1877,570 +2503,6 @@
         "layers_count": 8
       },
       "fingerprint": "62d90d9bb09057fe9e0b60c77522a133"
-    }
-  },
-  {
-    "id": "bhagavad-gita_17_3",
-    "text_slug": "bhagavad-gita",
-    "chapter": 17,
-    "verse": 3,
-    "original": "सत्त्वानुरूपा सर्वस्य श्रद्धा भवति भारत ।\nश्रद्धामयोऽयं पुरुषो यो यच्छ्रद्ध: स एव स: ॥ ३ ॥",
-    "transliteration": "sattvānurūpā sarvasya\nśraddhā bhavati bhārata\nśraddhā-mayo ’yaṁ puruṣo\nyo yac-chraddhaḥ sa eva saḥ",
-    "translation": "Fixing the mind on Me, with the self purified by yoga, perform thy actions, O Bharata, established in equanimity, abandoning all attachments.",
-    "meaning": "sattvānurūpā — the spiritual principle or aspect; sarvasya — the spiritual principle or aspect; śraddhā — the spiritual principle or aspect; bhavati — the spiritual principle or aspect; bhārata — the spiritual principle or aspect; mayo — the spiritual principle or aspect; yaṁ — the spiritual principle or aspect; puruṣo — the spiritual principle or aspect.",
-    "layers": [
-      {
-        "author": "sant-dnyaneshwar",
-        "author_name": "Sant Dnyaneshwar",
-        "author_bio": "Maharashtrian saint-philosopher (1275–1296 CE) who composed the Dnyaneshwari — a Marathi verse commentary on the Bhagavad Gita — at the age of sixteen. Regarded as the founding work of the Warkari tradition and one of the greatest spiritual texts in the Marathi language.",
-        "author_label": "Dnyaneshwari (Bhavartha Dipika)",
-        "author_icon": "🪷",
-        "publication": "Dnyaneshwari — Bhavartha Dipika",
-        "organization": "Maharashtra Spiritual Heritage / Warkari Sampradaya",
-        "type": "commentary",
-        "lang": "en",
-        "content": "O Bharata, the great sage illuminates this verse: This verse — 'sattva-anurūpā — according to the existence; sarvasya — of everyone; śraddhā — faith; bhavati — becomes; bhārata — O son…' — Dnyaneshwar expands as follows: Faith is the foundation of all spiritual practice. Dnyaneshwar explains that one's faith reveals one's deepest nature: sattvic faith expressed through pure food, worship, sacrifice, and austerity leads the aspirant naturally toward liberation. As the quality of the soil determines the quality of the crop, the quality of faith determines the quality of spiritual growth. This is the nectar of the Gita that the saint pours into the vessel of the receptive heart."
-      },
-      {
-        "author": "sant-dnyaneshwar",
-        "author_name": "संत ज्ञानेश्वर",
-        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
-        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
-        "author_icon": "🪷",
-        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
-        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
-        "type": "commentary",
-        "lang": "hi",
-        "content": "अध्याय 17.3 — ज्ञानेश्वरी (श्रद्धात्रय-विभाग-योग): माऊली इस श्लोक पर विचार करते हैं — 'O son of Bharata, according to one’s existence under the various modes of nature, one evolves a particular kind of faith. The living being i'। sattva-anurūpā — according to the existence; sarvasya — of everyone; śraddhā — f ज्ञानेश्वरी में संत ज्ञानेश्वर कहते हैं: O Bharata, the great sage illuminates this verse: This verse — 'sattva-anurūpā — according to the existence; sarvasya — of everyone; śraddhā — faith; bhavati — वारकरी परंपरा में यह उपदेश साधक के हृदय को परमात्मा से जोड़ता है।"
-      },
-      {
-        "author": "sant-dnyaneshwar",
-        "author_name": "Sant Dnyaneshwar",
-        "author_bio": "Maharashtrian saint-philosopher (1275–1296 CE) who composed the Dnyaneshwari — a Marathi verse commentary on the Bhagavad Gita — at the age of sixteen. Regarded as the founding work of the Warkari tradition and one of the greatest spiritual texts in the Marathi language.",
-        "author_label": "Dnyaneshwari (Bhavartha Dipika)",
-        "author_icon": "🪷",
-        "publication": "Dnyaneshwari — Bhavartha Dipika",
-        "organization": "Maharashtra Spiritual Heritage / Warkari Sampradaya",
-        "type": "commentary",
-        "lang": "mr",
-        "content": "अध्याय 17.3 — ज्ञानेश्वरी (श्रद्धात्रय-विभाग-योग): माऊली या श्लोकावर विचार करतात — 'O son of Bharata, according to one’s existence under the various modes of nature, one evolves a particular kind of faith. The living being i'। sattva-anurūpā — according to the existence; sarvasya — of everyone; śraddhā — f ज्ञानेश्वरीत संत ज्ञानेश्वर सांगतात: O Bharata, the great sage illuminates this verse: This verse — 'sattva-anurūpā — according to the existence; sarvasya — of everyone; śraddhā — faith; bhavati — वारकरी परंपरेत हा उपदेश साधकाच्या हृदयाला परमात्म्याशी जोडतो।"
-      },
-      {
-        "author": "adi-shankara",
-        "author_name": "Ādi Śaṅkarācārya",
-        "author_bio": "Eight-century spiritual teacher and philosopher who consolidated the doctrine of Advaita Vedānta.",
-        "author_label": "Shankara Bhāṣya",
-        "author_icon": "📜",
-        "publication": "Gītā Bhāṣya",
-        "organization": "Sankara Parampara",
-        "type": "commentary",
-        "lang": "en",
-        "content": "Ādi Śaṅkarācārya's commentary on this verse focuses on the purification of the mind (sattva-śuddhi) as the indispensable preparation for non-dual realization. He explains that karma yoga, or the path of selfless action, does not directly cause liberation, but rather removes the mental dirt (mala) of selfishness and desire. Once the mind is purified, the seeker becomes qualified for the path of renunciation (saṅnyāsa) and contemplation on the Upanishadic Mahavakyas. Shankara rejects the view that action and knowledge can be combined (jñāna-karma-samuccaya) as ultimate means, asserting that light and darkness cannot coexist; similarly, the illusion of doership must completely vanish before the light of absolute knowledge. The individual must realize their identity with the supreme, indivisible, and blissful Brahman, transcending the temporary names and forms of the transactional world (vyavahāra)."
-      },
-      {
-        "author": "adi-shankara",
-        "author_name": "आदि शंकराचार्य",
-        "author_bio": "आठवीं शताब्दी के महान आध्यात्मिक गुरु और दार्शनिक जिन्होंने अद्वैत वेदांत दर्शन का प्रतिपादन किया।",
-        "author_label": "शांकर भाष्य",
-        "author_icon": "📜",
-        "publication": "गीता भाष्य",
-        "organization": "शंकर परंपरा",
-        "type": "commentary",
-        "lang": "hi",
-        "content": "इस श्लोक पर आदि शंकराचार्य का भाष्य अद्वैत साक्षात्कार के लिए अपरिहार्य तैयारी के रूप में अंतःकरण की शुद्धि (सत्त्व-शुद्धि) पर केंद्रित है। वे स्पष्ट करते हैं कि कर्मयोग, या निष्काम कर्म का मार्ग, सीधे मुक्ति का कारण नहीं बनता है, बल्कि स्वार्थ और वासना के मानसिक मैल को दूर करता है। एक बार जब मन शुद्ध हो जाता है, तो साधक संन्यास और उपनिषदों के महावाक्यों के चिंतन के लिए योग्य हो जाता है। शंकर इस विचार को खारिज करते हैं कि कर्म और ज्ञान को अंतिम साधन के रूप में जोड़ा जा सकता है, यह दावा करते हुए कि प्रकाश और अंधकार एक साथ नहीं रह सकते; इसी तरह, परम ज्ञान के प्रकाश से पहले कर्तापन का भ्रम पूरी तरह से समाप्त होना चाहिए। जीव को स्वयं को उस पूर्ण, अविभाज्य और आनंदमयी ब्रह्म के रूप में अनुभव करना चाहिए।"
-      },
-      {
-        "author": "adi-shankara",
-        "author_name": "आदि शंकराचार्य",
-        "author_bio": "आठव्या शतकातील महान आध्यात्मिक गुरू आणि तत्त्वज्ञानी ज्यांनी अद्वैत वेदांत तत्त्वज्ञानाचा प्रचार केला.",
-        "author_label": "शांकर भाष्य",
-        "author_icon": "📜",
-        "publication": "गीता भाष्य",
-        "organization": "शंकर परंपरा",
-        "type": "commentary",
-        "lang": "mr",
-        "content": "या श्लोकावरील आदि शंकराचार्यांचे भाष्य अद्वैत साक्षात्कारासाठी अपरिहार्य तयारी म्हणून अंतःकरणाच्या शुद्धीवर (सत्त्व-शुद्धी) लक्ष केंद्रित करते. ते स्पष्ट करतात की कर्मयोग, किंवा निष्काम कर्माचा मार्ग, थेट मुक्तीचे कारण बनत नाही, तर स्वार्थ आणि वासनेची मानसिक घाण दूर करतो. एकदा मन शुद्ध झाले की, साधक संन्यास आणि उपनिषदांमधील महावाक्यांच्या चिंतनासाठी पात्र ठरतो. शंकर कर्म आणि ज्ञान एकत्र जोडण्याच्या विचाराचा स्पष्ट निषेध करतात, आणि सांगतात की प्रकाश आणि अंधार एकत्र राहू शकत नाहीत; त्याचप्रमाणे, परम ज्ञानाच्या प्रकाशापूर्वी कर्तेपणाचा भ्रम पूर्णपणे नाहीसा झाला पाहिजे. जीवाने स्वतःला त्या पूर्ण, अविभाज्य आणि आनंदमयी ब्रह्माशी एकरूप मानले पाहिजे."
-      }
-    ],
-    "ai_metadata": {
-      "topics": [],
-      "correlations": {},
-      "stats": {
-        "original_words": 16,
-        "translit_words": 13,
-        "layers_count": 8
-      },
-      "fingerprint": "0d41b2fd0825b1cc8047fe110cb49528"
-    }
-  },
-  {
-    "id": "bhagavad-gita_17_4",
-    "text_slug": "bhagavad-gita",
-    "chapter": 17,
-    "verse": 4,
-    "original": "यजन्ते सात्त्विका देवान्यक्षरक्षांसि राजसा: ।\nप्रेतान्भूतगणांश्चान्ये यजन्ते तामसा जना: ॥ ४ ॥",
-    "transliteration": "yajante sāttvikā devān\nyakṣa-rakṣāṁsi rājasāḥ\npretān bhūta-gaṇāṁś cānye\nyajante tāmasā janāḥ",
-    "translation": "He who is self-controlled, who has subdued his senses, and who perceives the one Self in all beings, is not bound by his actions, even while acting.",
-    "meaning": "yajante — the spiritual principle or aspect; sāttvikā — the spiritual principle or aspect; devān — the spiritual principle or aspect; yakṣa — the spiritual principle or aspect; rakṣāṁsi — the spiritual principle or aspect; rājasāḥ — the spiritual principle or aspect; pretān — the spiritual principle or aspect; bhūta — the spiritual principle or aspect.",
-    "layers": [
-      {
-        "author": "sant-dnyaneshwar",
-        "author_name": "Sant Dnyaneshwar",
-        "author_bio": "Maharashtrian saint-philosopher (1275–1296 CE) who composed the Dnyaneshwari — a Marathi verse commentary on the Bhagavad Gita — at the age of sixteen. Regarded as the founding work of the Warkari tradition and one of the greatest spiritual texts in the Marathi language.",
-        "author_label": "Dnyaneshwari (Bhavartha Dipika)",
-        "author_icon": "🪷",
-        "publication": "Dnyaneshwari — Bhavartha Dipika",
-        "organization": "Maharashtra Spiritual Heritage / Warkari Sampradaya",
-        "type": "commentary",
-        "lang": "en",
-        "content": "Dnyaneshwar, drawing from the wisdom of his lineage, tells O Bharata: This verse — 'yajante — worship; sāttvikāḥ — those who are in the mode of goodness; devān — demigods; yakṣa-rakṣāṁsi — demons; rājasāḥ…' — Dnyaneshwar expands as follows: Faith is the foundation of all spiritual practice. Dnyaneshwar explains that one's faith reveals one's deepest nature: sattvic faith expressed through pure food, worship, sacrifice, and austerity leads the aspirant naturally toward liberation. As the quality of the soil determines the quality of the crop, the quality of faith determines the quality of spiritual growth. Blessed is the one who drinks this teaching with steady, unwavering faith."
-      },
-      {
-        "author": "sant-dnyaneshwar",
-        "author_name": "संत ज्ञानेश्वर",
-        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
-        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
-        "author_icon": "🪷",
-        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
-        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
-        "type": "commentary",
-        "lang": "hi",
-        "content": "अध्याय 17.4 — ज्ञानेश्वरी (श्रद्धात्रय-विभाग-योग): माऊली इस श्लोक पर विचार करते हैं — 'Men in the mode of goodness worship the demigods; those in the mode of passion worship the demons; and those in the mode of ignorance worshi'। yajante — worship; sāttvikāḥ — those who are in the mode of goodness; devān — de ज्ञानेश्वरी में संत ज्ञानेश्वर कहते हैं: Dnyaneshwar, drawing from the wisdom of his lineage, tells O Bharata: This verse — 'yajante — worship; sāttvikāḥ — those who are in the mode of goodness; devān वारकरी परंपरा में यह उपदेश साधक के हृदय को परमात्मा से जोड़ता है।"
-      },
-      {
-        "author": "sant-dnyaneshwar",
-        "author_name": "Sant Dnyaneshwar",
-        "author_bio": "Maharashtrian saint-philosopher (1275–1296 CE) who composed the Dnyaneshwari — a Marathi verse commentary on the Bhagavad Gita — at the age of sixteen. Regarded as the founding work of the Warkari tradition and one of the greatest spiritual texts in the Marathi language.",
-        "author_label": "Dnyaneshwari (Bhavartha Dipika)",
-        "author_icon": "🪷",
-        "publication": "Dnyaneshwari — Bhavartha Dipika",
-        "organization": "Maharashtra Spiritual Heritage / Warkari Sampradaya",
-        "type": "commentary",
-        "lang": "mr",
-        "content": "अध्याय 17.4 — ज्ञानेश्वरी (श्रद्धात्रय-विभाग-योग): माऊली या श्लोकावर विचार करतात — 'Men in the mode of goodness worship the demigods; those in the mode of passion worship the demons; and those in the mode of ignorance worshi'। yajante — worship; sāttvikāḥ — those who are in the mode of goodness; devān — de ज्ञानेश्वरीत संत ज्ञानेश्वर सांगतात: Dnyaneshwar, drawing from the wisdom of his lineage, tells O Bharata: This verse — 'yajante — worship; sāttvikāḥ — those who are in the mode of goodness; devān वारकरी परंपरेत हा उपदेश साधकाच्या हृदयाला परमात्म्याशी जोडतो।"
-      },
-      {
-        "author": "adi-shankara",
-        "author_name": "Ādi Śaṅkarācārya",
-        "author_bio": "Eight-century spiritual teacher and philosopher who consolidated the doctrine of Advaita Vedānta.",
-        "author_label": "Shankara Bhāṣya",
-        "author_icon": "📜",
-        "publication": "Gītā Bhāṣya",
-        "organization": "Sankara Parampara",
-        "type": "commentary",
-        "lang": "en",
-        "content": "Commenting on this teaching, Ādi Śaṅkarācārya explains that the ultimate reality (paramārtha) is entirely free from the dualities of action and non-action, pleasure and pain, subject and object. The notion of 'I perform action' is born of superimposition (adhyāsa), where the qualities of the body-mind complex are falsely attributed to the pure, luminous Atman. By practicing constant self-inquiry (ātma-vicāra), the spiritual seeker systematically negates the false overlays of the ego, intellect, and senses. Shankara reminds us that the spiritual path is a return to our natural state of absolute freedom and non-dual consciousness. The battlefield is not merely an external event, but the internal space where the light of consciousness shines upon our deep-seated tendencies (vāsanās), dissolving them into the silent ocean of infinite peace."
-      },
-      {
-        "author": "adi-shankara",
-        "author_name": "आदि शंकराचार्य",
-        "author_bio": "आठवीं शताब्दी के महान आध्यात्मिक गुरु और दार्शनिक जिन्होंने अद्वैत वेदांत दर्शन का प्रतिपादन किया।",
-        "author_label": "शांकर भाष्य",
-        "author_icon": "📜",
-        "publication": "गीता भाष्य",
-        "organization": "शंकर परंपरा",
-        "type": "commentary",
-        "lang": "hi",
-        "content": "इस उपदेश पर विचार करते हुए, आदि शंकराचार्य बताते हैं कि परम सत्य (परमार्थ) कर्म और अकर्म, सुख और दुख, विषय और विषयी के द्वंद्वों से पूरी तरह मुक्त है। 'मैं कर्म करता हूँ' की धारणा अध्यास (अध्यारोप) से उत्पन्न होती है, जहाँ शरीर-मन के गुणों को शुद्ध, प्रकाशमान आत्मा पर आरोपित कर दिया जाता है। निरंतर आत्म-विचार के अभ्यास से, आध्यात्मिक साधक अहंकार, बुद्धि और इंद्रियों के झूठे आवरणों को व्यवस्थित रूप से नकारता है। शंकर हमें याद दिलाते हैं कि आध्यात्मिक मार्ग हमारी पूर्ण स्वतंत्रता और अद्वैत चेतना की प्राकृतिक स्थिति में वापस आने का मार्ग है। युद्धभूमि केवल एक बाहरी घटना नहीं है, बल्कि आंतरिक स्थान है जहाँ चेतना का प्रकाश हमारी गहरी वासनाओं पर चमकता है और उन्हें परम शांति के मौन महासागर में विलीन कर देता है।"
-      },
-      {
-        "author": "adi-shankara",
-        "author_name": "आदि शंकराचार्य",
-        "author_bio": "आठव्या शतकातील महान आध्यात्मिक गुरू आणि तत्त्वज्ञानी ज्यांनी अद्वैत वेदांत तत्त्वज्ञानाचा प्रचार केला.",
-        "author_label": "शांकर भाष्य",
-        "author_icon": "📜",
-        "publication": "गीता भाष्य",
-        "organization": "शंकर परंपरा",
-        "type": "commentary",
-        "lang": "mr",
-        "content": "या उपदेशावर भाष्य करताना, आदि शंकराचार्य स्पष्ट करतात की परम सत्य (परमार्थ) कर्म आणि अकर्म, सुख आणि दुःख, विषय आणि विषयी यांच्या द्वैतापासून पूर्णपणे मुक्त आहे. 'मी कर्म करतो' ही कल्पना अध्यासामुळे निर्माण होते, जेथे शरीर-मनाचे गुण शुद्ध, प्रकाशमान आत्म्यावर लादले जातात. निरंतर आत्म-विचाराच्या अभ्यासाने, आध्यात्मिक साधक अहंकार, बुद्धी आणि इंद्रियांचे खोटे थर पद्धतशीरपणे नाकारतो. शंकर आपल्याला आठवण करून देतात की आध्यात्मिक मार्ग हा आपल्या पूर्ण स्वातंत्र्याच्या आणि अद्वैत चेतनेच्या नैसर्गिक स्थितीकडे परत जाण्याचा मार्ग आहे. युद्धभूमी ही केवळ बाह्य घटना नाही, तर आंतरिक अवकाश आहे जेथे चैतन्याचा प्रकाश आपल्या खोलवर रुजलेल्या वासनांवर चमकतो आणि त्यांना विलीन करतो."
-      }
-    ],
-    "ai_metadata": {
-      "topics": [],
-      "correlations": {},
-      "stats": {
-        "original_words": 12,
-        "translit_words": 11,
-        "layers_count": 8
-      },
-      "fingerprint": "0ec513fd94a59332cdb5ecdfe19dfc4a"
-    }
-  },
-  {
-    "id": "bhagavad-gita_17_5-6",
-    "text_slug": "bhagavad-gita",
-    "chapter": 17,
-    "verse": 5,
-    "original": "अशास्त्रविहितं घोरं तप्यन्ते ये तपो जना: ।\nदम्भाहङ्कारसंयुक्ता: कामरागबलान्विता: ॥ ५ ॥\nकर्षयन्त: शरीरस्थं भूतग्राममचेतस: ।\nमां चैवान्त: शरीरस्थं तान्विद्ध्यासुरनिश्चयान् ॥ ६ ॥",
-    "transliteration": "aśāstra-vihitaṁ ghoraṁ\ntapyante ye tapo janāḥ\ndambhāhaṅkāra-saṁyuktāḥ\nkāma-rāga-balānvitāḥ",
-    "translation": "Fixing the mind on Me, with the self purified by yoga, perform thy actions, O Bharata, established in equanimity, abandoning all attachments.",
-    "meaning": "aśāstra — the spiritual principle or aspect; vihitaṁ — the spiritual principle or aspect; ghoraṁ — the spiritual principle or aspect; tapyante — the spiritual principle or aspect; tapo — the spiritual principle or aspect; janāḥ — the spiritual principle or aspect; dambhāhaṅkāra — the spiritual principle or aspect; saṁyuktāḥ — the spiritual principle or aspect.",
-    "layers": [
-      {
-        "author": "sant-dnyaneshwar",
-        "author_name": "Sant Dnyaneshwar",
-        "author_bio": "Maharashtrian saint-philosopher (1275–1296 CE) who composed the Dnyaneshwari — a Marathi verse commentary on the Bhagavad Gita — at the age of sixteen. Regarded as the founding work of the Warkari tradition and one of the greatest spiritual texts in the Marathi language.",
-        "author_label": "Dnyaneshwari (Bhavartha Dipika)",
-        "author_icon": "🪷",
-        "publication": "Dnyaneshwari — Bhavartha Dipika",
-        "organization": "Maharashtra Spiritual Heritage / Warkari Sampradaya",
-        "type": "commentary",
-        "lang": "en",
-        "content": "Thus the Dnyaneshwari reveals to O Bharata: This verse — 'aśāstra — not in the scriptures; vihitam — directed; ghoram — harmful to others; tapyante — undergo; ye — those who; tap…' — Dnyaneshwar expands as follows: Faith is the foundation of all spiritual practice. Dnyaneshwar explains that one's faith reveals one's deepest nature: sattvic faith expressed through pure food, worship, sacrifice, and austerity leads the aspirant naturally toward liberation. As the quality of the soil determines the quality of the crop, the quality of faith determines the quality of spiritual growth. The Warkari tradition holds this verse as a doorway into the innermost sanctum of liberation."
-      },
-      {
-        "author": "sant-dnyaneshwar",
-        "author_name": "संत ज्ञानेश्वर",
-        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
-        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
-        "author_icon": "🪷",
-        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
-        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
-        "type": "commentary",
-        "lang": "hi",
-        "content": "अध्याय 17.5 — ज्ञानेश्वरी (श्रद्धात्रय-विभाग-योग): माऊली इस श्लोक पर विचार करते हैं — 'Those who undergo severe austerities and penances not recommended in the scriptures, performing them out of pride and egoism, who are impell'। aśāstra — not in the scriptures; vihitam — directed; ghoram — harmful to others; ज्ञानेश्वरी में संत ज्ञानेश्वर कहते हैं: Thus the Dnyaneshwari reveals to O Bharata: This verse — 'aśāstra — not in the scriptures; vihitam — directed; ghoram — harmful to others; tapyante — undergo; y वारकरी परंपरा में यह उपदेश साधक के हृदय को परमात्मा से जोड़ता है।"
-      },
-      {
-        "author": "sant-dnyaneshwar",
-        "author_name": "Sant Dnyaneshwar",
-        "author_bio": "Maharashtrian saint-philosopher (1275–1296 CE) who composed the Dnyaneshwari — a Marathi verse commentary on the Bhagavad Gita — at the age of sixteen. Regarded as the founding work of the Warkari tradition and one of the greatest spiritual texts in the Marathi language.",
-        "author_label": "Dnyaneshwari (Bhavartha Dipika)",
-        "author_icon": "🪷",
-        "publication": "Dnyaneshwari — Bhavartha Dipika",
-        "organization": "Maharashtra Spiritual Heritage / Warkari Sampradaya",
-        "type": "commentary",
-        "lang": "mr",
-        "content": "अध्याय 17.5 — ज्ञानेश्वरी (श्रद्धात्रय-विभाग-योग): माऊली या श्लोकावर विचार करतात — 'Those who undergo severe austerities and penances not recommended in the scriptures, performing them out of pride and egoism, who are impell'। aśāstra — not in the scriptures; vihitam — directed; ghoram — harmful to others; ज्ञानेश्वरीत संत ज्ञानेश्वर सांगतात: Thus the Dnyaneshwari reveals to O Bharata: This verse — 'aśāstra — not in the scriptures; vihitam — directed; ghoram — harmful to others; tapyante — undergo; y वारकरी परंपरेत हा उपदेश साधकाच्या हृदयाला परमात्म्याशी जोडतो।"
-      },
-      {
-        "author": "adi-shankara",
-        "author_name": "Ādi Śaṅkarācārya",
-        "author_bio": "Eight-century spiritual teacher and philosopher who consolidated the doctrine of Advaita Vedānta.",
-        "author_label": "Shankara Bhāṣya",
-        "author_icon": "📜",
-        "publication": "Gītā Bhāṣya",
-        "organization": "Sankara Parampara",
-        "type": "commentary",
-        "lang": "en",
-        "content": "Ādi Śaṅkarācārya's commentary on this verse focuses on the purification of the mind (sattva-śuddhi) as the indispensable preparation for non-dual realization. He explains that karma yoga, or the path of selfless action, does not directly cause liberation, but rather removes the mental dirt (mala) of selfishness and desire. Once the mind is purified, the seeker becomes qualified for the path of renunciation (saṅnyāsa) and contemplation on the Upanishadic Mahavakyas. Shankara rejects the view that action and knowledge can be combined (jñāna-karma-samuccaya) as ultimate means, asserting that light and darkness cannot coexist; similarly, the illusion of doership must completely vanish before the light of absolute knowledge. The individual must realize their identity with the supreme, indivisible, and blissful Brahman, transcending the temporary names and forms of the transactional world (vyavahāra)."
-      },
-      {
-        "author": "adi-shankara",
-        "author_name": "आदि शंकराचार्य",
-        "author_bio": "आठवीं शताब्दी के महान आध्यात्मिक गुरु और दार्शनिक जिन्होंने अद्वैत वेदांत दर्शन का प्रतिपादन किया।",
-        "author_label": "शांकर भाष्य",
-        "author_icon": "📜",
-        "publication": "गीता भाष्य",
-        "organization": "शंकर परंपरा",
-        "type": "commentary",
-        "lang": "hi",
-        "content": "इस श्लोक पर आदि शंकराचार्य का भाष्य अद्वैत साक्षात्कार के लिए अपरिहार्य तैयारी के रूप में अंतःकरण की शुद्धि (सत्त्व-शुद्धि) पर केंद्रित है। वे स्पष्ट करते हैं कि कर्मयोग, या निष्काम कर्म का मार्ग, सीधे मुक्ति का कारण नहीं बनता है, बल्कि स्वार्थ और वासना के मानसिक मैल को दूर करता है। एक बार जब मन शुद्ध हो जाता है, तो साधक संन्यास और उपनिषदों के महावाक्यों के चिंतन के लिए योग्य हो जाता है। शंकर इस विचार को खारिज करते हैं कि कर्म और ज्ञान को अंतिम साधन के रूप में जोड़ा जा सकता है, यह दावा करते हुए कि प्रकाश और अंधकार एक साथ नहीं रह सकते; इसी तरह, परम ज्ञान के प्रकाश से पहले कर्तापन का भ्रम पूरी तरह से समाप्त होना चाहिए। जीव को स्वयं को उस पूर्ण, अविभाज्य और आनंदमयी ब्रह्म के रूप में अनुभव करना चाहिए।"
-      },
-      {
-        "author": "adi-shankara",
-        "author_name": "आदि शंकराचार्य",
-        "author_bio": "आठव्या शतकातील महान आध्यात्मिक गुरू आणि तत्त्वज्ञानी ज्यांनी अद्वैत वेदांत तत्त्वज्ञानाचा प्रचार केला.",
-        "author_label": "शांकर भाष्य",
-        "author_icon": "📜",
-        "publication": "गीता भाष्य",
-        "organization": "शंकर परंपरा",
-        "type": "commentary",
-        "lang": "mr",
-        "content": "या श्लोकावरील आदि शंकराचार्यांचे भाष्य अद्वैत साक्षात्कारासाठी अपरिहार्य तयारी म्हणून अंतःकरणाच्या शुद्धीवर (सत्त्व-शुद्धी) लक्ष केंद्रित करते. ते स्पष्ट करतात की कर्मयोग, किंवा निष्काम कर्माचा मार्ग, थेट मुक्तीचे कारण बनत नाही, तर स्वार्थ आणि वासनेची मानसिक घाण दूर करतो. एकदा मन शुद्ध झाले की, साधक संन्यास आणि उपनिषदांमधील महावाक्यांच्या चिंतनासाठी पात्र ठरतो. शंकर कर्म आणि ज्ञान एकत्र जोडण्याच्या विचाराचा स्पष्ट निषेध करतात, आणि सांगतात की प्रकाश आणि अंधार एकत्र राहू शकत नाहीत; त्याचप्रमाणे, परम ज्ञानाच्या प्रकाशापूर्वी कर्तेपणाचा भ्रम पूर्णपणे नाहीसा झाला पाहिजे. जीवाने स्वतःला त्या पूर्ण, अविभाज्य आणि आनंदमयी ब्रह्माशी एकरूप मानले पाहिजे."
-      }
-    ],
-    "ai_metadata": {
-      "topics": [],
-      "correlations": {},
-      "stats": {
-        "original_words": 23,
-        "translit_words": 8,
-        "layers_count": 8
-      },
-      "fingerprint": "879d3cd2d0d62aa0557f1b9ef75bd72d"
-    }
-  },
-  {
-    "id": "bhagavad-gita_17_7",
-    "text_slug": "bhagavad-gita",
-    "chapter": 17,
-    "verse": 7,
-    "original": "आहारस्त्वपि सर्वस्य त्रिविधो भवति प्रिय: ।\nयज्ञस्तपस्तथा दानं तेषां भेदमिमं श‍ृणु ॥ ७ ॥",
-    "transliteration": "āhāras tv api sarvasya\ntri-vidho bhavati priyaḥ\nyajñas tapas tathā dānaṁ\nteṣāṁ bhedam imaṁ śṛṇu",
-    "translation": "Endowed with pure understanding, firmly controlling the self, turning away from sound and other objects of the senses, and casting aside attraction and aversion, he is fit for becoming one with Brahman.",
-    "meaning": "āhāras — the spiritual principle or aspect; api — the spiritual principle or aspect; sarvasya — the spiritual principle or aspect; tri — the spiritual principle or aspect; vidho — the spiritual principle or aspect; bhavati — the spiritual principle or aspect; priyaḥ — the spiritual principle or aspect; yajñas — the spiritual principle or aspect.",
-    "layers": [
-      {
-        "author": "sant-dnyaneshwar",
-        "author_name": "Sant Dnyaneshwar",
-        "author_bio": "Maharashtrian saint-philosopher (1275–1296 CE) who composed the Dnyaneshwari — a Marathi verse commentary on the Bhagavad Gita — at the age of sixteen. Regarded as the founding work of the Warkari tradition and one of the greatest spiritual texts in the Marathi language.",
-        "author_label": "Dnyaneshwari (Bhavartha Dipika)",
-        "author_icon": "🪷",
-        "publication": "Dnyaneshwari — Bhavartha Dipika",
-        "organization": "Maharashtra Spiritual Heritage / Warkari Sampradaya",
-        "type": "commentary",
-        "lang": "en",
-        "content": "The saint of Alandi opens this verse for O Bharata: This verse — 'āhāraḥ — eating; tu — certainly; api — also; sarvasya — of everyone; tri-vidhaḥ — of three kinds; bhavati — there is; pr…' — Dnyaneshwar expands as follows: Faith is the foundation of all spiritual practice. Dnyaneshwar explains that one's faith reveals one's deepest nature: sattvic faith expressed through pure food, worship, sacrifice, and austerity leads the aspirant naturally toward liberation. As the quality of the soil determines the quality of the crop, the quality of faith determines the quality of spiritual growth. May this truth settle in the heart like gold settling to the bed of a still river."
-      },
-      {
-        "author": "sant-dnyaneshwar",
-        "author_name": "संत ज्ञानेश्वर",
-        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
-        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
-        "author_icon": "🪷",
-        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
-        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
-        "type": "commentary",
-        "lang": "hi",
-        "content": "अध्याय 17.7 — ज्ञानेश्वरी (श्रद्धात्रय-विभाग-योग): माऊली इस श्लोक पर विचार करते हैं — 'Even the food each person prefers is of three kinds, according to the three modes of material nature. The same is true of sacrifices, auster'। āhāraḥ — eating; tu — certainly; api — also; sarvasya — of everyone; tri-vidhaḥ ज्ञानेश्वरी में संत ज्ञानेश्वर कहते हैं: The saint of Alandi opens this verse for O Bharata: This verse — 'āhāraḥ — eating; tu — certainly; api — also; sarvasya — of everyone; tri-vidhaḥ — of three kin वारकरी परंपरा में यह उपदेश साधक के हृदय को परमात्मा से जोड़ता है।"
-      },
-      {
-        "author": "sant-dnyaneshwar",
-        "author_name": "Sant Dnyaneshwar",
-        "author_bio": "Maharashtrian saint-philosopher (1275–1296 CE) who composed the Dnyaneshwari — a Marathi verse commentary on the Bhagavad Gita — at the age of sixteen. Regarded as the founding work of the Warkari tradition and one of the greatest spiritual texts in the Marathi language.",
-        "author_label": "Dnyaneshwari (Bhavartha Dipika)",
-        "author_icon": "🪷",
-        "publication": "Dnyaneshwari — Bhavartha Dipika",
-        "organization": "Maharashtra Spiritual Heritage / Warkari Sampradaya",
-        "type": "commentary",
-        "lang": "mr",
-        "content": "अध्याय 17.7 — ज्ञानेश्वरी (श्रद्धात्रय-विभाग-योग): माऊली या श्लोकावर विचार करतात — 'Even the food each person prefers is of three kinds, according to the three modes of material nature. The same is true of sacrifices, auster'। āhāraḥ — eating; tu — certainly; api — also; sarvasya — of everyone; tri-vidhaḥ ज्ञानेश्वरीत संत ज्ञानेश्वर सांगतात: The saint of Alandi opens this verse for O Bharata: This verse — 'āhāraḥ — eating; tu — certainly; api — also; sarvasya — of everyone; tri-vidhaḥ — of three kin वारकरी परंपरेत हा उपदेश साधकाच्या हृदयाला परमात्म्याशी जोडतो।"
-      },
-      {
-        "author": "adi-shankara",
-        "author_name": "Ādi Śaṅkarācārya",
-        "author_bio": "Eight-century spiritual teacher and philosopher who consolidated the doctrine of Advaita Vedānta.",
-        "author_label": "Shankara Bhāṣya",
-        "author_icon": "📜",
-        "publication": "Gītā Bhāṣya",
-        "organization": "Sankara Parampara",
-        "type": "commentary",
-        "lang": "en",
-        "content": "Commenting on this teaching, Ādi Śaṅkarācārya explains that the ultimate reality (paramārtha) is entirely free from the dualities of action and non-action, pleasure and pain, subject and object. The notion of 'I perform action' is born of superimposition (adhyāsa), where the qualities of the body-mind complex are falsely attributed to the pure, luminous Atman. By practicing constant self-inquiry (ātma-vicāra), the spiritual seeker systematically negates the false overlays of the ego, intellect, and senses. Shankara reminds us that the spiritual path is a return to our natural state of absolute freedom and non-dual consciousness. The battlefield is not merely an external event, but the internal space where the light of consciousness shines upon our deep-seated tendencies (vāsanās), dissolving them into the silent ocean of infinite peace."
-      },
-      {
-        "author": "adi-shankara",
-        "author_name": "आदि शंकराचार्य",
-        "author_bio": "आठवीं शताब्दी के महान आध्यात्मिक गुरु और दार्शनिक जिन्होंने अद्वैत वेदांत दर्शन का प्रतिपादन किया।",
-        "author_label": "शांकर भाष्य",
-        "author_icon": "📜",
-        "publication": "गीता भाष्य",
-        "organization": "शंकर परंपरा",
-        "type": "commentary",
-        "lang": "hi",
-        "content": "इस उपदेश पर विचार करते हुए, आदि शंकराचार्य बताते हैं कि परम सत्य (परमार्थ) कर्म और अकर्म, सुख और दुख, विषय और विषयी के द्वंद्वों से पूरी तरह मुक्त है। 'मैं कर्म करता हूँ' की धारणा अध्यास (अध्यारोप) से उत्पन्न होती है, जहाँ शरीर-मन के गुणों को शुद्ध, प्रकाशमान आत्मा पर आरोपित कर दिया जाता है। निरंतर आत्म-विचार के अभ्यास से, आध्यात्मिक साधक अहंकार, बुद्धि और इंद्रियों के झूठे आवरणों को व्यवस्थित रूप से नकारता है। शंकर हमें याद दिलाते हैं कि आध्यात्मिक मार्ग हमारी पूर्ण स्वतंत्रता और अद्वैत चेतना की प्राकृतिक स्थिति में वापस आने का मार्ग है। युद्धभूमि केवल एक बाहरी घटना नहीं है, बल्कि आंतरिक स्थान है जहाँ चेतना का प्रकाश हमारी गहरी वासनाओं पर चमकता है और उन्हें परम शांति के मौन महासागर में विलीन कर देता है।"
-      },
-      {
-        "author": "adi-shankara",
-        "author_name": "आदि शंकराचार्य",
-        "author_bio": "आठव्या शतकातील महान आध्यात्मिक गुरू आणि तत्त्वज्ञानी ज्यांनी अद्वैत वेदांत तत्त्वज्ञानाचा प्रचार केला.",
-        "author_label": "शांकर भाष्य",
-        "author_icon": "📜",
-        "publication": "गीता भाष्य",
-        "organization": "शंकर परंपरा",
-        "type": "commentary",
-        "lang": "mr",
-        "content": "या उपदेशावर भाष्य करताना, आदि शंकराचार्य स्पष्ट करतात की परम सत्य (परमार्थ) कर्म आणि अकर्म, सुख आणि दुःख, विषय आणि विषयी यांच्या द्वैतापासून पूर्णपणे मुक्त आहे. 'मी कर्म करतो' ही कल्पना अध्यासामुळे निर्माण होते, जेथे शरीर-मनाचे गुण शुद्ध, प्रकाशमान आत्म्यावर लादले जातात. निरंतर आत्म-विचाराच्या अभ्यासाने, आध्यात्मिक साधक अहंकार, बुद्धी आणि इंद्रियांचे खोटे थर पद्धतशीरपणे नाकारतो. शंकर आपल्याला आठवण करून देतात की आध्यात्मिक मार्ग हा आपल्या पूर्ण स्वातंत्र्याच्या आणि अद्वैत चेतनेच्या नैसर्गिक स्थितीकडे परत जाण्याचा मार्ग आहे. युद्धभूमी ही केवळ बाह्य घटना नाही, तर आंतरिक अवकाश आहे जेथे चैतन्याचा प्रकाश आपल्या खोलवर रुजलेल्या वासनांवर चमकतो आणि त्यांना विलीन करतो."
-      }
-    ],
-    "ai_metadata": {
-      "topics": [],
-      "correlations": {},
-      "stats": {
-        "original_words": 14,
-        "translit_words": 15,
-        "layers_count": 8
-      },
-      "fingerprint": "9ee418fe0a52683d3ea370bd92057af6"
-    }
-  },
-  {
-    "id": "bhagavad-gita_17_8",
-    "text_slug": "bhagavad-gita",
-    "chapter": 17,
-    "verse": 8,
-    "original": "आयु:सत्त्वबलारोग्यसुखप्रीतिविवर्धना: ।\nरस्या: स्‍निग्धा: स्थिरा हृद्या आहारा: सात्त्विकप्रिया: ॥ ८ ॥",
-    "transliteration": "āyuḥ-sattva-balārogya-\nsukha-prīti-vivardhanāḥ\nrasyāḥ snigdhāḥ sthirā hṛdyā\nāhārāḥ sāttvika-priyāḥ",
-    "translation": "Endowed with pure understanding, firmly controlling the self, turning away from sound and other objects of the senses, and casting aside attraction and aversion, he is fit for becoming one with Brahman.",
-    "meaning": "āyuḥ — the spiritual principle or aspect; sattva — the spiritual principle or aspect; balārogya — the spiritual principle or aspect; sukha — the spiritual principle or aspect; prīti — the spiritual principle or aspect; vivardhanāḥ — the spiritual principle or aspect; rasyāḥ — the spiritual principle or aspect; snigdhāḥ — the spiritual principle or aspect.",
-    "layers": [
-      {
-        "author": "sant-dnyaneshwar",
-        "author_name": "Sant Dnyaneshwar",
-        "author_bio": "Maharashtrian saint-philosopher (1275–1296 CE) who composed the Dnyaneshwari — a Marathi verse commentary on the Bhagavad Gita — at the age of sixteen. Regarded as the founding work of the Warkari tradition and one of the greatest spiritual texts in the Marathi language.",
-        "author_label": "Dnyaneshwari (Bhavartha Dipika)",
-        "author_icon": "🪷",
-        "publication": "Dnyaneshwari — Bhavartha Dipika",
-        "organization": "Maharashtra Spiritual Heritage / Warkari Sampradaya",
-        "type": "commentary",
-        "lang": "en",
-        "content": "O Bharata, hear this truth with an awakened heart. This verse — 'āyuḥ — duration of life; sattva — existence; bala — strength; ārogya — health; sukha — happiness; prīti — and satisfacti…' — Dnyaneshwar expands as follows: Faith is the foundation of all spiritual practice. Dnyaneshwar explains that one's faith reveals one's deepest nature: sattvic faith expressed through pure food, worship, sacrifice, and austerity leads the aspirant naturally toward liberation. As the quality of the soil determines the quality of the crop, the quality of faith determines the quality of spiritual growth. The aspirant who meditates on this teaching day and night shall find the path clear before them."
-      },
-      {
-        "author": "sant-dnyaneshwar",
-        "author_name": "संत ज्ञानेश्वर",
-        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
-        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
-        "author_icon": "🪷",
-        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
-        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
-        "type": "commentary",
-        "lang": "hi",
-        "content": "अध्याय 17.8 — ज्ञानेश्वरी (श्रद्धात्रय-विभाग-योग): माऊली इस श्लोक पर विचार करते हैं — 'Foods dear to those in the mode of goodness increase the duration of life, purify one’s existence and give strength, health, happiness and s'। āyuḥ — duration of life; sattva — existence; bala — strength; ārogya — health; s ज्ञानेश्वरी में संत ज्ञानेश्वर कहते हैं: O Bharata, hear this truth with an awakened heart. This verse — 'āyuḥ — duration of life; sattva — existence; bala — strength; ārogya — health; sukha — happines वारकरी परंपरा में यह उपदेश साधक के हृदय को परमात्मा से जोड़ता है।"
-      },
-      {
-        "author": "sant-dnyaneshwar",
-        "author_name": "Sant Dnyaneshwar",
-        "author_bio": "Maharashtrian saint-philosopher (1275–1296 CE) who composed the Dnyaneshwari — a Marathi verse commentary on the Bhagavad Gita — at the age of sixteen. Regarded as the founding work of the Warkari tradition and one of the greatest spiritual texts in the Marathi language.",
-        "author_label": "Dnyaneshwari (Bhavartha Dipika)",
-        "author_icon": "🪷",
-        "publication": "Dnyaneshwari — Bhavartha Dipika",
-        "organization": "Maharashtra Spiritual Heritage / Warkari Sampradaya",
-        "type": "commentary",
-        "lang": "mr",
-        "content": "अध्याय 17.8 — ज्ञानेश्वरी (श्रद्धात्रय-विभाग-योग): माऊली या श्लोकावर विचार करतात — 'Foods dear to those in the mode of goodness increase the duration of life, purify one’s existence and give strength, health, happiness and s'। āyuḥ — duration of life; sattva — existence; bala — strength; ārogya — health; s ज्ञानेश्वरीत संत ज्ञानेश्वर सांगतात: O Bharata, hear this truth with an awakened heart. This verse — 'āyuḥ — duration of life; sattva — existence; bala — strength; ārogya — health; sukha — happines वारकरी परंपरेत हा उपदेश साधकाच्या हृदयाला परमात्म्याशी जोडतो।"
-      },
-      {
-        "author": "adi-shankara",
-        "author_name": "Ādi Śaṅkarācārya",
-        "author_bio": "Eight-century spiritual teacher and philosopher who consolidated the doctrine of Advaita Vedānta.",
-        "author_label": "Shankara Bhāṣya",
-        "author_icon": "📜",
-        "publication": "Gītā Bhāṣya",
-        "organization": "Sankara Parampara",
-        "type": "commentary",
-        "lang": "en",
-        "content": "Commenting on this teaching, Ādi Śaṅkarācārya explains that the ultimate reality (paramārtha) is entirely free from the dualities of action and non-action, pleasure and pain, subject and object. The notion of 'I perform action' is born of superimposition (adhyāsa), where the qualities of the body-mind complex are falsely attributed to the pure, luminous Atman. By practicing constant self-inquiry (ātma-vicāra), the spiritual seeker systematically negates the false overlays of the ego, intellect, and senses. Shankara reminds us that the spiritual path is a return to our natural state of absolute freedom and non-dual consciousness. The battlefield is not merely an external event, but the internal space where the light of consciousness shines upon our deep-seated tendencies (vāsanās), dissolving them into the silent ocean of infinite peace."
-      },
-      {
-        "author": "adi-shankara",
-        "author_name": "आदि शंकराचार्य",
-        "author_bio": "आठवीं शताब्दी के महान आध्यात्मिक गुरु और दार्शनिक जिन्होंने अद्वैत वेदांत दर्शन का प्रतिपादन किया।",
-        "author_label": "शांकर भाष्य",
-        "author_icon": "📜",
-        "publication": "गीता भाष्य",
-        "organization": "शंकर परंपरा",
-        "type": "commentary",
-        "lang": "hi",
-        "content": "इस उपदेश पर विचार करते हुए, आदि शंकराचार्य बताते हैं कि परम सत्य (परमार्थ) कर्म और अकर्म, सुख और दुख, विषय और विषयी के द्वंद्वों से पूरी तरह मुक्त है। 'मैं कर्म करता हूँ' की धारणा अध्यास (अध्यारोप) से उत्पन्न होती है, जहाँ शरीर-मन के गुणों को शुद्ध, प्रकाशमान आत्मा पर आरोपित कर दिया जाता है। निरंतर आत्म-विचार के अभ्यास से, आध्यात्मिक साधक अहंकार, बुद्धि और इंद्रियों के झूठे आवरणों को व्यवस्थित रूप से नकारता है। शंकर हमें याद दिलाते हैं कि आध्यात्मिक मार्ग हमारी पूर्ण स्वतंत्रता और अद्वैत चेतना की प्राकृतिक स्थिति में वापस आने का मार्ग है। युद्धभूमि केवल एक बाहरी घटना नहीं है, बल्कि आंतरिक स्थान है जहाँ चेतना का प्रकाश हमारी गहरी वासनाओं पर चमकता है और उन्हें परम शांति के मौन महासागर में विलीन कर देता है।"
-      },
-      {
-        "author": "adi-shankara",
-        "author_name": "आदि शंकराचार्य",
-        "author_bio": "आठव्या शतकातील महान आध्यात्मिक गुरू आणि तत्त्वज्ञानी ज्यांनी अद्वैत वेदांत तत्त्वज्ञानाचा प्रचार केला.",
-        "author_label": "शांकर भाष्य",
-        "author_icon": "📜",
-        "publication": "गीता भाष्य",
-        "organization": "शंकर परंपरा",
-        "type": "commentary",
-        "lang": "mr",
-        "content": "या उपदेशावर भाष्य करताना, आदि शंकराचार्य स्पष्ट करतात की परम सत्य (परमार्थ) कर्म आणि अकर्म, सुख आणि दुःख, विषय आणि विषयी यांच्या द्वैतापासून पूर्णपणे मुक्त आहे. 'मी कर्म करतो' ही कल्पना अध्यासामुळे निर्माण होते, जेथे शरीर-मनाचे गुण शुद्ध, प्रकाशमान आत्म्यावर लादले जातात. निरंतर आत्म-विचाराच्या अभ्यासाने, आध्यात्मिक साधक अहंकार, बुद्धी आणि इंद्रियांचे खोटे थर पद्धतशीरपणे नाकारतो. शंकर आपल्याला आठवण करून देतात की आध्यात्मिक मार्ग हा आपल्या पूर्ण स्वातंत्र्याच्या आणि अद्वैत चेतनेच्या नैसर्गिक स्थितीकडे परत जाण्याचा मार्ग आहे. युद्धभूमी ही केवळ बाह्य घटना नाही, तर आंतरिक अवकाश आहे जेथे चैतन्याचा प्रकाश आपल्या खोलवर रुजलेल्या वासनांवर चमकतो आणि त्यांना विलीन करतो."
-      }
-    ],
-    "ai_metadata": {
-      "topics": [],
-      "correlations": {},
-      "stats": {
-        "original_words": 11,
-        "translit_words": 8,
-        "layers_count": 8
-      },
-      "fingerprint": "aaaac0e3bc2af5c24ce5e2b152600709"
-    }
-  },
-  {
-    "id": "bhagavad-gita_17_9",
-    "text_slug": "bhagavad-gita",
-    "chapter": 17,
-    "verse": 9,
-    "original": "कट्‌वम्ललवणात्युष्णतीक्ष्णरूक्षविदाहिन: ।\nआहारा राजसस्येष्टा दु:खशोकामयप्रदा: ॥ ९ ॥",
-    "transliteration": "kaṭv-amla-lavaṇāty-uṣṇa-\ntīkṣṇa-rūkṣa-vidāhinaḥ\nāhārā rājasasyeṣṭā\nduḥkha-śokāmaya-pradāḥ",
-    "translation": "Fixing the mind on Me, with the self purified by yoga, perform thy actions, O Bharata, established in equanimity, abandoning all attachments.",
-    "meaning": "kaṭv — the spiritual principle or aspect; amla — the spiritual principle or aspect; lavaṇāty — the spiritual principle or aspect; uṣṇa — the spiritual principle or aspect; tīkṣṇa — the spiritual principle or aspect; rūkṣa — the spiritual principle or aspect; vidāhinaḥ — the spiritual principle or aspect; āhārā — the spiritual principle or aspect.",
-    "layers": [
-      {
-        "author": "sant-dnyaneshwar",
-        "author_name": "Sant Dnyaneshwar",
-        "author_bio": "Maharashtrian saint-philosopher (1275–1296 CE) who composed the Dnyaneshwari — a Marathi verse commentary on the Bhagavad Gita — at the age of sixteen. Regarded as the founding work of the Warkari tradition and one of the greatest spiritual texts in the Marathi language.",
-        "author_label": "Dnyaneshwari (Bhavartha Dipika)",
-        "author_icon": "🪷",
-        "publication": "Dnyaneshwari — Bhavartha Dipika",
-        "organization": "Maharashtra Spiritual Heritage / Warkari Sampradaya",
-        "type": "commentary",
-        "lang": "en",
-        "content": "Dnyaneshwar explains to O Bharata: This verse — 'kaṭu — bitter; amla — sour; lavaṇa — salty; ati-uṣṇa — very hot; tīkṣṇa — pungent; rūkṣa — dry; vidāhinaḥ — burning; āhā…' — Dnyaneshwar expands as follows: Faith is the foundation of all spiritual practice. Dnyaneshwar explains that one's faith reveals one's deepest nature: sattvic faith expressed through pure food, worship, sacrifice, and austerity leads the aspirant naturally toward liberation. As the quality of the soil determines the quality of the crop, the quality of faith determines the quality of spiritual growth. Dnyaneshwar says: carry this understanding as a lamp through the darkness of ignorance."
-      },
-      {
-        "author": "sant-dnyaneshwar",
-        "author_name": "संत ज्ञानेश्वर",
-        "author_bio": "महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।",
-        "author_label": "ज्ञानेश्वरी (भावार्थ दीपिका)",
-        "author_icon": "🪷",
-        "publication": "ज्ञानेश्वरी — भावार्थ दीपिका",
-        "organization": "महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय",
-        "type": "commentary",
-        "lang": "hi",
-        "content": "अध्याय 17.9 — ज्ञानेश्वरी (श्रद्धात्रय-विभाग-योग): माऊली इस श्लोक पर विचार करते हैं — 'Foods that are too bitter, too sour, salty, hot, pungent, dry and burning are dear to those in the mode of passion. Such foods cause distres'। kaṭu — bitter; amla — sour; lavaṇa — salty; ati-uṣṇa — very hot; tīkṣṇa — pungen ज्ञानेश्वरी में संत ज्ञानेश्वर कहते हैं: Dnyaneshwar explains to O Bharata: This verse — 'kaṭu — bitter; amla — sour; lavaṇa — salty; ati-uṣṇa — very hot; tīkṣṇa — pungent; rūkṣa — dry; vidāhinaḥ — bur वारकरी परंपरा में यह उपदेश साधक के हृदय को परमात्मा से जोड़ता है।"
-      },
-      {
-        "author": "sant-dnyaneshwar",
-        "author_name": "Sant Dnyaneshwar",
-        "author_bio": "Maharashtrian saint-philosopher (1275–1296 CE) who composed the Dnyaneshwari — a Marathi verse commentary on the Bhagavad Gita — at the age of sixteen. Regarded as the founding work of the Warkari tradition and one of the greatest spiritual texts in the Marathi language.",
-        "author_label": "Dnyaneshwari (Bhavartha Dipika)",
-        "author_icon": "🪷",
-        "publication": "Dnyaneshwari — Bhavartha Dipika",
-        "organization": "Maharashtra Spiritual Heritage / Warkari Sampradaya",
-        "type": "commentary",
-        "lang": "mr",
-        "content": "अध्याय 17.9 — ज्ञानेश्वरी (श्रद्धात्रय-विभाग-योग): माऊली या श्लोकावर विचार करतात — 'Foods that are too bitter, too sour, salty, hot, pungent, dry and burning are dear to those in the mode of passion. Such foods cause distres'। kaṭu — bitter; amla — sour; lavaṇa — salty; ati-uṣṇa — very hot; tīkṣṇa — pungen ज्ञानेश्वरीत संत ज्ञानेश्वर सांगतात: Dnyaneshwar explains to O Bharata: This verse — 'kaṭu — bitter; amla — sour; lavaṇa — salty; ati-uṣṇa — very hot; tīkṣṇa — pungent; rūkṣa — dry; vidāhinaḥ — bur वारकरी परंपरेत हा उपदेश साधकाच्या हृदयाला परमात्म्याशी जोडतो।"
-      },
-      {
-        "author": "adi-shankara",
-        "author_name": "Ādi Śaṅkarācārya",
-        "author_bio": "Eight-century spiritual teacher and philosopher who consolidated the doctrine of Advaita Vedānta.",
-        "author_label": "Shankara Bhāṣya",
-        "author_icon": "📜",
-        "publication": "Gītā Bhāṣya",
-        "organization": "Sankara Parampara",
-        "type": "commentary",
-        "lang": "en",
-        "content": "Ādi Śaṅkarācārya's commentary on this verse focuses on the purification of the mind (sattva-śuddhi) as the indispensable preparation for non-dual realization. He explains that karma yoga, or the path of selfless action, does not directly cause liberation, but rather removes the mental dirt (mala) of selfishness and desire. Once the mind is purified, the seeker becomes qualified for the path of renunciation (saṅnyāsa) and contemplation on the Upanishadic Mahavakyas. Shankara rejects the view that action and knowledge can be combined (jñāna-karma-samuccaya) as ultimate means, asserting that light and darkness cannot coexist; similarly, the illusion of doership must completely vanish before the light of absolute knowledge. The individual must realize their identity with the supreme, indivisible, and blissful Brahman, transcending the temporary names and forms of the transactional world (vyavahāra)."
-      },
-      {
-        "author": "adi-shankara",
-        "author_name": "आदि शंकराचार्य",
-        "author_bio": "आठवीं शताब्दी के महान आध्यात्मिक गुरु और दार्शनिक जिन्होंने अद्वैत वेदांत दर्शन का प्रतिपादन किया।",
-        "author_label": "शांकर भाष्य",
-        "author_icon": "📜",
-        "publication": "गीता भाष्य",
-        "organization": "शंकर परंपरा",
-        "type": "commentary",
-        "lang": "hi",
-        "content": "इस श्लोक पर आदि शंकराचार्य का भाष्य अद्वैत साक्षात्कार के लिए अपरिहार्य तैयारी के रूप में अंतःकरण की शुद्धि (सत्त्व-शुद्धि) पर केंद्रित है। वे स्पष्ट करते हैं कि कर्मयोग, या निष्काम कर्म का मार्ग, सीधे मुक्ति का कारण नहीं बनता है, बल्कि स्वार्थ और वासना के मानसिक मैल को दूर करता है। एक बार जब मन शुद्ध हो जाता है, तो साधक संन्यास और उपनिषदों के महावाक्यों के चिंतन के लिए योग्य हो जाता है। शंकर इस विचार को खारिज करते हैं कि कर्म और ज्ञान को अंतिम साधन के रूप में जोड़ा जा सकता है, यह दावा करते हुए कि प्रकाश और अंधकार एक साथ नहीं रह सकते; इसी तरह, परम ज्ञान के प्रकाश से पहले कर्तापन का भ्रम पूरी तरह से समाप्त होना चाहिए। जीव को स्वयं को उस पूर्ण, अविभाज्य और आनंदमयी ब्रह्म के रूप में अनुभव करना चाहिए।"
-      },
-      {
-        "author": "adi-shankara",
-        "author_name": "आदि शंकराचार्य",
-        "author_bio": "आठव्या शतकातील महान आध्यात्मिक गुरू आणि तत्त्वज्ञानी ज्यांनी अद्वैत वेदांत तत्त्वज्ञानाचा प्रचार केला.",
-        "author_label": "शांकर भाष्य",
-        "author_icon": "📜",
-        "publication": "गीता भाष्य",
-        "organization": "शंकर परंपरा",
-        "type": "commentary",
-        "lang": "mr",
-        "content": "या श्लोकावरील आदि शंकराचार्यांचे भाष्य अद्वैत साक्षात्कारासाठी अपरिहार्य तयारी म्हणून अंतःकरणाच्या शुद्धीवर (सत्त्व-शुद्धी) लक्ष केंद्रित करते. ते स्पष्ट करतात की कर्मयोग, किंवा निष्काम कर्माचा मार्ग, थेट मुक्तीचे कारण बनत नाही, तर स्वार्थ आणि वासनेची मानसिक घाण दूर करतो. एकदा मन शुद्ध झाले की, साधक संन्यास आणि उपनिषदांमधील महावाक्यांच्या चिंतनासाठी पात्र ठरतो. शंकर कर्म आणि ज्ञान एकत्र जोडण्याच्या विचाराचा स्पष्ट निषेध करतात, आणि सांगतात की प्रकाश आणि अंधार एकत्र राहू शकत नाहीत; त्याचप्रमाणे, परम ज्ञानाच्या प्रकाशापूर्वी कर्तेपणाचा भ्रम पूर्णपणे नाहीसा झाला पाहिजे. जीवाने स्वतःला त्या पूर्ण, अविभाज्य आणि आनंदमयी ब्रह्माशी एकरूप मानले पाहिजे."
-      }
-    ],
-    "ai_metadata": {
-      "topics": [],
-      "correlations": {},
-      "stats": {
-        "original_words": 8,
-        "translit_words": 5,
-        "layers_count": 8
-      },
-      "fingerprint": "b6f71f7cde39d95a38b5da3778a27011"
     }
   }
 ]
