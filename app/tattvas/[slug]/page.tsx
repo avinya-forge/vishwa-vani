@@ -6,8 +6,9 @@ import React from 'react'
 import tattvasData from '@/data/ontology/tattvas.json'
 import type { Tattva } from '@/types/ontology'
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const { slug } = params;
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const resolvedParams = await params;
+  const slug = resolvedParams.slug;
   const tattva = (tattvasData.tattvas as Record<string, Tattva>)[slug];
 
   if (!tattva) {
@@ -26,8 +27,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function TattvaPage({ params }: { params: { slug: string } }) {
-  const { slug } = params;
+export default async function TattvaPage({ params }: { params: Promise<{ slug: string }> }) {
+  const resolvedParams = await params;
+  const slug = resolvedParams.slug;
   const tattva = (tattvasData.tattvas as Record<string, Tattva>)[slug];
 
   if (!tattva) {
