@@ -32,14 +32,14 @@
   {
     "name": "Bhagavad Gita",
     "slug": "bhagavad-gita",
-    "score": 82.16,
+    "score": 90.0,
     "stage": "GOLD",
     "ui": "READY",
     "progress": {
       "chapters": "18/18",
-      "verses": "657/700",
+      "verses": "700/700",
       "langs": "4/4",
-      "authors": "2/10"
+      "authors": "5/10"
     },
     "has_placeholders": false,
     "description": "18 Chapters. Universal dialogue."
