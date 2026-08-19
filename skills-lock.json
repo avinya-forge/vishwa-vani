@@ -51,6 +51,10 @@
       "sourceType": "github",
       "computedHash": "72e9ab72627e4fd8ed26a582e82309a98ecdc4f6e1c99418430ac05682c9e91d"
     },
+    "task-observer": {
+      "source": "rebelytics/one-skill-to-rule-them-all",
+      "sourceType": "github"
+    },
     "test-driven-development": {
       "source": "obra/superpowers",
       "sourceType": "github",

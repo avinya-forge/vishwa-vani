@@ -55,6 +55,14 @@ To conserve precious token budgets and maximize prompt speed, agents must operat
 
 ---
 
+## 👁️ 3.5. Task Observer & Skill Improvisation Engine
+To ensure all executed tasks are continuously observed and improvised:
+1. **Trigger Task Observer**: Activate task observation (`.agent/skills/task-observer/SKILL.md`) during all multi-step workflows, agentic execution sessions, and feedback interactions.
+2. **Capture Skill Signals**: Watch for user corrections, workflow bottlenecks, and missing automation patterns.
+3. **Log & Update**: Log observations in `.jules/task-observer-log.md` and immediately update relevant skills, agent rules, or instruction files to improvise future execution quality.
+
+---
+
 ## 🏛️ 4. Scripture Data Tiers & The "Gold" Quality Standard
 Vishwa-Vani operates a strict data promotion pipeline. We only display completely verified, audited scripture data to users:
 
