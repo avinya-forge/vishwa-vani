@@ -60,6 +60,11 @@ To ensure all executed tasks are continuously observed and improvised:
 1. **Trigger Task Observer**: Activate task observation (`.agent/skills/task-observer/SKILL.md`) during all multi-step workflows, agentic execution sessions, and feedback interactions.
 2. **Capture Skill Signals**: Watch for user corrections, workflow bottlenecks, and missing automation patterns.
 3. **Log & Update**: Log observations in `.jules/task-observer-log.md` and immediately update relevant skills, agent rules, or instruction files to improvise future execution quality.
+4. **Codified Workflow Skills**: Use codified skills for end-to-end execution:
+   - Data pipeline tasks: `.agent/skills/scripture-data-pipeline/SKILL.md`
+   - UI & Lab integrations: `.agent/skills/scripture-ui-integration/SKILL.md`
+   - Bug hunting & backlog management: `.agent/skills/bug-hunting-and-backlog/SKILL.md`
+   - Status reporting: `.agent/skills/status-reporting/SKILL.md`
 
 ---
 
