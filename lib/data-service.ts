@@ -10,15 +10,10 @@ import path from 'path';
 import type { VedicText } from './texts';
 import { VEDIC_LIBRARY } from './texts';
 import { getVersesFromLakeServer } from './server-lake';
+import type { NVFLayer, NVFVerse } from '../types/nvf';
 
-export interface EnrichedVerse {
-  id: string;
-  chapter: number;
-  verse: string | number;
-  original: string;
-  transliteration?: string;
-  translation?: string;
-  layers: unknown[];
+export interface EnrichedVerse extends Omit<NVFVerse, 'layers'> {
+  layers: NVFLayer[];
   // AI-enriched fields
   aiContext?: {
     themes: string[];
@@ -53,56 +48,69 @@ export interface ChapterData {
 
 export class VedicDataService {
   private static instance: VedicDataService;
-  private dataCache = new Map<string, ChapterData>();
+  private dataCache: Map<string, ChapterData> = new Map();
 
-  static getInstance(): VedicDataService {
+  private constructor() {}
+
+  public static getInstance(): VedicDataService {
     if (!VedicDataService.instance) {
       VedicDataService.instance = new VedicDataService();
     }
     return VedicDataService.instance;
   }
 
-  /**
-   * GOLD-GATE: returns true only when the book is marked GOLD in manifest.json.
-   * Books with storage:'lake' bypass the gate (their quality is controlled by the lake).
-   * This prevents incomplete or Silver-tier JSON data from ever reaching the UI.
-   */
-  private isBookGoldTier(textSlug: string, storage?: string): boolean {
-    if (storage === 'lake') return true; // lake books are always served (gated by available:false in texts.ts)
+  // Pre-validate JSON payload integrity
+  private isBookGoldTier(textSlug: string, storageStrategy: string = 'json'): boolean {
+    // If it's lake-based (like Mahabharata), the data presence itself is the gate
+    if (storageStrategy === 'lake') return true;
+
     try {
       const manifestPath = path.join(process.cwd(), 'data', 'manifest.json');
-      const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8')) as Record<string, unknown>;
-      const books = (manifest.books as Record<string, unknown>[]) || [];
-      const entry = books.find(b => b.book_id === textSlug);
-      return entry?.status === 'GOLD';
+      const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
+      const bookManifest = manifest.books.find((b: Record<string, unknown>) => b.book_id === textSlug || b.slug === textSlug);
+
+      return !!bookManifest && bookManifest.status === "GOLD";
     } catch {
       return false;
     }
   }
 
-  /**
-   * Enforces the Lean UI "Max 2" scholar limit by pruning the payload layers
-   */
+  // Limit Max 2 Authors globally to prevent over-fetching
   private prunePayload(verses: EnrichedVerse[]): EnrichedVerse[] {
-    return verses.map(verse => ({
-      ...verse,
-      layers: verse.layers && Array.isArray(verse.layers) ? verse.layers.slice(0, 2) : []
-    }));
+    return verses.map(verse => {
+      const allowedAuthors = new Set<string>();
+      const prunedLayers: NVFLayer[] = [];
+
+      for (const layer of verse.layers) {
+        if (!layer.author) {
+          prunedLayers.push(layer as unknown as NVFLayer);
+          continue;
+        }
+
+        if (allowedAuthors.has(layer.author)) {
+          prunedLayers.push(layer as unknown as NVFLayer);
+        } else if (allowedAuthors.size < 2) {
+          allowedAuthors.add(layer.author);
+          prunedLayers.push(layer as unknown as NVFLayer);
+        }
+      }
+      return { ...verse, layers: prunedLayers };
+    });
   }
 
-  /**
-   * Load and enrich chapter data with AI context
-   */
-  async getChapterData(
-    textSlug: string,
-    chapterNumber: number,
-    options?: {
-      adhyaya?: number;
-      includeAI?: boolean;
-      language?: string;
-    }
-  ): Promise<ChapterData | null> {
-    const cacheKey = `${textSlug}-${chapterNumber}-${options?.adhyaya || 0}`;
+  public async getEnrichedVerse(textSlug: string, chapterNumber: number, verseNumber: number | string, options?: { adhyaya?: number }): Promise<EnrichedVerse | null> {
+      const chapterData = await this.getChapterData(textSlug, chapterNumber, options);
+      if (!chapterData) return null;
+      return chapterData.verses.find(v => String(v.verse) === String(verseNumber)) || null;
+  }
+
+
+  public async getChapterData(textSlug: string, chapterNumber: number, options?: {
+    adhyaya?: number,
+    includeAI?: boolean,
+    language?: 'en' | 'hi' | 'mr' | 'all'
+  }): Promise<ChapterData | null> {
+    const cacheKey = `${textSlug}-${chapterNumber}-${options?.adhyaya || 'default'}-${options?.includeAI}`;
     if (this.dataCache.has(cacheKey)) {
       return this.dataCache.get(cacheKey) ?? null;
     }
@@ -110,7 +118,7 @@ export class VedicDataService {
     const textMetadata = VEDIC_LIBRARY.find(t => t.slug === textSlug);
     if (!textMetadata) return null;
 
-    // GOLD-GATE: refuse to serve data for any book not promoted to Gold tier
+    // GOLD-GATE: refuse to serve data for unknown book not promoted to Gold tier
     if (!this.isBookGoldTier(textSlug, textMetadata.storage)) {
       console.warn(`[VedicDataService] GOLD-GATE blocked: '${textSlug}' is not GOLD in manifest.json`);
       return null;
@@ -151,23 +159,23 @@ export class VedicDataService {
   private async loadFromJson(textSlug: string, chapterNumber: number, adhyaya?: number): Promise<unknown[]> {
     try {
       const manifestPath = path.join(process.cwd(), 'data', 'manifest.json');
-      const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8')) as Record<string, unknown>;
-      const books = (manifest.books as Record<string, unknown>[]) || [];
-      const bookManifest = books.find(b => b.book_id === textSlug || b.slug === textSlug); // Backward compat for slug
+      const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
+      const books = manifest.books || [];
+      const bookManifest = books.find((b: Record<string, unknown>) => b.book_id === textSlug || b.slug === textSlug); // Backward compat for slug
 
       let shardFile = `${textSlug}-chapter-${chapterNumber}.json`;
 
       if (bookManifest?.chapters || bookManifest?.shards) {
-        const chapters = (bookManifest.chapters || bookManifest.shards) as Record<string, unknown>[];
+        const chapters = (bookManifest.chapters || bookManifest.shards);
         
         if (textSlug === 'mahabharata' && adhyaya) {
-          const parvaShard = chapters.find(s =>
+          const parvaShard = chapters.find((s: Record<string, unknown>) =>
             s.file === `parva-${chapterNumber}/adhyaya-${adhyaya}.json`
           );
-          if (parvaShard) shardFile = parvaShard.file as string;
+          if (parvaShard) shardFile = (parvaShard as Record<string, unknown>).file as string;
         } else {
           const mappedShard = chapters[chapterNumber - 1];
-          if (mappedShard) shardFile = mappedShard.file as string;
+          if (mappedShard) shardFile = (mappedShard as Record<string, unknown>).file as string;
         }
       }
 
@@ -191,30 +199,31 @@ export class VedicDataService {
 
   private async enrichVerses(verses: unknown[], includeAI: boolean = false): Promise<EnrichedVerse[]> {
     return verses.map(verse => {
-      const v = verse as Record<string, unknown>
+      const v = verse as Record<string, unknown>;
       const enriched: EnrichedVerse = {
         id: (v.id || v.verse_id) as string,
+        text_slug: (v.text_slug as string) || '',
         chapter: (v.chapter !== undefined ? v.chapter : v.chapter_id) as number,
         verse: (v.verse !== undefined ? v.verse : v.verse_num) as string | number,
         original: (v.original || v.original_sanskrit) as string,
         transliteration: v.transliteration as string | undefined,
-        translation: (v.translation || v.meaning || ((v.layers as Record<string, unknown>[]) || []).find(l => l.type === 'translation')?.content) as string | undefined,
+        translation: (v.translation || v.meaning || ((v.layers as Record<string, unknown>[]) || []).find((l: unknown) => (l as Record<string, unknown>).type === 'translation')?.content) as string | undefined,
         layers: this.pruneLayersToTwoAuthors((v.layers as Record<string, unknown>[]) || []),
         uiMetadata: {
-          readingTime: this.calculateReadingTime(verse),
-          complexityScore: this.calculateComplexity(verse),
-          hasCommentary: ((v.layers as unknown[]) || []).some((l: unknown) => (l as Record<string, unknown>).type === 'commentary'),
-          languageCount: this.countLanguages((v.layers as unknown[]) || [])
+          readingTime: this.calculateReadingTime(verse as Record<string, unknown>),
+          complexityScore: this.calculateComplexity(verse as Record<string, unknown>),
+          hasCommentary: ((v.layers as Record<string, unknown>[]) || []).some((l: unknown) => (l as Record<string, unknown>).type === 'commentary'),
+          languageCount: this.countLanguages((v.layers as Record<string, unknown>[]) || [])
         }
       };
 
       if (includeAI) {
         enriched.aiContext = {
-          themes: this.extractThemes(verse),
-          philosophicalDepth: this.assessPhilosophicalDepth(verse),
-          crossReferences: this.findCrossReferences(verse),
-          difficulty: this.assessDifficulty(verse),
-          emotionalTone: this.analyzeEmotionalTone(verse)
+          themes: this.extractThemes(v),
+          philosophicalDepth: this.assessPhilosophicalDepth(v),
+          crossReferences: this.findCrossReferences(v),
+          difficulty: this.assessDifficulty(v),
+          emotionalTone: this.analyzeEmotionalTone(v)
         };
       }
 
@@ -250,17 +259,21 @@ export class VedicDataService {
   }
 
   // Prunes layers to enforce the 2-author limit (Lean UI principle)
-  private pruneLayersToTwoAuthors(layers: Record<string, unknown>[]): unknown[] {
+  private pruneLayersToTwoAuthors(layers: Record<string, unknown>[]): NVFLayer[] {
     const allowedAuthors = new Set<string>();
-    const prunedLayers: Record<string, unknown>[] = [];
+    const prunedLayers: NVFLayer[] = [];
 
     for (const layer of layers) {
+      if (!layer.author) {
+          prunedLayers.push(layer as unknown as NVFLayer);
+          continue;
+      }
       const author = String(layer.author);
       if (allowedAuthors.has(author)) {
-        prunedLayers.push(layer);
+        prunedLayers.push(layer as unknown as NVFLayer);
       } else if (allowedAuthors.size < 2) {
         allowedAuthors.add(author);
-        prunedLayers.push(layer);
+        prunedLayers.push(layer as unknown as NVFLayer);
       }
     }
 
@@ -268,31 +281,28 @@ export class VedicDataService {
   }
 
   // Helper methods for AI enrichment
-  private calculateReadingTime(verse: unknown): number {
-    const v = verse as Record<string, unknown>
-    const text = (v.original || '') + ((v.transliteration || '') as string) +
-                 ((v.layers as unknown[]) || []).map((l: unknown) => (l as Record<string, unknown>).content || '').join('');
+  private calculateReadingTime(verse: Record<string, unknown>): number {
+    const text = String(verse.original || '') + String(verse.transliteration || '') +
+                 ((verse.layers as Record<string, unknown>[]) || []).map((l: unknown) => (l as Record<string, unknown>).content || '').join('');
     return Math.max(1, Math.ceil(String(text).length / 200)); // Rough estimate: 200 chars per minute
   }
 
-  private calculateComplexity(verse: unknown): number {
-    const v = verse as Record<string, unknown>
+  private calculateComplexity(verse: Record<string, unknown>): number {
     let score = 0;
-    if ((v.original as string)?.includes('ॐ')) score += 2; // Sacred symbols
-    if (((v.layers as unknown[]) || []).length > 3) score += 1; // Multiple commentaries
-    if ((v.transliteration as string)?.length > 100) score += 1; // Long verse
+    if (String(verse.original || '').includes('ॐ')) score += 2; // Sacred symbols
+    if (((verse.layers as Record<string, unknown>[]) || []).length > 3) score += 1; // Multiple commentaries
+    if (String(verse.transliteration || '').length > 100) score += 1; // Long verse
     return Math.min(10, Math.max(1, score));
   }
 
   private countLanguages(layers: unknown[]): number {
-    const languages = new Set((layers || []).map((l: unknown) => (l as Record<string, unknown>).lang).filter(Boolean));
+    const languages = new Set(((layers as Record<string, unknown>[]) || []).map((l: unknown) => (l as Record<string, unknown>).lang).filter(Boolean));
     return languages.size;
   }
 
-  private extractThemes(verse: unknown): string[] {
-    const v = verse as Record<string, unknown>
+  private extractThemes(verse: Record<string, unknown>): string[] {
     const themes: string[] = [];
-    const text = ((v.original || '') + ' ' + ((v.layers as unknown[]) || []).map((l: unknown) => (l as Record<string, unknown>).content).join(' ')).toLowerCase();
+    const text = ((verse.original || '') + ' ' + ((verse.layers as Record<string, unknown>[]) || []).map((l: unknown) => (l as Record<string, unknown>).content).join(' ')).toLowerCase();
 
     if (text.includes('dharma') || text.includes('धर्म')) themes.push('Dharma');
     if (text.includes('karma') || text.includes('कर्म')) themes.push('Karma');
@@ -303,17 +313,15 @@ export class VedicDataService {
     return themes;
   }
 
-  private assessPhilosophicalDepth(verse: unknown): number {
-    const v = verse as Record<string, unknown>
-    const layers = (v.layers as unknown[]) || [];
-    return Math.min(10, layers.length * 2 + ((v.original as string)?.length > 50 ? 1 : 0));
+  private assessPhilosophicalDepth(verse: Record<string, unknown>): number {
+    const layers = (verse.layers as Record<string, unknown>[]) || [];
+    return Math.min(10, layers.length * 2 + (String(verse.original || '').length > 50 ? 1 : 0));
   }
 
-  private findCrossReferences(verse: unknown): string[] {
+  private findCrossReferences(verse: Record<string, unknown>): string[] {
     // Simple cross-reference detection (can be enhanced)
-    const v = verse as Record<string, unknown>
     const references: string[] = [];
-    const text = (v.original as string)?.toLowerCase() || '';
+    const text = String(verse.original || '').toLowerCase();
 
     if (text.includes('krishna') || text.includes('कृष्ण')) references.push('Krishna');
     if (text.includes('arjuna') || text.includes('अर्जुन')) references.push('Arjuna');
@@ -322,16 +330,15 @@ export class VedicDataService {
     return references;
   }
 
-  private assessDifficulty(verse: unknown): 'beginner' | 'intermediate' | 'advanced' {
-    const complexity = this.calculateComplexity(verse);
+  private assessDifficulty(verse: Record<string, unknown>): 'beginner' | 'intermediate' | 'advanced' {
+    const complexity = this.calculateComplexity(verse as Record<string, unknown>);
     if (complexity <= 3) return 'beginner';
     if (complexity <= 7) return 'intermediate';
     return 'advanced';
   }
 
-  private analyzeEmotionalTone(verse: unknown): string {
-    const v = verse as Record<string, unknown>
-    const text = (v.original as string)?.toLowerCase() || '';
+  private analyzeEmotionalTone(verse: Record<string, unknown>): string {
+    const text = String(verse.original || '').toLowerCase();
     if (text.includes('fear') || text.includes('भय')) return 'contemplative';
     if (text.includes('love') || text.includes('प्रेम')) return 'devotional';
     if (text.includes('duty') || text.includes('कर्तव्य')) return 'ethical';

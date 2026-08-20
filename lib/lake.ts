@@ -16,7 +16,7 @@ const pendingRequests: Record<number, { resolve: (value: unknown) => void, rejec
 function getWorker(): Worker {
   if (worker) return worker;
   
-  worker = new Worker(new URL('./lake.worker', import.meta.url));
+  worker = new Worker(new URL('../public/workers/sqlite-search.worker.js', import.meta.url));
   worker.onmessage = (event) => {
     const { id, payload, error, type } = event.data;
     if (pendingRequests[id]) {

@@ -1,17 +1,10 @@
 'use client'
 
-import React, { useState, useEffect, useMemo } from 'react'
+import React, { useState, useEffect, useMemo, useTransition } from 'react'
 import Link from 'next/link'
 import { searchLake } from '@/lib/lake'
 import { VEDIC_LIBRARY } from '@/lib/texts'
-
-interface SearchResult {
-  textSlug: string
-  chapter: number
-  verse: number
-  slok: string
-  transliteration: string
-}
+import type { SearchResult } from '@/lib/search-bridge'
 
 
 const VEDIC_LIBRARY_MAP = new Map(VEDIC_LIBRARY.map(l => [l.slug, l]));
@@ -25,22 +18,27 @@ export default function SearchClient() {
   const [isSearching, setIsSearching] = useState(false)
   const [activeTab, setActiveTab] = useState<'all' | 'itihas' | 'upanishad' | 'veda' | 'purana' | 'other'>('all')
   const [displayedCount, setDisplayedCount] = useState(50)
-  const [isPending, startTransition] = React.useTransition()
+  const [isPending, startTransition] = useTransition()
+  const [isStreaming, setIsStreaming] = useState(false);
 
   useEffect(() => {
-    const delayDebounceFn = setTimeout(async () => {
+    const delayDebounceFn = setTimeout(() => {
       if (query.trim().length > 2) {
         setIsSearching(true)
-        try {
-          const res = await searchLake(query)
-          setResults((res as unknown as SearchResult[]) || [])
-          setSearchQuery(query)
-          setDisplayedCount(50)
-        } catch (error) {
-          console.error('Search failed:', error)
-        } finally {
-          setIsSearching(false)
-        }
+        setIsStreaming(true)
+        startTransition(async () => {
+            try {
+              const res = await searchLake(query)
+              setResults((res as SearchResult[]) || [])
+              setSearchQuery(query)
+              setDisplayedCount(50)
+            } catch (error) {
+              console.error('Search failed:', error)
+            } finally {
+              setIsSearching(false)
+              setIsStreaming(false)
+            }
+        });
       } else {
         setResults([])
         setSearchQuery('')
@@ -51,22 +49,21 @@ export default function SearchClient() {
   }, [query])
 
   const filteredResults = useMemo(() => {
-    let base = results
+    if (!results) return []
+    let filtered = results
 
     if (activeTab !== 'all') {
-      base = base.filter(r => {
-          const meta = VEDIC_LIBRARY_MAP.get(r.textSlug)
-          return meta?.category === activeTab
-      })
+      const allowedSlugs = new Set(
+        VEDIC_LIBRARY.filter(t => t.category === activeTab).map(t => t.slug)
+      )
+      filtered = filtered.filter(r => allowedSlugs.has(r.textSlug))
     }
 
-    const sorted = [...base]
-    
-    // BUG-028: Natural sort by text, chapter, verse
-    sorted.sort((a, b) => {
+    const sorted = [...filtered].sort((a, b) => {
+      if (a.relevance !== b.relevance) return (b.relevance || 0) - (a.relevance || 0)
       if (a.textSlug !== b.textSlug) return a.textSlug.localeCompare(b.textSlug)
       if (a.chapter !== b.chapter) return a.chapter - b.chapter
-      return a.verse - b.verse
+      return Number(a.verse) - Number(b.verse)
     })
 
     return sorted
@@ -120,7 +117,7 @@ export default function SearchClient() {
             className="w-full pl-16 pr-8 py-6 bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-700 rounded-[2rem] shadow-xl focus:border-orange-400 focus:ring-8 focus:ring-orange-50 dark:focus:ring-orange-950/30 focus:outline-none transition-all text-xl font-serif text-stone-900 dark:text-stone-100 placeholder:text-stone-300 dark:placeholder:text-stone-600"
             autoFocus
           />
-          {isSearching && (
+          {(isSearching || isStreaming) && (
             <div className="absolute right-8 top-1/2 -translate-y-1/2">
                <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-orange-600" />
             </div>
@@ -164,7 +161,14 @@ export default function SearchClient() {
         </div>
 
         <div className="grid grid-cols-1 gap-6">
-          {filteredResults.length > 0 ? (
+          {isStreaming ? (
+            <div className="text-center py-32">
+               <div className="w-20 h-20 bg-orange-50 rounded-full flex items-center justify-center mx-auto mb-6 text-3xl opacity-50 animate-pulse">⚙️</div>
+               <p className="text-stone-400 dark:text-stone-500 font-serif italic text-lg leading-relaxed max-w-sm mx-auto animate-pulse">
+                 Streaming results from SQLite Worker...
+               </p>
+            </div>
+          ) : filteredResults.length > 0 ? (
             <>
               {filteredResults.slice(0, displayedCount).map((result, idx) => {
                 const meta = VEDIC_LIBRARY_MAP.get(result.textSlug)
