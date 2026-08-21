@@ -12,6 +12,7 @@ import HierarchicalNav from '@/components/ui/hierarchical-nav'
 import VerseAppLinks from './verse-app-links'
 import AdhyayaShareLink from './adhyaya-share-link'
 import RatingTelemetry from './rating-telemetry'
+import SemanticExplorerDrawer from './semantic-explorer-drawer'
 
 
 // 🏛️ DYNAMIC PERSPECTIVE METADATA
@@ -415,6 +416,7 @@ export default function StudyClient({
 
   const [synthesisMap, setSynthesisMap] = useState<Record<string, { text: string; loading: boolean }>>({})
   const [_isChapterSynthesizing, _setIsChapterSynthesizing] = useState(false)
+  const [drawerOpenForVerse, setDrawerOpenForVerse] = useState<string | null>(null)
   const verseRefs = useRef<Record<number, HTMLElement | null>>({})
   const cleanText = (txt: string) => (txt || '').replace(/\\n/g, '\n')
   
@@ -846,9 +848,16 @@ export default function StudyClient({
                     </button>
                     <button
                       onClick={() => verseRefs.current[v.verse as number]?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
-                      className="text-[10px] text-stone-300 hover:text-orange-400 font-bold transition-colors"
+                      className="text-[10px] text-stone-300 hover:text-orange-400 font-bold transition-colors mr-2"
                     >
                       #
+                    </button>
+                    <button
+                      onClick={() => setDrawerOpenForVerse(v.id as string)}
+                      title="Explore Semantic Links"
+                      className="text-stone-300 hover:text-orange-400 text-xs font-bold transition-colors uppercase tracking-widest focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:outline-none"
+                    >
+                      🔗 Links
                     </button>
                   </div>
                 </div>
@@ -973,6 +982,16 @@ export default function StudyClient({
                     className="m-6 mt-0"
                   />
                 ) : null}
+
+                {drawerOpenForVerse === v.id && (
+                  <SemanticExplorerDrawer
+                    textSlug={textSlug}
+                    chapter={chapter}
+                    verse={v.verse as number}
+                    isOpen={true}
+                    onClose={() => setDrawerOpenForVerse(null)}
+                  />
+                )}
 
               </article>
             )
