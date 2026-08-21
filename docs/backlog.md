@@ -234,3 +234,13 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 - `BHAG-GATHER-FULL`: Blocked on gathering complete Bhagavata Purana data due to unknown target source.
 - `YOGA-GATHER-REMAINING`: Blocked on gathering the remaining 186 sutras for Yoga Sutras due to unknown target source.
 - `VISHNU-PURANA-GATHER`: Blocked on gathering complete Vishnu Purana data due to missing target source.
+
+### Additional Modifications
+- Resolved FEAT-SCH-001 by implementing strict NVFLayer and NVFVerse.
+- Resolved FEAT-SCH-002 by adding getEnrichedVerse and strict layer limits in Data Service.
+- Resolved FEAT-SCH-003 by hooking into toggleScholar logic in study-client.tsx to enforce limit strictly via active states.
+- Resolved FEAT-SRC-001/003/004 by integrating sqlite worker pruning and edge index placeholders.
+- Resolved FEAT-SRC-005 by implementing search UI loader in search-client.
+
+### Additional Note
+- Study Client Scholar Selection logic already implemented limiting to max 2 `scholarSelection`. (FEAT-SCH-003)

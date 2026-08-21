@@ -1,6 +1,33 @@
-import initSqlJs, { type Database } from 'sql.js';
+import initSqlJs from 'sql.js';
 
-const LAKES: Record<string, Database> = {};
+const LAKES = {};
+
+/**
+ * Prunes the payload to enforce the "Max 2" scholar limit.
+ */
+function prunePayload(verses) {
+  return verses.map((verse) => {
+    if (verse.layers && Array.isArray(verse.layers)) {
+      const allowedAuthors = new Set();
+      const prunedLayers = [];
+      for (const layer of verse.layers) {
+        if (!layer.author) {
+           prunedLayers.push(layer);
+           continue;
+        }
+        const author = String(layer.author);
+        if (allowedAuthors.has(author)) {
+          prunedLayers.push(layer);
+        } else if (allowedAuthors.size < 2) {
+          allowedAuthors.add(author);
+          prunedLayers.push(layer);
+        }
+      }
+      return { ...verse, layers: prunedLayers };
+    }
+    return verse;
+  });
+}
 
 /**
  * Vedic Lake Worker 🪷
@@ -8,7 +35,7 @@ const LAKES: Record<string, Database> = {};
  * Handles all binary database operations in the background.
  * Prevents UI blockage during massive scripture queries.
  */
-self.onmessage = async (event: MessageEvent) => {
+self.onmessage = async (event) => {
   const { type, id, payload } = event.data;
 
   try {
@@ -28,14 +55,17 @@ self.onmessage = async (event: MessageEvent) => {
         const stmt = db.prepare('SELECT content FROM verses WHERE text_slug = :slug AND chapter = :ch ORDER BY verse ASC');
         stmt.bind({ ':slug': textSlug, ':ch': chapter });
 
-        const verses: unknown[] = [];
+        const verses = [];
         while (stmt.step()) {
-          const row = stmt.getAsObject() as Record<string, unknown>;
-          if (row.content) verses.push(JSON.parse(row.content as string));
+          const row = stmt.getAsObject();
+          if (row.content) verses.push(JSON.parse(row.content));
         }
         stmt.free();
 
-        self.postMessage({ type: 'QUERY_SUCCESS', id, payload: { verses } });
+        // Dynamically prune layers to enforce Max 2 limits before sending payload to UI
+        const prunedVerses = prunePayload(verses);
+
+        self.postMessage({ type: 'QUERY_SUCCESS', id, payload: { verses: prunedVerses } });
         break;
       }
 
@@ -65,8 +95,7 @@ self.onmessage = async (event: MessageEvent) => {
         }
 
         const searchResults = (results && results[0])
-          ? (results[0].values as unknown[]).map((v: unknown) => {
-              const row = v as unknown[];
+          ? results[0].values.map((row) => {
               return {
                 textSlug: row[0],
                 chapter: row[1],
@@ -82,20 +111,29 @@ self.onmessage = async (event: MessageEvent) => {
         break;
       }
 
+      case 'HYDRATE_VECTOR_INDEX': {
+          // Placeholder for Edge Vector Index Hydration
+          // Will map Cloudflare Vectorize endpoints to return coordinates that the client Web Worker instantly hydrates
+          const { query } = payload;
+          console.log('Hydrating vector index for query:', query);
+          self.postMessage({ type: 'HYDRATE_VECTOR_SUCCESS', id, payload: { status: 'placeholder', query } });
+          break;
+      }
+
       default:
         console.warn('Unknown message type to LakeWorker:', type);
     }
-  } catch (error: unknown) {
-    self.postMessage({ type: 'ERROR', id, error: (error as Record<string, unknown>).message });
+  } catch (error) {
+    self.postMessage({ type: 'ERROR', id, error: error.message });
   }
 };
 
-async function getOrInitLake(lakeFile: string = 'vedic-lake.db') {
+async function getOrInitLake(lakeFile = 'vedic-lake.db') {
   if (LAKES[lakeFile]) return LAKES[lakeFile];
 
   // Pointing to absolute public path for WASM
   const SQL = await initSqlJs({
-    locateFile: (file: string) => `${self.location.origin}/${file}`
+    locateFile: (file) => `${self.location.origin}/${file}`
   });
 
   const response = await fetch(`/${lakeFile}`);
@@ -109,8 +147,8 @@ async function getOrInitLake(lakeFile: string = 'vedic-lake.db') {
     if (!res || !res[0] || !res[0].values || res[0].values[0][0] !== '1.0') {
       throw new Error(`Incompatible Lake Version. Hard reload required (Ctrl+Shift+R).`);
     }
-  } catch (e: unknown) {
-    throw new Error(`Corrupted or Outdated Lake detected [${lakeFile}]: ${(e as Record<string, unknown>).message}`);
+  } catch (e) {
+    throw new Error(`Corrupted or Outdated Lake detected [${lakeFile}]: ${e.message}`);
   }
 
   LAKES[lakeFile] = db;
