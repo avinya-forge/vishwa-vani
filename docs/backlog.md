@@ -18,7 +18,7 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 - [x] `FEAT-SEM-002` **Static Ontology Seed Mapping**: Create `data/ontology/tattvas.json` containing initial hand-curated linkages across Bhagavad Gita, Isha Upanishad, and Kena Upanishad.
 - [x] `FEAT-SEM-003` **Automated Linkage Indexing Script**: Write `scripts/generate_semantic_links.py` to crawl the Gold text corpus and automatically index keyword coordinates.
 - [x] `FEAT-SEM-004` **Cross-Scripture Tattva Router**: Implement dynamic route page `app/tattvas/[slug]/page.tsx` displaying connected verses dynamically across all scriptures.
-- [ ] `FEAT-SEM-005` **UI Semantic Explorer Drawer**: Implement an interactive, visual sliding drawer in the reader UI allowing readers to view and jump to cross-scripture linked verses.
+- [x] `FEAT-SEM-005` **UI Semantic Explorer Drawer**: Implement an interactive, visual sliding drawer in the reader UI allowing readers to view and jump to cross-scripture linked verses.
 
 ### 2. Search Scale & Edge-Hosted SQLite WASM Web Workers
 - [ ] `FEAT-SRC-001` **Off-Thread SQLite WASM Worker**: Build `public/workers/sqlite-search.worker.js` loading SQLite WASM off the main thread to handle massive Mahabharata queries.
