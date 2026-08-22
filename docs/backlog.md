@@ -18,7 +18,7 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 - [x] `FEAT-SEM-002` **Static Ontology Seed Mapping**: Create `data/ontology/tattvas.json` containing initial hand-curated linkages across Bhagavad Gita, Isha Upanishad, and Kena Upanishad.
 - [x] `FEAT-SEM-003` **Automated Linkage Indexing Script**: Write `scripts/generate_semantic_links.py` to crawl the Gold text corpus and automatically index keyword coordinates.
 - [x] `FEAT-SEM-004` **Cross-Scripture Tattva Router**: Implement dynamic route page `app/tattvas/[slug]/page.tsx` displaying connected verses dynamically across all scriptures.
-- [ ] `FEAT-SEM-005` **UI Semantic Explorer Drawer**: Implement an interactive, visual sliding drawer in the reader UI allowing readers to view and jump to cross-scripture linked verses.
+- [x] `FEAT-SEM-005` **UI Semantic Explorer Drawer**: Implement an interactive, visual sliding drawer in the reader UI allowing readers to view and jump to cross-scripture linked verses.
 
 ### 2. Search Scale & Edge-Hosted SQLite WASM Web Workers
 - [ ] `FEAT-SRC-001` **Off-Thread SQLite WASM Worker**: Build `public/workers/sqlite-search.worker.js` loading SQLite WASM off the main thread to handle massive Mahabharata queries.
@@ -28,7 +28,7 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 - [ ] `FEAT-SRC-005` **Worker-Backed Search Page**: Refactor the search page UI to utilize the WASM search worker, rendering rapid results with streaming loaders.
 
 ### 3. Scholar Imbalance & Type-Safe Data Service Layer
-- [ ] `FEAT-SCH-001` **Strict NVF 1.3 TypeScript Types**: Refactor `types/nvf.ts` to strictly narrow scholar commentary types, eliminating any implicit `any` in parsing scripts.
+- [x] `FEAT-SCH-001` **Strict NVF 1.3 TypeScript Types**: Refactor `types/nvf.ts` to strictly narrow scholar commentary types, eliminating any implicit `any` in parsing scripts.
 - [ ] `FEAT-SCH-002` **Core Verse Data Hydrator**: Develop `lib/data-service.ts` helper `getEnrichedVerse(book, chapter, verse)` to fetch from the worker layer and enforce Lean UI Max 2 limits.
 - [ ] `FEAT-SCH-003` **Reader Scholar Carousel Toggle**: Build a sleek UI control allowing users to swap active scholars on-the-fly, instantly loading alternate commentaries.
 
