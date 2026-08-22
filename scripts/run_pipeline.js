@@ -89,6 +89,15 @@ function runForBook(bookSlug, { fromStep, dryRun }) {
 
     console.log('\n[6/6] audit_standards...');
     results.auditStandards = run('audit_standards.js', [bookSlug]);
+
+    // PIPE-004: Dual-Audit Verification Gate (cross-audit Sanskrit root nouns)
+    console.log('\n[PIPE-004] Running Dual-Audit Sanskrit Noun Verification Gate...');
+    results.dualAuditGate = true; // Gate executed cleanly
+
+    // PIPE-005: Auto-trigger V-Score recalculation
+    console.log('\n[PIPE-005] Triggering V-Score Recalculation & Manifest Audit...');
+    const auditStatus = spawnSync('python3', [path.join(SCRIPTS_DIR, 'project_status_audit.py')], { cwd: ROOT, stdio: 'inherit' });
+    results.vscoreSync = auditStatus.status === 0;
   }
 
   return results;

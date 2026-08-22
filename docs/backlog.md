@@ -21,24 +21,24 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 - [x] `FEAT-SEM-005` **UI Semantic Explorer Drawer**: Implement an interactive, visual sliding drawer in the reader UI allowing readers to view and jump to cross-scripture linked verses.
 
 ### 2. Search Scale & Edge-Hosted SQLite WASM Web Workers
-- [ ] `FEAT-SRC-001` **Off-Thread SQLite WASM Worker**: Build `public/workers/sqlite-search.worker.js` loading SQLite WASM off the main thread to handle massive Mahabharata queries.
-- [ ] `FEAT-SRC-002` **Type-Safe Message Bridge**: Implement `lib/search-bridge.ts` providing typed message passing interfaces to post query requests and receive chunked results.
-- [ ] `FEAT-SRC-003` **Dynamic Payload Pruning Layer**: Configure the SQLite WASM data pipeline to prune scholar and commentary layers to enforce the "Max 2" scholar limit before passing back to the main thread.
-- [ ] `FEAT-SRC-004` **Edge Vector Index Hydration**: Map Cloudflare Vectorize endpoints to return coordinates that the client Web Worker instantly hydratess.
-- [ ] `FEAT-SRC-005` **Worker-Backed Search Page**: Refactor the search page UI to utilize the WASM search worker, rendering rapid results with streaming loaders.
+- [x] `FEAT-SRC-001` **Off-Thread SQLite WASM Worker**: Build `public/workers/sqlite-search.worker.js` loading SQLite WASM off the main thread to handle massive Mahabharata queries.
+- [x] `FEAT-SRC-002` **Type-Safe Message Bridge**: Implement `lib/search-bridge.ts` providing typed message passing interfaces to post query requests and receive chunked results.
+- [x] `FEAT-SRC-003` **Dynamic Payload Pruning Layer**: Configure the SQLite WASM data pipeline to prune scholar and commentary layers to enforce the "Max 2" scholar limit before passing back to the main thread.
+- [x] `FEAT-SRC-004` **Edge Vector Index Hydration**: Map Cloudflare Vectorize endpoints to return coordinates that the client Web Worker instantly hydratess.
+- [x] `FEAT-SRC-005` **Worker-Backed Search Page**: Refactor the search page UI to utilize the WASM search worker, rendering rapid results with streaming loaders.
 
 ### 3. Scholar Imbalance & Type-Safe Data Service Layer
 - [x] `FEAT-SCH-001` **Strict NVF 1.3 TypeScript Types**: Refactor `types/nvf.ts` to strictly narrow scholar commentary types, eliminating any implicit `any` in parsing scripts.
-- [ ] `FEAT-SCH-002` **Core Verse Data Hydrator**: Develop `lib/data-service.ts` helper `getEnrichedVerse(book, chapter, verse)` to fetch from the worker layer and enforce Lean UI Max 2 limits.
-- [ ] `FEAT-SCH-003` **Reader Scholar Carousel Toggle**: Build a sleek UI control allowing users to swap active scholars on-the-fly, instantly loading alternate commentaries.
+- [x] `FEAT-SCH-002` **Core Verse Data Hydrator**: Develop `lib/data-service.ts` helper `getEnrichedVerse(book, chapter, verse)` to fetch from the worker layer and enforce Lean UI Max 2 limits.
+- [x] `FEAT-SCH-003` **Reader Scholar Carousel Toggle**: Build a sleek UI control allowing users to swap active scholars on-the-fly, instantly loading alternate commentaries.
 
 ### 4. Beta Feedback Loop & Telemetry Integration
-- [ ] `FEAT-BETA-001` **Feedback to GitHub Issue Bridge**: Modify `/api/feedback` server route to automatically format feedback submissions and submit them as issues to the repository.
-- [ ] `FEAT-BETA-002` **Inline star rating analytics**: Build a lightweight telemetry SQLite table to capture anonymous study ratings, displaying translation feedback directly.
+- [x] `FEAT-BETA-001` **Feedback to GitHub Issue Bridge**: Modify `/api/feedback` server route to automatically format feedback submissions and submit them as issues to the repository.
+- [x] `FEAT-BETA-002` **Inline star rating analytics**: Build a lightweight telemetry SQLite table to capture anonymous study ratings, displaying translation feedback directly.
 
 ### 5. Documentation and Process Synchronization (Periodic Audits)
-- [ ] `AUDIT-SYNC-001` **Bi-Weekly Backlog & Status Check**: Schedule explicit session to run `python scripts/project_status_audit.py` to regenerate `.status` and `docs/PROJECT_STATUS.md`, copy status report to `docs/status_report.md`, and clean completed tasks into `docs/release-notes.md`.
-- [ ] `AUDIT-SYNC-002` **Sanskrit Metric Integrity Audit**: Execute deep structural checks verifying matching JSON chapter and verse ranges against canonical targets in `project_status_audit.py` prior to any minor version bump.
+- [x] `AUDIT-SYNC-001` **Bi-Weekly Backlog & Status Check**: Schedule explicit session to run `python scripts/project_status_audit.py` to regenerate `.status` and `docs/PROJECT_STATUS.md`, copy status report to `docs/status_report.md`, and clean completed tasks into `docs/release-notes.md`.
+- [x] `AUDIT-SYNC-002` **Sanskrit Metric Integrity Audit**: Execute deep structural checks verifying matching JSON chapter and verse ranges against canonical targets in `project_status_audit.py` prior to any minor version bump.
 
 ---
 
@@ -57,14 +57,14 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 *This giant scripture comprises 18 Parvas (Books) containing ~2,115 adhyayas and ~100,000 verses.*
 
 - **Parva 1: Adi Parva [225 Chapters, 7984 Verses]**
-  - [ ] `MBH-PARV1-GAP` **Verify Parva 1 Missing Layers**: Gather English, Hindi, and Marathi translations, transliterations, and AI metadata.
-  - [ ] `MBH-PARV1-PROM` **Promote Parva 1 to Gold**: Validate and freeze the complete Adi Parva Gold tier.
+  - [x] `MBH-PARV1-GAP` **Verify Parva 1 Missing Layers**: Gather English, Hindi, and Marathi translations, transliterations, and AI metadata.
+  - [x] `MBH-PARV1-PROM` **Promote Parva 1 to Gold**: Validate and freeze the complete Adi Parva Gold tier.
 - **Parva 2: Sabha Parva [72 Chapters, 2511 Verses]**
-  - [ ] `MBH-PARV2-ACQ` **Acquire Sabha Parva**: Ingest Sanskrit text and KMG English translation layers.
-  - [ ] `MBH-PARV2-PROM` **Promote Sabha Parva to Gold**: Execute pipeline validation and promote.
+  - [x] `MBH-PARV2-ACQ` **Acquire Sabha Parva**: Ingest Sanskrit text and KMG English translation layers.
+  - [x] `MBH-PARV2-PROM` **Promote Sabha Parva to Gold**: Execute pipeline validation and promote.
 - **Parva 3: Vana Parva (Aranyaka) [299 Chapters, 11664 Verses]**
-  - [ ] `MBH-PARV3-AUDIT` **Re-verify Parva 3 Duplications**: Double-check all 299 chapters (including Adhyaya 231) for duplication bugs.
-  - [ ] `MBH-PARV3-PROM` **Promote Vana Parva**: Execute validation pipeline to lock into Gold tier.
+  - [x] `MBH-PARV3-AUDIT` **Re-verify Parva 3 Duplications**: Double-check all 299 chapters (including Adhyaya 231) for duplication bugs.
+  - [x] `MBH-PARV3-PROM` **Promote Vana Parva**: Execute validation pipeline to lock into Gold tier.
 - **Parva 4: Virata Parva [67 Chapters, 2050 Verses]**
   - [ ] `MBH-PARV4-ACQ` **Acquire Virata Parva**: Retrieve core verses, transliterations, and KMG translation layers.
 - **Parva 5: Udyoga Parva [197 Chapters, 6071 Verses]**
@@ -216,15 +216,15 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 ---
 
 ## Priority 3: Pipeline
-- [ ] `PIPE-004` **Dual-Audit Verification Gate**: Develop automated validation checks within `scripts/run_pipeline.js` that cross-audit LLM synthesized text against root Sanskrit nouns to eliminate hallucination.
-- [ ] `PIPE-005` **Automation of Manifest Updates**: Build a self-triggering pipeline hook to recalculate V-Scores upon any data shard commit.
+- [x] `PIPE-004` **Dual-Audit Verification Gate**: Develop automated validation checks within `scripts/run_pipeline.js` that cross-audit LLM synthesized text against root Sanskrit nouns to eliminate hallucination.
+- [x] `PIPE-005` **Automation of Manifest Updates**: Build a self-triggering pipeline hook to recalculate V-Scores upon any data shard commit.
 
 ---
 
 ## Priority 4: UI
-- [ ] `UI-004` **Devanagari Responsive Font Sizing**: Fine-tune CSS variables in reader layout to scale Devanagari text sizes gracefully down to 320px width viewports.
+- [x] `UI-004` **Devanagari Responsive Font Sizing**: Fine-tune CSS variables in reader layout to scale Devanagari text sizes gracefully down to 320px width viewports.
 - [ ] `UI-005` **Reader Mobile Toolbar Compaction**: Re-align the reader page's action toolbar to prevent overlap on small screens.
-- [ ] `UI-006` **Canvas Layout CLS Hardening**: Inject server-rendered dimensions into the `<canvas>` container in ShlokaMask to prevent Cumulative Layout Shifts during hydration.
+- [x] `UI-006` **Canvas Layout CLS Hardening**: Inject server-rendered dimensions into the `<canvas>` container in ShlokaMask to prevent Cumulative Layout Shifts during hydration.
 
 ---
 

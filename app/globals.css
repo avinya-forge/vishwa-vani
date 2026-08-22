@@ -231,3 +231,11 @@ h1, h2, h3, h4 {
 .animate-float {
   animation: float 6s ease-in-out infinite;
 }
+
+/* 🔤 DEVANAGARI RESPONSIVE TYPOGRAPHY (UI-004) */
+@media (max-width: 380px) {
+  .text-devanagari {
+    font-size: clamp(0.875rem, 4.5vw, 1.125rem) !important;
+    line-height: 1.6 !important;
+  }
+}
