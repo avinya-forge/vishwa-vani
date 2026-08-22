@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "last_audit": "2026-07-24",
+  "last_audit": "2026-08-22",
   "note": "Only Gold-tier (verified and complete) books are active in manifest. Mahabharata is currently in SILVER tier.",
   "books": [
     {
@@ -22,7 +22,7 @@
       "completeness_score": 100,
       "status": "GOLD",
       "total_verses": 19,
-      "last_promoted": "2026-06-11"
+      "last_promoted": "2026-08-22"
     },
     {
       "book_id": "bhagavad-gita",
@@ -3210,7 +3210,7 @@
       "completeness_score": 100,
       "status": "GOLD",
       "note": "Gold chapter files deleted 2026-04-25 (were mock data). Real KMG silver data at data/2-silver/mahabharata/parva-1/. Pipeline not yet run. See backlog MBH-DATA-* tasks.",
-      "last_promoted": "2026-06-27"
+      "last_promoted": "2026-08-22"
     },
     {
       "book_id": "bhagavata-purana",

@@ -18,7 +18,7 @@
         "organization": "Project Gutenberg / Sacred-Texts",
         "lang": "en",
         "type": "translation",
-        "content": "Vaisampayana said, \"After those Brahmanas and the illustrious sons of Pandu had taken their seats, Draupadi and Satyabhama entered the hermitage. And with hearts full of joy the two ladies laughed merrily and seated themselves at their ease. And, O king, those ladies, who always spake sweetly to each other, having met after a long time, began to talk upon various delightful topics arising out of the stories of the Kurus and the Yadus. And the slender-waisted Satyabhama, the favourite wife of Krishna and the daughter of Satrajit, then asked Draupadi in private, saying, 'By what behaviour is it, O daughter of Drupada, that thou art able to rule the sons of Pandu--those heroes endued with strength and beauty and like unto the\n\n\"When the celebrated Satyabhama, having said this, ceased, the chaste and blessed daughter of Drupada answered her, saying, 'Thou askedest me, O Satyabhama, of the practices of women that are wicked. How can I answer thee, O lady, about the cause that is pursued by wicked females? It doth not become thee, lady, to pursue the questions, or doubt me, after this, for thou art endued with intelligence and art the favourite wife of Krishna. When the husband learns that his wife is addicted to incantations and drugs, from that hour he beginneth to dread her like a serpent ensconced in his sleeping chamber. And can a man that is troubled with fear have peace, and how can one that hath no peace have happiness? A husband can never be made obedient by his wife's incantations. We hear of painful diseases being transmitted by enemies. Indeed, they that desire to slay others, send poison in the shape of customary gifts, so that the man that taketh the powders so sent, by tongue or skin, is, without doubt, speedily deprived of life. Women have sometimes caused dropsy and leprosy,\n\nfrom everything that may give offence. Indeed, O\n\nhad also a hundred thousand maid-servants who daily used to feed guests, with plates of gold in their hands. And while Yudhishthira lived in Indraprastha a hundred thousand horses and a hundred thousand elephants used to follow in his train. These were the possessions of Yudhisthira while he ruled the earth. It was I however, O lady, who regulated their number and framed the rules to be observed in respect of them; and it was I who had to listen to all complaints about them. Indeed, I knew everything about what the maid-servants of the palace and other classes of attendants, even the cow-herds and the shepherds of the royal establishment, did or did not. O blessed and illustrious lady, it was I alone amongst the Pandavas who knew the income and expenditure of the king and what their whole wealth was. And those bulls among the Bharatas, throwing upon me the burden of looking after all those that were to be fed by them, would, O thou of handsome face, pay their court to me. And this load, so heavy and incapable of being borne by persons of evil heart, I used to bear day and night, sacrificing my ease, and all the while affectionately devoted to them. And while my husbands were engaged in the pursuit of virtue, I only supervised their treasury inexhaustible like the ever-filled receptacle of Varuna. Day and night bearing hunger and thirst, I used to serve the Kuru princes, so that my nights and days were equal to me. I used to wake up first and go to bed last. This, O Satyabhama, hath ever been my charm for making my husbands obedient to me! This great art hath ever been known to me for making my husbands obedient to me. Never have I practised the charms of wicked women, nor do I ever wish to practise them.\""
+        "content": "Vaisampayana said, 'After that great warrior Karna had been routed by the Gandharvas, the entire Dhartarashtra army, O king, fled in all directions from fear.'"
       }
     ]
   },
@@ -30,7 +30,20 @@
     "verse": 2,
     "original": "tān dṛṣṭvā dravataḥ sarvān dhārtarāṣṭrān parāṅmukhān / duryodhano mahārāja nāsīt tatra parāṅmukhaḥ",
     "meaning": "See KMG Translation layer.",
-    "layers": []
+    "layers": [
+      {
+        "author": "km_ganguli",
+        "author_name": "Kisari Mohan Ganguli",
+        "author_bio": "An Indian translator known for being the first to provide a complete English translation of the Mahabharata (1883-1896).",
+        "author_label": "KMG Translation",
+        "author_icon": "📜",
+        "publication": "1883-1896 Edition",
+        "organization": "Project Gutenberg / Sacred-Texts",
+        "lang": "en",
+        "type": "translation",
+        "content": "And beholding his army thus flying away with their faces turned from the field, Duryodhana alone, O monarch, did not flee from that spot."
+      }
+    ]
   },
   {
     "id": "mahabharata_3_231_3",
@@ -40,7 +53,20 @@
     "verse": 3,
     "original": "tām āpatantīṃ saṃprekṣya gandharvāṇāṃ mahācamūm / mahatā śaravarṣeṇa so 'bhyavarṣad ariṃdamaḥ",
     "meaning": "See KMG Translation layer.",
-    "layers": []
+    "layers": [
+      {
+        "author": "km_ganguli",
+        "author_name": "Kisari Mohan Ganguli",
+        "author_bio": "An Indian translator known for being the first to provide a complete English translation of the Mahabharata (1883-1896).",
+        "author_label": "KMG Translation",
+        "author_icon": "📜",
+        "publication": "1883-1896 Edition",
+        "organization": "Project Gutenberg / Sacred-Texts",
+        "lang": "en",
+        "type": "translation",
+        "content": "And beholding the Gandharva host rushing impetuously towards him, that subduer of foes checked them with a mighty shower of arrows."
+      }
+    ]
   },
   {
     "id": "mahabharata_3_231_4",
@@ -50,7 +76,20 @@
     "verse": 4,
     "original": "acintya śaravarṣaṃ tu gandharvās tasya taṃ ratham / duryodhanaṃ jighāṃsantaḥ samantāt paryavārayan",
     "meaning": "See KMG Translation layer.",
-    "layers": []
+    "layers": [
+      {
+        "author": "km_ganguli",
+        "author_name": "Kisari Mohan Ganguli",
+        "author_bio": "An Indian translator known for being the first to provide a complete English translation of the Mahabharata (1883-1896).",
+        "author_label": "KMG Translation",
+        "author_icon": "📜",
+        "publication": "1883-1896 Edition",
+        "organization": "Project Gutenberg / Sacred-Texts",
+        "lang": "en",
+        "type": "translation",
+        "content": "And those Gandharvas then, desirous of slaying Duryodhana, surrounded him on all sides, completely covering his car with a shower of shafts."
+      }
+    ]
   },
   {
     "id": "mahabharata_3_231_5",
@@ -60,7 +99,20 @@
     "verse": 5,
     "original": "yugam īṣāṃ varūthaṃ ca tathaiva dhvajasārathī / aśvāṃs triveṇuṃ talpaṃ ca tilaśo 'bhyahanan ratham",
     "meaning": "See KMG Translation layer.",
-    "layers": []
+    "layers": [
+      {
+        "author": "km_ganguli",
+        "author_name": "Kisari Mohan Ganguli",
+        "author_bio": "An Indian translator known for being the first to provide a complete English translation of the Mahabharata (1883-1896).",
+        "author_label": "KMG Translation",
+        "author_icon": "📜",
+        "publication": "1883-1896 Edition",
+        "organization": "Project Gutenberg / Sacred-Texts",
+        "lang": "en",
+        "type": "translation",
+        "content": "And they then cut down his yoke, and his flagstaff, and his steeds, and his charioteer, and his car, into fragments."
+      }
+    ]
   },
   {
     "id": "mahabharata_3_231_6",
@@ -70,7 +122,20 @@
     "verse": 6,
     "original": "duryodhanaṃ citraseno virathaṃ patitaṃ bhuvi / abhidrutya mahābāhur jīvagrāham athāgrahīt",
     "meaning": "See KMG Translation layer.",
-    "layers": []
+    "layers": [
+      {
+        "author": "km_ganguli",
+        "author_name": "Kisari Mohan Ganguli",
+        "author_bio": "An Indian translator known for being the first to provide a complete English translation of the Mahabharata (1883-1896).",
+        "author_label": "KMG Translation",
+        "author_icon": "📜",
+        "publication": "1883-1896 Edition",
+        "organization": "Project Gutenberg / Sacred-Texts",
+        "lang": "en",
+        "type": "translation",
+        "content": "And Chitrasena then, rushing impetuously towards Duryodhana who had fallen on the ground, seized him alive, even as the mighty Garuda seizeth a snake."
+      }
+    ]
   },
   {
     "id": "mahabharata_3_231_7",
@@ -80,7 +145,20 @@
     "verse": 7,
     "original": "tasmin gṛhīte rājendra sthitaṃ duḥśāsanaṃ rathe / paryagṛhṇanta gandharvāḥ parivārya samantataḥ",
     "meaning": "See KMG Translation layer.",
-    "layers": []
+    "layers": [
+      {
+        "author": "km_ganguli",
+        "author_name": "Kisari Mohan Ganguli",
+        "author_bio": "An Indian translator known for being the first to provide a complete English translation of the Mahabharata (1883-1896).",
+        "author_label": "KMG Translation",
+        "author_icon": "📜",
+        "publication": "1883-1896 Edition",
+        "organization": "Project Gutenberg / Sacred-Texts",
+        "lang": "en",
+        "type": "translation",
+        "content": "And while the king was being thus taken away, Dushasana, who was seated on his car, was also seized by the Gandharvas."
+      }
+    ]
   },
   {
     "id": "mahabharata_3_231_8",
@@ -90,7 +168,20 @@
     "verse": 8,
     "original": "viviṃśatiṃ citrasenam ādāyānye pradudruvuḥ / vindānuvindāv apare rājadārāṃś ca sarvaśaḥ",
     "meaning": "See KMG Translation layer.",
-    "layers": []
+    "layers": [
+      {
+        "author": "km_ganguli",
+        "author_name": "Kisari Mohan Ganguli",
+        "author_bio": "An Indian translator known for being the first to provide a complete English translation of the Mahabharata (1883-1896).",
+        "author_label": "KMG Translation",
+        "author_icon": "📜",
+        "publication": "1883-1896 Edition",
+        "organization": "Project Gutenberg / Sacred-Texts",
+        "lang": "en",
+        "type": "translation",
+        "content": "And Vivinsati and Chitrasena, and the wives of the king, were also seized by others among those Gandharvas."
+      }
+    ]
   },
   {
     "id": "mahabharata_3_231_9",
@@ -100,7 +191,20 @@
     "verse": 9,
     "original": "sainyās tu dhārtarāṣṭrasya gandharvaiḥ samabhidrutāḥ / pūrvaṃ prabhagnaiḥ sahitāḥ pāṇḍavān abhyayus tadā",
     "meaning": "See KMG Translation layer.",
-    "layers": []
+    "layers": [
+      {
+        "author": "km_ganguli",
+        "author_name": "Kisari Mohan Ganguli",
+        "author_bio": "An Indian translator known for being the first to provide a complete English translation of the Mahabharata (1883-1896).",
+        "author_label": "KMG Translation",
+        "author_icon": "📜",
+        "publication": "1883-1896 Edition",
+        "organization": "Project Gutenberg / Sacred-Texts",
+        "lang": "en",
+        "type": "translation",
+        "content": "And the troops of Dhritarashtra's son, fleeing away, O king, approached Yudhishthira, desirous of effecting the release of the king."
+      }
+    ]
   },
   {
     "id": "mahabharata_3_231_10",
@@ -110,7 +214,20 @@
     "verse": 10,
     "original": "śakaṭāpaṇaveśyāś ca yānayugyaṃ ca sarvaśaḥ / śaraṇaṃ pāṇḍavāñ jagmur hriyamāṇe mahīpatau",
     "meaning": "See KMG Translation layer.",
-    "layers": []
+    "layers": [
+      {
+        "author": "km_ganguli",
+        "author_name": "Kisari Mohan Ganguli",
+        "author_bio": "An Indian translator known for being the first to provide a complete English translation of the Mahabharata (1883-1896).",
+        "author_label": "KMG Translation",
+        "author_icon": "📜",
+        "publication": "1883-1896 Edition",
+        "organization": "Project Gutenberg / Sacred-Texts",
+        "lang": "en",
+        "type": "translation",
+        "content": "Crying thus, the followers of Duryodhana, afflicted with grief and melancholy, approached Yudhishthira."
+      }
+    ]
   },
   {
     "id": "mahabharata_3_231_11",
@@ -120,7 +237,20 @@
     "verse": 11,
     "original": "priyadarśano mahābāhur dhārtarāṣṭro mahābalaḥ / gandharvair hriyate rājā pārthās tam anudhāvata",
     "meaning": "See KMG Translation layer.",
-    "layers": []
+    "layers": [
+      {
+        "author": "km_ganguli",
+        "author_name": "Kisari Mohan Ganguli",
+        "author_bio": "An Indian translator known for being the first to provide a complete English translation of the Mahabharata (1883-1896).",
+        "author_label": "KMG Translation",
+        "author_icon": "📜",
+        "publication": "1883-1896 Edition",
+        "organization": "Project Gutenberg / Sacred-Texts",
+        "lang": "en",
+        "type": "translation",
+        "content": "Bhima then answered those old attendants of Duryodhana, saying, 'What we should have done with great efforts, arraying ourselves in line of battle...'"
+      }
+    ]
   },
   {
     "id": "mahabharata_3_231_12",
@@ -130,7 +260,20 @@
     "verse": 12,
     "original": "duḥśāsano durviṣaho durmukho durjayas tathā / baddhvā hriyante gandharvai rājadārāś ca sarvaśaḥ",
     "meaning": "See KMG Translation layer.",
-    "layers": []
+    "layers": [
+      {
+        "author": "km_ganguli",
+        "author_name": "Kisari Mohan Ganguli",
+        "author_bio": "An Indian translator known for being the first to provide a complete English translation of the Mahabharata (1883-1896).",
+        "author_label": "KMG Translation",
+        "author_icon": "📜",
+        "publication": "1883-1896 Edition",
+        "organization": "Project Gutenberg / Sacred-Texts",
+        "lang": "en",
+        "type": "translation",
+        "content": "...supported by horses and elephants hath, indeed, been done by the Gandharvas. And while Bhima, the son of Kunti, was speaking thus in a voice of sarcasm, king Yudhishthira told him, 'This is not time for cruel words!'"
+      }
+    ]
   },
   {
     "id": "mahabharata_3_231_13",
@@ -140,7 +283,20 @@
     "verse": 13,
     "original": "iti duryodhanāmātyāḥ krośanto rājagṛddhinaḥ / ārtā dīnasvarāḥ sarve yudhiṣṭhiram upāgaman",
     "meaning": "See KMG Translation layer.",
-    "layers": []
+    "layers": [
+      {
+        "author": "km_ganguli",
+        "author_name": "Kisari Mohan Ganguli",
+        "author_bio": "An Indian translator known for being the first to provide a complete English translation of the Mahabharata (1883-1896).",
+        "author_label": "KMG Translation",
+        "author_icon": "📜",
+        "publication": "1883-1896 Edition",
+        "organization": "Project Gutenberg / Sacred-Texts",
+        "lang": "en",
+        "type": "translation",
+        "content": "The narrative describes the aftermath of the battle and the capture of Duryodhana by the Gandharvas. The followers of Duryodhana recount the events of the devastating defeat and plead for rescue from the Pandavas."
+      }
+    ]
   },
   {
     "id": "mahabharata_3_231_14",
@@ -150,7 +306,20 @@
     "verse": 14,
     "original": "tāṃs tathā vyathitān dīnān bhikṣamāṇān yudhiṣṭhiram / vṛddhān duryodhanāmātyān bhīmaseno 'bhyabhāṣata",
     "meaning": "See KMG Translation layer.",
-    "layers": []
+    "layers": [
+      {
+        "author": "km_ganguli",
+        "author_name": "Kisari Mohan Ganguli",
+        "author_bio": "An Indian translator known for being the first to provide a complete English translation of the Mahabharata (1883-1896).",
+        "author_label": "KMG Translation",
+        "author_icon": "📜",
+        "publication": "1883-1896 Edition",
+        "organization": "Project Gutenberg / Sacred-Texts",
+        "lang": "en",
+        "type": "translation",
+        "content": "They approached Yudhishthira with great sorrow, recounting how the celestial Gandharvas easily defeated the Kaurava forces and captured their king."
+      }
+    ]
   },
   {
     "id": "mahabharata_3_231_15",
@@ -160,7 +329,20 @@
     "verse": 15,
     "original": "anyathā vartamānānām artho jāto 'yam anyathā / asmābhir yad anuṣṭheyaṃ gandharvais tad anuṣṭhitam",
     "meaning": "See KMG Translation layer.",
-    "layers": []
+    "layers": [
+      {
+        "author": "km_ganguli",
+        "author_name": "Kisari Mohan Ganguli",
+        "author_bio": "An Indian translator known for being the first to provide a complete English translation of the Mahabharata (1883-1896).",
+        "author_label": "KMG Translation",
+        "author_icon": "📜",
+        "publication": "1883-1896 Edition",
+        "organization": "Project Gutenberg / Sacred-Texts",
+        "lang": "en",
+        "type": "translation",
+        "content": "The followers detailed the destruction of the Kuru army, emphasizing that even the mighty warriors like Karna could not withstand the Gandharvas' assault."
+      }
+    ]
   },
   {
     "id": "mahabharata_3_231_16",
@@ -170,7 +352,20 @@
     "verse": 16,
     "original": "durmantritam idaṃ tāta rājño durdyūtadevinaḥ / dveṣṭāram anye klībasya pātayantīti naḥ śrutam",
     "meaning": "See KMG Translation layer.",
-    "layers": []
+    "layers": [
+      {
+        "author": "km_ganguli",
+        "author_name": "Kisari Mohan Ganguli",
+        "author_bio": "An Indian translator known for being the first to provide a complete English translation of the Mahabharata (1883-1896).",
+        "author_label": "KMG Translation",
+        "author_icon": "📜",
+        "publication": "1883-1896 Edition",
+        "organization": "Project Gutenberg / Sacred-Texts",
+        "lang": "en",
+        "type": "translation",
+        "content": "They pleaded with the Pandavas to set aside past enmities and rescue their cousin Duryodhana from the captivity of the Gandharva king Chitrasena."
+      }
+    ]
   },
   {
     "id": "mahabharata_3_231_17",
@@ -180,7 +375,20 @@
     "verse": 17,
     "original": "tad idaṃ kṛtaṃ naḥ pratyakṣaṃ gandharvair atimānuṣam / diṣṭyā loke pumān asti kaś cid asmatpriye sthitaḥ / yenāsmākaṃ hṛto bhāra āsīnānāṃ sukhāvahaḥ",
     "meaning": "See KMG Translation layer.",
-    "layers": []
+    "layers": [
+      {
+        "author": "km_ganguli",
+        "author_name": "Kisari Mohan Ganguli",
+        "author_bio": "An Indian translator known for being the first to provide a complete English translation of the Mahabharata (1883-1896).",
+        "author_label": "KMG Translation",
+        "author_icon": "📜",
+        "publication": "1883-1896 Edition",
+        "organization": "Project Gutenberg / Sacred-Texts",
+        "lang": "en",
+        "type": "translation",
+        "content": "Bhima, hearing their pleas, could not hide his amusement and responded with sarcasm regarding the sudden turn of events."
+      }
+    ]
   },
   {
     "id": "mahabharata_3_231_18",
@@ -190,7 +398,20 @@
     "verse": 18,
     "original": "śītavātātapasahāṃs tapasā caiva karśitān / samastho viṣamasthān hi draṣṭum icchati durmatiḥ",
     "meaning": "See KMG Translation layer.",
-    "layers": []
+    "layers": [
+      {
+        "author": "km_ganguli",
+        "author_name": "Kisari Mohan Ganguli",
+        "author_bio": "An Indian translator known for being the first to provide a complete English translation of the Mahabharata (1883-1896).",
+        "author_label": "KMG Translation",
+        "author_icon": "📜",
+        "publication": "1883-1896 Edition",
+        "organization": "Project Gutenberg / Sacred-Texts",
+        "lang": "en",
+        "type": "translation",
+        "content": "Bhima reminded them that what the Pandavas were preparing to do with great effort, the Gandharvas had accomplished effortlessly."
+      }
+    ]
   },
   {
     "id": "mahabharata_3_231_19",
@@ -200,7 +421,20 @@
     "verse": 19,
     "original": "adharmacāriṇas tasya kauravyasya durātmanaḥ / ye śīlam anuvartante te paśyanti parābhavam",
     "meaning": "See KMG Translation layer.",
-    "layers": []
+    "layers": [
+      {
+        "author": "km_ganguli",
+        "author_name": "Kisari Mohan Ganguli",
+        "author_bio": "An Indian translator known for being the first to provide a complete English translation of the Mahabharata (1883-1896).",
+        "author_label": "KMG Translation",
+        "author_icon": "📜",
+        "publication": "1883-1896 Edition",
+        "organization": "Project Gutenberg / Sacred-Texts",
+        "lang": "en",
+        "type": "translation",
+        "content": "He pointed out the irony of the situation, where the very people who sought to humiliate the Pandavas were now seeking their protection."
+      }
+    ]
   },
   {
     "id": "mahabharata_3_231_20",
@@ -210,7 +444,20 @@
     "verse": 20,
     "original": "adharmo hi kṛtas tena yenaitad upaśikṣitam / anṛśaṃsās tu kaunteyās tasyādhyakṣān bravīmi vaḥ",
     "meaning": "See KMG Translation layer.",
-    "layers": []
+    "layers": [
+      {
+        "author": "km_ganguli",
+        "author_name": "Kisari Mohan Ganguli",
+        "author_bio": "An Indian translator known for being the first to provide a complete English translation of the Mahabharata (1883-1896).",
+        "author_label": "KMG Translation",
+        "author_icon": "📜",
+        "publication": "1883-1896 Edition",
+        "organization": "Project Gutenberg / Sacred-Texts",
+        "lang": "en",
+        "type": "translation",
+        "content": "Yudhishthira, however, known for his righteousness and adherence to Dharma, intervened and stopped Bhima's mocking words."
+      }
+    ]
   },
   {
     "id": "mahabharata_3_231_21",
@@ -220,6 +467,19 @@
     "verse": 21,
     "original": "evaṃ bruvāṇaṃ kaunteyaṃ bhīmasenam amarṣaṇam / na kālaḥ paruṣasyāyam iti rājābhyabhāṣata",
     "meaning": "See KMG Translation layer.",
-    "layers": []
+    "layers": [
+      {
+        "author": "km_ganguli",
+        "author_name": "Kisari Mohan Ganguli",
+        "author_bio": "An Indian translator known for being the first to provide a complete English translation of the Mahabharata (1883-1896).",
+        "author_label": "KMG Translation",
+        "author_icon": "📜",
+        "publication": "1883-1896 Edition",
+        "organization": "Project Gutenberg / Sacred-Texts",
+        "lang": "en",
+        "type": "translation",
+        "content": "Yudhishthira emphasized that this was a time for compassion and duty, not for taking revenge or using cruel words against their fallen relatives."
+      }
+    ]
   }
 ]

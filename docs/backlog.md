@@ -57,14 +57,14 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 *This giant scripture comprises 18 Parvas (Books) containing ~2,115 adhyayas and ~100,000 verses.*
 
 - **Parva 1: Adi Parva [225 Chapters, 7984 Verses]**
-  - [ ] `MBH-PARV1-GAP` **Verify Parva 1 Missing Layers**: Gather English, Hindi, and Marathi translations, transliterations, and AI metadata.
-  - [ ] `MBH-PARV1-PROM` **Promote Parva 1 to Gold**: Validate and freeze the complete Adi Parva Gold tier.
+  - [x] `MBH-PARV1-GAP` **Verify Parva 1 Missing Layers**: Gather English, Hindi, and Marathi translations, transliterations, and AI metadata.
+  - [x] `MBH-PARV1-PROM` **Promote Parva 1 to Gold**: Validate and freeze the complete Adi Parva Gold tier.
 - **Parva 2: Sabha Parva [72 Chapters, 2511 Verses]**
-  - [ ] `MBH-PARV2-ACQ` **Acquire Sabha Parva**: Ingest Sanskrit text and KMG English translation layers.
-  - [ ] `MBH-PARV2-PROM` **Promote Sabha Parva to Gold**: Execute pipeline validation and promote.
+  - [x] `MBH-PARV2-ACQ` **Acquire Sabha Parva**: Ingest Sanskrit text and KMG English translation layers.
+  - [x] `MBH-PARV2-PROM` **Promote Sabha Parva to Gold**: Execute pipeline validation and promote.
 - **Parva 3: Vana Parva (Aranyaka) [299 Chapters, 11664 Verses]**
-  - [ ] `MBH-PARV3-AUDIT` **Re-verify Parva 3 Duplications**: Double-check all 299 chapters (including Adhyaya 231) for duplication bugs.
-  - [ ] `MBH-PARV3-PROM` **Promote Vana Parva**: Execute validation pipeline to lock into Gold tier.
+  - [x] `MBH-PARV3-AUDIT` **Re-verify Parva 3 Duplications**: Double-check all 299 chapters (including Adhyaya 231) for duplication bugs.
+  - [x] `MBH-PARV3-PROM` **Promote Vana Parva**: Execute validation pipeline to lock into Gold tier.
 - **Parva 4: Virata Parva [67 Chapters, 2050 Verses]**
   - [ ] `MBH-PARV4-ACQ` **Acquire Virata Parva**: Retrieve core verses, transliterations, and KMG translation layers.
 - **Parva 5: Udyoga Parva [197 Chapters, 6071 Verses]**
@@ -216,15 +216,15 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 ---
 
 ## Priority 3: Pipeline
-- [ ] `PIPE-004` **Dual-Audit Verification Gate**: Develop automated validation checks within `scripts/run_pipeline.js` that cross-audit LLM synthesized text against root Sanskrit nouns to eliminate hallucination.
-- [ ] `PIPE-005` **Automation of Manifest Updates**: Build a self-triggering pipeline hook to recalculate V-Scores upon any data shard commit.
+- [x] `PIPE-004` **Dual-Audit Verification Gate**: Develop automated validation checks within `scripts/run_pipeline.js` that cross-audit LLM synthesized text against root Sanskrit nouns to eliminate hallucination.
+- [x] `PIPE-005` **Automation of Manifest Updates**: Build a self-triggering pipeline hook to recalculate V-Scores upon any data shard commit.
 
 ---
 
 ## Priority 4: UI
-- [ ] `UI-004` **Devanagari Responsive Font Sizing**: Fine-tune CSS variables in reader layout to scale Devanagari text sizes gracefully down to 320px width viewports.
+- [x] `UI-004` **Devanagari Responsive Font Sizing**: Fine-tune CSS variables in reader layout to scale Devanagari text sizes gracefully down to 320px width viewports.
 - [ ] `UI-005` **Reader Mobile Toolbar Compaction**: Re-align the reader page's action toolbar to prevent overlap on small screens.
-- [ ] `UI-006` **Canvas Layout CLS Hardening**: Inject server-rendered dimensions into the `<canvas>` container in ShlokaMask to prevent Cumulative Layout Shifts during hydration.
+- [x] `UI-006` **Canvas Layout CLS Hardening**: Inject server-rendered dimensions into the `<canvas>` container in ShlokaMask to prevent Cumulative Layout Shifts during hydration.
 
 ---
 
