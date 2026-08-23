@@ -337,3 +337,9 @@
 - [x] `ISHA-DATA-11` **Verify & Promote Isha Upanishad**: Manually verify the 19 verses (Sanskrit, EN/HI/MR, 2+ authors). Run `promote_to_gold.js` and update manifest.
 - [x] `STOTRA-DATA-1` **Verify & Promote Stotras**: Audit and promote the 17 verses across 3 chapters. Update manifest.
 - [x] `CHK-002` **Post-Flight Health Check**: Final run of build, lint, and test suite. Ensure codebase remains at 0 errors and 95% test coverage.
+
+## [Beta 1.3.0] - 2026-08-23
+
+### 🚀 Features & Fixes
+- [x] `AUDIT-SYNC-001` **Bi-Weekly Backlog & Status Check**: Schedule explicit session to run `python scripts/project_status_audit.py` to regenerate `.status` and `docs/PROJECT_STATUS.md`, copy status report to `docs/status_report.md`, and clean completed tasks into `docs/release-notes.md`.
+- [x] `AUDIT-SYNC-002` **Sanskrit Metric Integrity Audit**: Execute deep structural checks verifying matching JSON chapter and verse ranges against canonical targets in `project_status_audit.py` prior to any minor version bump.

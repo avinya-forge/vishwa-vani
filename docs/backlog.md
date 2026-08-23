@@ -37,8 +37,6 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 - [ ] `FEAT-BETA-002` **Inline star rating analytics**: Build a lightweight telemetry SQLite table to capture anonymous study ratings, displaying translation feedback directly.
 
 ### 5. Documentation and Process Synchronization (Periodic Audits)
-- [ ] `AUDIT-SYNC-001` **Bi-Weekly Backlog & Status Check**: Schedule explicit session to run `python scripts/project_status_audit.py` to regenerate `.status` and `docs/PROJECT_STATUS.md`, copy status report to `docs/status_report.md`, and clean completed tasks into `docs/release-notes.md`.
-- [ ] `AUDIT-SYNC-002` **Sanskrit Metric Integrity Audit**: Execute deep structural checks verifying matching JSON chapter and verse ranges against canonical targets in `project_status_audit.py` prior to any minor version bump.
 
 ---
 
