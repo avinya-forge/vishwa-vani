@@ -40,11 +40,17 @@ interface MockResponse {
 
 describe('/api/synthesize', () => {
   const originalEnv = process.env;
+  let consoleErrorSpy: jest.SpyInstance;
 
   beforeEach(() => {
     jest.resetModules()
     process.env = { ...originalEnv, GEMINI_API_KEY: 'fake-key' }
     mockGenerateContent.mockReset()
+    consoleErrorSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
+  })
+
+  afterEach(() => {
+    consoleErrorSpy.mockRestore();
   })
 
   afterAll(() => {
