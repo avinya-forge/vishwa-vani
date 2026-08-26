@@ -16,11 +16,17 @@ jest.mock('next/server', () => {
 
 describe('POST /api/feedback', () => {
   const originalEnv = process.env
+  let consoleErrorSpy: jest.SpyInstance;
 
   beforeEach(() => {
     jest.resetModules()
     process.env = { ...originalEnv }
     global.fetch = jest.fn()
+    consoleErrorSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
+  })
+
+  afterEach(() => {
+    consoleErrorSpy.mockRestore();
   })
 
   afterAll(() => {
