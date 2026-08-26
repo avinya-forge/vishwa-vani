@@ -43,10 +43,12 @@ describe('SearchClient', () => {
     jest.useFakeTimers();
     jest.clearAllMocks();
     mockSearchLake.mockResolvedValue([]);
+    jest.spyOn(console, 'error').mockImplementation(() => {});
   });
 
   afterEach(() => {
     jest.useRealTimers();
+    jest.restoreAllMocks();
   });
 
   // ── Render ──────────────────────────────────────────────────────────────────
@@ -80,7 +82,9 @@ describe('SearchClient', () => {
   it('does not search for queries shorter than 3 characters', async () => {
     render(<SearchClient />);
     fireEvent.change(screen.getByPlaceholderText(/Search verses/i), { target: { value: 'ab' } });
-    jest.advanceTimersByTime(500);
+    await act(async () => {
+      jest.advanceTimersByTime(500);
+    });
     expect(mockSearchLake).not.toHaveBeenCalled();
   });
 
