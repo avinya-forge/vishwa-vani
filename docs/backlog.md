@@ -21,24 +21,24 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 - [x] `FEAT-SEM-005` **UI Semantic Explorer Drawer**: Implement an interactive, visual sliding drawer in the reader UI allowing readers to view and jump to cross-scripture linked verses.
 
 ### 2. Search Scale & Edge-Hosted SQLite WASM Web Workers
-- [ ] `FEAT-SRC-001` **Off-Thread SQLite WASM Worker**: Build `public/workers/sqlite-search.worker.js` loading SQLite WASM off the main thread to handle massive Mahabharata queries.
-- [ ] `FEAT-SRC-002` **Type-Safe Message Bridge**: Implement `lib/search-bridge.ts` providing typed message passing interfaces to post query requests and receive chunked results.
-- [ ] `FEAT-SRC-003` **Dynamic Payload Pruning Layer**: Configure the SQLite WASM data pipeline to prune scholar and commentary layers to enforce the "Max 2" scholar limit before passing back to the main thread.
-- [ ] `FEAT-SRC-004` **Edge Vector Index Hydration**: Map Cloudflare Vectorize endpoints to return coordinates that the client Web Worker instantly hydratess.
-- [ ] `FEAT-SRC-005` **Worker-Backed Search Page**: Refactor the search page UI to utilize the WASM search worker, rendering rapid results with streaming loaders.
+- [x] `FEAT-SRC-001` **Off-Thread SQLite WASM Worker**: Build `public/workers/sqlite-search.worker.js` loading SQLite WASM off the main thread to handle massive Mahabharata queries.
+- [x] `FEAT-SRC-002` **Type-Safe Message Bridge**: Implement `lib/search-bridge.ts` providing typed message passing interfaces to post query requests and receive chunked results.
+- [x] `FEAT-SRC-003` **Dynamic Payload Pruning Layer**: Configure the SQLite WASM data pipeline to prune scholar and commentary layers to enforce the "Max 2" scholar limit before passing back to the main thread.
+- [x] `FEAT-SRC-004` **Edge Vector Index Hydration**: Map Cloudflare Vectorize endpoints to return coordinates that the client Web Worker instantly hydrates.
+- [x] `FEAT-SRC-005` **Worker-Backed Search Page**: Refactor the search page UI to utilize the WASM search worker, rendering rapid results with streaming loaders.
 
 ### 3. Scholar Imbalance & Type-Safe Data Service Layer
 - [x] `FEAT-SCH-001` **Strict NVF 1.3 Type Script Types**: Refactor `types/nvf.ts` to strictly narrow scholar commentary types, eliminating any implicit `any` in parsing scripts.
-- [ ] `FEAT-SCH-002` **Core Verse Data Hydrator**: Develop `lib/data-service.ts` helper `getEnrichedVerse(book, chapter, verse)` to fetch from the worker layer and enforce Lean UI Max 2 limits.
-- [ ] `FEAT-SCH-003` **Reader Scholar Carousel Toggle**: Build a sleek UI control allowing users to swap active scholars on-the-fly, instantly loading alternate commentaries.
+- [x] `FEAT-SCH-002` **Core Verse Data Hydrator**: Develop `lib/data-service.ts` helper `getEnrichedVerse(book, chapter, verse)` to fetch from the worker layer and enforce Lean UI Max 2 limits.
+- [x] `FEAT-SCH-003` **Reader Scholar Carousel Toggle**: Build a sleek UI control allowing users to swap active scholars on-the-fly, instantly loading alternate commentaries.
 
 ### 4. Beta Feedback Loop & Telemetry Integration
-- [ ] `FEAT-BETA-001` **Feedback to GitHub Issue Bridge**: Modify `/api/feedback` server route to automatically format feedback submissions and submit them as issues to the repository.
-- [ ] `FEAT-BETA-002` **Inline star rating analytics**: Build a lightweight telemetry SQLite table to capture anonymous study ratings, displaying translation feedback directly.
+- [x] `FEAT-BETA-001` **Feedback to GitHub Issue Bridge**: Modify `/api/feedback` server route to automatically format feedback submissions and submit them as issues to the repository.
+- [x] `FEAT-BETA-002` **Inline star rating analytics**: Build a lightweight telemetry SQLite table to capture anonymous study ratings, displaying translation feedback directly.
 
 ### 5. Documentation and Process Synchronization (Periodic Audits)
-- [ ] `AUDIT-SYNC-001` **Bi-Weekly Backlog & Status Check**: Schedule explicit session to run `python scripts/project_status_audit.py` to regenerate `.status` and `docs/PROJECT_STATUS.md`, copy status report to `docs/status_report.md`, and clean completed tasks into `docs/release-notes.md`.
-- [ ] `AUDIT-SYNC-002` **Sanskrit Metric Integrity Audit**: Execute deep structural checks verifying matching JSON chapter and verse ranges against canonical targets in `project_status_audit.py` prior to any minor version bump.
+- [x] `AUDIT-SYNC-001` **Bi-Weekly Backlog & Status Check**: Schedule explicit session to run `python scripts/project_status_audit.py` to regenerate `.status` and `docs/PROJECT_STATUS.md`, copy status report to `docs/status_report.md`, and clean completed tasks into `docs/release-notes.md`.
+- [x] `AUDIT-SYNC-002` **Sanskrit Metric Integrity Audit**: Execute deep structural checks verifying matching JSON chapter and verse ranges against canonical targets in `project_status_audit.py` prior to any minor version bump.
 
 ---
 
@@ -254,7 +254,7 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 
 ## Priority 4: UI
 - [x] `UI-004` **Devanagari Responsive Font Sizing**: Fine-tune CSS variables in reader layout to scale Devanagari text sizes gracefully down to 320px width viewports.
-- [ ] `UI-005` **Reader Mobile Toolbar Compaction**: Re-align the reader page's action toolbar to prevent overlap on small screens.
+- [x] `UI-005` **Reader Mobile Toolbar Compaction**: Re-align the reader page's action toolbar to prevent overlap on small screens.
 - [x] `UI-006` **Canvas Layout CLS Hardening**: Inject server-rendered dimensions into the `<canvas>` container in ShlokaMask to prevent Cumulative Layout Shifts during hydration.
 
 ---
@@ -266,12 +266,3 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 - `YOGA-GATHER-REMAINING`: Blocked on gathering the remaining 186 sutras for Yoga Sutras due to unknown target source.
 - `VISHNU-PURANA-GATHER`: Blocked on gathering complete Vishnu Purana data due to missing target source.
 
-### Additional Modifications
-- Resolved FEAT-SCH-001 by implementing strict NVFLayer and NVFVerse.
-- Resolved FEAT-SCH-002 by adding getEnrichedVerse and strict layer limits in Data Service.
-- Resolved FEAT-SCH-003 by hooking into toggleScholar logic in study-client.tsx to enforce limit strictly via active states.
-- Resolved FEAT-SRC-001/003/004 by integrating sqlite worker pruning and edge index placeholders.
-- Resolved FEAT-SRC-005 by implementing search UI loader in search-client.
-
-### Additional Note
-- Study Client Scholar Selection logic already implemented limiting to max 2 `scholarSelection`. (FEAT-SCH-003)
