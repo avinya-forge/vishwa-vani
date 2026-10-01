@@ -159,7 +159,8 @@ def run_audit():
         if not books: lines.append("*No books in this stage.*\n")
         for b in books:
             alert = " ⚠️ (Contains Placeholders)" if b['has_placeholders'] else ""
-            lines.append(f"### {b['name']} {alert}\n**Readiness Score: {b['score']}%** {get_progress_bar(b['score'])}\n- **Slug:** `{b['slug']}` | **UI:** {b['ui']} | **Vedic Lab:** {b['lab']}\n- **Structural:** Chapters: `{b['progress']['chapters']}` | Verses: `{b['progress']['verses']}`\n- **Linguistic:** Layers: `{b['progress']['langs']}` | Authors: `{b['progress']['authors']}`\n> {b['description']}\n")
+            header = f"### {b['name']}{alert}".rstrip()
+            lines.append(f"{header}\n**Readiness Score: {b['score']}%** {get_progress_bar(b['score'])}\n- **Slug:** `{b['slug']}` | **UI:** {b['ui']} | **Vedic Lab:** {b['lab']}\n- **Structural:** Chapters: `{b['progress']['chapters']}` | Verses: `{b['progress']['verses']}`\n- **Linguistic:** Layers: `{b['progress']['langs']}` | Authors: `{b['progress']['authors']}`\n> {b['description']}\n")
     lines.append('---\n## 🛠️ Verification Methodology\n1. **Code View**: Actual unique verse IDs and layers counted from `data/` tiers.\n2. **Canonical View**: Measured against established targets.\n3. **Integrity Check**: Automatic detection of placeholder patterns.\n')
     with open('docs/PROJECT_STATUS.md', 'w') as f: f.write('\n'.join(lines))
     with open('.status', 'w') as f: json.dump(report, f, indent=2)
