@@ -808,7 +808,7 @@ export default function StudyClient({
                 id={`verse-${v.verse}`}
                 key={v.id as string}
                 ref={el => { verseRefs.current[v.verse as number] = el as HTMLElement | null }}
-                className="bg-white dark:bg-[#121212] rounded-2xl border border-stone-100 dark:border-stone-800/80 shadow-sm hover:shadow-md dark:shadow-none hover:border-orange-100 dark:hover:border-orange-900/50 transition-all duration-300 overflow-hidden"
+                className="bg-white dark:bg-[#121212] rounded-2xl border border-stone-200/80 dark:border-stone-800/80 shadow-sm hover:shadow-xl dark:shadow-none hover:border-amber-400/50 dark:hover:border-amber-800/50 transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-0.5 overflow-hidden"
               >
                 {/* Verse number badge */}
                 <div className="flex items-center justify-between px-4 sm:px-6 py-3 bg-stone-50 dark:bg-stone-900/40 border-b border-stone-100 dark:border-stone-800/50">

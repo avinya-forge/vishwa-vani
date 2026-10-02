@@ -20,25 +20,25 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 
 ### Phase 1: Categorical Identification & Scoping
 - [x] UI-REDES-000 **Categorical Page Audit**: Scan the entire codebase to categorically identify every single page, modal, and component that requires redesigning. Document the exact number of elements requiring modification into a redesign manifest.
-- [ ] UI-REDES-001 **Design System Alignment**: Audit the identified UI components against the design-taste.md principles. Remove generic AI gradients, default boilerplates, and define the exact replacement strategies.
+- [x] UI-REDES-001 **Design System Alignment**: Audit the identified UI components against the design-taste.md principles. Remove generic AI gradients, default boilerplates, and define the exact replacement strategies.
 
 ### Phase 2: Execution & Restyling
-- [ ] UI-REDES-002 **Typography & Alignment**: Implement CSS clamp for fluid scaling and ensure optical alignment of headers and text blocks across all identified pages.
-- [ ] UI-REDES-003 **Spatial Discipline**: Refactor spacing across identified components to adhere strictly to the 60-30-10 color balance and consistent tokenized grid spacing.
-- [ ] UI-REDES-004 **Micro-Interactions**: Introduce subtle hover/active states with cubic-bezier easing to enhance the premium feel of the app on all interactive elements.
-- [ ] UI-REDES-005 **Asymmetrical Layout Polish**: Adjust the main layouts (like the scripture reader grid) to break out of the standard 3-column monotony, introducing intentional asymmetrical focal points.
+- [x] UI-REDES-002 **Typography & Alignment**: Implement CSS clamp for fluid scaling and ensure optical alignment of headers and text blocks across all identified pages.
+- [x] UI-REDES-003 **Spatial Discipline**: Refactor spacing across identified components to adhere strictly to the 60-30-10 color balance and consistent tokenized grid spacing.
+- [x] UI-REDES-004 **Micro-Interactions**: Introduce subtle hover/active states with cubic-bezier easing to enhance the premium feel of the app on all interactive elements.
+- [x] UI-REDES-005 **Asymmetrical Layout Polish**: Adjust the main layouts (like the scripture reader grid) to break out of the standard 3-column monotony, introducing intentional asymmetrical focal points.
 
 ### Phase 3: Post-Redesign Audit & Stabilization
-- [ ] UI-REDES-006 **Comprehensive Bug Hunt**: Conduct a full sweep across all newly redesigned pages specifically hunting for layout breakages, responsive glitches, and accessibility contrast issues.
-- [ ] UI-REDES-007 **Bug Resolution Tracking**: Log any discovered bugs directly into Priority 0, and fix them prior to marking the UI Redesign epic complete.
+- [x] UI-REDES-006 **Comprehensive Bug Hunt**: Conduct a full sweep across all newly redesigned pages specifically hunting for layout breakages, responsive glitches, and accessibility contrast issues.
+- [x] UI-REDES-007 **Bug Resolution Tracking**: Log any discovered bugs directly into Priority 0, and fix them prior to marking the UI Redesign epic complete.
 
 ## Priority 2: Local Deployment & Demo Version (LAN)
 
 ### 1. Internal Demo Preparation
-- [ ] `DEMO-LOC-001` **Network Binding**: Configure Next.js/Vite server scripts to explicitly bind to `0.0.0.0` to permit same-WIFI network access.
-- [ ] `DEMO-LOC-002` **Demo Launch Script**: Write a `scripts/start-lan-demo.sh` script that verifies environment, builds the app, and serves it on the local network IP.
-- [ ] `DEMO-LOC-003` **Strict UI Gating Logic**: Implement a dynamic check in `lib/texts.ts` that enforces `available: false` (hides from UI) if the Readiness Score is < 100%. This ensures no incomplete book leaks into the LAN demo.
-- [ ] `DEMO-LOC-004` **Periodic Deploy Strategy**: Update CI/CD or local workflow docs to schedule automated LAN deployments at the end of every major completed phase (e.g., after UI Redesign).
+- [x] `DEMO-LOC-001` **Network Binding**: Configure Next.js/Vite server scripts to explicitly bind to `0.0.0.0` to permit same-WIFI network access.
+- [x] `DEMO-LOC-002` **Demo Launch Script**: Write a `scripts/start-lan-demo.sh` script that verifies environment, builds the app, and serves it on the local network IP.
+- [x] `DEMO-LOC-003` **Strict UI Gating Logic**: Implement a dynamic check in `lib/texts.ts` that enforces `available: false` (hides from UI) if the Readiness Score is < 100%. This ensures no incomplete book leaks into the LAN demo.
+- [x] `DEMO-LOC-004` **Periodic Deploy Strategy**: Update CI/CD or local workflow docs to schedule automated LAN deployments at the end of every major completed phase (e.g., after UI Redesign).
 
 ## Priority 3: Core Features (Vision Realization)
 

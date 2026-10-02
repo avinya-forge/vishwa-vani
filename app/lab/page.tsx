@@ -150,7 +150,7 @@ export default function VedicLabPage() {
                 <span className="w-8 h-[1px] bg-orange-500" />
                 <span className="text-[10px] font-black uppercase tracking-[0.5em] text-orange-600 dark:text-orange-500">Experimental Sanctum</span>
              </div>
-             <h1 className="text-6xl md:text-8xl font-serif font-black text-stone-900 dark:text-white leading-none tracking-tighter">Vedic Labs</h1>
+             <h1 className="text-[clamp(3.5rem,7vw,5.5rem)] font-serif font-black text-stone-900 dark:text-white leading-none tracking-tighter text-balance">Vedic Labs</h1>
              <p className="text-stone-500 dark:text-stone-400 text-lg md:text-xl font-medium leading-relaxed italic">
                 Translating ancient scriptural measurements and philosophical disciplines into interactive digital experience tokens.
              </p>

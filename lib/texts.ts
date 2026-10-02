@@ -480,14 +480,57 @@ export const VEDIC_LIBRARY: VedicText[] = [
 ]
 
 
+/** Map of scripture slugs to their audited readiness scores (%) */
+export const SCRIPTURE_READINESS_SCORES: Record<string, number> = {
+  'isha-upanishad': 100.0,
+  'kena-upanishad': 100.0,
+  'bhagavad-gita': 90.0,
+  'stotras': 60.42,
+  'mahabharata': 60.35,
+  'bhagavata-purana': 51.85,
+  'yoga-sutras': 45.03,
+  'vishnu-purana': 27.4,
+  'samskaras': 26.35,
+  'garuda-purana': 6.79,
+  'rigveda': 0.0,
+  'brahma-sutras': 0.0,
+  'manusmriti': 0.0,
+  'dasbodh': 0.0,
+  'samaveda': 0.0,
+  'yajurveda': 0.0,
+  'atharvaveda': 0.0,
+}
+
+/** Check if strict demo gating is enabled */
+export function isStrictDemoGatingEnabled(): boolean {
+  return process.env.STRICT_DEMO_GATING === 'true' || process.env.NEXT_PUBLIC_STRICT_DEMO === 'true';
+}
+
 /** Get a text by its URL slug */
 export function getTextBySlug(slug: string): VedicText | undefined {
-  return VEDIC_LIBRARY.find(t => t.slug === slug)
+  const text = VEDIC_LIBRARY.find(t => t.slug === slug);
+  if (!text) return undefined;
+  if (isStrictDemoGatingEnabled()) {
+    const score = SCRIPTURE_READINESS_SCORES[text.slug] ?? 0;
+    if (score < 100) {
+      return { ...text, available: false };
+    }
+  }
+  return text;
 }
 
 /** Get all currently available texts */
 export function getAvailableTexts(): VedicText[] {
-    return VEDIC_LIBRARY.filter(t => t.available)
+    const strictDemo = isStrictDemoGatingEnabled();
+    return VEDIC_LIBRARY
+      .map(t => {
+        if (strictDemo) {
+          const score = SCRIPTURE_READINESS_SCORES[t.slug] ?? 0;
+          if (score < 100) return { ...t, available: false };
+        }
+        return t;
+      })
+      .filter(t => t.available);
 }
 
 /** Get totals for all available texts */

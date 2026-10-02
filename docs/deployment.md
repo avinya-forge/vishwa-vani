@@ -117,3 +117,27 @@ Once live, verify these core production flows on your domain:
 2. **AI Synthesis (Live Gemini)**: Select two commentators and click "Synthesize" — confirm a fast, authentic AI summary returns from the production `gemini-2.0-flash` endpoint.
 3. **Database Performance**: Use search bar (e.g., "yoga" or "dharma") to confirm client-side SQLite WASM queries resolve in under 10ms.
 
+---
+
+## 💻 Local Area Network (LAN) Demo & Deployment Strategy (DEMO-LOC-001 to DEMO-LOC-004)
+
+For offline demonstrations or local network sharing across WiFi devices:
+
+### 1. Network Binding Configuration
+- **Dev Server**: `npm run dev:lan` binds `next dev` to `0.0.0.0`
+- **Production Server**: `npm run start:lan` binds `next start` to `0.0.0.0`
+
+### 2. Launching the Automated LAN Demo
+To build and launch the demo with strict readiness gating:
+```bash
+./scripts/start-lan-demo.sh
+```
+This script automatically:
+1. Verifies local Node.js and npm installations.
+2. Detects the host machine's local IPv4 network address (e.g., `192.168.1.50`).
+3. Sets `STRICT_DEMO_GATING=true` so only scriptures at 100% readiness score (e.g., Isha & Kena Upanishads) are exposed in the UI.
+4. Compiles the Next.js production build and starts the HTTP server bound to `0.0.0.0:3000`.
+
+### 3. Periodic LAN Deployment Strategy
+- **Cadence**: Trigger `./scripts/start-lan-demo.sh` at the end of every completed epic or sprint (e.g., after UI Redesign or content promotions).
+- **Strict UI Gating Gate**: Ensures incomplete or draft data sets never leak to external stakeholders or local demo audiences.
