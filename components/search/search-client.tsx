@@ -99,9 +99,9 @@ export default function SearchClient() {
     <div className="max-wide px-6 py-12 md:py-20 min-h-screen bg-[#FDFBF7] dark:bg-[#1C1917]">
       <div className="max-w-4xl mx-auto mb-12">
         <header className="mb-10">
-          <span className="label-bold text-orange-600 mb-4 block">Universal Search</span>
-          <h1 className="text-4xl md:text-5xl font-serif font-black text-stone-900 dark:text-stone-100 mb-6 flex items-center gap-4">
-             Explore the Vedic Wikipedia
+          <span className="label-bold text-amber-600 dark:text-amber-400 mb-4 block">Universal Search</span>
+          <h1 className="text-[clamp(2.25rem,4vw+1rem,3.5rem)] font-serif font-black text-stone-900 dark:text-stone-100 mb-6 flex items-center gap-4 text-balance">
+             Explore the <span className="text-amber-600 dark:text-amber-400">Vedic Wikipedia</span>
           </h1>
         </header>
         
@@ -178,9 +178,9 @@ export default function SearchClient() {
                 <Link 
                   key={idx}
                   href={`/${result.textSlug}/${result.chapter}#verse-${result.verse}`}
-                  className="block group"
+                  className="block group transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-0.5"
                 >
-                  <div className="card-premium p-8 bg-white/60 dark:bg-stone-900/60 dark:border-stone-800">
+                  <div className="card-premium p-8 bg-white/60 dark:bg-stone-900/60 border border-stone-200/80 dark:border-stone-800 group-hover:border-amber-400/50 dark:group-hover:border-amber-700/50 rounded-2xl shadow-sm group-hover:shadow-xl transition-all">
                     <div className="flex justify-between items-start mb-4">
                       <span className="label-bold !text-[11px] text-orange-600 dark:text-orange-400 bg-orange-50 dark:bg-orange-950/40 px-3 py-1 rounded-lg border border-orange-100 dark:border-orange-900">
                         {meta?.name || result.textSlug} · Chapter {result.chapter} · Verse {result.verse}

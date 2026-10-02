@@ -34,8 +34,8 @@ export default async function Home() {
           Eternal Wisdom · Open Access
         </div>
 
-        <h1 className="text-4xl sm:text-5xl md:text-7xl font-serif font-black text-stone-900 dark:text-stone-100 leading-[1.1] tracking-tight mb-6">
-          The Universal Portal to <span className="bg-gradient-to-r from-orange-600 to-orange-400 bg-clip-text text-transparent">Vedic Wisdom</span>
+        <h1 className="text-[clamp(2.25rem,5vw+1rem,4.5rem)] font-serif font-black text-stone-900 dark:text-stone-100 leading-[1.1] tracking-tight mb-6 text-balance">
+          The Universal Portal to <span className="text-amber-600 dark:text-amber-400">Vedic Wisdom</span>
         </h1>
 
         <p className="text-lg md:text-xl text-stone-600 dark:text-stone-400 max-w-3xl mx-auto leading-relaxed font-serif italic mb-10 opacity-80">
@@ -46,7 +46,7 @@ export default async function Home() {
           <BeginReadingButton />
           <Link
             href="/lab"
-            className="inline-flex items-center gap-3 px-8 py-4 bg-white hover:bg-orange-50 dark:bg-stone-900 dark:hover:bg-orange-950/30 text-stone-900 dark:text-stone-100 font-black rounded-2xl border border-stone-200 dark:border-stone-800 hover:border-orange-200 transition-all text-[11px] uppercase tracking-widest shadow-sm"
+            className="inline-flex items-center gap-3 px-8 py-4 bg-white hover:bg-amber-50/50 dark:bg-stone-900 dark:hover:bg-amber-950/30 text-stone-900 dark:text-stone-100 font-black rounded-2xl border border-stone-200 dark:border-stone-800 hover:border-amber-400/40 transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-0.5 text-[11px] uppercase tracking-widest shadow-sm"
           >
             <span>🧪</span> Explore Labs
           </Link>
@@ -125,8 +125,8 @@ function BookCard({ book, locale }: { book: Record<string, unknown>, locale: str
   const childBooks = book.children ? (book.children as string[]).map((slug: string) => VEDIC_LIBRARY.find(b => b.slug === slug)).filter(Boolean) : []
 
   return (
-    <div className={`group relative bg-white dark:bg-stone-900 rounded-xl border border-stone-100 dark:border-stone-800 overflow-hidden transition-all duration-300 flex flex-col h-full
-      ${isAvailable ? 'hover:border-orange-200 dark:hover:border-orange-800 hover:shadow-lg hover:shadow-orange-50/50 dark:hover:shadow-orange-900/20' : 'opacity-60 pointer-events-none grayscale'}`}
+    <div className={`group relative bg-white dark:bg-stone-900/80 rounded-xl border border-stone-200/80 dark:border-stone-800 overflow-hidden transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] flex flex-col h-full
+      ${isAvailable ? 'hover:border-amber-400/50 dark:hover:border-amber-700/50 hover:shadow-xl hover:-translate-y-1' : 'opacity-60 pointer-events-none grayscale'}`}
     >
       <div className="absolute top-0 left-0 right-0 h-0.5 bg-orange-600 opacity-0 group-hover:opacity-100 transition-opacity" />
 

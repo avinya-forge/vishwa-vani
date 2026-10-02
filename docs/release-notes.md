@@ -1,3 +1,16 @@
+## [1.2.1] - 2026-08-08
+
+### 🎨 UI Redesign & Design System Alignment (UI-REDES-001 to UI-REDES-007)
+- [x] `UI-REDES-001` **Master Design System**: Created `design-system/MASTER.md` establishing 60-30-10 color balance, fluid clamp typography, cubic-bezier micro-interactions, and warm stone/amber aesthetics.
+- [x] `UI-REDES-002` to `UI-REDES-005` **Page Restyling**: Restyled landing page (`app/page.tsx`), reader component (`components/shloka/study-client.tsx`), search view (`components/search/search-client.tsx`), and lab view (`app/lab/page.tsx`) with fluid typography (`clamp()`), text balance, asymmetrical bento layouts, and smooth cubic-bezier hover states.
+- [x] `UI-REDES-006` & `UI-REDES-007` **Stabilization & Bug Hunt**: Swept all redesigned pages for responsive and contrast issues. Added comprehensive Jest tests for strict UI gating.
+
+### 🌐 Local Area Network (LAN) Deployment & Demo (DEMO-LOC-001 to DEMO-LOC-004)
+- [x] `DEMO-LOC-001` **Network Binding**: Added `dev:lan` (`next dev -H 0.0.0.0`) and `start:lan` (`next start -H 0.0.0.0`) binding scripts to `package.json`.
+- [x] `DEMO-LOC-002` **Demo Launch Script**: Created executable `scripts/start-lan-demo.sh` to verify Node environment, detect local IPv4 address, enable strict UI gating, compile build, and launch production server bound to `0.0.0.0:3000`.
+- [x] `DEMO-LOC-003` **Strict UI Gating**: Implemented readiness-score gating in `lib/texts.ts`. Under `STRICT_DEMO_GATING=true` or `NEXT_PUBLIC_STRICT_DEMO=true`, scriptures with < 100% readiness (such as Gita or Mahabharata) are automatically gated out from UI display, exposing only fully verified scriptures (Isha & Kena Upanishads).
+- [x] `DEMO-LOC-004` **Deployment Documentation**: Expanded `docs/deployment.md` with LAN demo execution instructions and periodic deployment guidelines.
+
 ## [1.2.0] - 2026-08-06
 
 ### 🏛️ Data Operations & Crawler Infrastructure
