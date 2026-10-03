@@ -6,6 +6,7 @@ const withNextIntl = createNextIntlPlugin('./i18n/request.ts');
 const nextConfig: NextConfig = {
   // output: 'export', // Disabled for API functionality
   devIndicators: false,
+  serverExternalPackages: ['better-sqlite3', 'sqlite3'],
   images: {
     unoptimized: true,
   },
