@@ -32,7 +32,7 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 - [x] UI-REDES-006 **Comprehensive Bug Hunt**: Conduct a full sweep across all newly redesigned pages specifically hunting for layout breakages, responsive glitches, and accessibility contrast issues.
 - [x] UI-REDES-007 **Bug Resolution Tracking**: Log any discovered bugs directly into Priority 0, and fix them prior to marking the UI Redesign epic complete.
 
-## Priority 2: Local Deployment & Demo Version (LAN)
+## Priority 3: Local Deployment & Demo Version (LAN)
 
 ### 1. Internal Demo Preparation
 - [x] `DEMO-LOC-001` **Network Binding**: Configure Next.js/Vite server scripts to explicitly bind to `0.0.0.0` to permit same-WIFI network access.
@@ -40,7 +40,7 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 - [x] `DEMO-LOC-003` **Strict UI Gating Logic**: Implement a dynamic check in `lib/texts.ts` that enforces `available: false` (hides from UI) if the Readiness Score is < 100%. This ensures no incomplete book leaks into the LAN demo.
 - [x] `DEMO-LOC-004` **Periodic Deploy Strategy**: Update CI/CD or local workflow docs to schedule automated LAN deployments at the end of every major completed phase (e.g., after UI Redesign).
 
-## Priority 3: Core Features (Vision Realization)
+## Priority 4: Core Features (Vision Realization)
 
 ### 1. Semantic Deep-Linking Protocol (Ontological Knowledge Graph)
 - [x] `FEAT-SEM-001` **Define Tattva Ontology Schema**: Define a JSON schema (`types/ontology.ts`) for global semantic concepts (Tattvas) such as "Dharma", "Brahman", "Atman", and "Karma" mapped to scripture coordinates.
@@ -71,7 +71,7 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 
 ---
 
-## Priority 4: Content (Organic Interleaved Progression)
+## Priority 2: Content Acquisition & Pipeline Tasks
 *Strategy: 1) Push 85%+ books to completion (e.g., Bhagavad Gita). 2) **The 10% Epic Rule**: To prevent massive books from stagnating, every time a small/medium book reaches 100%, we immediately execute a 10% progression block on one of the Massive Epics (Mahabharata, Bhagavatam, etc.) before starting the next small book.*
 
 ### Execution Sequence (The Organic Queue)
@@ -107,120 +107,14 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 - [ ] `GITA-SCH-PARSE` **Parse and Enrich Commentary Layers**: Run `scripts/parse_scholar_bhasya.js` to structure the newly acquired scholars into the NVF format.
 - [ ] `GITA-SCH-INTEGRATE` **Promote Enriched Scholars**: Merge the parsed commentary layers into the Gita Gold shards and verify in the UI.
 
-### 4. Yoga Sutras of Patanjali [Readiness Score: 45.03%] (GOLD | UI HIDDEN | LAB INTEGRATED)
-*Canonical Targets: 4 Chapters | 196 Verses | Target Authors: 2+ (Actual: 1) | Target Languages: 4 (sa, en, hi, mr) | Vedic Lab: Integrated | Pipeline Stage: GOLD*
-- **Pada 1: Samadhi Pada [51 Sutras]**
-  - [x] `YOGA-PADA1-INIT` **Initial Pada 1 Ingestion**: 10 gold sutras ingested.
-  - [ ] `YOGA-PADA1-GAP` **Complete Pada 1**: Acquire remaining 41 sutras.
-- **Pada 2: Sadhana Pada [55 Sutras]**
-  - [ ] `YOGA-PADA2-ACQ` **Acquire Pada 2**: Ingest Sanskrit, IAST, Vivekananda & Vyasa translations.
-- **Pada 3: Vibhuti Pada [56 Sutras]**
-  - [ ] `YOGA-PADA3-ACQ` **Acquire Pada 3**: Ingest core text and comments.
-- **Pada 4: Kaivalya Pada [34 Sutras]**
-  - [ ] `YOGA-PADA4-ACQ` **Acquire Pada 4**: Ingest final pada.
-- **Consolidation**
-  - [ ] `YOGA-PROM` **Promote Yoga Sutras**: Move entire 196 sutras to Gold with min 2 author commentaries.
-
-### 5. Brahma Sutras [Readiness Score: 0.0%] (BRONZE | UI HIDDEN | LAB PENDING)
-*Canonical Targets: 4 Adhyayas | 555 Sutras | Target Authors: 2+ | Target Languages: 3+ (sa, en, hi) | Vedic Lab: Pending | Pipeline Stage: BRONZE*
-- [ ] `BRAHMA-DATA-ACQ` **Ingest Core Sutras**: Gather 555 sutras, IAST transliterations, Shankara & Ramanuja bhashyas.
-- [ ] `BRAHMA-LAB` **Vedic Lab Component**: Build Brahma Sutras Adhikari & Nyaya Explorer.
-- [ ] `BRAHMA-DATA-PROM` **Promote Brahma Sutras**: Move from Bronze to Gold and enable in UI.
-
-### 6. Stotras & Stuties [Readiness Score: 60.42%] (GOLD | UI HIDDEN | LAB INTEGRATED)
+### 4. Stotras & Stuties [Readiness Score: 60.42%] (GOLD | UI HIDDEN | LAB INTEGRATED)
 *Canonical Targets: 100 Chapters | 1,000 Verses | Target Authors: 2+ (Actual: 4) | Target Languages: 4 (sa, en, hi, mr) | Vedic Lab: Integrated | Pipeline Stage: GOLD*
 - [x] `STOTRAS-BASE-ACQ` **Acquire Initial Hymn Collection**: Ingest initial 17 stotras/verses.
 - [ ] `STOTRAS-DATA-GAP` **Identify Target Hymns**: Define the exact list of stotras needed to reach the target 100 chapters and 1000 verses.
 - [ ] `STOTRAS-DATA-ACQ` **Acquire Multilingual Stotra Layers**: Gather Sanskrit, transliteration, English, Hindi, and Marathi layers.
 - [ ] `STOTRAS-DATA-PROM` **Promote and Register Stotras**: Run promotion pipeline and update UI cards.
 
-### 7. Samaveda Samhita [Readiness Score: 0.0%] (BRONZE | UI HIDDEN | LAB PENDING)
-*Canonical Targets: 2 Chapters | 1,875 Verses | Target Authors: 2+ | Target Languages: 3+ (sa, en, hi) | Vedic Lab: Pending | Pipeline Stage: BRONZE*
-- [ ] `SAMAVEDA-DATA-ACQ` **Gather Hymns**: Ingest 1,875 melodies, musical notation, and translations.
-- [ ] `SAMAVEDA-LAB` **Vedic Lab Component**: Build Sama Gana Musical Pitch & Melody Analyzer.
-- [ ] `SAMAVEDA-DATA-PROM` **Promote Samaveda**: Promote to Gold and enable in UI.
-
-### 8. Yajurveda Samhita [Readiness Score: 0.0%] (BRONZE | UI HIDDEN | LAB PENDING)
-*Canonical Targets: 40 Chapters | 1,975 Verses | Target Authors: 2+ | Target Languages: 3+ (sa, en, hi) | Vedic Lab: Pending | Pipeline Stage: BRONZE*
-- [ ] `YAJURVEDA-DATA-ACQ` **Gather Ritual Mantras**: Ingest 1,975 verses across 40 chapters (Shukla/Krishna Yajurveda).
-- [ ] `YAJURVEDA-LAB` **Vedic Lab Component**: Build Yajna Ritual Mapping System.
-- [ ] `YAJURVEDA-DATA-PROM` **Promote Yajurveda**: Promote to Gold and enable in UI.
-
-### 9. Manusmriti [Readiness Score: 0.0%] (BRONZE | UI HIDDEN | LAB PENDING)
-*Canonical Targets: 12 Chapters | 2,684 Verses | Target Authors: 2+ | Target Languages: 3+ (sa, en, hi) | Vedic Lab: Pending | Pipeline Stage: BRONZE*
-- [ ] `MANUSMRITI-DATA-ACQ` **Gather Sanskrit Text**: Ingest 2,684 verses across 12 chapters with Kulluka Bhatta commentary.
-- [ ] `MANUSMRITI-LAB` **Vedic Lab Component**: Build Ancient Jurisprudence Matrix.
-- [ ] `MANUSMRITI-DATA-PROM` **Promote Manusmriti**: Promote to Gold and enable in UI.
-
-### 10. Atharvaveda Samhita [Readiness Score: 0.0%] (BRONZE | UI HIDDEN | LAB PENDING)
-*Canonical Targets: 20 Kandas | 5,977 Verses | Target Authors: 2+ | Target Languages: 3+ (sa, en, hi) | Vedic Lab: Pending | Pipeline Stage: BRONZE*
-- [ ] `ATHARVAVEDA-DATA-ACQ` **Gather Formulas**: Ingest 5,977 verses across 20 kandas with ancient botanical/healing notes.
-- [ ] `ATHARVAVEDA-LAB` **Vedic Lab Component**: Build Vedic Healing & Botanical Formulary Lab.
-- [ ] `ATHARVAVEDA-DATA-PROM` **Promote Atharvaveda**: Promote to Gold and enable in UI.
-
----
-
-### 11. Vishnu Purana [Readiness Score: 27.4%] (SILVER | UI HIDDEN | LAB INTEGRATED)
-*Canonical Targets: 126 Chapters | 7,000 Verses | Target Authors: 2+ (Actual: 0) | Target Languages: 3+ (sa, en, hi) | Vedic Lab: Integrated | Pipeline Stage: SILVER*
-- [x] `VISHNU-INIT` **Initial Shard Ingestion**: 6 sample chapters ingested in Silver tier.
-- **Amsha 1 [22 Chapters]**: [ ] `VISHNU-AM1-ACQ` Ingest Sanskrit text and H.H. Wilson English translation.
-- **Amsha 2 [16 Chapters]**: [ ] `VISHNU-AM2-ACQ` Retrieve core verses and translate.
-- **Amsha 3 [18 Chapters]**: [ ] `VISHNU-AM3-ACQ` Ingest core chapters.
-- **Amsha 4 [24 Chapters]**: [ ] `VISHNU-AM4-ACQ` Process historical dynastic chapters.
-- **Amsha 5 [38 Chapters]**: [ ] `VISHNU-AM5-ACQ` Retrieve Krishna's pastimes chapters.
-- **Amsha 6 [8 Chapters]**: [ ] `VISHNU-AM6-ACQ` Ingest final book chapters.
-- **Consolidation**: [ ] `VISHNU-PROM` Run validation and promote all 6 Amshas to Gold with min 2 authors.
-
-### 12. Dasbodh [Readiness Score: 0.0%] (BRONZE | UI HIDDEN | LAB PENDING)
-*Canonical Targets: 20 Dashakas | 7,751 Ovis/Verses | Target Authors: 2+ | Target Languages: 3+ (sa, mr, hi) | Vedic Lab: Pending | Pipeline Stage: BRONZE*
-- [ ] `DASBODH-DATA-ACQ` **Ingest Samarth Ramdas Text**: Source Marathi text, English, and Hindi translations for 7,751 verses across 20 Dashakas.
-- [ ] `DASBODH-LAB` **Vedic Lab Component**: Build Practical Wisdom & Governance Guide.
-- [ ] `DASBODH-DATA-PROM` **Promote Dasbodh**: Move to Gold and enable in UI.
-
-### 13. Rigveda Samhita [Readiness Score: 0.0%] (BRONZE | UI HIDDEN | LAB PENDING)
-*Canonical Targets: 10 Mandalas | 10,552 Verses | Target Authors: 2+ | Target Languages: 3+ (sa, en, hi) | Vedic Lab: Pending | Pipeline Stage: BRONZE*
-- [ ] `RIGVEDA-DATA-ACQ` **Acquire Bronze Core**: Ingest raw Sanskrit text and translations for 10 mandalas.
-- [ ] `RIGVEDA-LAB` **Vedic Lab Component**: Develop Rigveda Vedic Meter & Recitation Lab.
-- [ ] `RIGVEDA-DATA-PROM` **Promote Rigveda**: Establish Gold schema, manifest registration, enable UI.
-
-### 14. Srimad Bhagavatam (12 Cantos) [Readiness Score: 51.85%] (GOLD | UI HIDDEN | LAB INTEGRATED)
-*Canonical Targets: 335 Chapters | 18,000 Verses | Target Authors: 2+ (Actual: 2) | Target Languages: 4 (sa, en, hi, mr) | Vedic Lab: Integrated | Pipeline Stage: GOLD*
-- **Canto 1: Creation [19 Chapters, 811 Verses]** (Already GOLD)
-  - [x] `BHAG-CANTO1-AUDIT` **Verify Canto 1**: Deep quality check on 19 chapters (718 verses ingested).
-- **Canto 2: Cosmic Manifestation [10 Chapters, 393 Verses]**
-  - [ ] `BHAG-CANTO2-ACQ` **Acquire Canto 2**: Ingest Sanskrit, Prabhupada English translation, and AI metadata.
-  - [ ] `BHAG-CANTO2-PROM` **Promote Canto 2**: Validate and promote Canto 2 to Gold tier.
-- **Canto 3: Status Quo [33 Chapters, 1428 Verses]**
-  - [ ] `BHAG-CANTO3-ACQ` **Acquire Canto 3**: Retrieve all 33 chapters and structure in NVF.
-  - [ ] `BHAG-CANTO3-PROM` **Promote Canto 3**: Run promotion pipeline.
-- **Canto 4: Creation of Fourth Order [31 Chapters, 1490 Verses]**
-  - [ ] `BHAG-CANTO4-ACQ` **Acquire Canto 4**: Process Sanskrit text and english purports.
-- **Canto 5: Creative Impetus [26 Chapters, 666 Verses]**
-  - [ ] `BHAG-CANTO5-ACQ` **Acquire Canto 5**: Parse cosmology, geography, and verses.
-- **Canto 6: Prescribed Duties for Mankind [19 Chapters, 851 Verses]**
-  - [ ] `BHAG-CANTO6-ACQ` **Acquire Canto 6**: Structure chapters and translations.
-- **Canto 7: Science of God [15 Chapters, 750 Verses]**
-  - [ ] `BHAG-CANTO7-ACQ` **Acquire Canto 7**: Parse dialogues of Prahlada Maharaja.
-- **Canto 8: Withdrawal of Cosmic Creations [24 Chapters, 743 Verses]**
-  - [ ] `BHAG-CANTO8-ACQ` **Acquire Canto 8**: Process text of Gajendra and Kurma Avatara.
-- **Canto 9: Liberation [24 Chapters, 960 Verses]**
-  - [ ] `BHAG-CANTO9-ACQ` **Acquire Canto 9**: Process dynasties of Surya and Chandra.
-- **Canto 10: Summum Bonum [90 Chapters, 3946 Verses]**
-  - [ ] `BHAG-CANTO10-ACQ` **Acquire Canto 10**: Ingest the largest Canto (Life of Krishna) in batches.
-- **Canto 11: General History [31 Chapters, 1367 Verses]**
-  - [ ] `BHAG-CANTO11-ACQ` **Acquire Canto 11**: Parse Uddhava Gita and final pastimes.
-- **Canto 12: Age of Deterioration [13 Chapters, 565 Verses]**
-  - [ ] `BHAG-CANTO12-ACQ` **Acquire Canto 12**: Parse Kali-yuga symptoms and conclusion.
-
-### 15. Garuda Purana [Readiness Score: 6.79%] (SILVER | UI HIDDEN | LAB PENDING)
-*Canonical Targets: 250 Chapters | 19,000 Verses | Target Authors: 2+ (Actual: 0) | Target Languages: 3+ (sa, en, hi) | Vedic Lab: Pending | Pipeline Stage: SILVER*
-- [x] `GARUDA-INIT` **Initial Silver Ingestion**: Ingested 2 chapters in Silver tier.
-- [ ] `GARUDA-DATA-GAP` **Identify Missing Chapters**: Map remaining 248 chapters.
-- [ ] `GARUDA-DATA-ACQ` **Gather Legally Cleared Layers**: Source authentic data layers and AI metadata across Achara and Preta Khandas.
-- [ ] `GARUDA-LAB` **Vedic Lab Component**: Build Garuda Purana afterlife cosmology explorer.
-- [ ] `GARUDA-DATA-PROM` **Promote Garuda Purana**: Enable in UI (`available: true`) and promote from Silver to Gold.
-
-### 16. Mahabharata (All 18 Parvas) [Readiness Score: 60.35%] (GOLD | UI HIDDEN | LAB INTEGRATED)
+### 5. Mahabharata (All 18 Parvas) [Readiness Score: 60.35%] (GOLD | UI HIDDEN | LAB INTEGRATED)
 *Canonical Targets: 2,115 Chapters | 100,000 Verses | Target Authors: 2+ (Actual: 2) | Target Languages: 3+ (sa, en) | Vedic Lab: Integrated | Pipeline Stage: GOLD*
 - **Parva 1: Adi Parva [225 Chapters, 7984 Verses]**
   - [x] `MBH-PARV1-GAP` **Verify Parva 1 Missing Layers**: Gather English, Hindi, and Marathi translations, transliterations, and AI metadata.
@@ -264,7 +158,61 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 - **Whole Book Consolidation & SQLite Indexing**
   - [ ] `MBH-CONSOLIDATE-DB` **Consolidate 18 Parvas in SQLite**: Index all 100,000 verses together in `itihasa-lake.db`.
 
-### 17. 16 Samskaras (Ritual Handbook) [Readiness Score: 26.35%] (SILVER | UI HIDDEN | LAB PENDING)
+### 6. Srimad Bhagavatam (12 Cantos) [Readiness Score: 51.85%] (GOLD | UI HIDDEN | LAB INTEGRATED)
+*Canonical Targets: 335 Chapters | 18,000 Verses | Target Authors: 2+ (Actual: 2) | Target Languages: 4 (sa, en, hi, mr) | Vedic Lab: Integrated | Pipeline Stage: GOLD*
+- **Canto 1: Creation [19 Chapters, 811 Verses]** (Already GOLD)
+  - [x] `BHAG-CANTO1-AUDIT` **Verify Canto 1**: Deep quality check on 19 chapters (718 verses ingested).
+- **Canto 2: Cosmic Manifestation [10 Chapters, 393 Verses]**
+  - [ ] `BHAG-CANTO2-ACQ` **Acquire Canto 2**: Ingest Sanskrit, Prabhupada English translation, and AI metadata.
+  - [ ] `BHAG-CANTO2-PROM` **Promote Canto 2**: Validate and promote Canto 2 to Gold tier.
+- **Canto 3: Status Quo [33 Chapters, 1428 Verses]**
+  - [ ] `BHAG-CANTO3-ACQ` **Acquire Canto 3**: Retrieve all 33 chapters and structure in NVF.
+  - [ ] `BHAG-CANTO3-PROM` **Promote Canto 3**: Run promotion pipeline.
+- **Canto 4: Creation of Fourth Order [31 Chapters, 1490 Verses]**
+  - [ ] `BHAG-CANTO4-ACQ` **Acquire Canto 4**: Process Sanskrit text and english purports.
+- **Canto 5: Creative Impetus [26 Chapters, 666 Verses]**
+  - [ ] `BHAG-CANTO5-ACQ` **Acquire Canto 5**: Parse cosmology, geography, and verses.
+- **Canto 6: Prescribed Duties for Mankind [19 Chapters, 851 Verses]**
+  - [ ] `BHAG-CANTO6-ACQ` **Acquire Canto 6**: Structure chapters and translations.
+- **Canto 7: Science of God [15 Chapters, 750 Verses]**
+  - [ ] `BHAG-CANTO7-ACQ` **Acquire Canto 7**: Parse dialogues of Prahlada Maharaja.
+- **Canto 8: Withdrawal of Cosmic Creations [24 Chapters, 743 Verses]**
+  - [ ] `BHAG-CANTO8-ACQ` **Acquire Canto 8**: Process text of Gajendra and Kurma Avatara.
+- **Canto 9: Liberation [24 Chapters, 960 Verses]**
+  - [ ] `BHAG-CANTO9-ACQ` **Acquire Canto 9**: Process dynasties of Surya and Chandra.
+- **Canto 10: Summum Bonum [90 Chapters, 3946 Verses]**
+  - [ ] `BHAG-CANTO10-ACQ` **Acquire Canto 10**: Ingest the largest Canto (Life of Krishna) in batches.
+- **Canto 11: General History [31 Chapters, 1367 Verses]**
+  - [ ] `BHAG-CANTO11-ACQ` **Acquire Canto 11**: Parse Uddhava Gita and final pastimes.
+- **Canto 12: Age of Deterioration [13 Chapters, 565 Verses]**
+  - [ ] `BHAG-CANTO12-ACQ` **Acquire Canto 12**: Parse Kali-yuga symptoms and conclusion.
+
+### 7. Yoga Sutras of Patanjali [Readiness Score: 45.03%] (GOLD | UI HIDDEN | LAB INTEGRATED)
+*Canonical Targets: 4 Chapters | 196 Verses | Target Authors: 2+ (Actual: 1) | Target Languages: 4 (sa, en, hi, mr) | Vedic Lab: Integrated | Pipeline Stage: GOLD*
+- **Pada 1: Samadhi Pada [51 Sutras]**
+  - [x] `YOGA-PADA1-INIT` **Initial Pada 1 Ingestion**: 10 gold sutras ingested.
+  - [ ] `YOGA-PADA1-GAP` **Complete Pada 1**: Acquire remaining 41 sutras.
+- **Pada 2: Sadhana Pada [55 Sutras]**
+  - [ ] `YOGA-PADA2-ACQ` **Acquire Pada 2**: Ingest Sanskrit, IAST, Vivekananda & Vyasa translations.
+- **Pada 3: Vibhuti Pada [56 Sutras]**
+  - [ ] `YOGA-PADA3-ACQ` **Acquire Pada 3**: Ingest core text and comments.
+- **Pada 4: Kaivalya Pada [34 Sutras]**
+  - [ ] `YOGA-PADA4-ACQ` **Acquire Pada 4**: Ingest final pada.
+- **Consolidation**
+  - [ ] `YOGA-PROM` **Promote Yoga Sutras**: Move entire 196 sutras to Gold with min 2 author commentaries.
+
+### 8. Vishnu Purana [Readiness Score: 27.4%] (SILVER | UI HIDDEN | LAB INTEGRATED)
+*Canonical Targets: 126 Chapters | 7,000 Verses | Target Authors: 2+ (Actual: 0) | Target Languages: 3+ (sa, en, hi) | Vedic Lab: Integrated | Pipeline Stage: SILVER*
+- [x] `VISHNU-INIT` **Initial Shard Ingestion**: 6 sample chapters ingested in Silver tier.
+- **Amsha 1 [22 Chapters]**: [ ] `VISHNU-AM1-ACQ` Ingest Sanskrit text and H.H. Wilson English translation.
+- **Amsha 2 [16 Chapters]**: [ ] `VISHNU-AM2-ACQ` Retrieve core verses and translate.
+- **Amsha 3 [18 Chapters]**: [ ] `VISHNU-AM3-ACQ` Ingest core chapters.
+- **Amsha 4 [24 Chapters]**: [ ] `VISHNU-AM4-ACQ` Process historical dynastic chapters.
+- **Amsha 5 [38 Chapters]**: [ ] `VISHNU-AM5-ACQ` Retrieve Krishna's pastimes chapters.
+- **Amsha 6 [8 Chapters]**: [ ] `VISHNU-AM6-ACQ` Ingest final book chapters.
+- **Consolidation**: [ ] `VISHNU-PROM` Run validation and promote all 6 Amshas to Gold with min 2 authors.
+
+### 9. 16 Samskaras (Ritual Handbook) [Readiness Score: 26.35%] (SILVER | UI HIDDEN | LAB PENDING)
 *Canonical Targets: 1 Chapter | 16 Verses/Rituals | Target Authors: 2+ (Actual: 0) | Target Languages: 3+ (sa, hi, mr) | Vedic Lab: Pending | Pipeline Stage: SILVER*
 - [x] `SAMSKARAS-INIT` **Initial Ritual Ingestion**: 3 ritual procedures ingested in Silver tier.
 - [ ] `SAMSKARAS-1-TO-16` **Acquire All 16 Samskaras**: Detail, translate, and source Sanskrit mantras for all 16 rituals:
@@ -287,13 +235,66 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 - [ ] `SAMSKARAS-LAB` **Vedic Lab Component**: Build interactive Samskara ritual guide in Vedic Lab.
 - [ ] `SAMSKARAS-PROM` **Validate & Promote Samskaras**: Enable in UI (`available: true`) and move to Gold.
 
-## Priority 5: Pipeline
+### 10. Garuda Purana [Readiness Score: 6.79%] (SILVER | UI HIDDEN | LAB PENDING)
+*Canonical Targets: 250 Chapters | 19,000 Verses | Target Authors: 2+ (Actual: 0) | Target Languages: 3+ (sa, en, hi) | Vedic Lab: Pending | Pipeline Stage: SILVER*
+- [x] `GARUDA-INIT` **Initial Silver Ingestion**: Ingested 2 chapters in Silver tier.
+- [ ] `GARUDA-DATA-GAP` **Identify Missing Chapters**: Map remaining 248 chapters.
+- [ ] `GARUDA-DATA-ACQ` **Gather Legally Cleared Layers**: Source authentic data layers and AI metadata across Achara and Preta Khandas.
+- [ ] `GARUDA-LAB` **Vedic Lab Component**: Build Garuda Purana afterlife cosmology explorer.
+- [ ] `GARUDA-DATA-PROM` **Promote Garuda Purana**: Enable in UI (`available: true`) and promote from Silver to Gold.
+
+### 11. Brahma Sutras [Readiness Score: 0.0%] (BRONZE | UI HIDDEN | LAB PENDING)
+*Canonical Targets: 4 Adhyayas | 555 Sutras | Target Authors: 2+ | Target Languages: 3+ (sa, en, hi) | Vedic Lab: Pending | Pipeline Stage: BRONZE*
+- [ ] `BRAHMA-DATA-ACQ` **Ingest Core Sutras**: Gather 555 sutras, IAST transliterations, Shankara & Ramanuja bhashyas.
+- [ ] `BRAHMA-LAB` **Vedic Lab Component**: Build Brahma Sutras Adhikari & Nyaya Explorer.
+- [ ] `BRAHMA-DATA-PROM` **Promote Brahma Sutras**: Move from Bronze to Gold and enable in UI.
+
+### 12. Samaveda Samhita [Readiness Score: 0.0%] (BRONZE | UI HIDDEN | LAB PENDING)
+*Canonical Targets: 2 Chapters | 1,875 Verses | Target Authors: 2+ | Target Languages: 3+ (sa, en, hi) | Vedic Lab: Pending | Pipeline Stage: BRONZE*
+- [ ] `SAMAVEDA-DATA-ACQ` **Gather Hymns**: Ingest 1,875 melodies, musical notation, and translations.
+- [ ] `SAMAVEDA-LAB` **Vedic Lab Component**: Build Sama Gana Musical Pitch & Melody Analyzer.
+- [ ] `SAMAVEDA-DATA-PROM` **Promote Samaveda**: Promote to Gold and enable in UI.
+
+### 13. Yajurveda Samhita [Readiness Score: 0.0%] (BRONZE | UI HIDDEN | LAB PENDING)
+*Canonical Targets: 40 Chapters | 1,975 Verses | Target Authors: 2+ | Target Languages: 3+ (sa, en, hi) | Vedic Lab: Pending | Pipeline Stage: BRONZE*
+- [ ] `YAJURVEDA-DATA-ACQ` **Gather Ritual Mantras**: Ingest 1,975 verses across 40 chapters (Shukla/Krishna Yajurveda).
+- [ ] `YAJURVEDA-LAB` **Vedic Lab Component**: Build Yajna Ritual Mapping System.
+- [ ] `YAJURVEDA-DATA-PROM` **Promote Yajurveda**: Promote to Gold and enable in UI.
+
+### 14. Manusmriti [Readiness Score: 0.0%] (BRONZE | UI HIDDEN | LAB PENDING)
+*Canonical Targets: 12 Chapters | 2,684 Verses | Target Authors: 2+ | Target Languages: 3+ (sa, en, hi) | Vedic Lab: Pending | Pipeline Stage: BRONZE*
+- [ ] `MANUSMRITI-DATA-ACQ` **Gather Sanskrit Text**: Ingest 2,684 verses across 12 chapters with Kulluka Bhatta commentary.
+- [ ] `MANUSMRITI-LAB` **Vedic Lab Component**: Build Ancient Jurisprudence Matrix.
+- [ ] `MANUSMRITI-DATA-PROM` **Promote Manusmriti**: Promote to Gold and enable in UI.
+
+### 15. Atharvaveda Samhita [Readiness Score: 0.0%] (BRONZE | UI HIDDEN | LAB PENDING)
+*Canonical Targets: 20 Kandas | 5,977 Verses | Target Authors: 2+ | Target Languages: 3+ (sa, en, hi) | Vedic Lab: Pending | Pipeline Stage: BRONZE*
+- [ ] `ATHARVAVEDA-DATA-ACQ` **Gather Formulas**: Ingest 5,977 verses across 20 kandas with ancient botanical/healing notes.
+- [ ] `ATHARVAVEDA-LAB` **Vedic Lab Component**: Build Vedic Healing & Botanical Formulary Lab.
+- [ ] `ATHARVAVEDA-DATA-PROM` **Promote Atharvaveda**: Promote to Gold and enable in UI.
+
+---
+
+### 16. Dasbodh [Readiness Score: 0.0%] (BRONZE | UI HIDDEN | LAB PENDING)
+*Canonical Targets: 20 Dashakas | 7,751 Ovis/Verses | Target Authors: 2+ | Target Languages: 3+ (sa, mr, hi) | Vedic Lab: Pending | Pipeline Stage: BRONZE*
+- [ ] `DASBODH-DATA-ACQ` **Ingest Samarth Ramdas Text**: Source Marathi text, English, and Hindi translations for 7,751 verses across 20 Dashakas.
+- [ ] `DASBODH-LAB` **Vedic Lab Component**: Build Practical Wisdom & Governance Guide.
+- [ ] `DASBODH-DATA-PROM` **Promote Dasbodh**: Move to Gold and enable in UI.
+
+### 17. Rigveda Samhita [Readiness Score: 0.0%] (BRONZE | UI HIDDEN | LAB PENDING)
+*Canonical Targets: 10 Mandalas | 10,552 Verses | Target Authors: 2+ | Target Languages: 3+ (sa, en, hi) | Vedic Lab: Pending | Pipeline Stage: BRONZE*
+- [ ] `RIGVEDA-DATA-ACQ` **Acquire Bronze Core**: Ingest raw Sanskrit text and translations for 10 mandalas.
+- [ ] `RIGVEDA-LAB` **Vedic Lab Component**: Develop Rigveda Vedic Meter & Recitation Lab.
+- [ ] `RIGVEDA-DATA-PROM` **Promote Rigveda**: Establish Gold schema, manifest registration, enable UI.
+
+
+### Pipeline Tasks
 - [x] `PIPE-004` **Dual-Audit Verification Gate**: Develop automated validation checks within `scripts/run_pipeline.js` that cross-audit LLM synthesized text against root Sanskrit nouns to eliminate hallucination.
 - [x] `PIPE-005` **Automation of Manifest Updates**: Build a self-triggering pipeline hook to recalculate V-Scores upon any data shard commit.
 
 ---
 
-## Priority 6: UI Enhancements
+## Priority 5: UI Enhancements
 - [x] `UI-004` **Devanagari Responsive Font Sizing**: Fine-tune CSS variables in reader layout to scale Devanagari text sizes gracefully down to 320px width viewports.
 - [x] `UI-005` **Reader Mobile Toolbar Compaction**: Re-align the reader page's action toolbar to prevent overlap on small screens.
 - [x] `UI-006` **Canvas Layout CLS Hardening**: Inject server-rendered dimensions into the `<canvas>` container in ShlokaMask to prevent Cumulative Layout Shifts during hydration.
