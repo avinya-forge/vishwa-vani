@@ -73,10 +73,12 @@ export default function StudyClient({
   useEffect(() => {
     if (!verses || verses.length === 0) return;
 
+    let timeoutId: NodeJS.Timeout;
+
     const options = {
       root: null,
       rootMargin: '-20% 0px -40% 0px',
-      threshold: Array.from({length: 21}, (_, i) => i / 20)
+      threshold: 0.5 // Fire only when 50% visible, not 21 times!
     };
 
     const callback = (entries: IntersectionObserverEntry[]) => {
@@ -87,15 +89,20 @@ export default function StudyClient({
             const verseNum = parseInt(id.replace('verse-', ''), 10);
             if (!isNaN(verseNum)) {
               const verseIndex = verses.findIndex(v => Number((v as Record<string, unknown>).verse) === verseNum);
-              setActiveVerse(verseIndex >= 0 ? verseIndex + 1 : 1);
-              const readingPosition = {
-                text: textSlug,
-                chapter: chapter,
-                verse: verseNum,
-                timestamp: Date.now()
-              }
-              localStorage.setItem('vishwa_continue_reading', JSON.stringify(readingPosition))
-              localStorage.setItem('vishwa_last_text', textSlug)
+              
+              // Debounce the state update and localstorage write
+              clearTimeout(timeoutId);
+              timeoutId = setTimeout(() => {
+                setActiveVerse(verseIndex >= 0 ? verseIndex + 1 : 1);
+                const readingPosition = {
+                  text: textSlug,
+                  chapter: chapter,
+                  verse: verseNum,
+                  timestamp: Date.now()
+                }
+                localStorage.setItem('vishwa_continue_reading', JSON.stringify(readingPosition))
+                localStorage.setItem('vishwa_last_text', textSlug)
+              }, 150);
             }
           }
         }
@@ -110,6 +117,7 @@ export default function StudyClient({
     });
 
     return () => {
+      clearTimeout(timeoutId);
       observer.disconnect();
     }
   }, [textSlug, chapter, verses]);
