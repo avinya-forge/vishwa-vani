@@ -18,14 +18,14 @@ export default function Footer() {
             <div className="w-12 h-12 bg-white text-orange-600 rounded-2xl flex items-center justify-center text-2xl font-black shadow-xl ring-8 ring-stone-800 rotate-12">ॐ</div>
             <span className="text-3xl font-serif font-black text-white tracking-tighter">Vishwa-Vani</span>
           </div>
-          <p className="text-stone-400 text-sm leading-relaxed mb-8 max-w-xs font-serif italic italic text-[16px]">
+          <p className="text-stone-300 text-sm leading-relaxed mb-8 max-w-xs font-serif italic italic text-[16px]">
              &ldquo;{t('tagline') || 'Restoring the Universal Voice of Vedic Wisdom through AI-integrated scholarship and open-access intelligence.'}&rdquo;
           </p>
         </div>
 
         {/* ECOSYSTEM */}
         <div className="space-y-6">
-          <span className="label-bold !text-stone-500 block underline underline-offset-8 decoration-orange-600/30">Ecosystem</span>
+          <span className="label-bold !text-stone-400 block underline underline-offset-8 decoration-orange-600/30">Ecosystem</span>
           <div className="grid grid-cols-1 gap-4">
              {[
                { name: 'Vedic Lab', href: '/lab' },
@@ -34,7 +34,7 @@ export default function Footer() {
                { name: 'Shastra Search', href: '/search' },
                { name: 'Developer Info', href: '/developer' }
              ].map(item => (
-                <a key={item.name} href={item.href} className="text-stone-400 hover:text-white transition-colors text-left text-base font-bold flex items-center gap-2 group">
+                <a key={item.name} href={item.href} className="text-stone-300 hover:text-white transition-colors text-left text-base font-bold flex items-center gap-2 group">
                    <div className="w-2 h-2 bg-stone-700 group-hover:bg-orange-600 group-hover:scale-125 transition-all rounded-full" />
                    {item.name}
                 </a>
@@ -60,13 +60,13 @@ export default function Footer() {
         <div className="space-y-6">
            <span className="label-bold !text-stone-500 block underline underline-offset-8 decoration-orange-600/30">Archives</span>
            <div className="space-y-1">
-              <span className="block text-stone-500 text-xs font-black uppercase tracking-widest mb-1 opacity-40">Status</span>
+              <span className="block text-stone-400 text-xs font-black uppercase tracking-widest mb-1 opacity-60">Status</span>
               <div className="flex items-center gap-2">
                  <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
                  <span className="text-white text-sm font-bold tracking-widest">Verse Archive: Active</span>
               </div>
            </div>
-           <p className="text-stone-500 text-xs font-bold leading-relaxed pt-10">
+           <p className="text-stone-400 text-xs font-bold leading-relaxed pt-10">
               &copy; {new Date().getFullYear()} Vishwa-Vani Organization. Licensed under MIT. Distributed by Shastra Foundation.
            </p>
         </div>
