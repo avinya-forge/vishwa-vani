@@ -16,13 +16,15 @@ export default function LocaleProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     setMounted(true)
     const stored = localStorage.getItem('vishwa_lang')
-    if (stored && ['en', 'hi', 'mr'].includes(stored)) {
-      setLocale(stored)
-    }
+    const initialLocale = (stored && ['en', 'hi', 'mr'].includes(stored)) ? stored : 'en'
+    setLocale(initialLocale)
+    document.documentElement.lang = initialLocale // PROD-014: Set HTML lang for SEO/a11y
 
     // Listen for custom locale change events
     const handleLocaleChange = (e: unknown) => {
-      setLocale((e as Record<string, unknown>).detail as string)
+      const newLocale = (e as Record<string, unknown>).detail as string
+      setLocale(newLocale)
+      document.documentElement.lang = newLocale // PROD-014: Sync lang on change
     }
     window.addEventListener('vishwa-locale-change', handleLocaleChange as EventListener)
     return () => window.removeEventListener('vishwa-locale-change', handleLocaleChange)

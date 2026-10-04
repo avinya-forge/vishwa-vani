@@ -39,21 +39,14 @@ export const metadata: Metadata = {
       siteName: 'Vishwa-Vani',
       locale: 'en_US',
       type: 'website',
-      images: [
-        {
-          url: absoluteUrl('/og-image.jpg'),
-          width: 1200,
-          height: 630,
-          alt: 'Vishwa-Vani - The Universal Repository of Vedic Wisdom'
-        }
-      ]
+      
     },
     twitter: {
       card: 'summary_large_image',
       title: 'Vishwa-Vani',
       description: 'The Universal Voice of Vedic Wisdom',
       creator: '@vishwavani',
-      images: [absoluteUrl('/twitter-image.jpg')]
+      
     }
 }
 
