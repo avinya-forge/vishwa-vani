@@ -112,6 +112,13 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 
 ---
 
+## EPIC 6: UI Redesign & UX Simplification (Priority 1)
+*Modernize the interface, remove excessive styling, and fix critical scrolling layout bugs.*
+
+- [ ] `UX-007` **Landing Page Simplification**: Strip out excessive styling. Keep fundamental modern UI techniques, reduce heavy shadows, eliminate visual clutter.
+- [ ] `UX-008` **Reading Page Redesign**: Complete page-by-page UI overhaul starting with the core reading experience. Remove complex navigation layers and fix fundamental layout constraints.
+- [ ] `BUG-085` **IntersectionObserver Cleanup**: Finalize performance audits on scroll tracking; ensure single firing events per verse.
+
 ## EPIC 1: Security, Hardening & Content Protection (Priority 0)
 *Crucial to ensure a safe, robust, and reliable live platform without exposed vulnerabilities or easily scraped content.*
 

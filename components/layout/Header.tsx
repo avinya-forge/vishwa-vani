@@ -123,7 +123,7 @@ export default function Header() {
                   {/* Quick links row */}
                   <div className="px-4 py-3 border-b border-stone-50 dark:border-stone-800 bg-stone-50/30 dark:bg-stone-800/30">
                     <p className="text-[9px] font-black uppercase tracking-widest text-stone-400 dark:text-stone-500 mb-2.5">Available Now</p>
-                    <div className="grid grid-cols-2 gap-1.5">
+                    <div className="flex flex-col gap-1">
                       {topBooks.map(book => (
                         <Link
                           key={book.slug}
@@ -133,14 +133,12 @@ export default function Header() {
                               setDefaultTextSlug(book.slug)
                               localStorage.setItem('vishwa_last_text', book.slug)
                             }}
-                          className="flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-orange-50 dark:hover:bg-orange-950/40 hover:text-orange-700 dark:hover:text-orange-400 transition-all border border-transparent hover:border-orange-100 dark:hover:border-orange-900 group bg-white dark:bg-stone-800 shadow-sm"
+                          className="px-3 py-2 rounded-md hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors flex justify-between items-center"
                         >
-                          <div className="w-full">
-                            <div className="text-xs font-bold text-stone-800 dark:text-stone-200 group-hover:text-orange-700 dark:group-hover:text-orange-400 leading-tight">
-                              {book.name}
-                            </div>
-                            <div className="text-[9px] text-stone-400 dark:text-stone-500 font-medium group-hover:text-orange-500/70">{book.totalChapters} chap</div>
+                          <div className="text-sm font-semibold text-stone-700 dark:text-stone-300">
+                            {book.name}
                           </div>
+                          <div className="text-[10px] text-stone-400 dark:text-stone-500">{book.totalChapters} chap</div>
                         </Link>
                       ))}
                     </div>
