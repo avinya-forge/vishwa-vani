@@ -23,15 +23,15 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 
 ---
 
-## EPIC 2: Customer First Impression, Feedback & Analytics (Priority 1)
-*Enhancing the production deployment UX so that users arriving on the platform get a flawless first impression and have tools to interact.*
+## EPIC 2: Live Operations, Feedback & Analytics (Priority 0 - IMMEDIATE)
+*The site is LIVE. We must capture every visitor's data and feedback immediately using 100% FREE tools to stay within the zero-budget constraint.*
 
+- [ ] `UX-005` **Google Analytics Integration (Zero Cost)**: Integrate GA4 using `@next/third-parties/google`. Google Analytics is completely free forever. This will capture anonymous traffic, most-read verses, and drop-offs.
+- [ ] `UX-003` **User Feedback Channel**: Create a non-intrusive feedback widget. To keep it free, we will store feedback directly in our existing local database or route it to a free Discord webhook/email (Resend free tier).
+- [ ] `UX-006` **UI/UX Audit & Clutter Reduction**: Perform a deep review of the landing page and reading UI to eliminate visual clutter and maximize the visibility of 100% completed (Gold) texts.
+- [ ] `UX-004` **Interactive Roadmap & Feature Voting**: Create a well-categorized roadmap display where users can upvote features. We will use our existing free database to track IP hashes to prevent spam, avoiding paid KV stores.
 - [x] `UX-001` **Pipeline Visibility UI**: Display a visually appealing "Pipeline Data Status" tracker on the landing page showing what texts are currently live and what is coming next.
 - [x] `UX-002` **Console Error Resolution**: Clean up benign hydration and layout errors (e.g., ResizeObserver loop) in `app/layout.tsx` to keep the console clean for technical visitors.
-- [ ] `UX-003` **User Feedback Channel**: Create a non-intrusive feedback widget allowing users to report issues, suggest improvements, and share testimonials on how the platform helped them.
-- [ ] `UX-004` **Interactive Roadmap & Feature Voting**: Create a well-categorized roadmap display where users can upvote/bump features. Implement IP-based rate limiting (1 vote per IP) to prevent ranking abuse.
-- [ ] `UX-005` **Google Analytics Integration**: Integrate GA4 (or a privacy-respecting alternative like PostHog) to gather anonymous insights, track popular scriptures, and analyze user drop-offs without requiring login.
-- [ ] `UX-006` **UI/UX Audit & Clutter Reduction**: Perform a deep review of the landing page and reading UI to eliminate visual clutter, optimize whitespace, and maximize the visibility and accessibility of 100% completed (Gold) texts.
 - [x] `BUG-081` **Search Page Performance Jitter**: Client-side filtering lag during multi-scripture queries; optimize rendering loops and filter states.
 - [x] `BUG-082` **Dark Mode Contrast for Skeletons**: Auditing layout skeletons inside Vedic Lab view for low contrast ratio in dark theme mode.
 - [x] `BUG-083` **Intersection Observer Threshold Polish**: Address minor lag in the reader progress bar synchronization during rapid scroll.
@@ -39,11 +39,11 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 ---
 
 ## EPIC 5: User Identity, Auth & Progress Tracking (Priority 1)
-*Scaling the platform to support personalized user accounts, learning progress tracking, and robust production data storage without alienating anonymous users.*
+*Scaling the platform using 100% free open-source tools (Auth.js) and generous free-tier databases.*
 
-- [ ] `FEAT-AUTH-001` **Optional Authentication Setup**: Integrate NextAuth.js (Auth.js) with Google & Email providers. Keep login completely optional so anonymous users are never blocked from reading.
-- [ ] `FEAT-AUTH-002` **Resume Reading & Learning Guide**: Build a "Continue Reading" tracking system. Use `localStorage` for anonymous users and migrate to the Database once a user signs in, so they never lose their place.
-- [ ] `INFRA-002` **Production Database & ORM Migration**: Migrate away from local `better-sqlite3` to a production-ready Serverless PostgreSQL database (e.g., Vercel Postgres) and integrate Prisma or Drizzle ORM to store user data safely.
+- [ ] `FEAT-AUTH-001` **Optional Authentication Setup**: Integrate NextAuth.js (Auth.js) with Google. This is completely free and requires no paid third-party auth providers like Auth0.
+- [ ] `FEAT-AUTH-002` **Resume Reading & Learning Guide**: Build a "Continue Reading" tracking system. Use `localStorage` for anonymous users (free) and migrate to the Database once a user signs in.
+- [ ] `INFRA-002` **Production Database Migration (Free Tier)**: Migrate away from local `better-sqlite3` to a production-ready serverless database. We will use Turso (SQLite) or Vercel Postgres, both of which have extremely generous free tiers.
 
 ---
 
