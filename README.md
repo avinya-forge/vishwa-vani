@@ -1,6 +1,6 @@
 # 🏛️ Vishwa-Vani: The Universal Voice of Vedic Wisdom
 
-[![Version](https://img.shields.io/badge/version-v1.0.0-orange.svg)](./docs/release-notes.md)
+[![Version](https://img.shields.io/badge/version-v1.1.0-orange.svg)](./docs/release-notes.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Build Status](https://github.com/avinya-forge/vishwa-vani/actions/workflows/ci.yml/badge.svg)](https://github.com/avinya-forge/vishwa-vani/actions)
 

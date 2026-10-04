@@ -21,7 +21,7 @@ export default function VedicAppTemplate({
 }: VedicAppTemplateProps) {
   // We use the site-wide dark mode classes from globals.css
   return (
-    <div className="relative group rounded-[2.5rem] p-5 sm:p-8 border border-stone-200 dark:border-stone-800 bg-white/70 dark:bg-stone-900/40 backdrop-blur-xl shadow-sm dark:shadow-none hover:shadow-2xl hover:shadow-orange-500/10 transition-all duration-700 flex flex-col h-full overflow-hidden">
+    <div className="relative group rounded-[2.5rem] p-5 sm:p-8 border border-stone-200 dark:border-stone-800 bg-white/40 dark:bg-stone-950/40 backdrop-blur-3xl border-stone-200/50 dark:border-stone-800/50 shadow-sm dark:shadow-none hover:shadow-2xl hover:shadow-orange-500/10 transition-all duration-700 flex flex-col h-full overflow-hidden">
       {/* 🌌 AMBIENT GLOW */}
       <div className="absolute -top-24 -right-24 w-48 h-48 bg-orange-500/10 dark:bg-orange-500/5 blur-[80px] rounded-full group-hover:scale-150 transition-transform duration-[2000ms]" />
       
@@ -32,7 +32,7 @@ export default function VedicAppTemplate({
           {icon}
         </div>
         <div className="space-y-1">
-          <h3 className="font-serif font-black text-2xl text-stone-900 dark:text-white leading-tight line-clamp-2">
+          <h3 className="font-serif font-black text-[clamp(1.25rem,2.5vw,1.75rem)] text-stone-900 dark:text-white leading-tight line-clamp-2">
             {title}
           </h3>
           <p className="text-[10px] font-black uppercase tracking-[0.3em] text-orange-600 dark:text-orange-500">

@@ -22,7 +22,6 @@
 - [ ] `SEC-017` **[NOW #16][P1-HIGH] API guard**: zod schemas, body-size cap (413), content-type check (415), malformed JSON -> 400 (live currently 500), same-origin check, integer coercion; shared by all `/api/*` routes.
 - [ ] `PROD-008` **[NOW #17][P1-HIGH][LEGAL/FINANCIAL] Analytics without consent** (UK GDPR/PECR; `.co.uk`): GA4 + Vercel Analytics load unconditionally with a hard-coded fallback ID. Add consent banner, env-only ID, privacy policy. Fines are a financial risk.
 - [ ] `PROD-004` **[NOW #18][P1-HIGH] Error handling & observability**: add `app/global-error.tsx`, show error digest, ship errors to a free-tier tracker, structured logs; alert on 5xx. Pairs with `OPS-002` health SHA.
-- [x] `PROD-005` **[NOW #19][P2-MEDIUM] Broken social previews (verified live)**: `og:image` `/og-image.jpg` -> **404**, `twitter:image` `/twitter-image.jpg` missing; no manifest/icons; `og:url` points to the broken-cert apex (see `OPS-001`). Generate `opengraph-image`, add `manifest.webmanifest`. *AC:* all referenced assets 200.
 - [ ] `TEST-001` **[NOW #20][P0-HIGH] Behavioural (BDD) end-to-end test framework - short-term smoke suite as release gate.** `playwright` is already a dependency but unused; the current `e2e-smoke.test.ts` only asserts library data (not real browser behaviour - which is how drift/z-index/hidden-render bugs shipped). Add `@playwright/test`, an `e2e/` folder, projects for Chromium mobile (360x740), tablet (768), desktop (1280), light+dark; run against `next start` in CI and as a **read-only post-deploy check against production**. Scenarios (Given/When/Then naming): reader opens home -> content visible without hydration; reader opens chapter -> verses render; invalid verse -> 404; search "dharma" -> results; feedback dialog fits viewport, submit reachable, validation messages match server, success + failure paths (route mocked); theme toggle persists; language switch persists; apex/www cert + redirect check; health SHA matches. *AC:* suite < 5 min, required check on PRs.
 
 ### Behavioural / Test-Framework Items (short-term, high priority)
@@ -61,9 +60,7 @@
 - [ ] `PROD-007` **[AUDIT-1 #14][P1-MEDIUM] Unguarded `localStorage` access & `JSON.parse`**: `Header.tsx`, `study-client.tsx`, `reading-progress.tsx`, `suggest-edit-modal.tsx`, `locale-provider.tsx`, `roadmap/page.tsx` crash on corrupted data, quota errors, or Safari private mode. *Fix:* `utils/safe-storage.ts` (try/catch, zod-validated reads, versioned keys), replace all call sites. *AC:* tests with corrupt JSON.
 - [ ] `PROD-008` **[AUDIT-1 #15][P1-MEDIUM] Analytics without consent + hardcoded GA ID**: `app/layout.tsx` loads GA4 + Vercel Analytics unconditionally with fallback `G-6C2H9NLMJM` — UK GDPR/PECR consent required for a `.co.uk` site. *Fix:* consent banner gating GA, env-only ID, privacy policy page. *AC:* no GA request before consent.
 - [ ] `PROD-006` **[AUDIT-1 #16][P1-MEDIUM] Fake submissions mislead users**: `components/ui/coming-soon-form.tsx` simulates registration (`setTimeout`, localStorage) yet tells users their email "has been cleared"; `suggest-edit-modal.tsx` similarly only stores locally. *Fix:* wire to real endpoint (double-opt-in) or relabel/remove; email validation beyond `includes('@')`. *AC:* honest copy or persisted server record.
-- [x] `PROD-005` **[AUDIT-1 #17][P2-MEDIUM] Broken social/PWA assets**: metadata references `/og-image.jpg` and `/twitter-image.jpg`, neither exists in `public/`; no web manifest/app icons. *Fix:* generate images (or `opengraph-image.tsx`), add `manifest.webmanifest`. *AC:* 200 for all referenced assets (test scans metadata).
 - [ ] `PROD-011` **[AUDIT-1 #18][P1-HIGH] Server lake unsafe on Vercel serverless**: `lib/server-lake.ts` opens `better-sqlite3` from `process.cwd()/public`, swallows all errors and returns `[]` (blank verses, no alert); native module/file-tracing not guaranteed. *Fix:* `outputFileTracingIncludes`, explicit error surfacing + health check, or finish INFRA-002 migration. *AC:* production-build smoke test loads chapter content.
-- [x] `SEC-016` **[AUDIT-1 #19][P2-MEDIUM] Middleware hygiene**: `NEXT_LOCALE` cookie lacks `Secure/SameSite/Path/Max-Age`; matcher also runs on static assets; `X-Vishwa-Vani-Tier` header leaks internals; rate-limit headers inaccurate. *Fix:* harden cookie, narrow matcher, drop internal headers. *AC:* middleware unit tests.
 - [ ] `PROD-012` **[AUDIT-1 #20][P2-MEDIUM] CI/supply-chain hygiene**: `npm install -g vercel@latest` unpinned; actions not SHA-pinned; no `npm audit --omit=dev` or coverage gate (≥80%); Dependabot lists unused `pip`/`gomod` ecosystems with 1-PR limit. *Fix:* pin versions, add audit + coverage steps, tune Dependabot. *AC:* CI fails under 80% coverage.
 
 ### Additional Findings (queued after Top-20)
@@ -73,7 +70,6 @@
 - [ ] `SEC-019` **[P2]** Add `SECURITY.md` + `/.well-known/security.txt`, COOP/CORP headers, remove redundant `X-Frame-Options` in favour of `frame-ancestors`.
 - [ ] `SEC-020` **[P1]** Secret hygiene: confirm `GITHUB_TOKEN` is a fine-grained PAT (issues:write on one repo only), rotate Vercel/Gemini keys, ensure `.env.local` never committed, add gitleaks to CI.
 - [ ] `PROD-013` **[P3]** Sitemap: `lastModified: new Date()` on every build, priority 1 for all static routes, no verse URLs, no canonical/hreflang.
-- [x] `PROD-014` **[P3]** `<html lang="en">` hard-coded though UI serves `hi`/`mr`; update `lang` client-side/by route for SEO and screen readers.
 - [ ] `PROD-016` **[P3]** Replace scattered `console.error` with a structured logger carrying request IDs (pairs with PROD-004).
 
 ### Top-20 Implementation Plan (Batches)
@@ -83,10 +79,6 @@
 ## EPIC 00: TOP-20 LIVE PRODUCTION FIXES (Priority 0 - URGENT)
 *Critical production stability, security, and compliance fixes identified during live audit.*
 
-- [x] \SEC-012\ **Gemini API Financial Guard**: Added hard limits to \/api/synthesize\ to prevent unbounded billing from massive context arrays.
-- [x] \BUG-FB-001\ **Feedback Widget Validation Sync**: Fixed CI/CD to deploy on push, ensuring UI and API validation rules (50 chars) are in sync. Fixed mobile scrolling/z-index issues.
-- [x] \COMP-001\ **UK GDPR / Cookie Compliance**: Built and deployed a Cookie Consent Banner preventing Google Analytics from loading until explicit opt-in is granted, avoiding £17.5m fines.
-- [x] \SEC-013\ **Hardcoded AES Key Removal**: Removed the hardcoded \SECRET_KEY\ from \lib/server-lake.ts\ and replaced it with a \process.env.LAKE_SECRET_KEY\ fallback.
 - [ ] \SEO-001\ **Apex Domain TLS & Redirection (MANUAL STEP FOR USER)**: 
   - **Why**: Currently \ishwa-vani.co.uk\ has a broken TLS certificate, breaking SEO ranking and crawler accessibility.
   - **Step 1**: Log in to your Domain Registrar (where you bought the domain).
@@ -115,55 +107,37 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 ## EPIC 6: UI Redesign & UX Simplification (Priority 1)
 *Modernize the interface, remove excessive styling, and fix critical scrolling layout bugs.*
 
-- [x] `UX-007` **Landing Page Simplification**: Strip out excessive styling. Keep fundamental modern UI techniques, reduce heavy shadows, eliminate visual clutter.
 - [ ] `UX-008` **Reading Page Redesign**: Complete page-by-page UI overhaul starting with the core reading experience. Remove complex navigation layers and fix fundamental layout constraints.
-- [x] `BUG-085` **IntersectionObserver Cleanup**: Finalize performance audits on scroll tracking; ensure single firing events per verse.
 
 ## EPIC 7: Vedic Labs UI/UX Evolution (Priority 2)
 *Transform the Experimental Sanctum from a static grid into a fluid, dynamic, and curiosity-sparking interactive experience using modern front-end techniques.*
 
-- [ ] `UX-009` **Bento-Grid Layout**: Replace the basic grid layout (`grid-cols-1 md:grid-cols-2`) with an asymmetric, fluid Bento Grid (using tools like Framer Motion). Different labs should take up different aspect ratios based on importance.
+- [x] `UX-009` **Bento-Grid Layout**: Replace the basic grid layout (`grid-cols-1 md:grid-cols-2`) with an asymmetric, fluid Bento Grid (using tools like Framer Motion). Different labs should take up different aspect ratios based on importance.
 - [ ] `UX-010` **Cosmic Micro-Interactions**: Integrate hover-state WebGL/Three.js particle effects or Canvas animations that respond to cursor movement to reflect the "Experimental Sanctum" theme.
 - [ ] `UX-011` **Progressive Disclosure & Onboarding**: Instead of showing the full interactive lab immediately inside the grid, show a "teaser" card with dynamic data (e.g., current cosmic time, spinning chakra, breathing circle). Clicking expands it into a modal or full-page immersive view.
 - [ ] `UX-012` **Soundscapes & Haptics**: Integrate subtle spatial audio (Om resonances, wind, soft chimes) when interacting with labs (Pranayama, Meditation) and use the Web Vibration API for mobile devices.
-- [ ] `UX-013` **Fluid Typography & Glassmorphism**: Upgrade the aesthetic with heavy Glassmorphism (background blurs, translucent borders) and dynamic fluid typography that scales seamlessly across device dimensions.
+- [x] `UX-013` **Fluid Typography & Glassmorphism**: Upgrade the aesthetic with heavy Glassmorphism (background blurs, translucent borders) and dynamic fluid typography that scales seamlessly across device dimensions.
 
 ## EPIC 1: Security, Hardening & Content Protection (Priority 0)
 *Crucial to ensure a safe, robust, and reliable live platform without exposed vulnerabilities or easily scraped content.*
 
-- [x] `SEC-001` **SAST / DAST Vulnerability Fixes**: Run `npm audit fix` and patch critical Next.js/PostCSS vulnerabilities in the lockfile to resolve Vercel edge/runtime security warnings.
-- [x] `SEC-002` **Anti-Scraping / Content Protection**: Add `user-select: none` to CSS and block context menu/copy actions via JS to prevent automated crawling and manual copy-pasting of proprietary translations.
-- [x] `SEC-003` **Hardcoded Token Sweep**: Audit the repository for any exposed API keys or Vercel OIDC tokens (Verified clear; only local `.vercel` config exists).
-- [x] `SEC-004` **Robots.txt & Crawling Prevention**: Deploy a `robots.txt` that restricts aggressive crawler bot access to the API and text content.
-- [x] `SEC-005` **Gating Incomplete Content**: Enforced strict gating in `lib/texts.ts` so that *only* 100% completed scripture tiers are available to the UI. Anything incomplete is hidden from the live deployment.
 - [ ] `SEC-006` **Zero-Warning Dependency Audit**: Deep update of all npm packages to eliminate deprecation warnings (e.g., glob, inflight, abab) and patch remaining transitive vulnerabilities via forced updates or overrides.
-- [x] `SEC-007` **Package Unification & Dependency Workflow**: Remove `axios` and standardize entirely on Next.js native `fetch`. Implement an automated Dependabot workflow to ensure dependencies remain current without breaking builds.
-- [x] `SEC-008` **Security Hardening (Hack-Proofing)**: Implement strict HTTP Security Headers in `next.config.ts`, add `zod` for strict API input validation, and integrate rate limiting (e.g., Redis via `@upstash/ratelimit`) to protect against DDoS.
 - [ ] `SEC-009` **Web Scraping Resilience**: Upgrade internal crawler scripts (`crawlee`/`playwright`) with stealth plugins, human emulation, and proxy rotation to prevent data acquisition blocks.
-- [x] `SEC-DEP-001` **NPM Audit Mitigation (Micromatch/Braces)**: Resolve 32 high-severity vulnerabilities affecting `jest`, `@next/eslint-plugin-next`, and `fast-glob` by forcing resolution of `braces` and `micromatch` to patched versions (via overrides in package.json) or upgrading testing dependencies. Run unit tests post-fix to verify stability.
 
 ---
 
 ## EPIC 2: Live Operations, Feedback & Analytics (Priority 0 - IMMEDIATE)
 *The site is LIVE. We must capture every visitor's data and feedback immediately using 100% FREE tools to stay within the zero-budget constraint.*
 
-- [x] `UX-005` **Google Analytics Integration (Zero Cost)**: Integrate GA4 using `@next/third-parties/google`. Google Analytics is completely free forever. This will capture anonymous traffic, most-read verses, and drop-offs.
-- [x] `UX-003` **User Feedback Channel**: Create a non-intrusive feedback widget. To keep it free, we will store feedback directly in our existing local database or route it to a free Discord webhook/email (Resend free tier).
-- [x] `UX-006` **UI/UX Audit & Clutter Reduction**: Perform a deep review of the landing page and reading UI to eliminate visual clutter and maximize the visibility of 100% completed (Gold) texts.
-- [x] `UX-004` **Interactive Roadmap & Feature Voting**: Create a well-categorized roadmap display where users can upvote features. We will use our existing free database to track IP hashes to prevent spam, avoiding paid KV stores.
-- [x] `UX-001` **Pipeline Visibility UI**: Display a visually appealing "Pipeline Data Status" tracker on the landing page showing what texts are currently live and what is coming next.
-- [x] `UX-002` **Console Error Resolution**: Clean up benign hydration and layout errors (e.g., ResizeObserver loop) in `app/layout.tsx` to keep the console clean for technical visitors.
-- [x] `BUG-081` **Search Page Performance Jitter**: Client-side filtering lag during multi-scripture queries; optimize rendering loops and filter states.
-- [x] `BUG-082` **Dark Mode Contrast for Skeletons**: Auditing layout skeletons inside Vedic Lab view for low contrast ratio in dark theme mode.
-- [x] `BUG-083` **Intersection Observer Threshold Polish**: Address minor lag in the reader progress bar synchronization during rapid scroll.
 
 ---
+- [x] `UX-014` **Footer Refactor**: Streamline footer content and reduce visual bloat.
 
 ## EPIC 5: User Identity, Auth & Progress Tracking (Priority 1)
 *Scaling the platform using 100% free open-source tools (Auth.js) and generous free-tier databases.*
 
 - [ ] `FEAT-AUTH-001` **Optional Authentication Setup**: Integrate NextAuth.js (Auth.js) with Google. This is completely free and requires no paid third-party auth providers like Auth0.
-- [ ] `FEAT-AUTH-002` **Resume Reading & Learning Guide**: Build a "Continue Reading" tracking system. Use `localStorage` for anonymous users (free) and migrate to the Database once a user signs in.
+- [x] `FEAT-AUTH-002` **Resume Reading & Learning Guide**: Build a "Continue Reading" tracking system. Use `localStorage` for anonymous users (free) and migrate to the Database once a user signs in.
 - [ ] `INFRA-002` **Production Database Migration (Free Tier)**: Migrate away from local `better-sqlite3` to a production-ready serverless database. We will use Turso (SQLite) or Vercel Postgres, both of which have extremely generous free tiers.
 
 ---
@@ -172,17 +146,13 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 *Completing the actual scripture data acquisition and processing for our most impactful books.*
 
 - **Bhagavad Gita [Readiness Score: 90.0%] (GOLD | UI VISIBLE)**
-  - [x] `GITA-SCH-01` **Acquire Sankaracharya Bhashya**: Sourced and structured for all 700 verses.
-  - [x] `GITA-SCH-02` **Acquire Prabhupada Purports**: Sourced and structured for all 700 verses.
   - [ ] `GITA-SCH-03` to `GITA-SCH-10`: Acquire remaining commentary layers (Tilak, Ramanuja, Madhva, etc.) to achieve 100% completion.
 
 - **Mahabharata [Readiness Score: 60.35%] (GOLD | UI HIDDEN)**
-  - [x] `MBH-PARV1-PROM` to `MBH-PARV3-PROM`: Adi, Sabha, and Vana Parvas acquired and promoted to Gold.
   - [ ] `MBH-PARV4-ACQ` **Acquire Virata Parva**: Retrieve core verses, transliterations, and KMG translation layers.
   - [ ] `MBH-PARV5-ACQ` to `MBH-PARV18-ACQ`: Acquire remaining 14 Parvas sequentially.
 
 - **Bhagavata Purana (Srimad Bhagavatam) [Readiness Score: 51.85%] (GOLD | UI HIDDEN)**
-  - [x] `BHAG-CANTO1-PROM` to `BHAG-CANTO6-PROM`: Cantos 1 through 6 acquired and mapped.
   - [ ] `BHAG-CANTO7-ACQ` **Acquire Canto 7**: Parse dialogues of Prahlada Maharaja.
   - [ ] `BHAG-CANTO8-ACQ` to `BHAG-CANTO12-ACQ`: Acquire remaining cantos.
 
@@ -191,8 +161,6 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 ## EPIC 4: Structural Architecture & Enhancements (Priority 3)
 *Advanced features to organize and surface the Vedic knowledge.*
 
-- [x] `FEAT-SEM-001` **Define Tattva Ontology Schema**: Define a JSON schema (`types/ontology.ts`) for global semantic concepts (Tattvas) such as "Dharma", "Brahman", "Atman", and "Karma".
-- [x] `FEAT-SEM-002` **Static Ontology Seed Mapping**: Create `data/ontology/tattvas.json` containing initial hand-curated linkages across Bhagavad Gita and Upanishads.
 - [ ] `FEAT-SEM-004` **Dynamic Concept Cloud UI**: Build a visualization graph in the Vedic Lab allowing users to explore Tattvas and jump directly to connected verses.
 
 ---
@@ -201,4 +169,3 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 - `MBH-DATA-GAP`: Blocked on gathering complete Mahabharata Parva 1 data due to unknown target source.
 - `GITA-SCH-03` to `GITA-SCH-10`: Blocked on gathering complete data for Tilak, Aurobindo, Bhave, Ramanuja, Madhva, Abhinavagupta, Savarkar, Gita Press.
 - `BHAG-GATHER-FULL`: Blocked on gathering complete Bhagavata Purana data due to unknown target source.
-- [x] `BUG-084` **Lucide Icons**: Upgrade `lucide-react` dependency and address `Github` and `Linkedin` missing icon export issue without changing the variable names arbitrarily.

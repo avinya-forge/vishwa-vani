@@ -145,6 +145,44 @@
 
 # Release Notes
 
+## [v1.1.0] - 2026-10-04
+
+- `PROD-005` **[NOW #19][P2-MEDIUM] Broken social previews (verified live)**: `og:image` `/og-image.jpg` -> **404**, `twitter:image` `/twitter-image.jpg` missing; no manifest/icons; `og:url` points to the broken-cert apex (see `OPS-001`). Generate `opengraph-image`, add `manifest.webmanifest`. *AC:* all referenced assets 200.
+- `PROD-005` **[AUDIT-1 #17][P2-MEDIUM] Broken social/PWA assets**: metadata references `/og-image.jpg` and `/twitter-image.jpg`, neither exists in `public/`; no web manifest/app icons. *Fix:* generate images (or `opengraph-image.tsx`), add `manifest.webmanifest`. *AC:* 200 for all referenced assets (test scans metadata).
+- `SEC-016` **[AUDIT-1 #19][P2-MEDIUM] Middleware hygiene**: `NEXT_LOCALE` cookie lacks `Secure/SameSite/Path/Max-Age`; matcher also runs on static assets; `X-Vishwa-Vani-Tier` header leaks internals; rate-limit headers inaccurate. *Fix:* harden cookie, narrow matcher, drop internal headers. *AC:* middleware unit tests.
+- `PROD-014` **[P3]** `<html lang="en">` hard-coded though UI serves `hi`/`mr`; update `lang` client-side/by route for SEO and screen readers.
+- \SEC-012\ **Gemini API Financial Guard**: Added hard limits to \/api/synthesize\ to prevent unbounded billing from massive context arrays.
+- \BUG-FB-001\ **Feedback Widget Validation Sync**: Fixed CI/CD to deploy on push, ensuring UI and API validation rules (50 chars) are in sync. Fixed mobile scrolling/z-index issues.
+- \COMP-001\ **UK GDPR / Cookie Compliance**: Built and deployed a Cookie Consent Banner preventing Google Analytics from loading until explicit opt-in is granted, avoiding £17.5m fines.
+- \SEC-013\ **Hardcoded AES Key Removal**: Removed the hardcoded \SECRET_KEY\ from \lib/server-lake.ts\ and replaced it with a \process.env.LAKE_SECRET_KEY\ fallback.
+- `UX-007` **Landing Page Simplification**: Strip out excessive styling. Keep fundamental modern UI techniques, reduce heavy shadows, eliminate visual clutter.
+- `BUG-085` **IntersectionObserver Cleanup**: Finalize performance audits on scroll tracking; ensure single firing events per verse.
+- `SEC-001` **SAST / DAST Vulnerability Fixes**: Run `npm audit fix` and patch critical Next.js/PostCSS vulnerabilities in the lockfile to resolve Vercel edge/runtime security warnings.
+- `SEC-002` **Anti-Scraping / Content Protection**: Add `user-select: none` to CSS and block context menu/copy actions via JS to prevent automated crawling and manual copy-pasting of proprietary translations.
+- `SEC-003` **Hardcoded Token Sweep**: Audit the repository for any exposed API keys or Vercel OIDC tokens (Verified clear; only local `.vercel` config exists).
+- `SEC-004` **Robots.txt & Crawling Prevention**: Deploy a `robots.txt` that restricts aggressive crawler bot access to the API and text content.
+- `SEC-005` **Gating Incomplete Content**: Enforced strict gating in `lib/texts.ts` so that *only* 100% completed scripture tiers are available to the UI. Anything incomplete is hidden from the live deployment.
+- `SEC-007` **Package Unification & Dependency Workflow**: Remove `axios` and standardize entirely on Next.js native `fetch`. Implement an automated Dependabot workflow to ensure dependencies remain current without breaking builds.
+- `SEC-008` **Security Hardening (Hack-Proofing)**: Implement strict HTTP Security Headers in `next.config.ts`, add `zod` for strict API input validation, and integrate rate limiting (e.g., Redis via `@upstash/ratelimit`) to protect against DDoS.
+- `SEC-DEP-001` **NPM Audit Mitigation (Micromatch/Braces)**: Resolve 32 high-severity vulnerabilities affecting `jest`, `@next/eslint-plugin-next`, and `fast-glob` by forcing resolution of `braces` and `micromatch` to patched versions (via overrides in package.json) or upgrading testing dependencies. Run unit tests post-fix to verify stability.
+- `UX-005` **Google Analytics Integration (Zero Cost)**: Integrate GA4 using `@next/third-parties/google`. Google Analytics is completely free forever. This will capture anonymous traffic, most-read verses, and drop-offs.
+- `UX-003` **User Feedback Channel**: Create a non-intrusive feedback widget. To keep it free, we will store feedback directly in our existing local database or route it to a free Discord webhook/email (Resend free tier).
+- `UX-006` **UI/UX Audit & Clutter Reduction**: Perform a deep review of the landing page and reading UI to eliminate visual clutter and maximize the visibility of 100% completed (Gold) texts.
+- `UX-004` **Interactive Roadmap & Feature Voting**: Create a well-categorized roadmap display where users can upvote features. We will use our existing free database to track IP hashes to prevent spam, avoiding paid KV stores.
+- `UX-001` **Pipeline Visibility UI**: Display a visually appealing "Pipeline Data Status" tracker on the landing page showing what texts are currently live and what is coming next.
+- `UX-002` **Console Error Resolution**: Clean up benign hydration and layout errors (e.g., ResizeObserver loop) in `app/layout.tsx` to keep the console clean for technical visitors.
+- `BUG-081` **Search Page Performance Jitter**: Client-side filtering lag during multi-scripture queries; optimize rendering loops and filter states.
+- `BUG-082` **Dark Mode Contrast for Skeletons**: Auditing layout skeletons inside Vedic Lab view for low contrast ratio in dark theme mode.
+- `BUG-083` **Intersection Observer Threshold Polish**: Address minor lag in the reader progress bar synchronization during rapid scroll.
+- `GITA-SCH-01` **Acquire Sankaracharya Bhashya**: Sourced and structured for all 700 verses.
+- `GITA-SCH-02` **Acquire Prabhupada Purports**: Sourced and structured for all 700 verses.
+- `MBH-PARV1-PROM` to `MBH-PARV3-PROM`: Adi, Sabha, and Vana Parvas acquired and promoted to Gold.
+- `BHAG-CANTO1-PROM` to `BHAG-CANTO6-PROM`: Cantos 1 through 6 acquired and mapped.
+- `FEAT-SEM-001` **Define Tattva Ontology Schema**: Define a JSON schema (`types/ontology.ts`) for global semantic concepts (Tattvas) such as "Dharma", "Brahman", "Atman", and "Karma".
+- `FEAT-SEM-002` **Static Ontology Seed Mapping**: Create `data/ontology/tattvas.json` containing initial hand-curated linkages across Bhagavad Gita and Upanishads.
+- `BUG-084` **Lucide Icons**: Upgrade `lucide-react` dependency and address `Github` and `Linkedin` missing icon export issue without changing the variable names arbitrarily.
+
+
 
 ## [1.0.10] - Current Session
 ### 🏛️ Scripture Promotion & Bug Fixes
@@ -339,6 +377,44 @@
 - [x] `PIPE-001` **`scripts/validate_silver.js`** — Generic NVF schema validator. Checks `id`, `original`, `verse`, `layers[]`; commentary ≥ 20 chars; no bracket-prefix or `[PLACEHOLDER_` content; EN layer required. Exit 0 = pass. — Done: 2026-04-20
 # Release Notes
 
+## [v1.1.0] - 2026-10-04
+
+- `PROD-005` **[NOW #19][P2-MEDIUM] Broken social previews (verified live)**: `og:image` `/og-image.jpg` -> **404**, `twitter:image` `/twitter-image.jpg` missing; no manifest/icons; `og:url` points to the broken-cert apex (see `OPS-001`). Generate `opengraph-image`, add `manifest.webmanifest`. *AC:* all referenced assets 200.
+- `PROD-005` **[AUDIT-1 #17][P2-MEDIUM] Broken social/PWA assets**: metadata references `/og-image.jpg` and `/twitter-image.jpg`, neither exists in `public/`; no web manifest/app icons. *Fix:* generate images (or `opengraph-image.tsx`), add `manifest.webmanifest`. *AC:* 200 for all referenced assets (test scans metadata).
+- `SEC-016` **[AUDIT-1 #19][P2-MEDIUM] Middleware hygiene**: `NEXT_LOCALE` cookie lacks `Secure/SameSite/Path/Max-Age`; matcher also runs on static assets; `X-Vishwa-Vani-Tier` header leaks internals; rate-limit headers inaccurate. *Fix:* harden cookie, narrow matcher, drop internal headers. *AC:* middleware unit tests.
+- `PROD-014` **[P3]** `<html lang="en">` hard-coded though UI serves `hi`/`mr`; update `lang` client-side/by route for SEO and screen readers.
+- \SEC-012\ **Gemini API Financial Guard**: Added hard limits to \/api/synthesize\ to prevent unbounded billing from massive context arrays.
+- \BUG-FB-001\ **Feedback Widget Validation Sync**: Fixed CI/CD to deploy on push, ensuring UI and API validation rules (50 chars) are in sync. Fixed mobile scrolling/z-index issues.
+- \COMP-001\ **UK GDPR / Cookie Compliance**: Built and deployed a Cookie Consent Banner preventing Google Analytics from loading until explicit opt-in is granted, avoiding £17.5m fines.
+- \SEC-013\ **Hardcoded AES Key Removal**: Removed the hardcoded \SECRET_KEY\ from \lib/server-lake.ts\ and replaced it with a \process.env.LAKE_SECRET_KEY\ fallback.
+- `UX-007` **Landing Page Simplification**: Strip out excessive styling. Keep fundamental modern UI techniques, reduce heavy shadows, eliminate visual clutter.
+- `BUG-085` **IntersectionObserver Cleanup**: Finalize performance audits on scroll tracking; ensure single firing events per verse.
+- `SEC-001` **SAST / DAST Vulnerability Fixes**: Run `npm audit fix` and patch critical Next.js/PostCSS vulnerabilities in the lockfile to resolve Vercel edge/runtime security warnings.
+- `SEC-002` **Anti-Scraping / Content Protection**: Add `user-select: none` to CSS and block context menu/copy actions via JS to prevent automated crawling and manual copy-pasting of proprietary translations.
+- `SEC-003` **Hardcoded Token Sweep**: Audit the repository for any exposed API keys or Vercel OIDC tokens (Verified clear; only local `.vercel` config exists).
+- `SEC-004` **Robots.txt & Crawling Prevention**: Deploy a `robots.txt` that restricts aggressive crawler bot access to the API and text content.
+- `SEC-005` **Gating Incomplete Content**: Enforced strict gating in `lib/texts.ts` so that *only* 100% completed scripture tiers are available to the UI. Anything incomplete is hidden from the live deployment.
+- `SEC-007` **Package Unification & Dependency Workflow**: Remove `axios` and standardize entirely on Next.js native `fetch`. Implement an automated Dependabot workflow to ensure dependencies remain current without breaking builds.
+- `SEC-008` **Security Hardening (Hack-Proofing)**: Implement strict HTTP Security Headers in `next.config.ts`, add `zod` for strict API input validation, and integrate rate limiting (e.g., Redis via `@upstash/ratelimit`) to protect against DDoS.
+- `SEC-DEP-001` **NPM Audit Mitigation (Micromatch/Braces)**: Resolve 32 high-severity vulnerabilities affecting `jest`, `@next/eslint-plugin-next`, and `fast-glob` by forcing resolution of `braces` and `micromatch` to patched versions (via overrides in package.json) or upgrading testing dependencies. Run unit tests post-fix to verify stability.
+- `UX-005` **Google Analytics Integration (Zero Cost)**: Integrate GA4 using `@next/third-parties/google`. Google Analytics is completely free forever. This will capture anonymous traffic, most-read verses, and drop-offs.
+- `UX-003` **User Feedback Channel**: Create a non-intrusive feedback widget. To keep it free, we will store feedback directly in our existing local database or route it to a free Discord webhook/email (Resend free tier).
+- `UX-006` **UI/UX Audit & Clutter Reduction**: Perform a deep review of the landing page and reading UI to eliminate visual clutter and maximize the visibility of 100% completed (Gold) texts.
+- `UX-004` **Interactive Roadmap & Feature Voting**: Create a well-categorized roadmap display where users can upvote features. We will use our existing free database to track IP hashes to prevent spam, avoiding paid KV stores.
+- `UX-001` **Pipeline Visibility UI**: Display a visually appealing "Pipeline Data Status" tracker on the landing page showing what texts are currently live and what is coming next.
+- `UX-002` **Console Error Resolution**: Clean up benign hydration and layout errors (e.g., ResizeObserver loop) in `app/layout.tsx` to keep the console clean for technical visitors.
+- `BUG-081` **Search Page Performance Jitter**: Client-side filtering lag during multi-scripture queries; optimize rendering loops and filter states.
+- `BUG-082` **Dark Mode Contrast for Skeletons**: Auditing layout skeletons inside Vedic Lab view for low contrast ratio in dark theme mode.
+- `BUG-083` **Intersection Observer Threshold Polish**: Address minor lag in the reader progress bar synchronization during rapid scroll.
+- `GITA-SCH-01` **Acquire Sankaracharya Bhashya**: Sourced and structured for all 700 verses.
+- `GITA-SCH-02` **Acquire Prabhupada Purports**: Sourced and structured for all 700 verses.
+- `MBH-PARV1-PROM` to `MBH-PARV3-PROM`: Adi, Sabha, and Vana Parvas acquired and promoted to Gold.
+- `BHAG-CANTO1-PROM` to `BHAG-CANTO6-PROM`: Cantos 1 through 6 acquired and mapped.
+- `FEAT-SEM-001` **Define Tattva Ontology Schema**: Define a JSON schema (`types/ontology.ts`) for global semantic concepts (Tattvas) such as "Dharma", "Brahman", "Atman", and "Karma".
+- `FEAT-SEM-002` **Static Ontology Seed Mapping**: Create `data/ontology/tattvas.json` containing initial hand-curated linkages across Bhagavad Gita and Upanishads.
+- `BUG-084` **Lucide Icons**: Upgrade `lucide-react` dependency and address `Github` and `Linkedin` missing icon export issue without changing the variable names arbitrarily.
+
+
 ## Pre-Flight Checks
 - [x] `CHK-001` **Pre-Flight Health Check**: Run full build (`npm run build`), lint (`npm run lint`), and test suite (`npm test`). Enforce 0 errors and 95% unit test coverage floor before starting data ingestion.
 - [x] `BUG-050` **Placeholder Content Audit**: Run scripts to catch mock content or single-character placeholders in Gold/Silver tiers (specifically Isha and Mahabharata datasets).
@@ -350,3 +426,7 @@
 - [x] `ISHA-DATA-11` **Verify & Promote Isha Upanishad**: Manually verify the 19 verses (Sanskrit, EN/HI/MR, 2+ authors). Run `promote_to_gold.js` and update manifest.
 - [x] `STOTRA-DATA-1` **Verify & Promote Stotras**: Audit and promote the 17 verses across 3 chapters. Update manifest.
 - [x] `CHK-002` **Post-Flight Health Check**: Final run of build, lint, and test suite. Ensure codebase remains at 0 errors and 95% test coverage.
+- `UX-014` **Footer Refactor**: Streamline footer content and reduce visual bloat.
+- `FEAT-AUTH-002` **Resume Reading**: Automatically tracks your read position and dynamically renders a 'Resume' button on the landing page.
+- `UX-009` **Bento-Grid Layout**: Redesigned the Vedic Labs matrix into an asymmetric, fluid Bento-box layout.
+- `UX-013` **Fluid Typography & Glassmorphism**: Pushed the aesthetic limits with heavy background blurs (backdrop-blur-3xl) and responsive font scaling.
