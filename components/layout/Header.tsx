@@ -223,15 +223,15 @@ export default function Header() {
                 onClick={() => setShowMobileMenu(false)}
                 className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-orange-50 dark:hover:bg-orange-950/30 transition-all bg-stone-50/50 dark:bg-stone-800/50"
               >
-                <span className="text-xl opacity-80">{book.icon || '📜'}</span>
+                
                 <span className="text-sm font-bold text-stone-800 dark:text-stone-200">{book.name}</span>
               </Link>
             ))}
             <div className="border-t border-stone-100 dark:border-stone-800 mt-5 pt-5 space-y-1.5">
-              <Link href="/search" onClick={() => setShowMobileMenu(false)} className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-stone-50 dark:hover:bg-stone-800 transition-all text-sm font-bold text-stone-600 dark:text-stone-400">🔍 Deep Search</Link>
-              <Link href="/lab" onClick={() => setShowMobileMenu(false)} className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-orange-50 dark:hover:bg-orange-950/30 transition-all text-sm font-bold text-orange-600 dark:text-orange-500">🧪 Vedic Labs</Link>
-              <Link href="/roadmap" onClick={() => setShowMobileMenu(false)} className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-stone-50 dark:hover:bg-stone-800 transition-all text-sm font-bold text-stone-600 dark:text-stone-400">🛣️ Roadmap</Link>
-              <Link href="/bhagavad-gita/1" onClick={() => setShowMobileMenu(false)} className="flex items-center justify-center gap-2 mt-4 w-full px-6 py-3.5 bg-stone-900 hover:bg-orange-600 text-white text-sm font-bold rounded-xl transition-all shadow-md">📜 Begin Reading</Link>
+              <Link href="/search" onClick={() => setShowMobileMenu(false)} className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-stone-50 dark:hover:bg-stone-800 transition-all text-sm font-bold text-stone-600 dark:text-stone-400">Deep Search</Link>
+              <Link href="/lab" onClick={() => setShowMobileMenu(false)} className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-orange-50 dark:hover:bg-orange-950/30 transition-all text-sm font-bold text-orange-600 dark:text-orange-500">Vedic Labs</Link>
+              <Link href="/roadmap" onClick={() => setShowMobileMenu(false)} className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-stone-50 dark:hover:bg-stone-800 transition-all text-sm font-bold text-stone-600 dark:text-stone-400">Roadmap</Link>
+              <Link href="/bhagavad-gita/1" onClick={() => setShowMobileMenu(false)} className="flex items-center justify-center gap-2 mt-4 w-full px-6 py-3.5 bg-stone-900 hover:bg-orange-600 text-white text-sm font-bold rounded-xl transition-all shadow-md">Begin Reading</Link>
             </div>
           </div>
         </div>
