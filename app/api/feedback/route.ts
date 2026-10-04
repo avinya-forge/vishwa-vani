@@ -9,8 +9,8 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'Type and message are required', code: 'MISSING_FIELDS' }, { status: 400 })
     }
 
-    if (message.length < 200) {
-      return NextResponse.json({ error: 'Message must be at least 200 characters long', code: 'MESSAGE_TOO_SHORT' }, { status: 400 })
+    if (message.length < 50) {
+      return NextResponse.json({ error: 'Message must be at least 50 characters long', code: 'MESSAGE_TOO_SHORT' }, { status: 400 })
     }
 
     const githubToken = process.env.GITHUB_TOKEN
