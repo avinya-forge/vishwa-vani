@@ -79,8 +79,8 @@ export default function FeedbackWidget() {
       </button>
 
       {isOpen && (
-        <div className="fixed inset-0 bg-stone-900/60 flex items-center justify-center z-50 p-4">
-          <div className="bg-white dark:bg-stone-900 rounded-xl shadow-2xl max-w-lg w-full p-6 relative border border-stone-100 dark:border-stone-800">
+        <div className="fixed inset-0 bg-stone-900/60 flex items-center justify-center z-[1001] p-4 overflow-y-auto">
+          <div className="bg-white dark:bg-stone-900 rounded-xl shadow-2xl max-w-lg w-full p-6 relative border border-stone-100 dark:border-stone-800 my-auto">
             <button
               onClick={() => setIsOpen(false)}
               className="absolute top-4 right-4 text-stone-400 hover:text-stone-600 dark:hover:text-stone-200"

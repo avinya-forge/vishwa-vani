@@ -6,6 +6,10 @@ name: CI/CD
 # App secrets (GEMINI_API_KEY etc.) live in Vercel and are pulled at build time — never stored in GitHub.
 
 on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
   schedule:
     - cron: '0 0 1 * *' # Monthly
   workflow_dispatch:

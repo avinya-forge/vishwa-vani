@@ -25,6 +25,14 @@ export async function POST(request: Request) {
         { status: 400 }
       )
     }
+    
+    // GUARD: Enforce maximum payload size to prevent API abuse
+    if (contextTexts.length > 5) {
+      return NextResponse.json(
+        { error: 'Too many context items. Maximum 5 allowed.', code: 'PAYLOAD_TOO_LARGE' },
+        { status: 400 }
+      )
+    }
 
     if (!SUPPORTED_LANGUAGES.includes(language as Language)) {
       return NextResponse.json(
@@ -35,7 +43,7 @@ export async function POST(request: Request) {
 
     const validTexts = (contextTexts as unknown[])
       .filter((t): t is string => typeof t === 'string' && (t).trim().length > 0)
-      .map((t) => (t).trim())
+      .map((t) => (t).trim().substring(0, 5000)) // GUARD: Max 5000 chars per item
 
     if (validTexts.length === 0) {
       return NextResponse.json(

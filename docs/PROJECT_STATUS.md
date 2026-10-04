@@ -1,8 +1,28 @@
 # 🚀 Vishwa-Vani: Global Project Master Status
 
-*Last Updated: 2026-10-02 08:21:13*
+*Last Updated: 2026-10-04 21:55:00*
 
 **Overall Health:** 7 Gold Books | 8 Integrated with UI
+
+## 🛡️ Production-Readiness & Security Audit (2026-10-04)
+
+**Verdict:** NOT production-hardened. `npm audit --omit=dev` reports 0 dependency vulnerabilities, but live probes of https://www.vishwa-vani.co.uk found configuration, deployment and application-level defects. Two audit passes logged **~50 items** in `docs/backlog.md` (**EPIC 00 = TOP-20 NOW**, EPIC 0 = first-pass audit, plus 8 behavioural-test items). No browser agent was available; visual checks are derived from live HTML/CSS + code and a Playwright sweep is queued (`QA-001`).
+
+| Live-verified blocker | Item | Severity |
+|---|---|---|
+| Apex `vishwa-vani.co.uk` TLS cert invalid (valid only for `www`), yet canonical/OG/sitemap use apex | `OPS-001` | P0 |
+| Live build drifted from `main` (feedback API enforces 200 chars; repo/UI say 50); CI never deploys; health shows `version: unknown` | `OPS-002`, `PROD-001` | P0 |
+| Feedback broken: limit mismatch, malformed JSON → 500, FAB (z-1000) overlaps modal (z-50), unscrollable dialog, undefined `xs:` breakpoint | `BUG-FB-001` | P0 |
+| 21 MB content DB publicly downloadable (bandwidth cost + scraping) — must be phased (search depends on it) | `SEC-010` | P0 |
+| Unauthenticated Gemini endpoint, ineffective rate limit → financial exposure | `SEC-012` | P0 |
+| ~2,450 of 2,485 sitemap URLs are empty shells (Mahabharata/Bhagavatam); gating not enforced in prod | `SEO-001` | P0 |
+| Whole app SSR'd in `visibility:hidden`; Gita chapter pages 557–959 KB; soft-404s; "1,500++" header; og-image 404 | `UI-001`, `PERF-001`, `PROD-003`, `UI-002`, `PROD-005` | P1–P2 |
+| No real browser-level behavioural tests (Playwright installed but unused) | `TEST-001`…`TEST-007`, `TEST-LT-001` | P0–P2 |
+
+**Plan:** Top-20 NOW executes safest-first (config/deploy fixes → feedback → financial/security phased → SEO/UX → test gate), each flag-guarded or backward-compatible with a rollback via previous Vercel deployment. Implemented so far: 0/20.
+
+**Active Blockers/Risks:** invalid apex certificate (OPS-001), deploy drift (OPS-002), cost exposure (SEC-010, SEC-012), thin-content SEO risk (SEO-001).
+
 
 ## 🏆 Production Grade (GOLD)
 
