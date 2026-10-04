@@ -4,8 +4,9 @@ import crypto from 'crypto';
 import type { NVFFragment } from './nvf';
 import { migrateToNVF } from './nvf';
 
-// SECURE: Shared decryption key (PoC). In production, this would be obfuscated in WASM.
-const SECRET_KEY = Buffer.from('4eeeb3a1-5752-4f34-b49f-4eeb23d3210e', 'utf-8').slice(0, 32);
+// SECURE: Use environment variable for decryption key.
+const keySource = process.env.LAKE_SECRET_KEY || 'default-insecure-key-for-local-dev-only--';
+const SECRET_KEY = Buffer.from(keySource, 'utf-8').slice(0, 32);
 
 function decrypt(encryptedText: string): string {
   if (encryptedText.startsWith('{')) return encryptedText; // Already plain text

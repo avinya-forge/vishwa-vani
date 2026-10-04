@@ -78,7 +78,26 @@
 
 ### Top-20 Implementation Plan (Batches)
 | Batch | Items | Theme | Est. |
-|---|---|---|---|
+|---
+
+## EPIC 00: TOP-20 LIVE PRODUCTION FIXES (Priority 0 - URGENT)
+*Critical production stability, security, and compliance fixes identified during live audit.*
+
+- [x] \SEC-012\ **Gemini API Financial Guard**: Added hard limits to \/api/synthesize\ to prevent unbounded billing from massive context arrays.
+- [x] \BUG-FB-001\ **Feedback Widget Validation Sync**: Fixed CI/CD to deploy on push, ensuring UI and API validation rules (50 chars) are in sync. Fixed mobile scrolling/z-index issues.
+- [x] \COMP-001\ **UK GDPR / Cookie Compliance**: Built and deployed a Cookie Consent Banner preventing Google Analytics from loading until explicit opt-in is granted, avoiding £17.5m fines.
+- [x] \SEC-013\ **Hardcoded AES Key Removal**: Removed the hardcoded \SECRET_KEY\ from \lib/server-lake.ts\ and replaced it with a \process.env.LAKE_SECRET_KEY\ fallback.
+- [ ] \SEO-001\ **Apex Domain TLS & Redirection (MANUAL STEP FOR USER)**: 
+  - **Why**: Currently \ishwa-vani.co.uk\ has a broken TLS certificate, breaking SEO ranking and crawler accessibility.
+  - **Step 1**: Log in to your Domain Registrar (where you bought the domain).
+  - **Step 2**: Go to DNS Management.
+  - **Step 3**: Add an \A\ record for \@\ (or \ishwa-vani.co.uk\) pointing to >.76.21.21\ (Vercel's IP).
+  - **Step 4**: Go to your Vercel Project Settings -> Domains -> ensure \ishwa-vani.co.uk\ is added and wait for the SSL certificate to provision.
+- [ ] \ARCH-001\ **Vedic-Lake Server-Side Search Migration**: \edic-lake.db\ (21MB) is currently public to allow client-side searching. To protect our scripture data from scraping, we must rewrite \lib/lake.ts\ to run SQLite queries on a Next.js server route instead of a Web Worker.
+- [ ] \BUG-UI-002\ **Footer Contrast**: Enhance footer contrast for accessibility on mobile devices.
+
+---
+|---|---|---|
 | A | PROD-001, PROD-002, SEC-010, SEC-011 | Stop-the-bleed: CI gate, indexing, data exposure, key | 1 PR |
 | B | SEC-017, SEC-013, PROD-015, SEC-014, SEC-012 | API hardening via shared `lib/api-guard.ts` + limiter | 1–2 PRs |
 | C | SEC-015, SEC-016, A11Y-001, PROD-003, PROD-004 | Headers/CSP, middleware, a11y, errors/404s | 1–2 PRs |
