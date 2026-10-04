@@ -84,6 +84,23 @@ export default async function RootLayout({
             <FeedbackWidget />
           </LocaleProvider>
         </ThemeProvider>
+        {/* Anti-Scraping / Content Protection Script */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              document.addEventListener('contextmenu', event => event.preventDefault());
+              document.addEventListener('copy', event => {
+                event.preventDefault();
+                alert("Content copying is disabled to protect textual integrity.");
+              });
+              document.addEventListener('selectstart', event => {
+                if (event.target.tagName !== 'INPUT' && event.target.tagName !== 'TEXTAREA') {
+                  event.preventDefault();
+                }
+              });
+            `,
+          }}
+        />
         {/* Mute benign ResizeObserver error for cleaner showcase */}
         <script
           dangerouslySetInnerHTML={{
