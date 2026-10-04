@@ -1,0 +1,84 @@
+name: CI/CD
+
+# CI runs on every push and PR to main.
+# Production deploy to https://vishwa-vani.co.uk runs ONLY on main, ONLY after CI passes.
+# Secrets live in the GitHub "production" Environment (VERCEL_TOKEN, VERCEL_ORG_ID, VERCEL_PROJECT_ID).
+# App secrets (GEMINI_API_KEY etc.) live in Vercel and are pulled at build time — never stored in GitHub.
+
+on:
+  schedule:
+    - cron: '0 0 1 * *' # Monthly
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-cd-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  ci:
+    name: Lint · Typecheck · Test · Build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - run: npm ci
+      - run: npm run lint
+      - run: npx tsc --noEmit
+      - run: npm test -- --ci
+      - run: npm run build
+        env:
+          NEXT_PUBLIC_SITE_URL: https://vishwa-vani.co.uk
+
+  deploy:
+    name: Deploy to Production (Vercel)
+    needs: ci
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment:
+      name: production
+      url: https://vishwa-vani.co.uk
+    concurrency:
+      group: production
+      cancel-in-progress: false
+    env:
+      VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+      VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Verify deployment secrets are configured
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: |
+          missing=0
+          for v in VERCEL_TOKEN VERCEL_ORG_ID VERCEL_PROJECT_ID; do
+            if [ -z "${!v}" ]; then echo "::error::Missing secret $v in the 'production' environment"; missing=1; fi
+          done
+          exit $missing
+
+      - name: Install Vercel CLI
+        run: npm install --global vercel@latest
+
+      - name: Pull Vercel environment (production)
+        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+
+      - name: Build
+        run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
+
+      - name: Deploy
+        run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}

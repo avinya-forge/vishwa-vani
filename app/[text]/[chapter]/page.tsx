@@ -1,4 +1,5 @@
 import fs from 'fs'
+import { absoluteUrl } from '@/lib/site'
 import path from 'path'
 import Link from 'next/link'
 import StudyClient from '@/components/shloka/study-client'
@@ -222,10 +223,10 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
     openGraph: {
       title,
       description,
-      url: `https://vishwavani.app/${textSlug}/${chapterNumber}`,
+      url: absoluteUrl(`/${textSlug}/${chapterNumber}`),
       images: [
         {
-          url: 'https://vishwavani.app/og-image.jpg',
+          url: absoluteUrl('/og-image.jpg'),
           width: 1200,
           height: 630,
           alt: title
@@ -236,7 +237,7 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
       card: 'summary_large_image',
       title,
       description,
-      images: ['https://vishwavani.app/twitter-image.jpg']
+      images: [absoluteUrl('/twitter-image.jpg')]
     }
   }
 }

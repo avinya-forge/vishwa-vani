@@ -1,4 +1,5 @@
 import SearchClient from '@/components/search/search-client'
+import { absoluteUrl } from '@/lib/site'
 import { setRequestLocale } from 'next-intl/server'
 import type { Metadata } from 'next'
 
@@ -11,7 +12,7 @@ export async function generateMetadata(): Promise<Metadata> {
       description: 'Explore the Vedic Wikipedia with high-performance local search.',
       images: [
         {
-          url: 'https://vishwavani.app/og-image.jpg',
+          url: absoluteUrl('/og-image.jpg'),
           width: 1200,
           height: 630,
           alt: 'Universal Search - Vishwa-Vani'
@@ -22,7 +23,7 @@ export async function generateMetadata(): Promise<Metadata> {
       card: 'summary_large_image',
       title: 'Universal Search | Vishwa-Vani',
       description: 'Explore the Vedic Wikipedia with high-performance local search.',
-      images: ['https://vishwavani.app/og-image.jpg']
+      images: [absoluteUrl('/og-image.jpg')]
     }
   }
 }

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { absoluteUrl } from '@/lib/site'
 import StudyClient from '@/components/shloka/study-client'
 import { getTextBySlug, getAllTextChapterPaths } from '@/lib/texts'
 import { vedicDataService, type EnrichedVerse } from '@/lib/data-service'
@@ -142,10 +143,10 @@ export async function generateMetadata({ params }: { params: Promise<{ text: str
     openGraph: {
       title,
       description,
-      url: `https://vishwavani.app/${textSlug}/${chapterNumber}/${verseNumber}`,
+      url: absoluteUrl(`/${textSlug}/${chapterNumber}/${verseNumber}`),
       images: [
         {
-          url: 'https://vishwavani.app/og-image.jpg',
+          url: absoluteUrl('/og-image.jpg'),
           width: 1200,
           height: 630,
           alt: title
@@ -156,7 +157,7 @@ export async function generateMetadata({ params }: { params: Promise<{ text: str
       card: 'summary_large_image',
       title,
       description,
-      images: ['https://vishwavani.app/twitter-image.jpg']
+      images: [absoluteUrl('/twitter-image.jpg')]
     }
   }
 }

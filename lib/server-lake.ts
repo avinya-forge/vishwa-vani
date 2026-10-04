@@ -1,4 +1,4 @@
-import sqlite3 from 'sqlite3';
+import Database from 'better-sqlite3';
 import path from 'path';
 import crypto from 'crypto';
 import type { NVFFragment } from './nvf';
@@ -26,7 +26,7 @@ function decrypt(encryptedText: string): string {
 }
 
 /**
- * Vishwa-Vani: Server-Side Lake Engine (Normalized) 🌊
+ * Vishwa-Vani: Server-Side Lake Engine (Normalized) dYOS
  * 
  * Extracts data from binary SQLite stores and normalizes it into 
  * Normalized Vedic Fragment (NVF) format for the UI.
@@ -34,36 +34,26 @@ function decrypt(encryptedText: string): string {
 export async function getVersesFromLakeServer(textSlug: string, chapter: number, lakeFile: string = 'vedic-lake.db'): Promise<NVFFragment[]> {
   const dbPath = path.join(process.cwd(), 'public', lakeFile);
   
-  return new Promise((resolve, _reject) => {
-    const db = new sqlite3.Database(dbPath, sqlite3.OPEN_READONLY, (err) => {
-      if (err) {
-        console.error('SERVER LAKE: Connection error', err);
-        return resolve([]); // Fallback to empty for build safety
-      }
-    });
-
+  try {
+    const db = new Database(dbPath, { readonly: true });
     const query = `SELECT content FROM verses WHERE text_slug = ? AND chapter = ? ORDER BY verse ASC`;
+    const rows = db.prepare(query).all(textSlug, chapter);
+    db.close();
 
-    db.all(query, [textSlug, chapter], (err, rows) => {
-      db.close();
-      if (err) {
-        console.error('SERVER LAKE: Query error', err);
-        return resolve([]);
+    const fragments = rows.map((row: any) => {
+      try {
+        const decrypted = decrypt(row.content as string);
+        const raw = JSON.parse(decrypted);
+        return migrateToNVF(raw, textSlug, chapter);
+      } catch (e) {
+        console.error(`SERVER LAKE: JSON parse fail`, e);
+        return null;
       }
-
-      const fragments = (rows as unknown[]).map((row: unknown) => {
-        const rowData = row as Record<string, unknown>
-        try {
-          const decrypted = decrypt(rowData.content as string);
-          const raw = JSON.parse(decrypted);
-          return migrateToNVF(raw, textSlug, chapter);
-        } catch (e) {
-          console.error(`SERVER LAKE: JSON parse fail`, e);
-          return null;
-        }
-      }).filter((f: unknown) => f !== null) as NVFFragment[];
-
-      resolve(fragments);
-    });
-  });
+    }).filter((f: unknown) => f !== null) as NVFFragment[];
+    
+    return fragments;
+  } catch (err) {
+    console.error('SERVER LAKE: Connection or Query error', err);
+    return [];
+  }
 }

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { absoluteUrl } from '@/lib/site'
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -9,7 +10,7 @@ export async function generateMetadata(): Promise<Metadata> {
       description: 'Explore interactive tools for Pranayama, Akshauhini, and Vedic philosophy.',
       images: [
         {
-          url: 'https://vishwavani.app/og-image.jpg',
+          url: absoluteUrl('/og-image.jpg'),
           width: 1200,
           height: 630,
           alt: 'Vedic Labs - Vishwa-Vani'
@@ -20,7 +21,7 @@ export async function generateMetadata(): Promise<Metadata> {
       card: 'summary_large_image',
       title: 'Vedic Labs | Vishwa-Vani',
       description: 'Explore interactive tools for Pranayama, Akshauhini, and Vedic philosophy.',
-      images: ['https://vishwavani.app/og-image.jpg']
+      images: [absoluteUrl('/og-image.jpg')]
     }
   }
 }

@@ -1,8 +1,9 @@
 import type { MetadataRoute } from 'next'
+import { SITE_URL } from '@/lib/site'
 import { getAllTextChapterPaths } from '@/lib/texts'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://vishwavani.app'
+  const baseUrl = SITE_URL
 
   // Add all static routes
   const routes = ['', '/search', '/lab', '/acknowledgments'].map(route => ({

@@ -23,8 +23,10 @@ const outfit = Outfit({
 })
 
 import type { Metadata } from 'next'
+import { SITE_URL, absoluteUrl } from '@/lib/site'
 
 export const metadata: Metadata = {
+    metadataBase: new URL(SITE_URL),
     title: {
       template: '%s | Vishwa-Vani',
       default: 'Vishwa-Vani | The Universal Voice of Vedic Wisdom'
@@ -33,13 +35,13 @@ export const metadata: Metadata = {
     openGraph: {
       title: 'Vishwa-Vani',
       description: 'The Universal Voice of Vedic Wisdom',
-      url: 'https://vishwavani.app',
+      url: SITE_URL,
       siteName: 'Vishwa-Vani',
       locale: 'en_US',
       type: 'website',
       images: [
         {
-          url: 'https://vishwavani.app/og-image.jpg',
+          url: absoluteUrl('/og-image.jpg'),
           width: 1200,
           height: 630,
           alt: 'Vishwa-Vani - The Universal Repository of Vedic Wisdom'
@@ -51,7 +53,7 @@ export const metadata: Metadata = {
       title: 'Vishwa-Vani',
       description: 'The Universal Voice of Vedic Wisdom',
       creator: '@vishwavani',
-      images: ['https://vishwavani.app/twitter-image.jpg']
+      images: [absoluteUrl('/twitter-image.jpg')]
     }
 }
 

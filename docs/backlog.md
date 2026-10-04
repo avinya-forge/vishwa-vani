@@ -10,6 +10,7 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 ---
 
 ## Priority 0: Bugs
+- [x] `BUG-084` **Vercel Build GLIBC Error**: Fix Turbopack bundling native `sqlite3` addon causing GLIBC_2.38 missing error on Vercel build container.
 - [x] `BUG-081` **Search Page Performance Jitter**: Client-side filtering lag during multi-scripture queries; optimize rendering loops and filter states.
 - [x] `BUG-082` **Dark Mode Contrast for Skeletons**: Auditing layout skeletons inside Vedic Lab view for low contrast ratio in dark theme mode.
 - [x] `BUG-083` **Intersection Observer Threshold Polish**: Address minor lag in the reader progress bar synchronization during rapid scroll.
@@ -130,7 +131,7 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 ### 6. Stotras & Stuties [Readiness Score: 60.42%] (GOLD | UI HIDDEN | LAB INTEGRATED)
 *Canonical Targets: 100 Chapters | 1,000 Verses | Target Authors: 2+ (Actual: 4) | Target Languages: 4 (sa, en, hi, mr) | Vedic Lab: Integrated | Pipeline Stage: GOLD*
 - [x] `STOTRAS-BASE-ACQ` **Acquire Initial Hymn Collection**: Ingest initial 17 stotras/verses.
-- [ ] `STOTRAS-DATA-GAP` **Identify Target Hymns**: Define the exact list of stotras needed to reach the target 100 chapters and 1000 verses.
+- [x] `STOTRAS-DATA-GAP` **Identify Target Hymns**: Define the exact list of stotras needed to reach the target 100 chapters and 1000 verses. (Created `docs/stotras-target-list.md`)
 - [ ] `STOTRAS-DATA-ACQ` **Acquire Multilingual Stotra Layers**: Gather Sanskrit, transliteration, English, Hindi, and Marathi layers.
 - [ ] `STOTRAS-DATA-PROM` **Promote and Register Stotras**: Run promotion pipeline and update UI cards.
 

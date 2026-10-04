@@ -2,6 +2,9 @@
   "buildCommand": "npm run build",
   "outputDirectory": ".next",
   "framework": "nextjs",
+  "git": {
+    "deploymentEnabled": false
+  },
   "regions": ["fra1"],
   "functions": {
     "app/api/**/*.ts": {
