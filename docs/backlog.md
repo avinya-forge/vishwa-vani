@@ -1,6 +1,6 @@
-# 🕉️ Vishwa-Vani: Aligned Master Backlog [SDLC v8.1 – Vision & Live Deployment Success]
+# 🕉️ Vishwa-Vani: Aligned Master Backlog [SDLC v8.2 – Retention & User Experience]
 
-This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani Vision**. Following our successful deployment to Vercel, the priorities have been restructured to focus on **Security, Content Gating, Customer Experience, and Pipeline Visibility**. 
+This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani Vision**. Following our successful deployment to Vercel, the priorities have been restructured to focus on **Security, Content Gating, Customer Experience, Retention, and Pipeline Visibility**. 
 
 **5-CHAPTER AUDIT RULE**: After every 5 chapters of any book are processed, an explicit 'Bug Hunting & System Audit' phase MUST take place. All identified issues must be categorized and added to Priority 0 before continuing.
 
@@ -23,14 +23,27 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 
 ---
 
-## EPIC 2: Customer First Impression & Live Success (Priority 1)
-*Enhancing the production deployment UX so that users arriving on the platform get a flawless first impression.*
+## EPIC 2: Customer First Impression, Feedback & Analytics (Priority 1)
+*Enhancing the production deployment UX so that users arriving on the platform get a flawless first impression and have tools to interact.*
 
 - [x] `UX-001` **Pipeline Visibility UI**: Display a visually appealing "Pipeline Data Status" tracker on the landing page showing what texts are currently live and what is coming next.
 - [x] `UX-002` **Console Error Resolution**: Clean up benign hydration and layout errors (e.g., ResizeObserver loop) in `app/layout.tsx` to keep the console clean for technical visitors.
+- [ ] `UX-003` **User Feedback Channel**: Create a non-intrusive feedback widget allowing users to report issues, suggest improvements, and share testimonials on how the platform helped them.
+- [ ] `UX-004` **Interactive Roadmap & Feature Voting**: Create a well-categorized roadmap display where users can upvote/bump features. Implement IP-based rate limiting (1 vote per IP) to prevent ranking abuse.
+- [ ] `UX-005` **Google Analytics Integration**: Integrate GA4 (or a privacy-respecting alternative like PostHog) to gather anonymous insights, track popular scriptures, and analyze user drop-offs without requiring login.
+- [ ] `UX-006` **UI/UX Audit & Clutter Reduction**: Perform a deep review of the landing page and reading UI to eliminate visual clutter, optimize whitespace, and maximize the visibility and accessibility of 100% completed (Gold) texts.
 - [x] `BUG-081` **Search Page Performance Jitter**: Client-side filtering lag during multi-scripture queries; optimize rendering loops and filter states.
 - [x] `BUG-082` **Dark Mode Contrast for Skeletons**: Auditing layout skeletons inside Vedic Lab view for low contrast ratio in dark theme mode.
 - [x] `BUG-083` **Intersection Observer Threshold Polish**: Address minor lag in the reader progress bar synchronization during rapid scroll.
+
+---
+
+## EPIC 5: User Identity, Auth & Progress Tracking (Priority 1)
+*Scaling the platform to support personalized user accounts, learning progress tracking, and robust production data storage without alienating anonymous users.*
+
+- [ ] `FEAT-AUTH-001` **Optional Authentication Setup**: Integrate NextAuth.js (Auth.js) with Google & Email providers. Keep login completely optional so anonymous users are never blocked from reading.
+- [ ] `FEAT-AUTH-002` **Resume Reading & Learning Guide**: Build a "Continue Reading" tracking system. Use `localStorage` for anonymous users and migrate to the Database once a user signs in, so they never lose their place.
+- [ ] `INFRA-002` **Production Database & ORM Migration**: Migrate away from local `better-sqlite3` to a production-ready Serverless PostgreSQL database (e.g., Vercel Postgres) and integrate Prisma or Drizzle ORM to store user data safely.
 
 ---
 
@@ -60,14 +73,6 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 - [x] `FEAT-SEM-001` **Define Tattva Ontology Schema**: Define a JSON schema (`types/ontology.ts`) for global semantic concepts (Tattvas) such as "Dharma", "Brahman", "Atman", and "Karma".
 - [x] `FEAT-SEM-002` **Static Ontology Seed Mapping**: Create `data/ontology/tattvas.json` containing initial hand-curated linkages across Bhagavad Gita and Upanishads.
 - [ ] `FEAT-SEM-004` **Dynamic Concept Cloud UI**: Build a visualization graph in the Vedic Lab allowing users to explore Tattvas and jump directly to connected verses.
-
----
-
-## EPIC 5: Core Infrastructure & Authentication (Priority 1)
-*Scaling the platform to support personalized user accounts and robust production data storage.*
-
-- [ ] `INFRA-001` **Authentication Setup (OAuth) & User Strategy**: Install and configure `next-auth` (Auth.js) to support seamless Google and Facebook sign-in flows. Execute Step 1 of the data collection strategy defined in `docs/user-registration-goals.md` (tracking reading progress, preferences, and roadmap votes).
-- [ ] `INFRA-002` **Production Database & ORM Migration**: Migrate away from local `better-sqlite3` to a production-ready Serverless PostgreSQL database (e.g., Vercel Postgres) and integrate Prisma or Drizzle ORM for secure schema management and data integrity.
 
 ---
 
