@@ -1,8 +1,15 @@
 import { NextResponse } from 'next/server'
 import { GoogleGenerativeAI } from '@google/generative-ai'
+import { z } from 'zod'
 
 const SUPPORTED_LANGUAGES = ['en', 'hi', 'mr'] as const
 type Language = typeof SUPPORTED_LANGUAGES[number]
+
+const synthesizeSchema = z.object({
+  verseId: z.string().min(1, 'Missing or invalid verseId.'),
+  contextTexts: z.array(z.string().trim().min(1)).min(1, 'No context text provided for synthesis.').max(5, 'Too many context items. Maximum 5 allowed.'),
+  language: z.enum(['en', 'hi', 'mr']).default('en')
+})
 
 // Initialize Gemini if API key is present
 const genAI = process.env.GEMINI_API_KEY ? new GoogleGenerativeAI(process.env.GEMINI_API_KEY) : null
@@ -10,47 +17,18 @@ const genAI = process.env.GEMINI_API_KEY ? new GoogleGenerativeAI(process.env.GE
 export async function POST(request: Request) {
   try {
     const body = await request.json()
-    const { verseId, contextTexts, language = 'en' } = body || {}
+    const parseResult = synthesizeSchema.safeParse(body)
 
-    if (!verseId || typeof verseId !== 'string') {
+    if (!parseResult.success) {
       return NextResponse.json(
-        { error: 'Missing or invalid verseId.', code: 'INVALID_VERSE_ID' },
+        { error: parseResult.error.errors[0].message, code: 'VALIDATION_ERROR', details: parseResult.error.format() },
         { status: 400 }
       )
     }
 
-    if (!Array.isArray(contextTexts) || contextTexts.length === 0) {
-      return NextResponse.json(
-        { error: 'No context text provided for synthesis.', code: 'NO_CONTEXT' },
-        { status: 400 }
-      )
-    }
-    
-    // GUARD: Enforce maximum payload size to prevent API abuse
-    if (contextTexts.length > 5) {
-      return NextResponse.json(
-        { error: 'Too many context items. Maximum 5 allowed.', code: 'PAYLOAD_TOO_LARGE' },
-        { status: 400 }
-      )
-    }
+    const { verseId, contextTexts, language } = parseResult.data
 
-    if (!SUPPORTED_LANGUAGES.includes(language as Language)) {
-      return NextResponse.json(
-        { error: 'Unsupported language. Use en, hi, or mr.', code: 'UNSUPPORTED_LANGUAGE' },
-        { status: 400 }
-      )
-    }
-
-    const validTexts = (contextTexts as unknown[])
-      .filter((t): t is string => typeof t === 'string' && (t).trim().length > 0)
-      .map((t) => (t).trim().substring(0, 5000)) // GUARD: Max 5000 chars per item
-
-    if (validTexts.length === 0) {
-      return NextResponse.json(
-        { error: 'Context texts were empty.', code: 'EMPTY_CONTEXT' },
-        { status: 400 }
-      )
-    }
+    const validTexts = contextTexts.map((t) => t.substring(0, 5000)) // GUARD: Max 5000 chars per item
 
     const meaningText = validTexts[0]
     const commentarySnippets = validTexts.slice(1, 3)

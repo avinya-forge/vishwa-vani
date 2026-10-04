@@ -1,17 +1,25 @@
 import { NextResponse } from 'next/server'
+import { z } from 'zod'
+
+const feedbackSchema = z.object({
+  type: z.enum(['Bug', 'Suggestion', 'Content Error', 'Other']),
+  message: z.string().trim().min(50, 'Message must be at least 50 characters long'),
+  email: z.string().email('Invalid email address').optional().or(z.literal(''))
+})
 
 export async function POST(request: Request) {
   try {
     const body = await request.json()
-    const { type, message, email } = body
+    const parseResult = feedbackSchema.safeParse(body)
 
-    if (!type || !message) {
-      return NextResponse.json({ error: 'Type and message are required', code: 'MISSING_FIELDS' }, { status: 400 })
+    if (!parseResult.success) {
+      return NextResponse.json(
+        { error: parseResult.error.errors[0].message, code: 'VALIDATION_ERROR', details: parseResult.error.format() },
+        { status: 400 }
+      )
     }
 
-    if (message.length < 50) {
-      return NextResponse.json({ error: 'Message must be at least 50 characters long', code: 'MESSAGE_TOO_SHORT' }, { status: 400 })
-    }
+    const { type, message, email } = parseResult.data
 
     const githubToken = process.env.GITHUB_TOKEN
 

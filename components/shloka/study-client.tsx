@@ -20,32 +20,32 @@ const DEFAULT_METADATA: Record<string, { name: string, bio: string, label: strin
   'none': {
     name: 'Original Text Only',
     label: 'Text Only',
-    icon: '📜',
+    icon: '',
     bio: 'Pure scripture — Sanskrit shloka and its meaning, without external commentary.'
   },
   'all': {
     name: 'All Commentaries',
     label: 'All Scholars',
-    icon: '🏛️',
+    icon: '',
     bio: 'Compare all available scholarly perspectives side by side.'
   },
   // normalizeScholarKey splits on '-': 'sant-dnyaneshwar' → 'sant', 'dnyaneshwari-en' → 'dnyaneshwari'
   'sant': {
     name: 'Sant Dnyaneshwar',
     label: 'Dnyaneshwari',
-    icon: '🪷',
+    icon: '',
     bio: 'Maharashtrian saint-philosopher (1275–1296 CE). Composed the Dnyaneshwari — a Marathi verse commentary on the Gita — at age 16. Founding text of the Warkari tradition.'
   },
   'dnyaneshwari': {
     name: 'Sant Dnyaneshwar',
     label: 'Dnyaneshwari',
-    icon: '🪷',
+    icon: '',
     bio: 'Maharashtrian saint-philosopher (1275–1296 CE). Composed the Dnyaneshwari — a Marathi verse commentary on the Gita — at age 16. Founding text of the Warkari tradition.'
   },
   'iskcon': {
     name: 'A.C. Bhaktivedanta Swami Prabhupada',
     label: 'Prabhupada',
-    icon: '🔱',
+    icon: '',
     bio: 'Founder-Acharya of ISKCON. Translator and commentator of Bhagavad-gītā As It Is. One of the most widely read Gita commentaries in the world.'
   }
 }
@@ -206,7 +206,7 @@ export default function StudyClient({
         }
       }
     }
-    return { name: authorKey, label: authorKey, icon: '📜', bio: '' }
+    return { name: authorKey, label: authorKey, icon: '', bio: '' }
   }
 
   // Score commentary for relevance to the meaning text, to avoid random or low-alignment commentary showing on first shloka

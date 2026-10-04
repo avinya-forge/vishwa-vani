@@ -31,7 +31,6 @@
     "@tailwindcss/typography": "^0.5.19",
     "@types/sql.js": "^1.4.9",
     "@vercel/analytics": "^2.0.1",
-    "axios": "^1.19.0",
     "better-sqlite3": "^11.5.0",
     "cheerio": "^1.0.0",
     "crawlee": "^3.16.0",
@@ -44,7 +43,8 @@
     "react-dom": "19.2.3",
     "react-markdown": "^10.1.0",
     "sql.js": "^1.14.1",
-    "use-debounce": "^10.1.0"
+    "use-debounce": "^10.1.0",
+    "zod": "^4.6.5"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^16.2.11",

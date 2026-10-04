@@ -138,10 +138,7 @@ function BookCard({ book, locale }: { book: Record<string, unknown>, locale: str
           <span className="text-[9px] font-bold uppercase tracking-widest text-stone-400 dark:text-stone-500 bg-stone-50 dark:bg-stone-800 px-2 py-0.5 rounded-md">
             {String(book.category)}
           </span>
-          {isAvailable
-            ? <span className="text-[9px] font-bold text-green-600 bg-green-50 px-2 py-0.5 rounded-md">Available</span>
-            : <span className="text-[9px] font-bold text-stone-400 bg-stone-50 px-2 py-0.5 rounded-md">Coming Soon</span>
-          }
+          {isAvailable && <span className="text-[9px] font-bold text-amber-600 dark:text-amber-500 bg-amber-50 dark:bg-amber-950/30 px-2 py-0.5 rounded-md">100% GOLD</span>}
         </div>
 
         <Link href={`/${book.slug as string}/1`} className="block mb-2">
@@ -154,37 +151,9 @@ function BookCard({ book, locale }: { book: Record<string, unknown>, locale: str
           {String(book.description)}
         </p>
 
-        {childBooks.length > 0 && (
-          <div className="mb-4 space-y-1">
-            <p className="text-[9px] font-bold uppercase tracking-widest text-stone-300 mb-1.5 mt-2">Includes</p>
-            {childBooks.map((child: unknown) => {
-              const childObj = child as Record<string, unknown>
-              return (
-                <Link
-                  key={childObj.slug as string}
-                  href={`/${childObj.slug as string}/1`}
-                  className="flex items-center justify-between p-2.5 rounded-lg bg-stone-50 dark:bg-stone-800 hover:bg-orange-50 dark:hover:bg-orange-950/50 hover:text-orange-700 dark:hover:text-orange-400 transition-all text-xs font-bold text-stone-600 dark:text-stone-400 border border-transparent hover:border-orange-100 dark:hover:border-orange-900"
-                >
-                  {String(childObj.name)}
-                  <svg className="w-3.5 h-3.5 opacity-40 group-hover:opacity-100 transition-opacity" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path d="M9 5l7 7-7 7" /></svg>
-                </Link>
-              )
-            })}
-          </div>
-        )}
+        
 
-        {parentBook && parentBook.available && (
-          <div className="mb-4">
-            <p className="text-[9px] font-bold uppercase tracking-widest text-stone-300 mb-1.5">Part of</p>
-            <Link
-              href={`/${parentBook.slug as string}/1`}
-              className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-orange-50 hover:bg-orange-100 text-orange-700 transition-all text-xs font-bold border border-orange-200"
-            >
-              {parentBook.name as string}
-              <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path d="M15 19l-7-7 7-7" /></svg>
-            </Link>
-          </div>
-        )}
+        
 
         <div className="flex items-center justify-between pt-3 border-t border-stone-50 dark:border-stone-800 mt-auto">
           <div>

@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
+import { ArrowUp, ArrowDown, Search, BookOpen, AlertCircle } from 'lucide-react'
 import { VEDIC_LIBRARY } from '@/lib/texts'
 import type { VedicText } from '@/lib/texts'
 
@@ -358,7 +359,7 @@ export default function RoadmapPage() {
         {/* Empty State */}
         {filteredBooks.length === 0 && (
           <div className="text-center py-20 bg-white dark:bg-stone-900 border border-stone-200/60 dark:border-stone-800 rounded-3xl">
-            <span className="text-4xl block mb-4">🔍</span>
+            <AlertCircle className="w-12 h-12 text-stone-300 dark:text-stone-700 mx-auto mb-4" />
             <h3 className="text-lg font-black text-stone-800 dark:text-stone-200 mb-2">No scriptures match your filter</h3>
             <p className="text-stone-400 dark:text-stone-500 text-sm">Try tweaking your category tab or search query.</p>
           </div>
