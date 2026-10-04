@@ -10,6 +10,7 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 ---
 
 ## Priority 0: Bugs
+- [x] `BUG-085` **Vercel Build Call Stack Exceeded**: Next.js generating 30,000+ static routes at build time causes Vercel deploy manifest to crash. Fixed by switching `generateStaticParams` to return `[]` and rely on ISR.
 - [x] `BUG-084` **Vercel Build GLIBC Error**: Fix Turbopack bundling native `sqlite3` addon causing GLIBC_2.38 missing error on Vercel build container.
 - [x] `BUG-081` **Search Page Performance Jitter**: Client-side filtering lag during multi-scripture queries; optimize rendering loops and filter states.
 - [x] `BUG-082` **Dark Mode Contrast for Skeletons**: Auditing layout skeletons inside Vedic Lab view for low contrast ratio in dark theme mode.

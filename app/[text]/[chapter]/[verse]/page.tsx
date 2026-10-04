@@ -6,28 +6,10 @@ import { vedicDataService, type EnrichedVerse } from '@/lib/data-service'
 import { setRequestLocale } from 'next-intl/server'
 
 export async function generateStaticParams() {
-  const paths = getAllTextChapterPaths()
-  const params: { text: string, chapter: string, verse: string }[] = []
-
-  for (const p of paths) {
-    const chapterData = await vedicDataService.getChapterData(p.text, parseInt(p.chapter), {
-      includeAI: false,
-      language: 'en'
-    })
-    if (chapterData?.verses?.length) {
-      for (const verse of chapterData.verses) {
-        const v = verse as EnrichedVerse
-        params.push({ text: p.text, chapter: p.chapter, verse: String(v.verse) })
-      }
-    } else {
-      // Fallback: generate first 10 verses if data service unavailable at build time
-      for (let v = 1; v <= 10; v++) {
-        params.push({ text: p.text, chapter: p.chapter, verse: String(v) })
-      }
-    }
-  }
-
-  return params
+  // To prevent "Maximum call stack size exceeded" during Vercel deployment
+  // due to 30,000+ statically generated verse paths, we return an empty array here.
+  // Next.js will generate these pages on-demand at runtime and cache them (ISR).
+  return []
 }
 
 // Allow on-demand rendering for verse numbers not pre-generated (e.g. combined shlokas)
