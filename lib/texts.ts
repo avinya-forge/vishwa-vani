@@ -503,8 +503,11 @@ export const SCRIPTURE_READINESS_SCORES: Record<string, number> = {
 
 /** Check if strict demo gating is enabled */
 export function isStrictDemoGatingEnabled(): boolean {
-  // Always true: The user requested anything not 100% complete should not be displayed
-  return true;
+  if (process.env.STRICT_DEMO_GATING === 'false') return false;
+  if (process.env.NEXT_PUBLIC_STRICT_DEMO === 'false') return false;
+  if (process.env.STRICT_DEMO_GATING === 'true') return true;
+  if (process.env.NEXT_PUBLIC_STRICT_DEMO === 'true') return true;
+  return false;
 }
 
 /** Get a text by its URL slug */

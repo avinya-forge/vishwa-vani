@@ -48,7 +48,7 @@ describe('POST /api/feedback', () => {
     const res = await POST(mockRequest({ type: 'Bug', message: 'Too short' })) as unknown as { status: number, json: () => Promise<unknown> }
     expect(res.status).toBe(400)
     const data = await res.json() as { error: string }
-    expect(data.error).toBe('Message must be at least 200 characters long')
+    expect(data.error).toBe('Message must be at least 50 characters long')
   })
 
   it('simulates success in test env (or when missing token)', async () => {
