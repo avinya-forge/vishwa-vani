@@ -3,6 +3,7 @@ import { getTranslations } from 'next-intl/server'
 import { getLibraryStats, getVedicHierarchy, VEDIC_LIBRARY } from '@/lib/texts'
 import { setRequestLocale } from 'next-intl/server'
 import BeginReadingButton from '@/components/ui/begin-reading-button'
+import PipelineTracker from '@/components/ui/pipeline-tracker'
 
 export default async function Home() {
   setRequestLocale('en')
@@ -84,6 +85,8 @@ export default async function Home() {
           ))}
         </div>
       </section>
+
+      <PipelineTracker />
 
       {/* ═══════ LIBRARY ═══════ */}
       <section className="max-w-[1200px] mx-auto px-4 sm:px-6 pb-20">

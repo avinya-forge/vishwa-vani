@@ -17,13 +17,16 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 - [x] `SEC-004` **Robots.txt & Crawling Prevention**: Deploy a `robots.txt` that restricts aggressive crawler bot access to the API and text content.
 - [x] `SEC-005` **Gating Incomplete Content**: Enforced strict gating in `lib/texts.ts` so that *only* 100% completed scripture tiers are available to the UI. Anything incomplete is hidden from the live deployment.
 - [ ] `SEC-006` **Zero-Warning Dependency Audit**: Deep update of all npm packages to eliminate deprecation warnings (e.g., glob, inflight, abab) and patch remaining transitive vulnerabilities via forced updates or overrides.
+- [ ] `SEC-007` **Package Unification & Dependency Workflow**: Remove `axios` and standardize entirely on Next.js native `fetch`. Implement an automated Dependabot workflow to ensure dependencies remain current without breaking builds.
+- [ ] `SEC-008` **Security Hardening (Hack-Proofing)**: Implement strict HTTP Security Headers in `next.config.ts`, add `zod` for strict API input validation, and integrate rate limiting (e.g., Redis via `@upstash/ratelimit`) to protect against DDoS.
+- [ ] `SEC-009` **Web Scraping Resilience**: Upgrade internal crawler scripts (`crawlee`/`playwright`) with stealth plugins, human emulation, and proxy rotation to prevent data acquisition blocks.
 
 ---
 
 ## EPIC 2: Customer First Impression & Live Success (Priority 1)
 *Enhancing the production deployment UX so that users arriving on the platform get a flawless first impression.*
 
-- [ ] `UX-001` **Pipeline Visibility UI**: Display a visually appealing "Pipeline Data Status" tracker on the landing page showing what texts are currently live and what is coming next.
+- [x] `UX-001` **Pipeline Visibility UI**: Display a visually appealing "Pipeline Data Status" tracker on the landing page showing what texts are currently live and what is coming next.
 - [x] `UX-002` **Console Error Resolution**: Clean up benign hydration and layout errors (e.g., ResizeObserver loop) in `app/layout.tsx` to keep the console clean for technical visitors.
 - [x] `BUG-081` **Search Page Performance Jitter**: Client-side filtering lag during multi-scripture queries; optimize rendering loops and filter states.
 - [x] `BUG-082` **Dark Mode Contrast for Skeletons**: Auditing layout skeletons inside Vedic Lab view for low contrast ratio in dark theme mode.
@@ -57,6 +60,14 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 - [x] `FEAT-SEM-001` **Define Tattva Ontology Schema**: Define a JSON schema (`types/ontology.ts`) for global semantic concepts (Tattvas) such as "Dharma", "Brahman", "Atman", and "Karma".
 - [x] `FEAT-SEM-002` **Static Ontology Seed Mapping**: Create `data/ontology/tattvas.json` containing initial hand-curated linkages across Bhagavad Gita and Upanishads.
 - [ ] `FEAT-SEM-004` **Dynamic Concept Cloud UI**: Build a visualization graph in the Vedic Lab allowing users to explore Tattvas and jump directly to connected verses.
+
+---
+
+## EPIC 5: Core Infrastructure & Authentication (Priority 1)
+*Scaling the platform to support personalized user accounts and robust production data storage.*
+
+- [ ] `INFRA-001` **Authentication Setup (OAuth) & User Strategy**: Install and configure `next-auth` (Auth.js) to support seamless Google and Facebook sign-in flows. Execute Step 1 of the data collection strategy defined in `docs/user-registration-goals.md` (tracking reading progress, preferences, and roadmap votes).
+- [ ] `INFRA-002` **Production Database & ORM Migration**: Migrate away from local `better-sqlite3` to a production-ready Serverless PostgreSQL database (e.g., Vercel Postgres) and integrate Prisma or Drizzle ORM for secure schema management and data integrity.
 
 ---
 
