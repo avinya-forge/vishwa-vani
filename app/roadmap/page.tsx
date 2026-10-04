@@ -5,12 +5,12 @@ import Link from 'next/link'
 import { VEDIC_LIBRARY } from '@/lib/texts'
 import type { VedicText } from '@/lib/texts'
 
-// Define completeness scores based on our silver data status
+// Define completeness scores based on our silver data status and backlog progress
 const COMPLETENESS_SCORES: Record<string, number> = {
-  'bhagavad-gita': 100,
+  'bhagavad-gita': 90,
   'isha-upanishad': 100,
-  'mahabharata': 15,
-  'bhagavata-purana': 5,
+  'mahabharata': 60,
+  'bhagavata-purana': 52,
   'kena-upanishad': 5,
   'yoga-sutras': 5,
   'rigveda': 0,
@@ -123,14 +123,25 @@ export default function RoadmapPage() {
                           (book.description && book.description.toLowerCase().includes(searchQuery.toLowerCase()))
     return matchesTab && matchesSearch
   }).sort((a, b) => {
-    // Put available (live) books at the very bottom or top? Let's sort unavailable (voting) by votes desc, available at bottom
+    // 1. Available (live) books always at the top
     if (a.available !== b.available) {
-      return a.available ? 1 : -1 // Available books go to the bottom
+      return a.available ? -1 : 1 
     }
+    
+    // 2. If both are unavailable, sort by COMPLETENESS score descending (closest to 100% first)
     if (!a.available) {
-      // Sort by votes desc
+      const completenessA = COMPLETENESS_SCORES[a.slug] || 0
+      const completenessB = COMPLETENESS_SCORES[b.slug] || 0
+      
+      if (completenessA !== completenessB) {
+        return completenessB - completenessA
+      }
+      
+      // 3. Tie-breaker: sort by votes desc
       return (votes[b.slug] || 0) - (votes[a.slug] || 0)
     }
+    
+    // 4. If both are available, sort alphabetically
     return a.name.localeCompare(b.name)
   })
 

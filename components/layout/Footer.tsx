@@ -31,7 +31,8 @@ export default function Footer() {
                { name: 'Vedic Lab', href: '/lab' },
                { name: 'Gita Research', href: '/bhagavad-gita/1' },
                { name: 'Ingestion Roadmap', href: '/roadmap' },
-               { name: 'Shastra Search', href: '/search' }
+               { name: 'Shastra Search', href: '/search' },
+               { name: 'Developer Info', href: '/developer' }
              ].map(item => (
                 <a key={item.name} href={item.href} className="text-stone-400 hover:text-white transition-colors text-left text-base font-bold flex items-center gap-2 group">
                    <div className="w-2 h-2 bg-stone-700 group-hover:bg-orange-600 group-hover:scale-125 transition-all rounded-full" />
