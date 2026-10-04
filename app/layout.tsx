@@ -1,12 +1,12 @@
 import { Inter, Noto_Serif_Devanagari, Outfit } from 'next/font/google'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
-import { GoogleAnalytics } from '@next/third-parties/google'
-import { Analytics } from '@vercel/analytics/react'
 import LocaleProvider from '@/components/layout/locale-provider'
 import SecurityShield from '@/components/layout/security-shield'
 import { setRequestLocale } from 'next-intl/server'
 import FeedbackWidget from '@/components/ui/feedback-widget'
+import CookieConsent from '@/components/ui/cookie-consent'
+import AnalyticsManager from '@/components/layout/analytics-manager'
 import { ThemeProvider } from '@/components/theme-provider'
 import BetaBanner from '@/components/ui/beta-banner'
 import './globals.css'
@@ -118,8 +118,8 @@ export default async function RootLayout({
           }}
         />
         {/* GA Measurement ID — set NEXT_PUBLIC_GA_ID env var to enable */}
-        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID || "G-6C2H9NLMJM"} />
-        <Analytics />
+        <CookieConsent />
+        <AnalyticsManager />
       </body>
     </html>
   )
