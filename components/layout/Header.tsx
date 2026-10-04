@@ -135,8 +135,7 @@ export default function Header() {
                             }}
                           className="flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-orange-50 dark:hover:bg-orange-950/40 hover:text-orange-700 dark:hover:text-orange-400 transition-all border border-transparent hover:border-orange-100 dark:hover:border-orange-900 group bg-white dark:bg-stone-800 shadow-sm"
                         >
-                          <span className="text-[17px] opacity-80 group-hover:opacity-100 transition-opacity">{book.icon || '📜'}</span>
-                          <div>
+                          <div className="w-full">
                             <div className="text-xs font-bold text-stone-800 dark:text-stone-200 group-hover:text-orange-700 dark:group-hover:text-orange-400 leading-tight">
                               {book.name}
                             </div>
@@ -163,11 +162,11 @@ export default function Header() {
             </Link>
 
             <Link href="/lab" className={`flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-bold transition-all focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:outline-none ${pathname === '/lab' ? 'text-orange-600 bg-orange-50 dark:bg-orange-950/40' : 'text-orange-600 hover:bg-orange-50 dark:hover:bg-orange-950/20'}`}>
-              <span className="text-[13px]">🧪</span> Vedic Labs
+              Vedic Labs
             </Link>
 
             <Link href="/roadmap" className={`flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-bold transition-all focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:outline-none ${pathname === '/roadmap' ? 'text-orange-600 bg-orange-50 dark:bg-orange-950/40' : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 hover:bg-stone-50 dark:hover:bg-stone-800'}`}>
-              <span className="text-[13px]">🛣️</span> Roadmap
+              Roadmap
             </Link>
           </div>
         </div>
@@ -196,7 +195,7 @@ export default function Header() {
             }}
             className="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 bg-stone-900 hover:bg-orange-600 text-white text-[11px] font-bold rounded-lg transition-all shadow-sm focus:ring-2 focus:ring-offset-2 focus:ring-stone-900"
           >
-            <span className="text-[13px]">📜</span> Begin Reading
+            Begin Reading
           </Link>
 
           {/* Mobile hamburger */}
