@@ -35,11 +35,11 @@ export default async function Home() {
           Eternal Wisdom · Open Access
         </div>
 
-        <h1 className="text-[clamp(2.25rem,5vw+1rem,4.5rem)] font-serif font-black text-stone-900 dark:text-stone-100 leading-[1.1] tracking-tight mb-6 text-balance">
+        <h1 className="text-[clamp(1.5rem,3.5vw,2.75rem)] whitespace-nowrap font-serif font-black text-stone-900 dark:text-stone-100 leading-[1.1] tracking-tight mb-6 text-balance">
           The Universal Portal to <span className="text-amber-600 dark:text-amber-400">Vedic Wisdom</span>
         </h1>
 
-        <p className="text-lg md:text-xl text-stone-600 dark:text-stone-400 max-w-3xl mx-auto leading-relaxed font-serif italic mb-10 opacity-80">
+        <p className="text-base md:text-[1.05rem] text-stone-600 dark:text-stone-400 max-w-7xl mx-auto leading-relaxed font-serif italic mb-10 opacity-80">
           &ldquo;{t('description')}&rdquo;
         </p>
 
