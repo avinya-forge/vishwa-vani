@@ -574,8 +574,7 @@ export function getVedicHierarchy() {
 
 /** Build all static paths for Next.js generateStaticParams */
 export function getAllTextChapterPaths(): Array<{ text: string; chapter: string }> {
-    return VEDIC_LIBRARY
-      .filter(t => t.available)
+    return getAvailableTexts()
       .flatMap(t =>
         Array.from({ length: t.totalChapters }, (_, i) => ({
           text: t.slug,

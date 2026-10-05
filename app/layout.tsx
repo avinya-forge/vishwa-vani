@@ -2,7 +2,7 @@ import { Inter, Noto_Serif_Devanagari, Outfit } from 'next/font/google'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import LocaleProvider from '@/components/layout/locale-provider'
-import SecurityShield from '@/components/layout/security-shield'
+
 import { setRequestLocale } from 'next-intl/server'
 import FeedbackWidget from '@/components/ui/feedback-widget'
 import CookieConsent from '@/components/ui/cookie-consent'
@@ -67,7 +67,7 @@ export default async function RootLayout({
         <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:p-4 focus:bg-white focus:text-stone-900 focus:font-bold">Skip to content</a>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <LocaleProvider>
-            <SecurityShield />
+            
             <BetaBanner />
             <Header />
             <main id="main-content" className="flex-grow">
@@ -77,23 +77,7 @@ export default async function RootLayout({
             <FeedbackWidget />
           </LocaleProvider>
         </ThemeProvider>
-        {/* Anti-Scraping / Content Protection Script */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              document.addEventListener('contextmenu', event => event.preventDefault());
-              document.addEventListener('copy', event => {
-                event.preventDefault();
-                alert("Content copying is disabled to protect textual integrity.");
-              });
-              document.addEventListener('selectstart', event => {
-                if (event.target.tagName !== 'INPUT' && event.target.tagName !== 'TEXTAREA') {
-                  event.preventDefault();
-                }
-              });
-            `,
-          }}
-        />
+
         {/* Mute benign ResizeObserver error for cleaner showcase */}
         <script
           dangerouslySetInnerHTML={{

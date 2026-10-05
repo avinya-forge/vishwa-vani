@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { notFound } from 'next/navigation'
 import { absoluteUrl } from '@/lib/site'
 import StudyClient from '@/components/shloka/study-client'
 import { getTextBySlug, getAllTextChapterPaths } from '@/lib/texts'
@@ -43,20 +44,13 @@ export default async function StudyVersePage({ params }: { params: Promise<{ tex
   
   const textMetadata = getTextBySlug(textSlug)
   if (!textMetadata) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-stone-50">
-        <div className="text-center p-8 bg-white rounded-2xl shadow-sm border border-orange-100">
-          <h2 className="text-2xl text-orange-900 mb-2">Text Not Found</h2>
-          <Link href={`/`} className="mt-6 inline-block text-orange-600 hover:text-orange-800 font-medium">
-            &larr; Return Hub
-          </Link>
-        </div>
-      </div>
-    )
+    notFound()
   }
 
+  if (!/^\d+$/.test(chapterNumber) || !/^\d+$/.test(verseNumber)) { notFound() }
+  const chapterInt = parseInt(chapterNumber, 10)
+
   let enrichedVerses: unknown[] = []
-  const chapterInt = parseInt(chapterNumber)
 
   // Use central data service for consistency and Gold-tier support
   const chapterData = await vedicDataService.getChapterData(textSlug, chapterInt, {
@@ -71,17 +65,7 @@ export default async function StudyVersePage({ params }: { params: Promise<{ tex
   const rawVerseData = enrichedVerses.find((v: unknown) => String((v as Record<string, unknown>).verse) === verseNumber)
 
   if (!rawVerseData) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-stone-50">
-        <div className="text-center p-8 bg-white rounded-2xl shadow-sm border border-orange-100">
-          <h2 className="text-2xl text-orange-900 mb-2">Verse Not Found</h2>
-          <p className="text-stone-500">We don't have the data for this verse yet.</p>
-          <Link href={`/${textSlug}/${chapterNumber}`} className="mt-6 inline-block text-orange-600 hover:text-orange-800 font-medium">
-            &larr; Return to Chapter
-          </Link>
-        </div>
-      </div>
-    )
+    notFound()
   }
 
   const _title = textMetadata.chapterNames?.[chapterNumber] || `${textMetadata.name} - Chapter ${chapterNumber}`
@@ -143,3 +127,4 @@ export async function generateMetadata({ params }: { params: Promise<{ text: str
     }
   }
 }
+

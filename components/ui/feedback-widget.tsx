@@ -26,6 +26,16 @@ export default function FeedbackWidget() {
     return () => window.removeEventListener('open-feedback', handleOpenFeedback);
   }, []);
 
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setIsOpen(false);
+    };
+    if (isOpen) {
+      window.addEventListener('keydown', handleKeyDown);
+      return () => window.removeEventListener('keydown', handleKeyDown);
+    }
+  }, [isOpen]);
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
 
@@ -74,12 +84,16 @@ export default function FeedbackWidget() {
       >
         <span className="text-sm sm:text-lg px-1 sm:px-2 flex items-center gap-2">
           <span className="group-hover:rotate-12 transition-transform duration-300">💬</span>
-          <span className="hidden xs:inline font-bold uppercase tracking-widest text-[10px] sm:text-xs">Feedback</span>
+          <span className="hidden sm:inline font-bold uppercase tracking-widest text-[10px] sm:text-xs">Feedback</span>
         </span>
       </button>
 
       {isOpen && (
-        <div className="fixed inset-0 bg-stone-900/60 flex items-center justify-center z-[1001] p-4 overflow-y-auto">
+        <div 
+          className="fixed inset-0 bg-stone-900/60 flex items-center justify-center z-[1001] p-4 overflow-y-auto"
+          role="dialog"
+          aria-modal="true"
+        >
           <div className="bg-white dark:bg-stone-900 rounded-xl shadow-2xl max-w-lg w-full p-6 relative border border-stone-100 dark:border-stone-800 my-auto">
             <button
               onClick={() => setIsOpen(false)}

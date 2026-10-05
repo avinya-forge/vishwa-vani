@@ -4,12 +4,13 @@ import crypto from 'crypto';
 import type { NVFFragment } from './nvf';
 import { migrateToNVF } from './nvf';
 
-// SECURE: Use environment variable for decryption key.
-const keySource = process.env.LAKE_SECRET_KEY || 'default-insecure-key-for-local-dev-only--';
+const isProd = process.env.NODE_ENV === 'production';
+const keySource = process.env.LAKE_KEY || process.env.LAKE_SECRET_KEY || (!isProd ? 'default-insecure-key-for-local-dev-only--' : '');
 const SECRET_KEY = Buffer.from(keySource, 'utf-8').slice(0, 32);
 
 function decrypt(encryptedText: string): string {
   if (encryptedText.startsWith('{')) return encryptedText; // Already plain text
+  if (isProd && !keySource) throw new Error('Decryption disabled in production: missing LAKE_KEY');
 
   try {
     const [ivHex, authTagHex, encryptedData] = encryptedText.split(':');
@@ -21,6 +22,7 @@ function decrypt(encryptedText: string): string {
     decrypted += decipher.final('utf8');
     return decrypted;
   } catch (e) {
+    if (isProd) throw new Error('SERVER LAKE: Decrypt failed. Failing closed.');
     console.warn('SERVER LAKE: Decrypt failed. Returning raw value.', e);
     return encryptedText;
   }

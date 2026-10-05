@@ -240,18 +240,4 @@ h1, h2, h3, h4 {
   }
 }
 
-/* ANTI-COPY PROTECTION */
-html, body {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
 
-/* Allow selection in inputs */
-input, textarea, [contenteditable] {
-  -webkit-user-select: auto;
-  -moz-user-select: auto;
-  -ms-user-select: auto;
-  user-select: auto;
-}

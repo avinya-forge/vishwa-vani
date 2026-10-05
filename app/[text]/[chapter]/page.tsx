@@ -2,6 +2,7 @@ import fs from 'fs'
 import { absoluteUrl } from '@/lib/site'
 import path from 'path'
 import Link from 'next/link'
+import { notFound } from 'next/navigation'
 import StudyClient from '@/components/shloka/study-client'
 import { getTextBySlug, getAllTextChapterPaths } from '@/lib/texts'
 import { vedicDataService } from '@/lib/data-service'
@@ -42,21 +43,22 @@ export default async function StudyChapterPage(props: Props) {
   setRequestLocale('en')
   
   const textMetadata = getTextBySlug(textSlug)
-  if (!textMetadata || !textMetadata.available) {
+  
+  if (!textMetadata) {
+    notFound()
+  }
+
+  if (!textMetadata.available) {
     return (
        <div className="min-h-screen flex items-center justify-center bg-[#FDFBF7] dark:bg-[#1C1917] px-4 py-8">
         <div className="text-center p-8 sm:p-12 bg-white dark:bg-stone-900 rounded-[2.5rem] shadow-2xl border border-stone-100 dark:border-stone-800 max-w-md w-full">
-          <h2 className="text-3xl font-serif font-black text-stone-900 dark:text-stone-100 mb-4">{!textMetadata ? 'Content Not Found' : 'Coming Soon'}</h2>
+          <h2 className="text-3xl font-serif font-black text-stone-900 dark:text-stone-100 mb-4">Coming Soon</h2>
           <p className="text-stone-500 dark:text-stone-400 font-medium text-xs leading-relaxed mb-8">
-            {!textMetadata
-              ? 'The requested scripture could not be found in our library.'
-              : `The ${textMetadata.name} is currently undergoing technical audit and will be available soon.`}
+            {`The ${textMetadata.name} is currently undergoing technical audit and will be available soon.`}
           </p>
-          {textMetadata && (
-            <div className="mb-8">
-              <ComingSoonForm bookName={textMetadata.name} bookSlug={textMetadata.slug} />
-            </div>
-          )}
+          <div className="mb-8">
+            <ComingSoonForm bookName={textMetadata.name} bookSlug={textMetadata.slug} />
+          </div>
           <Link href="/" className="inline-flex px-8 py-4 bg-stone-900 hover:bg-orange-600 text-white rounded-2xl font-black text-[10px] uppercase tracking-widest transition-all shadow-md">
             Return to Library
           </Link>
@@ -65,7 +67,10 @@ export default async function StudyChapterPage(props: Props) {
     )
   }
 
-  const chapterInt = parseInt(chapterNumber)
+  if (!/^\d+$/.test(chapterNumber)) {
+    notFound()
+  }
+  const chapterInt = parseInt(chapterNumber, 10)
 
   // Build adhyaya list for Mahabharata
   const adhyayaList = textSlug === 'mahabharata'
@@ -105,17 +110,7 @@ export default async function StudyChapterPage(props: Props) {
   });
 
   if (!chapterData) {
-    return (
-       <div className="min-h-screen flex items-center justify-center bg-[#FDFBF7] dark:bg-[#1C1917]">
-        <div className="text-center p-12 bg-white dark:bg-stone-900 rounded-[2.5rem] shadow-2xl border border-stone-100 dark:border-stone-800 max-w-md">
-          <h2 className="text-3xl font-serif font-black text-stone-900 dark:text-stone-100 mb-4">Content Not Found</h2>
-          <p className="text-stone-500 dark:text-stone-400 font-medium mb-8">The requested scripture could not be found in our library.</p>
-          <Link href="/" className="px-8 py-4 bg-stone-900 text-white rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-orange-600 transition-all">
-            Return to Library
-          </Link>
-        </div>
-      </div>
-    )
+    notFound()
   }
 
   const { verses: _enrichedVerses, navigation: _navigation, aiInsights: _aiInsights } = chapterData;
