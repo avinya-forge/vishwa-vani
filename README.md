@@ -1,38 +1,42 @@
-# 🏛️ Vishwa-Vani: The Universal Voice of Vedic Wisdom
+﻿# 🕉️ Vishwa-Vani: The Universal Voice of Vedic Wisdom
 
 [![Version](https://img.shields.io/badge/version-v1.1.0-orange.svg)](./docs/release-notes.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Build Status](https://github.com/avinya-forge/vishwa-vani/actions/workflows/ci.yml/badge.svg)](https://github.com/avinya-forge/vishwa-vani/actions)
+[![Build Status](https://github.com/avinya-forge/vishwa-vani/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/avinya-forge/vishwa-vani/actions)
 
-**Vishwa-Vani** is a high-performance, multilingual digital sanctuary for exploring the depth of Vedic literature. It serves as a "Universal Repository," providing an immersive, scholarly experience for the Bhagavad Gita, Upanishads, and the Mahabharata.
+**Vishwa-Vani** is a high-performance, open-source digital sanctuary for exploring the depth of Vedic literature. It serves as a unified repository, providing an immersive, scholarly experience for texts like the **Bhagavad Gita**, the **Mahabharata**, the **Upanishads**, and the **Puranas**.
 
-## ✨ Core Features
+Built with an unwavering focus on **accessibility**, **performance**, and **design aesthetics**, Vishwa-Vani combines centuries of ancient wisdom with the cutting edge of modern web architecture (Next.js 14 App Router, React Server Components, and Edge computing).
 
-- **Lean UI Template**: A minimalist-by-default interface focusing on the sacred text, with opt-in scholarly depth.
-- **Normalized Vedic Fragment (NVF)**: A robust data schema ensuring cross-scripture consistency and AI-readiness.
-- **Multilingual Support**: Explore wisdom in English, Hindi, and Marathi with seamless locale switching.
-- **Vedic Lake Architecture**: Hybrid storage leveraging sharded JSON and SQLite WASM for retrieval of massive epics.
-- **Interactive Labs**: Specialized modules for Sanskrit grammar, meter analysis (Chhanda), and philosophical correlation.
-- **Security Shield**: Enterprise-grade Content Security Policy (CSP) and HSTS enforcement for a safe reading environment.
+---
+
+## ✨ Core Capabilities
+
+- 📚 **Comprehensive Library**: Multi-layered reading experience for the Bhagavad Gita, Mahabharata, and more.
+- 🧘 **Vedic Labs**: Interactive experimental modules for meditation (Pranayama Timer), Cosmic visualization, and consciousness mapping.
+- ⚡ **High-Performance Architecture**: SSR-first, edge-optimized routing, and minimal client payloads for instant loading.
+- 💾 **Vedic-Lake**: A custom-built, lightweight SQLite data lake for rapid semantic querying of over 30,000 verses.
+- 🌐 **Multilingual Support**: Read and search seamlessly across English, Hindi (हिंदी), Marathi (मराठी), and Sanskrit (संस्कृत).
+- 🛡️ **Enterprise Security**: Rate limiting, API guards, strict CSP, and WAF protection built directly into the application layer.
+
+---
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- **Node.js**: v20.x or higher
+- **Node.js**: v18.17.x or higher
 - **npm**: v10.x or higher
 
-### Installation
+### Installation & Local Development
 ```bash
 git clone https://github.com/avinya-forge/vishwa-vani.git
 cd vishwa-vani
 npm install
-```
 
-### Local Development
-```bash
+# Start the local development server
 npm run dev
 ```
-Visit `http://localhost:3000` to explore the library.
+Navigate to `http://localhost:3000` in your browser.
 
 ### Production Build
 ```bash
@@ -40,29 +44,40 @@ npm run build
 npm start
 ```
 
-## 📖 Documentation
+---
 
-Our documentation is maintained as a flat ledger in the `/docs` directory for maximum discoverability:
+## 📖 Documentation Hub
 
-- [Master Backlog](./docs/backlog.md) — Roadmap and task tracking.
-- [Release Notes](./docs/release-notes.md) — Version history and changelogs.
-- [Architecture Blueprint](./docs/blueprint.md) — Technical design and data models.
-- [Engineering Standards](./docs/standards.md) — Coding conventions and NVF compliance.
-- [Deployment Guide](./docs/deployment.md) — Infrastructure and domain configuration.
+Welcome to the Vishwa-Vani knowledge base. We maintain a strict "Documentation as Code" philosophy. All architectural decisions, backlogs, and standards are documented in the [`/docs`](./docs) directory.
+
+### 🧭 Product & Strategy
+- [**Vision & Scope**](./docs/vision.md) – Core product vision, features, and target audience.
+- [**Project Status**](./docs/PROJECT_STATUS.md) / [**Status Report**](./docs/status_report.md) – Executive overview and live AI-loop tracking.
+- [**Release Notes**](./docs/release-notes.md) – Version history and changelog.
+- [**Launch Announcement**](./docs/launch-announcement.md) – Go-to-market communication and release planning.
+- [**Master Backlog**](./docs/backlog.md) – Highly prioritized list of bugs, technical debt, and upcoming features.
+
+### 🏛️ Engineering & Architecture
+- [**Architecture Blueprint**](./docs/blueprint.md) – High-level system design and data models (NVF).
+- [**Architecture Decisions (ADR)**](./docs/Architecture_Decisions.md) – Historical log of key technical decisions.
+- [**Engineering Standards**](./docs/standards.md) – Coding conventions, accessibility (WCAG) rules, and security guidelines.
+- [**Deployment Guide**](./docs/deployment.md) – Vercel CI/CD pipelines, WAF, and production infrastructure.
+
+### 🎨 Design & Data
+- [**Redesign Manifest**](./docs/redesign_manifest.md) – UI/UX overhaul guidelines and aesthetic principles.
+- [**Data Ingestion Runbook**](./docs/ingestion-runbook.md) – Guidelines for transforming raw scripture into the Normalized Vedic Fragment (NVF) format.
+- [**Stotras Target List**](./docs/stotras-target-list.md) – Content acquisition roadmap for upcoming Stotras.
+- [**User Registration Goals**](./docs/user-registration-goals.md) – Future scope for Auth.js implementation.
+
+### 💼 Portfolio
+- [**Resume Guide**](./docs/resume-guide.md) – Project impact metrics and highlights for developer portfolios.
+
+---
 
 ## 🤝 Contributing
 
-We welcome contributions from scholars, engineers, and seekers. Please read our [Engineering Standards](./docs/standards.md) before submitting a Pull Request.
+Contributions are welcome! Please ensure you read our [Engineering Standards](./docs/standards.md) before submitting a Pull Request. We strictly follow the **Conventional Commits** specification and enforce an 80% unit test coverage gate in our CI/CD pipelines.
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+## 📄 License
 
-## 📜 License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
----
-*Vishwa-Vani: Turning Vedic Knowledge into a Digital Journey for the Modern World.*
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
