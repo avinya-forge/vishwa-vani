@@ -110,7 +110,7 @@ To fix the `npm install` and local build hangs on your Windows machine, please e
   - **Step 3**: Add an \A\ record for \@\ (or \ishwa-vani.co.uk\) pointing to >.76.21.21\ (Vercel's IP).
   - **Step 4**: Go to your Vercel Project Settings -> Domains -> ensure \ishwa-vani.co.uk\ is added and wait for the SSL certificate to provision.
 - [ ] \ARCH-001\ **Vedic-Lake Server-Side Search Migration**: \edic-lake.db\ (21MB) is currently public to allow client-side searching. To protect our scripture data from scraping, we must rewrite \lib/lake.ts\ to run SQLite queries on a Next.js server route instead of a Web Worker.
-- [ ] \BUG-UI-002\ **Footer Contrast**: Enhance footer contrast for accessibility on mobile devices.
+
 
 ---
 |---|---|---|
@@ -136,11 +136,7 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 ## EPIC 7: Vedic Labs UI/UX Evolution (Priority 2)
 *Transform the Experimental Sanctum from a static grid into a fluid, dynamic, and curiosity-sparking interactive experience using modern front-end techniques.*
 
-- [x] `UX-009` **Bento-Grid Layout**: Replace the basic grid layout (`grid-cols-1 md:grid-cols-2`) with an asymmetric, fluid Bento Grid (using tools like Framer Motion). Different labs should take up different aspect ratios based on importance.
-- [x] `UX-010` **Cosmic Micro-Interactions**: Integrate hover-state WebGL/Three.js particle effects or Canvas animations that respond to cursor movement to reflect the "Experimental Sanctum" theme.
-- [x] `UX-011` **Progressive Disclosure & Onboarding**: Instead of showing the full interactive lab immediately inside the grid, show a "teaser" card with dynamic data (e.g., current cosmic time, spinning chakra, breathing circle). Clicking expands it into a modal or full-page immersive view.
 - [ ] `UX-012` **Soundscapes & Haptics**: Integrate subtle spatial audio (Om resonances, wind, soft chimes) when interacting with labs (Pranayama, Meditation) and use the Web Vibration API for mobile devices.
-- [x] `UX-013` **Fluid Typography & Glassmorphism**: Upgrade the aesthetic with heavy Glassmorphism (background blurs, translucent borders) and dynamic fluid typography that scales seamlessly across device dimensions.
 
 ## EPIC 1: Security, Hardening & Content Protection (Priority 0)
 *Crucial to ensure a safe, robust, and reliable live platform without exposed vulnerabilities or easily scraped content.*
@@ -155,13 +151,11 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 
 
 ---
-- [x] `UX-014` **Footer Refactor**: Streamline footer content and reduce visual bloat.
 
 ## EPIC 5: User Identity, Auth & Progress Tracking (Priority 1)
 *Scaling the platform using 100% free open-source tools (Auth.js) and generous free-tier databases.*
 
 - [ ] `FEAT-AUTH-001` **Optional Authentication Setup**: Integrate NextAuth.js (Auth.js) with Google. This is completely free and requires no paid third-party auth providers like Auth0.
-- [x] `FEAT-AUTH-002` **Resume Reading & Learning Guide**: Build a "Continue Reading" tracking system. Use `localStorage` for anonymous users (free) and migrate to the Database once a user signs in.
 - [ ] `INFRA-002` **Production Database Migration (Free Tier)**: Migrate away from local `better-sqlite3` to a production-ready serverless database. We will use Turso (SQLite) or Vercel Postgres, both of which have extremely generous free tiers.
 
 ---

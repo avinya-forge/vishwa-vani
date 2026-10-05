@@ -432,3 +432,10 @@
 - `UX-013` **Fluid Typography & Glassmorphism**: Pushed the aesthetic limits with heavy background blurs (backdrop-blur-3xl) and responsive font scaling.
 - `UX-010` **Cosmic Micro-Interactions**: Integrated an interactive canvas particle background that responds to mouse movement in the Experimental Sanctum.
 - `UX-011` **Progressive Disclosure**: Lab matrix cards now collapse into compact teaser cards and gracefully expand using React state and glassmorphic blurs when clicked.
+- [x] `UX-009` **Bento-Grid Layout**: Replace the basic grid layout (`grid-cols-1 md:grid-cols-2`) with an asymmetric, fluid Bento Grid (using tools like Framer Motion). Different labs should take up different aspect ratios based on importance.
+- [x] `UX-010` **Cosmic Micro-Interactions**: Integrate hover-state WebGL/Three.js particle effects or Canvas animations that respond to cursor movement to reflect the "Experimental Sanctum" theme.
+- [x] `UX-011` **Progressive Disclosure & Onboarding**: Instead of showing the full interactive lab immediately inside the grid, show a "teaser" card with dynamic data (e.g., current cosmic time, spinning chakra, breathing circle). Clicking expands it into a modal or full-page immersive view.
+- [x] `UX-013` **Fluid Typography & Glassmorphism**: Upgrade the aesthetic with heavy Glassmorphism (background blurs, translucent borders) and dynamic fluid typography that scales seamlessly across device dimensions.
+- [x] `UX-014` **Footer Refactor**: Streamline footer content and reduce visual bloat.
+- [x] `FEAT-AUTH-002` **Resume Reading & Learning Guide**: Build a "Continue Reading" tracking system. Use `localStorage` for anonymous users (free) and migrate to the Database once a user signs in.
+- [x] `BUG-UI-002` **Footer Contrast**: Enhanced footer contrast for accessibility on mobile devices.
