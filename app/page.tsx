@@ -122,7 +122,7 @@ export default async function Home() {
 
 function BookCard({ book, locale }: { book: Record<string, unknown>, locale: string }) {
   const name = locale === 'hi' ? book.nameHi : locale === 'mr' ? book.nameMr : book.name
-  const isAvailable = book.available
+  const isAvailable = Boolean(book.available)
 
   const parentBook = book.parent ? VEDIC_LIBRARY.find(b => b.slug === book.parent as string) : null
   const childBooks = book.children ? (book.children as string[]).map((slug: string) => VEDIC_LIBRARY.find(b => b.slug === slug)).filter(Boolean) : []

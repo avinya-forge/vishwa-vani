@@ -21,7 +21,7 @@ export async function POST(request: Request) {
 
     if (!parseResult.success) {
       return NextResponse.json(
-        { error: parseResult.error.errors[0].message, code: 'VALIDATION_ERROR', details: parseResult.error.format() },
+        { error: parseResult.error.issues[0].message, code: 'VALIDATION_ERROR', details: parseResult.error.format() },
         { status: 400 }
       )
     }
