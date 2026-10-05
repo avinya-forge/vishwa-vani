@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
-import { Code2, Github, Mail, Send, Terminal, Cpu, Users, HeartHandshake, Linkedin, FileText, User } from 'lucide-react'
+import { Code2, Code, Mail, Send, Terminal, Cpu, Users, HeartHandshake, Briefcase, FileText, User } from 'lucide-react'
 
 export default function DeveloperPage() {
   const [feedback, setFeedback] = useState('')
@@ -58,7 +58,7 @@ export default function DeveloperPage() {
             </p>
             <div className="flex flex-wrap items-center gap-4">
               <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noreferrer" className="flex items-center gap-2 px-4 py-2 bg-[#0A66C2] text-white rounded-xl text-xs font-bold hover:bg-[#004182] transition-colors shadow-sm">
-                <Linkedin className="w-4 h-4" />
+                <Briefcase className="w-4 h-4" />
                 LinkedIn
               </a>
               <a href="/resume.pdf" target="_blank" rel="noreferrer" className="flex items-center gap-2 px-4 py-2 bg-stone-800 dark:bg-stone-700 text-white rounded-xl text-xs font-bold hover:bg-stone-700 dark:hover:bg-stone-600 transition-colors shadow-sm">
@@ -66,7 +66,7 @@ export default function DeveloperPage() {
                 Resume / CV
               </a>
               <a href="https://github.com/vishwa-vani" target="_blank" rel="noreferrer" className="flex items-center gap-2 px-4 py-2 bg-stone-100 dark:bg-stone-800 text-stone-700 dark:text-stone-300 rounded-xl text-xs font-bold hover:bg-stone-200 dark:hover:bg-stone-700 transition-colors border border-stone-200 dark:border-stone-700 shadow-sm">
-                <Github className="w-4 h-4" />
+                <Code className="w-4 h-4" />
                 GitHub
               </a>
             </div>
@@ -102,7 +102,7 @@ export default function DeveloperPage() {
             </p>
             <div className="space-y-4">
               <a href="https://github.com/vishwa-vani" target="_blank" rel="noreferrer" className="flex items-center gap-3 text-sm font-bold text-stone-700 dark:text-stone-300 hover:text-orange-600 dark:hover:text-orange-400 transition-colors">
-                <Github className="w-5 h-5" />
+                <Code className="w-5 h-5" />
                 View Repository on GitHub
               </a>
               <a href="mailto:hello@vishwavani.com" className="flex items-center gap-3 text-sm font-bold text-stone-700 dark:text-stone-300 hover:text-orange-600 dark:hover:text-orange-400 transition-colors">

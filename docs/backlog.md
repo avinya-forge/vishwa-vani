@@ -88,6 +88,11 @@ To fix the `npm install` and local build hangs on your Windows machine, please e
   - Add a Folder exclusion for your exact project directory: `D:\Code\avinya-forge\vishwa-vani`.
   - *Why?* Windows Defender aggressively scans massive `node_modules` deletions and creations, which can cause `npm cache clean` or `npm install` to hang infinitely.
 
+
+- [ ] **GitHub Actions CI/CD Check**:
+  - We already have a `.github/workflows/ci-cd.yml` file! It runs `npm run build` on every push to `main` and on Pull Requests.
+  - *How to use*: Before relying on Vercel, look at the **Actions** tab on your GitHub repository. It will replicate the Vercel build and catch errors (like missing Lucide icons) so you can fix them before Vercel tries to deploy. You can also enforce this by turning on branch protection rules in GitHub (Settings -> Branches -> Add branch protection rule -> Require status checks to pass).
+
 - [ ] **Install Visual Studio C++ Build Tools**:
   - Open an Administrator PowerShell.
   - Run: `npm install -g windows-build-tools` (Note: this is deprecated but sometimes works) OR download the **Visual Studio Build Tools** installer from Microsoft.
