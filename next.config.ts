@@ -7,6 +7,11 @@ const nextConfig: NextConfig = {
   // output: 'export', // Disabled for API functionality
   devIndicators: false,
   serverExternalPackages: ['better-sqlite3', 'sqlite3'],
+  outputFileTracingIncludes: {
+    '/api/**/*': ['./public/**/*.db'],
+    '/[text]/[chapter]': ['./public/**/*.db'],
+    '/[text]/[chapter]/[verse]': ['./public/**/*.db'],
+  },
   images: {
     unoptimized: true,
   },
