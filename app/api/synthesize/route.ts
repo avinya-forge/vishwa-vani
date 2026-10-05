@@ -2,8 +2,6 @@ import { NextResponse } from 'next/server'
 import { GoogleGenerativeAI } from '@google/generative-ai'
 import { z } from 'zod'
 
-const SUPPORTED_LANGUAGES = ['en', 'hi', 'mr'] as const
-type Language = typeof SUPPORTED_LANGUAGES[number]
 
 const synthesizeSchema = z.object({
   verseId: z.string().min(1, 'Missing or invalid verseId.'),

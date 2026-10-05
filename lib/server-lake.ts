@@ -43,9 +43,9 @@ export async function getVersesFromLakeServer(textSlug: string, chapter: number,
     const rows = db.prepare(query).all(textSlug, chapter);
     db.close();
 
-    const fragments = rows.map((row: any) => {
+    const fragments = rows.map((row: unknown) => {
       try {
-        const decrypted = decrypt(row.content as string);
+        const decrypted = decrypt((row as { content: string }).content);
         const raw = JSON.parse(decrypted);
         return migrateToNVF(raw, textSlug, chapter);
       } catch (e) {

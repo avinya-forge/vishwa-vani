@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { ArrowUp, ArrowDown, Search, BookOpen, AlertCircle } from 'lucide-react'
+import { AlertCircle } from 'lucide-react'
 import { VEDIC_LIBRARY } from '@/lib/texts'
 import type { VedicText } from '@/lib/texts'
 
@@ -217,7 +217,7 @@ export default function RoadmapPage() {
             ))}
           </div>
 
-          {/* Search query field */}
+          {/* query field */}
           <div className="relative w-full md:max-w-xs">
             <span className="absolute inset-y-0 left-4 flex items-center pointer-events-none text-stone-400 dark:text-stone-600">🔍</span>
             <input

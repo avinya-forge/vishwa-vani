@@ -23,7 +23,7 @@ const outfit = Outfit({
 })
 
 import type { Metadata } from 'next'
-import { SITE_URL, absoluteUrl } from '@/lib/site'
+import { SITE_URL, } from '@/lib/site'
 
 export const metadata: Metadata = {
     metadataBase: new URL(SITE_URL),

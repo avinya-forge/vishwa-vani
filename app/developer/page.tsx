@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
-import { Code2, Code, Mail, Send, Terminal, Cpu, Users, HeartHandshake, Briefcase, FileText, User } from 'lucide-react'
+import { Code, Mail, Send, Terminal, Cpu, Users, HeartHandshake, Briefcase, FileText, User } from 'lucide-react'
 
 export default function DeveloperPage() {
   const [feedback, setFeedback] = useState('')

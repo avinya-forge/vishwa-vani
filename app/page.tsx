@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { getTranslations } from 'next-intl/server'
-import { getLibraryStats, getVedicHierarchy, VEDIC_LIBRARY } from '@/lib/texts'
+import { getLibraryStats, getVedicHierarchy } from '@/lib/texts'
 import { setRequestLocale } from 'next-intl/server'
 import BeginReadingButton from '@/components/ui/begin-reading-button'
 import PipelineTracker from '@/components/ui/pipeline-tracker'
@@ -123,9 +123,6 @@ export default async function Home() {
 function BookCard({ book, locale }: { book: Record<string, unknown>, locale: string }) {
   const name = locale === 'hi' ? book.nameHi : locale === 'mr' ? book.nameMr : book.name
   const isAvailable = Boolean(book.available)
-
-  const parentBook = book.parent ? VEDIC_LIBRARY.find(b => b.slug === book.parent as string) : null
-  const childBooks = book.children ? (book.children as string[]).map((slug: string) => VEDIC_LIBRARY.find(b => b.slug === slug)).filter(Boolean) : []
 
   return (
     <div className={`group relative bg-white dark:bg-stone-900/80 rounded-xl border border-stone-200/80 dark:border-stone-800 overflow-hidden transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] flex flex-col h-full

@@ -2,8 +2,8 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { absoluteUrl } from '@/lib/site'
 import StudyClient from '@/components/shloka/study-client'
-import { getTextBySlug, getAllTextChapterPaths } from '@/lib/texts'
-import { vedicDataService, type EnrichedVerse } from '@/lib/data-service'
+import { getTextBySlug, } from '@/lib/texts'
+import { vedicDataService, } from '@/lib/data-service'
 import { setRequestLocale } from 'next-intl/server'
 
 export async function generateStaticParams() {
