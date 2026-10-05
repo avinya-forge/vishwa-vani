@@ -133,6 +133,7 @@ const ConsciousnessStateMapper = dynamic(() => import('@/components/lab/consciou
   loading: () => <LabSkeleton />
 })
 const VishnuPuranaCosmicExplorer = dynamic(() => import('@/components/lab/vishnu-purana-cosmic-explorer'), {
+import CosmicCanvas from '@/components/lab/cosmic-canvas'
   ssr: false,
   loading: () => <LabSkeleton />
 })
@@ -142,6 +143,7 @@ export default function VedicLabPage() {
     <main className="min-h-screen bg-stone-50 dark:bg-[#0C0B0A] text-stone-900 dark:text-stone-200 selection:bg-orange-500/30 pb-32 pt-20 relative overflow-hidden transition-colors duration-500">
       {/* 🌌 COSMIC BACKGROUND */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,_#FFEDD5_0%,_transparent_50%)] dark:bg-[radial-gradient(circle_at_50%_0%,_#2A1A0A_0%,_transparent_50%)] opacity-40 dark:opacity-100" />
+      <CosmicCanvas />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="flex flex-col md:flex-row justify-between items-end gap-10 mb-20">

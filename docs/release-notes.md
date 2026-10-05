@@ -430,3 +430,5 @@
 - `FEAT-AUTH-002` **Resume Reading**: Automatically tracks your read position and dynamically renders a 'Resume' button on the landing page.
 - `UX-009` **Bento-Grid Layout**: Redesigned the Vedic Labs matrix into an asymmetric, fluid Bento-box layout.
 - `UX-013` **Fluid Typography & Glassmorphism**: Pushed the aesthetic limits with heavy background blurs (backdrop-blur-3xl) and responsive font scaling.
+- `UX-010` **Cosmic Micro-Interactions**: Integrated an interactive canvas particle background that responds to mouse movement in the Experimental Sanctum.
+- `UX-011` **Progressive Disclosure**: Lab matrix cards now collapse into compact teaser cards and gracefully expand using React state and glassmorphic blurs when clicked.

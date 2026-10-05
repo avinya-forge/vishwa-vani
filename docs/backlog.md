@@ -76,6 +76,25 @@
 | Batch | Items | Theme | Est. |
 |---
 
+
+## 🚨 HUMAN ACTION REQUIRED (Manual Setup & Exclusions)
+
+To fix the `npm install` and local build hangs on your Windows machine, please execute the following steps manually:
+
+- [ ] **Windows Defender Exclusion**:
+  - Open **Windows Security** -> **Virus & threat protection**.
+  - Under **Virus & threat protection settings**, click **Manage settings**.
+  - Scroll down to **Exclusions** and click **Add or remove exclusions**.
+  - Add a Folder exclusion for your exact project directory: `D:\Code\avinya-forge\vishwa-vani`.
+  - *Why?* Windows Defender aggressively scans massive `node_modules` deletions and creations, which can cause `npm cache clean` or `npm install` to hang infinitely.
+
+- [ ] **Install Visual Studio C++ Build Tools**:
+  - Open an Administrator PowerShell.
+  - Run: `npm install -g windows-build-tools` (Note: this is deprecated but sometimes works) OR download the **Visual Studio Build Tools** installer from Microsoft.
+  - In the installer, select **Desktop development with C++** and install the Windows SDK.
+  - *Why?* The `better-sqlite3` and `@swc/core` packages require native C++ compilation bindings on Windows. Without these tools, `npm install` fails to compile the native bindings and breaks `next build`.
+
+
 ## EPIC 00: TOP-20 LIVE PRODUCTION FIXES (Priority 0 - URGENT)
 *Critical production stability, security, and compliance fixes identified during live audit.*
 
@@ -113,8 +132,8 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 *Transform the Experimental Sanctum from a static grid into a fluid, dynamic, and curiosity-sparking interactive experience using modern front-end techniques.*
 
 - [x] `UX-009` **Bento-Grid Layout**: Replace the basic grid layout (`grid-cols-1 md:grid-cols-2`) with an asymmetric, fluid Bento Grid (using tools like Framer Motion). Different labs should take up different aspect ratios based on importance.
-- [ ] `UX-010` **Cosmic Micro-Interactions**: Integrate hover-state WebGL/Three.js particle effects or Canvas animations that respond to cursor movement to reflect the "Experimental Sanctum" theme.
-- [ ] `UX-011` **Progressive Disclosure & Onboarding**: Instead of showing the full interactive lab immediately inside the grid, show a "teaser" card with dynamic data (e.g., current cosmic time, spinning chakra, breathing circle). Clicking expands it into a modal or full-page immersive view.
+- [x] `UX-010` **Cosmic Micro-Interactions**: Integrate hover-state WebGL/Three.js particle effects or Canvas animations that respond to cursor movement to reflect the "Experimental Sanctum" theme.
+- [x] `UX-011` **Progressive Disclosure & Onboarding**: Instead of showing the full interactive lab immediately inside the grid, show a "teaser" card with dynamic data (e.g., current cosmic time, spinning chakra, breathing circle). Clicking expands it into a modal or full-page immersive view.
 - [ ] `UX-012` **Soundscapes & Haptics**: Integrate subtle spatial audio (Om resonances, wind, soft chimes) when interacting with labs (Pranayama, Meditation) and use the Web Vibration API for mobile devices.
 - [x] `UX-013` **Fluid Typography & Glassmorphism**: Upgrade the aesthetic with heavy Glassmorphism (background blurs, translucent borders) and dynamic fluid typography that scales seamlessly across device dimensions.
 
