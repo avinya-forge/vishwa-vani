@@ -87,3 +87,162 @@ Vishwa-Vani operates under a strict, AI-driven division of labor:
 **Next milestone**: Edge-hosted SQLite data ingestion architecture for Mahabharata scale and integration of Semantic Deep-Linking Protocol.
 
 _Last updated: 2026-04-20 — Claude (The Architect), SDLC v5.1_
+---
+
+# User Registration & Data Collection Strategy (Phase 1)
+
+## Primary Goals for User Registration
+The introduction of user accounts (`next-auth`) is designed to move Vishwa-Vani from a static library to a personalized spiritual and educational platform. 
+
+### 1. Personalized Learning & Reading Progress
+* **Goal**: Allow users to pick up exactly where they left off.
+* **Data to Collect**: 
+  - `last_read_verse` (Book, Chapter, Verse).
+  - `bookmarks` (Saved verses for later reference).
+  - `reading_history` (Timestamped log of completed chapters).
+* **Benefit**: Deepens user engagement; users don't lose their place in massive texts like the Mahabharata.
+
+### 2. Preference & Customization Memory
+* **Goal**: Persist user UI/UX and localization preferences across devices.
+* **Data to Collect**: 
+  - `preferred_language` (e.g., English, Hindi, Sanskrit).
+  - `preferred_script` (e.g., Devanagari vs IAST vs ITRANS).
+  - `theme` (Dark/Light/Sepia).
+  - `preferred_commentary` (e.g., Defaulting to Prabhupada or Sankaracharya).
+* **Benefit**: Creates a frictionless, instantly familiar experience on every login.
+
+### 3. Community Curation & Feedback
+* **Goal**: Understand which translations or purports are resonating or if there are errors.
+* **Data to Collect**: 
+  - `verse_upvotes` / `commentary_helpful_votes`.
+  - `error_reports` (Reported typos or translation issues linked to user ID to prevent spam).
+* **Benefit**: Crowdsources quality control and highlights the most impactful verses.
+
+### 4. Roadmap Prioritization & Engagement
+* **Goal**: Use real user demand to drive our data acquisition pipeline.
+* **Data to Collect**: 
+  - `book_votes` (Which scripture users want next, tied to authenticated accounts to prevent manipulation).
+* **Benefit**: Aligns our development roadmap (like focusing on Bhagavata Purana vs Garuda Purana) with actual user demand.
+
+## Step 1 Execution Plan
+1. **Schema Design**: Update Prisma/Drizzle schema to include `User`, `Session`, `ReadingProgress`, and `UserPreferences` tables.
+2. **OAuth Integration**: Implement Google and Facebook providers via `next-auth` to ensure one-click, low-friction sign-ups.
+3. **Telemetry & Analytics**: Anonymously aggregate reading completion rates to understand drop-off points in large texts.
+
+---
+
+# Vishwa-Vani: Stotras & Stuties Target List
+
+**Goal**: Achieve the canonical target of 100 Chapters (individual Stotras/Hymns) and approximately 1,000 verses.
+**Current Status**: Initial 17 stotras/verses ingested (`STOTRAS-BASE-ACQ`).
+
+This document outlines the exact target list of Stotras to be acquired, translated, and integrated into the Vishwa-Vani platform under the **Stotras & Stuties** text.
+
+## 1. Major Sahasranamas (The Thousand Names) - 441 Verses
+1. **Vishnu Sahasranama** (108 verses) - *From Mahabharata (Anushasana Parva)*
+2. **Lalita Sahasranama** (183 verses) - *From Brahmanda Purana*
+3. **Shiva Sahasranama** (150 verses) - *From Mahabharata / Linga Purana*
+
+## 2. The Great Laharis (Waves of Devotion) - 200 Verses
+4. **Soundarya Lahari** (100 verses) - *Adi Shankaracharya*
+5. **Sivananda Lahari** (100 verses) - *Adi Shankaracharya*
+
+## 3. Foundational Suktams (Vedic Hymns) - 61 Verses
+6. **Purusha Suktam** (16 verses) - *Rigveda*
+7. **Sri Suktam** (16 verses) - *Rigveda Khilani*
+8. **Narayana Suktam** (13 verses) - *Mahanarayana Upanishad*
+9. **Rudra Suktam / Namakam** (11 Anuvakas / verses) - *Yajurveda*
+10. **Ganesha Atharvashirsha** (5 verses) - *Atharvaveda*
+
+## 4. Key Philosophical Stotras (Advaita) - 49 Verses
+11. **Bhaja Govindam (Mohamudgara)** (33 verses) - *Adi Shankaracharya*
+12. **Dakshinamurthy Stotram** (10 verses) - *Adi Shankaracharya*
+13. **Nirvana Shatakam (Atma Shatakam)** (6 verses) - *Adi Shankaracharya*
+
+## 5. Devotional Ashtakams (8-Verse Hymns) - 56 Verses
+14. **Lingashtakam** (8 verses)
+15. **Bilvashtakam** (8 verses)
+16. **Kalabhairava Ashtakam** (8 verses)
+17. **Madhurashtakam** (8 verses)
+18. **Achyutashtakam** (8 verses)
+19. **Krishnashtakam** (8 verses)
+20. **Jagannathashtakam** (8 verses)
+
+## 6. Popular Puranic Stotras - 149 Verses
+21. **Aditya Hrudayam** (31 verses) - *Valmiki Ramayana*
+22. **Mahishasura Mardini Stotram** (21 verses) - *Ramakrishna Kavi*
+23. **Kanakadhara Stotram** (21 verses) - *Adi Shankaracharya*
+24. **Shiva Tandava Stotram** (15 verses) - *Ravana*
+25. **Hanuman Chalisa** (43 verses) - *Tulsidas*
+26. **Navagraha Stotram** (9 verses) - *Veda Vyasa*
+27. **Ganesha Pancharatnam** (5 verses) - *Adi Shankaracharya*
+28. **Bhavani Ashtakam** (4 verses) - *Adi Shankaracharya*
+
+## 7. Short Daily Pratasmaranam (Morning Prayers) - 15 Verses
+29. **Pratasmarana Stotram (Shiva)** (3 verses)
+30. **Pratasmarana Stotram (Vishnu)** (3 verses)
+31. **Pratasmarana Stotram (Devi)** (3 verses)
+32. **Pratasmarana Stotram (Ganesha)** (3 verses)
+33. **Pratasmarana Stotram (Surya)** (3 verses)
+
+## 8. Remaining 67 Stotras (Short Hymns & Mantras) - ~50 Verses
+*To reach the 100 chapters target, we will group smaller individual Dhyana Shlokas, Gayatri Mantras of different deities, and essential individual verses (e.g., Vakratunda Mahakaya, Saraswati Vandana, Guru Brahma).*
+34 - 100. **Miscellaneous Namaskara & Dhyana Mantras** (67 individual chapters/verses)
+
+---
+### Total Summary
+- **Total "Chapters" (Individual Stotras/Hymns)**: 100
+- **Total Estimated Verses**: ~1,021 Verses
+
+### Next Steps for Acquisition (`STOTRAS-DATA-ACQ`)
+1. Create directory structure in `data/3-gold/stotras/` for each of the major items.
+2. Source Sanskrit Text (Devanagari) & IAST.
+3. Source English, Hindi, and Marathi translations.
+4. Convert to NVF 1.3 schema.
+
+---
+
+# Vishwa-Vani v1.0.0 Launch Announcement Assets (PUB-012)
+
+This document contains templates for announcing the release of Vishwa-Vani.
+
+## Twitter / X
+**Option 1: Scholarly Focus**
+> Today, we unveil Vishwa-Vani v1.0.0 — The Universal Repository of Vedic Wisdom. Explore the Bhagavad Gita, Upanishads, and Mahabharata in a high-performance, multilingual digital sanctuary. 🕉️✨
+>
+> Read now: https://vishwavani.app
+> #VedicWisdom #Sanskrit #BhagavadGita #OpenSource
+
+**Option 2: Technical Focus**
+> Built for performance, architected for wisdom. Vishwa-Vani v1.0.0 is live! Next.js 15 + SQLite WASM + NVF Schema. A new standard for digitized scriptures. 🚀🏗️
+>
+> Explore the lab: https://vishwavani.app/lab
+> #NextJS #WebDev #SanskritAI
+
+## Email Announcement
+**Subject: Introducing Vishwa-Vani: A New Era for Vedic Wisdom**
+
+Dear Seekers and Scholars,
+
+We are thrilled to announce the official launch of **Vishwa-Vani v1.0.0**, a digital sanctuary designed to preserve and project the profound wisdom of the Vedas for the modern age.
+
+Vishwa-Vani (The Universal Voice) is more than just a library; it's a high-performance platform featuring:
+- **Lean UI**: Focused reading experience with scholarly depth.
+- **Vedic Lab**: Interactive tools for grammar and meter analysis.
+- **Multilingual Support**: Switch between English, Hindi, and Marathi instantly.
+
+Explore the library today at: https://vishwavani.app
+
+Join us in preserving this heritage.
+
+Warm regards,
+The Avinya Forge Team
+
+## Social Media Image Captions (Instagram/LinkedIn)
+> "Wisdom is the ultimate sanctuary." 🏛️
+>
+> Introducing Vishwa-Vani, the universal voice of Vedic wisdom. Our v1.0.0 release brings the Bhagavad Gita, Isha Upanishad, and the Sabha Parva of Mahabharata to your fingertips with deep scholarly commentaries and a minimalist reading experience.
+>
+> Designed by Avinya Forge, powered by open source.
+>
+> Link in bio: https://vishwavani.app

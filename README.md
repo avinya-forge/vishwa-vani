@@ -48,28 +48,20 @@ npm start
 
 ## 📖 Documentation Hub
 
-Welcome to the Vishwa-Vani knowledge base. We maintain a strict "Documentation as Code" philosophy. All architectural decisions, backlogs, and standards are documented in the [`/docs`](./docs) directory.
+Welcome to the Vishwa-Vani knowledge base. We maintain a strict "Documentation as Code" philosophy. All architectural decisions, backlogs, and standards are cleanly consolidated in the [`/docs`](./docs) directory.
 
 ### 🧭 Product & Strategy
-- [**Vision & Scope**](./docs/vision.md) – Core product vision, features, and target audience.
-- [**Project Status**](./docs/PROJECT_STATUS.md) / [**Status Report**](./docs/status_report.md) – Executive overview and live AI-loop tracking.
+- [**Vision & Scope**](./docs/vision.md) – Core product vision, features, target audience, future auth goals, and launch announcements.
+- [**Status Report**](./docs/status_report.md) – Executive overview and live AI-loop tracking.
 - [**Release Notes**](./docs/release-notes.md) – Version history and changelog.
-- [**Launch Announcement**](./docs/launch-announcement.md) – Go-to-market communication and release planning.
 - [**Master Backlog**](./docs/backlog.md) – Highly prioritized list of bugs, technical debt, and upcoming features.
 
 ### 🏛️ Engineering & Architecture
-- [**Architecture Blueprint**](./docs/blueprint.md) – High-level system design and data models (NVF).
-- [**Architecture Decisions (ADR)**](./docs/Architecture_Decisions.md) – Historical log of key technical decisions.
-- [**Engineering Standards**](./docs/standards.md) – Coding conventions, accessibility (WCAG) rules, and security guidelines.
-- [**Deployment Guide**](./docs/deployment.md) – Vercel CI/CD pipelines, WAF, and production infrastructure.
+- [**Architecture Blueprint**](./docs/blueprint.md) – High-level system design, data models (NVF), and deployment infrastructure.
+- [**Engineering Standards**](./docs/standards.md) – Coding conventions, accessibility (WCAG) rules, security guidelines, and UI/UX aesthetic principles.
 
-### 🎨 Design & Data
-- [**Redesign Manifest**](./docs/redesign_manifest.md) – UI/UX overhaul guidelines and aesthetic principles.
+### 🎨 Data & Portfolio
 - [**Data Ingestion Runbook**](./docs/ingestion-runbook.md) – Guidelines for transforming raw scripture into the Normalized Vedic Fragment (NVF) format.
-- [**Stotras Target List**](./docs/stotras-target-list.md) – Content acquisition roadmap for upcoming Stotras.
-- [**User Registration Goals**](./docs/user-registration-goals.md) – Future scope for Auth.js implementation.
-
-### 💼 Portfolio
 - [**Resume Guide**](./docs/resume-guide.md) – Project impact metrics and highlights for developer portfolios.
 
 ---
