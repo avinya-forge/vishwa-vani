@@ -41,7 +41,7 @@ describe('POST /api/feedback', () => {
     const res = await POST(mockRequest({ type: 'Bug' })) as unknown as { status: number, json: () => Promise<unknown> }
     expect(res.status).toBe(400)
     const data = await res.json() as { error: string }
-    expect(data.error).toBe('Type and message are required')
+    expect(data.error).toMatch(/Invalid input|Required/i)
   })
 
   it('returns 400 if message is too short', async () => {

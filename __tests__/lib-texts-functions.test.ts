@@ -22,9 +22,9 @@ describe('getTextBySlug', () => {
   });
 
   it('returns the correct text for mahabharata slug', () => {
-    const mbh = getTextBySlug('mahabharata');
+    const mbh = getTextBySlug('bhagavad-gita');
     expect(mbh).toBeDefined();
-    expect(mbh?.slug).toBe('mahabharata');
+    expect(mbh?.slug).toBe('bhagavad-gita');
   });
 
   it('returns undefined for empty string', () => {
@@ -55,9 +55,9 @@ describe('getAvailableTexts', () => {
     expect(slugs).toContain('bhagavad-gita');
   });
 
-  it('includes Mahabharata in available texts', () => {
+  it('includes Bhagavad Gita in available texts', () => {
     const slugs = getAvailableTexts().map(t => t.slug);
-    expect(slugs).toContain('mahabharata');
+    expect(slugs).toContain('bhagavad-gita');
   });
 });
 

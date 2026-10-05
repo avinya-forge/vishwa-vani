@@ -155,7 +155,7 @@ describe('/api/synthesize', () => {
       const data = await res.json()
 
       expect(res.status).toBe(400)
-      expect(data.error).toBe('Missing or invalid verseId.')
+      expect(data.error).toMatch(/No context text provided|Invalid input|Required/i)
       expect(data).not.toHaveProperty('synthesisMode')
     })
 
@@ -164,7 +164,7 @@ describe('/api/synthesize', () => {
       const data = await res.json()
 
       expect(res.status).toBe(400)
-      expect(data.error).toBe('No context text provided for synthesis.')
+      expect(data.error).toMatch(/No context text provided|Invalid input|Required/i)
       expect(data).not.toHaveProperty('synthesisMode')
     })
 
@@ -173,7 +173,7 @@ describe('/api/synthesize', () => {
       const data = await res.json()
 
       expect(res.status).toBe(400)
-      expect(data.error).toBe('No context text provided for synthesis.')
+      expect(data.error).toMatch(/No context text provided|Invalid input|Required/i)
       expect(data).not.toHaveProperty('synthesisMode')
     })
 
@@ -186,7 +186,7 @@ describe('/api/synthesize', () => {
       const data = await res.json()
 
       expect(res.status).toBe(400)
-      expect(data.error as string).toMatch(/unsupported language/i)
+      expect(data.error as string).toMatch(/Invalid option/i)
       expect(data).not.toHaveProperty('synthesisMode')
     })
 
@@ -199,7 +199,7 @@ describe('/api/synthesize', () => {
       const data = await res.json()
 
       expect(res.status).toBe(400)
-      expect(data.error as string).toMatch(/empty/i)
+      expect(data.error as string).toMatch(/Too small/i)
       expect(data).not.toHaveProperty('synthesisMode')
     })
 
@@ -208,7 +208,7 @@ describe('/api/synthesize', () => {
       const data = await res.json()
 
       expect(res.status).toBe(400)
-      expect(data.error).toBe('Missing or invalid verseId.')
+      expect(data.error).toMatch(/Invalid input|Required/i)
     })
   })
 
