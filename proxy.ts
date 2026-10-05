@@ -1,4 +1,4 @@
-import { NextResponse } from 'next/server'
+﻿import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
 
 // In-memory store for rate limiting (pseudo-limiter for edge)
@@ -7,17 +7,27 @@ const rateLimitMap = new Map<string, { count: number; timestamp: number }>()
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl
   
+  // Exclude static assets programmatically instead of matcher config
+  if (
+    pathname.startsWith('/_next/static') || 
+    pathname.startsWith('/_next/image') || 
+    pathname === '/favicon.ico' || 
+    /\.(svg|png|jpg|jpeg|gif|webp)$/.test(pathname)
+  ) {
+    return NextResponse.next()
+  }
+
   // SEC-016: Drop internal headers
   const responseHeaders = new Headers(request.headers)
   responseHeaders.delete('X-Vishwa-Vani-Tier')
   
   // Enforce lowercase URLs for SEO (PROD-003)
-  if (pathname !== pathname.toLowerCase() && !pathname.startsWith('/_next') && !pathname.startsWith('/api')) {
+  if (pathname !== pathname.toLowerCase() && !pathname.startsWith('/api')) {
     return NextResponse.redirect(new URL(pathname.toLowerCase(), request.url), 308)
   }
 
   // Only apply to API routes
-  if (request.nextUrl.pathname.startsWith('/api/')) {
+  if (pathname.startsWith('/api/')) {
     const ip = request.headers.get('x-forwarded-for') || 'anonymous'
     const now = Date.now()
     const windowMs = 60000 // 1 minute
@@ -46,7 +56,7 @@ export function proxy(request: NextRequest) {
   }
 
   // Locale Language Detection fallback
-  if (request.nextUrl.pathname === '/') {
+  if (pathname === '/') {
     const country = request.headers.get('x-vercel-ip-country')
     const region = request.headers.get('x-vercel-ip-country-region')
     
@@ -69,10 +79,4 @@ export function proxy(request: NextRequest) {
   }
 
   return NextResponse.next()
-}
-
-export const config = {
-  runtime: 'nodejs',
-  // SEC-016: Narrow matcher to exclude all static assets and images
-  matcher: ['/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)'],
 }
