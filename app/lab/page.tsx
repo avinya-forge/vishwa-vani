@@ -133,9 +133,11 @@ const ConsciousnessStateMapper = dynamic(() => import('@/components/lab/consciou
   loading: () => <LabSkeleton />
 })
 const VishnuPuranaCosmicExplorer = dynamic(() => import('@/components/lab/vishnu-purana-cosmic-explorer'), {
-import CosmicCanvas from '@/components/lab/cosmic-canvas'
   ssr: false,
   loading: () => <LabSkeleton />
+})
+const CosmicCanvas = dynamic(() => import('@/components/lab/cosmic-canvas'), {
+  ssr: false,
 })
 
 export default function VedicLabPage() {
