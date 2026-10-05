@@ -57,7 +57,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "eslint": "^9.39.4",
+    "eslint": "^10.0.0",
     "eslint-config-next": "^16.1.7",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
@@ -69,5 +69,11 @@
   "overrides": {
     "braces": "^3.0.3",
     "micromatch": "^4.0.8"
+  },
+  "allowScripts": {
+    "@parcel/watcher": true,
+    "@swc/core": true,
+    "better-sqlite3": true,
+    "unrs-resolver": true
   }
 }
