@@ -4,7 +4,7 @@ import type { NextRequest } from 'next/server'
 // In-memory store for rate limiting (pseudo-limiter for edge)
 const rateLimitMap = new Map<string, { count: number; timestamp: number }>()
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl
   
   // SEC-016: Drop internal headers
@@ -72,6 +72,7 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
+  runtime: 'nodejs',
   // SEC-016: Narrow matcher to exclude all static assets and images
   matcher: ['/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)'],
 }
