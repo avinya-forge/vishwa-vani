@@ -31,8 +31,9 @@ This generic checklist ensures that any ancient text (Bhagavad Gita, Upanishads,
 - [ ] Run translation scripts (with rate-limiting/backoff) to generate `translation_hi`, `translation_mr`, `meaning_hi`, `meaning_mr` natively from the Gold English base.
 - [ ] Audit the JSON to ensure no English text leaked into the localized fields.
 
-### [ ] Phase 5: Local AI Summarization (AirLLM / Small Model)
-- [ ] Pass the Gold JSON through the local small-RAM LLM pipeline to generate a consolidated, simple-language summary of the chapter/shlokas.
+### [ ] Phase 5: Local AI Summarization (Queue-Based Server)
+- [ ] Implement a local LLM summarization script (AirLLM / LLaMA.cpp).
+- [ ] **Queue-Based Execution:** The LLM must run as a background worker with a graceful queue system (e.g., `asyncio.Queue`) to prevent server locking or out-of-memory errors when multiple API requests hit the server concurrently.
 - [ ] For chapters > 15 shlokas, limit summary generation to the first 15 shlokas as defined by resource constraints.
 - [ ] Inject the `ai_summary` object into the Gold JSON.
 
