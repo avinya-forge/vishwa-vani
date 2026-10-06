@@ -164,7 +164,7 @@ export default function StudyClient({
 
   // Collect all languages available in commentary layers
   const availableLanguages = React.useMemo(() => {
-    const langs = new Set<string>(['all'])
+    const langs = new Set<string>(['en'])
     verses.forEach((v: unknown) => {
       const verse = v as Record<string, unknown>
       const layers = verse.layers as unknown[]
@@ -245,10 +245,10 @@ export default function StudyClient({
   }
 
 
-  const defaultLanguage = 'all'
+  const defaultLanguage = 'en'
 
   const [scholarSelection, setScholarSelection] = useState<string[]>([])
-  const [languageSelection, setLanguageSelection] = useState<string>('all')
+  const [languageSelection, setLanguageSelection] = useState<string>('en')
   const [activeAdhyaya, setActiveAdhyaya] = useState<number>(currentAdhyaya || 1)
   const [bookmarks, setBookmarks] = useState<string[]>([])
   const [visitedChapters, setVisitedChapters] = useState<Set<number>>(new Set())
@@ -923,15 +923,27 @@ export default function StudyClient({
                   </div>
                 ) : null}
 
-                {/* Base translation in selected language (fallback to EN) */}
+                {/* Universal Translation (Always in English) */}
                 <VerseBaseTranslation
-                  baseTranslation={String(
-                    (languageSelection === 'hi' ? v.translation_hi || v.meaning_hi : 
-                     languageSelection === 'mr' ? v.translation_mr || v.meaning_mr : 
-                     null) || v.translation || v.meaning || ''
-                  )}
+                  baseTranslation={String(v.translation || v.meaning || '')}
                   cleanText={cleanText}
                 />
+
+                {/* Regional Direct Meaning (if selected language is not EN) */}
+                {languageSelection !== 'en' && (
+                  <div className="px-4 sm:px-6 pb-2">
+                    <p className="text-[10px] font-black uppercase tracking-widest text-stone-400 dark:text-stone-500 mb-2">
+                      {getLanguageLabel(languageSelection)} Meaning
+                    </p>
+                    <VerseBaseTranslation
+                      baseTranslation={String(
+                        languageSelection === 'hi' ? v.translation_hi || v.meaning_hi : 
+                        languageSelection === 'mr' ? v.translation_mr || v.meaning_mr : ''
+                      )}
+                      cleanText={cleanText}
+                    />
+                  </div>
+                )}
 
                 {/* Commentary */}
                 <VerseCommentarySection
