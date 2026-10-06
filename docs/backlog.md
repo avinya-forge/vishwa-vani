@@ -15,6 +15,8 @@
 - [ ] `DATA-GITA-05-MULTILANG` **[P0-CRITICAL] Generate Multilang Word-Meanings**: Use a robust, offline-capable LLM or reliable translation pipeline to generate the missing Hindi and Marathi direct meanings from the Gold English base, verifying formatting recursively.
 - [ ] `UI-GITA-01` **[P0-CRITICAL] UI/UX Grid & Typography Refinement**: Make the grid and sidebars feel highly intuitive and mindful. Refine typography for Sanskrit, transliteration, and meaning.
 - [ ] `UI-GITA-02` **[P0-CRITICAL] Vedic Labs Interaction Design**: Improve the Vedic Labs sidebar. Give it real functionality or well-designed interactive placeholders that complement the reading flow.
+- [ ] `UI-GITA-03` **[P0-CRITICAL] Fix Vedic Labs Responsiveness**: Correct the collapsing and scrolling nightmares. Ensure the labs shift correctly on resize and don't create trapped scrolling sections on mobile/tablet.
+- [ ] `AI-CORE-01` **[P0-CRITICAL] Local AI Summarization (AirLLM)**: Investigate and integrate a low-RAM local LLM (e.g. AirLLM) to summarize shlokas/chapters across commentaries into simple language. For chapters > 15 shlokas, limit to the first 15 to preserve resources. Embed seamlessly into the UI template.
 - [ ] `AUDIT-GITA-01` **[P0-CRITICAL] Final End-to-End Audit**: Verify the newly generated Gold data for all 18 chapters against UI. Ensure 100% alignment, correct rendering, and no semantic drift.
 
 ### Immediate Priority Queue
