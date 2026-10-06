@@ -740,8 +740,32 @@ export default function StudyClient({
 
       {/* ═══════════════════════════════════════════ VERSES ═══ */}
       <main className="bg-[#FDFBF8] dark:bg-[#121212] min-h-screen" data-testid="study-container" onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
-        <div className="max-w-[1400px] mx-auto px-3 sm:px-4 lg:px-6 py-4 sm:py-8 flex lg:gap-8 justify-center items-start">
-          <div className="w-full max-w-[900px] space-y-4 sm:space-y-6">
+        <div className="max-w-[1600px] mx-auto px-3 sm:px-4 lg:px-6 py-4 sm:py-8 flex flex-col xl:flex-row gap-6 lg:gap-8 justify-center items-start">
+          
+          {/* Left Sidebar (Vedic Labs) */}
+          <aside className="hidden xl:block w-[280px] flex-shrink-0 sticky top-24 space-y-4 pt-12">
+            <div className="bg-white dark:bg-[#121212] rounded-2xl border border-stone-200 dark:border-stone-800 p-6 shadow-sm">
+               <h3 className="text-[10px] font-black uppercase tracking-widest text-stone-400 dark:text-stone-500 mb-4 flex items-center gap-2">
+                 <span className="text-sm">🧪</span> Vedic Labs (Chapter)
+               </h3>
+               <div className="space-y-3">
+                 <div className="p-3 bg-stone-50 dark:bg-stone-900/50 rounded-xl border border-stone-100 dark:border-stone-800 hover:border-orange-200 transition-colors cursor-pointer group">
+                    <p className="text-xs font-bold text-stone-700 dark:text-stone-300 group-hover:text-orange-600 transition-colors">Semantic Explorer</p>
+                    <p className="text-[10px] text-stone-500 mt-1">Visualize conceptual connections across verses in this chapter.</p>
+                 </div>
+                 <div className="p-3 bg-stone-50 dark:bg-stone-900/50 rounded-xl border border-stone-100 dark:border-stone-800 hover:border-orange-200 transition-colors cursor-pointer group">
+                    <p className="text-xs font-bold text-stone-700 dark:text-stone-300 group-hover:text-orange-600 transition-colors">Etymology Lab</p>
+                    <p className="text-[10px] text-stone-500 mt-1">Dive deep into Sanskrit roots and derivations.</p>
+                 </div>
+                 <div className="p-3 bg-stone-50 dark:bg-stone-900/50 rounded-xl border border-stone-100 dark:border-stone-800 hover:border-orange-200 transition-colors cursor-pointer group">
+                    <p className="text-xs font-bold text-stone-700 dark:text-stone-300 group-hover:text-orange-600 transition-colors">Recitation Analysis</p>
+                    <p className="text-[10px] text-stone-500 mt-1">Audio meter (Chhandas) visualization and phonetics.</p>
+                 </div>
+               </div>
+            </div>
+          </aside>
+
+          <div className="w-full max-w-[1100px] flex-1">
           {/* Vedic Timeline — compact version at top */}
           <VedicTimeline slug={textSlug} />
 
@@ -759,13 +783,14 @@ export default function StudyClient({
               })
             })
             return hasLowRelevance ? (
-              <p className="text-xs text-orange-800 bg-orange-100 dark:text-orange-200 dark:bg-orange-900/40 rounded-lg px-4 py-2">
+              <p className="text-xs text-orange-800 bg-orange-100 dark:text-orange-200 dark:bg-orange-900/40 rounded-lg px-4 py-2 mt-4 mb-2">
                 Note: Some commentaries in this chapter may not closely align with the verse translation — we display the closest available match in the selected language.
               </p>
             ) : null
           })()}
 
-          {/* Verses */}
+          {/* Verses Grid */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 mt-4 sm:mt-6">
           {[...verses].sort((a: unknown, b: unknown) => {
             const av = parseInt(String((a as Record<string, unknown>).verse ?? 0), 10)
             const bv = parseInt(String((b as Record<string, unknown>).verse ?? 0), 10)
@@ -898,9 +923,13 @@ export default function StudyClient({
                   </div>
                 ) : null}
 
-                {/* English translation — always shown as default base layer */}
+                {/* Base translation in selected language (fallback to EN) */}
                 <VerseBaseTranslation
-                  baseTranslation={String(v.translation || v.meaning || '')}
+                  baseTranslation={String(
+                    (languageSelection === 'hi' ? v.translation_hi || v.meaning_hi : 
+                     languageSelection === 'mr' ? v.translation_mr || v.meaning_mr : 
+                     null) || v.translation || v.meaning || ''
+                  )}
                   cleanText={cleanText}
                 />
 
@@ -937,6 +966,7 @@ export default function StudyClient({
               </article>
             )
           })}
+          </div>
           </div>
           
           {/* Desktop Sidebar (UI-715) */}
