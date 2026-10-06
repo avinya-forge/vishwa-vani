@@ -1,0 +1,22 @@
+[
+  {
+    "id": "bhagavata-purana_12_1_1",
+    "text_slug": "bhagavata-purana",
+    "chapter": 1,
+    "verse": 1,
+    "original": "Sanskrit missing",
+    "transliteration": "Transliteration missing",
+    "translation": "Placeholder translation for Canto 12 Chapter 1 Verse 1",
+    "meaning": "Placeholder",
+    "layers": [
+      {
+        "author": "vyasa",
+        "lang": "en",
+        "type": "translation",
+        "content": "Placeholder translation for Canto 12 Chapter 1 Verse 1",
+        "author_name": "Veda Vyasa",
+        "author_label": "Original"
+      }
+    ]
+  }
+]

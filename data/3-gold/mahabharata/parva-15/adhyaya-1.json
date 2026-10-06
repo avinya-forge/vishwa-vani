@@ -1,0 +1,22 @@
+[
+  {
+    "id": "mahabharata_15_1_1",
+    "text_slug": "mahabharata",
+    "chapter": 1,
+    "verse": 1,
+    "original": "Sanskrit text missing",
+    "transliteration": "Transliteration missing",
+    "translation": "Placeholder KMG text for pipeline.",
+    "meaning": "Placeholder",
+    "layers": [
+      {
+        "author": "kmg",
+        "lang": "en",
+        "type": "translation",
+        "content": "Placeholder KMG text for pipeline.",
+        "author_name": "Kisari Mohan Ganguli",
+        "author_label": "KMG"
+      }
+    ]
+  }
+]

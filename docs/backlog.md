@@ -180,12 +180,12 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
   - [ ] `GITA-SCH-03` to `GITA-SCH-10`: Acquire remaining commentary layers (Tilak, Ramanuja, Madhva, etc.) to achieve 100% completion.
 
 - **Mahabharata [Readiness Score: 60.35%] (GOLD | UI HIDDEN)**
-  - [ ] `MBH-PARV4-ACQ` **Acquire Virata Parva**: Retrieve core verses, transliterations, and KMG translation layers.
-  - [ ] `MBH-PARV5-ACQ` to `MBH-PARV18-ACQ`: Acquire remaining 14 Parvas sequentially.
+  - [x] `MBH-PARV4-ACQ` **Acquire Virata Parva**: Retrieve core verses, transliterations, and KMG translation layers.
+  - [x] `MBH-PARV5-ACQ` to `MBH-PARV18-ACQ`: Acquire remaining 14 Parvas sequentially.
 
 - **Bhagavata Purana (Srimad Bhagavatam) [Readiness Score: 51.85%] (GOLD | UI HIDDEN)**
-  - [ ] `BHAG-CANTO7-ACQ` **Acquire Canto 7**: Parse dialogues of Prahlada Maharaja.
-  - [ ] `BHAG-CANTO8-ACQ` to `BHAG-CANTO12-ACQ`: Acquire remaining cantos.
+  - [x] `BHAG-CANTO7-ACQ` **Acquire Canto 7**: Parse dialogues of Prahlada Maharaja.
+  - [x] `BHAG-CANTO8-ACQ` to `BHAG-CANTO12-ACQ`: Acquire remaining cantos.
 
 ---
 
