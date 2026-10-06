@@ -1,45 +1,52 @@
 import { NextResponse } from 'next/server'
+import { z } from 'zod'
+import { validateApiRequest } from '@/lib/api-guard'
+
+const ratingSchema = z.object({
+  scriptureId: z.string().trim().min(1).max(50),
+  chapter: z.number().int().min(0).max(1000),
+  verse: z.number().int().min(0).max(1000),
+  scholarId: z.string().trim().min(1).max(50),
+  rating: z.number().int().min(1).max(5),
+  feedbackText: z.string().trim().max(1000).optional()
+})
+
+function escapeMarkdown(text: string) {
+  return text.replace(/[@#_*~`>\[\]\(\)]/g, '\\$&');
+}
 
 export async function POST(request: Request) {
   try {
-    const body = await request.json()
-    const { scriptureId, chapter, verse, scholarId, rating, feedbackText } = body
-
-    // 1. Inputs validation
-    if (!scriptureId || typeof chapter !== 'number' || typeof verse !== 'number' || !scholarId || typeof rating !== 'number') {
-      return NextResponse.json(
-        { error: 'scriptureId, chapter, verse, scholarId, and rating are required', code: 'MISSING_FIELDS' },
-        { status: 400 }
-      )
-    }
-
-    if (rating < 1 || rating > 5) {
-      return NextResponse.json(
-        { error: 'Rating must be an integer between 1 and 5', code: 'INVALID_RATING' },
-        { status: 400 }
-      )
-    }
+    const guardResult = await validateApiRequest(request, ratingSchema)
+    if (guardResult.error) return guardResult.error
+    
+    const { scriptureId, chapter, verse, scholarId, rating, feedbackText } = guardResult.data!
 
     const githubToken = process.env.GITHUB_TOKEN
 
     // 2. Mocking response in development/test/missing token scenarios
-    if (!githubToken || process.env.NODE_ENV === 'test') {
-      return NextResponse.json({
-        success: true,
-        mocked: true,
-        message: 'Commentary rating submitted successfully (mocked)'
-      })
+    if (!githubToken) {
+      if (process.env.NODE_ENV === 'production') {
+        console.error('Missing GITHUB_TOKEN in production environment');
+        return NextResponse.json({ error: 'Service temporarily unavailable', code: 'SERVICE_UNAVAILABLE' }, { status: 503 })
+      } else {
+        return NextResponse.json({
+          success: true,
+          mocked: true,
+          message: 'Commentary rating submitted successfully (mocked)'
+        })
+      }
     }
 
     // 3. Formulating GitHub Issue title and body for structured DB logging
-    const issueTitle = `[Commentary Rating] ${scholarId} scored ${rating}/5 on /${scriptureId}/${chapter}/${verse}`
+    const issueTitle = `[Commentary Rating] ${escapeMarkdown(scholarId)} scored ${rating}/5 on /${escapeMarkdown(scriptureId)}/${chapter}/${verse}`
     const issueBody = `
-**Scholar**: ${scholarId}
-**Scripture Path**: /${scriptureId}/${chapter}/${verse}
+**Scholar**: ${escapeMarkdown(scholarId)}
+**Scripture Path**: /${escapeMarkdown(scriptureId)}/${chapter}/${verse}
 **Rating**: ${rating} / 5 stars
 
 **Qualitative Feedback**:
-${feedbackText || 'No qualitative comments provided.'}
+${feedbackText ? escapeMarkdown(feedbackText) : 'No qualitative comments provided.'}
 
 ---
 *Telemetry submitted via Vishwa-Vani Crowd-Sourced Curation System*
@@ -56,7 +63,7 @@ ${feedbackText || 'No qualitative comments provided.'}
       body: JSON.stringify({
         title: issueTitle,
         body: issueBody,
-        labels: ['commentary-rating', scholarId, `rating:${rating}`]
+        labels: ['commentary-rating', scholarId.toLowerCase().replace(/[^a-z0-9-]/g, ''), `rating:${rating}`]
       })
     })
 

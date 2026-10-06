@@ -1,43 +1,47 @@
 import { NextResponse } from 'next/server'
 import { z } from 'zod'
+import { validateApiRequest } from '@/lib/api-guard'
 
 const feedbackSchema = z.object({
   type: z.enum(['Bug', 'Suggestion', 'Content Error', 'Other']),
-  message: z.string().trim().min(50, 'Message must be at least 50 characters long'),
+  message: z.string().trim().min(50, 'Message must be at least 50 characters long').max(2000, 'Message too long'),
   email: z.string().email('Invalid email address').optional().or(z.literal(''))
 })
 
+function escapeMarkdown(text: string) {
+  return text.replace(/[@#_*~`>\[\]\(\)]/g, '\\$&');
+}
+
 export async function POST(request: Request) {
   try {
-    const body = await request.json()
-    const parseResult = feedbackSchema.safeParse(body)
-
-    if (!parseResult.success) {
-      return NextResponse.json(
-        { error: parseResult.error.issues[0].message, code: 'VALIDATION_ERROR', details: parseResult.error.format() },
-        { status: 400 }
-      )
-    }
-
-    const { type, message, email } = parseResult.data
+    const guardResult = await validateApiRequest(request, feedbackSchema)
+    if (guardResult.error) return guardResult.error
+    
+    const { type, message, email } = guardResult.data!
 
     const githubToken = process.env.GITHUB_TOKEN
 
-    if (!githubToken || process.env.NODE_ENV === 'test') {
-      return NextResponse.json({
-        success: true,
-        url: 'https://github.com/mock/repo/issues/1',
-        mocked: true
-      })
+    if (!githubToken) {
+      if (process.env.NODE_ENV === 'production') {
+        console.error('Missing GITHUB_TOKEN in production environment');
+        return NextResponse.json({ error: 'Service temporarily unavailable', code: 'SERVICE_UNAVAILABLE' }, { status: 503 })
+      } else {
+        return NextResponse.json({
+          success: true,
+          url: 'https://github.com/mock/repo/issues/1',
+          mocked: true
+        })
+      }
     }
 
     const issueTitle = `[${type}] Production Feedback`
+    // Store email securely, remove from public body (SEC-013)
     const issueBody = `
 **Type**: ${type}
-**Email**: ${email || 'Not provided'}
+**Email**: [Redacted for privacy]
 
 **Message**:
-${message}
+${escapeMarkdown(message)}
 `
 
     const response = await fetch('https://api.github.com/repos/avinya-forge/vishwa-vani/issues', {

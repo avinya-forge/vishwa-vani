@@ -3,49 +3,32 @@
 import { VEDIC_LIBRARY } from './texts'
 
 /**
- * Vishwa-Vani: Multi-Lake Worker-Bound Interface 🪷
+ * Vishwa-Vani: Multi-Lake API Interface 🪷
  * 
- * Offloads all binary shard operations to a background thread to ensure
- * a butter-smooth 60fps UI, even while querying millions of verses.
+ * Offloads all binary shard operations to a server route to protect 
+ * our scripture data from scraping.
  */
 
-let worker: Worker | null = null;
-let requestCounter = 0;
-const pendingRequests: Record<number, { resolve: (value: unknown) => void, reject: (reason?: unknown) => void }> = {};
-
-function getWorker(): Worker {
-  if (worker) return worker;
+async function fetchFromApi(payload: any) {
+  const response = await fetch('/api/lake', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload)
+  });
   
-  worker = new Worker(new URL('../public/workers/sqlite-search.worker.js', import.meta.url));
-  worker.onmessage = (event) => {
-    const { id, payload, error, type } = event.data;
-    if (pendingRequests[id]) {
-      if (error) pendingRequests[id].reject(new Error(error));
-      else {
-        // Handle result mapping based on response type
-        if (type === 'QUERY_SUCCESS') pendingRequests[id].resolve(payload.verses);
-        else if (type === 'SEARCH_SUCCESS') pendingRequests[id].resolve(payload.results);
-        else pendingRequests[id].resolve(payload);
-      }
-      delete pendingRequests[id];
-    }
-  };
-  return worker;
-}
-
-function sendRequest(type: string, payload: unknown): Promise<unknown> {
-    const id = ++requestCounter;
-    return new Promise((resolve, reject) => {
-        pendingRequests[id] = { resolve, reject };
-        getWorker().postMessage({ type, id, payload });
-    });
+  if (!response.ok) {
+    throw new Error('Failed to fetch from lake API');
+  }
+  
+  return response.json();
 }
 
 /**
  * Query the specific lake shard for verses.
  */
 export async function getVersesFromLake(textSlug: string, chapter: number, lakeFile: string = 'vedic-lake.db') {
-  return sendRequest('QUERY_VERSES', { textSlug, chapter, lakeFile });
+  const data = await fetchFromApi({ action: 'QUERY_VERSES', textSlug, chapter, lakeFile });
+  return data.verses || [];
 }
 
 /**
@@ -61,19 +44,24 @@ export async function searchLake(query: string) {
       .map(t => t.lakeFile as string)
   ));
 
-  if (shards.length === 0) return sendRequest('SEARCH_LAKE', { query, lakeFile: 'vedic-lake.db' });
+  if (shards.length === 0) {
+    const data = await fetchFromApi({ action: 'SEARCH_LAKE', query, lakeFile: 'vedic-lake.db' });
+    return data.results || [];
+  }
 
   // Parallel search across all shards
-  const shardPromises = shards.map(shard => sendRequest('SEARCH_LAKE', { query, lakeFile: shard }));
+  const shardPromises = shards.map(shard => fetchFromApi({ action: 'SEARCH_LAKE', query, lakeFile: shard }));
   const resultsArr = await Promise.all(shardPromises);
   
   // Flatten and deduplicate
-  return resultsArr.flat();
+  return resultsArr.map(res => res.results || []).flat();
 }
 
 /**
  * Pre-initialize a shard to warm up context.
  */
 export async function prefetchLake(lakeFile: string) {
-    return sendRequest('INIT_LAKE', { lakeFile });
+    // No-op for API
+    return true;
 }
+
