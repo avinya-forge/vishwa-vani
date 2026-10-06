@@ -187,3 +187,6 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 - `MBH-DATA-GAP`: Blocked on gathering complete Mahabharata Parva 1 data due to unknown target source.
 - `GITA-SCH-03` to `GITA-SCH-10`: Blocked on gathering complete data for Tilak, Aurobindo, Bhave, Ramanuja, Madhva, Abhinavagupta, Savarkar, Gita Press.
 - `BHAG-GATHER-FULL`: Blocked on gathering complete Bhagavata Purana data due to unknown target source.
+
+### New Findings
+- [ ] `BUG-043` **[P1-HIGH] Missing Error Boundaries for Extracted Components**: `VerseBaseTranslation` and `VerseCommentarySection` were extracted from `study-client.tsx`, but lack localized React error boundaries. If a verse payload is malformed (e.g. `translation` is undefined instead of string), the entire client component will crash. *Fix:* Wrap them in `<ErrorBoundary>` or validate props via Zod before rendering.

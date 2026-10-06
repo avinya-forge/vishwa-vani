@@ -5,12 +5,15 @@ import type { NVFFragment } from './nvf';
 import { migrateToNVF } from './nvf';
 
 const isProd = process.env.NODE_ENV === 'production';
-const keySource = process.env.LAKE_KEY || process.env.LAKE_SECRET_KEY || (!isProd ? 'default-insecure-key-for-local-dev-only--' : '');
+const keySource = process.env.LAKE_KEY || process.env.LAKE_SECRET_KEY || '';
 const SECRET_KEY = Buffer.from(keySource, 'utf-8').slice(0, 32);
 
 function decrypt(encryptedText: string): string {
   if (encryptedText.startsWith('{')) return encryptedText; // Already plain text
-  if (isProd && !keySource) throw new Error('Decryption disabled in production: missing LAKE_KEY');
+  if (!keySource) {
+    if (isProd) throw new Error('Decryption disabled in production: missing LAKE_KEY');
+    return encryptedText; // Fallback to raw encrypted text in dev if no key
+  }
 
   try {
     const [ivHex, authTagHex, encryptedData] = encryptedText.split(':');
@@ -57,6 +60,6 @@ export async function getVersesFromLakeServer(textSlug: string, chapter: number,
     return fragments;
   } catch (err) {
     console.error('SERVER LAKE: Connection or Query error', err);
-    return [];
+    throw err;
   }
 }
