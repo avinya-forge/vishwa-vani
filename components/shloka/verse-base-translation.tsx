@@ -6,6 +6,7 @@ interface VerseBaseTranslationProps {
 }
 
 export default function VerseBaseTranslation({ baseTranslation, cleanText }: VerseBaseTranslationProps) {
+  if (!baseTranslation || typeof baseTranslation !== 'string') return null;
   const text = baseTranslation.trim();
 
   // Reject empty strings and known placeholder patterns; length check skipped

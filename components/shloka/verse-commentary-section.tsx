@@ -23,7 +23,7 @@ export default function VerseCommentarySection({
   verseId
 }: VerseCommentarySectionProps) {
 
-  if (commentaries.length === 0) {
+  if (!commentaries || !Array.isArray(commentaries) || commentaries.length === 0) {
     if (scholarSelection.length > 0 && !scholarSelection.includes('none')) {
       return (
         <div className="px-4 sm:px-6 py-4 bg-stone-50/50 dark:bg-stone-800/20">

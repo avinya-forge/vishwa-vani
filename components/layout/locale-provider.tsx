@@ -31,7 +31,7 @@ export default function LocaleProvider({ children }: { children: ReactNode }) {
   }, [])
 
   return (
-    <div style={!mounted ? { visibility: 'hidden' } : undefined}>
+    <div suppressHydrationWarning>
       <NextIntlClientProvider
         locale={locale}
         messages={messagesMap[locale as keyof typeof messagesMap]}

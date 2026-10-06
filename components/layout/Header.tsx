@@ -178,7 +178,7 @@ export default function Header() {
           <div className="w-px h-4 bg-stone-100 dark:bg-stone-800" />
           <div>
             <div className="text-[9px] font-bold text-stone-300 dark:text-stone-600 uppercase tracking-[0.2em]">Verses</div>
-            <div className="text-xs font-black text-stone-700 dark:text-stone-300">{stats.totalVerses.toLocaleString()}+</div>
+            <div className="text-xs font-black text-stone-700 dark:text-stone-300">{stats.totalVerses.toLocaleString()}</div>
           </div>
         </div>
 
