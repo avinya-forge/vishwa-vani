@@ -68,7 +68,10 @@
   },
   "overrides": {
     "braces": "^3.0.3",
-    "micromatch": "^4.0.8"
+    "micromatch": "^4.0.8",
+    "glob": "^10.0.0",
+    "inflight": "^1.0.6",
+    "abab": "^2.0.6"
   },
   "allowScripts": {
     "@parcel/watcher": true,

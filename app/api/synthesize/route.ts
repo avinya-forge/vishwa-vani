@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server'
 import { GoogleGenerativeAI } from '@google/generative-ai'
 import { z } from 'zod'
-
+import { validateApiRequest } from '@/lib/api-guard'
 
 const synthesizeSchema = z.object({
   verseId: z.string().min(1, 'Missing or invalid verseId.'),
@@ -14,17 +14,10 @@ const genAI = process.env.GEMINI_API_KEY ? new GoogleGenerativeAI(process.env.GE
 
 export async function POST(request: Request) {
   try {
-    const body = await request.json()
-    const parseResult = synthesizeSchema.safeParse(body)
-
-    if (!parseResult.success) {
-      return NextResponse.json(
-        { error: parseResult.error.issues[0].message, code: 'VALIDATION_ERROR', details: parseResult.error.format() },
-        { status: 400 }
-      )
-    }
-
-    const { verseId, contextTexts, language } = parseResult.data
+    const guardResult = await validateApiRequest(request, synthesizeSchema)
+    if (guardResult.error) return guardResult.error
+    
+    const { verseId, contextTexts, language } = guardResult.data!
 
     const validTexts = contextTexts.map((t) => t.substring(0, 5000)) // GUARD: Max 5000 chars per item
 
