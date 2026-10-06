@@ -16,9 +16,12 @@ export default function VerseBaseTranslation({ baseTranslation, cleanText }: Ver
   if (isPlaceholder) return null;
 
   return (
-    <div className="px-4 sm:px-6 py-4 sm:py-8 border-b border-stone-50 dark:border-stone-800/30 bg-white dark:bg-stone-900/10">
-      <p className="text-[10px] font-black uppercase tracking-widest text-orange-500 dark:text-orange-600 mb-3 ml-0.5">Universal Translation</p>
-      <p className="text-stone-800 dark:text-stone-100 leading-relaxed text-[15px] sm:text-[17px] font-serif font-medium break-words overflow-wrap-anywhere">
+    <div className="px-4 sm:px-6 py-5 sm:py-8 border-b border-stone-50 dark:border-stone-800/30 bg-stone-50/50 dark:bg-stone-900/20">
+      <p className="text-[10px] font-black uppercase tracking-[0.2em] text-orange-600/80 dark:text-orange-500/80 mb-4 flex items-center gap-2">
+        <span className="w-3 h-px bg-orange-500/50 inline-block"></span>
+        Universal Translation
+      </p>
+      <p className="text-stone-800 dark:text-stone-100 leading-loose text-[15px] sm:text-[18px] font-serif font-normal break-words overflow-wrap-anywhere">
         {cleanText(text)}
       </p>
     </div>
