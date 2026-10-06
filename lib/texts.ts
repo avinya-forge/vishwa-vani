@@ -484,7 +484,7 @@ export const VEDIC_LIBRARY: VedicText[] = [
 export const SCRIPTURE_READINESS_SCORES: Record<string, number> = {
   'isha-upanishad': 100.0,
   'kena-upanishad': 100.0,
-  'bhagavad-gita': 90.0,
+  'bhagavad-gita': 100.0,
   'stotras': 60.42,
   'mahabharata': 60.35,
   'bhagavata-purana': 51.85,
