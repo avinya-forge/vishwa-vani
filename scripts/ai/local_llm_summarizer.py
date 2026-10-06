@@ -1,43 +1,33 @@
 import json
 import os
-import argparse
 import time
+import asyncio
+from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel
+from typing import List, Dict, Any, Optional
+import uvicorn
 
-def load_chapter_data(json_path, max_shlokas=15):
-    """
-    Loads chapter data and limits to max_shlokas to prevent OOM 
-    and context window explosion during summarization.
-    """
-    try:
-        with open(json_path, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-    except FileNotFoundError:
-        print(f"Error: Could not find {json_path}")
-        return []
+app = FastAPI(title="Local LLM Summarizer API")
 
-    # Adapt based on the actual JSON structure (assuming a list of verses here)
-    verses = data.get("verses", data.get("shlokas", []))
-    
-    # Enforce memory constraints by limiting the number of shlokas
-    if len(verses) > max_shlokas:
-        print(f"[Memory Constraint] Chapter has {len(verses)} shlokas. Limiting to first {max_shlokas}.")
-        verses = verses[:max_shlokas]
-        
-    return verses
+# Global variables for Queue and Model
+request_queue = asyncio.Queue()
+global_llm = None
+MODEL_PATH = os.getenv("LLM_MODEL_PATH", "models/tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf")
 
-def format_prompt(verses):
-    """
-    Formats the verses into a prompt for the LLM.
-    """
+class SummarizeRequest(BaseModel):
+    verses: List[Dict[str, Any]]
+    backend: str = "llamacpp"
+    max_shlokas: int = 15
+
+def format_prompt(verses: List[Dict[str, Any]]) -> str:
+    """Formats the verses into a prompt for the LLM."""
     text_to_summarize = ""
     for v in verses:
-        # Fallbacks for different possible JSON keys
         verse_num = v.get("verse_number", v.get("id", "?"))
         translation = v.get("translation", v.get("meaning", v.get("text", "")))
         if translation:
             text_to_summarize += f"Verse {verse_num}: {translation}\n"
 
-    # Using a generic instruction-following prompt format (compatible with many models)
     prompt = (
         "You are an expert scholar of the Bhagavad Gita and ancient texts.\n"
         "Please provide a concise, insightful summary of the following verses:\n\n"
@@ -46,31 +36,34 @@ def format_prompt(verses):
     )
     return prompt
 
-def summarize_with_llamacpp(prompt, model_path="models/tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf"):
-    """
-    Uses LLaMA.cpp (via llama-cpp-python) for fast, low-RAM CPU inference.
-    """
-    try:
-        from llama_cpp import Llama
-    except ImportError:
-        return "Error: llama-cpp-python not installed. Run: pip install llama-cpp-python"
+def _init_llamacpp():
+    global global_llm
+    if global_llm is None:
+        try:
+            from llama_cpp import Llama
+        except ImportError:
+            raise RuntimeError("llama-cpp-python not installed. Run: pip install llama-cpp-python")
+        
+        if not os.path.exists(MODEL_PATH):
+            raise RuntimeError(f"Model not found at {MODEL_PATH}. Please download a .gguf model.")
+            
+        print(f"Loading GGUF model from {MODEL_PATH} into memory...")
+        # n_ctx=2048 is generally sufficient for 15 shlokas + prompt + summary
+        global_llm = Llama(
+            model_path=MODEL_PATH,
+            n_ctx=2048,   
+            n_threads=4,
+            verbose=False
+        )
+    return global_llm
 
-    if not os.path.exists(model_path):
-        return f"Error: Model not found at {model_path}. Please download a .gguf model."
-
-    print(f"Loading GGUF model from {model_path} into memory...")
-    # n_ctx=2048 is generally sufficient for 15 shlokas + prompt + summary
-    llm = Llama(
-        model_path=model_path,
-        n_ctx=2048,   
-        n_threads=4,  # Adjust based on available CPU cores
-        verbose=False # Set to True for debugging
-    )
-
+def summarize_with_llamacpp(prompt: str) -> str:
+    """Uses LLaMA.cpp (via llama-cpp-python) for fast, low-RAM CPU inference."""
+    llm = _init_llamacpp()
+    
     print("Generating summary (this may take a moment on CPU)...")
     start_time = time.time()
     
-    # Format according to ChatML or standard prompt structure depending on the specific model
     output = llm(
         prompt,
         max_tokens=256,
@@ -81,71 +74,71 @@ def summarize_with_llamacpp(prompt, model_path="models/tinyllama-1.1b-chat-v1.0.
     
     elapsed = time.time() - start_time
     print(f"Generation took {elapsed:.2f} seconds.")
-    
     return output["choices"][0]["text"].strip()
 
-def summarize_with_airllm(prompt, model_repo="meta-llama/Meta-Llama-3-8B-Instruct"):
-    """
-    Uses AirLLM to run larger models (like 8B or 70B) on low-RAM machines 
-    by performing layer-by-layer inference.
-    """
+def summarize_with_airllm(prompt: str, model_repo="meta-llama/Meta-Llama-3-8B-Instruct") -> str:
+    """Uses AirLLM to run larger models on low-RAM machines."""
     try:
         from airllm import AutoModel
     except ImportError:
-        return "Error: airllm not installed. Run: pip install airllm"
+        raise RuntimeError("airllm not installed. Run: pip install airllm")
 
     print(f"Initializing AirLLM with {model_repo} (loads layer-by-layer to save RAM)...")
     # AirLLM automatically handles memory paging
     model = AutoModel.from_pretrained(model_repo)
-
-    # Simplified inference logic for AirLLM
-    # Note: AirLLM inference usage can vary; refer to their latest docs.
-    input_text = [prompt]
-    # In a real implementation, you would tokenize and generate using AirLLM's specific generate method
-    # e.g., output = model.generate(input_ids)
-    
+    # Placeholder for actual tokenization and generation
     return "AirLLM integration placeholder: Requires model weights to be downloaded (~15GB)."
 
-def generate_sample_json(json_path):
-    """Creates a dummy sample JSON if none exists."""
-    if not os.path.exists(json_path):
-        print(f"Creating dummy sample JSON at {json_path} for testing.")
-        sample_data = {
-            "chapter": 1,
-            "verses": [
-                {"verse_number": 1, "translation": "Dhritarashtra said: O Sanjaya, what did my sons and the sons of Pandu do, when they gathered on the sacred field of Kurukshetra, eager for battle?"},
-                {"verse_number": 2, "translation": "Sanjaya said: Having seen the army of the Pandavas drawn up in battle array, King Duryodhana approached his teacher Drona and spoke these words."}
-            ]
-        }
-        os.makedirs(os.path.dirname(os.path.abspath(json_path)), exist_ok=True)
-        with open(json_path, 'w', encoding='utf-8') as f:
-            json.dump(sample_data, f, indent=2)
+async def llm_worker():
+    """Background worker that processes one request at a time to prevent RAM bloat."""
+    print("Starting LLM worker...")
+    while True:
+        task_future, req_data = await request_queue.get()
+        try:
+            verses = req_data.verses
+            max_shlokas = req_data.max_shlokas
+            
+            # Enforce memory constraints by limiting the number of shlokas
+            if len(verses) > max_shlokas:
+                print(f"[Memory Constraint] Chapter has {len(verses)} shlokas. Limiting to first {max_shlokas}.")
+                verses = verses[:max_shlokas]
+                
+            prompt = format_prompt(verses)
+            backend = req_data.backend
+            
+            if backend == 'llamacpp':
+                # Run CPU-bound LLM generation in a separate thread
+                summary = await asyncio.to_thread(summarize_with_llamacpp, prompt)
+            else:
+                summary = await asyncio.to_thread(summarize_with_airllm, prompt)
+                
+            task_future.set_result(summary)
+        except Exception as e:
+            print(f"Error processing request: {e}")
+            task_future.set_exception(e)
+        finally:
+            request_queue.task_done()
+
+@app.on_event("startup")
+async def startup_event():
+    # Start the single background worker task
+    asyncio.create_task(llm_worker())
+
+@app.post("/api/summarize")
+async def enqueue_summary(req: SummarizeRequest):
+    """Enqueue a summarization request and await its completion safely."""
+    loop = asyncio.get_running_loop()
+    task_future = loop.create_future()
+    
+    await request_queue.put((task_future, req))
+    
+    try:
+        # Await the result from the worker
+        summary = await task_future
+        return {"summary": summary}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Low-RAM Local LLM Summarizer PoC")
-    parser.add_argument("--json", type=str, default="data/sample_chapter.json", help="Path to chapter JSON")
-    parser.add_argument("--backend", type=str, choices=['llamacpp', 'airllm'], default='llamacpp', help="Which backend to use")
-    parser.add_argument("--model", type=str, default="models/model.gguf", help="Path to model or HuggingFace repo")
-    args = parser.parse_args()
-    
-    generate_sample_json(args.json)
-    
-    # 1. Load Data (with Memory Constraint limit)
-    verses = load_chapter_data(args.json, max_shlokas=15)
-    
-    if not verses:
-        print("No verses found to summarize.")
-        exit(1)
-        
-    # 2. Format Prompt
-    prompt = format_prompt(verses)
-    
-    # 3. Summarize using selected backend
-    print("\n--- STARTING SUMMARIZATION ---")
-    if args.backend == 'llamacpp':
-        summary = summarize_with_llamacpp(prompt, model_path=args.model)
-    else:
-        summary = summarize_with_airllm(prompt, model_repo=args.model)
-        
-    print("\n--- SUMMARY RESULT ---")
-    print(summary)
+    print("Starting FastAPI server...")
+    uvicorn.run(app, host="0.0.0.0", port=8000)
