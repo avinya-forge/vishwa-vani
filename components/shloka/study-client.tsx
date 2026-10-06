@@ -743,7 +743,7 @@ export default function StudyClient({
         <div className="max-w-[1600px] mx-auto px-3 sm:px-4 lg:px-6 py-4 sm:py-8 flex flex-col xl:flex-row gap-6 lg:gap-8 justify-center items-start">
           
           {/* Left Sidebar (Vedic Labs) */}
-          <aside className="hidden xl:block w-[280px] flex-shrink-0 sticky top-24 space-y-4 pt-12">
+          <aside className="w-full xl:w-[280px] flex-shrink-0 xl:sticky xl:top-24 space-y-4 xl:pt-12 order-2 xl:order-1 mt-8 xl:mt-0 xl:max-h-[calc(100vh-6rem)] xl:overflow-y-auto scrollbar-none pb-8">
             <div className="bg-white/80 dark:bg-stone-900/80 backdrop-blur-xl rounded-3xl border border-stone-200/50 dark:border-stone-800/50 p-6 shadow-xl shadow-stone-200/20 dark:shadow-none overflow-hidden relative">
                <div className="absolute top-0 right-0 w-32 h-32 bg-orange-500/10 dark:bg-orange-400/5 rounded-full blur-3xl pointer-events-none" />
                <h3 className="text-[10px] font-black uppercase tracking-widest text-stone-400 dark:text-stone-500 mb-6 flex items-center gap-2">
@@ -783,7 +783,7 @@ export default function StudyClient({
             </div>
           </aside>
 
-          <div className="w-full max-w-[1100px] flex-1">
+          <div className="w-full max-w-[1100px] flex-1 order-1 xl:order-2 min-w-0">
           {/* Vedic Timeline — compact version at top */}
           <VedicTimeline slug={textSlug} />
 
@@ -1000,7 +1000,7 @@ export default function StudyClient({
           </div>
           
           {/* Desktop Sidebar (UI-715) */}
-          <aside className="hidden xl:block w-[320px] flex-shrink-0 sticky top-24 space-y-4 pt-12">
+          <aside className="w-full xl:w-[320px] flex-shrink-0 xl:sticky xl:top-24 space-y-4 xl:pt-12 order-3 mt-8 xl:mt-0 xl:max-h-[calc(100vh-6rem)] xl:overflow-y-auto scrollbar-none pb-8">
             
             {/* Contextual interactive tools (Dynamic Tags) */}
             <div className="bg-white dark:bg-[#121212] rounded-2xl border border-stone-200 dark:border-stone-800 p-6 shadow-sm">
