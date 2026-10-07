@@ -2,6 +2,21 @@
 
 ## ?? ACTIVE SPRINT (P0/P1 High Priority)
 
+### EPIC-ARCHITECTURE-EVOLUTION (LLM Strategy & Code Modularity) [NOT STARTED]
+- [ ] ARCH-001: [SPIKE] Analyze LLM Usage - Identify exactly *where* to use the integrated LLM (e.g., data engine, UI synthesis, symbolic decoding) and map the evolving architecture.
+- [ ] ARCH-002: [SPIKE] Model Selection & Scalability - Evaluate which LLM model is best suited for max load scenarios; establish decision gates to switch/upgrade the local LLM safely without breaking the system.
+- [ ] ARCH-003: Code Segregation & Optimization - Refactor and modularize existing codebase (especially the data engine) to ensure smaller bundle sizes and highly optimized local performance, keeping everything natively within the monolith.
+
+### EPIC-DEEP-KNOWLEDGE-EXTRACTION (Scientific & Symbolic Analysis) [NOT STARTED]
+- [ ] DATA-010: Shloka-wise Contextual Decoding - Deeply analyze Puranic data using the local LLM to extract symbolic/scientific meanings.
+- [ ] DATA-011: Concept Generalization Engine - Translate extracted symbolic concepts into generic, cross-applicable principles (to feed into new features).
+- [ ] DATA-012: Manual Review Gates - Implement a strict UI/backend workflow for manual human review of AI-generated scientific/symbolic interpretations before public promotion.
+
+### EPIC-UI-NAVIGATION & ROADMAP [NOT STARTED]
+- [ ] UI-009: Streamline Navbar - Analyze and redesign the main Navbar to be more apt, reducing clutter.
+- [ ] UI-010: Roadmap Representation - Consolidate page counts; ensure a prominent, highly efficient "Roadmap" page exists so users clearly see queued, next, and current items.
+
+
 ### EPIC-UI-ENHANCEMENTS [IN-PROGRESS]
 - [ ] UI-006: Chapter Top Bar Redesign - Accommodate 'Back' button, current chapter name & title, and 'Next Chapter' button.
 - [ ] UI-007: Commentary & Language Selector - Provide a clear, intuitive UI to select and toggle between various authors and languages.
@@ -39,5 +54,6 @@
 - [x] EPIC-ONBOARD-BRAHMA: Brahma Sutras (Adhyaya 1) integrated.
 - [x] EPIC-ONBOARD-MANUSMRITI: Chapter 1 of Manusmriti integrated.
 - [x] EPIC-ARCHITECTURE-01: Reorganized `core/brain`, `core/data-engine`, and `app/`.
+
 
 
