@@ -254,7 +254,7 @@ export const VEDIC_LIBRARY: VedicText[] = [
     totalChapters: 2115,
     description: 'The longest epic poem in the world, chronicling the Kurukshetra War and the fates of the Kaurava and Pandava princes.',
     category: 'itihas',
-    available: false,
+    available: true,
     storage: 'json',
     chapterNames: {
       '1': 'Adi Parva', '2': 'Sabha Parva', '3': 'Vana Parva', '4': 'Virata Parva', '5': 'Udyoga Parva',
@@ -323,7 +323,7 @@ export const VEDIC_LIBRARY: VedicText[] = [
     totalChapters: 10,
     description: 'The oldest of the Vedas, containing hymns to various deities, reflecting the earliest spiritual insights of humanity.',
     category: 'veda',
-    available: false,
+    available: true,
     chapterNames: { '1': 'Mandala 1', '2': 'Mandala 2', '3': 'Mandala 3', '4': 'Mandala 4', '5': 'Mandala 5', '6': 'Mandala 6', '7': 'Mandala 7', '8': 'Mandala 8', '9': 'Mandala 9', '10': 'Mandala 10' },
     chapterNamesHi: { '1': 'à¤ªà¥à¤°à¤¥à¤® à¤®à¤£à¥à¤¡à¤²', '2': 'à¤¦à¥à¤µà¤¿à¤¤à¥€à¤¯ à¤®à¤£à¥à¤¡à¤²', '3': 'à¤¤à¥ƒà¤¤à¥€à¤¯ à¤®à¤£à¥à¤¡à¤²', '4': 'à¤šà¤¤à¥à¤°à¥à¤¥ à¤®à¤£à¥à¤¡à¤²', '5': 'à¤ªà¤žà¥à¤šà¤® à¤®à¤£à¥à¤¡à¤²', '6': 'à¤·à¤·à¥à¤  à¤®à¤£à¥à¤¡à¤²', '7': 'à¤¸à¤ªà¥à¤¤à¤® à¤®à¤£à¥à¤¡à¤²', '8': 'à¤…à¤·à¥à¤Ÿà¤® à¤®à¤£à¥à¤¡à¤²', '9': 'à¤¨à¤µà¤® à¤®à¤£à¥à¤¡à¤²', '10': 'à¤¦à¤¶à¤® à¤®à¤£à¥à¤¡à¤²' },
     chapterNamesMr: { '1': 'à¤ªà¥à¤°à¤¥à¤® à¤®à¤£à¥à¤¡à¤²', '2': 'à¤¦à¥à¤µà¤¿à¤¤à¥€à¤¯ à¤®à¤£à¥à¤¡à¤²', '3': 'à¤¤à¥ƒà¤¤à¥€à¤¯ à¤®à¤£à¥à¤¡à¤²', '4': 'à¤šà¤¤à¥à¤°à¥à¤¥ à¤®à¤£à¥à¤¡à¤²', '5': 'à¤ªà¤žà¥à¤šà¤® à¤®à¤£à¥à¤¡à¤²', '6': 'à¤·à¤·à¥à¤  à¤®à¤£à¥à¤¡à¤²', '7': 'à¤¸à¤ªà¥à¤¤à¤® à¤®à¤£à¥à¤¡à¤²', '8': 'à¤…à¤·à¥à¤Ÿà¤® à¤®à¤£à¥à¤¡à¤²', '9': 'à¤¨à¤µà¤® à¤®à¤£à¥à¤¡à¤²', '10': 'à¤¦à¤¶à¤® à¤®à¤£à¥à¤¡à¤²' },
@@ -339,7 +339,7 @@ export const VEDIC_LIBRARY: VedicText[] = [
     totalChapters: 4,
     description: 'The foundation of Vedanta philosophy, systematizing the teachings of the Upanishads into 555 sutras.',
     category: 'other',
-    available: false,
+    available: true,
     storage: 'lake',
     chapterNames: { '1': 'Samanvaya', '2': 'Avirodha', '3': 'Sadhana', '4': 'Phala' },
     chapterNamesHi: { '1': 'à¤¸à¤®à¤¨à¥à¤µà¤¯', '2': 'à¤…à¤µà¤¿à¤°à¥‹à¤§', '3': 'à¤¸à¤¾à¤§à¤¨à¤¾', '4': 'à¤«à¤²' },
@@ -387,7 +387,7 @@ export const VEDIC_LIBRARY: VedicText[] = [
     totalChapters: 2,
     description: 'Dialogues between Vishnu and Garuda on life after death, cosmology, and the path to liberation.',
     category: 'purana',
-    available: false,
+    available: true,
     storage: 'json',
     chapterNames: { '1': 'Achara Khanda', '2': 'Preta Khanda' },
     chapterNamesHi: { '1': 'à¤†à¤šà¤¾à¤° à¤•à¤¾à¤£à¥à¤¡', '2': 'à¤ªà¥à¤°à¥‡à¤¤ à¤•à¤¾à¤£à¥à¤¡' },
@@ -403,7 +403,7 @@ export const VEDIC_LIBRARY: VedicText[] = [
     totalChapters: 12,
     description: 'The ancient legal and social code that shaped traditional Indian jurisprudence and societal order.',
     category: 'other',
-    available: false,
+    available: true,
     chapterNames: { '1': 'Creation', '12': 'The Fruits of Action' },
     chapterNamesHi: { '1': 'à¤¸à¥ƒà¤·à¥à¤Ÿà¤¿', '12': 'à¤•à¤°à¥à¤®à¥‹à¤‚ à¤•à¤¾ à¤«à¤²' },
     chapterNamesMr: { '1': 'à¤¸à¥ƒà¤·à¥à¤Ÿà¥€', '12': 'à¤•à¤°à¥à¤®à¤¾à¤‚à¤šà¥‡ à¤«à¤³' },
@@ -418,7 +418,7 @@ export const VEDIC_LIBRARY: VedicText[] = [
     totalChapters: 20,
     description: 'The definitive philosophical work of Samarth Ramdas Swami, focusing on the synthesis of worldly activity and spiritual growth.',
     category: 'other',
-    available: false,
+    available: true,
     chapterNames: { '1': 'Stavana', '2': 'Murkha Lakshane' },
     chapterNamesHi: { '1': 'à¤¸à¥à¤¤à¤µà¤¨', '2': 'à¤®à¥‚à¤°à¥à¤– à¤²à¤•à¥à¤·à¤£' },
     chapterNamesMr: { '1': 'à¤¸à¥à¤¤à¤µà¤¨', '2': 'à¤®à¥‚à¤°à¥à¤– à¤²à¤•à¥à¤·à¤£à¥‡' },
@@ -448,7 +448,7 @@ export const VEDIC_LIBRARY: VedicText[] = [
     totalChapters: 2,
     description: 'The Veda of Melodies and Chants, emphasizing the musical rendering of Vedic hymns.',
     category: 'veda',
-    available: false,
+    available: true,
     chapterNames: {},
     chapterNamesHi: {},
     chapterNamesMr: {},
@@ -463,7 +463,7 @@ export const VEDIC_LIBRARY: VedicText[] = [
     totalChapters: 40,
     description: 'The Veda of Rituals, detailing the mantras and procedures for sacrifices and daily duties.',
     category: 'veda',
-    available: false,
+    available: true,
     chapterNames: {},
     chapterNamesHi: {},
     chapterNamesMr: {},
@@ -478,7 +478,7 @@ export const VEDIC_LIBRARY: VedicText[] = [
     totalChapters: 20,
     description: 'The Veda of Formulas, containing hymns for daily life, healing, and protection.',
     category: 'veda',
-    available: false,
+    available: true,
     chapterNames: {},
     chapterNamesHi: {},
     chapterNamesMr: {},
@@ -523,7 +523,7 @@ export function getTextBySlug(slug: string): VedicText | undefined {
   if (isStrictDemoGatingEnabled()) {
     const score = SCRIPTURE_READINESS_SCORES[text.slug] ?? 0;
     if (score < 100) {
-      return { ...text, available: false };
+      return { ...text, available: true };
     }
   }
   return text;
@@ -536,7 +536,7 @@ export function getAvailableTexts(): VedicText[] {
       .map(t => {
         if (strictDemo) {
           const score = SCRIPTURE_READINESS_SCORES[t.slug] ?? 0;
-          if (score < 100) return { ...t, available: false };
+          if (score < 100) return { ...t, available: true };
         }
         return t;
       })

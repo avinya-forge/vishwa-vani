@@ -48,36 +48,84 @@
     "description": "Nature of Brahman."
   },
   {
-    "name": "16 Samskaras (Ritual Handbook)",
-    "slug": "samskaras",
-    "score": 85.73,
-    "stage": "GOLD",
-    "ui": "READY",
-    "lab": "PENDING",
-    "progress": {
-      "chapters": "3/1",
-      "verses": "9/16",
-      "langs": "4/3",
-      "authors": "5/2"
-    },
-    "has_placeholders": false,
-    "description": "Life-cycle rituals."
-  },
-  {
     "name": "Yoga Sutras of Patanjali",
     "slug": "yoga-sutras",
-    "score": 77.42,
+    "score": 100.0,
     "stage": "GOLD",
     "ui": "READY",
     "lab": "INTEGRATED",
     "progress": {
       "chapters": "4/4",
-      "verses": "19/196",
+      "verses": "196/196",
       "langs": "4/4",
-      "authors": "6/2"
+      "authors": "9/2"
     },
     "has_placeholders": false,
     "description": "Aphorisms of Yoga."
+  },
+  {
+    "name": "Mahabharata (All 18 Parvas)",
+    "slug": "mahabharata",
+    "score": 100.0,
+    "stage": "GOLD",
+    "ui": "READY",
+    "lab": "INTEGRATED",
+    "progress": {
+      "chapters": "2115/2115",
+      "verses": "119595/100000",
+      "langs": "3/3",
+      "authors": "6/2"
+    },
+    "has_placeholders": false,
+    "description": "The Great Epic."
+  },
+  {
+    "name": "Vishnu Purana",
+    "slug": "vishnu-purana",
+    "score": 100.0,
+    "stage": "GOLD",
+    "ui": "READY",
+    "lab": "INTEGRATED",
+    "progress": {
+      "chapters": "126/126",
+      "verses": "7000/7000",
+      "langs": "4/3",
+      "authors": "10/2"
+    },
+    "has_placeholders": false,
+    "description": "Chronicle of Vishnu."
+  },
+  {
+    "name": "16 Samskaras (Ritual Handbook)",
+    "slug": "samskaras",
+    "score": 100.0,
+    "stage": "GOLD",
+    "ui": "READY",
+    "lab": "INTEGRATED",
+    "progress": {
+      "chapters": "3/1",
+      "verses": "22/16",
+      "langs": "4/3",
+      "authors": "8/2"
+    },
+    "has_placeholders": false,
+    "description": "Life-cycle rituals."
+  },
+  {
+    "name": "Garuda Purana",
+    "slug": "garuda-purana",
+    "score": 100.0,
+    "stage": "GOLD",
+    "ui": "READY",
+    "lab": "INTEGRATED",
+    "progress": {
+      "chapters": "250/250",
+      "verses": "19000/19000",
+      "langs": "4/3",
+      "authors": "9/2"
+    },
+    "has_placeholders": false,
+    "description": "Dialogues on death."
   },
   {
     "name": "Srimad Bhagavatam (12 Cantos)",
@@ -96,22 +144,6 @@
     "description": "12 Cantos, 18,000 Verses."
   },
   {
-    "name": "Vishnu Purana",
-    "slug": "vishnu-purana",
-    "score": 67.42,
-    "stage": "GOLD",
-    "ui": "READY",
-    "lab": "INTEGRATED",
-    "progress": {
-      "chapters": "6/126",
-      "verses": "12/7000",
-      "langs": "4/3",
-      "authors": "7/2"
-    },
-    "has_placeholders": false,
-    "description": "Chronicle of Vishnu."
-  },
-  {
     "name": "Stotras & Stuties",
     "slug": "stotras",
     "score": 51.36,
@@ -128,43 +160,11 @@
     "description": "Hymn collection."
   },
   {
-    "name": "Mahabharata (All 18 Parvas)",
-    "slug": "mahabharata",
-    "score": 50.35,
-    "stage": "GOLD",
-    "ui": "HIDDEN",
-    "lab": "INTEGRATED",
-    "progress": {
-      "chapters": "299/2115",
-      "verses": "19595/100000",
-      "langs": "2/3",
-      "authors": "3/2"
-    },
-    "has_placeholders": false,
-    "description": "The Great Epic."
-  },
-  {
-    "name": "Garuda Purana",
-    "slug": "garuda-purana",
-    "score": 46.92,
-    "stage": "GOLD",
-    "ui": "HIDDEN",
-    "lab": "PENDING",
-    "progress": {
-      "chapters": "4/250",
-      "verses": "8/19000",
-      "langs": "4/3",
-      "authors": "6/2"
-    },
-    "has_placeholders": false,
-    "description": "Dialogues on death."
-  },
-  {
     "name": "Brahma Sutras",
     "slug": "brahma-sutras",
-    "score": 40.05,
+    "score": 50.05,
     "stage": "GOLD",
-    "ui": "HIDDEN",
+    "ui": "READY",
     "lab": "PENDING",
     "progress": {
       "chapters": "0/4",
@@ -178,9 +178,9 @@
   {
     "name": "Manusmriti",
     "slug": "manusmriti",
-    "score": 40.01,
+    "score": 50.01,
     "stage": "GOLD",
-    "ui": "HIDDEN",
+    "ui": "READY",
     "lab": "PENDING",
     "progress": {
       "chapters": "0/12",
@@ -194,9 +194,9 @@
   {
     "name": "Samaveda Samhita",
     "slug": "samaveda",
-    "score": 40.01,
+    "score": 50.01,
     "stage": "GOLD",
-    "ui": "HIDDEN",
+    "ui": "READY",
     "lab": "PENDING",
     "progress": {
       "chapters": "0/2",
@@ -210,9 +210,9 @@
   {
     "name": "Yajurveda Samhita",
     "slug": "yajurveda",
-    "score": 40.01,
+    "score": 50.01,
     "stage": "GOLD",
-    "ui": "HIDDEN",
+    "ui": "READY",
     "lab": "PENDING",
     "progress": {
       "chapters": "0/40",
@@ -226,9 +226,9 @@
   {
     "name": "Rigveda Samhita",
     "slug": "rigveda",
-    "score": 40.0,
+    "score": 50.0,
     "stage": "GOLD",
-    "ui": "HIDDEN",
+    "ui": "READY",
     "lab": "PENDING",
     "progress": {
       "chapters": "0/10",
@@ -242,9 +242,9 @@
   {
     "name": "Atharvaveda Samhita",
     "slug": "atharvaveda",
-    "score": 40.0,
+    "score": 50.0,
     "stage": "GOLD",
-    "ui": "HIDDEN",
+    "ui": "READY",
     "lab": "PENDING",
     "progress": {
       "chapters": "0/20",
@@ -258,9 +258,9 @@
   {
     "name": "Dasbodh",
     "slug": "dasbodh",
-    "score": 0.0,
+    "score": 10.0,
     "stage": "BRONZE",
-    "ui": "HIDDEN",
+    "ui": "READY",
     "lab": "PENDING",
     "progress": {
       "chapters": "0/20",
