@@ -48,7 +48,7 @@ export default function VerseCommentarySection({
               <span className="text-sm">{meta.icon}</span>
               <span className="text-[9px] font-black uppercase tracking-widest text-orange-700 dark:text-orange-500 break-words">{meta.label}</span>
             </div>
-            <p className="text-stone-700 dark:text-stone-300 leading-loose text-[13px] sm:text-[15px] font-serif whitespace-pre-line break-words overflow-wrap-anywhere">
+            <p className="text-stone-700 dark:text-stone-300 leading-[1.8] text-[14px] sm:text-[16px] font-serif whitespace-pre-line break-words overflow-wrap-anywhere text-pretty">
               {cleanText(comment.content as string)}
             </p>
             <div className="mt-3">
