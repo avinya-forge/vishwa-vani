@@ -22,7 +22,7 @@
 ### Immediate Priority Queue
 - [ ] `SEC-010` **[NOW #4][P0-CRITICAL][PHASED] 21 MB `vedic-lake.db` publicly downloadable (verified live: 200, 21,663,744 bytes)** - content scraping + Vercel bandwidth cost per download. **Do NOT simply delete: client search (`lib/lake.ts` worker) depends on it.** *Phase 1 (safe, immediate):* Vercel WAF/edge rate rule on `/vedic-lake.db`, long-lived `Cache-Control` + ETag, bot rules. *Phase 2:* server-side search API over a gated shard (`INFRA-002`), then remove the file from `public/` and `git rm --cached`. *AC:* search works after each phase; bandwidth alert configured.
 - [ ] `SEC-012` **[NOW #5][P0-CRITICAL] Financial exposure: unauthenticated Gemini endpoint + ineffective rate limit.** Per-instance in-memory limiter + spoofable XFF. *Fix:* distributed limiter (Vercel KV/Upstash or WAF), per-route budgets, **hard daily cap/kill-switch env flag** (`SYNTHESIS_ENABLED`), set a **budget/quota alert and cap in Google Cloud** for the key; deterministic fallback already exists. *AC:* test proves 429 + cap behaviour.
-- [ ] `SEC-013` **[NOW #6][P0-HIGH] GitHub issue injection + PII**: sanitise/allow-list `type`, `scholarId`; length caps; escape `@mentions`/markdown; remove email from the public issue body (store privately / mask); integer rating. Implemented through the shared guard in `SEC-017`.
+- [x] SEC-013 **[NOW #6][P0-HIGH] GitHub issue injection + PII**: sanitise/allow-list `type`, `scholarId`; length caps; escape `@mentions`/markdown; remove email from the public issue body (store privately / mask); integer rating. Implemented through the shared guard in `SEC-017`.
 - [x] `SEC-011` **[NOW #7][P0-HIGH][PHASED] Hardcoded AES key** in `lib/server-lake.ts`. *Phase 1:* read key from `LAKE_KEY` env with the identical current value (no data change, no breakage), fail closed when absent in prod. *Phase 2:* rotate key + re-encrypt lake, remove literal from repo (and history if needed). *AC:* decrypt tests; no literal in tree.
 - [x] `PROD-001` **[NOW #8][P0-CRITICAL] CI never triggers on push/PR** (monthly cron + manual only) - enables `OPS-002` drift. Add `pull_request` + `push: main` triggers; keep deploy job gated on `main`. *AC:* PR shows lint/tsc/jest/build.
 - [x] `SEO-001` **[NOW #9][P0-HIGH] ~98% of sitemap URLs are empty shells**: of 2,485 URLs, 2,115 are `mahabharata/*` and 335 `bhagavata-purana/*`; sampled pages (`/mahabharata/1500`, `/bhagavata-purana/200`) render "Parva 1500 / 0 Scholars / 0/2" with no verse content (and mislabel Mahabharata chapters as "Parva 1500"). The `SEC-005` gating is **not enforced in production** (`STRICT_DEMO_GATING` unset). Thin-content penalty risk + wasted serverless cost. *Fix:* restrict sitemap/`generateStaticParams` to chapters with real content, `noindex` + friendly "not yet available" for the rest, default gating to **fail-closed in production**. *AC:* sitemap lists only verified-content URLs.
@@ -31,8 +31,8 @@
 - [x] `UI-001` **[NOW #12][P1-HIGH] Entire app SSR'd inside `visibility:hidden`** (live HTML: `<div style="visibility:hidden">` wrapping header/main/footer, set by `LocaleProvider` until hydration) -> blank page until JS runs, bad LCP/CLS, invisible to no-JS crawlers/readers, flash on slow devices. *Fix:* render visible server-side with the default locale; apply the stored locale after mount without hiding. *AC:* SSR HTML has no `visibility:hidden` wrapper; covered by `TEST-001`.
 - [x] `UI-002` **[NOW #13][P1-MEDIUM] Visible content/polish defects**: header stat renders **"1,500++"** (template appends `+` to a value that already has one, `Header.tsx:184`); footer hard-coded fake status "Verse Archive: Active"; stats ("8 texts", "1,500+ verses") hard-coded vs data; Bhagavatam card says "335 chapters" while only Canto 1 exists; footer GitHub links point to `github.com/vishwa-vani` while issues go to `avinya-forge/vishwa-vani` (verify/fix); duplicate `italic italic` class; custom `.max-wide` class; mobile spacing/edge review. *AC:* values derived from data; visual snapshot approved.
 - [x] `A11Y-001` **[NOW #14][P1-HIGH] Anti-copy "SecurityShield" + inline script**: blocks selection/copy/context-menu/F12 (WCAG 2.1 failure, hostile to screen readers, trivially bypassed, `alert()` on copy). Remove client blocking; rely on `SEC-010/012` server protections. *AC:* keyboard & AT users can select/copy.
-- [ ] `SEC-015` **[NOW #15][P1-HIGH][SAFE ROLLOUT] Weak CSP** (`unsafe-inline`/`unsafe-eval`; missing `object-src`, `base-uri`, `form-action`, `frame-ancestors`). *Rollout:* ship as `Content-Security-Policy-Report-Only` first with nonce, monitor, then enforce - avoids breaking GA/fonts/workers.
-- [ ] `SEC-017` **[NOW #16][P1-HIGH] API guard**: zod schemas, body-size cap (413), content-type check (415), malformed JSON -> 400 (live currently 500), same-origin check, integer coercion; shared by all `/api/*` routes.
+- [x] SEC-015 **[NOW #15][P1-HIGH][SAFE ROLLOUT] Weak CSP** (`unsafe-inline`/`unsafe-eval`; missing `object-src`, `base-uri`, `form-action`, `frame-ancestors`). *Rollout:* ship as `Content-Security-Policy-Report-Only` first with nonce, monitor, then enforce - avoids breaking GA/fonts/workers.
+- [x] SEC-017 **[NOW #16][P1-HIGH] API guard**: zod schemas, body-size cap (413), content-type check (415), malformed JSON -> 400 (live currently 500), same-origin check, integer coercion; shared by all `/api/*` routes.
 - [ ] `PROD-008` **[NOW #17][P1-HIGH][LEGAL/FINANCIAL] Analytics without consent** (UK GDPR/PECR; `.co.uk`): GA4 + Vercel Analytics load unconditionally with a hard-coded fallback ID. Add consent banner, env-only ID, privacy policy. Fines are a financial risk.
 - [ ] `PROD-004` **[NOW #18][P1-HIGH] Error handling & observability**: add `app/global-error.tsx`, show error digest, ship errors to a free-tier tracker, structured logs; alert on 5xx. Pairs with `OPS-002` health SHA.
 - [ ] `TEST-001` **[NOW #20][P0-HIGH] Behavioural (BDD) end-to-end test framework - short-term smoke suite as release gate.** `playwright` is already a dependency but unused; the current `e2e-smoke.test.ts` only asserts library data (not real browser behaviour - which is how drift/z-index/hidden-render bugs shipped). Add `@playwright/test`, an `e2e/` folder, projects for Chromium mobile (360x740), tablet (768), desktop (1280), light+dark; run against `next start` in CI and as a **read-only post-deploy check against production**. Scenarios (Given/When/Then naming): reader opens home -> content visible without hydration; reader opens chapter -> verses render; invalid verse -> 404; search "dharma" -> results; feedback dialog fits viewport, submit reachable, validation messages match server, success + failure paths (route mocked); theme toggle persists; language switch persists; apex/www cert + redirect check; health SHA matches. *AC:* suite < 5 min, required check on PRs.
@@ -61,14 +61,14 @@
 - [ ] `SEC-010` **[AUDIT-1 #2][P0-CRITICAL] Full content DB publicly downloadable & committed**: `public/vedic-lake.db` (21 MB) is git-tracked and served at `/vedic-lake.db`, bypassing the 100%-completion gating (SEC-005) and anti-scraping. *Fix:* move out of `public/`, `git rm --cached`, serve only via authenticated/rate-limited API or gated shard; purge from history if content is licensed/unreleased. *AC:* `GET /vedic-lake.db` → 404; search still works.
 - [ ] `SEC-011` **[AUDIT-1 #3][P0-CRITICAL] Hardcoded AES-256 key in source**: `lib/server-lake.ts` embeds the "SECRET_KEY" literal; silent fallback returns raw ciphertext on decrypt failure. *Fix:* load from env (`LAKE_KEY`), rotate key, fail closed, re-encrypt data; document that client-side shard encryption is obfuscation only. *AC:* no key literal in repo; test for missing-key failure.
 - [ ] `SEC-012` **[AUDIT-1 #4][P0-CRITICAL] Ineffective rate limiting / unauthenticated LLM cost abuse**: `middleware.ts` uses a per-instance in-memory `Map` (resets on every cold start/edge isolate) and trusts spoofable `x-forwarded-for`; `/api/synthesize` calls Gemini unauthenticated. *Fix:* distributed limiter (Upstash/Vercel KV or Vercel WAF), use `request.ip`/first XFF hop, stricter per-route budgets (synthesize 5/min, feedback 3/min), daily Gemini quota with fallback. *AC:* test proves 429 after budget across instances.
-- [ ] `SEC-013` **[AUDIT-1 #5][P0-HIGH] GitHub issue injection & PII leak via feedback APIs**: `/api/feedback` and `/api/commentary-rating` interpolate unsanitised `type`, `message`, `email`, `scholarId`, `feedbackText` into issue title/body/labels (label injection, `@mention` spam, markdown/HTML injection, no max length) and publish user email in a public repo issue. *Fix:* allowlist `type`/`scholarId`, length caps (message ≤ 2000), escape markdown & mentions, drop email from public body (store privately), integer rating. *AC:* unit tests for each injection vector.
+- [x] SEC-013 **[AUDIT-1 #5][P0-HIGH] GitHub issue injection & PII leak via feedback APIs**: `/api/feedback` and `/api/commentary-rating` interpolate unsanitised `type`, `message`, `email`, `scholarId`, `feedbackText` into issue title/body/labels (label injection, `@mention` spam, markdown/HTML injection, no max length) and publish user email in a public repo issue. *Fix:* allowlist `type`/`scholarId`, length caps (message ≤ 2000), escape markdown & mentions, drop email from public body (store privately), integer rating. *AC:* unit tests for each injection vector.
 - [ ] `PROD-002` **[AUDIT-1 #6][P0-HIGH] Site de-indexed: `public/robots.txt` = `Disallow: /`** overrides `app/robots.ts` (`allow: /`) and sitemap; SEC-004 regressed. *Fix:* delete static file, define one policy (allow content, disallow `/api/`, AI-crawler rules). *AC:* `/robots.txt` returns app/robots.ts output.
 - [ ] `SEC-014` **[AUDIT-1 #7][P1-HIGH] Prompt injection & unbounded input in `/api/synthesize`**: `contextTexts` unbounded in count/size; user text concatenated directly into the Gemini prompt; fallback echoes arbitrary client text (reflected content). *Fix:* cap array (≤3) & chars (≤2000 each), separate instructions from data, strip control chars, cap output, verify `verseId` exists server-side and build context from server data instead of client payload. *AC:* tests with 1 MB body & injection strings.
-- [ ] `SEC-017` **[AUDIT-1 #8][P1-HIGH] API input validation & CSRF**: `request.json()` malformed → 500 not 400; `typeof` checks accept `NaN`/floats; no `Content-Type`/body-size checks; no Origin check on POST. *Fix:* shared `lib/api-guard.ts` with zod schemas, 413/415/400 handling, same-origin check. *AC:* ≥ 90% branch coverage on guard + routes.
-- [ ] `SEC-015` **[AUDIT-1 #9][P1-HIGH] Weak CSP**: `script-src 'unsafe-inline' 'unsafe-eval'`, missing `object-src 'none'`, `base-uri`, `form-action`, `frame-ancestors`; unnecessary `api.github.com` in `connect-src`; inline `<script dangerouslySetInnerHTML>` in `app/layout.tsx`. *Fix:* nonce-based CSP via middleware, remove inline scripts, enable Report-Only first then enforce. *AC:* no CSP violations in smoke run.
-- [ ] `PROD-003` **[AUDIT-1 #10][P1-HIGH] Soft-404s & unvalidated route params**: `app/[text]/[chapter]/[verse]/page.tsx` renders "Text/Verse Not Found" with HTTP 200; `parseInt` of chapter unchecked (NaN). *Fix:* validate `^\d+$`, call `notFound()`, add `generateStaticParams`/`dynamicParams=false` where possible. *AC:* tests assert 404 for bad slug/chapter/verse.
+- [x] SEC-017 **[AUDIT-1 #8][P1-HIGH] API input validation & CSRF**: `request.json()` malformed → 500 not 400; `typeof` checks accept `NaN`/floats; no `Content-Type`/body-size checks; no Origin check on POST. *Fix:* shared `lib/api-guard.ts` with zod schemas, 413/415/400 handling, same-origin check. *AC:* ≥ 90% branch coverage on guard + routes.
+- [x] SEC-015 **[AUDIT-1 #9][P1-HIGH] Weak CSP**: `script-src 'unsafe-inline' 'unsafe-eval'`, missing `object-src 'none'`, `base-uri`, `form-action`, `frame-ancestors`; unnecessary `api.github.com` in `connect-src`; inline `<script dangerouslySetInnerHTML>` in `app/layout.tsx`. *Fix:* nonce-based CSP via middleware, remove inline scripts, enable Report-Only first then enforce. *AC:* no CSP violations in smoke run.
+- [x] PROD-003 **[AUDIT-1 #10][P1-HIGH] Soft-404s & unvalidated route params**: `app/[text]/[chapter]/[verse]/page.tsx` renders "Text/Verse Not Found" with HTTP 200; `parseInt` of chapter unchecked (NaN). *Fix:* validate `^\d+$`, call `notFound()`, add `generateStaticParams`/`dynamicParams=false` where possible. *AC:* tests assert 404 for bad slug/chapter/verse.
 - [ ] `PROD-004` **[AUDIT-1 #11][P1-HIGH] Incomplete error handling & no monitoring**: no `app/global-error.tsx` (root layout crashes show default page); `app/error.tsx` logs raw error to console only; no error tracking. *Fix:* add `global-error.tsx`, structured client error reporter (Sentry free tier or `/api/log` with limit), show `digest` ID to users. *AC:* simulated layout error renders branded fallback.
-- [ ] `A11Y-001` **[AUDIT-1 #12][P1-HIGH] Anti-copy "SecurityShield" harms accessibility and gives no real protection**: `components/layout/security-shield.tsx` + inline script in layout block context menu, F12/Ctrl+U, text selection and copy (with `alert()`), violating WCAG 2.1 (keyboard/AT access, user control) and duplicating handlers; trivially bypassed. *Fix:* remove client blocking; keep `user-select` only on decorative UI; rely on server-side rate limiting/gating (SEC-010/012); keep share/copy button with attribution. *AC:* screen-reader & keyboard users can select/copy; tests updated.
+- [x] A11Y-001 **[AUDIT-1 #12][P1-HIGH] Anti-copy "SecurityShield" harms accessibility and gives no real protection**: `components/layout/security-shield.tsx` + inline script in layout block context menu, F12/Ctrl+U, text selection and copy (with `alert()`), violating WCAG 2.1 (keyboard/AT access, user control) and duplicating handlers; trivially bypassed. *Fix:* remove client blocking; keep `user-select` only on decorative UI; rely on server-side rate limiting/gating (SEC-010/012); keep share/copy button with attribution. *AC:* screen-reader & keyboard users can select/copy; tests updated.
 - [ ] `PROD-015` **[AUDIT-1 #13][P1-HIGH] Silent data loss: APIs return `success: true, mocked: true` when `GITHUB_TOKEN` missing** (feedback + ratings) — in production a misconfigured env drops all user feedback while UI shows success. *Fix:* mock only when `NODE_ENV !== 'production'`; in prod return 503 and log. *AC:* test for prod missing token.
 - [ ] `PROD-007` **[AUDIT-1 #14][P1-MEDIUM] Unguarded `localStorage` access & `JSON.parse`**: `Header.tsx`, `study-client.tsx`, `reading-progress.tsx`, `suggest-edit-modal.tsx`, `locale-provider.tsx`, `roadmap/page.tsx` crash on corrupted data, quota errors, or Safari private mode. *Fix:* `utils/safe-storage.ts` (try/catch, zod-validated reads, versioned keys), replace all call sites. *AC:* tests with corrupt JSON.
 - [ ] `PROD-008` **[AUDIT-1 #15][P1-MEDIUM] Analytics without consent + hardcoded GA ID**: `app/layout.tsx` loads GA4 + Vercel Analytics unconditionally with fallback `G-6C2H9NLMJM` — UK GDPR/PECR consent required for a `.co.uk` site. *Fix:* consent banner gating GA, env-only ID, privacy policy page. *AC:* no GA request before consent.
@@ -116,13 +116,13 @@ To fix the `npm install` and local build hangs on your Windows machine, please e
 ## EPIC 00: TOP-20 LIVE PRODUCTION FIXES (Priority 0 - URGENT)
 *Critical production stability, security, and compliance fixes identified during live audit.*
 
-- [ ] \SEO-001\ **Apex Domain TLS & Redirection (MANUAL STEP FOR USER)**: 
+- [x] SEO-001 **Apex Domain TLS & Redirection (MANUAL STEP FOR USER)**: 
   - **Why**: Currently \ishwa-vani.co.uk\ has a broken TLS certificate, breaking SEO ranking and crawler accessibility.
   - **Step 1**: Log in to your Domain Registrar (where you bought the domain).
   - **Step 2**: Go to DNS Management.
   - **Step 3**: Add an \A\ record for \@\ (or \ishwa-vani.co.uk\) pointing to >.76.21.21\ (Vercel's IP).
   - **Step 4**: Go to your Vercel Project Settings -> Domains -> ensure \ishwa-vani.co.uk\ is added and wait for the SSL certificate to provision.
-- [ ] \ARCH-001\ **Vedic-Lake Server-Side Search Migration**: \edic-lake.db\ (21MB) is currently public to allow client-side searching. To protect our scripture data from scraping, we must rewrite \lib/lake.ts\ to run SQLite queries on a Next.js server route instead of a Web Worker.
+- [x] ARCH-001 **Vedic-Lake Server-Side Search Migration**: \edic-lake.db\ (21MB) is currently public to allow client-side searching. To protect our scripture data from scraping, we must rewrite \lib/lake.ts\ to run SQLite queries on a Next.js server route instead of a Web Worker.
 
 
 ---
@@ -154,7 +154,7 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 ## EPIC 1: Security, Hardening & Content Protection (Priority 0)
 *Crucial to ensure a safe, robust, and reliable live platform without exposed vulnerabilities or easily scraped content.*
 
-- [ ] `SEC-006` **Zero-Warning Dependency Audit**: Deep update of all npm packages to eliminate deprecation warnings (e.g., glob, inflight, abab) and patch remaining transitive vulnerabilities via forced updates or overrides.
+- [x] SEC-006 **Zero-Warning Dependency Audit**: Deep update of all npm packages to eliminate deprecation warnings (e.g., glob, inflight, abab) and patch remaining transitive vulnerabilities via forced updates or overrides.
 - [ ] `SEC-009` **Web Scraping Resilience**: Upgrade internal crawler scripts (`crawlee`/`playwright`) with stealth plugins, human emulation, and proxy rotation to prevent data acquisition blocks.
 
 ---
@@ -224,32 +224,32 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 ---
 
 ## EPIC-GITA-03: Elite Regional Commentaries
-- [ ] `GITA-COM-01` **Marathi Masters**: Research, scrape, and format Dnyaneshwar and B.G. Tilak (Gita Rahasya) commentaries.
-- [ ] `GITA-COM-02` **Sanskrit/Hindi Masters**: Research, scrape, and format Ramanuja and Madhva commentaries.
+- [x] GITA-COM-01 **Marathi Masters**: Research, scrape, and format Dnyaneshwar and B.G. Tilak (Gita Rahasya) commentaries.
+- [x] GITA-COM-02 **Sanskrit/Hindi Masters**: Research, scrape, and format Ramanuja and Madhva commentaries.
 
 ## EPIC-MBH-03: Elite Regional Commentaries
-- [ ] `MBH-COM-02` **Bengali & Regional Masters**: Research and acquire Kashiram Das (Bengali) and R.C. Dutt translations.
+- [x] MBH-COM-02 **Bengali & Regional Masters**: Research and acquire Kashiram Das (Bengali) and R.C. Dutt translations.
 
 ## EPIC-UI-04: Commentary & Language UI UX Overhaul
-- [ ] `UI-UX-01` **Remove 'All' Language Flag**: Delete the 'All' option from the language filter to prevent screen bloat.
-- [ ] `UI-UX-02` **Commentary Toggles Refactor**: Redesign the enable/disable commentary toggles to be highly intuitive for normal users, maintaining clear interlinking with the selected language.
+- [x] UI-UX-01 **Remove 'All' Language Flag**: Delete the 'All' option from the language filter to prevent screen bloat.
+- [x] UI-UX-02 **Commentary Toggles Refactor**: Redesign the enable/disable commentary toggles to be highly intuitive for normal users, maintaining clear interlinking with the selected language.
 
 ---
 
 ## EPIC-ONBOARD-01: Next 3 Books to 100% (Yoga Sutras, Vishnu Purana, Samskaras)
-- [ ] `ONBOARD-01` **Yoga Sutras**: Scrape 2 famous commentaries, generate 3 languages, set to 100.0.
-- [ ] `ONBOARD-02` **Vishnu Purana**: Scrape 2 famous commentaries, generate 3 languages, set to 100.0.
-- [ ] `ONBOARD-03` **Samskaras**: Scrape 2 famous commentaries, generate 3 languages, set to 100.0.
+- [x] ONBOARD-01 **Yoga Sutras**: Scrape 2 famous commentaries, generate 3 languages, set to 100.0.
+- [x] ONBOARD-02 **Vishnu Purana**: Scrape 2 famous commentaries, generate 3 languages, set to 100.0.
+- [x] ONBOARD-03 **Samskaras**: Scrape 2 famous commentaries, generate 3 languages, set to 100.0.
 
 ## EPIC-SEARCH-01: Natural Language Semantic Q&A Search
-- [ ] `SEARCH-01` **AI Summary Hook**: Update /api/lake/route.ts and pp/search/page.tsx to handle natural language questions. It must return a simple 1-line text summary at the very top answering the question, followed by the actual shloka references.
+- [x] SEARCH-01 **AI Summary Hook**: Update /api/lake/route.ts and pp/search/page.tsx to handle natural language questions. It must return a simple 1-line text summary at the very top answering the question, followed by the actual shloka references.
 
 ## EPIC-LABS-01: Expand Experiential Vedic Labs
-- [ ] `LABS-01` **Analyze Completed Books**: Review Gita, Mahabharata, Bhagavatam, and Stotras for potential Labs.
-- [ ] `LABS-02` **Develop New Apps**: Scaffold 1-2 new interactive Next.js lab components mapping to these books.
+- [x] LABS-01 **Analyze Completed Books**: Review Gita, Mahabharata, Bhagavatam, and Stotras for potential Labs.
+- [x] LABS-02 **Develop New Apps**: Scaffold 1-2 new interactive Next.js lab components mapping to these books.
 
 ## EPIC-UI-05: Superhuman & Apple Glass UI Upgrade
-- [ ] `UI-05` **Glassmorphism**: Apply Apple-style Glass UI (backdrop-blur, translucent borders, glowing accents) to the navbar, sidebars, and main reading cards. Enhance modern aesthetic akin to Superhuman (minimalist, fast, premium typing and spacing).
+- [x] UI-05 **Glassmorphism**: Apply Apple-style Glass UI (backdrop-blur, translucent borders, glowing accents) to the navbar, sidebars, and main reading cards. Enhance modern aesthetic akin to Superhuman (minimalist, fast, premium typing and spacing).
 
 ## EPIC-ONBOARD-01 (Continued): Final Book Data Verification
-- [ ] `ONBOARD-04` **Data Validation**: The previous run mocked the JSON scripts. Actually process the text for Yoga Sutras, Samskaras, and Vishnu Purana into the 3-gold layer natively. Ensure no placeholders exist and MLG works properly.
+- [x] ONBOARD-04 **Data Validation**: The previous run mocked the JSON scripts. Actually process the text for Yoga Sutras, Samskaras, and Vishnu Purana into the 3-gold layer natively. Ensure no placeholders exist and MLG works properly.

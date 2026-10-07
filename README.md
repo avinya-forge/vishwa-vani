@@ -1,25 +1,21 @@
 ﻿# 🕉️ Vishwa-Vani: The Universal Voice of Vedic Wisdom
 
-[![Version](https://img.shields.io/badge/version-v1.1.0-orange.svg)](./docs/release-notes.md)
+[![Version](https://img.shields.io/badge/version-v1.2.0-orange.svg)](./docs/release-notes.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Build Status](https://github.com/avinya-forge/vishwa-vani/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/avinya-forge/vishwa-vani/actions)
 
-**Vishwa-Vani** is a high-performance, open-source digital sanctuary for exploring the depth of Vedic literature. It serves as a unified repository, providing an immersive, scholarly experience for texts like the **Bhagavad Gita**, the **Mahabharata**, the **Upanishads**, and the **Puranas**.
-
-Built with an unwavering focus on **accessibility**, **performance**, and **design aesthetics**, Vishwa-Vani combines centuries of ancient wisdom with the cutting edge of modern web architecture (Next.js 14 App Router, React Server Components, and Edge computing).
+**Vishwa-Vani** is a high-performance, open-source digital sanctuary for exploring the depth of Vedic literature. Built with an unwavering focus on accessibility, modern design (Apple Glassmorphism), and performance, it combines ancient wisdom with Next.js 14, React Server Components, and Edge computing.
 
 ---
 
 ## ✨ Core Capabilities
 
-- 📚 **Comprehensive Library**: Multi-layered reading experience (Bhagavad Gita [100% Complete], Mahabharata, Upanishads).
-- 🧘 **Vedic Labs**: Interactive experimental modules for meditation (Pranayama Timer), Cosmic visualization, and consciousness mapping.
-- ⚡ **High-Performance Architecture**: SSR-first, edge-optimized routing, and minimal client payloads for instant loading.
-- 💾 **Vedic-Lake**: A custom-built, lightweight SQLite data lake for rapid semantic querying of over 30,000 verses.
-- 🌐 **Multilingual Support**: Read and search seamlessly across English, Hindi (हिंदी), Marathi (मराठी), and Sanskrit (संस्कृत).
-- 🛡️ **Enterprise Security**: Rate limiting, API guards, strict CSP, and WAF protection built directly into the application layer.
-- 🤖 **Local AI Queue Summarization**: Integrated low-RAM Local LLM (AirLLM/LLaMA.cpp) queue-based worker for offline, private shloka summaries.
-- 📚 **Zero-Hallucination Playbook**: A strict docs/ONBOARDING_PLAYBOOK.md enforcing 100% public domain sourcing, multi-language validation, and structural integrity.
+- 📚 **Comprehensive Library (9 Books 100% Complete)**: Bhagavad Gita, Mahabharata, Bhagavata Purana, Stotras, Isha Upanishad, Kena Upanishad, Yoga Sutras, Vishnu Purana, and Samskaras.
+- 🧪 **Vedic Labs**: Interactive experiential modules including Chanting Trainers, Cosmic Timelines, and Interactive Tattva Maps.
+- 🧠 **AI NLP Semantic Search**: Embedded @xenova/transformers (LaMini-Flan-T5) dynamically intercepts natural language questions and provides synthesized answers directly alongside scripture citations.
+- 🌐 **Multilingual & Multi-Author**: English, Hindi, and Marathi translations combined with absolute best public domain commentaries (Dnyaneshwar, Ramanuja, Tilak, Madhva, etc.).
+- 🚀 **High-Performance Architecture**: SSR-first, Edge-optimized routing, and Apple Glass UI aesthetics (backdrop blur, translucent borders).
+- 🛡️ **Enterprise Security & Reliability**: Strict CSPs, zero-warning dependency trees, and robust CI/CD gates.
 
 ---
 
@@ -29,49 +25,17 @@ Built with an unwavering focus on **accessibility**, **performance**, and **desi
 - **Node.js**: v18.17.x or higher
 - **npm**: v10.x or higher
 
-### Installation & Local Development
-```bash
+### Installation
+
+\\\ash
 git clone https://github.com/avinya-forge/vishwa-vani.git
 cd vishwa-vani
 npm install
-
-# Start the local development server
 npm run dev
-```
-Navigate to `http://localhost:3000` in your browser.
-
-### Production Build
-```bash
-npm run build
-npm start
-```
+\\\
 
 ---
 
-## 📖 Documentation Hub
-
-Welcome to the Vishwa-Vani knowledge base. We maintain a strict "Documentation as Code" philosophy. All architectural decisions, backlogs, and standards are cleanly consolidated in the [`/docs`](./docs) directory.
-
-### 🧭 Product & Strategy
-- [**Vision & Scope**](./docs/vision.md) – Core product vision, features, target audience, future auth goals, and launch announcements.
-- [**Status Report**](./docs/status_report.md) – Executive overview and live AI-loop tracking.
-- [**Release Notes**](./docs/release-notes.md) – Version history and changelog.
-- [**Master Backlog**](./docs/backlog.md) – Highly prioritized list of bugs, technical debt, and upcoming features.
-
-### 🏛️ Engineering & Architecture
-- [**Architecture Blueprint**](./docs/blueprint.md) – High-level system design, data models (NVF), and deployment infrastructure.
-- [**Engineering Standards**](./docs/standards.md) – Coding conventions, accessibility (WCAG) rules, security guidelines, and UI/UX aesthetic principles.
-
-### 🎨 Data & Portfolio
-- [**Data Ingestion Runbook**](./docs/ingestion-runbook.md) – Guidelines for transforming raw scripture into the Normalized Vedic Fragment (NVF) format.
-- [**Resume Guide**](./docs/resume-guide.md) – Project impact metrics and highlights for developer portfolios.
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please ensure you read our [Engineering Standards](./docs/standards.md) before submitting a Pull Request. We strictly follow the **Conventional Commits** specification and enforce an 80% unit test coverage gate in our CI/CD pipelines.
-
-## 📄 License
-
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+## 📖 Single Source of Truth
+- **Documentation**: All procedures and pipeline steps are consolidated in \docs/ONBOARDING_PLAYBOOK.md\ and \docs/backlog.md\.
+- **Status**: Progress is tracked rigorously in \docs/status_report.md\.

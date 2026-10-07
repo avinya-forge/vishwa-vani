@@ -27,7 +27,6 @@
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
     "@next/third-parties": "^16.3.8",
-    "@swc/core-win32-x64-msvc": "^1.16.13",
     "@swc/helpers": "^0.5.21",
     "@tailwindcss/typography": "^0.5.19",
     "@types/sql.js": "^1.4.9",
