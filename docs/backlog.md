@@ -247,3 +247,9 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 ## EPIC-LABS-01: Expand Experiential Vedic Labs
 - [ ] `LABS-01` **Analyze Completed Books**: Review Gita, Mahabharata, Bhagavatam, and Stotras for potential Labs.
 - [ ] `LABS-02` **Develop New Apps**: Scaffold 1-2 new interactive Next.js lab components mapping to these books.
+
+## EPIC-UI-05: Superhuman & Apple Glass UI Upgrade
+- [ ] `UI-05` **Glassmorphism**: Apply Apple-style Glass UI (backdrop-blur, translucent borders, glowing accents) to the navbar, sidebars, and main reading cards. Enhance modern aesthetic akin to Superhuman (minimalist, fast, premium typing and spacing).
+
+## EPIC-ONBOARD-01 (Continued): Final Book Data Verification
+- [ ] `ONBOARD-04` **Data Validation**: The previous run mocked the JSON scripts. Actually process the text for Yoga Sutras, Samskaras, and Vishnu Purana into the 3-gold layer natively. Ensure no placeholders exist and MLG works properly.
