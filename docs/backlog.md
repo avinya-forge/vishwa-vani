@@ -233,3 +233,17 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 ## EPIC-UI-04: Commentary & Language UI UX Overhaul
 - [ ] `UI-UX-01` **Remove 'All' Language Flag**: Delete the 'All' option from the language filter to prevent screen bloat.
 - [ ] `UI-UX-02` **Commentary Toggles Refactor**: Redesign the enable/disable commentary toggles to be highly intuitive for normal users, maintaining clear interlinking with the selected language.
+
+---
+
+## EPIC-ONBOARD-01: Next 3 Books to 100% (Yoga Sutras, Vishnu Purana, Samskaras)
+- [ ] `ONBOARD-01` **Yoga Sutras**: Scrape 2 famous commentaries, generate 3 languages, set to 100.0.
+- [ ] `ONBOARD-02` **Vishnu Purana**: Scrape 2 famous commentaries, generate 3 languages, set to 100.0.
+- [ ] `ONBOARD-03` **Samskaras**: Scrape 2 famous commentaries, generate 3 languages, set to 100.0.
+
+## EPIC-SEARCH-01: Natural Language Semantic Q&A Search
+- [ ] `SEARCH-01` **AI Summary Hook**: Update /api/lake/route.ts and pp/search/page.tsx to handle natural language questions. It must return a simple 1-line text summary at the very top answering the question, followed by the actual shloka references.
+
+## EPIC-LABS-01: Expand Experiential Vedic Labs
+- [ ] `LABS-01` **Analyze Completed Books**: Review Gita, Mahabharata, Bhagavatam, and Stotras for potential Labs.
+- [ ] `LABS-02` **Develop New Apps**: Scaffold 1-2 new interactive Next.js lab components mapping to these books.

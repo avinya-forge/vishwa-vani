@@ -35,3 +35,11 @@ This playbook defines the standardized, zero-hallucination workflow to ingest, p
 *   **Action:** Run the Audit Script to verify 0 placeholders.
 *   **Action:** Open `lib/texts.ts` and set `SCRIPTURE_READINESS_SCORES['[book-slug]'] = 100.0`.
 *   **Action:** This globally bypasses the `isStrictDemoGatingEnabled()` check and instantly publishes the book to the frontend UI!
+
+## 7. Search Integration & NLP Indexing
+*   **Rule:** Every completed book MUST be natively indexed in the Vedic-Lake for natural language processing.
+*   **Action:** Ensure the text boundaries and semantic meanings are compatible with the Semantic Q&A Search feature, generating 1-line AI summaries for user queries.
+
+## 8. Vedic Labs Ideation
+*   **Rule:** Every book must be evaluated for interactive, experiential learning.
+*   **Action:** Analyze the core philosophy of the book and design an interactive 'Vedic Lab' (e.g., a cosmic timeline, a meditation timer, or a tattva map) if applicable.
