@@ -3,6 +3,7 @@ import { validateApiRequest } from '@/lib/api-guard';
 import { z } from 'zod';
 import Database from 'better-sqlite3';
 import path from 'path';
+import { pipeline } from '@xenova/transformers';
 
 // Schema for search request
 const searchSchema = z.object({
@@ -13,13 +14,22 @@ const searchSchema = z.object({
   lakeFile: z.string().default('vedic-lake.db'),
 });
 
-// Reuse server-lake.ts or just open DB here
-// We'll open it from process.cwd() / data / lakeFile or wherever it is.
-// Actually, it might still be in public/ for now until SEC-010 phase 2.
-// Let's assume it's in public/.
 function getDb(lakeFile: string) {
   const dbPath = path.join(process.cwd(), 'public', lakeFile);
   return new Database(dbPath, { readonly: true });
+}
+
+class PipelineSingleton {
+  static task = 'text2text-generation' as any;
+  static model = 'Xenova/LaMini-Flan-T5-77M';
+  static instance: any = null;
+
+  static async getInstance(progress_callback: any = null) {
+      if (this.instance === null) {
+          this.instance = pipeline(this.task, this.model, { quantized: true, progress_callback });
+      }
+      return this.instance;
+  }
 }
 
 export async function POST(request: Request) {
@@ -39,8 +49,22 @@ export async function POST(request: Request) {
     if (action === 'SEARCH_LAKE') {
       const stmt = db.prepare('SELECT * FROM verses WHERE meaning LIKE ? OR sanskrit LIKE ? OR transliteration LIKE ? LIMIT 50');
       const likeQuery = `%${query}%`;
-      const results = stmt.all(likeQuery, likeQuery, likeQuery);
-      return NextResponse.json({ results });
+      const results = stmt.all(likeQuery, likeQuery, likeQuery) as any[];
+
+      let summary = null;
+      if (query && query.trim().split(' ').length > 2 && results.length > 0) {
+        try {
+          const generator = await PipelineSingleton.getInstance();
+          const context = results.slice(0, 3).map((r) => r.meaning).join(' ');
+          const prompt = `Answer the question "${query}" in one sentence based on this context: ${context}`;
+          const output = await generator(prompt, { max_new_tokens: 40 });
+          summary = output[0]?.generated_text || null;
+        } catch (err) {
+          console.error("NLP error:", err);
+        }
+      }
+
+      return NextResponse.json({ results, summary });
     }
 
     return NextResponse.json({ error: 'Invalid action' }, { status: 400 });
