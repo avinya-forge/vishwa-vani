@@ -61,7 +61,10 @@ pm run build.
 *   **Action:** Generate 	ranslation_hi, 	ranslation_mr, meaning_hi, meaning_mr (Target: English, Hindi, Marathi minimum).
 *   **Action:** Append the generated i_summary for the chapter.
 
-### 5. QA Audit & Zero Placeholders Rule
+### 5. QA Audit & NLP Verification Loop
+*   **Rule:** We strictly forbid placeholders (e.g., [Pending Translation], [TBD]) in production.
+*   **Rule:** Every Shloka MUST correctly link to its English translation, and semantic meaning must match the Sanskrit base.
+*   **Action:** Run python core/brain/shloka_auditor.py on the 3-gold JSON files to verify meaning matching, hunt for empty layers, and auto-correct semantic drift.
 *   **Rule:** We strictly forbid placeholders (e.g., [Pending Translation], [TBD]) in production.
 *   **Action:** Run the Bug Hunter / QA auditor script on the 3-gold JSON files to aggressively scan for missing layers, incorrect tags, or placeholders.
 *   **Action:** If placeholders exist, the book is NOT done. Route back to Step 4.
@@ -70,7 +73,10 @@ pm run build.
 *   **Rule:** Every completed book MUST be natively indexed in the Vedic-Lake for semantic search.
 *   **Action:** Ensure the text boundaries are mapped for the local NLP model so the platform can answer natural language user queries with accurate 1-line summaries.
 
-### 7. UI Integration & Toggling
+### 7. UI Integration, Counters & Toggling
+*   **Rule:** The UI must reflect exactly what is physically available in the database.
+*   **Action:** Open lib/texts.ts and set SCRIPTURE_READINESS_SCORES['[book-slug]'] = 100.0.
+*   **Action:** Update Global Shloka Counters in the UI state so that animations dynamically reflect the newly ingested counts.
 *   **Rule:** Only execute this step if physical files exist in 3-gold/ and Step 5 passed.
 *   **Action:** Open lib/texts.ts and set SCRIPTURE_READINESS_SCORES['[book-slug]'] = 100.0.
 *   **Action:** This globally bypasses the isStrictDemoGatingEnabled() check and instantly publishes the book to the frontend UI.
@@ -89,3 +95,4 @@ pm run test (or
 px tsc --noEmit) locally to verify zero regressions.
 *   **Action:** Update docs/status_report.md with new completion metrics.
 *   **Action:** Commit cleanly with explicit scopes (e.g., eat(rigveda): completed end-to-end onboarding).
+

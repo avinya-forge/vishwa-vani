@@ -1,8 +1,9 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 import { getTranslations } from 'next-intl/server'
 import { getLibraryStats, getVedicHierarchy } from '@/lib/texts'
 import { setRequestLocale } from 'next-intl/server'
 import BeginReadingButton from '@/components/ui/begin-reading-button'
+import { AnimatedStat } from '@/components/ui/animated-stat'
 import PipelineTracker from '@/components/ui/pipeline-tracker'
 
 export default async function Home() {
@@ -13,9 +14,9 @@ export default async function Home() {
   const hierarchy = getVedicHierarchy()
 
   const statsList = [
-    { n: stats.totalBooks, label: 'Sacred Texts', icon: '📜' },
-    { n: `${stats.totalVerses}`, label: 'Verses', icon: '✨' },
-    { n: '3', label: 'Languages', icon: '🌍' },
+    { n: stats.totalBooks, label: 'Sacred Texts', icon: 'ðŸ“œ' },
+    { n: `${stats.totalVerses}`, label: 'Verses', icon: 'âœ¨' },
+    { n: '3', label: 'Languages', icon: 'ðŸŒ' },
   ]
 
   const categories = stats.categories.filter((cat: string) =>
@@ -24,15 +25,15 @@ export default async function Home() {
 
   return (
     <div className="min-h-screen bg-[#FDFBF7] dark:bg-[#1C1917] selection:bg-orange-500/20">
-      {/* 🌌 AMBIENT GLOW */}
+      {/* ðŸŒŒ AMBIENT GLOW */}
       <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-orange-100/40 dark:bg-orange-900/10 rounded-full blur-[120px] -mr-96 -mt-96 pointer-events-none" />
       <div className="absolute top-[20%] left-0 w-[600px] h-[600px] bg-stone-100/60 dark:bg-stone-900/30 rounded-full blur-[100px] -ml-96 pointer-events-none" />
 
-      {/* ═══════ HERO ═══════ */}
+      {/* â•â•â•â•â•â•â• HERO â•â•â•â•â•â•â• */}
       <section className="max-w-[1200px] mx-auto px-4 sm:px-6 pt-10 pb-12 text-center">
         <div className="inline-flex items-center gap-2 mb-6 px-4 py-1.5 rounded-full bg-orange-50 border border-orange-100 text-orange-700 text-[10px] font-bold uppercase tracking-[0.2em]">
           <span className="w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse" />
-          Eternal Wisdom · Open Access
+          Eternal Wisdom Â· Open Access
         </div>
 
         <h1 className="text-[clamp(1.5rem,3.5vw,2.75rem)] whitespace-nowrap font-serif font-black text-stone-900 dark:text-stone-100 leading-[1.1] tracking-tight mb-6 text-balance">
@@ -49,15 +50,15 @@ export default async function Home() {
             href="/lab"
             className="inline-flex items-center gap-3 px-8 py-4 bg-white hover:bg-amber-50/50 dark:bg-stone-900 dark:hover:bg-amber-950/30 text-stone-900 dark:text-stone-100 font-black rounded-2xl border border-stone-200 dark:border-stone-800 hover:border-amber-400/40 transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-0.5 text-[11px] uppercase tracking-widest shadow-sm"
           >
-            <span>🧪</span> Explore Labs
+            <span>ðŸ§ª</span> Explore Labs
           </Link>
         </div>
 
-        {/* 🔍 QUICK SEARCH BAR */}
+        {/* ðŸ” QUICK SEARCH BAR */}
         <div className="max-w-2xl mx-auto mb-16 px-2">
           <Link href="/search" className="group relative block">
             <div className="absolute inset-y-0 left-6 flex items-center pointer-events-none">
-              <span className="text-xl grayscale group-hover:grayscale-0 transition-all duration-300">🔍</span>
+              <span className="text-xl grayscale group-hover:grayscale-0 transition-all duration-300">ðŸ”</span>
             </div>
             <div className="w-full pl-16 pr-8 py-5 bg-white/70 dark:bg-stone-900/70 backdrop-blur-md border border-stone-200/60 dark:border-stone-800 rounded-3xl shadow-lg group-hover:shadow-xl group-hover:border-orange-300 dark:group-hover:border-orange-900 transition-all text-left">
               <span className="text-stone-300 dark:text-stone-600 font-serif text-lg">Search the Universal Library...</span>
@@ -79,7 +80,7 @@ export default async function Home() {
           {statsList.map(s => (
             <div key={s.label} className="bg-white/50 dark:bg-stone-800/50 backdrop-blur-sm border border-stone-100 dark:border-stone-700 rounded-2xl p-4 sm:p-6 shadow-sm hover:shadow-md hover:border-orange-200 dark:hover:border-orange-800 transition-all group">
               <div className="text-xl mb-1 group-hover:scale-110 transition-transform">{s.icon}</div>
-              <div className="text-2xl sm:text-3xl font-serif font-black text-stone-900 dark:text-stone-100">{s.n}</div>
+              <div className="text-2xl sm:text-3xl font-serif font-black text-stone-900 dark:text-stone-100">{typeof s.n === 'number' ? <AnimatedStat targetCount={s.n} /> : (s.label === 'Verses' ? <AnimatedStat targetCount={parseInt(s.n as string, 10)} /> : s.n)}</div>
               <div className="text-[10px] font-black text-stone-400 dark:text-stone-500 uppercase tracking-widest mt-1">{s.label}</div>
             </div>
           ))}
@@ -88,7 +89,7 @@ export default async function Home() {
 
       <PipelineTracker />
 
-      {/* ═══════ LIBRARY ═══════ */}
+      {/* â•â•â•â•â•â•â• LIBRARY â•â•â•â•â•â•â• */}
       <section className="max-w-[1200px] mx-auto px-4 sm:px-6 pb-20">
         {categories.map((cat: string) => {
           const books = hierarchy.tree.filter((t: unknown) => (t as Record<string, unknown>).category === cat)
@@ -168,3 +169,5 @@ function BookCard({ book, locale }: { book: Record<string, unknown>, locale: str
     </div>
   )
 }
+
+

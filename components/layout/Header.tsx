@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import Link from 'next/link'
 import { useTranslations, useLocale } from 'next-intl'
@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation'
 import { VEDIC_LIBRARY, getLibraryStats } from '@/lib/texts'
 import { useState, useEffect, useRef } from 'react'
 import { ThemeToggle } from '@/components/theme-toggle'
+import { AnimatedStat } from '@/components/ui/animated-stat'
 
 // Custom hook to handle clicks outside the ref element generically
 function useOnClickOutside(ref: React.RefObject<HTMLDivElement | null>, handler: (event: MouseEvent | TouchEvent) => void) {
@@ -80,14 +81,18 @@ export default function Header() {
             href="/"
             className="flex items-center gap-2 group"
           >
-            <div className="w-7 h-7 bg-orange-600 rounded-md flex items-center justify-center text-white text-[13px] shadow-sm group-hover:rotate-12 transition-transform duration-300">ॐ</div>
+            <div className="w-7 h-7 bg-orange-600 rounded-md flex items-center justify-center text-white text-[13px] shadow-sm group-hover:rotate-12 transition-transform duration-300">à¥</div>
             <span className="font-serif font-black text-base text-stone-900 dark:text-stone-100 group-hover:text-orange-600 transition-colors hidden sm:block">Vishwa-Vani</span>
+            <div className="hidden md:flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-orange-100/50 dark:bg-orange-900/30 border border-orange-200 dark:border-orange-800 text-[10px] font-bold text-orange-700 dark:text-orange-400 uppercase tracking-wider ml-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse" />
+              <span><AnimatedStat targetCount={709} /> Verses</span>
+            </div>
           </Link>
 
           {/* Desktop nav */}
           <div className="hidden lg:flex items-center gap-0.5">
 
-            {/* Library dropdown — click-toggle */}
+            {/* Library dropdown â€” click-toggle */}
             <div ref={dropdownRef} className="relative">
               <button
                 onClick={() => setShowLibrary(v => !v)}
@@ -109,7 +114,7 @@ export default function Header() {
                         onClick={() => setShowLibrary(false)}
                         className="flex items-center gap-2.5 px-3 py-2 rounded-lg bg-orange-100 hover:bg-orange-200 text-orange-800 transition-all border border-orange-200 group"
                       >
-                        <span className="text-[17px]">📖</span>
+                        <span className="text-[17px]">ðŸ“–</span>
                         <div>
                           <div className="text-xs font-bold leading-tight">
                             {VEDIC_LIBRARY.find(b => b.slug === continueReading.text)?.name || continueReading.text}
@@ -155,7 +160,8 @@ export default function Header() {
               )}
             </div>
 
-            <Link href="/search" className={`px-3 py-1.5 rounded-md text-xs font-bold transition-all focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:outline-none ${pathname === '/search' ? 'text-orange-600 bg-orange-50 dark:bg-orange-950/40' : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 hover:bg-stone-50 dark:hover:bg-stone-800'}`}>
+            <Link href="/engine" className="text-[11px] font-bold uppercase tracking-wider text-stone-500 hover:text-stone-900 dark:text-stone-400 dark:hover:text-stone-100 transition-colors">Engine</Link>
+              <Link href="/search" className={`px-3 py-1.5 rounded-md text-xs font-bold transition-all focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:outline-none ${pathname === '/search' ? 'text-orange-600 bg-orange-50 dark:bg-orange-950/40' : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 hover:bg-stone-50 dark:hover:bg-stone-800'}`}>
               Search
             </Link>
 
@@ -169,7 +175,7 @@ export default function Header() {
           </div>
         </div>
 
-        {/* Centre stats — desktop only */}
+        {/* Centre stats â€” desktop only */}
         <div className="hidden xl:flex items-center gap-6 text-center">
           <div>
             <div className="text-[9px] font-bold text-stone-300 dark:text-stone-600 uppercase tracking-[0.2em]">Books</div>
@@ -211,7 +217,7 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Mobile menu — slide down panel */}
+      {/* Mobile menu â€” slide down panel */}
       {showMobileMenu && (
         <div className="lg:hidden fixed inset-x-0 top-14 glass border-b border-stone-100/50 dark:border-stone-800/50 shadow-2xl z-[150] animate-in slide-in-from-top-0 duration-200 h-[calc(100vh-3.5rem)] overflow-y-auto">
           <div className="max-w-[1400px] mx-auto px-4 py-5 space-y-1.5">
@@ -228,6 +234,7 @@ export default function Header() {
               </Link>
             ))}
             <div className="border-t border-stone-100 dark:border-stone-800 mt-5 pt-5 space-y-1.5">
+              <Link href="/engine" className="text-[11px] font-bold uppercase tracking-wider text-stone-500 hover:text-stone-900 dark:text-stone-400 dark:hover:text-stone-100 transition-colors">Engine</Link>
               <Link href="/search" onClick={() => setShowMobileMenu(false)} className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-stone-50 dark:hover:bg-stone-800 transition-all text-sm font-bold text-stone-600 dark:text-stone-400">Deep Search</Link>
               <Link href="/lab" onClick={() => setShowMobileMenu(false)} className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-orange-50 dark:hover:bg-orange-950/30 transition-all text-sm font-bold text-orange-600 dark:text-orange-500">Vedic Labs</Link>
               <Link href="/roadmap" onClick={() => setShowMobileMenu(false)} className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-stone-50 dark:hover:bg-stone-800 transition-all text-sm font-bold text-stone-600 dark:text-stone-400">Roadmap</Link>
@@ -239,3 +246,5 @@ export default function Header() {
     </nav>
   )
 }
+
+
