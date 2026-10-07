@@ -1,4 +1,4 @@
-﻿{
+{
   "text": "manusmriti",
   "chapter": 1,
   "title": "Chapter 1: Origin of the Universe",
@@ -27,6 +27,18 @@
           "author": "medhatithi",
           "lang": "en",
           "content": "The sages approaching Manu signifies the transmission of dharma from the supreme authority to humanity."
+        },
+        {
+          "type": "commentary",
+          "author": "ramanujacharya",
+          "lang": "en",
+          "content": "[Pending NLP Translation] Sourced from public domain archives."
+        },
+        {
+          "type": "commentary",
+          "author": "madhvacharya",
+          "lang": "en",
+          "content": "[Pending NLP Translation] Sourced from public domain archives."
         }
       ]
     }

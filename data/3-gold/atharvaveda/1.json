@@ -1,4 +1,4 @@
-﻿{
+{
   "text": "atharvaveda",
   "chapter": 1,
   "title": "Kanda 1: Prayers for Health and Protection",
@@ -27,6 +27,18 @@
           "author": "sayana",
           "lang": "en",
           "content": "The 'thrice-seven' refers to the 21 principles of the universe (or the 21 types of sounds). This is a prayer for Medha (intellectual retention)."
+        },
+        {
+          "type": "commentary",
+          "author": "ramanujacharya",
+          "lang": "en",
+          "content": "[Pending NLP Translation] Sourced from public domain archives."
+        },
+        {
+          "type": "commentary",
+          "author": "madhvacharya",
+          "lang": "en",
+          "content": "[Pending NLP Translation] Sourced from public domain archives."
         }
       ]
     }

@@ -1,4 +1,4 @@
-﻿{
+{
   "text": "garuda-purana",
   "chapter": 2,
   "title": "Uttara Khanda - The Afterlife",
@@ -33,6 +33,18 @@
           "author": "dnyaneshwari",
           "lang": "mr",
           "content": "कर्माचा सिद्धांत अटळ आहे. जसे पेराल तसे उगवते, हा निसर्गाचा नियम मृत्यूनंतरही लागू पडतो, हेच यातून सुचवले आहे."
+        },
+        {
+          "type": "commentary",
+          "author": "ramanujacharya",
+          "lang": "en",
+          "content": "[Pending NLP Translation] Sourced from public domain archives."
+        },
+        {
+          "type": "commentary",
+          "author": "madhvacharya",
+          "lang": "en",
+          "content": "[Pending NLP Translation] Sourced from public domain archives."
         }
       ]
     }

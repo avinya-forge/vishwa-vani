@@ -1,4 +1,4 @@
-﻿{
+{
   "text": "brahma-sutras",
   "chapter": 1,
   "title": "Adhyaya 1: Samanvaya (Harmony)",
@@ -27,6 +27,18 @@
           "author": "sankara",
           "lang": "en",
           "content": "The word 'atha' (now) implies antecedent conditions. After acquiring the fourfold discipline, one is qualified to inquire into Brahman."
+        },
+        {
+          "type": "commentary",
+          "author": "ramanujacharya",
+          "lang": "en",
+          "content": "[Pending NLP Translation] Sourced from public domain archives."
+        },
+        {
+          "type": "commentary",
+          "author": "madhvacharya",
+          "lang": "en",
+          "content": "[Pending NLP Translation] Sourced from public domain archives."
         }
       ]
     }

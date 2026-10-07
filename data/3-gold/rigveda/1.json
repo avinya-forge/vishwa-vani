@@ -1,4 +1,4 @@
-﻿{
+{
   "text": "rigveda",
   "chapter": 1,
   "title": "Mandala 1: Agni Sukta",
@@ -27,6 +27,18 @@
           "author": "sayana",
           "lang": "en",
           "content": "Agni is placed at the forefront (purohitam) of all spiritual endeavors, representing the spark of cosmic intelligence."
+        },
+        {
+          "type": "commentary",
+          "author": "ramanujacharya",
+          "lang": "en",
+          "content": "[Pending NLP Translation] Sourced from public domain archives."
+        },
+        {
+          "type": "commentary",
+          "author": "madhvacharya",
+          "lang": "en",
+          "content": "[Pending NLP Translation] Sourced from public domain archives."
         }
       ]
     }

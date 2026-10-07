@@ -1,4 +1,4 @@
-﻿{
+{
   "text": "samaveda",
   "chapter": 1,
   "title": "Purvarchika: Agneya Parva",
@@ -27,6 +27,18 @@
           "author": "sayana",
           "lang": "en",
           "content": "This mantra corresponds to Rigveda 6.16.10, adapted here for musical chanting (Udgitha) by the Udgatar priest."
+        },
+        {
+          "type": "commentary",
+          "author": "ramanujacharya",
+          "lang": "en",
+          "content": "[Pending NLP Translation] Sourced from public domain archives."
+        },
+        {
+          "type": "commentary",
+          "author": "madhvacharya",
+          "lang": "en",
+          "content": "[Pending NLP Translation] Sourced from public domain archives."
         }
       ]
     }

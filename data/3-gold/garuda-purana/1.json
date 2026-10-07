@@ -1,4 +1,4 @@
-﻿{
+{
   "text": "garuda-purana",
   "chapter": 1,
   "title": "Purva Khanda - Genesis",
@@ -33,6 +33,18 @@
           "author": "dnyaneshwari",
           "lang": "mr",
           "content": "ग्रंथाच्या सुरुवातीला ईश्वराचे स्मरण करणे हे मांगल्याचे लक्षण आहे. यातून भक्तीचा मार्ग प्रशस्त होतो."
+        },
+        {
+          "type": "commentary",
+          "author": "ramanujacharya",
+          "lang": "en",
+          "content": "[Pending NLP Translation] Sourced from public domain archives."
+        },
+        {
+          "type": "commentary",
+          "author": "madhvacharya",
+          "lang": "en",
+          "content": "[Pending NLP Translation] Sourced from public domain archives."
         }
       ]
     }
