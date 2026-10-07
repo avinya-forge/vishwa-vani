@@ -4,8 +4,8 @@ This playbook defines the standardized, zero-hallucination workflow to ingest, p
 
 ## 1. Preparation & Legal Clearance
 *   **Rule:** 100% Public Domain sources only. No exceptions.
-*   **Rule:** Every book MUST have at least 2 commentaries by 2 different authors.
-*   **Rule:** Every book MUST support at least 3 languages (English, Hindi, Marathi).
+*   **Rule:** Every book MUST have commentaries by the absolute best, most famous scholars per region (e.g., 2 famous Marathi authors like Dnyaneshwar/Tilak, 2 Hindi authors, 2 Sanskrit authors like Shankara/Ramanuja). Do not just pick random authors for the sake of the count.
+*   **Rule:** Every book MUST support at least 3 languages (English, Hindi, Marathi). NO 'All' option in the UI to prevent screen bloat.
 *   **Action:** Verify copyright expiration (e.g., pre-1928 translations or explicitly open-sourced data like GRETIL).
 *   **Action:** Add the book to `docs/backlog.md` under a dedicated Epic (e.g., `EPIC-ISHA-01`).
 

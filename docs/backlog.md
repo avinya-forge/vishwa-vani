@@ -220,3 +220,16 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 - [ ] `STOTRAS-COM-01` **Acquire 2 Commentaries**: Scrape and parse 2 public domain commentaries.
 - [ ] `STOTRAS-LANG-01` **Multi-Language Generation**: Run Local LLM Queue to generate Hindi and Marathi translations.
 - [ ] `STOTRAS-TOGGLE-01` **UI Verification & Toggle**: Verify 0 placeholders, set readiness to 100.0, and toggle UI flag.
+
+---
+
+## EPIC-GITA-03: Elite Regional Commentaries
+- [ ] `GITA-COM-01` **Marathi Masters**: Research, scrape, and format Dnyaneshwar and B.G. Tilak (Gita Rahasya) commentaries.
+- [ ] `GITA-COM-02` **Sanskrit/Hindi Masters**: Research, scrape, and format Ramanuja and Madhva commentaries.
+
+## EPIC-MBH-03: Elite Regional Commentaries
+- [ ] `MBH-COM-02` **Bengali & Regional Masters**: Research and acquire Kashiram Das (Bengali) and R.C. Dutt translations.
+
+## EPIC-UI-04: Commentary & Language UI UX Overhaul
+- [ ] `UI-UX-01` **Remove 'All' Language Flag**: Delete the 'All' option from the language filter to prevent screen bloat.
+- [ ] `UI-UX-02` **Commentary Toggles Refactor**: Redesign the enable/disable commentary toggles to be highly intuitive for normal users, maintaining clear interlinking with the selected language.
