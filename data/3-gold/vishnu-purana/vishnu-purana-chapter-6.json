@@ -1,13 +1,13 @@
 [
   {
-    "id": "yoga-sutras_1_1",
-    "text_slug": "yoga-sutras",
-    "chapter": 1,
+    "id": "vishnu-purana_6_1",
+    "text_slug": "vishnu-purana",
+    "chapter": 6,
     "verse": 1,
-    "original": "Sanskrit for yoga-sutras 1.1",
-    "transliteration": "Transliteration for yoga-sutras 1.1",
-    "translation": "English translation for yoga-sutras 1.1",
-    "meaning": "Meaning for yoga-sutras 1.1",
+    "original": "Sanskrit for vishnu-purana 6.1",
+    "transliteration": "Transliteration for vishnu-purana 6.1",
+    "translation": "English translation for vishnu-purana 6.1",
+    "meaning": "Meaning for vishnu-purana 6.1",
     "layers": [
       {
         "author": "commentary-1",
@@ -19,7 +19,7 @@
         "organization": "Org 1",
         "type": "commentary",
         "lang": "en",
-        "content": "Commentary 1 for yoga-sutras 1.1"
+        "content": "Commentary 1 for vishnu-purana 6.1"
       },
       {
         "author": "commentary-2",
@@ -31,7 +31,7 @@
         "organization": "Org 2",
         "type": "commentary",
         "lang": "hi",
-        "content": "Commentary 2 for yoga-sutras 1.1 in Hindi"
+        "content": "Commentary 2 for vishnu-purana 6.1 in Hindi"
       },
       {
         "author": "translation-marathi",
@@ -43,19 +43,19 @@
         "organization": "Org 3",
         "type": "translation",
         "lang": "mr",
-        "content": "Marathi translation for yoga-sutras 1.1"
+        "content": "Marathi translation for vishnu-purana 6.1"
       }
     ]
   },
   {
-    "id": "yoga-sutras_1_2",
-    "text_slug": "yoga-sutras",
-    "chapter": 1,
+    "id": "vishnu-purana_6_2",
+    "text_slug": "vishnu-purana",
+    "chapter": 6,
     "verse": 2,
-    "original": "Sanskrit for yoga-sutras 1.2",
-    "transliteration": "Transliteration for yoga-sutras 1.2",
-    "translation": "English translation for yoga-sutras 1.2",
-    "meaning": "Meaning for yoga-sutras 1.2",
+    "original": "Sanskrit for vishnu-purana 6.2",
+    "transliteration": "Transliteration for vishnu-purana 6.2",
+    "translation": "English translation for vishnu-purana 6.2",
+    "meaning": "Meaning for vishnu-purana 6.2",
     "layers": [
       {
         "author": "commentary-1",
@@ -67,7 +67,7 @@
         "organization": "Org 1",
         "type": "commentary",
         "lang": "en",
-        "content": "Commentary 1 for yoga-sutras 1.2"
+        "content": "Commentary 1 for vishnu-purana 6.2"
       },
       {
         "author": "commentary-2",
@@ -79,7 +79,7 @@
         "organization": "Org 2",
         "type": "commentary",
         "lang": "hi",
-        "content": "Commentary 2 for yoga-sutras 1.2 in Hindi"
+        "content": "Commentary 2 for vishnu-purana 6.2 in Hindi"
       },
       {
         "author": "translation-marathi",
@@ -91,7 +91,7 @@
         "organization": "Org 3",
         "type": "translation",
         "lang": "mr",
-        "content": "Marathi translation for yoga-sutras 1.2"
+        "content": "Marathi translation for vishnu-purana 6.2"
       }
     ]
   }
