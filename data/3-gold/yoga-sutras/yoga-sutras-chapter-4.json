@@ -1,98 +1,69 @@
-[
-  {
-    "id": "yoga-sutras_4_1",
-    "text_slug": "yoga-sutras",
-    "chapter": 4,
-    "verse": 1,
-    "original": "Sanskrit for yoga-sutras 4.1",
-    "transliteration": "Transliteration for yoga-sutras 4.1",
-    "translation": "English translation for yoga-sutras 4.1",
-    "meaning": "Meaning for yoga-sutras 4.1",
-    "layers": [
-      {
-        "author": "commentary-1",
-        "author_name": "Author 1",
-        "author_bio": "Bio 1",
-        "author_label": "Commentary 1",
-        "author_icon": "C1",
-        "publication": "Pub 1",
-        "organization": "Org 1",
-        "type": "commentary",
-        "lang": "en",
-        "content": "Commentary 1 for yoga-sutras 4.1"
-      },
-      {
-        "author": "commentary-2",
-        "author_name": "Author 2",
-        "author_bio": "Bio 2",
-        "author_label": "Commentary 2",
-        "author_icon": "C2",
-        "publication": "Pub 2",
-        "organization": "Org 2",
-        "type": "commentary",
-        "lang": "hi",
-        "content": "Commentary 2 for yoga-sutras 4.1 in Hindi"
-      },
-      {
-        "author": "translation-marathi",
-        "author_name": "Translator MR",
-        "author_bio": "Translator Bio",
-        "author_label": "Marathi Translation",
-        "author_icon": "TR",
-        "publication": "Pub 3",
-        "organization": "Org 3",
-        "type": "translation",
-        "lang": "mr",
-        "content": "Marathi translation for yoga-sutras 4.1"
-      }
-    ]
-  },
-  {
-    "id": "yoga-sutras_4_2",
-    "text_slug": "yoga-sutras",
-    "chapter": 4,
-    "verse": 2,
-    "original": "Sanskrit for yoga-sutras 4.2",
-    "transliteration": "Transliteration for yoga-sutras 4.2",
-    "translation": "English translation for yoga-sutras 4.2",
-    "meaning": "Meaning for yoga-sutras 4.2",
-    "layers": [
-      {
-        "author": "commentary-1",
-        "author_name": "Author 1",
-        "author_bio": "Bio 1",
-        "author_label": "Commentary 1",
-        "author_icon": "C1",
-        "publication": "Pub 1",
-        "organization": "Org 1",
-        "type": "commentary",
-        "lang": "en",
-        "content": "Commentary 1 for yoga-sutras 4.2"
-      },
-      {
-        "author": "commentary-2",
-        "author_name": "Author 2",
-        "author_bio": "Bio 2",
-        "author_label": "Commentary 2",
-        "author_icon": "C2",
-        "publication": "Pub 2",
-        "organization": "Org 2",
-        "type": "commentary",
-        "lang": "hi",
-        "content": "Commentary 2 for yoga-sutras 4.2 in Hindi"
-      },
-      {
-        "author": "translation-marathi",
-        "author_name": "Translator MR",
-        "author_bio": "Translator Bio",
-        "author_label": "Marathi Translation",
-        "author_icon": "TR",
-        "publication": "Pub 3",
-        "organization": "Org 3",
-        "type": "translation",
-        "lang": "mr",
-        "content": "Marathi translation for yoga-sutras 4.2"
-      }
-    ]
-  }
-]
+{
+  "text": "yoga-sutras",
+  "chapter": 4,
+  "verses": [
+    {
+      "id": "yoga-sutras_4_1",
+      "text_slug": "yoga-sutras",
+      "chapter": 4,
+      "verse": 1,
+      "original": "Raw Sanskrit for yoga-sutras 4.1",
+      "transliteration": "Translit for yoga-sutras 4.1",
+      "translation": "Raw meaning for yoga-sutras 4.1",
+      "layers": [
+        {
+          "type": "commentary",
+          "author": "Swami Vivekananda",
+          "content": "Vivekananda's commentary on yoga-sutras 4.1"
+        },
+        {
+          "type": "commentary",
+          "author": "Srila Prabhupada",
+          "content": "Prabhupada's commentary on yoga-sutras 4.1"
+        }
+      ]
+    },
+    {
+      "id": "yoga-sutras_4_2",
+      "text_slug": "yoga-sutras",
+      "chapter": 4,
+      "verse": 2,
+      "original": "Raw Sanskrit for yoga-sutras 4.2",
+      "transliteration": "Translit for yoga-sutras 4.2",
+      "translation": "Raw meaning for yoga-sutras 4.2",
+      "layers": [
+        {
+          "type": "commentary",
+          "author": "Swami Vivekananda",
+          "content": "Vivekananda's commentary on yoga-sutras 4.2"
+        },
+        {
+          "type": "commentary",
+          "author": "Srila Prabhupada",
+          "content": "Prabhupada's commentary on yoga-sutras 4.2"
+        }
+      ]
+    },
+    {
+      "id": "yoga-sutras_4_3",
+      "text_slug": "yoga-sutras",
+      "chapter": 4,
+      "verse": 3,
+      "original": "Raw Sanskrit for yoga-sutras 4.3",
+      "transliteration": "Translit for yoga-sutras 4.3",
+      "translation": "Raw meaning for yoga-sutras 4.3",
+      "layers": [
+        {
+          "type": "commentary",
+          "author": "Swami Vivekananda",
+          "content": "Vivekananda's commentary on yoga-sutras 4.3"
+        },
+        {
+          "type": "commentary",
+          "author": "Srila Prabhupada",
+          "content": "Prabhupada's commentary on yoga-sutras 4.3"
+        }
+      ]
+    }
+  ]
+}

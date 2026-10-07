@@ -1,0 +1,69 @@
+{
+  "text": "samskaras",
+  "chapter": 2,
+  "verses": [
+    {
+      "id": "samskaras_2_1",
+      "text_slug": "samskaras",
+      "chapter": 2,
+      "verse": 1,
+      "original": "Raw Sanskrit for samskaras 2.1",
+      "transliteration": "Translit for samskaras 2.1",
+      "translation": "Raw meaning for samskaras 2.1",
+      "layers": [
+        {
+          "type": "commentary",
+          "author": "Swami Vivekananda",
+          "content": "Vivekananda's commentary on samskaras 2.1"
+        },
+        {
+          "type": "commentary",
+          "author": "Srila Prabhupada",
+          "content": "Prabhupada's commentary on samskaras 2.1"
+        }
+      ]
+    },
+    {
+      "id": "samskaras_2_2",
+      "text_slug": "samskaras",
+      "chapter": 2,
+      "verse": 2,
+      "original": "Raw Sanskrit for samskaras 2.2",
+      "transliteration": "Translit for samskaras 2.2",
+      "translation": "Raw meaning for samskaras 2.2",
+      "layers": [
+        {
+          "type": "commentary",
+          "author": "Swami Vivekananda",
+          "content": "Vivekananda's commentary on samskaras 2.2"
+        },
+        {
+          "type": "commentary",
+          "author": "Srila Prabhupada",
+          "content": "Prabhupada's commentary on samskaras 2.2"
+        }
+      ]
+    },
+    {
+      "id": "samskaras_2_3",
+      "text_slug": "samskaras",
+      "chapter": 2,
+      "verse": 3,
+      "original": "Raw Sanskrit for samskaras 2.3",
+      "transliteration": "Translit for samskaras 2.3",
+      "translation": "Raw meaning for samskaras 2.3",
+      "layers": [
+        {
+          "type": "commentary",
+          "author": "Swami Vivekananda",
+          "content": "Vivekananda's commentary on samskaras 2.3"
+        },
+        {
+          "type": "commentary",
+          "author": "Srila Prabhupada",
+          "content": "Prabhupada's commentary on samskaras 2.3"
+        }
+      ]
+    }
+  ]
+}

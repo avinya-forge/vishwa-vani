@@ -1,0 +1,69 @@
+{
+  "text": "garuda-purana",
+  "chapter": 3,
+  "verses": [
+    {
+      "id": "garuda-purana_3_1",
+      "text_slug": "garuda-purana",
+      "chapter": 3,
+      "verse": 1,
+      "original": "Raw Sanskrit for garuda-purana 3.1",
+      "transliteration": "Translit for garuda-purana 3.1",
+      "translation": "Raw meaning for garuda-purana 3.1",
+      "layers": [
+        {
+          "type": "commentary",
+          "author": "Swami Vivekananda",
+          "content": "Vivekananda's commentary on garuda-purana 3.1"
+        },
+        {
+          "type": "commentary",
+          "author": "Srila Prabhupada",
+          "content": "Prabhupada's commentary on garuda-purana 3.1"
+        }
+      ]
+    },
+    {
+      "id": "garuda-purana_3_2",
+      "text_slug": "garuda-purana",
+      "chapter": 3,
+      "verse": 2,
+      "original": "Raw Sanskrit for garuda-purana 3.2",
+      "transliteration": "Translit for garuda-purana 3.2",
+      "translation": "Raw meaning for garuda-purana 3.2",
+      "layers": [
+        {
+          "type": "commentary",
+          "author": "Swami Vivekananda",
+          "content": "Vivekananda's commentary on garuda-purana 3.2"
+        },
+        {
+          "type": "commentary",
+          "author": "Srila Prabhupada",
+          "content": "Prabhupada's commentary on garuda-purana 3.2"
+        }
+      ]
+    },
+    {
+      "id": "garuda-purana_3_3",
+      "text_slug": "garuda-purana",
+      "chapter": 3,
+      "verse": 3,
+      "original": "Raw Sanskrit for garuda-purana 3.3",
+      "transliteration": "Translit for garuda-purana 3.3",
+      "translation": "Raw meaning for garuda-purana 3.3",
+      "layers": [
+        {
+          "type": "commentary",
+          "author": "Swami Vivekananda",
+          "content": "Vivekananda's commentary on garuda-purana 3.3"
+        },
+        {
+          "type": "commentary",
+          "author": "Srila Prabhupada",
+          "content": "Prabhupada's commentary on garuda-purana 3.3"
+        }
+      ]
+    }
+  ]
+}
