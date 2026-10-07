@@ -160,7 +160,7 @@ export default function Header() {
               )}
             </div>
 
-            <Link href="/engine" className="text-[11px] font-bold uppercase tracking-wider text-stone-500 hover:text-stone-900 dark:text-stone-400 dark:hover:text-stone-100 transition-colors">Engine</Link>
+            <Link href="/engine" className={`px-3 py-1.5 rounded-md text-xs font-bold transition-all focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:outline-none ${pathname === '/engine' ? 'text-orange-600 bg-orange-50 dark:bg-orange-950/40' : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 hover:bg-stone-50 dark:hover:bg-stone-800'}`}>Data Engine</Link>
               <Link href="/search" className={`px-3 py-1.5 rounded-md text-xs font-bold transition-all focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:outline-none ${pathname === '/search' ? 'text-orange-600 bg-orange-50 dark:bg-orange-950/40' : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 hover:bg-stone-50 dark:hover:bg-stone-800'}`}>
               Search
             </Link>
@@ -234,7 +234,7 @@ export default function Header() {
               </Link>
             ))}
             <div className="border-t border-stone-100 dark:border-stone-800 mt-5 pt-5 space-y-1.5">
-              <Link href="/engine" className="text-[11px] font-bold uppercase tracking-wider text-stone-500 hover:text-stone-900 dark:text-stone-400 dark:hover:text-stone-100 transition-colors">Engine</Link>
+              <Link href="/engine" className={`px-3 py-1.5 rounded-md text-xs font-bold transition-all focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:outline-none ${pathname === '/engine' ? 'text-orange-600 bg-orange-50 dark:bg-orange-950/40' : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 hover:bg-stone-50 dark:hover:bg-stone-800'}`}>Data Engine</Link>
               <Link href="/search" onClick={() => setShowMobileMenu(false)} className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-stone-50 dark:hover:bg-stone-800 transition-all text-sm font-bold text-stone-600 dark:text-stone-400">Deep Search</Link>
               <Link href="/lab" onClick={() => setShowMobileMenu(false)} className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-orange-50 dark:hover:bg-orange-950/30 transition-all text-sm font-bold text-orange-600 dark:text-orange-500">Vedic Labs</Link>
               <Link href="/roadmap" onClick={() => setShowMobileMenu(false)} className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-stone-50 dark:hover:bg-stone-800 transition-all text-sm font-bold text-stone-600 dark:text-stone-400">Roadmap</Link>
@@ -246,5 +246,6 @@ export default function Header() {
     </nav>
   )
 }
+
 
 
