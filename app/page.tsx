@@ -1,4 +1,4 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 import { getTranslations } from 'next-intl/server'
 import { getLibraryStats, getVedicHierarchy } from '@/lib/texts'
 import { setRequestLocale } from 'next-intl/server'
@@ -14,9 +14,9 @@ export default async function Home() {
   const hierarchy = getVedicHierarchy()
 
   const statsList = [
-    { n: stats.totalBooks, label: 'Sacred Texts', icon: 'ðŸ“œ' },
-    { n: `${stats.totalVerses}`, label: 'Verses', icon: 'âœ¨' },
-    { n: '3', label: 'Languages', icon: 'ðŸŒ' },
+    { n: stats.totalBooks, label: 'Sacred Texts', icon: 'Ã°Å¸â€œÅ“' },
+    { n: `${stats.totalVerses}`, label: 'Verses', icon: 'Ã¢Å“Â¨' },
+    { n: '3', label: 'Languages', icon: 'Ã°Å¸Å’Â' },
   ]
 
   const categories = stats.categories.filter((cat: string) =>
@@ -25,15 +25,15 @@ export default async function Home() {
 
   return (
     <div className="min-h-screen bg-[#FDFBF7] dark:bg-[#1C1917] selection:bg-orange-500/20">
-      {/* ðŸŒŒ AMBIENT GLOW */}
+      {/* Ã°Å¸Å’Å’ AMBIENT GLOW */}
       <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-orange-100/40 dark:bg-orange-900/10 rounded-full blur-[120px] -mr-96 -mt-96 pointer-events-none" />
       <div className="absolute top-[20%] left-0 w-[600px] h-[600px] bg-stone-100/60 dark:bg-stone-900/30 rounded-full blur-[100px] -ml-96 pointer-events-none" />
 
-      {/* â•â•â•â•â•â•â• HERO â•â•â•â•â•â•â• */}
+      {/* Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â HERO Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â */}
       <section className="max-w-[1200px] mx-auto px-4 sm:px-6 pt-10 pb-12 text-center">
         <div className="inline-flex items-center gap-2 mb-6 px-4 py-1.5 rounded-full bg-orange-50 border border-orange-100 text-orange-700 text-[10px] font-bold uppercase tracking-[0.2em]">
           <span className="w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse" />
-          Eternal Wisdom Â· Open Access
+          Eternal Wisdom Ã‚Â· Open Access
         </div>
 
         <h1 className="text-[clamp(1.5rem,3.5vw,2.75rem)] whitespace-nowrap font-serif font-black text-stone-900 dark:text-stone-100 leading-[1.1] tracking-tight mb-6 text-balance">
@@ -50,15 +50,15 @@ export default async function Home() {
             href="/lab"
             className="inline-flex items-center gap-3 px-8 py-4 bg-white hover:bg-amber-50/50 dark:bg-stone-900 dark:hover:bg-amber-950/30 text-stone-900 dark:text-stone-100 font-black rounded-2xl border border-stone-200 dark:border-stone-800 hover:border-amber-400/40 transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-0.5 text-[11px] uppercase tracking-widest shadow-sm"
           >
-            <span>ðŸ§ª</span> Explore Labs
+            <span>Ã°Å¸Â§Âª</span> Explore Labs
           </Link>
         </div>
 
-        {/* ðŸ” QUICK SEARCH BAR */}
+        {/* Ã°Å¸â€Â QUICK SEARCH BAR */}
         <div className="max-w-2xl mx-auto mb-16 px-2">
           <Link href="/search" className="group relative block">
             <div className="absolute inset-y-0 left-6 flex items-center pointer-events-none">
-              <span className="text-xl grayscale group-hover:grayscale-0 transition-all duration-300">ðŸ”</span>
+              <span className="text-xl grayscale group-hover:grayscale-0 transition-all duration-300">Ã°Å¸â€Â</span>
             </div>
             <div className="w-full pl-16 pr-8 py-5 bg-white/70 dark:bg-stone-900/70 backdrop-blur-md border border-stone-200/60 dark:border-stone-800 rounded-3xl shadow-lg group-hover:shadow-xl group-hover:border-orange-300 dark:group-hover:border-orange-900 transition-all text-left">
               <span className="text-stone-300 dark:text-stone-600 font-serif text-lg">Search the Universal Library...</span>
@@ -72,6 +72,24 @@ export default async function Home() {
             {['Dharma', 'Karma', 'Yoga', 'Brahman'].map(topic => (
               <Link key={topic} href={`/search?q=${topic.toLowerCase()}`} className="text-[10px] font-bold text-stone-500 hover:text-orange-600 dark:text-stone-400 dark:hover:text-orange-400 transition-colors">#{topic}</Link>
             ))}
+          </div>
+        </div>
+
+                {/* DAILY UPLIFTMENT WIDGET */}
+        <div className="max-w-3xl mx-auto mt-16 mb-8 relative group">
+          <div className="absolute inset-0 bg-gradient-to-r from-amber-500/10 via-orange-500/5 to-amber-500/10 dark:from-amber-500/5 dark:via-orange-500/5 dark:to-amber-500/5 rounded-3xl blur-xl transition-all duration-500 group-hover:blur-2xl"></div>
+          <div className="relative bg-white/80 dark:bg-stone-900/80 backdrop-blur-xl border border-amber-200/50 dark:border-amber-900/30 rounded-3xl p-8 shadow-sm">
+            <div className="flex items-center gap-3 mb-4">
+              <span className="text-xl">A,</span>
+              <h3 className="text-xs font-black uppercase tracking-widest text-amber-600 dark:text-amber-500">Daily Upliftment</h3>
+            </div>
+            <p className="text-stone-800 dark:text-stone-200 font-serif text-xl sm:text-2xl leading-relaxed font-black mb-4">
+              "Perform your duty without attachment, remaining equal to success or failure. Such equanimity is called Yoga."
+            </p>
+            <div className="flex justify-between items-end">
+              <p className="text-stone-500 dark:text-stone-400 text-sm italic font-serif">?" Bhagavad Gita 2.48</p>
+              <span className="text-[10px] font-bold text-stone-400 bg-stone-100 dark:bg-stone-800 px-3 py-1 rounded-full uppercase tracking-wider">Practical Wisdom</span>
+            </div>
           </div>
         </div>
 
@@ -89,7 +107,7 @@ export default async function Home() {
 
       <PipelineTracker />
 
-      {/* â•â•â•â•â•â•â• LIBRARY â•â•â•â•â•â•â• */}
+      {/* Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â LIBRARY Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â */}
       <section className="max-w-[1200px] mx-auto px-4 sm:px-6 pb-20">
         {categories.map((cat: string) => {
           const books = hierarchy.tree.filter((t: unknown) => (t as Record<string, unknown>).category === cat)
@@ -169,5 +187,6 @@ function BookCard({ book, locale }: { book: Record<string, unknown>, locale: str
     </div>
   )
 }
+
 
 
