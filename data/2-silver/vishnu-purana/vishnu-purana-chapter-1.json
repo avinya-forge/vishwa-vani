@@ -1,16 +1,21 @@
-[
-  {
-    "id": "vishnu-purana_1_1",
-    "text_slug": "vishnu-purana",
-    "chapter": 1,
-    "verse": 1,
-    "original": "ॐ पूर्णमदः पूर्णमिदं पूर्णात्पूर्णमुदच्यते (Mock Vishnu Purana 1.1)",
-    "transliteration": "Om purnamadah purnamidam (Mock Vishnu Purana 1.1)",
-    "layers": [],
-    "ai_metadata": {
-      "topics": [
-        "bhakti"
-      ]
+{
+  "text": "vishnu-purana",
+  "chapter": 1,
+  "title": "Creation",
+  "verses": [
+    {
+      "verse": 1,
+      "sanskrit": "O namo bhagavate vsudevya",
+      "translation": "Obeisances to the Supreme Lord Vasudeva.",
+      "id": "vishnu-purana_1_1",
+      "layers": []
+    },
+    {
+      "verse": 2,
+      "sanskrit": "dharma projjhita-kaitavo 'tra paramo nirmatsar sat",
+      "translation": "Completely rejecting all religious activities which are materially motivated, this Bhagavata Purana propounds the highest truth.",
+      "id": "vishnu-purana_1_2",
+      "layers": []
     }
-  }
-]
+  ]
+}

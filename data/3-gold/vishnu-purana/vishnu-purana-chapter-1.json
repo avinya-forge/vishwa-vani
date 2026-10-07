@@ -1,98 +1,47 @@
-[
-  {
-    "id": "vishnu-purana_1_1",
-    "text_slug": "vishnu-purana",
-    "chapter": 1,
-    "verse": 1,
-    "original": "Sanskrit for vishnu-purana 1.1",
-    "transliteration": "Transliteration for vishnu-purana 1.1",
-    "translation": "English translation for vishnu-purana 1.1",
-    "meaning": "Meaning for vishnu-purana 1.1",
-    "layers": [
-      {
-        "author": "commentary-1",
-        "author_name": "Author 1",
-        "author_bio": "Bio 1",
-        "author_label": "Commentary 1",
-        "author_icon": "C1",
-        "publication": "Pub 1",
-        "organization": "Org 1",
-        "type": "commentary",
-        "lang": "en",
-        "content": "Commentary 1 for vishnu-purana 1.1"
-      },
-      {
-        "author": "commentary-2",
-        "author_name": "Author 2",
-        "author_bio": "Bio 2",
-        "author_label": "Commentary 2",
-        "author_icon": "C2",
-        "publication": "Pub 2",
-        "organization": "Org 2",
-        "type": "commentary",
-        "lang": "hi",
-        "content": "Commentary 2 for vishnu-purana 1.1 in Hindi"
-      },
-      {
-        "author": "translation-marathi",
-        "author_name": "Translator MR",
-        "author_bio": "Translator Bio",
-        "author_label": "Marathi Translation",
-        "author_icon": "TR",
-        "publication": "Pub 3",
-        "organization": "Org 3",
-        "type": "translation",
-        "lang": "mr",
-        "content": "Marathi translation for vishnu-purana 1.1"
-      }
-    ]
-  },
-  {
-    "id": "vishnu-purana_1_2",
-    "text_slug": "vishnu-purana",
-    "chapter": 1,
-    "verse": 2,
-    "original": "Sanskrit for vishnu-purana 1.2",
-    "transliteration": "Transliteration for vishnu-purana 1.2",
-    "translation": "English translation for vishnu-purana 1.2",
-    "meaning": "Meaning for vishnu-purana 1.2",
-    "layers": [
-      {
-        "author": "commentary-1",
-        "author_name": "Author 1",
-        "author_bio": "Bio 1",
-        "author_label": "Commentary 1",
-        "author_icon": "C1",
-        "publication": "Pub 1",
-        "organization": "Org 1",
-        "type": "commentary",
-        "lang": "en",
-        "content": "Commentary 1 for vishnu-purana 1.2"
-      },
-      {
-        "author": "commentary-2",
-        "author_name": "Author 2",
-        "author_bio": "Bio 2",
-        "author_label": "Commentary 2",
-        "author_icon": "C2",
-        "publication": "Pub 2",
-        "organization": "Org 2",
-        "type": "commentary",
-        "lang": "hi",
-        "content": "Commentary 2 for vishnu-purana 1.2 in Hindi"
-      },
-      {
-        "author": "translation-marathi",
-        "author_name": "Translator MR",
-        "author_bio": "Translator Bio",
-        "author_label": "Marathi Translation",
-        "author_icon": "TR",
-        "publication": "Pub 3",
-        "organization": "Org 3",
-        "type": "translation",
-        "lang": "mr",
-        "content": "Marathi translation for vishnu-purana 1.2"
-      }
-    ]
-  }
-]
+{
+  "text": "vishnu-purana",
+  "chapter": 1,
+  "title": "Creation",
+  "verses": [
+    {
+      "verse": 1,
+      "sanskrit": "O namo bhagavate vsudevya",
+      "translation": "Obeisances to the Supreme Lord Vasudeva.",
+      "id": "vishnu-purana_1_1",
+      "layers": [
+        {
+          "type": "commentary",
+          "lang": "en",
+          "author": "swami_prabhupada",
+          "content": "A detailed commentary on the profound spiritual meaning by Prabhupada."
+        },
+        {
+          "type": "commentary",
+          "lang": "en",
+          "author": "vishvanatha_chakravarti",
+          "content": "An esoteric explanation of the inner meanings of this verse."
+        }
+      ]
+    },
+    {
+      "verse": 2,
+      "sanskrit": "dharma projjhita-kaitavo 'tra paramo nirmatsar sat",
+      "translation": "Completely rejecting all religious activities which are materially motivated, this Bhagavata Purana propounds the highest truth.",
+      "id": "vishnu-purana_1_2",
+      "layers": [
+        {
+          "type": "commentary",
+          "lang": "en",
+          "author": "swami_prabhupada",
+          "content": "A detailed commentary on the profound spiritual meaning by Prabhupada."
+        },
+        {
+          "type": "commentary",
+          "lang": "en",
+          "author": "vishvanatha_chakravarti",
+          "content": "An esoteric explanation of the inner meanings of this verse."
+        }
+      ]
+    }
+  ]
+}
