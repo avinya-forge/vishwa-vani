@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
+﻿/* eslint-disable @typescript-eslint/no-explicit-any */
 import { NextResponse } from 'next/server';
 import { validateApiRequest } from '@/lib/api-guard';
 import { z } from 'zod';
@@ -42,21 +42,40 @@ export async function POST(request: Request) {
     const db = getDb(lakeFile);
 
     if (action === 'QUERY_VERSES') {
-      const stmt = db.prepare('SELECT * FROM verses WHERE textSlug = ? AND chapter = ? ORDER BY verse ASC');
+      const stmt = db.prepare('SELECT * FROM verses WHERE text_slug = ? AND chapter = ? ORDER BY verse ASC');
       const verses = stmt.all(textSlug, chapter);
-      return NextResponse.json({ verses });
+      // Map back to expected properties
+      const mappedVerses = verses.map((v: any) => ({
+        id: v.id,
+        verse: v.verse,
+        chapter: v.chapter,
+        sanskrit: v.slok,
+        transliteration: v.transliteration,
+        ...JSON.parse(v.content)
+      }));
+      return NextResponse.json({ verses: mappedVerses });
     }
 
     if (action === 'SEARCH_LAKE') {
-      const stmt = db.prepare('SELECT * FROM verses WHERE meaning LIKE ? OR sanskrit LIKE ? OR transliteration LIKE ? LIMIT 50');
+      const stmt = db.prepare('SELECT * FROM verses WHERE content LIKE ? OR slok LIKE ? OR transliteration LIKE ? LIMIT 50');
       const likeQuery = `%${query}%`;
       const results = stmt.all(likeQuery, likeQuery, likeQuery) as any[];
+      
+      const mappedResults = results.map((v: any) => ({
+        id: v.id,
+        text_slug: v.text_slug,
+        verse: v.verse,
+        chapter: v.chapter,
+        sanskrit: v.slok,
+        transliteration: v.transliteration,
+        ...JSON.parse(v.content)
+      }));
 
       let summary = null;
-      if (query && query.trim().split(' ').length > 2 && results.length > 0) {
+      if (query && query.trim().split(' ').length > 2 && mappedResults.length > 0) {
         try {
           const generator = await PipelineSingleton.getInstance();
-          const context = results.slice(0, 3).map((r) => r.meaning).join(' ');
+          const context = mappedResults.slice(0, 3).map((r) => r.translation || r.meaning || '').join(' ');
           const prompt = `Answer the question "${query}" in one sentence based on this context: ${context}`;
           const output = await generator(prompt, { max_new_tokens: 40 });
           summary = output[0]?.generated_text || null;
@@ -65,7 +84,7 @@ export async function POST(request: Request) {
         }
       }
 
-      return NextResponse.json({ results, summary });
+      return NextResponse.json({ results: mappedResults, summary });
     }
 
     return NextResponse.json({ error: 'Invalid action' }, { status: 400 });

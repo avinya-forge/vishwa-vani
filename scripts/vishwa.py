@@ -1,4 +1,4 @@
-import os
+﻿import os
 import sys
 import argparse
 import subprocess
@@ -39,7 +39,7 @@ const PLACEHOLDER_PATTERNS = [
   /LOREM IPSUM/i,
 ];
 
-// ── Helpers ───────────────────────────────────────────────────────────────────
+// â”€â”€ Helpers â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 function isPlaceholder(str) {
   if (!str || typeof str !== 'string') return false;
@@ -97,7 +97,7 @@ function auditFile(filePath) {
 function printBookAudit(bookSlug) {
   const bookDir = path.join(GOLD_DIR, bookSlug);
   if (!fs.existsSync(bookDir)) {
-    console.error(`✗ No gold data for ${bookSlug} at: ${bookDir}`);
+    console.error(`âœ— No gold data for ${bookSlug} at: ${bookDir}`);
     return false;
   }
 
@@ -106,13 +106,13 @@ function printBookAudit(bookSlug) {
     .sort();
 
   if (files.length === 0) {
-    console.error(`✗ ${bookSlug}: no JSON shards in gold directory`);
+    console.error(`âœ— ${bookSlug}: no JSON shards in gold directory`);
     return false;
   }
 
-  console.log(`\\n${'═'.repeat(60)}`);
+  console.log(`\\n${'â•'.repeat(60)}`);
   console.log(` GOLD AUDIT: ${bookSlug}`);
-  console.log(`${'═'.repeat(60)}`);
+  console.log(`${'â•'.repeat(60)}`);
 
   const combined = {
     totalVerses: 0,
@@ -164,7 +164,7 @@ function printBookAudit(bookSlug) {
   console.log(`  Files audited   : ${files.length}`);
 
   if (String(manifestVerseCount) !== String(combined.totalVerses)) {
-    console.log(`  ⚠ Verse count MISMATCH — manifest says ${manifestVerseCount}, files have ${combined.totalVerses}`);
+    console.log(`  âš  Verse count MISMATCH â€” manifest says ${manifestVerseCount}, files have ${combined.totalVerses}`);
   }
 
   console.log(`\\n  Languages found : ${[...combined.allLanguages].join(', ')}`);
@@ -179,7 +179,7 @@ function printBookAudit(bookSlug) {
       ? Math.round((cov.placeholder / cov.total) * 100)
       : 0;
     const langs = [...cov.langs].join('/');
-    const status = phPct > 50 ? '✗ PLACEHOLDER-HEAVY' : validPct >= 90 ? '✓' : '⚠ PARTIAL';
+    const status = phPct > 50 ? 'âœ— PLACEHOLDER-HEAVY' : validPct >= 90 ? 'âœ“' : 'âš  PARTIAL';
     console.log(`    ${status.padEnd(20)} ${author.padEnd(25)} valid: ${String(validPct + '%').padEnd(5)}  placeholder: ${phPct}%  langs: ${langs}`);
   }
 
@@ -193,19 +193,19 @@ function printBookAudit(bookSlug) {
     ? Math.round(((combined.totalVerses - issues) / combined.totalVerses) * 100)
     : 0;
 
-  console.log(`\\n  ── Readiness: ${readyPct}% ──`);
+  console.log(`\\n  â”€â”€ Readiness: ${readyPct}% â”€â”€`);
   if (readyPct === 100) {
-    console.log(`  ✓ READY — safe to set available:true in lib/texts.ts`);
+    console.log(`  âœ“ READY â€” safe to set available:true in lib/texts.ts`);
   } else if (readyPct >= 80) {
-    console.log(`  ⚠ PARTIAL — review issues above before setting available:true`);
+    console.log(`  âš  PARTIAL â€” review issues above before setting available:true`);
   } else {
-    console.log(`  ✗ NOT READY — ${100 - readyPct}% of verses have critical issues`);
+    console.log(`  âœ— NOT READY â€” ${100 - readyPct}% of verses have critical issues`);
   }
 
   return true;
 }
 
-// ── Main ──────────────────────────────────────────────────────────────────────
+// â”€â”€ Main â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 function main() {
   const args = process.argv.slice(2);
@@ -241,9 +241,9 @@ main();
 PROMOTE_TO_GOLD_JS = """
 #!/usr/bin/env node
 /**
- * PIPE-002: Generic Silver → Gold Promotion Script
+ * PIPE-002: Generic Silver â†’ Gold Promotion Script
  *
- * Runs validate_silver.js first — refuses to promote if validation fails.
+ * Runs validate_silver.js first â€” refuses to promote if validation fails.
  * On success: copies shards to data/3-gold/{book}/ and updates manifest.json.
  *
  * Usage:
@@ -261,7 +261,7 @@ const SILVER_DIR = path.join(__dirname, '..', 'data', '2-silver');
 const GOLD_DIR   = path.join(__dirname, '..', 'data', '3-gold');
 const MANIFEST   = path.join(__dirname, '..', 'data', 'manifest.json');
 
-// ── Helpers ───────────────────────────────────────────────────────────────────
+// â”€â”€ Helpers â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 function loadManifest() {
   return JSON.parse(fs.readFileSync(MANIFEST, 'utf8'));
@@ -283,18 +283,18 @@ function deriveChapterNumber(filename) {
   return m ? parseInt(m[1], 10) : null;
 }
 
-// ── Core ──────────────────────────────────────────────────────────────────────
+// â”€â”€ Core â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 function promoteBook(bookSlug, force = false) {
-  console.log(`\\nPIPE-002: promote_to_gold.js — ${bookSlug}`);
+  console.log(`\\nPIPE-002: promote_to_gold.js â€” ${bookSlug}`);
 
   const silverBookDir = path.join(SILVER_DIR, bookSlug);
   if (!fs.existsSync(silverBookDir)) {
-    console.error(`✗ Silver directory not found: ${silverBookDir}`);
+    console.error(`âœ— Silver directory not found: ${silverBookDir}`);
     process.exit(1);
   }
 
-  // ── Step 1: Validation gate ────────────────────────────────────────────────
+  // â”€â”€ Step 1: Validation gate â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   if (!force) {
     console.log('\\nStep 1: Running PIPE-001 validation gate...');
     try {
@@ -303,7 +303,7 @@ function promoteBook(bookSlug, force = false) {
     console.log('  (JS validation gate bypassed; handled by Python vishwa.py)');
 
     } catch {
-      console.error('\\n✗ BLOCKED: Validation failed. Fix all errors before promoting.');
+      console.error('\\nâœ— BLOCKED: Validation failed. Fix all errors before promoting.');
       console.error('  To skip the gate (not recommended): --force');
       process.exit(1);
     }
@@ -311,7 +311,7 @@ function promoteBook(bookSlug, force = false) {
     console.log('\\nStep 1: Validation gate SKIPPED (--force)');
   }
 
-  // ── Step 2: Copy shards to Gold ────────────────────────────────────────────
+  // â”€â”€ Step 2: Copy shards to Gold â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   console.log('\\nStep 2: Copying shards to Gold tier...');
   const goldBookDir = path.join(GOLD_DIR, bookSlug);
   if (!fs.existsSync(goldBookDir)) {
@@ -335,13 +335,13 @@ function promoteBook(bookSlug, force = false) {
 
     if (chapterNum !== null && !file.endsWith('.meta.json')) {
       chapterMeta.push({ number: chapterNum, file, verse_count: verseCount });
-      console.log(`  ✓ ${file} (${verseCount} verses) → ${dest}`);
+      console.log(`  âœ“ ${file} (${verseCount} verses) â†’ ${dest}`);
     } else {
-      console.log(`  ✓ ${file} (metadata) → ${dest}`);
+      console.log(`  âœ“ ${file} (metadata) â†’ ${dest}`);
     }
   }
 
-  // ── Step 3: Update manifest.json ──────────────────────────────────────────
+  // â”€â”€ Step 3: Update manifest.json â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   console.log('\\nStep 3: Updating manifest.json...');
   const manifest = loadManifest();
 
@@ -372,8 +372,8 @@ function promoteBook(bookSlug, force = false) {
 
   saveManifest(manifest);
 
-  // ── Done ──────────────────────────────────────────────────────────────────
-  console.log(`\\n✓ ${bookSlug} promoted to Gold`);
+  // â”€â”€ Done â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  console.log(`\\nâœ“ ${bookSlug} promoted to Gold`);
   console.log(`  ${totalVerses} total verses across ${sortedChapters.length} chapter(s)`);
   console.log(`\\nNext steps:`);
   console.log(`  1. Update lib/texts.ts: set storage:'json' for ${bookSlug} (keep available:false)`);
@@ -382,7 +382,7 @@ function promoteBook(bookSlug, force = false) {
   console.log(`  4. Run: node scripts/audit_gold.js ${bookSlug}`);
 }
 
-// ── Main ──────────────────────────────────────────────────────────────────────
+// â”€â”€ Main â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 function main() {
   const args = process.argv.slice(2);
@@ -401,7 +401,7 @@ function main() {
   const bookSlug = force ? args[1] : args[0];
 
   if (!bookSlug) {
-    console.error('✗ No book slug provided');
+    console.error('âœ— No book slug provided');
     process.exit(1);
   }
 
@@ -428,7 +428,7 @@ VALIDATE_SILVER_JS = """
 const fs = require('fs');
 const path = require('path');
 
-// ── Config ────────────────────────────────────────────────────────────────────
+// â”€â”€ Config â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 const SILVER_DIR = path.join(__dirname, '..', 'data', '2-silver');
 const MIN_COMMENTARY_LENGTH = 20;
@@ -442,12 +442,12 @@ const PLACEHOLDER_PATTERNS = [
   /^\\[SUTRA_/i,
 ];
 
-// ── NVF Required Fields ───────────────────────────────────────────────────────
+// â”€â”€ NVF Required Fields â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 const REQUIRED_VERSE_FIELDS = ['id', 'original', 'verse'];
 const OPTIONAL_VERSE_FIELDS = ['transliteration', 'translation', 'meaning', 'layers'];
 
-// ── Helpers ───────────────────────────────────────────────────────────────────
+// â”€â”€ Helpers â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 function isPlaceholder(str) {
   if (!str || typeof str !== 'string') return false;
@@ -513,7 +513,7 @@ function validateVerse(verse, bookSlug, chapterNum) {
     }
 
     if (validLayerCount === 0) {
-      errors.push(`${verseId}: all layers are invalid/placeholder — no real content`);
+      errors.push(`${verseId}: all layers are invalid/placeholder â€” no real content`);
     }
   }
 
@@ -526,7 +526,7 @@ function validateFile(filePath, bookSlug, chapterNum) {
   try {
     data = JSON.parse(raw);
   } catch (e) {
-    return { errors: [`${filePath}: invalid JSON — ${e.message}`], verseCount: 0 };
+    return { errors: [`${filePath}: invalid JSON â€” ${e.message}`], verseCount: 0 };
   }
 
   const verses = Array.isArray(data) ? data : (data.verses || []);
@@ -545,7 +545,7 @@ function validateFile(filePath, bookSlug, chapterNum) {
 function validateBook(bookSlug) {
   const bookDir = path.join(SILVER_DIR, bookSlug);
   if (!fs.existsSync(bookDir)) {
-    console.error(`✗ No silver data found at: ${bookDir}`);
+    console.error(`âœ— No silver data found at: ${bookDir}`);
     return false;
   }
 
@@ -554,7 +554,7 @@ function validateBook(bookSlug) {
     .sort();
 
   if (files.length === 0) {
-    console.error(`✗ ${bookSlug}: no JSON files in silver directory`);
+    console.error(`âœ— ${bookSlug}: no JSON files in silver directory`);
     return false;
   }
 
@@ -562,7 +562,7 @@ function validateBook(bookSlug) {
   let totalErrors = [];
   let filesWithErrors = 0;
 
-  console.log(`\\n── Validating ${bookSlug} (${files.length} file(s)) ──────────────────`);
+  console.log(`\\nâ”€â”€ Validating ${bookSlug} (${files.length} file(s)) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€`);
 
   for (const file of files) {
     const filePath = path.join(bookDir, file);
@@ -574,27 +574,27 @@ function validateBook(bookSlug) {
 
     if (errors.length > 0) {
       filesWithErrors++;
-      console.log(`  ✗ ${file} (${verseCount} verses, ${errors.length} errors)`);
-      errors.slice(0, 5).forEach(e => console.log(`    • ${e}`));
-      if (errors.length > 5) console.log(`    … and ${errors.length - 5} more`);
+      console.log(`  âœ— ${file} (${verseCount} verses, ${errors.length} errors)`);
+      errors.slice(0, 5).forEach(e => console.log(`    â€¢ ${e}`));
+      if (errors.length > 5) console.log(`    â€¦ and ${errors.length - 5} more`);
       totalErrors.push(...errors);
     } else {
-      console.log(`  ✓ ${file} (${verseCount} verses)`);
+      console.log(`  âœ“ ${file} (${verseCount} verses)`);
     }
   }
 
   console.log(`\\n  Summary: ${totalVerses} verses, ${totalErrors.length} error(s) across ${files.length} file(s)`);
 
   if (totalErrors.length > 0) {
-    console.log(`  ✗ FAIL — ${bookSlug} is NOT ready for Gold promotion`);
+    console.log(`  âœ— FAIL â€” ${bookSlug} is NOT ready for Gold promotion`);
     return false;
   }
 
-  console.log(`  ✓ PASS — ${bookSlug} is ready for Gold promotion`);
+  console.log(`  âœ“ PASS â€” ${bookSlug} is ready for Gold promotion`);
   return true;
 }
 
-// ── Main ──────────────────────────────────────────────────────────────────────
+// â”€â”€ Main â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 function main() {
   const args = process.argv.slice(2);
@@ -622,7 +622,7 @@ function main() {
     if (!passed) allPassed = false;
   }
 
-  console.log('\\n' + (allPassed ? '✓ All books passed validation' : '✗ Some books failed — fix errors before promoting to Gold'));
+  console.log('\\n' + (allPassed ? 'âœ“ All books passed validation' : 'âœ— Some books failed â€” fix errors before promoting to Gold'));
   process.exit(allPassed ? 0 : 1);
 }
 
@@ -835,30 +835,30 @@ const path = require('path');
 
 const GOLD_DIR = path.join(__dirname, '..', 'data', '3-gold', 'bhagavad-gita');
 
-// ─── Chapter-specific Hindi & Marathi context ─────────────────────────────────
+// â”€â”€â”€ Chapter-specific Hindi & Marathi context â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 // Each chapter context provides the devotional framing for ISKCON hi/mr summaries.
 const CH_CONTEXT = {
-  1:  { hi: 'विषाद-योग — अर्जुन का शोक और कर्त्तव्य का संघर्ष',          mr: 'विषाद-योग — अर्जुनाचा शोक आणि कर्तव्याचा संघर्ष' },
-  2:  { hi: 'सांख्य-योग — आत्मा का ज्ञान और स्थितप्रज्ञ की महिमा',       mr: 'सांख्य-योग — आत्म्याचे ज्ञान आणि स्थितप्रज्ञाचे लक्षण' },
-  3:  { hi: 'कर्म-योग — निष्काम कर्म और समाज का धर्म',                   mr: 'कर्म-योग — निष्काम कर्म आणि समाजाचा धर्म' },
-  4:  { hi: 'ज्ञान-कर्म-सन्यास-योग — दिव्य ज्ञान और भगवान का अवतरण',    mr: 'ज्ञान-कर्म-संन्यास-योग — दिव्य ज्ञान आणि भगवंताचा अवतार' },
-  5:  { hi: 'कर्म-सन्यास-योग — कर्म और सन्यास की एकता',                  mr: 'कर्म-संन्यास-योग — कर्म आणि संन्यासाची एकता' },
-  6:  { hi: 'ध्यान-योग — मन की स्थिरता और ध्यान का अभ्यास',              mr: 'ध्यान-योग — मनाची स्थिरता आणि ध्यानाचा अभ्यास' },
-  7:  { hi: 'ज्ञान-विज्ञान-योग — परमात्मा का प्रत्यक्ष ज्ञान',           mr: 'ज्ञान-विज्ञान-योग — परमात्म्याचे प्रत्यक्ष ज्ञान' },
-  8:  { hi: 'अक्षरब्रह्म-योग — अविनाशी परब्रह्म का स्वरूप',              mr: 'अक्षरब्रह्म-योग — अविनाशी परब्रह्माचे स्वरूप' },
-  9:  { hi: 'राज-विद्या-राज-गुह्य-योग — भक्ति का सर्वोच्च मार्ग',        mr: 'राज-विद्या-राज-गुह्य-योग — भक्तीचा सर्वोच्च मार्ग' },
-  10: { hi: 'विभूति-योग — परमात्मा की दिव्य विभूतियाँ',                  mr: 'विभूति-योग — परमात्म्याच्या दिव्य विभूती' },
-  11: { hi: 'विश्वरूप-दर्शन-योग — ईश्वर के विराट रूप का दर्शन',          mr: 'विश्वरूप-दर्शन-योग — ईश्वराच्या विराट रूपाचे दर्शन' },
-  12: { hi: 'भक्ति-योग — शुद्ध भक्ति का सर्वश्रेष्ठ पथ',                mr: 'भक्ति-योग — शुद्ध भक्तीचा सर्वश्रेष्ठ मार्ग' },
-  13: { hi: 'क्षेत्र-क्षेत्रज्ञ-विभाग-योग — शरीर और आत्मा का भेद',       mr: 'क्षेत्र-क्षेत्रज्ञ-विभाग-योग — शरीर आणि आत्म्याचा भेद' },
-  14: { hi: 'गुणत्रय-विभाग-योग — प्रकृति के तीन गुणों का विवेचन',        mr: 'गुणत्रय-विभाग-योग — प्रकृतीच्या तीन गुणांचे विवेचन' },
-  15: { hi: 'पुरुषोत्तम-योग — सर्वोच्च पुरुष का रहस्य',                  mr: 'पुरुषोत्तम-योग — सर्वोच्च पुरुषाचे रहस्य' },
-  16: { hi: 'दैवासुर-सम्पद्-विभाग-योग — दिव्य और आसुरी स्वभाव',          mr: 'दैवासुर-संपद-विभाग-योग — दिव्य आणि आसुरी स्वभाव' },
-  17: { hi: 'श्रद्धात्रय-विभाग-योग — तीन प्रकार की श्रद्धा',             mr: 'श्रद्धात्रय-विभाग-योग — तीन प्रकारची श्रद्धा' },
-  18: { hi: 'मोक्ष-सन्यास-योग — संन्यास का सर्वोच्च ज्ञान और मोक्ष',     mr: 'मोक्ष-संन्यास-योग — संन्यासाचे सर्वोच्च ज्ञान आणि मोक्ष' },
+  1:  { hi: 'à¤µà¤¿à¤·à¤¾à¤¦-à¤¯à¥‹à¤— â€” à¤…à¤°à¥à¤œà¥à¤¨ à¤•à¤¾ à¤¶à¥‹à¤• à¤”à¤° à¤•à¤°à¥à¤¤à¥à¤¤à¤µà¥à¤¯ à¤•à¤¾ à¤¸à¤‚à¤˜à¤°à¥à¤·',          mr: 'à¤µà¤¿à¤·à¤¾à¤¦-à¤¯à¥‹à¤— â€” à¤…à¤°à¥à¤œà¥à¤¨à¤¾à¤šà¤¾ à¤¶à¥‹à¤• à¤†à¤£à¤¿ à¤•à¤°à¥à¤¤à¤µà¥à¤¯à¤¾à¤šà¤¾ à¤¸à¤‚à¤˜à¤°à¥à¤·' },
+  2:  { hi: 'à¤¸à¤¾à¤‚à¤–à¥à¤¯-à¤¯à¥‹à¤— â€” à¤†à¤¤à¥à¤®à¤¾ à¤•à¤¾ à¤œà¥à¤žà¤¾à¤¨ à¤”à¤° à¤¸à¥à¤¥à¤¿à¤¤à¤ªà¥à¤°à¤œà¥à¤ž à¤•à¥€ à¤®à¤¹à¤¿à¤®à¤¾',       mr: 'à¤¸à¤¾à¤‚à¤–à¥à¤¯-à¤¯à¥‹à¤— â€” à¤†à¤¤à¥à¤®à¥à¤¯à¤¾à¤šà¥‡ à¤œà¥à¤žà¤¾à¤¨ à¤†à¤£à¤¿ à¤¸à¥à¤¥à¤¿à¤¤à¤ªà¥à¤°à¤œà¥à¤žà¤¾à¤šà¥‡ à¤²à¤•à¥à¤·à¤£' },
+  3:  { hi: 'à¤•à¤°à¥à¤®-à¤¯à¥‹à¤— â€” à¤¨à¤¿à¤·à¥à¤•à¤¾à¤® à¤•à¤°à¥à¤® à¤”à¤° à¤¸à¤®à¤¾à¤œ à¤•à¤¾ à¤§à¤°à¥à¤®',                   mr: 'à¤•à¤°à¥à¤®-à¤¯à¥‹à¤— â€” à¤¨à¤¿à¤·à¥à¤•à¤¾à¤® à¤•à¤°à¥à¤® à¤†à¤£à¤¿ à¤¸à¤®à¤¾à¤œà¤¾à¤šà¤¾ à¤§à¤°à¥à¤®' },
+  4:  { hi: 'à¤œà¥à¤žà¤¾à¤¨-à¤•à¤°à¥à¤®-à¤¸à¤¨à¥à¤¯à¤¾à¤¸-à¤¯à¥‹à¤— â€” à¤¦à¤¿à¤µà¥à¤¯ à¤œà¥à¤žà¤¾à¤¨ à¤”à¤° à¤­à¤—à¤µà¤¾à¤¨ à¤•à¤¾ à¤…à¤µà¤¤à¤°à¤£',    mr: 'à¤œà¥à¤žà¤¾à¤¨-à¤•à¤°à¥à¤®-à¤¸à¤‚à¤¨à¥à¤¯à¤¾à¤¸-à¤¯à¥‹à¤— â€” à¤¦à¤¿à¤µà¥à¤¯ à¤œà¥à¤žà¤¾à¤¨ à¤†à¤£à¤¿ à¤­à¤—à¤µà¤‚à¤¤à¤¾à¤šà¤¾ à¤…à¤µà¤¤à¤¾à¤°' },
+  5:  { hi: 'à¤•à¤°à¥à¤®-à¤¸à¤¨à¥à¤¯à¤¾à¤¸-à¤¯à¥‹à¤— â€” à¤•à¤°à¥à¤® à¤”à¤° à¤¸à¤¨à¥à¤¯à¤¾à¤¸ à¤•à¥€ à¤à¤•à¤¤à¤¾',                  mr: 'à¤•à¤°à¥à¤®-à¤¸à¤‚à¤¨à¥à¤¯à¤¾à¤¸-à¤¯à¥‹à¤— â€” à¤•à¤°à¥à¤® à¤†à¤£à¤¿ à¤¸à¤‚à¤¨à¥à¤¯à¤¾à¤¸à¤¾à¤šà¥€ à¤à¤•à¤¤à¤¾' },
+  6:  { hi: 'à¤§à¥à¤¯à¤¾à¤¨-à¤¯à¥‹à¤— â€” à¤®à¤¨ à¤•à¥€ à¤¸à¥à¤¥à¤¿à¤°à¤¤à¤¾ à¤”à¤° à¤§à¥à¤¯à¤¾à¤¨ à¤•à¤¾ à¤…à¤­à¥à¤¯à¤¾à¤¸',              mr: 'à¤§à¥à¤¯à¤¾à¤¨-à¤¯à¥‹à¤— â€” à¤®à¤¨à¤¾à¤šà¥€ à¤¸à¥à¤¥à¤¿à¤°à¤¤à¤¾ à¤†à¤£à¤¿ à¤§à¥à¤¯à¤¾à¤¨à¤¾à¤šà¤¾ à¤…à¤­à¥à¤¯à¤¾à¤¸' },
+  7:  { hi: 'à¤œà¥à¤žà¤¾à¤¨-à¤µà¤¿à¤œà¥à¤žà¤¾à¤¨-à¤¯à¥‹à¤— â€” à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¤¾ à¤•à¤¾ à¤ªà¥à¤°à¤¤à¥à¤¯à¤•à¥à¤· à¤œà¥à¤žà¤¾à¤¨',           mr: 'à¤œà¥à¤žà¤¾à¤¨-à¤µà¤¿à¤œà¥à¤žà¤¾à¤¨-à¤¯à¥‹à¤— â€” à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¥à¤¯à¤¾à¤šà¥‡ à¤ªà¥à¤°à¤¤à¥à¤¯à¤•à¥à¤· à¤œà¥à¤žà¤¾à¤¨' },
+  8:  { hi: 'à¤…à¤•à¥à¤·à¤°à¤¬à¥à¤°à¤¹à¥à¤®-à¤¯à¥‹à¤— â€” à¤…à¤µà¤¿à¤¨à¤¾à¤¶à¥€ à¤ªà¤°à¤¬à¥à¤°à¤¹à¥à¤® à¤•à¤¾ à¤¸à¥à¤µà¤°à¥‚à¤ª',              mr: 'à¤…à¤•à¥à¤·à¤°à¤¬à¥à¤°à¤¹à¥à¤®-à¤¯à¥‹à¤— â€” à¤…à¤µà¤¿à¤¨à¤¾à¤¶à¥€ à¤ªà¤°à¤¬à¥à¤°à¤¹à¥à¤®à¤¾à¤šà¥‡ à¤¸à¥à¤µà¤°à¥‚à¤ª' },
+  9:  { hi: 'à¤°à¤¾à¤œ-à¤µà¤¿à¤¦à¥à¤¯à¤¾-à¤°à¤¾à¤œ-à¤—à¥à¤¹à¥à¤¯-à¤¯à¥‹à¤— â€” à¤­à¤•à¥à¤¤à¤¿ à¤•à¤¾ à¤¸à¤°à¥à¤µà¥‹à¤šà¥à¤š à¤®à¤¾à¤°à¥à¤—',        mr: 'à¤°à¤¾à¤œ-à¤µà¤¿à¤¦à¥à¤¯à¤¾-à¤°à¤¾à¤œ-à¤—à¥à¤¹à¥à¤¯-à¤¯à¥‹à¤— â€” à¤­à¤•à¥à¤¤à¥€à¤šà¤¾ à¤¸à¤°à¥à¤µà¥‹à¤šà¥à¤š à¤®à¤¾à¤°à¥à¤—' },
+  10: { hi: 'à¤µà¤¿à¤­à¥‚à¤¤à¤¿-à¤¯à¥‹à¤— â€” à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¤¾ à¤•à¥€ à¤¦à¤¿à¤µà¥à¤¯ à¤µà¤¿à¤­à¥‚à¤¤à¤¿à¤¯à¤¾à¤',                  mr: 'à¤µà¤¿à¤­à¥‚à¤¤à¤¿-à¤¯à¥‹à¤— â€” à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¥à¤¯à¤¾à¤šà¥à¤¯à¤¾ à¤¦à¤¿à¤µà¥à¤¯ à¤µà¤¿à¤­à¥‚à¤¤à¥€' },
+  11: { hi: 'à¤µà¤¿à¤¶à¥à¤µà¤°à¥‚à¤ª-à¤¦à¤°à¥à¤¶à¤¨-à¤¯à¥‹à¤— â€” à¤ˆà¤¶à¥à¤µà¤° à¤•à¥‡ à¤µà¤¿à¤°à¤¾à¤Ÿ à¤°à¥‚à¤ª à¤•à¤¾ à¤¦à¤°à¥à¤¶à¤¨',          mr: 'à¤µà¤¿à¤¶à¥à¤µà¤°à¥‚à¤ª-à¤¦à¤°à¥à¤¶à¤¨-à¤¯à¥‹à¤— â€” à¤ˆà¤¶à¥à¤µà¤°à¤¾à¤šà¥à¤¯à¤¾ à¤µà¤¿à¤°à¤¾à¤Ÿ à¤°à¥‚à¤ªà¤¾à¤šà¥‡ à¤¦à¤°à¥à¤¶à¤¨' },
+  12: { hi: 'à¤­à¤•à¥à¤¤à¤¿-à¤¯à¥‹à¤— â€” à¤¶à¥à¤¦à¥à¤§ à¤­à¤•à¥à¤¤à¤¿ à¤•à¤¾ à¤¸à¤°à¥à¤µà¤¶à¥à¤°à¥‡à¤·à¥à¤  à¤ªà¤¥',                mr: 'à¤­à¤•à¥à¤¤à¤¿-à¤¯à¥‹à¤— â€” à¤¶à¥à¤¦à¥à¤§ à¤­à¤•à¥à¤¤à¥€à¤šà¤¾ à¤¸à¤°à¥à¤µà¤¶à¥à¤°à¥‡à¤·à¥à¤  à¤®à¤¾à¤°à¥à¤—' },
+  13: { hi: 'à¤•à¥à¤·à¥‡à¤¤à¥à¤°-à¤•à¥à¤·à¥‡à¤¤à¥à¤°à¤œà¥à¤ž-à¤µà¤¿à¤­à¤¾à¤—-à¤¯à¥‹à¤— â€” à¤¶à¤°à¥€à¤° à¤”à¤° à¤†à¤¤à¥à¤®à¤¾ à¤•à¤¾ à¤­à¥‡à¤¦',       mr: 'à¤•à¥à¤·à¥‡à¤¤à¥à¤°-à¤•à¥à¤·à¥‡à¤¤à¥à¤°à¤œà¥à¤ž-à¤µà¤¿à¤­à¤¾à¤—-à¤¯à¥‹à¤— â€” à¤¶à¤°à¥€à¤° à¤†à¤£à¤¿ à¤†à¤¤à¥à¤®à¥à¤¯à¤¾à¤šà¤¾ à¤­à¥‡à¤¦' },
+  14: { hi: 'à¤—à¥à¤£à¤¤à¥à¤°à¤¯-à¤µà¤¿à¤­à¤¾à¤—-à¤¯à¥‹à¤— â€” à¤ªà¥à¤°à¤•à¥ƒà¤¤à¤¿ à¤•à¥‡ à¤¤à¥€à¤¨ à¤—à¥à¤£à¥‹à¤‚ à¤•à¤¾ à¤µà¤¿à¤µà¥‡à¤šà¤¨',        mr: 'à¤—à¥à¤£à¤¤à¥à¤°à¤¯-à¤µà¤¿à¤­à¤¾à¤—-à¤¯à¥‹à¤— â€” à¤ªà¥à¤°à¤•à¥ƒà¤¤à¥€à¤šà¥à¤¯à¤¾ à¤¤à¥€à¤¨ à¤—à¥à¤£à¤¾à¤‚à¤šà¥‡ à¤µà¤¿à¤µà¥‡à¤šà¤¨' },
+  15: { hi: 'à¤ªà¥à¤°à¥à¤·à¥‹à¤¤à¥à¤¤à¤®-à¤¯à¥‹à¤— â€” à¤¸à¤°à¥à¤µà¥‹à¤šà¥à¤š à¤ªà¥à¤°à¥à¤· à¤•à¤¾ à¤°à¤¹à¤¸à¥à¤¯',                  mr: 'à¤ªà¥à¤°à¥à¤·à¥‹à¤¤à¥à¤¤à¤®-à¤¯à¥‹à¤— â€” à¤¸à¤°à¥à¤µà¥‹à¤šà¥à¤š à¤ªà¥à¤°à¥à¤·à¤¾à¤šà¥‡ à¤°à¤¹à¤¸à¥à¤¯' },
+  16: { hi: 'à¤¦à¥ˆà¤µà¤¾à¤¸à¥à¤°-à¤¸à¤®à¥à¤ªà¤¦à¥-à¤µà¤¿à¤­à¤¾à¤—-à¤¯à¥‹à¤— â€” à¤¦à¤¿à¤µà¥à¤¯ à¤”à¤° à¤†à¤¸à¥à¤°à¥€ à¤¸à¥à¤µà¤­à¤¾à¤µ',          mr: 'à¤¦à¥ˆà¤µà¤¾à¤¸à¥à¤°-à¤¸à¤‚à¤ªà¤¦-à¤µà¤¿à¤­à¤¾à¤—-à¤¯à¥‹à¤— â€” à¤¦à¤¿à¤µà¥à¤¯ à¤†à¤£à¤¿ à¤†à¤¸à¥à¤°à¥€ à¤¸à¥à¤µà¤­à¤¾à¤µ' },
+  17: { hi: 'à¤¶à¥à¤°à¤¦à¥à¤§à¤¾à¤¤à¥à¤°à¤¯-à¤µà¤¿à¤­à¤¾à¤—-à¤¯à¥‹à¤— â€” à¤¤à¥€à¤¨ à¤ªà¥à¤°à¤•à¤¾à¤° à¤•à¥€ à¤¶à¥à¤°à¤¦à¥à¤§à¤¾',             mr: 'à¤¶à¥à¤°à¤¦à¥à¤§à¤¾à¤¤à¥à¤°à¤¯-à¤µà¤¿à¤­à¤¾à¤—-à¤¯à¥‹à¤— â€” à¤¤à¥€à¤¨ à¤ªà¥à¤°à¤•à¤¾à¤°à¤šà¥€ à¤¶à¥à¤°à¤¦à¥à¤§à¤¾' },
+  18: { hi: 'à¤®à¥‹à¤•à¥à¤·-à¤¸à¤¨à¥à¤¯à¤¾à¤¸-à¤¯à¥‹à¤— â€” à¤¸à¤‚à¤¨à¥à¤¯à¤¾à¤¸ à¤•à¤¾ à¤¸à¤°à¥à¤µà¥‹à¤šà¥à¤š à¤œà¥à¤žà¤¾à¤¨ à¤”à¤° à¤®à¥‹à¤•à¥à¤·',     mr: 'à¤®à¥‹à¤•à¥à¤·-à¤¸à¤‚à¤¨à¥à¤¯à¤¾à¤¸-à¤¯à¥‹à¤— â€” à¤¸à¤‚à¤¨à¥à¤¯à¤¾à¤¸à¤¾à¤šà¥‡ à¤¸à¤°à¥à¤µà¥‹à¤šà¥à¤š à¤œà¥à¤žà¤¾à¤¨ à¤†à¤£à¤¿ à¤®à¥‹à¤•à¥à¤·' },
 };
 
-// ─── Hindi summary generator ─────────────────────────────────────────────────
+// â”€â”€â”€ Hindi summary generator â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function buildHindiSummary(verse, ch, iskconEnContent) {
   const ctx = CH_CONTEXT[ch] || CH_CONTEXT[1];
   const trans = (verse.translation || '').trim().slice(0, 120);
@@ -869,23 +869,23 @@ function buildHindiSummary(verse, ch, iskconEnContent) {
     : '';
 
   // Build from available verse data
-  let summary = `अध्याय ${ch} (${ctx.hi}): `;
+  let summary = `à¤…à¤§à¥à¤¯à¤¾à¤¯ ${ch} (${ctx.hi}): `;
 
   if (trans) {
-    summary += `इस श्लोक में भगवान श्रीकृष्ण अर्जुन को उपदेश देते हुए कहते हैं — '${trans}'। `;
+    summary += `à¤‡à¤¸ à¤¶à¥à¤²à¥‹à¤• à¤®à¥‡à¤‚ à¤­à¤—à¤µà¤¾à¤¨ à¤¶à¥à¤°à¥€à¤•à¥ƒà¤·à¥à¤£ à¤…à¤°à¥à¤œà¥à¤¨ à¤•à¥‹ à¤‰à¤ªà¤¦à¥‡à¤¶ à¤¦à¥‡à¤¤à¥‡ à¤¹à¥à¤ à¤•à¤¹à¤¤à¥‡ à¤¹à¥ˆà¤‚ â€” '${trans}'à¥¤ `;
   }
 
   if (purportSnippet) {
-    summary += `श्रील प्रभुपाद इसकी व्याख्या इस प्रकार करते हैं: ${purportSnippet}। `;
+    summary += `à¤¶à¥à¤°à¥€à¤² à¤ªà¥à¤°à¤­à¥à¤ªà¤¾à¤¦ à¤‡à¤¸à¤•à¥€ à¤µà¥à¤¯à¤¾à¤–à¥à¤¯à¤¾ à¤‡à¤¸ à¤ªà¥à¤°à¤•à¤¾à¤° à¤•à¤°à¤¤à¥‡ à¤¹à¥ˆà¤‚: ${purportSnippet}à¥¤ `;
   }
 
-  summary += `यह श्लोक भक्ति और ज्ञान के मार्ग पर साधक को अग्रसर करता है। `;
-  summary += `जो भक्त इस उपदेश को हृदय में धारण करता है, वह निश्चय ही परम पद को प्राप्त होता है।`;
+  summary += `à¤¯à¤¹ à¤¶à¥à¤²à¥‹à¤• à¤­à¤•à¥à¤¤à¤¿ à¤”à¤° à¤œà¥à¤žà¤¾à¤¨ à¤•à¥‡ à¤®à¤¾à¤°à¥à¤— à¤ªà¤° à¤¸à¤¾à¤§à¤• à¤•à¥‹ à¤…à¤—à¥à¤°à¤¸à¤° à¤•à¤°à¤¤à¤¾ à¤¹à¥ˆà¥¤ `;
+  summary += `à¤œà¥‹ à¤­à¤•à¥à¤¤ à¤‡à¤¸ à¤‰à¤ªà¤¦à¥‡à¤¶ à¤•à¥‹ à¤¹à¥ƒà¤¦à¤¯ à¤®à¥‡à¤‚ à¤§à¤¾à¤°à¤£ à¤•à¤°à¤¤à¤¾ à¤¹à¥ˆ, à¤µà¤¹ à¤¨à¤¿à¤¶à¥à¤šà¤¯ à¤¹à¥€ à¤ªà¤°à¤® à¤ªà¤¦ à¤•à¥‹ à¤ªà¥à¤°à¤¾à¤ªà¥à¤¤ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆà¥¤`;
 
   return summary.replace(/\\s+/g, ' ').trim();
 }
 
-// ─── Marathi summary generator ───────────────────────────────────────────────
+// â”€â”€â”€ Marathi summary generator â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function buildMarathiSummary(verse, ch, iskconEnContent) {
   const ctx = CH_CONTEXT[ch] || CH_CONTEXT[1];
   const trans = (verse.translation || '').trim().slice(0, 120);
@@ -894,23 +894,23 @@ function buildMarathiSummary(verse, ch, iskconEnContent) {
     ? iskconEnContent.trim().slice(0, 120)
     : '';
 
-  let summary = `अध्याय ${ch} (${ctx.mr}): `;
+  let summary = `à¤…à¤§à¥à¤¯à¤¾à¤¯ ${ch} (${ctx.mr}): `;
 
   if (trans) {
-    summary += `या श्लोकात भगवान श्रीकृष्ण अर्जुनाला सांगतात — '${trans}'। `;
+    summary += `à¤¯à¤¾ à¤¶à¥à¤²à¥‹à¤•à¤¾à¤¤ à¤­à¤—à¤µà¤¾à¤¨ à¤¶à¥à¤°à¥€à¤•à¥ƒà¤·à¥à¤£ à¤…à¤°à¥à¤œà¥à¤¨à¤¾à¤²à¤¾ à¤¸à¤¾à¤‚à¤—à¤¤à¤¾à¤¤ â€” '${trans}'à¥¤ `;
   }
 
   if (purportSnippet) {
-    summary += `श्रील प्रभुपाद स्पष्ट करतात: ${purportSnippet}। `;
+    summary += `à¤¶à¥à¤°à¥€à¤² à¤ªà¥à¤°à¤­à¥à¤ªà¤¾à¤¦ à¤¸à¥à¤ªà¤·à¥à¤Ÿ à¤•à¤°à¤¤à¤¾à¤¤: ${purportSnippet}à¥¤ `;
   }
 
-  summary += `हा श्लोक भक्ती आणि ज्ञानाच्या मार्गावर साधकाला प्रेरणा देतो। `;
-  summary += `जो भक्त हा उपदेश मनात धारण करतो, तो निश्चितपणे परम पद प्राप्त करतो।`;
+  summary += `à¤¹à¤¾ à¤¶à¥à¤²à¥‹à¤• à¤­à¤•à¥à¤¤à¥€ à¤†à¤£à¤¿ à¤œà¥à¤žà¤¾à¤¨à¤¾à¤šà¥à¤¯à¤¾ à¤®à¤¾à¤°à¥à¤—à¤¾à¤µà¤° à¤¸à¤¾à¤§à¤•à¤¾à¤²à¤¾ à¤ªà¥à¤°à¥‡à¤°à¤£à¤¾ à¤¦à¥‡à¤¤à¥‹à¥¤ `;
+  summary += `à¤œà¥‹ à¤­à¤•à¥à¤¤ à¤¹à¤¾ à¤‰à¤ªà¤¦à¥‡à¤¶ à¤®à¤¨à¤¾à¤¤ à¤§à¤¾à¤°à¤£ à¤•à¤°à¤¤à¥‹, à¤¤à¥‹ à¤¨à¤¿à¤¶à¥à¤šà¤¿à¤¤à¤ªà¤£à¥‡ à¤ªà¤°à¤® à¤ªà¤¦ à¤ªà¥à¤°à¤¾à¤ªà¥à¤¤ à¤•à¤°à¤¤à¥‹à¥¤`;
 
   return summary.replace(/\\s+/g, ' ').trim();
 }
 
-// ─── ISKCON en fallback for verses with no purport ────────────────────────────
+// â”€â”€â”€ ISKCON en fallback for verses with no purport â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function buildIskconEnFallback(verse, ch) {
   const trans = (verse.translation || '').trim();
   const meaning = (verse.meaning || '').trim().slice(0, 200);
@@ -925,12 +925,12 @@ function buildIskconEnFallback(verse, ch) {
   if (meaning) {
     content += `Word meanings: ${meaning} `;
   }
-  content += `This verse is part of Chapter ${ch} — ${ctx.hi.split(' — ')[0]} — of the Bhagavad-gita As It Is, wherein Lord Kṛṣṇa imparts transcendental knowledge to Arjuna on the battlefield of Kurukṣetra. Śrīla Prabhupāda emphasises that every verse of the Gita carries a specific spiritual purport guiding the sincere devotee toward liberation and pure devotional service.`;
+  content += `This verse is part of Chapter ${ch} â€” ${ctx.hi.split(' â€” ')[0]} â€” of the Bhagavad-gita As It Is, wherein Lord Ká¹›á¹£á¹‡a imparts transcendental knowledge to Arjuna on the battlefield of Kuruká¹£etra. ÅšrÄ«la PrabhupÄda emphasises that every verse of the Gita carries a specific spiritual purport guiding the sincere devotee toward liberation and pure devotional service.`;
 
   return content.replace(/\\s+/g, ' ').trim();
 }
 
-// ─── Main fix loop ─────────────────────────────────────────────────────────────
+// â”€â”€â”€ Main fix loop â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 let stats = { chapters: 0, enFixed: 0, hiAdded: 0, mrAdded: 0, placeholderRemoved: 0 };
 
 for (let ch = 1; ch <= 18; ch++) {
@@ -969,9 +969,9 @@ for (let ch = 1; ch <= 18; ch++) {
         } else {
           iskEn = {
             author: 'iskcon', author_name: 'A.C. Bhaktivedanta Swami Prabhupada',
-            author_bio: 'Founder-Acharya of ISKCON; translator and commentator of Bhagavad-gītā As It Is.',
-            author_label: 'Bhaktivedanta Purport', author_icon: '🔱',
-            publication: 'Bhagavad-gītā As It Is',
+            author_bio: 'Founder-Acharya of ISKCON; translator and commentator of Bhagavad-gÄ«tÄ As It Is.',
+            author_label: 'Bhaktivedanta Purport', author_icon: 'ðŸ”±',
+            publication: 'Bhagavad-gÄ«tÄ As It Is',
             organization: 'ISKCON / Vedabase',
             type: 'commentary', lang: 'en', content: fallback,
           };
@@ -989,10 +989,10 @@ for (let ch = 1; ch <= 18; ch++) {
         iskHi = { ...iskHi, content: hiContent };
       } else {
         iskHi = {
-          author: 'iskcon', author_name: 'ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद',
-          author_bio: 'इस्कॉन के संस्थापक-आचार्य; भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार।',
-          author_label: 'भक्तिवेदान्त भाष्य', author_icon: '🔱',
-          publication: 'भगवद्-गीता यथारूप',
+          author: 'iskcon', author_name: 'à¤.à¤¸à¥€. à¤­à¤•à¥à¤¤à¤¿à¤µà¥‡à¤¦à¤¾à¤¨à¥à¤¤ à¤¸à¥à¤µà¤¾à¤®à¥€ à¤ªà¥à¤°à¤­à¥à¤ªà¤¾à¤¦',
+          author_bio: 'à¤‡à¤¸à¥à¤•à¥‰à¤¨ à¤•à¥‡ à¤¸à¤‚à¤¸à¥à¤¥à¤¾à¤ªà¤•-à¤†à¤šà¤¾à¤°à¥à¤¯; à¤­à¤—à¤µà¤¦à¥-à¤—à¥€à¤¤à¤¾ à¤¯à¤¥à¤¾à¤°à¥‚à¤ª à¤•à¥‡ à¤…à¤¨à¥à¤µà¤¾à¤¦à¤• à¤à¤µà¤‚ à¤­à¤¾à¤·à¥à¤¯à¤•à¤¾à¤°à¥¤',
+          author_label: 'à¤­à¤•à¥à¤¤à¤¿à¤µà¥‡à¤¦à¤¾à¤¨à¥à¤¤ à¤­à¤¾à¤·à¥à¤¯', author_icon: 'ðŸ”±',
+          publication: 'à¤­à¤—à¤µà¤¦à¥-à¤—à¥€à¤¤à¤¾ à¤¯à¤¥à¤¾à¤°à¥‚à¤ª',
           organization: 'ISKCON / Vedabase',
           type: 'commentary', lang: 'hi', content: hiContent,
         };
@@ -1008,10 +1008,10 @@ for (let ch = 1; ch <= 18; ch++) {
         iskMr = { ...iskMr, content: mrContent };
       } else {
         iskMr = {
-          author: 'iskcon', author_name: 'ए.सी. भक्तिवेदांत स्वामी प्रभुपाद',
-          author_bio: 'इस्कॉनचे संस्थापक-आचार्य; भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार।',
-          author_label: 'भक्तिवेदांत भाष्य', author_icon: '🔱',
-          publication: 'भगवद्-गीता यथारूप',
+          author: 'iskcon', author_name: 'à¤.à¤¸à¥€. à¤­à¤•à¥à¤¤à¤¿à¤µà¥‡à¤¦à¤¾à¤‚à¤¤ à¤¸à¥à¤µà¤¾à¤®à¥€ à¤ªà¥à¤°à¤­à¥à¤ªà¤¾à¤¦',
+          author_bio: 'à¤‡à¤¸à¥à¤•à¥‰à¤¨à¤šà¥‡ à¤¸à¤‚à¤¸à¥à¤¥à¤¾à¤ªà¤•-à¤†à¤šà¤¾à¤°à¥à¤¯; à¤­à¤—à¤µà¤¦à¥-à¤—à¥€à¤¤à¤¾ à¤¯à¤¥à¤¾à¤°à¥‚à¤ªà¤¾à¤šà¥‡ à¤­à¤¾à¤·à¤¾à¤‚à¤¤à¤°à¤•à¤¾à¤° à¤µ à¤­à¤¾à¤·à¥à¤¯à¤•à¤¾à¤°à¥¤',
+          author_label: 'à¤­à¤•à¥à¤¤à¤¿à¤µà¥‡à¤¦à¤¾à¤‚à¤¤ à¤­à¤¾à¤·à¥à¤¯', author_icon: 'ðŸ”±',
+          publication: 'à¤­à¤—à¤µà¤¦à¥-à¤—à¥€à¤¤à¤¾ à¤¯à¤¥à¤¾à¤°à¥‚à¤ª',
           organization: 'ISKCON / Vedabase',
           type: 'commentary', lang: 'mr', content: mrContent,
         };
@@ -1033,17 +1033,17 @@ for (let ch = 1; ch <= 18; ch++) {
     stats.chapters++;
   }
 
-  console.log(`  Ch${String(ch).padStart(2,'0')} ✓`);
+  console.log(`  Ch${String(ch).padStart(2,'0')} âœ“`);
 }
 
-console.log('\\n═══════════════════════════════════════');
+console.log('\\nâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•');
 console.log('ISKCON multilang fix complete');
 console.log('Chapters updated    :', stats.chapters);
 console.log('ISKCON en fixed     :', stats.enFixed);
 console.log('ISKCON hi added/fixed:', stats.hiAdded);
 console.log('ISKCON mr added/fixed:', stats.mrAdded);
 console.log('Placeholders removed:', stats.placeholderRemoved);
-console.log('═══════════════════════════════════════\\n');
+console.log('â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•\\n');
 
 """
 
@@ -1070,131 +1070,131 @@ ENRICH_GITA_DNYANESHWARI_JS = """
 const fs   = require('fs');
 const path = require('path');
 
-// ─── Author metadata ──────────────────────────────────────────────────────────
+// â”€â”€â”€ Author metadata â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const AUTHOR = {
   author:       'sant-dnyaneshwar',
   author_name:  'Sant Dnyaneshwar',
-  author_bio:   'Maharashtrian saint-philosopher (1275–1296 CE) who composed the Dnyaneshwari — a Marathi verse commentary on the Bhagavad Gita — at the age of sixteen. Regarded as the founding work of the Warkari tradition and one of the greatest spiritual texts in the Marathi language.',
+  author_bio:   'Maharashtrian saint-philosopher (1275â€“1296 CE) who composed the Dnyaneshwari â€” a Marathi verse commentary on the Bhagavad Gita â€” at the age of sixteen. Regarded as the founding work of the Warkari tradition and one of the greatest spiritual texts in the Marathi language.',
   author_label: 'Dnyaneshwari (Bhavartha Dipika)',
-  author_icon:  '🪷',
-  publication:  'Dnyaneshwari — Bhavartha Dipika',
+  author_icon:  'ðŸª·',
+  publication:  'Dnyaneshwari â€” Bhavartha Dipika',
   organization: 'Maharashtra Spiritual Heritage / Warkari Sampradaya',
   type:         'commentary',
 };
 
-// ─── Chapter-level context drawn from known Dnyaneshwari teachings ────────────
+// â”€â”€â”€ Chapter-level context drawn from known Dnyaneshwari teachings â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const CHAPTER_CONTEXT = {
   1: {
-    theme: 'Arjuna-Vishad Yoga — The grief of Arjuna as the door to spiritual awakening',
+    theme: 'Arjuna-Vishad Yoga â€” The grief of Arjuna as the door to spiritual awakening',
     dn_address: 'O Arjuna',
     dn_insight: 'Dnyaneshwar opens by invoking Ganapati, Saraswati, and the lineage of Natha-Sampradaya before establishing that the battlefield of Kurukshetra is the body, the Pandavas are the righteous faculties, and Arjuna\\'s grief is the first impulse of genuine inquiry into the Self.',
     metaphor: 'The river of attachment and sorrow meets the ocean of discrimination (viveka) at Kurukshetra.',
   },
   2: {
-    theme: 'Sankhya Yoga — The eternal Self, the transient body, and the eighteen marks of the sthitaprajna',
+    theme: 'Sankhya Yoga â€” The eternal Self, the transient body, and the eighteen marks of the sthitaprajna',
     dn_address: 'O Partha',
     dn_insight: 'The longest and most philosophically dense chapter of the Dnyaneshwari. Dnyaneshwar gives an extraordinary description of the eighteen qualities of a person of steady wisdom, comparing equanimity to the sky that remains unchanged though clouds pass through it.',
-    metaphor: 'The Self is like the sky — though winds and clouds of thought arise, it is never moved.',
+    metaphor: 'The Self is like the sky â€” though winds and clouds of thought arise, it is never moved.',
   },
   3: {
-    theme: 'Karma Yoga — Action offered without attachment, the sun illuminating without ownership',
+    theme: 'Karma Yoga â€” Action offered without attachment, the sun illuminating without ownership',
     dn_address: 'O Dhananjaya',
     dn_insight: 'Dnyaneshwar teaches that action purifies the mind when offered without desire for fruit. As the sun gives light without claiming the growth of the lotus, the wise one acts without claiming the fruit.',
-    metaphor: 'The lamp burns continuously — it does not choose whom to illuminate. So too the wise one acts without selection.',
+    metaphor: 'The lamp burns continuously â€” it does not choose whom to illuminate. So too the wise one acts without selection.',
   },
   4: {
-    theme: 'Jnana Yoga — Divine incarnation and the chain of sacred knowledge',
+    theme: 'Jnana Yoga â€” Divine incarnation and the chain of sacred knowledge',
     dn_address: 'O Arjuna',
-    dn_insight: 'The fire of true knowledge (jnana) burns all actions to ash. Dnyaneshwar explains that the avatara descends as a farmer descends to the field — not from need, but from compassion, to restore dharma when it withers like an untended crop.',
+    dn_insight: 'The fire of true knowledge (jnana) burns all actions to ash. Dnyaneshwar explains that the avatara descends as a farmer descends to the field â€” not from need, but from compassion, to restore dharma when it withers like an untended crop.',
     metaphor: 'The fire of knowledge burns the forest of karma as the forest fire consumes without remainder.',
   },
   5: {
-    theme: 'Karma Sanyasa Yoga — The identity of jnana and karma, inner renunciation',
+    theme: 'Karma Sanyasa Yoga â€” The identity of jnana and karma, inner renunciation',
     dn_address: 'O Pandava',
     dn_insight: 'Dnyaneshwar reconciles action and renunciation: the true renunciant is one who acts fully in the world while being internally unmoved, like the lotus leaf that floats on water without absorbing it.',
     metaphor: 'The lotus rests on water, touched by it at every moment, yet untouched within. This is the way of inner renunciation.',
   },
   6: {
-    theme: 'Dhyana Yoga — The practice of meditation, steadying the mind like a lamp in a windless place',
+    theme: 'Dhyana Yoga â€” The practice of meditation, steadying the mind like a lamp in a windless place',
     dn_address: 'O Arjuna',
     dn_insight: 'Dnyaneshwar gives the most detailed practical instructions on meditation in the Dnyaneshwari. The ideal seat, the regulation of breath, the fixing of the gaze at the eyebrow centre, and the gradual withdrawal from external objects into the luminous inner Self.',
-    metaphor: 'The lamp in a windless place does not flicker. The mind stabilised in meditation does not waver — it becomes the light itself.',
+    metaphor: 'The lamp in a windless place does not flicker. The mind stabilised in meditation does not waver â€” it becomes the light itself.',
   },
   7: {
-    theme: 'Jnana-Vijnana Yoga — Lower and higher knowledge, the divine maya',
+    theme: 'Jnana-Vijnana Yoga â€” Lower and higher knowledge, the divine maya',
     dn_address: 'O Gudakesha',
-    dn_insight: 'Dnyaneshwar distinguishes two levels of knowledge: lower knowledge (of the eight-fold nature) and higher knowledge (of the Self as the substratum of all). The fourfold devotees who approach God — the distressed, the seeker of wealth, the curious, and the wise — are all welcome.',
+    dn_insight: 'Dnyaneshwar distinguishes two levels of knowledge: lower knowledge (of the eight-fold nature) and higher knowledge (of the Self as the substratum of all). The fourfold devotees who approach God â€” the distressed, the seeker of wealth, the curious, and the wise â€” are all welcome.',
     metaphor: 'Gold in many ornaments is still gold. The manifold world in Brahman is still Brahman.',
   },
   8: {
-    theme: 'Akshara-Brahma Yoga — The imperishable Brahman, remembrance at the hour of death',
+    theme: 'Akshara-Brahma Yoga â€” The imperishable Brahman, remembrance at the hour of death',
     dn_address: 'O Bharata',
     dn_insight: 'The state of consciousness at the moment of death determines one\\'s next birth. Dnyaneshwar urges constant remembrance of God throughout life, for as the perfume of sandalwood pervades its surroundings always, the remembrance of God must pervade every breath.',
     metaphor: 'The last thought in the mind as the lamp of the body is extinguished determines the colour of the next dawn.',
   },
   9: {
-    theme: 'Raja-Vidya Yoga — The royal science and secret, supreme devotion',
+    theme: 'Raja-Vidya Yoga â€” The royal science and secret, supreme devotion',
     dn_address: 'O Arjuna',
     dn_insight: 'The greatest of all secrets: God pervades the entire cosmos yet is not bound by it, as the sky holds the wind but is not moved by it. Devotion offered with a leaf, a flower, a fruit, or water with pure heart is received by God.',
     metaphor: 'Even if the worshipper offers only water with single-pointed love, God accepts it as if it were the nectar of immortality.',
   },
   10: {
-    theme: 'Vibhuti Yoga — The divine glories, God as the essence in all excellence',
+    theme: 'Vibhuti Yoga â€” The divine glories, God as the essence in all excellence',
     dn_address: 'O best of Kurus',
     dn_insight: 'Dnyaneshwar is transported in devotion as he describes the divine vibhutis. God is not merely everywhere; God is the excellence in all excellent things. Wherever one encounters the peak of any quality, there God resides as its inner presence.',
     metaphor: 'As the river has its source in the mountain rain, all excellence has its source in the one Self who shines as the best in all things.',
   },
   11: {
-    theme: 'Vishvarupa-Darshana Yoga — The cosmic vision, God as the totality of time and creation',
+    theme: 'Vishvarupa-Darshana Yoga â€” The cosmic vision, God as the totality of time and creation',
     dn_address: 'O Great-Armed One',
-    dn_insight: 'The most visionary chapter of the Dnyaneshwari. Dnyaneshwar describes the cosmic form with poetry of extraordinary grandeur — the sun and moon as the two eyes, the sky as the body, the four cardinal directions as the arms reaching into infinity.',
+    dn_insight: 'The most visionary chapter of the Dnyaneshwari. Dnyaneshwar describes the cosmic form with poetry of extraordinary grandeur â€” the sun and moon as the two eyes, the sky as the body, the four cardinal directions as the arms reaching into infinity.',
     metaphor: 'When the entire ocean rises and shows its depth at once, no shoreline contains it. So too the cosmic form overflows every limit of thought.',
   },
   12: {
-    theme: 'Bhakti Yoga — The path of devotion, the dear qualities of the devotee',
+    theme: 'Bhakti Yoga â€” The path of devotion, the dear qualities of the devotee',
     dn_address: 'O Arjuna',
     dn_insight: 'Dnyaneshwar considers Bhakti Yoga the most direct path. The twenty-two qualities of the ideal devotee described here are like twenty-two steps of a stairway that leads directly into the presence of God. Among all paths, the path of love (prema-bhakti) is the swiftest.',
     metaphor: 'As the river knows no rest until it merges with the ocean, the devotee knows no rest until merged in God.',
   },
   13: {
-    theme: 'Kshetra-Kshetrajna Vibhaga Yoga — The field of the body and the knower, Prakriti and Purusha',
+    theme: 'Kshetra-Kshetrajna Vibhaga Yoga â€” The field of the body and the knower, Prakriti and Purusha',
     dn_address: 'O Kaunteya',
     dn_insight: 'Dnyaneshwar uses the analogy of a mirror and its reflection: the body is the mirror, the Self is the light that makes reflection possible, yet is not the reflection. The twenty qualities of knowledge (jnana) described here are like twenty torches that together illuminate the entire field.',
-    metaphor: 'As the sky reflected in a pot of water appears limited — yet the sky itself has no limit — so the Self reflected in the body appears finite while remaining infinite.',
+    metaphor: 'As the sky reflected in a pot of water appears limited â€” yet the sky itself has no limit â€” so the Self reflected in the body appears finite while remaining infinite.',
   },
   14: {
-    theme: 'Gunatraya-Vibhaga Yoga — The three qualities of Prakriti and how to transcend them',
+    theme: 'Gunatraya-Vibhaga Yoga â€” The three qualities of Prakriti and how to transcend them',
     dn_address: 'O Bharata',
     dn_insight: 'Sattva, rajas, and tamas are the three threads from which the garment of creation is woven. Dnyaneshwar explains that even sattva, the purest quality, must ultimately be transcended, for even the purest thread still binds. Only in the Self beyond all gunas is there complete freedom.',
     metaphor: 'Even a golden chain is a chain. The sattvic quality, though it illuminates, also binds the wise one to the result of wisdom until released by knowledge of the Witness beyond all three.',
   },
   15: {
-    theme: 'Purushottama Yoga — The Supreme Person beyond the perishable and imperishable',
+    theme: 'Purushottama Yoga â€” The Supreme Person beyond the perishable and imperishable',
     dn_address: 'O Arjuna',
-    dn_insight: 'The ashvattha tree — the world of samsara — grows with its roots above and branches below, fed by the three gunas. Dnyaneshwar urges the aspirant to cut this tree with the sword of non-attachment and recognise the supreme Purushottama who pervades both the perishable (ksara) and the imperishable (aksara).',
-    metaphor: 'The tree of the world is inverted — its roots are in the Imperishable above, its branches spread into the changing world below. Cut the tree at its base and rest in the root itself.',
+    dn_insight: 'The ashvattha tree â€” the world of samsara â€” grows with its roots above and branches below, fed by the three gunas. Dnyaneshwar urges the aspirant to cut this tree with the sword of non-attachment and recognise the supreme Purushottama who pervades both the perishable (ksara) and the imperishable (aksara).',
+    metaphor: 'The tree of the world is inverted â€” its roots are in the Imperishable above, its branches spread into the changing world below. Cut the tree at its base and rest in the root itself.',
   },
   16: {
-    theme: 'Daivasura-Sampad-Vibhaga Yoga — Divine and demonic qualities',
+    theme: 'Daivasura-Sampad-Vibhaga Yoga â€” Divine and demonic qualities',
     dn_address: 'O Arjuna',
     dn_insight: 'The twenty-six divine qualities lead to liberation; the demonic qualities lead to bondage. Dnyaneshwar presents this not as a condemnation but as a guide: the aspirant who sees demonic tendencies within should not despair but rather use the very force of self-awareness to transform them into their opposite.',
     metaphor: 'As the same rain nourishes the sandalwood tree into fragrance and the thorn-bush into sharpness, the same consciousness produces divine or demonic qualities depending on the vessel that receives it.',
   },
   17: {
-    theme: 'Shraddha-Traya-Vibhaga Yoga — The threefold faith in worship, food, sacrifice, and austerity',
+    theme: 'Shraddha-Traya-Vibhaga Yoga â€” The threefold faith in worship, food, sacrifice, and austerity',
     dn_address: 'O Bharata',
     dn_insight: 'Faith is the foundation of all spiritual practice. Dnyaneshwar explains that one\\'s faith reveals one\\'s deepest nature: sattvic faith expressed through pure food, worship, sacrifice, and austerity leads the aspirant naturally toward liberation.',
     metaphor: 'As the quality of the soil determines the quality of the crop, the quality of faith determines the quality of spiritual growth.',
   },
   18: {
-    theme: 'Moksha-Sanyasa Yoga — Renunciation, liberation, and the concluding gift of grace',
+    theme: 'Moksha-Sanyasa Yoga â€” Renunciation, liberation, and the concluding gift of grace',
     dn_address: 'O Mighty-Armed Arjuna',
     dn_insight: 'The culminating chapter. Dnyaneshwar concludes with a passionate outpouring of devotion to his guru Nivrittinath and to God, declaring that the one who shares this wisdom with devotees is the most dear to him. Liberation (moksha) is not the absence of action but the presence of the Self in all action.',
-    metaphor: 'As the ocean does not diminish when the river merges into it, the Self does not change when the individual merges back into it. The drop returns to the ocean — this is moksha.',
+    metaphor: 'As the ocean does not diminish when the river merges into it, the Self does not change when the individual merges back into it. The drop returns to the ocean â€” this is moksha.',
   },
 };
 
-// ─── Verse-contextual commentary generator ───────────────────────────────────
+// â”€â”€â”€ Verse-contextual commentary generator â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 /**
  * Generates authentic Dnyaneshwari-style English commentary for a single verse.
  * Draws on the verse's own Sanskrit terms and meaning, the chapter's themes,
@@ -1208,7 +1208,7 @@ function generateEnglishCommentary(verse, chapterNum, verseIndex, totalVerses) {
 
   // Extract key Sanskrit terms from the verse original (words 2+ chars)
   const sanskritWords = original
-    .replace(/[|।॥\\n]/g, ' ')
+    .replace(/[|à¥¤à¥¥\\n]/g, ' ')
     .split(/\\s+/)
     .filter(w => w.length >= 4)
     .slice(0, 3)
@@ -1234,8 +1234,8 @@ function generateEnglishCommentary(verse, chapterNum, verseIndex, totalVerses) {
   let body = '';
   if (meaning.length > 20) {
     // Weave the meaning into Dnyaneshwari-style prose
-    const shortened = meaning.length > 120 ? meaning.slice(0, 120) + '…' : meaning;
-    body = `This verse — '${shortened}' — Dnyaneshwar expands as follows: ${ctx.dn_insight} `;
+    const shortened = meaning.length > 120 ? meaning.slice(0, 120) + 'â€¦' : meaning;
+    body = `This verse â€” '${shortened}' â€” Dnyaneshwar expands as follows: ${ctx.dn_insight} `;
   } else {
     body = `${ctx.dn_insight} `;
   }
@@ -1266,57 +1266,57 @@ function generateMarathiCommentary(verse, chapterNum, verseIndex) {
   const ctx = CHAPTER_CONTEXT[chapterNum] || CHAPTER_CONTEXT[1];
 
   // Marathi address forms for Krishna
-  const marathiAddresses = ['अर्जुना', 'पार्था', 'धनंजया', 'भारता', 'कौन्तेया', 'गुडाकेशा'];
+  const marathiAddresses = ['à¤…à¤°à¥à¤œà¥à¤¨à¤¾', 'à¤ªà¤¾à¤°à¥à¤¥à¤¾', 'à¤§à¤¨à¤‚à¤œà¤¯à¤¾', 'à¤­à¤¾à¤°à¤¤à¤¾', 'à¤•à¥Œà¤¨à¥à¤¤à¥‡à¤¯à¤¾', 'à¤—à¥à¤¡à¤¾à¤•à¥‡à¤¶à¤¾'];
   const addr = marathiAddresses[verseIndex % marathiAddresses.length];
 
   // Verse-number-keyed opening phrases in Marathi
   const marathiOpenings = [
-    `ज्ञानेश्वर माऊली ${addr} ला सांगतात:`,
-    `या श्लोकाचे रहस्य उलगडताना माऊली म्हणतात:`,
-    `${addr}, हे ध्यानात घे —`,
-    `ज्ञानदेव या श्लोकाचा भाव स्पष्ट करतात:`,
-    `माऊलींचे हे अमृतवचन आहे:`,
-    `संत ज्ञानेश्वर ${addr} ला उपदेश देतात:`,
+    `à¤œà¥à¤žà¤¾à¤¨à¥‡à¤¶à¥à¤µà¤° à¤®à¤¾à¤Šà¤²à¥€ ${addr} à¤²à¤¾ à¤¸à¤¾à¤‚à¤—à¤¤à¤¾à¤¤:`,
+    `à¤¯à¤¾ à¤¶à¥à¤²à¥‹à¤•à¤¾à¤šà¥‡ à¤°à¤¹à¤¸à¥à¤¯ à¤‰à¤²à¤—à¤¡à¤¤à¤¾à¤¨à¤¾ à¤®à¤¾à¤Šà¤²à¥€ à¤®à¥à¤¹à¤£à¤¤à¤¾à¤¤:`,
+    `${addr}, à¤¹à¥‡ à¤§à¥à¤¯à¤¾à¤¨à¤¾à¤¤ à¤˜à¥‡ â€”`,
+    `à¤œà¥à¤žà¤¾à¤¨à¤¦à¥‡à¤µ à¤¯à¤¾ à¤¶à¥à¤²à¥‹à¤•à¤¾à¤šà¤¾ à¤­à¤¾à¤µ à¤¸à¥à¤ªà¤·à¥à¤Ÿ à¤•à¤°à¤¤à¤¾à¤¤:`,
+    `à¤®à¤¾à¤Šà¤²à¥€à¤‚à¤šà¥‡ à¤¹à¥‡ à¤…à¤®à¥ƒà¤¤à¤µà¤šà¤¨ à¤†à¤¹à¥‡:`,
+    `à¤¸à¤‚à¤¤ à¤œà¥à¤žà¤¾à¤¨à¥‡à¤¶à¥à¤µà¤° ${addr} à¤²à¤¾ à¤‰à¤ªà¤¦à¥‡à¤¶ à¤¦à¥‡à¤¤à¤¾à¤¤:`,
   ];
   const opening = marathiOpenings[verseIndex % marathiOpenings.length];
 
   // Build thematic body in Marathi
   const marathiThemes = {
-    1:  'अर्जुनाचा विषाद म्हणजे आत्मज्ञानाची पहिली पायरी आहे. शरीर हे रणांगण आहे आणि मन हा योद्धा आहे.',
-    2:  'आत्मा अविनाशी आहे, शरीर नाशवंत आहे. ज्ञानी पुरुष न जन्मतो न मरतो — तो नित्य आहे.',
-    3:  'निष्काम कर्म हाच खरा मोक्षाचा मार्ग आहे. फळाची अपेक्षा न ठेवता कर्म करणे हे ईश्वरार्पण आहे.',
-    4:  'ज्ञानाचा अग्नि सर्व कर्मांना भस्म करतो. भगवंत जेव्हा धर्माचे संरक्षण करण्यासाठी अवतरतात, तेव्हा ते कृपेने येतात.',
-    5:  'खऱ्या संन्यासाचा अर्थ म्हणजे मनाने सांसारिक गोष्टींशी अनासक्त राहणे. जसे कमळ पाण्यावर राहते पण ओले होत नाही.',
-    6:  'ध्यानाच्या सरावाने मन स्थिर होते. वाऱ्यापासून दूर असलेल्या दिव्याप्रमाणे ध्यानस्थ मन चंचल होत नाही.',
-    7:  'जड प्रकृती आणि चेतन आत्मा यांचे ज्ञान हीच खरी विद्या आहे. सोन्याच्या अनेक अलंकारांत सोनेच असते.',
-    8:  'मृत्युसमयी जो परमेश्वराचे स्मरण करतो, तो त्याच्याकडेच जातो. सुगंधी वस्त्राप्रमाणे सतत भक्ती मनाला पवित्र ठेवते.',
-    9:  'भगवंत जगाला धारण करतो पण जगाने बांधला जात नाही. पत्र, पुष्प, फल, जलाचे निष्काम अर्पण भगवंत प्रेमाने स्वीकारतो.',
-    10: 'जे उत्कृष्ट आहे त्या सर्वांत ईश्वर आहे. नद्यांमध्ये गंगा, प्रकाशांत सूर्य — सर्व विभूती एकाच परमेश्वराच्या प्रकट रूपे आहेत.',
-    11: 'विश्वरूप म्हणजे समग्र सृष्टीच एकाच ईश्वराचे शरीर आहे. अर्जुनाला दिव्य दृष्टी मिळाली आणि तो स्तब्ध झाला.',
-    12: 'भक्तियोग हा सर्वात सुलभ मार्ग आहे. जसे नदी समुद्राला भेटेपर्यंत विश्राम घेत नाही, तसे भक्त ईश्वरात विलीन होईपर्यंत थांबत नाही.',
-    13: 'शरीर हे क्षेत्र आहे आणि आत्मा क्षेत्रज्ञ आहे. जसे आकाश घड्यात असल्यासारखे दिसते पण घड्यापेक्षा वेगळे असते, तसे आत्मा शरीरापेक्षा वेगळा आहे.',
-    14: 'सत्त्व, रज, तम हे तीन गुण म्हणजे प्रकृतीचे तीन धागे आहेत. सोन्याची साखळी असली तरी साखळीच असते — सत्त्वगुणही बांधतो.',
-    15: 'संसार वृक्षाची मुळे वर आहेत, फांद्या खाली आहेत. हा वृक्ष अनासक्तीच्या तलवारीने तोडून आत्मज्ञानात स्थिर व्हावे.',
-    16: 'दैवी गुण मोक्षाकडे नेतात आणि आसुरी गुण बंधनाकडे नेतात. स्वतःतील अयोग्य वृत्ती ओळखणे हीच खरी साधना.',
-    17: 'श्रद्धा ही साधनेचा पाया आहे. जसे मातीची गुणवत्ता पीकावर परिणाम करते, तसे श्रद्धेची गुणवत्ता साधनेवर परिणाम करते.',
-    18: 'मोक्ष म्हणजे कर्माचा अंत नाही, तर कर्तेपणाचा अंत आहे. थेंब सागरात विलीन होतो — तोच मोक्ष. ज्ञानेश्वर माऊलींना साष्टांग नमन.',
+    1:  'à¤…à¤°à¥à¤œà¥à¤¨à¤¾à¤šà¤¾ à¤µà¤¿à¤·à¤¾à¤¦ à¤®à¥à¤¹à¤£à¤œà¥‡ à¤†à¤¤à¥à¤®à¤œà¥à¤žà¤¾à¤¨à¤¾à¤šà¥€ à¤ªà¤¹à¤¿à¤²à¥€ à¤ªà¤¾à¤¯à¤°à¥€ à¤†à¤¹à¥‡. à¤¶à¤°à¥€à¤° à¤¹à¥‡ à¤°à¤£à¤¾à¤‚à¤—à¤£ à¤†à¤¹à¥‡ à¤†à¤£à¤¿ à¤®à¤¨ à¤¹à¤¾ à¤¯à¥‹à¤¦à¥à¤§à¤¾ à¤†à¤¹à¥‡.',
+    2:  'à¤†à¤¤à¥à¤®à¤¾ à¤…à¤µà¤¿à¤¨à¤¾à¤¶à¥€ à¤†à¤¹à¥‡, à¤¶à¤°à¥€à¤° à¤¨à¤¾à¤¶à¤µà¤‚à¤¤ à¤†à¤¹à¥‡. à¤œà¥à¤žà¤¾à¤¨à¥€ à¤ªà¥à¤°à¥à¤· à¤¨ à¤œà¤¨à¥à¤®à¤¤à¥‹ à¤¨ à¤®à¤°à¤¤à¥‹ â€” à¤¤à¥‹ à¤¨à¤¿à¤¤à¥à¤¯ à¤†à¤¹à¥‡.',
+    3:  'à¤¨à¤¿à¤·à¥à¤•à¤¾à¤® à¤•à¤°à¥à¤® à¤¹à¤¾à¤š à¤–à¤°à¤¾ à¤®à¥‹à¤•à¥à¤·à¤¾à¤šà¤¾ à¤®à¤¾à¤°à¥à¤— à¤†à¤¹à¥‡. à¤«à¤³à¤¾à¤šà¥€ à¤…à¤ªà¥‡à¤•à¥à¤·à¤¾ à¤¨ à¤ à¥‡à¤µà¤¤à¤¾ à¤•à¤°à¥à¤® à¤•à¤°à¤£à¥‡ à¤¹à¥‡ à¤ˆà¤¶à¥à¤µà¤°à¤¾à¤°à¥à¤ªà¤£ à¤†à¤¹à¥‡.',
+    4:  'à¤œà¥à¤žà¤¾à¤¨à¤¾à¤šà¤¾ à¤…à¤—à¥à¤¨à¤¿ à¤¸à¤°à¥à¤µ à¤•à¤°à¥à¤®à¤¾à¤‚à¤¨à¤¾ à¤­à¤¸à¥à¤® à¤•à¤°à¤¤à¥‹. à¤­à¤—à¤µà¤‚à¤¤ à¤œà¥‡à¤µà¥à¤¹à¤¾ à¤§à¤°à¥à¤®à¤¾à¤šà¥‡ à¤¸à¤‚à¤°à¤•à¥à¤·à¤£ à¤•à¤°à¤£à¥à¤¯à¤¾à¤¸à¤¾à¤ à¥€ à¤…à¤µà¤¤à¤°à¤¤à¤¾à¤¤, à¤¤à¥‡à¤µà¥à¤¹à¤¾ à¤¤à¥‡ à¤•à¥ƒà¤ªà¥‡à¤¨à¥‡ à¤¯à¥‡à¤¤à¤¾à¤¤.',
+    5:  'à¤–à¤±à¥à¤¯à¤¾ à¤¸à¤‚à¤¨à¥à¤¯à¤¾à¤¸à¤¾à¤šà¤¾ à¤…à¤°à¥à¤¥ à¤®à¥à¤¹à¤£à¤œà¥‡ à¤®à¤¨à¤¾à¤¨à¥‡ à¤¸à¤¾à¤‚à¤¸à¤¾à¤°à¤¿à¤• à¤—à¥‹à¤·à¥à¤Ÿà¥€à¤‚à¤¶à¥€ à¤…à¤¨à¤¾à¤¸à¤•à¥à¤¤ à¤°à¤¾à¤¹à¤£à¥‡. à¤œà¤¸à¥‡ à¤•à¤®à¤³ à¤ªà¤¾à¤£à¥à¤¯à¤¾à¤µà¤° à¤°à¤¾à¤¹à¤¤à¥‡ à¤ªà¤£ à¤“à¤²à¥‡ à¤¹à¥‹à¤¤ à¤¨à¤¾à¤¹à¥€.',
+    6:  'à¤§à¥à¤¯à¤¾à¤¨à¤¾à¤šà¥à¤¯à¤¾ à¤¸à¤°à¤¾à¤µà¤¾à¤¨à¥‡ à¤®à¤¨ à¤¸à¥à¤¥à¤¿à¤° à¤¹à¥‹à¤¤à¥‡. à¤µà¤¾à¤±à¥à¤¯à¤¾à¤ªà¤¾à¤¸à¥‚à¤¨ à¤¦à¥‚à¤° à¤…à¤¸à¤²à¥‡à¤²à¥à¤¯à¤¾ à¤¦à¤¿à¤µà¥à¤¯à¤¾à¤ªà¥à¤°à¤®à¤¾à¤£à¥‡ à¤§à¥à¤¯à¤¾à¤¨à¤¸à¥à¤¥ à¤®à¤¨ à¤šà¤‚à¤šà¤² à¤¹à¥‹à¤¤ à¤¨à¤¾à¤¹à¥€.',
+    7:  'à¤œà¤¡ à¤ªà¥à¤°à¤•à¥ƒà¤¤à¥€ à¤†à¤£à¤¿ à¤šà¥‡à¤¤à¤¨ à¤†à¤¤à¥à¤®à¤¾ à¤¯à¤¾à¤‚à¤šà¥‡ à¤œà¥à¤žà¤¾à¤¨ à¤¹à¥€à¤š à¤–à¤°à¥€ à¤µà¤¿à¤¦à¥à¤¯à¤¾ à¤†à¤¹à¥‡. à¤¸à¥‹à¤¨à¥à¤¯à¤¾à¤šà¥à¤¯à¤¾ à¤…à¤¨à¥‡à¤• à¤…à¤²à¤‚à¤•à¤¾à¤°à¤¾à¤‚à¤¤ à¤¸à¥‹à¤¨à¥‡à¤š à¤…à¤¸à¤¤à¥‡.',
+    8:  'à¤®à¥ƒà¤¤à¥à¤¯à¥à¤¸à¤®à¤¯à¥€ à¤œà¥‹ à¤ªà¤°à¤®à¥‡à¤¶à¥à¤µà¤°à¤¾à¤šà¥‡ à¤¸à¥à¤®à¤°à¤£ à¤•à¤°à¤¤à¥‹, à¤¤à¥‹ à¤¤à¥à¤¯à¤¾à¤šà¥à¤¯à¤¾à¤•à¤¡à¥‡à¤š à¤œà¤¾à¤¤à¥‹. à¤¸à¥à¤—à¤‚à¤§à¥€ à¤µà¤¸à¥à¤¤à¥à¤°à¤¾à¤ªà¥à¤°à¤®à¤¾à¤£à¥‡ à¤¸à¤¤à¤¤ à¤­à¤•à¥à¤¤à¥€ à¤®à¤¨à¤¾à¤²à¤¾ à¤ªà¤µà¤¿à¤¤à¥à¤° à¤ à¥‡à¤µà¤¤à¥‡.',
+    9:  'à¤­à¤—à¤µà¤‚à¤¤ à¤œà¤—à¤¾à¤²à¤¾ à¤§à¤¾à¤°à¤£ à¤•à¤°à¤¤à¥‹ à¤ªà¤£ à¤œà¤—à¤¾à¤¨à¥‡ à¤¬à¤¾à¤‚à¤§à¤²à¤¾ à¤œà¤¾à¤¤ à¤¨à¤¾à¤¹à¥€. à¤ªà¤¤à¥à¤°, à¤ªà¥à¤·à¥à¤ª, à¤«à¤², à¤œà¤²à¤¾à¤šà¥‡ à¤¨à¤¿à¤·à¥à¤•à¤¾à¤® à¤…à¤°à¥à¤ªà¤£ à¤­à¤—à¤µà¤‚à¤¤ à¤ªà¥à¤°à¥‡à¤®à¤¾à¤¨à¥‡ à¤¸à¥à¤µà¥€à¤•à¤¾à¤°à¤¤à¥‹.',
+    10: 'à¤œà¥‡ à¤‰à¤¤à¥à¤•à¥ƒà¤·à¥à¤Ÿ à¤†à¤¹à¥‡ à¤¤à¥à¤¯à¤¾ à¤¸à¤°à¥à¤µà¤¾à¤‚à¤¤ à¤ˆà¤¶à¥à¤µà¤° à¤†à¤¹à¥‡. à¤¨à¤¦à¥à¤¯à¤¾à¤‚à¤®à¤§à¥à¤¯à¥‡ à¤—à¤‚à¤—à¤¾, à¤ªà¥à¤°à¤•à¤¾à¤¶à¤¾à¤‚à¤¤ à¤¸à¥‚à¤°à¥à¤¯ â€” à¤¸à¤°à¥à¤µ à¤µà¤¿à¤­à¥‚à¤¤à¥€ à¤à¤•à¤¾à¤š à¤ªà¤°à¤®à¥‡à¤¶à¥à¤µà¤°à¤¾à¤šà¥à¤¯à¤¾ à¤ªà¥à¤°à¤•à¤Ÿ à¤°à¥‚à¤ªà¥‡ à¤†à¤¹à¥‡à¤¤.',
+    11: 'à¤µà¤¿à¤¶à¥à¤µà¤°à¥‚à¤ª à¤®à¥à¤¹à¤£à¤œà¥‡ à¤¸à¤®à¤—à¥à¤° à¤¸à¥ƒà¤·à¥à¤Ÿà¥€à¤š à¤à¤•à¤¾à¤š à¤ˆà¤¶à¥à¤µà¤°à¤¾à¤šà¥‡ à¤¶à¤°à¥€à¤° à¤†à¤¹à¥‡. à¤…à¤°à¥à¤œà¥à¤¨à¤¾à¤²à¤¾ à¤¦à¤¿à¤µà¥à¤¯ à¤¦à¥ƒà¤·à¥à¤Ÿà¥€ à¤®à¤¿à¤³à¤¾à¤²à¥€ à¤†à¤£à¤¿ à¤¤à¥‹ à¤¸à¥à¤¤à¤¬à¥à¤§ à¤à¤¾à¤²à¤¾.',
+    12: 'à¤­à¤•à¥à¤¤à¤¿à¤¯à¥‹à¤— à¤¹à¤¾ à¤¸à¤°à¥à¤µà¤¾à¤¤ à¤¸à¥à¤²à¤­ à¤®à¤¾à¤°à¥à¤— à¤†à¤¹à¥‡. à¤œà¤¸à¥‡ à¤¨à¤¦à¥€ à¤¸à¤®à¥à¤¦à¥à¤°à¤¾à¤²à¤¾ à¤­à¥‡à¤Ÿà¥‡à¤ªà¤°à¥à¤¯à¤‚à¤¤ à¤µà¤¿à¤¶à¥à¤°à¤¾à¤® à¤˜à¥‡à¤¤ à¤¨à¤¾à¤¹à¥€, à¤¤à¤¸à¥‡ à¤­à¤•à¥à¤¤ à¤ˆà¤¶à¥à¤µà¤°à¤¾à¤¤ à¤µà¤¿à¤²à¥€à¤¨ à¤¹à¥‹à¤ˆà¤ªà¤°à¥à¤¯à¤‚à¤¤ à¤¥à¤¾à¤‚à¤¬à¤¤ à¤¨à¤¾à¤¹à¥€.',
+    13: 'à¤¶à¤°à¥€à¤° à¤¹à¥‡ à¤•à¥à¤·à¥‡à¤¤à¥à¤° à¤†à¤¹à¥‡ à¤†à¤£à¤¿ à¤†à¤¤à¥à¤®à¤¾ à¤•à¥à¤·à¥‡à¤¤à¥à¤°à¤œà¥à¤ž à¤†à¤¹à¥‡. à¤œà¤¸à¥‡ à¤†à¤•à¤¾à¤¶ à¤˜à¤¡à¥à¤¯à¤¾à¤¤ à¤…à¤¸à¤²à¥à¤¯à¤¾à¤¸à¤¾à¤°à¤–à¥‡ à¤¦à¤¿à¤¸à¤¤à¥‡ à¤ªà¤£ à¤˜à¤¡à¥à¤¯à¤¾à¤ªà¥‡à¤•à¥à¤·à¤¾ à¤µà¥‡à¤—à¤³à¥‡ à¤…à¤¸à¤¤à¥‡, à¤¤à¤¸à¥‡ à¤†à¤¤à¥à¤®à¤¾ à¤¶à¤°à¥€à¤°à¤¾à¤ªà¥‡à¤•à¥à¤·à¤¾ à¤µà¥‡à¤—à¤³à¤¾ à¤†à¤¹à¥‡.',
+    14: 'à¤¸à¤¤à¥à¤¤à¥à¤µ, à¤°à¤œ, à¤¤à¤® à¤¹à¥‡ à¤¤à¥€à¤¨ à¤—à¥à¤£ à¤®à¥à¤¹à¤£à¤œà¥‡ à¤ªà¥à¤°à¤•à¥ƒà¤¤à¥€à¤šà¥‡ à¤¤à¥€à¤¨ à¤§à¤¾à¤—à¥‡ à¤†à¤¹à¥‡à¤¤. à¤¸à¥‹à¤¨à¥à¤¯à¤¾à¤šà¥€ à¤¸à¤¾à¤–à¤³à¥€ à¤…à¤¸à¤²à¥€ à¤¤à¤°à¥€ à¤¸à¤¾à¤–à¤³à¥€à¤š à¤…à¤¸à¤¤à¥‡ â€” à¤¸à¤¤à¥à¤¤à¥à¤µà¤—à¥à¤£à¤¹à¥€ à¤¬à¤¾à¤‚à¤§à¤¤à¥‹.',
+    15: 'à¤¸à¤‚à¤¸à¤¾à¤° à¤µà¥ƒà¤•à¥à¤·à¤¾à¤šà¥€ à¤®à¥à¤³à¥‡ à¤µà¤° à¤†à¤¹à¥‡à¤¤, à¤«à¤¾à¤‚à¤¦à¥à¤¯à¤¾ à¤–à¤¾à¤²à¥€ à¤†à¤¹à¥‡à¤¤. à¤¹à¤¾ à¤µà¥ƒà¤•à¥à¤· à¤…à¤¨à¤¾à¤¸à¤•à¥à¤¤à¥€à¤šà¥à¤¯à¤¾ à¤¤à¤²à¤µà¤¾à¤°à¥€à¤¨à¥‡ à¤¤à¥‹à¤¡à¥‚à¤¨ à¤†à¤¤à¥à¤®à¤œà¥à¤žà¤¾à¤¨à¤¾à¤¤ à¤¸à¥à¤¥à¤¿à¤° à¤µà¥à¤¹à¤¾à¤µà¥‡.',
+    16: 'à¤¦à¥ˆà¤µà¥€ à¤—à¥à¤£ à¤®à¥‹à¤•à¥à¤·à¤¾à¤•à¤¡à¥‡ à¤¨à¥‡à¤¤à¤¾à¤¤ à¤†à¤£à¤¿ à¤†à¤¸à¥à¤°à¥€ à¤—à¥à¤£ à¤¬à¤‚à¤§à¤¨à¤¾à¤•à¤¡à¥‡ à¤¨à¥‡à¤¤à¤¾à¤¤. à¤¸à¥à¤µà¤¤à¤ƒà¤¤à¥€à¤² à¤…à¤¯à¥‹à¤—à¥à¤¯ à¤µà¥ƒà¤¤à¥à¤¤à¥€ à¤“à¤³à¤–à¤£à¥‡ à¤¹à¥€à¤š à¤–à¤°à¥€ à¤¸à¤¾à¤§à¤¨à¤¾.',
+    17: 'à¤¶à¥à¤°à¤¦à¥à¤§à¤¾ à¤¹à¥€ à¤¸à¤¾à¤§à¤¨à¥‡à¤šà¤¾ à¤ªà¤¾à¤¯à¤¾ à¤†à¤¹à¥‡. à¤œà¤¸à¥‡ à¤®à¤¾à¤¤à¥€à¤šà¥€ à¤—à¥à¤£à¤µà¤¤à¥à¤¤à¤¾ à¤ªà¥€à¤•à¤¾à¤µà¤° à¤ªà¤°à¤¿à¤£à¤¾à¤® à¤•à¤°à¤¤à¥‡, à¤¤à¤¸à¥‡ à¤¶à¥à¤°à¤¦à¥à¤§à¥‡à¤šà¥€ à¤—à¥à¤£à¤µà¤¤à¥à¤¤à¤¾ à¤¸à¤¾à¤§à¤¨à¥‡à¤µà¤° à¤ªà¤°à¤¿à¤£à¤¾à¤® à¤•à¤°à¤¤à¥‡.',
+    18: 'à¤®à¥‹à¤•à¥à¤· à¤®à¥à¤¹à¤£à¤œà¥‡ à¤•à¤°à¥à¤®à¤¾à¤šà¤¾ à¤…à¤‚à¤¤ à¤¨à¤¾à¤¹à¥€, à¤¤à¤° à¤•à¤°à¥à¤¤à¥‡à¤ªà¤£à¤¾à¤šà¤¾ à¤…à¤‚à¤¤ à¤†à¤¹à¥‡. à¤¥à¥‡à¤‚à¤¬ à¤¸à¤¾à¤—à¤°à¤¾à¤¤ à¤µà¤¿à¤²à¥€à¤¨ à¤¹à¥‹à¤¤à¥‹ â€” à¤¤à¥‹à¤š à¤®à¥‹à¤•à¥à¤·. à¤œà¥à¤žà¤¾à¤¨à¥‡à¤¶à¥à¤µà¤° à¤®à¤¾à¤Šà¤²à¥€à¤‚à¤¨à¤¾ à¤¸à¤¾à¤·à¥à¤Ÿà¤¾à¤‚à¤— à¤¨à¤®à¤¨.',
   };
 
   const marathiBody = marathiThemes[chapterNum] || marathiThemes[1];
 
   const marathiClosings = [
-    ` हे वचन सदा हृदयात धारण कर.`,
-    ` ज्ञानदेवांची कृपा साधकावर असो.`,
-    ` हे ऐकून अर्जुनाचे मन प्रसन्न झाले.`,
-    ` या अमृतवाणीने साधकाचे जीवन धन्य होते.`,
-    ` माऊली म्हणतात — हेच परम सत्य आहे.`,
+    ` à¤¹à¥‡ à¤µà¤šà¤¨ à¤¸à¤¦à¤¾ à¤¹à¥ƒà¤¦à¤¯à¤¾à¤¤ à¤§à¤¾à¤°à¤£ à¤•à¤°.`,
+    ` à¤œà¥à¤žà¤¾à¤¨à¤¦à¥‡à¤µà¤¾à¤‚à¤šà¥€ à¤•à¥ƒà¤ªà¤¾ à¤¸à¤¾à¤§à¤•à¤¾à¤µà¤° à¤…à¤¸à¥‹.`,
+    ` à¤¹à¥‡ à¤à¤•à¥‚à¤¨ à¤…à¤°à¥à¤œà¥à¤¨à¤¾à¤šà¥‡ à¤®à¤¨ à¤ªà¥à¤°à¤¸à¤¨à¥à¤¨ à¤à¤¾à¤²à¥‡.`,
+    ` à¤¯à¤¾ à¤…à¤®à¥ƒà¤¤à¤µà¤¾à¤£à¥€à¤¨à¥‡ à¤¸à¤¾à¤§à¤•à¤¾à¤šà¥‡ à¤œà¥€à¤µà¤¨ à¤§à¤¨à¥à¤¯ à¤¹à¥‹à¤¤à¥‡.`,
+    ` à¤®à¤¾à¤Šà¤²à¥€ à¤®à¥à¤¹à¤£à¤¤à¤¾à¤¤ â€” à¤¹à¥‡à¤š à¤ªà¤°à¤® à¤¸à¤¤à¥à¤¯ à¤†à¤¹à¥‡.`,
   ];
   const closing = marathiClosings[verseIndex % marathiClosings.length];
 
   return `${opening} ${marathiBody}${closing}`.replace(/\\s+/g, ' ').trim();
 }
 
-// ─── Main injection loop ──────────────────────────────────────────────────────
+// â”€â”€â”€ Main injection loop â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const goldDir = path.join(__dirname, '..', 'data', '3-gold', 'bhagavad-gita');
 
 let totalVersesProcessed = 0;
@@ -1373,14 +1373,14 @@ for (let ch = 1; ch <= 18; ch++) {
   totalLayersAdded     += chapterLayersAdded;
   chaptersUpdated++;
 
-  console.log(`  Ch${ch.toString().padStart(2, '0')} ✓  ${verses.length} verses  +${chapterLayersAdded} Dnyaneshwari layers`);
+  console.log(`  Ch${ch.toString().padStart(2, '0')} âœ“  ${verses.length} verses  +${chapterLayersAdded} Dnyaneshwari layers`);
 }
 
-console.log('\\n═══════════════════════════════════════════');
+console.log('\\nâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•');
 console.log(`  COMPLETE: ${chaptersUpdated}/18 chapters updated`);
 console.log(`  Verses processed : ${totalVersesProcessed}`);
 console.log(`  Layers added     : ${totalLayersAdded} (en + mr per verse)`);
-console.log('═══════════════════════════════════════════\\n');
+console.log('â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•\\n');
 
 """
 
@@ -1398,7 +1398,7 @@ REBUILD_GITA_MULTILANG_JS = """
  *    authentic-style Hindi summaries drawn from Dnyaneshwari chapter themes.
  *
  * Language strategy:
- *   - ISKCON EN: real Prabhupada purport — NEVER touched.
+ *   - ISKCON EN: real Prabhupada purport â€” NEVER touched.
  *   - ISKCON HI: clean Hindi summary of verse spiritual insight. Zero English.
  *   - ISKCON MR: clean Marathi summary. Zero English.
  *   - sant-dnyaneshwar EN: keep existing contextual synthesis.
@@ -1415,349 +1415,349 @@ const path = require('path');
 
 const GOLD_DIR = path.join(__dirname, '..', 'data', '3-gold', 'bhagavad-gita');
 
-// ─── Chapter context ──────────────────────────────────────────────────────────
+// â”€â”€â”€ Chapter context â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 const CH_CONTEXT = {
   1:  {
-    title_hi: 'अर्जुन-विषाद-योग',
-    title_mr: 'अर्जुन-विषाद-योग',
-    theme_hi: 'अर्जुन का शोक और कर्तव्य-संकट',
-    theme_mr: 'अर्जुनाचा शोक आणि कर्तव्य-संकट',
+    title_hi: 'à¤…à¤°à¥à¤œà¥à¤¨-à¤µà¤¿à¤·à¤¾à¤¦-à¤¯à¥‹à¤—',
+    title_mr: 'à¤…à¤°à¥à¤œà¥à¤¨-à¤µà¤¿à¤·à¤¾à¤¦-à¤¯à¥‹à¤—',
+    theme_hi: 'à¤…à¤°à¥à¤œà¥à¤¨ à¤•à¤¾ à¤¶à¥‹à¤• à¤”à¤° à¤•à¤°à¥à¤¤à¤µà¥à¤¯-à¤¸à¤‚à¤•à¤Ÿ',
+    theme_mr: 'à¤…à¤°à¥à¤œà¥à¤¨à¤¾à¤šà¤¾ à¤¶à¥‹à¤• à¤†à¤£à¤¿ à¤•à¤°à¥à¤¤à¤µà¥à¤¯-à¤¸à¤‚à¤•à¤Ÿ',
     insight_hi: [
-      'इस अध्याय में अर्जुन अपने बंधु-बांधवों को सामने देखकर मोह से ग्रस्त हो जाता है। यह मोह ही जीव के संसार-बंधन का कारण है। श्रील प्रभुपाद बताते हैं कि जब साधक स्वयं को शरीर मानने लगता है, तो माया की पकड़ गहरी हो जाती है। कुरुक्षेत्र का रणांगण वास्तव में धर्मक्षेत्र है, जहाँ भगवान स्वयं उपस्थित हैं।',
-      'धर्म और कर्तव्य के बीच द्वंद्व में अर्जुन दिशाहीन हो जाता है। यही वह क्षण है जब जीव को सच्चे गुरु की आवश्यकता होती है। भगवान श्रीकृष्ण इसी क्षण अपना दिव्य ज्ञान प्रकट करते हैं। भक्ति के बिना ज्ञान अधूरा है।',
-      'युद्ध का भय और स्वजन-प्रेम अर्जुन को कमज़ोर बनाता है। परंतु श्रील प्रभुपाद स्मरण दिलाते हैं कि आत्मा अजर और अमर है। शरीर की मृत्यु से आत्मा का कोई नाश नहीं होता। यह ज्ञान ही गीता का केंद्रीय सन्देश है।',
-      'संसार में सभी संबंध अनित्य हैं, केवल परमात्मा के साथ संबंध शाश्वत है। अर्जुन का विषाद एक साधक के हृदय का प्रथम जागरण है। इस जागरण के बिना भगवान का उपदेश ग्रहण करना संभव नहीं।',
+      'à¤‡à¤¸ à¤…à¤§à¥à¤¯à¤¾à¤¯ à¤®à¥‡à¤‚ à¤…à¤°à¥à¤œà¥à¤¨ à¤…à¤ªà¤¨à¥‡ à¤¬à¤‚à¤§à¥-à¤¬à¤¾à¤‚à¤§à¤µà¥‹à¤‚ à¤•à¥‹ à¤¸à¤¾à¤®à¤¨à¥‡ à¤¦à¥‡à¤–à¤•à¤° à¤®à¥‹à¤¹ à¤¸à¥‡ à¤—à¥à¤°à¤¸à¥à¤¤ à¤¹à¥‹ à¤œà¤¾à¤¤à¤¾ à¤¹à¥ˆà¥¤ à¤¯à¤¹ à¤®à¥‹à¤¹ à¤¹à¥€ à¤œà¥€à¤µ à¤•à¥‡ à¤¸à¤‚à¤¸à¤¾à¤°-à¤¬à¤‚à¤§à¤¨ à¤•à¤¾ à¤•à¤¾à¤°à¤£ à¤¹à¥ˆà¥¤ à¤¶à¥à¤°à¥€à¤² à¤ªà¥à¤°à¤­à¥à¤ªà¤¾à¤¦ à¤¬à¤¤à¤¾à¤¤à¥‡ à¤¹à¥ˆà¤‚ à¤•à¤¿ à¤œà¤¬ à¤¸à¤¾à¤§à¤• à¤¸à¥à¤µà¤¯à¤‚ à¤•à¥‹ à¤¶à¤°à¥€à¤° à¤®à¤¾à¤¨à¤¨à¥‡ à¤²à¤—à¤¤à¤¾ à¤¹à¥ˆ, à¤¤à¥‹ à¤®à¤¾à¤¯à¤¾ à¤•à¥€ à¤ªà¤•à¤¡à¤¼ à¤—à¤¹à¤°à¥€ à¤¹à¥‹ à¤œà¤¾à¤¤à¥€ à¤¹à¥ˆà¥¤ à¤•à¥à¤°à¥à¤•à¥à¤·à¥‡à¤¤à¥à¤° à¤•à¤¾ à¤°à¤£à¤¾à¤‚à¤—à¤£ à¤µà¤¾à¤¸à¥à¤¤à¤µ à¤®à¥‡à¤‚ à¤§à¤°à¥à¤®à¤•à¥à¤·à¥‡à¤¤à¥à¤° à¤¹à¥ˆ, à¤œà¤¹à¤¾à¤ à¤­à¤—à¤µà¤¾à¤¨ à¤¸à¥à¤µà¤¯à¤‚ à¤‰à¤ªà¤¸à¥à¤¥à¤¿à¤¤ à¤¹à¥ˆà¤‚à¥¤',
+      'à¤§à¤°à¥à¤® à¤”à¤° à¤•à¤°à¥à¤¤à¤µà¥à¤¯ à¤•à¥‡ à¤¬à¥€à¤š à¤¦à¥à¤µà¤‚à¤¦à¥à¤µ à¤®à¥‡à¤‚ à¤…à¤°à¥à¤œà¥à¤¨ à¤¦à¤¿à¤¶à¤¾à¤¹à¥€à¤¨ à¤¹à¥‹ à¤œà¤¾à¤¤à¤¾ à¤¹à¥ˆà¥¤ à¤¯à¤¹à¥€ à¤µà¤¹ à¤•à¥à¤·à¤£ à¤¹à¥ˆ à¤œà¤¬ à¤œà¥€à¤µ à¤•à¥‹ à¤¸à¤šà¥à¤šà¥‡ à¤—à¥à¤°à¥ à¤•à¥€ à¤†à¤µà¤¶à¥à¤¯à¤•à¤¤à¤¾ à¤¹à¥‹à¤¤à¥€ à¤¹à¥ˆà¥¤ à¤­à¤—à¤µà¤¾à¤¨ à¤¶à¥à¤°à¥€à¤•à¥ƒà¤·à¥à¤£ à¤‡à¤¸à¥€ à¤•à¥à¤·à¤£ à¤…à¤ªà¤¨à¤¾ à¤¦à¤¿à¤µà¥à¤¯ à¤œà¥à¤žà¤¾à¤¨ à¤ªà¥à¤°à¤•à¤Ÿ à¤•à¤°à¤¤à¥‡ à¤¹à¥ˆà¤‚à¥¤ à¤­à¤•à¥à¤¤à¤¿ à¤•à¥‡ à¤¬à¤¿à¤¨à¤¾ à¤œà¥à¤žà¤¾à¤¨ à¤…à¤§à¥‚à¤°à¤¾ à¤¹à¥ˆà¥¤',
+      'à¤¯à¥à¤¦à¥à¤§ à¤•à¤¾ à¤­à¤¯ à¤”à¤° à¤¸à¥à¤µà¤œà¤¨-à¤ªà¥à¤°à¥‡à¤® à¤…à¤°à¥à¤œà¥à¤¨ à¤•à¥‹ à¤•à¤®à¤œà¤¼à¥‹à¤° à¤¬à¤¨à¤¾à¤¤à¤¾ à¤¹à¥ˆà¥¤ à¤ªà¤°à¤‚à¤¤à¥ à¤¶à¥à¤°à¥€à¤² à¤ªà¥à¤°à¤­à¥à¤ªà¤¾à¤¦ à¤¸à¥à¤®à¤°à¤£ à¤¦à¤¿à¤²à¤¾à¤¤à¥‡ à¤¹à¥ˆà¤‚ à¤•à¤¿ à¤†à¤¤à¥à¤®à¤¾ à¤…à¤œà¤° à¤”à¤° à¤…à¤®à¤° à¤¹à¥ˆà¥¤ à¤¶à¤°à¥€à¤° à¤•à¥€ à¤®à¥ƒà¤¤à¥à¤¯à¥ à¤¸à¥‡ à¤†à¤¤à¥à¤®à¤¾ à¤•à¤¾ à¤•à¥‹à¤ˆ à¤¨à¤¾à¤¶ à¤¨à¤¹à¥€à¤‚ à¤¹à¥‹à¤¤à¤¾à¥¤ à¤¯à¤¹ à¤œà¥à¤žà¤¾à¤¨ à¤¹à¥€ à¤—à¥€à¤¤à¤¾ à¤•à¤¾ à¤•à¥‡à¤‚à¤¦à¥à¤°à¥€à¤¯ à¤¸à¤¨à¥à¤¦à¥‡à¤¶ à¤¹à¥ˆà¥¤',
+      'à¤¸à¤‚à¤¸à¤¾à¤° à¤®à¥‡à¤‚ à¤¸à¤­à¥€ à¤¸à¤‚à¤¬à¤‚à¤§ à¤…à¤¨à¤¿à¤¤à¥à¤¯ à¤¹à¥ˆà¤‚, à¤•à¥‡à¤µà¤² à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¤¾ à¤•à¥‡ à¤¸à¤¾à¤¥ à¤¸à¤‚à¤¬à¤‚à¤§ à¤¶à¤¾à¤¶à¥à¤µà¤¤ à¤¹à¥ˆà¥¤ à¤…à¤°à¥à¤œà¥à¤¨ à¤•à¤¾ à¤µà¤¿à¤·à¤¾à¤¦ à¤à¤• à¤¸à¤¾à¤§à¤• à¤•à¥‡ à¤¹à¥ƒà¤¦à¤¯ à¤•à¤¾ à¤ªà¥à¤°à¤¥à¤® à¤œà¤¾à¤—à¤°à¤£ à¤¹à¥ˆà¥¤ à¤‡à¤¸ à¤œà¤¾à¤—à¤°à¤£ à¤•à¥‡ à¤¬à¤¿à¤¨à¤¾ à¤­à¤—à¤µà¤¾à¤¨ à¤•à¤¾ à¤‰à¤ªà¤¦à¥‡à¤¶ à¤—à¥à¤°à¤¹à¤£ à¤•à¤°à¤¨à¤¾ à¤¸à¤‚à¤­à¤µ à¤¨à¤¹à¥€à¤‚à¥¤',
     ],
     insight_mr: [
-      'या अध्यायात अर्जुन आपल्या स्वजनांना समोर पाहून मोहाने ग्रस्त होतो. हा मोहच जिवाच्या संसार-बंधनाचे कारण आहे. श्रील प्रभुपाद सांगतात की जेव्हा साधक स्वतःला शरीर मानू लागतो, तेव्हा मायेची पकड घट्ट होते.',
-      'धर्म आणि कर्तव्य यांच्यातील द्वंद्वात अर्जुन दिशाहीन होतो. हाच तो क्षण आहे जेव्हा जिवाला खऱ्या गुरूची गरज असते. भगवान श्रीकृष्ण याच क्षणी दिव्य ज्ञान प्रकट करतात.',
-      'युद्धाची भीती आणि स्वजन-प्रेम अर्जुनाला दुर्बल बनवतो. परंतु श्रील प्रभुपाद स्मरण करून देतात की आत्मा अजर आणि अमर आहे. शरीराच्या मृत्यूने आत्म्याचा नाश होत नाही.',
-      'संसारातील सर्व नाती अनित्य आहेत, केवळ परमात्म्याशी नाते शाश्वत आहे. अर्जुनाचा विषाद हे साधकाच्या हृदयाचे पहिले जागरण आहे.',
+      'à¤¯à¤¾ à¤…à¤§à¥à¤¯à¤¾à¤¯à¤¾à¤¤ à¤…à¤°à¥à¤œà¥à¤¨ à¤†à¤ªà¤²à¥à¤¯à¤¾ à¤¸à¥à¤µà¤œà¤¨à¤¾à¤‚à¤¨à¤¾ à¤¸à¤®à¥‹à¤° à¤ªà¤¾à¤¹à¥‚à¤¨ à¤®à¥‹à¤¹à¤¾à¤¨à¥‡ à¤—à¥à¤°à¤¸à¥à¤¤ à¤¹à¥‹à¤¤à¥‹. à¤¹à¤¾ à¤®à¥‹à¤¹à¤š à¤œà¤¿à¤µà¤¾à¤šà¥à¤¯à¤¾ à¤¸à¤‚à¤¸à¤¾à¤°-à¤¬à¤‚à¤§à¤¨à¤¾à¤šà¥‡ à¤•à¤¾à¤°à¤£ à¤†à¤¹à¥‡. à¤¶à¥à¤°à¥€à¤² à¤ªà¥à¤°à¤­à¥à¤ªà¤¾à¤¦ à¤¸à¤¾à¤‚à¤—à¤¤à¤¾à¤¤ à¤•à¥€ à¤œà¥‡à¤µà¥à¤¹à¤¾ à¤¸à¤¾à¤§à¤• à¤¸à¥à¤µà¤¤à¤ƒà¤²à¤¾ à¤¶à¤°à¥€à¤° à¤®à¤¾à¤¨à¥‚ à¤²à¤¾à¤—à¤¤à¥‹, à¤¤à¥‡à¤µà¥à¤¹à¤¾ à¤®à¤¾à¤¯à¥‡à¤šà¥€ à¤ªà¤•à¤¡ à¤˜à¤Ÿà¥à¤Ÿ à¤¹à¥‹à¤¤à¥‡.',
+      'à¤§à¤°à¥à¤® à¤†à¤£à¤¿ à¤•à¤°à¥à¤¤à¤µà¥à¤¯ à¤¯à¤¾à¤‚à¤šà¥à¤¯à¤¾à¤¤à¥€à¤² à¤¦à¥à¤µà¤‚à¤¦à¥à¤µà¤¾à¤¤ à¤…à¤°à¥à¤œà¥à¤¨ à¤¦à¤¿à¤¶à¤¾à¤¹à¥€à¤¨ à¤¹à¥‹à¤¤à¥‹. à¤¹à¤¾à¤š à¤¤à¥‹ à¤•à¥à¤·à¤£ à¤†à¤¹à¥‡ à¤œà¥‡à¤µà¥à¤¹à¤¾ à¤œà¤¿à¤µà¤¾à¤²à¤¾ à¤–à¤±à¥à¤¯à¤¾ à¤—à¥à¤°à¥‚à¤šà¥€ à¤—à¤°à¤œ à¤…à¤¸à¤¤à¥‡. à¤­à¤—à¤µà¤¾à¤¨ à¤¶à¥à¤°à¥€à¤•à¥ƒà¤·à¥à¤£ à¤¯à¤¾à¤š à¤•à¥à¤·à¤£à¥€ à¤¦à¤¿à¤µà¥à¤¯ à¤œà¥à¤žà¤¾à¤¨ à¤ªà¥à¤°à¤•à¤Ÿ à¤•à¤°à¤¤à¤¾à¤¤.',
+      'à¤¯à¥à¤¦à¥à¤§à¤¾à¤šà¥€ à¤­à¥€à¤¤à¥€ à¤†à¤£à¤¿ à¤¸à¥à¤µà¤œà¤¨-à¤ªà¥à¤°à¥‡à¤® à¤…à¤°à¥à¤œà¥à¤¨à¤¾à¤²à¤¾ à¤¦à¥à¤°à¥à¤¬à¤² à¤¬à¤¨à¤µà¤¤à¥‹. à¤ªà¤°à¤‚à¤¤à¥ à¤¶à¥à¤°à¥€à¤² à¤ªà¥à¤°à¤­à¥à¤ªà¤¾à¤¦ à¤¸à¥à¤®à¤°à¤£ à¤•à¤°à¥‚à¤¨ à¤¦à¥‡à¤¤à¤¾à¤¤ à¤•à¥€ à¤†à¤¤à¥à¤®à¤¾ à¤…à¤œà¤° à¤†à¤£à¤¿ à¤…à¤®à¤° à¤†à¤¹à¥‡. à¤¶à¤°à¥€à¤°à¤¾à¤šà¥à¤¯à¤¾ à¤®à¥ƒà¤¤à¥à¤¯à¥‚à¤¨à¥‡ à¤†à¤¤à¥à¤®à¥à¤¯à¤¾à¤šà¤¾ à¤¨à¤¾à¤¶ à¤¹à¥‹à¤¤ à¤¨à¤¾à¤¹à¥€.',
+      'à¤¸à¤‚à¤¸à¤¾à¤°à¤¾à¤¤à¥€à¤² à¤¸à¤°à¥à¤µ à¤¨à¤¾à¤¤à¥€ à¤…à¤¨à¤¿à¤¤à¥à¤¯ à¤†à¤¹à¥‡à¤¤, à¤•à¥‡à¤µà¤³ à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¥à¤¯à¤¾à¤¶à¥€ à¤¨à¤¾à¤¤à¥‡ à¤¶à¤¾à¤¶à¥à¤µà¤¤ à¤†à¤¹à¥‡. à¤…à¤°à¥à¤œà¥à¤¨à¤¾à¤šà¤¾ à¤µà¤¿à¤·à¤¾à¤¦ à¤¹à¥‡ à¤¸à¤¾à¤§à¤•à¤¾à¤šà¥à¤¯à¤¾ à¤¹à¥ƒà¤¦à¤¯à¤¾à¤šà¥‡ à¤ªà¤¹à¤¿à¤²à¥‡ à¤œà¤¾à¤—à¤°à¤£ à¤†à¤¹à¥‡.',
     ],
     dn_hi: [
-      'ज्ञानदेव माऊली कहते हैं: अर्जुन का शोक आत्मज्ञान की पहली सीढ़ी है। जैसे रात्रि के अंधकार के बाद ही भोर होती है, वैसे ही विषाद के बाद ही विवेक का उदय होता है। शरीर युद्ध का मैदान है और मन योद्धा। इस सत्य को हृदय में धारण करो।',
-      'संत ज्ञानेश्वर फरमाते हैं: जो साधक इस श्लोक का मर्म समझ लेता है, उसके लिए जीवन का द्वंद्व सुलझ जाता है। कुरुक्षेत्र का रणांगण हमारे अपने मन की प्रतीक है। पाण्डव धर्म की वृत्तियाँ हैं और कौरव अधर्म की।',
-      'ज्ञानेश्वरी में माऊली बताते हैं: परमात्मा सदा धर्मक्षेत्र में उपस्थित हैं। जब जीव सच्चे मन से पुकारता है, तो गुरु-रूप में परमात्मा मार्गदर्शन करते हैं। यही वारकरी परंपरा का सार है।',
+      'à¤œà¥à¤žà¤¾à¤¨à¤¦à¥‡à¤µ à¤®à¤¾à¤Šà¤²à¥€ à¤•à¤¹à¤¤à¥‡ à¤¹à¥ˆà¤‚: à¤…à¤°à¥à¤œà¥à¤¨ à¤•à¤¾ à¤¶à¥‹à¤• à¤†à¤¤à¥à¤®à¤œà¥à¤žà¤¾à¤¨ à¤•à¥€ à¤ªà¤¹à¤²à¥€ à¤¸à¥€à¤¢à¤¼à¥€ à¤¹à¥ˆà¥¤ à¤œà¥ˆà¤¸à¥‡ à¤°à¤¾à¤¤à¥à¤°à¤¿ à¤•à¥‡ à¤…à¤‚à¤§à¤•à¤¾à¤° à¤•à¥‡ à¤¬à¤¾à¤¦ à¤¹à¥€ à¤­à¥‹à¤° à¤¹à¥‹à¤¤à¥€ à¤¹à¥ˆ, à¤µà¥ˆà¤¸à¥‡ à¤¹à¥€ à¤µà¤¿à¤·à¤¾à¤¦ à¤•à¥‡ à¤¬à¤¾à¤¦ à¤¹à¥€ à¤µà¤¿à¤µà¥‡à¤• à¤•à¤¾ à¤‰à¤¦à¤¯ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆà¥¤ à¤¶à¤°à¥€à¤° à¤¯à¥à¤¦à¥à¤§ à¤•à¤¾ à¤®à¥ˆà¤¦à¤¾à¤¨ à¤¹à¥ˆ à¤”à¤° à¤®à¤¨ à¤¯à¥‹à¤¦à¥à¤§à¤¾à¥¤ à¤‡à¤¸ à¤¸à¤¤à¥à¤¯ à¤•à¥‹ à¤¹à¥ƒà¤¦à¤¯ à¤®à¥‡à¤‚ à¤§à¤¾à¤°à¤£ à¤•à¤°à¥‹à¥¤',
+      'à¤¸à¤‚à¤¤ à¤œà¥à¤žà¤¾à¤¨à¥‡à¤¶à¥à¤µà¤° à¤«à¤°à¤®à¤¾à¤¤à¥‡ à¤¹à¥ˆà¤‚: à¤œà¥‹ à¤¸à¤¾à¤§à¤• à¤‡à¤¸ à¤¶à¥à¤²à¥‹à¤• à¤•à¤¾ à¤®à¤°à¥à¤® à¤¸à¤®à¤ à¤²à¥‡à¤¤à¤¾ à¤¹à¥ˆ, à¤‰à¤¸à¤•à¥‡ à¤²à¤¿à¤ à¤œà¥€à¤µà¤¨ à¤•à¤¾ à¤¦à¥à¤µà¤‚à¤¦à¥à¤µ à¤¸à¥à¤²à¤ à¤œà¤¾à¤¤à¤¾ à¤¹à¥ˆà¥¤ à¤•à¥à¤°à¥à¤•à¥à¤·à¥‡à¤¤à¥à¤° à¤•à¤¾ à¤°à¤£à¤¾à¤‚à¤—à¤£ à¤¹à¤®à¤¾à¤°à¥‡ à¤…à¤ªà¤¨à¥‡ à¤®à¤¨ à¤•à¥€ à¤ªà¥à¤°à¤¤à¥€à¤• à¤¹à¥ˆà¥¤ à¤ªà¤¾à¤£à¥à¤¡à¤µ à¤§à¤°à¥à¤® à¤•à¥€ à¤µà¥ƒà¤¤à¥à¤¤à¤¿à¤¯à¤¾à¤ à¤¹à¥ˆà¤‚ à¤”à¤° à¤•à¥Œà¤°à¤µ à¤…à¤§à¤°à¥à¤® à¤•à¥€à¥¤',
+      'à¤œà¥à¤žà¤¾à¤¨à¥‡à¤¶à¥à¤µà¤°à¥€ à¤®à¥‡à¤‚ à¤®à¤¾à¤Šà¤²à¥€ à¤¬à¤¤à¤¾à¤¤à¥‡ à¤¹à¥ˆà¤‚: à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¤¾ à¤¸à¤¦à¤¾ à¤§à¤°à¥à¤®à¤•à¥à¤·à¥‡à¤¤à¥à¤° à¤®à¥‡à¤‚ à¤‰à¤ªà¤¸à¥à¤¥à¤¿à¤¤ à¤¹à¥ˆà¤‚à¥¤ à¤œà¤¬ à¤œà¥€à¤µ à¤¸à¤šà¥à¤šà¥‡ à¤®à¤¨ à¤¸à¥‡ à¤ªà¥à¤•à¤¾à¤°à¤¤à¤¾ à¤¹à¥ˆ, à¤¤à¥‹ à¤—à¥à¤°à¥-à¤°à¥‚à¤ª à¤®à¥‡à¤‚ à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¤¾ à¤®à¤¾à¤°à¥à¤—à¤¦à¤°à¥à¤¶à¤¨ à¤•à¤°à¤¤à¥‡ à¤¹à¥ˆà¤‚à¥¤ à¤¯à¤¹à¥€ à¤µà¤¾à¤°à¤•à¤°à¥€ à¤ªà¤°à¤‚à¤ªà¤°à¤¾ à¤•à¤¾ à¤¸à¤¾à¤° à¤¹à¥ˆà¥¤',
     ],
   },
   2:  {
-    title_hi: 'सांख्य-योग',
-    title_mr: 'सांख्य-योग',
-    theme_hi: 'आत्मा की अमरता और स्थितप्रज्ञ की महिमा',
-    theme_mr: 'आत्म्याची अमरता आणि स्थितप्रज्ञाचे लक्षण',
+    title_hi: 'à¤¸à¤¾à¤‚à¤–à¥à¤¯-à¤¯à¥‹à¤—',
+    title_mr: 'à¤¸à¤¾à¤‚à¤–à¥à¤¯-à¤¯à¥‹à¤—',
+    theme_hi: 'à¤†à¤¤à¥à¤®à¤¾ à¤•à¥€ à¤…à¤®à¤°à¤¤à¤¾ à¤”à¤° à¤¸à¥à¤¥à¤¿à¤¤à¤ªà¥à¤°à¤œà¥à¤ž à¤•à¥€ à¤®à¤¹à¤¿à¤®à¤¾',
+    theme_mr: 'à¤†à¤¤à¥à¤®à¥à¤¯à¤¾à¤šà¥€ à¤…à¤®à¤°à¤¤à¤¾ à¤†à¤£à¤¿ à¤¸à¥à¤¥à¤¿à¤¤à¤ªà¥à¤°à¤œà¥à¤žà¤¾à¤šà¥‡ à¤²à¤•à¥à¤·à¤£',
     insight_hi: [
-      'आत्मा न जन्म लेता है, न मरता है। वह नित्य, अजर और अविनाशी है। श्रील प्रभुपाद इस सत्य को गीता के केंद्रीय सिद्धांत के रूप में प्रस्तुत करते हैं। जब साधक इस ज्ञान को आत्मसात करता है, तो शोक और भय का नाश हो जाता है।',
-      'स्थितप्रज्ञ वह है जिसकी बुद्धि दुःख में विचलित नहीं होती और सुख में उत्साहित नहीं होती। यह समभाव ही मोक्ष का मार्ग है। श्रील प्रभुपाद बताते हैं कि यह अवस्था केवल भक्ति के द्वारा प्राप्त होती है।',
-      'कर्म करो, फल की आशा मत रखो — यही निष्काम कर्म का सार है। जब क्रिया ईश्वर को अर्पण हो जाती है, तब वह बंधन नहीं रहती। यही गीता का अमर सन्देश है।',
-      'आत्मा अग्नि से नहीं जलती, जल से नहीं भीगती, वायु से नहीं सूखती। यह शाश्वत सत्य जब हृदय में उतरता है, तो जीवन का भय मिट जाता है।',
+      'à¤†à¤¤à¥à¤®à¤¾ à¤¨ à¤œà¤¨à¥à¤® à¤²à¥‡à¤¤à¤¾ à¤¹à¥ˆ, à¤¨ à¤®à¤°à¤¤à¤¾ à¤¹à¥ˆà¥¤ à¤µà¤¹ à¤¨à¤¿à¤¤à¥à¤¯, à¤…à¤œà¤° à¤”à¤° à¤…à¤µà¤¿à¤¨à¤¾à¤¶à¥€ à¤¹à¥ˆà¥¤ à¤¶à¥à¤°à¥€à¤² à¤ªà¥à¤°à¤­à¥à¤ªà¤¾à¤¦ à¤‡à¤¸ à¤¸à¤¤à¥à¤¯ à¤•à¥‹ à¤—à¥€à¤¤à¤¾ à¤•à¥‡ à¤•à¥‡à¤‚à¤¦à¥à¤°à¥€à¤¯ à¤¸à¤¿à¤¦à¥à¤§à¤¾à¤‚à¤¤ à¤•à¥‡ à¤°à¥‚à¤ª à¤®à¥‡à¤‚ à¤ªà¥à¤°à¤¸à¥à¤¤à¥à¤¤ à¤•à¤°à¤¤à¥‡ à¤¹à¥ˆà¤‚à¥¤ à¤œà¤¬ à¤¸à¤¾à¤§à¤• à¤‡à¤¸ à¤œà¥à¤žà¤¾à¤¨ à¤•à¥‹ à¤†à¤¤à¥à¤®à¤¸à¤¾à¤¤ à¤•à¤°à¤¤à¤¾ à¤¹à¥ˆ, à¤¤à¥‹ à¤¶à¥‹à¤• à¤”à¤° à¤­à¤¯ à¤•à¤¾ à¤¨à¤¾à¤¶ à¤¹à¥‹ à¤œà¤¾à¤¤à¤¾ à¤¹à¥ˆà¥¤',
+      'à¤¸à¥à¤¥à¤¿à¤¤à¤ªà¥à¤°à¤œà¥à¤ž à¤µà¤¹ à¤¹à¥ˆ à¤œà¤¿à¤¸à¤•à¥€ à¤¬à¥à¤¦à¥à¤§à¤¿ à¤¦à¥à¤ƒà¤– à¤®à¥‡à¤‚ à¤µà¤¿à¤šà¤²à¤¿à¤¤ à¤¨à¤¹à¥€à¤‚ à¤¹à¥‹à¤¤à¥€ à¤”à¤° à¤¸à¥à¤– à¤®à¥‡à¤‚ à¤‰à¤¤à¥à¤¸à¤¾à¤¹à¤¿à¤¤ à¤¨à¤¹à¥€à¤‚ à¤¹à¥‹à¤¤à¥€à¥¤ à¤¯à¤¹ à¤¸à¤®à¤­à¤¾à¤µ à¤¹à¥€ à¤®à¥‹à¤•à¥à¤· à¤•à¤¾ à¤®à¤¾à¤°à¥à¤— à¤¹à¥ˆà¥¤ à¤¶à¥à¤°à¥€à¤² à¤ªà¥à¤°à¤­à¥à¤ªà¤¾à¤¦ à¤¬à¤¤à¤¾à¤¤à¥‡ à¤¹à¥ˆà¤‚ à¤•à¤¿ à¤¯à¤¹ à¤…à¤µà¤¸à¥à¤¥à¤¾ à¤•à¥‡à¤µà¤² à¤­à¤•à¥à¤¤à¤¿ à¤•à¥‡ à¤¦à¥à¤µà¤¾à¤°à¤¾ à¤ªà¥à¤°à¤¾à¤ªà¥à¤¤ à¤¹à¥‹à¤¤à¥€ à¤¹à¥ˆà¥¤',
+      'à¤•à¤°à¥à¤® à¤•à¤°à¥‹, à¤«à¤² à¤•à¥€ à¤†à¤¶à¤¾ à¤®à¤¤ à¤°à¤–à¥‹ â€” à¤¯à¤¹à¥€ à¤¨à¤¿à¤·à¥à¤•à¤¾à¤® à¤•à¤°à¥à¤® à¤•à¤¾ à¤¸à¤¾à¤° à¤¹à¥ˆà¥¤ à¤œà¤¬ à¤•à¥à¤°à¤¿à¤¯à¤¾ à¤ˆà¤¶à¥à¤µà¤° à¤•à¥‹ à¤…à¤°à¥à¤ªà¤£ à¤¹à¥‹ à¤œà¤¾à¤¤à¥€ à¤¹à¥ˆ, à¤¤à¤¬ à¤µà¤¹ à¤¬à¤‚à¤§à¤¨ à¤¨à¤¹à¥€à¤‚ à¤°à¤¹à¤¤à¥€à¥¤ à¤¯à¤¹à¥€ à¤—à¥€à¤¤à¤¾ à¤•à¤¾ à¤…à¤®à¤° à¤¸à¤¨à¥à¤¦à¥‡à¤¶ à¤¹à¥ˆà¥¤',
+      'à¤†à¤¤à¥à¤®à¤¾ à¤…à¤—à¥à¤¨à¤¿ à¤¸à¥‡ à¤¨à¤¹à¥€à¤‚ à¤œà¤²à¤¤à¥€, à¤œà¤² à¤¸à¥‡ à¤¨à¤¹à¥€à¤‚ à¤­à¥€à¤—à¤¤à¥€, à¤µà¤¾à¤¯à¥ à¤¸à¥‡ à¤¨à¤¹à¥€à¤‚ à¤¸à¥‚à¤–à¤¤à¥€à¥¤ à¤¯à¤¹ à¤¶à¤¾à¤¶à¥à¤µà¤¤ à¤¸à¤¤à¥à¤¯ à¤œà¤¬ à¤¹à¥ƒà¤¦à¤¯ à¤®à¥‡à¤‚ à¤‰à¤¤à¤°à¤¤à¤¾ à¤¹à¥ˆ, à¤¤à¥‹ à¤œà¥€à¤µà¤¨ à¤•à¤¾ à¤­à¤¯ à¤®à¤¿à¤Ÿ à¤œà¤¾à¤¤à¤¾ à¤¹à¥ˆà¥¤',
     ],
     insight_mr: [
-      'आत्मा जन्म घेत नाही, मरत नाही. तो नित्य, अजर आणि अविनाशी आहे. श्रील प्रभुपाद हे सत्य गीतेच्या केंद्रीय तत्त्वज्ञान म्हणून मांडतात.',
-      'स्थितप्रज्ञ तो आहे ज्याची बुद्धी दुःखात विचलित होत नाही आणि सुखात उत्साहित होत नाही. हे समभावच मोक्षाचा मार्ग आहे.',
-      'कर्म करा, फळाची अपेक्षा ठेवू नका — हेच निष्काम कर्माचे सार आहे. जेव्हा क्रिया ईश्वराला अर्पण होते, तेव्हा ती बंधन राहत नाही.',
-      'आत्मा अग्नीने जळत नाही, जलाने ओला होत नाही, वाऱ्याने सुकत नाही. हे शाश्वत सत्य जेव्हा हृदयात उतरते, तेव्हा जीवनाची भीती नष्ट होते.',
+      'à¤†à¤¤à¥à¤®à¤¾ à¤œà¤¨à¥à¤® à¤˜à¥‡à¤¤ à¤¨à¤¾à¤¹à¥€, à¤®à¤°à¤¤ à¤¨à¤¾à¤¹à¥€. à¤¤à¥‹ à¤¨à¤¿à¤¤à¥à¤¯, à¤…à¤œà¤° à¤†à¤£à¤¿ à¤…à¤µà¤¿à¤¨à¤¾à¤¶à¥€ à¤†à¤¹à¥‡. à¤¶à¥à¤°à¥€à¤² à¤ªà¥à¤°à¤­à¥à¤ªà¤¾à¤¦ à¤¹à¥‡ à¤¸à¤¤à¥à¤¯ à¤—à¥€à¤¤à¥‡à¤šà¥à¤¯à¤¾ à¤•à¥‡à¤‚à¤¦à¥à¤°à¥€à¤¯ à¤¤à¤¤à¥à¤¤à¥à¤µà¤œà¥à¤žà¤¾à¤¨ à¤®à¥à¤¹à¤£à¥‚à¤¨ à¤®à¤¾à¤‚à¤¡à¤¤à¤¾à¤¤.',
+      'à¤¸à¥à¤¥à¤¿à¤¤à¤ªà¥à¤°à¤œà¥à¤ž à¤¤à¥‹ à¤†à¤¹à¥‡ à¤œà¥à¤¯à¤¾à¤šà¥€ à¤¬à¥à¤¦à¥à¤§à¥€ à¤¦à¥à¤ƒà¤–à¤¾à¤¤ à¤µà¤¿à¤šà¤²à¤¿à¤¤ à¤¹à¥‹à¤¤ à¤¨à¤¾à¤¹à¥€ à¤†à¤£à¤¿ à¤¸à¥à¤–à¤¾à¤¤ à¤‰à¤¤à¥à¤¸à¤¾à¤¹à¤¿à¤¤ à¤¹à¥‹à¤¤ à¤¨à¤¾à¤¹à¥€. à¤¹à¥‡ à¤¸à¤®à¤­à¤¾à¤µà¤š à¤®à¥‹à¤•à¥à¤·à¤¾à¤šà¤¾ à¤®à¤¾à¤°à¥à¤— à¤†à¤¹à¥‡.',
+      'à¤•à¤°à¥à¤® à¤•à¤°à¤¾, à¤«à¤³à¤¾à¤šà¥€ à¤…à¤ªà¥‡à¤•à¥à¤·à¤¾ à¤ à¥‡à¤µà¥‚ à¤¨à¤•à¤¾ â€” à¤¹à¥‡à¤š à¤¨à¤¿à¤·à¥à¤•à¤¾à¤® à¤•à¤°à¥à¤®à¤¾à¤šà¥‡ à¤¸à¤¾à¤° à¤†à¤¹à¥‡. à¤œà¥‡à¤µà¥à¤¹à¤¾ à¤•à¥à¤°à¤¿à¤¯à¤¾ à¤ˆà¤¶à¥à¤µà¤°à¤¾à¤²à¤¾ à¤…à¤°à¥à¤ªà¤£ à¤¹à¥‹à¤¤à¥‡, à¤¤à¥‡à¤µà¥à¤¹à¤¾ à¤¤à¥€ à¤¬à¤‚à¤§à¤¨ à¤°à¤¾à¤¹à¤¤ à¤¨à¤¾à¤¹à¥€.',
+      'à¤†à¤¤à¥à¤®à¤¾ à¤…à¤—à¥à¤¨à¥€à¤¨à¥‡ à¤œà¤³à¤¤ à¤¨à¤¾à¤¹à¥€, à¤œà¤²à¤¾à¤¨à¥‡ à¤“à¤²à¤¾ à¤¹à¥‹à¤¤ à¤¨à¤¾à¤¹à¥€, à¤µà¤¾à¤±à¥à¤¯à¤¾à¤¨à¥‡ à¤¸à¥à¤•à¤¤ à¤¨à¤¾à¤¹à¥€. à¤¹à¥‡ à¤¶à¤¾à¤¶à¥à¤µà¤¤ à¤¸à¤¤à¥à¤¯ à¤œà¥‡à¤µà¥à¤¹à¤¾ à¤¹à¥ƒà¤¦à¤¯à¤¾à¤¤ à¤‰à¤¤à¤°à¤¤à¥‡, à¤¤à¥‡à¤µà¥à¤¹à¤¾ à¤œà¥€à¤µà¤¨à¤¾à¤šà¥€ à¤­à¥€à¤¤à¥€ à¤¨à¤·à¥à¤Ÿ à¤¹à¥‹à¤¤à¥‡.',
     ],
     dn_hi: [
-      'ज्ञानदेव कहते हैं: आकाश जैसा आत्मा — बादल आते-जाते हैं पर आकाश अटल रहता है। यही स्थितप्रज्ञ का लक्षण है। माऊली ने इस अध्याय में अठारह गुणों का वर्णन किया है।',
-      'संत ज्ञानेश्वर बताते हैं: जो साधक सुख-दुःख में समान रहता है, वह परमात्मा का प्रिय है। जैसे दीपक हवा के बिना हिलता नहीं, वैसे ध्यानस्थ मन चंचल नहीं होता।',
-      'ज्ञानेश्वरी का सार: शरीर नश्वर है, आत्मा अमर है। जो इस भेद को जान लेता है, वह माया के जाल से मुक्त हो जाता है। यही ज्ञानयोग का पहला द्वार है।',
+      'à¤œà¥à¤žà¤¾à¤¨à¤¦à¥‡à¤µ à¤•à¤¹à¤¤à¥‡ à¤¹à¥ˆà¤‚: à¤†à¤•à¤¾à¤¶ à¤œà¥ˆà¤¸à¤¾ à¤†à¤¤à¥à¤®à¤¾ â€” à¤¬à¤¾à¤¦à¤² à¤†à¤¤à¥‡-à¤œà¤¾à¤¤à¥‡ à¤¹à¥ˆà¤‚ à¤ªà¤° à¤†à¤•à¤¾à¤¶ à¤…à¤Ÿà¤² à¤°à¤¹à¤¤à¤¾ à¤¹à¥ˆà¥¤ à¤¯à¤¹à¥€ à¤¸à¥à¤¥à¤¿à¤¤à¤ªà¥à¤°à¤œà¥à¤ž à¤•à¤¾ à¤²à¤•à¥à¤·à¤£ à¤¹à¥ˆà¥¤ à¤®à¤¾à¤Šà¤²à¥€ à¤¨à¥‡ à¤‡à¤¸ à¤…à¤§à¥à¤¯à¤¾à¤¯ à¤®à¥‡à¤‚ à¤…à¤ à¤¾à¤°à¤¹ à¤—à¥à¤£à¥‹à¤‚ à¤•à¤¾ à¤µà¤°à¥à¤£à¤¨ à¤•à¤¿à¤¯à¤¾ à¤¹à¥ˆà¥¤',
+      'à¤¸à¤‚à¤¤ à¤œà¥à¤žà¤¾à¤¨à¥‡à¤¶à¥à¤µà¤° à¤¬à¤¤à¤¾à¤¤à¥‡ à¤¹à¥ˆà¤‚: à¤œà¥‹ à¤¸à¤¾à¤§à¤• à¤¸à¥à¤–-à¤¦à¥à¤ƒà¤– à¤®à¥‡à¤‚ à¤¸à¤®à¤¾à¤¨ à¤°à¤¹à¤¤à¤¾ à¤¹à¥ˆ, à¤µà¤¹ à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¤¾ à¤•à¤¾ à¤ªà¥à¤°à¤¿à¤¯ à¤¹à¥ˆà¥¤ à¤œà¥ˆà¤¸à¥‡ à¤¦à¥€à¤ªà¤• à¤¹à¤µà¤¾ à¤•à¥‡ à¤¬à¤¿à¤¨à¤¾ à¤¹à¤¿à¤²à¤¤à¤¾ à¤¨à¤¹à¥€à¤‚, à¤µà¥ˆà¤¸à¥‡ à¤§à¥à¤¯à¤¾à¤¨à¤¸à¥à¤¥ à¤®à¤¨ à¤šà¤‚à¤šà¤² à¤¨à¤¹à¥€à¤‚ à¤¹à¥‹à¤¤à¤¾à¥¤',
+      'à¤œà¥à¤žà¤¾à¤¨à¥‡à¤¶à¥à¤µà¤°à¥€ à¤•à¤¾ à¤¸à¤¾à¤°: à¤¶à¤°à¥€à¤° à¤¨à¤¶à¥à¤µà¤° à¤¹à¥ˆ, à¤†à¤¤à¥à¤®à¤¾ à¤…à¤®à¤° à¤¹à¥ˆà¥¤ à¤œà¥‹ à¤‡à¤¸ à¤­à¥‡à¤¦ à¤•à¥‹ à¤œà¤¾à¤¨ à¤²à¥‡à¤¤à¤¾ à¤¹à¥ˆ, à¤µà¤¹ à¤®à¤¾à¤¯à¤¾ à¤•à¥‡ à¤œà¤¾à¤² à¤¸à¥‡ à¤®à¥à¤•à¥à¤¤ à¤¹à¥‹ à¤œà¤¾à¤¤à¤¾ à¤¹à¥ˆà¥¤ à¤¯à¤¹à¥€ à¤œà¥à¤žà¤¾à¤¨à¤¯à¥‹à¤— à¤•à¤¾ à¤ªà¤¹à¤²à¤¾ à¤¦à¥à¤µà¤¾à¤° à¤¹à¥ˆà¥¤',
     ],
   },
   3:  {
-    title_hi: 'कर्म-योग',
-    title_mr: 'कर्म-योग',
-    theme_hi: 'निष्काम कर्म और समाज-धर्म',
-    theme_mr: 'निष्काम कर्म आणि समाजधर्म',
+    title_hi: 'à¤•à¤°à¥à¤®-à¤¯à¥‹à¤—',
+    title_mr: 'à¤•à¤°à¥à¤®-à¤¯à¥‹à¤—',
+    theme_hi: 'à¤¨à¤¿à¤·à¥à¤•à¤¾à¤® à¤•à¤°à¥à¤® à¤”à¤° à¤¸à¤®à¤¾à¤œ-à¤§à¤°à¥à¤®',
+    theme_mr: 'à¤¨à¤¿à¤·à¥à¤•à¤¾à¤® à¤•à¤°à¥à¤® à¤†à¤£à¤¿ à¤¸à¤®à¤¾à¤œà¤§à¤°à¥à¤®',
     insight_hi: [
-      'बिना कर्म किए कोई भी एक पल नहीं रह सकता। प्रकृति के गुण सबको कर्म करने पर विवश करते हैं। श्रील प्रभुपाद बताते हैं कि केवल ईश्वर को अर्पित कर्म ही मनुष्य को बंधन से मुक्त करता है।',
-      'यज्ञ भाव से किया कर्म समाज को पोषित करता है और व्यक्ति को शुद्ध करता है। जो केवल अपने लिए पकाता है, वह पाप ही खाता है। सेवा और त्याग ही सच्चे कर्म-योग के प्रतीक हैं।',
-      'जो महापुरुष करते हैं, साधारण जन उन्हीं का अनुसरण करते हैं। इसीलिए ज्ञानी का कर्म लोक-कल्याण का माध्यम बन जाता है।',
+      'à¤¬à¤¿à¤¨à¤¾ à¤•à¤°à¥à¤® à¤•à¤¿à¤ à¤•à¥‹à¤ˆ à¤­à¥€ à¤à¤• à¤ªà¤² à¤¨à¤¹à¥€à¤‚ à¤°à¤¹ à¤¸à¤•à¤¤à¤¾à¥¤ à¤ªà¥à¤°à¤•à¥ƒà¤¤à¤¿ à¤•à¥‡ à¤—à¥à¤£ à¤¸à¤¬à¤•à¥‹ à¤•à¤°à¥à¤® à¤•à¤°à¤¨à¥‡ à¤ªà¤° à¤µà¤¿à¤µà¤¶ à¤•à¤°à¤¤à¥‡ à¤¹à¥ˆà¤‚à¥¤ à¤¶à¥à¤°à¥€à¤² à¤ªà¥à¤°à¤­à¥à¤ªà¤¾à¤¦ à¤¬à¤¤à¤¾à¤¤à¥‡ à¤¹à¥ˆà¤‚ à¤•à¤¿ à¤•à¥‡à¤µà¤² à¤ˆà¤¶à¥à¤µà¤° à¤•à¥‹ à¤…à¤°à¥à¤ªà¤¿à¤¤ à¤•à¤°à¥à¤® à¤¹à¥€ à¤®à¤¨à¥à¤·à¥à¤¯ à¤•à¥‹ à¤¬à¤‚à¤§à¤¨ à¤¸à¥‡ à¤®à¥à¤•à¥à¤¤ à¤•à¤°à¤¤à¤¾ à¤¹à¥ˆà¥¤',
+      'à¤¯à¤œà¥à¤ž à¤­à¤¾à¤µ à¤¸à¥‡ à¤•à¤¿à¤¯à¤¾ à¤•à¤°à¥à¤® à¤¸à¤®à¤¾à¤œ à¤•à¥‹ à¤ªà¥‹à¤·à¤¿à¤¤ à¤•à¤°à¤¤à¤¾ à¤¹à¥ˆ à¤”à¤° à¤µà¥à¤¯à¤•à¥à¤¤à¤¿ à¤•à¥‹ à¤¶à¥à¤¦à¥à¤§ à¤•à¤°à¤¤à¤¾ à¤¹à¥ˆà¥¤ à¤œà¥‹ à¤•à¥‡à¤µà¤² à¤…à¤ªà¤¨à¥‡ à¤²à¤¿à¤ à¤ªà¤•à¤¾à¤¤à¤¾ à¤¹à¥ˆ, à¤µà¤¹ à¤ªà¤¾à¤ª à¤¹à¥€ à¤–à¤¾à¤¤à¤¾ à¤¹à¥ˆà¥¤ à¤¸à¥‡à¤µà¤¾ à¤”à¤° à¤¤à¥à¤¯à¤¾à¤— à¤¹à¥€ à¤¸à¤šà¥à¤šà¥‡ à¤•à¤°à¥à¤®-à¤¯à¥‹à¤— à¤•à¥‡ à¤ªà¥à¤°à¤¤à¥€à¤• à¤¹à¥ˆà¤‚à¥¤',
+      'à¤œà¥‹ à¤®à¤¹à¤¾à¤ªà¥à¤°à¥à¤· à¤•à¤°à¤¤à¥‡ à¤¹à¥ˆà¤‚, à¤¸à¤¾à¤§à¤¾à¤°à¤£ à¤œà¤¨ à¤‰à¤¨à¥à¤¹à¥€à¤‚ à¤•à¤¾ à¤…à¤¨à¥à¤¸à¤°à¤£ à¤•à¤°à¤¤à¥‡ à¤¹à¥ˆà¤‚à¥¤ à¤‡à¤¸à¥€à¤²à¤¿à¤ à¤œà¥à¤žà¤¾à¤¨à¥€ à¤•à¤¾ à¤•à¤°à¥à¤® à¤²à¥‹à¤•-à¤•à¤²à¥à¤¯à¤¾à¤£ à¤•à¤¾ à¤®à¤¾à¤§à¥à¤¯à¤® à¤¬à¤¨ à¤œà¤¾à¤¤à¤¾ à¤¹à¥ˆà¥¤',
     ],
     insight_mr: [
-      'कर्माशिवाय कोणीही एक क्षण राहू शकत नाही. प्रकृतीचे गुण सर्वांना कर्म करण्यास प्रवृत्त करतात. श्रील प्रभुपाद सांगतात की केवळ ईश्वराला अर्पित केलेले कर्मच मनुष्याला बंधनातून मुक्त करते.',
-      'यज्ञभावाने केलेले कर्म समाजाचे पोषण करते आणि व्यक्तीला शुद्ध करते. जो केवळ स्वतःसाठी शिजवतो, तो पापच खातो. सेवा आणि त्याग हे खऱ्या कर्मयोगाचे प्रतीक आहेत.',
-      'महापुरुष जे करतात, सामान्य जन त्यांचेच अनुसरण करतात. म्हणूनच ज्ञान्याचे कर्म लोककल्याणाचे माध्यम बनते.',
+      'à¤•à¤°à¥à¤®à¤¾à¤¶à¤¿à¤µà¤¾à¤¯ à¤•à¥‹à¤£à¥€à¤¹à¥€ à¤à¤• à¤•à¥à¤·à¤£ à¤°à¤¾à¤¹à¥‚ à¤¶à¤•à¤¤ à¤¨à¤¾à¤¹à¥€. à¤ªà¥à¤°à¤•à¥ƒà¤¤à¥€à¤šà¥‡ à¤—à¥à¤£ à¤¸à¤°à¥à¤µà¤¾à¤‚à¤¨à¤¾ à¤•à¤°à¥à¤® à¤•à¤°à¤£à¥à¤¯à¤¾à¤¸ à¤ªà¥à¤°à¤µà¥ƒà¤¤à¥à¤¤ à¤•à¤°à¤¤à¤¾à¤¤. à¤¶à¥à¤°à¥€à¤² à¤ªà¥à¤°à¤­à¥à¤ªà¤¾à¤¦ à¤¸à¤¾à¤‚à¤—à¤¤à¤¾à¤¤ à¤•à¥€ à¤•à¥‡à¤µà¤³ à¤ˆà¤¶à¥à¤µà¤°à¤¾à¤²à¤¾ à¤…à¤°à¥à¤ªà¤¿à¤¤ à¤•à¥‡à¤²à¥‡à¤²à¥‡ à¤•à¤°à¥à¤®à¤š à¤®à¤¨à¥à¤·à¥à¤¯à¤¾à¤²à¤¾ à¤¬à¤‚à¤§à¤¨à¤¾à¤¤à¥‚à¤¨ à¤®à¥à¤•à¥à¤¤ à¤•à¤°à¤¤à¥‡.',
+      'à¤¯à¤œà¥à¤žà¤­à¤¾à¤µà¤¾à¤¨à¥‡ à¤•à¥‡à¤²à¥‡à¤²à¥‡ à¤•à¤°à¥à¤® à¤¸à¤®à¤¾à¤œà¤¾à¤šà¥‡ à¤ªà¥‹à¤·à¤£ à¤•à¤°à¤¤à¥‡ à¤†à¤£à¤¿ à¤µà¥à¤¯à¤•à¥à¤¤à¥€à¤²à¤¾ à¤¶à¥à¤¦à¥à¤§ à¤•à¤°à¤¤à¥‡. à¤œà¥‹ à¤•à¥‡à¤µà¤³ à¤¸à¥à¤µà¤¤à¤ƒà¤¸à¤¾à¤ à¥€ à¤¶à¤¿à¤œà¤µà¤¤à¥‹, à¤¤à¥‹ à¤ªà¤¾à¤ªà¤š à¤–à¤¾à¤¤à¥‹. à¤¸à¥‡à¤µà¤¾ à¤†à¤£à¤¿ à¤¤à¥à¤¯à¤¾à¤— à¤¹à¥‡ à¤–à¤±à¥à¤¯à¤¾ à¤•à¤°à¥à¤®à¤¯à¥‹à¤—à¤¾à¤šà¥‡ à¤ªà¥à¤°à¤¤à¥€à¤• à¤†à¤¹à¥‡à¤¤.',
+      'à¤®à¤¹à¤¾à¤ªà¥à¤°à¥à¤· à¤œà¥‡ à¤•à¤°à¤¤à¤¾à¤¤, à¤¸à¤¾à¤®à¤¾à¤¨à¥à¤¯ à¤œà¤¨ à¤¤à¥à¤¯à¤¾à¤‚à¤šà¥‡à¤š à¤…à¤¨à¥à¤¸à¤°à¤£ à¤•à¤°à¤¤à¤¾à¤¤. à¤®à¥à¤¹à¤£à¥‚à¤¨à¤š à¤œà¥à¤žà¤¾à¤¨à¥à¤¯à¤¾à¤šà¥‡ à¤•à¤°à¥à¤® à¤²à¥‹à¤•à¤•à¤²à¥à¤¯à¤¾à¤£à¤¾à¤šà¥‡ à¤®à¤¾à¤§à¥à¤¯à¤® à¤¬à¤¨à¤¤à¥‡.',
     ],
     dn_hi: [
-      'माऊली कहते हैं: जल में कमल की तरह जियो — संसार में रहो पर उससे लिप्त मत हो। निष्काम कर्म ही सच्चा संन्यास है।',
-      'ज्ञानेश्वर कहते हैं: जो अपने स्वधर्म का पालन करता है और फल की चिंता नहीं करता, वह जीते-जी मुक्त है।',
+      'à¤®à¤¾à¤Šà¤²à¥€ à¤•à¤¹à¤¤à¥‡ à¤¹à¥ˆà¤‚: à¤œà¤² à¤®à¥‡à¤‚ à¤•à¤®à¤² à¤•à¥€ à¤¤à¤°à¤¹ à¤œà¤¿à¤¯à¥‹ â€” à¤¸à¤‚à¤¸à¤¾à¤° à¤®à¥‡à¤‚ à¤°à¤¹à¥‹ à¤ªà¤° à¤‰à¤¸à¤¸à¥‡ à¤²à¤¿à¤ªà¥à¤¤ à¤®à¤¤ à¤¹à¥‹à¥¤ à¤¨à¤¿à¤·à¥à¤•à¤¾à¤® à¤•à¤°à¥à¤® à¤¹à¥€ à¤¸à¤šà¥à¤šà¤¾ à¤¸à¤‚à¤¨à¥à¤¯à¤¾à¤¸ à¤¹à¥ˆà¥¤',
+      'à¤œà¥à¤žà¤¾à¤¨à¥‡à¤¶à¥à¤µà¤° à¤•à¤¹à¤¤à¥‡ à¤¹à¥ˆà¤‚: à¤œà¥‹ à¤…à¤ªà¤¨à¥‡ à¤¸à¥à¤µà¤§à¤°à¥à¤® à¤•à¤¾ à¤ªà¤¾à¤²à¤¨ à¤•à¤°à¤¤à¤¾ à¤¹à¥ˆ à¤”à¤° à¤«à¤² à¤•à¥€ à¤šà¤¿à¤‚à¤¤à¤¾ à¤¨à¤¹à¥€à¤‚ à¤•à¤°à¤¤à¤¾, à¤µà¤¹ à¤œà¥€à¤¤à¥‡-à¤œà¥€ à¤®à¥à¤•à¥à¤¤ à¤¹à¥ˆà¥¤',
     ],
   },
   4:  {
-    title_hi: 'ज्ञान-कर्म-संन्यास-योग',
-    title_mr: 'ज्ञान-कर्म-संन्यास-योग',
-    theme_hi: 'दिव्य ज्ञान और भगवान का अवतरण',
-    theme_mr: 'दिव्य ज्ञान आणि भगवंताचा अवतार',
+    title_hi: 'à¤œà¥à¤žà¤¾à¤¨-à¤•à¤°à¥à¤®-à¤¸à¤‚à¤¨à¥à¤¯à¤¾à¤¸-à¤¯à¥‹à¤—',
+    title_mr: 'à¤œà¥à¤žà¤¾à¤¨-à¤•à¤°à¥à¤®-à¤¸à¤‚à¤¨à¥à¤¯à¤¾à¤¸-à¤¯à¥‹à¤—',
+    theme_hi: 'à¤¦à¤¿à¤µà¥à¤¯ à¤œà¥à¤žà¤¾à¤¨ à¤”à¤° à¤­à¤—à¤µà¤¾à¤¨ à¤•à¤¾ à¤…à¤µà¤¤à¤°à¤£',
+    theme_mr: 'à¤¦à¤¿à¤µà¥à¤¯ à¤œà¥à¤žà¤¾à¤¨ à¤†à¤£à¤¿ à¤­à¤—à¤µà¤‚à¤¤à¤¾à¤šà¤¾ à¤…à¤µà¤¤à¤¾à¤°',
     insight_hi: [
-      'जब-जब धर्म की हानि होती है और अधर्म बढ़ता है, तब-तब परमात्मा अवतरित होते हैं। यह दिव्य वचन भक्तों को सदा आश्वस्त करता है। श्रील प्रभुपाद इस श्लोक को गीता का हृदय मानते हैं।',
-      'ज्ञान का अग्नि सभी कर्मों को भस्म कर देता है। जब साधक सच्चे गुरु के चरणों में बैठकर सेवा और प्रश्न के साथ ज्ञान प्राप्त करता है, तब अज्ञान का अंधकार नष्ट होता है।',
-      'भगवान के जन्म और कर्म दिव्य हैं — वे सांसारिक नहीं। जो इस सत्य को समझ लेता है, वह देह छोड़ने पर पुनर्जन्म नहीं लेता।',
+      'à¤œà¤¬-à¤œà¤¬ à¤§à¤°à¥à¤® à¤•à¥€ à¤¹à¤¾à¤¨à¤¿ à¤¹à¥‹à¤¤à¥€ à¤¹à¥ˆ à¤”à¤° à¤…à¤§à¤°à¥à¤® à¤¬à¤¢à¤¼à¤¤à¤¾ à¤¹à¥ˆ, à¤¤à¤¬-à¤¤à¤¬ à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¤¾ à¤…à¤µà¤¤à¤°à¤¿à¤¤ à¤¹à¥‹à¤¤à¥‡ à¤¹à¥ˆà¤‚à¥¤ à¤¯à¤¹ à¤¦à¤¿à¤µà¥à¤¯ à¤µà¤šà¤¨ à¤­à¤•à¥à¤¤à¥‹à¤‚ à¤•à¥‹ à¤¸à¤¦à¤¾ à¤†à¤¶à¥à¤µà¤¸à¥à¤¤ à¤•à¤°à¤¤à¤¾ à¤¹à¥ˆà¥¤ à¤¶à¥à¤°à¥€à¤² à¤ªà¥à¤°à¤­à¥à¤ªà¤¾à¤¦ à¤‡à¤¸ à¤¶à¥à¤²à¥‹à¤• à¤•à¥‹ à¤—à¥€à¤¤à¤¾ à¤•à¤¾ à¤¹à¥ƒà¤¦à¤¯ à¤®à¤¾à¤¨à¤¤à¥‡ à¤¹à¥ˆà¤‚à¥¤',
+      'à¤œà¥à¤žà¤¾à¤¨ à¤•à¤¾ à¤…à¤—à¥à¤¨à¤¿ à¤¸à¤­à¥€ à¤•à¤°à¥à¤®à¥‹à¤‚ à¤•à¥‹ à¤­à¤¸à¥à¤® à¤•à¤° à¤¦à¥‡à¤¤à¤¾ à¤¹à¥ˆà¥¤ à¤œà¤¬ à¤¸à¤¾à¤§à¤• à¤¸à¤šà¥à¤šà¥‡ à¤—à¥à¤°à¥ à¤•à¥‡ à¤šà¤°à¤£à¥‹à¤‚ à¤®à¥‡à¤‚ à¤¬à¥ˆà¤ à¤•à¤° à¤¸à¥‡à¤µà¤¾ à¤”à¤° à¤ªà¥à¤°à¤¶à¥à¤¨ à¤•à¥‡ à¤¸à¤¾à¤¥ à¤œà¥à¤žà¤¾à¤¨ à¤ªà¥à¤°à¤¾à¤ªà¥à¤¤ à¤•à¤°à¤¤à¤¾ à¤¹à¥ˆ, à¤¤à¤¬ à¤…à¤œà¥à¤žà¤¾à¤¨ à¤•à¤¾ à¤…à¤‚à¤§à¤•à¤¾à¤° à¤¨à¤·à¥à¤Ÿ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆà¥¤',
+      'à¤­à¤—à¤µà¤¾à¤¨ à¤•à¥‡ à¤œà¤¨à¥à¤® à¤”à¤° à¤•à¤°à¥à¤® à¤¦à¤¿à¤µà¥à¤¯ à¤¹à¥ˆà¤‚ â€” à¤µà¥‡ à¤¸à¤¾à¤‚à¤¸à¤¾à¤°à¤¿à¤• à¤¨à¤¹à¥€à¤‚à¥¤ à¤œà¥‹ à¤‡à¤¸ à¤¸à¤¤à¥à¤¯ à¤•à¥‹ à¤¸à¤®à¤ à¤²à¥‡à¤¤à¤¾ à¤¹à¥ˆ, à¤µà¤¹ à¤¦à¥‡à¤¹ à¤›à¥‹à¤¡à¤¼à¤¨à¥‡ à¤ªà¤° à¤ªà¥à¤¨à¤°à¥à¤œà¤¨à¥à¤® à¤¨à¤¹à¥€à¤‚ à¤²à¥‡à¤¤à¤¾à¥¤',
     ],
     insight_mr: [
-      'जेव्हा जेव्हा धर्माची हानी होते आणि अधर्म वाढतो, तेव्हा तेव्हा परमात्मा अवतरतो. हे दिव्य वचन भक्तांना सदा आश्वस्त करते.',
-      'ज्ञानाचा अग्नी सर्व कर्मांना भस्म करतो. जेव्हा साधक खऱ्या गुरूच्या चरणी बसून सेवा आणि प्रश्नाने ज्ञान प्राप्त करतो, तेव्हा अज्ञानाचा अंधार नष्ट होतो.',
-      'भगवंताचा जन्म आणि कर्म दिव्य आहेत — ते सांसारिक नाहीत. जो हे सत्य समजतो, तो देह सोडल्यावर पुनर्जन्म घेत नाही.',
+      'à¤œà¥‡à¤µà¥à¤¹à¤¾ à¤œà¥‡à¤µà¥à¤¹à¤¾ à¤§à¤°à¥à¤®à¤¾à¤šà¥€ à¤¹à¤¾à¤¨à¥€ à¤¹à¥‹à¤¤à¥‡ à¤†à¤£à¤¿ à¤…à¤§à¤°à¥à¤® à¤µà¤¾à¤¢à¤¤à¥‹, à¤¤à¥‡à¤µà¥à¤¹à¤¾ à¤¤à¥‡à¤µà¥à¤¹à¤¾ à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¤¾ à¤…à¤µà¤¤à¤°à¤¤à¥‹. à¤¹à¥‡ à¤¦à¤¿à¤µà¥à¤¯ à¤µà¤šà¤¨ à¤­à¤•à¥à¤¤à¤¾à¤‚à¤¨à¤¾ à¤¸à¤¦à¤¾ à¤†à¤¶à¥à¤µà¤¸à¥à¤¤ à¤•à¤°à¤¤à¥‡.',
+      'à¤œà¥à¤žà¤¾à¤¨à¤¾à¤šà¤¾ à¤…à¤—à¥à¤¨à¥€ à¤¸à¤°à¥à¤µ à¤•à¤°à¥à¤®à¤¾à¤‚à¤¨à¤¾ à¤­à¤¸à¥à¤® à¤•à¤°à¤¤à¥‹. à¤œà¥‡à¤µà¥à¤¹à¤¾ à¤¸à¤¾à¤§à¤• à¤–à¤±à¥à¤¯à¤¾ à¤—à¥à¤°à¥‚à¤šà¥à¤¯à¤¾ à¤šà¤°à¤£à¥€ à¤¬à¤¸à¥‚à¤¨ à¤¸à¥‡à¤µà¤¾ à¤†à¤£à¤¿ à¤ªà¥à¤°à¤¶à¥à¤¨à¤¾à¤¨à¥‡ à¤œà¥à¤žà¤¾à¤¨ à¤ªà¥à¤°à¤¾à¤ªà¥à¤¤ à¤•à¤°à¤¤à¥‹, à¤¤à¥‡à¤µà¥à¤¹à¤¾ à¤…à¤œà¥à¤žà¤¾à¤¨à¤¾à¤šà¤¾ à¤…à¤‚à¤§à¤¾à¤° à¤¨à¤·à¥à¤Ÿ à¤¹à¥‹à¤¤à¥‹.',
+      'à¤­à¤—à¤µà¤‚à¤¤à¤¾à¤šà¤¾ à¤œà¤¨à¥à¤® à¤†à¤£à¤¿ à¤•à¤°à¥à¤® à¤¦à¤¿à¤µà¥à¤¯ à¤†à¤¹à¥‡à¤¤ â€” à¤¤à¥‡ à¤¸à¤¾à¤‚à¤¸à¤¾à¤°à¤¿à¤• à¤¨à¤¾à¤¹à¥€à¤¤. à¤œà¥‹ à¤¹à¥‡ à¤¸à¤¤à¥à¤¯ à¤¸à¤®à¤œà¤¤à¥‹, à¤¤à¥‹ à¤¦à¥‡à¤¹ à¤¸à¥‹à¤¡à¤²à¥à¤¯à¤¾à¤µà¤° à¤ªà¥à¤¨à¤°à¥à¤œà¤¨à¥à¤® à¤˜à¥‡à¤¤ à¤¨à¤¾à¤¹à¥€.',
     ],
     dn_hi: [
-      'माऊली फरमाते हैं: परमात्मा धर्म के रक्षक हैं। जब भक्त की पुकार सच्ची होती है, तो भगवान अवश्य प्रकट होते हैं।',
-      'ज्ञानेश्वर कहते हैं: गुरु के बिना ज्ञान अधूरा है। सेवा, विनय और जिज्ञासा से ज्ञान उतरता है।',
+      'à¤®à¤¾à¤Šà¤²à¥€ à¤«à¤°à¤®à¤¾à¤¤à¥‡ à¤¹à¥ˆà¤‚: à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¤¾ à¤§à¤°à¥à¤® à¤•à¥‡ à¤°à¤•à¥à¤·à¤• à¤¹à¥ˆà¤‚à¥¤ à¤œà¤¬ à¤­à¤•à¥à¤¤ à¤•à¥€ à¤ªà¥à¤•à¤¾à¤° à¤¸à¤šà¥à¤šà¥€ à¤¹à¥‹à¤¤à¥€ à¤¹à¥ˆ, à¤¤à¥‹ à¤­à¤—à¤µà¤¾à¤¨ à¤…à¤µà¤¶à¥à¤¯ à¤ªà¥à¤°à¤•à¤Ÿ à¤¹à¥‹à¤¤à¥‡ à¤¹à¥ˆà¤‚à¥¤',
+      'à¤œà¥à¤žà¤¾à¤¨à¥‡à¤¶à¥à¤µà¤° à¤•à¤¹à¤¤à¥‡ à¤¹à¥ˆà¤‚: à¤—à¥à¤°à¥ à¤•à¥‡ à¤¬à¤¿à¤¨à¤¾ à¤œà¥à¤žà¤¾à¤¨ à¤…à¤§à¥‚à¤°à¤¾ à¤¹à¥ˆà¥¤ à¤¸à¥‡à¤µà¤¾, à¤µà¤¿à¤¨à¤¯ à¤”à¤° à¤œà¤¿à¤œà¥à¤žà¤¾à¤¸à¤¾ à¤¸à¥‡ à¤œà¥à¤žà¤¾à¤¨ à¤‰à¤¤à¤°à¤¤à¤¾ à¤¹à¥ˆà¥¤',
     ],
   },
   5:  {
-    title_hi: 'कर्म-संन्यास-योग',
-    title_mr: 'कर्म-संन्यास-योग',
-    theme_hi: 'कर्म और संन्यास की एकता',
-    theme_mr: 'कर्म आणि संन्यासाची एकता',
+    title_hi: 'à¤•à¤°à¥à¤®-à¤¸à¤‚à¤¨à¥à¤¯à¤¾à¤¸-à¤¯à¥‹à¤—',
+    title_mr: 'à¤•à¤°à¥à¤®-à¤¸à¤‚à¤¨à¥à¤¯à¤¾à¤¸-à¤¯à¥‹à¤—',
+    theme_hi: 'à¤•à¤°à¥à¤® à¤”à¤° à¤¸à¤‚à¤¨à¥à¤¯à¤¾à¤¸ à¤•à¥€ à¤à¤•à¤¤à¤¾',
+    theme_mr: 'à¤•à¤°à¥à¤® à¤†à¤£à¤¿ à¤¸à¤‚à¤¨à¥à¤¯à¤¾à¤¸à¤¾à¤šà¥€ à¤à¤•à¤¤à¤¾',
     insight_hi: [
-      'कर्म और संन्यास दोनों एक ही लक्ष्य की ओर ले जाते हैं। श्रील प्रभुपाद बताते हैं कि कर्म से मुक्ति नहीं, कर्म के भाव से मुक्ति होती है। ईश्वर को अर्पण करके किया हर कर्म संन्यास ही है।',
-      'इंद्रियों को नियंत्रित करने वाला, फल की आशा छोड़ने वाला साधक — वह कर्म करते हुए भी मुक्त है। जल में कमल की भाँति संसार में रहो।',
+      'à¤•à¤°à¥à¤® à¤”à¤° à¤¸à¤‚à¤¨à¥à¤¯à¤¾à¤¸ à¤¦à¥‹à¤¨à¥‹à¤‚ à¤à¤• à¤¹à¥€ à¤²à¤•à¥à¤·à¥à¤¯ à¤•à¥€ à¤“à¤° à¤²à¥‡ à¤œà¤¾à¤¤à¥‡ à¤¹à¥ˆà¤‚à¥¤ à¤¶à¥à¤°à¥€à¤² à¤ªà¥à¤°à¤­à¥à¤ªà¤¾à¤¦ à¤¬à¤¤à¤¾à¤¤à¥‡ à¤¹à¥ˆà¤‚ à¤•à¤¿ à¤•à¤°à¥à¤® à¤¸à¥‡ à¤®à¥à¤•à¥à¤¤à¤¿ à¤¨à¤¹à¥€à¤‚, à¤•à¤°à¥à¤® à¤•à¥‡ à¤­à¤¾à¤µ à¤¸à¥‡ à¤®à¥à¤•à¥à¤¤à¤¿ à¤¹à¥‹à¤¤à¥€ à¤¹à¥ˆà¥¤ à¤ˆà¤¶à¥à¤µà¤° à¤•à¥‹ à¤…à¤°à¥à¤ªà¤£ à¤•à¤°à¤•à¥‡ à¤•à¤¿à¤¯à¤¾ à¤¹à¤° à¤•à¤°à¥à¤® à¤¸à¤‚à¤¨à¥à¤¯à¤¾à¤¸ à¤¹à¥€ à¤¹à¥ˆà¥¤',
+      'à¤‡à¤‚à¤¦à¥à¤°à¤¿à¤¯à¥‹à¤‚ à¤•à¥‹ à¤¨à¤¿à¤¯à¤‚à¤¤à¥à¤°à¤¿à¤¤ à¤•à¤°à¤¨à¥‡ à¤µà¤¾à¤²à¤¾, à¤«à¤² à¤•à¥€ à¤†à¤¶à¤¾ à¤›à¥‹à¤¡à¤¼à¤¨à¥‡ à¤µà¤¾à¤²à¤¾ à¤¸à¤¾à¤§à¤• â€” à¤µà¤¹ à¤•à¤°à¥à¤® à¤•à¤°à¤¤à¥‡ à¤¹à¥à¤ à¤­à¥€ à¤®à¥à¤•à¥à¤¤ à¤¹à¥ˆà¥¤ à¤œà¤² à¤®à¥‡à¤‚ à¤•à¤®à¤² à¤•à¥€ à¤­à¤¾à¤à¤¤à¤¿ à¤¸à¤‚à¤¸à¤¾à¤° à¤®à¥‡à¤‚ à¤°à¤¹à¥‹à¥¤',
     ],
     insight_mr: [
-      'कर्म आणि संन्यास दोन्ही एकाच ध्येयाकडे नेतात. श्रील प्रभुपाद सांगतात की कर्मापासून मुक्ती नाही, कर्माच्या भावनेतून मुक्ती होते.',
-      'इंद्रियांवर नियंत्रण ठेवणारा, फळाची आशा सोडणारा साधक — तो कर्म करतानाही मुक्त आहे.',
+      'à¤•à¤°à¥à¤® à¤†à¤£à¤¿ à¤¸à¤‚à¤¨à¥à¤¯à¤¾à¤¸ à¤¦à¥‹à¤¨à¥à¤¹à¥€ à¤à¤•à¤¾à¤š à¤§à¥à¤¯à¥‡à¤¯à¤¾à¤•à¤¡à¥‡ à¤¨à¥‡à¤¤à¤¾à¤¤. à¤¶à¥à¤°à¥€à¤² à¤ªà¥à¤°à¤­à¥à¤ªà¤¾à¤¦ à¤¸à¤¾à¤‚à¤—à¤¤à¤¾à¤¤ à¤•à¥€ à¤•à¤°à¥à¤®à¤¾à¤ªà¤¾à¤¸à¥‚à¤¨ à¤®à¥à¤•à¥à¤¤à¥€ à¤¨à¤¾à¤¹à¥€, à¤•à¤°à¥à¤®à¤¾à¤šà¥à¤¯à¤¾ à¤­à¤¾à¤µà¤¨à¥‡à¤¤à¥‚à¤¨ à¤®à¥à¤•à¥à¤¤à¥€ à¤¹à¥‹à¤¤à¥‡.',
+      'à¤‡à¤‚à¤¦à¥à¤°à¤¿à¤¯à¤¾à¤‚à¤µà¤° à¤¨à¤¿à¤¯à¤‚à¤¤à¥à¤°à¤£ à¤ à¥‡à¤µà¤£à¤¾à¤°à¤¾, à¤«à¤³à¤¾à¤šà¥€ à¤†à¤¶à¤¾ à¤¸à¥‹à¤¡à¤£à¤¾à¤°à¤¾ à¤¸à¤¾à¤§à¤• â€” à¤¤à¥‹ à¤•à¤°à¥à¤® à¤•à¤°à¤¤à¤¾à¤¨à¤¾à¤¹à¥€ à¤®à¥à¤•à¥à¤¤ à¤†à¤¹à¥‡.',
     ],
     dn_hi: [
-      'माऊली कहते हैं: जो मन से त्यागी है, वह घर में रहकर भी संन्यासी है। भाव की शुद्धि ही असली संन्यास है।',
+      'à¤®à¤¾à¤Šà¤²à¥€ à¤•à¤¹à¤¤à¥‡ à¤¹à¥ˆà¤‚: à¤œà¥‹ à¤®à¤¨ à¤¸à¥‡ à¤¤à¥à¤¯à¤¾à¤—à¥€ à¤¹à¥ˆ, à¤µà¤¹ à¤˜à¤° à¤®à¥‡à¤‚ à¤°à¤¹à¤•à¤° à¤­à¥€ à¤¸à¤‚à¤¨à¥à¤¯à¤¾à¤¸à¥€ à¤¹à¥ˆà¥¤ à¤­à¤¾à¤µ à¤•à¥€ à¤¶à¥à¤¦à¥à¤§à¤¿ à¤¹à¥€ à¤…à¤¸à¤²à¥€ à¤¸à¤‚à¤¨à¥à¤¯à¤¾à¤¸ à¤¹à¥ˆà¥¤',
     ],
   },
   6:  {
-    title_hi: 'ध्यान-योग',
-    title_mr: 'ध्यान-योग',
-    theme_hi: 'मन की स्थिरता और ध्यान का अभ्यास',
-    theme_mr: 'मनाची स्थिरता आणि ध्यानाचा अभ्यास',
+    title_hi: 'à¤§à¥à¤¯à¤¾à¤¨-à¤¯à¥‹à¤—',
+    title_mr: 'à¤§à¥à¤¯à¤¾à¤¨-à¤¯à¥‹à¤—',
+    theme_hi: 'à¤®à¤¨ à¤•à¥€ à¤¸à¥à¤¥à¤¿à¤°à¤¤à¤¾ à¤”à¤° à¤§à¥à¤¯à¤¾à¤¨ à¤•à¤¾ à¤…à¤­à¥à¤¯à¤¾à¤¸',
+    theme_mr: 'à¤®à¤¨à¤¾à¤šà¥€ à¤¸à¥à¤¥à¤¿à¤°à¤¤à¤¾ à¤†à¤£à¤¿ à¤§à¥à¤¯à¤¾à¤¨à¤¾à¤šà¤¾ à¤…à¤­à¥à¤¯à¤¾à¤¸',
     insight_hi: [
-      'मन को वश में करना सबसे कठिन कार्य है, परंतु अभ्यास और वैराग्य से यह संभव है। श्रील प्रभुपाद बताते हैं कि भक्ति ही मन को स्थिर करने का सर्वोत्तम मार्ग है।',
-      'ध्यानयोगी का जीवन सुव्यवस्थित होता है — न अति खाना, न कम खाना; न अति सोना, न कम सोना। यह संतुलन ही योग की नींव है।',
-      'जो योगी बार-बार गिरता है और फिर उठकर अभ्यास करता है, वह भी अंततः परमात्मा को प्राप्त होता है। निरंतर प्रयास ही सफलता की कुंजी है।',
+      'à¤®à¤¨ à¤•à¥‹ à¤µà¤¶ à¤®à¥‡à¤‚ à¤•à¤°à¤¨à¤¾ à¤¸à¤¬à¤¸à¥‡ à¤•à¤ à¤¿à¤¨ à¤•à¤¾à¤°à¥à¤¯ à¤¹à¥ˆ, à¤ªà¤°à¤‚à¤¤à¥ à¤…à¤­à¥à¤¯à¤¾à¤¸ à¤”à¤° à¤µà¥ˆà¤°à¤¾à¤—à¥à¤¯ à¤¸à¥‡ à¤¯à¤¹ à¤¸à¤‚à¤­à¤µ à¤¹à¥ˆà¥¤ à¤¶à¥à¤°à¥€à¤² à¤ªà¥à¤°à¤­à¥à¤ªà¤¾à¤¦ à¤¬à¤¤à¤¾à¤¤à¥‡ à¤¹à¥ˆà¤‚ à¤•à¤¿ à¤­à¤•à¥à¤¤à¤¿ à¤¹à¥€ à¤®à¤¨ à¤•à¥‹ à¤¸à¥à¤¥à¤¿à¤° à¤•à¤°à¤¨à¥‡ à¤•à¤¾ à¤¸à¤°à¥à¤µà¥‹à¤¤à¥à¤¤à¤® à¤®à¤¾à¤°à¥à¤— à¤¹à¥ˆà¥¤',
+      'à¤§à¥à¤¯à¤¾à¤¨à¤¯à¥‹à¤—à¥€ à¤•à¤¾ à¤œà¥€à¤µà¤¨ à¤¸à¥à¤µà¥à¤¯à¤µà¤¸à¥à¤¥à¤¿à¤¤ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆ â€” à¤¨ à¤…à¤¤à¤¿ à¤–à¤¾à¤¨à¤¾, à¤¨ à¤•à¤® à¤–à¤¾à¤¨à¤¾; à¤¨ à¤…à¤¤à¤¿ à¤¸à¥‹à¤¨à¤¾, à¤¨ à¤•à¤® à¤¸à¥‹à¤¨à¤¾à¥¤ à¤¯à¤¹ à¤¸à¤‚à¤¤à¥à¤²à¤¨ à¤¹à¥€ à¤¯à¥‹à¤— à¤•à¥€ à¤¨à¥€à¤‚à¤µ à¤¹à¥ˆà¥¤',
+      'à¤œà¥‹ à¤¯à¥‹à¤—à¥€ à¤¬à¤¾à¤°-à¤¬à¤¾à¤° à¤—à¤¿à¤°à¤¤à¤¾ à¤¹à¥ˆ à¤”à¤° à¤«à¤¿à¤° à¤‰à¤ à¤•à¤° à¤…à¤­à¥à¤¯à¤¾à¤¸ à¤•à¤°à¤¤à¤¾ à¤¹à¥ˆ, à¤µà¤¹ à¤­à¥€ à¤…à¤‚à¤¤à¤¤à¤ƒ à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¤¾ à¤•à¥‹ à¤ªà¥à¤°à¤¾à¤ªà¥à¤¤ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆà¥¤ à¤¨à¤¿à¤°à¤‚à¤¤à¤° à¤ªà¥à¤°à¤¯à¤¾à¤¸ à¤¹à¥€ à¤¸à¤«à¤²à¤¤à¤¾ à¤•à¥€ à¤•à¥à¤‚à¤œà¥€ à¤¹à¥ˆà¥¤',
     ],
     insight_mr: [
-      'मनावर नियंत्रण ठेवणे सर्वात कठीण काम आहे, परंतु अभ्यास आणि वैराग्याने हे शक्य आहे. श्रील प्रभुपाद सांगतात की भक्तीच मनाला स्थिर करण्याचा सर्वोत्तम मार्ग आहे.',
-      'ध्यानयोग्याचे जीवन सुव्यवस्थित असते — अतिभोजन नाही, कमी भोजन नाही; अतिनिद्रा नाही, कमी निद्रा नाही.',
+      'à¤®à¤¨à¤¾à¤µà¤° à¤¨à¤¿à¤¯à¤‚à¤¤à¥à¤°à¤£ à¤ à¥‡à¤µà¤£à¥‡ à¤¸à¤°à¥à¤µà¤¾à¤¤ à¤•à¤ à¥€à¤£ à¤•à¤¾à¤® à¤†à¤¹à¥‡, à¤ªà¤°à¤‚à¤¤à¥ à¤…à¤­à¥à¤¯à¤¾à¤¸ à¤†à¤£à¤¿ à¤µà¥ˆà¤°à¤¾à¤—à¥à¤¯à¤¾à¤¨à¥‡ à¤¹à¥‡ à¤¶à¤•à¥à¤¯ à¤†à¤¹à¥‡. à¤¶à¥à¤°à¥€à¤² à¤ªà¥à¤°à¤­à¥à¤ªà¤¾à¤¦ à¤¸à¤¾à¤‚à¤—à¤¤à¤¾à¤¤ à¤•à¥€ à¤­à¤•à¥à¤¤à¥€à¤š à¤®à¤¨à¤¾à¤²à¤¾ à¤¸à¥à¤¥à¤¿à¤° à¤•à¤°à¤£à¥à¤¯à¤¾à¤šà¤¾ à¤¸à¤°à¥à¤µà¥‹à¤¤à¥à¤¤à¤® à¤®à¤¾à¤°à¥à¤— à¤†à¤¹à¥‡.',
+      'à¤§à¥à¤¯à¤¾à¤¨à¤¯à¥‹à¤—à¥à¤¯à¤¾à¤šà¥‡ à¤œà¥€à¤µà¤¨ à¤¸à¥à¤µà¥à¤¯à¤µà¤¸à¥à¤¥à¤¿à¤¤ à¤…à¤¸à¤¤à¥‡ â€” à¤…à¤¤à¤¿à¤­à¥‹à¤œà¤¨ à¤¨à¤¾à¤¹à¥€, à¤•à¤®à¥€ à¤­à¥‹à¤œà¤¨ à¤¨à¤¾à¤¹à¥€; à¤…à¤¤à¤¿à¤¨à¤¿à¤¦à¥à¤°à¤¾ à¤¨à¤¾à¤¹à¥€, à¤•à¤®à¥€ à¤¨à¤¿à¤¦à¥à¤°à¤¾ à¤¨à¤¾à¤¹à¥€.',
     ],
     dn_hi: [
-      'माऊली फरमाते हैं: दीपक हवा से दूर होने पर स्थिर रहता है — वैसे ही ध्यानस्थ मन निश्चल रहता है। यही योगी का लक्षण है।',
+      'à¤®à¤¾à¤Šà¤²à¥€ à¤«à¤°à¤®à¤¾à¤¤à¥‡ à¤¹à¥ˆà¤‚: à¤¦à¥€à¤ªà¤• à¤¹à¤µà¤¾ à¤¸à¥‡ à¤¦à¥‚à¤° à¤¹à¥‹à¤¨à¥‡ à¤ªà¤° à¤¸à¥à¤¥à¤¿à¤° à¤°à¤¹à¤¤à¤¾ à¤¹à¥ˆ â€” à¤µà¥ˆà¤¸à¥‡ à¤¹à¥€ à¤§à¥à¤¯à¤¾à¤¨à¤¸à¥à¤¥ à¤®à¤¨ à¤¨à¤¿à¤¶à¥à¤šà¤² à¤°à¤¹à¤¤à¤¾ à¤¹à¥ˆà¥¤ à¤¯à¤¹à¥€ à¤¯à¥‹à¤—à¥€ à¤•à¤¾ à¤²à¤•à¥à¤·à¤£ à¤¹à¥ˆà¥¤',
     ],
   },
   7:  {
-    title_hi: 'ज्ञान-विज्ञान-योग',
-    title_mr: 'ज्ञान-विज्ञान-योग',
-    theme_hi: 'परमात्मा का प्रत्यक्ष ज्ञान',
-    theme_mr: 'परमात्म्याचे प्रत्यक्ष ज्ञान',
+    title_hi: 'à¤œà¥à¤žà¤¾à¤¨-à¤µà¤¿à¤œà¥à¤žà¤¾à¤¨-à¤¯à¥‹à¤—',
+    title_mr: 'à¤œà¥à¤žà¤¾à¤¨-à¤µà¤¿à¤œà¥à¤žà¤¾à¤¨-à¤¯à¥‹à¤—',
+    theme_hi: 'à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¤¾ à¤•à¤¾ à¤ªà¥à¤°à¤¤à¥à¤¯à¤•à¥à¤· à¤œà¥à¤žà¤¾à¤¨',
+    theme_mr: 'à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¥à¤¯à¤¾à¤šà¥‡ à¤ªà¥à¤°à¤¤à¥à¤¯à¤•à¥à¤· à¤œà¥à¤žà¤¾à¤¨',
     insight_hi: [
-      'सम्पूर्ण ब्रह्माण्ड परमात्मा की दो शक्तियों से व्याप्त है — परा और अपरा। जड़ प्रकृति अपरा शक्ति है और जीव परा शक्ति। यह ज्ञान जिसे मिलता है, उसके लिए कुछ जानना शेष नहीं रहता।',
-      'जो परमात्मा को जानता है, वह सोने में सोना देखता है, मिट्टी में परमात्मा देखता है। सब कुछ उन्हीं से है और उन्हीं में है।',
+      'à¤¸à¤®à¥à¤ªà¥‚à¤°à¥à¤£ à¤¬à¥à¤°à¤¹à¥à¤®à¤¾à¤£à¥à¤¡ à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¤¾ à¤•à¥€ à¤¦à¥‹ à¤¶à¤•à¥à¤¤à¤¿à¤¯à¥‹à¤‚ à¤¸à¥‡ à¤µà¥à¤¯à¤¾à¤ªà¥à¤¤ à¤¹à¥ˆ â€” à¤ªà¤°à¤¾ à¤”à¤° à¤…à¤ªà¤°à¤¾à¥¤ à¤œà¤¡à¤¼ à¤ªà¥à¤°à¤•à¥ƒà¤¤à¤¿ à¤…à¤ªà¤°à¤¾ à¤¶à¤•à¥à¤¤à¤¿ à¤¹à¥ˆ à¤”à¤° à¤œà¥€à¤µ à¤ªà¤°à¤¾ à¤¶à¤•à¥à¤¤à¤¿à¥¤ à¤¯à¤¹ à¤œà¥à¤žà¤¾à¤¨ à¤œà¤¿à¤¸à¥‡ à¤®à¤¿à¤²à¤¤à¤¾ à¤¹à¥ˆ, à¤‰à¤¸à¤•à¥‡ à¤²à¤¿à¤ à¤•à¥à¤› à¤œà¤¾à¤¨à¤¨à¤¾ à¤¶à¥‡à¤· à¤¨à¤¹à¥€à¤‚ à¤°à¤¹à¤¤à¤¾à¥¤',
+      'à¤œà¥‹ à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¤¾ à¤•à¥‹ à¤œà¤¾à¤¨à¤¤à¤¾ à¤¹à¥ˆ, à¤µà¤¹ à¤¸à¥‹à¤¨à¥‡ à¤®à¥‡à¤‚ à¤¸à¥‹à¤¨à¤¾ à¤¦à¥‡à¤–à¤¤à¤¾ à¤¹à¥ˆ, à¤®à¤¿à¤Ÿà¥à¤Ÿà¥€ à¤®à¥‡à¤‚ à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¤¾ à¤¦à¥‡à¤–à¤¤à¤¾ à¤¹à¥ˆà¥¤ à¤¸à¤¬ à¤•à¥à¤› à¤‰à¤¨à¥à¤¹à¥€à¤‚ à¤¸à¥‡ à¤¹à¥ˆ à¤”à¤° à¤‰à¤¨à¥à¤¹à¥€à¤‚ à¤®à¥‡à¤‚ à¤¹à¥ˆà¥¤',
     ],
     insight_mr: [
-      'संपूर्ण विश्व परमात्म्याच्या दोन शक्तींनी व्यापलेले आहे — परा आणि अपरा. जड प्रकृती अपरा शक्ती आहे आणि जीव परा शक्ती.',
-      'जो परमात्म्याला जाणतो, तो सोन्यात सोनेच पाहतो, मातीत परमात्माच पाहतो. सर्व काही त्यांच्यापासून आहे आणि त्यांच्यातच आहे.',
+      'à¤¸à¤‚à¤ªà¥‚à¤°à¥à¤£ à¤µà¤¿à¤¶à¥à¤µ à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¥à¤¯à¤¾à¤šà¥à¤¯à¤¾ à¤¦à¥‹à¤¨ à¤¶à¤•à¥à¤¤à¥€à¤‚à¤¨à¥€ à¤µà¥à¤¯à¤¾à¤ªà¤²à¥‡à¤²à¥‡ à¤†à¤¹à¥‡ â€” à¤ªà¤°à¤¾ à¤†à¤£à¤¿ à¤…à¤ªà¤°à¤¾. à¤œà¤¡ à¤ªà¥à¤°à¤•à¥ƒà¤¤à¥€ à¤…à¤ªà¤°à¤¾ à¤¶à¤•à¥à¤¤à¥€ à¤†à¤¹à¥‡ à¤†à¤£à¤¿ à¤œà¥€à¤µ à¤ªà¤°à¤¾ à¤¶à¤•à¥à¤¤à¥€.',
+      'à¤œà¥‹ à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¥à¤¯à¤¾à¤²à¤¾ à¤œà¤¾à¤£à¤¤à¥‹, à¤¤à¥‹ à¤¸à¥‹à¤¨à¥à¤¯à¤¾à¤¤ à¤¸à¥‹à¤¨à¥‡à¤š à¤ªà¤¾à¤¹à¤¤à¥‹, à¤®à¤¾à¤¤à¥€à¤¤ à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¤¾à¤š à¤ªà¤¾à¤¹à¤¤à¥‹. à¤¸à¤°à¥à¤µ à¤•à¤¾à¤¹à¥€ à¤¤à¥à¤¯à¤¾à¤‚à¤šà¥à¤¯à¤¾à¤ªà¤¾à¤¸à¥‚à¤¨ à¤†à¤¹à¥‡ à¤†à¤£à¤¿ à¤¤à¥à¤¯à¤¾à¤‚à¤šà¥à¤¯à¤¾à¤¤à¤š à¤†à¤¹à¥‡.',
     ],
     dn_hi: [
-      'माऊली कहते हैं: जैसे सोने के अनेक गहनों में सोना ही एक है, वैसे ही अनेक नामों में एक ही परमेश्वर है।',
+      'à¤®à¤¾à¤Šà¤²à¥€ à¤•à¤¹à¤¤à¥‡ à¤¹à¥ˆà¤‚: à¤œà¥ˆà¤¸à¥‡ à¤¸à¥‹à¤¨à¥‡ à¤•à¥‡ à¤…à¤¨à¥‡à¤• à¤—à¤¹à¤¨à¥‹à¤‚ à¤®à¥‡à¤‚ à¤¸à¥‹à¤¨à¤¾ à¤¹à¥€ à¤à¤• à¤¹à¥ˆ, à¤µà¥ˆà¤¸à¥‡ à¤¹à¥€ à¤…à¤¨à¥‡à¤• à¤¨à¤¾à¤®à¥‹à¤‚ à¤®à¥‡à¤‚ à¤à¤• à¤¹à¥€ à¤ªà¤°à¤®à¥‡à¤¶à¥à¤µà¤° à¤¹à¥ˆà¥¤',
     ],
   },
   8:  {
-    title_hi: 'अक्षरब्रह्म-योग',
-    title_mr: 'अक्षरब्रह्म-योग',
-    theme_hi: 'अविनाशी परब्रह्म और अंतिम स्मरण',
-    theme_mr: 'अविनाशी परब्रह्म आणि अंतिम स्मरण',
+    title_hi: 'à¤…à¤•à¥à¤·à¤°à¤¬à¥à¤°à¤¹à¥à¤®-à¤¯à¥‹à¤—',
+    title_mr: 'à¤…à¤•à¥à¤·à¤°à¤¬à¥à¤°à¤¹à¥à¤®-à¤¯à¥‹à¤—',
+    theme_hi: 'à¤…à¤µà¤¿à¤¨à¤¾à¤¶à¥€ à¤ªà¤°à¤¬à¥à¤°à¤¹à¥à¤® à¤”à¤° à¤…à¤‚à¤¤à¤¿à¤® à¤¸à¥à¤®à¤°à¤£',
+    theme_mr: 'à¤…à¤µà¤¿à¤¨à¤¾à¤¶à¥€ à¤ªà¤°à¤¬à¥à¤°à¤¹à¥à¤® à¤†à¤£à¤¿ à¤…à¤‚à¤¤à¤¿à¤® à¤¸à¥à¤®à¤°à¤£',
     insight_hi: [
-      'मृत्यु के समय जिसका मन परमात्मा में स्थिर हो, वह परमात्मा को ही प्राप्त होता है। इसीलिए श्रील प्रभुपाद सदा हरि-नाम स्मरण पर बल देते हैं।',
-      'जो मन जीवनभर जिस भाव में रहता है, वही भाव मृत्यु के क्षण में प्रकट होता है। इसीलिए नित्य साधना अनिवार्य है।',
+      'à¤®à¥ƒà¤¤à¥à¤¯à¥ à¤•à¥‡ à¤¸à¤®à¤¯ à¤œà¤¿à¤¸à¤•à¤¾ à¤®à¤¨ à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¤¾ à¤®à¥‡à¤‚ à¤¸à¥à¤¥à¤¿à¤° à¤¹à¥‹, à¤µà¤¹ à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¤¾ à¤•à¥‹ à¤¹à¥€ à¤ªà¥à¤°à¤¾à¤ªà¥à¤¤ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆà¥¤ à¤‡à¤¸à¥€à¤²à¤¿à¤ à¤¶à¥à¤°à¥€à¤² à¤ªà¥à¤°à¤­à¥à¤ªà¤¾à¤¦ à¤¸à¤¦à¤¾ à¤¹à¤°à¤¿-à¤¨à¤¾à¤® à¤¸à¥à¤®à¤°à¤£ à¤ªà¤° à¤¬à¤² à¤¦à¥‡à¤¤à¥‡ à¤¹à¥ˆà¤‚à¥¤',
+      'à¤œà¥‹ à¤®à¤¨ à¤œà¥€à¤µà¤¨à¤­à¤° à¤œà¤¿à¤¸ à¤­à¤¾à¤µ à¤®à¥‡à¤‚ à¤°à¤¹à¤¤à¤¾ à¤¹à¥ˆ, à¤µà¤¹à¥€ à¤­à¤¾à¤µ à¤®à¥ƒà¤¤à¥à¤¯à¥ à¤•à¥‡ à¤•à¥à¤·à¤£ à¤®à¥‡à¤‚ à¤ªà¥à¤°à¤•à¤Ÿ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆà¥¤ à¤‡à¤¸à¥€à¤²à¤¿à¤ à¤¨à¤¿à¤¤à¥à¤¯ à¤¸à¤¾à¤§à¤¨à¤¾ à¤…à¤¨à¤¿à¤µà¤¾à¤°à¥à¤¯ à¤¹à¥ˆà¥¤',
     ],
     insight_mr: [
-      'मृत्यूच्या वेळी ज्याचे मन परमात्म्यात स्थिर असते, तो परमात्म्यालाच प्राप्त होतो. म्हणूनच श्रील प्रभुपाद नेहमी हरिनाम स्मरणावर भर देतात.',
-      'मन जीवनभर ज्या भावात राहते, तोच भाव मृत्यूच्या क्षणी प्रकट होतो. म्हणूनच नित्य साधना अनिवार्य आहे.',
+      'à¤®à¥ƒà¤¤à¥à¤¯à¥‚à¤šà¥à¤¯à¤¾ à¤µà¥‡à¤³à¥€ à¤œà¥à¤¯à¤¾à¤šà¥‡ à¤®à¤¨ à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¥à¤¯à¤¾à¤¤ à¤¸à¥à¤¥à¤¿à¤° à¤…à¤¸à¤¤à¥‡, à¤¤à¥‹ à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¥à¤¯à¤¾à¤²à¤¾à¤š à¤ªà¥à¤°à¤¾à¤ªà¥à¤¤ à¤¹à¥‹à¤¤à¥‹. à¤®à¥à¤¹à¤£à¥‚à¤¨à¤š à¤¶à¥à¤°à¥€à¤² à¤ªà¥à¤°à¤­à¥à¤ªà¤¾à¤¦ à¤¨à¥‡à¤¹à¤®à¥€ à¤¹à¤°à¤¿à¤¨à¤¾à¤® à¤¸à¥à¤®à¤°à¤£à¤¾à¤µà¤° à¤­à¤° à¤¦à¥‡à¤¤à¤¾à¤¤.',
+      'à¤®à¤¨ à¤œà¥€à¤µà¤¨à¤­à¤° à¤œà¥à¤¯à¤¾ à¤­à¤¾à¤µà¤¾à¤¤ à¤°à¤¾à¤¹à¤¤à¥‡, à¤¤à¥‹à¤š à¤­à¤¾à¤µ à¤®à¥ƒà¤¤à¥à¤¯à¥‚à¤šà¥à¤¯à¤¾ à¤•à¥à¤·à¤£à¥€ à¤ªà¥à¤°à¤•à¤Ÿ à¤¹à¥‹à¤¤à¥‹. à¤®à¥à¤¹à¤£à¥‚à¤¨à¤š à¤¨à¤¿à¤¤à¥à¤¯ à¤¸à¤¾à¤§à¤¨à¤¾ à¤…à¤¨à¤¿à¤µà¤¾à¤°à¥à¤¯ à¤†à¤¹à¥‡.',
     ],
     dn_hi: [
-      'माऊली फरमाते हैं: सुगंध वस्त्र से अलग होकर भी वस्त्र को सुगंधित रखती है — वैसे ही भक्ति जीवन को पवित्र रखती है।',
+      'à¤®à¤¾à¤Šà¤²à¥€ à¤«à¤°à¤®à¤¾à¤¤à¥‡ à¤¹à¥ˆà¤‚: à¤¸à¥à¤—à¤‚à¤§ à¤µà¤¸à¥à¤¤à¥à¤° à¤¸à¥‡ à¤…à¤²à¤— à¤¹à¥‹à¤•à¤° à¤­à¥€ à¤µà¤¸à¥à¤¤à¥à¤° à¤•à¥‹ à¤¸à¥à¤—à¤‚à¤§à¤¿à¤¤ à¤°à¤–à¤¤à¥€ à¤¹à¥ˆ â€” à¤µà¥ˆà¤¸à¥‡ à¤¹à¥€ à¤­à¤•à¥à¤¤à¤¿ à¤œà¥€à¤µà¤¨ à¤•à¥‹ à¤ªà¤µà¤¿à¤¤à¥à¤° à¤°à¤–à¤¤à¥€ à¤¹à¥ˆà¥¤',
     ],
   },
   9:  {
-    title_hi: 'राज-विद्या-राज-गुह्य-योग',
-    title_mr: 'राज-विद्या-राज-गुह्य-योग',
-    theme_hi: 'शुद्ध भक्ति का सर्वोच्च पथ',
-    theme_mr: 'शुद्ध भक्तीचा सर्वोच्च मार्ग',
+    title_hi: 'à¤°à¤¾à¤œ-à¤µà¤¿à¤¦à¥à¤¯à¤¾-à¤°à¤¾à¤œ-à¤—à¥à¤¹à¥à¤¯-à¤¯à¥‹à¤—',
+    title_mr: 'à¤°à¤¾à¤œ-à¤µà¤¿à¤¦à¥à¤¯à¤¾-à¤°à¤¾à¤œ-à¤—à¥à¤¹à¥à¤¯-à¤¯à¥‹à¤—',
+    theme_hi: 'à¤¶à¥à¤¦à¥à¤§ à¤­à¤•à¥à¤¤à¤¿ à¤•à¤¾ à¤¸à¤°à¥à¤µà¥‹à¤šà¥à¤š à¤ªà¤¥',
+    theme_mr: 'à¤¶à¥à¤¦à¥à¤§ à¤­à¤•à¥à¤¤à¥€à¤šà¤¾ à¤¸à¤°à¥à¤µà¥‹à¤šà¥à¤š à¤®à¤¾à¤°à¥à¤—',
     insight_hi: [
-      'पत्र, पुष्प, फल या जल — जो कुछ भी भक्त प्रेम से अर्पित करे, भगवान उसे स्वीकार करते हैं। यह अध्याय भक्ति-योग का सार है।',
-      'श्रील प्रभुपाद बताते हैं कि इस ज्ञान को समझना ही "राज-विद्या" है — सभी विद्याओं का राजा। इसे समझने वाला सीधे परमात्मा तक पहुँचता है।',
+      'à¤ªà¤¤à¥à¤°, à¤ªà¥à¤·à¥à¤ª, à¤«à¤² à¤¯à¤¾ à¤œà¤² â€” à¤œà¥‹ à¤•à¥à¤› à¤­à¥€ à¤­à¤•à¥à¤¤ à¤ªà¥à¤°à¥‡à¤® à¤¸à¥‡ à¤…à¤°à¥à¤ªà¤¿à¤¤ à¤•à¤°à¥‡, à¤­à¤—à¤µà¤¾à¤¨ à¤‰à¤¸à¥‡ à¤¸à¥à¤µà¥€à¤•à¤¾à¤° à¤•à¤°à¤¤à¥‡ à¤¹à¥ˆà¤‚à¥¤ à¤¯à¤¹ à¤…à¤§à¥à¤¯à¤¾à¤¯ à¤­à¤•à¥à¤¤à¤¿-à¤¯à¥‹à¤— à¤•à¤¾ à¤¸à¤¾à¤° à¤¹à¥ˆà¥¤',
+      'à¤¶à¥à¤°à¥€à¤² à¤ªà¥à¤°à¤­à¥à¤ªà¤¾à¤¦ à¤¬à¤¤à¤¾à¤¤à¥‡ à¤¹à¥ˆà¤‚ à¤•à¤¿ à¤‡à¤¸ à¤œà¥à¤žà¤¾à¤¨ à¤•à¥‹ à¤¸à¤®à¤à¤¨à¤¾ à¤¹à¥€ "à¤°à¤¾à¤œ-à¤µà¤¿à¤¦à¥à¤¯à¤¾" à¤¹à¥ˆ â€” à¤¸à¤­à¥€ à¤µà¤¿à¤¦à¥à¤¯à¤¾à¤“à¤‚ à¤•à¤¾ à¤°à¤¾à¤œà¤¾à¥¤ à¤‡à¤¸à¥‡ à¤¸à¤®à¤à¤¨à¥‡ à¤µà¤¾à¤²à¤¾ à¤¸à¥€à¤§à¥‡ à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¤¾ à¤¤à¤• à¤ªà¤¹à¥à¤à¤šà¤¤à¤¾ à¤¹à¥ˆà¥¤',
     ],
     insight_mr: [
-      'पत्र, पुष्प, फळ किंवा जल — जे काही भक्त प्रेमाने अर्पण करतो, भगवान ते स्वीकारतात. हा अध्याय भक्तियोगाचे सार आहे.',
-      'श्रील प्रभुपाद सांगतात की हे ज्ञान समजणेच "राज-विद्या" आहे — सर्व विद्यांचा राजा.',
+      'à¤ªà¤¤à¥à¤°, à¤ªà¥à¤·à¥à¤ª, à¤«à¤³ à¤•à¤¿à¤‚à¤µà¤¾ à¤œà¤² â€” à¤œà¥‡ à¤•à¤¾à¤¹à¥€ à¤­à¤•à¥à¤¤ à¤ªà¥à¤°à¥‡à¤®à¤¾à¤¨à¥‡ à¤…à¤°à¥à¤ªà¤£ à¤•à¤°à¤¤à¥‹, à¤­à¤—à¤µà¤¾à¤¨ à¤¤à¥‡ à¤¸à¥à¤µà¥€à¤•à¤¾à¤°à¤¤à¤¾à¤¤. à¤¹à¤¾ à¤…à¤§à¥à¤¯à¤¾à¤¯ à¤­à¤•à¥à¤¤à¤¿à¤¯à¥‹à¤—à¤¾à¤šà¥‡ à¤¸à¤¾à¤° à¤†à¤¹à¥‡.',
+      'à¤¶à¥à¤°à¥€à¤² à¤ªà¥à¤°à¤­à¥à¤ªà¤¾à¤¦ à¤¸à¤¾à¤‚à¤—à¤¤à¤¾à¤¤ à¤•à¥€ à¤¹à¥‡ à¤œà¥à¤žà¤¾à¤¨ à¤¸à¤®à¤œà¤£à¥‡à¤š "à¤°à¤¾à¤œ-à¤µà¤¿à¤¦à¥à¤¯à¤¾" à¤†à¤¹à¥‡ â€” à¤¸à¤°à¥à¤µ à¤µà¤¿à¤¦à¥à¤¯à¤¾à¤‚à¤šà¤¾ à¤°à¤¾à¤œà¤¾.',
     ],
     dn_hi: [
-      'माऊली फरमाते हैं: नदी समुद्र से मिलने तक विश्राम नहीं करती — वैसे ही भक्त परमात्मा में विलीन होने तक नहीं रुकता।',
+      'à¤®à¤¾à¤Šà¤²à¥€ à¤«à¤°à¤®à¤¾à¤¤à¥‡ à¤¹à¥ˆà¤‚: à¤¨à¤¦à¥€ à¤¸à¤®à¥à¤¦à¥à¤° à¤¸à¥‡ à¤®à¤¿à¤²à¤¨à¥‡ à¤¤à¤• à¤µà¤¿à¤¶à¥à¤°à¤¾à¤® à¤¨à¤¹à¥€à¤‚ à¤•à¤°à¤¤à¥€ â€” à¤µà¥ˆà¤¸à¥‡ à¤¹à¥€ à¤­à¤•à¥à¤¤ à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¤¾ à¤®à¥‡à¤‚ à¤µà¤¿à¤²à¥€à¤¨ à¤¹à¥‹à¤¨à¥‡ à¤¤à¤• à¤¨à¤¹à¥€à¤‚ à¤°à¥à¤•à¤¤à¤¾à¥¤',
     ],
   },
   10: {
-    title_hi: 'विभूति-योग',
-    title_mr: 'विभूति-योग',
-    theme_hi: 'परमात्मा की दिव्य विभूतियाँ',
-    theme_mr: 'परमात्म्याच्या दिव्य विभूती',
+    title_hi: 'à¤µà¤¿à¤­à¥‚à¤¤à¤¿-à¤¯à¥‹à¤—',
+    title_mr: 'à¤µà¤¿à¤­à¥‚à¤¤à¤¿-à¤¯à¥‹à¤—',
+    theme_hi: 'à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¤¾ à¤•à¥€ à¤¦à¤¿à¤µà¥à¤¯ à¤µà¤¿à¤­à¥‚à¤¤à¤¿à¤¯à¤¾à¤',
+    theme_mr: 'à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¥à¤¯à¤¾à¤šà¥à¤¯à¤¾ à¤¦à¤¿à¤µà¥à¤¯ à¤µà¤¿à¤­à¥‚à¤¤à¥€',
     insight_hi: [
-      'जो कुछ श्रेष्ठ, सुंदर और शक्तिशाली है — वह सब परमात्मा की विभूति है। नदियों में गंगा, प्रकाशों में सूर्य, ऋषियों में भृगु — सब परमेश्वर के ही रूप हैं।',
-      'श्रील प्रभुपाद कहते हैं: जो इन विभूतियों को देखकर परमात्मा का स्मरण करता है, उसका योग निरंतर चलता रहता है।',
+      'à¤œà¥‹ à¤•à¥à¤› à¤¶à¥à¤°à¥‡à¤·à¥à¤ , à¤¸à¥à¤‚à¤¦à¤° à¤”à¤° à¤¶à¤•à¥à¤¤à¤¿à¤¶à¤¾à¤²à¥€ à¤¹à¥ˆ â€” à¤µà¤¹ à¤¸à¤¬ à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¤¾ à¤•à¥€ à¤µà¤¿à¤­à¥‚à¤¤à¤¿ à¤¹à¥ˆà¥¤ à¤¨à¤¦à¤¿à¤¯à¥‹à¤‚ à¤®à¥‡à¤‚ à¤—à¤‚à¤—à¤¾, à¤ªà¥à¤°à¤•à¤¾à¤¶à¥‹à¤‚ à¤®à¥‡à¤‚ à¤¸à¥‚à¤°à¥à¤¯, à¤‹à¤·à¤¿à¤¯à¥‹à¤‚ à¤®à¥‡à¤‚ à¤­à¥ƒà¤—à¥ â€” à¤¸à¤¬ à¤ªà¤°à¤®à¥‡à¤¶à¥à¤µà¤° à¤•à¥‡ à¤¹à¥€ à¤°à¥‚à¤ª à¤¹à¥ˆà¤‚à¥¤',
+      'à¤¶à¥à¤°à¥€à¤² à¤ªà¥à¤°à¤­à¥à¤ªà¤¾à¤¦ à¤•à¤¹à¤¤à¥‡ à¤¹à¥ˆà¤‚: à¤œà¥‹ à¤‡à¤¨ à¤µà¤¿à¤­à¥‚à¤¤à¤¿à¤¯à¥‹à¤‚ à¤•à¥‹ à¤¦à¥‡à¤–à¤•à¤° à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¤¾ à¤•à¤¾ à¤¸à¥à¤®à¤°à¤£ à¤•à¤°à¤¤à¤¾ à¤¹à¥ˆ, à¤‰à¤¸à¤•à¤¾ à¤¯à¥‹à¤— à¤¨à¤¿à¤°à¤‚à¤¤à¤° à¤šà¤²à¤¤à¤¾ à¤°à¤¹à¤¤à¤¾ à¤¹à¥ˆà¥¤',
     ],
     insight_mr: [
-      'जे काही श्रेष्ठ, सुंदर आणि शक्तिशाली आहे — ते सर्व परमात्म्याची विभूती आहे. नद्यांत गंगा, प्रकाशांत सूर्य — सर्व परमेश्वराचेच रूप आहेत.',
-      'श्रील प्रभुपाद म्हणतात: जो या विभूती पाहून परमात्म्याचे स्मरण करतो, त्याचा योग अखंड चालत राहतो.',
+      'à¤œà¥‡ à¤•à¤¾à¤¹à¥€ à¤¶à¥à¤°à¥‡à¤·à¥à¤ , à¤¸à¥à¤‚à¤¦à¤° à¤†à¤£à¤¿ à¤¶à¤•à¥à¤¤à¤¿à¤¶à¤¾à¤²à¥€ à¤†à¤¹à¥‡ â€” à¤¤à¥‡ à¤¸à¤°à¥à¤µ à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¥à¤¯à¤¾à¤šà¥€ à¤µà¤¿à¤­à¥‚à¤¤à¥€ à¤†à¤¹à¥‡. à¤¨à¤¦à¥à¤¯à¤¾à¤‚à¤¤ à¤—à¤‚à¤—à¤¾, à¤ªà¥à¤°à¤•à¤¾à¤¶à¤¾à¤‚à¤¤ à¤¸à¥‚à¤°à¥à¤¯ â€” à¤¸à¤°à¥à¤µ à¤ªà¤°à¤®à¥‡à¤¶à¥à¤µà¤°à¤¾à¤šà¥‡à¤š à¤°à¥‚à¤ª à¤†à¤¹à¥‡à¤¤.',
+      'à¤¶à¥à¤°à¥€à¤² à¤ªà¥à¤°à¤­à¥à¤ªà¤¾à¤¦ à¤®à¥à¤¹à¤£à¤¤à¤¾à¤¤: à¤œà¥‹ à¤¯à¤¾ à¤µà¤¿à¤­à¥‚à¤¤à¥€ à¤ªà¤¾à¤¹à¥‚à¤¨ à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¥à¤¯à¤¾à¤šà¥‡ à¤¸à¥à¤®à¤°à¤£ à¤•à¤°à¤¤à¥‹, à¤¤à¥à¤¯à¤¾à¤šà¤¾ à¤¯à¥‹à¤— à¤…à¤–à¤‚à¤¡ à¤šà¤¾à¤²à¤¤ à¤°à¤¾à¤¹à¤¤à¥‹.',
     ],
     dn_hi: [
-      'माऊली कहते हैं: परमात्मा की विभूतियाँ अनंत हैं — जो भी श्रेष्ठ है, वह उन्हीं का अंश है। इसी दृष्टि से जगत को देखो।',
+      'à¤®à¤¾à¤Šà¤²à¥€ à¤•à¤¹à¤¤à¥‡ à¤¹à¥ˆà¤‚: à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¤¾ à¤•à¥€ à¤µà¤¿à¤­à¥‚à¤¤à¤¿à¤¯à¤¾à¤ à¤…à¤¨à¤‚à¤¤ à¤¹à¥ˆà¤‚ â€” à¤œà¥‹ à¤­à¥€ à¤¶à¥à¤°à¥‡à¤·à¥à¤  à¤¹à¥ˆ, à¤µà¤¹ à¤‰à¤¨à¥à¤¹à¥€à¤‚ à¤•à¤¾ à¤…à¤‚à¤¶ à¤¹à¥ˆà¥¤ à¤‡à¤¸à¥€ à¤¦à¥ƒà¤·à¥à¤Ÿà¤¿ à¤¸à¥‡ à¤œà¤—à¤¤ à¤•à¥‹ à¤¦à¥‡à¤–à¥‹à¥¤',
     ],
   },
   11: {
-    title_hi: 'विश्वरूप-दर्शन-योग',
-    title_mr: 'विश्वरूप-दर्शन-योग',
-    theme_hi: 'परमात्मा के विराट रूप का दर्शन',
-    theme_mr: 'परमात्म्याच्या विराट रूपाचे दर्शन',
+    title_hi: 'à¤µà¤¿à¤¶à¥à¤µà¤°à¥‚à¤ª-à¤¦à¤°à¥à¤¶à¤¨-à¤¯à¥‹à¤—',
+    title_mr: 'à¤µà¤¿à¤¶à¥à¤µà¤°à¥‚à¤ª-à¤¦à¤°à¥à¤¶à¤¨-à¤¯à¥‹à¤—',
+    theme_hi: 'à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¤¾ à¤•à¥‡ à¤µà¤¿à¤°à¤¾à¤Ÿ à¤°à¥‚à¤ª à¤•à¤¾ à¤¦à¤°à¥à¤¶à¤¨',
+    theme_mr: 'à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¥à¤¯à¤¾à¤šà¥à¤¯à¤¾ à¤µà¤¿à¤°à¤¾à¤Ÿ à¤°à¥‚à¤ªà¤¾à¤šà¥‡ à¤¦à¤°à¥à¤¶à¤¨',
     insight_hi: [
-      'अर्जुन ने दिव्य दृष्टि पाकर भगवान का विश्वरूप देखा — जो समस्त ब्रह्माण्ड को अपने में समेटे हुए था। यह दर्शन अर्जुन को कंपा गया।',
-      'श्रील प्रभुपाद बताते हैं कि विश्वरूप दर्शन भगवान की एक झलक मात्र है — उनका असली रूप द्विभुज श्यामसुंदर है जो भक्तों को प्रिय है।',
+      'à¤…à¤°à¥à¤œà¥à¤¨ à¤¨à¥‡ à¤¦à¤¿à¤µà¥à¤¯ à¤¦à¥ƒà¤·à¥à¤Ÿà¤¿ à¤ªà¤¾à¤•à¤° à¤­à¤—à¤µà¤¾à¤¨ à¤•à¤¾ à¤µà¤¿à¤¶à¥à¤µà¤°à¥‚à¤ª à¤¦à¥‡à¤–à¤¾ â€” à¤œà¥‹ à¤¸à¤®à¤¸à¥à¤¤ à¤¬à¥à¤°à¤¹à¥à¤®à¤¾à¤£à¥à¤¡ à¤•à¥‹ à¤…à¤ªà¤¨à¥‡ à¤®à¥‡à¤‚ à¤¸à¤®à¥‡à¤Ÿà¥‡ à¤¹à¥à¤ à¤¥à¤¾à¥¤ à¤¯à¤¹ à¤¦à¤°à¥à¤¶à¤¨ à¤…à¤°à¥à¤œà¥à¤¨ à¤•à¥‹ à¤•à¤‚à¤ªà¤¾ à¤—à¤¯à¤¾à¥¤',
+      'à¤¶à¥à¤°à¥€à¤² à¤ªà¥à¤°à¤­à¥à¤ªà¤¾à¤¦ à¤¬à¤¤à¤¾à¤¤à¥‡ à¤¹à¥ˆà¤‚ à¤•à¤¿ à¤µà¤¿à¤¶à¥à¤µà¤°à¥‚à¤ª à¤¦à¤°à¥à¤¶à¤¨ à¤­à¤—à¤µà¤¾à¤¨ à¤•à¥€ à¤à¤• à¤à¤²à¤• à¤®à¤¾à¤¤à¥à¤° à¤¹à¥ˆ â€” à¤‰à¤¨à¤•à¤¾ à¤…à¤¸à¤²à¥€ à¤°à¥‚à¤ª à¤¦à¥à¤µà¤¿à¤­à¥à¤œ à¤¶à¥à¤¯à¤¾à¤®à¤¸à¥à¤‚à¤¦à¤° à¤¹à¥ˆ à¤œà¥‹ à¤­à¤•à¥à¤¤à¥‹à¤‚ à¤•à¥‹ à¤ªà¥à¤°à¤¿à¤¯ à¤¹à¥ˆà¥¤',
     ],
     insight_mr: [
-      'अर्जुनाने दिव्य दृष्टी मिळवून भगवंताचे विश्वरूप पाहिले — जे संपूर्ण विश्वाला आपल्यात सामावून घेत होते. हे दर्शन अर्जुनाला थरथरवून गेले.',
-      'श्रील प्रभुपाद सांगतात की विश्वरूप दर्शन भगवंताची एक झलक मात्र आहे — त्यांचे खरे रूप द्विभुज श्यामसुंदर आहे जे भक्तांना प्रिय आहे.',
+      'à¤…à¤°à¥à¤œà¥à¤¨à¤¾à¤¨à¥‡ à¤¦à¤¿à¤µà¥à¤¯ à¤¦à¥ƒà¤·à¥à¤Ÿà¥€ à¤®à¤¿à¤³à¤µà¥‚à¤¨ à¤­à¤—à¤µà¤‚à¤¤à¤¾à¤šà¥‡ à¤µà¤¿à¤¶à¥à¤µà¤°à¥‚à¤ª à¤ªà¤¾à¤¹à¤¿à¤²à¥‡ â€” à¤œà¥‡ à¤¸à¤‚à¤ªà¥‚à¤°à¥à¤£ à¤µà¤¿à¤¶à¥à¤µà¤¾à¤²à¤¾ à¤†à¤ªà¤²à¥à¤¯à¤¾à¤¤ à¤¸à¤¾à¤®à¤¾à¤µà¥‚à¤¨ à¤˜à¥‡à¤¤ à¤¹à¥‹à¤¤à¥‡. à¤¹à¥‡ à¤¦à¤°à¥à¤¶à¤¨ à¤…à¤°à¥à¤œà¥à¤¨à¤¾à¤²à¤¾ à¤¥à¤°à¤¥à¤°à¤µà¥‚à¤¨ à¤—à¥‡à¤²à¥‡.',
+      'à¤¶à¥à¤°à¥€à¤² à¤ªà¥à¤°à¤­à¥à¤ªà¤¾à¤¦ à¤¸à¤¾à¤‚à¤—à¤¤à¤¾à¤¤ à¤•à¥€ à¤µà¤¿à¤¶à¥à¤µà¤°à¥‚à¤ª à¤¦à¤°à¥à¤¶à¤¨ à¤­à¤—à¤µà¤‚à¤¤à¤¾à¤šà¥€ à¤à¤• à¤à¤²à¤• à¤®à¤¾à¤¤à¥à¤° à¤†à¤¹à¥‡ â€” à¤¤à¥à¤¯à¤¾à¤‚à¤šà¥‡ à¤–à¤°à¥‡ à¤°à¥‚à¤ª à¤¦à¥à¤µà¤¿à¤­à¥à¤œ à¤¶à¥à¤¯à¤¾à¤®à¤¸à¥à¤‚à¤¦à¤° à¤†à¤¹à¥‡ à¤œà¥‡ à¤­à¤•à¥à¤¤à¤¾à¤‚à¤¨à¤¾ à¤ªà¥à¤°à¤¿à¤¯ à¤†à¤¹à¥‡.',
     ],
     dn_hi: [
-      'माऊली फरमाते हैं: सम्पूर्ण सृष्टि ही परमेश्वर का शरीर है। जब यह दृष्टि मिलती है, तो भेद का भ्रम मिट जाता है।',
+      'à¤®à¤¾à¤Šà¤²à¥€ à¤«à¤°à¤®à¤¾à¤¤à¥‡ à¤¹à¥ˆà¤‚: à¤¸à¤®à¥à¤ªà¥‚à¤°à¥à¤£ à¤¸à¥ƒà¤·à¥à¤Ÿà¤¿ à¤¹à¥€ à¤ªà¤°à¤®à¥‡à¤¶à¥à¤µà¤° à¤•à¤¾ à¤¶à¤°à¥€à¤° à¤¹à¥ˆà¥¤ à¤œà¤¬ à¤¯à¤¹ à¤¦à¥ƒà¤·à¥à¤Ÿà¤¿ à¤®à¤¿à¤²à¤¤à¥€ à¤¹à¥ˆ, à¤¤à¥‹ à¤­à¥‡à¤¦ à¤•à¤¾ à¤­à¥à¤°à¤® à¤®à¤¿à¤Ÿ à¤œà¤¾à¤¤à¤¾ à¤¹à¥ˆà¥¤',
     ],
   },
   12: {
-    title_hi: 'भक्ति-योग',
-    title_mr: 'भक्ति-योग',
-    theme_hi: 'शुद्ध भक्ति का सर्वश्रेष्ठ पथ',
-    theme_mr: 'शुद्ध भक्तीचा सर्वश्रेष्ठ मार्ग',
+    title_hi: 'à¤­à¤•à¥à¤¤à¤¿-à¤¯à¥‹à¤—',
+    title_mr: 'à¤­à¤•à¥à¤¤à¤¿-à¤¯à¥‹à¤—',
+    theme_hi: 'à¤¶à¥à¤¦à¥à¤§ à¤­à¤•à¥à¤¤à¤¿ à¤•à¤¾ à¤¸à¤°à¥à¤µà¤¶à¥à¤°à¥‡à¤·à¥à¤  à¤ªà¤¥',
+    theme_mr: 'à¤¶à¥à¤¦à¥à¤§ à¤­à¤•à¥à¤¤à¥€à¤šà¤¾ à¤¸à¤°à¥à¤µà¤¶à¥à¤°à¥‡à¤·à¥à¤  à¤®à¤¾à¤°à¥à¤—',
     insight_hi: [
-      'जो अपना मन सदा भगवान में लगाए रखता है और उन्हें ही सर्वोच्च लक्ष्य माने — वह परमात्मा का प्रिय भक्त है। यह अध्याय भक्त के लक्षणों का अद्भुत संकलन है।',
-      'श्रील प्रभुपाद कहते हैं: ज्ञान, वैराग्य और कर्म — सभी मार्ग अंततः भक्ति में मिलते हैं। भक्ति ही परम मार्ग है।',
+      'à¤œà¥‹ à¤…à¤ªà¤¨à¤¾ à¤®à¤¨ à¤¸à¤¦à¤¾ à¤­à¤—à¤µà¤¾à¤¨ à¤®à¥‡à¤‚ à¤²à¤—à¤¾à¤ à¤°à¤–à¤¤à¤¾ à¤¹à¥ˆ à¤”à¤° à¤‰à¤¨à¥à¤¹à¥‡à¤‚ à¤¹à¥€ à¤¸à¤°à¥à¤µà¥‹à¤šà¥à¤š à¤²à¤•à¥à¤·à¥à¤¯ à¤®à¤¾à¤¨à¥‡ â€” à¤µà¤¹ à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¤¾ à¤•à¤¾ à¤ªà¥à¤°à¤¿à¤¯ à¤­à¤•à¥à¤¤ à¤¹à¥ˆà¥¤ à¤¯à¤¹ à¤…à¤§à¥à¤¯à¤¾à¤¯ à¤­à¤•à¥à¤¤ à¤•à¥‡ à¤²à¤•à¥à¤·à¤£à¥‹à¤‚ à¤•à¤¾ à¤…à¤¦à¥à¤­à¥à¤¤ à¤¸à¤‚à¤•à¤²à¤¨ à¤¹à¥ˆà¥¤',
+      'à¤¶à¥à¤°à¥€à¤² à¤ªà¥à¤°à¤­à¥à¤ªà¤¾à¤¦ à¤•à¤¹à¤¤à¥‡ à¤¹à¥ˆà¤‚: à¤œà¥à¤žà¤¾à¤¨, à¤µà¥ˆà¤°à¤¾à¤—à¥à¤¯ à¤”à¤° à¤•à¤°à¥à¤® â€” à¤¸à¤­à¥€ à¤®à¤¾à¤°à¥à¤— à¤…à¤‚à¤¤à¤¤à¤ƒ à¤­à¤•à¥à¤¤à¤¿ à¤®à¥‡à¤‚ à¤®à¤¿à¤²à¤¤à¥‡ à¤¹à¥ˆà¤‚à¥¤ à¤­à¤•à¥à¤¤à¤¿ à¤¹à¥€ à¤ªà¤°à¤® à¤®à¤¾à¤°à¥à¤— à¤¹à¥ˆà¥¤',
     ],
     insight_mr: [
-      'जो आपले मन सदा भगवंतात लावून ठेवतो आणि त्यांनाच सर्वोच्च ध्येय मानतो — तो परमात्म्याचा प्रिय भक्त आहे.',
-      'श्रील प्रभुपाद म्हणतात: ज्ञान, वैराग्य आणि कर्म — सर्व मार्ग अखेरीस भक्तीत मिळतात. भक्तीच परम मार्ग आहे.',
+      'à¤œà¥‹ à¤†à¤ªà¤²à¥‡ à¤®à¤¨ à¤¸à¤¦à¤¾ à¤­à¤—à¤µà¤‚à¤¤à¤¾à¤¤ à¤²à¤¾à¤µà¥‚à¤¨ à¤ à¥‡à¤µà¤¤à¥‹ à¤†à¤£à¤¿ à¤¤à¥à¤¯à¤¾à¤‚à¤¨à¤¾à¤š à¤¸à¤°à¥à¤µà¥‹à¤šà¥à¤š à¤§à¥à¤¯à¥‡à¤¯ à¤®à¤¾à¤¨à¤¤à¥‹ â€” à¤¤à¥‹ à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¥à¤¯à¤¾à¤šà¤¾ à¤ªà¥à¤°à¤¿à¤¯ à¤­à¤•à¥à¤¤ à¤†à¤¹à¥‡.',
+      'à¤¶à¥à¤°à¥€à¤² à¤ªà¥à¤°à¤­à¥à¤ªà¤¾à¤¦ à¤®à¥à¤¹à¤£à¤¤à¤¾à¤¤: à¤œà¥à¤žà¤¾à¤¨, à¤µà¥ˆà¤°à¤¾à¤—à¥à¤¯ à¤†à¤£à¤¿ à¤•à¤°à¥à¤® â€” à¤¸à¤°à¥à¤µ à¤®à¤¾à¤°à¥à¤— à¤…à¤–à¥‡à¤°à¥€à¤¸ à¤­à¤•à¥à¤¤à¥€à¤¤ à¤®à¤¿à¤³à¤¤à¤¾à¤¤. à¤­à¤•à¥à¤¤à¥€à¤š à¤ªà¤°à¤® à¤®à¤¾à¤°à¥à¤— à¤†à¤¹à¥‡.',
     ],
     dn_hi: [
-      'माऊली कहते हैं: जो भक्त प्रेम से परमात्मा को पुकारता है, परमात्मा उसके हृदय में निवास करते हैं।',
+      'à¤®à¤¾à¤Šà¤²à¥€ à¤•à¤¹à¤¤à¥‡ à¤¹à¥ˆà¤‚: à¤œà¥‹ à¤­à¤•à¥à¤¤ à¤ªà¥à¤°à¥‡à¤® à¤¸à¥‡ à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¤¾ à¤•à¥‹ à¤ªà¥à¤•à¤¾à¤°à¤¤à¤¾ à¤¹à¥ˆ, à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¤¾ à¤‰à¤¸à¤•à¥‡ à¤¹à¥ƒà¤¦à¤¯ à¤®à¥‡à¤‚ à¤¨à¤¿à¤µà¤¾à¤¸ à¤•à¤°à¤¤à¥‡ à¤¹à¥ˆà¤‚à¥¤',
     ],
   },
   13: {
-    title_hi: 'क्षेत्र-क्षेत्रज्ञ-विभाग-योग',
-    title_mr: 'क्षेत्र-क्षेत्रज्ञ-विभाग-योग',
-    theme_hi: 'शरीर और आत्मा का विवेक',
-    theme_mr: 'शरीर आणि आत्म्याचा विवेक',
+    title_hi: 'à¤•à¥à¤·à¥‡à¤¤à¥à¤°-à¤•à¥à¤·à¥‡à¤¤à¥à¤°à¤œà¥à¤ž-à¤µà¤¿à¤­à¤¾à¤—-à¤¯à¥‹à¤—',
+    title_mr: 'à¤•à¥à¤·à¥‡à¤¤à¥à¤°-à¤•à¥à¤·à¥‡à¤¤à¥à¤°à¤œà¥à¤ž-à¤µà¤¿à¤­à¤¾à¤—-à¤¯à¥‹à¤—',
+    theme_hi: 'à¤¶à¤°à¥€à¤° à¤”à¤° à¤†à¤¤à¥à¤®à¤¾ à¤•à¤¾ à¤µà¤¿à¤µà¥‡à¤•',
+    theme_mr: 'à¤¶à¤°à¥€à¤° à¤†à¤£à¤¿ à¤†à¤¤à¥à¤®à¥à¤¯à¤¾à¤šà¤¾ à¤µà¤¿à¤µà¥‡à¤•',
     insight_hi: [
-      'शरीर "क्षेत्र" है और जीवात्मा "क्षेत्रज्ञ" है। भगवान सभी क्षेत्रों के परम क्षेत्रज्ञ हैं। यह ज्ञान जिसे मिलता है, वह जीवन-मृत्यु के चक्र से परे हो जाता है।',
-      'श्रील प्रभुपाद बताते हैं कि इंद्रियों, मन और बुद्धि का विवेकपूर्ण उपयोग ही क्षेत्र-ज्ञान है।',
+      'à¤¶à¤°à¥€à¤° "à¤•à¥à¤·à¥‡à¤¤à¥à¤°" à¤¹à¥ˆ à¤”à¤° à¤œà¥€à¤µà¤¾à¤¤à¥à¤®à¤¾ "à¤•à¥à¤·à¥‡à¤¤à¥à¤°à¤œà¥à¤ž" à¤¹à¥ˆà¥¤ à¤­à¤—à¤µà¤¾à¤¨ à¤¸à¤­à¥€ à¤•à¥à¤·à¥‡à¤¤à¥à¤°à¥‹à¤‚ à¤•à¥‡ à¤ªà¤°à¤® à¤•à¥à¤·à¥‡à¤¤à¥à¤°à¤œà¥à¤ž à¤¹à¥ˆà¤‚à¥¤ à¤¯à¤¹ à¤œà¥à¤žà¤¾à¤¨ à¤œà¤¿à¤¸à¥‡ à¤®à¤¿à¤²à¤¤à¤¾ à¤¹à¥ˆ, à¤µà¤¹ à¤œà¥€à¤µà¤¨-à¤®à¥ƒà¤¤à¥à¤¯à¥ à¤•à¥‡ à¤šà¤•à¥à¤° à¤¸à¥‡ à¤ªà¤°à¥‡ à¤¹à¥‹ à¤œà¤¾à¤¤à¤¾ à¤¹à¥ˆà¥¤',
+      'à¤¶à¥à¤°à¥€à¤² à¤ªà¥à¤°à¤­à¥à¤ªà¤¾à¤¦ à¤¬à¤¤à¤¾à¤¤à¥‡ à¤¹à¥ˆà¤‚ à¤•à¤¿ à¤‡à¤‚à¤¦à¥à¤°à¤¿à¤¯à¥‹à¤‚, à¤®à¤¨ à¤”à¤° à¤¬à¥à¤¦à¥à¤§à¤¿ à¤•à¤¾ à¤µà¤¿à¤µà¥‡à¤•à¤ªà¥‚à¤°à¥à¤£ à¤‰à¤ªà¤¯à¥‹à¤— à¤¹à¥€ à¤•à¥à¤·à¥‡à¤¤à¥à¤°-à¤œà¥à¤žà¤¾à¤¨ à¤¹à¥ˆà¥¤',
     ],
     insight_mr: [
-      'शरीर "क्षेत्र" आहे आणि जीवात्मा "क्षेत्रज्ञ" आहे. भगवान सर्व क्षेत्रांचे परम क्षेत्रज्ञ आहेत.',
-      'श्रील प्रभुपाद सांगतात की इंद्रिये, मन आणि बुद्धीचा विवेकपूर्ण वापरच क्षेत्रज्ञान आहे.',
+      'à¤¶à¤°à¥€à¤° "à¤•à¥à¤·à¥‡à¤¤à¥à¤°" à¤†à¤¹à¥‡ à¤†à¤£à¤¿ à¤œà¥€à¤µà¤¾à¤¤à¥à¤®à¤¾ "à¤•à¥à¤·à¥‡à¤¤à¥à¤°à¤œà¥à¤ž" à¤†à¤¹à¥‡. à¤­à¤—à¤µà¤¾à¤¨ à¤¸à¤°à¥à¤µ à¤•à¥à¤·à¥‡à¤¤à¥à¤°à¤¾à¤‚à¤šà¥‡ à¤ªà¤°à¤® à¤•à¥à¤·à¥‡à¤¤à¥à¤°à¤œà¥à¤ž à¤†à¤¹à¥‡à¤¤.',
+      'à¤¶à¥à¤°à¥€à¤² à¤ªà¥à¤°à¤­à¥à¤ªà¤¾à¤¦ à¤¸à¤¾à¤‚à¤—à¤¤à¤¾à¤¤ à¤•à¥€ à¤‡à¤‚à¤¦à¥à¤°à¤¿à¤¯à¥‡, à¤®à¤¨ à¤†à¤£à¤¿ à¤¬à¥à¤¦à¥à¤§à¥€à¤šà¤¾ à¤µà¤¿à¤µà¥‡à¤•à¤ªà¥‚à¤°à¥à¤£ à¤µà¤¾à¤ªà¤°à¤š à¤•à¥à¤·à¥‡à¤¤à¥à¤°à¤œà¥à¤žà¤¾à¤¨ à¤†à¤¹à¥‡.',
     ],
     dn_hi: [
-      'माऊली फरमाते हैं: घड़े में आकाश दिखता है पर घड़े का आकाश नहीं होता — वैसे ही आत्मा शरीर में है पर शरीर उसका नहीं।',
+      'à¤®à¤¾à¤Šà¤²à¥€ à¤«à¤°à¤®à¤¾à¤¤à¥‡ à¤¹à¥ˆà¤‚: à¤˜à¤¡à¤¼à¥‡ à¤®à¥‡à¤‚ à¤†à¤•à¤¾à¤¶ à¤¦à¤¿à¤–à¤¤à¤¾ à¤¹à¥ˆ à¤ªà¤° à¤˜à¤¡à¤¼à¥‡ à¤•à¤¾ à¤†à¤•à¤¾à¤¶ à¤¨à¤¹à¥€à¤‚ à¤¹à¥‹à¤¤à¤¾ â€” à¤µà¥ˆà¤¸à¥‡ à¤¹à¥€ à¤†à¤¤à¥à¤®à¤¾ à¤¶à¤°à¥€à¤° à¤®à¥‡à¤‚ à¤¹à¥ˆ à¤ªà¤° à¤¶à¤°à¥€à¤° à¤‰à¤¸à¤•à¤¾ à¤¨à¤¹à¥€à¤‚à¥¤',
     ],
   },
   14: {
-    title_hi: 'गुणत्रय-विभाग-योग',
-    title_mr: 'गुणत्रय-विभाग-योग',
-    theme_hi: 'प्रकृति के तीन गुण',
-    theme_mr: 'प्रकृतीचे तीन गुण',
+    title_hi: 'à¤—à¥à¤£à¤¤à¥à¤°à¤¯-à¤µà¤¿à¤­à¤¾à¤—-à¤¯à¥‹à¤—',
+    title_mr: 'à¤—à¥à¤£à¤¤à¥à¤°à¤¯-à¤µà¤¿à¤­à¤¾à¤—-à¤¯à¥‹à¤—',
+    theme_hi: 'à¤ªà¥à¤°à¤•à¥ƒà¤¤à¤¿ à¤•à¥‡ à¤¤à¥€à¤¨ à¤—à¥à¤£',
+    theme_mr: 'à¤ªà¥à¤°à¤•à¥ƒà¤¤à¥€à¤šà¥‡ à¤¤à¥€à¤¨ à¤—à¥à¤£',
     insight_hi: [
-      'सत्त्व, रज और तम — ये तीनों गुण प्रकृति से उत्पन्न होते हैं और जीव को देह में बांधते हैं। श्रील प्रभुपाद बताते हैं कि भक्ति इन तीनों गुणों से ऊपर उठाती है।',
-      'सोने की बेड़ियाँ भी बेड़ियाँ ही हैं — सत्त्वगुण भी बंधन है यदि उसमें अहंकार है।',
+      'à¤¸à¤¤à¥à¤¤à¥à¤µ, à¤°à¤œ à¤”à¤° à¤¤à¤® â€” à¤¯à¥‡ à¤¤à¥€à¤¨à¥‹à¤‚ à¤—à¥à¤£ à¤ªà¥à¤°à¤•à¥ƒà¤¤à¤¿ à¤¸à¥‡ à¤‰à¤¤à¥à¤ªà¤¨à¥à¤¨ à¤¹à¥‹à¤¤à¥‡ à¤¹à¥ˆà¤‚ à¤”à¤° à¤œà¥€à¤µ à¤•à¥‹ à¤¦à¥‡à¤¹ à¤®à¥‡à¤‚ à¤¬à¤¾à¤‚à¤§à¤¤à¥‡ à¤¹à¥ˆà¤‚à¥¤ à¤¶à¥à¤°à¥€à¤² à¤ªà¥à¤°à¤­à¥à¤ªà¤¾à¤¦ à¤¬à¤¤à¤¾à¤¤à¥‡ à¤¹à¥ˆà¤‚ à¤•à¤¿ à¤­à¤•à¥à¤¤à¤¿ à¤‡à¤¨ à¤¤à¥€à¤¨à¥‹à¤‚ à¤—à¥à¤£à¥‹à¤‚ à¤¸à¥‡ à¤Šà¤ªà¤° à¤‰à¤ à¤¾à¤¤à¥€ à¤¹à¥ˆà¥¤',
+      'à¤¸à¥‹à¤¨à¥‡ à¤•à¥€ à¤¬à¥‡à¤¡à¤¼à¤¿à¤¯à¤¾à¤ à¤­à¥€ à¤¬à¥‡à¤¡à¤¼à¤¿à¤¯à¤¾à¤ à¤¹à¥€ à¤¹à¥ˆà¤‚ â€” à¤¸à¤¤à¥à¤¤à¥à¤µà¤—à¥à¤£ à¤­à¥€ à¤¬à¤‚à¤§à¤¨ à¤¹à¥ˆ à¤¯à¤¦à¤¿ à¤‰à¤¸à¤®à¥‡à¤‚ à¤…à¤¹à¤‚à¤•à¤¾à¤° à¤¹à¥ˆà¥¤',
     ],
     insight_mr: [
-      'सत्त्व, रज आणि तम — हे तीनही गुण प्रकृतीपासून उत्पन्न होतात आणि जिवाला देहात बांधतात. श्रील प्रभुपाद सांगतात की भक्ती या तिन्ही गुणांपेक्षा वर नेते.',
-      'सोन्याच्या बेड्याही बेड्याच असतात — सत्त्वगुणही बंधन आहे जर त्यात अहंकार असेल.',
+      'à¤¸à¤¤à¥à¤¤à¥à¤µ, à¤°à¤œ à¤†à¤£à¤¿ à¤¤à¤® â€” à¤¹à¥‡ à¤¤à¥€à¤¨à¤¹à¥€ à¤—à¥à¤£ à¤ªà¥à¤°à¤•à¥ƒà¤¤à¥€à¤ªà¤¾à¤¸à¥‚à¤¨ à¤‰à¤¤à¥à¤ªà¤¨à¥à¤¨ à¤¹à¥‹à¤¤à¤¾à¤¤ à¤†à¤£à¤¿ à¤œà¤¿à¤µà¤¾à¤²à¤¾ à¤¦à¥‡à¤¹à¤¾à¤¤ à¤¬à¤¾à¤‚à¤§à¤¤à¤¾à¤¤. à¤¶à¥à¤°à¥€à¤² à¤ªà¥à¤°à¤­à¥à¤ªà¤¾à¤¦ à¤¸à¤¾à¤‚à¤—à¤¤à¤¾à¤¤ à¤•à¥€ à¤­à¤•à¥à¤¤à¥€ à¤¯à¤¾ à¤¤à¤¿à¤¨à¥à¤¹à¥€ à¤—à¥à¤£à¤¾à¤‚à¤ªà¥‡à¤•à¥à¤·à¤¾ à¤µà¤° à¤¨à¥‡à¤¤à¥‡.',
+      'à¤¸à¥‹à¤¨à¥à¤¯à¤¾à¤šà¥à¤¯à¤¾ à¤¬à¥‡à¤¡à¥à¤¯à¤¾à¤¹à¥€ à¤¬à¥‡à¤¡à¥à¤¯à¤¾à¤š à¤…à¤¸à¤¤à¤¾à¤¤ â€” à¤¸à¤¤à¥à¤¤à¥à¤µà¤—à¥à¤£à¤¹à¥€ à¤¬à¤‚à¤§à¤¨ à¤†à¤¹à¥‡ à¤œà¤° à¤¤à¥à¤¯à¤¾à¤¤ à¤…à¤¹à¤‚à¤•à¤¾à¤° à¤…à¤¸à¥‡à¤².',
     ],
     dn_hi: [
-      'माऊली कहते हैं: तीनों गुण प्रकृति के धागे हैं — जो परमात्मा की शरण लेता है, वही इन धागों से मुक्त होता है।',
+      'à¤®à¤¾à¤Šà¤²à¥€ à¤•à¤¹à¤¤à¥‡ à¤¹à¥ˆà¤‚: à¤¤à¥€à¤¨à¥‹à¤‚ à¤—à¥à¤£ à¤ªà¥à¤°à¤•à¥ƒà¤¤à¤¿ à¤•à¥‡ à¤§à¤¾à¤—à¥‡ à¤¹à¥ˆà¤‚ â€” à¤œà¥‹ à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¤¾ à¤•à¥€ à¤¶à¤°à¤£ à¤²à¥‡à¤¤à¤¾ à¤¹à¥ˆ, à¤µà¤¹à¥€ à¤‡à¤¨ à¤§à¤¾à¤—à¥‹à¤‚ à¤¸à¥‡ à¤®à¥à¤•à¥à¤¤ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆà¥¤',
     ],
   },
   15: {
-    title_hi: 'पुरुषोत्तम-योग',
-    title_mr: 'पुरुषोत्तम-योग',
-    theme_hi: 'सर्वोच्च पुरुष का रहस्य',
-    theme_mr: 'सर्वोच्च पुरुषाचे रहस्य',
+    title_hi: 'à¤ªà¥à¤°à¥à¤·à¥‹à¤¤à¥à¤¤à¤®-à¤¯à¥‹à¤—',
+    title_mr: 'à¤ªà¥à¤°à¥à¤·à¥‹à¤¤à¥à¤¤à¤®-à¤¯à¥‹à¤—',
+    theme_hi: 'à¤¸à¤°à¥à¤µà¥‹à¤šà¥à¤š à¤ªà¥à¤°à¥à¤· à¤•à¤¾ à¤°à¤¹à¤¸à¥à¤¯',
+    theme_mr: 'à¤¸à¤°à¥à¤µà¥‹à¤šà¥à¤š à¤ªà¥à¤°à¥à¤·à¤¾à¤šà¥‡ à¤°à¤¹à¤¸à¥à¤¯',
     insight_hi: [
-      'संसार अश्वत्थ वृक्ष की भाँति है — जिसकी जड़ें ऊपर और शाखाएँ नीचे हैं। इस वृक्ष को अनासक्ति की तलवार से काटकर परमात्मा की शरण लेनी चाहिए।',
-      'श्रील प्रभुपाद बताते हैं कि परब्रह्म, जीव और माया — तीनों को समझना ही पुरुषोत्तम-ज्ञान है।',
+      'à¤¸à¤‚à¤¸à¤¾à¤° à¤…à¤¶à¥à¤µà¤¤à¥à¤¥ à¤µà¥ƒà¤•à¥à¤· à¤•à¥€ à¤­à¤¾à¤à¤¤à¤¿ à¤¹à¥ˆ â€” à¤œà¤¿à¤¸à¤•à¥€ à¤œà¤¡à¤¼à¥‡à¤‚ à¤Šà¤ªà¤° à¤”à¤° à¤¶à¤¾à¤–à¤¾à¤à¤ à¤¨à¥€à¤šà¥‡ à¤¹à¥ˆà¤‚à¥¤ à¤‡à¤¸ à¤µà¥ƒà¤•à¥à¤· à¤•à¥‹ à¤…à¤¨à¤¾à¤¸à¤•à¥à¤¤à¤¿ à¤•à¥€ à¤¤à¤²à¤µà¤¾à¤° à¤¸à¥‡ à¤•à¤¾à¤Ÿà¤•à¤° à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¤¾ à¤•à¥€ à¤¶à¤°à¤£ à¤²à¥‡à¤¨à¥€ à¤šà¤¾à¤¹à¤¿à¤à¥¤',
+      'à¤¶à¥à¤°à¥€à¤² à¤ªà¥à¤°à¤­à¥à¤ªà¤¾à¤¦ à¤¬à¤¤à¤¾à¤¤à¥‡ à¤¹à¥ˆà¤‚ à¤•à¤¿ à¤ªà¤°à¤¬à¥à¤°à¤¹à¥à¤®, à¤œà¥€à¤µ à¤”à¤° à¤®à¤¾à¤¯à¤¾ â€” à¤¤à¥€à¤¨à¥‹à¤‚ à¤•à¥‹ à¤¸à¤®à¤à¤¨à¤¾ à¤¹à¥€ à¤ªà¥à¤°à¥à¤·à¥‹à¤¤à¥à¤¤à¤®-à¤œà¥à¤žà¤¾à¤¨ à¤¹à¥ˆà¥¤',
     ],
     insight_mr: [
-      'संसार अश्वत्थ वृक्षासारखा आहे — ज्याच्या मुळ्या वर आणि फांद्या खाली आहेत. हे झाड अनासक्तीच्या तलवारीने तोडून परमात्म्याची शरण घ्यायची.',
-      'श्रील प्रभुपाद सांगतात की परब्रह्म, जीव आणि माया — या तिघांना समजणेच पुरुषोत्तम-ज्ञान आहे.',
+      'à¤¸à¤‚à¤¸à¤¾à¤° à¤…à¤¶à¥à¤µà¤¤à¥à¤¥ à¤µà¥ƒà¤•à¥à¤·à¤¾à¤¸à¤¾à¤°à¤–à¤¾ à¤†à¤¹à¥‡ â€” à¤œà¥à¤¯à¤¾à¤šà¥à¤¯à¤¾ à¤®à¥à¤³à¥à¤¯à¤¾ à¤µà¤° à¤†à¤£à¤¿ à¤«à¤¾à¤‚à¤¦à¥à¤¯à¤¾ à¤–à¤¾à¤²à¥€ à¤†à¤¹à¥‡à¤¤. à¤¹à¥‡ à¤à¤¾à¤¡ à¤…à¤¨à¤¾à¤¸à¤•à¥à¤¤à¥€à¤šà¥à¤¯à¤¾ à¤¤à¤²à¤µà¤¾à¤°à¥€à¤¨à¥‡ à¤¤à¥‹à¤¡à¥‚à¤¨ à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¥à¤¯à¤¾à¤šà¥€ à¤¶à¤°à¤£ à¤˜à¥à¤¯à¤¾à¤¯à¤šà¥€.',
+      'à¤¶à¥à¤°à¥€à¤² à¤ªà¥à¤°à¤­à¥à¤ªà¤¾à¤¦ à¤¸à¤¾à¤‚à¤—à¤¤à¤¾à¤¤ à¤•à¥€ à¤ªà¤°à¤¬à¥à¤°à¤¹à¥à¤®, à¤œà¥€à¤µ à¤†à¤£à¤¿ à¤®à¤¾à¤¯à¤¾ â€” à¤¯à¤¾ à¤¤à¤¿à¤˜à¤¾à¤‚à¤¨à¤¾ à¤¸à¤®à¤œà¤£à¥‡à¤š à¤ªà¥à¤°à¥à¤·à¥‹à¤¤à¥à¤¤à¤®-à¤œà¥à¤žà¤¾à¤¨ à¤†à¤¹à¥‡.',
     ],
     dn_hi: [
-      'माऊली फरमाते हैं: संसार वृक्ष की मूल में परमात्मा हैं। जो मूल को पकड़ता है, वह वृक्ष के बंधन से मुक्त हो जाता है।',
+      'à¤®à¤¾à¤Šà¤²à¥€ à¤«à¤°à¤®à¤¾à¤¤à¥‡ à¤¹à¥ˆà¤‚: à¤¸à¤‚à¤¸à¤¾à¤° à¤µà¥ƒà¤•à¥à¤· à¤•à¥€ à¤®à¥‚à¤² à¤®à¥‡à¤‚ à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¤¾ à¤¹à¥ˆà¤‚à¥¤ à¤œà¥‹ à¤®à¥‚à¤² à¤•à¥‹ à¤ªà¤•à¤¡à¤¼à¤¤à¤¾ à¤¹à¥ˆ, à¤µà¤¹ à¤µà¥ƒà¤•à¥à¤· à¤•à¥‡ à¤¬à¤‚à¤§à¤¨ à¤¸à¥‡ à¤®à¥à¤•à¥à¤¤ à¤¹à¥‹ à¤œà¤¾à¤¤à¤¾ à¤¹à¥ˆà¥¤',
     ],
   },
   16: {
-    title_hi: 'दैवासुर-सम्पद्-विभाग-योग',
-    title_mr: 'दैवासुर-संपद-विभाग-योग',
-    theme_hi: 'दिव्य और आसुरी स्वभाव का भेद',
-    theme_mr: 'दिव्य आणि आसुरी स्वभावाचा भेद',
+    title_hi: 'à¤¦à¥ˆà¤µà¤¾à¤¸à¥à¤°-à¤¸à¤®à¥à¤ªà¤¦à¥-à¤µà¤¿à¤­à¤¾à¤—-à¤¯à¥‹à¤—',
+    title_mr: 'à¤¦à¥ˆà¤µà¤¾à¤¸à¥à¤°-à¤¸à¤‚à¤ªà¤¦-à¤µà¤¿à¤­à¤¾à¤—-à¤¯à¥‹à¤—',
+    theme_hi: 'à¤¦à¤¿à¤µà¥à¤¯ à¤”à¤° à¤†à¤¸à¥à¤°à¥€ à¤¸à¥à¤µà¤­à¤¾à¤µ à¤•à¤¾ à¤­à¥‡à¤¦',
+    theme_mr: 'à¤¦à¤¿à¤µà¥à¤¯ à¤†à¤£à¤¿ à¤†à¤¸à¥à¤°à¥€ à¤¸à¥à¤µà¤­à¤¾à¤µà¤¾à¤šà¤¾ à¤­à¥‡à¤¦',
     insight_hi: [
-      'अभय, पवित्रता, दान, इन्द्रियनिग्रह, शास्त्र-अध्ययन — ये दैवी संपत्तियाँ हैं। दंभ, अहंकार, क्रोध — ये आसुरी संपत्तियाँ हैं। श्रील प्रभुपाद कहते हैं कि साधक को स्वयं अपने स्वभाव की पहचान करनी चाहिए।',
-      'दिव्य गुण मोक्ष की ओर ले जाते हैं, आसुरी गुण बंधन की ओर। विवेक से स्वयं का निरीक्षण ही पहली साधना है।',
+      'à¤…à¤­à¤¯, à¤ªà¤µà¤¿à¤¤à¥à¤°à¤¤à¤¾, à¤¦à¤¾à¤¨, à¤‡à¤¨à¥à¤¦à¥à¤°à¤¿à¤¯à¤¨à¤¿à¤—à¥à¤°à¤¹, à¤¶à¤¾à¤¸à¥à¤¤à¥à¤°-à¤…à¤§à¥à¤¯à¤¯à¤¨ â€” à¤¯à¥‡ à¤¦à¥ˆà¤µà¥€ à¤¸à¤‚à¤ªà¤¤à¥à¤¤à¤¿à¤¯à¤¾à¤ à¤¹à¥ˆà¤‚à¥¤ à¤¦à¤‚à¤­, à¤…à¤¹à¤‚à¤•à¤¾à¤°, à¤•à¥à¤°à¥‹à¤§ â€” à¤¯à¥‡ à¤†à¤¸à¥à¤°à¥€ à¤¸à¤‚à¤ªà¤¤à¥à¤¤à¤¿à¤¯à¤¾à¤ à¤¹à¥ˆà¤‚à¥¤ à¤¶à¥à¤°à¥€à¤² à¤ªà¥à¤°à¤­à¥à¤ªà¤¾à¤¦ à¤•à¤¹à¤¤à¥‡ à¤¹à¥ˆà¤‚ à¤•à¤¿ à¤¸à¤¾à¤§à¤• à¤•à¥‹ à¤¸à¥à¤µà¤¯à¤‚ à¤…à¤ªà¤¨à¥‡ à¤¸à¥à¤µà¤­à¤¾à¤µ à¤•à¥€ à¤ªà¤¹à¤šà¤¾à¤¨ à¤•à¤°à¤¨à¥€ à¤šà¤¾à¤¹à¤¿à¤à¥¤',
+      'à¤¦à¤¿à¤µà¥à¤¯ à¤—à¥à¤£ à¤®à¥‹à¤•à¥à¤· à¤•à¥€ à¤“à¤° à¤²à¥‡ à¤œà¤¾à¤¤à¥‡ à¤¹à¥ˆà¤‚, à¤†à¤¸à¥à¤°à¥€ à¤—à¥à¤£ à¤¬à¤‚à¤§à¤¨ à¤•à¥€ à¤“à¤°à¥¤ à¤µà¤¿à¤µà¥‡à¤• à¤¸à¥‡ à¤¸à¥à¤µà¤¯à¤‚ à¤•à¤¾ à¤¨à¤¿à¤°à¥€à¤•à¥à¤·à¤£ à¤¹à¥€ à¤ªà¤¹à¤²à¥€ à¤¸à¤¾à¤§à¤¨à¤¾ à¤¹à¥ˆà¥¤',
     ],
     insight_mr: [
-      'अभय, पावित्र्य, दान, इंद्रियनिग्रह, शास्त्राध्ययन — या दैवी संपत्ती आहेत. दर्प, अहंकार, क्रोध — या आसुरी संपत्ती आहेत.',
-      'दिव्य गुण मोक्षाकडे नेतात, आसुरी गुण बंधनाकडे. विवेकाने स्वतःचे निरीक्षण करणेच पहिली साधना आहे.',
+      'à¤…à¤­à¤¯, à¤ªà¤¾à¤µà¤¿à¤¤à¥à¤°à¥à¤¯, à¤¦à¤¾à¤¨, à¤‡à¤‚à¤¦à¥à¤°à¤¿à¤¯à¤¨à¤¿à¤—à¥à¤°à¤¹, à¤¶à¤¾à¤¸à¥à¤¤à¥à¤°à¤¾à¤§à¥à¤¯à¤¯à¤¨ â€” à¤¯à¤¾ à¤¦à¥ˆà¤µà¥€ à¤¸à¤‚à¤ªà¤¤à¥à¤¤à¥€ à¤†à¤¹à¥‡à¤¤. à¤¦à¤°à¥à¤ª, à¤…à¤¹à¤‚à¤•à¤¾à¤°, à¤•à¥à¤°à¥‹à¤§ â€” à¤¯à¤¾ à¤†à¤¸à¥à¤°à¥€ à¤¸à¤‚à¤ªà¤¤à¥à¤¤à¥€ à¤†à¤¹à¥‡à¤¤.',
+      'à¤¦à¤¿à¤µà¥à¤¯ à¤—à¥à¤£ à¤®à¥‹à¤•à¥à¤·à¤¾à¤•à¤¡à¥‡ à¤¨à¥‡à¤¤à¤¾à¤¤, à¤†à¤¸à¥à¤°à¥€ à¤—à¥à¤£ à¤¬à¤‚à¤§à¤¨à¤¾à¤•à¤¡à¥‡. à¤µà¤¿à¤µà¥‡à¤•à¤¾à¤¨à¥‡ à¤¸à¥à¤µà¤¤à¤ƒà¤šà¥‡ à¤¨à¤¿à¤°à¥€à¤•à¥à¤·à¤£ à¤•à¤°à¤£à¥‡à¤š à¤ªà¤¹à¤¿à¤²à¥€ à¤¸à¤¾à¤§à¤¨à¤¾ à¤†à¤¹à¥‡.',
     ],
     dn_hi: [
-      'माऊली कहते हैं: अपने भीतर के अयोग्य भाव को पहचानना ही सच्ची साधना की शुरुआत है।',
+      'à¤®à¤¾à¤Šà¤²à¥€ à¤•à¤¹à¤¤à¥‡ à¤¹à¥ˆà¤‚: à¤…à¤ªà¤¨à¥‡ à¤­à¥€à¤¤à¤° à¤•à¥‡ à¤…à¤¯à¥‹à¤—à¥à¤¯ à¤­à¤¾à¤µ à¤•à¥‹ à¤ªà¤¹à¤šà¤¾à¤¨à¤¨à¤¾ à¤¹à¥€ à¤¸à¤šà¥à¤šà¥€ à¤¸à¤¾à¤§à¤¨à¤¾ à¤•à¥€ à¤¶à¥à¤°à¥à¤†à¤¤ à¤¹à¥ˆà¥¤',
     ],
   },
   17: {
-    title_hi: 'श्रद्धात्रय-विभाग-योग',
-    title_mr: 'श्रद्धात्रय-विभाग-योग',
-    theme_hi: 'तीन प्रकार की श्रद्धा',
-    theme_mr: 'तीन प्रकारची श्रद्धा',
+    title_hi: 'à¤¶à¥à¤°à¤¦à¥à¤§à¤¾à¤¤à¥à¤°à¤¯-à¤µà¤¿à¤­à¤¾à¤—-à¤¯à¥‹à¤—',
+    title_mr: 'à¤¶à¥à¤°à¤¦à¥à¤§à¤¾à¤¤à¥à¤°à¤¯-à¤µà¤¿à¤­à¤¾à¤—-à¤¯à¥‹à¤—',
+    theme_hi: 'à¤¤à¥€à¤¨ à¤ªà¥à¤°à¤•à¤¾à¤° à¤•à¥€ à¤¶à¥à¤°à¤¦à¥à¤§à¤¾',
+    theme_mr: 'à¤¤à¥€à¤¨ à¤ªà¥à¤°à¤•à¤¾à¤°à¤šà¥€ à¤¶à¥à¤°à¤¦à¥à¤§à¤¾',
     insight_hi: [
-      'जिसकी जैसी श्रद्धा, वह वैसा ही बन जाता है। सात्त्विक श्रद्धा देवताओं की पूजा करती है, राजसी यक्षों की, तामसी भूत-प्रेतों की। श्रील प्रभुपाद कहते हैं कि सात्त्विक श्रद्धा ही परम श्रेय है।',
-      'भोजन, यज्ञ, तप और दान — सभी में तीनों गुणों का प्रभाव दिखता है। जो सात्त्विक भाव से यह सब करे, वही साधक है।',
+      'à¤œà¤¿à¤¸à¤•à¥€ à¤œà¥ˆà¤¸à¥€ à¤¶à¥à¤°à¤¦à¥à¤§à¤¾, à¤µà¤¹ à¤µà¥ˆà¤¸à¤¾ à¤¹à¥€ à¤¬à¤¨ à¤œà¤¾à¤¤à¤¾ à¤¹à¥ˆà¥¤ à¤¸à¤¾à¤¤à¥à¤¤à¥à¤µà¤¿à¤• à¤¶à¥à¤°à¤¦à¥à¤§à¤¾ à¤¦à¥‡à¤µà¤¤à¤¾à¤“à¤‚ à¤•à¥€ à¤ªà¥‚à¤œà¤¾ à¤•à¤°à¤¤à¥€ à¤¹à¥ˆ, à¤°à¤¾à¤œà¤¸à¥€ à¤¯à¤•à¥à¤·à¥‹à¤‚ à¤•à¥€, à¤¤à¤¾à¤®à¤¸à¥€ à¤­à¥‚à¤¤-à¤ªà¥à¤°à¥‡à¤¤à¥‹à¤‚ à¤•à¥€à¥¤ à¤¶à¥à¤°à¥€à¤² à¤ªà¥à¤°à¤­à¥à¤ªà¤¾à¤¦ à¤•à¤¹à¤¤à¥‡ à¤¹à¥ˆà¤‚ à¤•à¤¿ à¤¸à¤¾à¤¤à¥à¤¤à¥à¤µà¤¿à¤• à¤¶à¥à¤°à¤¦à¥à¤§à¤¾ à¤¹à¥€ à¤ªà¤°à¤® à¤¶à¥à¤°à¥‡à¤¯ à¤¹à¥ˆà¥¤',
+      'à¤­à¥‹à¤œà¤¨, à¤¯à¤œà¥à¤ž, à¤¤à¤ª à¤”à¤° à¤¦à¤¾à¤¨ â€” à¤¸à¤­à¥€ à¤®à¥‡à¤‚ à¤¤à¥€à¤¨à¥‹à¤‚ à¤—à¥à¤£à¥‹à¤‚ à¤•à¤¾ à¤ªà¥à¤°à¤­à¤¾à¤µ à¤¦à¤¿à¤–à¤¤à¤¾ à¤¹à¥ˆà¥¤ à¤œà¥‹ à¤¸à¤¾à¤¤à¥à¤¤à¥à¤µà¤¿à¤• à¤­à¤¾à¤µ à¤¸à¥‡ à¤¯à¤¹ à¤¸à¤¬ à¤•à¤°à¥‡, à¤µà¤¹à¥€ à¤¸à¤¾à¤§à¤• à¤¹à¥ˆà¥¤',
     ],
     insight_mr: [
-      'ज्याची जशी श्रद्धा, तो तसाच बनतो. सात्त्विक श्रद्धा देवांची पूजा करते, राजसी यक्षांची, तामसी भूत-प्रेतांची.',
-      'भोजन, यज्ञ, तप आणि दान — सर्वांत तिन्ही गुणांचा प्रभाव दिसतो. जो सात्त्विक भावाने हे सर्व करतो, तोच साधक आहे.',
+      'à¤œà¥à¤¯à¤¾à¤šà¥€ à¤œà¤¶à¥€ à¤¶à¥à¤°à¤¦à¥à¤§à¤¾, à¤¤à¥‹ à¤¤à¤¸à¤¾à¤š à¤¬à¤¨à¤¤à¥‹. à¤¸à¤¾à¤¤à¥à¤¤à¥à¤µà¤¿à¤• à¤¶à¥à¤°à¤¦à¥à¤§à¤¾ à¤¦à¥‡à¤µà¤¾à¤‚à¤šà¥€ à¤ªà¥‚à¤œà¤¾ à¤•à¤°à¤¤à¥‡, à¤°à¤¾à¤œà¤¸à¥€ à¤¯à¤•à¥à¤·à¤¾à¤‚à¤šà¥€, à¤¤à¤¾à¤®à¤¸à¥€ à¤­à¥‚à¤¤-à¤ªà¥à¤°à¥‡à¤¤à¤¾à¤‚à¤šà¥€.',
+      'à¤­à¥‹à¤œà¤¨, à¤¯à¤œà¥à¤ž, à¤¤à¤ª à¤†à¤£à¤¿ à¤¦à¤¾à¤¨ â€” à¤¸à¤°à¥à¤µà¤¾à¤‚à¤¤ à¤¤à¤¿à¤¨à¥à¤¹à¥€ à¤—à¥à¤£à¤¾à¤‚à¤šà¤¾ à¤ªà¥à¤°à¤­à¤¾à¤µ à¤¦à¤¿à¤¸à¤¤à¥‹. à¤œà¥‹ à¤¸à¤¾à¤¤à¥à¤¤à¥à¤µà¤¿à¤• à¤­à¤¾à¤µà¤¾à¤¨à¥‡ à¤¹à¥‡ à¤¸à¤°à¥à¤µ à¤•à¤°à¤¤à¥‹, à¤¤à¥‹à¤š à¤¸à¤¾à¤§à¤• à¤†à¤¹à¥‡.',
     ],
     dn_hi: [
-      'माऊली कहते हैं: श्रद्धा साधना की नींव है। जैसी मिट्टी वैसी फसल — जैसी श्रद्धा वैसा फल।',
+      'à¤®à¤¾à¤Šà¤²à¥€ à¤•à¤¹à¤¤à¥‡ à¤¹à¥ˆà¤‚: à¤¶à¥à¤°à¤¦à¥à¤§à¤¾ à¤¸à¤¾à¤§à¤¨à¤¾ à¤•à¥€ à¤¨à¥€à¤‚à¤µ à¤¹à¥ˆà¥¤ à¤œà¥ˆà¤¸à¥€ à¤®à¤¿à¤Ÿà¥à¤Ÿà¥€ à¤µà¥ˆà¤¸à¥€ à¤«à¤¸à¤² â€” à¤œà¥ˆà¤¸à¥€ à¤¶à¥à¤°à¤¦à¥à¤§à¤¾ à¤µà¥ˆà¤¸à¤¾ à¤«à¤²à¥¤',
     ],
   },
   18: {
-    title_hi: 'मोक्ष-संन्यास-योग',
-    title_mr: 'मोक्ष-संन्यास-योग',
-    theme_hi: 'गीता का सार और परम मोक्ष',
-    theme_mr: 'गीतेचे सार आणि परम मोक्ष',
+    title_hi: 'à¤®à¥‹à¤•à¥à¤·-à¤¸à¤‚à¤¨à¥à¤¯à¤¾à¤¸-à¤¯à¥‹à¤—',
+    title_mr: 'à¤®à¥‹à¤•à¥à¤·-à¤¸à¤‚à¤¨à¥à¤¯à¤¾à¤¸-à¤¯à¥‹à¤—',
+    theme_hi: 'à¤—à¥€à¤¤à¤¾ à¤•à¤¾ à¤¸à¤¾à¤° à¤”à¤° à¤ªà¤°à¤® à¤®à¥‹à¤•à¥à¤·',
+    theme_mr: 'à¤—à¥€à¤¤à¥‡à¤šà¥‡ à¤¸à¤¾à¤° à¤†à¤£à¤¿ à¤ªà¤°à¤® à¤®à¥‹à¤•à¥à¤·',
     insight_hi: [
-      'सर्वधर्मान् परित्यज्य — सब धर्मों को छोड़कर केवल मेरी शरण में आ। यह गीता का परम उपदेश है। श्रील प्रभुपाद इसे सम्पूर्ण भक्ति-योग का निष्कर्ष बताते हैं।',
-      'कर्तेपन का त्याग ही मोक्ष है। जब "मैं" नहीं रहता, तब परमात्मा ही करते हैं। यही सच्चा संन्यास है।',
-      'गीता का श्रवण, पाठ और चिंतन स्वयं ही यज्ञ है। जो इस ज्ञान को अर्जुन की भाँति ग्रहण करे, वह अर्जुन की भाँति विजयी होगा।',
-      'श्रील प्रभुपाद कहते हैं: गीता के इस अंतिम उपदेश में भगवान की कृपा का पूर्ण प्रकाश है। जो शरणागत होता है, उसे परमात्मा स्वयं सम्भाल लेते हैं।',
+      'à¤¸à¤°à¥à¤µà¤§à¤°à¥à¤®à¤¾à¤¨à¥ à¤ªà¤°à¤¿à¤¤à¥à¤¯à¤œà¥à¤¯ â€” à¤¸à¤¬ à¤§à¤°à¥à¤®à¥‹à¤‚ à¤•à¥‹ à¤›à¥‹à¤¡à¤¼à¤•à¤° à¤•à¥‡à¤µà¤² à¤®à¥‡à¤°à¥€ à¤¶à¤°à¤£ à¤®à¥‡à¤‚ à¤†à¥¤ à¤¯à¤¹ à¤—à¥€à¤¤à¤¾ à¤•à¤¾ à¤ªà¤°à¤® à¤‰à¤ªà¤¦à¥‡à¤¶ à¤¹à¥ˆà¥¤ à¤¶à¥à¤°à¥€à¤² à¤ªà¥à¤°à¤­à¥à¤ªà¤¾à¤¦ à¤‡à¤¸à¥‡ à¤¸à¤®à¥à¤ªà¥‚à¤°à¥à¤£ à¤­à¤•à¥à¤¤à¤¿-à¤¯à¥‹à¤— à¤•à¤¾ à¤¨à¤¿à¤·à¥à¤•à¤°à¥à¤· à¤¬à¤¤à¤¾à¤¤à¥‡ à¤¹à¥ˆà¤‚à¥¤',
+      'à¤•à¤°à¥à¤¤à¥‡à¤ªà¤¨ à¤•à¤¾ à¤¤à¥à¤¯à¤¾à¤— à¤¹à¥€ à¤®à¥‹à¤•à¥à¤· à¤¹à¥ˆà¥¤ à¤œà¤¬ "à¤®à¥ˆà¤‚" à¤¨à¤¹à¥€à¤‚ à¤°à¤¹à¤¤à¤¾, à¤¤à¤¬ à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¤¾ à¤¹à¥€ à¤•à¤°à¤¤à¥‡ à¤¹à¥ˆà¤‚à¥¤ à¤¯à¤¹à¥€ à¤¸à¤šà¥à¤šà¤¾ à¤¸à¤‚à¤¨à¥à¤¯à¤¾à¤¸ à¤¹à¥ˆà¥¤',
+      'à¤—à¥€à¤¤à¤¾ à¤•à¤¾ à¤¶à¥à¤°à¤µà¤£, à¤ªà¤¾à¤  à¤”à¤° à¤šà¤¿à¤‚à¤¤à¤¨ à¤¸à¥à¤µà¤¯à¤‚ à¤¹à¥€ à¤¯à¤œà¥à¤ž à¤¹à¥ˆà¥¤ à¤œà¥‹ à¤‡à¤¸ à¤œà¥à¤žà¤¾à¤¨ à¤•à¥‹ à¤…à¤°à¥à¤œà¥à¤¨ à¤•à¥€ à¤­à¤¾à¤à¤¤à¤¿ à¤—à¥à¤°à¤¹à¤£ à¤•à¤°à¥‡, à¤µà¤¹ à¤…à¤°à¥à¤œà¥à¤¨ à¤•à¥€ à¤­à¤¾à¤à¤¤à¤¿ à¤µà¤¿à¤œà¤¯à¥€ à¤¹à¥‹à¤—à¤¾à¥¤',
+      'à¤¶à¥à¤°à¥€à¤² à¤ªà¥à¤°à¤­à¥à¤ªà¤¾à¤¦ à¤•à¤¹à¤¤à¥‡ à¤¹à¥ˆà¤‚: à¤—à¥€à¤¤à¤¾ à¤•à¥‡ à¤‡à¤¸ à¤…à¤‚à¤¤à¤¿à¤® à¤‰à¤ªà¤¦à¥‡à¤¶ à¤®à¥‡à¤‚ à¤­à¤—à¤µà¤¾à¤¨ à¤•à¥€ à¤•à¥ƒà¤ªà¤¾ à¤•à¤¾ à¤ªà¥‚à¤°à¥à¤£ à¤ªà¥à¤°à¤•à¤¾à¤¶ à¤¹à¥ˆà¥¤ à¤œà¥‹ à¤¶à¤°à¤£à¤¾à¤—à¤¤ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆ, à¤‰à¤¸à¥‡ à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¤¾ à¤¸à¥à¤µà¤¯à¤‚ à¤¸à¤®à¥à¤­à¤¾à¤² à¤²à¥‡à¤¤à¥‡ à¤¹à¥ˆà¤‚à¥¤',
     ],
     insight_mr: [
-      'सर्वधर्मान् परित्यज्य — सर्व धर्म सोडून केवळ माझ्या शरणी ये. हाच गीतेचा परम उपदेश आहे.',
-      'कर्तेपणाचा त्याग हाच मोक्ष आहे. जेव्हा "मी" राहत नाही, तेव्हा परमात्माच करतो. हाच खरा संन्यास.',
-      'गीतेचे श्रवण, पाठ आणि चिंतन हाच यज्ञ आहे. जो हे ज्ञान अर्जुनाप्रमाणे स्वीकारतो, तो अर्जुनाप्रमाणे विजयी होतो.',
+      'à¤¸à¤°à¥à¤µà¤§à¤°à¥à¤®à¤¾à¤¨à¥ à¤ªà¤°à¤¿à¤¤à¥à¤¯à¤œà¥à¤¯ â€” à¤¸à¤°à¥à¤µ à¤§à¤°à¥à¤® à¤¸à¥‹à¤¡à¥‚à¤¨ à¤•à¥‡à¤µà¤³ à¤®à¤¾à¤à¥à¤¯à¤¾ à¤¶à¤°à¤£à¥€ à¤¯à¥‡. à¤¹à¤¾à¤š à¤—à¥€à¤¤à¥‡à¤šà¤¾ à¤ªà¤°à¤® à¤‰à¤ªà¤¦à¥‡à¤¶ à¤†à¤¹à¥‡.',
+      'à¤•à¤°à¥à¤¤à¥‡à¤ªà¤£à¤¾à¤šà¤¾ à¤¤à¥à¤¯à¤¾à¤— à¤¹à¤¾à¤š à¤®à¥‹à¤•à¥à¤· à¤†à¤¹à¥‡. à¤œà¥‡à¤µà¥à¤¹à¤¾ "à¤®à¥€" à¤°à¤¾à¤¹à¤¤ à¤¨à¤¾à¤¹à¥€, à¤¤à¥‡à¤µà¥à¤¹à¤¾ à¤ªà¤°à¤®à¤¾à¤¤à¥à¤®à¤¾à¤š à¤•à¤°à¤¤à¥‹. à¤¹à¤¾à¤š à¤–à¤°à¤¾ à¤¸à¤‚à¤¨à¥à¤¯à¤¾à¤¸.',
+      'à¤—à¥€à¤¤à¥‡à¤šà¥‡ à¤¶à¥à¤°à¤µà¤£, à¤ªà¤¾à¤  à¤†à¤£à¤¿ à¤šà¤¿à¤‚à¤¤à¤¨ à¤¹à¤¾à¤š à¤¯à¤œà¥à¤ž à¤†à¤¹à¥‡. à¤œà¥‹ à¤¹à¥‡ à¤œà¥à¤žà¤¾à¤¨ à¤…à¤°à¥à¤œà¥à¤¨à¤¾à¤ªà¥à¤°à¤®à¤¾à¤£à¥‡ à¤¸à¥à¤µà¥€à¤•à¤¾à¤°à¤¤à¥‹, à¤¤à¥‹ à¤…à¤°à¥à¤œà¥à¤¨à¤¾à¤ªà¥à¤°à¤®à¤¾à¤£à¥‡ à¤µà¤¿à¤œà¤¯à¥€ à¤¹à¥‹à¤¤à¥‹.',
     ],
     dn_hi: [
-      'माऊली का निवेदन: थेंब सागर में मिलता है — यही मोक्ष है। ज्ञानेश्वरी का सार यही है। माऊली के चरणों में साष्टांग प्रणाम।',
-      'ज्ञानदेव कहते हैं: अर्जुन ने जब "कर्ता मैं हूँ" का भाव छोड़ा, तभी वह वास्तविक योद्धा बना। यही गीता का चरमोत्कर्ष है।',
+      'à¤®à¤¾à¤Šà¤²à¥€ à¤•à¤¾ à¤¨à¤¿à¤µà¥‡à¤¦à¤¨: à¤¥à¥‡à¤‚à¤¬ à¤¸à¤¾à¤—à¤° à¤®à¥‡à¤‚ à¤®à¤¿à¤²à¤¤à¤¾ à¤¹à¥ˆ â€” à¤¯à¤¹à¥€ à¤®à¥‹à¤•à¥à¤· à¤¹à¥ˆà¥¤ à¤œà¥à¤žà¤¾à¤¨à¥‡à¤¶à¥à¤µà¤°à¥€ à¤•à¤¾ à¤¸à¤¾à¤° à¤¯à¤¹à¥€ à¤¹à¥ˆà¥¤ à¤®à¤¾à¤Šà¤²à¥€ à¤•à¥‡ à¤šà¤°à¤£à¥‹à¤‚ à¤®à¥‡à¤‚ à¤¸à¤¾à¤·à¥à¤Ÿà¤¾à¤‚à¤— à¤ªà¥à¤°à¤£à¤¾à¤®à¥¤',
+      'à¤œà¥à¤žà¤¾à¤¨à¤¦à¥‡à¤µ à¤•à¤¹à¤¤à¥‡ à¤¹à¥ˆà¤‚: à¤…à¤°à¥à¤œà¥à¤¨ à¤¨à¥‡ à¤œà¤¬ "à¤•à¤°à¥à¤¤à¤¾ à¤®à¥ˆà¤‚ à¤¹à¥‚à¤" à¤•à¤¾ à¤­à¤¾à¤µ à¤›à¥‹à¤¡à¤¼à¤¾, à¤¤à¤­à¥€ à¤µà¤¹ à¤µà¤¾à¤¸à¥à¤¤à¤µà¤¿à¤• à¤¯à¥‹à¤¦à¥à¤§à¤¾ à¤¬à¤¨à¤¾à¥¤ à¤¯à¤¹à¥€ à¤—à¥€à¤¤à¤¾ à¤•à¤¾ à¤šà¤°à¤®à¥‹à¤¤à¥à¤•à¤°à¥à¤· à¤¹à¥ˆà¥¤',
     ],
   },
 };
 
-// ─── ISKCON metadata ──────────────────────────────────────────────────────────
+// â”€â”€â”€ ISKCON metadata â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 const ISKCON_META_HI = {
   author:       'iskcon',
-  author_name:  'ए.सी. भक्तिवेदान्त स्वामी प्रभुपाद',
-  author_bio:   'इस्कॉन (अंतर्राष्ट्रीय कृष्णभावनामृत संघ) के संस्थापक-आचार्य। भगवद्-गीता यथारूप के अनुवादक एवं भाष्यकार। वैष्णव परंपरा के महान आचार्य।',
-  author_label: 'भक्तिवेदान्त भाष्य',
-  author_icon:  '🔱',
-  publication:  'भगवद्-गीता यथारूप',
+  author_name:  'à¤.à¤¸à¥€. à¤­à¤•à¥à¤¤à¤¿à¤µà¥‡à¤¦à¤¾à¤¨à¥à¤¤ à¤¸à¥à¤µà¤¾à¤®à¥€ à¤ªà¥à¤°à¤­à¥à¤ªà¤¾à¤¦',
+  author_bio:   'à¤‡à¤¸à¥à¤•à¥‰à¤¨ (à¤…à¤‚à¤¤à¤°à¥à¤°à¤¾à¤·à¥à¤Ÿà¥à¤°à¥€à¤¯ à¤•à¥ƒà¤·à¥à¤£à¤­à¤¾à¤µà¤¨à¤¾à¤®à¥ƒà¤¤ à¤¸à¤‚à¤˜) à¤•à¥‡ à¤¸à¤‚à¤¸à¥à¤¥à¤¾à¤ªà¤•-à¤†à¤šà¤¾à¤°à¥à¤¯à¥¤ à¤­à¤—à¤µà¤¦à¥-à¤—à¥€à¤¤à¤¾ à¤¯à¤¥à¤¾à¤°à¥‚à¤ª à¤•à¥‡ à¤…à¤¨à¥à¤µà¤¾à¤¦à¤• à¤à¤µà¤‚ à¤­à¤¾à¤·à¥à¤¯à¤•à¤¾à¤°à¥¤ à¤µà¥ˆà¤·à¥à¤£à¤µ à¤ªà¤°à¤‚à¤ªà¤°à¤¾ à¤•à¥‡ à¤®à¤¹à¤¾à¤¨ à¤†à¤šà¤¾à¤°à¥à¤¯à¥¤',
+  author_label: 'à¤­à¤•à¥à¤¤à¤¿à¤µà¥‡à¤¦à¤¾à¤¨à¥à¤¤ à¤­à¤¾à¤·à¥à¤¯',
+  author_icon:  'ðŸ”±',
+  publication:  'à¤­à¤—à¤µà¤¦à¥-à¤—à¥€à¤¤à¤¾ à¤¯à¤¥à¤¾à¤°à¥‚à¤ª',
   organization: 'ISKCON / Vedabase',
   type:         'commentary',
   lang:         'hi',
@@ -1765,31 +1765,31 @@ const ISKCON_META_HI = {
 
 const ISKCON_META_MR = {
   author:       'iskcon',
-  author_name:  'ए.सी. भक्तिवेदांत स्वामी प्रभुपाद',
-  author_bio:   'इस्कॉन (आंतरराष्ट्रीय कृष्णभावनामृत संघ) चे संस्थापक-आचार्य. भगवद्-गीता यथारूपाचे भाषांतरकार व भाष्यकार. वैष्णव परंपरेचे महान आचार्य.',
-  author_label: 'भक्तिवेदांत भाष्य',
-  author_icon:  '🔱',
-  publication:  'भगवद्-गीता यथारूप',
+  author_name:  'à¤.à¤¸à¥€. à¤­à¤•à¥à¤¤à¤¿à¤µà¥‡à¤¦à¤¾à¤‚à¤¤ à¤¸à¥à¤µà¤¾à¤®à¥€ à¤ªà¥à¤°à¤­à¥à¤ªà¤¾à¤¦',
+  author_bio:   'à¤‡à¤¸à¥à¤•à¥‰à¤¨ (à¤†à¤‚à¤¤à¤°à¤°à¤¾à¤·à¥à¤Ÿà¥à¤°à¥€à¤¯ à¤•à¥ƒà¤·à¥à¤£à¤­à¤¾à¤µà¤¨à¤¾à¤®à¥ƒà¤¤ à¤¸à¤‚à¤˜) à¤šà¥‡ à¤¸à¤‚à¤¸à¥à¤¥à¤¾à¤ªà¤•-à¤†à¤šà¤¾à¤°à¥à¤¯. à¤­à¤—à¤µà¤¦à¥-à¤—à¥€à¤¤à¤¾ à¤¯à¤¥à¤¾à¤°à¥‚à¤ªà¤¾à¤šà¥‡ à¤­à¤¾à¤·à¤¾à¤‚à¤¤à¤°à¤•à¤¾à¤° à¤µ à¤­à¤¾à¤·à¥à¤¯à¤•à¤¾à¤°. à¤µà¥ˆà¤·à¥à¤£à¤µ à¤ªà¤°à¤‚à¤ªà¤°à¥‡à¤šà¥‡ à¤®à¤¹à¤¾à¤¨ à¤†à¤šà¤¾à¤°à¥à¤¯.',
+  author_label: 'à¤­à¤•à¥à¤¤à¤¿à¤µà¥‡à¤¦à¤¾à¤‚à¤¤ à¤­à¤¾à¤·à¥à¤¯',
+  author_icon:  'ðŸ”±',
+  publication:  'à¤­à¤—à¤µà¤¦à¥-à¤—à¥€à¤¤à¤¾ à¤¯à¤¥à¤¾à¤°à¥‚à¤ª',
   organization: 'ISKCON / Vedabase',
   type:         'commentary',
   lang:         'mr',
 };
 
-// ─── Dnyaneshwari metadata ────────────────────────────────────────────────────
+// â”€â”€â”€ Dnyaneshwari metadata â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 const DN_META_HI = {
   author:       'sant-dnyaneshwar',
-  author_name:  'संत ज्ञानेश्वर',
-  author_bio:   'महाराष्ट्रीय संत-दार्शनिक (१२७५–१२९६ ई.) जिन्होंने सोलह वर्ष की आयु में ज्ञानेश्वरी (भावार्थ दीपिका) — भगवद्गीता पर मराठी पद्य-भाष्य — की रचना की। वारकरी परंपरा के आधार-ग्रंथ के रचयिता।',
-  author_label: 'ज्ञानेश्वरी (भावार्थ दीपिका)',
-  author_icon:  '🪷',
-  publication:  'ज्ञानेश्वरी — भावार्थ दीपिका',
-  organization: 'महाराष्ट्र आध्यात्मिक विरासत / वारकरी सम्प्रदाय',
+  author_name:  'à¤¸à¤‚à¤¤ à¤œà¥à¤žà¤¾à¤¨à¥‡à¤¶à¥à¤µà¤°',
+  author_bio:   'à¤®à¤¹à¤¾à¤°à¤¾à¤·à¥à¤Ÿà¥à¤°à¥€à¤¯ à¤¸à¤‚à¤¤-à¤¦à¤¾à¤°à¥à¤¶à¤¨à¤¿à¤• (à¥§à¥¨à¥­à¥«â€“à¥§à¥¨à¥¯à¥¬ à¤ˆ.) à¤œà¤¿à¤¨à¥à¤¹à¥‹à¤‚à¤¨à¥‡ à¤¸à¥‹à¤²à¤¹ à¤µà¤°à¥à¤· à¤•à¥€ à¤†à¤¯à¥ à¤®à¥‡à¤‚ à¤œà¥à¤žà¤¾à¤¨à¥‡à¤¶à¥à¤µà¤°à¥€ (à¤­à¤¾à¤µà¤¾à¤°à¥à¤¥ à¤¦à¥€à¤ªà¤¿à¤•à¤¾) â€” à¤­à¤—à¤µà¤¦à¥à¤—à¥€à¤¤à¤¾ à¤ªà¤° à¤®à¤°à¤¾à¤ à¥€ à¤ªà¤¦à¥à¤¯-à¤­à¤¾à¤·à¥à¤¯ â€” à¤•à¥€ à¤°à¤šà¤¨à¤¾ à¤•à¥€à¥¤ à¤µà¤¾à¤°à¤•à¤°à¥€ à¤ªà¤°à¤‚à¤ªà¤°à¤¾ à¤•à¥‡ à¤†à¤§à¤¾à¤°-à¤—à¥à¤°à¤‚à¤¥ à¤•à¥‡ à¤°à¤šà¤¯à¤¿à¤¤à¤¾à¥¤',
+  author_label: 'à¤œà¥à¤žà¤¾à¤¨à¥‡à¤¶à¥à¤µà¤°à¥€ (à¤­à¤¾à¤µà¤¾à¤°à¥à¤¥ à¤¦à¥€à¤ªà¤¿à¤•à¤¾)',
+  author_icon:  'ðŸª·',
+  publication:  'à¤œà¥à¤žà¤¾à¤¨à¥‡à¤¶à¥à¤µà¤°à¥€ â€” à¤­à¤¾à¤µà¤¾à¤°à¥à¤¥ à¤¦à¥€à¤ªà¤¿à¤•à¤¾',
+  organization: 'à¤®à¤¹à¤¾à¤°à¤¾à¤·à¥à¤Ÿà¥à¤° à¤†à¤§à¥à¤¯à¤¾à¤¤à¥à¤®à¤¿à¤• à¤µà¤¿à¤°à¤¾à¤¸à¤¤ / à¤µà¤¾à¤°à¤•à¤°à¥€ à¤¸à¤®à¥à¤ªà¥à¤°à¤¦à¤¾à¤¯',
   type:         'commentary',
   lang:         'hi',
 };
 
-// ─── Content generators ───────────────────────────────────────────────────────
+// â”€â”€â”€ Content generators â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 function buildIskconHi(ch, verseIndex, totalVerses) {
   const ctx = CH_CONTEXT[ch] || CH_CONTEXT[1];
@@ -1797,16 +1797,16 @@ function buildIskconHi(ch, verseIndex, totalVerses) {
   const insight = insights[verseIndex % insights.length];
 
   const openings = [
-    `अध्याय ${ch} — ${ctx.title_hi} (${ctx.theme_hi}): `,
-    `श्रील प्रभुपाद के भगवद्-गीता यथारूप में अध्याय ${ch} (${ctx.title_hi}): `,
-    `भगवद्गीता यथारूप, अध्याय ${ch} — ${ctx.theme_hi}: `,
+    `à¤…à¤§à¥à¤¯à¤¾à¤¯ ${ch} â€” ${ctx.title_hi} (${ctx.theme_hi}): `,
+    `à¤¶à¥à¤°à¥€à¤² à¤ªà¥à¤°à¤­à¥à¤ªà¤¾à¤¦ à¤•à¥‡ à¤­à¤—à¤µà¤¦à¥-à¤—à¥€à¤¤à¤¾ à¤¯à¤¥à¤¾à¤°à¥‚à¤ª à¤®à¥‡à¤‚ à¤…à¤§à¥à¤¯à¤¾à¤¯ ${ch} (${ctx.title_hi}): `,
+    `à¤­à¤—à¤µà¤¦à¥à¤—à¥€à¤¤à¤¾ à¤¯à¤¥à¤¾à¤°à¥‚à¤ª, à¤…à¤§à¥à¤¯à¤¾à¤¯ ${ch} â€” ${ctx.theme_hi}: `,
   ];
 
   const closings = [
-    ` इस उपदेश को हृदय में धारण करने वाला साधक भक्ति-मार्ग पर अग्रसर होता है।`,
-    ` श्रील प्रभुपाद इस श्लोक को परम भक्ति का प्रमाण मानते हैं।`,
-    ` यही गीता का अमर सन्देश है जो युग-युग से साधकों को प्रकाश देता आया है।`,
-    ` इस ज्ञान को जो साधक धारण करता है, वह जीवन की प्रत्येक परीक्षा में विजयी होता है।`,
+    ` à¤‡à¤¸ à¤‰à¤ªà¤¦à¥‡à¤¶ à¤•à¥‹ à¤¹à¥ƒà¤¦à¤¯ à¤®à¥‡à¤‚ à¤§à¤¾à¤°à¤£ à¤•à¤°à¤¨à¥‡ à¤µà¤¾à¤²à¤¾ à¤¸à¤¾à¤§à¤• à¤­à¤•à¥à¤¤à¤¿-à¤®à¤¾à¤°à¥à¤— à¤ªà¤° à¤…à¤—à¥à¤°à¤¸à¤° à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆà¥¤`,
+    ` à¤¶à¥à¤°à¥€à¤² à¤ªà¥à¤°à¤­à¥à¤ªà¤¾à¤¦ à¤‡à¤¸ à¤¶à¥à¤²à¥‹à¤• à¤•à¥‹ à¤ªà¤°à¤® à¤­à¤•à¥à¤¤à¤¿ à¤•à¤¾ à¤ªà¥à¤°à¤®à¤¾à¤£ à¤®à¤¾à¤¨à¤¤à¥‡ à¤¹à¥ˆà¤‚à¥¤`,
+    ` à¤¯à¤¹à¥€ à¤—à¥€à¤¤à¤¾ à¤•à¤¾ à¤…à¤®à¤° à¤¸à¤¨à¥à¤¦à¥‡à¤¶ à¤¹à¥ˆ à¤œà¥‹ à¤¯à¥à¤—-à¤¯à¥à¤— à¤¸à¥‡ à¤¸à¤¾à¤§à¤•à¥‹à¤‚ à¤•à¥‹ à¤ªà¥à¤°à¤•à¤¾à¤¶ à¤¦à¥‡à¤¤à¤¾ à¤†à¤¯à¤¾ à¤¹à¥ˆà¥¤`,
+    ` à¤‡à¤¸ à¤œà¥à¤žà¤¾à¤¨ à¤•à¥‹ à¤œà¥‹ à¤¸à¤¾à¤§à¤• à¤§à¤¾à¤°à¤£ à¤•à¤°à¤¤à¤¾ à¤¹à¥ˆ, à¤µà¤¹ à¤œà¥€à¤µà¤¨ à¤•à¥€ à¤ªà¥à¤°à¤¤à¥à¤¯à¥‡à¤• à¤ªà¤°à¥€à¤•à¥à¤·à¤¾ à¤®à¥‡à¤‚ à¤µà¤¿à¤œà¤¯à¥€ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆà¥¤`,
   ];
 
   const opening = openings[verseIndex % openings.length];
@@ -1821,16 +1821,16 @@ function buildIskconMr(ch, verseIndex, totalVerses) {
   const insight = insights[verseIndex % insights.length];
 
   const openings = [
-    `अध्याय ${ch} — ${ctx.title_mr} (${ctx.theme_mr}): `,
-    `श्रील प्रभुपादांच्या भगवद्-गीता यथारूपात अध्याय ${ch} (${ctx.title_mr}): `,
-    `भगवद्गीता यथारूप, अध्याय ${ch} — ${ctx.theme_mr}: `,
+    `à¤…à¤§à¥à¤¯à¤¾à¤¯ ${ch} â€” ${ctx.title_mr} (${ctx.theme_mr}): `,
+    `à¤¶à¥à¤°à¥€à¤² à¤ªà¥à¤°à¤­à¥à¤ªà¤¾à¤¦à¤¾à¤‚à¤šà¥à¤¯à¤¾ à¤­à¤—à¤µà¤¦à¥-à¤—à¥€à¤¤à¤¾ à¤¯à¤¥à¤¾à¤°à¥‚à¤ªà¤¾à¤¤ à¤…à¤§à¥à¤¯à¤¾à¤¯ ${ch} (${ctx.title_mr}): `,
+    `à¤­à¤—à¤µà¤¦à¥à¤—à¥€à¤¤à¤¾ à¤¯à¤¥à¤¾à¤°à¥‚à¤ª, à¤…à¤§à¥à¤¯à¤¾à¤¯ ${ch} â€” ${ctx.theme_mr}: `,
   ];
 
   const closings = [
-    ` हा उपदेश हृदयात धारण करणारा साधक भक्तिमार्गावर अग्रेसर होतो.`,
-    ` श्रील प्रभुपाद या श्लोकाला परम भक्तीचा पुरावा मानतात.`,
-    ` हाच गीतेचा अमर संदेश आहे जो युगानुयुगे साधकांना प्रकाश देत आला आहे.`,
-    ` हे ज्ञान जो साधक धारण करतो, तो जीवनाच्या प्रत्येक परीक्षेत विजयी होतो.`,
+    ` à¤¹à¤¾ à¤‰à¤ªà¤¦à¥‡à¤¶ à¤¹à¥ƒà¤¦à¤¯à¤¾à¤¤ à¤§à¤¾à¤°à¤£ à¤•à¤°à¤£à¤¾à¤°à¤¾ à¤¸à¤¾à¤§à¤• à¤­à¤•à¥à¤¤à¤¿à¤®à¤¾à¤°à¥à¤—à¤¾à¤µà¤° à¤…à¤—à¥à¤°à¥‡à¤¸à¤° à¤¹à¥‹à¤¤à¥‹.`,
+    ` à¤¶à¥à¤°à¥€à¤² à¤ªà¥à¤°à¤­à¥à¤ªà¤¾à¤¦ à¤¯à¤¾ à¤¶à¥à¤²à¥‹à¤•à¤¾à¤²à¤¾ à¤ªà¤°à¤® à¤­à¤•à¥à¤¤à¥€à¤šà¤¾ à¤ªà¥à¤°à¤¾à¤µà¤¾ à¤®à¤¾à¤¨à¤¤à¤¾à¤¤.`,
+    ` à¤¹à¤¾à¤š à¤—à¥€à¤¤à¥‡à¤šà¤¾ à¤…à¤®à¤° à¤¸à¤‚à¤¦à¥‡à¤¶ à¤†à¤¹à¥‡ à¤œà¥‹ à¤¯à¥à¤—à¤¾à¤¨à¥à¤¯à¥à¤—à¥‡ à¤¸à¤¾à¤§à¤•à¤¾à¤‚à¤¨à¤¾ à¤ªà¥à¤°à¤•à¤¾à¤¶ à¤¦à¥‡à¤¤ à¤†à¤²à¤¾ à¤†à¤¹à¥‡.`,
+    ` à¤¹à¥‡ à¤œà¥à¤žà¤¾à¤¨ à¤œà¥‹ à¤¸à¤¾à¤§à¤• à¤§à¤¾à¤°à¤£ à¤•à¤°à¤¤à¥‹, à¤¤à¥‹ à¤œà¥€à¤µà¤¨à¤¾à¤šà¥à¤¯à¤¾ à¤ªà¥à¤°à¤¤à¥à¤¯à¥‡à¤• à¤ªà¤°à¥€à¤•à¥à¤·à¥‡à¤¤ à¤µà¤¿à¤œà¤¯à¥€ à¤¹à¥‹à¤¤à¥‹.`,
   ];
 
   const opening = openings[verseIndex % openings.length];
@@ -1845,17 +1845,17 @@ function buildDnHi(ch, verseIndex) {
   const insight = dnInsights[verseIndex % dnInsights.length];
 
   const openings = [
-    `संत ज्ञानेश्वर की ज्ञानेश्वरी में अध्याय ${ch} का भाव: `,
-    `ज्ञानदेव माऊली अर्जुन से कहते हैं: `,
-    `ज्ञानेश्वरी — अध्याय ${ch} (${ctx.title_hi}): `,
-    `संत ज्ञानेश्वर का वारकरी उपदेश: `,
+    `à¤¸à¤‚à¤¤ à¤œà¥à¤žà¤¾à¤¨à¥‡à¤¶à¥à¤µà¤° à¤•à¥€ à¤œà¥à¤žà¤¾à¤¨à¥‡à¤¶à¥à¤µà¤°à¥€ à¤®à¥‡à¤‚ à¤…à¤§à¥à¤¯à¤¾à¤¯ ${ch} à¤•à¤¾ à¤­à¤¾à¤µ: `,
+    `à¤œà¥à¤žà¤¾à¤¨à¤¦à¥‡à¤µ à¤®à¤¾à¤Šà¤²à¥€ à¤…à¤°à¥à¤œà¥à¤¨ à¤¸à¥‡ à¤•à¤¹à¤¤à¥‡ à¤¹à¥ˆà¤‚: `,
+    `à¤œà¥à¤žà¤¾à¤¨à¥‡à¤¶à¥à¤µà¤°à¥€ â€” à¤…à¤§à¥à¤¯à¤¾à¤¯ ${ch} (${ctx.title_hi}): `,
+    `à¤¸à¤‚à¤¤ à¤œà¥à¤žà¤¾à¤¨à¥‡à¤¶à¥à¤µà¤° à¤•à¤¾ à¤µà¤¾à¤°à¤•à¤°à¥€ à¤‰à¤ªà¤¦à¥‡à¤¶: `,
   ];
 
   const closings = [
-    ` माऊली की कृपा साधक पर सदा बनी रहे।`,
-    ` इस अमृतवचन को हृदय में उतारो।`,
-    ` जो इस उपदेश पर चिंतन करता है, उसका जीवन धन्य होता है।`,
-    ` वारकरी परंपरा का यही सार है।`,
+    ` à¤®à¤¾à¤Šà¤²à¥€ à¤•à¥€ à¤•à¥ƒà¤ªà¤¾ à¤¸à¤¾à¤§à¤• à¤ªà¤° à¤¸à¤¦à¤¾ à¤¬à¤¨à¥€ à¤°à¤¹à¥‡à¥¤`,
+    ` à¤‡à¤¸ à¤…à¤®à¥ƒà¤¤à¤µà¤šà¤¨ à¤•à¥‹ à¤¹à¥ƒà¤¦à¤¯ à¤®à¥‡à¤‚ à¤‰à¤¤à¤¾à¤°à¥‹à¥¤`,
+    ` à¤œà¥‹ à¤‡à¤¸ à¤‰à¤ªà¤¦à¥‡à¤¶ à¤ªà¤° à¤šà¤¿à¤‚à¤¤à¤¨ à¤•à¤°à¤¤à¤¾ à¤¹à¥ˆ, à¤‰à¤¸à¤•à¤¾ à¤œà¥€à¤µà¤¨ à¤§à¤¨à¥à¤¯ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆà¥¤`,
+    ` à¤µà¤¾à¤°à¤•à¤°à¥€ à¤ªà¤°à¤‚à¤ªà¤°à¤¾ à¤•à¤¾ à¤¯à¤¹à¥€ à¤¸à¤¾à¤° à¤¹à¥ˆà¥¤`,
   ];
 
   const opening = openings[verseIndex % openings.length];
@@ -1864,7 +1864,7 @@ function buildDnHi(ch, verseIndex) {
   return (opening + insight + closing).replace(/\\s+/g, ' ').trim();
 }
 
-// ─── Main loop ────────────────────────────────────────────────────────────────
+// â”€â”€â”€ Main loop â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 let stats = { chapters: 0, iskconHiFixed: 0, iskconMrFixed: 0, dnHiAdded: 0 };
 
@@ -1877,24 +1877,24 @@ for (let ch = 1; ch <= 18; ch++) {
 
     const layers = verse.layers || [];
 
-    // ── ISKCON HI: replace with clean Devanagari content + full metadata ──
+    // â”€â”€ ISKCON HI: replace with clean Devanagari content + full metadata â”€â”€
     const hiContent = buildIskconHi(ch, idx, verses.length);
     const existingHi = layers.find(l => l.author === 'iskcon' && l.lang === 'hi');
     const newHi = { ...ISKCON_META_HI, content: hiContent };
     stats.iskconHiFixed++;
 
-    // ── ISKCON MR: replace with clean Marathi content + full metadata ──
+    // â”€â”€ ISKCON MR: replace with clean Marathi content + full metadata â”€â”€
     const mrContent = buildIskconMr(ch, idx, verses.length);
     const existingMr = layers.find(l => l.author === 'iskcon' && l.lang === 'mr');
     const newMr = { ...ISKCON_META_MR, content: mrContent };
     stats.iskconMrFixed++;
 
-    // ── sant-dnyaneshwar HI: add missing Hindi layer ──
+    // â”€â”€ sant-dnyaneshwar HI: add missing Hindi layer â”€â”€
     const dnHiContent = buildDnHi(ch, idx);
     const newDnHi = { ...DN_META_HI, content: dnHiContent };
     stats.dnHiAdded++;
 
-    // Rebuild layer order: ISKCON en, hi, mr → sant-dnyaneshwar en, hi, mr → others
+    // Rebuild layer order: ISKCON en, hi, mr â†’ sant-dnyaneshwar en, hi, mr â†’ others
     const iskconEn  = layers.find(l => l.author === 'iskcon'          && l.lang === 'en');
     const dnEn      = layers.find(l => l.author === 'sant-dnyaneshwar' && l.lang === 'en');
     const dnMr      = layers.find(l => l.author === 'sant-dnyaneshwar' && l.lang === 'mr');
@@ -1918,19 +1918,19 @@ for (let ch = 1; ch <= 18; ch++) {
 
   fs.writeFileSync(filePath, JSON.stringify(updated, null, 2), 'utf8');
   stats.chapters++;
-  console.log(`  Ch${String(ch).padStart(2,'0')} ✓  ${verses.length} verses updated`);
+  console.log(`  Ch${String(ch).padStart(2,'0')} âœ“  ${verses.length} verses updated`);
 }
 
-console.log('\\n═══════════════════════════════════════════════');
+console.log('\\nâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•');
 console.log('  rebuild_gita_multilang complete');
 console.log('  Chapters processed   :', stats.chapters);
 console.log('  ISKCON HI rebuilt    :', stats.iskconHiFixed);
 console.log('  ISKCON MR rebuilt    :', stats.iskconMrFixed);
 console.log('  Dnyaneshwari HI added:', stats.dnHiAdded);
-console.log('═══════════════════════════════════════════════\\n');
+console.log('â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•\\n');
 
-// ─── Verification ─────────────────────────────────────────────────────────────
-console.log('Verification — Chapter 1, Verse 1 layer summary:');
+// â”€â”€â”€ Verification â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+console.log('Verification â€” Chapter 1, Verse 1 layer summary:');
 const verifyData = JSON.parse(
   fs.readFileSync(path.join(GOLD_DIR, 'bhagavad-gita-chapter-1.json'), 'utf8')
 );
@@ -2006,7 +2006,7 @@ function insertAllChapters() {
         const verseNum       = String(verse.verse);
         const slok           = verse.original || '';
         const transliteration = verse.transliteration || '';
-        // Store full NVF content as JSON — includes all layers
+        // Store full NVF content as JSON â€” includes all layers
         const content        = JSON.stringify(verse);
 
         stmt.run(id, 'bhagavad-gita', ch, verseNum, slok, transliteration, content);
@@ -2014,7 +2014,7 @@ function insertAllChapters() {
         totalInserted++;
       });
 
-      console.log(`  Ch${String(ch).padStart(2,'0')} ✓  ${chInserted} verses inserted`);
+      console.log(`  Ch${String(ch).padStart(2,'0')} âœ“  ${chInserted} verses inserted`);
     }
 
     db.run('COMMIT', err => {
@@ -2022,11 +2022,11 @@ function insertAllChapters() {
       stmt.finalize();
 
       db.get('SELECT COUNT(*) as n FROM verses WHERE text_slug = "bhagavad-gita"', (e, r) => {
-        console.log('\\n═════════════════════════════════════════');
+        console.log('\\nâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•');
         console.log(`  Lake rebuild complete.`);
         console.log(`  Inserted : ${totalInserted} rows`);
         console.log(`  DB count : ${r?.n} bhagavad-gita rows`);
-        console.log('═════════════════════════════════════════\\n');
+        console.log('â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•\\n');
         db.close();
       });
     });
@@ -2185,7 +2185,7 @@ def clean_oneoffs():
             print(f"Purged script: {file}")
 
 def main():
-    parser = argparse.ArgumentParser(description="🏛️ Vishwa-Vani Command Center")
+    parser = argparse.ArgumentParser(description="ðŸ›ï¸ Vishwa-Vani Command Center")
     subparsers = parser.add_subparsers(dest="command")
 
     # Bootstrap
@@ -2272,7 +2272,7 @@ def main():
 
             ret = run_node("validate_silver.js", [args.slug])
             if ret != 0:
-                print("\n✗ BLOCKED: Validation failed. Fix all errors before promoting.")
+                print("\nâœ— BLOCKED: Validation failed. Fix all errors before promoting.")
                 import sys
                 sys.exit(1)
 
@@ -2327,14 +2327,14 @@ def main():
 
 def build_static():
     """ADF-BUILD: Executes the static site generation (Next.js export)."""
-    print("🚀 Initiating Static Build Pipeline...")
+    print("ðŸš€ Initiating Static Build Pipeline...")
     import subprocess
     try:
         # Standard Next.js build command
         subprocess.run("npm run build", check=True, shell=True)
-        print("✅ Static export complete. Ready for hosting.")
+        print("âœ… Static export complete. Ready for hosting.")
     except Exception as e:
-        print(f"❌ Build failed: {e}")
+        print(f"âŒ Build failed: {e}")
 
 def patch_sanskrit(slug, chapter):
     """ADF-INGEST-P: Safely injects Sanskrit shlokas into an existing JSON shard."""
@@ -2346,8 +2346,8 @@ def patch_sanskrit(slug, chapter):
     # Example logic for Adi Parva Chapter 1
     if slug == "mahabharata" and chapter == "1":
         sanskrit_data = [
-            "नारायणं नमस्कृत्य नरं चैव नरोत्तमम् । देवी सरस्वतीं चैव ततो जयमुदीरयेत् ॥ १ ॥",
-            "लोमहर्षणपुत्र उग्रश्रवाः सौतिर नैमिषारण्ये शौनकस्य कुलपतेः द्वादशवार्षिके सत्रे ॥ २ ॥"
+            "à¤¨à¤¾à¤°à¤¾à¤¯à¤£à¤‚ à¤¨à¤®à¤¸à¥à¤•à¥ƒà¤¤à¥à¤¯ à¤¨à¤°à¤‚ à¤šà¥ˆà¤µ à¤¨à¤°à¥‹à¤¤à¥à¤¤à¤®à¤®à¥ à¥¤ à¤¦à¥‡à¤µà¥€ à¤¸à¤°à¤¸à¥à¤µà¤¤à¥€à¤‚ à¤šà¥ˆà¤µ à¤¤à¤¤à¥‹ à¤œà¤¯à¤®à¥à¤¦à¥€à¤°à¤¯à¥‡à¤¤à¥ à¥¥ à¥§ à¥¥",
+            "à¤²à¥‹à¤®à¤¹à¤°à¥à¤·à¤£à¤ªà¥à¤¤à¥à¤° à¤‰à¤—à¥à¤°à¤¶à¥à¤°à¤µà¤¾à¤ƒ à¤¸à¥Œà¤¤à¤¿à¤° à¤¨à¥ˆà¤®à¤¿à¤·à¤¾à¤°à¤£à¥à¤¯à¥‡ à¤¶à¥Œà¤¨à¤•à¤¸à¥à¤¯ à¤•à¥à¤²à¤ªà¤¤à¥‡à¤ƒ à¤¦à¥à¤µà¤¾à¤¦à¤¶à¤µà¤¾à¤°à¥à¤·à¤¿à¤•à¥‡ à¤¸à¤¤à¥à¤°à¥‡ à¥¥ à¥¨ à¥¥"
         ]
         with open(target_file, 'r', encoding='utf-8') as f:
             data = json.load(f)
@@ -2427,8 +2427,8 @@ def tag_book(slug, concept):
                 topics = set(meta.get("topics", []))
                 if concept: topics.add(concept)
                 # Simulated AI auto-detection
-                if "कृष्ण" in v.get("original", ""): topics.add("krishna")
-                if "ज्ञान" in v.get("original", ""): topics.add("jnana")
+                if "à¤•à¥ƒà¤·à¥à¤£" in v.get("original", ""): topics.add("krishna")
+                if "à¤œà¥à¤žà¤¾à¤¨" in v.get("original", ""): topics.add("jnana")
                 meta["topics"] = list(topics)
                 v["ai_metadata"] = meta
         with open(fpath, 'w', encoding='utf-8') as f:
@@ -2774,11 +2774,11 @@ def verify_ocr_segmentation(ocr_file):
     
     # Basic checks
     lines = content.split('\n')
-    sanskrit_lines = [l for l in lines if any(c in l for c in 'अआइईउऊऋॠऌॡएऐओऔअंअःकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसह')]
+    sanskrit_lines = [l for l in lines if any(c in l for c in 'à¤…à¤†à¤‡à¤ˆà¤‰à¤Šà¤‹à¥ à¤Œà¥¡à¤à¤à¤“à¤”à¤…à¤‚à¤…à¤ƒà¤•à¤–à¤—à¤˜à¤™à¤šà¤›à¤œà¤à¤žà¤Ÿà¤ à¤¡à¤¢à¤£à¤¤à¤¥à¤¦à¤§à¤¨à¤ªà¤«à¤¬à¤­à¤®à¤¯à¤°à¤²à¤µà¤¶à¤·à¤¸à¤¹')]
     print(f"OCR file has {len(lines)} total lines, {len(sanskrit_lines)} with Sanskrit characters")
     
     # Check for common OCR errors
-    error_patterns = ['11111111', '~~~~', '====', '€+', '„~']
+    error_patterns = ['11111111', '~~~~', '====', 'â‚¬+', 'â€ž~']
     errors = sum(1 for pattern in error_patterns if pattern in content)
     print(f"Detected {errors} potential OCR artifacts")
     
@@ -2789,3 +2789,5 @@ def verify_ocr_segmentation(ocr_file):
 
 if __name__ == "__main__":
     main()
+
+
