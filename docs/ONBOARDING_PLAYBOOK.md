@@ -4,6 +4,8 @@ This playbook defines the standardized, zero-hallucination workflow to ingest, p
 
 ## 1. Preparation & Legal Clearance
 *   **Rule:** 100% Public Domain sources only. No exceptions.
+*   **Rule:** Every book MUST have at least 2 commentaries by 2 different authors.
+*   **Rule:** Every book MUST support at least 3 languages (English, Hindi, Marathi).
 *   **Action:** Verify copyright expiration (e.g., pre-1928 translations or explicitly open-sourced data like GRETIL).
 *   **Action:** Add the book to `docs/backlog.md` under a dedicated Epic (e.g., `EPIC-ISHA-01`).
 

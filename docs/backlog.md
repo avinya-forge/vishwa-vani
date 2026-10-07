@@ -203,3 +203,20 @@ This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani 
 
 ### New Findings
 - [x] `BUG-043` **[P1-HIGH] Missing Error Boundaries for Extracted Components**: `VerseBaseTranslation` and `VerseCommentarySection` were extracted from `study-client.tsx`, but lack localized React error boundaries. If a verse payload is malformed (e.g. `translation` is undefined instead of string), the entire client component will crash. *Fix:* Wrap them in `<ErrorBoundary>` or validate props via Zod before rendering.
+
+---
+
+## EPIC-MBH-02: Mahabharata 100% Readiness
+- [ ] `MBH-COM-01` **Acquire 2 Commentaries**: Scrape and parse 2 public domain commentaries for all 18 Parvas.
+- [ ] `MBH-LANG-01` **Multi-Language Generation**: Run Local LLM Queue to generate Hindi and Marathi translations for all verses.
+- [ ] `MBH-TOGGLE-01` **UI Verification & Toggle**: Verify 0 placeholders, set readiness to 100.0, and toggle UI flag.
+
+## EPIC-BHAG-02: Bhagavata Purana 100% Readiness
+- [ ] `BHAG-COM-01` **Acquire 2 Commentaries**: Scrape and parse 2 public domain commentaries for all 12 Cantos.
+- [ ] `BHAG-LANG-01` **Multi-Language Generation**: Run Local LLM Queue to generate Hindi and Marathi translations.
+- [ ] `BHAG-TOGGLE-01` **UI Verification & Toggle**: Verify 0 placeholders, set readiness to 100.0, and toggle UI flag.
+
+## EPIC-STOTRAS-01: Stotras 100% Readiness
+- [ ] `STOTRAS-COM-01` **Acquire 2 Commentaries**: Scrape and parse 2 public domain commentaries.
+- [ ] `STOTRAS-LANG-01` **Multi-Language Generation**: Run Local LLM Queue to generate Hindi and Marathi translations.
+- [ ] `STOTRAS-TOGGLE-01` **UI Verification & Toggle**: Verify 0 placeholders, set readiness to 100.0, and toggle UI flag.

@@ -12,12 +12,14 @@ Built with an unwavering focus on **accessibility**, **performance**, and **desi
 
 ## ✨ Core Capabilities
 
-- 📚 **Comprehensive Library**: Multi-layered reading experience for the Bhagavad Gita, Mahabharata, and more.
+- 📚 **Comprehensive Library**: Multi-layered reading experience (Bhagavad Gita [100% Complete], Mahabharata, Upanishads).
 - 🧘 **Vedic Labs**: Interactive experimental modules for meditation (Pranayama Timer), Cosmic visualization, and consciousness mapping.
 - ⚡ **High-Performance Architecture**: SSR-first, edge-optimized routing, and minimal client payloads for instant loading.
 - 💾 **Vedic-Lake**: A custom-built, lightweight SQLite data lake for rapid semantic querying of over 30,000 verses.
 - 🌐 **Multilingual Support**: Read and search seamlessly across English, Hindi (हिंदी), Marathi (मराठी), and Sanskrit (संस्कृत).
 - 🛡️ **Enterprise Security**: Rate limiting, API guards, strict CSP, and WAF protection built directly into the application layer.
+- 🤖 **Local AI Queue Summarization**: Integrated low-RAM Local LLM (AirLLM/LLaMA.cpp) queue-based worker for offline, private shloka summaries.
+- 📚 **Zero-Hallucination Playbook**: A strict docs/ONBOARDING_PLAYBOOK.md enforcing 100% public domain sourcing, multi-language validation, and structural integrity.
 
 ---
 
