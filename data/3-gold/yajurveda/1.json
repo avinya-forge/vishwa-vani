@@ -1,0 +1,34 @@
+﻿{
+  "text": "yajurveda",
+  "chapter": 1,
+  "title": "Adhyaya 1: Darshapurnamasa Mantras",
+  "summary": "Mantras for the New and Full Moon sacrifices.",
+  "ai_summary": "The first chapter provides the prose and metric mantras necessary for the Adhvaryu priest to execute the fundamental lunar sacrifices.",
+  "verses": [
+    {
+      "id": "yajurveda_1_1",
+      "verse": 1,
+      "sanskrit": "इषे त्वोर्जे त्वा वायव स्थ देवो वः सविता प्रार्पयतु श्रेष्ठतमाय कर्मणे ।",
+      "transliteration": "iṣe tvorje tvā vāyava stha devo vaḥ savitā prārpayatu śreṣṭhatamāya karmaṇe |",
+      "translation": "For food thee, for vigor thee! Ye are winds! May the divine Savitri impel you to the most excellent action.",
+      "layers": [
+        {
+          "type": "translation",
+          "lang": "hi",
+          "content": "अन्न के लिए और बल के लिए हम तुम्हारा आह्वान करते हैं। तुम वायु रूप हो। सविता देव तुम्हें श्रेष्ठ कर्म (यज्ञ) के लिए प्रेरित करें।"
+        },
+        {
+          "type": "translation",
+          "lang": "mr",
+          "content": "अन्नासाठी आणि बळासाठी आम्ही तुझे आवाहन करतो. तुम्ही वायुरूप आहात. सविता देव तुम्हाला श्रेष्ठ कर्मासाठी (यज्ञासाठी) प्रेरित करो."
+        },
+        {
+          "type": "commentary",
+          "author": "ubvata",
+          "lang": "en",
+          "content": "Addressed initially to the Palasha branch used for driving away the calves from the cows during the milking process for the sacrifice."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+﻿{
+  "text": "samaveda",
+  "chapter": 1,
+  "title": "Purvarchika: Agneya Parva",
+  "summary": "Melodies dedicated to Agni.",
+  "ai_summary": "The first section of the Samaveda translates the rigvedic hymns of Agni into musical notation and chanting melodies for the Soma sacrifice.",
+  "verses": [
+    {
+      "id": "samaveda_1_1",
+      "verse": 1,
+      "sanskrit": "अग्न आ याहि वीतये गृणानो हव्यदातये ।\nनि होता सत्सि बर्हिषि ॥",
+      "transliteration": "agna ā yāhi vītaye gṛṇāno havyadātaye |\nni hotā satsi barhiṣi ||",
+      "translation": "O Agni, come to the feast; being praised, come to accept the offerings. Sit as the Invoker on the sacred grass.",
+      "layers": [
+        {
+          "type": "translation",
+          "lang": "hi",
+          "content": "हे अग्नि, स्तुति किए जाने पर आप हव्य (भेंट) ग्रहण करने के लिए यज्ञ में आएं। आप होता के रूप में कुशासन पर विराजमान हों।"
+        },
+        {
+          "type": "translation",
+          "lang": "mr",
+          "content": "हे अग्नी, स्तुती केली जात असताना यज्ञात हविर्भाग ग्रहण करण्यासाठी यावे. आपण होता म्हणून दर्भावर विराजमान व्हावे."
+        },
+        {
+          "type": "commentary",
+          "author": "sayana",
+          "lang": "en",
+          "content": "This mantra corresponds to Rigveda 6.16.10, adapted here for musical chanting (Udgitha) by the Udgatar priest."
+        }
+      ]
+    }
+  ]
+}

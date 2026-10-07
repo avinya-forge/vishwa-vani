@@ -1,0 +1,34 @@
+﻿{
+  "text": "brahma-sutras",
+  "chapter": 1,
+  "title": "Adhyaya 1: Samanvaya (Harmony)",
+  "summary": "Establishing Brahman as the ultimate cause of the universe.",
+  "ai_summary": "The first chapter harmonizes various Vedantic statements to establish that Brahman is the sole source, sustainer, and destroyer of the universe.",
+  "verses": [
+    {
+      "id": "brahma-sutras_1_1",
+      "verse": 1,
+      "sanskrit": "अथातो ब्रह्मजिज्ञासा ॥",
+      "transliteration": "athāto brahmajijñāsā ||",
+      "translation": "Now, therefore, the inquiry into Brahman.",
+      "layers": [
+        {
+          "type": "translation",
+          "lang": "hi",
+          "content": "अब, इसलिए, ब्रह्म की जिज्ञासा (प्रारंभ होती है)।"
+        },
+        {
+          "type": "translation",
+          "lang": "mr",
+          "content": "आता, यानंतर, ब्रह्माची जिज्ञासा (सुरू होते)."
+        },
+        {
+          "type": "commentary",
+          "author": "sankara",
+          "lang": "en",
+          "content": "The word 'atha' (now) implies antecedent conditions. After acquiring the fourfold discipline, one is qualified to inquire into Brahman."
+        }
+      ]
+    }
+  ]
+}

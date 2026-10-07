@@ -1,0 +1,34 @@
+﻿{
+  "text": "rigveda",
+  "chapter": 1,
+  "title": "Mandala 1: Agni Sukta",
+  "summary": "Invocation of Agni, the divine priest and conveyer of offerings.",
+  "ai_summary": "The first hymn of the Rigveda praises Agni as the ultimate divine priest who facilitates the connection between mortals and the cosmos.",
+  "verses": [
+    {
+      "id": "rigveda_1_1",
+      "verse": 1,
+      "sanskrit": "अग्निमीळे पुरोहितं यज्ञस्य देवमृत्विजम् ।\nहोतारं रत्नधातमम् ॥",
+      "transliteration": "agnimīḷe purohitaṃ yajñasya devamṛtvijam |\nhotāraṃ ratnadhātamam ||",
+      "translation": "I glorify Agni, the high priest of the sacrifice, the divine, the ministrant, who is the offerer and supreme bestower of treasures.",
+      "layers": [
+        {
+          "type": "translation",
+          "lang": "hi",
+          "content": "मैं अग्नि की स्तुति करता हूँ, जो यज्ञ के पुरोहित, देव, ऋत्विज, होता और रत्नों (संपत्ति) के उत्तम दाता हैं।"
+        },
+        {
+          "type": "translation",
+          "lang": "mr",
+          "content": "मी अग्नीची स्तुती करतो, जो यज्ञाचा पुरोहित, देव, ऋत्विज, आणि रत्ने (संपत्ती) देणारा श्रेष्ठ आहे."
+        },
+        {
+          "type": "commentary",
+          "author": "sayana",
+          "lang": "en",
+          "content": "Agni is placed at the forefront (purohitam) of all spiritual endeavors, representing the spark of cosmic intelligence."
+        }
+      ]
+    }
+  ]
+}

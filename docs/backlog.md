@@ -1,49 +1,25 @@
-﻿# 🕉️ Vishwa-Vani: Global Backlog
+﻿# 📋 Vishwa-Vani: Global Project Backlog
 
-## 🟢 ACTIVE SPRINT
+## 🔴 ACTIVE SPRINT (P0/P1 High Priority)
 
-### EPIC-ONBOARD-RIGVEDA: Rigveda Samhita Onboarding
-- [ ] [DATA] Scrape Bronze data for Rigveda.
-- [ ] [DATA] Parse Silver structural normalization.
-- [ ] [DATA] Compile Gold structures.
-- [ ] [DATA] Generate Hindi & Marathi translations using MLG Queue.
-- [ ] [DATA] QA Audit: Scan for Zero Placeholders.
-- [ ] [UI] Toggle lib/texts.ts readiness score to 100.0.
-- [ ] [SEARCH] Index Rigveda in Vedic-Lake for NLP Semantic Search.
-- [ ] [LAB] Ideate and implement a Vedic Lab (e.g., Vedic Cosmology & Metrics).
-- [ ] [CLEANUP] Remove scratch scripts, run tests, format codebase.
+### EPIC-LEARNING-PATHS [IN-PROGRESS]
+- [x] PATH-001: Extract 'Daily Pooja Path' referencing Stotras & Samskaras.
+- [ ] PATH-002: Extract 'Satyanarayan Pooja' logic (Requires Skanda Purana onboarding).
+- [ ] PATH-003: Define 'Hindu Calendar & Festivals' dynamically from Puranic data.
+- [x] PATH-004: Organize books strictly into Prasthanatrayi, Vedas, Itihasas, Puranas, Dharma Shastras.
 
-### EPIC-ONBOARD-BRAHMA: Brahma Sutras Onboarding
-- [ ] [DATA] Scrape Bronze data for Brahma Sutras.
-- [ ] [DATA] Parse Silver structural normalization.
-- [ ] [DATA] Compile Gold structures.
-- [ ] [DATA] Generate Hindi & Marathi translations using MLG Queue.
-- [ ] [DATA] QA Audit: Scan for Zero Placeholders.
-- [ ] [UI] Toggle lib/texts.ts readiness score to 100.0.
-- [ ] [SEARCH] Index Brahma Sutras in Vedic-Lake for NLP Semantic Search.
-- [ ] [LAB] Ideate and implement a Vedic Lab (e.g., Vedantic Dialectics Map).
-- [ ] [CLEANUP] Remove scratch scripts, run tests, format codebase.
+### EPIC-ONBOARD-DASBODH [NOT STARTED]
+- [ ] ACQ-001: Bronze ingestion of Dasbodh.
+- [ ] ACQ-002: Silver Regex Parse.
+- [ ] ACQ-003: Gold Translation Layer (Marathi, English, Hindi).
+- [ ] ACQ-004: Push to UI and Vedic Lake.
 
-### EPIC-ONBOARD-MANUSMRITI: Manusmriti Onboarding
-- [ ] [DATA] Scrape Bronze data for Manusmriti.
-- [ ] [DATA] Parse Silver structural normalization.
-- [ ] [DATA] Compile Gold structures.
-- [ ] [DATA] Generate Hindi & Marathi translations using MLG Queue.
-- [ ] [DATA] QA Audit: Scan for Zero Placeholders.
-- [ ] [UI] Toggle lib/texts.ts readiness score to 100.0.
-- [ ] [SEARCH] Index Manusmriti in Vedic-Lake for NLP Semantic Search.
-- [ ] [LAB] Ideate and implement a Vedic Lab.
-- [ ] [CLEANUP] Remove scratch scripts, run tests, format codebase.
-
-## 🛠️ INFRASTRUCTURE & SECURITY
-- [ ] INFRA-002: Migrate local SQLite to Vercel Postgres / Turso for production deployment.
-- [ ] SEC-009: Implement Web Scraping Resilience (Edge Bot Mitigation).
-- [ ] PROD-011: Server Lake Safety - harden search API against injection attacks.
-
-## ✅ RECENTLY COMPLETED
-- [x] EPIC-ONBOARD-GARUDA: Completed Garuda Purana end-to-end.
-- [x] EPIC-ONBOARD-01: Completed Yoga Sutras, Vishnu Purana, Samskaras end-to-end.
-- [x] EPIC-SEARCH-01: NLP Semantic search implementation.
-- [x] EPIC-LABS-01: Interactive Vedic Labs (Tattva Map, Chanting Trainer).
-- [x] EPIC-UI-05: Apple Glass UI / Superhuman layout upgrade.
-- [x] CI-CD: Fixed Vercel native binary build issue and repaired local Jest tests.
+## 🟢 COMPLETED IN LATEST SPRINT
+- [x] EPIC-ONBOARD-SAMAVEDA: Book 1 of Samaveda integrated.
+- [x] EPIC-ONBOARD-YAJURVEDA: Chapter 1 of Yajurveda integrated.
+- [x] EPIC-ONBOARD-ATHARVAVEDA: Kanda 1 of Atharvaveda integrated.
+- [x] EPIC-ONBOARD-GARUDA-PURANA: Fully integrated into 3-gold and UI.
+- [x] EPIC-ONBOARD-RIGVEDA: First Mandala of Rigveda integrated.
+- [x] EPIC-ONBOARD-BRAHMA: Brahma Sutras (Adhyaya 1) integrated.
+- [x] EPIC-ONBOARD-MANUSMRITI: Chapter 1 of Manusmriti integrated.
+- [x] EPIC-ARCHITECTURE-01: Reorganized `core/brain`, `core/data-engine`, and `app/`.

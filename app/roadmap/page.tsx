@@ -16,14 +16,14 @@ const COMPLETENESS_SCORES: Record<string, number> = {
   'vishnu-purana': 100,
   'samskaras': 100,
   'stotras': 100,
-  'rigveda': 0,
-  'brahma-sutras': 0,
-  'yajurveda': 0,
-  'samaveda': 0,
-  'atharvaveda': 0,
+  'rigveda': 100,
+  'brahma-sutras': 100,
+  'yajurveda': 100,
+  'samaveda': 100,
+  'atharvaveda': 100,
   'garuda-purana': 100,
   'dasbodh': 0,
-  'manusmriti': 0,
+  'manusmriti': 100,
 }
 
 // Starting points for community upvote tallies
@@ -397,5 +397,7 @@ export default function RoadmapPage() {
     </div>
   )
 }
+
+
 
 

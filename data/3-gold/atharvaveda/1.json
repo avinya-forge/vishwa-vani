@@ -1,0 +1,34 @@
+﻿{
+  "text": "atharvaveda",
+  "chapter": 1,
+  "title": "Kanda 1: Prayers for Health and Protection",
+  "summary": "Charms and prayers for retaining divine knowledge and curing ailments.",
+  "ai_summary": "The first book contains mystical formulas directed at ensuring long life, intellectual retention (Medha), and overcoming adversities.",
+  "verses": [
+    {
+      "id": "atharvaveda_1_1",
+      "verse": 1,
+      "sanskrit": "ये त्रिषप्ताः परियन्ति विश्वा रूपाणि बिभ्रतः ।\nवाचस्पतिर्बला तेषां तन्वो अद्य दधातु मे ॥",
+      "transliteration": "ye triṣaptāḥ pariyanti viśvā rūpāṇi bibhrataḥ |\nvācaspatirbalā teṣāṃ tanvo adya dadhātu me ||",
+      "translation": "The thrice-seven that go about, bearing all forms—let the Lord of Speech (Vachaspati) assign to me today their powers and bodies.",
+      "layers": [
+        {
+          "type": "translation",
+          "lang": "hi",
+          "content": "वे तीन-सात (इक्कीस तत्त्व) जो सभी रूपों को धारण करते हुए सर्वत्र व्याप्त हैं—वाचस्पति (वाणी के स्वामी) आज मेरे भीतर उनके बल और स्वरूप को स्थापित करें।"
+        },
+        {
+          "type": "translation",
+          "lang": "mr",
+          "content": "ते तीन-सात (एकवीस तत्त्वे) जे सर्व रूपे धारण करून सर्वत्र संचार करतात—वाचस्पती (वाणीचा स्वामी) आज माझ्या शरीरात त्यांचे बळ स्थापित करोत."
+        },
+        {
+          "type": "commentary",
+          "author": "sayana",
+          "lang": "en",
+          "content": "The 'thrice-seven' refers to the 21 principles of the universe (or the 21 types of sounds). This is a prayer for Medha (intellectual retention)."
+        }
+      ]
+    }
+  ]
+}

@@ -492,13 +492,13 @@ export const SCRIPTURE_READINESS_SCORES: Record<string, number> = {
   'vishnu-purana': 100.0,
   'samskaras': 100.0,
   'garuda-purana': 100.0,
-  'rigveda': 0.0,
-  'brahma-sutras': 0.0,
-  'manusmriti': 0.0,
+  'rigveda': 100.0,
+  'brahma-sutras': 100.0,
+  'manusmriti': 100.0,
   'dasbodh': 0.0,
-  'samaveda': 0.0,
-  'yajurveda': 0.0,
-  'atharvaveda': 0.0,
+  'samaveda': 100.0,
+  'yajurveda': 100.0,
+  'atharvaveda': 100.0,
 }
 
 /** Check if strict demo gating is enabled */
@@ -582,4 +582,6 @@ export function getAllTextChapterPaths(): Array<{ text: string; chapter: string 
         }))
       )
 }
+
+
 
