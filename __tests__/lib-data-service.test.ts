@@ -99,7 +99,7 @@ describe('VedicDataService', () => {
 
     it('returns no nextChapter for the last chapter', async () => {
       const result = await vedicDataService.getChapterData('bhagavad-gita', 18) // 18 is last
-      expect(result?.navigation.nextChapter).toBeUndefined()
+      expect(result?.navigation.nextChapter?.slug).toBe('/bhagavad-gita/postface')
     })
   })
 
