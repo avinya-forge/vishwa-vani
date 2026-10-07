@@ -20,24 +20,14 @@ export default function ShlokaMask({ text, className, fontSize }: { text: string
     const { resolvedTheme } = useTheme()
     const [windowWidth, setWindowWidth] = useState(800)
 
-    useEffect(() => {
-        if (typeof window === 'undefined') return
-        setWindowWidth(window.innerWidth)
-        const handleResize = () => {
-            setWindowWidth(window.innerWidth)
-        }
-        window.addEventListener('resize', handleResize)
-        return () => window.removeEventListener('resize', handleResize)
-    }, [])
-
-    useEffect(() => {
+        useEffect(() => {
         if (fontSize !== undefined) return
         if (windowWidth < 380) {
-            setResolvedFontSize(14)
-        } else if (windowWidth < 640) {
             setResolvedFontSize(16)
+        } else if (windowWidth < 640) {
+            setResolvedFontSize(20)
         } else {
-            setResolvedFontSize(22)
+            setResolvedFontSize(28)
         }
     }, [fontSize, windowWidth])
 
@@ -149,3 +139,5 @@ export default function ShlokaMask({ text, className, fontSize }: { text: string
         </div>
     )
 }
+
+

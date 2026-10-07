@@ -22,9 +22,10 @@ export default function VerseBaseTranslation({ baseTranslation, cleanText }: Ver
         <span className="w-4 h-[2px] bg-orange-500/50 rounded-full inline-block"></span>
         Universal Translation
       </p>
-      <p className="text-stone-900 dark:text-stone-100 leading-[1.9] text-[17px] sm:text-lg lg:text-[22px] font-serif font-medium tracking-tight text-pretty">
+      <p className="text-stone-900 dark:text-stone-100 leading-[1.9] text-[18px] sm:text-[20px] lg:text-[24px] font-serif font-normal tracking-normal text-pretty">
         {cleanText(text)}
       </p>
     </div>
   );
 }
+
