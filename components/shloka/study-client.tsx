@@ -767,41 +767,46 @@ export default function StudyClient({
           
           {/* Left Sidebar (Vedic Labs) */}
           <aside className="w-full xl:w-[280px] flex-shrink-0 xl:sticky xl:top-24 space-y-4 xl:pt-12 order-2 xl:order-1 mt-8 xl:mt-0 xl:max-h-[calc(100vh-6rem)] xl:overflow-y-auto scrollbar-none pb-8">
-            <div className="bg-white/80 dark:bg-stone-900/80 backdrop-blur-xl rounded-3xl border border-stone-200/50 dark:border-stone-800/50 p-6 shadow-xl shadow-stone-200/20 dark:shadow-none overflow-hidden relative">
-               <div className="absolute top-0 right-0 w-32 h-32 bg-orange-500/10 dark:bg-orange-400/5 rounded-full blur-3xl pointer-events-none" />
+            <div className="bg-white/80 dark:bg-[#1A1A1A]/80 backdrop-blur-xl rounded-3xl border border-stone-200/40 dark:border-stone-800/40 p-6 shadow-2xl shadow-stone-200/20 dark:shadow-none overflow-hidden relative group">
+               <div className="absolute top-0 right-0 w-32 h-32 bg-orange-500/10 dark:bg-orange-400/5 rounded-full blur-3xl pointer-events-none group-hover:scale-150 transition-transform duration-1000 ease-in-out" />
                <h3 className="text-[10px] font-black uppercase tracking-widest text-stone-400 dark:text-stone-500 mb-6 flex items-center gap-2">
                  <span className="text-base">🧪</span> Vedic Labs
                </h3>
-               <div className="space-y-4 relative z-10">
-                 <div className="p-4 bg-gradient-to-br from-stone-50 to-white dark:from-stone-800/40 dark:to-stone-900/40 rounded-2xl border border-stone-100 dark:border-stone-800/60 hover:border-orange-300/50 dark:hover:border-orange-500/30 hover:shadow-lg hover:shadow-orange-500/5 transition-all duration-300 cursor-pointer group">
-                    <div className="flex items-center gap-3 mb-2">
-                      <div className="w-8 h-8 rounded-full bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center text-orange-600 dark:text-orange-400 group-hover:scale-110 transition-transform">
+               <div className="space-y-3 relative z-10">
+                 
+                 <Link href="/lab" className="block p-4 bg-stone-50/50 hover:bg-white dark:bg-stone-900/30 dark:hover:bg-stone-800/50 rounded-2xl border border-transparent hover:border-orange-200 dark:hover:border-orange-900/50 transition-all duration-300 group/item cursor-pointer">
+                    <div className="flex items-center gap-3 mb-1.5">
+                      <div className="w-8 h-8 rounded-full bg-orange-100 dark:bg-orange-900/40 flex items-center justify-center text-orange-600 dark:text-orange-400 group-hover/item:scale-110 group-hover/item:bg-orange-600 group-hover/item:text-white transition-all">
                         <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
                       </div>
-                      <p className="text-sm font-bold text-stone-800 dark:text-stone-200 group-hover:text-orange-600 dark:group-hover:text-orange-400 transition-colors">Semantic Explorer</p>
+                      <p className="text-sm font-bold text-stone-800 dark:text-stone-200 group-hover/item:text-orange-600 dark:group-hover/item:text-orange-400 transition-colors">Semantic Explorer</p>
                     </div>
-                    <p className="text-xs text-stone-500 dark:text-stone-400 leading-relaxed">Visualize conceptual connections across verses in this chapter.</p>
-                 </div>
+                    <p className="text-xs text-stone-500 dark:text-stone-400 leading-relaxed pl-11">Visualize conceptual connections across verses.</p>
+                 </Link>
                  
-                 <div className="p-4 bg-gradient-to-br from-stone-50 to-white dark:from-stone-800/40 dark:to-stone-900/40 rounded-2xl border border-stone-100 dark:border-stone-800/60 hover:border-amber-300/50 dark:hover:border-amber-500/30 hover:shadow-lg hover:shadow-amber-500/5 transition-all duration-300 cursor-pointer group">
-                    <div className="flex items-center gap-3 mb-2">
-                      <div className="w-8 h-8 rounded-full bg-amber-100 dark:bg-amber-900/30 flex items-center justify-center text-amber-600 dark:text-amber-400 group-hover:scale-110 transition-transform">
+                 <Link href="/lab" className="block p-4 bg-stone-50/50 hover:bg-white dark:bg-stone-900/30 dark:hover:bg-stone-800/50 rounded-2xl border border-transparent hover:border-amber-200 dark:hover:border-amber-900/50 transition-all duration-300 group/item cursor-pointer">
+                    <div className="flex items-center gap-3 mb-1.5">
+                      <div className="w-8 h-8 rounded-full bg-amber-100 dark:bg-amber-900/40 flex items-center justify-center text-amber-600 dark:text-amber-400 group-hover/item:scale-110 group-hover/item:bg-amber-600 group-hover/item:text-white transition-all">
                         <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
                       </div>
-                      <p className="text-sm font-bold text-stone-800 dark:text-stone-200 group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors">Etymology Lab</p>
+                      <p className="text-sm font-bold text-stone-800 dark:text-stone-200 group-hover/item:text-amber-600 dark:group-hover/item:text-amber-400 transition-colors">Etymology Lab</p>
                     </div>
-                    <p className="text-xs text-stone-500 dark:text-stone-400 leading-relaxed">Dive deep into Sanskrit roots and derivations.</p>
-                 </div>
+                    <p className="text-xs text-stone-500 dark:text-stone-400 leading-relaxed pl-11">Dive deep into Sanskrit roots and derivations.</p>
+                 </Link>
                  
-                 <div className="p-4 bg-gradient-to-br from-stone-50 to-white dark:from-stone-800/40 dark:to-stone-900/40 rounded-2xl border border-stone-100 dark:border-stone-800/60 hover:border-rose-300/50 dark:hover:border-rose-500/30 hover:shadow-lg hover:shadow-rose-500/5 transition-all duration-300 cursor-pointer group">
-                    <div className="flex items-center gap-3 mb-2">
-                      <div className="w-8 h-8 rounded-full bg-rose-100 dark:bg-rose-900/30 flex items-center justify-center text-rose-600 dark:text-rose-400 group-hover:scale-110 transition-transform">
+                 <Link href="/lab" className="block p-4 bg-stone-50/50 hover:bg-white dark:bg-stone-900/30 dark:hover:bg-stone-800/50 rounded-2xl border border-transparent hover:border-rose-200 dark:hover:border-rose-900/50 transition-all duration-300 group/item cursor-pointer">
+                    <div className="flex items-center gap-3 mb-1.5">
+                      <div className="w-8 h-8 rounded-full bg-rose-100 dark:bg-rose-900/40 flex items-center justify-center text-rose-600 dark:text-rose-400 group-hover/item:scale-110 group-hover/item:bg-rose-600 group-hover/item:text-white transition-all">
                         <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" /></svg>
                       </div>
-                      <p className="text-sm font-bold text-stone-800 dark:text-stone-200 group-hover:text-rose-600 dark:group-hover:text-rose-400 transition-colors">Recitation Analysis</p>
+                      <p className="text-sm font-bold text-stone-800 dark:text-stone-200 group-hover/item:text-rose-600 dark:group-hover/item:text-rose-400 transition-colors">Recitation Analysis</p>
                     </div>
-                    <p className="text-xs text-stone-500 dark:text-stone-400 leading-relaxed">Audio meter (Chhandas) visualization and phonetics.</p>
-                 </div>
+                    <p className="text-xs text-stone-500 dark:text-stone-400 leading-relaxed pl-11">Audio meter visualization and phonetics.</p>
+                 </Link>
+
+               </div>
+               <div className="mt-6 pt-4 border-t border-stone-100 dark:border-stone-800/50 text-center">
+                 <Link href="/lab" className="text-[10px] font-bold uppercase tracking-widest text-stone-400 hover:text-stone-800 dark:hover:text-stone-200 transition-colors">Explore All Labs &rarr;</Link>
                </div>
             </div>
           </aside>
@@ -831,7 +836,7 @@ export default function StudyClient({
           })()}
 
           {/* Verses Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mt-6 sm:mt-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 xl:gap-12 mt-8 sm:mt-12">
           {[...verses].sort((a: unknown, b: unknown) => {
             const av = parseInt(String((a as Record<string, unknown>).verse ?? 0), 10)
             const bv = parseInt(String((b as Record<string, unknown>).verse ?? 0), 10)
@@ -957,7 +962,7 @@ export default function StudyClient({
                       <ShlokaMask text={String(v.original)} className="sm:w-full scale-105 transform origin-center transition-transform" />
                     </div>
                     {v.transliteration ? (
-                      <p className="mt-4 text-stone-500 dark:text-stone-400 font-serif italic text-sm sm:text-base leading-relaxed max-w-2xl mx-auto break-words tracking-wide">
+                      <p className="mt-6 text-stone-500/90 dark:text-stone-400/90 font-serif italic text-[15px] sm:text-[17px] leading-[1.8] max-w-2xl mx-auto break-words tracking-wide text-pretty">
                         {String(v.transliteration)}
                       </p>
                     ) : null}

@@ -3,6 +3,15 @@
 import dynamic from 'next/dynamic'
 import { LabSkeleton } from '@/components/layout/Skeleton'
 
+const ChantingTrainer = dynamic(() => import('@/components/lab/chanting-trainer'), {
+  ssr: false,
+  loading: () => <LabSkeleton />
+})
+const InteractiveTattvaMap = dynamic(() => import('@/components/lab/interactive-tattva-map'), {
+  ssr: false,
+  loading: () => <LabSkeleton />
+})
+
 const PranayamaTimer = dynamic(() => import('@/components/lab/pranayama-timer'), {
   ssr: false,
   loading: () => <LabSkeleton />
@@ -189,6 +198,8 @@ export default function VedicLabPage() {
 
            {/* Remaining items default to 2 columns in large view */}
            {[
+             <InteractiveTattvaMap key="new1"/>,
+             <ChantingTrainer key="new2"/>,
              <ArjunasCrisisCounselor key="1"/>,
              <GunaBalancingSimulator key="2"/>,
              <MokshaPathwaysEngine key="3"/>,
