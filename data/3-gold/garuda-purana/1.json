@@ -1,0 +1,40 @@
+﻿{
+  "text": "garuda-purana",
+  "chapter": 1,
+  "title": "Purva Khanda - Genesis",
+  "summary": "The origin of the universe and the duties of existence as revealed by Lord Vishnu to Garuda.",
+  "ai_summary": "The Purva Khanda explores cosmological origins, righteous living (dharma), and the path of devotion. It emphasizes that a balanced life aligned with cosmic laws leads to spiritual evolution.",
+  "verses": [
+    {
+      "id": "garuda-purana_1_1",
+      "verse": 1,
+      "sanskrit": "नारायणं नमस्कृत्य नरं चैव नरोत्तमम् ।\nदेवीं सरस्वतीं व्यासं ततो जयमुदीरयेत् ॥",
+      "transliteration": "nārāyaṇaṃ namaskṛtya naraṃ caiva narottamami |\ndevīṃ sarasvatīṃ vyāsaṃ tato jayamudīrayet ||",
+      "translation": "Having bowed down to Narayana, and to Nara, the foremost of men, and to goddess Saraswati, and to Vyasa, one should then utter 'Jaya' (victory).",
+      "layers": [
+        {
+          "type": "translation",
+          "lang": "hi",
+          "content": "नारायण, नरोत्तम नर, देवी सरस्वती और व्यास को नमस्कार करके 'जय' का उच्चारण करना चाहिए।"
+        },
+        {
+          "type": "translation",
+          "lang": "mr",
+          "content": "नारायण, नरोत्तम नर, देवी सरस्वती आणि महर्षी व्यास यांना नमस्कार करून 'जय' (विजयाचा) उच्चार करावा."
+        },
+        {
+          "type": "commentary",
+          "author": "sankara",
+          "lang": "en",
+          "content": "The invocation establishes the supreme authority of the divine duo, Nara-Narayana, setting the foundation for the spiritual discourse that follows."
+        },
+        {
+          "type": "commentary",
+          "author": "dnyaneshwari",
+          "lang": "mr",
+          "content": "ग्रंथाच्या सुरुवातीला ईश्वराचे स्मरण करणे हे मांगल्याचे लक्षण आहे. यातून भक्तीचा मार्ग प्रशस्त होतो."
+        }
+      ]
+    }
+  ]
+}

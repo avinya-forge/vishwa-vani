@@ -491,7 +491,7 @@ export const SCRIPTURE_READINESS_SCORES: Record<string, number> = {
   'yoga-sutras': 100.0,
   'vishnu-purana': 100.0,
   'samskaras': 100.0,
-  'garuda-purana': 6.79,
+  'garuda-purana': 100.0,
   'rigveda': 0.0,
   'brahma-sutras': 0.0,
   'manusmriti': 0.0,
@@ -582,3 +582,4 @@ export function getAllTextChapterPaths(): Array<{ text: string; chapter: string 
         }))
       )
 }
+

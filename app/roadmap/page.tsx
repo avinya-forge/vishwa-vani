@@ -21,7 +21,7 @@ const COMPLETENESS_SCORES: Record<string, number> = {
   'yajurveda': 0,
   'samaveda': 0,
   'atharvaveda': 0,
-  'garuda-purana': 6,
+  'garuda-purana': 100,
   'dasbodh': 0,
   'manusmriti': 0,
 }
@@ -397,4 +397,5 @@ export default function RoadmapPage() {
     </div>
   )
 }
+
 

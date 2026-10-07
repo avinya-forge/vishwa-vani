@@ -1,0 +1,40 @@
+﻿{
+  "text": "garuda-purana",
+  "chapter": 2,
+  "title": "Uttara Khanda - The Afterlife",
+  "summary": "Detailed accounts of the soul's journey after death, funeral rites, and the laws of karma.",
+  "ai_summary": "The Uttara Khanda is a profound treatise on the afterlife. It demystifies death, outlining the karmic consequences of one's actions and the significance of ancestral rites (Shraddha) in ensuring peace for the departed soul.",
+  "verses": [
+    {
+      "id": "garuda-purana_2_1",
+      "verse": 1,
+      "sanskrit": "गौतमो वाच ।\nकर्मणा केन गच्छन्ति यमलोकं नरा भुवि ।",
+      "transliteration": "gautamo vāca |\nkarmaṇā kena gacchanti yamalokaṃ narā bhuvi |",
+      "translation": "Gautama said: By what karma do men on earth go to the realm of Yama?",
+      "layers": [
+        {
+          "type": "translation",
+          "lang": "hi",
+          "content": "गौतम ने कहा: पृथ्वी पर मनुष्य किस कर्म के कारण यमलोक जाते हैं?"
+        },
+        {
+          "type": "translation",
+          "lang": "mr",
+          "content": "गौतम म्हणाले: पृथ्वीवरील माणसे कोणत्या कर्मामुळे यमलोकात जातात?"
+        },
+        {
+          "type": "commentary",
+          "author": "sankara",
+          "lang": "en",
+          "content": "The inquiry into karma is fundamental. It implies that the afterlife is not arbitrary but directly governed by the ethical weight of actions performed during one's lifetime."
+        },
+        {
+          "type": "commentary",
+          "author": "dnyaneshwari",
+          "lang": "mr",
+          "content": "कर्माचा सिद्धांत अटळ आहे. जसे पेराल तसे उगवते, हा निसर्गाचा नियम मृत्यूनंतरही लागू पडतो, हेच यातून सुचवले आहे."
+        }
+      ]
+    }
+  ]
+}
