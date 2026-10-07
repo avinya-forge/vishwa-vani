@@ -25,9 +25,9 @@ function getDb(lakeFile: string) {
 export async function POST(request: Request) {
   try {
     const guardResult = await validateApiRequest(request, searchSchema);
-    if (guardResult.error) return guardResult.error;
+    if (guardResult.error || !guardResult.data) return guardResult.error || NextResponse.json({error: 'Invalid'}, {status: 400});
 
-    const { action, query, textSlug, chapter, lakeFile } = guardResult.data!;
+    const { action, query, textSlug, chapter, lakeFile } = guardResult.data;
     const db = getDb(lakeFile);
 
     if (action === 'QUERY_VERSES') {

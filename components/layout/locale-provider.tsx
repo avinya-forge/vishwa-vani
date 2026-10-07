@@ -11,7 +11,7 @@ const messagesMap = { en, hi, mr }
 
 export default function LocaleProvider({ children }: { children: ReactNode }) {
   const [locale, setLocale] = useState('en')
-  const [mounted, setMounted] = useState(false)
+  const [, setMounted] = useState(false)
 
   useEffect(() => {
     setMounted(true)

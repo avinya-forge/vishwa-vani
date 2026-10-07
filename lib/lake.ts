@@ -9,7 +9,7 @@ import { VEDIC_LIBRARY } from './texts'
  * our scripture data from scraping.
  */
 
-async function fetchFromApi(payload: any) {
+async function fetchFromApi(payload: unknown) {
   const response = await fetch('/api/lake', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -60,7 +60,7 @@ export async function searchLake(query: string) {
 /**
  * Pre-initialize a shard to warm up context.
  */
-export async function prefetchLake(lakeFile: string) {
+export async function prefetchLake(_lakeFile: string) {
     // No-op for API
     return true;
 }

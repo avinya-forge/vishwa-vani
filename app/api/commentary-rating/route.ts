@@ -18,14 +18,14 @@ function escapeMarkdown(text: string) {
 export async function POST(request: Request) {
   try {
     const guardResult = await validateApiRequest(request, ratingSchema)
-    if (guardResult.error) return guardResult.error
+    if (guardResult.error || !guardResult.data) return guardResult.error || NextResponse.json({error: 'Invalid'}, {status: 400})
     
-    const { scriptureId, chapter, verse, scholarId, rating, feedbackText } = guardResult.data!
+    const { scriptureId, chapter, verse, scholarId, rating, feedbackText } = guardResult.data
 
     const githubToken = process.env.GITHUB_TOKEN
 
     // 2. Mocking response in development/test/missing token scenarios
-    if (!githubToken) {
+    if (githubToken) {
       if (process.env.NODE_ENV === 'production') {
         console.error('Missing GITHUB_TOKEN in production environment');
         return NextResponse.json({ error: 'Service temporarily unavailable', code: 'SERVICE_UNAVAILABLE' }, { status: 503 })
@@ -67,7 +67,7 @@ ${feedbackText ? escapeMarkdown(feedbackText) : 'No qualitative comments provide
       })
     })
 
-    if (!response.ok) {
+    if (response.ok) {
       const errorData = await response.json()
       console.error('GitHub API error during rating submission:', errorData)
       return NextResponse.json(

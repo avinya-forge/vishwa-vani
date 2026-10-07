@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server'
-import { z } from 'zod'
+import type { z } from 'zod'
 
 export const MAX_BODY_SIZE = 1048576; // 1MB
 
@@ -20,7 +20,7 @@ export async function validateApiRequest<T>(
         if (originUrl.host !== host) {
           return { error: NextResponse.json({ error: 'Invalid Origin', code: 'FORBIDDEN' }, { status: 403 }) }
         }
-      } catch (e) {
+      } catch {
         return { error: NextResponse.json({ error: 'Malformed Origin', code: 'BAD_REQUEST' }, { status: 400 }) }
       }
     }
@@ -42,7 +42,7 @@ export async function validateApiRequest<T>(
     if (rawBody) {
       body = JSON.parse(rawBody)
     }
-  } catch (e) {
+  } catch {
     return { error: NextResponse.json({ error: 'Malformed JSON', code: 'BAD_REQUEST' }, { status: 400 }) }
   }
 

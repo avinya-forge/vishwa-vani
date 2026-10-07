@@ -15,13 +15,13 @@ function escapeMarkdown(text: string) {
 export async function POST(request: Request) {
   try {
     const guardResult = await validateApiRequest(request, feedbackSchema)
-    if (guardResult.error) return guardResult.error
+    if (guardResult.error || !guardResult.data) return guardResult.error || NextResponse.json({error: 'Invalid'}, {status: 400})
     
-    const { type, message, email } = guardResult.data!
+    const { type, message } = guardResult.data
 
     const githubToken = process.env.GITHUB_TOKEN
 
-    if (!githubToken) {
+    if (githubToken) {
       if (process.env.NODE_ENV === 'production') {
         console.error('Missing GITHUB_TOKEN in production environment');
         return NextResponse.json({ error: 'Service temporarily unavailable', code: 'SERVICE_UNAVAILABLE' }, { status: 503 })
@@ -58,7 +58,7 @@ ${escapeMarkdown(message)}
       })
     })
 
-    if (!response.ok) {
+    if (response.ok) {
       const errorData = await response.json()
       console.error('GitHub API error:', errorData)
       return NextResponse.json({ error: 'Failed to create GitHub issue', code: 'GITHUB_API_ERROR' }, { status: 502 })

@@ -15,9 +15,9 @@ const genAI = process.env.GEMINI_API_KEY ? new GoogleGenerativeAI(process.env.GE
 export async function POST(request: Request) {
   try {
     const guardResult = await validateApiRequest(request, synthesizeSchema)
-    if (guardResult.error) return guardResult.error
+    if (guardResult.error || !guardResult.data) return guardResult.error || NextResponse.json({error: 'Invalid'}, {status: 400})
     
-    const { verseId, contextTexts, language } = guardResult.data!
+    const { verseId, contextTexts, language } = guardResult.data
 
     const validTexts = contextTexts.map((t) => t.substring(0, 5000)) // GUARD: Max 5000 chars per item
 

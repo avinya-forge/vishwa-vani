@@ -26,7 +26,7 @@ function getRateLimit(ip: string, routeName: string, maxRequests: number, window
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl
-  const ip = request.ip || request.headers.get('x-forwarded-for')?.split(',')[0] || '127.0.0.1'
+  const ip = (request as any).ip || request.headers.get('x-forwarded-for')?.split(',')[0] || '127.0.0.1'
 
   // Apply rate limits
   if (pathname.startsWith('/api/synthesize')) {
