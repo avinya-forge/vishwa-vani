@@ -71,7 +71,7 @@ export default function Header() {
   const topBooks = availableBooks.slice(0, 5)
 
   return (
-    <nav className="w-full border-b border-stone-100 dark:border-stone-800 bg-white/90 dark:bg-stone-950/90 backdrop-blur-md sticky top-0 z-[100] h-14">
+    <nav className="w-full border-b border-stone-100/50 dark:border-stone-800/50 glass sticky top-0 z-[100] h-14">
       <div className="max-w-[1400px] mx-auto h-full flex items-center justify-between px-4 sm:px-6">
 
         {/* Logo */}
@@ -213,7 +213,7 @@ export default function Header() {
 
       {/* Mobile menu — slide down panel */}
       {showMobileMenu && (
-        <div className="lg:hidden fixed inset-x-0 top-14 bg-white/95 dark:bg-stone-950/95 backdrop-blur-2xl border-b border-stone-100 dark:border-stone-800 shadow-2xl z-[150] animate-in slide-in-from-top-0 duration-200 h-[calc(100vh-3.5rem)] overflow-y-auto">
+        <div className="lg:hidden fixed inset-x-0 top-14 glass border-b border-stone-100/50 dark:border-stone-800/50 shadow-2xl z-[150] animate-in slide-in-from-top-0 duration-200 h-[calc(100vh-3.5rem)] overflow-y-auto">
           <div className="max-w-[1400px] mx-auto px-4 py-5 space-y-1.5">
             <p className="text-[10px] font-black uppercase tracking-[0.2em] text-stone-400 dark:text-stone-500 mb-3 ml-2">Available Library</p>
             {topBooks.map(book => (
