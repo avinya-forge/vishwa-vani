@@ -1,59 +1,54 @@
-﻿# ?? Vishwa-Vani: Global Project Backlog
+﻿# 📋 Vishwa-Vani: Global Project Backlog
 
-## ?? ACTIVE SPRINT (P0/P1 High Priority)
+## 🔴 P0: CRITICAL (Security & Bugs)
+### EPIC-SECURITY-AND-BUGS [ACTIVE]
+- [ ] SEC-001: Implement Scraping Protection - Secure the edic-lake.db and API routes from malicious public scraping.
+- [ ] SEC-002: Data Encryption Mechanisms - Audit and implement robust encryption for sensitive data at rest and in transit.
+- [ ] BUG-001: Resolve any lingering UI glitches in the commentary dropdowns or Next.js App Router navigation.
 
-### EPIC-ARCHITECTURE-EVOLUTION (LLM Strategy & Code Modularity) [NOT STARTED]
-- [ ] ARCH-001: [SPIKE] Analyze LLM Usage - Identify exactly *where* to use the integrated LLM (e.g., data engine, UI synthesis, symbolic decoding) and map the evolving architecture.
-- [ ] ARCH-002: [SPIKE] Model Selection & Scalability - Evaluate which LLM model is best suited for max load scenarios; establish decision gates to switch/upgrade the local LLM safely without breaking the system.
-- [ ] ARCH-003: Code Segregation & Optimization - Refactor and modularize existing codebase (especially the data engine) to ensure smaller bundle sizes and highly optimized local performance, keeping everything natively within the monolith.
+## 🟠 P1: HIGH PRIORITY (AI Brain, Data Engine, UI Optimization)
+### EPIC-AI-BRAIN-ENHANCEMENT (LLM & Symbolic Extraction) [ACTIVE]
+- [ ] AI-001: [SPIKE] Evaluate Model Upgrades - Determine the exact architecture to hot-swap or upgrade the integrated LLM based on production load.
+- [ ] AI-002: Enhance LLM Contextual Output - Map exactly where the integrated LLM should be used vs. static rendering. Add more intelligent features to the "Brain".
+- [ ] AI-003: Deep Shloka Symbolic Decoding - Use the LLM to extract scientific and symbolic meanings from Puranas (ensure manual review gates are established to prevent wrong content).
+- [ ] AI-004: Concept Generalization - Translate symbolic outputs into generic concepts to uplift day-to-day human life.
 
-### EPIC-DEEP-KNOWLEDGE-EXTRACTION (Scientific & Symbolic Analysis) [NOT STARTED]
-- [ ] DATA-010: Shloka-wise Contextual Decoding - Deeply analyze Puranic data using the local LLM to extract symbolic/scientific meanings.
-- [ ] DATA-011: Concept Generalization Engine - Translate extracted symbolic concepts into generic, cross-applicable principles (to feed into new features).
-- [ ] DATA-012: Manual Review Gates - Implement a strict UI/backend workflow for manual human review of AI-generated scientific/symbolic interpretations before public promotion.
+### EPIC-DATA-ENGINE-OPTIMIZATION [ACTIVE]
+- [ ] DATA-001: Optimize Codebase Size - Segregate and modularize the data engine to ensure the overall codebase remains lightweight and fast.
+- [ ] DATA-002: Enhance Data Gathering - Upgrade the Bronze ingestion pipeline to be more robust for obscure texts.
 
-### EPIC-UI-NAVIGATION & ROADMAP [NOT STARTED]
-- [ ] UI-009: Streamline Navbar - Analyze and redesign the main Navbar to be more apt, reducing clutter.
-- [ ] UI-010: Roadmap Representation - Consolidate page counts; ensure a prominent, highly efficient "Roadmap" page exists so users clearly see queued, next, and current items.
+### EPIC-UI-UX-LIGHTWEIGHT [ACTIVE]
+- [ ] UI-001: Lightweight UI Overhaul - Optimize all React Server Components for maximum speed and minimal DOM size.
+- [ ] UI-002: Chapter Top Bar Redesign - Perfect the 'Back' button, current chapter name, and 'Next Chapter' flow.
+- [ ] UI-003: AI Synthesis Note - Clarify and beautifully render the "AI synthesis note" in the chapter UI.
+- [ ] UI-004: Commentary & Language Selector - Polish the UI for switching between the 4+ authors and 3+ languages per shloka.
 
+## 🟡 P2: MEDIUM PRIORITY (Books & Learning Paths)
+### EPIC-LEARNING-PATHS [QUEUED]
+- [ ] PATH-001: Extract 'Satyanarayan Pooja' logic (Requires Skanda Purana onboarding).
+- [ ] PATH-002: Define 'Hindu Calendar & Festivals' dynamically from Puranic data.
 
-### EPIC-UI-ENHANCEMENTS [IN-PROGRESS]
-- [ ] UI-006: Chapter Top Bar Redesign - Accommodate 'Back' button, current chapter name & title, and 'Next Chapter' button.
-- [ ] UI-007: Commentary & Language Selector - Provide a clear, intuitive UI to select and toggle between various authors and languages.
-- [ ] UI-008: AI Synthesis Note - Improvise and clarify the purpose and presentation of the "AI synthesis note" on the chapter UI.
+### EPIC-BOOK-ONBOARDING: SKANDA PURANA [QUEUED]
+- [ ] ACQ-001: Bronze ingestion of Skanda Purana.
+- [ ] ACQ-002: Silver Regex Parse & Gold Translation.
 
-### EPIC-BOOK-CONTEXT (Preface & Postface) [IN-PROGRESS]
-- [x] CTX-001: Start/Preface Pages - For each book (starting with Bhagavad Gita), add a short, fluff-free historical context page (timeline, real-world evidence, how it was formed).
-- [x] CTX-002: End/Postface Pages - Add concluding context detailing what the book led to and its post-context impact.
+### EPIC-BOOK-ONBOARDING: DASBODH [QUEUED]
+- [ ] ACQ-003: Bronze ingestion of Dasbodh.
+- [ ] ACQ-004: Silver Regex Parse & Gold Translation.
 
-### EPIC-LEARNING-PATHS [IN-PROGRESS]
-- [x] PATH-001: Extract 'Daily Pooja Path' referencing Stotras & Samskaras.
-- [ ] PATH-002: Extract 'Satyanarayan Pooja' logic (Requires Skanda Purana onboarding).
-- [ ] PATH-003: Define 'Hindu Calendar & Festivals' dynamically from Puranic data.
-- [x] PATH-004: Organize books strictly into Prasthanatrayi, Vedas, Itihasas, Puranas, Dharma Shastras.
-- [x] PATH-005: Advanced Daily Pooja Compilation - Emulate Kavishwar Dutta Maharaj / Shankar Abhyankar structures. Extract powerful mantras (Purusha Sukta, Shri Sukta, Vishnu Sahasranama, Rudram, Nirvana Shatkam) *only* if they exist within currently scanned 3-gold books.
+## 🔵 P3: LOW PRIORITY / IDEATION (Auth & Monetization)
+### EPIC-USER-ACCOUNTS-AUTH [BACKGROUND DEV]
+- [ ] AUTH-001: Sign-Up/Login Architecture - Spike NextAuth.js or Clerk integration.
+- [ ] AUTH-002: OAuth Integrations - Allow users to link Gmail, Facebook, and Apple accounts.
+- [ ] AUTH-003: User Profiles - Store user preferences, reading history, and saved shlokas.
 
-### EPIC-COMMENTARY-EXPANSION & AUDIT [IN-PROGRESS]
-- [x] COMM-001: Add at least 2 more copyright-free author commentaries for EVERY existing book epic.
-- [x] COMM-002: Re-run strict data correctness scan (Sanskrit -> English Meaning -> Commentary correlation) to verify the new authors.
+### EPIC-SUBSCRIPTION-TIERS [EVALUATION STAGE]
+- [ ] MON-001: [EVALUATE] Subscription Tiers - Analyze the feasibility of Free, Basic, and Pro tiers.
+- [ ] MON-002: Feature Gating - Map which advanced LLM features or deep learning paths belong to Basic vs Pro.
 
-## ?? UPCOMING SPRINT (Data Acquisition)
-
-### EPIC-ONBOARD-DASBODH [NOT STARTED]
-- [ ] ACQ-001: Bronze ingestion of Dasbodh.
-- [ ] ACQ-002: Silver Regex Parse.
-- [ ] ACQ-003: Gold Translation Layer (Ensure 2+ commentaries).
-- [ ] ACQ-004: Push to UI and Vedic Lake.
-
-## ?? COMPLETED IN LATEST SPRINT
-- [x] EPIC-ONBOARD-SAMAVEDA: Book 1 of Samaveda integrated.
-- [x] EPIC-ONBOARD-YAJURVEDA: Chapter 1 of Yajurveda integrated.
-- [x] EPIC-ONBOARD-ATHARVAVEDA: Kanda 1 of Atharvaveda integrated.
-- [x] EPIC-ONBOARD-GARUDA-PURANA: Fully integrated into 3-gold and UI.
-- [x] EPIC-ONBOARD-RIGVEDA: First Mandala of Rigveda integrated.
-- [x] EPIC-ONBOARD-BRAHMA: Brahma Sutras (Adhyaya 1) integrated.
-- [x] EPIC-ONBOARD-MANUSMRITI: Chapter 1 of Manusmriti integrated.
-- [x] EPIC-ARCHITECTURE-01: Reorganized `core/brain`, `core/data-engine`, and `app/`.
-
-
-
+## ✅ COMPLETED (Archived)
+- [x] EPIC-ONBOARD-ALL-PRIMARY-BOOKS: Gita, Upanishads, Mahabharata, Puranas, Vedas.
+- [x] EPIC-CI-CD-PIPELINE: Fixed all 259 tests, passing green.
+- [x] EPIC-BOOK-CONTEXT: Added fluff-free historical contexts (Preface/Postface).
+- [x] EPIC-COMMENTARY-EXPANSION: Added Prabhupada, Vishvanatha, Vivekananda.
+- [x] EPIC-UI-NAVIGATION: Streamlined Navbar and added Daily Upliftment widget.
