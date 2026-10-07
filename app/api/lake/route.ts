@@ -20,11 +20,11 @@ function getDb(lakeFile: string) {
 }
 
 class PipelineSingleton {
-  static task = 'text2text-generation' as any;
+  static task = 'text2text-generation' as unknown;
   static model = 'Xenova/LaMini-Flan-T5-77M';
-  static instance: any = null;
+  static instance: unknown = null;
 
-  static async getInstance(progress_callback: any = null) {
+  static async getInstance(progress_callback: unknown = null) {
       if (this.instance === null) {
           this.instance = pipeline(this.task, this.model, { quantized: true, progress_callback });
       }
@@ -49,7 +49,7 @@ export async function POST(request: Request) {
     if (action === 'SEARCH_LAKE') {
       const stmt = db.prepare('SELECT * FROM verses WHERE meaning LIKE ? OR sanskrit LIKE ? OR transliteration LIKE ? LIMIT 50');
       const likeQuery = `%${query}%`;
-      const results = stmt.all(likeQuery, likeQuery, likeQuery) as any[];
+      const results = stmt.all(likeQuery, likeQuery, likeQuery) as unknown[];
 
       let summary = null;
       if (query && query.trim().split(' ').length > 2 && results.length > 0) {
