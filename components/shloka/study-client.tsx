@@ -555,7 +555,7 @@ export default function StudyClient({
   return (
     <>
       {/* ═══════════════════════════════════════════ HEADER ═══ */}
-      <header className="bg-white dark:bg-[#1c1917] border-b border-stone-100 dark:border-stone-800 pt-3 pb-3 overflow-visible relative">
+      <header className="glass border-b border-stone-100/50 dark:border-stone-800/50 pt-3 pb-3 overflow-visible relative z-30">
         {/* Soft warm glow — top right only */}
         <div className="absolute top-0 right-0 w-80 h-80 bg-orange-50 dark:bg-orange-950/20 rounded-full blur-[90px] -mr-40 -mt-20 opacity-60 pointer-events-none" />
 
@@ -600,7 +600,7 @@ export default function StudyClient({
               <button
                 onClick={() => router.push(`/${textSlug}/${Math.max(1, chapter - 1)}`)}
                 disabled={chapter === 1}
-                className="p-1.5 rounded-lg border border-stone-200 dark:border-stone-700 hover:border-orange-400 hover:text-orange-600 dark:hover:border-orange-500 disabled:opacity-30 transition-all bg-white dark:bg-stone-800 text-stone-600 dark:text-stone-300"
+                className="p-1.5 rounded-lg border border-stone-200/50 dark:border-stone-700/50 hover:border-orange-400 hover:text-orange-600 dark:hover:border-orange-500 disabled:opacity-30 transition-all bg-white/50 dark:bg-stone-800/50 text-stone-600 dark:text-stone-300"
                 aria-label="Previous chapter"
               >
                 <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path d="M15 19l-7-7 7-7" /></svg>
@@ -609,7 +609,7 @@ export default function StudyClient({
               <button
                 onClick={() => router.push(`/${textSlug}/${chapter + 1}`)}
                 disabled={chapter >= totalChapters}
-                className="p-1.5 rounded-lg border border-stone-200 dark:border-stone-700 hover:border-orange-400 hover:text-orange-600 dark:hover:border-orange-500 disabled:opacity-30 transition-all bg-white dark:bg-stone-800 text-stone-600 dark:text-stone-300"
+                className="p-1.5 rounded-lg border border-stone-200/50 dark:border-stone-700/50 hover:border-orange-400 hover:text-orange-600 dark:hover:border-orange-500 disabled:opacity-30 transition-all bg-white/50 dark:bg-stone-800/50 text-stone-600 dark:text-stone-300"
                 aria-label="Next chapter"
               >
                 <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path d="M9 5l7 7-7 7" /></svg>
@@ -620,7 +620,7 @@ export default function StudyClient({
       </header>
 
       {/* ═══════════════════════════════════════════ TOOLBAR ═══ */}
-      <div className="sticky top-[3.5rem] z-40 bg-white/90 dark:bg-stone-900/90 backdrop-blur-md border-b border-stone-100 dark:border-stone-800 shadow-sm">
+      <div className="sticky top-[3.5rem] z-40 glass border-b border-stone-100/50 dark:border-stone-800/50 shadow-sm">
         <div className="max-w-[1400px] mx-auto px-3 sm:px-6 flex flex-col md:flex-row items-center justify-between py-2.5 gap-3 md:gap-2">
 
           {/* Left group — progress + commentary toggles */}
@@ -762,12 +762,12 @@ export default function StudyClient({
       </div>
 
       {/* ═══════════════════════════════════════════ VERSES ═══ */}
-      <main className="bg-[#FDFBF8] dark:bg-[#121212] min-h-screen" data-testid="study-container" onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
+      <main className="bg-[#FDFBF8] dark:bg-[#121212] min-h-screen vedic-bg-shimmer" data-testid="study-container" onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
         <div className="max-w-[1600px] mx-auto px-3 sm:px-4 lg:px-6 py-4 sm:py-8 flex flex-col xl:flex-row gap-6 lg:gap-8 justify-center items-start">
           
           {/* Left Sidebar (Vedic Labs) */}
           <aside className="w-full xl:w-[280px] flex-shrink-0 xl:sticky xl:top-24 space-y-4 xl:pt-12 order-2 xl:order-1 mt-8 xl:mt-0 xl:max-h-[calc(100vh-6rem)] xl:overflow-y-auto scrollbar-none pb-8">
-            <div className="bg-white/80 dark:bg-[#1A1A1A]/80 backdrop-blur-xl rounded-3xl border border-stone-200/40 dark:border-stone-800/40 p-6 shadow-2xl shadow-stone-200/20 dark:shadow-none overflow-hidden relative group">
+            <div className="glass rounded-3xl p-6 shadow-xl shadow-stone-200/20 dark:shadow-none overflow-hidden relative group transition-all hover:shadow-2xl hover:border-orange-200/50 dark:hover:border-orange-900/50">
                <div className="absolute top-0 right-0 w-32 h-32 bg-orange-500/10 dark:bg-orange-400/5 rounded-full blur-3xl pointer-events-none group-hover:scale-150 transition-transform duration-1000 ease-in-out" />
                <h3 className="text-[10px] font-black uppercase tracking-widest text-stone-400 dark:text-stone-500 mb-6 flex items-center gap-2">
                  <span className="text-base">🧪</span> Vedic Labs
@@ -888,7 +888,7 @@ export default function StudyClient({
                 id={`verse-${v.verse}`}
                 key={v.id as string}
                 ref={el => { verseRefs.current[v.verse as number] = el as HTMLElement | null }}
-                className="bg-white dark:bg-[#141414] rounded-3xl border border-stone-200/60 dark:border-stone-800/60 shadow-sm hover:shadow-2xl hover:shadow-stone-200/40 dark:shadow-none hover:border-amber-300/50 dark:hover:border-amber-700/50 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-1 overflow-hidden"
+                className="card-premium overflow-hidden"
               >
                 {/* Verse number badge */}
                 <div className="flex items-center justify-between px-4 sm:px-6 py-3 bg-stone-50 dark:bg-stone-900/40 border-b border-stone-100 dark:border-stone-800/50">
@@ -957,12 +957,12 @@ export default function StudyClient({
 
                 {/* Sanskrit */}
                 {v.original ? (
-                  <div className="px-4 sm:px-6 py-6 sm:py-10 text-center border-b border-stone-50 dark:border-stone-800/30 overflow-x-auto bg-[#FDFBF8]/50 dark:bg-[#121212]/50">
-                    <div className="min-w-full flex justify-center mb-6">
-                      <ShlokaMask text={String(v.original)} className="sm:w-full scale-105 transform origin-center transition-transform" />
+                  <div className="px-5 sm:px-8 py-8 sm:py-12 text-center border-b border-stone-100/50 dark:border-stone-800/50 overflow-x-auto bg-transparent">
+                    <div className="min-w-full flex justify-center mb-8">
+                      <ShlokaMask text={String(v.original)} className="sm:w-full scale-[1.08] transform origin-center transition-transform drop-shadow-sm" />
                     </div>
                     {v.transliteration ? (
-                      <p className="mt-6 text-stone-500/90 dark:text-stone-400/90 font-serif italic text-[15px] sm:text-[17px] leading-[1.8] max-w-2xl mx-auto break-words tracking-wide text-pretty">
+                      <p className="mt-8 text-stone-600/90 dark:text-stone-300/90 font-serif italic text-[16px] sm:text-[18px] leading-[2] max-w-2xl mx-auto break-words tracking-widest text-pretty">
                         {String(v.transliteration)}
                       </p>
                     ) : null}
@@ -1031,7 +1031,7 @@ export default function StudyClient({
           <aside className="w-full xl:w-[320px] flex-shrink-0 xl:sticky xl:top-24 space-y-4 xl:pt-12 order-3 mt-8 xl:mt-0 xl:max-h-[calc(100vh-6rem)] xl:overflow-y-auto scrollbar-none pb-8">
             
             {/* Contextual interactive tools (Dynamic Tags) */}
-            <div className="bg-white dark:bg-[#121212] rounded-2xl border border-stone-200 dark:border-stone-800 p-6 shadow-sm">
+            <div className="glass rounded-2xl p-6 shadow-xl shadow-stone-200/20 dark:shadow-none transition-all hover:shadow-2xl hover:border-orange-200/50 dark:hover:border-orange-900/50">
                <h3 className="text-[10px] font-black uppercase tracking-widest text-stone-400 dark:text-stone-500 mb-4">Interactive Tools</h3>
                <VerseAppLinks bookSlug={textSlug} chapter={chapter} />
             </div>
