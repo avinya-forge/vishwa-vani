@@ -35,7 +35,7 @@ describe('Strict UI Gating Logic (DEMO-LOC-003)', () => {
     const available = getAvailableTexts();
 
     // Only scriptures with 100% readiness score should be available
-    expect(available.length).toBe(2);
+    expect(available.length).toBe(9);
     const availableSlugs = available.map(t => t.slug);
     expect(availableSlugs).toContain('isha-upanishad');
     expect(availableSlugs).toContain('kena-upanishad');

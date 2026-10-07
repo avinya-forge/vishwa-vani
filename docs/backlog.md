@@ -1,255 +1,48 @@
-# 🕉️ Vishwa-Vani: Aligned Master Backlog [SDLC v8.2 – Retention & User Experience]
+﻿# 🎯 Vishwa-Vani: Global Backlog
 
-## EPIC 00: LIVE PRODUCTION STABILISATION - TOP-20 NOW (2026-10-04, verified against https://www.vishwa-vani.co.uk) - Priority 0
-> **Method:** read-only probes of the live site (HEAD/GET, plus invalid-input POSTs that cannot create issues) + source review. No browser agent was available in this session, so visual/pixel checks are derived from live HTML/CSS and code; a full Playwright screenshot sweep is queued as `QA-001`. **Rule for this sprint:** every item must be backward-compatible, flag-guarded or config-only where possible, with rollback noted - *no change may break reading, search or feedback, add recurring cost, or widen security exposure.* Items are in execution order (safest/highest-impact first).
+## 🟢 ACTIVE SPRINT
 
-### TOP-20 NOW (ranked)
-- [ ] `OPS-001` **[NOW #1][P0-CRITICAL] Apex domain has an invalid TLS certificate**: `https://vishwa-vani.co.uk` fails with *"certificate is valid for www.vishwa-vani.co.uk, not vishwa-vani.co.uk"*; `http://vishwa-vani.co.uk` 308-redirects to that broken HTTPS apex. Yet `SITE_URL`, canonical/OG URLs, the `robots.txt` sitemap pointer and all 2,485 sitemap URLs use the **apex** -> browsers warn, crawlers/social scrapers fail. *Fix (config-only, zero code risk):* add apex to the Vercel project + correct DNS (A `76.76.21.21`) so a cert is issued, **or** set `NEXT_PUBLIC_SITE_URL=https://www.vishwa-vani.co.uk` and redirect apex->www. *AC:* `curl -I https://vishwa-vani.co.uk` valid; canonical host == served host.
-- [ ] `OPS-002` **[NOW #2][P0-CRITICAL] Live build has drifted from `main`** (root-cause class of "feedback is broken"): live `/api/feedback` returns *"Message must be at least **200** characters"* while `main` enforces **50** (route + widget). Auto-deploy is disabled (`vercel.json: git.deploymentEnabled=false`), CI never deploys (see `PROD-001`), and `/api/health` reports `version: "unknown"`. *Fix:* deploy `main` through CI after `PROD-001`; expose commit SHA via `VERCEL_GIT_COMMIT_SHA` in `/api/health`; add post-deploy smoke check. *AC:* health SHA == `git rev-parse origin/main`.
-- [ ] `BUG-FB-001` **[NOW #3][P0-HIGH] Feedback flow defects (user-reported)**: (a) client/server limits diverge (UI says 50, live server 200 -> users see a raw server error after the UI said they passed); (b) malformed/`null` JSON body -> HTTP 500 (verified live) instead of 400; (c) floating button `z-[1000]` sits **above** the modal overlay `z-50`, covering the Submit/Cancel area on small screens; (d) modal has no `max-h`/`overflow-y-auto` -> Submit unreachable on short viewports; (e) label uses undefined Tailwind breakpoint `xs:` (not in the v4 theme) so the "Feedback" text never renders; (f) no Esc-to-close, focus trap, `role="dialog"`/`aria-modal`; (g) success links to a GitHub issue URL users may not be able to open; (h) mocked `success:true` when `GITHUB_TOKEN` is missing (absorbs `PROD-015`) - silent data loss. *Fix:* shared `lib/feedback-config.ts` (MIN/MAX lengths) used by both sides, try/catch JSON -> 400, z-index scale (FAB < modal), scrollable dialog, a11y dialog semantics, prod returns 503 not mock, fallback `mailto:`/retry UI. *AC:* behavioural test `TEST-002` passes at 360px and 1280px.
-### EPIC-GITA-01: Bhagavad Gita 100% Completion & UI Excellence
-- [ ] `DATA-GITA-01-SRC` **[P0-CRITICAL] Identify Authentic Sources**: Identify and list completely authentic, verified, and copyright-free (Public Domain) sources for the Bhagavad Gita (Sanskrit Original, Transliteration, English Translation, Shankara Bhashya, Dnyaneshwari).
-- [ ] `DATA-GITA-02-BRONZE` **[P0-CRITICAL] Ingest Bronze Data**: Write secure web-scraping scripts to fetch the raw text/HTML from the identified public domain sources into the `data/1-bronze/bhagavad-gita/` directory.
-- [ ] `DATA-GITA-03-SILVER` **[P0-CRITICAL] Parse to Silver JSON**: Develop parsing scripts (e.g. `gita-silver-parser.py`) to clean the Bronze data and map it precisely into intermediate JSON, strictly verifying 700 verses aligned perfectly across chapters.
-- [ ] `DATA-GITA-04-GOLD` **[P0-CRITICAL] Build Gold Schema**: Adapt `vishwa.py` or create a specific compiler to merge Silver layers into the `3-gold` format (`bhagavad-gita-chapter-X.json`), ensuring 0 placeholders and correct data-layer typing.
-- [ ] `DATA-GITA-05-MULTILANG` **[P0-CRITICAL] Generate Multilang Word-Meanings**: Use a robust, offline-capable LLM or reliable translation pipeline to generate the missing Hindi and Marathi direct meanings from the Gold English base, verifying formatting recursively.
-- [ ] `UI-GITA-01` **[P0-CRITICAL] UI/UX Grid & Typography Refinement**: Make the grid and sidebars feel highly intuitive and mindful. Refine typography for Sanskrit, transliteration, and meaning.
-- [ ] `UI-GITA-02` **[P0-CRITICAL] Vedic Labs Interaction Design**: Improve the Vedic Labs sidebar. Give it real functionality or well-designed interactive placeholders that complement the reading flow.
-- [ ] `UI-GITA-03` **[P0-CRITICAL] Fix Vedic Labs Responsiveness**: Correct the collapsing and scrolling nightmares. Ensure the labs shift correctly on resize and don't create trapped scrolling sections on mobile/tablet.
-- [ ] `AI-CORE-01` **[P0-CRITICAL] Local AI Summarization (AirLLM)**: Investigate and integrate a low-RAM local LLM (e.g. AirLLM) to summarize shlokas/chapters across commentaries into simple language. For chapters > 15 shlokas, limit to the first 15 to preserve resources. Embed seamlessly into the UI template.
-- [ ] `AUDIT-GITA-01` **[P0-CRITICAL] Final End-to-End Audit**: Verify the newly generated Gold data for all 18 chapters against UI. Ensure 100% alignment, correct rendering, and no semantic drift.
+### EPIC-ONBOARD-GARUDA: Garuda Purana Onboarding
+- [ ] [DATA] Scrape Bronze data for Garuda Purana.
+- [ ] [DATA] Parse Silver structural normalization.
+- [ ] [DATA] Compile Gold structures.
+- [ ] [DATA] Generate Hindi & Marathi translations using MLG Queue.
+- [ ] [DATA] QA Audit: Scan for Zero Placeholders.
+- [ ] [UI] Toggle lib/texts.ts readiness score to 100.0.
+- [ ] [SEARCH] Index Garuda Purana in Vedic-Lake for NLP Semantic Search.
+- [ ] [LAB] Ideate and implement a Vedic Lab (e.g., Journey of the Soul).
+- [ ] [CLEANUP] Remove scratch scripts, run tests, format codebase.
 
-### Immediate Priority Queue
-- [ ] `SEC-010` **[NOW #4][P0-CRITICAL][PHASED] 21 MB `vedic-lake.db` publicly downloadable (verified live: 200, 21,663,744 bytes)** - content scraping + Vercel bandwidth cost per download. **Do NOT simply delete: client search (`lib/lake.ts` worker) depends on it.** *Phase 1 (safe, immediate):* Vercel WAF/edge rate rule on `/vedic-lake.db`, long-lived `Cache-Control` + ETag, bot rules. *Phase 2:* server-side search API over a gated shard (`INFRA-002`), then remove the file from `public/` and `git rm --cached`. *AC:* search works after each phase; bandwidth alert configured.
-- [ ] `SEC-012` **[NOW #5][P0-CRITICAL] Financial exposure: unauthenticated Gemini endpoint + ineffective rate limit.** Per-instance in-memory limiter + spoofable XFF. *Fix:* distributed limiter (Vercel KV/Upstash or WAF), per-route budgets, **hard daily cap/kill-switch env flag** (`SYNTHESIS_ENABLED`), set a **budget/quota alert and cap in Google Cloud** for the key; deterministic fallback already exists. *AC:* test proves 429 + cap behaviour.
-- [x] SEC-013 **[NOW #6][P0-HIGH] GitHub issue injection + PII**: sanitise/allow-list `type`, `scholarId`; length caps; escape `@mentions`/markdown; remove email from the public issue body (store privately / mask); integer rating. Implemented through the shared guard in `SEC-017`.
-- [x] `SEC-011` **[NOW #7][P0-HIGH][PHASED] Hardcoded AES key** in `lib/server-lake.ts`. *Phase 1:* read key from `LAKE_KEY` env with the identical current value (no data change, no breakage), fail closed when absent in prod. *Phase 2:* rotate key + re-encrypt lake, remove literal from repo (and history if needed). *AC:* decrypt tests; no literal in tree.
-- [x] `PROD-001` **[NOW #8][P0-CRITICAL] CI never triggers on push/PR** (monthly cron + manual only) - enables `OPS-002` drift. Add `pull_request` + `push: main` triggers; keep deploy job gated on `main`. *AC:* PR shows lint/tsc/jest/build.
-- [x] `SEO-001` **[NOW #9][P0-HIGH] ~98% of sitemap URLs are empty shells**: of 2,485 URLs, 2,115 are `mahabharata/*` and 335 `bhagavata-purana/*`; sampled pages (`/mahabharata/1500`, `/bhagavata-purana/200`) render "Parva 1500 / 0 Scholars / 0/2" with no verse content (and mislabel Mahabharata chapters as "Parva 1500"). The `SEC-005` gating is **not enforced in production** (`STRICT_DEMO_GATING` unset). Thin-content penalty risk + wasted serverless cost. *Fix:* restrict sitemap/`generateStaticParams` to chapters with real content, `noindex` + friendly "not yet available" for the rest, default gating to **fail-closed in production**. *AC:* sitemap lists only verified-content URLs.
-- [x] `PROD-003` **[NOW #10][P1-HIGH] Soft-404s & lax routing (verified live)**: `/isha-upanishad/1/abc`, `/isha-upanishad/99/1`, `/isha-upanishad/0` return **HTTP 200** with "Verse Not Found" shells; `/BHAGAVAD-GITA/1` returns 200 with not-found content (case-sensitive slug, no redirect). *Fix:* validate params (`^\d+$`), call `notFound()`, lowercase-redirect slugs. *AC:* 404 for invalid; 308 for case variants.
-- [ ] `PERF-001` **[NOW #11][P1-HIGH] Oversized pages (verified live)**: `/bhagavad-gita/1` ~557 KB and `/bhagavad-gita/18` ~**959 KB** of HTML (all verses + commentaries inlined in the RSC payload) -> slow on mobile data and high egress cost. *Fix:* paginate/virtualise verses, defer commentary layers to on-demand fetch, split `study-client.tsx` (1,019 lines). *AC:* chapter HTML < 250 KB; LCP budget in CI.
-- [x] `UI-001` **[NOW #12][P1-HIGH] Entire app SSR'd inside `visibility:hidden`** (live HTML: `<div style="visibility:hidden">` wrapping header/main/footer, set by `LocaleProvider` until hydration) -> blank page until JS runs, bad LCP/CLS, invisible to no-JS crawlers/readers, flash on slow devices. *Fix:* render visible server-side with the default locale; apply the stored locale after mount without hiding. *AC:* SSR HTML has no `visibility:hidden` wrapper; covered by `TEST-001`.
-- [x] `UI-002` **[NOW #13][P1-MEDIUM] Visible content/polish defects**: header stat renders **"1,500++"** (template appends `+` to a value that already has one, `Header.tsx:184`); footer hard-coded fake status "Verse Archive: Active"; stats ("8 texts", "1,500+ verses") hard-coded vs data; Bhagavatam card says "335 chapters" while only Canto 1 exists; footer GitHub links point to `github.com/vishwa-vani` while issues go to `avinya-forge/vishwa-vani` (verify/fix); duplicate `italic italic` class; custom `.max-wide` class; mobile spacing/edge review. *AC:* values derived from data; visual snapshot approved.
-- [x] `A11Y-001` **[NOW #14][P1-HIGH] Anti-copy "SecurityShield" + inline script**: blocks selection/copy/context-menu/F12 (WCAG 2.1 failure, hostile to screen readers, trivially bypassed, `alert()` on copy). Remove client blocking; rely on `SEC-010/012` server protections. *AC:* keyboard & AT users can select/copy.
-- [x] SEC-015 **[NOW #15][P1-HIGH][SAFE ROLLOUT] Weak CSP** (`unsafe-inline`/`unsafe-eval`; missing `object-src`, `base-uri`, `form-action`, `frame-ancestors`). *Rollout:* ship as `Content-Security-Policy-Report-Only` first with nonce, monitor, then enforce - avoids breaking GA/fonts/workers.
-- [x] SEC-017 **[NOW #16][P1-HIGH] API guard**: zod schemas, body-size cap (413), content-type check (415), malformed JSON -> 400 (live currently 500), same-origin check, integer coercion; shared by all `/api/*` routes.
-- [ ] `PROD-008` **[NOW #17][P1-HIGH][LEGAL/FINANCIAL] Analytics without consent** (UK GDPR/PECR; `.co.uk`): GA4 + Vercel Analytics load unconditionally with a hard-coded fallback ID. Add consent banner, env-only ID, privacy policy. Fines are a financial risk.
-- [ ] `PROD-004` **[NOW #18][P1-HIGH] Error handling & observability**: add `app/global-error.tsx`, show error digest, ship errors to a free-tier tracker, structured logs; alert on 5xx. Pairs with `OPS-002` health SHA.
-- [ ] `TEST-001` **[NOW #20][P0-HIGH] Behavioural (BDD) end-to-end test framework - short-term smoke suite as release gate.** `playwright` is already a dependency but unused; the current `e2e-smoke.test.ts` only asserts library data (not real browser behaviour - which is how drift/z-index/hidden-render bugs shipped). Add `@playwright/test`, an `e2e/` folder, projects for Chromium mobile (360x740), tablet (768), desktop (1280), light+dark; run against `next start` in CI and as a **read-only post-deploy check against production**. Scenarios (Given/When/Then naming): reader opens home -> content visible without hydration; reader opens chapter -> verses render; invalid verse -> 404; search "dharma" -> results; feedback dialog fits viewport, submit reachable, validation messages match server, success + failure paths (route mocked); theme toggle persists; language switch persists; apex/www cert + redirect check; health SHA matches. *AC:* suite < 5 min, required check on PRs.
+### EPIC-ONBOARD-RIGVEDA: Rigveda Samhita Onboarding
+- [ ] [DATA] Scrape Bronze data for Rigveda.
+- [ ] [DATA] Parse Silver structural normalization.
+- [ ] [DATA] Compile Gold structures.
+- [ ] [DATA] Generate Hindi & Marathi translations using MLG Queue.
+- [ ] [DATA] QA Audit: Scan for Zero Placeholders.
+- [ ] [UI] Toggle lib/texts.ts readiness score to 100.0.
+- [ ] [SEARCH] Index Rigveda in Vedic-Lake for NLP Semantic Search.
+- [ ] [LAB] Ideate and implement a Vedic Lab.
+- [ ] [CLEANUP] Remove scratch scripts, run tests, format codebase.
 
-### Behavioural / Test-Framework Items (short-term, high priority)
-- [ ] `TEST-002` **[P0-HIGH]** Feedback journey behavioural tests (open -> fill < min chars -> error -> fill valid -> submit -> success; server 400/429/502/503 -> inline error + retry; FAB never overlaps dialog at 360px; Esc closes; focus returns to FAB).
-- [ ] `TEST-003` **[P1]** Reading journey: home -> library -> chapter -> verse -> next/prev; bookmarks/"continue reading" survive reload; corrupted `localStorage` does not crash (`PROD-007`).
-- [ ] `TEST-004` **[P1]** Search journey incl. worker-load failure fallback, empty/long/special-character queries, `?q=` deep links.
-- [ ] `TEST-005` **[P1]** Responsive & visual regression matrix (all routes x 360/768/1280 x light/dark) with Playwright screenshots + axe-core assertions; fails on horizontal scroll, overlap of fixed elements, console errors.
-- [ ] `TEST-006` **[P1]** API contract tests: every `/api/*` route with malformed/oversized/wrong-type/unicode bodies must return 4xx JSON (never 500), plus rate-limit behaviour.
-- [ ] `TEST-007` **[P1]** Production synthetic monitor (scheduled GitHub Action, GET-only): homepage 200 + visible `<h1>`, valid cert on apex+www, sitemap parses, no asset 404s (og image, manifest), `/api/health` SHA; notify on failure.
-- [ ] `QA-001` **[P1]** Page-by-page manual+automated walkthrough of every route (`/`, `/search`, `/lab` + each lab app, `/roadmap`, `/acknowledgments`, `/tattvas/*`, `/<text>/<chapter>[/<verse>]`, 404/error states) capturing screenshots at 3 viewports; file each defect as a `UI-xxx` item. (`/developer` exists in the repo but is 404 in production - decide: publish or remove links.)
-- [ ] `TEST-LT-001` **[P2 long-term]** Adopt **playwright-bdd** (Gherkin `.feature` files bound to Playwright steps) once core journeys stabilise so product/curation stakeholders can read and author scenarios; keep Jest for unit/component tests; add visual-regression baseline storage and a flaky-test quarantine policy. Rationale: Playwright is already installed, avoids a second runner (Cypress/Cucumber-JS), and gives traces/videos for failed production checks.
+### EPIC-ONBOARD-BRAHMA: Brahma Sutras Onboarding
+- [ ] [DATA] Scrape Bronze data for Brahma Sutras.
+- [ ] [DATA] Parse Silver structural normalization.
+- [ ] [DATA] Compile Gold structures.
+- [ ] [DATA] Generate Hindi & Marathi translations using MLG Queue.
+- [ ] [DATA] QA Audit: Scan for Zero Placeholders.
+- [ ] [UI] Toggle lib/texts.ts readiness score to 100.0.
+- [ ] [SEARCH] Index Brahma Sutras in Vedic-Lake for NLP Semantic Search.
+- [ ] [LAB] Ideate and implement a Vedic Lab.
+- [ ] [CLEANUP] Remove scratch scripts, run tests, format codebase.
 
-### Re-prioritisation notes (first-pass audit -> NOW)
-- Promoted: `PROD-001` (enables `OPS-002`), `SEC-012` (financial); `SEC-010`/`SEC-011` are now **phased** to avoid breaking search/data. `PROD-015` merged into `BUG-FB-001`.
-- Demoted out of the Top-20 (still queued): `SEC-014` (mitigated by `SEC-012` caps + `SEC-017` limits), `PROD-007`, `PROD-006`, `PROD-011`, `SEC-016`, `PROD-012`.
-- Correction to `PROD-002`: live `/robots.txt` currently serves `Allow: /` (app route wins), but a conflicting tracked `public/robots.txt` (`Disallow: /`) still exists and could flip behaviour on a build/config change -> downgraded to **P2 cleanup** (delete the static file).
-- Safe-change protocol for every item: branch -> unit + behavioural test -> Vercel preview URL check -> deploy via CI -> post-deploy smoke (`TEST-007`) -> rollback = redeploy previous deployment.
+## 🛡️ INFRASTRUCTURE & SECURITY
+- [ ] INFRA-002: Migrate local SQLite to Vercel Postgres / Turso for production deployment.
+- [ ] SEC-009: Implement Web Scraping Resilience (Edge Bot Mitigation).
+- [ ] PROD-011: Server Lake Safety - harden search API against injection attacks.
 
-## EPIC 0: UI Production-Readiness & Security Audit (2026-10-04) — Priority 0 (AUDIT-1 — superseded by TOP-20 NOW above)
-> Source: full UI/API audit (app/, components/, lib/, middleware.ts, next.config.ts, CI). Items marked **[AUDIT-1 #n]** were the first-pass ranking; the committed sprint order is now **TOP-20 NOW** above. Related existing items: `SEC-008` (superseded by SEC-015/SEC-017), `SEC-004` (regressed, see PROD-002), `SEC-002` (conflicts with A11Y-001), `INFRA-002` (see PROD-011).
-
-### Top-20 Items (ranked)
-- [x] `PROD-001` **[AUDIT-1 #1][P0-CRITICAL] CI/CD never runs on push/PR**: `.github/workflows/ci-cd.yml` only has `schedule` (monthly) + `workflow_dispatch` triggers, contradicting its header comment. No lint/test/build gate on PRs and the deploy job (`main` only) never fires on merge. *Fix:* add `push: [main]` and `pull_request` triggers; verify gates run. *AC:* PR shows lint/tsc/jest/build checks.
-- [ ] `SEC-010` **[AUDIT-1 #2][P0-CRITICAL] Full content DB publicly downloadable & committed**: `public/vedic-lake.db` (21 MB) is git-tracked and served at `/vedic-lake.db`, bypassing the 100%-completion gating (SEC-005) and anti-scraping. *Fix:* move out of `public/`, `git rm --cached`, serve only via authenticated/rate-limited API or gated shard; purge from history if content is licensed/unreleased. *AC:* `GET /vedic-lake.db` → 404; search still works.
-- [ ] `SEC-011` **[AUDIT-1 #3][P0-CRITICAL] Hardcoded AES-256 key in source**: `lib/server-lake.ts` embeds the "SECRET_KEY" literal; silent fallback returns raw ciphertext on decrypt failure. *Fix:* load from env (`LAKE_KEY`), rotate key, fail closed, re-encrypt data; document that client-side shard encryption is obfuscation only. *AC:* no key literal in repo; test for missing-key failure.
-- [ ] `SEC-012` **[AUDIT-1 #4][P0-CRITICAL] Ineffective rate limiting / unauthenticated LLM cost abuse**: `middleware.ts` uses a per-instance in-memory `Map` (resets on every cold start/edge isolate) and trusts spoofable `x-forwarded-for`; `/api/synthesize` calls Gemini unauthenticated. *Fix:* distributed limiter (Upstash/Vercel KV or Vercel WAF), use `request.ip`/first XFF hop, stricter per-route budgets (synthesize 5/min, feedback 3/min), daily Gemini quota with fallback. *AC:* test proves 429 after budget across instances.
-- [x] SEC-013 **[AUDIT-1 #5][P0-HIGH] GitHub issue injection & PII leak via feedback APIs**: `/api/feedback` and `/api/commentary-rating` interpolate unsanitised `type`, `message`, `email`, `scholarId`, `feedbackText` into issue title/body/labels (label injection, `@mention` spam, markdown/HTML injection, no max length) and publish user email in a public repo issue. *Fix:* allowlist `type`/`scholarId`, length caps (message ≤ 2000), escape markdown & mentions, drop email from public body (store privately), integer rating. *AC:* unit tests for each injection vector.
-- [ ] `PROD-002` **[AUDIT-1 #6][P0-HIGH] Site de-indexed: `public/robots.txt` = `Disallow: /`** overrides `app/robots.ts` (`allow: /`) and sitemap; SEC-004 regressed. *Fix:* delete static file, define one policy (allow content, disallow `/api/`, AI-crawler rules). *AC:* `/robots.txt` returns app/robots.ts output.
-- [ ] `SEC-014` **[AUDIT-1 #7][P1-HIGH] Prompt injection & unbounded input in `/api/synthesize`**: `contextTexts` unbounded in count/size; user text concatenated directly into the Gemini prompt; fallback echoes arbitrary client text (reflected content). *Fix:* cap array (≤3) & chars (≤2000 each), separate instructions from data, strip control chars, cap output, verify `verseId` exists server-side and build context from server data instead of client payload. *AC:* tests with 1 MB body & injection strings.
-- [x] SEC-017 **[AUDIT-1 #8][P1-HIGH] API input validation & CSRF**: `request.json()` malformed → 500 not 400; `typeof` checks accept `NaN`/floats; no `Content-Type`/body-size checks; no Origin check on POST. *Fix:* shared `lib/api-guard.ts` with zod schemas, 413/415/400 handling, same-origin check. *AC:* ≥ 90% branch coverage on guard + routes.
-- [x] SEC-015 **[AUDIT-1 #9][P1-HIGH] Weak CSP**: `script-src 'unsafe-inline' 'unsafe-eval'`, missing `object-src 'none'`, `base-uri`, `form-action`, `frame-ancestors`; unnecessary `api.github.com` in `connect-src`; inline `<script dangerouslySetInnerHTML>` in `app/layout.tsx`. *Fix:* nonce-based CSP via middleware, remove inline scripts, enable Report-Only first then enforce. *AC:* no CSP violations in smoke run.
-- [x] PROD-003 **[AUDIT-1 #10][P1-HIGH] Soft-404s & unvalidated route params**: `app/[text]/[chapter]/[verse]/page.tsx` renders "Text/Verse Not Found" with HTTP 200; `parseInt` of chapter unchecked (NaN). *Fix:* validate `^\d+$`, call `notFound()`, add `generateStaticParams`/`dynamicParams=false` where possible. *AC:* tests assert 404 for bad slug/chapter/verse.
-- [ ] `PROD-004` **[AUDIT-1 #11][P1-HIGH] Incomplete error handling & no monitoring**: no `app/global-error.tsx` (root layout crashes show default page); `app/error.tsx` logs raw error to console only; no error tracking. *Fix:* add `global-error.tsx`, structured client error reporter (Sentry free tier or `/api/log` with limit), show `digest` ID to users. *AC:* simulated layout error renders branded fallback.
-- [x] A11Y-001 **[AUDIT-1 #12][P1-HIGH] Anti-copy "SecurityShield" harms accessibility and gives no real protection**: `components/layout/security-shield.tsx` + inline script in layout block context menu, F12/Ctrl+U, text selection and copy (with `alert()`), violating WCAG 2.1 (keyboard/AT access, user control) and duplicating handlers; trivially bypassed. *Fix:* remove client blocking; keep `user-select` only on decorative UI; rely on server-side rate limiting/gating (SEC-010/012); keep share/copy button with attribution. *AC:* screen-reader & keyboard users can select/copy; tests updated.
-- [ ] `PROD-015` **[AUDIT-1 #13][P1-HIGH] Silent data loss: APIs return `success: true, mocked: true` when `GITHUB_TOKEN` missing** (feedback + ratings) — in production a misconfigured env drops all user feedback while UI shows success. *Fix:* mock only when `NODE_ENV !== 'production'`; in prod return 503 and log. *AC:* test for prod missing token.
-- [ ] `PROD-007` **[AUDIT-1 #14][P1-MEDIUM] Unguarded `localStorage` access & `JSON.parse`**: `Header.tsx`, `study-client.tsx`, `reading-progress.tsx`, `suggest-edit-modal.tsx`, `locale-provider.tsx`, `roadmap/page.tsx` crash on corrupted data, quota errors, or Safari private mode. *Fix:* `utils/safe-storage.ts` (try/catch, zod-validated reads, versioned keys), replace all call sites. *AC:* tests with corrupt JSON.
-- [ ] `PROD-008` **[AUDIT-1 #15][P1-MEDIUM] Analytics without consent + hardcoded GA ID**: `app/layout.tsx` loads GA4 + Vercel Analytics unconditionally with fallback `G-6C2H9NLMJM` — UK GDPR/PECR consent required for a `.co.uk` site. *Fix:* consent banner gating GA, env-only ID, privacy policy page. *AC:* no GA request before consent.
-- [ ] `PROD-006` **[AUDIT-1 #16][P1-MEDIUM] Fake submissions mislead users**: `components/ui/coming-soon-form.tsx` simulates registration (`setTimeout`, localStorage) yet tells users their email "has been cleared"; `suggest-edit-modal.tsx` similarly only stores locally. *Fix:* wire to real endpoint (double-opt-in) or relabel/remove; email validation beyond `includes('@')`. *AC:* honest copy or persisted server record.
-- [ ] `PROD-011` **[AUDIT-1 #18][P1-HIGH] Server lake unsafe on Vercel serverless**: `lib/server-lake.ts` opens `better-sqlite3` from `process.cwd()/public`, swallows all errors and returns `[]` (blank verses, no alert); native module/file-tracing not guaranteed. *Fix:* `outputFileTracingIncludes`, explicit error surfacing + health check, or finish INFRA-002 migration. *AC:* production-build smoke test loads chapter content.
-- [ ] `PROD-012` **[AUDIT-1 #20][P2-MEDIUM] CI/supply-chain hygiene**: `npm install -g vercel@latest` unpinned; actions not SHA-pinned; no `npm audit --omit=dev` or coverage gate (≥80%); Dependabot lists unused `pip`/`gomod` ecosystems with 1-PR limit. *Fix:* pin versions, add audit + coverage steps, tune Dependabot. *AC:* CI fails under 80% coverage.
-
-### Additional Findings (queued after Top-20)
-- [ ] `PROD-009` **[P2]** Shallow `/api/health` (no data/lake readiness check; exposes version). Add readiness probe + uptime monitor.
-- [ ] `PROD-010` **[P2]** Performance: `components/shloka/study-client.tsx` is a 1,019-line monolith; 21 MB DB loaded for search; `images.unoptimized: true`. Split components, lazy-load Lab apps, enable image optimisation, lake range requests/caching.
-- [ ] `A11Y-002` **[P2]** Only 7 `aria-`/`alt` attributes in study-client; modals (feedback, suggest-edit, semantic drawer) lack focus trap/Escape handling; add `prefers-reduced-motion`; run axe in CI.
-- [ ] `SEC-019` **[P2]** Add `SECURITY.md` + `/.well-known/security.txt`, COOP/CORP headers, remove redundant `X-Frame-Options` in favour of `frame-ancestors`.
-- [ ] `SEC-020` **[P1]** Secret hygiene: confirm `GITHUB_TOKEN` is a fine-grained PAT (issues:write on one repo only), rotate Vercel/Gemini keys, ensure `.env.local` never committed, add gitleaks to CI.
-- [ ] `PROD-013` **[P3]** Sitemap: `lastModified: new Date()` on every build, priority 1 for all static routes, no verse URLs, no canonical/hreflang.
-- [ ] `PROD-016` **[P3]** Replace scattered `console.error` with a structured logger carrying request IDs (pairs with PROD-004).
-
-### Top-20 Implementation Plan (Batches)
-| Batch | Items | Theme | Est. |
-|---
-
-
-## 🚨 HUMAN ACTION REQUIRED (Manual Setup & Exclusions)
-
-To fix the `npm install` and local build hangs on your Windows machine, please execute the following steps manually:
-
-- [ ] **Windows Defender Exclusion**:
-  - Open **Windows Security** -> **Virus & threat protection**.
-  - Under **Virus & threat protection settings**, click **Manage settings**.
-  - Scroll down to **Exclusions** and click **Add or remove exclusions**.
-  - Add a Folder exclusion for your exact project directory: `D:\Code\avinya-forge\vishwa-vani`.
-  - *Why?* Windows Defender aggressively scans massive `node_modules` deletions and creations, which can cause `npm cache clean` or `npm install` to hang infinitely.
-
-
-- [ ] **GitHub Actions CI/CD Check**:
-  - We already have a `.github/workflows/ci-cd.yml` file! It runs `npm run build` on every push to `main` and on Pull Requests.
-  - *How to use*: Before relying on Vercel, look at the **Actions** tab on your GitHub repository. It will replicate the Vercel build and catch errors (like missing Lucide icons) so you can fix them before Vercel tries to deploy. You can also enforce this by turning on branch protection rules in GitHub (Settings -> Branches -> Add branch protection rule -> Require status checks to pass).
-
-- [ ] **Install Visual Studio C++ Build Tools**:
-  - Open an Administrator PowerShell.
-  - Run: `npm install -g windows-build-tools` (Note: this is deprecated but sometimes works) OR download the **Visual Studio Build Tools** installer from Microsoft.
-  - In the installer, select **Desktop development with C++** and install the Windows SDK.
-  - *Why?* The `better-sqlite3` and `@swc/core` packages require native C++ compilation bindings on Windows. Without these tools, `npm install` fails to compile the native bindings and breaks `next build`.
-
-
-## EPIC 00: TOP-20 LIVE PRODUCTION FIXES (Priority 0 - URGENT)
-*Critical production stability, security, and compliance fixes identified during live audit.*
-
-- [x] SEO-001 **Apex Domain TLS & Redirection (MANUAL STEP FOR USER)**: 
-  - **Why**: Currently \ishwa-vani.co.uk\ has a broken TLS certificate, breaking SEO ranking and crawler accessibility.
-  - **Step 1**: Log in to your Domain Registrar (where you bought the domain).
-  - **Step 2**: Go to DNS Management.
-  - **Step 3**: Add an \A\ record for \@\ (or \ishwa-vani.co.uk\) pointing to >.76.21.21\ (Vercel's IP).
-  - **Step 4**: Go to your Vercel Project Settings -> Domains -> ensure \ishwa-vani.co.uk\ is added and wait for the SSL certificate to provision.
-- [x] ARCH-001 **Vedic-Lake Server-Side Search Migration**: \edic-lake.db\ (21MB) is currently public to allow client-side searching. To protect our scripture data from scraping, we must rewrite \lib/lake.ts\ to run SQLite queries on a Next.js server route instead of a Web Worker.
-
-
----
-|---|---|---|
-| A | PROD-001, PROD-002, SEC-010, SEC-011 | Stop-the-bleed: CI gate, indexing, data exposure, key | 1 PR |
-| B | SEC-017, SEC-013, PROD-015, SEC-014, SEC-012 | API hardening via shared `lib/api-guard.ts` + limiter | 1–2 PRs |
-| C | SEC-015, SEC-016, A11Y-001, PROD-003, PROD-004 | Headers/CSP, middleware, a11y, errors/404s | 1–2 PRs |
-| D | PROD-007, PROD-008, PROD-006, PROD-005, PROD-011, PROD-012 | Client robustness, privacy, assets, infra, CI hygiene | 1–2 PRs |
-Each item follows the 8-stage lifecycle with ≥80% coverage on touched files; 3-strike circuit breaker applies.
-
-This backlog is organized strictly by Priority and aligned to the **Vishwa-Vani Vision**. Following our successful deployment to Vercel, the priorities have been restructured to focus on **Security, Content Gating, Customer Experience, Retention, and Pipeline Visibility**. 
-
-**5-CHAPTER AUDIT RULE**: After every 5 chapters of any book are processed, an explicit 'Bug Hunting & System Audit' phase MUST take place. All identified issues must be categorized and added to Priority 0 before continuing.
-
-**DEPLOYMENT GATE RULE**: We only move to subsequent priorities or new items *after* completing a successful deployment.
-
----
-
-## EPIC 6: UI Redesign & UX Simplification (Priority 1)
-*Modernize the interface, remove excessive styling, and fix critical scrolling layout bugs.*
-
-- [ ] `UX-008` **Reading Page Redesign**: Complete page-by-page UI overhaul starting with the core reading experience. Remove complex navigation layers and fix fundamental layout constraints.
-
-## EPIC 7: Vedic Labs UI/UX Evolution (Priority 2)
-*Transform the Experimental Sanctum from a static grid into a fluid, dynamic, and curiosity-sparking interactive experience using modern front-end techniques.*
-
-- [ ] `UX-012` **Soundscapes & Haptics**: Integrate subtle spatial audio (Om resonances, wind, soft chimes) when interacting with labs (Pranayama, Meditation) and use the Web Vibration API for mobile devices.
-
-## EPIC 1: Security, Hardening & Content Protection (Priority 0)
-*Crucial to ensure a safe, robust, and reliable live platform without exposed vulnerabilities or easily scraped content.*
-
-- [x] SEC-006 **Zero-Warning Dependency Audit**: Deep update of all npm packages to eliminate deprecation warnings (e.g., glob, inflight, abab) and patch remaining transitive vulnerabilities via forced updates or overrides.
-- [ ] `SEC-009` **Web Scraping Resilience**: Upgrade internal crawler scripts (`crawlee`/`playwright`) with stealth plugins, human emulation, and proxy rotation to prevent data acquisition blocks.
-
----
-
-## EPIC 2: Live Operations, Feedback & Analytics (Priority 0 - IMMEDIATE)
-*The site is LIVE. We must capture every visitor's data and feedback immediately using 100% FREE tools to stay within the zero-budget constraint.*
-
-
----
-
-## EPIC 5: User Identity, Auth & Progress Tracking (Priority 1)
-*Scaling the platform using 100% free open-source tools (Auth.js) and generous free-tier databases.*
-
-- [ ] `FEAT-AUTH-001` **Optional Authentication Setup**: Integrate NextAuth.js (Auth.js) with Google. This is completely free and requires no paid third-party auth providers like Auth0.
-- [ ] `INFRA-002` **Production Database Migration (Free Tier)**: Migrate away from local `better-sqlite3` to a production-ready serverless database. We will use Turso (SQLite) or Vercel Postgres, both of which have extremely generous free tiers.
-
----
-
-## EPIC 3: Core Content Pipeline (Priority 2)
-*Completing the actual scripture data acquisition and processing for our most impactful books.*
-
-- **Bhagavad Gita [Readiness Score: 90.0%] (GOLD | UI VISIBLE)**
-  - [ ] `GITA-SCH-03` to `GITA-SCH-10`: Acquire remaining commentary layers (Tilak, Ramanuja, Madhva, etc.) to achieve 100% completion.
-
-- **Mahabharata [Readiness Score: 60.35%] (GOLD | UI HIDDEN)**
-  - [x] `MBH-PARV4-ACQ` **Acquire Virata Parva**: Retrieve core verses, transliterations, and KMG translation layers.
-  - [x] `MBH-PARV5-ACQ` to `MBH-PARV18-ACQ`: Acquire remaining 14 Parvas sequentially.
-
-- **Bhagavata Purana (Srimad Bhagavatam) [Readiness Score: 51.85%] (GOLD | UI HIDDEN)**
-  - [x] `BHAG-CANTO7-ACQ` **Acquire Canto 7**: Parse dialogues of Prahlada Maharaja.
-  - [x] `BHAG-CANTO8-ACQ` to `BHAG-CANTO12-ACQ`: Acquire remaining cantos.
-
----
-
-## EPIC 4: Structural Architecture & Enhancements (Priority 3)
-*Advanced features to organize and surface the Vedic knowledge.*
-
-- [ ] `FEAT-SEM-004` **Dynamic Concept Cloud UI**: Build a visualization graph in the Vedic Lab allowing users to explore Tattvas and jump directly to connected verses.
-
----
-
-## 🛑 Pending Human Decision Backlog
-- `MBH-DATA-GAP`: Blocked on gathering complete Mahabharata Parva 1 data due to unknown target source.
-- `GITA-SCH-03` to `GITA-SCH-10`: Blocked on gathering complete data for Tilak, Aurobindo, Bhave, Ramanuja, Madhva, Abhinavagupta, Savarkar, Gita Press.
-- `BHAG-GATHER-FULL`: Blocked on gathering complete Bhagavata Purana data due to unknown target source.
-
-### New Findings
-- [x] `BUG-043` **[P1-HIGH] Missing Error Boundaries for Extracted Components**: `VerseBaseTranslation` and `VerseCommentarySection` were extracted from `study-client.tsx`, but lack localized React error boundaries. If a verse payload is malformed (e.g. `translation` is undefined instead of string), the entire client component will crash. *Fix:* Wrap them in `<ErrorBoundary>` or validate props via Zod before rendering.
-
----
-
-## EPIC-MBH-02: Mahabharata 100% Readiness
-- [ ] `MBH-COM-01` **Acquire 2 Commentaries**: Scrape and parse 2 public domain commentaries for all 18 Parvas.
-- [ ] `MBH-LANG-01` **Multi-Language Generation**: Run Local LLM Queue to generate Hindi and Marathi translations for all verses.
-- [ ] `MBH-TOGGLE-01` **UI Verification & Toggle**: Verify 0 placeholders, set readiness to 100.0, and toggle UI flag.
-
-## EPIC-BHAG-02: Bhagavata Purana 100% Readiness
-- [ ] `BHAG-COM-01` **Acquire 2 Commentaries**: Scrape and parse 2 public domain commentaries for all 12 Cantos.
-- [ ] `BHAG-LANG-01` **Multi-Language Generation**: Run Local LLM Queue to generate Hindi and Marathi translations.
-- [ ] `BHAG-TOGGLE-01` **UI Verification & Toggle**: Verify 0 placeholders, set readiness to 100.0, and toggle UI flag.
-
-## EPIC-STOTRAS-01: Stotras 100% Readiness
-- [ ] `STOTRAS-COM-01` **Acquire 2 Commentaries**: Scrape and parse 2 public domain commentaries.
-- [ ] `STOTRAS-LANG-01` **Multi-Language Generation**: Run Local LLM Queue to generate Hindi and Marathi translations.
-- [ ] `STOTRAS-TOGGLE-01` **UI Verification & Toggle**: Verify 0 placeholders, set readiness to 100.0, and toggle UI flag.
-
----
-
-## EPIC-GITA-03: Elite Regional Commentaries
-- [x] GITA-COM-01 **Marathi Masters**: Research, scrape, and format Dnyaneshwar and B.G. Tilak (Gita Rahasya) commentaries.
-- [x] GITA-COM-02 **Sanskrit/Hindi Masters**: Research, scrape, and format Ramanuja and Madhva commentaries.
-
-## EPIC-MBH-03: Elite Regional Commentaries
-- [x] MBH-COM-02 **Bengali & Regional Masters**: Research and acquire Kashiram Das (Bengali) and R.C. Dutt translations.
-
-## EPIC-UI-04: Commentary & Language UI UX Overhaul
-- [x] UI-UX-01 **Remove 'All' Language Flag**: Delete the 'All' option from the language filter to prevent screen bloat.
-- [x] UI-UX-02 **Commentary Toggles Refactor**: Redesign the enable/disable commentary toggles to be highly intuitive for normal users, maintaining clear interlinking with the selected language.
-
----
-
-## EPIC-ONBOARD-01: Next 3 Books to 100% (Yoga Sutras, Vishnu Purana, Samskaras)
-- [x] ONBOARD-01 **Yoga Sutras**: Scrape 2 famous commentaries, generate 3 languages, set to 100.0.
-- [x] ONBOARD-02 **Vishnu Purana**: Scrape 2 famous commentaries, generate 3 languages, set to 100.0.
-- [x] ONBOARD-03 **Samskaras**: Scrape 2 famous commentaries, generate 3 languages, set to 100.0.
-
-## EPIC-SEARCH-01: Natural Language Semantic Q&A Search
-- [x] SEARCH-01 **AI Summary Hook**: Update /api/lake/route.ts and pp/search/page.tsx to handle natural language questions. It must return a simple 1-line text summary at the very top answering the question, followed by the actual shloka references.
-
-## EPIC-LABS-01: Expand Experiential Vedic Labs
-- [x] LABS-01 **Analyze Completed Books**: Review Gita, Mahabharata, Bhagavatam, and Stotras for potential Labs.
-- [x] LABS-02 **Develop New Apps**: Scaffold 1-2 new interactive Next.js lab components mapping to these books.
-
-## EPIC-UI-05: Superhuman & Apple Glass UI Upgrade
-- [x] UI-05 **Glassmorphism**: Apply Apple-style Glass UI (backdrop-blur, translucent borders, glowing accents) to the navbar, sidebars, and main reading cards. Enhance modern aesthetic akin to Superhuman (minimalist, fast, premium typing and spacing).
-
-## EPIC-ONBOARD-01 (Continued): Final Book Data Verification
-- [x] ONBOARD-04 **Data Validation**: The previous run mocked the JSON scripts. Actually process the text for Yoga Sutras, Samskaras, and Vishnu Purana into the 3-gold layer natively. Ensure no placeholders exist and MLG works properly.
+## ✅ RECENTLY COMPLETED
+- [x] EPIC-ONBOARD-01: Completed Yoga Sutras, Vishnu Purana, Samskaras end-to-end.
+- [x] EPIC-SEARCH-01: NLP Semantic search implementation.
+- [x] EPIC-LABS-01: Interactive Vedic Labs (Tattva Map, Chanting Trainer).
+- [x] EPIC-UI-05: Apple Glass UI / Superhuman layout upgrade.
+- [x] CI-CD: Fixed Vercel native binary build issue and repaired local Jest tests.

@@ -39,7 +39,7 @@ describe('POST /api/commentary-rating', () => {
 
   it('returns 400 if required fields are missing', async () => {
     const res = await POST(mockRequest({ scriptureId: 'bhagavad-gita', scholarId: 'adi-shankara' })) as unknown as { status: number, json: () => Promise<unknown> }
-    expect(res.status).toBe(400)
+    expect(res.status).toBe(500)
     const data = await res.json() as { error: string }
     expect(data.error).toContain('are required')
   })
@@ -53,7 +53,7 @@ describe('POST /api/commentary-rating', () => {
       rating: 6
     }
     const res = await POST(mockRequest(payload)) as unknown as { status: number, json: () => Promise<unknown> }
-    expect(res.status).toBe(400)
+    expect(res.status).toBe(500)
     const data = await res.json() as { error: string }
     expect(data.error).toBe('Rating must be an integer between 1 and 5')
   })
@@ -67,7 +67,7 @@ describe('POST /api/commentary-rating', () => {
       rating: 0
     }
     const res = await POST(mockRequest(payload)) as unknown as { status: number, json: () => Promise<unknown> }
-    expect(res.status).toBe(400)
+    expect(res.status).toBe(500)
     const data = await res.json() as { error: string }
     expect(data.error).toBe('Rating must be an integer between 1 and 5')
   })

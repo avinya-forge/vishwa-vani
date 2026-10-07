@@ -324,3 +324,4 @@ describe('StudyClient — STAB-606 coverage', () => {
     });
   });
 });
+
