@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import React, { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
@@ -16,13 +16,13 @@ import VerseBaseTranslation from './verse-base-translation'
 import VerseCommentarySection from './verse-commentary-section'
 
 
-// 🏛️ DYNAMIC PERSPECTIVE METADATA
+// ðŸ›ï¸ DYNAMIC PERSPECTIVE METADATA
 const DEFAULT_METADATA: Record<string, { name: string, bio: string, label: string, icon: string }> = {
   'none': {
     name: 'Original Text Only',
     label: 'Text Only',
     icon: '',
-    bio: 'Pure scripture — Sanskrit shloka and its meaning, without external commentary.'
+    bio: 'Pure scripture â€” Sanskrit shloka and its meaning, without external commentary.'
   },
   'all': {
     name: 'All Commentaries',
@@ -30,24 +30,24 @@ const DEFAULT_METADATA: Record<string, { name: string, bio: string, label: strin
     icon: '',
     bio: 'Compare all available scholarly perspectives side by side.'
   },
-  // normalizeScholarKey splits on '-': 'sant-dnyaneshwar' → 'sant', 'dnyaneshwari-en' → 'dnyaneshwari'
+  // normalizeScholarKey splits on '-': 'sant-dnyaneshwar' â†’ 'sant', 'dnyaneshwari-en' â†’ 'dnyaneshwari'
   'sant': {
     name: 'Sant Dnyaneshwar',
     label: 'Dnyaneshwari',
     icon: '',
-    bio: 'Maharashtrian saint-philosopher (1275–1296 CE). Composed the Dnyaneshwari — a Marathi verse commentary on the Gita — at age 16. Founding text of the Warkari tradition.'
+    bio: 'Maharashtrian saint-philosopher (1275â€“1296 CE). Composed the Dnyaneshwari â€” a Marathi verse commentary on the Gita â€” at age 16. Founding text of the Warkari tradition.'
   },
   'dnyaneshwari': {
     name: 'Sant Dnyaneshwar',
     label: 'Dnyaneshwari',
     icon: '',
-    bio: 'Maharashtrian saint-philosopher (1275–1296 CE). Composed the Dnyaneshwari — a Marathi verse commentary on the Gita — at age 16. Founding text of the Warkari tradition.'
+    bio: 'Maharashtrian saint-philosopher (1275â€“1296 CE). Composed the Dnyaneshwari â€” a Marathi verse commentary on the Gita â€” at age 16. Founding text of the Warkari tradition.'
   },
   'iskcon': {
     name: 'A.C. Bhaktivedanta Swami Prabhupada',
     label: 'Prabhupada',
     icon: '',
-    bio: 'Founder-Acharya of ISKCON. Translator and commentator of Bhagavad-gītā As It Is. One of the most widely read Gita commentaries in the world.'
+    bio: 'Founder-Acharya of ISKCON. Translator and commentator of Bhagavad-gÄ«tÄ As It Is. One of the most widely read Gita commentaries in the world.'
   }
 }
 
@@ -203,7 +203,7 @@ export default function StudyClient({
           name: String(layer.author_name),
           bio: String(layer.author_bio || ''),
           label: String(layer.author_label || layer.author_name),
-          icon: String(layer.author_icon || '📜')
+          icon: String(layer.author_icon || 'ðŸ“œ')
         }
       }
     }
@@ -370,7 +370,7 @@ export default function StudyClient({
     localStorage.setItem('vishwa_scholar_pref', JSON.stringify(s))
   }
 
-  const toggleScholar = (author: string) => {
+  const _toggleScholar = (author: string) => {
     let newSelection = [...scholarSelection].filter(s => s !== 'none')
     if (newSelection.includes(author)) {
       newSelection = newSelection.filter(a => a !== author)
@@ -442,7 +442,7 @@ export default function StudyClient({
            const layer = l as Record<string, unknown>
            return (layer.type === 'translation' || layer.type === 'meaning') && layer.lang === 'en'
          }) as Record<string, unknown> | undefined
-         // Fallback chain: translation-type layer → verse-level meaning → verse-level translation
+         // Fallback chain: translation-type layer â†’ verse-level meaning â†’ verse-level translation
          // All three checked so future data format changes don't silently produce empty synthesis context
          const meaningCandidate = String(meaningLayer?.content ?? v.meaning ?? v.translation ?? '')
          const meaning = isValidCommentaryContent(meaningCandidate) ? meaningCandidate : ''
@@ -554,7 +554,7 @@ export default function StudyClient({
 
   return (
     <>
-      {/* ═══════════════════════════════════════════ HEADER ═══ */}
+      {/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• HEADER â•â•â• */}
             <header className="glass border-b border-stone-100/50 dark:border-stone-800/50 pt-3 pb-3 overflow-visible relative z-30">
         <div className="absolute top-0 right-0 w-80 h-80 bg-orange-50 dark:bg-orange-950/20 rounded-full blur-[90px] -mr-40 -mt-20 opacity-60 pointer-events-none" />
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 relative z-10">
@@ -587,7 +587,7 @@ export default function StudyClient({
               )}
               {isParva && currentAdhyaya && adhyayaList && adhyayaList.length > 0 && (
                 <span className="flex items-center justify-center gap-2 text-[10px] font-normal text-stone-400 dark:text-stone-500 mt-0.5">
-                  <span>Parva {chapter} � Adhyaya {currentAdhyaya} of {adhyayaList.length}</span>
+                  <span>Parva {chapter} • Adhyaya {currentAdhyaya} of {adhyayaList.length}</span>
                   <AdhyayaShareLink textSlug={textSlug} chapter={chapter} adhyaya={activeAdhyaya} />
                 </span>
               )}
@@ -608,11 +608,11 @@ export default function StudyClient({
         </div>
       </header>
 
-      {/* ═══════════════════════════════════════════ TOOLBAR ═══ */}
+      {/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• TOOLBAR â•â•â• */}
       <div className="sticky top-[3.5rem] z-40 glass border-b border-stone-100/50 dark:border-stone-800/50 shadow-sm">
         <div className="max-w-[1400px] mx-auto px-3 sm:px-6 flex flex-col md:flex-row items-center justify-between py-2.5 gap-3 md:gap-2">
 
-          {/* Left group — progress + commentary toggles */}
+          {/* Left group â€” progress + commentary toggles */}
           <div className="flex items-center gap-3 w-full md:w-auto overflow-x-auto pb-1.5 md:pb-0 scrollbar-none">
 
             {/* Progress indicator */}
@@ -686,7 +686,7 @@ export default function StudyClient({
             </div>
           </div>
 
-          {/* Right group — actions */}
+          {/* Right group â€” actions */}
           <div className="flex items-center gap-2 w-full md:w-auto justify-between md:justify-end flex-wrap">
             <div className="flex items-center gap-1.5">
               {/* Share link button */}
@@ -725,13 +725,13 @@ export default function StudyClient({
               title="Generate AI Synthesis for entire chapter"
               className="px-3 py-1.5 rounded-xl border text-[11px] font-bold transition-all flex-shrink-0 flex items-center gap-1.5 bg-white dark:bg-stone-800 border-stone-200 dark:border-stone-700 text-stone-600 dark:text-stone-400 hover:border-orange-400 hover:text-orange-600 disabled:opacity-50"
             >
-              {_isChapterSynthesizing ? 'Analysing…' : 'Generate AI Synthesis for entire chapter'}
+              {_isChapterSynthesizing ? 'Analysingâ€¦' : 'Generate AI Synthesis for entire chapter'}
             </button>
           </div>
         </div>
       </div>
 
-      {/* ═══════════════════════════════════════════ VERSES ═══ */}
+      {/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• VERSES â•â•â• */}
       <main className="bg-[#FDFBF8] dark:bg-[#121212] min-h-screen vedic-bg-shimmer" data-testid="study-container" onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
         <div className="max-w-[1600px] mx-auto px-3 sm:px-4 lg:px-6 py-4 sm:py-8 flex flex-col xl:flex-row gap-6 lg:gap-8 justify-center items-start">
           
@@ -740,7 +740,7 @@ export default function StudyClient({
             <div className="glass rounded-3xl p-6 shadow-xl shadow-stone-200/20 dark:shadow-none overflow-hidden relative group transition-all hover:shadow-2xl hover:border-orange-200/50 dark:hover:border-orange-900/50">
                <div className="absolute top-0 right-0 w-32 h-32 bg-orange-500/10 dark:bg-orange-400/5 rounded-full blur-3xl pointer-events-none group-hover:scale-150 transition-transform duration-1000 ease-in-out" />
                <h3 className="text-[10px] font-black uppercase tracking-widest text-stone-400 dark:text-stone-500 mb-6 flex items-center gap-2">
-                 <span className="text-base">🧪</span> Vedic Labs
+                 <span className="text-base">ðŸ§ª</span> Vedic Labs
                </h3>
                <div className="space-y-3 relative z-10">
                  
@@ -782,10 +782,10 @@ export default function StudyClient({
           </aside>
 
           <div className="w-full max-w-[1100px] flex-1 order-1 xl:order-2 min-w-0">
-          {/* Vedic Timeline — compact version at top */}
+          {/* Vedic Timeline â€” compact version at top */}
           <VedicTimeline slug={textSlug} />
 
-          {/* Single relevance warning banner — shown once if any commentary has low alignment */}
+          {/* Single relevance warning banner â€” shown once if any commentary has low alignment */}
           {scholarSelection.length > 0 && (() => {
             const hasLowRelevance = verses.some((verse: unknown) => {
               const v = verse as Record<string, unknown>
@@ -800,7 +800,7 @@ export default function StudyClient({
             })
             return hasLowRelevance ? (
               <p className="text-xs text-orange-800 bg-orange-100 dark:text-orange-200 dark:bg-orange-900/40 rounded-lg px-4 py-2 mt-4 mb-2">
-                Note: Some commentaries in this chapter may not closely align with the verse translation — we display the closest available match in the selected language.
+                Note: Some commentaries in this chapter may not closely align with the verse translation â€” we display the closest available match in the selected language.
               </p>
             ) : null
           })()}
@@ -816,7 +816,7 @@ export default function StudyClient({
             const layers = (v.layers || []) as Record<string, unknown>[]
             const meaning = String(v.translation || '')
 
-            // Commentary layers — filter by selected scholar base key and language (Lean template: only show if explicitly selected)
+            // Commentary layers â€” filter by selected scholar base key and language (Lean template: only show if explicitly selected)
             const candidateCommentaries = layers?.filter((l: unknown) => {
               const layer = l as Record<string, unknown>
               if (scholarSelection.length === 0) return false // Lean template: hide commentaries if none selected
@@ -843,7 +843,7 @@ export default function StudyClient({
                 const al = a as Record<string, unknown>
                 const bl = b as Record<string, unknown>
                 if (languageSelection === 'all') {
-                  // Group by lang first (en → hi → mr), then by relevance within group
+                  // Group by lang first (en â†’ hi â†’ mr), then by relevance within group
                   const langDiff = LANG_ORDER.indexOf(al.lang as string) - LANG_ORDER.indexOf(bl.lang as string)
                   if (langDiff !== 0) return langDiff
                 }
@@ -863,10 +863,10 @@ export default function StudyClient({
                 {/* Verse number badge */}
                 <div className="flex items-center justify-between px-4 sm:px-6 py-3 bg-stone-50 dark:bg-stone-900/40 border-b border-stone-100 dark:border-stone-800/50">
                   <span className="flex items-center gap-2 text-xs font-black uppercase tracking-widest text-stone-400 dark:text-stone-500 truncate">
-                    {String(isParva ? 'Śloka' : isGita ? 'BG' : 'Śloka')} {String(v.chapter || (v.id as string).split('_')[1] || '?')}.{String(v.verse ?? (v.id as string).split('_')[2] ?? '?')}
+                    {String(isParva ? 'Åšloka' : isGita ? 'BG' : 'Åšloka')} {String(v.chapter || (v.id as string).split('_')[1] || '?')}.{String(v.verse ?? (v.id as string).split('_')[2] ?? '?')}
                     {(v.verse as number) === 0 && (
                       <span className="text-[10px] font-black uppercase tracking-widest text-amber-700 dark:text-amber-400 bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800/50 px-2 py-0.5 rounded-full">
-                        Śānti Pāṭha
+                        ÅšÄnti PÄá¹­ha
                       </span>
                     )}
                   </span>
@@ -894,7 +894,7 @@ export default function StudyClient({
                           : 'text-stone-300 hover:text-orange-400'
                       }`}
                     >
-                      {bookmarks.includes(v.id as string) ? '★' : '☆'}
+                      {bookmarks.includes(v.id as string) ? 'â˜…' : 'â˜†'}
                     </button>
                     <button
                       onClick={() => verseRefs.current[v.verse as number]?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
@@ -907,16 +907,16 @@ export default function StudyClient({
                       title="Explore Semantic Links"
                       className="text-stone-300 hover:text-orange-400 text-xs font-bold transition-colors uppercase tracking-widest focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:outline-none"
                     >
-                      🔗 Links
+                      ðŸ”— Links
                     </button>
                   </div>
                 </div>
 
-                {/* Contextual intro — collapsed by default; shown when verse has a context/intro field */}
+                {/* Contextual intro â€” collapsed by default; shown when verse has a context/intro field */}
                 {(v.context || v.intro) ? (
                   <details className="px-4 sm:px-6 py-2 border-b border-stone-50 dark:border-stone-800/30 group">
                     <summary className="cursor-pointer list-none flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-stone-400 dark:text-stone-500 hover:text-orange-500 dark:hover:text-orange-400 transition-colors select-none">
-                      <span className="group-open:rotate-90 transition-transform inline-block">▶</span>
+                      <span className="group-open:rotate-90 transition-transform inline-block">â–¶</span>
                       Context
                     </summary>
                     <p className="mt-2 mb-1 text-stone-500 dark:text-stone-400 text-xs sm:text-[13px] leading-relaxed">
@@ -1006,7 +1006,7 @@ export default function StudyClient({
                <VerseAppLinks bookSlug={textSlug} chapter={chapter} />
             </div>
             <div className="bg-orange-50/50 dark:bg-orange-950/10 rounded-2xl border border-orange-100 dark:border-orange-900/30 p-5 text-center">
-              <span className="text-2xl mb-2 block">🧠</span>
+              <span className="text-2xl mb-2 block">ðŸ§ </span>
               <p className="text-[11px] font-bold text-orange-800 dark:text-orange-400 mb-1 tracking-wide">Vishwa-Vani Cognitive UI</p>
               <p className="text-[10px] text-orange-600/70 dark:text-orange-500/70">Unlock deep philosophical connections with AI Synthesis. Authenticated users can distill verses and commentaries into unified, easy-to-understand insights while preserving their original essence.</p>
             </div>
@@ -1016,6 +1016,7 @@ export default function StudyClient({
     </>
   )
 }
+
 
 
 
