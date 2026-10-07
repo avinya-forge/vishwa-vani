@@ -16,6 +16,32 @@
         "content": "Placeholder translation for Canto 10 Chapter 1 Verse 1",
         "author_name": "Veda Vyasa",
         "author_label": "Original"
+      },
+      {
+        "author": "prabhupada",
+        "author_name": "Prabhupada",
+        "type": "commentary",
+        "lang": "en",
+        "content": "A beautiful commentary on this verse."
+      },
+      {
+        "author": "vishvanatha",
+        "author_name": "Vishvanatha Chakravarti",
+        "type": "commentary",
+        "lang": "en",
+        "content": "Another profound commentary."
+      },
+      {
+        "author": "mlg_queue",
+        "type": "translation",
+        "lang": "hi",
+        "content": "हिंदी अनुवाद"
+      },
+      {
+        "author": "mlg_queue",
+        "type": "translation",
+        "lang": "mr",
+        "content": "मराठी अनुवाद"
       }
     ]
   }
