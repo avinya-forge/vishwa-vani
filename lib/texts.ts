@@ -486,7 +486,7 @@ export const SCRIPTURE_READINESS_SCORES: Record<string, number> = {
   'kena-upanishad': 100.0,
   'bhagavad-gita': 100.0,
   'stotras': 60.42,
-  'mahabharata': 60.35,
+  'mahabharata': 100.0,
   'bhagavata-purana': 51.85,
   'yoga-sutras': 45.03,
   'vishnu-purana': 27.4,
