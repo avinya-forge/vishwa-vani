@@ -35,7 +35,7 @@ export async function getVersesFromLake(textSlug: string, chapter: number, lakeF
  * Global Discovery search across all sharded lakes.
  */
 export async function searchLake(query: string) {
-  if (!query || query.length < 2) return [];
+  if (!query || query.length < 2) return { results: [], summary: null };
   
   // Find all unique lake shards mentioned in registry
   const shards = Array.from(new Set(
@@ -46,7 +46,7 @@ export async function searchLake(query: string) {
 
   if (shards.length === 0) {
     const data = await fetchFromApi({ action: 'SEARCH_LAKE', query, lakeFile: 'vedic-lake.db' });
-    return data.results || [];
+    return { results: data.results || [], summary: data.summary || null };
   }
 
   // Parallel search across all shards
@@ -54,7 +54,11 @@ export async function searchLake(query: string) {
   const resultsArr = await Promise.all(shardPromises);
   
   // Flatten and deduplicate
-  return resultsArr.map(res => res.results || []).flat();
+  const flatResults = resultsArr.map(res => res.results || []).flat();
+  // Find the first non-null summary from the shards (or we could concat, but 1-line is better)
+  const summary = resultsArr.find(res => res.summary)?.summary || null;
+
+  return { results: flatResults, summary };
 }
 
 /**

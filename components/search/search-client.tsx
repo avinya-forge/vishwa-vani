@@ -15,6 +15,7 @@ export default function SearchClient() {
   const [query, setQuery] = useState('')
   const [searchQuery, setSearchQuery] = useState('')
   const [results, setResults] = useState<SearchResult[]>([])
+  const [summary, setSummary] = useState<string | null>(null)
   const [isSearching, setIsSearching] = useState(false)
   const [activeTab, setActiveTab] = useState<'all' | 'itihas' | 'upanishad' | 'veda' | 'purana' | 'other'>('all')
   const [displayedCount, setDisplayedCount] = useState(50)
@@ -29,7 +30,14 @@ export default function SearchClient() {
         startTransition(async () => {
             try {
               const res = await searchLake(query)
-              setResults((res as SearchResult[]) || [])
+              // Handle both the old signature (array) and new signature ({results, summary})
+              if (Array.isArray(res)) {
+                setResults(res as SearchResult[])
+                setSummary(null)
+              } else {
+                setResults((res.results as SearchResult[]) || [])
+                setSummary(res.summary)
+              }
               setSearchQuery(query)
               setDisplayedCount(50)
             } catch (error) {
@@ -41,6 +49,7 @@ export default function SearchClient() {
         });
       } else {
         setResults([])
+        setSummary(null)
         setSearchQuery('')
       }
     }, 400)
@@ -170,6 +179,17 @@ export default function SearchClient() {
             </div>
           ) : filteredResults.length > 0 ? (
             <>
+              {summary && (
+                <div className="mb-8 p-6 bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-2xl shadow-sm">
+                  <div className="flex items-center gap-3 mb-2">
+                    <span className="text-xl">✨</span>
+                    <h3 className="font-serif font-bold text-orange-900 dark:text-orange-100 text-lg">AI Summary</h3>
+                  </div>
+                  <p className="text-stone-800 dark:text-stone-200 leading-relaxed font-medium">
+                    {summary}
+                  </p>
+                </div>
+              )}
               {filteredResults.slice(0, displayedCount).map((result, idx) => {
                 const meta = VEDIC_LIBRARY_MAP.get(result.textSlug)
                 const snippet = getSnippet(result.slok, searchQuery) || getSnippet(result.transliteration, searchQuery)

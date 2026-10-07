@@ -6,7 +6,7 @@ const withNextIntl = createNextIntlPlugin('./i18n/request.ts');
 const nextConfig: NextConfig = {
   // output: 'export', // Disabled for API functionality
   devIndicators: false,
-  serverExternalPackages: ['better-sqlite3', 'sqlite3'],
+  serverExternalPackages: ['better-sqlite3', 'sqlite3', '@xenova/transformers', 'onnxruntime-node'],
   outputFileTracingIncludes: {
     '/api/**/*': ['./public/**/*.db'],
     '/[text]/[chapter]': ['./public/**/*.db'],
