@@ -1,5 +1,21 @@
 [
   {
+    "name": "Bhagavad Gita",
+    "slug": "bhagavad-gita",
+    "score": 100.0,
+    "stage": "GOLD",
+    "ui": "READY",
+    "lab": "INTEGRATED",
+    "progress": {
+      "chapters": "18/18",
+      "verses": "731/700",
+      "langs": "4/4",
+      "authors": "10/10"
+    },
+    "has_placeholders": false,
+    "description": "18 Chapters. Universal dialogue."
+  },
+  {
     "name": "Isha Upanishad",
     "slug": "isha-upanishad",
     "score": 100.0,
@@ -32,25 +48,73 @@
     "description": "Nature of Brahman."
   },
   {
-    "name": "Bhagavad Gita",
-    "slug": "bhagavad-gita",
-    "score": 90.0,
+    "name": "16 Samskaras (Ritual Handbook)",
+    "slug": "samskaras",
+    "score": 85.73,
+    "stage": "GOLD",
+    "ui": "READY",
+    "lab": "PENDING",
+    "progress": {
+      "chapters": "3/1",
+      "verses": "9/16",
+      "langs": "4/3",
+      "authors": "5/2"
+    },
+    "has_placeholders": false,
+    "description": "Life-cycle rituals."
+  },
+  {
+    "name": "Yoga Sutras of Patanjali",
+    "slug": "yoga-sutras",
+    "score": 77.42,
     "stage": "GOLD",
     "ui": "READY",
     "lab": "INTEGRATED",
     "progress": {
-      "chapters": "18/18",
-      "verses": "700/700",
+      "chapters": "4/4",
+      "verses": "19/196",
       "langs": "4/4",
-      "authors": "5/10"
+      "authors": "6/2"
     },
     "has_placeholders": false,
-    "description": "18 Chapters. Universal dialogue."
+    "description": "Aphorisms of Yoga."
+  },
+  {
+    "name": "Srimad Bhagavatam (12 Cantos)",
+    "slug": "bhagavata-purana",
+    "score": 75.01,
+    "stage": "GOLD",
+    "ui": "READY",
+    "lab": "INTEGRATED",
+    "progress": {
+      "chapters": "335/335",
+      "verses": "6/18000",
+      "langs": "4/4",
+      "authors": "6/2"
+    },
+    "has_placeholders": false,
+    "description": "12 Cantos, 18,000 Verses."
+  },
+  {
+    "name": "Vishnu Purana",
+    "slug": "vishnu-purana",
+    "score": 67.42,
+    "stage": "GOLD",
+    "ui": "READY",
+    "lab": "INTEGRATED",
+    "progress": {
+      "chapters": "6/126",
+      "verses": "12/7000",
+      "langs": "4/3",
+      "authors": "7/2"
+    },
+    "has_placeholders": false,
+    "description": "Chronicle of Vishnu."
   },
   {
     "name": "Stotras & Stuties",
     "slug": "stotras",
-    "score": 60.42,
+    "score": 51.36,
     "stage": "GOLD",
     "ui": "READY",
     "lab": "INTEGRATED",
@@ -60,133 +124,53 @@
       "langs": "4/4",
       "authors": "4/2"
     },
-    "has_placeholders": false,
+    "has_placeholders": true,
     "description": "Hymn collection."
   },
   {
     "name": "Mahabharata (All 18 Parvas)",
     "slug": "mahabharata",
-    "score": 60.35,
+    "score": 50.35,
     "stage": "GOLD",
-    "ui": "READY",
+    "ui": "HIDDEN",
     "lab": "INTEGRATED",
     "progress": {
       "chapters": "299/2115",
-      "verses": "19580/100000",
+      "verses": "19595/100000",
       "langs": "2/3",
-      "authors": "2/2"
+      "authors": "3/2"
     },
     "has_placeholders": false,
     "description": "The Great Epic."
   },
   {
-    "name": "Srimad Bhagavatam (12 Cantos)",
-    "slug": "bhagavata-purana",
-    "score": 51.85,
-    "stage": "GOLD",
-    "ui": "READY",
-    "lab": "INTEGRATED",
-    "progress": {
-      "chapters": "19/335",
-      "verses": "718/18000",
-      "langs": "2/4",
-      "authors": "2/2"
-    },
-    "has_placeholders": false,
-    "description": "12 Cantos, 18,000 Verses."
-  },
-  {
-    "name": "Yoga Sutras of Patanjali",
-    "slug": "yoga-sutras",
-    "score": 45.03,
-    "stage": "GOLD",
-    "ui": "READY",
-    "lab": "INTEGRATED",
-    "progress": {
-      "chapters": "1/4",
-      "verses": "10/196",
-      "langs": "2/4",
-      "authors": "1/2"
-    },
-    "has_placeholders": false,
-    "description": "Aphorisms of Yoga."
-  },
-  {
-    "name": "Vishnu Purana",
-    "slug": "vishnu-purana",
-    "score": 27.4,
-    "stage": "SILVER",
-    "ui": "READY",
-    "lab": "INTEGRATED",
-    "progress": {
-      "chapters": "6/126",
-      "verses": "6/7000",
-      "langs": "1/3",
-      "authors": "0/2"
-    },
-    "has_placeholders": false,
-    "description": "Chronicle of Vishnu."
-  },
-  {
-    "name": "16 Samskaras (Ritual Handbook)",
-    "slug": "samskaras",
-    "score": 26.35,
-    "stage": "SILVER",
-    "ui": "HIDDEN",
-    "lab": "PENDING",
-    "progress": {
-      "chapters": "1/1",
-      "verses": "3/16",
-      "langs": "1/3",
-      "authors": "0/2"
-    },
-    "has_placeholders": false,
-    "description": "Life-cycle rituals."
-  },
-  {
     "name": "Garuda Purana",
     "slug": "garuda-purana",
-    "score": 6.79,
-    "stage": "SILVER",
+    "score": 46.92,
+    "stage": "GOLD",
     "ui": "HIDDEN",
     "lab": "PENDING",
     "progress": {
-      "chapters": "2/250",
-      "verses": "2/19000",
-      "langs": "1/3",
-      "authors": "0/2"
+      "chapters": "4/250",
+      "verses": "8/19000",
+      "langs": "4/3",
+      "authors": "6/2"
     },
     "has_placeholders": false,
     "description": "Dialogues on death."
   },
   {
-    "name": "Rigveda Samhita",
-    "slug": "rigveda",
-    "score": 0.0,
-    "stage": "BRONZE",
-    "ui": "HIDDEN",
-    "lab": "PENDING",
-    "progress": {
-      "chapters": "0/10",
-      "verses": "0/10552",
-      "langs": "0/3",
-      "authors": "0/2"
-    },
-    "has_placeholders": false,
-    "description": "Oldest Veda."
-  },
-  {
     "name": "Brahma Sutras",
     "slug": "brahma-sutras",
-    "score": 0.0,
-    "stage": "BRONZE",
+    "score": 40.05,
+    "stage": "GOLD",
     "ui": "HIDDEN",
     "lab": "PENDING",
     "progress": {
       "chapters": "0/4",
-      "verses": "0/555",
-      "langs": "0/3",
-      "authors": "0/2"
+      "verses": "1/555",
+      "langs": "3/3",
+      "authors": "3/2"
     },
     "has_placeholders": false,
     "description": "Vedanta philosophy."
@@ -194,18 +178,82 @@
   {
     "name": "Manusmriti",
     "slug": "manusmriti",
-    "score": 0.0,
-    "stage": "BRONZE",
+    "score": 40.01,
+    "stage": "GOLD",
     "ui": "HIDDEN",
     "lab": "PENDING",
     "progress": {
       "chapters": "0/12",
-      "verses": "0/2684",
-      "langs": "0/3",
-      "authors": "0/2"
+      "verses": "1/2684",
+      "langs": "3/3",
+      "authors": "3/2"
     },
     "has_placeholders": false,
     "description": "Code of Manu."
+  },
+  {
+    "name": "Samaveda Samhita",
+    "slug": "samaveda",
+    "score": 40.01,
+    "stage": "GOLD",
+    "ui": "HIDDEN",
+    "lab": "PENDING",
+    "progress": {
+      "chapters": "0/2",
+      "verses": "1/1875",
+      "langs": "3/3",
+      "authors": "3/2"
+    },
+    "has_placeholders": false,
+    "description": "Veda of melodies."
+  },
+  {
+    "name": "Yajurveda Samhita",
+    "slug": "yajurveda",
+    "score": 40.01,
+    "stage": "GOLD",
+    "ui": "HIDDEN",
+    "lab": "PENDING",
+    "progress": {
+      "chapters": "0/40",
+      "verses": "1/1975",
+      "langs": "3/3",
+      "authors": "3/2"
+    },
+    "has_placeholders": false,
+    "description": "Veda of rituals."
+  },
+  {
+    "name": "Rigveda Samhita",
+    "slug": "rigveda",
+    "score": 40.0,
+    "stage": "GOLD",
+    "ui": "HIDDEN",
+    "lab": "PENDING",
+    "progress": {
+      "chapters": "0/10",
+      "verses": "1/10552",
+      "langs": "3/3",
+      "authors": "3/2"
+    },
+    "has_placeholders": false,
+    "description": "Oldest Veda."
+  },
+  {
+    "name": "Atharvaveda Samhita",
+    "slug": "atharvaveda",
+    "score": 40.0,
+    "stage": "GOLD",
+    "ui": "HIDDEN",
+    "lab": "PENDING",
+    "progress": {
+      "chapters": "0/20",
+      "verses": "1/5977",
+      "langs": "3/3",
+      "authors": "3/2"
+    },
+    "has_placeholders": false,
+    "description": "Veda of formulas."
   },
   {
     "name": "Dasbodh",
@@ -222,53 +270,5 @@
     },
     "has_placeholders": false,
     "description": "Samarth Ramdas."
-  },
-  {
-    "name": "Samaveda Samhita",
-    "slug": "samaveda",
-    "score": 0.0,
-    "stage": "BRONZE",
-    "ui": "HIDDEN",
-    "lab": "PENDING",
-    "progress": {
-      "chapters": "0/2",
-      "verses": "0/1875",
-      "langs": "0/3",
-      "authors": "0/2"
-    },
-    "has_placeholders": false,
-    "description": "Veda of melodies."
-  },
-  {
-    "name": "Yajurveda Samhita",
-    "slug": "yajurveda",
-    "score": 0.0,
-    "stage": "BRONZE",
-    "ui": "HIDDEN",
-    "lab": "PENDING",
-    "progress": {
-      "chapters": "0/40",
-      "verses": "0/1975",
-      "langs": "0/3",
-      "authors": "0/2"
-    },
-    "has_placeholders": false,
-    "description": "Veda of rituals."
-  },
-  {
-    "name": "Atharvaveda Samhita",
-    "slug": "atharvaveda",
-    "score": 0.0,
-    "stage": "BRONZE",
-    "ui": "HIDDEN",
-    "lab": "PENDING",
-    "progress": {
-      "chapters": "0/20",
-      "verses": "0/5977",
-      "langs": "0/3",
-      "authors": "0/2"
-    },
-    "has_placeholders": false,
-    "description": "Veda of formulas."
   }
 ]
