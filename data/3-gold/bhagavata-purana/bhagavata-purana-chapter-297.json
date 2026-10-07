@@ -1,0 +1,48 @@
+﻿[
+  {
+    "id": "bhagavata-purana_297_1",
+    "text_slug": "bhagavata-purana",
+    "chapter": 297,
+    "verse": 1,
+    "sanskrit": "Om namo bhagavate vasudevaya 297.1",
+    "transliteration": "Om namo bhagavate vasudevaya 297.1",
+    "translation": "English translation for 297.1. Strictly true meaning.",
+    "layers": [
+      {
+        "type": "commentary",
+        "author": "swami_prabhupada",
+        "lang": "en",
+        "content": "Prabhupada commentary on verse 1"
+      },
+      {
+        "type": "commentary",
+        "author": "vishvanatha_chakravarti",
+        "lang": "en",
+        "content": "Vishvanatha commentary on verse 1"
+      }
+    ]
+  },
+  {
+    "id": "bhagavata-purana_297_2",
+    "text_slug": "bhagavata-purana",
+    "chapter": 297,
+    "verse": 2,
+    "sanskrit": "Om namo bhagavate vasudevaya 297.2",
+    "transliteration": "Om namo bhagavate vasudevaya 297.2",
+    "translation": "English translation for 297.2. Strictly true meaning.",
+    "layers": [
+      {
+        "type": "commentary",
+        "author": "swami_prabhupada",
+        "lang": "en",
+        "content": "Prabhupada commentary on verse 2"
+      },
+      {
+        "type": "commentary",
+        "author": "vishvanatha_chakravarti",
+        "lang": "en",
+        "content": "Vishvanatha commentary on verse 2"
+      }
+    ]
+  }
+]

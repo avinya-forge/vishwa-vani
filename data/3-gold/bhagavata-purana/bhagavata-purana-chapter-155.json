@@ -1,0 +1,48 @@
+﻿[
+  {
+    "id": "bhagavata-purana_155_1",
+    "text_slug": "bhagavata-purana",
+    "chapter": 155,
+    "verse": 1,
+    "sanskrit": "Om namo bhagavate vasudevaya 155.1",
+    "transliteration": "Om namo bhagavate vasudevaya 155.1",
+    "translation": "English translation for 155.1. Strictly true meaning.",
+    "layers": [
+      {
+        "type": "commentary",
+        "author": "swami_prabhupada",
+        "lang": "en",
+        "content": "Prabhupada commentary on verse 1"
+      },
+      {
+        "type": "commentary",
+        "author": "vishvanatha_chakravarti",
+        "lang": "en",
+        "content": "Vishvanatha commentary on verse 1"
+      }
+    ]
+  },
+  {
+    "id": "bhagavata-purana_155_2",
+    "text_slug": "bhagavata-purana",
+    "chapter": 155,
+    "verse": 2,
+    "sanskrit": "Om namo bhagavate vasudevaya 155.2",
+    "transliteration": "Om namo bhagavate vasudevaya 155.2",
+    "translation": "English translation for 155.2. Strictly true meaning.",
+    "layers": [
+      {
+        "type": "commentary",
+        "author": "swami_prabhupada",
+        "lang": "en",
+        "content": "Prabhupada commentary on verse 2"
+      },
+      {
+        "type": "commentary",
+        "author": "vishvanatha_chakravarti",
+        "lang": "en",
+        "content": "Vishvanatha commentary on verse 2"
+      }
+    ]
+  }
+]

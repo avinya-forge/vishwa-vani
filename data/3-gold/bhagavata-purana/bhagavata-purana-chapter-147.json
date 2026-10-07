@@ -1,0 +1,48 @@
+﻿[
+  {
+    "id": "bhagavata-purana_147_1",
+    "text_slug": "bhagavata-purana",
+    "chapter": 147,
+    "verse": 1,
+    "sanskrit": "Om namo bhagavate vasudevaya 147.1",
+    "transliteration": "Om namo bhagavate vasudevaya 147.1",
+    "translation": "English translation for 147.1. Strictly true meaning.",
+    "layers": [
+      {
+        "type": "commentary",
+        "author": "swami_prabhupada",
+        "lang": "en",
+        "content": "Prabhupada commentary on verse 1"
+      },
+      {
+        "type": "commentary",
+        "author": "vishvanatha_chakravarti",
+        "lang": "en",
+        "content": "Vishvanatha commentary on verse 1"
+      }
+    ]
+  },
+  {
+    "id": "bhagavata-purana_147_2",
+    "text_slug": "bhagavata-purana",
+    "chapter": 147,
+    "verse": 2,
+    "sanskrit": "Om namo bhagavate vasudevaya 147.2",
+    "transliteration": "Om namo bhagavate vasudevaya 147.2",
+    "translation": "English translation for 147.2. Strictly true meaning.",
+    "layers": [
+      {
+        "type": "commentary",
+        "author": "swami_prabhupada",
+        "lang": "en",
+        "content": "Prabhupada commentary on verse 2"
+      },
+      {
+        "type": "commentary",
+        "author": "vishvanatha_chakravarti",
+        "lang": "en",
+        "content": "Vishvanatha commentary on verse 2"
+      }
+    ]
+  }
+]

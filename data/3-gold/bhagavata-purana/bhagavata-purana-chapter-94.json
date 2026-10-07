@@ -1,0 +1,48 @@
+﻿[
+  {
+    "id": "bhagavata-purana_94_1",
+    "text_slug": "bhagavata-purana",
+    "chapter": 94,
+    "verse": 1,
+    "sanskrit": "Om namo bhagavate vasudevaya 94.1",
+    "transliteration": "Om namo bhagavate vasudevaya 94.1",
+    "translation": "English translation for 94.1. Strictly true meaning.",
+    "layers": [
+      {
+        "type": "commentary",
+        "author": "swami_prabhupada",
+        "lang": "en",
+        "content": "Prabhupada commentary on verse 1"
+      },
+      {
+        "type": "commentary",
+        "author": "vishvanatha_chakravarti",
+        "lang": "en",
+        "content": "Vishvanatha commentary on verse 1"
+      }
+    ]
+  },
+  {
+    "id": "bhagavata-purana_94_2",
+    "text_slug": "bhagavata-purana",
+    "chapter": 94,
+    "verse": 2,
+    "sanskrit": "Om namo bhagavate vasudevaya 94.2",
+    "transliteration": "Om namo bhagavate vasudevaya 94.2",
+    "translation": "English translation for 94.2. Strictly true meaning.",
+    "layers": [
+      {
+        "type": "commentary",
+        "author": "swami_prabhupada",
+        "lang": "en",
+        "content": "Prabhupada commentary on verse 2"
+      },
+      {
+        "type": "commentary",
+        "author": "vishvanatha_chakravarti",
+        "lang": "en",
+        "content": "Vishvanatha commentary on verse 2"
+      }
+    ]
+  }
+]

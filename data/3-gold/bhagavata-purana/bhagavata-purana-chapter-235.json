@@ -1,0 +1,48 @@
+﻿[
+  {
+    "id": "bhagavata-purana_235_1",
+    "text_slug": "bhagavata-purana",
+    "chapter": 235,
+    "verse": 1,
+    "sanskrit": "Om namo bhagavate vasudevaya 235.1",
+    "transliteration": "Om namo bhagavate vasudevaya 235.1",
+    "translation": "English translation for 235.1. Strictly true meaning.",
+    "layers": [
+      {
+        "type": "commentary",
+        "author": "swami_prabhupada",
+        "lang": "en",
+        "content": "Prabhupada commentary on verse 1"
+      },
+      {
+        "type": "commentary",
+        "author": "vishvanatha_chakravarti",
+        "lang": "en",
+        "content": "Vishvanatha commentary on verse 1"
+      }
+    ]
+  },
+  {
+    "id": "bhagavata-purana_235_2",
+    "text_slug": "bhagavata-purana",
+    "chapter": 235,
+    "verse": 2,
+    "sanskrit": "Om namo bhagavate vasudevaya 235.2",
+    "transliteration": "Om namo bhagavate vasudevaya 235.2",
+    "translation": "English translation for 235.2. Strictly true meaning.",
+    "layers": [
+      {
+        "type": "commentary",
+        "author": "swami_prabhupada",
+        "lang": "en",
+        "content": "Prabhupada commentary on verse 2"
+      },
+      {
+        "type": "commentary",
+        "author": "vishvanatha_chakravarti",
+        "lang": "en",
+        "content": "Vishvanatha commentary on verse 2"
+      }
+    ]
+  }
+]

@@ -1,0 +1,48 @@
+﻿[
+  {
+    "id": "bhagavata-purana_274_1",
+    "text_slug": "bhagavata-purana",
+    "chapter": 274,
+    "verse": 1,
+    "sanskrit": "Om namo bhagavate vasudevaya 274.1",
+    "transliteration": "Om namo bhagavate vasudevaya 274.1",
+    "translation": "English translation for 274.1. Strictly true meaning.",
+    "layers": [
+      {
+        "type": "commentary",
+        "author": "swami_prabhupada",
+        "lang": "en",
+        "content": "Prabhupada commentary on verse 1"
+      },
+      {
+        "type": "commentary",
+        "author": "vishvanatha_chakravarti",
+        "lang": "en",
+        "content": "Vishvanatha commentary on verse 1"
+      }
+    ]
+  },
+  {
+    "id": "bhagavata-purana_274_2",
+    "text_slug": "bhagavata-purana",
+    "chapter": 274,
+    "verse": 2,
+    "sanskrit": "Om namo bhagavate vasudevaya 274.2",
+    "transliteration": "Om namo bhagavate vasudevaya 274.2",
+    "translation": "English translation for 274.2. Strictly true meaning.",
+    "layers": [
+      {
+        "type": "commentary",
+        "author": "swami_prabhupada",
+        "lang": "en",
+        "content": "Prabhupada commentary on verse 2"
+      },
+      {
+        "type": "commentary",
+        "author": "vishvanatha_chakravarti",
+        "lang": "en",
+        "content": "Vishvanatha commentary on verse 2"
+      }
+    ]
+  }
+]

@@ -1,0 +1,48 @@
+﻿[
+  {
+    "id": "bhagavata-purana_223_1",
+    "text_slug": "bhagavata-purana",
+    "chapter": 223,
+    "verse": 1,
+    "sanskrit": "Om namo bhagavate vasudevaya 223.1",
+    "transliteration": "Om namo bhagavate vasudevaya 223.1",
+    "translation": "English translation for 223.1. Strictly true meaning.",
+    "layers": [
+      {
+        "type": "commentary",
+        "author": "swami_prabhupada",
+        "lang": "en",
+        "content": "Prabhupada commentary on verse 1"
+      },
+      {
+        "type": "commentary",
+        "author": "vishvanatha_chakravarti",
+        "lang": "en",
+        "content": "Vishvanatha commentary on verse 1"
+      }
+    ]
+  },
+  {
+    "id": "bhagavata-purana_223_2",
+    "text_slug": "bhagavata-purana",
+    "chapter": 223,
+    "verse": 2,
+    "sanskrit": "Om namo bhagavate vasudevaya 223.2",
+    "transliteration": "Om namo bhagavate vasudevaya 223.2",
+    "translation": "English translation for 223.2. Strictly true meaning.",
+    "layers": [
+      {
+        "type": "commentary",
+        "author": "swami_prabhupada",
+        "lang": "en",
+        "content": "Prabhupada commentary on verse 2"
+      },
+      {
+        "type": "commentary",
+        "author": "vishvanatha_chakravarti",
+        "lang": "en",
+        "content": "Vishvanatha commentary on verse 2"
+      }
+    ]
+  }
+]
