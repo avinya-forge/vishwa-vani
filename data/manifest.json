@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "last_audit": "2026-08-22",
+  "last_audit": "2026-10-07",
   "note": "Only Gold-tier (verified and complete) books are active in manifest. Mahabharata is currently in SILVER tier.",
   "books": [
     {
@@ -33,7 +33,7 @@
         "sa": "श्रीमद् भगवद्गीता"
       },
       "total_chapters": 18,
-      "total_verses": 700,
+      "total_verses": 701,
       "languages": [
         "en",
         "hi",
@@ -58,152 +58,99 @@
       "chapters": [
         {
           "number": 1,
-          "file": "bhagavad-gita-chapter-1.json",
-          "verse_count": 47,
-          "theme": "Arjuna's grief on the battlefield of Kurukshetra",
-          "yoga_type": "Arjuna Vishada Yoga",
-          "stotra_present": false
+          "file": "chapter-1.json",
+          "verse_count": 47
         },
         {
           "number": 2,
-          "file": "bhagavad-gita-chapter-2.json",
-          "verse_count": 72,
-          "theme": "Sankhya philosophy and the eternal Self explained by Krishna",
-          "yoga_type": "Sankhya Yoga",
-          "stotra_present": false
+          "file": "chapter-2.json",
+          "verse_count": 72
         },
         {
           "number": 3,
-          "file": "bhagavad-gita-chapter-3.json",
-          "verse_count": 43,
-          "theme": "Selfless action as the path of duty and liberation",
-          "yoga_type": "Karma Yoga",
-          "stotra_present": false
+          "file": "chapter-3.json",
+          "verse_count": 43
         },
         {
           "number": 4,
-          "file": "bhagavad-gita-chapter-4.json",
-          "verse_count": 42,
-          "theme": "Knowledge, renunciation, and the Divine descent",
-          "yoga_type": "Jnana-Karma-Sanyasa Yoga",
-          "stotra_present": false
+          "file": "chapter-4.json",
+          "verse_count": 42
         },
         {
           "number": 5,
-          "file": "bhagavad-gita-chapter-5.json",
-          "verse_count": 29,
-          "theme": "True renunciation through knowledge and detachment",
-          "yoga_type": "Karma-Sanyasa Yoga",
-          "stotra_present": false
+          "file": "chapter-5.json",
+          "verse_count": 29
         },
         {
           "number": 6,
-          "file": "bhagavad-gita-chapter-6.json",
-          "verse_count": 47,
-          "theme": "Meditation, mind-mastery, and the path of inner yoga",
-          "yoga_type": "Dhyana Yoga",
-          "stotra_present": false
+          "file": "chapter-6.json",
+          "verse_count": 47
         },
         {
           "number": 7,
-          "file": "bhagavad-gita-chapter-7.json",
-          "verse_count": 30,
-          "theme": "Knowledge of Brahman and the four types of devotees",
-          "yoga_type": "Jnana-Vijnana Yoga",
-          "stotra_present": false
+          "file": "chapter-7.json",
+          "verse_count": 30
         },
         {
           "number": 8,
-          "file": "bhagavad-gita-chapter-8.json",
-          "verse_count": 28,
-          "theme": "The imperishable Brahman and the path at death",
-          "yoga_type": "Akshara-Brahma Yoga",
-          "stotra_present": false
+          "file": "chapter-8.json",
+          "verse_count": 28
         },
         {
           "number": 9,
-          "file": "bhagavad-gita-chapter-9.json",
-          "verse_count": 34,
-          "theme": "The royal secret of devotion and the sovereign science",
-          "yoga_type": "Raja-Vidya-Raja-Guhya Yoga",
-          "stotra_present": false
+          "file": "chapter-9.json",
+          "verse_count": 34
         },
         {
           "number": 10,
-          "file": "bhagavad-gita-chapter-10.json",
-          "verse_count": 42,
-          "theme": "Divine manifestations and the infinite glories of Krishna",
-          "yoga_type": "Vibhuti Yoga",
-          "stotra_present": false
+          "file": "chapter-10.json",
+          "verse_count": 42
         },
         {
           "number": 11,
-          "file": "bhagavad-gita-chapter-11.json",
-          "verse_count": 55,
-          "theme": "Arjuna's vision of Krishna's Universal Form",
-          "yoga_type": "Vishvarupa-Darshana Yoga",
-          "stotra_present": false
+          "file": "chapter-11.json",
+          "verse_count": 55
         },
         {
           "number": 12,
-          "file": "bhagavad-gita-chapter-12.json",
-          "verse_count": 20,
-          "theme": "Devotion as the highest and most accessible path",
-          "yoga_type": "Bhakti Yoga",
-          "stotra_present": false
+          "file": "chapter-12.json",
+          "verse_count": 20
         },
         {
           "number": 13,
-          "file": "bhagavad-gita-chapter-13.json",
-          "verse_count": 34,
-          "theme": "The field, the knower of the field, and self-knowledge",
-          "yoga_type": "Kshetra-Kshetrajna Vibhaga Yoga",
-          "stotra_present": false
+          "file": "chapter-13.json",
+          "verse_count": 35
         },
         {
           "number": 14,
-          "file": "bhagavad-gita-chapter-14.json",
-          "verse_count": 27,
-          "theme": "The three Gunas — Sattva, Rajas, Tamas — and transcendence",
-          "yoga_type": "Gunatraya-Vibhaga Yoga",
-          "stotra_present": false
+          "file": "chapter-14.json",
+          "verse_count": 27
         },
         {
           "number": 15,
-          "file": "bhagavad-gita-chapter-15.json",
-          "verse_count": 20,
-          "theme": "The Purushottama — the Supreme Person beyond perishable and imperishable",
-          "yoga_type": "Purushottama Yoga",
-          "stotra_present": true
+          "file": "chapter-15.json",
+          "verse_count": 20
         },
         {
           "number": 16,
-          "file": "bhagavad-gita-chapter-16.json",
-          "verse_count": 24,
-          "theme": "Divine and demonic natures and the supremacy of scripture",
-          "yoga_type": "Daivasura-Sampad-Vibhaga Yoga",
-          "stotra_present": false
+          "file": "chapter-16.json",
+          "verse_count": 24
         },
         {
           "number": 17,
-          "file": "bhagavad-gita-chapter-17.json",
-          "verse_count": 28,
-          "theme": "The three-fold faith in worship, austerity, and charity",
-          "yoga_type": "Shraddhatraya-Vibhaga Yoga",
-          "stotra_present": false
+          "file": "chapter-17.json",
+          "verse_count": 28
         },
         {
           "number": 18,
-          "file": "bhagavad-gita-chapter-18.json",
-          "verse_count": 78,
-          "theme": "The supreme secret — surrender to Krishna as the ultimate liberation",
-          "yoga_type": "Moksha-Sanyasa Yoga",
-          "stotra_present": false
+          "file": "chapter-18.json",
+          "verse_count": 78
         }
       ],
       "completeness_score": 100,
       "status": "GOLD",
-      "last_audit": "2026-04-15"
+      "last_audit": "2026-04-15",
+      "last_promoted": "2026-10-07"
     },
     {
       "book_id": "mahabharata",
@@ -228,2989 +175,2989 @@
       "chapters": [
         {
           "number": 1,
-          "file": "parva-1/adhyaya-1.json",
+          "file": "parva-1\\adhyaya-1.json",
           "verse_count": 210
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-10.json",
+          "file": "parva-1\\adhyaya-10.json",
           "verse_count": 8
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-100.json",
+          "file": "parva-1\\adhyaya-100.json",
           "verse_count": 30
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-101.json",
+          "file": "parva-1\\adhyaya-101.json",
           "verse_count": 28
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-102.json",
+          "file": "parva-1\\adhyaya-102.json",
           "verse_count": 23
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-103.json",
+          "file": "parva-1\\adhyaya-103.json",
           "verse_count": 17
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-104.json",
+          "file": "parva-1\\adhyaya-104.json",
           "verse_count": 21
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-105.json",
+          "file": "parva-1\\adhyaya-105.json",
           "verse_count": 27
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-106.json",
+          "file": "parva-1\\adhyaya-106.json",
           "verse_count": 14
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-107.json",
+          "file": "parva-1\\adhyaya-107.json",
           "verse_count": 37
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-108.json",
+          "file": "parva-1\\adhyaya-108.json",
           "verse_count": 18
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-109.json",
+          "file": "parva-1\\adhyaya-109.json",
           "verse_count": 31
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-11.json",
+          "file": "parva-1\\adhyaya-11.json",
           "verse_count": 17
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-110.json",
+          "file": "parva-1\\adhyaya-110.json",
           "verse_count": 45
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-111.json",
+          "file": "parva-1\\adhyaya-111.json",
           "verse_count": 36
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-112.json",
+          "file": "parva-1\\adhyaya-112.json",
           "verse_count": 34
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-113.json",
+          "file": "parva-1\\adhyaya-113.json",
           "verse_count": 43
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-114.json",
+          "file": "parva-1\\adhyaya-114.json",
           "verse_count": 66
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-115.json",
+          "file": "parva-1\\adhyaya-115.json",
           "verse_count": 28
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-116.json",
+          "file": "parva-1\\adhyaya-116.json",
           "verse_count": 31
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-117.json",
+          "file": "parva-1\\adhyaya-117.json",
           "verse_count": 33
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-118.json",
+          "file": "parva-1\\adhyaya-118.json",
           "verse_count": 30
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-119.json",
+          "file": "parva-1\\adhyaya-119.json",
           "verse_count": 43
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-12.json",
+          "file": "parva-1\\adhyaya-12.json",
           "verse_count": 5
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-120.json",
+          "file": "parva-1\\adhyaya-120.json",
           "verse_count": 21
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-121.json",
+          "file": "parva-1\\adhyaya-121.json",
           "verse_count": 23
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-122.json",
+          "file": "parva-1\\adhyaya-122.json",
           "verse_count": 47
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-123.json",
+          "file": "parva-1\\adhyaya-123.json",
           "verse_count": 78
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-124.json",
+          "file": "parva-1\\adhyaya-124.json",
           "verse_count": 33
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-125.json",
+          "file": "parva-1\\adhyaya-125.json",
           "verse_count": 32
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-126.json",
+          "file": "parva-1\\adhyaya-126.json",
           "verse_count": 39
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-127.json",
+          "file": "parva-1\\adhyaya-127.json",
           "verse_count": 24
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-128.json",
+          "file": "parva-1\\adhyaya-128.json",
           "verse_count": 18
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-129.json",
+          "file": "parva-1\\adhyaya-129.json",
           "verse_count": 18
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-13.json",
+          "file": "parva-1\\adhyaya-13.json",
           "verse_count": 45
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-130.json",
+          "file": "parva-1\\adhyaya-130.json",
           "verse_count": 20
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-131.json",
+          "file": "parva-1\\adhyaya-131.json",
           "verse_count": 18
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-132.json",
+          "file": "parva-1\\adhyaya-132.json",
           "verse_count": 19
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-133.json",
+          "file": "parva-1\\adhyaya-133.json",
           "verse_count": 30
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-134.json",
+          "file": "parva-1\\adhyaya-134.json",
           "verse_count": 28
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-135.json",
+          "file": "parva-1\\adhyaya-135.json",
           "verse_count": 21
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-136.json",
+          "file": "parva-1\\adhyaya-136.json",
           "verse_count": 19
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-137.json",
+          "file": "parva-1\\adhyaya-137.json",
           "verse_count": 23
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-138.json",
+          "file": "parva-1\\adhyaya-138.json",
           "verse_count": 31
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-139.json",
+          "file": "parva-1\\adhyaya-139.json",
           "verse_count": 32
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-14.json",
+          "file": "parva-1\\adhyaya-14.json",
           "verse_count": 23
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-140.json",
+          "file": "parva-1\\adhyaya-140.json",
           "verse_count": 21
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-141.json",
+          "file": "parva-1\\adhyaya-141.json",
           "verse_count": 24
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-142.json",
+          "file": "parva-1\\adhyaya-142.json",
           "verse_count": 34
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-143.json",
+          "file": "parva-1\\adhyaya-143.json",
           "verse_count": 38
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-144.json",
+          "file": "parva-1\\adhyaya-144.json",
           "verse_count": 20
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-145.json",
+          "file": "parva-1\\adhyaya-145.json",
           "verse_count": 40
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-146.json",
+          "file": "parva-1\\adhyaya-146.json",
           "verse_count": 36
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-147.json",
+          "file": "parva-1\\adhyaya-147.json",
           "verse_count": 24
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-148.json",
+          "file": "parva-1\\adhyaya-148.json",
           "verse_count": 16
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-149.json",
+          "file": "parva-1\\adhyaya-149.json",
           "verse_count": 20
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-15.json",
+          "file": "parva-1\\adhyaya-15.json",
           "verse_count": 13
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-150.json",
+          "file": "parva-1\\adhyaya-150.json",
           "verse_count": 27
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-151.json",
+          "file": "parva-1\\adhyaya-151.json",
           "verse_count": 24
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-152.json",
+          "file": "parva-1\\adhyaya-152.json",
           "verse_count": 19
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-153.json",
+          "file": "parva-1\\adhyaya-153.json",
           "verse_count": 12
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-154.json",
+          "file": "parva-1\\adhyaya-154.json",
           "verse_count": 25
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-155.json",
+          "file": "parva-1\\adhyaya-155.json",
           "verse_count": 52
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-156.json",
+          "file": "parva-1\\adhyaya-156.json",
           "verse_count": 11
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-157.json",
+          "file": "parva-1\\adhyaya-157.json",
           "verse_count": 16
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-158.json",
+          "file": "parva-1\\adhyaya-158.json",
           "verse_count": 55
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-159.json",
+          "file": "parva-1\\adhyaya-159.json",
           "verse_count": 22
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-16.json",
+          "file": "parva-1\\adhyaya-16.json",
           "verse_count": 40
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-160.json",
+          "file": "parva-1\\adhyaya-160.json",
           "verse_count": 41
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-161.json",
+          "file": "parva-1\\adhyaya-161.json",
           "verse_count": 20
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-162.json",
+          "file": "parva-1\\adhyaya-162.json",
           "verse_count": 18
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-163.json",
+          "file": "parva-1\\adhyaya-163.json",
           "verse_count": 23
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-164.json",
+          "file": "parva-1\\adhyaya-164.json",
           "verse_count": 14
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-165.json",
+          "file": "parva-1\\adhyaya-165.json",
           "verse_count": 44
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-166.json",
+          "file": "parva-1\\adhyaya-166.json",
           "verse_count": 45
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-167.json",
+          "file": "parva-1\\adhyaya-167.json",
           "verse_count": 21
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-168.json",
+          "file": "parva-1\\adhyaya-168.json",
           "verse_count": 25
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-169.json",
+          "file": "parva-1\\adhyaya-169.json",
           "verse_count": 25
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-17.json",
+          "file": "parva-1\\adhyaya-17.json",
           "verse_count": 30
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-170.json",
+          "file": "parva-1\\adhyaya-170.json",
           "verse_count": 21
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-171.json",
+          "file": "parva-1\\adhyaya-171.json",
           "verse_count": 23
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-172.json",
+          "file": "parva-1\\adhyaya-172.json",
           "verse_count": 17
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-173.json",
+          "file": "parva-1\\adhyaya-173.json",
           "verse_count": 24
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-174.json",
+          "file": "parva-1\\adhyaya-174.json",
           "verse_count": 12
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-175.json",
+          "file": "parva-1\\adhyaya-175.json",
           "verse_count": 20
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-176.json",
+          "file": "parva-1\\adhyaya-176.json",
           "verse_count": 36
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-177.json",
+          "file": "parva-1\\adhyaya-177.json",
           "verse_count": 22
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-178.json",
+          "file": "parva-1\\adhyaya-178.json",
           "verse_count": 18
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-179.json",
+          "file": "parva-1\\adhyaya-179.json",
           "verse_count": 23
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-18.json",
+          "file": "parva-1\\adhyaya-18.json",
           "verse_count": 11
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-180.json",
+          "file": "parva-1\\adhyaya-180.json",
           "verse_count": 22
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-181.json",
+          "file": "parva-1\\adhyaya-181.json",
           "verse_count": 40
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-182.json",
+          "file": "parva-1\\adhyaya-182.json",
           "verse_count": 15
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-183.json",
+          "file": "parva-1\\adhyaya-183.json",
           "verse_count": 9
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-184.json",
+          "file": "parva-1\\adhyaya-184.json",
           "verse_count": 18
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-185.json",
+          "file": "parva-1\\adhyaya-185.json",
           "verse_count": 28
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-186.json",
+          "file": "parva-1\\adhyaya-186.json",
           "verse_count": 15
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-187.json",
+          "file": "parva-1\\adhyaya-187.json",
           "verse_count": 32
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-188.json",
+          "file": "parva-1\\adhyaya-188.json",
           "verse_count": 22
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-189.json",
+          "file": "parva-1\\adhyaya-189.json",
           "verse_count": 49
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-19.json",
+          "file": "parva-1\\adhyaya-19.json",
           "verse_count": 17
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-190.json",
+          "file": "parva-1\\adhyaya-190.json",
           "verse_count": 18
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-191.json",
+          "file": "parva-1\\adhyaya-191.json",
           "verse_count": 19
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-192.json",
+          "file": "parva-1\\adhyaya-192.json",
           "verse_count": 29
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-193.json",
+          "file": "parva-1\\adhyaya-193.json",
           "verse_count": 19
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-194.json",
+          "file": "parva-1\\adhyaya-194.json",
           "verse_count": 25
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-195.json",
+          "file": "parva-1\\adhyaya-195.json",
           "verse_count": 19
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-196.json",
+          "file": "parva-1\\adhyaya-196.json",
           "verse_count": 28
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-197.json",
+          "file": "parva-1\\adhyaya-197.json",
           "verse_count": 29
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-198.json",
+          "file": "parva-1\\adhyaya-198.json",
           "verse_count": 25
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-199.json",
+          "file": "parva-1\\adhyaya-199.json",
           "verse_count": 50
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-2.json",
+          "file": "parva-1\\adhyaya-2.json",
           "verse_count": 243
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-20.json",
+          "file": "parva-1\\adhyaya-20.json",
           "verse_count": 15
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-200.json",
+          "file": "parva-1\\adhyaya-200.json",
           "verse_count": 23
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-201.json",
+          "file": "parva-1\\adhyaya-201.json",
           "verse_count": 32
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-202.json",
+          "file": "parva-1\\adhyaya-202.json",
           "verse_count": 27
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-203.json",
+          "file": "parva-1\\adhyaya-203.json",
           "verse_count": 30
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-204.json",
+          "file": "parva-1\\adhyaya-204.json",
           "verse_count": 30
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-205.json",
+          "file": "parva-1\\adhyaya-205.json",
           "verse_count": 30
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-206.json",
+          "file": "parva-1\\adhyaya-206.json",
           "verse_count": 34
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-207.json",
+          "file": "parva-1\\adhyaya-207.json",
           "verse_count": 23
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-208.json",
+          "file": "parva-1\\adhyaya-208.json",
           "verse_count": 21
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-209.json",
+          "file": "parva-1\\adhyaya-209.json",
           "verse_count": 24
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-21.json",
+          "file": "parva-1\\adhyaya-21.json",
           "verse_count": 17
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-210.json",
+          "file": "parva-1\\adhyaya-210.json",
           "verse_count": 21
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-211.json",
+          "file": "parva-1\\adhyaya-211.json",
           "verse_count": 25
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-212.json",
+          "file": "parva-1\\adhyaya-212.json",
           "verse_count": 32
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-213.json",
+          "file": "parva-1\\adhyaya-213.json",
           "verse_count": 82
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-214.json",
+          "file": "parva-1\\adhyaya-214.json",
           "verse_count": 32
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-215.json",
+          "file": "parva-1\\adhyaya-215.json",
           "verse_count": 19
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-216.json",
+          "file": "parva-1\\adhyaya-216.json",
           "verse_count": 34
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-217.json",
+          "file": "parva-1\\adhyaya-217.json",
           "verse_count": 22
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-218.json",
+          "file": "parva-1\\adhyaya-218.json",
           "verse_count": 50
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-219.json",
+          "file": "parva-1\\adhyaya-219.json",
           "verse_count": 40
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-22.json",
+          "file": "parva-1\\adhyaya-22.json",
           "verse_count": 5
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-220.json",
+          "file": "parva-1\\adhyaya-220.json",
           "verse_count": 32
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-221.json",
+          "file": "parva-1\\adhyaya-221.json",
           "verse_count": 21
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-222.json",
+          "file": "parva-1\\adhyaya-222.json",
           "verse_count": 18
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-223.json",
+          "file": "parva-1\\adhyaya-223.json",
           "verse_count": 25
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-224.json",
+          "file": "parva-1\\adhyaya-224.json",
           "verse_count": 32
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-225.json",
+          "file": "parva-1\\adhyaya-225.json",
           "verse_count": 19
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-23.json",
+          "file": "parva-1\\adhyaya-23.json",
           "verse_count": 12
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-24.json",
+          "file": "parva-1\\adhyaya-24.json",
           "verse_count": 14
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-25.json",
+          "file": "parva-1\\adhyaya-25.json",
           "verse_count": 33
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-26.json",
+          "file": "parva-1\\adhyaya-26.json",
           "verse_count": 47
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-27.json",
+          "file": "parva-1\\adhyaya-27.json",
           "verse_count": 35
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-28.json",
+          "file": "parva-1\\adhyaya-28.json",
           "verse_count": 25
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-29.json",
+          "file": "parva-1\\adhyaya-29.json",
           "verse_count": 23
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-3.json",
+          "file": "parva-1\\adhyaya-3.json",
           "verse_count": 42
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-30.json",
+          "file": "parva-1\\adhyaya-30.json",
           "verse_count": 22
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-31.json",
+          "file": "parva-1\\adhyaya-31.json",
           "verse_count": 18
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-32.json",
+          "file": "parva-1\\adhyaya-32.json",
           "verse_count": 25
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-33.json",
+          "file": "parva-1\\adhyaya-33.json",
           "verse_count": 31
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-34.json",
+          "file": "parva-1\\adhyaya-34.json",
           "verse_count": 18
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-35.json",
+          "file": "parva-1\\adhyaya-35.json",
           "verse_count": 13
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-36.json",
+          "file": "parva-1\\adhyaya-36.json",
           "verse_count": 26
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-37.json",
+          "file": "parva-1\\adhyaya-37.json",
           "verse_count": 27
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-38.json",
+          "file": "parva-1\\adhyaya-38.json",
           "verse_count": 39
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-39.json",
+          "file": "parva-1\\adhyaya-39.json",
           "verse_count": 33
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-4.json",
+          "file": "parva-1\\adhyaya-4.json",
           "verse_count": 8
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-40.json",
+          "file": "parva-1\\adhyaya-40.json",
           "verse_count": 11
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-41.json",
+          "file": "parva-1\\adhyaya-41.json",
           "verse_count": 30
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-42.json",
+          "file": "parva-1\\adhyaya-42.json",
           "verse_count": 20
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-43.json",
+          "file": "parva-1\\adhyaya-43.json",
           "verse_count": 39
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-44.json",
+          "file": "parva-1\\adhyaya-44.json",
           "verse_count": 22
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-45.json",
+          "file": "parva-1\\adhyaya-45.json",
           "verse_count": 28
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-46.json",
+          "file": "parva-1\\adhyaya-46.json",
           "verse_count": 41
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-47.json",
+          "file": "parva-1\\adhyaya-47.json",
           "verse_count": 25
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-48.json",
+          "file": "parva-1\\adhyaya-48.json",
           "verse_count": 26
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-49.json",
+          "file": "parva-1\\adhyaya-49.json",
           "verse_count": 28
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-5.json",
+          "file": "parva-1\\adhyaya-5.json",
           "verse_count": 26
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-50.json",
+          "file": "parva-1\\adhyaya-50.json",
           "verse_count": 17
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-51.json",
+          "file": "parva-1\\adhyaya-51.json",
           "verse_count": 23
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-52.json",
+          "file": "parva-1\\adhyaya-52.json",
           "verse_count": 22
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-53.json",
+          "file": "parva-1\\adhyaya-53.json",
           "verse_count": 36
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-54.json",
+          "file": "parva-1\\adhyaya-54.json",
           "verse_count": 24
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-55.json",
+          "file": "parva-1\\adhyaya-55.json",
           "verse_count": 43
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-56.json",
+          "file": "parva-1\\adhyaya-56.json",
           "verse_count": 33
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-57.json",
+          "file": "parva-1\\adhyaya-57.json",
           "verse_count": 106
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-58.json",
+          "file": "parva-1\\adhyaya-58.json",
           "verse_count": 51
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-59.json",
+          "file": "parva-1\\adhyaya-59.json",
           "verse_count": 54
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-6.json",
+          "file": "parva-1\\adhyaya-6.json",
           "verse_count": 13
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-60.json",
+          "file": "parva-1\\adhyaya-60.json",
           "verse_count": 69
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-61.json",
+          "file": "parva-1\\adhyaya-61.json",
           "verse_count": 102
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-62.json",
+          "file": "parva-1\\adhyaya-62.json",
           "verse_count": 14
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-63.json",
+          "file": "parva-1\\adhyaya-63.json",
           "verse_count": 26
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-64.json",
+          "file": "parva-1\\adhyaya-64.json",
           "verse_count": 42
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-65.json",
+          "file": "parva-1\\adhyaya-65.json",
           "verse_count": 42
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-66.json",
+          "file": "parva-1\\adhyaya-66.json",
           "verse_count": 17
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-67.json",
+          "file": "parva-1\\adhyaya-67.json",
           "verse_count": 33
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-68.json",
+          "file": "parva-1\\adhyaya-68.json",
           "verse_count": 80
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-69.json",
+          "file": "parva-1\\adhyaya-69.json",
           "verse_count": 51
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-7.json",
+          "file": "parva-1\\adhyaya-7.json",
           "verse_count": 26
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-70.json",
+          "file": "parva-1\\adhyaya-70.json",
           "verse_count": 46
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-71.json",
+          "file": "parva-1\\adhyaya-71.json",
           "verse_count": 58
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-72.json",
+          "file": "parva-1\\adhyaya-72.json",
           "verse_count": 23
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-73.json",
+          "file": "parva-1\\adhyaya-73.json",
           "verse_count": 36
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-74.json",
+          "file": "parva-1\\adhyaya-74.json",
           "verse_count": 12
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-75.json",
+          "file": "parva-1\\adhyaya-75.json",
           "verse_count": 25
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-76.json",
+          "file": "parva-1\\adhyaya-76.json",
           "verse_count": 35
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-77.json",
+          "file": "parva-1\\adhyaya-77.json",
           "verse_count": 27
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-78.json",
+          "file": "parva-1\\adhyaya-78.json",
           "verse_count": 41
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-79.json",
+          "file": "parva-1\\adhyaya-79.json",
           "verse_count": 30
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-8.json",
+          "file": "parva-1\\adhyaya-8.json",
           "verse_count": 22
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-80.json",
+          "file": "parva-1\\adhyaya-80.json",
           "verse_count": 27
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-81.json",
+          "file": "parva-1\\adhyaya-81.json",
           "verse_count": 16
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-82.json",
+          "file": "parva-1\\adhyaya-82.json",
           "verse_count": 13
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-83.json",
+          "file": "parva-1\\adhyaya-83.json",
           "verse_count": 13
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-84.json",
+          "file": "parva-1\\adhyaya-84.json",
           "verse_count": 21
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-85.json",
+          "file": "parva-1\\adhyaya-85.json",
           "verse_count": 27
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-86.json",
+          "file": "parva-1\\adhyaya-86.json",
           "verse_count": 17
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-87.json",
+          "file": "parva-1\\adhyaya-87.json",
           "verse_count": 18
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-88.json",
+          "file": "parva-1\\adhyaya-88.json",
           "verse_count": 26
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-89.json",
+          "file": "parva-1\\adhyaya-89.json",
           "verse_count": 55
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-9.json",
+          "file": "parva-1\\adhyaya-9.json",
           "verse_count": 22
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-90.json",
+          "file": "parva-1\\adhyaya-90.json",
           "verse_count": 12
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-91.json",
+          "file": "parva-1\\adhyaya-91.json",
           "verse_count": 22
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-92.json",
+          "file": "parva-1\\adhyaya-92.json",
           "verse_count": 55
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-93.json",
+          "file": "parva-1\\adhyaya-93.json",
           "verse_count": 46
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-94.json",
+          "file": "parva-1\\adhyaya-94.json",
           "verse_count": 94
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-95.json",
+          "file": "parva-1\\adhyaya-95.json",
           "verse_count": 14
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-96.json",
+          "file": "parva-1\\adhyaya-96.json",
           "verse_count": 59
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-97.json",
+          "file": "parva-1\\adhyaya-97.json",
           "verse_count": 26
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-98.json",
+          "file": "parva-1\\adhyaya-98.json",
           "verse_count": 33
         },
         {
           "number": 1,
-          "file": "parva-1/adhyaya-99.json",
+          "file": "parva-1\\adhyaya-99.json",
           "verse_count": 49
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-1.json",
+          "file": "parva-2\\adhyaya-1.json",
           "verse_count": 19
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-10.json",
+          "file": "parva-2\\adhyaya-10.json",
           "verse_count": 23
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-11.json",
+          "file": "parva-2\\adhyaya-11.json",
           "verse_count": 73
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-12.json",
+          "file": "parva-2\\adhyaya-12.json",
           "verse_count": 40
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-13.json",
+          "file": "parva-2\\adhyaya-13.json",
           "verse_count": 68
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-14.json",
+          "file": "parva-2\\adhyaya-14.json",
           "verse_count": 20
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-15.json",
+          "file": "parva-2\\adhyaya-15.json",
           "verse_count": 16
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-16.json",
+          "file": "parva-2\\adhyaya-16.json",
           "verse_count": 51
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-17.json",
+          "file": "parva-2\\adhyaya-17.json",
           "verse_count": 27
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-18.json",
+          "file": "parva-2\\adhyaya-18.json",
           "verse_count": 30
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-19.json",
+          "file": "parva-2\\adhyaya-19.json",
           "verse_count": 50
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-2.json",
+          "file": "parva-2\\adhyaya-2.json",
           "verse_count": 23
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-20.json",
+          "file": "parva-2\\adhyaya-20.json",
           "verse_count": 34
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-21.json",
+          "file": "parva-2\\adhyaya-21.json",
           "verse_count": 23
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-22.json",
+          "file": "parva-2\\adhyaya-22.json",
           "verse_count": 58
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-23.json",
+          "file": "parva-2\\adhyaya-23.json",
           "verse_count": 26
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-24.json",
+          "file": "parva-2\\adhyaya-24.json",
           "verse_count": 27
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-25.json",
+          "file": "parva-2\\adhyaya-25.json",
           "verse_count": 20
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-26.json",
+          "file": "parva-2\\adhyaya-26.json",
           "verse_count": 16
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-27.json",
+          "file": "parva-2\\adhyaya-27.json",
           "verse_count": 28
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-28.json",
+          "file": "parva-2\\adhyaya-28.json",
           "verse_count": 55
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-29.json",
+          "file": "parva-2\\adhyaya-29.json",
           "verse_count": 19
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-3.json",
+          "file": "parva-2\\adhyaya-3.json",
           "verse_count": 34
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-30.json",
+          "file": "parva-2\\adhyaya-30.json",
           "verse_count": 54
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-31.json",
+          "file": "parva-2\\adhyaya-31.json",
           "verse_count": 25
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-32.json",
+          "file": "parva-2\\adhyaya-32.json",
           "verse_count": 18
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-33.json",
+          "file": "parva-2\\adhyaya-33.json",
           "verse_count": 32
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-34.json",
+          "file": "parva-2\\adhyaya-34.json",
           "verse_count": 23
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-35.json",
+          "file": "parva-2\\adhyaya-35.json",
           "verse_count": 29
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-36.json",
+          "file": "parva-2\\adhyaya-36.json",
           "verse_count": 15
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-37.json",
+          "file": "parva-2\\adhyaya-37.json",
           "verse_count": 15
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-38.json",
+          "file": "parva-2\\adhyaya-38.json",
           "verse_count": 40
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-39.json",
+          "file": "parva-2\\adhyaya-39.json",
           "verse_count": 20
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-4.json",
+          "file": "parva-2\\adhyaya-4.json",
           "verse_count": 34
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-40.json",
+          "file": "parva-2\\adhyaya-40.json",
           "verse_count": 23
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-41.json",
+          "file": "parva-2\\adhyaya-41.json",
           "verse_count": 33
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-42.json",
+          "file": "parva-2\\adhyaya-42.json",
           "verse_count": 60
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-43.json",
+          "file": "parva-2\\adhyaya-43.json",
           "verse_count": 36
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-44.json",
+          "file": "parva-2\\adhyaya-44.json",
           "verse_count": 22
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-45.json",
+          "file": "parva-2\\adhyaya-45.json",
           "verse_count": 58
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-46.json",
+          "file": "parva-2\\adhyaya-46.json",
           "verse_count": 35
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-47.json",
+          "file": "parva-2\\adhyaya-47.json",
           "verse_count": 31
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-48.json",
+          "file": "parva-2\\adhyaya-48.json",
           "verse_count": 42
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-49.json",
+          "file": "parva-2\\adhyaya-49.json",
           "verse_count": 25
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-5.json",
+          "file": "parva-2\\adhyaya-5.json",
           "verse_count": 116
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-50.json",
+          "file": "parva-2\\adhyaya-50.json",
           "verse_count": 28
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-51.json",
+          "file": "parva-2\\adhyaya-51.json",
           "verse_count": 26
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-52.json",
+          "file": "parva-2\\adhyaya-52.json",
           "verse_count": 37
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-53.json",
+          "file": "parva-2\\adhyaya-53.json",
           "verse_count": 25
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-54.json",
+          "file": "parva-2\\adhyaya-54.json",
           "verse_count": 29
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-55.json",
+          "file": "parva-2\\adhyaya-55.json",
           "verse_count": 17
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-56.json",
+          "file": "parva-2\\adhyaya-56.json",
           "verse_count": 10
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-57.json",
+          "file": "parva-2\\adhyaya-57.json",
           "verse_count": 21
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-58.json",
+          "file": "parva-2\\adhyaya-58.json",
           "verse_count": 43
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-59.json",
+          "file": "parva-2\\adhyaya-59.json",
           "verse_count": 12
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-6.json",
+          "file": "parva-2\\adhyaya-6.json",
           "verse_count": 18
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-60.json",
+          "file": "parva-2\\adhyaya-60.json",
           "verse_count": 47
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-61.json",
+          "file": "parva-2\\adhyaya-61.json",
           "verse_count": 82
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-62.json",
+          "file": "parva-2\\adhyaya-62.json",
           "verse_count": 38
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-63.json",
+          "file": "parva-2\\adhyaya-63.json",
           "verse_count": 36
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-64.json",
+          "file": "parva-2\\adhyaya-64.json",
           "verse_count": 17
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-65.json",
+          "file": "parva-2\\adhyaya-65.json",
           "verse_count": 17
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-66.json",
+          "file": "parva-2\\adhyaya-66.json",
           "verse_count": 37
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-67.json",
+          "file": "parva-2\\adhyaya-67.json",
           "verse_count": 21
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-68.json",
+          "file": "parva-2\\adhyaya-68.json",
           "verse_count": 46
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-69.json",
+          "file": "parva-2\\adhyaya-69.json",
           "verse_count": 21
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-7.json",
+          "file": "parva-2\\adhyaya-7.json",
           "verse_count": 26
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-70.json",
+          "file": "parva-2\\adhyaya-70.json",
           "verse_count": 24
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-71.json",
+          "file": "parva-2\\adhyaya-71.json",
           "verse_count": 47
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-72.json",
+          "file": "parva-2\\adhyaya-72.json",
           "verse_count": 36
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-8.json",
+          "file": "parva-2\\adhyaya-8.json",
           "verse_count": 38
         },
         {
           "number": 2,
-          "file": "parva-2/adhyaya-9.json",
+          "file": "parva-2\\adhyaya-9.json",
           "verse_count": 25
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-1.json",
+          "file": "parva-3\\adhyaya-1.json",
           "verse_count": 43
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-10.json",
+          "file": "parva-3\\adhyaya-10.json",
           "verse_count": 23
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-100.json",
+          "file": "parva-3\\adhyaya-100.json",
           "verse_count": 24
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-101.json",
+          "file": "parva-3\\adhyaya-101.json",
           "verse_count": 17
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-102.json",
+          "file": "parva-3\\adhyaya-102.json",
           "verse_count": 23
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-103.json",
+          "file": "parva-3\\adhyaya-103.json",
           "verse_count": 19
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-104.json",
+          "file": "parva-3\\adhyaya-104.json",
           "verse_count": 22
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-105.json",
+          "file": "parva-3\\adhyaya-105.json",
           "verse_count": 25
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-106.json",
+          "file": "parva-3\\adhyaya-106.json",
           "verse_count": 40
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-107.json",
+          "file": "parva-3\\adhyaya-107.json",
           "verse_count": 25
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-108.json",
+          "file": "parva-3\\adhyaya-108.json",
           "verse_count": 19
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-109.json",
+          "file": "parva-3\\adhyaya-109.json",
           "verse_count": 20
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-11.json",
+          "file": "parva-3\\adhyaya-11.json",
           "verse_count": 39
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-110.json",
+          "file": "parva-3\\adhyaya-110.json",
           "verse_count": 36
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-111.json",
+          "file": "parva-3\\adhyaya-111.json",
           "verse_count": 22
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-112.json",
+          "file": "parva-3\\adhyaya-112.json",
           "verse_count": 18
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-113.json",
+          "file": "parva-3\\adhyaya-113.json",
           "verse_count": 25
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-114.json",
+          "file": "parva-3\\adhyaya-114.json",
           "verse_count": 26
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-115.json",
+          "file": "parva-3\\adhyaya-115.json",
           "verse_count": 30
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-116.json",
+          "file": "parva-3\\adhyaya-116.json",
           "verse_count": 29
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-117.json",
+          "file": "parva-3\\adhyaya-117.json",
           "verse_count": 18
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-118.json",
+          "file": "parva-3\\adhyaya-118.json",
           "verse_count": 23
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-119.json",
+          "file": "parva-3\\adhyaya-119.json",
           "verse_count": 22
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-12.json",
+          "file": "parva-3\\adhyaya-12.json",
           "verse_count": 75
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-120.json",
+          "file": "parva-3\\adhyaya-120.json",
           "verse_count": 30
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-121.json",
+          "file": "parva-3\\adhyaya-121.json",
           "verse_count": 23
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-122.json",
+          "file": "parva-3\\adhyaya-122.json",
           "verse_count": 27
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-123.json",
+          "file": "parva-3\\adhyaya-123.json",
           "verse_count": 23
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-124.json",
+          "file": "parva-3\\adhyaya-124.json",
           "verse_count": 24
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-125.json",
+          "file": "parva-3\\adhyaya-125.json",
           "verse_count": 23
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-126.json",
+          "file": "parva-3\\adhyaya-126.json",
           "verse_count": 43
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-127.json",
+          "file": "parva-3\\adhyaya-127.json",
           "verse_count": 21
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-128.json",
+          "file": "parva-3\\adhyaya-128.json",
           "verse_count": 19
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-129.json",
+          "file": "parva-3\\adhyaya-129.json",
           "verse_count": 22
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-13.json",
+          "file": "parva-3\\adhyaya-13.json",
           "verse_count": 120
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-130.json",
+          "file": "parva-3\\adhyaya-130.json",
           "verse_count": 20
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-131.json",
+          "file": "parva-3\\adhyaya-131.json",
           "verse_count": 32
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-132.json",
+          "file": "parva-3\\adhyaya-132.json",
           "verse_count": 20
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-133.json",
+          "file": "parva-3\\adhyaya-133.json",
           "verse_count": 27
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-134.json",
+          "file": "parva-3\\adhyaya-134.json",
           "verse_count": 39
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-135.json",
+          "file": "parva-3\\adhyaya-135.json",
           "verse_count": 42
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-136.json",
+          "file": "parva-3\\adhyaya-136.json",
           "verse_count": 18
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-137.json",
+          "file": "parva-3\\adhyaya-137.json",
           "verse_count": 20
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-138.json",
+          "file": "parva-3\\adhyaya-138.json",
           "verse_count": 19
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-139.json",
+          "file": "parva-3\\adhyaya-139.json",
           "verse_count": 24
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-14.json",
+          "file": "parva-3\\adhyaya-14.json",
           "verse_count": 17
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-140.json",
+          "file": "parva-3\\adhyaya-140.json",
           "verse_count": 17
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-141.json",
+          "file": "parva-3\\adhyaya-141.json",
           "verse_count": 30
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-142.json",
+          "file": "parva-3\\adhyaya-142.json",
           "verse_count": 28
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-143.json",
+          "file": "parva-3\\adhyaya-143.json",
           "verse_count": 21
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-144.json",
+          "file": "parva-3\\adhyaya-144.json",
           "verse_count": 27
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-145.json",
+          "file": "parva-3\\adhyaya-145.json",
           "verse_count": 43
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-146.json",
+          "file": "parva-3\\adhyaya-146.json",
           "verse_count": 81
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-147.json",
+          "file": "parva-3\\adhyaya-147.json",
           "verse_count": 41
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-148.json",
+          "file": "parva-3\\adhyaya-148.json",
           "verse_count": 39
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-149.json",
+          "file": "parva-3\\adhyaya-149.json",
           "verse_count": 52
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-15.json",
+          "file": "parva-3\\adhyaya-15.json",
           "verse_count": 22
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-150.json",
+          "file": "parva-3\\adhyaya-150.json",
           "verse_count": 28
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-151.json",
+          "file": "parva-3\\adhyaya-151.json",
           "verse_count": 15
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-152.json",
+          "file": "parva-3\\adhyaya-152.json",
           "verse_count": 25
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-153.json",
+          "file": "parva-3\\adhyaya-153.json",
           "verse_count": 31
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-154.json",
+          "file": "parva-3\\adhyaya-154.json",
           "verse_count": 61
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-155.json",
+          "file": "parva-3\\adhyaya-155.json",
           "verse_count": 90
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-156.json",
+          "file": "parva-3\\adhyaya-156.json",
           "verse_count": 31
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-157.json",
+          "file": "parva-3\\adhyaya-157.json",
           "verse_count": 70
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-158.json",
+          "file": "parva-3\\adhyaya-158.json",
           "verse_count": 59
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-159.json",
+          "file": "parva-3\\adhyaya-159.json",
           "verse_count": 35
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-16.json",
+          "file": "parva-3\\adhyaya-16.json",
           "verse_count": 23
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-160.json",
+          "file": "parva-3\\adhyaya-160.json",
           "verse_count": 37
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-161.json",
+          "file": "parva-3\\adhyaya-161.json",
           "verse_count": 29
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-162.json",
+          "file": "parva-3\\adhyaya-162.json",
           "verse_count": 16
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-163.json",
+          "file": "parva-3\\adhyaya-163.json",
           "verse_count": 53
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-164.json",
+          "file": "parva-3\\adhyaya-164.json",
           "verse_count": 58
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-165.json",
+          "file": "parva-3\\adhyaya-165.json",
           "verse_count": 23
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-166.json",
+          "file": "parva-3\\adhyaya-166.json",
           "verse_count": 23
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-167.json",
+          "file": "parva-3\\adhyaya-167.json",
           "verse_count": 28
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-168.json",
+          "file": "parva-3\\adhyaya-168.json",
           "verse_count": 30
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-169.json",
+          "file": "parva-3\\adhyaya-169.json",
           "verse_count": 35
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-17.json",
+          "file": "parva-3\\adhyaya-17.json",
           "verse_count": 33
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-170.json",
+          "file": "parva-3\\adhyaya-170.json",
           "verse_count": 69
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-171.json",
+          "file": "parva-3\\adhyaya-171.json",
           "verse_count": 17
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-172.json",
+          "file": "parva-3\\adhyaya-172.json",
           "verse_count": 24
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-173.json",
+          "file": "parva-3\\adhyaya-173.json",
           "verse_count": 22
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-174.json",
+          "file": "parva-3\\adhyaya-174.json",
           "verse_count": 24
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-175.json",
+          "file": "parva-3\\adhyaya-175.json",
           "verse_count": 21
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-176.json",
+          "file": "parva-3\\adhyaya-176.json",
           "verse_count": 51
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-177.json",
+          "file": "parva-3\\adhyaya-177.json",
           "verse_count": 33
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-178.json",
+          "file": "parva-3\\adhyaya-178.json",
           "verse_count": 50
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-179.json",
+          "file": "parva-3\\adhyaya-179.json",
           "verse_count": 18
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-18.json",
+          "file": "parva-3\\adhyaya-18.json",
           "verse_count": 24
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-180.json",
+          "file": "parva-3\\adhyaya-180.json",
           "verse_count": 49
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-181.json",
+          "file": "parva-3\\adhyaya-181.json",
           "verse_count": 41
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-182.json",
+          "file": "parva-3\\adhyaya-182.json",
           "verse_count": 21
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-183.json",
+          "file": "parva-3\\adhyaya-183.json",
           "verse_count": 32
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-184.json",
+          "file": "parva-3\\adhyaya-184.json",
           "verse_count": 25
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-185.json",
+          "file": "parva-3\\adhyaya-185.json",
           "verse_count": 54
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-186.json",
+          "file": "parva-3\\adhyaya-186.json",
           "verse_count": 129
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-187.json",
+          "file": "parva-3\\adhyaya-187.json",
           "verse_count": 55
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-188.json",
+          "file": "parva-3\\adhyaya-188.json",
           "verse_count": 93
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-189.json",
+          "file": "parva-3\\adhyaya-189.json",
           "verse_count": 31
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-19.json",
+          "file": "parva-3\\adhyaya-19.json",
           "verse_count": 33
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-190.json",
+          "file": "parva-3\\adhyaya-190.json",
           "verse_count": 25
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-191.json",
+          "file": "parva-3\\adhyaya-191.json",
           "verse_count": 3
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-192.json",
+          "file": "parva-3\\adhyaya-192.json",
           "verse_count": 29
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-193.json",
+          "file": "parva-3\\adhyaya-193.json",
           "verse_count": 27
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-194.json",
+          "file": "parva-3\\adhyaya-194.json",
           "verse_count": 30
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-195.json",
+          "file": "parva-3\\adhyaya-195.json",
           "verse_count": 39
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-196.json",
+          "file": "parva-3\\adhyaya-196.json",
           "verse_count": 21
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-197.json",
+          "file": "parva-3\\adhyaya-197.json",
           "verse_count": 44
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-198.json",
+          "file": "parva-3\\adhyaya-198.json",
           "verse_count": 94
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-199.json",
+          "file": "parva-3\\adhyaya-199.json",
           "verse_count": 34
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-2.json",
+          "file": "parva-3\\adhyaya-2.json",
           "verse_count": 79
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-20.json",
+          "file": "parva-3\\adhyaya-20.json",
           "verse_count": 27
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-200.json",
+          "file": "parva-3\\adhyaya-200.json",
           "verse_count": 54
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-201.json",
+          "file": "parva-3\\adhyaya-201.json",
           "verse_count": 20
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-202.json",
+          "file": "parva-3\\adhyaya-202.json",
           "verse_count": 25
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-203.json",
+          "file": "parva-3\\adhyaya-203.json",
           "verse_count": 51
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-204.json",
+          "file": "parva-3\\adhyaya-204.json",
           "verse_count": 27
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-205.json",
+          "file": "parva-3\\adhyaya-205.json",
           "verse_count": 29
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-206.json",
+          "file": "parva-3\\adhyaya-206.json",
           "verse_count": 34
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-207.json",
+          "file": "parva-3\\adhyaya-207.json",
           "verse_count": 20
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-208.json",
+          "file": "parva-3\\adhyaya-208.json",
           "verse_count": 8
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-209.json",
+          "file": "parva-3\\adhyaya-209.json",
           "verse_count": 25
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-21.json",
+          "file": "parva-3\\adhyaya-21.json",
           "verse_count": 38
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-210.json",
+          "file": "parva-3\\adhyaya-210.json",
           "verse_count": 19
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-211.json",
+          "file": "parva-3\\adhyaya-211.json",
           "verse_count": 31
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-212.json",
+          "file": "parva-3\\adhyaya-212.json",
           "verse_count": 30
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-213.json",
+          "file": "parva-3\\adhyaya-213.json",
           "verse_count": 52
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-214.json",
+          "file": "parva-3\\adhyaya-214.json",
           "verse_count": 37
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-215.json",
+          "file": "parva-3\\adhyaya-215.json",
           "verse_count": 23
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-216.json",
+          "file": "parva-3\\adhyaya-216.json",
           "verse_count": 15
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-217.json",
+          "file": "parva-3\\adhyaya-217.json",
           "verse_count": 14
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-218.json",
+          "file": "parva-3\\adhyaya-218.json",
           "verse_count": 49
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-219.json",
+          "file": "parva-3\\adhyaya-219.json",
           "verse_count": 58
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-22.json",
+          "file": "parva-3\\adhyaya-22.json",
           "verse_count": 30
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-220.json",
+          "file": "parva-3\\adhyaya-220.json",
           "verse_count": 27
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-221.json",
+          "file": "parva-3\\adhyaya-221.json",
           "verse_count": 80
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-222.json",
+          "file": "parva-3\\adhyaya-222.json",
           "verse_count": 59
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-223.json",
+          "file": "parva-3\\adhyaya-223.json",
           "verse_count": 12
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-224.json",
+          "file": "parva-3\\adhyaya-224.json",
           "verse_count": 17
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-225.json",
+          "file": "parva-3\\adhyaya-225.json",
           "verse_count": 31
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-226.json",
+          "file": "parva-3\\adhyaya-226.json",
           "verse_count": 22
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-227.json",
+          "file": "parva-3\\adhyaya-227.json",
           "verse_count": 24
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-228.json",
+          "file": "parva-3\\adhyaya-228.json",
           "verse_count": 29
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-229.json",
+          "file": "parva-3\\adhyaya-229.json",
           "verse_count": 29
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-23.json",
+          "file": "parva-3\\adhyaya-23.json",
           "verse_count": 51
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-230.json",
+          "file": "parva-3\\adhyaya-230.json",
           "verse_count": 31
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-231.json",
+          "file": "parva-3\\adhyaya-231.json",
           "verse_count": 21
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-232.json",
+          "file": "parva-3\\adhyaya-232.json",
           "verse_count": 21
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-233.json",
+          "file": "parva-3\\adhyaya-233.json",
           "verse_count": 21
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-234.json",
+          "file": "parva-3\\adhyaya-234.json",
           "verse_count": 28
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-235.json",
+          "file": "parva-3\\adhyaya-235.json",
           "verse_count": 25
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-236.json",
+          "file": "parva-3\\adhyaya-236.json",
           "verse_count": 15
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-237.json",
+          "file": "parva-3\\adhyaya-237.json",
           "verse_count": 15
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-238.json",
+          "file": "parva-3\\adhyaya-238.json",
           "verse_count": 49
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-239.json",
+          "file": "parva-3\\adhyaya-239.json",
           "verse_count": 26
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-24.json",
+          "file": "parva-3\\adhyaya-24.json",
           "verse_count": 16
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-240.json",
+          "file": "parva-3\\adhyaya-240.json",
           "verse_count": 47
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-241.json",
+          "file": "parva-3\\adhyaya-241.json",
           "verse_count": 37
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-242.json",
+          "file": "parva-3\\adhyaya-242.json",
           "verse_count": 24
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-243.json",
+          "file": "parva-3\\adhyaya-243.json",
           "verse_count": 24
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-244.json",
+          "file": "parva-3\\adhyaya-244.json",
           "verse_count": 16
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-245.json",
+          "file": "parva-3\\adhyaya-245.json",
           "verse_count": 34
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-246.json",
+          "file": "parva-3\\adhyaya-246.json",
           "verse_count": 36
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-247.json",
+          "file": "parva-3\\adhyaya-247.json",
           "verse_count": 47
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-248.json",
+          "file": "parva-3\\adhyaya-248.json",
           "verse_count": 17
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-249.json",
+          "file": "parva-3\\adhyaya-249.json",
           "verse_count": 13
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-25.json",
+          "file": "parva-3\\adhyaya-25.json",
           "verse_count": 26
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-250.json",
+          "file": "parva-3\\adhyaya-250.json",
           "verse_count": 9
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-251.json",
+          "file": "parva-3\\adhyaya-251.json",
           "verse_count": 21
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-252.json",
+          "file": "parva-3\\adhyaya-252.json",
           "verse_count": 27
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-253.json",
+          "file": "parva-3\\adhyaya-253.json",
           "verse_count": 26
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-254.json",
+          "file": "parva-3\\adhyaya-254.json",
           "verse_count": 21
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-255.json",
+          "file": "parva-3\\adhyaya-255.json",
           "verse_count": 59
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-256.json",
+          "file": "parva-3\\adhyaya-256.json",
           "verse_count": 30
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-257.json",
+          "file": "parva-3\\adhyaya-257.json",
           "verse_count": 10
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-258.json",
+          "file": "parva-3\\adhyaya-258.json",
           "verse_count": 16
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-259.json",
+          "file": "parva-3\\adhyaya-259.json",
           "verse_count": 40
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-26.json",
+          "file": "parva-3\\adhyaya-26.json",
           "verse_count": 18
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-260.json",
+          "file": "parva-3\\adhyaya-260.json",
           "verse_count": 15
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-261.json",
+          "file": "parva-3\\adhyaya-261.json",
           "verse_count": 55
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-262.json",
+          "file": "parva-3\\adhyaya-262.json",
           "verse_count": 41
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-263.json",
+          "file": "parva-3\\adhyaya-263.json",
           "verse_count": 43
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-264.json",
+          "file": "parva-3\\adhyaya-264.json",
           "verse_count": 73
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-265.json",
+          "file": "parva-3\\adhyaya-265.json",
           "verse_count": 30
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-266.json",
+          "file": "parva-3\\adhyaya-266.json",
           "verse_count": 68
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-267.json",
+          "file": "parva-3\\adhyaya-267.json",
           "verse_count": 54
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-268.json",
+          "file": "parva-3\\adhyaya-268.json",
           "verse_count": 40
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-269.json",
+          "file": "parva-3\\adhyaya-269.json",
           "verse_count": 14
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-27.json",
+          "file": "parva-3\\adhyaya-27.json",
           "verse_count": 25
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-270.json",
+          "file": "parva-3\\adhyaya-270.json",
           "verse_count": 29
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-271.json",
+          "file": "parva-3\\adhyaya-271.json",
           "verse_count": 27
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-272.json",
+          "file": "parva-3\\adhyaya-272.json",
           "verse_count": 26
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-273.json",
+          "file": "parva-3\\adhyaya-273.json",
           "verse_count": 33
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-274.json",
+          "file": "parva-3\\adhyaya-274.json",
           "verse_count": 31
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-275.json",
+          "file": "parva-3\\adhyaya-275.json",
           "verse_count": 69
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-276.json",
+          "file": "parva-3\\adhyaya-276.json",
           "verse_count": 13
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-277.json",
+          "file": "parva-3\\adhyaya-277.json",
           "verse_count": 41
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-278.json",
+          "file": "parva-3\\adhyaya-278.json",
           "verse_count": 32
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-279.json",
+          "file": "parva-3\\adhyaya-279.json",
           "verse_count": 23
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-28.json",
+          "file": "parva-3\\adhyaya-28.json",
           "verse_count": 37
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-280.json",
+          "file": "parva-3\\adhyaya-280.json",
           "verse_count": 33
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-281.json",
+          "file": "parva-3\\adhyaya-281.json",
           "verse_count": 108
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-282.json",
+          "file": "parva-3\\adhyaya-282.json",
           "verse_count": 44
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-283.json",
+          "file": "parva-3\\adhyaya-283.json",
           "verse_count": 16
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-284.json",
+          "file": "parva-3\\adhyaya-284.json",
           "verse_count": 39
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-285.json",
+          "file": "parva-3\\adhyaya-285.json",
           "verse_count": 17
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-286.json",
+          "file": "parva-3\\adhyaya-286.json",
           "verse_count": 20
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-287.json",
+          "file": "parva-3\\adhyaya-287.json",
           "verse_count": 29
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-288.json",
+          "file": "parva-3\\adhyaya-288.json",
           "verse_count": 19
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-289.json",
+          "file": "parva-3\\adhyaya-289.json",
           "verse_count": 23
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-29.json",
+          "file": "parva-3\\adhyaya-29.json",
           "verse_count": 35
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-290.json",
+          "file": "parva-3\\adhyaya-290.json",
           "verse_count": 26
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-291.json",
+          "file": "parva-3\\adhyaya-291.json",
           "verse_count": 28
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-292.json",
+          "file": "parva-3\\adhyaya-292.json",
           "verse_count": 27
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-293.json",
+          "file": "parva-3\\adhyaya-293.json",
           "verse_count": 23
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-294.json",
+          "file": "parva-3\\adhyaya-294.json",
           "verse_count": 43
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-295.json",
+          "file": "parva-3\\adhyaya-295.json",
           "verse_count": 17
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-296.json",
+          "file": "parva-3\\adhyaya-296.json",
           "verse_count": 43
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-297.json",
+          "file": "parva-3\\adhyaya-297.json",
           "verse_count": 74
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-298.json",
+          "file": "parva-3\\adhyaya-298.json",
           "verse_count": 28
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-299.json",
+          "file": "parva-3\\adhyaya-299.json",
           "verse_count": 29
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-3.json",
+          "file": "parva-3\\adhyaya-3.json",
           "verse_count": 33
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-30.json",
+          "file": "parva-3\\adhyaya-30.json",
           "verse_count": 50
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-31.json",
+          "file": "parva-3\\adhyaya-31.json",
           "verse_count": 42
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-32.json",
+          "file": "parva-3\\adhyaya-32.json",
           "verse_count": 40
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-33.json",
+          "file": "parva-3\\adhyaya-33.json",
           "verse_count": 58
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-34.json",
+          "file": "parva-3\\adhyaya-34.json",
           "verse_count": 85
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-35.json",
+          "file": "parva-3\\adhyaya-35.json",
           "verse_count": 21
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-36.json",
+          "file": "parva-3\\adhyaya-36.json",
           "verse_count": 34
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-37.json",
+          "file": "parva-3\\adhyaya-37.json",
           "verse_count": 41
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-38.json",
+          "file": "parva-3\\adhyaya-38.json",
           "verse_count": 45
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-39.json",
+          "file": "parva-3\\adhyaya-39.json",
           "verse_count": 30
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-4.json",
+          "file": "parva-3\\adhyaya-4.json",
           "verse_count": 10
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-40.json",
+          "file": "parva-3\\adhyaya-40.json",
           "verse_count": 61
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-41.json",
+          "file": "parva-3\\adhyaya-41.json",
           "verse_count": 26
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-42.json",
+          "file": "parva-3\\adhyaya-42.json",
           "verse_count": 42
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-43.json",
+          "file": "parva-3\\adhyaya-43.json",
           "verse_count": 38
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-44.json",
+          "file": "parva-3\\adhyaya-44.json",
           "verse_count": 32
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-45.json",
+          "file": "parva-3\\adhyaya-45.json",
           "verse_count": 38
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-46.json",
+          "file": "parva-3\\adhyaya-46.json",
           "verse_count": 41
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-47.json",
+          "file": "parva-3\\adhyaya-47.json",
           "verse_count": 12
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-48.json",
+          "file": "parva-3\\adhyaya-48.json",
           "verse_count": 41
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-49.json",
+          "file": "parva-3\\adhyaya-49.json",
           "verse_count": 43
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-5.json",
+          "file": "parva-3\\adhyaya-5.json",
           "verse_count": 20
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-50.json",
+          "file": "parva-3\\adhyaya-50.json",
           "verse_count": 31
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-51.json",
+          "file": "parva-3\\adhyaya-51.json",
           "verse_count": 29
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-52.json",
+          "file": "parva-3\\adhyaya-52.json",
           "verse_count": 24
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-53.json",
+          "file": "parva-3\\adhyaya-53.json",
           "verse_count": 21
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-54.json",
+          "file": "parva-3\\adhyaya-54.json",
           "verse_count": 38
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-55.json",
+          "file": "parva-3\\adhyaya-55.json",
           "verse_count": 13
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-56.json",
+          "file": "parva-3\\adhyaya-56.json",
           "verse_count": 18
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-57.json",
+          "file": "parva-3\\adhyaya-57.json",
           "verse_count": 23
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-58.json",
+          "file": "parva-3\\adhyaya-58.json",
           "verse_count": 34
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-59.json",
+          "file": "parva-3\\adhyaya-59.json",
           "verse_count": 25
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-6.json",
+          "file": "parva-3\\adhyaya-6.json",
           "verse_count": 22
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-60.json",
+          "file": "parva-3\\adhyaya-60.json",
           "verse_count": 38
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-61.json",
+          "file": "parva-3\\adhyaya-61.json",
           "verse_count": 125
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-62.json",
+          "file": "parva-3\\adhyaya-62.json",
           "verse_count": 43
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-63.json",
+          "file": "parva-3\\adhyaya-63.json",
           "verse_count": 24
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-64.json",
+          "file": "parva-3\\adhyaya-64.json",
           "verse_count": 19
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-65.json",
+          "file": "parva-3\\adhyaya-65.json",
           "verse_count": 37
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-66.json",
+          "file": "parva-3\\adhyaya-66.json",
           "verse_count": 26
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-67.json",
+          "file": "parva-3\\adhyaya-67.json",
           "verse_count": 22
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-68.json",
+          "file": "parva-3\\adhyaya-68.json",
           "verse_count": 24
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-69.json",
+          "file": "parva-3\\adhyaya-69.json",
           "verse_count": 34
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-7.json",
+          "file": "parva-3\\adhyaya-7.json",
           "verse_count": 24
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-70.json",
+          "file": "parva-3\\adhyaya-70.json",
           "verse_count": 39
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-71.json",
+          "file": "parva-3\\adhyaya-71.json",
           "verse_count": 34
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-72.json",
+          "file": "parva-3\\adhyaya-72.json",
           "verse_count": 30
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-73.json",
+          "file": "parva-3\\adhyaya-73.json",
           "verse_count": 28
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-74.json",
+          "file": "parva-3\\adhyaya-74.json",
           "verse_count": 24
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-75.json",
+          "file": "parva-3\\adhyaya-75.json",
           "verse_count": 27
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-76.json",
+          "file": "parva-3\\adhyaya-76.json",
           "verse_count": 19
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-77.json",
+          "file": "parva-3\\adhyaya-77.json",
           "verse_count": 29
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-78.json",
+          "file": "parva-3\\adhyaya-78.json",
           "verse_count": 23
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-79.json",
+          "file": "parva-3\\adhyaya-79.json",
           "verse_count": 29
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-8.json",
+          "file": "parva-3\\adhyaya-8.json",
           "verse_count": 23
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-80.json",
+          "file": "parva-3\\adhyaya-80.json",
           "verse_count": 133
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-81.json",
+          "file": "parva-3\\adhyaya-81.json",
           "verse_count": 178
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-82.json",
+          "file": "parva-3\\adhyaya-82.json",
           "verse_count": 143
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-83.json",
+          "file": "parva-3\\adhyaya-83.json",
           "verse_count": 114
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-84.json",
+          "file": "parva-3\\adhyaya-84.json",
           "verse_count": 20
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-85.json",
+          "file": "parva-3\\adhyaya-85.json",
           "verse_count": 23
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-86.json",
+          "file": "parva-3\\adhyaya-86.json",
           "verse_count": 24
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-87.json",
+          "file": "parva-3\\adhyaya-87.json",
           "verse_count": 15
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-88.json",
+          "file": "parva-3\\adhyaya-88.json",
           "verse_count": 30
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-89.json",
+          "file": "parva-3\\adhyaya-89.json",
           "verse_count": 22
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-9.json",
+          "file": "parva-3\\adhyaya-9.json",
           "verse_count": 12
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-90.json",
+          "file": "parva-3\\adhyaya-90.json",
           "verse_count": 24
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-91.json",
+          "file": "parva-3\\adhyaya-91.json",
           "verse_count": 28
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-92.json",
+          "file": "parva-3\\adhyaya-92.json",
           "verse_count": 22
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-93.json",
+          "file": "parva-3\\adhyaya-93.json",
           "verse_count": 27
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-94.json",
+          "file": "parva-3\\adhyaya-94.json",
           "verse_count": 27
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-95.json",
+          "file": "parva-3\\adhyaya-95.json",
           "verse_count": 24
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-96.json",
+          "file": "parva-3\\adhyaya-96.json",
           "verse_count": 20
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-97.json",
+          "file": "parva-3\\adhyaya-97.json",
           "verse_count": 27
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-98.json",
+          "file": "parva-3\\adhyaya-98.json",
           "verse_count": 24
         },
         {
           "number": 3,
-          "file": "parva-3/adhyaya-99.json",
+          "file": "parva-3\\adhyaya-99.json",
           "verse_count": 21
         }
       ],
       "completeness_score": 100,
       "status": "GOLD",
       "note": "Gold chapter files deleted 2026-04-25 (were mock data). Real KMG silver data at data/2-silver/mahabharata/parva-1/. Pipeline not yet run. See backlog MBH-DATA-* tasks.",
-      "last_promoted": "2026-08-22"
+      "last_promoted": "2026-10-07"
     },
     {
       "book_id": "bhagavata-purana",
@@ -3372,8 +3319,8 @@
         }
       ],
       "completeness_score": 100,
-      "status": "SILVER",
-      "last_promoted": "2026-04-25"
+      "status": "GOLD",
+      "last_promoted": "2026-10-07"
     },
     {
       "book_id": "vishnu-purana",
