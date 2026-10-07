@@ -1,4 +1,4 @@
-﻿import Link from 'next/link'
+import Link from 'next/link'
 import { getTranslations } from 'next-intl/server'
 import { getLibraryStats, getVedicHierarchy } from '@/lib/texts'
 import { setRequestLocale } from 'next-intl/server'
@@ -139,7 +139,7 @@ function BookCard({ book, locale }: { book: Record<string, unknown>, locale: str
           {isAvailable && <span className="text-[9px] font-bold text-amber-600 dark:text-amber-500 bg-amber-50 dark:bg-amber-950/30 px-2 py-0.5 rounded-md">100% GOLD</span>}
         </div>
 
-        <Link href={`/${book.slug as string}/1`} className="block mb-2">
+        <Link href={`/${book.slug as string}/${book.hasPreface ? 'preface' : '1'}`} className="block mb-2">
           <h3 className="text-lg font-serif font-black text-stone-900 dark:text-stone-100 leading-tight group-hover:text-orange-700 dark:group-hover:text-orange-400 transition-colors line-clamp-2">
             {String(name)}
           </h3>
@@ -159,7 +159,7 @@ function BookCard({ book, locale }: { book: Record<string, unknown>, locale: str
             <div className="text-lg font-serif font-black text-stone-900 dark:text-stone-100 leading-none mt-0.5">{String(book.totalChapters)}</div>
           </div>
           <Link
-            href={`/${book.slug as string}/1`}
+            href={`/${book.slug as string}/${book.hasPreface ? 'preface' : '1'}`}
             className="flex items-center gap-1.5 px-4 py-2 bg-stone-900 group-hover:bg-orange-600 text-white text-[10px] uppercase tracking-wider font-bold rounded-lg transition-all shadow-sm"
           >
             Read <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>

@@ -1,4 +1,4 @@
-﻿import { getLiveScholars } from "./scholars"
+import { getLiveScholars } from "./scholars"
 /**
  * Vishwa-Vani: Vedic Wikipedia Data Registry
  * 
@@ -64,6 +64,10 @@ export interface VedicText {
       note?: string
     }
   }
+  /** Indicates if a structural Start/Preface page exists for the book */
+  hasPreface?: boolean
+  /** Indicates if a structural End/Postface page exists for the book */
+  hasPostface?: boolean
 }
 
 export const VEDIC_LIBRARY: VedicText[] = [
@@ -71,6 +75,8 @@ export const VEDIC_LIBRARY: VedicText[] = [
     slug: 'bhagavad-gita',
     dataPrefix: 'bhagavad-gita',
     lakeFile: 'vedic-lake.db',
+    hasPreface: true,
+    hasPostface: true,
     name: 'Bhagavad Gita',
     nameHi: 'à¤¶à¥à¤°à¥€à¤®à¤¦ à¤­à¤—à¤µà¤¦ à¤—à¥€à¤¤à¤¾',
     nameMr: 'à¤¶à¥à¤°à¥€à¤®à¤¦ à¤­à¤—à¤µà¤¦ à¤—à¥€à¤¤à¤¾',
@@ -575,12 +581,19 @@ export function getVedicHierarchy() {
 /** Build all static paths for Next.js generateStaticParams */
 export function getAllTextChapterPaths(): Array<{ text: string; chapter: string }> {
     return getAvailableTexts()
-      .flatMap(t =>
-        Array.from({ length: t.totalChapters }, (_, i) => ({
+      .flatMap(t => {
+        const paths = Array.from({ length: t.totalChapters }, (_, i) => ({
           text: t.slug,
           chapter: String(i + 1),
-        }))
-      )
+        }));
+        if (t.hasPreface) {
+          paths.push({ text: t.slug, chapter: 'preface' });
+        }
+        if (t.hasPostface) {
+          paths.push({ text: t.slug, chapter: 'postface' });
+        }
+        return paths;
+      })
 }
 
 

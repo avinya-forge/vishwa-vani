@@ -240,7 +240,7 @@ export class VedicDataService {
       nextChapter: currentChapter < textMetadata.totalChapters ? {
         slug: `/${textMetadata.slug}/${currentChapter + 1}`,
         title: textMetadata.chapterNames?.[String(currentChapter + 1)] || `Chapter ${currentChapter + 1}`
-      } : undefined,
+      } : textMetadata.hasPostface ? { slug: `/${textMetadata.slug}/postface`, title: 'Post-Context & Impact' } : undefined,
       totalChapters: textMetadata.totalChapters,
       currentChapter
     };
