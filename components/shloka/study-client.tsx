@@ -623,7 +623,7 @@ export default function StudyClient({
       <div className="sticky top-[3.5rem] z-40 bg-white/90 dark:bg-stone-900/90 backdrop-blur-md border-b border-stone-100 dark:border-stone-800 shadow-sm">
         <div className="max-w-[1400px] mx-auto px-3 sm:px-6 flex flex-col md:flex-row items-center justify-between py-2.5 gap-3 md:gap-2">
 
-          {/* Left group — progress + scholars + language */}
+          {/* Left group — progress + commentary toggles */}
           <div className="flex items-center gap-3 w-full md:w-auto overflow-x-auto pb-1.5 md:pb-0 scrollbar-none">
 
             {/* Progress indicator */}
@@ -636,60 +636,83 @@ export default function StudyClient({
             {/* Divider */}
             <div className="hidden sm:block w-px h-4 bg-stone-200 dark:bg-stone-700 flex-shrink-0" />
 
-            {/* Scholar selector prominence */}
-            <div className="flex items-center gap-2 flex-shrink-0">
-              <span data-testid="scholars-counter" className="text-[10px] font-black uppercase tracking-widest text-orange-500/60 dark:text-orange-400/40 hidden xs:inline">Scholars {scholarSelection.length}/2</span>
-              <div className="flex gap-1" role="group" aria-label="Scholar Selection">
-                {availableScholars.filter(s => s !== 'none').map((author, _idx, _arr) => {
-                  const meta = getScholarMeta(author)
-                  const isSelected = scholarSelection.includes(author)
-                  return (
-                    <button
-                      key={author}
-                      id={`scholar-btn-${author}`}
-                      role="switch"
-                      aria-checked={isSelected}
-                      aria-label={`Toggle commentary by ${meta.label}`}
-                      onClick={() => toggleScholar(author)}
-                      onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleScholar(author) } }}
-                      className={`px-3 py-1.5 rounded-xl border text-[11px] font-bold transition-all flex-shrink-0 flex items-center gap-2 ${
-                        isSelected
-                           ? 'bg-orange-600 border-orange-600 text-white shadow-lg shadow-orange-200 dark:shadow-none'
-                           : 'bg-white dark:bg-stone-800 border-stone-200 dark:border-stone-700 text-stone-600 dark:text-stone-400 font-black'
-                      }`}
-                    >
-                      <span className="text-xs">{meta.icon}</span>
-                      <span className="hidden xs:inline text-[9px] uppercase tracking-tighter">{meta.label}</span>
-                    </button>
-                  )
-                })}
-              </div>
-            </div>
+            {/* Commentary Toggle & Filters */}
+            <div className="flex items-center gap-2 flex-shrink-0 bg-stone-50 dark:bg-stone-800/50 p-1 rounded-xl border border-stone-200 dark:border-stone-700">
+              
+              <button
+                onClick={() => setScholarSelection(scholarSelection.length > 0 ? [] : [availableScholars.filter(s => s !== 'none')[0] || 'none'])}
+                className={`px-3 py-1.5 rounded-lg text-[11px] font-bold uppercase tracking-wide flex items-center gap-2 transition-all ${
+                  scholarSelection.length > 0 
+                  ? 'bg-orange-600 text-white shadow-sm' 
+                  : 'bg-white dark:bg-stone-800 text-stone-500 hover:text-stone-700 dark:hover:text-stone-300'
+                }`}
+              >
+                <div className={`w-1.5 h-1.5 rounded-full ${scholarSelection.length > 0 ? 'bg-white' : 'bg-stone-400'}`} />
+                Commentary
+              </button>
 
-            {/* Divider */}
-            <div className="w-px h-4 bg-stone-200 dark:bg-stone-700 flex-shrink-0" />
+              {scholarSelection.length > 0 && (
+                <>
+                  <div className="w-px h-4 bg-stone-300 dark:bg-stone-600 mx-1" />
+                  
+                  {/* Language Selector */}
+                  <div className="flex gap-0.5 bg-stone-100 dark:bg-stone-800 p-0.5 rounded-lg">
+                    {availableLanguages.filter(l => l !== 'all').map((lang) => (
+                      <button
+                        key={lang}
+                        onClick={() => updateLanguage(lang)}
+                        className={`px-2 py-1 rounded-md text-[10px] font-black uppercase tracking-tight transition-all ${
+                          languageSelection === lang
+                            ? 'bg-white dark:bg-stone-700 text-orange-600 dark:text-orange-400 shadow-sm'
+                            : 'text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300'
+                        }`}
+                      >
+                        {lang.toUpperCase()}
+                      </button>
+                    ))}
+                  </div>
 
-            {/* Language selector */}
-            <div className="flex items-center gap-1.5 flex-shrink-0">
-              <span className="text-[10px] font-bold uppercase tracking-widest text-stone-400 dark:text-stone-500 hidden sm:inline">Lang</span>
-              <div className="flex gap-0.5 bg-stone-100 dark:bg-stone-800 p-0.5 rounded-lg border border-stone-200 dark:border-stone-700" role="group" aria-label="Language selection">
-                {availableLanguages.map((lang) => {
-                  const isSelected = languageSelection === lang
-                  return (
-                    <button
-                      key={lang}
-                      onClick={() => updateLanguage(lang)}
-                      className={`px-2.5 py-1 rounded-md text-[10px] font-black uppercase tracking-tight transition-all ${
-                        isSelected
-                          ? 'bg-white dark:bg-stone-700 text-orange-600 dark:text-orange-400 shadow-sm'
-                          : 'text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300'
-                      }`}
-                    >
-                      {lang === 'all' ? 'All' : lang.toUpperCase()}
-                    </button>
-                  )
-                })}
-              </div>
+                  <div className="w-px h-4 bg-stone-300 dark:bg-stone-600 mx-1" />
+
+                  {/* Scholar Selector */}
+                  <div className="flex gap-1" role="group" aria-label="Scholar Selection">
+                    {availableScholars.filter(s => s !== 'none').map(author => {
+                      const meta = getScholarMeta(author)
+                      const isSelected = scholarSelection.includes(author)
+                      
+                      // Interlinking: Check if scholar has commentary in selected language
+                      const hasLang = verses.some((v: unknown) => {
+                        const layers = (v as Record<string, unknown>).layers as unknown[]
+                        return layers?.some((l: unknown) => {
+                          const layer = l as Record<string, unknown>
+                          return layer.type === 'commentary' && 
+                                 normalizeScholarKey(layer.author as string) === author && 
+                                 layer.lang === languageSelection
+                        })
+                      })
+
+                      return (
+                        <button
+                          key={author}
+                          onClick={() => toggleScholar(author)}
+                          disabled={!hasLang}
+                          title={!hasLang ? `Not available in ${getLanguageLabel(languageSelection)}` : meta.label}
+                          className={`px-2.5 py-1 rounded-lg text-[10px] font-bold transition-all flex items-center gap-1.5 ${
+                            isSelected
+                              ? 'bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-400 border border-orange-200 dark:border-orange-800'
+                              : !hasLang 
+                                ? 'opacity-40 cursor-not-allowed grayscale bg-transparent'
+                                : 'bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 text-stone-600 dark:text-stone-400 hover:border-stone-300'
+                          }`}
+                        >
+                          <span className="text-xs">{meta.icon}</span>
+                          <span className="hidden xs:inline uppercase tracking-tighter">{meta.label}</span>
+                        </button>
+                      )
+                    })}
+                  </div>
+                </>
+              )}
             </div>
           </div>
 
