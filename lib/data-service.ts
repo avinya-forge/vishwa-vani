@@ -182,14 +182,16 @@ export class VedicDataService {
       const dataPath = path.join(process.cwd(), 'data', '3-gold', textSlug, shardFile);
       if (fs.existsSync(dataPath)) {
         const rawData = fs.readFileSync(dataPath, 'utf8');
-        return JSON.parse(rawData);
+        const parsed = JSON.parse(rawData);
+        return Array.isArray(parsed) ? parsed : (parsed.verses || []);
       }
 
       // Fallback
       const fallbackPath = path.join(process.cwd(), 'data', '3-gold', textSlug, `${textSlug}-chapter-${chapterNumber}.json`);
       if (fs.existsSync(fallbackPath)) {
         const rawData = fs.readFileSync(fallbackPath, 'utf8');
-        return JSON.parse(rawData);
+        const parsed = JSON.parse(rawData);
+        return Array.isArray(parsed) ? parsed : (parsed.verses || []);
       }
     } catch (error) {
       console.error('Error loading JSON data:', error);
