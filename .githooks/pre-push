@@ -7,15 +7,13 @@ echo "Running strict Lint and TypeScript compilation to guarantee CI safety..."
 echo ""
 
 echo "[1/2] Running ESLint..."
-npm run lint
-if [ True -ne 0 ]; then
+if ! npm run lint; then
     echo "❌ ESLint failed! Please fix the syntax/lint errors before pushing."
     exit 1
 fi
 
 echo "[2/2] Running TypeScript Compiler (tsc --noEmit)..."
-npx tsc --noEmit
-if [ True -ne 0 ]; then
+if ! npx tsc --noEmit; then
     echo "❌ TypeScript failed! Please fix the type errors before pushing."
     exit 1
 fi
