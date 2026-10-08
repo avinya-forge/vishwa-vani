@@ -331,7 +331,7 @@ export const VEDIC_LIBRARY: VedicText[] = [
   {
     slug: 'brahma-sutras',
     dataPrefix: 'brahma_sutras',
-    lakeFile: 'itihasa-lake.db',
+    lakeFile: 'vedic-lake.db',
     name: 'Brahma Sutras',
     nameHi: 'à¤¬à¥à¤°à¤¹à¥à¤® à¤¸à¥‚à¤¤à¥à¤°',
     nameMr: 'à¤¬à¥à¤°à¤¹à¥à¤® à¤¸à¥‚à¤¤à¥à¤°',

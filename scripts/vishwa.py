@@ -647,8 +647,8 @@ const PUBLIC_DIR = path.join(BASE_DIR, 'public');
 
 const SHARD_MAP = {
   'bhagavad-gita': 'vedic-lake.db',
-  'mahabharata': 'itihasa-lake.db',
-  'ramayana': 'itihasa-lake.db',
+  'mahabharata': 'vedic-lake.db',
+  'ramayana': 'vedic-lake.db',
   'vishnu_purana': 'purana-lake.db',
   'bhagavata_purana': 'purana-lake.db',
   'samskaras': 'ritual-node.db',
