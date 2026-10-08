@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+﻿#!/usr/bin/env bash
 # ==============================================================================
 # Vishwa-Vani Master Control Script
 # Single unified entrypoint for all operations: audit, pipeline, demo, test, etc.
@@ -8,7 +8,7 @@ set -e
 
 SHOW_HELP() {
     echo "=========================================================="
-    echo "📜 Vishwa-Vani Master Control CLI"
+    echo "ðŸ“œ Vishwa-Vani Master Control CLI"
     echo "=========================================================="
     echo "Usage: ./scripts/vishwa.sh [command] [args]"
     echo ""
@@ -28,46 +28,43 @@ CMD="${1:-menu}"
 
 case "$CMD" in
     demo|lan)
-        echo "🚀 Starting LAN Demo..."
+        echo "ðŸš€ Starting LAN Demo..."
         exec ./scripts/start-lan-demo.sh
         ;;
     audit)
-        echo "🔍 Running Project Status & Standards Audit..."
+        echo "ðŸ” Running Project Status & Standards Audit..."
         python3 scripts/project_status_audit.py
         node scripts/audit_standards.js --all
         ;;
     pipeline)
-        echo "⚙️ Running Data Pipeline..."
+        echo "âš™ï¸ Running Data Pipeline..."
         shift || true
         node scripts/run_pipeline.js "$@"
         ;;
     validate)
-        echo "🛡️ Validating Silver NVF Dataset..."
+        echo "ðŸ›¡ï¸ Validating Silver NVF Dataset..."
         shift || true
         node scripts/validate_silver.js "$@"
         ;;
     promote)
-        echo "🏆 Promoting Silver Shards to Gold..."
+        echo "ðŸ† Promoting Silver Shards to Gold..."
         shift || true
         node scripts/promote_to_gold.js "$@"
         ;;
     links)
-        echo "🔗 Generating Semantic Links..."
+        echo "ðŸ”— Generating Semantic Links..."
         python3 scripts/generate_semantic_links.py
         ;;
     test)
-        echo "🧪 Executing Full Quality Gates & Test Suite..."
-        npm test
-        npm run lint
-        npx tsc --noEmit
-        npm run build
+        echo "ðŸ§ª Executing Full Quality Gates & Test Suite..."
+        npm run verify
         ;;
     help|--help|-h)
         SHOW_HELP
         ;;
     menu|"")
         echo "=========================================================="
-        echo "📜 Vishwa-Vani Master Interactive CLI"
+        echo "ðŸ“œ Vishwa-Vani Master Interactive CLI"
         echo "=========================================================="
         echo "1) Start LAN Demo Server"
         echo "2) Run Status & Standards Audit"
@@ -86,7 +83,7 @@ case "$CMD" in
             4) node scripts/validate_silver.js --all ;;
             5) node scripts/promote_to_gold.js ;;
             6) python3 scripts/generate_semantic_links.py ;;
-            7) npm test && npm run lint && npx tsc --noEmit && npm run build ;;
+            7) npm run verify ;;
             8) echo "Exiting."; exit 0 ;;
             *) echo "Invalid option."; exit 1 ;;
         esac
@@ -97,3 +94,4 @@ case "$CMD" in
         exit 1
         ;;
 esac
+

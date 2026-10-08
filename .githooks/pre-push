@@ -1,26 +1,15 @@
-#!/bin/sh
+﻿#!/usr/bin/env bash
+# ==============================================================================
+# VISHWA-VANI: Pre-push Verification Hook
+# ==============================================================================
+
 echo "================================================="
 echo "🚀 VISHWA-VANI: Pre-push Verification Hook"
 echo "================================================="
-echo "Note: 'next build' is skipped locally due to the Windows SWC native cache bug."
-echo "Running strict Lint and TypeScript compilation to guarantee CI safety..."
-echo ""
+echo "Running strict verification suite (Lint, TSC, Jest) via npm run verify..."
 
-echo "[1/3] Running ESLint..."
-if ! npm run lint; then
-    echo "❌ ESLint failed! Please fix the syntax/lint errors before pushing."
-    exit 1
-fi
-
-echo "[2/3] Running TypeScript Compiler (tsc --noEmit)..."
-if ! npx tsc --noEmit; then
-    echo "❌ TypeScript failed! Please fix the type errors before pushing."
-    exit 1
-fi
-
-echo "[3/3] Running Unit Tests (npm test -- --ci)..."
-if ! npm test -- --ci; then
-    echo "❌ Unit tests failed! Please fix failing tests before pushing."
+if ! npm run verify; then
+    echo "❌ Verification failed! Please fix the errors before pushing."
     exit 1
 fi
 
