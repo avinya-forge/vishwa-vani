@@ -24,7 +24,7 @@ function getRateLimit(ip: string, routeName: string, maxRequests: number, window
   return { limited: false }
 }
 
-export function middleware(request: NextRequest) {
+export default function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl
   const ip = (request as unknown as { ip: string }).ip || request.headers.get('x-forwarded-for')?.split(',')[0] || '127.0.0.1'
 
