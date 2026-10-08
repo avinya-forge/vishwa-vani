@@ -85,7 +85,7 @@ export const VEDIC_LIBRARY: VedicText[] = [
     description: 'The sacred dialogue between Arjuna and Krishna on the battlefield of Kurukshetra. The foundation of Hindu philosophy, exploring duty, devotion, and liberation.',
     category: 'itihas',
     available: true,
-    storage: 'json',
+    storage: 'lake',
     chapterNames: {
       '1': 'Arjuna Visada Yoga â€” The Despondency of Arjuna',
       '2': 'Sankhya Yoga â€” The Way of Knowledge',
@@ -170,7 +170,7 @@ export const VEDIC_LIBRARY: VedicText[] = [
     description: 'One of the shortest and most profound Upanishads. 18 verses addressing the nature of the Self and the universe.',
     category: 'upanishad',
     available: true,
-    storage: 'json',
+    storage: 'lake',
     chapterNames: { '1': 'Isha Upanishad â€” Complete Text' },
     chapterNamesHi: { '1': 'à¤ˆà¤¶à¤¾à¤µà¤¾à¤¸à¥à¤¯à¥‹à¤ªà¤¨à¤¿à¤·à¤¦à¥ â€” à¤ªà¥‚à¤°à¥à¤£ à¤ªà¤¾à¤ ' },
     chapterNamesMr: { '1': 'à¤ˆà¤¶à¤¾à¤µà¤¾à¤¸à¥à¤¯à¥‹à¤ªà¤¨à¤¿à¤·à¤¦à¥ â€” à¤ªà¥‚à¤°à¥à¤£ à¤ªà¤¾à¤ ' },
@@ -197,7 +197,7 @@ export const VEDIC_LIBRARY: VedicText[] = [
     description: 'Explores the nature of Brahman (the ultimate reality) through the question: By whose will does the mind think?',
     category: 'upanishad',
     available: true, // Set true only after: PIPE-KENA-1â†’6 pass + node scripts/audit_gold.js kena-upanishad shows 100%
-    storage: 'json',  // Pipeline: data/2-silver/kena-upanishad â†’ validate â†’ data/3-gold/kena-upanishad
+    storage: 'lake',  // Pipeline: data/2-silver/kena-upanishad â†’ validate â†’ data/3-gold/kena-upanishad
     chapterNames: { '1': 'Kena Upanishad â€” Complete Text' },
     chapterNamesHi: { '1': 'à¤•à¥‡à¤¨à¥‹à¤ªà¤¨à¤¿à¤·à¤¦à¥ â€” à¤ªà¥‚à¤°à¥à¤£ à¤ªà¤¾à¤ ' },
     chapterNamesMr: { '1': 'à¤•à¥‡à¤¨à¥‹à¤ªà¤¨à¤¿à¤·à¤¦à¥ â€” à¤ªà¥‚à¤°à¥à¤£ à¤ªà¤¾à¤ ' },
@@ -213,7 +213,7 @@ export const VEDIC_LIBRARY: VedicText[] = [
     description: 'The foundational text of Raja Yoga, consisting of 196 sutras (aphorisms) on the theory and practice of yoga.',
     category: 'other',
     available: true,
-    storage: 'json',
+    storage: 'lake',
     chapterNames: {
       '1': 'Samadhi Pada',
       '2': 'Sadhana Pada',
@@ -255,7 +255,7 @@ export const VEDIC_LIBRARY: VedicText[] = [
     description: 'The longest epic poem in the world, chronicling the Kurukshetra War and the fates of the Kaurava and Pandava princes.',
     category: 'itihas',
     available: true,
-    storage: 'json',
+    storage: 'lake',
     chapterNames: {
       '1': 'Adi Parva', '2': 'Sabha Parva', '3': 'Vana Parva', '4': 'Virata Parva', '5': 'Udyoga Parva',
       '6': 'Bhishma Parva', '7': 'Drona Parva', '8': 'Karna Parva', '9': 'Shalya Parva', '10': 'Sauptika Parva',
@@ -300,7 +300,7 @@ export const VEDIC_LIBRARY: VedicText[] = [
   {
     slug: 'vishnu-purana',
     dataPrefix: 'vishnu-purana',
-    storage: 'json',
+    storage: 'lake',
     name: 'Vishnu Purana',
     nameHi: 'à¤µà¤¿à¤·à¥à¤£à¥ à¤ªà¥à¤°à¤¾à¤£',
     nameMr: 'à¤µà¤¿à¤·à¥à¤£à¥ à¤ªà¥à¤°à¤¾à¤£',
@@ -356,7 +356,7 @@ export const VEDIC_LIBRARY: VedicText[] = [
     description: 'Practical guide to the 16 life-cycle rites from conception to last rites, including Mantras and procedures.',
     category: 'other',
     available: true,
-    storage: 'json',
+    storage: 'lake',
     chapterNames: { '1': 'Complete Ritual List' },
     chapterNamesHi: { '1': 'à¤¸à¤‚à¤ªà¥‚à¤°à¥à¤£ à¤¸à¤‚à¤¸à¥à¤•à¤¾à¤° à¤¸à¥‚à¤šà¥€' },
     chapterNamesMr: { '1': 'à¤¸à¤‚à¤ªà¥‚à¤°à¥à¤£ à¤¸à¤‚à¤¸à¥à¤•à¤¾à¤° à¤¸à¥‚à¤šà¥€' },
@@ -372,7 +372,7 @@ export const VEDIC_LIBRARY: VedicText[] = [
     description: 'A poetic masterpiece focusing on Bhakti (devotion) towards Krishna, covering cosmos, evolution, and divine play. Currently containing Canto 1.',
     category: 'purana',
     available: true,
-    storage: 'json',
+    storage: 'lake',
     chapterNames: { '1': 'Chapter 1', '2': 'Chapter 2', '3': 'Chapter 3', '4': 'Chapter 4', '5': 'Chapter 5', '6': 'Chapter 6', '7': 'Chapter 7', '8': 'Chapter 8', '9': 'Chapter 9', '10': 'Chapter 10', '11': 'Chapter 11', '12': 'Chapter 12', '13': 'Chapter 13', '14': 'Chapter 14', '15': 'Chapter 15', '16': 'Chapter 16', '17': 'Chapter 17', '18': 'Chapter 18', '19': 'Chapter 19' },
     chapterNamesHi: { '1': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 1', '2': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 2', '3': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 3', '4': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 4', '5': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 5', '6': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 6', '7': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 7', '8': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 8', '9': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 9', '10': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 10', '11': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 11', '12': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 12', '13': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 13', '14': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 14', '15': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 15', '16': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 16', '17': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 17', '18': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 18', '19': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 19' },
     chapterNamesMr: { '1': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 1', '2': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 2', '3': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 3', '4': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 4', '5': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 5', '6': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 6', '7': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 7', '8': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 8', '9': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 9', '10': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 10', '11': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 11', '12': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 12', '13': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 13', '14': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 14', '15': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 15', '16': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 16', '17': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 17', '18': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 18', '19': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 19' }
@@ -388,7 +388,7 @@ export const VEDIC_LIBRARY: VedicText[] = [
     description: 'Dialogues between Vishnu and Garuda on life after death, cosmology, and the path to liberation.',
     category: 'purana',
     available: true,
-    storage: 'json',
+    storage: 'lake',
     chapterNames: { '1': 'Achara Khanda', '2': 'Preta Khanda' },
     chapterNamesHi: { '1': 'à¤†à¤šà¤¾à¤° à¤•à¤¾à¤£à¥à¤¡', '2': 'à¤ªà¥à¤°à¥‡à¤¤ à¤•à¤¾à¤£à¥à¤¡' },
     chapterNamesMr: { '1': 'à¤†à¤šà¤¾à¤° à¤•à¤¾à¤£à¥à¤¡', '2': 'à¤ªà¥à¤°à¥‡à¤¤ à¤•à¤¾à¤£à¥à¤¡' },
