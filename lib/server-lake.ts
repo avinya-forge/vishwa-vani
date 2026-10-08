@@ -1,4 +1,4 @@
-import Database from 'better-sqlite3';
+﻿import Database from 'better-sqlite3';
 import path from 'path';
 import crypto from 'crypto';
 import type { NVFFragment } from './nvf';
@@ -46,7 +46,7 @@ export async function getVersesFromLakeServer(textSlug: string, chapter: number,
     if (!cachedDb) {
       cachedDb = new Database(dbPath, { readonly: true });
     }
-    const query = SELECT content FROM verses WHERE text_slug = ? AND chapter = ? ORDER BY verse ASC;
+    const query = `SELECT content FROM verses WHERE text_slug = ? AND chapter = ? ORDER BY verse ASC`;
     const rows = cachedDb.prepare(query).all(textSlug, chapter);
 
     const fragments = rows.map((row: unknown) => {
@@ -66,3 +66,4 @@ export async function getVersesFromLakeServer(textSlug: string, chapter: number,
     throw err;
   }
 }
+
