@@ -1,6 +1,7 @@
 ﻿import Database from 'better-sqlite3';
 import path from 'path';
 import crypto from 'crypto';
+import fs from 'fs';
 import type { NVFFragment } from './nvf';
 import { migrateToNVF } from './nvf';
 
@@ -40,7 +41,6 @@ function decrypt(encryptedText: string): string {
 let cachedDb: Database.Database | null = null;
 
 export async function getVersesFromLakeServer(textSlug: string, chapter: number, lakeFile: string = 'vedic-lake.db'): Promise<NVFFragment[]> {
-  const fs = require('fs');
   let dbPath = path.join(process.cwd(), 'public', lakeFile);
   
   // Robust path resolution for Vercel/Next.js CI worker environments
@@ -59,9 +59,9 @@ export async function getVersesFromLakeServer(textSlug: string, chapter: number,
   }
 
   if (!fs.existsSync(dbPath)) {
-    console.error([ServerLake] FATAL: vedic-lake.db NOT FOUND. Searched paths starting from: );
+    console.error('[ServerLake] FATAL: vedic-lake.db NOT FOUND. Searched paths starting from: ' + process.cwd());
     // Return empty to allow build to continue, or throw. We throw to fail loud, but with better context.
-    throw new Error(SQLITE_CANTOPEN: DB file missing at resolved path: );
+    throw new Error('SQLITE_CANTOPEN: DB file missing at resolved path: ' + dbPath);
   }
   
   try {
