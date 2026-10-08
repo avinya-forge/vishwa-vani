@@ -20,8 +20,3 @@ Our goal is to systematically digitize all major Vedic texts. We use a strict 3-
 
 ## Rebuilding the Lake
 Once the Gold JSON files are created, we run python rebuild_lake.py. This script takes all the JSON files and compiles them into a single, highly optimized SQLite database (public/vedic-lake.db) that the Next.js app queries at runtime.
-
-## Planned Learning Paths
-As we gather more books, we will extract specific themes to create learning paths for the UI:
-*   **Daily Pooja Path:** Extracted from Stotras and Samskaras.
-*   **Festivals & Calendar:** Extracted dynamically from the Puranas.

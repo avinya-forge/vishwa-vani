@@ -52,3 +52,8 @@
 - [x] EPIC-BOOK-CONTEXT: Added fluff-free historical contexts (Preface/Postface).
 - [x] EPIC-COMMENTARY-EXPANSION: Added Prabhupada, Vishvanatha, Vivekananda.
 - [x] EPIC-UI-NAVIGATION: Streamlined Navbar and added Daily Upliftment widget.
+
+
+## [P1-UI] Feature: Vedic Learning Paths
+- Build a UI module for "Daily Pooja Path" dynamically generated from Stotras and Samskaras.
+- Build a UI module for "Festivals & Calendar" generated dynamically from the Puranas.

@@ -40,11 +40,35 @@ function decrypt(encryptedText: string): string {
 let cachedDb: Database.Database | null = null;
 
 export async function getVersesFromLakeServer(textSlug: string, chapter: number, lakeFile: string = 'vedic-lake.db'): Promise<NVFFragment[]> {
-  const dbPath = path.join(process.cwd(), 'public', lakeFile);
+  const fs = require('fs');
+  let dbPath = path.join(process.cwd(), 'public', lakeFile);
+  
+  // Robust path resolution for Vercel/Next.js CI worker environments
+  if (!fs.existsSync(dbPath)) {
+    const fallbacks = [
+      path.join(process.cwd(), '..', 'public', lakeFile),
+      path.join(process.cwd(), '..', '..', 'public', lakeFile),
+      path.join('/vercel/path0/public', lakeFile)
+    ];
+    for (const fb of fallbacks) {
+      if (fs.existsSync(fb)) {
+        dbPath = fb;
+        break;
+      }
+    }
+  }
+
+  if (!fs.existsSync(dbPath)) {
+    console.error([ServerLake] FATAL: vedic-lake.db NOT FOUND. Searched paths starting from: );
+    // Return empty to allow build to continue, or throw. We throw to fail loud, but with better context.
+    throw new Error(SQLITE_CANTOPEN: DB file missing at resolved path: );
+  }
   
   try {
     if (!cachedDb) {
-      cachedDb = new Database(dbPath, { readonly: true });
+      // Load DB entirely into memory to prevent file lock/descriptor crashes during multi-worker CI builds
+      const dbBuffer = fs.readFileSync(dbPath);
+      cachedDb = new Database(dbBuffer);
     }
     const query = `SELECT content FROM verses WHERE text_slug = ? AND chapter = ? ORDER BY verse ASC`;
     const rows = cachedDb.prepare(query).all(textSlug, chapter);
