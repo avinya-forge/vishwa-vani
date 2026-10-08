@@ -37,14 +37,17 @@ function decrypt(encryptedText: string): string {
  * Extracts data from binary SQLite stores and normalizes it into 
  * Normalized Vedic Fragment (NVF) format for the UI.
  */
+let cachedDb: Database.Database | null = null;
+
 export async function getVersesFromLakeServer(textSlug: string, chapter: number, lakeFile: string = 'vedic-lake.db'): Promise<NVFFragment[]> {
   const dbPath = path.join(process.cwd(), 'public', lakeFile);
   
   try {
-    const db = new Database(dbPath, { readonly: true });
-    const query = `SELECT content FROM verses WHERE text_slug = ? AND chapter = ? ORDER BY verse ASC`;
-    const rows = db.prepare(query).all(textSlug, chapter);
-    db.close();
+    if (!cachedDb) {
+      cachedDb = new Database(dbPath, { readonly: true });
+    }
+    const query = SELECT content FROM verses WHERE text_slug = ? AND chapter = ? ORDER BY verse ASC;
+    const rows = cachedDb.prepare(query).all(textSlug, chapter);
 
     const fragments = rows.map((row: unknown) => {
       try {

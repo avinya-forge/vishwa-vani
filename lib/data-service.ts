@@ -179,8 +179,7 @@ export class VedicDataService {
         }
       }
 
-      const goldDir = '3-' + 'gold';
-      const dataPath = path.join(process.cwd(), 'data', goldDir, textSlug, shardFile);
+            const dataPath = [process.cwd(), 'data', '3-gold', textSlug, shardFile].join(path.sep);
       if (fs.existsSync(dataPath)) {
         const rawData = fs.readFileSync(dataPath, 'utf8');
         const parsed = JSON.parse(rawData);
