@@ -6,15 +6,21 @@ echo "Note: 'next build' is skipped locally due to the Windows SWC native cache 
 echo "Running strict Lint and TypeScript compilation to guarantee CI safety..."
 echo ""
 
-echo "[1/2] Running ESLint..."
+echo "[1/3] Running ESLint..."
 if ! npm run lint; then
     echo "❌ ESLint failed! Please fix the syntax/lint errors before pushing."
     exit 1
 fi
 
-echo "[2/2] Running TypeScript Compiler (tsc --noEmit)..."
+echo "[2/3] Running TypeScript Compiler (tsc --noEmit)..."
 if ! npx tsc --noEmit; then
     echo "❌ TypeScript failed! Please fix the type errors before pushing."
+    exit 1
+fi
+
+echo "[3/3] Running Unit Tests (npm test -- --ci)..."
+if ! npm test -- --ci; then
+    echo "❌ Unit tests failed! Please fix failing tests before pushing."
     exit 1
 fi
 

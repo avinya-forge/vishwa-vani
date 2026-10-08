@@ -119,7 +119,7 @@ describe('VedicDataService', () => {
     // getChapterData makes exactly 2 readFileSync calls (isBookGoldTier + loadFromJson manifest)
     // and 1 existsSync + 1 readFileSync (actual data file) when the file is found.
     function injectVerseViaFs(verse: ReturnType<typeof makeVerse>) {
-      ;(fs.readFileSync as jest.Mock).mockReturnValueOnce(GOLD_MANIFEST)     // isBookGoldTier: manifest
+      // isBookGoldTier manifest read is skipped because storage === lake
       ;(fs.readFileSync as jest.Mock).mockReturnValueOnce(GOLD_MANIFEST)     // loadFromJson: manifest
       ;(fs.existsSync as jest.Mock).mockReturnValueOnce(true)                // file exists
       ;(fs.readFileSync as jest.Mock).mockReturnValueOnce(JSON.stringify([verse]))  // verse data
