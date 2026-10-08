@@ -22,7 +22,8 @@
     "audit:all": "npm run audit:gold && npm run audit:multilang && npm run audit:standards",
     "pipeline": "node scripts/run_pipeline.js",
     "pipeline:dry": "node scripts/run_pipeline.js --all --dry-run",
-    "strip": "node scripts/strip_placeholders.js"
+    "strip": "node scripts/strip_placeholders.js",
+    "prepare": "git config core.hooksPath .githooks"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
