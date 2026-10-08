@@ -57,3 +57,9 @@
 ## [P1-UI] Feature: Vedic Learning Paths
 - Build a UI module for "Daily Pooja Path" dynamically generated from Stotras and Samskaras.
 - Build a UI module for "Festivals & Calendar" generated dynamically from the Puranas.
+
+## [P1-ARCH] Database & AI Brain Scaling
+- **Evaluate Turso Edge Database Migration**: Move edic-lake.db to an Edge-hosted SQLite provider (like Turso) to keep the repository size small and query latency low. 
+  - *Constraints:* Must support end-to-end encryption, maintain absolute ownership/control of our data, and remain at zero (or near-zero) cost.
+- **Vectorize Gold Data**: Convert all Gold JSON shlokas into vector embeddings to power semantic AI search.
+  - *Constraints:* Use cost-free, self-hosted, or zero-cost tier vector solutions (e.g., local ChromaDB, Qdrant, or embedded vector search) to guarantee data privacy and zero cloud overhead.
