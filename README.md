@@ -49,5 +49,5 @@ Vishwa-Vani maintains a strictly organized, single-source-of-truth documentation
 2. **[DATA_PIPELINE.md](./docs/DATA_PIPELINE.md)**: Instructions on how books are processed from raw text (Bronze) to SQLite (Gold).
 3. **[backlog.md](./docs/backlog.md)**: Strict Agile priorities mapping critical security fixes, UI changes, and future books.
 4. **[PROJECT_STATUS.md](./docs/PROJECT_STATUS.md)**: Real-time mathematical readiness scores for every integrated book.
-5. **[AI_RULES.md](./docs/AI_RULES.md)**: Instructions governing autonomous AI agents operating in this repository.
+5. **[AGENTS.md](./AGENTS.md)**: The strict system prompts and instructions governing autonomous AI agents operating in this repository.
 6. **[release-notes.md](./docs/release-notes.md)**: Version history and feature changelogs.
