@@ -45,9 +45,9 @@ pm run build) are handled securely by our Vercel Linux CI/CD pipelines.*
 
 Vishwa-Vani maintains a strictly organized, single-source-of-truth documentation folder. All architecture, backlog, and guides are located in the docs/ folder:
 
-1. **[ARCHITECTURE.md](./docs/ARCHITECTURE.md)**: The technical blueprint explaining how the Brain, Data Engine, and UI layers interact.
-2. **[DATA_PIPELINE.md](./docs/DATA_PIPELINE.md)**: Instructions on how books are processed from raw text (Bronze) to SQLite (Gold).
+1. **[ARCHITECTURE.md](./docs/architecture.md)**: The technical blueprint explaining how the Brain, Data Engine, and UI layers interact.
+2. **[DATA_PIPELINE.md](./docs/data-pipeline.md)**: Instructions on how books are processed from raw text (Bronze) to SQLite (Gold).
 3. **[backlog.md](./docs/backlog.md)**: Strict Agile priorities mapping critical security fixes, UI changes, and future books.
-4. **[PROJECT_STATUS.md](./docs/PROJECT_STATUS.md)**: Real-time mathematical readiness scores for every integrated book.
+4. **[PROJECT_STATUS.md](./docs/project-status.md)**: Real-time mathematical readiness scores for every integrated book.
 5. **[AGENTS.md](./AGENTS.md)**: The strict system prompts and instructions governing autonomous AI agents operating in this repository.
 6. **[release-notes.md](./docs/release-notes.md)**: Version history and feature changelogs.
