@@ -182,7 +182,7 @@ export class VedicDataService {
             const dataPath = [process.cwd(), 'data', '3-gold', textSlug, shardFile].join(path.sep);
       if (fs.existsSync(dataPath)) {
         const rawData = fs.readFileSync(dataPath, 'utf8');
-        const parsed = JSON.parse(rawData);
+        const parsed = JSON.parse(rawData.replace(/^\uFEFF/, '').trim());
         return Array.isArray(parsed) ? parsed : (parsed.verses || []);
       }
 
@@ -190,7 +190,7 @@ export class VedicDataService {
       const fallbackPath = path.join(process.cwd(), 'data', '3-gold', textSlug, `${textSlug}-chapter-${chapterNumber}.json`);
       if (fs.existsSync(fallbackPath)) {
         const rawData = fs.readFileSync(fallbackPath, 'utf8');
-        const parsed = JSON.parse(rawData);
+        const parsed = JSON.parse(rawData.replace(/^\uFEFF/, '').trim());
         return Array.isArray(parsed) ? parsed : (parsed.verses || []);
       }
     } catch (error) {
