@@ -19,15 +19,16 @@
     "audit:multilang": "node scripts/audit_multilang.js --all",
     "audit:standards": "node scripts/audit_standards.js --all",
     "audit:silver": "node scripts/audit_standards.js --silver --all",
-    "audit:all": "npm run audit:gold \u0026\u0026 npm run audit:multilang \u0026\u0026 npm run audit:standards",
+    "audit:all": "npm run audit:gold && npm run audit:multilang && npm run audit:standards",
     "pipeline": "node scripts/run_pipeline.js",
     "pipeline:dry": "node scripts/run_pipeline.js --all --dry-run",
     "strip": "node scripts/strip_placeholders.js",
     "prepare": "git config core.hooksPath .githooks",
-    "verify": "npm run lint \u0026\u0026 npx tsc --noEmit \u0026\u0026 npm test -- --ci"
+    "verify": "npm run lint && npx tsc --noEmit && npm test -- --ci"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
+    "@libsql/client": "^0.18.0",
     "@next/third-parties": "^16.3.8",
     "@tailwindcss/typography": "^0.5.19",
     "@types/sql.js": "^1.4.9",

@@ -1,4 +1,5 @@
-﻿import Database from 'better-sqlite3';
+import type { Client } from '@libsql/client';
+import { createClient } from '@libsql/client';
 import path from 'path';
 import crypto from 'crypto';
 import fs from 'fs';
@@ -33,56 +34,78 @@ function decrypt(encryptedText: string): string {
 }
 
 /**
- * Vishwa-Vani: Server-Side Lake Engine (Normalized) dYOS
+ * Vishwa-Vani: Server-Side Lake Engine (Normalized) 🌊
  * 
- * Extracts data from binary SQLite stores and normalizes it into 
+ * Extracts data from Turso Edge / LibSQL store and normalizes it into 
  * Normalized Vedic Fragment (NVF) format for the UI.
  */
-let cachedDb: Database.Database | null = null;
 
-export async function getVersesFromLakeServer(textSlug: string, chapter: number, lakeFile: string = 'vedic-lake.db'): Promise<NVFFragment[]> {
+let cachedClient: Client | null = null;
+
+function getClient(lakeFile: string): Client {
+  if (cachedClient) return cachedClient;
+
+  // DB-001: Connect to Turso if environment variables are provided
+  if (process.env.TURSO_DATABASE_URL) {
+    console.log('[ServerLake] Connecting to Remote Turso Edge Database...');
+    cachedClient = createClient({
+      url: process.env.TURSO_DATABASE_URL,
+      authToken: process.env.TURSO_AUTH_TOKEN,
+    });
+    return cachedClient;
+  }
+
+  // Fallback to local SQLite file for local dev / unmigrated states
   let dbPath = path.join(process.cwd(), 'public', lakeFile);
   
-  // Robust path resolution for Vercel/Next.js CI worker environments
-  if (!fs.existsSync(/*turbopackIgnore: true*/ dbPath)) {
+  if (!fs.existsSync(dbPath)) {
     const fallbacks = [
       path.join(process.cwd(), '..', 'public', lakeFile),
       path.join(process.cwd(), '..', '..', 'public', lakeFile),
       path.join('/vercel/path0/public', lakeFile)
     ];
     for (const fb of fallbacks) {
-      if (fs.existsSync(/*turbopackIgnore: true*/ fb)) {
+      if (fs.existsSync(fb)) {
         dbPath = fb;
         break;
       }
     }
   }
 
-  if (!fs.existsSync(/*turbopackIgnore: true*/ dbPath)) {
-    console.error('[ServerLake] FATAL: vedic-lake.db NOT FOUND. Searched paths starting from: ' + process.cwd());
-    // Return empty to allow build to continue, or throw. We throw to fail loud, but with better context.
-    throw new Error('SQLITE_CANTOPEN: DB file missing at resolved path: ' + dbPath);
+  if (!fs.existsSync(dbPath)) {
+    console.error('[ServerLake] FATAL: vedic-lake.db NOT FOUND locally and TURSO_DATABASE_URL is missing.');
+    throw new Error('SQLITE_CANTOPEN: DB missing and no Turso URL provided.');
   }
-  
-  try {
-    if (!cachedDb) {
-      // Load DB entirely into memory to prevent file lock/descriptor crashes during multi-worker CI builds
-      const dbBuffer = fs.readFileSync(/*turbopackIgnore: true*/ dbPath);
-      cachedDb = new Database(dbBuffer);
-    }
-    const query = `SELECT content FROM verses WHERE text_slug = ? AND chapter = ? ORDER BY verse ASC`;
-    const rows = cachedDb.prepare(query).all(textSlug, chapter);
 
-    const fragments = rows.map((row: unknown) => {
+  console.log(`[ServerLake] Connecting to Local LibSQL file: ` + dbPath);
+  cachedClient = createClient({
+    url: `file:` + dbPath
+  });
+  
+  return cachedClient;
+}
+
+export async function getVersesFromLakeServer(textSlug: string, chapter: number, lakeFile: string = 'vedic-lake.db'): Promise<NVFFragment[]> {
+  try {
+    const client = getClient(lakeFile);
+    
+    // LibSQL uses async execute
+    const query = `SELECT content FROM verses WHERE text_slug = ? AND chapter = ? ORDER BY verse ASC`;
+    const result = await client.execute({
+      sql: query,
+      args: [textSlug, chapter]
+    });
+
+    const fragments = result.rows.map((row) => {
       try {
-        const decrypted = decrypt((row as { content: string }).content);
+        const decrypted = decrypt(row.content as string);
         const raw = JSON.parse(decrypted);
         return migrateToNVF(raw, textSlug, chapter);
       } catch (e) {
         console.error(`SERVER LAKE: JSON parse fail`, e);
         return null;
       }
-    }).filter((f: unknown) => f !== null) as NVFFragment[];
+    }).filter(f => f !== null) as NVFFragment[];
     
     return fragments;
   } catch (err) {
@@ -90,4 +113,3 @@ export async function getVersesFromLakeServer(textSlug: string, chapter: number,
     throw err;
   }
 }
-
