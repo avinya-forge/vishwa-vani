@@ -1,11 +1,10 @@
-﻿/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { NextResponse } from 'next/server';
 import { validateApiRequest } from '@/lib/api-guard';
 import { z } from 'zod';
-import { createClient, Client } from '@libsql/client';
+import type { Client } from '@libsql/client';
+import { createClient } from '@libsql/client';
 import path from 'path';
-import fs from 'fs';
-import { pipeline } from '@xenova/transformers';
 
 // Schema for search request
 const searchSchema = z.object({
@@ -31,22 +30,9 @@ function getDb(lakeFile: string): Client {
 
   const dbPath = path.join(process.cwd(), 'public', lakeFile);
   cachedClient = createClient({
-    url: \ile:\\
+    url: `file:${dbPath}`
   });
   return cachedClient;
-}
-
-class PipelineSingleton {
-  static task = 'text2text-generation' as any;
-  static model = 'Xenova/LaMini-Flan-T5-77M';
-  static instance: any = null;
-
-  static async getInstance(progress_callback: any = null) {
-      if (this.instance === null) {
-          this.instance = pipeline(this.task, this.model, { quantized: true, progress_callback });
-      }
-      return this.instance;
-  }
 }
 
 export async function POST(request: Request) {
@@ -75,7 +61,7 @@ export async function POST(request: Request) {
     }
 
     if (action === 'SEARCH_LAKE') {
-      const searchPattern = \%\%\;
+      const searchPattern = `%${query}%`;
       const result = await db.execute({
         sql: 'SELECT * FROM verses WHERE content LIKE ? OR slok LIKE ? OR transliteration LIKE ? LIMIT 50',
         args: [searchPattern, searchPattern, searchPattern]
