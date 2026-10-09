@@ -1,10 +1,17 @@
-# 📖 Vishwa-Vani: Global Project Backlog
+﻿# 📖 Vishwa-Vani: Global Project Backlog
+
+## 🔴 EPIC-P0-DATABASE-MIGRATION-TURSO [BLOCKING PRODUCTION]
+*Immediate end-to-end migration of vedic-lake.db to Turso Edge Database to bypass Vercel 50MB and GitHub 100MB limits. This is currently blocking production deployments and must be resolved before any other tasks.*
+- [ ] DB-001: Environment Provisioning - Create Turso Database, obtain TURSO_DATABASE_URL and TURSO_AUTH_TOKEN, and add them to local and Vercel environments.
+- [ ] DB-002: LibSQL Client Integration - Install @libsql/client. Refactor lib/server-lake.ts to swap etter-sqlite3 for async LibSQL HTTP client calls.
+- [ ] DB-003: Schema & Data Sync Pipeline - Create scripts/sync_turso.js to parse local Gold JSON files and insert tables/rows into the remote Turso database dynamically.
+- [ ] DB-004: Async Route Upgrades - Refactor Next.js React Server Components (pp/[text]/[chapter]/page.tsx) and API routes (/api/search) to strictly wait the new Turso database queries.
+- [ ] DB-005: Repo Cleanup & Deployment Verification - Add *.db to .gitignore, completely remove public/vedic-lake.db from git history, and verify a clean Vercel production build under the 50MB limit.
 
 ## 🔴 EPIC-SECURITY-AND-BUGS [ACTIVE]
-*All bug and security issues are prioritized here at the very top.*
+*All bug and security issues are prioritized here.*
 - [ ] SEC-001: Implement Scraping Protection - Secure data and API routes from malicious public scraping.
 - [ ] SEC-002: Data Encryption Mechanisms - Audit and implement robust encryption for sensitive data at rest and in transit.
-- [ ] SEC-003: Architectural Decoupling (ADR-004) - Implement ADR-004 to handle the massive 10GB dataset scaling (Oracle/Turso/Static CDN).
 - [ ] BUG-001: Resolve any lingering UI glitches in the commentary dropdowns or Next.js App Router navigation.
 
 ## 🟠 EPIC-USER-INTERFACE [ACTIVE]
