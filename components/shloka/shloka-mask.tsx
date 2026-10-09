@@ -5,7 +5,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import { useTheme } from 'next-themes'
 
 /**
- * ðŸŽ¨ shloka-mask: The Visual Data Protector
+ * 🎨 shloka-mask: The Visual Data Protector
  * 
  * Renders the Sanskrit shloka on a Canvas to thwart DOM-crawlers 
  * while maintaining the premium, elegant typography for humans.
@@ -15,7 +15,7 @@ export default function ShlokaMask({ text, className, fontSize }: { text: string
     const canvasRef = useRef<HTMLCanvasElement>(null)
     const [copied, setCopied] = useState(false)
     // Derive font size synchronously from a CSS media query match to avoid a
-    // SSRâ†’client mismatch that triggers a second layout shift.
+    // SSR→client mismatch that triggers a second layout shift.
     const [resolvedFontSize, setResolvedFontSize] = useState(fontSize ?? 22)
     const { resolvedTheme } = useTheme()
     const [windowWidth, _setWindowWidth] = useState(800)
@@ -116,7 +116,7 @@ export default function ShlokaMask({ text, className, fontSize }: { text: string
                 }}
             />
             
-            {/* ðŸ“‹ Secure Copy Button - Only for humans, visible on hover */}
+            {/* 📋 Secure Copy Button - Only for humans, visible on hover */}
             <button 
                 onClick={handleCopy}
                 title="Copy Shloka for analysis"

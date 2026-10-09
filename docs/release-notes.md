@@ -1,3 +1,19 @@
+## [1.3.0] - 2026-10-09
+
+### 🔴 Production Deployment Audit & Quality Corrections (EPIC-P0-PRODUCTION-AUDIT-AND-CORRECTIONS)
+- [x] `NAV-001` **Restored Sanskrit 'ॐ' (Om) Logo**: Eliminated mojibake corruption (`à¥ ` -> `ॐ`) and restored proper accessible styling in the primary navigation bar.
+- [x] `NAV-002` & `NAV-003` **Strict 100% Completed Verse Metrics**: Replaced deceptive hardcoded 709/1,500+ counts with canonical, verified verse counts (950 shlokas across 4 Gold scriptures: Bhagavad Gita 701, Isha Upanishad 19, Kena Upanishad 34, Yoga Sutras 196). Center navbar stats now accurately display "4 Verified Books" and "950 Complete Verses" linked to `/roadmap`.
+- [x] `NAV-004` **Navbar Clutter Reduction**: Removed isolated and unjustified "Data Engine" (`/engine`) link from desktop and mobile navigation menus.
+- [x] `NAV-005` **Fixed Vedic Labs Tab Active State**: Corrected navigation tab highlighting logic so Vedic Labs only highlights orange when actively viewing `/lab`.
+- [x] `LAB-001` **Vedic Lab Styling & Animation Unification**: Unified `/lab` page background with the global cream/dark theme (`bg-[#FDFBF7] dark:bg-[#1C1917]`) and eliminated distracting mouse-following particle dots (`CosmicCanvas`).
+- [x] `METRIC-001` & `METRIC-002` **Standard Unit Hierarchy & Dual-Pool Architecture**: Formalized the 3-tier unit standard (Shloka -> Chapter -> Book) and segmented the library into 2 explicit pools: Pool 1 (100% Completed & Verified Gold Pool: 4 books, 24 chapters, 950 verses) and Pool 2 (Ingestion Pipeline: 13 books, 2,916 chapters, ~175,410 verses with 126,306 live database rows).
+- [x] `ROADMAP-001` & `ROADMAP-002` **Roadmap Metrics & Visual Tier Standard**: Overhauled `/roadmap` with a 4-card metric dashboard, diagrammatic 3-Tier Data Certification Standards (Gold, Silver, Bronze), corrected 5-stage data processing pipeline (Bronze -> Silver -> Gold -> Verification Gate -> Live Edge), and interactive pool switcher.
+- [x] `CHAR-001` **Full-Spectrum Mojibake Elimination**: Swept and repaired over 3,100 corrupted Devanagari character sequences (`à¤...`, `à¥...`) and corrupted UTF-8 emoji strings across `lib/texts.ts`, `app/page.tsx`, `components/layout/Header.tsx`, `components/shloka/study-client.tsx`, and `components/shloka/shloka-mask.tsx`.
+
+### ⚡ Edge Database Migration & Windows SWC Stabilization (EPIC-P0-DATABASE-MIGRATION-TURSO)
+- [x] `DB-001` to `DB-005` **Turso Edge Database Migration**: Shifted runtime database operations to `@libsql/client` remote edge database, bypassing Vercel 50MB serverless limit and git LFS boundaries.
+- [x] **Windows SWC Native Engine Fix**: Pinned `@swc/core` to `1.10.18` via `devDependencies` and npm `overrides` to bypass upstream Windows NTFS DACL caching bug (`ERR_SWC_NATIVE_CACHE`).
+
 ## [1.2.1] - 2026-08-08
 
 ### 🎨 UI Redesign & Design System Alignment (UI-REDES-001 to UI-REDES-007)

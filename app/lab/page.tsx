@@ -145,16 +145,12 @@ const VishnuPuranaCosmicExplorer = dynamic(() => import('@/components/lab/vishnu
   ssr: false,
   loading: () => <LabSkeleton />
 })
-const CosmicCanvas = dynamic(() => import('@/components/lab/cosmic-canvas'), {
-  ssr: false,
-})
-
 export default function VedicLabPage() {
   return (
-    <main className="min-h-screen bg-stone-50 dark:bg-[#0C0B0A] text-stone-900 dark:text-stone-200 selection:bg-orange-500/30 pb-32 pt-20 relative overflow-hidden transition-colors duration-500">
-      {/* 🌌 COSMIC BACKGROUND */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,_#FFEDD5_0%,_transparent_50%)] dark:bg-[radial-gradient(circle_at_50%_0%,_#2A1A0A_0%,_transparent_50%)] opacity-40 dark:opacity-100" />
-      <CosmicCanvas />
+    <main className="min-h-screen bg-[#FDFBF7] dark:bg-[#1C1917] text-stone-900 dark:text-stone-200 selection:bg-orange-500/30 pb-32 pt-20 relative overflow-hidden transition-colors duration-500">
+      {/* Ambient glows for Glass UI */}
+      <div className="absolute top-[-10%] left-[-10%] w-[60vw] h-[60vw] bg-orange-200/20 dark:bg-orange-900/20 rounded-full blur-[100px] pointer-events-none mix-blend-multiply dark:mix-blend-lighten" />
+      <div className="absolute bottom-[-20%] right-[-10%] w-[50vw] h-[50vw] bg-amber-200/20 dark:bg-stone-800/40 rounded-full blur-[120px] pointer-events-none mix-blend-multiply dark:mix-blend-lighten" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="flex flex-col md:flex-row justify-between items-end gap-10 mb-20">

@@ -58,21 +58,21 @@ function getClient(lakeFile: string): Client {
   // Fallback to local SQLite file for local dev / unmigrated states
   let dbPath = path.join(process.cwd(), 'public', lakeFile);
   
-  if (!fs.existsSync(dbPath)) {
+  if (!fs.existsSync(/*turbopackIgnore: true*/ dbPath)) {
     const fallbacks = [
       path.join(process.cwd(), '..', 'public', lakeFile),
       path.join(process.cwd(), '..', '..', 'public', lakeFile),
       path.join('/vercel/path0/public', lakeFile)
     ];
     for (const fb of fallbacks) {
-      if (fs.existsSync(fb)) {
+      if (fs.existsSync(/*turbopackIgnore: true*/ fb)) {
         dbPath = fb;
         break;
       }
     }
   }
 
-  if (!fs.existsSync(dbPath)) {
+  if (!fs.existsSync(/*turbopackIgnore: true*/ dbPath)) {
     console.error('[ServerLake] FATAL: vedic-lake.db NOT FOUND locally and TURSO_DATABASE_URL is missing.');
     throw new Error('SQLITE_CANTOPEN: DB missing and no Turso URL provided.');
   }

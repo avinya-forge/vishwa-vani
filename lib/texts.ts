@@ -78,33 +78,33 @@ export const VEDIC_LIBRARY: VedicText[] = [
     hasPreface: true,
     hasPostface: true,
     name: 'Bhagavad Gita',
-    nameHi: 'à¤¶à¥à¤°à¥€à¤®à¤¦ à¤­à¤—à¤µà¤¦ à¤—à¥€à¤¤à¤¾',
-    nameMr: 'à¤¶à¥à¤°à¥€à¤®à¤¦ à¤­à¤—à¤µà¤¦ à¤—à¥€à¤¤à¤¾',
-    nameDevanagari: 'à¤¶à¥à¤°à¥€à¤®à¤¦à¥ à¤­à¤—à¤µà¤¦à¥à¤—à¥€à¤¤à¤¾',
+    nameHi: 'श्रीमद भगवद गीता',
+    nameMr: 'श्रीमद भगवद गीता',
+    nameDevanagari: 'श्रीमद् भगवद्गीता',
     totalChapters: 18,
     description: 'The sacred dialogue between Arjuna and Krishna on the battlefield of Kurukshetra. The foundation of Hindu philosophy, exploring duty, devotion, and liberation.',
     category: 'itihas',
     available: true,
     storage: 'json',
     chapterNames: {
-      '1': 'Arjuna Visada Yoga â€” The Despondency of Arjuna',
-      '2': 'Sankhya Yoga â€” The Way of Knowledge',
-      '3': 'Karma Yoga â€” The Way of Action',
-      '4': 'Jnana Karma Sanyasa Yoga â€” Knowledge & Renunciation',
-      '5': 'Karma Sanyasa Yoga â€” The Way of Renunciation',
-      '6': 'Dhyana Yoga â€” The Way of Meditation',
-      '7': 'Jnana Vijnana Yoga â€” Knowledge & Realization',
-      '8': 'Akshara Brahma Yoga â€” The Imperishable Brahman',
-      '9': 'Raja Vidya Raja Guhya Yoga â€” Sovereign Science & Secret',
-      '10': 'Vibhuti Yoga â€” Divine Manifestations',
-      '11': 'Visvarupa Darsana Yoga â€” Vision of the Universal Form',
-      '12': 'Bhakti Yoga â€” The Way of Devotion',
-      '13': 'Kshetra Kshetrajna Vibhaga Yoga â€” The Field & The Knower',
-      '14': 'Gunatraya Vibhaga Yoga â€” Division of the Three Gunas',
-      '15': 'Purushottama Yoga â€” The Supreme Person',
-      '16': 'Daivasura Sampad Vibhaga Yoga â€” Divine & Demoniac Endowments',
-      '17': 'Sraddhatraya Vibhaga Yoga â€” The Threefold Faith',
-      '18': 'Moksha Sanyasa Yoga â€” Liberation & Renunciation',
+      '1': 'Arjuna Visada Yoga — The Despondency of Arjuna',
+      '2': 'Sankhya Yoga — The Way of Knowledge',
+      '3': 'Karma Yoga — The Way of Action',
+      '4': 'Jnana Karma Sanyasa Yoga — Knowledge & Renunciation',
+      '5': 'Karma Sanyasa Yoga — The Way of Renunciation',
+      '6': 'Dhyana Yoga — The Way of Meditation',
+      '7': 'Jnana Vijnana Yoga — Knowledge & Realization',
+      '8': 'Akshara Brahma Yoga — The Imperishable Brahman',
+      '9': 'Raja Vidya Raja Guhya Yoga — Sovereign Science & Secret',
+      '10': 'Vibhuti Yoga — Divine Manifestations',
+      '11': 'Visvarupa Darsana Yoga — Vision of the Universal Form',
+      '12': 'Bhakti Yoga — The Way of Devotion',
+      '13': 'Kshetra Kshetrajna Vibhaga Yoga — The Field & The Knower',
+      '14': 'Gunatraya Vibhaga Yoga — Division of the Three Gunas',
+      '15': 'Purushottama Yoga — The Supreme Person',
+      '16': 'Daivasura Sampad Vibhaga Yoga — Divine & Demoniac Endowments',
+      '17': 'Sraddhatraya Vibhaga Yoga — The Threefold Faith',
+      '18': 'Moksha Sanyasa Yoga — Liberation & Renunciation',
     },
     contextualInfo: {
       speaker: 'Krishna (Bhagavan)',
@@ -119,61 +119,61 @@ export const VEDIC_LIBRARY: VedicText[] = [
     },
     parent: 'mahabharata', // Nested within Mahabharata (Bhishma Parva)
     chapterNamesHi: {
-      '1': 'à¤…à¤°à¥à¤œà¥à¤¨à¤µà¤¿à¤·à¤¾à¤¦à¤¯à¥‹à¤— â€” à¤…à¤°à¥à¤œà¥à¤¨ à¤•à¤¾ à¤µà¤¿à¤·à¤¾à¤¦',
-      '2': 'à¤¸à¤¾à¤‚à¤–à¥à¤¯à¤¯à¥‹à¤— â€” à¤œà¥à¤žà¤¾à¤¨ à¤•à¤¾ à¤®à¤¾à¤°à¥à¤—',
-      '3': 'à¤•à¤°à¥à¤®à¤¯à¥‹à¤— â€” à¤•à¤°à¥à¤® à¤•à¤¾ à¤®à¤¾à¤°à¥à¤—',
-      '4': 'à¤œà¥à¤žà¤¾à¤¨à¤•à¤°à¥à¤®à¤¸à¤‚à¤¨à¥à¤¯à¤¾à¤¸à¤¯à¥‹à¤— â€” à¤œà¥à¤žà¤¾à¤¨ à¤”à¤° à¤¸à¤‚à¤¨à¥à¤¯à¤¾à¤¸',
-      '5': 'à¤•à¤°à¥à¤®à¤¸à¤‚à¤¨à¥à¤¯à¤¾à¤¸à¤¯à¥‹à¤— â€” à¤•à¤°à¥à¤® à¤¸à¤‚à¤¨à¥à¤¯à¤¾à¤¸',
-      '6': 'à¤§à¥à¤¯à¤¾à¤¨à¤¯à¥‹à¤— â€” à¤§à¥à¤¯à¤¾à¤¨ à¤•à¤¾ à¤®à¤¾à¤°à¥à¤—',
-      '7': 'à¤œà¥à¤žà¤¾à¤¨à¤µà¤¿à¤œà¥à¤žà¤¾à¤¨à¤¯à¥‹à¤— â€” à¤…à¤¨à¥à¤­à¤µ à¤•à¤¾ à¤œà¥à¤žà¤¾à¤¨',
-      '8': 'à¤…à¤•à¥à¤·à¤°à¤¬à¥à¤°à¤¹à¥à¤®à¤¯à¥‹à¤— â€” à¤…à¤µà¤¿à¤¨à¤¾à¤¶à¥€ à¤¬à¥à¤°à¤¹à¥à¤®',
-      '9': 'à¤°à¤¾à¤œà¤µà¤¿à¤¦à¥à¤¯à¤¾à¤°à¤¾à¤œà¤—à¥à¤¹à¥à¤¯à¤¯à¥‹à¤— â€” à¤—à¥à¤¹à¥à¤¯ à¤œà¥à¤žà¤¾à¤¨',
-      '10': 'à¤µà¤¿à¤­à¥‚à¤¤à¤¿à¤¯à¥‹à¤— â€” à¤à¤¶à¥à¤µà¤°à¥à¤¯ à¤¶à¤¾à¤²à¥€ à¤µà¤¿à¤­à¥‚à¤¤à¤¿',
-      '11': 'à¤µà¤¿à¤¶à¥à¤µà¤°à¥‚à¤ªà¤¦à¤°à¥à¤¶à¤¨à¤¯à¥‹à¤— â€” à¤µà¤¿à¤¶à¥à¤µà¤°à¥‚à¤ª à¤•à¤¾ à¤¦à¤°à¥à¤¶à¤¨',
-      '12': 'à¤­à¤•à¥à¤¤à¤¿à¤¯à¥‹à¤— â€” à¤­à¤•à¥à¤¤à¤¿ à¤•à¤¾ à¤®à¤¾à¤°à¥à¤—',
-      '13': 'à¤•à¥à¤·à¥‡à¤¤à¥à¤°à¤•à¥à¤·à¥‡à¤¤à¥à¤°à¤œà¥à¤žà¤µà¤¿à¤­à¤¾à¤—à¤¯à¥‹à¤— â€” à¤•à¥à¤·à¥‡à¤¤à¥à¤° à¤”à¤° à¤•à¥à¤·à¥‡à¤¤à¥à¤°à¤œà¥à¤ž',
-      '14': 'à¤—à¥à¤£à¤¤à¥à¤°à¤¯à¤µà¤¿à¤­à¤¾à¤—à¤¯à¥‹à¤— â€” à¤¤à¥€à¤¨ à¤—à¥à¤£à¥‹à¤‚ à¤•à¤¾ à¤µà¤¿à¤­à¤¾à¤—',
-      '15': 'à¤ªà¥à¤°à¥à¤·à¥‹à¤¤à¥à¤¤à¤®à¤¯à¥‹à¤— â€” à¤ªà¥à¤°à¥à¤·à¥‹à¤¤à¥à¤¤à¤® à¤•à¥€ à¤ªà¥à¤°à¤¾à¤ªà¥à¤¤à¤¿',
-      '16': 'à¤¦à¥ˆà¤µà¤¾à¤¸à¥à¤°à¤¸à¤®à¥à¤ªà¤¦à¥à¤µà¤¿à¤­à¤¾à¤—à¤¯à¥‹à¤— â€” à¤¦à¥ˆà¤µà¥€ à¤”à¤° à¤†à¤¸à¥à¤°à¥€ à¤¸à¤‚à¤ªà¤¦à¤¾',
-      '17': 'à¤¶à¥à¤°à¤¦à¥à¤§à¤¾à¤¤à¥à¤°à¤¯à¤µà¤¿à¤­à¤¾à¤—à¤¯à¥‹à¤— â€” à¤¤à¥€à¤¨ à¤ªà¥à¤°à¤•à¤¾à¤° à¤•à¥€ à¤¶à¥à¤°à¤¦à¥à¤§à¤¾',
-      '18': 'à¤®à¥‹à¤•à¥à¤·à¤¸à¤‚à¤¨à¥à¤¯à¤¾à¤¸à¤¯à¥‹à¤— â€” à¤¸à¤‚à¤¨à¥à¤¯à¤¾à¤¸ à¤”à¤° à¤®à¥‹à¤•à¥à¤·',
+      '1': 'अर्जुनविषादयोग — अर्जुन का विषाद',
+      '2': 'सांख्ययोग — ज्ञान का मार्ग',
+      '3': 'कर्मयोग — कर्म का मार्ग',
+      '4': 'ज्ञानकर्मसंन्यासयोग — ज्ञान और संन्यास',
+      '5': 'कर्मसंन्यासयोग — कर्म संन्यास',
+      '6': 'ध्यानयोग — ध्यान का मार्ग',
+      '7': 'ज्ञानविज्ञानयोग — अनुभव का ज्ञान',
+      '8': 'अक्षरब्रह्मयोग — अविनाशी ब्रह्म',
+      '9': 'राजविद्याराजगुह्ययोग — गुह्य ज्ञान',
+      '10': 'विभूतियोग — ऐश्वर्य शाली विभूति',
+      '11': 'विश्वरूपदर्शनयोग — विश्वरूप का दर्शन',
+      '12': 'भक्तियोग — भक्ति का मार्ग',
+      '13': 'क्षेत्रक्षेत्रज्ञविभागयोग — क्षेत्र और क्षेत्रज्ञ',
+      '14': 'गुणत्रयविभागयोग — तीन गुणों का विभाग',
+      '15': 'पुरुषोत्तमयोग — पुरुषोत्तम की प्राप्ति',
+      '16': 'दैवासुरसम्पद्विभागयोग — दैवी और आसुरी संपदा',
+      '17': 'श्रद्धात्रयविभागयोग — तीन प्रकार की श्रद्धा',
+      '18': 'मोक्षसंन्यासयोग — संन्यास और मोक्ष',
     },
     chapterNamesMr: {
-      '1': 'à¤…à¤°à¥à¤œà¥à¤¨à¤µà¤¿à¤·à¤¾à¤¦à¤¯à¥‹à¤— â€” à¤…à¤°à¥à¤œà¥à¤¨à¤¾à¤šà¤¾ à¤µà¤¿à¤·à¤¾à¤¦',
-      '2': 'à¤¸à¤¾à¤‚à¤–à¥à¤¯à¤¯à¥‹à¤— â€” à¤œà¥à¤žà¤¾à¤¨à¤¾à¤šà¤¾ à¤®à¤¾à¤°à¥à¤—',
-      '3': 'à¤•à¤°à¥à¤®à¤¯à¥‹à¤— â€” à¤•à¤°à¥à¤®à¤¾à¤šà¤¾ à¤®à¤¾à¤°à¥à¤—',
-      '4': 'à¤œà¥à¤žà¤¾à¤¨à¤•à¤°à¥à¤®à¤¸à¤‚à¤¨à¥à¤¯à¤¾à¤¸à¤¯à¥‹à¤— â€” à¤œà¥à¤žà¤¾à¤¨ à¤†à¤£à¤¿ à¤¸à¤‚à¤¨à¥à¤¯à¤¾à¤¸',
-      '5': 'à¤•à¤°à¥à¤®à¤¸à¤‚à¤¨à¥à¤¯à¤¾à¤¸à¤¯à¥‹à¤— â€” à¤•à¤°à¥à¤® à¤¸à¤‚à¤¨à¥à¤¯à¤¾à¤¸',
-      '6': 'à¤§à¥à¤¯à¤¾à¤¨à¤¯à¥‹à¤— â€” à¤§à¥à¤¯à¤¾à¤¨à¤¾à¤šà¤¾ à¤®à¤¾à¤°à¥à¤—',
-      '7': 'à¤œà¥à¤žà¤¾à¤¨à¤µà¤¿à¤œà¥à¤žà¤¾à¤¨à¤¯à¥‹à¤— â€” à¤…à¤¨à¥à¤­à¤µà¤¾à¤šà¥‡ à¤œà¥à¤žà¤¾à¤¨',
-      '8': 'à¤…à¤•à¥à¤·à¤°à¤¬à¥à¤°à¤¹à¥à¤®à¤¯à¥‹à¤— â€” à¤…à¤µà¤¿à¤¨à¤¾à¤¶à¥€ à¤¬à¥à¤°à¤¹à¥à¤®',
-      '9': 'à¤°à¤¾à¤œà¤µà¤¿à¤¦à¥à¤¯à¤¾à¤°à¤¾à¤œà¤—à¥à¤¹à¥à¤¯à¤¯à¥‹à¤— â€” à¤—à¥à¤¹à¥à¤¯ à¤œà¥à¤žà¤¾à¤¨',
-      '10': 'à¤µà¤¿à¤­à¥‚à¤¤à¤¿à¤¯à¥‹à¤— â€” à¤à¤¶à¥à¤µà¤°à¥à¤¯ à¤¶à¤¾à¤²à¥€ à¤µà¤¿à¤­à¥‚à¤¤à¥€',
-      '11': 'à¤µà¤¿à¤¶à¥à¤µà¤°à¥‚à¤ªà¤¦à¤°à¥à¤¶à¤¨à¤¯à¥‹à¤— â€” à¤µà¤¿à¤¶à¥à¤µà¤°à¥‚à¤ªà¤¾à¤šà¤¾ à¤¦à¤°à¥à¤¶à¤¨',
-      '12': 'à¤­à¤•à¥à¤¤à¤¿à¤¯à¥‹à¤— â€” à¤­à¤•à¥à¤¤à¥€à¤šà¤¾ à¤®à¤¾à¤°à¥à¤—',
-      '13': 'à¤•à¥à¤·à¥‡à¤¤à¥à¤°à¤•à¥à¤·à¥‡à¤¤à¥à¤°à¤œà¥à¤žà¤µà¤¿à¤­à¤¾à¤—à¤¯à¥‹à¤— â€” à¤•à¥à¤·à¥‡à¤¤à¥à¤° à¤†à¤£à¤¿ à¤•à¥à¤·à¥‡à¤¤à¥à¤°à¤œà¥à¤ž',
-      '14': 'à¤—à¥à¤£à¤¤à¥à¤°à¤¯à¤µà¤¿à¤­à¤¾à¤—à¤¯à¥‹à¤— â€” à¤¤à¥€à¤¨ à¤—à¥à¤£à¤¾à¤‚à¤šà¤¾ à¤µà¤¿à¤­à¤¾à¤—',
-      '15': 'à¤ªà¥à¤°à¥à¤·à¥‹à¤¤à¥à¤¤à¤®à¤¯à¥‹à¤— â€” à¤ªà¥à¤°à¥à¤·à¥‹à¤¤à¥à¤¤à¤®à¤¾à¤šà¥€ à¤ªà¥à¤°à¤¾à¤ªà¥à¤¤à¥€',
-      '16': 'à¤¦à¥ˆà¤µà¤¾à¤¸à¥à¤°à¤¸à¤®à¥à¤ªà¤¦à¥à¤µà¤¿à¤­à¤¾à¤—à¤¯à¥‹à¤— â€” à¤¦à¥ˆà¤µà¥€ à¤†à¤£à¤¿ à¤†à¤¸à¥à¤°à¥€ à¤¸à¤‚à¤ªà¤¦à¤¾',
-      '17': 'à¤¶à¥à¤°à¤¦à¥à¤§à¤¾à¤¤à¥à¤°à¤¯à¤µà¤¿à¤­à¤¾à¤—à¤¯à¥‹à¤— â€” à¤¤à¥€à¤¨ à¤ªà¥à¤°à¤•à¤¾à¤°à¤šà¥€ à¤¶à¥à¤°à¤¦à¥à¤§à¤¾',
-      '18': 'à¤®à¥‹à¤•à¥à¤·à¤¸à¤‚à¤¨à¥à¤¯à¤¾à¤¸à¤¯à¥‹à¤— â€” à¤¸à¤‚à¤¨à¥à¤¯à¤¾à¤¸ à¤†à¤£à¤¿ à¤®à¥‹à¤•à¥à¤·',
+      '1': 'अर्जुनविषादयोग — अर्जुनाचा विषाद',
+      '2': 'सांख्ययोग — ज्ञानाचा मार्ग',
+      '3': 'कर्मयोग — कर्माचा मार्ग',
+      '4': 'ज्ञानकर्मसंन्यासयोग — ज्ञान आणि संन्यास',
+      '5': 'कर्मसंन्यासयोग — कर्म संन्यास',
+      '6': 'ध्यानयोग — ध्यानाचा मार्ग',
+      '7': 'ज्ञानविज्ञानयोग — अनुभवाचे ज्ञान',
+      '8': 'अक्षरब्रह्मयोग — अविनाशी ब्रह्म',
+      '9': 'राजविद्याराजगुह्ययोग — गुह्य ज्ञान',
+      '10': 'विभूतियोग — ऐश्वर्य शाली विभूती',
+      '11': 'विश्वरूपदर्शनयोग — विश्वरूपाचा दर्शन',
+      '12': 'भक्तियोग — भक्तीचा मार्ग',
+      '13': 'क्षेत्रक्षेत्रज्ञविभागयोग — क्षेत्र आणि क्षेत्रज्ञ',
+      '14': 'गुणत्रयविभागयोग — तीन गुणांचा विभाग',
+      '15': 'पुरुषोत्तमयोग — पुरुषोत्तमाची प्राप्ती',
+      '16': 'दैवासुरसम्पद्विभागयोग — दैवी आणि आसुरी संपदा',
+      '17': 'श्रद्धात्रयविभागयोग — तीन प्रकारची श्रद्धा',
+      '18': 'मोक्षसंन्यासयोग — संन्यास आणि मोक्ष',
     },
   },
   {
     slug: 'isha-upanishad',
     dataPrefix: 'isha_upanishad',
     name: 'Isha Upanishad',
-    nameHi: 'à¤ˆà¤¶à¤¾à¤µà¤¾à¤¸à¥à¤¯à¥‹à¤ªà¤¨à¤¿à¤·à¤¦à¥ â€” à¤¹à¤¿à¤¨à¥à¤¦à¥€',
-    nameMr: 'à¤ˆà¤¶à¤¾à¤µà¤¾à¤¸à¥à¤¯à¥‹à¤ªà¤¨à¤¿à¤·à¤¦à¥ â€” à¤®à¤°à¤¾à¤ à¥€',
-    nameDevanagari: 'à¤ˆà¤¶à¤¾à¤µà¤¾à¤¸à¥à¤¯à¥‹à¤ªà¤¨à¤¿à¤·à¤¦à¥',
+    nameHi: 'ईशावास्योपनिषद् — हिन्दी',
+    nameMr: 'ईशावास्योपनिषद् — मराठी',
+    nameDevanagari: 'ईशावास्योपनिषद्',
     totalChapters: 1,
     description: 'One of the shortest and most profound Upanishads. 18 verses addressing the nature of the Self and the universe.',
     category: 'upanishad',
     available: true,
     storage: 'json',
-    chapterNames: { '1': 'Isha Upanishad â€” Complete Text' },
-    chapterNamesHi: { '1': 'à¤ˆà¤¶à¤¾à¤µà¤¾à¤¸à¥à¤¯à¥‹à¤ªà¤¨à¤¿à¤·à¤¦à¥ â€” à¤ªà¥‚à¤°à¥à¤£ à¤ªà¤¾à¤ ' },
-    chapterNamesMr: { '1': 'à¤ˆà¤¶à¤¾à¤µà¤¾à¤¸à¥à¤¯à¥‹à¤ªà¤¨à¤¿à¤·à¤¦à¥ â€” à¤ªà¥‚à¤°à¥à¤£ à¤ªà¤¾à¤ ' },
+    chapterNames: { '1': 'Isha Upanishad — Complete Text' },
+    chapterNamesHi: { '1': 'ईशावास्योपनिषद् — पूर्ण पाठ' },
+    chapterNamesMr: { '1': 'ईशावास्योपनिषद् — पूर्ण पाठ' },
     contextualInfo: {
       speaker: 'Sage Yajnavalkya (Tradition)',
       listener: 'Universal Seekers',
@@ -190,25 +190,25 @@ export const VEDIC_LIBRARY: VedicText[] = [
     slug: 'kena-upanishad',
     dataPrefix: 'kena-upanishad',
     name: 'Kena Upanishad',
-    nameHi: 'à¤•à¥‡à¤¨à¥‹à¤ªà¤¨à¤¿à¤·à¤¦à¥ â€” à¤¹à¤¿à¤¨à¥à¤¦à¥€',
-    nameMr: 'à¤•à¥‡à¤¨à¥‹à¤ªà¤¨à¤¿à¤·à¤¦à¥ â€” à¤®à¤°à¤¾à¤ à¥€',
-    nameDevanagari: 'à¤•à¥‡à¤¨à¥‹à¤ªà¤¨à¤¿à¤·à¤¦à¥',
+    nameHi: 'केनोपनिषद् — हिन्दी',
+    nameMr: 'केनोपनिषद् — मराठी',
+    nameDevanagari: 'केनोपनिषद्',
     totalChapters: 1,
     description: 'Explores the nature of Brahman (the ultimate reality) through the question: By whose will does the mind think?',
     category: 'upanishad',
-    available: true, // Set true only after: PIPE-KENA-1â†’6 pass + node scripts/audit_gold.js kena-upanishad shows 100%
-    storage: 'json',  // Pipeline: data/2-silver/kena-upanishad â†’ validate â†’ data/3-gold/kena-upanishad
-    chapterNames: { '1': 'Kena Upanishad â€” Complete Text' },
-    chapterNamesHi: { '1': 'à¤•à¥‡à¤¨à¥‹à¤ªà¤¨à¤¿à¤·à¤¦à¥ â€” à¤ªà¥‚à¤°à¥à¤£ à¤ªà¤¾à¤ ' },
-    chapterNamesMr: { '1': 'à¤•à¥‡à¤¨à¥‹à¤ªà¤¨à¤¿à¤·à¤¦à¥ â€” à¤ªà¥‚à¤°à¥à¤£ à¤ªà¤¾à¤ ' },
+    available: true, // Set true only after: PIPE-KENA-1→6 pass + node scripts/audit_gold.js kena-upanishad shows 100%
+    storage: 'json',  // Pipeline: data/2-silver/kena-upanishad → validate → data/3-gold/kena-upanishad
+    chapterNames: { '1': 'Kena Upanishad — Complete Text' },
+    chapterNamesHi: { '1': 'केनोपनिषद् — पूर्ण पाठ' },
+    chapterNamesMr: { '1': 'केनोपनिषद् — पूर्ण पाठ' },
   },
   {
     slug: 'yoga-sutras',
     dataPrefix: 'yoga-sutras',
     name: 'Yoga Sutras of Patanjali',
-    nameHi: 'à¤ªà¤¤à¤‚à¤œà¤²à¤¿ à¤¯à¥‹à¤—à¤¸à¥‚à¤¤à¥à¤°',
-    nameMr: 'à¤ªà¤¤à¤‚à¤œà¤²à¤¿ à¤¯à¥‹à¤—à¤¸à¥‚à¤¤à¥à¤°',
-    nameDevanagari: 'à¤ªà¤¾à¤¤à¤žà¥à¤œà¤²à¤¯à¥‹à¤—à¤¦à¤°à¥à¤¶à¤¨',
+    nameHi: 'पतंजलि योगसूत्र',
+    nameMr: 'पतंजलि योगसूत्र',
+    nameDevanagari: 'पातञ्जलयोगदर्शन',
     totalChapters: 4,
     description: 'The foundational text of Raja Yoga, consisting of 196 sutras (aphorisms) on the theory and practice of yoga.',
     category: 'other',
@@ -232,29 +232,29 @@ export const VEDIC_LIBRARY: VedicText[] = [
       availableEditions: ['Patanjali Original', 'Modern Commentaries']
     },
     chapterNamesHi: {
-      '1': 'à¤¸à¤®à¤¾à¤§à¤¿à¤ªà¤¾à¤¦',
-      '2': 'à¤¸à¤¾à¤§à¤¨à¤¾à¤ªà¤¾à¤¦',
-      '3': 'à¤µà¤¿à¤­à¥‚à¤¤à¤¿à¤ªà¤¾à¤¦',
-      '4': 'à¤•à¥ˆà¤µà¤²à¥à¤¯à¤ªà¤¾à¤¦',
+      '1': 'समाधिपाद',
+      '2': 'साधनापाद',
+      '3': 'विभूतिपाद',
+      '4': 'कैवल्यपाद',
     },
     chapterNamesMr: {
-      '1': 'à¤¸à¤®à¤¾à¤§à¥€à¤ªà¤¾à¤¦',
-      '2': 'à¤¸à¤¾à¤§à¤¨à¤¾à¤ªà¤¾à¤¦',
-      '3': 'à¤µà¤¿à¤­à¥‚à¤¤à¥€à¤ªà¤¾à¤¦',
-      '4': 'à¤•à¥ˆà¤µà¤²à¥à¤¯à¤ªà¤¾à¤¦',
+      '1': 'समाधीपाद',
+      '2': 'साधनापाद',
+      '3': 'विभूतीपाद',
+      '4': 'कैवल्यपाद',
     },
   },
   {
     slug: 'mahabharata',
     dataPrefix: 'mahabharata',
     name: 'Mahabharata (All 18 Parvas)',
-    nameHi: 'à¤®à¤¹à¤¾à¤­à¤¾à¤°à¤¤ (18 à¤ªà¤°à¥à¤µ)',
-    nameMr: 'à¤®à¤¹à¤¾à¤­à¤¾à¤°à¤¤ (18 à¤ªà¤°à¥à¤µ)',
-    nameDevanagari: 'à¤®à¤¹à¤¾à¤­à¤¾à¤°à¤¤à¤®à¥',
+    nameHi: 'महाभारत (18 पर्व)',
+    nameMr: 'महाभारत (18 पर्व)',
+    nameDevanagari: 'महाभारतम्',
     totalChapters: 2115,
     description: 'The longest epic poem in the world, chronicling the Kurukshetra War and the fates of the Kaurava and Pandava princes.',
     category: 'itihas',
-    available: true,
+    available: false,
     storage: 'json',
     chapterNames: {
       '1': 'Adi Parva', '2': 'Sabha Parva', '3': 'Vana Parva', '4': 'Virata Parva', '5': 'Udyoga Parva',
@@ -263,30 +263,30 @@ export const VEDIC_LIBRARY: VedicText[] = [
       '15': 'Ashramavasika Parva', '16': 'Mausala Parva', '17': 'Mahaprasthanika Parva', '18': 'Svargarohana Parva'
     },
     chapterNamesHi: {
-      '1': 'à¤†à¤¦à¤¿ à¤ªà¤°à¥à¤µ', '2': 'à¤¸à¤­à¤¾ à¤ªà¤°à¥à¤µ', '3': 'à¤µà¤¨ à¤ªà¤°à¥à¤µ', '4': 'à¤µà¤¿à¤°à¤¾à¤Ÿ à¤ªà¤°à¥à¤µ', '5': 'à¤‰à¤¦à¥à¤¯à¥‹à¤— à¤ªà¤°à¥à¤µ',
-      '6': 'à¤­à¥€à¤·à¥à¤® à¤ªà¤°à¥à¤µ', '7': 'à¤¦à¥à¤°à¥‹à¤£ à¤ªà¤°à¥à¤µ', '8': 'à¤•à¤°à¥à¤£ à¤ªà¤°à¥à¤µ', '9': 'à¤¶à¤²à¥à¤¯ à¤ªà¤°à¥à¤µ', '10': 'à¤¸à¥Œà¤ªà¥à¤¤à¤¿à¤• à¤ªà¤°à¥à¤µ',
-      '11': 'à¤¸à¥à¤¤à¥à¤°à¥€ à¤ªà¤°à¥à¤µ', '12': 'à¤¶à¤¾à¤¨à¥à¤¤à¤¿ à¤ªà¤°à¥à¤µ', '13': 'à¤…à¤¨à¥à¤¶à¤¾à¤¸à¤¨ à¤ªà¤°à¥à¤µ', '14': 'à¤…à¤¶à¥à¤µà¤®à¥‡à¤§à¤¿à¤• à¤ªà¤°à¥à¤µ',
-      '15': 'à¤†à¤¶à¥à¤°à¤®à¤µà¤¾à¤¸à¤¿à¤• à¤ªà¤°à¥à¤µ', '16': 'à¤®à¥Œà¤¸à¤² à¤ªà¤°à¥à¤µ', '17': 'à¤®à¤¹à¤¾à¤ªà¥à¤°à¤¸à¥à¤¥à¤¾à¤¨à¤¿à¤• à¤ªà¤°à¥à¤µ', '18': 'à¤¸à¥à¤µà¤°à¥à¤—à¤¾à¤°à¥‹à¤¹à¤£ à¤ªà¤°à¥à¤µ'
+      '1': 'आदि पर्व', '2': 'सभा पर्व', '3': 'वन पर्व', '4': 'विराट पर्व', '5': 'उद्योग पर्व',
+      '6': 'भीष्म पर्व', '7': 'द्रोण पर्व', '8': 'कर्ण पर्व', '9': 'शल्य पर्व', '10': 'सौप्तिक पर्व',
+      '11': 'स्त्री पर्व', '12': 'शान्ति पर्व', '13': 'अनुशासन पर्व', '14': 'अश्वमेधिक पर्व',
+      '15': 'आश्रमवासिक पर्व', '16': 'मौसल पर्व', '17': 'महाप्रस्थानिक पर्व', '18': 'स्वर्गारोहण पर्व'
     },
     chapterNamesMr: {
-      '1': 'à¤†à¤¦à¤¿ à¤ªà¤°à¥à¤µ', '2': 'à¤¸à¤­à¤¾ à¤ªà¤°à¥à¤µ', '3': 'à¤µà¤¨ à¤ªà¤°à¥à¤µ', '4': 'à¤µà¤¿à¤°à¤¾à¤Ÿ à¤ªà¤°à¥à¤µ', '5': 'à¤‰à¤¦à¥à¤¯à¥‹à¤— à¤ªà¤°à¥à¤µ',
-      '6': 'à¤­à¥€à¤·à¥à¤® à¤ªà¤°à¥à¤µ', '7': 'à¤¦à¥à¤°à¥‹à¤£ à¤ªà¤°à¥à¤µ', '8': 'à¤•à¤°à¥à¤£ à¤ªà¤°à¥à¤µ', '9': 'à¤¶à¤²à¥à¤¯ à¤ªà¤°à¥à¤µ', '10': 'à¤¸à¥Œà¤ªà¥à¤¤à¤¿à¤• à¤ªà¤°à¥à¤µ',
-      '11': 'à¤¸à¥à¤¤à¥à¤°à¥€ à¤ªà¤°à¥à¤µ', '12': 'à¤¶à¤¾à¤¨à¥à¤¤à¤¿ à¤ªà¤°à¥à¤µ', '13': 'à¤…à¤¨à¥à¤¶à¤¾à¤¸à¤¨ à¤ªà¤°à¥à¤µ', '14': 'à¤…à¤¶à¥à¤µà¤®à¥‡à¤§à¤¿à¤• à¤ªà¤°à¥à¤µ',
-      '15': 'à¤†à¤¶à¥à¤°à¤®à¤µà¤¾à¤¸à¤¿à¤• à¤ªà¤°à¥à¤µ', '16': 'à¤®à¥Œà¤¸à¤² à¤ªà¤°à¥à¤µ', '17': 'à¤®à¤¹à¤¾à¤ªà¥à¤°à¤¸à¥à¤¥à¤¾à¤¨à¤¿à¤• à¤ªà¤°à¥à¤µ', '18': 'à¤¸à¥à¤µà¤°à¥à¤—à¤¾à¤°à¥‹à¤¹à¤£ à¤ªà¤°à¥à¤µ'
+      '1': 'आदि पर्व', '2': 'सभा पर्व', '3': 'वन पर्व', '4': 'विराट पर्व', '5': 'उद्योग पर्व',
+      '6': 'भीष्म पर्व', '7': 'द्रोण पर्व', '8': 'कर्ण पर्व', '9': 'शल्य पर्व', '10': 'सौप्तिक पर्व',
+      '11': 'स्त्री पर्व', '12': 'शान्ति पर्व', '13': 'अनुशासन पर्व', '14': 'अश्वमेधिक पर्व',
+      '15': 'आश्रमवासिक पर्व', '16': 'मौसल पर्व', '17': 'महाप्रस्थानिक पर्व', '18': 'स्वर्गारोहण पर्व'
     },
     contextualInfo: {
       speaker: 'Vyasa / Vaisampayana',
       listener: "Janamejaya (Vyasa recites to Vaisampayana; Vaisampayana recites at Janamejaya's sarpa-satra)",
-      lineage: 'Kuru Dynasty â€” Bharat Vamsha (descendants of Bharata)',
+      lineage: 'Kuru Dynasty — Bharat Vamsha (descendants of Bharata)',
       historicalEra: '~900 BCE (Astronomical Evidence via Nilesh Oak) / 3102 BCE (Kali Yuga Traditional)',
-      documentationEra: '400 BCE â€“ 400 CE (Core Jaya expanded to Mahabharata; BORI Critical Edition)',
-      archaeologicalEvidence: 'Painted Gray Ware (PGW) Culture c.1200â€“600 BCE at Hastinapur & Kurukshetra sites; BORI Critical Edition (1966â€“2016, 19 volumes)',
+      documentationEra: '400 BCE – 400 CE (Core Jaya expanded to Mahabharata; BORI Critical Edition)',
+      archaeologicalEvidence: 'Painted Gray Ware (PGW) Culture c.1200–600 BCE at Hastinapur & Kurukshetra sites; BORI Critical Edition (1966–2016, 19 volumes)',
       geographicalContext: 'Hastinapur (Kuru capital), Kurukshetra (battle site), Indraprastha (Pandava capital), Dwaraka (Krishna)',
       keyThemes: ['Dharma vs Adharma', 'Kshatriya duty', 'Karma', 'Cosmic cycles', 'Bhakti', 'Vedanta (via Gita)', 'State craft', 'Family loyalty'],
       availableEditions: [
-        'Bhandarkar Oriental Research Institute (BORI) Critical Edition â€” 1966â€“2016',
-        'Kisari Mohan Ganguli (KMG) English translation â€” 1883â€“1896 (public domain)',
-        'Bibek Debroy translation â€” 2010â€“2014, Penguin (modern scholarly)'
+        'Bhandarkar Oriental Research Institute (BORI) Critical Edition — 1966–2016',
+        'Kisari Mohan Ganguli (KMG) English translation — 1883–1896 (public domain)',
+        'Bibek Debroy translation — 2010–2014, Penguin (modern scholarly)'
       ],
       parvaStructure: {
         totalParvas: 18,
@@ -302,153 +302,153 @@ export const VEDIC_LIBRARY: VedicText[] = [
     dataPrefix: 'vishnu-purana',
     storage: 'json',
     name: 'Vishnu Purana',
-    nameHi: 'à¤µà¤¿à¤·à¥à¤£à¥ à¤ªà¥à¤°à¤¾à¤£',
-    nameMr: 'à¤µà¤¿à¤·à¥à¤£à¥ à¤ªà¥à¤°à¤¾à¤£',
-    nameDevanagari: 'à¤µà¤¿à¤·à¥à¤£à¥à¤ªà¥à¤°à¤¾à¤£à¤®à¥',
+    nameHi: 'विष्णु पुराण',
+    nameMr: 'विष्णु पुराण',
+    nameDevanagari: 'विष्णुपुराणम्',
     totalChapters: 6,
     description: 'Primarily a dialogue between Parashara and his disciple Maitreya, focusing on Vishnu as the ultimate source of the universe.',
     category: 'purana',
     available: true,
     chapterNames: { '1': 'Ansh 1', '2': 'Ansh 2', '3': 'Ansh 3', '4': 'Ansh 4', '5': 'Ansh 5', '6': 'Ansh 6' },
-    chapterNamesHi: { '1': 'à¤ªà¥à¤°à¤¥à¤® à¤…à¤‚à¤¶', '2': 'à¤¦à¥à¤µà¤¿à¤¤à¥€à¤¯ à¤…à¤‚à¤¶', '3': 'à¤¤à¥ƒà¤¤à¥€à¤¯ à¤…à¤‚à¤¶', '4': 'à¤šà¤¤à¥à¤°à¥à¤¥ à¤…à¤‚à¤¶', '5': 'à¤ªà¤žà¥à¤šà¤® à¤…à¤‚à¤¶', '6': 'à¤·à¤·à¥à¤  à¤…à¤‚à¤¶' },
-    chapterNamesMr: { '1': 'à¤ªà¥à¤°à¤¥à¤® à¤…à¤‚à¤¶', '2': 'à¤¦à¥à¤µà¤¿à¤¤à¥€à¤¯ à¤…à¤‚à¤¶', '3': 'à¤¤à¥ƒà¤¤à¥€à¤¯ à¤…à¤‚à¤¶', '4': 'à¤šà¤¤à¥à¤°à¥à¤¥ à¤…à¤‚à¤¶', '5': 'à¤ªà¤žà¥à¤šà¤® à¤…à¤‚à¤¶', '6': 'à¤·à¤·à¥à¤  à¤…à¤‚à¤¶' },
+    chapterNamesHi: { '1': 'प्रथम अंश', '2': 'द्वितीय अंश', '3': 'तृतीय अंश', '4': 'चतुर्थ अंश', '5': 'पञ्चम अंश', '6': 'षष्ठ अंश' },
+    chapterNamesMr: { '1': 'प्रथम अंश', '2': 'द्वितीय अंश', '3': 'तृतीय अंश', '4': 'चतुर्थ अंश', '5': 'पञ्चम अंश', '6': 'षष्ठ अंश' },
   },
   {
     slug: 'rigveda',
     dataPrefix: 'rigveda',
     name: 'Rigveda Samhita',
-    nameHi: 'à¤‹à¤—à¥à¤µà¥‡à¤¦ à¤¸à¤‚à¤¹à¤¿à¤¤à¤¾',
-    nameMr: 'à¤‹à¤—à¥à¤µà¥‡à¤¦ à¤¸à¤‚à¤¹à¤¿à¤¤à¤¾',
-    nameDevanagari: 'à¤‹à¤—à¥à¤µà¥‡à¤¦à¤ƒ',
+    nameHi: 'ऋग्वेद संहिता',
+    nameMr: 'ऋग्वेद संहिता',
+    nameDevanagari: 'ऋग्वेदः',
     totalChapters: 10,
     description: 'The oldest of the Vedas, containing hymns to various deities, reflecting the earliest spiritual insights of humanity.',
     category: 'veda',
-    available: true,
+    available: false,
     chapterNames: { '1': 'Mandala 1', '2': 'Mandala 2', '3': 'Mandala 3', '4': 'Mandala 4', '5': 'Mandala 5', '6': 'Mandala 6', '7': 'Mandala 7', '8': 'Mandala 8', '9': 'Mandala 9', '10': 'Mandala 10' },
-    chapterNamesHi: { '1': 'à¤ªà¥à¤°à¤¥à¤® à¤®à¤£à¥à¤¡à¤²', '2': 'à¤¦à¥à¤µà¤¿à¤¤à¥€à¤¯ à¤®à¤£à¥à¤¡à¤²', '3': 'à¤¤à¥ƒà¤¤à¥€à¤¯ à¤®à¤£à¥à¤¡à¤²', '4': 'à¤šà¤¤à¥à¤°à¥à¤¥ à¤®à¤£à¥à¤¡à¤²', '5': 'à¤ªà¤žà¥à¤šà¤® à¤®à¤£à¥à¤¡à¤²', '6': 'à¤·à¤·à¥à¤  à¤®à¤£à¥à¤¡à¤²', '7': 'à¤¸à¤ªà¥à¤¤à¤® à¤®à¤£à¥à¤¡à¤²', '8': 'à¤…à¤·à¥à¤Ÿà¤® à¤®à¤£à¥à¤¡à¤²', '9': 'à¤¨à¤µà¤® à¤®à¤£à¥à¤¡à¤²', '10': 'à¤¦à¤¶à¤® à¤®à¤£à¥à¤¡à¤²' },
-    chapterNamesMr: { '1': 'à¤ªà¥à¤°à¤¥à¤® à¤®à¤£à¥à¤¡à¤²', '2': 'à¤¦à¥à¤µà¤¿à¤¤à¥€à¤¯ à¤®à¤£à¥à¤¡à¤²', '3': 'à¤¤à¥ƒà¤¤à¥€à¤¯ à¤®à¤£à¥à¤¡à¤²', '4': 'à¤šà¤¤à¥à¤°à¥à¤¥ à¤®à¤£à¥à¤¡à¤²', '5': 'à¤ªà¤žà¥à¤šà¤® à¤®à¤£à¥à¤¡à¤²', '6': 'à¤·à¤·à¥à¤  à¤®à¤£à¥à¤¡à¤²', '7': 'à¤¸à¤ªà¥à¤¤à¤® à¤®à¤£à¥à¤¡à¤²', '8': 'à¤…à¤·à¥à¤Ÿà¤® à¤®à¤£à¥à¤¡à¤²', '9': 'à¤¨à¤µà¤® à¤®à¤£à¥à¤¡à¤²', '10': 'à¤¦à¤¶à¤® à¤®à¤£à¥à¤¡à¤²' },
+    chapterNamesHi: { '1': 'प्रथम मण्डल', '2': 'द्वितीय मण्डल', '3': 'तृतीय मण्डल', '4': 'चतुर्थ मण्डल', '5': 'पञ्चम मण्डल', '6': 'षष्ठ मण्डल', '7': 'सप्तम मण्डल', '8': 'अष्टम मण्डल', '9': 'नवम मण्डल', '10': 'दशम मण्डल' },
+    chapterNamesMr: { '1': 'प्रथम मण्डल', '2': 'द्वितीय मण्डल', '3': 'तृतीय मण्डल', '4': 'चतुर्थ मण्डल', '5': 'पञ्चम मण्डल', '6': 'षष्ठ मण्डल', '7': 'सप्तम मण्डल', '8': 'अष्टम मण्डल', '9': 'नवम मण्डल', '10': 'दशम मण्डल' },
   },
   {
     slug: 'brahma-sutras',
     dataPrefix: 'brahma_sutras',
     lakeFile: 'vedic-lake.db',
     name: 'Brahma Sutras',
-    nameHi: 'à¤¬à¥à¤°à¤¹à¥à¤® à¤¸à¥‚à¤¤à¥à¤°',
-    nameMr: 'à¤¬à¥à¤°à¤¹à¥à¤® à¤¸à¥‚à¤¤à¥à¤°',
-    nameDevanagari: 'à¤¬à¥à¤°à¤¹à¥à¤®à¤¸à¥‚à¤¤à¥à¤°à¤¾à¤£à¤¿',
+    nameHi: 'ब्रह्म सूत्र',
+    nameMr: 'ब्रह्म सूत्र',
+    nameDevanagari: 'ब्रह्मसूत्राणि',
     totalChapters: 4,
     description: 'The foundation of Vedanta philosophy, systematizing the teachings of the Upanishads into 555 sutras.',
     category: 'other',
-    available: true,
+    available: false,
     storage: 'lake',
     chapterNames: { '1': 'Samanvaya', '2': 'Avirodha', '3': 'Sadhana', '4': 'Phala' },
-    chapterNamesHi: { '1': 'à¤¸à¤®à¤¨à¥à¤µà¤¯', '2': 'à¤…à¤µà¤¿à¤°à¥‹à¤§', '3': 'à¤¸à¤¾à¤§à¤¨à¤¾', '4': 'à¤«à¤²' },
-    chapterNamesMr: { '1': 'à¤¸à¤®à¤¨à¥à¤µà¤¯', '2': 'à¤…à¤µà¤¿à¤°à¥‹à¤§', '3': 'à¤¸à¤¾à¤§à¤¨à¤¾', '4': 'à¤«à¤²' },
+    chapterNamesHi: { '1': 'समन्वय', '2': 'अविरोध', '3': 'साधना', '4': 'फल' },
+    chapterNamesMr: { '1': 'समन्वय', '2': 'अविरोध', '3': 'साधना', '4': 'फल' },
   },
   {
     slug: 'samskaras',
     dataPrefix: 'samskaras',
     name: '16 Samskaras (Ritual Handbook)',
-    nameHi: 'à¥§à¥¬ à¤¸à¤‚à¤¸à¥à¤•à¤¾à¤° (à¤¸à¤‚à¤¸à¥à¤•à¤¾à¤° à¤µà¤¿à¤§à¤¿)',
-    nameMr: 'à¥§à¥¬ à¤¸à¤‚à¤¸à¥à¤•à¤¾à¤° (à¤¸à¤‚à¤¸à¥à¤•à¤¾à¤° à¤µà¤¿à¤§à¥€)',
-    nameDevanagari: 'à¤·à¥‹à¤¡à¤¶ à¤¸à¤‚à¤¸à¥à¤•à¤¾à¤°à¤¾à¤ƒ',
+    nameHi: '१६ संस्कार (संस्कार विधि)',
+    nameMr: '१६ संस्कार (संस्कार विधी)',
+    nameDevanagari: 'षोडश संस्काराः',
     totalChapters: 1,
     description: 'Practical guide to the 16 life-cycle rites from conception to last rites, including Mantras and procedures.',
     category: 'other',
-    available: true,
+    available: false,
     storage: 'json',
     chapterNames: { '1': 'Complete Ritual List' },
-    chapterNamesHi: { '1': 'à¤¸à¤‚à¤ªà¥‚à¤°à¥à¤£ à¤¸à¤‚à¤¸à¥à¤•à¤¾à¤° à¤¸à¥‚à¤šà¥€' },
-    chapterNamesMr: { '1': 'à¤¸à¤‚à¤ªà¥‚à¤°à¥à¤£ à¤¸à¤‚à¤¸à¥à¤•à¤¾à¤° à¤¸à¥‚à¤šà¥€' },
+    chapterNamesHi: { '1': 'संपूर्ण संस्कार सूची' },
+    chapterNamesMr: { '1': 'संपूर्ण संस्कार सूची' },
   },
   {
                 slug: 'bhagavata-purana',
     dataPrefix: 'bhagavata-purana',
     name: 'Srimad Bhagavatam (12 Cantos)',
-    nameHi: 'à¤¶à¥à¤°à¥€à¤®à¤¦ à¤­à¤¾à¤—à¤µà¤¤ à¤ªà¥à¤°à¤¾à¤£ (12 à¤¸à¥à¤•à¤¨à¥à¤§)',
-    nameMr: 'à¤¶à¥à¤°à¥€à¤®à¤¦ à¤­à¤¾à¤—à¤µà¤¤ à¤ªà¥à¤°à¤¾à¤£ (12 à¤¸à¥à¤•à¤¨à¥à¤§)',
-    nameDevanagari: 'à¤¶à¥à¤°à¥€à¤®à¤¦à¥à¤­à¤¾à¤—à¤µà¤¤à¤ªà¥à¤°à¤¾à¤£à¤®à¥',
+    nameHi: 'श्रीमद भागवत पुराण (12 स्कन्ध)',
+    nameMr: 'श्रीमद भागवत पुराण (12 स्कन्ध)',
+    nameDevanagari: 'श्रीमद्भागवतपुराणम्',
     totalChapters: 335,
     description: 'A poetic masterpiece focusing on Bhakti (devotion) towards Krishna, covering cosmos, evolution, and divine play. Currently containing Canto 1.',
     category: 'purana',
     available: true,
     storage: 'json',
     chapterNames: { '1': 'Chapter 1', '2': 'Chapter 2', '3': 'Chapter 3', '4': 'Chapter 4', '5': 'Chapter 5', '6': 'Chapter 6', '7': 'Chapter 7', '8': 'Chapter 8', '9': 'Chapter 9', '10': 'Chapter 10', '11': 'Chapter 11', '12': 'Chapter 12', '13': 'Chapter 13', '14': 'Chapter 14', '15': 'Chapter 15', '16': 'Chapter 16', '17': 'Chapter 17', '18': 'Chapter 18', '19': 'Chapter 19' },
-    chapterNamesHi: { '1': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 1', '2': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 2', '3': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 3', '4': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 4', '5': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 5', '6': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 6', '7': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 7', '8': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 8', '9': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 9', '10': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 10', '11': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 11', '12': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 12', '13': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 13', '14': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 14', '15': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 15', '16': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 16', '17': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 17', '18': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 18', '19': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 19' },
-    chapterNamesMr: { '1': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 1', '2': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 2', '3': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 3', '4': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 4', '5': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 5', '6': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 6', '7': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 7', '8': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 8', '9': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 9', '10': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 10', '11': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 11', '12': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 12', '13': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 13', '14': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 14', '15': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 15', '16': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 16', '17': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 17', '18': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 18', '19': 'à¤…à¤§à¥à¤¯à¤¾à¤¯ 19' }
+    chapterNamesHi: { '1': 'अध्याय 1', '2': 'अध्याय 2', '3': 'अध्याय 3', '4': 'अध्याय 4', '5': 'अध्याय 5', '6': 'अध्याय 6', '7': 'अध्याय 7', '8': 'अध्याय 8', '9': 'अध्याय 9', '10': 'अध्याय 10', '11': 'अध्याय 11', '12': 'अध्याय 12', '13': 'अध्याय 13', '14': 'अध्याय 14', '15': 'अध्याय 15', '16': 'अध्याय 16', '17': 'अध्याय 17', '18': 'अध्याय 18', '19': 'अध्याय 19' },
+    chapterNamesMr: { '1': 'अध्याय 1', '2': 'अध्याय 2', '3': 'अध्याय 3', '4': 'अध्याय 4', '5': 'अध्याय 5', '6': 'अध्याय 6', '7': 'अध्याय 7', '8': 'अध्याय 8', '9': 'अध्याय 9', '10': 'अध्याय 10', '11': 'अध्याय 11', '12': 'अध्याय 12', '13': 'अध्याय 13', '14': 'अध्याय 14', '15': 'अध्याय 15', '16': 'अध्याय 16', '17': 'अध्याय 17', '18': 'अध्याय 18', '19': 'अध्याय 19' }
   },
   {
     slug: 'garuda-purana',
     dataPrefix: 'garuda-purana',
     name: 'Garuda Purana',
-    nameHi: 'à¤—à¤°à¥à¤¡à¤¼ à¤ªà¥à¤°à¤¾à¤£',
-    nameMr: 'à¤—à¤°à¥à¤¡ à¤ªà¥à¤°à¤¾à¤£',
-    nameDevanagari: 'à¤—à¤°à¥à¤¡à¤¼à¤ªà¥à¤°à¤¾à¤£à¤®à¥',
+    nameHi: 'गरुड़ पुराण',
+    nameMr: 'गरुड पुराण',
+    nameDevanagari: 'गरुड़पुराणम्',
     totalChapters: 2,
     description: 'Dialogues between Vishnu and Garuda on life after death, cosmology, and the path to liberation.',
     category: 'purana',
-    available: true,
+    available: false,
     storage: 'json',
     chapterNames: { '1': 'Achara Khanda', '2': 'Preta Khanda' },
-    chapterNamesHi: { '1': 'à¤†à¤šà¤¾à¤° à¤•à¤¾à¤£à¥à¤¡', '2': 'à¤ªà¥à¤°à¥‡à¤¤ à¤•à¤¾à¤£à¥à¤¡' },
-    chapterNamesMr: { '1': 'à¤†à¤šà¤¾à¤° à¤•à¤¾à¤£à¥à¤¡', '2': 'à¤ªà¥à¤°à¥‡à¤¤ à¤•à¤¾à¤£à¥à¤¡' },
+    chapterNamesHi: { '1': 'आचार काण्ड', '2': 'प्रेत काण्ड' },
+    chapterNamesMr: { '1': 'आचार काण्ड', '2': 'प्रेत काण्ड' },
   },
   {
     slug: 'manusmriti',
     dataPrefix: 'manusmriti',
     name: 'Manusmriti',
-    nameHi: 'à¤®à¤¨à¥à¤¸à¥à¤®à¥ƒà¤¤à¤¿',
-    nameMr: 'à¤®à¤¨à¥à¤¸à¥à¤®à¥ƒà¤¤à¤¿',
-    nameDevanagari: 'à¤®à¤¨à¥à¤¸à¥à¤®à¥ƒà¤¤à¤¿à¤ƒ',
+    nameHi: 'मनुस्मृति',
+    nameMr: 'मनुस्मृति',
+    nameDevanagari: 'मनुस्मृतिः',
     totalChapters: 12,
     description: 'The ancient legal and social code that shaped traditional Indian jurisprudence and societal order.',
     category: 'other',
-    available: true,
+    available: false,
     chapterNames: { '1': 'Creation', '12': 'The Fruits of Action' },
-    chapterNamesHi: { '1': 'à¤¸à¥ƒà¤·à¥à¤Ÿà¤¿', '12': 'à¤•à¤°à¥à¤®à¥‹à¤‚ à¤•à¤¾ à¤«à¤²' },
-    chapterNamesMr: { '1': 'à¤¸à¥ƒà¤·à¥à¤Ÿà¥€', '12': 'à¤•à¤°à¥à¤®à¤¾à¤‚à¤šà¥‡ à¤«à¤³' },
+    chapterNamesHi: { '1': 'सृष्टि', '12': 'कर्मों का फल' },
+    chapterNamesMr: { '1': 'सृष्टी', '12': 'कर्मांचे फळ' },
   },
   {
     slug: 'dasbodh',
     dataPrefix: 'dasbodh',
     name: 'Dasbodh',
-    nameHi: 'à¤¦à¤¾à¤¸à¤¬à¥‹à¤§ (à¤¶à¥à¤°à¥€ à¤¸à¤®à¤°à¥à¤¥ à¤°à¤¾à¤®à¤¦à¤¾à¤¸)',
-    nameMr: 'à¤¦à¤¾à¤¸à¤¬à¥‹à¤§ (à¤¶à¥à¤°à¥€ à¤¸à¤®à¤°à¥à¤¥ à¤°à¤¾à¤®à¤¦à¤¾à¤¸)',
-    nameDevanagari: 'à¤¦à¤¾à¤¸à¤¬à¥‹à¤§à¤ƒ',
+    nameHi: 'दासबोध (श्री समर्थ रामदास)',
+    nameMr: 'दासबोध (श्री समर्थ रामदास)',
+    nameDevanagari: 'दासबोधः',
     totalChapters: 20,
     description: 'The definitive philosophical work of Samarth Ramdas Swami, focusing on the synthesis of worldly activity and spiritual growth.',
     category: 'other',
-    available: true,
+    available: false,
     chapterNames: { '1': 'Stavana', '2': 'Murkha Lakshane' },
-    chapterNamesHi: { '1': 'à¤¸à¥à¤¤à¤µà¤¨', '2': 'à¤®à¥‚à¤°à¥à¤– à¤²à¤•à¥à¤·à¤£' },
-    chapterNamesMr: { '1': 'à¤¸à¥à¤¤à¤µà¤¨', '2': 'à¤®à¥‚à¤°à¥à¤– à¤²à¤•à¥à¤·à¤£à¥‡' },
+    chapterNamesHi: { '1': 'स्तवन', '2': 'मूर्ख लक्षण' },
+    chapterNamesMr: { '1': 'स्तवन', '2': 'मूर्ख लक्षणे' },
   },
   {
     slug: 'stotras',
     dataPrefix: 'stotras',
     name: 'Stotras & Stuties',
-    nameHi: 'à¤¸à¥à¤¤à¥‹à¤¤à¥à¤° à¤”à¤° à¤¸à¥à¤¤à¥à¤¤à¤¿',
-    nameMr: 'à¤¸à¥à¤¤à¥‹à¤¤à¥à¤°à¥‡ à¤†à¤£à¤¿ à¤¸à¥à¤¤à¥à¤¤à¥€',
-    nameDevanagari: 'à¤¸à¥à¤¤à¥‹à¤¤à¥à¤°à¤¾à¤£à¤¿',
+    nameHi: 'स्तोत्र और स्तुति',
+    nameMr: 'स्तोत्रे आणि स्तुती',
+    nameDevanagari: 'स्तोत्राणि',
     totalChapters: 1,
     description: 'A collection of powerful hymns dedicated to various deities including Sahasranamas and Shatakas.',
     category: 'other',
     available: true,
     chapterNames: { '1': 'Universal Collection' },
-    chapterNamesHi: { '1': 'à¤¸à¤‚à¤ªà¥‚à¤°à¥à¤£ à¤¸à¤‚à¤•à¤²à¤¨' },
-    chapterNamesMr: { '1': 'à¤¸à¤‚à¤ªà¥‚à¤°à¥à¤£ à¤¸à¤‚à¤•à¤²à¤¨' },
+    chapterNamesHi: { '1': 'संपूर्ण संकलन' },
+    chapterNamesMr: { '1': 'संपूर्ण संकलन' },
   },
   {
     slug: 'samaveda',
     dataPrefix: 'samaveda',
     name: 'Samaveda Samhita',
-    nameHi: 'à¤¸à¤¾à¤®à¤µà¥‡à¤¦ à¤¸à¤‚à¤¹à¤¿à¤¤à¤¾',
-    nameMr: 'à¤¸à¤¾à¤®à¤µà¥‡à¤¦ à¤¸à¤‚à¤¹à¤¿à¤¤à¤¾',
-    nameDevanagari: 'à¤¸à¤¾à¤®à¤µà¥‡à¤¦à¤ƒ',
+    nameHi: 'सामवेद संहिता',
+    nameMr: 'सामवेद संहिता',
+    nameDevanagari: 'सामवेदः',
     totalChapters: 2,
     description: 'The Veda of Melodies and Chants, emphasizing the musical rendering of Vedic hymns.',
     category: 'veda',
-    available: true,
+    available: false,
     chapterNames: {},
     chapterNamesHi: {},
     chapterNamesMr: {},
@@ -457,13 +457,13 @@ export const VEDIC_LIBRARY: VedicText[] = [
     slug: 'yajurveda',
     dataPrefix: 'yajurveda',
     name: 'Yajurveda Samhita',
-    nameHi: 'à¤¯à¤œà¥à¤°à¥à¤µà¥‡à¤¦ à¤¸à¤‚à¤¹à¤¿à¤¤à¤¾',
-    nameMr: 'à¤¯à¤œà¥à¤°à¥à¤µà¥‡à¤¦ à¤¸à¤‚à¤¹à¤¿à¤¤à¤¾',
-    nameDevanagari: 'à¤¯à¤œà¥à¤°à¥à¤µà¥‡à¤¦à¤ƒ',
+    nameHi: 'यजुर्वेद संहिता',
+    nameMr: 'यजुर्वेद संहिता',
+    nameDevanagari: 'यजुर्वेदः',
     totalChapters: 40,
     description: 'The Veda of Rituals, detailing the mantras and procedures for sacrifices and daily duties.',
     category: 'veda',
-    available: true,
+    available: false,
     chapterNames: {},
     chapterNamesHi: {},
     chapterNamesMr: {},
@@ -472,13 +472,13 @@ export const VEDIC_LIBRARY: VedicText[] = [
     slug: 'atharvaveda',
     dataPrefix: 'atharvaveda',
     name: 'Atharvaveda Samhita',
-    nameHi: 'à¤…à¤¥à¤°à¥à¤µà¤µà¥‡à¤¦ à¤¸à¤‚à¤¹à¤¿à¤¤à¤¾',
-    nameMr: 'à¤…à¤¥à¤°à¥à¤µà¤µà¥‡à¤¦ à¤¸à¤‚à¤¹à¤¿à¤¤à¤¾',
-    nameDevanagari: 'à¤…à¤¥à¤°à¥à¤µà¤µà¥‡à¤¦à¤ƒ',
+    nameHi: 'अथर्ववेद संहिता',
+    nameMr: 'अथर्ववेद संहिता',
+    nameDevanagari: 'अथर्ववेदः',
     totalChapters: 20,
     description: 'The Veda of Formulas, containing hymns for daily life, healing, and protection.',
     category: 'veda',
-    available: true,
+    available: false,
     chapterNames: {},
     chapterNamesHi: {},
     chapterNamesMr: {},
@@ -487,25 +487,66 @@ export const VEDIC_LIBRARY: VedicText[] = [
 
 
 /** Map of scripture slugs to their audited readiness scores (%) */
+/**
+ * 100% Completed Books Pool (Gold Tier):
+ * Fully verified canonical scriptures with complete verses, multi-scholar commentary, and zero placeholders.
+ */
+export const COMPLETED_BOOKS_SLUGS = [
+  'bhagavad-gita',
+  'isha-upanishad',
+  'kena-upanishad',
+  'yoga-sutras',
+] as const;
+
+export type CompletedBookSlug = (typeof COMPLETED_BOOKS_SLUGS)[number];
+
+/** Canonical verse counts for 100% completed scriptures */
+export const COMPLETED_BOOK_STATS: Record<CompletedBookSlug, { verses: number; chapters: number }> = {
+  'bhagavad-gita': { verses: 701, chapters: 18 },
+  'isha-upanishad': { verses: 19, chapters: 1 },
+  'kena-upanishad': { verses: 34, chapters: 1 },
+  'yoga-sutras': { verses: 196, chapters: 4 },
+};
+
+/** Ingestion pipeline books metadata (Silver & Bronze tiers) */
+export const PIPELINE_BOOK_STATS: Record<string, { verses: number; chapters: number; tier: 'silver' | 'bronze' }> = {
+  // Silver Tier (Active Ingestion & Structural NVF Parsing)
+  'mahabharata': { verses: 100000, chapters: 2115, tier: 'silver' },
+  'garuda-purana': { verses: 19000, chapters: 250, tier: 'silver' },
+  'vishnu-purana': { verses: 7000, chapters: 126, tier: 'silver' },
+  'bhagavata-purana': { verses: 18000, chapters: 335, tier: 'silver' },
+  'samskaras': { verses: 24, chapters: 1, tier: 'silver' },
+  'stotras': { verses: 17, chapters: 1, tier: 'silver' },
+  // Bronze Tier (Raw Acquisition & Ingestion Queue)
+  'rigveda': { verses: 10552, chapters: 10, tier: 'bronze' },
+  'samaveda': { verses: 1875, chapters: 2, tier: 'bronze' },
+  'yajurveda': { verses: 1975, chapters: 40, tier: 'bronze' },
+  'atharvaveda': { verses: 5977, chapters: 20, tier: 'bronze' },
+  'brahma-sutras': { verses: 555, chapters: 4, tier: 'bronze' },
+  'manusmriti': { verses: 2684, chapters: 12, tier: 'bronze' },
+  'dasbodh': { verses: 7751, chapters: 20, tier: 'bronze' },
+};
+
+/** Map of scripture slugs to their audited readiness scores (%) */
 export const SCRIPTURE_READINESS_SCORES: Record<string, number> = {
+  'bhagavad-gita': 100.0,
   'isha-upanishad': 100.0,
   'kena-upanishad': 100.0,
-  'bhagavad-gita': 100.0,
-  'stotras': 100.0,
-  'mahabharata': 100.0,
-  'bhagavata-purana': 100.0,
   'yoga-sutras': 100.0,
-  'vishnu-purana': 100.0,
-  'samskaras': 100.0,
-  'garuda-purana': 100.0,
-  'rigveda': 100.0,
-  'brahma-sutras': 100.0,
-  'manusmriti': 100.0,
-  'dasbodh': 0.0,
-  'samaveda': 100.0,
-  'yajurveda': 100.0,
-  'atharvaveda': 100.0,
-}
+  'mahabharata': 85.0,
+  'vishnu-purana': 65.0,
+  'garuda-purana': 55.0,
+  'bhagavata-purana': 50.0,
+  'samskaras': 45.0,
+  'stotras': 40.0,
+  'brahma-sutras': 15.0,
+  'rigveda': 10.0,
+  'samaveda': 10.0,
+  'yajurveda': 10.0,
+  'atharvaveda': 10.0,
+  'manusmriti': 5.0,
+  'dasbodh': 5.0,
+};
 
 /** Check if strict demo gating is enabled */
 export function isStrictDemoGatingEnabled(): boolean {
@@ -516,6 +557,11 @@ export function isStrictDemoGatingEnabled(): boolean {
   return false;
 }
 
+/** Check if a text is 100% completed */
+export function isTextCompleted(slug: string): boolean {
+  return COMPLETED_BOOKS_SLUGS.includes(slug as CompletedBookSlug);
+}
+
 /** Get a text by its URL slug */
 export function getTextBySlug(slug: string): VedicText | undefined {
   const text = VEDIC_LIBRARY.find(t => t.slug === slug);
@@ -523,78 +569,100 @@ export function getTextBySlug(slug: string): VedicText | undefined {
   if (isStrictDemoGatingEnabled()) {
     const score = SCRIPTURE_READINESS_SCORES[text.slug] ?? 0;
     if (score < 100) {
-      return { ...text, available: true };
+      return { ...text, available: false };
     }
   }
   return text;
 }
 
-/** Get all currently available texts */
-export function getAvailableTexts(): VedicText[] {
-    const strictDemo = isStrictDemoGatingEnabled();
-    return VEDIC_LIBRARY
-      .map(t => {
-        if (strictDemo) {
-          const score = SCRIPTURE_READINESS_SCORES[t.slug] ?? 0;
-          if (score < 100) return { ...t, available: true };
-        }
-        return t;
-      })
-      .filter(t => t.available);
+/** Get all currently completed 100% verified texts (Gold Pool) */
+export function getCompletedTexts(): VedicText[] {
+  return VEDIC_LIBRARY.filter(t => isTextCompleted(t.slug));
 }
 
-/** Get totals for all available texts */
+/** Get all currently available texts (accessible in UI) */
+export function getAvailableTexts(): VedicText[] {
+  const strictDemo = isStrictDemoGatingEnabled();
+  return VEDIC_LIBRARY
+    .map(t => {
+      if (strictDemo) {
+        const score = SCRIPTURE_READINESS_SCORES[t.slug] ?? 0;
+        if (score < 100) return { ...t, available: false };
+      }
+      return t;
+    })
+    .filter(t => t.available);
+}
+
+/** Standardized scriptural metrics with two-pool breakdown */
 export function getLibraryStats() {
-    const texts = getAvailableTexts()
-    return {
-        totalBooks: texts.length,
-        totalChapters: texts.reduce((acc: number, t: VedicText) => acc + t.totalChapters, 0),
-        totalAuthors: getLiveScholars().length,
-        totalLangs: 4,   // EN, HI, MR, SA
-        totalVerses: '1,500+', // Derive from manifest or stats in future
-        targetVerses: '100,000+',
-        categories: Array.from(new Set(texts.map((t: VedicText) => t.category)))
-    }
+  const completedVerses = Object.values(COMPLETED_BOOK_STATS).reduce((acc, b) => acc + b.verses, 0); // 950
+  const completedChapters = Object.values(COMPLETED_BOOK_STATS).reduce((acc, b) => acc + b.chapters, 0); // 24
+  const completedBooks = COMPLETED_BOOKS_SLUGS.length; // 4
+
+  const pipelineBooks = Object.keys(PIPELINE_BOOK_STATS).length; // 13
+  const pipelineVerses = Object.values(PIPELINE_BOOK_STATS).reduce((acc, b) => acc + b.verses, 0); // 175,410
+  const pipelineChapters = Object.values(PIPELINE_BOOK_STATS).reduce((acc, b) => acc + b.chapters, 0); // 2,916
+
+  const available = getAvailableTexts();
+
+  return {
+    // Standard Unit Pool 1: 100% Completed Verified Pool (Gold)
+    completedBooks,
+    completedChapters,
+    completedVerses,
+    // Standard Unit Pool 2: Ingestion & Pipeline Pool (Silver & Bronze)
+    pipelineBooks,
+    pipelineChapters,
+    pipelineVerses,
+    // Physical Lake Database Shards (Turso / SQLite)
+    databaseVerses: 126306,
+    // Total Catalog Metrics
+    totalBooks: available.length,
+    totalChapters: available.reduce((acc, t) => acc + t.totalChapters, 0),
+    totalVerses: `${(completedVerses + pipelineVerses).toLocaleString()}+`,
+    targetVerses: '100,000+',
+    totalAuthors: getLiveScholars().length,
+    totalLangs: 4, // Sanskrit, English, Hindi, Marathi
+    categories: Array.from(new Set(available.map(t => t.category)))
+  };
 }
 
 /** Get texts grouped by parent-child hierarchy with category totals */
 export function getVedicHierarchy() {
-    const all = getAvailableTexts()
-    const parents = all.filter(t => !t.parentSlug)
-    const statsByCat: Record<string, { books: number, fragments: number }> = {}
-    
-    all.forEach(t => {
-        if (!statsByCat[t.category]) statsByCat[t.category] = { books: 0, fragments: 0 }
-        statsByCat[t.category].books += 1
-        statsByCat[t.category].fragments += (t.totalChapters * 10) // Approx for metrics
-    })
+  const all = VEDIC_LIBRARY;
+  const parents = all.filter(t => !t.parentSlug);
+  const statsByCat: Record<string, { books: number, fragments: number }> = {};
 
-    return {
-        tree: parents.map(p => ({
-            ...p,
-            children: all.filter(c => c.parentSlug === p.slug)
-        })),
-        statsByCat
-    }
+  all.forEach(t => {
+    if (!statsByCat[t.category]) statsByCat[t.category] = { books: 0, fragments: 0 };
+    statsByCat[t.category].books += 1;
+    statsByCat[t.category].fragments += (t.totalChapters * 10);
+  });
+
+  return {
+    tree: parents.map(p => ({
+      ...p,
+      children: all.filter(c => c.parentSlug === p.slug)
+    })),
+    statsByCat
+  };
 }
 
 /** Build all static paths for Next.js generateStaticParams */
 export function getAllTextChapterPaths(): Array<{ text: string; chapter: string }> {
-    return getAvailableTexts()
-      .flatMap(t => {
-        const paths = Array.from({ length: t.totalChapters }, (_, i) => ({
-          text: t.slug,
-          chapter: String(i + 1),
-        }));
-        if (t.hasPreface) {
-          paths.push({ text: t.slug, chapter: 'preface' });
-        }
-        if (t.hasPostface) {
-          paths.push({ text: t.slug, chapter: 'postface' });
-        }
-        return paths;
-      })
+  return getAvailableTexts()
+    .flatMap(t => {
+      const paths = Array.from({ length: t.totalChapters }, (_, i) => ({
+        text: t.slug,
+        chapter: String(i + 1),
+      }));
+      if (t.hasPreface) {
+        paths.push({ text: t.slug, chapter: 'preface' });
+      }
+      if (t.hasPostface) {
+        paths.push({ text: t.slug, chapter: 'postface' });
+      }
+      return paths;
+    });
 }
-
-
-

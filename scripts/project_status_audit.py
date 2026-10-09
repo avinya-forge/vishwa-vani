@@ -80,12 +80,12 @@ SUSPICIOUS_PATTERNS = [
     "Meaning of the verse based on actual translation",
     "This is an authentic Hindi translation",
     "This is an authentic Marathi translation",
-    "placeholder", "TODO"
+    "placeholder", "TODO", "sanskrit 1", "meaning 1", "author1"
 ]
 
 def audit_file_quality(filepath):
     try:
-        with open(filepath, 'r') as f:
+        with open(filepath, 'r', encoding='utf-8') as f:
             content = f.read()
             data = json.loads(content)
         verses = data if isinstance(data, list) else data.get('verses', [])
@@ -111,7 +111,7 @@ def get_progress_bar(percent):
     return "[" + "█" * filled + "░" * (10 - filled) + "]"
 
 def run_audit():
-    with open('lib/texts.ts', 'r') as f:
+    with open('lib/texts.ts', 'r', encoding='utf-8') as f:
         lib_content = f.read()
     books_raw = re.findall(r'slug: \'(.*?)\',.*?name: \'(.*?)\',.*?available: (true|false)', lib_content, re.DOTALL)
     report = []
@@ -162,8 +162,8 @@ def run_audit():
             header = f"### {b['name']}{alert}".rstrip()
             lines.append(f"{header}\n**Readiness Score: {b['score']}%** {get_progress_bar(b['score'])}\n- **Slug:** `{b['slug']}` | **UI:** {b['ui']} | **Vedic Lab:** {b['lab']}\n- **Structural:** Chapters: `{b['progress']['chapters']}` | Verses: `{b['progress']['verses']}`\n- **Linguistic:** Layers: `{b['progress']['langs']}` | Authors: `{b['progress']['authors']}`\n> {b['description']}\n")
     lines.append('---\n## 🛠️ Verification Methodology\n1. **Code View**: Actual unique verse IDs and layers counted from `data/` tiers.\n2. **Canonical View**: Measured against established targets.\n3. **Integrity Check**: Automatic detection of placeholder patterns.\n')
-    with open('docs/PROJECT_STATUS.md', 'w') as f: f.write('\n'.join(lines))
-    with open('.status', 'w') as f: json.dump(report, f, indent=2)
+    with open('docs/PROJECT_STATUS.md', 'w', encoding='utf-8') as f: f.write('\n'.join(lines))
+    with open('.status', 'w', encoding='utf-8') as f: json.dump(report, f, indent=2)
     print("Enhanced Project Status Audit Complete.")
 
 if __name__ == '__main__': run_audit()

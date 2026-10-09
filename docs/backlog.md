@@ -1,4 +1,4 @@
-﻿# 📖 Vishwa-Vani: Global Project Backlog
+# 📖 Vishwa-Vani: Global Project Backlog
 
 ## 🔴 EPIC-P0-DATABASE-MIGRATION-TURSO [COMPLETED]
 *Immediate end-to-end migration of vedic-lake.db to Turso Edge Database to bypass Vercel 50MB and GitHub 100MB limits. This is currently blocking production deployments and must be resolved before any other tasks.*
@@ -7,6 +7,21 @@
 - [x] DB-003: Schema & Data Sync Pipeline - Create scripts/sync_turso.js to parse local Gold JSON files and insert tables/rows into the remote Turso database dynamically.
 - [x] DB-004: Async Route Upgrades - Refactor Next.js React Server Components (pp/[text]/[chapter]/page.tsx) and API routes (/api/search) to strictly wait the new Turso database queries.
 - [x] DB-005: Repo Cleanup & Deployment Verification - Add *.db to .gitignore, completely remove public/vedic-lake.db from git history, and verify a clean Vercel production build under the 50MB limit.
+
+## 🔴 EPIC-P0-PRODUCTION-AUDIT-AND-CORRECTIONS [COMPLETED]
+*Critical production deployment audit fixes for vishwa-vani.co.uk: brand assets, navbar metrics, navigation cleanup, page styling, metric standardization, roadmap dual-pool architecture, and full-spectrum character encoding/mojibake repair.*
+- [x] NAV-001: Restore Sanskrit 'ॐ' Logo Icon in Navbar - Fix mojibake corruption (`à¥ ` -> `ॐ`) and verify brand icon rendering and styling across viewports.
+- [x] NAV-002: Correct Navbar Shloka Metric to 100% Completed Books - Replace hardcoded 709 verse count with verified canonical verse count of 100% complete Gold scriptures (950 verses: Gita 701 + Isha 19 + Kena 34 + Yoga Sutras 196).
+- [x] NAV-003: Harmonize Navbar Books & Verses Center Stats - Fix desktop navbar metrics (currently showing misleading 17 Books / 1,500+ Verses) to reflect the verified 100% completed pool (4 Books / 950 Verses) with clear labeling.
+- [x] NAV-004: Remove Isolated 'Data Engine' Link from Navbar - Remove `/engine` from primary navbar on desktop and mobile menu to eliminate unwarranted nav clutter.
+- [x] NAV-005: Fix 'Vedic Labs' Navbar Tab Active State - Fix styling bug where Vedic Labs link remains permanently orange on non-lab pages; ensure active orange highlight only triggers when route is `/lab`.
+- [x] LAB-001: Unify Vedic Lab Page Styling & Remove Mouse Dot Effect - Align `/lab` background with site-wide cream/dark theme (`bg-[#FDFBF7] dark:bg-[#1C1917]`) and remove distracting mouse-cursor particle dots (`CosmicCanvas`).
+- [x] METRIC-001: Establish Scriptural Standard Unit Hierarchy - Formalize 3-tier unit standard across system: lowest atomic unit is Shloka (Mantra/Verse/Sutra), intermediate unit is Chapter (Adhyaya/Pada/Parva/Khanda), and highest unit is Book (Grantha).
+- [x] METRIC-002: Implement Dual-Pool Architecture - Partition catalog into 2 explicit pools: (1) 100% Completed & Verified Books Pool (Gold tier: 4 books, 24 chapters, 950 verses) and (2) Ingestion & Pipeline Pool (Silver & Bronze tiers: 13 books, 3,000+ chapters, ~168,000+ verses).
+- [x] ROADMAP-001: Roadmap Metrics & Diagrammatic Tier Visualizer - Overhaul `/roadmap` to diagrammatically display Gold, Silver, and Bronze tiers with short definitions, exact 3-unit counts, and real database metrics.
+- [x] ROADMAP-002: Correct 'How We Process Data' 5-Stage Pipeline - Update roadmap pipeline visualizer from confusing labels to standard progression: Bronze (Raw Acquisition) -> Silver (Structural NVF Parsing) -> Gold (Vedic Schema & Multi-Layer Commentary) -> Verification (Zero Hallucination Gate) -> Live (Production Edge).
+- [x] CHAR-001: Sweep & Repair Character Encoding (Mojibake) Across Codebase - Clean and restore authentic Devanagari Sanskrit/Hindi/Marathi text and emojis across `lib/texts.ts`, `app/page.tsx`, `components/layout/Header.tsx`, `components/shloka/study-client.tsx`, and `components/shloka/shloka-mask.tsx`.
+- [x] AUDIT-001: Realign Scripture Readiness Scores & Catalog Gating - Synchronize `SCRIPTURE_READINESS_SCORES` and `lib/texts.ts` so incomplete books are not deceptively reported as 100% while keeping reader routes safe.
 
 ## 🔴 EPIC-SECURITY-AND-BUGS [ACTIVE]
 *All bug and security issues are prioritized here.*
