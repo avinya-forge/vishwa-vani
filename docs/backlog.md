@@ -49,3 +49,11 @@
 - [ ] AI-002: Enhance LLM Contextual Output.
 - [ ] AI-003: Deep Shloka Symbolic Decoding (Puranas).
 - [ ] AI-004: Concept Generalization & Vectorization.
+
+## 🟣 EPIC-LONG-TERM-ARCHITECTURE (ORACLE) [FUTURE]
+*When the dataset exceeds ~7-8GB (approx. after vectorizing all Puranas), migrate from Turso to Oracle Cloud "Always Free" tier for absolute 200GB ownership and native Postgres/pgvector.*
+- [ ] OCI-001: Provision Oracle ARM instance (24GB RAM, 200GB Storage).
+- [ ] OCI-002: Setup Postgres & pgvector via Docker.
+- [ ] OCI-003: Migrate LibSQL/Turso dump to PostgreSQL.
+- [ ] OCI-004: Swap @libsql/client to pg driver in server-lake.ts.
+
