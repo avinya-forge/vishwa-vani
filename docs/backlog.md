@@ -26,6 +26,11 @@
 - [ ] UI-004: Commentary & Language Selector - Polish the UI for switching between the 4+ authors and 3+ languages per shloka.
 - [ ] UI-005: Daily Pooja & Festivals - Build a UI module for dynamically generated pooja paths and calendars.
 
+- [ ] UI-006: Library Page Overhaul - Redesign the library landing page so it visually resembles a library (book covers, categories, summaries) rather than a raw data list.
+- [ ] UI-007: Book Entry Journeys - Create a clear, structured entry point for every book. When a user clicks a book, they should see an introduction, chapter list, and a prominent 'Start Reading' button.
+- [ ] UI-008: Navigation & Journey Mapping - Ensure that every page provides a logical path for the user to discover books and dive into reading them.
+- [ ] UI-009: Book-Specific UI Adjustments - Review each integrated book's UI to ensure its unique structure is presented beautifully and intuitively.
+
 ## 🟢 EPIC-BOOK: SKANDA PURANA [QUEUED]
 *End-to-end integration for Skanda Purana.*
 - [ ] ACQ-SKP-001: Bronze ingestion and data processing for new authors.
@@ -46,6 +51,55 @@
 - [ ] ACQ-RV-002: Silver Regex Parse & Gold Translation.
 - [ ] UI-RV-001: UI Integration & specific styling.
 - [ ] AUDIT-RV-001: Auditing, verification, and testing for correction.
+
+## 🟢 EPIC-BOOK: SRIMAD BHAGAVATAM [QUEUED]
+*End-to-end integration for Srimad Bhagavatam.*
+- [ ] ACQ-BHA-001: Bronze ingestion and data processing for new authors.
+- [ ] ACQ-BHA-002: Silver Regex Parse & Gold Translation.
+- [ ] UI-BHA-001: UI Integration & specific styling.
+- [ ] AUDIT-BHA-001: Auditing, verification, and testing for correction.
+
+## 🟢 EPIC-BOOK: STOTRAS & STUTIES [QUEUED]
+*End-to-end integration for Stotras & Stuties.*
+- [ ] ACQ-STO-001: Bronze ingestion and data processing for new authors.
+- [ ] ACQ-STO-002: Silver Regex Parse & Gold Translation.
+- [ ] UI-STO-001: UI Integration & specific styling.
+- [ ] AUDIT-STO-001: Auditing, verification, and testing for correction.
+
+## 🟢 EPIC-BOOK: BRAHMA SUTRAS [QUEUED]
+*End-to-end integration for Brahma Sutras.*
+- [ ] ACQ-BRA-001: Bronze ingestion and data processing for new authors.
+- [ ] ACQ-BRA-002: Silver Regex Parse & Gold Translation.
+- [ ] UI-BRA-001: UI Integration & specific styling.
+- [ ] AUDIT-BRA-001: Auditing, verification, and testing for correction.
+
+## 🟢 EPIC-BOOK: MANUSMRITI [QUEUED]
+*End-to-end integration for Manusmriti.*
+- [ ] ACQ-MAN-001: Bronze ingestion and data processing for new authors.
+- [ ] ACQ-MAN-002: Silver Regex Parse & Gold Translation.
+- [ ] UI-MAN-001: UI Integration & specific styling.
+- [ ] AUDIT-MAN-001: Auditing, verification, and testing for correction.
+
+## 🟢 EPIC-BOOK: SAMAVEDA SAMHITA [QUEUED]
+*End-to-end integration for Samaveda Samhita.*
+- [ ] ACQ-SAM-001: Bronze ingestion and data processing for new authors.
+- [ ] ACQ-SAM-002: Silver Regex Parse & Gold Translation.
+- [ ] UI-SAM-001: UI Integration & specific styling.
+- [ ] AUDIT-SAM-001: Auditing, verification, and testing for correction.
+
+## 🟢 EPIC-BOOK: YAJURVEDA SAMHITA [QUEUED]
+*End-to-end integration for Yajurveda Samhita.*
+- [ ] ACQ-YAJ-001: Bronze ingestion and data processing for new authors.
+- [ ] ACQ-YAJ-002: Silver Regex Parse & Gold Translation.
+- [ ] UI-YAJ-001: UI Integration & specific styling.
+- [ ] AUDIT-YAJ-001: Auditing, verification, and testing for correction.
+
+## 🟢 EPIC-BOOK: ATHARVAVEDA SAMHITA [QUEUED]
+*End-to-end integration for Atharvaveda Samhita.*
+- [ ] ACQ-ATH-001: Bronze ingestion and data processing for new authors.
+- [ ] ACQ-ATH-002: Silver Regex Parse & Gold Translation.
+- [ ] UI-ATH-001: UI Integration & specific styling.
+- [ ] AUDIT-ATH-001: Auditing, verification, and testing for correction.
 
 ## 🔵 EPIC-AI-BRAIN-ENHANCEMENT [BACKGROUND DEV]
 *LLM, Symbolic Extraction, Vector Search.*
