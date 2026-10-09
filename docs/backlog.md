@@ -23,6 +23,16 @@
 - [x] CHAR-001: Sweep & Repair Character Encoding (Mojibake) Across Codebase - Clean and restore authentic Devanagari Sanskrit/Hindi/Marathi text and emojis across `lib/texts.ts`, `app/page.tsx`, `components/layout/Header.tsx`, `components/shloka/study-client.tsx`, and `components/shloka/shloka-mask.tsx`.
 - [x] AUDIT-001: Realign Scripture Readiness Scores & Catalog Gating - Synchronize `SCRIPTURE_READINESS_SCORES` and `lib/texts.ts` so incomplete books are not deceptively reported as 100% while keeping reader routes safe.
 
+## 🔴 EPIC-P0-UX-READING-EXPERIENCE-AND-DYNAMIC-METRICS [ACTIVE]
+*Immediate overhaul of reading layout, dynamic metric calculation, universal library access, responsive typography, and brand-aligned navigation to fix critical usability and statistical defects reported in production audit.*
+- [ ] DYN-001: Zero Hardcoded Verse Counts & Dynamic Aggregation Engine - Replace all hardcoded verse and book statistics (including 709, 950, 1500+) with dynamic queries from the live corpus database and shard manifests. Ensure library stats dynamically reflect the true loaded corpus (126,306+ database verses / 148,000+ total gold verses across all 17 sacred texts).
+- [ ] READ-001: Eliminate Double Sidebar Cramping in Reader - Refactor `components/shloka/study-client.tsx` to remove the dual 280px/320px static sidebars that steal 600px of horizontal space and crush the center content. Convert Vedic Labs and Interactive Tools into non-intrusive collapsible drawers or unified header/footer utilities.
+- [ ] READ-002: Transition Shloka Layout to Dignified Single-Column Reading Flow - Replace the cramped 2-column card grid (`grid-cols-1 lg:grid-cols-2`) with an expansive, well-proportioned single-column reading canvas (`max-w-4xl mx-auto`). Ensure Devanagari Sanskrit, IAST, translations, and commentaries have generous line-height, proper font hierarchy, and breathing room.
+- [ ] LIB-001: Comprehensive Universal Library with Full Catalog Browser - Overhaul the Library section (and dedicated `/library` route/anchor) to display all 17 sacred texts organized by Vedic categories (Itihasa, Upanishad, Purana, Veda, Darshana), showing their exact chapter and verse availability so any user can pick and begin reading immediately.
+- [ ] NAV-006: Brand Streamlining & Intuitive Navigation - Re-architect Header navigation to cleanly represent the core pillars of Vishwa-Vani: Sacred Library, Vedic Labs, Search, and Roadmap, with dynamic live corpus statistics and zero confusing or isolated items.
+- [ ] FLOW-001: Fix 'Begin Reading' Button Target - Refactor `BeginReadingButton` in the hero section so that if no previous reading position exists, it guides the user directly to the Library (`#library`) to choose a scripture, rather than arbitrarily hardcoding Bhagavad Gita chapter 1.
+- [ ] CONT-001: End-to-End Content & Copy Polishing Audit - Review and refine copy, descriptions, card labels, and metadata across all landing, roadmap, lab, and info pages from an end-user perspective to ensure authentic, dignified, and scholarly presentation.
+
 ## 🔴 EPIC-SECURITY-AND-BUGS [ACTIVE]
 *All bug and security issues are prioritized here.*
 - [ ] SEC-001: Implement Scraping Protection - Secure data and API routes from malicious public scraping.
