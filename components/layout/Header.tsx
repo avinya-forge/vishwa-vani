@@ -80,11 +80,11 @@ export default function Header({ stats }: { stats: { completedBooks: number, pip
             href="/"
             className="flex items-center gap-2 group"
           >
-            <div className="w-7 h-7 bg-orange-600 rounded-md flex items-center justify-center text-white text-base font-bold shadow-sm group-hover:rotate-12 transition-transform duration-300" aria-label="Om">ॐ</div>
+            <div className="w-7 h-7 bg-orange-600 rounded-md flex items-center justify-center text-white text-base font-serif font-bold shadow-sm group-hover:rotate-12 transition-transform duration-300 select-none" aria-label="Om">ॐ</div>
             <span className="font-serif font-black text-base text-stone-900 dark:text-stone-100 group-hover:text-orange-600 transition-colors hidden sm:block">Vishwa-Vani</span>
             <div className="hidden md:flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-orange-100/50 dark:bg-orange-900/30 border border-orange-200 dark:border-orange-800 text-[10px] font-bold text-orange-700 dark:text-orange-400 uppercase tracking-wider ml-3">
               <span className="w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse" />
-              <span><AnimatedStat targetCount={stats.completedVerses} /> Verses</span>
+              <span><AnimatedStat targetCount={stats.completedVerses} /> Gold Verses</span>
             </div>
           </Link>
 
@@ -150,8 +150,8 @@ export default function Header({ stats }: { stats: { completedBooks: number, pip
 
                   {/* Browse all */}
                   <div className="px-4 py-2.5 flex items-center justify-between">
-                    <span className="text-[10px] text-stone-400 dark:text-stone-500 font-medium">{availableBooks.length} texts available</span>
-                    <Link href="/" onClick={() => setShowLibrary(false)} className="text-[11px] font-bold text-orange-600 hover:text-orange-700 transition-colors inline-flex items-center gap-1">
+                    <span className="text-[10px] text-stone-400 dark:text-stone-500 font-medium">{stats.totalBooks} texts cataloged</span>
+                    <Link href="/#library" onClick={() => setShowLibrary(false)} className="text-[11px] font-bold text-orange-600 hover:text-orange-700 transition-colors inline-flex items-center gap-1">
                       Full Library <span aria-hidden="true">&rarr;</span>
                     </Link>
                   </div>
@@ -175,15 +175,15 @@ export default function Header({ stats }: { stats: { completedBooks: number, pip
         </div>
 
         {/* Centre stats — desktop only */}
-        <Link href="/roadmap" className="hidden xl:flex items-center gap-6 text-center group hover:opacity-90 transition-opacity">
+        <Link href="/roadmap" className="hidden xl:flex items-center gap-6 text-center group hover:opacity-90 transition-opacity" title="View Verification Pipeline & Roadmap">
           <div>
             <div className="text-[9px] font-bold text-stone-400 dark:text-stone-500 uppercase tracking-[0.2em]">Verified Books</div>
-            <div className="text-xs font-black text-stone-700 dark:text-stone-300 group-hover:text-orange-600 transition-colors">{stats.completedBooks} <span className="text-[10px] text-stone-400 font-normal">({stats.pipelineBooks} pipeline)</span></div>
+            <div className="text-xs font-black text-stone-700 dark:text-stone-300 group-hover:text-orange-600 transition-colors">{stats.completedBooks} Books <span className="text-[10px] text-stone-400 font-normal">({stats.completedChapters} Chap)</span></div>
           </div>
           <div className="w-px h-4 bg-stone-200 dark:bg-stone-800" />
           <div>
-            <div className="text-[9px] font-bold text-stone-400 dark:text-stone-500 uppercase tracking-[0.2em]">Complete Verses</div>
-            <div className="text-xs font-black text-stone-700 dark:text-stone-300 group-hover:text-orange-600 transition-colors">{stats.completedVerses.toLocaleString()}</div>
+            <div className="text-[9px] font-bold text-stone-400 dark:text-stone-500 uppercase tracking-[0.2em]">Verified Shlokas</div>
+            <div className="text-xs font-black text-stone-700 dark:text-stone-300 group-hover:text-orange-600 transition-colors">{stats.completedVerses.toLocaleString()} <span className="text-[10px] text-emerald-600 dark:text-emerald-400 font-bold">100% Gold</span></div>
           </div>
         </Link>
 
@@ -192,13 +192,13 @@ export default function Header({ stats }: { stats: { completedBooks: number, pip
           <ThemeToggle />
           
           <Link
-            href={`/${defaultTextSlug}/1`}
+            href="/#library"
             onClick={() => {
               localStorage.setItem('vishwa_last_text', defaultTextSlug)
             }}
             className="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 bg-stone-900 hover:bg-orange-600 text-white text-[11px] font-bold rounded-lg transition-all shadow-sm focus:ring-2 focus:ring-offset-2 focus:ring-stone-900"
           >
-            Begin Reading
+            Explore Library
           </Link>
 
           {/* Mobile hamburger */}
@@ -237,7 +237,7 @@ export default function Header({ stats }: { stats: { completedBooks: number, pip
               <Link href="/search" onClick={() => setShowMobileMenu(false)} className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-stone-50 dark:hover:bg-stone-800 transition-all text-sm font-bold text-stone-600 dark:text-stone-400">Deep Search</Link>
               <Link href="/lab" onClick={() => setShowMobileMenu(false)} className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all text-sm font-bold ${pathname === '/lab' ? 'text-orange-600 bg-orange-50 dark:bg-orange-950/30' : 'text-stone-600 dark:text-stone-400 hover:bg-stone-50 dark:hover:bg-stone-800'}`}>Vedic Labs</Link>
               <Link href="/roadmap" onClick={() => setShowMobileMenu(false)} className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-stone-50 dark:hover:bg-stone-800 transition-all text-sm font-bold text-stone-600 dark:text-stone-400">Roadmap</Link>
-              <Link href="/bhagavad-gita/1" onClick={() => setShowMobileMenu(false)} className="flex items-center justify-center gap-2 mt-4 w-full px-6 py-3.5 bg-stone-900 hover:bg-orange-600 text-white text-sm font-bold rounded-xl transition-all shadow-md">Begin Reading</Link>
+              <Link href="/#library" onClick={() => setShowMobileMenu(false)} className="flex items-center justify-center gap-2 mt-4 w-full px-6 py-3.5 bg-stone-900 hover:bg-orange-600 text-white text-sm font-bold rounded-xl transition-all shadow-md">Explore Sacred Library</Link>
             </div>
           </div>
         </div>

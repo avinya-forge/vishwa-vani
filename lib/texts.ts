@@ -593,9 +593,6 @@ export function getAvailableTexts(): VedicText[] {
     .filter(t => t.available);
 }
 
-/** Standardized scriptural metrics with two-pool breakdown */
-
-
 /** Get texts grouped by parent-child hierarchy with category totals */
 export function getVedicHierarchy() {
   const all = VEDIC_LIBRARY;

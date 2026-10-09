@@ -147,7 +147,7 @@ const VishnuPuranaCosmicExplorer = dynamic(() => import('@/components/lab/vishnu
 })
 export default function VedicLabPage() {
   return (
-    <main className="min-h-screen bg-[#FDFBF7] dark:bg-[#1C1917] text-stone-900 dark:text-stone-200 selection:bg-orange-500/30 pb-32 pt-20 relative overflow-hidden transition-colors duration-500">
+    <main className="min-h-screen bg-background text-foreground selection:bg-orange-500/30 pb-32 pt-20 relative overflow-hidden transition-colors duration-500">
       {/* Ambient glows for Glass UI */}
       <div className="absolute top-[-10%] left-[-10%] w-[60vw] h-[60vw] bg-orange-200/20 dark:bg-orange-900/20 rounded-full blur-[100px] pointer-events-none mix-blend-multiply dark:mix-blend-lighten" />
       <div className="absolute bottom-[-20%] right-[-10%] w-[50vw] h-[50vw] bg-amber-200/20 dark:bg-stone-800/40 rounded-full blur-[120px] pointer-events-none mix-blend-multiply dark:mix-blend-lighten" />
