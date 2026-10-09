@@ -12,16 +12,12 @@ import {
   SCRIPTURE_READINESS_SCORES,
 } from '@/lib/texts'
 import {
-  Book,
   Database,
   CheckCircle2,
   ArrowRight,
-  Library,
   Sparkles,
   Clock,
   ArrowUp,
-  Layers,
-  Scroll,
   BookOpen,
 } from 'lucide-react'
 

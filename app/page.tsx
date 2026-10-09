@@ -1,6 +1,6 @@
-﻿import Link from 'next/link'
+import Link from 'next/link'
 import { getTranslations } from 'next-intl/server'
-import { getLibraryStats, getVedicHierarchy, isTextCompleted, PIPELINE_BOOK_STATS } from '@/lib/texts'
+import { getLibraryStats, getVedicHierarchy } from '@/lib/texts'
 import { setRequestLocale } from 'next-intl/server'
 import BeginReadingButton from '@/components/ui/begin-reading-button'
 import { AnimatedStat } from '@/components/ui/animated-stat'
