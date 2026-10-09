@@ -963,7 +963,7 @@ for (let ch = 1; ch <= 18; ch++) {
     // Fix empty ISKCON en
     if (!iskconEnContent || iskconEnContent.length < 80) {
       const fallback = buildIskconEnFallback(verse, ch);
-      if (fallback.length >= 80) {
+      if (fallback) {
         if (iskEn) {
           iskEn = { ...iskEn, content: fallback };
         } else {
