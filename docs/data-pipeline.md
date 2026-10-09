@@ -1,4 +1,4 @@
-﻿# 🗄️ Data Pipeline & Onboarding
+# 🗄️ Data Pipeline & Onboarding
 
 Our goal is to systematically digitize all major Vedic texts. We use a strict 3-tier pipeline to ensure the data is perfect before it reaches the UI.
 
@@ -18,5 +18,6 @@ Our goal is to systematically digitize all major Vedic texts. We use a strict 3-
    * Format strictly to the NVF 1.3 (New Vedic Format) schema.
    * Save to data/3-gold/.
 
-## Rebuilding the Lake
-Once the Gold JSON files are created, we run python rebuild_lake.py. This script takes all the JSON files and compiles them into a single, highly optimized SQLite database (public/vedic-lake.db) that the Next.js app queries at runtime.
+## Rebuilding the Lake & Syncing to Edge
+Once the Gold JSON files are created, we run `python scripts/vishwa.py rebuild` to generate the local SQLite staging database. 
+Finally, we run `node scripts/sync_turso.js` to batch-insert all updated rows into our Turso Edge Database. The Next.js React Server Components strictly query this remote Turso database at runtime to bypass Vercel serverless size limits.

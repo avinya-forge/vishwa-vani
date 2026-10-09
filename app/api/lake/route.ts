@@ -2,8 +2,9 @@
 import { NextResponse } from 'next/server';
 import { validateApiRequest } from '@/lib/api-guard';
 import { z } from 'zod';
-import Database from 'better-sqlite3';
+import { createClient, Client } from '@libsql/client';
 import path from 'path';
+import fs from 'fs';
 import { pipeline } from '@xenova/transformers';
 
 // Schema for search request
@@ -15,9 +16,24 @@ const searchSchema = z.object({
   lakeFile: z.string().default('vedic-lake.db'),
 });
 
-function getDb(lakeFile: string) {
+let cachedClient: Client | null = null;
+
+function getDb(lakeFile: string): Client {
+  if (cachedClient) return cachedClient;
+
+  if (process.env.TURSO_DATABASE_URL) {
+    cachedClient = createClient({
+      url: process.env.TURSO_DATABASE_URL,
+      authToken: process.env.TURSO_AUTH_TOKEN,
+    });
+    return cachedClient;
+  }
+
   const dbPath = path.join(process.cwd(), 'public', lakeFile);
-  return new Database(dbPath, { readonly: true });
+  cachedClient = createClient({
+    url: \ile:\\
+  });
+  return cachedClient;
 }
 
 class PipelineSingleton {
@@ -42,54 +58,46 @@ export async function POST(request: Request) {
     const db = getDb(lakeFile);
 
     if (action === 'QUERY_VERSES') {
-      const stmt = db.prepare('SELECT * FROM verses WHERE text_slug = ? AND chapter = ? ORDER BY verse ASC');
-      const verses = stmt.all(textSlug, chapter);
-      // Map back to expected properties
-      const mappedVerses = verses.map((v: any) => ({
+      const result = await db.execute({
+        sql: 'SELECT * FROM verses WHERE text_slug = ? AND chapter = ? ORDER BY verse ASC',
+        args: [textSlug || '', chapter || 0]
+      });
+      
+      const mappedVerses = result.rows.map((v: any) => ({
         id: v.id,
         verse: v.verse,
         chapter: v.chapter,
         sanskrit: v.slok,
         transliteration: v.transliteration,
-        ...JSON.parse(v.content)
+        ...(typeof v.content === 'string' ? JSON.parse(v.content) : v.content)
       }));
       return NextResponse.json({ verses: mappedVerses });
     }
 
     if (action === 'SEARCH_LAKE') {
-      const stmt = db.prepare('SELECT * FROM verses WHERE content LIKE ? OR slok LIKE ? OR transliteration LIKE ? LIMIT 50');
-      const likeQuery = `%${query}%`;
-      const results = stmt.all(likeQuery, likeQuery, likeQuery) as any[];
-      
-      const mappedResults = results.map((v: any) => ({
+      const searchPattern = \%\%\;
+      const result = await db.execute({
+        sql: 'SELECT * FROM verses WHERE content LIKE ? OR slok LIKE ? OR transliteration LIKE ? LIMIT 50',
+        args: [searchPattern, searchPattern, searchPattern]
+      });
+
+      const mappedVerses = result.rows.map((v: any) => ({
         id: v.id,
         text_slug: v.text_slug,
-        verse: v.verse,
         chapter: v.chapter,
+        verse: v.verse,
         sanskrit: v.slok,
         transliteration: v.transliteration,
-        ...JSON.parse(v.content)
+        ...(typeof v.content === 'string' ? JSON.parse(v.content) : v.content)
       }));
 
-      let summary = null;
-      if (query && query.trim().split(' ').length > 2 && mappedResults.length > 0) {
-        try {
-          const generator = await PipelineSingleton.getInstance();
-          const context = mappedResults.slice(0, 3).map((r) => r.translation || r.meaning || '').join(' ');
-          const prompt = `Answer the question "${query}" in one sentence based on this context: ${context}`;
-          const output = await generator(prompt, { max_new_tokens: 40 });
-          summary = output[0]?.generated_text || null;
-        } catch (err) {
-          console.error("NLP error:", err);
-        }
-      }
-
-      return NextResponse.json({ results: mappedResults, summary });
+      return NextResponse.json({ results: mappedVerses });
     }
 
     return NextResponse.json({ error: 'Invalid action' }, { status: 400 });
-  } catch (error) {
-    console.error('Lake API error:', error);
-    return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
+
+  } catch (e: any) {
+    console.error('API Error', e);
+    return NextResponse.json({ error: 'Server Error' }, { status: 500 });
   }
 }

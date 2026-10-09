@@ -1,15 +1,14 @@
-import { NextResponse } from 'next/server'
+﻿import { NextResponse } from 'next/server'
 import path from 'path'
 import fs from 'fs'
 
 export async function GET() {
-  const lakePath = path.join(process.cwd(), 'public', 'vedic-lake.db');
-  const isLakeReady = fs.existsSync(lakePath);
+  const lakeReady = process.env.TURSO_DATABASE_URL ? true : fs.existsSync(path.join(process.cwd(), 'public', 'vedic-lake.db'));
 
-  if (!isLakeReady) {
+  if (!lakeReady) {
     return NextResponse.json({
       status: 'error',
-      message: 'Lake not ready',
+      message: 'Database not ready',
       timestamp: new Date().toISOString()
     }, { status: 503 })
   }
@@ -17,7 +16,8 @@ export async function GET() {
   return NextResponse.json({
     status: 'ok',
     version: process.env.npm_package_version || 'unknown',
-    lakeReady: isLakeReady,
+    lakeReady: true,
+    mode: process.env.TURSO_DATABASE_URL ? 'turso-edge' : 'local-sqlite',
     timestamp: new Date().toISOString()
   }, { status: 200 })
 }
