@@ -60,13 +60,13 @@ export class VedicDataService {
   }
 
   // Pre-validate JSON payload integrity
-  private isBookGoldTier(textSlug: string, storageStrategy: string = 'json'): boolean {
+  private async isBookGoldTier(textSlug: string, storageStrategy: string = 'json'): Promise<boolean> {
     // If it's lake-based (like Mahabharata), the data presence itself is the gate
     if (storageStrategy === 'lake') return true;
 
     try {
       const manifestPath = path.join(process.cwd(), 'data', 'manifest.json');
-      const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
+      const manifest = JSON.parse(await fs.promises.readFile(manifestPath, 'utf8'));
       const bookManifest = manifest.books.find((b: Record<string, unknown>) => b.book_id === textSlug || b.slug === textSlug);
 
       return !!bookManifest && bookManifest.status === "GOLD";
@@ -119,7 +119,8 @@ export class VedicDataService {
     if (!textMetadata) return null;
 
     // GOLD-GATE: refuse to serve data for unknown book not promoted to Gold tier
-    if (!this.isBookGoldTier(textSlug, textMetadata.storage)) {
+    const isGoldTier = await this.isBookGoldTier(textSlug, textMetadata.storage);
+    if (!isGoldTier) {
       console.warn(`[VedicDataService] GOLD-GATE blocked: '${textSlug}' is not GOLD in manifest.json`);
       return null;
     }
@@ -159,7 +160,7 @@ export class VedicDataService {
   private async loadFromJson(textSlug: string, chapterNumber: number, adhyaya?: number): Promise<unknown[]> {
     try {
       const manifestPath = path.join(process.cwd(), 'data', 'manifest.json');
-      const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
+      const manifest = JSON.parse(await fs.promises.readFile(manifestPath, 'utf8'));
       const books = manifest.books || [];
       const bookManifest = books.find((b: Record<string, unknown>) => b.book_id === textSlug || b.slug === textSlug); // Backward compat for slug
 
@@ -180,18 +181,22 @@ export class VedicDataService {
       }
 
             const dataPath = [process.cwd(), 'data', '3-gold', textSlug, shardFile].join(path.sep);
-      if (fs.existsSync(dataPath)) {
-        const rawData = fs.readFileSync(dataPath, 'utf8');
+      try {
+        await fs.promises.access(dataPath);
+        const rawData = await fs.promises.readFile(dataPath, 'utf8');
         const parsed = JSON.parse(rawData);
         return Array.isArray(parsed) ? parsed : (parsed.verses || []);
-      }
-
-      // Fallback
-      const fallbackPath = path.join(process.cwd(), 'data', '3-gold', textSlug, `${textSlug}-chapter-${chapterNumber}.json`);
-      if (fs.existsSync(fallbackPath)) {
-        const rawData = fs.readFileSync(fallbackPath, 'utf8');
-        const parsed = JSON.parse(rawData);
-        return Array.isArray(parsed) ? parsed : (parsed.verses || []);
+      } catch {
+        // Fallback
+        const fallbackPath = path.join(process.cwd(), 'data', '3-gold', textSlug, `${textSlug}-chapter-${chapterNumber}.json`);
+        try {
+          await fs.promises.access(fallbackPath);
+          const rawData = await fs.promises.readFile(fallbackPath, 'utf8');
+          const parsed = JSON.parse(rawData);
+          return Array.isArray(parsed) ? parsed : (parsed.verses || []);
+        } catch {
+          // Both dataPath and fallbackPath failed
+        }
       }
     } catch (error) {
       console.error('Error loading JSON data:', error);
