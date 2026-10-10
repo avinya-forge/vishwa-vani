@@ -1,8 +1,32 @@
 # 🚀 Vishwa-Vani: Global Project Master Status
 
-*Last Updated: 2026-10-11 00:05:34*
+*Last Updated: 2026-10-11 00:19:11*
 
-**Overall Health:** 16 Gold Books | 7 Integrated with UI
+**Overall Health:** 16 Gold Books | 10 Integrated with UI
+
+## 📊 Canonical Scripture Scale, Effort & Ingestion Status Matrix
+
+| # | Canonical Scripture | Target Chapters | Target Verses | Pipeline Tier | UI Status | Vedic Lab | Readiness Score |
+|:---:|:---|---:|---:|:---:|:---:|:---:|---:|
+| 1 | **Bhagavad Gita** | 18 | 700 | Gold | READY | INTEGRATED | **100.0%** |
+| 2 | **Isha Upanishad** | 1 | 19 | Gold | READY | INTEGRATED | **100.0%** |
+| 3 | **Kena Upanishad** | 1 | 34 | Gold | READY | INTEGRATED | **100.0%** |
+| 4 | **Vishnu Purana** | 126 | 7,000 | Gold | READY | INTEGRATED | **90.67%** |
+| 5 | **Garuda Purana** | 250 | 19,000 | Gold | READY | INTEGRATED | **90.67%** |
+| 6 | **16 Samskaras (Ritual Handbook)** | 3 | 24 | Gold | READY | INTEGRATED | **88.9%** |
+| 7 | **Yoga Sutras of Patanjali** | 4 | 196 | Gold | READY | INTEGRATED | **85.0%** |
+| 8 | **Mahabharata (All 18 Parvas)** | 2115 | 100,000 | Gold | HIDDEN | INTEGRATED | **76.5%** |
+| 9 | **Srimad Bhagavatam (12 Cantos)** | 335 | 18,000 | Gold | READY | INTEGRATED | **75.94%** |
+| 10 | **Stotras & Stuties** | 100 | 1,000 | Gold | READY | INTEGRATED | **51.36%** |
+| 11 | **Samaveda Samhita** | 2 | 1,875 | Gold | HIDDEN | PENDING | **47.53%** |
+| 12 | **Rigveda Samhita** | 10 | 10,552 | Gold | HIDDEN | PENDING | **41.5%** |
+| 13 | **Atharvaveda Samhita** | 20 | 5,977 | Gold | HIDDEN | PENDING | **40.76%** |
+| 14 | **Yajurveda Samhita** | 40 | 1,975 | Gold | HIDDEN | PENDING | **40.4%** |
+| 15 | **Brahma Sutras** | 4 | 555 | Gold | HIDDEN | PENDING | **40.05%** |
+| 16 | **Manusmriti** | 12 | 2,684 | Gold | HIDDEN | PENDING | **40.01%** |
+| 17 | **Valmiki Ramayana** | 7 | 24,000 | Bronze | READY | INTEGRATED | **20.0%** |
+| 18 | **Dasbodh** | 20 | 7,751 | Bronze | HIDDEN | PENDING | **0.0%** |
+| **TOTAL** | **18 Canonical Scriptures** | **3,068** | **~201,342** | — | **10 Live** | **11 Modules** | — |
 
 ## 🏆 Production Grade (GOLD)
 
@@ -34,26 +58,26 @@
 - **Linguistic:** Layers: `4/3` | Authors: `10/2`
 > Chronicle of Vishnu.
 
+### Garuda Purana ⚠️ (Contains Placeholders)
+**Readiness Score: 90.67%** [█████████░]
+- **Slug:** `garuda-purana` | **UI:** READY | **Vedic Lab:** INTEGRATED
+- **Structural:** Chapters: `250/250` | Verses: `19000/19000`
+- **Linguistic:** Layers: `4/3` | Authors: `9/2`
+> Dialogues on death.
+
+### 16 Samskaras (Ritual Handbook) ⚠️ (Contains Placeholders)
+**Readiness Score: 88.9%** [████████░░]
+- **Slug:** `samskaras` | **UI:** READY | **Vedic Lab:** INTEGRATED
+- **Structural:** Chapters: `3/3` | Verses: `22/24`
+- **Linguistic:** Layers: `4/3` | Authors: `8/2`
+> Life-cycle rituals (16 Samskaras in 3 Life Phases).
+
 ### Yoga Sutras of Patanjali ⚠️ (Contains Placeholders)
 **Readiness Score: 85.0%** [████████░░]
 - **Slug:** `yoga-sutras` | **UI:** READY | **Vedic Lab:** INTEGRATED
 - **Structural:** Chapters: `4/4` | Verses: `196/196`
 - **Linguistic:** Layers: `4/4` | Authors: `9/2`
 > Aphorisms of Yoga.
-
-### 16 Samskaras (Ritual Handbook) ⚠️ (Contains Placeholders)
-**Readiness Score: 82.17%** [████████░░]
-- **Slug:** `samskaras` | **UI:** HIDDEN | **Vedic Lab:** INTEGRATED
-- **Structural:** Chapters: `3/1` | Verses: `22/16`
-- **Linguistic:** Layers: `4/3` | Authors: `8/2`
-> Life-cycle rituals.
-
-### Garuda Purana ⚠️ (Contains Placeholders)
-**Readiness Score: 82.17%** [████████░░]
-- **Slug:** `garuda-purana` | **UI:** HIDDEN | **Vedic Lab:** INTEGRATED
-- **Structural:** Chapters: `250/250` | Verses: `19000/19000`
-- **Linguistic:** Layers: `4/3` | Authors: `9/2`
-> Dialogues on death.
 
 ### Mahabharata (All 18 Parvas) ⚠️ (Contains Placeholders)
 **Readiness Score: 76.5%** [███████░░░]
@@ -119,6 +143,13 @@
 > Code of Manu.
 
 ## 🚧 In Progress (SILVER/BRONZE)
+
+### Valmiki Ramayana
+**Readiness Score: 20.0%** [██░░░░░░░░]
+- **Slug:** `ramayana` | **UI:** READY | **Vedic Lab:** INTEGRATED
+- **Structural:** Chapters: `0/7` | Verses: `0/24000`
+- **Linguistic:** Layers: `0/3` | Authors: `0/2`
+> Valmiki Ramayana (7 Kandas, ~500 Sargas, 24,000 Verses).
 
 ### Dasbodh
 **Readiness Score: 0.0%** [░░░░░░░░░░]

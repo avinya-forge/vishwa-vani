@@ -2,7 +2,7 @@
 
 ## 1. Executive Mission & Architectural Foundations
 
-Vishwa-Vani's data engineering mission is to systematically digitize, normalize, verify, and democratize humanity's oldest philosophical corpus—encompassing **17 canonical Vedic scriptures**, **over 175,000 sacred verses**, and **centuries of authoritative multi-lineage commentaries** across 4 classical languages: Sanskrit (Devanagari & IAST), English, Hindi, and Marathi.
+Vishwa-Vani's data engineering mission is to systematically digitize, normalize, verify, and democratize humanity's oldest philosophical corpus—encompassing **18 canonical Vedic scriptures**, **over 290,000 sacred verses**, and **centuries of authoritative multi-lineage commentaries** across 4 classical languages: Sanskrit (Devanagari & IAST), English, Hindi, and Marathi.
 
 To eliminate data corruption, hallucinations, and copyright risks, all scriptural onboarding proceeds through a deterministic, strictly gated **5-Stage Lifecycle**:
 
@@ -153,6 +153,7 @@ Where:
 | `kena-upanishad` | Upaniṣad | 1 | 34 | Shankara, Max Müller | Gold | Live | XS | 5 pts |
 | `yoga-sutras` | Darśana | 4 | 196 | Vyasa, Vivekananda, Patanjali | Gold | Live | S | 10 pts |
 | `mahabharata` | Itihāsa | 2,115 | 100,000 | BORI, KMG, Nilakantha | Silver | Active Ingest | XXL | 120 pts |
+| `ramayana` | Itihāsa | 7 (500 Sargas) | 24,000 | Govindaraja, Rama Tilaka, Griffith | Silver | Active Ingest | XL | 75 pts |
 | `bhagavata-purana` | Purāṇa | 335 | 18,000 | Prabhupada, Sridhara Swami | Silver | Active Ingest | XL | 80 pts |
 | `vishnu-purana` | Purāṇa | 126 | 7,000 | Wilson, Gita Press | Silver | Active Ingest | L | 35 pts |
 | `garuda-purana` | Purāṇa | 250 | 19,000 | Dutt, Gita Press | Silver | Active Ingest | L | 40 pts |
@@ -164,9 +165,9 @@ Where:
 | `brahma-sutras` | Darśana | 4 | 555 | Shankara, Ramanuja, Madhva | Bronze | Queued | M | 25 pts |
 | `dasbodh` | Other | 20 | 7,751 | Samarth Ramdas, Warkari | Bronze | Queued | L | 35 pts |
 | `manusmriti` | Other | 12 | 2,684 | Medhatithi, Buhler | Bronze | Queued | M | 25 pts |
-| `samskaras` | Other | 1 | 24 | Traditional Grihya Sutras | Silver | Active Ingest | S | 10 pts |
+| `samskaras` | Other | 3 | 24 | Traditional Grihya Sutras | Silver | Active Ingest | S | 10 pts |
 | `stotras` | Other | 1 | 17 | Shankara, Valmiki, Traditional | Silver | Active Ingest | S | 10 pts |
-| **TOTALS** | **17 Books** | **3,690** | **~267,360** | **15+ Traditions** | — | — | — | **655 pts** |
+| **TOTALS** | **18 Books** | **4,190** | **~291,360** | **25+ Traditions** | — | — | — | **730 pts** |
 
 ---
 

@@ -170,7 +170,7 @@ export default function Header({ stats }: { stats?: HeaderStatsProp }) {
 
                   {/* Browse all */}
                   <div className="px-4 py-2.5 flex items-center justify-between">
-                    <span className="text-[10px] text-stone-400 dark:text-stone-500 font-medium">{safeStats.totalBooks} texts cataloged</span>
+                    <span className="text-[10px] text-stone-400 dark:text-stone-500 font-medium">{safeStats.totalBooks} Canonical Scriptures</span>
                     <Link href="/library" onClick={() => setShowLibrary(false)} className="text-[11px] font-bold text-orange-600 hover:text-orange-700 transition-colors inline-flex items-center gap-1">
                       Full Library <span aria-hidden="true">&rarr;</span>
                     </Link>
@@ -195,19 +195,6 @@ export default function Header({ stats }: { stats?: HeaderStatsProp }) {
             </Link>
           </div>
         </div>
-
-        {/* Centre stats — desktop only */}
-        <Link href="/roadmap" className="hidden xl:flex items-center gap-6 text-center group hover:opacity-90 transition-opacity" title="View Verification Pipeline & Roadmap">
-          <div>
-            <div className="text-[9px] font-bold text-stone-400 dark:text-stone-500 uppercase tracking-[0.2em]">Verified Books</div>
-            <div className="text-xs font-black text-stone-700 dark:text-stone-300 group-hover:text-orange-600 transition-colors">{safeStats.completedBooks} Books <span className="text-[10px] text-stone-400 font-normal">({safeStats.completedChapters} Chap)</span></div>
-          </div>
-          <div className="w-px h-4 bg-stone-200 dark:bg-stone-800" />
-          <div>
-            <div className="text-[9px] font-bold text-stone-400 dark:text-stone-500 uppercase tracking-[0.2em]">Verified Shlokas</div>
-            <div className="text-xs font-black text-stone-700 dark:text-stone-300 group-hover:text-orange-600 transition-colors">{safeStats.completedVerses.toLocaleString()} <span className="text-[10px] text-emerald-600 dark:text-emerald-400 font-bold">100% Gold</span></div>
-          </div>
-        </Link>
 
         {/* Right actions */}
         <div className="flex items-center gap-2">

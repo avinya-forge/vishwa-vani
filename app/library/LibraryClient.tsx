@@ -33,7 +33,7 @@ interface LibraryClientProps {
 }
 
 const CATEGORY_MAP: Record<string, { label: string; icon: string; subtitle: string }> = {
-  all: { label: 'All Scriptures (17)', icon: '📜', subtitle: 'The complete Vedic canon' },
+  all: { label: 'All Scriptures', icon: '📜', subtitle: 'The complete Vedic canon' },
   itihas: { label: 'Itihāsa & Gītā', icon: '🏹', subtitle: 'Epic Histories & Battlefield Dialogue' },
   upanishad: { label: 'Principal Upaniṣads', icon: '✨', subtitle: 'Supreme Non-Dual Vedānta Wisdom' },
   purana: { label: 'Purāṇas', icon: '📜', subtitle: 'Cosmic Chronicles & Sacred Lore' },
@@ -42,6 +42,10 @@ const CATEGORY_MAP: Record<string, { label: string; icon: string; subtitle: stri
 }
 
 export default function LibraryClient({ stats, hierarchy: _hierarchy }: LibraryClientProps) {
+  const totalCatalogCount = stats?.totalBooks || VEDIC_LIBRARY.length
+  const goldCount = stats?.completedBooks || VEDIC_LIBRARY.filter(b => isTextCompleted(b.slug)).length
+  const pipelineCount = totalCatalogCount - goldCount
+
   const [searchQuery, setSearchQuery] = useState('')
   const [selectedCategory, setSelectedCategory] = useState<string>('all')
   const [tierFilter, setTierFilter] = useState<'all' | 'gold' | 'pipeline'>('all')
@@ -245,7 +249,7 @@ export default function LibraryClient({ stats, hierarchy: _hierarchy }: LibraryC
                     : 'bg-stone-100 text-stone-600 hover:bg-stone-200'
                 }`}
               >
-                All (17)
+                All ({totalCatalogCount})
               </button>
               <button
                 onClick={() => setTierFilter('gold')}
@@ -256,7 +260,7 @@ export default function LibraryClient({ stats, hierarchy: _hierarchy }: LibraryC
                 }`}
               >
                 <Sparkles className="w-3 h-3" />
-                <span>100% Gold Editions (4)</span>
+                <span>100% Gold Editions ({goldCount})</span>
               </button>
               <button
                 onClick={() => setTierFilter('pipeline')}
@@ -267,7 +271,7 @@ export default function LibraryClient({ stats, hierarchy: _hierarchy }: LibraryC
                 }`}
               >
                 <Layers className="w-3 h-3" />
-                <span>In Ingestion (13)</span>
+                <span>In Ingestion ({pipelineCount})</span>
               </button>
             </div>
           </div>
@@ -305,7 +309,7 @@ export default function LibraryClient({ stats, hierarchy: _hierarchy }: LibraryC
         {/* ━━━━━ SCRIPTURE RESULTS COUNT ━━━━━ */}
         <div className="flex items-center justify-between mb-6 px-1">
           <p className="text-xs font-serif text-stone-500">
-            Showing <strong className="text-stone-900">{filteredBooks.length}</strong> of {VEDIC_LIBRARY.length} sacred scriptures
+            Showing <strong className="text-stone-900">{filteredBooks.length}</strong> of {totalCatalogCount} sacred scriptures
             {selectedCategory !== 'all' ? ` in ${CATEGORY_MAP[selectedCategory]?.label}` : ''}
             {tierFilter !== 'all' ? ` (${tierFilter === 'gold' ? '100% Gold Editions' : 'In Ingestion Pipeline'})` : ''}
           </p>

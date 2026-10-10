@@ -5,9 +5,9 @@ import LibraryClient from '@/app/library/LibraryClient'
 import { getVedicHierarchy } from '@/lib/texts'
 
 const mockStats = {
-  totalBooks: 17,
+  totalBooks: 18,
   completedBooks: 4,
-  pipelineBooks: 13,
+  pipelineBooks: 14,
   completedVerses: 950,
   databaseVerses: 126306,
   categories: ['itihas', 'upanishad', 'purana', 'veda', 'other']
@@ -27,7 +27,7 @@ describe('LibraryClient (LIB-002)', () => {
     expect(screen.getByText(/Vedic Scriptures/i)).toBeInTheDocument()
     expect(screen.getByText('Sacred Scriptures')).toBeInTheDocument()
     expect(screen.getByText('Gold Shlokas Live')).toBeInTheDocument()
-    expect(screen.getAllByText(/17/).length).toBeGreaterThan(0)
+    expect(screen.getAllByText(/18/).length).toBeGreaterThan(0)
   })
 
   it('filters scriptures by search input query', () => {

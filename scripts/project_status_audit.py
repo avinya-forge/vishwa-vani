@@ -40,8 +40,12 @@ CANONICAL_TARGETS = {
         'langs': ['sa', 'en', 'hi'], 'description': 'Dialogues on death.'
     },
     'samskaras': {
-        'total_chapters': 1, 'total_verses': 16, 'target_authors': 2,
-        'langs': ['sa', 'hi', 'mr'], 'description': 'Life-cycle rituals.'
+        'total_chapters': 3, 'total_verses': 24, 'target_authors': 2,
+        'langs': ['sa', 'hi', 'mr'], 'description': 'Life-cycle rituals (16 Samskaras in 3 Life Phases).'
+    },
+    'ramayana': {
+        'total_chapters': 7, 'total_verses': 24000, 'target_authors': 2,
+        'langs': ['sa', 'en', 'hi'], 'description': 'Valmiki Ramayana (7 Kandas, ~500 Sargas, 24,000 Verses).'
     },
     'stotras': {
         'total_chapters': 100, 'total_verses': 1000, 'target_authors': 2,
@@ -60,6 +64,7 @@ VEDIC_LAB_INTEGRATIONS = {
     'bhagavad-gita': True,
     'mahabharata': True,
     'bhagavata-purana': True,
+    'ramayana': True,
     'isha-upanishad': True,
     'kena-upanishad': True,
     'yoga-sutras': True,
@@ -152,7 +157,23 @@ def run_audit():
             'has_placeholders': stats['placeholders'], 'description': target['description']
         })
     report.sort(key=lambda x: x['score'], reverse=True)
-    lines = ['# 🚀 Vishwa-Vani: Global Project Master Status', '', f"*Last Updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}*", '', f"**Overall Health:** {len([b for b in report if b['stage'] == 'GOLD'])} Gold Books | {len([b for b in report if b['ui'] == 'READY'])} Integrated with UI\n"]
+    lines = [
+        '# 🚀 Vishwa-Vani: Global Project Master Status', '',
+        f"*Last Updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}*", '',
+        f"**Overall Health:** {len([b for b in report if b['stage'] == 'GOLD'])} Gold Books | {len([b for b in report if b['ui'] == 'READY'])} Integrated with UI\n",
+        '## 📊 Canonical Scripture Scale, Effort & Ingestion Status Matrix\n',
+        '| # | Canonical Scripture | Target Chapters | Target Verses | Pipeline Tier | UI Status | Vedic Lab | Readiness Score |',
+        '|:---:|:---|---:|---:|:---:|:---:|:---:|---:|'
+    ]
+    for idx, b in enumerate(report, 1):
+        tier_label = 'Gold' if b['stage'] == 'GOLD' else ('Silver' if b['stage'] == 'SILVER' else ('Bronze' if b['stage'] == 'BRONZE' else 'Backlog'))
+        target = CANONICAL_TARGETS.get(b['slug'], {})
+        lines.append(f"| {idx} | **{b['name']}** | {target.get('total_chapters', '-')} | {target.get('total_verses', 0):,} | {tier_label} | {b['ui']} | {b['lab']} | **{b['score']}%** |")
+    total_chapters = sum(CANONICAL_TARGETS.get(b['slug'], {}).get('total_chapters', 0) for b in report)
+    total_verses = sum(CANONICAL_TARGETS.get(b['slug'], {}).get('total_verses', 0) for b in report)
+    ready_count = len([b for b in report if b['ui'] == 'READY'])
+    lab_count = len([b for b in report if b['lab'] == 'INTEGRATED'])
+    lines.append(f"| **TOTAL** | **{len(report)} Canonical Scriptures** | **{total_chapters:,}** | **~{total_verses:,}** | — | **{ready_count} Live** | **{lab_count} Modules** | — |\n")
     for cat, stages in [('🏆 Production Grade (GOLD)', ['GOLD']), ('🚧 In Progress (SILVER/BRONZE)', ['SILVER', 'BRONZE']), ('🌑 Backlog', ['NOT_STARTED'])]:
         lines.append(f"## {cat}\n")
         books = [b for b in report if b['stage'] in stages]

@@ -1,5 +1,39 @@
 # Release Notes
 
+## [1.3.5]
+
+### 🏹 Valmiki Ramayana Registration, Runtime Metric Engine & 6-Month Strategic Roadmap
+- [x] **Valmiki Ramayana Ingestion Queue Expansion (`lib/texts.ts`, `data/1-bronze/ramayana/`)**:
+  - Registered Valmiki Ramayana (`ramayana`) as the 18th canonical scripture across library catalogs, pipeline stats, and effort estimates.
+  - Sized at XL / 75 story points encompassing 7 Kandas (Bala, Ayodhya, Aranya, Kishkindha, Sundara, Yuddha, Uttara) with ~500 Sargas and ~24,000 Shlokas.
+  - Linked classical commentary lineages: Govindaraja (*Ramayana Bhushana*), Rama (*Tilaka*), Ralph T.H. Griffith, and Gita Press Gorakhpur.
+  - Created Bronze provenance metadata (`data/1-bronze/ramayana/book.meta.json`) referencing Baroda Oriental Institute Critical Edition and Griffith translations (`LEGAL-003`).
+- [x] **Top 3 Scriptures Integrated with Study Reader (`lib/texts.ts`)**:
+  - Advanced Vishnu Purana (`vishnu-purana`: readiness score 90.67%, 6 Amsas, 7,000 verses) with rich chapter names.
+  - Advanced 16 Samskaras (`samskaras`: readiness score 82.17%, 3 lifecycle chapters, 24 verses) with prenatal, childhood, and marriage partitions.
+  - Advanced Garuda Purana (`garuda-purana`: readiness score 82.17%, 2 Khandas, 19,000 verses).
+  - Aligned `SCRIPTURE_READINESS_SCORES` to match audited `.status` values.
+- [x] **De-Cluttered Header Navigation & Streamlined Brand UI (`components/layout/Header.tsx`)**:
+  - Removed duplicate desktop center stats block to eliminate visual clutter and resolve user confusion between 4 verified Gold books and the full 18-scripture library.
+  - Updated Quick Library dropdown footer to display dynamic `{safeStats.totalBooks} Canonical Scriptures`.
+  - Preserved the clean Sanskrit Om (`ॐ`) logo and dynamic Gold Verse counter (`950 Gold Verses`).
+- [x] **Runtime Dynamic UI Metric Engine (`app/library/LibraryClient.tsx`)**:
+  - Stripped all hardcoded numbers from category labels (e.g. `'All Scriptures'` replacing static `'All Scriptures (17)'`).
+  - Derived all tier pill counters dynamically at runtime: `All (${totalCatalogCount})`, `100% Gold Editions (${goldCount})`, and `In Ingestion (${pipelineCount})`.
+  - Dynamic results description: `Showing ${filteredBooks.length} of ${totalCatalogCount} sacred scriptures`.
+- [x] **Executive Tabular Status Preservation (`docs/PROJECT_STATUS.md` & `scripts/project_status_audit.py`)**:
+  - Preserved the comprehensive *Canonical Scripture Scale, Effort & Ingestion Status Matrix* in `docs/PROJECT_STATUS.md` and `docs/data-pipeline.md`.
+  - Master catalog now totals **18 canonical scriptures**, **4,190 chapters/sargas**, **~291,360 verses**, and **730 story points**.
+  - Updated `scripts/project_status_audit.py` to audit and print the tabular status matrix.
+- [x] **1–6 Month Backlog Roadmap & Technical Spikes (`docs/backlog.md`)**:
+  - Formulated the 6-Month Roadmap Matrix spanning Months 1 through 6 with milestone deliverables, target horizons, and tradition alignments.
+  - Added `EPIC-BOOK-VALMIKI-RAMAYANA` (7 Kandas, ~500 Sargas, 24k verses, 75 pts).
+  - Added technical research spikes: `SPIKE-RAMAYANA-CRITICAL-ED`, `SPIKE-TURSO-SHARDING`, and `SPIKE-VEDIC-SVARAS`.
+- [x] **Physical Verification**:
+  - `npx jest __tests__/app-library.test.tsx` passed with 6/6 tests.
+  - `npx jest __tests__/lib-texts.test.ts __tests__/lib-texts-functions.test.ts` passed with 33/33 tests.
+  - `npx tsc --noEmit` passed with 0 errors.
+
 ## [1.3.4]
 
 ### 📚 Dedicated Full Library Destination Page & OWASP Guardrail Fortification

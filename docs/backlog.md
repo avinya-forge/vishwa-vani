@@ -3,13 +3,26 @@
 ---
 
 ## 🌌 EPIC-ROADMAP-MASTER-VISION [STRATEGIC ROADMAP]
-*The overarching architectural and literary roadmap to fulfill Vishwa-Vani's vision: digitizing, normalizing, and preserving 17 sacred scriptures (~267,000+ verses) across 4 classical languages (Sanskrit, English, Hindi, Marathi) with zero hallucinations and authentic multi-scholar commentary.*
+*The overarching architectural and literary roadmap to fulfill Vishwa-Vani's vision: digitizing, normalizing, and preserving 18 canonical scriptures (~291,000+ verses) across 4 classical languages (Sanskrit, English, Hindi, Marathi) with zero hallucinations and authentic multi-scholar commentary.*
 
-- [x] **Phase 1: Gold Core Foundation (4 Canonical Scriptures / 950 Verses)**: Bhagavad Gita (701), Isha Upanishad (19), Kena Upanishad (34), Yoga Sutras (196). Multi-scholar commentary live, zero placeholders, 100% verified unit tests, dynamic navbar statistics.
-- [ ] **Phase 2: Itihāsa & Major Purāṇa Scale (Target: ~45,000 Verses / 240 Story Points)**: Complete ingestion of Mahabharata Parvas 1–6 (BORI/KMG), Bhagavata Purana Skandhas 1–3 (Prabhupada/Sridhara Swami), Vishnu Purana (Wilson), and Garuda Purana (Dutt). Decouple storage to Turso LibSQL Edge.
+- [x] **Phase 1: Gold Core Foundation (4 Canonical Scriptures / 950 Verses)**: Bhagavad Gita (701), Isha Upanishad (19), Kena Upanishad (34), Yoga Sutras (196). Multi-scholar commentary live, zero placeholders, 100% verified unit tests, dynamic runtime UI statistics.
+- [ ] **Phase 2: Itihāsa & Major Purāṇa Scale (Target: ~69,000 Verses / 315 Story Points)**: Complete ingestion of Valmiki Ramayana (7 Kandas, 24k verses), Mahabharata Parvas 1–6 (BORI/KMG), Bhagavata Purana Skandhas 1–4 (Prabhupada/Sridhara Swami), Vishnu Purana (Wilson), and Garuda Purana (Dutt). Decouple storage to Turso LibSQL Edge.
 - [ ] **Phase 3: The Four Veda Samhitas & Darshana Philosophy (Target: ~22,000 Mantras / 165 Story Points)**: Ingest metrical Sanskrit and Sayana/Griffith/Dayananda commentary layers for Rigveda, Samaveda, Yajurveda, Atharvaveda, and Badarayana's Brahma Sutras with comparative Advaita/Vishishtadvaita/Dvaita Bhashyas.
 - [ ] **Phase 4: Universal Puranic Scale & Vernacular Classics (Target: ~108,000 Verses / 180 Story Points)**: Massive ingestion of Skanda Purana, Samarth Ramdas's Dasbodh (Marathi Ovis), Manusmriti Dharmashastra, 16 Samskaras ritual handbook, and 108 canonical Stotras.
-- [ ] **Phase 5: Global AI Brain, Semantic Vectors & Oracle Metal Migration (Target: 70 Story Points)**: Generate 768-dimensional vector embeddings for all 267k+ verses using AirLLM / local transformers. Decouple data layer to Oracle Cloud Always-Free ARM instance (24GB RAM, 200GB storage) for zero-cost perpetual ownership.
+- [ ] **Phase 5: Global AI Brain, Semantic Vectors & Oracle Metal Migration (Target: 70 Story Points)**: Generate 768-dimensional vector embeddings for all 291k+ verses using AirLLM / local transformers. Decouple data layer to Oracle Cloud Always-Free ARM instance (24GB RAM, 200GB storage) for zero-cost perpetual ownership.
+
+---
+
+## 📅 1–6 MONTH PRODUCT ROADMAP & EXECUTION SCHEDULE
+
+| Milestone | Target Horizon | Core Scriptural & Architectural Epics | Target Yield | Lead Traditions | Key Deliverables & Research Spikes |
+|:---:|:---:|:---|---:|:---|:---|
+| **Month 1** | Immediate (Sprint 1–2) | **Puranic & Ritual Elevation to 100% Gold**<br>`vishnu-purana`, `samskaras`, `garuda-purana` | ~26,024 verses<br>(85 pts) | H.H. Wilson, M.N. Dutt, Grihya Sutras | Promote Top 3 closest books to Gold; complete chapter drawers; remove placeholders. `SPIKE-RAMAYANA-CRITICAL-ED` |
+| **Month 2** | Month 2 (Sprint 3–4) | **Valmiki Ramayana Adi Kavya Foundation**<br>`ramayana` (Bala & Ayodhya Kandas) | ~8,500 verses<br>(40 pts) | Govindaraja, Rama Tilaka, Ralph T.H. Griffith | Parse 7 Kandas; launch `/ramayana/1` reader route; build interactive Ayodhya-to-Lanka trail map. |
+| **Month 3** | Month 3 (Sprint 5–6) | **Srimad Bhagavata Purana Expansion**<br>`bhagavata-purana` (Skandhas 1–4) | ~3,200 verses<br>(35 pts) | Sridhara Swami, Prabhupada, Sant Eknath | Gaudiya + Advaita commentary alignment; Navadha Bhakti flow; Canto 10 preview. `SPIKE-TURSO-SHARDING` |
+| **Month 4** | Month 4 (Sprint 7–8) | **Mahabharata Parva Scaling & War Formations**<br>`mahabharata` (Parvas 4–6: Virata, Udyoga, Bhishma) | ~14,000 verses<br>(45 pts) | BORI Critical, KMG, Nilakantha | BORI-to-KMG concordance mapping; Kurukshetra Akshauhini & Vyuha visual lab module. |
+| **Month 5** | Month 5 (Sprint 9–10) | **Vedic Samhitas Ingestion & Chanting System**<br>`rigveda` (Mandala 1), `samaveda` | ~3,800 mantras<br>(40 pts) | Sayanacharya, Griffith, Dayananda Saraswati | Vedic meter tokenizer; Saman musical accents; Vedic Chanting Trainer module. `SPIKE-VEDIC-SVARAS` |
+| **Month 6** | Month 6 (Sprint 11–12) | **Darshana Philosophy & Semantic Vector Search**<br>`brahma-sutras`, Local Vector Embeddings | ~1,500 sutras<br>(45 pts) | Shankara, Ramanuja, Madhva | Trilateral comparative Bhashya explorer; 768-dim cross-scripture semantic search. |
 
 ---
 
@@ -67,6 +80,19 @@
 - [ ] `MBH-GATE-001` [QA Gate] Run `node scripts/validate_silver.js mahabharata` against Parvas 1–6 (ensuring 0 broken verses) [15 pts].
 - [ ] `MBH-EDGE-001` [Edge Lake Sync] Stream verified Mahabharata shards into remote Turso database in 500-verse chunks [10 pts].
 - [ ] `MBH-LAB-001` [Vedic Lab] Build interactive Kurukshetra Battlefield Formations (Akshauhini & Vyuha) Decision Lab [10 pts].
+
+---
+
+## 🟢 EPIC-BOOK-VALMIKI-RAMAYANA [ACTIVE - TIER: SILVER | SIZE: XL | 75 PTS]
+*The Adi Kavya (First Epic Poem): 7 Kandas (Bala, Ayodhya, Aranya, Kishkindha, Sundara, Yuddha, Uttara), ~500 Sargas, ~24,000 Shlokas.*
+*Lead Traditions: Govindaraja (Ramayana Bhushana), Rama (Tilaka), Ralph T.H. Griffith (English 1870–1874), Gita Press Gorakhpur.*
+- [ ] `RAM-ACQ-001` [Bronze Ingest] Acquire Baroda Oriental Institute Critical Edition text and Ralph T.H. Griffith English translation [10 pts].
+- [ ] `RAM-PARSE-001` [Silver Parser] Build NVF 1.3 parser for 7 Kandas with ~500 Sargas and Devanagari verse normalization [20 pts].
+- [ ] `RAM-LAYER-001` [Gold Commentary] Layer Govindaraja's *Ramayana Bhushana* and Rama's *Tilaka* classical commentary layers for Bala & Ayodhya Kandas [20 pts].
+- [ ] `RAM-LAYER-002` [Vernacular Heritage] Ingest Tulsidas's *Ramcharitmanas* and Sant Eknath's *Bhavartha Ramayana* comparative cross-reference notes [10 pts].
+- [ ] `RAM-GATE-001` [QA Gate] Run `node scripts/validate_silver.js ramayana` ensuring 0 broken verse IDs and zero placeholder strings [5 pts].
+- [ ] `RAM-EDGE-001` [Edge Lake Sync] Sync Bala Kanda to Turso Edge database and activate live `/ramayana/1` reader route [5 pts].
+- [ ] `RAM-LAB-001` [Vedic Lab] Build interactive Ramayana Geography & Journey Map (Ayodhya to Lanka sacred trail) [5 pts].
 
 ---
 
@@ -226,9 +252,17 @@
 
 ---
 
+## 🔬 EPIC-RESEARCH-SPIKES [TECHNICAL EXPLORATION]
+*Dedicated exploratory spikes to de-risk high-complexity architectural and textual engineering challenges.*
+- [ ] `SPIKE-RAMAYANA-CRITICAL-ED` **[P1-HIGH] Baroda Oriental Institute vs. Gita Press Textual Variants**: Research and codify concordance mapping between the Baroda Critical Edition and Gita Press Sarga numbering to prevent verse offset errors across 7 Kandas.
+- [ ] `SPIKE-TURSO-SHARDING` **[P1-HIGH] Turso Edge Database Sharding & Cost Scaling**: Prototype database partitioning strategy for storing 291k+ verses across multi-tenant Turso / LibSQL edge instances while remaining strictly within the free tier.
+- [ ] `SPIKE-VEDIC-SVARAS` **[P2-MEDIUM] Unicode Vedic Accent Mark Rendering**: Test font compatibility and CSS rendering for Vedic pitch accents (Udatta `U+0951`, Anudatta `U+0952`, Svarita) across mobile browsers for Rigveda and Samaveda.
+
+---
+
 ## 🟣 EPIC-LONG-TERM-ARCHITECTURE (ORACLE METAL) [FUTURE]
 *Perpetual ownership, zero vendor lock-in, and 200GB storage scaling.*
 - [ ] `OCI-001` **Oracle ARM Compute Instance Provisioning**: Setup 4-core Ampere ARM instance with 24GB RAM and 200GB NVMe storage under Oracle Cloud Always Free tier.
-- [ ] `OCI-002` **Dockerized PostgreSQL + pgvector Deployment**: Deploy self-hosted relational store capable of holding 267k+ verses and 10GB+ vector embeddings.
+- [ ] `OCI-002` **Dockerized PostgreSQL + pgvector Deployment**: Deploy self-hosted relational store capable of holding 291k+ verses and 10GB+ vector embeddings.
 - [ ] `OCI-003` **LibSQL/Turso Dump Migration to Native Postgres**: Streamline data pipeline export to native PostgreSQL with sub-millisecond query indexing.
 - [ ] `OCI-004` **Lightweight FastAPI / Go Query Gateway**: Replace direct database drivers with an authenticated edge API gateway.

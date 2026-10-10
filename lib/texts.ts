@@ -297,6 +297,63 @@ export const VEDIC_LIBRARY: VedicText[] = [
     children: ['bhagavad-gita'], // Contains Bhagavad Gita within Bhishma Parva
   },
   {
+    slug: 'ramayana',
+    dataPrefix: 'ramayana',
+    lakeFile: 'vedic-lake.db',
+    name: 'Valmiki Ramayana',
+    nameHi: 'वाल्मीकि रामायण',
+    nameMr: 'वाल्मीकि रामायण',
+    nameDevanagari: 'श्रीमद्वाल्मीकिरामायणम्',
+    totalChapters: 7,
+    description: 'The Adi Kavya (First Epic Poem) composed by Maharshi Valmiki, singing the divine life, righteous governance, and supreme dharma of Bhagavan Sri Rama across 7 Kandas and 24,000 verses.',
+    category: 'itihas',
+    available: true,
+    storage: 'lake',
+    chapterNames: {
+      '1': 'Bala Kanda — Book of Divine Childhood & Youth',
+      '2': 'Ayodhya Kanda — Book of Ayodhya & Righteous Exile',
+      '3': 'Aranya Kanda — Book of the Dandaka Forest Hermitages',
+      '4': 'Kishkindha Kanda — Book of Kishkindha & Sugriva Alliance',
+      '5': 'Sundara Kanda — Book of Hanuman’s Heroic Devotion',
+      '6': 'Yuddha Kanda — Book of War & Victory over Ravana',
+      '7': 'Uttara Kanda — Book of Ramarajya & Epilogue'
+    },
+    chapterNamesHi: {
+      '1': 'बालकाण्ड — श्री राम जन्म एवं बाल लीलाएँ',
+      '2': 'अयोध्याकाण्ड — वनगमन एवं भरत मिलाप',
+      '3': 'अरण्यकाण्ड — दण्डकारण्य वास एवं सीता हरण',
+      '4': 'किष्किन्धाकाण्ड — सुग्रीव मित्रता एवं सुग्रीव राज्य',
+      '5': 'सुन्दरकाण्ड — पवनसुत हनुमान का पराक्रम',
+      '6': 'युद्धकाण्ड (लंकाकाण्ड) — रावण वध एवं धर्म विजय',
+      '7': 'उत्तरकाण्ड — रामराज्य एवं लव-कुश आख्यान'
+    },
+    chapterNamesMr: {
+      '1': 'बालकाण्ड — श्रीराम जन्म व बाललीला',
+      '2': 'अयोध्याकाण्ड — वनवास व भरत भेट',
+      '3': 'अरण्यकाण्ड — पंचवटी वास व सीता हरण',
+      '4': 'किष्किन्धाकाण्ड — सुग्रीव सख्य व वानर सेना',
+      '5': 'सुन्दरकाण्ड — मारुतीरायांचा पराक्रम',
+      '6': 'युद्धकाण्ड — रावण वध व धर्म विजय',
+      '7': 'उत्तरकाण्ड — रामराज्य व लव-कुश आख्यान'
+    },
+    contextualInfo: {
+      speaker: 'Maharshi Valmiki',
+      listener: 'Bharadwaja Muni / Lava & Kusha',
+      lineage: 'Ikshvaku Solar Dynasty (Suryavansha)',
+      historicalEra: 'Treta Yuga (~5000 BCE Traditional Astronomical)',
+      documentationEra: 'Adi Kavya Classical Epigraphic Period',
+      archaeologicalEvidence: 'Ayodhya, Dandakaranya, Kishkindha & Rama Setu Archaeological Surveys',
+      geographicalContext: 'Ayodhya (Kosala) to Kishkindha and Lanka',
+      keyThemes: ['Maryada Purushottama', 'Pitr-Bhakti', 'Satya & Dharma', 'Saranagati', 'Ramarajya'],
+      availableEditions: [
+        'Govindaraja commentary (Bhushana)',
+        'Rama commentary (Tilaka)',
+        'Ralph T.H. Griffith English verse translation (1870–1874)',
+        'Gita Press Gorakhpur critical Sanskrit-Hindi edition'
+      ]
+    }
+  },
+  {
     slug: 'vishnu-purana',
     dataPrefix: 'vishnu-purana',
     storage: 'json',
@@ -305,12 +362,33 @@ export const VEDIC_LIBRARY: VedicText[] = [
     nameMr: 'विष्णु पुराण',
     nameDevanagari: 'विष्णुपुराणम्',
     totalChapters: 6,
-    description: 'Primarily a dialogue between Parashara and his disciple Maitreya, focusing on Vishnu as the ultimate source of the universe.',
+    description: 'The archetype of the eighteen Mahapuranas, structured as an enlightened dialogue between Sage Parashara and his disciple Maitreya on cosmic creation, dynasties, and the supreme nature of Vishnu.',
     category: 'purana',
     available: true,
-    chapterNames: { '1': 'Ansh 1', '2': 'Ansh 2', '3': 'Ansh 3', '4': 'Ansh 4', '5': 'Ansh 5', '6': 'Ansh 6' },
-    chapterNamesHi: { '1': 'प्रथम अंश', '2': 'द्वितीय अंश', '3': 'तृतीय अंश', '4': 'चतुर्थ अंश', '5': 'पञ्चम अंश', '6': 'षष्ठ अंश' },
-    chapterNamesMr: { '1': 'प्रथम अंश', '2': 'द्वितीय अंश', '3': 'तृतीय अंश', '4': 'चतुर्थ अंश', '5': 'पञ्चम अंश', '6': 'षष्ठ अंश' },
+    chapterNames: {
+      '1': 'Prathama Amsa — Cosmic Creation & Sage Parashara Dialogue',
+      '2': 'Dvitiya Amsa — Earthly Geography, Oceans & Seven Lokas',
+      '3': 'Tritiya Amsa — Manvantaras, Veda Division & Ashrama Duties',
+      '4': 'Chaturtha Amsa — Solar & Lunar Royal Genealogies',
+      '5': 'Panchama Amsa — Sri Krishna Charitra & Divine Leelas',
+      '6': 'Shashtha Amsa — Dissolution, Kali Yuga & Final Liberation'
+    },
+    chapterNamesHi: {
+      '1': 'प्रथम अंश — सृष्टि रचना एवं पराशर संवाद',
+      '2': 'द्वितीय अंश — भूगोल, द्वीप एवं सप्त लोक',
+      '3': 'तृतीय अंश — मन्वन्तर, वेद विभाग एवं वर्णाश्रम धर्म',
+      '4': 'चतुर्थ अंश — सूर्य एवं चन्द्र वंश',
+      '5': 'पञ्चम अंश — श्रीकृष्ण चरित्र एवं दिव्य लीलाएँ',
+      '6': 'षष्ठ अंश — प्रलय, कलियुग एवं मोक्ष'
+    },
+    chapterNamesMr: {
+      '1': 'प्रथम अंश — सृष्टी निर्मिती व पराशर संवाद',
+      '2': 'द्वितीय अंश — पृथ्वी, सागर व सप्त लोक',
+      '3': 'तृतीय अंश — मन्वंतरे, वेद विभाग व धर्म',
+      '4': 'चतुर्थ अंश — सूर्य व चंद्र वंश',
+      '5': 'पंचम अंश — श्रीकृष्ण चरित्र व लीला',
+      '6': 'षष्ठ अंश — प्रलय, कलियुग व मोक्ष'
+    },
   },
   {
     slug: 'rigveda',
@@ -351,17 +429,29 @@ export const VEDIC_LIBRARY: VedicText[] = [
     nameHi: '१६ संस्कार (संस्कार विधि)',
     nameMr: '१६ संस्कार (संस्कार विधी)',
     nameDevanagari: 'षोडश संस्काराः',
-    totalChapters: 1,
-    description: 'Practical guide to the 16 life-cycle rites from conception to last rites, including Mantras and procedures.',
+    totalChapters: 3,
+    description: 'Practical guide to the 16 sacred Vedic life-cycle rites from conception to last rites, including authentic Mantras, procedures, and spiritual significance.',
     category: 'other',
-    available: false,
+    available: true,
     storage: 'json',
-    chapterNames: { '1': 'Complete Ritual List' },
-    chapterNamesHi: { '1': 'संपूर्ण संस्कार सूची' },
-    chapterNamesMr: { '1': 'संपूर्ण संस्कार सूची' },
+    chapterNames: {
+      '1': 'Prenatal & Infancy Rites (Garbhadhana to Namakarana)',
+      '2': 'Childhood & Educational Rites (Chudakarana to Upanayana)',
+      '3': 'Marriage & Transition Rites (Vivaha to Antyeshti)'
+    },
+    chapterNamesHi: {
+      '1': 'गर्भाधान से नामकरण (प्रसवपूर्व एवं शैशव संस्कार)',
+      '2': 'चूड़ाकरण से उपनयन (बाल्यावस्था एवं विद्यारम्भ संस्कार)',
+      '3': 'विवाह से अन्त्येष्टि (गृहस्थ एवं पारगमन संस्कार)'
+    },
+    chapterNamesMr: {
+      '1': 'गर्भाधान ते नामकरण (प्रसवपूर्व व बालपण संस्कार)',
+      '2': 'चूडाकरण ते उपनयन (विद्यारंभ व अध्ययन संस्कार)',
+      '3': 'विवाह ते अंत्येष्टी (गृहस्थ व अंतिम संस्कार)'
+    },
   },
   {
-                slug: 'bhagavata-purana',
+    slug: 'bhagavata-purana',
     dataPrefix: 'bhagavata-purana',
     name: 'Srimad Bhagavatam (12 Cantos)',
     nameHi: 'श्रीमद भागवत पुराण (12 स्कन्ध)',
@@ -384,13 +474,22 @@ export const VEDIC_LIBRARY: VedicText[] = [
     nameMr: 'गरुड पुराण',
     nameDevanagari: 'गरुड़पुराणम्',
     totalChapters: 2,
-    description: 'Dialogues between Vishnu and Garuda on life after death, cosmology, and the path to liberation.',
+    description: 'Sacred dialogue between Vishnu and Garuda on life after death, cosmology, righteous living, and the path to liberation.',
     category: 'purana',
-    available: false,
+    available: true,
     storage: 'json',
-    chapterNames: { '1': 'Achara Khanda', '2': 'Preta Khanda' },
-    chapterNamesHi: { '1': 'आचार काण्ड', '2': 'प्रेत काण्ड' },
-    chapterNamesMr: { '1': 'आचार काण्ड', '2': 'प्रेत काण्ड' },
+    chapterNames: {
+      '1': 'Achara Khanda — Dharma, Ethics & Cosmology',
+      '2': 'Preta Khanda — Eschatology, Karma & Liberation'
+    },
+    chapterNamesHi: {
+      '1': 'आचार काण्ड — धर्म, नीति एवं ब्रह्माण्ड विज्ञान',
+      '2': 'प्रेत काण्ड — मृत्यु, कर्म एवं मोक्ष मार्ग'
+    },
+    chapterNamesMr: {
+      '1': 'आचार काण्ड — धर्म, नीती व सृष्टी विज्ञान',
+      '2': 'प्रेत काण्ड — मृत्यू, कर्म व मोक्ष मार्ग'
+    },
   },
   {
     slug: 'manusmriti',
@@ -511,10 +610,11 @@ export const COMPLETED_BOOK_STATS: Record<CompletedBookSlug, { verses: number; c
 export const PIPELINE_BOOK_STATS: Record<string, { verses: number; chapters: number; tier: 'silver' | 'bronze' }> = {
   // Silver Tier (Active Ingestion & Structural NVF Parsing)
   'mahabharata': { verses: 100000, chapters: 2115, tier: 'silver' },
+  'ramayana': { verses: 24000, chapters: 7, tier: 'silver' },
   'garuda-purana': { verses: 19000, chapters: 250, tier: 'silver' },
   'vishnu-purana': { verses: 7000, chapters: 126, tier: 'silver' },
   'bhagavata-purana': { verses: 18000, chapters: 335, tier: 'silver' },
-  'samskaras': { verses: 24, chapters: 1, tier: 'silver' },
+  'samskaras': { verses: 24, chapters: 3, tier: 'silver' },
   'stotras': { verses: 17, chapters: 1, tier: 'silver' },
   // Bronze Tier (Raw Acquisition & Ingestion Queue)
   'rigveda': { verses: 10552, chapters: 10, tier: 'bronze' },
@@ -543,6 +643,7 @@ export const BOOK_EFFORT_ESTIMATES: Record<string, BookEffortEstimate> = {
   'kena-upanishad': { verses: 34, chapters: 1, tier: 'gold', size: 'XS', storyPoints: 5, scholars: ['Adi Shankara', 'Max Müller'] },
   'yoga-sutras': { verses: 196, chapters: 4, tier: 'gold', size: 'S', storyPoints: 10, scholars: ['Veda Vyasa', 'Swami Vivekananda', 'Patanjali'] },
   'mahabharata': { verses: 100000, chapters: 2115, tier: 'silver', size: 'XXL', storyPoints: 120, scholars: ['BORI Critical Ed.', 'Nilakantha Chaturdhara', 'K.M. Ganguli'] },
+  'ramayana': { verses: 24000, chapters: 7, tier: 'silver', size: 'XL', storyPoints: 75, scholars: ['Govindaraja (Bhushana)', 'Rama (Tilaka)', 'Ralph T.H. Griffith', 'Gita Press'] },
   'bhagavata-purana': { verses: 18000, chapters: 335, tier: 'silver', size: 'XL', storyPoints: 80, scholars: ['Sridhara Swami', 'A.C. Bhaktivedanta Swami Prabhupada', 'Sant Eknath'] },
   'vishnu-purana': { verses: 7000, chapters: 126, tier: 'silver', size: 'L', storyPoints: 35, scholars: ['H.H. Wilson', 'Sridhara Swami', 'Gita Press'] },
   'garuda-purana': { verses: 19000, chapters: 250, tier: 'silver', size: 'L', storyPoints: 40, scholars: ['M.N. Dutt', 'Gita Press'] },
@@ -554,7 +655,7 @@ export const BOOK_EFFORT_ESTIMATES: Record<string, BookEffortEstimate> = {
   'brahma-sutras': { verses: 555, chapters: 4, tier: 'bronze', size: 'M', storyPoints: 25, scholars: ['Adi Shankara', 'Ramanuja', 'Madhvacharya'] },
   'dasbodh': { verses: 7751, chapters: 20, tier: 'bronze', size: 'L', storyPoints: 35, scholars: ['Samarth Ramdas Swami', 'Warkari Lineage'] },
   'manusmriti': { verses: 2684, chapters: 12, tier: 'bronze', size: 'M', storyPoints: 25, scholars: ['Medhatithi', 'Kulluka Bhatta', 'Georg Bühler'] },
-  'samskaras': { verses: 24, chapters: 1, tier: 'silver', size: 'S', storyPoints: 10, scholars: ['Classical Grihya Sutras'] },
+  'samskaras': { verses: 24, chapters: 3, tier: 'silver', size: 'S', storyPoints: 10, scholars: ['Classical Grihya Sutras'] },
   'stotras': { verses: 17, chapters: 1, tier: 'silver', size: 'S', storyPoints: 10, scholars: ['Adi Shankara', 'Veda Vyasa', 'Valmiki'] },
 };
 
@@ -564,19 +665,21 @@ export const SCRIPTURE_READINESS_SCORES: Record<string, number> = {
   'isha-upanishad': 100.0,
   'kena-upanishad': 100.0,
   'yoga-sutras': 100.0,
-  'mahabharata': 85.0,
-  'vishnu-purana': 65.0,
-  'garuda-purana': 55.0,
-  'bhagavata-purana': 50.0,
-  'samskaras': 45.0,
-  'stotras': 40.0,
-  'brahma-sutras': 15.0,
-  'rigveda': 10.0,
-  'samaveda': 10.0,
-  'yajurveda': 10.0,
-  'atharvaveda': 10.0,
-  'manusmriti': 5.0,
-  'dasbodh': 5.0,
+  'vishnu-purana': 90.67,
+  'samskaras': 82.17,
+  'garuda-purana': 82.17,
+  'mahabharata': 76.5,
+  'bhagavata-purana': 75.94,
+  'ramayana': 70.0,
+  'stotras': 51.36,
+  'samaveda': 47.53,
+  'rigveda': 41.5,
+  'atharvaveda': 40.76,
+  'yajurveda': 40.4,
+  'brahma-sutras': 40.05,
+  'manusmriti': 40.01,
+  'dasbodh': 15.0,
+  'skanda-purana': 10.0,
 };
 
 /** Check if strict demo gating is enabled */
