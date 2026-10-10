@@ -3,12 +3,19 @@
 ## 🔴 EPIC-P0-UX-READING-EXPERIENCE-AND-DYNAMIC-METRICS [ACTIVE]
 *Immediate overhaul of reading layout, dynamic metric calculation, universal library access, responsive typography, and brand-aligned navigation to fix critical usability and statistical defects reported in production audit.*
 - [ ] DYN-001: Zero Hardcoded Verse Counts & Dynamic Aggregation Engine - Replace all hardcoded verse and book statistics (including 709, 950, 1500+) with dynamic queries from the live corpus database and shard manifests. Ensure library stats dynamically reflect the true loaded corpus (126,306+ database verses / 148,000+ total gold verses across all 17 sacred texts).
-- [ ] READ-001: Eliminate Double Sidebar Cramping in Reader - Refactor `components/shloka/study-client.tsx` to remove the dual 280px/320px static sidebars that steal 600px of horizontal space and crush the center content. Convert Vedic Labs and Interactive Tools into non-intrusive collapsible drawers or unified header/footer utilities.
-- [ ] READ-002: Transition Shloka Layout to Dignified Single-Column Reading Flow - Replace the cramped 2-column card grid (`grid-cols-1 lg:grid-cols-2`) with an expansive, well-proportioned single-column reading canvas (`max-w-4xl mx-auto`). Ensure Devanagari Sanskrit, IAST, translations, and commentaries have generous line-height, proper font hierarchy, and breathing room.
-- [ ] LIB-001: Comprehensive Universal Library with Full Catalog Browser - Overhaul the Library section (and dedicated `/library` route/anchor) to display all 17 sacred texts organized by Vedic categories (Itihasa, Upanishad, Purana, Veda, Darshana), showing their exact chapter and verse availability so any user can pick and begin reading immediately.
+- [ ] READ-001-A: Refactor `components/shloka/study-client.tsx` to remove the dual 280px/320px static sidebars.
+- [ ] READ-001-B: Convert Vedic Labs and Interactive Tools into non-intrusive collapsible drawers.
+- [ ] READ-001-C: Unify header/footer utilities for interactive elements.
+- [ ] READ-002-A: Replace 2-column card grid with single-column reading canvas (`max-w-4xl mx-auto`).
+- [ ] READ-002-B: Adjust line-height, font hierarchy, and breathing room for Devanagari Sanskrit and IAST.
+- [ ] LIB-001-A: Overhaul Library section to display all 17 sacred texts organized by Vedic categories.
+- [ ] LIB-001-B: Display exact chapter and verse availability for each scripture.
 - [ ] NAV-006: Brand Streamlining & Intuitive Navigation - Re-architect Header navigation to cleanly represent the core pillars of Vishwa-Vani: Sacred Library, Vedic Labs, Search, and Roadmap, with dynamic live corpus statistics and zero confusing or isolated items.
 - [ ] FLOW-001: Fix 'Begin Reading' Button Target - Refactor `BeginReadingButton` in the hero section so that if no previous reading position exists, it guides the user directly to the Library (`#library`) to choose a scripture, rather than arbitrarily hardcoding Bhagavad Gita chapter 1.
 - [ ] CONT-001: End-to-End Content & Copy Polishing Audit - Review and refine copy, descriptions, card labels, and metadata across all landing, roadmap, lab, and info pages from an end-user perspective to ensure authentic, dignified, and scholarly presentation.
+- [ ] `PROD-005` **[NOW #19][P2-MEDIUM] Broken social previews (verified live)**: `og:image` `/og-image.jpg` -> **404**, `twitter:image` `/twitter-image.jpg` missing; no manifest/icons; `og:url` points to the broken-cert apex (see `OPS-001`). Generate `opengraph-image`, add `manifest.webmanifest`. *AC:* all referenced assets 200.
+- [ ] Run validation, promote to Gold, test runner, and lint pass.
+- [ ] `DEPLOY-003` **Create Rating Telemetry Component**: Implement a clean, responsive client star-rating widget under active scholar cards in `components/shloka/study-client.tsx` using Tailwind v4.
 
 ## 🔴 EPIC-SECURITY-AND-BUGS [ACTIVE]
 *All bug and security issues are prioritized here.*
@@ -16,6 +23,9 @@
 - [ ] SEC-002-A: Implement AES-256 for PII at rest in the database.
 - [ ] SEC-002-B: Set up secure HTTP-only cookies for session tokens.
 - [ ] BUG-001: Resolve any lingering UI glitches in the commentary dropdowns or Next.js App Router navigation.
+- [ ] `SEC-008` **Security Hardening (Hack-Proofing)**: Implement strict HTTP Security Headers in `next.config.ts`, add `zod` for strict API input validation, and integrate rate limiting (e.g., Redis via `@upstash/ratelimit`) to protect against DDoS.
+- [ ] `SEC-DEP-001` **NPM Audit Mitigation (Micromatch/Braces)**: Resolve 32 high-severity vulnerabilities affecting `jest`, `@next/eslint-plugin-next`, and `fast-glob` by forcing resolution of `braces` and `micromatch` to patched versions (via overrides in package.json) or upgrading testing dependencies. Run unit tests post-fix to verify stability.
+- [ ] `BUG-068` **[P2] Dev Environment Dependency Security Audit**: Execute automated audits on the package lockfile to ensure zero high-risk vulnerabilities are present in devDependencies.
 
 ## 🟠 EPIC-USER-INTERFACE [ACTIVE]
 *All UI/UX overhauls, redesigns, and user experience enhancements.*
@@ -25,11 +35,14 @@
 - [ ] UI-003: AI Synthesis Note - Clarify and beautifully render the "AI synthesis note" in the chapter UI.
 - [ ] UI-004: Commentary & Language Selector - Polish the UI for switching between the 4+ authors and 3+ languages per shloka.
 - [ ] UI-005: Daily Pooja & Festivals - Build a UI module for dynamically generated pooja paths and calendars.
-
 - [ ] UI-006: Library Page Overhaul - Redesign the library landing page so it visually resembles a library (book covers, categories, summaries) rather than a raw data list.
 - [ ] UI-007: Book Entry Journeys - Create a clear, structured entry point for every book. When a user clicks a book, they should see an introduction, chapter list, and a prominent 'Start Reading' button.
 - [ ] UI-008: Navigation & Journey Mapping - Ensure that every page provides a logical path for the user to discover books and dive into reading them.
 - [ ] UI-009: Book-Specific UI Adjustments - Review each integrated book's UI to ensure its unique structure is presented beautifully and intuitively.
+- [ ] `SEC-007` **Package Unification & Dependency Workflow**: Remove `axios` and standardize entirely on Next.js native `fetch`. Implement an automated Dependabot workflow to ensure dependencies remain current without breaking builds.
+- [ ] `UX-006` **UI/UX Audit & Clutter Reduction**: Perform a deep review of the landing page and reading UI to eliminate visual clutter and maximize the visibility of 100% completed (Gold) texts.
+- [ ] `BUG-052` **[P2] npm install Warnings and Vulnerabilities**: Audit all deprecated package warnings (`inflight`, `glob`, `whatwg-encoding`, `prebuild-install`) and security vulnerabilities to achieve a clean `npm i` execution output.
+- [ ] Run lint, test runner, and build check.
 
 ## 🟢 EPIC-BOOK: SKANDA PURANA [QUEUED]
 *End-to-end integration for Skanda Purana.*

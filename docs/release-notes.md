@@ -9,7 +9,7 @@
 
 ## [1.3.0]
 
-### 🔴 Production Deployment Audit & Quality Corrections (EPIC-P0-PRODUCTION-AUDIT-AND-CORRECTIONS)
+### ### 🔴 Production Deployment Audit & Quality Corrections (EPIC-P0-PRODUCTION-AUDIT-AND-CORRECTIONS)
 - [x] `NAV-001` **Restored Sanskrit 'ॐ' (Om) Logo**: Eliminated mojibake corruption (`à¥ ` -> `ॐ`) and restored proper accessible styling in the primary navigation bar.
 - [x] `NAV-002` & `NAV-003` **Strict 100% Completed Verse Metrics**: Replaced deceptive hardcoded 709/1,500+ counts with canonical, verified verse counts (950 shlokas across 4 Gold scriptures: Bhagavad Gita 701, Isha Upanishad 19, Kena Upanishad 34, Yoga Sutras 196). Center navbar stats now accurately display "4 Verified Books" and "950 Complete Verses" linked to `/roadmap`.
 - [x] `NAV-004` **Navbar Clutter Reduction**: Removed isolated and unjustified "Data Engine" (`/engine`) link from desktop and mobile navigation menus.
@@ -18,17 +18,17 @@
 - [x] `METRIC-001` & `METRIC-002` **Standard Unit Hierarchy & Dual-Pool Architecture**: Formalized the 3-tier unit standard (Shloka -> Chapter -> Book) and segmented the library into 2 explicit pools: Pool 1 (100% Completed & Verified Gold Pool: 4 books, 24 chapters, 950 verses) and Pool 2 (Ingestion Pipeline: 13 books, 2,916 chapters, ~175,410 verses with 126,306 live database rows).
 - [x] `ROADMAP-001` & `ROADMAP-002` **Roadmap Metrics & Visual Tier Standard**: Overhauled `/roadmap` with a 4-card metric dashboard, diagrammatic 3-Tier Data Certification Standards (Gold, Silver, Bronze), corrected 5-stage data processing pipeline (Bronze -> Silver -> Gold -> Verification Gate -> Live Edge), and interactive pool switcher.
 - [x] `CHAR-001` **Full-Spectrum Mojibake Elimination**: Swept and repaired over 3,100 corrupted Devanagari character sequences (`à¤...`, `à¥...`) and corrupted UTF-8 emoji strings across `lib/texts.ts`, `app/page.tsx`, `components/layout/Header.tsx`, `components/shloka/study-client.tsx`, and `components/shloka/shloka-mask.tsx`.
-### ⚡ Edge Database Migration & Windows SWC Stabilization (EPIC-P0-DATABASE-MIGRATION-TURSO)
+### ### ⚡ Edge Database Migration & Windows SWC Stabilization (EPIC-P0-DATABASE-MIGRATION-TURSO)
 - [x] `DB-001` to `DB-005` **Turso Edge Database Migration**: Shifted runtime database operations to `@libsql/client` remote edge database, bypassing Vercel 50MB serverless limit and git LFS boundaries.
 - [x] **Windows SWC Native Engine Fix**: Pinned `@swc/core` to `1.10.18` via `devDependencies` and npm `overrides` to bypass upstream Windows NTFS DACL caching bug (`ERR_SWC_NATIVE_CACHE`).
 
 ## [1.2.1]
 
-### 🎨 UI Redesign & Design System Alignment (UI-REDES-001 to UI-REDES-007)
+### ### 🎨 UI Redesign & Design System Alignment (UI-REDES-001 to UI-REDES-007)
 - [x] `UI-REDES-001` **Master Design System**: Created `design-system/MASTER.md` establishing 60-30-10 color balance, fluid clamp typography, cubic-bezier micro-interactions, and warm stone/amber aesthetics.
 - [x] `UI-REDES-002` to `UI-REDES-005` **Page Restyling**: Restyled landing page (`app/page.tsx`), reader component (`components/shloka/study-client.tsx`), search view (`components/search/search-client.tsx`), and lab view (`app/lab/page.tsx`) with fluid typography (`clamp()`), text balance, asymmetrical bento layouts, and smooth cubic-bezier hover states.
 - [x] `UI-REDES-006` & `UI-REDES-007` **Stabilization & Bug Hunt**: Swept all redesigned pages for responsive and contrast issues. Added comprehensive Jest tests for strict UI gating.
-### 🌐 Local Area Network (LAN) Deployment & Demo (DEMO-LOC-001 to DEMO-LOC-004)
+### ### 🌐 Local Area Network (LAN) Deployment & Demo (DEMO-LOC-001 to DEMO-LOC-004)
 - [x] `DEMO-LOC-001` **Network Binding**: Added `dev:lan` (`next dev -H 0.0.0.0`) and `start:lan` (`next start -H 0.0.0.0`) binding scripts to `package.json`.
 - [x] `DEMO-LOC-002` **Demo Launch Script**: Created executable `scripts/start-lan-demo.sh` to verify Node environment, detect local IPv4 address, enable strict UI gating, compile build, and launch production server bound to `0.0.0.0:3000`.
 - [x] `DEMO-LOC-003` **Strict UI Gating**: Implemented readiness-score gating in `lib/texts.ts`. Under `STRICT_DEMO_GATING=true` or `NEXT_PUBLIC_STRICT_DEMO=true`, scriptures with < 100% readiness (such as Gita or Mahabharata) are automatically gated out from UI display, exposing only fully verified scriptures (Isha & Kena Upanishads).
@@ -36,25 +36,25 @@
 
 ## [1.2.0]
 
-### 🏛️ Data Operations & Crawler Infrastructure
+### ### 🏛️ Data Operations & Crawler Infrastructure
 - [x] `BUG-073` **Data Duplication in MBH Parva 3**: Resolved verse duplication issues in MBH `adhyaya-231.json` by removing duplicated content.
 - [x] `BUG-074` **Placeholder Violation in Pipeline**: Refactored `vishwa.py` to log warnings instead of auto-generating placeholder strings.
 - [x] `BUG-075` **Mahabharata Parva 3 Re-scraping**: Freshly ingested Parva 3 Adhyaya 231 from KMG using scrapling to avoid 403 blocks.
 - [x] `CRAWL-001` **Investigate specialized KMG scrapers**: Replaced generic `PlaywrightCrawler` with a robust custom parser for Sacred Texts.
 - [x] `CRAWL-002` **Integrate GRETIL Scraper**: Researched and integrated a library for high-accuracy Sanskrit extraction from GRETIL.
 - [x] `GATHER-KENA-UPANISHAD` & `KENA-DATA-2` **Complete Kena Upanishad**: Acquired remaining 25 verses and 2nd author to complete the 34-verse text, then validated and promoted it to GOLD.
-### 🔧 Engineering, Stability & Hydration
+### ### 🔧 Engineering, Stability & Hydration
 - [x] `BUG-072` **Hardcoded Library Stats**: Refactored `totalAuthors` and other statistics in `lib/texts.ts` to be dynamically calculated from the live scholars registry.
 - [x] `BUG-076` **Hydration Audit (Global)**: Audited `Header.tsx` and `locale-provider.tsx` for safe `localStorage` access, adding `mounted` states to prevent hydration mismatches.
 - [x] `GATE-002` & `GATE-001` **Visual Audits**: Completed full visual audits for Isha, Bhagavata, Stotras, and Mahabharata. Verified all routes, AI synthesis, and author toggles.
 - [x] `BUG-078` **Hunt Pipeline/Data Bugs**: Cleaned Kena Upanishad and Bhagavata Purana placeholder text to protect against Zero Hallucination violations.
-### 🎨 UI, Deployment & Interactive Labs
+### ### 🎨 UI, Deployment & Interactive Labs
 - [x] `LAB-GITA-004` to `LAB-GITA-010` **Gita interactive labs**: Implemented Moksha Path Navigator, Yoga Mind Control Explorer, Bhāgavata Bhakti Flow, and Kena Sensory Inquiry labs.
 - [x] `DEPLOY-001` & `DEPLOY-002` **Deployment Readiness**: Configured Cloudflare Pages / Vercel Edge caching, rate-limiting telemetry, and custom SSL domains.
 
 ## [1.1.0]
 
-### Core Four Scripture Data Acquisition
+### ### Core Four Scripture Data Acquisition
 - [x] `SCHOLAR-001` **Top 10 Identification**: Research and rank candidates (Adi Shankara, Ramanuja, Madhva, Abhinavagupta, Tilak, Gandhi, Radhakrishnan, Easwaran, Aurobindo, Gita Press). **Done**: 2026-05-03. Ranked list + acquisition plan below. Existing slate (ISKCON Prabhupāda + Sant Dnyāneshwar) confirmed as Tier 0 complete; this task ranks the 10 next-priority additions.
 - [x] `SCHOLAR-002` **Multilingual Balance Pass**: Actively target scholars to ensure Hindi (Goyandka), Marathi (Historical Sages), and English (Modern scholars) are represented. **Done**: 2026-05-03. Built on the SCHOLAR-001 ranked list — language-availability matrix below + per-language target slate + gap analysis.
 - [x] `SCHOLAR-003` **Single-Language Excellence**: Ingest high-prestige scholars even if they only have 1 language (e.g., pure Sanskrit Bhasyas or regional Marathi works). **Done**: 2026-05-03. Single-language ingestion policy + NVF schema rule + vetted Sanskrit corpora list below.
@@ -162,27 +162,21 @@
 - [x] `CAT-002` Mahabharata — Done: Promoted Parvas 1-3 to Gold, 2026-05-17 — NEXT (after Isha graduates). Real KMG data in `data/2-silver/mahabharata/parva-1/` (adhyaya files, 210+ verses/file, no placeholders). Current state: KMG English only, single author, zero HI/MR. Must complete MBH-DATA-1 through MBH-DATA-7 (pre-data enrichment: Hindi + Marathi + Author 2 layers) before running Pipeline PIPE-MBH-1→6. Goal: Parva 1 adhyayas 1–10 to Gold first with 2-author × 3-language gold standard.
 - [x] `CAT-003` Bhagavata Purana — Done: Promoted Canto 1 to Gold, 2026-05-17 — 12 skandhas partial silver in `data/2-silver/bhagavata-purana/`. Audit silver quality before promoting. Source: Prabhupada translation (CC) or Gita Press EN.
 - [x] `CAT-004` Vishnu Purana — Done: Promoted to Gold, 2026-05-17 — 6 amshas partial silver in `data/2-silver/vishnu-purana/`. Source: H.H. Wilson translation (public domain).
-- `PROD-005` **[NOW #19][P2-MEDIUM] Broken social previews (verified live)**: `og:image` `/og-image.jpg` -> **404**, `twitter:image` `/twitter-image.jpg` missing; no manifest/icons; `og:url` points to the broken-cert apex (see `OPS-001`). Generate `opengraph-image`, add `manifest.webmanifest`. *AC:* all referenced assets 200.
 - `PROD-005` **[AUDIT-1 #17][P2-MEDIUM] Broken social/PWA assets**: metadata references `/og-image.jpg` and `/twitter-image.jpg`, neither exists in `public/`; no web manifest/app icons. *Fix:* generate images (or `opengraph-image.tsx`), add `manifest.webmanifest`. *AC:* 200 for all referenced assets (test scans metadata).
 - `SEC-016` **[AUDIT-1 #19][P2-MEDIUM] Middleware hygiene**: `NEXT_LOCALE` cookie lacks `Secure/SameSite/Path/Max-Age`; matcher also runs on static assets; `X-Vishwa-Vani-Tier` header leaks internals; rate-limit headers inaccurate. *Fix:* harden cookie, narrow matcher, drop internal headers. *AC:* middleware unit tests.
 - `PROD-014` **[P3]** `<html lang="en">` hard-coded though UI serves `hi`/`mr`; update `lang` client-side/by route for SEO and screen readers.
-- \SEC-012\ **Gemini API Financial Guard**: Added hard limits to \/api/synthesize\ to prevent unbounded billing from massive context arrays.
-- \BUG-FB-001\ **Feedback Widget Validation Sync**: Fixed CI/CD to deploy on push, ensuring UI and API validation rules (50 chars) are in sync. Fixed mobile scrolling/z-index issues.
+- [x] \SEC-012\ **Gemini API Financial Guard**: Added hard limits to \/api/synthesize\ to prevent unbounded billing from massive context arrays.
+- [x] \BUG-FB-001\ **Feedback Widget Validation Sync**: Fixed CI/CD to deploy on push, ensuring UI and API validation rules (50 chars) are in sync. Fixed mobile scrolling/z-index issues.
 - \COMP-001\ **UK GDPR / Cookie Compliance**: Built and deployed a Cookie Consent Banner preventing Google Analytics from loading until explicit opt-in is granted, avoiding £17.5m fines.
 - \SEC-013\ **Hardcoded AES Key Removal**: Removed the hardcoded \SECRET_KEY\ from \lib/server-lake.ts\ and replaced it with a \process.env.LAKE_SECRET_KEY\ fallback.
 - `UX-007` **Landing Page Simplification**: Strip out excessive styling. Keep fundamental modern UI techniques, reduce heavy shadows, eliminate visual clutter.
 - `BUG-085` **IntersectionObserver Cleanup**: Finalize performance audits on scroll tracking; ensure single firing events per verse.
-- `SEC-001` **SAST / DAST Vulnerability Fixes**: Run `npm audit fix` and patch critical Next.js/PostCSS vulnerabilities in the lockfile to resolve Vercel edge/runtime security warnings.
 - `SEC-002` **Anti-Scraping / Content Protection**: Add `user-select: none` to CSS and block context menu/copy actions via JS to prevent automated crawling and manual copy-pasting of proprietary translations.
-- `SEC-003` **Hardcoded Token Sweep**: Audit the repository for any exposed API keys or Vercel OIDC tokens (Verified clear; only local `.vercel` config exists).
+- [x] `SEC-003` **Hardcoded Token Sweep**: Audit the repository for any exposed API keys or Vercel OIDC tokens (Verified clear; only local `.vercel` config exists).
 - `SEC-004` **Robots.txt & Crawling Prevention**: Deploy a `robots.txt` that restricts aggressive crawler bot access to the API and text content.
 - `SEC-005` **Gating Incomplete Content**: Enforced strict gating in `lib/texts.ts` so that *only* 100% completed scripture tiers are available to the UI. Anything incomplete is hidden from the live deployment.
-- `SEC-007` **Package Unification & Dependency Workflow**: Remove `axios` and standardize entirely on Next.js native `fetch`. Implement an automated Dependabot workflow to ensure dependencies remain current without breaking builds.
-- `SEC-008` **Security Hardening (Hack-Proofing)**: Implement strict HTTP Security Headers in `next.config.ts`, add `zod` for strict API input validation, and integrate rate limiting (e.g., Redis via `@upstash/ratelimit`) to protect against DDoS.
-- `SEC-DEP-001` **NPM Audit Mitigation (Micromatch/Braces)**: Resolve 32 high-severity vulnerabilities affecting `jest`, `@next/eslint-plugin-next`, and `fast-glob` by forcing resolution of `braces` and `micromatch` to patched versions (via overrides in package.json) or upgrading testing dependencies. Run unit tests post-fix to verify stability.
 - `UX-005` **Google Analytics Integration (Zero Cost)**: Integrate GA4 using `@next/third-parties/google`. Google Analytics is completely free forever. This will capture anonymous traffic, most-read verses, and drop-offs.
 - `UX-003` **User Feedback Channel**: Create a non-intrusive feedback widget. To keep it free, we will store feedback directly in our existing local database or route it to a free Discord webhook/email (Resend free tier).
-- `UX-006` **UI/UX Audit & Clutter Reduction**: Perform a deep review of the landing page and reading UI to eliminate visual clutter and maximize the visibility of 100% completed (Gold) texts.
 - `UX-004` **Interactive Roadmap & Feature Voting**: Create a well-categorized roadmap display where users can upvote features. We will use our existing free database to track IP hashes to prevent spam, avoiding paid KV stores.
 - `UX-001` **Pipeline Visibility UI**: Display a visually appealing "Pipeline Data Status" tracker on the landing page showing what texts are currently live and what is coming next.
 - `UX-002` **Console Error Resolution**: Clean up benign hydration and layout errors (e.g., ResizeObserver loop) in `app/layout.tsx` to keep the console clean for technical visitors.
@@ -191,17 +185,17 @@
 - `BUG-083` **Intersection Observer Threshold Polish**: Address minor lag in the reader progress bar synchronization during rapid scroll.
 - `GITA-SCH-01` **Acquire Sankaracharya Bhashya**: Sourced and structured for all 700 verses.
 - `GITA-SCH-02` **Acquire Prabhupada Purports**: Sourced and structured for all 700 verses.
-- `MBH-PARV1-PROM` to `MBH-PARV3-PROM`: Adi, Sabha, and Vana Parvas acquired and promoted to Gold.
+- [x] `MBH-PARV1-PROM` to `MBH-PARV3-PROM`: Adi, Sabha, and Vana Parvas acquired and promoted to Gold.
 - `BHAG-CANTO1-PROM` to `BHAG-CANTO6-PROM`: Cantos 1 through 6 acquired and mapped.
 - `FEAT-SEM-001` **Define Tattva Ontology Schema**: Define a JSON schema (`types/ontology.ts`) for global semantic concepts (Tattvas) such as "Dharma", "Brahman", "Atman", and "Karma".
 - `FEAT-SEM-002` **Static Ontology Seed Mapping**: Create `data/ontology/tattvas.json` containing initial hand-curated linkages across Bhagavad Gita and Upanishads.
 - `BUG-084` **Lucide Icons**: Upgrade `lucide-react` dependency and address `Github` and `Linkedin` missing icon export issue without changing the variable names arbitrarily.
-### 🏛️ Data Operations
+### ### 🏛️ Data Operations
 - [x] `BUG-079` **Bhagavata Purana Data Integrity**: Fixed repeated content, invalid layer content, missing chapter fields in `book.meta.json`, and filled missing Prabhupada translations via `single_language` adjustments.
 - [x] `BHAG-DATA-GAP` **Gather Bhagavata Purana Gaps**: Added programmatic UI-compliant layers for Vyasa and Prabhupada translation missing slots (hi/mr/en) avoiding placeholders. Added `ai_metadata`.
 - [x] `BHAG-DATA-3` **Verify & Promote Bhagavata Purana**: Validated and promoted Canto 1 (19 chapters, 718 verses, 2 authors: Vyasa, Prabhupada) to GOLD status and updated manifest.
 - [x] `GITA-SCH-03` to `GITA-SCH-10` **Scholarly Ingestion**: Marked as deferred due to missing source data and recorded to Pending Human Decision Backlog.
-### 🧪 Quality Gates
+### ### 🧪 Quality Gates
 - Lint: ✅
 - TSC: ✅
 - Test: ✅
@@ -230,36 +224,31 @@
 
 ## [1.0.10]
 
-### 🏛️ Scripture Promotion & Bug Fixes
+### ### 🏛️ Scripture Promotion & Bug Fixes
 - [x] `BUG-069` **Validate Silver Edge Cases**: Added required `book.meta.json` legal clearance metadata to `garuda-purana`, `isha-upanishad`, `samskaras`, `stotras`, and `yoga-sutras` so they successfully pass silver data validation.
 - [x] `BUG-070` **Check Search Coverage**: Modified `lib/lake.worker.ts` to include searching the JSON `content` column in SQLite so new commentary data is indexed in the fallback search query.
 - [x] `BUG-071` **Audit Mobile Viewport Navigation**: Patched `HierarchicalNav` to restrict maximum dropdown width on narrow mobile viewports and implemented search filtering inside the dropdown to handle large parva structures.
-- `BUG-052` **[P2] npm install Warnings and Vulnerabilities**: Audit all deprecated package warnings (`inflight`, `glob`, `whatwg-encoding`, `prebuild-install`) and security vulnerabilities to achieve a clean `npm i` execution output.
-- `BUG-068` **[P2] Dev Environment Dependency Security Audit**: Execute automated audits on the package lockfile to ensure zero high-risk vulnerabilities are present in devDependencies.
 - Ingest Nilakantha Sanskrit commentary from `data/1-bronze/nilakantha-raw-ocr.txt` into Gold adhyaya files.
 - Register in scholars registry & update UI selector.
 - Write dedicated Jest test case: `__tests__/mbh-nilakantha.test.ts`.
-- Run lint, test runner, and build check.
 - Ingest KMG translation, promote to Gold, register, test, and verify.
 - Scrape Vedabase for Canto 1.
 - Parse into NVF 1.0 format.
 - Write dedicated Jest test case: `__tests__/bhagavata-prabhupada.test.ts`.
-- Run validation, promote to Gold, test runner, and lint pass.
-- `DEPLOY-003` **Create Rating Telemetry Component**: Implement a clean, responsive client star-rating widget under active scholar cards in `components/shloka/study-client.tsx` using Tailwind v4.
 - Developed interactive `RatingTelemetry` component, providing users a star-rating widget under active scholar cards to rate translations and commentary.
 - Documented data acquisition blocks for Phase A bronze drops (`MBH-DATA-2` to `5`, `KENA-DATA-1`, `BHAG-DATA-1`, `VISHNU-DATA-1`) in the `Pending Human Decision Backlog`.
-- Added Crawlee and Playwright dependencies and scaffolded generic data crawling implementation.
-- Fixed `isha-upanishad` pipeline verification missing file `book.meta.json` and repromoted to Gold level.
-- Enabled Mahabharata availability in `lib/texts.ts` and successfully verified its UI via rigorous checks.
-- Addressed development environment dependency vulnerabilities and resolved deprecated package warnings, satisfying `BUG-052` and `BUG-068`.
+- [x] Added Crawlee and Playwright dependencies and scaffolded generic data crawling implementation.
+- [x] Fixed `isha-upanishad` pipeline verification missing file `book.meta.json` and repromoted to Gold level.
+- [x] Enabled Mahabharata availability in `lib/texts.ts` and successfully verified its UI via rigorous checks.
+- [x] Addressed development environment dependency vulnerabilities and resolved deprecated package warnings, satisfying `BUG-052` and `BUG-068`.
 - Updated test environment `jsdom` and `jest-environment-jsdom` to exact compatible versions and eliminated testing blockers.
 - Modified `scripts/audit_gold.js`, `scripts/audit_multilang.js`, `scripts/audit_standards.js` to recursively resolve nested directories (fixing Mahabharata Parva traversal).
-- Created `data/2-silver/mahabharata/book.meta.json` (and for Bhagavata Purana, Vishnu Purana).
-- Promoted Mahabharata, Bhagavata Purana, and Vishnu Purana to Gold using `scripts/promote_to_gold.js`.
-- Bumped version to 1.0.10.
-### 📜 Scholars Registry
+- [x] Created `data/2-silver/mahabharata/book.meta.json` (and for Bhagavata Purana, Vishnu Purana).
+- [x] Promoted Mahabharata, Bhagavata Purana, and Vishnu Purana to Gold using `scripts/promote_to_gold.js`.
+- [x] Bumped version to 1.0.10.
+### ### 📜 Scholars Registry
 - Marked `GITA-SCH-03` through `GITA-SCH-10` as BLOCKED and appended missing source data note to Pending Human Decision Backlog.
-### 🧪 Quality Gates
+### ### 🧪 Quality Gates
 - Lint: ✅
 - TSC: ✅
 - Test: ✅
@@ -267,31 +256,29 @@
 
 ## [1.0.9]
 
-### 🏛️ Scripture Promotion
-- **Mahabharata (Parvas 1-3)** promoted to Gold tier (~19,580 verses).
-- **Bhagavata Purana** (Canto 1) promoted to Gold tier.
-- **Vishnu Purana** promoted to Gold tier.
-- Legal metadata (book.meta.json) created for Mahabharata, Bhagavata Purana, and Vishnu Purana to satisfy the pipeline safety gate.
-### 📜 Scholars Registry
-- **Nilakantha Caturdhara** registered as a live Tier 0 scholar with POC commentary injection for Mahabharata 1.1.
-- **Bal Gangadhar Tilak** and **Sri Aurobindo** (Gita) marked as deferred until reliable digital sources are added to the repository.
-### 🔧 Engineering & Stability
-- **Stability Gate**: Upgraded next version in package.json to match the actual environment (^16.2.6) and verified build.
-- **Bug Fix**: Resolved a division-by-zero error in scripts/vishwa.py manifest generation.
-- **Test Suite**: Added __tests__/mbh-kmg.test.ts to verify Mahabharata Gold data integrity.
-### 🧪 Quality Gates
+### ### 🏛️ Scripture Promotion
+- [x] **Mahabharata (Parvas 1-3)** promoted to Gold tier (~19,580 verses).
+- [x] **Bhagavata Purana** (Canto 1) promoted to Gold tier.
+- [x] **Vishnu Purana** promoted to Gold tier.
+- [x] Legal metadata (book.meta.json) created for Mahabharata, Bhagavata Purana, and Vishnu Purana to satisfy the pipeline safety gate.
+### ### 📜 Scholars Registry
+- [x] **Nilakantha Caturdhara** registered as a live Tier 0 scholar with POC commentary injection for Mahabharata 1.1.
+- [x] **Bal Gangadhar Tilak** and **Sri Aurobindo** (Gita) marked as deferred until reliable digital sources are added to the repository.
+### ### 🔧 Engineering & Stability
+- [x] **Stability Gate**: Upgraded next version in package.json to match the actual environment (^16.2.6) and verified build.
+- [x] **Bug Fix**: Resolved a division-by-zero error in scripts/vishwa.py manifest generation.
+- [x] **Test Suite**: Added __tests__/mbh-kmg.test.ts to verify Mahabharata Gold data integrity.
+### ### 🧪 Quality Gates
 - Lint: ✅
 - TSC: ✅
 - Test: ✅
 - Build: ✅
-- **Bhagavata Purana (Canto 1)**: Repaired all 19 chapters. Removed "A beautiful verse" fillers, backfilled Vyasa/Prabhupada metadata, and ensured EN/HI/MR coverage. Added chapter themes to manifest.
-- **Kena Upanishad**: Ingested Khandas 1 & 2 (14 verses) with Max Müller translation. Promoted to Gold and activated.
-- **Yoga Sutras (Chapter 1)**: Ingested 10 key sutras of Samadhi Pada with Vivekananda translation. Promoted to Gold and activated.
+- [x] **Bhagavata Purana (Canto 1)**: Repaired all 19 chapters. Removed "A beautiful verse" fillers, backfilled Vyasa/Prabhupada metadata, and ensured EN/HI/MR coverage. Added chapter themes to manifest.
+- [x] **Kena Upanishad**: Ingested Khandas 1 & 2 (14 verses) with Max Müller translation. Promoted to Gold and activated.
+- [x] **Yoga Sutras (Chapter 1)**: Ingested 10 key sutras of Samadhi Pada with Vivekananda translation. Promoted to Gold and activated.
 - **Kena Sensory Inquiry Lab**: New interactive lab for sensory inquiry (Kena 1.1-1.2).
 - **V-Score/Readiness**: Bhagavata Purana, Kena Upanishad, and Yoga Sutras now 100% Gold Standard compliant.
-**Current Session ID**: session_20260529_kena_bhag_yoga
-**Last Action**: Full Gold promotion and Lab registration for three scriptures.
-### 🧹 Migrated Completed Tasks (from Backlog Cleanup)
+### ### 🧹 Migrated Completed Tasks (from Backlog Cleanup)
 - [x] `BUG-069` **Validate Silver Edge Cases**: Run validation on all silver data files to ensure they don't break unexpectedly.
 - [x] `BUG-070` **Check Search Coverage**: Ensure the search functionality correctly indexes new commentary data.
 - [x] `BUG-071` **Audit Mobile Viewport Navigation**: Verify hierarchical nav drop down functionality on mobile screens.
@@ -379,4 +366,3 @@
 - [x] `FIX-GOLD-GATE-001` After BUG-054 and BUG-055 confirmed done: `node scripts/audit_multilang.js --all` — Gita PASS; Isha filler blocked in UI. `data/3-gold/mahabharata/` has 0 files. `grep -r "GENERIC PLACEHOLDER" data/3-gold/` → no output. — Done: 2026-04-25
 - [x] `STD-002` Create `scripts/audit_standards.js` — comprehensive multi-tier standards validator. Checks: gold verse fields (original/translit/translation/meaning), layer coverage (2 authors × 3 langs), layer authenticity, author metadata completeness, ai_metadata, repeated content. Silver checks: NVF structure, no corrupted/mock data, at least 1 EN layer. Audit results 2026-04-25: Gita gold ALL PASS; Isha gold 150 violations (pre-existing BUG-050); all silver PASS. — Done: 2026-04-25
 - [x] `PIPE-001` **`scripts/validate_silver.js`** — Generic NVF schema validator. Checks `id`, `original`, `verse`, `layers[]`; commentary ≥ 20 chars; no bracket-prefix or `[PLACEHOLDER_` content; EN layer required. Exit 0 = pass. — Done: 2026-04-20
-
