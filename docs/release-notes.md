@@ -1,5 +1,32 @@
 # Release Notes
 
+## [1.3.3]
+
+### 📜 Master Scripture Epics, Data Pipeline Specification & OWASP Security Hardening
+- [x] **Master Data Pipeline Specification (`docs/data-pipeline.md`)**: Formally specified the deterministic 5-Stage Ingestion Lifecycle (Bronze -> Silver -> Gold -> QA Gate -> Edge Lake Ingestion), NVF 1.3 schema definition, multi-scholar lineage matrix across 8 traditions, and mathematical effort estimation formula ($655$ total story points across all 17 scriptures).
+- [x] **Dedicated Scripture Epics in Backlog (`docs/backlog.md`)**: Restructured backlog with dedicated epics for EVERY remaining scripture in the canonical catalog:
+  - `EPIC-BOOK-MAHABHARATA` (18 Parvas, 2,115 chapters, 100,000 verses - XXL / 120 pts)
+  - `EPIC-BOOK-BHAGAVATA-PURANA` (12 Skandhas, 335 chapters, 18,000 verses - XL / 80 pts)
+  - `EPIC-BOOK-RIGVEDA` (10 Mandalas, 1,028 Suktas, 10,552 mantras - XL / 65 pts)
+  - `EPIC-BOOK-VISHNU-PURANA` (6 Amsas, 126 chapters, 7,000 verses - L / 35 pts)
+  - `EPIC-BOOK-GARUDA-PURANA` (2 Khandas, 250 chapters, 19,000 verses - L / 40 pts)
+  - `EPIC-BOOK-SAMAVEDA` (2 Archanas, 1,875 mantras - M / 20 pts)
+  - `EPIC-BOOK-YAJURVEDA` (40 Adhyayas, 1,975 mantras - M / 20 pts)
+  - `EPIC-BOOK-ATHARVAVEDA` (20 Kandas, 730 Suktas, 5,977 mantras - L / 35 pts)
+  - `EPIC-BOOK-BRAHMA-SUTRAS` (4 Adhyayas, 16 Padas, 555 sutras - M / 25 pts)
+  - `EPIC-BOOK-DASBODH` (20 Dashakas, 200 Samasas, 7,751 ovis - L / 35 pts)
+  - `EPIC-BOOK-MANUSMRITI` (12 Adhyayas, 2,684 verses - M / 25 pts)
+  - `EPIC-BOOK-SKANDA-PURANA` (7 Khandas, ~81,000 verses - XXL / 100 pts)
+  - `EPIC-BOOK-SAMSKARAS` (16 life-cycle rites, 24 core shlokas - S / 10 pts)
+  - `EPIC-BOOK-STOTRAS` (Universal Devotional Collection, 108 hymns - S / 10 pts)
+- [x] **Master Vision & 5-Phase Roadmap Epic (`EPIC-ROADMAP-MASTER-VISION`)**: Formulated overarching roadmap tracking progress from Phase 1 (Core 4 Gold books / 950 verses) through Phase 5 (768-dim embeddings, global AI brain, and zero-cost 200GB Oracle bare-metal decoupling).
+- [x] `SEC-OWASP-001` **Input Validation & Path Traversal Lockdown (`app/api/lake/route.ts`)**: Bounded numeric input ranges, restricted database filename via strict regex (`/^[a-zA-Z0-9_-]+\.db$/`), and resolved paths via `path.basename()` to eliminate directory traversal risks.
+- [x] `SEC-OWASP-002` **Search Query LIKE Wildcard DoS Defense (`app/api/lake/route.ts`)**: Enforced a 100-character ceiling on search strings and escaped SQL wildcards (`%`, `_`, `\`) to prevent SQLite/LibSQL table scan exhaustion attacks.
+- [x] `SEC-OWASP-005` **Anti-Scraping Token Bucket & IP Rate Limiting (`lib/api-guard.ts`)**: Built an in-memory sliding-window token bucket rate limiter in `validateApiRequest()` capping incoming requests to 60 req/min per IP with automated memory pruning of expired buckets.
+- [x] `SEC-LLM-001` **Prompt Injection Defense & Delimiter Fencing (`app/api/synthesize/route.ts`)**: Added `sanitizeVedicContext()` to strip HTML tags, redact adversarial override patterns (`system prompt`, `ignore previous instructions`), and enclose inputs inside `<scripture_context>` boundary fences.
+- [x] `SEC-LLM-002` **Model Denial of Service & Token Throttling (`app/api/synthesize/route.ts`)**: Restricted AI synthesis input to 1,500 characters and throttled `/api/synthesize` to a maximum of 10 requests per minute per IP.
+- [x] **Rigorous Verification**: TypeScript compilation passed with 0 errors (`npx tsc --noEmit`), and local Jest test suite passed 53 test suites and 266 tests with 0 failures (`npm test -- --ci`).
+
 ## [1.3.2]
 
 ### 🕉️ Daily Shloka, Animated Landing Experience & Reading UI Polish (EPIC-P0-UX-READING-EXPERIENCE-AND-DYNAMIC-METRICS)

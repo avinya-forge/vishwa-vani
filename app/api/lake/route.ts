@@ -9,10 +9,10 @@ import path from 'path';
 // Schema for search request
 const searchSchema = z.object({
   action: z.enum(['QUERY_VERSES', 'SEARCH_LAKE']),
-  query: z.string().optional(),
-  textSlug: z.string().optional(),
-  chapter: z.number().optional(),
-  lakeFile: z.string().default('vedic-lake.db'),
+  query: z.string().max(100, 'Search query must not exceed 100 characters.').optional(),
+  textSlug: z.string().regex(/^[a-z0-9-]+$/, 'Invalid scripture slug.').optional(),
+  chapter: z.number().int().min(0).max(5000).optional(),
+  lakeFile: z.string().regex(/^[a-zA-Z0-9_-]+\.db$/, 'Invalid database filename.').default('vedic-lake.db'),
 });
 
 let cachedClient: Client | null = null;
@@ -28,7 +28,9 @@ function getDb(lakeFile: string): Client {
     return cachedClient;
   }
 
-  const dbPath = path.join(process.cwd(), 'public', lakeFile);
+  // Prevent path traversal by strictly resolving filename inside public directory
+  const safeFilename = path.basename(lakeFile);
+  const dbPath = path.join(process.cwd(), 'public', safeFilename);
   cachedClient = createClient({
     url: `file:${dbPath}`
   });
@@ -61,7 +63,9 @@ export async function POST(request: Request) {
     }
 
     if (action === 'SEARCH_LAKE') {
-      const searchPattern = `%${query}%`;
+      // Escape SQL LIKE wildcards to prevent query regex Denial-of-Service
+      const sanitizedQuery = (query || '').trim().replace(/[%_\\]/g, '\\$&');
+      const searchPattern = `%${sanitizedQuery}%`;
       const result = await db.execute({
         sql: 'SELECT * FROM verses WHERE content LIKE ? OR slok LIKE ? OR transliteration LIKE ? LIMIT 50',
         args: [searchPattern, searchPattern, searchPattern]
