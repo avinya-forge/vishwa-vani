@@ -12,7 +12,7 @@ jest.mock('@/components/layout/Header', () => () => <div data-testid="mock-heade
 jest.mock('@/components/layout/Footer', () => () => <div data-testid="mock-footer" />)
 
 // Mock texts
-jest.mock('@/lib/texts', () => ({}))
+// Removed mock
 jest.mock('@/lib/server-lake', () => ({
   getDynamicLibraryStats: jest.fn().mockResolvedValue({
     completedBooks: 4, pipelineBooks: 13, completedVerses: 950
