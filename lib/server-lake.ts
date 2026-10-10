@@ -113,3 +113,18 @@ export async function getVersesFromLakeServer(textSlug: string, chapter: number,
     throw err;
   }
 }
+
+export async function getDynamicDatabaseVersesCount(lakeFile: string = 'vedic-lake.db'): Promise<number> {
+  try {
+    const client = getClient(lakeFile);
+    const query = `SELECT count(*) as count FROM verses`;
+    const result = await client.execute(query);
+    if (result.rows.length > 0) {
+      return Number(result.rows[0].count) || 0;
+    }
+    return 0;
+  } catch (err) {
+    console.error('SERVER LAKE: Connection or Query error while fetching count', err);
+    return 0;
+  }
+}

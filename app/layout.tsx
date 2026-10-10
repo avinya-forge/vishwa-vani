@@ -4,6 +4,7 @@ import Footer from '@/components/layout/Footer'
 import LocaleProvider from '@/components/layout/locale-provider'
 
 import { setRequestLocale } from 'next-intl/server'
+import { getDynamicLibraryStats } from '@/lib/texts'
 import FeedbackWidget from '@/components/ui/feedback-widget'
 import CookieConsent from '@/components/ui/cookie-consent'
 import AnalyticsManager from '@/components/layout/analytics-manager'
@@ -58,6 +59,7 @@ export default async function RootLayout({
   // Hardcode 'en' as the default server-side baseline for static export.
   // The client side locale-provider will handle actual user preferences.
   setRequestLocale('en')
+  const stats = await getDynamicLibraryStats()
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
@@ -69,7 +71,7 @@ export default async function RootLayout({
           <LocaleProvider>
             
             <BetaBanner />
-            <Header />
+            <Header stats={stats} />
             <main id="main-content" className="flex-grow">
               {children}
             </main>

@@ -218,21 +218,12 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
     openGraph: {
       title,
       description,
-      url: absoluteUrl(`/${textSlug}/${chapterNumber}`),
-      images: [
-        {
-          url: absoluteUrl('/og-image.jpg'),
-          width: 1200,
-          height: 630,
-          alt: title
-        }
-      ]
+      url: absoluteUrl(`/${textSlug}/${chapterNumber}`)
     },
     twitter: {
       card: 'summary_large_image',
       title,
-      description,
-      images: [absoluteUrl('/twitter-image.jpg')]
+      description
     }
   }
 }

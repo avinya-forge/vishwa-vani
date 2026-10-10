@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { useTranslations, useLocale } from 'next-intl'
 import { usePathname } from 'next/navigation'
-import { VEDIC_LIBRARY, getLibraryStats, isTextCompleted } from '@/lib/texts'
+import { VEDIC_LIBRARY, isTextCompleted } from '@/lib/texts'
 import { useState, useEffect, useRef } from 'react'
 import { ThemeToggle } from '@/components/theme-toggle'
 import { AnimatedStat } from '@/components/ui/animated-stat'
@@ -27,7 +27,7 @@ function useOnClickOutside(ref: React.RefObject<HTMLDivElement | null>, handler:
   }, [ref, handler])
 }
 
-export default function Header() {
+export default function Header({ stats }: { stats: { completedBooks: number, pipelineBooks: number, completedVerses: number } }) {
   const _t = useTranslations('nav')
   const _locale = useLocale()
   const pathname = usePathname()
@@ -66,7 +66,6 @@ export default function Header() {
   const isOnTextPage = pathname.startsWith('/') && pathname.split('/').length >= 3 && !['search', 'lab', 'acknowledgments'].includes(pathname.split('/')[1])
 
   // Group available books by category  
-  const stats = getLibraryStats()
   const availableBooks = VEDIC_LIBRARY.filter(b => b.available)
   const completedBooksList = VEDIC_LIBRARY.filter(b => isTextCompleted(b.slug))
   const topBooks = completedBooksList.length > 0 ? completedBooksList : availableBooks.slice(0, 5)

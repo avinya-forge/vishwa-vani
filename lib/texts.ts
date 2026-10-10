@@ -595,35 +595,36 @@ export function getAvailableTexts(): VedicText[] {
 }
 
 /** Standardized scriptural metrics with two-pool breakdown */
-export function getLibraryStats() {
-  const completedVerses = Object.values(COMPLETED_BOOK_STATS).reduce((acc, b) => acc + b.verses, 0); // 950
-  const completedChapters = Object.values(COMPLETED_BOOK_STATS).reduce((acc, b) => acc + b.chapters, 0); // 24
-  const completedBooks = COMPLETED_BOOKS_SLUGS.length; // 4
+export async function getDynamicLibraryStats() {
+  const { getDynamicDatabaseVersesCount } = await import('./server-lake').catch(() => ({ getDynamicDatabaseVersesCount: async () => 0 }));
+  const dbCount = await getDynamicDatabaseVersesCount().catch(() => 0);
 
-  const pipelineBooks = Object.keys(PIPELINE_BOOK_STATS).length; // 13
-  const pipelineVerses = Object.values(PIPELINE_BOOK_STATS).reduce((acc, b) => acc + b.verses, 0); // 175,410
-  const pipelineChapters = Object.values(PIPELINE_BOOK_STATS).reduce((acc, b) => acc + b.chapters, 0); // 2,916
+  const completedVerses = Object.values(COMPLETED_BOOK_STATS).reduce((acc, b) => acc + b.verses, 0);
+  const completedChapters = Object.values(COMPLETED_BOOK_STATS).reduce((acc, b) => acc + b.chapters, 0);
+  const completedBooks = COMPLETED_BOOKS_SLUGS.length;
+
+  const pipelineBooks = Object.keys(PIPELINE_BOOK_STATS).length;
+  const pipelineVerses = Object.values(PIPELINE_BOOK_STATS).reduce((acc, b) => acc + b.verses, 0);
+  const pipelineChapters = Object.values(PIPELINE_BOOK_STATS).reduce((acc, b) => acc + b.chapters, 0);
 
   const available = getAvailableTexts();
 
+  const databaseVerses = dbCount > 0 ? dbCount : 126306;
+
   return {
-    // Standard Unit Pool 1: 100% Completed Verified Pool (Gold)
     completedBooks,
     completedChapters,
     completedVerses,
-    // Standard Unit Pool 2: Ingestion & Pipeline Pool (Silver & Bronze)
     pipelineBooks,
     pipelineChapters,
     pipelineVerses,
-    // Physical Lake Database Shards (Turso / SQLite)
-    databaseVerses: 126306,
-    // Total Catalog Metrics
+    databaseVerses,
     totalBooks: available.length,
     totalChapters: available.reduce((acc, t) => acc + t.totalChapters, 0),
     totalVerses: `${(completedVerses + pipelineVerses).toLocaleString()}+`,
     targetVerses: '100,000+',
     totalAuthors: getLiveScholars().length,
-    totalLangs: 4, // Sanskrit, English, Hindi, Marathi
+    totalLangs: 4,
     categories: Array.from(new Set(available.map(t => t.category)))
   };
 }

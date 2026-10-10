@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { getTranslations } from 'next-intl/server'
-import { getLibraryStats, getVedicHierarchy } from '@/lib/texts'
+import { getDynamicLibraryStats, getVedicHierarchy } from '@/lib/texts'
 import { setRequestLocale } from 'next-intl/server'
 import BeginReadingButton from '@/components/ui/begin-reading-button'
 import { AnimatedStat } from '@/components/ui/animated-stat'
@@ -10,7 +10,7 @@ export default async function Home() {
   setRequestLocale('en')
   const t = await getTranslations('home')
   const locale = 'en'
-  const stats = getLibraryStats()
+  const stats = await getDynamicLibraryStats()
   const hierarchy = getVedicHierarchy()
 
   const statsList = [
