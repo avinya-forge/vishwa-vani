@@ -2,10 +2,11 @@ import {
   VEDIC_LIBRARY,
   getTextBySlug,
   getAvailableTexts,
-  getLibraryStats,
+
   getVedicHierarchy,
   getAllTextChapterPaths,
-} from '@/lib/texts';
+} from '@/lib/texts'
+import { getDynamicLibraryStats } from '@/lib/server-lake';
 
 // ─── getTextBySlug ─────────────────────────────────────────────────────────────
 
@@ -63,9 +64,9 @@ describe('getAvailableTexts', () => {
 
 // ─── getLibraryStats ─────────────────────────────────────────────────────────
 
-describe('getLibraryStats', () => {
-  it('returns a valid stats object', () => {
-    const stats = getLibraryStats();
+describe('getDynamicLibraryStats', () => {
+  it('returns a valid stats object', async () => {
+    const stats = await getDynamicLibraryStats();
     expect(stats).toBeDefined();
     expect(typeof stats.totalBooks).toBe('number');
     expect(typeof stats.totalChapters).toBe('number');
@@ -76,25 +77,25 @@ describe('getLibraryStats', () => {
     expect(Array.isArray(stats.categories)).toBe(true);
   });
 
-  it('totalBooks matches count of available texts', () => {
-    const stats = getLibraryStats();
+  it('totalBooks matches count of available texts', async () => {
+    const stats = await getDynamicLibraryStats();
     expect(stats.totalBooks).toBe(getAvailableTexts().length);
   });
 
-  it('totalChapters is positive and sums available texts', () => {
-    const stats = getLibraryStats();
+  it('totalChapters is positive and sums available texts', async () => {
+    const stats = await getDynamicLibraryStats();
     const expected = getAvailableTexts().reduce((acc, t) => acc + t.totalChapters, 0);
     expect(stats.totalChapters).toBe(expected);
   });
 
-  it('categories array is non-empty and contains valid values', () => {
-    const stats = getLibraryStats();
+  it('categories array is non-empty and contains valid values', async () => {
+    const stats = await getDynamicLibraryStats();
     const validCategories = ['itihas', 'upanishad', 'veda', 'purana', 'other'];
-    stats.categories.forEach(cat => expect(validCategories).toContain(cat));
+    stats.categories.forEach((cat: string) => expect(validCategories).toContain(cat));
   });
 
-  it('itihas category is present', () => {
-    const stats = getLibraryStats();
+  it('itihas category is present', async () => {
+    const stats = await getDynamicLibraryStats();
     expect(stats.categories).toContain('itihas');
   });
 });

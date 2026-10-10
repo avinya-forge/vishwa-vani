@@ -1,4 +1,3 @@
-import { getLiveScholars } from "./scholars"
 /**
  * Vishwa-Vani: Vedic Wikipedia Data Registry
  * 
@@ -595,38 +594,7 @@ export function getAvailableTexts(): VedicText[] {
 }
 
 /** Standardized scriptural metrics with two-pool breakdown */
-export function getLibraryStats() {
-  const completedVerses = Object.values(COMPLETED_BOOK_STATS).reduce((acc, b) => acc + b.verses, 0); // 950
-  const completedChapters = Object.values(COMPLETED_BOOK_STATS).reduce((acc, b) => acc + b.chapters, 0); // 24
-  const completedBooks = COMPLETED_BOOKS_SLUGS.length; // 4
 
-  const pipelineBooks = Object.keys(PIPELINE_BOOK_STATS).length; // 13
-  const pipelineVerses = Object.values(PIPELINE_BOOK_STATS).reduce((acc, b) => acc + b.verses, 0); // 175,410
-  const pipelineChapters = Object.values(PIPELINE_BOOK_STATS).reduce((acc, b) => acc + b.chapters, 0); // 2,916
-
-  const available = getAvailableTexts();
-
-  return {
-    // Standard Unit Pool 1: 100% Completed Verified Pool (Gold)
-    completedBooks,
-    completedChapters,
-    completedVerses,
-    // Standard Unit Pool 2: Ingestion & Pipeline Pool (Silver & Bronze)
-    pipelineBooks,
-    pipelineChapters,
-    pipelineVerses,
-    // Physical Lake Database Shards (Turso / SQLite)
-    databaseVerses: 126306,
-    // Total Catalog Metrics
-    totalBooks: available.length,
-    totalChapters: available.reduce((acc, t) => acc + t.totalChapters, 0),
-    totalVerses: `${(completedVerses + pipelineVerses).toLocaleString()}+`,
-    targetVerses: '100,000+',
-    totalAuthors: getLiveScholars().length,
-    totalLangs: 4, // Sanskrit, English, Hindi, Marathi
-    categories: Array.from(new Set(available.map(t => t.category)))
-  };
-}
 
 /** Get texts grouped by parent-child hierarchy with category totals */
 export function getVedicHierarchy() {

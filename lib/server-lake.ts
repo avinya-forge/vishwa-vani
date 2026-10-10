@@ -113,3 +113,55 @@ export async function getVersesFromLakeServer(textSlug: string, chapter: number,
     throw err;
   }
 }
+
+export async function getDynamicDatabaseVersesCount(lakeFile: string = 'vedic-lake.db'): Promise<number> {
+  try {
+    const client = getClient(lakeFile);
+    const query = `SELECT count(*) as count FROM verses`;
+    const result = await client.execute(query);
+    if (result.rows.length > 0) {
+      return Number(result.rows[0].count) || 0;
+    }
+    return 0;
+  } catch (err) {
+    console.error('SERVER LAKE: Connection or Query error while fetching count', err);
+    return 0;
+  }
+}
+
+
+import { COMPLETED_BOOK_STATS, PIPELINE_BOOK_STATS, COMPLETED_BOOKS_SLUGS, getAvailableTexts } from './texts';
+import { getLiveScholars } from './scholars';
+
+export async function getDynamicLibraryStats() {
+  const dbCount = await getDynamicDatabaseVersesCount().catch(() => 0);
+
+  const completedVerses = Object.values(COMPLETED_BOOK_STATS).reduce((acc, b) => acc + b.verses, 0);
+  const completedChapters = Object.values(COMPLETED_BOOK_STATS).reduce((acc, b) => acc + b.chapters, 0);
+  const completedBooks = COMPLETED_BOOKS_SLUGS.length;
+
+  const pipelineBooks = Object.keys(PIPELINE_BOOK_STATS).length;
+  const pipelineVerses = Object.values(PIPELINE_BOOK_STATS).reduce((acc, b) => acc + b.verses, 0);
+  const pipelineChapters = Object.values(PIPELINE_BOOK_STATS).reduce((acc, b) => acc + b.chapters, 0);
+
+  const available = getAvailableTexts();
+
+  const databaseVerses = dbCount > 0 ? dbCount : 126306;
+
+  return {
+    completedBooks,
+    completedChapters,
+    completedVerses,
+    pipelineBooks,
+    pipelineChapters,
+    pipelineVerses,
+    databaseVerses,
+    totalBooks: available.length,
+    totalChapters: available.reduce((acc, t) => acc + t.totalChapters, 0),
+    totalVerses: `${(completedVerses + pipelineVerses).toLocaleString()}+`,
+    targetVerses: '100,000+',
+    totalAuthors: getLiveScholars().length,
+    totalLangs: 4,
+    categories: Array.from(new Set(available.map(t => t.category)))
+  };
+}

@@ -1,9 +1,11 @@
 import React from 'react'
 import Header from '@/components/layout/Header'
+import { getDynamicLibraryStats } from '@/lib/server-lake'
 import Footer from '@/components/layout/Footer'
 import { setRequestLocale } from 'next-intl/server'
 
-export default function AcknowledgmentsPage() {
+export default async function AcknowledgmentsPage() {
+  const stats = await getDynamicLibraryStats()
   setRequestLocale('en')
 
   const sections = [
@@ -43,7 +45,7 @@ export default function AcknowledgmentsPage() {
 
   return (
     <div className="min-h-screen bg-[#FDFBF7] flex flex-col">
-      <Header />
+      <Header stats={stats} />
       <main className="flex-grow max-w-4xl mx-auto px-6 py-20">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-6xl font-serif font-black text-stone-900 mb-6">Acknowledgments</h1>
