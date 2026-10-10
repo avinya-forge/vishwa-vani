@@ -1,4 +1,3 @@
-import { getLiveScholars } from "./scholars"
 /**
  * Vishwa-Vani: Vedic Wikipedia Data Registry
  * 
@@ -595,39 +594,7 @@ export function getAvailableTexts(): VedicText[] {
 }
 
 /** Standardized scriptural metrics with two-pool breakdown */
-export async function getDynamicLibraryStats() {
-  const { getDynamicDatabaseVersesCount } = await import('./server-lake').catch(() => ({ getDynamicDatabaseVersesCount: async () => 0 }));
-  const dbCount = await getDynamicDatabaseVersesCount().catch(() => 0);
 
-  const completedVerses = Object.values(COMPLETED_BOOK_STATS).reduce((acc, b) => acc + b.verses, 0);
-  const completedChapters = Object.values(COMPLETED_BOOK_STATS).reduce((acc, b) => acc + b.chapters, 0);
-  const completedBooks = COMPLETED_BOOKS_SLUGS.length;
-
-  const pipelineBooks = Object.keys(PIPELINE_BOOK_STATS).length;
-  const pipelineVerses = Object.values(PIPELINE_BOOK_STATS).reduce((acc, b) => acc + b.verses, 0);
-  const pipelineChapters = Object.values(PIPELINE_BOOK_STATS).reduce((acc, b) => acc + b.chapters, 0);
-
-  const available = getAvailableTexts();
-
-  const databaseVerses = dbCount > 0 ? dbCount : 126306;
-
-  return {
-    completedBooks,
-    completedChapters,
-    completedVerses,
-    pipelineBooks,
-    pipelineChapters,
-    pipelineVerses,
-    databaseVerses,
-    totalBooks: available.length,
-    totalChapters: available.reduce((acc, t) => acc + t.totalChapters, 0),
-    totalVerses: `${(completedVerses + pipelineVerses).toLocaleString()}+`,
-    targetVerses: '100,000+',
-    totalAuthors: getLiveScholars().length,
-    totalLangs: 4,
-    categories: Array.from(new Set(available.map(t => t.category)))
-  };
-}
 
 /** Get texts grouped by parent-child hierarchy with category totals */
 export function getVedicHierarchy() {

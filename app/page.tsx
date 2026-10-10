@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { getTranslations } from 'next-intl/server'
-import { getDynamicLibraryStats, getVedicHierarchy } from '@/lib/texts'
+import {  getVedicHierarchy } from '@/lib/texts'
+import { getDynamicLibraryStats } from '@/lib/server-lake'
 import { setRequestLocale } from 'next-intl/server'
 import BeginReadingButton from '@/components/ui/begin-reading-button'
 import { AnimatedStat } from '@/components/ui/animated-stat'

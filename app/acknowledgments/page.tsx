@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '@/components/layout/Header'
-import { getDynamicLibraryStats } from '@/lib/texts'
+import { getDynamicLibraryStats } from '@/lib/server-lake'
 import Footer from '@/components/layout/Footer'
 import { setRequestLocale } from 'next-intl/server'
 

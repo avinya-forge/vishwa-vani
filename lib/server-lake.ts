@@ -128,3 +128,40 @@ export async function getDynamicDatabaseVersesCount(lakeFile: string = 'vedic-la
     return 0;
   }
 }
+
+
+import { COMPLETED_BOOK_STATS, PIPELINE_BOOK_STATS, COMPLETED_BOOKS_SLUGS, getAvailableTexts } from './texts';
+import { getLiveScholars } from './scholars';
+
+export async function getDynamicLibraryStats() {
+  const dbCount = await getDynamicDatabaseVersesCount().catch(() => 0);
+
+  const completedVerses = Object.values(COMPLETED_BOOK_STATS).reduce((acc, b) => acc + b.verses, 0);
+  const completedChapters = Object.values(COMPLETED_BOOK_STATS).reduce((acc, b) => acc + b.chapters, 0);
+  const completedBooks = COMPLETED_BOOKS_SLUGS.length;
+
+  const pipelineBooks = Object.keys(PIPELINE_BOOK_STATS).length;
+  const pipelineVerses = Object.values(PIPELINE_BOOK_STATS).reduce((acc, b) => acc + b.verses, 0);
+  const pipelineChapters = Object.values(PIPELINE_BOOK_STATS).reduce((acc, b) => acc + b.chapters, 0);
+
+  const available = getAvailableTexts();
+
+  const databaseVerses = dbCount > 0 ? dbCount : 126306;
+
+  return {
+    completedBooks,
+    completedChapters,
+    completedVerses,
+    pipelineBooks,
+    pipelineChapters,
+    pipelineVerses,
+    databaseVerses,
+    totalBooks: available.length,
+    totalChapters: available.reduce((acc, t) => acc + t.totalChapters, 0),
+    totalVerses: `${(completedVerses + pipelineVerses).toLocaleString()}+`,
+    targetVerses: '100,000+',
+    totalAuthors: getLiveScholars().length,
+    totalLangs: 4,
+    categories: Array.from(new Set(available.map(t => t.category)))
+  };
+}

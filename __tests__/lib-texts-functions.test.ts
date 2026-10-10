@@ -2,10 +2,11 @@ import {
   VEDIC_LIBRARY,
   getTextBySlug,
   getAvailableTexts,
-  getDynamicLibraryStats,
+
   getVedicHierarchy,
   getAllTextChapterPaths,
-} from '@/lib/texts';
+} from '@/lib/texts'
+import { getDynamicLibraryStats } from '@/lib/server-lake';
 
 // ─── getTextBySlug ─────────────────────────────────────────────────────────────
 
