@@ -8,6 +8,7 @@ import {
   isTextCompleted,
   COMPLETED_BOOK_STATS,
   PIPELINE_BOOK_STATS,
+  BOOK_EFFORT_ESTIMATES,
   SCRIPTURE_READINESS_SCORES,
 } from '@/lib/texts'
 import {
@@ -18,6 +19,9 @@ import {
   Clock,
   ArrowUp,
   BookOpen,
+  ShieldCheck,
+  Lock,
+  Layers,
 } from 'lucide-react'
 
 // Starting points for community upvote tallies
@@ -364,6 +368,138 @@ export default function RoadmapClient({ stats }: { stats: { completedBooks: numb
           </div>
         </div>
 
+        {/* Strategic 5-Phase Master Roadmap to Achieve the Vision */}
+        <div className="mb-16">
+          <div className="text-center max-w-2xl mx-auto mb-8">
+            <div className="inline-flex items-center gap-2 mb-2 px-3 py-1 rounded-full bg-orange-100 dark:bg-orange-950/40 text-orange-700 dark:text-orange-400 text-[10px] font-bold uppercase tracking-widest">
+              <Layers className="w-3.5 h-3.5" />
+              Strategic Master Vision
+            </div>
+            <h2 className="text-2xl font-serif font-black text-stone-900 dark:text-stone-100 mb-2">
+              The 5-Phase Roadmap to Achieve the Vision
+            </h2>
+            <p className="text-stone-500 dark:text-stone-400 text-xs">
+              Systematically scaling from our 4 verified core foundations to 17 canonical scriptures (~267,000+ verses) across 4 classical languages with 655 total story points of effort.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+            {[
+              {
+                phase: 'Phase 1',
+                title: 'Gold Foundation',
+                scale: '4 Books · 950 Verses',
+                effort: '35 pts',
+                status: 'Completed',
+                statusColor: 'bg-emerald-500 text-white',
+                desc: 'Bhagavad Gita, Isha & Kena Upanishads, Yoga Sutras with multi-scholar commentary live.',
+              },
+              {
+                phase: 'Phase 2',
+                title: 'Itihāsa & Purāṇas',
+                scale: '~45,000 Verses',
+                effort: '240 pts',
+                status: 'Active Ingest',
+                statusColor: 'bg-orange-500 text-white',
+                desc: 'Mahabharata (Parvas 1–6), Bhagavata Purana (Cantos 1–3), Vishnu Purana, Garuda Purana.',
+              },
+              {
+                phase: 'Phase 3',
+                title: 'Four Veda Samhitas',
+                scale: '~22,000 Mantras',
+                effort: '165 pts',
+                status: 'In Queue',
+                statusColor: 'bg-stone-500 text-white',
+                desc: 'Rigveda, Samaveda, Yajurveda, Atharvaveda & Badarayana’s Brahma Sutras with Sayana & Dayananda.',
+              },
+              {
+                phase: 'Phase 4',
+                title: 'Universal Puranas',
+                scale: '~108,000 Verses',
+                effort: '180 pts',
+                status: 'In Queue',
+                statusColor: 'bg-stone-500 text-white',
+                desc: 'Skanda Purana, Samarth Ramdas’s Dasbodh (Marathi), Manusmriti, 16 Samskaras, 108 Stotras.',
+              },
+              {
+                phase: 'Phase 5',
+                title: 'Global AI & Metal',
+                scale: '267,000+ Verses',
+                effort: '70 pts',
+                status: 'Future Scope',
+                statusColor: 'bg-indigo-600 text-white',
+                desc: '768-dim semantic vectors + Oracle Cloud Always-Free ARM (200GB storage, 0-cost decoupling).',
+              },
+            ].map(p => (
+              <div
+                key={p.phase}
+                className="bg-white/60 dark:bg-stone-900/60 backdrop-blur-xl border border-stone-200/80 dark:border-stone-800 rounded-2xl p-4 shadow-sm flex flex-col justify-between"
+              >
+                <div>
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-[10px] font-black uppercase tracking-widest text-orange-600 dark:text-orange-400">
+                      {p.phase}
+                    </span>
+                    <span className={`px-2 py-0.5 rounded text-[8px] font-black uppercase tracking-widest ${p.statusColor}`}>
+                      {p.status}
+                    </span>
+                  </div>
+                  <h3 className="text-sm font-serif font-black text-stone-900 dark:text-stone-100 mb-1">
+                    {p.title}
+                  </h3>
+                  <div className="text-[10px] font-bold text-stone-500 mb-2">
+                    {p.scale} · <span className="text-orange-600 font-black">{p.effort}</span>
+                  </div>
+                  <p className="text-stone-600 dark:text-stone-400 text-[10px] leading-relaxed font-serif">
+                    {p.desc}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* OWASP Application Security & LLM Integrity Certification */}
+        <div className="mb-16 bg-gradient-to-r from-stone-900 to-stone-950 text-white rounded-3xl p-6 sm:p-8 shadow-xl border border-stone-800 relative overflow-hidden">
+          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 relative z-10">
+            <div className="max-w-xl">
+              <div className="inline-flex items-center gap-2 mb-3 px-3 py-1 rounded-full bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 text-[10px] font-black uppercase tracking-widest">
+                <ShieldCheck className="w-3.5 h-3.5" />
+                OWASP Top 10 & LLM Security Certified
+              </div>
+              <h2 className="text-2xl font-serif font-black mb-2 text-white">
+                Application Security & Authentic Data Integrity
+              </h2>
+              <p className="text-stone-300 text-xs leading-relaxed font-serif">
+                Vishwa-Vani enforces strict AppSec guardrails: zero-hallucination policies, parameterization against SQL injection, path-traversal lockdown, IP rate limiting, and prompt-injection delimiter boundaries.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-2 gap-3 w-full md:w-auto">
+              <div className="bg-white/5 border border-white/10 rounded-2xl p-3 text-center">
+                <Lock className="w-4 h-4 text-emerald-400 mx-auto mb-1" />
+                <div className="text-xs font-black text-white">Injection Defense</div>
+                <div className="text-[9px] text-stone-400">Parameterized LibSQL</div>
+              </div>
+              <div className="bg-white/5 border border-white/10 rounded-2xl p-3 text-center">
+                <Clock className="w-4 h-4 text-emerald-400 mx-auto mb-1" />
+                <div className="text-xs font-black text-white">Rate Limited</div>
+                <div className="text-[9px] text-stone-400">60 req/min per IP</div>
+              </div>
+              <div className="bg-white/5 border border-white/10 rounded-2xl p-3 text-center">
+                <ShieldCheck className="w-4 h-4 text-emerald-400 mx-auto mb-1" />
+                <div className="text-xs font-black text-white">LLM Guardrails</div>
+                <div className="text-[9px] text-stone-400">XML Context Fencing</div>
+              </div>
+              <div className="bg-white/5 border border-white/10 rounded-2xl p-3 text-center">
+                <CheckCircle2 className="w-4 h-4 text-emerald-400 mx-auto mb-1" />
+                <div className="text-xs font-black text-white">Zero Hallucination</div>
+                <div className="text-[9px] text-stone-400">Human Source Verified</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Pool Selector & Category Tabs */}
         <div className="flex flex-col lg:flex-row items-center justify-between gap-4 mb-8">
           <div className="flex flex-wrap items-center gap-2">
@@ -506,6 +642,7 @@ export default function RoadmapClient({ stats }: { stats: { completedBooks: numb
                     const currentVotes = votes[book.slug] ?? 0
                     const userVoteStatus = userVotes[book.slug] || null
                     const pMeta = PIPELINE_BOOK_STATS[book.slug]
+                    const effortMeta = BOOK_EFFORT_ESTIMATES[book.slug]
                     const tierLabel = pMeta?.tier === 'silver' ? 'Silver Tier' : 'Bronze Tier'
 
                     return (
@@ -541,10 +678,22 @@ export default function RoadmapClient({ stats }: { stats: { completedBooks: numb
                             {book.description || 'Sacred scripture undergoing archival data acquisition.'}
                           </p>
 
-                          <div className="flex items-center gap-4 text-[11px] font-semibold text-stone-400">
+                          <div className="flex flex-wrap items-center gap-3 text-[11px] font-semibold text-stone-500 dark:text-stone-400">
                             <span>{book.totalChapters} Chapters</span>
                             <span>·</span>
                             <span>~{pMeta?.verses.toLocaleString() || '---'} Target Shlokas</span>
+                            {effortMeta && (
+                              <>
+                                <span>·</span>
+                                <span className="bg-orange-100 dark:bg-orange-950/60 text-orange-700 dark:text-orange-400 font-bold px-2 py-0.5 rounded text-[10px]">
+                                  {effortMeta.size} ({effortMeta.storyPoints} pts)
+                                </span>
+                                <span>·</span>
+                                <span className="text-stone-400 dark:text-stone-500 text-[10px] italic">
+                                  Scholars: {effortMeta.scholars.slice(0, 2).join(', ')}
+                                </span>
+                              </>
+                            )}
                           </div>
                         </div>
 

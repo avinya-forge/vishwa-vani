@@ -62,7 +62,7 @@ export default function BeginReadingButton() {
   // Default state - navigates to the Sacred Library where user chooses their book
   return (
     <Link
-      href="/#library"
+      href="/library"
       suppressHydrationWarning
       className="inline-flex items-center gap-3 px-8 py-4 bg-stone-900 hover:bg-orange-600 dark:bg-stone-100 dark:text-stone-900 dark:hover:bg-orange-400 text-white font-black rounded-2xl transition-all shadow-xl shadow-stone-200/50 dark:shadow-none text-[11px] uppercase tracking-widest group"
     >

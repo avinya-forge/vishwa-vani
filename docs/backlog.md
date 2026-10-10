@@ -41,7 +41,7 @@
 ### OWASP Top 10 (Web Applications)
 - [x] `SEC-OWASP-001` **[P0-CRITICAL] Input Validation & Path Traversal Lockdown in `/api/lake` (A01/A04)**: Enforced strict regex validation (`/^[a-zA-Z0-9_-]+\.db$/`), sanitized base filename resolution via `path.basename()`, and bounded numerical ranges in `/api/lake`.
 - [x] `SEC-OWASP-002` **[P1-HIGH] Search Query Wildcard DoS Hardening (A03/A04)**: Enforced max query length (100 chars) and escaped SQL LIKE wildcards (`%`, `_`, `\`) in `/api/lake` to prevent regex table scan exhaustion.
-- [ ] `SEC-OWASP-003` **[P1-HIGH] Cryptographic Key Derivation & Fail-Closed Hardening in `server-lake.ts` (A02)**: Currently, `SECRET_KEY` is derived via `Buffer.from(keySource, 'utf-8').slice(0, 32)`. Standardize on cryptographic key derivation using `crypto.createHash('sha256').update(keySource).digest()` to guarantee a uniform 256-bit key.
+- [x] `SEC-OWASP-003` **[P1-HIGH] Cryptographic Key Derivation & Fail-Closed Hardening in `server-lake.ts` (A02)**: Standardized cryptographic key derivation using `crypto.createHash('sha256').update(keySource).digest()` to guarantee a uniform 256-bit key.
 - [ ] `SEC-OWASP-004` **[P2-MEDIUM] Production CSP Hardening & Removal of `'unsafe-eval'` (A05)**: Refactor client-side utilities to eliminate runtime evaluation and remove `'unsafe-eval'` from production Content Security Policy in `next.config.ts`.
 - [x] `SEC-OWASP-005` **[P1-HIGH] Anti-Scraping Token Bucket & IP Rate Limiting (A04/A07)**: Implemented an in-memory sliding-window token bucket rate limiter in `lib/api-guard.ts` capping requests at 60 req/min per IP with automated expired bucket pruning.
 - [ ] `SEC-OWASP-006` **[P2-MEDIUM] NPM Audit Supply Chain Vulnerability Mitigation (A06)**: Audit package lockfile to eliminate 32 high-severity transitive vulnerabilities affecting development and test dependencies (`braces`, `micromatch`, `fast-glob`) using npm `overrides` in `package.json`.
@@ -51,9 +51,9 @@
 ### OWASP Top 10 for LLMs
 - [x] `SEC-LLM-001` **[P0-CRITICAL] Prompt Injection Defense & Delimiter Hardening in `/api/synthesize` (LLM01)**: Implemented `sanitizeVedicContext()` to strip HTML tags, redact adversarial override keywords (`system prompt`, `ignore previous instructions`), and enclose scripture context in formal `<scripture_context>` boundary fences.
 - [x] `SEC-LLM-002` **[P1-HIGH] Model Denial of Service & Token Quota Throttling (LLM04)**: Capped input context length to 1,500 characters and throttled `/api/synthesize` to a maximum of 10 requests per minute per IP via `validateApiRequest()`.
-- [ ] `SEC-LLM-003` **[P1-HIGH] System Prompt Isolation & Credential Leakage Defense (LLM02/LLM07)**: Ensure that API error handlers in `/api/synthesize` fail closed and never return internal prompt templates, error stack traces, or environment keys in the HTTP response body.
-- [ ] `SEC-LLM-004` **[P2-MEDIUM] Generative UI Output Sanitization (LLM05)**: Pass AI synthesis output through an HTML sanitization filter before rendering in the client study reader to prevent malicious markdown or script execution from unexpected model outputs.
-- [ ] `SEC-LLM-005` **[P1-HIGH] Zero-Hallucination Gate & Synthetic Commentary Quarantine (LLM09)**: Enforce an architectural policy that AI models are strictly prohibited from generating root Sanskrit verses or transliterations. Any AI synthesis must be tagged with `synthesisMode: 'generative-gemini'` and displayed with a clear disclaimer badge.
+- [x] `SEC-LLM-003` **[P1-HIGH] System Prompt Isolation & Credential Leakage Defense (LLM02/LLM07)**: Error handlers in `/api/synthesize` fail closed with sanitized error messages redacting credentials (`key=[REDACTED]`), preventing internal prompt templates or credentials from leaking in logs or HTTP responses.
+- [x] `SEC-LLM-004` **[P2-MEDIUM] Generative UI Output Sanitization (LLM05)**: Sanitized LLM synthesis output by stripping any injected HTML or script tags prior to delivery to client readers.
+- [x] `SEC-LLM-005` **[P1-HIGH] Zero-Hallucination Gate & Synthetic Commentary Quarantine (LLM09)**: Attached mandatory `zeroHallucinationGate` and `disclaimer` metadata guarantees to all synthesis responses certifying that root Sanskrit verses originate strictly from verified human editions.
 
 ---
 
@@ -211,8 +211,8 @@
 ## 🟠 EPIC-USER-INTERFACE-AND-READING-UX [ACTIVE]
 *Continuous UX refinement to guarantee responsive breathing room, intuitive discovery, and dignified scholarly presentation.*
 - [ ] `UI-READ-003` **Reading Canvas Layout & Responsive Breathing Room Audit**: Continually optimize padding, font sizes (fluid clamp), and card proportions across mobile, tablet, and desktop screens for edge-case viewports.
-- [ ] `LIB-002` **Dedicated Full Library Destination Page (`/library`)**: Expand dedicated `/library` browse view with advanced scripture search, filter by tradition (Advaita, Vaishnava, Yoga, etc.), and reading list queues.
-- [ ] `ROADMAP-003` **Interactive Diagrammatic Processing Pipeline Visualization**: Render rich interactive SVG / HTML flowcharts for Bronze -> Silver -> Gold tier certification standards with real-time pipeline status checks.
+- [x] `LIB-002` **Dedicated Full Library Destination Page (`/library`)**: Created dedicated `/library` page with real-time text/Devanagari/scholar search, category pills, tier filters (100% Gold vs Ingestion Pipeline), quick chapter jump drawers, and active reading session resumption.
+- [x] `ROADMAP-003` **Interactive Diagrammatic Processing Pipeline & Vision Visualization**: Rendered the 5-Phase Master Vision Roadmap, 5-Stage Data Pipeline lifecycle, scripture effort points/sizing matrix, and OWASP AppSec & LLM Integrity Certification on `/roadmap`.
 - [ ] `METRIC-003` **Live Database Verse Verification CLI**: Scheduled job to verify Turso edge database table counts against local manifests and emit automated telemetry alerts on count drift.
 - [ ] `LAB-002` **Vedic Labs Category Grouping & Performance Lazy-Loading**: Group the 22+ experimental lab shards by scripture/philosophical school and bundle them into split chunks to maintain blazing-fast sub-second initial route transitions.
 

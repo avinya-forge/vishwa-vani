@@ -524,6 +524,38 @@ export const PIPELINE_BOOK_STATS: Record<string, { verses: number; chapters: num
   'brahma-sutras': { verses: 555, chapters: 4, tier: 'bronze' },
   'manusmriti': { verses: 2684, chapters: 12, tier: 'bronze' },
   'dasbodh': { verses: 7751, chapters: 20, tier: 'bronze' },
+  'skanda-purana': { verses: 81000, chapters: 750, tier: 'bronze' },
+};
+
+export interface BookEffortEstimate {
+  verses: number;
+  chapters: number;
+  tier: 'gold' | 'silver' | 'bronze';
+  size: 'XS' | 'S' | 'M' | 'L' | 'XL' | 'XXL';
+  storyPoints: number;
+  scholars: string[];
+}
+
+/** Comprehensive effort estimations, sizing, and scholar attributions across all scriptures */
+export const BOOK_EFFORT_ESTIMATES: Record<string, BookEffortEstimate> = {
+  'bhagavad-gita': { verses: 701, chapters: 18, tier: 'gold', size: 'S', storyPoints: 15, scholars: ['Adi Shankara', 'Sant Dnyaneshwar', 'Prabhupada'] },
+  'isha-upanishad': { verses: 19, chapters: 1, tier: 'gold', size: 'XS', storyPoints: 5, scholars: ['Adi Shankara', 'Sri Aurobindo', 'Prabhupada'] },
+  'kena-upanishad': { verses: 34, chapters: 1, tier: 'gold', size: 'XS', storyPoints: 5, scholars: ['Adi Shankara', 'Max Müller'] },
+  'yoga-sutras': { verses: 196, chapters: 4, tier: 'gold', size: 'S', storyPoints: 10, scholars: ['Veda Vyasa', 'Swami Vivekananda', 'Patanjali'] },
+  'mahabharata': { verses: 100000, chapters: 2115, tier: 'silver', size: 'XXL', storyPoints: 120, scholars: ['BORI Critical Ed.', 'Nilakantha Chaturdhara', 'K.M. Ganguli'] },
+  'bhagavata-purana': { verses: 18000, chapters: 335, tier: 'silver', size: 'XL', storyPoints: 80, scholars: ['Sridhara Swami', 'A.C. Bhaktivedanta Swami Prabhupada', 'Sant Eknath'] },
+  'vishnu-purana': { verses: 7000, chapters: 126, tier: 'silver', size: 'L', storyPoints: 35, scholars: ['H.H. Wilson', 'Sridhara Swami', 'Gita Press'] },
+  'garuda-purana': { verses: 19000, chapters: 250, tier: 'silver', size: 'L', storyPoints: 40, scholars: ['M.N. Dutt', 'Gita Press'] },
+  'skanda-purana': { verses: 81000, chapters: 750, tier: 'bronze', size: 'XXL', storyPoints: 100, scholars: ['G.V. Tagare', 'Motilal Banarsidass'] },
+  'rigveda': { verses: 10552, chapters: 10, tier: 'bronze', size: 'XL', storyPoints: 65, scholars: ['Sayanacharya', 'Ralph T.H. Griffith', 'Swami Dayananda Saraswati'] },
+  'samaveda': { verses: 1875, chapters: 2, tier: 'bronze', size: 'M', storyPoints: 20, scholars: ['Sayanacharya', 'Ralph T.H. Griffith'] },
+  'yajurveda': { verses: 1975, chapters: 40, tier: 'bronze', size: 'M', storyPoints: 20, scholars: ['Mahidhara', 'Uvvata', 'Swami Dayananda'] },
+  'atharvaveda': { verses: 5977, chapters: 20, tier: 'bronze', size: 'L', storyPoints: 35, scholars: ['W.D. Whitney', 'Charles R. Lanman', 'Maurice Bloomfield'] },
+  'brahma-sutras': { verses: 555, chapters: 4, tier: 'bronze', size: 'M', storyPoints: 25, scholars: ['Adi Shankara', 'Ramanuja', 'Madhvacharya'] },
+  'dasbodh': { verses: 7751, chapters: 20, tier: 'bronze', size: 'L', storyPoints: 35, scholars: ['Samarth Ramdas Swami', 'Warkari Lineage'] },
+  'manusmriti': { verses: 2684, chapters: 12, tier: 'bronze', size: 'M', storyPoints: 25, scholars: ['Medhatithi', 'Kulluka Bhatta', 'Georg Bühler'] },
+  'samskaras': { verses: 24, chapters: 1, tier: 'silver', size: 'S', storyPoints: 10, scholars: ['Classical Grihya Sutras'] },
+  'stotras': { verses: 17, chapters: 1, tier: 'silver', size: 'S', storyPoints: 10, scholars: ['Adi Shankara', 'Veda Vyasa', 'Valmiki'] },
 };
 
 /** Map of scripture slugs to their audited readiness scores (%) */

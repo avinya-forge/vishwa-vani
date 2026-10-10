@@ -143,9 +143,17 @@ export default async function Home() {
           <h2 className="text-3xl sm:text-5xl font-serif font-black text-stone-900 tracking-tight mb-4">
             The Living Library of Vedic Texts
           </h2>
-          <p className="text-stone-600 text-sm sm:text-base leading-relaxed font-serif max-w-2xl mx-auto">
+          <p className="text-stone-600 text-sm sm:text-base leading-relaxed font-serif max-w-2xl mx-auto mb-5">
             Spanning all 17 canonical scriptures across Veda Saṁhitās, Upaniṣads, Itihāsa, Purāṇas, and Darśana Sūtras. Choose any scripture below to enter the uninterrupted study canvas.
           </p>
+          <Link
+            href="/library"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white border border-stone-200 hover:border-orange-400 text-stone-800 hover:text-orange-600 text-xs font-bold uppercase tracking-wider transition-all shadow-sm hover:shadow"
+          >
+            <span>📚</span>
+            <span>Open Dedicated Library &amp; Chapter Selector</span>
+            <span aria-hidden="true">&rarr;</span>
+          </Link>
         </div>
 
         {/* Categorized Scripture Grid */}

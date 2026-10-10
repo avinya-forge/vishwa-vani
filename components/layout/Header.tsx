@@ -105,14 +105,20 @@ export default function Header({ stats }: { stats?: HeaderStatsProp }) {
           {/* Desktop nav */}
           <div className="hidden lg:flex items-center gap-0.5">
 
-            {/* Library dropdown — click-toggle */}
-            <div ref={dropdownRef} className="relative">
+            {/* Library dropdown — click-toggle and direct link */}
+            <div ref={dropdownRef} className="relative flex items-center">
+              <Link
+                href="/library"
+                className={`flex items-center gap-1 pl-3 pr-1 py-1.5 rounded-l-md text-xs font-bold transition-all focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:outline-none ${pathname === '/library' || isOnTextPage ? 'text-orange-600 bg-orange-50 dark:bg-orange-950/40' : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 hover:bg-stone-50 dark:hover:bg-stone-800'}`}
+              >
+                Library
+              </Link>
               <button
                 onClick={() => setShowLibrary(v => !v)}
                 aria-expanded={showLibrary}
-                className={`flex items-center gap-1 px-3 py-1.5 rounded-md text-xs font-bold transition-all focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:outline-none ${showLibrary || isOnTextPage ? 'text-orange-600 bg-orange-50 dark:bg-orange-950/40' : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 hover:bg-stone-50 dark:hover:bg-stone-800'}`}
+                aria-label="Toggle Quick Library Menu"
+                className={`pr-2 pl-1 py-1.5 rounded-r-md text-xs font-bold transition-all focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:outline-none ${showLibrary ? 'text-orange-600 bg-orange-50 dark:bg-orange-950/40' : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 hover:bg-stone-50 dark:hover:bg-stone-800'}`}
               >
-                Library
                 <svg className={`w-3 h-3 transition-transform duration-200 ${showLibrary ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path d="M19 9l-7 7-7-7" /></svg>
               </button>
 
@@ -165,7 +171,7 @@ export default function Header({ stats }: { stats?: HeaderStatsProp }) {
                   {/* Browse all */}
                   <div className="px-4 py-2.5 flex items-center justify-between">
                     <span className="text-[10px] text-stone-400 dark:text-stone-500 font-medium">{safeStats.totalBooks} texts cataloged</span>
-                    <Link href="/#library" onClick={() => setShowLibrary(false)} className="text-[11px] font-bold text-orange-600 hover:text-orange-700 transition-colors inline-flex items-center gap-1">
+                    <Link href="/library" onClick={() => setShowLibrary(false)} className="text-[11px] font-bold text-orange-600 hover:text-orange-700 transition-colors inline-flex items-center gap-1">
                       Full Library <span aria-hidden="true">&rarr;</span>
                     </Link>
                   </div>
@@ -215,7 +221,7 @@ export default function Header({ stats }: { stats?: HeaderStatsProp }) {
             </Link>
           ) : (
             <Link
-              href="/#library"
+              href="/library"
               onClick={() => {
                 localStorage.setItem('vishwa_last_text', defaultTextSlug)
               }}
@@ -271,7 +277,7 @@ export default function Header({ stats }: { stats?: HeaderStatsProp }) {
                 <span>📊</span>
                 <span>Roadmap &amp; Metrics</span>
               </Link>
-              <Link href="/#library" onClick={() => setShowMobileMenu(false)} className="flex items-center justify-center gap-2 mt-4 w-full px-6 py-3.5 bg-stone-900 hover:bg-orange-600 text-white text-sm font-bold rounded-xl transition-all shadow-md">
+              <Link href="/library" onClick={() => setShowMobileMenu(false)} className="flex items-center justify-center gap-2 mt-4 w-full px-6 py-3.5 bg-stone-900 hover:bg-orange-600 text-white text-sm font-bold rounded-xl transition-all shadow-md">
                 <span>📜</span>
                 <span>Explore Sacred Library</span>
               </Link>

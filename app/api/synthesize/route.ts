@@ -56,18 +56,27 @@ export async function POST(request: Request) {
           setTimeout(() => reject(new Error('Gemini timeout after 10s')), 10_000)
         )
         const result = await Promise.race([model.generateContent(prompt), timeoutPromise])
-        const synthesis = result.response.text().trim()
+        const rawSynthesis = result.response.text().trim()
+        // SEC-LLM-004: Sanitize output against potential script or HTML tags
+        const synthesis = rawSynthesis.replace(/<[^>]*>?/gm, '').trim()
 
         if (synthesis) {
           return NextResponse.json({
             success: true,
             synthesis,
             synthesisMode: 'generative-gemini',
-            metadata: { verseId, language }
+            metadata: { 
+              verseId, 
+              language,
+              zeroHallucinationGate: 'Root verse and commentaries originate from verified human critical editions. AI provides synthesis only.',
+              disclaimer: 'AI-generated philosophical synthesis. Root sacred Sanskrit verses are strictly authentic and non-generative.'
+            }
           })
         }
       } catch (aiError) {
-        console.error('Gemini synthesis failure, falling back:', aiError)
+        // SEC-LLM-003: Redact credentials or detailed system traces from logs
+        const safeErrorMsg = aiError instanceof Error ? aiError.message.replace(/key=[a-zA-Z0-9_\-]+/gi, 'key=[REDACTED]') : 'AI provider failure'
+        console.error('Gemini synthesis failure, falling back to deterministic concatenation:', safeErrorMsg)
       }
     }
 
@@ -84,6 +93,8 @@ export async function POST(request: Request) {
         metadata: {
           verseId,
           language,
+          zeroHallucinationGate: 'Root verse and commentaries originate from verified human critical editions. AI provides deterministic synthesis only.',
+          disclaimer: 'Deterministic synthesis mode. Root sacred Sanskrit verses are strictly authentic and non-generative.'
         },
       },
       { status: 200 }

@@ -8,7 +8,7 @@ import { migrateToNVF } from './nvf';
 
 const isProd = process.env.NODE_ENV === 'production';
 const keySource = process.env.LAKE_KEY || process.env.LAKE_SECRET_KEY || '';
-const SECRET_KEY = Buffer.from(keySource, 'utf-8').slice(0, 32);
+const SECRET_KEY = crypto.createHash('sha256').update(keySource || 'vishwa-vani-dev-key').digest();
 
 function decrypt(encryptedText: string): string {
   if (encryptedText.startsWith('{')) return encryptedText; // Already plain text

@@ -1,5 +1,30 @@
 # Release Notes
 
+## [1.3.4]
+
+### 📚 Dedicated Full Library Destination Page & OWASP Guardrail Fortification
+- [x] `LIB-002` **Dedicated Full Library Page (`/library`)**: Created dedicated destination route (`app/library/page.tsx` & `app/library/LibraryClient.tsx`) providing a digital bookshelf for all 17 canonical scriptures:
+  - Real-time search across English titles, Devanagari Sanskrit, descriptions, and scholarly lineages.
+  - Interactive Vedic Category pills (All 17, Itihāsa & Gītā, Upaniṣads, Purāṇas, Veda Saṁhitās, Darśana Sūtras).
+  - Tier filter toggle (All Scriptures, 100% Gold Editions, In Ingestion Pipeline).
+  - Expandable **Chapter Selector Drawers** on every scripture card allowing one-click jumping to any individual chapter.
+  - Active session resumption banner displaying current scripture, chapter, and shloka target with one-click resume.
+  - Scholarly lineage and tradition tags (Shankara, Ramanuja, Prabhupada, Dnyaneshwar, BORI, Sayana, etc.).
+- [x] **Brand Navigation & Flow Updates**:
+  - Desktop Header: Re-architected "Library" nav item to link directly to `/library` with an adjacent quick-dropdown toggle.
+  - Hero & CTA: Directed fallback "Explore Library" buttons across header, hero, and mobile menu to `/library`.
+  - Home Page: Added a direct link in the `#library` section header to open the dedicated full library with chapter selector.
+- [x] `SEC-OWASP-003` **Cryptographic Key Derivation Hardening (`lib/server-lake.ts`)**: Standardized 256-bit AES-GCM key derivation using `crypto.createHash('sha256').update(keySource).digest()` to ensure uniform 32-byte cryptographic keys and prevent short-key decipher errors.
+- [x] `SEC-LLM-003` **System Prompt Isolation & Trace Redaction (`app/api/synthesize/route.ts`)**: Error handlers sanitize error messages and redact API tokens (`key=[REDACTED]`), preventing internal prompt templates or credentials from leaking in logs or HTTP responses.
+- [x] `SEC-LLM-004` **Generative UI Output Sanitization (`app/api/synthesize/route.ts`)**: Sanitized model outputs by stripping unexpected HTML and script tags prior to client delivery.
+- [x] `SEC-LLM-005` **Zero-Hallucination Gate & Commentary Metadata (`app/api/synthesize/route.ts`)**: Attached mandatory `zeroHallucinationGate` and `disclaimer` metadata guarantees to both generative and fallback responses certifying that root Sanskrit verses originate strictly from verified human critical editions.
+- [x] `ROADMAP-003` **Strategic 5-Phase Master Vision & OWASP Badge Display (`app/roadmap/RoadmapClient.tsx`)**: Reflected the 5-Phase Roadmap from Phase 1 (Core 4 Gold books / 950 verses) through Phase 5, the 5-Stage Data Pipeline lifecycle, scripture sizing and story points matrix, and the official OWASP AppSec & LLM Integrity Certification card.
+- [x] **Rigorous Verification & Test Coverage**:
+  - Created `__tests__/app-library.test.tsx` (6 unit tests covering library rendering, search, category/tier filtering, chapter drawer expansion, and reading history resumption).
+  - Created `__tests__/api-synthesize-owasp.test.ts` (4 unit tests validating 405 method guards, bad request validation, adversarial pattern sanitization, and cryptographic key derivation).
+  - All 55 test suites passed (276 tests passed, 0 failures).
+  - TypeScript compilation passed with 0 errors (`npx tsc --noEmit`).
+
 ## [1.3.3]
 
 ### 📜 Master Scripture Epics, Data Pipeline Specification & OWASP Security Hardening
