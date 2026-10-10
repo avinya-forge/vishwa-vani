@@ -501,33 +501,6 @@ export const COMPLETED_BOOKS_SLUGS = [
 export type CompletedBookSlug = (typeof COMPLETED_BOOKS_SLUGS)[number];
 
 /** Canonical verse counts for 100% completed scriptures */
-export const COMPLETED_BOOK_STATS: Record<CompletedBookSlug, { verses: number; chapters: number }> = {
-  'bhagavad-gita': { verses: 701, chapters: 18 },
-  'isha-upanishad': { verses: 19, chapters: 1 },
-  'kena-upanishad': { verses: 34, chapters: 1 },
-  'yoga-sutras': { verses: 196, chapters: 4 },
-};
-
-/** Ingestion pipeline books metadata (Silver & Bronze tiers) */
-export const PIPELINE_BOOK_STATS: Record<string, { verses: number; chapters: number; tier: 'silver' | 'bronze' }> = {
-  // Silver Tier (Active Ingestion & Structural NVF Parsing)
-  'mahabharata': { verses: 100000, chapters: 2115, tier: 'silver' },
-  'garuda-purana': { verses: 19000, chapters: 250, tier: 'silver' },
-  'vishnu-purana': { verses: 7000, chapters: 126, tier: 'silver' },
-  'bhagavata-purana': { verses: 18000, chapters: 335, tier: 'silver' },
-  'samskaras': { verses: 24, chapters: 1, tier: 'silver' },
-  'stotras': { verses: 17, chapters: 1, tier: 'silver' },
-  // Bronze Tier (Raw Acquisition & Ingestion Queue)
-  'rigveda': { verses: 10552, chapters: 10, tier: 'bronze' },
-  'samaveda': { verses: 1875, chapters: 2, tier: 'bronze' },
-  'yajurveda': { verses: 1975, chapters: 40, tier: 'bronze' },
-  'atharvaveda': { verses: 5977, chapters: 20, tier: 'bronze' },
-  'brahma-sutras': { verses: 555, chapters: 4, tier: 'bronze' },
-  'manusmriti': { verses: 2684, chapters: 12, tier: 'bronze' },
-  'dasbodh': { verses: 7751, chapters: 20, tier: 'bronze' },
-};
-
-/** Map of scripture slugs to their audited readiness scores (%) */
 export const SCRIPTURE_READINESS_SCORES: Record<string, number> = {
   'bhagavad-gita': 100.0,
   'isha-upanishad': 100.0,
@@ -595,39 +568,6 @@ export function getAvailableTexts(): VedicText[] {
 }
 
 /** Standardized scriptural metrics with two-pool breakdown */
-export function getLibraryStats() {
-  const completedVerses = Object.values(COMPLETED_BOOK_STATS).reduce((acc, b) => acc + b.verses, 0); // 950
-  const completedChapters = Object.values(COMPLETED_BOOK_STATS).reduce((acc, b) => acc + b.chapters, 0); // 24
-  const completedBooks = COMPLETED_BOOKS_SLUGS.length; // 4
-
-  const pipelineBooks = Object.keys(PIPELINE_BOOK_STATS).length; // 13
-  const pipelineVerses = Object.values(PIPELINE_BOOK_STATS).reduce((acc, b) => acc + b.verses, 0); // 175,410
-  const pipelineChapters = Object.values(PIPELINE_BOOK_STATS).reduce((acc, b) => acc + b.chapters, 0); // 2,916
-
-  const available = getAvailableTexts();
-
-  return {
-    // Standard Unit Pool 1: 100% Completed Verified Pool (Gold)
-    completedBooks,
-    completedChapters,
-    completedVerses,
-    // Standard Unit Pool 2: Ingestion & Pipeline Pool (Silver & Bronze)
-    pipelineBooks,
-    pipelineChapters,
-    pipelineVerses,
-    // Physical Lake Database Shards (Turso / SQLite)
-    databaseVerses: 126306,
-    // Total Catalog Metrics
-    totalBooks: available.length,
-    totalChapters: available.reduce((acc, t) => acc + t.totalChapters, 0),
-    totalVerses: `${(completedVerses + pipelineVerses).toLocaleString()}+`,
-    targetVerses: '100,000+',
-    totalAuthors: getLiveScholars().length,
-    totalLangs: 4, // Sanskrit, English, Hindi, Marathi
-    categories: Array.from(new Set(available.map(t => t.category)))
-  };
-}
-
 /** Get texts grouped by parent-child hierarchy with category totals */
 export function getVedicHierarchy() {
   const all = VEDIC_LIBRARY;

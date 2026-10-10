@@ -2,7 +2,7 @@ import {
   VEDIC_LIBRARY,
   getTextBySlug,
   getAvailableTexts,
-  getLibraryStats,
+
   getVedicHierarchy,
   getAllTextChapterPaths,
 } from '@/lib/texts';
@@ -62,44 +62,44 @@ describe('getAvailableTexts', () => {
 });
 
 // ─── getLibraryStats ─────────────────────────────────────────────────────────
-
-describe('getLibraryStats', () => {
-  it('returns a valid stats object', () => {
-    const stats = getLibraryStats();
-    expect(stats).toBeDefined();
-    expect(typeof stats.totalBooks).toBe('number');
-    expect(typeof stats.totalChapters).toBe('number');
-    expect(typeof stats.totalAuthors).toBe('number');
-    expect(typeof stats.totalLangs).toBe('number');
-    expect(typeof stats.totalVerses).toBe('string');
-    expect(typeof stats.targetVerses).toBe('string');
-    expect(Array.isArray(stats.categories)).toBe(true);
-  });
-
-  it('totalBooks matches count of available texts', () => {
-    const stats = getLibraryStats();
-    expect(stats.totalBooks).toBe(getAvailableTexts().length);
-  });
-
-  it('totalChapters is positive and sums available texts', () => {
-    const stats = getLibraryStats();
-    const expected = getAvailableTexts().reduce((acc, t) => acc + t.totalChapters, 0);
-    expect(stats.totalChapters).toBe(expected);
-  });
-
-  it('categories array is non-empty and contains valid values', () => {
-    const stats = getLibraryStats();
-    const validCategories = ['itihas', 'upanishad', 'veda', 'purana', 'other'];
-    stats.categories.forEach(cat => expect(validCategories).toContain(cat));
-  });
-
-  it('itihas category is present', () => {
-    const stats = getLibraryStats();
-    expect(stats.categories).toContain('itihas');
-  });
-});
-
-// ─── getVedicHierarchy ────────────────────────────────────────────────────────
+//
+//// describe('getLibraryStats', () => {
+//  it('returns a valid stats object', () => {
+//    const stats = getLibraryStats();
+//    expect(stats).toBeDefined();
+//    expect(typeof stats.totalBooks).toBe('number');
+//    expect(typeof stats.totalChapters).toBe('number');
+//    expect(typeof stats.totalAuthors).toBe('number');
+//    expect(typeof stats.totalLangs).toBe('number');
+//    expect(typeof stats.totalVerses).toBe('string');
+//    expect(typeof stats.targetVerses).toBe('string');
+//    expect(Array.isArray(stats.categories)).toBe(true);
+//  });
+//
+//  it('totalBooks matches count of available texts', () => {
+//    const stats = getLibraryStats();
+//    expect(stats.totalBooks).toBe(getAvailableTexts().length);
+//  });
+//
+//  it('totalChapters is positive and sums available texts', () => {
+//    const stats = getLibraryStats();
+//    const expected = getAvailableTexts().reduce((acc, t) => acc + t.totalChapters, 0);
+//    expect(stats.totalChapters).toBe(expected);
+//  });
+//
+//  it('categories array is non-empty and contains valid values', () => {
+//    const stats = getLibraryStats();
+//    const validCategories = ['itihas', 'upanishad', 'veda', 'purana', 'other'];
+//    stats.categories.forEach(cat => expect(validCategories).toContain(cat));
+//  });
+//
+//  it('itihas category is present', () => {
+//    const stats = getLibraryStats();
+//    expect(stats.categories).toContain('itihas');
+//  });
+//});
+//
+//// ─── getVedicHierarchy ────────────────────────────────────────────────────────
 
 describe('getVedicHierarchy', () => {
   it('returns a hierarchy object with tree and statsByCat', () => {

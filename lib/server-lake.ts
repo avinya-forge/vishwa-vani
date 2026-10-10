@@ -42,7 +42,7 @@ function decrypt(encryptedText: string): string {
 
 let cachedClient: Client | null = null;
 
-function getClient(lakeFile: string): Client {
+export function getClient(lakeFile: string): Client {
   if (cachedClient) return cachedClient;
 
   // DB-001: Connect to Turso if environment variables are provided

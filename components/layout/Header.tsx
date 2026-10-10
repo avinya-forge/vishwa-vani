@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { useTranslations, useLocale } from 'next-intl'
 import { usePathname } from 'next/navigation'
-import { VEDIC_LIBRARY, getLibraryStats, isTextCompleted } from '@/lib/texts'
+import { VEDIC_LIBRARY, isTextCompleted } from '@/lib/texts'
 import { useState, useEffect, useRef } from 'react'
 import { ThemeToggle } from '@/components/theme-toggle'
 import { AnimatedStat } from '@/components/ui/animated-stat'
@@ -27,7 +27,7 @@ function useOnClickOutside(ref: React.RefObject<HTMLDivElement | null>, handler:
   }, [ref, handler])
 }
 
-export default function Header() {
+export default function Header({ stats }: { stats?: any }) {
   const _t = useTranslations('nav')
   const _locale = useLocale()
   const pathname = usePathname()
@@ -66,7 +66,15 @@ export default function Header() {
   const isOnTextPage = pathname.startsWith('/') && pathname.split('/').length >= 3 && !['search', 'lab', 'acknowledgments'].includes(pathname.split('/')[1])
 
   // Group available books by category  
-  const stats = getLibraryStats()
+  // Stats passed as prop
+  const [clientStats, setClientStats] = useState<any>(stats);
+  useEffect(() => {
+    if (!stats) {
+      fetch('/api/stats').then(res => res.json()).then(data => setClientStats(data));
+    }
+  }, [stats]);
+
+  const displayStats = clientStats || { completedVerses: 0, completedBooks: 0, pipelineBooks: 0 };
   const availableBooks = VEDIC_LIBRARY.filter(b => b.available)
   const completedBooksList = VEDIC_LIBRARY.filter(b => isTextCompleted(b.slug))
   const topBooks = completedBooksList.length > 0 ? completedBooksList : availableBooks.slice(0, 5)
@@ -85,7 +93,7 @@ export default function Header() {
             <span className="font-serif font-black text-base text-stone-900 dark:text-stone-100 group-hover:text-orange-600 transition-colors hidden sm:block">Vishwa-Vani</span>
             <div className="hidden md:flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-orange-100/50 dark:bg-orange-900/30 border border-orange-200 dark:border-orange-800 text-[10px] font-bold text-orange-700 dark:text-orange-400 uppercase tracking-wider ml-3">
               <span className="w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse" />
-              <span><AnimatedStat targetCount={stats.completedVerses} /> Verses</span>
+              <span><AnimatedStat targetCount={displayStats.completedVerses} /> Verses</span>
             </div>
           </Link>
 
@@ -179,12 +187,12 @@ export default function Header() {
         <Link href="/roadmap" className="hidden xl:flex items-center gap-6 text-center group hover:opacity-90 transition-opacity">
           <div>
             <div className="text-[9px] font-bold text-stone-400 dark:text-stone-500 uppercase tracking-[0.2em]">Verified Books</div>
-            <div className="text-xs font-black text-stone-700 dark:text-stone-300 group-hover:text-orange-600 transition-colors">{stats.completedBooks} <span className="text-[10px] text-stone-400 font-normal">({stats.pipelineBooks} pipeline)</span></div>
+            <div className="text-xs font-black text-stone-700 dark:text-stone-300 group-hover:text-orange-600 transition-colors">{displayStats.completedBooks} <span className="text-[10px] text-stone-400 font-normal">({displayStats.pipelineBooks} pipeline)</span></div>
           </div>
           <div className="w-px h-4 bg-stone-200 dark:bg-stone-800" />
           <div>
             <div className="text-[9px] font-bold text-stone-400 dark:text-stone-500 uppercase tracking-[0.2em]">Complete Verses</div>
-            <div className="text-xs font-black text-stone-700 dark:text-stone-300 group-hover:text-orange-600 transition-colors">{stats.completedVerses.toLocaleString()}</div>
+            <div className="text-xs font-black text-stone-700 dark:text-stone-300 group-hover:text-orange-600 transition-colors">{displayStats.completedVerses.toLocaleString()}</div>
           </div>
         </Link>
 

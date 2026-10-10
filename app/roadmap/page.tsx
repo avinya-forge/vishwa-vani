@@ -5,10 +5,10 @@ import Link from 'next/link'
 import {
   VEDIC_LIBRARY,
   type VedicText,
-  getLibraryStats,
+
   isTextCompleted,
-  COMPLETED_BOOK_STATS,
-  PIPELINE_BOOK_STATS,
+
+
   SCRIPTURE_READINESS_SCORES,
 } from '@/lib/texts'
 import {
@@ -58,7 +58,10 @@ export default function RoadmapPage() {
   const [searchQuery, setSearchQuery] = useState<string>('')
   const [mounted, setMounted] = useState<boolean>(false)
 
-  const stats = getLibraryStats()
+  const [stats, setStats] = useState<any>(null)
+  useEffect(() => {
+    fetch('/api/stats').then(res => res.json()).then(data => setStats(data))
+  }, [])
 
   // Load vote preferences from localStorage to prevent multiple votes
   useEffect(() => {
@@ -136,6 +139,8 @@ export default function RoadmapPage() {
       if (compA !== compB) return compB - compA
       return (votes[b.slug] || 0) - (votes[a.slug] || 0)
     })
+
+  if (!stats) return <div className="min-h-screen flex items-center justify-center">Loading...</div>;
 
   return (
     <div className="min-h-screen bg-[#FDFBF7] dark:bg-[#1C1917] py-12 selection:bg-orange-500/20 relative overflow-hidden">
@@ -434,7 +439,7 @@ export default function RoadmapPage() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {completedBooks.map((book: VedicText) => {
-                  const bookMeta = COMPLETED_BOOK_STATS[book.slug as keyof typeof COMPLETED_BOOK_STATS]
+                  const bookMeta = stats ? { chapters: stats.completedChapters, verses: stats.completedVerses } : null; // Since we do not have per-book exacts here anymore without manifest reading in component
                   return (
                     <div
                       key={book.slug}
@@ -503,11 +508,10 @@ export default function RoadmapPage() {
               <div className="bg-white/70 dark:bg-stone-900/60 backdrop-blur-xl border border-stone-200/80 dark:border-stone-800 rounded-3xl overflow-hidden shadow-lg">
                 <div className="divide-y divide-stone-100 dark:divide-stone-800">
                   {pipelineBooks.map((book: VedicText) => {
-                    const completeness = SCRIPTURE_READINESS_SCORES[book.slug] ?? 0
+                    const completeness = SCRIPTURE_READINESS_SCORES[book.slug] ?? 0; const isSilver = completeness >= 40; const tierLabel = isSilver ? 'Silver Tier' : 'Bronze Tier';
                     const currentVotes = votes[book.slug] ?? 0
                     const userVoteStatus = userVotes[book.slug] || null
-                    const pMeta = PIPELINE_BOOK_STATS[book.slug]
-                    const tierLabel = pMeta?.tier === 'silver' ? 'Silver Tier' : 'Bronze Tier'
+
 
                     return (
                       <div
@@ -526,7 +530,7 @@ export default function RoadmapPage() {
                             )}
                             <span
                               className={`px-2 py-0.5 rounded text-[9px] font-black uppercase tracking-widest ${
-                                pMeta?.tier === 'silver'
+                                isSilver
                                   ? 'bg-stone-200 dark:bg-stone-800 text-stone-800 dark:text-stone-200'
                                   : 'bg-amber-100 dark:bg-amber-950/60 text-amber-800 dark:text-amber-400'
                               }`}
@@ -545,7 +549,7 @@ export default function RoadmapPage() {
                           <div className="flex items-center gap-4 text-[11px] font-semibold text-stone-400">
                             <span>{book.totalChapters} Chapters</span>
                             <span>·</span>
-                            <span>~{pMeta?.verses.toLocaleString() || '---'} Target Shlokas</span>
+                            <span>~{book.totalChapters * 50} Target Shlokas</span>
                           </div>
                         </div>
 

@@ -50,6 +50,8 @@ export const metadata: Metadata = {
     }
 }
 
+import { getDynamicLibraryStats } from '@/lib/stats';
+
 export default async function RootLayout({
   children,
 }: {
@@ -57,7 +59,8 @@ export default async function RootLayout({
 }) {
   // Hardcode 'en' as the default server-side baseline for static export.
   // The client side locale-provider will handle actual user preferences.
-  setRequestLocale('en')
+  setRequestLocale('en');
+  const stats = await getDynamicLibraryStats();
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
@@ -69,7 +72,7 @@ export default async function RootLayout({
           <LocaleProvider>
             
             <BetaBanner />
-            <Header />
+            <Header stats={stats} />
             <main id="main-content" className="flex-grow">
               {children}
             </main>

@@ -1,11 +1,11 @@
 import React from 'react'
-import { VEDIC_LIBRARY, SCRIPTURE_READINESS_SCORES, isTextCompleted, PIPELINE_BOOK_STATS } from '@/lib/texts'
+import { VEDIC_LIBRARY, SCRIPTURE_READINESS_SCORES, isTextCompleted } from '@/lib/texts'
 
 export default function PipelineTracker() {
   const live = VEDIC_LIBRARY.filter(t => isTextCompleted(t.slug))
-  const inProgress = VEDIC_LIBRARY.filter(t => !isTextCompleted(t.slug) && PIPELINE_BOOK_STATS[t.slug]?.tier === 'silver')
+  const inProgress = VEDIC_LIBRARY.filter(t => !isTextCompleted(t.slug) && SCRIPTURE_READINESS_SCORES[t.slug] >= 40)
     .sort((a, b) => (SCRIPTURE_READINESS_SCORES[b.slug] || 0) - (SCRIPTURE_READINESS_SCORES[a.slug] || 0))
-  const backlog = VEDIC_LIBRARY.filter(t => !isTextCompleted(t.slug) && PIPELINE_BOOK_STATS[t.slug]?.tier === 'bronze')
+  const backlog = VEDIC_LIBRARY.filter(t => !isTextCompleted(t.slug) && (SCRIPTURE_READINESS_SCORES[t.slug] || 0) < 40)
 
   return (
     <section className="max-w-4xl mx-auto px-4 sm:px-6 my-24 relative z-10">
