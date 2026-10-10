@@ -1,28 +1,28 @@
-﻿---
+---
 trigger: always_on
-description: Project rules â€” loaded every session
+description: Project rules — loaded every session
 ---
 
 # vishwa-vani: Agent Rules & Code Style Guide
 
-## ðŸŒŒ Project Identity
+## 🌌 Project Identity
 **Project**: vishwa-vani
 **Stack**: NodeJS
 **Repo root**: D:\Code\avinya-forge\vishwa-vani
 
 ---
 
-## ðŸ“‹ Standardized SDLC Process (Agent Rules)
+## 📋 Standardized SDLC Process (Agent Rules)
 
 ### 1. Session Bootstrap & State Analysis
 - Read and analyze .state to resume from the last session.
 - Assess the amount of work completed in the current iteration. If the current work is not yet substantial (e.g., less than 50 LOC or simple tweaks), **continue looping and executing tasks** until a meaningful, high-value work unit is achieved.
 - Sync backlog with the vision.
 - **Sequenced Skill Activation**: Load and evaluate skills in the correct execution order:
-  - **Phase 1: Governance & Vision** (e.g., 	echnical-architect, solution-architect) to set technical boundaries.
-  - **Phase 2: Planning & Grooming** (e.g., usiness-analyst, delivery-manager, scrum-master) to structure backlog.
-  - **Phase 3: Execution** (e.g., senior-developer, orward-deployment-dev, data-design-architect) to build.
-  - **Phase 4: Verification** (e.g., 	ester, headroom) to verify and optimize context.
+  - **Phase 1: Governance & Vision** (e.g., technical-architect, solution-architect) to set technical boundaries.
+  - **Phase 2: Planning & Grooming** (e.g., business-analyst, delivery-manager, scrum-master) to structure backlog.
+  - **Phase 3: Execution** (e.g., senior-developer, forward-deployment-dev, data-design-architect) to build.
+  - **Phase 4: Verification** (e.g., tester, headroom) to verify and optimize context.
 
 ### 2. Continuous Background Loop
 - Check out the latest task from the backlog.

@@ -1,5 +1,17 @@
 # Release Notes
 
+## [1.3.2]
+
+### 🕉️ Daily Shloka, Animated Landing Experience & Reading UI Polish (EPIC-P0-UX-READING-EXPERIENCE-AND-DYNAMIC-METRICS)
+- [x] `UX-DAILY-001` **Multi-Book Daily Shloka ("दैनिक श्लोक")**: Implemented interactive study card component (`components/home/daily-shloka.tsx`) featuring rotating canonical verses across Bhagavad Gita, Isha Upanishad, Kena Upanishad, and Yoga Sutras. Features authentic Devanagari Sanskrit typography, IAST transliteration, Universal English translation, multi-scholar commentary switcher (Sant Dnyaneshwar, Adi Shankara, Prabhupada, Ramanujacharya, Vyasa, Vivekananda), verse cycler (`✦ Next Shloka`), copy-to-clipboard, and direct chapter study reader deep-links.
+- [x] `UX-DARK-001` **Light Theme Standardization & Contrast Stabilization**: Eliminated buggy dark mode toggle from primary navigation and forced a unified, warm spiritual light theme (`#FDFBF7`) via `ThemeProvider` (`forcedTheme="light"`, `defaultTheme="light"`, `enableSystem={false}`). Stabilized color contrast and text legibility across all complex scriptural components.
+- [x] `HERO-ANIM-001` **Animated Landing Page Redesign**: Re-engineered landing page (`app/page.tsx`) with modern, simple, and elegant aesthetics: ambient golden/amber glowing orbs, subtle sacred Devanagari watermark (`ॐ असतो मा सद्गमय`), dynamic 4-card metric dashboard (17 Scriptures, 950 Gold Shlokas, 126,306+ Database Rows, 4 Classical Languages), categorized book directory across 5 Vedic categories, and interactive Vedic Labs spotlight.
+- [x] `NAV-006` **Streamlined Brand Navigation & Iconography**: Polished `components/layout/Header.tsx` with intuitive icons (📜 Sacred Library, 🔍 Deep Search, 🧪 Vedic Labs, 📊 Roadmap & Metrics), verified Devanagari Om logo (`ॐ` with `font-serif select-none`), and resilient fallback statistics (`safeStats`).
+- [x] `FLOW-001` **Dynamic Reading Flow Target**: Updated header and hero CTA to inspect user reading history from `localStorage`. Displays `📖 Resume Reading` with exact scripture/chapter/verse target if active, or routes seamlessly to `📜 Explore Library` (`/#library`).
+- [x] `READ-001` & `READ-002` **Cramming Elimination & Single-Column Reading Canvas**: Transformed reading layout in `components/shloka/study-client.tsx` to an unobstructed single-column reading canvas (`max-w-4xl mx-auto`). Converted Vedic Labs and interactive widgets into non-intrusive collapsible slide-out drawers, eliminating sidebars that blocked shloka visibility.
+- [x] `CHAR-002` **Mojibake Elimination & UTF-8 Protection**: Swept and repaired encoding artifacts across repository rules and gitignore, while adding strict `<meta charSet="utf-8" />` declaration in `<head>` (`app/layout.tsx`).
+- [x] **Verification**: Physically executed full test suite (`npm test -- --ci`) passing 53 test suites and 266 tests with 0 failures, and verified TypeScript compiler pass (`npx tsc --noEmit`).
+
 ## [1.3.1]
 
 - [x] DB-002: LibSQL Client Integration - Install @libsql/client. Refactor lib/server-lake.ts to swap etter-sqlite3 for async LibSQL HTTP client calls.

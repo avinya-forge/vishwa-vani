@@ -32,7 +32,7 @@ export const metadata: Metadata = {
       template: '%s | Vishwa-Vani',
       default: 'Vishwa-Vani | The Universal Voice of Vedic Wisdom'
     },
-    description: 'A comprehensive, multi-language digital sanctuary for the Bhagavad Gita, Upanishads, and the 16 Samskaras.',
+    description: 'A comprehensive, multi-language digital sanctuary for 17 sacred Vedic scriptures, including the Bhagavad Gita, Upanishads, Vedas, Puranas, and Darshanas.',
     openGraph: {
       title: 'Vishwa-Vani',
       description: 'The Universal Voice of Vedic Wisdom',
@@ -63,11 +63,12 @@ export default async function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <meta charSet="utf-8" />
         <meta name="theme-color" content="#EA580C" />
       </head>
       <body suppressHydrationWarning className={`${inter.variable} ${notoSerifDevanagari.variable} ${outfit.variable} font-sans min-h-screen flex flex-col bg-background text-foreground overflow-x-hidden`}>
         <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:p-4 focus:bg-white focus:text-stone-900 focus:font-bold">Skip to content</a>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="light" forcedTheme="light" enableSystem={false}>
           <LocaleProvider>
             
             <BetaBanner />

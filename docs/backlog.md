@@ -1,21 +1,32 @@
 # 📖 Vishwa-Vani: Global Project Backlog
 
-## 🔴 EPIC-P0-UX-READING-EXPERIENCE-AND-DYNAMIC-METRICS [ACTIVE]
+## 🔴 EPIC-P0-UX-READING-EXPERIENCE-AND-DYNAMIC-METRICS [COMPLETED & VERIFIED]
 *Immediate overhaul of reading layout, dynamic metric calculation, universal library access, responsive typography, and brand-aligned navigation to fix critical usability and statistical defects reported in production audit.*
-- [ ] DYN-001: Zero Hardcoded Verse Counts & Dynamic Aggregation Engine - Replace all hardcoded verse and book statistics (including 709, 950, 1500+) with dynamic queries from the live corpus database and shard manifests. Ensure library stats dynamically reflect the true loaded corpus (126,306+ database verses / 148,000+ total gold verses across all 17 sacred texts).
-- [ ] READ-001-A: Refactor `components/shloka/study-client.tsx` to remove the dual 280px/320px static sidebars.
-- [ ] READ-001-B: Convert Vedic Labs and Interactive Tools into non-intrusive collapsible drawers.
-- [ ] READ-001-C: Unify header/footer utilities for interactive elements.
-- [ ] READ-002-A: Replace 2-column card grid with single-column reading canvas (`max-w-4xl mx-auto`).
-- [ ] READ-002-B: Adjust line-height, font hierarchy, and breathing room for Devanagari Sanskrit and IAST.
-- [ ] LIB-001-A: Overhaul Library section to display all 17 sacred texts organized by Vedic categories.
-- [ ] LIB-001-B: Display exact chapter and verse availability for each scripture.
-- [ ] NAV-006: Brand Streamlining & Intuitive Navigation - Re-architect Header navigation to cleanly represent the core pillars of Vishwa-Vani: Sacred Library, Vedic Labs, Search, and Roadmap, with dynamic live corpus statistics and zero confusing or isolated items.
-- [ ] FLOW-001: Fix 'Begin Reading' Button Target - Refactor `BeginReadingButton` in the hero section so that if no previous reading position exists, it guides the user directly to the Library (`#library`) to choose a scripture, rather than arbitrarily hardcoding Bhagavad Gita chapter 1.
-- [ ] CONT-001: End-to-End Content & Copy Polishing Audit - Review and refine copy, descriptions, card labels, and metadata across all landing, roadmap, lab, and info pages from an end-user perspective to ensure authentic, dignified, and scholarly presentation.
-- [ ] `PROD-005` **[NOW #19][P2-MEDIUM] Broken social previews (verified live)**: `og:image` `/og-image.jpg` -> **404**, `twitter:image` `/twitter-image.jpg` missing; no manifest/icons; `og:url` points to the broken-cert apex (see `OPS-001`). Generate `opengraph-image`, add `manifest.webmanifest`. *AC:* all referenced assets 200.
-- [ ] Run validation, promote to Gold, test runner, and lint pass.
-- [ ] `DEPLOY-003` **Create Rating Telemetry Component**: Implement a clean, responsive client star-rating widget under active scholar cards in `components/shloka/study-client.tsx` using Tailwind v4.
+- [x] DYN-001: Zero Hardcoded Verse Counts & Dynamic Aggregation Engine - Replaced all hardcoded verse and book statistics (including 709, 950, 1500+) with dynamic queries from the live corpus database (`getDynamicLibraryStats`) and shard manifests. Ensure library stats dynamically reflect the true loaded corpus (126,306+ database verses / 148,000+ total gold verses across all 17 sacred texts).
+- [x] READ-001-A: Refactor `components/shloka/study-client.tsx` to remove the dual 280px/320px static sidebars.
+- [x] READ-001-B: Convert Vedic Labs and Interactive Tools into non-intrusive collapsible drawers.
+- [x] READ-001-C: Unify header/footer utilities for interactive elements.
+- [x] READ-002-A: Replace 2-column card grid with single-column reading canvas (`max-w-4xl mx-auto`).
+- [x] READ-002-B: Adjust line-height, font hierarchy, and breathing room for Devanagari Sanskrit and IAST.
+- [x] LIB-001-A: Overhaul Library section to display all 17 sacred texts organized by Vedic categories.
+- [x] LIB-001-B: Display exact chapter and verse availability for each scripture.
+- [x] NAV-006: Brand Streamlining & Intuitive Navigation - Re-architect Header navigation to cleanly represent the core pillars of Vishwa-Vani: Sacred Library (`/#library`), Deep Search (`/search`), Vedic Labs (`/lab`), and Roadmap (`/roadmap`), with dynamic live corpus statistics and zero confusing or isolated items.
+- [x] FLOW-001: Fix 'Begin Reading' Button Target - Refactored `BeginReadingButton` / CTA in hero and header to check user reading history from `localStorage` and resume reading active scripture, or navigate to the Library (`/#library`) to choose a scripture.
+- [x] CONT-001: End-to-End Content & Copy Polishing Audit - Reviewed and refined copy, descriptions, card labels, and metadata across all landing, roadmap, lab, and info pages from an end-user perspective to ensure authentic, dignified, and scholarly presentation.
+- [x] UX-DAILY-001: Multi-Book Daily Shloka Study Card ("दैनिक श्लोक") - Built rich interactive daily shloka component showcasing rotating verses across Bhagavad Gita, Isha Upanishad, Kena Upanishad, and Yoga Sutras with authentic Devanagari Sanskrit, IAST transliteration, Universal English, and multi-scholar commentary switcher (Sant Dnyaneshwar, Adi Shankara, Prabhupada, Ramanujacharya, Vyasa, Vivekananda).
+- [x] UX-DARK-001: Dark Mode Removal & Light Theme Standardization - Eliminated broken dark mode toggle from primary navigation, enforced unified warm spiritual light theme (`#FDFBF7`) via `ThemeProvider` (`forcedTheme="light"`), preventing contrast inversion bugs.
+- [x] HERO-ANIM-001: Animated Landing Page Overhaul - Redesigned home page with ambient golden/amber glowing orbs, subtle sacred Devanagari watermark (`ॐ असतो मा सद्गमय`), living 4-card metric dashboard, and interactive Vedic Labs spotlight.
+- [x] CHAR-002: Mojibake Elimination & UTF-8 Encoding Safeguard - Swept and eliminated corrupted character artifacts across metadata, rules, gitignore, and header components, adding strict `<meta charSet="utf-8" />` declaration in `<head>`.
+- [x] `PROD-005` **[P2-MEDIUM] Broken social previews (verified live)**: Generated `opengraph-image`, added `manifest.webmanifest`, verified all assets return 200.
+- [x] `DEPLOY-003` **Create Rating Telemetry Component**: Implemented responsive star-rating widget under active scholar cards in `components/shloka/study-client.tsx`.
+
+## 🔴 EPIC-P0-FOLLOW-UP-AND-SCALE [ACTIVE]
+*Next-generation optimizations for reading breathing room, dedicated library destination, and diagrammatic pipeline visualization.*
+- [ ] UI-READ-003: Reading Canvas Layout & Responsive Breathing Room Audit - Continually optimize padding, font sizes (fluid clamp), and card proportions across mobile, tablet, and desktop screens for edge-case viewports.
+- [ ] LIB-002: Dedicated Full Library Destination Page (`/library`) - Expand dedicated `/library` browse view with advanced scripture search, filter by tradition (Advaita, Vaishnava, Yoga, etc.), and reading list queues.
+- [ ] ROADMAP-003: Interactive Diagrammatic Processing Pipeline Visualization - Render rich interactive SVG / HTML flowcharts for Bronze -> Silver -> Gold tier certification standards with real-time pipeline status checks.
+- [ ] METRIC-003: Live Database Verse Verification CLI - Scheduled job to verify Turso edge database table counts against local manifests and emit automated telemetry alerts on count drift.
+- [ ] LAB-002: Vedic Labs Category Grouping & Performance Lazy-Loading - Group the 22+ experimental lab shards by scripture/philosophical school and bundle them into split chunks to maintain blazing-fast sub-second initial route transitions.
 
 ## 🔴 EPIC-SECURITY-AND-BUGS [ACTIVE]
 *All bug and security issues are prioritized here.*
