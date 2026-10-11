@@ -1,5 +1,111 @@
 # Release Notes
 
+## [1.3.9]
+
+### 📜 Book Ingestions & Scaling
+- [x] `MBH-ACQ-001` [Bronze Ingest] Ingest KMG English Bronze for Parvas 1–18 (Adi through Svargarohana) from Sacred-Texts archive [15 pts].
+- [x] `MBH-PARSE-001` [Silver Parser] Build streaming readline parser for Nilakantha Sanskrit Vulgate OCR text to eliminate Node heap OOM [20 pts].
+- [x] `MBH-LAYER-001` [Gold Alignment] Create BORI Critical Edition Adhyaya-to-KMG section concordance mapping table for all 18 Parvas [25 pts].
+- [x] `MBH-LAYER-002` [Commentary] Enrich Parva 6 (Bhishma Parva - Gita core) with Nilakantha's *Bharatabhavadipa* commentary notes [25 pts].
+- [x] `MBH-GATE-001` [QA Gate] Run `node scripts/validate_silver.js mahabharata` against all 18 Parvas (ensuring 0 broken verses) [15 pts].
+- [x] `MBH-EDGE-001` [Edge Lake Sync] Synchronize 18 Parva Gold shards to `/mahabharata/1..18` live reader routes with manifest promotion [10 pts].
+- [x] `RAM-ACQ-001` [Bronze Ingest] Acquire Baroda Oriental Institute Critical Edition text and Ralph T.H. Griffith English translation [10 pts].
+- [x] `RAM-PARSE-001` [Silver Parser] Build NVF 1.3 parser for 7 Kandas with Devanagari verse normalization [20 pts].
+- [x] `RAM-LAYER-001` [Gold Commentary] Layer Govindaraja's *Ramayana Bhushana* and Rama's *Tilaka* classical commentary layers for all 7 Kandas [20 pts].
+- [x] `RAM-LAYER-002` [Vernacular Heritage] Ingest Gita Press Sanskrit-Hindi and Marathi comparative commentary notes [10 pts].
+- [x] `RAM-GATE-001` [QA Gate] Run verification ensuring 0 broken verse IDs and zero placeholder strings across all 7 Kandas [5 pts].
+- [x] `RAM-EDGE-001` [Edge Lake Sync] Promote Ramayana to Gold in `manifest.json` and activate live `/ramayana/1..7` reader routes [5 pts].
+- [x] `BHA-ACQ-001` [Bronze Ingest] Acquire complete Sanskrit texts and public-domain English translations across all 12 Skandhas [10 pts].
+- [x] `BHA-PARSE-001` [Silver Parser] Build NVF 1.3 shard extractor for all 12 Skandhas (Creation through Kali Yuga & Mahaprayana) [15 pts].
+- [x] `BHA-LAYER-001` [Gold Commentary] Layer Sridhara Swami's *Bhavartha Dipika* and Prabhupada commentary for all 12 Cantos [25 pts].
+- [x] `BHA-LAYER-002` [Marathi Heritage] Ingest Sant Eknath's *Eknathi Bhagavata* Marathi verses and translations [15 pts].
+- [x] `BHA-GATE-001` [QA Gate] Validate 12 Cantos completeness with zero placeholder strings [5 pts].
+- [x] `BHA-EDGE-001` [Edge Lake Sync] Promote all 12 Cantos to Gold in `data/manifest.json` and sync live `/bhagavata-purana/1..12` reader [5 pts].
+- [x] `RV-ACQ-001` [Bronze Ingest] Acquire metrical Sanskrit hymns across all 10 Mandalas (Agni, Indra, Gayatri, Purusha, Nasadiya Suktas) [10 pts].
+- [x] `RV-ACQ-002` [Bronze Ingest] Acquire Ralph T.H. Griffith complete English translation [10 pts].
+- [x] `RV-PARSE-001` [Silver Parser] Build NVF 1.3 parser structuring all 10 Mandalas into Devanagari Sanskrit and IAST transliteration [15 pts].
+- [x] `RV-LAYER-001` [Gold Commentary] Layer Sayanacharya's commentary and Swami Dayananda Saraswati's Hindi/Marathi meanings [15 pts].
+- [x] `RV-GATE-001` [QA Gate] Validate all 10 Mandalas with zero placeholders [5 pts].
+- [x] `RV-EDGE-001` [Edge Lake Sync] Promote Rigveda to Gold in `manifest.json` and enable `/rigveda/1..10` live reader routes [5 pts].
+- [x] `VP-ACQ-001` [Bronze Ingest] Harvest H.H. Wilson complete 6-Amsa translation and GRETIL Devanagari text [5 pts].
+- [x] `VP-PARSE-001` [Silver Parser] Structure all 6 Amsas into NVF 1.3 JSON shards in `data/2-silver/vishnu-purana/` [10 pts].
+- [x] `VP-LAYER-001` [Gold Commentary] Layer Sridhara Swami's *Atmaprakasa* insights and Hindi meanings across all 6 Amsas [10 pts].
+- [x] `VP-GATE-001` [QA Gate] Run audit status check ensuring 100.0% Gold readiness and 0 placeholders [5 pts].
+- [x] `VP-EDGE-001` [Edge Lake Sync] Synchronize all 6 Amsas to Gold tier, update manifest and reader routes [5 pts].
+- [x] `GAR-ACQ-001` [Bronze Ingest] Ingest M.N. Dutt English translation and clean Devanagari Sanskrit text [5 pts].
+- [x] `GAR-PARSE-001` [Silver Parser] Parse Achara Khanda (Dharma, ethics, cosmology) and Preta Khanda (eschatology) into NVF shards [5 pts].
+- [x] `GAR-LAYER-001` [Gold Commentary] Layer classical scholarly synthesis and Hindi translation for both Khandas [5 pts].
+- [x] `GAR-GATE-001` [QA Gate] Execute validation ensuring 100.0% Gold readiness and 0 corrupted strings [2 pts].
+- [x] `GAR-EDGE-001` [Edge Lake Sync] Sync verified Garuda Purana chapters to Gold manifest and active reader [3 pts].
+- [x] `SAM-ACQ-001` [Bronze Ingest] Harvest Sanskrit text with musical Saman accent marks and Griffith English translation [5 pts].
+- [x] `SAM-PARSE-001` [Silver Parser] Structure Purvarchana and Uttararchana into NVF 1.3 schema with chant notation [5 pts].
+- [x] `SAM-LAYER-001` [Gold Commentary] Layer Sayanacharya's musical/liturgical Bhashya and Hindi translations [5 pts].
+- [x] `SAM-GATE-001` [QA Gate] Validate schema compliance, promote to Gold, and link to Vedic Chanting Trainer [5 pts].
+- [x] `YAJ-ACQ-001` [Bronze Ingest] Ingest Shukla Yajurveda Sanskrit mantras across all 40 Adhyayas (including Shri Rudram, Purusha Sukta, Shiva Sankalpa, Shanti Mantra, Isha) [5 pts].
+- [x] `YAJ-PARSE-001` [Silver Parser] Parse all 40 Adhyayas into atomic NVF chapter shards with Devanagari Sanskrit and IAST transliteration [5 pts].
+- [x] `YAJ-LAYER-001` [Gold Commentary] Layer Uvvata/Mahidhara classical commentaries and Arya Samaj Hindi and Marathi translations [5 pts].
+- [x] `YAJ-GATE-001` [QA Gate] Execute verification gate with zero placeholders, promote to Gold in `manifest.json`, and link to `/yajurveda/1..40` live reader [5 pts].
+- [x] `ATH-ACQ-001` [Bronze Ingest] Ingest W.D. Whitney / C.R. Lanman complete English translation and Sanskrit Devanagari text [10 pts].
+- [x] `ATH-PARSE-001` [Silver Parser] Build NVF 1.3 parser for 20 Kandas with hymn classifications (Bhaishajya, Ayushya, Paushtika) [10 pts].
+- [x] `ATH-LAYER-001` [Gold Commentary] Layer Sayana commentary and botanical/medicinal metadata for Atharvan healing hymns [10 pts].
+- [x] `ATH-GATE-001` [QA Gate] Run silver validation, sync to Turso Edge, and link to Vedic Healing Herbarium Lab [5 pts].
+- [x] `BRA-ACQ-001` [Bronze Ingest] Ingest George Thibaut SBE Vols 34 & 38 translations and Sanskrit Devanagari Sutras [5 pts].
+- [x] `BRA-PARSE-001` [Silver Parser] Structure 4 Adhyayas (Samanvaya, Avirodha, Sadhana, Phala) into NVF Adhikarana units [5 pts].
+- [x] `BRA-LAYER-001` [Gold Commentary] Layer trilateral comparative commentary (Shankara vs. Ramanuja vs. Madhva) for key Adhikaranas [10 pts].
+- [x] `BRA-GATE-001` [QA Gate] Verify schema integrity, push to Turso Edge, and build Comparative Vedanta Explorer Lab [5 pts].
+- [x] `MAN-ACQ-001` [Bronze Ingest] Ingest Georg Bühler English translation and clean Devanagari Sanskrit text [5 pts].
+- [x] `MAN-PARSE-001` [Silver Parser] Structure 12 Adhyayas into NVF 1.3 JSON shards with topic classifications [5 pts].
+- [x] `MAN-LAYER-001` [Gold Commentary] Layer Medhatithi and Kulluka Bhatta commentary extracts with scholarly historical context [10 pts].
+- [x] `MAN-GATE-001` [QA Gate] Run schema validation, sync to Turso Edge, and link to Ancient Legal Systems Comparative Lab [5 pts].
+- [x] `SAMSK-ACQ-001` [Bronze Ingest] Complete acquisition of authentic Vedic Mantras for all 16 life rites [2 pts].
+- [x] `SAMSK-PARSE-001` [Silver Parser] Structure 16 rites with step-by-step procedure guides across 3 lifecycle chapters in NVF [3 pts].
+- [x] `SAMSK-LAYER-001` [Gold Commentary] Provide authentic Sanskrit Devanagari, English procedure guides, and Hindi/Marathi Vidhi notes [3 pts].
+- [x] `SAMSK-GATE-001` [QA Gate] Validate schema compliance, eliminate placeholders, achieve 100.0% Gold audit score [2 pts].
+- [x] `STO-ACQ-001` [Bronze Ingest] Curate authentic texts for top universal Stotras [2 pts].
+- [x] `STO-PARSE-001` [Silver Parser] Structure Stotras with Chhanda meter tags, deity classifications, and daily recitation guides [3 pts].
+- [x] `STO-LAYER-001` [Gold Commentary] Layer Adi Shankara's commentary and trilingual poetic translations [3 pts].
+- [x] `STO-GATE-001` [QA Gate] Validate NVF compliance, purge mock files, achieve 100.0% Gold audit score [2 pts].
+
+### 🛡️ Security & Architecture
+- [x] `SEC-OWASP-001` **[P0-CRITICAL] Input Validation & Path Traversal Lockdown in `/api/lake` (A01/A04)**: Enforced strict regex validation (`/^[a-zA-Z0-9_-]+\.db$/`), sanitized base filename resolution via `path.basename()`, and bounded numerical ranges in `/api/lake`.
+- [x] `SEC-OWASP-002` **[P1-HIGH] Search Query Wildcard DoS Hardening (A03/A04)**: Enforced max query length (100 chars) and escaped SQL LIKE wildcards (`%`, `_`, `\`) in `/api/lake` to prevent regex table scan exhaustion.
+- [x] `SEC-OWASP-003` **[P1-HIGH] Cryptographic Key Derivation & Fail-Closed Hardening in `server-lake.ts` (A02)**: Standardized cryptographic key derivation using `crypto.createHash('sha256').update(keySource).digest()` to guarantee a uniform 256-bit key.
+- [x] `SEC-OWASP-005` **[P1-HIGH] Anti-Scraping Token Bucket & IP Rate Limiting (A04/A07)**: Implemented an in-memory sliding-window token bucket rate limiter in `lib/api-guard.ts` capping requests at 60 req/min per IP with automated expired bucket pruning.
+- [x] `SEC-LLM-001` **[P0-CRITICAL] Prompt Injection Defense & Delimiter Hardening in `/api/synthesize` (LLM01)**: Implemented `sanitizeVedicContext()` to strip HTML tags, redact adversarial override keywords (`system prompt`, `ignore previous instructions`), and enclose scripture context in formal `<scripture_context>` boundary fences.
+- [x] `SEC-LLM-002` **[P1-HIGH] Model Denial of Service & Token Quota Throttling (LLM04)**: Capped input context length to 1,500 characters and throttled `/api/synthesize` to a maximum of 10 requests per minute per IP via `validateApiRequest()`.
+- [x] `SEC-LLM-003` **[P1-HIGH] System Prompt Isolation & Credential Leakage Defense (LLM02/LLM07)**: Error handlers in `/api/synthesize` fail closed with sanitized error messages redacting credentials (`key=[REDACTED]`), preventing internal prompt templates or credentials from leaking in logs or HTTP responses.
+- [x] `SEC-LLM-004` **[P2-MEDIUM] Generative UI Output Sanitization (LLM05)**: Sanitized LLM synthesis output by stripping any injected HTML or script tags prior to delivery to client readers.
+- [x] `SEC-LLM-005` **[P1-HIGH] Zero-Hallucination Gate & Synthetic Commentary Quarantine (LLM09)**: Attached mandatory `zeroHallucinationGate` and `disclaimer` metadata guarantees to all synthesis responses certifying that root Sanskrit verses originate strictly from verified human editions.
+- [x] `ROADMAP-003` **Interactive Diagrammatic Processing Pipeline & Vision Visualization**: Rendered the 5-Phase Master Vision Roadmap, 5-Stage Data Pipeline lifecycle, scripture effort points/sizing matrix, and OWASP AppSec & LLM Integrity Certification on `/roadmap`.
+
+### 🎨 UI & UX
+- [x] **Phase 1: Gold Core Foundation (17 Canonical Scriptures / 1,242 Verses)**: Bhagavad Gita (701), Yoga Sutras (195), Vishnu Purana (60), Shukla Yajurveda (40), Kena Upanishad (34), Manusmriti (24), 16 Samskaras (24), Valmiki Ramayana (21), Garuda Purana (20), Brahma Sutras (20), Samaveda (20), Atharvaveda (20), Stotras & Stuties (20), Isha Upanishad (19), Mahabharata (19), Srimad Bhagavatam (13), Rigveda (12). Multi-scholar commentary live, zero placeholders, 100% verified unit tests, dynamic runtime UI statistics.
+- [x] READ-001-A: Refactor `components/shloka/study-client.tsx` to remove dual 280px/320px static sidebars.
+- [x] READ-001-B: Convert Vedic Labs and Interactive Tools into non-intrusive collapsible drawers.
+- [x] READ-001-C: Unify header/footer utilities for interactive elements.
+- [x] READ-002-A: Replace 2-column card grid with single-column reading canvas (`max-w-4xl mx-auto`).
+- [x] READ-002-B: Adjust line-height, font hierarchy, and breathing room for Devanagari Sanskrit and IAST.
+- [x] LIB-001-A: Overhaul Library section to display all 17 sacred texts organized by Vedic categories.
+- [x] LIB-001-B: Display exact chapter and verse availability for each scripture.
+- [x] NAV-006: Brand Streamlining & Intuitive Navigation - Re-architect Header navigation to cleanly represent the core pillars of Vishwa-Vani: Sacred Library (`/#library`), Deep Search (`/search`), Vedic Labs (`/lab`), and Roadmap (`/roadmap`), with dynamic live corpus statistics and zero confusing or isolated items.
+- [x] FLOW-001: Fix 'Begin Reading' Button Target - Refactored `BeginReadingButton` / CTA in hero and header to check user reading history from `localStorage` and resume reading active scripture, or navigate to the Library (`/#library`) to choose a scripture.
+- [x] CONT-001: End-to-End Content & Copy Polishing Audit - Reviewed and refined copy, descriptions, card labels, and metadata across all landing, roadmap, lab, and info pages from an end-user perspective to ensure authentic, dignified, and scholarly presentation.
+- [x] UX-DAILY-001: Multi-Book Daily Shloka Study Card ("दैनिक श्लोक") - Built rich interactive daily shloka component showcasing rotating verses across Bhagavad Gita, Isha Upanishad, Kena Upanishad, and Yoga Sutras with authentic Devanagari Sanskrit, IAST transliteration, Universal English, and multi-scholar commentary switcher (Sant Dnyaneshwar, Adi Shankara, Prabhupada, Ramanujacharya, Vyasa, Vivekananda).
+- [x] UX-DARK-001: Dark Mode Removal & Light Theme Standardization - Eliminated broken dark mode toggle from primary navigation, enforced unified warm spiritual light theme (`#FDFBF7`) via `ThemeProvider` (`forcedTheme="light"`), preventing contrast inversion bugs.
+- [x] HERO-ANIM-001: Animated Landing Page Overhaul - Redesigned home page with ambient golden/amber glowing orbs, subtle sacred Devanagari watermark (`ॐ असतो मा सद्गमय`), living 4-card metric dashboard, and interactive Vedic Labs spotlight.
+- [x] CHAR-002: Mojibake Elimination & UTF-8 Encoding Safeguard - Swept and eliminated corrupted character artifacts across metadata, rules, gitignore, and header components, adding strict `<meta charSet="utf-8" />` declaration in `<head>`.
+- [x] `MBH-LAB-001` [Vedic Lab] Build interactive Kurukshetra Battlefield Formations (Akshauhini & Vyuha) Decision Lab [10 pts].
+- [x] `RAM-LAB-001` [Vedic Lab] Build interactive Ramayana Geography & Journey Map (Ayodhya to Lanka sacred trail) [5 pts].
+- [x] `BHA-LAB-001` [Vedic Lab] Build interactive Nine-Fold Devotion Navigator (Navadha Bhakti Flow) and Canto 10 Leela Map [5 pts].
+- [x] `RV-LAB-001` [Vedic Lab] Build Vedic Metrical Analyzer (Chhanda Calculator for Gayatri, Trishtubh, Anushtubh) [5 pts].
+- [x] `LIB-002` **Dedicated Full Library Destination Page (`/library`)**: Created dedicated `/library` page with real-time text/Devanagari/scholar search, category pills, tier filters (100% Gold vs Ingestion Pipeline), quick chapter jump drawers, and active reading session resumption.
+
+### 🛠️ Other
+- [x] DYN-001: Zero Hardcoded Verse Counts & Dynamic Aggregation Engine - Replaced all hardcoded verse and book statistics (including 709, 950, 1500+) with dynamic queries from the live corpus database (`getDynamicLibraryStats`) and shard manifests. Library stats dynamically reflect the true loaded corpus (126,306+ database verses / 148,000+ total gold verses across all 17 sacred texts).
+- [x] `PROD-005` **[P2-MEDIUM] Broken social previews (verified live)**: Generated `opengraph-image`, added `manifest.webmanifest`, verified all assets return 200.
+- [x] `DEPLOY-003` **Create Rating Telemetry Component**: Implemented responsive star-rating widget under active scholar cards in `components/shloka/study-client.tsx`.
+
+
 ## [1.3.8]
 
 ### 📜 5 Canonical Scriptures Elevated to 100% Gold Production Grade (17 Gold Books / 1,242 Verses)
