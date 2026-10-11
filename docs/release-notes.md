@@ -1,5 +1,21 @@
 # Release Notes
 
+## [1.4.0]
+
+### 💎 Diamond Tier & Multi-Tier Chapter Summaries (ADR-007)
+- [x] `SUM-001` **Dynamic WPM Reading Time Engine**: Implemented `calculateReadingTime()` (~200 WPM) and `calculateBookReadTime()` in `lib/chapter-summaries.ts`, replacing rigid 1-hour benchmarks with exact reading duration metrics tailored to scripture scale.
+- [x] `SUM-002` **Multi-Tier Granularity Model**: Created 4 distinct summary tiers (`very_short` Sūtra Essence, `short` Tattva Saṁgraha, `long` Adhyāya Vivaraṇa, `very_long` Śāstra Mahā-Bodh) with topics, core dilemmas, philosophical resolutions, and anchor shlokas.
+- [x] `SUM-003` **Multi-Scholar Exegesis**: Structured comparative perspectives across Advaita (Adi Shankara), Vishishtadvaita (Ramanuja), Dvaita (Madhvacharya), Gaudiya (Prabhupada), and Warkari (Sant Dnyaneshwar) traditions.
+- [x] `SUM-004` **Adaptive Essence Reader UI**: Built `components/essence/adaptive-essence-reader.tsx` with dynamic read time badges, interactive tier switcher, and integrated Diamond Tier scientific knowledge links.
+- [x] `DIA-001` **Vedic Science Extraction Engine**: Implemented `lib/vedic-science.ts` extracting empirical knowledge tokens across Astronomy, Ayurveda, Cognitive Science, and Cosmology.
+- [x] `DIA-002` **Khagola (Astronomy) Fact Extraction**: Extracted Mahabharata 13-day solar-lunar eclipse sequence and Valmiki Ramayana 5 exalted planets configuration corroborated with modern celestial ephemeris models.
+- [x] `DIA-003` **Ayurveda Nutritional Energetics**: Extracted Gita Chapter 17 dietary gunas and Atharvaveda Tridosha dynamic equilibrium framework.
+- [x] `DIA-004` **Cognitive Science & Consciousness**: Extracted Patanjali 5 cognitive vrittis and Mandukya Upanishad 4-state consciousness architecture (Jagrat, Svapna, Sushupti, Turiya).
+- [x] `DIA-005` **Cosmology & Deep Time**: Extracted Brahma Sutras Paramanu atomic theory and Vishnu Purana 4.32-billion-year Kalpa time scales.
+- [x] `DIA-006` **Vaidika Vijñāna Interactive Discovery Hub**: Built `/knowledge` route for domain filtering, token search, and 1-click verified deep links to canonical readers.
+- [x] `NAV-001` **Global Navigation Synchronization**: Updated `components/layout/Header.tsx` to `⚡ Essence` (removing rigid 1-hour label) and added `🔬 Science` (`/knowledge`) link in desktop and mobile menus.
+- [x] `TEST-001` **Comprehensive Test Suite**: Authored unit tests in `__tests__/lib-chapter-summaries.test.ts` and `__tests__/lib-vedic-science.test.ts`, expanding test coverage to 60 passing suites (315 passing tests, 0 failures).
+
 ## [1.3.9]
 
 ### 📜 Book Ingestions & Scaling

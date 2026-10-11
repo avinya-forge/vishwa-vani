@@ -80,6 +80,29 @@
 
 ---
 
+## 📚 EPIC-CHAPTER-SUMMARIES-MULTI-TIER [ACTIVE - P0 CRITICAL]
+*Configurable 4-tier chapter-wise summaries (Very Short, Short, Long, Very Long) eliminating hardcoded 1-hour benchmarks, calculating reading times dynamically via word count, and synthesizing all available commentaries (governed by ADR-007).*
+
+- [x] `SUM-001` **[P0-CRITICAL] 4-Tier Multi-Granularity Summary Engine**: Implement `lib/chapter-summaries.ts` defining structured chapter summaries covering topics discussed, philosophical conclusions, anchor verses, and scholar perspectives across Very Short, Short, Long, and Very Long tiers.
+- [x] `SUM-002` **[P0-CRITICAL] Dynamic Reading Time Calculator**: Implement `calculateReadingTime(text, wpm)` computing exact read duration dynamically from content word count rather than arbitrary hardcoded timeframes.
+- [x] `SUM-003` **[P1-HIGH] Adaptive Granularity Switcher UI**: Enhance `/essence/[slug]` with interactive granularity selector (`[⚡ Very Short] [📝 Short] [📖 Long] [🔬 Very Long]`), chapter selector, and real-time read duration telemetry.
+- [x] `SUM-004` **[P1-HIGH] Multi-Scholar Perspective Matrix**: Ingest and reconcile trilateral classical commentaries (Advaita, Vishishtadvaita, Dvaita, Gaudiya, Warkari) systematically across chapter summaries.
+
+---
+
+## 💎 EPIC-DIAMOND-TIER-SCIENTIFIC-KNOWLEDGE [ACTIVE - P0 CRITICAL]
+*Diamond Tier (💎) empirical knowledge graph extracting scientific facts, archaeoastronomical configurations, Ayurvedic body tendencies & therapies, cognitive psychology, and cosmological physics across all 100% completed canonical scriptures (governed by ADR-007).*
+
+- [x] `DIA-001` **[P0-CRITICAL] Diamond Tier (💎) Schema & Registry**: Create `lib/vedic-science.ts` defining Empirical Knowledge Token (EKT) schema and cross-scriptural fact extraction engine.
+- [x] `DIA-002` **[P1-HIGH] Archaeoastronomy & Planetary Configurations**: Extract empirical astronomical observations (Kurukshetra eclipse pairs, Ramayana birth chart astral positions, Vishnu Purana celestial distances, Nakshatras).
+- [x] `DIA-003` **[P1-HIGH] Ayurveda & Physiology Knowledge Base**: Extract body constitution (Tridosha: Vata, Pitta, Kapha), dietary gunas (Gita 17), etiology (Nidana), and healing protocols.
+- [x] `DIA-004` **[P1-HIGH] Cognitive Psychology & Mind Stillness**: Extract mental modifications (Citta Vrittis), afflictions (Kleshas), and stages of consciousness (Jagrat, Svapna, Sushupti, Turiya).
+- [x] `DIA-005` **[P1-HIGH] Cosmology & Physics Knowledge**: Extract atomic theory (Paramanu), Pancha Mahabhutas, Tanmatras, and cosmic cyclical time scales.
+- [x] `DIA-006` **[P1-HIGH] Vaidika Vijñāna Knowledge Hub (`/knowledge`)**: Build interactive discovery hub allowing seekers and researchers to browse extracted empirical facts with Sanskrit citations and modern scientific corroborations.
+
+---
+
+
 
 ## 🟢 EPIC-BOOK-DASBODH [QUEUED - TIER: BRONZE | SIZE: L | 35 PTS]
 *Dasbodh of Samarth Ramdas Swami: 20 Dashakas, 200 Samasas, 7,751 Ovis. Masterpiece of practical spirituality and statecraft.*

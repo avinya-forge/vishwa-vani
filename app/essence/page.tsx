@@ -46,19 +46,22 @@ export default function EssenceHubPage() {
           </div>
 
           <h1 className="text-[clamp(2.75rem,5.5vw,4.5rem)] font-serif font-black tracking-tight text-stone-900 leading-[1.08]">
-            The 1-Hour Vedic Essence
+            Adaptive Vedic Essence
           </h1>
 
           <p className="text-stone-600 text-lg md:text-xl font-serif italic leading-relaxed">
-            Short on time? Master the foundational breakthrough, pinnacle verses, and daily practices of humanity&apos;s greatest spiritual classics in under 60 minutes.
+            Short on time? Master foundational breakthroughs, pinnacle verses, multi-scholar commentaries, and empirical Vedic science with adaptive reading levels—from 5-minute Sūtra digests to exhaustive chapter exegesis.
           </p>
 
           <div className="flex flex-wrap gap-3 pt-2 text-xs font-semibold text-stone-600">
             <div className="px-3.5 py-1.5 rounded-full bg-orange-50 border border-orange-200 text-orange-900 flex items-center gap-2">
-              <span>⚡</span> <span>45–60 Min Structured Flows</span>
+              <span>⚡</span> <span>Adaptive 4-Tier Granularity</span>
             </div>
             <div className="px-3.5 py-1.5 rounded-full bg-amber-50 border border-amber-200 text-amber-900 flex items-center gap-2">
               <span>📜</span> <span>100% Authentic Sanskrit Shlokas</span>
+            </div>
+            <div className="px-3.5 py-1.5 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-900 flex items-center gap-2">
+              <span>🔬</span> <span>Diamond Tier Empirical Science</span>
             </div>
             <div className="px-3.5 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-900 flex items-center gap-2">
               <span>🔗</span> <span>1-Click Deep Dives into Full Text</span>
@@ -152,7 +155,7 @@ export default function EssenceHubPage() {
                   href={`/essence/${digest.slug}`}
                   className="w-full text-center py-2.5 px-4 rounded-xl bg-stone-900 hover:bg-orange-700 text-white text-xs font-bold uppercase tracking-wider transition-colors shadow-sm"
                 >
-                  Start 1-Hour Read &rarr;
+                  Open Adaptive Reader &rarr;
                 </Link>
               </div>
             </article>
