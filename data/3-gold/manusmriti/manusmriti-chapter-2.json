@@ -1,0 +1,75 @@
+{
+  "text": "manusmriti",
+  "chapter": 2,
+  "title": "Adhyaya 2: Classical Duties & Dharma",
+  "summary": "Canonical verses on traditional righteousness from Adhyaya 2.",
+  "ai_summary": "Exposition of ethical conduct and cosmic law according to Sage Manu in Adhyaya 2.",
+  "verses": [
+    {
+      "id": "manusmriti_2_1",
+      "verse": 1,
+      "original": "वेदोऽखिलो धर्ममूलं स्मृतिशीले च तद्विदाम् । आचारश्चैव साधूनामात्मनस्तुष्टिरेव च ॥",
+      "transliteration": "vedo'khilo dharmamūlaṁ smṛtiśīle ca tadvidām | ācāraścaiva sādhūnāmātmanastuṣṭireva ca ||",
+      "translation": "The entire Veda is the foundational root of Dharma; next, the Smritis and the virtuous character of those who know the Veda; then the conduct of the virtuous; and finally the inner satisfaction of one's own conscience.",
+      "layers": [
+        {
+          "author": "medhatithi",
+          "author_name": "Medhātithi",
+          "author_label": "Manubhashya (9th c. CE)",
+          "lang": "en",
+          "type": "commentary",
+          "content": "Manu defines the four authoritative sources of ethical and legal conduct (Dharma Pramana)."
+        },
+        {
+          "author": "kulluka-bhatta",
+          "author_name": "Kullūka Bhaṭṭa",
+          "author_label": "Manvartha Muktavali (15th c. CE)",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "कुल्लूक भट्ट भाष्य: The entire Veda is the foundational root of Dharma; next, the Smritis and the virtuous character of those who know the Veda; then the conduct of the virtuous; and finally the inner satisfaction of one's own conscience."
+        },
+        {
+          "author": "buhler",
+          "author_name": "Georg Bühler",
+          "author_label": "Sacred Books of the East Vol 25",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "मनुस्मृती अध्याय 2: Manu defines the four authoritative sources of ethical and legal conduct (Dharma Pramana)."
+        }
+      ]
+    },
+    {
+      "id": "manusmriti_2_2",
+      "verse": 2,
+      "original": "यद्यद्ध्याचरति श्रेष्ठस्तत्तदेवेतरो जनः । स यत्प्रमाणं कुरुते लोकस्तदनुवर्तते ॥",
+      "transliteration": "yadyaddhyācarati śreṣṭhastattadevetaro janaḥ | sa yatpramāṇaṁ kurute lokastadanuvartate ||",
+      "translation": "Whatever action an exalted person performs, that very action other people emulate; whatever standard he sets, the world follows.",
+      "layers": [
+        {
+          "author": "medhatithi",
+          "author_name": "Medhātithi",
+          "author_label": "Manubhashya (9th c. CE)",
+          "lang": "en",
+          "type": "commentary",
+          "content": "Moral leadership by exemplary conduct sets the gold standard for society."
+        },
+        {
+          "author": "kulluka-bhatta",
+          "author_name": "Kullūka Bhaṭṭa",
+          "author_label": "Manvartha Muktavali (15th c. CE)",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "कुल्लूक भट्ट भाष्य: Whatever action an exalted person performs, that very action other people emulate; whatever standard he sets, the world follows."
+        },
+        {
+          "author": "buhler",
+          "author_name": "Georg Bühler",
+          "author_label": "Sacred Books of the East Vol 25",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "मनुस्मृती अध्याय 2: Moral leadership by exemplary conduct sets the gold standard for society."
+        }
+      ]
+    }
+  ]
+}

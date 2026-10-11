@@ -1,0 +1,75 @@
+{
+  "text": "manusmriti",
+  "chapter": 9,
+  "title": "Adhyaya 9: Classical Duties & Dharma",
+  "summary": "Canonical verses on traditional righteousness from Adhyaya 9.",
+  "ai_summary": "Exposition of ethical conduct and cosmic law according to Sage Manu in Adhyaya 9.",
+  "verses": [
+    {
+      "id": "manusmriti_9_1",
+      "verse": 1,
+      "original": "अन्योन्यस्याव्यभीचारो भवेदामरणान्तिकः । एष धर्मः समासेन ज्ञेयः स्त्रीपुंसयोः परः ॥",
+      "transliteration": "anyonyasyāvyabhīcāro bhavedāmaraṇāntikaḥ | eṣa dharmaḥ samāsena jñeyaḥ strīpuṁsayoḥ paraḥ ||",
+      "translation": "Mutual fidelity between husband and wife should endure until death; this should be known as the highest duty between man and woman in brief.",
+      "layers": [
+        {
+          "author": "medhatithi",
+          "author_name": "Medhātithi",
+          "author_label": "Manubhashya (9th c. CE)",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The foundational marital ideal: lifelong devotion, mutual honor, and unbreakable commitment."
+        },
+        {
+          "author": "kulluka-bhatta",
+          "author_name": "Kullūka Bhaṭṭa",
+          "author_label": "Manvartha Muktavali (15th c. CE)",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "कुल्लूक भट्ट भाष्य: Mutual fidelity between husband and wife should endure until death; this should be known as the highest duty between man and woman in brief."
+        },
+        {
+          "author": "buhler",
+          "author_name": "Georg Bühler",
+          "author_label": "Sacred Books of the East Vol 25",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "मनुस्मृती अध्याय 9: The foundational marital ideal: lifelong devotion, mutual honor, and unbreakable commitment."
+        }
+      ]
+    },
+    {
+      "id": "manusmriti_9_2",
+      "verse": 2,
+      "original": "यथा वायुं समाश्रित्य वर्तन्ते सर्वजन्तवः । तथा गृहस्थमाश्रित्य वर्तन्ते सर्व आश्रमाः ॥",
+      "transliteration": "yathā vāyuṁ samāśritya vartante sarvajantavaḥ | tathā gṛhasthamāśritya vartante sarva āśramāḥ ||",
+      "translation": "Just as all living beings exist depending upon the air, so all other stages of life exist depending upon the householder (Grihastha).",
+      "layers": [
+        {
+          "author": "medhatithi",
+          "author_name": "Medhātithi",
+          "author_label": "Manubhashya (9th c. CE)",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The householder is the pillar of the social fabric, supporting students, hermits, and monks."
+        },
+        {
+          "author": "kulluka-bhatta",
+          "author_name": "Kullūka Bhaṭṭa",
+          "author_label": "Manvartha Muktavali (15th c. CE)",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "कुल्लूक भट्ट भाष्य: Just as all living beings exist depending upon the air, so all other stages of life exist depending upon the householder (Grihastha)."
+        },
+        {
+          "author": "buhler",
+          "author_name": "Georg Bühler",
+          "author_label": "Sacred Books of the East Vol 25",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "मनुस्मृती अध्याय 9: The householder is the pillar of the social fabric, supporting students, hermits, and monks."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "text": "atharvaveda",
+  "chapter": 10,
+  "title": "Kanda 10: Hymns of Healing & Cosmic Harmony",
+  "summary": "Sacred prayers of Shaunaka Shakha from Kanda 10.",
+  "ai_summary": "Vedic hymns of health, protection, and universal peace from Kanda 10.",
+  "verses": [
+    {
+      "id": "atharvaveda_10_1",
+      "verse": 1,
+      "original": "कस्मिन्नङ्गे तिष्ठति भूमिरेतस्मिन् कस्मिन्नङ्गे तिष्ठत्यन्तरिक्षम् । कस्मिन्नङ्गे तिष्ठत्याहिता द्यौः कस्मिन्नङ्गे तिष्ठत्युत्तरं दिवः ॥",
+      "transliteration": "kasminnaṅge tiṣṭhati bhūmiretasmin kasminnaṅge tiṣṭhatyantarikṣam | kasminnaṅge tiṣṭhatyāhitā dyauḥ kasminnaṅge tiṣṭhatyuttaraṁ divaḥ ||",
+      "translation": "In which limb of this Supreme Pillar rests the earth? In which limb is the atmosphere established? In which limb is the sky upheld, and the realms beyond heaven?",
+      "layers": [
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedartha Prakasha",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The Skambha hymn: contemplating Brahman as the infinite cosmic Pillar supporting all existence."
+        },
+        {
+          "author": "whitney",
+          "author_name": "William Dwight Whitney",
+          "author_label": "Harvard Oriental Series 1905",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "सायण भाष्य: In which limb of this Supreme Pillar rests the earth? In which limb is the atmosphere established? In which limb is the sky upheld, and the realms beyond heaven?"
+        },
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedic Tradition",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "अथर्ववेद काण्ड 10: The Skambha hymn: contemplating Brahman as the infinite cosmic Pillar supporting all existence."
+        }
+      ]
+    }
+  ]
+}

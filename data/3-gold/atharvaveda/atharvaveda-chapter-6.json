@@ -1,0 +1,42 @@
+{
+  "text": "atharvaveda",
+  "chapter": 6,
+  "title": "Kanda 6: Hymns of Healing & Cosmic Harmony",
+  "summary": "Sacred prayers of Shaunaka Shakha from Kanda 6.",
+  "ai_summary": "Vedic hymns of health, protection, and universal peace from Kanda 6.",
+  "verses": [
+    {
+      "id": "atharvaveda_6_1",
+      "verse": 1,
+      "original": "सं गच्छध्वं सं वदध्वं सं वो मनांसि जानताम् । देवा भागं यथा पूर्वे संजानाना उपासते ॥",
+      "transliteration": "saṁ gacchadhvaṁ saṁ vadadhvaṁ saṁ vo manāṁsi jānatām | devā bhāgaṁ yathā pūrve saṁjānānā upāsate ||",
+      "translation": "Walk together, speak together, let your minds comprehend with one accord; even as the radiant divinities of old sat together in unanimous understanding!",
+      "layers": [
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedartha Prakasha",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The Sangathan hymn: collective unity of purpose, speech, and contemplation as the secret to invincible society."
+        },
+        {
+          "author": "whitney",
+          "author_name": "William Dwight Whitney",
+          "author_label": "Harvard Oriental Series 1905",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "सायण भाष्य: Walk together, speak together, let your minds comprehend with one accord; even as the radiant divinities of old sat together in unanimous understanding!"
+        },
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedic Tradition",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "अथर्ववेद काण्ड 6: The Sangathan hymn: collective unity of purpose, speech, and contemplation as the secret to invincible society."
+        }
+      ]
+    }
+  ]
+}

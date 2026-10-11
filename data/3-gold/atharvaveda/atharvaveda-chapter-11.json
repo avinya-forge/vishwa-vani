@@ -1,0 +1,42 @@
+{
+  "text": "atharvaveda",
+  "chapter": 11,
+  "title": "Kanda 11: Hymns of Healing & Cosmic Harmony",
+  "summary": "Sacred prayers of Shaunaka Shakha from Kanda 11.",
+  "ai_summary": "Vedic hymns of health, protection, and universal peace from Kanda 11.",
+  "verses": [
+    {
+      "id": "atharvaveda_11_1",
+      "verse": 1,
+      "original": "प्राणाय नमो यस्य सर्वमिदं वशे । यो भूतः सर्वस्येश्वरो यस्मिन्त्सर्वं प्रतिष्ठितम् ॥",
+      "transliteration": "prāṇāya namo yasya sarvamidaṁ vaśe | yo bhūtaḥ sarvasyeśvaro yasmintsarvaṁ pratiṣṭhitam ||",
+      "translation": "Salutations to Prana, under whose sovereign sway rests all this universe! Who is the Lord of all that has been, in whom all things are firmly established!",
+      "layers": [
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedartha Prakasha",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The Prana Sukta: adoration of the supreme Cosmic Breath that animates gods, men, and stars."
+        },
+        {
+          "author": "whitney",
+          "author_name": "William Dwight Whitney",
+          "author_label": "Harvard Oriental Series 1905",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "सायण भाष्य: Salutations to Prana, under whose sovereign sway rests all this universe! Who is the Lord of all that has been, in whom all things are firmly established!"
+        },
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedic Tradition",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "अथर्ववेद काण्ड 11: The Prana Sukta: adoration of the supreme Cosmic Breath that animates gods, men, and stars."
+        }
+      ]
+    }
+  ]
+}

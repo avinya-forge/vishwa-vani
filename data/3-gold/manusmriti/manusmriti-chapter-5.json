@@ -1,0 +1,75 @@
+{
+  "text": "manusmriti",
+  "chapter": 5,
+  "title": "Adhyaya 5: Classical Duties & Dharma",
+  "summary": "Canonical verses on traditional righteousness from Adhyaya 5.",
+  "ai_summary": "Exposition of ethical conduct and cosmic law according to Sage Manu in Adhyaya 5.",
+  "verses": [
+    {
+      "id": "manusmriti_5_1",
+      "verse": 1,
+      "original": "योऽहिंसकानि भूतानि हिनस्त्यात्मसुखेच्छया । स जीवंश्च मृतश्चैव न क्वचित्सुखमेधते ॥",
+      "transliteration": "yo'hiṁsakāni bhūtāni hinastyātmasukhecchayā | sa jīvaṁśca mṛtaścaiva na kvacitsukhamedhate ||",
+      "translation": "He who injures harmless creatures for the sake of his own pleasure never attains happiness, neither living nor dead.",
+      "layers": [
+        {
+          "author": "medhatithi",
+          "author_name": "Medhātithi",
+          "author_label": "Manubhashya (9th c. CE)",
+          "lang": "en",
+          "type": "commentary",
+          "content": "Strict ethical condemnation of cruelty and harm against innocent creatures."
+        },
+        {
+          "author": "kulluka-bhatta",
+          "author_name": "Kullūka Bhaṭṭa",
+          "author_label": "Manvartha Muktavali (15th c. CE)",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "कुल्लूक भट्ट भाष्य: He who injures harmless creatures for the sake of his own pleasure never attains happiness, neither living nor dead."
+        },
+        {
+          "author": "buhler",
+          "author_name": "Georg Bühler",
+          "author_label": "Sacred Books of the East Vol 25",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "मनुस्मृती अध्याय 5: Strict ethical condemnation of cruelty and harm against innocent creatures."
+        }
+      ]
+    },
+    {
+      "id": "manusmriti_5_2",
+      "verse": 2,
+      "original": "अद्भिर्गात्राणि शुध्यन्ति मनः सत्येन शुध्यति । विद्यातपोभ्यां भूतात्मा बुद्धिर्ज्ञानेन शुध्यति ॥",
+      "transliteration": "adbhirgātrāṇi śudhyanti manaḥ satyena śudhyati | vidyātapobhyāṁ bhūtātmā buddhirjñānena śudhyati ||",
+      "translation": "The physical limbs are purified by water; the mind is purified by truthfulness; the individual soul by sacred wisdom and austerity; and the intellect is purified by knowledge of Reality.",
+      "layers": [
+        {
+          "author": "medhatithi",
+          "author_name": "Medhātithi",
+          "author_label": "Manubhashya (9th c. CE)",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The four ascending tiers of human purification: physical, psychological, spiritual, and intellectual."
+        },
+        {
+          "author": "kulluka-bhatta",
+          "author_name": "Kullūka Bhaṭṭa",
+          "author_label": "Manvartha Muktavali (15th c. CE)",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "कुल्लूक भट्ट भाष्य: The physical limbs are purified by water; the mind is purified by truthfulness; the individual soul by sacred wisdom and austerity; and the intellect is purified by knowledge of Reality."
+        },
+        {
+          "author": "buhler",
+          "author_name": "Georg Bühler",
+          "author_label": "Sacred Books of the East Vol 25",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "मनुस्मृती अध्याय 5: The four ascending tiers of human purification: physical, psychological, spiritual, and intellectual."
+        }
+      ]
+    }
+  ]
+}

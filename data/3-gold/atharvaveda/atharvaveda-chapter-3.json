@@ -1,0 +1,42 @@
+{
+  "text": "atharvaveda",
+  "chapter": 3,
+  "title": "Kanda 3: Hymns of Healing & Cosmic Harmony",
+  "summary": "Sacred prayers of Shaunaka Shakha from Kanda 3.",
+  "ai_summary": "Vedic hymns of health, protection, and universal peace from Kanda 3.",
+  "verses": [
+    {
+      "id": "atharvaveda_3_1",
+      "verse": 1,
+      "original": "सहृदयं सांमनस्यमविद्वेषं कृणोमि वः । अन्यो अन्यमभि हर्यत वत्सं जातमिवाघ्न्या ॥",
+      "transliteration": "sahṛdayaṁ sāṁmanasyamavidveṣaṁ kṛṇomi vaḥ | anyo anyamabhi haryata vatsaṁ jātamivāghnyā ||",
+      "translation": "I make you of one heart, of one mind, free from all enmity and hatred! Love one another tenderly, even as the cow loveth the newborn calf!",
+      "layers": [
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedartha Prakasha",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The supreme Vedic hymn of concord (Sammanasya Sukta): establishing unconditional love and harmony in family and community."
+        },
+        {
+          "author": "whitney",
+          "author_name": "William Dwight Whitney",
+          "author_label": "Harvard Oriental Series 1905",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "सायण भाष्य: I make you of one heart, of one mind, free from all enmity and hatred! Love one another tenderly, even as the cow loveth the newborn calf!"
+        },
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedic Tradition",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "अथर्ववेद काण्ड 3: The supreme Vedic hymn of concord (Sammanasya Sukta): establishing unconditional love and harmony in family and community."
+        }
+      ]
+    }
+  ]
+}

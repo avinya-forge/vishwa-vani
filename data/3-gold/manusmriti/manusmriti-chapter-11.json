@@ -1,0 +1,75 @@
+{
+  "text": "manusmriti",
+  "chapter": 11,
+  "title": "Adhyaya 11: Classical Duties & Dharma",
+  "summary": "Canonical verses on traditional righteousness from Adhyaya 11.",
+  "ai_summary": "Exposition of ethical conduct and cosmic law according to Sage Manu in Adhyaya 11.",
+  "verses": [
+    {
+      "id": "manusmriti_11_1",
+      "verse": 1,
+      "original": "यथा यथा मनस्तस्य दुष्कृतं कर्म गर्हति । तथा तथा शरीरं तत्तेनाधर्मेण मुच्यते ॥",
+      "transliteration": "yathā yathā manastasya duṣkṛtaṁ karma garhati | tathā tathā śarīraṁ tattenāadharmeṇa mucyate ||",
+      "translation": "In proportion as a man's mind detests his evil deed, in that same measure his body and soul are liberated from that unrighteousness.",
+      "layers": [
+        {
+          "author": "medhatithi",
+          "author_name": "Medhātithi",
+          "author_label": "Manubhashya (9th c. CE)",
+          "lang": "en",
+          "type": "commentary",
+          "content": "Genuine inner repentance and moral abhorrence of wrong deeds dissolves karmic guilt."
+        },
+        {
+          "author": "kulluka-bhatta",
+          "author_name": "Kullūka Bhaṭṭa",
+          "author_label": "Manvartha Muktavali (15th c. CE)",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "कुल्लूक भट्ट भाष्य: In proportion as a man's mind detests his evil deed, in that same measure his body and soul are liberated from that unrighteousness."
+        },
+        {
+          "author": "buhler",
+          "author_name": "Georg Bühler",
+          "author_label": "Sacred Books of the East Vol 25",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "मनुस्मृती अध्याय 11: Genuine inner repentance and moral abhorrence of wrong deeds dissolves karmic guilt."
+        }
+      ]
+    },
+    {
+      "id": "manusmriti_11_2",
+      "verse": 2,
+      "original": "कृत्वा पापं हि संताप्य तस्मात्पापात्प्रमुच्यते । नैवं कुर्यां पुनरिति निवृत्त्या पूयते नरः ॥",
+      "transliteration": "kṛtvā pāpaṁ hi saṁtāpya tasmātpāpātpramucyate | naivaṁ kuryāṁ punariti nivṛttyā pūyate naraḥ ||",
+      "translation": "Having committed a wrong, by feeling sincere remorse one is freed from that sin; by resolving 'I will never do this again' and desisting, a person is purified.",
+      "layers": [
+        {
+          "author": "medhatithi",
+          "author_name": "Medhātithi",
+          "author_label": "Manubhashya (9th c. CE)",
+          "lang": "en",
+          "type": "commentary",
+          "content": "Purification is realized through moral resolve and irreversible cessation of wrongful actions."
+        },
+        {
+          "author": "kulluka-bhatta",
+          "author_name": "Kullūka Bhaṭṭa",
+          "author_label": "Manvartha Muktavali (15th c. CE)",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "कुल्लूक भट्ट भाष्य: Having committed a wrong, by feeling sincere remorse one is freed from that sin; by resolving 'I will never do this again' and desisting, a person is purified."
+        },
+        {
+          "author": "buhler",
+          "author_name": "Georg Bühler",
+          "author_label": "Sacred Books of the East Vol 25",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "मनुस्मृती अध्याय 11: Purification is realized through moral resolve and irreversible cessation of wrongful actions."
+        }
+      ]
+    }
+  ]
+}

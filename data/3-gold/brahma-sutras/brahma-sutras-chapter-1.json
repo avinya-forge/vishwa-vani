@@ -1,0 +1,150 @@
+{
+  "text": "brahma-sutras",
+  "chapter": 1,
+  "title": "Adhyaya 1: Samanvaya (Harmonization of Scripture)",
+  "summary": "Demonstrates that all Upanishadic passages harmoniously reveal Brahman as the supreme cause and reality.",
+  "ai_summary": "Badarayana establishes that Brahman is the sole material and efficient cause of the universe through rigorous textual synthesis.",
+  "verses": [
+    {
+      "id": "brahma-sutras_1_1",
+      "verse": 1,
+      "original": "अथातो ब्रह्मजिज्ञासा ॥",
+      "transliteration": "athāto brahmajijñāsā ||",
+      "translation": "Now, therefore, the inquiry into Brahman begins.",
+      "layers": [
+        {
+          "author": "adi-shankara",
+          "author_name": "Ādi Śaṅkarācārya",
+          "author_label": "Sariraka Bhashya",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The word 'atha' (now) implies the antecedent qualification: the fourfold spiritual discipline (Sadhana Chatushtaya). 'Atah' (therefore) indicates that ephemeral ritual fruits do not satisfy the soul; eternal Brahman alone must be investigated."
+        },
+        {
+          "author": "ramanujacharya",
+          "author_name": "Rāmānujācārya",
+          "author_label": "Sri Bhashya",
+          "lang": "en",
+          "type": "commentary",
+          "content": "Inquiry into Brahman directly follows the understanding of ritual karma (Dharmajijnasa), revealing the Supreme Person as the inner ruler of all."
+        },
+        {
+          "author": "adi-shankara",
+          "author_name": "Ādi Śaṅkarācārya",
+          "author_label": "Advaita Tradition",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "अब साधन-चतुष्टय की प्राप्ति के पश्चात् नित्य-मुक्त परब्रह्म की जिज्ञासा प्रारंभ की जाती है।"
+        }
+      ]
+    },
+    {
+      "id": "brahma-sutras_1_2",
+      "verse": 2,
+      "original": "जन्माद्यस्य यतः ॥",
+      "transliteration": "janmādyasya yataḥ ||",
+      "translation": "From which proceed the origin, sustenance, and dissolution of this universe.",
+      "layers": [
+        {
+          "author": "adi-shankara",
+          "author_name": "Ādi Śaṅkarācārya",
+          "author_label": "Sariraka Bhashya",
+          "lang": "en",
+          "type": "commentary",
+          "content": "Brahman is defined as the ground of cosmic projection, preservation, and absorption (Tatastha Lakshana), corresponding to Taittiriya Upanishad 3.1."
+        },
+        {
+          "author": "madhvacharya",
+          "author_name": "Madhvācārya",
+          "author_label": "Anubhashya",
+          "lang": "en",
+          "type": "commentary",
+          "content": "Lord Narayana alone is the sovereign eightfold cause of creation, preservation, destruction, control, knowledge, ignorance, bondage, and release."
+        },
+        {
+          "author": "adi-shankara",
+          "author_name": "Ādi Śaṅkarācārya",
+          "author_label": "Advaita Tradition",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "जिससे इस समस्त जगत की उत्पत्ति, स्थिति और प्रलय होता है, वही परब्रह्म है।"
+        }
+      ]
+    },
+    {
+      "id": "brahma-sutras_1_3",
+      "verse": 3,
+      "original": "शास्त्रयोनित्वात् ॥",
+      "transliteration": "śāstrayonitvāt ||",
+      "translation": "Because the scripture (Veda) is the sole valid means of knowing Brahman, and because Brahman is the author of scripture.",
+      "layers": [
+        {
+          "author": "adi-shankara",
+          "author_name": "Ādi Śaṅkarācārya",
+          "author_label": "Sariraka Bhashya",
+          "lang": "en",
+          "type": "commentary",
+          "content": "Sensory perception and dry inference cannot grasp transcendental Brahman; the sacred word (Shabda Pramana) alone reveals the Infinite."
+        },
+        {
+          "author": "ramanujacharya",
+          "author_name": "Rāmānujācārya",
+          "author_label": "Sri Bhashya",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "शास्त्र ही परब्रह्म का प्रामाणिक ज्ञान कराने वाला एकमात्र साधन है।"
+        }
+      ]
+    },
+    {
+      "id": "brahma-sutras_1_4",
+      "verse": 4,
+      "original": "तत्तु समन्वयात् ॥",
+      "transliteration": "tattu samanvayāt ||",
+      "translation": "But that Brahman is known through the complete harmony of all Vedantic passages.",
+      "layers": [
+        {
+          "author": "adi-shankara",
+          "author_name": "Ādi Śaṅkarācārya",
+          "author_label": "Sariraka Bhashya",
+          "lang": "en",
+          "type": "commentary",
+          "content": "Every Upanishadic declaration, whether asserting existence, consciousness, or bliss, converges unswervingly on the non-dual Self."
+        },
+        {
+          "author": "adi-shankara",
+          "author_name": "Ādi Śaṅkarācārya",
+          "author_label": "Advaita Tradition",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "समस्त वेदान्त वाक्यों का एकमत समन्वय केवल परब्रह्म में ही सिद्ध होता है।"
+        }
+      ]
+    },
+    {
+      "id": "brahma-sutras_1_5",
+      "verse": 5,
+      "original": "ईक्षतेर्नाशब्दम् ॥",
+      "transliteration": "īkṣaternāśabdam ||",
+      "translation": "Because seeing (thinking/willing) is attributed to the Cause in scripture, the insentient Pradhana of Sankhya is not that Cause.",
+      "layers": [
+        {
+          "author": "adi-shankara",
+          "author_name": "Ādi Śaṅkarācārya",
+          "author_label": "Sariraka Bhashya",
+          "lang": "en",
+          "type": "commentary",
+          "content": "Scripture declares 'Tadaikshata' (It willed/saw). Seeing is an act of pure consciousness, refuting the unconscious material cause of the Sankhya school."
+        },
+        {
+          "author": "adi-shankara",
+          "author_name": "Ādi Śaṅkarācārya",
+          "author_label": "Advaita Tradition",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "सृष्टि से पूर्व ईक्षण (संकल्प) चेतन का ही धर्म है, अतः जड़ प्रकृति जगत का मूल कारण नहीं हो सकती।"
+        }
+      ]
+    }
+  ]
+}

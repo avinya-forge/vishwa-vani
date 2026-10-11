@@ -1,0 +1,42 @@
+{
+  "text": "atharvaveda",
+  "chapter": 15,
+  "title": "Kanda 15: Hymns of Healing & Cosmic Harmony",
+  "summary": "Sacred prayers of Shaunaka Shakha from Kanda 15.",
+  "ai_summary": "Vedic hymns of health, protection, and universal peace from Kanda 15.",
+  "verses": [
+    {
+      "id": "atharvaveda_15_1",
+      "verse": 1,
+      "original": "व्रात्य आसीदीयमान एव स प्रजापतिं समैरयत् ।",
+      "transliteration": "vrātya āsīdīyamāna eva sa prajāpatiṁ samairayat |",
+      "translation": "There was the Vratya, the spiritual wanderer; he stirred Prajapati to cosmic manifestation.",
+      "layers": [
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedartha Prakasha",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The Vratya Sukta: elevating the ascetic wanderer who transcends rigid dogmas into a sovereign cosmic guide."
+        },
+        {
+          "author": "whitney",
+          "author_name": "William Dwight Whitney",
+          "author_label": "Harvard Oriental Series 1905",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "सायण भाष्य: There was the Vratya, the spiritual wanderer; he stirred Prajapati to cosmic manifestation."
+        },
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedic Tradition",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "अथर्ववेद काण्ड 15: The Vratya Sukta: elevating the ascetic wanderer who transcends rigid dogmas into a sovereign cosmic guide."
+        }
+      ]
+    }
+  ]
+}

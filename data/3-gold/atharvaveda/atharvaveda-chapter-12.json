@@ -1,0 +1,42 @@
+{
+  "text": "atharvaveda",
+  "chapter": 12,
+  "title": "Kanda 12: Hymns of Healing & Cosmic Harmony",
+  "summary": "Sacred prayers of Shaunaka Shakha from Kanda 12.",
+  "ai_summary": "Vedic hymns of health, protection, and universal peace from Kanda 12.",
+  "verses": [
+    {
+      "id": "atharvaveda_12_1",
+      "verse": 1,
+      "original": "माता भूमिः पुत्रो अहं पृथिव्याः । पर्जन्यः पिता स उ नः पिपर्तु ॥",
+      "transliteration": "mātā bhūmiḥ putro ahaṁ pṛthivyāḥ | parjanyaḥ pitā sa u naḥ pipartu ||",
+      "translation": "Earth is my Mother, I am the child of Earth! The rain-cloud is my father, may he nourish us with bounty!",
+      "layers": [
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedartha Prakasha",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The immortal declaration of the Bhumi Sukta (Hymn to Earth): sacred kinship between humanity and the living planet."
+        },
+        {
+          "author": "whitney",
+          "author_name": "William Dwight Whitney",
+          "author_label": "Harvard Oriental Series 1905",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "सायण भाष्य: Earth is my Mother, I am the child of Earth! The rain-cloud is my father, may he nourish us with bounty!"
+        },
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedic Tradition",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "अथर्ववेद काण्ड 12: The immortal declaration of the Bhumi Sukta (Hymn to Earth): sacred kinship between humanity and the living planet."
+        }
+      ]
+    }
+  ]
+}

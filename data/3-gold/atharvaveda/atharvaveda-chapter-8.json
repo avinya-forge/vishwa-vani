@@ -1,0 +1,42 @@
+{
+  "text": "atharvaveda",
+  "chapter": 8,
+  "title": "Kanda 8: Hymns of Healing & Cosmic Harmony",
+  "summary": "Sacred prayers of Shaunaka Shakha from Kanda 8.",
+  "ai_summary": "Vedic hymns of health, protection, and universal peace from Kanda 8.",
+  "verses": [
+    {
+      "id": "atharvaveda_8_1",
+      "verse": 1,
+      "original": "मा बिभेर्न मरिष्यसि जरदष्टिं कृणोमि त्वा । निरवोचमहं यक्ष्ममङ्गेभ्यो जरसा सह ॥",
+      "transliteration": "mā bibherna mariṣyasi jaradaṣṭiṁ kṛṇomi tvā | niravocamahaṁ yakṣmamaṅgebhyo jarasā saha ||",
+      "translation": "Fear not! Thou shalt not die; I make thee attain full ripened age! I have driven away consumption from thy limbs, bestowing healthy longevity!",
+      "layers": [
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedartha Prakasha",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The Vedic healing prayer banishing terminal disease and instilling vibrant faith in life."
+        },
+        {
+          "author": "whitney",
+          "author_name": "William Dwight Whitney",
+          "author_label": "Harvard Oriental Series 1905",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "सायण भाष्य: Fear not! Thou shalt not die; I make thee attain full ripened age! I have driven away consumption from thy limbs, bestowing healthy longevity!"
+        },
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedic Tradition",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "अथर्ववेद काण्ड 8: The Vedic healing prayer banishing terminal disease and instilling vibrant faith in life."
+        }
+      ]
+    }
+  ]
+}

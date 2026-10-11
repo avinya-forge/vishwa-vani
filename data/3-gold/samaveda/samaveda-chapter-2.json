@@ -1,0 +1,259 @@
+{
+  "text": "samaveda",
+  "chapter": 2,
+  "title": "Uttararchika: Liturgical Chants & Cosmic Harmony",
+  "summary": "The musical fulfillment of the Vedic sacrifice, leading the soul into transcendence.",
+  "ai_summary": "The second Archana structures sacrificial melodies into triads and triplets chanted by the Udgatars.",
+  "verses": [
+    {
+      "id": "samaveda_2_1",
+      "verse": 1,
+      "original": "पुनानः सोम धारयापो वसानो अर्षसि । आ रत्नधा योनिमृतस्य सीदसि ॥",
+      "transliteration": "punānaḥ soma dhārayāpo vasāno arṣasi | ā ratnadhā yonimṛtasya sīdasi ||",
+      "translation": "Being purified in a steady stream, robed in the waters, Thou flowest forth; bestower of gems, Thou sittest on the foundation of cosmic Truth (Rita).",
+      "layers": [
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedartha Prakasha",
+          "lang": "en",
+          "type": "commentary",
+          "content": "Soma robed in water symbolizes spirit entering manifestation to establish cosmic harmony (Rita)."
+        },
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedic Tradition",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "पवित्र धारा में प्रवाहित होते हुए सोमदेव सत्य (ऋत) के दिव्य स्थान पर विराजमान होते हैं।"
+        }
+      ]
+    },
+    {
+      "id": "samaveda_2_2",
+      "verse": 2,
+      "original": "यज्ञो हि देवहितः कल्पतान्नः सोमस्य धारा पवतामदाभ्या ॥",
+      "transliteration": "yajño hi devahitaḥ kalpatānnaḥ somasya dhārā pavatāmadābhyā ||",
+      "translation": "May the sacrifice, benevolent to the gods, prosper our welfare; may the inviolable stream of Soma flow forth in purity.",
+      "layers": [
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedartha Prakasha",
+          "lang": "en",
+          "type": "commentary",
+          "content": "Sacrifice (Yajna) aligned with divine will brings prosperity to all beings."
+        },
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedic Tradition",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "देवताओं के अनुकूल यह यज्ञ हमारा कल्याण सिद्ध करे।"
+        }
+      ]
+    },
+    {
+      "id": "samaveda_2_3",
+      "verse": 3,
+      "original": "मित्रं वयं हवामहे वरुणं सोमपीतये । ता नो धत्तं सुचेतसं ॥",
+      "transliteration": "mitraṁ vayaṁ havāmahe varuṇaṁ somapītaye | tā no dhattaṁ sucetasam ||",
+      "translation": "We invoke Mitra and Varuna to drink the sacred Soma; may they endow us with an awakened and pure mind.",
+      "layers": [
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedartha Prakasha",
+          "lang": "en",
+          "type": "commentary",
+          "content": "Mitra (universal love) and Varuna (cosmic law) together bestow Sucetas (pure consciousness)."
+        },
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedic Tradition",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "हम मित्र और वरुण का आह्वान करते हैं; वे हमें निर्मल बुद्धि प्रदान करें।"
+        }
+      ]
+    },
+    {
+      "id": "samaveda_2_4",
+      "verse": 4,
+      "original": "वायवा याहि दर्शतेमे सोमा अरंकृताः । तेषां पाहि श्रुधी हवं ॥",
+      "transliteration": "vāyavā yāhi darśateme somā araṅkṛtāḥ | teṣāṁ pāhi śrudhī havaṁ ||",
+      "translation": "Come, O glorious Vayu! These Soma drops are prepared for Thee; partake of them and hear our prayer.",
+      "layers": [
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedartha Prakasha",
+          "lang": "en",
+          "type": "commentary",
+          "content": "Vayu is the vital breath (Prana), first recipient of divine vitality in the sacrifice."
+        },
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedic Tradition",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "हे दर्शनप्रिय वायुदेव, हमारे समीप आएं और हमारी प्रार्थना सुनें।"
+        }
+      ]
+    },
+    {
+      "id": "samaveda_2_5",
+      "verse": 5,
+      "original": "बृहस्पते अति यदर्यो अर्हाद् द्युमद्विभाति क्रतुमज्जनेषु । यद्दीदयच्छवस ऋतप्रजात तदस्मासु द्रविणं धेहि चित्रम् ॥",
+      "transliteration": "bṛhaspate ati yadaryo arhād dyumadvibhāti kratumajjaneṣu | yaddīdayacchavasa ṛtaprajāta tadasmāsu draviṇaṁ dhehi citram ||",
+      "translation": "O Brihaspati, that splendid treasure which shineth bright among men, rich in spiritual wisdom, born of divine Truth — bestow that marvelous treasure upon us!",
+      "layers": [
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedartha Prakasha",
+          "lang": "en",
+          "type": "commentary",
+          "content": "Brihaspati, master of prayer and intellect, bestows the true treasure of enlightened wisdom (Rita-prajata)."
+        },
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedic Tradition",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "हे बृहस्पति, सत्य से उत्पन्न वह तेजस्वी ज्ञान-धन हमें प्रदान करें।"
+        }
+      ]
+    },
+    {
+      "id": "samaveda_2_6",
+      "verse": 6,
+      "original": "प्र देवाय धर्पणे मन्द्रेण वचसा गिरः । भरध्वं हव्यं मानुषे ॥",
+      "transliteration": "pra devāya dharṣaṇe mandreṇa vacasā giraḥ | bharadhvaṁ havyaṁ mānuṣe ||",
+      "translation": "With joyous words and hymns, bring forth your songs and offerings to the courageous divine guardian who dwells among mortals.",
+      "layers": [
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedartha Prakasha",
+          "lang": "en",
+          "type": "commentary",
+          "content": "Chanting in deep resonant melody (Mandra Vacha) invokes the divine indweller."
+        },
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedic Tradition",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "गंभीर वाणी से ईश्वर की महिमा गाते हुए अपने भाव समर्पित करो।"
+        }
+      ]
+    },
+    {
+      "id": "samaveda_2_7",
+      "verse": 7,
+      "original": "अभि त्यं देवं सवितारमोण्योः कविक्रतुमर्चामि सत्यसंवम् ।",
+      "transliteration": "abhi tyaṁ devaṁ savitāramoṇyoḥ kavikratumarcāmi satyasaṁvam |",
+      "translation": "I worship that radiant Savita, possessor of poetic wisdom, true in impulse, who awakens both heaven and earth with His light.",
+      "layers": [
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedartha Prakasha",
+          "lang": "en",
+          "type": "commentary",
+          "content": "Savita is the divine inspirer of spiritual vision (Kavikratu), the inner sun of awareness."
+        },
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedic Tradition",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "हम सत्यप्रेरक और क्रांतदर्शी सविता देव की वंदना करते हैं।"
+        }
+      ]
+    },
+    {
+      "id": "samaveda_2_8",
+      "verse": 8,
+      "original": "द्यावापृथिवी विश्वशम्भुवौ स्तुषे यज्ञेषु धिषणा मही ।",
+      "transliteration": "dyāvāpṛthivī viśvaśambhuvau stuṣe yajñeṣu dhiṣaṇā mahī |",
+      "translation": "Heaven and Earth, sources of all universal blessings, I praise in the sacrifices, along with the great goddess of contemplative wisdom.",
+      "layers": [
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedartha Prakasha",
+          "lang": "en",
+          "type": "commentary",
+          "content": "Heaven and Earth as cosmic parents who sustain and protect all life."
+        },
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedic Tradition",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "द्युलोक और पृथ्वी समस्त सुखों के स्रोत हैं, जिनकी स्तुति हम करते हैं।"
+        }
+      ]
+    },
+    {
+      "id": "samaveda_2_9",
+      "verse": 9,
+      "original": "विष्णोर्नु कं वीर्याणि प्र वोचं यः पार्थिवानि विममे रजांसि । यो अस्कभायदुत्तरं सधस्थं विचक्रमाणास्त्रेधोरुगायः ॥",
+      "transliteration": "viṣṇornu kaṁ vīryāṇi pra vocaṁ yaḥ pārthivāni vimame rajāṁsi | yo askabhāyaduttaraṁ sadhasthaṁ vicakramāṇastredhorugāyaḥ ||",
+      "translation": "I will now proclaim the heroic deeds of Vishnu, who measured out the earthly regions, who established the high celestial abode, striding thrice, the widely-extolled!",
+      "layers": [
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedartha Prakasha",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The famous Vedic celebration of Vishnu measuring the physical, subtle, and causal realms in three strides."
+        },
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedic Tradition",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "मैं श्रीविष्णु के पराक्रम का गान करता हूँ जिन्होंने तीनों लोकों को तीन पगों में नाप लिया।"
+        }
+      ]
+    },
+    {
+      "id": "samaveda_2_10",
+      "verse": 10,
+      "original": "तद्विष्णोः परमं पदं सदा पश्यन्ति सूरयः । दिवीव चक्षुराततम् ॥",
+      "transliteration": "tadviṣṇoḥ paramaṁ padaṁ sadā paśyanti sūrayaḥ | divīva cakṣurātatam ||",
+      "translation": "That supreme state of Vishnu the enlightened seers behold perpetually, like an eye outspread across the heavens.",
+      "layers": [
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedartha Prakasha",
+          "lang": "en",
+          "type": "commentary",
+          "content": "Vishnu's supreme abode (Parama Pada) is unclouded non-dual consciousness, ever perceived by awakened seers."
+        },
+        {
+          "author": "adi-shankara",
+          "author_name": "Ādi Śaṅkarācārya",
+          "author_label": "Katha Upanishad Bhashya",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "विष्णु का वह परम पद ज्ञानी जनों द्वारा आकाश में फैले नेत्र के समान सदा प्रत्यक्ष देखा जाता है।"
+        }
+      ]
+    }
+  ]
+}

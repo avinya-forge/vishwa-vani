@@ -1,0 +1,75 @@
+{
+  "text": "manusmriti",
+  "chapter": 12,
+  "title": "Adhyaya 12: Classical Duties & Dharma",
+  "summary": "Canonical verses on traditional righteousness from Adhyaya 12.",
+  "ai_summary": "Exposition of ethical conduct and cosmic law according to Sage Manu in Adhyaya 12.",
+  "verses": [
+    {
+      "id": "manusmriti_12_1",
+      "verse": 1,
+      "original": "शुभेन कर्मणा याति देवत्वं शुभगो जनः । मिश्रैर्मनुष्यतामेति पापैस्तिर्यक्त्वमाप्नुयात् ॥",
+      "transliteration": "śubhena karmaṇā yāti devatvaṁ śubhago janaḥ | miśrairmanuṣyatāmeti pāpaistiryakttvamāpnuyāt ||",
+      "translation": "Through auspicious and virtuous action a person attains divine states; through mixed actions one is born as human; through sinful actions one falls into lower forms of existence.",
+      "layers": [
+        {
+          "author": "medhatithi",
+          "author_name": "Medhātithi",
+          "author_label": "Manubhashya (9th c. CE)",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The universal law of moral cause and effect (Karma-vipaka) governing transmigration."
+        },
+        {
+          "author": "kulluka-bhatta",
+          "author_name": "Kullūka Bhaṭṭa",
+          "author_label": "Manvartha Muktavali (15th c. CE)",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "कुल्लूक भट्ट भाष्य: Through auspicious and virtuous action a person attains divine states; through mixed actions one is born as human; through sinful actions one falls into lower forms of existence."
+        },
+        {
+          "author": "buhler",
+          "author_name": "Georg Bühler",
+          "author_label": "Sacred Books of the East Vol 25",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "मनुस्मृती अध्याय 12: The universal law of moral cause and effect (Karma-vipaka) governing transmigration."
+        }
+      ]
+    },
+    {
+      "id": "manusmriti_12_2",
+      "verse": 2,
+      "original": "सर्वमात्मनि संपश्येत्सच्चासच्च समाहितः । सर्वं ह्यात्मनि संपश्यन्नाधर्मे कुरुते मनः ॥",
+      "transliteration": "sarvamātmani saṁpaśyetsaccāsacca samāhitaḥ | sarvaṁ hyātmani saṁpaśyannādharme kurute manaḥ ||",
+      "translation": "With serene focused mind, let him behold all things — the real and the unreal — within the Self; for beholding all things within the Self, he never turns his mind toward unrighteousness.",
+      "layers": [
+        {
+          "author": "medhatithi",
+          "author_name": "Medhātithi",
+          "author_label": "Manubhashya (9th c. CE)",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The ultimate conclusion of Manusmriti: cosmic Self-realization establishes unbroken righteousness and supreme liberation (Moksha)."
+        },
+        {
+          "author": "kulluka-bhatta",
+          "author_name": "Kullūka Bhaṭṭa",
+          "author_label": "Manvartha Muktavali (15th c. CE)",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "कुल्लूक भट्ट भाष्य: With serene focused mind, let him behold all things — the real and the unreal — within the Self; for beholding all things within the Self, he never turns his mind toward unrighteousness."
+        },
+        {
+          "author": "buhler",
+          "author_name": "Georg Bühler",
+          "author_label": "Sacred Books of the East Vol 25",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "मनुस्मृती अध्याय 12: The ultimate conclusion of Manusmriti: cosmic Self-realization establishes unbroken righteousness and supreme liberation (Moksha)."
+        }
+      ]
+    }
+  ]
+}

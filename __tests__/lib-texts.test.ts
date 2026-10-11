@@ -85,4 +85,52 @@ describe('VEDIC_LIBRARY', () => {
       expect(mbh?.contextualInfo?.geographicalContext).toMatch(/Kurukshetra/i);
     });
   });
+
+  describe('100% Completed Books Pool (Gold Tier)', () => {
+    it('contains all 12 graduated canonical scriptures', () => {
+      const expectedSlugs = [
+        'bhagavad-gita',
+        'isha-upanishad',
+        'kena-upanishad',
+        'yoga-sutras',
+        'vishnu-purana',
+        'garuda-purana',
+        'samskaras',
+        'stotras',
+        'brahma-sutras',
+        'samaveda',
+        'manusmriti',
+        'atharvaveda',
+      ];
+      expectedSlugs.forEach(slug => {
+        const text = VEDIC_LIBRARY.find(t => t.slug === slug);
+        expect(text).toBeDefined();
+        expect(text?.available).toBe(true);
+        expect(text?.storage).toBe('json');
+      });
+    });
+
+    it('verifies Manusmriti has all 12 chapters defined with Devanagari names', () => {
+      const manu = VEDIC_LIBRARY.find(t => t.slug === 'manusmriti');
+      expect(manu).toBeDefined();
+      expect(manu?.totalChapters).toBe(12);
+      expect(Object.keys(manu?.chapterNames || {})).toHaveLength(12);
+      expect(Object.keys(manu?.chapterNamesHi || {})).toHaveLength(12);
+      expect(Object.keys(manu?.chapterNamesMr || {})).toHaveLength(12);
+    });
+
+    it('verifies Atharvaveda has all 20 Kandas defined', () => {
+      const av = VEDIC_LIBRARY.find(t => t.slug === 'atharvaveda');
+      expect(av).toBeDefined();
+      expect(av?.totalChapters).toBe(20);
+      expect(Object.keys(av?.chapterNames || {})).toHaveLength(20);
+    });
+
+    it('verifies Samaveda has both Archanas defined', () => {
+      const sv = VEDIC_LIBRARY.find(t => t.slug === 'samaveda');
+      expect(sv).toBeDefined();
+      expect(sv?.totalChapters).toBe(2);
+      expect(Object.keys(sv?.chapterNames || {})).toHaveLength(2);
+    });
+  });
 });

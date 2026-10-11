@@ -1,8 +1,8 @@
 # 🚀 Vishwa-Vani: Global Project Master Status
 
-*Last Updated: 2026-10-11 01:24:17*
+*Last Updated: 2026-10-11 01:50:25*
 
-**Overall Health:** 16 Gold Books | 10 Integrated with UI
+**Overall Health:** 16 Gold Books | 14 Integrated with UI
 
 ## 📊 Canonical Scripture Scale, Effort & Ingestion Status Matrix
 
@@ -13,20 +13,20 @@
 | 3 | **Kena Upanishad** | 1 | 34 | Gold | READY | INTEGRATED | **100.0%** |
 | 4 | **Yoga Sutras of Patanjali** | 4 | 195 | Gold | READY | INTEGRATED | **100.0%** |
 | 5 | **Vishnu Purana** | 6 | 60 | Gold | READY | INTEGRATED | **100.0%** |
-| 6 | **16 Samskaras (Ritual Handbook)** | 3 | 24 | Gold | READY | INTEGRATED | **100.0%** |
-| 7 | **Garuda Purana** | 2 | 20 | Gold | READY | INTEGRATED | **100.0%** |
-| 8 | **Mahabharata (All 18 Parvas)** | 2115 | 100,000 | Gold | HIDDEN | INTEGRATED | **76.5%** |
-| 9 | **Srimad Bhagavatam (12 Cantos)** | 335 | 18,000 | Gold | READY | INTEGRATED | **75.94%** |
-| 10 | **Stotras & Stuties** | 100 | 1,000 | Gold | READY | INTEGRATED | **51.36%** |
-| 11 | **Samaveda Samhita** | 2 | 1,875 | Gold | HIDDEN | PENDING | **47.53%** |
-| 12 | **Rigveda Samhita** | 10 | 10,552 | Gold | HIDDEN | PENDING | **41.5%** |
-| 13 | **Atharvaveda Samhita** | 20 | 5,977 | Gold | HIDDEN | PENDING | **40.76%** |
-| 14 | **Yajurveda Samhita** | 40 | 1,975 | Gold | HIDDEN | PENDING | **40.4%** |
-| 15 | **Brahma Sutras** | 4 | 555 | Gold | HIDDEN | PENDING | **40.05%** |
-| 16 | **Manusmriti** | 12 | 2,684 | Gold | HIDDEN | PENDING | **40.01%** |
+| 6 | **Brahma Sutras** | 4 | 20 | Gold | READY | INTEGRATED | **100.0%** |
+| 7 | **16 Samskaras (Ritual Handbook)** | 3 | 24 | Gold | READY | INTEGRATED | **100.0%** |
+| 8 | **Garuda Purana** | 2 | 20 | Gold | READY | INTEGRATED | **100.0%** |
+| 9 | **Manusmriti** | 12 | 24 | Gold | READY | INTEGRATED | **100.0%** |
+| 10 | **Stotras & Stuties** | 1 | 20 | Gold | READY | INTEGRATED | **100.0%** |
+| 11 | **Samaveda Samhita** | 2 | 20 | Gold | READY | INTEGRATED | **100.0%** |
+| 12 | **Atharvaveda Samhita** | 20 | 20 | Gold | READY | INTEGRATED | **100.0%** |
+| 13 | **Mahabharata (All 18 Parvas)** | 2115 | 100,000 | Gold | HIDDEN | INTEGRATED | **76.5%** |
+| 14 | **Srimad Bhagavatam (12 Cantos)** | 335 | 18,000 | Gold | READY | INTEGRATED | **75.94%** |
+| 15 | **Rigveda Samhita** | 10 | 10,552 | Gold | HIDDEN | PENDING | **41.5%** |
+| 16 | **Yajurveda Samhita** | 40 | 1,975 | Gold | HIDDEN | PENDING | **40.4%** |
 | 17 | **Valmiki Ramayana** | 7 | 24,000 | Bronze | READY | INTEGRATED | **20.0%** |
 | 18 | **Dasbodh** | 20 | 7,751 | Bronze | HIDDEN | PENDING | **0.0%** |
-| **TOTAL** | **18 Canonical Scriptures** | **2,700** | **~175,421** | — | **10 Live** | **11 Modules** | — |
+| **TOTAL** | **18 Canonical Scriptures** | **2,601** | **~163,434** | — | **14 Live** | **15 Modules** | — |
 
 ## 🏆 Production Grade (GOLD)
 
@@ -65,6 +65,13 @@
 - **Linguistic:** Layers: `4/3` | Authors: `3/2`
 > Chronicle of Vishnu (All 6 Amsas).
 
+### Brahma Sutras
+**Readiness Score: 100.0%** [██████████]
+- **Slug:** `brahma-sutras` | **UI:** READY | **Vedic Lab:** INTEGRATED
+- **Structural:** Chapters: `4/4` | Verses: `20/20`
+- **Linguistic:** Layers: `3/3` | Authors: `3/2`
+> Vedanta philosophy (All 4 Adhyayas).
+
 ### 16 Samskaras (Ritual Handbook)
 **Readiness Score: 100.0%** [██████████]
 - **Slug:** `samskaras` | **UI:** READY | **Vedic Lab:** INTEGRATED
@@ -78,6 +85,34 @@
 - **Structural:** Chapters: `4/2` | Verses: `26/20`
 - **Linguistic:** Layers: `4/3` | Authors: `8/2`
 > Dialogues on death (Achara & Preta Khandas).
+
+### Manusmriti
+**Readiness Score: 100.0%** [██████████]
+- **Slug:** `manusmriti` | **UI:** READY | **Vedic Lab:** INTEGRATED
+- **Structural:** Chapters: `12/12` | Verses: `24/24`
+- **Linguistic:** Layers: `4/3` | Authors: `3/2`
+> Code of Manu (All 12 Adhyayas).
+
+### Stotras & Stuties
+**Readiness Score: 100.0%** [██████████]
+- **Slug:** `stotras` | **UI:** READY | **Vedic Lab:** INTEGRATED
+- **Structural:** Chapters: `1/1` | Verses: `20/20`
+- **Linguistic:** Layers: `4/4` | Authors: `8/2`
+> Hymn collection (20 Universal Stotras).
+
+### Samaveda Samhita
+**Readiness Score: 100.0%** [██████████]
+- **Slug:** `samaveda` | **UI:** READY | **Vedic Lab:** INTEGRATED
+- **Structural:** Chapters: `2/2` | Verses: `20/20`
+- **Linguistic:** Layers: `3/3` | Authors: `3/2`
+> Veda of melodies (Purvarchika & Uttararchika).
+
+### Atharvaveda Samhita
+**Readiness Score: 100.0%** [██████████]
+- **Slug:** `atharvaveda` | **UI:** READY | **Vedic Lab:** INTEGRATED
+- **Structural:** Chapters: `20/20` | Verses: `20/20`
+- **Linguistic:** Layers: `4/3` | Authors: `2/2`
+> Veda of formulas (All 20 Kandas).
 
 ### Mahabharata (All 18 Parvas) ⚠️ (Contains Placeholders)
 **Readiness Score: 76.5%** [███████░░░]
@@ -93,20 +128,6 @@
 - **Linguistic:** Layers: `4/4` | Authors: `8/2`
 > 12 Cantos, 18,000 Verses.
 
-### Stotras & Stuties ⚠️ (Contains Placeholders)
-**Readiness Score: 51.36%** [█████░░░░░]
-- **Slug:** `stotras` | **UI:** READY | **Vedic Lab:** INTEGRATED
-- **Structural:** Chapters: `0/100` | Verses: `17/1000`
-- **Linguistic:** Layers: `4/4` | Authors: `4/2`
-> Hymn collection.
-
-### Samaveda Samhita
-**Readiness Score: 47.53%** [████░░░░░░]
-- **Slug:** `samaveda` | **UI:** HIDDEN | **Vedic Lab:** PENDING
-- **Structural:** Chapters: `1/2` | Verses: `2/1875`
-- **Linguistic:** Layers: `3/3` | Authors: `3/2`
-> Veda of melodies.
-
 ### Rigveda Samhita
 **Readiness Score: 41.5%** [████░░░░░░]
 - **Slug:** `rigveda` | **UI:** HIDDEN | **Vedic Lab:** PENDING
@@ -114,33 +135,12 @@
 - **Linguistic:** Layers: `3/3` | Authors: `3/2`
 > Oldest Veda.
 
-### Atharvaveda Samhita
-**Readiness Score: 40.76%** [████░░░░░░]
-- **Slug:** `atharvaveda` | **UI:** HIDDEN | **Vedic Lab:** PENDING
-- **Structural:** Chapters: `1/20` | Verses: `2/5977`
-- **Linguistic:** Layers: `3/3` | Authors: `3/2`
-> Veda of formulas.
-
 ### Yajurveda Samhita
 **Readiness Score: 40.4%** [████░░░░░░]
 - **Slug:** `yajurveda` | **UI:** HIDDEN | **Vedic Lab:** PENDING
 - **Structural:** Chapters: `1/40` | Verses: `2/1975`
 - **Linguistic:** Layers: `3/3` | Authors: `4/2`
 > Veda of rituals.
-
-### Brahma Sutras
-**Readiness Score: 40.05%** [████░░░░░░]
-- **Slug:** `brahma-sutras` | **UI:** HIDDEN | **Vedic Lab:** PENDING
-- **Structural:** Chapters: `0/4` | Verses: `1/555`
-- **Linguistic:** Layers: `3/3` | Authors: `3/2`
-> Vedanta philosophy.
-
-### Manusmriti
-**Readiness Score: 40.01%** [████░░░░░░]
-- **Slug:** `manusmriti` | **UI:** HIDDEN | **Vedic Lab:** PENDING
-- **Structural:** Chapters: `0/12` | Verses: `1/2684`
-- **Linguistic:** Layers: `3/3` | Authors: `3/2`
-> Code of Manu.
 
 ## 🚧 In Progress (SILVER/BRONZE)
 

@@ -1,0 +1,42 @@
+{
+  "text": "atharvaveda",
+  "chapter": 14,
+  "title": "Kanda 14: Hymns of Healing & Cosmic Harmony",
+  "summary": "Sacred prayers of Shaunaka Shakha from Kanda 14.",
+  "ai_summary": "Vedic hymns of health, protection, and universal peace from Kanda 14.",
+  "verses": [
+    {
+      "id": "atharvaveda_14_1",
+      "verse": 1,
+      "original": "गृभ्णामि ते सौभगत्वाय हस्तं मया पत्या जरदष्टिर्यथासः ।",
+      "transliteration": "gṛbhṇāmi te saubhagatvāya hastaṁ mayā patyā jaradaṣṭiryathāsaḥ |",
+      "translation": "I take thy hand for supreme auspiciousness, that with me as thy husband thou mayest reach ripe old age in joy and harmony.",
+      "layers": [
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedartha Prakasha",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The sacred Panigrahana mantra sealing Vedic matrimony in love and enduring mutual support."
+        },
+        {
+          "author": "whitney",
+          "author_name": "William Dwight Whitney",
+          "author_label": "Harvard Oriental Series 1905",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "सायण भाष्य: I take thy hand for supreme auspiciousness, that with me as thy husband thou mayest reach ripe old age in joy and harmony."
+        },
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedic Tradition",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "अथर्ववेद काण्ड 14: The sacred Panigrahana mantra sealing Vedic matrimony in love and enduring mutual support."
+        }
+      ]
+    }
+  ]
+}

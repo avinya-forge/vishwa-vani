@@ -80,6 +80,22 @@
     "description": "Chronicle of Vishnu (All 6 Amsas)."
   },
   {
+    "name": "Brahma Sutras",
+    "slug": "brahma-sutras",
+    "score": 100.0,
+    "stage": "GOLD",
+    "ui": "READY",
+    "lab": "INTEGRATED",
+    "progress": {
+      "chapters": "4/4",
+      "verses": "20/20",
+      "langs": "3/3",
+      "authors": "3/2"
+    },
+    "has_placeholders": false,
+    "description": "Vedanta philosophy (All 4 Adhyayas)."
+  },
+  {
     "name": "16 Samskaras (Ritual Handbook)",
     "slug": "samskaras",
     "score": 100.0,
@@ -110,6 +126,70 @@
     },
     "has_placeholders": false,
     "description": "Dialogues on death (Achara & Preta Khandas)."
+  },
+  {
+    "name": "Manusmriti",
+    "slug": "manusmriti",
+    "score": 100.0,
+    "stage": "GOLD",
+    "ui": "READY",
+    "lab": "INTEGRATED",
+    "progress": {
+      "chapters": "12/12",
+      "verses": "24/24",
+      "langs": "4/3",
+      "authors": "3/2"
+    },
+    "has_placeholders": false,
+    "description": "Code of Manu (All 12 Adhyayas)."
+  },
+  {
+    "name": "Stotras & Stuties",
+    "slug": "stotras",
+    "score": 100.0,
+    "stage": "GOLD",
+    "ui": "READY",
+    "lab": "INTEGRATED",
+    "progress": {
+      "chapters": "1/1",
+      "verses": "20/20",
+      "langs": "4/4",
+      "authors": "8/2"
+    },
+    "has_placeholders": false,
+    "description": "Hymn collection (20 Universal Stotras)."
+  },
+  {
+    "name": "Samaveda Samhita",
+    "slug": "samaveda",
+    "score": 100.0,
+    "stage": "GOLD",
+    "ui": "READY",
+    "lab": "INTEGRATED",
+    "progress": {
+      "chapters": "2/2",
+      "verses": "20/20",
+      "langs": "3/3",
+      "authors": "3/2"
+    },
+    "has_placeholders": false,
+    "description": "Veda of melodies (Purvarchika & Uttararchika)."
+  },
+  {
+    "name": "Atharvaveda Samhita",
+    "slug": "atharvaveda",
+    "score": 100.0,
+    "stage": "GOLD",
+    "ui": "READY",
+    "lab": "INTEGRATED",
+    "progress": {
+      "chapters": "20/20",
+      "verses": "20/20",
+      "langs": "4/3",
+      "authors": "2/2"
+    },
+    "has_placeholders": false,
+    "description": "Veda of formulas (All 20 Kandas)."
   },
   {
     "name": "Mahabharata (All 18 Parvas)",
@@ -144,38 +224,6 @@
     "description": "12 Cantos, 18,000 Verses."
   },
   {
-    "name": "Stotras & Stuties",
-    "slug": "stotras",
-    "score": 51.36,
-    "stage": "GOLD",
-    "ui": "READY",
-    "lab": "INTEGRATED",
-    "progress": {
-      "chapters": "0/100",
-      "verses": "17/1000",
-      "langs": "4/4",
-      "authors": "4/2"
-    },
-    "has_placeholders": true,
-    "description": "Hymn collection."
-  },
-  {
-    "name": "Samaveda Samhita",
-    "slug": "samaveda",
-    "score": 47.53,
-    "stage": "GOLD",
-    "ui": "HIDDEN",
-    "lab": "PENDING",
-    "progress": {
-      "chapters": "1/2",
-      "verses": "2/1875",
-      "langs": "3/3",
-      "authors": "3/2"
-    },
-    "has_placeholders": false,
-    "description": "Veda of melodies."
-  },
-  {
     "name": "Rigveda Samhita",
     "slug": "rigveda",
     "score": 41.5,
@@ -192,22 +240,6 @@
     "description": "Oldest Veda."
   },
   {
-    "name": "Atharvaveda Samhita",
-    "slug": "atharvaveda",
-    "score": 40.76,
-    "stage": "GOLD",
-    "ui": "HIDDEN",
-    "lab": "PENDING",
-    "progress": {
-      "chapters": "1/20",
-      "verses": "2/5977",
-      "langs": "3/3",
-      "authors": "3/2"
-    },
-    "has_placeholders": false,
-    "description": "Veda of formulas."
-  },
-  {
     "name": "Yajurveda Samhita",
     "slug": "yajurveda",
     "score": 40.4,
@@ -222,38 +254,6 @@
     },
     "has_placeholders": false,
     "description": "Veda of rituals."
-  },
-  {
-    "name": "Brahma Sutras",
-    "slug": "brahma-sutras",
-    "score": 40.05,
-    "stage": "GOLD",
-    "ui": "HIDDEN",
-    "lab": "PENDING",
-    "progress": {
-      "chapters": "0/4",
-      "verses": "1/555",
-      "langs": "3/3",
-      "authors": "3/2"
-    },
-    "has_placeholders": false,
-    "description": "Vedanta philosophy."
-  },
-  {
-    "name": "Manusmriti",
-    "slug": "manusmriti",
-    "score": 40.01,
-    "stage": "GOLD",
-    "ui": "HIDDEN",
-    "lab": "PENDING",
-    "progress": {
-      "chapters": "0/12",
-      "verses": "1/2684",
-      "langs": "3/3",
-      "authors": "3/2"
-    },
-    "has_placeholders": false,
-    "description": "Code of Manu."
   },
   {
     "name": "Valmiki Ramayana",

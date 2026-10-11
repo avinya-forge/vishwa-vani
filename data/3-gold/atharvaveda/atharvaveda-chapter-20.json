@@ -1,0 +1,42 @@
+{
+  "text": "atharvaveda",
+  "chapter": 20,
+  "title": "Kanda 20: Hymns of Healing & Cosmic Harmony",
+  "summary": "Sacred prayers of Shaunaka Shakha from Kanda 20.",
+  "ai_summary": "Vedic hymns of health, protection, and universal peace from Kanda 20.",
+  "verses": [
+    {
+      "id": "atharvaveda_20_1",
+      "verse": 1,
+      "original": "इन्द्रस्य नु वीर्याणि प्र वोचं यानि चकार प्रथमानि वज्री । अहन्नहिमन्वपस्ततर्द प्र वक्षणा अभिनत्पर्वतानाम् ॥",
+      "transliteration": "indrasya nu vīryāṇi pra vocaṁ yāni cakāra prathamāni vajrī | ahannahimanvapastatarda pra vakṣaṇā abhinatparvatānām ||",
+      "translation": "Now I proclaim the triumphant deeds of Indra, the thunderbolt-wielder: he slew the dragon of drought, he released the waters, he cleft the channels of the mountains!",
+      "layers": [
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedartha Prakasha",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The final triumphal hymn celebrating the victory of light, rain, and life over stagnation and drought."
+        },
+        {
+          "author": "whitney",
+          "author_name": "William Dwight Whitney",
+          "author_label": "Harvard Oriental Series 1905",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "सायण भाष्य: Now I proclaim the triumphant deeds of Indra, the thunderbolt-wielder: he slew the dragon of drought, he released the waters, he cleft the channels of the mountains!"
+        },
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedic Tradition",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "अथर्ववेद काण्ड 20: The final triumphal hymn celebrating the victory of light, rain, and life over stagnation and drought."
+        }
+      ]
+    }
+  ]
+}

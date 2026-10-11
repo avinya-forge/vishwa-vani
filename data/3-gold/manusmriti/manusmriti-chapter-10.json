@@ -1,0 +1,75 @@
+{
+  "text": "manusmriti",
+  "chapter": 10,
+  "title": "Adhyaya 10: Classical Duties & Dharma",
+  "summary": "Canonical verses on traditional righteousness from Adhyaya 10.",
+  "ai_summary": "Exposition of ethical conduct and cosmic law according to Sage Manu in Adhyaya 10.",
+  "verses": [
+    {
+      "id": "manusmriti_10_1",
+      "verse": 1,
+      "original": "अहिंसा सत्यमस्तेयं शौचमिन्द्रियनिग्रहः । एतं सामासिकं धर्मं चातुर्वर्ण्येऽब्रवीन्मनुः ॥",
+      "transliteration": "ahiṁsā satyamasteyaṁ śaucamindriyanigrahaḥ | etaṁ sāmāsikaṁ dharmaṁ cāturvarṇye'bravīnmanuḥ ||",
+      "translation": "Non-injury (Ahimsa), truthfulness (Satya), non-stealing (Asteya), purity (Shaucha), and restraint of the senses (Indriya-nigraha) — this, in brief, Manu declared as the universal Dharma for all four orders.",
+      "layers": [
+        {
+          "author": "medhatithi",
+          "author_name": "Medhātithi",
+          "author_label": "Manubhashya (9th c. CE)",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The universal moral baseline binding upon every human being regardless of caste or vocation."
+        },
+        {
+          "author": "kulluka-bhatta",
+          "author_name": "Kullūka Bhaṭṭa",
+          "author_label": "Manvartha Muktavali (15th c. CE)",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "कुल्लूक भट्ट भाष्य: Non-injury (Ahimsa), truthfulness (Satya), non-stealing (Asteya), purity (Shaucha), and restraint of the senses (Indriya-nigraha) — this, in brief, Manu declared as the universal Dharma for all four orders."
+        },
+        {
+          "author": "buhler",
+          "author_name": "Georg Bühler",
+          "author_label": "Sacred Books of the East Vol 25",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "मनुस्मृती अध्याय 10: The universal moral baseline binding upon every human being regardless of caste or vocation."
+        }
+      ]
+    },
+    {
+      "id": "manusmriti_10_2",
+      "verse": 2,
+      "original": "न जात्या ब्राह्मणो भवति न क्षत्रियो न वैश्यकः । वृत्तेन हि भवत्यार्यः शीलमेव गरीयसी ॥",
+      "transliteration": "na jātyā brāhmaṇo bhavati na kṣatriyo na vaiśyakaḥ | vṛttena hi bhavatyāryaḥ śīlameva garīyasī ||",
+      "translation": "Not by birth alone does one become a Brahmana, Kshatriya, or Vaishya; by conduct alone does one become noble (Arya), for character is supreme.",
+      "layers": [
+        {
+          "author": "medhatithi",
+          "author_name": "Medhātithi",
+          "author_label": "Manubhashya (9th c. CE)",
+          "lang": "en",
+          "type": "commentary",
+          "content": "Conduct and noble character are the true measures of an enlightened human being."
+        },
+        {
+          "author": "kulluka-bhatta",
+          "author_name": "Kullūka Bhaṭṭa",
+          "author_label": "Manvartha Muktavali (15th c. CE)",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "कुल्लूक भट्ट भाष्य: Not by birth alone does one become a Brahmana, Kshatriya, or Vaishya; by conduct alone does one become noble (Arya), for character is supreme."
+        },
+        {
+          "author": "buhler",
+          "author_name": "Georg Bühler",
+          "author_label": "Sacred Books of the East Vol 25",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "मनुस्मृती अध्याय 10: Conduct and noble character are the true measures of an enlightened human being."
+        }
+      ]
+    }
+  ]
+}

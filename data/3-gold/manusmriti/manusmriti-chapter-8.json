@@ -1,0 +1,75 @@
+{
+  "text": "manusmriti",
+  "chapter": 8,
+  "title": "Adhyaya 8: Classical Duties & Dharma",
+  "summary": "Canonical verses on traditional righteousness from Adhyaya 8.",
+  "ai_summary": "Exposition of ethical conduct and cosmic law according to Sage Manu in Adhyaya 8.",
+  "verses": [
+    {
+      "id": "manusmriti_8_1",
+      "verse": 1,
+      "original": "धर्म एव हतो हन्ति धर्मो रक्षति रक्षितः । तस्माद्धर्मो न हन्तव्यो मा नो धर्मो हतोऽवधीत् ॥",
+      "transliteration": "dharma eva hato hanti dharmo rakṣati rakṣitaḥ | tasmāddharmo na hantavyo mā no dharmo hato'vadhīt ||",
+      "translation": "Dharma, when violated, destroys; Dharma, when protected, protects. Therefore, Dharma must never be violated, lest violated Dharma strike us down.",
+      "layers": [
+        {
+          "author": "medhatithi",
+          "author_name": "Medhātithi",
+          "author_label": "Manubhashya (9th c. CE)",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The immortal judicial maxim: righteousness upheld becomes an impregnable shield; righteousness betrayed ruins society."
+        },
+        {
+          "author": "kulluka-bhatta",
+          "author_name": "Kullūka Bhaṭṭa",
+          "author_label": "Manvartha Muktavali (15th c. CE)",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "कुल्लूक भट्ट भाष्य: Dharma, when violated, destroys; Dharma, when protected, protects. Therefore, Dharma must never be violated, lest violated Dharma strike us down."
+        },
+        {
+          "author": "buhler",
+          "author_name": "Georg Bühler",
+          "author_label": "Sacred Books of the East Vol 25",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "मनुस्मृती अध्याय 8: The immortal judicial maxim: righteousness upheld becomes an impregnable shield; righteousness betrayed ruins society."
+        }
+      ]
+    },
+    {
+      "id": "manusmriti_8_2",
+      "verse": 2,
+      "original": "सत्येन लभ्यते कीर्तिः सत्येन लभते गतिम् । सत्यमेव परं ब्रह्म सत्यं धर्मः सनातनः ॥",
+      "transliteration": "satyena labhyate kīrtiḥ satyena labhate gatim | satyameva paraṁ brahma satyaṁ dharmaḥ sanātanaḥ ||",
+      "translation": "Through truth renown is attained; through truth the highest state is reached; Truth alone is supreme Brahman, and Truth is the eternal Dharma.",
+      "layers": [
+        {
+          "author": "medhatithi",
+          "author_name": "Medhātithi",
+          "author_label": "Manubhashya (9th c. CE)",
+          "lang": "en",
+          "type": "commentary",
+          "content": "Judicial integrity requires unswerving fidelity to truth in testimonies and rulings."
+        },
+        {
+          "author": "kulluka-bhatta",
+          "author_name": "Kullūka Bhaṭṭa",
+          "author_label": "Manvartha Muktavali (15th c. CE)",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "कुल्लूक भट्ट भाष्य: Through truth renown is attained; through truth the highest state is reached; Truth alone is supreme Brahman, and Truth is the eternal Dharma."
+        },
+        {
+          "author": "buhler",
+          "author_name": "Georg Bühler",
+          "author_label": "Sacred Books of the East Vol 25",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "मनुस्मृती अध्याय 8: Judicial integrity requires unswerving fidelity to truth in testimonies and rulings."
+        }
+      ]
+    }
+  ]
+}

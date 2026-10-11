@@ -1,0 +1,42 @@
+{
+  "text": "atharvaveda",
+  "chapter": 5,
+  "title": "Kanda 5: Hymns of Healing & Cosmic Harmony",
+  "summary": "Sacred prayers of Shaunaka Shakha from Kanda 5.",
+  "ai_summary": "Vedic hymns of health, protection, and universal peace from Kanda 5.",
+  "verses": [
+    {
+      "id": "atharvaveda_5_1",
+      "verse": 1,
+      "original": "उत्तष्ठेतो मनुष्या माव पत्था मृत्योः पड्बीशमप नुदस्व । मा च्छित्था अस्मिल्लोकेऽमुष्मिन् शतशारदाय जीव ॥",
+      "transliteration": "uttaṣṭheto manuṣyā māva patthā mṛtyoḥ paḍbīśamapa nudasva | mā cchitthā asmilloke'muṣmin śataśāradāya jīva ||",
+      "translation": "Rise up from here, O mortal! Do not fall; cast aside the shackles of death! Be not cut off from this world; live a full hundred autumns of radiant vitality!",
+      "layers": [
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedartha Prakasha",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The Ayushya hymn: divine life-force vanquishing illness and despair, blessing the human soul with a hundred-year lifespan."
+        },
+        {
+          "author": "whitney",
+          "author_name": "William Dwight Whitney",
+          "author_label": "Harvard Oriental Series 1905",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "सायण भाष्य: Rise up from here, O mortal! Do not fall; cast aside the shackles of death! Be not cut off from this world; live a full hundred autumns of radiant vitality!"
+        },
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedic Tradition",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "अथर्ववेद काण्ड 5: The Ayushya hymn: divine life-force vanquishing illness and despair, blessing the human soul with a hundred-year lifespan."
+        }
+      ]
+    }
+  ]
+}

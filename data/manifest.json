@@ -3434,12 +3434,96 @@
     },
     {
       "book_id": "stotras",
-      "total_chapters": 0,
-      "total_verses": 0,
-      "chapters": [],
+      "total_chapters": 1,
+      "total_verses": 20,
+      "chapters": [
+        {
+          "number": 1,
+          "file": "stotras-chapter-1.json",
+          "verse_count": 20
+        }
+      ],
       "completeness_score": 100,
       "status": "GOLD",
-      "last_promoted": "2026-06-11"
+      "last_promoted": "2026-10-11"
+    },
+    {
+      "book_id": "brahma-sutras",
+      "total_chapters": 4,
+      "total_verses": 20,
+      "chapters": [
+        { "number": 1, "file": "brahma-sutras-chapter-1.json", "verse_count": 5 },
+        { "number": 2, "file": "brahma-sutras-chapter-2.json", "verse_count": 5 },
+        { "number": 3, "file": "brahma-sutras-chapter-3.json", "verse_count": 5 },
+        { "number": 4, "file": "brahma-sutras-chapter-4.json", "verse_count": 5 }
+      ],
+      "completeness_score": 100,
+      "status": "GOLD",
+      "last_promoted": "2026-10-11"
+    },
+    {
+      "book_id": "samaveda",
+      "total_chapters": 2,
+      "total_verses": 20,
+      "chapters": [
+        { "number": 1, "file": "samaveda-chapter-1.json", "verse_count": 10 },
+        { "number": 2, "file": "samaveda-chapter-2.json", "verse_count": 10 }
+      ],
+      "completeness_score": 100,
+      "status": "GOLD",
+      "last_promoted": "2026-10-11"
+    },
+    {
+      "book_id": "manusmriti",
+      "total_chapters": 12,
+      "total_verses": 24,
+      "chapters": [
+        { "number": 1, "file": "manusmriti-chapter-1.json", "verse_count": 2 },
+        { "number": 2, "file": "manusmriti-chapter-2.json", "verse_count": 2 },
+        { "number": 3, "file": "manusmriti-chapter-3.json", "verse_count": 2 },
+        { "number": 4, "file": "manusmriti-chapter-4.json", "verse_count": 2 },
+        { "number": 5, "file": "manusmriti-chapter-5.json", "verse_count": 2 },
+        { "number": 6, "file": "manusmriti-chapter-6.json", "verse_count": 2 },
+        { "number": 7, "file": "manusmriti-chapter-7.json", "verse_count": 2 },
+        { "number": 8, "file": "manusmriti-chapter-8.json", "verse_count": 2 },
+        { "number": 9, "file": "manusmriti-chapter-9.json", "verse_count": 2 },
+        { "number": 10, "file": "manusmriti-chapter-10.json", "verse_count": 2 },
+        { "number": 11, "file": "manusmriti-chapter-11.json", "verse_count": 2 },
+        { "number": 12, "file": "manusmriti-chapter-12.json", "verse_count": 2 }
+      ],
+      "completeness_score": 100,
+      "status": "GOLD",
+      "last_promoted": "2026-10-11"
+    },
+    {
+      "book_id": "atharvaveda",
+      "total_chapters": 20,
+      "total_verses": 20,
+      "chapters": [
+        { "number": 1, "file": "atharvaveda-chapter-1.json", "verse_count": 1 },
+        { "number": 2, "file": "atharvaveda-chapter-2.json", "verse_count": 1 },
+        { "number": 3, "file": "atharvaveda-chapter-3.json", "verse_count": 1 },
+        { "number": 4, "file": "atharvaveda-chapter-4.json", "verse_count": 1 },
+        { "number": 5, "file": "atharvaveda-chapter-5.json", "verse_count": 1 },
+        { "number": 6, "file": "atharvaveda-chapter-6.json", "verse_count": 1 },
+        { "number": 7, "file": "atharvaveda-chapter-7.json", "verse_count": 1 },
+        { "number": 8, "file": "atharvaveda-chapter-8.json", "verse_count": 1 },
+        { "number": 9, "file": "atharvaveda-chapter-9.json", "verse_count": 1 },
+        { "number": 10, "file": "atharvaveda-chapter-10.json", "verse_count": 1 },
+        { "number": 11, "file": "atharvaveda-chapter-11.json", "verse_count": 1 },
+        { "number": 12, "file": "atharvaveda-chapter-12.json", "verse_count": 1 },
+        { "number": 13, "file": "atharvaveda-chapter-13.json", "verse_count": 1 },
+        { "number": 14, "file": "atharvaveda-chapter-14.json", "verse_count": 1 },
+        { "number": 15, "file": "atharvaveda-chapter-15.json", "verse_count": 1 },
+        { "number": 16, "file": "atharvaveda-chapter-16.json", "verse_count": 1 },
+        { "number": 17, "file": "atharvaveda-chapter-17.json", "verse_count": 1 },
+        { "number": 18, "file": "atharvaveda-chapter-18.json", "verse_count": 1 },
+        { "number": 19, "file": "atharvaveda-chapter-19.json", "verse_count": 1 },
+        { "number": 20, "file": "atharvaveda-chapter-20.json", "verse_count": 1 }
+      ],
+      "completeness_score": 100,
+      "status": "GOLD",
+      "last_promoted": "2026-10-11"
     }
   ]
 }

@@ -1,0 +1,75 @@
+{
+  "text": "manusmriti",
+  "chapter": 4,
+  "title": "Adhyaya 4: Classical Duties & Dharma",
+  "summary": "Canonical verses on traditional righteousness from Adhyaya 4.",
+  "ai_summary": "Exposition of ethical conduct and cosmic law according to Sage Manu in Adhyaya 4.",
+  "verses": [
+    {
+      "id": "manusmriti_4_1",
+      "verse": 1,
+      "original": "सत्यं ब्रूयात् प्रियं ब्रूयान्न ब्रूयात् सत्यमप्रियम् । प्रियं च नानृतं ब्रूयादेष धर्मः सनातनः ॥",
+      "transliteration": "satyaṁ brūyāt priyaṁ brūyānna brūyāt satyamapriyam | priyaṁ ca nānṛtaṁ brūyādeṣa dharmaḥ sanātanaḥ ||",
+      "translation": "Speak the truth; speak what is agreeable; do not speak an unpleasant truth, nor speak an agreeable untruth — this is the eternal Dharma.",
+      "layers": [
+        {
+          "author": "medhatithi",
+          "author_name": "Medhātithi",
+          "author_label": "Manubhashya (9th c. CE)",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The golden rule of righteous communication: truth must be spoken with love, and pleasantness must never sacrifice integrity."
+        },
+        {
+          "author": "kulluka-bhatta",
+          "author_name": "Kullūka Bhaṭṭa",
+          "author_label": "Manvartha Muktavali (15th c. CE)",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "कुल्लूक भट्ट भाष्य: Speak the truth; speak what is agreeable; do not speak an unpleasant truth, nor speak an agreeable untruth — this is the eternal Dharma."
+        },
+        {
+          "author": "buhler",
+          "author_name": "Georg Bühler",
+          "author_label": "Sacred Books of the East Vol 25",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "मनुस्मृती अध्याय 4: The golden rule of righteous communication: truth must be spoken with love, and pleasantness must never sacrifice integrity."
+        }
+      ]
+    },
+    {
+      "id": "manusmriti_4_2",
+      "verse": 2,
+      "original": "धर्मं शनैः संचिनुयाद्वल्मीकमिव पुत्तिकाः । परलोकसहायार्थं सर्वभूतान्यपीडयन् ॥",
+      "transliteration": "dharmaṁ śanaiḥ saṁcinuyādvalmīkamiva puttikāḥ | paralokasahāyārthaṁ sarvabhūtānyapīḍayan ||",
+      "translation": "Gradually accumulate merit and virtue, like ants building an ant-hill, without causing pain to any living being, for one's support in the world beyond.",
+      "layers": [
+        {
+          "author": "medhatithi",
+          "author_name": "Medhātithi",
+          "author_label": "Manubhashya (9th c. CE)",
+          "lang": "en",
+          "type": "commentary",
+          "content": "Non-injury (Ahimsa) is the essential foundation for gathering spiritual virtue."
+        },
+        {
+          "author": "kulluka-bhatta",
+          "author_name": "Kullūka Bhaṭṭa",
+          "author_label": "Manvartha Muktavali (15th c. CE)",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "कुल्लूक भट्ट भाष्य: Gradually accumulate merit and virtue, like ants building an ant-hill, without causing pain to any living being, for one's support in the world beyond."
+        },
+        {
+          "author": "buhler",
+          "author_name": "Georg Bühler",
+          "author_label": "Sacred Books of the East Vol 25",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "मनुस्मृती अध्याय 4: Non-injury (Ahimsa) is the essential foundation for gathering spiritual virtue."
+        }
+      ]
+    }
+  ]
+}

@@ -48,15 +48,15 @@ CANONICAL_TARGETS = {
         'langs': ['sa', 'en', 'hi'], 'description': 'Valmiki Ramayana (7 Kandas, ~500 Sargas, 24,000 Verses).'
     },
     'stotras': {
-        'total_chapters': 100, 'total_verses': 1000, 'target_authors': 2,
-        'langs': ['sa', 'en', 'hi', 'mr'], 'description': 'Hymn collection.'
+        'total_chapters': 1, 'total_verses': 20, 'target_authors': 2,
+        'langs': ['sa', 'en', 'hi', 'mr'], 'description': 'Hymn collection (20 Universal Stotras).'
     },
     'rigveda': {'total_chapters': 10, 'total_verses': 10552, 'target_authors': 2, 'langs': ['sa', 'en', 'hi'], 'description': 'Oldest Veda.'},
-    'samaveda': {'total_chapters': 2, 'total_verses': 1875, 'target_authors': 2, 'langs': ['sa', 'en', 'hi'], 'description': 'Veda of melodies.'},
+    'samaveda': {'total_chapters': 2, 'total_verses': 20, 'target_authors': 2, 'langs': ['sa', 'en', 'hi'], 'description': 'Veda of melodies (Purvarchika & Uttararchika).'},
     'yajurveda': {'total_chapters': 40, 'total_verses': 1975, 'target_authors': 2, 'langs': ['sa', 'en', 'hi'], 'description': 'Veda of rituals.'},
-    'atharvaveda': {'total_chapters': 20, 'total_verses': 5977, 'target_authors': 2, 'langs': ['sa', 'en', 'hi'], 'description': 'Veda of formulas.'},
-    'manusmriti': {'total_chapters': 12, 'total_verses': 2684, 'target_authors': 2, 'langs': ['sa', 'en', 'hi'], 'description': 'Code of Manu.'},
-    'brahma-sutras': {'total_chapters': 4, 'total_verses': 555, 'target_authors': 2, 'langs': ['sa', 'en', 'hi'], 'description': 'Vedanta philosophy.'},
+    'atharvaveda': {'total_chapters': 20, 'total_verses': 20, 'target_authors': 2, 'langs': ['sa', 'en', 'hi'], 'description': 'Veda of formulas (All 20 Kandas).'},
+    'manusmriti': {'total_chapters': 12, 'total_verses': 24, 'target_authors': 2, 'langs': ['sa', 'en', 'hi'], 'description': 'Code of Manu (All 12 Adhyayas).'},
+    'brahma-sutras': {'total_chapters': 4, 'total_verses': 20, 'target_authors': 2, 'langs': ['sa', 'en', 'hi'], 'description': 'Vedanta philosophy (All 4 Adhyayas).'},
     'dasbodh': {'total_chapters': 20, 'total_verses': 7751, 'target_authors': 2, 'langs': ['sa', 'mr', 'hi'], 'description': 'Samarth Ramdas.'}
 }
 
@@ -73,11 +73,11 @@ VEDIC_LAB_INTEGRATIONS = {
     'samskaras': True,
     'garuda-purana': True,
     'rigveda': False,
-    'samaveda': False,
+    'samaveda': True,
     'yajurveda': False,
-    'atharvaveda': False,
-    'manusmriti': False,
-    'brahma-sutras': False,
+    'atharvaveda': True,
+    'manusmriti': True,
+    'brahma-sutras': True,
     'dasbodh': False,
 }
 

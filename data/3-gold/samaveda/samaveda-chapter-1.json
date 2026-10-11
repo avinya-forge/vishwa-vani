@@ -1,0 +1,267 @@
+{
+  "text": "samaveda",
+  "chapter": 1,
+  "title": "Purvarchika: Agneya & Aindra Parva (Chants of Fire & Light)",
+  "summary": "Sacred melodies of the Udgatar priesthood dedicated to Agni, Indra, and the cosmic principles.",
+  "ai_summary": "The first Archana of the Samaveda translates Rigvedic prayers into soaring musical notation and metrical chants.",
+  "verses": [
+    {
+      "id": "samaveda_1_1",
+      "verse": 1,
+      "original": "अग्न आ याहि वीतये गृणानो हव्यदातये । नि होता सत्सि बर्हिषि ॥",
+      "transliteration": "agna ā yāhi vītaye gṛṇāno havyadātaye | ni hotā satsi barhiṣi ||",
+      "translation": "O Agni, come to the sacred feast; being praised, come to accept the offerings. Sit as the divine invoker upon the kusha grass.",
+      "layers": [
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedartha Prakasha",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The foundational opening chant of the Samaveda, set to the Gayatri meter and chanted in the Udgitha melody to kindle spiritual fire."
+        },
+        {
+          "author": "ralph-griffith",
+          "author_name": "Ralph T.H. Griffith",
+          "author_label": "Hymns of the Samaveda 1893",
+          "lang": "en",
+          "type": "commentary",
+          "content": "A direct invocation inviting the divine messenger to sit among the assembled worshippers."
+        },
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedic Tradition",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "हे अग्निदेव, स्तुति किए जाने पर हविष्य स्वीकार करने हेतु आएं और पवित्र आसन पर विराजमान हों।"
+        }
+      ]
+    },
+    {
+      "id": "samaveda_1_2",
+      "verse": 2,
+      "original": "त्वं हि होता प्रथमो मनोतोऽस्या धियो अभवः सत्यवाचा । अग्न उक्थेभिर्वृधो अमूरो नर्यो अस्माकं भवा सखायः ॥",
+      "transliteration": "tvaṁ hi hotā prathamo manoto'syā dhiyo abhavaḥ satyavācā | agna ukthebhirvṛdho amūro naryo asmākaṁ bhavā sakhāyaḥ ||",
+      "translation": "Thou indeed art the foremost Hotar, the guide of this devotion through truthful speech. O wise Agni, strengthened by hymns, be a friend unto us.",
+      "layers": [
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedartha Prakasha",
+          "lang": "en",
+          "type": "commentary",
+          "content": "Agni is celebrated as the primordial conscious mediator who guides the intellect (dhi) to truth."
+        },
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedic Tradition",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "हे अग्नि, आप सत्य भाषण द्वारा हमारी बुद्धि के प्रेरक और हमारे कल्याणकारी मित्र बनें।"
+        }
+      ]
+    },
+    {
+      "id": "samaveda_1_3",
+      "verse": 3,
+      "original": "इन्द्रमिद्गाथिनो बृहदिन्द्रमर्केभिरर्किनः । इन्द्रं वाणीरनूषत ॥",
+      "transliteration": "indramidgāthino bṛhadindramarkebhirarkinaḥ | indraṁ vāṇīranūṣata ||",
+      "translation": "Indra the singers praise with the lofty Brihat chant; Indra the glorifiers extol with verses; unto Indra the sacred voices sing in joyous concord.",
+      "layers": [
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedartha Prakasha",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The famous verse linking the Brihat Sama chant with the invocation of cosmic vitality and sovereign intellect."
+        },
+        {
+          "author": "ralph-griffith",
+          "author_name": "Ralph T.H. Griffith",
+          "author_label": "Samaveda 1893",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "गायक वृंद वृहत् साम द्वारा और ज्ञानी जन स्तुतियों से इन्द्रदेव की महिमा का गान करते हैं।"
+        }
+      ]
+    },
+    {
+      "id": "samaveda_1_4",
+      "verse": 4,
+      "original": "आ नो विश्वाभिरूतिभिः सजोषो ब्रह्मवाहसे । सस्नेह इन्द्र सोमपाः ॥",
+      "transliteration": "ā no viśvābhirūtibhiḥ sajoṣo brahmavāhase | sasneha indra somapāḥ ||",
+      "translation": "Come to us with all Thy protective graces, in harmony with the bearer of prayers; affectionate, O Indra, drinker of the pure Soma.",
+      "layers": [
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedartha Prakasha",
+          "lang": "en",
+          "type": "commentary",
+          "content": "Indra represents the illuminated mind responding affectionately to heartfelt meditation."
+        },
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedic Tradition",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "हे इन्द्र, अपनी समस्त रक्षाओं के साथ हमारे समीप पधारें और प्रेमपूर्वक हमारे भाव ग्रहण करें।"
+        }
+      ]
+    },
+    {
+      "id": "samaveda_1_5",
+      "verse": 5,
+      "original": "पवमान सुवीर्यं रयिं सोम परिक्षव । इन्दो सहस्रवर्चसम् ॥",
+      "transliteration": "pavamāna suvīryaṁ rayiṁ soma parikṣava | indo sahasravarcasam ||",
+      "translation": "O Pavamana Soma, flow forth conferring noble strength, abundant prosperity, and a thousandfold radiance of consciousness.",
+      "layers": [
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedartha Prakasha",
+          "lang": "en",
+          "type": "commentary",
+          "content": "Pavamana is the purifying stream of life energy flowing through the filter of discriminating wisdom."
+        },
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedic Tradition",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "हे पवित्र सोम, हमें उत्तम वीर्य, समृद्धि और सहस्रों ज्योतियों का तेज प्रदान करें।"
+        }
+      ]
+    },
+    {
+      "id": "samaveda_1_6",
+      "verse": 6,
+      "original": "उच्चा ते जातमन्धसो दिवि सद्भूम्याददे । उग्रं शर्म महि श्रवः ॥",
+      "transliteration": "uccā te jātamandhaso divi sadbhūmyādade | ugraṁ śarma mahi śravaḥ ||",
+      "translation": "High is the celestial birth of Thy sacred juice; dwelling in heaven, received on earth, it bestows formidable protection and sublime spiritual renown.",
+      "layers": [
+        {
+          "author": "ralph-griffith",
+          "author_name": "Ralph T.H. Griffith",
+          "author_label": "Samaveda 1893",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The heavenly nectar connects heaven and earth in a continuum of divine grace."
+        },
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedic Tradition",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "द्युलोक से उत्पन्न यह सोम पृथ्वी पर आकर महान शांति और यश का विस्तार करता है।"
+        }
+      ]
+    },
+    {
+      "id": "samaveda_1_7",
+      "verse": 7,
+      "original": "सोमः पवते जनिता मतीनां जनिता दिवो जनिता पृथिव्याः । जनिताग्नेर्जनिता सूर्यस्य जनितेन्द्रस्य जनितोत विष्णोः ॥",
+      "transliteration": "somaḥ pavate janitā matīnāṁ janitā divo janitā pṛthivyāḥ | janitāgnerjanitā sūryasya janitendrasya janitota viṣṇoḥ ||",
+      "translation": "Purifying Himself, Soma flows forth — the generator of noble thoughts, the creator of heaven, the creator of earth, the father of fire, the generator of the sun, the animator of Indra, and the inspirer of Vishnu.",
+      "layers": [
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedartha Prakasha",
+          "lang": "en",
+          "type": "commentary",
+          "content": "Soma is realized here not as a mere plant, but as the cosmic delight and creative bliss (Ananda) that mothers all cosmic powers."
+        },
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedic Tradition",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "सोम समस्त सद्बुद्धियों के जनक हैं, द्युलोक, पृथ्वी, सूर्य और अग्नि के प्रकाशक हैं।"
+        }
+      ]
+    },
+    {
+      "id": "samaveda_1_8",
+      "verse": 8,
+      "original": "अहेळमान उप याहि यज्ञं नमोवृधं शशमानस्य मन्म ।",
+      "transliteration": "aheḷamāna upa yāhi yajñaṁ namovṛdhaṁ śaśamānasya manma |",
+      "translation": "Without displeasure, approach our sacrifice, strengthened by our salutations and the deep devotion of the ardent seeker.",
+      "layers": [
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedartha Prakasha",
+          "lang": "en",
+          "type": "commentary",
+          "content": "An earnest appeal for peaceful, gracious presence of divinity in the contemplative sacrifice."
+        },
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedic Tradition",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "प्रसन्न भाव से हमारे यज्ञ में पधारें और हमारी विनम्र प्रार्थनाओं को स्वीकार करें।"
+        }
+      ]
+    },
+    {
+      "id": "samaveda_1_9",
+      "verse": 9,
+      "original": "इन्द्र ज्योतिरहर्दधे सूर्यो न चक्षुषा ततं । विष्णुरुदारचक्रमः ॥",
+      "transliteration": "indra jyotirahardadhe sūryo na cakṣuṣā tataṁ | viṣṇurudāracakramaḥ ||",
+      "translation": "Indra hath established the dawn of light; like the sun He embraces all with His vision; Vishnu strides forth with sublime cosmic strides.",
+      "layers": [
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedartha Prakasha",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The harmonious union of Indra's light and Vishnu's pervasive cosmic order."
+        },
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedic Tradition",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "इन्द्रदेव ने प्रकाश का विस्तार किया और श्रीविष्णु ने अपने पावन पगों से समस्त चराचर को धारण किया।"
+        }
+      ]
+    },
+    {
+      "id": "samaveda_1_10",
+      "verse": 10,
+      "original": "स्वादष्ठिया मदिष्ठिया पवस्व सोम धारया । इन्द्राय पातवे सुतः ॥",
+      "transliteration": "svādiṣṭhayā madiṣṭhayā pavasva soma dhārayā | indrāya pātave sutaḥ ||",
+      "translation": "Flow forth in Thine exquisitely sweet and exhilarating stream, O Soma, pressed out for the nourishment of Indra.",
+      "layers": [
+        {
+          "author": "ralph-griffith",
+          "author_name": "Ralph T.H. Griffith",
+          "author_label": "Samaveda 1893",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The sweetest stream of Soma represents highest devotion offered to the divine consciousness."
+        },
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedic Tradition",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "अतिशय मधुर और आनंददायी धारा में बहते हुए हे सोम, इन्द्रदेव के तृप्ति के लिए प्रवाहित हों।"
+        }
+      ]
+    }
+  ]
+}

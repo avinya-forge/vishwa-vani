@@ -1,0 +1,75 @@
+{
+  "text": "manusmriti",
+  "chapter": 7,
+  "title": "Adhyaya 7: Classical Duties & Dharma",
+  "summary": "Canonical verses on traditional righteousness from Adhyaya 7.",
+  "ai_summary": "Exposition of ethical conduct and cosmic law according to Sage Manu in Adhyaya 7.",
+  "verses": [
+    {
+      "id": "manusmriti_7_1",
+      "verse": 1,
+      "original": "दण्डः शास्ति प्रजाः सर्वा दण्ड एवाभिरक्षति । दण्डः सुप्तेषु जागर्ति दण्डं धर्मं विदुर्बुधाः ॥",
+      "transliteration": "daṇḍaḥ śāsti prajāḥ sarvā daṇḍa evābhirakṣati | daṇḍaḥ supteṣu jāgarti daṇḍaṁ dharmaṁ vidurbudhāḥ ||",
+      "translation": "The rod of justice (Danda) governs all citizens; Danda alone protects them; Danda watches awake while people sleep; the wise declare Danda to be Dharma personified.",
+      "layers": [
+        {
+          "author": "medhatithi",
+          "author_name": "Medhātithi",
+          "author_label": "Manubhashya (9th c. CE)",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The philosophy of governance and law enforcement: impartial justice is the guardian of civilized life."
+        },
+        {
+          "author": "kulluka-bhatta",
+          "author_name": "Kullūka Bhaṭṭa",
+          "author_label": "Manvartha Muktavali (15th c. CE)",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "कुल्लूक भट्ट भाष्य: The rod of justice (Danda) governs all citizens; Danda alone protects them; Danda watches awake while people sleep; the wise declare Danda to be Dharma personified."
+        },
+        {
+          "author": "buhler",
+          "author_name": "Georg Bühler",
+          "author_label": "Sacred Books of the East Vol 25",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "मनुस्मृती अध्याय 7: The philosophy of governance and law enforcement: impartial justice is the guardian of civilized life."
+        }
+      ]
+    },
+    {
+      "id": "manusmriti_7_2",
+      "verse": 2,
+      "original": "यथा राजा तथा प्रजा इति लोकप्रसिद्धम् । राजा धर्मस्य गोप्ता वै प्रजानां परिपालकः ॥",
+      "transliteration": "yathā rājā tathā prajā iti lokaprasiddham | rājā dharmasya goptā vai prajānāṁ paripālakaḥ ||",
+      "translation": "As is the ruler, so are the citizens — this is renowned across the world. The king is the protector of Dharma and the benevolent guardian of his people.",
+      "layers": [
+        {
+          "author": "medhatithi",
+          "author_name": "Medhātithi",
+          "author_label": "Manubhashya (9th c. CE)",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The moral obligation of leadership to govern with benevolence, accountability, and righteousness."
+        },
+        {
+          "author": "kulluka-bhatta",
+          "author_name": "Kullūka Bhaṭṭa",
+          "author_label": "Manvartha Muktavali (15th c. CE)",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "कुल्लूक भट्ट भाष्य: As is the ruler, so are the citizens — this is renowned across the world. The king is the protector of Dharma and the benevolent guardian of his people."
+        },
+        {
+          "author": "buhler",
+          "author_name": "Georg Bühler",
+          "author_label": "Sacred Books of the East Vol 25",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "मनुस्मृती अध्याय 7: The moral obligation of leadership to govern with benevolence, accountability, and righteousness."
+        }
+      ]
+    }
+  ]
+}

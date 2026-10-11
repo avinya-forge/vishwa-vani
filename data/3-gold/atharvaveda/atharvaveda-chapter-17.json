@@ -1,0 +1,42 @@
+{
+  "text": "atharvaveda",
+  "chapter": 17,
+  "title": "Kanda 17: Hymns of Healing & Cosmic Harmony",
+  "summary": "Sacred prayers of Shaunaka Shakha from Kanda 17.",
+  "ai_summary": "Vedic hymns of health, protection, and universal peace from Kanda 17.",
+  "verses": [
+    {
+      "id": "atharvaveda_17_1",
+      "verse": 1,
+      "original": "विभ्राड् बृहत्पिबतु सोम्यं मधु सूर्यो रश्मिभिः पतगः सुवर्णः ।",
+      "transliteration": "vibhrāḍ bṛhatpibatu somyaṁ madhu sūryo raśmibhiḥ patagaḥ suvarṇaḥ |",
+      "translation": "May the splendid high Surya, the golden-winged bird of heaven, drink the sweet Soma and illumine our world with His rays!",
+      "layers": [
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedartha Prakasha",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The solar hymn invoking vitality, cosmic illumination, and boundless energy."
+        },
+        {
+          "author": "whitney",
+          "author_name": "William Dwight Whitney",
+          "author_label": "Harvard Oriental Series 1905",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "सायण भाष्य: May the splendid high Surya, the golden-winged bird of heaven, drink the sweet Soma and illumine our world with His rays!"
+        },
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedic Tradition",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "अथर्ववेद काण्ड 17: The solar hymn invoking vitality, cosmic illumination, and boundless energy."
+        }
+      ]
+    }
+  ]
+}

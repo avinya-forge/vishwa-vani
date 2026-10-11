@@ -1,0 +1,42 @@
+{
+  "text": "atharvaveda",
+  "chapter": 1,
+  "title": "Kanda 1: Hymns of Healing & Cosmic Harmony",
+  "summary": "Sacred prayers of Shaunaka Shakha from Kanda 1.",
+  "ai_summary": "Vedic hymns of health, protection, and universal peace from Kanda 1.",
+  "verses": [
+    {
+      "id": "atharvaveda_1_1",
+      "verse": 1,
+      "original": "ये त्रिषप्ताः परियन्ति विश्वा रूपाणि बिभ्रतः । वाचस्पतिर्बला तेषां तन्वो अद्य दधातु मे ॥",
+      "transliteration": "ye triṣaptāḥ pariyanti viśvā rūpāṇi bibhrataḥ | vācaspatirbalā teṣāṁ tanvo adya dadhātu me ||",
+      "translation": "Those thrice-seven cosmic principles that move about bearing all forms — may the Lord of Sacred Speech (Vachaspati) endow my intellect with their power today!",
+      "layers": [
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedartha Prakasha",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The Medhasukta opening the Atharvaveda: invocation of the Lord of Speech to awaken retention and divine intellect."
+        },
+        {
+          "author": "whitney",
+          "author_name": "William Dwight Whitney",
+          "author_label": "Harvard Oriental Series 1905",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "सायण भाष्य: Those thrice-seven cosmic principles that move about bearing all forms — may the Lord of Sacred Speech (Vachaspati) endow my intellect with their power today!"
+        },
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedic Tradition",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "अथर्ववेद काण्ड 1: The Medhasukta opening the Atharvaveda: invocation of the Lord of Speech to awaken retention and divine intellect."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "text": "atharvaveda",
+  "chapter": 16,
+  "title": "Kanda 16: Hymns of Healing & Cosmic Harmony",
+  "summary": "Sacred prayers of Shaunaka Shakha from Kanda 16.",
+  "ai_summary": "Vedic hymns of health, protection, and universal peace from Kanda 16.",
+  "verses": [
+    {
+      "id": "atharvaveda_16_1",
+      "verse": 1,
+      "original": "अपेहि मनसस्पतेऽप क्राम परश्चर । परो निर्ऋत्या आ चक्ष्व तं नः परि पाहि ॥",
+      "transliteration": "apehi manasaspate'pa krāma paraścara | paro nirṛtyā ā cakṣva taṁ naḥ pari pāhi ||",
+      "translation": "Depart, O torment of the mind! Move away, wander far into distance! Look toward misery far off, and preserve our peaceful sanity!",
+      "layers": [
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedartha Prakasha",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The Shanti prayer dispelling anxiety, mental anguish, and dark depressive shadows."
+        },
+        {
+          "author": "whitney",
+          "author_name": "William Dwight Whitney",
+          "author_label": "Harvard Oriental Series 1905",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "सायण भाष्य: Depart, O torment of the mind! Move away, wander far into distance! Look toward misery far off, and preserve our peaceful sanity!"
+        },
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedic Tradition",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "अथर्ववेद काण्ड 16: The Shanti prayer dispelling anxiety, mental anguish, and dark depressive shadows."
+        }
+      ]
+    }
+  ]
+}

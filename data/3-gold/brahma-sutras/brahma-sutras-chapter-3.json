@@ -1,0 +1,134 @@
+{
+  "text": "brahma-sutras",
+  "chapter": 3,
+  "title": "Adhyaya 3: Sadhana (The Path of Spiritual Practice)",
+  "summary": "Examines the nature of reincarnation, dream states, the attributes of Brahman, and meditations (Vidyas).",
+  "ai_summary": "Badarayana codifies the spiritual disciplines, demonstrating that direct knowledge of Brahman alone yields liberation.",
+  "verses": [
+    {
+      "id": "brahma-sutras_3_1",
+      "verse": 1,
+      "original": "तदन्तरप्रतिपत्तौ रंहति संपरिष्वक्तः ॥",
+      "transliteration": "tadantarapratipattau raṁhati saṁpariṣvaktaḥ ||",
+      "translation": "In obtaining another body, the soul goes enveloped by the subtle elements.",
+      "layers": [
+        {
+          "author": "adi-shankara",
+          "author_name": "Ādi Śaṅkarācārya",
+          "author_label": "Sariraka Bhashya",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The departing soul carries the subtle body (Sukshma Sharira) containing its karmic tendencies and vital faculties into the next birth."
+        },
+        {
+          "author": "adi-shankara",
+          "author_name": "Ādi Śaṅkarācārya",
+          "author_label": "Advaita Tradition",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "जीवात्मा पुनर्जन्म के समय सूक्ष्म तत्वों से आवेष्टित होकर गमन करता है।"
+        }
+      ]
+    },
+    {
+      "id": "brahma-sutras_3_2",
+      "verse": 2,
+      "original": "न स्थानतोऽपि परस्योभयलिङ्गं सर्वत्र हि ॥",
+      "transliteration": "na sthānato'pi parasyobhayaliṅgaṁ sarvatra hi ||",
+      "translation": "Not even on account of place (in various bodies/realms) does the Supreme possess dual characteristics (defect and purity), for everywhere Brahman is declared as devoid of attributes.",
+      "layers": [
+        {
+          "author": "adi-shankara",
+          "author_name": "Ādi Śaṅkarācārya",
+          "author_label": "Sariraka Bhashya",
+          "lang": "en",
+          "type": "commentary",
+          "content": "Brahman dwells in the heart of all creatures like the sun reflected in pools of water, untouched by the blemishes of the medium."
+        },
+        {
+          "author": "adi-shankara",
+          "author_name": "Ādi Śaṅkarācārya",
+          "author_label": "Advaita Tradition",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "परमात्मा सभी उपाधियों में रहकर भी सर्वथा निर्दोष और निर्विकार रहता है।"
+        }
+      ]
+    },
+    {
+      "id": "brahma-sutras_3_3",
+      "verse": 3,
+      "original": "प्रकृतैतावत्त्वं हि प्रतिषेधति ततो ब्रवीति च भूयः ॥",
+      "transliteration": "prakṛtaitāvattvaṁ hi pratiṣedhati tato bravīti ca bhūyaḥ ||",
+      "translation": "For the negative declaration 'Not this, Not this' denies only the limited forms previously described, and then scripture affirms Brahman's transcendent reality beyond.",
+      "layers": [
+        {
+          "author": "adi-shankara",
+          "author_name": "Ādi Śaṅkarācārya",
+          "author_label": "Sariraka Bhashya",
+          "lang": "en",
+          "type": "commentary",
+          "content": "'Neti, Neti' is not nihilism; it eliminates false superimpositions (Adhyasa) to reveal the indestructible substratum of awareness."
+        },
+        {
+          "author": "adi-shankara",
+          "author_name": "Ādi Śaṅkarācārya",
+          "author_label": "Advaita Tradition",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "'नेति नेति' केवल उपाधियों और परिमित रूपों का निषेध करता है, परब्रह्म के अस्तित्व का नहीं।"
+        }
+      ]
+    },
+    {
+      "id": "brahma-sutras_3_4",
+      "verse": 4,
+      "original": "सर्ववेदान्तप्रत्ययं चोदनाद्यविशेषात् ॥",
+      "transliteration": "sarvavedāntapratyayaṁ codanādyaviśeṣāt ||",
+      "translation": "The meditations taught in all the Upanishads refer to the one same Reality, because the injunctions and essential characteristics are non-different.",
+      "layers": [
+        {
+          "author": "adi-shankara",
+          "author_name": "Ādi Śaṅkarācārya",
+          "author_label": "Sariraka Bhashya",
+          "lang": "en",
+          "type": "commentary",
+          "content": "Different Vedic branches describe meditations under various names (Dahara Vidya, Shandilya Vidya), but their core object is the singular Brahman."
+        },
+        {
+          "author": "ramanujacharya",
+          "author_name": "Rāmānujācārya",
+          "author_label": "Sri Bhashya",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "समस्त उपनिषदों की विद्याएं एक ही परब्रह्म की उपासना का प्रतिपादन करती हैं।"
+        }
+      ]
+    },
+    {
+      "id": "brahma-sutras_3_5",
+      "verse": 5,
+      "original": "पुरुषार्थोऽतः शब्दादिति बादरायणः ॥",
+      "transliteration": "puruṣārtho'taḥ śabdāditi bādarāyaṇaḥ ||",
+      "translation": "Through knowledge of Brahman alone the supreme human goal (Moksha) is attained, so declares Badarayana from scriptural testimony.",
+      "layers": [
+        {
+          "author": "adi-shankara",
+          "author_name": "Ādi Śaṅkarācārya",
+          "author_label": "Sariraka Bhashya",
+          "lang": "en",
+          "type": "commentary",
+          "content": "Liberation is not an effect of ritual actions (Karma), which are finite. Direct Self-knowledge (Jnana) destroys ignorance and reveals timeless Freedom."
+        },
+        {
+          "author": "adi-shankara",
+          "author_name": "Ādi Śaṅkarācārya",
+          "author_label": "Advaita Tradition",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "ब्रह्मविद्या से ही परम पुरुषार्थ (मोक्ष) की प्राप्ति होती है।"
+        }
+      ]
+    }
+  ]
+}

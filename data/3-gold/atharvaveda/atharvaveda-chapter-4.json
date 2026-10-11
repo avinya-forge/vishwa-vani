@@ -1,0 +1,42 @@
+{
+  "text": "atharvaveda",
+  "chapter": 4,
+  "title": "Kanda 4: Hymns of Healing & Cosmic Harmony",
+  "summary": "Sacred prayers of Shaunaka Shakha from Kanda 4.",
+  "ai_summary": "Vedic hymns of health, protection, and universal peace from Kanda 4.",
+  "verses": [
+    {
+      "id": "atharvaveda_4_1",
+      "verse": 1,
+      "original": "यस्तिष्ठति चरति यश्च वञ्चति यो निलायं चरति यः प्रतङ्कम् । द्वौ संनिषद्य यन्मन्त्रयेते राजा तद्वेद वरुणस्तृतीयः ॥",
+      "transliteration": "yastiṣṭhati carati yaśca vañcati yo nilāyaṁ carati yaḥ prataṅkam | dvau saṁniṣadya yanmantrayete rājā tadveda varuṇastṛtīyaḥ ||",
+      "translation": "Whosoever stands, moves, or slips away, whosoever walks in secret or in public; whenever two sit together and converse in private, King Varuna knows it as the third!",
+      "layers": [
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedartha Prakasha",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The renowned hymn of divine omnipresence: the cosmic witness sees every hidden thought and private conversation."
+        },
+        {
+          "author": "whitney",
+          "author_name": "William Dwight Whitney",
+          "author_label": "Harvard Oriental Series 1905",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "सायण भाष्य: Whosoever stands, moves, or slips away, whosoever walks in secret or in public; whenever two sit together and converse in private, King Varuna knows it as the third!"
+        },
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedic Tradition",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "अथर्ववेद काण्ड 4: The renowned hymn of divine omnipresence: the cosmic witness sees every hidden thought and private conversation."
+        }
+      ]
+    }
+  ]
+}

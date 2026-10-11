@@ -1,0 +1,75 @@
+{
+  "text": "manusmriti",
+  "chapter": 1,
+  "title": "Adhyaya 1: Classical Duties & Dharma",
+  "summary": "Canonical verses on traditional righteousness from Adhyaya 1.",
+  "ai_summary": "Exposition of ethical conduct and cosmic law according to Sage Manu in Adhyaya 1.",
+  "verses": [
+    {
+      "id": "manusmriti_1_1",
+      "verse": 1,
+      "original": "मनुमेकाग्रमासीनमभिगम्य महर्षयः । प्रतिपूज्य यथान्यायं सुखपृष्टमथाब्रुवन् ॥",
+      "transliteration": "manumekāgramāsīnamabhigamya maharṣayaḥ | pratipūjya yathānyāyaṁ sukhapṛṣṭamathābruvan ||",
+      "translation": "The great sages approached Manu seated with focused contemplative mind, revered him with due protocol, enquired after his welfare, and spoke.",
+      "layers": [
+        {
+          "author": "medhatithi",
+          "author_name": "Medhātithi",
+          "author_label": "Manubhashya (9th c. CE)",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The sages ask Manu to expound the sacred cosmic order and duties of all orders of society."
+        },
+        {
+          "author": "kulluka-bhatta",
+          "author_name": "Kullūka Bhaṭṭa",
+          "author_label": "Manvartha Muktavali (15th c. CE)",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "कुल्लूक भट्ट भाष्य: The great sages approached Manu seated with focused contemplative mind, revered him with due protocol, enquired after his welfare, and spoke."
+        },
+        {
+          "author": "buhler",
+          "author_name": "Georg Bühler",
+          "author_label": "Sacred Books of the East Vol 25",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "मनुस्मृती अध्याय 1: The sages ask Manu to expound the sacred cosmic order and duties of all orders of society."
+        }
+      ]
+    },
+    {
+      "id": "manusmriti_1_2",
+      "verse": 2,
+      "original": "आसीदिदं तमोभूतमप्रज्ञातमलक्षणम् । अप्रतर्क्यमविज्ञेयं प्रसुप्तमिव सर्वतः ॥",
+      "transliteration": "āsīdidaṁ tamobhūtamaprajñātamalakṣaṇam | apratarkyamavijñeyaṁ prasuptamiva sarvataḥ ||",
+      "translation": "This universe was existing in darkness, unperceived, destitute of distinctive marks, inaccessible to logic, unknowable, as if entirely asleep.",
+      "layers": [
+        {
+          "author": "medhatithi",
+          "author_name": "Medhātithi",
+          "author_label": "Manubhashya (9th c. CE)",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The primordial state before cosmic projection was undivided unmanifest potentiality."
+        },
+        {
+          "author": "kulluka-bhatta",
+          "author_name": "Kullūka Bhaṭṭa",
+          "author_label": "Manvartha Muktavali (15th c. CE)",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "कुल्लूक भट्ट भाष्य: This universe was existing in darkness, unperceived, destitute of distinctive marks, inaccessible to logic, unknowable, as if entirely asleep."
+        },
+        {
+          "author": "buhler",
+          "author_name": "Georg Bühler",
+          "author_label": "Sacred Books of the East Vol 25",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "मनुस्मृती अध्याय 1: The primordial state before cosmic projection was undivided unmanifest potentiality."
+        }
+      ]
+    }
+  ]
+}

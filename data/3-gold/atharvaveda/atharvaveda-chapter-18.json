@@ -1,0 +1,42 @@
+{
+  "text": "atharvaveda",
+  "chapter": 18,
+  "title": "Kanda 18: Hymns of Healing & Cosmic Harmony",
+  "summary": "Sacred prayers of Shaunaka Shakha from Kanda 18.",
+  "ai_summary": "Vedic hymns of health, protection, and universal peace from Kanda 18.",
+  "verses": [
+    {
+      "id": "atharvaveda_18_1",
+      "verse": 1,
+      "original": "ये नः पूर्वे पितरः सोम्यासः अनूहिरे पथिभी राजयानैः । तेभ्यो नमो अस्तु सुकृतं लोके ॥",
+      "transliteration": "ye naḥ pūrve pitaraḥ somyāsaḥ anūhire pathibhī rājayānaiḥ | tebhyo namo astu sukṛtaṁ loke ||",
+      "translation": "Those noble ancestors of ours who traversed the royal path of righteousness — to them be salutations in the realm of the blessed!",
+      "layers": [
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedartha Prakasha",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The Pitri hymn: gratitude and reverent continuity with the ancestors who preserved knowledge and virtue."
+        },
+        {
+          "author": "whitney",
+          "author_name": "William Dwight Whitney",
+          "author_label": "Harvard Oriental Series 1905",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "सायण भाष्य: Those noble ancestors of ours who traversed the royal path of righteousness — to them be salutations in the realm of the blessed!"
+        },
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedic Tradition",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "अथर्ववेद काण्ड 18: The Pitri hymn: gratitude and reverent continuity with the ancestors who preserved knowledge and virtue."
+        }
+      ]
+    }
+  ]
+}

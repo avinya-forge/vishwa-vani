@@ -1,0 +1,42 @@
+{
+  "text": "atharvaveda",
+  "chapter": 9,
+  "title": "Kanda 9: Hymns of Healing & Cosmic Harmony",
+  "summary": "Sacred prayers of Shaunaka Shakha from Kanda 9.",
+  "ai_summary": "Vedic hymns of health, protection, and universal peace from Kanda 9.",
+  "verses": [
+    {
+      "id": "atharvaveda_9_1",
+      "verse": 1,
+      "original": "मधु वाता ऋतायते मधु क्षरन्ति सिन्धवः । माध्वीर्नः सन्त्वोषधीः ॥",
+      "transliteration": "madhu vātā ṛtāyate madhu kṣaranti sindhavaḥ | mādhvīrnaḥ santvoṣadhīḥ ||",
+      "translation": "Sweet blow the winds of cosmic truth; sweet flow the rivers; sweet to us be the healing herbs!",
+      "layers": [
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedartha Prakasha",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The Madhu hymn: experiencing the sweet divine essence pulsating throughout the cosmos."
+        },
+        {
+          "author": "whitney",
+          "author_name": "William Dwight Whitney",
+          "author_label": "Harvard Oriental Series 1905",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "सायण भाष्य: Sweet blow the winds of cosmic truth; sweet flow the rivers; sweet to us be the healing herbs!"
+        },
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedic Tradition",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "अथर्ववेद काण्ड 9: The Madhu hymn: experiencing the sweet divine essence pulsating throughout the cosmos."
+        }
+      ]
+    }
+  ]
+}

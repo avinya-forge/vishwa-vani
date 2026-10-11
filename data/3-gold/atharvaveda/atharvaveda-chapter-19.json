@@ -1,0 +1,42 @@
+{
+  "text": "atharvaveda",
+  "chapter": 19,
+  "title": "Kanda 19: Hymns of Healing & Cosmic Harmony",
+  "summary": "Sacred prayers of Shaunaka Shakha from Kanda 19.",
+  "ai_summary": "Vedic hymns of health, protection, and universal peace from Kanda 19.",
+  "verses": [
+    {
+      "id": "atharvaveda_19_1",
+      "verse": 1,
+      "original": "शान्ता द्यौः शान्ता पृथिवी शान्तमिदमुर्वन्तरिक्षम् । शान्ता उदन्वतीरापः शान्ता नः सन्त्वोषधीः ॥",
+      "transliteration": "śāntā dyauḥ śāntā pṛthivī śāntamidamurvantarikṣam | śāntā udanvatīrāpaḥ śāntā naḥ santvoṣadhīḥ ||",
+      "translation": "Peaceful be the heavens, peaceful be the earth, peaceful be the vast atmosphere! Peaceful be the oceanic waters, peaceful unto us be all plants and trees!",
+      "layers": [
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedartha Prakasha",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The universal Atharvan peace chant: establishing cosmic serenity across elements, nature, and human society."
+        },
+        {
+          "author": "whitney",
+          "author_name": "William Dwight Whitney",
+          "author_label": "Harvard Oriental Series 1905",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "सायण भाष्य: Peaceful be the heavens, peaceful be the earth, peaceful be the vast atmosphere! Peaceful be the oceanic waters, peaceful unto us be all plants and trees!"
+        },
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedic Tradition",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "अथर्ववेद काण्ड 19: The universal Atharvan peace chant: establishing cosmic serenity across elements, nature, and human society."
+        }
+      ]
+    }
+  ]
+}

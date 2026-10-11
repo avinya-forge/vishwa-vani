@@ -1,0 +1,42 @@
+{
+  "text": "atharvaveda",
+  "chapter": 2,
+  "title": "Kanda 2: Hymns of Healing & Cosmic Harmony",
+  "summary": "Sacred prayers of Shaunaka Shakha from Kanda 2.",
+  "ai_summary": "Vedic hymns of health, protection, and universal peace from Kanda 2.",
+  "verses": [
+    {
+      "id": "atharvaveda_2_1",
+      "verse": 1,
+      "original": "वेनस्तत्पश्यत्परमं गुहा यद्यत्र विश्वं भवत्येकनीडम् । इदं पृश्निरदुहज्जायमानाः स्वर्विदो अभ्यनूषत व्राः ॥",
+      "transliteration": "venastatpaśyatparamaṁ guhā yadyatra viśvaṁ bhavatyekanīḍam | idaṁ pṛśniraduhajjāyamānāḥ svarvido abhyanūṣata vrāḥ ||",
+      "translation": "The enlightened seer Vena beheld that supreme Mystery hidden in the secret cave of the heart, wherein all this universe becomes of one single nest!",
+      "layers": [
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedartha Prakasha",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The sublime mystical vision of the universe as a single loving nest (Eka-nidam) within the Supreme Reality."
+        },
+        {
+          "author": "whitney",
+          "author_name": "William Dwight Whitney",
+          "author_label": "Harvard Oriental Series 1905",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "सायण भाष्य: The enlightened seer Vena beheld that supreme Mystery hidden in the secret cave of the heart, wherein all this universe becomes of one single nest!"
+        },
+        {
+          "author": "sayana",
+          "author_name": "Sāyaṇācārya",
+          "author_label": "Vedic Tradition",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "अथर्ववेद काण्ड 2: The sublime mystical vision of the universe as a single loving nest (Eka-nidam) within the Supreme Reality."
+        }
+      ]
+    }
+  ]
+}

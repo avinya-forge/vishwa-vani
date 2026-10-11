@@ -1,0 +1,134 @@
+{
+  "text": "brahma-sutras",
+  "chapter": 2,
+  "title": "Adhyaya 2: Avirodha (Non-Contradiction)",
+  "summary": "Refutes rival philosophical schools (Sankhya, Vaisheshika, Buddhist, Jaina) and reconciles apparent contradictions.",
+  "ai_summary": "Badarayana defends the Vedantic view against logical objections, proving that unconscious matter cannot organize the cosmos without consciousness.",
+  "verses": [
+    {
+      "id": "brahma-sutras_2_1",
+      "verse": 1,
+      "original": "स्मृत्यनवकाशदोषप्रसङ्ग इति चेन्नान्यस्मृत्यनवकाशदोषप्रसङ्गात् ॥",
+      "transliteration": "smṛtyanavakāśadoṣaprasaṅga iti cennānyasmṛtyanavakāśadoṣaprasaṅgāt ||",
+      "translation": "If it be argued that there results the defect of leaving no room for certain Smritis (like Kapila's Sankhya), we reply no, because by adopting that, room would be denied to other Smritis (like Manu and Gita).",
+      "layers": [
+        {
+          "author": "adi-shankara",
+          "author_name": "Ādi Śaṅkarācārya",
+          "author_label": "Sariraka Bhashya",
+          "lang": "en",
+          "type": "commentary",
+          "content": "Smriti must be subordinated to Sruti. The Smritis of Manu and Vyasa confirm the Vedic view of Brahman as the cause."
+        },
+        {
+          "author": "adi-shankara",
+          "author_name": "Ādi Śaṅkarācārya",
+          "author_label": "Advaita Tradition",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "श्रुति के अनुकूल स्मृतियाँ ही प्रमाण हैं; सांख्य की स्वतंत्र प्रकृति श्रुति-सम्मत नहीं है।"
+        }
+      ]
+    },
+    {
+      "id": "brahma-sutras_2_2",
+      "verse": 2,
+      "original": "रचनानुपपत्तेश्च नानुमानम् ॥",
+      "transliteration": "racanānupapatteśca nānumānam ||",
+      "translation": "And on account of the impossibility of the design and order of the universe, the inferred entity (insentient Pradhana) cannot be the cause.",
+      "layers": [
+        {
+          "author": "adi-shankara",
+          "author_name": "Ādi Śaṅkarācārya",
+          "author_label": "Sariraka Bhashya",
+          "lang": "en",
+          "type": "commentary",
+          "content": "A wondrous, orderly universe cannot be designed by unthinking matter, just as a palace cannot be erected without an intelligent architect."
+        },
+        {
+          "author": "adi-shankara",
+          "author_name": "Ādi Śaṅkarācārya",
+          "author_label": "Advaita Tradition",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "संसार की अद्भुत व्यवस्था और रचना अचेतन प्रकृति द्वारा संभव नहीं है।"
+        }
+      ]
+    },
+    {
+      "id": "brahma-sutras_2_3",
+      "verse": 3,
+      "original": "तदनन्यत्वमारम्भणशब्दादिभ्यः ॥",
+      "transliteration": "tadananyatvamārambhaṇaśabdādibhyaḥ ||",
+      "translation": "The non-difference of effect (the world) from the cause (Brahman) is established from words like 'originating from speech' and others.",
+      "layers": [
+        {
+          "author": "adi-shankara",
+          "author_name": "Ādi Śaṅkarācārya",
+          "author_label": "Sariraka Bhashya",
+          "lang": "en",
+          "type": "commentary",
+          "content": "Just as pots and jugs are in truth nothing other than clay (Vacharambhanam vikaro namadheyam), so all names and forms are in essence Brahman alone."
+        },
+        {
+          "author": "adi-shankara",
+          "author_name": "Ādi Śaṅkarācārya",
+          "author_label": "Advaita Tradition",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "कार्य (जगत) और कारण (ब्रह्म) में अनन्यता है; जैसे मिट्टी के सभी पात्र वस्तुतः मिट्टी ही हैं।"
+        }
+      ]
+    },
+    {
+      "id": "brahma-sutras_2_4",
+      "verse": 4,
+      "original": "ज्ञोऽत एव ॥",
+      "transliteration": "jño'ta eva ||",
+      "translation": "For this very reason (of non-difference from Brahman), the individual soul (Jiva) is essentially an eternal knower / consciousness.",
+      "layers": [
+        {
+          "author": "adi-shankara",
+          "author_name": "Ādi Śaṅkarācārya",
+          "author_label": "Sariraka Bhashya",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The Jiva is not an inert product of nature; its core essence is self-luminous pure awareness."
+        },
+        {
+          "author": "ramanujacharya",
+          "author_name": "Rāmānujācārya",
+          "author_label": "Sri Bhashya",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The Jiva is an eternal conscious entity possessing Dharmabhuta Jnana (attributive consciousness)."
+        }
+      ]
+    },
+    {
+      "id": "brahma-sutras_2_5",
+      "verse": 5,
+      "original": "अंशो नानाव्यपदेशात् ॥",
+      "transliteration": "aṁśo nānāvyapadeśāt ||",
+      "translation": "The individual soul is a part/spark of the Supreme Lord, because of the declarations of difference as well as non-difference in scripture.",
+      "layers": [
+        {
+          "author": "adi-shankara",
+          "author_name": "Ādi Śaṅkarācārya",
+          "author_label": "Sariraka Bhashya",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The soul is an 'amsha' (part) only figuratively, as space in a jar is part of infinite space, delimited by limiting adjuncts (Upadhis)."
+        },
+        {
+          "author": "ramanujacharya",
+          "author_name": "Rāmānujācārya",
+          "author_label": "Sri Bhashya",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "जीवात्मा परमात्मा का नित्य अंश और शरीर-भूत है।"
+        }
+      ]
+    }
+  ]
+}

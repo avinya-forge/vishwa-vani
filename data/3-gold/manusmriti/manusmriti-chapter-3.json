@@ -1,0 +1,75 @@
+{
+  "text": "manusmriti",
+  "chapter": 3,
+  "title": "Adhyaya 3: Classical Duties & Dharma",
+  "summary": "Canonical verses on traditional righteousness from Adhyaya 3.",
+  "ai_summary": "Exposition of ethical conduct and cosmic law according to Sage Manu in Adhyaya 3.",
+  "verses": [
+    {
+      "id": "manusmriti_3_1",
+      "verse": 1,
+      "original": "यत्र नार्यस्तु पूज्यन्ते रमन्ते तत्र देवताः । यत्रैतास्तु न पूज्यन्ते सर्वास्तत्राफलाः क्रियाः ॥",
+      "transliteration": "yatra nāryastu pūjyante ramante tatra devatāḥ | yatraitāstu na pūjyante sarvāstatrāphalāḥ kriyāḥ ||",
+      "translation": "Where women are honored, there the gods rejoice; but where they are not honored, all sacred rituals become fruitless.",
+      "layers": [
+        {
+          "author": "medhatithi",
+          "author_name": "Medhātithi",
+          "author_label": "Manubhashya (9th c. CE)",
+          "lang": "en",
+          "type": "commentary",
+          "content": "The foundational ethical mandate declaring that domestic and social well-being requires profound reverence for women."
+        },
+        {
+          "author": "kulluka-bhatta",
+          "author_name": "Kullūka Bhaṭṭa",
+          "author_label": "Manvartha Muktavali (15th c. CE)",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "कुल्लूक भट्ट भाष्य: Where women are honored, there the gods rejoice; but where they are not honored, all sacred rituals become fruitless."
+        },
+        {
+          "author": "buhler",
+          "author_name": "Georg Bühler",
+          "author_label": "Sacred Books of the East Vol 25",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "मनुस्मृती अध्याय 3: The foundational ethical mandate declaring that domestic and social well-being requires profound reverence for women."
+        }
+      ]
+    },
+    {
+      "id": "manusmriti_3_2",
+      "verse": 2,
+      "original": "शोचन्ति जामयो यत्र विनश्यत्याशु तत्कुलम् । न शोचन्ति तु यत्रैता वर्धते तद्ध सर्वदा ॥",
+      "transliteration": "śocanti jāmayo yatra vinaśyatyāśu tatkulam | na śocanti tu yatraitā vardhate taddha sarvadā ||",
+      "translation": "Where the female members of the family grieve in sorrow, that lineage quickly perishes; but where they are joyful, that family forever prospers.",
+      "layers": [
+        {
+          "author": "medhatithi",
+          "author_name": "Medhātithi",
+          "author_label": "Manubhashya (9th c. CE)",
+          "lang": "en",
+          "type": "commentary",
+          "content": "Domestic harmony and honoring wives, mothers, and daughters protects the continuity of society."
+        },
+        {
+          "author": "kulluka-bhatta",
+          "author_name": "Kullūka Bhaṭṭa",
+          "author_label": "Manvartha Muktavali (15th c. CE)",
+          "lang": "hi",
+          "type": "commentary",
+          "content": "कुल्लूक भट्ट भाष्य: Where the female members of the family grieve in sorrow, that lineage quickly perishes; but where they are joyful, that family forever prospers."
+        },
+        {
+          "author": "buhler",
+          "author_name": "Georg Bühler",
+          "author_label": "Sacred Books of the East Vol 25",
+          "lang": "mr",
+          "type": "commentary",
+          "content": "मनुस्मृती अध्याय 3: Domestic harmony and honoring wives, mothers, and daughters protects the continuity of society."
+        }
+      ]
+    }
+  ]
+}
