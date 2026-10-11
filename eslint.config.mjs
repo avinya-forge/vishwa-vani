@@ -1,15 +1,10 @@
 import nextPlugin from "@next/eslint-plugin-next";
 import tseslint from "typescript-eslint";
 
-// INFRA-001 complete: All violations fixed 2026-04-08. Rules raised to "error".
-
 const eslintConfig = [
-  // Global ignores
   {
     ignores: [".next/**", "out/**", "build/**", "node_modules/**", "coverage/**"],
   },
-
-  // Next.js rules
   {
     plugins: {
       "@next/next": nextPlugin,
@@ -19,14 +14,10 @@ const eslintConfig = [
       ...nextPlugin.configs["core-web-vitals"].rules,
     },
   },
-
-  // TypeScript rules (applied to all TS/TSX files)
   ...tseslint.configs.recommended.map((config) => ({
     ...config,
     files: ["**/*.ts", "**/*.tsx"],
   })),
-
-  // Project-specific TypeScript rules — all enforced as errors (INFRA-001 complete)
   {
     files: ["**/*.ts", "**/*.tsx"],
     rules: {
@@ -40,12 +31,16 @@ const eslintConfig = [
         { prefer: "type-imports", disallowTypeAnnotations: false },
       ],
       "@typescript-eslint/no-non-null-assertion": "error",
-      // Allow empty object types (common in Next.js page props)
       "@typescript-eslint/no-empty-object-type": "off",
-      // Explicit module boundary types — disabled for gradual adoption
       "@typescript-eslint/explicit-module-boundary-types": "off",
     },
   },
+  {
+    files: ["__tests__/**/*.ts", "__tests__/**/*.tsx"],
+    rules: {
+      "@typescript-eslint/no-require-imports": "off"
+    }
+  }
 ];
 
-export default eslintConfig;
+export default eslintConfig;

@@ -152,6 +152,37 @@ describe('SearchClient', () => {
     });
   });
 
+  it('displays search results and summary when searchLake returns object with summary', async () => {
+    mockSearchLake.mockResolvedValue({
+      results: [mockGitaResult],
+      summary: 'This is a test AI summary.'
+    });
+    render(<SearchClient />);
+    fireEvent.change(screen.getByPlaceholderText(/Search verses/i), { target: { value: 'karma' } });
+    await act(async () => {
+      jest.advanceTimersByTime(450);
+    });
+    await waitFor(() => {
+      expect(screen.getByText('This is a test AI summary.')).toBeInTheDocument();
+      expect(screen.getByText('कर्मण्येवाधिकारस्ते मा फलेषु कदाचन')).toBeInTheDocument();
+    });
+  });
+
+  it('displays no-results state when searchLake returns object with empty results', async () => {
+    mockSearchLake.mockResolvedValue({
+      results: [],
+      summary: 'No summary'
+    });
+    render(<SearchClient />);
+    fireEvent.change(screen.getByPlaceholderText(/Search verses/i), { target: { value: 'xyznotfound' } });
+    await act(async () => {
+      jest.advanceTimersByTime(450);
+    });
+    await waitFor(() => {
+      expect(screen.getByText(/No fragments found/i)).toBeInTheDocument();
+    });
+  });
+
   it('handles search error gracefully without crash', async () => {
     mockSearchLake.mockRejectedValue(new Error('Lake offline'));
     render(<SearchClient />);
