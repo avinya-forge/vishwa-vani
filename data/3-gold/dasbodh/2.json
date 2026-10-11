@@ -1,0 +1,39 @@
+[
+  {
+    "id": "dasbodh_2_1",
+    "text_slug": "dasbodh",
+    "chapter": 2,
+    "verse": 1,
+    "original": "उत्तम गुणांचा अभ्यास करावा। दुर्गुण तो टाकून द्यावा।\nआपला आपण शोध घ्यावा। अंतर्यामीं॥",
+    "sanskrit": "उत्तम गुणांचा अभ्यास करावा। दुर्गुण तो टाकून द्यावा।\nआपला आपण शोध घ्यावा। अंतर्यामीं॥",
+    "transliteration": "uttama guṇāṃcā abhyāsa karāvā | durguṇa to ṭākūna dyāvā |\nāpalā āpaṇa śodha ghyāvā | aṃtaryāmīṃ ||",
+    "translation": "Cultivate noble virtues with diligence, discard destructive vices without hesitation, and relentlessly inquire into your own innermost Self.",
+    "meaning": "Dashaka 2: Murkha Lakshana (Discerning Wisdom from Delusion)",
+    "layers": [
+      {
+        "author": "samarth-ramdas",
+        "author_name": "Samarth Ramdas Swami",
+        "author_label": "Dasbodh Original Ovi",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "उत्तम गुणांचा सतत सराव करावा, दुर्गुणांचा त्याग करावा आणि स्वतःच्या अंतर्यामी आत्मतत्त्वाचा शोध घ्यावा."
+      },
+      {
+        "author": "warkari-scholars",
+        "author_name": "Warkari & Ramdasi Lineage",
+        "author_label": "Bhavartha Dipika Synthesis",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Ramdas establishes a keen psychological diagnostic of human habits. Self-mastery requires rigorous self-inquiry rather than blaming external circumstances."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "दासबोध हिन्दी व्याख्या",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "उत्तम गुणों का निरंतर अभ्यास करना चाहिए, दुर्गुणों का त्याग कर देना चाहिए, और अपने भीतर छिपे आत्मतत्त्व की निरंतर खोज करनी चाहिए।"
+      }
+    ]
+  }
+]

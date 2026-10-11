@@ -1,0 +1,39 @@
+[
+  {
+    "id": "dasbodh_10_1",
+    "text_slug": "dasbodh",
+    "chapter": 10,
+    "verse": 1,
+    "original": "प्रकृती आणि पुरुष। दोहींचा हा विलास।\nजाणोनि जो उदासीन। तो मुक्त होय॥",
+    "sanskrit": "प्रकृती आणि पुरुष। दोहींचा हा विलास।\nजाणोनि जो उदासीन। तो मुक्त होय॥",
+    "transliteration": "prakṛtī āṇi puruṣa | dohīṃcā hā vilāsa |\njāṇoni jo udāsīna | to mukta hoya ||",
+    "translation": "The entire cosmic play is the interaction of Prakriti (nature) and Purusha (consciousness). He who perceives this and remains detached is liberated.",
+    "meaning": "Dashaka 10: Purusha & Prakriti (Spirit and Material Nature)",
+    "layers": [
+      {
+        "author": "samarth-ramdas",
+        "author_name": "Samarth Ramdas Swami",
+        "author_label": "Dasbodh Original Ovi",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "हा सर्व पसारा प्रकृती आणि पुरुषाचा खेळ आहे. हे जाणून जो अलिप्त आणि समबुद्धीने राहतो, तोच मुक्त होतो."
+      },
+      {
+        "author": "warkari-scholars",
+        "author_name": "Warkari & Ramdasi Lineage",
+        "author_label": "Bhavartha Dipika Synthesis",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Echoing the Sankhya framework of Bhagavad Gita Chapter 13, Ramdas shows that all physical and mental activities belong to nature, while consciousness remains ever unattached."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "दासबोध हिन्दी व्याख्या",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "प्रकृति और पुरुष का ही यह सारा खेल है। जो इसे जानकर आसक्तिरहित और समभाव में स्थित रहता है, वह मुक्त हो जाता है।"
+      }
+    ]
+  }
+]

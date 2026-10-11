@@ -1,0 +1,39 @@
+[
+  {
+    "id": "dasbodh_6_1",
+    "text_slug": "dasbodh",
+    "chapter": 6,
+    "verse": 1,
+    "original": "दृश्य तितुकें नासेल। ब्रह्म तें एकचि उरेल।\nऐसें जेणें जाणितलें। तोचि ज्ञानी॥",
+    "sanskrit": "दृश्य तितुकें नासेल। ब्रह्म तें एकचि उरेल।\nऐसें जेणें जाणितलें। तोचि ज्ञानी॥",
+    "transliteration": "dṛśya titukeṃ nāsela | brahma teṃ ekaci urela |\naiseṃ jeṇeṃ jāṇitaleṃ | toci jñānī ||",
+    "translation": "Whatever is perceived by the senses must perish; Brahman alone remains eternal and immutable. He who realizes this directly is the true knower.",
+    "meaning": "Dashaka 6: Devata & Maya Nirupana (The Illusion of Cosmic Appearance)",
+    "layers": [
+      {
+        "author": "samarth-ramdas",
+        "author_name": "Samarth Ramdas Swami",
+        "author_label": "Dasbodh Original Ovi",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "जे जे दृश्य आहे ते सर्व नाशवंत आहे; केवळ एक परब्रह्मच अविनाशी उरते. ज्याने हे अनुभवाने जाणले, तोच खरा ज्ञानी होय."
+      },
+      {
+        "author": "warkari-scholars",
+        "author_name": "Warkari & Ramdasi Lineage",
+        "author_label": "Bhavartha Dipika Synthesis",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Ramdas aligns fully with Shankaracharya's Vivartavada: the perishable objective world is a transient projection upon the changeless screen of pure consciousness."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "दासबोध हिन्दी व्याख्या",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "जो कुछ भी दृश्यमान है वह नश्वर है; केवल एक परब्रह्म ही शाश्वत रहता है। जिसने इसे साक्षात् जान लिया, वही सच्चा ज्ञानी है।"
+      }
+    ]
+  }
+]

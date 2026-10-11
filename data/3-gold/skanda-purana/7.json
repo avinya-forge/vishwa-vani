@@ -1,0 +1,39 @@
+[
+  {
+    "id": "skanda-purana_7_1",
+    "text_slug": "skanda-purana",
+    "chapter": 7,
+    "verse": 1,
+    "original": "सौराष्ट्रे सोमनाथं च श्रीशैले मल्लिकार्जुनम् ।\nप्रभासे तीर्थमुख्ये तु स्नात्वा मुच्येत पातकैः ॥",
+    "sanskrit": "सौराष्ट्रे सोमनाथं च श्रीशैले मल्लिकार्जुनम् ।\nप्रभासे तीर्थमुख्ये तु स्नात्वा मुच्येत पातकैः ॥",
+    "transliteration": "saurāṣṭre somanāthaṃ ca śrīśaile mallikārjunam |\nprabhāse tīrthamukhye tu snātvā mucyeta pātakaiḥ ||",
+    "translation": "In Saurashtra shines Somnath, and on Mount Srisaila stands Mallikarjuna; by taking sacred bath at Prabhasa, the crown jewel of coastal pilgrimages, all karmic afflictions are dissolved.",
+    "meaning": "Khanda 7: Prabhasa Khanda (Somnath, Dwaraka & Maritime Sacred Coast)",
+    "layers": [
+      {
+        "author": "gv-tagare",
+        "author_name": "Dr. G.V. Tagare",
+        "author_label": "Skanda Purana Translation & Critical Notes",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Prabhasa Khanda concludes the epic Skanda Purana along the Arabian Sea coast, documenting the legendary first Jyotirlinga (Somnath) and Krishna's sacred passage into eternity at Prabhasa Patan."
+      },
+      {
+        "author": "kashi-scholars",
+        "author_name": "Kashi Khanda Scholarly Tradition",
+        "author_label": "Puranic Tradition",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "सौराष्ट्र में सोमनाथ और श्रीशैल पर मल्लिकार्जुन ज्योतिर्लिंग स्थित हैं; तीर्थों में श्रेष्ठ प्रभास क्षेत्र में स्नान करने से प्राणी पापमुक्त हो जाता है।"
+      },
+      {
+        "author": "traditional",
+        "author_name": "Traditional Warkari Scholar",
+        "author_label": "Traditional Marathi Exegesis",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "सौराष्ट्रात सोमनाथ आणि श्रीशैलावर मल्लिकार्जुन आहेत; तीर्थांत श्रेष्ठ असणाऱ्या प्रभास क्षेत्रात स्नान केल्याने सर्व दोषांचे निवारण होते."
+      }
+    ]
+  }
+]

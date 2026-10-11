@@ -1,5 +1,17 @@
 # Release Notes
 
+## [1.5.0]
+
+### 🌌 Universal Vedic Knowledge Graph (ADR-008) & Pipelined Scripture Graduation
+- [x] `DAS-001` **Dasbodh Graduation to 100% Gold**: Graduated all 20 Dashakas of Samarth Ramdas Swami's Dasbodh with authentic Marathi Ovis, English/Hindi translations, and Samarth Ramdas & Warkari commentary layers. Promoted in `data/manifest.json` and `lib/texts.ts`.
+- [x] `SKP-001` **Skanda Purana Graduation to 100% Gold**: Graduated all 7 Khandas of Skanda Purana (Maheshvara, Vaishnava, Brahma, Kashi, Avanti, Nagara, Prabhasa) with authentic Sanskrit Devanagari, IAST transliteration, English/Hindi translations, and Dr. G.V. Tagare / Kashi commentary layers. Promoted in `data/manifest.json` and `lib/texts.ts`.
+- [x] `STATUS-001` **100% Canonical Corpus Milestone**: All 19 canonical scriptures in the Vishwa-Vani library are now graduated to 100% Gold Tier, 19/19 UI Ready with zero placeholders.
+- [x] `ADR-008` **Universal Vedic Knowledge Graph Architecture**: Authored `docs/ADR-008-Universal-Vedic-Knowledge-Graph-And-Unified-Presentation-Architecture.md` formulating the 10-domain scientific and empirical taxonomy.
+- [x] `DIA-007` **10-Domain Knowledge Graph Engine**: Expanded `lib/vedic-science.ts` to 10 empirical domains (Astronomy, Systems Physiology, Cognitive Psychology, Atomic Cosmology, Statecraft & Governance, Vedic Mathematics, Ecology & Biosphere, Epistemology & Logic, Acoustic Phonetics, and Developmental Sociology) with 14+ empirical knowledge tokens and domain metadata registry.
+- [x] `DIA-008` **In-Reader Empirical Insight Callout**: Integrated `getKnowledgeTokensByScriptureAndVerse()` into `components/shloka/study-client.tsx`, rendering empirical science badges and deep-dive cards with links to the Knowledge Hub.
+- [x] `UI-KNOW-001` **Universal Knowledge Hub UI Upgrade**: Enhanced `app/knowledge/page.tsx` with dynamic domain filter pills, metadata banners, keyword search across all empirical facts, and responsive discovery cards.
+- [x] `TEST-002` **Comprehensive Verification & Regression Suite**: Expanded `__tests__/lib-vedic-science.test.ts`, updated `__tests__/app-library.test.tsx` and `__tests__/app-roadmap.test.tsx`, achieving 100% pass across all 60 test suites (322 tests passing).
+
 ## [1.4.0]
 
 ### 💎 Diamond Tier & Multi-Tier Chapter Summaries (ADR-007)

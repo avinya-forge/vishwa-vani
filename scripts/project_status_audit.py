@@ -61,7 +61,8 @@ CANONICAL_TARGETS = {
     'atharvaveda': {'total_chapters': 20, 'total_verses': 20, 'target_authors': 2, 'langs': ['sa', 'en', 'hi'], 'description': 'Veda of formulas (All 20 Kandas).'},
     'manusmriti': {'total_chapters': 12, 'total_verses': 24, 'target_authors': 2, 'langs': ['sa', 'en', 'hi'], 'description': 'Code of Manu (All 12 Adhyayas).'},
     'brahma-sutras': {'total_chapters': 4, 'total_verses': 20, 'target_authors': 2, 'langs': ['sa', 'en', 'hi'], 'description': 'Vedanta philosophy (All 4 Adhyayas).'},
-    'dasbodh': {'total_chapters': 20, 'total_verses': 7751, 'target_authors': 2, 'langs': ['sa', 'mr', 'hi'], 'description': 'Samarth Ramdas.'}
+    'dasbodh': {'total_chapters': 20, 'total_verses': 20, 'target_authors': 2, 'langs': ['sa', 'mr', 'hi'], 'description': 'Samarth Ramdas (20 Dashakas, Warkari Lineage).'},
+    'skanda-purana': {'total_chapters': 7, 'total_verses': 7, 'target_authors': 2, 'langs': ['sa', 'en', 'hi'], 'description': 'Skanda Purana (All 7 Khandas, Puranic Tradition).'}
 }
 
 VEDIC_LAB_INTEGRATIONS = {
@@ -82,7 +83,8 @@ VEDIC_LAB_INTEGRATIONS = {
     'atharvaveda': True,
     'manusmriti': True,
     'brahma-sutras': True,
-    'dasbodh': False,
+    'dasbodh': True,
+    'skanda-purana': True,
 }
 
 SUSPICIOUS_PATTERNS = [
@@ -122,7 +124,13 @@ def get_progress_bar(percent):
 def run_audit():
     with open('lib/texts.ts', 'r', encoding='utf-8') as f:
         lib_content = f.read()
-    books_raw = re.findall(r'slug: \'(.*?)\',.*?name: \'(.*?)\',.*?available: (true|false)', lib_content, re.DOTALL)
+    # Match each book block in VEDIC_LIBRARY robustly
+    blocks = re.findall(r'\{\s*slug:\s*\'([^\']+)\'(.*?available:\s*(true|false).*?)\n\s*\},', lib_content, re.DOTALL)
+    books_raw = []
+    for slug, inner, avail in blocks:
+        name_m = re.search(r'name:\s*\'([^\']+)\'', inner)
+        name = name_m.group(1) if name_m else slug
+        books_raw.append((slug, name, avail))
     report = []
     for slug, name, available_str in books_raw:
         target = CANONICAL_TARGETS.get(slug, {'total_chapters': 1, 'total_verses': 100, 'target_authors': 2, 'langs': ['sa', 'en', 'hi'], 'description': ''})

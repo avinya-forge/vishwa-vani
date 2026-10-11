@@ -1,0 +1,39 @@
+[
+  {
+    "id": "dasbodh_12_1",
+    "text_slug": "dasbodh",
+    "chapter": 12,
+    "verse": 1,
+    "original": "सत्य तें शोधून घ्यावें। असत्य तें सोडून द्यावें।\nसदैव सावध असावें। ज्ञानी जनें॥",
+    "sanskrit": "सत्य तें शोधून घ्यावें। असत्य तें सोडून द्यावें।\nसदैव सावध असावें। ज्ञानी जनें॥",
+    "transliteration": "satya teṃ śodhūna ghyāveṃ | asatya teṃ soḍūna dyāveṃ |\nsadaiva sāvadha asāveṃ | jñānī janeṃ ||",
+    "translation": "Investigate and hold fast to that which is eternal truth; let go of all that is false. The wise seeker must abide in vigilance at every moment.",
+    "meaning": "Dashaka 12: Vivek & Vairagya (Discriminative Discernment)",
+    "layers": [
+      {
+        "author": "samarth-ramdas",
+        "author_name": "Samarth Ramdas Swami",
+        "author_label": "Dasbodh Original Ovi",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "सत्याचा शोध घ्यावा आणि असत्याचा त्याग करावा. ज्ञानी व्यक्तीने प्रत्येक क्षणी सावध आणि दक्ष राहिले पाहिजे."
+      },
+      {
+        "author": "warkari-scholars",
+        "author_name": "Warkari & Ramdasi Lineage",
+        "author_label": "Bhavartha Dipika Synthesis",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Viveka (discernment) is not an intellectual event that happens once; it is a continuous posture of mindfulness separating essence from appearances."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "दासबोध हिन्दी व्याख्या",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "सत्य की निरंतर खोज करनी चाहिए और असत्य का त्याग कर देना चाहिए। ज्ञानी पुरुष को सदा जागरूक और सावधान रहना चाहिए।"
+      }
+    ]
+  }
+]

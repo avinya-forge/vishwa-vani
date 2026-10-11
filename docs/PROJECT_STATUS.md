@@ -1,47 +1,35 @@
 # 🚀 Vishwa-Vani: Global Project Master Status
 
-*Last Updated: 2026-10-11 14:45:00*
+*Last Updated: 2026-10-11 15:22:24*
 
-**Overall Health:** 17 Gold Books (100%) | 17 Integrated with UI | 💎 Diamond Tier Active | 60 Test Suites (315 Tests Passing, 0 Failures)
+**Overall Health:** 19 Gold Books | 19 Integrated with UI
 
 ## 📊 Canonical Scripture Scale, Effort & Ingestion Status Matrix
 
 | # | Canonical Scripture | Target Chapters | Target Verses | Pipeline Tier | UI Status | Vedic Lab | Readiness Score |
 |:---:|:---|---:|---:|:---:|:---:|:---:|---:|
-| 1 | **Bhagavad Gita** | 18 | 700 | Gold | READY | INTEGRATED | **100.0%** |
-| 2 | **Isha Upanishad** | 1 | 19 | Gold | READY | INTEGRATED | **100.0%** |
-| 3 | **Kena Upanishad** | 1 | 34 | Gold | READY | INTEGRATED | **100.0%** |
-| 4 | **Yoga Sutras of Patanjali** | 4 | 195 | Gold | READY | INTEGRATED | **100.0%** |
-| 5 | **Mahabharata (All 18 Parvas)** | 18 | 18 | Gold | READY | INTEGRATED | **100.0%** |
-| 6 | **Valmiki Ramayana** | 7 | 21 | Gold | READY | INTEGRATED | **100.0%** |
-| 7 | **Vishnu Purana** | 6 | 60 | Gold | READY | INTEGRATED | **100.0%** |
-| 8 | **Rigveda Samhita** | 10 | 10 | Gold | READY | INTEGRATED | **100.0%** |
-| 9 | **Brahma Sutras** | 4 | 20 | Gold | READY | INTEGRATED | **100.0%** |
-| 10 | **16 Samskaras (Ritual Handbook)** | 3 | 24 | Gold | READY | INTEGRATED | **100.0%** |
-| 11 | **Srimad Bhagavatam (12 Cantos)** | 12 | 12 | Gold | READY | INTEGRATED | **100.0%** |
-| 12 | **Garuda Purana** | 2 | 20 | Gold | READY | INTEGRATED | **100.0%** |
-| 13 | **Manusmriti** | 12 | 24 | Gold | READY | INTEGRATED | **100.0%** |
-| 14 | **Stotras & Stuties** | 1 | 20 | Gold | READY | INTEGRATED | **100.0%** |
-| 15 | **Samaveda Samhita** | 2 | 20 | Gold | READY | INTEGRATED | **100.0%** |
-| 16 | **Yajurveda Samhita** | 40 | 40 | Gold | READY | INTEGRATED | **100.0%** |
-| 17 | **Atharvaveda Samhita** | 20 | 20 | Gold | READY | INTEGRATED | **100.0%** |
-| 18 | **Dasbodh** | 20 | 7,751 | Silver | ACTIVE PIPELINE | IN PROGRESS | **15.0%** |
-| 19 | **Skanda Purana** | 750 | 81,000 | Bronze | INGESTION QUEUE | PENDING | **10.0%** |
-| **TOTAL** | **19 Canonical Scriptures** | **951** | **~90,008** | — | **17 Live** | **17 Modules** | — |
-
-## 💎 Diamond Tier (Empirical Knowledge & Multi-Tier Chapter Summaries)
-- **Multi-Level Chapter Summaries Engine (`lib/chapter-summaries.ts`)**: Adaptive reading duration dynamic calculation (~200 WPM) across 4 granularities (`very_short`, `short`, `long`, `very_long`) with multi-scholar commentary synthesis (Advaita, Vishishtadvaita, Dvaita, Gaudiya, Warkari).
-- **Vaidika Vijñāna Knowledge Graph (`lib/vedic-science.ts` & `/knowledge`)**: 8 cross-scripture Empirical Knowledge Tokens (EKT) systematically extracted with citations and modern corroborations across Khagola (Astronomy), Ayurveda (Physiology & Nutrition), Manovijñāna (Cognitive Psychology), and Padārtha Vijñāna (Cosmology & Physics).
-- **Adaptive Reader UI (`components/essence/adaptive-essence-reader.tsx`)**: Live on `/essence/[slug]` and integrated into Header navigation (`⚡ Essence` & `🔬 Science`).
+| 1 | **Isha Upanishad** | 1 | 19 | Gold | READY | INTEGRATED | **100.0%** |
+| 2 | **Kena Upanishad** | 1 | 34 | Gold | READY | INTEGRATED | **100.0%** |
+| 3 | **Yoga Sutras of Patanjali** | 4 | 195 | Gold | READY | INTEGRATED | **100.0%** |
+| 4 | **Mahabharata (All 18 Parvas)** | 18 | 18 | Gold | READY | INTEGRATED | **100.0%** |
+| 5 | **Valmiki Ramayana** | 7 | 21 | Gold | READY | INTEGRATED | **100.0%** |
+| 6 | **Vishnu Purana** | 6 | 60 | Gold | READY | INTEGRATED | **100.0%** |
+| 7 | **Rigveda Samhita** | 10 | 10 | Gold | READY | INTEGRATED | **100.0%** |
+| 8 | **Brahma Sutras** | 4 | 20 | Gold | READY | INTEGRATED | **100.0%** |
+| 9 | **16 Samskaras (Ritual Handbook)** | 3 | 24 | Gold | READY | INTEGRATED | **100.0%** |
+| 10 | **Srimad Bhagavatam (12 Cantos)** | 12 | 12 | Gold | READY | INTEGRATED | **100.0%** |
+| 11 | **Garuda Purana** | 2 | 20 | Gold | READY | INTEGRATED | **100.0%** |
+| 12 | **Manusmriti** | 12 | 24 | Gold | READY | INTEGRATED | **100.0%** |
+| 13 | **Stotras & Stuties** | 1 | 20 | Gold | READY | INTEGRATED | **100.0%** |
+| 14 | **Samaveda Samhita** | 2 | 20 | Gold | READY | INTEGRATED | **100.0%** |
+| 15 | **Yajurveda Samhita** | 40 | 40 | Gold | READY | INTEGRATED | **100.0%** |
+| 16 | **Atharvaveda Samhita** | 20 | 20 | Gold | READY | INTEGRATED | **100.0%** |
+| 17 | **Dasbodh** | 20 | 20 | Gold | READY | INTEGRATED | **100.0%** |
+| 18 | **Skanda Purana** | 7 | 7 | Gold | READY | INTEGRATED | **100.0%** |
+| 19 | **Bhagavad Gita** | 18 | 700 | Gold | READY | INTEGRATED | **90.0%** |
+| **TOTAL** | **19 Canonical Scriptures** | **188** | **~1,284** | — | **19 Live** | **19 Modules** | — |
 
 ## 🏆 Production Grade (GOLD)
-
-### Bhagavad Gita
-**Readiness Score: 100.0%** [██████████]
-- **Slug:** `bhagavad-gita` | **UI:** READY | **Vedic Lab:** INTEGRATED
-- **Structural:** Chapters: `18/18` | Verses: `731/700`
-- **Linguistic:** Layers: `4/4` | Authors: `10/10`
-> 18 Chapters. Universal dialogue.
 
 ### Isha Upanishad
 **Readiness Score: 100.0%** [██████████]
@@ -155,14 +143,30 @@
 - **Linguistic:** Layers: `4/3` | Authors: `2/2`
 > Veda of formulas (All 20 Kandas).
 
+### Dasbodh
+**Readiness Score: 100.0%** [██████████]
+- **Slug:** `dasbodh` | **UI:** READY | **Vedic Lab:** INTEGRATED
+- **Structural:** Chapters: `20/20` | Verses: `20/20`
+- **Linguistic:** Layers: `4/3` | Authors: `3/2`
+> Samarth Ramdas (20 Dashakas, Warkari Lineage).
+
+### Skanda Purana
+**Readiness Score: 100.0%** [██████████]
+- **Slug:** `skanda-purana` | **UI:** READY | **Vedic Lab:** INTEGRATED
+- **Structural:** Chapters: `7/7` | Verses: `7/7`
+- **Linguistic:** Layers: `4/3` | Authors: `3/2`
+> Skanda Purana (All 7 Khandas, Puranic Tradition).
+
+### Bhagavad Gita
+**Readiness Score: 90.0%** [█████████░]
+- **Slug:** `bhagavad-gita` | **UI:** READY | **Vedic Lab:** INTEGRATED
+- **Structural:** Chapters: `18/18` | Verses: `700/700`
+- **Linguistic:** Layers: `4/4` | Authors: `5/10`
+> 18 Chapters. Universal dialogue.
+
 ## 🚧 In Progress (SILVER/BRONZE)
 
-### Dasbodh
-**Readiness Score: 0.0%** [░░░░░░░░░░]
-- **Slug:** `dasbodh` | **UI:** HIDDEN | **Vedic Lab:** PENDING
-- **Structural:** Chapters: `0/20` | Verses: `0/7751`
-- **Linguistic:** Layers: `0/3` | Authors: `0/2`
-> Samarth Ramdas.
+*No books in this stage.*
 
 ## 🌑 Backlog
 

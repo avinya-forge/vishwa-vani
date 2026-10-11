@@ -1,0 +1,39 @@
+[
+  {
+    "id": "dasbodh_3_1",
+    "text_slug": "dasbodh",
+    "chapter": 3,
+    "verse": 1,
+    "original": "आधीं प्रपंच करावा नेटका। मग घ्यावें परमार्थविवेका।\nयेथें आळस करूं नका। विवेकी जन हो॥",
+    "sanskrit": "आधीं प्रपंच करावा नेटका। मग घ्यावें परमार्थविवेका।\nयेथें आळस करूं नका। विवेकी जन हो॥",
+    "transliteration": "ādhīṃ prapañca karāvā neṭakā | maga ghyāveṃ paramārthavivekā |\nyetheṃ āḷasa karūṃ nakā | vivekī jana ho ||",
+    "translation": "First discharge your worldly duties with excellence and integrity; then grasp the highest spiritual wisdom. O seekers of discernment, never succumb to lethargy!",
+    "meaning": "Dashaka 3: Svadharma & Vairagya (Duty and Inner Renunciation)",
+    "layers": [
+      {
+        "author": "samarth-ramdas",
+        "author_name": "Samarth Ramdas Swami",
+        "author_label": "Dasbodh Original Ovi",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "आधी आपला प्रपंच चोख आणि प्रामाणिकपणे करावा, मग परमार्थाचा विवेक साधावा. हे विचारवंतांनो, यात आळस करू नका."
+      },
+      {
+        "author": "warkari-scholars",
+        "author_name": "Warkari & Ramdasi Lineage",
+        "author_label": "Bhavartha Dipika Synthesis",
+        "lang": "en",
+        "type": "commentary",
+        "content": "The quintessential doctrine of Samarth Ramdas: true spirituality does not mean running away to the forest, but fulfilling social duty with perfection while keeping the inner mind centered in transcendence."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "दासबोध हिन्दी व्याख्या",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "पहले अपने सांसारिक कर्तव्यों को निष्ठा और कुशलता से पूरा करो, तत्पश्चात परमार्थ और विवेक को धारण करो। हे विवेकशील जनों, इसमें कभी आलस्य मत करो।"
+      }
+    ]
+  }
+]

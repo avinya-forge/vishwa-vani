@@ -1,0 +1,39 @@
+[
+  {
+    "id": "dasbodh_5_1",
+    "text_slug": "dasbodh",
+    "chapter": 5,
+    "verse": 1,
+    "original": "सद्गुरूवांचून नाहीं ज्ञान। हें शास्त्रसंमत प्रमाण।\nज्ञानेंविण समाधान। होणार नाहीं॥",
+    "sanskrit": "सद्गुरूवांचून नाहीं ज्ञान। हें शास्त्रसंमत प्रमाण।\nज्ञानेंविण समाधान। होणार नाहीं॥",
+    "transliteration": "sadgurūvāṃcūna nāhīṃ jñāna | heṃ śāstrasaṃmata pramāṇa |\njñāneṃviṇa samādhāna | hoṇāra nāhīṃ ||",
+    "translation": "Without the authentic spiritual preceptor, genuine wisdom cannot dawn; this is the consensus of all sacred scriptures. And without wisdom, true peace is impossible.",
+    "meaning": "Dashaka 5: Shishya & Guru Bodha (Authentic Mentorship)",
+    "layers": [
+      {
+        "author": "samarth-ramdas",
+        "author_name": "Samarth Ramdas Swami",
+        "author_label": "Dasbodh Original Ovi",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "सद्गुरूंच्या मार्गदर्शनाशिवाय आत्मज्ञान प्राप्त होत नाही, हे सर्व शास्त्रांचे प्रमाण आहे; आणि ज्ञानाशिवाय मनाला पूर्ण समाधान लाभत नाही."
+      },
+      {
+        "author": "warkari-scholars",
+        "author_name": "Warkari & Ramdasi Lineage",
+        "author_label": "Bhavartha Dipika Synthesis",
+        "lang": "en",
+        "type": "commentary",
+        "content": "The Sadguru is not a bodily persona, but the embodiment of non-dual awakening guiding the disciple out of intellectual confusion."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "दासबोध हिन्दी व्याख्या",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "सद्गुरु के बिना सच्चा ज्ञान प्राप्त नहीं हो सकता, यह समस्त शास्त्रों का प्रमाण है; और ज्ञान के बिना परम समाधान कभी संभव नहीं।"
+      }
+    ]
+  }
+]

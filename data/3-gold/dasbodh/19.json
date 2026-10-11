@@ -1,0 +1,39 @@
+[
+  {
+    "id": "dasbodh_19_1",
+    "text_slug": "dasbodh",
+    "chapter": 19,
+    "verse": 1,
+    "original": "प्रयत्ने वाळूचे कण रगडितां तेलही गळे।\nअशक्य तेही शक्य फळे। अभ्यासबळें॥",
+    "sanskrit": "प्रयत्ने वाळूचे कण रगडितां तेलही गळे।\nअशक्य तेही शक्य फळे। अभ्यासबळें॥",
+    "transliteration": "prayatne vāḷūce kaṇa ragaḍitāṃ telahī gaḷe |\naśakya tehī śakya phaḷe | abhyāsabaḷeṃ ||",
+    "translation": "By unrelenting perseverance even sand can yield oil; that which seems impossible becomes possible through persistent discipline and effort.",
+    "meaning": "Dashaka 19: Shikshana & Niti (Moral Education and Societal Uplift)",
+    "layers": [
+      {
+        "author": "samarth-ramdas",
+        "author_name": "Samarth Ramdas Swami",
+        "author_label": "Dasbodh Original Ovi",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "प्रयत्नाने वाळूचे कण रगडल्यास तेलही निघू शकते; अभ्यासाच्या आणि पुरुषार्थाच्या बळाने अशक्यही शक्य होते."
+      },
+      {
+        "author": "warkari-scholars",
+        "author_name": "Warkari & Ramdasi Lineage",
+        "author_label": "Bhavartha Dipika Synthesis",
+        "lang": "en",
+        "type": "commentary",
+        "content": "A timeless celebration of human agency and perseverance. Spiritual seekers must cultivate invincible resolve."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "दासबोध हिन्दी व्याख्या",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "अथक प्रयास और दृढ़ संकल्प से असंभव भी संभव हो जाता है। निरंतर अभ्यास के बल पर मनुष्य कठिन से कठिन कार्य सिद्ध कर लेता है।"
+      }
+    ]
+  }
+]

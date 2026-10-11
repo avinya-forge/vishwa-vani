@@ -1,0 +1,39 @@
+[
+  {
+    "id": "dasbodh_17_1",
+    "text_slug": "dasbodh",
+    "chapter": 17,
+    "verse": 1,
+    "original": "जो सर्वांघटीं वर्ततो। तोचि परमात्मा निश्चितो।\nभेदाभेद सांडूनि पाहातो। तोचि ज्ञानी॥",
+    "sanskrit": "जो सर्वांघटीं वर्ततो। तोचि परमात्मा निश्चितो।\nभेदाभेद सांडूनि पाहातो। तोचि ज्ञानी॥",
+    "transliteration": "jo sarvāṃghaṭīṃ vartato | toci paramātmā niścito |\nbhedābheda sāṃḍūni pāhāto | toci jñānī ||",
+    "translation": "He who abides within all living beings is unquestionably the Supreme Self. He who looks beyond all dualistic distinctions is the illumined seer.",
+    "meaning": "Dashaka 17: Prakriti Purusha Samvada (Dialectics of Spirit and Cosmos)",
+    "layers": [
+      {
+        "author": "samarth-ramdas",
+        "author_name": "Samarth Ramdas Swami",
+        "author_label": "Dasbodh Original Ovi",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "जो सर्व प्राणिमात्रांच्या हृदयात वास करतो, तोच परमात्मा आहे. जो सर्व भेद विसरून एकत्व पाहतो, तोच ज्ञानी."
+      },
+      {
+        "author": "warkari-scholars",
+        "author_name": "Warkari & Ramdasi Lineage",
+        "author_label": "Bhavartha Dipika Synthesis",
+        "lang": "en",
+        "type": "commentary",
+        "content": "The vision of Samadarshana: recognizing the same divine consciousness shining through every form of life."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "दासबोध हिन्दी व्याख्या",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "जो समस्त घटों (प्राणियों) में विद्यमान है, वही निश्चित रूप से परमात्मा है। जो समस्त भेदों से परे देखता है, वही ज्ञानी है।"
+      }
+    ]
+  }
+]

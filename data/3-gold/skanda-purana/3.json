@@ -1,0 +1,39 @@
+[
+  {
+    "id": "skanda-purana_3_1",
+    "text_slug": "skanda-purana",
+    "chapter": 3,
+    "verse": 1,
+    "original": "रामसेतुसमं तीर्थं न भूतं न भविष्यति ।\nयस्य दर्शनमात्रेण ब्रह्महत्या व्यपोहति ॥",
+    "sanskrit": "रामसेतुसमं तीर्थं न भूतं न भविष्यति ।\nयस्य दर्शनमात्रेण ब्रह्महत्या व्यपोहति ॥",
+    "transliteration": "rāmasetusamaṃ tīrthaṃ na bhūtaṃ na bhaviṣyati |\nyasya darśanamātreṇa brahmahatyā vyapohati ||",
+    "translation": "There is no sacred pilgrimage sanctuary equal to Rama Setu, by the mere sight and remembrance of which the heaviest karmic burdens are purified.",
+    "meaning": "Khanda 3: Brahma Khanda (Setu Mahatmya & Sacred Rameswaram)",
+    "layers": [
+      {
+        "author": "gv-tagare",
+        "author_name": "Dr. G.V. Tagare",
+        "author_label": "Skanda Purana Translation & Critical Notes",
+        "lang": "en",
+        "type": "commentary",
+        "content": "The Brahma Khanda centers upon the historical sanctification of Rameswaram and the bridge to Lanka, symbolizing the bridge of righteous action spanning worldly sorrow."
+      },
+      {
+        "author": "kashi-scholars",
+        "author_name": "Kashi Khanda Scholarly Tradition",
+        "author_label": "Puranic Tradition",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "रामसेतु के समान कोई तीर्थ न हुआ है न होगा, जिसके दर्शन मात्र से घोर पापों का भी शमन हो जाता है।"
+      },
+      {
+        "author": "traditional",
+        "author_name": "Traditional Warkari Scholar",
+        "author_label": "Traditional Marathi Exegesis",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "रामसेतूसारखे पावन तीर्थ जगात कधीही झाले नाही आणि होणार नाही, ज्याच्या केवळ दर्शनाने सर्व पापांचे क्षालन होते."
+      }
+    ]
+  }
+]

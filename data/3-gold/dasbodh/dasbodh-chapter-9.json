@@ -1,0 +1,39 @@
+[
+  {
+    "id": "dasbodh_9_1",
+    "text_slug": "dasbodh",
+    "chapter": 9,
+    "verse": 1,
+    "original": "संसार हा स्वप्नवत् जाण। क्षणभंगुर आहे हा प्राण।\nम्हणोनि भजावा भगवान। विवेकयुक्त॥",
+    "sanskrit": "संसार हा स्वप्नवत् जाण। क्षणभंगुर आहे हा प्राण।\nम्हणोनि भजावा भगवान। विवेकयुक्त॥",
+    "transliteration": "saṃsāra hā svapnavat jāṇa | kṣaṇabhaṃgura āhe hā prāṇa |\nmhaṇoni bhajāvā bhagavāna | vivekayukta ||",
+    "translation": "Recognize this worldly realm to be like a dream, and this physical life-breath to be fleeting. Therefore, worship the Supreme with steady discernment.",
+    "meaning": "Dashaka 9: Asar Sansara (The Transient Nature of Worldly Attachment)",
+    "layers": [
+      {
+        "author": "samarth-ramdas",
+        "author_name": "Samarth Ramdas Swami",
+        "author_label": "Dasbodh Original Ovi",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "हा संसार स्वप्नासारखा मिथ्या आणि आयुष्य क्षणभंगुर आहे हे जाणावे. म्हणून विवेक ठेवून ईश्वराचे भजन करावे."
+      },
+      {
+        "author": "warkari-scholars",
+        "author_name": "Warkari & Ramdasi Lineage",
+        "author_label": "Bhavartha Dipika Synthesis",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Recognizing impermanence is the cornerstone of mental freedom. Worldly engagement without discernment leads to anxiety; action rooted in wisdom brings peace."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "दासबोध हिन्दी व्याख्या",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "संसार को स्वप्नवत जानो और यह जीवन क्षणभंगुर है। इसलिए विवेकपूर्वक भगवान की आराधना करो।"
+      }
+    ]
+  }
+]

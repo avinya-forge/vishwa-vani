@@ -1,0 +1,39 @@
+[
+  {
+    "id": "skanda-purana_4_1",
+    "text_slug": "skanda-purana",
+    "chapter": 4,
+    "verse": 1,
+    "original": "वाराणसी समा युक्ता न पुरी भुवि विद्यते ।\nयत्र मुक्तिश्च भुक्तिश्च लभ्यते विश्वनाथतः ॥",
+    "sanskrit": "वाराणसी समा युक्ता न पुरी भुवि विद्यते ।\nयत्र मुक्तिश्च भुक्तिश्च लभ्यते विश्वनाथतः ॥",
+    "transliteration": "vārāṇasī samā yuktā na purī bhuvi vidyate |\nyatra muktiś ca bhuktiś ca labhyate viśvanāthataḥ ||",
+    "translation": "There is no holy city on this earth equal to Varanasi, where both supreme spiritual liberation (Moksha) and worldly fulfillment (Bhukti) are bestowed by Lord Vishwanatha.",
+    "meaning": "Khanda 4: Kashi Khanda (Spiritual Geography of Varanasi)",
+    "layers": [
+      {
+        "author": "gv-tagare",
+        "author_name": "Dr. G.V. Tagare",
+        "author_label": "Skanda Purana Translation & Critical Notes",
+        "lang": "en",
+        "type": "commentary",
+        "content": "The celebrated Kashi Khanda represents the spiritual jewel of the Skanda Purana, mapping Varanasi not merely as a geographic city, but as the cosmic spinal column of humanity."
+      },
+      {
+        "author": "kashi-scholars",
+        "author_name": "Kashi Khanda Scholarly Tradition",
+        "author_label": "Puranic Tradition",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "इस पृथ्वी पर वाराणसी के समान कोई पवित्र नगरी नहीं है, जहाँ भगवान विश्वनाथ की कृपा से भोग और मोक्ष दोनों सहज प्राप्त होते हैं।"
+      },
+      {
+        "author": "traditional",
+        "author_name": "Traditional Warkari Scholar",
+        "author_label": "Traditional Marathi Exegesis",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "या पृथ्वीवर वाराणसीसारखे दुसरे पवित्र नगर नाही, जेथे विश्वनाथांच्या कृपेने मोक्ष आणि कल्याण दोन्ही प्राप्त होतात."
+      }
+    ]
+  }
+]

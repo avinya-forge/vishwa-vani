@@ -1,0 +1,39 @@
+[
+  {
+    "id": "dasbodh_16_1",
+    "text_slug": "dasbodh",
+    "chapter": 16,
+    "verse": 1,
+    "original": "उपासनेविण आचार। तें केवळ कोरडें सोंग।\nउपासना ते मुख्य अंग। परमार्थाचें॥",
+    "sanskrit": "उपासनेविण आचार। तें केवळ कोरडें सोंग।\nउपासना ते मुख्य अंग। परमार्थाचें॥",
+    "transliteration": "upāsaneviṇa ācāra | teṃ kevaḷa koraḍeṃ soṃga |\nupāsanā te mukhya aṃga | paramārthāceṃ ||",
+    "translation": "External rituals without inward contemplation are mere dry pretence. Inward spiritual worship is the essential core of self-realization.",
+    "meaning": "Dashaka 16: Upasana (Systematic Contemplation)",
+    "layers": [
+      {
+        "author": "samarth-ramdas",
+        "author_name": "Samarth Ramdas Swami",
+        "author_label": "Dasbodh Original Ovi",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "अंतःकरणाच्या उपासनेशिवाय केवळ बाह्य कर्मकांड हे निष्फळ सोंग आहे. उपासना हेच परमार्थाचे मुख्य अंग आहे."
+      },
+      {
+        "author": "warkari-scholars",
+        "author_name": "Warkari & Ramdasi Lineage",
+        "author_label": "Bhavartha Dipika Synthesis",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Upasana internalizes ritual worship into meditative concentration, sanctifying daily life."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "दासबोध हिन्दी व्याख्या",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "आंतरिक उपासना के बिना बाह्य आचरण केवल ढोंग है। सच्ची उपासना ही परमार्था का मुख्य आधार है।"
+      }
+    ]
+  }
+]

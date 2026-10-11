@@ -1,0 +1,39 @@
+[
+  {
+    "id": "skanda-purana_2_1",
+    "text_slug": "skanda-purana",
+    "chapter": 2,
+    "verse": 1,
+    "original": "वेङ्कटाद्रिसमं स्थानं ब्रह्माण्डे नास्ति किञ्चन ।\nवेङ्कटेशसमो देवो न भूतो न भविष्यति ॥",
+    "sanskrit": "वेङ्कटाद्रिसमं स्थानं ब्रह्माण्डे नास्ति किञ्चन ।\nवेङ्कटेशसमो देवो न भूतो न भविष्यति ॥",
+    "transliteration": "veṅkaṭādrisamaṃ sthānaṃ brahmāṇḍe nāsti kiñcana |\nveṅkaṭeśasamo devo na bhūto na bhaviṣyati ||",
+    "translation": "There is no sacred dwelling in the entire universe comparable to Mount Venkatachala, nor is there any deity equal to Lord Venkateshwara, past or future.",
+    "meaning": "Khanda 2: Vaishnava Khanda (Venkatachala & Jagannatha Puri Sacred Lore)",
+    "layers": [
+      {
+        "author": "gv-tagare",
+        "author_name": "Dr. G.V. Tagare",
+        "author_label": "Skanda Purana Translation & Critical Notes",
+        "lang": "en",
+        "type": "commentary",
+        "content": "The Vaishnava Khanda details sacred pilgrimage sanctuaries, highlighting the divine descent of Vishnu as Venkateshwara and Jagannatha to grant liberation in the Kali Yuga."
+      },
+      {
+        "author": "kashi-scholars",
+        "author_name": "Kashi Khanda Scholarly Tradition",
+        "author_label": "Puranic Tradition",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "इस सम्पूर्ण ब्रह्माण्ड में वेंकटाचल के समान कोई तीर्थ नहीं है, और न ही भगवान वेंकटेश्वर के समान कोई देव हुआ है और न होगा।"
+      },
+      {
+        "author": "traditional",
+        "author_name": "Traditional Warkari Scholar",
+        "author_label": "Traditional Marathi Exegesis",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "या संपूर्ण विश्वात वेंकटाचलसारखे कोणतेही पवित्र स्थान नाही, आणि भगवान वेंकटेशांसारखा कोणताही देव पूर्वी झाला नाही आणि पुढे होणार नाही."
+      }
+    ]
+  }
+]

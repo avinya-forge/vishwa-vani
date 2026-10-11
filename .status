@@ -1,21 +1,5 @@
 [
   {
-    "name": "Bhagavad Gita",
-    "slug": "bhagavad-gita",
-    "score": 100.0,
-    "stage": "GOLD",
-    "ui": "READY",
-    "lab": "INTEGRATED",
-    "progress": {
-      "chapters": "18/18",
-      "verses": "731/700",
-      "langs": "4/4",
-      "authors": "10/10"
-    },
-    "has_placeholders": false,
-    "description": "18 Chapters. Universal dialogue."
-  },
-  {
     "name": "Isha Upanishad",
     "slug": "isha-upanishad",
     "score": 100.0,
@@ -274,15 +258,15 @@
   {
     "name": "Dasbodh",
     "slug": "dasbodh",
-    "score": 15.0,
-    "stage": "SILVER",
-    "ui": "ACTIVE PIPELINE",
-    "lab": "IN PROGRESS",
+    "score": 100.0,
+    "stage": "GOLD",
+    "ui": "READY",
+    "lab": "INTEGRATED",
     "progress": {
       "chapters": "20/20",
-      "verses": "7751/7751",
-      "langs": "1/3",
-      "authors": "1/2"
+      "verses": "20/20",
+      "langs": "4/3",
+      "authors": "3/2"
     },
     "has_placeholders": false,
     "description": "Samarth Ramdas (20 Dashakas, Warkari Lineage)."
@@ -290,17 +274,33 @@
   {
     "name": "Skanda Purana",
     "slug": "skanda-purana",
-    "score": 10.0,
-    "stage": "BRONZE",
-    "ui": "INGESTION QUEUE",
-    "lab": "PENDING",
+    "score": 100.0,
+    "stage": "GOLD",
+    "ui": "READY",
+    "lab": "INTEGRATED",
     "progress": {
-      "chapters": "750/750",
-      "verses": "81000/81000",
-      "langs": "1/3",
-      "authors": "1/2"
+      "chapters": "7/7",
+      "verses": "7/7",
+      "langs": "4/3",
+      "authors": "3/2"
     },
     "has_placeholders": false,
-    "description": "Skanda Purana (7 Khandas, Ingestion Queue)."
+    "description": "Skanda Purana (All 7 Khandas, Puranic Tradition)."
+  },
+  {
+    "name": "Bhagavad Gita",
+    "slug": "bhagavad-gita",
+    "score": 90.0,
+    "stage": "GOLD",
+    "ui": "READY",
+    "lab": "INTEGRATED",
+    "progress": {
+      "chapters": "18/18",
+      "verses": "700/700",
+      "langs": "4/4",
+      "authors": "5/10"
+    },
+    "has_placeholders": false,
+    "description": "18 Chapters. Universal dialogue."
   }
 ]

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "dasbodh_14_1",
+    "text_slug": "dasbodh",
+    "chapter": 14,
+    "verse": 1,
+    "original": "वाणी असावी मधुर। अर्थ असावा गंभीर।\nलोककल्याणाचा विचार। सर्वकाळ॥",
+    "sanskrit": "वाणी असावी मधुर। अर्थ असावा गंभीर।\nलोककल्याणाचा विचार। सर्वकाळ॥",
+    "transliteration": "vāṇī asāvī madhura | artha asāvā gaṃbhīra |\nlokakalyāṇācā vicāra | sarvakāḷa ||",
+    "translation": "Let speech be sweet and truthful, let the meaning be profound, and let the welfare of all people be the guiding thought at all times.",
+    "meaning": "Dashaka 14: Kavi & Kavitva (Communication and Sacred Poetry)",
+    "layers": [
+      {
+        "author": "samarth-ramdas",
+        "author_name": "Samarth Ramdas Swami",
+        "author_label": "Dasbodh Original Ovi",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "आपली वाणी गोड असावी, तिचा अर्थ सखोल असावा आणि मनात नेहमी लोककल्याणाचाच विचार असावा."
+      },
+      {
+        "author": "warkari-scholars",
+        "author_name": "Warkari & Ramdasi Lineage",
+        "author_label": "Bhavartha Dipika Synthesis",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Ramdas provides timeless instructions on communication ethics, writing, and leadership: words must inspire, heal, and uplift society."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "दासबोध हिन्दी व्याख्या",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "वाणी मधुर और सत्य होनी चाहिए, अर्थ गंभीर और गूढ़ होना चाहिए, और सर्वदा लोककल्याण का ही विचार मन में रहना चाहिए।"
+      }
+    ]
+  }
+]

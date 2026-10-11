@@ -1,0 +1,39 @@
+[
+  {
+    "id": "dasbodh_1_1",
+    "text_slug": "dasbodh",
+    "chapter": 1,
+    "verse": 1,
+    "original": "श्रोतीं व्हावे सावधान। आता सांगतों ग्रंथलक्षण।\nजयाचेनि करितां श्रवण। समाधान वाढे॥",
+    "sanskrit": "श्रोतीं व्हावे सावधान। आता सांगतों ग्रंथलक्षण।\nजयाचेनि करितां श्रवण। समाधान वाढे॥",
+    "transliteration": "śrotīṃ vhāve sāvadhāna | ātā sāṃgatoṃ granthalakṣaṇa |\njayāceni karitāṃ śravaṇa | samādhāna vāḍhe ||",
+    "translation": "O listeners, be attentive! I now declare the purpose and character of this sacred treatise, by listening to which deep inner peace and self-realization steadily blossom.",
+    "meaning": "Dashaka 1: Stabak Grantharambha (Beginning of the Sacred Text)",
+    "layers": [
+      {
+        "author": "samarth-ramdas",
+        "author_name": "Samarth Ramdas Swami",
+        "author_label": "Dasbodh Original Ovi",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "श्रोत्यांनी एकाग्र चित्ताने श्रवण करावे. आता मी या ग्रंथाचे स्वरूप सांगतो, ज्याच्या श्रवणाने मनामध्ये पूर्ण समाधान आणि आत्मशांती प्राप्त होते."
+      },
+      {
+        "author": "warkari-scholars",
+        "author_name": "Warkari & Ramdasi Lineage",
+        "author_label": "Bhavartha Dipika Synthesis",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Samarth Ramdas opens Dasbodh by emphasizing that spiritual wisdom is not idle academic theory, but transformative practical knowledge leading directly to peace of mind (Samadhana) and ethical living in active daily life."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "दासबोध हिन्दी व्याख्या",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "हे श्रोताओं, सावधान हो जाएँ! अब मैं इस ग्रंथ के लक्षण और प्रयोजन का वर्णन करता हूँ, जिसके श्रवण मात्र से अंतःकरण में परम समाधान और शांति बढ़ती है।"
+      }
+    ]
+  }
+]

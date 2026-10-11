@@ -14,6 +14,7 @@ import AdhyayaShareLink from './adhyaya-share-link'
 import SemanticExplorerDrawer from './semantic-explorer-drawer'
 import VerseBaseTranslation from './verse-base-translation'
 import VerseCommentarySection from './verse-commentary-section'
+import { getKnowledgeTokensByScriptureAndVerse } from '@/lib/vedic-science'
 
 
 // 🏛️ DYNAMIC PERSPECTIVE METADATA
@@ -831,6 +832,8 @@ export default function StudyClient({
               .slice(0, languageSelection === 'all' ? 6 : 2)
 
             const synth = synthesisMap[v.id as string]
+            const verseNum = Number(v.verse ?? (v.id as string).split('_')[2] ?? 0)
+            const verseKnowledgeTokens = getKnowledgeTokensByScriptureAndVerse(textSlug, chapter, verseNum)
 
             return (
               <article
@@ -846,6 +849,12 @@ export default function StudyClient({
                     {(v.verse as number) === 0 && (
                       <span className="text-[10px] font-black uppercase tracking-widest text-amber-700 dark:text-amber-400 bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800/50 px-2 py-0.5 rounded-full">
                         ÅšÄnti PÄá¹­ha
+                      </span>
+                    )}
+                    {verseKnowledgeTokens.length > 0 && (
+                      <span className="text-[10px] font-black uppercase tracking-widest text-sky-700 dark:text-sky-300 bg-sky-50 dark:bg-sky-950/40 border border-sky-200 dark:border-sky-800/50 px-2 py-0.5 rounded-full inline-flex items-center gap-1">
+                        <span>💎</span>
+                        <span>Empirical Science</span>
                       </span>
                     )}
                   </span>
@@ -951,6 +960,46 @@ export default function StudyClient({
                   cleanText={cleanText}
                   verseId={v.id as string}
                 />
+
+                {/* 💎 Universal Vedic Knowledge Graph (ADR-008) Empirical Science Callout */}
+                {verseKnowledgeTokens.length > 0 && (
+                  <div className="mx-4 sm:mx-6 my-4 p-4 sm:p-5 rounded-2xl bg-gradient-to-br from-sky-50/90 via-indigo-50/40 to-amber-50/60 dark:from-sky-950/30 dark:via-indigo-950/20 dark:to-stone-900/40 border border-sky-200 dark:border-sky-800/60 shadow-sm space-y-3">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <span className="text-base">💎</span>
+                        <span className="text-[10px] font-black uppercase tracking-wider text-sky-800 dark:text-sky-300">
+                          Vaidika Vijñāna • Empirical Insight (ADR-008)
+                        </span>
+                      </div>
+                      <Link
+                        href="/knowledge"
+                        className="text-[10px] font-bold text-sky-700 dark:text-sky-400 hover:text-sky-900 dark:hover:text-sky-200 flex items-center gap-1 group"
+                      >
+                        <span>Universal Knowledge Hub</span>
+                        <span className="group-hover:translate-x-0.5 transition-transform">&rarr;</span>
+                      </Link>
+                    </div>
+                    {verseKnowledgeTokens.map(token => (
+                      <div key={token.id} className="space-y-2">
+                        <div className="flex items-center gap-2">
+                          <span className="text-xs px-2.5 py-0.5 rounded-full bg-white dark:bg-stone-850 border border-sky-200 dark:border-sky-800 font-bold text-sky-900 dark:text-sky-200">
+                            {token.domainLabel}
+                          </span>
+                          <h4 className="text-sm font-serif font-black text-stone-900 dark:text-stone-100">
+                            {token.title}
+                          </h4>
+                        </div>
+                        <p className="text-xs text-stone-600 dark:text-stone-300 leading-relaxed font-medium">
+                          {token.ancientObservation}
+                        </p>
+                        <div className="p-3 rounded-xl bg-white/80 dark:bg-stone-850/80 border border-sky-100 dark:border-sky-900/40 text-[11px] text-stone-700 dark:text-stone-300 leading-relaxed">
+                          <strong className="text-sky-900 dark:text-sky-300 font-bold">🔬 Modern Corroboration: </strong>
+                          {token.modernCorroboration}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
 
                 {/* AI Synthesis result */}
                 {synth && ((synth as Record<string, unknown>)?.text || (synth as Record<string, unknown>)?.loading) ? (

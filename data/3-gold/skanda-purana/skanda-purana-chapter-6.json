@@ -1,0 +1,39 @@
+[
+  {
+    "id": "skanda-purana_6_1",
+    "text_slug": "skanda-purana",
+    "chapter": 6,
+    "verse": 1,
+    "original": "सत्यं शौचं दया दानं धर्मो हि दशधोच्यते ।\nनागरखण्डकथिते धर्मे सर्वं प्रतिष्ठितम् ॥",
+    "sanskrit": "सत्यं शौचं दया दानं धर्मो हि दशधोच्यते ।\nनागरखण्डकथिते धर्मे सर्वं प्रतिष्ठितम् ॥",
+    "transliteration": "satyaṃ śaucaṃ dayā dānaṃ dharmo hi daśadhocyate |\nnāgarakhaṇḍakathite dharme sarvaṃ pratiṣṭhitam ||",
+    "translation": "Truthfulness, purity, compassion, and charity: Dharma is defined in ten essential virtues. Upon the ethical righteous order expounded in Nagara Khanda is the entire society firmly sustained.",
+    "meaning": "Khanda 6: Nagara Khanda (Hatkeshwar Traditions & Cultural Heritage)",
+    "layers": [
+      {
+        "author": "gv-tagare",
+        "author_name": "Dr. G.V. Tagare",
+        "author_label": "Skanda Purana Translation & Critical Notes",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Nagara Khanda elaborates social ethics, historical lineages, and temple consecrations that preserved Sanatana Dharma across western India."
+      },
+      {
+        "author": "kashi-scholars",
+        "author_name": "Kashi Khanda Scholarly Tradition",
+        "author_label": "Puranic Tradition",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "सत्य, पवित्रता, दया और दान—धर्म के दस लक्षण कहे गए हैं। नागर खण्ड में वर्णित धर्म पर ही संपूर्ण समाज प्रतिष्ठित रहता है।"
+      },
+      {
+        "author": "traditional",
+        "author_name": "Traditional Warkari Scholar",
+        "author_label": "Traditional Marathi Exegesis",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "सत्य, शुचिता, दया आणि दान हे धर्माचे मुख्य स्तंभ आहेत. नागर खंडात वर्णन केलेल्या सदाचारावरच मानवी समाज स्थिर राहतो."
+      }
+    ]
+  }
+]

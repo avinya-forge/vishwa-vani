@@ -1,0 +1,39 @@
+[
+  {
+    "id": "dasbodh_13_1",
+    "text_slug": "dasbodh",
+    "chapter": 13,
+    "verse": 1,
+    "original": "अखंड भगवंताचें ध्यान। हेंचि भक्तीचें लक्षण।\nज्यायोगें होई समाधान। अंतरात्मा॥",
+    "sanskrit": "अखंड भगवंताचें ध्यान। हेंचि भक्तीचें लक्षण।\nज्यायोगें होई समाधान। अंतरात्मा॥",
+    "transliteration": "akhaṃḍa bhagavaṃtāceṃ dhyāna | heṃci bhaktīceṃ lakṣaṇa |\njyāyogeṃ hoī samādhāna | aṃtarātmā ||",
+    "translation": "Unbroken meditation upon the Divine Presence is the authentic mark of devotion, by which the inmost soul attains unshakeable serenity.",
+    "meaning": "Dashaka 13: Ananya Bhakti (Single-Pointed Devotion)",
+    "layers": [
+      {
+        "author": "samarth-ramdas",
+        "author_name": "Samarth Ramdas Swami",
+        "author_label": "Dasbodh Original Ovi",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "ईश्वराचे अखंड स्मरण हेच खऱ्या भक्तीचे लक्षण आहे, ज्यामुळे अंतरात्म्याला चिरंतन शांती लाभते."
+      },
+      {
+        "author": "warkari-scholars",
+        "author_name": "Warkari & Ramdasi Lineage",
+        "author_label": "Bhavartha Dipika Synthesis",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Devotion and knowledge merge: continuous remembrance transforms ordinary consciousness into constant communion with the Divine."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "दासबोध हिन्दी व्याख्या",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "परमेश्वर का निरंतर ध्यान ही सच्ची भक्ति का लक्षण है, जिसके द्वारा अंतरात्मा पूर्ण शांति और समाधान को प्राप्त होती है।"
+      }
+    ]
+  }
+]

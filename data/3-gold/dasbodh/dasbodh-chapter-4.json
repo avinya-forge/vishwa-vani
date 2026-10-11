@@ -1,0 +1,39 @@
+[
+  {
+    "id": "dasbodh_4_1",
+    "text_slug": "dasbodh",
+    "chapter": 4,
+    "verse": 1,
+    "original": "श्रवण कीर्तन स्मरण। पादसेवन अर्चन।\nवंदन दास्य सख्य आत्मनिवेदन। नवविधा भक्ती॥",
+    "sanskrit": "श्रवण कीर्तन स्मरण। पादसेवन अर्चन।\nवंदन दास्य सख्य आत्मनिवेदन। नवविधा भक्ती॥",
+    "transliteration": "śravaṇa kīrtana smaraṇa | pādasevana arcana |\nvandana dāsya sakhya ātmanivedana | navavidhā bhaktī ||",
+    "translation": "Listening to divine truth, singing praise, remembering the Lord, service of the lotus feet, sacred offering, obeisance, surrendered servitude, divine friendship, and complete self-offering—these are the nine limbs of Bhakti.",
+    "meaning": "Dashaka 4: Navadha Bhakti (The Ninefold Path of Devotion)",
+    "layers": [
+      {
+        "author": "samarth-ramdas",
+        "author_name": "Samarth Ramdas Swami",
+        "author_label": "Dasbodh Original Ovi",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "श्रवण, कीर्तन, स्मरण, पादसेवन, अर्चन, वंदन, दास्य, सख्य आणि आत्मनिवेदन ही नवविधा भक्तीची लक्षणे आहेत."
+      },
+      {
+        "author": "warkari-scholars",
+        "author_name": "Warkari & Ramdasi Lineage",
+        "author_label": "Bhavartha Dipika Synthesis",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Ramdas synthesizes the Bhagavata Purana's ninefold devotional path with practical discipline, culminating in Atmanivedana (total dissolution of the false ego)."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "दासबोध हिन्दी व्याख्या",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "श्रवण, कीर्तन, स्मरण, पादसेवन, अर्चन, वंदन, दास्य, सख्य और आत्मनिवेदन—यह नवधा भक्ति का मार्ग है।"
+      }
+    ]
+  }
+]

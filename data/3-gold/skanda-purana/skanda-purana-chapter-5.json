@@ -1,0 +1,39 @@
+[
+  {
+    "id": "skanda-purana_5_1",
+    "text_slug": "skanda-purana",
+    "chapter": 5,
+    "verse": 1,
+    "original": "आकाशे तारकं लिङ्गं पाताले हाटकेश्वरम् ।\nभूलोके च महाकालं दृष्ट्वा मुच्येत बन्धनात् ॥",
+    "sanskrit": "आकाशे तारकं लिङ्गं पाताले हाटकेश्वरम् ।\nभूलोके च महाकालं दृष्ट्वा मुच्येत बन्धनात् ॥",
+    "transliteration": "ākāśe tārakaṃ liṅgaṃ pātāle hāṭakeśvaram |\nbhūloke ca mahākālaṃ dṛṣṭvā mucyeta bandhanāt ||",
+    "translation": "In the heavens shines the celestial Taraka Linga; in the subterranean realm abides Hatkeshwara; and on the earthly sphere resides Mahakala at Ujjain—beholding Whom the seeker is freed from mortal bondage.",
+    "meaning": "Khanda 5: Avanti Khanda (Mahakaleshwar & Cosmic Time Astronomy)",
+    "layers": [
+      {
+        "author": "gv-tagare",
+        "author_name": "Dr. G.V. Tagare",
+        "author_label": "Skanda Purana Translation & Critical Notes",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Avanti Khanda explores Mahakaleshwar at Ujjain, the prime meridian of ancient Indian astronomy (Khagola), linking sacred geography directly to celestial orbital observations."
+      },
+      {
+        "author": "kashi-scholars",
+        "author_name": "Kashi Khanda Scholarly Tradition",
+        "author_label": "Puranic Tradition",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "आकाश में तारक लिंग, पाताल में हाटकेश्वर और भूलोक पर उज्जैन के महाकाल लिंग के दर्शन से मनुष्य जन्म-मरण के बंधन से छूट जाता है।"
+      },
+      {
+        "author": "traditional",
+        "author_name": "Traditional Warkari Scholar",
+        "author_label": "Traditional Marathi Exegesis",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "आकाशात तारक लिंग, पाताळात हाटकेश्वर आणि पृथ्वीवर उज्जैनचे महाकाळ लिंग; यांच्या दर्शनाने जीव भवबंधनातून मुक्त होतो."
+      }
+    ]
+  }
+]

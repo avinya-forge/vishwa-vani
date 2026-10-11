@@ -1,0 +1,39 @@
+[
+  {
+    "id": "dasbodh_20_1",
+    "text_slug": "dasbodh",
+    "chapter": 20,
+    "verse": 1,
+    "original": "आत्माराम दाविला डोळां। संदेह निरसला सकळा।\nपूर्णबोधाचा हा सोहळा। दासबोध समाप्त॥",
+    "sanskrit": "आत्माराम दाविला डोळां। संदेह निरसला सकळा।\nपूर्णबोधाचा हा सोहळा। दासबोध समाप्त॥",
+    "transliteration": "ātmārāma dāvilā ḍoḷāṃ | saṃdeha nirasalā sakaḷā |\npūrṇabodhācā hā sohāḷā | dāsabodha samāpta ||",
+    "translation": "The inner Self (Atmarama) is revealed directly to inner vision, and all doubts are dissolved forever. This is the celebration of full enlightenment: thus concludes the Dasbodh.",
+    "meaning": "Dashaka 20: Purna Bodha (Supreme Non-Dual Awakening)",
+    "layers": [
+      {
+        "author": "samarth-ramdas",
+        "author_name": "Samarth Ramdas Swami",
+        "author_label": "Dasbodh Original Ovi",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "आत्माराम अंतःकरणात साक्षात प्रकट झाला आणि सर्व संशय नाहीसे झाले. हा पूर्णबोधाचा आनंदोत्सव आहे; येथे दासबोध ग्रंथ समाप्त होतो."
+      },
+      {
+        "author": "warkari-scholars",
+        "author_name": "Warkari & Ramdasi Lineage",
+        "author_label": "Bhavartha Dipika Synthesis",
+        "lang": "en",
+        "type": "commentary",
+        "content": "The culmination of Dasbodh: complete dissolution of existential doubt in the radiance of the Supreme Self, sending the liberated seeker back into the world as a force of selfless blessing."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "दासबोध हिन्दी व्याख्या",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "अंतःकरण में आत्माराम का प्रत्यक्ष दर्शन हो गया, समस्त संशय समाप्त हो गए। यह पूर्ण ज्ञान का आनंदोत्सव है; इस प्रकार दासबोध संपन्न हुआ।"
+      }
+    ]
+  }
+]

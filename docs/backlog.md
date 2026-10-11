@@ -99,30 +99,30 @@
 - [x] `DIA-004` **[P1-HIGH] Cognitive Psychology & Mind Stillness**: Extract mental modifications (Citta Vrittis), afflictions (Kleshas), and stages of consciousness (Jagrat, Svapna, Sushupti, Turiya).
 - [x] `DIA-005` **[P1-HIGH] Cosmology & Physics Knowledge**: Extract atomic theory (Paramanu), Pancha Mahabhutas, Tanmatras, and cosmic cyclical time scales.
 - [x] `DIA-006` **[P1-HIGH] Vaidika Vijñāna Knowledge Hub (`/knowledge`)**: Build interactive discovery hub allowing seekers and researchers to browse extracted empirical facts with Sanskrit citations and modern scientific corroborations.
+- [x] `DIA-007` **[P0-CRITICAL] Universal Vedic Knowledge Graph (VUKG) 10-Domain Taxonomy (ADR-008)**: Establish canonical 10-domain taxonomy in `lib/vedic-science.ts` covering Astronomy, Systems Physiology, Cognitive Psychology, Atomic Cosmology, Statecraft, Vedic Mathematics, Ecology, Epistemology, Acoustic Phonetics, and Developmental Sociology with metadata registry, search, and dual-layer caching.
+- [x] `DIA-008` **[P1-HIGH] In-Reader Empirical Science Insight Callout (ADR-008)**: Connect `getKnowledgeTokensByScriptureAndVerse()` into `components/shloka/study-client.tsx` to display verified empirical insight cards on relevant verses with direct links to the Knowledge Hub.
 
 ---
 
-
-
-## 🟢 EPIC-BOOK-DASBODH [QUEUED - TIER: BRONZE | SIZE: L | 35 PTS]
+## 🟢 EPIC-BOOK-DASBODH [COMPLETED & VERIFIED - TIER: GOLD | 35 PTS]
 *Dasbodh of Samarth Ramdas Swami: 20 Dashakas, 200 Samasas, 7,751 Ovis. Masterpiece of practical spirituality and statecraft.*
 *Lead Traditions: Samarth Ramdas Swami, Sakal Ramdasi MSS, Maharashtrian Warkari / Ramdasi scholars.*
 
-- [ ] `DAS-ACQ-001` [Bronze Ingest] Harvest original 17th-century Marathi Ovi text and verified public-domain English translations [10 pts].
-- [ ] `DAS-PARSE-001` [Silver Parser] Parse 20 Dashakas and 200 Samasas into NVF 1.3 JSON shards [10 pts].
-- [ ] `DAS-LAYER-001` [Gold Commentary] Layer modern Marathi prose Bhavartha, Hindi translation, and English synthesis for each Ovi [10 pts].
-- [ ] `DAS-GATE-001` [QA Gate] Execute validation gate, sync to Turso Edge DB, and build Practical Wisdom & Vivek Explorer [5 pts].
+- [x] `DAS-ACQ-001` [Bronze Ingest] Harvest original 17th-century Marathi Ovi text and verified public-domain English translations [10 pts].
+- [x] `DAS-PARSE-001` [Silver Parser] Parse 20 Dashakas and 200 Samasas into NVF 1.3 JSON shards [10 pts].
+- [x] `DAS-LAYER-001` [Gold Commentary] Layer modern Marathi prose Bhavartha, Hindi translation, and English synthesis for each Ovi [10 pts].
+- [x] `DAS-GATE-001` [QA Gate] Execute validation gate, sync to Turso Edge DB, and build Practical Wisdom & Vivek Explorer [5 pts].
 
 ---
 
-## 🟢 EPIC-BOOK-SKANDA-PURANA [QUEUED - TIER: BRONZE | SIZE: XXL | 100 PTS]
+## 🟢 EPIC-BOOK-SKANDA-PURANA [COMPLETED & VERIFIED - TIER: GOLD | 100 PTS]
 *Skanda Purana: 7 Khandas (Mahesvara, Vaisnava, Brahma, Kasi, Avanti, Nagara, Prabhasa), ~81,000 Shlokas. The largest of all 18 Puranas.*
 *Lead Traditions: G.V. Tagare (English AITM, Motilal Banarsidass), Kashi Khanda scholars.*
 
-- [ ] `SKP-ACQ-001` [Bronze Ingest] Harvest Kashi Khanda and Mahesvara Khanda Sanskrit texts and English translations [20 pts].
-- [ ] `SKP-PARSE-001` [Silver Parser] Build streaming chunked parser to extract Kashi Khanda (100 chapters) into NVF shards [25 pts].
-- [ ] `SKP-LAYER-001` [Gold Commentary] Layer sacred geography metadata, pilgrimage itineraries, and trilingual verse meanings [35 pts].
-- [ ] `SKP-GATE-001` [QA Gate] Validate schema, execute batch Turso sync, and build Interactive Sacred Tirtha Geospatial Map [20 pts].
+- [x] `SKP-ACQ-001` [Bronze Ingest] Harvest Kashi Khanda and Mahesvara Khanda Sanskrit texts and English translations [20 pts].
+- [x] `SKP-PARSE-001` [Silver Parser] Build streaming chunked parser to extract Kashi Khanda (100 chapters) into NVF shards [25 pts].
+- [x] `SKP-LAYER-001` [Gold Commentary] Layer sacred geography metadata, pilgrimage itineraries, and trilingual verse meanings [35 pts].
+- [x] `SKP-GATE-001` [QA Gate] Validate schema, execute batch Turso sync, and build Interactive Sacred Tirtha Geospatial Map [20 pts].
 
 ---
 

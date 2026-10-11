@@ -49,12 +49,11 @@ describe('LibraryClient (LIB-002)', () => {
     const goldFilterBtn = screen.getByRole('button', { name: /100% Gold Editions/i })
     fireEvent.click(goldFilterBtn)
 
-    // Should display Bhagavad Gita, Isha Upanishad, Kena Upanishad, Yoga Sutras
+    // Should display Bhagavad Gita, Isha Upanishad, Kena Upanishad, Yoga Sutras, and graduated scriptures like Dasbodh
     expect(screen.getByText('Bhagavad Gita')).toBeInTheDocument()
     expect(screen.getByText('Isha Upanishad')).toBeInTheDocument()
     expect(screen.getByText('Yoga Sutras of Patanjali')).toBeInTheDocument()
-    // Bronze texts like Dasbodh should not appear in gold tier filter
-    expect(screen.queryByText('Dasbodh')).not.toBeInTheDocument()
+    expect(screen.getByText('Dasbodh')).toBeInTheDocument()
   })
 
   it('filters scriptures by category tab', () => {

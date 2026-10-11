@@ -1,0 +1,39 @@
+[
+  {
+    "id": "dasbodh_8_1",
+    "text_slug": "dasbodh",
+    "chapter": 8,
+    "verse": 1,
+    "original": "पंचभूतें मिळोनि देह। घडिला हा संदेह नाहीं।\nदेह नासतां पाहीं। भूतें भूतांत मिळती॥",
+    "sanskrit": "पंचभूतें मिळोनि देह। घडिला हा संदेह नाहीं।\nदेह नासतां पाहीं। भूतें भूतांत मिळती॥",
+    "transliteration": "pañcabhūteṃ miḷoni deha | ghaḍilā hā saṃdeha nāhīṃ |\ndeha nāsatāṃ pāhīṃ | bhūteṃ bhūtāṃta miḷatī ||",
+    "translation": "The physical body is compounded of the five great elements; of this there is no doubt. When the body dissolves at death, each element merges back into its cosmic source.",
+    "meaning": "Dashaka 8: Brahma & Maya Nirupana (Cosmic Elements and the Source)",
+    "layers": [
+      {
+        "author": "samarth-ramdas",
+        "author_name": "Samarth Ramdas Swami",
+        "author_label": "Dasbodh Original Ovi",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "हा देह पंचमहाभूतांचा बनला आहे यात शंका नाही. देहाचा अंत झाल्यावर ही महाभूते आपापल्या मूळ तत्त्वात विलीन होतात."
+      },
+      {
+        "author": "warkari-scholars",
+        "author_name": "Warkari & Ramdasi Lineage",
+        "author_label": "Bhavartha Dipika Synthesis",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Ramdas uses physical elemental analysis to detach the seeker from bodily egoism. We are not the temporary biological container, but the witnessing Spirit."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "दासबोध हिन्दी व्याख्या",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "यह देह पंचमहाभूतों के संयोग से बनी है, इसमें कोई संदेह नहीं। मृत्यु के समय यह देह नष्ट होकर अपने-अपने तत्त्वों में विलीन हो जाती है।"
+      }
+    ]
+  }
+]

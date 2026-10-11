@@ -1,0 +1,39 @@
+[
+  {
+    "id": "dasbodh_11_1",
+    "text_slug": "dasbodh",
+    "chapter": 11,
+    "verse": 1,
+    "original": "क्रियेशिवाय शब्दज्ञान। तें केवळ विडंबन।\nअनुभवेंविण सांगणें। व्यर्थ जाय॥",
+    "sanskrit": "क्रियेशिवाय शब्दज्ञान। तें केवळ विडंबन।\nअनुभवेंविण सांगणें। व्यर्थ जाय॥",
+    "transliteration": "kriyeśivāya śabdajñāna | teṃ kevaḷa viḍaṃbana |\nanubhaveṃviṇa sāṃgaṇeṃ | vyartha jāya ||",
+    "translation": "Intellectual verbal knowledge divorced from practical action is mere mockery. Teaching others without personal realization is entirely futile.",
+    "meaning": "Dashaka 11: Siddha Lakshana (Characteristics of the Enlightened Worker)",
+    "layers": [
+      {
+        "author": "samarth-ramdas",
+        "author_name": "Samarth Ramdas Swami",
+        "author_label": "Dasbodh Original Ovi",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "कृतीविना केवळ शब्दांचे ज्ञान हे निव्वळ व्यर्थ आहे. स्वतःच्या अनुभवाशिवाय दुसऱ्याला शिकवणे निरुपयोगी ठरते."
+      },
+      {
+        "author": "warkari-scholars",
+        "author_name": "Warkari & Ramdasi Lineage",
+        "author_label": "Bhavartha Dipika Synthesis",
+        "lang": "en",
+        "type": "commentary",
+        "content": "One of Samarth Ramdas's most iconic aphorisms: integrity requires complete harmony between speech and action. Spiritual philosophy must be lived in real conduct."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "दासबोध हिन्दी व्याख्या",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "आचरण के बिना केवल शब्दों का ज्ञान उपहास का कारण बनता है। बिना प्रत्यक्ष अनुभव के उपदेश देना व्यर्थ है।"
+      }
+    ]
+  }
+]

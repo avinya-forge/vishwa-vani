@@ -639,7 +639,7 @@ export default function RoadmapClient({ stats }: { stats: RoadmapStatsProps }) {
           )}
 
           {/* POOL 2: Ingestion & Pipeline Pool */}
-          {(poolFilter === 'all' || poolFilter === 'pipeline') && pipelineBooks.length > 0 && (
+          {(poolFilter === 'all' || poolFilter === 'pipeline') && (
             <div>
               <div className="flex items-center justify-between mb-6">
                 <h2 className="text-2xl font-serif font-black text-stone-900 dark:text-stone-100 flex items-center gap-2">
@@ -647,12 +647,23 @@ export default function RoadmapClient({ stats }: { stats: RoadmapStatsProps }) {
                   Pool 2: Ingestion & Pipeline ({pipelineBooks.length} Scriptures · ~{(stats?.pipelineVerses || 0).toLocaleString()} Target Shlokas)
                 </h2>
                 <span className="text-xs font-bold text-orange-700 bg-orange-50 dark:bg-orange-950/40 px-3 py-1 rounded-full uppercase tracking-wider border border-orange-200 dark:border-orange-800">
-                  Community Upvote Driven
+                  {pipelineBooks.length === 0 ? '100% Milestone Achieved' : 'Community Upvote Driven'}
                 </span>
               </div>
 
-              <div className="bg-white/70 dark:bg-stone-900/60 backdrop-blur-xl border border-stone-200/80 dark:border-stone-800 rounded-3xl overflow-hidden shadow-lg">
-                <div className="divide-y divide-stone-100 dark:divide-stone-800">
+              {pipelineBooks.length === 0 ? (
+                <div className="bg-white/70 dark:bg-stone-900/60 backdrop-blur-xl border border-emerald-200 dark:border-emerald-800 rounded-3xl p-8 text-center shadow-lg space-y-3">
+                  <span className="text-4xl">🎉</span>
+                  <h3 className="text-xl font-bold text-stone-900 dark:text-stone-100">
+                    All 19 Canonical Scriptures Have Graduated to 100% Gold Tier!
+                  </h3>
+                  <p className="text-sm text-stone-600 dark:text-stone-400 max-w-xl mx-auto">
+                    Every scripture in the canonical collection is fully verified with complete chapters, authentic Sanskrit verses, IAST transliteration, multilingual translations, and multi-scholar commentaries.
+                  </p>
+                </div>
+              ) : (
+                <div className="bg-white/70 dark:bg-stone-900/60 backdrop-blur-xl border border-stone-200/80 dark:border-stone-800 rounded-3xl overflow-hidden shadow-lg">
+                  <div className="divide-y divide-stone-100 dark:divide-stone-800">
                   {pipelineBooks.map((book: VedicText) => {
                     const completeness = SCRIPTURE_READINESS_SCORES[book.slug] ?? 0
                     const currentVotes = votes[book.slug] ?? 0
@@ -762,6 +773,7 @@ export default function RoadmapClient({ stats }: { stats: RoadmapStatsProps }) {
                   })}
                 </div>
               </div>
+              )}
             </div>
           )}
         </div>

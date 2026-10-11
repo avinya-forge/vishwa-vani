@@ -87,7 +87,7 @@ describe('VEDIC_LIBRARY', () => {
   });
 
   describe('100% Completed Books Pool (Gold Tier)', () => {
-    it('contains all 17 graduated canonical scriptures', () => {
+    it('contains all 19 graduated canonical scriptures', () => {
       const expectedSlugs = [
         'bhagavad-gita',
         'isha-upanishad',
@@ -106,6 +106,8 @@ describe('VEDIC_LIBRARY', () => {
         'bhagavata-purana',
         'rigveda',
         'yajurveda',
+        'dasbodh',
+        'skanda-purana',
       ];
       expectedSlugs.forEach(slug => {
         const text = VEDIC_LIBRARY.find(t => t.slug === slug);

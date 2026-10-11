@@ -1,0 +1,39 @@
+[
+  {
+    "id": "dasbodh_18_1",
+    "text_slug": "dasbodh",
+    "chapter": 18,
+    "verse": 1,
+    "original": "सामर्थ्य आहे चळवळीचें। जो जे करील तयाचें।\nपरंतु तेथें भगवंताचें। अधिष्ठान पाहिजे॥",
+    "sanskrit": "सामर्थ्य आहे चळवळीचें। जो जे करील तयाचें।\nपरंतु तेथें भगवंताचें। अधिष्ठान पाहिजे॥",
+    "transliteration": "sāmarthya āhe caḷavaḷīceṃ | jo je karīla tayāceṃ |\nparaṃtu tetheṃ bhagavaṃtāceṃ | adhiṣṭhāna pāhije ||",
+    "translation": "Tremendous power resides in purposeful organization and united action; whatever one undertakes bears fruit. But it must be firmly grounded in divine righteousness.",
+    "meaning": "Dashaka 18: Bahudha Jnana (Exhaustive Wisdom and Active Statecraft)",
+    "layers": [
+      {
+        "author": "samarth-ramdas",
+        "author_name": "Samarth Ramdas Swami",
+        "author_label": "Dasbodh Original Ovi",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "सामर्थ्य आहे चळवळीचे, जो जे करील तयाचे. परंतु तेथे भगवंताचे अधिष्ठान पाहिजे."
+      },
+      {
+        "author": "warkari-scholars",
+        "author_name": "Warkari & Ramdasi Lineage",
+        "author_label": "Bhavartha Dipika Synthesis",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Samarth Ramdas's most famous social-political proclamation: constructive collective action transforms history, but action without ethical-spiritual foundation degenerates into tyranny."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "दासबोध हिन्दी व्याख्या",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "संगठित कर्म और पुरुषार्थ में असीम सामर्थ्य है; जो भी कर्म किया जाएगा वह फल देगा। परंतु उस कर्म का आधार धर्म और ईश्वर होना चाहिए।"
+      }
+    ]
+  }
+]

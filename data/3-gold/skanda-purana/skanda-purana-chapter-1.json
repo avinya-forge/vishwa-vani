@@ -1,0 +1,39 @@
+[
+  {
+    "id": "skanda-purana_1_1",
+    "text_slug": "skanda-purana",
+    "chapter": 1,
+    "verse": 1,
+    "original": "ॐ नमः शिवाय शान्ताय सर्वमङ्गलदायिने ।\nस्कन्दाय देवसेनायाः पतये शक्तिपाणये ॥",
+    "sanskrit": "ॐ नमः शिवाय शान्ताय सर्वमङ्गलदायिने ।\nस्कन्दाय देवसेनायाः पतये शक्तिपाणये ॥",
+    "transliteration": "oṃ namaḥ śivāya śāntāya sarvamaṅgaladāyine |\nskandāya devasenāyāḥ pataye śaktipāṇaye ||",
+    "translation": "Om, salutations unto Lord Shiva, the tranquil dispenser of all auspicious blessings; and unto Skanda (Karttikeya), commander of the divine hosts, holder of the invincible spear of wisdom.",
+    "meaning": "Khanda 1: Maheshvara Khanda (Glories of Shiva & Divine Origin)",
+    "layers": [
+      {
+        "author": "gv-tagare",
+        "author_name": "Dr. G.V. Tagare",
+        "author_label": "Skanda Purana Translation & Critical Notes",
+        "lang": "en",
+        "type": "commentary",
+        "content": "The Maheshvara Khanda establishes the transcendental nature of Lord Shiva and the birth of Karttikeya (Skanda) to protect cosmic order from demonic imbalance."
+      },
+      {
+        "author": "kashi-scholars",
+        "author_name": "Kashi Khanda Scholarly Tradition",
+        "author_label": "Puranic Tradition",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "शांत स्वरूप और समस्त मंगलों के दाता भगवान शिव तथा देवसेनापति, शक्तिधर स्कंद को सादर नमस्कार है।"
+      },
+      {
+        "author": "traditional",
+        "author_name": "Traditional Warkari Scholar",
+        "author_label": "Traditional Marathi Exegesis",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "शांत आणि सर्व मंगलदायक भगवान शिव तसेच देवसेनेचे पती, शक्तिधारी स्कंद यांना वंदन असो."
+      }
+    ]
+  }
+]
