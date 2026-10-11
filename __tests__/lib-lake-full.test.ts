@@ -1,28 +1,38 @@
 import { VEDIC_LIBRARY } from '@/lib/texts';
-
-jest.mock('@/lib/schema', () => {
-    return {
-        db: {
-            select: jest.fn(() => ({
-                from: jest.fn(() => ({
-                    where: jest.fn(() => Promise.resolve([])),
-                    execute: jest.fn(() => Promise.resolve([]))
-                }))
-            })),
-            insert: jest.fn(() => ({
-                values: jest.fn(() => ({
-                    onConflictDoNothing: jest.fn(() => Promise.resolve())
-                }))
-            }))
-        },
-        verses: {},
-        searchIndex: {}
-    }
-});
+import {
+  getKnowledgeTokensFromLakeServer,
+  getDynamicLibraryStats,
+  getDynamicDatabaseVersesCount
+} from '@/lib/server-lake';
 
 describe('Vedic Library', () => {
-   it('should contain yoga-sutras', () => {
-       const text = VEDIC_LIBRARY.find(v => v.slug === 'yoga-sutras');
-       expect(text).toBeDefined();
-   })
+  it('should contain yoga-sutras', () => {
+    const text = VEDIC_LIBRARY.find(v => v.slug === 'yoga-sutras');
+    expect(text).toBeDefined();
+  });
+});
+
+describe('Server Lake Database Operations (LibSQL / SQLite ADR-008)', () => {
+  it('retrieves knowledge tokens from public/vedic-lake.db', async () => {
+    const tokens = await getKnowledgeTokensFromLakeServer();
+    expect(tokens.length).toBe(17);
+    const firstToken = tokens[0] as Record<string, unknown>;
+    expect(firstToken).toHaveProperty('id');
+    expect(firstToken).toHaveProperty('domain');
+    expect(firstToken).toHaveProperty('sanskritTerm');
+    expect(firstToken).toHaveProperty('empiricalFact');
+  });
+
+  it('computes dynamic library stats correctly', async () => {
+    const stats = await getDynamicLibraryStats();
+    expect(stats.completedBooks).toBe(19);
+    expect(stats.totalBooks).toBe(19);
+    expect(stats.completedVerses).toBeGreaterThan(1200);
+    expect(stats.totalAuthors).toBeGreaterThan(0);
+  });
+
+  it('returns dynamic database verses count', async () => {
+    const count = await getDynamicDatabaseVersesCount();
+    expect(typeof count).toBe('number');
+  });
 });

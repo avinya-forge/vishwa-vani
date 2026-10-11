@@ -104,6 +104,18 @@
 
 ---
 
+## 🧪 EPIC-TEST-COVERAGE-AND-QUALITY-GATES [ACTIVE - P1 HIGH]
+*Systematic resolution of unit test coverage gaps across UI components, API routes, and data service helpers to achieve >=80% test coverage across all codebase modules.*
+
+- [ ] `TEST-COV-001` **[P1-HIGH] Unit Test Coverage: `components/shloka/study-client.tsx`**: Expand branch and interaction unit test coverage from current baseline to >=80%, testing user interaction, drawer navigation, font sizing, and empirical token insights.
+- [ ] `TEST-COV-002` **[P1-HIGH] Unit Test Coverage: Layout Headers & Footers**: Create dedicated component tests for `components/layout/Header.tsx` and `components/layout/Footer.tsx` verifying navigation links, mobile drawer toggles, and live dynamic corpus statistics to achieve >=80% coverage.
+- [ ] `TEST-COV-003` **[P1-HIGH] Unit Test Coverage: `app/api/synthesize/route.ts`**: Expand API unit/integration tests for the multi-scholar philosophical synthesis route from 56.8% to >=80%, covering streaming error states, fallback models, and validation logic.
+- [ ] `TEST-COV-004` **[P1-HIGH] Unit Test Coverage: `lib/server-lake.ts`**: Expand edge/node SQLite database query tests from 50.9% to >=80%, covering edge cases, missing DB fallbacks, and parameter validations.
+- [ ] `TEST-COV-005` **[P1-HIGH] Unit Test Coverage: `components/search/search-client.tsx`**: Create comprehensive UI tests for search inputs, multi-scripture filters, pagination, and debounce states to achieve >=80% coverage.
+- [ ] `TEST-COV-006` **[P1-HIGH] Unit Test Coverage: `lib/nvf.ts`**: Expand test suite for Native Vedic Format v1.3 parsing, schema validation, and normalization helpers from 4.5% to >=80%.
+
+---
+
 ## 🟢 EPIC-BOOK-DASBODH [COMPLETED & VERIFIED - TIER: GOLD | 35 PTS]
 *Dasbodh of Samarth Ramdas Swami: 20 Dashakas, 200 Samasas, 7,751 Ovis. Masterpiece of practical spirituality and statecraft.*
 *Lead Traditions: Samarth Ramdas Swami, Sakal Ramdasi MSS, Maharashtrian Warkari / Ramdasi scholars.*

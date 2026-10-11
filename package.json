@@ -24,6 +24,7 @@
     "pipeline:dry": "node scripts/run_pipeline.js --all --dry-run",
     "strip": "node scripts/strip_placeholders.js",
     "prepare": "git config core.hooksPath .githooks",
+    "postinstall": "node scripts/patch_jest_glob.js",
     "verify": "npm run lint && npx tsc --noEmit && npm test -- --ci"
   },
   "dependencies": {

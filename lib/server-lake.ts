@@ -129,6 +129,32 @@ export async function getDynamicDatabaseVersesCount(lakeFile: string = 'vedic-la
   }
 }
 
+export async function getKnowledgeTokensFromLakeServer(lakeFile: string = 'vedic-lake.db') {
+  try {
+    const client = getClient(lakeFile);
+    const result = await client.execute('SELECT * FROM knowledge_tokens ORDER BY domain ASC, chapter ASC');
+    return result.rows.map(row => ({
+      id: row.id as string,
+      domain: row.domain as string,
+      domainLabel: row.domain_label as string,
+      title: row.title as string,
+      sanskritTerm: row.sanskrit_term as string,
+      scriptureSlug: row.scripture_slug as string,
+      scriptureName: row.scripture_name as string,
+      chapter: Number(row.chapter),
+      verseRange: row.verse_range as string,
+      ancientObservation: row.ancient_observation as string,
+      modernCorroboration: row.modern_corroboration as string,
+      empiricalFact: row.empirical_fact as string,
+      keyCitations: typeof row.key_citations === 'string' ? JSON.parse(row.key_citations) : row.key_citations,
+      tags: typeof row.tags === 'string' ? JSON.parse(row.tags) : row.tags,
+    }));
+  } catch (err) {
+    console.warn('SERVER LAKE: Failed to fetch knowledge tokens from DB, fallback available', err);
+    return [];
+  }
+}
+
 
 import { COMPLETED_BOOK_STATS, PIPELINE_BOOK_STATS, COMPLETED_BOOKS_SLUGS, getAvailableTexts } from './texts';
 import { getLiveScholars } from './scholars';

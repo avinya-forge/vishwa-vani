@@ -60,10 +60,57 @@ async function sync() {
 
     try {
       await tursoClient.batch(statements, 'write');
-      process.stdout.write(`\rSynced ${Math.min(i + batchSize, rows.length)} / ${rows.length}`);
+      process.stdout.write(`\rSynced Verses: ${Math.min(i + batchSize, rows.length)} / ${rows.length}`);
     } catch (e) {
       console.error(`\nError syncing batch ${i}:`, e.message);
     }
+  }
+
+  // Sync knowledge_tokens (ADR-008)
+  console.log('\nCreating knowledge_tokens schema in Turso...');
+  await tursoClient.execute(`
+    CREATE TABLE IF NOT EXISTS knowledge_tokens (
+      id TEXT PRIMARY KEY,
+      domain TEXT NOT NULL,
+      domain_label TEXT NOT NULL,
+      title TEXT NOT NULL,
+      sanskrit_term TEXT NOT NULL,
+      scripture_slug TEXT NOT NULL,
+      scripture_name TEXT NOT NULL,
+      chapter INTEGER NOT NULL,
+      verse_range TEXT NOT NULL,
+      ancient_observation TEXT NOT NULL,
+      modern_corroboration TEXT NOT NULL,
+      empirical_fact TEXT NOT NULL,
+      key_citations JSON NOT NULL,
+      tags JSON NOT NULL,
+      created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    )
+  `);
+  await tursoClient.execute('CREATE INDEX IF NOT EXISTS idx_kt_domain ON knowledge_tokens(domain)');
+  await tursoClient.execute('CREATE INDEX IF NOT EXISTS idx_kt_scripture ON knowledge_tokens(scripture_slug, chapter)');
+
+  console.log('Fetching local knowledge_tokens rows...');
+  const tokenRows = localDb.prepare('SELECT * FROM knowledge_tokens').all();
+  console.log(`Found ${tokenRows.length} knowledge tokens to sync.`);
+
+  if (tokenRows.length > 0) {
+    const tokenStatements = tokenRows.map(row => ({
+      sql: `INSERT OR REPLACE INTO knowledge_tokens (
+        id, domain, domain_label, title, sanskrit_term,
+        scripture_slug, scripture_name, chapter, verse_range,
+        ancient_observation, modern_corroboration, empirical_fact,
+        key_citations, tags
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+      args: [
+        row.id, row.domain, row.domain_label, row.title, row.sanskrit_term,
+        row.scripture_slug, row.scripture_name, row.chapter, row.verse_range,
+        row.ancient_observation, row.modern_corroboration, row.empirical_fact,
+        row.key_citations, row.tags
+      ]
+    }));
+    await tursoClient.batch(tokenStatements, 'write');
+    console.log(`Synced ${tokenRows.length} knowledge tokens to Turso.`);
   }
 
   console.log('\nSync completed successfully!');

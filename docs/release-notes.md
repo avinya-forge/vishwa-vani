@@ -1,5 +1,14 @@
 # Release Notes
 
+## [1.5.1]
+
+### 🗄️ Database Architecture, Knowledge Token Seeding & Test Quality Gates
+- [x] `DB-SCHEMA-001` **Universal Vedic Knowledge Graph Database Migration (ADR-008)**: Established `knowledge_tokens` table with dedicated indexing (`idx_kt_domain`, `idx_kt_scripture`) and composite verse index (`idx_text_chapter ON verses(text_slug, chapter)`) in `public/vedic-lake.db`.
+- [x] `DB-SEED-001` **Empirical Knowledge Token Seeding**: Created `scripts/seed_knowledge_tokens_db.js` and `scripts/migrate_knowledge_tokens_db.py`, populated all 17 canonical empirical tokens into SQLite and generated authoritative JSON corpus `data/knowledge_tokens.json`.
+- [x] `EDGE-SYNC-001` **Turso Edge Batch Synchronization Upgrade**: Enhanced `scripts/sync_turso.js` to automatically mirror `knowledge_tokens` schema and batch sync empirical tokens to the remote distributed LibSQL Edge database.
+- [x] `SERVER-LAKE-001` **Edge Lake API Expansion**: Added `getKnowledgeTokensFromLakeServer()` to `lib/server-lake.ts` with direct server-side SQLite querying and fallback mechanisms.
+- [x] `TEST-COV-000` **Study Canvas Component Testing & Coverage Reporter Stability**: Authored `__tests__/components-study-client.test.tsx` verifying primary reading canvas, Devanagari Sanskrit, IAST, scholar layers, and ADR-008 Empirical Science callout badges. Resolved glob v10+ reporter compatibility via `scripts/patch_jest_glob.js` and registered `"postinstall"` hook in `package.json`. Expanded test suite to 61 suites passing (329 tests).
+
 ## [1.5.0]
 
 ### 🌌 Universal Vedic Knowledge Graph (ADR-008) & Pipelined Scripture Graduation
