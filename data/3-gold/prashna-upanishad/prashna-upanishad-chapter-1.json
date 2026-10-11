@@ -1,0 +1,70 @@
+[
+  {
+    "id": "prashna-upanishad_1_1",
+    "text_slug": "prashna-upanishad",
+    "chapter": 1,
+    "verse": 1,
+    "original": "ॐ सुकेशा च भारद्वाजः शैब्यश्च सत्यकामः सौर्यायणी च गार्ग्यः कौसल्यश्चाश्वलायनो भार्गवो वैदर्भिः कबन्धी कात्यायनस्ते हैते ब्रह्मपरा ब्रह्मनिष्ठाः परं ब्रह्मान्वेषमाणा एष ह वै तत् सर्वं वक्ष्यतीति ते ह समित्पाणयो भगवन्तं पिप्पलादमुपसन्नाः ॥ १ ॥",
+    "transliteration": "om sukeśā ca bhāradvājaḥ śaibyaśca satyakāmaḥ sauryāyaṇī ca gārgyaḥ kausalyaścāśvalāyano bhārgavo vaidarbhiḥ kabandhī kātyāyanas-te haite brahmaparā brahmaniṣṭhāḥ paraṃ brahmānveṣamāṇā eṣa ha vai tat sarvaṃ vakṣyatīti te ha samitpāṇayo bhagavantaṃ pippalādam-upasannāḥ || 1 ||",
+    "translation": "Sukesha Bharadvaja, Satyakama Shaibya, Sauryayani Gargya, Kausalya Ashvalayana, Bhargava Vaidarbhi, and Kabandhi Katyayana — these seekers, devoted to Brahman and steadfast in truth, approached the venerable Sage Pippalada with sacrificial fuel in hand, seeking the supreme Brahman.",
+    "meaning": "The classic Vedic protocol of higher inquiry: accomplished, disciplined disciples approach an illumined master in humility and reverent dedication.",
+    "commentaries": {
+      "adi-shankara": {
+        "en": "[Adi Shankaracharya (Advaita Vedānta)] Carrying fuel (Samitpani) symbolizes self-surrender, purity, and readiness to serve the preceptor in pursuit of Brahmavidya.",
+        "hi": "[आदि शंकराचार्य (अद्वैत वेदान्त)] समिधा लेकर गुरु की शरण में जाना शिष्य के निरहंकार भाव, श्रद्धा और आत्मज्ञान की तीव्र अभीप्सा का द्योतक है।",
+        "mr": "[आद्य शंकराचार्य (अद्वैत वेदान्त)] हातात समिधा घेऊन सद्गुरूंच्या चरणी लीन होणे हे अहंकाराचा त्याग आणि ज्ञानप्राप्तीची विनम्र पात्रता दर्शवते."
+      },
+      "universal-synthesis": {
+        "en": "[Universal Vedic Synthesis] Spiritual inquiry requires intellectual preparation, ethical discipline, and open-hearted humility before profound mysteries can be unveiled.",
+        "hi": "[सार्वभौमिक वैदिक समन्वय] छह महान ऋषियों का यह संवाद सिद्ध करता है कि यथार्थ ज्ञान केवल निष्ठावान और विनम्र जिज्ञासुओं को ही प्राप्त होता है।",
+        "mr": "[सार्वभौम वैदिक समन्वय] जीवनाच्या गूढ प्रश्नांची उत्तरे मिळवण्यासाठी पूर्वतयारी, संयम आणि सद्गुरूंवर दृढ विश्वास असणे आवश्यक आहे."
+      }
+    },
+    "layers": {
+      "adi-shankara": {
+        "en": "[Adi Shankaracharya (Advaita Vedānta)] Carrying fuel (Samitpani) symbolizes self-surrender, purity, and readiness to serve the preceptor in pursuit of Brahmavidya.",
+        "hi": "[आदि शंकराचार्य (अद्वैत वेदान्त)] समिधा लेकर गुरु की शरण में जाना शिष्य के निरहंकार भाव, श्रद्धा और आत्मज्ञान की तीव्र अभीप्सा का द्योतक है।",
+        "mr": "[आद्य शंकराचार्य (अद्वैत वेदान्त)] हातात समिधा घेऊन सद्गुरूंच्या चरणी लीन होणे हे अहंकाराचा त्याग आणि ज्ञानप्राप्तीची विनम्र पात्रता दर्शवते."
+      },
+      "universal-synthesis": {
+        "en": "[Universal Vedic Synthesis] Spiritual inquiry requires intellectual preparation, ethical discipline, and open-hearted humility before profound mysteries can be unveiled.",
+        "hi": "[सार्वभौमिक वैदिक समन्वय] छह महान ऋषियों का यह संवाद सिद्ध करता है कि यथार्थ ज्ञान केवल निष्ठावान और विनम्र जिज्ञासुओं को ही प्राप्त होता है।",
+        "mr": "[सार्वभौम वैदिक समन्वय] जीवनाच्या गूढ प्रश्नांची उत्तरे मिळवण्यासाठी पूर्वतयारी, संयम आणि सद्गुरूंवर दृढ विश्वास असणे आवश्यक आहे."
+      }
+    }
+  },
+  {
+    "id": "prashna-upanishad_1_2",
+    "text_slug": "prashna-upanishad",
+    "chapter": 1,
+    "verse": 2,
+    "original": "प्रजाकामो वै प्रजापतिः स तपोऽतप्यत स तपस्तप्त्वा स मिथुनमुत्पादयते । रयिं च प्राणं चेत्येतौ मे बहुधा प्रजाः करिष्यत इति ॥ २ ॥",
+    "transliteration": "prajākāmo vai prajāpatiḥ sa tapo'tapyata sa tapas-taptvā sa mithunam-utpādayate | rayiṃ ca prāṇaṃ cety-etau me bahudhā prajāḥ kariṣyata iti || 2 ||",
+    "translation": "The Creator (Prajapati), desiring progeny, meditated. Having performed meditation, He brought forth a pair: matter (Rayi) and energy/life-force (Prāṇa), thinking: 'These two together shall produce creatures for me in manifold ways.'",
+    "meaning": "The fundamental cosmic polarity: creation emerges from the creative synergy of dynamic life-force (Prana, the conscious active principle) and passive form/matter (Rayi, the receptive matrix).",
+    "commentaries": {
+      "adi-shankara": {
+        "en": "[Adi Shankaracharya] Rayi represents the passive, material universe (Soma, Moon, Object), while Prana is the active energizing principle (Surya, Sun, Subject).",
+        "hi": "[आदि शंकराचार्य] रयि स्थूल प्रकृति, चन्द्रमा और भोग्य पदार्थ का प्रतीक है; जबकि प्राण सूर्य, चेतना और भोक्ता जीवनशक्ति का अधिष्ठान है।",
+        "mr": "[आद्य शंकराचार्य] रयि म्हणजे जड प्रकृती व चंद्र, तर प्राण म्हणजे चैतन्य व सूर्य. या दोघांच्या संयोगातूनच संपूर्ण विश्वाचा विस्तार होतो."
+      },
+      "universal-synthesis": {
+        "en": "[Universal Vedic Synthesis] The profound anticipation of wave-particle duality and energy-matter equivalence (E=mc²): existence is a dynamic interplay of life-force and receptive substance.",
+        "hi": "[सार्वभौमिक वैदिक समन्वय] आधुनिक भौतिकी के ऊर्जा और पदार्थ (Energy-Matter Duality) के सिद्धांत का यह प्राचीनतम दार्शनिक प्रकटीकरण है।",
+        "mr": "[सार्वभौम वैदिक समन्वय] आधुनिक विज्ञानातील ऊर्जा आणि वस्तुमान यांच्यातील समतोल या वैदिक सिद्धांतात अत्यंत स्पष्टपणे मांडला आहे."
+      }
+    },
+    "layers": {
+      "adi-shankara": {
+        "en": "[Adi Shankaracharya] Rayi represents the passive, material universe (Soma, Moon, Object), while Prana is the active energizing principle (Surya, Sun, Subject).",
+        "hi": "[आदि शंकराचार्य] रयि स्थूल प्रकृति, चन्द्रमा और भोग्य पदार्थ का प्रतीक है; जबकि प्राण सूर्य, चेतना और भोक्ता जीवनशक्ति का अधिष्ठान है।",
+        "mr": "[आद्य शंकराचार्य] रयि म्हणजे जड प्रकृती व चंद्र, तर प्राण म्हणजे चैतन्य व सूर्य. या दोघांच्या संयोगातूनच संपूर्ण विश्वाचा विस्तार होतो."
+      },
+      "universal-synthesis": {
+        "en": "[Universal Vedic Synthesis] The profound anticipation of wave-particle duality and energy-matter equivalence (E=mc²): existence is a dynamic interplay of life-force and receptive substance.",
+        "hi": "[सार्वभौमिक वैदिक समन्वय] आधुनिक भौतिकी के ऊर्जा और पदार्थ (Energy-Matter Duality) के सिद्धांत का यह प्राचीनतम दार्शनिक प्रकटीकरण है।",
+        "mr": "[सार्वभौम वैदिक समन्वय] आधुनिक विज्ञानातील ऊर्जा आणि वस्तुमान यांच्यातील समतोल या वैदिक सिद्धांतात अत्यंत स्पष्टपणे मांडला आहे."
+      }
+    }
+  }
+]

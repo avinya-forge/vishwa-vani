@@ -318,5 +318,85 @@
     },
     "has_placeholders": false,
     "description": "The quintessential Atharvaveda Upanishad expounding the four states of consciousness and the sacred syllable OM."
+  },
+  {
+    "name": "Katha Upanishad",
+    "slug": "katha-upanishad",
+    "score": 100.0,
+    "stage": "GOLD",
+    "ui": "READY",
+    "lab": "INTEGRATED",
+    "progress": {
+      "chapters": "2/2",
+      "verses": "12/12",
+      "langs": "4/4",
+      "authors": "2/2"
+    },
+    "has_placeholders": false,
+    "description": "Nachiketa and Yama dialogue on immortality, Shreyas vs Preyas, and the Chariot Allegory of the Self."
+  },
+  {
+    "name": "Mundaka Upanishad",
+    "slug": "mundaka-upanishad",
+    "score": 100.0,
+    "stage": "GOLD",
+    "ui": "READY",
+    "lab": "INTEGRATED",
+    "progress": {
+      "chapters": "3/3",
+      "verses": "7/7",
+      "langs": "4/4",
+      "authors": "2/2"
+    },
+    "has_placeholders": false,
+    "description": "Parā & Aparā Vidyā, Two Birds witness consciousness, Bow of OM, and Satyameva Jayate."
+  },
+  {
+    "name": "Prashna Upanishad",
+    "slug": "prashna-upanishad",
+    "score": 100.0,
+    "stage": "GOLD",
+    "ui": "READY",
+    "lab": "INTEGRATED",
+    "progress": {
+      "chapters": "6/6",
+      "verses": "7/7",
+      "langs": "4/4",
+      "authors": "2/2"
+    },
+    "has_placeholders": false,
+    "description": "Six cosmic inquiries to Sage Pippalada on Prāṇa, dreams, OM meditation, and the 16-fold Puruṣa."
+  },
+  {
+    "name": "Taittiriya Upanishad",
+    "slug": "taittiriya-upanishad",
+    "score": 100.0,
+    "stage": "GOLD",
+    "ui": "READY",
+    "lab": "INTEGRATED",
+    "progress": {
+      "chapters": "3/3",
+      "verses": "7/7",
+      "langs": "4/4",
+      "authors": "2/2"
+    },
+    "has_placeholders": false,
+    "description": "Ethical Convocation Address, Pancha Kosha architecture, and Supreme Calculus of Divine Bliss."
+  },
+  {
+    "name": "Aitareya Upanishad",
+    "slug": "aitareya-upanishad",
+    "score": 100.0,
+    "stage": "GOLD",
+    "ui": "READY",
+    "lab": "INTEGRATED",
+    "progress": {
+      "chapters": "3/3",
+      "verses": "6/6",
+      "langs": "4/4",
+      "authors": "2/2"
+    },
+    "has_placeholders": false,
+    "description": "Rigvedic cosmogony, unified cognition, and the supreme Mahāvākya Prajñānaṃ Brahma."
   }
 ]

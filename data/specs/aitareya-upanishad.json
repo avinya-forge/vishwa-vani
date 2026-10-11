@@ -1,0 +1,160 @@
+{
+  "spec": {
+    "slug": "aitareya-upanishad",
+    "name": "Aitareya Upanishad",
+    "nameDevanagari": "ऐतरेयोपनिषद्",
+    "nameHi": "ऐतरेयोपनिषद्",
+    "nameMr": "ऐतरेयोपनिषद्",
+    "category": "upanishad",
+    "totalChapters": 3,
+    "description": "The ancient Rigvedic Upanishad of Sage Mahidasa Aitareya expounding cosmic cosmogony, the entry of consciousness through the crown of the head, and the supreme Rigvedic Mahāvākya 'Prajñānaṃ Brahma'.",
+    "sourceUrl": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/1_veda/4_upa/aitup__u.htm",
+    "license": "Public Domain (Classical Vedic Scripture)",
+    "publicDomainYear": 1923,
+    "chapterNames": {
+      "1": "Adhyāya 1 — Cosmogony: The Primordial Self & Creation of the Worlds",
+      "2": "Adhyāya 2 — The Threefold Births of the Soul & Sage Vāmadeva",
+      "3": "Adhyāya 3 — The Nature of Consciousness & Mahāvākya 'Prajñānaṃ Brahma'"
+    },
+    "hasPreface": true,
+    "hasPostface": true,
+    "authors": [
+      {
+        "id": "adi-shankara",
+        "name": "Ādi Śaṅkarācārya",
+        "lineage": "Advaita Vedānta",
+        "work": "Aitareyopaniṣad Bhāṣya",
+        "description": "Masterwork establishing non-dual consciousness as the sole underlying reality of cosmic origination and perceptual awareness."
+      },
+      {
+        "id": "universal-synthesis",
+        "name": "Universal Vedic Synthesis",
+        "lineage": "Vedic Hermeneutics",
+        "work": "Aitareya Prajñā Sāra",
+        "description": "Synthesis demonstrating how modern cognitive neuroscience and cosmological self-organization reflect the Rigvedic vision."
+      }
+    ]
+  },
+  "rawVerses": [
+    {
+      "chapter": 1,
+      "verse": 1,
+      "original": "ॐ वाङ्मे मनसि प्रतिष्ठिता मनो मे वाचि प्रतिष्ठितमाविरावीर्म एधि । वेदस्य म आणीस्थः श्रुतं मे मा प्रहासीरनेनाधीतेनाहोरात्रान् संदधाम्यूतं वदिष्यामि सत्यं वदिष्यामि । तन्मामवतु तद्वक्तारमवत्ववतु मामवतु वक्तारमवतु वक्तारम् । ॐ शान्तिः शान्तिः शान्तिः ॥ १ ॥",
+      "transliteration": "om vāṅ-me manasi pratiṣṭhitā mano me vāci pratiṣṭhitam-āvir-āvīr-ma edhi | vedasya ma āṇīsthaḥ śrutaṃ me mā prahāsīr-anenādhītenāhorātrān saṃdadhāmy-ūtaṃ vadiṣyāmi satyaṃ vadiṣyāmi | tan-mām-avatu tad-vaktāram-avatv-avatu mām-avatu vaktāram-avatu vaktāram | om śāntiḥ śāntiḥ śāntiḥ || 1 ||",
+      "translation": "May my speech be established in my mind; may my mind be established in my speech. O self-luminous Divine, reveal Thyself unto me! May you both (speech and mind) bring the wisdom of the Vedas to me. May what I have heard not depart from me. I unite day and night in this study. I shall speak the cosmic order (Ritam). I shall speak the truth (Satyam). May That protect me; may That protect the teacher. May That protect me; may That protect the teacher! OM Peace, Peace, Peace!",
+      "meaning": "The classic Rigvedic invocation for cognitive harmony: aligning speech, thought, and vocal expression into complete coherence for direct revelation of truth.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya (Advaita Vedānta)] When speech and mind are harmonized, truth flows without distortion. This prayer prepares the seeker for the revelation of non-dual consciousness.",
+          "hi": "[आदि शंकराचार्य (अद्वैत वेदान्त)] वाणी और मन की एकाग्रता ही सत्य के साक्षात्कार का द्वार खोलती है। यह शांति पाठ ज्ञान के ग्रहण और संधारण की शक्ति प्रदान करता है।",
+          "mr": "[आद्य शंकराचार्य (अद्वैत वेदान्त)] वाणी आणि मन यांच्यातील सुसंवाद हाच ज्ञानाचा खरा पाया आहे. हे शांतिस्तवन साधकाला आत्मज्ञानासाठी पात्र बनवते."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] Peak psychological coherence: aligning internal thought and external communication creates an undistorted cognitive mirror for spiritual insight.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] मन और वाणी की प्रामाणिकता ही आंतरिक सत्य की ज्योति को प्रज्वलित करती है, जो समस्त ज्ञान की आधारशिला है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] जे मनात आहे तेच बोलणे आणि सत्य आचरणे हीच खरी अंतःकरणशुद्धी असून ज्ञानाची पहिली पायरी आहे."
+        }
+      }
+    },
+    {
+      "chapter": 1,
+      "verse": 2,
+      "original": "ॐ आत्मा वा इदमेक एवाग्र आसीन्नान्यत् किञ्चन मिषत् । स ईक्षत लोकान्नु सृजा इति ॥ २ ॥",
+      "transliteration": "om ātmā vā idam-eka evāgra āsīn-nānyat kiñcana miṣat | sa īkṣata lokān-nu sṛjā iti || 2 ||",
+      "translation": "In the beginning, verily, all this was the Self (Atman) alone, one without a second. Nothing else whatsoever flickered or moved. He reflected: 'Let me now create the worlds.'",
+      "meaning": "The primordial cosmogonic baseline: Prior to physical time, space, and atomic forms, non-dual consciousness alone existed. Cosmic evolution began as a conscious intention (Ikshana).",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya] 'Atman' here refers to the Supreme Brahman, free from all distinctions of name and form. The universe existed in potential seed form within consciousness, brought forth by divine will.",
+          "hi": "[आदि शंकराचार्य] सृष्टि के पूर्व केवल अद्वितीय परमात्मा ही विद्यमान था; नाम-रूप की कोई भिन्न सत्ता नहीं थी। उसी परम चेतन ने संकल्प किया कि मैं लोकों की रचना करूँ।",
+          "mr": "[आद्य शंकराचार्य] सृष्टीच्या आरंभी केवळ एकटा आत्माच होता, दुसरे काहीही नव्हते. त्या एकाच चैतन्याने विश्वाच्या निर्मितीचा संकल्प केला."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] Pure consciousness is the ontological ground of physics: space, time, and matter do not produce awareness; awareness generates space, time, and form.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] चेतना पदार्थ से उत्पन्न नहीं होती, अपितु चेतना ही समस्त ब्रह्माण्डीय विस्तार का आदि कारण और आधार है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] जड प्रकृतीतून चेतना निर्माण होत नाही, तर मूल चैतन्यातूनच संपूर्ण भौतिक विश्वाची निर्मिती होते हा शाश्वत सिद्धांत आहे."
+        }
+      }
+    },
+    {
+      "chapter": 2,
+      "verse": 1,
+      "original": "पुरुषे ह वा अयमादितो गर्भो भवति यदेतद्रेतः । तदेतत्सर्वेभ्योऽङ्गेभ्यस्तेजः संभूतमात्मन्येवात्मानं बिभर्ति तद्यदा स्त्रियां सिञ्चत्यथैनज्जनयति तदस्य प्रथमं जन्म ॥ १ ॥",
+      "transliteration": "puruṣe ha vā ayam-ādito garbho bhavati yad-etad-retaḥ | tad-etat-sarvebhyo'ṅgebhyas-tejaḥ sambhūtam-ātmany-evātmānaṃ bibharti tad-yadā striyāṃ siñcaty-athainaj-janayati tad-asya prathamaṃ janma || 1 ||",
+      "translation": "In the male person, verily, this soul first exists as the seed. That which is semen is the concentrated vital vigor gathered from all the limbs. He bears the self within the self. When he deposits it in the female, he gives it birth. That is its first birth.",
+      "meaning": "The continuum of biological and spiritual reincarnation: tracing the journey of life through physical conception, bodily birth, and ultimate spiritual realization.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya] The text describes the three states of embodiment to cultivate deep dispassion (Vairagya) toward worldly transmigration, redirecting desire toward liberation.",
+          "hi": "[आदि शंकराचार्य] मनुष्य के तीन जन्मों का वर्णन जीव को संसार की नश्वरता दिखाकर वैराग्य और आत्मज्ञान की ओर प्रवृत्त करने के लिए किया गया है।",
+          "mr": "[आद्य शंकराचार्य] जीवाच्या जन्माची ही प्रक्रिया संसारातील नश्वरता स्पष्ट करून मुमुक्षूच्या मनात तीव्र वैराग्य निर्माण करण्यासाठी सांगितली आहे."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] Biological reproduction is the sacred mechanism through which consciousness perpetuates vehicles for experiential evolution and ultimate enlightenment.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] जीवन की निरंतरता और चेतना का यह जैविक चक्र आध्यात्मिक परिपक्वता और आत्म-साक्षात्कार का साधन है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] देहाच्या माध्यमातून चैतन्याचा हा प्रवास शेवटी आत्मज्ञानात पूर्णत्वास जातो हे येथे दर्शवले आहे."
+        }
+      }
+    },
+    {
+      "chapter": 3,
+      "verse": 1,
+      "original": "कोऽयमात्मेति वयमुपास्महे कतरः स आत्मा । येन वा पश्यति येन वा शृणोति येन वा गन्धानाजिघ्रति येन वा वाचं व्याकरोति येन वा स्वादु चास्वादु च विजानाति ॥ १ ॥",
+      "transliteration": "ko'yam-ātmeti vayam-upāsmahe kataraḥ sa ātmā | yena vā paśyati yena vā śṛṇoti yena vā gandhān-ājighrati yena vā vācaṃ vyākaroti yena vā svādu cāsvādu ca vijānāti || 1 ||",
+      "translation": "Who is this Self upon whom we meditate? Which one is the Self? Is it that by which one sees, or that by which one hears, or that by which one smells odors, or that by which one articulates speech, or that by which one distinguishes the sweet from the bitter?",
+      "meaning": "The ultimate epistemological inquiry of the seers: Who is the seer behind the eye? Who is the hearer behind the ear? What is the singular light animating all distinct sensory channels?",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya] The senses are only instruments; they cannot know themselves. The inquiry seeks that pure, immutable Witness Consciousness (Sakshi) that illumines all sensory operations.",
+          "hi": "[आदि शंकराचार्य] इन्द्रियाँ केवल जड़ साधन हैं; वे स्वयं नहीं जान सकतीं। जो इन समस्त इन्द्रियों के पीछे रहकर उन्हें प्रकाशित करता है, वही शुद्ध साक्षी आत्मा है।",
+          "mr": "[आद्य शंकराचार्य] डोळे, कान, जीभ ही केवळ बाह्य साधने आहेत. या सर्वांच्या मागे राहून सर्वांना जाणणारा जो साक्षी चैतन्य आहे, तोच खरा आत्मा आहे."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] The profound 'Hard Problem of Consciousness' formulated thousands of years ago: sensory instruments provide signals, but what is the subjective awareness experiencing them?",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] आधुनिक चेतना विज्ञान का यह सबसे बड़ा प्रश्न है कि अनुभवकर्ता कौन है — इसका समाधान उपनिषद् शुद्ध आत्मा के रूप में करते हैं।",
+          "mr": "[सार्वभौम वैदिक समन्वय] सर्व संवेदनांचा अनुभव घेणारा हा चैतन्यरूपी द्रष्टा कोण आहे हा मानवी बुद्धीचा सर्वोच्च आणि अंतिम शोध आहे."
+        }
+      }
+    },
+    {
+      "chapter": 3,
+      "verse": 2,
+      "original": "यदेतद्धृदयं मनश्चैतत् । संज्ञानमाज्ञानं विज्ञानं प्रज्ञानं मेधा दृष्टिर्धृतिर्मतिर्मनीषा जूतिः स्मृतिः सङ्कल्पः क्रतुरसुः कामो वश इति । सर्वाण्येवैतानि प्रज्ञानस्य नामधेयानि भवन्ति ॥ २ ॥",
+      "transliteration": "yad-etad-dhṛdayaṃ manaś-caitat | saṃjñānam-ājñānaṃ vijñānaṃ prajñānaṃ medhā dṛṣṭir-dhṛtir-matir-manīṣā jūtiḥ smṛtiḥ saṅkalpaḥ kratur-asuḥ kāmo vaśa iti | sarvāṇy-evaitāni prajñānasya nāmadheyāni bhavanti || 2 ||",
+      "translation": "That which is heart and mind: awareness, comprehension, understanding, wisdom, retentiveness, insight, steadfastness, thought, thoughtfulness, impulse, memory, imagination, purpose, life-force, desire, and longing — all these are verily names of Pure Consciousness (Prajñāna).",
+      "meaning": "The magnificent cognitive taxonomy: every psychological and mental faculty — from memory and intuition to emotion and perception — is an expression and modulative ray of singular Prajnana.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya] All mental functions are ripples upon the ocean of consciousness. Just as sparks are nothing but fire, all cognitive modes (Vrittis) are expressions of the self-same Prajnana.",
+          "hi": "[आदि शंकराचार्य] बुद्धि, स्मृति, संकल्प और इच्छा — ये सभी मन के विकार केवल एक ही शुद्ध प्रज्ञान (चेतना) के विभिन्न नाम और अभिव्यक्तियाँ हैं।",
+          "mr": "[आद्य शंकराचार्य] स्मरणशक्ती, विचार, निश्चय आणि भावना ही मनाची सर्व रूपे एकाच अखंड शुद्ध प्रज्ञानाचा (चैतन्याचा) आविष्कार आहेत."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] Unified field of cognition: intellectual discernment, emotional feeling, and creative will are not disconnected functions, but facets of one universal conscious presence.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] समस्त मानवीय मानसिक क्षमताओं का यह एकीकृत मॉडल सिद्ध करता है कि चेतना ही समस्त ज्ञान और रचनात्मकता की जननी है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] मानवी मनाचे सर्व पैलू एकाच मूळ चेतनेशी जोडलेले आहेत हा मानसिक एकात्मतेचा भव्य सिद्धांत आहे."
+        }
+      }
+    },
+    {
+      "chapter": 3,
+      "verse": 3,
+      "original": "एष ब्रह्मैष इन्द्र एष प्रजापतिरेते सर्वे देवा इमानि च पञ्च महाभूतानि पृथिवी वायुराकाश आपो ज्योतींषीत्येतानीमानि च क्षुद्रमिश्राणीव ... प्रज्ञानेत्रो लोकः प्रज्ञा प्रतिष्ठा प्रज्ञानं ब्रह्म ॥ ३ ॥",
+      "transliteration": "eṣa brahmaiṣa indra eṣa prajāpatir-ete sarve devā imāni ca pañca mahābhūtāni pṛthivī vāyur-ākāśa āpo jyotīṃṣīty-etānīmāni ca kṣudra-miśrāṇīva ... prajñā-netro lokaḥ prajñā pratiṣṭhā prajñānaṃ brahma || 3 ||",
+      "translation": "This is Brahman; this is Indra; this is Prajapati; this is all these gods; and these five great elements — earth, air, space, water, and fire... All this universe is guided by Consciousness, is grounded in Consciousness. Consciousness is the eye of the cosmos; Consciousness is its foundation. CONSCIOUSNESS IS BRAHMAN (Prajñānaṃ Brahma)!",
+      "meaning": "The Great Rigvedic Mahāvākya: 'Prajñānaṃ Brahma' (Consciousness is the Ultimate Reality). Pure Awareness is the source, sustainer, ground, and essence of all deities, elements, and living beings.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya] This is the supreme Mahavakya of the Rigveda. Prajnana (pure, unconditioned awareness) is not a product of the world; it is the immutable ground upon which the entire cosmos rests.",
+          "hi": "[आदि शंकराचार्य] ऋग्वेद का यह परम महावाक्य 'प्रज्ञानं ब्रह्म' घोषणा करता है कि शुद्ध चैतन्य ही परब्रह्म है। समस्त देव, तत्व और विश्व इसी चेतना में प्रतिष्ठित हैं।",
+          "mr": "[आद्य शंकराचार्य] ऋग्वेदाचा हा महान महावाक्य 'प्रज्ञानं ब्रह्म' हे सांगतो की शुद्ध आत्मचैतन्य हेच अंतिम सत्य (परब्रह्म) आहे. विश्वाचा खरा डोळा आणि आधार हे चैतन्यच आहे."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] The crowning zenith of ancient ontology: the universe is not unconscious dead matter slowly giving rise to accidental life, but an ocean of living Consciousness.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] वेदांत दर्शन का अमर शिखर: समस्त ब्रह्माण्ड जड़ नहीं, अपितु जीवंत चेतन ब्रह्म का ही स्वरूप है — यही सनातन ज्ञान का अमर उद्घोष है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] संपूर्ण विश्व हे एकाच दिव्य चैतन्याने ओतप्रोत भरलेले आहे हा उपनिषदांचा अंतिम आणि शाश्वत महासिद्धांत आहे."
+        }
+      }
+    }
+  ]
+}

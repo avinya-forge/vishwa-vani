@@ -1,0 +1,180 @@
+{
+  "spec": {
+    "slug": "mundaka-upanishad",
+    "name": "Mundaka Upanishad",
+    "nameDevanagari": "मुण्डकोपनिषद्",
+    "nameHi": "मुण्डकोपनिषद्",
+    "nameMr": "मुंडकोपनिषद्",
+    "category": "upanishad",
+    "totalChapters": 3,
+    "description": "The Atharvaveda Upanishad revealed to Shaunaka expounding Parā and Aparā Vidyā, the Two Birds metaphor, the Bow of OM, and the national motto 'Satyameva Jayate'.",
+    "sourceUrl": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/1_veda/4_upa/muup__u.htm",
+    "license": "Public Domain (Classical Vedic Scripture)",
+    "publicDomainYear": 1923,
+    "chapterNames": {
+      "1": "Muṇḍaka 1 — Parā & Aparā Vidyā: The Lower & Higher Knowledge",
+      "2": "Muṇḍaka 2 — The Cosmic Puruṣa & The Bow of OM",
+      "3": "Muṇḍaka 3 — The Two Birds, Satyameva Jayate & Supreme Realization"
+    },
+    "hasPreface": true,
+    "hasPostface": true,
+    "authors": [
+      {
+        "id": "adi-shankara",
+        "name": "Ādi Śaṅkarācārya",
+        "lineage": "Advaita Vedānta",
+        "work": "Muṇḍakopaniṣad Bhāṣya",
+        "description": "Exegesis delineating the essential difference between empirical disciplines and direct realization of the Imperishable Akshara."
+      },
+      {
+        "id": "universal-synthesis",
+        "name": "Universal Vedic Synthesis",
+        "lineage": "Vedic Hermeneutics",
+        "work": "Muṇḍaka Tattva Dīpikā",
+        "description": "Synthesis highlighting truth as the cosmic foundation and meditation on Pranava as the direct arrow to Brahman."
+      }
+    ]
+  },
+  "rawVerses": [
+    {
+      "chapter": 1,
+      "verse": 1,
+      "original": "ॐ ब्रह्मा देवानां प्रथमः सम्बभूव विश्वस्य कर्ता भुवनस्य गोप्ता । स ब्रह्मविद्यां सर्वविद्याप्रतिष्ठामथर्वाय ज्येष्ठपुत्राय प्राह ॥ १ ॥",
+      "transliteration": "om brahmā devānāṃ prathamaḥ sambabhūva viśvasya kartā bhuvanasya goptā | sa brahmavidyāṃ sarvavidyāpratiṣṭhām-atharvāya jyeṣṭhaputrāya prāha || 1 ||",
+      "translation": "Brahma arose first among the shining gods, the maker of the universe, the guardian of the cosmos. He imparted the knowledge of Brahman (Brahmavidya), the foundation of all sciences, to his eldest son Atharvan.",
+      "meaning": "Establishes the primordial, unbroken lineage (Guruparampara) of sacred wisdom originating from cosmic intelligence.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya (Advaita Vedānta)] Brahmavidya is the ground of all sciences because knowing the substratum (Brahman) reveals the essential nature of all phenomena.",
+          "hi": "[आदि शंकराचार्य (अद्वैत वेदान्त)] ब्रह्मविद्या समस्त विद्याओं की प्रतिष्ठा है क्योंकि कारण को जान लेने पर समस्त कार्य जगत का यथार्थ ज्ञान स्वतः हो जाता है।",
+          "mr": "[आद्य शंकराचार्य (अद्वैत वेदान्त)] ब्रह्मविद्या ही सर्व विद्यांचे अधिष्ठान आहे कारण मूलतत्त्वाला जाणल्याने सर्व विश्वाचे स्वरूप स्पष्ट होते."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] The lineage of wisdom represents the continuous transmission of truth across generations of disciplined seekers.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] गुरु-परम्परा का यह पावन सूत्र दर्शाता है कि आत्मविद्या केवल बौद्धिक ज्ञान नहीं, अपितु जीवन-अनुभव का साक्षात् प्रवाह है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] ब्रह्मविद्येचा हा सनातन प्रवाह मानवी कल्याणासाठी पिढ्यानपिढ्या निरंतर चालू राहिला आहे."
+        }
+      }
+    },
+    {
+      "chapter": 1,
+      "verse": 2,
+      "original": "द्वे विद्ये वेदितव्ये इति ह स्म यद्ब्रह्मविदो वदन्ति परा चैवापरा च । तत्रापरा ऋग्वेदो यजुर्वेदः सामवेदोऽथर्ववेदः शिक्षा कल्पो व्याकरणं निरुक्तं छन्दो ज्योतिषमिति । अथ परा यया तदक्षरमधिगम्यते ॥ २ ॥",
+      "transliteration": "dve vidye veditavye iti ha sma yad-brahmavido vadanti parā caivāparā ca | tatrāparā ṛgvedo yajurvedaḥ sāmavedo'tharvavedaḥ śikṣā kalpo vyākaraṇaṃ niruktaṃ chando jyotiṣam-iti | atha parā yayā tad-akṣaram-adhigamyate || 2 ||",
+      "translation": "Two kinds of knowledge are to be known, so say the knowers of Brahman: the higher (Parā) and the lower (Aparā). Of these, the lower consists of the Rigveda, Yajurveda, Samaveda, Atharvaveda, phonetics, ritual, grammar, etymology, metrics, and astronomy. But the higher is that by which the Imperishable (Akshara) is realized.",
+      "meaning": "The classic epistemological demarcation: all empirical sciences, linguistic arts, and ritual texts are Aparā Vidyā; direct realization of the birthless, deathless Brahman is Parā Vidyā.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya] Aparā Vidyā deals with cause, effect, and worldly action. Parā Vidyā is immediate experiential knowledge of the self-luminous Akshara Brahman.",
+          "hi": "[आदि शंकराचार्य] अपरा विद्या कर्म और उसके फलों से संबंधित है। परा विद्या वह प्रत्यक्ष आत्मज्ञान है जिसके द्वारा अविनाशी अक्षर ब्रह्म का साक्षात्कार होता है।",
+          "mr": "[आद्य शंकराचार्य] अपरा विद्या ही भौतिक शास्त्रे आणि कर्मकांडांचे ज्ञान देते; तर परा विद्या अविनाशी आत्म्याचा प्रत्यक्ष साक्षात्कार घडवून आणते."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] Intellectual and scientific knowledge builds the mind, but contemplative realization of consciousness alone brings ultimate freedom.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] विज्ञान और बुद्धि जीवन को समृद्ध करते हैं, किन्तु परा विद्या चेतना को मुक्त कर परम शांति प्रदान करती है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] भौतिक ज्ञान जगातील व्यवहारासाठी उपयुक्त असले तरी मुक्तीसाठी केवळ परा विद्येचाच आधार घ्यावा लागतो."
+        }
+      }
+    },
+    {
+      "chapter": 2,
+      "verse": 1,
+      "original": "तदेतत्सत्यं यथा सुदीप्तात्पावकाद्विस्फुलिङ्गाः सहस्रशः प्रभवन्ते सरूपाः । तथाऽक्षराद्विविधाः सोम्य भावाः प्रजायन्ते तत्र चैवापियन्ति ॥ १ ॥",
+      "transliteration": "tad-etat-satyaṃ yathā sudīptāt-pāvakād-visphuliṅgāḥ sahasraśaḥ prabhavante sarūpāḥ | tathā'kṣarād-vividhāḥ somya bhāvāḥ prajāyante tatra caivāpiyanti || 1 ||",
+      "translation": "This is the truth: as from a blazing fire thousands of sparks fly forth of identical nature, even so, O beloved disciple, manifold beings issue forth from the Imperishable and dissolve back into It.",
+      "meaning": "The spark and fire metaphor for cosmic manifestation: all living beings share the exact non-dual nature of the supreme ground and return to It upon liberation.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya] The sparks are not fundamentally different from fire; they are of the identical essence. Similarly, the jivas in their true nature are identical with Akshara Brahman.",
+          "hi": "[आदि शंकराचार्य] अग्नि से निकली चिंगारी अग्नि से भिन्न नहीं होती। उसी प्रकार अक्षर ब्रह्म से उत्पन्न समस्त जीव स्वरूपतः ब्रह्म ही हैं और उसी में लीन होते हैं।",
+          "mr": "[आद्य शंकराचार्य] अग्नीचे स्फुलिंग हे अग्नीहून वेगळे नसतात; तसेच सर्व जीव मूलतः परब्रह्मस्वरूप असून शेवटी त्याच परब्रह्मात विलीन होतात."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] A majestic cosmic vision showing the underlying unity of all sentient life emerging from and resting within one singular field of being.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] सृष्टि की समस्त विविधताओं के मूल में एक ही चेतन सत्ता की ज्योति प्रदीप्त है, जो एकात्मता का संदेश देती है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] विश्वातील सर्व प्राणीमात्रांचे मूळ एकाच परम चेतनेमध्ये आहे हा वैश्विक एकतेचा दिव्य सिद्धांत येथे मांडला आहे."
+        }
+      }
+    },
+    {
+      "chapter": 2,
+      "verse": 2,
+      "original": "प्रणवो धनुः शरो ह्यात्मा ब्रह्म तल्लक्ष्यमुच्यते । अप्रमत्तेन वेद्धव्यं शरवत्तन्मयो भवेत् ॥ २ ॥",
+      "transliteration": "praṇavo dhanuḥ śaro hyātmā brahma tal-lakṣyam-ucyate | apramattena veddhavyaṃ śaravat-tanmayo bhavet || 2 ||",
+      "translation": "The sacred syllable OM is the bow; the arrow is the individual self (Atman); Brahman is said to be the target. With unwavering attention it is to be pierced; then one becomes merged in That, just like the arrow in the target.",
+      "meaning": "The ultimate contemplative metaphor of meditation: launching individual attention via Pranava OM directly into the bullseye of infinite consciousness.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya] Just as an arrow shot with a steady hand enters the mark and becomes one with it, the mind meditating on OM dissolves all separateness in Brahman.",
+          "hi": "[आदि शंकराचार्य] ॐकार धनुष है, जीवात्मा बाण है और परब्रह्म लक्ष्य है। प्रमाद रहित होकर लक्ष्य भेदन करने से साधक ब्रह्ममय हो जाता है।",
+          "mr": "[आद्य शंकराचार्य] ॐकार हे धनुष्य, आत्मा हा बाण आणि परब्रह्म हे लक्ष्य आहे. एकाग्र चित्ताने ध्यान केल्यास साधक बाणाप्रमाणे परब्रह्मात तन्मय होतो."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] An unsurpassed visualization for unified meditative concentration (Dhyana and Samadhi), teaching unbroken oneness between seeker and the Divine.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] ध्यान और समाधि की यह अद्वितीय उपमा चित्त को संपूर्ण एकाग्रता के साथ अनंत चेतना में विलीन करने की कला सिखाती है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] साधक, साधन आणि साध्य यांचे ऐक्य घडवून आणणारी ही ध्यानाची अत्यंत प्रभावी आणि सुंदर वैदिक संकल्पना आहे."
+        }
+      }
+    },
+    {
+      "chapter": 3,
+      "verse": 1,
+      "original": "द्वा सुपर्णा सयुजा सखाया समानं वृक्षं परिषस्वजाते । तयोरन्यः पिप्पलं स्वाद्वत्त्यनश्नन्नन्यो अभिचाकशीति ॥ १ ॥",
+      "transliteration": "dvā suparṇā sayujā sakhāyā samānaṃ vṛkṣaṃ pariṣasvajāte | tayor-anyaḥ pippalaṃ svādvatty-anaśnann-anyo abhicākaśīti || 1 ||",
+      "translation": "Two birds of beautiful plumage, closely united in friendship, dwell on the self-same tree. One of them eats the sweet fruit of the tree, while the other looks on without eating, shining in silent witness.",
+      "meaning": "The Two Birds allegory: The same physical body (tree) hosts the empirical ego (enjoying and suffering worldly fruits) and the pure transcendental witness consciousness (Sakshi).",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya] The two birds are the Jiva and Ishvara. The Jiva, identified with the intellect, eats the fruits of karma. The Supreme Self, ever pure and untainted, shines as the detached witness.",
+          "hi": "[आदि शंकराचार्य] शरीररूपी वृक्ष पर दो पक्षी (जीव और साक्षी ईश्वर) बैठे हैं। जीव कर्मफल का भोग करता है, जबकि साक्षी आत्मा बिना भोग किए केवल प्रकाशमान रहता है।",
+          "mr": "[आद्य शंकराचार्य] देहरूपी वृक्षावर जीव आणि साक्षी आत्मा हे दोन पक्षी आहेत. जीव सुख-दुःखांची फळे भोगतो, तर साक्षी आत्मा निर्लेप राहून केवळ पाहतो."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] The psychological discovery of mindfulness and witness consciousness: suffering ends the moment awareness identifies with the silent watcher rather than the struggling ego.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] साक्षी भाव का यह सार्वभौमिक दर्शन मनुष्य को संसार के दुःखों से मुक्त कर परम शांति में प्रतिष्ठित करता है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] जेव्हा मनुष्य स्वतःला केवळ भोक्ता न मानता अंतर्मनातील शांत साक्षी चैतन्य अनुभवतो, तेव्हाच त्याला खरी मुक्ती लाभते."
+        }
+      }
+    },
+    {
+      "chapter": 3,
+      "verse": 2,
+      "original": "सत्यमेव जयते नानृतं सत्येन पन्था विततो देवयानः । येनाक्रमन्त्यृषयो ह्याप्तकामा यत्र तत् सत्यस्य परमं निधानम् ॥ २ ॥",
+      "transliteration": "satyameva jayate nānṛtaṃ satyena panthā vitato devayānaḥ | yenākramanty-ṛṣayo hyāptakāmā yatra tat satyasya paramaṃ nidhānam || 2 ||",
+      "translation": "Truth alone triumphs, not untruth. By Truth is paved the divine path (Devayana), along which the sages whose desires are fulfilled ascend to where that supreme abode of Truth resides.",
+      "meaning": "The eternal moral axiom 'Satyameva Jayate': Cosmic reality is fundamentally grounded in truth; alignment with truth leads straight to spiritual transcendence.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya] Truth (Satya) is reality itself. Untruth is illusion and non-existence. Truth alone prevails because only that which is real endures permanently.",
+          "hi": "[आदि शंकराचार्य] सत्य की ही विजय होती है, असत्य की नहीं। सत्य ही वह परम मार्ग है जिससे मुमुक्षु ऋषिगण परमात्मा के परम धाम को प्राप्त करते हैं।",
+          "mr": "[आद्य शंकराचार्य] सत्याचाच विजय होतो, असत्याचा कधीही नाही. सत्याच्या मार्गानेच ज्ञानी ऋषि परब्रह्माच्या परम पदापर्यंत पोहोचतात."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] The national motto of India and eternal compass for civilization: uprightness and truth constitute the unbreakable law of the universe.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] भारत का राष्ट्रीय आदर्श वाक्य 'सत्यमेव जयते' इसी उपनिषद् से अवतरित है, जो मानव मात्र के आचरण का सर्वोच्च ध्रुवतारा है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] भारताचे राष्ट्रीय ब्रीदवाक्य 'सत्यमेव जयते' याच पवित्र मंत्रातून आले असून ते मानवी नीतीचा सर्वोच्च आधारस्तंभ आहे."
+        }
+      }
+    },
+    {
+      "chapter": 3,
+      "verse": 3,
+      "original": "यथा नद्यः स्यन्दमानाः समुद्रेऽस्तं गच्छन्ति नामरूपे विहाय । तथा विद्वान्नामरूपाद्विमुक्तः परात्परं पुरुषमुपैति दिव्यम् ॥ ३ ॥",
+      "transliteration": "yathā nadyaḥ syandamānāḥ samudre'staṃ gacchanti nāmarūpe vihāya | tathā vidvān-nāmarūpād-vimuktaḥ parāt-paraṃ puruṣam-upaiti divyam || 3 ||",
+      "translation": "As flowing rivers disappear into the ocean, casting off their individual names and forms, even so the enlightened knower, liberated from name and form, attains the Supreme Divine Person, higher than the highest.",
+      "meaning": "The ultimate dissolution of individuality into non-dual infinity: like rivers merging into the ocean, personal identity expands into universal cosmic consciousness.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya] When the limiting names and forms disappear, rivers do not lose reality; they become the ocean itself. In liberation, the jiva realizes itself as the infinite Brahman.",
+          "hi": "[आदि शंकराचार्य] जिस प्रकार नदियाँ समुद्र में मिलकर नाम और रूप खोकर समुद्र ही बन जाती हैं, उसी प्रकार ज्ञानी पुरुष नाम-रूप के बन्धन से मुक्त होकर परब्रह्म में एकीभाव को प्राप्त होता है।",
+          "mr": "[आद्य शंकराचार्य] नद्या जशा सागराला मिळून आपले नाव आणि रूप विसरतात, तसेच ज्ञानी पुरुष सर्व उपाधींच्या पलीकडे जाऊन साक्षात् परब्रह्मस्वरूप बनतो."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] The sublime culmination of Advaita: spiritual liberation is not annihilation, but total expansion into the boundless ocean of existence, consciousness, and bliss.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] अद्वैत वेदांत का परम शिखर: आत्मा का परमात्मा में यह विलय कोई संहार नहीं, अपितु क्षुद्र से विराट् बनने का पूर्ण विस्तार है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] जीवाचे शिवाशी हे अद्वैत मिलन म्हणजे संकुचित अहंकाराचा त्याग करून अनंतात पूर्णपणे एकरूप होणे होय."
+        }
+      }
+    }
+  ]
+}

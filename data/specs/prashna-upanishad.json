@@ -1,0 +1,183 @@
+{
+  "spec": {
+    "slug": "prashna-upanishad",
+    "name": "Prashna Upanishad",
+    "nameDevanagari": "प्रश्नोपनिषद्",
+    "nameHi": "प्रश्नोपनिषद्",
+    "nameMr": "प्रश्नोपनिषद्",
+    "category": "upanishad",
+    "totalChapters": 6,
+    "description": "The Atharvaveda Upanishad wherein Sage Pippalada resolves six existential inquiries on the origin of life, Prāṇa, the nature of dreams and sleep, OM meditation, and the 16-fold Puruṣa.",
+    "sourceUrl": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/1_veda/4_upa/prup__u.htm",
+    "license": "Public Domain (Classical Vedic Scripture)",
+    "publicDomainYear": 1923,
+    "chapterNames": {
+      "1": "Praśna 1 — Cosmic Genesis: The Dual Dynamics of Prāṇa & Rayi",
+      "2": "Praśna 2 — The Supremacy of Prāṇa among Vital Organs",
+      "3": "Praśna 3 — Origin, Distribution & Physiology of the Five Prāṇas",
+      "4": "Praśna 4 — Cognitive Sleep, Dream States & The Transcendental Witness",
+      "5": "Praśna 5 — Cosmic Meditation on the Syllable OM (A-U-M)",
+      "6": "Praśna 6 — The Sixteen-Fold Person (Ṣoḍaśa-Kalā Puruṣa) & Final Dissolution"
+    },
+    "hasPreface": true,
+    "hasPostface": true,
+    "authors": [
+      {
+        "id": "adi-shankara",
+        "name": "Ādi Śaṅkarācārya",
+        "lineage": "Advaita Vedānta",
+        "work": "Praśnopaniṣad Bhāṣya",
+        "description": "Systematic commentary analyzing vital physiology and non-dual consciousness across Pippalada's six dialogues."
+      },
+      {
+        "id": "universal-synthesis",
+        "name": "Universal Vedic Synthesis",
+        "lineage": "Vedic Hermeneutics",
+        "work": "Praśna Viveka Ratna",
+        "description": "Synthesis integrating psychosomatic energy flows, sonic metaphysics, and transcendental awareness."
+      }
+    ]
+  },
+  "rawVerses": [
+    {
+      "chapter": 1,
+      "verse": 1,
+      "original": "ॐ सुकेशा च भारद्वाजः शैब्यश्च सत्यकामः सौर्यायणी च गार्ग्यः कौसल्यश्चाश्वलायनो भार्गवो वैदर्भिः कबन्धी कात्यायनस्ते हैते ब्रह्मपरा ब्रह्मनिष्ठाः परं ब्रह्मान्वेषमाणा एष ह वै तत् सर्वं वक्ष्यतीति ते ह समित्पाणयो भगवन्तं पिप्पलादमुपसन्नाः ॥ १ ॥",
+      "transliteration": "om sukeśā ca bhāradvājaḥ śaibyaśca satyakāmaḥ sauryāyaṇī ca gārgyaḥ kausalyaścāśvalāyano bhārgavo vaidarbhiḥ kabandhī kātyāyanas-te haite brahmaparā brahmaniṣṭhāḥ paraṃ brahmānveṣamāṇā eṣa ha vai tat sarvaṃ vakṣyatīti te ha samitpāṇayo bhagavantaṃ pippalādam-upasannāḥ || 1 ||",
+      "translation": "Sukesha Bharadvaja, Satyakama Shaibya, Sauryayani Gargya, Kausalya Ashvalayana, Bhargava Vaidarbhi, and Kabandhi Katyayana — these seekers, devoted to Brahman and steadfast in truth, approached the venerable Sage Pippalada with sacrificial fuel in hand, seeking the supreme Brahman.",
+      "meaning": "The classic Vedic protocol of higher inquiry: accomplished, disciplined disciples approach an illumined master in humility and reverent dedication.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya (Advaita Vedānta)] Carrying fuel (Samitpani) symbolizes self-surrender, purity, and readiness to serve the preceptor in pursuit of Brahmavidya.",
+          "hi": "[आदि शंकराचार्य (अद्वैत वेदान्त)] समिधा लेकर गुरु की शरण में जाना शिष्य के निरहंकार भाव, श्रद्धा और आत्मज्ञान की तीव्र अभीप्सा का द्योतक है।",
+          "mr": "[आद्य शंकराचार्य (अद्वैत वेदान्त)] हातात समिधा घेऊन सद्गुरूंच्या चरणी लीन होणे हे अहंकाराचा त्याग आणि ज्ञानप्राप्तीची विनम्र पात्रता दर्शवते."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] Spiritual inquiry requires intellectual preparation, ethical discipline, and open-hearted humility before profound mysteries can be unveiled.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] छह महान ऋषियों का यह संवाद सिद्ध करता है कि यथार्थ ज्ञान केवल निष्ठावान और विनम्र जिज्ञासुओं को ही प्राप्त होता है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] जीवनाच्या गूढ प्रश्नांची उत्तरे मिळवण्यासाठी पूर्वतयारी, संयम आणि सद्गुरूंवर दृढ विश्वास असणे आवश्यक आहे."
+        }
+      }
+    },
+    {
+      "chapter": 1,
+      "verse": 2,
+      "original": "प्रजाकामो वै प्रजापतिः स तपोऽतप्यत स तपस्तप्त्वा स मिथुनमुत्पादयते । रयिं च प्राणं चेत्येतौ मे बहुधा प्रजाः करिष्यत इति ॥ २ ॥",
+      "transliteration": "prajākāmo vai prajāpatiḥ sa tapo'tapyata sa tapas-taptvā sa mithunam-utpādayate | rayiṃ ca prāṇaṃ cety-etau me bahudhā prajāḥ kariṣyata iti || 2 ||",
+      "translation": "The Creator (Prajapati), desiring progeny, meditated. Having performed meditation, He brought forth a pair: matter (Rayi) and energy/life-force (Prāṇa), thinking: 'These two together shall produce creatures for me in manifold ways.'",
+      "meaning": "The fundamental cosmic polarity: creation emerges from the creative synergy of dynamic life-force (Prana, the conscious active principle) and passive form/matter (Rayi, the receptive matrix).",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya] Rayi represents the passive, material universe (Soma, Moon, Object), while Prana is the active energizing principle (Surya, Sun, Subject).",
+          "hi": "[आदि शंकराचार्य] रयि स्थूल प्रकृति, चन्द्रमा और भोग्य पदार्थ का प्रतीक है; जबकि प्राण सूर्य, चेतना और भोक्ता जीवनशक्ति का अधिष्ठान है।",
+          "mr": "[आद्य शंकराचार्य] रयि म्हणजे जड प्रकृती व चंद्र, तर प्राण म्हणजे चैतन्य व सूर्य. या दोघांच्या संयोगातूनच संपूर्ण विश्वाचा विस्तार होतो."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] The profound anticipation of wave-particle duality and energy-matter equivalence (E=mc²): existence is a dynamic interplay of life-force and receptive substance.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] आधुनिक भौतिकी के ऊर्जा और पदार्थ (Energy-Matter Duality) के सिद्धांत का यह प्राचीनतम दार्शनिक प्रकटीकरण है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] आधुनिक विज्ञानातील ऊर्जा आणि वस्तुमान यांच्यातील समतोल या वैदिक सिद्धांतात अत्यंत स्पष्टपणे मांडला आहे."
+        }
+      }
+    },
+    {
+      "chapter": 2,
+      "verse": 1,
+      "original": "तान् वरिष्ठः प्राण उवाच मा मोहमापद्यथाहमेवैतत् पञ्चधाऽत्मानं प्रविभज्यैतद् बाणमवष्टभ्य विधारयामीति तेऽश्रद्दधाना बभूवुः ॥ १ ॥",
+      "transliteration": "tān variṣṭhaḥ prāṇa uvāca mā moham-āpadyathāham-evaitat pañcadhā'tmānaṃ pravibhajyaitad bāṇam-avaṣṭabhya vidhārayāmīti te'śraddadhānā babhūvuḥ || 1 ||",
+      "translation": "Prāṇa, the foremost, said to the other senses: 'Do not harbor delusion! I alone, dividing myself fivefold, sustain and uphold this bodily frame.' But they were incredulous.",
+      "meaning": "The supremacy of the vital life-force: While speech, sight, hearing, and mind boast of their powers, Prana is the singular indispensible power keeping the living organism animated.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya] When Prana departs, all bodily faculties collapse instantly. The organs function only as subordinate instruments of the primary vital breath.",
+          "hi": "[आदि शंकराचार्य] प्राण के उत्क्रमण करते ही समस्त इन्द्रियाँ निष्क्रिय हो जाती हैं। अतः प्राण ही शरीररूपी रथ का सर्वप्रधान संवाहक है।",
+          "mr": "[आद्य शंकराचार्य] प्राण निघून जाताच सर्व इंद्रिये निष्प्राण होतात. त्यामुळे देहाचे खरे पोषण आणि रक्षण करणारा प्राणच सर्वश्रेष्ठ आहे."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] Biological existence requires an integrated energetic governor; all specialized sensory modules depend upon this primary bio-energetic foundation.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] शरीर विज्ञान का यह शाश्वत नियम है कि प्राण के बिना ज्ञान, विचार या कर्म की कोई भी इन्द्रिय कार्य नहीं कर सकती।",
+          "mr": "[सार्वभौम वैदिक समन्वय] संपूर्ण शारीरिक आणि मानसिक कार्यप्रणालीचा आधार ही प्राणशक्तीच आहे हा शरीरविज्ञानाचा पाया आहे."
+        }
+      }
+    },
+    {
+      "chapter": 3,
+      "verse": 1,
+      "original": "आत्मन एष प्राणो जायते । यथैषा पुरुषे छायैतस्मिन्नेतदाततं मनोकृतेनायात्यस्मिन् शरीरे ॥ १ ॥",
+      "transliteration": "ātmana eṣa prāṇo jāyate | yathaiṣā puruṣe chāyaitasmin-netad-ātataṃ manokṛtenāyāty-asmin śarīre || 1 ||",
+      "translation": "From the Atman (Supreme Self) this Prāṇa is born. Just as a shadow is cast by a person, even so is Prāṇa projected upon the Self. By the action of the mind, it enters into this body.",
+      "meaning": "The origin of life-energy: Prana is not an independent physical accident, but an energetic shadow and projection of pure consciousness entering embodiment through mental conditioning.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya] Prana has no independent reality apart from the Atman, just as a shadow has no existence without the person. The impressions (Samskaras) of the mind attract Prana into physical embodiment.",
+          "hi": "[आदि शंकराचार्य] जैसे मनुष्य की छाया मनुष्य से अभिन्न होती है, वैसे ही प्राण आत्मा का ही प्रक्षेपण है जो मन के संकल्पों और कर्मफलों के कारण देह में प्रवेश करता है।",
+          "mr": "[आद्य शंकराचार्य] जशी माणसाची सावली माणसावर अवलंबून असते, तसाच प्राण आत्म्यातून निर्माण होतो आणि मनाच्या वासनांमुळे देहात येतो."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] The profound metaphysical link between mind, consciousness, and biological breath: respiration and vitality are the psychosomatic bridge to pure awareness.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] चेतना, मन और श्वास का यह त्रिकोण प्राणायाम और योगसाधना का वैज्ञानिक आधार प्रस्तुत करता है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] मन आणि श्वास यांचे नाते आत्म्याशी कसे जोडलेले आहे हे या मंत्रातून स्पष्ट होते."
+        }
+      }
+    },
+    {
+      "chapter": 4,
+      "verse": 1,
+      "original": "अत्रैष देवः स्वप्ने महिमानमनुभवति । यद्दृष्टं दृष्टमनुपश्यति श्रुतं श्रुतमेवार्थमनुशृणोति देशदिगन्तरैश्च प्रत्यनुभूतं पुनः पुनः प्रत्यनुभवति ॥ १ ॥",
+      "transliteration": "atraiṣa devaḥ svapne mahimānam-anubhavati | yad-dṛṣṭaṃ dṛṣṭam-anupaśyati śrutaṃ śrutam-evārtham-anuśṛṇoti deśadigantaraiśca pratyanubhūtaṃ punaḥ punaḥ pratyanubhavati || 1 ||",
+      "translation": "There, in the dream state, this luminous deity (the mind) experiences its own majesty. Whatever has been seen it sees again; whatever has been heard it hears again; and whatever has been experienced in different lands and directions it experiences again and again.",
+      "meaning": "The creative architecture of the dream state: When physical senses rest, the mind shines in its own self-projected light, synthesizing past memories and experiences into vivid virtual realities.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya] In dreams, the external senses are withdrawn into the mind. The mind, illumined by the witness consciousness, becomes both creator and experiencer of its internal universe.",
+          "hi": "[आदि शंकराचार्य] स्वप्नावस्था में बाह्य इन्द्रियाँ मन में विलीन हो जाती हैं। मन अपने संस्कारों की सामग्री से स्वयं सृष्टि की रचना कर उसका अनुभव करता है।",
+          "mr": "[आद्य शंकराचार्य] स्वप्नात बाह्य जगाचा संपर्क तुटतो आणि मन आपल्या पूर्वसंस्कारांमधून स्वतःचे काल्पनिक जग निर्माण करून त्याचा आनंद घेते."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] Ancient cognitive neurology and dream psychology: the subjective mind constructs internal sensory environments from stored neuro-cognitive impressions.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] स्वप्न विज्ञान और अवचेतन मन की कार्यप्रणाली का यह सटीक विश्लेषण आधुनिक मनोविज्ञान का मार्गदर्शक है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] सुप्त मन कसे भूतकाळातील अनुभवांचे पुनरुत्थान करते याचे हे अत्यंत सूक्ष्म आणि वैज्ञानिक वर्णन आहे."
+        }
+      }
+    },
+    {
+      "chapter": 5,
+      "verse": 1,
+      "original": "स यद्येकमात्रमभिध्यायीत स तेनैव संवेदितस्तूर्णमेव जगत्यामभिसम्पद्यते । ... यः पुनरेतं त्रिमात्रेणैवोमित्येतेनैवाक्षरेण परं पुरुषमभिध्यायीत स तेजसि सूर्ये सम्पन्नः ॥ १ ॥",
+      "transliteration": "sa yady-ekamātram-abhidhyāyīta sa tenaiva saṃveditas-tūrṇam-eva jagatyām-abhisampadyate | ... yaḥ punar-etaṃ trimātreṇaivom-ity-etenaivākṣareṇa paraṃ puruṣam-abhidhyāyīta sa tejasi sūrye sampannaḥ || 1 ||",
+      "translation": "If one meditates on OM with one measure (A), one is quickly reborn into this world endowed with spiritual vigor... But he who meditates on the highest Person with all three measures (A-U-M) becomes one with the radiant cosmic light of the Sun and is freed from all mortal limitations.",
+      "meaning": "The sonic dimensional ladder of Pranava: Meditating on the three phonetic elements of OM leads consciousness from physical grounding through mental subtle planes to supreme non-dual transcendence.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya] The three matras of OM correspond to the waking, dreaming, and deep sleep states. Complete meditation on OM transcends all three, revealing the unconditioned Purusha.",
+          "hi": "[आदि शंकराचार्य] ॐकार की तीन मात्राएँ (अ, उ, म) स्थूल, सूक्ष्म और कारण जगत की प्रतीक हैं। त्रिमात्रिक ॐ के ध्यान से साधक सूर्यमण्डल को भेदकर परम पद प्राप्त करता है।",
+          "mr": "[आद्य शंकराचार्य] ॐकाराच्या तीन मात्रा जाग्रत, स्वप्न आणि सुषुप्तीचे प्रतीक आहेत. अखंड ॐकार ध्यानाने साधक सर्व बंधनांतून मुक्त होऊन परब्रह्माशी एकरूप होतो."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] Sacred sound as cosmic resonance: acoustic chanting and internal mental resonance dissolve psychological friction into unified divine awareness.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] नादब्रह्म और ॐकार की यह साधना चेतना को स्थूल संसार से उठाकर परा चेतना में विलीन करने का राजमार्ग है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] ॐकार साधना ही मनाला सर्व विकल्पांतून सोडवून थेट वैश्विक चैतन्याशी जोडणारी आध्यात्मिक गुरुकिल्ली आहे."
+        }
+      }
+    },
+    {
+      "chapter": 6,
+      "verse": 1,
+      "original": "स ईक्षांचक्रे । कस्मिन्नहमुत्क्रान्ते उत्क्रान्तो भविष्यामि कस्मिन् वा प्रतिष्ठिते प्रतिष्ठास्यामीति । स प्राणमसृजत प्राणाच्छ्रद्धां खं वायुर्ज्योतिरापः पृथिवीन्द्रियं मनः । अन्नमन्नाद्वीर्यं तपो मन्त्राः कर्म लोका लोकेषु च नाम च ॥ १ ॥",
+      "transliteration": "sa īkṣāṃcakre | kasmin-naham-utkrānte utkrānto bhaviṣyāmi kasmin vā pratiṣṭhite pratiṣṭhāsyāmīti | sa prāṇam-asṛjata prāṇāc-chraddhāṃ khaṃ vāyur-jyotir-āpaḥ pṛthivīndriyaṃ manaḥ | annam-annād-vīryaṃ tapo mantrāḥ karma lokā lokeṣu ca nāma ca || 1 ||",
+      "translation": "He (the Supreme Puruṣa) reflected: 'At whose departure shall I depart? At whose remaining shall I remain?' He created Prāṇa; and from Prāṇa faith, space, air, light, water, earth, sensory organs, and mind; from them food, from food vigor, austerity, mantras, rites, worlds, and in the worlds, names.",
+      "meaning": "The creation and resolution of the 16 Kalas (aspects of manifestation): all cosmic elements and human faculties branch out from consciousness and resolve back into it, leaving no separate name or form.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya] Just as rivers flowing toward the ocean lose their distinct names and forms upon entering it, so do these sixteen parts of the seer dissolve into the Purusha, becoming immortal.",
+          "hi": "[आदि शंकराचार्य] षोडश कलाएँ (प्राण, श्रद्धा, पंचतत्व आदि) आत्मा से ही उत्पन्न होती हैं और आत्मज्ञान होने पर उसी परब्रह्म में विलीन हो जाती हैं, तब केवल अद्वैत सत्य शेष रहता है।",
+          "mr": "[आद्य शंकराचार्य] ज्याप्रमाणे नद्या समुद्रात विरघळून जातात, तसेच ज्ञानी पुरुषाच्या या सोळाही कला परमात्म्यात विलीन होऊन तो अमर होतो."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] The magnificent return of the many into the One: all cosmic diversity resolves back into unconditioned awareness when the core of identity is recognized.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] अनेकता से एकता की ओर यह परम यात्रा उपनिषदों की उस अमर घोषणा का सत्यापन करती है कि सब कुछ अंततः एक ही ब्रह्म है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] संपूर्ण सृष्टीतील विविधतेचा अंतिम लय एकाच परम तत्त्वात होतो हा उपनिषदांचा अंतिम आणि शाश्वत संदेश आहे."
+        }
+      }
+    }
+  ]
+}

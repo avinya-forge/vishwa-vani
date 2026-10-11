@@ -1,0 +1,180 @@
+{
+  "spec": {
+    "slug": "taittiriya-upanishad",
+    "name": "Taittiriya Upanishad",
+    "nameDevanagari": "तैत्तिरीयोपनिषद्",
+    "nameHi": "तैत्तिरीयोपनिषद्",
+    "nameMr": "तैत्तिरीयोपनिषद्",
+    "category": "upanishad",
+    "totalChapters": 3,
+    "description": "The monumental Krishna Yajurveda Upanishad expounding the sacred moral convocation address, the Pancha Kosha (Five Sheaths of Consciousness) architecture, and the supreme Calculus of Divine Bliss.",
+    "sourceUrl": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/1_veda/4_upa/taiup__u.htm",
+    "license": "Public Domain (Classical Vedic Scripture)",
+    "publicDomainYear": 1923,
+    "chapterNames": {
+      "1": "Śikṣā Vallī — The Science of Phonetics & The Ethical Convocation Address",
+      "2": "Brahmānanda Vallī — The Five Sheaths (Pañca Kośa) & Supreme Brahman",
+      "3": "Bhṛgu Vallī — The Scientific Inquiry of Bhṛgu: From Matter to Infinite Bliss"
+    },
+    "hasPreface": true,
+    "hasPostface": true,
+    "authors": [
+      {
+        "id": "adi-shankara",
+        "name": "Ādi Śaṅkarācārya",
+        "lineage": "Advaita Vedānta",
+        "work": "Taittirīyopaniṣad Bhāṣya",
+        "description": "Classic exegesis analyzing the definition 'Satyam Jñānam Anantam Brahma' and the progressive transcendence of the five sheaths."
+      },
+      {
+        "id": "universal-synthesis",
+        "name": "Universal Vedic Synthesis",
+        "lineage": "Vedic Hermeneutics",
+        "work": "Taittirīya Kośa Prakāśikā",
+        "description": "Synthesis linking holistic pedagogical ethics, depth psychology of human sheaths, and experiential aesthetic bliss."
+      }
+    ]
+  },
+  "rawVerses": [
+    {
+      "chapter": 1,
+      "verse": 1,
+      "original": "ॐ शं नो मित्रः शं वरुणः । शं नो भवत्वर्यमा । शं न इन्द्रो बृहस्पतिः । शं नो विष्णुरुरुक्रमः । नमो ब्रह्मणे । नमस्ते वायो । त्वमेव प्रत्यक्षं ब्रह्मासि । त्वामेव प्रत्यक्षं ब्रह्म वदिष्यामि । ऋतं वदिष्यामि । सत्यं वदिष्यामि । तन्मामवतु । तद्वक्तारमवतु । अवतु माम् । अवतु वक्तारम् । ॐ शान्तिः शान्तिः शान्तिः ॥ १ ॥",
+      "transliteration": "om śaṃ no mitraḥ śaṃ varuṇaḥ | śaṃ no bhavatvaryamā | śaṃ na indro bṛhaspatiḥ | śaṃ no viṣṇur-urukramaḥ | namo brahmaṇe | namas-te vāyo | tvam-eva pratyakṣaṃ brahmāsi | tvām-eva pratyakṣaṃ brahma vadiṣyāmi | ṛtaṃ vadiṣyāmi | satyaṃ vadiṣyāmi | tan-mām-avatu | tad-vaktāram-avatu | avatu mām | avatu vaktāram | om śāntiḥ śāntiḥ śāntiḥ || 1 ||",
+      "translation": "May Mitra be auspicious unto us; may Varuna be auspicious unto us; may Aryaman be auspicious unto us. May Indra and Brihaspati be propitious unto us; may Vishnu of wide strides be gracious unto us. Obeisance to Brahman! Obeisance to thee, O Vayu! Thou indeed art visible Brahman. I shall declare thee visible Brahman. I shall speak the cosmic order (Ritam). I shall speak the truth (Satyam). May That protect me; may That protect the teacher. May That protect me; may That protect the teacher. OM Peace, Peace, Peace!",
+      "meaning": "The majestic Shanti Mantra invoking harmony with cosmic forces, proclaiming the immediate presence of Brahman in the dynamic breath of life, and dedicating teacher and student to truth.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya (Advaita Vedānta)] Vayu is called 'Pratyaksha Brahma' because as Sutratman and vital life-force, it directly sustains all conscious operations. Invoking cosmic powers removes obstacles to Brahmavidya.",
+          "hi": "[आदि शंकराचार्य (अद्वैत वेदान्त)] वायु को प्रत्यक्ष ब्रह्म कहा गया है क्योंकि वह सूत्रात्मा रूप से सर्वत्र व्याप्त होकर जीवन का संचार करता है। यह शांति पाठ गुरु और शिष्य दोनों के विघ्नों का शमन करता है।",
+          "mr": "[आद्य शंकराचार्य (अद्वैत वेदान्त)] वायू हा प्राणरूपाने सर्वत्र प्रगट असल्याने त्याला प्रत्यक्ष ब्रह्म म्हटले आहे. हा शांति मंत्र गुरु-शिष्यांमधील आध्यात्मिक प्रवासाला निर्विघ्न करतो."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] Mutual protection and commitment between educator and learner: education is a shared sacred quest requiring absolute harmony with natural and social environments.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] गुरु और शिष्य का परस्पर कल्याण और सत्य के प्रति संयुक्त समर्पण इस वैदिक प्रार्थना का शाश्वत संदेश है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] शिक्षण ही गुरु आणि शिष्याची सामायिक साधना असून निसर्गाशी आणि विश्वाशी सुसंवाद साधणे हा त्याचा मूळ पाया आहे."
+        }
+      }
+    },
+    {
+      "chapter": 1,
+      "verse": 2,
+      "original": "वेदमनूच्याचार्योऽन्तेवासिनमनुशास्ति । सत्यं वद । धर्मं चर । स्वाध्यायान्मा प्रमदः । आचार्याय प्रियं धनमाहृत्य प्रजातन्तुं मा व्यवच्छेत्सीः । सत्यान्न प्रमदितव्यम् । धर्मान्न प्रमदितव्यम् । कुशलान्न प्रमदितव्यम् । भूत्यै न प्रमदितव्यम् । स्वाध्यायप्रवचनाभ्यां न प्रमदितव्यम् ॥ २ ॥",
+      "transliteration": "vedam-anūcyācāryo'ntevāsinam-anuśāsti | satyaṃ vada | dharmaṃ cara | svādhyāyān-mā pramadaḥ | ācāryāya priyaṃ dhanam-āhṛtya prajātantuṃ mā vyavacchetsīḥ | satyān-na pramaditavyam | dharmān-na pramaditavyam | kuśalān-na pramaditavyam | bhūtyai na pramaditavyam | svādhyāya-pravacanābhyāṃ na pramaditavyam || 2 ||",
+      "translation": "Having taught the Vedas, the preceptor instructs the departing disciple: Speak the truth. Practice righteousness. Do not neglect daily study (Svadhyaya). Having offered agreeable gifts to the teacher, enter family life and do not break the lineage of progeny. Deviate not from truth. Deviate not from dharma. Deviate not from self-protection and well-being. Deviate not from prosperity. Deviate not from daily study and teaching.",
+      "meaning": "The immortal Convocation Address (Samavartana): The ethical and societal constitution for enlightened citizenship, balancing truth, moral duty, personal growth, economic welfare, and knowledge sharing.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya] 'Satyam Vada' (Speak truth) and 'Dharmam Chara' (Live righteousness) are the supreme ethical imperatives purifying the mind (Citta Shuddhi), without which knowledge cannot dawn.",
+          "hi": "[आदि शंकराचार्य] सत्य बोलना और धर्म का आचरण करना अंतःकरण की शुद्धि के लिए अनिवार्य है। विद्या ग्रहण करने के पश्चात समाज में सदाचार का पालन ही मनुष्य का धर्म है।",
+          "mr": "[आद्य शंकराचार्य] सत्य बोलणे आणि धर्माचे आचरण करणे ही चित्तशुद्धीची पूर्वअट आहे. ज्ञान संपादन केल्यावर प्रत्यक्ष जीवनात धर्म पाळणे हेच अंतिम कर्तव्य आहे."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] The charter of holistic human excellence: intellectual brilliance is meaningless without moral integrity, personal responsibility, and continuous learning.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] प्राचीन भारतीय विश्वविद्यालयों का यह दीक्षांत उपदेश विश्व के सर्वश्रेष्ठ नैतिक और सामाजिक सिद्धांतों का निरूपण करता है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] जीवनाचा समतोल, सत्याची कास आणि अखंड विद्याभ्यास यांचा हा संदेश आधुनिक समाजासाठीही दीपस्तंभासारखा मार्गदर्शक आहे."
+        }
+      }
+    },
+    {
+      "chapter": 1,
+      "verse": 3,
+      "original": "मातृदेवो भव । पितृदेवो भव । आचार्यदेवो भव । अतिथिदेवो भव । यान्यनवद्यानि कर्माणि तानि सेवितव्यानि नो इतराणि । यान्यस्माकँ सुचरितानि तानि त्वयोपास्यानि नो इतराणि ॥ ३ ॥",
+      "transliteration": "mātṛdevo bhava | pitṛdevo bhava | ācāryadevo bhava | atithidevo bhava | yāny-anavadyāni karmāṇi tāni sevitavyāni no itarāṇi | yāny-asmākaṃ sucaritāni tāni tvayopāsyāni no itarāणि || 3 ||",
+      "translation": "May your mother be a deity unto you. May your father be a deity unto you. May your teacher be a deity unto you. May your guest be a deity unto you. Whatever deeds are blameless, those should be practiced, not others. Whatever good conducts were displayed by us, those should be revered by you, not others.",
+      "meaning": "The four sacred pillars of human relationship (Mother, Father, Teacher, Guest) and the remarkable ethical honesty of Vedic educators advising critical discernment rather than blind emulation.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya] Regard parents, teachers, and guests as embodiments of the divine. Even regarding the preceptor, emulate only righteous actions, maintaining objective moral discernment.",
+          "hi": "[आदि शंकराचार्य] माता, पिता, आचार्य और अतिथि को ईश्वर के समान पूज्य समझो। गुरु के भी केवल निर्दोष और शुभ आचरण का अनुकरण करो, दोषपूर्ण आचरण का नहीं।",
+          "mr": "[आद्य शंकराचार्य] आई, वडील, गुरु आणि अतिथी यांना देवासारखे माना. गुरुंचेही केवळ श्रेष्ठ आणि निर्दोष गुण अंगीकारा, डोळे झाकून अनुकरण करू नका."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] The ultimate democratic ethic of education: teachers frankly acknowledge human fallibility and instruct students to anchor their allegiance strictly in eternal righteousness.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] अंधश्रद्धा के स्थान पर विवेकपूर्ण अनुकरण की यह वैज्ञानिक सीख भारतीय शिक्षा परंपरा की अद्वितीय गरिमा को प्रकट करती है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] आदर आणि विवेक यांचा समन्वय साधत केवळ सत्याचीच कास धरण्याचे हे शिक्षण मानवी मूल्यांचे शिखर आहे."
+        }
+      }
+    },
+    {
+      "chapter": 2,
+      "verse": 1,
+      "original": "ॐ ब्रह्मविदाप्नोति परम् । तदेषाऽभ्युक्ता । सत्यं ज्ञानमनन्तं ब्रह्म । यो वेद निहितं गुहायां परमे व्योमन् । सोऽश्नुते सर्वान् कामान् सह ब्रह्मणा विपश्चितेति ॥ १ ॥",
+      "transliteration": "om brahmavid-āpnoti param | tad-eṣā'bhyuktā | satyaṃ jñānam-anantaṃ brahma | yo veda nihitaṃ guhāyāṃ parame vyoman | so'śnute sarvān kāmān saha brahmaṇā vipaściteti || 1 ||",
+      "translation": "He who knows Brahman attains the Supreme. Regarding this it is declared: Brahman is Truth (Satyam), Consciousness (Jnanam), and Infinity (Anantam). He who realizes That hidden in the supreme space within the cavity of the heart attains all desires simultaneously in union with the omniscient Brahman.",
+      "meaning": "The foundational definition of the Absolute: Satyam (unconditioned existence), Jnanam (self-luminous consciousness), Anantam (boundless infinity) — discovered as one's innermost core.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya] 'Satyam Jnanam Anantam' are not attributes of Brahman; they define Its very essence (Svarupa Lakshana), setting It apart from all change, inertness, and spatial-temporal limitation.",
+          "hi": "[आदि शंकराचार्य] सत्यम्, ज्ञानम्, अनन्तम् ब्रह्म के स्वरूप लक्षण हैं। ब्रह्म विकारों से रहित (सत्य), जड़ता से रहित (ज्ञान), और देश-काल-वस्तु परिच्छेद से मुक्त (अनन्त) है।",
+          "mr": "[आद्य शंकराचार्य] सत्य, ज्ञान आणि अनंत ही परब्रह्माची स्वरूपलक्षणे आहेत. हे सत्य त्रिकालाबाधित असून अंतःकरणाच्या आकाशात वास करणाऱ्या आत्मरूपाने जाणले जाते."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] The supreme ontological definition of reality: existence, knowledge, and infinity are identical and accessible directly in the contemplative heart.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] उपनिषदों की यह अमर घोषणा मनुष्य को उसके क्षुद्र अहंकार से मुक्त कर अनंत दिव्य चेतना में प्रतिष्ठित करती है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] मानवाच्या अंतर्मनात दडलेला परमानंद आणि अखंड चैतन्य यांचा हा दिव्य साक्षात्कार जीवनाचा अंतिम मुकुटमणी आहे."
+        }
+      }
+    },
+    {
+      "chapter": 2,
+      "verse": 2,
+      "original": "तस्माद्वा एतस्मादात्मन आकाशः सम्भूतः । आकाशाद्वायुः । वायोरग्निः । अग्नेरापः । अद्भ्यः पृथिवी । पृथिव्या ओषधयः । ओषधीभ्योऽन्नम् । अन्नात् पुरुषः । स वा एष पुरुषोऽन्नरसमयः ॥ २ ॥",
+      "transliteration": "tasmād-vā etasmād-ātmana ākāśaḥ sambhūtaḥ | ākāśād-vāyuḥ | vāyor-agniḥ | agner-āpaḥ | adbhyaḥ pṛthivī | pṛthivyā oṣadhayaḥ | oṣadhībhyo'nnam | annāt puruṣaḥ | sa vā eṣa puruṣo'nna-rasamayaḥ || 2 ||",
+      "translation": "From that very Self, space (Akasha) was born; from space, air (Vayu); from air, fire (Agni); from fire, water (Ap); from water, earth (Prithivi); from earth, plants; from plants, food; from food, the human person. This human person verily consists of the essence of food (Annamaya Kosha).",
+      "meaning": "The cosmic evolutionary sequence and the discovery of the first sheath (Annamaya Kosha): pure space condenses into energy, matter, biosphere, nutrition, and the biological physical body.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya] Creation proceeds from subtlest to grossest. The physical body is Annamaya (made of food). To realize the Self, the seeker must peel back this outer biological layer.",
+          "hi": "[आदि शंकराचार्य] आत्मा से आकाश, वायु, अग्नि, जल और पृथ्वी की उत्पत्ति हुई। अन्न से यह स्थूल शरीर बना है जिसे अन्नमय कोष कहते हैं, जो आत्मा का बाह्य आवरण है।",
+          "mr": "[आद्य शंकराचार्य] सूक्ष्माकडून स्थूलाकडे सृष्टीचा क्रम आहे. अन्नापासून निर्माण झालेला देह म्हणजे अन्नमय कोष असून तो आत्म्याचा सर्वात बाह्य भाग आहे."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] An astonishing precursor to cosmogony and biological evolution: matter emerges from space, forms terrestrial elements, builds biological life, and houses consciousness.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] अंतरिक्ष से पदार्थ और पदार्थ से जैविक जीवन के विकास का यह वैदिक विवरण आधुनिक ब्रह्माण्ड विज्ञान से आश्चर्यजनक रूप से सामंजस्य रखता है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] विश्वाच्या निर्मितीचा आणि अन्नमय शरीराच्या उत्क्रांतीचा हा क्रम विज्ञानाला मार्गदर्शक ठरणारा आहे."
+        }
+      }
+    },
+    {
+      "chapter": 3,
+      "verse": 1,
+      "original": "भृगुर्वै वारुणिः । वरुणं पितरमुपससार । अधीहि भगवो ब्रह्मेति । तस्मा एतत्प्रोवाच । अन्नं प्राणं चक्षुः श्रोत्रं मनो वाचमिति । तँ होवाच । यतो वा इमानि भूतानि जायन्ते । येन जातानि जीवन्ति । यत्प्रयन्त्यभिसंविशन्ति । तद्विजिज्ञासस्व । तद्ब्रह्मेति ॥ १ ॥",
+      "transliteration": "bhṛgur-vai vāruṇiḥ | varuṇaṃ pitaram-upasasāra | adhīhi bhagavo brahmeti | tasmā etat-provāca | annaṃ prāṇaṃ cakṣuḥ śrotraṃ mano vācam-iti | taṃ hovāca | yato vā imāni bhūtāni jāyante | yena jātāni jīvanti | yat-prayanty-abhisaṃviśanti | tad-vijijñāsasva | tad-brahmeti || 1 ||",
+      "translation": "Bhrigu, the son of Varuna, approached his father Varuna saying: 'Revered sir, teach me Brahman.' To him he said: 'Food, breath, eye, ear, mind, and speech.' He further said: 'That from which these beings are born, That by which when born they live, and That into which they enter upon departing — seek to know That! That is Brahman.'",
+      "meaning": "The ultimate criterion of the Absolute (Brahma-Lakshana): The uncaused cause, sustainer, and final resolution of all universal reality.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya] Varuna gives Bhrigu the definition of Brahman as the source, sustainer, and dissolver of the universe (Janmadyasya Yatah), prompting him to perform deep personal contemplation (Tapas).",
+          "hi": "[आदि शंकराचार्य] वरुण अपने पुत्र भृगु को विचार (तप) की प्रेरणा देते हैं कि जहाँ से समस्त सृष्टि उत्पन्न होती है, जिसमें स्थित रहती है और जिसमें लीन होती है, वही ब्रह्म है।",
+          "mr": "[आद्य शंकराचार्य] ज्यातून सर्व प्राणी निर्माण होतात, ज्याच्या आधारे जगतात आणि शेवटी ज्यात विलीन होतात, तोच परब्रह्म आहे हा शोध घेण्यास वरुणाने भृगूला सांगितले."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] The scientific methodology of spiritual discovery: rather than giving Dogma, the master provides a hypothesis and sends the student to test, reflect, and discover truth empirically.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] अंधविश्वास नहीं, अपितु स्वयं अनुभव द्वारा सत्य की खोज (अनुसंधान) ही वैदिक साधना का वैज्ञानिक मार्ग है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] स्वतःच्या अनुभवातून आणि सखोल चिंतनातून अंतिम सत्याचा शोध घेण्याची ही अत्यंत वैज्ञानिक आणि तर्कशुद्ध पद्धती आहे."
+        }
+      }
+    },
+    {
+      "chapter": 3,
+      "verse": 2,
+      "original": "आनन्दो ब्रह्मेति व्यजानात् । आनन्दाद्ध्येव खल्विमानि भूतानि जायन्ते । आनन्देन जातानि जीवन्ति । आनन्दं प्रयन्त्यभिसंविशन्तीति । सैषा भार्गवी वारुणी विद्या परमे व्योमन्प्रतिष्ठिता ॥ २ ॥",
+      "transliteration": "ānando brahmeti vyajānāt | ānandād-dhyeva khalv-imāni bhūtāni jāyante | ānandena jātāni jīvanti | ānandaṃ prayanty-abhisaṃviśantīti | saiṣā bhārgavī vāruṇī vidyā parame vyoman-pratiṣṭhitā || 2 ||",
+      "translation": "He knew that Bliss (Ananda) is Brahman. For from Bliss alone, verily, these beings are born; by Bliss when born they live; and into Bliss they enter and resolve upon departing. This is the wisdom of Bhrigu and Varuna, established in the supreme space of the heart.",
+      "meaning": "The grand culmination of the Upanishad: having analyzed matter (food), energy (prana), mind (manas), and intellect (vijnana), the seeker discovers that pure, boundless Ananda (Bliss/Joy) is the foundational ground of the cosmos.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya] Ananda is not mere sensory pleasure; it is the intrinsic nature of the non-dual Atman, free from all fear, desire, and sorrow. Knowing Ananda as Brahman, one transcends all duality.",
+          "hi": "[आदि शंकराचार्य] आनन्द सांसारिक सुख नहीं, अपितु आत्मा का मूल स्वरूप है। समस्त जगत परमानन्द से उत्पन्न होकर उसी में स्थित है और उसी में विश्राम पाता है।",
+          "mr": "[आद्य शंकराचार्य] आनंद हा नश्वर विषयभोग नसून साक्षात् आत्म्याचे मूळ स्वरूप आहे. सर्व प्राणी आनंदाने जगतात आणि शेवटी त्याच परमानंदात लीन होतात."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] The cosmic symphony of Joy: the universe is born of love and bliss, sustained by delight, and returns to eternal peace. Realizing this ends all existential alienation.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] सृष्टि का मूल तत्व दुःख या शून्यता नहीं, अपितु अखंड आनन्द और प्रेम है — यह उपनिषदों की सर्वोच्च मानवतावादी घोषणा है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] जीवनाचा खरा आधार दुःख नसून अखंड आनंद आहे हे ओळखून जगणे हीच खरी मुक्ती आणि आत्मविद्या आहे."
+        }
+      }
+    }
+  ]
+}

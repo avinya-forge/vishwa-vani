@@ -171,6 +171,9 @@ export interface PipelineOptions {
   extractDiamondTier?: boolean;
   targetScholars?: string[];
   logLevel?: 'verbose' | 'info' | 'silent';
+  maxRetries?: number;
+  enableSelfCorrection?: boolean;
+  onProgress?: (message: string, stage?: PipelineStage) => void;
 }
 
 export interface PipelineResult {
@@ -184,5 +187,8 @@ export interface PipelineResult {
   hasSummaries?: boolean;
   manifestUpdated?: boolean;
   lakeSynced?: boolean;
+  rlIterations?: number;
+  auditHistory?: ValidationReport[];
+  repairLog?: string[];
   error?: string;
 }

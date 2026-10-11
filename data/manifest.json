@@ -1286,6 +1286,171 @@
           "verse_count": 2
         }
       ]
+    },
+    {
+      "book_id": "katha-upanishad",
+      "title": {
+        "en": "Katha Upanishad",
+        "hi": "कठोपनिषद्",
+        "mr": "कठोपनिषद्",
+        "sa": "कठोपनिषद्"
+      },
+      "total_chapters": 2,
+      "chapters": [
+        {
+          "number": 1,
+          "file": "katha-upanishad-chapter-1.json",
+          "verse_count": 6
+        },
+        {
+          "number": 2,
+          "file": "katha-upanishad-chapter-2.json",
+          "verse_count": 6
+        }
+      ],
+      "total_verses": 12,
+      "completeness_score": 100,
+      "status": "GOLD",
+      "last_promoted": "2026-10-11"
+    },
+    {
+      "book_id": "mundaka-upanishad",
+      "title": {
+        "en": "Mundaka Upanishad",
+        "hi": "मुण्डकोपनिषद्",
+        "mr": "मुंडकोपनिषद्",
+        "sa": "मुण्डकोपनिषद्"
+      },
+      "total_chapters": 3,
+      "chapters": [
+        {
+          "number": 1,
+          "file": "mundaka-upanishad-chapter-1.json",
+          "verse_count": 2
+        },
+        {
+          "number": 2,
+          "file": "mundaka-upanishad-chapter-2.json",
+          "verse_count": 2
+        },
+        {
+          "number": 3,
+          "file": "mundaka-upanishad-chapter-3.json",
+          "verse_count": 3
+        }
+      ],
+      "total_verses": 7,
+      "completeness_score": 100,
+      "status": "GOLD",
+      "last_promoted": "2026-10-11"
+    },
+    {
+      "book_id": "prashna-upanishad",
+      "title": {
+        "en": "Prashna Upanishad",
+        "hi": "प्रश्नोपनिषद्",
+        "mr": "प्रश्नोपनिषद्",
+        "sa": "प्रश्नोपनिषद्"
+      },
+      "total_chapters": 6,
+      "chapters": [
+        {
+          "number": 1,
+          "file": "prashna-upanishad-chapter-1.json",
+          "verse_count": 2
+        },
+        {
+          "number": 2,
+          "file": "prashna-upanishad-chapter-2.json",
+          "verse_count": 1
+        },
+        {
+          "number": 3,
+          "file": "prashna-upanishad-chapter-3.json",
+          "verse_count": 1
+        },
+        {
+          "number": 4,
+          "file": "prashna-upanishad-chapter-4.json",
+          "verse_count": 1
+        },
+        {
+          "number": 5,
+          "file": "prashna-upanishad-chapter-5.json",
+          "verse_count": 1
+        },
+        {
+          "number": 6,
+          "file": "prashna-upanishad-chapter-6.json",
+          "verse_count": 1
+        }
+      ],
+      "total_verses": 7,
+      "completeness_score": 100,
+      "status": "GOLD",
+      "last_promoted": "2026-10-11"
+    },
+    {
+      "book_id": "taittiriya-upanishad",
+      "title": {
+        "en": "Taittiriya Upanishad",
+        "hi": "तैत्तिरीयोपनिषद्",
+        "mr": "तैत्तिरीयोपनिषद्",
+        "sa": "तैत्तिरीयोपनिषद्"
+      },
+      "total_chapters": 3,
+      "chapters": [
+        {
+          "number": 1,
+          "file": "taittiriya-upanishad-chapter-1.json",
+          "verse_count": 3
+        },
+        {
+          "number": 2,
+          "file": "taittiriya-upanishad-chapter-2.json",
+          "verse_count": 2
+        },
+        {
+          "number": 3,
+          "file": "taittiriya-upanishad-chapter-3.json",
+          "verse_count": 2
+        }
+      ],
+      "total_verses": 7,
+      "completeness_score": 100,
+      "status": "GOLD",
+      "last_promoted": "2026-10-11"
+    },
+    {
+      "book_id": "aitareya-upanishad",
+      "title": {
+        "en": "Aitareya Upanishad",
+        "hi": "ऐतरेयोपनिषद्",
+        "mr": "ऐतरेयोपनिषद्",
+        "sa": "ऐतरेयोपनिषद्"
+      },
+      "total_chapters": 3,
+      "chapters": [
+        {
+          "number": 1,
+          "file": "aitareya-upanishad-chapter-1.json",
+          "verse_count": 2
+        },
+        {
+          "number": 2,
+          "file": "aitareya-upanishad-chapter-2.json",
+          "verse_count": 1
+        },
+        {
+          "number": 3,
+          "file": "aitareya-upanishad-chapter-3.json",
+          "verse_count": 3
+        }
+      ],
+      "total_verses": 6,
+      "completeness_score": 100,
+      "status": "GOLD",
+      "last_promoted": "2026-10-11"
     }
   ]
 }

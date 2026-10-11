@@ -1,0 +1,36 @@
+[
+  {
+    "id": "prashna-upanishad_3_1",
+    "text_slug": "prashna-upanishad",
+    "chapter": 3,
+    "verse": 1,
+    "original": "आत्मन एष प्राणो जायते । यथैषा पुरुषे छायैतस्मिन्नेतदाततं मनोकृतेनायात्यस्मिन् शरीरे ॥ १ ॥",
+    "transliteration": "ātmana eṣa prāṇo jāyate | yathaiṣā puruṣe chāyaitasmin-netad-ātataṃ manokṛtenāyāty-asmin śarīre || 1 ||",
+    "translation": "From the Atman (Supreme Self) this Prāṇa is born. Just as a shadow is cast by a person, even so is Prāṇa projected upon the Self. By the action of the mind, it enters into this body.",
+    "meaning": "The origin of life-energy: Prana is not an independent physical accident, but an energetic shadow and projection of pure consciousness entering embodiment through mental conditioning.",
+    "commentaries": {
+      "adi-shankara": {
+        "en": "[Adi Shankaracharya] Prana has no independent reality apart from the Atman, just as a shadow has no existence without the person. The impressions (Samskaras) of the mind attract Prana into physical embodiment.",
+        "hi": "[आदि शंकराचार्य] जैसे मनुष्य की छाया मनुष्य से अभिन्न होती है, वैसे ही प्राण आत्मा का ही प्रक्षेपण है जो मन के संकल्पों और कर्मफलों के कारण देह में प्रवेश करता है।",
+        "mr": "[आद्य शंकराचार्य] जशी माणसाची सावली माणसावर अवलंबून असते, तसाच प्राण आत्म्यातून निर्माण होतो आणि मनाच्या वासनांमुळे देहात येतो."
+      },
+      "universal-synthesis": {
+        "en": "[Universal Vedic Synthesis] The profound metaphysical link between mind, consciousness, and biological breath: respiration and vitality are the psychosomatic bridge to pure awareness.",
+        "hi": "[सार्वभौमिक वैदिक समन्वय] चेतना, मन और श्वास का यह त्रिकोण प्राणायाम और योगसाधना का वैज्ञानिक आधार प्रस्तुत करता है।",
+        "mr": "[सार्वभौम वैदिक समन्वय] मन आणि श्वास यांचे नाते आत्म्याशी कसे जोडलेले आहे हे या मंत्रातून स्पष्ट होते."
+      }
+    },
+    "layers": {
+      "adi-shankara": {
+        "en": "[Adi Shankaracharya] Prana has no independent reality apart from the Atman, just as a shadow has no existence without the person. The impressions (Samskaras) of the mind attract Prana into physical embodiment.",
+        "hi": "[आदि शंकराचार्य] जैसे मनुष्य की छाया मनुष्य से अभिन्न होती है, वैसे ही प्राण आत्मा का ही प्रक्षेपण है जो मन के संकल्पों और कर्मफलों के कारण देह में प्रवेश करता है।",
+        "mr": "[आद्य शंकराचार्य] जशी माणसाची सावली माणसावर अवलंबून असते, तसाच प्राण आत्म्यातून निर्माण होतो आणि मनाच्या वासनांमुळे देहात येतो."
+      },
+      "universal-synthesis": {
+        "en": "[Universal Vedic Synthesis] The profound metaphysical link between mind, consciousness, and biological breath: respiration and vitality are the psychosomatic bridge to pure awareness.",
+        "hi": "[सार्वभौमिक वैदिक समन्वय] चेतना, मन और श्वास का यह त्रिकोण प्राणायाम और योगसाधना का वैज्ञानिक आधार प्रस्तुत करता है।",
+        "mr": "[सार्वभौम वैदिक समन्वय] मन आणि श्वास यांचे नाते आत्म्याशी कसे जोडलेले आहे हे या मंत्रातून स्पष्ट होते."
+      }
+    }
+  }
+]

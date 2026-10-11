@@ -208,6 +208,11 @@ export default function Header({ stats }: { stats?: HeaderStatsProp }) {
               <span>📊</span>
               <span>Roadmap</span>
             </Link>
+
+            <Link href="/admin" className={`flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-bold transition-all focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:outline-none ${pathname === '/admin' ? 'text-orange-600 bg-orange-50 dark:bg-orange-950/40' : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 hover:bg-stone-50 dark:hover:bg-stone-800'}`}>
+              <span>⚡</span>
+              <span>Admin</span>
+            </Link>
           </div>
         </div>
 
@@ -249,9 +254,9 @@ export default function Header({ stats }: { stats?: HeaderStatsProp }) {
         </div>
       </div>
 
-      {/* Mobile menu — slide down panel */}
+      {/* Mobile menu — slide down panel with 100% opaque background to prevent text overlap */}
       {showMobileMenu && (
-        <div className="lg:hidden fixed inset-x-0 top-14 glass border-b border-stone-100/50 dark:border-stone-800/50 shadow-2xl z-[150] animate-in slide-in-from-top-0 duration-200 h-[calc(100vh-3.5rem)] overflow-y-auto">
+        <div className="lg:hidden fixed inset-x-0 top-14 bg-[#FDFBF7] dark:bg-stone-950 border-b border-stone-200 dark:border-stone-800 shadow-2xl z-[200] animate-in slide-in-from-top-0 duration-200 h-[calc(100vh-3.5rem)] overflow-y-auto">
           <div className="max-w-[1400px] mx-auto px-4 py-5 space-y-1.5">
             <p className="text-[10px] font-black uppercase tracking-[0.2em] text-stone-400 dark:text-stone-500 mb-3 ml-2">Available Library</p>
             {topBooks.map(book => (
@@ -286,6 +291,10 @@ export default function Header({ stats }: { stats?: HeaderStatsProp }) {
               <Link href="/roadmap" onClick={() => setShowMobileMenu(false)} className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-stone-50 dark:hover:bg-stone-800 transition-all text-sm font-bold text-stone-600 dark:text-stone-400">
                 <span>📊</span>
                 <span>Roadmap &amp; Metrics</span>
+              </Link>
+              <Link href="/admin" onClick={() => setShowMobileMenu(false)} className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all text-sm font-bold ${pathname === '/admin' ? 'text-orange-600 bg-orange-50 dark:bg-orange-950/30' : 'text-stone-600 dark:text-stone-400 hover:bg-stone-50 dark:hover:bg-stone-800'}`}>
+                <span>⚡</span>
+                <span>Admin Terminal Console</span>
               </Link>
               <Link href="/library" onClick={() => setShowMobileMenu(false)} className="flex items-center justify-center gap-2 mt-4 w-full px-6 py-3.5 bg-stone-900 hover:bg-orange-600 text-white text-sm font-bold rounded-xl transition-all shadow-md">
                 <span>📜</span>

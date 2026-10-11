@@ -1,0 +1,279 @@
+{
+  "spec": {
+    "slug": "katha-upanishad",
+    "name": "Katha Upanishad",
+    "nameDevanagari": "कठोपनिषद्",
+    "nameHi": "कठोपनिषद्",
+    "nameMr": "कठोपनिषद्",
+    "category": "upanishad",
+    "totalChapters": 2,
+    "description": "The profound dialogue between Nachiketa and Yama (Lord of Death) from the Krishna Yajurveda exploring immortality, Shreyas vs Preyas, and the Chariot allegory of the Self.",
+    "sourceUrl": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/1_veda/4_upa/kthup_u.htm",
+    "license": "Public Domain (Classical Vedic Scripture)",
+    "publicDomainYear": 1923,
+    "chapterNames": {
+      "1": "Adhyāya 1 — The Three Boons, Shreyas vs Preyas & The Mystery of Death",
+      "2": "Adhyāya 2 — The Chariot of Consciousness, Cosmic Ashvattha & Liberation"
+    },
+    "hasPreface": true,
+    "hasPostface": true,
+    "authors": [
+      {
+        "id": "adi-shankara",
+        "name": "Ādi Śaṅkarācārya",
+        "lineage": "Advaita Vedānta",
+        "work": "Kaṭhopaniṣad Bhāṣya",
+        "description": "Foundational commentary examining the nature of the transcendental Self beyond cause and effect."
+      },
+      {
+        "id": "universal-synthesis",
+        "name": "Universal Vedic Synthesis",
+        "lineage": "Vedic Hermeneutics",
+        "work": "Kaṭha Tattva Viveka",
+        "description": "Comparative synthesis linking inner contemplative psychology and the perennial chariot allegory."
+      }
+    ]
+  },
+  "rawVerses": [
+    {
+      "chapter": 1,
+      "verse": 1,
+      "original": "ॐ उशन् ह वै वाजश्रवसः सर्ववेदसं ददौ । तस्य ह नचिकेता नाम पुत्र आस ॥ १ ॥",
+      "transliteration": "om uśan ha vai vājaśravasaḥ sarvavedasaṃ dadau | tasya ha naciketā nāma putra āsa || 1 ||",
+      "translation": "Desiring heavenly rewards, Vajasravasa performed a sacrifice and gave away all his possessions. He had a son named Nachiketa.",
+      "meaning": "The narrative opens setting the contrast between ritualistic sacrifice performed for transient earthly or heavenly gains and the supreme quest for spiritual immortality.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya (Advaita Vedānta)] The sacrifice of Vajasravasa illustrates karma oriented towards impermanent fruits. Nachiketa personifies spiritual discrimination (Viveka) dissatisfied with finite rituals.",
+          "hi": "[आदि शंकराचार्य (अद्वैत वेदान्त)] वाजश्रवा का यज्ञ नश्वर फलों की प्राप्ति का प्रतीक है। नचिकेता उस आत्मज्ञान के जिज्ञासु का प्रतीक है जो अनित्य फलों से तृप्त नहीं होता।",
+          "mr": "[आद्य शंकराचार्य (अद्वैत वेदान्त)] वाजश्रव्याचा यज्ञ ऐहिक आणि स्वर्गीय सुखांसाठी होता. नचिकेता हा शाश्वत आत्मज्ञानाचा जिज्ञासू असून क्षणभंगुर फळांना नाकारतो."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] Nachiketa represents the earnest spiritual seeker who looks beyond outer material charity to seek the ultimate mystery of existence.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] नचिकेता सत्य के उस निष्ठावान अन्वेषक का आदर्श है जो बाह्य दान-पुण्य से परे आत्मा के शाश्वत सत्य को जानना चाहता है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] नचिकेता हा केवळ बाह्य कर्मकांडावर समाधानी न राहता जीवन आणि मृत्यूच्या पलीकडील अंतिम सत्याचा शोध घेणारा आदर्श शिष्य आहे."
+        }
+      }
+    },
+    {
+      "chapter": 1,
+      "verse": 2,
+      "original": "तँ ह कुमारँ सन्तं दक्षिणासु नीयमानासु श्रद्धाविवेश सोऽमन्यत ॥ २ ॥",
+      "transliteration": "taṃ ha kumāraṃ santaṃ dakṣiṇāsu nīyamānāsu śraddhāviveśa so'manyata || 2 ||",
+      "translation": "Though yet a mere youth, as the sacrificial gifts were being led away, living faith (Shraddha) entered him, and he reflected.",
+      "meaning": "Shraddha is not blind belief, but supreme earnestness, perceptual clarity, and unwavering commitment to truth that opens the gateway to higher inquiry.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya] Shraddha is the receptive inner conviction regarding reality, scriptures, and teachers. It is the indispensable prerequisite for Brahmavidya.",
+          "hi": "[आदि शंकराचार्य] श्रद्धा का अर्थ है शास्त्र और गुरु के वचनों में परम विश्वास और सत्य के प्रति अडिग निष्ठा, जो ब्रह्मविद्या का मूल आधार है।",
+          "mr": "[आद्य शंकराचार्य] श्रद्धा ही केवळ अंधश्रद्धा नसून आत्मसाक्षात्काराची आंतरिक प्रेरणा आणि सत्यावरील दृढ निष्ठा आहे."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] The awakening of moral clarity in the youth demonstrates that spiritual depth depends on genuine inner longing rather than physical age.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] नचिकेता की जागृत श्रद्धा सिद्ध करती है कि आत्मज्ञान का अधिकार आयु पर नहीं, अपितु अंतःकरण की पवित्रता पर निर्भर करता है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] नचिकेताच्या मनातील श्रद्धा दर्शवते की आत्मज्ञानाची पात्रता वयावर नव्हे तर अंतःकरणाच्या शुचितेवर अवलंबून असते."
+        }
+      }
+    },
+    {
+      "chapter": 1,
+      "verse": 3,
+      "original": "अन्यच्छ्रेयोऽन्यदुतैव प्रेयस्ते उभे नानार्थे पुरुषँ सिनीतः । तयोः श्रेय आददानस्य साधुर्भवति हीयतेऽर्थाद्य उ प्रेयो वृणीते ॥ ३ ॥",
+      "transliteration": "anyac-chreyo'nyad-utaiva preyas-te ubhe nānārthe puruṣaṃ sinītaḥ | tayoḥ śreya ādadānasya sādhur-bhavati hīyate'rthād-ya u preyo vṛṇīte || 3 ||",
+      "translation": "The good (Shreyas) is one thing, and the pleasant (Preyas) is quite another. Both bind humans to diverse pursuits. Of these two, well is it with him who chooses the good; he who chooses the pleasant misses the true goal.",
+      "meaning": "The fundamental ethical and existential polarity: Shreyas is the path of enduring spiritual wisdom, while Preyas is the path of immediate sensory gratification and worldly delusion.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya] Shreyas leads to Moksha (liberation), while Preyas binds the jiva to Samsara (transmigration). The wise person discerningly separates the two and embraces Shreyas.",
+          "hi": "[आदि शंकराचार्य] श्रेय मोक्ष और आत्मज्ञान का मार्ग है, जबकि प्रेय इन्द्रिय सुख और संसार बन्धन का मार्ग है। विवेकवान पुरुष दोनों का भेद समझकर श्रेय का वरण करता है।",
+          "mr": "[आद्य शंकराचार्य] श्रेय हा मोक्ष आणि मुक्तीचा शाश्वत मार्ग आहे, तर प्रेय हा क्षणिक सुखाचा आणि संसाराचा मार्ग आहे. ज्ञानी मनुष्य प्रेय सोडून श्रेय स्वीकारतो."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] The Shreyas-Preyas distinction is the perennial foundation of all moral philosophy and psychological maturity, contrasting short-term impulse with long-term spiritual purpose.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] श्रेय और प्रेय का विवेक मानवीय चेतना का सर्वोच्च निर्णय है, जो तात्कालिक वासना और शाश्वत कल्याण के मध्य अंतर स्पष्ट करता है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] श्रेय आणि प्रेय यांमधील निवड ही मानवाच्या संपूर्ण अस्तित्वाचे भवितव्य ठरवणारी नैतिक आणि आध्यात्मिक कसोटी आहे."
+        }
+      }
+    },
+    {
+      "chapter": 1,
+      "verse": 4,
+      "original": "दूरमेते विपरीते विषूची अविद्या या च विद्येति ज्ञाता । विद्याभीप्सिनं नचिकेतसं मन्ये न त्वा कामा बहवोऽलोलुपन्त ॥ ४ ॥",
+      "transliteration": "dūram-ete viparīte viṣūcī avidyā yā ca vidyeti jñātā | vidyābhīpsinaṃ naciketasaṃ manye na tvā kāmā bahavo'lolupanta || 4 ||",
+      "translation": "Far apart and leading to opposite goals are these two: ignorance (Avidya) and wisdom (Vidya). I know Nachiketa to be a seeker of wisdom, for manifold pleasures could not tempt you.",
+      "meaning": "Yama praises Nachiketa's unshakeable spiritual steadfastness, acknowledging him as a qualified vessel (Adhikari) for supreme non-dual knowledge.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya] Avidya produces identification with non-Self objects; Vidya destroys false superimposition. Nachiketa demonstrated absolute dispassion (Vairagya) by rejecting all celestial temptations.",
+          "hi": "[आदि शंकराचार्य] अविद्या अनात्म वस्तुओं में आसक्ति उत्पन्न करती है, जबकि विद्या सत्य का साक्षात्कार कराती है। नचिकेता का वैराग्य उसे ज्ञान का सच्चा अधिकारी बनाता है।",
+          "mr": "[आद्य शंकराचार्य] अविद्या देहबुद्धी निर्माण करते, तर विद्या आत्मज्ञान देते. सर्व प्रलोभनांचा त्याग करून नचिकेताने आपली खरी मुमुक्षुता सिद्ध केली."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] True spiritual initiation occurs when all finite distractions and material baits fail to derail the seeker's unwavering search for ultimate truth.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] आत्मज्ञान की वास्तविक दीक्षा उसी क्षण घटित होती है जब संसार का कोई भी आकर्षण साधक को सत्य मार्ग से डिगा नहीं पाता।",
+          "mr": "[सार्वभौम वैदिक समन्वय] जेव्हा जगातील कोणतेही सुख आत्मसाक्षात्काराच्या ध्येयापुढे फिके वाटते, तेव्हाच साधक परमार्थाचा खरा अधिकारी बनतो."
+        }
+      }
+    },
+    {
+      "chapter": 1,
+      "verse": 5,
+      "original": "न जायते म्रियते वा विपश्चिन्नायं कुतश्चिन्न बभूव कश्चित् । अजो नित्यः शाश्वतोऽयं पुराणो न हन्यते हन्यमाने शरीरे ॥ ५ ॥",
+      "transliteration": "na jāyate mriyate vā vipaścin-nāyaṃ kutaścin-na babhūva kaścit | ajo nityaḥ śāśvato'yaṃ purāṇo na hanyate hanyamāne śarīre || 5 ||",
+      "translation": "The knowing Self is neither born nor does it die. It sprang from nothing, and nothing sprang from it. It is unborn, eternal, everlasting, and ancient; it is not slain when the body is slain.",
+      "meaning": "The core mantra of immortality: Consciousness (Atman) is birthless, deathless, changeless, and unaffected by the destruction of the biological casing.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya] The Atman is free from the six modifications of being (Janma, Astitva, Vriddhi, Parinama, Apakshaya, Vinasha). It is pure self-luminous awareness, immortal and infinite.",
+          "hi": "[आदि शंकराचार्य] आत्मा षड्भाव विकारों (जन्म, स्थिति, वृद्धि, परिणाम, क्षय, नाश) से सर्वथा मुक्त है। शरीर के विनष्ट होने पर भी आत्मा कभी नष्ट नहीं होती।",
+          "mr": "[आद्य शंकराचार्य] आत्मा षड् विकारांच्या पलीकडे आहे. शरीराचा नाश झाला तरी नित्य, अजन्मा आणि शाश्वत आत्मचैतन्य कधीही नष्ट होत नाही."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] This verse echoes in Bhagavad Gita 2.20 as the bedrock revelation of eternal consciousness surviving all physical impermanence.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] यही अमर श्लोक श्रीमद्भगवद्गीता (२.२०) का प्राण है, जो भौतिक देह के परे चेतना की अविनाशी सत्ता की घोषणा करता है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] हाच श्लोक भगवद्गीतेतील (२.२०) अमरत्वाचा पाया आहे, जो देहाच्या पलीकडील अखंड चैतन्याचा महिमा सांगतो."
+        }
+      }
+    },
+    {
+      "chapter": 1,
+      "verse": 6,
+      "original": "अणोरणीयान्महतो महीयानात्मास्य जन्तोर्निहितो गुहायाम् । तमक्रतुः पश्यति वीतशोको धातुप्रसादान्महिमानमात्मनः ॥ ६ ॥",
+      "transliteration": "aṇor-aṇīyān-mahato mahīyān-ātmāsya jantor-nihito guhāyām | tam-akratuḥ paśyati vīta-śoko dhātu-prasādān-mahimānam-ātmanaḥ || 6 ||",
+      "translation": "Subtler than the subtlest and greater than the greatest, the Self is seated in the heart of every creature. One who is free from worldly desires beholds the majesty of the Self through the tranquility of the senses and mind, becoming free from all sorrow.",
+      "meaning": "The paradox of consciousness: infinite in cosmic span yet subtler than the quantum particle, discovered in the silent sanctuary of the purified heart.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya] The Atman is smaller than an atom because it is formless, and vaster than the cosmos because it permeates everything. It is realized through the grace of inner serenity (Dhatu-prasada).",
+          "hi": "[आदि शंकराचार्य] आत्मा अणु से भी सूक्ष्म है क्योंकि वह अरूप है, और महत् से भी महान है क्योंकि वह सर्वव्यापक है। चित्त की निर्मलता से ही इसका साक्षात्कार होता है।",
+          "mr": "[आद्य शंकराचार्य] आत्मा सूक्ष्माहून सूक्ष्म आणि महानहून महान आहे. इंद्रिये आणि मन शांत झाल्यावर साधकाला आत्म्याचा हा अलौकिक महिमा प्रतीत होतो."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] The transcendent-immanent continuum of reality is experienced directly when subjective ego-striving dissolves into contemplative stillness.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] जब अहंकार की चंचलता समाप्त हो जाती है, तब हृदय की गुहा में विराजमान अनंत परमेश्वर का शांत अनुभव घटित होता है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] जेव्हा वासना आणि अहंकार शांत होतात, तेव्हा हृदयकमलात वसणाऱ्या परम सत्याचा साक्षात्कार होऊन सर्व शोक नाहीसे होतात."
+        }
+      }
+    },
+    {
+      "chapter": 2,
+      "verse": 1,
+      "original": "आत्मानँ रथिनं विद्धि शरीरँ रथमेव तु । बुद्धिं तु सारथिं विद्धि मनः प्रग्रहमेव च ॥ १ ॥",
+      "transliteration": "ātmānaṃ rathinaṃ viddhi śarīraṃ ratham-eva tu | buddhiṃ tu sārathiṃ viddhi manaḥ pragraham-eva ca || 1 ||",
+      "translation": "Know the Self (Atman) as the lord of the chariot, and the body verily as the chariot. Know the intellect (Buddhi) as the charioteer, and the mind (Manas) as the reins.",
+      "meaning": "The iconic Chariot Allegory: The human psychophysical organism is an integrated conveyance designed for conscious spiritual realization.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya] The Atman is the sovereign passenger; the physical body is the chariot; Buddhi (discriminative intellect) is the driver holding the reins of Manas (the sensory-processing mind).",
+          "hi": "[आदि शंकराचार्य] आत्मा रथ का स्वामी है, शरीर रथ है, बुद्धि सारथी है और मन लगाम है। जब तक बुद्धि जागृत नहीं होती, रथ सही दिशा में नहीं चल सकता।",
+          "mr": "[आद्य शंकराचार्य] आत्मा हा रथाचा स्वामी असून शरीर हा रथ आहे. बुद्धी सारथी आहे आणि मन हे घोड्यांना नियंत्रित करणारे लगाम आहे."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] A universal psychological framework for self-mastery, aligning physical vitality, mental focus, and intellectual discernment under spiritual awareness.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] आत्मसंयम और चेतना के संतुलन का यह वैदिक मॉडल मन, बुद्धि और देह को एक दिव्य लक्ष्य की ओर निर्देशित करता है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] आत्मनियंत्रणाचे हे वैश्विक मानसशास्त्र मानवी जीवनाला योग्य दिशा देऊन मुक्तीच्या मार्गावर अग्रेसर करते."
+        }
+      }
+    },
+    {
+      "chapter": 2,
+      "verse": 2,
+      "original": "इन्द्रियाणि हयानाहुर्विषयाँस्तेषु गोचरान् । आत्मेन्द्रियमनोयुक्तं भोक्तेत्याहुर्मनीषिणः ॥ २ ॥",
+      "transliteration": "indriyāṇi hayān-āhur-viṣayāṃs-teṣu gocarān | ātmendriya-mano-yuktaṃ bhoktety-āhur-manīṣiṇaḥ || 2 ||",
+      "translation": "The senses, they say, are the horses, and the objects of desire are the paths they tread. The wise declare that the Self, united with the body, senses, and mind, is the enjoyer (Bhokta).",
+      "meaning": "When pure awareness becomes entangled with mental impressions and sensory currents, the illusory experience of being a limited enjoyer/sufferer arises.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya] In its absolute nature, the Atman is non-doer and non-enjoyer (Akarta, Abhokta). It appears as the Bhokta only through limiting adjuncts (Upadhis) of body and mind.",
+          "hi": "[आदि शंकराचार्य] शुद्ध आत्मा अकर्ता और अभोक्ता है। वह केवल देह, इन्द्रिय और मन के तादात्म्य से भोक्ता प्रतीत होती है।",
+          "mr": "[आद्य शंकराचार्य] केवळ देह आणि मनाच्या उपाधीमुळे आत्मा भोक्ता भासतो; वस्तुतः तो निर्लेप आणि अकर्ता आहे."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] If the horses (senses) run wild on sensory pastures without firm reins (mind) steered by an alert driver (intellect), the chariot crashes into suffering.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] यदि इन्द्रियरूपी घोड़े विषय-वासनाओं के पीछे अनियंत्रित दौड़ेंगे तो जीवन-रथ दुर्घटनाग्रस्त होकर पतन को प्राप्त होगा।",
+          "mr": "[सार्वभौम वैदिक समन्वय] इंद्रियरूपी अश्व जर बुद्धीच्या नियंत्रणाबाहेर गेले, तर मानवी जीवन दुःखाच्या गर्तेत सापडते."
+        }
+      }
+    },
+    {
+      "chapter": 2,
+      "verse": 3,
+      "original": "यस्तु विज्ञानवान्भवति युक्तेन मनसा सदा । तस्येन्द्रियाणि वश्यानि सदश्वा इव सारथेः ॥ ३ ॥",
+      "transliteration": "yas-tu vijñānavān-bhavati yuktena manasā sadā | tasyendriyāṇi vaśyāni sadaśvā iva sāratheḥ || 3 ||",
+      "translation": "He who possesses discernment, with a mind ever controlled and collected, his senses are obedient to him, like well-trained horses to a skillful charioteer.",
+      "meaning": "The state of integrated mastery: Enlightened intelligence harmonizes mental attention, rendering the sensory apparatus disciplined and luminous.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya] Vijnanavān is one endowed with discriminative spiritual wisdom. When the mind is purified and steady, the senses effortlessly submit to righteous will.",
+          "hi": "[आदि शंकराचार्य] विज्ञानवान वह पुरुष है जिसका मन एकाग्र और विवेकयुक्त है। उसकी इन्द्रियाँ सारथी के आज्ञाकारी श्रेष्ठ अश्वों की भांति वश में रहती हैं।",
+          "mr": "[आद्य शंकराचार्य] ज्याचे मन स्थिर आणि विवेकयुक्त आहे, त्याची इंद्रिये कुशल सारथ्याच्या उत्कृष्ट घोड्यांप्रमाणे पूर्णपणे स्वाधीन असतात."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] True mastery is not violent suppression of desires, but supreme cognitive poise where sensory energy naturally supports higher contemplative living.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] इंद्रिय-जय का अर्थ दमन नहीं, अपितु विवेकपूर्ण संतुलन है जो साधक को आत्म-साक्षात्कार में सहायक बनाता है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] इंद्रियांवर विजय मिळवणे म्हणजे त्यांचा नाश करणे नव्हे, तर बुद्धीच्या प्रकाशात त्यांना सन्मार्गाला लावणे होय."
+        }
+      }
+    },
+    {
+      "chapter": 2,
+      "verse": 4,
+      "original": "उत्तिष्ठत जाग्रत प्राप्य वरान्निबोधत । क्षुरस्य धारा निशिता दुरत्यया दुर्गं पथस्तत्कवयो वदन्ति ॥ ४ ॥",
+      "transliteration": "uttiṣṭhata jāgrata prāpya varān-nibodhata | kṣurasya dhārā niśitā duratyayā durgaṃ pathas-tat-kavayo vadanti || 4 ||",
+      "translation": "Arise! Awake! Approach the great teachers and realize the Truth! Sharp as the edge of a razor, difficult to tread and hard to cross, is this path, declare the wise.",
+      "meaning": "The clarion call of the Upanishads immortalized by Swami Vivekananda: Shake off spiritual slumber, seek authentic masters, and walk the rigorous razor's edge path of liberation.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya] 'Arise' from the beginningless sleep of ignorance. 'Awake' to the light of self-knowledge. 'Approach the great' enlightened masters to comprehend Brahman.",
+          "hi": "[आदि शंकराचार्य] अविद्या की अनादि निद्रा से उठो! आत्मज्ञान में जागो! श्रेष्ठ ज्ञानी महापुरुषों की शरण में जाकर इस दुर्गम सत्य को जानो।",
+          "mr": "[आद्य शंकराचार्य] अज्ञानाच्या गाढ झोपेतून जागे व्हा! श्रेष्ठ सद्गुरूंकडे जाऊन आत्मज्ञान प्राप्त करा! हा ज्ञानमार्ग तलवारीच्या धारेसारखा सूक्ष्म आणि दुर्गम आहे."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] The universal battle-cry for conscious awakening, demanding uncompromising courage, intense wakefulness, and relentless dedication to the highest truth.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] स्वामी विवेकानन्द का प्रिय महामंत्र, जो समस्त मानवजाति को अज्ञान की तंद्रा त्यागकर परम सत्य की प्राप्ति का आह्वान करता है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] स्वामी विवेकानंदांनी जगभर गाजवलेला हा महामंत्र मानवाला अज्ञानाची सुस्ती झटकून आत्मसाक्षात्कारासाठी उठण्याचा संदेश देतो."
+        }
+      }
+    },
+    {
+      "chapter": 2,
+      "verse": 5,
+      "original": "अशब्दमस्पर्शमरूपमव्ययं तथाऽरसं नित्यमगन्धवच्च यत् । अनाद्यनन्तं महतः परं ध्रुवं निचाय्य तन्मृत्युमुखात्प्रमुच्यते ॥ ५ ॥",
+      "transliteration": "aśabdam-asparśam-arūpam-avyayaṃ tathā'rasaṃ nityam-agandhavac-ca yat | anādy-anantaṃ mahataḥ paraṃ dhruvaṃ nicāyya tan-mṛtyu-mukhāt-pramucyate || 5 ||",
+      "translation": "Soundless, touchless, formless, imperishable, tasteless, eternal, and scentless; without beginning and without end, higher than the great, ever steadfast — by realizing That, one is liberated from the jaws of death.",
+      "meaning": "Brahman transcends all five sensory qualities (sound, touch, form, taste, scent). Knowing this absolute, immutable reality directly destroys all fear of death.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya] What has qualities like sound is subject to change and death. Brahman, having no sensory attributes, is causeless, beginningless, and endless. Realizing Brahman is final liberation.",
+          "hi": "[आदि शंकराचार्य] जिसमें शब्द-स्पर्श आदि गुण होते हैं वह नश्वर होता है। निर्गुण, निराकार और अनादि परब्रह्म को जानने से मनुष्य मृत्यु के पाश से मुक्त हो जाता है।",
+          "mr": "[आद्य शंकराचार्य] शब्द, स्पर्श, रूप, रस आणि गंध नसलेला निर्गुण परब्रह्म हाच अविनाशी आहे. त्याला जाणणारा मृत्यूच्या मुखातून कायमचा मुक्त होतो."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] The ultimate Via Negativa (Neti Neti) of Upanishadic wisdom, revealing that the true Self is completely beyond the perceptual bounds of the physical universe.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] नेति-नेति (यह भी नहीं, वह भी नहीं) का चरम उद्घोष जो स्पष्ट करता है कि आत्मा पंचतत्वों और इन्द्रिय सीमाओं से सर्वथा परे है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] सर्व भौतिक आणि ऐहिक मर्यादांच्या पलीकडील निर्गुण तत्त्वाचा हा साक्षात्कार मानवाला अमरत्वाचा अधिकार मिळवून देतो."
+        }
+      }
+    },
+    {
+      "chapter": 2,
+      "verse": 6,
+      "original": "यदा पञ्चावतिष्ठन्ते ज्ञानानि मनसा सह । बुद्धिश्च न विचेष्टते तामाहुः परमां गतिम् ॥ ६ ॥",
+      "transliteration": "yadā pañcāvatiṣṭhante jñānāni manasā saha | buddhiś-ca na viceṣṭate tām-āhuḥ paramāṃ gatim || 6 ||",
+      "translation": "When the five senses of knowledge come to rest together with the mind, and the intellect ceases its restless striving — that state, they declare, is the supreme goal (Paramā Gati).",
+      "meaning": "The definition of Yoga and Samadhi in the Upanishads: complete stillness of cognitive faculties where consciousness shines in unconditioned splendour.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya] When the five cognitive senses together with the mind withdraw from external objects and rest in the Self, and Buddhi ceases to project thoughts, that state is supreme liberation.",
+          "hi": "[आदि शंकराचार्य] जब पाँचों ज्ञानेन्द्रियाँ मन के साथ स्थिर हो जाती हैं और बुद्धि भी निश्चल हो जाती है, उसी शांत अवस्था को परम गति (योग) कहते हैं।",
+          "mr": "[आद्य शंकराचार्य] जेव्हा पाचही ज्ञानेंद्रिये मनासह अंतर्मुख होऊन शांत होतात आणि बुद्धी निस्तरंग होते, त्या अवस्थेलाच परम गती किंवा मुक्ती म्हणतात."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] Ancient experiential psychology at its peak: the cessation of cognitive fluctuations (Chitta Vritti Nirodha) revealing the luminous reality of pure being.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] पतंजलि योगसूत्र का मूल बीज इसी मंत्र में विद्यमान है, जहाँ मानसिक चंचलता का निरोध ही आत्मा का प्रत्यक्ष साक्षात्कार कराता है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] चित्तवृत्तींचा संपूर्ण निरोध होऊन जेव्हा चैतन्य स्वतःच्या मूळ स्वरूपात स्थिरावते, तीच जीवनाची सर्वोच्च अवस्था आहे."
+        }
+      }
+    }
+  ]
+}

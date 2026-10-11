@@ -1,5 +1,20 @@
 # Release Notes
 
+## [1.7.0]
+
+### ⚡ Admin Web Terminal, RL Self-Correction & 5 Principal Upanishads Onboarding
+- [x] `MOBILE-FIX-001` **Mobile Menu Drawer Opacity Fix**: Replaced semi-transparent `glass` styling in `components/layout/Header.tsx` with 100% opaque background (`bg-[#FDFBF7] dark:bg-stone-950 z-[200]`), completely eliminating the visual bug where background scripture text bled through and overlapped menu items on mobile devices.
+- [x] `ADMIN-TERM-001` **Vedic Engine Web Terminal & Admin Console (`/admin`)**: Built a high-performance cyber-monastic web terminal console (`app/admin/page.tsx`) with Candidate Books control deck, one-click onboarding buttons, batch runner, and live color-coded execution log window supporting interactive CLI commands (`onboard <slug>`, `onboard-all`, `status`, `clear`, `help`).
+- [x] `API-ENGINE-001` **Autonomous Scripture Engine API (`/api/engine/onboard`)**: Implemented REST API supporting live server-side execution of `VishwaVaniEngine`, status queries, and detailed ANSI/terminal execution event logs.
+- [x] `ENGINE-RL-001` **Reinforcement Learning Self-Correction Feedback Loop (`lib/engine/orchestrator.ts`)**: Enhanced the orchestrator with an autonomous RL reflection loop. When rule audits detect violations or readiness < 100%, the engine analyzes flagged fields, applies targeted multi-scholar synthesis / transliteration repairs, and re-audits iteratively (capped at 3 attempts per Circuit Breaker).
+- [x] `UPA-KATHA-001` **Katha Upanishad Gold & Diamond Graduation**: Formulated canonical specification `data/specs/katha-upanishad.json` (2 Adhyayas, 12 mantras, Nachiketa & Yama dialogue, Shreyas vs Preyas, Chariot Allegory), synthesized Adi Shankara & Universal layers, extracted 13 Diamond tokens, and synced to lake.
+- [x] `UPA-MUNDAKA-001` **Mundaka Upanishad Gold & Diamond Graduation**: Formulated `data/specs/mundaka-upanishad.json` (3 Mundakas, 7 mantras, Parā & Aparā Vidyā, Two Birds metaphor, Bow of OM, Satyameva Jayate), synthesized layers, extracted 16 Diamond tokens, and synced to lake.
+- [x] `UPA-PRASHNA-001` **Prashna Upanishad Gold & Diamond Graduation**: Formulated `data/specs/prashna-upanishad.json` (6 Prashnas, 7 mantras, Pippalada's six dialogues on Prāṇa & Rayi, dream cognition, and 16-fold Purusha), synthesized layers, extracted 25 Diamond tokens, and synced to lake.
+- [x] `UPA-TAITTIRIYA-001` **Taittiriya Upanishad Gold & Diamond Graduation**: Formulated `data/specs/taittiriya-upanishad.json` (3 Vallis, 7 mantras, Convocation Address, Pancha Kosha architecture, Anando Brahma), synthesized layers, extracted 16 Diamond tokens, and synced to lake.
+- [x] `UPA-AITAREYA-001` **Aitareya Upanishad Gold & Diamond Graduation**: Formulated `data/specs/aitareya-upanishad.json` (3 Adhyayas, 6 mantras, Rigvedic cosmogony, unified cognition, and Mahāvākya Prajñānaṃ Brahma), synthesized layers, extracted 12 Diamond tokens, and synced to lake.
+- [x] `CORPUS-25-001` **25 Completed Gold Scriptures Milestone**: All 25 canonical scriptures in `VEDIC_LIBRARY` and `COMPLETED_BOOKS_SLUGS` are now 100% Gold, verified with 0 placeholders, with 1,335 gold verses and 107 Diamond tokens in `public/vedic-lake.db`.
+- [x] `TEST-002` **100% Green Verification**: Passed all 65 test suites (355 tests) and verified zero TypeScript or ESLint errors via `npm run verify`.
+
 ## [1.6.1]
 
 ### 🚀 Autonomous Book Onboarding via Engine & Mandukya Upanishad Graduation
