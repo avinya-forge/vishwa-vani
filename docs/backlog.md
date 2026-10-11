@@ -114,7 +114,18 @@
 ---
 
 ## 🚀 TIER 1: ACTIVE SPRINT EPICS (MONTH 1 / SPRINTS 1–2 / DAYS 1–30)
-*Target: Edge AI conversational Vedic Saṁvāda interface, 25 scripture companion studio workspaces, offline Tattva Saṁgraha CLI distillation, and test coverage perfection.*
+*Target: Edge AI conversational Vedic Saṁvāda interface, 25 scripture companion studio workspaces, offline Tattva Saṁgraha CLI distillation, user engagement telemetry, and test coverage perfection.*
+
+### 📊 EPIC-USER-IDENTITY-AND-ENGAGEMENT-TELEMETRY [COMPLETED & VERIFIED]
+*Privacy-compliant visitor intelligence, anonymous persistent profile ('vv_visitor_id'), internal search & scholar telemetry, and opt-in Daily Shloka email subscription (governed by India DPDP Act 2023 & GA4 policies).*
+
+- [x] `TEL-001` **[P0-CRITICAL] Anonymous Persistent Visitor Profile Engine (`lib/analytics.ts`)**: Built client-side visitor ID manager creating persistent anonymous UUID (`vv_visitor_id`) in `localStorage` to correlate sessions without collecting unhashed PII.
+- [x] `TEL-002` **[P0-CRITICAL] GA4 Search & Scholar Telemetry Engine**: Added safe event tracking utilities (`trackSearch`, `trackZeroResultSearch`, `trackScholarSelection`, `trackLanguagePreference`, `trackBookmarkToggle`, `trackKnowledgeTokenView`, `trackNewsletterSubscribe`) connected to `window.gtag`.
+- [x] `TEL-003` **[P0-CRITICAL] Internal Search Telemetry Integration (`components/search/search-client.tsx`)**: Wired debounced query tracking with zero-result search event firing to capture what sacred texts seekers are actively requesting.
+- [x] `TEL-004` **[P0-CRITICAL] Scholar Lineage & Reading Telemetry (`components/shloka/study-client.tsx`)**: Wired scholar perspective switching, language toggling, and bookmark actions to event telemetry.
+- [x] `SUB-001` **[P0-CRITICAL] Daily Shloka in Your Inbox Subscription Card (`components/home/daily-shloka.tsx`)**: Built accessible multilingual subscription deck supporting English, Hindi, Marathi, and Sanskrit preferences.
+- [x] `SUB-002` **[P0-CRITICAL] Lake Subscriber Engine & API (`app/api/newsletter/subscribe/route.ts`, `lib/server-lake.ts`)**: Created SQLite/Turso `subscribers` table schema with email format validation, idempotent update handling, visitor ID linking, and active subscriber counter API.
+- [x] `TEST-TEL-001` **[P0-CRITICAL] Telemetry & Subscriber Unit Test Suites**: Authored unit test suites in `__tests__/lib-analytics.test.ts` and `__tests__/api-newsletter-subscribe.test.ts` (18 tests passing, total test suite expanded to 67 suites, 373 tests).
 
 ### 🤖 EPIC-LOCAL-LLM-CHAT-SEARCH [P0-CRITICAL / ACTIVE]
 *Redesign search into conversational Vedic Saṁvāda interface powered by lightweight local LLM with zero-server-load WebGPU in-browser inference and decoupled token-bucket edge fallback (governed by ADR-005).*

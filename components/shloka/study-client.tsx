@@ -15,6 +15,7 @@ import SemanticExplorerDrawer from './semantic-explorer-drawer'
 import VerseBaseTranslation from './verse-base-translation'
 import VerseCommentarySection from './verse-commentary-section'
 import { getKnowledgeTokensByScriptureAndVerse } from '@/lib/vedic-science'
+import { trackScholarSelection, trackLanguagePreference, trackBookmarkToggle } from '@/lib/analytics'
 
 
 // 🏛️ DYNAMIC PERSPECTIVE METADATA
@@ -389,19 +390,23 @@ export default function StudyClient({
 
     setScholarSelection(newSelection)
     localStorage.setItem('vishwa_scholar_pref', JSON.stringify(newSelection))
+    trackScholarSelection(textSlug, chapter, author)
   }
 
   const updateLanguage = (lang: string) => {
     setLanguageSelection(lang)
     localStorage.setItem('vishwa_language_pref', lang)
+    trackLanguagePreference(lang)
   }
 
   const toggleBookmark = (verseId: string) => {
-    const newBookmarks = bookmarks.includes(verseId)
-      ? bookmarks.filter(id => id !== verseId)
-      : [...bookmarks, verseId]
+    const isAdding = !bookmarks.includes(verseId)
+    const newBookmarks = isAdding
+      ? [...bookmarks, verseId]
+      : bookmarks.filter(id => id !== verseId)
     setBookmarks(newBookmarks)
     localStorage.setItem('vishwa_bookmarks', JSON.stringify(newBookmarks))
+    trackBookmarkToggle(verseId, isAdding)
   }
 
   const jumpToFirstBookmark = () => {

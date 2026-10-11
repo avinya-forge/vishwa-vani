@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useMemo } from 'react'
 import Link from 'next/link'
 import { getActiveDailyShlokas, type DailyVerse } from '@/lib/daily-shloka'
+import { getOrCreateVisitorId, trackNewsletterSubscribe } from '@/lib/analytics'
 
 export default function DailyShloka() {
   const allVerses = useMemo(() => getActiveDailyShlokas(), [])
@@ -12,6 +13,12 @@ export default function DailyShloka() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [selectedScholarIndex, setSelectedScholarIndex] = useState(0)
   const [copied, setCopied] = useState(false)
+
+  // Newsletter Subscription State
+  const [subEmail, setSubEmail] = useState('')
+  const [subLanguage, setSubLanguage] = useState<'en' | 'hi' | 'mr' | 'sa'>('en')
+  const [subStatus, setSubStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
+  const [subMessage, setSubMessage] = useState('')
 
   // Unique completed scriptures present in active corpus
   const uniqueBooks = useMemo(() => {
@@ -74,6 +81,46 @@ export default function DailyShloka() {
       setTimeout(() => setCopied(false), 2000)
     } catch {
       // ignore
+    }
+  }
+
+  const handleSubscribe = async (e: React.FormEvent) => {
+    e.preventDefault()
+    if (!subEmail || !subEmail.includes('@')) {
+      setSubStatus('error')
+      setSubMessage('Please provide a valid email address.')
+      return
+    }
+
+    setSubStatus('loading')
+    setSubMessage('')
+
+    try {
+      const visitorId = getOrCreateVisitorId()
+      const res = await fetch('/api/newsletter/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          email: subEmail,
+          language: subLanguage,
+          visitorId: visitorId,
+          scripturePreference: selectedBookFilter
+        })
+      })
+
+      const data = await res.json()
+      if (res.ok && data.success) {
+        setSubStatus('success')
+        setSubMessage(data.message || 'Subscribed! You will receive Daily Vedic Wisdom.')
+        trackNewsletterSubscribe(subLanguage, selectedBookFilter)
+        setSubEmail('')
+      } else {
+        setSubStatus('error')
+        setSubMessage(data.error || 'Unable to subscribe. Please try again.')
+      }
+    } catch {
+      setSubStatus('error')
+      setSubMessage('Network connection error. Please try again.')
     }
   }
 
@@ -254,6 +301,84 @@ export default function DailyShloka() {
             <span>Read Complete Chapter {verse.chapter} in Study Canvas</span>
             <span aria-hidden="true">&rarr;</span>
           </Link>
+        </div>
+
+        {/* Nitya Svadhyaya: Daily Shloka in Your Inbox Subscription Deck */}
+        <div className="px-6 sm:px-10 py-6 bg-gradient-to-br from-amber-500/10 via-orange-500/5 to-amber-500/10 dark:from-amber-950/20 dark:via-orange-950/10 dark:to-stone-900 border-t border-amber-200/70 dark:border-amber-900/40">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
+            <div className="max-w-md">
+              <div className="flex items-center gap-2 mb-1.5">
+                <span className="text-sm">📬</span>
+                <span className="text-xs font-black uppercase tracking-[0.2em] text-orange-800 dark:text-orange-400">
+                  नित्य स्वाध्याय · Daily Shloka in Your Inbox
+                </span>
+              </div>
+              <p className="text-xs text-stone-600 dark:text-stone-300 leading-relaxed font-serif">
+                Awaken every morning with one sacred verse, authentic transliteration, and classical lineage commentary delivered to your email.
+              </p>
+            </div>
+
+            <form onSubmit={handleSubscribe} className="flex-1 max-w-lg space-y-3">
+              <div className="flex flex-wrap items-center gap-1.5 text-xs">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-stone-400 dark:text-stone-500 mr-1">
+                  Language:
+                </span>
+                {(['en', 'hi', 'mr', 'sa'] as const).map(lang => (
+                  <button
+                    key={lang}
+                    type="button"
+                    onClick={() => setSubLanguage(lang)}
+                    className={`px-2.5 py-1 rounded-md text-[11px] font-bold transition-all ${
+                      subLanguage === lang
+                        ? 'bg-orange-600 text-white shadow-xs'
+                        : 'bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 text-stone-600 dark:text-stone-300 hover:border-orange-300'
+                    }`}
+                  >
+                    {lang === 'en' ? 'English' : lang === 'hi' ? 'हिन्दी' : lang === 'mr' ? 'मराठी' : 'संस्कृत'}
+                  </button>
+                ))}
+              </div>
+
+              <div className="flex gap-2">
+                <input
+                  type="email"
+                  value={subEmail}
+                  onChange={e => setSubEmail(e.target.value)}
+                  placeholder="Enter your email (e.g. seeker@vedic.org)..."
+                  disabled={subStatus === 'loading'}
+                  className="flex-1 px-3.5 py-2 text-xs rounded-xl border border-stone-200 dark:border-stone-700 bg-white dark:bg-stone-800 text-stone-800 dark:text-stone-200 placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-orange-500/50 transition-all"
+                  aria-label="Email address for daily shloka"
+                />
+                <button
+                  type="submit"
+                  disabled={subStatus === 'loading'}
+                  className="px-4 py-2 bg-orange-600 hover:bg-orange-700 disabled:opacity-50 text-white text-xs font-bold rounded-xl transition-all shadow-sm hover:shadow flex items-center gap-1.5 whitespace-nowrap"
+                >
+                  {subStatus === 'loading' ? (
+                    <span>Subscribing...</span>
+                  ) : (
+                    <>
+                      <span>Subscribe</span>
+                      <span aria-hidden="true">&rarr;</span>
+                    </>
+                  )}
+                </button>
+              </div>
+
+              {subStatus === 'success' && (
+                <p className="text-[11px] font-bold text-emerald-700 dark:text-emerald-400 flex items-center gap-1 animate-fadeIn">
+                  <span>✓</span>
+                  <span>{subMessage}</span>
+                </p>
+              )}
+              {subStatus === 'error' && (
+                <p className="text-[11px] font-bold text-red-600 dark:text-red-400 flex items-center gap-1 animate-fadeIn">
+                  <span>⚠</span>
+                  <span>{subMessage}</span>
+                </p>
+              )}
+            </form>
+          </div>
         </div>
 
       </div>

@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { searchLake } from '@/lib/lake'
 import { VEDIC_LIBRARY } from '@/lib/texts'
 import type { SearchResult } from '@/lib/search-bridge'
+import { trackSearch } from '@/lib/analytics'
 
 
 const VEDIC_LIBRARY_MAP = new Map(VEDIC_LIBRARY.map(l => [l.slug, l]));
@@ -31,15 +32,20 @@ export default function SearchClient() {
             try {
               const res = await searchLake(query)
               // Handle both the old signature (array) and new signature ({results, summary})
+              let resultCount = 0
               if (Array.isArray(res)) {
                 setResults(res as SearchResult[])
                 setSummary(null)
+                resultCount = (res as SearchResult[]).length
               } else {
-                setResults((res.results as SearchResult[]) || [])
+                const rList = (res.results as SearchResult[]) || []
+                setResults(rList)
                 setSummary(res.summary)
+                resultCount = rList.length
               }
               setSearchQuery(query)
               setDisplayedCount(50)
+              trackSearch(query, activeTab, resultCount)
             } catch (error) {
               console.error('Search failed:', error)
             } finally {

@@ -1,5 +1,17 @@
 # Release Notes
 
+## [1.7.1]
+
+### 📊 Visitor Intelligence, Search Telemetry & Opt-In Daily Shloka Newsletter
+- [x] `TEL-001` **Anonymous Persistent Visitor Profile Engine (`lib/analytics.ts`)**: Implemented client-side visitor ID manager creating persistent anonymous UUID (`vv_visitor_id`) in `localStorage` to correlate reader sessions, search trends, and preferences without capturing unhashed PII.
+- [x] `TEL-002` **GA4 Deep Event Telemetry**: Integrated non-PII custom event tracking (`trackSearch`, `trackZeroResultSearch`, `trackScholarSelection`, `trackLanguagePreference`, `trackBookmarkToggle`, `trackKnowledgeTokenView`, `trackNewsletterSubscribe`) connected with `window.gtag` for rich regional and engagement insights.
+- [x] `TEL-003` **Internal Search & Zero-Result Telemetry (`components/search/search-client.tsx`)**: Wired debounced query tracking with zero-result search event firing to capture what sacred texts seekers are actively requesting.
+- [x] `TEL-004` **Scholar Lineage & Reading Telemetry (`components/shloka/study-client.tsx`)**: Wired scholar perspective switching, language toggling, and bookmark actions to event telemetry.
+- [x] `SUB-001` **Daily Shloka in Your Inbox Subscription Deck (`components/home/daily-shloka.tsx`)**: Built accessible multilingual subscription deck supporting English, Hindi, Marathi, and Sanskrit preferences.
+- [x] `SUB-002` **Lake Subscriber Engine & API (`app/api/newsletter/subscribe/route.ts`, `lib/server-lake.ts`)**: Created SQLite/Turso `subscribers` table schema with email format validation, idempotent update handling, visitor ID linking, and active subscriber counter API.
+- [x] `ROADMAP-001` **1–12+ Month Strategic Roadmap & Backlog Architecture**: Re-architected `docs/backlog.md` with complete 1–12+ month milestone matrix, Scrum Master granularity, story points, and 9-item mandatory subtask checklists.
+- [x] `TEST-003` **100% Green Verification Across 67 Suites (373 Tests)**: Authored unit test suites in `__tests__/lib-analytics.test.ts` and `__tests__/api-newsletter-subscribe.test.ts`, passing all 67 test suites (373 tests) with 0 failures, 0 lints, and 0 type errors.
+
 ## [1.7.0]
 
 ### ⚡ Admin Web Terminal, RL Self-Correction & 5 Principal Upanishads Onboarding

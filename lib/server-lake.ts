@@ -209,3 +209,103 @@ export async function getDynamicLibraryStats() {
     categories: Array.from(new Set(available.map(t => t.category)))
   };
 }
+
+export interface SubscriberRecord {
+  id?: string;
+  email: string;
+  language?: string;
+  visitorId?: string;
+  scripturePreference?: string;
+  status?: string;
+  createdAt?: string;
+}
+
+export async function addSubscriber(
+  sub: SubscriberRecord,
+  lakeFile: string = 'vedic-lake.db'
+): Promise<{ success: boolean; isNew: boolean; message: string }> {
+  try {
+    const client = getClient(lakeFile);
+
+    // Ensure subscribers table exists
+    await client.execute(`
+      CREATE TABLE IF NOT EXISTS subscribers (
+        id TEXT PRIMARY KEY,
+        email TEXT UNIQUE NOT NULL,
+        language TEXT DEFAULT 'en',
+        visitor_id TEXT,
+        scripture_preference TEXT DEFAULT 'all',
+        status TEXT DEFAULT 'active',
+        created_at TEXT NOT NULL
+      )
+    `);
+
+    await client.execute(`
+      CREATE INDEX IF NOT EXISTS idx_subscribers_email ON subscribers(email)
+    `);
+
+    const email = sub.email.toLowerCase().trim();
+    const language = sub.language || 'en';
+    const visitorId = sub.visitorId || null;
+    const preference = sub.scripturePreference || 'all';
+    const now = new Date().toISOString();
+    const subId = sub.id || `sub_${Date.now()}_${Math.random().toString(36).substring(2, 9)}`;
+
+    // Check if email already exists
+    const existing = await client.execute({
+      sql: 'SELECT id, email, status FROM subscribers WHERE email = ?',
+      args: [email]
+    });
+
+    if (existing.rows.length > 0) {
+      await client.execute({
+        sql: `UPDATE subscribers 
+              SET language = ?, 
+                  visitor_id = COALESCE(?, visitor_id), 
+                  scripture_preference = ?, 
+                  status = 'active'
+              WHERE email = ?`,
+        args: [language, visitorId, preference, email]
+      });
+      return { success: true, isNew: false, message: 'Preferences updated successfully.' };
+    }
+
+    // Insert new subscriber
+    await client.execute({
+      sql: `INSERT INTO subscribers (id, email, language, visitor_id, scripture_preference, status, created_at)
+            VALUES (?, ?, ?, ?, ?, 'active', ?)`,
+      args: [subId, email, language, visitorId, preference, now]
+    });
+
+    return { success: true, isNew: true, message: 'Subscribed successfully.' };
+  } catch (err) {
+    console.error('SERVER LAKE: Error saving subscriber', err);
+    throw err;
+  }
+}
+
+export async function getSubscribersCount(lakeFile: string = 'vedic-lake.db'): Promise<number> {
+  try {
+    const client = getClient(lakeFile);
+    await client.execute(`
+      CREATE TABLE IF NOT EXISTS subscribers (
+        id TEXT PRIMARY KEY,
+        email TEXT UNIQUE NOT NULL,
+        language TEXT DEFAULT 'en',
+        visitor_id TEXT,
+        scripture_preference TEXT DEFAULT 'all',
+        status TEXT DEFAULT 'active',
+        created_at TEXT NOT NULL
+      )
+    `);
+    const res = await client.execute("SELECT count(*) as count FROM subscribers WHERE status = 'active'");
+    if (res.rows.length > 0) {
+      return Number(res.rows[0].count) || 0;
+    }
+    return 0;
+  } catch (err) {
+    console.error('SERVER LAKE: Error fetching subscriber count', err);
+    return 0;
+  }
+}
+

@@ -27,7 +27,7 @@
     "strip": "node scripts/strip_placeholders.js",
     "prepare": "git config core.hooksPath .githooks",
     "postinstall": "node scripts/patch_jest_glob.js",
-    "verify": "npm run lint && npx tsc --noEmit && npm test -- --ci"
+    "verify": "npm run lint && npx tsc --noEmit && npm test -- --ci --maxWorkers=50%"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
