@@ -103,6 +103,11 @@ describe('StudyClient (Reading Canvas & Empirical Knowledge Integration)', () =>
     expect(screen.getByText(/Vaidika Vijñāna • Empirical Insight/i)).toBeInTheDocument()
     expect(screen.getByText(/Universal Knowledge Hub/i)).toBeInTheDocument()
     expect(screen.getByText(/Dietary Gunas/i)).toBeInTheDocument()
+
+    // Explicitly verify domainLabel, title, and ancientObservation
+    expect(screen.getByText('Ayurveda & Nutritional Energetics')).toBeInTheDocument() // domainLabel
+    expect(screen.getByText('Biochemical Impact of the Three Dietary Gunas')).toBeInTheDocument() // title
+    expect(screen.getByText('Krishna categorizes dietary intake into Sattvic (juicy, wholesome, nutrient-dense foods promoting vitality and clear cognition), Rajasic (overly salty, spicy, pungent foods provoking inflammation, stress, and disease), and Tamasic (stale, overcooked, processed, putrid foods inducing lethargy, depression, and metabolic stagnation).')).toBeInTheDocument() // ancientObservation
   })
 
   it('allows selecting scholar perspective and toggling perspectives', () => {

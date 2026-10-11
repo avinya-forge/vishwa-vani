@@ -219,8 +219,8 @@ export class VedicDataService {
         uiMetadata: {
           readingTime: this.calculateReadingTime(verse as Record<string, unknown>),
           complexityScore: this.calculateComplexity(verse as Record<string, unknown>),
-          hasCommentary: ((v.layers as Record<string, unknown>[]) || []).some((l: unknown) => (l as Record<string, unknown>).type === 'commentary'),
-          languageCount: this.countLanguages((v.layers as Record<string, unknown>[]) || [])
+          hasCommentary: (Array.isArray(v.layers) ? v.layers : []).some((l: unknown) => (l as Record<string, unknown>)?.type === 'commentary'),
+          languageCount: this.countLanguages(Array.isArray(v.layers) ? v.layers : [])
         }
       };
 
@@ -267,6 +267,8 @@ export class VedicDataService {
 
   // Prunes layers to enforce the 2-author limit (Lean UI principle)
   private pruneLayersToTwoAuthors(layers: Record<string, unknown>[]): NVFLayer[] {
+    if (!layers || !Array.isArray(layers)) return [];
+
     const allowedAuthors = new Set<string>();
     const prunedLayers: NVFLayer[] = [];
 
@@ -289,8 +291,9 @@ export class VedicDataService {
 
   // Helper methods for AI enrichment
   private calculateReadingTime(verse: Record<string, unknown>): number {
+    const layers = Array.isArray(verse.layers) ? verse.layers : [];
     const text = String(verse.original || '') + String(verse.transliteration || '') +
-                 ((verse.layers as Record<string, unknown>[]) || []).map((l: unknown) => (l as Record<string, unknown>).content || '').join('');
+                 layers.map((l: unknown) => (l as Record<string, unknown>)?.content || '').join('');
     return Math.max(1, Math.ceil(String(text).length / 200)); // Rough estimate: 200 chars per minute
   }
 
@@ -309,7 +312,8 @@ export class VedicDataService {
 
   private extractThemes(verse: Record<string, unknown>): string[] {
     const themes: string[] = [];
-    const text = ((verse.original || '') + ' ' + ((verse.layers as Record<string, unknown>[]) || []).map((l: unknown) => (l as Record<string, unknown>).content).join(' ')).toLowerCase();
+    const layers = Array.isArray(verse.layers) ? verse.layers : [];
+    const text = ((verse.original || '') + ' ' + layers.map((l: unknown) => (l as Record<string, unknown>)?.content || '').join(' ')).toLowerCase();
 
     if (text.includes('dharma') || text.includes('धर्म')) themes.push('Dharma');
     if (text.includes('karma') || text.includes('कर्म')) themes.push('Karma');
