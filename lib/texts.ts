@@ -1109,6 +1109,17 @@ export function isTextCompleted(slug: string): boolean {
   return false;
 }
 
+/** Dynamically register or update a Vedic text in runtime library */
+export function registerVedicText(text: VedicText, readinessScore = 100): void {
+  const existingIdx = VEDIC_LIBRARY.findIndex(t => t.slug === text.slug);
+  if (existingIdx >= 0) {
+    VEDIC_LIBRARY[existingIdx] = text;
+  } else {
+    VEDIC_LIBRARY.push(text);
+  }
+  SCRIPTURE_READINESS_SCORES[text.slug] = readinessScore;
+}
+
 /** Get a text by its URL slug */
 export function getTextBySlug(slug: string): VedicText | undefined {
   const text = VEDIC_LIBRARY.find(t => t.slug === slug);

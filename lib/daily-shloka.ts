@@ -598,6 +598,18 @@ export const ALL_WISDOM_CORPUS: DailyVerse[] = [
 ]
 
 /**
+ * Dynamically registers or updates a signature verse in the wisdom corpus at runtime.
+ */
+export function registerDailyVerse(verse: DailyVerse): void {
+  const existingIdx = ALL_WISDOM_CORPUS.findIndex(v => v.id === verse.id);
+  if (existingIdx >= 0) {
+    ALL_WISDOM_CORPUS[existingIdx] = verse;
+  } else {
+    ALL_WISDOM_CORPUS.push(verse);
+  }
+}
+
+/**
  * Get active daily shlokas filtered strictly by whether the scripture is 100% completed.
  * This guarantees that as new books graduate to 100% Gold, they automatically activate in rotation.
  */

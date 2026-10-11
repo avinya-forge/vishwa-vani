@@ -558,6 +558,20 @@ export const VEDIC_KNOWLEDGE_TOKENS: EmpiricalKnowledgeToken[] = [
 ]
 
 /**
+ * Dynamically registers or updates empirical knowledge tokens at runtime.
+ */
+export function registerKnowledgeTokens(tokens: EmpiricalKnowledgeToken[]): void {
+  for (const token of tokens) {
+    const existingIdx = VEDIC_KNOWLEDGE_TOKENS.findIndex(t => t.id === token.id);
+    if (existingIdx >= 0) {
+      VEDIC_KNOWLEDGE_TOKENS[existingIdx] = token;
+    } else {
+      VEDIC_KNOWLEDGE_TOKENS.push(token);
+    }
+  }
+}
+
+/**
  * Retrieves all extracted empirical knowledge tokens.
  */
 export function getAllKnowledgeTokens(): EmpiricalKnowledgeToken[] {

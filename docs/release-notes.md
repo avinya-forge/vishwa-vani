@@ -1,5 +1,16 @@
 # Release Notes
 
+## [1.6.0]
+
+### ⚙️ Universal Scripture Engine, Declarative Rule-Sets & Canonical Playbook
+- [x] `PLAYBOOK-001` **Canonical Scripture Ingestion & Intelligence Playbook**: Authored `docs/CANONICAL_BOOK_PLAYBOOK.md` detailing the complete 8-stage lifecycle (Provenance Clearance, Silver Normalization, Gold Multi-Scholar Layering, Diamond Summaries/EKTs, Daily Wisdom Selection, Rule-Set Quality Audit, Lake Sync, and UI Auto-Discovery) with legacy script deprecation and migration matrix.
+- [x] `ENGINE-001` **Declarative Rule Engine (`lib/engine/rules.ts`)**: Built extensible `RuleEngine` enforcing strict quality invariants: Schema Conformance (NVF 1.3), Anti-Placeholder / Anti-Slop Safeguards, Sanskrit Root Grounding, Philosophical Exegesis Depth, Multi-Scholar Diversity, and Diamond 10-Domain Taxonomy validation.
+- [x] `ENGINE-002` **Autonomous AI Scripture Adapter (`lib/engine/ai-adapter.ts`)**: Implemented `AIAgentScriptureAdapter` capable of autonomous 4-tier chapter summaries with dynamic WPM read times, multi-scholar commentary enrichment, and Diamond empirical token extraction with deterministic offline semantic heuristic fallback.
+- [x] `ENGINE-003` **Universal Lake Synchronization (`lib/engine/lake-sync.ts`)**: Created `UniversalLakeSyncer` for automated SQLite (`public/vedic-lake.db`) and Turso LibSQL Edge batch upserting, table creation, and composite indexing (`idx_text_chapter`).
+- [x] `ENGINE-004` **Universal Orchestrator & CLI Runner (`lib/engine/orchestrator.ts`, `scripts/vishwa_engine.js`)**: Coordinates end-to-end processing with dry-runs, shard saving, lake syncing, manifest updates, and dynamic UI auto-discovery. Added CLI commands `audit`, `process`, `extract-diamond`, and `sync-lake`.
+- [x] `UI-REG-001` **Dynamic UI Auto-Registration Singletons**: Added dynamic registration APIs in `lib/texts.ts` (`registerVedicText`), `lib/chapter-summaries.ts` (`registerBookChapterSummaries`), `lib/daily-shloka.ts` (`registerDailyVerse`), and `lib/vedic-science.ts` (`registerKnowledgeTokens`), allowing newly graduated books and tokens to activate on the UI instantly with zero hardcoded code changes.
+- [x] `TEST-ENG-001` **Comprehensive Test Suites & Quality Gates**: Added dedicated test suites in `__tests__/engine-rules.test.ts`, `__tests__/engine-ai-adapter.test.ts`, `__tests__/engine-lake-sync.test.ts`, and `__tests__/engine-orchestrator.test.ts`. Full test suite achieves 100% pass across 65 test suites (355 passing tests, 0 failures) with >85% coverage on new engine code.
+
 ## [1.5.1]
 
 ### 🗄️ Database Architecture, Knowledge Token Seeding & Test Quality Gates

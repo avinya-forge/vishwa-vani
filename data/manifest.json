@@ -1081,7 +1081,12 @@
       },
       "total_chapters": 20,
       "total_verses": 20,
-      "languages": ["mr", "en", "hi", "sa"],
+      "languages": [
+        "mr",
+        "en",
+        "hi",
+        "sa"
+      ],
       "authors": [
         {
           "id": "samarth-ramdas",
@@ -1091,26 +1096,106 @@
         }
       ],
       "chapters": [
-        {"number": 1, "file": "dasbodh-chapter-1.json", "verse_count": 1},
-        {"number": 2, "file": "dasbodh-chapter-2.json", "verse_count": 1},
-        {"number": 3, "file": "dasbodh-chapter-3.json", "verse_count": 1},
-        {"number": 4, "file": "dasbodh-chapter-4.json", "verse_count": 1},
-        {"number": 5, "file": "dasbodh-chapter-5.json", "verse_count": 1},
-        {"number": 6, "file": "dasbodh-chapter-6.json", "verse_count": 1},
-        {"number": 7, "file": "dasbodh-chapter-7.json", "verse_count": 1},
-        {"number": 8, "file": "dasbodh-chapter-8.json", "verse_count": 1},
-        {"number": 9, "file": "dasbodh-chapter-9.json", "verse_count": 1},
-        {"number": 10, "file": "dasbodh-chapter-10.json", "verse_count": 1},
-        {"number": 11, "file": "dasbodh-chapter-11.json", "verse_count": 1},
-        {"number": 12, "file": "dasbodh-chapter-12.json", "verse_count": 1},
-        {"number": 13, "file": "dasbodh-chapter-13.json", "verse_count": 1},
-        {"number": 14, "file": "dasbodh-chapter-14.json", "verse_count": 1},
-        {"number": 15, "file": "dasbodh-chapter-15.json", "verse_count": 1},
-        {"number": 16, "file": "dasbodh-chapter-16.json", "verse_count": 1},
-        {"number": 17, "file": "dasbodh-chapter-17.json", "verse_count": 1},
-        {"number": 18, "file": "dasbodh-chapter-18.json", "verse_count": 1},
-        {"number": 19, "file": "dasbodh-chapter-19.json", "verse_count": 1},
-        {"number": 20, "file": "dasbodh-chapter-20.json", "verse_count": 1}
+        {
+          "number": 1,
+          "file": "dasbodh-chapter-1.json",
+          "verse_count": 1
+        },
+        {
+          "number": 2,
+          "file": "dasbodh-chapter-2.json",
+          "verse_count": 1
+        },
+        {
+          "number": 3,
+          "file": "dasbodh-chapter-3.json",
+          "verse_count": 1
+        },
+        {
+          "number": 4,
+          "file": "dasbodh-chapter-4.json",
+          "verse_count": 1
+        },
+        {
+          "number": 5,
+          "file": "dasbodh-chapter-5.json",
+          "verse_count": 1
+        },
+        {
+          "number": 6,
+          "file": "dasbodh-chapter-6.json",
+          "verse_count": 1
+        },
+        {
+          "number": 7,
+          "file": "dasbodh-chapter-7.json",
+          "verse_count": 1
+        },
+        {
+          "number": 8,
+          "file": "dasbodh-chapter-8.json",
+          "verse_count": 1
+        },
+        {
+          "number": 9,
+          "file": "dasbodh-chapter-9.json",
+          "verse_count": 1
+        },
+        {
+          "number": 10,
+          "file": "dasbodh-chapter-10.json",
+          "verse_count": 1
+        },
+        {
+          "number": 11,
+          "file": "dasbodh-chapter-11.json",
+          "verse_count": 1
+        },
+        {
+          "number": 12,
+          "file": "dasbodh-chapter-12.json",
+          "verse_count": 1
+        },
+        {
+          "number": 13,
+          "file": "dasbodh-chapter-13.json",
+          "verse_count": 1
+        },
+        {
+          "number": 14,
+          "file": "dasbodh-chapter-14.json",
+          "verse_count": 1
+        },
+        {
+          "number": 15,
+          "file": "dasbodh-chapter-15.json",
+          "verse_count": 1
+        },
+        {
+          "number": 16,
+          "file": "dasbodh-chapter-16.json",
+          "verse_count": 1
+        },
+        {
+          "number": 17,
+          "file": "dasbodh-chapter-17.json",
+          "verse_count": 1
+        },
+        {
+          "number": 18,
+          "file": "dasbodh-chapter-18.json",
+          "verse_count": 1
+        },
+        {
+          "number": 19,
+          "file": "dasbodh-chapter-19.json",
+          "verse_count": 1
+        },
+        {
+          "number": 20,
+          "file": "dasbodh-chapter-20.json",
+          "verse_count": 1
+        }
       ],
       "completeness_score": 100,
       "status": "GOLD",
@@ -1126,7 +1211,12 @@
       },
       "total_chapters": 7,
       "total_verses": 7,
-      "languages": ["sa", "en", "hi", "mr"],
+      "languages": [
+        "sa",
+        "en",
+        "hi",
+        "mr"
+      ],
       "authors": [
         {
           "id": "gv-tagare",
@@ -1136,14 +1226,56 @@
         }
       ],
       "chapters": [
-        {"number": 1, "file": "skanda-purana-chapter-1.json", "verse_count": 1},
-        {"number": 2, "file": "skanda-purana-chapter-2.json", "verse_count": 1},
-        {"number": 3, "file": "skanda-purana-chapter-3.json", "verse_count": 1},
-        {"number": 4, "file": "skanda-purana-chapter-4.json", "verse_count": 1},
-        {"number": 5, "file": "skanda-purana-chapter-5.json", "verse_count": 1},
-        {"number": 6, "file": "skanda-purana-chapter-6.json", "verse_count": 1},
-        {"number": 7, "file": "skanda-purana-chapter-7.json", "verse_count": 1}
+        {
+          "number": 1,
+          "file": "skanda-purana-chapter-1.json",
+          "verse_count": 1
+        },
+        {
+          "number": 2,
+          "file": "skanda-purana-chapter-2.json",
+          "verse_count": 1
+        },
+        {
+          "number": 3,
+          "file": "skanda-purana-chapter-3.json",
+          "verse_count": 1
+        },
+        {
+          "number": 4,
+          "file": "skanda-purana-chapter-4.json",
+          "verse_count": 1
+        },
+        {
+          "number": 5,
+          "file": "skanda-purana-chapter-5.json",
+          "verse_count": 1
+        },
+        {
+          "number": 6,
+          "file": "skanda-purana-chapter-6.json",
+          "verse_count": 1
+        },
+        {
+          "number": 7,
+          "file": "skanda-purana-chapter-7.json",
+          "verse_count": 1
+        }
       ],
+      "completeness_score": 100,
+      "status": "GOLD",
+      "last_promoted": "2026-10-11"
+    },
+    {
+      "book_id": "mandukya-upanishad",
+      "title": {
+        "en": "Mandukya Upanishad",
+        "hi": "माण्डूक्योपनिषद्",
+        "mr": "माण्डूक्योपनिषद्",
+        "sa": "माण्डूक्योपनिषद्"
+      },
+      "total_chapters": 1,
+      "total_verses": 2,
       "completeness_score": 100,
       "status": "GOLD",
       "last_promoted": "2026-10-11"

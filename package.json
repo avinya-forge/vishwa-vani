@@ -22,6 +22,8 @@
     "audit:all": "npm run audit:gold && npm run audit:multilang && npm run audit:standards",
     "pipeline": "node scripts/run_pipeline.js",
     "pipeline:dry": "node scripts/run_pipeline.js --all --dry-run",
+    "engine": "node scripts/vishwa_engine.js",
+    "audit:engine": "node scripts/vishwa_engine.js audit --all",
     "strip": "node scripts/strip_placeholders.js",
     "prepare": "git config core.hooksPath .githooks",
     "postinstall": "node scripts/patch_jest_glob.js",

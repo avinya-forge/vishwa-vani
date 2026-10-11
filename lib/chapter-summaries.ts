@@ -566,6 +566,13 @@ export function getChapterSummariesBySlug(slug: string): BookChapterSummaries | 
 }
 
 /**
+ * Dynamically registers or updates chapter summaries for a scripture at runtime.
+ */
+export function registerBookChapterSummaries(summaries: BookChapterSummaries): void {
+  CHAPTER_SUMMARIES_REGISTRY[summaries.bookSlug] = summaries;
+}
+
+/**
  * Lists all scriptures with available chapter summaries.
  */
 export function getAllChapterSummaries(): BookChapterSummaries[] {
