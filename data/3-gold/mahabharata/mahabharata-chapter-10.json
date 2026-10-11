@@ -1,0 +1,40 @@
+[
+  {
+    "id": "mahabharata_10_1",
+    "text_slug": "mahabharata",
+    "chapter": 10,
+    "verse": 1,
+    "original": "रात्रौ प्रसुप्तं शिबिरं पाण्डवानां दुरासदम् ।\nप्रविश्य द्रोणपुत्रेण कृतं संकदनं महत् ॥",
+    "sanskrit": "रात्रौ प्रसुप्तं शिबिरं पाण्डवानां दुरासदम् ।\nप्रविश्य द्रोणपुत्रेण कृतं संकदनं महत् ॥",
+    "transliteration": "rātrau prasuptaṃ śibiraṃ pāṇḍavānāṃ durāsadam |\npraviśya droṇaputreṇa kṛtaṃ saṃkadanaṃ mahat ||",
+    "translation": "Entering the slumbering camp of the Pandavas in the dead of night, Ashwatthama wrought terrible devastation.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "रात्रि में जब पाण्डव शिविर सो रहा था, तब द्रोणपुत्र अश्वत्थामा ने प्रवेश कर भीषण संहार किया।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "रात्रीच्या वेळी जेव्हा पांडव छावणी निद्रिस्त होती, तेव्हा द्रोणपुत्र अश्वत्थाम्याने प्रवेश करून भयानक संहार केला."
+      },
+      {
+        "type": "commentary",
+        "author": "km_ganguli",
+        "author_name": "Kisari Mohan Ganguli",
+        "lang": "en",
+        "content": "Sauptika Parva explores the tragic moral breakdown that follows desperate vengeance, leading to the curse upon Ashwatthama."
+      },
+      {
+        "type": "commentary",
+        "author": "nilakantha",
+        "author_name": "Nilakantha Chaturdhara",
+        "lang": "en",
+        "content": "Symbolizes how uncontrolled anger destroys even the victorious when righteous restraints are abandoned."
+      }
+    ]
+  }
+]

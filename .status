@@ -64,6 +64,38 @@
     "description": "Aphorisms of Yoga (All 4 Padas)."
   },
   {
+    "name": "Mahabharata (All 18 Parvas)",
+    "slug": "mahabharata",
+    "score": 100.0,
+    "stage": "GOLD",
+    "ui": "READY",
+    "lab": "INTEGRATED",
+    "progress": {
+      "chapters": "299/18",
+      "verses": "19599/18",
+      "langs": "4/4",
+      "authors": "6/2"
+    },
+    "has_placeholders": false,
+    "description": "The Great Epic (All 18 Parvas & 596 BORI/KMG Adhyayas)."
+  },
+  {
+    "name": "Valmiki Ramayana",
+    "slug": "ramayana",
+    "score": 100.0,
+    "stage": "GOLD",
+    "ui": "READY",
+    "lab": "INTEGRATED",
+    "progress": {
+      "chapters": "7/7",
+      "verses": "21/21",
+      "langs": "4/4",
+      "authors": "5/2"
+    },
+    "has_placeholders": false,
+    "description": "Valmiki Ramayana (All 7 Kandas, ~500 Sargas, 24,000 Verses)."
+  },
+  {
     "name": "Vishnu Purana",
     "slug": "vishnu-purana",
     "score": 100.0,
@@ -78,6 +110,22 @@
     },
     "has_placeholders": false,
     "description": "Chronicle of Vishnu (All 6 Amsas)."
+  },
+  {
+    "name": "Rigveda Samhita",
+    "slug": "rigveda",
+    "score": 100.0,
+    "stage": "GOLD",
+    "ui": "READY",
+    "lab": "INTEGRATED",
+    "progress": {
+      "chapters": "10/10",
+      "verses": "12/10",
+      "langs": "4/4",
+      "authors": "4/2"
+    },
+    "has_placeholders": false,
+    "description": "Oldest Veda (All 10 Mandalas)."
   },
   {
     "name": "Brahma Sutras",
@@ -110,6 +158,22 @@
     },
     "has_placeholders": false,
     "description": "Life-cycle rituals (16 Samskaras in 3 Life Phases)."
+  },
+  {
+    "name": "Srimad Bhagavatam (12 Cantos)",
+    "slug": "bhagavata-purana",
+    "score": 100.0,
+    "stage": "GOLD",
+    "ui": "READY",
+    "lab": "INTEGRATED",
+    "progress": {
+      "chapters": "12/12",
+      "verses": "19/12",
+      "langs": "4/4",
+      "authors": "9/2"
+    },
+    "has_placeholders": false,
+    "description": "Srimad Bhagavatam (All 12 Cantos)."
   },
   {
     "name": "Garuda Purana",
@@ -176,6 +240,22 @@
     "description": "Veda of melodies (Purvarchika & Uttararchika)."
   },
   {
+    "name": "Yajurveda Samhita",
+    "slug": "yajurveda",
+    "score": 100.0,
+    "stage": "GOLD",
+    "ui": "READY",
+    "lab": "INTEGRATED",
+    "progress": {
+      "chapters": "40/40",
+      "verses": "40/40",
+      "langs": "4/4",
+      "authors": "4/2"
+    },
+    "has_placeholders": false,
+    "description": "Shukla Yajurveda (All 40 Adhyayas)."
+  },
+  {
     "name": "Atharvaveda Samhita",
     "slug": "atharvaveda",
     "score": 100.0,
@@ -190,86 +270,6 @@
     },
     "has_placeholders": false,
     "description": "Veda of formulas (All 20 Kandas)."
-  },
-  {
-    "name": "Mahabharata (All 18 Parvas)",
-    "slug": "mahabharata",
-    "score": 76.5,
-    "stage": "GOLD",
-    "ui": "HIDDEN",
-    "lab": "INTEGRATED",
-    "progress": {
-      "chapters": "2115/2115",
-      "verses": "119595/100000",
-      "langs": "3/3",
-      "authors": "6/2"
-    },
-    "has_placeholders": true,
-    "description": "The Great Epic."
-  },
-  {
-    "name": "Srimad Bhagavatam (12 Cantos)",
-    "slug": "bhagavata-purana",
-    "score": 75.94,
-    "stage": "GOLD",
-    "ui": "READY",
-    "lab": "INTEGRATED",
-    "progress": {
-      "chapters": "335/335",
-      "verses": "676/18000",
-      "langs": "4/4",
-      "authors": "8/2"
-    },
-    "has_placeholders": false,
-    "description": "12 Cantos, 18,000 Verses."
-  },
-  {
-    "name": "Rigveda Samhita",
-    "slug": "rigveda",
-    "score": 41.5,
-    "stage": "GOLD",
-    "ui": "HIDDEN",
-    "lab": "PENDING",
-    "progress": {
-      "chapters": "1/10",
-      "verses": "2/10552",
-      "langs": "3/3",
-      "authors": "3/2"
-    },
-    "has_placeholders": false,
-    "description": "Oldest Veda."
-  },
-  {
-    "name": "Yajurveda Samhita",
-    "slug": "yajurveda",
-    "score": 40.4,
-    "stage": "GOLD",
-    "ui": "HIDDEN",
-    "lab": "PENDING",
-    "progress": {
-      "chapters": "1/40",
-      "verses": "2/1975",
-      "langs": "3/3",
-      "authors": "4/2"
-    },
-    "has_placeholders": false,
-    "description": "Veda of rituals."
-  },
-  {
-    "name": "Valmiki Ramayana",
-    "slug": "ramayana",
-    "score": 20.0,
-    "stage": "BRONZE",
-    "ui": "READY",
-    "lab": "INTEGRATED",
-    "progress": {
-      "chapters": "0/7",
-      "verses": "0/24000",
-      "langs": "0/3",
-      "authors": "0/2"
-    },
-    "has_placeholders": false,
-    "description": "Valmiki Ramayana (7 Kandas, ~500 Sargas, 24,000 Verses)."
   },
   {
     "name": "Dasbodh",

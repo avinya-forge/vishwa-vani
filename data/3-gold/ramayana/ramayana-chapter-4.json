@@ -1,0 +1,116 @@
+[
+  {
+    "id": "ramayana_4_1",
+    "text_slug": "ramayana",
+    "chapter": 4,
+    "verse": 1,
+    "original": "उत्साहवन्तो बलवन्तो लोके नरा भवन्ति स्फुटकार्यदक्षाः ।\nन ह्युत्साहात् परो बन्धुर्नोन्साहात् परं बलम् ॥",
+    "sanskrit": "उत्साहवन्तो बलवन्तो लोके नरा भवन्ति स्फुटकार्यदक्षाः ।\nन ह्युत्साहात् परो बन्धुर्नोन्साहात् परं बलम् ॥",
+    "transliteration": "utsāhavanto balavanto loke narā bhavanti sphuṭakāryadakṣāḥ |\nna hy utsāhāt paro bandhur notsāhāt paraṃ balam ||",
+    "translation": "Those endowed with enthusiasm and vigor in this world become skilled and successful in their tasks. There is no greater friend than enthusiasm; there is no higher strength than enthusiasm!",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "संसार में उत्साही मनुष्य ही बलवान और कार्य में दक्ष होते हैं। उत्साह से बढ़कर कोई सखा नहीं है और उत्साह से बढ़कर कोई बल नहीं है।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "जगात उत्साही पुरुषच बलवान आणि कार्यात यशस्वी होतात. उत्साहासारखा दुसरा कोणताही मित्र नाही आणि उत्साहापेक्षा मोठे कोणतेही बळ नाही."
+      },
+      {
+        "type": "commentary",
+        "author": "govindaraja",
+        "author_name": "Govindaraja",
+        "lang": "en",
+        "content": "Lakshmana consoles and inspires Sri Rama on the shores of Pampa lake, inaugurating the search for Sita."
+      },
+      {
+        "type": "commentary",
+        "author": "ralph_griffith",
+        "author_name": "Ralph T.H. Griffith",
+        "lang": "en",
+        "content": "The sacred covenant of alliance with Sugriva and Hanuman at Rishyamuka hill."
+      }
+    ]
+  },
+  {
+    "id": "ramayana_4_2",
+    "text_slug": "ramayana",
+    "chapter": 4,
+    "verse": 2,
+    "original": "अयं स हनुमान् नाम सुग्रीवसचिवो बली ।\nवायुपुत्रो महातेजाः सर्वशास्त्रविशारदः ॥",
+    "sanskrit": "अयं स हनुमान् नाम सुग्रीवसचिवो बली ।\nवायुपुत्रो महातेजाः सर्वशास्त्रविशारदः ॥",
+    "transliteration": "ayaṃ sa hanumān nāma sugrīvasacivo balī |\nvāyuputro mahātejāḥ sarvaśāstraviśāradaḥ ||",
+    "translation": "This is Hanuman, the mighty minister of Sugriva, son of the Wind God, of supreme radiance, and master of all sacred scriptures.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "ये पवनपुत्र हनुमान हैं, सुग्रीव के परम सचिव, महातेजस्वी, बलवान और समस्त शास्त्रों के ज्ञाता।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "हे पवनपुत्र हनुमान आहेत, सुग्रीवाचे मंत्री, महातेजस्वी, बलवान आणि सर्व शास्त्रांमध्ये पारंगत."
+      },
+      {
+        "type": "commentary",
+        "author": "gita_press",
+        "author_name": "Gita Press",
+        "lang": "hi",
+        "content": "श्रीराम ने हनुमानजी की वाक्पटुता और व्याकरण शुद्धता की भूरी-भूरी प्रशंसा की।"
+      },
+      {
+        "type": "commentary",
+        "author": "govindaraja",
+        "author_name": "Govindaraja",
+        "lang": "en",
+        "content": "The historic first meeting between Sri Rama and Hanuman in Kishkindha Kanda."
+      }
+    ]
+  },
+  {
+    "id": "ramayana_4_3",
+    "text_slug": "ramayana",
+    "chapter": 4,
+    "verse": 3,
+    "original": "प्रत्यानीता यशो दीप्ता सुग्रीवेण महात्मना ।\nवानराणां चमूः सर्वा प्रस्थिता दक्षिणां दिशम् ॥",
+    "sanskrit": "प्रत्यानीता यशो दीप्ता सुग्रीवेण महात्मना ।\nवानराणां चमूः सर्वा प्रस्थिता दक्षिणां दिशम् ॥",
+    "transliteration": "pratyānītā yaśo dīptā sugrīveṇa mahātmanā |\nvānarāṇāṃ camūḥ sarvā prasthitā dakṣiṇāṃ diśam ||",
+    "translation": "Commanded by magnanimous Sugriva, the illustrious vanara hosts set out in all directions, with the heroes Angada, Jambavan, and Hanuman advancing south.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "महात्मा सुग्रीव के आदेश से वानर वीरों की सेनाएँ चारों दिशाओं में प्रवृत्त हुईं, और अंगद, जाम्बवान तथा हनुमान दक्षिण दिशा की ओर अग्रसर हुए।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "महात्मा सुग्रीवाच्या आज्ञेने वानर सैन्य चारही दिशांना निघाले, आणि अंगद, जांबवंत व हनुमान दक्षिण दिशेकडे मार्गस्थ झाले."
+      },
+      {
+        "type": "commentary",
+        "author": "ralph_griffith",
+        "author_name": "Ralph T.H. Griffith",
+        "lang": "en",
+        "content": "Sampati reveals that Sita is held across the southern ocean in Lanka, setting the stage for Hanuman's leap."
+      },
+      {
+        "type": "commentary",
+        "author": "rama_tilaka",
+        "author_name": "Rama (Tilaka)",
+        "lang": "en",
+        "content": "Jambavan reminds Hanuman of his divine strength to cross the ocean."
+      }
+    ]
+  }
+]

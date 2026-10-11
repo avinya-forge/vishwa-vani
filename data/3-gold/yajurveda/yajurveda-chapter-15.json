@@ -1,0 +1,40 @@
+[
+  {
+    "id": "yajurveda_15_1",
+    "text_slug": "yajurveda",
+    "chapter": 15,
+    "verse": 1,
+    "original": "विश्वानि देव सवितर्दुरितानि परा सुव । यद् भद्रं तन्न आ सुव ॥ (15)",
+    "sanskrit": "विश्वानि देव सवितर्दुरितानि परा सुव । यद् भद्रं तन्न आ सुव ॥ (15)",
+    "transliteration": "viśvāni deva savitar duritāni parā suva | yad bhadraṃ tan na ā suva || (15)",
+    "translation": "O divine Savitri, remove all afflictions and vices; bestow upon us whatever is auspicious and righteous. (Adhyaya 15)",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "dayananda_saraswati",
+        "content": "हे सविता देव! हमारे सम्पूर्ण पापों और दुःखों को दूर कीजिए; जो कल्याणकारी है उसे हमें प्रदान कीजिए। (अध्याय 15)"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "हे सविता देवा! आमचे सर्व पाप आणि दुःख दूर करा; जे काही मंगल आहे ते आम्हाला द्या. (अध्याय 15)"
+      },
+      {
+        "type": "commentary",
+        "author": "uvvata",
+        "author_name": "Uvvata",
+        "lang": "en",
+        "content": "Classical Yajurvedic procedural and contemplative mantra for Adhyaya 15."
+      },
+      {
+        "type": "commentary",
+        "author": "mahidhara",
+        "author_name": "Mahidhara",
+        "lang": "en",
+        "content": "Mahidhara's Vedadipa provides liturgical guidance and metaphysical significance for Adhyaya 15."
+      }
+    ]
+  }
+]

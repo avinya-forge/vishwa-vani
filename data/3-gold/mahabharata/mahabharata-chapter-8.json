@@ -1,0 +1,40 @@
+[
+  {
+    "id": "mahabharata_8_1",
+    "text_slug": "mahabharata",
+    "chapter": 8,
+    "verse": 1,
+    "original": "कर्णः सेनापतिर्भूत्वा कौरवाणामरिंदमः ।\nयुयुधे पाण्डवैः सार्धं दर्शयन् वीर्यमुत्तमम् ॥",
+    "sanskrit": "कर्णः सेनापतिर्भूत्वा कौरवाणामरिंदमः ।\nयुयुधे पाण्डवैः सार्धं दर्शयन् वीर्यमुत्तमम् ॥",
+    "transliteration": "karṇaḥ senāpatir bhūtvā kauravāṇām ariṃdamaḥ |\nyuyudhe pāṇḍavaiḥ sārdhaṃ darśayan vīryam uttamam ||",
+    "translation": "Karna, the vanquisher of foes, assumed leadership of the Kaurava army and engaged the Pandavas, exhibiting consummate archery and valor.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "शत्रुदमन कर्ण कौरवों के सेनापति बने और उन्होंने अद्वितीय पराक्रम प्रदर्शित करते हुए पाण्डवों के साथ भीषण संग्राम किया।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "शत्रूंचे दमन करणारे कर्ण कौरवांचे सेनापती झाले आणि त्यांनी अतुलनीय पराक्रम गाजवत पांडवांशी घनघोर युद्ध केले."
+      },
+      {
+        "type": "commentary",
+        "author": "km_ganguli",
+        "author_name": "Kisari Mohan Ganguli",
+        "lang": "en",
+        "content": "Karna Parva culminates in the climactic single combat between Arjuna and Karna on the seventeenth day."
+      },
+      {
+        "type": "commentary",
+        "author": "nilakantha",
+        "author_name": "Nilakantha Chaturdhara",
+        "lang": "en",
+        "content": "Nilakantha highlights Karna's tragic nobility and steadfast adherence to his friendship with Duryodhana despite divine warnings."
+      }
+    ]
+  }
+]

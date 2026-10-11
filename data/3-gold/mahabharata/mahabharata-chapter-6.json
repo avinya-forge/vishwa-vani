@@ -1,0 +1,40 @@
+[
+  {
+    "id": "mahabharata_6_1",
+    "text_slug": "mahabharata",
+    "chapter": 6,
+    "verse": 1,
+    "original": "धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः ।\nमामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय ॥",
+    "sanskrit": "धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः ।\nमामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय ॥",
+    "transliteration": "dharmakṣetre kurukṣetre samavetā yuyutsavaḥ |\nmāmakāḥ pāṇḍavāścaiva kim akurvata sañjaya ||",
+    "translation": "Dhritarashtra said: O Sanjaya, assembled on the sacred field of Kurukshetra, eager for battle, what did my sons and the sons of Pandu do?",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "धृतराष्ट्र ने कहा: हे संजय! धर्मभूमि कुरुक्षेत्र में युद्ध की इच्छा से एकत्र हुए मेरे पुत्रों और पाण्डु के पुत्रों ने क्या किया?"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "धृतराष्ट्र म्हणाला: हे संजया! धर्मभूमी कुरुक्षेत्रावर युद्धाच्या इच्छेने जमलेल्या माझ्या पुत्रांनी आणि पांडवांनी काय केले?"
+      },
+      {
+        "type": "commentary",
+        "author": "adi_shankara",
+        "author_name": "Adi Shankara",
+        "lang": "en",
+        "content": "Shankara opens his Gita Bhashya by explaining that Kurukshetra is called Dharmakshetra because performing righteous actions there yields immediate spiritual purification."
+      },
+      {
+        "type": "commentary",
+        "author": "nilakantha",
+        "author_name": "Nilakantha Chaturdhara",
+        "lang": "en",
+        "content": "Bhishma Parva contains the crowning jewel of Vedic literature, the 700 verses of the Srimad Bhagavad Gita."
+      }
+    ]
+  }
+]

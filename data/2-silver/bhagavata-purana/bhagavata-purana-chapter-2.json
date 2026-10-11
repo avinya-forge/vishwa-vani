@@ -1,1 +1,40 @@
-[{"verse": 1, "sanskrit": "Om namo bhagavate vasudevaya 2.1", "transliteration": "Om namo bhagavate vasudevaya 2.1", "translation": "English translation for 2.1"}, {"verse": 2, "sanskrit": "Om namo bhagavate vasudevaya 2.2", "transliteration": "Om namo bhagavate vasudevaya 2.2", "translation": "English translation for 2.2"}]
+[
+  {
+    "id": "bhagavata-purana_2_1",
+    "text_slug": "bhagavata-purana",
+    "chapter": 2,
+    "verse": 1,
+    "original": "अहमेवासमेवाग्रे नान्यद् यत् सदसत् परम् ।\nपश्चादहं यदेतच्च योऽवशिष्येत सोऽस्म्यहम् ॥",
+    "sanskrit": "अहमेवासमेवाग्रे नान्यद् यत् सदसत् परम् ।\nपश्चादहं यदेतच्च योऽवशिष्येत सोऽस्म्यहम् ॥",
+    "transliteration": "aham evāsam evāgre nānyad yat sad-asat param |\npaścād ahaṃ yad etac ca yo 'vaśiṣyeta so 'smy aham ||",
+    "translation": "Brahma, it is I, the Supreme Personality of Godhead, who was existing before the creation, when there was nothing but Myself. Nor was there the material nature, the cause of this creation. That which you see now is also I, and after annihilation what remains will also be I.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "सृष्टि से पूर्व केवल मैं ही था, मेरे अतिरिक्त स्थूल, सूक्ष्म या कारण कुछ नहीं था। सृष्टि के पश्चात भी जो कुछ है वह मैं ही हूँ, और प्रलय के पश्चात जो शेष रहेगा वह भी मैं ही हूँ।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "sant_eknath",
+        "content": "सृष्टीच्या पूर्वी केवळ मीच होतो. स्थूल, सूक्ष्म अथवा कारण काहीही नव्हते. या सृष्टीच्या रूपात जे दिसते तेही मीच आहे, आणि प्रलयानंतर जे उरेल तेही मीच आहे."
+      },
+      {
+        "type": "commentary",
+        "author": "sridhara_swami",
+        "author_name": "Sridhara Swami",
+        "lang": "en",
+        "content": "The foundational verse of the four-verse summary (Catuh-Shloki Bhagavatam 2.9.33), establishing non-dual absolute existence."
+      },
+      {
+        "type": "commentary",
+        "author": "prabhupada",
+        "author_name": "A.C. Bhaktivedanta Swami Prabhupada",
+        "lang": "en",
+        "content": "Refutes the voidist concept: the personal form and transcendental consciousness of Bhagavan are eternal before, during, and after creation."
+      }
+    ]
+  }
+]

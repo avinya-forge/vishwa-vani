@@ -1,0 +1,40 @@
+[
+  {
+    "id": "mahabharata_16_1",
+    "text_slug": "mahabharata",
+    "chapter": 16,
+    "verse": 1,
+    "original": "कालः सृजति भूतानि कालः संहरति प्रजाः ।\nकालः सुप्तेषु जागर्ति कालो हि दुरतिक्रमः ॥",
+    "sanskrit": "कालः सृजति भूतानि कालः संहरति प्रजाः ।\nकालः सुप्तेषु जागर्ति कालो हि दुरतिक्रमः ॥",
+    "transliteration": "kālaḥ sṛjati bhūtāni kālaḥ saṃharati prajāḥ |\nkālaḥ supteṣu jāgarti kālo hi duratikramaḥ ||",
+    "translation": "Time creates all living beings; Time dissolves all creation. Time remains awake when all are asleep; Time cannot be conquered.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "काल ही समस्त जीवों का सृजन करता है और काल ही सबका संहार करता है। जब सब सो जाते हैं तब भी काल जागता रहता है; काल अजेय है।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "काळच सर्व सजीवांची निर्मिती करतो आणि काळच सर्वांचा संहार करतो. सर्व झोपलेले असतानाही काळ जागृत असतो; काळावर विजय मिळवणे अशक्य आहे."
+      },
+      {
+        "type": "commentary",
+        "author": "nilakantha",
+        "author_name": "Nilakantha Chaturdhara",
+        "lang": "en",
+        "content": "Mausala Parva demonstrates the relentless wheel of Kala (cosmic time) bringing an end to the Dvaraka era."
+      },
+      {
+        "type": "commentary",
+        "author": "km_ganguli",
+        "author_name": "Kisari Mohan Ganguli",
+        "lang": "en",
+        "content": "Sri Krishna concludes his earthly avatara, and the holy city of Dvaraka is reclaimed by the ocean."
+      }
+    ]
+  }
+]

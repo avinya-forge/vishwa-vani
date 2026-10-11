@@ -1,0 +1,40 @@
+[
+  {
+    "id": "mahabharata_5_1",
+    "text_slug": "mahabharata",
+    "chapter": 5,
+    "verse": 1,
+    "original": "यतो धर्मस्ततो कृष्णो यतो कृष्णस्ततो जयः ।\nइति मत्वा महाप्राज्ञ संदधुस्ते परस्परम् ॥",
+    "sanskrit": "यतो धर्मस्ततो कृष्णो यतो कृष्णस्ततो जयः ।\nइति मत्वा महाप्राज्ञ संदधुस्ते परस्परम् ॥",
+    "transliteration": "yato dharmas tato kṛṣṇo yato kṛṣṇas tato jayaḥ |\niti matvā mahāprājña saṃdadhus te parasparam ||",
+    "translation": "Where there is righteousness, there is Krishna; and where there is Krishna, there is victory.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "जहाँ धर्म है वहाँ श्रीकृष्ण हैं, और जहाँ श्रीकृष्ण हैं वहीं विजय है।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "जिथे धर्म आहे तिथे श्रीकृष्ण आहेत, आणि जिथे श्रीकृष्ण आहेत तिथेच विजय निश्चित आहे."
+      },
+      {
+        "type": "commentary",
+        "author": "nilakantha",
+        "author_name": "Nilakantha Chaturdhara",
+        "lang": "en",
+        "content": "The universal axiom uttered repeatedly by Sanjaya and Gandhari during peace embassies, establishing that Krishna embodies the moral order of the cosmos."
+      },
+      {
+        "type": "commentary",
+        "author": "km_ganguli",
+        "author_name": "Kisari Mohan Ganguli",
+        "lang": "en",
+        "content": "The defining theme of Udyoga Parva as Sri Krishna serves as ambassador of peace while war preparations peak."
+      }
+    ]
+  }
+]

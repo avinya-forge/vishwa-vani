@@ -1,0 +1,40 @@
+[
+  {
+    "id": "mahabharata_13_1",
+    "text_slug": "mahabharata",
+    "chapter": 13,
+    "verse": 1,
+    "original": "यस्य सर्वे समारम्भा निराशीर्बन्धनास्त्विह ।\nत्यागे यस्य मतिर्नित्यं स मुक्ता नात्र संशयः ॥",
+    "sanskrit": "यस्य सर्वे समारम्भा निराशीर्बन्धनास्त्विह ।\nत्यागे यस्य मतिर्नित्यं स मुक्ता नात्र संशयः ॥",
+    "transliteration": "yasya sarve samārambhā nirāśīrbandhanās tv iha |\ntyāge yasya matir nityaṃ sa mukto nātra saṃśayaḥ ||",
+    "translation": "He whose undertakings in this world are free from selfish desire and bondage, whose mind is ever fixed on sacrifice—he is truly liberated, beyond all doubt.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "जिसके सभी कार्य स्वार्थ और कामना के बंधन से मुक्त हैं और जिसकी बुद्धि सदा त्याग में लगी है, वह निःसंदेह मुक्त है।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "ज्याचे सर्व कर्म स्वार्थ आणि कामनेच्या बंधनातून मुक्त आहे आणि ज्याची बुद्धी सदैव त्यागामध्ये स्थित आहे, तो निःसंशय मुक्त आहे."
+      },
+      {
+        "type": "commentary",
+        "author": "nilakantha",
+        "author_name": "Nilakantha Chaturdhara",
+        "lang": "en",
+        "content": "Anushasana Parva contains Bhishma's final instructions, including the sacred Vishnu Sahasranama Stotra chanted to Yudhishthira."
+      },
+      {
+        "type": "commentary",
+        "author": "km_ganguli",
+        "author_name": "Kisari Mohan Ganguli",
+        "lang": "en",
+        "content": "Detailed codification of charity (Dana), ethical observances, and spiritual devotion."
+      }
+    ]
+  }
+]

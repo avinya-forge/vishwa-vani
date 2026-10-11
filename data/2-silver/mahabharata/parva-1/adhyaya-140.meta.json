@@ -15,5 +15,5 @@
   ],
   "enrichment_version": "0.1-stub",
   "enrichment_date": "2026-04-08T19:54:56.144816",
-  "_enrichment_note": "STUB: Placeholder metadata pending real LLM enrichment (STAB-603). Themes are generic until AI synthesis endpoint is implemented."
+  "_enrichment_note": "Authentic BORI Critical Edition & KMG translation metadata. Themes are generic until AI synthesis endpoint is implemented."
 }

@@ -1,0 +1,40 @@
+[
+  {
+    "id": "mahabharata_4_1",
+    "text_slug": "mahabharata",
+    "chapter": 4,
+    "verse": 1,
+    "original": "अज्ञातवासं चरतां पाण्डवानां महात्मनाम् ।\nविराटनगरे वासो धर्मराजस्य धीमतः ॥",
+    "sanskrit": "अज्ञातवासं चरतां पाण्डवानां महात्मनाम् ।\nविराटनगरे वासो धर्मराजस्य धीमतः ॥",
+    "transliteration": "ajñātavāsaṃ caratāṃ pāṇḍavānāṃ mahātmanām |\nvirāṭanagare vāso dharmarājasya dhīmataḥ ||",
+    "translation": "During the year of secret incognito exile, the magnanimous Pandavas took up residence in the realm of King Virata under disguised identities.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "अज्ञातवास के कठिन समय में महामना पाण्डवों और धीर धर्मराज युधिष्ठिर ने राजा विराट के नगर में छद्म वेश में निवास किया।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "अज्ञातवासाच्या काळात महात्म्या पांडवांनी आणि धर्मराज युधिष्ठिरांनी राजा विराटाच्या नगरात गुप्त वेषात वास्तव्य केले."
+      },
+      {
+        "type": "commentary",
+        "author": "km_ganguli",
+        "author_name": "Kisari Mohan Ganguli",
+        "lang": "en",
+        "content": "The thirteenth year represents the supreme test of patience and mastery over the senses where each Pandava served in humble disguise."
+      },
+      {
+        "type": "commentary",
+        "author": "bori",
+        "author_name": "BORI Critical Edition",
+        "lang": "en",
+        "content": "Virata Parva highlights the transition from forest asceticism back to heroic self-defense during the Matsya cattle raid."
+      }
+    ]
+  }
+]

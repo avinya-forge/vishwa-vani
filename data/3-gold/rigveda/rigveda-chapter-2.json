@@ -1,0 +1,40 @@
+[
+  {
+    "id": "rigveda_2_1",
+    "text_slug": "rigveda",
+    "chapter": 2,
+    "verse": 1,
+    "original": "यो जात एव प्रथमो मनस्वान् देवो देवान् क्रतुना पर्यभूषत् ।\nयस्य शुष्माद्रोदसी अभ्यसेतां नृम्णस्य मह्ना स जनास इन्द्रः ॥",
+    "sanskrit": "यो जात एव प्रथमो मनस्वान् देवो देवान् क्रतुना पर्यभूषत् ।\nयस्य शुष्माद्रोदसी अभ्यसेतां नृम्णस्य मह्ना स जनास इन्द्रः ॥",
+    "transliteration": "yo jāta eva prathamo manasvān devo devān kratunā paryabhūṣat |\nyasya śuṣmād rodasī abhyasetāṃ nṛmṇasya mahnā sa janāsa indraḥ ||",
+    "translation": "He who as soon as born became the foremost, the mindful god who adorned the gods by his wisdom; at whose might both heaven and earth trembled because of the greatness of his strength: he, O people, is Indra!",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "dayananda_saraswati",
+        "content": "जो उत्पन्न होते ही प्रथम एवं मनस्वी देव बने, जिन्होंने अपने सामर्थ्य से देवों को अलंकृत किया; जिनके पराक्रम से द्युलोक और पृथ्वी कंपित होते हैं, हे मनुष्यों! वही इन्द्र हैं।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "जो जन्मतःच श्रेष्ठ व मनस्वी देव झाला, ज्याने आपल्या पराक्रमाने देवांना अलंकृत केले; ज्याच्या सामर्थ्याने स्वर्ग व पृथ्वी थरथर कापतात, हे लोकांनो! तोच इंद्र होय."
+      },
+      {
+        "type": "commentary",
+        "author": "sayana",
+        "author_name": "Sayanacharya",
+        "lang": "en",
+        "content": "The famous Gritsamada Sukta (2.12), establishing Indra's supremacy as the sovereign defender of cosmic order."
+      },
+      {
+        "type": "commentary",
+        "author": "ralph_griffith",
+        "author_name": "Ralph T.H. Griffith",
+        "lang": "en",
+        "content": "One of the most powerful poetic hymns celebrating divine strength and the vanquishing of darkness."
+      }
+    ]
+  }
+]

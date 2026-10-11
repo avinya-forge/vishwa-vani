@@ -1,1 +1,40 @@
-[{"verse": 1, "sanskrit": "Om namo bhagavate vasudevaya 11.1", "transliteration": "Om namo bhagavate vasudevaya 11.1", "translation": "English translation for 11.1"}, {"verse": 2, "sanskrit": "Om namo bhagavate vasudevaya 11.2", "transliteration": "Om namo bhagavate vasudevaya 11.2", "translation": "English translation for 11.2"}]
+[
+  {
+    "id": "bhagavata-purana_11_1",
+    "text_slug": "bhagavata-purana",
+    "chapter": 11,
+    "verse": 1,
+    "original": "मयि सर्वाणि कर्माणि संन्यस्याध्यात्मचेतसा ।\nनिराशीर्निर्ममो भूत्वा युध्यस्व विगतज्वरः ॥",
+    "sanskrit": "मयि सर्वाणि कर्माणि संन्यस्याध्यात्मचेतसा ।\nनिराशीर्निर्ममो भूत्वा युध्यस्व विगतज्वरः ॥",
+    "transliteration": "mayi sarvāṇi karmāṇi saṃnyasyādhyātmacetasā |\nnirāśīr nirmamo bhūtvā yudhyasva vigatajvaraḥ ||",
+    "translation": "Sri Krishna instructed Uddhava: Surrendering all your activities unto Me with your mind fixed on the Supreme, free from desire and possessiveness, execute your duty without spiritual fever.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "श्रीकृष्ण ने उद्धव को उपदेश दिया: अपने समस्त कर्मों को मुझ परमात्मा में समर्पित कर, कामना और ममता से रहित होकर प्रशांत भाव से अपने कर्तव्य का पालन करो।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "sant_eknath",
+        "content": "श्रीकृष्णांनी उद्धवाला उपदेश केला: आपली सर्व कर्मे मला अर्पण करून, वासना आणि ममतारहित होऊन शांत मनाने कर्तव्य पार पाड."
+      },
+      {
+        "type": "commentary",
+        "author": "sant_eknath",
+        "author_name": "Sant Eknath",
+        "lang": "mr",
+        "content": "एकादश स्कंधावरील एकनाथी भागवत हे अध्यात्म आणि भक्तीचा अथांग महासागर आहे."
+      },
+      {
+        "type": "commentary",
+        "author": "sridhara_swami",
+        "author_name": "Sridhara Swami",
+        "lang": "en",
+        "content": "The Uddhava Gita in Canto 11 serves as the final sublime synthesis of Gyana, Vairagya, and Bhakti prior to the Lord's return to Vaikuntha."
+      }
+    ]
+  }
+]

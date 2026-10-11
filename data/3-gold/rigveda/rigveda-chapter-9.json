@@ -1,0 +1,40 @@
+[
+  {
+    "id": "rigveda_9_1",
+    "text_slug": "rigveda",
+    "chapter": 9,
+    "verse": 1,
+    "original": "स्वादिष्ठया मदिष्ठया पवस्व सोम धारया ।\nइन्द्राय पातवे सुतः ॥",
+    "sanskrit": "स्वादिष्ठया मदिष्ठया पवस्व सोम धारया ।\nइन्द्राय पातवे सुतः ॥",
+    "transliteration": "svādiṣṭhayā madiṣṭhayā pavasva soma dhārayā |\nindrāya pātave sutaḥ ||",
+    "translation": "Flow, O Soma, in the sweetest and most exhilarating stream, pressed out for Indra to drink!",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "dayananda_saraswati",
+        "content": "हे सोम! सबसे मधुर और आनंददायक धारा से प्रवाहित होओ, ताकि देवराज इन्द्र तुम्हारा पान कर सकें।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "हे सोमा! अत्यंत मधुर आणि आनंददायी धारेने वाहू लाग, जेणेकरून देवराज इंद्र तुझे प्राशन करू शकतील."
+      },
+      {
+        "type": "commentary",
+        "author": "sayana",
+        "author_name": "Sayanacharya",
+        "lang": "en",
+        "content": "Mandala 9 is entirely dedicated to Soma Pavamana—the purifier of human consciousness and the stream of spiritual joy."
+      },
+      {
+        "type": "commentary",
+        "author": "dayananda_saraswati",
+        "author_name": "Swami Dayananda Saraswati",
+        "lang": "hi",
+        "content": "सोम आत्मा के भीतर आनंद और ओज की परम धारा है।"
+      }
+    ]
+  }
+]

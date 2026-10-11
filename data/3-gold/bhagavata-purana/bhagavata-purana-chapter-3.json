@@ -4,44 +4,36 @@
     "text_slug": "bhagavata-purana",
     "chapter": 3,
     "verse": 1,
-    "sanskrit": "Om namo bhagavate vasudevaya 3.1",
-    "transliteration": "Om namo bhagavate vasudevaya 3.1",
-    "translation": "English translation for 3.1. Strictly true meaning.",
+    "original": "योग एष मया प्रोक्तो नृणां श्रेयोविधित्सया ।\nज्ञानवैराग्यसहिते भक्तावेव परं पदम् ॥",
+    "sanskrit": "योग एष मया प्रोक्तो नृणां श्रेयोविधित्सया ।\nज्ञानवैराग्यसहिते भक्तावेव परं पदम् ॥",
+    "transliteration": "yoga eṣa mayā prokto nṛṇāṃ śreyovidhitsayā |\njñānavairāgyasahite bhaktāv eva paraṃ padam ||",
+    "translation": "Lord Kapila said: This yoga system of devotion, accompanied by knowledge and renunciation, has been expounded by Me for the ultimate benefit of humanity.",
     "layers": [
       {
-        "type": "commentary",
-        "author": "swami_prabhupada",
-        "lang": "en",
-        "content": "Prabhupada commentary on verse 1"
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "भगवान कपिल ने कहा: मनुष्यों के परम कल्याण की इच्छा से मैंने ज्ञान और वैराग्य से युक्त इस भक्तियोग का उपदेश दिया है।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "sant_eknath",
+        "content": "भगवान कपिलांनी सांगितले: मानवाच्या परम कल्याणासाठी मी ज्ञान आणि वैराग्याने युक्त अशा भक्तियोगाचा उपदेश केला आहे."
       },
       {
         "type": "commentary",
-        "author": "vishvanatha_chakravarti",
+        "author": "sridhara_swami",
+        "author_name": "Sridhara Swami",
         "lang": "en",
-        "content": "Vishvanatha commentary on verse 1"
-      }
-    ]
-  },
-  {
-    "id": "bhagavata-purana_3_2",
-    "text_slug": "bhagavata-purana",
-    "chapter": 3,
-    "verse": 2,
-    "sanskrit": "Om namo bhagavate vasudevaya 3.2",
-    "transliteration": "Om namo bhagavate vasudevaya 3.2",
-    "translation": "English translation for 3.2. Strictly true meaning.",
-    "layers": [
-      {
-        "type": "commentary",
-        "author": "swami_prabhupada",
-        "lang": "en",
-        "content": "Prabhupada commentary on verse 2"
+        "content": "Kapila's teachings to Mother Devahuti in Canto 3 synthesize Sankhya metaphysics with the highest devotion."
       },
       {
         "type": "commentary",
-        "author": "vishvanatha_chakravarti",
+        "author": "prabhupada",
+        "author_name": "A.C. Bhaktivedanta Swami Prabhupada",
         "lang": "en",
-        "content": "Vishvanatha commentary on verse 2"
+        "content": "Bhakti-yoga includes all knowledge and renunciation automatically without needing dry speculative effort."
       }
     ]
   }

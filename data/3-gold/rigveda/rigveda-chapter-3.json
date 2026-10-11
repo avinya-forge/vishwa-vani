@@ -1,0 +1,40 @@
+[
+  {
+    "id": "rigveda_3_1",
+    "text_slug": "rigveda",
+    "chapter": 3,
+    "verse": 1,
+    "original": "तत् सवितुर्वरेण्यं भर्गो देवस्य धीमहि ।\ndhiyo yo naḥ pracodayāt ॥",
+    "sanskrit": "तत् सवितुर्वरेण्यं भर्गो देवस्य धीमहि ।\ndhiyo yo naḥ pracodayāt ॥",
+    "transliteration": "tat savitur vareṇyaṃ bhargo devasya dhīmahi |\ndhiyo yo naḥ pracodayāt ||",
+    "translation": "We meditate upon the supreme, radiant splendor of the divine Savitri; may that Solar Divinity inspire and illuminate our intellects.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "dayananda_saraswati",
+        "content": "हम उस प्रेरक, दिव्य सविता देव के श्रेष्ठ तेज का ध्यान करते हैं, जो हमारी बुद्धियों को सत्य कर्म के लिए प्रेरित करे।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "आम्ही त्या दिव्य, प्रकाशमान सविता देवाच्या श्रेष्ठ तेजाचे ध्यान करतो; जे तेज आमच्या बुद्धीला सन्मार्गाकडे प्रेरित करो."
+      },
+      {
+        "type": "commentary",
+        "author": "sayana",
+        "author_name": "Sayanacharya",
+        "lang": "en",
+        "content": "Rigveda 3.62.10: The universal Gayatri Mahamantra, revealed to Maharshi Vishvamitra, forming the spiritual essence of all four Vedas."
+      },
+      {
+        "type": "commentary",
+        "author": "dayananda_saraswati",
+        "author_name": "Swami Dayananda Saraswati",
+        "lang": "hi",
+        "content": "गायत्री मंत्र आत्मा को परमात्मा के प्रकाश से आलोकित करने वाली सर्वोत्कृष्ट प्रार्थना है।"
+      }
+    ]
+  }
+]

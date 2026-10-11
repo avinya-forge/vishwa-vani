@@ -1,1 +1,40 @@
-[{"verse": 1, "sanskrit": "Om namo bhagavate vasudevaya 6.1", "transliteration": "Om namo bhagavate vasudevaya 6.1", "translation": "English translation for 6.1"}, {"verse": 2, "sanskrit": "Om namo bhagavate vasudevaya 6.2", "transliteration": "Om namo bhagavate vasudevaya 6.2", "translation": "English translation for 6.2"}]
+[
+  {
+    "id": "bhagavata-purana_6_1",
+    "text_slug": "bhagavata-purana",
+    "chapter": 6,
+    "verse": 1,
+    "original": "एतेनैव ह्यघौघेन कृष्णे न्यस्तधियामपि ।\nनाम्नोच्चारितमात्रेण मुक्तिर्भवति देहिनाम् ॥",
+    "sanskrit": "एतेनैव ह्यघौघेन कृष्णे न्यस्तधियामपि ।\nनाम्नोच्चारितमात्रेण मुक्तिर्भवति देहिनाम् ॥",
+    "transliteration": "etenaiva hy aghaughena kṛṣṇe nyastadhiyām api |\nnāmno 'ccāritamātreṇa muktir bhavati dehinām ||",
+    "translation": "Even if uttered unintentionally while addressing another, the holy name of the Supreme Lord immediately burns away heaps of sins and grants liberation.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "भगवान के पावन नाम का उच्चारण मात्र करने से, चाहे वह किसी अन्य के नाम से ही क्यों न लिया गया हो, पापों का समूह नष्ट हो जाता है और जीव मुक्त हो जाता है।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "sant_eknath",
+        "content": "भगवंताच्या पवित्र नामाचा उच्चार केल्याने सर्व पापांचा नाश होतो आणि जीवाला मुक्ती प्राप्त होते, जशी अजामिळाला झाली."
+      },
+      {
+        "type": "commentary",
+        "author": "prabhupada",
+        "author_name": "A.C. Bhaktivedanta Swami Prabhupada",
+        "lang": "en",
+        "content": "The deliverance of Ajamila in Canto 6 illustrates the extraordinary potency of the Holy Name (Nama Mahatmya)."
+      },
+      {
+        "type": "commentary",
+        "author": "sant_eknath",
+        "author_name": "Sant Eknath",
+        "lang": "mr",
+        "content": "नामाची महती अशी आहे की अंतकाळी घेतलेले भगवंताचे नाव संसारातून तारणारे ठरते."
+      }
+    ]
+  }
+]

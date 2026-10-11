@@ -1,0 +1,40 @@
+[
+  {
+    "id": "mahabharata_15_1",
+    "text_slug": "mahabharata",
+    "chapter": 15,
+    "verse": 1,
+    "original": "वानप्रस्थाश्रमं प्राप्य तपस्तेपुर्महात्मनः ।\nधृतराष्ट्रो महाराजः कुन्ती गान्धारिका तथा ॥",
+    "sanskrit": "वानप्रस्थाश्रमं प्राप्य तपस्तेपुर्महात्मनः ।\nधृतराष्ट्रो महाराजः कुन्ती गान्धारिका तथा ॥",
+    "transliteration": "vānaprasthāśramaṃ prāpya tapas tepur mahātmanaḥ |\ndhṛtarāṣṭro mahārājaḥ kuntī gāndhārikā tathā ||",
+    "translation": "Having embraced the Vanaprastha hermitage order, King Dhritarashtra, Mother Kunti, and Queen Gandhari performed solemn spiritual austerities.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "वानप्रस्थ आश्रम स्वीकार कर महाराज धृतराष्ट्र, माता कुन्ती और गांधारी ने वन में कठोर तपस्या की।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "वानप्रस्थ आश्रम स्वीकारून महाराज धृतराष्ट्र, माता कुंती आणि गांधारी यांनी वनात कठोर तपश्चर्या केली."
+      },
+      {
+        "type": "commentary",
+        "author": "km_ganguli",
+        "author_name": "Kisari Mohan Ganguli",
+        "lang": "en",
+        "content": "The elders renounce the imperial capital to seek spiritual purification through silent asceticism in the forest."
+      },
+      {
+        "type": "commentary",
+        "author": "nilakantha",
+        "author_name": "Nilakantha Chaturdhara",
+        "lang": "en",
+        "content": "Illustrates the traditional Hindu lifecycle requirement of dispassion and forest contemplation before bodily departure."
+      }
+    ]
+  }
+]

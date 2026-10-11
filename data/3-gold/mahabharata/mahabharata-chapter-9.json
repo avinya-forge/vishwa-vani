@@ -1,0 +1,40 @@
+[
+  {
+    "id": "mahabharata_9_1",
+    "text_slug": "mahabharata",
+    "chapter": 9,
+    "verse": 1,
+    "original": "गदायुद्धमभूद् घोरं भीमदुर्योधनान्तयोः ।\nद्वैपायने ह्रदे तीरे धर्मन्यायविबोधकम् ॥",
+    "sanskrit": "गदायुद्धमभूद् घोरं भीमदुर्योधनान्तयोः ।\nद्वैपायने ह्रदे तीरे धर्मन्यायविबोधकम् ॥",
+    "transliteration": "gadāyuddham abhūd ghoraṃ bhīmaduryodhanāntayoḥ |\ndvaipāyane hrade tīre dharmanāyavibodhakam ||",
+    "translation": "A fierce mace duel took place between Bhima and Duryodhana on the banks of Dvaipayana Lake, resolving the eighteen-day conflict.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "द्वैपायन सरोवर के तट पर भीम और दुर्योधन के बीच घमासान गदा युद्ध हुआ, जिससे अठारह दिवसीय महायुद्ध का निर्णय हुआ।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "द्वैपायन सरोवराच्या काठावर भीम आणि दुर्योधन यांच्यात अटीतटीचे गदायुद्ध झाले, ज्याने १८ दिवसांच्या युद्धाचा निकाल लावला."
+      },
+      {
+        "type": "commentary",
+        "author": "km_ganguli",
+        "author_name": "Kisari Mohan Ganguli",
+        "lang": "en",
+        "content": "The fall of Duryodhana marks the destruction of the Kaurava army on the eighteenth day of Kurukshetra."
+      },
+      {
+        "type": "commentary",
+        "author": "bori",
+        "author_name": "BORI Critical Edition",
+        "lang": "en",
+        "content": "Witnesses Balarama's judgment and the fulfillment of Bhima's solemn vow."
+      }
+    ]
+  }
+]

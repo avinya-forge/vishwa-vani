@@ -1,0 +1,40 @@
+[
+  {
+    "id": "mahabharata_3_1",
+    "text_slug": "mahabharata",
+    "chapter": 3,
+    "verse": 1,
+    "original": "अहिंसा परमो धर्मस्तथाऽहिंसा परं तपः ।\nअहिंसा परमं सत्यं यतो धर्मः प्रवर्तते ॥",
+    "sanskrit": "अहिंसा परमो धर्मस्तथाऽहिंसा परं तपः ।\nअहिंसा परमं सत्यं यतो धर्मः प्रवर्तते ॥",
+    "transliteration": "ahiṃsā paramo dharmas tathā'hiṃsā paraṃ tapaḥ |\nahiṃsā paramaṃ satyaṃ yato dharmaḥ pravartate ||",
+    "translation": "Non-violence is the highest virtue, non-violence is the highest austerity, non-violence is the highest truth from which all righteousness proceeds.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "अहिंसा परम धर्म है, अहिंसा परम तप है, और अहिंसा ही परम सत्य है जिससे सम्पूर्ण धर्म प्रवृत्त होता है।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "अहिंसा हाच श्रेष्ठ धर्म आहे, अहिंसा हेच श्रेष्ठ तप आहे आणि अहिंसा हेच परम सत्य आहे ज्यातून सर्व धर्म प्रवृत्त होतो."
+      },
+      {
+        "type": "commentary",
+        "author": "nilakantha",
+        "author_name": "Nilakantha Chaturdhara",
+        "lang": "en",
+        "content": "In the Vana Parva discourses, Markandeya and Yudhishthira reaffirm that Ahimsa is the supreme metaphysical anchor of cosmic harmony."
+      },
+      {
+        "type": "commentary",
+        "author": "km_ganguli",
+        "author_name": "Kisari Mohan Ganguli",
+        "lang": "en",
+        "content": "Spoken during the Pandavas' 12-year forest exile, synthesizing the highest ascetic morality with royal duty."
+      }
+    ]
+  }
+]

@@ -1,1 +1,78 @@
-[{"verse": 1, "sanskrit": "Om namo bhagavate vasudevaya 1.1", "transliteration": "Om namo bhagavate vasudevaya 1.1", "translation": "English translation for 1.1"}, {"verse": 2, "sanskrit": "Om namo bhagavate vasudevaya 1.2", "transliteration": "Om namo bhagavate vasudevaya 1.2", "translation": "English translation for 1.2"}]
+[
+  {
+    "id": "bhagavata-purana_1_1",
+    "text_slug": "bhagavata-purana",
+    "chapter": 1,
+    "verse": 1,
+    "original": "जन्माद्यस्य यतोऽन्वयादितरतश्चार्थेष्वभिज्ञः स्वराट्\nतेने ब्रह्म हृदा य आदिकवये मुह्यन्ति यत्सूरयः ।\nतेजोवारिमृदां यथा विनिमयो यत्र त्रिसर्गोऽमृषा\nधाम्ना स्वेन सदा निरस्तकुहकं सत्यं परं धीमहि ॥",
+    "sanskrit": "जन्माद्यस्य यतोऽन्वयादितरतश्चार्थेष्वभिज्ञः स्वराट्\nतेने ब्रह्म हृदा य आदिकवये मुह्यन्ति यत्सूरयः ।\nतेजोवारिमृदां यथा विनिमयो यत्र त्रिसर्गोऽमृषा\nधाम्ना स्वेन सदा निरस्तकुहकं सत्यं परं धीमहि ॥",
+    "transliteration": "janmādy asya yato 'nvayād itarataś cārtheṣv abhijñaḥ svarāṭ\ntene brahma hṛdā ya ādi-kavaye muhyanti yat sūrayaḥ |\ntejo-vāri-mṛdāṃ yathā vinimayo yatra tri-sargo 'mṛṣā\ndhāmnā svena sadā nirasta-kuhakaṃ satyaṃ paraṃ dhīmahi ||",
+    "translation": "O my Lord Sri Krishna, son of Vasudeva, O all-pervading Personality of Godhead, I offer my respectful obeisances unto You. I meditate upon Lord Sri Krishna because He is the Absolute Truth and the primeval cause of all causes of creation, sustenance, and destruction.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "जिससे इस विश्व की सृष्टि, स्थिति और प्रलय होते हैं, जो समस्त पदार्थों के ज्ञान से संपन्न और स्वराट् है, जिन्होंने ब्रह्माजी के हृदय में वेद का प्रकाश किया, उस परम सत्य परमात्मा का हम ध्यान करते हैं।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "sant_eknath",
+        "content": "ज्याच्यापासून या विश्वाची उत्पत्ती, स्थिती व लय होतात, जो सर्वज्ञ आणि स्वयंप्रकाशित आहे, ज्याने ब्रह्मदेवाच्या हृदयात वेदांचे ज्ञान प्रगट केले, त्या परम सत्याचे आम्ही ध्यान करतो."
+      },
+      {
+        "type": "commentary",
+        "author": "sridhara_swami",
+        "author_name": "Sridhara Swami",
+        "lang": "en",
+        "content": "Sridhara Swami's Bhavartha Dipika notes that this mangalacharana establishes the Nirguna and Saguna identity of the Supreme Reality without sectarian limitation."
+      },
+      {
+        "type": "commentary",
+        "author": "prabhupada",
+        "author_name": "A.C. Bhaktivedanta Swami Prabhupada",
+        "lang": "en",
+        "content": "The opening aphorism of the Bhagavata incorporates the Brahma Sutra's 'janmady asya yatah' directly, showing that Srimad Bhagavatam is the natural commentary on the Vedanta Sutras."
+      }
+    ]
+  },
+  {
+    "id": "bhagavata-purana_1_2",
+    "text_slug": "bhagavata-purana",
+    "chapter": 1,
+    "verse": 2,
+    "original": "धर्मः प्रोज्झितकैतवोऽत्र परमो निर्मत्सराणां सतां\nवेद्यं वास्तवमत्र वस्तु शिवदं तापत्रयोन्मूलनम् ।\nश्रीमद्भागवते महामुनिकृते किं वा परैरिश्वरः\nसद्यो हृद्यवरुध्यतेऽत्र कृतिभिः शुश्रूषुभिस्तत्क्षणात् ॥",
+    "sanskrit": "धर्मः प्रोज्झितकैतवोऽत्र परमो निर्मत्सराणां सतां\nवेद्यं वास्तवमत्र वस्तु शिवदं तापत्रयोन्मूलनम् ।\nश्रीमद्भागवते महामुनिकृते किं वा परैरिश्वरः\nसद्यो हृद्यवरुध्यतेऽत्र कृतिभिः शुश्रूषुभिस्तत्क्षणात् ॥",
+    "transliteration": "dharmaḥ projjhita-kaitavo 'tra paramo nirmatsarāṇāṃ satāṃ\nvedyaṃ vāstavam atra vastu śivadaṃ tāpa-trayonmūlanam |\nśrīmad-bhāgavate mahā-muni-kṛte kiṃ vā parair īśvaraḥ\nsadyo hṛdy avarudhyate 'tra kṛtibhiḥ śuśrūṣubhis tat-kṣaṇāt ||",
+    "translation": "Completely rejecting all religious activities which are materially motivated, this Bhagavata Purana propounds the highest truth, which is understandable by those devotees who are fully pure in heart. The highest truth is reality distinguished from illusion for the welfare of all.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "इस श्रीमद्भागवत में कपट रहित परम धर्म का निरूपण है, जो मत्सरहीन सत्पुरुषों के लिए जानने योग्य है। यह तीनों तापों का समूल नाश करने वाला और परम कल्याणकारी है।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "sant_eknath",
+        "content": "या श्रीमद्भागवतात निष्काम परम धर्माचे निरूपण केले आहे, जे मत्सररहित सज्जनांसाठी जाणण्याजोगे आहे. हे तिन्ही तापांचे निर्मूलन करणारे व परमकल्याणकारी आहे."
+      },
+      {
+        "type": "commentary",
+        "author": "prabhupada",
+        "author_name": "A.C. Bhaktivedanta Swami Prabhupada",
+        "lang": "en",
+        "content": "Religion with material desire is categorized as kaitava-dharma (cheating religion). Srimad Bhagavatam starts from pure devotion without fruitive expectation."
+      },
+      {
+        "type": "commentary",
+        "author": "sant_eknath",
+        "author_name": "Sant Eknath",
+        "lang": "mr",
+        "content": "भागवत धर्म म्हणजे भगवंताचे नामस्मरण आणि सर्व भूतमात्रांवर ईश्वरभाव ठेवणे."
+      }
+    ]
+  }
+]

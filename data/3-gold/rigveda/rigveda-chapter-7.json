@@ -1,0 +1,40 @@
+[
+  {
+    "id": "rigveda_7_1",
+    "text_slug": "rigveda",
+    "chapter": 7,
+    "verse": 1,
+    "original": "त्र्यम्बकं यजामहे सुगन्धिं पुष्टिवर्धनम् ।\nउर्वारुकमिव बन्धनान्मृत्यौर्मुक्षीय मामृतात् ॥",
+    "sanskrit": "त्र्यम्बकं यजामहे सुगन्धिं पुष्टिवर्धनम् ।\nउर्वारुकमिव बन्धनान्मृत्यौर्मुक्षीय मामृतात् ॥",
+    "transliteration": "tryambakaṃ yajāmahe sugandhiṃ puṣṭivardhanam |\nurvārukam iva bandhanān mṛtyor mukṣīya māmṛtāt ||",
+    "translation": "We worship the Three-Eyed Lord (Shiva), the fragrant one who nourishes and sustains all beings. As a ripe cucumber is effortlessly liberated from its vine, may we be liberated from death, but not from immortality.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "dayananda_saraswati",
+        "content": "हम सुगंधित और पुष्टि की वृद्धि करने वाले त्रिनेत्र भगवान शिव की आराधना करते हैं। जैसे पका हुआ खीरा डंठल के बंधन से मुक्त हो जाता है, वैसे ही हम मृत्यु के पाश से मुक्त हों, अमरत्व से नहीं।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "आम्ही सुगंधी व पुष्टीची वृद्धी करणाऱ्या त्रिनेत्र महादेवाची आराधना करतो. ज्याप्रमाणे पिकलेली काकडी वेलीच्या बंधनातून सहज मुक्त होते, त्याप्रमाणे आम्ही मृत्यूच्या पाशातून मुक्त व्हावे, अमरत्वातून नव्हे."
+      },
+      {
+        "type": "commentary",
+        "author": "sayana",
+        "author_name": "Sayanacharya",
+        "lang": "en",
+        "content": "Rigveda 7.59.12: The supreme Mahamrityunjaya Mantra revealed by Sage Vashistha, delivering the chanter from physical and metaphysical mortality."
+      },
+      {
+        "type": "commentary",
+        "author": "dayananda_saraswati",
+        "author_name": "Swami Dayananda Saraswati",
+        "lang": "hi",
+        "content": "यह मंत्र भय और मृत्यु के निवारण का महामंत्र है।"
+      }
+    ]
+  }
+]

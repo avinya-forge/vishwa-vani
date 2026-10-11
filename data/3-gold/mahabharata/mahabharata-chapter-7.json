@@ -1,0 +1,40 @@
+[
+  {
+    "id": "mahabharata_7_1",
+    "text_slug": "mahabharata",
+    "chapter": 7,
+    "verse": 1,
+    "original": "द्रोणस्तु सेनापतिरभवत् कौरवाणां महाबलः ।\nचक्रव्यूहं रचयित्वा योध्यमानान् न्यवारयत् ॥",
+    "sanskrit": "द्रोणस्तु सेनापतिरभवत् कौरवाणां महाबलः ।\nचक्रव्यूहं रचयित्वा योध्यमानान् न्यवारयत् ॥",
+    "transliteration": "droṇas tu senāpatir abhavat kauravāṇāṃ mahābalaḥ |\ncakravyūhaṃ racayitvā yodhyamānān nyavārayat ||",
+    "translation": "Mighty Dronacharya became commander-in-chief of the Kauravas and formed the formidable Chakravyuha formation in the fierce war.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "महाबली द्रोणाचार्य कौरवों के सेनापति बने और उन्होंने अजेय चक्रव्यूह की रचना कर भीषण युद्ध का संचालन किया।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "महाबली द्रोणाचार्य कौरवांचे सेनापती झाले आणि त्यांनी अजिंक्य चक्रव्यूह रचून घनघोर युद्धाचे नेतृत्व केले."
+      },
+      {
+        "type": "commentary",
+        "author": "km_ganguli",
+        "author_name": "Kisari Mohan Ganguli",
+        "lang": "en",
+        "content": "Drona Parva narrates the five intense days of warfare including the heroic sacrifice of Abhimanyu and the fall of Jayadratha."
+      },
+      {
+        "type": "commentary",
+        "author": "bori",
+        "author_name": "BORI Critical Edition",
+        "lang": "en",
+        "content": "Features complex military strategic formations and the ethical dilemmas confronting Drona."
+      }
+    ]
+  }
+]

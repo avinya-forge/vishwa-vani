@@ -1,0 +1,40 @@
+[
+  {
+    "id": "rigveda_5_1",
+    "text_slug": "rigveda",
+    "chapter": 5,
+    "verse": 1,
+    "original": "ऋतेन ऋतं धरुणं धारयन्ते यजमानाः सुकृतः सत्यभाजः ।\nमित्रावरुणा सदनात् प्रचेता रक्षातं नो अमृतत्वे दधाना ॥",
+    "sanskrit": "ऋतेन ऋतं धरुणं धारयन्ते यजमानाः सुकृतः सत्यभाजः ।\nमित्रावरुणा सदनात् प्रचेता रक्षातं नो अमृतत्वे दधाना ॥",
+    "transliteration": "ṛtena ṛtaṃ dharuṇaṃ dhārayante yajamānāḥ sukṛtaḥ satyabhājaḥ |\nmitrāvaruṇā sadanāt pracetā rakṣātaṃ no amṛtatve dadhānā ||",
+    "translation": "Through Rta (Cosmic Order), the righteous uphold the foundation of truth. May Mitra and Varuna, guardians of moral harmony, protect us and establish us in immortality.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "dayananda_saraswati",
+        "content": "सत्य और ऋत (ब्रह्माण्डीय व्यवस्था) के द्वारा सत्कर्मी सत्य का पालन करते हैं। मित्रावरुण देव हमें अमरत्व में प्रतिष्ठित कर हमारी रक्षा करें।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "ऋत (वैश्विक व्यवस्था) आणि सत्याच्या आधारे सुकृत पुरुष विश्वाचा समतोल राखतात. मित्रावरुण देवांनी आम्हाला अमरत्वात स्थापित करावे."
+      },
+      {
+        "type": "commentary",
+        "author": "sayana",
+        "author_name": "Sayanacharya",
+        "lang": "en",
+        "content": "Rigveda 5.63: The Atri rishis glorify Rta as the eternal moral and cosmic law governing seasons, oceans, and stars."
+      },
+      {
+        "type": "commentary",
+        "author": "dayananda_saraswati",
+        "author_name": "Swami Dayananda Saraswati",
+        "lang": "hi",
+        "content": "मित्र और वरुण न्याय और मैत्री के सार्वभौमिक प्रतीक हैं।"
+      }
+    ]
+  }
+]

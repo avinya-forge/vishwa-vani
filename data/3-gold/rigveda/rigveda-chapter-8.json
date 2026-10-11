@@ -1,0 +1,40 @@
+[
+  {
+    "id": "rigveda_8_1",
+    "text_slug": "rigveda",
+    "chapter": 8,
+    "verse": 1,
+    "original": "अपास्म सोमममृता अभूमागन्म ज्योतिरविदाम देवान् ।\nकिं नूनमस्मान् कृणवदरातिः किमु धूर्तिरमृत मर्त्यस्य ॥",
+    "sanskrit": "अपास्म सोमममृता अभूमागन्म ज्योतिरविदाम देवान् ।\nकिं नूनमस्मान् कृणवदरातिः किमु धूर्तिरमृत मर्त्यस्य ॥",
+    "transliteration": "apāma somam amṛtā abhūmāganma jyotir avidāma devān |\nkiṃ nūnam asmān kṛṇavad arātiḥ kim u dhūrtir amṛta martyasya ||",
+    "translation": "We have drunk the Soma; we have become immortal; we have reached the realm of light; we have discovered the gods! What harm can malice do unto us now, O Immortal One, what can mortal treachery effect?",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "dayananda_saraswati",
+        "content": "हमने सोम का रसपान कर लिया है, हम अमर हो चुके हैं, हमने दिव्य प्रकाश को पा लिया है और देवों का साक्षात्कार कर लिया है! अब कोई शत्रु हमारा क्या बिगाड़ सकता है?"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "आम्ही सोमरस प्राशन केला आहे, आम्ही अमर झालो आहोत, आम्ही दिव्य प्रकाशात प्रवेश केला आहे आणि देवांचे दर्शन घेतले आहे! आता कोणता शत्रू आमचे काय नुकसान करू शकतो?"
+      },
+      {
+        "type": "commentary",
+        "author": "sayana",
+        "author_name": "Sayanacharya",
+        "lang": "en",
+        "content": "Rigveda 8.48.3: A pinnacle declaration of Vedic liberation and mystical union with the divine nectar."
+      },
+      {
+        "type": "commentary",
+        "author": "ralph_griffith",
+        "author_name": "Ralph T.H. Griffith",
+        "lang": "en",
+        "content": "The triumphant song of the Vedic seer who has transcended mortal dread through inner divine illumination."
+      }
+    ]
+  }
+]

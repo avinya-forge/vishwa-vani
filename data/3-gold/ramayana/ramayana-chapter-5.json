@@ -1,0 +1,116 @@
+[
+  {
+    "id": "ramayana_5_1",
+    "text_slug": "ramayana",
+    "chapter": 5,
+    "verse": 1,
+    "original": "नमोऽस्तु रामाय सलक्ष्मणाय देव्यै च तस्यै जनकात्मजायै ।\nनमोऽस्तु रुद्रेन्द्रयमानिलेभ्यो नमोऽस्तु चन्द्रार्कमरुद्गणेभ्यः ॥",
+    "sanskrit": "नमोऽस्तु रामाय सलक्ष्मणाय देव्यै च तस्यै जनकात्मजायै ।\nनमोऽस्तु रुद्रेन्द्रयमानिलेभ्यो नमोऽस्तु चन्द्रार्कमरुद्गणेभ्यः ॥",
+    "transliteration": "namo'stu rāmāya salakṣmaṇāya devyai ca tasyai janakātmajāyai |\nnamo'stu rudrendrayamānilebhyo namo'stu candrārkamarudgaṇebhyaḥ ||",
+    "translation": "Salutations to Sri Rama along with Lakshmana, and salutations to the divine daughter of Janaka, Devi Sita! Salutations to Rudra, Indra, Yama, and Vayu; salutations to the Moon, the Sun, and the hosts of Maruts!",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "लक्ष्मण सहित भगवान श्री राम को नमस्कार, और जनकनन्दिनी भगवती सीता को नमस्कार! रुद्र, इन्द्र, यम और वायु को नमस्कार; चन्द्र, सूर्य और मरुद्गणों को नमस्कार!"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "लक्ष्मणासह प्रभू श्रीरामांना नमस्कार, आणि जानकी देवी सीतेला नमस्कार! रुद्र, इंद्र, यम आणि वायू यांना नमस्कार; चंद्र, सूर्य आणि मरुद्गणांना नमस्कार!"
+      },
+      {
+        "type": "commentary",
+        "author": "govindaraja",
+        "author_name": "Govindaraja (Ramayana Bhushana)",
+        "lang": "en",
+        "content": "Sundara Kanda 15.42: The auspicious prayer uttered by Hanuman in the Ashoka Vatika just before discovering Mother Sita."
+      },
+      {
+        "type": "commentary",
+        "author": "gita_press",
+        "author_name": "Gita Press Gorakhpur",
+        "lang": "hi",
+        "content": "सुन्दरकाण्ड समस्त रामायण का हृदय है, जिसमें हनुमान जी का पराक्रम और सीता जी का सतीत्व प्रकाशमान है।"
+      }
+    ]
+  },
+  {
+    "id": "ramayana_5_2",
+    "text_slug": "ramayana",
+    "chapter": 5,
+    "verse": 2,
+    "original": "अशोको नाम स वने महावृक्षो विराजते ।\nतत्र दृष्टा मया सीता दीना राममनुव्रता ॥",
+    "sanskrit": "अशोको नाम स वने महावृक्षो विराजते ।\nतत्र दृष्टा मया सीता दीना राममनुव्रता ॥",
+    "transliteration": "aśoko nāma sa vane mahāvṛkṣo virājate |\ntatra dṛṣṭā mayā sītā dīnā rāmam anuvratā ||",
+    "translation": "Beneath a majestic Ashoka tree in that sacred grove, I beheld Devi Sita, absorbed in grief, completely dedicated to Sri Rama with unwavering devotion.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "उस अशोक वाटिका में एक विशाल वृक्ष के नीचे मैंने माता सीता को देखा, जो दुःखी थीं किन्तु अनन्य भाव से केवल श्रीराम का ध्यान कर रही थीं।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "त्या अशोक वाटिकेत एका भव्य वृक्षाखाली मी माता सीतेला पाहिले, ज्या दुःखी होत्या पण अनन्य भावाने केवळ प्रभू श्रीरामांचे ध्यान करत होत्या."
+      },
+      {
+        "type": "commentary",
+        "author": "ralph_griffith",
+        "author_name": "Ralph T.H. Griffith",
+        "lang": "en",
+        "content": "Hanuman delivers Sri Rama's signet ring, restoring hope and fortitude to Mother Sita."
+      },
+      {
+        "type": "commentary",
+        "author": "rama_tilaka",
+        "author_name": "Rama (Tilaka)",
+        "lang": "en",
+        "content": "Sita presents her Chudamani jewel as the sacred token of recognition for Rama."
+      }
+    ]
+  },
+  {
+    "id": "ramayana_5_3",
+    "text_slug": "ramayana",
+    "chapter": 5,
+    "verse": 3,
+    "original": "दृष्टा सीतेति हनूमत्प्रमुखाः सर्ववानराः ।\nआगम्य रामं संहृष्टाः शशंसुः कार्यसिद्धये ॥",
+    "sanskrit": "दृष्टा सीतेति हनूमत्प्रमुखाः सर्ववानराः ।\nआगम्य रामं संहृष्टाः शशंसुः कार्यसिद्धये ॥",
+    "transliteration": "dṛṣṭā sīteti hanūmatpramukhāḥ sarvavānarāḥ |\nāgamya rāmaṃ saṃhṛṣṭāḥ śaśaṃsuḥ kāryasiddhaye ||",
+    "translation": "'Sita has been seen!' Thus joyfully cried Hanuman and the monkey heroes, returning to Sri Rama and heralding the triumph of the mission.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "'सीता माता का दर्शन हो गया!'—यह शुभ संदेश लेकर हनुमानजी और समस्त वानर वीर अत्यंत हर्षित होकर श्रीराम के सम्मुख उपस्थित हुए।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "'सीतामाईंचे दर्शन झाले!'—हा मंगल संदेश घेऊन हनुमानजी आणि सर्व वानरवीर आनंदाने प्रभू श्रीरामांसमोर प्रगट झाले."
+      },
+      {
+        "type": "commentary",
+        "author": "govindaraja",
+        "author_name": "Govindaraja",
+        "lang": "en",
+        "content": "Hanuman carefully structured his announcement beginning with the word 'Drishta' (Seen) to instantly remove Rama's anxiety."
+      },
+      {
+        "type": "commentary",
+        "author": "gita_press",
+        "author_name": "Gita Press",
+        "lang": "hi",
+        "content": "श्रीराम ने कृतज्ञतापूर्वक हनुमानजी को अपने हृदय से लगा लिया।"
+      }
+    ]
+  }
+]

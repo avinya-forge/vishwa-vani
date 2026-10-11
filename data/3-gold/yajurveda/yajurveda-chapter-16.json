@@ -1,0 +1,40 @@
+[
+  {
+    "id": "yajurveda_16_1",
+    "text_slug": "yajurveda",
+    "chapter": 16,
+    "verse": 1,
+    "original": "नमस्ते रुद्र मन्यव उतोत इषवे नमः ।\nबाहुभ्यामुत ते नमः ॥",
+    "sanskrit": "नमस्ते रुद्र मन्यव उतोत इषवे नमः ।\nबाहुभ्यामुत ते नमः ॥",
+    "transliteration": "namaste rudra manyava utota iṣave namaḥ |\nbāhubhyām uta te namaḥ ||",
+    "translation": "O Rudra, salutations to Thy wrath, and homage to Thine arrow! Homage to both Thy mighty arms!",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "dayananda_saraswati",
+        "content": "हे रुद्र! आपके क्रोध को नमस्कार, आपके बाण को नमस्कार और आपकी दोनों भुजाओं को नमस्कार है।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "हे रुद्रा! तुझ्या क्रोधाला नमस्कार, तुझ्या बाणाला नमस्कार आणि तुझ्या दोन्ही भुजांना नमस्कार असो."
+      },
+      {
+        "type": "commentary",
+        "author": "uvvata",
+        "author_name": "Uvvata",
+        "lang": "en",
+        "content": "The celebrated opening of the Satarudriya (Adhyaya 16), revered as the heart of Vedic Shaivism."
+      },
+      {
+        "type": "commentary",
+        "author": "mahidhara",
+        "author_name": "Mahidhara",
+        "lang": "en",
+        "content": "Mahidhara's Vedadipa provides liturgical guidance and metaphysical significance for Adhyaya 16."
+      }
+    ]
+  }
+]

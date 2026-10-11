@@ -1,0 +1,78 @@
+[
+  {
+    "id": "rigveda_10_1",
+    "text_slug": "rigveda",
+    "chapter": 10,
+    "verse": 1,
+    "original": "सहस्रशीर्षा पुरुषः सहस्राक्षः सहस्रपात् ।\nस भूमिं विश्वतो वृत्वात्यतिष्ठद्दशाङ्गुलम् ॥",
+    "sanskrit": "सहस्रशीर्षा पुरुषः सहस्राक्षः सहस्रपात् ।\nस भूमिं विश्वतो वृत्वात्यतिष्ठद्दशाङ्गुलम् ॥",
+    "transliteration": "sahasraśīrṣā puruṣaḥ sahasrākṣaḥ sahasrapāt |\nsa bhūmiṃ viśvato vṛtvāty atiṣṭhad daśāṅgulam ||",
+    "translation": "The Cosmic Being (Purusha) has a thousand heads, a thousand eyes, and a thousand feet. Pervading the entire universe on every side, He extends beyond it by ten finger-breadths.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "dayananda_saraswati",
+        "content": "परम पुरुष सहस्रों सिरों, सहस्रों नेत्रों और सहस्रों चरणों वाले हैं। वे सम्पूर्ण ब्रह्माण्ड को सब ओर से व्याप्त करके दस अंगुल और परे विद्यमान हैं।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "परम पुरुष सहस्र मस्तके, सहस्र डोळे आणि सहस्र पाय असलेले आहेत. ते संपूर्ण विश्वाला सर्व बाजूंनी व्यापून दशांगुळे पलीकडे उरतात."
+      },
+      {
+        "type": "commentary",
+        "author": "sayana",
+        "author_name": "Sayanacharya",
+        "lang": "en",
+        "content": "Rigveda 10.90.1: The opening mantra of the Purusha Sukta, proclaiming the immanence and transcendence of the Divine."
+      },
+      {
+        "type": "commentary",
+        "author": "ralph_griffith",
+        "author_name": "Ralph T.H. Griffith",
+        "lang": "en",
+        "content": "The foundational cosmogonic hymn describing the universe as the living body of the Supreme Purusha."
+      }
+    ]
+  },
+  {
+    "id": "rigveda_10_2",
+    "text_slug": "rigveda",
+    "chapter": 10,
+    "verse": 2,
+    "original": "नासदासीन्नो सदासीत्तदानीं नासीद्रजो नो व्योमा परो यत् ।\nकिमावरीवः कुह कस्य शर्मन्नम्भः किमासीद् गहनं गभीरम् ॥",
+    "sanskrit": "नासदासीन्नो सदासीत्तदानीं नासीद्रजो नो व्योमा परो यत् ।\nकिमावरीवः कुह कस्य शर्मन्नम्भः किमासीद् गहनं गभीरम् ॥",
+    "transliteration": "nāsad āsīn no sad āsīt tadānīṃ nāsīd rajo no vyomā paro yat |\nkim āvarīvaḥ kuha kasya śarmann ambhaḥ kim āsīd gahanaṃ gabhīram ||",
+    "translation": "Then there was neither non-existence nor existence; there was neither the realm of space nor the sky which is beyond. What enveloped it, and where? In whose protection? Was there water, unfathomably deep?",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "dayananda_saraswati",
+        "content": "उस समय न असत् था और न सत्; न अंतरिक्ष था और न उससे परे आकाश। क्या वस्तु ढकी हुई थी, कहाँ और किसके आश्रय में? क्या वह कोई अथाह गहरा जल था?"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "त्यावेळी असत् ही नव्हते आणि सत् ही नव्हते; अंतरिक्ष नव्हते आणि पलीकडचा आकाशही नव्हता. कशाने आच्छादले होते, कुठे आणि कोणाच्या आश्रयाने? काय ते अथांग खोल जल होते?"
+      },
+      {
+        "type": "commentary",
+        "author": "sayana",
+        "author_name": "Sayanacharya",
+        "lang": "en",
+        "content": "Rigveda 10.129.1: The Nasadiya Sukta (Hymn of Creation), recognized as the most profound philosophical contemplation on the origins of the cosmos."
+      },
+      {
+        "type": "commentary",
+        "author": "dayananda_saraswati",
+        "author_name": "Swami Dayananda Saraswati",
+        "lang": "hi",
+        "content": "सृष्टि के पूर्व केवल परब्रह्म ही अपनी माया शक्ति सहित मौन उपस्थित थे।"
+      }
+    ]
+  }
+]

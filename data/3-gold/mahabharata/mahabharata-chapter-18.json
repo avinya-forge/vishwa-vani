@@ -1,0 +1,40 @@
+[
+  {
+    "id": "mahabharata_18_1",
+    "text_slug": "mahabharata",
+    "chapter": 18,
+    "verse": 1,
+    "original": "न जातु कामान्न भयान्न लोभाद् धर्मं त्यजेज्जीवितस्यापि हेतोः ।\nधर्मो नित्यः सुखदुःखे त्वनित्ये जीवो नित्यो हेतुरस्य त्वनित्यः ॥",
+    "sanskrit": "न जातु कामान्न भयान्न लोभाद् धर्मं त्यजेज्जीवितस्यापि हेतोः ।\nधर्मो नित्यः सुखदुःखे त्वनित्ये जीवो नित्यो हेतुरस्य त्वनित्यः ॥",
+    "transliteration": "na jātu kāmān na bhayān na lobhād dharmaṃ tyajej jīvitasyāpi hetoḥ |\ndharmo nityaḥ sukhaduḥkhe tv anitye jīvo nityo hetur asya tv anityaḥ ||",
+    "translation": "Neither from desire, nor from fear, nor from greed, nor even for the sake of one's life should a person abandon Dharma. Dharma is eternal; pleasure and pain are transient. The soul is eternal; the cause of its embodiment is transient.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "कामना, भय, लोभ अथवा जीवन रक्षा के लिए भी धर्म का परित्याग कभी नहीं करना चाहिए। धर्म नित्य है, सुख-दुःख अनित्य हैं। जीवात्मा नित्य है, और उसकी देह अनित्य है।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "वासना, भय, लोभ अथवा स्वतःच्या प्राणांच्या रक्षणासाठीही धर्माचा त्याग कधीही करू नये. धर्म नित्य आहे, सुख-दुःख अनित्य आहेत. आत्मा नित्य आहे आणि देह अनित्य आहे."
+      },
+      {
+        "type": "commentary",
+        "author": "nilakantha",
+        "author_name": "Nilakantha Chaturdhara",
+        "lang": "en",
+        "content": "The famous concluding verse of Bharata Savitri, encapsulating the entire wisdom of the 100,000 verses of the Mahabharata."
+      },
+      {
+        "type": "commentary",
+        "author": "km_ganguli",
+        "author_name": "Kisari Mohan Ganguli",
+        "lang": "en",
+        "content": "Vyasa's final clarion call to humanity: with uplifted arms he cries out that prosperity and love flow from Dharma, yet few listen!"
+      }
+    ]
+  }
+]

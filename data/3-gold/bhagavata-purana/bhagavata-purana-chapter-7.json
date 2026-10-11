@@ -4,44 +4,36 @@
     "text_slug": "bhagavata-purana",
     "chapter": 7,
     "verse": 1,
-    "sanskrit": "Om namo bhagavate vasudevaya 7.1",
-    "transliteration": "Om namo bhagavate vasudevaya 7.1",
-    "translation": "English translation for 7.1. Strictly true meaning.",
+    "original": "श्रवणं कीर्तनं विष्णोः स्मरणं पादसेवनम् ।\nअर्चनं वन्दनं दास्यं सख्यमात्मनिवेदनम् ॥\nइति पुंसाऽर्पिता विष्णौ भक्तिश्चेन्नवलक्षणा ।\nक्रियते भगवत्यद्धा तन्मन्येऽधीतमुत्तमम् ॥",
+    "sanskrit": "श्रवणं कीर्तनं विष्णोः स्मरणं पादसेवनम् ।\nअर्चनं वन्दनं दास्यं सख्यमात्मनिवेदनम् ॥\nइति पुंसाऽर्पिता विष्णौ भक्तिश्चेन्नवलक्षणा ।\nक्रियते भगवत्यद्धा तन्मन्येऽधीतमुत्तमम् ॥",
+    "transliteration": "śravaṇaṃ kīrtanaṃ viṣṇoḥ smaraṇaṃ pādasevanam |\narcanaṃ vandanaṃ dāsyaṃ sakhyam ātmanivedanam ||\niti puṃsārpitā viṣṇau bhaktiś cen nava-lakṣaṇā |\nkriyate bhagavaty addhā tan manye 'dhītam uttamam ||",
+    "translation": "Prahlada Maharaja said: Hearing, chanting, remembering, serving the lotus feet, worshiping with offerings, offering prayers, becoming a servant, befriending the Lord, and surrendering one's whole self—these nine processes of devotional service offered directly to Lord Vishnu constitute the highest learning.",
     "layers": [
       {
-        "type": "commentary",
-        "author": "swami_prabhupada",
-        "lang": "en",
-        "content": "Prabhupada commentary on verse 1"
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "प्रह्लाद जी ने कहा: भगवान विष्णु के चरित्र का श्रवण, कीर्तन, स्मरण, पादसेवन, अर्चन, वन्दन, दास्य, सख्य और आत्मनिवेदन—ये नौ प्रकार की भक्ति यदि भगवान को अर्पित की जाए, तो वही सर्वोत्तम अध्ययन है।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "sant_eknath",
+        "content": "प्रल्हादाने सांगितले: श्रवण, कीर्तन, स्मरण, पादसेवन, अर्चन, वंदन, दास्य, सख्य आणि आत्मनिवेदन—या नवविधा भक्तीने भगवंताची सेवा करणे हेच श्रेष्ठ शिक्षण आहे."
       },
       {
         "type": "commentary",
-        "author": "vishvanatha_chakravarti",
+        "author": "sridhara_swami",
+        "author_name": "Sridhara Swami",
         "lang": "en",
-        "content": "Vishvanatha commentary on verse 1"
-      }
-    ]
-  },
-  {
-    "id": "bhagavata-purana_7_2",
-    "text_slug": "bhagavata-purana",
-    "chapter": 7,
-    "verse": 2,
-    "sanskrit": "Om namo bhagavate vasudevaya 7.2",
-    "transliteration": "Om namo bhagavate vasudevaya 7.2",
-    "translation": "English translation for 7.2. Strictly true meaning.",
-    "layers": [
-      {
-        "type": "commentary",
-        "author": "swami_prabhupada",
-        "lang": "en",
-        "content": "Prabhupada commentary on verse 2"
+        "content": "The classical formulation of Navadha Bhakti (Nine-fold devotion) that forms the core pillar of all devotional traditions."
       },
       {
         "type": "commentary",
-        "author": "vishvanatha_chakravarti",
+        "author": "prabhupada",
+        "author_name": "A.C. Bhaktivedanta Swami Prabhupada",
         "lang": "en",
-        "content": "Vishvanatha commentary on verse 2"
+        "content": "Prahlada Maharaja taught his schoolmates in the demon kingdom that loving service to God is the intrinsic nature of every living being."
       }
     ]
   }

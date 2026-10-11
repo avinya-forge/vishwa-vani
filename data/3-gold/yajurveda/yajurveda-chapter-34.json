@@ -1,0 +1,40 @@
+[
+  {
+    "id": "yajurveda_34_1",
+    "text_slug": "yajurveda",
+    "chapter": 34,
+    "verse": 1,
+    "original": "यज्जाग्रतो दूरमुदैति दैवं तदु सुप्तस्य तथैवेति ।\nदूरङ्गमं ज्योतिषां ज्योतिरेकं तन्मे मनः शिवसङ्कल्पमस्तु ॥",
+    "sanskrit": "यज्जाग्रतो दूरमुदैति दैवं तदु सुप्तस्य तथैवेति ।\nदूरङ्गमं ज्योतिषां ज्योतिरेकं तन्मे मनः शिवसङ्कल्पमस्तु ॥",
+    "transliteration": "yajjāgrato dūram udaiti daivaṃ tad u suptasya tathaivaiti |\ndūraṅgamaṃ jyotiṣāṃ jyotir ekaṃ tan me manaḥ śivasaṅkalpam astu ||",
+    "translation": "That divine mind which wanders far when awake, and likewise withdraws when asleep—that far-reaching light of all lights: may that mind of mine be filled with auspicious resolves (Shiva-Sankalpa)!",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "dayananda_saraswati",
+        "content": "जो जाग्रत अवस्था में दूर-दूर तक चला जाता है और सुषुप्ति में भी वैसे ही लौट आता है—वह सभी ज्योतियों की ज्योति, दूरगामी दिव्य मन कल्याणकारी संकल्पों से युक्त हो।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "जे जागे असताना दूरवर जाते आणि झोपेतही तसेच परत फिरते—ते सर्व ज्योतींचे मूळ दिव्य मन सदैव मंगल संकल्पांनी युक्त होवो."
+      },
+      {
+        "type": "commentary",
+        "author": "uvvata",
+        "author_name": "Uvvata",
+        "lang": "en",
+        "content": "Yajurveda 34.1: The classical hymn of mind-control and psychological purification."
+      },
+      {
+        "type": "commentary",
+        "author": "mahidhara",
+        "author_name": "Mahidhara",
+        "lang": "en",
+        "content": "Mahidhara's Vedadipa provides liturgical guidance and metaphysical significance for Adhyaya 34."
+      }
+    ]
+  }
+]

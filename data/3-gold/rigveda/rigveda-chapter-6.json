@@ -1,0 +1,40 @@
+[
+  {
+    "id": "rigveda_6_1",
+    "text_slug": "rigveda",
+    "chapter": 6,
+    "verse": 1,
+    "original": "अहश्च कृष्णमहरर्जुनं च वि वर्तेते रजसी वेद्याभिः ।\nवैश्वानरो जायमानो न राजाऽवातिरज्ज्योतिषाग्निस्तमांसि ॥",
+    "sanskrit": "अहश्च कृष्णमहरर्जुनं च वि वर्तेते रजसी वेद्याभिः ।\nवैश्वानरो जायमानो न राजाऽवातिरज्ज्योतिषाग्निस्तमांसि ॥",
+    "transliteration": "ahaś ca kṛṣṇam ahar arjunaṃ ca vi vartete rajasī vedyābhiḥ |\nvaiśvānaro jāyamāno na rājā'vātirajjyotiṣāgnis tamāṃsi ||",
+    "translation": "The dark day (night) and the bright day revolve by divine ordinances. Like a king, Vaishvanara Agni upon appearing dispels all darkness with celestial radiance.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "dayananda_saraswati",
+        "content": "रात्रि रूपी कृष्ण दिन और प्रकाशमय श्वेत दिन विधि के अनुसार निरंतर घूमते हैं। वैश्वानर अग्नि राजा के समान प्रकट होकर अपने तेज से समस्त अंधकार को दूर करते हैं।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "रात्रीचा काळा दिवस आणि प्रकाशाचा पांढरा दिवस नियमांनुसार चक्राकार फिरतात. वैश्वानर अग्नी राजाप्रमाणे प्रगट होऊन आपल्या प्रकाशाने सर्व अंधकार नष्ट करतो."
+      },
+      {
+        "type": "commentary",
+        "author": "sayana",
+        "author_name": "Sayanacharya",
+        "lang": "en",
+        "content": "Rigveda 6.9.1: Bharadvaja celebrates Vaishvanara—the universal fire burning within cosmic space and the human heart."
+      },
+      {
+        "type": "commentary",
+        "author": "ralph_griffith",
+        "author_name": "Ralph T.H. Griffith",
+        "lang": "en",
+        "content": "A splendid nature hymn on the cosmic alternation of light and darkness."
+      }
+    ]
+  }
+]

@@ -1,0 +1,116 @@
+[
+  {
+    "id": "ramayana_7_1",
+    "text_slug": "ramayana",
+    "chapter": 7,
+    "verse": 1,
+    "original": "रामो रामो राम इति प्रजानामभवन् कथाः ।\nरामभूतं जगदभूद् रामे राज्यं प्रशासति ॥",
+    "sanskrit": "रामो रामो राम इति प्रजानामभवन् कथाः ।\nरामभूतं जगदभूद् रामे राज्यं प्रशासति ॥",
+    "transliteration": "rāmo rāmo rāma iti prajānām abhavan kathāḥ |\nrāmabhūtaṃ jagad abhūd rāme rājyaṃ praśāsati ||",
+    "translation": "While Sri Rama ruled the kingdom, the people spoke only of Rama, Rama, Rama! The entire world became transformed into the righteous spirit of Rama.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "जब श्रीराम राज्य का शासन कर रहे थे, तब प्रजा के मुख पर केवल 'राम, राम, राम' की ही चर्चा थी; सम्पूर्ण जगत राममय हो गया था।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "जेव्हा श्रीराम राज्याचे पालन करत होते, तेव्हा प्रजेच्या मुखात केवळ 'राम, राम, राम' हीच नामचर्चा होती; संपूर्ण जग राममय झाले होते."
+      },
+      {
+        "type": "commentary",
+        "author": "govindaraja",
+        "author_name": "Govindaraja (Ramayana Bhushana)",
+        "lang": "en",
+        "content": "The immortal depiction of Rama Rajya—an epoch free from disease, untimely death, poverty, and sorrow."
+      },
+      {
+        "type": "commentary",
+        "author": "ralph_griffith",
+        "author_name": "Ralph T.H. Griffith",
+        "lang": "en",
+        "content": "The golden age of universal righteousness where all citizens delighted in truth and dharma."
+      }
+    ]
+  },
+  {
+    "id": "ramayana_7_2",
+    "text_slug": "ramayana",
+    "chapter": 7,
+    "verse": 2,
+    "original": "न पर्यदेवन् विधवा न च व्यालकृतं भयम् ।\nन व्याधिजं भयं चापि रामे राज्यं प्रशासति ॥",
+    "sanskrit": "न पर्यदेवन् विधवा न च व्यालकृतं भयम् ।\nन व्याधिजं भयं चापि रामे राज्यं प्रशासति ॥",
+    "transliteration": "na paryadevan vidhavā na ca vyālakṛtaṃ bhayam |\nna vyādhijaṃ bhayaṃ cāpi rāme rājyaṃ praśāsati ||",
+    "translation": "Under the reign of Sri Rama, no widow lamented, there was no fear of wild beasts, and no terror of sickness tormented the people.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "श्रीराम के शासन में कोई विधवा विलाप नहीं करती थी, न जंगली पशुओं का भय था और न ही कोई व्याधि-जनित कष्ट था।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "श्रीरामांच्या राज्यात कोणतीही विधवा शोक करत नव्हती, श्वापदांचे भय नव्हते आणि कोणत्याही रोगाचे भय नव्हते."
+      },
+      {
+        "type": "commentary",
+        "author": "gita_press",
+        "author_name": "Gita Press",
+        "lang": "hi",
+        "content": "दैहिक, दैविक और भौतिक—तीनों तापों से मुक्त रामराज्य का पावन वर्णन।"
+      },
+      {
+        "type": "commentary",
+        "author": "rama_tilaka",
+        "author_name": "Rama (Tilaka)",
+        "lang": "en",
+        "content": "Demonstrates the reciprocal blessing of a sovereign who lives entirely for the spiritual upliftment of his subjects."
+      }
+    ]
+  },
+  {
+    "id": "ramayana_7_3",
+    "text_slug": "ramayana",
+    "chapter": 7,
+    "verse": 3,
+    "original": "इदं पवित्रं पापघ्नं पुण्यं वेदैश्च सम्मितम् ।\nयः पठेद् रामचरितं सर्वपापैः प्रमुच्यते ॥",
+    "sanskrit": "इदं पवित्रं पापघ्नं पुण्यं वेदैश्च सम्मितम् ।\nयः पठेद् रामचरितं सर्वपापैः प्रमुच्यते ॥",
+    "transliteration": "idaṃ pavitraṃ pāpaghnaṃ puṇyaṃ vedaiś ca sammitam |\nyaḥ paṭhed rāmacaritaṃ sarvapāpaiḥ pramucyate ||",
+    "translation": "This sacred Ramayana, destroyer of sins, auspicious, equal in sanctity to the Vedas—whoever reads this life of Rama is liberated from all transgressions and attains supreme peace.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "यह वेदों के समान पवित्र, पापनाशक और पुण्यमयी रामकथा जो भी पढ़ता या सुनता है, वह समस्त पापों से मुक्त होकर परम पद को प्राप्त करता है।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "हे वेदांसमान पवित्र, पापनाशक आणि पुण्यमय रामचरित्र जो कोणी वाचतो, तो सर्व पापांतून मुक्त होऊन परम शांती प्राप्त करतो."
+      },
+      {
+        "type": "commentary",
+        "author": "govindaraja",
+        "author_name": "Govindaraja",
+        "lang": "en",
+        "content": "The concluding Phalasruti of the Valmiki Ramayana, sealing the immortal blessing upon every listener and reader through the ages."
+      },
+      {
+        "type": "commentary",
+        "author": "ralph_griffith",
+        "author_name": "Ralph T.H. Griffith",
+        "lang": "en",
+        "content": "Griffith closes his monumental translation noting that the Ramayana remains the soul and guiding light of Indian civilization."
+      }
+    ]
+  }
+]

@@ -1,1 +1,40 @@
-[{"verse": 1, "sanskrit": "Om namo bhagavate vasudevaya 9.1", "transliteration": "Om namo bhagavate vasudevaya 9.1", "translation": "English translation for 9.1"}, {"verse": 2, "sanskrit": "Om namo bhagavate vasudevaya 9.2", "transliteration": "Om namo bhagavate vasudevaya 9.2", "translation": "English translation for 9.2"}]
+[
+  {
+    "id": "bhagavata-purana_9_1",
+    "text_slug": "bhagavata-purana",
+    "chapter": 9,
+    "verse": 1,
+    "original": "रामो दाशरथिर्भूत्वा जगद्रक्षणतत्परः ।\nधर्माय विजयायैव चक्रे लीलां मनोरमाम् ॥",
+    "sanskrit": "रामो दाशरथिर्भूत्वा जगद्रक्षणतत्परः ।\nधर्माय विजयायैव चक्रे लीलां मनोरमाम् ॥",
+    "transliteration": "rāmo dāśarathir bhūtvā jagadrakṣaṇatatparaḥ |\ndharmāya vijayāyaiva cakre līlāṃ manoramām ||",
+    "translation": "Bhagavan Sri Rama, appearing as the son of Dasharatha for the protection of all the worlds, performed enchanting pastimes for the triumph of righteousness.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "भगवान श्री राम ने दशरथ के पुत्र के रूप में अवतरित होकर धर्म की रक्षा और सत्य की विजय के लिए दिव्य एवं मनोहारी लीलाएँ कीं।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "sant_eknath",
+        "content": "भगवान श्रीरामांनी दशरथाचे पुत्र म्हणून अवतार घेऊन जगाचे रक्षण आणि धर्माच्या विजयासाठी मनोहर लीला केल्या."
+      },
+      {
+        "type": "commentary",
+        "author": "sridhara_swami",
+        "author_name": "Sridhara Swami",
+        "lang": "en",
+        "content": "Canto 9 traces the sacred genealogies of the Sun and Moon dynasties leading directly to the advent of Rama and Krishna."
+      },
+      {
+        "type": "commentary",
+        "author": "prabhupada",
+        "author_name": "A.C. Bhaktivedanta Swami Prabhupada",
+        "lang": "en",
+        "content": "Lord Ramachandra's ideal governance (Rama-rajya) sets the perpetual standard of righteous leadership."
+      }
+    ]
+  }
+]

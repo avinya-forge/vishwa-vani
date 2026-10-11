@@ -87,7 +87,7 @@ describe('VEDIC_LIBRARY', () => {
   });
 
   describe('100% Completed Books Pool (Gold Tier)', () => {
-    it('contains all 12 graduated canonical scriptures', () => {
+    it('contains all 17 graduated canonical scriptures', () => {
       const expectedSlugs = [
         'bhagavad-gita',
         'isha-upanishad',
@@ -101,6 +101,11 @@ describe('VEDIC_LIBRARY', () => {
         'samaveda',
         'manusmriti',
         'atharvaveda',
+        'mahabharata',
+        'ramayana',
+        'bhagavata-purana',
+        'rigveda',
+        'yajurveda',
       ];
       expectedSlugs.forEach(slug => {
         const text = VEDIC_LIBRARY.find(t => t.slug === slug);
@@ -108,6 +113,45 @@ describe('VEDIC_LIBRARY', () => {
         expect(text?.available).toBe(true);
         expect(text?.storage).toBe('json');
       });
+    });
+
+    it('verifies Shukla Yajurveda has all 40 Adhyayas defined', () => {
+      const yajur = VEDIC_LIBRARY.find(t => t.slug === 'yajurveda');
+      expect(yajur).toBeDefined();
+      expect(yajur?.totalChapters).toBe(40);
+      expect(Object.keys(yajur?.chapterNames || {})).toHaveLength(40);
+      expect(Object.keys(yajur?.chapterNamesHi || {})).toHaveLength(40);
+      expect(Object.keys(yajur?.chapterNamesMr || {})).toHaveLength(40);
+    });
+
+    it('verifies Valmiki Ramayana has all 7 Kandas defined', () => {
+      const ram = VEDIC_LIBRARY.find(t => t.slug === 'ramayana');
+      expect(ram).toBeDefined();
+      expect(ram?.totalChapters).toBe(7);
+      expect(ram?.storage).toBe('json');
+      expect(Object.keys(ram?.chapterNames || {})).toHaveLength(7);
+    });
+
+    it('verifies Mahabharata has all 18 Parvas defined', () => {
+      const mbh = VEDIC_LIBRARY.find(t => t.slug === 'mahabharata');
+      expect(mbh).toBeDefined();
+      expect(mbh?.totalChapters).toBe(18);
+      expect(mbh?.storage).toBe('json');
+      expect(Object.keys(mbh?.chapterNames || {})).toHaveLength(18);
+    });
+
+    it('verifies Srimad Bhagavatam has all 12 Cantos defined', () => {
+      const bp = VEDIC_LIBRARY.find(t => t.slug === 'bhagavata-purana');
+      expect(bp).toBeDefined();
+      expect(bp?.totalChapters).toBe(12);
+      expect(Object.keys(bp?.chapterNames || {})).toHaveLength(12);
+    });
+
+    it('verifies Rigveda has all 10 Mandalas defined', () => {
+      const rv = VEDIC_LIBRARY.find(t => t.slug === 'rigveda');
+      expect(rv).toBeDefined();
+      expect(rv?.totalChapters).toBe(10);
+      expect(Object.keys(rv?.chapterNames || {})).toHaveLength(10);
     });
 
     it('verifies Manusmriti has all 12 chapters defined with Devanagari names', () => {

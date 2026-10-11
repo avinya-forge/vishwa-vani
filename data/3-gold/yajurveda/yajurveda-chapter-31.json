@@ -1,0 +1,40 @@
+[
+  {
+    "id": "yajurveda_31_1",
+    "text_slug": "yajurveda",
+    "chapter": 31,
+    "verse": 1,
+    "original": "वेदाहमेतं पुरुषं महान्तमादित्यवर्णं तमसः परस्तात् ।\nतमेव विदित्वाति मृत्युमेति नान्यः पन्था विद्यतेऽयनाय ॥",
+    "sanskrit": "वेदाहमेतं पुरुषं महान्तमादित्यवर्णं तमसः परस्तात् ।\nतमेव विदित्वाति मृत्युमेति नान्यः पन्था विद्यतेऽयनाय ॥",
+    "transliteration": "vedāham etaṃ puruṣaṃ mahāntam ādityavarṇaṃ tamasaḥ parastāt |\ntam eva viditvāti mṛtyum eti nānyaḥ panthā vidyate 'yanāya ||",
+    "translation": "I know that Great Purusha, radiant as the Sun beyond all darkness! Knowing Him alone, one transcends death; there is no other path for liberation.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "dayananda_saraswati",
+        "content": "मैं अंधकार से सर्वथा परे, सूर्य के समान प्रकाशमान उस महान पुरुष को जानता हूँ। उन्हें जानकर ही मनुष्य मृत्यु को पार कर जाता है; इसके अतिरिक्त मुक्ति का अन्य कोई मार्ग नहीं है।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "मी अंधकाराच्या पलीकडे, सूर्यासारख्या तेजस्वी त्या महान पुरुषाला जाणतो. त्याला जाणूनच मनुष्य मृत्यूला जिंकतो; मुक्तीसाठी याशिवाय दुसरा मार्ग नाही."
+      },
+      {
+        "type": "commentary",
+        "author": "uvvata",
+        "author_name": "Uvvata",
+        "lang": "en",
+        "content": "Yajurveda 31.18: The ultimate proclamation of transcendental realization overcoming mortality."
+      },
+      {
+        "type": "commentary",
+        "author": "mahidhara",
+        "author_name": "Mahidhara",
+        "lang": "en",
+        "content": "Mahidhara's Vedadipa provides liturgical guidance and metaphysical significance for Adhyaya 31."
+      }
+    ]
+  }
+]

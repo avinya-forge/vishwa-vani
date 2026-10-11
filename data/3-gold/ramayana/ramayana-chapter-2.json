@@ -1,0 +1,116 @@
+[
+  {
+    "id": "ramayana_2_1",
+    "text_slug": "ramayana",
+    "chapter": 2,
+    "verse": 1,
+    "original": "रामो विग्रहवान् धर्मः साधुः सत्यपराक्रमः ।\nराजा सर्वस्य लोकस्य देवानामिन्द्रवत् प्रभुः ॥",
+    "sanskrit": "रामो विग्रहवान् धर्मः साधुः सत्यपराक्रमः ।\nराजा सर्वस्य लोकस्य देवानामिन्द्रवत् प्रभुः ॥",
+    "transliteration": "rāmo vigrahavān dharmaḥ sādhuḥ satyaparākramaḥ |\nrājā sarvasya lokasya devānām indravat prabhuḥ ||",
+    "translation": "Rama is the embodiment of righteousness, saintly, of unfailing valor, sovereign protector of the whole world like Indra among the gods.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "श्री राम धर्म के साक्षात् मूर्तिमान स्वरूप हैं, साधु हैं, सत्यपराक्रमी हैं और जैसे देवों में इन्द्र हैं वैसे ही सम्पूर्ण जगत के प्रभु हैं।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "श्रीराम हे धर्माचे साक्षात मूर्तिमंत रूप आहेत, साधू आहेत, सत्यपराक्रमी आहेत आणि सर्व जगाचे समर्थ अधिपती आहेत."
+      },
+      {
+        "type": "commentary",
+        "author": "govindaraja",
+        "author_name": "Govindaraja",
+        "lang": "en",
+        "content": "Ayodhya Kanda emphasizes Sri Rama's steadfast adherence to truth in fulfilling his father's solemn promise."
+      },
+      {
+        "type": "commentary",
+        "author": "gita_press",
+        "author_name": "Gita Press",
+        "lang": "hi",
+        "content": "श्रीराम ने राज्य त्याग कर पितृवचन का पालन किया और आदर्श पुत्र का उदाहरण प्रस्तुत किया।"
+      }
+    ]
+  },
+  {
+    "id": "ramayana_2_2",
+    "text_slug": "ramayana",
+    "chapter": 2,
+    "verse": 2,
+    "original": "सत्यमेवेश्वरो लोके सत्ये धर्मः सदा श्रितः ।\nसत्यमूलानि सर्वाणि सत्यान्नास्ति परं पदम् ॥",
+    "sanskrit": "सत्यमेवेश्वरो लोके सत्ये धर्मः सदा श्रितः ।\nसत्यमूलानि सर्वाणि सत्यान्नास्ति परं पदम् ॥",
+    "transliteration": "satyam eveśvaro loke satye dharmaḥ sadā śritaḥ |\nsatyamūlāni sarvāṇi satyān nāsti paraṃ padam ||",
+    "translation": "Truth alone is the sovereign power in this world; upon truth is virtue forever anchored. All existence is rooted in truth; there is no realm higher than Truth.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "सत्य ही संसार में ईश्वर है और सत्य पर ही धर्म प्रतिष्ठित है। सब कुछ सत्य पर आधारित है, सत्य से बढ़कर कोई पद नहीं है।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "या जगात सत्य हाच ईश्वर आहे आणि सत्यावरच धर्म उभा आहे. सत्य हेच सर्वांचे मूळ आहे, सत्यापेक्षा श्रेष्ठ काहीही नाही."
+      },
+      {
+        "type": "commentary",
+        "author": "rama_tilaka",
+        "author_name": "Rama (Tilaka)",
+        "lang": "en",
+        "content": "Rama's reply to Jabali when urged to abandon the forest vow and take the throne through worldly pragmatism."
+      },
+      {
+        "type": "commentary",
+        "author": "ralph_griffith",
+        "author_name": "Ralph T.H. Griffith",
+        "lang": "en",
+        "content": "The moral high watermark of the Ayodhya Kanda exalting truth over worldly crown."
+      }
+    ]
+  },
+  {
+    "id": "ramayana_2_3",
+    "text_slug": "ramayana",
+    "chapter": 2,
+    "verse": 3,
+    "original": "यतो धर्मस्ततो जयः ।\nइति मत्वा महाप्राज्ञ संदधुस्ते परस्परम् ॥",
+    "sanskrit": "यतो धर्मस्ततो जयः ।\nइति मत्वा महाप्राज्ञ संदधुस्ते परस्परम् ॥",
+    "transliteration": "yato dharmas tato jayaḥ |\niti matvā mahāprājña saṃdadhus te parasparam ||",
+    "translation": "Where there is righteousness, there is victory; knowing this, the wise uphold duty across all circumstances.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "जहाँ धर्म है वहीं विजय है; इस सत्य को जानकर ज्ञानी जन धर्म का संबल ग्रहण करते हैं।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "जिथे धर्म आहे तिथेच विजय असतो; हे ओळखून ज्ञानी पुरुष सदैव धर्माचे पालन करतात."
+      },
+      {
+        "type": "commentary",
+        "author": "govindaraja",
+        "author_name": "Govindaraja",
+        "lang": "en",
+        "content": "Spoken at the tearful parting of Bharata and Rama at Chitrakoota."
+      },
+      {
+        "type": "commentary",
+        "author": "gita_press",
+        "author_name": "Gita Press",
+        "lang": "hi",
+        "content": "भरत ने श्रीराम की चरणपादुकाओं को सिंहासन पर रखकर १४ वर्ष तक राज्य का संचालन किया।"
+      }
+    ]
+  }
+]

@@ -4,44 +4,36 @@
     "text_slug": "bhagavata-purana",
     "chapter": 12,
     "verse": 1,
-    "sanskrit": "Om namo bhagavate vasudevaya 12.1",
-    "transliteration": "Om namo bhagavate vasudevaya 12.1",
-    "translation": "English translation for 12.1. Strictly true meaning.",
+    "original": "कलेर्दोषनिधे राजन्नस्ति ह्येको महान् गुणः ।\nकीर्तनादेव कृष्णस्य मुक्तसङ्गः परं व्रजेत् ॥",
+    "sanskrit": "कलेर्दोषनिधे राजन्नस्ति ह्येको महान् गुणः ।\nकीर्तनादेव कृष्णस्य मुक्तसङ्गः परं व्रजेत् ॥",
+    "transliteration": "kaler doṣa-nidhe rājann asti hy eko mahān guṇaḥ |\nkīrtanād eva kṛṣṇasya mukta-saṅgaḥ paraṃ vrajet ||",
+    "translation": "My dear King, although Kali-yuga is an ocean of faults, there is still one magnificent quality in this age: simply by chanting the holy name of Krishna, one can become free from material bondage and attain the supreme spiritual abode.",
     "layers": [
       {
-        "type": "commentary",
-        "author": "swami_prabhupada",
-        "lang": "en",
-        "content": "Prabhupada commentary on verse 1"
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "हे राजन्! यद्यपि कलियुग दोषों का महासागर है, तथापि इसमें एक बहुत बड़ा गुण है: केवल भगवान श्रीकृष्ण के नाम का संकीर्तन करने से ही मनुष्य समस्त बंधनों से मुक्त होकर परम पद को प्राप्त कर लेता है।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "sant_eknath",
+        "content": "हे राजा! कलियुग दोषांचा महासागर असला तरी यात एक महान गुण आहे: केवळ श्रीकृष्णाचे नामस्मरण केल्याने मनुष्य संसाराच्या बंधनातून मुक्त होऊन परम पदाला पोहोचतो."
       },
       {
         "type": "commentary",
-        "author": "vishvanatha_chakravarti",
+        "author": "sridhara_swami",
+        "author_name": "Sridhara Swami",
         "lang": "en",
-        "content": "Vishvanatha commentary on verse 1"
-      }
-    ]
-  },
-  {
-    "id": "bhagavata-purana_12_2",
-    "text_slug": "bhagavata-purana",
-    "chapter": 12,
-    "verse": 2,
-    "sanskrit": "Om namo bhagavate vasudevaya 12.2",
-    "transliteration": "Om namo bhagavate vasudevaya 12.2",
-    "translation": "English translation for 12.2. Strictly true meaning.",
-    "layers": [
-      {
-        "type": "commentary",
-        "author": "swami_prabhupada",
-        "lang": "en",
-        "content": "Prabhupada commentary on verse 2"
+        "content": "The concluding benediction of the Bhagavata to King Parikshit, revealing that Nama Sankirtana is the universal Yuga Dharma for Kali Yuga."
       },
       {
         "type": "commentary",
-        "author": "vishvanatha_chakravarti",
+        "author": "prabhupada",
+        "author_name": "A.C. Bhaktivedanta Swami Prabhupada",
         "lang": "en",
-        "content": "Vishvanatha commentary on verse 2"
+        "content": "Confirmed by Sri Chaitanya Mahaprabhu: 'harer namaiva kevalam' is the supreme path of liberation in the present age."
       }
     ]
   }

@@ -53,8 +53,8 @@ describe('LibraryClient (LIB-002)', () => {
     expect(screen.getByText('Bhagavad Gita')).toBeInTheDocument()
     expect(screen.getByText('Isha Upanishad')).toBeInTheDocument()
     expect(screen.getByText('Yoga Sutras of Patanjali')).toBeInTheDocument()
-    // Bronze texts like Rigveda should not appear in gold tier filter
-    expect(screen.queryByText('Rigveda Samhita')).not.toBeInTheDocument()
+    // Bronze texts like Dasbodh should not appear in gold tier filter
+    expect(screen.queryByText('Dasbodh')).not.toBeInTheDocument()
   })
 
   it('filters scriptures by category tab', () => {

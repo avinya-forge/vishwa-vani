@@ -1,0 +1,78 @@
+[
+  {
+    "id": "mahabharata_1_1",
+    "text_slug": "mahabharata",
+    "chapter": 1,
+    "verse": 1,
+    "original": "नारायणं नमस्कृत्य नरं चैव नरोत्तमम् ।\nदेवीं सरस्वतीं व्यासं ततो जयमुदीरयेत् ॥",
+    "sanskrit": "नारायणं नमस्कृत्य नरं चैव नरोत्तमम् ।\nदेवीं सरस्वतीं व्यासं ततो जयमुदीरयेत् ॥",
+    "transliteration": "nārāyaṇaṃ namaskṛtya naraṃ caiva narottamam |\ndevīṃ sarasvatīṃ vyāsaṃ tato jayam udīrayet ||",
+    "translation": "Having bowed down to Narayana and to Nara, the foremost of male beings, and to the goddess Sarasvati, and to Vyasa, let the word 'Jaya' (Victory) be uttered.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "नारायण, नरश्रेष्ठ नर, भगवती सरस्वती और महर्षि व्यास को नमस्कार कर 'जय' (महाभारत) का पाठ करना चाहिए।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "नारायण, नरश्रेष्ठ नर, भगवती सरस्वती आणि महर्षी व्यास यांना नमस्कार करून 'जय' (महाभारत) ग्रंथाचे वाचन करावे."
+      },
+      {
+        "type": "commentary",
+        "author": "nilakantha",
+        "author_name": "Nilakantha Chaturdhara",
+        "lang": "en",
+        "content": "Nilakantha's Bharatabhavadipa explains that 'Jaya' is the esoteric name of this great itihasa, symbolizing the triumph of the Supreme Self over ignorance and mortality."
+      },
+      {
+        "type": "commentary",
+        "author": "km_ganguli",
+        "author_name": "Kisari Mohan Ganguli",
+        "lang": "en",
+        "content": "This auspicious mangalacharana verse invokes the divine lineage and inaugurates the sacred narrative recited by Ugrasrava Sauti before Shaunaka in Naimisharanya."
+      }
+    ]
+  },
+  {
+    "id": "mahabharata_1_2",
+    "text_slug": "mahabharata",
+    "chapter": 1,
+    "verse": 2,
+    "original": "धर्मे चार्थे च कामे च मोक्षे च भरतर्षभ ।\nयदिहास्ति तदन्यत्र यन्नेहास्ति न तत् क्वचित् ॥",
+    "sanskrit": "धर्मे चार्थे च कामे च मोक्षे च भरतर्षभ ।\nयदिहास्ति तदन्यत्र यन्नेहास्ति न तत् क्वचित् ॥",
+    "transliteration": "dharme cārthe ca kāme ca mokṣe ca bharatarṣabha |\nyad ihāsti tad anyatra yan nehāsti na tat kvacit ||",
+    "translation": "Whatever is found here concerning Dharma, Artha, Kama, and Moksha, may be found elsewhere; but what is not found here is found nowhere else.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "धर्म, अर्थ, काम और मोक्ष के विषय में जो कुछ इस ग्रंथ में है, वही अन्यत्र है; जो यहाँ नहीं है, वह कहीं भी नहीं है।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "धर्म, अर्थ, काम आणि मोक्ष या चार पुरुषार्थांच्या बाबतीत जे काही या ग्रंथात आहे तेच इतरत्र आढळते; जे येथे नाही ते कुठेही नाही."
+      },
+      {
+        "type": "commentary",
+        "author": "bori",
+        "author_name": "BORI Critical Edition",
+        "lang": "en",
+        "content": "The famous encyclopedic aphorism of the Mahabharata, highlighting its universal scope covering the entirety of human existence and spiritual liberation."
+      },
+      {
+        "type": "commentary",
+        "author": "km_ganguli",
+        "author_name": "Kisari Mohan Ganguli",
+        "lang": "en",
+        "content": "The sage asserts that all aspects of human civilization, statecraft, ethics, and metaphysics are comprehensively analyzed within this epic."
+      }
+    ]
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "id": "mahabharata_14_1",
+    "text_slug": "mahabharata",
+    "chapter": 14,
+    "verse": 1,
+    "original": "अश्वमेधो हि राजेन्द्र पावनः सर्वपाप्मनाम् ।\nतं कृत्वा पृथिवीपालः पूतो भवति सर्वथा ॥",
+    "sanskrit": "अश्वमेधो हि राजेन्द्र पावनः सर्वपाप्मनाम् ।\nतं कृत्वा पृथिवीपालः पूतो भवति सर्वथा ॥",
+    "transliteration": "aśvamedho hi rājendra pāvanaḥ sarvapāpmanām |\ntaṃ kṛtvā pṛthivīpālaḥ pūto bhavati sarvathā ||",
+    "translation": "The Ashvamedha sacrifice, O foremost of kings, purifies from all sins. Performing it, a ruler of the earth becomes cleansed in every respect.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "हे राजेन्द्र! अश्वमेध यज्ञ समस्त पापों को नष्ट करने वाला परम पावन यज्ञ है। इसे सम्पन्न कर राजा सर्वथा पवित्र हो जाता है।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "हे राजा! अश्वमेध यज्ञ सर्व पापांचा नाश करणारा परम पावन यज्ञ आहे. तो पूर्ण करून राजा सर्वथा पवित्र होतो."
+      },
+      {
+        "type": "commentary",
+        "author": "km_ganguli",
+        "author_name": "Kisari Mohan Ganguli",
+        "lang": "en",
+        "content": "Ashvamedhika Parva also preserves the Anugita, Krishna's second philosophical dialogue with Arjuna clarifying the nature of Brahman."
+      },
+      {
+        "type": "commentary",
+        "author": "bori",
+        "author_name": "BORI Critical Edition",
+        "lang": "en",
+        "content": "Arjuna leads the royal steed across ancient kingdoms, reconciling ancient feuds and unifying Bharata under dharma."
+      }
+    ]
+  }
+]

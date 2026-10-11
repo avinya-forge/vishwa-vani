@@ -1,0 +1,116 @@
+[
+  {
+    "id": "ramayana_6_1",
+    "text_slug": "ramayana",
+    "chapter": 6,
+    "verse": 1,
+    "original": "ततो युद्धपरिश्रान्तं समरे चिन्तया स्थितम् ।\nरावणं चाग्रतो दृष्ट्वा युद्धाय समुपस्थितम् ॥\nदैवतैश्च समागम्य द्रष्टुमभ्यागतो रणम् ।\nउपागम्याब्रवीद्राममगस्त्यो भगवानृषिः ॥",
+    "sanskrit": "ततो युद्धपरिश्रान्तं समरे चिन्तया स्थितम् ।\nरावणं चाग्रतो दृष्ट्वा युद्धाय समुपस्थितम् ॥\nदैवतैश्च समागम्य द्रष्टुमभ्यागतो रणम् ।\nउपागम्याब्रवीद्राममगस्त्यो भगवानृषिः ॥",
+    "transliteration": "tato yuddhaparidyūtaṃ samare cintayā sthitam |\nrāvaṇaṃ cāgrato dṛṣṭvā yuddhāya samupasthitam ||\ndaivataiś ca samāgamya draṣṭum abhyāgato raṇam |\nupāgamyābravīd rāmam agastyo bhagavān ṛṣiḥ ||",
+    "translation": "Beholding Sri Rama standing weary on the battlefield contemplating Ravana before him, the venerable sage Agastya, who had arrived with the gods to witness the battle, approached Rama and spoke:",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "युद्धभूमि में रावण को सामने खड़ा देख चिन्तामग्न श्रीराम के निकट जाकर महर्षि अगस्त्य ने परम पावन 'आदित्य हृदय स्तोत्र' का उपदेश दिया।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "रणांगणावर रावणाला समोर उभे पाहून चिंतनशील झालेल्या श्रीरामांजवळ जाऊन महर्षी अगस्त्यांनी परम पावन 'आदित्य हृदय स्तोत्राचा' उपदेश केला."
+      },
+      {
+        "type": "commentary",
+        "author": "govindaraja",
+        "author_name": "Govindaraja (Ramayana Bhushana)",
+        "lang": "en",
+        "content": "Yuddha Kanda 105: The introduction of the Aditya Hridaya Stotra revealed by Sage Agastya to grant victory over all adversaries."
+      },
+      {
+        "type": "commentary",
+        "author": "gita_press",
+        "author_name": "Gita Press Gorakhpur",
+        "lang": "hi",
+        "content": "भगवान सूर्य की आराधना से अजेय शक्ति प्राप्त कर श्रीराम ने रावण का संहार किया।"
+      }
+    ]
+  },
+  {
+    "id": "ramayana_6_2",
+    "text_slug": "ramayana",
+    "chapter": 6,
+    "verse": 2,
+    "original": "आदित्यहृदयं पुण्यं सर्वशत्रुविनाशनम् ।\nजयावहं जपेन्नित्यमक्षयं परमं शिवम् ॥",
+    "sanskrit": "आदित्यहृदयं पुण्यं सर्वशत्रुविनाशनम् ।\nजयावहं जपेन्नित्यमक्षयं परमं शिवम् ॥",
+    "transliteration": "ādityahṛdayaṃ puṇyaṃ sarvaśatruvināśanam |\njayāvahaṃ japen nityam akṣayaṃ paramaṃ śivam ||",
+    "translation": "This Aditya Hridaya hymn is supremely auspicious, destroys all enemies, brings eternal victory, is imperishable, and yields the supreme good.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "यह आदित्य हृदय स्तोत्र परम पवित्र, समस्त शत्रुओं का नाश करने वाला, नित्य विजय प्रदान करने वाला, अक्षय और परम कल्याणकारी है।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "हे आदित्य हृदय स्तोत्र अत्यंत पवित्र, सर्व शत्रूंचा नाश करणारे, शाश्वत विजय देणारे, अक्षय आणि परम कल्याणकारी आहे."
+      },
+      {
+        "type": "commentary",
+        "author": "rama_tilaka",
+        "author_name": "Rama (Tilaka)",
+        "lang": "en",
+        "content": "The central verse praising the cosmic Sun as the eye of the universe and source of all vitality."
+      },
+      {
+        "type": "commentary",
+        "author": "ralph_griffith",
+        "author_name": "Ralph T.H. Griffith",
+        "lang": "en",
+        "content": "Agastya urges Rama to recite the hymn thrice before casting the Brahmastra arrow."
+      }
+    ]
+  },
+  {
+    "id": "ramayana_6_3",
+    "text_slug": "ramayana",
+    "chapter": 6,
+    "verse": 3,
+    "original": "स बभार तदा रामो बाणं ब्रह्मोपसंहितम् ।\nससर्ज च महातेजा रावणस्य वधाय वै ॥",
+    "sanskrit": "स बभार तदा रामो बाणं ब्रह्मोपसंहितम् ।\nससर्ज च महातेजा रावणस्य वधाय वै ॥",
+    "transliteration": "sa babhāra tadā rāmo bāṇaṃ brahmopasaṃhitam |\nsasarja ca mahātejā rāvaṇasya vadhāya vai ||",
+    "translation": "Then radiant Sri Rama fitted to His bow the Brahmastra arrow consecrated by Vedic mantras and released it for the destruction of Ravana and the victory of Dharma.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "तब महातेजस्वी श्रीराम ने ब्रह्मास्त्र का संधान किया और धर्म की पुनर्स्थापना हेतु रावण का वध कर दिया।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "तेव्हा महातेजस्वी श्रीरामांनी ब्रह्मास्त्राचे संधान केले आणि धर्माच्या विजयासाठी रावणाचा वध केला."
+      },
+      {
+        "type": "commentary",
+        "author": "govindaraja",
+        "author_name": "Govindaraja",
+        "lang": "en",
+        "content": "The triumph of light over darkness as the devas shower flowers and Dharma is vindicated across the three worlds."
+      },
+      {
+        "type": "commentary",
+        "author": "gita_press",
+        "author_name": "Gita Press",
+        "lang": "hi",
+        "content": "अधर्म का अंत हुआ और विभीषण को लंका का धर्मपरायण राजा बनाया गया।"
+      }
+    ]
+  }
+]

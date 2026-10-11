@@ -1,0 +1,116 @@
+[
+  {
+    "id": "ramayana_3_1",
+    "text_slug": "ramayana",
+    "chapter": 3,
+    "verse": 1,
+    "original": "न क्रोधोत्पादयेत् प्राज्ञो न च धर्मं परित्यजेत् ।\nसत्ये रमेत सततं लोकस्यानुग्रहे रतः ॥",
+    "sanskrit": "न क्रोधोत्पादयेत् प्राज्ञो न च धर्मं परित्यजेत् ।\nसत्ये रमेत सततं लोकस्यानुग्रहे रतः ॥",
+    "transliteration": "na krodhotpādayet prājño na ca dharmaṃ parityajet |\nsatye rameta satataṃ lokasyānugrahe rataḥ ||",
+    "translation": "A wise person should never yield to anger nor abandon righteousness; they should ever delight in truth, devoted to the welfare of all living beings.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "ज्ञानी पुरुष को कभी क्रोध के वशीभूत नहीं होना चाहिए और न ही धर्म का त्याग करना चाहिए। उसे सदा सत्य में रमण और प्राणिमात्र के कल्याण में तत्पर रहना चाहिए।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "ज्ञानी माणसाने कधीही क्रोधाच्या आहारी जाऊ नये अथवा धर्माचा त्याग करू नये. त्याने सदैव सत्यात मग्न राहून प्राणिमात्रांच्या कल्याणासाठी तत्पर असावे."
+      },
+      {
+        "type": "commentary",
+        "author": "govindaraja",
+        "author_name": "Govindaraja",
+        "lang": "en",
+        "content": "The peaceful hermitage life in Dandakaranya where Rama, Sita, and Lakshmana protected sages from adharmic forces."
+      },
+      {
+        "type": "commentary",
+        "author": "ralph_griffith",
+        "author_name": "Ralph T.H. Griffith",
+        "lang": "en",
+        "content": "Aranya Kanda introduces the fateful abduction of Sita and the dawn of the heroic quest."
+      }
+    ]
+  },
+  {
+    "id": "ramayana_3_2",
+    "text_slug": "ramayana",
+    "chapter": 3,
+    "verse": 2,
+    "original": "सुलभाः पुरुषा राजन् सततं प्रियवादिनः ।\nअप्रियस्य च पथ्यस्य वक्ता श्रोता च दुर्लभः ॥",
+    "sanskrit": "सुलभाः पुरुषा राजन् सततं प्रियवादिनः ।\nअप्रियस्य च पथ्यस्य वक्ता श्रोता च दुर्लभः ॥",
+    "transliteration": "sulabhāḥ puruṣā rājan satataṃ priyavādinaḥ |\napriyasya ca pathyasya vaktā śrotā ca durlabhaḥ ||",
+    "translation": "O King, people who speak pleasing words are always easy to find; but rare is the speaker and rare is the listener of words that are bitter yet beneficial.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "हे राजन्! प्रिय बोलने वाले मनुष्य तो सदा सरलता से मिल जाते हैं; किन्तु जो अप्रिय किन्तु हितकारी हो, ऐसे वचन बोलने वाले और सुनने वाले दुर्लभ हैं।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "हे राजा! गोड बोलणारे लोक नेहमी सहज मिळतात; परंतु जे कटू पण हितकारक आहे, ते सांगणारा आणि ऐकणारा अत्यंत दुर्मिळ असतो."
+      },
+      {
+        "type": "commentary",
+        "author": "rama_tilaka",
+        "author_name": "Rama (Tilaka)",
+        "lang": "en",
+        "content": "Spoken by Maricha warning Ravana against plotting the abduction of Sita."
+      },
+      {
+        "type": "commentary",
+        "author": "gita_press",
+        "author_name": "Gita Press",
+        "lang": "hi",
+        "content": "मारीच ने रावण को श्रीराम के अमोघ पराक्रम से परिचित कराया और अनर्थ से बचने की सलाह दी।"
+      }
+    ]
+  },
+  {
+    "id": "ramayana_3_3",
+    "text_slug": "ramayana",
+    "chapter": 3,
+    "verse": 3,
+    "original": "रामेण शरवर्षेण रक्षसां निहता चमूः ।\nजनस्थानं कृतं शान्तं मुनीनां हिताय वै ॥",
+    "sanskrit": "रामेण शरवर्षेण रक्षसां निहता चमूः ।\nजनस्थानं कृतं शान्तं मुनीनां हिताय वै ॥",
+    "transliteration": "rāmeṇa śaravarṣeṇa rakṣasāṃ nihatā camūḥ |\njanasthānaṃ kṛtaṃ śāntaṃ munīnāṃ hitāya vai ||",
+    "translation": "With a torrential shower of arrows, Rama decimated the demon hordes of Khara and Dushana, restoring peace to Janasthana for the protection of the ascetics.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "श्रीराम ने अपने बाणों की वर्षा से राक्षस सेना का संहार किया और मुनियों के कल्याण के लिए जनस्थान को निर्भय बनाया।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "श्रीरामांनी बाणांच्या वर्षावाने राक्षस सैन्याचा संहार केला आणि मुनींच्या कल्याणासाठी जनस्थान शांत व सुरक्षित केले."
+      },
+      {
+        "type": "commentary",
+        "author": "govindaraja",
+        "author_name": "Govindaraja",
+        "lang": "en",
+        "content": "Highlights Rama's single-handed valor vanquishing fourteen thousand warriors to defend the hermits."
+      },
+      {
+        "type": "commentary",
+        "author": "ralph_griffith",
+        "author_name": "Ralph T.H. Griffith",
+        "lang": "en",
+        "content": "The Janasthana victory triggers Ravana's personal intervention in the forest."
+      }
+    ]
+  }
+]

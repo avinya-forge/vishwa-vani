@@ -1,0 +1,40 @@
+[
+  {
+    "id": "yajurveda_40_1",
+    "text_slug": "yajurveda",
+    "chapter": 40,
+    "verse": 1,
+    "original": "ईशा वास्यमिदं सर्वं यत्किञ्च जगत्यां जगत् ।\nतेन त्यक्तेन भुञ्जीथा मा गृधः कस्यस्विद्धनम् ॥",
+    "sanskrit": "ईशा वास्यमिदं सर्वं यत्किञ्च जगत्यां जगत् ।\nतेन त्यक्तेन भुञ्जीथा मा गृधः कस्यस्विद्धनम् ॥",
+    "transliteration": "īśā vāsyam idaṃ sarvaṃ yat kiñca jagatyāṃ jagat |\ntena tyaktena bhuñjīthā mā gṛdhaḥ kasya svid dhanam ||",
+    "translation": "All this, whatever moves in this moving world, is enveloped and indwelt by the Lord. Therefore, enjoy with detachment; do not covet anyone's wealth.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "dayananda_saraswati",
+        "content": "इस गतिशील संसार में जो कुछ भी चराचर जगत है, वह सब ईश्वर से व्याप्त है। अतः त्यागभाव से उसका उपभोग करो, किसी के धन का लोभ मत करो।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "या विश्वात जे काही चराचर आहे, ते सर्व ईश्वराने व्यापलेले आहे. म्हणून त्यागाने उपभोग घे, कोणाच्याही धनाचा लोभ करू नकोस."
+      },
+      {
+        "type": "commentary",
+        "author": "uvvata",
+        "author_name": "Uvvata",
+        "lang": "en",
+        "content": "Yajurveda 40.1: The divine bridge connecting the Vedic Karma Kanda directly to Vedanta Jnana Kanda."
+      },
+      {
+        "type": "commentary",
+        "author": "mahidhara",
+        "author_name": "Mahidhara",
+        "lang": "en",
+        "content": "Mahidhara's Vedadipa provides liturgical guidance and metaphysical significance for Adhyaya 40."
+      }
+    ]
+  }
+]

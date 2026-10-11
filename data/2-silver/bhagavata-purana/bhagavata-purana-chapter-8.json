@@ -1,1 +1,40 @@
-[{"verse": 1, "sanskrit": "Om namo bhagavate vasudevaya 8.1", "transliteration": "Om namo bhagavate vasudevaya 8.1", "translation": "English translation for 8.1"}, {"verse": 2, "sanskrit": "Om namo bhagavate vasudevaya 8.2", "transliteration": "Om namo bhagavate vasudevaya 8.2", "translation": "English translation for 8.2"}]
+[
+  {
+    "id": "bhagavata-purana_8_1",
+    "text_slug": "bhagavata-purana",
+    "chapter": 8,
+    "verse": 1,
+    "original": "ॐ नमो भगवते तस्मै यत एतच्चिदात्मकम् ।\nपुरुषायादिबीजाय परेशायाभिधीमहि ॥",
+    "sanskrit": "ॐ नमो भगवते तस्मै यत एतच्चिदात्मकम् ।\nपुरुषायादिबीजाय परेशायाभिधीमहि ॥",
+    "transliteration": "oṃ namo bhagavate tasmai yata etac cid-ātmakam |\npuruṣāyādi-bījāya pareśāyābhidhīmahi ||",
+    "translation": "Gajendra prayed: O Lord, who is the embodiment of consciousness and the primeval seed of all existence, the supreme controller, I offer my surrender unto You.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "गजेंद्र ने स्तुति की: जो चेतनामय परम पुरुष और समस्त जगत के मूल कारण हैं, उन परमेश्वर को मैं बारंबार नमस्कार करता हूँ।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "sant_eknath",
+        "content": "गजेंद्राने प्रार्थना केली: जे चैतन्यमय परम पुरुष आणि या विश्वाचे मूळ कारण आहेत, त्या परमेश्वराला मी शरण जातो."
+      },
+      {
+        "type": "commentary",
+        "author": "sridhara_swami",
+        "author_name": "Sridhara Swami",
+        "lang": "en",
+        "content": "Gajendra Stuti in Canto 8 is revered as the ultimate prayer of absolute surrender when all personal strength and worldly allies fail."
+      },
+      {
+        "type": "commentary",
+        "author": "prabhupada",
+        "author_name": "A.C. Bhaktivedanta Swami Prabhupada",
+        "lang": "en",
+        "content": "The elephant king remembered his prayers from his previous life as King Indradyumna, proving that spiritual consciousness carries across births."
+      }
+    ]
+  }
+]

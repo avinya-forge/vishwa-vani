@@ -1,0 +1,40 @@
+[
+  {
+    "id": "mahabharata_11_1",
+    "text_slug": "mahabharata",
+    "chapter": 11,
+    "verse": 1,
+    "original": "गांधारी शोकसंतप्ता दृष्ट्वा युद्धमहीमृषाम् ।\nचकार करुणं विलापं जगत्संमोहकारकम् ॥",
+    "sanskrit": "गांधारी शोकसंतप्ता दृष्ट्वा युद्धमहीमृषाम् ।\nचकार करुणं विलापं जगत्संमोहकारकम् ॥",
+    "transliteration": "gāndhārī śokasaṃtaptā dṛṣṭvā yuddhamahīm ṛṣām |\ncakāra karuṇaṃ vilāpaṃ jagatsaṃmohakārakam ||",
+    "translation": "Queen Gandhari, stricken with grief upon beholding the carnage of the battlefield, gave voice to a poignant lamentation moving all of humanity.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "शोकसंतप्त महारानी गांधारी ने युद्धभूमि का दृश्य देखकर अत्यंत कारुणिक विलाप किया, जिसने सम्पूर्ण संसार को द्रवित कर दिया।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "शोकसंतप्त राणी गांधारीने रणांगणाचे दृश्य पाहून अत्यंत हृदयद्रावक विलाप केला, ज्याने संपूर्ण जगाला हेलावून सोडले."
+      },
+      {
+        "type": "commentary",
+        "author": "km_ganguli",
+        "author_name": "Kisari Mohan Ganguli",
+        "lang": "en",
+        "content": "Stri Parva presents one of the most powerful anti-war laments in world literature as mothers, widows, and orphans mourn the fallen heroes."
+      },
+      {
+        "type": "commentary",
+        "author": "bori",
+        "author_name": "BORI Critical Edition",
+        "lang": "en",
+        "content": "Gandhari's lament culminates in her blessing of peace and historic prophecy on the Yadu dynasty."
+      }
+    ]
+  }
+]

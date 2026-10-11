@@ -1,0 +1,116 @@
+[
+  {
+    "id": "ramayana_1_1",
+    "text_slug": "ramayana",
+    "chapter": 1,
+    "verse": 1,
+    "original": "तपःस्वाध्यायनिरतं तपस्वी वाग्विदां वरम् ।\nनारदं परिपप्रच्छ वाल्मीकिर्मुनिपुङ्गवम् ॥",
+    "sanskrit": "तपःस्वाध्यायनिरतं तपस्वी वाग्विदां वरम् ।\nनारदं परिपप्रच्छ वाल्मीकिर्मुनिपुङ्गवम् ॥",
+    "transliteration": "tapaḥsvādhyāyanirataṃ tapasvī vāgvidāṃ varam |\nnāradaṃ paripapraccha vālmīkir munipuṅgavam ||",
+    "translation": "Maharshi Valmiki, dedicated to ascetic austerities and sacred study, inquired of Devarshi Narada, the foremost among the eloquent: Who in this world is truly endowed with all noble virtues?",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "तपस्या और स्वाध्याय में निरन्तर लगे रहने वाले महर्षि वाल्मीकि ने मुनिश्रेष्ठ और वाणीविद् नारद जी से पूछा: संसार में इस समय सर्वगुणसम्पन्न पुरुष कौन है?"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "तप आणि स्वाध्यायात मग्न असणाऱ्या महर्षी वाल्मीकींनी मुनिश्रेष्ठ नारदांना विचारले: या जगात सर्व गुणांनी संपन्न असा पुरुष कोण आहे?"
+      },
+      {
+        "type": "commentary",
+        "author": "govindaraja",
+        "author_name": "Govindaraja (Ramayana Bhushana)",
+        "lang": "en",
+        "content": "Govindaraja explains that this opening shloka introduces the sixteen divine qualities of Bhagavan Sri Rama."
+      },
+      {
+        "type": "commentary",
+        "author": "ralph_griffith",
+        "author_name": "Ralph T.H. Griffith",
+        "lang": "en",
+        "content": "The famous opening of the Ramayana leading to Narada's recitation of the Samkshepa Ramayana (The Epic in Brief)."
+      }
+    ]
+  },
+  {
+    "id": "ramayana_1_2",
+    "text_slug": "ramayana",
+    "chapter": 1,
+    "verse": 2,
+    "original": "मा निषाद प्रतिष्ठां त्वमगमः शाश्वतीः समाः ।\nयत्क्रौञ्चमिथुनादेकमवधीः काममोहितम् ॥",
+    "sanskrit": "मा निषाद प्रतिष्ठां त्वमगमः शाश्वतीः समाः ।\nयत्क्रौञ्चमिथुनादेकमवधीः काममोहितम् ॥",
+    "transliteration": "mā niṣāda pratiṣṭhāṃ tvam agamaḥ śāśvatīḥ samāḥ |\nyat krauñcamithunād ekam avadhīḥ kāmamohitam ||",
+    "translation": "O hunter, may you not attain enduring renown for endless years, since you slew one of this pair of mating curlews blinded by love!",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "हे निषाद! तुझे कभी प्रतिष्ठा प्राप्त न हो, क्योंकि तूने काममोहित क्रौंच पक्षी के जोड़े में से एक का वध कर दिया।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "हे व्याधा! तुला कधीही शाश्वत प्रतिष्ठा लाभणार नाही, कारण तू काममोहित क्रौंच पक्ष्यांच्या जोडीतील एकाची हत्या केलीस."
+      },
+      {
+        "type": "commentary",
+        "author": "rama_tilaka",
+        "author_name": "Rama (Tilaka)",
+        "lang": "en",
+        "content": "The primordial Anushtubh shloka born from spontaneous compassionate grief (Shoka transformed into Shloka), marking the birth of classical Sanskrit poetry."
+      },
+      {
+        "type": "commentary",
+        "author": "gita_press",
+        "author_name": "Gita Press Gorakhpur",
+        "lang": "hi",
+        "content": "करुणा से उत्पन्न यह श्लोक आदिकाव्य की प्रथम पावन वाणी बना।"
+      }
+    ]
+  },
+  {
+    "id": "ramayana_1_3",
+    "text_slug": "ramayana",
+    "chapter": 1,
+    "verse": 3,
+    "original": "इक्ष्वाकुवंशप्रभवो रामो नाम जनैः श्रुतः ।\nनियतात्मा महावीर्यो द्युतिमान् धृतिमान् वशी ॥",
+    "sanskrit": "इक्ष्वाकुवंशप्रभवो रामो नाम जनैः श्रुतः ।\nनियतात्मा महावीर्यो द्युतिमान् धृतिमान् वशी ॥",
+    "transliteration": "ikṣvākuvaṃśaprabhavo rāmo nāma janaiḥ śrutaḥ |\nniyatātmā mahāvīryo dyutimān dhṛtimān vaśī ||",
+    "translation": "Born in the dynasty of Ikshvaku, known among the people by the name of Rama, He is self-controlled, exceedingly mighty, radiant, steadfast, and master of His senses.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "इक्ष्वाकु वंश में उत्पन्न 'राम' नाम से विख्यात वे पुरुष हैं, जो जितेन्द्रिय, महाबलशाली, कान्तिमान, धैर्यवान और मन को वश में रखने वाले हैं।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "इक्ष्वाकु कुळात उत्पन्न झालेले व 'राम' या नावाने प्रसिद्ध असलेले ते महापुरुष आहेत, जे संयमी, महापराक्रमी, तेजस्वी, धैर्यवान आणि जितेंद्रिय आहेत."
+      },
+      {
+        "type": "commentary",
+        "author": "govindaraja",
+        "author_name": "Govindaraja (Ramayana Bhushana)",
+        "lang": "en",
+        "content": "Bala Kanda 1.8: Narada's answer identifying Sri Rama as the living embodiment of righteousness (Ramo Vigrahavan Dharmah)."
+      },
+      {
+        "type": "commentary",
+        "author": "ralph_griffith",
+        "author_name": "Ralph T.H. Griffith",
+        "lang": "en",
+        "content": "The definition of the ideal heroic sovereign who upholds truth even at the cost of personal comfort."
+      }
+    ]
+  }
+]

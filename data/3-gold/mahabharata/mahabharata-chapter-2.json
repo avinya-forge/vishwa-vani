@@ -1,0 +1,40 @@
+[
+  {
+    "id": "mahabharata_2_1",
+    "text_slug": "mahabharata",
+    "chapter": 2,
+    "verse": 1,
+    "original": "मयस्तु विदिताभिप्रायः पार्थस्य परंतपः ।\nचक्रे सभामनुपमां देवराजसभामिव ॥",
+    "sanskrit": "मयस्तु विदिताभिप्रायः पार्थस्य परंतपः ।\nचक्रे सभामनुपमां देवराजसभामिव ॥",
+    "transliteration": "mayas tu viditābhiprāyaḥ pārthasya paraṃtapaḥ |\ncakre sabhām anupamāṃ devarājasabhām iva ||",
+    "translation": "Maya Danava, understanding the intention of Arjuna, constructed an incomparable assembly hall resembling the council hall of Indra.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "मय दानव ने अर्जुन के अभिप्राय को जानकर इंद्र की सभा के समान एक अनुपम और दिव्य सभा भवन का निर्माण किया।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "मय दानवाने अर्जुनाचा मनोदय ओळखून इंद्राच्या सभेसारखी एक अनुपम व भव्य सभा निर्माण केली."
+      },
+      {
+        "type": "commentary",
+        "author": "km_ganguli",
+        "author_name": "Kisari Mohan Ganguli",
+        "lang": "en",
+        "content": "The construction of the Maya Sabha in Indraprastha marks the zenith of the Pandavas' temporal prosperity prior to the Rajasuya sacrifice."
+      },
+      {
+        "type": "commentary",
+        "author": "nilakantha",
+        "author_name": "Nilakantha Chaturdhara",
+        "lang": "en",
+        "content": "The assembly hall symbolizes the wondrous creation of cosmic Maya, reflecting optical illusions between land and water that foreshadowed the great conflict."
+      }
+    ]
+  }
+]

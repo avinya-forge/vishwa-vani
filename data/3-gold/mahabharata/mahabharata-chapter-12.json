@@ -1,0 +1,40 @@
+[
+  {
+    "id": "mahabharata_12_1",
+    "text_slug": "mahabharata",
+    "chapter": 12,
+    "verse": 1,
+    "original": "सत्यमेवेश्वरो लोके सत्ये धर्मः सदा श्रितः ।\nसत्यमूलानि सर्वाणि सत्यान्नास्ति परं पदम् ॥",
+    "sanskrit": "सत्यमेवेश्वरो लोके सत्ये धर्मः सदा श्रितः ।\nसत्यमूलानि सर्वाणि सत्यान्नास्ति परं पदम् ॥",
+    "transliteration": "satyam eveśvaro loke satye dharmaḥ sadā śritaḥ |\nsatyamūlāni sarvāṇi satyān nāsti paraṃ padam ||",
+    "translation": "Truth alone is the sovereign ruler in this world; upon truth is righteousness forever anchored. All existence is rooted in truth; there is no higher abode than Truth.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "संसार में सत्य ही ईश्वर है और सत्य पर ही धर्म सदा टिका हुआ है। सब कुछ सत्य पर आश्रित है, सत्य से बढ़कर कोई परम पद नहीं है।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "या जगात सत्य हाच ईश्वर आहे आणि सत्यावरच धर्म सदैव आधारलेला आहे. सर्व काही सत्यावर प्रतिष्ठित आहे, सत्यापेक्षा श्रेष्ठ दुसरे पद नाही."
+      },
+      {
+        "type": "commentary",
+        "author": "nilakantha",
+        "author_name": "Nilakantha Chaturdhara",
+        "lang": "en",
+        "content": "Spoken by Bhishma from his bed of arrows, Shanti Parva contains the master treatise on Rajadharma (governance), Apaddharma, and Mokshadharma."
+      },
+      {
+        "type": "commentary",
+        "author": "km_ganguli",
+        "author_name": "Kisari Mohan Ganguli",
+        "lang": "en",
+        "content": "Yudhishthira receives profound instruction on leadership, justice, renunciation, and self-realization."
+      }
+    ]
+  }
+]

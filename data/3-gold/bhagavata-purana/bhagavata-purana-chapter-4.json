@@ -4,44 +4,36 @@
     "text_slug": "bhagavata-purana",
     "chapter": 4,
     "verse": 1,
-    "sanskrit": "Om namo bhagavate vasudevaya 4.1",
-    "transliteration": "Om namo bhagavate vasudevaya 4.1",
-    "translation": "English translation for 4.1. Strictly true meaning.",
+    "original": "ध्रुवं तपोवनं यान्तं दृष्ट्वा देवर्षिरब्रवीत् ।\nभगवत्पादपद्मानां सेवां कुरु दृढव्रतः ॥",
+    "sanskrit": "ध्रुवं तपोवनं यान्तं दृष्ट्वा देवर्षिरब्रवीत् ।\nभगवत्पादपद्मानां सेवां कुरु दृढव्रतः ॥",
+    "transliteration": "dhruvaṃ tapovanaṃ yāntaṃ dṛṣṭvā devarṣir abravīt |\nbhagavatpādapadmānāṃ sevāṃ kuru dṛḍhavrataḥ ||",
+    "translation": "Seeing boy Dhruva departing for the forest of austerities, Devarshi Narada blessed him with the sacred twelve-syllable mantra: Om Namo Bhagavate Vasudevaya.",
     "layers": [
       {
-        "type": "commentary",
-        "author": "swami_prabhupada",
-        "lang": "en",
-        "content": "Prabhupada commentary on verse 1"
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "तपोवन जाते हुए बालक ध्रुव को देखकर देवर्षि नारद ने उन्हें दृढ़ संकल्प के साथ भगवान वासुदेव के चरणकमलों की आराधना का मार्ग दिखाया।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "sant_eknath",
+        "content": "तपोवनात जाणाऱ्या बालक ध्रुवाला पाहून देवर्षी नारदांनी त्याला दृढ निश्चयाने भगवान वासुदेवांची आराधना करण्याचा मार्ग दाखवला."
       },
       {
         "type": "commentary",
-        "author": "vishvanatha_chakravarti",
+        "author": "prabhupada",
+        "author_name": "A.C. Bhaktivedanta Swami Prabhupada",
         "lang": "en",
-        "content": "Vishvanatha commentary on verse 1"
-      }
-    ]
-  },
-  {
-    "id": "bhagavata-purana_4_2",
-    "text_slug": "bhagavata-purana",
-    "chapter": 4,
-    "verse": 2,
-    "sanskrit": "Om namo bhagavate vasudevaya 4.2",
-    "transliteration": "Om namo bhagavate vasudevaya 4.2",
-    "translation": "English translation for 4.2. Strictly true meaning.",
-    "layers": [
-      {
-        "type": "commentary",
-        "author": "swami_prabhupada",
-        "lang": "en",
-        "content": "Prabhupada commentary on verse 2"
+        "content": "Narada Muni serves as the universal spiritual master guiding determined seekers regardless of age or social status."
       },
       {
         "type": "commentary",
-        "author": "vishvanatha_chakravarti",
-        "lang": "en",
-        "content": "Vishvanatha commentary on verse 2"
+        "author": "sant_eknath",
+        "author_name": "Sant Eknath",
+        "lang": "mr",
+        "content": "ध्रुवाची निष्ठा बालवयातही संपूर्ण जगाला ईश्वरभक्तीची प्रेरणा देणारी ठरली."
       }
     ]
   }

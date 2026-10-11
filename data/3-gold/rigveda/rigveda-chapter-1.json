@@ -1,0 +1,78 @@
+[
+  {
+    "id": "rigveda_1_1",
+    "text_slug": "rigveda",
+    "chapter": 1,
+    "verse": 1,
+    "original": "अग्निमीळे पुरोहितं यज्ञस्य देवमृत्विजम् ।\nहोतारं रत्नधातमम् ॥",
+    "sanskrit": "अग्निमीळे पुरोहितं यज्ञस्य देवमृत्विजम् ।\nहोतारं रत्नधातमम् ॥",
+    "transliteration": "agnim īḷe purohitaṃ yajñasya devam ṛtvijam |\nhotāraṃ ratnadhātamam ||",
+    "translation": "I praise Agni, the chosen priest, the divine minister of sacrifice, the invoker, the greatest bestower of treasures.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "dayananda_saraswati",
+        "content": "मैं यज्ञ के पुरोहित, दिव्य, ऋत्विज, होता और रत्नों के परम दाता अग्निदेव की स्तुति करता हूँ।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "मी यज्ञाचे पुरोहित, दिव्य, ऋत्विज, होता आणि रत्नांचे श्रेष्ठ दाता अग्निदेवांची स्तुती करतो."
+      },
+      {
+        "type": "commentary",
+        "author": "sayana",
+        "author_name": "Sayanacharya",
+        "lang": "en",
+        "content": "Sayanacharya explains that 'purohitam' denotes Agni standing at the vanguard of cosmic evolution and sacrificial consciousness."
+      },
+      {
+        "type": "commentary",
+        "author": "ralph_griffith",
+        "author_name": "Ralph T.H. Griffith",
+        "lang": "en",
+        "content": "The primordial opening hymn of the Rigveda invoking the divine flame as mediator between mortals and cosmic devas."
+      }
+    ]
+  },
+  {
+    "id": "rigveda_1_2",
+    "text_slug": "rigveda",
+    "chapter": 1,
+    "verse": 2,
+    "original": "अग्निः पूर्वेभिरृषिभिरीड्यो नूतनैरुत ।\nस देवाँ एह वक्षति ॥",
+    "sanskrit": "अग्निः पूर्वेभिरृषिभिरीड्यो नूतनैरुत ।\nस देवाँ एह वक्षति ॥",
+    "transliteration": "agniḥ pūrvebhir ṛṣibhir īḍyo nūtanair uta |\nsa devāṃ eha vakṣati ||",
+    "translation": "Worthy is Agni to be praised by the ancient seers and by the modern ones; may he bring the gods hither.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "dayananda_saraswati",
+        "content": "अग्नि पूर्वकाल के ऋषियों तथा वर्तमान ऋषियों द्वारा स्तुत्य हैं; वे यहाँ देवताओं को लेकर आएँ।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "अग्नी पूर्वकालीन तसेच अर्वाचीन ऋषींनी स्तविण्यायोग्य आहेत; ते देवांना येथे घेऊन येवोत."
+      },
+      {
+        "type": "commentary",
+        "author": "sayana",
+        "author_name": "Sayanacharya",
+        "lang": "en",
+        "content": "Shows the unbroken continuity of the Vedic rishi tradition through the ages."
+      },
+      {
+        "type": "commentary",
+        "author": "dayananda_saraswati",
+        "author_name": "Swami Dayananda Saraswati",
+        "lang": "hi",
+        "content": "अग्नि भौतिक और आध्यात्मिक दोनों ऊर्जाओं का मूल प्रेरक है।"
+      }
+    ]
+  }
+]

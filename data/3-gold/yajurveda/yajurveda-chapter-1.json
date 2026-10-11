@@ -1,0 +1,40 @@
+[
+  {
+    "id": "yajurveda_1_1",
+    "text_slug": "yajurveda",
+    "chapter": 1,
+    "verse": 1,
+    "original": "इषे त्वोर्जे त्वा वायव स्थ देवो वः सविता प्रार्पयतु श्रेष्ठतमाय कर्मणे ।",
+    "sanskrit": "इषे त्वोर्जे त्वा वायव स्थ देवो वः सविता प्रार्पयतु श्रेष्ठतमाय कर्मणे ।",
+    "transliteration": "iṣe tvorje tvā vāyava stha devo vaḥ savitā prārpayatu śreṣṭhatamāya karmaṇe |",
+    "translation": "For food thee, for vigor thee! Ye are winds! May the divine Savitri impel you to the most excellent action.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "dayananda_saraswati",
+        "content": "अन्न के लिए और बल के लिए हम तुम्हारा आह्वान करते हैं। तुम वायु रूप हो। सविता देव तुम्हें श्रेष्ठ कर्म (यज्ञ) के लिए प्रेरित करें।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "अन्नासाठी आणि बळासाठी आम्ही तुझे आवाहन करतो. तुम्ही वायुरूप आहात. सविता देव तुम्हाला श्रेष्ठ कर्मासाठी प्रेरित करो."
+      },
+      {
+        "type": "commentary",
+        "author": "uvvata",
+        "author_name": "Uvvata",
+        "lang": "en",
+        "content": "The foundational invocation of the Shukla Yajurveda dedicating all energy to selfless sacrifice."
+      },
+      {
+        "type": "commentary",
+        "author": "mahidhara",
+        "author_name": "Mahidhara",
+        "lang": "en",
+        "content": "Mahidhara's Vedadipa provides liturgical guidance and metaphysical significance for Adhyaya 1."
+      }
+    ]
+  }
+]

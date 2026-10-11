@@ -1,1 +1,40 @@
-[{"verse": 1, "sanskrit": "Om namo bhagavate vasudevaya 10.1", "transliteration": "Om namo bhagavate vasudevaya 10.1", "translation": "English translation for 10.1"}, {"verse": 2, "sanskrit": "Om namo bhagavate vasudevaya 10.2", "transliteration": "Om namo bhagavate vasudevaya 10.2", "translation": "English translation for 10.2"}]
+[
+  {
+    "id": "bhagavata-purana_10_1",
+    "text_slug": "bhagavata-purana",
+    "chapter": 10,
+    "verse": 1,
+    "original": "कृष्णस्तु भगवान् स्वयम् ।\nइन्द्रारिव्याकुलं लोकं मृडयन्ति युगे युगे ॥",
+    "sanskrit": "कृष्णस्तु भगवान् स्वयम् ।\nइन्द्रारिव्याकुलं लोकं मृडयन्ति युगे युगे ॥",
+    "transliteration": "kṛṣṇas tu bhagavān svayam |\nindrāri-vyākulaṃ lokaṃ mṛḍayanti yuge yuge ||",
+    "translation": "All the incarnations are either plenary portions or portions of the plenary portions of the Lord, but Lord Sri Krishna is the original Personality of Godhead Himself.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "समस्त अवतार भगवान के अंश अथवा कला हैं, किन्तु भगवान श्रीकृष्ण स्वयं साक्षात् परब्रह्म परमात्मा हैं।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "sant_eknath",
+        "content": "सर्व अवतार हे भगवंताचे अंश आहेत, परंतु भगवान श्रीकृष्ण हे साक्षात परिपूर्ण परब्रह्म आहेत."
+      },
+      {
+        "type": "commentary",
+        "author": "sridhara_swami",
+        "author_name": "Sridhara Swami",
+        "lang": "en",
+        "content": "The central Paribhasha Sutra of the entire Srimad Bhagavatam, establishing the ontological supremacy of Sri Krishna."
+      },
+      {
+        "type": "commentary",
+        "author": "prabhupada",
+        "author_name": "A.C. Bhaktivedanta Swami Prabhupada",
+        "lang": "en",
+        "content": "Canto 10 is the very heart and sweet countenance of the Bhagavata, singing the divine leelas in Vrindavan and Mathura."
+      }
+    ]
+  }
+]

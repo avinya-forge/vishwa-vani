@@ -1,0 +1,40 @@
+[
+  {
+    "id": "mahabharata_17_1",
+    "text_slug": "mahabharata",
+    "chapter": 17,
+    "verse": 1,
+    "original": "त्यक्त्वा राज्यं च भोगांश्च पाण्डवा भ्रातृभिः सह ।\nप्रतस्थिरे महात्मानो महाप्रस्थानमुत्तमम् ॥",
+    "sanskrit": "त्यक्त्वा राज्यं च भोगांश्च पाण्डवा भ्रातृभिः सह ।\nप्रतस्थिरे महात्मानो महाप्रस्थानमुत्तमम् ॥",
+    "transliteration": "tyaktvā rājyaṃ ca bhogāṃśca pāṇḍavā bhrātṛbhiḥ saha |\npratasthire mahātmāno mahāprasthānam uttamam ||",
+    "translation": "Renouncing kingdom and pleasures, the noble Pandava brothers together with Draupadi set forth upon the supreme Great Journey towards the Himalayas.",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "gita_press",
+        "content": "राज्य और समस्त सुखों का परित्याग कर महात्मा पाण्डव भाई द्रौपदी सहित हिमालय की ओर महाप्रस्थान के पावन मार्ग पर निकल पड़े।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "राज्य आणि सर्व सुखांचा त्याग करून पांडव द्रौपदीसह हिमालयाकडे महाप्रस्थानाच्या श्रेष्ठ मार्गावर निघाले."
+      },
+      {
+        "type": "commentary",
+        "author": "km_ganguli",
+        "author_name": "Kisari Mohan Ganguli",
+        "lang": "en",
+        "content": "The Pandavas crown Parikshit as emperor in Hastinapura and Vajra in Mathura, turning their gaze toward immortality."
+      },
+      {
+        "type": "commentary",
+        "author": "bori",
+        "author_name": "BORI Critical Edition",
+        "lang": "en",
+        "content": "Accompanied by a faithful dog—Dharma incarnate—Yudhishthira perseveres on the arduous mountain climb."
+      }
+    ]
+  }
+]

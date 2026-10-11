@@ -1,0 +1,40 @@
+[
+  {
+    "id": "yajurveda_36_1",
+    "text_slug": "yajurveda",
+    "chapter": 36,
+    "verse": 1,
+    "original": "द्यौः शान्तिरन्तरिक्षं शान्तिः पृथिवी शान्तिरापः शान्तिरोषधयः शान्तिः ।\nवनस्पतयः शान्तिर्विश्वेदेवाः शान्तिर्ब्रह्म शान्तिः सर्वं शान्तिः शान्तिरेव शान्तिः सा मा शान्तिरेधि ॥\nॐ शान्तिः शान्तिः शान्तिः ॥",
+    "sanskrit": "द्यौः शान्तिरन्तरिक्षं शान्तिः पृथिवी शान्तिरापः शान्तिरोषधयः शान्तिः ।\nवनस्पतयः शान्तिर्विश्वेदेवाः शान्तिर्ब्रह्म शान्तिः सर्वं शान्तिः शान्तिरेव शान्तिः सा मा शान्तिरेधि ॥\nॐ शान्तिः शान्तिः शान्तिः ॥",
+    "transliteration": "dyauḥ śāntir antarikṣaṃ śāntiḥ pṛthivī śāntir āpaḥ śāntir oṣadhayaḥ śāntiḥ |\nvanaspatayaḥ śāntir viśvedevāḥ śāntiḥ brahma śāntiḥ sarvaṃ śāntiḥ śāntir eva śāntiḥ sā mā śāntir edhi ||\noṃ śāntiḥ śāntiḥ śāntiḥ ||",
+    "translation": "May peace radiate there in the whole sky as well as in the vast ethereal space! May peace reign all over this earth, in the waters, in the medicinal herbs and trees! May peace prevail among all deities, in the Absolute, and in all cosmic existence! Peace, peace, peace!",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "dayananda_saraswati",
+        "content": "द्युलोक में शांति हो, अंतरिक्ष में शांति हो, पृथ्वी पर शांति हो, जल में शांति हो, औषधियों और वनस्पतियों में शांति हो, समस्त देवों और ब्रह्म में शांति हो, सर्वत्र शांति ही शांति हो। ॐ शांतिः शांतिः शांतिः।"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "स्वर्गात शांती असो, अंतराळात शांती असो, पृथ्वीवर शांती असो, जलात शांती असो, औषधी व वनस्पतींमध्ये शांती असो, सर्व देवांमध्ये शांती असो, सर्वत्र शांतीच शांती असो. ॐ शांतीः शांतीः शांतीः."
+      },
+      {
+        "type": "commentary",
+        "author": "uvvata",
+        "author_name": "Uvvata",
+        "lang": "en",
+        "content": "Yajurveda 36.17: The universal peace prayer of the Sanatana Dharma chanted at the conclusion of all Vedic rites."
+      },
+      {
+        "type": "commentary",
+        "author": "mahidhara",
+        "author_name": "Mahidhara",
+        "lang": "en",
+        "content": "Mahidhara's Vedadipa provides liturgical guidance and metaphysical significance for Adhyaya 36."
+      }
+    ]
+  }
+]

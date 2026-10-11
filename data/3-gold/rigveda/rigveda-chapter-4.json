@@ -1,0 +1,40 @@
+[
+  {
+    "id": "rigveda_4_1",
+    "text_slug": "rigveda",
+    "chapter": 4,
+    "verse": 1,
+    "original": "अहं मनुरभवं सूर्यश्चाहं कक्षीवाँ ऋषिरस्मि विप्रः ।\nअहं कुत्समार्जुनेयं न्यृञ्जेऽहं कविरुशना पश्यता मा ॥",
+    "sanskrit": "अहं मनुरभवं सूर्यश्चाहं कक्षीवाँ ऋषिरस्मि विप्रः ।\nअहं कुत्समार्जुनेयं न्यृञ्जेऽहं कविरुशना पश्यता मा ॥",
+    "transliteration": "ahaṃ manur abhavaṃ sūryaś cāhaṃ kakṣīvāṃ ṛṣir asmi vipraḥ |\nahaṃ kutsam ārjuneyaṃ nyṛñje 'haṃ kavir uśanā paśyatā mā ||",
+    "translation": "Sage Vamadeva realized in cosmic consciousness: I was Manu, and I was the Sun; I am the wise seer Kakshivan; I am the poet Ushana; behold Me!",
+    "layers": [
+      {
+        "type": "translation",
+        "lang": "hi",
+        "author": "dayananda_saraswati",
+        "content": "महर्षि वामदेव ने आत्मसाक्षात्कार कर कहा: मैं ही मनु हुआ, मैं ही सूर्य बना, मैं ही मेधावी कक्षीवान ऋषि हूँ; मुझ परमात्मस्वरूप को देखो!"
+      },
+      {
+        "type": "translation",
+        "lang": "mr",
+        "author": "traditional",
+        "content": "महर्षी वामदेवांनी आत्मसाक्षात्कारातून उद्गार काढले: मीच मनु झालो, मीच सूर्य झालो; मीच ज्ञानी कक्षीवान ऋषी आहे; माझ्या आत्मरूपाचे दर्शन घ्या!"
+      },
+      {
+        "type": "commentary",
+        "author": "sayana",
+        "author_name": "Sayanacharya",
+        "lang": "en",
+        "content": "Rigveda 4.26.1: Cited in the Brihadaranyaka Upanishad (1.4.10) as the primordial scriptural demonstration of Aham Brahmasmi (I am the Absolute)."
+      },
+      {
+        "type": "commentary",
+        "author": "ralph_griffith",
+        "author_name": "Ralph T.H. Griffith",
+        "lang": "en",
+        "content": "The mystic seer declares his unity with all cosmic manifestations in exalted Vedic ecstasy."
+      }
+    ]
+  }
+]
