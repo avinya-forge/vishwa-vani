@@ -212,10 +212,10 @@ export class VedicDataService {
         text_slug: (v.text_slug as string) || '',
         chapter: (v.chapter !== undefined ? v.chapter : v.chapter_id) as number,
         verse: (v.verse !== undefined ? v.verse : v.verse_num) as string | number,
-        original: (v.original || v.original_sanskrit) as string,
-        transliteration: v.transliteration as string | undefined,
+        original: (v.original || v.original_sanskrit || v.sanskrit) as string,
+        transliteration: (v.transliteration || v.iast) as string | undefined,
         translation: (v.translation || v.meaning || ((v.layers as Record<string, unknown>[]) || []).find((l: unknown) => (l as Record<string, unknown>).type === 'translation')?.content) as string | undefined,
-        layers: this.pruneLayersToTwoAuthors((v.layers as Record<string, unknown>[]) || []),
+        layers: this.pruneLayersToTwoAuthors((v.layers as Record<string, unknown>[]) || (v.commentaries as Record<string, unknown>[]) || []),
         uiMetadata: {
           readingTime: this.calculateReadingTime(verse as Record<string, unknown>),
           complexityScore: this.calculateComplexity(verse as Record<string, unknown>),

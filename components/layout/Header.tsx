@@ -184,6 +184,11 @@ export default function Header({ stats }: { stats?: HeaderStatsProp }) {
               )}
             </div>
 
+            <Link href="/essence" className={`flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-bold transition-all focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:outline-none ${pathname.startsWith('/essence') ? 'text-orange-600 bg-orange-50 dark:bg-orange-950/40' : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 hover:bg-stone-50 dark:hover:bg-stone-800'}`}>
+              <span>⚡</span>
+              <span>1-Hr Essence</span>
+            </Link>
+
             <Link href="/search" className={`flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-bold transition-all focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:outline-none ${pathname === '/search' ? 'text-orange-600 bg-orange-50 dark:bg-orange-950/40' : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 hover:bg-stone-50 dark:hover:bg-stone-800'}`}>
               <span>🔍</span>
               <span>Search</span>
@@ -257,6 +262,10 @@ export default function Header({ stats }: { stats?: HeaderStatsProp }) {
             ))}
             <div className="border-t border-stone-100 dark:border-stone-800 mt-5 pt-5 space-y-1.5">
               
+              <Link href="/essence" onClick={() => setShowMobileMenu(false)} className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all text-sm font-bold ${pathname.startsWith('/essence') ? 'text-orange-600 bg-orange-50 dark:bg-orange-950/30' : 'text-stone-600 dark:text-stone-400 hover:bg-stone-50 dark:hover:bg-stone-800'}`}>
+                <span>⚡</span>
+                <span>1-Hour Essence</span>
+              </Link>
               <Link href="/search" onClick={() => setShowMobileMenu(false)} className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-stone-50 dark:hover:bg-stone-800 transition-all text-sm font-bold text-stone-600 dark:text-stone-400">
                 <span>🔍</span>
                 <span>Deep Search</span>

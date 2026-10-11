@@ -58,92 +58,92 @@
       "chapters": [
         {
           "number": 1,
-          "file": "chapter-1.json",
+          "file": "bhagavad-gita-chapter-1.json",
           "verse_count": 47
         },
         {
           "number": 2,
-          "file": "chapter-2.json",
+          "file": "bhagavad-gita-chapter-2.json",
           "verse_count": 72
         },
         {
           "number": 3,
-          "file": "chapter-3.json",
+          "file": "bhagavad-gita-chapter-3.json",
           "verse_count": 43
         },
         {
           "number": 4,
-          "file": "chapter-4.json",
+          "file": "bhagavad-gita-chapter-4.json",
           "verse_count": 42
         },
         {
           "number": 5,
-          "file": "chapter-5.json",
+          "file": "bhagavad-gita-chapter-5.json",
           "verse_count": 29
         },
         {
           "number": 6,
-          "file": "chapter-6.json",
+          "file": "bhagavad-gita-chapter-6.json",
           "verse_count": 47
         },
         {
           "number": 7,
-          "file": "chapter-7.json",
+          "file": "bhagavad-gita-chapter-7.json",
           "verse_count": 30
         },
         {
           "number": 8,
-          "file": "chapter-8.json",
+          "file": "bhagavad-gita-chapter-8.json",
           "verse_count": 28
         },
         {
           "number": 9,
-          "file": "chapter-9.json",
+          "file": "bhagavad-gita-chapter-9.json",
           "verse_count": 34
         },
         {
           "number": 10,
-          "file": "chapter-10.json",
+          "file": "bhagavad-gita-chapter-10.json",
           "verse_count": 42
         },
         {
           "number": 11,
-          "file": "chapter-11.json",
+          "file": "bhagavad-gita-chapter-11.json",
           "verse_count": 55
         },
         {
           "number": 12,
-          "file": "chapter-12.json",
+          "file": "bhagavad-gita-chapter-12.json",
           "verse_count": 20
         },
         {
           "number": 13,
-          "file": "chapter-13.json",
+          "file": "bhagavad-gita-chapter-13.json",
           "verse_count": 35
         },
         {
           "number": 14,
-          "file": "chapter-14.json",
+          "file": "bhagavad-gita-chapter-14.json",
           "verse_count": 27
         },
         {
           "number": 15,
-          "file": "chapter-15.json",
+          "file": "bhagavad-gita-chapter-15.json",
           "verse_count": 20
         },
         {
           "number": 16,
-          "file": "chapter-16.json",
+          "file": "bhagavad-gita-chapter-16.json",
           "verse_count": 24
         },
         {
           "number": 17,
-          "file": "chapter-17.json",
+          "file": "bhagavad-gita-chapter-17.json",
           "verse_count": 28
         },
         {
           "number": 18,
-          "file": "chapter-18.json",
+          "file": "bhagavad-gita-chapter-18.json",
           "verse_count": 78
         }
       ],

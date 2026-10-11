@@ -50,14 +50,36 @@
 - [x] `DEPLOY-003` **Create Rating Telemetry Component**: Implemented responsive star-rating widget under active scholar cards in `components/shloka/study-client.tsx`.
 
 ---
-## 🛡️ EPIC-SECURITY-OWASP-APPSEC [ACTIVE & CRITICAL]
-*Comprehensive application security audit and vulnerability mitigation covering OWASP Top 10 Web Application Security Risks and OWASP Top 10 for Large Language Models (LLMs).*
 
-- [ ] `SEC-OWASP-006` **[P2-MEDIUM] NPM Audit Supply Chain Vulnerability Mitigation (A06)**: Audit package lockfile to eliminate 32 high-severity transitive vulnerabilities affecting development and test dependencies (`braces`, `micromatch`, `fast-glob`) using npm `overrides` in `package.json`.
-- [ ] `SEC-OWASP-007` **[P2-MEDIUM] Bronze Source Cryptographic Provenance (A08)**: Add mandatory SHA-256 integrity checksums to `book.meta.json` for every downloaded bronze source file to guarantee against tampered or corrupted offline data drops.
-- [ ] `SEC-OWASP-008` **[P2-MEDIUM] Structured Security Telemetry & Anonymized Audit Logging (A09)**: Replace raw `console.error` in API routes with structured JSON telemetry logging timestamps, hashed IP addresses, route endpoints, status codes, and latency, without leaking PII or secrets.
+## 🤖 EPIC-LOCAL-LLM-CHAT-SEARCH [ACTIVE - HIGH PRIORITY]
+*Redesign search into conversational Vedic Saṁvāda interface powered by lightweight local LLM with zero-server-load WebGPU in-browser inference and decoupled token-bucket edge fallback (governed by ADR-005).*
+
+- [ ] `LLM-001` **[P0-CRITICAL] WebGPU In-Browser Inference Pipeline**: Integrate `@mlc-ai/web-llm` running quantized Qwen-2.5-0.5B-Instruct / SmolLM-135M directly inside the user's browser, eliminating 100% server compute and memory pressure under arbitrary concurrent load.
+- [ ] `LLM-002` **[P1-HIGH] Vedic Saṁvāda Conversational UI**: Redesign `/search` from a static keyword filter into an interactive philosophical dialogue workbench with stream rendering, question suggestions, and verified scriptural citations (`[BG 2.47]`, `[Katha 1.2.1]`).
+- [ ] `LLM-003` **[P1-HIGH] Decoupled Edge API & Token-Bucket Rate Limiter**: Host Ollama/vLLM on an Oracle Cloud Always-Free ARM instance (24GB RAM) with Redis/in-memory token-bucket concurrency queue for low-spec devices lacking WebGPU hardware.
+- [ ] `LLM-004` **[P1-HIGH] Concurrency & Load Benchmark Suite**: Formulate load tests simulating 100+ concurrent queries against the edge gateway to verify p95 latency < 1.5s and validate circuit breaker protection against server OOM crashes.
 
 ---
+
+## 🏛️ EPIC-VEDIC-LABS-STUDIO-REFACTOR [ACTIVE - HIGH PRIORITY]
+*De-clutter Vedic Labs into a categorized studio workbench and eliminate intrusive overlays/collapsible drawer clutter from the primary shloka reading canvas.*
+
+- [x] `LAB-003` **[P0-CRITICAL] Vedic Labs Studio Workbench Overhaul**: Redesign `/lab` from a cluttered 36-widget mosaic into a sleek Categorized Studio Explorer (Tabs: *All Labs*, *Scripture Companions*, *Philosophical Disciplines*, *Classical Instruments*) with focused single-tool preview workspaces.
+- [ ] `LAB-004` **[P1-HIGH] Scripture Companion Extraction**: Extract and refine dedicated interactive companion labs for each of the 17 canonical Gold scriptures (e.g. Gita Kurukshetra Vyuha, Katha Nachiketa Fire Lab, Yoga Sutra Citta Vritti Wheel).
+- [x] `LAB-005` **[P1-HIGH] Reading Canvas De-Cluttering**: Clean up `components/shloka/study-client.tsx` by removing awkward floating drawer buttons that cram the reading canvas; replace with clean docked companion sections.
+
+---
+
+## ⚡ EPIC-SPEED-READER-TATTVA-SAMGRAHA [ACTIVE - HIGH PRIORITY]
+*Pre-computed 1-hour executive digests ("Tattva Saṁgraha") for rapid learners, featuring core crisis context, 8–12 pinnacle signpost verses, philosophical pillars, and 1-click deep-dive links into the full reading canvas (governed by ADR-006).*
+
+- [x] `SPEED-001` **[P0-CRITICAL] Canonical Tattva Saṁgraha Engine**: Create `lib/speed-reader.ts` providing structured 45–60 minute digests for all 17 Gold scriptures with zero runtime LLM latency.
+- [x] `SPEED-002` **[P1-HIGH] Dedicated Essence Discovery Hub (`/essence`)**: Build high-performance reading route featuring estimated read times, audio chanting accompaniment, key verse signposts, and deep-dive links to the shloka study canvas.
+- [x] `SPEED-003` **[P1-HIGH] In-Reader Fast Track Banner**: Embed "⚡ 45-Minute Vedic Essence" CTA banner on scripture overview pages (`/read/[slug]`) allowing seekers to grasp core concepts before reading complete chapters.
+- [ ] `SPEED-004` **[P2-MEDIUM] Offline Distillation CLI Pipeline**: Implement `scripts/distill_tattva_samgraha.py` to automatically draft Tattva Saṁgraha JSON from raw Silver NVF shards using local LLM with mandatory Sanskrit scholar sign-off.
+
+---
+
 
 ## 🟢 EPIC-BOOK-DASBODH [QUEUED - TIER: BRONZE | SIZE: L | 35 PTS]
 *Dasbodh of Samarth Ramdas Swami: 20 Dashakas, 200 Samasas, 7,751 Ovis. Masterpiece of practical spirituality and statecraft.*

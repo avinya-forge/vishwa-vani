@@ -1,4 +1,4 @@
-﻿'use client'
+'use client'
 
 import React, { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
@@ -247,8 +247,6 @@ export default function StudyClient({
 
   const defaultLanguage = 'en'
 
-  const [isStudyDrawerOpen, setIsStudyDrawerOpen] = useState(false)
-  const [studyDrawerTab, setStudyDrawerTab] = useState<'labs' | 'tools'>('labs')
   const [scholarSelection, setScholarSelection] = useState<string[]>([])
   const [languageSelection, setLanguageSelection] = useState<string>('en')
   const [activeAdhyaya, setActiveAdhyaya] = useState<number>(currentAdhyaya || 1)
@@ -719,19 +717,26 @@ export default function StudyClient({
               )}
             </div>
 
-            {/* Vedic Labs & Tools Drawer triggers */}
+            {/* Vedic Labs & Tools Navigation */}
             <div className="flex items-center gap-1.5 flex-shrink-0">
               <button
-                onClick={() => { setStudyDrawerTab('labs'); setIsStudyDrawerOpen(true); }}
-                title="Open Vedic Labs"
+                onClick={() => {
+                  const el = document.getElementById('chapter-companion-section')
+                  if (el) el.scrollIntoView({ behavior: 'smooth' })
+                  else router.push(`/lab?scripture=${textSlug}`)
+                }}
+                title="View Chapter Vedic Labs"
                 className="px-2.5 py-1.5 rounded-xl border border-stone-200 dark:border-stone-700 bg-white dark:bg-stone-800 text-stone-600 dark:text-stone-300 hover:text-orange-600 hover:border-orange-400 dark:hover:border-orange-500 text-[11px] font-bold flex items-center gap-1.5 transition-all shadow-sm"
               >
                 <span>🧪</span>
                 <span className="hidden sm:inline">Vedic Labs</span>
               </button>
               <button
-                onClick={() => { setStudyDrawerTab('tools'); setIsStudyDrawerOpen(true); }}
-                title="Open Chapter Tools"
+                onClick={() => {
+                  const el = document.getElementById('chapter-tools-section')
+                  if (el) el.scrollIntoView({ behavior: 'smooth' })
+                }}
+                title="View Chapter Tools"
                 className="px-2.5 py-1.5 rounded-xl border border-stone-200 dark:border-stone-700 bg-white dark:bg-stone-800 text-stone-600 dark:text-stone-300 hover:text-orange-600 hover:border-orange-400 dark:hover:border-orange-500 text-[11px] font-bold flex items-center gap-1.5 transition-all shadow-sm"
               >
                 <span>🛠️</span>
@@ -969,7 +974,7 @@ export default function StudyClient({
           </div>
 
           {/* CHAPTER COMPANION & VEDIC LABS SECTION */}
-          <div className="mt-16 sm:mt-24 pt-10 border-t border-stone-200 dark:border-stone-800 space-y-8">
+          <div id="chapter-companion-section" className="mt-16 sm:mt-24 pt-10 border-t border-stone-200 dark:border-stone-800 space-y-8">
             <div className="text-center max-w-xl mx-auto">
               <h2 className="text-2xl font-serif font-black text-stone-900 dark:text-stone-100">
                 Chapter Study &amp; Explorations
@@ -977,6 +982,27 @@ export default function StudyClient({
               <p className="text-xs sm:text-sm text-stone-500 dark:text-stone-400 mt-1">
                 Deepen your contemplation with experimental tools, Sanskrit linguistics, and lineage cross-references.
               </p>
+            </div>
+
+            {/* ⚡ 1-Hour Speed Reader (Tattva Samgraha) banner */}
+            <div className="p-6 sm:p-7 rounded-3xl bg-gradient-to-r from-orange-500/10 via-amber-500/10 to-orange-500/10 border border-orange-200/80 dark:border-orange-800/60 flex flex-col sm:flex-row items-center justify-between gap-4">
+              <div className="space-y-1 text-center sm:text-left">
+                <div className="flex items-center justify-center sm:justify-start gap-2">
+                  <span className="text-base">⚡</span>
+                  <span className="text-xs font-black uppercase tracking-widest text-orange-800 dark:text-orange-400">
+                    Tattva Saṁgraha • 1-Hour Speed Read
+                  </span>
+                </div>
+                <p className="text-xs text-stone-600 dark:text-stone-300">
+                  Short on time? Master the foundational breakthrough, core crisis, and pinnacle signpost verses of this scripture in under 50 minutes.
+                </p>
+              </div>
+              <Link
+                href={`/essence/${textSlug}`}
+                className="flex-shrink-0 px-5 py-2.5 rounded-xl bg-orange-600 hover:bg-orange-700 text-white text-xs font-bold uppercase tracking-wider transition-all shadow-md"
+              >
+                Open 1-Hour Read &rarr;
+              </Link>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -990,29 +1016,29 @@ export default function StudyClient({
                     </h3>
                   </div>
                   <div className="space-y-3">
-                    <Link href="/lab" className="block p-3.5 bg-stone-50/70 dark:bg-stone-800/40 hover:bg-orange-50/50 dark:hover:bg-orange-950/20 rounded-2xl border border-stone-100 dark:border-stone-800/60 hover:border-orange-200 dark:hover:border-orange-900/40 transition-all">
+                    <Link href={`/lab?scripture=${textSlug}`} className="block p-3.5 bg-stone-50/70 dark:bg-stone-800/40 hover:bg-orange-50/50 dark:hover:bg-orange-950/20 rounded-2xl border border-stone-100 dark:border-stone-800/60 hover:border-orange-200 dark:hover:border-orange-900/40 transition-all">
                       <div className="text-sm font-bold text-stone-800 dark:text-stone-200 mb-0.5">Semantic Explorer</div>
                       <div className="text-xs text-stone-500 dark:text-stone-400">Map conceptual connections and philosophical threads across verses.</div>
                     </Link>
-                    <Link href="/lab" className="block p-3.5 bg-stone-50/70 dark:bg-stone-800/40 hover:bg-amber-50/50 dark:hover:bg-amber-950/20 rounded-2xl border border-stone-100 dark:border-stone-800/60 hover:border-amber-200 dark:hover:border-amber-900/40 transition-all">
-                      <div className="text-sm font-bold text-stone-800 dark:text-stone-200 mb-0.5">Etymology Lab</div>
+                    <Link href={`/lab?tool=grammar-tokenizer`} className="block p-3.5 bg-stone-50/70 dark:bg-stone-800/40 hover:bg-amber-50/50 dark:hover:bg-amber-950/20 rounded-2xl border border-stone-100 dark:border-stone-800/60 hover:border-amber-200 dark:hover:border-amber-900/40 transition-all">
+                      <div className="text-sm font-bold text-stone-800 dark:text-stone-200 mb-0.5">Grammar &amp; Etymology Lab</div>
                       <div className="text-xs text-stone-500 dark:text-stone-400">Explore Sanskrit roots (dhātu), compound breakdown, and grammatical derivations.</div>
                     </Link>
-                    <Link href="/lab" className="block p-3.5 bg-stone-50/70 dark:bg-stone-800/40 hover:bg-rose-50/50 dark:hover:bg-rose-950/20 rounded-2xl border border-stone-100 dark:border-stone-800/60 hover:border-rose-200 dark:hover:border-rose-900/40 transition-all">
-                      <div className="text-sm font-bold text-stone-800 dark:text-stone-200 mb-0.5">Recitation Analysis</div>
+                    <Link href={`/lab?tool=chanting-trainer`} className="block p-3.5 bg-stone-50/70 dark:bg-stone-800/40 hover:bg-rose-50/50 dark:hover:bg-rose-950/20 rounded-2xl border border-stone-100 dark:border-stone-800/60 hover:border-rose-200 dark:hover:border-rose-900/40 transition-all">
+                      <div className="text-sm font-bold text-stone-800 dark:text-stone-200 mb-0.5">Recitation &amp; Chanting Trainer</div>
                       <div className="text-xs text-stone-500 dark:text-stone-400">Audio meter visualization, Vedic accents (svara), and phonetics.</div>
                     </Link>
                   </div>
                 </div>
                 <div className="mt-5 pt-4 border-t border-stone-100 dark:border-stone-800 text-center">
                   <Link href="/lab" className="text-xs font-bold text-orange-600 hover:text-orange-700 transition-colors">
-                    Explore All 20+ Vedic Labs &rarr;
+                    Explore All 36 Vedic Studio Labs &rarr;
                   </Link>
                 </div>
               </div>
 
               {/* Card 2: Interactive Tools & Navigation */}
-              <div className="bg-white/80 dark:bg-stone-900/60 rounded-3xl p-6 sm:p-8 border border-stone-200/80 dark:border-stone-800 shadow-sm flex flex-col justify-between">
+              <div id="chapter-tools-section" className="bg-white/80 dark:bg-stone-900/60 rounded-3xl p-6 sm:p-8 border border-stone-200/80 dark:border-stone-800 shadow-sm flex flex-col justify-between">
                 <div>
                   <div className="flex items-center gap-2.5 mb-4">
                     <span className="text-xl">🛠️</span>
@@ -1057,137 +1083,6 @@ export default function StudyClient({
         </div>
       </main>
 
-      {/* SLIDE-OVER STUDY DRAWER */}
-      {isStudyDrawerOpen && (
-        <div className="fixed inset-0 z-50 overflow-hidden" aria-labelledby="slide-over-title" role="dialog" aria-modal="true">
-          {/* Backdrop */}
-          <div
-            className="fixed inset-0 bg-stone-900/40 backdrop-blur-sm transition-opacity animate-in fade-in duration-200"
-            onClick={() => setIsStudyDrawerOpen(false)}
-          />
-
-          <div className="fixed inset-y-0 right-0 max-w-full flex pl-10">
-            <div className="w-screen max-w-md bg-white dark:bg-stone-900 shadow-2xl border-l border-stone-200 dark:border-stone-800 flex flex-col animate-in slide-in-from-right duration-200">
-              
-              {/* Drawer Header */}
-              <div className="p-4 sm:p-6 border-b border-stone-100 dark:border-stone-800 flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <button
-                    onClick={() => setStudyDrawerTab('labs')}
-                    className={`px-3 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all ${
-                      studyDrawerTab === 'labs'
-                        ? 'bg-orange-600 text-white shadow-sm'
-                        : 'text-stone-500 hover:text-stone-900 dark:hover:text-stone-200'
-                    }`}
-                  >
-                    🧪 Vedic Labs
-                  </button>
-                  <button
-                    onClick={() => setStudyDrawerTab('tools')}
-                    className={`px-3 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all ${
-                      studyDrawerTab === 'tools'
-                        ? 'bg-orange-600 text-white shadow-sm'
-                        : 'text-stone-500 hover:text-stone-900 dark:hover:text-stone-200'
-                    }`}
-                  >
-                    🛠️ Chapter Tools
-                  </button>
-                </div>
-
-                <button
-                  onClick={() => setIsStudyDrawerOpen(false)}
-                  className="p-2 rounded-lg text-stone-400 hover:text-stone-600 dark:hover:text-stone-200 hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors"
-                  aria-label="Close panel"
-                >
-                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
-                </button>
-              </div>
-
-              {/* Drawer Body */}
-              <div className="flex-1 overflow-y-auto p-4 sm:p-6 space-y-6">
-                {studyDrawerTab === 'labs' ? (
-                  <div className="space-y-4">
-                    <div>
-                      <h3 className="text-xs font-black uppercase tracking-widest text-stone-400 dark:text-stone-500 mb-1">
-                        Vedic Labs for {bookData?.name || textSlug}
-                      </h3>
-                      <p className="text-xs text-stone-500">Explore interactive modules for deep scriptural comprehension.</p>
-                    </div>
-
-                    <div className="space-y-3">
-                      <Link href="/lab" onClick={() => setIsStudyDrawerOpen(false)} className="block p-4 rounded-2xl bg-stone-50 dark:bg-stone-800/50 hover:bg-orange-50/50 dark:hover:bg-orange-950/20 border border-stone-200/60 dark:border-stone-800 transition-all">
-                        <div className="flex items-center gap-3 mb-1">
-                          <span className="text-xl">🧬</span>
-                          <span className="text-sm font-bold text-stone-800 dark:text-stone-200">Semantic Explorer</span>
-                        </div>
-                        <p className="text-xs text-stone-500 pl-8">Visualize conceptual connections across verses and philosophical schools.</p>
-                      </Link>
-
-                      <Link href="/lab" onClick={() => setIsStudyDrawerOpen(false)} className="block p-4 rounded-2xl bg-stone-50 dark:bg-stone-800/50 hover:bg-amber-50/50 dark:hover:bg-amber-950/20 border border-stone-200/60 dark:border-stone-800 transition-all">
-                        <div className="flex items-center gap-3 mb-1">
-                          <span className="text-xl">📜</span>
-                          <span className="text-sm font-bold text-stone-800 dark:text-stone-200">Etymology Lab</span>
-                        </div>
-                        <p className="text-xs text-stone-500 pl-8">Dive deep into Sanskrit roots (dhātu) and traditional grammar.</p>
-                      </Link>
-
-                      <Link href="/lab" onClick={() => setIsStudyDrawerOpen(false)} className="block p-4 rounded-2xl bg-stone-50 dark:bg-stone-800/50 hover:bg-rose-50/50 dark:hover:bg-rose-950/20 border border-stone-200/60 dark:border-stone-800 transition-all">
-                        <div className="flex items-center gap-3 mb-1">
-                          <span className="text-xl">🎵</span>
-                          <span className="text-sm font-bold text-stone-800 dark:text-stone-200">Recitation Analysis</span>
-                        </div>
-                        <p className="text-xs text-stone-500 pl-8">Audio meter visualization, syllable weight, and Vedic chanting rules.</p>
-                      </Link>
-                    </div>
-
-                    <div className="pt-4 border-t border-stone-100 dark:border-stone-800 text-center">
-                      <Link
-                        href="/lab"
-                        onClick={() => setIsStudyDrawerOpen(false)}
-                        className="w-full inline-block py-2.5 px-4 rounded-xl bg-orange-600 hover:bg-orange-700 text-white text-xs font-bold uppercase tracking-wider transition-colors shadow-sm"
-                      >
-                        Visit All Vedic Labs &rarr;
-                      </Link>
-                    </div>
-                  </div>
-                ) : (
-                  <div className="space-y-4">
-                    <div>
-                      <h3 className="text-xs font-black uppercase tracking-widest text-stone-400 dark:text-stone-500 mb-1">
-                        Chapter {chapter} Tools
-                      </h3>
-                      <p className="text-xs text-stone-500">Contextual tools tailored to this chapter.</p>
-                    </div>
-
-                    <VerseAppLinks bookSlug={textSlug} chapter={chapter} />
-
-                    <div className="p-4 rounded-2xl bg-orange-50/60 dark:bg-orange-950/20 border border-orange-100 dark:border-orange-900/30">
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="text-lg">🧠</span>
-                        <span className="text-xs font-bold text-orange-900 dark:text-orange-300">Cognitive Synthesis</span>
-                      </div>
-                      <p className="text-xs text-orange-700/80 dark:text-orange-400/80 leading-relaxed mb-3">
-                        Generate cross-scholar commentary summaries for this entire chapter to distill key insights.
-                      </p>
-                      <button
-                        onClick={() => {
-                          _synthesizeEntireChapter();
-                          setIsStudyDrawerOpen(false);
-                        }}
-                        disabled={_isChapterSynthesizing}
-                        className="w-full py-2 px-3 rounded-lg bg-orange-600 hover:bg-orange-700 disabled:opacity-50 text-white text-xs font-bold transition-all"
-                      >
-                        {_isChapterSynthesizing ? 'Synthesizing...' : 'Run Chapter AI Synthesis'}
-                      </button>
-                    </div>
-                  </div>
-                )}
-              </div>
-
-            </div>
-          </div>
-        </div>
-      )}
     </>
   )
 }
