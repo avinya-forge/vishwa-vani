@@ -1,69 +1,234 @@
-{
-  "text": "samskaras",
-  "chapter": 3,
-  "verses": [
-    {
-      "id": "samskaras_3_1",
-      "text_slug": "samskaras",
-      "chapter": 3,
-      "verse": 1,
-      "original": "Raw Sanskrit for samskaras 3.1",
-      "transliteration": "Translit for samskaras 3.1",
-      "translation": "Raw meaning for samskaras 3.1",
-      "layers": [
-        {
-          "type": "commentary",
-          "author": "Swami Vivekananda",
-          "content": "Vivekananda's commentary on samskaras 3.1"
-        },
-        {
-          "type": "commentary",
-          "author": "Srila Prabhupada",
-          "content": "Prabhupada's commentary on samskaras 3.1"
-        }
-      ]
-    },
-    {
-      "id": "samskaras_3_2",
-      "text_slug": "samskaras",
-      "chapter": 3,
-      "verse": 2,
-      "original": "Raw Sanskrit for samskaras 3.2",
-      "transliteration": "Translit for samskaras 3.2",
-      "translation": "Raw meaning for samskaras 3.2",
-      "layers": [
-        {
-          "type": "commentary",
-          "author": "Swami Vivekananda",
-          "content": "Vivekananda's commentary on samskaras 3.2"
-        },
-        {
-          "type": "commentary",
-          "author": "Srila Prabhupada",
-          "content": "Prabhupada's commentary on samskaras 3.2"
-        }
-      ]
-    },
-    {
-      "id": "samskaras_3_3",
-      "text_slug": "samskaras",
-      "chapter": 3,
-      "verse": 3,
-      "original": "Raw Sanskrit for samskaras 3.3",
-      "transliteration": "Translit for samskaras 3.3",
-      "translation": "Raw meaning for samskaras 3.3",
-      "layers": [
-        {
-          "type": "commentary",
-          "author": "Swami Vivekananda",
-          "content": "Vivekananda's commentary on samskaras 3.3"
-        },
-        {
-          "type": "commentary",
-          "author": "Srila Prabhupada",
-          "content": "Prabhupada's commentary on samskaras 3.3"
-        }
-      ]
-    }
-  ]
-}
+[
+  {
+    "id": "samskaras_3_1",
+    "text_slug": "samskaras",
+    "chapter": 3,
+    "verse": 1,
+    "original": "ॐ गौरीं कन्यामिमां विप्र यथाशक्ति समलंकृताम् ।\nतुभ्यं दास्यामि विप्रर्षे धर्मकामार्थसिद्धये ॥",
+    "transliteration": "oṃ gaurīṃ kanyāmimāṃ vipra yathāśakti samalaṃkṛtām |\ntubhyaṃ dāsyāmi viprarṣe dharmakāmārthasiddhaye ||",
+    "translation": "I offer this noble, virtuous maiden, adorned according to our capacity, unto you, O righteous groom, for the mutual attainment of Dharma, Artha, and noble love.",
+    "meaning": "15. Vivaha Samskara — Kanyadana: The sacred institution of marriage uniting two souls as equal spiritual partners (Dharmapatni and Dharmapati) to uphold family and cosmic duty.",
+    "layers": [
+      {
+        "author": "ashvalayana",
+        "author_name": "Āśvalāyana Gṛhya Sūtra",
+        "author_label": "Vedic Ritual Tradition",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Marriage is the central pillar among all sixteen samskaras, supporting the other three ashramas. The bride and groom enter a lifelong sacred partnership grounded in mutual respect."
+      },
+      {
+        "author": "dr-pandey",
+        "author_name": "Dr. Rajbali Pandey",
+        "author_label": "Socio-Religious Heritage",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "विवाह संस्कार हिंदू संस्कृति का मेरुदंड है, जो केवल दो शरीरों का नहीं अपितु दो आत्माओं और दो कुलों का पवित्र धार्मिक मिलन है।"
+      }
+    ]
+  },
+  {
+    "id": "samskaras_3_2",
+    "text_slug": "samskaras",
+    "chapter": 3,
+    "verse": 2,
+    "original": "ॐ गृभ्णामि ते सौभगत्वाय हस्तं मया पत्या जरदष्टिर्यथासः ।\nभगो अर्यमा सविता पुरन्धिर्मह्यं त्वादुर्गार्हपत्याय देवाः ॥",
+    "transliteration": "oṃ gṛbhṇāmi te saubhagatvāya hastaṃ mayā patyā jaradaṣṭiryathāsaḥ |\nbhago aryamā savitā purandhirmahyaṃ tvādurgārhapatyāya devāḥ ||",
+    "translation": "I take your hand for mutual happiness and prosperity, that together with me your husband you may reach a ripe and blessed old age. The divine powers have united us to rule our household in righteousness.",
+    "meaning": "Panigrahana (Clasping the Hand): The groom takes the bride's right hand over the sacred fire, uttering the ancient Rigvedic vow (RV 10.85.36) of lifelong faithfulness and shared destiny.",
+    "layers": [
+      {
+        "author": "ashvalayana",
+        "author_name": "Āśvalāyana Gṛhya Sūtra",
+        "author_label": "Vedic Ritual Tradition",
+        "lang": "en",
+        "type": "commentary",
+        "content": "The Panigrahana ceremony signifies an irrevocable bond of shared duty (Sahadharma), where husband and wife face the trials of life as one indivisible unit."
+      },
+      {
+        "author": "dr-pandey",
+        "author_name": "Dr. Rajbali Pandey",
+        "author_label": "Socio-Religious Heritage",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "पाणिग्रहण विधीमध्ये पती पत्नीचा हात धरून आयुष्यभर एकत्र राहण्याची आणि संसाराची धुरा सांभाळण्याची शपथ घेतो."
+      }
+    ]
+  },
+  {
+    "id": "samskaras_3_3",
+    "text_slug": "samskaras",
+    "chapter": 3,
+    "verse": 3,
+    "original": "ॐ एकमिषे विष्णुस्त्वान्वेतु । द्वे ऊर्जे विष्णुस्त्वान्वेतु ।\nत्रीणि रायस्पोषाय विष्णुस्त्वान्वेतु । चत्वारि मायोभवाय विष्णुस्त्वान्वेतु ॥",
+    "transliteration": "oṃ ekamiṣe viṣṇustvānbvetu | dve ūrje viṣṇustvānbvetu |\ntrīṇi rāyaspoṣāya viṣṇustvānbvetu | catvāri māyobhavāya viṣṇustvānbvetu ||",
+    "translation": "Step one: May Vishnu guide you for wholesome nourishment. Step two: For vitality and strength. Step three: For prosperity and wealth. Step four: For comfort and domestic joy.",
+    "meaning": "Saptapadi (The Seven Sacred Steps, Part 1): The essential sacramental rite of Vedic marriage, taking the first four steps around Agni for food, vigor, prosperity, and harmony.",
+    "layers": [
+      {
+        "author": "ashvalayana",
+        "author_name": "Āśvalāyana Gṛhya Sūtra",
+        "author_label": "Vedic Ritual Tradition",
+        "lang": "en",
+        "type": "commentary",
+        "content": "In Vedic law, marriage is legally and spiritually complete upon the completion of the seventh step of the Saptapadi. Each step represents a foundational pillar of householder life."
+      },
+      {
+        "author": "dr-pandey",
+        "author_name": "Dr. Rajbali Pandey",
+        "author_label": "Socio-Religious Heritage",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "सप्तपदी के प्रथम चार पद गृहस्थ जीवन में अन्न, शक्ति, धन और सुख की सामूहिक साधना का संकल्प हैं।"
+      }
+    ]
+  },
+  {
+    "id": "samskaras_3_4",
+    "text_slug": "samskaras",
+    "chapter": 3,
+    "verse": 4,
+    "original": "ॐ पञ्च पशुभ्यो विष्णुस्त्वान्वेतु । षड् ऋतुभ्यो विष्णुस्त्वान्वेतु ।\nसखे सप्तपदा भव सा मामनुव्रता भव विष्णुस्त्वान्वेतु ॥",
+    "transliteration": "oṃ pañca paśubhyo viṣṇustvānbvetu | ṣaḍ ṛtubhyo viṣṇustvānbvetu |\nsakhe saptapadā bhava sā māmanuvratā bhava viṣṇustvānbvetu ||",
+    "translation": "Step five: For noble cattle and progeny. Step six: For the blessings of all six seasons. Step seven: Be my eternal friend! Having walked seven steps together, we are united in divine friendship.",
+    "meaning": "Saptapadi (The Seven Sacred Steps, Part 2): Concluding with the seventh step of supreme friendship (Sakha Saptapada Bhava), cementing the union into eternal companionship.",
+    "layers": [
+      {
+        "author": "ashvalayana",
+        "author_name": "Āśvalāyana Gṛhya Sūtra",
+        "author_label": "Vedic Ritual Tradition",
+        "lang": "en",
+        "type": "commentary",
+        "content": "The words 'Sakha saptapada bhava' (Be my friend with seven steps) elevate marriage above subjugation to egalitarian, affectionate spiritual friendship (Sakhya)."
+      },
+      {
+        "author": "dr-pandey",
+        "author_name": "Dr. Rajbali Pandey",
+        "author_label": "Socio-Religious Heritage",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "सप्तपदी का सातवाँ पद पति-पत्नी को 'सखा' (सच्चा मित्र) घोषित करता है, जो वैदिक विवाह की गरिमामयी समानता का परिचायक है।"
+      }
+    ]
+  },
+  {
+    "id": "samskaras_3_5",
+    "text_slug": "samskaras",
+    "chapter": 3,
+    "verse": 5,
+    "original": "ॐ सुमङ्गलीरियं वधूरिमा समेत पश्यत ।\nसौभाग्यमस्यै दत्त्वा याथास्तं विपरेतन ॥",
+    "transliteration": "oṃ sumaṅgalīriyaṃ vadhūrimā sameta paśyata |\nsaubhāgyamasyai dattvā yāthāstaṃ viparetana ||",
+    "translation": "Auspicious is this bride! Come, all of you assembled, behold her! Bestow your blessings of fortune upon her, and then return joyfully unto your homes.",
+    "meaning": "Sindooradana & Ashirvada: The application of vermilion and the community assembly offering unanimous blessings for the prosperity and joy of the new couple.",
+    "layers": [
+      {
+        "author": "ashvalayana",
+        "author_name": "Āśvalāyana Gṛhya Sūtra",
+        "author_label": "Vedic Ritual Tradition",
+        "lang": "en",
+        "type": "commentary",
+        "content": "The Rigvedic verse (RV 10.85.33) invites the entire community to bless the bride, demonstrating that family joy in the Vedic worldview is inextricably tied to societal harmony."
+      },
+      {
+        "author": "dr-pandey",
+        "author_name": "Dr. Rajbali Pandey",
+        "author_label": "Socio-Religious Heritage",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "सिंदूरदान और शुभाशीर्वाद से वधू को परिवार और समाज की ओर से असीम सम्मान और संरक्षण प्राप्त होता है।"
+      }
+    ]
+  },
+  {
+    "id": "samskaras_3_6",
+    "text_slug": "samskaras",
+    "chapter": 3,
+    "verse": 6,
+    "original": "ॐ ध्रुवमसि ध्रुवं त्वाहं पश्यामि ध्रुवैधि पोष्ये मयि ।\nमह्यं त्वादाद्बृहस्पतिर्मया पत्या प्रजावती सञ्जीव शरदः शतम् ॥",
+    "transliteration": "oṃ dhruvamasi dhruvaṃ tvāhaṃ paśyāmi dhruvaidhi poṣye mayi |\nmahyaṃ tvādādbṛhaspatirmayā patyā prajāvatī sañjīva śaradaḥ śatam ||",
+    "translation": "Steadfast are you, O Pole Star (Dhruva)! Steadfastly I gaze upon you. Be steadfast in our home; Brihaspati has granted you to me. With me your partner, live a full and fruitful hundred autumns.",
+    "meaning": "Dhruva-Arundhati Darshana: On the wedding night, the couple gaze upon the unmoving North Star (Dhruva) and Arundhati-Vasishtha, vowing steadfast constancy and mutual devotion.",
+    "layers": [
+      {
+        "author": "ashvalayana",
+        "author_name": "Āśvalāyana Gṛhya Sūtra",
+        "author_label": "Vedic Ritual Tradition",
+        "lang": "en",
+        "type": "commentary",
+        "content": "The contemplation of Dhruva (firmness) and Arundhati (unshakable devotion) provides an astronomical archetype of enduring loyalty throughout all seasons of life."
+      },
+      {
+        "author": "dr-pandey",
+        "author_name": "Dr. Rajbali Pandey",
+        "author_label": "Socio-Religious Heritage",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "ध्रुव व अरुंधती दर्शनाने नवदाम्पत्याला अढळ निष्ठा आणि गृहस्थाश्रमातील स्थैर्याची शिकवण दिली जाते."
+      }
+    ]
+  },
+  {
+    "id": "samskaras_3_7",
+    "text_slug": "samskaras",
+    "chapter": 3,
+    "verse": 7,
+    "original": "ॐ सूर्याच्चक्षुर्गच्छतु वातमात्मा द्यां च गच्छ पृथिवीं च धर्मणा ।\nअपो वा गच्छ यदि तत्र ते हितमोषधीषु प्रति तिष्ठा शरीरैः ॥",
+    "transliteration": "oṃ sūryāccakṣurgacchatu vātamātmā dyāṃ ca gaccha pṛthivīṃ ca dharmaṇā |\napo vā gaccha yadi tatra te hitamoṣadhīṣu prati tiṣṭhā śarīraiḥ ||",
+    "translation": "May the eye return unto the Sun; may your vital breath merge into the cosmic wind; return to the sky or the earth according to your righteousness; merge into the waters and the herbs, returning the mortal body unto the eternal elements.",
+    "meaning": "16. Antyeshti Samskara (The Final Sacrifice): The sacred funeral rite releasing the departed soul from the physical sheath and returning the five elements (Pancha Mahabhutas) unto the cosmos.",
+    "layers": [
+      {
+        "author": "ashvalayana",
+        "author_name": "Āśvalāyana Gṛhya Sūtra",
+        "author_label": "Vedic Ritual Tradition",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Rigveda 10.16.3 conceives cremation not as destruction, but as the final Homa (Antya Ishti), where the body is offered into Agni as the soul begins its journey to the ancestral and divine realms."
+      },
+      {
+        "author": "dr-pandey",
+        "author_name": "Dr. Rajbali Pandey",
+        "author_label": "Socio-Religious Heritage",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "अन्त्येष्टि संस्कार जीवन का अन्तिम यज्ञ है, जहाँ पञ्चभूतों से बना शरीर पुनः पञ्चमहाभूतों में विलीन हो जाता है और आत्मा अपनी यात्रा जारी रखती है।"
+      }
+    ]
+  },
+  {
+    "id": "samskaras_3_8",
+    "text_slug": "samskaras",
+    "chapter": 3,
+    "verse": 8,
+    "original": "ॐ सर्वे भवन्तु सुखिनः सर्वे सन्तु निरामयाः ।\nसर्वे भद्राणि पश्यन्तु मा कश्चिद्दुःखभाग्भवेत् ।\nॐ शान्तिः शान्तिः शान्तिः ॥",
+    "transliteration": "oṃ sarve bhavantu sukhinaḥ sarve santu nirāmayāḥ |\nsarve bhadrāṇi paśyantu mā kaścidduḥkhabhāgbhavet |\noṃ śāntiḥ śāntiḥ śāntiḥ ||",
+    "translation": "May all beings be joyful; may all be free from illness and affliction; may all perceive what is auspicious and good; may none suffer grief. Om Peace, Peace, Peace.",
+    "meaning": "Universal Benediction & Peace Prayer: The supreme Vedic blessing concluding the sixteen samskaras, affirming that the ultimate fruition of human ritual is the peace and liberation of all living beings.",
+    "layers": [
+      {
+        "author": "ashvalayana",
+        "author_name": "Āśvalāyana Gṛhya Sūtra",
+        "author_label": "Vedic Ritual Tradition",
+        "lang": "en",
+        "type": "commentary",
+        "content": "The concluding prayer of the Grihya tradition transcends individual life cycles to encompass the happiness, health, and peace of all cosmic life."
+      },
+      {
+        "author": "dr-pandey",
+        "author_name": "Dr. Rajbali Pandey",
+        "author_label": "Socio-Religious Heritage",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "षोडश संस्कारों का सार सम्पूर्ण विश्व के कल्याण, शांति और सभी जीवों के सुख की मंगलकामना में सन्निहित है।"
+      },
+      {
+        "author": "dr-pandey",
+        "author_name": "डॉ. राजबली पाण्डेय",
+        "author_label": "संस्कार समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "सर्व विश्वाच्या कल्याणासाठी केलेली ही प्रार्थना हिंदू संस्कार परंपरेचे सर्वोच्च मानवकेंद्री आणि आध्यात्मिक उद्दिष्ट प्रकट करते."
+      }
+    ]
+  }
+]

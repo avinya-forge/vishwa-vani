@@ -4,11 +4,279 @@
     "text_slug": "garuda-purana",
     "chapter": 2,
     "verse": 1,
-    "original": "ॐ पूर्णमदः पूर्णमिदं पूर्णात्पूर्णमुदच्यते (Mock Garuda Purana 2.1)",
-    "transliteration": "Om purnamadah purnamidam (Mock Garuda Purana 2.1)",
-    "layers": [],
-    "ai_metadata": {
-      "topics": []
-    }
+    "original": "वैनतेय उवाच —\nकथं यान्ति नरा देव यमलोकं भयानवम् ।\nकर्मणा केन मुच्यन्ते तन्मे ब्रूहि जनार्दन ॥",
+    "transliteration": "vainateya uvāca —\nkathaṃ yānti narā deva yamalokaṃ bhayānavam |\nkarmaṇā kena mucyante tanme brūhi janārdana ||",
+    "translation": "Garuda said: O Lord Janardana, how do mortal souls journey to the realm of Yama after the death of the body? And by what righteous deeds are they delivered from sorrow? Impart this unto me.",
+    "meaning": "Preta Khanda / Dharma Kalpa Inception: Garuda inquires concerning the afterlife, the journey of the departing soul, and the spiritual means of liberation.",
+    "layers": [
+      {
+        "author": "mn-dutt",
+        "author_name": "Manmatha Nath Dutt",
+        "author_label": "Dutt Translation (1908)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Dutt highlights that the Preta Khanda is not merely eschatological lore, but a profound ethical mirror compelling humanity to live virtuously while embodied."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "गरुड़पुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "गरुड़ जी ने मृत्यु के उपरांत जीवात्मा की गति, यमलोक के मार्ग और सद्गति के उपायों के बारे में भगवान से पूछा।"
+      }
+    ]
+  },
+  {
+    "id": "garuda-purana_2_2",
+    "text_slug": "garuda-purana",
+    "chapter": 2,
+    "verse": 2,
+    "original": "श्रीभगवानुवाच —\nयथा धेनुसहस्रेषु वत्सो विन्दति मातरम् ।\nतथा पूर्वकृतं कर्म कर्तारमनुगच्छति ॥",
+    "transliteration": "śrībhagavānuvāca —\nyathā dhenusahasreṣu vatso vindati mātaram |\ntathā pūrvakṛtaṃ karma kartāramanugacchati ||",
+    "translation": "The Supreme Lord said: Even as among thousands of cows a calf unerringly finds its own mother, so do the past actions of a being unerringly find their perpetrator across lifetimes.",
+    "meaning": "The Inviolable Law of Karma: Actions never perish; their moral resonance accompanies the soul into eternity.",
+    "layers": [
+      {
+        "author": "mn-dutt",
+        "author_name": "Manmatha Nath Dutt",
+        "author_label": "Dutt Translation (1908)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "This celebrated metaphor demonstrates the exactitude of karmic retribution. Neither wealth nor status can shield an individual from the consequences of their deeds."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "गरुड़पुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "जैसे हजारों गायों के बीच बछड़ा अपनी ही मां को खोज लेता है, वैसे ही मनुष्य का किया हुआ कर्म उसके पीछे-पीछे चलता है।"
+      }
+    ]
+  },
+  {
+    "id": "garuda-purana_2_3",
+    "text_slug": "garuda-purana",
+    "chapter": 2,
+    "verse": 3,
+    "original": "न माता न पिता भ्राता न सुता न च बान्धवाः ।\nगच्छन्तमनुगच्छन्ति धर्मस्त्वेकः सहायवान् ॥",
+    "transliteration": "na mātā na pitā bhrātā na sutā na ca bāndhavāḥ |\ngacchantamanugacchanti dharmastvekaḥ sahāyavān ||",
+    "translation": "Neither mother, nor father, nor brother, nor children, nor worldly kinfolk accompany the departing soul; Dharma alone remains the solitary steadfast companion.",
+    "meaning": "The Solitary Departure: Worldly relationships dissolve at death; only righteousness abides with the traveler of eternity.",
+    "layers": [
+      {
+        "author": "mn-dutt",
+        "author_name": "Manmatha Nath Dutt",
+        "author_label": "Dutt Translation (1908)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "This verse reminds the seeker that earthly possessions and kinship are ephemeral, urging the cultivation of spiritual wealth that survives physical demise."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "गरुड़पुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "परलोक की यात्रा में कोई सगा-संबंधी साथ नहीं जाता, केवल मनुष्य द्वारा किया गया धर्म ही उसका सच्चा सहायक होता है।"
+      }
+    ]
+  },
+  {
+    "id": "garuda-purana_2_4",
+    "text_slug": "garuda-purana",
+    "chapter": 2,
+    "verse": 4,
+    "original": "यत्किञ्चित्कुरुते कर्म शुभं वा यदि वाशुभम् ।\nभुङ्क्ते स्वयमसौ जीवो नान्यस्तस्य प्रपद्यते ॥",
+    "transliteration": "yatkiñcitkurute karma śubhaṃ vā yadi vāśubham |\nbhuṅkte svayamasau jīvo nānyastasya prapadyate ||",
+    "translation": "Whatever deed one performs, whether virtuous or unwholesome, that individual soul alone experiences its fruits; no other being can partake of or bear its consequence.",
+    "meaning": "Individual Moral Accountability: Every soul is the sole architect and heir of its own destiny.",
+    "layers": [
+      {
+        "author": "mn-dutt",
+        "author_name": "Manmatha Nath Dutt",
+        "author_label": "Dutt Translation (1908)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "The Garuda Purana emphasizes radical personal responsibility: one cannot transfer one's ethical debts onto another."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "गरुड़पुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "अपने शुभ और अशुभ कर्मों का फल जीव को स्वयं ही भोगना पड़ता है, कोई दूसरा उसमें साझीदार नहीं हो सकता।"
+      }
+    ]
+  },
+  {
+    "id": "garuda-purana_2_5",
+    "text_slug": "garuda-purana",
+    "chapter": 2,
+    "verse": 5,
+    "original": "दानेन प्राप्यते शान्तिर्दानेन तरते भयम् ।\nतस्माद्दानं प्रशंसन्ति मुनयस्तत्त्वदर्शिनः ॥",
+    "transliteration": "dānena prāpyate śāntirdānena tarate bhayam |\ntasmāddānaṃ praśaṃsanti munayastattvadarśinaḥ ||",
+    "translation": "Through selfless charity peace is attained; through charity the terrors of the afterlife are crossed over. Therefore, seers who perceive the truth extol charity as supreme.",
+    "meaning": "The Power of Dana (Charity): Giving to the needy, the sick, and spiritual seekers purifies the departing soul.",
+    "layers": [
+      {
+        "author": "mn-dutt",
+        "author_name": "Manmatha Nath Dutt",
+        "author_label": "Dutt Translation (1908)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Charity performed with humility loosens attachment to wealth and clears the spiritual pathways of the departing Jiva."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "गरुड़पुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "सत्पात्र को दिया गया दान जीव के भय का नाश करता है और परलोक के मार्ग को सुगम बनाता है।"
+      }
+    ]
+  },
+  {
+    "id": "garuda-purana_2_6",
+    "text_slug": "garuda-purana",
+    "chapter": 2,
+    "verse": 6,
+    "original": "गङ्गास्नानं हरिस्मृत्या यः करोति दिने दिने ।\nस याति परमां सिद्धिं विष्णोरायतनं शुभम् ॥",
+    "transliteration": "gaṅgāsnānaṃ harismṛtyā yaḥ karoti dine dine |\nsa yāti paramāṃ siddhiṃ viṣṇorāyatanaṃ śubham ||",
+    "translation": "Whoever bathes in the holy Ganga meditating continuously upon Lord Hari day after day attains supreme spiritual accomplishment and reaches the auspicious abode of Vishnu.",
+    "meaning": "Purification and Remembrance: The sanctity of the Ganga combined with steady remembrance of God dissolves the heaviest karmas.",
+    "layers": [
+      {
+        "author": "mn-dutt",
+        "author_name": "Manmatha Nath Dutt",
+        "author_label": "Dutt Translation (1908)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Water sanctified by divine remembrance serves as an external symbol of inner baptism, purifying the mind of lingering worldly dross."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "गरुड़पुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "श्रीहरि के नाम का स्मरण करते हुए गंगाजल का सेवन करने से जीव जन्म-मरण के चक्र से मुक्त हो जाता है।"
+      }
+    ]
+  },
+  {
+    "id": "garuda-purana_2_7",
+    "text_slug": "garuda-purana",
+    "chapter": 2,
+    "verse": 7,
+    "original": "अन्ते नारायणस्मृतिः सर्वपापप्रणाशिनी ।\nयः स्मरेत्सततं देवं स मुच्यते भवाद्भयात् ॥",
+    "transliteration": "ante nārāyaṇasmṛtiḥ sarvapāpapraṇāśinī |\nyaḥ smaretsatataṃ devaṃ sa mucyate bhavādbhayāt ||",
+    "translation": "At the final departure, remembrance of Lord Narayana destroys all sins; whoever continuously meditates upon the Divine is delivered from the terror of worldly rebirth.",
+    "meaning": "Anta-Kala Smarana: The mental focus at the moment of death determines the next destination of the consciousness.",
+    "layers": [
+      {
+        "author": "mn-dutt",
+        "author_name": "Manmatha Nath Dutt",
+        "author_label": "Dutt Translation (1908)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Echoing Bhagavad Gita 8.5, the final thought of the departing soul crowns the lifetime of practice. Remembering Narayana leads straight to the divine realm."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "गरुड़पुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "अंतिम समय में भगवान नारायण का नाम स्मरण समस्त पापों को भस्म कर परम गति प्रदान करता है।"
+      }
+    ]
+  },
+  {
+    "id": "garuda-purana_2_8",
+    "text_slug": "garuda-purana",
+    "chapter": 2,
+    "verse": 8,
+    "original": "तिलसर्पपपुष्पाणि तुलसीदलसंयुतम् ।\nश्राद्धं प्रीणाति पितरं मुक्तिदं कुलतारकम् ॥",
+    "transliteration": "tilasarṣapapuṣpāṇi tulasīdalasaṃyutam |\nśrāddhaṃ prīṇāti pitaraṃ muktidaṃ kulatārakam ||",
+    "translation": "Sesame seeds, mustard, flowers, and holy Tulasi leaves offered with devotion in ancestral rites satisfy the departed ancestors and redeem the entire family lineage.",
+    "meaning": "The Shraddha Rite of Gratitude: Honoring departed souls through prayers, food offerings, and Tulasi.",
+    "layers": [
+      {
+        "author": "mn-dutt",
+        "author_name": "Manmatha Nath Dutt",
+        "author_label": "Dutt Translation (1908)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "The Shraddha rites described in the Garuda Purana provide a psychological bridge of affectionate gratitude between the living and the departed."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "गरुड़पुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "तुलसी और तिल के साथ किया गया श्राद्ध पितरों को तृप्त करता है और कुल को शांति प्रदान करता है।"
+      }
+    ]
+  },
+  {
+    "id": "garuda-purana_2_9",
+    "text_slug": "garuda-purana",
+    "chapter": 2,
+    "verse": 9,
+    "original": "नास्ति मायासमः पाशो नास्ति योगात्परं बलम् ।\nनास्ति विष्णोः परो देवो नास्ति ज्ञानात्परं सुखम् ॥",
+    "transliteration": "nāsti māyāsamaḥ pāśo nāsti yogātparaṃ balam |\nnāsti viṣṇoḥ paro devo nāsti jñānātparaṃ sukham ||",
+    "translation": "There is no snare equal to delusion (Maya); there is no strength superior to Yoga; there is no divinity higher than Lord Vishnu; and there is no happiness greater than spiritual wisdom.",
+    "meaning": "The Four Supreme Truths: The snare of illusion, the power of yoga, the supremacy of God, and the bliss of wisdom.",
+    "layers": [
+      {
+        "author": "mn-dutt",
+        "author_name": "Manmatha Nath Dutt",
+        "author_label": "Dutt Translation (1908)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "This famous verse summarizes the entire philosophical message of the Garuda Purana, identifying spiritual wisdom and devotion as the ultimate refuge."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "गरुड़पुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "माया जैसा कोई बंधन नहीं, योग जैसा कोई बल नहीं, विष्णु जैसा कोई देव नहीं और ज्ञान जैसा कोई सुख नहीं है।"
+      }
+    ]
+  },
+  {
+    "id": "garuda-purana_2_10",
+    "text_slug": "garuda-purana",
+    "chapter": 2,
+    "verse": 10,
+    "original": "य इदं शृणुयान्नित्यं गरुडं पापनाशनम् ।\nसर्वपापविनिर्मुक्तो विष्णोर्लोके महीयते ॥",
+    "transliteration": "ya idaṃ śṛṇuyānnityaṃ garuḍaṃ pāpanāśanam |\nsarvapāpavinirmukto viṣṇorloke mahīyate ||",
+    "translation": "Whoever regularly listens to this sin-destroying Garuda Purana with an attentive, reverent heart is delivered from all suffering and rejoices in the eternal realm of Lord Vishnu.",
+    "meaning": "Phalasruti (Concluding Benediction): The eternal spiritual reward of studying and contemplating the Garuda Purana.",
+    "layers": [
+      {
+        "author": "mn-dutt",
+        "author_name": "Manmatha Nath Dutt",
+        "author_label": "Dutt Translation (1908)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "The Purana closes with the promise that understanding life, death, and virtue frees the human soul from existential fear and leads to divine communion."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "गरुड़पुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "गरुड़पुराण के इस पावन उपदेश का श्रवण और मनन करने वाला साधक परम पद को प्राप्त करता है।"
+      }
+    ]
   }
 ]

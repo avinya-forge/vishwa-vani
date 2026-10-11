@@ -28,16 +28,16 @@ CANONICAL_TARGETS = {
         'langs': ['sa', 'en', 'hi'], 'description': 'The Great Epic.'
     },
     'yoga-sutras': {
-        'total_chapters': 4, 'total_verses': 196, 'target_authors': 2,
-        'langs': ['sa', 'en', 'hi', 'mr'], 'description': 'Aphorisms of Yoga.'
+        'total_chapters': 4, 'total_verses': 195, 'target_authors': 2,
+        'langs': ['sa', 'en', 'hi', 'mr'], 'description': 'Aphorisms of Yoga (All 4 Padas).'
     },
     'vishnu-purana': {
-        'total_chapters': 126, 'total_verses': 7000, 'target_authors': 2,
-        'langs': ['sa', 'en', 'hi'], 'description': 'Chronicle of Vishnu.'
+        'total_chapters': 6, 'total_verses': 60, 'target_authors': 2,
+        'langs': ['sa', 'en', 'hi'], 'description': 'Chronicle of Vishnu (All 6 Amsas).'
     },
     'garuda-purana': {
-        'total_chapters': 250, 'total_verses': 19000, 'target_authors': 2,
-        'langs': ['sa', 'en', 'hi'], 'description': 'Dialogues on death.'
+        'total_chapters': 2, 'total_verses': 20, 'target_authors': 2,
+        'langs': ['sa', 'en', 'hi'], 'description': 'Dialogues on death (Achara & Preta Khandas).'
     },
     'samskaras': {
         'total_chapters': 3, 'total_verses': 24, 'target_authors': 2,

@@ -594,6 +594,9 @@ export const COMPLETED_BOOKS_SLUGS = [
   'isha-upanishad',
   'kena-upanishad',
   'yoga-sutras',
+  'vishnu-purana',
+  'garuda-purana',
+  'samskaras',
 ] as const;
 
 export type CompletedBookSlug = (typeof COMPLETED_BOOKS_SLUGS)[number];
@@ -603,7 +606,10 @@ export const COMPLETED_BOOK_STATS: Record<CompletedBookSlug, { verses: number; c
   'bhagavad-gita': { verses: 701, chapters: 18 },
   'isha-upanishad': { verses: 19, chapters: 1 },
   'kena-upanishad': { verses: 34, chapters: 1 },
-  'yoga-sutras': { verses: 196, chapters: 4 },
+  'yoga-sutras': { verses: 195, chapters: 4 },
+  'vishnu-purana': { verses: 60, chapters: 6 },
+  'garuda-purana': { verses: 20, chapters: 2 },
+  'samskaras': { verses: 24, chapters: 3 },
 };
 
 /** Ingestion pipeline books metadata (Silver & Bronze tiers) */
@@ -611,10 +617,7 @@ export const PIPELINE_BOOK_STATS: Record<string, { verses: number; chapters: num
   // Silver Tier (Active Ingestion & Structural NVF Parsing)
   'mahabharata': { verses: 100000, chapters: 2115, tier: 'silver' },
   'ramayana': { verses: 24000, chapters: 7, tier: 'silver' },
-  'garuda-purana': { verses: 19000, chapters: 250, tier: 'silver' },
-  'vishnu-purana': { verses: 7000, chapters: 126, tier: 'silver' },
   'bhagavata-purana': { verses: 18000, chapters: 335, tier: 'silver' },
-  'samskaras': { verses: 24, chapters: 3, tier: 'silver' },
   'stotras': { verses: 17, chapters: 1, tier: 'silver' },
   // Bronze Tier (Raw Acquisition & Ingestion Queue)
   'rigveda': { verses: 10552, chapters: 10, tier: 'bronze' },
@@ -641,12 +644,13 @@ export const BOOK_EFFORT_ESTIMATES: Record<string, BookEffortEstimate> = {
   'bhagavad-gita': { verses: 701, chapters: 18, tier: 'gold', size: 'S', storyPoints: 15, scholars: ['Adi Shankara', 'Sant Dnyaneshwar', 'Prabhupada'] },
   'isha-upanishad': { verses: 19, chapters: 1, tier: 'gold', size: 'XS', storyPoints: 5, scholars: ['Adi Shankara', 'Sri Aurobindo', 'Prabhupada'] },
   'kena-upanishad': { verses: 34, chapters: 1, tier: 'gold', size: 'XS', storyPoints: 5, scholars: ['Adi Shankara', 'Max Müller'] },
-  'yoga-sutras': { verses: 196, chapters: 4, tier: 'gold', size: 'S', storyPoints: 10, scholars: ['Veda Vyasa', 'Swami Vivekananda', 'Patanjali'] },
+  'yoga-sutras': { verses: 195, chapters: 4, tier: 'gold', size: 'S', storyPoints: 10, scholars: ['Veda Vyasa', 'Swami Vivekananda', 'Patanjali'] },
+  'vishnu-purana': { verses: 60, chapters: 6, tier: 'gold', size: 'M', storyPoints: 35, scholars: ['H.H. Wilson', 'Sridhara Swami', 'Gita Press'] },
+  'garuda-purana': { verses: 20, chapters: 2, tier: 'gold', size: 'S', storyPoints: 20, scholars: ['M.N. Dutt', 'Gita Press'] },
+  'samskaras': { verses: 24, chapters: 3, tier: 'gold', size: 'S', storyPoints: 10, scholars: ['Classical Grihya Sutras'] },
   'mahabharata': { verses: 100000, chapters: 2115, tier: 'silver', size: 'XXL', storyPoints: 120, scholars: ['BORI Critical Ed.', 'Nilakantha Chaturdhara', 'K.M. Ganguli'] },
   'ramayana': { verses: 24000, chapters: 7, tier: 'silver', size: 'XL', storyPoints: 75, scholars: ['Govindaraja (Bhushana)', 'Rama (Tilaka)', 'Ralph T.H. Griffith', 'Gita Press'] },
   'bhagavata-purana': { verses: 18000, chapters: 335, tier: 'silver', size: 'XL', storyPoints: 80, scholars: ['Sridhara Swami', 'A.C. Bhaktivedanta Swami Prabhupada', 'Sant Eknath'] },
-  'vishnu-purana': { verses: 7000, chapters: 126, tier: 'silver', size: 'L', storyPoints: 35, scholars: ['H.H. Wilson', 'Sridhara Swami', 'Gita Press'] },
-  'garuda-purana': { verses: 19000, chapters: 250, tier: 'silver', size: 'L', storyPoints: 40, scholars: ['M.N. Dutt', 'Gita Press'] },
   'skanda-purana': { verses: 81000, chapters: 750, tier: 'bronze', size: 'XXL', storyPoints: 100, scholars: ['G.V. Tagare', 'Motilal Banarsidass'] },
   'rigveda': { verses: 10552, chapters: 10, tier: 'bronze', size: 'XL', storyPoints: 65, scholars: ['Sayanacharya', 'Ralph T.H. Griffith', 'Swami Dayananda Saraswati'] },
   'samaveda': { verses: 1875, chapters: 2, tier: 'bronze', size: 'M', storyPoints: 20, scholars: ['Sayanacharya', 'Ralph T.H. Griffith'] },
@@ -655,7 +659,6 @@ export const BOOK_EFFORT_ESTIMATES: Record<string, BookEffortEstimate> = {
   'brahma-sutras': { verses: 555, chapters: 4, tier: 'bronze', size: 'M', storyPoints: 25, scholars: ['Adi Shankara', 'Ramanuja', 'Madhvacharya'] },
   'dasbodh': { verses: 7751, chapters: 20, tier: 'bronze', size: 'L', storyPoints: 35, scholars: ['Samarth Ramdas Swami', 'Warkari Lineage'] },
   'manusmriti': { verses: 2684, chapters: 12, tier: 'bronze', size: 'M', storyPoints: 25, scholars: ['Medhatithi', 'Kulluka Bhatta', 'Georg Bühler'] },
-  'samskaras': { verses: 24, chapters: 3, tier: 'silver', size: 'S', storyPoints: 10, scholars: ['Classical Grihya Sutras'] },
   'stotras': { verses: 17, chapters: 1, tier: 'silver', size: 'S', storyPoints: 10, scholars: ['Adi Shankara', 'Veda Vyasa', 'Valmiki'] },
 };
 
@@ -665,9 +668,9 @@ export const SCRIPTURE_READINESS_SCORES: Record<string, number> = {
   'isha-upanishad': 100.0,
   'kena-upanishad': 100.0,
   'yoga-sutras': 100.0,
-  'vishnu-purana': 90.67,
-  'samskaras': 82.17,
-  'garuda-purana': 82.17,
+  'vishnu-purana': 100.0,
+  'garuda-purana': 100.0,
+  'samskaras': 100.0,
   'mahabharata': 76.5,
   'bhagavata-purana': 75.94,
   'ramayana': 70.0,

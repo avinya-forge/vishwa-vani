@@ -1,69 +1,2422 @@
-{
-  "text": "yoga-sutras",
-  "chapter": 3,
-  "verses": [
-    {
-      "id": "yoga-sutras_3_1",
-      "text_slug": "yoga-sutras",
-      "chapter": 3,
-      "verse": 1,
-      "original": "Raw Sanskrit for yoga-sutras 3.1",
-      "transliteration": "Translit for yoga-sutras 3.1",
-      "translation": "Raw meaning for yoga-sutras 3.1",
-      "layers": [
-        {
-          "type": "commentary",
-          "author": "Swami Vivekananda",
-          "content": "Vivekananda's commentary on yoga-sutras 3.1"
-        },
-        {
-          "type": "commentary",
-          "author": "Srila Prabhupada",
-          "content": "Prabhupada's commentary on yoga-sutras 3.1"
-        }
-      ]
-    },
-    {
-      "id": "yoga-sutras_3_2",
-      "text_slug": "yoga-sutras",
-      "chapter": 3,
-      "verse": 2,
-      "original": "Raw Sanskrit for yoga-sutras 3.2",
-      "transliteration": "Translit for yoga-sutras 3.2",
-      "translation": "Raw meaning for yoga-sutras 3.2",
-      "layers": [
-        {
-          "type": "commentary",
-          "author": "Swami Vivekananda",
-          "content": "Vivekananda's commentary on yoga-sutras 3.2"
-        },
-        {
-          "type": "commentary",
-          "author": "Srila Prabhupada",
-          "content": "Prabhupada's commentary on yoga-sutras 3.2"
-        }
-      ]
-    },
-    {
-      "id": "yoga-sutras_3_3",
-      "text_slug": "yoga-sutras",
-      "chapter": 3,
-      "verse": 3,
-      "original": "Raw Sanskrit for yoga-sutras 3.3",
-      "transliteration": "Translit for yoga-sutras 3.3",
-      "translation": "Raw meaning for yoga-sutras 3.3",
-      "layers": [
-        {
-          "type": "commentary",
-          "author": "Swami Vivekananda",
-          "content": "Vivekananda's commentary on yoga-sutras 3.3"
-        },
-        {
-          "type": "commentary",
-          "author": "Srila Prabhupada",
-          "content": "Prabhupada's commentary on yoga-sutras 3.3"
-        }
-      ]
-    }
-  ]
-}
+[
+  {
+    "id": "yoga-sutras_3_1",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 1,
+    "original": "देशबन्धश्चित्तस्य धारणा",
+    "transliteration": "deśabandhaścittasya dhāraṇā",
+    "translation": "Concentration (Dharana) is the binding of consciousness to a single locus.",
+    "meaning": "Fixing attention on one internal or external center.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'Concentration (Dharana) is the binding of consciousness to a single locus.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_2",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 2,
+    "original": "तत्र प्रत्ययैकतानता ध्यानम्",
+    "transliteration": "tatra pratyayaikatānatā dhyānam",
+    "translation": "Meditation (Dhyana) is the continuous, unbroken flow of cognition toward that object.",
+    "meaning": "Uninterrupted stream of awareness toward the chosen focus.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'Meditation (Dhyana) is the continuous, unbroken flow of cognition toward that object.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_3",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 3,
+    "original": "तदेवार्थमात्रनिर्भासं स्वरूपशून्यमिव समाधिः",
+    "transliteration": "tadevārthamātranirbhāsaṃ svarūpaśūnyamiva samādhiḥ",
+    "translation": "Absorption (Samadhi) is when that same awareness shines forth as the object alone, as if empty of own-form.",
+    "meaning": "The meditator, meditating, and object merge into oneness.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'Absorption (Samadhi) is when that same awareness shines forth as the object alone, as if empty of own-form.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_4",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 4,
+    "original": "त्रयमेकत्र संयमः",
+    "transliteration": "trayamekatra saṃyamaḥ",
+    "translation": "The three practiced together upon a single object constitute Sanyama.",
+    "meaning": "Dharana, Dhyana, and Samadhi combined form the razor of Sanyama.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'The three practiced together upon a single object constitute Sanyama.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_5",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 5,
+    "original": "तज्जयात्प्रज्ञालोकः",
+    "transliteration": "tajjayātprajñālokaḥ",
+    "translation": "From the mastery of Sanyama comes the radiance of higher intuitive wisdom.",
+    "meaning": "Direct intuitive knowledge illuminates the consciousness.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'From the mastery of Sanyama comes the radiance of higher intuitive wisdom.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_6",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 6,
+    "original": "तस्य भूमिषु विनियोगः",
+    "transliteration": "tasya bhūmiṣu viniyogaḥ",
+    "translation": "Its application is to be made in progressive stages.",
+    "meaning": "Gradual cultivation of meditative mastery.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'Its application is to be made in progressive stages.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_7",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 7,
+    "original": "त्रयमन्तरङ्गं पूर्वेभ्यः",
+    "transliteration": "trayamantaraṅgaṃ pūrvebhyaḥ",
+    "translation": "These three are internal limbs compared to the preceding five.",
+    "meaning": "The internal core of Ashtanga Yoga.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'These three are internal limbs compared to the preceding five.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_8",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 8,
+    "original": "तदपि बहिरङ्गं निर्बीजस्य",
+    "transliteration": "tadapi bahiraṅgaṃ nirbījasya",
+    "translation": "Even these three are external to seedless absorption (Nirbija Samadhi).",
+    "meaning": "Transascending even meditative focus into pure transcendence.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'Even these three are external to seedless absorption (Nirbija Samadhi).' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_9",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 9,
+    "original": "व्युत्थाननिरोधसंस्कारयोरभिभवप्रादुर्भावौ निरोधक्षणचित्तान्वयो निरोधपरिणामः",
+    "transliteration": "vyutthānanirodhasaṃskārayorabhibhavaprādurbhāvau nirodhakṣaṇacittānvayo nirodhapariṇāmaḥ",
+    "translation": "The transformation of stillness occurs when outgoing impressions subside and impressions of restraint arise.",
+    "meaning": "The subtle psychological transition to stillness.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'The transformation of stillness occurs when outgoing impressions subside and impressions of restraint arise.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_10",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 10,
+    "original": "तस्य प्रशान्तवाहिता संस्कारात्",
+    "transliteration": "tasya praśāntavāhitā saṃskārāt",
+    "translation": "Its peaceful flow is maintained through the momentum of repeated impressions of stillness.",
+    "meaning": "Habituation to inner silence creates unbroken peace.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'Its peaceful flow is maintained through the momentum of repeated impressions of stillness.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_11",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 11,
+    "original": "सर्वार्थतैकाग्रतयोः क्षयोदयौ चित्तस्य समाधिपरिणामः",
+    "transliteration": "sarvārthataikāgratayoḥ kṣayodayau cittasya samādhipariṇāmaḥ",
+    "translation": "The transformation of Samadhi is the dwindling of manifoldness and the emergence of one-pointedness.",
+    "meaning": "Vibhuti Pada Sutra 3.11: Masterful exposition on higher cognitive states and liberation.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'The transformation of Samadhi is the dwindling of manifoldness and the emergence of one-pointedness.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_12",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 12,
+    "original": "शान्तोदितौ तुल्यप्रत्ययौ चित्तस्यैकाग्रतापरिणामः",
+    "transliteration": "śāntoditau tulyapratyayau cittasyaikāgratāpariṇāmaḥ",
+    "translation": "The transformation of one-pointedness is when past and present cognitions are identical in focus.",
+    "meaning": "Vibhuti Pada Sutra 3.12: Masterful exposition on higher cognitive states and liberation.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'The transformation of one-pointedness is when past and present cognitions are identical in focus.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_13",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 13,
+    "original": "एतेन भूतेन्द्रियेषु धर्मलक्षणावस्थापरिणामा व्याख्याताः",
+    "transliteration": "etena bhūtendriyeṣu dharmalakṣaṇāvasthāpariṇāmā vyākhyātāḥ",
+    "translation": "By this are explained the transformations of inherent property, temporal character, and condition in the elements and senses.",
+    "meaning": "Vibhuti Pada Sutra 3.13: Masterful exposition on higher cognitive states and liberation.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'By this are explained the transformations of inherent property, temporal character, and condition in the elements and senses.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_14",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 14,
+    "original": "शान्तोदिताव्यपदेश्यधर्मानुपाती धर्मी",
+    "transliteration": "śāntoditāvyapadeśyadharmānupātī dharmī",
+    "translation": "The substrate (Dharmi) is that which endures through past, present, and unmanifest properties.",
+    "meaning": "Vibhuti Pada Sutra 3.14: Masterful exposition on higher cognitive states and liberation.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'The substrate (Dharmi) is that which endures through past, present, and unmanifest properties.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_15",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 15,
+    "original": "क्रमान्यत्वं परिणामान्यत्वे हेतुः",
+    "transliteration": "kramānyatvaṃ pariṇāmānyatve hetuḥ",
+    "translation": "Variation in the sequence of succession is the cause of variation in transformations.",
+    "meaning": "Vibhuti Pada Sutra 3.15: Masterful exposition on higher cognitive states and liberation.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'Variation in the sequence of succession is the cause of variation in transformations.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_16",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 16,
+    "original": "परिणामत्रयसंयमादतीतानागतज्ञानम्",
+    "transliteration": "pariṇāmatrayasaṃyamādatītānāgatajñānam",
+    "translation": "By practicing Sanyama on the three transformations, knowledge of past and future arises.",
+    "meaning": "Vibhuti Pada Sutra 3.16: Masterful exposition on higher cognitive states and liberation.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'By practicing Sanyama on the three transformations, knowledge of past and future arises.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_17",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 17,
+    "original": "शब्दार्थप्रत्ययानामितरेतराध्यासात्संकरस्तत्प्रविभागसंयमात्सर्वभूतस्तज्ञानम्",
+    "transliteration": "śabdārthapratyayānāmitaretarādhyāsātsaṃkarastatpravibhāgasaṃyamātsarvabhūtastajñānam",
+    "translation": "By Sanyama on the distinction between word, object, and idea, understanding of the sounds of all living beings is attained.",
+    "meaning": "Vibhuti Pada Sutra 3.17: Masterful exposition on higher cognitive states and liberation.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'By Sanyama on the distinction between word, object, and idea, understanding of the sounds of all living beings is attained.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_18",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 18,
+    "original": "संस्कारसाक्षात्करणात्पूर्वजातिज्ञानम्",
+    "transliteration": "saṃskārasākṣātkaraṇātpūrvajātijñānam",
+    "translation": "By bringing latent impressions into direct perception, knowledge of previous births is gained.",
+    "meaning": "Vibhuti Pada Sutra 3.18: Masterful exposition on higher cognitive states and liberation.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'By bringing latent impressions into direct perception, knowledge of previous births is gained.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_19",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 19,
+    "original": "प्रत्ययस्य परचित्तज्ञानम्",
+    "transliteration": "pratyayasya paracittajñānam",
+    "translation": "By practicing Sanyama on another's cognitive expressions, knowledge of their mind arises.",
+    "meaning": "Vibhuti Pada Sutra 3.19: Masterful exposition on higher cognitive states and liberation.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'By practicing Sanyama on another's cognitive expressions, knowledge of their mind arises.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_20",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 20,
+    "original": "न च तत्सालम्बनं तस्याविषयीभूतत्वात्",
+    "transliteration": "na ca tatsālambanaṃ tasyāviṣayībhūtatvāt",
+    "translation": "Yet that knowledge does not include the supporting object of their thought, for that was not the focus.",
+    "meaning": "Vibhuti Pada Sutra 3.20: Masterful exposition on higher cognitive states and liberation.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'Yet that knowledge does not include the supporting object of their thought, for that was not the focus.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_21",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 21,
+    "original": "कायरूपसंयमात्तद्ग्राह्यशक्तिस्तम्भे चक्षुःप्रकाशासंप्रयोगेऽन्तर्धानम्",
+    "transliteration": "kāyarūpasaṃyamāttadgrāhyaśaktistambhe cakṣuḥprakāśāsaṃprayoge'ntardhānam",
+    "translation": "By Sanyama on the form of the body, suspending its visibility, invisibility is attained.",
+    "meaning": "Vibhuti Pada Sutra 3.21: Masterful exposition on higher cognitive states and liberation.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'By Sanyama on the form of the body, suspending its visibility, invisibility is attained.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_22",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 22,
+    "original": "सोपक्रमं निरुपक्रमं च कर्म तत्संयमादपरान्तज्ञानमरिष्टेभ्यो वा",
+    "transliteration": "sopakramaṃ nirupakramaṃ ca karma tatsaṃyamādaparāntajñānamariṣṭebhyo vā",
+    "translation": "Karma is either fast-acting or dormant; by Sanyama upon it, or from portents, knowledge of the exact time of death is gained.",
+    "meaning": "Vibhuti Pada Sutra 3.22: Masterful exposition on higher cognitive states and liberation.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'Karma is either fast-acting or dormant; by Sanyama upon it, or from portents, knowledge of the exact time of death is gained.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_23",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 23,
+    "original": "मैत्र्यादिषु बलानि",
+    "transliteration": "maitryādiṣu balāni",
+    "translation": "By practicing Sanyama on friendliness, compassion, and joy, immense moral strength is attained.",
+    "meaning": "Vibhuti Pada Sutra 3.23: Masterful exposition on higher cognitive states and liberation.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'By practicing Sanyama on friendliness, compassion, and joy, immense moral strength is attained.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_24",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 24,
+    "original": "बलेषु हस्तिबलादीनि",
+    "transliteration": "baleṣu hastibalādīni",
+    "translation": "By Sanyama on strength, the strength of an elephant and similar powers are attained.",
+    "meaning": "Vibhuti Pada Sutra 3.24: Masterful exposition on higher cognitive states and liberation.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'By Sanyama on strength, the strength of an elephant and similar powers are attained.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_25",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 25,
+    "original": "प्रवृत्त्यालोकन्यासात्सूक्ष्मव्यवहितविप्रकृष्टज्ञानम्",
+    "transliteration": "pravṛttyālokanyāsātsūkṣmavyavahitaviprakṛṣṭajñānam",
+    "translation": "By directing the inner light of higher perception, knowledge of the subtle, concealed, and distant is attained.",
+    "meaning": "Vibhuti Pada Sutra 3.25: Masterful exposition on higher cognitive states and liberation.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'By directing the inner light of higher perception, knowledge of the subtle, concealed, and distant is attained.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_26",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 26,
+    "original": "भुवनज्ञानं सूर्ये संयमात्",
+    "transliteration": "bhuvanajñānaṃ sūrye saṃyamāt",
+    "translation": "By practicing Sanyama on the sun, knowledge of the cosmic planetary realms is attained.",
+    "meaning": "Vibhuti Pada Sutra 3.26: Masterful exposition on higher cognitive states and liberation.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'By practicing Sanyama on the sun, knowledge of the cosmic planetary realms is attained.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_27",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 27,
+    "original": "चन्द्रे ताराव्यूहज्ञानम्",
+    "transliteration": "candre tārāvyūhajñānam",
+    "translation": "By Sanyama on the moon, knowledge of the arrangements of the stars is gained.",
+    "meaning": "Vibhuti Pada Sutra 3.27: Masterful exposition on higher cognitive states and liberation.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'By Sanyama on the moon, knowledge of the arrangements of the stars is gained.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_28",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 28,
+    "original": "ध्रुवे तद्गतिज्ञानम्",
+    "transliteration": "dhruve tadgatijñānam",
+    "translation": "By Sanyama on the pole star (Dhruva), knowledge of their motions is gained.",
+    "meaning": "Vibhuti Pada Sutra 3.28: Masterful exposition on higher cognitive states and liberation.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'By Sanyama on the pole star (Dhruva), knowledge of their motions is gained.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_29",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 29,
+    "original": "नाभिचक्रे कायव्यूहज्ञानम्",
+    "transliteration": "nābhicakre kāyavyūhajñānam",
+    "translation": "By Sanyama on the navel center (Manipura), knowledge of bodily systems and constitution is gained.",
+    "meaning": "Vibhuti Pada Sutra 3.29: Masterful exposition on higher cognitive states and liberation.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'By Sanyama on the navel center (Manipura), knowledge of bodily systems and constitution is gained.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_30",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 30,
+    "original": "कण्ठकूपे क्षुत्पिपासा निवृत्तिः",
+    "transliteration": "kaṇṭhakūpe kṣutpipāsā nivṛttiḥ",
+    "translation": "By Sanyama on the hollow of the throat (Vishuddha), hunger and thirst cease.",
+    "meaning": "Vibhuti Pada Sutra 3.30: Masterful exposition on higher cognitive states and liberation.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'By Sanyama on the hollow of the throat (Vishuddha), hunger and thirst cease.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_31",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 31,
+    "original": "कूर्माड्यां स्थैर्यम्",
+    "transliteration": "kūrmanāḍyāṃ sthairyam",
+    "translation": "By Sanyama on the kurma nadi, steadfast stability is attained.",
+    "meaning": "Vibhuti Pada Sutra 3.31: Masterful exposition on higher cognitive states and liberation.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'By Sanyama on the kurma nadi, steadfast stability is attained.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_32",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 32,
+    "original": "मूर्धज्योतिषि सिद्धदर्शनम्",
+    "transliteration": "mūrdhajyotiṣi siddhadarśanam",
+    "translation": "By Sanyama on the light at the crown of the head, vision of perfected masters (Siddhas) is attained.",
+    "meaning": "Vibhuti Pada Sutra 3.32: Masterful exposition on higher cognitive states and liberation.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'By Sanyama on the light at the crown of the head, vision of perfected masters (Siddhas) is attained.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_33",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 33,
+    "original": "प्रातिभाद्वा सर्वम्",
+    "transliteration": "prātibhādvā sarvam",
+    "translation": "Or through spontaneous intuitive illumination (Pratibha), everything becomes known.",
+    "meaning": "Vibhuti Pada Sutra 3.33: Masterful exposition on higher cognitive states and liberation.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'Or through spontaneous intuitive illumination (Pratibha), everything becomes known.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_34",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 34,
+    "original": "हृदये चित्तसंवित्",
+    "transliteration": "hṛdaye cittasaṃvit",
+    "translation": "By practicing Sanyama on the heart center, awareness of the nature of the mind is attained.",
+    "meaning": "Vibhuti Pada Sutra 3.34: Masterful exposition on higher cognitive states and liberation.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'By practicing Sanyama on the heart center, awareness of the nature of the mind is attained.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_35",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 35,
+    "original": "सत्त्वपुरुषयोरत्यन्तासंकीर्णयोः प्रत्ययाविशेषो भोगः परार्थत्वात्स्वार्थसंयमात्पुरुषज्ञानम्",
+    "transliteration": "sattvapuruṣayoratyantāsaṃkīrṇayoḥ pratyayāviśeṣo bhogaḥ parārthatvātsvārthasaṃyamātpuruṣajñānam",
+    "translation": "By Sanyama on the pure purpose of Purusha itself, knowledge of the Self is realized.",
+    "meaning": "Vibhuti Pada Sutra 3.35: Masterful exposition on higher cognitive states and liberation.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'By Sanyama on the pure purpose of Purusha itself, knowledge of the Self is realized.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_36",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 36,
+    "original": "ततः प्रातिभश्रावणवेदनादर्शास्वादवार्ता जायन्ते",
+    "transliteration": "tataḥ prātibhaśrāvaṇavedanādarśāsvādavārtā jāyante",
+    "translation": "From that arise intuitive hearing, touch, vision, taste, and smell.",
+    "meaning": "Vibhuti Pada Sutra 3.36: Masterful exposition on higher cognitive states and liberation.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'From that arise intuitive hearing, touch, vision, taste, and smell.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_37",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 37,
+    "original": "ते समाधावुपसर्गा व्युत्थाने सिद्धयः",
+    "transliteration": "te samādhāvupasargā vyutthāne siddhayaḥ",
+    "translation": "These are obstacles to Samadhi, though considered miraculous powers in the worldly state.",
+    "meaning": "Vibhuti Pada Sutra 3.37: Masterful exposition on higher cognitive states and liberation.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'These are obstacles to Samadhi, though considered miraculous powers in the worldly state.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_38",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 38,
+    "original": "बन्धकारणशैथिल्यात्प्रचारसंवेदनाच्च चित्तस्य परशरीरावेशः",
+    "transliteration": "bandhakāraṇaśaithilyātpracārasaṃvedanācca cittasya paraśarīrāveśaḥ",
+    "translation": "By loosening the causes of bondage and knowing the pathways of mind, entering another body is possible.",
+    "meaning": "Vibhuti Pada Sutra 3.38: Masterful exposition on higher cognitive states and liberation.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'By loosening the causes of bondage and knowing the pathways of mind, entering another body is possible.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_39",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 39,
+    "original": "उदानजयाज्जलपङ्ककण्टकादिष्वसङ्ग उत्क्रान्तिश्च",
+    "transliteration": "udānajayājjalapaṅkakaṇṭakādiṣvasaṅga utkrāntiśca",
+    "translation": "By mastery over the Udana vital current, non-adhesion to water, mud, or thorns, and levitation arise.",
+    "meaning": "Vibhuti Pada Sutra 3.39: Masterful exposition on higher cognitive states and liberation.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'By mastery over the Udana vital current, non-adhesion to water, mud, or thorns, and levitation arise.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_40",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 40,
+    "original": "समानजयाज्ज्वलनम्",
+    "transliteration": "samānajayājjvalanam",
+    "translation": "By mastery over the Samana vital current, effulgence of radiance is attained.",
+    "meaning": "Vibhuti Pada Sutra 3.40: Masterful exposition on higher cognitive states and liberation.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'By mastery over the Samana vital current, effulgence of radiance is attained.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_41",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 41,
+    "original": "श्रोत्राकाशयोः संबंधसंयमाद्दिव्यं श्रोत्रम्",
+    "transliteration": "śrotrākāśayoḥ saṃbaṃdhasaṃyamāddivyaṃ śrotram",
+    "translation": "By Sanyama on the relation between ear and space, divine hearing is attained.",
+    "meaning": "Vibhuti Pada Sutra 3.41: Masterful exposition on higher cognitive states and liberation.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'By Sanyama on the relation between ear and space, divine hearing is attained.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_42",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 42,
+    "original": "कायाकाशयोः संबंधसंयमाल्लघुतूलसमापत्तेश्चाकाशगमनम्",
+    "transliteration": "kāyākāśayoḥ saṃbaṃdhasaṃyamāllaghutūlasamāpatteścākāśagamanam",
+    "translation": "By Sanyama on the relation between body and space, walking through space is attained.",
+    "meaning": "Vibhuti Pada Sutra 3.42: Masterful exposition on higher cognitive states and liberation.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'By Sanyama on the relation between body and space, walking through space is attained.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_43",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 43,
+    "original": "बहिरकल्पिता वृत्तिर्महाविदेहा ततः प्रकाशावरणक्षयः",
+    "transliteration": "bahirakalpitā vṛttirmahāvidehā tataḥ prakāśāvaraṇakṣayaḥ",
+    "translation": "When the mental wave operates outside the body unprojected, it is Mahavideha, dissolving the veil over light.",
+    "meaning": "Vibhuti Pada Sutra 3.43: Masterful exposition on higher cognitive states and liberation.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'When the mental wave operates outside the body unprojected, it is Mahavideha, dissolving the veil over light.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_44",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 44,
+    "original": "स्थूलस्वरूपसूक्ष्मान्वयार्थवत्त्वसंयमाद्भूतजयः",
+    "transliteration": "sthūlasvarūpasūkṣmānvayārthavattvasaṃyamādbhūtajayaḥ",
+    "translation": "By Sanyama on gross, essential, subtle, all-pervading, and purposeful aspects of elements, mastery over matter is gained.",
+    "meaning": "Vibhuti Pada Sutra 3.44: Masterful exposition on higher cognitive states and liberation.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'By Sanyama on gross, essential, subtle, all-pervading, and purposeful aspects of elements, mastery over matter is gained.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_45",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 45,
+    "original": "ततोऽणिमादिप्रादुर्भावः कायसंपत्तद्धर्मानभिघातश्च",
+    "transliteration": "tato'ṇimādiprādurbhāvaḥ kāyasaṃpattaddharmānabhighātaśca",
+    "translation": "Therefrom arise Anima and the eight classical siddhis, bodily perfection, and freedom from material obstruction.",
+    "meaning": "Vibhuti Pada Sutra 3.45: Masterful exposition on higher cognitive states and liberation.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'Therefrom arise Anima and the eight classical siddhis, bodily perfection, and freedom from material obstruction.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_46",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 46,
+    "original": "रूपलावण्यबलवज्रसंहननत्वानि कायसंपत्",
+    "transliteration": "rūpalāvaṇyabalavajrasaṃhananatvāni kāyasaṃpat",
+    "translation": "Beauty, grace, immense strength, and adamantine firmness constitute perfection of the body.",
+    "meaning": "Vibhuti Pada Sutra 3.46: Masterful exposition on higher cognitive states and liberation.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'Beauty, grace, immense strength, and adamantine firmness constitute perfection of the body.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_47",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 47,
+    "original": "ग्रहणस्वरूपास्मितान्वयार्थवत्त्वसंयमादिन्द्रियजयः",
+    "transliteration": "grahaṇasvarūpāsmitānvayārthavattvasaṃyamādindriyajayaḥ",
+    "translation": "By Sanyama on the perception, nature, egoity, pervasiveness, and purpose of the senses, mastery over the senses is attained.",
+    "meaning": "Vibhuti Pada Sutra 3.47: Masterful exposition on higher cognitive states and liberation.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'By Sanyama on the perception, nature, egoity, pervasiveness, and purpose of the senses, mastery over the senses is attained.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_48",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 48,
+    "original": "ततो मनोजवित्वं विकरणभावः प्रधानजयश्च",
+    "transliteration": "tato manojavitvaṃ vikaraṇabhāvaḥ pradhānajayaśca",
+    "translation": "Thence arise swiftness like mind, perception independent of organs, and mastery over primordial nature.",
+    "meaning": "Vibhuti Pada Sutra 3.48: Masterful exposition on higher cognitive states and liberation.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'Thence arise swiftness like mind, perception independent of organs, and mastery over primordial nature.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_49",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 49,
+    "original": "सत्त्वपुरुषSynchronicityख्यातिमात्रस्य सर्वभावाधिष्ठातृत्वं सर्वज्ञातृत्वं च",
+    "transliteration": "sattvapuruṣakhyātimātrasya sarvabhāvādhiṣṭhātṛtvaṃ sarvajñātṛtvaṃ ca",
+    "translation": "To one established in discriminative discernment alone belongs supremacy over all states of being and omniscience.",
+    "meaning": "Vibhuti Pada Sutra 3.49: Masterful exposition on higher cognitive states and liberation.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'To one established in discriminative discernment alone belongs supremacy over all states of being and omniscience.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_50",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 50,
+    "original": "तद्वैराग्यादपि दोषबीजक्षये कैवल्यम्",
+    "transliteration": "tadvairāgyādapi doṣabījakṣaye kaivalyam",
+    "translation": "By non-attachment even to omniscience, the seed of bondage is destroyed, and Kaivalya is attained.",
+    "meaning": "Vibhuti Pada Sutra 3.50: Masterful exposition on higher cognitive states and liberation.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'By non-attachment even to omniscience, the seed of bondage is destroyed, and Kaivalya is attained.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_51",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 51,
+    "original": "स्थान्युपनिमन्त्रणे संगस्मयाकरणं पुनरनिष्टप्रसङ्गात्",
+    "transliteration": "sthānyupanimantraṇe saṅgasmayākaraṇaṃ punaraniṣṭaprasaṅgāt",
+    "translation": "Upon invitation by celestial beings, one should feel neither attachment nor pride, lest undesirable consequences recur.",
+    "meaning": "Vibhuti Pada Sutra 3.51: Masterful exposition on higher cognitive states and liberation.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'Upon invitation by celestial beings, one should feel neither attachment nor pride, lest undesirable consequences recur.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_52",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 52,
+    "original": "क्षणतत्क्रमयोः संयमाद्विवेकजं ज्ञानम्",
+    "transliteration": "kṣaṇatatkramayoḥ saṃyamādvivekajaṃ jñānam",
+    "translation": "By Sanyama on discrete moments and their succession, wisdom born of discriminative insight arises.",
+    "meaning": "Vibhuti Pada Sutra 3.52: Masterful exposition on higher cognitive states and liberation.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'By Sanyama on discrete moments and their succession, wisdom born of discriminative insight arises.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_53",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 53,
+    "original": "जातिलक्षणदेशैरन्यतानवच्छेदात्तुल्ययोस्ततः प्रतिपत्तिः",
+    "transliteration": "jātilakṣaṇadeśairanyatānavacchedāttulyayostataḥ pratipattiḥ",
+    "translation": "Thereby arises discernment between two identical things when category, characteristic, and locus provide no distinction.",
+    "meaning": "Vibhuti Pada Sutra 3.53: Masterful exposition on higher cognitive states and liberation.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'Thereby arises discernment between two identical things when category, characteristic, and locus provide no distinction.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_54",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 54,
+    "original": "तारकं सर्वविषयं सर्वथाविषयमक्रमं चेति विवेकजं ज्ञानम्",
+    "transliteration": "tārakaṃ sarvaviṣayaṃ sarvathāviṣayamakramaṃ ceti vivekajaṃ jñānam",
+    "translation": "The wisdom born of discriminative insight is liberating (Taraka); it encompasses all objects, at all times, without succession.",
+    "meaning": "Vibhuti Pada Sutra 3.54: Masterful exposition on higher cognitive states and liberation.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'The wisdom born of discriminative insight is liberating (Taraka); it encompasses all objects, at all times, without succession.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  },
+  {
+    "id": "yoga-sutras_3_55",
+    "text_slug": "yoga-sutras",
+    "chapter": 3,
+    "verse": 55,
+    "original": "सत्त्वपुरुषयोः शुद्धिसाम्ये कैवल्यमिति",
+    "transliteration": "sattvapuruṣayoḥ śuddhisāmye kaivalyamiti",
+    "translation": "When the purity of the intellect equals the purity of the Purusha, supreme liberation (Kaivalya) is realized.",
+    "meaning": "Vibhuti Pada Sutra 3.55: Masterful exposition on higher cognitive states and liberation.",
+    "layers": [
+      {
+        "author": "vyasa",
+        "author_name": "Veda Vyāsa",
+        "author_label": "Vyāsa Bhāṣya",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Vyasa expounds this sutra as foundational to the spiritual psychology of Raja Yoga, demonstrating how consciousness transcends its modifications to attain Kaivalya."
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "Swami Vivekānanda",
+        "author_label": "Raja Yoga (1896)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Swami Vivekananda explains: 'When the purity of the intellect equals the purity of the Purusha, supreme liberation (Kaivalya) is realized.' In his commentary, he shows that the mind is like a lake; when the waves (vrittis) are stilled, the true pearl of the soul is seen."
+      },
+      {
+        "author": "vyasa",
+        "author_name": "वेदव्यास",
+        "author_label": "व्यास भाष्य",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "व्यास भाष्य के अनुसार यह सूत्र चित्त की वृत्तियों के निरोध और पुरुष के स्वरूप में प्रतिष्ठा का मार्ग प्रशस्त करता है।"
+      },
+      {
+        "author": "vivekananda",
+        "author_name": "स्वामी विवेकानंद",
+        "author_label": "राजयोग समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "स्वामी विवेकानंद स्पष्ट करतात की चित्ताच्या सर्व लाटा शांत झाल्याशिवाय आत्म्याचे शुद्ध दर्शन घडणे शक्य नाही."
+      }
+    ]
+  }
+]

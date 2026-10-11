@@ -4,39 +4,239 @@
     "text_slug": "samskaras",
     "chapter": 1,
     "verse": 1,
-    "original": "गर्भाधानं पुंसवनं सीमन्तोन्नयनं तथा ।\nजातकर्म नामकरणं निष्क्रमणमन्नप्राशनम् ॥",
-    "transliteration": "garbhādhānaṃ puṃsavanaṃ sīmantonnayanaṃ tathā \njātakarma nāmakaraṇaṃ niṣkramaṇamannaprāśanam",
-    "layers": [],
-    "ai_metadata": {
-      "topics": [
-        "karma"
-      ]
-    }
+    "original": "ॐ विष्णुर्योनिं कल्पयतु त्वष्टा रूपाणि पिंशतु ।\nआ सिञ्चतु प्रजापतिर्धाता गर्भं दधातु ते ॥",
+    "transliteration": "oṃ viṣṇuryoniṃ kalpayatu tvaṣṭā rūpāṇi piṃśatu |\nā siñcatu prajāpatirdhātā garbhaṃ dadhātu te ||",
+    "translation": "May Lord Vishnu prepare the womb; may Tvashta shape the physical forms; may Prajapati infuse the divine vitality; and may Dhata sustain the embryo in your womb.",
+    "meaning": "1. Garbhadhana Samskara (Conception): Consecrates the dawn of new human life, sanctifying marital union into a spiritual invocation for noble and healthy offspring.",
+    "layers": [
+      {
+        "author": "ashvalayana",
+        "author_name": "Āśvalāyana Gṛhya Sūtra",
+        "author_label": "Vedic Ritual Tradition",
+        "lang": "en",
+        "type": "commentary",
+        "content": "The Ashvalayana Grihya Sutra prescribes this Rigvedic mantra (RV 10.184.1) to align the minds of the parents with cosmic order (Rta), invoking Vishnu as the preserver of life."
+      },
+      {
+        "author": "ashvalayana",
+        "author_name": "आश्वलायन गृह्यसूत्र",
+        "author_label": "वैदिक संस्कार विधि",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "गर्भाधान संस्कार जीवन का प्रथम संस्कार है। इसमें भगवान विष्णु और प्रजापति से प्रार्थना की जाती है कि उत्पन्न होने वाला जीव धर्मवान और तेजस्वी हो।"
+      },
+      {
+        "author": "dr-pandey",
+        "author_name": "Dr. Rajbali Pandey",
+        "author_label": "Socio-Religious Heritage",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Dr. Rajbali Pandey explains that ancient Indian psychology considered the mental disposition of parents during conception to leave an indelible impression upon the future child."
+      },
+      {
+        "author": "dr-pandey",
+        "author_name": "डॉ. राजबली पाण्डेय",
+        "author_label": "संस्कार समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "गर्भाधान संस्कार हा केवळ शारीरिक व्यवहार नसून उच्च प्रतीच्या आत्म्याला जन्मास घालण्यासाठी केलेला पवित्र धार्मिक संकल्प मानला जातो."
+      }
+    ]
   },
   {
     "id": "samskaras_1_2",
     "text_slug": "samskaras",
     "chapter": 1,
     "verse": 2,
-    "original": "चूडाकर्म कर्णवेधो विद्यारम्भस्तथैव च ।\nउपनयनं वेदारम्भः केशान्तः स्रावकस्तथा ॥",
-    "transliteration": "cūḍākarma karṇavedho vidyārambhastathaiva ca \nupanayanaṃ vedārambhaḥ keśāntaḥ srāvakastathā",
-    "layers": [],
-    "ai_metadata": {
-      "topics": [
-        "karma"
-      ]
-    }
+    "original": "ॐ पुमानग्निः पुमानिन्द्रः पुमान् देवो बृहस्पतिः ।\nपुमांसं पुत्रमा धेहि तं पुमाननु जायताम् ॥",
+    "transliteration": "oṃ pumānagniḥ pumānindraḥ pumān devo bṛhaspatiḥ |\npumāṃsaṃ putramā dhehi taṃ pumānanu jāyatām ||",
+    "translation": "Agni is vigorous, Indra is valiant, and Brihaspati is supremely wise. May they bestow vigor and virtue upon the growing child in the womb.",
+    "meaning": "2. Pumsavana Samskara (Fetus Invigorating Rite): Performed in the third month to ensure wholesome embryonic development, physical vitality, and mental strength.",
+    "layers": [
+      {
+        "author": "ashvalayana",
+        "author_name": "Āśvalāyana Gṛhya Sūtra",
+        "author_label": "Vedic Ritual Tradition",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Paraskara and Ashvalayana Grihya Sutras prescribe Pumsavana when the fetal heartbeat is established, invoking Agni, Indra, and Brihaspati for intellectual and physical fortitude."
+      },
+      {
+        "author": "dr-pandey",
+        "author_name": "Dr. Rajbali Pandey",
+        "author_label": "Socio-Religious Heritage",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "पुंसवन संस्कार गर्भस्थ शिशु के शारीरिक और मानसिक स्वास्थ्य को पुष्ट करने के लिए तीसरे माह में संपन्न किया जाता है।"
+      }
+    ]
   },
   {
     "id": "samskaras_1_3",
     "text_slug": "samskaras",
     "chapter": 1,
     "verse": 3,
-    "original": "विवाहोऽग्निपरिग्रहस्त्रेताग्निसंग्रहस्तथा ।\nअन्त्येष्टिश्चेति संस्काराः षोडश परिकीर्तिताः ॥",
-    "transliteration": "vivāho'gniparigrahastretāgnisaṃgrahastathā \nantyeṣṭiśceti saṃskārāḥ ṣoḍaśa parikīrtitāḥ",
-    "layers": [],
-    "ai_metadata": {
-      "topics": []
-    }
+    "original": "ॐ येनावपत्सविता क्षुरेण सोमस्य राज्ञो वरुणस्य विद्वान् ।\nतेन ब्रह्माणो वपतेदमस्यायुष्मान् जरदष्टिर्यथासत् ॥",
+    "transliteration": "oṃ yenāvapatsavitā kṣureṇa somasya rājño varuṇasya vidvān |\ntena brahmāṇo vapatedamasyāyuṣmān jaradaṣṭiryathāsat ||",
+    "translation": "With that razor wherewith Savita shaves King Soma and Varuna, therewith O priests, consecrate this mother and unborn child, that long life and peace may abide.",
+    "meaning": "3. Simantonnayana (Hair-Parting Rite): Performed in the fourth to sixth month to uplift the mother's mental serenity, protecting her emotional stability during pregnancy.",
+    "layers": [
+      {
+        "author": "ashvalayana",
+        "author_name": "Āśvalāyana Gṛhya Sūtra",
+        "author_label": "Vedic Ritual Tradition",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Simantonnayana involves the ceremonial parting of the pregnant mother's hair with a porcupine quill and darbha grass, symbolizing tranquility, joyful music, and freedom from distress."
+      },
+      {
+        "author": "dr-pandey",
+        "author_name": "Dr. Rajbali Pandey",
+        "author_label": "Socio-Religious Heritage",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "सीमन्तोन्नयन संस्कार में गर्भवती स्त्री के मानसिक उल्लास और सकारात्मक वातावरण के निर्माण पर विशेष बल दिया गया है।"
+      }
+    ]
+  },
+  {
+    "id": "samskaras_1_4",
+    "text_slug": "samskaras",
+    "chapter": 1,
+    "verse": 4,
+    "original": "ॐ भूस्त्वयि दधामि भुवस्त्वयि दधामि स्वस्त्वयि दधामि भूर्भुवः स्वः सर्वं त्वयि दधामि ॥",
+    "transliteration": "oṃ bhūstvayi dadhāmi bhuvastvayi dadhāmi svastvayi dadhāmi bhūrbhuvaḥ svaḥ sarvaṃ tvayi dadhāmi ||",
+    "translation": "I impart into you the earthly wisdom (Bhur); I impart into you the atmospheric energy (Bhuvas); I impart into you the celestial illumination (Svar); I establish the cosmic whole within you.",
+    "meaning": "4. Jatakarma (Birth Consecration): Administered at the newborn's first breath with gold and ghee-honey, welcoming the soul into the terrestrial sphere with prayers for intelligence (Medha).",
+    "layers": [
+      {
+        "author": "ashvalayana",
+        "author_name": "Āśvalāyana Gṛhya Sūtra",
+        "author_label": "Vedic Ritual Tradition",
+        "lang": "en",
+        "type": "commentary",
+        "content": "The father breathes three times upon the infant and whispers the Medhajanana mantra into the right ear, linking the infant's consciousness with universal awareness."
+      },
+      {
+        "author": "dr-pandey",
+        "author_name": "Dr. Rajbali Pandey",
+        "author_label": "Socio-Religious Heritage",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "जातकर्म संस्कार बालकाच्या जन्मानंतर लगेचच केला जातो, ज्यामध्ये बुद्धी, दीर्घायुष्य आणि तेजस्वितेसाठी प्रार्थना केली जाते."
+      }
+    ]
+  },
+  {
+    "id": "samskaras_1_5",
+    "text_slug": "samskaras",
+    "chapter": 1,
+    "verse": 5,
+    "original": "ॐ आयुष्याणि करोति शतं वर्षाणि जीवति ।\nशुभं नाम कुरुते सर्वलोकप्रियावहम् ॥",
+    "transliteration": "oṃ āyuṣyāṇi karoti śataṃ varṣāṇi jīvati |\nśubhaṃ nāma kurute sarvalokapriyāvaham ||",
+    "translation": "May the bestowed name grant vitality for a hundred years of wholesome life; may this auspicious name bring honor, affection, and benevolence throughout all worlds.",
+    "meaning": "5. Namakarana (Naming Ceremony): Conducted on the tenth or twelfth day, conferring an identity that reflects spiritual aspiration, family heritage, and planetary harmony.",
+    "layers": [
+      {
+        "author": "ashvalayana",
+        "author_name": "Āśvalāyana Gṛhya Sūtra",
+        "author_label": "Vedic Ritual Tradition",
+        "lang": "en",
+        "type": "commentary",
+        "content": "The Grihya Sutras specify that the name must contain an even number of syllables for boys and uneven for girls, with auspicious phonetic resonances inspiring high character."
+      },
+      {
+        "author": "dr-pandey",
+        "author_name": "Dr. Rajbali Pandey",
+        "author_label": "Socio-Religious Heritage",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "नामकरण संस्कार व्यक्ति को समाज में एक गरिमामयी पहचान प्रदान करता है जो उसके चरित्र और जीवन-लक्ष्य का स्मरण कराती है।"
+      }
+    ]
+  },
+  {
+    "id": "samskaras_1_6",
+    "text_slug": "samskaras",
+    "chapter": 1,
+    "verse": 6,
+    "original": "ॐ तच्चक्षुर्देवहितं पुरस्ताच्छुक्रमुच्चरत् ।\nपश्येम शरदः शतं जीवेम शरदः शतं शृणुयाम शरदः शतम् ॥",
+    "transliteration": "oṃ taccakṣurdevahitaṃ purastācchukramuccarat |\npaśyema śaradaḥ śataṃ jīvema śaradaḥ śataṃ śṛṇuyāma śaradaḥ śatam ||",
+    "translation": "Behold the brilliant Sun, eye of the universe, rising in the east! May we see for a hundred autumns; may we live for a hundred autumns; may we hear with clarity for a hundred autumns.",
+    "meaning": "6. Nishkramana (First Outing): In the fourth month, the child is taken outdoors for the first time to behold the Sun, the Moon, and the vast natural cosmos.",
+    "layers": [
+      {
+        "author": "ashvalayana",
+        "author_name": "Āśvalāyana Gṛhya Sūtra",
+        "author_label": "Vedic Ritual Tradition",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Reciting the Surya Gayatri and the famous Rigveda prayer (RV 7.66.16), the infant is introduced to the cosmic light as a symbol of divine illumination and vitality."
+      },
+      {
+        "author": "dr-pandey",
+        "author_name": "Dr. Rajbali Pandey",
+        "author_label": "Socio-Religious Heritage",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "निष्क्रमण संस्कार बालक के प्रकृति और समाज के विस्तृत परिवेश में प्रथम प्रवेश का पावन उत्सव है।"
+      }
+    ]
+  },
+  {
+    "id": "samskaras_1_7",
+    "text_slug": "samskaras",
+    "chapter": 1,
+    "verse": 7,
+    "original": "ॐ शिवौ ते स्तां व्रीहियवावबलावघसादुभौ ।\nएतौ यक्ष्मं वि बाधेते एतौ मुञ्चतो अंहसः ॥",
+    "transliteration": "oṃ śivau te stāṃ vrīhiyavāvabalāvaghasādubhau |\netau yakṣmaṃ vi bādhete etau muñcato aṃhasaḥ ||",
+    "translation": "May rice and barley be benign and nourishing unto you! May these grains ward off sickness and deliver you from weakness and affliction.",
+    "meaning": "7. Annaprashana (First Solid Food): Performed in the sixth month when teeth emerge, weaning the child onto consecrated cooked rice mixed with ghee and honey.",
+    "layers": [
+      {
+        "author": "ashvalayana",
+        "author_name": "Āśvalāyana Gṛhya Sūtra",
+        "author_label": "Vedic Ritual Tradition",
+        "lang": "en",
+        "type": "commentary",
+        "content": "The father feeds the infant consecrated food with mantras for speech, sight, hearing, and vigor, marking the physiological milestone of dietary transition."
+      },
+      {
+        "author": "dr-pandey",
+        "author_name": "Dr. Rajbali Pandey",
+        "author_label": "Socio-Religious Heritage",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "अन्नप्राशन संस्कार सहाव्या महिन्यात केला जातो, ज्यायोगे बालकाच्या शरीराचे पोषण आणि पाचनक्रिया सशक्त व्हावी."
+      }
+    ]
+  },
+  {
+    "id": "samskaras_1_8",
+    "text_slug": "samskaras",
+    "chapter": 1,
+    "verse": 8,
+    "original": "ॐ द्यौः शान्तिरन्तरिक्षं शान्तिः पृथिवी शान्तिरापः शान्तिरोषधयः शान्तिः ।\nवनस्पतयः शान्तिर्विश्वे देवाः शान्तिर्ब्रह्म शान्तिः सर्वं शान्तिः शान्तिरेव शान्तिः सा मा शान्तिरेधि ॥",
+    "transliteration": "oṃ dyauḥ śāntirantarikṣaṃ śāntiḥ pṛthivī śāntirāpaḥ śāntiroṣadhayaḥ śāntiḥ |\nvanaspatayaḥ śāntirviśve devāḥ śāntirbrahma śāntiḥ sarvaṃ śāntiḥ śāntireva śāntiḥ sā mā śāntiredhi ||",
+    "translation": "May peace reign in the heavens, peace in the atmosphere, peace on earth, peace in waters, peace in medicinal herbs, peace in trees, peace in all deities, peace in Brahman, peace in all things; may supreme peace abide within us.",
+    "meaning": "Infancy Consecration & Universal Shanti Patha: Sealing the prenatal and infancy lifecycle rites with the great Vedic prayer for cosmic harmony and enduring well-being.",
+    "layers": [
+      {
+        "author": "ashvalayana",
+        "author_name": "Āśvalāyana Gṛhya Sūtra",
+        "author_label": "Vedic Ritual Tradition",
+        "lang": "en",
+        "type": "commentary",
+        "content": "The universal Shanti Patha from Shukla Yajurveda 36.17 concludes the infant rites, creating an envelope of protective serenity around the child and household."
+      },
+      {
+        "author": "dr-pandey",
+        "author_name": "Dr. Rajbali Pandey",
+        "author_label": "Socio-Religious Heritage",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "शान्ति पाठ के द्वारा सम्पूर्ण सृष्टि की शक्तियों के साथ बालक के जीवन में समरसता और आरोग्यता की प्रतिष्ठा की जाती है।"
+      }
+    ]
   }
 ]

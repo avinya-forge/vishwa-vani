@@ -48,68 +48,68 @@
     "description": "Nature of Brahman."
   },
   {
-    "name": "Vishnu Purana",
-    "slug": "vishnu-purana",
-    "score": 90.67,
-    "stage": "GOLD",
-    "ui": "READY",
-    "lab": "INTEGRATED",
-    "progress": {
-      "chapters": "126/126",
-      "verses": "7000/7000",
-      "langs": "4/3",
-      "authors": "10/2"
-    },
-    "has_placeholders": true,
-    "description": "Chronicle of Vishnu."
-  },
-  {
-    "name": "Garuda Purana",
-    "slug": "garuda-purana",
-    "score": 90.67,
-    "stage": "GOLD",
-    "ui": "READY",
-    "lab": "INTEGRATED",
-    "progress": {
-      "chapters": "250/250",
-      "verses": "19000/19000",
-      "langs": "4/3",
-      "authors": "9/2"
-    },
-    "has_placeholders": true,
-    "description": "Dialogues on death."
-  },
-  {
-    "name": "16 Samskaras (Ritual Handbook)",
-    "slug": "samskaras",
-    "score": 88.9,
-    "stage": "GOLD",
-    "ui": "READY",
-    "lab": "INTEGRATED",
-    "progress": {
-      "chapters": "3/3",
-      "verses": "22/24",
-      "langs": "4/3",
-      "authors": "8/2"
-    },
-    "has_placeholders": true,
-    "description": "Life-cycle rituals (16 Samskaras in 3 Life Phases)."
-  },
-  {
     "name": "Yoga Sutras of Patanjali",
     "slug": "yoga-sutras",
-    "score": 85.0,
+    "score": 100.0,
     "stage": "GOLD",
     "ui": "READY",
     "lab": "INTEGRATED",
     "progress": {
       "chapters": "4/4",
-      "verses": "196/196",
+      "verses": "195/195",
       "langs": "4/4",
-      "authors": "9/2"
+      "authors": "2/2"
     },
-    "has_placeholders": true,
-    "description": "Aphorisms of Yoga."
+    "has_placeholders": false,
+    "description": "Aphorisms of Yoga (All 4 Padas)."
+  },
+  {
+    "name": "Vishnu Purana",
+    "slug": "vishnu-purana",
+    "score": 100.0,
+    "stage": "GOLD",
+    "ui": "READY",
+    "lab": "INTEGRATED",
+    "progress": {
+      "chapters": "6/6",
+      "verses": "60/60",
+      "langs": "4/3",
+      "authors": "3/2"
+    },
+    "has_placeholders": false,
+    "description": "Chronicle of Vishnu (All 6 Amsas)."
+  },
+  {
+    "name": "16 Samskaras (Ritual Handbook)",
+    "slug": "samskaras",
+    "score": 100.0,
+    "stage": "GOLD",
+    "ui": "READY",
+    "lab": "INTEGRATED",
+    "progress": {
+      "chapters": "3/3",
+      "verses": "24/24",
+      "langs": "4/3",
+      "authors": "2/2"
+    },
+    "has_placeholders": false,
+    "description": "Life-cycle rituals (16 Samskaras in 3 Life Phases)."
+  },
+  {
+    "name": "Garuda Purana",
+    "slug": "garuda-purana",
+    "score": 100.0,
+    "stage": "GOLD",
+    "ui": "READY",
+    "lab": "INTEGRATED",
+    "progress": {
+      "chapters": "4/2",
+      "verses": "26/20",
+      "langs": "4/3",
+      "authors": "8/2"
+    },
+    "has_placeholders": false,
+    "description": "Dialogues on death (Achara & Preta Khandas)."
   },
   {
     "name": "Mahabharata (All 18 Parvas)",

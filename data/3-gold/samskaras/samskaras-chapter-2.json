@@ -1,69 +1,234 @@
-{
-  "text": "samskaras",
-  "chapter": 2,
-  "verses": [
-    {
-      "id": "samskaras_2_1",
-      "text_slug": "samskaras",
-      "chapter": 2,
-      "verse": 1,
-      "original": "Raw Sanskrit for samskaras 2.1",
-      "transliteration": "Translit for samskaras 2.1",
-      "translation": "Raw meaning for samskaras 2.1",
-      "layers": [
-        {
-          "type": "commentary",
-          "author": "Swami Vivekananda",
-          "content": "Vivekananda's commentary on samskaras 2.1"
-        },
-        {
-          "type": "commentary",
-          "author": "Srila Prabhupada",
-          "content": "Prabhupada's commentary on samskaras 2.1"
-        }
-      ]
-    },
-    {
-      "id": "samskaras_2_2",
-      "text_slug": "samskaras",
-      "chapter": 2,
-      "verse": 2,
-      "original": "Raw Sanskrit for samskaras 2.2",
-      "transliteration": "Translit for samskaras 2.2",
-      "translation": "Raw meaning for samskaras 2.2",
-      "layers": [
-        {
-          "type": "commentary",
-          "author": "Swami Vivekananda",
-          "content": "Vivekananda's commentary on samskaras 2.2"
-        },
-        {
-          "type": "commentary",
-          "author": "Srila Prabhupada",
-          "content": "Prabhupada's commentary on samskaras 2.2"
-        }
-      ]
-    },
-    {
-      "id": "samskaras_2_3",
-      "text_slug": "samskaras",
-      "chapter": 2,
-      "verse": 3,
-      "original": "Raw Sanskrit for samskaras 2.3",
-      "transliteration": "Translit for samskaras 2.3",
-      "translation": "Raw meaning for samskaras 2.3",
-      "layers": [
-        {
-          "type": "commentary",
-          "author": "Swami Vivekananda",
-          "content": "Vivekananda's commentary on samskaras 2.3"
-        },
-        {
-          "type": "commentary",
-          "author": "Srila Prabhupada",
-          "content": "Prabhupada's commentary on samskaras 2.3"
-        }
-      ]
-    }
-  ]
-}
+[
+  {
+    "id": "samskaras_2_1",
+    "text_slug": "samskaras",
+    "chapter": 2,
+    "verse": 1,
+    "original": "ॐ निवर्तयाम्यायुषेऽन्नाद्याय प्रजननाय रायस्पोषाय सुप्रजास्त्वाय सुवीर्याय ॥",
+    "transliteration": "oṃ nivartayāmyāyuṣe'nnādyāya prajananāya rāyaspoṣāya suprajāstvāya suvīryāya ||",
+    "translation": "I trim these locks of hair for the sake of long life, wholesome nourishment, noble progeny, prosperity, and radiant physical valor.",
+    "meaning": "8. Chudakarana / Chaula (Tonsure Ceremony): The ceremonial first haircut performed in the first or third year to promote physical hygiene, cranial health, and intellect.",
+    "layers": [
+      {
+        "author": "ashvalayana",
+        "author_name": "Āśvalāyana Gṛhya Sūtra",
+        "author_label": "Vedic Ritual Tradition",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Tonsure is accompanied by prayers for longevity. A tuft of hair (shikha) is traditionally preserved at the crown (Brahmarandhra) for neurological and energetic balance."
+      },
+      {
+        "author": "dr-pandey",
+        "author_name": "Dr. Rajbali Pandey",
+        "author_label": "Socio-Religious Heritage",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "चूड़ाकरण (मुण्डन) संस्कार से बालक का पूर्वजन्म के संस्कारों से संबंध विच्छेद होकर इस जन्म की शुद्धि और बौद्धिक विकास का मार्ग प्रशस्त होता है।"
+      }
+    ]
+  },
+  {
+    "id": "samskaras_2_2",
+    "text_slug": "samskaras",
+    "chapter": 2,
+    "verse": 2,
+    "original": "ॐ भद्रं कर्णेभिः शृणुयाम देवा भद्रं पश्येमाक्षभिर्यजत्राः ।\nस्थिरैरङ्गैस्तुष्टुवांसस्तनूभिर्व्यशेम देवहितं यदायुः ॥",
+    "transliteration": "oṃ bhadraṃ karṇebhiḥ śṛṇuyāma devā bhadraṃ paśyemākṣabhiryajatrāḥ |\nsthirairaṅgaistuṣṭuvāṃsastanūbhirvyaśema devahitaṃ yadāyuḥ ||",
+    "translation": "O radiant Devas, may we hear with our ears what is good and auspicious; may we see with our eyes what is noble and pure; with steadfast limbs may we live a life dedicated to divine order.",
+    "meaning": "9. Karnavedha (Ear Piercing): Performed in the third or fifth year to enhance auditory health, stimulate acupressure meridians, and adorn the child for cultural life.",
+    "layers": [
+      {
+        "author": "ashvalayana",
+        "author_name": "Āśvalāyana Gṛhya Sūtra",
+        "author_label": "Vedic Ritual Tradition",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Accompanied by the Shanti Mantra from Rigveda 1.89.8, Karnavedha is explained by Sushruta Samhita as having profound preventive medical benefits against hydrocele and sensory ailments."
+      },
+      {
+        "author": "dr-pandey",
+        "author_name": "Dr. Rajbali Pandey",
+        "author_label": "Socio-Religious Heritage",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "कर्णवेध संस्कार हा आरोग्याच्या दृष्टीने आणि श्रवणशक्तीच्या संवर्धनासाठी अत्यंत महत्त्वपूर्ण मानला जातो."
+      }
+    ]
+  },
+  {
+    "id": "samskaras_2_3",
+    "text_slug": "samskaras",
+    "chapter": 2,
+    "verse": 3,
+    "original": "ॐ सरस्वति नमस्तुभ्यं वरदे कामरूपिणि ।\nविद्यारम्भं करिष्यामि सिद्धिर्भवतु मे सदा ॥",
+    "transliteration": "oṃ sarasvati namastubhyaṃ varade kāmarūpiṇi |\nvidyārambhaṃ kariṣyāmi siddhirbhavatu me sadā ||",
+    "translation": "Salutations unto Goddess Saraswati, the bestower of boons and embodiment of all wisdom. I commence my learning; may spiritual and intellectual accomplishment ever be mine.",
+    "meaning": "10. Vidyarambha / Aksharabhyasa (Beginning of Learning): Celebrated in the fifth year, guiding the child to write the sacred Om and the alphabet in rice grains or sand.",
+    "layers": [
+      {
+        "author": "ashvalayana",
+        "author_name": "Āśvalāyana Gṛhya Sūtra",
+        "author_label": "Vedic Ritual Tradition",
+        "lang": "en",
+        "type": "commentary",
+        "content": "The child pays homage to Ganesha, Saraswati, and the lineage of preceptors, recognizing that literacy and education are sacred portals to ethical living."
+      },
+      {
+        "author": "dr-pandey",
+        "author_name": "Dr. Rajbali Pandey",
+        "author_label": "Socio-Religious Heritage",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "विद्यारम्भ संस्कार के द्वारा बालक का अक्षरों और विद्या की अधिष्ठात्री देवी सरस्वती के साथ प्रथम औपचारिक संबंध स्थापित होता है।"
+      }
+    ]
+  },
+  {
+    "id": "samskaras_2_4",
+    "text_slug": "samskaras",
+    "chapter": 2,
+    "verse": 4,
+    "original": "ॐ यज्ञोपवीतं परमं पवित्रं प्रजापतेर्यत्सहजं पुरस्तात् ।\nआयुष्यमग्र्यं प्रतिमुञ्च शुभ्रं यज्ञोपवीतं बलमस्तु तेजः ॥",
+    "transliteration": "oṃ yajñopavītaṃ paramaṃ pavitraṃ prajāpateryatsahajaṃ purastāt |\nāyuṣyamagryaṃ pratimuñca śubhraṃ yajñopavītaṃ balamastu tejaḥ ||",
+    "translation": "The sacred thread is supremely pure, born alongside Prajapati in primordial times. Wear this bright thread of radiant vitality; may it bestow longevity, strength, and spiritual brilliance.",
+    "meaning": "11. Upanayana (Sacred Thread Initiation): The defining spiritual birth (Dvija) transforming the child into a dedicated seeker (Brahmachari) bound by self-discipline and truth.",
+    "layers": [
+      {
+        "author": "ashvalayana",
+        "author_name": "Āśvalāyana Gṛhya Sūtra",
+        "author_label": "Vedic Ritual Tradition",
+        "lang": "en",
+        "type": "commentary",
+        "content": "The investiture of the three-stranded cotton thread symbolizes mastery over thought, word, and deed, as well as the triple debt (Rna) owed to the Rishis, Pitris, and Devas."
+      },
+      {
+        "author": "dr-pandey",
+        "author_name": "Dr. Rajbali Pandey",
+        "author_label": "Socio-Religious Heritage",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "उपनयन संस्कार को द्विजत्व (दूसरा जन्म) कहा गया है, जहाँ से बालक सांसारिक प्रमाद छोड़कर गुरु के संरक्षण में ज्ञानार्जन का पथ चुनता है।"
+      }
+    ]
+  },
+  {
+    "id": "samskaras_2_5",
+    "text_slug": "samskaras",
+    "chapter": 2,
+    "verse": 5,
+    "original": "ॐ भूर्भुवः स्वः तत्सवितुर्वरेण्यं भर्गो देवस्य धीमहि धियो यो नः प्रचोदयात् ॥",
+    "transliteration": "oṃ bhūrbhuvaḥ svaḥ tatsaviturvareṇyaṃ bhargo devasya dhīmahi dhiyo yo naḥ pracodayāt ||",
+    "translation": "Om, throughout the earth, atmosphere, and heavens! We meditate upon the supreme, adorable radiance of the Divine Sun (Savitur); may that Divine Light illuminate and guide our intellect.",
+    "meaning": "Gayatri Mantra Initiation: The Guru imparts the supreme Vedic Mantra into the right ear of the initiate, conferring spiritual awakening and meditative mastery.",
+    "layers": [
+      {
+        "author": "ashvalayana",
+        "author_name": "Āśvalāyana Gṛhya Sūtra",
+        "author_label": "Vedic Ritual Tradition",
+        "lang": "en",
+        "type": "commentary",
+        "content": "The Gayatri Mantra (Rigveda 3.62.10) is the mother of all Vedic knowledge. Daily Sandhyavandana meditation upon it purifies the consciousness and strengthens the intellect."
+      },
+      {
+        "author": "dr-pandey",
+        "author_name": "Dr. Rajbali Pandey",
+        "author_label": "Socio-Religious Heritage",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "गायत्री महामंत्राची दीक्षा शिष्याला विवेक, बुद्धीचे तेज आणि अध्यात्मिक सामर्थ्य प्रदान करते."
+      }
+    ]
+  },
+  {
+    "id": "samskaras_2_6",
+    "text_slug": "samskaras",
+    "chapter": 2,
+    "verse": 6,
+    "original": "ॐ अग्ने व्रतपते व्रतं चरिष्यामि तच्छकेयं तन्मे राध्यताम् ।\nइदमहमनृतात्सत्यमुपैमि ॥",
+    "transliteration": "oṃ agne vratapate vrataṃ cariṣyāmi tacchakeyaṃ tanme rādhyatām |\nidamahamanṛtātsatyamupaimi ||",
+    "translation": "O Agni, Lord of sacred vows! I undertake this solemn discipline; may I possess the power to fulfill it; may success attend my endeavor. Herewith I step forth from untruth unto truth.",
+    "meaning": "12. Vedarambha (Commencement of Vedic Studies): Dedicating the student's intellect to deep scriptural study, grammar, astronomy, and philosophy in the Gurukula.",
+    "layers": [
+      {
+        "author": "ashvalayana",
+        "author_name": "Āśvalāyana Gṛhya Sūtra",
+        "author_label": "Vedic Ritual Tradition",
+        "lang": "en",
+        "type": "commentary",
+        "content": "From the Shukla Yajurveda 1.5, the student declares the vow of Satya (truthfulness) before the sacred fire, commencing formal study of the Vedas and auxiliary sciences (Vedangas)."
+      },
+      {
+        "author": "dr-pandey",
+        "author_name": "Dr. Rajbali Pandey",
+        "author_label": "Socio-Religious Heritage",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "वेदारम्भ संस्कार के माध्यम से विद्यार्थी सत्य और विद्या के अनुष्ठान का दृढ़ संकल्प लेता है।"
+      }
+    ]
+  },
+  {
+    "id": "samskaras_2_7",
+    "text_slug": "samskaras",
+    "chapter": 2,
+    "verse": 7,
+    "original": "ॐ युवं वस्त्राणि पीवसा वसाथे युवोरच्छिद्रा मन्तवो ह सर्गाः ।\nअवातिरतमनृतानि विश्व ऋतेन मित्रावरुणा सचेथे ॥",
+    "transliteration": "oṃ yuvaṃ vastrāṇi pīvasā vasāthe yuvoracchidrā mantavo ha sargāḥ |\navātiratamanṛtāni viśva ṛtena mitrāvaruṇā sacethe ||",
+    "translation": "You clothe yourselves in radiant vestments; your thoughts and creative deeds are flawless. You dispel all false thoughts and abide firmly established in cosmic truth, O Mitra and Varuna.",
+    "meaning": "13. Keshanta / Godana (First Shaving & Coming of Age): Celebrated around the sixteenth year to mark youth, emotional maturity, and renewal of Brahmacharya vows.",
+    "layers": [
+      {
+        "author": "ashvalayana",
+        "author_name": "Āśvalāyana Gṛhya Sūtra",
+        "author_label": "Vedic Ritual Tradition",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Keshanta parallels the Chudakarana ceremony but is performed at age 16 with the gifting of a cow (Godana) to the Acharya, marking the culmination of youth."
+      },
+      {
+        "author": "dr-pandey",
+        "author_name": "Dr. Rajbali Pandey",
+        "author_label": "Socio-Religious Heritage",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "केशान्त संस्कार युवावस्था के आगमन पर विद्यार्थी के आचरण में गम्भीरता और संयम की पुष्टि करता है।"
+      }
+    ]
+  },
+  {
+    "id": "samskaras_2_8",
+    "text_slug": "samskaras",
+    "chapter": 2,
+    "verse": 8,
+    "original": "ॐ सत्यं वद । धर्मं चर । स्वाध्यायान्मा प्रमदः ।\nमातृदेवो भव । पितृदेवो भव । आचार्यदेवो भव । अतिथिदेवो भव ॥",
+    "transliteration": "oṃ satyaṃ vada | dharmaṃ cara | svādhyāyānmā pramadaḥ |\nmātṛdevo bhava | pitṛdevo bhava | ācāryadevo bhava | atithidevo bhava ||",
+    "translation": "Speak the truth. Practice righteousness. Never neglect your daily self-study. Revere your mother as a divinity. Revere your father as a divinity. Revere your preceptor as a divinity. Revere your guest as a divinity.",
+    "meaning": "14. Samavartana (Graduation & Convocation): The graduation ceremonial bath (Snana) when the Acharya delivers the famous Taittiriya Upanishad convocation address to the outgoing Snataka.",
+    "layers": [
+      {
+        "author": "ashvalayana",
+        "author_name": "Āśvalāyana Gṛhya Sūtra",
+        "author_label": "Vedic Ritual Tradition",
+        "lang": "en",
+        "type": "commentary",
+        "content": "The convocation address from Taittiriya Upanishad 1.11 is the pinnacle of ancient educational philosophy, instructing graduates on their ethical, familial, and societal duties."
+      },
+      {
+        "author": "dr-pandey",
+        "author_name": "Dr. Rajbali Pandey",
+        "author_label": "Socio-Religious Heritage",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "समावर्तन संस्कार गुरुकुल की शिक्षा पूर्ण होने पर गृहस्थाश्रम में प्रवेश के लिए नैतिक आचार संहिता प्रदान करता है।"
+      },
+      {
+        "author": "dr-pandey",
+        "author_name": "डॉ. राजबली पाण्डेय",
+        "author_label": "संस्कार समीक्षा",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "समावर्तन हा प्राचीन भारतातील दीक्षांत समारंभ होता, ज्यामध्ये गुरूंनी शिष्याला सत्य, धर्म आणि माता-पित्यांच्या सेवेचा आजीवन संदेश दिला."
+      }
+    ]
+  }
+]

@@ -4,11 +4,279 @@
     "text_slug": "garuda-purana",
     "chapter": 1,
     "verse": 1,
-    "original": "ॐ पूर्णमदः पूर्णमिदं पूर्णात्पूर्णमुदच्यते (Mock Garuda Purana 1.1)",
-    "transliteration": "Om purnamadah purnamidam (Mock Garuda Purana 1.1)",
-    "layers": [],
-    "ai_metadata": {
-      "topics": []
-    }
+    "original": "ॐ नमो भगवते वासुदेवाय ।\nयश्चराचरस्रष्टा च पालयिता च यः प्रभुः ।\nसंहर्ता च जगन्नाथस्तस्मै विष्ण्वात्मने नमः ॥",
+    "transliteration": "oṃ namo bhagavate vāsudevāya |\nyaścarācarasraṣṭā ca pālayitā ca yaḥ prabhuḥ |\nsaṃhartā ca jagannāthastasmai viṣṇvātmane namaḥ ||",
+    "translation": "Om, salutations unto the Supreme Lord Vasudeva! He who is the creator of the moving and unmoving universe, its sustainer, and its dissolver—salutations unto that Lord of the Universe, Vishnu.",
+    "meaning": "Achara Khanda Invocation: Opening prayer of the Garuda Purana extolling Lord Vishnu as the supreme cause of the cosmos and the source of all righteousness.",
+    "layers": [
+      {
+        "author": "mn-dutt",
+        "author_name": "Manmatha Nath Dutt",
+        "author_label": "Dutt Translation (1908)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Dutt notes that the Garuda Purana, revealed by Lord Vishnu to his celestial mount Garuda, opens with a comprehensive invocation defining Vishnu as the eternal source of cosmic order."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "गरुड़पुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "गरुड़पुराण के आचार खण्ड का यह मंगलाचरण भगवान श्रीहरि विष्णु के सर्वव्यापी और कृपालु स्वरूप की स्तुति करता है।"
+      }
+    ]
+  },
+  {
+    "id": "garuda-purana_1_2",
+    "text_slug": "garuda-purana",
+    "chapter": 1,
+    "verse": 2,
+    "original": "वैनतेय उवाच —\nभगवन् सर्वधर्मज्ञ सर्वलोकहिते रतः ।\nकथं जीवाः सुखं यान्ति कथं धर्मः प्रजायते ॥",
+    "transliteration": "vainateya uvāca —\nbhagavan sarvadharmajña sarvalokahite rataḥ |\nkathaṃ jīvāḥ sukhaṃ yānti kathaṃ dharmaḥ prajāyate ||",
+    "translation": "Garuda, son of Vinata, said: O Lord, knower of all righteous duty, ever devoted to the welfare of all worlds! How do living beings attain enduring happiness, and how is Dharma established in their hearts?",
+    "meaning": "Garuda's Sacred Inquiry: The great bird Garuda questions Lord Vishnu on the principles of ethical living, health, and spiritual peace.",
+    "layers": [
+      {
+        "author": "mn-dutt",
+        "author_name": "Manmatha Nath Dutt",
+        "author_label": "Dutt Translation (1908)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "The Achara Khanda deals extensively with astronomy, medicine, statecraft, ethics, and ritual purity, responding to Garuda's questions regarding earthly welfare."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "गरुड़पुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "गरुड़ जी ने जीवों के कल्याण और धर्म के यथार्थ आचरण के विषय में भगवान विष्णु से प्रश्न किया।"
+      }
+    ]
+  },
+  {
+    "id": "garuda-purana_1_3",
+    "text_slug": "garuda-purana",
+    "chapter": 1,
+    "verse": 3,
+    "original": "श्रीभगवानुवाच —\nसत्यं शौचं दया दानं स्वाध्यायः संयमस्तथा ।\nअहिंसा च परा शान्तिरेष धर्मः सनातनः ॥",
+    "transliteration": "śrībhagavānuvāca —\nsatyaṃ śaucaṃ dayā dānaṃ svādhyāyaḥ saṃyamastathā |\nahiṃsā ca parā śāntireṣa dharmaḥ sanātanaḥ ||",
+    "translation": "The Supreme Lord said: Truthfulness, purity, compassion, charity, self-study of wisdom, sensory restraint, non-violence, and profound inner peace—this is the eternal Dharma (Sanatana Dharma).",
+    "meaning": "The Essence of Sanatana Dharma: The eight pillars of universal ethical conduct.",
+    "layers": [
+      {
+        "author": "mn-dutt",
+        "author_name": "Manmatha Nath Dutt",
+        "author_label": "Dutt Translation (1908)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "This definition emphasizes moral virtue over mechanical ritualism, presenting ethical righteousness as the necessary prerequisite for divine grace."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "गरुड़पुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "भगवान ने सत्य, दया, दान, अहिंसा और संयम को सनातन धर्म का मूल लक्षण बताया है।"
+      }
+    ]
+  },
+  {
+    "id": "garuda-purana_1_4",
+    "text_slug": "garuda-purana",
+    "chapter": 1,
+    "verse": 4,
+    "original": "परोपकाराय फलन्ति वृक्षाः परोपकाराय वहन्ति नद्यः ।\nपरोपकाराय दुहन्ति गावः परोपकारार्थमिदं शरीरम् ॥",
+    "transliteration": "paropakārāya phalanti vṛkṣāḥ paropakārāya vahanti nadyaḥ |\nparopakārāya duhanti gāvaḥ paropakārārthamidaṃ śarīram ||",
+    "translation": "Trees bear sweet fruit for the benefit of others; rivers flow for the thirst of others; cows yield milk for the nourishment of others; this human body exists solely for benevolent service unto others.",
+    "meaning": "Universal Altruism (Paropakara): The supreme duty of the human incarnation is selfless service to all beings.",
+    "layers": [
+      {
+        "author": "mn-dutt",
+        "author_name": "Manmatha Nath Dutt",
+        "author_label": "Dutt Translation (1908)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "This famous verse from the ethical chapters of the Garuda Purana underscores that nature itself teaches altruism as the universal law of existence."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "गरुड़पुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "प्रकृति के समस्त अवयव दूसरों की सेवा में लगे हैं, अतः मनुष्य जीवन का भी सच्चा उद्देश्य परोपकार ही है।"
+      }
+    ]
+  },
+  {
+    "id": "garuda-purana_1_5",
+    "text_slug": "garuda-purana",
+    "chapter": 1,
+    "verse": 5,
+    "original": "शरीरमाद्यं खलु धर्मसाधनं तस्माद्रक्षेद्यत्नतः ।\nआयुर्वेदोदितैर्मागैर्दीर्घमायुः समाप्नुयात् ॥",
+    "transliteration": "śarīramādyaṃ khalu dharmasādhanaṃ tasmādrakṣedyatnataḥ |\nāyurvedoditairmārgairdīrghamāyuḥ samāpnuyāt ||",
+    "translation": "Verily, the physical body is the foundational instrument for the practice of Dharma; therefore, one should preserve it with diligence, securing longevity through the noble principles of Ayurveda.",
+    "meaning": "Holistic Health in Achara Khanda: Garuda Purana's treatise on diet, herbal medicine, and physical wellness.",
+    "layers": [
+      {
+        "author": "mn-dutt",
+        "author_name": "Manmatha Nath Dutt",
+        "author_label": "Dutt Translation (1908)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "The Garuda Purana dedicates dozens of chapters to medicine, therapeutics, and toxicology, considering health the indispensable foundation for spiritual realization."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "गरुड़पुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "शरीर धर्म का पहला साधन है, अतः आयुर्वेद के नियमों का पालन करते हुए स्वास्थ्य की रक्षा करना परम कर्तव्य है।"
+      }
+    ]
+  },
+  {
+    "id": "garuda-purana_1_6",
+    "text_slug": "garuda-purana",
+    "chapter": 1,
+    "verse": 6,
+    "original": "ज्ञानेन हीनाः पशुभिः समाना धर्मेण युक्ता भुवि मानवाः स्युः ।\nतस्मात्प्रयत्नेन विचारशीलो विद्यामवाप्नोतु परोपकाराम् ॥",
+    "transliteration": "jñānena hīnāḥ paśubhiḥ samānā dharmeṇa yuktā bhuvi mānavāḥ syuḥ |\ntasmātprayatnena vicāraśīlo vidyāmavāplotu paropakārām ||",
+    "translation": "Bereft of discriminative wisdom, humans are merely equal to animals; adorned with Dharma, they become true human beings. Therefore, with diligent reflection, acquire wisdom dedicated to the common good.",
+    "meaning": "The Value of Discrimination (Viveka): Education and moral conscience elevate human existence above animal instincts.",
+    "layers": [
+      {
+        "author": "mn-dutt",
+        "author_name": "Manmatha Nath Dutt",
+        "author_label": "Dutt Translation (1908)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Dutt notes the classic Indian humanistic sentiment: without ethical culture and spiritual inquiry, human life fails to fulfill its unique potential."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "गरुड़पुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "ज्ञान और धर्म ही मनुष्य को पशुत्व से ऊपर उठाकर देवत्व की ओर अग्रसर करते हैं।"
+      }
+    ]
+  },
+  {
+    "id": "garuda-purana_1_7",
+    "text_slug": "garuda-purana",
+    "chapter": 1,
+    "verse": 7,
+    "original": "मातृवत्परदारेषु परद्रव्येषु लोष्टवत् ।\nआत्मवत्सर्वभूतेषु यः पश्यति स पण्डितः ॥",
+    "transliteration": "mātṛvatparadāreṣu paradravyeṣu loṣṭavat |\nātmavatsarvabhūteṣu yaḥ paśyati sa paṇḍitaḥ ||",
+    "translation": "He who looks upon another's spouse as his own mother, upon another's wealth as a mere clod of earth, and upon all living beings as his very own self—he alone is truly wise (a true Pandita).",
+    "meaning": "The Benchmark of True Wisdom: Universal respect, non-covetousness, and experiencing the self in all creatures.",
+    "layers": [
+      {
+        "author": "mn-dutt",
+        "author_name": "Manmatha Nath Dutt",
+        "author_label": "Dutt Translation (1908)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "This celebrated ethical aphorism encapsulates the highest moral standard of the Puranic tradition, defining scholarship by purity of conduct rather than book learning."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "गरुड़पुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "सच्चा ज्ञानी वही है जो दूसरों की संपत्ति को मिट्टी के समान और सभी प्राणियों को अपनी आत्मा के समान देखता है।"
+      }
+    ]
+  },
+  {
+    "id": "garuda-purana_1_8",
+    "text_slug": "garuda-purana",
+    "chapter": 1,
+    "verse": 8,
+    "original": "तपसा प्राप्यते स्वर्गो ज्ञानेन लभते पदम् ।\nभक्त्या विष्णौ स्थिरां शान्तिं प्राप्नुवन्ति न संशयः ॥",
+    "transliteration": "tapasā prāpyate svargo jñānena labhate padam |\nbhaktyā viṣṇau sthirāṃ śāntiṃ prāpnuvanti na saṃśayaḥ ||",
+    "translation": "Through austerity heavenly realms are attained; through knowledge the higher station is reached; but through unwavering devotion unto Lord Vishnu, everlasting peace is realized without doubt.",
+    "meaning": "The Supremacy of Bhakti: Devotion as the direct conduit to unshakable inner peace and liberation.",
+    "layers": [
+      {
+        "author": "mn-dutt",
+        "author_name": "Manmatha Nath Dutt",
+        "author_label": "Dutt Translation (1908)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "While recognizing ritual austerity and intellectual philosophy, the Garuda Purana concludes that loving devotion to God is the supreme shelter."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "गरुड़पुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "भगवान विष्णु की अनन्य भक्ति से ही जीव को शाश्वत शांति और परम पद की प्राप्ति होती है।"
+      }
+    ]
+  },
+  {
+    "id": "garuda-purana_1_9",
+    "text_slug": "garuda-purana",
+    "chapter": 1,
+    "verse": 9,
+    "original": "कर्मणा बध्यते जन्तुर्विद्यया तु विमुच्यते ।\nतस्मात्कर्म न कुर्वन्ति यतयः पारदर्शिनः ॥",
+    "transliteration": "karmaṇā badhyate janturvidyayā tu vimucyate |\ntasmātkarma na kurvanti yatayaḥ pāradarśinaḥ ||",
+    "translation": "By attachment to selfish action a living being is bound; by spiritual wisdom one is liberated. Therefore, the wise seers perform actions without selfish desire, gazing upon the transcendent truth.",
+    "meaning": "Karma and Jnana Synthesis: Unselfish duty accompanied by spiritual knowledge dissolves the bondage of Samsara.",
+    "layers": [
+      {
+        "author": "mn-dutt",
+        "author_name": "Manmatha Nath Dutt",
+        "author_label": "Dutt Translation (1908)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Action without spiritual awareness creates rebirth; illuminated action performed as an offering unto God leads directly to liberation."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "गरुड़पुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "अहंकारयुक्त कर्म बंधन का कारण है और निष्काम भाव से किया गया ज्ञानयुक्त कर्म मोक्षदायक है।"
+      }
+    ]
+  },
+  {
+    "id": "garuda-purana_1_10",
+    "text_slug": "garuda-purana",
+    "chapter": 1,
+    "verse": 10,
+    "original": "नमोऽस्त्वनन्ताय सहस्रमूर्तये सहस्रपादाक्षिशिरोरुबाहवे ।\nसहस्रनाम्ने पुरुषाय शाश्वते सहस्रकोटीयुगधारिणे नमः ॥",
+    "transliteration": "namo'stvanantāya sahasramūrtaye sahasrapādākṣiśirorubāhave |\nsahasranāmne puruṣāya śāśvate sahasrakoṭīyugadhāriṇe namaḥ ||",
+    "translation": "Salutations unto the Infinite Supreme Being of a thousand forms, thousand feet, eyes, heads, thighs, and arms! Salutations unto the eternal cosmic Purusha of a thousand sacred names, upholder of millions of cosmic ages!",
+    "meaning": "The Cosmic Vision (Vishvarupa): Homage to the infinite Purusha concluding the Achara Khanda with Vedic majesty.",
+    "layers": [
+      {
+        "author": "mn-dutt",
+        "author_name": "Manmatha Nath Dutt",
+        "author_label": "Dutt Translation (1908)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Echoing the Purusha Sukta (Rigveda 10.90), this magnificent hymn concludes the first section by contemplating the omnipresence of the Divine."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "गरुड़पुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "अनंत रूपों, अनंत भुजाओं और सहस्त्र युगों को धारण करने वाले विराट् पुरुषोत्तम भगवान विष्णु को बारम्बार प्रणाम।"
+      }
+    ]
   }
 ]

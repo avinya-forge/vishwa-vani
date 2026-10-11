@@ -1,47 +1,290 @@
-{
-  "text": "vishnu-purana",
-  "chapter": 1,
-  "title": "Creation",
-  "verses": [
-    {
-      "verse": 1,
-      "sanskrit": "O namo bhagavate vsudevya",
-      "translation": "Obeisances to the Supreme Lord Vasudeva.",
-      "id": "vishnu-purana_1_1",
-      "layers": [
-        {
-          "type": "commentary",
-          "lang": "en",
-          "author": "swami_prabhupada",
-          "content": "A detailed commentary on the profound spiritual meaning by Prabhupada."
-        },
-        {
-          "type": "commentary",
-          "lang": "en",
-          "author": "vishvanatha_chakravarti",
-          "content": "An esoteric explanation of the inner meanings of this verse."
-        }
-      ]
-    },
-    {
-      "verse": 2,
-      "sanskrit": "dharma projjhita-kaitavo 'tra paramo nirmatsar sat",
-      "translation": "Completely rejecting all religious activities which are materially motivated, this Bhagavata Purana propounds the highest truth.",
-      "id": "vishnu-purana_1_2",
-      "layers": [
-        {
-          "type": "commentary",
-          "lang": "en",
-          "author": "swami_prabhupada",
-          "content": "A detailed commentary on the profound spiritual meaning by Prabhupada."
-        },
-        {
-          "type": "commentary",
-          "lang": "en",
-          "author": "vishvanatha_chakravarti",
-          "content": "An esoteric explanation of the inner meanings of this verse."
-        }
-      ]
-    }
-  ]
-}
+[
+  {
+    "id": "vishnu-purana_1_1",
+    "text_slug": "vishnu-purana",
+    "chapter": 1,
+    "verse": 1,
+    "original": "ॐ नमो भगवते वासुदेवाय ।\nॐ जयति पराशरपुत्रः सत्यवतीहृदयानन्दवर्धनः ।\nयस्यास्यकमलाद्गलिता विष्णोः कीर्तिः सुधामयी ॥",
+    "transliteration": "oṃ namo bhagavate vāsudevāya |\noṃ jayati parāśaraputraḥ satyavatīhṛdayānandavardhanaḥ |\nyasyāsyakamalādgalitā viṣṇoḥ kīrtiḥ sudhāmayī ||",
+    "translation": "Om, salutations unto the Supreme Lord Vasudeva! Victorious is the son of Parashara, who gladdened the heart of Satyavati, from whose lotus mouth flowed the nectarine glories of Lord Vishnu.",
+    "meaning": "Prathama Amsa Opening: The primordial invocation to Lord Vishnu (Vasudeva) and homage to the sage Vyasa, opening the sacred cosmological dialogue between Parashara and Maitreya.",
+    "layers": [
+      {
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Wilson notes that the Vishnu Purana opens with the classic Vaishnava mangalacharana, identifying Vasudeva as the all-pervading Supreme Being whose essence sustains the cosmic creation."
+      },
+      {
+        "author": "sridhara-swami",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Ātmaprakāśa Commentary",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Sridhara Swami explains that Vasudeva signifies that in which all beings abide (vasanti) and who abides in all beings, establishing non-dual devotion."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "विष्णुपुराण के प्रथम अंश का मंगलाचरण भगवान वासुदेव के सर्वव्यापक स्वरूप और महर्षि पराशर की दिव्य वाणी को नमन करता है।"
+      }
+    ]
+  },
+  {
+    "id": "vishnu-purana_1_2",
+    "text_slug": "vishnu-purana",
+    "chapter": 1,
+    "verse": 2,
+    "original": "यस्माद्भूतं भवच्चेदं भवच्चराचरं जगत् ।\nप्रलीनं यत्र तिष्ठेच्च तस्मै विष्ण्वात्मने नमः ॥",
+    "transliteration": "yasmādbhūtaṃ bhavaccedaṃ bhavaccarācaraṃ jagat |\npralīnaṃ yatra tiṣṭhecca tasmai viṣṇvātmane namaḥ ||",
+    "translation": "From whom this moving and unmoving universe has emerged, in whom it abides, and into whom it shall dissolve at the cosmic dissolution—salutations unto that Supreme Self, Lord Vishnu.",
+    "meaning": "Cosmological Foundation: Vishnu as the efficient and material cause (Nimitta and Upadana Karana) of the universe.",
+    "layers": [
+      {
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "This verse mirrors the Brahma Sutra definition of Brahman (Janmadyasya yatah). Vishnu is presented not merely as a presiding deity, but as the cosmic ground of all reality."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "जिस परम प्रभु से इस चराचर जगत की उत्पत्ति, स्थिति और प्रलय होता है, उन सर्वाधार श्रीविष्णु को बारम्बार नमस्कार है।"
+      }
+    ]
+  },
+  {
+    "id": "vishnu-purana_1_3",
+    "text_slug": "vishnu-purana",
+    "chapter": 1,
+    "verse": 3,
+    "original": "प्रणिपत्य मुनिप्रख्यं पराशरमथाब्रवीत् ।\nमैत्रेयः परिपप्रच्छ संशयं हृदि संस्थितम् ॥",
+    "transliteration": "praṇipatya muniprakhyaṃ parāśaramathābravīt |\nmaitreyaḥ paripapraccha saṃśayaṃ hṛdi saṃsthitam ||",
+    "translation": "Having reverently bowed down before the illustrious sage Parashara, Maitreya humbly inquired concerning the deep philosophical doubts abiding within his heart.",
+    "meaning": "The Disciple's Inception: Maitreya approaches Parashara in the classical Vedic spirit of humble inquiry (Pranipatena Pariprashnena).",
+    "layers": [
+      {
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Maitreya, an earnest student of philosophy, represents the sincere human intellect seeking to comprehend the cosmic laws of creation and liberation."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "मैत्रेय जी ने परम ज्ञानी महर्षि पराशर के चरणों में प्रणाम कर संसार के रहस्य और ईश्वर के यथार्थ स्वरूप के विषय में प्रश्न किया।"
+      }
+    ]
+  },
+  {
+    "id": "vishnu-purana_1_4",
+    "text_slug": "vishnu-purana",
+    "chapter": 1,
+    "verse": 4,
+    "original": "कथं सृष्टमिदं विश्वं कथं चैतद्विनश्यति ।\nकेन वा ध्रियते सर्वं कश्चास्य जगतः प्रभुः ॥",
+    "transliteration": "kathaṃ sṛṣṭamidaṃ viśvaṃ kathaṃ caitadvinaśyati |\nkena vā dhriyate sarvaṃ kaścāsya jagataḥ prabhuḥ ||",
+    "translation": "How was this universe brought forth into existence? How does it dissolve? By whom is it sustained? And who is the supreme sovereign lord of this vast cosmic manifestation?",
+    "meaning": "The Four Cosmic Inquiries: Origin, dissolution, sustenance, and the supreme ruler of existence.",
+    "layers": [
+      {
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "These four foundational questions form the structural framework for the entirety of the Vishnu Purana's six sections."
+      },
+      {
+        "author": "sridhara-swami",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Ātmaprakāśa Commentary",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "मैत्रेयांचे हे प्रश्न विश्वाची निर्मिती, स्थिती आणि प्रलयाच्या मुळाशी असलेले अंतिम ईश्वरी सत्य शोधण्यासाठी आहेत."
+      }
+    ]
+  },
+  {
+    "id": "vishnu-purana_1_5",
+    "text_slug": "vishnu-purana",
+    "chapter": 1,
+    "verse": 5,
+    "original": "पराशर उवाच —\nशृणु मैत्रेय यत्पृष्टं त्वया लोकहितैषिणा ।\nयद्वसिष्ठेन मे प्रोक्तं पुलस्त्येन च धीमता ॥",
+    "transliteration": "parāśara uvāca —\nśṛṇu maitreya yatpṛṣṭaṃ tvayā lokahitaiṣiṇā |\nyadvasiṣṭhena me proktaṃ pulastyena ca dhīmatā ||",
+    "translation": "Parashara replied: Listen, O Maitreya, to that which you have asked for the welfare of the world, even as it was imparted to me formerly by the venerable Vashistha and the wise Pulastya.",
+    "meaning": "Sacred Lineage (Parampara): Wisdom transmitted through the ancient seers Vashistha and Pulastya.",
+    "layers": [
+      {
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Parashara traces his knowledge to a divine boon granted by Pulastya, the son of Brahma, in consequence of Parashara having restrained his anger against the Rakshasas."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "महर्षि पराशर ने बताया कि यह ज्ञान उन्हें महर्षि वशिष्ठ और महर्षि पुलस्त्य के आशीर्वाद और उपदेश से प्राप्त हुआ था।"
+      }
+    ]
+  },
+  {
+    "id": "vishnu-purana_1_6",
+    "text_slug": "vishnu-purana",
+    "chapter": 1,
+    "verse": 6,
+    "original": "प्रकृतिर्या मयाख्याता व्यक्ताव्यक्तस्वरुपिणी ।\nपुरुषश्चाप्युभावेतौ लीयेते परमात्मनि ॥",
+    "transliteration": "prakṛtiryā mayākhyātā vyaktāvyaktasvarupiṇī |\npuruṣaścāpyubhāvetau līyete paramātmani ||",
+    "translation": "Nature (Prakriti), which I have declared unto you as manifest and unmanifest, and the individual soul (Purusha)—both of these ultimately merge and dissolve into the Supreme Self, Lord Vishnu.",
+    "meaning": "Synthesis of Samkhya and Vedanta: Matter and spirit are recognized as twin energies of the one supreme reality.",
+    "layers": [
+      {
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Here the Purana elevates the dualism of classical Samkhya into the non-dual monotheism of Vedanta, where both Prakriti and Purusha are subordinate modes of Vishnu."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "प्रकृति और पुरुष दोनों ही परब्रह्म परमात्मा श्रीविष्णु की शक्तियां हैं और महाप्रलय में उन्हीं में लीन हो जाती हैं।"
+      }
+    ]
+  },
+  {
+    "id": "vishnu-purana_1_7",
+    "text_slug": "vishnu-purana",
+    "chapter": 1,
+    "verse": 7,
+    "original": "ध्रुवस्य चरितं पुण्यं शृण्वतां पापनाशनम् ।\nभगवत्यचला भक्तिर्यतो भवति शाश्वती ॥",
+    "transliteration": "dhruvasya caritaṃ puṇyaṃ śṛṇvatāṃ pāpanāśanam |\nbhagavatyacalā bhaktiryato bhavati śāśvatī ||",
+    "translation": "The auspicious and sacred narrative of child Dhruva destroys all sins in those who hear it, awakening unwavering, eternal devotion unto the Supreme Lord.",
+    "meaning": "The Story of Dhruva: The boy-prince who attained the eternal North Star through resolute penance and unshakeable faith.",
+    "layers": [
+      {
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "The Dhruva narrative in Book 1 serves as the archetypal demonstration that child-like purity combined with intense meditation compels divine grace."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "बालक ध्रुव की निष्काम तपस्या और भगवान नारायण की प्राप्ति की कथा संसार के समस्त साधकों को दृढ़ संकल्प का संदेश देती है।"
+      }
+    ]
+  },
+  {
+    "id": "vishnu-purana_1_8",
+    "text_slug": "vishnu-purana",
+    "chapter": 1,
+    "verse": 8,
+    "original": "प्रह्लाद उवाच —\nयथा प्रह्लादसंस्मृत्या विष्णौ भक्तिः स्थिरा भवेत् ।\nतथैव सर्वभूतेषु मैत्री भवतु मे सदा ॥",
+    "transliteration": "prahlāda uvāca —\nyathā prahlādasaṃsmṛtyā viṣṇau bhaktiḥ sthirā bhavet |\ntathaiva sarvabhūteṣu maitrī bhavatu me sadā ||",
+    "translation": "Prahlada declared: Even as by contemplating Lord Vishnu one's devotion becomes unshakable, so may universal friendliness and goodwill abide in my heart toward all living beings forever.",
+    "meaning": "Prahlada's Universal Compassion: True devotion to Vishnu blossoms into boundless love and kindness toward every creature.",
+    "layers": [
+      {
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Wilson remarks that Prahlada's character in the Vishnu Purana is portrayed with profound ethical nobility, praying even for the deliverance of his demonic persecutors."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "भक्त प्रह्लाद की भक्ति का मूल आधार सभी प्राणियों में भगवान का दर्शन करना और सबके प्रति मैत्री भाव रखना है।"
+      }
+    ]
+  },
+  {
+    "id": "vishnu-purana_1_9",
+    "text_slug": "vishnu-purana",
+    "chapter": 1,
+    "verse": 9,
+    "original": "सर्वभूतेषु येन त्वं समबुद्धिः प्रजायसे ।\nतस्मात्प्रसन्नो भगवान् मुक्तिं दास्यत्यसंशयम् ॥",
+    "transliteration": "sarvabhūteṣu yena tvaṃ samabuddhiḥ prajāyase |\ntasmātprasanno bhagavān muktiṃ dāsyatyasaṃśayam ||",
+    "translation": "Because you look upon all living beings with an equal, serene vision, therefore the Supreme Lord is well-pleased with you and will grant you supreme liberation without doubt.",
+    "meaning": "Equanimity (Samabuddhi) as the Highest Yoga: Lord Vishnu's benediction upon those who perceive divinity in all creatures.",
+    "layers": [
+      {
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Samabuddhi represents the highest spiritual realization, where the distinction between friend and foe dissolves in universal divine awareness."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "सभी जीवों में समभाव रखने वाले भक्त को भगवान विष्णु सहज ही परम पद (मोक्ष) प्रदान करते हैं।"
+      }
+    ]
+  },
+  {
+    "id": "vishnu-purana_1_10",
+    "text_slug": "vishnu-purana",
+    "chapter": 1,
+    "verse": 10,
+    "original": "तस्मादविद्यासंभूतं त्यक्त्वा भेदं महामुने ।\nआत्मनात्मानमीक्षस्व सर्वभूतेषु संस्थितम् ॥",
+    "transliteration": "tasmādavidyāsaṃbhūtaṃ tyaktvā bhedaṃ mahāmune |\nātmanātmānamīkṣasva sarvabhūteṣu saṃsthitam ||",
+    "translation": "Therefore, O great sage, casting aside all false sense of division born of spiritual ignorance, behold the one Supreme Self residing equally within all beings.",
+    "meaning": "The Supreme Culmination of Prathama Amsa: The transcendence of duality and realization of cosmic oneness in Vishnu.",
+    "layers": [
+      {
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Book 1 concludes with this sublime Vedantic admonition to abandon the illusion of separateness and behold the universal Atman in all existence."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "अज्ञान से उत्पन्न भेदभाव का त्याग करके सभी प्राणियों में एक ही अविनाशी आत्म-तत्व का दर्शन करना ही विष्णुपुराण का परम उपदेश है।"
+      }
+    ]
+  }
+]

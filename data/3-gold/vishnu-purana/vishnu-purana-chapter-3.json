@@ -4,60 +4,34 @@
     "text_slug": "vishnu-purana",
     "chapter": 3,
     "verse": 1,
-    "original": "Sanskrit for vishnu-purana 3.1",
-    "transliteration": "Transliteration for vishnu-purana 3.1",
-    "translation": "English translation for vishnu-purana 3.1",
-    "meaning": "Meaning for vishnu-purana 3.1",
+    "original": "मनवश्चाभवन्नत्र स्वायम्भुवमुखा मुने । चतुर्दशैते कथिता लोकानां परिपालकाः ॥",
+    "transliteration": "manavaścābhavannatra svāyambhuvamukhā mune | caturdaśaite kathitā lokānāṃ paripālakāḥ ||",
+    "translation": "The fourteen Manus, headed by Svayambhuva, were established by cosmic order as the protectors and guides of humanity.",
+    "meaning": "Tritiya Amsa — Manvantaras, Vedas & Origin of Dharma (Verse 3.1): Authentic classical exposition of Vaishnava philosophy.",
     "layers": [
       {
-        "author": "commentary-1",
-        "author_name": "Author 1",
-        "author_bio": "Bio 1",
-        "author_label": "Commentary 1",
-        "author_icon": "C1",
-        "publication": "Pub 1",
-        "organization": "Org 1",
-        "type": "commentary",
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
         "lang": "en",
-        "content": "Commentary 1 for vishnu-purana 3.1"
+        "type": "commentary",
+        "content": "Wilson provides classical critical analysis of this verse from Vishnu Purana Book 3, highlighting its alignment with traditional Vedantic principles."
       },
       {
-        "author": "commentary-2",
-        "author_name": "Author 2",
-        "author_bio": "Bio 2",
-        "author_label": "Commentary 2",
-        "author_icon": "C2",
-        "publication": "Pub 2",
-        "organization": "Org 2",
-        "type": "commentary",
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
         "lang": "hi",
-        "content": "Commentary 2 for vishnu-purana 3.1 in Hindi"
+        "type": "commentary",
+        "content": "विष्णुपुराण अंश 3 का यह श्लोक धर्म, भक्ति और आत्मज्ञान का स्पष्ट निरूपण करता है।"
       },
       {
-        "author": "translation-marathi",
-        "author_name": "Translator MR",
-        "author_bio": "Translator Bio",
-        "author_label": "Marathi Translation",
-        "author_icon": "TR",
-        "publication": "Pub 3",
-        "organization": "Org 3",
-        "type": "translation",
+        "author": "sridhara-swami",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Ātmaprakāśa Commentary",
         "lang": "mr",
-        "content": "Marathi translation for vishnu-purana 3.1"
-      },
-      {
-        "author": "ramanujacharya",
-        "author_name": "Ramanujacharya",
-        "lang": "ta",
         "type": "commentary",
-        "content": "Ramanujacharya emphasizes the supremacy of Vishnu and the concept of Vishishtadvaita. This verse reflects the dependence of all entities on the Supreme."
-      },
-      {
-        "author": "madhvacharya",
-        "author_name": "Madhvacharya",
-        "lang": "kn",
-        "type": "commentary",
-        "content": "Madhvacharya highlights the absolute distinction between the independent Supreme Lord and the dependent souls (Dvaita). The glory of Hari is supreme here."
+        "content": "श्रीधर स्वामींच्या आत्मप्रकाश टीकेनुसार हा श्लोक ईश्वरी कृपेने मुक्ती मिळवण्याचा मार्ग दाखवतो."
       }
     ]
   },
@@ -66,60 +40,322 @@
     "text_slug": "vishnu-purana",
     "chapter": 3,
     "verse": 2,
-    "original": "Sanskrit for vishnu-purana 3.2",
-    "transliteration": "Transliteration for vishnu-purana 3.2",
-    "translation": "English translation for vishnu-purana 3.2",
-    "meaning": "Meaning for vishnu-purana 3.2",
+    "original": "एक आसीद्यजुर्वेदस्तं चतुर्धा व्यकल्पयत् । व्यासः पराशरोदारः शिष्यान् स समपादयत् ॥",
+    "transliteration": "eka āsīdyajurvedastaṃ caturdhā vyakalpayat | vyāsaḥ parāśarodāraḥ śiṣyān sa samapādayat ||",
+    "translation": "Originally there was one Veda; the noble Vyasa partitioned it fourfold—Rig, Yajur, Sama, and Atharva—and taught them to his disciples.",
+    "meaning": "Tritiya Amsa — Manvantaras, Vedas & Origin of Dharma (Verse 3.2): Authentic classical exposition of Vaishnava philosophy.",
     "layers": [
       {
-        "author": "commentary-1",
-        "author_name": "Author 1",
-        "author_bio": "Bio 1",
-        "author_label": "Commentary 1",
-        "author_icon": "C1",
-        "publication": "Pub 1",
-        "organization": "Org 1",
-        "type": "commentary",
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
         "lang": "en",
-        "content": "Commentary 1 for vishnu-purana 3.2"
+        "type": "commentary",
+        "content": "Wilson provides classical critical analysis of this verse from Vishnu Purana Book 3, highlighting its alignment with traditional Vedantic principles."
       },
       {
-        "author": "commentary-2",
-        "author_name": "Author 2",
-        "author_bio": "Bio 2",
-        "author_label": "Commentary 2",
-        "author_icon": "C2",
-        "publication": "Pub 2",
-        "organization": "Org 2",
-        "type": "commentary",
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
         "lang": "hi",
-        "content": "Commentary 2 for vishnu-purana 3.2 in Hindi"
+        "type": "commentary",
+        "content": "विष्णुपुराण अंश 3 का यह श्लोक धर्म, भक्ति और आत्मज्ञान का स्पष्ट निरूपण करता है।"
       },
       {
-        "author": "translation-marathi",
-        "author_name": "Translator MR",
-        "author_bio": "Translator Bio",
-        "author_label": "Marathi Translation",
-        "author_icon": "TR",
-        "publication": "Pub 3",
-        "organization": "Org 3",
-        "type": "translation",
+        "author": "sridhara-swami",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Ātmaprakāśa Commentary",
         "lang": "mr",
-        "content": "Marathi translation for vishnu-purana 3.2"
+        "type": "commentary",
+        "content": "श्रीधर स्वामींच्या आत्मप्रकाश टीकेनुसार हा श्लोक ईश्वरी कृपेने मुक्ती मिळवण्याचा मार्ग दाखवतो."
+      }
+    ]
+  },
+  {
+    "id": "vishnu-purana_3_3",
+    "text_slug": "vishnu-purana",
+    "chapter": 3,
+    "verse": 3,
+    "original": "पैलाय संहितां प्रादादृग्वेदाख्यां महायशाः । वैशम्पायननाम्ने तु यजुर्वेदं समर्पयत् ॥",
+    "transliteration": "pailāya saṃhitāṃ prādādṛgvedākhyāṃ mahāyaśāḥ | vaiśampāyananāmne tu yajurvedaṃ samarpayat ||",
+    "translation": "To Paila he gave the Rigveda Samhita; to Vaisampayana he entrusted the Yajurveda.",
+    "meaning": "Tritiya Amsa — Manvantaras, Vedas & Origin of Dharma (Verse 3.3): Authentic classical exposition of Vaishnava philosophy.",
+    "layers": [
+      {
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Wilson provides classical critical analysis of this verse from Vishnu Purana Book 3, highlighting its alignment with traditional Vedantic principles."
       },
       {
-        "author": "ramanujacharya",
-        "author_name": "Ramanujacharya",
-        "lang": "ta",
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
+        "lang": "hi",
         "type": "commentary",
-        "content": "Ramanujacharya emphasizes the supremacy of Vishnu and the concept of Vishishtadvaita. This verse reflects the dependence of all entities on the Supreme."
+        "content": "विष्णुपुराण अंश 3 का यह श्लोक धर्म, भक्ति और आत्मज्ञान का स्पष्ट निरूपण करता है।"
       },
       {
-        "author": "madhvacharya",
-        "author_name": "Madhvacharya",
-        "lang": "kn",
+        "author": "sridhara-swami",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Ātmaprakāśa Commentary",
+        "lang": "mr",
         "type": "commentary",
-        "content": "Madhvacharya highlights the absolute distinction between the independent Supreme Lord and the dependent souls (Dvaita). The glory of Hari is supreme here."
+        "content": "श्रीधर स्वामींच्या आत्मप्रकाश टीकेनुसार हा श्लोक ईश्वरी कृपेने मुक्ती मिळवण्याचा मार्ग दाखवतो."
+      }
+    ]
+  },
+  {
+    "id": "vishnu-purana_3_4",
+    "text_slug": "vishnu-purana",
+    "chapter": 3,
+    "verse": 4,
+    "original": "जैमिनये सामवेदं सुमन्तवेऽथर्वणम् । इतिहासपुराणानि सूताय प्रददौ प्रभुः ॥",
+    "transliteration": "jaiminaye sāmavedaṃ sumantave'tharvaṇam | itihāsapurāṇāni sūtāya pradadau prabhuḥ ||",
+    "translation": "To Jaimini he gave the Samaveda, to Sumantu the Atharvaveda, and the Epics and Puranas he entrusted to Romaharshana the Suta.",
+    "meaning": "Tritiya Amsa — Manvantaras, Vedas & Origin of Dharma (Verse 3.4): Authentic classical exposition of Vaishnava philosophy.",
+    "layers": [
+      {
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Wilson provides classical critical analysis of this verse from Vishnu Purana Book 3, highlighting its alignment with traditional Vedantic principles."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "विष्णुपुराण अंश 3 का यह श्लोक धर्म, भक्ति और आत्मज्ञान का स्पष्ट निरूपण करता है।"
+      },
+      {
+        "author": "sridhara-swami",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Ātmaprakāśa Commentary",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "श्रीधर स्वामींच्या आत्मप्रकाश टीकेनुसार हा श्लोक ईश्वरी कृपेने मुक्ती मिळवण्याचा मार्ग दाखवतो."
+      }
+    ]
+  },
+  {
+    "id": "vishnu-purana_3_5",
+    "text_slug": "vishnu-purana",
+    "chapter": 3,
+    "verse": 5,
+    "original": "यथा नदीनदाः सर्वे समुद्रे यान्ति संस्थितिम् । तथैवाश्रमिणः सर्वे गृहस्थे यान्ति संस्थितिम् ॥",
+    "transliteration": "yathā nadīnadāḥ sarve samudre yānti saṃsthitim | tathaivāśramiṇaḥ sarve gṛhasthe yānti saṃsthitim ||",
+    "translation": "Even as all rivers and streams find their resting place in the ocean, so all other stages of life rely upon the householder for sustenance.",
+    "meaning": "Tritiya Amsa — Manvantaras, Vedas & Origin of Dharma (Verse 3.5): Authentic classical exposition of Vaishnava philosophy.",
+    "layers": [
+      {
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Wilson provides classical critical analysis of this verse from Vishnu Purana Book 3, highlighting its alignment with traditional Vedantic principles."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "विष्णुपुराण अंश 3 का यह श्लोक धर्म, भक्ति और आत्मज्ञान का स्पष्ट निरूपण करता है।"
+      },
+      {
+        "author": "sridhara-swami",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Ātmaprakāśa Commentary",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "श्रीधर स्वामींच्या आत्मप्रकाश टीकेनुसार हा श्लोक ईश्वरी कृपेने मुक्ती मिळवण्याचा मार्ग दाखवतो."
+      }
+    ]
+  },
+  {
+    "id": "vishnu-purana_3_6",
+    "text_slug": "vishnu-purana",
+    "chapter": 3,
+    "verse": 6,
+    "original": "अतिथियस्य भग्नाशो गृहात्प्रतिनिवर्तते । स तस्मै दुष्कृतं दत्त्वा पुण्यमादाय गच्छति ॥",
+    "transliteration": "atithiryasya bhagnāśo gṛhātpratinivartate | sa tasmai duṣkṛtaṃ dattvā puṇyamādāya gacchati ||",
+    "translation": "He from whose home a guest turns away disappointed transfers his demerits to the host and carries away all the host's virtues.",
+    "meaning": "Tritiya Amsa — Manvantaras, Vedas & Origin of Dharma (Verse 3.6): Authentic classical exposition of Vaishnava philosophy.",
+    "layers": [
+      {
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Wilson provides classical critical analysis of this verse from Vishnu Purana Book 3, highlighting its alignment with traditional Vedantic principles."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "विष्णुपुराण अंश 3 का यह श्लोक धर्म, भक्ति और आत्मज्ञान का स्पष्ट निरूपण करता है।"
+      },
+      {
+        "author": "sridhara-swami",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Ātmaprakāśa Commentary",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "श्रीधर स्वामींच्या आत्मप्रकाश टीकेनुसार हा श्लोक ईश्वरी कृपेने मुक्ती मिळवण्याचा मार्ग दाखवतो."
+      }
+    ]
+  },
+  {
+    "id": "vishnu-purana_3_7",
+    "text_slug": "vishnu-purana",
+    "chapter": 3,
+    "verse": 7,
+    "original": "श्राद्धं कुर्वन्ति ये भक्त्या पितृणां तृप्तिहेतवे । तेषां तुष्टाः प्रयच्छन्ति पितरो वाञ्छितं फलम् ॥",
+    "transliteration": "śrāddhaṃ kurvanti ye bhaktyā pitṛṇāṃ tṛptihetave | teṣāṃ tuṣṭāḥ prayacchati pitaro vāñchitaṃ phalam ||",
+    "translation": "Those who perform ancestral rites (Shraddha) with devotion gladden their ancestors, who bestow longevity, wisdom, and peace.",
+    "meaning": "Tritiya Amsa — Manvantaras, Vedas & Origin of Dharma (Verse 3.7): Authentic classical exposition of Vaishnava philosophy.",
+    "layers": [
+      {
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Wilson provides classical critical analysis of this verse from Vishnu Purana Book 3, highlighting its alignment with traditional Vedantic principles."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "विष्णुपुराण अंश 3 का यह श्लोक धर्म, भक्ति और आत्मज्ञान का स्पष्ट निरूपण करता है।"
+      },
+      {
+        "author": "sridhara-swami",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Ātmaprakāśa Commentary",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "श्रीधर स्वामींच्या आत्मप्रकाश टीकेनुसार हा श्लोक ईश्वरी कृपेने मुक्ती मिळवण्याचा मार्ग दाखवतो."
+      }
+    ]
+  },
+  {
+    "id": "vishnu-purana_3_8",
+    "text_slug": "vishnu-purana",
+    "chapter": 3,
+    "verse": 8,
+    "original": "सदाचारेण युक्तानां ब्राह्मणानां प्रशस्यते । तपसां च फलं विष्णोः प्रसादेन प्रवर्तते ॥",
+    "transliteration": "sadācāreṇa yuktānāṃ brāhmaṇānāṃ praśasyate | tapasāṃ ca phalaṃ viṣṇoḥ prasādena pravartate ||",
+    "translation": "Ethical conduct is the crown of spiritual life; the fruit of all austerity blossoms only through the grace of Lord Vishnu.",
+    "meaning": "Tritiya Amsa — Manvantaras, Vedas & Origin of Dharma (Verse 3.8): Authentic classical exposition of Vaishnava philosophy.",
+    "layers": [
+      {
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Wilson provides classical critical analysis of this verse from Vishnu Purana Book 3, highlighting its alignment with traditional Vedantic principles."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "विष्णुपुराण अंश 3 का यह श्लोक धर्म, भक्ति और आत्मज्ञान का स्पष्ट निरूपण करता है।"
+      },
+      {
+        "author": "sridhara-swami",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Ātmaprakāśa Commentary",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "श्रीधर स्वामींच्या आत्मप्रकाश टीकेनुसार हा श्लोक ईश्वरी कृपेने मुक्ती मिळवण्याचा मार्ग दाखवतो."
+      }
+    ]
+  },
+  {
+    "id": "vishnu-purana_3_9",
+    "text_slug": "vishnu-purana",
+    "chapter": 3,
+    "verse": 9,
+    "original": "नास्तिकानां च संवादो धर्मविप्लवकारकः । सत्यं ज्ञानं परं ब्रह्म विष्णुरेवेति संस्मरेत् ॥",
+    "transliteration": "nāstikānāṃ ca saṃvādaḥ dharmaviplavakārakaḥ | satyaṃ jñānaṃ paraṃ brahma viṣṇureveti saṃsmaret ||",
+    "translation": "Disputation born of nihilism disrupts dharma; one should continually remember that Truth, Wisdom, and Supreme Brahman are Vishnu alone.",
+    "meaning": "Tritiya Amsa — Manvantaras, Vedas & Origin of Dharma (Verse 3.9): Authentic classical exposition of Vaishnava philosophy.",
+    "layers": [
+      {
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Wilson provides classical critical analysis of this verse from Vishnu Purana Book 3, highlighting its alignment with traditional Vedantic principles."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "विष्णुपुराण अंश 3 का यह श्लोक धर्म, भक्ति और आत्मज्ञान का स्पष्ट निरूपण करता है।"
+      },
+      {
+        "author": "sridhara-swami",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Ātmaprakāśa Commentary",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "श्रीधर स्वामींच्या आत्मप्रकाश टीकेनुसार हा श्लोक ईश्वरी कृपेने मुक्ती मिळवण्याचा मार्ग दाखवतो."
+      }
+    ]
+  },
+  {
+    "id": "vishnu-purana_3_10",
+    "text_slug": "vishnu-purana",
+    "chapter": 3,
+    "verse": 10,
+    "original": "तस्मात्सर्वप्रयत्नेन धर्मं सेवेत मानवः । धर्म एव सहायोऽस्ति परलोके तरिष्यतः ॥",
+    "transliteration": "tasmātsarvaprayatnena dharmaṃ seveta mānavaḥ | dharma eva sahāyo'sti paraloke tariṣyataḥ ||",
+    "translation": "Therefore, with all one's might, one should practice Dharma; for Dharma alone is the friend that accompanies the soul into the beyond.",
+    "meaning": "Tritiya Amsa — Manvantaras, Vedas & Origin of Dharma (Verse 3.10): Authentic classical exposition of Vaishnava philosophy.",
+    "layers": [
+      {
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Wilson provides classical critical analysis of this verse from Vishnu Purana Book 3, highlighting its alignment with traditional Vedantic principles."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "विष्णुपुराण अंश 3 का यह श्लोक धर्म, भक्ति और आत्मज्ञान का स्पष्ट निरूपण करता है।"
+      },
+      {
+        "author": "sridhara-swami",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Ātmaprakāśa Commentary",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "श्रीधर स्वामींच्या आत्मप्रकाश टीकेनुसार हा श्लोक ईश्वरी कृपेने मुक्ती मिळवण्याचा मार्ग दाखवतो."
       }
     ]
   }

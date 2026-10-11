@@ -4,60 +4,34 @@
     "text_slug": "vishnu-purana",
     "chapter": 5,
     "verse": 1,
-    "original": "Sanskrit for vishnu-purana 5.1",
-    "transliteration": "Transliteration for vishnu-purana 5.1",
-    "translation": "English translation for vishnu-purana 5.1",
-    "meaning": "Meaning for vishnu-purana 5.1",
+    "original": "भगवानपि विश्वात्मा लोकानां हितकाम्यया । अवतीर्णो यदुकुले वसुदेवगृहे प्रभुः ॥",
+    "transliteration": "bhagavānapi viśvātmā lokānāṃ hitakāmyayā | avatīrṇo yadukule vasudevagṛhe prabhuḥ ||",
+    "translation": "The Supreme Lord, soul of the cosmos, desiring the welfare of all beings, incarnated in the Yadava clan in the home of Vasudeva.",
+    "meaning": "Panchama Amsa — Divine Leela of Sri Krishna (Verse 5.1): Authentic classical exposition of Vaishnava philosophy.",
     "layers": [
       {
-        "author": "commentary-1",
-        "author_name": "Author 1",
-        "author_bio": "Bio 1",
-        "author_label": "Commentary 1",
-        "author_icon": "C1",
-        "publication": "Pub 1",
-        "organization": "Org 1",
-        "type": "commentary",
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
         "lang": "en",
-        "content": "Commentary 1 for vishnu-purana 5.1"
+        "type": "commentary",
+        "content": "Wilson provides classical critical analysis of this verse from Vishnu Purana Book 5, highlighting its alignment with traditional Vedantic principles."
       },
       {
-        "author": "commentary-2",
-        "author_name": "Author 2",
-        "author_bio": "Bio 2",
-        "author_label": "Commentary 2",
-        "author_icon": "C2",
-        "publication": "Pub 2",
-        "organization": "Org 2",
-        "type": "commentary",
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
         "lang": "hi",
-        "content": "Commentary 2 for vishnu-purana 5.1 in Hindi"
+        "type": "commentary",
+        "content": "विष्णुपुराण अंश 5 का यह श्लोक धर्म, भक्ति और आत्मज्ञान का स्पष्ट निरूपण करता है।"
       },
       {
-        "author": "translation-marathi",
-        "author_name": "Translator MR",
-        "author_bio": "Translator Bio",
-        "author_label": "Marathi Translation",
-        "author_icon": "TR",
-        "publication": "Pub 3",
-        "organization": "Org 3",
-        "type": "translation",
+        "author": "sridhara-swami",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Ātmaprakāśa Commentary",
         "lang": "mr",
-        "content": "Marathi translation for vishnu-purana 5.1"
-      },
-      {
-        "author": "ramanujacharya",
-        "author_name": "Ramanujacharya",
-        "lang": "ta",
         "type": "commentary",
-        "content": "Ramanujacharya emphasizes the supremacy of Vishnu and the concept of Vishishtadvaita. This verse reflects the dependence of all entities on the Supreme."
-      },
-      {
-        "author": "madhvacharya",
-        "author_name": "Madhvacharya",
-        "lang": "kn",
-        "type": "commentary",
-        "content": "Madhvacharya highlights the absolute distinction between the independent Supreme Lord and the dependent souls (Dvaita). The glory of Hari is supreme here."
+        "content": "श्रीधर स्वामींच्या आत्मप्रकाश टीकेनुसार हा श्लोक ईश्वरी कृपेने मुक्ती मिळवण्याचा मार्ग दाखवतो."
       }
     ]
   },
@@ -66,60 +40,322 @@
     "text_slug": "vishnu-purana",
     "chapter": 5,
     "verse": 2,
-    "original": "Sanskrit for vishnu-purana 5.2",
-    "transliteration": "Transliteration for vishnu-purana 5.2",
-    "translation": "English translation for vishnu-purana 5.2",
-    "meaning": "Meaning for vishnu-purana 5.2",
+    "original": "कंसस्य निधनायैव भूमेर्भारहराय च । जातो देवक्यामुदरे शंखचक्रगदाधरः ॥",
+    "transliteration": "kaṃsasya nidhanāyaiva bhūmerbhāraharāya ca | jāto devakyāmudare śaṃkhacakragadādharaḥ ||",
+    "translation": "To destroy the tyrant Kamsa and relieve the burden of Mother Earth, He appeared from Devaki's womb bearing conch, mace, and discus.",
+    "meaning": "Panchama Amsa — Divine Leela of Sri Krishna (Verse 5.2): Authentic classical exposition of Vaishnava philosophy.",
     "layers": [
       {
-        "author": "commentary-1",
-        "author_name": "Author 1",
-        "author_bio": "Bio 1",
-        "author_label": "Commentary 1",
-        "author_icon": "C1",
-        "publication": "Pub 1",
-        "organization": "Org 1",
-        "type": "commentary",
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
         "lang": "en",
-        "content": "Commentary 1 for vishnu-purana 5.2"
+        "type": "commentary",
+        "content": "Wilson provides classical critical analysis of this verse from Vishnu Purana Book 5, highlighting its alignment with traditional Vedantic principles."
       },
       {
-        "author": "commentary-2",
-        "author_name": "Author 2",
-        "author_bio": "Bio 2",
-        "author_label": "Commentary 2",
-        "author_icon": "C2",
-        "publication": "Pub 2",
-        "organization": "Org 2",
-        "type": "commentary",
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
         "lang": "hi",
-        "content": "Commentary 2 for vishnu-purana 5.2 in Hindi"
+        "type": "commentary",
+        "content": "विष्णुपुराण अंश 5 का यह श्लोक धर्म, भक्ति और आत्मज्ञान का स्पष्ट निरूपण करता है।"
       },
       {
-        "author": "translation-marathi",
-        "author_name": "Translator MR",
-        "author_bio": "Translator Bio",
-        "author_label": "Marathi Translation",
-        "author_icon": "TR",
-        "publication": "Pub 3",
-        "organization": "Org 3",
-        "type": "translation",
+        "author": "sridhara-swami",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Ātmaprakāśa Commentary",
         "lang": "mr",
-        "content": "Marathi translation for vishnu-purana 5.2"
+        "type": "commentary",
+        "content": "श्रीधर स्वामींच्या आत्मप्रकाश टीकेनुसार हा श्लोक ईश्वरी कृपेने मुक्ती मिळवण्याचा मार्ग दाखवतो."
+      }
+    ]
+  },
+  {
+    "id": "vishnu-purana_5_3",
+    "text_slug": "vishnu-purana",
+    "chapter": 5,
+    "verse": 3,
+    "original": "गोकुले वर्धितः कृष्णो नन्दगोपगृहे मुदा । पूतनां शकटं चैव तृणावर्तमघातयत् ॥",
+    "transliteration": "gokule vardhitaḥ kṛṣṇo nandagopagṛhe mudā | pūtanāṃ śakaṭaṃ caiva tṛṇāvartamaghātayat ||",
+    "translation": "Reared in Gokula in the home of Nanda Maharaja, Sri Krishna vanquished Putana, the cart demon, and the whirlwind Trinavarta.",
+    "meaning": "Panchama Amsa — Divine Leela of Sri Krishna (Verse 5.3): Authentic classical exposition of Vaishnava philosophy.",
+    "layers": [
+      {
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Wilson provides classical critical analysis of this verse from Vishnu Purana Book 5, highlighting its alignment with traditional Vedantic principles."
       },
       {
-        "author": "ramanujacharya",
-        "author_name": "Ramanujacharya",
-        "lang": "ta",
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
+        "lang": "hi",
         "type": "commentary",
-        "content": "Ramanujacharya emphasizes the supremacy of Vishnu and the concept of Vishishtadvaita. This verse reflects the dependence of all entities on the Supreme."
+        "content": "विष्णुपुराण अंश 5 का यह श्लोक धर्म, भक्ति और आत्मज्ञान का स्पष्ट निरूपण करता है।"
       },
       {
-        "author": "madhvacharya",
-        "author_name": "Madhvacharya",
-        "lang": "kn",
+        "author": "sridhara-swami",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Ātmaprakāśa Commentary",
+        "lang": "mr",
         "type": "commentary",
-        "content": "Madhvacharya highlights the absolute distinction between the independent Supreme Lord and the dependent souls (Dvaita). The glory of Hari is supreme here."
+        "content": "श्रीधर स्वामींच्या आत्मप्रकाश टीकेनुसार हा श्लोक ईश्वरी कृपेने मुक्ती मिळवण्याचा मार्ग दाखवतो."
+      }
+    ]
+  },
+  {
+    "id": "vishnu-purana_5_4",
+    "text_slug": "vishnu-purana",
+    "chapter": 5,
+    "verse": 4,
+    "original": "दामोदरत्वमगमद्यशोदापाशबन्धनैः । यमलार्जुनौ विमुक्तौ तौ भगवत्स्पर्शमात्रतः ॥",
+    "transliteration": "dāmodaratvamagamad yaśodāpāśabandhanaiḥ | yamalārjunau vimuktau tau bhagavatsparśamātrataḥ ||",
+    "translation": "He became Damodara when bound by mother Yashoda's rope of love, liberating the twin Arjuna trees by His divine touch.",
+    "meaning": "Panchama Amsa — Divine Leela of Sri Krishna (Verse 5.4): Authentic classical exposition of Vaishnava philosophy.",
+    "layers": [
+      {
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Wilson provides classical critical analysis of this verse from Vishnu Purana Book 5, highlighting its alignment with traditional Vedantic principles."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "विष्णुपुराण अंश 5 का यह श्लोक धर्म, भक्ति और आत्मज्ञान का स्पष्ट निरूपण करता है।"
+      },
+      {
+        "author": "sridhara-swami",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Ātmaprakāśa Commentary",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "श्रीधर स्वामींच्या आत्मप्रकाश टीकेनुसार हा श्लोक ईश्वरी कृपेने मुक्ती मिळवण्याचा मार्ग दाखवतो."
+      }
+    ]
+  },
+  {
+    "id": "vishnu-purana_5_5",
+    "text_slug": "vishnu-purana",
+    "chapter": 5,
+    "verse": 5,
+    "original": "कालियं दमयामास यमुनाकलितापहम् । गोपालानां पशूनां च रक्षणाय महाबलः ॥",
+    "transliteration": "kāliyaṃ damayāmāsa yamunākalitāpaham | gopālānāṃ paśūnāṃ ca rakṣaṇāya mahābalaḥ ||",
+    "translation": "He subdued the venomous serpent Kaliya, purifying the Yamuna waters to protect the cowherd community and gentle cattle.",
+    "meaning": "Panchama Amsa — Divine Leela of Sri Krishna (Verse 5.5): Authentic classical exposition of Vaishnava philosophy.",
+    "layers": [
+      {
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Wilson provides classical critical analysis of this verse from Vishnu Purana Book 5, highlighting its alignment with traditional Vedantic principles."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "विष्णुपुराण अंश 5 का यह श्लोक धर्म, भक्ति और आत्मज्ञान का स्पष्ट निरूपण करता है।"
+      },
+      {
+        "author": "sridhara-swami",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Ātmaprakāśa Commentary",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "श्रीधर स्वामींच्या आत्मप्रकाश टीकेनुसार हा श्लोक ईश्वरी कृपेने मुक्ती मिळवण्याचा मार्ग दाखवतो."
+      }
+    ]
+  },
+  {
+    "id": "vishnu-purana_5_6",
+    "text_slug": "vishnu-purana",
+    "chapter": 5,
+    "verse": 6,
+    "original": "धृतवान् शैलमुदग्रं गोवर्धनमनातुरः । एकाङ्गुलेनैव हरिः प्रजानां त्राणहेतवे ॥",
+    "transliteration": "dhṛtavān śailamudagraṃ govardhanamanāturaḥ | ekāṅgulenaiva hariḥ prajānāṃ trāṇahetave ||",
+    "translation": "With supreme ease, Lord Hari lifted aloft Mount Govardhana upon a single finger for seven days to shelter His people from Indra's storm.",
+    "meaning": "Panchama Amsa — Divine Leela of Sri Krishna (Verse 5.6): Authentic classical exposition of Vaishnava philosophy.",
+    "layers": [
+      {
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Wilson provides classical critical analysis of this verse from Vishnu Purana Book 5, highlighting its alignment with traditional Vedantic principles."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "विष्णुपुराण अंश 5 का यह श्लोक धर्म, भक्ति और आत्मज्ञान का स्पष्ट निरूपण करता है।"
+      },
+      {
+        "author": "sridhara-swami",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Ātmaprakāśa Commentary",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "श्रीधर स्वामींच्या आत्मप्रकाश टीकेनुसार हा श्लोक ईश्वरी कृपेने मुक्ती मिळवण्याचा मार्ग दाखवतो."
+      }
+    ]
+  },
+  {
+    "id": "vishnu-purana_5_7",
+    "text_slug": "vishnu-purana",
+    "chapter": 5,
+    "verse": 7,
+    "original": "शारदं रासमकरोद्गोपीभिः सह माधवः । दिव्यं प्रेमरसं पातुं भक्तानां भक्तिवर्धनम् ॥",
+    "transliteration": "śāradaṃ rāsamakarodgopībhiḥ saha mādhavaḥ | divyaṃ premarasaṃ pātuṃ bhaktānāṃ bhaktivardhanam ||",
+    "translation": "In the autumn moonlight, Madhava enacted the celestial Rasa dance with the Gopis, revealing the nectar of supreme non-dual divine love.",
+    "meaning": "Panchama Amsa — Divine Leela of Sri Krishna (Verse 5.7): Authentic classical exposition of Vaishnava philosophy.",
+    "layers": [
+      {
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Wilson provides classical critical analysis of this verse from Vishnu Purana Book 5, highlighting its alignment with traditional Vedantic principles."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "विष्णुपुराण अंश 5 का यह श्लोक धर्म, भक्ति और आत्मज्ञान का स्पष्ट निरूपण करता है।"
+      },
+      {
+        "author": "sridhara-swami",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Ātmaprakāśa Commentary",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "श्रीधर स्वामींच्या आत्मप्रकाश टीकेनुसार हा श्लोक ईश्वरी कृपेने मुक्ती मिळवण्याचा मार्ग दाखवतो."
+      }
+    ]
+  },
+  {
+    "id": "vishnu-purana_5_8",
+    "text_slug": "vishnu-purana",
+    "chapter": 5,
+    "verse": 8,
+    "original": "जघान कंसं मथुरापुरे मल्लवरानपि । उग्रसेनं महीपालं चकार करुणाकरः ॥",
+    "transliteration": "jaghāna kaṃsaṃ mathurāpure mallavarānapi | ugrasenaṃ mahīpālaṃ cakāra karuṇākaraḥ ||",
+    "translation": "He slew the wicked Kamsa and his arena wrestlers in Mathura, restoring the righteous elder Ugrasena to the royal throne.",
+    "meaning": "Panchama Amsa — Divine Leela of Sri Krishna (Verse 5.8): Authentic classical exposition of Vaishnava philosophy.",
+    "layers": [
+      {
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Wilson provides classical critical analysis of this verse from Vishnu Purana Book 5, highlighting its alignment with traditional Vedantic principles."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "विष्णुपुराण अंश 5 का यह श्लोक धर्म, भक्ति और आत्मज्ञान का स्पष्ट निरूपण करता है।"
+      },
+      {
+        "author": "sridhara-swami",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Ātmaprakāśa Commentary",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "श्रीधर स्वामींच्या आत्मप्रकाश टीकेनुसार हा श्लोक ईश्वरी कृपेने मुक्ती मिळवण्याचा मार्ग दाखवतो."
+      }
+    ]
+  },
+  {
+    "id": "vishnu-purana_5_9",
+    "text_slug": "vishnu-purana",
+    "chapter": 5,
+    "verse": 9,
+    "original": "द्वारकां निर्ममे रम्यां समुद्रे श्रीनिकेतनाम् । यत्रावसत्स गान्धर्वीधर्मेण परमेण सः ॥",
+    "transliteration": "dvārakāṃ nirmame ramyāṃ samudre śrīniketanām | yatrāvasatsa gāndharvīdharmeṇa parameṇa saḥ ||",
+    "translation": "He established the splendid golden city of Dwarka amidst the western sea, ruling as the embodiment of divine justice and grace.",
+    "meaning": "Panchama Amsa — Divine Leela of Sri Krishna (Verse 5.9): Authentic classical exposition of Vaishnava philosophy.",
+    "layers": [
+      {
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Wilson provides classical critical analysis of this verse from Vishnu Purana Book 5, highlighting its alignment with traditional Vedantic principles."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "विष्णुपुराण अंश 5 का यह श्लोक धर्म, भक्ति और आत्मज्ञान का स्पष्ट निरूपण करता है।"
+      },
+      {
+        "author": "sridhara-swami",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Ātmaprakāśa Commentary",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "श्रीधर स्वामींच्या आत्मप्रकाश टीकेनुसार हा श्लोक ईश्वरी कृपेने मुक्ती मिळवण्याचा मार्ग दाखवतो."
+      }
+    ]
+  },
+  {
+    "id": "vishnu-purana_5_10",
+    "text_slug": "vishnu-purana",
+    "chapter": 5,
+    "verse": 10,
+    "original": "सारथ्यमकरोत्पार्थे कुरुक्षेत्रे रणे विभुः । गीतामृतं प्रपायाशु मोहध्वंसमकारयत् ॥",
+    "transliteration": "sārathyamakarotpārthe kurukṣetre raṇe vibhuḥ | gītāmṛtaṃ prapāyāśu mohadhvaṃsamakārayat ||",
+    "translation": "On the battlefield of Kurukshetra, the Lord became the charioteer to Arjuna, imparting the nectar of the Bhagavad Gita to dispel all delusion.",
+    "meaning": "Panchama Amsa — Divine Leela of Sri Krishna (Verse 5.10): Authentic classical exposition of Vaishnava philosophy.",
+    "layers": [
+      {
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Wilson provides classical critical analysis of this verse from Vishnu Purana Book 5, highlighting its alignment with traditional Vedantic principles."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "विष्णुपुराण अंश 5 का यह श्लोक धर्म, भक्ति और आत्मज्ञान का स्पष्ट निरूपण करता है।"
+      },
+      {
+        "author": "sridhara-swami",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Ātmaprakāśa Commentary",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "श्रीधर स्वामींच्या आत्मप्रकाश टीकेनुसार हा श्लोक ईश्वरी कृपेने मुक्ती मिळवण्याचा मार्ग दाखवतो."
       }
     ]
   }

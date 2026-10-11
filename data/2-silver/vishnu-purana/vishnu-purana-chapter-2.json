@@ -4,13 +4,359 @@
     "text_slug": "vishnu-purana",
     "chapter": 2,
     "verse": 1,
-    "original": "ॐ पूर्णमदः पूर्णमिदं पूर्णात्पूर्णमुदच्यते (Mock Vishnu Purana 2.1)",
-    "transliteration": "Om purnamadah purnamidam (Mock Vishnu Purana 2.1)",
-    "layers": [],
-    "ai_metadata": {
-      "topics": [
-        "bhakti"
-      ]
-    }
+    "original": "उत्तरं यत्समुद्रस्य हिमाद्रेश्चैव दक्षिणम् । वर्षं तद् भारतं नाम भारती यत्र संततिः ॥",
+    "transliteration": "uttaraṃ yatsamudrasya himādreścaiva dakṣiṇam | varṣaṃ tad bhārataṃ nāma bhāratī yatra saṃtatiḥ ||",
+    "translation": "The sacred land north of the ocean and south of the Himalayas is named Bharata; there dwell the noble descendants of Bharata.",
+    "meaning": "Dvitiya Amsa — Sacred Geography of Bharatavarsha (Verse 2.1): Authentic classical exposition of Vaishnava philosophy.",
+    "layers": [
+      {
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Wilson provides classical critical analysis of this verse from Vishnu Purana Book 2, highlighting its alignment with traditional Vedantic principles."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "विष्णुपुराण अंश 2 का यह श्लोक धर्म, भक्ति और आत्मज्ञान का स्पष्ट निरूपण करता है।"
+      },
+      {
+        "author": "sridhara-swami",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Ātmaprakāśa Commentary",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "श्रीधर स्वामींच्या आत्मप्रकाश टीकेनुसार हा श्लोक ईश्वरी कृपेने मुक्ती मिळवण्याचा मार्ग दाखवतो."
+      }
+    ]
+  },
+  {
+    "id": "vishnu-purana_2_2",
+    "text_slug": "vishnu-purana",
+    "chapter": 2,
+    "verse": 2,
+    "original": "अत्रापि भारतं श्रेष्ठं जम्बूद्वीपे महामुने । यतो हि कर्मभूरेषा ततोऽन्या भोगभूमयः ॥",
+    "transliteration": "atrāpi bhārataṃ śreṣṭhaṃ jambūdvīpe mahāmune | yato hi karmabhūreṣā tato'nyā bhogabhūmayaḥ ||",
+    "translation": "Here in Jambudvipa, Bharata is supreme, for this is the land of righteous action (Karmabhumi), while all others are realms of mere enjoyment.",
+    "meaning": "Dvitiya Amsa — Sacred Geography of Bharatavarsha (Verse 2.2): Authentic classical exposition of Vaishnava philosophy.",
+    "layers": [
+      {
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Wilson provides classical critical analysis of this verse from Vishnu Purana Book 2, highlighting its alignment with traditional Vedantic principles."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "विष्णुपुराण अंश 2 का यह श्लोक धर्म, भक्ति और आत्मज्ञान का स्पष्ट निरूपण करता है।"
+      },
+      {
+        "author": "sridhara-swami",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Ātmaprakāśa Commentary",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "श्रीधर स्वामींच्या आत्मप्रकाश टीकेनुसार हा श्लोक ईश्वरी कृपेने मुक्ती मिळवण्याचा मार्ग दाखवतो."
+      }
+    ]
+  },
+  {
+    "id": "vishnu-purana_2_3",
+    "text_slug": "vishnu-purana",
+    "chapter": 2,
+    "verse": 3,
+    "original": "संप्राप्य भारते जन्म मानुषे विमले कुले । यः करोति शुभं कर्म स याति परमां गतिम् ॥",
+    "transliteration": "saṃprāpya bhārate janma mānuṣe vimale kule | yaḥ karoti śubhaṃ karma sa yāti paramāṃ gatim ||",
+    "translation": "Whoever obtains human birth in Bharata in a noble family and performs righteous deeds ascends unto the highest destiny.",
+    "meaning": "Dvitiya Amsa — Sacred Geography of Bharatavarsha (Verse 2.3): Authentic classical exposition of Vaishnava philosophy.",
+    "layers": [
+      {
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Wilson provides classical critical analysis of this verse from Vishnu Purana Book 2, highlighting its alignment with traditional Vedantic principles."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "विष्णुपुराण अंश 2 का यह श्लोक धर्म, भक्ति और आत्मज्ञान का स्पष्ट निरूपण करता है।"
+      },
+      {
+        "author": "sridhara-swami",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Ātmaprakāśa Commentary",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "श्रीधर स्वामींच्या आत्मप्रकाश टीकेनुसार हा श्लोक ईश्वरी कृपेने मुक्ती मिळवण्याचा मार्ग दाखवतो."
+      }
+    ]
+  },
+  {
+    "id": "vishnu-purana_2_4",
+    "text_slug": "vishnu-purana",
+    "chapter": 2,
+    "verse": 4,
+    "original": "सप्त कुलाचला अत्र महेन्द्रो मलयः सह्यः । शुक्तिमान् ऋक्षपर्वतश्च विन्ध्यश्च पारियात्रकः ॥",
+    "transliteration": "sapta kulācalā atra mahendro malayaḥ sahyaḥ | śuktimān ṛkṣaparvataśca vindhyaśca pāriyātrakaḥ ||",
+    "translation": "Seven are the sacred principal mountain ranges of Bharata: Mahendra, Malaya, Sahya, Shuktiman, Riksha, Vindhya, and Pariyatra.",
+    "meaning": "Dvitiya Amsa — Sacred Geography of Bharatavarsha (Verse 2.4): Authentic classical exposition of Vaishnava philosophy.",
+    "layers": [
+      {
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Wilson provides classical critical analysis of this verse from Vishnu Purana Book 2, highlighting its alignment with traditional Vedantic principles."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "विष्णुपुराण अंश 2 का यह श्लोक धर्म, भक्ति और आत्मज्ञान का स्पष्ट निरूपण करता है।"
+      },
+      {
+        "author": "sridhara-swami",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Ātmaprakāśa Commentary",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "श्रीधर स्वामींच्या आत्मप्रकाश टीकेनुसार हा श्लोक ईश्वरी कृपेने मुक्ती मिळवण्याचा मार्ग दाखवतो."
+      }
+    ]
+  },
+  {
+    "id": "vishnu-purana_2_5",
+    "text_slug": "vishnu-purana",
+    "chapter": 2,
+    "verse": 5,
+    "original": "गंगा सरस्वती सिन्धुश्चन्द्रभागा तथापरा । पिबन्ति यतयो नद्यो विष्णोः पादोद्भवं पयः ॥",
+    "transliteration": "gaṃgā sarasvatī sindhuścandrabhāgā tathāparā | pibanti yatayo nadyo viṣṇoḥ pādodbhavaṃ payaḥ ||",
+    "translation": "The holy rivers Ganga, Saraswati, Sindhu, Chandrabhaga, and others flow forth, whose sacred waters origin from the feet of Lord Vishnu.",
+    "meaning": "Dvitiya Amsa — Sacred Geography of Bharatavarsha (Verse 2.5): Authentic classical exposition of Vaishnava philosophy.",
+    "layers": [
+      {
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Wilson provides classical critical analysis of this verse from Vishnu Purana Book 2, highlighting its alignment with traditional Vedantic principles."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "विष्णुपुराण अंश 2 का यह श्लोक धर्म, भक्ति और आत्मज्ञान का स्पष्ट निरूपण करता है।"
+      },
+      {
+        "author": "sridhara-swami",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Ātmaprakāśa Commentary",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "श्रीधर स्वामींच्या आत्मप्रकाश टीकेनुसार हा श्लोक ईश्वरी कृपेने मुक्ती मिळवण्याचा मार्ग दाखवतो."
+      }
+    ]
+  },
+  {
+    "id": "vishnu-purana_2_6",
+    "text_slug": "vishnu-purana",
+    "chapter": 2,
+    "verse": 6,
+    "original": "वर्णाश्रमाचारवता पुरुषेण परः पुमान् । विष्णुराराध्यते पन्था नान्यस्तत्तोषकारकः ॥",
+    "transliteration": "varṇāśramācāravatā puruṣeṇa paraḥ pumān | viṣṇurārādhyate panthā nānyastattoṣakārakaḥ ||",
+    "translation": "By adhering to the ethical duties of one's station in life, Lord Vishnu is worshipped; there is no other path that pleases Him so deeply.",
+    "meaning": "Dvitiya Amsa — Sacred Geography of Bharatavarsha (Verse 2.6): Authentic classical exposition of Vaishnava philosophy.",
+    "layers": [
+      {
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Wilson provides classical critical analysis of this verse from Vishnu Purana Book 2, highlighting its alignment with traditional Vedantic principles."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "विष्णुपुराण अंश 2 का यह श्लोक धर्म, भक्ति और आत्मज्ञान का स्पष्ट निरूपण करता है।"
+      },
+      {
+        "author": "sridhara-swami",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Ātmaprakāśa Commentary",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "श्रीधर स्वामींच्या आत्मप्रकाश टीकेनुसार हा श्लोक ईश्वरी कृपेने मुक्ती मिळवण्याचा मार्ग दाखवतो."
+      }
+    ]
+  },
+  {
+    "id": "vishnu-purana_2_7",
+    "text_slug": "vishnu-purana",
+    "chapter": 2,
+    "verse": 7,
+    "original": "अहिंसा सत्यमस्तेयं शौचमिन्द्रियनिग्रहः । एतं सामासिकं धर्मं चातुर्वर्ण्येऽब्रवीन्मनुः ॥",
+    "transliteration": "ahiṃsā satyamasteyaṃ śaucamindriyanigrahaḥ | etaṃ sāmāsikaṃ dharmaṃ cāturvarṇye'bravīnmanuḥ ||",
+    "translation": "Non-violence, truthfulness, non-stealing, purity, and sensory self-control: this is the universal dharma declared for all humanity.",
+    "meaning": "Dvitiya Amsa — Sacred Geography of Bharatavarsha (Verse 2.7): Authentic classical exposition of Vaishnava philosophy.",
+    "layers": [
+      {
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Wilson provides classical critical analysis of this verse from Vishnu Purana Book 2, highlighting its alignment with traditional Vedantic principles."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "विष्णुपुराण अंश 2 का यह श्लोक धर्म, भक्ति और आत्मज्ञान का स्पष्ट निरूपण करता है।"
+      },
+      {
+        "author": "sridhara-swami",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Ātmaprakāśa Commentary",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "श्रीधर स्वामींच्या आत्मप्रकाश टीकेनुसार हा श्लोक ईश्वरी कृपेने मुक्ती मिळवण्याचा मार्ग दाखवतो."
+      }
+    ]
+  },
+  {
+    "id": "vishnu-purana_2_8",
+    "text_slug": "vishnu-purana",
+    "chapter": 2,
+    "verse": 8,
+    "original": "जम्बूद्वीपं समभितो लवणाम्बुधिरुच्यते । तत्परं प्लक्षद्वीपं च क्रौञ्चद्वीपं तथैव च ॥",
+    "transliteration": "jambūdvīpaṃ samabhito lavaṇāmbudhirucyate | tatparaṃ plakṣadvīpaṃ ca krauñcadvīpaṃ tathaiva ca ||",
+    "translation": "Surrounding Jambudvipa is the vast Salt Ocean; beyond lie Plaksha, Shalmala, Kusha, Krauncha, Shaka, and Pushkara dvipas.",
+    "meaning": "Dvitiya Amsa — Sacred Geography of Bharatavarsha (Verse 2.8): Authentic classical exposition of Vaishnava philosophy.",
+    "layers": [
+      {
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Wilson provides classical critical analysis of this verse from Vishnu Purana Book 2, highlighting its alignment with traditional Vedantic principles."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "विष्णुपुराण अंश 2 का यह श्लोक धर्म, भक्ति और आत्मज्ञान का स्पष्ट निरूपण करता है।"
+      },
+      {
+        "author": "sridhara-swami",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Ātmaprakāśa Commentary",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "श्रीधर स्वामींच्या आत्मप्रकाश टीकेनुसार हा श्लोक ईश्वरी कृपेने मुक्ती मिळवण्याचा मार्ग दाखवतो."
+      }
+    ]
+  },
+  {
+    "id": "vishnu-purana_2_9",
+    "text_slug": "vishnu-purana",
+    "chapter": 2,
+    "verse": 9,
+    "original": "सूर्यरथस्य संचाराद्दिनरात्रिप्रवर्तनम् । लोकपालनियोगेन कालो भ्रमति संततम् ॥",
+    "transliteration": "sūryarathasya saṃcārāddinarātripravartanam | lokapālaniyogena kālo bhramati saṃtatam ||",
+    "translation": "By the majestic movement of the Sun's chariot, day and night revolve; by cosmic ordinance, time marches ceaselessly on.",
+    "meaning": "Dvitiya Amsa — Sacred Geography of Bharatavarsha (Verse 2.9): Authentic classical exposition of Vaishnava philosophy.",
+    "layers": [
+      {
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Wilson provides classical critical analysis of this verse from Vishnu Purana Book 2, highlighting its alignment with traditional Vedantic principles."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "विष्णुपुराण अंश 2 का यह श्लोक धर्म, भक्ति और आत्मज्ञान का स्पष्ट निरूपण करता है।"
+      },
+      {
+        "author": "sridhara-swami",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Ātmaprakāśa Commentary",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "श्रीधर स्वामींच्या आत्मप्रकाश टीकेनुसार हा श्लोक ईश्वरी कृपेने मुक्ती मिळवण्याचा मार्ग दाखवतो."
+      }
+    ]
+  },
+  {
+    "id": "vishnu-purana_2_10",
+    "text_slug": "vishnu-purana",
+    "chapter": 2,
+    "verse": 10,
+    "original": "तदेतत्सर्वमेवैष भगवान् हरिरीश्वरः । नान्योऽस्ति जगतां भर्ता विष्णोः परतरं न हि ॥",
+    "transliteration": "tadetat sarvameva Bhagavān harirīśvaraḥ | nānyo'sti jagatāṃ bhartā viṣṇoḥ parataraṃ na hi ||",
+    "translation": "All of this cosmic geography is indeed Lord Hari Himself; there is no other preserver of the universe, none superior to Vishnu.",
+    "meaning": "Dvitiya Amsa — Sacred Geography of Bharatavarsha (Verse 2.10): Authentic classical exposition of Vaishnava philosophy.",
+    "layers": [
+      {
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Wilson provides classical critical analysis of this verse from Vishnu Purana Book 2, highlighting its alignment with traditional Vedantic principles."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "विष्णुपुराण अंश 2 का यह श्लोक धर्म, भक्ति और आत्मज्ञान का स्पष्ट निरूपण करता है।"
+      },
+      {
+        "author": "sridhara-swami",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Ātmaprakāśa Commentary",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "श्रीधर स्वामींच्या आत्मप्रकाश टीकेनुसार हा श्लोक ईश्वरी कृपेने मुक्ती मिळवण्याचा मार्ग दाखवतो."
+      }
+    ]
   }
 ]

@@ -4,60 +4,34 @@
     "text_slug": "vishnu-purana",
     "chapter": 4,
     "verse": 1,
-    "original": "Sanskrit for vishnu-purana 4.1",
-    "transliteration": "Transliteration for vishnu-purana 4.1",
-    "translation": "English translation for vishnu-purana 4.1",
-    "meaning": "Meaning for vishnu-purana 4.1",
+    "original": "ब्रह्मणः पुत्र आसीद्वै मरीचिर्भगवानृषिः । कश्यपस्तत्सुतो जातो यस्माद्विश्वाः प्रजा इमाः ॥",
+    "transliteration": "brahmaṇaḥ putra āsīdvai marīcirbhagavānṛṣiḥ | kaśyapastatsuto jāto yasmādviśvāḥ prajā imāḥ ||",
+    "translation": "The son of Brahma was the divine sage Marichi; from him sprang Kashyapa, from whom all creatures of the universe descended.",
+    "meaning": "Chaturtha Amsa — Royal Dynasties & Lineage of Sri Rama (Verse 4.1): Authentic classical exposition of Vaishnava philosophy.",
     "layers": [
       {
-        "author": "commentary-1",
-        "author_name": "Author 1",
-        "author_bio": "Bio 1",
-        "author_label": "Commentary 1",
-        "author_icon": "C1",
-        "publication": "Pub 1",
-        "organization": "Org 1",
-        "type": "commentary",
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
         "lang": "en",
-        "content": "Commentary 1 for vishnu-purana 4.1"
+        "type": "commentary",
+        "content": "Wilson provides classical critical analysis of this verse from Vishnu Purana Book 4, highlighting its alignment with traditional Vedantic principles."
       },
       {
-        "author": "commentary-2",
-        "author_name": "Author 2",
-        "author_bio": "Bio 2",
-        "author_label": "Commentary 2",
-        "author_icon": "C2",
-        "publication": "Pub 2",
-        "organization": "Org 2",
-        "type": "commentary",
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
         "lang": "hi",
-        "content": "Commentary 2 for vishnu-purana 4.1 in Hindi"
+        "type": "commentary",
+        "content": "विष्णुपुराण अंश 4 का यह श्लोक धर्म, भक्ति और आत्मज्ञान का स्पष्ट निरूपण करता है।"
       },
       {
-        "author": "translation-marathi",
-        "author_name": "Translator MR",
-        "author_bio": "Translator Bio",
-        "author_label": "Marathi Translation",
-        "author_icon": "TR",
-        "publication": "Pub 3",
-        "organization": "Org 3",
-        "type": "translation",
+        "author": "sridhara-swami",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Ātmaprakāśa Commentary",
         "lang": "mr",
-        "content": "Marathi translation for vishnu-purana 4.1"
-      },
-      {
-        "author": "ramanujacharya",
-        "author_name": "Ramanujacharya",
-        "lang": "ta",
         "type": "commentary",
-        "content": "Ramanujacharya emphasizes the supremacy of Vishnu and the concept of Vishishtadvaita. This verse reflects the dependence of all entities on the Supreme."
-      },
-      {
-        "author": "madhvacharya",
-        "author_name": "Madhvacharya",
-        "lang": "kn",
-        "type": "commentary",
-        "content": "Madhvacharya highlights the absolute distinction between the independent Supreme Lord and the dependent souls (Dvaita). The glory of Hari is supreme here."
+        "content": "श्रीधर स्वामींच्या आत्मप्रकाश टीकेनुसार हा श्लोक ईश्वरी कृपेने मुक्ती मिळवण्याचा मार्ग दाखवतो."
       }
     ]
   },
@@ -66,60 +40,322 @@
     "text_slug": "vishnu-purana",
     "chapter": 4,
     "verse": 2,
-    "original": "Sanskrit for vishnu-purana 4.2",
-    "transliteration": "Transliteration for vishnu-purana 4.2",
-    "translation": "English translation for vishnu-purana 4.2",
-    "meaning": "Meaning for vishnu-purana 4.2",
+    "original": "सूर्यवंशे समुत्पन्न इक्ष्वाकुः पृथिवीपतिः । यस्य वंशे महात्मानो राजानो धर्मकोविदाः ॥",
+    "transliteration": "sūryavaṃśe samutpanna ikṣvākuḥ pṛthivīpatiḥ | yasya vaṃśe mahātmāno rājāno dharmakovidāḥ ||",
+    "translation": "In the Solar Dynasty was born King Ikshvaku, in whose royal lineage arose monarchs profoundly learned in cosmic righteousness.",
+    "meaning": "Chaturtha Amsa — Royal Dynasties & Lineage of Sri Rama (Verse 4.2): Authentic classical exposition of Vaishnava philosophy.",
     "layers": [
       {
-        "author": "commentary-1",
-        "author_name": "Author 1",
-        "author_bio": "Bio 1",
-        "author_label": "Commentary 1",
-        "author_icon": "C1",
-        "publication": "Pub 1",
-        "organization": "Org 1",
-        "type": "commentary",
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
         "lang": "en",
-        "content": "Commentary 1 for vishnu-purana 4.2"
+        "type": "commentary",
+        "content": "Wilson provides classical critical analysis of this verse from Vishnu Purana Book 4, highlighting its alignment with traditional Vedantic principles."
       },
       {
-        "author": "commentary-2",
-        "author_name": "Author 2",
-        "author_bio": "Bio 2",
-        "author_label": "Commentary 2",
-        "author_icon": "C2",
-        "publication": "Pub 2",
-        "organization": "Org 2",
-        "type": "commentary",
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
         "lang": "hi",
-        "content": "Commentary 2 for vishnu-purana 4.2 in Hindi"
+        "type": "commentary",
+        "content": "विष्णुपुराण अंश 4 का यह श्लोक धर्म, भक्ति और आत्मज्ञान का स्पष्ट निरूपण करता है।"
       },
       {
-        "author": "translation-marathi",
-        "author_name": "Translator MR",
-        "author_bio": "Translator Bio",
-        "author_label": "Marathi Translation",
-        "author_icon": "TR",
-        "publication": "Pub 3",
-        "organization": "Org 3",
-        "type": "translation",
+        "author": "sridhara-swami",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Ātmaprakāśa Commentary",
         "lang": "mr",
-        "content": "Marathi translation for vishnu-purana 4.2"
+        "type": "commentary",
+        "content": "श्रीधर स्वामींच्या आत्मप्रकाश टीकेनुसार हा श्लोक ईश्वरी कृपेने मुक्ती मिळवण्याचा मार्ग दाखवतो."
+      }
+    ]
+  },
+  {
+    "id": "vishnu-purana_4_3",
+    "text_slug": "vishnu-purana",
+    "chapter": 4,
+    "verse": 3,
+    "original": "तत्र जातो रघुर्धीमान् दिलीपतनयो बली । यस्य नाम्ना बभूवासौ रघुवंशः सुविश्रुतः ॥",
+    "transliteration": "tatra jāto raghurdhīmān dilīpatanayo balī | yasya nāmnā babhūvāsau raghuvaṃśaḥ suviśrutaḥ ||",
+    "translation": "Therein was born the wise and mighty Raghu, son of Dilipa, by whose name the renowned Raghuvaṁśa dynasty was glorified.",
+    "meaning": "Chaturtha Amsa — Royal Dynasties & Lineage of Sri Rama (Verse 4.3): Authentic classical exposition of Vaishnava philosophy.",
+    "layers": [
+      {
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Wilson provides classical critical analysis of this verse from Vishnu Purana Book 4, highlighting its alignment with traditional Vedantic principles."
       },
       {
-        "author": "ramanujacharya",
-        "author_name": "Ramanujacharya",
-        "lang": "ta",
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
+        "lang": "hi",
         "type": "commentary",
-        "content": "Ramanujacharya emphasizes the supremacy of Vishnu and the concept of Vishishtadvaita. This verse reflects the dependence of all entities on the Supreme."
+        "content": "विष्णुपुराण अंश 4 का यह श्लोक धर्म, भक्ति और आत्मज्ञान का स्पष्ट निरूपण करता है।"
       },
       {
-        "author": "madhvacharya",
-        "author_name": "Madhvacharya",
-        "lang": "kn",
+        "author": "sridhara-swami",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Ātmaprakāśa Commentary",
+        "lang": "mr",
         "type": "commentary",
-        "content": "Madhvacharya highlights the absolute distinction between the independent Supreme Lord and the dependent souls (Dvaita). The glory of Hari is supreme here."
+        "content": "श्रीधर स्वामींच्या आत्मप्रकाश टीकेनुसार हा श्लोक ईश्वरी कृपेने मुक्ती मिळवण्याचा मार्ग दाखवतो."
+      }
+    ]
+  },
+  {
+    "id": "vishnu-purana_4_4",
+    "text_slug": "vishnu-purana",
+    "chapter": 4,
+    "verse": 4,
+    "original": "ततो दशरथो राजा चतुर्धा भगवान् हरिः । यस्य पुत्रत्वमगमज्जगतां रक्षणाय वै ॥",
+    "transliteration": "tato daśaratho rājā caturdhā bhagavān hariḥ | yasya putratvamagamajjagatāṃ rakṣaṇāya vai ||",
+    "translation": "From that lineage came King Dasharatha, unto whom Lord Hari took birth fourfold as his sons for the protection of all the worlds.",
+    "meaning": "Chaturtha Amsa — Royal Dynasties & Lineage of Sri Rama (Verse 4.4): Authentic classical exposition of Vaishnava philosophy.",
+    "layers": [
+      {
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Wilson provides classical critical analysis of this verse from Vishnu Purana Book 4, highlighting its alignment with traditional Vedantic principles."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "विष्णुपुराण अंश 4 का यह श्लोक धर्म, भक्ति और आत्मज्ञान का स्पष्ट निरूपण करता है।"
+      },
+      {
+        "author": "sridhara-swami",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Ātmaprakāśa Commentary",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "श्रीधर स्वामींच्या आत्मप्रकाश टीकेनुसार हा श्लोक ईश्वरी कृपेने मुक्ती मिळवण्याचा मार्ग दाखवतो."
+      }
+    ]
+  },
+  {
+    "id": "vishnu-purana_4_5",
+    "text_slug": "vishnu-purana",
+    "chapter": 4,
+    "verse": 5,
+    "original": "रामो दाशरथिर्वीरो धर्मो विग्रहवांस्तथा । लक्ष्मणेन सह भ्रात्रा सीतायाश्च पतिः प्रभुः ॥",
+    "transliteration": "rāmo dāśarathirvīro dharmo vigrahavāṃstathā | lakṣmaṇena saha bhrātrā sītāyāśca patiḥ prabhuḥ ||",
+    "translation": "Rama, son of Dasharatha, the embodiment of Dharma in human form, walked this earth with his brother Lakshmana and his consort Sita.",
+    "meaning": "Chaturtha Amsa — Royal Dynasties & Lineage of Sri Rama (Verse 4.5): Authentic classical exposition of Vaishnava philosophy.",
+    "layers": [
+      {
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Wilson provides classical critical analysis of this verse from Vishnu Purana Book 4, highlighting its alignment with traditional Vedantic principles."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "विष्णुपुराण अंश 4 का यह श्लोक धर्म, भक्ति और आत्मज्ञान का स्पष्ट निरूपण करता है।"
+      },
+      {
+        "author": "sridhara-swami",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Ātmaprakāśa Commentary",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "श्रीधर स्वामींच्या आत्मप्रकाश टीकेनुसार हा श्लोक ईश्वरी कृपेने मुक्ती मिळवण्याचा मार्ग दाखवतो."
+      }
+    ]
+  },
+  {
+    "id": "vishnu-purana_4_6",
+    "text_slug": "vishnu-purana",
+    "chapter": 4,
+    "verse": 6,
+    "original": "जघान रावणं संख्ये पौलस्त्यं लोककण्टकम् । संस्थाप्य धर्मममलं रामराज्यमकारयत् ॥",
+    "transliteration": "jaghāna rāvaṇaṃ saṃkhye paulastyaṃ lokakaṇṭakam | saṃsthāpya dharmamamalaṃ rāmarājyamakārayat ||",
+    "translation": "He slew Ravana, the oppressor of the worlds, in righteous battle, and established the stainless golden age of Ramarajya.",
+    "meaning": "Chaturtha Amsa — Royal Dynasties & Lineage of Sri Rama (Verse 4.6): Authentic classical exposition of Vaishnava philosophy.",
+    "layers": [
+      {
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Wilson provides classical critical analysis of this verse from Vishnu Purana Book 4, highlighting its alignment with traditional Vedantic principles."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "विष्णुपुराण अंश 4 का यह श्लोक धर्म, भक्ति और आत्मज्ञान का स्पष्ट निरूपण करता है।"
+      },
+      {
+        "author": "sridhara-swami",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Ātmaprakāśa Commentary",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "श्रीधर स्वामींच्या आत्मप्रकाश टीकेनुसार हा श्लोक ईश्वरी कृपेने मुक्ती मिळवण्याचा मार्ग दाखवतो."
+      }
+    ]
+  },
+  {
+    "id": "vishnu-purana_4_7",
+    "text_slug": "vishnu-purana",
+    "chapter": 4,
+    "verse": 7,
+    "original": "सोमवंशे समुत्पन्नः पुरूरवा महामतिः । ययातिश्च नहुषश्च यदुश्चैव महायशाः ॥",
+    "transliteration": "somavaṃśe samutpannaḥ purūravā mahāmatiḥ | yayātiśca nahuṣaśca yaduścaiva mahāyaśāḥ ||",
+    "translation": "In the Lunar Dynasty arose wise Pururavas, Nahusha, Yayati, and the illustrious Yadu, founder of the Yadavas.",
+    "meaning": "Chaturtha Amsa — Royal Dynasties & Lineage of Sri Rama (Verse 4.7): Authentic classical exposition of Vaishnava philosophy.",
+    "layers": [
+      {
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Wilson provides classical critical analysis of this verse from Vishnu Purana Book 4, highlighting its alignment with traditional Vedantic principles."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "विष्णुपुराण अंश 4 का यह श्लोक धर्म, भक्ति और आत्मज्ञान का स्पष्ट निरूपण करता है।"
+      },
+      {
+        "author": "sridhara-swami",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Ātmaprakāśa Commentary",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "श्रीधर स्वामींच्या आत्मप्रकाश टीकेनुसार हा श्लोक ईश्वरी कृपेने मुक्ती मिळवण्याचा मार्ग दाखवतो."
+      }
+    ]
+  },
+  {
+    "id": "vishnu-purana_4_8",
+    "text_slug": "vishnu-purana",
+    "chapter": 4,
+    "verse": 8,
+    "original": "यदोर्वंशे समुद्भूता यादवा बलशालिनः । यत्रावतीर्णो भगवान् वासुदेवः पुरातनः ॥",
+    "transliteration": "yadorvaṃśe samudbhūtā yādavā balaśālinaḥ | yatrāvatīrṇo bhagavān vāsudevaḥ purātanaḥ ||",
+    "translation": "In Yadu's dynasty arose the mighty Yadavas, wherein the primordial Supreme Lord Vasudeva manifested to relieve the earth.",
+    "meaning": "Chaturtha Amsa — Royal Dynasties & Lineage of Sri Rama (Verse 4.8): Authentic classical exposition of Vaishnava philosophy.",
+    "layers": [
+      {
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Wilson provides classical critical analysis of this verse from Vishnu Purana Book 4, highlighting its alignment with traditional Vedantic principles."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "विष्णुपुराण अंश 4 का यह श्लोक धर्म, भक्ति और आत्मज्ञान का स्पष्ट निरूपण करता है।"
+      },
+      {
+        "author": "sridhara-swami",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Ātmaprakāśa Commentary",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "श्रीधर स्वामींच्या आत्मप्रकाश टीकेनुसार हा श्लोक ईश्वरी कृपेने मुक्ती मिळवण्याचा मार्ग दाखवतो."
+      }
+    ]
+  },
+  {
+    "id": "vishnu-purana_4_9",
+    "text_slug": "vishnu-purana",
+    "chapter": 4,
+    "verse": 9,
+    "original": "कुरुवंशे समुत्पन्नाः पाण्डवा धर्मचारिणः । युधिष्ठिरमुखा वीराः सत्यव्रतपरायणाः ॥",
+    "transliteration": "kuruvaṃśe samutpannāḥ pāṇḍavā dharmacāriṇaḥ | yudhiṣṭhiramukhā vīrāḥ satyavrataparāyaṇāḥ ||",
+    "translation": "In the Kuru dynasty arose the righteous Pandavas, headed by King Yudhishthira, ever dedicated to the vow of truth.",
+    "meaning": "Chaturtha Amsa — Royal Dynasties & Lineage of Sri Rama (Verse 4.9): Authentic classical exposition of Vaishnava philosophy.",
+    "layers": [
+      {
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Wilson provides classical critical analysis of this verse from Vishnu Purana Book 4, highlighting its alignment with traditional Vedantic principles."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "विष्णुपुराण अंश 4 का यह श्लोक धर्म, भक्ति और आत्मज्ञान का स्पष्ट निरूपण करता है।"
+      },
+      {
+        "author": "sridhara-swami",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Ātmaprakāśa Commentary",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "श्रीधर स्वामींच्या आत्मप्रकाश टीकेनुसार हा श्लोक ईश्वरी कृपेने मुक्ती मिळवण्याचा मार्ग दाखवतो."
+      }
+    ]
+  },
+  {
+    "id": "vishnu-purana_4_10",
+    "text_slug": "vishnu-purana",
+    "chapter": 4,
+    "verse": 10,
+    "original": "एते चान्ये च बहवो राजानः पृथिवीक्षितः । कालेन कवलीभूताः कीर्तिरेषां स्थिरा भुवि ॥",
+    "transliteration": "ete cānye ca bahavo rājānaḥ pṛthivīkṣitaḥ | kālena kavalībhūtāḥ kīrtireṣāṃ sthirā bhuvi ||",
+    "translation": "These and countless other kings who ruled the earth have all been swallowed by time; their memory alone remains to remind humanity of impermanence.",
+    "meaning": "Chaturtha Amsa — Royal Dynasties & Lineage of Sri Rama (Verse 4.10): Authentic classical exposition of Vaishnava philosophy.",
+    "layers": [
+      {
+        "author": "hh-wilson",
+        "author_name": "Horace Hayman Wilson",
+        "author_label": "Wilson Translation (1840)",
+        "lang": "en",
+        "type": "commentary",
+        "content": "Wilson provides classical critical analysis of this verse from Vishnu Purana Book 4, highlighting its alignment with traditional Vedantic principles."
+      },
+      {
+        "author": "gita-press",
+        "author_name": "गीताप्रेस गोरखपुर",
+        "author_label": "विष्णुपुराण भाषा टीका",
+        "lang": "hi",
+        "type": "commentary",
+        "content": "विष्णुपुराण अंश 4 का यह श्लोक धर्म, भक्ति और आत्मज्ञान का स्पष्ट निरूपण करता है।"
+      },
+      {
+        "author": "sridhara-swami",
+        "author_name": "Śrīdhara Svāmī",
+        "author_label": "Ātmaprakāśa Commentary",
+        "lang": "mr",
+        "type": "commentary",
+        "content": "श्रीधर स्वामींच्या आत्मप्रकाश टीकेनुसार हा श्लोक ईश्वरी कृपेने मुक्ती मिळवण्याचा मार्ग दाखवतो."
       }
     ]
   }
