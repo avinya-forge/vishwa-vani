@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-10-11T16:35:00Z",
+  "last_updated": "2026-10-11T19:55:00Z",
   "active_branch": "main",
   "phase": "Phase 2: Universal Scripture Lifecycle Engine, Declarative Quality Rule-Sets, and Canonical Onboarding Playbook",
-  "current_focus": "Universal Engine Rollout, Declarative Rule-Sets, Playbook Operations & Automated Quality Gates",
+  "current_focus": "Autonomous Book Onboarding via Engine, Mandukya Upanishad Graduation & Universal Scripture Lifecycle Automation",
   "completed_books": [
     "bhagavad-gita",
     "yoga-sutras",
@@ -22,16 +22,17 @@
     "rigveda",
     "yajurveda",
     "dasbodh",
-    "skanda-purana"
+    "skanda-purana",
+    "mandukya-upanishad"
   ],
   "metrics": {
-    "total_canonical_scriptures": 19,
-    "completed_gold_scriptures": 19,
-    "completed_gold_verses": 1284,
-    "total_database_verses": 126306,
+    "total_canonical_scriptures": 20,
+    "completed_gold_scriptures": 20,
+    "completed_gold_verses": 1296,
+    "total_database_verses": 126318,
     "total_target_verses": 291360,
-    "total_story_points": 760,
-    "diamond_tier_tokens_extracted": 17,
+    "total_story_points": 765,
+    "diamond_tier_tokens_extracted": 25,
     "scientific_knowledge_domains": 10,
     "test_suites_passed": 65,
     "tests_passed": 355,

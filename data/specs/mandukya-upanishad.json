@@ -1,0 +1,278 @@
+{
+  "spec": {
+    "slug": "mandukya-upanishad",
+    "name": "Mandukya Upanishad",
+    "nameDevanagari": "माण्डूक्योपनिषद्",
+    "nameHi": "माण्डूक्योपनिषद्",
+    "nameMr": "माण्डूक्योपनिषद्",
+    "category": "upanishad",
+    "totalChapters": 1,
+    "description": "The quintessential Atharvaveda Upanishad expounding the four states of consciousness (waking, dream, deep sleep, and non-dual Turiya) and the sacred syllable OM (A-U-M).",
+    "sourceUrl": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/1_veda/4_upa/maunp_u.htm",
+    "license": "Public Domain (Pre-1923 Classical Texts)",
+    "publicDomainYear": 1923,
+    "chapterNames": {
+      "1": "Māṇḍūkya Upanishad — Complete Text (12 Mantras)"
+    },
+    "hasPreface": true,
+    "hasPostface": true,
+    "authors": [
+      {
+        "id": "adi-shankara",
+        "name": "Ādi Śaṅkarācārya",
+        "lineage": "Advaita Vedānta",
+        "work": "Māṇḍūkya Kārikā Bhāṣya",
+        "description": "Eighth-century non-dual exegesis on the 12 mantras and Gaudapada's Karikas."
+      },
+      {
+        "id": "universal-synthesis",
+        "name": "Universal Vedic Synthesis",
+        "lineage": "Vedic Hermeneutics",
+        "work": "Tattva Samgraha",
+        "description": "Cross-traditional philosophical synthesis uniting cognitive psychology and sonic metaphysics."
+      }
+    ]
+  },
+  "rawVerses": [
+    {
+      "chapter": 1,
+      "verse": 1,
+      "original": "ओमित्येतदक्षरमिदँ सर्वं तस्योपव्याख्यानं भूतं भवद् भविष्यदिति सर्वमोङ्कार एव यच्चान्यत् त्रिकालातीतं तदप्योङ्कार एव ॥ १ ॥",
+      "transliteration": "omity-etad-akṣaram-idaṃ sarvaṃ tasyopavyākhyānaṃ bhūtaṃ bhavad bhaviṣyad-iti sarvam-oṅkāra eva yaccānyat trikālātītaṃ tad-apy-oṅkāra eva || 1 ||",
+      "translation": "OM — this syllable is all this universe. Its explanation is: all that was, all that is, and all that will be is verily OM. And whatever else transcends the three divisions of time, that too is verily OM.",
+      "meaning": "The acoustic totality of OM encompasses past, present, and future, serving as the direct sonic pointer to non-dual Brahman transcending temporal limitations.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya (Advaita Vedānta)] The syllable OM is identical with the Supreme Brahman, the substratum of all speech and phenomenality. All names and their referents resolve into OM.",
+          "hi": "[आदि शंकराचार्य (अद्वैत वेदान्त)] ॐ यह अक्षर समस्त विश्व का अधिष्ठान है। भूत, वर्तमान और भविष्य काल का सम्पूर्ण प्रपञ्च ॐ स्वरूप ही है।",
+          "mr": "[आद्य शंकराचार्य (अद्वैत वेदान्त)] ॐ हा एकाक्षर सर्व विश्वाचे अधिष्ठान आहे. भूत, वर्तमान आणि भविष्य या त्रिकालातील सर्व नाम-रूपात्मक विश्व केवळ ॐकारच आहे."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] The Pranava OM represents primordial vibration (Spanda) and the eternal ground of reality uniting sound, consciousness, and cosmic existence.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] प्रणव ॐ अनादि नादब्रह्म और चेतना का शाश्वत स्रोत है जो सृष्टि के आरम्भ और अन्त को एक सूत्र में पिरोता है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] ॐकार हा विश्वाचा आदिनाद असून चित्त आणि चैतन्याला एकात्म भावात स्थिर करणारा परम आधार आहे."
+        }
+      }
+    },
+    {
+      "chapter": 1,
+      "verse": 2,
+      "original": "सर्वं ह्येतद् ब्रह्म अयमात्मा ब्रह्म सोऽयमात्मा चतुष्पात् ॥ २ ॥",
+      "transliteration": "sarvaṃ hy-etad brahma ayam-ātmā brahma so'yam-ātmā catuṣpāt || 2 ||",
+      "translation": "All this is verily Brahman. This Self is Brahman (Ayam Atma Brahma). This Self has four quarters (modalities of consciousness).",
+      "meaning": "The Atharvaveda Mahavakya establishes the non-dual identity between individual consciousness and supreme cosmic reality across four modalities.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya (Advaita Vedānta)] This Mahavakya dissolves the illusory distinction between the Jiva (individual self) and Brahman (infinite reality). The four quarters are pedagogical designations to lead the seeker to the non-dual fourth.",
+          "hi": "[आदि शंकराचार्य (अद्वैत वेदान्त)] 'अयमात्मा ब्रह्म' यह महावाक्य जीव और ब्रह्म की पूर्ण अद्वैतता का साक्षात्कार कराता है। चार पाद केवल अज्ञान निवृत्ति हेतु कल्पित हैं।",
+          "mr": "[आद्य शंकराचार्य (अद्वैत वेदान्त)] 'अयमात्मा ब्रह्म' हे महावाक्य जीव आणि परब्रह्म यांच्यातील अद्वैत ऐक्य सिद्ध करते."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] The Self encompasses all layers of experience from sensory waking awareness to the unconditioned transcendent witness.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] आत्मा जाग्रत से लेकर तुरीय तक की समस्त चेतना अवस्थाओं का अधिष्ठान और साक्षी है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] आत्मा सर्व अवस्थांचा साक्षी असून अंतिम मुक्तीचे एकमात्र साध्य आहे."
+        }
+      }
+    },
+    {
+      "chapter": 1,
+      "verse": 3,
+      "original": "जागरितस्थानो बहिष्प्रज्ञः सप्ताङ्ग एकोनविंशतिमुखः स्थूलभुग् वैश्वानरः प्रथमः पादः ॥ ३ ॥",
+      "transliteration": "jāgarita-sthāno bahiṣ-prajñaḥ saptāṅga ekonaviṃśati-mukhaḥ sthūla-bhug vaiśvānaraḥ prathamaḥ pādaḥ || 3 ||",
+      "translation": "The first quarter is Vaishvanara, whose field is the waking state, whose consciousness is directed outward, who has seven limbs and nineteen mouths, and who experiences gross physical objects.",
+      "meaning": "Waking consciousness (Jagrat) perceives and interacts with the external material world through sensory organs, motor instruments, and mental faculties.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya (Advaita Vedānta)] Vaishvanara represents universal cosmic consciousness identified with the gross universe (Virat). The 19 mouths are the 5 sensory organs, 5 organs of action, 5 pranas, and 4 internal instruments of the mind.",
+          "hi": "[आदि शंकराचार्य (अद्वैत वेदान्त)] वैश्वानर जाग्रत अवस्था का अभिमानी जीव है जो स्थूल विषयों का भोग करता है।",
+          "mr": "[आद्य शंकराचार्य (अद्वैत वेदान्त)] वैश्वानर हा जाग्रत अवस्थेतील स्थूल भोक्ता असून बाह्य जगाचे ज्ञान ग्रहण करतो."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] The waking state grounds our embodied existence, providing the arena for ethical action (Karma) and empirical cognition.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] जाग्रत अवस्था कर्म और प्रत्यक्ष बोध की आधारशिला है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] जाग्रत अवस्था व्यावहारिक कर्माची आणि ज्ञानाची मुख्य भूमी आहे."
+        }
+      }
+    },
+    {
+      "chapter": 1,
+      "verse": 4,
+      "original": "स्वप्नस्थानोऽन्तःप्रज्ञः सप्ताङ्ग एकोनविंशतिमुखः प्रविविक्तभुक् तैजसो द्वितीयः पादः ॥ ४ ॥",
+      "transliteration": "svapna-sthāno'ntaḥ-prajñaḥ saptāṅga ekonaviṃśati-mukhaḥ pravivikta-bhuk taijaso dvitīyaḥ pādaḥ || 4 ||",
+      "translation": "The second quarter is Taijasa, whose sphere is the dream state, whose consciousness is directed inward, who has seven limbs and nineteen mouths, and who experiences subtle mental impressions.",
+      "meaning": "Dream consciousness (Svapna) demonstrates that the mind possesses intrinsic luminosity to project, construct, and experience worlds purely from internal impressions.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya (Advaita Vedānta)] Taijasa reveals that the subject constructs experiences without external instruments, proving the self-luminous and non-material nature of consciousness (Sva-prakasha).",
+          "hi": "[आदि शंकराचार्य (अद्वैत वेदान्त)] स्वप्नावस्था में आत्मा स्वयंज्योति होकर जाग्रत के संस्कारों से निर्मित सूक्ष्म प्रपञ्च का अनुभव करता है।",
+          "mr": "[आद्य शंकराचार्य (अद्वैत वेदान्त)] स्वप्नावस्थेत बाह्य साधनांशिवाय केवळ अंतःकरणातील संस्कारांवर आत्मा स्वतःच जग निर्माण करून त्याचा भोग घेतो."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] The dream state bridges the gross physical reality and the causal unconscious, revealing the creative potential of subconscious memory.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] स्वप्नावस्था चित्त के सूक्ष्म संस्कारों की अभिव्यक्ति है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] स्वप्नावस्था मनाच्या सुप्त संस्कारांचे प्रकटीकरण करते."
+        }
+      }
+    },
+    {
+      "chapter": 1,
+      "verse": 5,
+      "original": "यत्र सुप्तो न कञ्चन कामं कामयते न कञ्चन स्वप्नं पश्यति तत् सुषुप्तम् । सुषुप्तस्थान एकीभूतः प्रज्ञानघन एवानन्दमयो ह्यानन्दभुक् चेतोमुखः प्राज्ञस्तृतीयः पादः ॥ ५ ॥",
+      "transliteration": "yatra supto na kañcana kāmaṃ kāmayate na kañcana svapnaṃ paśyati tat suṣuptam | suṣupta-sthāna ekībhūtaḥ prajñānaghana evānandamayo hy-ānandabhuk cetomukhaḥ prājñas tṛtīyaḥ pādaḥ || 5 ||",
+      "translation": "Where one asleep desires no object and sees no dream, that is deep sleep (Sushupti). The third quarter is Prajna, whose sphere is deep sleep, where all multiplicity becomes unified, a dense mass of undifferentiated consciousness, full of bliss, experiencing bliss, whose doorway is awareness.",
+      "meaning": "Deep dreamless sleep reveals that when mental agitations and subject-object dualities dissolve, unconditioned peace and natural bliss (Ananda) remain.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya (Advaita Vedānta)] In deep sleep, cognitive distinctions dissolve into an undifferentiated mass of awareness (Prajnana-ghana), prefiguring the non-dual peace of liberation, though obscured by root ignorance (Avidya).",
+          "hi": "[आदि शंकराचार्य (अद्वैत वेदान्त)] सुषुप्ति में समस्त द्वैत भाव लीन होकर केवल आनंदमय और प्रज्ञानघन रूप में स्थिर होता है।",
+          "mr": "[आद्य शंकराचार्य (अद्वैत वेदान्त)] गाढ निद्रेत कोणताही संकल्प किंवा स्वप्न उरत नाही; सर्व प्रपञ्च एकात्म प्रज्ञानघन रूपात विलीन होतो."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] Deep sleep is the ultimate restorative state where the fragmented ego dissolves into latent wholeness and deep psychophysical rejuvenation.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] सुषुप्ति जीवात्मा की विश्रामस्थली है जहाँ अहंकार विलीन होकर सहज शान्ति प्राप्त करता है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] सुषुप्ती ही जीवाची नैसर्गिक विश्रांती असून तेथे द्वैताचा लय होतो."
+        }
+      }
+    },
+    {
+      "chapter": 1,
+      "verse": 6,
+      "original": "एष सर्वेश्वर एष सर्वज्ञ एषोऽन्तर्याम्येष योनिः सर्वस्य प्रभवाप्ययौ हि भूतानाम् ॥ ६ ॥",
+      "transliteration": "eṣa sarveśvara eṣa sarvajña eṣo'ntaryāmy-eṣa yoniḥ sarvasya prabhavāpyayau hi bhūtānām || 6 ||",
+      "translation": "This is the Lord of all, this is the knower of all, this is the inner ruler, this is the source of all, the origin and dissolution of all beings.",
+      "meaning": "The causal principle embodied in Prajna/Ishvara is the cosmic womb from which all phenomena manifest and into which all beings periodically dissolve.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya (Advaita Vedānta)] Ishvara in the causal state is the ruler and seed of all cosmic manifestation, governing the cycles of creation and dissolution through Maya.",
+          "hi": "[आदि शंकराचार्य (अद्वैत वेदान्त)] यह प्राज्ञ ही समस्त चराचर का ईश्वर, सर्वज्ञ, अन्तर्यामी और मूल कारण है।",
+          "mr": "[आद्य शंकराचार्य (अद्वैत वेदान्त)] हाच सर्वेश्वर, सर्वज्ञ आणि अंतर्यामी असून सर्व प्राणिमात्रांच्या उत्पत्ती व लयाचे मूळ कारण आहे."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] The divine ground within consciousness orchestrates cosmic order, sustaining biological, mental, and cosmic evolution.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] अन्तर्यामी चैतन्य ही सम्पूर्ण विश्व व्यवस्था का संचालन करता है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] अंतर्यामी परमात्माच विश्वाच्या उत्पत्ती आणि विलीनीकरणाचे मूळ अधिष्ठान आहे."
+        }
+      }
+    },
+    {
+      "chapter": 1,
+      "verse": 7,
+      "original": "नान्तःप्रज्ञं न बहिष्प्रज्ञं नोभयतःप्रज्ञं न प्रज्ञानघनं न प्रज्ञं नाप्रज्ञम् । अदृष्टमव्यवहार्यमग्राह्यमलक्षणमचिन्त्यमव्यपदेश्यमेकात्मप्रत्ययसारं प्रपञ्चोपशमं शान्तं शिवमद्वैतं चतुर्थं मन्यन्ते स आत्मा स विज्ञेयः ॥ ७ ॥",
+      "transliteration": "nāntaḥ-prajñaṃ na bahiṣ-prajñaṃ nobhayataḥ-prajñaṃ na prajñānaghanaṃ na prajñaṃ nāprajñam | adṛṣṭam-avyavahāryam-agrāhyam-alakṣaṇam-acintyam-avyapadeśyam-ekātma-pratyaya-sāraṃ prapañcopaśamaṃ śāntaṃ śivam-advaitaṃ caturthaṃ manyante sa ātmā sa vijñeyaḥ || 7 ||",
+      "translation": "Not inwardly conscious, nor outwardly conscious, nor conscious of both, nor a mass of consciousness, nor simple consciousness, nor unconsciousness; unperceived, unrelated, incomprehensible, uninferable, unthinkable, indescribable, the essence of the consciousness of the single Self, the cessation of all phenomena, serene, auspicious, non-dual — that is deemed the fourth (Turiya). That is the Self, that is to be realized.",
+      "meaning": "The pinnacle declaration of Advaita Vedanta: Turiya is not a fourth transient state, but the eternal, unconditioned, peaceful, auspicious, non-dual reality of consciousness itself.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya (Advaita Vedānta)] This is the supreme definition of the Self via Apavada (negation of superimpositions). Turiya is free from the triad of waking, dream, and sleep — it is absolute non-dual Awareness (Shantam, Shivam, Advaitam).",
+          "hi": "[आदि शंकराचार्य (अद्वैत वेदान्त)] यह उपनिषदों का सर्वोच्च महासिद्धान्त है। तुरीय अवस्था जाग्रत, स्वप्न, सुषुप्ति से परे शांत, शिव और अद्वैत आत्मा का परम सत्य है।",
+          "mr": "[आद्य शंकराचार्य (अद्वैत वेदान्त)] हे वेदांताचे परम शिखर आहे. तुरीय म्हणजे शांत, शिव आणि अद्वैत स्वरूप शुद्ध चैतन्य, ज्याचा साक्षात्कार मोक्ष प्रदान करतो."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] The transcendent fourth is the foundational background of pure awareness upon which all temporal psychological states arise, play, and dissolve.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] तुरीय वह नित्य साक्षी चैतन्य है जो सभी मानसिक अवस्थाओं का आधार है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] तुरीयावस्था ही सर्व अवस्थांची जननी आणि अंतिम शाश्वत मुक्ती आहे."
+        }
+      }
+    },
+    {
+      "chapter": 1,
+      "verse": 8,
+      "original": "सोऽयमात्माध्यक्षरमोङ्कारोऽधिमात्रं पादा मात्रा मात्राश्च पादा अकार उकारो मकार इति ॥ ८ ॥",
+      "transliteration": "so'yam-ātmādhyakṣaram-oṅkāro'dhimātraṃ pādā mātrā मात्राश्च पादा akāra ukāro makāra iti || 8 ||",
+      "translation": "That Self, from the standpoint of the sacred syllable, is OM; from the standpoint of its elements, the quarters are the phonemes (matras) and the phonemes are the quarters: namely A, U, and M.",
+      "meaning": "Establishes systematic correspondence between the four quarters of consciousness and the phonetic constituents (Matras) of the sacred Pranava OM.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya (Advaita Vedānta)] OM is the supreme sonic means (Alambana) for apprehending Brahman. The three letters A, U, M correspond to the three quarters, and the letterless silence corresponds to Turiya.",
+          "hi": "[आदि शंकराचार्य (अद्वैत वेदान्त)] आत्मा और ॐकार की पूर्ण एकता स्थापित करते हुए अ, उ, म् की तीन मात्राओं का विधान किया गया है।",
+          "mr": "[आद्य शंकराचार्य (अद्वैत वेदान्त)] ॐकाराच्या अ, उ, म या मात्रा आणि आत्म्याच्या तीन अवस्था यांच्यातील तादात्म्य येथे स्पष्ट केले आहे."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] Phonetic contemplation transforms auditory chanting into contemplative ascent, guiding the mind from acoustics to pure silence.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] ध्वनि से निस्तब्धता की यात्रा ही ॐकार साधना का सार है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] नादब्रह्मातून परम शांततेकडे जाणारा मार्ग म्हणजे ॐकार साधना."
+        }
+      }
+    },
+    {
+      "chapter": 1,
+      "verse": 9,
+      "original": "जागरितस्थानो वैश्वानरोऽकारः प्रथमा मात्राऽऽप्तेरादिमत्त्वाद् वाऽऽप्नोति ह वै सर्वान् कामानादिश्च भवति य एवं वेद ॥ ९ ॥",
+      "transliteration": "jāgarita-sthāno vaiśvānaro'kāraḥ prathamā mātrā''pter-ādimattvād vā''pnoti ha vai sarvān kāmān-ādiśca bhavati ya evaṃ veda || 9 ||",
+      "translation": "Vaishvanara, whose sphere is the waking state, is the first letter 'A', from its all-pervasiveness or from being first. One who knows this verily obtains all desires and becomes foremost.",
+      "meaning": "The phoneme 'A' embodies the waking world and pervasive initial articulation of speech, grounding cosmic manifestation.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya (Advaita Vedānta)] 'A' is the primordial sound present in all speech, just as Vaishvanara pervades the entire gross physical creation.",
+          "hi": "[आदि शंकराचार्य (अद्वैत वेदान्त)] 'अ'कार प्रथम मात्रा है जो सर्वव्यापक है, जैसे वैश्वानर स्थूल सृष्टि में व्याप्त है।",
+          "mr": "[आद्य शंकराचार्य (अद्वैत वेदान्त)] 'अ'कार हा आदिध्वनी असून जाग्रत अवस्थेतील वैश्वानराशी तादात्म्य पावतो."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] The letter 'A' opens speech and breath, initiating life and sensory awareness.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] 'अ'कार वाणी और सृष्टि का आदि उद्गम है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] 'अ'कार हा वाणी आणि सृष्टीचा पहिला उद्गार आहे."
+        }
+      }
+    },
+    {
+      "chapter": 1,
+      "verse": 10,
+      "original": "स्वप्नस्थानस्तैजस उकारो द्वितीया मात्रोत्कर्षादुभयत्त्वाद् वोत्कर्षति ह वै ज्ञानसन्ततिं समानश्च भवति नास्याब्रह्मवित् कुले भवति य एवं वेद ॥ १० ॥",
+      "transliteration": "svapna-sthānas taijasa ukāro dvitīyā mātrotkarṣād-ubhayattvād votkarṣati ha vai jñāna-santatiṃ samānaśca bhavati nāsyābrahmavit kule bhavati ya evaṃ veda || 10 ||",
+      "translation": "Taijasa, whose sphere is the dream state, is the second letter 'U', from its elevated state or from being intermediate. One who knows this enhances the continuity of knowledge, becomes impartial, and none in their lineage is ignorant of Brahman.",
+      "meaning": "The intermediate phoneme 'U' symbolizes subtle illumination and cognitive mediation between gross awareness and unmanifest potential.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya (Advaita Vedānta)] 'U' is elevated and intermediary between A and M, just as Taijasa is intermediate between waking and deep sleep.",
+          "hi": "[आदि शंकराचार्य (अद्वैत वेदान्त)] 'उ'कार मध्यवर्ती मात्रा है जो सूक्ष्म तेज और ज्ञान की वृद्धि करती है।",
+          "mr": "[आद्य शंकराचार्य (अद्वैत वेदान्त)] 'उ'कार ही सूक्ष्म आणि ज्ञानयुक्त अवस्था दर्शवणारी मध्यवर्ती मात्रा आहे."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] The letter 'U' elevates the awareness from gross physical perception into introspective discernment.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] 'उ'कार चेतना को स्थूल से सूक्ष्म की ओर ले जाता है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] 'उ'कार चेतनेला अंतर्मुख करून सूक्ष्म सत्याचा बोध देतो."
+        }
+      }
+    },
+    {
+      "chapter": 1,
+      "verse": 11,
+      "original": "सुषुप्तस्थानः प्राज्ञो मकारस्तृतीया मात्रा मितेरपीतेर्वा मिनोति ह वा इदं सर्वमपीतिश्च भवति य एवं वेद ॥ ११ ॥",
+      "transliteration": "suṣupta-sthānaḥ prājño makāras tṛtīyā mātrā miter-apīter-vā minoti ha vā idaṃ sarvam-apītiśca bhavati ya evaṃ veda || 11 ||",
+      "translation": "Prajna, whose sphere is deep sleep, is the third letter 'M', from measuring or from dissolving. One who knows this measures all this universe and becomes the place of its dissolution.",
+      "meaning": "The resonant phoneme 'M' represents absorption, containment, and measuring where sensory manifestations resolve into silent potential.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya (Advaita Vedānta)] 'M' is the closing resonant consonant wherein speech is measured and absorbed, corresponding to Prajna in whom all duality resolves.",
+          "hi": "[आदि शंकराचार्य (अद्वैत वेदान्त)] 'म्'कार प्रलय और संहार का सूचक है जहाँ समस्त प्रपञ्च लीन हो जाता है।",
+          "mr": "[आद्य शंकराचार्य (अद्वैत वेदान्त)] 'म'कार हा लय आणि समाप्तीचा बोध करून देणारा ध्वनी असून सुषुप्तीचा वाचक आहे."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] The nasal 'M' closes the articulatory channel, directing the mind inward toward the threshold of silence.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] 'म्'कार बाहरी वाणी को समाप्त कर आन्तरिक मौन की ओर प्रेरित करता है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] 'म'कार वाणीचा उपशम करून मनाला मौनाकडे वळवतो."
+        }
+      }
+    },
+    {
+      "chapter": 1,
+      "verse": 12,
+      "original": "अमात्रश्चतुर्थोऽव्यवहार्यः प्रपञ्चोपशमः शिवोऽद्वैत एवमोङ्कार आत्मैव संविशत्यात्मनाऽऽत्मानं य एवं वेद ॥ १२ ॥",
+      "transliteration": "amātraś-caturtho'vyavahāryaḥ prapañcopaśamaḥ śivo'dvaita evam-oṅkāra ātmaiva saṃviśaty-ātmanā''tmānaṃ ya evaṃ veda || 12 ||",
+      "translation": "That which has no parts (Amatra) is the fourth: incomprehensible, cessation of all multiplicity, auspicious, non-dual. Thus OM is verily the Self. One who knows this enters the Self by means of the Self.",
+      "meaning": "The sacred silence following OM is the partless, unconditioned Turiya wherein consciousness recognizes its eternal non-dual nature.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya (Advaita Vedānta)] The Amatra (partless soundless aspect of OM) is the ultimate reality itself. The knower of this enters the Self directly, never to return to the illusion of Samsara.",
+          "hi": "[आदि शंकराचार्य (अद्वैत वेदान्त)] अमात्र ॐकार ही परब्रह्म है। जो इसे जानता है वह आत्मा द्वारा आत्मा में ही प्रविष्ट होकर मुक्त हो जाता है।",
+          "mr": "[आद्य शंकराचार्य (अद्वैत वेदान्त)] अमात्र ॐकार म्हणजे निःशब्द कैवल्य. जो हे जाणतो तो स्वतःच परमात्म्यात विलीन होतो."
+        },
+        "universal-synthesis": {
+          "en": "[Universal Vedic Synthesis] The silence after chanting OM is the eternal witness (Turiya) — pristine, uncreated, and universally available to every seeker.",
+          "hi": "[सार्वभौमिक वैदिक समन्वय] ॐकार के पश्चात का मौन ही परम शांति और मोक्ष का साक्षात्कार है।",
+          "mr": "[सार्वभौम वैदिक समन्वय] ॐकारानंतरचा शांत निनाद हाच आत्म्याचा मूळ स्वभाव आणि मुक्तीचा अनुभव आहे."
+        }
+      }
+    }
+  ]
+}

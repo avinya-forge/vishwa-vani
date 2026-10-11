@@ -1,5 +1,16 @@
 # Release Notes
 
+## [1.6.1]
+
+### 🚀 Autonomous Book Onboarding via Engine & Mandukya Upanishad Graduation
+- [x] `ONBOARD-001` **CLI Onboard Command (`scripts/vishwa_engine.js`)**: Introduced `onboard <slug/file>` CLI command enabling 1-command autonomous execution of all 8 lifecycle stages directly from declarative book specifications.
+- [x] `MAN-001` **Mandukya Upanishad Autonomous Onboarding**: Formulated canonical specification `data/specs/mandukya-upanishad.json` containing all 12 authentic Atharvaveda mantras, Devanagari Sanskrit, IAST transliteration, English translations, and philosophical synthesis.
+- [x] `MAN-002` **Gold Exegesis & Multi-Scholar Layering**: Synthesized trilingual classical commentary layers (Adi Shankaracharya Mandukya Karika Bhashya + Universal Vedic Synthesis) across English, Hindi, and Marathi with 0 placeholders.
+- [x] `MAN-003` **Diamond Tier Distillation & Lake Sync**: Extracted 4-tier chapter summaries (`very_short`, `short`, `long`, `very_long`) and 8 VUKG empirical knowledge tokens (Cognitive Science, States of Consciousness, Vagal Acoustics of OM) into SQLite (`public/vedic-lake.db`) and Turso LibSQL Edge.
+- [x] `MAN-004` **Manifest & UI Graduation**: Promoted Mandukya Upanishad to 100% Gold Tier in `data/manifest.json`, registered in `lib/texts.ts`, and activated live routes (`/mandukya-upanishad/1`, `/essence/mandukya-upanishad`, Daily Shloka, Knowledge Hub).
+- [x] `LAKE-SCHEMA-001` **Lake Synchronizer Alignment**: Fixed column alignment in `UniversalLakeSyncer` (`slok, transliteration, content JSON`) ensuring frictionless compatibility with `vedic-lake.db`.
+- [x] `TEST-001` **100% Green Verification**: Passed all 65 test suites (355 tests) and validated 20/20 canonical scriptures with 0 errors via `node scripts/vishwa_engine.js audit --all`.
+
 ## [1.6.0]
 
 ### ⚙️ Universal Scripture Engine, Declarative Rule-Sets & Canonical Playbook

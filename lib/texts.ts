@@ -202,6 +202,33 @@ export const VEDIC_LIBRARY: VedicText[] = [
     chapterNamesMr: { '1': 'केनोपनिषद् — पूर्ण पाठ' },
   },
   {
+    slug: 'mandukya-upanishad',
+    dataPrefix: 'mandukya-upanishad',
+    name: 'Mandukya Upanishad',
+    nameHi: 'माण्डूक्योपनिषद्',
+    nameMr: 'माण्डूक्योपनिषद्',
+    nameDevanagari: 'माण्डूक्योपनिषद्',
+    totalChapters: 1,
+    description: 'The quintessential Atharvaveda Upanishad expounding the four states of consciousness (waking, dream, deep sleep, and non-dual Turiya) and the sacred syllable OM (A-U-M).',
+    category: 'upanishad',
+    available: true,
+    storage: 'json',
+    lakeFile: 'vedic-lake.db',
+    chapterNames: { '1': 'Māṇḍūkya Upanishad — Complete Text (12 Mantras)' },
+    chapterNamesHi: { '1': 'माण्डूक्योपनिषद् — पूर्ण पाठ (12 मन्त्र)' },
+    chapterNamesMr: { '1': 'माण्डूक्योपनिषद् — संपूर्ण पाठ (12 मंत्र)' },
+    contextualInfo: {
+      speaker: 'Sage Manduka / Atharvaveda Seers',
+      listener: 'Seekers of Ultimate Truth',
+      lineage: 'Advaita Vedānta & Upanishadic Darshana',
+      historicalEra: 'Classical Upanishadic Era',
+      keyThemes: ['Ayam Atma Brahma', 'Four States of Consciousness', 'Turiya', 'Pranava OM'],
+      availableEditions: ['Adi Shankaracharya Mandukya Karika Bhashya', 'Universal Synthesis'],
+    },
+    hasPreface: true,
+    hasPostface: true,
+  },
+  {
     slug: 'yoga-sutras',
     dataPrefix: 'yoga-sutras',
     name: 'Yoga Sutras of Patanjali',
@@ -1005,6 +1032,7 @@ export const COMPLETED_BOOKS_SLUGS = [
   'yajurveda',
   'dasbodh',
   'skanda-purana',
+  'mandukya-upanishad',
 ] as const;
 
 export type CompletedBookSlug = (typeof COMPLETED_BOOKS_SLUGS)[number];
@@ -1030,6 +1058,7 @@ export const COMPLETED_BOOK_STATS: Record<CompletedBookSlug, { verses: number; c
   'yajurveda': { verses: 40, chapters: 40 },
   'dasbodh': { verses: 20, chapters: 20 },
   'skanda-purana': { verses: 7, chapters: 7 },
+  'mandukya-upanishad': { verses: 12, chapters: 1 },
 };
 
 /** Ingestion pipeline books metadata (All 19 Canonical Books Graduated to Gold) */
@@ -1065,6 +1094,7 @@ export const BOOK_EFFORT_ESTIMATES: Record<string, BookEffortEstimate> = {
   'yajurveda': { verses: 40, chapters: 40, tier: 'gold', size: 'M', storyPoints: 20, scholars: ['Mahidhara', 'Uvvata', 'Swami Dayananda'] },
   'dasbodh': { verses: 20, chapters: 20, tier: 'gold', size: 'L', storyPoints: 35, scholars: ['Samarth Ramdas Swami', 'Warkari Lineage'] },
   'skanda-purana': { verses: 7, chapters: 7, tier: 'gold', size: 'XXL', storyPoints: 100, scholars: ['Dr. G.V. Tagare', 'Kashi Scholarly Tradition', 'Veda Vyasa'] },
+  'mandukya-upanishad': { verses: 12, chapters: 1, tier: 'gold', size: 'XS', storyPoints: 5, scholars: ['Adi Shankara', 'Universal Synthesis'] },
 };
 
 /** Map of scripture slugs to their audited readiness scores (%) */
@@ -1088,6 +1118,7 @@ export const SCRIPTURE_READINESS_SCORES: Record<string, number> = {
   'yajurveda': 100.0,
   'dasbodh': 100.0,
   'skanda-purana': 100.0,
+  'mandukya-upanishad': 100.0,
 };
 
 /** Check if strict demo gating is enabled */

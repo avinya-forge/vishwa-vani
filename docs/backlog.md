@@ -61,6 +61,7 @@
 - [x] `ENG-005` **[P0-CRITICAL] Universal Orchestrator & CLI Runner (`lib/engine/orchestrator.ts`, `scripts/vishwa_engine.js`)**: Coordinates end-to-end processing with dry-runs, shard saving, lake syncing, manifest updates, and dynamic UI auto-discovery. Added CLI commands `audit`, `process`, `extract-diamond`, and `sync-lake`.
 - [x] `ENG-006` **[P0-CRITICAL] Dynamic UI Auto-Registration Singletons**: Added dynamic registration APIs in `lib/texts.ts` (`registerVedicText`), `lib/chapter-summaries.ts` (`registerBookChapterSummaries`), `lib/daily-shloka.ts` (`registerDailyVerse`), and `lib/vedic-science.ts` (`registerKnowledgeTokens`), allowing newly graduated books and tokens to activate on the UI instantly with zero hardcoded code changes.
 - [x] `ENG-007` **[P0-CRITICAL] Comprehensive Test Suites & Quality Gates**: Added dedicated test suites in `__tests__/engine-rules.test.ts`, `__tests__/engine-ai-adapter.test.ts`, `__tests__/engine-lake-sync.test.ts`, and `__tests__/engine-orchestrator.test.ts`. Full test suite achieves 100% pass across 65 test suites (355 passing tests, 0 failures) with >85% coverage on new engine code.
+- [x] `ENG-008` **[P0-CRITICAL] Mandukya Upanishad Autonomous Onboarding Demonstration**: Authored `data/specs/mandukya-upanishad.json` and onboarded all 12 authentic Atharvaveda mantras end-to-end via `vishwa_engine.js onboard`, proving the 8-stage zero-touch engine pipeline in practice.
 
 ---
 

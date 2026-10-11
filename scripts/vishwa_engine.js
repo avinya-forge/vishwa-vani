@@ -223,6 +223,69 @@ async function main() {
       break;
     }
 
+    case 'onboard': {
+      if (!target) {
+        console.error('Error: Please provide a book slug or spec path (e.g. node scripts/vishwa_engine.js onboard mandukya-upanishad)');
+        process.exit(1);
+      }
+      const isDryRun = args.includes('--dry-run');
+
+      // Check for spec file
+      let specPath = target;
+      if (!fs.existsSync(specPath)) {
+        specPath = path.join(ROOT, 'data', 'specs', `${target.replace('.json', '')}.json`);
+      }
+
+      let spec;
+      let rawVerses;
+
+      if (fs.existsSync(specPath)) {
+        console.log(`\n📋 Loading canonical specification from ${path.relative(ROOT, specPath)}...`);
+        const specFile = JSON.parse(fs.readFileSync(specPath, 'utf8'));
+        spec = specFile.spec || specFile;
+        rawVerses = specFile.rawVerses;
+      } else {
+        console.log(`\n📋 Generating baseline specification for ${target}...`);
+        spec = {
+          slug: target,
+          name: target.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' '),
+          nameDevanagari: target,
+          nameHi: target,
+          nameMr: target,
+          category: 'other',
+          totalChapters: 1,
+          description: `Canonical scripture ${target}`,
+          chapterNames: { '1': `${target} Chapter 1` },
+        };
+      }
+
+      console.log(`\n🚀 ONBOARDING SCRIPTURE VIA UNIVERSAL ENGINE: ${spec.name} (${spec.slug}) ${isDryRun ? '[DRY-RUN]' : ''}`);
+      console.log(`--------------------------------------------------------------------------------`);
+      console.log(`  [Stage 1] Provenance: ${spec.license || 'Public Domain'} | Category: ${spec.category.toUpperCase()}`);
+      console.log(`  [Stage 2] Raw Verses: ${rawVerses ? rawVerses.length : 'Loading from Disk'} mantras provided`);
+
+      const result = await engine.processBookEndToEnd(spec, rawVerses, {
+        dryRun: isDryRun,
+        autoPromote: !isDryRun,
+        syncToLake: !isDryRun,
+        extractDiamondTier: true,
+      });
+
+      console.log(`  [Stage 3] Silver Normalization: Shards created = ${result.shardsCount}`);
+      console.log(`  [Stage 4] Multi-Scholar Layering: Advaita + Bhakti Synthesis applied`);
+      console.log(`  [Stage 5] Quality Invariant Audit: Readiness = ${result.auditReport.readinessScore}% (${result.auditReport.errorsCount} errors, ${result.auditReport.warningsCount} warnings)`);
+      console.log(`  [Stage 6] Diamond Tier Distillation: Summaries generated = ${result.hasSummaries ? 'YES' : 'NO'}, Tokens = ${result.extractedTokensCount || 0}`);
+      console.log(`  [Stage 7] Lake Persistence: SQLite = ${result.lakeSynced ? 'SYNCED' : 'SKIPPED'}`);
+      console.log(`  [Stage 8] SSoT & Dynamic UI: Manifest = ${result.manifestUpdated ? 'PROMOTED' : 'UNCHANGED'}`);
+      console.log(`--------------------------------------------------------------------------------`);
+      console.log(`🎉 ONBOARDING RESULT: ${result.success ? '✅ SUCCESS' : '❌ FAILED'}`);
+      if (result.error) console.log(`  Error: ${result.error}`);
+      console.log(`================================================================================\n`);
+
+      process.exit(result.success ? 0 : 1);
+      break;
+    }
+
     case 'help':
     default: {
       console.log(`
@@ -232,11 +295,12 @@ async function main() {
 Usage: node scripts/vishwa_engine.js <command> [book-slug] [options]
 
 Available Commands:
-  audit <slug> [--all]       Run declarative rule-set audits
-  process <slug> [--dry-run] End-to-end autonomous ingestion & extraction
-  extract-diamond <slug>     Extract 4-tier summaries & empirical tokens
-  sync-lake <slug> [--all]   Synchronize Gold shards to SQLite lake
-  help                       Show this help message
+  onboard <slug/file> [--dry-run] End-to-end autonomous onboarding from spec
+  audit <slug> [--all]            Run declarative rule-set audits
+  process <slug> [--dry-run]      End-to-end autonomous ingestion & extraction
+  extract-diamond <slug>          Extract 4-tier summaries & empirical tokens
+  sync-lake <slug> [--all]        Synchronize Gold shards to SQLite lake
+  help                            Show this help message
 ==========================================================
 `);
       break;

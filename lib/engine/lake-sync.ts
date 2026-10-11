@@ -53,7 +53,9 @@ export class UniversalLakeSyncer {
         text_slug TEXT NOT NULL,
         chapter INTEGER NOT NULL,
         verse INTEGER NOT NULL,
-        data JSON NOT NULL,
+        slok TEXT,
+        transliteration TEXT,
+        content JSON NOT NULL,
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
       );
       CREATE INDEX IF NOT EXISTS idx_text_chapter ON verses(text_slug, chapter);
@@ -123,8 +125,8 @@ export class UniversalLakeSyncer {
     let summariesSynced = 0;
 
     const insertVerse = db.prepare(`
-      INSERT OR REPLACE INTO verses (id, text_slug, chapter, verse, data)
-      VALUES (?, ?, ?, ?, ?)
+      INSERT OR REPLACE INTO verses (id, text_slug, chapter, verse, slok, transliteration, content)
+      VALUES (?, ?, ?, ?, ?, ?, ?)
     `);
 
     const insertToken = db.prepare(`
@@ -150,6 +152,8 @@ export class UniversalLakeSyncer {
             bookSlug,
             shard.chapter,
             verse.verse,
+            verse.original,
+            verse.transliteration,
             JSON.stringify(verse)
           );
           versesSynced++;

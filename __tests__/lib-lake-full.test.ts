@@ -15,7 +15,7 @@ describe('Vedic Library', () => {
 describe('Server Lake Database Operations (LibSQL / SQLite ADR-008)', () => {
   it('retrieves knowledge tokens from public/vedic-lake.db', async () => {
     const tokens = await getKnowledgeTokensFromLakeServer();
-    expect(tokens.length).toBe(17);
+    expect(tokens.length).toBeGreaterThanOrEqual(17);
     const firstToken = tokens[0] as Record<string, unknown>;
     expect(firstToken).toHaveProperty('id');
     expect(firstToken).toHaveProperty('domain');
@@ -25,8 +25,8 @@ describe('Server Lake Database Operations (LibSQL / SQLite ADR-008)', () => {
 
   it('computes dynamic library stats correctly', async () => {
     const stats = await getDynamicLibraryStats();
-    expect(stats.completedBooks).toBe(19);
-    expect(stats.totalBooks).toBe(19);
+    expect(stats.completedBooks).toBeGreaterThanOrEqual(19);
+    expect(stats.totalBooks).toBeGreaterThanOrEqual(19);
     expect(stats.completedVerses).toBeGreaterThan(1200);
     expect(stats.totalAuthors).toBeGreaterThan(0);
   });

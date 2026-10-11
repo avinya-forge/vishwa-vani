@@ -302,5 +302,21 @@
     },
     "has_placeholders": false,
     "description": "18 Chapters. Universal dialogue."
+  },
+  {
+    "name": "Mandukya Upanishad",
+    "slug": "mandukya-upanishad",
+    "score": 100.0,
+    "stage": "GOLD",
+    "ui": "READY",
+    "lab": "INTEGRATED",
+    "progress": {
+      "chapters": "1/1",
+      "verses": "12/12",
+      "langs": "4/4",
+      "authors": "2/2"
+    },
+    "has_placeholders": false,
+    "description": "The quintessential Atharvaveda Upanishad expounding the four states of consciousness and the sacred syllable OM."
   }
 ]

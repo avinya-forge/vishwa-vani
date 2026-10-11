@@ -1278,7 +1278,14 @@
       "total_verses": 2,
       "completeness_score": 100,
       "status": "GOLD",
-      "last_promoted": "2026-10-11"
+      "last_promoted": "2026-10-11",
+      "chapters": [
+        {
+          "number": 1,
+          "file": "mandukya-upanishad-chapter-1.json",
+          "verse_count": 2
+        }
+      ]
     }
   ]
 }

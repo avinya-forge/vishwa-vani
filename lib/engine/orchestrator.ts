@@ -333,6 +333,11 @@ export class VishwaVaniEngine {
           sa: spec.nameDevanagari || spec.name,
         },
         total_chapters: shards.length,
+        chapters: shards.map(s => ({
+          number: s.chapter,
+          file: `${spec.slug}-chapter-${s.chapter}.json`,
+          verse_count: s.verses.length,
+        })),
         total_verses: totalVerses,
         completeness_score: 100,
         status: 'GOLD',
