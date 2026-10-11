@@ -3,6 +3,7 @@
 ## [1.3.9]
 
 ### 📜 Book Ingestions & Scaling
+- [x] `SEC-OWASP-004` **[P2-MEDIUM] Production CSP Hardening & Removal of `'unsafe-eval'` (A05)**: Refactor client-side utilities to eliminate runtime evaluation and remove `'unsafe-eval'` from production Content Security Policy in `next.config.ts`.
 - [x] `MBH-ACQ-001` [Bronze Ingest] Ingest KMG English Bronze for Parvas 1–18 (Adi through Svargarohana) from Sacred-Texts archive [15 pts].
 - [x] `MBH-PARSE-001` [Silver Parser] Build streaming readline parser for Nilakantha Sanskrit Vulgate OCR text to eliminate Node heap OOM [20 pts].
 - [x] `MBH-LAYER-001` [Gold Alignment] Create BORI Critical Edition Adhyaya-to-KMG section concordance mapping table for all 18 Parvas [25 pts].
