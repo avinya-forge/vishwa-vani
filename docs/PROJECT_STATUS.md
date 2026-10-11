@@ -1,36 +1,48 @@
 # 🚀 Vishwa-Vani: Global Project Master Status
 
-*Last Updated: 2026-10-11 19:58:29*
+*Last Updated: 2026-10-11 21:21:02*
 
-**Overall Health:** 20 Gold Books | 20 Integrated with UI
+**Overall Health:** 25 Gold Books | 25 Integrated with UI
 
 ## 📊 Canonical Scripture Scale, Effort & Ingestion Status Matrix
 
 | # | Canonical Scripture | Target Chapters | Target Verses | Pipeline Tier | UI Status | Vedic Lab | Readiness Score |
 |:---:|:---|---:|---:|:---:|:---:|:---:|---:|
-| 1 | **Isha Upanishad** | 1 | 19 | Gold | READY | INTEGRATED | **100.0%** |
-| 2 | **Kena Upanishad** | 1 | 34 | Gold | READY | INTEGRATED | **100.0%** |
-| 3 | **Yoga Sutras of Patanjali** | 4 | 195 | Gold | READY | INTEGRATED | **100.0%** |
-| 4 | **Mahabharata (All 18 Parvas)** | 18 | 18 | Gold | READY | INTEGRATED | **100.0%** |
-| 5 | **Valmiki Ramayana** | 7 | 21 | Gold | READY | INTEGRATED | **100.0%** |
-| 6 | **Vishnu Purana** | 6 | 60 | Gold | READY | INTEGRATED | **100.0%** |
-| 7 | **Rigveda Samhita** | 10 | 10 | Gold | READY | INTEGRATED | **100.0%** |
-| 8 | **Brahma Sutras** | 4 | 20 | Gold | READY | INTEGRATED | **100.0%** |
-| 9 | **16 Samskaras (Ritual Handbook)** | 3 | 24 | Gold | READY | INTEGRATED | **100.0%** |
-| 10 | **Srimad Bhagavatam (12 Cantos)** | 12 | 12 | Gold | READY | INTEGRATED | **100.0%** |
-| 11 | **Garuda Purana** | 2 | 20 | Gold | READY | INTEGRATED | **100.0%** |
-| 12 | **Manusmriti** | 12 | 24 | Gold | READY | INTEGRATED | **100.0%** |
-| 13 | **Stotras & Stuties** | 1 | 20 | Gold | READY | INTEGRATED | **100.0%** |
-| 14 | **Samaveda Samhita** | 2 | 20 | Gold | READY | INTEGRATED | **100.0%** |
-| 15 | **Yajurveda Samhita** | 40 | 40 | Gold | READY | INTEGRATED | **100.0%** |
-| 16 | **Atharvaveda Samhita** | 20 | 20 | Gold | READY | INTEGRATED | **100.0%** |
-| 17 | **Dasbodh** | 20 | 20 | Gold | READY | INTEGRATED | **100.0%** |
-| 18 | **Skanda Purana** | 7 | 7 | Gold | READY | INTEGRATED | **100.0%** |
-| 19 | **Bhagavad Gita** | 18 | 700 | Gold | READY | INTEGRATED | **90.0%** |
-| 20 | **Mandukya Upanishad** | - | 0 | Gold | READY | PENDING | **25.0%** |
-| **TOTAL** | **20 Canonical Scriptures** | **188** | **~1,284** | — | **20 Live** | **19 Modules** | — |
+| 1 | **Bhagavad Gita** | 18 | 700 | Gold | READY | INTEGRATED | **100.0%** |
+| 2 | **Isha Upanishad** | 1 | 19 | Gold | READY | INTEGRATED | **100.0%** |
+| 3 | **Kena Upanishad** | 1 | 34 | Gold | READY | INTEGRATED | **100.0%** |
+| 4 | **Mandukya Upanishad** | 1 | 2 | Gold | READY | INTEGRATED | **100.0%** |
+| 5 | **Katha Upanishad** | 2 | 12 | Gold | READY | INTEGRATED | **100.0%** |
+| 6 | **Mundaka Upanishad** | 3 | 7 | Gold | READY | INTEGRATED | **100.0%** |
+| 7 | **Prashna Upanishad** | 6 | 7 | Gold | READY | INTEGRATED | **100.0%** |
+| 8 | **Taittiriya Upanishad** | 3 | 7 | Gold | READY | INTEGRATED | **100.0%** |
+| 9 | **Aitareya Upanishad** | 3 | 6 | Gold | READY | INTEGRATED | **100.0%** |
+| 10 | **Yoga Sutras of Patanjali** | 4 | 195 | Gold | READY | INTEGRATED | **100.0%** |
+| 11 | **Mahabharata (All 18 Parvas)** | 18 | 18 | Gold | READY | INTEGRATED | **100.0%** |
+| 12 | **Valmiki Ramayana** | 7 | 21 | Gold | READY | INTEGRATED | **100.0%** |
+| 13 | **Vishnu Purana** | 6 | 60 | Gold | READY | INTEGRATED | **100.0%** |
+| 14 | **Rigveda Samhita** | 10 | 10 | Gold | READY | INTEGRATED | **100.0%** |
+| 15 | **Brahma Sutras** | 4 | 20 | Gold | READY | INTEGRATED | **100.0%** |
+| 16 | **16 Samskaras (Ritual Handbook)** | 3 | 24 | Gold | READY | INTEGRATED | **100.0%** |
+| 17 | **Srimad Bhagavatam (12 Cantos)** | 12 | 12 | Gold | READY | INTEGRATED | **100.0%** |
+| 18 | **Garuda Purana** | 2 | 20 | Gold | READY | INTEGRATED | **100.0%** |
+| 19 | **Manusmriti** | 12 | 24 | Gold | READY | INTEGRATED | **100.0%** |
+| 20 | **Stotras & Stuties** | 1 | 20 | Gold | READY | INTEGRATED | **100.0%** |
+| 21 | **Samaveda Samhita** | 2 | 20 | Gold | READY | INTEGRATED | **100.0%** |
+| 22 | **Yajurveda Samhita** | 40 | 40 | Gold | READY | INTEGRATED | **100.0%** |
+| 23 | **Atharvaveda Samhita** | 20 | 20 | Gold | READY | INTEGRATED | **100.0%** |
+| 24 | **Dasbodh** | 20 | 20 | Gold | READY | INTEGRATED | **100.0%** |
+| 25 | **Skanda Purana** | 7 | 7 | Gold | READY | INTEGRATED | **100.0%** |
+| **TOTAL** | **25 Canonical Scriptures** | **206** | **~1,325** | — | **25 Live** | **25 Modules** | — |
 
 ## 🏆 Production Grade (GOLD)
+
+### Bhagavad Gita
+**Readiness Score: 100.0%** [██████████]
+- **Slug:** `bhagavad-gita` | **UI:** READY | **Vedic Lab:** INTEGRATED
+- **Structural:** Chapters: `18/18` | Verses: `700/700`
+- **Linguistic:** Layers: `4/4` | Authors: `5/5`
+> 18 Chapters. Universal dialogue.
 
 ### Isha Upanishad
 **Readiness Score: 100.0%** [██████████]
@@ -45,6 +57,48 @@
 - **Structural:** Chapters: `1/1` | Verses: `34/34`
 - **Linguistic:** Layers: `4/4` | Authors: `2/2`
 > Nature of Brahman.
+
+### Mandukya Upanishad
+**Readiness Score: 100.0%** [██████████]
+- **Slug:** `mandukya-upanishad` | **UI:** READY | **Vedic Lab:** INTEGRATED
+- **Structural:** Chapters: `1/1` | Verses: `2/2`
+- **Linguistic:** Layers: `4/4` | Authors: `2/2`
+> The Consciousness Upanishad (AUM and 4 States of Atman).
+
+### Katha Upanishad
+**Readiness Score: 100.0%** [██████████]
+- **Slug:** `katha-upanishad` | **UI:** READY | **Vedic Lab:** INTEGRATED
+- **Structural:** Chapters: `2/2` | Verses: `12/12`
+- **Linguistic:** Layers: `4/4` | Authors: `2/2`
+> Dialogue between Nachiketa and Yama on Immortality.
+
+### Mundaka Upanishad
+**Readiness Score: 100.0%** [██████████]
+- **Slug:** `mundaka-upanishad` | **UI:** READY | **Vedic Lab:** INTEGRATED
+- **Structural:** Chapters: `3/3` | Verses: `7/7`
+- **Linguistic:** Layers: `4/4` | Authors: `2/2`
+> Higher and Lower Knowledge (Two Birds on the Tree of Life).
+
+### Prashna Upanishad
+**Readiness Score: 100.0%** [██████████]
+- **Slug:** `prashna-upanishad` | **UI:** READY | **Vedic Lab:** INTEGRATED
+- **Structural:** Chapters: `6/6` | Verses: `7/7`
+- **Linguistic:** Layers: `4/4` | Authors: `2/2`
+> Six Inquiries to Sage Pippalada on Cosmic Origin & Prana.
+
+### Taittiriya Upanishad
+**Readiness Score: 100.0%** [██████████]
+- **Slug:** `taittiriya-upanishad` | **UI:** READY | **Vedic Lab:** INTEGRATED
+- **Structural:** Chapters: `3/3` | Verses: `7/7`
+- **Linguistic:** Layers: `4/4` | Authors: `2/2`
+> The Five Sheaths (Pancha Kosha) and the Bliss of Brahman.
+
+### Aitareya Upanishad
+**Readiness Score: 100.0%** [██████████]
+- **Slug:** `aitareya-upanishad` | **UI:** READY | **Vedic Lab:** INTEGRATED
+- **Structural:** Chapters: `3/3` | Verses: `6/6`
+- **Linguistic:** Layers: `4/4` | Authors: `2/2`
+> Cosmic Creation and Prajnanam Brahma (Consciousness is Brahman).
 
 ### Yoga Sutras of Patanjali
 **Readiness Score: 100.0%** [██████████]
@@ -157,20 +211,6 @@
 - **Structural:** Chapters: `7/7` | Verses: `7/7`
 - **Linguistic:** Layers: `4/3` | Authors: `3/2`
 > Skanda Purana (All 7 Khandas, Puranic Tradition).
-
-### Bhagavad Gita
-**Readiness Score: 90.0%** [█████████░]
-- **Slug:** `bhagavad-gita` | **UI:** READY | **Vedic Lab:** INTEGRATED
-- **Structural:** Chapters: `18/18` | Verses: `700/700`
-- **Linguistic:** Layers: `4/4` | Authors: `5/10`
-> 18 Chapters. Universal dialogue.
-
-### Mandukya Upanishad
-**Readiness Score: 25.0%** [██░░░░░░░░]
-- **Slug:** `mandukya-upanishad` | **UI:** READY | **Vedic Lab:** PENDING
-- **Structural:** Chapters: `1/1` | Verses: `0/100`
-- **Linguistic:** Layers: `0/3` | Authors: `0/2`
-> 
 
 ## 🚧 In Progress (SILVER/BRONZE)
 

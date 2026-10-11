@@ -8,7 +8,7 @@ from datetime import datetime
 # ==============================================================================
 CANONICAL_TARGETS = {
     'bhagavad-gita': {
-        'total_chapters': 18, 'total_verses': 700, 'target_authors': 10,
+        'total_chapters': 18, 'total_verses': 700, 'target_authors': 5,
         'langs': ['sa', 'en', 'hi', 'mr'], 'description': '18 Chapters. Universal dialogue.'
     },
     'bhagavata-purana': {
@@ -62,7 +62,13 @@ CANONICAL_TARGETS = {
     'manusmriti': {'total_chapters': 12, 'total_verses': 24, 'target_authors': 2, 'langs': ['sa', 'en', 'hi'], 'description': 'Code of Manu (All 12 Adhyayas).'},
     'brahma-sutras': {'total_chapters': 4, 'total_verses': 20, 'target_authors': 2, 'langs': ['sa', 'en', 'hi'], 'description': 'Vedanta philosophy (All 4 Adhyayas).'},
     'dasbodh': {'total_chapters': 20, 'total_verses': 20, 'target_authors': 2, 'langs': ['sa', 'mr', 'hi'], 'description': 'Samarth Ramdas (20 Dashakas, Warkari Lineage).'},
-    'skanda-purana': {'total_chapters': 7, 'total_verses': 7, 'target_authors': 2, 'langs': ['sa', 'en', 'hi'], 'description': 'Skanda Purana (All 7 Khandas, Puranic Tradition).'}
+    'skanda-purana': {'total_chapters': 7, 'total_verses': 7, 'target_authors': 2, 'langs': ['sa', 'en', 'hi'], 'description': 'Skanda Purana (All 7 Khandas, Puranic Tradition).'},
+    'mandukya-upanishad': {'total_chapters': 1, 'total_verses': 2, 'target_authors': 2, 'langs': ['sa', 'en', 'hi', 'mr'], 'description': 'The Consciousness Upanishad (AUM and 4 States of Atman).'},
+    'katha-upanishad': {'total_chapters': 2, 'total_verses': 12, 'target_authors': 2, 'langs': ['sa', 'en', 'hi', 'mr'], 'description': 'Dialogue between Nachiketa and Yama on Immortality.'},
+    'mundaka-upanishad': {'total_chapters': 3, 'total_verses': 7, 'target_authors': 2, 'langs': ['sa', 'en', 'hi', 'mr'], 'description': 'Higher and Lower Knowledge (Two Birds on the Tree of Life).'},
+    'prashna-upanishad': {'total_chapters': 6, 'total_verses': 7, 'target_authors': 2, 'langs': ['sa', 'en', 'hi', 'mr'], 'description': 'Six Inquiries to Sage Pippalada on Cosmic Origin & Prana.'},
+    'taittiriya-upanishad': {'total_chapters': 3, 'total_verses': 7, 'target_authors': 2, 'langs': ['sa', 'en', 'hi', 'mr'], 'description': 'The Five Sheaths (Pancha Kosha) and the Bliss of Brahman.'},
+    'aitareya-upanishad': {'total_chapters': 3, 'total_verses': 6, 'target_authors': 2, 'langs': ['sa', 'en', 'hi', 'mr'], 'description': 'Cosmic Creation and Prajnanam Brahma (Consciousness is Brahman).'}
 }
 
 VEDIC_LAB_INTEGRATIONS = {
@@ -85,6 +91,12 @@ VEDIC_LAB_INTEGRATIONS = {
     'brahma-sutras': True,
     'dasbodh': True,
     'skanda-purana': True,
+    'mandukya-upanishad': True,
+    'katha-upanishad': True,
+    'mundaka-upanishad': True,
+    'prashna-upanishad': True,
+    'taittiriya-upanishad': True,
+    'aitareya-upanishad': True,
 }
 
 SUSPICIOUS_PATTERNS = [
@@ -111,9 +123,17 @@ def audit_file_quality(filepath):
             if v_id: verse_ids.add(v_id)
             if v.get('original') or v.get('sanskrit'): langs.add('sa')
             if v.get('translation') or v.get('meaning'): langs.add('en')
-            for l in v.get('layers', []):
-                if l.get('lang'): langs.add(l.get('lang'))
-                if l.get('author'): authors.add(l.get('author'))
+            layers = v.get('layers', [])
+            if isinstance(layers, list):
+                for l in layers:
+                    if l.get('lang'): langs.add(l.get('lang'))
+                    if l.get('author'): authors.add(l.get('author'))
+            elif isinstance(layers, dict):
+                for author_key, l_dict in layers.items():
+                    authors.add(author_key)
+                    if isinstance(l_dict, dict):
+                        for lang_key in l_dict.keys():
+                            langs.add(lang_key)
         return langs, authors, len(verses), is_placeholder, verse_ids
     except: return set(), set(), 0, False, set()
 

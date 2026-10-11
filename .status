@@ -1,5 +1,21 @@
 [
   {
+    "name": "Bhagavad Gita",
+    "slug": "bhagavad-gita",
+    "score": 100.0,
+    "stage": "GOLD",
+    "ui": "READY",
+    "lab": "INTEGRATED",
+    "progress": {
+      "chapters": "18/18",
+      "verses": "700/700",
+      "langs": "4/4",
+      "authors": "5/5"
+    },
+    "has_placeholders": false,
+    "description": "18 Chapters. Universal dialogue."
+  },
+  {
     "name": "Isha Upanishad",
     "slug": "isha-upanishad",
     "score": 100.0,
@@ -30,6 +46,102 @@
     },
     "has_placeholders": false,
     "description": "Nature of Brahman."
+  },
+  {
+    "name": "Mandukya Upanishad",
+    "slug": "mandukya-upanishad",
+    "score": 100.0,
+    "stage": "GOLD",
+    "ui": "READY",
+    "lab": "INTEGRATED",
+    "progress": {
+      "chapters": "1/1",
+      "verses": "2/2",
+      "langs": "4/4",
+      "authors": "2/2"
+    },
+    "has_placeholders": false,
+    "description": "The Consciousness Upanishad (AUM and 4 States of Atman)."
+  },
+  {
+    "name": "Katha Upanishad",
+    "slug": "katha-upanishad",
+    "score": 100.0,
+    "stage": "GOLD",
+    "ui": "READY",
+    "lab": "INTEGRATED",
+    "progress": {
+      "chapters": "2/2",
+      "verses": "12/12",
+      "langs": "4/4",
+      "authors": "2/2"
+    },
+    "has_placeholders": false,
+    "description": "Dialogue between Nachiketa and Yama on Immortality."
+  },
+  {
+    "name": "Mundaka Upanishad",
+    "slug": "mundaka-upanishad",
+    "score": 100.0,
+    "stage": "GOLD",
+    "ui": "READY",
+    "lab": "INTEGRATED",
+    "progress": {
+      "chapters": "3/3",
+      "verses": "7/7",
+      "langs": "4/4",
+      "authors": "2/2"
+    },
+    "has_placeholders": false,
+    "description": "Higher and Lower Knowledge (Two Birds on the Tree of Life)."
+  },
+  {
+    "name": "Prashna Upanishad",
+    "slug": "prashna-upanishad",
+    "score": 100.0,
+    "stage": "GOLD",
+    "ui": "READY",
+    "lab": "INTEGRATED",
+    "progress": {
+      "chapters": "6/6",
+      "verses": "7/7",
+      "langs": "4/4",
+      "authors": "2/2"
+    },
+    "has_placeholders": false,
+    "description": "Six Inquiries to Sage Pippalada on Cosmic Origin & Prana."
+  },
+  {
+    "name": "Taittiriya Upanishad",
+    "slug": "taittiriya-upanishad",
+    "score": 100.0,
+    "stage": "GOLD",
+    "ui": "READY",
+    "lab": "INTEGRATED",
+    "progress": {
+      "chapters": "3/3",
+      "verses": "7/7",
+      "langs": "4/4",
+      "authors": "2/2"
+    },
+    "has_placeholders": false,
+    "description": "The Five Sheaths (Pancha Kosha) and the Bliss of Brahman."
+  },
+  {
+    "name": "Aitareya Upanishad",
+    "slug": "aitareya-upanishad",
+    "score": 100.0,
+    "stage": "GOLD",
+    "ui": "READY",
+    "lab": "INTEGRATED",
+    "progress": {
+      "chapters": "3/3",
+      "verses": "6/6",
+      "langs": "4/4",
+      "authors": "2/2"
+    },
+    "has_placeholders": false,
+    "description": "Cosmic Creation and Prajnanam Brahma (Consciousness is Brahman)."
   },
   {
     "name": "Yoga Sutras of Patanjali",
@@ -286,117 +398,5 @@
     },
     "has_placeholders": false,
     "description": "Skanda Purana (All 7 Khandas, Puranic Tradition)."
-  },
-  {
-    "name": "Bhagavad Gita",
-    "slug": "bhagavad-gita",
-    "score": 90.0,
-    "stage": "GOLD",
-    "ui": "READY",
-    "lab": "INTEGRATED",
-    "progress": {
-      "chapters": "18/18",
-      "verses": "700/700",
-      "langs": "4/4",
-      "authors": "5/10"
-    },
-    "has_placeholders": false,
-    "description": "18 Chapters. Universal dialogue."
-  },
-  {
-    "name": "Mandukya Upanishad",
-    "slug": "mandukya-upanishad",
-    "score": 100.0,
-    "stage": "GOLD",
-    "ui": "READY",
-    "lab": "INTEGRATED",
-    "progress": {
-      "chapters": "1/1",
-      "verses": "12/12",
-      "langs": "4/4",
-      "authors": "2/2"
-    },
-    "has_placeholders": false,
-    "description": "The quintessential Atharvaveda Upanishad expounding the four states of consciousness and the sacred syllable OM."
-  },
-  {
-    "name": "Katha Upanishad",
-    "slug": "katha-upanishad",
-    "score": 100.0,
-    "stage": "GOLD",
-    "ui": "READY",
-    "lab": "INTEGRATED",
-    "progress": {
-      "chapters": "2/2",
-      "verses": "12/12",
-      "langs": "4/4",
-      "authors": "2/2"
-    },
-    "has_placeholders": false,
-    "description": "Nachiketa and Yama dialogue on immortality, Shreyas vs Preyas, and the Chariot Allegory of the Self."
-  },
-  {
-    "name": "Mundaka Upanishad",
-    "slug": "mundaka-upanishad",
-    "score": 100.0,
-    "stage": "GOLD",
-    "ui": "READY",
-    "lab": "INTEGRATED",
-    "progress": {
-      "chapters": "3/3",
-      "verses": "7/7",
-      "langs": "4/4",
-      "authors": "2/2"
-    },
-    "has_placeholders": false,
-    "description": "Parā & Aparā Vidyā, Two Birds witness consciousness, Bow of OM, and Satyameva Jayate."
-  },
-  {
-    "name": "Prashna Upanishad",
-    "slug": "prashna-upanishad",
-    "score": 100.0,
-    "stage": "GOLD",
-    "ui": "READY",
-    "lab": "INTEGRATED",
-    "progress": {
-      "chapters": "6/6",
-      "verses": "7/7",
-      "langs": "4/4",
-      "authors": "2/2"
-    },
-    "has_placeholders": false,
-    "description": "Six cosmic inquiries to Sage Pippalada on Prāṇa, dreams, OM meditation, and the 16-fold Puruṣa."
-  },
-  {
-    "name": "Taittiriya Upanishad",
-    "slug": "taittiriya-upanishad",
-    "score": 100.0,
-    "stage": "GOLD",
-    "ui": "READY",
-    "lab": "INTEGRATED",
-    "progress": {
-      "chapters": "3/3",
-      "verses": "7/7",
-      "langs": "4/4",
-      "authors": "2/2"
-    },
-    "has_placeholders": false,
-    "description": "Ethical Convocation Address, Pancha Kosha architecture, and Supreme Calculus of Divine Bliss."
-  },
-  {
-    "name": "Aitareya Upanishad",
-    "slug": "aitareya-upanishad",
-    "score": 100.0,
-    "stage": "GOLD",
-    "ui": "READY",
-    "lab": "INTEGRATED",
-    "progress": {
-      "chapters": "3/3",
-      "verses": "6/6",
-      "langs": "4/4",
-      "authors": "2/2"
-    },
-    "has_placeholders": false,
-    "description": "Rigvedic cosmogony, unified cognition, and the supreme Mahāvākya Prajñānaṃ Brahma."
   }
 ]
