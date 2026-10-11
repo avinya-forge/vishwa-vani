@@ -140,9 +140,21 @@ export async function getDynamicLibraryStats() {
   const completedChapters = Object.values(COMPLETED_BOOK_STATS).reduce((acc, b) => acc + b.chapters, 0);
   const completedBooks = COMPLETED_BOOKS_SLUGS.length;
 
-  const pipelineBooks = Object.keys(PIPELINE_BOOK_STATS).length;
-  const pipelineVerses = Object.values(PIPELINE_BOOK_STATS).reduce((acc, b) => acc + b.verses, 0);
-  const pipelineChapters = Object.values(PIPELINE_BOOK_STATS).reduce((acc, b) => acc + b.chapters, 0);
+  const pipelineEntries = Object.entries(PIPELINE_BOOK_STATS);
+  const silverEntries = pipelineEntries.filter(([, b]) => b.tier === 'silver');
+  const bronzeEntries = pipelineEntries.filter(([, b]) => b.tier === 'bronze');
+
+  const silverBooks = silverEntries.length;
+  const silverChapters = silverEntries.reduce((acc, [, b]) => acc + b.chapters, 0);
+  const silverVerses = silverEntries.reduce((acc, [, b]) => acc + b.verses, 0);
+
+  const bronzeBooks = bronzeEntries.length;
+  const bronzeChapters = bronzeEntries.reduce((acc, [, b]) => acc + b.chapters, 0);
+  const bronzeVerses = bronzeEntries.reduce((acc, [, b]) => acc + b.verses, 0);
+
+  const pipelineBooks = pipelineEntries.length;
+  const pipelineVerses = silverVerses + bronzeVerses;
+  const pipelineChapters = silverChapters + bronzeChapters;
 
   const available = getAvailableTexts();
 
@@ -152,6 +164,12 @@ export async function getDynamicLibraryStats() {
     completedBooks,
     completedChapters,
     completedVerses,
+    silverBooks,
+    silverChapters,
+    silverVerses,
+    bronzeBooks,
+    bronzeChapters,
+    bronzeVerses,
     pipelineBooks,
     pipelineChapters,
     pipelineVerses,

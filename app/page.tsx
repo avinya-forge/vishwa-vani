@@ -138,13 +138,13 @@ export default async function Home() {
       <section id="library" className="max-w-[1200px] mx-auto px-4 sm:px-6 pt-12 pb-24 scroll-mt-20">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 mb-3 px-3 py-1 rounded-full bg-amber-50 border border-amber-200 text-amber-800 text-[10px] font-bold uppercase tracking-[0.2em]">
-            <span>📜</span> Complete Sacred Corpus · १७ संपूर्ण वैदिक ग्रन्थ
+            <span>📜</span> Complete Sacred Corpus · {stats.completedBooks} संपूर्ण वैदिक ग्रन्थ
           </div>
           <h2 className="text-3xl sm:text-5xl font-serif font-black text-stone-900 tracking-tight mb-4">
             The Living Library of Vedic Texts
           </h2>
           <p className="text-stone-600 text-sm sm:text-base leading-relaxed font-serif max-w-2xl mx-auto mb-5">
-            Spanning all 17 canonical scriptures across Veda Saṁhitās, Upaniṣads, Itihāsa, Purāṇas, and Darśana Sūtras. Choose any scripture below to enter the uninterrupted study canvas.
+            Spanning all {stats.completedBooks} canonical scriptures across Veda Saṁhitās, Upaniṣads, Itihāsa, Purāṇas, and Darśana Sūtras. Choose any scripture below to enter the uninterrupted study canvas.
           </p>
           <Link
             href="/library"

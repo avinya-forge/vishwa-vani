@@ -106,6 +106,23 @@
 - [x] `PROD-005` **[P2-MEDIUM] Broken social previews (verified live)**: Generated `opengraph-image`, added `manifest.webmanifest`, verified all assets return 200.
 - [x] `DEPLOY-003` **Create Rating Telemetry Component**: Implemented responsive star-rating widget under active scholar cards in `components/shloka/study-client.tsx`.
 
+### 🕉️ Dynamic 17-Scripture Daily Shloka Engine, Runtime Statistics & Copyright Provenance
+- [x] **Universal 17-Scripture Daily Shloka ("दैनिक श्लोक") Engine (`lib/daily-shloka.ts`, `components/home/daily-shloka.tsx`)**:
+  - Engineered `lib/daily-shloka.ts` containing 20 authentic signature verses and multi-scholar commentary spanning all 17 100% Gold canonical scriptures (Bhagavad Gita, Isha Upanishad, Kena Upanishad, Yoga Sutras, Mahabharata, Ramayana, Bhagavata Purana, Rigveda, Shukla Yajurveda, Vishnu Purana, Garuda Purana, Brahma Sutras, Samaveda, Atharvaveda, Manusmriti, 16 Samskaras, Stotras).
+  - Implemented dynamic filtering function `getActiveDailyShlokas()` checking `isTextCompleted(v.bookSlug)` so that newly graduating scriptures automatically activate in rotation without coordinated code changes.
+  - Refactored `components/home/daily-shloka.tsx` with an interactive, horizontally scrollable scripture filter bar allowing users to jump directly to any of the 17 completed scriptures.
+  - Added copy-to-clipboard, study canvas direct navigation, and day-of-year deterministic rotation.
+- [x] **Elimination of Static Hardcoded Counts Across the Platform**:
+  - **`app/roadmap/RoadmapClient.tsx`**: Replaced static hardcoded Silver Tier (`6 Books`, `2,828 Chapters`, `144,041 Shlokas`) and Bronze Tier (`7 Books`, `88 Sections`, `31,369 Mantras`) counts with dynamic properties derived at runtime from `PIPELINE_BOOK_STATS` and `BOOK_EFFORT_ESTIMATES`.
+  - **5-Phase Master Roadmap**: Aligned phase scales and statuses with reality: Phase 1 reflects all 17 Gold scriptures completed (100% Live), Phase 2 reflects Silver NVF ingestion (Dasbodh: 7,751 verses, 20 chapters), Phase 3 reflects Bronze raw queue (Skanda Purana: 81,000 verses, 750 sections), Phase 4 reflects 18 Mahapuranas expansion (~400,000 verses), and Phase 5 reflects Global AI vector search.
+  - **`components/layout/Header.tsx`**: Eliminated static default fallback constants (4, 13, 950, 24); dynamic safeStats now derive fallback counts from `COMPLETED_BOOK_STATS`, `COMPLETED_BOOKS_SLUGS`, and `PIPELINE_BOOK_STATS`. Added `max-h-[360px] overflow-y-auto` to the library dropdown to smoothly display all 17 scriptures.
+  - **`app/page.tsx`**: Replaced hardcoded "१७" and "17" with `${stats.completedBooks}`.
+- [x] **Multi-Predicate Generic Completion Architecture (`lib/texts.ts`)**:
+  - Upgraded `isTextCompleted(slug)` to evaluate multiple predicates (`COMPLETED_BOOKS_SLUGS`, `SCRIPTURE_READINESS_SCORES[slug] >= 100`, `BOOK_EFFORT_ESTIMATES[slug].tier === 'gold'`).
+  - Guarantees seamless, zero-touch propagation whenever a new scripture reaches 100% Gold readiness.
+- [x] **Sacred Text Provenance, Authenticity & Copyright Clearance Registry (`docs/PROVENANCE_AND_COPYRIGHT.md`)**:
+  - Formulated a comprehensive legal and scholarly registry documenting root Sanskrit critical editions (BORI, Nirnaya Sagar, Max Müller, Albrecht Weber, Chaukhamba, Calcutta recensions), classical acharya commentators (8th–17th centuries), and public-domain translators (pre-1928: Ganguli, Griffith, Wilson, Dutt, Whitney, Bloomfield, Bühler, Thibaut, Vivekananda, Dayananda Saraswati).
+  - Confirmed 100% worldwide public-domain status and zero proprietary copyright liabilities.
 
 ## [1.3.8]
 

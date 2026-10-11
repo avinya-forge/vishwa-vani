@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { useTranslations, useLocale } from 'next-intl'
 import { usePathname } from 'next/navigation'
-import { VEDIC_LIBRARY, isTextCompleted } from '@/lib/texts'
+import { VEDIC_LIBRARY, isTextCompleted, COMPLETED_BOOK_STATS, COMPLETED_BOOKS_SLUGS, PIPELINE_BOOK_STATS } from '@/lib/texts'
 import { useState, useEffect, useRef } from 'react'
 import { AnimatedStat } from '@/components/ui/animated-stat'
 
@@ -35,11 +35,16 @@ export interface HeaderStatsProp {
 }
 
 export default function Header({ stats }: { stats?: HeaderStatsProp }) {
+  const defaultVerses = Object.values(COMPLETED_BOOK_STATS).reduce((acc, b) => acc + b.verses, 0)
+  const defaultChapters = Object.values(COMPLETED_BOOK_STATS).reduce((acc, b) => acc + b.chapters, 0)
+  const defaultBooks = COMPLETED_BOOKS_SLUGS.length
+  const defaultPipeline = Object.keys(PIPELINE_BOOK_STATS).length
+
   const safeStats = {
-    completedBooks: stats?.completedBooks ?? 4,
-    pipelineBooks: stats?.pipelineBooks ?? 13,
-    completedVerses: stats?.completedVerses ?? 950,
-    completedChapters: stats?.completedChapters ?? 24,
+    completedBooks: stats?.completedBooks ?? defaultBooks,
+    pipelineBooks: stats?.pipelineBooks ?? defaultPipeline,
+    completedVerses: stats?.completedVerses ?? defaultVerses,
+    completedChapters: stats?.completedChapters ?? defaultChapters,
     totalBooks: stats?.totalBooks ?? VEDIC_LIBRARY.length,
   }
   const _t = useTranslations('nav')
@@ -147,7 +152,7 @@ export default function Header({ stats }: { stats?: HeaderStatsProp }) {
                   {/* Quick links row */}
                   <div className="px-4 py-3 border-b border-stone-50 dark:border-stone-800 bg-stone-50/30 dark:bg-stone-800/30">
                     <p className="text-[9px] font-black uppercase tracking-widest text-stone-400 dark:text-stone-500 mb-2.5">Available Now</p>
-                    <div className="flex flex-col gap-1">
+                    <div className="flex flex-col gap-1 max-h-[360px] overflow-y-auto pr-1">
                       {topBooks.map(book => (
                         <Link
                           key={book.slug}

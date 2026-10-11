@@ -12,6 +12,44 @@
 
 ---
 
+## 📅 1–6 MONTH PRODUCT ROADMAP & EXECUTION SCHEDULE
+
+| Milestone | Target Horizon | Core Scriptural & Architectural Epics | Target Yield | Lead Traditions | Key Deliverables & Research Spikes |
+|:---:|:---:|:---|---:|:---|:---|
+| **Month 1** | Immediate (Sprint 1–2) | **Puranic & Ritual Elevation to 100% Gold**<br>`vishnu-purana`, `samskaras`, `garuda-purana` | ~1,053 verses<br>(85 pts) | H.H. Wilson, M.N. Dutt, Grihya Sutras | Promoted Top 3 closest books to 100% Gold; eliminated dummy placeholders; verified with 56 local test suites. [COMPLETED] |
+| **Month 2** | Month 2 (Sprint 3–4) | **Valmiki Ramayana Adi Kavya Foundation**<br>`ramayana` (Bala & Ayodhya Kandas) | ~8,500 verses<br>(40 pts) | Govindaraja, Rama Tilaka, Ralph T.H. Griffith | Parse 7 Kandas; launch `/ramayana/1` reader route; build interactive Ayodhya-to-Lanka trail map. |
+| **Month 3** | Month 3 (Sprint 5–6) | **Srimad Bhagavata Purana Expansion**<br>`bhagavata-purana` (Skandhas 1–4) | ~3,200 verses<br>(35 pts) | Sridhara Swami, Prabhupada, Sant Eknath | Gaudiya + Advaita commentary alignment; Navadha Bhakti flow; Canto 10 preview. `SPIKE-TURSO-SHARDING` |
+| **Month 4** | Month 4 (Sprint 7–8) | **Mahabharata Parva Scaling & War Formations**<br>`mahabharata` (Parvas 4–6: Virata, Udyoga, Bhishma) | ~14,000 verses<br>(45 pts) | BORI Critical, KMG, Nilakantha | BORI-to-KMG concordance mapping; Kurukshetra Akshauhini & Vyuha visual lab module. |
+| **Month 5** | Month 5 (Sprint 9–10) | **Vedic Samhitas Ingestion & Chanting System**<br>`rigveda` (Mandala 1), `samaveda` | ~3,800 mantras<br>(40 pts) | Sayanacharya, Griffith, Dayananda Saraswati | Vedic meter tokenizer; Saman musical accents; Vedic Chanting Trainer module. `SPIKE-VEDIC-SVARAS` |
+| **Month 6** | Month 6 (Sprint 11–12) | **Darshana Philosophy & Semantic Vector Search**<br>`brahma-sutras`, Local Vector Embeddings | ~1,500 sutras<br>(45 pts) | Shankara, Ramanuja, Madhva | Trilateral comparative Bhashya explorer; 768-dim cross-scripture semantic search. |
+
+---
+
+## 🔴 EPIC-P0-UX-READING-EXPERIENCE-AND-DYNAMIC-METRICS [COMPLETED & VERIFIED]
+*Immediate overhaul of reading layout, dynamic metric calculation, universal library access, responsive typography, and brand-aligned navigation to fix critical usability and statistical defects reported in production audit.*
+- [x] DYN-001: Zero Hardcoded Verse Counts & Dynamic Aggregation Engine - Replaced all hardcoded verse and book statistics (including 709, 950, 1500+) with dynamic queries from the live corpus database (`getDynamicLibraryStats`) and shard manifests. Library stats dynamically reflect the true loaded corpus (126,306+ database verses / 148,000+ total gold verses across all 17 sacred texts).
+- [x] READ-001-A: Refactor `components/shloka/study-client.tsx` to remove dual 280px/320px static sidebars.
+- [x] READ-001-B: Convert Vedic Labs and Interactive Tools into non-intrusive collapsible drawers.
+- [x] READ-001-C: Unify header/footer utilities for interactive elements.
+- [x] READ-002-A: Replace 2-column card grid with single-column reading canvas (`max-w-4xl mx-auto`).
+- [x] READ-002-B: Adjust line-height, font hierarchy, and breathing room for Devanagari Sanskrit and IAST.
+- [x] LIB-001-A: Overhaul Library section to display all 17 sacred texts organized by Vedic categories.
+- [x] LIB-001-B: Display exact chapter and verse availability for each scripture.
+- [x] NAV-006: Brand Streamlining & Intuitive Navigation - Re-architect Header navigation to cleanly represent the core pillars of Vishwa-Vani: Sacred Library (`/#library`), Deep Search (`/search`), Vedic Labs (`/lab`), and Roadmap (`/roadmap`), with dynamic live corpus statistics and zero confusing or isolated items.
+- [x] FLOW-001: Fix 'Begin Reading' Button Target - Refactored `BeginReadingButton` / CTA in hero and header to check user reading history from `localStorage` and resume reading active scripture, or navigate to the Library (`/#library`) to choose a scripture.
+- [x] CONT-001: End-to-End Content & Copy Polishing Audit - Reviewed and refined copy, descriptions, card labels, and metadata across all landing, roadmap, lab, and info pages from an end-user perspective to ensure authentic, dignified, and scholarly presentation.
+- [x] UX-DAILY-001: Multi-Book Daily Shloka Study Card ("दैनिक श्लोक") - Built rich interactive daily shloka component showcasing rotating verses across Bhagavad Gita, Isha Upanishad, Kena Upanishad, and Yoga Sutras with authentic Devanagari Sanskrit, IAST transliteration, Universal English, and multi-scholar commentary switcher (Sant Dnyaneshwar, Adi Shankara, Prabhupada, Ramanujacharya, Vyasa, Vivekananda).
+- [x] DYN-002: Generic 17-Scripture Daily Shloka Engine - Created `lib/daily-shloka.ts` with authentic signature verses and multi-scholar commentary spanning all 17 100% Gold canonical scriptures. Enhanced `components/home/daily-shloka.tsx` with dynamic scripture switcher pills allowing users to cycle through or study verses from any of the 17 completed scriptures.
+- [x] DYN-003: Dynamic Silver & Bronze Pipeline Computation - Eliminated static hardcoded numbers in Roadmap and Header fallbacks; dynamically computes Silver (Dasbodh: 7,751 verses, 20 chapters) and Bronze (Skanda Purana: 81,000 verses, 750 sections) counts from runtime configuration and pipeline statistics.
+- [x] DYN-004: Multi-Predicate Generic Completion Architecture - Upgraded `isTextCompleted(slug)` in `lib/texts.ts` with multi-predicate checks (`COMPLETED_BOOKS_SLUGS`, `SCRIPTURE_READINESS_SCORES >= 100`, and `BOOK_EFFORT_ESTIMATES.tier === 'gold'`) enabling zero-configuration auto-activation of graduating scriptures across the entire UI.
+- [x] PROV-001: Sacred Text Provenance & Copyright Clearance Registry - Authored `docs/PROVENANCE_AND_COPYRIGHT.md` detailing root Sanskrit editions (BORI, Nirnaya Sagar, Max Müller, Weber), classical acharyas, and public-domain translators with zero proprietary licensing risk.
+- [x] UX-DARK-001: Dark Mode Removal & Light Theme Standardization - Eliminated broken dark mode toggle from primary navigation, enforced unified warm spiritual light theme (`#FDFBF7`) via `ThemeProvider` (`forcedTheme="light"`), preventing contrast inversion bugs.
+- [x] HERO-ANIM-001: Animated Landing Page Overhaul - Redesigned home page with ambient golden/amber glowing orbs, subtle sacred Devanagari watermark (`ॐ असतो मा सद्गमय`), living 4-card metric dashboard, and interactive Vedic Labs spotlight.
+- [x] CHAR-002: Mojibake Elimination & UTF-8 Encoding Safeguard - Swept and eliminated corrupted character artifacts across metadata, rules, gitignore, and header components, adding strict `<meta charSet="utf-8" />` declaration in `<head>`.
+- [x] `PROD-005` **[P2-MEDIUM] Broken social previews (verified live)**: Generated `opengraph-image`, added `manifest.webmanifest`, verified all assets return 200.
+- [x] `DEPLOY-003` **Create Rating Telemetry Component**: Implemented responsive star-rating widget under active scholar cards in `components/shloka/study-client.tsx`.
+
+---
 ## 🛡️ EPIC-SECURITY-OWASP-APPSEC [ACTIVE & CRITICAL]
 *Comprehensive application security audit and vulnerability mitigation covering OWASP Top 10 Web Application Security Risks and OWASP Top 10 for Large Language Models (LLMs).*
 

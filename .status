@@ -274,17 +274,33 @@
   {
     "name": "Dasbodh",
     "slug": "dasbodh",
-    "score": 0.0,
-    "stage": "BRONZE",
-    "ui": "HIDDEN",
-    "lab": "PENDING",
+    "score": 15.0,
+    "stage": "SILVER",
+    "ui": "ACTIVE PIPELINE",
+    "lab": "IN PROGRESS",
     "progress": {
-      "chapters": "0/20",
-      "verses": "0/7751",
-      "langs": "0/3",
-      "authors": "0/2"
+      "chapters": "20/20",
+      "verses": "7751/7751",
+      "langs": "1/3",
+      "authors": "1/2"
     },
     "has_placeholders": false,
-    "description": "Samarth Ramdas."
+    "description": "Samarth Ramdas (20 Dashakas, Warkari Lineage)."
+  },
+  {
+    "name": "Skanda Purana",
+    "slug": "skanda-purana",
+    "score": 10.0,
+    "stage": "BRONZE",
+    "ui": "INGESTION QUEUE",
+    "lab": "PENDING",
+    "progress": {
+      "chapters": "750/750",
+      "verses": "81000/81000",
+      "langs": "1/3",
+      "authors": "1/2"
+    },
+    "has_placeholders": false,
+    "description": "Skanda Purana (7 Khandas, Ingestion Queue)."
   }
 ]

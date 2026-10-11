@@ -926,8 +926,9 @@ export const COMPLETED_BOOK_STATS: Record<CompletedBookSlug, { verses: number; c
 
 /** Ingestion pipeline books metadata (Silver & Bronze tiers) */
 export const PIPELINE_BOOK_STATS: Record<string, { verses: number; chapters: number; tier: 'silver' | 'bronze' }> = {
+  // Silver Tier (Structured Parsing & NVF Normalization)
+  'dasbodh': { verses: 7751, chapters: 20, tier: 'silver' },
   // Bronze Tier (Raw Acquisition & Ingestion Queue)
-  'dasbodh': { verses: 7751, chapters: 20, tier: 'bronze' },
   'skanda-purana': { verses: 81000, chapters: 750, tier: 'bronze' },
 };
 
@@ -960,7 +961,7 @@ export const BOOK_EFFORT_ESTIMATES: Record<string, BookEffortEstimate> = {
   'rigveda': { verses: 12, chapters: 10, tier: 'gold', size: 'XL', storyPoints: 65, scholars: ['Sayanacharya', 'Ralph T.H. Griffith', 'Swami Dayananda Saraswati'] },
   'yajurveda': { verses: 40, chapters: 40, tier: 'gold', size: 'M', storyPoints: 20, scholars: ['Mahidhara', 'Uvvata', 'Swami Dayananda'] },
   'skanda-purana': { verses: 81000, chapters: 750, tier: 'bronze', size: 'XXL', storyPoints: 100, scholars: ['G.V. Tagare', 'Motilal Banarsidass'] },
-  'dasbodh': { verses: 7751, chapters: 20, tier: 'bronze', size: 'L', storyPoints: 35, scholars: ['Samarth Ramdas Swami', 'Warkari Lineage'] },
+  'dasbodh': { verses: 7751, chapters: 20, tier: 'silver', size: 'L', storyPoints: 35, scholars: ['Samarth Ramdas Swami', 'Warkari Lineage'] },
 };
 
 /** Map of scripture slugs to their audited readiness scores (%) */
@@ -995,9 +996,14 @@ export function isStrictDemoGatingEnabled(): boolean {
   return false;
 }
 
-/** Check if a text is 100% completed */
+/** Check if a text is 100% completed (Gold Tier) */
 export function isTextCompleted(slug: string): boolean {
-  return COMPLETED_BOOKS_SLUGS.includes(slug as CompletedBookSlug);
+  if ((COMPLETED_BOOKS_SLUGS as readonly string[]).includes(slug)) return true;
+  const score = SCRIPTURE_READINESS_SCORES[slug];
+  if (score !== undefined && score >= 100) return true;
+  const effort = BOOK_EFFORT_ESTIMATES[slug];
+  if (effort?.tier === 'gold') return true;
+  return false;
 }
 
 /** Get a text by its URL slug */

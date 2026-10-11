@@ -53,7 +53,23 @@ const CATEGORY_LABELS: Record<string, string> = {
 type UserVote = 'up' | 'down' | null
 type PoolFilter = 'all' | 'completed' | 'pipeline'
 
-export default function RoadmapClient({ stats }: { stats: { completedBooks: number, pipelineBooks: number, completedVerses: number, pipelineVerses: number, completedChapters: number, pipelineChapters: number, databaseVerses: number } }) {
+export interface RoadmapStatsProps {
+  completedBooks: number
+  pipelineBooks: number
+  completedVerses: number
+  pipelineVerses: number
+  completedChapters: number
+  pipelineChapters: number
+  databaseVerses: number
+  silverBooks?: number
+  silverChapters?: number
+  silverVerses?: number
+  bronzeBooks?: number
+  bronzeChapters?: number
+  bronzeVerses?: number
+}
+
+export default function RoadmapClient({ stats }: { stats: RoadmapStatsProps }) {
   const [activeTab, setActiveTab] = useState<string>('all')
   const [poolFilter, setPoolFilter] = useState<PoolFilter>('all')
   const [votes, setVotes] = useState<Record<string, number>>(MOCK_BASE_VOTES)
@@ -264,15 +280,15 @@ export default function RoadmapClient({ stats }: { stats: { completedBooks: numb
               </p>
               <div className="pt-4 border-t border-stone-200 dark:border-stone-700 grid grid-cols-3 text-center">
                 <div>
-                  <div className="text-lg font-black text-stone-900 dark:text-stone-100">6</div>
+                  <div className="text-lg font-black text-stone-900 dark:text-stone-100">{stats?.silverBooks ?? 1}</div>
                   <div className="text-[9px] uppercase tracking-wider text-stone-500 font-bold">Books</div>
                 </div>
                 <div>
-                  <div className="text-lg font-black text-stone-900 dark:text-stone-100">2,828</div>
+                  <div className="text-lg font-black text-stone-900 dark:text-stone-100">{stats?.silverChapters ?? 20}</div>
                   <div className="text-[9px] uppercase tracking-wider text-stone-500 font-bold">Chapters</div>
                 </div>
                 <div>
-                  <div className="text-lg font-black text-stone-900 dark:text-stone-100">144,041</div>
+                  <div className="text-lg font-black text-stone-900 dark:text-stone-100">{(stats?.silverVerses ?? 7751).toLocaleString()}</div>
                   <div className="text-[9px] uppercase tracking-wider text-stone-500 font-bold">Shlokas</div>
                 </div>
               </div>
@@ -294,15 +310,15 @@ export default function RoadmapClient({ stats }: { stats: { completedBooks: numb
               </p>
               <div className="pt-4 border-t border-amber-800/20 dark:border-amber-900/30 grid grid-cols-3 text-center">
                 <div>
-                  <div className="text-lg font-black text-amber-900 dark:text-amber-400">7</div>
+                  <div className="text-lg font-black text-amber-900 dark:text-amber-400">{stats?.bronzeBooks ?? 1}</div>
                   <div className="text-[9px] uppercase tracking-wider text-stone-500 font-bold">Books</div>
                 </div>
                 <div>
-                  <div className="text-lg font-black text-amber-900 dark:text-amber-400">88</div>
+                  <div className="text-lg font-black text-amber-900 dark:text-amber-400">{stats?.bronzeChapters ?? 750}</div>
                   <div className="text-[9px] uppercase tracking-wider text-stone-500 font-bold">Sections</div>
                 </div>
                 <div>
-                  <div className="text-lg font-black text-amber-900 dark:text-amber-400">31,369</div>
+                  <div className="text-lg font-black text-amber-900 dark:text-amber-400">{(stats?.bronzeVerses ?? 81000).toLocaleString()}</div>
                   <div className="text-[9px] uppercase tracking-wider text-stone-500 font-bold">Mantras</div>
                 </div>
               </div>
@@ -379,7 +395,7 @@ export default function RoadmapClient({ stats }: { stats: { completedBooks: numb
               The 5-Phase Roadmap to Achieve the Vision
             </h2>
             <p className="text-stone-500 dark:text-stone-400 text-xs">
-              Systematically scaling from our 4 verified core foundations to 17 canonical scriptures (~267,000+ verses) across 4 classical languages with 655 total story points of effort.
+              Systematically scaling across the universal Vedic canon: from our {stats?.completedBooks || 17} Gold canonical scriptures to complete 18 Mahāpurāṇas and Darśana treatises (~500,000+ verses).
             </p>
           </div>
 
@@ -387,48 +403,48 @@ export default function RoadmapClient({ stats }: { stats: { completedBooks: numb
             {[
               {
                 phase: 'Phase 1',
-                title: 'Gold Foundation',
-                scale: '4 Books · 950 Verses',
-                effort: '35 pts',
-                status: 'Completed',
+                title: 'Gold Canonical Canon',
+                scale: `${stats?.completedBooks || 17} Books · ${(stats?.completedVerses || 1223).toLocaleString()} Verses`,
+                effort: '620 pts',
+                status: 'Completed (100% Live)',
                 statusColor: 'bg-emerald-500 text-white',
-                desc: 'Bhagavad Gita, Isha & Kena Upanishads, Yoga Sutras with multi-scholar commentary live.',
+                desc: 'All 17 core canonical scriptures live with multi-scholar commentary, Devanagari Sanskrit, IAST, and universal translations.',
               },
               {
                 phase: 'Phase 2',
-                title: 'Itihāsa & Purāṇas',
-                scale: '~45,000 Verses',
-                effort: '240 pts',
-                status: 'Active Ingest',
+                title: 'Silver NVF Ingestion',
+                scale: `${stats?.silverBooks || 1} Book · ${(stats?.silverVerses || 7751).toLocaleString()} Verses`,
+                effort: '35 pts',
+                status: 'Active Pipeline',
                 statusColor: 'bg-orange-500 text-white',
-                desc: 'Mahabharata (Parvas 1–6), Bhagavata Purana (Cantos 1–3), Vishnu Purana, Garuda Purana.',
+                desc: 'Samarth Ramdas’s Dasbodh (20 Dashakas, Marathi) undergoing Normalized Vedic Fragment parsing and Warkari commentary mapping.',
               },
               {
                 phase: 'Phase 3',
-                title: 'Four Veda Samhitas',
-                scale: '~22,000 Mantras',
-                effort: '165 pts',
+                title: 'Bronze Raw Ingestion',
+                scale: `${stats?.bronzeBooks || 1} Book · ${(stats?.bronzeVerses || 81000).toLocaleString()} Verses`,
+                effort: '100 pts',
                 status: 'In Queue',
-                statusColor: 'bg-stone-500 text-white',
-                desc: 'Rigveda, Samaveda, Yajurveda, Atharvaveda & Badarayana’s Brahma Sutras with Sayana & Dayananda.',
+                statusColor: 'bg-amber-600 text-white',
+                desc: 'Skanda Purāṇa (7 Khandas, 750 chapters) undergoing automated regular-expression sharding and schema validation.',
               },
               {
                 phase: 'Phase 4',
-                title: 'Universal Puranas',
-                scale: '~108,000 Verses',
-                effort: '180 pts',
-                status: 'In Queue',
+                title: '18 Mahāpurāṇas Corpus',
+                scale: '~400,000 Verses',
+                effort: '250 pts',
+                status: 'Future Ingest',
                 statusColor: 'bg-stone-500 text-white',
-                desc: 'Skanda Purana, Samarth Ramdas’s Dasbodh (Marathi), Manusmriti, 16 Samskaras, 108 Stotras.',
+                desc: 'Acquiring public-domain critical editions of Agni, Padma, Shiva, Vayu, Linga, Kurma, Matsya, and Bhavishya Puranas.',
               },
               {
                 phase: 'Phase 5',
-                title: 'Global AI & Metal',
-                scale: '267,000+ Verses',
+                title: 'Global AI & Offline Metal',
+                scale: '500,000+ Verses',
                 effort: '70 pts',
                 status: 'Future Scope',
                 statusColor: 'bg-indigo-600 text-white',
-                desc: '768-dim semantic vectors + Oracle Cloud Always-Free ARM (200GB storage, 0-cost decoupling).',
+                desc: '768-dim semantic vectors + Oracle Cloud Always-Free ARM (200GB NVMe storage, 0-cost edge infrastructure).',
               },
             ].map(p => (
               <div

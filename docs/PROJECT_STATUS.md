@@ -25,8 +25,9 @@
 | 15 | **Samaveda Samhita** | 2 | 20 | Gold | READY | INTEGRATED | **100.0%** |
 | 16 | **Yajurveda Samhita** | 40 | 40 | Gold | READY | INTEGRATED | **100.0%** |
 | 17 | **Atharvaveda Samhita** | 20 | 20 | Gold | READY | INTEGRATED | **100.0%** |
-| 18 | **Dasbodh** | 20 | 7,751 | Bronze | HIDDEN | PENDING | **0.0%** |
-| **TOTAL** | **18 Canonical Scriptures** | **181** | **~9,008** | — | **17 Live** | **17 Modules** | — |
+| 18 | **Dasbodh** | 20 | 7,751 | Silver | ACTIVE PIPELINE | IN PROGRESS | **15.0%** |
+| 19 | **Skanda Purana** | 750 | 81,000 | Bronze | INGESTION QUEUE | PENDING | **10.0%** |
+| **TOTAL** | **19 Canonical Scriptures** | **951** | **~90,008** | — | **17 Live** | **17 Modules** | — |
 
 ## 🏆 Production Grade (GOLD)
 
