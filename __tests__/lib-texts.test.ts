@@ -16,7 +16,7 @@ describe('VEDIC_LIBRARY', () => {
       expect(typeof text.slug).toBe('string');
       expect(typeof text.name).toBe('string');
       expect(typeof text.totalChapters).toBe('number');
-      expect(['itihas', 'upanishad', 'veda', 'purana', 'other']).toContain(text.category);
+      expect(['itihas', 'upanishad', 'veda', 'purana', 'charitra', 'other']).toContain(text.category);
     });
   });
 

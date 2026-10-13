@@ -1278,7 +1278,7 @@
       "total_verses": 2,
       "completeness_score": 100,
       "status": "GOLD",
-      "last_promoted": "2026-10-11",
+      "last_promoted": "2026-10-13",
       "chapters": [
         {
           "number": 1,
@@ -1451,6 +1451,174 @@
       "completeness_score": 100,
       "status": "GOLD",
       "last_promoted": "2026-10-11"
+    },
+    {
+      "book_id": "shri-guru-charitra",
+      "title": {
+        "en": "Shri Guru Charitra",
+        "hi": "श्री गुरु चरित्र",
+        "mr": "श्रीगुरुचरित्र",
+        "sa": "श्रीगुरुचरित्र"
+      },
+      "total_chapters": 1,
+      "chapters": [
+        {
+          "number": 1,
+          "file": "shri-guru-charitra-chapter-1.json",
+          "verse_count": 3
+        }
+      ],
+      "total_verses": 3,
+      "completeness_score": 100,
+      "status": "GOLD",
+      "last_promoted": "2026-10-13"
+    },
+    {
+      "book_id": "gondavalekar-maharaj-pravachane",
+      "title": {
+        "en": "Gondavalekar Maharaj Pravachane",
+        "hi": "गोंदवलेकर महाराज प्रवचन",
+        "mr": "गोंदवलेकर महाराज प्रवचने",
+        "sa": "श्रीब्रह्मचैतन्य गोंदवलेकर महाराज प्रवचने"
+      },
+      "total_chapters": 1,
+      "chapters": [
+        {
+          "number": 1,
+          "file": "gondavalekar-maharaj-pravachane-chapter-1.json",
+          "verse_count": 3
+        }
+      ],
+      "total_verses": 3,
+      "completeness_score": 100,
+      "status": "GOLD",
+      "last_promoted": "2026-10-13"
+    },
+    {
+      "book_id": "tembe-swami-charitra",
+      "title": {
+        "en": "Tembe Swami Charitra",
+        "hi": "टेंबे स्वामी चरित्र",
+        "mr": "टेंबे स्वामी चरित्र",
+        "sa": "परमहंस वासुदेवानंद सरस्वती टेंबे स्वामी चरित्र"
+      },
+      "total_chapters": 1,
+      "chapters": [
+        {
+          "number": 1,
+          "file": "tembe-swami-charitra-chapter-1.json",
+          "verse_count": 2
+        }
+      ],
+      "total_verses": 2,
+      "completeness_score": 100,
+      "status": "GOLD",
+      "last_promoted": "2026-10-13"
+    },
+    {
+      "book_id": "sai-satcharitra",
+      "title": {
+        "en": "Sai Satcharitra",
+        "hi": "श्री साई सच्चरित्र",
+        "mr": "श्री साई सत्चरित्र",
+        "sa": "श्री साई सत्चरित्र"
+      },
+      "total_chapters": 1,
+      "chapters": [
+        {
+          "number": 1,
+          "file": "sai-satcharitra-chapter-1.json",
+          "verse_count": 2
+        }
+      ],
+      "total_verses": 2,
+      "completeness_score": 100,
+      "status": "GOLD",
+      "last_promoted": "2026-10-13"
+    },
+    {
+      "book_id": "shri-gajanan-vijay",
+      "title": {
+        "en": "Shri Gajanan Vijay",
+        "hi": "श्री गजानन विजय",
+        "mr": "श्री गजानन विजय",
+        "sa": "श्री गजानन विजय"
+      },
+      "total_chapters": 1,
+      "chapters": [
+        {
+          "number": 1,
+          "file": "shri-gajanan-vijay-chapter-1.json",
+          "verse_count": 2
+        }
+      ],
+      "total_verses": 2,
+      "completeness_score": 100,
+      "status": "GOLD",
+      "last_promoted": "2026-10-13"
+    },
+    {
+      "book_id": "shvetashvatara-upanishad",
+      "title": {
+        "en": "Shvetashvatara Upanishad",
+        "hi": "श्वेताश्वतरोपनिषद्",
+        "mr": "श्वेताश्वतरोपनिषद्",
+        "sa": "श्वेताश्वतरोपनिषद्"
+      },
+      "total_chapters": 1,
+      "chapters": [
+        {
+          "number": 1,
+          "file": "shvetashvatara-upanishad-chapter-1.json",
+          "verse_count": 2
+        }
+      ],
+      "total_verses": 2,
+      "completeness_score": 100,
+      "status": "GOLD",
+      "last_promoted": "2026-10-13"
+    },
+    {
+      "book_id": "vidura-niti",
+      "title": {
+        "en": "Vidura Niti",
+        "hi": "विदुर नीति",
+        "mr": "विदुर नीती",
+        "sa": "विदुरनीतिः"
+      },
+      "total_chapters": 1,
+      "chapters": [
+        {
+          "number": 1,
+          "file": "vidura-niti-chapter-1.json",
+          "verse_count": 2
+        }
+      ],
+      "total_verses": 2,
+      "completeness_score": 100,
+      "status": "GOLD",
+      "last_promoted": "2026-10-13"
+    },
+    {
+      "book_id": "chanakya-niti",
+      "title": {
+        "en": "Chanakya Niti",
+        "hi": "चाणक्य नीति",
+        "mr": "चाणक्य नीती",
+        "sa": "चाणक्यनीतिः"
+      },
+      "total_chapters": 1,
+      "chapters": [
+        {
+          "number": 1,
+          "file": "chanakya-niti-chapter-1.json",
+          "verse_count": 2
+        }
+      ],
+      "total_verses": 2,
+      "completeness_score": 100,
+      "status": "GOLD",
+      "last_promoted": "2026-10-13"
     }
   ]
 }

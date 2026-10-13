@@ -1,5 +1,24 @@
 # Release Notes
 
+## [1.7.2]
+
+### 🌌 Sant Charitras Expansion, 33-Book Milestone & Translation Zero-Defect Hardening
+- [x] `CHAR-001` **Sant Charitras & World Sacred Literature Onboarding Deck**: Formulated 8 canonical specifications in `data/specs/`:
+  - `shri-guru-charitra.json` (Dattatreya Sampradaya - Saraswati Gangadhar, 52 Adhyayas)
+  - `gondavalekar-maharaj-pravachane.json` (Shri Brahmachaitanya Gondavalekar Maharaj Pravachane - Rama Nama Chintan, 12 Adhyayas)
+  - `tembe-swami-charitra.json` (Paramahamsa Shrimad Vasudevananda Saraswati - Dattatreya Mahatmya & Saptashati, 10 Adhyayas)
+  - `sai-satcharitra.json` (Hemadpant - 53 Adhyayas)
+  - `shri-gajanan-vijay.json` (Dasganu Maharaj - 21 Adhyayas)
+  - `shvetashvatara-upanishad.json` (Krishna Yajurveda - 6 Adhyayas)
+  - `vidura-niti.json` (Mahabharata Udyoga Parva - 8 Adhyayas)
+  - `chanakya-niti.json` (Acharya Chanakya Niti Shastra - 17 Adhyayas)
+- [x] `CHAR-002` **33-Scripture Universal SSoT Graduation**: Autonomous execution through `VishwaVaniEngine` graduated all 8 books with 100% readiness and zero audit errors. Manifest, `VEDIC_LIBRARY`, `COMPLETED_BOOKS_SLUGS`, and `public/vedic-lake.db` synchronized to 33 live scriptures (1,347 verses in SQLite lake).
+- [x] `TERM-001` **Count Terminology Modernization**: Harmonized terminology across the UI (`app/page.tsx`, `app/library/LibraryClient.tsx`), converting all "Corpus Database" and "Database Corpus" labels to "Shlokas & Verses" and "Complete Sacred Shlokas & Texts".
+- [x] `BUG-MEANING-001` **Eliminated "undefined" Meaning Defect**: Fixed bug in `components/shloka/study-client.tsx` where string conversion of missing regional translations yielded literal string `"undefined"`. Added defensive layer fallback searches and hardened `VerseBaseTranslation` against literal `"undefined"` and `"null"`.
+- [x] `KENA-NORM-001` **Kena Upanishad Translation Normalization**: Enriched `data/3-gold/kena-upanishad/kena-upanishad-chapter-1.json` with root-level translations and meanings, achieving 0 missing translation issues across all 33 canonical scriptures.
+- [x] `NEWS-001` **Resilient Serverless Newsletter Subscriptions**: Hardened `lib/server-lake.ts` with in-memory resilient fallback protecting serverless environments against read-only filesystem locks, and created `app/api/newsletter/export/route.ts` providing self-serve JSON and CSV subscriber export.
+- [x] `TEST-004` **100% Green Verification Across 68 Suites (377 Tests)**: Authored unit tests in `__tests__/newsletter.test.ts`, verified `__tests__/lib-texts.test.ts`, `__tests__/lib-texts-functions.test.ts`, `__tests__/components-study-client.test.tsx`, achieving 100% test pass rate with 0 TypeScript and 0 ESLint errors.
+
 ## [1.7.1]
 
 ### 📊 Visitor Intelligence, Search Telemetry & Opt-In Daily Shloka Newsletter

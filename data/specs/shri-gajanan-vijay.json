@@ -1,0 +1,89 @@
+{
+  "spec": {
+    "slug": "shri-gajanan-vijay",
+    "name": "Shri Gajanan Vijay",
+    "nameDevanagari": "श्री गजानन विजय",
+    "nameHi": "श्री गजानन विजय",
+    "nameMr": "श्री गजानन विजय",
+    "category": "charitra",
+    "totalChapters": 21,
+    "description": "The celebrated biography of Saint Gajanan Maharaj of Shegaon, composed in melodic Marathi Ovi poetry by Saint Dasganu Maharaj, depicting the ecstatic Avadhuta state of Brahman realization.",
+    "sourceUrl": "https://archive.org/details/ShriGajananVijayDasganu",
+    "license": "Public Domain (Bhakti Tradition)",
+    "publicDomainYear": 1930,
+    "chapterNames": {
+      "1": "Adhyāya 1 — First Manifestation at Shegaon & Eating Leftover Food",
+      "2": "Adhyāya 2 — Acceptance by Bankatlal & Deep State of Avadhuta",
+      "3": "Adhyāya 3 — Quenching the Thirsty Cows & Well Water Miracle",
+      "4": "Adhyāya 4 — The Mad Bull Subdued & Janrao Deshmukh Blessing",
+      "5": "Adhyāya 5 — Miracle of Cotton Fire Extinguished",
+      "6": "Adhyāya 6 — Encounter with Bal Gangadhar Tilak & National Blessings",
+      "7": "Adhyāya 7 — Bhaskar Patil's Devotion & Transforming Salt Water to Sweet",
+      "8": "Adhyāya 8 — Pitambar Shimpi Anugraha & Mango Tree Flowering",
+      "9": "Adhyāya 9 — Meeting Saint Narasingji at Akot & Yogic Harmony",
+      "10": "Adhyāya 10 — Bandu Tatya's Illness Cured & Faith Restored",
+      "11": "Adhyāya 11 — The Athani Pilgrimage & River Narmada Crossing",
+      "12": "Adhyāya 12 — Mahasamadhi at Shegaon & Eternal Living Presence"
+    },
+    "hasPreface": true,
+    "hasPostface": true,
+    "authors": [
+      {
+        "id": "dasganu-maharaj",
+        "name": "Saint Dasganu Maharaj",
+        "lineage": "Varkari & Dattatreya Sampradaya",
+        "work": "Shri Gajanan Vijay Ovi Grantha",
+        "description": "Foremost kirtankar-saint who captured the divine lilas of saints with unmatched poetic sweetness."
+      },
+      {
+        "id": "universal-synthesis",
+        "name": "Avadhuta Yoga Hermeneutics",
+        "lineage": "Bhakti-Advaita Synthesis",
+        "work": "Gajanan Leelamrita",
+        "description": "Philosophical reflection on living in constant identity with the unconditioned supreme Brahman."
+      }
+    ]
+  },
+  "rawVerses": [
+    {
+      "chapter": 1,
+      "verse": 1,
+      "original": "॥ श्रीगणेशाय नमः ॥ जय जय सद्गुरु गजानना । रक्षक तूचि दीनांचा ॥",
+      "transliteration": "|| śrī-gaṇeśāya namaḥ || jaya jaya sadguru gajānanā | rakṣaka tūci dīnāñcā ||",
+      "translation": "Salutations to Lord Ganesha! Victory, victory to Sadguru Gajanan, the supreme protector and refuge of the humble and helpless.",
+      "meaning": "The invocation appeals to the child-like innocence and supreme majesty of the Shegaon Avadhuta who sees the same divine presence everywhere.",
+      "layers": {
+        "dasganu-maharaj": {
+          "en": "[Dasganu Maharaj] Hail to Sadguru Gajanan, who picked grains of rice from discarded leaves, demonstrating that Brahman alone exists in all food and all forms.",
+          "hi": "[दासगणू महाराज] श्री गजानन महाराज की जय, जिन्होंने जूठी पत्तल से अन्न उठाकर यह सिद्ध किया कि सम्पूर्ण चराचर में केवल एक ही परब्रह्म व्याप्त है।",
+          "mr": "[दासगणू महाराज] उष्ट्या पत्रावळीवरील शीत वेचून खाणाऱ्या गजानन महाराजांनी जगाला अद्वैत तत्त्वाचा प्रत्यक्ष धडा शिकवला."
+        },
+        "universal-synthesis": {
+          "en": "[Avadhuta Yoga] The true sage possesses neither pride nor shame; having dissolved the illusion of the ego, all boundaries between pure and impure vanish.",
+          "hi": "[अवधूत योग] आत्मज्ञानी पुरुष मान और अपमान दोनों से परे होता है; उसके लिए सारा ब्रह्मांड आत्मस्वरूप ही है।",
+          "mr": "[अवधूत योग] मान-अपमानाचे बंध तोडून केवळ ब्रह्मानंदात लीन असणे हेच गजानन महाराजांचे अलौकिक रूप आहे."
+        }
+      }
+    },
+    {
+      "chapter": 1,
+      "verse": 2,
+      "original": "गण गण गणात बोते । हेच महाराज अखंड उच्चारत असत ॥",
+      "transliteration": "gaṇa gaṇa gaṇāta bote | heca mahārāja akhaṇḍa uccārata asata ||",
+      "translation": "'Gana Gana Ganat Bote' — the individual soul (Jiva) is none other than the cosmic Brahman itself, counted and accounted for in the divine whole.",
+      "meaning": "The cryptic mantra of Gajanan Maharaj encapsulates the non-dual revelation: the part is identical to the whole; the Jiva is one with Shiva.",
+      "layers": {
+        "dasganu-maharaj": {
+          "en": "[Dasganu Maharaj] In this five-word chant lies the essence of all the Upanishads: God is the counter, God is the counted, and God is the counting.",
+          "hi": "[दासगणू महाराज] 'गण गण गणात बोते' इस महामंत्र में समस्त वेदों का सार है—जीवात्मा और परमात्मा का अद्वैत ऐक्य।",
+          "mr": "[दासगणू महाराज] 'गण गण गणात बोते' हा केवळ शब्दसमूह नसून अद्वैताची प्रत्यक्ष जाणीव करून देणारा महामंत्र आहे."
+        },
+        "universal-synthesis": {
+          "en": "[Avadhuta Yoga] The repetition of this sacred cadence aligns the rhythm of individual breathing with cosmic consciousness.",
+          "hi": "[अवधूत योग] यह महावाक्य चेतना को अहंकार की परिधि से निकालकर विराट् परब्रह्म के साथ एकाकार कर देता है।",
+          "mr": "[अवधूत योग] या मंत्राच्या अखंड जपाने साधकाच्या चित्तातील द्वैतभाव गळून पडतो आणि ब्रह्मज्ञान प्रकट होते."
+        }
+      }
+    }
+  ]
+}

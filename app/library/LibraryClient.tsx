@@ -200,7 +200,7 @@ export default function LibraryClient({ stats, hierarchy: _hierarchy }: LibraryC
               <AnimatedStat targetCount={stats.databaseVerses} />
             </div>
             <div className="text-[10px] font-bold text-stone-400 uppercase tracking-widest">
-              Database Corpus
+              Shlokas &amp; Verses
             </div>
           </div>
 

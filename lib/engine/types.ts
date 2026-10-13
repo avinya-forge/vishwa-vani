@@ -27,7 +27,7 @@ export interface BookSpec {
   nameDevanagari: string;
   nameHi: string;
   nameMr: string;
-  category: 'itihas' | 'upanishad' | 'veda' | 'purana' | 'other';
+  category: 'itihas' | 'upanishad' | 'veda' | 'purana' | 'charitra' | 'other';
   totalChapters: number;
   description: string;
   sourceUrl?: string;

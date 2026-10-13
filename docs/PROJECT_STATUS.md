@@ -1,8 +1,8 @@
 # 🚀 Vishwa-Vani: Global Project Master Status
 
-*Last Updated: 2026-10-11 21:43:45*
+*Last Updated: 2026-10-13 08:47:25*
 
-**Overall Health:** 25 Gold Books | 25 Integrated with UI
+**Overall Health:** 33 Gold Books | 33 Integrated with UI
 
 ## 📊 Canonical Scripture Scale, Effort & Ingestion Status Matrix
 
@@ -33,7 +33,15 @@
 | 23 | **Atharvaveda Samhita** | 20 | 20 | Gold | READY | INTEGRATED | **100.0%** |
 | 24 | **Dasbodh** | 20 | 20 | Gold | READY | INTEGRATED | **100.0%** |
 | 25 | **Skanda Purana** | 7 | 7 | Gold | READY | INTEGRATED | **100.0%** |
-| **TOTAL** | **25 Canonical Scriptures** | **206** | **~1,325** | — | **25 Live** | **25 Modules** | — |
+| 26 | **Shri Guru Charitra** | - | 0 | Gold | READY | PENDING | **72.42%** |
+| 27 | **Gondavalekar Maharaj Pravachane** | - | 0 | Gold | READY | PENDING | **72.42%** |
+| 28 | **Tembe Swami Charitra** | - | 0 | Gold | READY | PENDING | **72.17%** |
+| 29 | **Sai Satcharitra** | - | 0 | Gold | READY | PENDING | **72.17%** |
+| 30 | **Shri Gajanan Vijay** | - | 0 | Gold | READY | PENDING | **72.17%** |
+| 31 | **Shvetashvatara Upanishad** | - | 0 | Gold | READY | PENDING | **72.17%** |
+| 32 | **Vidura Niti** | - | 0 | Gold | READY | PENDING | **72.17%** |
+| 33 | **Chanakya Niti** | - | 0 | Gold | READY | PENDING | **72.17%** |
+| **TOTAL** | **33 Canonical Scriptures** | **206** | **~1,325** | — | **33 Live** | **25 Modules** | — |
 
 ## 🏆 Production Grade (GOLD)
 
@@ -211,6 +219,62 @@
 - **Structural:** Chapters: `7/7` | Verses: `7/7`
 - **Linguistic:** Layers: `4/3` | Authors: `3/2`
 > Skanda Purana (All 7 Khandas, Puranic Tradition).
+
+### Shri Guru Charitra
+**Readiness Score: 72.42%** [███████░░░]
+- **Slug:** `shri-guru-charitra` | **UI:** READY | **Vedic Lab:** PENDING
+- **Structural:** Chapters: `1/1` | Verses: `3/100`
+- **Linguistic:** Layers: `4/3` | Authors: `2/2`
+> 
+
+### Gondavalekar Maharaj Pravachane
+**Readiness Score: 72.42%** [███████░░░]
+- **Slug:** `gondavalekar-maharaj-pravachane` | **UI:** READY | **Vedic Lab:** PENDING
+- **Structural:** Chapters: `1/1` | Verses: `3/100`
+- **Linguistic:** Layers: `4/3` | Authors: `2/2`
+> 
+
+### Tembe Swami Charitra
+**Readiness Score: 72.17%** [███████░░░]
+- **Slug:** `tembe-swami-charitra` | **UI:** READY | **Vedic Lab:** PENDING
+- **Structural:** Chapters: `1/1` | Verses: `2/100`
+- **Linguistic:** Layers: `4/3` | Authors: `2/2`
+> 
+
+### Sai Satcharitra
+**Readiness Score: 72.17%** [███████░░░]
+- **Slug:** `sai-satcharitra` | **UI:** READY | **Vedic Lab:** PENDING
+- **Structural:** Chapters: `1/1` | Verses: `2/100`
+- **Linguistic:** Layers: `4/3` | Authors: `2/2`
+> 
+
+### Shri Gajanan Vijay
+**Readiness Score: 72.17%** [███████░░░]
+- **Slug:** `shri-gajanan-vijay` | **UI:** READY | **Vedic Lab:** PENDING
+- **Structural:** Chapters: `1/1` | Verses: `2/100`
+- **Linguistic:** Layers: `4/3` | Authors: `2/2`
+> 
+
+### Shvetashvatara Upanishad
+**Readiness Score: 72.17%** [███████░░░]
+- **Slug:** `shvetashvatara-upanishad` | **UI:** READY | **Vedic Lab:** PENDING
+- **Structural:** Chapters: `1/1` | Verses: `2/100`
+- **Linguistic:** Layers: `4/3` | Authors: `2/2`
+> 
+
+### Vidura Niti
+**Readiness Score: 72.17%** [███████░░░]
+- **Slug:** `vidura-niti` | **UI:** READY | **Vedic Lab:** PENDING
+- **Structural:** Chapters: `1/1` | Verses: `2/100`
+- **Linguistic:** Layers: `4/3` | Authors: `2/2`
+> 
+
+### Chanakya Niti
+**Readiness Score: 72.17%** [███████░░░]
+- **Slug:** `chanakya-niti` | **UI:** READY | **Vedic Lab:** PENDING
+- **Structural:** Chapters: `1/1` | Verses: `2/100`
+- **Linguistic:** Layers: `4/3` | Authors: `2/2`
+> 
 
 ## 🚧 In Progress (SILVER/BRONZE)
 

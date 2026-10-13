@@ -1,0 +1,83 @@
+{
+  "spec": {
+    "slug": "shvetashvatara-upanishad",
+    "name": "Shvetashvatara Upanishad",
+    "nameDevanagari": "श्वेताश्वतरोपनिषद्",
+    "nameHi": "श्वेताश्वतरोपनिषद्",
+    "nameMr": "श्वेताश्वतरोपनिषद्",
+    "category": "upanishad",
+    "totalChapters": 6,
+    "description": "The jewel of the Krishna Yajurveda synthesizing Sankhya cosmology, Ashtanga Yoga practice, personal devotion (Para-Bhakti) to Rudra, and non-dual Vedantic realization.",
+    "sourceUrl": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/1_veda/4_upa/svetup_u.htm",
+    "license": "Public Domain (Classical Vedic Scripture)",
+    "publicDomainYear": 1923,
+    "chapterNames": {
+      "1": "Adhyāya 1 — The Cosmic Inquiry: What is the Primordial Cause of the Universe?",
+      "2": "Adhyāya 2 — The Discipline of Yoga & Discovery of the Inner Light",
+      "3": "Adhyāya 3 — The Supreme Being Rudra & All-Pervading Cosmic Person",
+      "4": "Adhyāya 4 — Prakriti, Purusha & The Two Birds in the Tree of Life",
+      "5": "Adhyāya 5 — Vidya and Avidya, Microcosm and Macrocosm",
+      "6": "Adhyāya 6 — The Sovereign Ruler of Nature, Supreme Devotion & Final Deliverance"
+    },
+    "hasPreface": true,
+    "hasPostface": true,
+    "authors": [
+      {
+        "id": "adi-shankara",
+        "name": "Ādi Śaṅkarācārya",
+        "lineage": "Advaita Vedānta",
+        "work": "Śvetāśvataropaniṣad Bhāṣya",
+        "description": "Classical commentary delineating the non-dual truth behind the apparent dualities of Nature and God."
+      },
+      {
+        "id": "universal-synthesis",
+        "name": "Vedic Theistic Synthesis",
+        "lineage": "Shaiva-Vedanta Synthesis",
+        "work": "Shvetashvatara Rahasya",
+        "description": "Integration of deep devotional contemplation (Bhakti) with pristine Advaitic Self-inquiry."
+      }
+    ]
+  },
+  "rawVerses": [
+    {
+      "chapter": 1,
+      "verse": 1,
+      "original": "ॐ ब्रह्मवादिनो वदन्ति । किं कारणं ब्रह्म कुतः स्म जाता जीवाम केन क्व च संप्रतिष्ठाः ॥ १ ॥",
+      "transliteration": "om brahmavādino vadanti | kiṃ kāraṇaṃ brahma kutaḥ sma jātā jīvāma kena kva ca saṃpratiṣṭhāḥ || 1 ||",
+      "translation": "The knowers of Brahman inquire: What is the primal cause? Is it Brahman? Whence are we born? By what do we live? And in what do we find our final rest?",
+      "meaning": "The ultimate philosophical inquiry: setting aside mechanical and materialistic theories to probe the conscious ground of cosmic existence.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya] Sages gather to investigate the root source of reality, rejecting unconscious time, nature, or chance as the ultimate cause.",
+          "hi": "[आदि शंकराचार्य] ब्रह्मवेत्ता ऋषि परम कारण की मीमांसा करते हैं और काल या स्वभाव जैसे जड़ कारणों को अस्वीकार कर चैतन्य ब्रह्म की खोज करते हैं।",
+          "mr": "[आद्य शंकराचार्य] विश्वाचे मूळ कारण काय आहे या गहन प्रश्नाचा शोध घेणारे हे श्लोक मानवी बुद्धीला अंतिम सत्याकडे वळवतात."
+        },
+        "universal-synthesis": {
+          "en": "[Vedic Theistic Synthesis] The Upanishad begins by anchoring philosophical questioning in the highest yearning of the human spirit for its divine origin.",
+          "hi": "[वैदिक समन्वय] जीवन का उद्गम और उसका चरम लक्ष्य केवल आत्मज्ञान में ही पूर्णता प्राप्त कर सकता है।",
+          "mr": "[वैदिक समन्वय] आत्मज्ञानाशिवाय जीवनाच्या कोणत्याही कोड्याचे अंतिम उत्तर मिळू शकत नाही हेच उपनिषदांचे प्रतिपादन आहे."
+        }
+      }
+    },
+    {
+      "chapter": 1,
+      "verse": 2,
+      "original": "ते ध्यानयोगानुगता अपश्यन् देवात्मशक्तिं स्वगुणैर्निगूढाम् । यः कारणानि निखिलानि तानि कालात्मयुक्तान्यधितिष्ठत्येकः ॥ २ ॥",
+      "transliteration": "te dhyāna-yogānugatā apaśyan devātma-śaktiṃ svaguṇair-nigūḍhām | yaḥ kāraṇāni nikhilāni tāni kālātma-yuktāny-adhitiṣṭhaty-ekaḥ || 2 ||",
+      "translation": "Entering into the absorption of deep meditation (Dhyana-Yoga), they discovered the mysterious divine power of God, concealed by its own qualities (Gunas), which alone rules all the causes from time to the soul.",
+      "meaning": "Reasoning alone cannot pierce the cosmic mystery; it is through contemplative stillness that the divine creative power (Devatma-Shakti) is beheld.",
+      "layers": {
+        "adi-shankara": {
+          "en": "[Adi Shankaracharya] Through meditative absorption, the sages perceived Maya, the inexplicable divine potency of Brahman, veiling the truth through Sattva, Rajas, and Tamas.",
+          "hi": "[आदि शंकराचार्य] ध्यानयोग में लीन होकर ऋषियों ने परब्रह्म की उस त्रिगुणात्मिका शक्ति (माया) का साक्षात्कार किया जो सम्पूर्ण विश्व का संचालन करती है।",
+          "mr": "[आद्य शंकराचार्य] केवळ तर्काने नव्हे तर ध्यानयोगाच्या माध्यमातूनच विश्वाच्या गूढ दैवी शक्तीचे रहस्य साधकाला उलगडते."
+        },
+        "universal-synthesis": {
+          "en": "[Vedic Theistic Synthesis] The bridge between Ashtanga Yoga and Vedantic metaphysics: direct empirical realization through contemplative stillness.",
+          "hi": "[वैदिक समन्वय] योग साधना और आत्मज्ञान का यह संगम मानवीय चेतना को प्रत्यक्ष अनुभूति प्रदान करता है।",
+          "mr": "[वैदिक समन्वय] ध्यानाच्या शांततेतच आत्मशक्तीचा प्रत्यक्ष साक्षात्कार घडून सर्व संशय कायमचे नाहीसे होतात."
+        }
+      }
+    }
+  ]
+}

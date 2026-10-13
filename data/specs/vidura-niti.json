@@ -1,0 +1,85 @@
+{
+  "spec": {
+    "slug": "vidura-niti",
+    "name": "Vidura Niti",
+    "nameDevanagari": "विदुरनीतिः",
+    "nameHi": "विदुर नीति",
+    "nameMr": "विदुर नीती",
+    "category": "itihas",
+    "totalChapters": 8,
+    "description": "The timeless ethical and statecraft counsel delivered by Mahatma Vidura to King Dhritarashtra in the Udyoga Parva of the Mahabharata, expounding the virtues of the wise (Pandita) and the laws of righteous conduct.",
+    "sourceUrl": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/mbh_05_u.htm",
+    "license": "Public Domain (Classical Sanskrit Itihasa)",
+    "publicDomainYear": 1923,
+    "chapterNames": {
+      "1": "Adhyāya 1 — The Insomnia of Dhritarashtra & Marks of the Wise Person (Pandita)",
+      "2": "Adhyāya 2 — The Seven Flaws, Eight Qualities of Man & The Nature of Dharma",
+      "3": "Adhyāya 3 — Statecraft, Counsel, Truthfulness & Protection of Subjects",
+      "4": "Adhyāya 4 — Sins of Envy, Greed & The Power of Forgiveness (Kshama)",
+      "5": "Adhyāya 5 — Duties of Kings, Upright Governance & Avoiding Hubris",
+      "6": "Adhyāya 6 — Moral Discernment, Purity of Wealth & True Friendship",
+      "7": "Adhyāya 7 — Self-Control (Dama), Contentment & Vanquishing Anger",
+      "8": "Adhyāya 8 — The Mystery of Death & Invocation of Sanatsujata"
+    },
+    "hasPreface": true,
+    "hasPostface": true,
+    "authors": [
+      {
+        "id": "mahatma-vidura",
+        "name": "Mahatma Vidura",
+        "lineage": "Dharma Incarnation",
+        "work": "Vidura Niti (Mahabharata Udyoga Parva)",
+        "description": "Embodiment of Dharma itself speaking fearless truth to power with total moral integrity."
+      },
+      {
+        "id": "universal-synthesis",
+        "name": "Ethical Statecraft & Pandita Lakshan",
+        "lineage": "Vedic Hermeneutics",
+        "work": "Vidura Niti Bhasya",
+        "description": "Exposition of realistic moral psychology, leadership resilience, and timeless governance."
+      }
+    ]
+  },
+  "rawVerses": [
+    {
+      "chapter": 1,
+      "verse": 1,
+      "original": "आत्मज्ञानं समारम्भस्तितिक्षा धर्मनित्यता । यमर्था नापकर्षन्ति स वै पण्डित उच्यते ॥ १ ॥",
+      "transliteration": "ātmajñānaṃ samārambhas-titikṣā dharmanityatā | yam-arthā nāpakarṣanti sa vai paṇḍita ucyate || 1 ||",
+      "translation": "He whose efforts are grounded in self-knowledge, perseverance, forbearance, and steadfast devotion to righteousness, and whom worldly desires cannot deflect from his purpose — he verily is called a wise person (Pandita).",
+      "meaning": "The classical definition of a Pandita: wisdom is not mere intellectual book-learning, but moral courage, emotional equanimity, and devotion to truth.",
+      "layers": {
+        "mahatma-vidura": {
+          "en": "[Mahatma Vidura] A truly wise man knows his own capacities, acts with resolute determination, endures hardships without complaint, and never wavers from virtue.",
+          "hi": "[महात्मा विदुर] जो आत्मज्ञानी, कर्मठ, सहनशील और धर्मपरायण है, जिसे सांसारिक प्रलोभन सत्य से विचलित नहीं कर सकते, वही सच्चा पण्डित (बुद्धिमान) है।",
+          "mr": "[महात्मा विदुर] ज्याला स्वतःचे सामर्थ्य ठाऊक आहे, जो संकटात डगमगत नाही आणि ज्याची धर्मावर अढळ निष्ठा आहे, त्यालाच खरा ज्ञानी म्हणावे."
+        },
+        "universal-synthesis": {
+          "en": "[Ethical Statecraft] Moral integrity and emotional resilience constitute the highest foundation of effective leadership and public service.",
+          "hi": "[नीति शास्त्र] चारित्रिक शुचिता और मानसिक दृढ़ता ही किसी भी शासक या प्रशासक की वास्तविक योग्यता है।",
+          "mr": "[नीती शास्त्र] चारित्र्य आणि संयम यावर आधारलेली बुद्धिमत्ताच समाजाला आणि राज्याला स्थिरता प्रदान करते."
+        }
+      }
+    },
+    {
+      "chapter": 1,
+      "verse": 2,
+      "original": "एकः क्षमावतां दोषो द्वितीयो नोपपद्यते । यदेनं क्षमया युक्तमशक्तं मन्यते जनः ॥ २ ॥",
+      "transliteration": "ekaḥ kṣamāvatāṃ doṣo dvitīyo nopapadyate | yad-enaṃ kṣamayā yuktam-aśaktaṃ manyate janaḥ || 2 ||",
+      "translation": "There is only one apparent flaw in the forgiving person, and no second can be found: namely, that foolish people often mistake forgiveness for weakness.",
+      "meaning": "Forgiveness is the highest virtue of the strong; while short-sighted minds may mistake patience for incapacity, forgiveness ultimately conquers all hatred.",
+      "layers": {
+        "mahatma-vidura": {
+          "en": "[Mahatma Vidura] Forgiveness is the supreme weapon of peace; what can an enraged enemy do to someone whose hand bears the shield of forgiveness?",
+          "hi": "[महात्मा विदुर] क्षमा सबसे बड़ा बल है। क्षमारूपी ढाल धारण करने वाले साधु का दुष्ट जन कुछ भी अनिष्ट नहीं कर सकते।",
+          "mr": "[महात्मा विदुर] क्षमा हा दुर्बलांचा नव्हे तर सामर्थ्यवानांचा अलंकार आहे; क्षमेने सर्व जग जिंकता येते."
+        },
+        "universal-synthesis": {
+          "en": "[Ethical Statecraft] The psychology of strategic restraint: magnanimity disarms conflict where retaliatory aggression only perpetuates cycles of destruction.",
+          "hi": "[नीति शास्त्र] प्रतिशोध की अग्नि को केवल क्षमा और विवेक के जल से ही शांत किया जा सकता है।",
+          "mr": "[नीती शास्त्र] क्रोधावर विजय मिळवून क्षमा अंगीकारणे हीच खरी मुत्सद्देगिरी आणि आत्मिक विजय आहे."
+        }
+      }
+    }
+  ]
+}

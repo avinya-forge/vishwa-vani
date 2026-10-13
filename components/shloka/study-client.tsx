@@ -433,7 +433,10 @@ export default function StudyClient({
   const [_isChapterSynthesizing, _setIsChapterSynthesizing] = useState(false)
   const [drawerOpenForVerse, setDrawerOpenForVerse] = useState<string | null>(null)
   const verseRefs = useRef<Record<number, HTMLElement | null>>({})
-  const cleanText = (txt: string) => (txt || '').replace(/\\n/g, '\n')
+  const cleanText = (txt: string) => {
+    if (!txt || typeof txt !== 'string' || txt.trim().toLowerCase() === 'undefined' || txt.trim().toLowerCase() === 'null') return ''
+    return txt.replace(/\\n/g, '\n').trim()
+  }
   
   const _synthesizeEntireChapter = async () => {
     _setIsChapterSynthesizing(true)
@@ -933,26 +936,66 @@ export default function StudyClient({
                 ) : null}
 
                 {/* Universal Translation (Always in English) */}
-                <VerseBaseTranslation
-                  baseTranslation={String(v.translation || v.meaning || '')}
-                  cleanText={cleanText}
-                />
+                {(() => {
+                  let englishTranslation = String(v.translation || v.meaning || '');
+                  // Fallback: search layers if top-level translation is empty
+                  if (!englishTranslation || englishTranslation.toLowerCase() === 'undefined') {
+                    const layers = v.layers as Array<Record<string, unknown>> | undefined;
+                    if (Array.isArray(layers)) {
+                      const enLayer = layers.find(l => l.lang === 'en' && (l.type === 'translation' || l.type === 'meaning'));
+                      if (enLayer) {
+                        englishTranslation = String(enLayer.content || enLayer.translation || '');
+                      }
+                    }
+                  }
+                  if (!englishTranslation || englishTranslation.toLowerCase() === 'undefined') return null;
 
-                {/* Regional Direct Meaning (if selected language is not EN) */}
-                {languageSelection !== 'en' && (
-                  <div className="px-4 sm:px-6 pb-2">
-                    <p className="text-[10px] font-black uppercase tracking-widest text-stone-400 dark:text-stone-500 mb-2">
-                      {getLanguageLabel(languageSelection)} Meaning
-                    </p>
+                  return (
                     <VerseBaseTranslation
-                      baseTranslation={String(
-                        languageSelection === 'hi' ? v.translation_hi || v.meaning_hi : 
-                        languageSelection === 'mr' ? v.translation_mr || v.meaning_mr : ''
-                      )}
+                      baseTranslation={englishTranslation}
                       cleanText={cleanText}
                     />
-                  </div>
-                )}
+                  );
+                })()}
+
+                {/* Regional Direct Meaning (if selected language is not EN) */}
+                {(() => {
+                  if (languageSelection === 'en') return null;
+                  
+                  let regionalText = '';
+                  if (languageSelection === 'hi') {
+                    regionalText = String(v.translation_hi || v.meaning_hi || '');
+                  } else if (languageSelection === 'mr') {
+                    regionalText = String(v.translation_mr || v.meaning_mr || '');
+                  } else if (languageSelection === 'sa') {
+                    regionalText = String(v.translation_sa || v.meaning_sa || '');
+                  }
+
+                  // Fallback to layers search for regional language
+                  if (!regionalText || regionalText.toLowerCase() === 'undefined') {
+                    const layers = v.layers as Array<Record<string, unknown>> | undefined;
+                    if (Array.isArray(layers)) {
+                      const langLayer = layers.find(l => l.lang === languageSelection && (l.type === 'translation' || l.type === 'meaning'));
+                      if (langLayer) {
+                        regionalText = String(langLayer.content || langLayer.translation || '');
+                      }
+                    }
+                  }
+
+                  if (!regionalText || regionalText.toLowerCase() === 'undefined' || regionalText.trim() === '') return null;
+
+                  return (
+                    <div className="px-4 sm:px-6 pb-2">
+                      <p className="text-[10px] font-black uppercase tracking-widest text-stone-400 dark:text-stone-500 mb-2">
+                        {getLanguageLabel(languageSelection)} Meaning
+                      </p>
+                      <VerseBaseTranslation
+                        baseTranslation={regionalText}
+                        cleanText={cleanText}
+                      />
+                    </div>
+                  );
+                })()}
 
                 {/* Commentary */}
                 <VerseCommentarySection

@@ -90,7 +90,7 @@ describe('getDynamicLibraryStats', () => {
 
   it('categories array is non-empty and contains valid values', async () => {
     const stats = await getDynamicLibraryStats();
-    const validCategories = ['itihas', 'upanishad', 'veda', 'purana', 'other'];
+    const validCategories = ['itihas', 'upanishad', 'veda', 'purana', 'charitra', 'other'];
     stats.categories.forEach((cat: string) => expect(validCategories).toContain(cat));
   });
 

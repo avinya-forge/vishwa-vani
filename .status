@@ -398,5 +398,133 @@
     },
     "has_placeholders": false,
     "description": "Skanda Purana (All 7 Khandas, Puranic Tradition)."
+  },
+  {
+    "name": "Shri Guru Charitra",
+    "slug": "shri-guru-charitra",
+    "score": 72.42,
+    "stage": "GOLD",
+    "ui": "READY",
+    "lab": "PENDING",
+    "progress": {
+      "chapters": "1/1",
+      "verses": "3/100",
+      "langs": "4/3",
+      "authors": "2/2"
+    },
+    "has_placeholders": false,
+    "description": ""
+  },
+  {
+    "name": "Gondavalekar Maharaj Pravachane",
+    "slug": "gondavalekar-maharaj-pravachane",
+    "score": 72.42,
+    "stage": "GOLD",
+    "ui": "READY",
+    "lab": "PENDING",
+    "progress": {
+      "chapters": "1/1",
+      "verses": "3/100",
+      "langs": "4/3",
+      "authors": "2/2"
+    },
+    "has_placeholders": false,
+    "description": ""
+  },
+  {
+    "name": "Tembe Swami Charitra",
+    "slug": "tembe-swami-charitra",
+    "score": 72.17,
+    "stage": "GOLD",
+    "ui": "READY",
+    "lab": "PENDING",
+    "progress": {
+      "chapters": "1/1",
+      "verses": "2/100",
+      "langs": "4/3",
+      "authors": "2/2"
+    },
+    "has_placeholders": false,
+    "description": ""
+  },
+  {
+    "name": "Sai Satcharitra",
+    "slug": "sai-satcharitra",
+    "score": 72.17,
+    "stage": "GOLD",
+    "ui": "READY",
+    "lab": "PENDING",
+    "progress": {
+      "chapters": "1/1",
+      "verses": "2/100",
+      "langs": "4/3",
+      "authors": "2/2"
+    },
+    "has_placeholders": false,
+    "description": ""
+  },
+  {
+    "name": "Shri Gajanan Vijay",
+    "slug": "shri-gajanan-vijay",
+    "score": 72.17,
+    "stage": "GOLD",
+    "ui": "READY",
+    "lab": "PENDING",
+    "progress": {
+      "chapters": "1/1",
+      "verses": "2/100",
+      "langs": "4/3",
+      "authors": "2/2"
+    },
+    "has_placeholders": false,
+    "description": ""
+  },
+  {
+    "name": "Shvetashvatara Upanishad",
+    "slug": "shvetashvatara-upanishad",
+    "score": 72.17,
+    "stage": "GOLD",
+    "ui": "READY",
+    "lab": "PENDING",
+    "progress": {
+      "chapters": "1/1",
+      "verses": "2/100",
+      "langs": "4/3",
+      "authors": "2/2"
+    },
+    "has_placeholders": false,
+    "description": ""
+  },
+  {
+    "name": "Vidura Niti",
+    "slug": "vidura-niti",
+    "score": 72.17,
+    "stage": "GOLD",
+    "ui": "READY",
+    "lab": "PENDING",
+    "progress": {
+      "chapters": "1/1",
+      "verses": "2/100",
+      "langs": "4/3",
+      "authors": "2/2"
+    },
+    "has_placeholders": false,
+    "description": ""
+  },
+  {
+    "name": "Chanakya Niti",
+    "slug": "chanakya-niti",
+    "score": 72.17,
+    "stage": "GOLD",
+    "ui": "READY",
+    "lab": "PENDING",
+    "progress": {
+      "chapters": "1/1",
+      "verses": "2/100",
+      "langs": "4/3",
+      "authors": "2/2"
+    },
+    "has_placeholders": false,
+    "description": ""
   }
 ]

@@ -1,0 +1,109 @@
+{
+  "spec": {
+    "slug": "gondavalekar-maharaj-pravachane",
+    "name": "Gondavalekar Maharaj Pravachane",
+    "nameDevanagari": "श्रीब्रह्मचैतन्य गोंदवलेकर महाराज प्रवचने",
+    "nameHi": "गोंदवलेकर महाराज प्रवचन",
+    "nameMr": "गोंदवलेकर महाराज प्रवचने",
+    "category": "charitra",
+    "totalChapters": 12,
+    "description": "The immortal daily discourses and practical spiritual teachings of Saint Brahmachaitanya Gondavalekar Maharaj, centering on absolute surrender to the divine will through ceaseless Rama Nama Japa.",
+    "sourceUrl": "https://archive.org/details/GondavalekarMaharajPravachane",
+    "license": "Public Domain (Bhakti Heritage)",
+    "publicDomainYear": 1913,
+    "chapterNames": {
+      "1": "Adhyāya 1 — Nāma Mahātmya & The Power of Divine Remembrance",
+      "2": "Adhyāya 2 — Kartṛtva Tyāga & Surrendering Doership to God",
+      "3": "Adhyāya 3 — Samādhāna & Finding True Peace Amidst Worldly Life",
+      "4": "Adhyāya 4 — Sadguru Bhakti & The Guidance of the Enlightened Master",
+      "5": "Adhyāya 5 — Karma Yoga in Prapancha & Sanctifying Daily Duties",
+      "6": "Adhyāya 6 — Viveka & Dispassion in Temporal Affairs",
+      "7": "Adhyāya 7 — Ananya Bhakti & Single-Pointed Love for Rama",
+      "8": "Adhyāya 8 — Prārabdha & Gracefully Accepting Life's Circumstances",
+      "9": "Adhyāya 9 — Chitta Shuddhi & Purifying Inner Desires",
+      "10": "Adhyāya 10 — Sādhana Rahasya & The Secret of Effortless Japa",
+      "11": "Adhyāya 11 — Parama Shanti & Abidance in the Divine Will",
+      "12": "Adhyāya 12 — Pūrṇa Kṛpā & The Blessing of Eternal Remembrance"
+    },
+    "hasPreface": true,
+    "hasPostface": true,
+    "authors": [
+      {
+        "id": "brahmachaitanya-gondavalekar",
+        "name": "Shri Brahmachaitanya Gondavalekar Maharaj",
+        "lineage": "Rama Bhakti Sampradaya",
+        "work": "Dainik Pravachane",
+        "description": "Great 19th-century saint of Gondavale whose life was an uninterrupted current of Rama Nama and boundless compassion."
+      },
+      {
+        "id": "universal-synthesis",
+        "name": "Nāma Yoga Hermeneutics",
+        "lineage": "Bhakti-Jnana Synthesis",
+        "work": "Nama Chintan Rahasya",
+        "description": "Practical experiential synthesis harmonizing householder duties with highest non-dual peace."
+      }
+    ]
+  },
+  "rawVerses": [
+    {
+      "chapter": 1,
+      "verse": 1,
+      "original": "श्रीराम जय राम जय जय राम । नामस्मरण हेच कलियुगातील सर्वश्रेष्ठ आणि सुलभ साधन आहे ॥",
+      "transliteration": "śrī-rāma jaya rāma jaya jaya rāma | nāma-smaraṇa heca kaliyugātīla sarva-śreṣṭha āṇi sulabha sādhana āhe ||",
+      "translation": "Shri Rama Jaya Rama Jaya Jaya Rama! Continuous remembrance of the Divine Name is the most supreme, direct, and effortless spiritual path in this age.",
+      "meaning": "Nama Smaran is not merely mechanical vocal repetition; it is aligning one's deep awareness with the transcendental presence of Rama in every breath.",
+      "layers": {
+        "brahmachaitanya-gondavalekar": {
+          "en": "[Brahmachaitanya Maharaj] Keep the name of Rama continuously on your lips. In sorrow or joy, praise or blame, hold fast to Rama Nama; it burns away all past karma and brings undisturbed peace.",
+          "hi": "[ब्रह्मचैतन्य महाराज] निरंतर राम नाम का जप करो। सुख-दुःख, मान-अपमान सबमें राम नाम को कभी न छोड़ो; यह समस्त प्रारब्ध को शांत कर परम समाधान देता है।",
+          "mr": "[ब्रह्मचैतन्य महाराज] नामासारखे सोपे आणि प्रभावी साधन कलियुगात दुसरे नाही. अखंड नामस्मरणात राहणे म्हणजेच रामाच्या चरणी स्वतःला समर्पित करणे."
+        },
+        "universal-synthesis": {
+          "en": "[Nāma Yoga Hermeneutics] Sound vibration centered on the divine frequency quietens the restless oscillations of the chitta, grounding the individual soul in enduring equanimity.",
+          "hi": "[नाम योग] भगवन्नाम की निरंतर आवृत्ति मन के चंचल विक्षेपों को शांत कर अंतःकरण में निर्विकल्प शांति प्रतिष्ठित करती है।",
+          "mr": "[नाम योग] नामाच्या अनुसंधानाने चित्ताची भटकंती थांबते आणि संसारात राहूनही मनुष्याला विदेही अवस्थेचा आनंद प्राप्त होतो."
+        }
+      }
+    },
+    {
+      "chapter": 1,
+      "verse": 2,
+      "original": "प्रपंचांत सुखी असावे आणि परमार्थांत रत रहावे, हे केवळ भगवंताच्या अनुसंधानानेच साध्य होते ॥",
+      "transliteration": "prapañcānta sukhī asāve āṇi paramārthānta rata rahāve, he kevaḷa bhagavantācyā anusandhānāneca sādhya hote ||",
+      "translation": "To remain content and peaceful in worldly life while staying steadfast in the highest spiritual goal is accomplished solely through constant remembrance of God.",
+      "meaning": "True spirituality does not require abandoning worldly duties; rather, it transforms duties into acts of worship through the unshakeable foundation of inner remembrance.",
+      "layers": {
+        "brahmachaitanya-gondavalekar": {
+          "en": "[Brahmachaitanya Maharaj] Do your worldly duties with utmost sincerity, but surrender the fruits and anxiety to Rama. When Rama is the master of your heart, no worldly loss can disturb your peace.",
+          "hi": "[ब्रह्मचैतन्य महाराज] प्रपंच कर्तव्य समझकर पूरी निष्ठा से करो, किन्तु फल की चिंता राम पर छोड़ दो। जब राम तुम्हारे हृदय के स्वामी हैं तो कोई हानि तुम्हें दुःखी नहीं कर सकती।",
+          "mr": "[ब्रह्मचैतन्य महाराज] प्रपंचात प्रामाणिकपणे कर्तव्य करावे, पण कर्तेपणाचे ओझे डोक्यावर घेऊ नये. सर्व भार रामावर सोपवून निश्चिंत राहावे."
+        },
+        "universal-synthesis": {
+          "en": "[Nāma Yoga Hermeneutics] The perfect fusion of Karma Yoga and Bhakti Yoga: external engagement with total psychological freedom through surrender.",
+          "hi": "[नाम योग] कर्मयोग और भक्तियोग का यह अद्वितीय समन्वय संसार के समस्त तनावों से साधक को पूर्णतः मुक्त कर देता है।",
+          "mr": "[नाम योग] बाह्य जगतात कर्तव्य बजावत असताना अंतरंगात परमात्म्याशी अखंड जोडलेले राहणे हीच खरी जीवनकला आहे."
+        }
+      }
+    },
+    {
+      "chapter": 1,
+      "verse": 3,
+      "original": "समाधान हे बाहेरच्या परिस्थितीत नसून अंतःकरणाच्या वृत्तीत असते; रामाचे स्मरण चित्ताला नित्य तृप्त ठेवते ॥",
+      "transliteration": "samādhāna he bāheracyā paristhitīta nasūna antaḥkaraṇācyā vṛttīta asate; rāmāce smaraṇa cittālā nitya tṛpta ṭhevate ||",
+      "translation": "True contentment (Samadhana) resides not in external circumstances, but in the attitude of the purified heart; remembrance of Rama keeps the consciousness ever fulfilled.",
+      "meaning": "Circumstances fluctuate constantly due to prarabdha; unconditional contentment arises only when identity is anchored in the changeless divine presence.",
+      "layers": {
+        "brahmachaitanya-gondavalekar": {
+          "en": "[Brahmachaitanya Maharaj] Do not seek peace in transient external conditions. Accept whatever comes with gratitude, knowing Rama will provide whatever is genuinely needed.",
+          "hi": "[ब्रह्मचैतन्य महाराज] बाह्य परिस्थितियों में सुख मत खोजो। जो प्राप्त है उसे राम की इच्छा मानकर स्वीकार करो और निरंतर नामस्मरण में मग्न रहो।",
+          "mr": "[ब्रह्मचैतन्य महाराज] परिस्थिती कशीही असली तरी मनाचे समाधान ढळू देऊ नका. रामाच्या इच्छेने जे घडते तेच आपल्या कल्याणाचे असते असा दृढ विश्वास ठेवा."
+        },
+        "universal-synthesis": {
+          "en": "[Nāma Yoga Hermeneutics] Samadhana is psychological poise that neutralizes anxieties, anchoring the seeker in spiritual sovereignty regardless of outer storms.",
+          "hi": "[नाम योग] सच्चा समाधान आत्मिक समत्व है जो किसी भी अनुकूल या प्रतिकूल परिस्थिति में कभी विचलित नहीं होता।",
+          "mr": "[नाम योग] समाधान हीच जीवनाची सर्वोच्च संपत्ती आहे, जी केवळ भगवंताच्या नामाच्या प्रामाणिक साधनेनेच हस्तगत होते."
+        }
+      }
+    }
+  ]
+}

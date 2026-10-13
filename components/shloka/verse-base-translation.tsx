@@ -9,12 +9,16 @@ export default function VerseBaseTranslation({ baseTranslation, cleanText }: Ver
   if (!baseTranslation || typeof baseTranslation !== 'string') return null;
   const text = baseTranslation.trim();
 
-  // Reject empty strings and known placeholder patterns; length check skipped
-  // (base translations can legitimately be short, e.g. sutras or mantras)
-  const knownBadPatterns = ['[PLACEHOLDER_', 'TBD_CONTENT', 'TODO_LAYER', 'LOREM IPSUM', 'THIS IS A GENERIC PLACEHOLDER', 'INSERTED TO SATISFY THE MINIMUM LENGTH']
-  const isPlaceholder = !text || text.startsWith('[') || knownBadPatterns.some(p => text.toUpperCase().includes(p.toUpperCase()))
+  // Reject empty strings, literal 'undefined', 'null', and known placeholder patterns
+  if (!text || text.toLowerCase() === 'undefined' || text.toLowerCase() === 'null') return null;
+
+  const knownBadPatterns = ['[PLACEHOLDER_', 'TBD_CONTENT', 'TODO_LAYER', 'LOREM IPSUM', 'THIS IS A GENERIC PLACEHOLDER', 'INSERTED TO SATISFY THE MINIMUM LENGTH'];
+  const isPlaceholder = text.startsWith('[') || knownBadPatterns.some(p => text.toUpperCase().includes(p.toUpperCase()));
 
   if (isPlaceholder) return null;
+
+  const cleaned = cleanText(text);
+  if (!cleaned || cleaned.toLowerCase() === 'undefined') return null;
 
   return (
     <div className="px-5 sm:px-8 py-6 sm:py-10 border-b border-stone-100/50 dark:border-stone-800/50 bg-white/40 dark:bg-black/20 backdrop-blur-sm">

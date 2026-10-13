@@ -22,6 +22,17 @@ jest.mock('next/link', () => {
 })
 
 describe('StudyClient (Reading Canvas & Empirical Knowledge Integration)', () => {
+  beforeAll(() => {
+    HTMLCanvasElement.prototype.getContext = jest.fn(() => ({
+      measureText: jest.fn(() => ({ width: 100 })),
+      fillText: jest.fn(),
+      fillRect: jest.fn(),
+      scale: jest.fn(),
+      font: '',
+      fillStyle: '',
+      clearRect: jest.fn(),
+    })) as unknown as typeof HTMLCanvasElement.prototype.getContext;
+  });
   const mockVerses = [
     {
       id: 'bg_17_8',

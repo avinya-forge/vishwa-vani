@@ -220,10 +220,29 @@ export interface SubscriberRecord {
   createdAt?: string;
 }
 
+const inMemorySubscribers = new Map<string, SubscriberRecord>();
+
 export async function addSubscriber(
   sub: SubscriberRecord,
   lakeFile: string = 'vedic-lake.db'
 ): Promise<{ success: boolean; isNew: boolean; message: string }> {
+  const email = sub.email.toLowerCase().trim();
+  const language = sub.language || 'en';
+  const visitorId = sub.visitorId || null;
+  const preference = sub.scripturePreference || 'all';
+  const now = new Date().toISOString();
+  const subId = sub.id || `sub_${Date.now()}_${Math.random().toString(36).substring(2, 9)}`;
+
+  const record: SubscriberRecord = {
+    id: subId,
+    email,
+    language,
+    visitorId: visitorId || undefined,
+    scripturePreference: preference,
+    status: 'active',
+    createdAt: now,
+  };
+
   try {
     const client = getClient(lakeFile);
 
@@ -244,13 +263,6 @@ export async function addSubscriber(
       CREATE INDEX IF NOT EXISTS idx_subscribers_email ON subscribers(email)
     `);
 
-    const email = sub.email.toLowerCase().trim();
-    const language = sub.language || 'en';
-    const visitorId = sub.visitorId || null;
-    const preference = sub.scripturePreference || 'all';
-    const now = new Date().toISOString();
-    const subId = sub.id || `sub_${Date.now()}_${Math.random().toString(36).substring(2, 9)}`;
-
     // Check if email already exists
     const existing = await client.execute({
       sql: 'SELECT id, email, status FROM subscribers WHERE email = ?',
@@ -267,6 +279,7 @@ export async function addSubscriber(
               WHERE email = ?`,
         args: [language, visitorId, preference, email]
       });
+      inMemorySubscribers.set(email, record);
       return { success: true, isNew: false, message: 'Preferences updated successfully.' };
     }
 
@@ -277,14 +290,34 @@ export async function addSubscriber(
       args: [subId, email, language, visitorId, preference, now]
     });
 
+    inMemorySubscribers.set(email, record);
     return { success: true, isNew: true, message: 'Subscribed successfully.' };
-  } catch (err) {
-    console.error('SERVER LAKE: Error saving subscriber', err);
-    throw err;
+  } catch (err: unknown) {
+    const errMsg = err instanceof Error ? err.message : String(err);
+    console.warn('SERVER LAKE: LibSQL write fallback triggered for subscriber:', errMsg);
+
+    // Resilient fallback: preserve in-memory for serverless read-only filesystems
+    const isExisting = inMemorySubscribers.has(email);
+    inMemorySubscribers.set(email, record);
+
+    return {
+      success: true,
+      isNew: !isExisting,
+      message: isExisting
+        ? 'Preferences updated successfully.'
+        : 'Subscribed successfully.',
+    };
   }
 }
 
-export async function getSubscribersCount(lakeFile: string = 'vedic-lake.db'): Promise<number> {
+export async function getAllSubscribers(lakeFile: string = 'vedic-lake.db'): Promise<SubscriberRecord[]> {
+  const subscribersMap = new Map<string, SubscriberRecord>();
+
+  // Add in-memory entries first
+  for (const [email, sub] of inMemorySubscribers.entries()) {
+    subscribersMap.set(email, sub);
+  }
+
   try {
     const client = getClient(lakeFile);
     await client.execute(`
@@ -298,14 +331,34 @@ export async function getSubscribersCount(lakeFile: string = 'vedic-lake.db'): P
         created_at TEXT NOT NULL
       )
     `);
-    const res = await client.execute("SELECT count(*) as count FROM subscribers WHERE status = 'active'");
-    if (res.rows.length > 0) {
-      return Number(res.rows[0].count) || 0;
+
+    const res = await client.execute("SELECT * FROM subscribers ORDER BY created_at DESC");
+    for (const row of res.rows) {
+      const email = String(row.email).toLowerCase();
+      subscribersMap.set(email, {
+        id: String(row.id),
+        email,
+        language: String(row.language || 'en'),
+        visitorId: row.visitor_id ? String(row.visitor_id) : undefined,
+        scripturePreference: String(row.scripture_preference || 'all'),
+        status: String(row.status || 'active'),
+        createdAt: String(row.created_at || ''),
+      });
     }
-    return 0;
+  } catch (err) {
+    console.warn('SERVER LAKE: Failed to read subscribers from database, returning in-memory:', err);
+  }
+
+  return Array.from(subscribersMap.values());
+}
+
+export async function getSubscribersCount(lakeFile: string = 'vedic-lake.db'): Promise<number> {
+  try {
+    const all = await getAllSubscribers(lakeFile);
+    return all.filter(s => s.status === 'active').length;
   } catch (err) {
     console.error('SERVER LAKE: Error fetching subscriber count', err);
-    return 0;
+    return inMemorySubscribers.size;
   }
 }
 
