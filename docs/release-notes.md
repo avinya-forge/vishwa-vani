@@ -17,14 +17,26 @@
 - [x] **Body Scroll Lock & Escape Listener**: Locked background body scrolling (`document.body.style.overflow = 'hidden'`) while the mobile navigation menu is active, with instant dismissal on clicking the backdrop or pressing the Escape key.
 - [x] **Organized Quick Navigation**: Curated featured canonical scriptures grid with instant link to full 33-book library, plus high-contrast navigation links to Essence, Vedic Science, Deep Search, Vedic Labs, Roadmap, and Admin Console.
 
-### 🛡️ Ethical Data Governance & Privacy Page (`/privacy`)
+### 🛡️ Ethical Data Governance, Privacy Page & Feature Flags
 - [x] **Zero-PII Privacy Policy**: Created `app/privacy/page.tsx` detailing Vishwa-Vani's open-access commitment, local-first offline storage (`localStorage`), zero invasive tracking, anonymized telemetry, and encrypted voluntary newsletter subscription handling.
 - [x] **Footer Route Resolution**: Connected footer link `/privacy` directly to the live page, preventing 404 navigation errors.
+- [x] `AUTH-001` **Feature Flags Engine (`lib/flags.ts`)**: Built type-safe feature flag engine supporting environment flags (`NEXT_PUBLIC_ENABLE_AUTH`, `NEXT_PUBLIC_ENABLE_2FA`, `NEXT_PUBLIC_ENABLE_RAMAYANA_MULTIVERSE`), client-side admin overrides via `localStorage`, and zero hydration SSR mismatches.
+- [x] `AUTH-002` **Zero-PII Social OAuth Authentication Gateway (`lib/auth/gateway.ts`)**: Built irreversible cryptographic SHA-256 user hashing pipeline (`SHA256(provider + ':' + providerAccountId + ':' + salt)`), complete OAuth incoming profile sanitizer permanently purging emails, full names, and avatars at the threshold, and HMAC-SHA256 signed stateless session tokens.
+- [x] `AUTH-003` **RFC 6238 TOTP Two-Factor Authentication Engine (`lib/auth/totp.ts`)**: Implemented RFC 6238 / RFC 4226 TOTP standard supporting Google Authenticator, Microsoft Authenticator, Authy, and Apple Keychain; zero-SMS architecture protecting seekers from SIM-swap vulnerabilities, with anonymous `otpauth://` QR pairing URI generator.
+- [x] **Landing Page Tradition Categorization**: Enhanced `app/page.tsx` with dedicated `charitra` (`🪷 Sant Charitras & Vāṇī`) thematic headers and subtitles, ensuring all 33 live scriptures are properly categorized and displayed.
+
+### 🏹 Ramayana Multiverse Architecture & Cross-Tradition Comparative Ontology
+- [x] **Option B Strategic Alignment**: Formalized Option B in `docs/backlog.md` onboardings: *Ramcharitmanas* (`RAM-BOOK-001`), *Kamba Ramayanam* (`RAM-BOOK-002`), *Adhyatma Ramayana* (`RAM-BOOK-003`), *Bhavartha Ramayana* (`RAM-BOOK-004`), and the Comparative Ramayana Episode Canvas (`RAM-COMP-001`).
+- [x] `RAM-COMP-001` **Ramayana Multiverse Episode Synopsis Graph (`data/ontology/ramayana-synopsis.json`, `lib/ramayana-synopsis.ts`)**: Built cross-tradition narrative ontology linking Valmiki Ramayana (Sanskrit), Ramcharitmanas (Awadhi), Kamba Ramayanam (Tamil), Adhyatma Ramayana (Sanskrit Advaita), and Bhavartha Ramayana (Marathi) across pivotal episodes (*Putrakameshti*, *Ahilya Uddhara*, *Sita Swayamvara*, *Kevala Prasanga*, *Lakshmana Rekha & Maya Sita*, *Jatayu Moksha*, *Sundara Kanda Ocean Leap*, *Vibhishana Sharanagati*).
+- [x] `RAM-BOOK-001` **Sri Ramcharitmanas Candidate Specification (`data/specs/ramcharitmanas.json`)**: Formulated 7 Sopanas canonical spec with Awadhi Chaupai/Doha meter metadata, Goswami Tulsidas & Gita Press lineages, and seed Mangalacharan invocations.
 
 ### 🧪 Test Expansion & Quality Gates
 - [x] `TEST-COV-002` **Header & Mobile Portal Tests**: Created `__tests__/components-header.test.tsx` verifying branding, mobile menu portal opening, backdrop click dismissal, and escape key event handling.
 - [x] **Privacy Page Tests**: Created `__tests__/privacy.test.tsx` validating data ethics sections and UI layout.
-- [x] **100% Verification Suite**: Full test suite passes green across all 73 test suites (408 passing tests, 0 failures), 0 ESLint errors, and 0 TypeScript compilation errors.
+- [x] **Feature Flags Engine Tests**: Created `__tests__/lib-flags.test.ts` (4/4 tests passing) validating environment defaults, client-side overrides, and corruption resilience.
+- [x] **Zero-PII Gateway & TOTP Tests**: Created `__tests__/lib-auth-gateway.test.ts` (10 tests) and `__tests__/lib-auth-totp.test.ts` (8 tests) verifying hashing determinism, zero PII retention, token tampering rejection, and clock drift tolerance.
+- [x] **Ramayana Multiverse & Spec Tests**: Created `__tests__/lib-ramayana-synopsis.test.ts` (6 tests) and `__tests__/data-specs-ramcharitmanas.test.ts` (4 tests).
+- [x] **100% Verification Suite**: Full test suite passes green across all 78 test suites (442 passing tests, 0 failures), 0 ESLint errors, and 0 TypeScript compilation errors.
 
 ## [1.8.0]
 ### From Backlog: 🌌 EPIC-ROADMAP-MASTER-VISION [STRATEGIC ROADMAP]

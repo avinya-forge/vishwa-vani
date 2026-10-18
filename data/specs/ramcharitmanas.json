@@ -1,0 +1,122 @@
+{
+  "spec": {
+    "slug": "ramcharitmanas",
+    "name": "Sri Ramcharitmanas",
+    "nameDevanagari": "श्रीरामचरितमानस",
+    "nameHi": "श्रीरामचरितमानस",
+    "nameMr": "श्रीरामचरितमानस",
+    "category": "itihas",
+    "totalChapters": 7,
+    "description": "The immortal Awadhi epic poem composed by Goswami Tulsidas in the 16th century, celebrating the divine leelas and supreme dharma of Bhagavan Sri Rama through sublime Chaupais, Dohas, Sorathas, and Chhandas across 7 Sopanas.",
+    "sourceUrl": "https://gitapress.org/ramcharitmanas",
+    "license": "Public Domain (Classical Awadhi Bhakti Heritage)",
+    "publicDomainYear": 1574,
+    "chapterNames": {
+      "1": "Bal Kand — The Divine Descent & Childhood Leelas",
+      "2": "Ayodhya Kand — Righteous Renunciation & Chitrakuta Exile",
+      "3": "Aranya Kand — Dandaka Hermitages & Shabari's Pure Bhakti",
+      "4": "Kishkindha Kand — Divine Friendship with Sugriva & Hanuman",
+      "5": "Sundar Kand — Hanuman's Ocean Leap & Devotional Triumph",
+      "6": "Lanka Kand — Construction of Rama Setu & Victory over Ravana",
+      "7": "Uttar Kand — Ramarajya, Sanatsujata Dialogue & Kakabhushundi-Garuda Samvada"
+    },
+    "chapterNamesHi": {
+      "1": "बालकाण्ड — श्री राम जन्म, बाल लीला एवं शिव विवाह",
+      "2": "अयोध्याकाण्ड — श्रीराम वनगमन, केवट प्रसंग एवं भरत चरित्र",
+      "3": "अरण्यकाण्ड — पञ्चवटी वास, शूर्पणखा, माया सीता एवं शबरी उद्धार",
+      "4": "किष्किन्धाकाण्ड — सुग्रीव मित्रता, वालि वध एवं सीता खोज",
+      "5": "सुन्दरकाण्ड — पवनसुत हनुमान पराक्रम, लंका दहन एवं विभीषण शरणागति",
+      "6": "लंकाकाण्ड — सेतु निर्माण, रावण वध एवं धर्म विजय",
+      "7": "उत्तरकाण्ड — श्रीराम राज्याभिषेक, रामराज्य महिमा एवं काकभुशुण्डि संवाद"
+    },
+    "chapterNamesMr": {
+      "1": "बालकांड — श्रीराम जन्म, बाललीला व शिव विवाह",
+      "2": "अयोध्याकांड — श्रीराम वनवास, केवट प्रसंग व भरत भेट",
+      "3": "अरण्यकांड — पंचवटी वास, शूर्पणखा व शबरी उद्धार",
+      "4": "किष्किंधाकांड — सुग्रीव सख्य, वालि वध व वानर सेना",
+      "5": "सुंदरकांड — मारुतीरायांचा पराक्रम व लंका दहन",
+      "6": "लंकाकांड — सेतु उभारणी, रावण वध व धर्म विजय",
+      "7": "उत्तरकांड — श्रीराम राज्याभिषेक, रामराज्य व काकभुशुंडी संवाद"
+    },
+    "hasPreface": true,
+    "hasPostface": true,
+    "authors": [
+      {
+        "id": "goswami-tulsidas",
+        "name": "Goswami Tulsidas",
+        "lineage": "Ramanandi Sampradaya / Bhakti Vāṇī",
+        "work": "Sri Ramcharitmanas",
+        "description": "Revered 16th-century poet-saint of Kashi whose Awadhi composition made the divine nectar of the Ramayana accessible to the masses."
+      },
+      {
+        "id": "gita-press-gorakhpur",
+        "name": "Gita Press Canonical Exegesis",
+        "lineage": "Sanatana Dharma Hermeneutics",
+        "work": "Kalyana Ramayana Kalpataru",
+        "description": "Authoritative traditional line-by-line word analysis, metrics, and contextual commentaries."
+      }
+    ]
+  },
+  "rawVerses": [
+    {
+      "chapter": 1,
+      "verse": 1,
+      "original": "वर्णानामर्थसंघानां रसानां छन्दसामपि । मङ्गलानां च कर्त्तारौ वन्दे वाणीविनायकौ ॥",
+      "transliteration": "varṇānām artha-saṅghānāṁ rasānāṁ chandasām api | maṅgalānāṁ ca karttārau vande vāṇī-vināyakau ||",
+      "translation": "I bow reverently to Goddess Sarasvati (the embodiment of sacred Speech) and Lord Ganesha (the remover of obstacles), who are the originators of letters, meanings, poetic sentiments (rasas), meters (chandas), and all auspicious blessings.",
+      "meaning": "Tulsidas inaugurates Sri Ramcharitmanas with profound reverence to divine speech and auspicious intellect, grounding the epic in classical Sanskrit invocatory meters.",
+      "layers": {
+        "goswami-tulsidas": {
+          "en": "[Goswami Tulsidas] Every righteous literary endeavor must begin by honoring divine intellect and pristine utterance, ensuring harmony between word and meaning.",
+          "hi": "[गोस्वामी तुलसीदास] वर्णों, अर्थसमूहों, रसों, छन्दों और सब मंगलों को करने वाले श्री सरस्वतीजी और श्री गणेशजी की मैं वंदना करता हूँ।",
+          "mr": "[गोस्वामी तुलसीदास] अक्षर, अर्थ, रस, छंद आणि सर्व मंगलांचे उगम असणाऱ्या श्री सरस्वती देवी आणि श्री गणेशरायांना मी विनम्र वंदन करतो."
+        },
+        "gita-press-gorakhpur": {
+          "en": "[Gita Press] The Mangalacharan unites Vak (Sarasvati) and Vighnaharta (Ganesha), establishing the seven foundational steps (Sopanas) of the lake of Rama's deeds.",
+          "hi": "[गीताप्रेस] वाणी और बुद्धि के अधिष्ठाता देवों की स्तुति से ग्रंथ निर्विघ्न पूर्ण होता है और चित्त शुद्ध होता है।",
+          "mr": "[गीताप्रेस] वाणी आणि विघ्नहर्ता गणरायाची आराधना ग्रंथाच्या निर्विघ्न समाप्तीसाठी व चित्तशुद्धीसाठी अत्यावश्यक आहे."
+        }
+      }
+    },
+    {
+      "chapter": 1,
+      "verse": 2,
+      "original": "भवानीशङ्करौ वन्दे श्रद्धाविश्वासरूपिणौ । याभ्यां विना न पश्यन्ति सिद्धाः स्वान्तःस्थमीश्वरम् ॥",
+      "transliteration": "bhavānī-śaṅkarau vande śraddhā-viśvāsa-rūpiṇau | yābhyāṁ vinā na paśyanti siddhāḥ svāntaḥstham īśvaram ||",
+      "translation": "I revere Goddess Bhavani (Parvati) and Lord Shankara, the divine embodiments of Faith (Shraddha) and Trust/Insight (Vishvasa), without whom even perfected sages cannot perceive the Supreme Lord seated within their own hearts.",
+      "meaning": "Shraddha and Vishvasa are established as the twin non-negotiable prerequisites of Self-realization and God-consciousness.",
+      "layers": {
+        "goswami-tulsidas": {
+          "en": "[Goswami Tulsidas] Knowledge without faith is sterile, and faith without discernment is blind. Bhavani and Shankara together awaken inner illumination.",
+          "hi": "[गोस्वामी तुलसीदास] श्रद्धा और विश्वास के स्वरूप श्री भवानी-शंकर की मैं वंदना करता हूँ, जिनके बिना सिद्धजन भी अपने अन्तःकरण में स्थित ईश्वर को नहीं देख पाते।",
+          "mr": "[गोस्वामी तुलसीदास] श्रद्धा आणि विश्वासाचे प्रत्यक्ष रूप असणाऱ्या भवानी-शंकरांना मी वंदन करतो, ज्यांच्या कृपेविना अंतर्यामी परमात्मा अनुभूत होत नाही."
+        },
+        "gita-press-gorakhpur": {
+          "en": "[Gita Press] Shiva and Shakti embody the synthesis of devotion and wisdom required to dive into the transcendental lake of Ramcharitmanas.",
+          "hi": "[गीताप्रेस] भगवान शिव रामनाम के परम उपासक हैं और माता पार्वती उनकी परम जिज्ञासु श्रोता हैं।",
+          "mr": "[गीताप्रेस] भगवान शिव रामनामाचे निस्सीम उपासक असून पार्वती माता या तत्त्वाची आद्य जिज्ञासू श्रोती आहेत."
+        }
+      }
+    },
+    {
+      "chapter": 5,
+      "verse": 1,
+      "original": "शान्तं शाश्वतमप्रमेयमनघं निर्वाणशान्तिप्रदं ब्रह्माशम्भुफणीन्द्रसेव्यमनिशं वेदान्तवेद्यं विभुम् । रामाख्यं जगदीश्वरं सुरगुरुं मायामनुष्यं हरिं वन्देऽहं करुणाकरं रघुवरं भूपालचूडामणिम् ॥",
+      "transliteration": "śāntaṁ śāśvatam aprameyam anaghaṁ nirvāṇa-śānti-pradaṁ brahmā-śambhu-phaṇīndra-sevyam aniśaṁ vedānta-vedyaṁ vibhum | rāmākhyaṁ jagad-īśvaraṁ sura-guruṁ māyā-manuṣyaṁ hariṁ vande'haṁ karuṇākaraṁ raghuvaraṁ bhūpāla-cūḍāmaṇim ||",
+      "translation": "I worship Sri Rama, the jewel among rulers, who is serene, eternal, unfathomable, immaculate, the bestower of liberation and peace, ever served by Brahma, Shiva, and Shesha, knowable through Vedanta, omnipresent Sovereign of the cosmos, teacher of gods, who by His divine power appeared in human form—the ocean of boundless compassion.",
+      "meaning": "The sublime Mangalacharan of Sundar Kand synthesizes Nirguna Para-Brahman with Saguna Avatara Rama, the embodiment of infinite grace.",
+      "layers": {
+        "goswami-tulsidas": {
+          "en": "[Goswami Tulsidas] Entering Sundar Kand requires beholding Rama not merely as an earthly prince, but as the supreme reality knowable through the Upanishads.",
+          "hi": "[गोस्वामी तुलसीदास] शान्त, सनातन, अप्रमेय, निष्पाप, मोक्ष शांति देने वाले, ब्रह्मा-शिव-शेषजी से नित्य सेवित, वेदान्तवेद्य श्री राम को मैं प्रणाम करता हूँ।",
+          "mr": "[गोस्वामी तुलसीदास] शांत, शाश्वत, मोक्ष देणारे आणि वेदान्ताने जाणण्याजोगे असलेले करुणासिंधू श्रीराम यांना माझे कोटी कोटी वंदन असो."
+        },
+        "gita-press-gorakhpur": {
+          "en": "[Gita Press] Sundar Kand signifies beauty in thought, devotion, speech, and action as manifested by Sri Hanuman.",
+          "hi": "[गीताप्रेस] सुन्दरकाण्ड में हनुमानजी की अनन्य निष्काम भक्ति और पराक्रम का वर्णन है।",
+          "mr": "[गीताप्रेस] सुंदरकांडामध्ये मारुतीरायांची निष्काम भक्ती आणि अद्भुत सामर्थ्य यांचे ओजस्वी दर्शन घडते."
+        }
+      }
+    }
+  ]
+}

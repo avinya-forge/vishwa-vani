@@ -236,6 +236,63 @@
 
 ---
 
+### 🛡️ EPIC-AUTH-ZERO-PII-2FA [P0-CRITICAL / ACTIVE]
+*Zero-PII Social OAuth Authentication Gateway, RFC 6238 TOTP Two-Factor Security, and Encrypted Cloud Sync.*
+
+#### `AUTH-001` [P0-CRITICAL] Feature Flags Engine (`lib/flags.ts`) (5 pts) [COMPLETED]
+- **Description**: Implement deterministic, type-safe feature flag engine (`lib/flags.ts`) supporting environment flags (`NEXT_PUBLIC_ENABLE_AUTH`, `NEXT_PUBLIC_ENABLE_2FA`, `NEXT_PUBLIC_ENABLE_RAMAYANA_MULTIVERSE`), client-side admin overrides via `localStorage`, and zero hydration SSR mismatches.
+- **Sub-tasks**:
+  - [x] Auditing for implementation
+  - [x] Bug hunter for finding out more bugs
+  - [x] 0 linting errors
+  - [x] 0 build errors
+  - [x] 95+% unit test coverage
+  - [x] Clean up
+  - [x] Update documentation
+  - [x] Update backlog
+  - [x] Update release notes
+
+#### `AUTH-002` [P0-CRITICAL] Zero-PII Social OAuth Gateway (`app/api/auth/[...nextauth]/route.ts`, `lib/auth/gateway.ts`) (13 pts) [COMPLETED]
+- **Description**: Implement social authentication gateway supporting Google, Meta (Instagram / Facebook), and GitHub OAuth. Raw emails, user names, avatars, and social feeds are strictly discarded. User identity is hashed via one-way cryptographic SHA-256 (`SHA256(provider + ':' + provider_account_id + ':' + salt)`), issuing stateless signed HttpOnly session JWTs.
+- **Sub-tasks**:
+  - [x] Auditing for implementation
+  - [x] Bug hunter for finding out more bugs
+  - [x] 0 linting errors
+  - [x] 0 build errors
+  - [x] 95+% unit test coverage
+  - [x] Clean up
+  - [x] Update documentation
+  - [x] Update backlog
+  - [x] Update release notes
+
+#### `AUTH-003` [P0-CRITICAL] RFC 6238 TOTP Two-Factor Authentication Engine (`lib/auth/totp.ts`) (8 pts) [COMPLETED]
+- **Description**: Implement two-factor authentication (2FA) via standard Authenticator Apps (Google Authenticator, Microsoft Authenticator, Authy, Apple Keychain). Zero-SMS policy to prevent SIM-swap risks and avoid collecting phone numbers. Store AES-256-GCM encrypted TOTP secrets at rest in database and generate QR pairing codes and hashed recovery codes.
+- **Sub-tasks**:
+  - [x] Auditing for implementation
+  - [x] Bug hunter for finding out more bugs
+  - [x] 0 linting errors
+  - [x] 0 build errors
+  - [x] 95+% unit test coverage
+  - [x] Clean up
+  - [x] Update documentation
+  - [x] Update backlog
+  - [x] Update release notes
+
+#### `AUTH-004` [P1-HIGH] User Profile & Encrypted Cloud Bookmark Sync (`components/auth/user-sync-drawer.tsx`) (8 pts)
+- **Description**: Build user drawer allowing seamless synchronization of bookmarks, highlights, reading progress, and scholar preferences to encrypted database storage, with one-click instantaneous account deletion (GDPR/CCPA "Right to be Forgotten").
+- **Sub-tasks**:
+  - [ ] Auditing for implementation
+  - [ ] Bug hunter for finding out more bugs
+  - [ ] 0 linting errors
+  - [ ] 0 build errors
+  - [ ] 95+% unit test coverage
+  - [ ] Clean up
+  - [ ] Update documentation
+  - [ ] Update backlog
+  - [ ] Update release notes
+
+---
+
 ## 🗺️ TIER 2: MID-TERM SCRIPTURAL & ARCHITECTURAL HORIZONS (MONTHS 2–8)
 
 ---
@@ -312,6 +369,76 @@
   - [ ] Update documentation
   - [ ] Update backlog
   - [ ] Update release notes
+
+#### `RAM-BOOK-001` [P0-CRITICAL] Ramcharitmanas Autonomous Onboarding (Goswami Tulsidas, Awadhi, 7 Sopanas) (21 pts) [SPEC COMPLETE]
+- **Description**: Onboard Goswami Tulsidas's *Sri Ramcharitmanas* as an independent canonical scripture in NVF 1.3 format. Preserve native Awadhi meter (Chaupai, Doha, Soratha, Chhanda) across all 7 Sopanas (Bal, Ayodhya, Aranya, Kishkindha, Sundar, Lanka, Uttar Kand) with Hindi, Marathi, and English translations.
+- **Lead Tradition**: Goswami Tulsidas (Ramanandi Sampradaya / Bhakti Vāṇī), Gita Press Gorakhpur
+- **Sub-tasks**:
+  - [x] Auditing for implementation
+  - [x] Bug hunter for finding out more bugs
+  - [x] 0 linting errors
+  - [x] 0 build errors
+  - [x] 95+% unit test coverage
+  - [x] Clean up
+  - [x] Update documentation
+  - [x] Update backlog
+  - [x] Update release notes
+
+#### `RAM-BOOK-002` [P1-HIGH] Kamba Ramayanam (Iramavataram) Autonomous Onboarding (Kamban, Tamil) (13 pts)
+- **Description**: Onboard Kavichakravarthi Kamban's 12th-century classical Tamil masterpiece (*Kamba Ramayanam* / *Iramavataram*) as an independent canonical book across 6 Kandams (~10,000 Virutham stanzas), capturing sublime Tamil poetic grandeur with English and Sanskrit glosses.
+- **Lead Tradition**: Kamban (Tamil Classical Sangam/Bhakti Heritage)
+- **Sub-tasks**:
+  - [ ] Auditing for implementation
+  - [ ] Bug hunter for finding out more bugs
+  - [ ] 0 linting errors
+  - [ ] 0 build errors
+  - [ ] 95+% unit test coverage
+  - [ ] Clean up
+  - [ ] Update documentation
+  - [ ] Update backlog
+  - [ ] Update release notes
+
+#### `RAM-BOOK-003` [P1-HIGH] Adhyatma Ramayana Autonomous Onboarding (Brahmanda Purana, Advaita) (13 pts)
+- **Description**: Ingest the *Adhyatma Ramayana* (from Brahmanda Purana) across 7 Kandas and ~4,200 Sanskrit verses, introducing the theological concept of *Maya Sita*, the foundational Advaita Vedanta exegesis of Rama as Non-Dual Brahman, and Sri Rama Gita.
+- **Lead Tradition**: Vyasa, Advaita Vedanta, Swami Chinmayananda
+- **Sub-tasks**:
+  - [ ] Auditing for implementation
+  - [ ] Bug hunter for finding out more bugs
+  - [ ] 0 linting errors
+  - [ ] 0 build errors
+  - [ ] 95+% unit test coverage
+  - [ ] Clean up
+  - [ ] Update documentation
+  - [ ] Update backlog
+  - [ ] Update release notes
+
+#### `RAM-BOOK-004` [P1-HIGH] Bhavartha Ramayana Autonomous Onboarding (Sant Eknath, Marathi) (13 pts)
+- **Description**: Ingest Sant Eknath's 16th-century Marathi devotional epic *Bhavartha Ramayana* in traditional Ovi meter, celebrating the socio-spiritual empowerment and inner esoteric meaning of Sri Rama's life for Marathi seekers.
+- **Lead Tradition**: Sant Eknath (Warkari Sampradaya, Paithan)
+- **Sub-tasks**:
+  - [ ] Auditing for implementation
+  - [ ] Bug hunter for finding out more bugs
+  - [ ] 0 linting errors
+  - [ ] 0 build errors
+  - [ ] 95+% unit test coverage
+  - [ ] Clean up
+  - [ ] Update documentation
+  - [ ] Update backlog
+  - [ ] Update release notes
+
+#### `RAM-COMP-001` [P1-HIGH] Comparative Ramayana Multiverse Episode Canvas UI (`/ramayana/compare`, `lib/ramayana-synopsis.ts`) (13 pts) [ONTOLOGY COMPLETE]
+- **Description**: Build a world-first Comparative Ramayana Canvas linking Valmiki, Tulsidas, Kamban, and Eknath via a shared narrative episode graph (`data/ontology/ramayana-synopsis.json`). Allows seekers to select key historical episodes (*Putrakameshti*, *Ahilya Uddhara*, *Sita Swayamvara*, *Kevala Prasanga*, *Lakshmana Rekha*, *Jatayu Moksha*, *Sundara Kanda*, *Vibhishana Sharanagati*) and read corresponding verses across traditions side-by-side.
+- **Lead Tradition**: Cross-Tradition Comparative Exegesis
+- **Sub-tasks**:
+  - [x] Auditing for implementation
+  - [x] Bug hunter for finding out more bugs
+  - [x] 0 linting errors
+  - [x] 0 build errors
+  - [x] 95+% unit test coverage
+  - [x] Clean up
+  - [x] Update documentation
+  - [x] Update backlog
+  - [x] Update release notes
 
 ---
 

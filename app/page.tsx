@@ -166,6 +166,7 @@ export default async function Home() {
             upanishad: { title: 'The Principal Upaniṣads', subtitle: 'Vedānta & Non-Dual Supreme Knowledge', icon: '✨' },
             purana: { title: 'Purāṇas', subtitle: 'Cosmic Chronicles, Genealogies & Sacred Lore', icon: '📜' },
             veda: { title: 'Veda Saṁhitās', subtitle: 'The Four Eternal Mantra Collections', icon: '🕉️' },
+            charitra: { title: 'Sant Charitras & Vāṇī', subtitle: 'Sacred Hagiographies, Sage Discourses & Devotional Lineages', icon: '🪷' },
             other: { title: 'Darśana Sūtras & Heritage', subtitle: 'Aphorisms, Yoga, Rituals & Devotional Heritage', icon: '🌿' }
           }
           const info = catInfo[cat] || { title: cat, subtitle: '', icon: '📖' }

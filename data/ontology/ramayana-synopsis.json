@@ -1,0 +1,416 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ramayana Multiverse Narrative Episode Synopsis Graph",
+  "description": "Comparative cross-tradition narrative ontology linking the major Rama traditions: Valmiki Ramayana (Sanskrit), Ramcharitmanas (Awadhi), Kamba Ramayanam (Tamil), Adhyatma Ramayana (Sanskrit Advaita), and Bhavartha Ramayana (Marathi).",
+  "version": "1.0.0",
+  "episodes": [
+    {
+      "id": "putrakameshti-yajna",
+      "kanda": "Bala Kanda",
+      "titleEn": "Putrakameshti Yajna & Divine Descent",
+      "titleHi": "पुत्रकामेष्टि यज्ञ एवं भगवदवतार",
+      "titleMr": "पुत्रकामेष्टी यज्ञ व श्रीराम अवतार",
+      "synopsis": "King Dasharatha performs the sacred Putrakameshti sacrifice guided by Sage Rishyashringa; Agni Deva emerges bearing divine Payasam, leading to the birth of Sri Rama, Bharata, Lakshmana, and Shatrughna.",
+      "philosophicalSignificance": "The descent of Avatara as the self-manifestation of Supreme Brahman into human history to restore cosmic Dharma and relieve the distress of the virtuous.",
+      "traditions": {
+        "valmiki": {
+          "textName": "Valmiki Ramayana",
+          "language": "Sanskrit",
+          "meter": "Anushtubh",
+          "reference": "Bala Kanda, Sargas 15–18",
+          "culturalNuance": "Dasharatha shares the payasam: half to Kaushalya, one fourth to Sumitra, one eighth to Kaikeyi, and remaining one eighth to Sumitra again. Sri Rama is described as Maryada Purushottama with 5 exalted astrological planets.",
+          "keyExcerpt": "कौसल्याऽजनयद् रामं दिव्यलक्षणसंयुतम् । विष्णोरर्धं महाभागं पुत्रमैक्ष्वाकुनन्दनम् ॥"
+        },
+        "tulsidas": {
+          "textName": "Sri Ramcharitmanas",
+          "language": "Awadhi",
+          "meter": "Chaupai & Chhanda",
+          "reference": "Bal Kand, Dohas 185–192",
+          "culturalNuance": "Focuses on devotional ecstasy (Bhakti). Kaushalya experiences the Visvarupa darshana where the infant shows the entire cosmos in His mouth, inducing transcendental awe.",
+          "keyExcerpt": "भए प्रगट कृपाला दीनदयाला कौसल्या हितकारी । हरषित महतारी मुनि मन हारी अद्भुत रूप बिचारी ॥"
+        },
+        "kamban": {
+          "textName": "Kamba Ramayanam",
+          "language": "Tamil",
+          "meter": "Virutham",
+          "reference": "Bala Kandam, Avatarapadalam",
+          "culturalNuance": "Celebrates the cosmic dawn of grace over southern Tamil Nadu and the earth. Uses Sangam landscape poetics (Mullai, Kurinji) reflecting the end of sorrow.",
+          "keyExcerpt": "உலகம் யாவையும் தாம் உள ஆக்கலும் / நிலை பெறுத்தலும் நீக்கலும் நீங்கலா / அலகிலா விளையாட்டுடையார்..."
+        },
+        "adhyatma": {
+          "textName": "Adhyatma Ramayana",
+          "language": "Sanskrit",
+          "meter": "Anushtubh",
+          "reference": "Bala Kanda, Adhyaya 2",
+          "culturalNuance": "Strict Advaita framing: Lord Narayana informs Brahma that He will manifest through Yoga Maya while remaining ever-unattached transcendental Consciousness.",
+          "keyExcerpt": "अहं च मानुषं रूपं कृत्वा सगरवंशजे । दशरथस्य गृहे जातो भविष्यामि न संशयः ॥"
+        },
+        "eknath": {
+          "textName": "Bhavartha Ramayana",
+          "language": "Marathi",
+          "meter": "Ovi",
+          "reference": "Bala Kanda, Adhyaya 4",
+          "culturalNuance": "Interprets the Payasam as the essence of Sattva Guna and spiritual illumination (Jnana) distributed to the three mothers representing Shraddha, Medha, and Kripa.",
+          "keyExcerpt": "दशरथरायाचे पोटीं । प्रगटला वैकुंठपती । भक्तां सुख द्यावयासाठीं । कौसल्येसी आनंद ॥"
+        }
+      }
+    },
+    {
+      "id": "ahilya-uddhara",
+      "kanda": "Bala Kanda",
+      "titleEn": "Liberation of Ahilya at Gautama Hermitage",
+      "titleHi": "अहल्या उद्धार",
+      "titleMr": "अहल्या उद्धार",
+      "synopsis": "Sage Vishvamitra escorts young Rama and Lakshmana through Sage Gautama's desolate hermitage, where the penitent Ahilya is freed from her curse upon Sri Rama's touch and restored to glory.",
+      "philosophicalSignificance": "The redemptive touch of the Divine that dissolves past karmic weight and revives the petrified or dormant human soul through unearned Grace (Anugraha).",
+      "traditions": {
+        "valmiki": {
+          "textName": "Valmiki Ramayana",
+          "language": "Sanskrit",
+          "meter": "Anushtubh",
+          "reference": "Bala Kanda, Sarga 49",
+          "culturalNuance": "Ahilya was rendered invisible (adhrishya) to all beings and subsisted on air amid ashes doing intense tapas, rather than being a physical stone. Sri Rama touches her feet in respect.",
+          "keyExcerpt": "स हि तां ददृशे रामः सीतायाः सदृशीं शुभाम् । प्रभां प्रज्वलितामिव दीप्तां तपोमयीं तनुम् ॥"
+        },
+        "tulsidas": {
+          "textName": "Sri Ramcharitmanas",
+          "language": "Awadhi",
+          "meter": "Chaupai & Doha",
+          "reference": "Bal Kand, Dohas 210–211",
+          "culturalNuance": "Ahilya was turned into a literal stone (shila). The divine dust of Rama's lotus feet (Charana-dhuli) touches the stone, instantly transforming her into a celestial woman of pure devotion.",
+          "keyExcerpt": "परसत पद पावन सोक नसावन प्रगट भई तपपुंज सही । देखत रघुनायक जन सुखदायक सनमुख होइ कर जोर रही ॥"
+        },
+        "kamban": {
+          "textName": "Kamba Ramayanam",
+          "language": "Tamil",
+          "meter": "Virutham",
+          "reference": "Bala Kandam, Ahalyapadalam",
+          "culturalNuance": "Famous poetic simile: As the particle of dust from Rama's toe swept onto the granite rock, it sprang forth as Ahilya, as readily as darkness vanishes before the sun.",
+          "keyExcerpt": "கண்டனன் கற்பின் செல்வி கமல மென் மலர்கள் தூவி / அண்ட நாயகனை வாழ்த்தி அடிதனில் வீழ்ந்தாள் அம்மா..."
+        },
+        "adhyatma": {
+          "textName": "Adhyatma Ramayana",
+          "language": "Sanskrit",
+          "meter": "Anushtubh",
+          "reference": "Bala Kanda, Adhyaya 5",
+          "culturalNuance": "Ahilya recites the famed 'Ahilya Kruta Rama Stotram', a profound Vedantic hymn praising Rama as the Supreme Nirguna Brahman clothed in Saguna form.",
+          "keyExcerpt": "अहो धन्योऽस्म्यहं राम पादपङ्कजरेणुभिः । मुक्ता पातकजालेन नमन्ती भवदङ्घ्रयोः ॥"
+        },
+        "eknath": {
+          "textName": "Bhavartha Ramayana",
+          "language": "Marathi",
+          "meter": "Ovi",
+          "reference": "Bala Kanda, Adhyaya 14",
+          "culturalNuance": "Emphasizes the compassion of the Saint (Vishvamitra) who brings the seeker directly before the Redeemer, illustrating Guru-kripa in Warkari mysticism.",
+          "keyExcerpt": "पाषाण झाली अहल्या नारी । रामचरण लागतां उद्धरी । धन्य तो रघुनाथ कैवारी । दीनानाथ कृपानिधी ॥"
+        }
+      }
+    },
+    {
+      "id": "sita-swayamvara",
+      "kanda": "Bala Kanda",
+      "titleEn": "Breaking of Shiva Dhanus & Sita Swayamvara",
+      "titleHi": "शिवधनुष भंजन एवं सीता स्वयंवर",
+      "titleMr": "शिवधनुष्य भंजन व सीता स्वयंवर",
+      "synopsis": "In King Janaka's court in Mithila, Sri Rama strings the colossal bow of Lord Shiva (Pinaka) and effortlessly snaps it in two, winning the hand of Sita Devi.",
+      "philosophicalSignificance": "The union of Purusha (divine Consciousness) and Prakriti (cosmic Power/Grace) upon breaking the rigid bow of worldly ego.",
+      "traditions": {
+        "valmiki": {
+          "textName": "Valmiki Ramayana",
+          "language": "Sanskrit",
+          "meter": "Anushtubh",
+          "reference": "Bala Kanda, Sarga 67",
+          "culturalNuance": "The bow requires 5,000 strong men to transport in an eight-wheeled iron chest. Rama lifts it effortlessly with one hand in the middle, bends it to string it, and it breaks with the thunder of a falling mountain.",
+          "keyExcerpt": "आरोपयित्वा मौर्वीं च पूरयामास वीर्यवान् । तद् बभञ्ज धनुर्मध्ये नरश्रेष्ठो महायशाः ॥"
+        },
+        "tulsidas": {
+          "textName": "Sri Ramcharitmanas",
+          "language": "Awadhi",
+          "meter": "Chaupai, Doha, Soratha",
+          "reference": "Bal Kand, Dohas 250–265",
+          "culturalNuance": "Prior to the Swayamvara, Rama and Sita encounter each other in the royal flower garden (Pushpa Vatika), sharing transcendental pure love. The broken bow produces a cosmic thunder that shakes all 14 lokas.",
+          "keyExcerpt": "लेत चढ़ावत खैंचत गाढ़ें । काहुं न लखा देख सबु ठाढ़ें ॥ तेहि छन राम मध्य धनु तोरा । भरे भुवन धुनि घोर कठोरा ॥"
+        },
+        "kamban": {
+          "textName": "Kamba Ramayanam",
+          "language": "Tamil",
+          "meter": "Virutham",
+          "reference": "Bala Kandam, Karrmukapadalam",
+          "culturalNuance": "Immortalized through the celebrated line: 'The eye saw, the eye saw not' (kai kandadhu kaar mugam kandilai) — Rama lifted the bow so swiftly that spectators only saw the bow unbroken, and then immediately saw it in twain.",
+          "keyExcerpt": "தடக் கையின் எடுத்தது கண்டார் இற்றது கேட்டார்..."
+        },
+        "adhyatma": {
+          "textName": "Adhyatma Ramayana",
+          "language": "Sanskrit",
+          "meter": "Anushtubh",
+          "reference": "Bala Kanda, Adhyaya 6",
+          "culturalNuance": "Janaka recognizes Rama as Para-Brahman and Sita as Yoga-Maya, declaring the marriage a cosmic reunion that sustains universal Dharma.",
+          "keyExcerpt": "सीता साक्षाज्जगन्माता त्वं साक्षाद् विष्णुरव्ययः । युवाभ्यां सङ्गतं विश्वं रक्षितुं निर्मितं परम् ॥"
+        },
+        "eknath": {
+          "textName": "Bhavartha Ramayana",
+          "language": "Marathi",
+          "meter": "Ovi",
+          "reference": "Bala Kanda, Adhyaya 19",
+          "culturalNuance": "Rich with folk celebration and spiritual metaphors: the bow represents the rigidity of Ahankara (pride), which can only be shattered by the soft touch of true Rama-Bhakti.",
+          "keyExcerpt": "अहंकाराचे धनुष्य जड । मोडिलें रामें क्षणांत गूढ । सीता जानकी आनंदली प्रचंड । जयजयकार त्रिभुवनीं ॥"
+        }
+      }
+    },
+    {
+      "id": "kevala-nishada-sakhya",
+      "kanda": "Ayodhya Kanda",
+      "titleEn": "Nishada Friendship & Kevata's Boat Crossing",
+      "titleHi": "निषादराज सख्य एवं केवट प्रसंग",
+      "titleMr": "गुह निषाद सख्य व केवट प्रसंग",
+      "synopsis": "Exiled to the forest, Sri Rama meets Guha, the chieftain of the Nishadas, embracing him as a beloved brother, and crosses the holy Ganga with the humble boatman Kevata.",
+      "philosophicalSignificance": "Radical spiritual egalitarianism: God sees only purity of heart (Prema) and disregards caste, worldly status, or social hierarchies.",
+      "traditions": {
+        "valmiki": {
+          "textName": "Valmiki Ramayana",
+          "language": "Sanskrit",
+          "meter": "Anushtubh",
+          "reference": "Ayodhya Kanda, Sargas 50–52",
+          "culturalNuance": "Guha offers his entire kingdom and treasures to Rama. Rama embraces him warmly as an equal friend (aatmasama sakha), sleeping on kusha grass beneath the Ingudi tree.",
+          "keyExcerpt": "तमार्त इव बाहुभ्यां परिष्वज्य हरीक्षणम् । उवाच भरतो भ्राता रामं सत्यपराक्रमम् ॥"
+        },
+        "tulsidas": {
+          "textName": "Sri Ramcharitmanas",
+          "language": "Awadhi",
+          "meter": "Chaupai & Doha",
+          "reference": "Ayodhya Kand, Dohas 100–102",
+          "culturalNuance": "Iconic 'Kevata Samvada': The boatman insists on washing Rama's feet before boarding, reasoning that if the dust of Rama's feet turned stone into a woman (Ahilya), his wooden boat might float away as a human and rob him of his livelihood!",
+          "keyExcerpt": "मांगी नाव न केवटु आना । कहइ तुम्हार मरमु मैं जाना ॥ चरन कमल रज कहुं सबु कहई । मानुष करनि मूरि कछु अहई ॥"
+        },
+        "kamban": {
+          "textName": "Kamba Ramayanam",
+          "language": "Tamil",
+          "meter": "Virutham",
+          "reference": "Ayodhya Kandam, Gugapadalam",
+          "culturalNuance": "Rama declares to Guha: 'Earlier we were four brothers born of Dasharatha; now with you, loving Guha, we are become five!' (Aivar aanoam ezhaval...).",
+          "keyExcerpt": "குகனொடும் ஐவர் ஆனேம் முன்பு பின் குன்று சூழ் வான்..."
+        },
+        "adhyatma": {
+          "textName": "Adhyatma Ramayana",
+          "language": "Sanskrit",
+          "meter": "Anushtubh",
+          "reference": "Ayodhya Kanda, Adhyaya 5",
+          "culturalNuance": "Guha weeps upon seeing Rama sleeping on bare ground; Lakshmana consoles him with an exalted discourse on non-attachment and the illusory nature of pleasure and pain.",
+          "keyExcerpt": "सुखस्य दुःखस्य न कोऽपि दाता परो ददातीति कुबुद्धिरेषा । अहं करोमीति वृथाभिमानः स्वकर्मसूत्रग्रथितो हि लोकः ॥"
+        },
+        "eknath": {
+          "textName": "Bhavartha Ramayana",
+          "language": "Marathi",
+          "meter": "Ovi",
+          "reference": "Ayodhya Kanda, Adhyaya 11",
+          "culturalNuance": "Extols Guha as the premier embodiment of Nishkama Bhakti, demonstrating that in Rama's court, love alone is the coin of exchange.",
+          "keyExcerpt": "जातीहीन निषाद गुहक । त्याचा अंगीकार केला देख । राम सख्यभावे सुखी अतिशय । भेद नाही तिळमात्र ॥"
+        }
+      }
+    },
+    {
+      "id": "lakshmana-rekha-maya-sita",
+      "kanda": "Aranya Kanda",
+      "titleEn": "Golden Deer, Lakshmana Rekha & Maya Sita",
+      "titleHi": "स्वर्ण मृग, लक्ष्मण रेखा एवं माया सीता",
+      "titleMr": "सुवर्ण मृग, लक्ष्मण रेषा व माया सीता",
+      "synopsis": "Maricha lures Rama and Lakshmana away in the guise of a golden deer; Ravana arrives in disguise to abduct Sita, crossing the boundary to capture her.",
+      "philosophicalSignificance": "The peril of external illusion (Maya/golden deer) diverting spiritual concentration, and the protective metaphysical boundaries that shield virtue.",
+      "traditions": {
+        "valmiki": {
+          "textName": "Valmiki Ramayana",
+          "language": "Sanskrit",
+          "meter": "Anushtubh",
+          "reference": "Aranya Kanda, Sargas 43–49",
+          "culturalNuance": "Valmiki does not explicitly name a drawn 'Lakshmana Rekha' or 'Maya Sita' in his root text; Sita herself is seized by Ravana after Lakshmana departs following her sharp words.",
+          "keyExcerpt": "जग्राह रावणः सीतां बुधः खे रोहिणीमिव । वामेन मूधजे सीतां पद्माक्षीं संप्रगृह्य सः ॥"
+        },
+        "tulsidas": {
+          "textName": "Sri Ramcharitmanas",
+          "language": "Awadhi",
+          "meter": "Chaupai & Doha",
+          "reference": "Aranya Kand, Dohas 23–28",
+          "culturalNuance": "Explicit theology of Maya Sita: Rama asks actual Sita to dwell safely inside fire, while an illusory shadow Sita (Chhaya Sita) remains to play out the drama. Mandodari later references the invincible line drawn by Lakshmana.",
+          "keyExcerpt": "लछिमन दीन्हि अकाट्य अशीखा । जरहु न देखहु खींची लीका ॥"
+        },
+        "kamban": {
+          "textName": "Kamba Ramayanam",
+          "language": "Tamil",
+          "meter": "Virutham",
+          "reference": "Aranya Kandam, Jatayukan-padalam",
+          "culturalNuance": "Ravana does not directly touch Sita; fearing his head would split into pieces from her chastity, he scoops the earth underneath her hut and carries the entire plot of soil on his chariot.",
+          "keyExcerpt": "தீண்டிலன் கற்பின் செல்வி திருமுடி தன்னுள் தீண்டி..."
+        },
+        "adhyatma": {
+          "textName": "Adhyatma Ramayana",
+          "language": "Sanskrit",
+          "meter": "Anushtubh",
+          "reference": "Aranya Kanda, Adhyaya 7",
+          "culturalNuance": "Sita commands the emergence of Maya Sita before Ravana appears; the real Sita re-enters the sacred fire, proving that pure Consciousness can never be contaminated or touched by ignorance.",
+          "keyExcerpt": "अन्तर्हिता सा साक्षात्सीता विवेश पावकम् । तत्प्रतिच्छायारूपा तु तत्रासीज्जनकात्मजा ॥"
+        },
+        "eknath": {
+          "textName": "Bhavartha Ramayana",
+          "language": "Marathi",
+          "meter": "Ovi",
+          "reference": "Aranya Kanda, Adhyaya 15",
+          "culturalNuance": "Highlights the Lakshmana Rekha as the line of Maryada (righteous boundaries); crossing beyond the boundary of Guru-ajnā and Dharma invites peril.",
+          "keyExcerpt": "लक्ष्मणें आखिली मर्यादा रेषा । त्याबाहेर जातांचि पडली दशा । रावणें कपटवेष धरिला कैसा । हरण केले सीतेचें ॥"
+        }
+      }
+    },
+    {
+      "id": "jatayu-moksha",
+      "kanda": "Aranya Kanda",
+      "titleEn": "Jatayu's Valorous Battle & Moksha",
+      "titleHi": "जटायु शौर्य एवं मोक्ष",
+      "titleMr": "जटायू शौर्य व मोक्ष",
+      "synopsis": "The aged vulture king Jatayu battles Ravana in mid-air to rescue Sita; though mortally wounded, he clings to life until he can report Sita's abduction to Rama, who performs his funeral rites.",
+      "philosophicalSignificance": "Righteous struggle is victorious even in physical defeat; supreme sacrifice for the innocent merits the highest spiritual liberation (Moksha).",
+      "traditions": {
+        "valmiki": {
+          "textName": "Valmiki Ramayana",
+          "language": "Sanskrit",
+          "meter": "Anushtubh",
+          "reference": "Aranya Kanda, Sarga 68",
+          "culturalNuance": "Rama performs Jatayu's funeral rites with the same Vedic rituals and filial reverence due to King Dasharatha, declaring that Jatayu shall attain the highest celestial realms.",
+          "keyExcerpt": "मया त्वं समनुज्ञातो गच्छ लोकाननुत्तमान् । गृध्रराज महासत्त्व मम स्नेहादनुत्तमः ॥"
+        },
+        "tulsidas": {
+          "textName": "Sri Ramcharitmanas",
+          "language": "Awadhi",
+          "meter": "Chaupai & Doha",
+          "reference": "Aranya Kand, Dohas 31–33",
+          "culturalNuance": "Rama offers to heal Jatayu's body and grant him renewed life, but Jatayu humbly declines, asking what greater blessing could exist than shedding one's mortal coil while gazing upon Rama's face.",
+          "keyExcerpt": "राम कहा तनु राखहु ताता । मुख मुसुकाइ कही यह बाता ॥ जाहि न पावहिं मुनि मन ध्याना । सो प्रभु प्रगट नयन महं आना ॥"
+        },
+        "kamban": {
+          "textName": "Kamba Ramayanam",
+          "language": "Tamil",
+          "meter": "Virutham",
+          "reference": "Aranya Kandam, Sadayukan-padalam",
+          "culturalNuance": "Rama laments with uncontainable grief: 'I could not perform the last rites of my father Dasharatha, but today I perform them for this king of birds who died defending my virtue.'",
+          "keyExcerpt": "தாதை இறந்தனன் என்று தளர்ந்திலன்..."
+        },
+        "adhyatma": {
+          "textName": "Adhyatma Ramayana",
+          "language": "Sanskrit",
+          "meter": "Anushtubh",
+          "reference": "Aranya Kanda, Adhyaya 8",
+          "culturalNuance": "Jatayu recites a celebrated hymn praising Rama's universal form and merges directly into the transcendental radiance of Lord Vishnu.",
+          "keyExcerpt": "अगणितगुणमप्रमेयमाद्यं सकलजगत्स्थितिसंयमादिहेतुम् । उपगतममलं परं परेशं प्रणमत केवलबोधरूपमीशम् ॥"
+        },
+        "eknath": {
+          "textName": "Bhavartha Ramayana",
+          "language": "Marathi",
+          "meter": "Ovi",
+          "reference": "Aranya Kanda, Adhyaya 18",
+          "culturalNuance": "Celebrates Jatayu as an avatar of selflessness: without human speech or weapons, he offered life itself in the service of truth, demonstrating the supreme summit of Bhakti.",
+          "keyExcerpt": "पक्षी असूनि धर्म रक्षिला । प्राण रामासाठीं अर्पिला । पित्याहूनि अधिक मानिला । रामें जटायूसी ॥"
+        }
+      }
+    },
+    {
+      "id": "sundara-kanda-ocean-leap",
+      "kanda": "Sundara Kanda",
+      "titleEn": "Hanuman's Ocean Leap & Lanka Ashoka Vatika",
+      "titleHi": "हनुमान समुद्र लङ्घन एवं अशोक वाटिका",
+      "titleMr": "हनुमान समुद्र उड्डाण व अशोक वाटिका",
+      "synopsis": "Reminded of his dormant powers by Jambavan, Hanuman expands his form, leaps across the Southern Ocean, overcomes obstacles (Surasa, Simhika), finds Mother Sita in Ashoka Vatika, delivers Rama's signet ring, and destroys Lanka's arrogance.",
+      "philosophicalSignificance": "The awakening of spiritual willpower (Kripa/Siddhi) through selfless service, conquering the vast ocean of Samsara to deliver solace to the longing Jiva.",
+      "traditions": {
+        "valmiki": {
+          "textName": "Valmiki Ramayana",
+          "language": "Sanskrit",
+          "meter": "Anushtubh & Indravajra",
+          "reference": "Sundara Kanda, Sargas 1–68",
+          "culturalNuance": "The foundational masterwork of poetic heroism. Hanuman deliberates whether to use Sanskrit (which might frighten Sita thinking he is Ravana in disguise) or sweet human speech (Manushi Gira).",
+          "keyExcerpt": "यदि वाचं प्रदास्यामि द्विजातिरिव संस्कृताम् । रावणं मन्यमाना मां सीता भीता भविष्यति ॥"
+        },
+        "tulsidas": {
+          "textName": "Sri Ramcharitmanas",
+          "language": "Awadhi",
+          "meter": "Chaupai, Doha, Chhanda",
+          "reference": "Sundar Kand, Dohas 1–60",
+          "culturalNuance": "Sundar Kand is the spiritual heart of Ramcharitmanas; recitations are revered across the Hindi heartland for destroying distress and bestowing courage and devotion.",
+          "keyExcerpt": "प्रनवऊं पवनकुमार खल बन पावक ग्यानघन । जासु हृदय आगार बसहिं राम सर चाप धर ॥"
+        },
+        "kamban": {
+          "textName": "Kamba Ramayanam",
+          "language": "Tamil",
+          "meter": "Virutham",
+          "reference": "Sundara Kandam, Katalkaappadalam",
+          "culturalNuance": "Immortalized in the celebrated verse where Hanuman announces his return to Rama with the single sublime Tamil word: 'Kanden Sitaiyai' ('Saw I Sita!'), putting Rama's anguish to rest before uttering another syllable.",
+          "keyExcerpt": "கண்டனன் கற்பினுக் கணியைக் கண்களால்..."
+        },
+        "adhyatma": {
+          "textName": "Adhyatma Ramayana",
+          "language": "Sanskrit",
+          "meter": "Anushtubh",
+          "reference": "Sundara Kanda, Adhyayas 1–5",
+          "culturalNuance": "Hanuman delivers a philosophical discourse on Atman and Brahman to Sita, reminding her that Rama is non-different from the inner witness of all beings.",
+          "keyExcerpt": "सर्वभूतात्मभूतोऽसौ रामः कमललोचनः । त्वां द्रक्ष्यति न सन्देहो मोचयिष्यति राक्षसात् ॥"
+        },
+        "eknath": {
+          "textName": "Bhavartha Ramayana",
+          "language": "Marathi",
+          "meter": "Ovi",
+          "reference": "Sundara Kanda, Adhyayas 1–12",
+          "culturalNuance": "Rich with energetic Marathi rhythm portraying Maruti as the quintessential protector of Maharashtra, dispelling negative energies and bringing victory to righteous causes.",
+          "keyExcerpt": "मारुती उडाला आकाशीं । धाक भरला राक्षसांसी । लंका जाळूनि क्षणांत कैसी । सीतेचा शोध आणितां ॥"
+        }
+      }
+    },
+    {
+      "id": "vibhishana-sharanagati",
+      "kanda": "Yuddha Kanda",
+      "titleEn": "Vibhishana's Refuge & Rama's Abhaya Pledge",
+      "titleHi": "विभीषण शरणागति एवं अभयदान प्रतिज्ञा",
+      "titleMr": "विभीषण शरणागती व अभयदान प्रतिज्ञा",
+      "synopsis": "Ravana's righteous brother Vibhishana seeks refuge with Sri Rama. Despite the caution of Sugriva and the monkey generals, Sri Rama declares his eternal cosmic vow to protect anyone who surrenders to Him.",
+      "philosophicalSignificance": "The doctrine of Sharanagati (unconditional surrender / Prapatti) as the supreme and infallible path of salvation open to every soul regardless of origin.",
+      "traditions": {
+        "valmiki": {
+          "textName": "Valmiki Ramayana",
+          "language": "Sanskrit",
+          "meter": "Anushtubh",
+          "reference": "Yuddha Kanda, Sarga 18, Verse 33",
+          "culturalNuance": "The Magna Carta of Vaishnava theology. Rama proclaims: 'Even if Ravana himself were to come seeking refuge, I would grant him fearlessness without hesitation.'",
+          "keyExcerpt": "सकृदेव प्रपन्नाय तवास्मीति च याचते । अभयं सर्वभूतेभ्यो ददाम्येतद् व्रतं मम ॥"
+        },
+        "tulsidas": {
+          "textName": "Sri Ramcharitmanas",
+          "language": "Awadhi",
+          "meter": "Chaupai & Doha",
+          "reference": "Sundar Kand, Dohas 43–48",
+          "culturalNuance": "Rama declares that even if one has accumulated the sins of killing millions of Brahmins, the moment they surrender sincerely, He purifies them instantly.",
+          "keyExcerpt": "कोटि बिप्र बध लागहिं जाहू । आएं सरन तजऊं नहिं ताहू ॥ सनमुख होइ जीव मोहि जबहीं । जन्म कोटि अघ नासहिं तबहीं ॥"
+        },
+        "kamban": {
+          "textName": "Kamba Ramayanam",
+          "language": "Tamil",
+          "meter": "Virutham",
+          "reference": "Yuddha Kandam, Veedeenan Adaikkalappadalam",
+          "culturalNuance": "Rama proclaims: 'From four brothers we became five with Guha, six with Sugriva, and now with you, dear Vibhishana, we are become seven brothers!' (Ezhavar aanoam...).",
+          "keyExcerpt": "குகனொடும் ஐவர் ஆனேம் முன்பு பின் குன்று சூழ் வான் மகனொடும் அறுவர் ஆனேம் எம்முழை அன்பின் வந்த அகனமர் காதல் ஐய நின்னொடும் எழுவர் ஆனேம்..."
+        },
+        "adhyatma": {
+          "textName": "Adhyatma Ramayana",
+          "language": "Sanskrit",
+          "meter": "Anushtubh",
+          "reference": "Yuddha Kanda, Adhyaya 2",
+          "culturalNuance": "Vibhishana addresses Rama not merely as a prince but as the all-pervading Vishnu, performing deep philosophical Stuti that explains why sattvic devotees abandon worldly attachments.",
+          "keyExcerpt": "त्वमेव सर्वस्य चराचरस्य कर्ता च पाता च तथा च हर्ता । त्वामेव विष्णोरवतारमाहुः संसारदुःखौघविनाशनाय ॥"
+        },
+        "eknath": {
+          "textName": "Bhavartha Ramayana",
+          "language": "Marathi",
+          "meter": "Ovi",
+          "reference": "Yuddha Kanda, Adhyaya 8",
+          "culturalNuance": "Vibhishana's surrender is lauded as the archetype of discrimination (Viveka) over blind family loyalty when righteousness is at stake.",
+          "keyExcerpt": "अधर्म सोडूनि धर्मासी आला । राम चरणीं लीन झाला । तात्काळ राज्याभिषेक केला । लंकापती विभीषणासी ॥"
+        }
+      }
+    }
+  ]
+}
