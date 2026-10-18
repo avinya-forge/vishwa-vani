@@ -5,6 +5,7 @@ import { useTranslations, useLocale } from 'next-intl'
 import { usePathname } from 'next/navigation'
 import { VEDIC_LIBRARY, isTextCompleted, COMPLETED_BOOK_STATS, COMPLETED_BOOKS_SLUGS, PIPELINE_BOOK_STATS } from '@/lib/texts'
 import { useState, useEffect, useRef } from 'react'
+import { createPortal } from 'react-dom'
 import { AnimatedStat } from '@/components/ui/animated-stat'
 
 // Custom hook to handle clicks outside the ref element generically
@@ -52,12 +53,34 @@ export default function Header({ stats }: { stats?: HeaderStatsProp }) {
   const pathname = usePathname()
   const [showLibrary, setShowLibrary] = useState(false)
   const [showMobileMenu, setShowMobileMenu] = useState(false)
+  const [mounted, setMounted] = useState(false)
   const [defaultTextSlug, setDefaultTextSlug] = useState('bhagavad-gita')
   const [continueReading, setContinueReading] = useState<{text: string, chapter: number, verse: number} | null>(null)
   const dropdownRef = useRef<HTMLDivElement>(null)
 
   // Attach generic click outside handler
   useOnClickOutside(dropdownRef, () => setShowLibrary(false))
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  // Handle escape key and body scroll locking for mobile menu
+  useEffect(() => {
+    if (showMobileMenu) {
+      document.body.style.overflow = 'hidden'
+      const onKeyDown = (e: KeyboardEvent) => {
+        if (e.key === 'Escape') setShowMobileMenu(false)
+      }
+      window.addEventListener('keydown', onKeyDown)
+      return () => {
+        document.body.style.overflow = ''
+        window.removeEventListener('keydown', onKeyDown)
+      }
+    } else {
+      document.body.style.overflow = ''
+    }
+  }, [showMobileMenu])
 
   // Load continue reading position and last text
   useEffect(() => {
@@ -254,55 +277,136 @@ export default function Header({ stats }: { stats?: HeaderStatsProp }) {
         </div>
       </div>
 
-      {/* Mobile menu — slide down panel with 100% opaque background to prevent text overlap */}
-      {showMobileMenu && (
-        <div className="lg:hidden fixed inset-x-0 top-14 bg-[#FDFBF7] dark:bg-stone-950 border-b border-stone-200 dark:border-stone-800 shadow-2xl z-[200] animate-in slide-in-from-top-0 duration-200 h-[calc(100vh-3.5rem)] overflow-y-auto">
-          <div className="max-w-[1400px] mx-auto px-4 py-5 space-y-1.5">
-            <p className="text-[10px] font-black uppercase tracking-[0.2em] text-stone-400 dark:text-stone-500 mb-3 ml-2">Available Library</p>
-            {topBooks.map(book => (
-              <Link
-                key={book.slug}
-                href={`/${book.slug}/1`}
-                onClick={() => setShowMobileMenu(false)}
-                className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-orange-50 dark:hover:bg-orange-950/30 transition-all bg-stone-50/50 dark:bg-stone-800/50"
-              >
+// Mobile menu — rendered via React Portal directly into body to completely escape nav glass containing block
+      {mounted && showMobileMenu && typeof document !== 'undefined' && createPortal(
+        <div className="lg:hidden">
+          {/* Backdrop overlay */}
+          <div
+            className="fixed inset-0 top-14 bg-stone-950/70 backdrop-blur-sm z-[999] animate-in fade-in duration-200"
+            onClick={() => setShowMobileMenu(false)}
+            aria-hidden="true"
+          />
+
+          {/* Opaque sliding drawer container */}
+          <div
+            role="dialog"
+            aria-modal="true"
+            aria-label="Navigation Menu"
+            className="fixed inset-x-0 top-14 bg-[#FDFBF7] dark:bg-stone-950 border-b border-stone-200 dark:border-stone-800 shadow-2xl z-[1000] animate-in slide-in-from-top-0 duration-200 h-[calc(100dvh-3.5rem)] overflow-y-auto"
+          >
+            <div className="max-w-[1400px] mx-auto px-4 py-5 space-y-4">
+              {/* Continue Reading Card if available */}
+              {continueReading && (
+                <div className="p-3.5 rounded-xl bg-orange-50 dark:bg-orange-950/30 border border-orange-200 dark:border-orange-800/50">
+                  <p className="text-[10px] font-black uppercase tracking-wider text-orange-600 dark:text-orange-400 mb-1.5">Resume Reading</p>
+                  <Link
+                    href={`/${continueReading.text}/${continueReading.chapter}/${continueReading.verse}`}
+                    onClick={() => setShowMobileMenu(false)}
+                    className="flex items-center justify-between text-sm font-bold text-stone-800 dark:text-stone-200 hover:text-orange-600 transition-colors"
+                  >
+                    <span>{VEDIC_LIBRARY.find(b => b.slug === continueReading.text)?.name || continueReading.text}</span>
+                    <span className="text-xs text-orange-600 font-semibold">Ch {continueReading.chapter}, V {continueReading.verse} &rarr;</span>
+                  </Link>
+                </div>
+              )}
+
+              {/* Canonical Scriptures Spotlight */}
+              <div>
+                <div className="flex items-center justify-between mb-2.5 px-1">
+                  <p className="text-[10px] font-black uppercase tracking-[0.2em] text-stone-500 dark:text-stone-400">Featured Scriptures</p>
+                  <Link
+                    href="/library"
+                    onClick={() => setShowMobileMenu(false)}
+                    className="text-[11px] font-bold text-orange-600 dark:text-orange-400 hover:underline"
+                  >
+                    All {safeStats.completedBooks} Books &rarr;
+                  </Link>
+                </div>
+                <div className="grid grid-cols-2 gap-2">
+                  {topBooks.slice(0, 8).map(book => (
+                    <Link
+                      key={book.slug}
+                      href={`/${book.slug}/1`}
+                      onClick={() => setShowMobileMenu(false)}
+                      className="px-3 py-2.5 rounded-xl bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 hover:border-orange-500 dark:hover:border-orange-500 transition-all text-xs font-bold text-stone-800 dark:text-stone-200 line-clamp-1 shadow-sm"
+                    >
+                      {book.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+
+              {/* Main Navigation Links */}
+              <div className="border-t border-stone-200 dark:border-stone-800 pt-4 space-y-1.5">
+                <p className="text-[10px] font-black uppercase tracking-[0.2em] text-stone-500 dark:text-stone-400 mb-2 px-1">Explore</p>
                 
-                <span className="text-sm font-bold text-stone-800 dark:text-stone-200">{book.name}</span>
-              </Link>
-            ))}
-            <div className="border-t border-stone-100 dark:border-stone-800 mt-5 pt-5 space-y-1.5">
-              
-              <Link href="/essence" onClick={() => setShowMobileMenu(false)} className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all text-sm font-bold ${pathname.startsWith('/essence') ? 'text-orange-600 bg-orange-50 dark:bg-orange-950/30' : 'text-stone-600 dark:text-stone-400 hover:bg-stone-50 dark:hover:bg-stone-800'}`}>
-                <span>⚡</span>
-                <span>Essence</span>
-              </Link>
-              <Link href="/knowledge" onClick={() => setShowMobileMenu(false)} className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all text-sm font-bold ${pathname.startsWith('/knowledge') ? 'text-orange-600 bg-orange-50 dark:bg-orange-950/30' : 'text-stone-600 dark:text-stone-400 hover:bg-stone-50 dark:hover:bg-stone-800'}`}>
-                <span>🔬</span>
-                <span>Vedic Science</span>
-              </Link>
-              <Link href="/search" onClick={() => setShowMobileMenu(false)} className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-stone-50 dark:hover:bg-stone-800 transition-all text-sm font-bold text-stone-600 dark:text-stone-400">
-                <span>🔍</span>
-                <span>Deep Search</span>
-              </Link>
-              <Link href="/lab" onClick={() => setShowMobileMenu(false)} className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all text-sm font-bold ${pathname === '/lab' ? 'text-orange-600 bg-orange-50 dark:bg-orange-950/30' : 'text-stone-600 dark:text-stone-400 hover:bg-stone-50 dark:hover:bg-stone-800'}`}>
-                <span>🧪</span>
-                <span>Vedic Labs</span>
-              </Link>
-              <Link href="/roadmap" onClick={() => setShowMobileMenu(false)} className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-stone-50 dark:hover:bg-stone-800 transition-all text-sm font-bold text-stone-600 dark:text-stone-400">
-                <span>📊</span>
-                <span>Roadmap &amp; Metrics</span>
-              </Link>
-              <Link href="/admin" onClick={() => setShowMobileMenu(false)} className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all text-sm font-bold ${pathname === '/admin' ? 'text-orange-600 bg-orange-50 dark:bg-orange-950/30' : 'text-stone-600 dark:text-stone-400 hover:bg-stone-50 dark:hover:bg-stone-800'}`}>
-                <span>⚡</span>
-                <span>Admin Terminal Console</span>
-              </Link>
-              <Link href="/library" onClick={() => setShowMobileMenu(false)} className="flex items-center justify-center gap-2 mt-4 w-full px-6 py-3.5 bg-stone-900 hover:bg-orange-600 text-white text-sm font-bold rounded-xl transition-all shadow-md">
-                <span>📜</span>
-                <span>Explore Sacred Library</span>
-              </Link>
+                <Link
+                  href="/essence"
+                  onClick={() => setShowMobileMenu(false)}
+                  className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all text-sm font-bold border ${pathname.startsWith('/essence') ? 'text-orange-600 bg-orange-50 dark:bg-orange-950/30 border-orange-200 dark:border-orange-900' : 'text-stone-700 dark:text-stone-300 bg-white dark:bg-stone-900 border-stone-200 dark:border-stone-800 hover:bg-stone-100 dark:hover:bg-stone-800'}`}
+                >
+                  <span>⚡</span>
+                  <span>Essence (Quick Wisdom)</span>
+                </Link>
+
+                <Link
+                  href="/knowledge"
+                  onClick={() => setShowMobileMenu(false)}
+                  className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all text-sm font-bold border ${pathname.startsWith('/knowledge') ? 'text-orange-600 bg-orange-50 dark:bg-orange-950/30 border-orange-200 dark:border-orange-900' : 'text-stone-700 dark:text-stone-300 bg-white dark:bg-stone-900 border-stone-200 dark:border-stone-800 hover:bg-stone-100 dark:hover:bg-stone-800'}`}
+                >
+                  <span>🔬</span>
+                  <span>Vedic Science &amp; Ontologies</span>
+                </Link>
+
+                <Link
+                  href="/search"
+                  onClick={() => setShowMobileMenu(false)}
+                  className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all text-sm font-bold border ${pathname === '/search' ? 'text-orange-600 bg-orange-50 dark:bg-orange-950/30 border-orange-200 dark:border-orange-900' : 'text-stone-700 dark:text-stone-300 bg-white dark:bg-stone-900 border-stone-200 dark:border-stone-800 hover:bg-stone-100 dark:hover:bg-stone-800'}`}
+                >
+                  <span>🔍</span>
+                  <span>Deep Multi-Lingual Search</span>
+                </Link>
+
+                <Link
+                  href="/lab"
+                  onClick={() => setShowMobileMenu(false)}
+                  className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all text-sm font-bold border ${pathname === '/lab' ? 'text-orange-600 bg-orange-50 dark:bg-orange-950/30 border-orange-200 dark:border-orange-900' : 'text-stone-700 dark:text-stone-300 bg-white dark:bg-stone-900 border-stone-200 dark:border-stone-800 hover:bg-stone-100 dark:hover:bg-stone-800'}`}
+                >
+                  <span>🧪</span>
+                  <span>Vedic Labs &amp; Simulators</span>
+                </Link>
+
+                <Link
+                  href="/roadmap"
+                  onClick={() => setShowMobileMenu(false)}
+                  className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all text-sm font-bold border ${pathname === '/roadmap' ? 'text-orange-600 bg-orange-50 dark:bg-orange-950/30 border-orange-200 dark:border-orange-900' : 'text-stone-700 dark:text-stone-300 bg-white dark:bg-stone-900 border-stone-200 dark:border-stone-800 hover:bg-stone-100 dark:hover:bg-stone-800'}`}
+                >
+                  <span>📊</span>
+                  <span>Roadmap &amp; Metrics</span>
+                </Link>
+
+                <Link
+                  href="/admin"
+                  onClick={() => setShowMobileMenu(false)}
+                  className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all text-sm font-bold border ${pathname === '/admin' ? 'text-orange-600 bg-orange-50 dark:bg-orange-950/30 border-orange-200 dark:border-orange-900' : 'text-stone-700 dark:text-stone-300 bg-white dark:bg-stone-900 border-stone-200 dark:border-stone-800 hover:bg-stone-100 dark:hover:bg-stone-800'}`}
+                >
+                  <span>⚡</span>
+                  <span>Admin Terminal Console</span>
+                </Link>
+
+                <Link
+                  href="/library"
+                  onClick={() => setShowMobileMenu(false)}
+                  className="flex items-center justify-center gap-2 mt-4 w-full px-6 py-3.5 bg-stone-900 hover:bg-orange-600 text-white text-sm font-bold rounded-xl transition-all shadow-md"
+                >
+                  <span>📜</span>
+                  <span>Explore Full Sacred Library ({safeStats.completedBooks} Books)</span>
+                </Link>
+              </div>
             </div>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </nav>
   )

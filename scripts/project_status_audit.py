@@ -68,7 +68,15 @@ CANONICAL_TARGETS = {
     'mundaka-upanishad': {'total_chapters': 3, 'total_verses': 7, 'target_authors': 2, 'langs': ['sa', 'en', 'hi', 'mr'], 'description': 'Higher and Lower Knowledge (Two Birds on the Tree of Life).'},
     'prashna-upanishad': {'total_chapters': 6, 'total_verses': 7, 'target_authors': 2, 'langs': ['sa', 'en', 'hi', 'mr'], 'description': 'Six Inquiries to Sage Pippalada on Cosmic Origin & Prana.'},
     'taittiriya-upanishad': {'total_chapters': 3, 'total_verses': 7, 'target_authors': 2, 'langs': ['sa', 'en', 'hi', 'mr'], 'description': 'The Five Sheaths (Pancha Kosha) and the Bliss of Brahman.'},
-    'aitareya-upanishad': {'total_chapters': 3, 'total_verses': 6, 'target_authors': 2, 'langs': ['sa', 'en', 'hi', 'mr'], 'description': 'Cosmic Creation and Prajnanam Brahma (Consciousness is Brahman).'}
+    'aitareya-upanishad': {'total_chapters': 3, 'total_verses': 6, 'target_authors': 2, 'langs': ['sa', 'en', 'hi', 'mr'], 'description': 'Cosmic Creation and Prajnanam Brahma (Consciousness is Brahman).'},
+    'shri-guru-charitra': {'total_chapters': 3, 'total_verses': 3, 'target_authors': 2, 'langs': ['sa', 'mr', 'hi', 'en'], 'description': 'Shri Guru Charitra (Life of Dattatreya & Narasimha Saraswati).'},
+    'gondavalekar-maharaj-pravachane': {'total_chapters': 3, 'total_verses': 3, 'target_authors': 2, 'langs': ['sa', 'mr', 'hi', 'en'], 'description': 'Brahma Chaitanya Gondavalekar Maharaj Pravachane.'},
+    'tembe-swami-charitra': {'total_chapters': 2, 'total_verses': 2, 'target_authors': 2, 'langs': ['sa', 'mr', 'hi', 'en'], 'description': 'Shri Vasudevananda Saraswati Tembe Swami Charitra.'},
+    'sai-satcharitra': {'total_chapters': 2, 'total_verses': 2, 'target_authors': 2, 'langs': ['sa', 'mr', 'hi', 'en'], 'description': 'Shri Sai Satcharitra (Govind Raghunath Dabholkar / Hemadpant).'},
+    'shri-gajanan-vijay': {'total_chapters': 2, 'total_verses': 2, 'target_authors': 2, 'langs': ['sa', 'mr', 'hi', 'en'], 'description': 'Shri Gajanan Vijay (Dasganu Maharaj, Shegaon Lineage).'},
+    'shvetashvatara-upanishad': {'total_chapters': 2, 'total_verses': 2, 'target_authors': 2, 'langs': ['sa', 'en', 'hi', 'mr'], 'description': 'Shvetashvatara Upanishad (Rudra-Shiva and Yoga of Consciousness).'},
+    'vidura-niti': {'total_chapters': 2, 'total_verses': 2, 'target_authors': 2, 'langs': ['sa', 'en', 'hi', 'mr'], 'description': 'Vidura Niti (Mahabharata Udyoga Parva, Wisdom of Dharma).'},
+    'chanakya-niti': {'total_chapters': 2, 'total_verses': 2, 'target_authors': 2, 'langs': ['sa', 'en', 'hi', 'mr'], 'description': 'Chanakya Niti (Political & Philosophical Maxims of Acharya Chanakya).'}
 }
 
 VEDIC_LAB_INTEGRATIONS = {
@@ -97,6 +105,14 @@ VEDIC_LAB_INTEGRATIONS = {
     'prashna-upanishad': True,
     'taittiriya-upanishad': True,
     'aitareya-upanishad': True,
+    'shri-guru-charitra': True,
+    'gondavalekar-maharaj-pravachane': True,
+    'tembe-swami-charitra': True,
+    'sai-satcharitra': True,
+    'shri-gajanan-vijay': True,
+    'shvetashvatara-upanishad': True,
+    'vidura-niti': True,
+    'chanakya-niti': True,
 }
 
 SUSPICIOUS_PATTERNS = [

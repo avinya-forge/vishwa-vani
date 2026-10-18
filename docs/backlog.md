@@ -45,18 +45,18 @@
   - [ ] Update backlog
   - [ ] Update release notes
 
-### `TEST-COV-002` [P0-CRITICAL] Unit Test Coverage: Layout Navigation Headers & Footers (5 pts)
+### `TEST-COV-002` [P0-CRITICAL] Unit Test Coverage: Layout Navigation Headers & Footers (5 pts) [COMPLETED]
 - **Description**: Create dedicated component tests for `components/layout/Header.tsx` and `components/layout/Footer.tsx` verifying desktop navigation links, opaque mobile drawer behavior, search modal invocation, live dynamic corpus statistics, and theme stability.
 - **Sub-tasks**:
-  - [ ] Auditing for implementation
-  - [ ] Bug hunter for finding out more bugs
-  - [ ] 0 linting errors
-  - [ ] 0 build errors
-  - [ ] 95+% unit test coverage
-  - [ ] Clean up
-  - [ ] Update documentation
-  - [ ] Update backlog
-  - [ ] Update release notes
+  - [x] Auditing for implementation
+  - [x] Bug hunter for finding out more bugs
+  - [x] 0 linting errors
+  - [x] 0 build errors
+  - [x] 95+% unit test coverage
+  - [x] Clean up
+  - [x] Update documentation
+  - [x] Update backlog
+  - [x] Update release notes
 
 ### `TEST-COV-003` [P1-HIGH] Unit Test Coverage: Multi-Scholar Philosophical Synthesis Route (5 pts)
 - **Description**: Expand API unit and integration tests for `app/api/synthesize/route.ts` from 56.8% to >=95%, covering streaming response chunks, scholar persona prompt construction, fallback models, rate limit errors, and invalid payload handling.

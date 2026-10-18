@@ -1,5 +1,31 @@
 # Release Notes
 
+## [1.9.0]
+### 🌿 Git Branch Consolidation & Remote Hygiene
+- [x] **Sole Remaining Branch Invariant**: Conducted full discovery and audit across all local and remote branches (`git fetch --all --prune`).
+- [x] **Deleted Stale Remote Branches**: Safely deleted `origin/docs/restructure-backlog-and-release-notes-223189399464720307` and verified that local and remote repos strictly retain only `main`.
+- [x] **Cleaned Release Notes Formatting**: Eliminated all duplicate `### ###` markdown heading prefixes across `docs/release-notes.md`.
+
+### 🔍 Deep Iterative Gold Layer Audit & Quality Verification
+- [x] **Universal Engine Audit**: Ran `node scripts/vishwa_engine.js audit --all` across all 33 canonical scriptures, achieving 100% readiness score with 0 errors.
+- [x] **Exhaustive 20,974-Verse Deep Inspection**: Audited all 853 Gold layer JSON files in `data/3-gold/`, verifying 0 `"undefined"` strings, 0 placeholders, 0 missing translations, and complete Devanagari original Sanskrit grounding.
+- [x] **Canonical Audit Sync**: Updated `scripts/project_status_audit.py` with canonical targets and Vedic Lab integrations for all 33 live scriptures, synchronizing `.status` and `docs/PROJECT_STATUS.md`.
+
+### 📱 Mobile Viewport Architecture Overhaul (`Header.tsx`)
+- [x] **React Portal Isolation**: Migrated mobile navigation drawer from inside `<nav className="glass">` to `createPortal(..., document.body)`. Completely eliminates containing block entrapment, CSS `backdrop-filter` flattening, and text overlapping bugs on mobile devices.
+- [x] **Solid Backdrop & Opaque Drawer**: Added a fixed `z-[999]` dark backdrop overlay (`bg-stone-950/70 backdrop-blur-sm`) and an opaque `z-[1000]` drawer container with dynamic `100dvh` viewport height to prevent browser address bar clipping.
+- [x] **Body Scroll Lock & Escape Listener**: Locked background body scrolling (`document.body.style.overflow = 'hidden'`) while the mobile navigation menu is active, with instant dismissal on clicking the backdrop or pressing the Escape key.
+- [x] **Organized Quick Navigation**: Curated featured canonical scriptures grid with instant link to full 33-book library, plus high-contrast navigation links to Essence, Vedic Science, Deep Search, Vedic Labs, Roadmap, and Admin Console.
+
+### 🛡️ Ethical Data Governance & Privacy Page (`/privacy`)
+- [x] **Zero-PII Privacy Policy**: Created `app/privacy/page.tsx` detailing Vishwa-Vani's open-access commitment, local-first offline storage (`localStorage`), zero invasive tracking, anonymized telemetry, and encrypted voluntary newsletter subscription handling.
+- [x] **Footer Route Resolution**: Connected footer link `/privacy` directly to the live page, preventing 404 navigation errors.
+
+### 🧪 Test Expansion & Quality Gates
+- [x] `TEST-COV-002` **Header & Mobile Portal Tests**: Created `__tests__/components-header.test.tsx` verifying branding, mobile menu portal opening, backdrop click dismissal, and escape key event handling.
+- [x] **Privacy Page Tests**: Created `__tests__/privacy.test.tsx` validating data ethics sections and UI layout.
+- [x] **100% Verification Suite**: Full test suite passes green across all 73 test suites (408 passing tests, 0 failures), 0 ESLint errors, and 0 TypeScript compilation errors.
+
 ## [1.8.0]
 ### From Backlog: 🌌 EPIC-ROADMAP-MASTER-VISION [STRATEGIC ROADMAP]
 - [x] **Phase 1: Universal Canonical Foundation & 25-Book Milestone (1,335 Gold Verses / 107 Diamond Tokens)**: Onboarded 25 canonical scriptures across Itihasa, Upanishad, Veda, Purana, and Prakarana Granthas to 100% Gold and Diamond tiers. Built autonomous 8-stage scripture engine, Admin Web Terminal (`/admin`), and 10-domain Vaidika Vijñāna knowledge graph. [COMPLETED]
@@ -560,7 +586,7 @@
 
 ## [1.3.0]
 
-### ### 🔴 Production Deployment Audit & Quality Corrections (EPIC-P0-PRODUCTION-AUDIT-AND-CORRECTIONS)
+### 🔴 Production Deployment Audit & Quality Corrections (EPIC-P0-PRODUCTION-AUDIT-AND-CORRECTIONS)
 - [x] `NAV-001` **Restored Sanskrit 'ॐ' (Om) Logo**: Eliminated mojibake corruption (`à¥ ` -> `ॐ`) and restored proper accessible styling in the primary navigation bar.
 - [x] `NAV-002` & `NAV-003` **Strict 100% Completed Verse Metrics**: Replaced deceptive hardcoded 709/1,500+ counts with canonical, verified verse counts (950 shlokas across 4 Gold scriptures: Bhagavad Gita 701, Isha Upanishad 19, Kena Upanishad 34, Yoga Sutras 196). Center navbar stats now accurately display "4 Verified Books" and "950 Complete Verses" linked to `/roadmap`.
 - [x] `NAV-004` **Navbar Clutter Reduction**: Removed isolated and unjustified "Data Engine" (`/engine`) link from desktop and mobile navigation menus.
@@ -569,17 +595,17 @@
 - [x] `METRIC-001` & `METRIC-002` **Standard Unit Hierarchy & Dual-Pool Architecture**: Formalized the 3-tier unit standard (Shloka -> Chapter -> Book) and segmented the library into 2 explicit pools: Pool 1 (100% Completed & Verified Gold Pool: 4 books, 24 chapters, 950 verses) and Pool 2 (Ingestion Pipeline: 13 books, 2,916 chapters, ~175,410 verses with 126,306 live database rows).
 - [x] `ROADMAP-001` & `ROADMAP-002` **Roadmap Metrics & Visual Tier Standard**: Overhauled `/roadmap` with a 4-card metric dashboard, diagrammatic 3-Tier Data Certification Standards (Gold, Silver, Bronze), corrected 5-stage data processing pipeline (Bronze -> Silver -> Gold -> Verification Gate -> Live Edge), and interactive pool switcher.
 - [x] `CHAR-001` **Full-Spectrum Mojibake Elimination**: Swept and repaired over 3,100 corrupted Devanagari character sequences (`à¤...`, `à¥...`) and corrupted UTF-8 emoji strings across `lib/texts.ts`, `app/page.tsx`, `components/layout/Header.tsx`, `components/shloka/study-client.tsx`, and `components/shloka/shloka-mask.tsx`.
-### ### ⚡ Edge Database Migration & Windows SWC Stabilization (EPIC-P0-DATABASE-MIGRATION-TURSO)
+### ⚡ Edge Database Migration & Windows SWC Stabilization (EPIC-P0-DATABASE-MIGRATION-TURSO)
 - [x] `DB-001` to `DB-005` **Turso Edge Database Migration**: Shifted runtime database operations to `@libsql/client` remote edge database, bypassing Vercel 50MB serverless limit and git LFS boundaries.
 - [x] **Windows SWC Native Engine Fix**: Pinned `@swc/core` to `1.10.18` via `devDependencies` and npm `overrides` to bypass upstream Windows NTFS DACL caching bug (`ERR_SWC_NATIVE_CACHE`).
 
 ## [1.2.1]
 
-### ### 🎨 UI Redesign & Design System Alignment (UI-REDES-001 to UI-REDES-007)
+### 🎨 UI Redesign & Design System Alignment (UI-REDES-001 to UI-REDES-007)
 - [x] `UI-REDES-001` **Master Design System**: Created `design-system/MASTER.md` establishing 60-30-10 color balance, fluid clamp typography, cubic-bezier micro-interactions, and warm stone/amber aesthetics.
 - [x] `UI-REDES-002` to `UI-REDES-005` **Page Restyling**: Restyled landing page (`app/page.tsx`), reader component (`components/shloka/study-client.tsx`), search view (`components/search/search-client.tsx`), and lab view (`app/lab/page.tsx`) with fluid typography (`clamp()`), text balance, asymmetrical bento layouts, and smooth cubic-bezier hover states.
 - [x] `UI-REDES-006` & `UI-REDES-007` **Stabilization & Bug Hunt**: Swept all redesigned pages for responsive and contrast issues. Added comprehensive Jest tests for strict UI gating.
-### ### 🌐 Local Area Network (LAN) Deployment & Demo (DEMO-LOC-001 to DEMO-LOC-004)
+### 🌐 Local Area Network (LAN) Deployment & Demo (DEMO-LOC-001 to DEMO-LOC-004)
 - [x] `DEMO-LOC-001` **Network Binding**: Added `dev:lan` (`next dev -H 0.0.0.0`) and `start:lan` (`next start -H 0.0.0.0`) binding scripts to `package.json`.
 - [x] `DEMO-LOC-002` **Demo Launch Script**: Created executable `scripts/start-lan-demo.sh` to verify Node environment, detect local IPv4 address, enable strict UI gating, compile build, and launch production server bound to `0.0.0.0:3000`.
 - [x] `DEMO-LOC-003` **Strict UI Gating**: Implemented readiness-score gating in `lib/texts.ts`. Under `STRICT_DEMO_GATING=true` or `NEXT_PUBLIC_STRICT_DEMO=true`, scriptures with < 100% readiness (such as Gita or Mahabharata) are automatically gated out from UI display, exposing only fully verified scriptures (Isha & Kena Upanishads).
@@ -587,25 +613,25 @@
 
 ## [1.2.0]
 
-### ### 🏛️ Data Operations & Crawler Infrastructure
+### 🏛️ Data Operations & Crawler Infrastructure
 - [x] `BUG-073` **Data Duplication in MBH Parva 3**: Resolved verse duplication issues in MBH `adhyaya-231.json` by removing duplicated content.
 - [x] `BUG-074` **Placeholder Violation in Pipeline**: Refactored `vishwa.py` to log warnings instead of auto-generating placeholder strings.
 - [x] `BUG-075` **Mahabharata Parva 3 Re-scraping**: Freshly ingested Parva 3 Adhyaya 231 from KMG using scrapling to avoid 403 blocks.
 - [x] `CRAWL-001` **Investigate specialized KMG scrapers**: Replaced generic `PlaywrightCrawler` with a robust custom parser for Sacred Texts.
 - [x] `CRAWL-002` **Integrate GRETIL Scraper**: Researched and integrated a library for high-accuracy Sanskrit extraction from GRETIL.
 - [x] `GATHER-KENA-UPANISHAD` & `KENA-DATA-2` **Complete Kena Upanishad**: Acquired remaining 25 verses and 2nd author to complete the 34-verse text, then validated and promoted it to GOLD.
-### ### 🔧 Engineering, Stability & Hydration
+### 🔧 Engineering, Stability & Hydration
 - [x] `BUG-072` **Hardcoded Library Stats**: Refactored `totalAuthors` and other statistics in `lib/texts.ts` to be dynamically calculated from the live scholars registry.
 - [x] `BUG-076` **Hydration Audit (Global)**: Audited `Header.tsx` and `locale-provider.tsx` for safe `localStorage` access, adding `mounted` states to prevent hydration mismatches.
 - [x] `GATE-002` & `GATE-001` **Visual Audits**: Completed full visual audits for Isha, Bhagavata, Stotras, and Mahabharata. Verified all routes, AI synthesis, and author toggles.
 - [x] `BUG-078` **Hunt Pipeline/Data Bugs**: Cleaned Kena Upanishad and Bhagavata Purana placeholder text to protect against Zero Hallucination violations.
-### ### 🎨 UI, Deployment & Interactive Labs
+### 🎨 UI, Deployment & Interactive Labs
 - [x] `LAB-GITA-004` to `LAB-GITA-010` **Gita interactive labs**: Implemented Moksha Path Navigator, Yoga Mind Control Explorer, Bhāgavata Bhakti Flow, and Kena Sensory Inquiry labs.
 - [x] `DEPLOY-001` & `DEPLOY-002` **Deployment Readiness**: Configured Cloudflare Pages / Vercel Edge caching, rate-limiting telemetry, and custom SSL domains.
 
 ## [1.1.0]
 
-### ### Core Four Scripture Data Acquisition
+### Core Four Scripture Data Acquisition
 - [x] `SCHOLAR-001` **Top 10 Identification**: Research and rank candidates (Adi Shankara, Ramanuja, Madhva, Abhinavagupta, Tilak, Gandhi, Radhakrishnan, Easwaran, Aurobindo, Gita Press). **Done**: 2026-05-03. Ranked list + acquisition plan below. Existing slate (ISKCON Prabhupāda + Sant Dnyāneshwar) confirmed as Tier 0 complete; this task ranks the 10 next-priority additions.
 - [x] `SCHOLAR-002` **Multilingual Balance Pass**: Actively target scholars to ensure Hindi (Goyandka), Marathi (Historical Sages), and English (Modern scholars) are represented. **Done**: 2026-05-03. Built on the SCHOLAR-001 ranked list — language-availability matrix below + per-language target slate + gap analysis.
 - [x] `SCHOLAR-003` **Single-Language Excellence**: Ingest high-prestige scholars even if they only have 1 language (e.g., pure Sanskrit Bhasyas or regional Marathi works). **Done**: 2026-05-03. Single-language ingestion policy + NVF schema rule + vetted Sanskrit corpora list below.
@@ -741,12 +767,12 @@
 - `FEAT-SEM-001` **Define Tattva Ontology Schema**: Define a JSON schema (`types/ontology.ts`) for global semantic concepts (Tattvas) such as "Dharma", "Brahman", "Atman", and "Karma".
 - `FEAT-SEM-002` **Static Ontology Seed Mapping**: Create `data/ontology/tattvas.json` containing initial hand-curated linkages across Bhagavad Gita and Upanishads.
 - `BUG-084` **Lucide Icons**: Upgrade `lucide-react` dependency and address `Github` and `Linkedin` missing icon export issue without changing the variable names arbitrarily.
-### ### 🏛️ Data Operations
+### 🏛️ Data Operations
 - [x] `BUG-079` **Bhagavata Purana Data Integrity**: Fixed repeated content, invalid layer content, missing chapter fields in `book.meta.json`, and filled missing Prabhupada translations via `single_language` adjustments.
 - [x] `BHAG-DATA-GAP` **Gather Bhagavata Purana Gaps**: Added programmatic UI-compliant layers for Vyasa and Prabhupada translation missing slots (hi/mr/en) avoiding placeholders. Added `ai_metadata`.
 - [x] `BHAG-DATA-3` **Verify & Promote Bhagavata Purana**: Validated and promoted Canto 1 (19 chapters, 718 verses, 2 authors: Vyasa, Prabhupada) to GOLD status and updated manifest.
 - [x] `GITA-SCH-03` to `GITA-SCH-10` **Scholarly Ingestion**: Marked as deferred due to missing source data and recorded to Pending Human Decision Backlog.
-### ### 🧪 Quality Gates
+### 🧪 Quality Gates
 - Lint: ✅
 - TSC: ✅
 - Test: ✅
@@ -775,7 +801,7 @@
 
 ## [1.0.10]
 
-### ### 🏛️ Scripture Promotion & Bug Fixes
+### 🏛️ Scripture Promotion & Bug Fixes
 - [x] `BUG-069` **Validate Silver Edge Cases**: Added required `book.meta.json` legal clearance metadata to `garuda-purana`, `isha-upanishad`, `samskaras`, `stotras`, and `yoga-sutras` so they successfully pass silver data validation.
 - [x] `BUG-070` **Check Search Coverage**: Modified `lib/lake.worker.ts` to include searching the JSON `content` column in SQLite so new commentary data is indexed in the fallback search query.
 - [x] `BUG-071` **Audit Mobile Viewport Navigation**: Patched `HierarchicalNav` to restrict maximum dropdown width on narrow mobile viewports and implemented search filtering inside the dropdown to handle large parva structures.
@@ -797,9 +823,9 @@
 - [x] Created `data/2-silver/mahabharata/book.meta.json` (and for Bhagavata Purana, Vishnu Purana).
 - [x] Promoted Mahabharata, Bhagavata Purana, and Vishnu Purana to Gold using `scripts/promote_to_gold.js`.
 - [x] Bumped version to 1.0.10.
-### ### 📜 Scholars Registry
+### 📜 Scholars Registry
 - Marked `GITA-SCH-03` through `GITA-SCH-10` as BLOCKED and appended missing source data note to Pending Human Decision Backlog.
-### ### 🧪 Quality Gates
+### 🧪 Quality Gates
 - Lint: ✅
 - TSC: ✅
 - Test: ✅
@@ -807,19 +833,19 @@
 
 ## [1.0.9]
 
-### ### 🏛️ Scripture Promotion
+### 🏛️ Scripture Promotion
 - [x] **Mahabharata (Parvas 1-3)** promoted to Gold tier (~19,580 verses).
 - [x] **Bhagavata Purana** (Canto 1) promoted to Gold tier.
 - [x] **Vishnu Purana** promoted to Gold tier.
 - [x] Legal metadata (book.meta.json) created for Mahabharata, Bhagavata Purana, and Vishnu Purana to satisfy the pipeline safety gate.
-### ### 📜 Scholars Registry
+### 📜 Scholars Registry
 - [x] **Nilakantha Caturdhara** registered as a live Tier 0 scholar with POC commentary injection for Mahabharata 1.1.
 - [x] **Bal Gangadhar Tilak** and **Sri Aurobindo** (Gita) marked as deferred until reliable digital sources are added to the repository.
-### ### 🔧 Engineering & Stability
+### 🔧 Engineering & Stability
 - [x] **Stability Gate**: Upgraded next version in package.json to match the actual environment (^16.2.6) and verified build.
 - [x] **Bug Fix**: Resolved a division-by-zero error in scripts/vishwa.py manifest generation.
 - [x] **Test Suite**: Added __tests__/mbh-kmg.test.ts to verify Mahabharata Gold data integrity.
-### ### 🧪 Quality Gates
+### 🧪 Quality Gates
 - Lint: ✅
 - TSC: ✅
 - Test: ✅
@@ -829,7 +855,7 @@
 - [x] **Yoga Sutras (Chapter 1)**: Ingested 10 key sutras of Samadhi Pada with Vivekananda translation. Promoted to Gold and activated.
 - **Kena Sensory Inquiry Lab**: New interactive lab for sensory inquiry (Kena 1.1-1.2).
 - **V-Score/Readiness**: Bhagavata Purana, Kena Upanishad, and Yoga Sutras now 100% Gold Standard compliant.
-### ### 🧹 Migrated Completed Tasks (from Backlog Cleanup)
+### 🧹 Migrated Completed Tasks (from Backlog Cleanup)
 - [x] `BUG-069` **Validate Silver Edge Cases**: Run validation on all silver data files to ensure they don't break unexpectedly.
 - [x] `BUG-070` **Check Search Coverage**: Ensure the search functionality correctly indexes new commentary data.
 - [x] `BUG-071` **Audit Mobile Viewport Navigation**: Verify hierarchical nav drop down functionality on mobile screens.
