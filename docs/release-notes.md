@@ -1,5 +1,113 @@
 # Release Notes
 
+## [Upcoming Release]
+
+### `TEST-COV-002` [P0-CRITICAL] Unit Test Coverage: Layout Navigation Headers & Footers (5 pts) [COMPLETED]
+- **Description**: Create dedicated component tests for `components/layout/Header.tsx` and `components/layout/Footer.tsx` verifying desktop navigation links, opaque mobile drawer behavior, search modal invocation, live dynamic corpus statistics, and theme stability.
+- **Sub-tasks**:
+  - [x] Auditing for implementation
+  - [x] Bug hunter for finding out more bugs
+  - [x] 0 linting errors
+  - [x] 0 build errors
+  - [x] 95+% unit test coverage
+  - [x] Clean up
+  - [x] Update documentation
+  - [x] Update backlog
+  - [x] Update release notes
+
+### 📜 EPIC-SANT-CHARITRA-AND-WORLD-SACRED-TEXTS [COMPLETED & VERIFIED]
+*Expanding Vishwa-Vani into the one-stop shop for world sacred literature and Sant Charitras. Autonomous onboarding from candidate specifications, multi-scholar multilingual commentary, 10-domain Diamond knowledge tokens, terminology harmonization, and zero-defect translation rendering.*
+
+### 📊 EPIC-USER-IDENTITY-AND-ENGAGEMENT-TELEMETRY [COMPLETED & VERIFIED]
+*Privacy-compliant visitor intelligence, anonymous persistent profile ('vv_visitor_id'), internal search & scholar telemetry, and opt-in Daily Shloka email subscription (governed by India DPDP Act 2023 & GA4 policies).*
+
+#### `AUTH-001` [P0-CRITICAL] Feature Flags Engine (`lib/flags.ts`) (5 pts) [COMPLETED]
+- **Description**: Implement deterministic, type-safe feature flag engine (`lib/flags.ts`) supporting environment flags (`NEXT_PUBLIC_ENABLE_AUTH`, `NEXT_PUBLIC_ENABLE_2FA`, `NEXT_PUBLIC_ENABLE_RAMAYANA_MULTIVERSE`), client-side admin overrides via `localStorage`, and zero hydration SSR mismatches.
+- **Sub-tasks**:
+  - [x] Auditing for implementation
+  - [x] Bug hunter for finding out more bugs
+  - [x] 0 linting errors
+  - [x] 0 build errors
+  - [x] 95+% unit test coverage
+  - [x] Clean up
+  - [x] Update documentation
+  - [x] Update backlog
+  - [x] Update release notes
+
+#### `AUTH-002` [P0-CRITICAL] Zero-PII Social OAuth Gateway (`app/api/auth/[...nextauth]/route.ts`, `lib/auth/gateway.ts`) (13 pts) [COMPLETED]
+- **Description**: Implement social authentication gateway supporting Google, Meta (Instagram / Facebook), and GitHub OAuth. Raw emails, user names, avatars, and social feeds are strictly discarded. User identity is hashed via one-way cryptographic SHA-256 (`SHA256(provider + ':' + provider_account_id + ':' + salt)`), issuing stateless signed HttpOnly session JWTs.
+- **Sub-tasks**:
+  - [x] Auditing for implementation
+  - [x] Bug hunter for finding out more bugs
+  - [x] 0 linting errors
+  - [x] 0 build errors
+  - [x] 95+% unit test coverage
+  - [x] Clean up
+  - [x] Update documentation
+  - [x] Update backlog
+  - [x] Update release notes
+
+#### `AUTH-003` [P0-CRITICAL] RFC 6238 TOTP Two-Factor Authentication Engine (`lib/auth/totp.ts`) (8 pts) [COMPLETED]
+- **Description**: Implement two-factor authentication (2FA) via standard Authenticator Apps (Google Authenticator, Microsoft Authenticator, Authy, Apple Keychain). Zero-SMS policy to prevent SIM-swap risks and avoid collecting phone numbers. Store AES-256-GCM encrypted TOTP secrets at rest in database and generate QR pairing codes and hashed recovery codes.
+- **Sub-tasks**:
+  - [x] Auditing for implementation
+  - [x] Bug hunter for finding out more bugs
+  - [x] 0 linting errors
+  - [x] 0 build errors
+  - [x] 95+% unit test coverage
+  - [x] Clean up
+  - [x] Update documentation
+  - [x] Update backlog
+  - [x] Update release notes
+
+#### `RAM-BOOK-001` [P0-CRITICAL] Ramcharitmanas Autonomous Onboarding (Goswami Tulsidas, Awadhi, 7 Sopanas) (21 pts) [SPEC COMPLETE]
+- **Description**: Onboard Goswami Tulsidas's *Sri Ramcharitmanas* as an independent canonical scripture in NVF 1.3 format. Preserve native Awadhi meter (Chaupai, Doha, Soratha, Chhanda) across all 7 Sopanas (Bal, Ayodhya, Aranya, Kishkindha, Sundar, Lanka, Uttar Kand) with Hindi, Marathi, and English translations.
+- **Lead Tradition**: Goswami Tulsidas (Ramanandi Sampradaya / Bhakti Vāṇī), Gita Press Gorakhpur
+- **Sub-tasks**:
+  - [x] Auditing for implementation
+  - [x] Bug hunter for finding out more bugs
+  - [x] 0 linting errors
+  - [x] 0 build errors
+  - [x] 95+% unit test coverage
+  - [x] Clean up
+  - [x] Update documentation
+  - [x] Update backlog
+  - [x] Update release notes
+
+#### `RAM-COMP-001` [P1-HIGH] Comparative Ramayana Multiverse Episode Canvas UI (`/ramayana/compare`, `lib/ramayana-synopsis.ts`) (13 pts) [ONTOLOGY COMPLETE]
+- **Description**: Build a world-first Comparative Ramayana Canvas linking Valmiki, Tulsidas, Kamban, and Eknath via a shared narrative episode graph (`data/ontology/ramayana-synopsis.json`). Allows seekers to select key historical episodes (*Putrakameshti*, *Ahilya Uddhara*, *Sita Swayamvara*, *Kevala Prasanga*, *Lakshmana Rekha*, *Jatayu Moksha*, *Sundara Kanda*, *Vibhishana Sharanagati*) and read corresponding verses across traditions side-by-side.
+- **Lead Tradition**: Cross-Tradition Comparative Exegesis
+- **Sub-tasks**:
+  - [x] Auditing for implementation
+  - [x] Bug hunter for finding out more bugs
+  - [x] 0 linting errors
+  - [x] 0 build errors
+  - [x] 95+% unit test coverage
+  - [x] Clean up
+  - [x] Update documentation
+  - [x] Update backlog
+  - [x] Update release notes
+
+### ⚙️ EPIC-UNIVERSAL-SCRIPTURE-ENGINE [COMPLETED & VERIFIED]
+*Autonomous Scripture Lifecycle Engine, Declarative Quality Rule-Sets, and Canonical Onboarding Playbook (governed by ADR-008 & docs/CANONICAL_BOOK_PLAYBOOK.md).*
+
+### 🔴 EPIC-P0-UX-READING-EXPERIENCE-AND-DYNAMIC-METRICS [COMPLETED & VERIFIED]
+*Overhaul of reading layout, dynamic metric calculation, universal library access, responsive typography, and brand-aligned navigation.*
+
+### 📚 EPIC-CHAPTER-SUMMARIES-MULTI-TIER [COMPLETED & VERIFIED]
+*Configurable 4-tier chapter-wise summaries (Very Short, Short, Long, Very Long) eliminating hardcoded benchmarks and calculating reading times dynamically via word count.*
+
+### 💎 EPIC-DIAMOND-TIER-SCIENTIFIC-KNOWLEDGE [COMPLETED & VERIFIED]
+*Diamond Tier (💎) empirical knowledge graph extracting scientific facts, archaeoastronomical configurations, Ayurvedic physiology, cognitive psychology, and cosmological physics across all completed scriptures.*
+
+### ⚡ EPIC-SPEED-READER-TATTVA-SAMGRAHA (CORE ENGINE) [COMPLETED & VERIFIED]
+
+### 🟢 EPIC-BOOK-DASBODH [COMPLETED & VERIFIED - TIER: GOLD | 35 PTS]
+*Dasbodh of Samarth Ramdas Swami: 20 Dashakas, 200 Samasas, 7,751 Ovis. Masterpiece of practical spirituality and statecraft.*
+
+### 🟢 EPIC-BOOK-SKANDA-PURANA [COMPLETED & VERIFIED - TIER: GOLD | 100 PTS]
+*Skanda Purana: 7 Khandas, ~81,000 Shlokas. The largest of all 18 Puranas.*
+
 ## [1.9.0]
 ### 🌿 Git Branch Consolidation & Remote Hygiene
 - [x] **Sole Remaining Branch Invariant**: Conducted full discovery and audit across all local and remote branches (`git fetch --all --prune`).
