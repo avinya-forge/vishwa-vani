@@ -246,6 +246,89 @@
 
 ---
 
+### 🎙️ EPIC-BEDTIME-PODCAST-AND-VOICE-SAMVADA [P0-CRITICAL / ACTIVE]
+*Chapter-Level Multilingual Bedtime Scripture Podcast Narration, Sleep Timer, Hierarchical Dual-Context RAG Voice Companion, and Zero-PII Topical Interest Tracking.*
+
+#### `POD-001` [P0-CRITICAL] Chapter-Level Bedtime Scripture Podcast Narration Engine (`lib/audio/podcast-engine.ts`) (13 pts) [COMPLETED]
+- **Description**: Build narration engine converting full chapter verse records and multi-scholar layers into structured, serene bedtime audio manifests with 110 wpm relaxing cadence, Sanskrit verse chanting followed by vernacular meanings (English, Hindi, Marathi), sage commentary excerpts, and meditative intro/outro reflections.
+- **Sub-tasks**:
+  - [x] Auditing for implementation
+  - [x] Bug hunter for finding out more bugs
+  - [x] 0 linting errors
+  - [x] 0 build errors
+  - [x] 95+% unit test coverage
+  - [x] Clean up
+  - [x] Update documentation
+  - [x] Update backlog
+  - [x] Update release notes
+
+#### `POD-002` [P0-CRITICAL] Hierarchical Dual-Context RAG Voice Companion Host (`lib/audio/voice-host.ts`) (13 pts) [COMPLETED]
+- **Description**: Implement bedtime voice companion answering seeker queries while playing audio. Guarantees Priority 1 anchor context: the specific book and chapter being listened to remains the primary source of truth, enriched by Priority 2 global corpus connections across the 33 sacred texts with concise (2–4 sentence) peaceful responses.
+- **Sub-tasks**:
+  - [x] Auditing for implementation
+  - [x] Bug hunter for finding out more bugs
+  - [x] 0 linting errors
+  - [x] 0 build errors
+  - [x] 95+% unit test coverage
+  - [x] Clean up
+  - [x] Update documentation
+  - [x] Update backlog
+  - [x] Update release notes
+
+#### `POD-003` [P1-HIGH] Zero-PII Seeker Topical Interest & Theme Affinity Tracker (`lib/analytics/interest-tracker.ts`) (8 pts) [COMPLETED]
+- **Description**: Track seeker's topical interests (Bhakti, Jnana, Karma, Dhyana, Vairagya, Dharma, Sant Vani) purely client-side in localStorage (v_seeker_affinity). Computes normalized affinity weights and provides personalized bedtime chapter recommendations and sleep reading lists without storing any PII.
+- **Sub-tasks**:
+  - [x] Auditing for implementation
+  - [x] Bug hunter for finding out more bugs
+  - [x] 0 linting errors
+  - [x] 0 build errors
+  - [x] 95+% unit test coverage
+  - [x] Clean up
+  - [x] Update documentation
+  - [x] Update backlog
+  - [x] Update release notes
+
+#### `POD-004` [P0-CRITICAL] Chapter Bedtime Audio Player UI & Sleep Timer (`components/audio/bedtime-player.tsx`) (13 pts)
+- **Description**: Build accessible, distraction-free bedtime audio player modal with verse-by-verse continuous audio playback, audio ducking during voice companion interaction, gentle volume fade-out sleep timer (15m, 30m, 45m, 60m, End of Chapter), and ambient Tanpura drone overlay.
+- **Sub-tasks**:
+  - [ ] Auditing for implementation
+  - [ ] Bug hunter for finding out more bugs
+  - [ ] 0 linting errors
+  - [ ] 0 build errors
+  - [ ] 95+% unit test coverage
+  - [ ] Clean up
+  - [ ] Update documentation
+  - [ ] Update backlog
+  - [ ] Update release notes
+
+#### `POD-005` [P1-HIGH] Background Audio & PWA MediaSession Lock-Screen Controls (`lib/audio/media-session.ts`) (8 pts)
+- **Description**: Integrate W3C MediaSession API (`navigator.mediaSession`) for hands-free background playback with phone screen turned off in bed, displaying chapter title, book cover art, and lock-screen play/pause/skip controls.
+- **Sub-tasks**:
+  - [ ] Auditing for implementation
+  - [ ] Bug hunter for finding out more bugs
+  - [ ] 0 linting errors
+  - [ ] 0 build errors
+  - [ ] 95+% unit test coverage
+  - [ ] Clean up
+  - [ ] Update documentation
+  - [ ] Update backlog
+  - [ ] Update release notes
+
+#### `POD-006` [P1-HIGH] Edge / Neural Indic-TTS & Pre-Rendered Audio Pipeline (`scripts/generate_podcast_audio.py`) (13 pts)
+- **Description**: Build offline batch generation pipeline utilizing neural Indic-TTS (AI4Bharat / Edge-TTS / Kokoro) to pre-render studio-grade Sanskrit recitation and vernacular chapter podcasts, caching MP3/WebM audio assets on CDN/Turso Lake for zero-latency bedtime streaming.
+- **Sub-tasks**:
+  - [ ] Auditing for implementation
+  - [ ] Bug hunter for finding out more bugs
+  - [ ] 0 linting errors
+  - [ ] 0 build errors
+  - [ ] 95+% unit test coverage
+  - [ ] Clean up
+  - [ ] Update documentation
+  - [ ] Update backlog
+  - [ ] Update release notes
+
+---
+
 ## 🗺️ TIER 2: MID-TERM SCRIPTURAL & ARCHITECTURAL HORIZONS (MONTHS 2–8)
 
 ---

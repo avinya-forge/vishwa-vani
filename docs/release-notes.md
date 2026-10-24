@@ -138,13 +138,20 @@
 - [x] `RAM-COMP-001` **Ramayana Multiverse Episode Synopsis Graph (`data/ontology/ramayana-synopsis.json`, `lib/ramayana-synopsis.ts`)**: Built cross-tradition narrative ontology linking Valmiki Ramayana (Sanskrit), Ramcharitmanas (Awadhi), Kamba Ramayanam (Tamil), Adhyatma Ramayana (Sanskrit Advaita), and Bhavartha Ramayana (Marathi) across pivotal episodes (*Putrakameshti*, *Ahilya Uddhara*, *Sita Swayamvara*, *Kevala Prasanga*, *Lakshmana Rekha & Maya Sita*, *Jatayu Moksha*, *Sundara Kanda Ocean Leap*, *Vibhishana Sharanagati*).
 - [x] `RAM-BOOK-001` **Sri Ramcharitmanas Candidate Specification (`data/specs/ramcharitmanas.json`)**: Formulated 7 Sopanas canonical spec with Awadhi Chaupai/Doha meter metadata, Goswami Tulsidas & Gita Press lineages, and seed Mangalacharan invocations.
 
+### 🎙️ Bedtime Scripture Podcast & Hierarchical Voice Companion Engine
+- [x] `POD-001` **Chapter-Level Bedtime Scripture Podcast Narration Engine (`lib/audio/podcast-engine.ts`)**: Implemented narration manifest generator converting full chapter verse records and multi-scholar layers into tranquil, sleep-conducive audio streams with 110 wpm relaxing cadence, Sanskrit verse chanting followed by vernacular meanings (English, Hindi, Marathi), sage commentary excerpts, and meditative intro/outro reflections.
+- [x] `POD-002` **Hierarchical Dual-Context RAG Voice Companion Host (`lib/audio/voice-host.ts`)**: Implemented bedtime interactive voice companion allowing listeners to ask questions while listening to a chapter. Enforces Priority 1 anchor context: the specific book and chapter being listened to remains the primary authority, enriched by Priority 2 global corpus connections across the 33 sacred texts with concise (2–4 sentence) peaceful responses.
+- [x] `POD-003` **Zero-PII Seeker Topical Interest & Theme Affinity Tracker (`lib/analytics/interest-tracker.ts`)**: Built client-side interest profile tracker in localStorage (`vv_seeker_affinity`) tracking affinities across Bhakti, Jnana, Karma, Dhyana, Vairagya, Dharma, and Sant Vani, providing personalized bedtime chapter recommendations and sleep reading lists without storing any PII.
+- [x] **Bedtime Podcast Feature Flag**: Added `enableBedtimePodcast` to `lib/flags.ts` supporting zero-downtime progressive rollout and client-side admin overrides.
+
 ### 🧪 Test Expansion & Quality Gates
 - [x] `TEST-COV-002` **Header & Mobile Portal Tests**: Created `__tests__/components-header.test.tsx` verifying branding, mobile menu portal opening, backdrop click dismissal, and escape key event handling.
 - [x] **Privacy Page Tests**: Created `__tests__/privacy.test.tsx` validating data ethics sections and UI layout.
 - [x] **Feature Flags Engine Tests**: Created `__tests__/lib-flags.test.ts` (4/4 tests passing) validating environment defaults, client-side overrides, and corruption resilience.
 - [x] **Zero-PII Gateway & TOTP Tests**: Created `__tests__/lib-auth-gateway.test.ts` (10 tests) and `__tests__/lib-auth-totp.test.ts` (8 tests) verifying hashing determinism, zero PII retention, token tampering rejection, and clock drift tolerance.
 - [x] **Ramayana Multiverse & Spec Tests**: Created `__tests__/lib-ramayana-synopsis.test.ts` (6 tests) and `__tests__/data-specs-ramcharitmanas.test.ts` (4 tests).
-- [x] **100% Verification Suite**: Full test suite passes green across all 78 test suites (442 passing tests, 0 failures), 0 ESLint errors, and 0 TypeScript compilation errors.
+- [x] **Podcast, Voice Host & Interest Tracker Tests**: Created `__tests__/lib-podcast-engine.test.ts` (5 tests), `__tests__/lib-voice-host.test.ts` (4 tests), and `__tests__/lib-interest-tracker.test.ts` (6 tests).
+- [x] **100% Verification Suite**: Full test suite passes green across all 81 test suites (457 passing tests, 0 failures), 0 ESLint errors, and 0 TypeScript compilation errors.
 
 ## [1.8.0]
 ### From Backlog: 🌌 EPIC-ROADMAP-MASTER-VISION [STRATEGIC ROADMAP]

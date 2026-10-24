@@ -19,6 +19,8 @@ export interface FeatureFlags {
   strictDemo: boolean;
   /** Enables Ramayana Multiverse Comparative Episode Canvas */
   enableRamayanaMultiverse: boolean;
+  /** Enables Chapter-Level Bedtime Scripture Podcast & Voice Companion */
+  enableBedtimePodcast: boolean;
 }
 
 export type FeatureFlagKey = keyof FeatureFlags;
@@ -30,6 +32,7 @@ const DEFAULT_FLAGS: FeatureFlags = {
   enableCronIngestion: false,
   strictDemo: false,
   enableRamayanaMultiverse: false,
+  enableBedtimePodcast: false,
 };
 
 /**
@@ -46,6 +49,8 @@ function getEnvDefaults(): FeatureFlags {
       process.env.NEXT_PUBLIC_STRICT_DEMO === 'true',
     enableRamayanaMultiverse:
       process.env.NEXT_PUBLIC_ENABLE_RAMAYANA_MULTIVERSE === 'true',
+    enableBedtimePodcast:
+      process.env.NEXT_PUBLIC_ENABLE_BEDTIME_PODCAST === 'true',
   };
 }
 

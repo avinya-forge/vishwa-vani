@@ -22,22 +22,27 @@ describe('Feature Flags Engine (lib/flags.ts)', () => {
     delete process.env.NEXT_PUBLIC_ENABLE_AUTH;
     delete process.env.NEXT_PUBLIC_ENABLE_2FA;
     delete process.env.NEXT_PUBLIC_ENABLE_LOCAL_LLM;
+    delete process.env.NEXT_PUBLIC_ENABLE_BEDTIME_PODCAST;
 
     const flags = getAllFeatureFlags();
     expect(flags.enableAuth).toBe(false);
     expect(flags.enable2FA).toBe(false);
     expect(flags.enableLocalLLM).toBe(false);
+    expect(flags.enableBedtimePodcast).toBe(false);
     expect(isFeatureEnabled('enableAuth')).toBe(false);
+    expect(isFeatureEnabled('enableBedtimePodcast')).toBe(false);
   });
 
   test('respects environment variables when set to true', () => {
     process.env.NEXT_PUBLIC_ENABLE_AUTH = 'true';
     process.env.NEXT_PUBLIC_ENABLE_2FA = 'true';
     process.env.NEXT_PUBLIC_ENABLE_RAMAYANA_MULTIVERSE = 'true';
+    process.env.NEXT_PUBLIC_ENABLE_BEDTIME_PODCAST = 'true';
 
     expect(isFeatureEnabled('enableAuth')).toBe(true);
     expect(isFeatureEnabled('enable2FA')).toBe(true);
     expect(isFeatureEnabled('enableRamayanaMultiverse')).toBe(true);
+    expect(isFeatureEnabled('enableBedtimePodcast')).toBe(true);
   });
 
   test('allows client-side localStorage overrides to take precedence', () => {
