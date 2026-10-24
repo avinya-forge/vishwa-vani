@@ -210,11 +210,11 @@ export class UniversalLakeSyncer {
    */
   loadGoldShardsFromDisk(bookSlug: string, goldDir?: string): ChapterShard[] {
     const baseDir = goldDir || path.join(process.cwd(), 'data', '3-gold', bookSlug);
-    if (!fs.existsSync(baseDir)) return [];
+    if (!fs.existsSync(/*turbopackIgnore: true*/ baseDir)) return [];
 
     let manifestFiles: string[] | null = null;
     const manifestPath = path.join(process.cwd(), 'data', 'manifest.json');
-    if (fs.existsSync(manifestPath)) {
+    if (fs.existsSync(/*turbopackIgnore: true*/ manifestPath)) {
       try {
         const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
         const bookEntry = manifest.books?.find((b: { book_id?: string; chapters?: Array<{ file?: string }> }) => b.book_id === bookSlug);
@@ -224,7 +224,7 @@ export class UniversalLakeSyncer {
       } catch {}
     }
 
-    let files = fs.readdirSync(baseDir)
+    let files = fs.readdirSync(/*turbopackIgnore: true*/ baseDir)
       .filter(f => f.endsWith('.json') && !f.endsWith('.meta.json'));
 
     if (manifestFiles && manifestFiles.length > 0) {
