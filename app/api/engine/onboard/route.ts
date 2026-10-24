@@ -103,7 +103,7 @@ export async function POST(request: Request) {
 
       if (fs.existsSync(specFile)) {
         log(`✓ Spec discovered in data/specs/${targetSlug}.json`);
-        const parsed = JSON.parse(fs.readFileSync(specFile, 'utf8'));
+        const parsed = JSON.parse(await fs.promises.readFile(specFile, 'utf8'));
         spec = parsed.spec || parsed;
         rawVerses = parsed.rawVerses;
       } else {
