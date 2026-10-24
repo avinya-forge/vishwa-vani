@@ -14,6 +14,7 @@ import AdhyayaShareLink from './adhyaya-share-link'
 import SemanticExplorerDrawer from './semantic-explorer-drawer'
 import VerseBaseTranslation from './verse-base-translation'
 import VerseCommentarySection from './verse-commentary-section'
+import BedtimePlayer from '@/components/audio/bedtime-player'
 import { getKnowledgeTokensByScriptureAndVerse } from '@/lib/vedic-science'
 import { trackScholarSelection, trackLanguagePreference, trackBookmarkToggle } from '@/lib/analytics'
 
@@ -257,6 +258,7 @@ export default function StudyClient({
   const [copiedVerse, setCopiedVerse] = useState<string | null>(null)
   const [copiedLink, setCopiedLink] = useState<string | null>(null)
   const [activeVerse, setActiveVerse] = useState<number>(1)
+  const [isBedtimePlayerOpen, setIsBedtimePlayerOpen] = useState(false)
   const [touchStartX, setTouchStartX] = useState<number | null>(null)
 
   const copyVerse = (v: Record<string, unknown>) => {
@@ -726,6 +728,17 @@ export default function StudyClient({
               )}
             </div>
 
+            {/* Bedtime Audio Podcast Button */}
+            <button
+              onClick={() => setIsBedtimePlayerOpen(true)}
+              title="Listen to this chapter (Bedtime Podcast)"
+              className="px-2.5 py-1.5 rounded-xl border border-amber-600/40 bg-amber-50 dark:bg-amber-950/40 text-amber-800 dark:text-amber-300 hover:bg-amber-100 dark:hover:bg-amber-900/50 text-[11px] font-bold flex items-center gap-1.5 transition-all shadow-sm flex-shrink-0"
+            >
+              <span>🎧</span>
+              <span className="hidden sm:inline">Bedtime Audio</span>
+              <span className="sm:hidden">Audio</span>
+            </button>
+
             {/* Vedic Labs & Tools Navigation */}
             <div className="flex items-center gap-1.5 flex-shrink-0">
               <button
@@ -761,7 +774,7 @@ export default function StudyClient({
               title="Generate AI Synthesis for entire chapter"
               className="px-3 py-1.5 rounded-xl border text-[11px] font-bold transition-all flex-shrink-0 flex items-center gap-1.5 bg-white dark:bg-stone-800 border-stone-200 dark:border-stone-700 text-stone-600 dark:text-stone-400 hover:border-orange-400 hover:text-orange-600 disabled:opacity-50"
             >
-              {_isChapterSynthesizing ? 'Analysing…' : 'Generate AI Synthesis for entire chapter'}
+              <span className="hidden sm:inline">{_isChapterSynthesizing ? 'Analysing…' : 'AI Chapter Synthesis'}</span><span className="sm:hidden">{_isChapterSynthesizing ? '…' : 'AI Synth'}</span>
             </button>
           </div>
         </div>
@@ -1179,6 +1192,19 @@ export default function StudyClient({
 
         </div>
       </main>
+
+      <BedtimePlayer
+        bookSlug={textSlug}
+        bookTitle={bookData?.name || textSlug}
+        chapter={chapter}
+        chapterTitle={bookData?.chapterNames?.[String(chapter)]}
+        verses={verses as unknown as Array<Record<string, unknown>>}
+        isOpen={isBedtimePlayerOpen}
+        onClose={() => setIsBedtimePlayerOpen(false)}
+        onActiveVerseChange={(vNum) => {
+          verseRefs.current[vNum]?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }}
+      />
 
     </>
   )
