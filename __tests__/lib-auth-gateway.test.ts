@@ -8,6 +8,26 @@ import {
 import * as flags from '../lib/flags'
 
 describe('Zero-PII Social OAuth Authentication Gateway (lib/auth/gateway)', () => {
+  const originalEnv = process.env;
+
+  beforeEach(() => {
+    jest.resetModules();
+    process.env = { ...originalEnv };
+  });
+
+  afterAll(() => {
+    process.env = originalEnv;
+  });
+
+  test('throws in production if secrets are missing', () => {
+    Object.defineProperty(process.env, 'NODE_ENV', { value: 'production', configurable: true });
+    delete process.env.AUTH_SALT;
+    delete process.env.AUTH_SESSION_SECRET;
+
+    expect(() => {
+      require('../lib/auth/gateway');
+    }).toThrow('Missing AUTH_SALT or AUTH_SESSION_SECRET environment variables in production');
+  });
   beforeEach(() => {
     jest.restoreAllMocks()
   })

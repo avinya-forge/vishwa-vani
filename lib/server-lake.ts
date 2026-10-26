@@ -8,7 +8,13 @@ import { migrateToNVF } from './nvf';
 
 const isProd = process.env.NODE_ENV === 'production';
 const keySource = process.env.LAKE_KEY || process.env.LAKE_SECRET_KEY || '';
-const SECRET_KEY = crypto.createHash('sha256').update(keySource || 'vishwa-vani-dev-key').digest();
+
+if (isProd && !keySource) {
+  throw new Error('Missing LAKE_KEY or LAKE_SECRET_KEY environment variable in production');
+}
+
+const devKeySource = keySource || crypto.randomBytes(32).toString('hex');
+const SECRET_KEY = crypto.createHash('sha256').update(devKeySource).digest();
 
 function decrypt(encryptedText: string): string {
   if (encryptedText.startsWith('{')) return encryptedText; // Already plain text
