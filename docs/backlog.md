@@ -32,19 +32,6 @@
 ## 🛑 TIER 0: CRITICAL QUALITY GATES & DEFECT REMEDIATION [P0-CRITICAL / ACTIVE]
 *Highest priority engineering hygiene: eliminate test coverage gaps across UI components and API routes, optimize responsive layouts, and verify zero regressions across all 65 test suites.*
 
-### `SEC-001` [P0-CRITICAL] Remove Hardcoded Secrets from Codebase (5 pts)
-- **Description**: Ensure all hardcoded fallback secrets are completely removed from the codebase to align with strict OWASP standards. Replace `process.env.LAKE_SECRET_KEY || 'vishwa-vani-dev-key'` in `lib/server-lake.ts` and `process.env.AUTH_SESSION_SECRET || 'vishwa-vani-jwt-hmac-sha256-secret-key-32b'` in `lib/auth/gateway.ts` with strict environment variable constraints, throwing errors if they are not provided in production.
-- **Sub-tasks**:
-  - [ ] Auditing for implementation
-  - [ ] Bug hunter for finding out more bugs
-  - [ ] 0 linting errors
-  - [ ] 0 build errors
-  - [ ] 95+% unit test coverage
-  - [ ] Clean up
-  - [ ] Update documentation
-  - [ ] Update backlog
-  - [ ] Update release notes
-
 ### `TEST-COV-001` [P0-CRITICAL] Unit Test Coverage: `components/shloka/study-client.tsx` (8 pts)
 - **Description**: Expand branch and interaction unit test coverage for the primary reading canvas from current baseline to >=95%, covering scholar switching, commentary tabs, audio player controls, font scaling, translation toggle, and ADR-008 empirical knowledge token badges.
 - **Sub-tasks**:

@@ -1070,3 +1070,10 @@
 - [x] `FIX-GOLD-GATE-001` After BUG-054 and BUG-055 confirmed done: `node scripts/audit_multilang.js --all` — Gita PASS; Isha filler blocked in UI. `data/3-gold/mahabharata/` has 0 files. `grep -r "GENERIC PLACEHOLDER" data/3-gold/` → no output. — Done: 2026-04-25
 - [x] `STD-002` Create `scripts/audit_standards.js` — comprehensive multi-tier standards validator. Checks: gold verse fields (original/translit/translation/meaning), layer coverage (2 authors × 3 langs), layer authenticity, author metadata completeness, ai_metadata, repeated content. Silver checks: NVF structure, no corrupted/mock data, at least 1 EN layer. Audit results 2026-04-25: Gita gold ALL PASS; Isha gold 150 violations (pre-existing BUG-050); all silver PASS. — Done: 2026-04-25
 - [x] `PIPE-001` **`scripts/validate_silver.js`** — Generic NVF schema validator. Checks `id`, `original`, `verse`, `layers[]`; commentary ≥ 20 chars; no bracket-prefix or `[PLACEHOLDER_` content; EN layer required. Exit 0 = pass. — Done: 2026-04-20
+
+
+## Recent Completed Tickets
+
+### `SEC-001` [P0-CRITICAL] Remove Hardcoded Secrets from Codebase
+- **Description**: Replaced hardcoded fallback secrets in `lib/server-lake.ts` (`vishwa-vani-dev-key`) and `lib/auth/gateway.ts` (`vishwa-vani-jwt-hmac-sha256-secret-key-32b`) with ephemeral fallback keys generated dynamically via `crypto.randomBytes(32)` for development. Enforced strict throwing of errors if these keys are absent in a production environment (`NODE_ENV === 'production'`).
+- **Diff Stat**: 5 files changed, 39 insertions(+), 19 deletions(-)

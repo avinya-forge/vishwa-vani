@@ -22,8 +22,14 @@ export interface ZeroPiiSessionPayload {
   exp: number
 }
 
-const DEFAULT_SALT = process.env.AUTH_SALT || 'vishwa-vani-zero-pii-default-salt-2026'
-const DEFAULT_SESSION_SECRET = process.env.AUTH_SESSION_SECRET || 'vishwa-vani-jwt-hmac-sha256-secret-key-32b'
+const isProd = process.env.NODE_ENV === 'production';
+
+if (isProd && (!process.env.AUTH_SALT || !process.env.AUTH_SESSION_SECRET)) {
+  throw new Error('Missing AUTH_SALT or AUTH_SESSION_SECRET environment variables in production');
+}
+
+const DEFAULT_SALT = process.env.AUTH_SALT || crypto.randomBytes(32).toString('hex');
+const DEFAULT_SESSION_SECRET = process.env.AUTH_SESSION_SECRET || crypto.randomBytes(32).toString('hex');
 
 /**
  * Encodes a string or buffer into URL-safe Base64 without padding.

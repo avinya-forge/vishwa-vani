@@ -131,6 +131,7 @@ describe('Server Lake', () => {
     const originalEnv = process.env.NODE_ENV
     Object.defineProperty(process.env, 'NODE_ENV', { value: 'production', configurable: true })
     delete process.env.LAKE_KEY
+    delete process.env.LAKE_SECRET_KEY
     jest.resetModules()
 
     const fs = require('fs')
@@ -151,9 +152,9 @@ describe('Server Lake', () => {
 
     const consoleErrorSpy = jest.spyOn(console, 'error').mockImplementation(() => {})
 
-    const { getVersesFromLakeServer } = require('@/lib/server-lake')
-    const verses = await getVersesFromLakeServer('gita', 6)
-    expect(verses).toHaveLength(0)
+    expect(() => {
+      require('@/lib/server-lake')
+    }).toThrow('Missing LAKE_KEY or LAKE_SECRET_KEY environment variable in production');
 
     Object.defineProperty(process.env, 'NODE_ENV', { value: originalEnv, configurable: true })
     consoleErrorSpy.mockRestore()
