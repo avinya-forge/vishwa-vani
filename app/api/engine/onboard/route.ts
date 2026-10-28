@@ -84,6 +84,15 @@ export async function POST(request: Request) {
       );
     }
 
+    const isValidSlug = (s: string) => /^[a-zA-Z0-9\-_]+$/.test(s);
+    const invalidSlugs = targetSlugs.filter(s => !isValidSlug(s));
+    if (invalidSlugs.length > 0) {
+      return NextResponse.json(
+        { error: `Invalid slug format detected: ${invalidSlugs.join(', ')}` },
+        { status: 400 }
+      );
+    }
+
     log(`======================================================================`);
     log(`☸ VISHWA-VANI UNIVERSAL AUTONOMOUS ONBOARDING ENGINE v2.0`);
     log(`Execution Target: ${targetSlugs.join(', ')} | Mode: ${isDryRun ? 'DRY-RUN' : 'LIVE GOLD ELEVATION'}`);
