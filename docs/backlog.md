@@ -2,17 +2,6 @@
 
 ---
 
-## 🌌 EPIC-ROADMAP-MASTER-VISION [STRATEGIC ROADMAP]
-*The overarching architectural and literary roadmap to fulfill Vishwa-Vani's vision: digitizing, normalizing, and preserving 18 canonical scriptures (~291,000+ verses) across 4 classical languages (Sanskrit, English, Hindi, Marathi) with zero hallucinations and authentic multi-scholar commentary.*
-
-- [ ] **Phase 2: Local Edge AI, WebGPU Vedic Saṁvāda & Quality Hardening (Target: Month 1 / 85 Story Points)**: In-browser WebGPU zero-server compute inference (`@mlc-ai/web-llm`), conversational search interface, 25 scripture companion studio workspaces, and elevation of all unit test suites to >=80%-95% coverage.
-- [ ] **Phase 3: Epic Scale — Valmiki Ramayana & Bhagavata Purana (Target: Months 2–3 / ~11,700 Verses / 160 Story Points)**: Complete verse-by-verse ingestion of Bala & Ayodhya Kandas of Ramayana and Cantos 1–4 of Srimad Bhagavatam with Govindaraja, Sridhara Swami, and Prabhupada commentary layers. Sharded Turso LibSQL Edge deployment.
-- [ ] **Phase 4: Mahabharata Parva Scaling & Four Veda Samhitas (Target: Months 4–5 / ~17,800 Verses / 175 Story Points)**: Ingestion of Mahabharata Parvas 4–6 (Virata, Udyoga, Bhishma Parva), Rigveda Mandala 1, and complete Samaveda with BORI concordance, Sayanacharya bhashya, and metrical Vedic accent mark (Svara) typography.
-- [ ] **Phase 5: Mukhya Upanishads, Comparative Darshanas & Vernacular Classics (Target: Months 6–7 / ~8,200 Verses / 165 Story Points)**: Complete Chandogya & Brihadaranyaka Upanishads, all 555 Brahma Sutras with comparative Shankara/Ramanuja/Madhva bhashyas, complete Manusmriti, Ramcharitmanas Awadhi Chaupais, and Tukaram Abhanga Gatha.
-- [ ] **Phase 6: Classical Ayurveda, Jyotisha & Sovereign Architecture (Target: Months 8–12+ / ~12,500 Verses / 150 Story Points)**: Charaka Samhita Sutra Sthana, Sushruta Samhita surgical treatises, Surya Siddhanta astronomy, 768-dim semantic vector search, and Oracle Cloud Always-Free ARM sovereign metal deployment.
-
----
-
 ## 📅 1–12+ MONTH PRODUCT ROADMAP & SPRINT EXECUTION MATRIX
 
 | Horizon | Target Window | Core Scriptural & Architectural Epics | Target Yield | Lead Traditions | Key Deliverables & Quality Targets |
@@ -28,9 +17,6 @@
 | **Months 9–12+** | Long-Term<br>(Sprints 17–24) | **Sovereign Infrastructure & Multilingual Chanting TTS**<br>Oracle Metal, PWA Offline, Sanskrit Metrical Speech | Perpetual Infrastructure<br>(80 pts) | Open-Source Sovereign Stack | Oracle Cloud Always-Free ARM (4-core, 24GB RAM, 200GB NVMe, pgvector); SQLite WASM offline PWA; metrical Sanskrit audio TTS. |
 
 ---
-
-## 🛑 TIER 0: CRITICAL QUALITY GATES & DEFECT REMEDIATION [P0-CRITICAL / ACTIVE]
-*Highest priority engineering hygiene: eliminate test coverage gaps across UI components and API routes, optimize responsive layouts, and verify zero regressions across all 65 test suites.*
 
 ### `TEST-COV-001` [P0-CRITICAL] Unit Test Coverage: `components/shloka/study-client.tsx` (8 pts)
 - **Description**: Expand branch and interaction unit test coverage for the primary reading canvas from current baseline to >=95%, covering scholar switching, commentary tabs, audio player controls, font scaling, translation toggle, and ADR-008 empirical knowledge token badges.
@@ -102,9 +88,6 @@
 ## 🚀 TIER 1: ACTIVE SPRINT EPICS (MONTH 1 / SPRINTS 1–2 / DAYS 1–30)
 *Target: Edge AI conversational Vedic Saṁvāda interface, 33 scripture companion studio workspaces, offline Tattva Saṁgraha CLI distillation, user engagement telemetry, and test coverage perfection.*
 
-### 🤖 EPIC-LOCAL-LLM-CHAT-SEARCH [P0-CRITICAL / ACTIVE]
-*Redesign search into conversational Vedic Saṁvāda interface powered by lightweight local LLM with zero-server-load WebGPU in-browser inference and decoupled token-bucket edge fallback (governed by ADR-005).*
-
 #### `LLM-001` [P0-CRITICAL] WebGPU In-Browser Inference Engine (13 pts)
 - **Description**: Integrate `@mlc-ai/web-llm` running quantized Qwen-2.5-0.5B-Instruct / SmolLM-135M directly inside the user's browser, eliminating 100% server compute and memory pressure under arbitrary concurrent load. Include WebGPU capability detection and graceful fallbacks.
 - **Lead Tradition**: Universal Canonical Vedic Knowledge Base
@@ -163,9 +146,6 @@
 
 ---
 
-### 🏛️ EPIC-VEDIC-LABS-STUDIO-REFACTOR [P1-HIGH / ACTIVE]
-*Refactor Vedic Labs into dedicated, focused companion studios for all 25 canonical scriptures and de-clutter primary study canvas.*
-
 #### `LAB-004` [P1-HIGH] Scripture Companion Extraction for 25 Canonical Scriptures (13 pts)
 - **Description**: Extract and refine dedicated interactive companion labs for each of the 25 canonical Gold scriptures (e.g., Gita Kurukshetra Vyuha, Katha Nachiketa Fire Lab, Mundaka Two-Birds Consciousness Tree, Yoga Sutra Citta Vritti Wheel, Mandukya AUM State Waveform, Taittiriya Pancha Kosha Layering).
 - **Lead Tradition**: Classical Darshanas & Upabrahmanas
@@ -196,9 +176,6 @@
 
 ---
 
-### ⚡ EPIC-SPEED-READER-TATTVA-SAMGRAHA [P1-HIGH / ACTIVE]
-*Offline distillation CLI and automated executive digest generation for rapid learners.*
-
 #### `SPEED-004` [P1-HIGH] Offline Distillation CLI Pipeline (`scripts/distill_tattva_samgraha.py`) (8 pts)
 - **Description**: Implement `scripts/distill_tattva_samgraha.py` to automatically draft Tattva Saṁgraha JSON from raw Silver/Gold NVF shards using local LLM, extracting core crisis context, 8–12 pinnacle signposts, philosophical conclusions, and word-count-based reading duration with mandatory schema audit.
 - **Lead Tradition**: Tattva Samgraha Literary Exegesis
@@ -215,9 +192,6 @@
 
 ---
 
-### 🛡️ EPIC-AUTH-ZERO-PII-2FA [P0-CRITICAL / ACTIVE]
-*Zero-PII Social OAuth Authentication Gateway, RFC 6238 TOTP Two-Factor Security, and Encrypted Cloud Sync.*
-
 #### `AUTH-004` [P1-HIGH] User Profile & Encrypted Cloud Bookmark Sync (`components/auth/user-sync-drawer.tsx`) (8 pts)
 - **Description**: Build user drawer allowing seamless synchronization of bookmarks, highlights, reading progress, and scholar preferences to encrypted database storage, with one-click instantaneous account deletion (GDPR/CCPA "Right to be Forgotten").
 - **Sub-tasks**:
@@ -232,48 +206,6 @@
   - [ ] Update release notes
 
 ---
-
-### 🎙️ EPIC-BEDTIME-PODCAST-AND-VOICE-SAMVADA [P0-CRITICAL / ACTIVE]
-*Chapter-Level Multilingual Bedtime Scripture Podcast Narration, Sleep Timer, Hierarchical Dual-Context RAG Voice Companion, and Zero-PII Topical Interest Tracking.*
-
-#### `POD-001` [P0-CRITICAL] Chapter-Level Bedtime Scripture Podcast Narration Engine (`lib/audio/podcast-engine.ts`) (13 pts) [COMPLETED]
-- **Description**: Build narration engine converting full chapter verse records and multi-scholar layers into structured, serene bedtime audio manifests with 110 wpm relaxing cadence, Sanskrit verse chanting followed by vernacular meanings (English, Hindi, Marathi), sage commentary excerpts, and meditative intro/outro reflections.
-- **Sub-tasks**:
-  - [x] Auditing for implementation
-  - [x] Bug hunter for finding out more bugs
-  - [x] 0 linting errors
-  - [x] 0 build errors
-  - [x] 95+% unit test coverage
-  - [x] Clean up
-  - [x] Update documentation
-  - [x] Update backlog
-  - [x] Update release notes
-
-#### `POD-002` [P0-CRITICAL] Hierarchical Dual-Context RAG Voice Companion Host (`lib/audio/voice-host.ts`) (13 pts) [COMPLETED]
-- **Description**: Implement bedtime voice companion answering seeker queries while playing audio. Guarantees Priority 1 anchor context: the specific book and chapter being listened to remains the primary source of truth, enriched by Priority 2 global corpus connections across the 33 sacred texts with concise (2–4 sentence) peaceful responses.
-- **Sub-tasks**:
-  - [x] Auditing for implementation
-  - [x] Bug hunter for finding out more bugs
-  - [x] 0 linting errors
-  - [x] 0 build errors
-  - [x] 95+% unit test coverage
-  - [x] Clean up
-  - [x] Update documentation
-  - [x] Update backlog
-  - [x] Update release notes
-
-#### `POD-003` [P1-HIGH] Zero-PII Seeker Topical Interest & Theme Affinity Tracker (`lib/analytics/interest-tracker.ts`) (8 pts) [COMPLETED]
-- **Description**: Track seeker's topical interests (Bhakti, Jnana, Karma, Dhyana, Vairagya, Dharma, Sant Vani) purely client-side in localStorage (v_seeker_affinity). Computes normalized affinity weights and provides personalized bedtime chapter recommendations and sleep reading lists without storing any PII.
-- **Sub-tasks**:
-  - [x] Auditing for implementation
-  - [x] Bug hunter for finding out more bugs
-  - [x] 0 linting errors
-  - [x] 0 build errors
-  - [x] 95+% unit test coverage
-  - [x] Clean up
-  - [x] Update documentation
-  - [x] Update backlog
-  - [x] Update release notes
 
 #### `POD-004` [P0-CRITICAL] Chapter Bedtime Audio Player UI & Sleep Timer (`components/audio/bedtime-player.tsx`) (13 pts)
 - **Description**: Build accessible, distraction-free bedtime audio player modal with verse-by-verse continuous audio playback, audio ducking during voice companion interaction, gentle volume fade-out sleep timer (15m, 30m, 45m, 60m, End of Chapter), and ambient Tanpura drone overlay.
@@ -319,9 +251,6 @@
 ## 🗺️ TIER 2: MID-TERM SCRIPTURAL & ARCHITECTURAL HORIZONS (MONTHS 2–8)
 
 ---
-
-### 🏹 MONTH 2 (SPRINTS 3–4 / DAYS 31–60): VALMIKI RAMAYANA DEEP EXPANSION
-*Target: ~8,500 verses across Bala Kanda (77 Sargas) and Ayodhya Kanda (119 Sargas) with authentic multi-scholar commentaries, interactive trail mapping, and critical edition concordance.*
 
 #### `RAM-EXP-001` [P0-CRITICAL] Valmiki Ramayana: Bala Kanda Verse Ingestion (~2,250 Verses) (21 pts)
 - **Description**: Ingest all 77 Sargas of Bala Kanda (Sage Valmiki's composition, Narada's Samkshepa Ramayana, Putrakameshti Yajna, Vishvamitra's protection, Tadaka Vadha, Mithila arrival, Shiva Dhanus breaking, Sita Kalyanam) into NVF 1.3 shards with Sanskrit Devanagari, IAST transliteration, and English/Hindi/Marathi meanings.
@@ -437,9 +366,6 @@
 
 ---
 
-### 🌊 MONTH 3 (SPRINTS 5–6 / DAYS 61–90): SRIMAD BHAGAVATA PURANA EXPANSION
-*Target: ~3,200 verses across Cantos 1 through 4 with Gaudiya, Advaita, and Warkari commentary alignments and Turso LibSQL Edge Sharding.*
-
 #### `BHAG-EXP-001` [P0-CRITICAL] Srimad Bhagavatam: Cantos 1 & 2 Ingestion (~1,200 Verses) (21 pts)
 - **Description**: Ingest Canto 1 (19 chapters: Creation, Narada's past life, Parikshit's curse, Sukadeva's arrival) and Canto 2 (10 chapters: Cosmic Manifestation, Virata Rupa meditation, Chatushloki Bhagavatam) into NVF 1.3 shards with Devanagari Sanskrit, IAST, word-by-word meanings, and trilingual commentaries.
 - **Lead Tradition**: Sridhara Swami (Bhavartha Dipika), Srila Prabhupada (Bhaktivedanta Purports), Sant Eknath
@@ -511,9 +437,6 @@
   - [ ] Update release notes
 
 ---
-
-### ⚔️ MONTH 4 (SPRINTS 7–8 / DAYS 91–120): MAHABHARATA EPIC PARVA SCALING
-*Target: ~14,000 verses across Virata Parva, Udyoga Parva, and Bhishma Parva with BORI Critical Edition concordance, war formation modeling, and cross-Parva genealogical graphs.*
 
 #### `MAHA-EXP-001` [P0-CRITICAL] Mahabharata: Virata & Udyoga Parvas Ingestion (~6,500 Verses) (21 pts)
 - **Description**: Ingest Virata Parva (Pandavas' year of incognito life in Matsya Desha, Kichaka Vadha, Uttara Go-grahana) and Udyoga Parva (War preparations, Sanjaya's mission, Vidura Niti, Krishna's peace embassy, Karna-Krishna dialogue) into NVF 1.3 shards with multi-lingual commentary layers.
@@ -587,9 +510,6 @@
 
 ---
 
-### 🔥 MONTH 5 (SPRINTS 9–10 / DAYS 121–150): FOUR VEDA SAMHITAS FOUNDATION
-*Target: ~3,800 mantras across Rigveda Mandala 1 and complete Samaveda with Sayanacharya bhashya, Unicode Vedic pitch accents (Svaras), and an interactive Vedic Chanting Trainer.*
-
 #### `VEDA-RIG-001` [P0-CRITICAL] Rigveda Samhita: Mandala 1 Complete Ingestion (~2,006 Mantras) (21 pts)
 - **Description**: Ingest all 191 Suktas of Rigveda Mandala 1 (Madhucchandas Agni Sukta `1.1.1` through Agastya and Dirghatamas Suktas) into NVF 1.3 with metrical Sanskrit, Pada-patha word decomposition, Rishi, Chandas (meter), Devata metadata, and Sayanacharya's Vedartha Prakasha commentary.
 - **Lead Tradition**: Sayanacharya, Ralph T.H. Griffith, Max Müller, Swami Dayananda Saraswati
@@ -661,9 +581,6 @@
   - [ ] Update release notes
 
 ---
-
-### 🧘 MONTH 6 (SPRINTS 11–12 / DAYS 151–180): MUKHYA UPANISHADS & COMPARATIVE DARSHANA
-*Target: ~1,600 sutras/mantras across Chandogya, Brihadaranyaka, and complete Brahma Sutras with comparative Shankara/Ramanuja/Madhva bhashyas and local semantic vector embeddings.*
 
 #### `UPA-CHAN-001` [P0-CRITICAL] Chandogya Upanishad Complete Ingestion (~628 Mantras) (21 pts)
 - **Description**: Ingest all 8 Prapathakas of the Samavedic Chandogya Upanishad (Udgitha meditation, Shandilya Vidya, Samvargavidya, Satyakama Jabala, Tat Tvam Asi dialogue between Uddalaka Aruni and Shvetaketu, Dahara Vidya, and Prajapati's instruction to Indra) into NVF 1.3 shards with multi-scholar commentary layers.
@@ -737,9 +654,6 @@
 
 ---
 
-### 📜 MONTH 7 (SPRINTS 13–14 / DAYS 181–210): DHARMASHASTRAS & VERNACULAR BHAKTI CLASSICS
-*Target: ~9,800 verses across complete Manusmriti (12 Adhyayas), Tulsidas's Ramcharitmanas, and Sant Tukaram Maharaj's Abhanga Gatha.*
-
 #### `DHARMA-MANU-001` [P0-CRITICAL] Manusmriti: All 12 Adhyayas Complete Ingestion (~2,694 Shlokas) (21 pts)
 - **Description**: Ingest all 12 Adhyayas of Manusmriti (Cosmology, Ashrama duties, Grihastha dharma, Dietetics, Judicial procedure / 18 titles of law, Statecraft / Rajadharma, Prayaschitta penances, Transmigration of souls) into NVF 1.3 with Medhatithi's Manubhashya, Kulluka Bhatta, and Georg Bühler's translation.
 - **Lead Tradition**: Dharmashastra, Medhatithi, Kulluka Bhatta, Sacred Books of the East Vol. 25
@@ -798,9 +712,6 @@
 
 ---
 
-### 🌿 MONTH 8 (SPRINTS 15–16 / DAYS 211–240): CLASSICAL AYURVEDA & JYOTISHA SAMHITAS
-*Target: ~2,700 shlokas across Charaka Samhita, Sushruta Samhita, and Surya Siddhanta, unlocking the full potential of Diamond Tier Vaidika Vijñāna.*
-
 #### `AYUR-CHAR-001` [P0-CRITICAL] Charaka Samhita: Sutra Sthana Ingestion (30 Chapters / ~1,200 Shlokas) (21 pts)
 - **Description**: Ingest all 30 chapters of Charaka Samhita Sutra Sthana (Bhesaja, Svastha, Nirdesa, Kalpana, Roga, Yojana, and Annapana Catuskas) covering Tridosha dynamics, Dincharya daily regimen, Ritucharya seasonal adjustments, 14 non-suppressible natural urges (Vega), and dietary pharmacology.
 - **Lead Tradition**: Maharshi Atreya & Agnivesha, Chakrapani Datta (Ayurveda Dipika), Dr. P.V. Sharma
@@ -858,9 +769,6 @@
   - [ ] Update release notes
 
 ---
-
-## 🔬 TIER 3: DEDICATED RESEARCH SPIKES (`EPIC-RESEARCH-SPIKES`)
-*Exploratory research and prototyping spikes to de-risk high-complexity architectural, philological, and technical challenges.*
 
 ### `SPIKE-RAMAYANA-CRITICAL-ED` [P1-HIGH] Baroda Oriental Institute vs. Gita Press Textual Concordance (5 pts)
 - **Description**: Prototype automated concordance mapping algorithms to harmonize Sarga and verse numbering between the Baroda Critical Edition (BCE) and Gita Press across all 7 Kandas, ensuring verified citation stability.
@@ -928,9 +836,6 @@
   - [ ] Update release notes
 
 ---
-
-## 🏛️ TIER 4: LONG-TERM SOVEREIGN INFRASTRUCTURE (MONTHS 9–12+)
-*Perpetual digital sovereignty, zero vendor lock-in, client-side offline PWA, and dedicated hardware hosting.*
 
 ### `OCI-001` [P1-HIGH] Oracle Cloud Always-Free ARM Sovereign Metal Provisioning (8 pts)
 - **Description**: Provision and harden 4-core Ampere Altra ARM compute instance with 24GB RAM and 200GB NVMe storage under Oracle Cloud Always Free tier, configuring UFW, fail2ban, Docker, and reverse proxy with automated SSL.
@@ -1000,9 +905,6 @@
 ---
 
 ---
-
-## 🕉️ TIER 5: THE CANONICAL VEDIC UNIVERSE — 189 SCRIPTURE EXPANSION EPICS
-*Systematic catalog of 189 canonical sacred scriptures spanning the entire Vedic, Upanishadic, Darshanic, Purāṇic, Itihāsa, Ayurvedic, and Bhakti traditions of Sanatana Dharma. Each epic is fully articulated with granular sub-tasks for multi-tier NVF ingestion, multilingual translations (EN, HI, MR, SA), in-browser bedtime audio podcasts (`podcast-engine.ts`), voice companion anchoring (`voice-host.ts`), and zero-PII seeker affinity tracking.*
 
 ### `EPIC-BOOK-001` [P2-MEDIUM] Rigveda Samhita Ingestion, Multilingual Commentary & In-Browser Bedtime Audio (21 pts)
 - **Book Slug**: `rigveda-samhita`
@@ -4596,6 +4498,4 @@
   - [ ] Update backlog, status metrics, and release notes.
 
 ---
-
-## 🏆 TIER 6: HISTORICAL ARCHIVE OF COMPLETED & VERIFIED EPICS
 
